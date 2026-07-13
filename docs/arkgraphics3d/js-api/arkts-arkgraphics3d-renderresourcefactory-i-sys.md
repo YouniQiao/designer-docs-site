@@ -1,6 +1,7 @@
 # RenderResourceFactory
 
-The render resource factory. RenderResourceFactory is used to create resources that can be shared across Scenes that share a RenderContext
+The render resource factory. RenderResourceFactory is used to create resources that can be shared
+across Scenes that share a RenderContext
 
 **Since:** 20
 

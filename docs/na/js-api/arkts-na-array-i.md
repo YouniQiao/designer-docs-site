@@ -6,7 +6,8 @@
 concat(...items: ConcatArray<T>[]): T[]
 ```
 
-Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+Combines two or more arrays.
+This method returns a new array without modifying any existing arrays.
 
 **Parameters:**
 
@@ -26,7 +27,8 @@ Combines two or more arrays. This method returns a new array without modifying a
 concat(...items: (T | ConcatArray<T>)[]): T[]
 ```
 
-Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+Combines two or more arrays.
+This method returns a new array without modifying any existing arrays.
 
 **Parameters:**
 
@@ -228,7 +230,8 @@ Calls a defined callback function on each element of an array, and returns an ar
 pop(): T | undefined
 ```
 
-Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+Removes the last element from an array and returns it.
+If the array is empty, undefined is returned and the array is not modified.
 
 **Return value:**
 
@@ -382,7 +385,8 @@ Calls the specified callback function for all the elements in an array, in desce
 reverse(): T[]
 ```
 
-Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+Reverses the elements in an array in place.
+This method mutates the array and returns a reference to the same array.
 
 **Return value:**
 
@@ -396,7 +400,8 @@ Reverses the elements in an array in place. This method mutates the array and re
 shift(): T | undefined
 ```
 
-Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+Removes the first element from an array and returns it.
+If the array is empty, undefined is returned and the array is not modified.
 
 **Return value:**
 
@@ -410,7 +415,9 @@ Removes the first element from an array and returns it. If the array is empty, u
 slice(start?: number, end?: number): T[]
 ```
 
-Returns a copy of a section of an array. For both start and end, a negative index can be used to indicate an offset from the end of the array. For example, -2 refers to the second to last element of the array.
+Returns a copy of a section of an array.
+For both start and end, a negative index can be used to indicate an offset from the end of the array.
+For example, -2 refers to the second to last element of the array.
 
 **Parameters:**
 
@@ -452,7 +459,8 @@ Determines whether the specified callback function returns true for any element 
 sort(compareFn?: (a: T, b: T) => number): this
 ```
 
-Sorts an array in place. This method mutates the array and returns a reference to the same array.
+Sorts an array in place.
+This method mutates the array and returns a reference to the same array.
 
 **Parameters:**
 

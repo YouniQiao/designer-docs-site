@@ -30,7 +30,8 @@ Coordinate system type of the center point.
 delayTime?:number
 ```
 
-Delay time from geofence entry to event trigger, in seconds. The value ranges from 0 to 300. The default value is **0**.
+Delay time from geofence entry to event trigger, in seconds.
+The value ranges from 0 to 300. The default value is **0**.
 
 **Type:** number
 

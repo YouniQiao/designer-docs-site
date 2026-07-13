@@ -2,9 +2,11 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[RunningMultiInstanceInfo](arkts-runningmultiinstanceinfo-i.md) | 定义多实例应用在运行态的结构信息，通过appManager的 [getRunningMultiAppInfo]{@link ./../@ohos.app.ability.appManager:appManager.getRunningMultiAppInfo}来获取。 |
+| [RunningMultiInstanceInfo](arkts-ability-runningmultiinstanceinfo-i-sys.md) | The module defines the information of a multi-instance application in the running state. The information can beobtained through [getRunningMultiAppInfo](arkts-ability-getrunningmultiappinfo-f-sys.md#getrunningmultiappinfo-1)of appManager. |
+<!--DelEnd-->
 

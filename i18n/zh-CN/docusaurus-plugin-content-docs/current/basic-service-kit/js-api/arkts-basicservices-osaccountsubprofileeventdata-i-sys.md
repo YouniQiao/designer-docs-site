@@ -32,7 +32,8 @@ event: OsAccountSubProfileEvent
 osAccountLocalId: number
 ```
 
-系统账号本地ID。 取值范围为全体整数。
+系统账号本地ID。
+取值范围为全体整数。
 
 **类型：** number
 
@@ -50,7 +51,8 @@ osAccountLocalId: number
 previousSubProfileId?: number
 ```
 
-上一个系统账号子Profile标识符。 取值范围为全体整数。
+上一个系统账号子Profile标识符。
+取值范围为全体整数。
 
 **类型：** number
 
@@ -68,7 +70,8 @@ previousSubProfileId?: number
 subProfileId: number
 ```
 
-系统账号子profile标识。 取值范围为全体整数。
+系统账号子profile标识。
+取值范围为全体整数。
 
 **类型：** number
 

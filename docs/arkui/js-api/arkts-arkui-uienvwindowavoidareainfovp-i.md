@@ -1,6 +1,7 @@
 # UIEnvWindowAvoidAreaInfoVP
 
-Describes [environment variable](../../../../ui/arkts-env-system-property.md) data types for window avoidance areas of different types. All types of window avoidance areas are measured in vp.
+Describes [environment variable](../../../../ui/arkts-env-system-property.md) data types for window avoidance areas
+of different types. All types of window avoidance areas are measured in vp.
 
 **Since:** 23
 
@@ -9,7 +10,7 @@ Describes [environment variable](../../../../ui/arkts-env-system-property.md) da
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## cutout
@@ -18,7 +19,7 @@ import { window } from '@ohos.window';
 cutout: UIEnvAvoidAreaVP
 ```
 
-Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatype) is **TYPE_CUTOUT** type, in vp.
+Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md) is **TYPE_CUTOUT** type, in vp.
 
 **Type:** UIEnvAvoidAreaVP
 
@@ -32,7 +33,7 @@ Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatyp
 keyboard: UIEnvAvoidAreaVP
 ```
 
-Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatype) is **TYPE_KEYBOARD** type, in vp.
+Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md) is **TYPE_KEYBOARD** type, in vp.
 
 **Type:** UIEnvAvoidAreaVP
 
@@ -46,7 +47,8 @@ Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatyp
 navigationIndicator: UIEnvAvoidAreaVP
 ```
 
-Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatype) is **TYPE_NAVIGATION_INDICATOR** type, in vp.
+Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md) is **TYPE_NAVIGATION_INDICATOR**
+type, in vp.
 
 **Type:** UIEnvAvoidAreaVP
 
@@ -60,7 +62,7 @@ Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatyp
 statusBar: UIEnvAvoidAreaVP
 ```
 
-Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatype) is **TYPE_SYSTEM** type, in vp.
+Avoidance area whose [AvoidAreaType](arkts-arkui-avoidareatype-e.md) is **TYPE_SYSTEM** type, in vp.
 
 **Type:** UIEnvAvoidAreaVP
 

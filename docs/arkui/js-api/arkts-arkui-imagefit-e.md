@@ -28,7 +28,8 @@ Keep the aspect ratio to zoom out or zoom in so that the image is completely dis
 Cover
 ```
 
-Keep the aspect ratio to zoom out or zoom in so that both sides of the image are greater than or equal to the display boundary.
+Keep the aspect ratio to zoom out or zoom in so that both sides of the image are greater than or equal to the
+display boundary.
 
 **Since:** 7
 

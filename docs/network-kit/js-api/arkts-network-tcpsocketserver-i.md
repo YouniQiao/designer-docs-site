@@ -9,7 +9,7 @@ Defines a TCPSocket server connection.
 ## Modules to Import
 
 ```TypeScript
-import { socket } from '@ohos.net.socket';
+import { socket } from '@kit.NetworkKit';
 ```
 
 ## close
@@ -285,7 +285,9 @@ tcpServer.getState().then((data: socket.SocketStateBase) => {
 listen(address: NetAddress, callback: AsyncCallback<void>): void
 ```
 
-Binds the IP address and port number, the port number can be specified or randomly allocated by the system. <p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads for accept processing and uses poll multiplex to process client connections.</p>
+Binds the IP address and port number, the port number can be specified or randomly allocated by the system.
+<p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads
+for accept processing and uses poll multiplex to process client connections.</p>
 
 **Since:** 24
 
@@ -340,7 +342,9 @@ tcpServer.listen(listenAddr, (err: BusinessError) => {
 listen(address: NetAddress): Promise<void>
 ```
 
-Binds the IP address and port number, the port number can be specified or randomly allocated by the system. <p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads for accept processing and uses poll multiplex to process client connections.</p>
+Binds the IP address and port number, the port number can be specified or randomly allocated by the system.
+<p>Listens for a TCPSocket connection to be made to this socket and accepts it. This interface uses multiple threads
+for accept processing and uses poll multiplex to process client connections.</p>
 
 **Since:** 24
 

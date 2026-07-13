@@ -6,7 +6,8 @@
 function setOtaUpdatePolicy(admin: Want, policy: OtaUpdatePolicy): void
 ```
 
-设置升级策略。内网升级场景下，需要先调用[systemManager.notifyUpdatePackages](arkts-mdm-notifyupdatepackages-f.md#notifyupdatepackages-1)接口通知系统更新包，再调用该接口设 置升级策略。
+设置升级策略。内网升级场景下，需要先调用[systemManager.notifyUpdatePackages](arkts-mdm-notifyupdatepackages-f.md#notifyupdatepackages-1)接口通知系统更新包，再调用该接口设
+置升级策略。
 
 **起始版本：** 12
 
@@ -30,7 +31,7 @@ function setOtaUpdatePolicy(admin: Want, policy: OtaUpdatePolicy): void
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-应用没有激活成设备管理器) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

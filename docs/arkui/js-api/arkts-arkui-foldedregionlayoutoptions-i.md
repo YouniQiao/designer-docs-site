@@ -9,7 +9,7 @@ Provides the layout information of the folded state.
 ## Modules to Import
 
 ```TypeScript
-import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, ExpandedRegionLayoutOptions, FoldSplitContainer, HoverModeRegionLayoutOptions, FoldedRegionLayoutOptions, PresetSplitRatio } from '@ohos.arkui.advanced.FoldSplitContainer';
+import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, ExpandedRegionLayoutOptions, FoldSplitContainer, HoverModeRegionLayoutOptions, FoldedRegionLayoutOptions, PresetSplitRatio } from '@kit.ArkUI';
 ```
 
 ## verticalSplitRatio
@@ -18,7 +18,8 @@ import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, Expan
 verticalSplitRatio?: number
 ```
 
-Height ratio between the primary and extra regions. The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_1V1.
+Height ratio between the primary and extra regions.
+The value range is all integers. Default value: {@link.PresetSplitRatio}.LAYOUT_1V1.
 
 **Type:** number
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { userAccessCtrl } from '@ohos.userIAM.userAccessCtrl';
+import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 ```
 
 ## verifyAuthToken
@@ -12,7 +12,9 @@ import { userAccessCtrl } from '@ohos.userIAM.userAccessCtrl';
 function verifyAuthToken(authToken: Uint8Array, allowableDuration: number): Promise<AuthToken>
 ```
 
-Verifies an authentication token. This API uses a promise to return the result.
+Verifies an authentication token. This API is used to verify the validity of an **AuthToken**, including the
+integrity and validity check. After the verification is successful, the detailed information about the parsed
+**AuthToken** is returned. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -26,14 +28,14 @@ Verifies an authentication token. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| authToken | Uint8Array | Yes | Authentication token to verify, which cannot exceed 1024. |
-| allowableDuration | number | Yes | Time allowed for the authentication token to be used after being issued, inmilliseconds. The value must be greater than 0 and less than or equal to 86,400,000. |
+| authToken | Uint8Array | Yes | Authentication token to be verified. The value contains a maximum of 1024 bytesand is returned after the user is authenticated. The token contains the credentials information for userauthentication, which is used for subsequent security operation verification. |
+| allowableDuration | number | Yes | Authentication validity period. It indicates the maximum time interval for usingthe token from the time when the token is issued. The unit is millisecond. The value must be greater than 0 andless than or equal to 86400000 (24 hours). It is used to verify the validity of a token to prevent expiredtokens from being used. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AuthToken&gt; | Promise used to return the parsed authentication token. |
+| Promise&lt;AuthToken&gt; | Promise used to return the result. |
 
 **Error codes:**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getLaunchWant
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getLaunchWant(): Want
 ```
 
-Obtains the **Want** parameters of the [entry UIAbility](../../../../quick-start/application-package-glossary.md#uiability) of the current application.
+Obtains the **Want** parameters of the
+[entry UIAbility](../../../../quick-start/application-package-glossary.md#uiability) of the current application.
 
 **Since:** 13
 

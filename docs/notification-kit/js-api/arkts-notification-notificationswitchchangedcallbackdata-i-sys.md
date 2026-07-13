@@ -32,7 +32,8 @@ Notification switch state.
 readonly switchName: string
 ```
 
-Notification switch name. Values ​​are: DEAL (transaction-related notification aggregation switch) and LOGISTICS (logistics-related notification aggregation switch).
+Notification switch name. Values ​​are: DEAL (transaction-related notification aggregation switch) and LOGISTICS
+(logistics-related notification aggregation switch).
 
 **Type:** string
 
@@ -50,7 +51,8 @@ Notification switch name. Values ​​are: DEAL (transaction-related notificati
 readonly userId: number
 ```
 
-User ID. The value range is all integers.
+User ID.
+The value range is all integers.
 
 **Type:** number
 

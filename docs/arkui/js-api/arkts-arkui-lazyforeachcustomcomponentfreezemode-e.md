@@ -1,6 +1,7 @@
 # LazyForEachCustomComponentFreezeMode
 
-Enumerates the freeze modes for cached custom nodes that have been removed from the component tree in LazyForEach.
+Enumerates the freeze modes for cached custom nodes that have been removed
+from the component tree in LazyForEach.
 
 **Since:** 26.0.0
 
@@ -12,7 +13,8 @@ Enumerates the freeze modes for cached custom nodes that have been removed from 
 AUTO = 0
 ```
 
-Follow the enableCustomComponentFreeze field in Metadata to determine whether freezing takes effect.
+Follow the enableCustomComponentFreeze field in Metadata to determine
+whether freezing takes effect.
 
 **Since:** 26.0.0
 
@@ -44,7 +46,8 @@ Freezing is disabled for cached custom nodes removed from the component tree.
 ENABLED = 2
 ```
 
-Freezing is enabled for cached custom nodes removed from the component tree. State updates of cached custom components will be frozen.
+Freezing is enabled for cached custom nodes removed from the component tree.
+State updates of cached custom components will be frozen.
 
 **Since:** 26.0.0
 

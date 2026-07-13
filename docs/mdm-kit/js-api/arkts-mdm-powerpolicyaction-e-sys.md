@@ -1,6 +1,8 @@
 # PowerPolicyAction (System API)
 
-Enumerates the actions that can be performed to apply the power policy. <!--no_check-->
+Enumerates the actions that can be performed to apply the power policy.
+
+<!--no_check-->
 
 **Since:** 11
 

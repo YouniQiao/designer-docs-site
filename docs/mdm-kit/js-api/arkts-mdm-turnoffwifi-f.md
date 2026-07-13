@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## turnOffWifi
@@ -12,7 +12,16 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 function turnOffWifi(admin: Want): void
 ```
 
-Disables Wi-Fi. In the following scenario, attempting to disable Wi-Fi using this API will fail, and a message indicating that the system function is disabled will be returned: ?Wi-Fi has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. In this case, you must call [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) to enable Wi-Fi.
+Disables Wi-Fi.
+
+In the following scenario, attempting to disable Wi-Fi using this API will fail, and a message indicating that the
+system function is disabled will be returned:
+
+?Wi-Fi has been disabled using the
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+API. In this case, you must call
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+to enable Wi-Fi.
 
 **Since:** 20
 

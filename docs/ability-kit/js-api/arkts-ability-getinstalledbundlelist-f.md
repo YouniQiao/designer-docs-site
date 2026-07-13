@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getInstalledBundleList
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getInstalledBundleList(bundleFlags: number): Promise<Array<BundleInfo>>
 ```
 
-Obtains BundleInfo of all bundles available in the system.
+Obtains all the bundle information in the system based on the given bundle flags.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -26,13 +27,13 @@ Obtains BundleInfo of all bundles available in the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlags | number | Yes | {@link BundleFlag} - Indicates the flag used to specify informationcontained in the BundleInfo that will be returned. |
+| bundleFlags | number | Yes | Information contained in the returned BundleInfo. Fordetails, see {@link BundleFlag}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Returns a list of BundleInfo objects. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return the list ofinstalled applications. |
 
 **Error codes:**
 

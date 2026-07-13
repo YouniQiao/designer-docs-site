@@ -11,7 +11,7 @@ Defines a control event.
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## eventType
@@ -36,7 +36,8 @@ Control event type.
 hookId?: number
 ```
 
-Hook ID corresponding to the control event. The hook ID and the session ID can be obtained from [PageContent](arkts-multimodalawareness-pagecontent-i-sys.md#pagecontent) of a session.
+Hook ID corresponding to the control event. The hook ID and the session ID can be obtained from
+[PageContent](arkts-multimodalawareness-pagecontent-i-sys.md) of a session.
 
 **Type:** number
 
@@ -52,7 +53,8 @@ Hook ID corresponding to the control event. The hook ID and the session ID can b
 sessionId: number
 ```
 
-ID of the session to be operated. The hook ID and the session ID can be obtained from [PageContent](arkts-multimodalawareness-pagecontent-i-sys.md#pagecontent) of a session.
+ID of the session to be operated. The hook ID and the session ID can be obtained from
+[PageContent](arkts-multimodalawareness-pagecontent-i-sys.md) of a session.
 
 **Type:** number
 

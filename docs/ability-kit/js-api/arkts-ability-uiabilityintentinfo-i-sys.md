@@ -1,6 +1,7 @@
 # UIAbilityIntentInfo (System API)
 
-Describes the information of the UIAbility bound to the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
+Describes the information of the UIAbility bound to the
+[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
 
 **Since:** 23
 
@@ -11,7 +12,7 @@ Describes the information of the UIAbility bound to the [intent developed using 
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
+import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
 ## abilityName

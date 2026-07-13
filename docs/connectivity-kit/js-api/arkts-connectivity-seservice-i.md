@@ -9,7 +9,7 @@ SEService realizes the communication to available SEs on the device.
 ## Modules to Import
 
 ```TypeScript
-import { omapi } from '@ohos.secureElement';
+import { omapi } from '@kit.ConnectivityKit';
 ```
 
 ## getReaders
@@ -18,7 +18,8 @@ import { omapi } from '@ohos.secureElement';
 getReaders(): Reader[]
 ```
 
-Returns the list of available SE readers. There must be no duplicated objects in the returned list. All available readers SHALL be listed even if no card is inserted.
+Returns the list of available SE readers. There must be no duplicated objects in the returned list.
+All available readers SHALL be listed even if no card is inserted.
 
 **Since:** 10
 

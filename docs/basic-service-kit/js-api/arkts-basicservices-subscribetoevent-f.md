@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { commonEventManager } from '@ohos.commonEventManager';
+import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
 ## subscribeToEvent
@@ -12,7 +12,8 @@ import { commonEventManager } from '@ohos.commonEventManager';
 function subscribeToEvent(subscriber: CommonEventSubscriber, callback: Callback<CommonEventData>): Promise<void>
 ```
 
-Subscribes to a common event. This API uses a promise to return the result, indicating subscription success or failure.
+Subscribes to a common event. This API uses a promise to return the result, indicating subscription success or
+failure.
 
 **Since:** 20
 

@@ -14,7 +14,9 @@ Each component allows for one light source.
 color?: ResourceColor
 ```
 
-Light source color. Default value: **Color.White**
+Light source color.
+
+Default value: **Color.White**
 
 **Type:** ResourceColor
 
@@ -32,7 +34,8 @@ Light source color. Default value: **Color.White**
 intensity: number
 ```
 
-Intensity of the light source. The recommended value range is 0-1. When the intensity is **0**, the light source does not emit light.
+Intensity of the light source. The recommended value range is 0-1. When the intensity is **0**, the light source
+does not emit light.
 
 **Type:** number
 

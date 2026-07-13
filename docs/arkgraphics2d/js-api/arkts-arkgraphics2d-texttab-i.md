@@ -9,7 +9,7 @@ Implements a paragraph-style text tab, which stores the alignment mode and posit
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## alignment
@@ -18,7 +18,9 @@ import { text } from '@ohos.graphics.text';
 alignment: TextAlign
 ```
 
-Text alignment method after the tab character in a paragraph. It supports the LEFT (left alignment), RIGHT (right alignment), and CENTER (center alignment) alignment methods of [TextAlign](arkts-arkgraphics2d-textalign-e.md#textalign). Unlisted enum values are treated as left alignment, with left alignment as the default.
+Text alignment method after the tab character in a paragraph. It supports the LEFT (left alignment), RIGHT (right
+alignment), and CENTER (center alignment) alignment methods of [TextAlign](arkts-arkgraphics2d-textalign-e.md). Unlisted enum
+values are treated as left alignment, with left alignment as the default.
 
 **Type:** TextAlign
 
@@ -34,7 +36,8 @@ Text alignment method after the tab character in a paragraph. It supports the LE
 location: number
 ```
 
-Alignment position of the text following the tab character. The value is a floating point number, in px. The minimum value is 1.0. When the value is less than 1.0, the tab character is replaced with a space.
+Alignment position of the text following the tab character. The value is a floating point number, in px. The
+minimum value is 1.0. When the value is less than 1.0, the tab character is replaced with a space.
 
 **Type:** number
 

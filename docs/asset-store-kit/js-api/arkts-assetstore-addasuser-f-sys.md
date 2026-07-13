@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { asset } from '@ohos.security.asset';
+import { asset } from '@kit.AssetStoreKit';
 ```
 
 ## addAsUser
@@ -12,7 +12,9 @@ import { asset } from '@ohos.security.asset';
 function addAsUser(userId: number, attributes: AssetMap): Promise<void>
 ```
 
-Adds an asset in the specified user space. This API uses a promise to return the result. To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission.
+Adds an asset in the specified user space. This API uses a promise to return the result.
+
+To set {@link Tag.IS_PERSISTENT}, the application must have the ohos.permission.STORE_PERSISTENT_DATA permission.
 
 **Since:** 12
 

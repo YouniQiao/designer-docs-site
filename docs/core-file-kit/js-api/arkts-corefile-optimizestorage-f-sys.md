@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## optimizeStorage
@@ -12,7 +12,8 @@ import { cloudSync } from '@ohos.file.cloudSync';
 function optimizeStorage():Promise<void>
 ```
 
-Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic aging policy according to the remaining local space. This API uses a promise to return the result.
+Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic aging
+policy according to the remaining local space. This API uses a promise to return the result.
 
 **Since:** 17
 

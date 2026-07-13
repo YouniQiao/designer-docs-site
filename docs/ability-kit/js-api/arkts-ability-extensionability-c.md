@@ -1,8 +1,12 @@
 # ExtensionAbility
 
-ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It inherits from [Ability](arkts-ability-ability-c.md#ability), with no property or method added. You cannot directly inherit from ExtensionAbility. For details about the inheritance relationship of each ability, see [Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship) .
+ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It inherits from
+[Ability](arkts-ability-ability-c.md), with no property or method added. You cannot directly inherit
+from ExtensionAbility. For details about the inheritance relationship of each ability, see
+[Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship)
+.
 
-**Inheritance/Implementation:** ExtensionAbility extends [Ability](arkts-ability-ability-c.md#ability)
+**Inheritance/Implementation:** ExtensionAbility extends [Ability](arkts-ability-ability-c.md)
 
 **Since:** 9
 
@@ -15,6 +19,6 @@ ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It 
 ## Modules to Import
 
 ```TypeScript
-import { ExtensionAbility } from '@ohos.app.ability.ExtensionAbility';
+import { ExtensionAbility } from '@kit.AbilityKit';
 ```
 

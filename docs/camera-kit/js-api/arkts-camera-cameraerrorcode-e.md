@@ -1,10 +1,7 @@
 # CameraErrorCode
 
-```TypeScript
-enum CameraErrorCode
-```
-
-Enumerates the camera error codes, which are returned when an API call is incorrect or the **on()** API is used to listen for the error status.
+Enumerates the camera error codes,
+which are returned when an API call is incorrect or the **on()** API is used to listen for the error status.
 
 **Since:** 10
 
@@ -20,7 +17,7 @@ A parameter is missing or the parameter type is incorrect.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -34,7 +31,7 @@ The operation is not allowed.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -48,7 +45,7 @@ The session is not configured.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -62,7 +59,7 @@ The session is not running.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -76,7 +73,7 @@ The session configuration is locked.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -90,7 +87,7 @@ The device setting is locked.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -104,7 +101,7 @@ The device is already started.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -118,7 +115,7 @@ The camera is disabled for security reasons.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -132,7 +129,7 @@ The camera is preempted.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -146,7 +143,7 @@ The configuration conflicts with the current configuration.
 
 **Since:** 12
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -160,35 +157,7 @@ The camera service is abnormal.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
-
-## DEVICE_FREQUENTLY_SWITCHED
-
-```TypeScript
-DEVICE_FREQUENTLY_SWITCHED = 7400111
-```
-
-Camera frequently switched.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## CAMERA_LENS_RETRACTED
-
-```TypeScript
-CAMERA_LENS_RETRACTED = 7400112
-```
-
-Camera lens retracted.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 

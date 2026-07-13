@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dataShare } from '@ohos.data.dataShare';
+import { dataShare } from '@kit.ArkData';
 ```
 
 ## enableSilentProxy
@@ -12,7 +12,17 @@ import { dataShare } from '@ohos.data.dataShare';
 function enableSilentProxy(context: Context, uri?: string): Promise<void>
 ```
 
-Enables silent access. This API uses a promise to return the result. Observe the following when using this API: - The data provider calls this API to enable silent access. - Whether silent access is enabled is determined based on the return value of this API and the **isSilentProxyEnable** field in the [data_share_config.json](../../../../database/share-data-by-datashareextensionability-sys.md) file together. - If silent access is enabled for a URI using this API, the setting takes effect when the related **datashareHelper** API is called. Otherwise, the setting of **isSilentProxyEnable** in the **data_share_config.json** file is used to determine whether to enable silent access.
+Enables silent access. This API uses a promise to return the result.
+
+Observe the following when using this API:
+
+- The data provider calls this API to enable silent access.
+- Whether silent access is enabled is determined based on the return value of this API and the
+**isSilentProxyEnable** field in the
+[data_share_config.json](../../../../database/share-data-by-datashareextensionability-sys.md) file together.
+- If silent access is enabled for a URI using this API, the setting takes effect when the related
+**datashareHelper** API is called. Otherwise, the setting of **isSilentProxyEnable** in the
+**data_share_config.json** file is used to determine whether to enable silent access.
 
 **Since:** 11
 
@@ -39,7 +49,7 @@ Enables silent access. This API uses a promise to return the result. Observe the
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameters types. |
 | [15700011](../errorcode-datashare.md#15700011-uri-not-exist) | The URI does not exist. |
 

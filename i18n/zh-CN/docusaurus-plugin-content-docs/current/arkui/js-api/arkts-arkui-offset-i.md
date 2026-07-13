@@ -12,7 +12,9 @@
 x: number
 ```
 
-x点坐标。 单位: px
+x点坐标。
+
+单位: px
 
 **类型：** number
 
@@ -30,7 +32,9 @@ x点坐标。 单位: px
 y: number
 ```
 
-y点坐标。 单位: px
+y点坐标。
+
+单位: px
 
 **类型：** number
 

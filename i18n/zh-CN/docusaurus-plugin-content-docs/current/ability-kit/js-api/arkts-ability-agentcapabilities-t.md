@@ -4,7 +4,8 @@
 export type AgentCapabilities = _AgentCapabilities
 ```
 
-AgentCard中的功能表示特定的skills、服务和功能 agent可以在系统内执行或提供。
+AgentCard中的功能表示特定的skills、服务和功能
+agent可以在系统内执行或提供。
 
 **起始版本：** 24
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getProcessRunningInfos
@@ -12,7 +12,8 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getProcessRunningInfos(): Promise<Array<ProcessInformation>>
 ```
 
-Obtains information about the running processes of the current application. This API uses a promise to return the result.
+Obtains information about the running processes of the current application. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -46,7 +47,8 @@ Obtains information about the running processes of the current application. This
 function getProcessRunningInfos(callback: AsyncCallback<Array<ProcessInformation>>): void
 ```
 
-Obtains information about the running processes of the current application. This API uses an asynchronous callback to return the result.
+Obtains information about the running processes of the current application. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 

@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AbilityDelegatorArgs](arkts-abilitydelegatorargs-i.md) | AbilityDelegatorArgs模块提供在应用程序执行测试用例期间，获取测试用例参数AbilityDelegatorArgs对象的能力。 > **说明：** > > 本模块接口仅可在[单元测试框架](docroot://application-test/unittest-guidelines.md)中使用。 |
+| [AbilityDelegatorArgs](arkts-ability-abilitydelegatorargs-i.md) | The **AbilityDelegatorArgs** module provides APIs to obtain an **AbilityDelegatorArgs** object during the executionof test cases.&gt; **NOTE**&gt;&gt; The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md). |
 

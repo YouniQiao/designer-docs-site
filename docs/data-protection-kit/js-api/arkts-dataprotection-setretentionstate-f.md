@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## setRetentionState
@@ -12,7 +12,11 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function setRetentionState(docUris: Array<string>): Promise<void>
 ```
 
-Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed. After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to be frequently operated, improving the file opening efficiency. This API uses a promise to return the result.
+Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system
+automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed.
+After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing
+the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to
+be frequently operated, improving the file opening efficiency. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -62,7 +66,11 @@ dlpPermission.isInSandbox().then(async (inSandbox) => {
 function setRetentionState(docUris: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed. After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to be frequently operated, improving the file opening efficiency.
+Sets the retention state for sandbox applications. By default, when a DLP file is opened, the system
+automatically creates a sandbox environment. After the file is closed, the sandbox is automatically destroyed.
+After the retention state is set, the sandbox environment is retained even if the DLP file is closed, allowing
+the system to quickly reopen the same DLP file. This is applicable to scenarios where the same DLP file needs to
+be frequently operated, improving the file opening efficiency.
 
 **Since:** 10
 

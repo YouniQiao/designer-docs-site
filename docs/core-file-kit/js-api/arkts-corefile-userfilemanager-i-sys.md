@@ -6,7 +6,7 @@ Defines the UserFileManager class and provides functions to access the data in u
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [photoAccessHelper:photoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md#photoaccesshelper)
+**Substitutes:** [photoAccessHelper:photoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ Defines the UserFileManager class and provides functions to access the data in u
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## createAlbum
@@ -179,7 +179,7 @@ Create Audio Asset
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.WRITE_AUDIO
 
@@ -1170,7 +1170,7 @@ Query audio assets
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.READ_AUDIO
 
@@ -1233,7 +1233,7 @@ Query audio assets
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **Required permissions:** ohos.permission.READ_AUDIO
 

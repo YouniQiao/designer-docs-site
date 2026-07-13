@@ -1,6 +1,17 @@
 # AVRecorder
 
-音视频录制管理类，用于音视频媒体录制。在调用AVRecorder的方法前，需要先调用 [createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)接口构建一个 AVRecorder实例。 音视频录制demo可参考：[音频录制开发指导](../../../../media/media/using-avrecorder-for-recording.md)、 [视频录制开发指导](../../../../media/media/video-recording.md)。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。 > > - 相机视频录制功能需配合相机模块使用，相机模块接口的使用详情请参考[相机管理](@ohos.multimedia.camera:camera)。
+音视频录制管理类，用于音视频媒体录制。在调用AVRecorder的方法前，需要先调用
+[createAVRecorder](arkts-media-createavrecorder-f.md#createavrecorder-1)接口构建一个
+AVRecorder实例。
+
+音视频录制demo可参考：[音频录制开发指导](../../../../media/media/using-avrecorder-for-recording.md)、
+[视频录制开发指导](../../../../media/media/video-recording.md)。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 9开始支持。
+>
+> - 相机视频录制功能需配合相机模块使用，相机模块接口的使用详情请参考[相机管理](@ohos.multimedia.camera:camera)。
 
 **起始版本：** 9
 
@@ -37,7 +48,7 @@ Get input meta surface for specified meta source type. it must be called between
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Called from Non-System applications. Return by promise. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operate not permit. Return by promise. |
 | [5400103](../errorcode-media.md#5400103-出现io错误) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
@@ -48,7 +59,9 @@ Get input meta surface for specified meta source type. it must be called between
 isWatermarkSupported(): Promise<boolean>
 ```
 
-Checks whether the device supports the hardware digital watermark. This API uses a promise to return the result. This API can be called after the prepare(), start(), or paused() event is triggered.
+Checks whether the device supports the hardware digital watermark. This API uses a promise to return the result.
+
+This API can be called after the prepare(), start(), or paused() event is triggered.
 
 **起始版本：** 13
 
@@ -81,7 +94,12 @@ avRecorder.isWatermarkSupported().then((isWatermarkSupported: boolean) => {
 setMetadata(metadata: Record<string, string>): void
 ```
 
-设置录制的元数据信息。如果这些信息的键相同，会覆盖config.metadata.customInfo（参考 [prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))和 [AVRecorderConfig](@ohos.multimedia.media:media.AVRecorderConfig)）中的值。 该方法只能在[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))事件成功触发后，且必须在 [stop()](media.AVRecorder.stop(callback: AsyncCallback<void>))之前调用。
+设置录制的元数据信息。如果这些信息的键相同，会覆盖config.metadata.customInfo（参考
+[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))和
+[AVRecorderConfig](@ohos.multimedia.media:media.AVRecorderConfig)）中的值。
+
+该方法只能在[prepare()](media.AVRecorder.prepare(config: AVRecorderConfig))事件成功触发后，且必须在
+[stop()](media.AVRecorder.stop(callback: AsyncCallback<void>))之前调用。
 
 **起始版本：** 26.0.0
 
@@ -100,9 +118,9 @@ setMetadata(metadata: Record<string, string>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 19 - 24 |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory.<br>**适用版本：** 26.0.0 |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed.<br>**适用版本：** 26.0.0 |
-| [5400108](../errorcode-media.md#5400108-参数超过取值范围) | Parameter check failed.<br>**适用版本：** 26.0.0 |
+| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory.<br>**适用版本：** 26.0.0+ |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed.<br>**适用版本：** 26.0.0+ |
+| [5400108](../errorcode-media.md#5400108-参数超过取值范围) | Parameter check failed.<br>**适用版本：** 26.0.0+ |
 
 ## setWatermark
 
@@ -110,7 +128,10 @@ setMetadata(metadata: Record<string, string>): void
 setWatermark(watermark: image.PixelMap, config: WatermarkConfig): Promise<void>
 ```
 
-Sets a watermark for the AVRecorder. This API uses a promise to return the result. This API can be called only after the prepare() event is triggered and before the start() event is triggered.
+Sets a watermark for the AVRecorder. This API uses a promise to return the result.
+
+This API can be called only after the prepare() event is triggered and before
+the start() event is triggered.
 
 **起始版本：** 13
 
@@ -135,8 +156,8 @@ Sets a watermark for the AVRecorder. This API uses a promise to return the resul
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameter check failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 
 **示例：**
 

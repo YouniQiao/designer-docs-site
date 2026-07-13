@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## initSession
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function initSession(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksSessionHandle>): void
 ```
 
-Initializes a session for a key operation. This API uses an asynchronous callback to return the result. The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initializes a session for a key operation. This API uses an asynchronous callback to return the result.
+
+The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
 
 **Since:** 9
 
@@ -44,12 +46,12 @@ Initializes a session for a key operation. This API uses an asynchronous callbac
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid. Possible causes:1. the aead length is invalid.2. the group id specified by the access group tag is invalid.<br>**Applicable version:** 22 |
-| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 22 |
-| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 22 |
-| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 22 |
-| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 22 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid. Possible causes:1. the aead length is invalid.2. the group id specified by the access group tag is invalid.<br>**Applicable version:** 22 and later |
+| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 22 and later |
+| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 22 and later |
+| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 22 and later |
+| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 22 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 
 ## initSession
@@ -58,7 +60,9 @@ Initializes a session for a key operation. This API uses an asynchronous callbac
 function initSession(keyAlias: string, options: HuksOptions): Promise<HuksSessionHandle>
 ```
 
-Initializes a session for a key operation. This API uses a promise to return the result. The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initializes a session for a key operation. This API uses a promise to return the result.
+
+The **huks.initSession**, **huks.updateSession**, and **huks.finishSession** must be used together.
 
 **Since:** 9
 
@@ -95,10 +99,10 @@ Initializes a session for a key operation. This API uses a promise to return the
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid. Possible causes:1. the aead length is invalid.2. the group id specified by the access group tag is invalid.<br>**Applicable version:** 22 |
-| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 22 |
-| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 22 |
-| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 22 |
-| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 22 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid. Possible causes:1. the aead length is invalid.2. the group id specified by the access group tag is invalid.<br>**Applicable version:** 22 and later |
+| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 22 and later |
+| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 22 and later |
+| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 22 and later |
+| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 22 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 

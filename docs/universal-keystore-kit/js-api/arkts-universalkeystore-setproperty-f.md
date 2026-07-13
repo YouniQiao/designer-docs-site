@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huksExternalCrypto } from '@ohos.security.huksExternalCrypto';
+import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
 ## setProperty
@@ -12,7 +12,8 @@ import { huksExternalCrypto } from '@ohos.security.huksExternalCrypto';
 function setProperty(resourceId: string, propertyId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-The set-type operations of the external crypto extension support calling custom interfaces. However, the custom interface must be registered with the provider.
+The set-type operations of the external crypto extension support calling custom interfaces.
+However, the custom interface must be registered with the provider.
 
 **Since:** 26.0.0
 

@@ -11,7 +11,7 @@ Defines virtual screen parameters.
 ## Modules to Import
 
 ```TypeScript
-import { screen } from '@ohos.screen';
+import { screen } from '@kit.ArkUI';
 ```
 
 ## density
@@ -68,7 +68,8 @@ Name of a virtual screen.
 supportsFocus?: boolean
 ```
 
-Whether the virtual screen is focusable. **true** if focusable; **false** otherwise. The default value is **true**.
+Whether the virtual screen is focusable. **true** if focusable; **false** otherwise. The default value is
+**true**.
 
 **Type:** boolean
 

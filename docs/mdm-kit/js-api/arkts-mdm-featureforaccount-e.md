@@ -12,7 +12,9 @@ Enumerates the features that can be disabled or enabled for a specified user.
 MULTI_WINDOW = 0
 ```
 
-System multi-window. Currently, this feature is available only on phones and tablets. Once disabled, the system multi-window feature (split-screen, one-click split-screen, Multi-Window, and floating window) cannot be used. If the feature is currently active, the current usage remains unaffected. However, it cannot be used once closed.
+System multi-window. Currently, this feature is available only on phones and tablets. Once disabled, the system
+multi-window feature (split-screen, one-click split-screen, Multi-Window, and floating window) cannot be used. If
+the feature is currently active, the current usage remains unaffected. However, it cannot be used once closed.
 
 **Since:** 26.0.0
 
@@ -40,7 +42,9 @@ Distributed transmission.
 SUPER_HUB = 2
 ```
 
-SuperHub. Currently, this feature is available only on phones and tablets. Once disabled, the SuperHub feature cannot be used. If SuperHub is currently active, the current usage remains unaffected. However, it cannot be used once closed.
+SuperHub. Currently, this feature is available only on phones and tablets. Once disabled, the SuperHub feature
+cannot be used. If SuperHub is currently active, the current usage remains unaffected. However, it cannot be used
+once closed.
 
 **Since:** 26.0.0
 

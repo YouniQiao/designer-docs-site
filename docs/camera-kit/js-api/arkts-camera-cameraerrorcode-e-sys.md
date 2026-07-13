@@ -1,6 +1,7 @@
 # CameraErrorCode
 
-Enumerates the camera error codes, which are returned when an API call is incorrect or the **on()** API is used to listen for the error status.
+Enumerates the camera error codes,
+which are returned when an API call is incorrect or the **on()** API is used to listen for the error status.
 
 **Since:** 10
 

@@ -9,7 +9,7 @@ Permissive USB device Type.
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.enterprise.usbManager';
+import { usbManager } from '@kit.MDMKit';
 ```
 
 ## baseClass
@@ -18,7 +18,8 @@ import { usbManager } from '@ohos.enterprise.usbManager';
 baseClass: number
 ```
 
-The base class in USB class code information. The value must be an integer within [0,255].
+The base class in USB class code information.
+The value must be an integer within [0,255].
 
 **Type:** number
 
@@ -50,7 +51,8 @@ The descriptor that the class code is used in.
 protocol?: number
 ```
 
-The protocol in USB class code information. The value must be an integer within [0,255].
+The protocol in USB class code information.
+The value must be an integer within [0,255].
 
 **Type:** number
 
@@ -66,7 +68,8 @@ The protocol in USB class code information. The value must be an integer within 
 subClass?: number
 ```
 
-The subclass in USB class code information. The value must be an integer within [0,255].
+The subclass in USB class code information.
+The value must be an integer within [0,255].
 
 **Type:** number
 

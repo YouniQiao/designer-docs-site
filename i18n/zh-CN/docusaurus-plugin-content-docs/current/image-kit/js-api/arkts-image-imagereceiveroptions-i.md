@@ -6,21 +6,17 @@ ImageReceiver的初始化选项。
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
-## 导入模块
+## capacity
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+capacity?: number
 ```
 
-## size
+可同时访问的最大图像数量。该值必须为正整数，且小于或等于64张。
 
-```TypeScript
-size?: Size
-```
+该参数仅作为期望值，实际capacity由设备硬件决定。
 
-图像的大小，包括宽与高，且值都大于0。单位：像素（px）。 该参数不会影响接收到的图片大小，实际返回大小由生产者决定，如相机。
-
-**类型：** Size
+**类型：** number
 
 **起始版本：** 23
 
@@ -28,15 +24,17 @@ size?: Size
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
-## capacity
+## size
 
 ```TypeScript
-capacity?: int
+size?: Size
 ```
 
-可同时访问的最大图像数量。该值必须为正整数，且小于或等于64张。 该参数仅作为期望值，实际capacity由设备硬件决定。
+图像的大小，包括宽与高，且值都大于0。单位：像素（px）。
 
-**类型：** int
+该参数不会影响接收到的图片大小，实际返回大小由生产者决定，如相机。
+
+**类型：** Size
 
 **起始版本：** 23
 

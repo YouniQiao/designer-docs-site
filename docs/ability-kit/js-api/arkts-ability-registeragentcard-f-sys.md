@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { agentManager } from '@ohos.app.agent.agentManager';
+import { agentManager } from '@kit.AbilityKit';
 ```
 
 ## registerAgentCard
@@ -12,7 +12,10 @@ import { agentManager } from '@ohos.app.agent.agentManager';
 function registerAgentCard(agentCard: AgentCard): Promise<void>
 ```
 
-Registers an AgentCard. If `agentCard.type` is not specified, it defaults to `agentConstant.AgentCardType.APP`. When the type is `APP` or `LOW_CODE`, `appInfo` is validated, especially `bundleName` and `abilityName`. A maximum of 1000 AgentCards can be registered under one bundle.
+Registers an AgentCard.
+If `agentCard.type` is not specified, it defaults to `agentConstant.AgentCardType.APP`.
+When the type is `APP` or `LOW_CODE`, `appInfo` is validated, especially `bundleName` and `abilityName`.
+A maximum of 1000 AgentCards can be registered under one bundle.
 
 **Since:** 26.0.0
 

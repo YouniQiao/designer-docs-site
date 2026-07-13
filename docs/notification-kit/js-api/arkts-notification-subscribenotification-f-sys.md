@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationSubscribe } from '@ohos.notificationSubscribe';
+import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
 ## subscribeNotification
@@ -12,7 +12,8 @@ import { notificationSubscribe } from '@ohos.notificationSubscribe';
 function subscribeNotification(subscriber: NotificationSubscriber): Promise<void>
 ```
 
-Subscribes to notifications. After the subscription, the new message is received through the callback in the subscriber. This API uses a promise to return the result.
+Subscribes to notifications. After the subscription, the new message is received through the callback
+in the subscriber. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -72,7 +73,8 @@ notificationSubscribe.subscribeNotification(subscriber).then(() => {
 function subscribeNotification(subscriber: NotificationSubscriber, info: NotificationSubscribeInfo): Promise<void>
 ```
 
-Subscribes to notifications. After the subscription, the new message is received through the callback in the subscriber. This API uses a promise to return the result.
+Subscribes to notifications. After the subscription, the new message is received through the callback
+in the subscriber. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

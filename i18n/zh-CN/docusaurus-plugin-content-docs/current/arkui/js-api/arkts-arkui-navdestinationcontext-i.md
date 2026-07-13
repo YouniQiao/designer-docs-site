@@ -34,7 +34,8 @@ getConfigInRouteMap(): RouteMapConfig | undefined
 mode?: NavDestinationMode
 ```
 
-当前NavDestination的类型。 默认值：NavDestinationMode.Standard。
+当前NavDestination的类型。
+默认值：NavDestinationMode.Standard。
 
 **类型：** NavDestinationMode
 

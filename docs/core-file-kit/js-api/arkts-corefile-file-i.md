@@ -9,7 +9,7 @@ Represents a **File** object opened by **open()**.
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## getParent
@@ -56,7 +56,8 @@ fileIo.closeSync(file);
 lock(exclusive?: boolean): Promise<void>
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses a promise to return the result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -108,7 +109,8 @@ file.lock(true).then(() => {
 lock(callback: AsyncCallback<void>): void
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to return the result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -137,7 +139,8 @@ Applies an exclusive lock or a shared lock on this file in blocking mode. This A
 lock(exclusive: boolean, callback: AsyncCallback<void>): void
 ```
 
-Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to return the result.
+Applies an exclusive lock or a shared lock on this file in blocking mode. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 

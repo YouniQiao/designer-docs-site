@@ -9,7 +9,7 @@ Describes the screen brightness information. The information comes from the unde
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## brightnessPosition
@@ -18,7 +18,8 @@ import { display } from '@ohos.display';
 readonly brightnessPosition?: number
 ```
 
-Position of the brightness bar corresponding to the current screen brightness. Value range: [0.0,1.0]. Default value: 0.0.
+Position of the brightness bar corresponding to the current screen brightness.
+Value range: [0.0,1.0]. Default value: 0.0.
 
 **Type:** number
 

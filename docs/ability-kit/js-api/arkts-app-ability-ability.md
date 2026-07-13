@@ -12,5 +12,5 @@ import { Ability } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [Ability](arkts-ability-c.md) | Ability类是应用生命周期调度的基本单元，是[UIAbility]{@link @ohos.app.ability.UIAbility}和 [ExtensionAbility]{@link @ohos.app.ability.ExtensionAbility:ExtensionAbility}的基类，提供系统配置更新回调和系统内存级别变化回调能力。该基类不支持开发者直接继 承，开发者应根据具体的业务场景选择使用[UIAbility]{@link @ohos.app.ability.UIAbility}或 [ExtensionAbility]{@link @ohos.app.ability.ExtensionAbility:ExtensionAbility}，相关指南参见 [Ability Kit简介](docroot://application-models/abilitykit-overview.md)。 |
+| [Ability](arkts-ability-ability-c.md) | The Ability class is the fundamental unit for application lifecycle scheduling. It is the base class of[UIAbility](arkts-app-ability-uiability.md) and[ExtensionAbility](arkts-ability-extensionability-c.md), and provides callbacks for systemconfiguration updates and memory level updates. However, you cannot inherit directly from this base class. You should opt for either [UIAbility](arkts-app-ability-uiability.md) or[ExtensionAbility](arkts-ability-extensionability-c.md) based on your service needs. Fordetails, see [Introduction to Ability Kit](../../../../application-models/abilitykit-overview.md). |
 

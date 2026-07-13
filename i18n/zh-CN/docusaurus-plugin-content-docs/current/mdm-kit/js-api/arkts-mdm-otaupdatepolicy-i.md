@@ -12,7 +12,8 @@
 delayUpdateTime?: number
 ```
 
-表示延迟升级时间（单位：小时）。 单位为： 小时，取值应为≥0的整数。
+表示延迟升级时间（单位：小时）。
+单位为： 小时，取值应为≥0的整数。
 
 **类型：** number
 
@@ -28,7 +29,10 @@ delayUpdateTime?: number
 disableSystemOtaUpdate?: boolean
 ```
 
-表示是否禁用在公网环境下升级。true表示禁用公网升级，false表示不禁用公网升级。如果作为 [systemManager.setOtaUpdatePolicy](arkts-mdm-setotaupdatepolicy-f.md#setotaupdatepolicy-1)的入参，该字段可缺省，缺省时保持当前配置不变。当前配置可通过 [systemManager.getOtaUpdatePolicy](arkts-mdm-getotaupdatepolicy-f.md#getotaupdatepolicy-1)接口获取。禁用公网升级后，可以采用内网升级。<!--RP4--><!--RP4 End-->
+表示是否禁用在公网环境下升级。true表示禁用公网升级，false表示不禁用公网升级。如果作为
+[systemManager.setOtaUpdatePolicy](arkts-mdm-setotaupdatepolicy-f.md#setotaupdatepolicy-1)的入参，该字段可缺省，缺省时保持当前配置不变。当前配置可通过
+[systemManager.getOtaUpdatePolicy](arkts-mdm-getotaupdatepolicy-f.md#getotaupdatepolicy-1)接口获取。禁用公网升级后，可以采用内网升级。<!--RP4--><!--RP4
+End-->
 
 **类型：** boolean
 
@@ -76,7 +80,8 @@ installStartTime?: number
 latestUpdateTime?: number
 ```
 
-表示最晚升级时间（时间戳）。 单位为： 秒，取值应为≥0的整数。
+表示最晚升级时间（时间戳）。
+单位为： 秒，取值应为≥0的整数。
 
 **类型：** number
 

@@ -1,6 +1,9 @@
 # LineTypeset
 
-保存着文本内容以及样式的载体，可以用于计算单行排版信息。 下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md#paragraphbuilder)类的 [buildLineTypeset()](arkts-arkgraphics2d-paragraphbuilder-c.md#buildlinetypeset-1)接口获取到LineTypeset对象实例，再通过此实例调用对应方法。
+保存着文本内容以及样式的载体，可以用于计算单行排版信息。
+
+下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md)类的
+[buildLineTypeset()](arkts-arkgraphics2d-paragraphbuilder-c.md#buildlinetypeset-1)接口获取到LineTypeset对象实例，再通过此实例调用对应方法。
 
 **起始版本：** 18
 
@@ -37,7 +40,7 @@ createLine(startIndex: number, count: number): TextLine
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -80,7 +83,7 @@ getLineBreak(startIndex: number, width: number): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

@@ -9,7 +9,7 @@ Implements a **Matrix4Transit** object.
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## combine
@@ -18,7 +18,8 @@ import { matrix4 } from '@ohos.matrix4';
 combine(options: Matrix4Transit): Matrix4Transit
 ```
 
-Combines the effects of two matrices to generate a new matrix object. The matrix that calls this API will be changed.
+Combines the effects of two matrices to generate a new matrix object. The matrix that calls this API will be
+changed.
 
 **Since:** 7
 

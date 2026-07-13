@@ -1,6 +1,7 @@
 # Client
 
-Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance.
+Manages SSAP client. Before calling a SSAP client method,
+you must use {@link createClient} to create a ssap client instance.
 
 **Since:** 26.0.0
 
@@ -130,8 +131,6 @@ Unsubscribes from client connection state changed events.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -141,12 +140,6 @@ Unsubscribes from client connection state changed events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;ConnectionChangeState&gt; | No | Callback used to listen for the SSAP connection state changed event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## offMtuChange
 
@@ -158,8 +151,6 @@ Unsubscribes from MTU changed events.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -169,12 +160,6 @@ Unsubscribes from MTU changed events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;number&gt; | No | Callback used to listen for the MTU changed event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## offPropertyChange
 
@@ -186,8 +171,6 @@ Unsubscribe property value changed event.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -198,23 +181,19 @@ Unsubscribe property value changed event.
 | --- | --- | --- | --- |
 | callback | Callback&lt;Property&gt; | No | Callback used to listen for the property value changed event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onConnectionStateChange
 
 ```TypeScript
 onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 ```
 
-Subscribes to client connection state changed events. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned.
+Subscribes to client connection state changed events.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -226,12 +205,6 @@ Subscribes to client connection state changed events. If the user has the ohos.p
 | --- | --- | --- | --- |
 | callback | Callback&lt;ConnectionChangeState&gt; | Yes | Callback used to listen for the SSAP connection state changed event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onMtuChange
 
 ```TypeScript
@@ -240,9 +213,9 @@ onMtuChange(callback: Callback<number>): void
 
 Subscribes to MTU changed events.
 
-**Since:** 26.0.0
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -254,12 +227,6 @@ Subscribes to MTU changed events.
 | --- | --- | --- | --- |
 | callback | Callback&lt;number&gt; | Yes | Callback used to listen for the MTU changed event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onPropertyChange
 
 ```TypeScript
@@ -268,9 +235,9 @@ onPropertyChange(callback: Callback<Property>): void
 
 Subscribe property value changed event.
 
-**Since:** 26.0.0
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -281,12 +248,6 @@ Subscribe property value changed event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;Property&gt; | Yes | Callback used to listen for the property value changed event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## readProperty
 
@@ -332,7 +293,8 @@ Reads the property of a server.
 requestMtuSize(mtu: number): Promise<void>
 ```
 
-Negotiate the MTU size with server. The negotiation result needs to be obtained by subscribing to MTU event.
+Negotiate the MTU size with server.
+The negotiation result needs to be obtained by subscribing to MTU event.
 
 **Since:** 26.0.0
 
@@ -346,7 +308,7 @@ Negotiate the MTU size with server. The negotiation result needs to be obtained 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mtu | number | Yes | The maximum transmission unit.<br>The value must be an integer within [22,1024]. |
+| mtu | number | Yes | The maximum transmission unit.<br>Unit: byte. Recommended value range: [22, 1024]. |
 
 **Return value:**
 

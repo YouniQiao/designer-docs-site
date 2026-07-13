@@ -8,9 +8,11 @@ import { StaticSubscriberExtensionContext } from '@kit.BasicServicesKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[StaticSubscriberExtensionContext](arkts-staticsubscriberextensioncontext-c.md) | StaticSubscriberExtensionContext模块是StaticSubscriberExtensionAbility的上下文环境，继承自ExtensionContext。 StaticSubscriberExtensionContext模块提供StaticSubscriberExtensionAbility具有的接口和能力。 |
+| [StaticSubscriberExtensionContext](arkts-basicservices-staticsubscriberextensioncontext-c-sys.md) | The **StaticSubscriberExtensionContext** module, inherited from **StaticSubscriberExtensionAbility**, provides context for StaticSubscriberExtensionAbilities.You can use the APIs of this module to start StaticSubscriberExtensionAbilities. |
+<!--DelEnd-->
 

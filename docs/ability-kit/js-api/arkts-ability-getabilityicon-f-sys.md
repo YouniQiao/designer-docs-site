@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAbilityIcon
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAbilityIcon(bundleName: string, moduleName: string, abilityName: string, callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Obtains the icon of a specified ability.
+Obtains the PixelMap of an icon based on the bundle name, module name, and ability name.
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -30,10 +31,10 @@ Obtains the icon of a specified ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Indicates the bundle name of the application to which the ability belongs. |
-| moduleName | string | Yes | Indicates the module name. |
-| abilityName | string | Yes | Indicates the ability name. |
-| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the result. IfgetAbilityIcon is successful, **err** is **undefined**, and PixelMap isgetAbilityIcon obtained. Otherwise, **err** is an error object. |
+| bundleName | string | Yes | Bundle name of the application to be queried. |
+| moduleName | string | Yes | Module name of the application to be queried. |
+| abilityName | string | Yes | Ability component name to be queried. |
+| callback | AsyncCallback&lt;image.PixelMap&gt; | Yes | Callback used to return the result. IfgetApplicationInfos is successful, **err** is **undefined**, and PixelMap as the input parameterfor starting the application. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -55,7 +56,8 @@ Obtains the icon of a specified ability.
 function getAbilityIcon(bundleName: string, moduleName: string, abilityName: string): Promise<image.PixelMap>
 ```
 
-Obtains the icon of a specified ability.
+Obtains the PixelMap of an icon based on the bundle name, module name, and ability name.
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -73,15 +75,15 @@ Obtains the icon of a specified ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Indicates the bundle name of the application to which the ability belongs. |
-| moduleName | string | Yes | Indicates the module name. |
-| abilityName | string | Yes | Indicates the ability name. |
+| bundleName | string | Yes | Bundle name of the application to be queried. |
+| moduleName | string | Yes | Module name of the application to be queried. |
+| abilityName | string | Yes | Ability component name to be queried. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;image.PixelMap&gt; | Promise used to return PixelMap. |
+| Promise&lt;image.PixelMap&gt; | Promise used to return the PixelMap. |
 
 **Error codes:**
 

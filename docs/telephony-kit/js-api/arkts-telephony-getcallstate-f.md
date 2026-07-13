@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { call } from '@ohos.telephony.call';
+import { call } from '@kit.TelephonyKit';
 ```
 
 ## getCallState
@@ -12,7 +12,12 @@ import { call } from '@ohos.telephony.call';
 function getCallState(callback: AsyncCallback<CallState>): void
 ```
 
-Obtains the call state. If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}. If at least one call is in the active, hold, or dialing state, the system returns {@code CallState#CALL_STATE_OFFHOOK}. In other cases, the system returns {@code CallState#CALL_STATE_IDLE}.
+Obtains the call state.
+
+If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.
+If at least one call is in the active, hold, or dialing state, the system returns
+{@code CallState#CALL_STATE_OFFHOOK}.
+In other cases, the system returns {@code CallState#CALL_STATE_IDLE}.
 
 **Since:** 6
 
@@ -46,7 +51,12 @@ call.getCallState((err: BusinessError, data: call.CallState) => {
 function getCallState(): Promise<CallState>
 ```
 
-Obtains the call state. If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}. If at least one call is in the active, hold, or dialing state, the system returns {@code CallState#CALL_STATE_OFFHOOK}. In other cases, the system returns {@code CallState#CALL_STATE_IDLE}.
+Obtains the call state.
+
+If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.
+If at least one call is in the active, hold, or dialing state, the system returns
+{@code CallState#CALL_STATE_OFFHOOK}.
+In other cases, the system returns {@code CallState#CALL_STATE_IDLE}.
 
 **Since:** 6
 

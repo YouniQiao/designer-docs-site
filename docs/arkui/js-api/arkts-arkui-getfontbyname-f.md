@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { font } from '@ohos.font';
+import { font } from '@kit.ArkUI';
 ```
 
 ## getFontByName
@@ -12,7 +12,14 @@ import { font } from '@ohos.font';
 function getFontByName(fontName: string): FontInfo
 ```
 
-Obtains information about a system font based on the font name. > **NOTE** > > - Since API version 10, you can use the > [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Font](arkts-arkui-uicontext.md) object associated with > the current UI context.
+Obtains information about a system font based on the font name.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Font](arkts-arkui-uicontext.md) object associated with
+> the current UI context.
 
 **Since:** 10
 

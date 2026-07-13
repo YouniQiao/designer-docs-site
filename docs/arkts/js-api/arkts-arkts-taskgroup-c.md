@@ -1,6 +1,11 @@
 # TaskGroup
 
-Implements a task group, in which tasks are associated with each other and all tasks are executed at a time. If all the tasks are executed normally, an array of task results is returned asynchronously, and the sequence of elements in the array is the same as the sequence of tasks added by calling [addTask](arkts-arkts-taskgroup-c.md#addtask-2). If any task fails, the corresponding exception is thrown. If multiple tasks in the task group fail, the exception of the first failed task is thrown. A task group can be executed for multiple times, but no task can be added after the task group is executed.
+Implements a task group, in which tasks are associated with each other and all tasks are executed at a time. If all
+the tasks are executed normally, an array of task results is returned asynchronously, and the sequence of elements
+in the array is the same as the sequence of tasks added by calling
+[addTask](arkts-arkts-taskgroup-c.md#addtask-2). If any task fails, the corresponding exception is thrown.
+If multiple tasks in the task group fail, the exception of the first failed task is thrown. A task group can be
+executed for multiple times, but no task can be added after the task group is executed.
 
 **Since:** 10
 
@@ -9,7 +14,7 @@ Implements a task group, in which tasks are associated with each other and all t
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## addTask
@@ -18,7 +23,8 @@ import { taskpool } from '@ohos.taskpool';
 addTask(func: Function, ...args: Object[]): void
 ```
 
-Adds the function to be executed to this task group. Before using this API, you must create a **TaskGroup** instance.
+Adds the function to be executed to this task group. Before using this API, you must create a **TaskGroup**
+instance.
 
 **Since:** 10
 
@@ -59,7 +65,9 @@ taskGroup.addTask(printArgs, 100); // 100: test number
 addTask(task: Task): void
 ```
 
-Adds a created task to this task group. Before using this API, you must create a **TaskGroup** instance. Tasks in another task group, serial queue, or asynchronous queue, dependent tasks, continuous tasks, tasks that have been executed, and periodic tasks cannot be added to the task group.
+Adds a created task to this task group. Before using this API, you must create a **TaskGroup** instance. Tasks in
+another task group, serial queue, or asynchronous queue, dependent tasks, continuous tasks, tasks that have been
+executed, and periodic tasks cannot be added to the task group.
 
 **Since:** 10
 
@@ -78,8 +86,8 @@ Adds a created task to this task group. Before using this API, you must create a
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent. |
-| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 and later |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 

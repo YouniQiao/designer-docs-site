@@ -4,7 +4,8 @@
 declare type StyledStringMarshallingValue = UserDataSpan
 ```
 
-Defines a custom marshalling object for styled strings, which you need to define marshalling and unmarshalling methods.
+Defines a custom marshalling object for styled strings, which you need to define marshalling and unmarshalling
+methods.
 
 **Since:** 19
 

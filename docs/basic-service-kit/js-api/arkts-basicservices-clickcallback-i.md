@@ -1,6 +1,7 @@
 # ClickCallback
 
-Defines a callback used to return whether the application started by double-pressing the function key is the application itself.
+Defines a callback used to return whether the application started by double-pressing the function key is the
+application itself.
 
 **Since:** 24
 

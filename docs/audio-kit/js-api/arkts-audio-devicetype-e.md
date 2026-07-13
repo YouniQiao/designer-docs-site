@@ -1,9 +1,5 @@
 # DeviceType
 
-```TypeScript
-enum DeviceType
-```
-
 Enumerates the device types.
 
 **Since:** 7
@@ -20,7 +16,7 @@ Invalid device.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -34,7 +30,7 @@ Built-in earpiece.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -48,7 +44,7 @@ Built-in speaker.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -62,7 +58,7 @@ Wired headset with a microphone.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -76,7 +72,7 @@ Wired headset without a microphone.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -90,7 +86,7 @@ Bluetooth device using Synchronous Connection Oriented (SCO) links.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -104,7 +100,7 @@ Bluetooth device using Advanced Audio Distribution Profile (A2DP) links.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -118,7 +114,7 @@ Built-in microphone.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -132,7 +128,7 @@ USB Type-C headset.
 
 **Since:** 7
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -146,7 +142,7 @@ Display port (DP), which is used to connect to external devices.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -160,7 +156,7 @@ Remote cast device.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -175,20 +171,6 @@ USB device (excluding USB headsets).
 **Since:** 18
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
-
-## ACCESSORY
-
-```TypeScript
-ACCESSORY = 26
-```
-
-Accessory devices, such as the mic on remote control.
-
-**Since:** 19
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-**System API:** This is a system API.
 
 ## HDMI
 
@@ -224,7 +206,7 @@ Distributed device.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -234,7 +216,9 @@ Distributed device.
 HEARING_AID = 30
 ```
 
-Hearing aid audio device. Note: This original device type can be obtained after it is declared via {@link AudioRoutingManager#declareDeviceTypesCompatibility}.
+Hearing aid audio device.
+Note: This original device type can be obtained after it is declared via
+{@link AudioRoutingManager#declareDeviceTypesCompatibility}.
 
 **Since:** 26.0.0
 
@@ -246,39 +230,13 @@ Hearing aid audio device. Note: This original device type can be obtained after 
 NEARLINK = 31
 ```
 
-Nearlink device. Note: This original device type can be obtained after it is declared via {@link AudioRoutingManager#declareDeviceTypesCompatibility}.
+Nearlink device.
+Note: This original device type can be obtained after it is declared via
+{@link AudioRoutingManager#declareDeviceTypesCompatibility}.
 
 **Since:** 26.0.0
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
-
-## BLUETOOTH_SPP
-
-```TypeScript
-BLUETOOTH_SPP = 33
-```
-
-Bluetooth device using the spp profile.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-**System API:** This is a system API.
-
-## NEARLINK_PORT
-
-```TypeScript
-NEARLINK_PORT = 34
-```
-
-Nearlink port.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-**System API:** This is a system API.
 
 ## SYSTEM_PRIVATE
 
@@ -302,7 +260,7 @@ Default device type.
 
 **Since:** 9
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 

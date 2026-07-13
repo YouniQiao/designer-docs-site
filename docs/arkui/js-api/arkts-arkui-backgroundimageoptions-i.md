@@ -32,7 +32,8 @@ Set the repeat style of the background image.
 syncLoad?: boolean
 ```
 
-Sets the synchronous or asynchronous mode for background image loading. The default parameter type is bool, and the default value is false.
+Sets the synchronous or asynchronous mode for background image loading.
+The default parameter type is bool, and the default value is false.
 
 **Type:** boolean
 

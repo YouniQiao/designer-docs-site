@@ -1,6 +1,7 @@
 # UsedScene
 
-Describes the use scenario and timing for using the permission.
+Describes the use scenario and timing of the permission,
+helping developers request and use permissions properly.
 
 **Since:** 9
 

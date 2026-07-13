@@ -1,6 +1,7 @@
 # Readable
 
-Stream from which data can be read. A readable stream is used to read data from a source, such as a file or a network socket.
+Stream from which data can be read. A readable stream is used to read data from a source, such as a file or a
+network socket.
 
 **Since:** 12
 
@@ -9,7 +10,7 @@ Stream from which data can be read. A readable stream is used to read data from 
 ## Modules to Import
 
 ```TypeScript
-import { stream } from '@ohos.util.stream';
+import { stream } from '@kit.ArkTS';
 ```
 
 ## constructor
@@ -69,7 +70,9 @@ let readableStream = new stream.Readable(option);
 doInitialize(callback: Function): void
 ```
 
-You need to implement this API. It is called when the readable stream calls [on](arkts-arkts-writable-c.md#on-1) for the first time. This API uses an asynchronous callback to return the result.
+You need to implement this API. It is called when the readable stream calls
+[on](arkts-arkts-writable-c.md#on-1) for the first time. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -147,7 +150,8 @@ readable.on('data', () => {
 isPaused(): boolean
 ```
 
-Checks whether the readable stream is paused. The stream is paused after [pause()](arkts-arkts-readable-c.md#pause-1) is called and resumes from the paused state after [resume()](arkts-arkts-readable-c.md#resume-1) is called.
+Checks whether the readable stream is paused. The stream is paused after [pause()](arkts-arkts-readable-c.md#pause-1)
+is called and resumes from the paused state after [resume()](arkts-arkts-readable-c.md#resume-1) is called.
 
 **Since:** 12
 
@@ -417,7 +421,8 @@ console.info("Readable push test", readable.readableLength); // Readable push te
 read(size?: number): string | null
 ```
 
-Reads data from the buffer of the readable stream and returns the read data. If no data is read, **null** is returned.
+Reads data from the buffer of the readable stream and returns the read data. If no data is read, **null** is
+returned.
 
 **Since:** 12
 
@@ -507,7 +512,8 @@ console.info("Readable test resume", !readableStream.isPaused()); // After a suc
 setEncoding(encoding?: string): boolean
 ```
 
-Sets an encoding format for the readable stream. If the buffer contains data, setting the encoding format is not allowed, and **false** is returned.
+Sets an encoding format for the readable stream.
+If the buffer contains data, setting the encoding format is not allowed, and **false** is returned.
 
 **Since:** 12
 
@@ -612,7 +618,8 @@ readable.on('data', () => {
 get readable(): boolean
 ```
 
-Is true if it is safe to call readable.read(), which means the stream has not been destroyed or emitted 'error' or 'end'.
+Is true if it is safe to call readable.read(), which means
+the stream has not been destroyed or emitted 'error' or 'end'.
 
 **Type:** boolean
 
@@ -628,7 +635,8 @@ Is true if it is safe to call readable.read(), which means the stream has not be
 get readableEncoding(): string | null
 ```
 
-Getter for the property encoding of a given Readable stream. The encoding property can be set using the readable.setEncoding() method.
+Getter for the property encoding of a given Readable stream. The encoding property can be set using the
+readable.setEncoding() method.
 
 **Type:** string
 

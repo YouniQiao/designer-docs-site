@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## onPreloadedUIExtensionAbilityDestroyed
@@ -12,7 +12,9 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function onPreloadedUIExtensionAbilityDestroyed(callback: PreloadedUIExtensionAbilityDestroyedFn): void
 ```
 
-Subscribes to destroyed events of a preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instance in the current process.
+Subscribes to destroyed events of a preloaded
+[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current
+process.
 
 **Since:** 23
 
@@ -28,7 +30,7 @@ Subscribes to destroyed events of a preloaded [UIExtensionAbility](arkts-ability
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | PreloadedUIExtensionAbilityDestroyedFn | Yes | Callback used to receive the ID of the preloaded[UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instance that is destroyed. |
+| callback | PreloadedUIExtensionAbilityDestroyedFn | Yes | Callback used to receive the ID of the preloaded[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance that is destroyed. |
 
 **Error codes:**
 

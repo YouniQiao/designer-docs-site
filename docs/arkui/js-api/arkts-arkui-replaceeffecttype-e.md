@@ -12,7 +12,8 @@ The replace effect type of symbol.
 SEQUENTIAL = 0
 ```
 
-Sequential replacement: The current symbol disappears before a new symbol appears. This is the default symbol replacement effect type.
+Sequential replacement: The current symbol disappears before a new symbol appears. This is the default symbol
+replacement effect type.
 
 **Since:** 20
 
@@ -48,7 +49,8 @@ Cross-fade transition effect: The current symbol fades out while a new symbol fa
 SLASH_OVERLAY = 2
 ```
 
-Slash overlay effect: The current symbol is replaced with a symbol featuring diagonal slash, typically indicating disabled state.
+Slash overlay effect: The current symbol is replaced with a symbol featuring diagonal slash, typically indicating
+disabled state.
 
 **Since:** 20
 

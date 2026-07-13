@@ -9,7 +9,7 @@ Describes the information about the window layout.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## windowAlpha
@@ -18,7 +18,8 @@ import { window } from '@ohos.window';
 windowAlpha?: number
 ```
 
-The window's alpha fade level. This number is in the range 0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.
+The window's alpha fade level. This number is in the range 0.0 to 1.0,
+where 0.0 is fully transparent and 1.0 is fully opaque.
 
 **Type:** number
 

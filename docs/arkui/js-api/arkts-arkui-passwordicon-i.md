@@ -12,7 +12,9 @@ PasswordIcon object.
 offIconSrc?: string | Resource
 ```
 
-Displays the icon when the password is toggled to hidden in the password input mode. The string type can be used to load network images and local images.
+Displays the icon when the password is toggled to hidden in the password input mode.
+
+The string type can be used to load network images and local images.
 
 **Type:** string | Resource
 
@@ -30,7 +32,9 @@ Displays the icon when the password is toggled to hidden in the password input m
 onIconSrc?: string | Resource
 ```
 
-Displays the icon when the password is toggled to visible in the password input mode. The string type can be used to load network images and local images.
+Displays the icon when the password is toggled to visible in the password input mode.
+
+The string type can be used to load network images and local images.
 
 **Type:** string | Resource
 

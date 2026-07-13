@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## getTotalSize
@@ -12,7 +12,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 function getTotalSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains the total size (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result.
+Obtains the total size (in bytes) of the built-in storage. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 15
 

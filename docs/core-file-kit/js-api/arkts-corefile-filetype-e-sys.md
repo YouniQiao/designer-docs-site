@@ -6,7 +6,7 @@ Enumeration types for different kinds of Files
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [PhotoType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-phototype-e.md#phototype)
+**Substitutes:** [PhotoType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-phototype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -60,7 +60,7 @@ Audio file type
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

@@ -1,6 +1,9 @@
 # Paragraph
 
-保存文本内容及样式的载体，支持排版与绘制操作。 下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md#paragraphbuilder)类的[build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1)接口获取到 Paragraph对象实例，再通过此实例调用对应方法。
+保存文本内容及样式的载体，支持排版与绘制操作。
+
+下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md)类的[build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1)接口获取到
+Paragraph对象实例，再通过此实例调用对应方法。
 
 **起始版本：** 12
 
@@ -58,6 +61,7 @@ forceReuseRasterResult(isForce: boolean): void
 **示例：**
 
 ```TypeScript
+// Index.ets
 import { text, drawing } from '@kit.ArkGraphics2D'
 import { image } from '@kit.ImageKit'
  
@@ -1037,7 +1041,8 @@ let lines = paragraph.getTextLines();
 getVisibleTextRanges(): Array<Range>
 ```
 
-获取段落中在屏幕上可见的文本范围。不包含因最大行数（[ParagraphStyle](arkts-arkgraphics2d-paragraphstyle-i.md#paragraphstyle)的maxLines属性）截断或省略号模式（ [EllipsisMode](arkts-arkgraphics2d-ellipsismode-e.md#ellipsismode)）替换而未显示的文本。
+获取段落中在屏幕上可见的文本范围。不包含因最大行数（[ParagraphStyle](arkts-arkgraphics2d-paragraphstyle-i.md)的maxLines属性）截断或省略号模式（
+[EllipsisMode](arkts-arkgraphics2d-ellipsismode-e.md)）替换而未显示的文本。
 
 **起始版本：** 26.0.0
 
@@ -1123,7 +1128,7 @@ layout(width: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

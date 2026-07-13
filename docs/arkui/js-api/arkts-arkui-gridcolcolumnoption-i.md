@@ -1,6 +1,25 @@
 # GridColColumnOption
 
-Describes the numbers of grid columns occupied by the **GridCol** component on devices with different width types. - In versions earlier than API version 20: When you configure **GridCol** column spans only at specific breakpoints, unconfigured breakpoints inherit values from the next smaller configured breakpoint. If no smaller breakpoint is configured, the default value of **1** is used. <!--code_no_check--> ```ts span: {xs:2, md:4, lg:8} // Equivalent to span: {xs:2, sm:2, md:4, lg:8, xl:8, xxl:8}. span: {md:4, lg:8} // Equivalent to span: {xs:1, sm:1, md:4, lg:8, xl:8, xxl:8}. ``` - Since API version 20: When you configure **GridCol** column spans only at specific breakpoints, unconfigured breakpoints inherit values from the next smaller configured breakpoint. If no smaller breakpoint exists, values are inherited from the next larger configured breakpoint. <!--code_no_check--> ```ts span: {xs:2, md:4, lg:8} // Equivalent to span: {xs:2, sm:2, md:4, lg:8, xl:8, xxl:8}. span: {md:4, lg:8} // Equivalent to span: {xs:4, sm:4, md:4, lg:8, xl:8, xxl:8}. ``` - Recommendation: Explicitly configure **GridCol** column spans for all required breakpoints to prevent unexpected layout behavior caused by automatic value inheritance.
+Describes the numbers of grid columns occupied by the **GridCol** component on devices with different width types.
+
+- In versions earlier than API version 20: When you configure **GridCol** column spans only at specific breakpoints,
+unconfigured breakpoints inherit values from the next smaller configured breakpoint. If no smaller breakpoint is
+configured, the default value of **1** is used.
+<!--code_no_check-->
+```ts
+span: {xs:2, md:4, lg:8} // Equivalent to span: {xs:2, sm:2, md:4, lg:8, xl:8, xxl:8}.
+span: {md:4, lg:8} // Equivalent to span: {xs:1, sm:1, md:4, lg:8, xl:8, xxl:8}.
+```
+- Since API version 20: When you configure **GridCol** column spans only at specific breakpoints, unconfigured
+breakpoints inherit values from the next smaller configured breakpoint. If no smaller breakpoint exists, values are
+inherited from the next larger configured breakpoint.
+<!--code_no_check-->
+```ts
+span: {xs:2, md:4, lg:8} // Equivalent to span: {xs:2, sm:2, md:4, lg:8, xl:8, xxl:8}.
+span: {md:4, lg:8} // Equivalent to span: {xs:4, sm:4, md:4, lg:8, xl:8, xxl:8}.
+```
+- Recommendation: Explicitly configure **GridCol** column spans for all required breakpoints to prevent unexpected
+layout behavior caused by automatic value inheritance.
 
 **Since:** 9
 

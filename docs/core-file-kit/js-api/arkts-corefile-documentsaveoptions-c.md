@@ -9,7 +9,7 @@ Defines the options for saving documents.
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## autoCreateEmptyFile
@@ -18,7 +18,9 @@ import { picker } from '@ohos.file.picker';
 autoCreateEmptyFile?: boolean
 ```
 
-A Boolean value indicates whether to pre-create empty files when saving files. The default value is **true**, in which case the Picker pre-creates empty files and returns an array of the file URIs. If it is set to **false**, no empty files are pre-created, and only an array of the file URIs is returned.
+A Boolean value indicates whether to pre-create empty files when saving files. The default value is **true**, in
+which case the Picker pre-creates empty files and returns an array of the file URIs. If it is set to **false**,
+no empty files are pre-created, and only an array of the file URIs is returned.
 
 **Type:** boolean
 
@@ -36,7 +38,8 @@ A Boolean value indicates whether to pre-create empty files when saving files. T
 defaultFilePathUri?: string
 ```
 
-URI of the file or directory that can be selected. It is empty by default (the recently opened page is displayed).
+URI of the file or directory that can be selected. It is empty by
+default (the recently opened page is displayed).
 
 **Type:** string
 
@@ -52,7 +55,11 @@ URI of the file or directory that can be selected. It is empty by default (the r
 fileSuffixChoices?: Array<string>
 ```
 
-Document suffix of the document to save. The value is a string array. Each element specifies an option, which includes at most two parts with a vertical bar (|) in between. The first part is the description, and the second part is the document suffix. If there is no "|", the option does not have the description. By default, all documents are saved.
+Document suffix of the document to save.
+
+The value is a string array. Each element specifies an option, which includes at most two parts with a vertical
+bar (|) in between. The first part is the description, and the second part is the document suffix.
+If there is no "|", the option does not have the description. By default, all documents are saved.
 
 **Type:** Array<string>
 
@@ -84,7 +91,10 @@ Name of the document to save. If this parameter is not specified, the user needs
 pickerMode?: DocumentPickerMode
 ```
 
-Mode for starting Picker. Default value: **DEFAULT**. If **pickerMode** is **DOWNLOAD**, the settings of **newFileNames**, **defaultFilePathUri**, and **fileSuffixChoices** do not take effect.
+Mode for starting Picker.
+
+Default value: **DEFAULT**. If **pickerMode** is **DOWNLOAD**, the settings of **newFileNames**,
+**defaultFilePathUri**, and **fileSuffixChoices** do not take effect.
 
 **Type:** DocumentPickerMode
 

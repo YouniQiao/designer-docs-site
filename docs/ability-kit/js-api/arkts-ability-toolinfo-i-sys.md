@@ -116,6 +116,26 @@ The input schema of the CLI tool.
 
 **System API:** This is a system API.
 
+## isLockScreenExecutionAllowed
+
+```TypeScript
+readonly isLockScreenExecutionAllowed?: boolean
+```
+
+Whether the tool can be executed when the screen is locked.
+
+**Type:** boolean
+
+**Default:** false
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
 ## name
 
 ```TypeScript

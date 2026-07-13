@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## notifyVisibleForms
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function notifyVisibleForms(formIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Instructs the widget framework to make a widget visible. After this API is called, **onVisibilityChange** is invoked to notify the widget provider. This API uses an asynchronous callback to return the result.
+Instructs the widget framework to make a widget visible. After this API is called, **onVisibilityChange** is
+invoked to notify the widget provider. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -47,7 +48,8 @@ Instructs the widget framework to make a widget visible. After this API is calle
 function notifyVisibleForms(formIds: Array<string>): Promise<void>
 ```
 
-Instructs the widget framework to make a widget visible. After this API is called, **onVisibilityChange** is invoked to notify the widget provider. This API uses a promise to return the result.
+Instructs the widget framework to make a widget visible. After this API is called, **onVisibilityChange** is
+invoked to notify the widget provider. This API uses a promise to return the result.
 
 **Since:** 9
 

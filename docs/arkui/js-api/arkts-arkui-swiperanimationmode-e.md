@@ -48,7 +48,8 @@ Move to the specified page with the default animation.
 FAST_ANIMATION = 2
 ```
 
-Move to a page near the specified page without animation, and then navigate to the specified page with the default animation.
+Move to a page near the specified page without animation, and then navigate to the specified page with the default
+animation.
 
 **Since:** 15
 

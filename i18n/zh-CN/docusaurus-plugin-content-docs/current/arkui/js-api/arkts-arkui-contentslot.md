@@ -1,6 +1,9 @@
 # ContentSlot
 
-用于渲染并管理Native层使用C-API创建的组件。 支持混合模式开发，当容器是ArkTS组件，子组件在Native侧创建时，推荐使用ContentSlot占位组件。
+用于渲染并管理Native层使用C-API创建的组件。
+
+支持混合模式开发，当容器是ArkTS组件，子组件在Native侧创建时，推荐使用ContentSlot占位组件。
+
 
 ## ContentSlot
 

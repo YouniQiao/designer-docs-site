@@ -12,42 +12,6 @@ Provides information about an accessibility application.
 import { accessibility } from '@kit.AccessibilityKit';
 ```
 
-## capabilities
-
-```TypeScript
-readonly capabilities: Array<Capability>
-```
-
-Capabilities list of the accessibility application.
-
-**Type:** Array<Capability>
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## targetBundleNames
-
-```TypeScript
-readonly targetBundleNames: Array<string>
-```
-
-Name of the target bundle.
-
-**Type:** Array<string>
-
-**Since:** 9
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
 ## abilityTypes
 
 ```TypeScript
@@ -60,45 +24,9 @@ Accessibility application type.
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## name
-
-```TypeScript
-readonly name: string
-```
-
-Ability name.
-
-**Type:** string
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## description
-
-```TypeScript
-readonly description: string
-```
-
-Description of the accessibility application.
-
-**Type:** string
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -114,63 +42,45 @@ Bundle name.
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## label
-
-```TypeScript
-readonly label: string
-```
-
-Name of the application in the extended service list.
-
-**Type:** string
-
-**Since:** 12
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
-## needHide
+## capabilities
 
 ```TypeScript
-readonly needHide: boolean
+readonly capabilities: Array<Capability>
 ```
 
-Whether the auxiliary application is hidden in the list of installed extended services. The value **true** means the auxiliary application is hidden, and the value **false** means the opposite.
+Capabilities list of the accessibility application.
 
-**Type:** boolean
+**Type:** Array<Capability>
 
-**Since:** 12
+**Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
-## id
+## description
 
 ```TypeScript
-readonly id: string
+readonly description: string
 ```
 
-Ability ID.
+Description of the accessibility application.
 
 **Type:** string
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -186,9 +96,100 @@ List of events that the accessibility application focuses on.
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## id
+
+```TypeScript
+readonly id: string
+```
+
+Ability ID.
+
+**Type:** string
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## label
+
+```TypeScript
+readonly label: string
+```
+
+Name of the application in the extended service list.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## name
+
+```TypeScript
+readonly name: string
+```
+
+Ability name.
+
+**Type:** string
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## needHide
+
+```TypeScript
+readonly needHide: boolean
+```
+
+Whether the auxiliary application is hidden in the list of installed extended services. The value **true** means
+the auxiliary application is hidden, and the value **false** means the opposite.
+
+**Type:** boolean
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## targetBundleNames
+
+```TypeScript
+readonly targetBundleNames: Array<string>
+```
+
+Name of the target bundle.
+
+**Type:** Array<string>
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 

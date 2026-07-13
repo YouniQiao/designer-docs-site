@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { config } from '@ohos.accessibility.config';
+import { config } from '@kit.AccessibilityKit';
 ```
 
 ## off('enabledAccessibilityExtensionListChange')
@@ -12,7 +12,8 @@ import { config } from '@ohos.accessibility.config';
 function off(type: 'enabledAccessibilityExtensionListChange', callback?: Callback<void>): void
 ```
 
-Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an asynchronous callback to return the result.
+Cancels a listener for changes in the list of enabled accessibility extension abilities. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -44,7 +45,8 @@ Cancels a listener for changes in the list of enabled accessibility extension ab
 function off(type: 'installedAccessibilityListChange', callback?: Callback<void>): void
 ```
 
-Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an asynchronous callback to return the result.
+Cancels a listener for changes in the list of installed accessibility extension abilities. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 12
 

@@ -9,7 +9,7 @@ Describes the window parameters during application startup.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## isWindowLimitsForcible
@@ -18,7 +18,8 @@ import { window } from '@ohos.window';
 isWindowLimitsForcible?: boolean
 ```
 
-Whether to override system window limits. If true, the main window of the current ability can set a window limit that exceeds system restrictions.
+Whether to override system window limits.
+If true, the main window of the current ability can set a window limit that exceeds system restrictions.
 
 **Type:** boolean
 
@@ -38,7 +39,10 @@ Whether to override system window limits. If true, the main window of the curren
 systemAnimationParams?: StartAnimationSystemParams
 ```
 
-Describes the start animation configuration. This API works only for full-screen applications. The configuration does not take effect for inter-application transitions, where the default animation of the system is used.
+Describes the start animation configuration. This API works only for full-screen applications.
+
+The configuration does not take effect for inter-application transitions, where the default animation of the
+system is used.
 
 **Type:** StartAnimationSystemParams
 

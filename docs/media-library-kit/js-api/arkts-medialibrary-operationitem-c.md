@@ -9,7 +9,7 @@ Operation item
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## field
@@ -54,7 +54,8 @@ The type of the operation
 value?: Array<OperationValueType>
 ```
 
-The value of the operation. The value length follows operationType-specific limit N (max 10), truncated to first N if exceeded.
+The value of the operation. The value length follows operationType-specific limit N (max 10),
+truncated to first N if exceeded.
 
 **Type:** Array<OperationValueType>
 

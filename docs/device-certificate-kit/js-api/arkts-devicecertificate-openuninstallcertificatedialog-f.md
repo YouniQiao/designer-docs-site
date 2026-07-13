@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## openUninstallCertificateDialog
@@ -12,7 +12,8 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 function openUninstallCertificateDialog(context: common.Context, certType: CertificateType, certUri: string): Promise<void>
 ```
 
-Open the Certificate Management Uninstall Certificate dialog. The corresponding page is displayed. Use Promise asynchronous callbacks.
+Open the Certificate Management Uninstall Certificate dialog. The corresponding page is displayed. Use Promise
+asynchronous callbacks.
 
 **Since:** 18
 

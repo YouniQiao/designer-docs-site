@@ -9,7 +9,7 @@ This class is used to set adblock config.
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## addAdsBlockAllowedList
@@ -18,7 +18,10 @@ import { webview } from '@ohos.web.webview';
 static addAdsBlockAllowedList(domainSuffixes: Array<string>): void
 ```
 
-Add items to Ads Block Allow list. By default, ads block is allowed for all pages unless they are added to the disallow list. The priority of allowlist is higher than the disallowlist. It is used to re-enable ads block on the page that matches disallow list.
+Add items to Ads Block Allow list.
+By default, ads block is allowed for all pages unless they are added to the
+disallow list. The priority of allowlist is higher than the disallowlist. It is
+used to re-enable ads block on the page that matches disallow list.
 
 **Since:** 12
 
@@ -37,7 +40,7 @@ Add items to Ads Block Allow list. By default, ads block is allowed for all page
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## addAdsBlockDisallowedList
 
@@ -45,7 +48,16 @@ Add items to Ads Block Allow list. By default, ads block is allowed for all page
 static addAdsBlockDisallowedList(domainSuffixes: Array<string>): void
 ```
 
-Add items to Ads Block Disallow list. <p><strong>API Note</strong>:<br> The domain name set by this API is not persistent; they need to be set again after the application is restarted. The ad blocking feature matches website URLs based on the suffix. For example, if the disallowed list contains **'example.com'** or **'www.example.com'**, then ad blocking will be disabled for sites **https://www.example.com** and **https://m.example.com**. </p>
+Add items to Ads Block Disallow list.
+
+<p><strong>API Note</strong>:<br>
+The domain name set by this API is not persistent; they need to be set again after the application is
+restarted.
+
+The ad blocking feature matches website URLs based on the suffix. For example, if the disallowed list contains
+**'example.com'** or **'www.example.com'**, then ad blocking will be disabled for sites
+**https://www.example.com** and **https://m.example.com**.
+</p>
 
 **Since:** 12
 
@@ -64,7 +76,7 @@ Add items to Ads Block Disallow list. <p><strong>API Note</strong>:<br> The doma
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## clearAdsBlockAllowedList
 
@@ -84,7 +96,7 @@ clear Ads Block Allowed list.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## clearAdsBlockDisallowedList
 
@@ -104,7 +116,7 @@ clear Ads Block Disallowed list.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## removeAdsBlockAllowedList
 
@@ -131,7 +143,7 @@ remove items from Ads Block Allowed list.
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## removeAdsBlockDisallowedList
 
@@ -158,7 +170,7 @@ remove items from Ads Block Disallowed list.
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 ## setAdsBlockRules
 
@@ -166,7 +178,12 @@ remove items from Ads Block Disallowed list.
 static setAdsBlockRules(rulesFile: string, replace: boolean): void
 ```
 
-set Ads Block ruleset file, containing easylist rules. <p><strong>API Note</strong>:<br> The ad blocking rules set by this API will be persistently stored after successful internal parsing; you do not need to set them again after the application is restarted. </p>
+set Ads Block ruleset file, containing easylist rules.
+
+<p><strong>API Note</strong>:<br>
+The ad blocking rules set by this API will be persistently stored after successful internal parsing; you do not
+need to set them again after the application is restarted.
+</p>
 
 **Since:** 12
 
@@ -186,5 +203,5 @@ set Ads Block ruleset file, containing easylist rules. <p><strong>API Note</stro
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 

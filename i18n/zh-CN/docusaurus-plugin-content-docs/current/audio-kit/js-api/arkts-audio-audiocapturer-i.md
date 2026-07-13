@@ -1,24 +1,24 @@
 # AudioCapturer
 
-This interface provides APIs for audio capture. Before calling any API in AudioCapturer, you must use [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-1) to create an AudioCapturer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
+提供音频采集的相关接口。
+
+在使用AudioCapturer的接口之前，需先通过[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)获取AudioCapturer实例。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 8开始支持。
 
 **起始版本：** 8
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
 
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(callback: AsyncCallback<long>): void
+getAudioStreamId(callback: AsyncCallback<number>): void
 ```
 
-Obtains the stream ID of this audio capturer. This API uses an asynchronous callback to return the result.
+获取音频流id。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -28,15 +28,15 @@ Obtains the stream ID of this audio capturer. This API uses an asynchronous call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the stream ID obtained; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音频流id成功，err为undefined，data为获取到的音频流id；否则为错误对象。 |
 
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(): Promise<long>
+getAudioStreamId(): Promise<number>
 ```
 
-Obtains the stream ID of this audio capturer. This API uses a promise to return the result.
+获取音频流id。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -46,15 +46,15 @@ Obtains the stream ID of this audio capturer. This API uses a promise to return 
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the stream ID. |
+| Promise&lt;number&gt; | Promise对象，返回音频流id。 |
 
 ## getAudioStreamIdSync
 
 ```TypeScript
-getAudioStreamIdSync(): long
+getAudioStreamIdSync(): number
 ```
 
-Obtains the stream ID of this audio capturer. This API returns the result synchronously.
+获取音频流id。同步返回结果。
 
 **起始版本：** 10
 
@@ -64,15 +64,15 @@ Obtains the stream ID of this audio capturer. This API returns the result synchr
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Stream ID. |
+| number | 返回音频流id。 |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(callback: AsyncCallback<long>): void
+getAudioTime(callback: AsyncCallback<number>): void
 ```
 
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses an asynchronous callback to return the result.
+获取当前录制位置的时间戳（从1970年1月1日开始），单位为纳秒。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -82,15 +82,15 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the number of nanoseconds obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取时间戳成功，err为undefined，data为获取到的时间戳；否则为错误对象。 |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(): Promise<long>
+getAudioTime(): Promise<number>
 ```
 
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses a promise to return the result.
+获取当前录制位置的时间戳（从1970年1月1日开始），单位为纳秒。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -100,7 +100,25 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return a timestamp representing the number of nanoseconds elapsed  since the Unix epoch (January 1, 1970).  The timestamp unit is nanoseconds. |
+| Promise&lt;number&gt; | Promise对象，返回时间戳（从1970年1月1日开始）。<br>单位为纳秒。 |
+
+## getAudioTimeSync
+
+```TypeScript
+getAudioTimeSync(): number
+```
+
+获取当前录制位置的时间戳（从1970年1月1日开始），单位为纳秒。同步返回结果。
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.Multimedia.Audio.Capturer
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| number | 返回时间戳。 |
 
 ## getAudioTimestampInfo
 
@@ -108,7 +126,9 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 getAudioTimestampInfo(): Promise<AudioTimestampInfo>
 ```
 
-Obtains the timestamp and position information of an input audio stream. This API obtains the actual recording position (specified by **framePos**) of the audio channel and the timestamp when recording to that position (specified by **timestamp**, in nanoseconds).
+获取输入音频流时间戳和当前数据帧位置信息。
+
+该接口可以获取到音频通道实际录制位置（framePos）以及录制到该位置时候的时间戳（timestamp），时间戳单位为纳秒。
 
 **起始版本：** 19
 
@@ -118,13 +138,13 @@ Obtains the timestamp and position information of an input audio stream. This AP
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioTimestampInfo> | Promise used to return the timestamp and position information. |
+| Promise&lt;AudioTimestampInfo&gt; | Promise对象，返回音频流时间戳和当前数据帧位置信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permit at current state. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## getAudioTimestampInfoSync
 
@@ -132,7 +152,7 @@ Obtains the timestamp and position information of an input audio stream. This AP
 getAudioTimestampInfoSync(): AudioTimestampInfo
 ```
 
-Obtains the timestamp and position information of an input audio stream. This API returns the result synchronously.
+获取音频流时间戳和当前数据帧位置信息。同步返回结果。
 
 **起始版本：** 19
 
@@ -142,39 +162,21 @@ Obtains the timestamp and position information of an input audio stream. This AP
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioTimestampInfo | Information about the timestamp and position information. |
+| AudioTimestampInfo | 返回音频流时间戳和当前数据帧位置信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permit at current state. |
-
-## getAudioTimeSync
-
-```TypeScript
-getAudioTimeSync(): long
-```
-
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API returns the result synchronously.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| long | Timestamp. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(callback: AsyncCallback<long>): void
+getBufferSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains a reasonable minimum buffer size in bytes for capturing. This API uses an asynchronous callback to return the result.
+获取采集器合理的最小缓冲区大小。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -184,15 +186,15 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum buffer size obtained; otherwise, err is an error  object. The unit is bytes. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取采集器合理的最小缓冲区大小成功，err为undefined，data为获取到的采集器合理的最小缓冲区大小；否则为错误对象。<br>单位为字节。 |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(): Promise<long>
+getBufferSize(): Promise<number>
 ```
 
-Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a promise to return the result.
+获取采集器合理的最小缓冲区大小。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -202,15 +204,15 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the buffer size.  The unit is bytes. |
+| Promise&lt;number&gt; | Promise对象，返回缓冲区大小。<br>单位为字节。 |
 
 ## getBufferSizeSync
 
 ```TypeScript
-getBufferSizeSync(): long
+getBufferSizeSync(): number
 ```
 
-Obtains a reasonable minimum buffer size in bytes for capturing. This API returns the result synchronously.
+获取采集器合理的最小缓冲区大小。同步返回结果。
 
 **起始版本：** 10
 
@@ -220,7 +222,7 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API return
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Buffer size, in bytes. |
+| number | 返回缓冲区大小，单位为字节。 |
 
 ## getCapturerInfo
 
@@ -228,7 +230,7 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API return
 getCapturerInfo(callback: AsyncCallback<AudioCapturerInfo>): void
 ```
 
-Obtains the audio capturer information. This API uses an asynchronous callback to return the result.
+获取音频采集器信息。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -238,7 +240,7 @@ Obtains the audio capturer information. This API uses an asynchronous callback t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioCapturerInfo> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the capturer information obtained; otherwise, err is  an error object. |
+| callback | AsyncCallback&lt;AudioCapturerInfo&gt; | 是 | 回调函数。当获取音频采集器信息成功，err为undefined，data为获取到的音频采集器信息；否则为错误对象。 |
 
 ## getCapturerInfo
 
@@ -246,7 +248,7 @@ Obtains the audio capturer information. This API uses an asynchronous callback t
 getCapturerInfo(): Promise<AudioCapturerInfo>
 ```
 
-Obtains the audio capturer information. This API uses a promise to return the result.
+获取音频采集器信息。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -256,7 +258,7 @@ Obtains the audio capturer information. This API uses a promise to return the re
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioCapturerInfo> | Promise used to return the audio capturer information. |
+| Promise&lt;AudioCapturerInfo&gt; | Promise对象，返回音频采集器信息。 |
 
 ## getCapturerInfoSync
 
@@ -264,7 +266,7 @@ Obtains the audio capturer information. This API uses a promise to return the re
 getCapturerInfoSync(): AudioCapturerInfo
 ```
 
-Obtains the audio capturer information. This API returns the result synchronously.
+获取音频采集器信息。同步返回结果。
 
 **起始版本：** 10
 
@@ -274,7 +276,7 @@ Obtains the audio capturer information. This API returns the result synchronousl
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioCapturerInfo | Audio capturer information. |
+| AudioCapturerInfo | 返回音频采集器信息。 |
 
 ## getCurrentAudioCapturerChangeInfo
 
@@ -282,7 +284,7 @@ Obtains the audio capturer information. This API returns the result synchronousl
 getCurrentAudioCapturerChangeInfo(): AudioCapturerChangeInfo
 ```
 
-Obtains the configuration changes of the current audio capturer. This API returns the result synchronously.
+获取录音流配置。同步返回结果。
 
 **起始版本：** 11
 
@@ -292,7 +294,7 @@ Obtains the configuration changes of the current audio capturer. This API return
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioCapturerChangeInfo | Configuration changes of the audio capturer. |
+| AudioCapturerChangeInfo | 同步接口，返回描述音频采集器更改信息。 |
 
 ## getCurrentInputDevices
 
@@ -300,7 +302,7 @@ Obtains the configuration changes of the current audio capturer. This API return
 getCurrentInputDevices(): AudioDeviceDescriptors
 ```
 
-Obtains the information of the current input devices. This API returns the result synchronously.
+获取录音流输入设备信息。同步返回结果。
 
 **起始版本：** 11
 
@@ -310,7 +312,7 @@ Obtains the information of the current input devices. This API returns the resul
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioDeviceDescriptors | An array of the audio device descriptors. |
+| AudioDeviceDescriptors | 同步接口，返回设备属性数组类型数据。 |
 
 ## getNoiseReductionMode
 
@@ -318,7 +320,9 @@ Obtains the information of the current input devices. This API returns the resul
 getNoiseReductionMode(): NoiseReductionMode
 ```
 
-Gets the noise reduction mode for current audio capturer. The mode will only consider the default and setted status, audio input device and stream concurrency will not be considered.
+获取当前音频捕获器的降噪模式。
+模式将只考虑默认和设置的状态，音频输入设备和流并发将
+不被视为。
 
 **起始版本：** 26.0.0
 
@@ -330,15 +334,15 @@ Gets the noise reduction mode for current audio capturer. The mode will only con
 
 | 类型 | 说明 |
 | --- | --- |
-| NoiseReductionMode | The noise reduction mode for current audio capturer,  the default value is {@link NoiseReductionMode#FIDELITY}. |
+| NoiseReductionMode | 当前音频采集器的降噪模式，默认值为{@link噪声抑制模式#FIDELITY}。 |
 
 ## getOverflowCount
 
 ```TypeScript
-getOverflowCount(): Promise<long>
+getOverflowCount(): Promise<number>
 ```
 
-Obtains the number of overflow audio frames in the audio stream that is being captured. This API uses a promise to return the result.
+获取当前录制音频流的过载音频帧数量。使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -348,15 +352,15 @@ Obtains the number of overflow audio frames in the audio stream that is being ca
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the number of overflow audio frames. |
+| Promise&lt;number&gt; | - Promise对象，返回音频流的过载音频帧数量。 |
 
 ## getOverflowCountSync
 
 ```TypeScript
-getOverflowCountSync(): long
+getOverflowCountSync(): number
 ```
 
-Obtains the number of overflow audio frames in the audio stream that is being captured. This API returns the result synchronously.
+获取当前录制音频流的过载音频帧数量。同步返回数据。
 
 **起始版本：** 12
 
@@ -366,7 +370,7 @@ Obtains the number of overflow audio frames in the audio stream that is being ca
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Number of overflow audio frames. |
+| number | 返回音频流的过载音频帧数量。 |
 
 ## getStreamInfo
 
@@ -374,7 +378,7 @@ Obtains the number of overflow audio frames in the audio stream that is being ca
 getStreamInfo(callback: AsyncCallback<AudioStreamInfo>): void
 ```
 
-Obtains the stream information of this audio capturer. This API uses an asynchronous callback to return the result.
+获取音频采集器流信息。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -384,7 +388,7 @@ Obtains the stream information of this audio capturer. This API uses an asynchro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioStreamInfo> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the stream information obtained; otherwise, err is  an error object. |
+| callback | AsyncCallback&lt;AudioStreamInfo&gt; | 是 | 回调函数。当获取音频采集器流信息成功，err为undefined，data为获取到的音频采集器流信息；否则为错误对象。 |
 
 ## getStreamInfo
 
@@ -392,7 +396,7 @@ Obtains the stream information of this audio capturer. This API uses an asynchro
 getStreamInfo(): Promise<AudioStreamInfo>
 ```
 
-Obtains the stream information of this audio capturer. This API uses a promise to return the result.
+获取音频采集器流信息。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -402,7 +406,7 @@ Obtains the stream information of this audio capturer. This API uses a promise t
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioStreamInfo> | Promise used to return the stream information. |
+| Promise&lt;AudioStreamInfo&gt; | Promise对象，返回音频流信息。 |
 
 ## getStreamInfoSync
 
@@ -410,7 +414,7 @@ Obtains the stream information of this audio capturer. This API uses a promise t
 getStreamInfoSync(): AudioStreamInfo
 ```
 
-Obtains the stream information of this audio capturer. This API returns the result synchronously.
+获取音频采集器流信息。同步返回结果。
 
 **起始版本：** 10
 
@@ -420,7 +424,7 @@ Obtains the stream information of this audio capturer. This API returns the resu
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioStreamInfo | Stream information. |
+| AudioStreamInfo | 返回音频流信息。 |
 
 ## getSupportedNoiseReductionModes
 
@@ -428,7 +432,11 @@ Obtains the stream information of this audio capturer. This API returns the resu
 getSupportedNoiseReductionModes(): Array<NoiseReductionMode>
 ```
 
-Gets all the supported noise reduction modes for current device platform. Currently the noise reduction effect is only supported when using {@link SourceType#SOURCE_TYPE_VOICE_MESSAGE}, other supported usage may be extened later. The supported modes will only consider the audio format and device platform, audio input device and stream concurrency will not be considered.
+获取当前设备平台支持的所有降噪模式。
+目前，降噪效果仅在使用
+{@link StreamUsage#Stream_USAGE_VOICE_MESSAGE}，其他支持的用法可能会在以后扩展。
+支持的模式只考虑音频格式和设备平台。
+不会考虑音频输入设备和流并发。
 
 **起始版本：** 26.0.0
 
@@ -440,21 +448,21 @@ Gets all the supported noise reduction modes for current device platform. Curren
 
 | 类型 | 说明 |
 | --- | --- |
-| Array&lt;NoiseReductionMode> | The supported noise reduction mode array, at least  {@link NoiseReductionMode#FIDELITY} is supported. |
+| Array&lt;NoiseReductionMode&gt; | 支持的降噪模式数组，至少支持{@link噪声抑制模式#FIDELITY}。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800301 | Audio server process died. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio server process died. |
 
 ## off('markReach')
 
 ```TypeScript
-off(type: 'markReach', callback?: Callback<long>): void
+off(type: 'markReach', callback?: Callback<number>): void
 ```
 
-Unsubscribes from the mark reached event. This API uses an asynchronous callback to return the result.
+取消监听标记到达事件。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -464,16 +472,16 @@ Unsubscribes from the mark reached event. This API uses an asynchronous callback
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'markReach' | 是 | Event type. The event 'markReach' is triggered when the number of frames  captured reaches the value of the frame parameter. |
-| callback | Callback&lt;long> | 否 | Callback used to return the value of the frame parameter. [since 18] |
+| type | 'markReach' | 是 | 事件回调类型，支持的事件为'markReach'，当取消监听标记到达事件时，触发该事件。 |
+| callback | Callback&lt;number&gt; | 否 | 回调函数，返回frame参数的值。<br>**起始版本：** 18 |
 
 ## off('periodReach')
 
 ```TypeScript
-off(type: 'periodReach', callback?: Callback<long>): void
+off(type: 'periodReach', callback?: Callback<number>): void
 ```
 
-Unsubscribes from the period reached event. This API uses an asynchronous callback to return the result.
+取消监听标记到达事件。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -483,8 +491,8 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'periodReach' | 是 | Event type. The event 'periodReach' is triggered each time the number of  frames captured reaches the value of the frame parameter. |
-| callback | Callback&lt;long> | 否 | Callback used to return the value of the frame parameter. [since 18] |
+| type | 'periodReach' | 是 | 事件回调类型，支持的事件为'periodReach'，当取消监听标记到达事件时，触发该事件。 |
+| callback | Callback&lt;number&gt; | 否 | 回调函数，返回frame参数的值。<br>**起始版本：** 18 |
 
 ## off('stateChange')
 
@@ -492,7 +500,7 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 off(type: 'stateChange', callback?: Callback<AudioState>): void
 ```
 
-Unsubscribes from the audio capturer state change event. This API uses an asynchronous callback to return the result.
+取消监听状态变化事件。使用callback异步回调。
 
 **起始版本：** 18
 
@@ -502,14 +510,14 @@ Unsubscribes from the audio capturer state change event. This API uses an asynch
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'stateChange' | 是 | Event type. The event 'stateChange' is triggered when the listening for audio  capturer state change event is canceled. |
-| callback | Callback&lt;AudioState> | 否 | Callback used to return the audio status. |
+| type | 'stateChange' | 是 | 事件回调类型，支持的事件为'stateChange'，当取消监听状态变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioState&gt; | 否 | 回调函数，返回当前音频的状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off
 
@@ -517,7 +525,7 @@ Unsubscribes from the audio capturer state change event. This API uses an asynch
 off(type: 'audioInterrupt'): void
 ```
 
-Unsubscribes from the audio interruption event.
+取消监听音频中断事件。
 
 **起始版本：** 10
 
@@ -527,14 +535,14 @@ Unsubscribes from the audio interruption event.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | 是 | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
+| type | 'audioInterrupt' | 是 | 事件回调类型，支持的事件为'audioInterrupt'，当取消监听音频中断事件时，触发该事件。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('inputDeviceChange')
 
@@ -542,7 +550,7 @@ Unsubscribes from the audio interruption event.
 off(type: 'inputDeviceChange', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the audio input device change event. This API uses an asynchronous callback to return the result.
+取消监听音频输入设备更改事件。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -552,15 +560,15 @@ Unsubscribes from the audio input device change event. This API uses an asynchro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'inputDeviceChange' | 是 | Event type. The event 'inputDeviceChange' is triggered when an audio  input device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors> | 否 | Callback used to return the information about the audio  input device. |
+| type | 'inputDeviceChange' | 是 | 事件回调类型，支持的事件为'inputDeviceChange'，当取消监听音频输入设备更改事件时，触发该事件。 |
+| callback | Callback&lt;AudioDeviceDescriptors&gt; | 否 | 回调函数，返回音频输入设备信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('audioCapturerChange')
 
@@ -568,7 +576,7 @@ Unsubscribes from the audio input device change event. This API uses an asynchro
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfo>): void
 ```
 
-Unsubscribes from the audio capturer configuration change event. This API uses an asynchronous callback to return the result.
+取消监听录音流配置变化事件。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -578,15 +586,15 @@ Unsubscribes from the audio capturer configuration change event. This API uses a
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | 是 | Event type. The event 'audioCapturerChange' is triggered when the  audio capturer configuration is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfo> | 否 | Callback used for unsubscription. |
+| type | 'audioCapturerChange' | 是 | 事件回调类型，支持的事件为'audioCapturerChange'，当取消监听录音流配置变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioCapturerChangeInfo&gt; | 否 | 回调函数，返回取消监听的录音流配置或状态变化。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('readData')
 
@@ -594,7 +602,7 @@ Unsubscribes from the audio capturer configuration change event. This API uses a
 off(type: 'readData', callback?: Callback<ArrayBuffer>): void
 ```
 
-Unsubscribes from the audio data read event. This API uses an asynchronous callback to return the result.
+取消监听音频数据读取回调事件。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -604,197 +612,25 @@ Unsubscribes from the audio data read event. This API uses an asynchronous callb
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'readData' | 是 | Event type. The event 'readData' is triggered when audio stream data needs to be  read. |
-| callback | Callback&lt;ArrayBuffer> | 否 | Callback used to return the buffer from which the data is read. |
+| type | 'readData' | 是 | 事件回调类型，支持的事件为'readData'，当取消监听音频数据读取回调事件时，触发该事件。 |
+| callback | Callback&lt;ArrayBuffer&gt; | 否 | 回调函数，返回读到的数据缓冲区。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## offAudioCapturerChange
-
-```TypeScript
-offAudioCapturerChange(callback?: Callback<AudioCapturerChangeInfo>): void
-```
-
-Unsubscribes audio capturer info change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerChangeInfo> | 否 | Callback used in subscribe. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offAudioInterrupt
-
-```TypeScript
-offAudioInterrupt(): void
-```
-
-UnSubscribes to audio interrupt events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Interrupt
-
-## offInputDeviceChange
-
-```TypeScript
-offInputDeviceChange(callback?: Callback<AudioDeviceDescriptors>): void
-```
-
-Unsubscribes input device change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioDeviceDescriptors> | 否 | Callback used in subscribe. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offMarkReach
-
-```TypeScript
-offMarkReach(callback?: Callback<long>): void
-```
-
-Unsubscribes from the mark reached events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;long> | 否 | Callback invoked when the event is triggered. |
-
-## offPeriodReach
-
-```TypeScript
-offPeriodReach(callback?: Callback<long>): void
-```
-
-Unsubscribes from period reached events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;long> | 否 | Callback invoked when the event is triggered. |
-
-## offReadData
-
-```TypeScript
-offReadData(callback?: Callback<ArrayBuffer>): void
-```
-
-Unsubscribes audio data callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;ArrayBuffer> | 否 | Callback used in subscribe. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offReadMicInData
-
-```TypeScript
-offReadMicInData(callback?: Callback<AudioCapturerMicInData>): void
-```
-
-Unsubscribes from micIn audio data callback.
-
-**起始版本：** 24
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerMicInData> | 否 |  |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permitted at running state. |
-
-## offStateChange
-
-```TypeScript
-offStateChange(callback?: Callback<AudioState>): void
-```
-
-Unsubscribes audio state change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioState> | 否 | Callback used to listen for the audio state change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('markReach')
 
 ```TypeScript
-on(type: 'markReach', frame: long, callback: Callback<long>): void
+on(type: 'markReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the mark reached event, which is triggered (only once) when the number of frames captured reaches the value of the **frame** parameter. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **100**, the callback is invoked when the number of captured frames reaches the 100th frame.
+监听标记到达事件（当采集的帧数达到frame参数的值时触发，仅调用一次）。使用callback异步回调。
+
+如果将frame设置为100，当采集帧数到达第100帧时，系统将上报信息。
 
 **起始版本：** 8
 
@@ -804,17 +640,19 @@ Subscribes to the mark reached event, which is triggered (only once) when the nu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'markReach' | 是 | Event type. The event 'markReach' is triggered when the number of frames  captured reaches the value of the frame parameter. |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback used to return the value of the frame parameter. |
+| type | 'markReach' | 是 | 事件回调类型，支持的事件为'markReach'，当采集的帧数达到frame参数的值时，触发该事件。 |
+| frame | number | 是 | 触发事件的帧数。该值必须大于0。 |
+| callback | Callback&lt;number&gt; | 是 | 回调函数，返回frame参数的值。 |
 
 ## on('periodReach')
 
 ```TypeScript
-on(type: 'periodReach', frame: long, callback: Callback<long>): void
+on(type: 'periodReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the period reached event, which is triggered each time the number of frames captured reaches the value of the **frame** parameter. In other words, the information is reported periodically. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are captured, for example , when the number of frames captured reaches the 10th frame, 20th frame, and 30th frame.
+监听标记到达事件（当采集的帧数达到frame参数的值时触发，即按周期上报信息）。使用callback异步回调。
+
+如果将frame设置为10，每渲染10帧数据均会上报信息（例如：第10帧、第20帧、第30帧......）。
 
 **起始版本：** 8
 
@@ -824,9 +662,9 @@ Subscribes to the period reached event, which is triggered each time the number 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'periodReach' | 是 | Event type. The event 'periodReach' is triggered each time the number of  frames captured reaches the value of the frame parameter. |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback used to return the value of the frame parameter. |
+| type | 'periodReach' | 是 | 事件回调类型，支持的事件为'periodReach'，当采集的帧数达到frame参数的值时，触发该事件。 |
+| frame | number | 是 | 触发事件的帧数。该值必须大于0。 |
+| callback | Callback&lt;number&gt; | 是 | 回调函数，返回frame参数的值。 |
 
 ## on('stateChange')
 
@@ -834,7 +672,7 @@ Subscribes to the period reached event, which is triggered each time the number 
 on(type: 'stateChange', callback: Callback<AudioState>): void
 ```
 
-Subscribes to the audio capturer state change event, which is triggered when the state of the audio capturer is changed. This API uses an asynchronous callback to return the result.
+监听状态变化事件（当AudioCapturer状态发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -844,8 +682,8 @@ Subscribes to the audio capturer state change event, which is triggered when the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'stateChange' | 是 | Event type. The event 'stateChange' is triggered when the state of the audio  capturer is changed. |
-| callback | Callback&lt;AudioState> | 是 | Callback used to return the audio status. |
+| type | 'stateChange' | 是 | 事件回调类型，支持的事件为'stateChange'，当AudioCapturer状态发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioState&gt; | 是 | 回调函数，返回当前音频的状态。 |
 
 ## on('audioInterrupt')
 
@@ -853,7 +691,12 @@ Subscribes to the audio capturer state change event, which is triggered when the
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioCapturer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received when the AudioCapturer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
+监听音频中断事件（当音频焦点发生变化时触发）。使用callback异步回调。
+
+AudioCapturer对象在start事件时获取焦点，在pause、stop等事件时释放焦点，无需开发者主动申请。
+
+调用此方法后，如果AudioCapturer对象获取焦点失败或发生中断事件（如被其他音频打断等），会收到[InterruptEvent](arkts-audio-interruptevent-i.md)。建议应用根据
+InterruptEvent的信息进行进一步处理。更多信息请参阅文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。
 
 **起始版本：** 10
 
@@ -863,15 +706,15 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | 是 | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
-| callback | Callback&lt;InterruptEvent> | 是 | Callback used to return the event information. |
+| type | 'audioInterrupt' | 是 | 事件回调类型，支持的事件为'audioInterrupt'，当音频焦点状态发生变化时，触发该事件。 |
+| callback | Callback&lt;InterruptEvent&gt; | 是 | 回调函数，返回中断事件信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('inputDeviceChange')
 
@@ -879,7 +722,7 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 on(type: 'inputDeviceChange', callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the audio input device change event, which is triggered when an audio input device is changed. This API uses an asynchronous callback to return the result.
+监听音频输入设备变化事件（当音频输入设备发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -889,15 +732,15 @@ Subscribes to the audio input device change event, which is triggered when an au
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'inputDeviceChange' | 是 | Event type. The event 'inputDeviceChange' is triggered when an audio  input device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors> | 是 | Callback used to return the updated information about the  audio input device. |
+| type | 'inputDeviceChange' | 是 | 事件回调类型，支持的事件为'inputDeviceChange'，当音频输入设备发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioDeviceDescriptors&gt; | 是 | 回调函数，返回变化后的音频输入设备信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('audioCapturerChange')
 
@@ -905,7 +748,7 @@ Subscribes to the audio input device change event, which is triggered when an au
 on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfo>): void
 ```
 
-Subscribes to the audio capturer configuration change event, which is triggered when the audio recording stream status or device is changed. This API uses an asynchronous callback to return the result. The subscription is implemented asynchronously and the callback, which is triggered when the audio capturer configuration changes, may fail to reflect the actual condition.
+监听录音流配置变化事件（当音频录制流状态变化、设备变化时触发）。使用callback异步回调。订阅内部是异步实现，是非精确回调，在录音流配置变化的同时注册回调，收到的返回结果存在变化可能性。
 
 **起始版本：** 11
 
@@ -915,15 +758,15 @@ Subscribes to the audio capturer configuration change event, which is triggered 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | 是 | Event type. The event 'audioCapturerChange' is triggered when the  audio recording stream status or device is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfo> | 是 | Callback used to return the current configuration and  status information of the audio capturer. |
+| type | 'audioCapturerChange' | 是 | 事件回调类型，支持的事件为'audioCapturerChange'，当音频录制流状态变化、设备变化时，触发该事件。 |
+| callback | Callback&lt;AudioCapturerChangeInfo&gt; | 是 | 回调函数，录音流配置或状态变化时返回监听的录音流当前配置和状态信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('readData')
 
@@ -931,7 +774,11 @@ Subscribes to the audio capturer configuration change event, which is triggered 
 on(type: 'readData', callback: Callback<ArrayBuffer>): void
 ```
 
-Subscribes to the audio data read event, which is triggered when audio stream data needs to be read. This API uses an asynchronous callback to return the result. The callback function is used only to read audio data. Do not call AudioCapturer APIs in it. To eliminate power-on noise caused by the microphone hardware design, the first 100 ms of data after recording starts is typically muted.
+监听音频数据读取回调事件（当需要读取音频流数据时触发）。使用callback异步回调。
+
+回调函数仅用来读取音频数据，请勿在回调函数中调用AudioCapturer相关接口。
+
+为了消除麦克风硬件设计带来的上电杂音，通常会对录音启动后的前100ms数据进行静音。
 
 **起始版本：** 11
 
@@ -941,196 +788,15 @@ Subscribes to the audio data read event, which is triggered when audio stream da
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'readData' | 是 | Event type. The event 'readData' is triggered when audio stream data needs to be  read. |
-| callback | Callback&lt;ArrayBuffer> | 是 | Callback used to return the buffer from which the data is read. |
+| type | 'readData' | 是 | 事件回调类型，支持的事件为'readData'，当需要读取音频流数据时，触发该事件。 |
+| callback | Callback&lt;ArrayBuffer&gt; | 是 | 回调函数，返回读到的数据缓冲区。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## onAudioCapturerChange
-
-```TypeScript
-onAudioCapturerChange(callback: Callback<AudioCapturerChangeInfo>): void
-```
-
-Subscribes audio capturer info change event callback. The event is triggered when input device change for this stream.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerChangeInfo> | 是 | Callback used to listen device change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onAudioInterrupt
-
-```TypeScript
-onAudioInterrupt(callback: Callback<InterruptEvent>): void
-```
-
-Listens for audio interrupt events. This method uses a callback to get interrupt events. The interrupt event is triggered when audio recording is interrupted.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Interrupt
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;InterruptEvent> | 是 | Callback used to listen for interrupt callback. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onInputDeviceChange
-
-```TypeScript
-onInputDeviceChange(callback: Callback<AudioDeviceDescriptors>): void
-```
-
-Subscribes input device change event callback. The event is triggered when input device change for this stream.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioDeviceDescriptors> | 是 | Callback used to listen device change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onMarkReach
-
-```TypeScript
-onMarkReach(frame: long, callback: Callback<long>): void
-```
-
-Subscribes to mark reached events. When the number of frames captured reaches the value of the frame parameter, the callback is invoked.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback invoked when the event is triggered. |
-
-## onPeriodReach
-
-```TypeScript
-onPeriodReach(frame: long, callback: Callback<long>): void
-```
-
-Subscribes to period reached events. When the period of frame capturing reaches the value of frame parameter, the callback is invoked.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| frame | long | 是 | Period during which frame capturing is listened. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback invoked when the event is triggered. |
-
-## onReadData
-
-```TypeScript
-onReadData(callback: Callback<ArrayBuffer>): void
-```
-
-Subscribes audio data callback. The event is triggered when audio buffer is available for reading more data.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;ArrayBuffer> | 是 | Callback with the buffer to read. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onReadMicInData
-
-```TypeScript
-onReadMicInData(callback: Callback<AudioCapturerMicInData>): void
-```
-
-Subscribes to micIn audio data callback. This callback has higher priority than 'readData' callback. If this callback and 'readData' callback are both subscribed, only this callback will be triggered. See {@link #onReadData} for more details. The event is triggered when an audio buffer is available for reading more data.
-
-**起始版本：** 24
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerMicInData> | 是 | Callback for the buffers to read. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Caller is not a system application. |
-| 6800103 | Operation not permitted at running state. |
-
-## onStateChange
-
-```TypeScript
-onStateChange(callback: Callback<AudioState>): void
-```
-
-Subscribes audio state change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioState> | 是 | Callback used to listen for the audio state change event. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## read
 
@@ -1138,13 +804,13 @@ Subscribes audio state change event callback.
 read(size: number, isBlockingRead: boolean, callback: AsyncCallback<ArrayBuffer>): void
 ```
 
-Reads the buffer from the audio capturer. This method uses an asynchronous callback to return the result.
+读入缓冲区。使用callback异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioCapturer#event:readData
+**替代接口：** event:readData
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
 
@@ -1152,9 +818,9 @@ Reads the buffer from the audio capturer. This method uses an asynchronous callb
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | number | 是 | Number of bytes to read. |
-| isBlockingRead | boolean | 是 | Whether to block the read operation. true to block, false otherwise. |
-| callback | AsyncCallback&lt;ArrayBuffer> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the buffer read; otherwise, err is an error object. |
+| size | number | 是 | 读入的字节数。 |
+| isBlockingRead | boolean | 是 | 是否阻塞读操作。true表示阻塞，false表示不阻塞。 |
+| callback | AsyncCallback&lt;ArrayBuffer&gt; | 是 | 回调函数。当读入缓冲区成功，err为undefined，data为获取到的缓冲区；否则为错误对象。 |
 
 ## read
 
@@ -1162,13 +828,13 @@ Reads the buffer from the audio capturer. This method uses an asynchronous callb
 read(size: number, isBlockingRead: boolean): Promise<ArrayBuffer>
 ```
 
-Reads the buffer. This API uses a promise to return the result.
+读入缓冲区。使用Promise异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioCapturer#event:readData
+**替代接口：** event:readData
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
 
@@ -1176,14 +842,14 @@ Reads the buffer. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | number | 是 | Number of bytes to read. |
-| isBlockingRead | boolean | 是 | Whether to block the read operation. true to block, false otherwise. |
+| size | number | 是 | 读入的字节数。 |
+| isBlockingRead | boolean | 是 | 是否阻塞读操作。true表示阻塞，false表示不阻塞。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise used to return the data read from the buffer. |
+| Promise&lt;ArrayBuffer&gt; | Promise对象，返回读取的缓冲区数据。 |
 
 ## release
 
@@ -1191,7 +857,7 @@ Reads the buffer. This API uses a promise to return the result.
 release(callback: AsyncCallback<void>): void
 ```
 
-Releases this audio capturer. This API uses an asynchronous callback to return the result.
+释放音频采集器。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1201,7 +867,7 @@ Releases this audio capturer. This API uses an asynchronous callback to return t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当释放音频采集器成功，err为undefined，否则为错误对象。 |
 
 ## release
 
@@ -1209,7 +875,7 @@ Releases this audio capturer. This API uses an asynchronous callback to return t
 release(): Promise<void>
 ```
 
-Releases this audio capturer. This API uses a promise to return the result.
+释放音频采集器。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -1219,7 +885,7 @@ Releases this audio capturer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## requestPlaybackCaptureStart
 
@@ -1227,7 +893,11 @@ Releases this audio capturer. This API uses a promise to return the result.
 requestPlaybackCaptureStart(callback: Callback<PlaybackCaptureStartState>): void
 ```
 
-Asynchronously request to start the playback capture stream. This function is non-blocking, which means system will continue to process user authorization and stream starting when receiving the start request. And the final result will be returned by callback.
+请求启动内录流接口，内录流只能通过该接口触发启动。使用callback异步回调。
+
+内录是指以系统内部音频数据作为音频源的输入类型，简称为内录，对应的流称为内录流。常用于录制目标设备应用发送到系统以供播放的音频。
+
+该接口为非阻塞接口，系统接收到内录启动请求后，会继续处理用户授权检查和内录流启动，最终结果通过回调函数返回。
 
 **起始版本：** 26.0.0
 
@@ -1239,15 +909,19 @@ Asynchronously request to start the playback capture stream. This function is no
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PlaybackCaptureStartState> | 是 | Callback function used to receive the final  result of start request. |
+| callback | Callback&lt;PlaybackCaptureStartState&gt; | 是 | 回调函数，用于接收启动内录请求的最终结果。 |
 
 ## setIndependentAudioSessionStrategy
 
 ```TypeScript
-setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: int): void
+setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
 ```
 
-Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio capturer is running, you must call the > [start](arkts-audio-audiocapturer-i.md#start) API again for > the settings to take effect.
+设置独立的音频会话策略和行为参数。
+
+> **说明：**
+>
+> 当音频采集器在运行状态时调用此接口后，必须重新调用接口[start](arkts-audio-audiocapturer-i.md#start-1)使其生效。
 
 **起始版本：** 24
 
@@ -1259,36 +933,15 @@ Sets the independent audio session strategy and behavior parameters. > **NOTE** 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategy | AudioSessionStrategy | 是 | Audio session strategy. |
-| behavior | int | 是 | Specifies the audio session behavior. This can be a single flag or a bitwise OR  combination of multiple flags. For details about the supported audio session behaviors, see  [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md#AudioSessionBehaviorFlags). |
+| strategy | AudioSessionStrategy | 是 | 音频会话策略。 |
+| behavior | number | 是 | 用于设置音频会话行为。<br>该参数可以是单个标志，也可以是多个标志的按位OR组合。<br>当前支持的音频会话行为详见[AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md)中定义的标志。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permit at current state. |
-
-## setInputDeviceToAccessory
-
-```TypeScript
-setInputDeviceToAccessory(): void
-```
-
-Sets default input device of this Capturer to DEVICE_TYPE_ACCESSORY. Other capturers' devices will not be affected by this method. This method can only be used before the capture stream starts. Besides, if audio accessory is not connected, this method will report fail. After calling this function, the input device of this capturer will not be affected by other interfaces.
-
-**起始版本：** 19
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**系统接口：** 此接口为系统接口。
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Caller is not a system application. |
-| 6800103 | Operation not permit at current state. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## setMuteHint
 
@@ -1296,7 +949,17 @@ Sets default input device of this Capturer to DEVICE_TYPE_ACCESSORY. Other captu
 setMuteHint(mute: boolean): Promise<void>
 ```
 
-Set mute hint for this capturer, this method is used as a hint for power optimization it does not mute the recording stream, only affects internal processing strategy.
+应用将当前录音流的自身静音状态传递给系统音频模块。<!--RP1-->该接口不会触发录音流静音，当前仅在部分PC/2in1设备上用于优化设备功耗。<!--RP1End-->使用Promise异步回调。
+
+> **说明：**
+>
+> - 该接口用于向系统音频模块上报应用自身的静音状态，不会改变录音流的实际静音状态。
+>
+> - 该接口仅在录音流处于运行态时允许调用，否则返回错误码6800103。
+>
+> - 同一录音流同时设置流级静音提示接口（本接口）和会话级静音提示接口
+> [AudioSessionManager.setCapturerMuteHint](arkts-audio-audiosessionmanager-i.md#setcapturermutehint-1)时，流级
+> [setMuteHint](arkts-audio-audiocapturer-i.md#setmutehint-1)优先级更高，数值以流级设置值为准。
 
 **起始版本：** 24
 
@@ -1308,19 +971,19 @@ Set mute hint for this capturer, this method is used as a hint for power optimiz
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mute | boolean | 是 | Use true if application recording stream muted by application if self. |
+| mute | boolean | 是 | 应用自身给系统音频模块上报的静音状态。true表示应用将当前流静音，false表示取消静音。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permitted at current state, stream is not running. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permitted at current state, stream is not running. |
 
 ## setNoiseReductionMode
 
@@ -1328,7 +991,11 @@ Set mute hint for this capturer, this method is used as a hint for power optimiz
 setNoiseReductionMode(noiseReductionMode: NoiseReductionMode): void
 ```
 
-Sets noise reduction mode for current audio capturer. The supported mode should be obtained by {@link #getSupportedNoiseReductionModes}. The actual effect may vary from different audio devices, and will be invalid when there are multiple recording streams running simultaneously. The mode can only be changed in created and stopped state.
+设置当前音频捕获器的降噪模式。
+支持的模式需要通过{@link#getSupportedNoiseReduceModes}获取。
+实际效果可能因不同的音频设备而异，当有多个时将无效
+同时运行的录制流。
+只能在已创建和已停止状态下更改模式。
 
 **起始版本：** 26.0.0
 
@@ -1340,16 +1007,16 @@ Sets noise reduction mode for current audio capturer. The supported mode should 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| noiseReductionMode | NoiseReductionMode | 是 | The noise reduction mode to set. |
+| noiseReductionMode | NoiseReductionMode | 是 | 要设置的降噪模式。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Illegal state, audio capturer is in running or released state. |
-| 6800104 | The setted mode is not supported. |
-| 6800301 | Audio server process died. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Illegal state, audio capturer is in running or released state. |
+| [6800104](../errorcode-audio.md#6800104-参数选项不支持) | The setted mode is not supported. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio server process died. |
 
 ## setWillMuteWhenInterrupted
 
@@ -1357,7 +1024,7 @@ Sets noise reduction mode for current audio capturer. The supported mode should 
 setWillMuteWhenInterrupted(muteWhenInterrupted: boolean): Promise<void>
 ```
 
-Sets whether to [mute the current audio recording stream when an audio interruption occurs](docroot://media/audio/using-audiocapturer-for-recording.md#setting-the-mute-interruption-mode) . This API uses a promise to return the result.
+设置当前录制音频流是否启用[静音打断模式](../../../../media/audio/using-audiocapturer-for-recording.md#设置静音打断模式)。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1367,19 +1034,19 @@ Sets whether to [mute the current audio recording stream when an audio interrupt
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| muteWhenInterrupted | boolean | 是 | Whether to mute the current audio recording stream during an audio  interruption. true to mute, false otherwise. |
+| muteWhenInterrupted | boolean | 是 | 设置当前录制音频流是否启用静音打断模式, true表示启用，false表示不启用，保持为默认打断模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permitted at current state. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permitted at current state. |
 
 ## start
 
@@ -1387,7 +1054,7 @@ Sets whether to [mute the current audio recording stream when an audio interrupt
 start(callback: AsyncCallback<void>): void
 ```
 
-Starts this audio capturer to start capturing audio data. This API uses an asynchronous callback to return the result.
+启动音频采集器，开始获取音频数据。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1397,7 +1064,7 @@ Starts this audio capturer to start capturing audio data. This API uses an async
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. If the operation fails, an error object with  the following error code is returned: Error code 6800301: indicates abnormal status, focus preemption  failure, and abnormal system processing. For details, see system logs. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当启动音频采集器成功，err为undefined，否则为错误对象。异常将返回error对象：<br>错误码6800301：表示包含状态检查异常、焦点抢占失败、系统处理异常（具体错误查看系统日志）。 |
 
 ## start
 
@@ -1405,7 +1072,7 @@ Starts this audio capturer to start capturing audio data. This API uses an async
 start(): Promise<void>
 ```
 
-Starts this audio capturer to start capturing audio data. This API uses a promise to return the result.
+启动音频采集器，开始获取音频数据。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -1415,7 +1082,7 @@ Starts this audio capturer to start capturing audio data. This API uses a promis
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise object, which indicates that the capturer is started successfully. If the  operation fails, an error object with the following error code is returned:  Error code 6800301: indicates abnormal status, focus preemption failure, and abnormal system processing. For  details, see system logs. |
+| Promise&lt;void&gt; | Promise对象，成功表示启动音频采集器成功。异常将返回error对象：<br>错误码6800301：表示包含状态检查异常、焦点抢占失败、系统处理异常（具体错误查看系统日志）。 |
 
 ## stop
 
@@ -1423,7 +1090,7 @@ Starts this audio capturer to start capturing audio data. This API uses a promis
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops this audio capturer, ceasing the input audio stream. This API uses an asynchronous callback to return the result.
+停止音频采集器，停止输入音频流。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1433,7 +1100,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses an asyn
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当停止音频采集成功，err为undefined，否则为错误对象。 |
 
 ## stop
 
@@ -1441,7 +1108,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses an asyn
 stop(): Promise<void>
 ```
 
-Stops this audio capturer, ceasing the input audio stream. This API uses a promise to return the result.
+停止音频采集器，停止输入音频流。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -1451,7 +1118,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses a promi
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## state
 
@@ -1459,7 +1126,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses a promi
 readonly state: AudioState
 ```
 
-Audio capturer state.
+音频采集器状态。
 
 **类型：** AudioState
 

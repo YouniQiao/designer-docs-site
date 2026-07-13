@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## isUserGranted
@@ -12,7 +12,8 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function isUserGranted(): Promise<boolean>
 ```
 
-Checks whether the **Allow access to notifications on this device** switch is toggled on. This API uses a promise to return the result.
+Checks whether the **Allow access to notifications on this device** switch is toggled on. This API uses a promise
+to return the result.
 
 **Since:** 22
 

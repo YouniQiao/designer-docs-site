@@ -1,6 +1,8 @@
 # KeepAliveBundleInfo (System API)
 
-Describes the keep-alive application information, which can be obtained by calling [getKeepAliveBundles](arkts-ability-getkeepalivebundles-f-sys.md#getkeepalivebundles-1) or [getKeepAliveAppServiceExtensions](arkts-ability-getkeepaliveappserviceextensions-f-sys.md#getkeepaliveappserviceextensions-1).
+Describes the keep-alive application information, which can be obtained by calling
+[getKeepAliveBundles](arkts-ability-getkeepalivebundles-f-sys.md#getkeepalivebundles-1) or
+[getKeepAliveAppServiceExtensions](arkts-ability-getkeepaliveappserviceextensions-f-sys.md#getkeepaliveappserviceextensions-1).
 
 **Since:** 14
 
@@ -11,7 +13,7 @@ Describes the keep-alive application information, which can be obtained by calli
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## allowUserToCancel

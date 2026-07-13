@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { runningLock } from '@ohos.runningLock';
+import { runningLock } from '@kit.BasicServicesKit';
 ```
 
 ## isRunningLockTypeSupported
@@ -12,7 +12,8 @@ import { runningLock } from '@ohos.runningLock';
 function isRunningLockTypeSupported(type: RunningLockType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a specified type of {@link RunningLock} is supported. This API uses an asynchronous callback to return the result.
+Checks whether a specified type of {@link RunningLock} is supported. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 7
 
@@ -49,7 +50,8 @@ runningLock.isRunningLockTypeSupported(runningLock.RunningLockType.BACKGROUND, (
 function isRunningLockTypeSupported(type: RunningLockType): Promise<boolean>
 ```
 
-Checks whether a specified type of {@link RunningLock} is supported. This API uses a promise to return the result.
+Checks whether a specified type of {@link RunningLock} is supported. This API uses a promise to return the
+result.
 
 **Since:** 7
 

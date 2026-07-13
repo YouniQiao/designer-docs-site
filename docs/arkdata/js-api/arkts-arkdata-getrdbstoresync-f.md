@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## getRdbStoreSync
@@ -12,7 +12,9 @@ import { relationalStore } from '@ohos.data.relationalStore';
 function getRdbStoreSync(context: Context, config: StoreConfig): RdbStore
 ```
 
-Obtains a RDB store. You can set parameters of the RDB store as required. This is a synchronous method that blocks the thread until the RDB store is obtained.
+Obtains a RDB store.
+You can set parameters of the RDB store as required. This is a synchronous method
+that blocks the thread until the RDB store is obtained.
 
 **Since:** 24
 

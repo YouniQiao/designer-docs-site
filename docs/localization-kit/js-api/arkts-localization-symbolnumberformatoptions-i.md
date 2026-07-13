@@ -1,8 +1,9 @@
 # SymbolNumberFormatOptions
 
-Represents optional configuration items for the SymbolNumberFormat object. Define the symbol element and value that need to be replaced.
+Represents optional configuration items for the SymbolNumberFormat object.
+Define the symbol element and value that need to be replaced.
 
-**Inheritance/Implementation:** SymbolNumberFormatOptions extends [Intl.NumberFormatOptions](../../apis-na/arkts-apis/arkts-na-numberformatoptions-i.md#numberformatoptions)
+**Inheritance/Implementation:** SymbolNumberFormatOptions extends [Intl.NumberFormatOptions](../../apis-na/arkts-apis/arkts-na-numberformatoptions-i.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +12,7 @@ Represents optional configuration items for the SymbolNumberFormat object. Defin
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## groupingSeparator

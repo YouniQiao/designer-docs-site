@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## buildX509CertChain
@@ -12,7 +12,8 @@ import { cert } from '@ohos.security.cert';
 function buildX509CertChain(param: CertChainBuildParameters): Promise<CertChainBuildResult>
 ```
 
-Builds an X.509 certificate chain with a CertChainBuildParameters object. This API uses a promise to return the result.
+Builds an X.509 certificate chain with a CertChainBuildParameters object. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -24,7 +25,7 @@ Builds an X.509 certificate chain with a CertChainBuildParameters object. This A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| param | CertChainBuildParameters | Yes | Object used to build the certificate chain.<br> The value of**maxLength** in [CertChainBuildParameters](arkts-devicecertificate-certchainbuildparameters-i.md#certchainbuildparameters) must be less than the numberof certificates in the certificate set. |
+| param | CertChainBuildParameters | Yes | Object used to build the certificate chain.<br> The value of**maxLength** in [CertChainBuildParameters](arkts-devicecertificate-certchainbuildparameters-i.md) must be less than the numberof certificates in the certificate set. |
 
 **Return value:**
 

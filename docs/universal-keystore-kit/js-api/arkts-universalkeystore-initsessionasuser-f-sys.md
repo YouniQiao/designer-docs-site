@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## initSessionAsUser
@@ -12,7 +12,8 @@ import { huks } from '@ohos.security.huks';
 function initSessionAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<HuksSessionHandle>
 ```
 
-Initialize a key session for the specified user. This API uses a promise to return the result. **huks.initSessionAsUser**, **huks.updateSession**, and **huks.finishSession** must be used together.
+Initialize a key session for the specified user. This API uses a promise to return the result.
+**huks.initSessionAsUser**, **huks.updateSession**, and **huks.finishSession** must be used together.
 
 **Since:** 12
 

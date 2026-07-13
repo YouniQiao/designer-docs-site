@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cameraPicker } from '@ohos.multimedia.cameraPicker';
+import { cameraPicker } from '@kit.CameraKit';
 ```
 
 ## pick
@@ -12,7 +12,14 @@ import { cameraPicker } from '@ohos.multimedia.cameraPicker';
 function pick(context: Context, mediaTypes: Array<PickerMediaType>, pickerProfile: PickerProfile): Promise<PickerResult>
 ```
 
-Starts the camera picker and enters the corresponding mode based on the media type. This API uses a promise to return the result. > **NOTE** > > When an application is running on a widescreen foldable device and the camera picker is launched while the device > is unfolded, switching the device from unfolded to folded will automatically move the camera picker to the > background.
+Starts the camera picker and enters the corresponding mode based on the media type. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> When an application is running on a widescreen foldable device and the camera picker is launched while the device
+> is unfolded, switching the device from unfolded to folded will automatically move the camera picker to the
+> background.
 
 **Since:** 11
 
@@ -32,7 +39,7 @@ Starts the camera picker and enters the corresponding mode based on the media ty
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PickerResult&gt; | Promise used to return the processing result ([PickerResult](arkts-camera-pickerresult-c.md#pickerresult)) of the camera picker. |
+| Promise&lt;PickerResult&gt; | Promise used to return the processing result ([PickerResult](arkts-camera-pickerresult-c.md)) of the camera picker. |
 
 **Example**
 

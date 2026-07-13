@@ -9,7 +9,7 @@ Describes all transient task information.
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## remainingQuota
@@ -18,7 +18,8 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 remainingQuota: number
 ```
 
-Remaining quota of the application on the current day, in ms. <br>Unit:ms
+Remaining quota of the application on the current day, in ms.
+<br>Unit:ms
 
 **Type:** number
 

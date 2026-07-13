@@ -1,24 +1,18 @@
 # AudioDebuggingManager
 
-Provides audio debug management capabilities.
+实现音频调试功能。
 
 **起始版本：** 26.0.0
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## printAppInfo
 
 ```TypeScript
-printAppInfo(fd: int): void
+printAppInfo(fd: number): void
 ```
 
-Prints full audio runtime snapshot for current app process. The snapshot will contain all audio renderers, capturers, audio session information. Note that the information details and format may vary from different version, it can only be used for manual debugging, user should not rely on the information for actual function realization or file content extraction.
+显示当前应用进程的完整运行时快照。
 
 **起始版本：** 26.0.0
 
@@ -30,15 +24,19 @@ Prints full audio runtime snapshot for current app process. The snapshot will co
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fd | int | 是 | fd is a file descriptor, indicates the location that the snapshot information will be  written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the  running log, otherwise the snapshot will be written into the file. |
+| fd | number | 是 | fd为文件句柄，表示快照信息将要写入的位置。如果fd小于0，则将快照信息打印到运行日志中，否则快照将写入文件。取值限定为整数。 |
 
 ## printCapturerInfo
 
 ```TypeScript
-printCapturerInfo(capturer: AudioCapturer, fd: int): void
+printCapturerInfo(capturer: AudioCapturer, fd: number): void
 ```
 
-Prints full audio runtime snapshot for target audio capturer instance. The snapshot will contain the stream, pipe, volume and device information. Note that the information details and format may vary from different version, it can only be used for manual debugging, user should not rely on the information for actual function realization or file content extraction.
+打印目标音频捕获程序实例的完整音频运行时快照。
+快照将包含流、管道、卷和设备信息。
+请注意，不同版本的信息详情和格式可能会有所不同，它只能用于
+手动调试，用户不应依赖实际功能实现或文件的信息
+内容提取。
 
 **起始版本：** 26.0.0
 
@@ -50,16 +48,20 @@ Prints full audio runtime snapshot for target audio capturer instance. The snaps
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| capturer | AudioCapturer | 是 | target audio capturer instance to print snapshot. |
-| fd | int | 是 | fd is a file descriptor, indicates the location that the snapshot information will be  written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the  running log, otherwise the snapshot will be written into the file. |
+| capturer | AudioCapturer | 是 | 目标音频捕获程序实例以打印快照。取值限定为整数。 |
+| fd | number | 是 | fd是文件描述符，表示快照信息的位置写入到。如果fd小于0或无可写，则快照信息将打印到运行日志，否则快照将写入文件。取值限定为整数。 |
 
 ## printLoopbackInfo
 
 ```TypeScript
-printLoopbackInfo(loopback: AudioLoopback, fd: int): void
+printLoopbackInfo(loopback: AudioLoopback, fd: number): void
 ```
 
-Prints full audio runtime snapshot for target audio loopback instance. The snapshot will contain the loopback status, device and effect information. Note that the information details and format may vary from different version, it can only be used for manual debugging, user should not rely on the information for actual function realization or file content extraction.
+打印目标音频环回实例的完整音频运行时快照。
+快照将包含环回状态、设备和效果信息。
+请注意，不同版本的信息详情和格式可能会有所不同，它只能用于
+手动调试，用户不应依赖实际功能实现或文件的信息
+内容提取。
 
 **起始版本：** 26.0.0
 
@@ -71,16 +73,20 @@ Prints full audio runtime snapshot for target audio loopback instance. The snaps
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| loopback | AudioLoopback | 是 | target audio loopback instance to print snapshot. |
-| fd | int | 是 | fd is a file descriptor, indicates the location that the snapshot information will be  written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the  running log, otherwise the snapshot will be written into the file. |
+| loopback | AudioLoopback | 是 | 目标音频环回实例以打印快照。取值限定为整数。 |
+| fd | number | 是 | fd是文件描述符，表示快照信息的位置写入到。如果fd小于0或无可写，则快照信息将打印到运行日志，否则快照将写入文件。取值限定为整数。 |
 
 ## printRendererInfo
 
 ```TypeScript
-printRendererInfo(renderer: AudioRenderer, fd: int): void
+printRendererInfo(renderer: AudioRenderer, fd: number): void
 ```
 
-Prints full audio runtime snapshot for target audio renderer instance. The snapshot will contain the stream, pipe, volume and device information. Note that the information details and format may vary from different version, it can only be used for manual debugging, user should not rely on the information for actual function realization or file content extraction.
+打印目标音频渲染器实例的完整音频运行时快照。
+快照将包含流、管道、卷和设备信息。
+请注意，不同版本的信息详情和格式可能会有所不同，它只能用于
+手动调试，用户不应依赖实际功能实现或文件的信息
+内容提取。
 
 **起始版本：** 26.0.0
 
@@ -92,16 +98,20 @@ Prints full audio runtime snapshot for target audio renderer instance. The snaps
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| renderer | AudioRenderer | 是 | target audio renderer instance to print snapshot. |
-| fd | int | 是 | fd is a file descriptor, indicates the location that the snapshot information will be  written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the  running log, otherwise the snapshot will be written into the file. |
+| renderer | AudioRenderer | 是 | 目标音频渲染器实例以打印快照。取值限定为整数。 |
+| fd | number | 是 | fd是文件描述符，表示快照信息的位置写入到。如果fd小于0或无可写，则快照信息将打印到运行日志，否则快照将写入文件。取值限定为整数。 |
 
 ## printSessionInfo
 
 ```TypeScript
-printSessionInfo(session: AudioSessionManager, fd: int): void
+printSessionInfo(session: AudioSessionManager, fd: number): void
 ```
 
-Prints full audio runtime snapshot for target audio session manager instance. The snapshot will contain the session status, scene, strategy and device information. Note that the information details and format may vary from different version, it can only be used for manual debugging, user should not rely on the information for actual function realization or file content extraction.
+打印目标音频会话管理器实例的完整音频运行时快照。
+快照将包含会话状态、场景、策略和设备信息。
+请注意，不同版本的信息详情和格式可能会有所不同，它只能用于
+手动调试，用户不应依赖实际功能实现或文件的信息
+内容提取。
 
 **起始版本：** 26.0.0
 
@@ -113,6 +123,6 @@ Prints full audio runtime snapshot for target audio session manager instance. Th
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| session | AudioSessionManager | 是 | target audio session manager instance to print snapshot. |
-| fd | int | 是 | fd is a file descriptor, indicates the location that the snapshot information will be  written to. If the fd is less than 0 or no writable, the snapshot information will be printed into the  running log, otherwise the snapshot will be written into the file. |
+| session | AudioSessionManager | 是 | 目标音频会话管理器实例以打印快照。取值限定为整数。 |
+| fd | number | 是 | fd是文件描述符，表示快照信息的位置写入到。如果fd小于0或无可写，则快照信息将打印到运行日志，否则快照将写入文件。取值限定为整数。 |
 

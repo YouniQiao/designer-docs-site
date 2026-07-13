@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { inputDevice } from '@ohos.multimodalInput.inputDevice';
+import { inputDevice } from '@kit.InputKit';
 ```
 
 ## isFunctionKeyEnabled
@@ -12,7 +12,8 @@ import { inputDevice } from '@ohos.multimodalInput.inputDevice';
 function isFunctionKeyEnabled(functionKey: FunctionKey): Promise<boolean>
 ```
 
-Checks whether the specified function key (for example, **CapsLock**) is enabled. This API uses a promise to return the result.
+Checks whether the specified function key (for example, **CapsLock**) is enabled. This API uses a promise to return
+the result.
 
 **Since:** 15
 

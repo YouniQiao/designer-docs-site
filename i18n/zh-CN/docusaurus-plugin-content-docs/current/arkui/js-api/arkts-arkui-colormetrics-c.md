@@ -12,7 +12,8 @@
 autoRefresh?(value: boolean): ColorMetrics
 ```
 
-设置ColorMetrics对象的自动刷新。 启用时，当系统配置发生变化时，使用ColorMetrics.resourceColor()创建的对象的颜色值将自动更新
+设置ColorMetrics对象的自动刷新。
+启用时，当系统配置发生变化时，使用ColorMetrics.resourceColor()创建的对象的颜色值将自动更新
 
 **起始版本：** 26.0.0
 
@@ -66,7 +67,7 @@ blendColor(overlayColor: ColorMetrics): ColorMetrics
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. The type of the input parameter is not ColorMetrics. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. The type of the input parameter is not ColorMetrics. |
 
 ## colorWithSpace
 
@@ -74,7 +75,7 @@ blendColor(overlayColor: ColorMetrics): ColorMetrics
 static colorWithSpace(colorSpace: ColorSpace, red: number, green: number, blue: number, alpha?: number): ColorMetrics
 ```
 
-使用[ColorSpace](../arkts-components/arkts-arkui-colorspace-e.md#colorspace)和rgba格式颜色实例化ColorMetrics类。仅部分属性支持在display-p3色彩空间中设置颜色。
+使用[ColorSpace](../arkts-components/arkts-arkui-colorspace-e.md)和rgba格式颜色实例化ColorMetrics类。仅部分属性支持在display-p3色彩空间中设置颜色。
 
 **起始版本：** 20
 
@@ -161,7 +162,7 @@ static resourceColor(color: ResourceColor): ColorMetrics
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [180003](../errorcode-event.md#180003-该事件不是克隆事件) | Failed to obtain the color resource. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause:1. The type of the input color parameter is not ResourceColor.2. The format of the input color string is not RGB or RGBA. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause:1. The type of the input color parameter is not ResourceColor.2. The format of the input color string is not RGB or RGBA. |
 
 ## rgba
 

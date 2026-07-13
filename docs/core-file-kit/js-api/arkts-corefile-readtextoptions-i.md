@@ -1,8 +1,8 @@
 # ReadTextOptions
 
-Defines the options used in **readText()**. It inherits from [ReadOptions](arkts-corefile-readoptions-i.md#readoptions).
+Defines the options used in **readText()**. It inherits from [ReadOptions](arkts-corefile-readoptions-i.md).
 
-**Inheritance/Implementation:** ReadTextOptions extends [ReadOptions](arkts-corefile-readoptions-i.md#readoptions)
+**Inheritance/Implementation:** ReadTextOptions extends [ReadOptions](arkts-corefile-readoptions-i.md)
 
 **Since:** 11
 
@@ -11,7 +11,7 @@ Defines the options used in **readText()**. It inherits from [ReadOptions](arkts
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## encoding
@@ -20,7 +20,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 encoding?: string
 ```
 
-Format of the data to be encoded. This parameter is valid only when the data type is string. The default value is **'utf-8'**, which is the only value supported.
+Format of the data to be encoded. This parameter is valid only when the data type is string. The default value is
+**'utf-8'**, which is the only value supported.
 
 **Type:** string
 

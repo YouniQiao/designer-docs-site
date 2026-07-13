@@ -1,6 +1,26 @@
 # Badge
 
-The **Badge** component is a container that can be attached to another component for notification and reminder purposes. ###### Child Components This component supports only one child component. > **NOTE** > > - Allowed child component types: built-in and custom components, including rendering control types ( > [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md), [ForEach]{@link for_each}, and > [LazyForEach]{@link lazy_for_each}). > > - A custom component defaults to a width and height of 0. You must explicitly set its width and height; otherwise, > the **Badge** component will not be displayed. > > - When there are multiple child components, only the last child component is displayed on the UI. However, the > status update of other child components will still cause the badge and its child components to be re-rendered. > > - Child component layout is independent and does not automatically adjust to avoid overlapping with the badge.
+The **Badge** component is a container that can be attached to another component for notification and reminder
+purposes.
+
+###### Child Components
+
+This component supports only one child component.
+
+> **NOTE**
+>
+> - Allowed child component types: built-in and custom components, including rendering control types (
+> [if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md), [ForEach]{@link for_each}, and
+> [LazyForEach]{@link lazy_for_each}).
+>
+> - A custom component defaults to a width and height of 0. You must explicitly set its width and height; otherwise,
+> the **Badge** component will not be displayed.
+>
+> - When there are multiple child components, only the last child component is displayed on the UI. However, the
+> status update of other child components will still cause the badge and its child components to be re-rendered.
+>
+> - Child component layout is independent and does not automatically adjust to avoid overlapping with the badge.
+
 
 ## Badge
 

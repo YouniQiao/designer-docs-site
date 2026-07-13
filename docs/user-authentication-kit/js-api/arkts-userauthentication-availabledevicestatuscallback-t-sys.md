@@ -4,7 +4,9 @@
 type AvailableDeviceStatusCallback = (deviceStatusList: DeviceStatus[]) => void
 ```
 
-Defines the callback used to receive the changes of the list of devices that can be added.
+Defines the callback triggered for receiving notifications of available device status changes. When the list of
+available devices changes (for example, a new device goes online or a device goes offline), the system notifies
+the application through this callback.
 
 **Since:** 23
 
@@ -18,5 +20,5 @@ Defines the callback used to receive the changes of the list of devices that can
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| deviceStatusList | DeviceStatus[] | Yes | Device status list. |
+| deviceStatusList | DeviceStatus[] | Yes | Device status list. It contains the status information about alldevices that can be added as companion devices. The application can filter online devices based on the**isOnline** field and determine the service scope supported by the device based on the**supportedBusinessIds** field. |
 

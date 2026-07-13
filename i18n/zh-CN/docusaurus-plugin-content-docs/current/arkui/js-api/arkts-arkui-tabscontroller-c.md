@@ -46,7 +46,16 @@ TabsController的构造函数。
 preloadItems(indices: Optional<Array<number>>): Promise<void>
 ```
 
-控制Tabs预加载指定子节点。调用该接口后会一次性加载所有指定的子节点，因此为了性能考虑，建议分批加载子节点。 > **说明：** > - Tabs的preloadItems需要在Tabs创建之后去调用，首次预加载推荐在Tabs的[onAppear](arkts-arkui-commonmethod-c.md#onappear-1)生命周期中去控制。 > > - 如果TabsController对象未绑定任何Tabs组件，直接调用该接口，会抛出JS异常。因此使用该接口时，建议通过try-catch捕获异常。 > > - 使用preloadItems预加载标签页时，若需自定义TabBar上的显示内容，推荐使用ComponentContent实现，使用示例请参考 > [示例9](../../../../reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#示例9通过componentcontent设置tabbar)。
+控制Tabs预加载指定子节点。调用该接口后会一次性加载所有指定的子节点，因此为了性能考虑，建议分批加载子节点。
+
+> **说明：**
+
+> - Tabs的preloadItems需要在Tabs创建之后去调用，首次预加载推荐在Tabs的[onAppear](arkts-arkui-commonmethod-c.md#onappear-1)生命周期中去控制。
+>
+> - 如果TabsController对象未绑定任何Tabs组件，直接调用该接口，会抛出JS异常。因此使用该接口时，建议通过try-catch捕获异常。
+>
+> - 使用preloadItems预加载标签页时，若需自定义TabBar上的显示内容，推荐使用ComponentContent实现，使用示例请参考
+> [示例9](../../../../reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#示例9通过componentcontent设置tabbar)。
 
 **起始版本：** 12
 
@@ -72,7 +81,7 @@ preloadItems(indices: Optional<Array<number>>): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter invalid. Possible causes:<br> 1. The parameter type is not Array&lt;number&gt;.<br> 2. The parameter is an empty array.<br> 3. The parameter contains an invalid index. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter invalid. Possible causes:<br> 1. The parameter type is not Array&lt;number&gt;.<br> 2. The parameter is an empty array.<br> 3. The parameter contains an invalid index. |
 
 ## setTabBarOpacity
 
@@ -80,7 +89,15 @@ preloadItems(indices: Optional<Array<number>>): Promise<void>
 setTabBarOpacity(opacity: number): void
 ```
 
-设置TabBar的不透明度。 > **说明：** > 当使用 > [bindTabsToScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstoscrollable13)或 > [bindTabsToNestedScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstonestedscrollable13) > 等接口绑定了Tabs组件和可滚动容器组件后，在滑动可滚动容器组件时，会触发所有与其绑定的Tabs组件的TabBar的显示和隐藏动效，调用setTabBarOpacity接口设置的TabBar不透明度会失效。因此不建议同时使用 > bindTabsToScrollable、bindTabsToNestedScrollable和setTabBarOpacity接口。
+设置TabBar的不透明度。
+
+> **说明：**
+
+> 当使用
+> [bindTabsToScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstoscrollable13)或
+> [bindTabsToNestedScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstonestedscrollable13)
+> 等接口绑定了Tabs组件和可滚动容器组件后，在滑动可滚动容器组件时，会触发所有与其绑定的Tabs组件的TabBar的显示和隐藏动效，调用setTabBarOpacity接口设置的TabBar不透明度会失效。因此不建议同时使用
+> bindTabsToScrollable、bindTabsToNestedScrollable和setTabBarOpacity接口。
 
 **起始版本：** 13
 
@@ -102,7 +119,15 @@ setTabBarOpacity(opacity: number): void
 setTabBarTranslate(translate: TranslateOptions): void
 ```
 
-设置TabBar的平移距离。 > **说明：** > 当使用 > [bindTabsToScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstoscrollable13)或 > [bindTabsToNestedScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstonestedscrollable13) > 等接口绑定了Tabs组件和可滚动容器组件后，在滑动可滚动容器组件时，会触发所有与其绑定的Tabs组件的TabBar的显示和隐藏动效，调用setTabBarTranslate接口设置的TabBar平移距离会失效。因此不建议同时使 > 用bindTabsToScrollable、bindTabsToNestedScrollable和setTabBarTranslate接口。
+设置TabBar的平移距离。
+
+> **说明：**
+
+> 当使用
+> [bindTabsToScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstoscrollable13)或
+> [bindTabsToNestedScrollable](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#bindtabstonestedscrollable13)
+> 等接口绑定了Tabs组件和可滚动容器组件后，在滑动可滚动容器组件时，会触发所有与其绑定的Tabs组件的TabBar的显示和隐藏动效，调用setTabBarTranslate接口设置的TabBar平移距离会失效。因此不建议同时使
+> 用bindTabsToScrollable、bindTabsToNestedScrollable和setTabBarTranslate接口。
 
 **起始版本：** 13
 

@@ -1,6 +1,8 @@
 # ConnectCallback (System API)
 
-Callback provided when the [enableAbilityWithCallback](arkts-accessibility-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) API is called to enable an accessibility extension ability. This callback will be invoked when the connection to an auxiliary extension ability is disconnected.
+Callback provided when the [enableAbilityWithCallback](arkts-accessibility-enableabilitywithcallback-f-sys.md#enableabilitywithcallback-1) API is called to
+enable an accessibility extension ability. This callback will be invoked when the connection to an auxiliary
+extension ability is disconnected.
 
 **Since:** 23
 
@@ -11,7 +13,7 @@ Callback provided when the [enableAbilityWithCallback](arkts-accessibility-enabl
 ## Modules to Import
 
 ```TypeScript
-import { config } from '@ohos.accessibility.config';
+import { config } from '@kit.AccessibilityKit';
 ```
 
 ## onDisconnect

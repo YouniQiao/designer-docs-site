@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## installDLPSandbox
@@ -12,7 +12,17 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function installDLPSandbox(bundleName: string, access: DLPFileAccess, userId: number, uri: string): Promise<DLPSandboxInfo>
 ```
 
-Installs a DLP sandbox application for an application. The DLP sandbox creates an independent running environment for protected DLP files, which is isolated from the original application process. This ensures that data is securely transferred within the authorized scope. The sandbox application inherits the functions of the original application but can access only authorized DLP files. This API uses a promise to return the result. After calling **installDLPSandbox** to install a sandbox, the system must call [uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1) to uninstall the sandbox after using it. Before a DLP file management application opens a protected file, the system needs to install a DLP sandbox for the target application.
+Installs a DLP sandbox application for an application. The DLP sandbox creates an independent running environment
+for protected DLP files, which is isolated from the original application process. This ensures that data is
+securely transferred within the authorized scope. The sandbox application inherits the functions of the original
+application but can access only authorized DLP files. This API uses a promise to return the result.
+
+After calling **installDLPSandbox** to install a sandbox, the system must call
+[uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1)
+to uninstall the sandbox after using it.
+
+Before a DLP file management application opens a protected file, the system needs to install a DLP sandbox for
+the target application.
 
 **Since:** 10
 
@@ -69,7 +79,16 @@ dlpPermission.installDLPSandbox('com.ohos.note', dlpPermission.DLPFileAccess.REA
 function installDLPSandbox(bundleName: string, access: DLPFileAccess, userId: number, uri: string, callback: AsyncCallback<DLPSandboxInfo>): void
 ```
 
-Installs a DLP sandbox application for an application. This API uses an asynchronous callback to return the result. After the API is called, the system creates a DLP sandbox for the application and returns the sandbox information. After calling **installDLPSandbox** to install a sandbox, the system must call [uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1) to uninstall the sandbox after using it. Before a DLP file management application opens a protected file, the system needs to install a DLP sandbox for the target application.
+Installs a DLP sandbox application for an application. This API uses an asynchronous callback to return the
+result. After the API is called, the system creates a DLP sandbox for the application and returns the sandbox
+information.
+
+After calling **installDLPSandbox** to install a sandbox, the system must call
+[uninstallDLPSandbox](arkts-dataprotection-uninstalldlpsandbox-f-sys.md#uninstalldlpsandbox-1)
+to uninstall the sandbox after using it.
+
+Before a DLP file management application opens a protected file, the system needs to install a DLP sandbox for
+the target application.
 
 **Since:** 10
 

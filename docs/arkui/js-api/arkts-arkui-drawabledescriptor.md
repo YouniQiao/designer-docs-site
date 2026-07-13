@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { DrawableDescriptor,AnimatedDrawableDescriptor,AnimationStopMode,AnimationOptions,AnimationController,DrawableDescriptorLoadedResult,LayeredDrawableDescriptor,PictureDrawableDescriptor,PixelMapDrawableDescriptor,HdrCompositionConfig } from '@kit.ArkUI';
+import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,24 +12,32 @@ import { DrawableDescriptor,AnimatedDrawableDescriptor,AnimationStopMode,Animati
 
 | Name | Description |
 | --- | --- |
-| [AnimatedDrawableDescriptor](arkts-animateddrawabledescriptor-c.md) | 使用[Image]{@link ./@internal/component/ets/image}组件播放PixelMap数组或动图资源时传入 AnimatedDrawableDescriptor对象， 该对象继承自[DrawableDescriptor]{@link DrawableDescriptorLoadedResult}。 |
-| [DrawableDescriptor](arkts-drawabledescriptor-c.md) | 父类对象提供可重写的方法，包含：获取[PixelMap]{@link @ohos.multimedia.image:image.PixelMap}实例，图片资源加载能力。 |
-| [LayeredDrawableDescriptor](arkts-layereddrawabledescriptor-c.md) | 当传入资源id或name为包含前景和背景资源的json文件时，生成LayeredDrawableDescriptor对象。继承自 [DrawableDescriptor]{@link DrawableDescriptorLoadedResult}。 drawable.json位于项目工程entry/src/main/resources/base/media目录下。定义请参考： |
-| [PictureDrawableDescriptor](arkts-picturedrawabledescriptor-c.md) | 支持通过传入Picture对象创建PictureDrawableDescriptor对象。 继承自[DrawableDescriptor]{@link DrawableDescriptorLoadedResult}。 |
-| [PixelMapDrawableDescriptor](arkts-pixelmapdrawabledescriptor-c.md) | 支持通过传入PixelMap创建PixelMapDrawableDescriptor对象。 继承自[DrawableDescriptor]{@link DrawableDescriptorLoadedResult}。 |
+| [AnimatedDrawableDescriptor](arkts-arkui-animateddrawabledescriptor-c.md) | Defines a descriptor object used to play animated content (for example, **PixelMap** arrays or animated image resources) using the [Image](./@internal/component/ets/image) component. It inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md). |
+| [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md) | Represents the base class providing overridable methods for [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) acquisition and image resource loading. |
+| [LayeredDrawableDescriptor](arkts-arkui-layereddrawabledescriptor-c.md) | Creates a **LayeredDrawableDescriptor** object when the passed resource ID or name belongs to a JSON file that contains foreground and background resources. Inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).The **drawable.json** file is located under **entry/src/main/resources/base/media** in the project directory. Below shows the file content: |
+| [PictureDrawableDescriptor](arkts-arkui-picturedrawabledescriptor-c.md) | Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. This API inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md). |
+| [PixelMapDrawableDescriptor](arkts-arkui-pixelmapdrawabledescriptor-c.md) | Implements a **PixelMapDrawableDescriptor** object, which can be created by passing in a **PixelMap** object. Inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md). |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DrawableDescriptor](arkts-arkui-drawabledescriptor-c-sys.md) | Represents the base class providing overridable methods for [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) acquisition and image resource loading. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AnimationController](arkts-animationcontroller-i.md) | 动画控制器对象。包含控制动画播放、停止、恢复、暂停和状态查询等方法。 |
-| [AnimationOptions](arkts-animationoptions-i.md) | 动画播放参数。包括播放时延，迭代次数，单帧播放时间，是否自动播放。 |
-| [DrawableDescriptorLoadedResult](arkts-drawabledescriptorloadedresult-i.md) | 传入的图片资源或地址的加载结果。 |
-| [HdrCompositionConfig](arkts-hdrcompositionconfig-i.md) | HDR合成配置选项。 |
+| [AnimationController](arkts-arkui-animationcontroller-i.md) | Implements an animation controller object. It provides APIs for playing, stopping, resuming, and pausing animations, as well as querying the status. |
+| [AnimationOptions](arkts-arkui-animationoptions-i.md) | Provides the configuration options for animation playback, including the playback duration, number of playback times,and autoplay behavior. |
+| [DrawableDescriptorLoadedResult](arkts-arkui-drawabledescriptorloadedresult-i.md) | Represents the result of loading an image resource or URI. |
+| [HdrCompositionConfig](arkts-arkui-hdrcompositionconfig-i.md) | Provides HDR composition configuration. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AnimationStopMode](arkts-animationstopmode-e.md) | 动图停止模式。 |
+| [AnimationStopMode](arkts-arkui-animationstopmode-e.md) | Enumerates the stop modes of an animation. |
 

@@ -6,14 +6,14 @@ Defines the options for selecting images or videos.
 
 **Deprecated since:** 12
 
-**Substitutes:** [PhotoSelectOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoselectoptions-c.md#photoselectoptions)
+**Substitutes:** [PhotoSelectOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoselectoptions-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## MIMEType
@@ -22,7 +22,9 @@ import { picker } from '@ohos.file.picker';
 MIMEType?: PhotoViewMIMETypes
 ```
 
-Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TYPE** is used by default. **Note**: This API is supported since API version 9 and deprecated since API version 18.
+Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TYPE** is used by default.
+
+**Note**: This API is supported since API version 9 and deprecated since API version 18.
 
 **Type:** PhotoViewMIMETypes
 
@@ -42,7 +44,8 @@ Media file types to select. If this parameter is not specified, **IMAGE_VIDEO_TY
 maxSelectNumber?: number
 ```
 
-Maximum number of media files that can be selected. The default value is **50**, and the maximum value is **500**.
+Maximum number of media files that can be selected. The default value is **50**,
+and the maximum value is **500**.
 
 **Type:** number
 

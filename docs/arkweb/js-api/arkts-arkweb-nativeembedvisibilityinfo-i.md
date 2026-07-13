@@ -26,7 +26,9 @@ ID of the same-layer rendered tag.
 visibility: boolean
 ```
 
-Whether the same-layer tag is visible. The value **true** indicates that the same-layer tag is visible, and **false** indicates the opposite.
+Whether the same-layer tag is visible.
+
+The value **true** indicates that the same-layer tag is visible, and **false** indicates the opposite.
 
 **Type:** boolean
 

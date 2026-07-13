@@ -1,19 +1,21 @@
 # DeviceManager
 
-Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**.
+Provides APIs to obtain information about trusted devices and local devices. Before calling any API in
+**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,
+**dmInstance**.
 
 **Since:** 7
 
 **Deprecated since:** 11
 
-**Substitutes:** [DeviceManager](arkts-distributedservice-devicemanager-i.md#devicemanager)
+**Substitutes:** [DeviceManager](arkts-distributedservice-devicemanager-i.md)
 
 **System capability:** SystemCapability.DistributedHardware.DeviceManager
 
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.distributedHardware.deviceManager';
+import { deviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## authenticateDevice
@@ -200,7 +202,8 @@ try {
 getDeviceInfo(networkId: string, callback: AsyncCallback<DeviceInfo>): void
 ```
 
-Obtains the information about a specific device based on the network ID. This API uses an asynchronous callback to return the result.
+Obtains the information about a specific device based on the network ID. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 
@@ -259,7 +262,8 @@ try {
 getDeviceInfo(networkId: string): Promise<DeviceInfo>
 ```
 
-Obtains the information about a specific device based on the network ID. This API uses a promise to return the result.
+Obtains the information about a specific device based on the network ID. This API uses a promise to return the
+result.
 
 **Since:** 10
 
@@ -627,7 +631,8 @@ try {
 getTrustedDeviceListSync(isRefresh: boolean): Array<DeviceInfo>
 ```
 
-Enables the DSoftBus heartbeat mode to quickly bring offline trusted devices online and updates the list of online trusted devices.
+Enables the DSoftBus heartbeat mode to quickly bring offline trusted devices online and updates the list of
+online trusted devices.
 
 **Since:** 10
 
@@ -1830,7 +1835,8 @@ try {
 startDeviceDiscovery(subscribeInfo: SubscribeInfo): void
 ```
 
-Starts to discover peripheral devices. The discovery process lasts 2 minutes. A maximum of 99 devices can be discovered.
+Starts to discover peripheral devices. The discovery process lasts 2 minutes. A maximum of 99 devices can be
+discovered.
 
 **Since:** 8
 
@@ -1903,7 +1909,8 @@ try {
 startDeviceDiscovery(subscribeInfo: SubscribeInfo, filterOptions?: string): void
 ```
 
-Starts to discover peripheral devices. The discovery process lasts 2 minutes. A maximum of 99 devices can be discovered.
+Starts to discover peripheral devices. The discovery process lasts 2 minutes. A maximum of 99 devices can be
+discovered.
 
 **Since:** 9
 

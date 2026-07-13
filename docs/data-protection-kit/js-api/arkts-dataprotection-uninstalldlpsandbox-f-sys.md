@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## uninstallDLPSandbox
@@ -12,7 +12,14 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function uninstallDLPSandbox(bundleName: string, userId: number, appIndex: number): Promise<void>
 ```
 
-Uninstalls a DLP sandbox application for an application. This API uses a promise to return the result. After this API is called, the system destroys the specified DLP sandbox environment and releases related resources. Use this API to clear the corresponding sandbox environment. This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-installdlpsandbox-f-sys.md#installdlpsandbox-1) .
+Uninstalls a DLP sandbox application for an application. This API uses a promise to return the result. After this
+API is called, the system destroys the specified DLP sandbox environment and releases related resources.
+
+Use this API to clear the corresponding sandbox environment.
+
+This API can be called only after a DLP sandbox is installed by calling
+[installDLPSandbox](arkts-dataprotection-installdlpsandbox-f-sys.md#installdlpsandbox-1)
+.
 
 **Since:** 10
 
@@ -69,7 +76,15 @@ dlpPermission.installDLPSandbox('com.ohos.note', dlpPermission.DLPFileAccess.REA
 function uninstallDLPSandbox(bundleName: string, userId: number, appIndex: number, callback: AsyncCallback<void>): void
 ```
 
-Uninstalls a DLP sandbox application for an application. This API uses an asynchronous callback to return the result. After this API is called, the system destroys the specified DLP sandbox environment and releases related resources. Use this API to clear the sandbox environment. This API can be called only after a DLP sandbox is installed by calling [installDLPSandbox](arkts-dataprotection-installdlpsandbox-f-sys.md#installdlpsandbox-1) .
+Uninstalls a DLP sandbox application for an application. This API uses an asynchronous callback to return the
+result. After this API is called, the system destroys the specified DLP sandbox environment and releases related
+resources.
+
+Use this API to clear the sandbox environment.
+
+This API can be called only after a DLP sandbox is installed by calling
+[installDLPSandbox](arkts-dataprotection-installdlpsandbox-f-sys.md#installdlpsandbox-1)
+.
 
 **Since:** 10
 

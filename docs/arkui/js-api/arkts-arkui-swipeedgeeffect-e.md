@@ -12,7 +12,8 @@ Enumerates the edge effects.
 Spring
 ```
 
-Elastic physical action, sliding to the edge can continue to slide for a distance based on the initial speed or touch event, and spring back when released.
+Elastic physical action, sliding to the edge can continue to slide for a distance based on the initial speed or
+touch event, and spring back when released.
 
 **Since:** 9
 

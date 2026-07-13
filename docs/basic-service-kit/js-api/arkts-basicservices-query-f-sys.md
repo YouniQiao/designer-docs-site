@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## query
@@ -12,7 +12,8 @@ import { request } from '@ohos.request';
 function query(id: string, callback: AsyncCallback<TaskInfo>): void
 ```
 
-Queries specified task details. Creates a group based on GroupConfig
+Queries specified task details.
+Creates a group based on GroupConfig
 
 **Since:** 10
 

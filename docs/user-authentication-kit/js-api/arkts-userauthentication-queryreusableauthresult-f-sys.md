@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## queryReusableAuthResult
@@ -12,7 +12,10 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 function queryReusableAuthResult(authParam: AuthParam): Uint8Array
 ```
 
-Queries whether there is any reusable identity authentication result.
+Queries whether there is any reusable identity authentication result. This API is used to query whether there is an
+authentication result that meets the reuse conditions before authentication is initiated. If such a result exists,
+the **AuthToken** that can be reused is returned directly, and the user does not need to perform authentication
+again.
 
 **Since:** 20
 
@@ -26,13 +29,13 @@ Queries whether there is any reusable identity authentication result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| authParam | AuthParam | Yes | User authentication parameters. |
+| authParam | AuthParam | Yes | Represents the user authentication parameters. The parameters include thechallenge value, authentication type list (**authType**), authentication trust level (**authTrustLevel**), andauthentication result reuse configuration (**reuseUnlockResult**). Based on these parameters, the systemdetermines whether there are reusable authentication results that meet the requirements. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Uint8Array | Reusable AuthToken, up to 1024 bytes. |
+| Uint8Array | Reusable authentication token (**AuthToken**). If there are reusable authentication resultsthat meet the requirements, the **AuthToken** data is returned. The maximum length is 1024 bytes. If there areno such results, an error code is returned. |
 
 **Error codes:**
 

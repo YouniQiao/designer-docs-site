@@ -1,8 +1,13 @@
 # CmacSpec
 
-Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec). It is used as an input parameter for CMAC generation. > **NOTE** > > **cipherName** specifies the CMAC symmetric encryption algorithm. It is mandatory.
+Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md). It is used as an input parameter for CMAC
+computation.
 
-**Inheritance/Implementation:** CmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec)
+> **NOTE**
+>
+> **cipherName** specifies the symmetric cipher algorithm used by CMAC. It is mandatory.
+
+**Inheritance/Implementation:** CmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md)
 
 **Since:** 18
 
@@ -11,7 +16,7 @@ Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#ma
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## cipherName
@@ -20,7 +25,7 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 cipherName: string
 ```
 
-Symmetric encryption algorithm to use.
+Symmetric cipher algorithm used by CMAC.
 
 **Type:** string
 

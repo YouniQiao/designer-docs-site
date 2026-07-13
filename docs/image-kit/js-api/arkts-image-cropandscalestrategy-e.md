@@ -1,10 +1,27 @@
 # CropAndScaleStrategy
 
-```TypeScript
-enum CropAndScaleStrategy
-```
+Enumerates the order of cropping and scaling.
 
-表示裁剪与缩放的先后策略的枚举。 如果在配置解码选项[DecodingOptions]image.DecodingOptions时，未填入参数cropAndScaleStrategy，并且同时设置了参数desiredRegion和 desiredSize，由于系统对于不同图片格式采用的解码算法不同，最终解码效果将略有差异。 例如原始图片大小为200x200，传入desiredSize:{width: 150, height: 150}，desiredRegion:{x: 0, y: 0, width: 100, height: 100}，即预期解码原 图左上角1/4区域，最终将pixelMap大小缩放至150x150返回。 对于jpeg、webp图片（部分dng图片解码时会优先解码图片中的jpeg预览图，在此场景下也会被视为jpeg图片格式）会先进行下采样，例如按照7/8下采样，再基于175x175的图片大小进行区域裁剪，因此最终的区域内容稍大于原图 的左上角1/4区域。 对于svg图片，由于是矢量图，可以任意缩放不损失清晰度，在解码时会根据desiredSize与原图Size的比例选择缩放比例，再基于缩放后的图片大小进行区域裁剪，因此最终返回的解码区域会有所差异。 针对该场景，建议在解码选项同时设置了desiredRegion与desiredSize时，参数cropAndScaleStrategy应传入CROP_FIRST保证效果一致。
+If the **cropAndScaleStrategy** parameter is not specified in
+[DecodingOptions](arkts-image-decodingoptions-i.md) and both **desiredRegion** and
+**desiredSize** are set, the final decoding result may vary slightly due to differences in decoding algorithms used
+for different image formats.
+
+For example, if the original image size is 200x200, and you specify
+**desiredSize:{width: 150, height: 150}, desiredRegion:{x: 0, y: 0, width: 100, height: 100}**, the expectation is
+to decode the top-left 1/4 region of the original image and then scale the pixelMap size to 150x150.
+
+For JPEG and WebP images (as well as some DNG images that decode a JPEG preview within the file and therefore are
+treated as JPEG format), the system first performs downsampling. For instance, it might downsample by 7/8 and then
+crop the region based on a 175x175 image size. As a result, the final cropped region will be slightly larger than
+the top-left 1/4 of the original image.
+
+For SVG images, which are vector-based and can be scaled without losing clarity, the system scales the image based
+on the ratio of **desiredSize** to the original image size and then crops the region. This results in a decoded
+region that may differ from the exact 1/4 region of the original image.
+
+To ensure consistent results when both **desiredRegion** and **desiredSize** are set, set the
+**cropAndScaleStrategy** parameter to **CROP_FIRST**.
 
 **Since:** 18
 
@@ -16,7 +33,8 @@ enum CropAndScaleStrategy
 SCALE_FIRST = 1
 ```
 
-解码参数如果同时设置desiredRegion与desiredSize，先根据desiredSize进行缩放，再根据desiredRegion进行区域裁剪。
+If both **desiredRegion** and **desiredSize** are specified, the image is first scaled based on **desiredSize**
+and then cropped based on **desiredRegion**.
 
 **Since:** 18
 
@@ -28,7 +46,8 @@ SCALE_FIRST = 1
 CROP_FIRST = 2
 ```
 
-解码参数如果同时设置desiredRegion与desiredSize，先根据desiredRegion进行区域裁剪，再根据desiredSize进行缩放。
+If both **desiredRegion** and **desiredSize** are specified, the image is first cropped based on
+**desiredRegion** and then scaled based on **desiredSize**.
 
 **Since:** 18
 

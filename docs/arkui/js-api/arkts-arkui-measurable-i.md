@@ -106,7 +106,8 @@ Imposes size constraints on the child component.
 uniqueId?: number
 ```
 
-Unique ID that the system assigns to the child component. The value range is all integers.
+Unique ID that the system assigns to the child component.
+The value range is all integers.
 
 **Type:** number
 

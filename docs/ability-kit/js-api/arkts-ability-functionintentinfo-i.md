@@ -1,6 +1,9 @@
 # FunctionIntentInfo (System API)
 
-Defines the parameter type of the [@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) decorator. All parameters inherit from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo).
+Defines the parameter type of the
+[@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod)
+decorator. All parameters inherit from
+[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md).
 
 **Since:** 20
 
@@ -13,6 +16,6 @@ Defines the parameter type of the [@InsightIntentFunctionMethod](../../../../ref
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
+import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 

@@ -9,7 +9,7 @@ Describes detail of the cloud sync {@code Progress}.
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## code
@@ -32,7 +32,9 @@ Describes the code of data sync progress.
 details: Record<string, TableDetails>
 ```
 
-Statistics of each table. The key indicates the table name, and the value indicates the device-cloud sync statistics of the table.
+Statistics of each table.
+
+The key indicates the table name, and the value indicates the device-cloud sync statistics of the table.
 
 **Type:** Record<string, TableDetails>
 

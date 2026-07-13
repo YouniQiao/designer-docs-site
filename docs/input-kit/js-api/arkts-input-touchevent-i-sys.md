@@ -2,7 +2,7 @@
 
 Defines a touch event.
 
-**Inheritance/Implementation:** TouchEvent extends [InputEvent](arkts-input-inputevent-i.md#inputevent)
+**Inheritance/Implementation:** TouchEvent extends [InputEvent](arkts-input-inputevent-i.md)
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ Defines a touch event.
 ## Modules to Import
 
 ```TypeScript
-import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@ohos.multimodalInput.touchEvent';
+import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@kit.InputKit';
 ```
 
 ## fixedMode
@@ -36,7 +36,8 @@ Coordinate correction mode.
 isInject?: boolean
 ```
 
-Whether the touch event is an injection event. For details about injection events, see [@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md#inputeventclient).
+Whether the touch event is an injection event. For details about injection events, see
+[@ohos.multimodalInput.inputEventClient](arkts-multimodalinput-inputeventclient.md).
 
 **Type:** boolean
 

@@ -9,7 +9,7 @@ Implements a collection of fonts.
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## clearCaches
@@ -18,7 +18,8 @@ import { text } from '@ohos.graphics.text';
 clearCaches(): void
 ```
 
-Clears the font cache. (The font cache has a memory limit and a clearing mechanism. It occupies limited memory. You are not advised to clear it unless otherwise required.)
+Clears the font cache. (The font cache has a memory limit and a clearing mechanism. It occupies limited memory.
+You are not advised to clear it unless otherwise required.)
 
 **Since:** 12
 
@@ -127,7 +128,9 @@ let fontCollection = text.FontCollection.getLocalInstance();
 loadFont(name: string, path: string | Resource): Promise<void>
 ```
 
-Loads the custom font. This API uses a promise to return the result. In this API, **name** specifies the alias of the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle)**. The supported font file formats are TTF and OTF.
+Loads the custom font. This API uses a promise to return the result. In this API, **name** specifies the alias of
+the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies**
+in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md)**. The supported font file formats are TTF and OTF.
 
 **Since:** 18
 
@@ -190,7 +193,9 @@ struct RenderTest {
 loadFontSync(name: string, path: string | Resource): void
 ```
 
-Loads a custom font. This API returns the result synchronously. In this API, **name** specifies the alias of the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle)**. The supported font file formats are TTF and OTF.
+Loads a custom font. This API returns the result synchronously. In this API, **name** specifies the alias of the
+font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in
+**[TextStyle](arkts-arkgraphics2d-textstyle-i.md)**. The supported font file formats are TTF and OTF.
 
 **Since:** 12
 
@@ -250,7 +255,9 @@ struct RenderTest {
 loadFontSyncWithCheck(name: string, path: string | Resource, index?: number): void
 ```
 
-Loads a custom font. This API returns the result synchronously. In this API, **name** specifies the alias of the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle)**. The supported font file formats are TTF, OTF, and TTC.
+Loads a custom font. This API returns the result synchronously. In this API, **name** specifies the alias of the
+font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in
+**[TextStyle](arkts-arkgraphics2d-textstyle-i.md)**. The supported font file formats are TTF, OTF, and TTC.
 
 **Since:** 23
 
@@ -326,7 +333,9 @@ struct Index {
 loadFontWithCheck(name: string, path: string | Resource, index?: number): Promise<void>
 ```
 
-Loads a custom font. This API uses a promise to return the result. In this API, **name** specifies the alias of the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies** in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle)**. The supported font file formats are TTF, OTF, and TTC.
+Loads a custom font. This API uses a promise to return the result. In this API, **name** specifies the alias of
+the font, and the custom font effect can be displayed only when the value of **name** is set in **fontFamilies**
+in **[TextStyle](arkts-arkgraphics2d-textstyle-i.md)**. The supported font file formats are TTF, OTF, and TTC.
 
 **Since:** 23
 
@@ -412,7 +421,9 @@ struct Index {
 setParagraphCachesEnabled(enable: boolean): void
 ```
 
-Sets whether to enable the typesetting paragraph caching. Typesetting paragraph caching can accelerate the typesetting of repeated text, but it will occupy extra memory. Before this API is called, the system enables typesetting paragraph caching by default.
+Sets whether to enable the typesetting paragraph caching. Typesetting paragraph caching can accelerate the
+typesetting of repeated text, but it will occupy extra memory. Before this API is called, the system enables
+typesetting paragraph caching by default.
 
 **Since:** 26.0.0
 
@@ -456,7 +467,17 @@ struct Index {
 unloadFont(name: string): Promise<void>
 ```
 
-Uninstalls a specified custom font. This API uses a promise to return the result. After this API is called to unload a custom font corresponding to a font alias, the custom font is no longer available. All layout objects that use the font alias must be destroyed and recreated. - Unloading a non-existent font alias does not produce any effect and does not throw an error. - This operation only affects future font usage. - Unloading a font that is currently in use may lead to text rendering exceptions (such as garbled characters or missing glyphs).
+Uninstalls a specified custom font. This API uses a promise to return the result.
+
+After this API is called to unload a custom font corresponding to a font alias, the custom font is no longer
+available.
+
+All layout objects that use the font alias must be destroyed and recreated.
+
+- Unloading a non-existent font alias does not produce any effect and does not throw an error.
+- This operation only affects future font usage.
+- Unloading a font that is currently in use may lead to text rendering exceptions (such as garbled characters or
+missing glyphs).
 
 **Since:** 20
 
@@ -517,7 +538,17 @@ struct UnloadFontTest {
 unloadFontSync(name: string): void
 ```
 
-Uninstalls a specified custom font. This API is synchronous. After this API is called to unload a custom font corresponding to a font alias, the custom font is no longer available. All layout objects that use the font alias must be destroyed and recreated. - Unloading a non-existent font alias does not produce any effect and does not throw an error. - This operation only affects future font usage. - Unloading a font that is currently in use may lead to text rendering exceptions (such as garbled characters or missing glyphs).
+Uninstalls a specified custom font. This API is synchronous.
+
+After this API is called to unload a custom font corresponding to a font alias, the custom font is no longer
+available.
+
+All layout objects that use the font alias must be destroyed and recreated.
+
+- Unloading a non-existent font alias does not produce any effect and does not throw an error.
+- This operation only affects future font usage.
+- Unloading a font that is currently in use may lead to text rendering exceptions (such as garbled characters or
+missing glyphs).
 
 **Since:** 20
 

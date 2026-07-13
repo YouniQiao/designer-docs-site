@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { particleAbility } from '@ohos.ability.particleAbility';
+import { particleAbility } from '@kit.AbilityKit';
 ```
 
 ## acquireDataAbilityHelper
@@ -12,7 +12,14 @@ import { particleAbility } from '@ohos.ability.particleAbility';
 function acquireDataAbilityHelper(uri: string): DataAbilityHelper
 ```
 
-Obtains the dataAbilityHelper.
+Obtains a dataAbilityHelper object.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the FA model, see
+> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> To access a DataAbility of another application, the target application must be configured with associated
+> startup (**AssociateWakeUp** set to **true**).
 
 **Since:** 7
 
@@ -24,13 +31,13 @@ Obtains the dataAbilityHelper.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | Indicates the path of the file to open. |
+| uri | string | Yes | URI of the file to open. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| DataAbilityHelper | Returns the dataAbilityHelper. |
+| DataAbilityHelper | A utility class used to help other abilities access a DataAbility. |
 
 **Example**
 

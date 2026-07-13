@@ -11,7 +11,7 @@ Describes the data migration progress.
 ## Modules to Import
 
 ```TypeScript
-import { fontManager } from '@ohos.fontManager';
+import { fontManager } from '@kit.LocalizationKit';
 ```
 
 ## progressPercentage
@@ -20,7 +20,8 @@ import { fontManager } from '@ohos.fontManager';
 progressPercentage: number
 ```
 
-Data migration progress, in percentage. The value ranges from 0 to 100. The value range is all integers.
+Data migration progress, in percentage. The value ranges from 0 to 100.
+The value range is all integers.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ Data migration progress, in percentage. The value ranges from 0 to 100. The valu
 timeRemaining: number
 ```
 
-Estimated remaining time, in seconds. The value should be an integer.
+Estimated remaining time, in seconds.
+The value should be an integer.
 
 **Type:** number
 

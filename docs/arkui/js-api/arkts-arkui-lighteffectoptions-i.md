@@ -1,6 +1,7 @@
 # LightEffectOptions
 
-Provides the light sensing interaction feedback configuration for immersive materials. The configuration is used to customize the color of the light sensing feedback.
+Provides the light sensing interaction feedback configuration for immersive materials. The configuration is used to
+customize the color of the light sensing feedback.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Provides the light sensing interaction feedback configuration for immersive mate
 ## Modules to Import
 
 ```TypeScript
-import { uiMaterial } from '@ohos.arkui.uiMaterial';
+import { uiMaterial } from '@kit.ArkUI';
 ```
 
 ## color
@@ -18,7 +19,9 @@ import { uiMaterial } from '@ohos.arkui.uiMaterial';
 color?: ResourceColor
 ```
 
-Custom color of the light sensing feedback. Default value: **Color.White**
+Custom color of the light sensing feedback.
+
+Default value: **Color.White**
 
 **Type:** ResourceColor
 

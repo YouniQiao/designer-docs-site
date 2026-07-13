@@ -11,7 +11,7 @@ Implements wakeup intelligent voice engine.
 ## Modules to Import
 
 ```TypeScript
-import { intelligentVoice } from '@ohos.ai.intelligentVoice';
+import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
 ## getParameter
@@ -301,7 +301,8 @@ if (wakeupIntelligentVoiceEngine != null) {
 on(type: 'wakeupIntelligentVoiceEvent', callback: Callback<WakeupIntelligentVoiceEngineCallbackInfo>): void
 ```
 
-Subscribes wakeup intelligent voice events. When wakeup intelligent voice events reach, the callback is invoked.
+Subscribes wakeup intelligent voice events. When wakeup intelligent voice events reach,
+the callback is invoked.
 
 **Since:** 10
 

@@ -28,7 +28,9 @@ Release all discarded nodes during the next idle period.
 PROGRESSIVE = 1
 ```
 
-Release discarded nodes one by one during the next idle period based on the remaining time of the current frame. Unreleased nodes will continue to be released in subsequent idle periods based on the available idle time.
+Release discarded nodes one by one during the next idle period based on the
+remaining time of the current frame. Unreleased nodes will continue to be
+released in subsequent idle periods based on the available idle time.
 
 **Since:** 26.0.0
 

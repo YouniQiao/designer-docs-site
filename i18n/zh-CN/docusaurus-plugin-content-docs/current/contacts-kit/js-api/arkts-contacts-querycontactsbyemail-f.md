@@ -6,7 +6,9 @@
 function queryContactsByEmail(email: string, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 7
 
@@ -48,7 +50,9 @@ contact.queryContactsByEmail('xxx@email.com', (err: BusinessError, data) => {
 function queryContactsByEmail(context: Context, email: string, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 10
 
@@ -69,7 +73,7 @@ function queryContactsByEmail(context: Context, email: string, callback: AsyncCa
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 **示例：**
 
@@ -99,7 +103,9 @@ contact.queryContactsByEmail(context, 'xxx@email.com', (err: BusinessError, data
 function queryContactsByEmail(email: string, holder: Holder, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 7
 
@@ -147,7 +153,9 @@ function queryContactsByEmail(context: Context, email: string, holder: Holder,
     callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email和holder查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 10
 
@@ -169,7 +177,7 @@ function queryContactsByEmail(context: Context, email: string, holder: Holder,
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 **示例：**
 
@@ -203,7 +211,9 @@ contact.queryContactsByEmail(context, 'xxx@email.com', {
 function queryContactsByEmail(email: string, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 7
 
@@ -249,7 +259,9 @@ function queryContactsByEmail(context: Context, email: string, attrs: ContactAtt
     callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 10
 
@@ -271,7 +283,7 @@ function queryContactsByEmail(context: Context, email: string, attrs: ContactAtt
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 **示例：**
 
@@ -303,7 +315,9 @@ contact.queryContactsByEmail(context, 'xxx@email.com', {
 function queryContactsByEmail(email: string, holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 7
 
@@ -353,7 +367,9 @@ contact.queryContactsByEmail('xxx@email.com', {
 function queryContactsByEmail(context: Context, email: string, holder: Holder, attrs: ContactAttributes, callback: AsyncCallback<Array<Contact>>): void
 ```
 
-根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email、holder和attrs查询联系人。使用callback异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 10
 
@@ -376,7 +392,7 @@ function queryContactsByEmail(context: Context, email: string, holder: Holder, a
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 **示例：**
 
@@ -412,7 +428,9 @@ contact.queryContactsByEmail(context, 'xxx@email.com', {
 function queryContactsByEmail(email: string, holder?: Holder, attrs?: ContactAttributes): Promise<Array<Contact>>
 ```
 
-根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 7
 
@@ -463,7 +481,9 @@ promise.then((data) => {
 function queryContactsByEmail(context: Context, email: string, holder?: Holder, attrs?: ContactAttributes): Promise<Array<Contact>>
 ```
 
-根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用 [queryContact](arkts-contacts-querycontact-f.md#querycontact-8) 接口，根据该接口返回的属性key查询。
+根据email、holder和attrs查询联系人。使用Promise异步回调。该接口返回的列表仅包含联系人信息中的id、key、Emails属性。如果要查询联系人的所有信息，建议使用
+[queryContact](arkts-contacts-querycontact-f.md#querycontact-8)
+接口，根据该接口返回的属性key查询。
 
 **起始版本：** 10
 
@@ -491,7 +511,7 @@ function queryContactsByEmail(context: Context, email: string, holder?: Holder, 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 **示例：**
 

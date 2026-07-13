@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAbilityLabel
@@ -12,7 +12,10 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAbilityLabel(bundleName: string, moduleName: string, abilityName: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the ability label based on the given bundle name, module name, and ability name. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
+Obtains the ability label based on the given bundle name, module name, and ability name. This API uses an
+asynchronous callback to return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -29,7 +32,7 @@ Obtains the ability label based on the given bundle name, module name, and abili
 | bundleName | string | Yes | Bundle name. |
 | moduleName | string | Yes | Module name. |
 | abilityName | string | Yes | Name of the UIAbility component. |
-| callback | AsyncCallback&lt;string&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result.If the operation is successful, **err** is **null** and **data** is the label. Otherwise, **err** is an errorobject. |
+| callback | AsyncCallback&lt;string&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result.If the operation is successful, **err** is **null** and **data** is the label. Otherwise, **err** is an errorobject. |
 
 **Error codes:**
 
@@ -78,7 +81,10 @@ try {
 function getAbilityLabel(bundleName: string, moduleName: string, abilityName: string): Promise<string>
 ```
 
-Obtains the ability label based on the given bundle name, module name, and ability name. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
+Obtains the ability label based on the given bundle name, module name, and ability name. This API uses a promise to
+return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 

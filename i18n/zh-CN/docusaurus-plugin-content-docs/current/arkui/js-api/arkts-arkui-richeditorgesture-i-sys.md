@@ -12,7 +12,9 @@
 onDoubleClick?: Callback<GestureEvent>
 ```
 
-[GestureEvent](../../../../reference/apis-arkui/arkui-ts/ts-gesture-common.md#gestureevent对象说明)为用户双击事件。 双击完成时回调事件。
+[GestureEvent](../../../../reference/apis-arkui/arkui-ts/ts-gesture-common.md#gestureevent对象说明)为用户双击事件。
+
+双击完成时回调事件。
 
 **类型：** Callback<GestureEvent>
 

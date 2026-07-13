@@ -6,7 +6,8 @@
 function preQuerySync(query: AssetMap): Uint8Array
 ```
 
-查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.querySync](arkts-assetstore-querysync-f.md#querysync-1)、 [asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)。使用同步方式返回结果。
+查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.querySync](arkts-assetstore-querysync-f.md#querysync-1)、
+[asset.postQuerySync](arkts-assetstore-postquerysync-f.md#postquerysync-1)。使用同步方式返回结果。
 
 **起始版本：** 12
 
@@ -30,7 +31,7 @@ function preQuerySync(query: AssetMap): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types.2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types.2. Parameter verification failed. |
 | [24000001](../errorcode-asset.md#24000001-关键资产服务不可用) | The ASSET service is unavailable. |
 | [24000002](../errorcode-asset.md#24000002-未找到关键资产) | The asset is not found. |
 | [24000005](../errorcode-asset.md#24000005-锁屏状态不匹配) | The screen lock status does not match. |

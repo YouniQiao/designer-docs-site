@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { selectionManager } from '@ohos.selectionInput.selectionManager';
+import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
 ## createPanel
@@ -12,7 +12,9 @@ import { selectionManager } from '@ohos.selectionInput.selectionManager';
 function createPanel(ctx: Context, info: PanelInfo): Promise<Panel>
 ```
 
-Creates a word selection panel. This API uses a promise to return the result. Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application.
+Creates a word selection panel. This API uses a promise to return the result.
+Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one
+[MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application.
 
 **Since:** 24
 

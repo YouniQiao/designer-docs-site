@@ -1,6 +1,6 @@
 # UIEventObserver
 
-用于监听UI事件的观察者。
+UI事件监听器。
 
 **起始版本：** 10
 
@@ -12,7 +12,7 @@
 once(type: 'toastShow', callback: Callback<UIElementInfo>): void
 ```
 
-订阅toast组件事件。该API使用回调返回结果。
+开始监听toast控件出现的事件，使用callback的形式返回结果。
 
 **起始版本：** 10
 
@@ -24,14 +24,14 @@ once(type: 'toastShow', callback: Callback<UIElementInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'toastShow' | 是 | 事件类型。固定值为**'toastShow'**。 |
-| callback | Callback&lt;UIElementInfo&gt; | 是 | 用于返回结果的回调。 |
+| type | 'toastShow' | 是 | 订阅的事件类型，取值为'toastShow'。 |
+| callback | Callback&lt;UIElementInfo&gt; | 是 | 事件发生时执行的回调函数。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -62,7 +62,7 @@ async function demo() {
 once(type: 'dialogShow', callback: Callback<UIElementInfo>): void
 ```
 
-订阅dialog组件事件。该API使用回调返回结果。
+开始监听dialog控件出现的事件，使用callback的形式返回结果。
 
 **起始版本：** 10
 
@@ -74,14 +74,14 @@ once(type: 'dialogShow', callback: Callback<UIElementInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'dialogShow' | 是 | 事件类型。固定值为**'dialogShow'**。 |
-| callback | Callback&lt;UIElementInfo&gt; | 是 | 用于返回结果的回调。 |
+| type | 'dialogShow' | 是 | 订阅的事件类型，取值为'dialogShow'。 |
+| callback | Callback&lt;UIElementInfo&gt; | 是 | 事件发生时执行的回调函数。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -108,7 +108,8 @@ async function demo() {
 once(type: 'windowChange', windowChangeType: WindowChangeType, options: WindowChangeOptions, callback: Callback<UIElementInfo>): void
 ```
 
-开始监听指定类型的窗口变更事件，支持扩展配置。该API在检测到指定窗口变更事件时触发回调。 该API仅能在[自由窗口](../../../../windowmanager/window-terminology.md#free-windows)模式下使用。
+开始监听指定类型的窗口变化事件，支持设置事件监听的扩展配置，监听到指定窗口变化事件时触发callback回调。仅支持
+[自由多窗模式](../../../../windowmanager/window-terminology.md#自由多窗模式)的窗口监听。
 
 **起始版本：** 22
 
@@ -120,17 +121,17 @@ once(type: 'windowChange', windowChangeType: WindowChangeType, options: WindowCh
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'windowChange' | 是 | 要订阅的事件类型，可为**windowChange**。窗口变更时触发该事件。 |
-| windowChangeType | WindowChangeType | 是 | 窗口变更事件类型。 |
-| options | WindowChangeOptions | 是 | 扩展配置，包括监听超时时间间隔和要监听的窗口的包名。 |
-| callback | Callback&lt;UIElementInfo&gt; | 是 | 事件发生时触发回调返回事件信息。 |
+| type | 'windowChange' | 是 | 订阅的事件类型，支持的事件为'windowChange'。当监听到窗口变化时，触发该事件。 |
+| windowChangeType | WindowChangeType | 是 | 窗口变化事件类型。 |
+| options | WindowChangeOptions | 是 | 窗口变化事件监听的扩展配置，包括监听超时时间和监听窗口对应包名。 |
+| callback | Callback&lt;UIElementInfo&gt; | 是 | 事件发生时执行的回调函数，返回事件的相关信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -163,7 +164,7 @@ async function demo() {
 once(type: 'componentEventOccur', componentEventType: ComponentEventType, options: ComponentEventOptions, callback: Callback<UIElementInfo>): void
 ```
 
-开始监听指定类型的组件操作事件，支持扩展配置。该API在检测到指定组件操作事件时触发回调。
+开始监听指定类型的控件操作事件，支持设置事件监听的扩展配置，监听到指定控件操作事件时触发callback回调。
 
 **起始版本：** 22
 
@@ -175,17 +176,17 @@ once(type: 'componentEventOccur', componentEventType: ComponentEventType, option
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'componentEventOccur' | 是 | 要订阅的事件类型，可为**componentEventOccur**。检测到组件操作时触发该事件。 |
-| componentEventType | ComponentEventType | 是 | 组件操作事件类型。 |
-| options | ComponentEventOptions | 是 | 扩展配置，包括监听超时时间间隔和要监听的组件的匹配条件。 |
-| callback | Callback&lt;UIElementInfo&gt; | 是 | 用于返回结果的回调。 |
+| type | 'componentEventOccur' | 是 | 订阅的事件类型，支持的事件为'componentEventOccur'。当监听到控件操作时，触发该事件。 |
+| componentEventType | ComponentEventType | 是 | 控件操作事件类型。 |
+| options | ComponentEventOptions | 是 | 控件操作事件监听的扩展配置，包括监听超时时间和监听控件匹配条件。 |
+| callback | Callback&lt;UIElementInfo&gt; | 是 | 事件发生时执行的回调函数。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 

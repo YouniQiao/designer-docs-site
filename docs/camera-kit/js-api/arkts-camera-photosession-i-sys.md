@@ -1,8 +1,10 @@
 # PhotoSession
 
-Implements a photo session, which sets the parameters of the normal photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md#session).
+Implements a photo session, which sets the parameters of the normal photo mode and saves all
+[CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
+instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
-**Inheritance/Implementation:** PhotoSession extends [Session](arkts-camera-session-i.md#session), [Flash](arkts-camera-flash-i.md#flash), [AutoExposure](arkts-camera-autoexposure-i.md#autoexposure), [WhiteBalance](arkts-camera-whitebalance-i.md#whitebalance), [Focus](arkts-camera-focus-i.md#focus), [Zoom](arkts-camera-zoom-i.md#zoom), [ColorManagement](arkts-camera-colormanagement-i.md#colormanagement), [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md#autodeviceswitch), [Macro](arkts-camera-macro-i-sys.md#macro), [ManualExposure](arkts-camera-manualexposure-i.md#manualexposure), [ManualFocus](arkts-camera-manualfocus-i-sys.md#manualfocus), [ManualIso](arkts-camera-manualiso-i-sys.md#manualiso), [OIS](arkts-camera-ois-i.md#ois), [Aperture](arkts-camera-aperture-i-sys.md#aperture), [Notification](arkts-camera-notification-i.md#notification)
+**Inheritance/Implementation:** PhotoSession extends [Session](arkts-camera-session-i.md), [Flash](arkts-camera-flash-i.md), [AutoExposure](arkts-camera-autoexposure-i.md), [WhiteBalance](arkts-camera-whitebalance-i.md), [Focus](arkts-camera-focus-i.md), [Zoom](arkts-camera-zoom-i.md), [ColorManagement](arkts-camera-colormanagement-i.md), [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md), [Macro](arkts-camera-macro-i-sys.md), [ManualExposure](arkts-camera-manualexposure-i.md), [ManualFocus](arkts-camera-manualfocus-i-sys.md), [ManualIso](arkts-camera-manualiso-i-sys.md), [OIS](arkts-camera-ois-i.md), [Aperture](arkts-camera-aperture-i-sys.md)
 
 **Since:** 11
 
@@ -11,7 +13,7 @@ Implements a photo session, which sets the parameters of the normal photo mode a
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getSessionConflictFunctions
@@ -231,7 +233,8 @@ Subscribes to macro state change events. This API uses an asynchronous callback 
 on(type: 'featureDetection', featureType: SceneFeatureType, callback: AsyncCallback<SceneFeatureDetectionResult>): void
 ```
 
-Subscribe to scene feature detection status change events. This API uses an asynchronous callback to return the result.
+Subscribe to scene feature detection status change events. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 12
 

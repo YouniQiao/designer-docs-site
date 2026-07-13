@@ -1,6 +1,14 @@
 # ParagraphStyle
 
-Describes the text paragraph style. Except the first paragraph, all paragraphs are formed using the escape character '\n'. The style of a paragraph is the one (if any) set for the first element or the paragraph style of the bound component. Before API version 26.0.0, if the first placeholder in a paragraph of the styled string is a [CustomSpan](arkts-arkui-customspan-c.md#customspan) or [ImageAttachment](arkts-arkui-imageattachment-c.md#imageattachment), the paragraph style set for that paragraph does not take effect. From API version 26.0.0, the paragraph style takes effect.
+Describes the text paragraph style.
+
+Except the first paragraph, all paragraphs are formed using the escape character '\n'.
+
+The style of a paragraph is the one (if any) set for the first element or the paragraph style of the bound component.
+
+Before API version 26.0.0, if the first placeholder in a paragraph of the styled string is a
+[CustomSpan](arkts-arkui-customspan-c.md) or [ImageAttachment](arkts-arkui-imageattachment-c.md), the paragraph style set for that
+paragraph does not take effect. From API version 26.0.0, the paragraph style takes effect.
 
 **Since:** 12
 
@@ -34,7 +42,9 @@ A constructor used to create a text paragraph style.
 readonly leadingMargin?: number | LeadingMarginPlaceholder
 ```
 
-Indent of the text paragraph. If the return value is of the number type, the unit is vp.
+Indent of the text paragraph.
+
+If the return value is of the number type, the unit is vp.
 
 **Type:** number | LeadingMarginPlaceholder
 
@@ -106,7 +116,9 @@ Display mode when the text is too long in the text paragraph.
 readonly paragraphSpacing?: number
 ```
 
-Paragraph spacing of the styled string text. Unit: vp
+Paragraph spacing of the styled string text.
+
+Unit: vp
 
 **Type:** number
 
@@ -124,7 +136,9 @@ Paragraph spacing of the styled string text. Unit: vp
 readonly shaderStyle?: ShaderStyle
 ```
 
-Text shader effect. **Since**: 26.0.0.
+Text shader effect.
+
+**Since**: 26.0.0.
 
 **Type:** ShaderStyle
 
@@ -142,7 +156,8 @@ Text shader effect. **Since**: 26.0.0.
 readonly tailIndents?: Array<number>
 ```
 
-Get the tail indentation of the StyledString. The unit is vp.
+Get the tail indentation of the StyledString.
+The unit is vp.
 
 **Type:** Array<number>
 
@@ -196,7 +211,9 @@ Text direction.
 readonly textIndent?: number
 ```
 
-First line indent of the text paragraph. Unit: VP.
+First line indent of the text paragraph.
+
+Unit: VP.
 
 **Type:** number
 
@@ -214,7 +231,13 @@ First line indent of the text paragraph. Unit: VP.
 readonly textVerticalAlign?: TextVerticalAlign
 ```
 
-Vertical alignment mode of the text paragraph. The effect of this attribute is noticeable only when the same font size is used in a paragraph and [lineHeight](TextAttribute#lineHeight) is set, or when different font sizes are used in a paragraph and the font sizes are mixed. The **SuperscriptStyle** in [TextStyle](arkts-arkui-textstyle-c.md#textstyle) takes effect only when the value of [TextVerticalAlign](arkts-arkui-textverticalalign-e.md#textverticalalign) is set to **TextVerticalAlign.BASELINE**. In other vertical alignment modes, the superscript and subscript texts are displayed in the same way as the normal text.
+Vertical alignment mode of the text paragraph.
+
+The effect of this attribute is noticeable only when the same font size is used in a paragraph and
+[lineHeight](TextAttribute#lineHeight) is set, or when different font sizes are used in a paragraph and the
+font sizes are mixed. The **SuperscriptStyle** in [TextStyle](arkts-arkui-textstyle-c.md) takes effect only when the value of
+[TextVerticalAlign](arkts-arkui-textverticalalign-e.md) is set to **TextVerticalAlign.BASELINE**. In other vertical alignment
+modes, the superscript and subscript texts are displayed in the same way as the normal text.
 
 **Type:** TextVerticalAlign
 

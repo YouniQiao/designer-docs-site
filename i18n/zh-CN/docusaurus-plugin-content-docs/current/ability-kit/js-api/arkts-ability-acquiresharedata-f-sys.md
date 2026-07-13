@@ -6,7 +6,9 @@
 function acquireShareData(missionId: number, callback: AsyncCallback<Record<string, Object>>): void
 ```
 
-系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的 [onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用 callback异步回调。
+系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的
+[onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用
+callback异步回调。
 
 **起始版本：** 10
 
@@ -26,7 +28,7 @@ function acquireShareData(missionId: number, callback: AsyncCallback<Record<stri
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 
@@ -36,7 +38,9 @@ function acquireShareData(missionId: number, callback: AsyncCallback<Record<stri
 function acquireShareData(missionId: number): Promise<Record<string, Object>>
 ```
 
-系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的 [onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用 Promise异步回调。
+系统弹框通过该接口发起原子化服务分享，触发目标UIAbility的
+[onShare](arkts-ability-uiability-c.md#onshare-1)回调并返回分享数据。使用
+Promise异步回调。
 
 **起始版本：** 10
 
@@ -61,6 +65,6 @@ function acquireShareData(missionId: number): Promise<Record<string, Object>>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 

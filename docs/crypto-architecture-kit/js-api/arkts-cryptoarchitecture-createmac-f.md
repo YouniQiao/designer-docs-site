@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## createMac
@@ -12,7 +12,11 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 function createMac(algName: string): Mac
 ```
 
-Creates a **Mac** instance for MAC operations. For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md) .
+Creates a **Mac** instance for MAC operations.
+
+For details about the supported specifications, see
+[MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md)
+.
 
 **Since:** 9
 
@@ -32,7 +36,7 @@ Creates a **Mac** instance for MAC operations. For details about the supported s
 
 | Type | Description |
 | --- | --- |
-| Mac | Returns the [Mac](arkts-cryptoarchitecture-mac-i.md#mac) instance created. |
+| Mac | Returns the [Mac](arkts-cryptoarchitecture-mac-i.md) instance created. |
 
 **Error codes:**
 
@@ -64,7 +68,11 @@ try {
 function createMac(macSpec: MacSpec): Mac
 ```
 
-Creates a **Mac** instance for message authentication code (MAC) operations. For details about the supported specifications, see [MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md) .
+Creates a **Mac** instance for message authentication code (MAC) operations.
+
+For details about the supported specifications, see
+[MAC Overview and Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-compute-mac-overview.md)
+.
 
 **Since:** 18
 
@@ -82,7 +90,7 @@ Creates a **Mac** instance for message authentication code (MAC) operations. For
 
 | Type | Description |
 | --- | --- |
-| Mac | [Mac](arkts-cryptoarchitecture-mac-i.md#mac) instance created. |
+| Mac | [Mac](arkts-cryptoarchitecture-mac-i.md) instance created. |
 
 **Error codes:**
 

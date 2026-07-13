@@ -1,6 +1,6 @@
 # Pkcs12CreationConfig
 
-表示创建P12文件的配置。
+表示创建P12的配置。
 
 **起始版本：** 21
 
@@ -62,7 +62,7 @@ keyEncParams?: PbesParams
 macDigestAlgorithm?: Pkcs12MacDigestAlgorithm
 ```
 
-表示P12 MAC的摘要算法。默认为SHA256。
+表示P12的MAC摘要算法。默认为SHA256。
 
 **类型：** Pkcs12MacDigestAlgorithm
 
@@ -80,7 +80,8 @@ macDigestAlgorithm?: Pkcs12MacDigestAlgorithm
 macIterations?: number
 ```
 
-表示P12 MAC的迭代次数。默认为2048。 取值应为正整数。
+表示P12的MAC的迭代次数。默认为2048。
+取值应为正整数。
 
 **类型：** number
 
@@ -98,7 +99,8 @@ macIterations?: number
 macSaltLen?: number
 ```
 
-表示P12 MAC的盐值长度。最小值为8，默认为16。 取值应为≥8的整数。
+表示P12的MAC的盐值长度。最小值为8，默认为16。
+取值应为≥8的整数。
 
 **类型：** number
 
@@ -116,7 +118,7 @@ macSaltLen?: number
 password: string
 ```
 
-表示P12文件的密码。最小长度为4。
+表示P12的密码。最小长度为4。
 
 **类型：** string
 

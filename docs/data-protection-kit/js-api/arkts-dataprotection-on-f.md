@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## on('openDLPFile')
@@ -12,7 +12,11 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function on(type: 'openDLPFile', listener: Callback<AccessedDLPFileInfo>): void
 ```
 
-Subscribes to a DLP file open event. After this API is successfully called, a callback notification is sent to the current application when the DLP file is opened. This API can be called only in non-DLP sandbox applications. You can subscribe to this event when your application needs to perform specific operations (such as logging and updating the UI) after a DLP file is opened.
+Subscribes to a DLP file open event. After this API is successfully called, a callback notification is sent to
+the current application when the DLP file is opened. This API can be called only in non-DLP sandbox applications.
+
+You can subscribe to this event when your application needs to perform specific operations (such as logging and
+updating the UI) after a DLP file is opened.
 
 **Since:** 10
 

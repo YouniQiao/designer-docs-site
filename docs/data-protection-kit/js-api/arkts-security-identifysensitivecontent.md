@@ -1,6 +1,8 @@
 # @ohos.security.identifySensitiveContent
 
-识别敏感内容通过输入的[Policy]{@link identifySensitiveContent.Policy}来检测指定文件中的敏感信息。 系统根据提供的[Policy]{@link identifySensitiveContent.Policy}策略（包括敏感标签、关键字集合和正则表达式）， 对文件内容进行关键字匹配和正则表达式匹配，返回匹配到的敏感内容结果。
+This module identifies sensitive information in a specified file based on the input [Policy](identifySensitiveContent.policy).
+The system matches the file content against the provided [Policy](identifySensitiveContent.policy) (including sensitive labels,
+keyword sets, and regular expressions) and returns the matched sensitive content.
 
 **Since:** 21
 
@@ -18,12 +20,12 @@ import { identifySensitiveContent } from '@kit.DataProtectionKit';
 
 | Name | Description |
 | --- | --- |
-| [scanFile](arkts-identifysensitivecontent-scanfile-f.md#scanFile-1) | 根据设置的策略，识别指定文件中的敏感内容，返回识别的结果数组，包含匹配的敏感标签、匹配内容及匹配数量。使用Promise异步回调。 |
+| [scanFile](arkts-dataprotection-scanfile-f.md#scanfile-1) | Identifies sensitive content in a specified file based on the configured policy and returns the identified result array,including the matched sensitivity labels, matched content, and number of matched items. This API uses a promise to return the result. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MatchResult](arkts-identifysensitivecontent-matchresult-i.md) | 表示敏感内容的识别结果。 |
-| [Policy](arkts-identifysensitivecontent-policy-i.md) | 定义敏感内容识别策略。 单个策略内，关键字与正则表达式为顺序组合关系，实行两级匹配：首先进行关键字匹配，若命中，则仅在该关键字匹配位置的前后50字节窗口内，进行正则表达式匹配。 多个Policy策略之间独立，扫描时会分别应用每个策略。 sensitiveLabel用于标记匹配结果，便于识别具体匹配的策略。 |
+| [MatchResult](arkts-dataprotection-matchresult-i.md) | Displays the identification result of sensitive content. |
+| [Policy](arkts-dataprotection-policy-i.md) | Defines the policy for sensitive content identification.In a single policy, keywords and regular expressions are combined in sequence, and two-level matching is performed. First, keyword matching is performed.If a keyword is matched, regular expression matching is performed within a scope of 100 bytes: from the position 50 bytes before the matched position ofthe keyword to that 50 bytes after the matched position.Multiple policies are independent of each other, and each policy is applied separately during scanning.sensitiveLabel is used to mark the matching result to identify the specific policy matched. |
 

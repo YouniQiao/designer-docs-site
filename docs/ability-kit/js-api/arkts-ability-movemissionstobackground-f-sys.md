@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { missionManager } from '@ohos.app.ability.missionManager';
+import { missionManager } from '@kit.AbilityKit';
 ```
 
 ## moveMissionsToBackground
@@ -12,7 +12,8 @@ import { missionManager } from '@ohos.app.ability.missionManager';
 function moveMissionsToBackground(missionIds: Array<number>, callback: AsyncCallback<Array<number>>): void
 ```
 
-Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the missions are switched. This API uses an asynchronous callback to return the result.
+Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the
+missions are switched. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -80,7 +81,8 @@ try {
 function moveMissionsToBackground(missionIds: Array<number>): Promise<Array<number>>
 ```
 
-Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the missions are switched. This API uses a promise to return the result.
+Switches a batch of missions to the background. The mission IDs returned are sorted by mission level when the
+missions are switched. This API uses a promise to return the result.
 
 **Since:** 10
 

@@ -1,6 +1,10 @@
 # @ohos.bundle.bundleManager
 
-本模块提供应用信息的查询能力，支持应用包信息[BundleInfo]{@link bundleManager/BundleInfo}、应用程序信息 [ApplicationInfo]{@link bundleManager/ApplicationInfo}、UIAbility组件信息 [AbilityInfo]{@link bundleManager/AbilityInfo}、ExtensionAbility组件信息 [ExtensionAbilityInfo]{@link bundleManager/ExtensionAbilityInfo:ExtensionAbilityInfo}等信息的查询。
+The module provides APIs for obtaining application information, including
+[bundle information](bundleManager/BundleInfo),
+[application information](bundleManager/ApplicationInfo),
+[ability information](bundleManager/AbilityInfo) (information about a UIAbility), and
+[ExtensionAbility information](bundleManager/ExtensionAbilityInfo:ExtensionAbilityInfo).
 
 **Since:** 9
 
@@ -18,214 +22,219 @@ import { bundleManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [canOpenLink](arkts-bundlemanager-canopenlink-f.md#canOpenLink-1) | 根据给定的链接判断目标应用是否可访问，链接中的scheme需要在[module.json5文件](docroot://quick-start/module-configuration-file.md)的querySchemes字段 下配置。 |
-| <!--DelRow-->[cleanAllBundleCache](arkts-bundlemanager-cleanallbundlecache-f-sys.md#cleanAllBundleCache-1) | 清理全局缓存。使用Promise异步回调。 |
-| <!--DelRow-->[cleanBundleCacheFiles](arkts-bundlemanager-cleanbundlecachefiles-f-sys.md#cleanBundleCacheFiles-1) | 根据给定的bundleName清理BundleCache。使用callback异步回调。 调用方清理自身缓存数据时不需要权限。 |
-| <!--DelRow-->[cleanBundleCacheFiles](arkts-bundlemanager-cleanbundlecachefiles-f-sys.md#cleanBundleCacheFiles-2) | 根据给定的bundleName清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。 |
-| <!--DelRow-->[cleanBundleCacheFiles](arkts-bundlemanager-cleanbundlecachefiles-f-sys.md#cleanBundleCacheFiles-3) | 根据给定的bundleName和appIndex清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。 |
-| [cleanBundleCacheFilesForSelf](arkts-bundlemanager-cleanbundlecachefilesforself-f.md#cleanBundleCacheFilesForSelf-1) | 清理应用自身的缓存。使用Promise异步回调。 |
-| <!--DelRow-->[deleteAbc](arkts-bundlemanager-deleteabc-f-sys.md#deleteAbc-1) | 根据给定的abcPath删除.abc文件。使用Promise异步回调。 |
-| <!--DelRow-->[disableDynamicIcon](arkts-bundlemanager-disabledynamicicon-f-sys.md#disableDynamicIcon-1) | 根据给定的bundleName禁用动态图标。使用Promise异步回调。 |
-| <!--DelRow-->[disableDynamicIcon](arkts-bundlemanager-disabledynamicicon-f-sys.md#disableDynamicIcon-2) | 根据给定的bundleName和option禁用动态图标。使用Promise异步回调。 禁用当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。 禁用其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。 |
-| <!--DelRow-->[enableDynamicIcon](arkts-bundlemanager-enabledynamicicon-f-sys.md#enableDynamicIcon-1) | 根据给定的bundleName、moduleName使能动态图标。使用Promise异步回调。 |
-| <!--DelRow-->[enableDynamicIcon](arkts-bundlemanager-enabledynamicicon-f-sys.md#enableDynamicIcon-2) | 根据给定的bundleName、moduleName和option使能动态图标。使用Promise异步回调。 使能当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。 使能其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。 |
-| <!--DelRow-->[getAbilityIcon](arkts-bundlemanager-getabilityicon-f-sys.md#getAbilityIcon-1) | 通过bundleName、moduleName和abilityName获取对应Icon的[PixelMap]{@link @ohos.multimedia.image:image}，使用callback异步回调。 获取调用方信息时不需要权限。 > **说明：** > > 从API version 9开始支持，从API version 10开始废弃，建议使用 > [getMediaContent]{@link @ohos.resourceManager:resourceManager.ResourceManager.getMediaContent(resId: long, callback: _AsyncCallback<Uint8Array>)} > 替代。 |
-| <!--DelRow-->[getAbilityIcon](arkts-bundlemanager-getabilityicon-f-sys.md#getAbilityIcon-2) | 通过bundleName、moduleName和abilityName获取对应Icon的[PixelMap]{@link @ohos.multimedia.image:image}，使用Promise异步回调。 获取调用方信息时不需要权限。 > **说明：** > > 从API version 9开始支持，从API version 10开始废弃，建议使用 > [getMediaContent]{@link @ohos.resourceManager:resourceManager.ResourceManager.getMediaContent(resId: long, callback: _AsyncCallback<Uint8Array>)} > 替代。 |
-| [getAbilityInfo](arkts-bundlemanager-getabilityinfo-f.md#getAbilityInfo-1) | 获取指定资源标识符和组件信息标志对应的Ability信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAbilityLabel](arkts-bundlemanager-getabilitylabel-f-sys.md#getAbilityLabel-1) | 获取指定bundleName、moduleName和abilityName的label。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAbilityLabel](arkts-bundlemanager-getabilitylabel-f-sys.md#getAbilityLabel-2) | 获取指定bundleName、moduleName和abilityName的label。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAbilityLabelSync](arkts-bundlemanager-getabilitylabelsync-f-sys.md#getAbilityLabelSync-1) | 以同步的方法获取指定bundleName、moduleName和abilityName的label。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAdditionalInfo](arkts-bundlemanager-getadditionalinfo-f-sys.md#getAdditionalInfo-1) | 以同步接口查询指定bundleName的额外信息。该返回值是在调用install接口时传入的[InstallParam]{@link @ohos.bundle.installer:installer.InstallParam}中的 additionalInfo字段。 |
-| <!--DelRow-->[getAllAppCloneBundleInfo](arkts-bundlemanager-getallappclonebundleinfo-f-sys.md#getAllAppCloneBundleInfo-1) | 根据bundleName、[bundleFlags]{@link @ohos.bundle.bundleManager:bundleManager.BundleFlag}以及用户ID查询主应用和分身应用的BundleInfo列表。 使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAllAppProvisionInfo](arkts-bundlemanager-getallappprovisioninfo-f-sys.md#getAllAppProvisionInfo-1) | 根据userId获取指定用户下所有应用的[Provision]{@link bundleManager/AppProvisionInfo}配置文件信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAllApplicationInfo](arkts-bundlemanager-getallapplicationinfo-f-sys.md#getAllApplicationInfo-1) | 根据给定的appFlags获取系统中所有的ApplicationInfo。使用callback异步回调。 |
-| <!--DelRow-->[getAllApplicationInfo](arkts-bundlemanager-getallapplicationinfo-f-sys.md#getAllApplicationInfo-2) | 根据给定的appFlags和userId获取系统中所有的ApplicationInfo。使用callback异步回调。 |
-| <!--DelRow-->[getAllApplicationInfo](arkts-bundlemanager-getallapplicationinfo-f-sys.md#getAllApplicationInfo-3) | 根据给定的appFlags和userId获取系统中所有的ApplicationInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getAllBundleCacheSize](arkts-bundlemanager-getallbundlecachesize-f-sys.md#getAllBundleCacheSize-1) | 获取全局缓存大小，单位：字节。使用Promise异步回调。 有程序运行时的应用的缓存、或者在[应用配置指南](docroot://../device-dev/subsystems/subsys-app-privilege-config-guide.md)中已配置“ AllowAppDataNotCleared”特权的应用的缓存，无法被获取。 |
-| <!--DelRow-->[getAllBundleInfo](arkts-bundlemanager-getallbundleinfo-f-sys.md#getAllBundleInfo-1) | 根据给定的bundleFlags获取系统中所有的BundleInfo。使用callback异步回调。 |
-| <!--DelRow-->[getAllBundleInfo](arkts-bundlemanager-getallbundleinfo-f-sys.md#getAllBundleInfo-2) | 根据给定的bundleFlags和userId获取系统中所有的BundleInfo。使用callback异步回调。 |
-| <!--DelRow-->[getAllBundleInfo](arkts-bundlemanager-getallbundleinfo-f-sys.md#getAllBundleInfo-3) | 根据给定的bundleFlags和userId获取系统中所有的BundleInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getAllBundleInfoByDeveloperId](arkts-bundlemanager-getallbundleinfobydeveloperid-f-sys.md#getAllBundleInfoByDeveloperId-1) | 根据给定的developerId获取当前用户下的包信息列表。 |
-| <!--DelRow-->[getAllBundleInstallInfo](arkts-bundlemanager-getallbundleinstallinfo-f-sys.md#getAllBundleInstallInfo-1) | 获取系统内所有应用的扩展安装信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAllBundleInstallInfo](arkts-bundlemanager-getallbundleinstallinfo-f-sys.md#getAllBundleInstallInfo-2) | 获取系统内所有应用的扩展安装信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAllDynamicIconInfo](arkts-bundlemanager-getalldynamiciconinfo-f-sys.md#getAllDynamicIconInfo-1) | 查询指定用户下所有应用和所有分身的动态图标信息。使用Promise异步回调。 查询当前用户下所有应用和所有分身的动态图标信息时需要申请权限ohos.permission.GET_BUNDLE_INFO_PRIVILEGED。 查询其他用户或者所有用户下所有应用和所有分身的动态图标信息时需要申请权限ohos.permission.GET_BUNDLE_INFO_PRIVILEGED 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。 |
-| <!--DelRow-->[getAllNewPreinstalledApplicationInfo](arkts-bundlemanager-getallnewpreinstalledapplicationinfo-f-sys.md#getAllNewPreinstalledApplicationInfo-1) | 获取设备OTA升级期间当前用户下新增的所有预置应用信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAllPluginInfo](arkts-bundlemanager-getallplugininfo-f-sys.md#getAllPluginInfo-1) | 根据给定的hostBundleName和userId获取所有的PluginBundleInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getAllPreinstalledApplicationInfo](arkts-bundlemanager-getallpreinstalledapplicationinfo-f-sys.md#getAllPreinstalledApplicationInfo-1) | 获取所有预置应用信息。使用Promise异步回调。 |
-| <!--DelRow-->[getAllSharedBundleInfo](arkts-bundlemanager-getallsharedbundleinfo-f-sys.md#getAllSharedBundleInfo-1) | 获取所有的共享包信息。使用callback异步回调。 |
-| <!--DelRow-->[getAllSharedBundleInfo](arkts-bundlemanager-getallsharedbundleinfo-f-sys.md#getAllSharedBundleInfo-2) | 获取所有的共享包信息。使用Promise异步回调。 |
-| [getAlternateIcons](arkts-bundlemanager-getalternateicons-f.md#getAlternateIcons-1) | 查询当前应用在app.json5中[alternateIcons标签](docroot://quick-start/app-configuration-file.md#alternateicons标签)配置的备用图标信息。使用 Promise异步回调。 |
-| <!--DelRow-->[getAppCloneBundleInfo](arkts-bundlemanager-getappclonebundleinfo-f-sys.md#getAppCloneBundleInfo-1) | 根据bundleName、分身索引、[bundleFlags]{@link @ohos.bundle.bundleManager:bundleManager.BundleFlag}以及用户ID查询主应用或分身应用的 BundleInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| [getAppCloneIdentity](arkts-bundlemanager-getappcloneidentity-f.md#getAppCloneIdentity-1) | 根据uid查询分身应用的包名和分身索引。使用Promise异步回调。 |
-| <!--DelRow-->[getAppCloneIdentityBySandboxDataDir](arkts-bundlemanager-getappcloneidentitybysandboxdatadir-f-sys.md#getAppCloneIdentityBySandboxDataDir-1) | 根据应用的沙箱目录名称获取应用的身份信息，包括应用包名和分身索引信息。 |
-| <!--DelRow-->[getAppProvisionInfo](arkts-bundlemanager-getappprovisioninfo-f-sys.md#getAppProvisionInfo-1) | 获取指定bundleName的provision配置文件信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAppProvisionInfo](arkts-bundlemanager-getappprovisioninfo-f-sys.md#getAppProvisionInfo-2) | 获取指定bundleName和userId的provision配置文件信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAppProvisionInfo](arkts-bundlemanager-getappprovisioninfo-f-sys.md#getAppProvisionInfo-3) | 根据bundleName和userId获取应用的provision配置文件信息。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getAppProvisionInfoSync](arkts-bundlemanager-getappprovisioninfosync-f-sys.md#getAppProvisionInfoSync-1) | 以同步方法根据bundleName和userId获取应用的provision配置文件信息并返回结果。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getApplicationInfo](arkts-bundlemanager-getapplicationinfo-f-sys.md#getApplicationInfo-1) | 根据给定的bundleName和appFlags获取ApplicationInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getApplicationInfo](arkts-bundlemanager-getapplicationinfo-f-sys.md#getApplicationInfo-2) | 根据给定的bundleName、appFlags和userId获取ApplicationInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getApplicationInfo](arkts-bundlemanager-getapplicationinfo-f-sys.md#getApplicationInfo-3) | 根据给定的bundleName、appFlags和userId获取ApplicationInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getApplicationInfoSync](arkts-bundlemanager-getapplicationinfosync-f-sys.md#getApplicationInfoSync-1) | 以同步方法根据给定的bundleName、applicationFlags和userId获取ApplicationInfo。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getApplicationInfoSync](arkts-bundlemanager-getapplicationinfosync-f-sys.md#getApplicationInfoSync-2) | 以同步方法根据给定的bundleName、applicationFlags获取ApplicationInfo。 获取调用方自身的信息时不需要权限。 |
-| [getApplicationLabel](arkts-bundlemanager-getapplicationlabel-f.md#getApplicationLabel-1) | 获取指定包名和分身索引的应用名称。使用Promise异步回调。 |
-| <!--DelRow-->[getBundleArchiveInfo](arkts-bundlemanager-getbundlearchiveinfo-f-sys.md#getBundleArchiveInfo-1) | 根据给定的hapFilePath和bundleFlags获取BundleInfo。使用callback异步回调。 |
-| <!--DelRow-->[getBundleArchiveInfo](arkts-bundlemanager-getbundlearchiveinfo-f-sys.md#getBundleArchiveInfo-2) | 根据给定的hapFilePath和bundleFlags获取BundleInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getBundleArchiveInfoSync](arkts-bundlemanager-getbundlearchiveinfosync-f-sys.md#getBundleArchiveInfoSync-1) | 以同步方法根据给定的hapFilePath和bundleFlags获取BundleInfo对象。 |
-| [getBundleInfo](arkts-bundlemanager-getbundleinfo-f.md#getBundleInfo-1) | 根据给定的bundleName和bundleFlags获取BundleInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| [getBundleInfo](arkts-bundlemanager-getbundleinfo-f.md#getBundleInfo-2) | 根据给定的bundleName、bundleFlags和userId获取[BundleInfo]{@link bundleManager/BundleInfo}。使用callback异步回调。 获取调用方自身信息时不需要权限。 |
-| [getBundleInfo](arkts-bundlemanager-getbundleinfo-f.md#getBundleInfo-3) | 根据给定的bundleName、bundleFlags和userId获取BundleInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| [getBundleInfoForSelf](arkts-bundlemanager-getbundleinfoforself-f.md#getBundleInfoForSelf-1) | 根据给定的bundleFlags获取当前应用的BundleInfo。使用Promise异步回调。 |
-| [getBundleInfoForSelf](arkts-bundlemanager-getbundleinfoforself-f.md#getBundleInfoForSelf-2) | 根据给定的bundleFlags获取当前应用的BundleInfo。使用callback异步回调。 |
-| [getBundleInfoForSelfSync](arkts-bundlemanager-getbundleinfoforselfsync-f.md#getBundleInfoForSelfSync-1) | 以同步方法根据给定的bundleFlags获取当前应用的BundleInfo。 |
-| [getBundleInfoSync](arkts-bundlemanager-getbundleinfosync-f.md#getBundleInfoSync-1) | 以同步方法根据给定的bundleName、bundleFlags和userId获取BundleInfo。 获取调用方自身的信息时不需要权限。 |
-| [getBundleInfoSync](arkts-bundlemanager-getbundleinfosync-f.md#getBundleInfoSync-2) | 以同步方法根据给定的bundleName、bundleFlags获取调用方所在用户下的BundleInfo。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getBundleInstallStatus](arkts-bundlemanager-getbundleinstallstatus-f-sys.md#getBundleInstallStatus-1) | 查询当前用户下指定应用的安装状态。 |
-| [getBundleNameByUid](arkts-bundlemanager-getbundlenamebyuid-f.md#getBundleNameByUid-1) | 根据给定的uid获取对应应用的bundleName。使用callback异步回调。 |
-| [getBundleNameByUid](arkts-bundlemanager-getbundlenamebyuid-f.md#getBundleNameByUid-2) | 根据给定的uid获取对应应用的bundleName。使用Promise异步回调。 |
-| [getBundleNameByUidSync](arkts-bundlemanager-getbundlenamebyuidsync-f.md#getBundleNameByUidSync-1) | 以同步方法根据给定的uid获取对应应用的bundleName。 |
-| <!--DelRow-->[getDeveloperIds](arkts-bundlemanager-getdeveloperids-f-sys.md#getDeveloperIds-1) | 根据给定的应用[appDistributionType]{@link bundleManager.AppDistributionType}获取当前用户下的所有开发者ID列表。 |
-| <!--DelRow-->[getDynamicIcon](arkts-bundlemanager-getdynamicicon-f-sys.md#getDynamicIcon-1) | 根据给定的bundleName获得动态图标对应的moduleName。使用Promise异步回调。 |
-| <!--DelRow-->[getDynamicIconInfo](arkts-bundlemanager-getdynamiciconinfo-f-sys.md#getDynamicIconInfo-1) | 根据指定的bundleName获取所有用户和所有分身下的动态图标信息。使用Promise异步回调。 |
-| <!--DelRow-->[getExtResource](arkts-bundlemanager-getextresource-f-sys.md#getExtResource-1) | 根据给定的bundleName获得扩展资源对应的moduleNames。使用Promise异步回调。 |
-| [getInstalledBundleList](arkts-bundlemanager-getinstalledbundlelist-f.md#getInstalledBundleList-1) | 根据给定的bundleFlags获取系统中所有的BundleInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getJsonProfile](arkts-bundlemanager-getjsonprofile-f-sys.md#getJsonProfile-1) | 以同步的方法根据给定的profileType、bundleName和moduleName查询相应配置文件的JSON字符串。 获取调用方自己的配置文件时不需要权限。 |
-| [getLaunchWant](arkts-bundlemanager-getlaunchwant-f.md#getLaunchWant-1) | 获取本应用[入口UIAbility](docroot://quick-start/application-package-glossary.md#uiability)的Want参数。 |
-| <!--DelRow-->[getLaunchWantForBundle](arkts-bundlemanager-getlaunchwantforbundle-f-sys.md#getLaunchWantForBundle-1) | 根据给定的bundleName和userId获取用于启动应用程序的Want参数。使用callback异步回调。 |
-| <!--DelRow-->[getLaunchWantForBundle](arkts-bundlemanager-getlaunchwantforbundle-f-sys.md#getLaunchWantForBundle-2) | 根据给定的bundleName获取用于启动应用程序的Want参数。使用callback异步回调。 |
-| <!--DelRow-->[getLaunchWantForBundle](arkts-bundlemanager-getlaunchwantforbundle-f-sys.md#getLaunchWantForBundle-3) | 根据给定的bundleName和userId获取用于启动应用程序的Want参数。使用Promise异步回调。 |
-| <!--DelRow-->[getLaunchWantForBundleSync](arkts-bundlemanager-getlaunchwantforbundlesync-f-sys.md#getLaunchWantForBundleSync-1) | 根据给定的包名和用户ID，获取用于启动应用程序的Want参数。 |
-| <!--DelRow-->[getPermissionDef](arkts-bundlemanager-getpermissiondef-f-sys.md#getPermissionDef-1) | 根据给定的permissionName获取权限定义结构体PermissionDef信息。使用callback异步回调。 |
-| <!--DelRow-->[getPermissionDef](arkts-bundlemanager-getpermissiondef-f-sys.md#getPermissionDef-2) | 根据给定的permissionName获取权限定义结构体PermissionDef信息。使用Promise异步回调。 |
-| <!--DelRow-->[getPermissionDefSync](arkts-bundlemanager-getpermissiondefsync-f-sys.md#getPermissionDefSync-1) | 以同步方法根据给定的permissionName获取权限定义结构体PermissionDef信息。 |
-| [getPluginBundlePathForSelf](arkts-bundlemanager-getpluginbundlepathforself-f.md#getPluginBundlePathForSelf-1) | 获取指定插件在当前[应用沙箱](docroot://file-management/app-sandbox-directory.md)内的安装路径。 |
-| [getProfileByAbility](arkts-bundlemanager-getprofilebyability-f.md#getProfileByAbility-1) | 根据给定的moduleName、abilityName和metadataName（module.json5中 [abilities标签](docroot://quick-start/module-configuration-file.md#abilities标签)下的metadata标签的name）获取自身相应配置文件的json格式字符串 。使用callback异步回调。 > 说明： > > 如果配置文件信息采用了资源引用格式，则返回值将保持资源引用格式（例如 $string:res_id），开发者可以通过[资源管理]{@link @ohos.resourceManager:resourceManager}的相 > 关接口，来获取引用的资源。 |
-| [getProfileByAbility](arkts-bundlemanager-getprofilebyability-f.md#getProfileByAbility-2) | 根据给定的moduleName、abilityName和metadataName（module.json5中 [abilities标签](docroot://quick-start/module-configuration-file.md#abilities标签)下的metadata标签的name）获取自身相应配置文件的json格式字符串 。使用Promise异步回调。 > 说明： > > 如果配置文件信息采用了资源引用格式，则返回值将保持资源引用格式（例如 $string:res_id），开发者可以通过[资源管理]{@link @ohos.resourceManager:resourceManager}的相 > 关接口，来获取引用的资源。 |
-| [getProfileByAbilitySync](arkts-bundlemanager-getprofilebyabilitysync-f.md#getProfileByAbilitySync-1) | 以同步方法根据给定的moduleName、abilityName和metadataName（module.json5中 [metadata标签](docroot://quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串，返回对象为string数 组。 |
-| [getProfileByExtensionAbility](arkts-bundlemanager-getprofilebyextensionability-f.md#getProfileByExtensionAbility-1) | 根据给定的moduleName、extensionAbilityName和metadataName（module.json5中 [metadata标签](docroot://quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用callback异步 回调。 |
-| [getProfileByExtensionAbility](arkts-bundlemanager-getprofilebyextensionability-f.md#getProfileByExtensionAbility-2) | 根据给定的moduleName、extensionAbilityName和metadataName（module.json5中 [metadata标签](docroot://quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串。使用Promise异步回 调。 |
-| [getProfileByExtensionAbilitySync](arkts-bundlemanager-getprofilebyextensionabilitysync-f.md#getProfileByExtensionAbilitySync-1) | 以同步方法根据给定的moduleName、extensionAbilityName和metadataName（module.json5中 [metadata标签](docroot://quick-start/module-configuration-file.md#metadata标签)下的name）获取自身相应配置文件的json格式字符串，返回对象为string数 组。 |
-| <!--DelRow-->[getRecoverableApplicationInfo](arkts-bundlemanager-getrecoverableapplicationinfo-f-sys.md#getRecoverableApplicationInfo-1) | 获取所有可恢复的预置应用信息。使用callback异步回调。 |
-| <!--DelRow-->[getRecoverableApplicationInfo](arkts-bundlemanager-getrecoverableapplicationinfo-f-sys.md#getRecoverableApplicationInfo-2) | 获取所有可恢复的预置应用信息。使用Promise异步回调。 |
-| <!--DelRow-->[getSandboxDataDir](arkts-bundlemanager-getsandboxdatadir-f-sys.md#getSandboxDataDir-1) | 根据应用包名和分身索引获取对应的沙箱目录。 |
-| <!--DelRow-->[getSharedBundleInfo](arkts-bundlemanager-getsharedbundleinfo-f-sys.md#getSharedBundleInfo-1) | 获取指定的共享包信息。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[getSharedBundleInfo](arkts-bundlemanager-getsharedbundleinfo-f-sys.md#getSharedBundleInfo-2) | 获取指定的共享包信息。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| [getSignatureInfo](arkts-bundlemanager-getsignatureinfo-f.md#getSignatureInfo-1) | 根据给定的uid获取对应应用的[签名信息]{@link bundleManager/BundleInfo:SignatureInfo}。 |
-| <!--DelRow-->[getSpecifiedDistributionType](arkts-bundlemanager-getspecifieddistributiontype-f-sys.md#getSpecifiedDistributionType-1) | 以同步的方法查询指定bundleName的[HarmonyAppProvision配置文件说明](docroot://security/app-provision-structure.md)，该返回值是在调用install接口时传 入的[InstallParam]{@link @ohos.bundle.installer:installer.InstallParam}中的specifiedDistributionType字段。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[isAbilityEnabled](arkts-bundlemanager-isabilityenabled-f-sys.md#isAbilityEnabled-1) | 获取应用或指定分身应用组件的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[isAbilityEnabled](arkts-bundlemanager-isabilityenabled-f-sys.md#isAbilityEnabled-2) | 获取指定组件的禁用或使能状态。使用callback异步回调。 |
-| <!--DelRow-->[isAbilityEnabled](arkts-bundlemanager-isabilityenabled-f-sys.md#isAbilityEnabled-3) | 获取指定组件的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[isAbilityEnabledSync](arkts-bundlemanager-isabilityenabledsync-f-sys.md#isAbilityEnabledSync-1) | 以同步方法获取指定组件的禁用或使能状态。 |
-| <!--DelRow-->[isApplicationDisableForbidden](arkts-bundlemanager-isapplicationdisableforbidden-f-sys.md#isApplicationDisableForbidden-1) | 以同步方法查询指定用户下指定应用或分身应用是否被设置禁止停用。 |
-| <!--DelRow-->[isApplicationEnabled](arkts-bundlemanager-isapplicationenabled-f-sys.md#isApplicationEnabled-1) | 获取指定应用或分身应用的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[isApplicationEnabled](arkts-bundlemanager-isapplicationenabled-f-sys.md#isApplicationEnabled-2) | 获取指定应用的禁用或使能状态。使用callback异步回调。 |
-| <!--DelRow-->[isApplicationEnabled](arkts-bundlemanager-isapplicationenabled-f-sys.md#isApplicationEnabled-3) | 获取指定应用的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[isApplicationEnabledSync](arkts-bundlemanager-isapplicationenabledsync-f-sys.md#isApplicationEnabledSync-1) | 以同步方法获取指定应用的禁用或使能状态。 |
-| <!--DelRow-->[migrateData](arkts-bundlemanager-migratedata-f-sys.md#migrateData-1) | 拷贝文件，将文件从源路径拷贝到目标路径。使用Promise异步回调。 |
-| <!--DelRow-->[queryAbilityInfo](arkts-bundlemanager-queryabilityinfo-f-sys.md#queryAbilityInfo-1) | 根据给定的want和abilityFlags获取一个或多个AbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryAbilityInfo](arkts-bundlemanager-queryabilityinfo-f-sys.md#queryAbilityInfo-2) | 根据给定的want、abilityFlags和userId获取多个AbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryAbilityInfo](arkts-bundlemanager-queryabilityinfo-f-sys.md#queryAbilityInfo-3) | 根据给定的want、abilityFlags和userId获取一个或多个AbilityInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryAbilityInfo](arkts-bundlemanager-queryabilityinfo-f-sys.md#queryAbilityInfo-4) | 根据给定的want列表、abilityFlags和userId获取一个或多个AbilityInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryAbilityInfoSync](arkts-bundlemanager-queryabilityinfosync-f-sys.md#queryAbilityInfoSync-1) | 以同步方法根据给定的want、abilityFlags和userId获取一个或多个AbilityInfo。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfo](arkts-bundlemanager-queryextensionabilityinfo-f-sys.md#queryExtensionAbilityInfo-1) | 根据给定的want、extensionAbilityType和extensionAbilityFlags获取一个或多个ExtensionAbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfo](arkts-bundlemanager-queryextensionabilityinfo-f-sys.md#queryExtensionAbilityInfo-2) | 根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取一个或多个ExtensionAbilityInfo。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfo](arkts-bundlemanager-queryextensionabilityinfo-f-sys.md#queryExtensionAbilityInfo-3) | 根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfoSync](arkts-bundlemanager-queryextensionabilityinfosync-f-sys.md#queryExtensionAbilityInfoSync-1) | 以同步方法根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfoSync](arkts-bundlemanager-queryextensionabilityinfosync-f-sys.md#queryExtensionAbilityInfoSync-2) | 根据给定的want、extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo，使用同步方式返回结果。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[queryExtensionAbilityInfoSync](arkts-bundlemanager-queryextensionabilityinfosync-f-sys.md#queryExtensionAbilityInfoSync-3) | 根据给定的extensionAbilityType、extensionAbilityFlags和userId获取ExtensionAbilityInfo。 获取调用方自身的信息时不需要权限。 |
-| <!--DelRow-->[recoverBackupBundleData](arkts-bundlemanager-recoverbackupbundledata-f-sys.md#recoverBackupBundleData-1) | 恢复指定用户下指定应用或分身应用的备份数据。使用Promise异步回调。 |
-| <!--DelRow-->[removeBackupBundleData](arkts-bundlemanager-removebackupbundledata-f-sys.md#removeBackupBundleData-1) | 删除指定用户下指定应用或分身应用的备份数据。使用Promise异步回调。 |
-| <!--DelRow-->[setAbilityEnabled](arkts-bundlemanager-setabilityenabled-f-sys.md#setAbilityEnabled-1) | 设置指定应用或分身应用组件的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setAbilityEnabled](arkts-bundlemanager-setabilityenabled-f-sys.md#setAbilityEnabled-2) | 设置指定组件的禁用或使能状态。使用callback异步回调。 |
-| <!--DelRow-->[setAbilityEnabled](arkts-bundlemanager-setabilityenabled-f-sys.md#setAbilityEnabled-3) | 设置指定组件的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setAbilityEnabledSync](arkts-bundlemanager-setabilityenabledsync-f-sys.md#setAbilityEnabledSync-1) | 以同步方法设置指定组件的禁用或使能状态。 |
-| <!--DelRow-->[setAbilityFileTypesForSelf](arkts-bundlemanager-setabilityfiletypesforself-f-sys.md#setAbilityFileTypesForSelf-1) | 设置当前应用支持打开的文件类型。 |
-| <!--DelRow-->[setAdditionalInfo](arkts-bundlemanager-setadditionalinfo-f-sys.md#setAdditionalInfo-1) | 设置指定应用的额外信息。此接口仅供应用市场调用。 |
-| [setAlternateIcon](arkts-bundlemanager-setalternateicon-f.md#setAlternateIcon-1) | 根据给定的备用图标名称设置调用方自身的备用图标。使用Promise异步回调。 |
-| <!--DelRow-->[setApplicationEnabled](arkts-bundlemanager-setapplicationenabled-f-sys.md#setApplicationEnabled-1) | 设置指定应用或分身应用的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setApplicationEnabled](arkts-bundlemanager-setapplicationenabled-f-sys.md#setApplicationEnabled-2) | 设置应用程序是启用还是禁用，并控制在禁用时是否杀死进程。 |
-| <!--DelRow-->[setApplicationEnabled](arkts-bundlemanager-setapplicationenabled-f-sys.md#setApplicationEnabled-3) | 设置指定应用的禁用或使能状态。使用callback异步回调。 |
-| <!--DelRow-->[setApplicationEnabled](arkts-bundlemanager-setapplicationenabled-f-sys.md#setApplicationEnabled-4) | 设置指定应用的禁用或使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setApplicationEnabledSync](arkts-bundlemanager-setapplicationenabledsync-f-sys.md#setApplicationEnabledSync-1) | 以同步方法设置指定应用的禁用或使能状态。 |
-| <!--DelRow-->[setApplicationEnabledSync](arkts-bundlemanager-setapplicationenabledsync-f-sys.md#setApplicationEnabledSync-2) | 设置应用程序是启用还是禁用，并控制在禁用时是否杀死进程。 |
-| <!--DelRow-->[switchUninstallState](arkts-bundlemanager-switchuninstallstate-f-sys.md#switchUninstallState-1) | 切换指定应用的可卸载状态，此接口与EDM应用拦截管控机制不互相影响。 |
-| <!--DelRow-->[verifyAbc](arkts-bundlemanager-verifyabc-f-sys.md#verifyAbc-1) | 根据给定的abcPaths和deleteOriginalFiles校验.abc文件。使用callback异步回调。 |
-| <!--DelRow-->[verifyAbc](arkts-bundlemanager-verifyabc-f-sys.md#verifyAbc-2) | 根据给定的abcPaths和deleteOriginalFiles校验.abc文件。使用Promise异步回调。 |
+| [canOpenLink](arkts-ability-canopenlink-f.md#canopenlink-1) | Checks whether the target application can be accessed based on the provided link. The scheme specified in the linkmust be configured in the **querySchemes** field of the[module.json5](../../../../quick-start/module-configuration-file.md) file. |
+| [cleanBundleCacheFilesForSelf](arkts-ability-cleanbundlecachefilesforself-f.md#cleanbundlecachefilesforself-1) | Clears the application cache. This API uses a promise to return the result. |
+| [getAbilityInfo](arkts-ability-getabilityinfo-f.md#getabilityinfo-1) | Obtains the ability information based on the given resource identifier and ability flag. This API uses a promise toreturn the result. |
+| [getAlternateIcons](arkts-ability-getalternateicons-f.md#getalternateicons-1) | Queries the alternate icon information configured in the alternateIcons in the app.json5of the current application. This API uses a promise to return the result. |
+| [getAppCloneIdentity](arkts-ability-getappcloneidentity-f.md#getappcloneidentity-1) | Obtains the bundle name and clone index of a cloned application based on the given UID. This API uses a promise toreturn the result. |
+| [getApplicationLabel](arkts-ability-getapplicationlabel-f.md#getapplicationlabel-1) | Obtains the name of an application with the specified package name and clone index.This API uses a promise to return the result. |
+| [getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-1) | Obtains the bundle information based on the given bundle name and bundle flags. This API uses an asynchronouscallback to return the result.No permission is required for obtaining the caller's own information. |
+| [getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-2) | Obtains the [BundleInfo](bundleManager/BundleInfo) based on the given bundle name, bundle flags, and userID. This API uses an asynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-3) | Obtains the bundle information based on the given bundle name, bundle flags, and user ID. This API uses a promiseto return the result.No permission is required for obtaining the caller's own information. |
+| [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) | Obtains the bundle information of the current application based on the given bundle flags. This API uses a promiseto return the result. |
+| [getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-2) | Obtains the bundle information of the current application based on the given bundle flags. This API uses anasynchronous callback to return the result. |
+| [getBundleInfoForSelfSync](arkts-ability-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1) | Obtains the bundle information of the current application based on the given bundle flags. This API returns theresult synchronously. |
+| [getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1) | Obtains the bundle information based on the given bundle name, bundle flags, and user ID. This API returns theresult synchronously.No permission is required for obtaining the caller's own information. |
+| [getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-2) | Obtains the bundle information for the caller's user based on the given bundle name and bundle flags. This APIreturns the result synchronously.No permission is required for obtaining the caller's own information. |
+| [getBundleNameByUid](arkts-ability-getbundlenamebyuid-f.md#getbundlenamebyuid-1) | Obtains the bundle name based on the given UID. This API uses an asynchronous callback to return the result. |
+| [getBundleNameByUid](arkts-ability-getbundlenamebyuid-f.md#getbundlenamebyuid-2) | Obtains the bundle name based on the given UID. This API uses a promise to return the result. |
+| [getBundleNameByUidSync](arkts-ability-getbundlenamebyuidsync-f.md#getbundlenamebyuidsync-1) | Obtains the bundle name based on the given UID. This API returns the result synchronously. |
+| [getInstalledBundleList](arkts-ability-getinstalledbundlelist-f.md#getinstalledbundlelist-1) | Obtains all the bundle information in the system based on the given bundle flags.This API uses a promise to return the result. |
+| [getLaunchWant](arkts-ability-getlaunchwant-f.md#getlaunchwant-1) | Obtains the **Want** parameters of the[entry UIAbility](../../../../quick-start/application-package-glossary.md#uiability) of the current application. |
+| [getPluginBundlePathForSelf](arkts-ability-getpluginbundlepathforself-f.md#getpluginbundlepathforself-1) | Obtains the installation path of a specified plugin in the current[application sandbox](../../../../file-management/app-sandbox-directory.md). |
+| [getProfileByAbility](arkts-ability-getprofilebyability-f.md#getprofilebyability-1) | Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in[abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This APIuses an asynchronous callback to return the result.&gt; NOTE&gt;&gt; If the profile uses the resource reference format, the return value retains this format (for example,&gt; **$string:res_id**). You can obtain the referenced resources through related APIs of the&gt; [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md). |
+| [getProfileByAbility](arkts-ability-getprofilebyability-f.md#getprofilebyability-2) | Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured under **metadata** in[abilities](../../../../quick-start/module-configuration-file.md#abilities) of the **module.json5** file). This APIuses a promise to return the result.&gt; NOTE&gt;&gt; If the profile uses the resource reference format, the return value retains this format (for example,&gt; **$string:res_id**). You can obtain the referenced resources through related APIs of the&gt; [resource manager module](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md). |
+| [getProfileByAbilitySync](arkts-ability-getprofilebyabilitysync-f.md#getprofilebyabilitysync-1) | Obtains the JSON string array of the current application's configuration file based on the given module name,ability name, and metadata name (name configured in[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This APIreturns the result synchronously. The result value is a string array. |
+| [getProfileByExtensionAbility](arkts-ability-getprofilebyextensionability-f.md#getprofilebyextensionability-1) | Obtains the JSON string array of the current application's configuration file based on the given module name,ExtensionAbility name, and metadata name (name configured in[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This APIuses an asynchronous callback to return the result. |
+| [getProfileByExtensionAbility](arkts-ability-getprofilebyextensionability-f.md#getprofilebyextensionability-2) | Obtains the JSON string array of the current application's configuration file based on the given module name,ExtensionAbility name, and metadata name (name configured in[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This APIuses a promise to return the result. |
+| [getProfileByExtensionAbilitySync](arkts-ability-getprofilebyextensionabilitysync-f.md#getprofilebyextensionabilitysync-1) | Obtains the JSON string array of the current application's configuration file based on the given module name,ExtensionAbility name, and metadata name (name configured in[metadata](../../../../quick-start/module-configuration-file.md#metadata) of the **module.json5** file). This APIreturns the result synchronously. The result value is a string array. |
+| [getSignatureInfo](arkts-ability-getsignatureinfo-f.md#getsignatureinfo-1) | Obtains the [signature information](bundleManager/BundleInfo:SignatureInfo) of an application based on thegiven UID. |
+| [setAlternateIcon](arkts-ability-setalternateicon-f.md#setalternateicon-1) | Sets the alternate icon of the caller based on the given alternate icon name.This API uses a promise to return the result. |
 
-### Types
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [AbilityInfo](arkts-bundlemanager-abilityinfo-t.md) | Ability信息。 |
-| [AbilityInfo](arkts-bundlemanager-abilityinfo-t.md) | Ability信息。 |
-| [AlternateIconInfo](arkts-bundlemanager-alternateiconinfo-t.md) | 应用备用图标信息。 |
-| [AlternateIconInfo](arkts-bundlemanager-alternateiconinfo-t.md) | 应用备用图标信息。 |
-| [AppCloneIdentity](arkts-bundlemanager-appcloneidentity-t.md) | 描述应用包的身份信息。 |
-| [AppCloneIdentity](arkts-bundlemanager-appcloneidentity-t.md) | 描述应用包的身份信息。 |
-| [ApplicationInfo](arkts-bundlemanager-applicationinfo-t.md) | 应用程序信息。 |
-| <!--DelRow-->[AppProvisionInfo](arkts-bundlemanager-appprovisioninfo-t-sys.md) | 应用[HarmonyAppProvision配置文件](docroot://security/app-provision-structure.md)中的信息。 |
-| <!--DelRow-->[AppProvisionInfo](arkts-bundlemanager-appprovisioninfo-t-sys.md) | 应用[HarmonyAppProvision配置文件](docroot://security/app-provision-structure.md)中的信息。 |
-| [BundleInfo](arkts-bundlemanager-bundleinfo-t.md) | 应用包信息。 |
-| [BundleInfo](arkts-bundlemanager-bundleinfo-t.md) | 应用包信息。 |
-| <!--DelRow-->[BundleOptions](arkts-bundlemanager-bundleoptions-t-sys.md) | 应用包选项，用于设置或查询应用相关信息。 |
-| <!--DelRow-->[BundleOptions](arkts-bundlemanager-bundleoptions-t-sys.md) | 应用包选项，用于设置或查询应用相关信息。 |
-| [DataItem](arkts-bundlemanager-dataitem-t.md) | 模块配置的路由表中的自定义数据。 |
-| [DataItem](arkts-bundlemanager-dataitem-t.md) | 模块配置的路由表中的自定义数据。 |
-| [Dependency](arkts-bundlemanager-dependency-t.md) | 模块所依赖的动态共享库信息。 |
-| [Dependency](arkts-bundlemanager-dependency-t.md) | 模块所依赖的动态共享库信息。 |
-| <!--DelRow-->[DynamicIconInfo](arkts-bundlemanager-dynamiciconinfo-t-sys.md) | 应用的动态图标信息。 |
-| <!--DelRow-->[DynamicIconInfo](arkts-bundlemanager-dynamiciconinfo-t-sys.md) | 应用的动态图标信息。 |
-| [ElementName](arkts-bundlemanager-elementname-t.md) | ElementName信息。 |
-| [ExtensionAbilityInfo](arkts-bundlemanager-extensionabilityinfo-t.md) | ExtensionAbility信息。 |
-| [ExtensionAbilityInfo](arkts-bundlemanager-extensionabilityinfo-t.md) | ExtensionAbility信息。 |
-| [HapModuleInfo](arkts-bundlemanager-hapmoduleinfo-t.md) | 模块信息。 |
-| [HapModuleInfo](arkts-bundlemanager-hapmoduleinfo-t.md) | 模块信息。 |
-| [Metadata](arkts-bundlemanager-metadata-t.md) | 元数据信息。 |
-| [ModuleMetadata](arkts-bundlemanager-modulemetadata-t.md) | 模块的元数据信息。 |
-| <!--DelRow-->[PermissionDef](arkts-bundlemanager-permissiondef-t-sys.md) | [module.json5配置文件](docroot://quick-start/module-configuration-file.md)中定义的权限详细信息。 |
-| <!--DelRow-->[PluginBundleInfo](arkts-bundlemanager-pluginbundleinfo-t-sys.md) | 插件信息。 |
-| <!--DelRow-->[PluginModuleInfo](arkts-bundlemanager-pluginmoduleinfo-t-sys.md) | 插件的模块信息。 |
-| <!--DelRow-->[PreinstalledApplicationInfo](arkts-bundlemanager-preinstalledapplicationinfo-t-sys.md) | 预置应用信息。 |
-| [PreloadItem](arkts-bundlemanager-preloaditem-t.md) | 原子化服务中模块的预加载模块信息。 |
-| [PreloadItem](arkts-bundlemanager-preloaditem-t.md) | 原子化服务中模块的预加载模块信息。 |
-| <!--DelRow-->[RecoverableApplicationInfo](arkts-bundlemanager-recoverableapplicationinfo-t-sys.md) | 预置应用被卸载后可以恢复的预置应用信息。 |
-| [ReqPermissionDetail](arkts-bundlemanager-reqpermissiondetail-t.md) | 应用运行时需向系统申请的权限集合的详细信息。 |
-| [ReqPermissionDetail](arkts-bundlemanager-reqpermissiondetail-t.md) | 应用运行时需向系统申请的权限集合的详细信息。 |
-| [RouterItem](arkts-bundlemanager-routeritem-t.md) | 模块配置的路由表信息。 |
-| [RouterItem](arkts-bundlemanager-routeritem-t.md) | 模块配置的路由表信息。 |
-| <!--DelRow-->[SharedBundleInfo](arkts-bundlemanager-sharedbundleinfo-t-sys.md) | 共享包信息。 |
-| [SignatureInfo](arkts-bundlemanager-signatureinfo-t.md) | 应用包的签名信息。 |
-| [SignatureInfo](arkts-bundlemanager-signatureinfo-t.md) | 应用包的签名信息。 |
-| [Skill](arkts-bundlemanager-skill-t.md) | skill信息。 |
-| [Skill](arkts-bundlemanager-skill-t.md) | skill信息。 |
-| [SkillUrl](arkts-bundlemanager-skillurl-t.md) | SkillUri信息。 |
-| [SkillUrl](arkts-bundlemanager-skillurl-t.md) | SkillUri信息。 |
-| [UsedScene](arkts-bundlemanager-usedscene-t.md) | 权限使用的场景和时机。 |
-| [UsedScene](arkts-bundlemanager-usedscene-t.md) | 权限使用的场景和时机。 |
-| <!--DelRow-->[Validity](arkts-bundlemanager-validity-t-sys.md) | 配置文件中的有效期。 |
-| <!--DelRow-->[Validity](arkts-bundlemanager-validity-t-sys.md) | 配置文件中的有效期。 |
-| [WindowSize](arkts-bundlemanager-windowsize-t.md) | 窗口尺寸。 |
-| [WindowSize](arkts-bundlemanager-windowsize-t.md) | 窗口尺寸。 |
+| [cleanAllBundleCache](arkts-ability-cleanallbundlecache-f-sys.md#cleanallbundlecache-1) | Clears the global cache. This API uses a promise to return the result. |
+| [cleanBundleCacheFiles](arkts-ability-cleanbundlecachefiles-f-sys.md#cleanbundlecachefiles-1) | Clears the bundle cache based on the given bundle name. This API uses an asynchronous callback to return theresult.No permission is required when the caller clears its own cache. |
+| [cleanBundleCacheFiles](arkts-ability-cleanbundlecachefiles-f-sys.md#cleanbundlecachefiles-2) | Clears the bundle cache based on the given bundle name. This API uses a promise to return the result.No permission is required when the caller clears its own cache. |
+| [cleanBundleCacheFiles](arkts-ability-cleanbundlecachefiles-f-sys.md#cleanbundlecachefiles-3) | Clears the bundle cache based on the given bundle name and application index. This API uses a promise to return theresult.No permission is required when the caller clears its own cache. |
+| [deleteAbc](arkts-ability-deleteabc-f-sys.md#deleteabc-1) | Deletes an .abc file based on the specified file path. This API uses a promise to return the result. |
+| [disableDynamicIcon](arkts-ability-disabledynamicicon-f-sys.md#disabledynamicicon-1) | Disables the dynamic icon based on the given bundle name. This API uses a promise to return the result. |
+| [disableDynamicIcon](arkts-ability-disabledynamicicon-f-sys.md#disabledynamicicon-2) | Disables the dynamic icon based on the given bundle name and bundle options. This API uses a promise to return theresult.To disable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICONpermission.To disable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON andohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions. |
+| [enableDynamicIcon](arkts-ability-enabledynamicicon-f-sys.md#enabledynamicicon-1) | Enables the dynamic icon based on the given bundle name and module name. This API uses a promise to return theresult. |
+| [enableDynamicIcon](arkts-ability-enabledynamicicon-f-sys.md#enabledynamicicon-2) | Enables the dynamic icon based on the given bundle name, module name, and bundle options. This API uses a promiseto return the result.To enable the dynamic icon for the current user, you must request the ohos.permission.ACCESS_DYNAMIC_ICONpermission.To enable the dynamic icon for another user, you must request the ohos.permission.ACCESS_DYNAMIC_ICON andohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions. |
+| [getAbilityIcon](arkts-ability-getabilityicon-f-sys.md#getabilityicon-1) | Obtains the PixelMap of an icon based on the bundle name, module name, and ability name.This API uses a promise to return the result. |
+| [getAbilityIcon](arkts-ability-getabilityicon-f-sys.md#getabilityicon-2) | Obtains the PixelMap of an icon based on the bundle name, module name, and ability name.This API uses a promise to return the result. |
+| [getAbilityLabel](arkts-ability-getabilitylabel-f-sys.md#getabilitylabel-1) | Obtains the ability label based on the given bundle name, module name, and ability name. This API uses anasynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [getAbilityLabel](arkts-ability-getabilitylabel-f-sys.md#getabilitylabel-2) | Obtains the ability label based on the given bundle name, module name, and ability name. This API uses a promise toreturn the result.No permission is required for obtaining the caller's own information. |
+| [getAbilityLabelSync](arkts-ability-getabilitylabelsync-f-sys.md#getabilitylabelsync-1) | Obtains the ability label based on the given bundle name, module name, and ability name. This API returns theresult synchronously.No permission is required for obtaining the caller's own information. |
+| [getAdditionalInfo](arkts-ability-getadditionalinfo-f-sys.md#getadditionalinfo-1) | Obtains additional information about a bundle in synchronous mode. The return value is the **additionalInfo** fieldvalue in [InstallParam](arkts-ability-installparam-i-sys.md) passed when **install** is called. |
+| [getAllAppCloneBundleInfo](arkts-ability-getallappclonebundleinfo-f-sys.md#getallappclonebundleinfo-1) | Obtains all the bundle information of applications and application clones based on the given bundle name,[bundleFlags](arkts-ability-bundleflag-e.md), and user ID. This API uses a promise toreturn the result.No permission is required for obtaining the caller's own information. |
+| [getAllAppProvisionInfo](arkts-ability-getallappprovisioninfo-f-sys.md#getallappprovisioninfo-1) | Obtains the [provision](bundleManager/AppProvisionInfo) configuration file information of all applicationsbased on the given user ID. This API uses a promise to return the result. |
+| [getAllApplicationInfo](arkts-ability-getallapplicationinfo-f-sys.md#getallapplicationinfo-1) | Obtains all the application information in the system based on the given application flags. This API uses anasynchronous callback to return the result. |
+| [getAllApplicationInfo](arkts-ability-getallapplicationinfo-f-sys.md#getallapplicationinfo-2) | Obtains all the application information in the system based on the given application flags and user ID. This APIuses an asynchronous callback to return the result. |
+| [getAllApplicationInfo](arkts-ability-getallapplicationinfo-f-sys.md#getallapplicationinfo-3) | Obtains all the application information in the system based on the given application flags and user ID. This APIuses a promise to return the result. |
+| [getAllBundleCacheSize](arkts-ability-getallbundlecachesize-f-sys.md#getallbundlecachesize-1) | Obtains the global cache size. This API uses a promise to return the result.It is not possible to obtain the cache of applications that are currently running or have been granted the "AllowAppDataNotCleared" privilege as specified in the[application configuration guide](../../../../../device-dev/subsystems/subsys-app-privilege-config-guide.md). |
+| [getAllBundleInfo](arkts-ability-getallbundleinfo-f-sys.md#getallbundleinfo-1) | Obtains all the bundle information in the system based on the given bundle flags. This API uses an asynchronouscallback to return the result. |
+| [getAllBundleInfo](arkts-ability-getallbundleinfo-f-sys.md#getallbundleinfo-2) | Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses anasynchronous callback to return the result. |
+| [getAllBundleInfo](arkts-ability-getallbundleinfo-f-sys.md#getallbundleinfo-3) | Obtains all the bundle information in the system based on the given bundle flags and user ID. This API uses apromise to return the result. |
+| [getAllBundleInfoByDeveloperId](arkts-ability-getallbundleinfobydeveloperid-f-sys.md#getallbundleinfobydeveloperid-1) | Obtains the information about all bundles of the current user based on the given developer ID. |
+| [getAllBundleInstallInfo](arkts-ability-getallbundleinstallinfo-f-sys.md#getallbundleinstallinfo-1) | Obtains the extended install information about all applications in the system.This API uses a promise to return the result. |
+| [getAllDynamicIconInfo](arkts-ability-getalldynamiciconinfo-f-sys.md#getalldynamiciconinfo-1) | Obtains the dynamic icon information of all applications and all application clones of a specified user. This APIuses a promise to return the result.To obtain the dynamic icon information of all applications and all application clones of the current user, you mustrequest the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED permission.To obtain the dynamic icon information of all applications and all application clones of other users or all users,you must request the ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTSpermissions. |
+| [getAllNewPreinstalledApplicationInfo](arkts-ability-getallnewpreinstalledapplicationinfo-f-sys.md#getallnewpreinstalledapplicationinfo-1) | Obtains PreinstalledApplicationInfo of all newly added preinstalled applications during device OTA upgrade. |
+| [getAllPluginInfo](arkts-ability-getallplugininfo-f-sys.md#getallplugininfo-1) | Obtains all the plugin information in the system based on the given host bundle name and user ID. This API uses apromise to return the result. |
+| [getAllPreinstalledApplicationInfo](arkts-ability-getallpreinstalledapplicationinfo-f-sys.md#getallpreinstalledapplicationinfo-1) | Obtains information about all preinstalled applications. This API uses a promise to return the result. |
+| [getAllSharedBundleInfo](arkts-ability-getallsharedbundleinfo-f-sys.md#getallsharedbundleinfo-1) | Obtains all the shared bundle information. This API uses an asynchronous callback to return the result. |
+| [getAllSharedBundleInfo](arkts-ability-getallsharedbundleinfo-f-sys.md#getallsharedbundleinfo-2) | Obtains all the shared bundle information. This API uses a promise to return the result. |
+| [getAppCloneBundleInfo](arkts-ability-getappclonebundleinfo-f-sys.md#getappclonebundleinfo-1) | Obtains the bundle information of an application or an application clone based on the given bundle name, app index,[bundleFlags](arkts-ability-bundleflag-e.md), and user ID. This API uses a promise toreturn the result.No permission is required for obtaining the caller's own information. |
+| [getAppCloneIdentityBySandboxDataDir](arkts-ability-getappcloneidentitybysandboxdatadir-f-sys.md#getappcloneidentitybysandboxdatadir-1) | Obtains the identity information of an application, including the bundle name and clone index, based on the givensandbox directory name. |
+| [getAppClonePreference](arkts-ability-getappclonepreference-f-sys.md#getappclonepreference-1) | Obtains the application clone preference configuration based on the given bundle name. |
+| [getAppProvisionInfo](arkts-ability-getappprovisioninfo-f-sys.md#getappprovisioninfo-1) | Obtains the provision profile based on the given bundle name. This API uses an asynchronous callback to return theresult.No permission is required for obtaining the caller's own information. |
+| [getAppProvisionInfo](arkts-ability-getappprovisioninfo-f-sys.md#getappprovisioninfo-2) | Obtains the provision profile based on the given bundle name and user ID. This API uses an asynchronous callback toreturn the result.No permission is required for obtaining the caller's own information. |
+| [getAppProvisionInfo](arkts-ability-getappprovisioninfo-f-sys.md#getappprovisioninfo-3) | Obtains the provision profile based on the given bundle name and user ID. This API uses a promise to return theresult.No permission is required for obtaining the caller's own information. |
+| [getAppProvisionInfoSync](arkts-ability-getappprovisioninfosync-f-sys.md#getappprovisioninfosync-1) | Obtains the provision profile based on the given bundle name and user ID. This API returns the resultsynchronously.No permission is required for obtaining the caller's own information. |
+| [getApplicationInfo](arkts-ability-getapplicationinfo-f-sys.md#getapplicationinfo-1) | Obtains the application information based on the given bundle name and application flags. This API uses anasynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [getApplicationInfo](arkts-ability-getapplicationinfo-f-sys.md#getapplicationinfo-2) | Obtains the application information based on the given bundle name, application flags, and user ID. This API usesan asynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [getApplicationInfo](arkts-ability-getapplicationinfo-f-sys.md#getapplicationinfo-3) | Obtains the application information based on the given bundle name, application flags, and user ID. This API uses apromise to return the result.No permission is required for obtaining the caller's own information. |
+| [getApplicationInfoSync](arkts-ability-getapplicationinfosync-f-sys.md#getapplicationinfosync-1) | Obtains the application information based on the given bundle name, application flags, and user ID. This APIreturns the result synchronously.No permission is required for obtaining the caller's own information. |
+| [getApplicationInfoSync](arkts-ability-getapplicationinfosync-f-sys.md#getapplicationinfosync-2) | Obtains the application information based on the given bundle name and application flags. This API returns theresult synchronously.No permission is required for obtaining the caller's own information. |
+| [getBundleArchiveInfo](arkts-ability-getbundlearchiveinfo-f-sys.md#getbundlearchiveinfo-1) | Obtains the bundle information based on the given HAP file path and bundle flags. This API uses an asynchronouscallback to return the result. |
+| [getBundleArchiveInfo](arkts-ability-getbundlearchiveinfo-f-sys.md#getbundlearchiveinfo-2) | Obtains the bundle information based on the given HAP file path and bundle flags. This API uses a promise to returnthe result. |
+| [getBundleArchiveInfoSync](arkts-ability-getbundlearchiveinfosync-f-sys.md#getbundlearchiveinfosync-1) | Obtains the bundle information based on the given HAP file path and bundle flags. This API returns the resultsynchronously. |
+| [getBundleInstallStatus](arkts-ability-getbundleinstallstatus-f-sys.md#getbundleinstallstatus-1) | Obtains the installation status of a specified application under a given user. |
+| [getDeveloperIds](arkts-ability-getdeveloperids-f-sys.md#getdeveloperids-1) | Obtains all the developer IDs of the current user based on the given application[distribution type](arkts-ability-appdistributiontype-e-sys.md). |
+| [getDynamicIcon](arkts-ability-getdynamicicon-f-sys.md#getdynamicicon-1) | Obtains the module name corresponding to the dynamic icon based on the specified bundle name. This API uses apromise to return the result. |
+| [getDynamicIconInfo](arkts-ability-getdynamiciconinfo-f-sys.md#getdynamiciconinfo-1) | Obtains the dynamic icon information of all users and all application clones based on the given bundle name. ThisAPI uses a promise to return the result. |
+| [getExtResource](arkts-ability-getextresource-f-sys.md#getextresource-1) | Obtains the module names corresponding to the extended resources based on the given bundle name. This API uses apromise to return the result. |
+| [getJsonProfile](arkts-ability-getjsonprofile-f-sys.md#getjsonprofile-1) | Obtains the JSON strings of the profile based on the given profile type, bundle name, and module name. This APIreturns the result synchronously.No permission is required for obtaining the caller's own profile. |
+| [getLaunchWantForBundle](arkts-ability-getlaunchwantforbundle-f-sys.md#getlaunchwantforbundle-1) | Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses anasynchronous callback to return the result. |
+| [getLaunchWantForBundle](arkts-ability-getlaunchwantforbundle-f-sys.md#getlaunchwantforbundle-2) | Obtains the Want used to launch the bundle based on the given bundle name. This API uses an asynchronous callbackto return the result. |
+| [getLaunchWantForBundle](arkts-ability-getlaunchwantforbundle-f-sys.md#getlaunchwantforbundle-3) | Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses a promise toreturn the result. |
+| [getLaunchWantForBundleSync](arkts-ability-getlaunchwantforbundlesync-f-sys.md#getlaunchwantforbundlesync-1) | Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API returns the resultsynchronously. |
+| [getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1) | Obtains the PermissionDef struct based on the given permission name. This API uses an asynchronous callback toreturn the result. |
+| [getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-2) | Obtains the PermissionDef struct based on the given permission name. This API uses a promise to return the result. |
+| [getPermissionDefSync](arkts-ability-getpermissiondefsync-f-sys.md#getpermissiondefsync-1) | Obtains the **PermissionDef** struct based on the given permission name. This API returns the result synchronously. |
+| [getRecoverableApplicationInfo](arkts-ability-getrecoverableapplicationinfo-f-sys.md#getrecoverableapplicationinfo-1) | Obtains information about all preinstalled applications that can be restored. This API uses an asynchronouscallback to return the result. |
+| [getRecoverableApplicationInfo](arkts-ability-getrecoverableapplicationinfo-f-sys.md#getrecoverableapplicationinfo-2) | Obtains information about all preinstalled applications that can be restored. This API uses a promise to return theresult. |
+| [getSandboxDataDir](arkts-ability-getsandboxdatadir-f-sys.md#getsandboxdatadir-1) | Obtains the sandbox directory of an application based on the given bundle name and clone index. |
+| [getSharedBundleInfo](arkts-ability-getsharedbundleinfo-f-sys.md#getsharedbundleinfo-1) | Obtains the shared bundle information based on the given bundle name. This API uses an asynchronous callback toreturn the result.No permission is required for obtaining the caller's own information. |
+| [getSharedBundleInfo](arkts-ability-getsharedbundleinfo-f-sys.md#getsharedbundleinfo-2) | Obtains the shared bundle information based on the given bundle name. This API uses a promise to return the result.No permission is required for obtaining the caller's own information. |
+| [getSpecifiedDistributionType](arkts-ability-getspecifieddistributiontype-f-sys.md#getspecifieddistributiontype-1) | Obtains the [distribution type](../../../../security/app-provision-structure.md) of a bundle in synchronous mode. Thereturn value is the **specifiedDistributionType** field value in[InstallParam](arkts-ability-installparam-i-sys.md) passed when **install** is called.No permission is required for obtaining the caller's own information. |
+| [isAbilityEnabled](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-1) | Checks whether an ability of an application or an application clone is enabled. This API uses a promise to returnthe result. |
+| [isAbilityEnabled](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-2) | Checks whether an ability is enabled. This API uses an asynchronous callback to return the result. |
+| [isAbilityEnabled](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-3) | Checks whether an ability is enabled. This API uses a promise to return the result. |
+| [isAbilityEnabledSync](arkts-ability-isabilityenabledsync-f-sys.md#isabilityenabledsync-1) | Checks whether an ability is enabled. This API returns the result synchronously. |
+| [isApplicationDisableForbidden](arkts-ability-isapplicationdisableforbidden-f-sys.md#isapplicationdisableforbidden-1) | Synchronously queries whether a specified application or application clone of a specified useris set to forbid being disabled.If you need to check whether an application is forbidden to be disabled under the current user,ohos.permission.GET_BUNDLE_INFO_PRIVILEGED needs to be applied for.If you need to check whether an application is forbidden to be disabled under other users,ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTSneed to be applied for. |
+| [isApplicationEnabled](arkts-ability-isapplicationenabled-f-sys.md#isapplicationenabled-1) | Checks whether an application or an application clone is enabled. This API uses a promise to return the result. |
+| [isApplicationEnabled](arkts-ability-isapplicationenabled-f-sys.md#isapplicationenabled-2) | Checks whether an application is enabled. This API uses an asynchronous callback to return the result. |
+| [isApplicationEnabled](arkts-ability-isapplicationenabled-f-sys.md#isapplicationenabled-3) | Checks whether an application is enabled. This API uses a promise to return the result. |
+| [isApplicationEnabledSync](arkts-ability-isapplicationenabledsync-f-sys.md#isapplicationenabledsync-1) | Checks whether an application is enabled. This API returns the result synchronously. |
+| [migrateData](arkts-ability-migratedata-f-sys.md#migratedata-1) | Migrates files from the source path to the destination path. This API uses a promise to return the result. |
+| [queryAbilityInfo](arkts-ability-queryabilityinfo-f-sys.md#queryabilityinfo-1) | Obtains the ability information based on the given want and ability flags. This API uses an asynchronous callbackto return the result.No permission is required for obtaining the caller's own information. |
+| [queryAbilityInfo](arkts-ability-queryabilityinfo-f-sys.md#queryabilityinfo-2) | Obtains the ability information based on the given want, ability flags, and user ID. This API uses an asynchronouscallback to return the result.No permission is required for obtaining the caller's own information. |
+| [queryAbilityInfo](arkts-ability-queryabilityinfo-f-sys.md#queryabilityinfo-3) | Obtains the ability information based on the given want, ability flags, and user ID. This API uses a promise toreturn the result.No permission is required for obtaining the caller's own information. |
+| [queryAbilityInfo](arkts-ability-queryabilityinfo-f-sys.md#queryabilityinfo-4) | Obtains the ability information based on the given want list, ability flags, and user ID. This API uses a promiseto return the result.No permission is required for obtaining the caller's own information. |
+| [queryAbilityInfoSync](arkts-ability-queryabilityinfosync-f-sys.md#queryabilityinfosync-1) | Obtains the ability information based on the given want, ability flags, and user ID. This API returns the resultsynchronously.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfo](arkts-ability-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-1) | Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, and ExtensionAbilityflags. This API uses an asynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfo](arkts-ability-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-2) | Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,and user ID. This API uses an asynchronous callback to return the result.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfo](arkts-ability-queryextensionabilityinfo-f-sys.md#queryextensionabilityinfo-3) | Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,and user ID. This API uses a promise to return the result.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfoSync](arkts-ability-queryextensionabilityinfosync-f-sys.md#queryextensionabilityinfosync-1) | Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,and user ID. This API returns the result synchronously.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfoSync](arkts-ability-queryextensionabilityinfosync-f-sys.md#queryextensionabilityinfosync-2) | Obtains the ExtensionAbility information based on the given Want, ExtensionAbility type, ExtensionAbility flags,and user ID. This API returns the result synchronously.No permission is required for obtaining the caller's own information. |
+| [queryExtensionAbilityInfoSync](arkts-ability-queryextensionabilityinfosync-f-sys.md#queryextensionabilityinfosync-3) | Obtains the ExtensionAbility information based on the given ExtensionAbility type, ExtensionAbility flags, and userID.No permission is required for obtaining the caller's own information. |
+| [recoverBackupBundleData](arkts-ability-recoverbackupbundledata-f-sys.md#recoverbackupbundledata-1) | Restores the backup data for a specified application under a given user. This API uses a promise to return theresult. |
+| [removeBackupBundleData](arkts-ability-removebackupbundledata-f-sys.md#removebackupbundledata-1) | Removes the backup data for a specified application under a given user. This API uses a promise to return theresult. |
+| [setAbilityEnabled](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-1) | Enables or disables an ability of an application or an application clone. This API uses a promise to return theresult. |
+| [setAbilityEnabled](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-2) | Enables or disables an ability. This API uses an asynchronous callback to return the result. |
+| [setAbilityEnabled](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-3) | Enables or disables an ability. This API uses a promise to return the result. |
+| [setAbilityEnabledSync](arkts-ability-setabilityenabledsync-f-sys.md#setabilityenabledsync-1) | Enables or disables an ability. This API returns the result synchronously. |
+| [setAbilityFileTypesForSelf](arkts-ability-setabilityfiletypesforself-f-sys.md#setabilityfiletypesforself-1) | Sets the file types that can be opened by the current application. |
+| [setAdditionalInfo](arkts-ability-setadditionalinfo-f-sys.md#setadditionalinfo-1) | Sets additional information for an application. This API can be called only by AppGallery. |
+| [setAppClonePreference](arkts-ability-setappclonepreference-f-sys.md#setappclonepreference-1) | Sets the application clone preference configuration. |
+| [setApplicationEnabled](arkts-ability-setapplicationenabled-f-sys.md#setapplicationenabled-1) | Enables or disables an application or an application clone. This API uses a promise to return the result. |
+| [setApplicationEnabled](arkts-ability-setapplicationenabled-f-sys.md#setapplicationenabled-2) | Sets the enabled or disabled state of a specified application or application clone, and controls whetherto exit the application process when the application is disabled. This API uses a promise to return the result. |
+| [setApplicationEnabled](arkts-ability-setapplicationenabled-f-sys.md#setapplicationenabled-3) | Enables or disables an application. This API uses an asynchronous callback to return the result. |
+| [setApplicationEnabled](arkts-ability-setapplicationenabled-f-sys.md#setapplicationenabled-4) | Enables or disables an application. This API uses a promise to return the result. |
+| [setApplicationEnabledSync](arkts-ability-setapplicationenabledsync-f-sys.md#setapplicationenabledsync-1) | Enables or disables an application. This API returns the result synchronously. |
+| [setApplicationEnabledSync](arkts-ability-setapplicationenabledsync-f-sys.md#setapplicationenabledsync-2) | Set whether an application is enabled or disabled, with control over whether the process is killed when disabled. |
+| [switchUninstallState](arkts-ability-switchuninstallstate-f-sys.md#switchuninstallstate-1) | Switches the uninstall state of an application. This API is independent of EDM application interception control. |
+| [verifyAbc](arkts-ability-verifyabc-f-sys.md#verifyabc-1) | Verifies an .abc file. This API uses an asynchronous callback to return the result. |
+| [verifyAbc](arkts-ability-verifyabc-f-sys.md#verifyabc-2) | Verifies an .abc file. This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AbilityFlag](arkts-bundlemanager-abilityflag-e-sys.md) | Ability组件信息标志，指示需要获取的Ability组件信息的内容。 |
-| [AbilityType](arkts-bundlemanager-abilitytype-e.md) | 标识Ability组件的类型。 |
-| <!--DelRow-->[AppDistributionType](arkts-bundlemanager-appdistributiontype-e-sys.md) | 标识应用[HarmonyAppProvision配置文件说明](docroot://security/app-provision-structure.md)。 |
-| <!--DelRow-->[ApplicationFlag](arkts-bundlemanager-applicationflag-e-sys.md) | 应用信息标志，指示需要获取的应用信息的内容。 |
-| <!--DelRow-->[ApplicationInfoFlag](arkts-bundlemanager-applicationinfoflag-e-sys.md) | 标识应用和用户之间的各种状态类型。 |
-| [BundleFlag](arkts-bundlemanager-bundleflag-e.md) | 包信息标志，指示需要获取的包信息的内容。 |
-| <!--DelRow-->[BundleInstallStatus](arkts-bundlemanager-bundleinstallstatus-e-sys.md) | 标识应用的安装状态。 |
-| [BundleType](arkts-bundlemanager-bundletype-e.md) | 标识应用的类型。 |
-| [CompatiblePolicy](arkts-bundlemanager-compatiblepolicy-e.md) | 标识动态共享库的版本兼容类型。 |
-| [DisplayOrientation](arkts-bundlemanager-displayorientation-e.md) | 标识该Ability的显示模式。仅适用于FA模型的[PageAbility](docroot://application-models/pageability-overview.md)。 <!--Table: 40%; 10%; 50%--> |
-| <!--DelRow-->[ExtensionAbilityFlag](arkts-bundlemanager-extensionabilityflag-e-sys.md) | 扩展组件信息标志，指示需要获取的扩展组件信息的内容。 |
-| [ExtensionAbilityType](arkts-bundlemanager-extensionabilitytype-e.md) | 扩展组件的类型。 <!--Table: 30%; 10%; 60%--> <!--RP2--><!--RP2End--> |
-| [LaunchType](arkts-bundlemanager-launchtype-e.md) | 标识组件的[启动模式](docroot://application-models/uiability-launch-type.md)。 |
-| [ModuleType](arkts-bundlemanager-moduletype-e.md) | 标识模块类型。 |
-| [MultiAppModeType](arkts-bundlemanager-multiappmodetype-e.md) | 标识应用多开的模式类型。 |
-| [PermissionGrantState](arkts-bundlemanager-permissiongrantstate-e.md) | 权限授予状态。 |
-| <!--DelRow-->[ProfileType](arkts-bundlemanager-profiletype-e-sys.md) | 标识配置文件类型。 |
-| [SupportWindowMode](arkts-bundlemanager-supportwindowmode-e.md) | 标识该组件所支持的窗口模式。 |
+| [AbilityType](arkts-ability-abilitytype-e.md) | Enumerates the types of ability components. |
+| [BundleFlag](arkts-ability-bundleflag-e.md) | Enumerates the bundle flags, which indicate the type of bundle information to obtain. |
+| [BundleType](arkts-ability-bundletype-e.md) | Enumerates the bundle types. |
+| [CompatiblePolicy](arkts-ability-compatiblepolicy-e.md) | Defines the version compatibility type of the dynamic shared library. |
+| [DisplayOrientation](arkts-ability-displayorientation-e.md) | Enumerates the display orientations of the ability. It is applicable only to[PageAbility](../../../../application-models/pageability-overview.md) in the FA model. |
+| [ExtensionAbilityType](arkts-ability-extensionabilitytype-e.md) | Enumerates the types of ExtensionAbility components.&lt;!--RP2--&gt;&lt;!--RP2End--&gt; |
+| [LaunchType](arkts-ability-launchtype-e.md) | Enumerates the [launch types](../../../../application-models/uiability-launch-type.md) of the UIAbility. |
+| [ModuleType](arkts-ability-moduletype-e.md) | Enumerates the module types. |
+| [MultiAppModeType](arkts-ability-multiappmodetype-e.md) | Enumerates the types of the multi-app mode. |
+| [PermissionGrantState](arkts-ability-permissiongrantstate-e.md) | Enumerates the permission grant states. |
+| [SupportWindowMode](arkts-ability-supportwindowmode-e.md) | Enumerates the window modes supported by the ability. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AbilityFlag](arkts-ability-abilityflag-e-sys.md) | Enumerates the ability flags, which indicate the type of ability information to obtain. |
+| [AppClonePreferenceMode](arkts-ability-appclonepreferencemode-e-sys.md) | Enumerates the application clone preference modes. |
+| [AppDistributionType](arkts-ability-appdistributiontype-e-sys.md) | Enumerates the application [distribution types](../../../../security/app-provision-structure.md). |
+| [ApplicationFlag](arkts-ability-applicationflag-e-sys.md) | Enumerates the application flags, which indicate the type of application information to obtain. |
+| [ApplicationInfoFlag](arkts-ability-applicationinfoflag-e-sys.md) | Enumerates the application information flag, which describes the status between an application and user. |
+| [BundleFlag](arkts-ability-bundleflag-e-sys.md) | Enumerates the bundle flags, which indicate the type of bundle information to obtain. |
+| [BundleInstallStatus](arkts-ability-bundleinstallstatus-e-sys.md) | Enumerates the application installation statuses. |
+| [ExtensionAbilityFlag](arkts-ability-extensionabilityflag-e-sys.md) | Enumerates the ExtensionAbility flags, which indicate the type of ExtensionAbility information to obtain. |
+| [ProfileType](arkts-ability-profiletype-e-sys.md) | Enumerates the types of profiles (also called application files). |
+<!--DelEnd-->
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [AbilityInfo](arkts-ability-abilityinfo-t.md) | Defines the ability information. |
+| [AlternateIconInfo](arkts-ability-alternateiconinfo-t.md) | Describes the alternate icon information of an application. |
+| [AppCloneIdentity](arkts-ability-appcloneidentity-t.md) | Describes the identity information of an application clone. |
+| [ApplicationInfo](arkts-ability-applicationinfo-t.md) | Defines the application information. |
+| [BundleInfo](arkts-ability-bundleinfo-t.md) | Defines the bundle information. |
+| [DataItem](arkts-ability-dataitem-t.md) | Defines the user-defined data in the routing table configuration of the module. |
+| [Dependency](arkts-ability-dependency-t.md) | Defines the information about the dynamic shared libraries on which the module depends. |
+| [ElementName](arkts-ability-elementname-t.md) | Defines the element name. |
+| [ExtensionAbilityInfo](arkts-ability-extensionabilityinfo-t.md) | Defines the ExtensionAbility information. |
+| [HapModuleInfo](arkts-ability-hapmoduleinfo-t.md) | Defines the module information. |
+| [Metadata](arkts-ability-metadata-t.md) | Defines the metadata. |
+| [ModuleMetadata](arkts-ability-modulemetadata-t.md) | Defines the metadata of a module. |
+| [PreloadItem](arkts-ability-preloaditem-t.md) | Defines the preloaded module information in the atomic service. |
+| [ReqPermissionDetail](arkts-ability-reqpermissiondetail-t.md) | Defines the detailed information of the permissions to request from the system. |
+| [RouterItem](arkts-ability-routeritem-t.md) | Defines the router table configuration of the module. |
+| [SignatureInfo](arkts-ability-signatureinfo-t.md) | Defines the signature information of the bundle. |
+| [Skill](arkts-ability-skill-t.md) | Defines the skill information. |
+| [SkillUrl](arkts-ability-skillurl-t.md) | Defines the SkillUri information. |
+| [UsedScene](arkts-ability-usedscene-t.md) | Defines the use scenario and timing for using the permission. |
+| [WindowSize](arkts-ability-windowsize-t.md) | Defines the window size. |
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AppClonePreference](arkts-ability-appclonepreference-t-sys.md) | Defines the AppClonePreference information. |
+| [AppProvisionInfo](arkts-ability-appprovisioninfo-t-sys.md) | Defines the information in the[HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md). |
+| [BundleOptions](arkts-ability-bundleoptions-t-sys.md) | Describes the bundle options used to set or query application information. |
+| [DynamicIconInfo](arkts-ability-dynamiciconinfo-t-sys.md) | Describes the information about the dynamic icon of an application. |
+| [PermissionDef](arkts-ability-permissiondef-t-sys.md) | Defines the detailed information about the permissions defined in the[module.json5](../../../../quick-start/module-configuration-file.md) file. |
+| [PluginBundleInfo](arkts-ability-pluginbundleinfo-t-sys.md) | Defines the plugin information. |
+| [PluginModuleInfo](arkts-ability-pluginmoduleinfo-t-sys.md) | Defines the module information of a plugin. |
+| [PreinstalledApplicationInfo](arkts-ability-preinstalledapplicationinfo-t-sys.md) | Defines the preinstalled application information. |
+| [RecoverableApplicationInfo](arkts-ability-recoverableapplicationinfo-t-sys.md) | Defines the information about a preinstalled application that can be restored after being uninstalled. |
+| [SharedBundleInfo](arkts-ability-sharedbundleinfo-t-sys.md) | Defines the shared bundle information. |
+| [Validity](arkts-ability-validity-t-sys.md) | Defines the validity period in the configuration file. |
+<!--DelEnd-->
 

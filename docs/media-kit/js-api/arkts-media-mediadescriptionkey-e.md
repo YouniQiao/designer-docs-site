@@ -1,9 +1,5 @@
 # MediaDescriptionKey
 
-```TypeScript
-enum MediaDescriptionKey
-```
-
 Enumerates the media description keys.
 
 **Since:** 8
@@ -20,7 +16,7 @@ Track index. The corresponding key value type is number.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -30,11 +26,11 @@ Track index. The corresponding key value type is number.
 MD_KEY_TRACK_TYPE = 'track_type'
 ```
 
-Track type. The corresponding key value type is number. For details, see [MediaType]media.MediaType.
+Track type. The corresponding key value type is number. For details, see [MediaType](arkts-media-mediatype-e.md).
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -48,7 +44,7 @@ Codec MIME type. The corresponding key value type is string.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -62,7 +58,7 @@ Media duration. The corresponding key value type is number, measured in ms.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -72,11 +68,12 @@ Media duration. The corresponding key value type is number, measured in ms.
 MD_KEY_BITRATE = 'bitrate'
 ```
 
-Bit rate. The corresponding key value type is number, measured in bit/s. If the value is **undefined** or **0**, the bit rate is abnormal.
+Bit rate. The corresponding key value type is number, measured in bit/s. If the value is **undefined** or **0**,
+the bit rate is abnormal.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -90,7 +87,7 @@ Video width. The corresponding key value type is number, measured in px.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -104,7 +101,7 @@ Video height. The corresponding key value type is number, measured in px.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -118,7 +115,7 @@ Video frame rate. The corresponding key value type is number, measured in frames
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -132,7 +129,7 @@ Audio channel count. The corresponding key value type is number.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -146,7 +143,7 @@ Sample rate. The corresponding key value type is number, measured in Hz.
 
 **Since:** 8
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -160,7 +157,7 @@ Bit depth. The corresponding key value type is number, measured in bits.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -174,7 +171,7 @@ Subtitle language. The corresponding key value type is string.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -188,7 +185,7 @@ Track name. The corresponding key value type is string.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -202,7 +199,7 @@ Codec track type. The corresponding key value type is string.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -216,7 +213,7 @@ Original video width. The corresponding key value type is number, measured in px
 
 **Since:** 21
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 21.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -230,7 +227,7 @@ Original video height. The corresponding key value type is number, measured in p
 
 **Since:** 21
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 21.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -240,11 +237,12 @@ Original video height. The corresponding key value type is number, measured in p
 MD_KEY_MIME_TYPE = 'mime_type'
 ```
 
-MIME type of the track. The corresponding key value type is string. For audio and video tracks, the value is the same as that of **MD_KEY_CODEC_MIME**.
+MIME type of the track. The corresponding key value type is string. For audio and video tracks, the value is the
+same as that of **MD_KEY_CODEC_MIME**.
 
 **Since:** 23
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -254,11 +252,12 @@ MIME type of the track. The corresponding key value type is string. For audio an
 MD_KEY_REFERENCE_TRACK_IDS = 'ref_track_ids'
 ```
 
-Reference relationships between this track and other tracks. The corresponding key value type is string, with values separated by commas (,).
+Reference relationships between this track and other tracks. The corresponding key value type is string, with
+values separated by commas (,).
 
 **Since:** 23
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -272,7 +271,7 @@ Auxiliary type of this track when it acts as a reference track. The correspondin
 
 **Since:** 23
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

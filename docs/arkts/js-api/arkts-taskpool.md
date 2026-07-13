@@ -1,6 +1,28 @@
 # @ohos.taskpool
 
-任务池（taskpool）的作用是为应用程序提供多线程运行环境，降低资源消耗并提升系统性能，且您无需关心线程的生命周期。您可以使用任务池API 创建后台任务（Task），并进行如执行任务或取消任务等操作。理论上，任务池API允许创建的任务数量不受限制，但由于内存限制，不建议这样做。此外， 不建议在任务中执行阻塞操作，尤其是无限期阻塞操作，因为长时间的阻塞操作会占用工作线程，可能阻塞其他任务的调度，影响应用性能。 创建同一优先级的任务时，可以自行决定其执行顺序。任务的实际执行顺序与调用任务池API提供的任务执行接口的顺序一致。任务的默认优先级为MEDIUM。 当同一时间待执行的任务数量大于任务池工作线程数量，任务池会根据负载均衡机制进行扩容，增加工作线程数量，减少整体等待时长。同样，当执行的任务数量减少， 工作线程数量大于执行任务数量，部分工作线程处于空闲状态，任务池会根据负载均衡机制进行缩容，减少工作线程数量。 如需了解任务池API返回错误码的详细信息，请参阅 [语言基础类库错误码](docroot://reference/apis-arkts/errorcode-utils.md)。 如需了解使用TaskPool时的相关注意点，请参阅 [TaskPool注意事项](docroot://arkts-utils/taskpool-introduction.md#taskpool注意事项)。 文档中涉及以下任务概念： - 任务组任务：对应为[TaskGroup]{@link taskpool.TaskGroup}任务。 - 串行队列任务：对应为[SequenceRunner]{@link taskpool.SequenceRunner}任务。 - 异步队列任务：对应为[AsyncRunner]{@link taskpool.AsyncRunner}任务。 - 周期任务：由 [executePeriodically]{@link taskpool.executePeriodically(period: number, task: Task, priority?: Priority)}执行的任务。
+TaskPool provides a multi-thread running environment for applications. It helps reduce resource consumption and
+improve system performance. It also frees you from caring about the thread lifecycle. You can use the TaskPool APIs
+to create background tasks and perform operations on them, for example, executing or canceling a task. Theoretically,
+you can create an unlimited number of tasks, but this is not recommended due to memory limitations. In addition, you
+are not advised performing blocking operations in a task, especially indefinite blocking. Long-time blocking
+operations occupy worker threads and may block other task scheduling, adversely affecting your application
+performance.
+You can determine the execution sequence of tasks with the same priority. They are executed in the same sequence as
+you call the task execution APIs. The default task priority is MEDIUM.
+If the number of tasks to be executed is greater than the number of worker threads in the task pool, the task pool
+scales out based on load balancing to minimize the waiting duration. Similarly, when the number of tasks to be
+executed falls below the number of worker threads, the task pool scales in to reduce the number of worker threads.
+For details about the error codes returned by TaskPool APIs, see
+[Utils Error Codes](../../../../reference/apis-arkts/errorcode-utils.md).
+For details about the precautions for using TaskPool, see
+[Precautions for TaskPool](../../../../arkts-utils/taskpool-introduction.md#precautions-for-taskpool).
+The following concepts are used in this topic:
+
+- Task group task: task in a [TaskGroup](arkts-arkts-taskgroup-c.md).
+- Serial queue task: task in a [SequenceRunner](arkts-arkts-sequencerunner-c.md).
+- Asynchronous queue task: task in an [AsyncRunner](arkts-arkts-asyncrunner-c.md).
+- Periodic task: task executed by calling
+[executePeriodically](arkts-arkts-executeperiodically-f.md#executeperiodically-1).
 
 **Since:** 9
 
@@ -18,58 +40,58 @@ import { taskpool } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [cancel](arkts-taskpool-cancel-f.md#cancel-1) | 取消任务池中的任务。当任务在taskpool等待队列中，取消该任务后该任务将不再执行，并返回任务被取消的异常；当任务已经在taskpool工作线程执行， 取消该任务并不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。也就是说， **taskpool.cancel**对其之前的**taskpool.execute**、**taskpool.executeDelayed**或**taskpool.executePeriodically**生效。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult]{@link taskpool.TaskResult}>，来获取任务中抛出的异常信息或最终的执行结果。 |
-| [cancel](arkts-taskpool-cancel-f.md#cancel-2) | 取消任务池中的任务组。如果任务组中的任务未全部执行结束，返回**undefined**。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult]{@link taskpool.TaskResult}>，来获取任务中抛出的异常信息或最终的执行结果。 |
-| [cancel](arkts-taskpool-cancel-f.md#cancel-3) | 通过任务ID取消任务池中的任务。如果任务在taskpool等待队列中，取消后任务将不再执行，并返回任务取消的异常。如果任务已在taskpool工作线程中执行， 取消不影响任务继续执行，执行结果在catch分支返回，搭配**isCanceled()**可以对任务取消行为作出响应。**taskpool.cancel**对其之前的 **taskpool.execute**或**taskpool.executeDelayed**生效。在其他线程调用**taskpool.cancel**时，需注意其行为是异步的， 可能影响之后的**taskpool.execute**或**taskpool.executeDelayed**。 从API version 20开始，在执行cancel操作后，可以在catch分支里使用泛型BusinessError< [taskpool.TaskResult]{@link taskpool.TaskResult}>，来获取任务中抛出的异常信息或最终的执行结果。 |
-| [execute](arkts-taskpool-execute-f.md#execute-1) | 将待执行的函数放入taskpool的内部任务队列，函数不会立即执行，而是等待分发到工作线程执行。在当前执行模式下， 不支持取消任务。使用Promise异步回调。 |
-| [execute](arkts-taskpool-execute-f.md#execute-2) | 校验并发函数的参数类型和返回值类型后，将函数添加到taskpool的任务队列。使用Promise异步回调。 |
-| [execute](arkts-taskpool-execute-f.md#execute-3) | 将创建好的任务添加到taskpool的内部任务队列中，任务不会立即执行，而是等待分发到工作线程执行。当前模式支持设置任务优先级和通过cancel取消任务。 任务不能是任务组任务、串行队列任务或异步队列任务。对于非长时任务，可以多次调用执行；对于长时任务，仅支持执行一次。使用Promise异步回调。 |
-| [execute](arkts-taskpool-execute-f.md#execute-4) | 将创建好的泛型任务放入taskpool的内部任务队列，校验任务的参数类型和返回值类型。使用Promise异步回调。 execute任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。 |
-| [execute](arkts-taskpool-execute-f.md#execute-5) | 将创建好的任务组放入taskpool内部任务队列，任务组中的任务不会立即执行，而是等待分发到工作线程执行。任务组中任务全部执行完成后， 结果数组统一返回。此模式适用于执行关联任务。使用Promise异步回调。 |
-| [execute](arkts-taskpool-execute-f.md#execute-6) | 通过Configs执行并发任务。 |
-| [execute](arkts-taskpool-execute-f.md#execute-7) | 通过Configs执行并发泛型任务。 |
-| [execute](arkts-taskpool-execute-f.md#execute-8) | 通过Configs执行并发任务组。 |
-| [executeDelayed](arkts-taskpool-executedelayed-f.md#executeDelayed-1) | 延时执行任务。当前执行模式可以设置任务优先级，并且可以尝试调用**cancel()**取消执行。该任务不能是任务组任务、串行队列任务、 异步队列任务或周期任务。对于长时任务，仅支持执行一次；对于非长时任务，可以多次调用。使用Promise异步回调。 |
-| [executeDelayed](arkts-taskpool-executedelayed-f.md#executeDelayed-2) | 延时执行泛型任务，不校验任务的参数类型和返回值类型。使用Promise异步回调。 executeDelayed任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。 |
-| [executePeriodically](arkts-taskpool-executeperiodically-f.md#executePeriodically-1) | 周期任务每隔period时长执行一次。当前执行模式支持设置任务优先级，并可以通过调用**cancel()**取消执行。周期任务不能是任务组任务、 串行队列任务或异步队列任务，不能再次调用执行接口，且执行的任务不能拥有依赖关系。 |
-| [executePeriodically](arkts-taskpool-executeperiodically-f.md#executePeriodically-2) | 周期执行泛型任务，不校验任务的参数类型和返回值类型。 executePeriodically任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。 |
-| [getTask](arkts-taskpool-gettask-f.md#getTask-1) | 通过taskId或taskId与taskName获取对应的Task实例。 > **说明** > > - 如果传入的taskId查询不到对应的Task实例，则会返回**undefined**。 > > - 如果传入的taskId能够查询到对应的Task实例，但是调用**getTask**方法的线程和创建Task实例的线程不一致，则会返回**undefined**。 > > - 如果同时传入taskId和taskName，通过taskId查询到的Task实例的name和传入的taskName不一致，则会返回**undefined**。 |
-| [getTaskPoolInfo](arkts-taskpool-gettaskpoolinfo-f.md#getTaskPoolInfo-1) | 获取任务池的线程信息和任务信息。 |
-| [isConcurrent](arkts-taskpool-isconcurrent-f.md#isConcurrent-1) | 检查函数是否为并发函数。 |
-| [terminateTask](arkts-taskpool-terminatetask-f.md#terminateTask-1) | 中止任务池中的长时任务，在长时任务执行完成后调用。中止后，执行长时任务的线程可能会被回收。 |
+| [cancel](arkts-arkts-cancel-f.md#cancel-1) | Cancels a task in the task pool. If the task is in the internal queue of the task pool, the task will not beexecuted after being canceled, and an exception indicating task cancellation is returned. If the task has beendistributed to the worker thread of the task pool, canceling the task does not affect the task execution, and theexecution result is returned in the catch branch. You can use **isCanceled()** to check the task cancellationstatus. In other words, **taskpool.cancel** takes effect for calls of **taskpool.execute**,**taskpool.executeDelayed**, or **taskpool.executePeriodically**.Starting from API version 20, after performing a cancel operation, you can use the generic type BusinessError&lt;[taskpool.TaskResult](arkts-arkts-taskresult-i.md)&gt; in the catch branch to obtain the exception information thrown bythe task or the final execution result. |
+| [cancel](arkts-arkts-cancel-f.md#cancel-2) | Cancels a task group in the task pool. If a task group is canceled before all the tasks in it are finished,**undefined** is returned.Starting from API version 20, after performing a cancel operation, you can use the generic type BusinessError&lt;[taskpool.TaskResult](arkts-arkts-taskresult-i.md)&gt; in the catch branch to obtain the exception information thrown bythe task or the final execution result. |
+| [cancel](arkts-arkts-cancel-f.md#cancel-3) | Cancels a task in the task pool by task ID. If the task is in the internal queue of the task pool, the task willnot be executed after being canceled, and an exception indicating task cancellation is returned. If the task hasbeen distributed to the worker thread of the task pool, canceling the task does not affect the task execution, andthe execution result is returned in the catch branch. You can use **isCanceled()** to check the task cancellationstatus. **taskpool.cancel** takes effect for the previous calls of **taskpool.execute** or**taskpool.executeDelayed**. If **taskpool.cancel** is called by other threads, note that the cancel operation,which is asynchronous, may take effect for later calls of **taskpool.execute** or **taskpool.executeDelayed**.Starting from API version 20, after performing a cancel operation, you can use the generic type BusinessError&lt;[taskpool.TaskResult](arkts-arkts-taskresult-i.md)&gt; in the catch branch to obtain the exception information thrown bythe task or the final execution result. |
+| [execute](arkts-arkts-execute-f.md#execute-1) | Places a function to be executed in the internal queue of the task pool. The function is not executed immediately.It waits to be distributed to the worker thread for execution. In this mode, the function cannot be canceled. ThisAPI uses a promise to return the result. |
+| [execute](arkts-arkts-execute-f.md#execute-2) | Verifies the passed-in parameter types and return value type of a concurrent function, and places the function inthe queue of the task pool. This API uses a promise to return the result. |
+| [execute](arkts-arkts-execute-f.md#execute-3) | Places a task in the internal queue of the task pool. The task will not be executed immediately; instead, it waitsto be distributed to a worker thread for execution. In the current mode, you can set the task priority and cancelthe task. Note that the task cannot belong to a task group, serial queue, or asynchronous queue. For non-continuoustasks, this API can be called multiple times. This API uses a promise to return the result. |
+| [execute](arkts-arkts-execute-f.md#execute-4) | Places the generic task in the internal queue of the task pool. The parameter type and return value type of thetask are not verified. This API uses a promise to return the result.The verification of the **execute** task works in conjunction with **new GenericsTask**, requiring that theparameter and return value types match those specified in **new GenericsTask**. |
+| [execute](arkts-arkts-execute-f.md#execute-5) | Places a task group in the internal queue of the task pool. The tasks in the task group are not executedimmediately. They wait to be distributed to the worker thread for execution. After all tasks in the task group areexecuted, a result array is returned. This mode is applicable to the execution of associated tasks. This API uses apromise to return the result. |
+| [execute](arkts-arkts-execute-f.md#execute-6) | Execute a concurrent task with Configs. |
+| [execute](arkts-arkts-execute-f.md#execute-7) | Execute a concurrent generics task with Configs. |
+| [execute](arkts-arkts-execute-f.md#execute-8) | Execute a concurrent task group with Configs. |
+| [executeDelayed](arkts-arkts-executedelayed-f.md#executedelayed-1) | Executes a task after a given delay. In this execution mode, you can set the task priority and call **cancel()** tocancel the execution. The task cannot be a task in a task group, serial queue, or asynchronous queue, or a periodictask. This API can be called only once for a continuous task, but multiple times for a non-continuous task. ThisAPI uses a promise to return the result. |
+| [executeDelayed](arkts-arkts-executedelayed-f.md#executedelayed-2) | Executes the generic task with a delay without verifying the parameter type and return value type of the task. ThisAPI uses a promise to return the result.The verification of the **executeDelayed** task works in conjunction with **new GenericsTask**, requiring that theparameter and return value types match those specified in **new GenericsTask**. |
+| [executePeriodically](arkts-arkts-executeperiodically-f.md#executeperiodically-1) | Executes a task periodically. In this execution mode, you can set the task priority and call **cancel()** to cancelthe execution. A periodic task cannot be a task in a task group, serial queue, or asynchronous queue. It cannotcall **execute()** again or have a dependency relationship. |
+| [executePeriodically](arkts-arkts-executeperiodically-f.md#executeperiodically-2) | Executes a generic task periodically, without verifying the parameter type and return value type of the task.The verification of the **executePeriodically** task works in conjunction with **new GenericsTask**, requiring thatthe parameter and return value types match those specified in **new GenericsTask**. |
+| [getTask](arkts-arkts-gettask-f.md#gettask-1) | Obtains the corresponding task instance by task ID, or by task ID and task name.&gt; **NOTE**&gt;&gt; - If no task instance is found based on the input task ID, **undefined** is returned.&gt;&gt; - If the corresponding task instance can be queried based on the input task ID but the thread that calls the&gt; **getTask** method is different from the thread that creates the task instance, **undefined** is returned.&gt;&gt; - If taskId and taskName are both passed, and the name of the task instance queried via task ID does not match&gt; the provided task name, **undefined** is returned. |
+| [getTaskPoolInfo](arkts-arkts-gettaskpoolinfo-f.md#gettaskpoolinfo-1) | Obtains the thread information and task information of the task pool. |
+| [isConcurrent](arkts-arkts-isconcurrent-f.md#isconcurrent-1) | Checks whether a function is a concurrent function. |
+| [terminateTask](arkts-arkts-terminatetask-f.md#terminatetask-1) | Terminates a continuous task in the task pool. It is called after the continuous task is complete. After the taskis terminated, the thread that executes the task may be reclaimed. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [AsyncRunner](arkts-taskpool-asyncrunner-c.md) | 表示异步队列，可以指定任务执行的并发度和排队策略。 |
-| [GenericsTask](arkts-taskpool-genericstask-c.md) | 表示泛型任务。**GenericsTask**继承自 [Task]{@link taskpool.execute(func: Function, ...args: Object[])}。 相比创建Task，创建GenericsTask可以在编译阶段校验并发函数的传参和返回值类型。其余行为与Task相同。 |
-| [LongTask](arkts-taskpool-longtask-c.md) | 表示长时任务。**LongTask**继承自 [Task]{@link taskpool.execute(func: Function, ...args: Object[])}。 长时任务不设置执行时间上限，长时间运行不会触发超时异常，但不支持将同一任务多次执行或者将该任务加入任务组（TaskGroup）。 执行长时任务的线程会持续存在，直到任务完成并调用[terminateTask]{@link taskpool.terminateTask}后，该线程在空闲时被回收。 |
-| [SequenceRunner](arkts-taskpool-sequencerunner-c.md) | 表示串行队列的任务，用于执行一组需要串行执行的任务。 |
-| [Task](arkts-taskpool-task-c.md) | 表示任务。任务可以多次执行，也可以放入任务组、串行队列或异步队列执行，还支持添加依赖关系。 |
-| [TaskGroup](arkts-taskpool-taskgroup-c.md) | 表示任务组，一次执行一组任务，适用于执行一组有关联的任务。如果所有任务正常执行，异步执行完毕后返回所有任务结果的数组， 数组中元素的顺序与调用[addTask]{@link taskpool.TaskGroup#addTask(task: Task)}添加任务的顺序相同。如果任意任务失败， 则会抛出对应异常。如果任务组中存在多个任务失败的情况，则会抛出第一个失败任务的异常。任务组可以多次执行，但执行后不能新增任务。 |
-| [TaskInfo](arkts-taskpool-taskinfo-c.md) | 任务的内部信息。 |
-| [TaskPoolInfo](arkts-taskpool-taskpoolinfo-c.md) | 任务池的内部信息。 |
-| [ThreadInfo](arkts-taskpool-threadinfo-c.md) | 工作线程的内部信息。 |
+| [AsyncRunner](arkts-arkts-asyncrunner-c.md) | Implements an asynchronous queue, for which you can specify the task execution concurrency and queuing policy. |
+| [GenericsTask](arkts-arkts-genericstask-c.md) | Implements a generic task. **GenericsTask** inherits from[Task](arkts-arkts-execute-f.md#execute-1).During the creation of a generic task, the passed-in parameter types and return value types of concurrent functionsare verified in the compilation phase. Other behaviors are the same as those during the creation of a task. |
+| [LongTask](arkts-arkts-longtask-c.md) | Describes a continuous task. **LongTask** inherits from[Task](arkts-arkts-execute-f.md#execute-1).No upper limit is set for the execution time of a continuous task, and no timeout exception is thrown if acontinuous task runs for a long period of time. However, a continuous task cannot be executed in a task group orexecuted for multiple times.The thread for executing a continuous task exists until [terminateTask](arkts-arkts-terminatetask-f.md#terminatetask-1) is calledafter the execution is complete. The thread is reclaimed when it is idle. |
+| [SequenceRunner](arkts-arkts-sequencerunner-c.md) | Implements a serial queue, in which all tasks are executed in sequence. |
+| [Task](arkts-arkts-task-c.md) | Enumerates tasks, which can be executed for multiple times, placed in a task group, serial queue, or asynchronousqueue for execution, or added with dependencies for execution. |
+| [TaskGroup](arkts-arkts-taskgroup-c.md) | Implements a task group, in which tasks are associated with each other and all tasks are executed at a time. If allthe tasks are executed normally, an array of task results is returned asynchronously, and the sequence of elementsin the array is the same as the sequence of tasks added by calling[addTask](arkts-arkts-taskgroup-c.md#addtask-2). If any task fails, the corresponding exception is thrown.If multiple tasks in the task group fail, the exception of the first failed task is thrown. A task group can beexecuted for multiple times, but no task can be added after the task group is executed. |
+| [TaskInfo](arkts-arkts-taskinfo-c.md) | Describes the internal information about a task. |
+| [TaskPoolInfo](arkts-arkts-taskpoolinfo-c.md) | Describes the internal information about a task pool. |
+| [ThreadInfo](arkts-arkts-threadinfo-c.md) | Describes the internal information about a worker thread. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Configs](arkts-taskpool-configs-i.md) | 任务或任务组的配置项。 |
-| [TaskResult](arkts-taskpool-taskresult-i.md) | 处于等待或执行过程中的任务进行取消操作后，在catch分支里捕获到**BusinessError**里的补充信息。其他场景下该信息为**undefined**。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [CallbackFunction](arkts-taskpool-callbackfunction-t.md) | 注册的回调函数类型。 |
-| [CallbackFunctionWithError](arkts-taskpool-callbackfunctionwitherror-t.md) | 注册带有错误码的回调函数类型。 |
+| [Configs](arkts-arkts-configs-i.md) | Defines the task configs interface |
+| [TaskResult](arkts-arkts-taskresult-i.md) | Describes the supplementary information captured in **BusinessError** in the catch branch after a task in thewaiting or execution phase is canceled. In other scenarios, the task result is **undefined**. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Priority](arkts-taskpool-priority-e.md) | 表示所创建任务（Task）执行时的优先级。工作线程优先级跟随任务优先级更新，对应关系请参考 [QoS等级定义](docroot://napi/qos-guidelines.md#qos-level)。 |
-| [State](arkts-taskpool-state-e.md) | 表示任务（Task）状态的枚举。当任务创建成功后，调用**execute()**，任务进入taskpool等待队列，状态设置为**WAITING**； 任务从等待队列出来进入taskpool工作线程中，任务状态更新为**RUNNING**；当任务执行完成，返回结果后任务状态重置为**WAITING**； 当主动cancel任务时，将任务状态更新为**CANCELED**。 |
+| [Priority](arkts-arkts-priority-e.md) | Enumerates the priorities available for created tasks. The task priority applies during task execution. The workerthread priority is updated with the task priority. For details about the mappings, see[QoS Level](../../../../napi/qos-guidelines.md#qos-level). |
+| [State](arkts-arkts-state-e.md) | Enumerates the task states. After a task is created and **execute()** is called, the task is placed in the internalqueue of the task pool and the state is **WAITING**. When the task is being executed by the worker thread of thetask pool, the state changes to **RUNNING**. After the task is executed and the result is returned, the state isreset to **WAITING**. When the task is proactively canceled, the state changes to **CANCELED**. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [CallbackFunction](arkts-arkts-callbackfunction-t.md) | Describes a callback function. |
+| [CallbackFunctionWithError](arkts-arkts-callbackfunctionwitherror-t.md) | Describes a callback function with an error message. |
 

@@ -2,7 +2,7 @@
 
 固定样式对话框的选项。
 
-**继承/实现关系：** DialogStyleOptions extends [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md#dialogbaseoptions)
+**继承/实现关系：** DialogStyleOptions extends [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md)
 
 **起始版本：** 26.1.0
 
@@ -34,7 +34,9 @@ buttonDirection?: DialogButtonOrientation
 buttons?: Array<DialogButton>
 ```
 
-对话框中的按钮数组。 提供时，对话框显示为带有按钮的警报样式对话框。 与图纸一起使用时，按钮显示在图纸列表下方。
+对话框中的按钮数组。
+提供时，对话框显示为带有按钮的警报样式对话框。
+与图纸一起使用时，按钮显示在图纸列表下方。
 
 **类型：** Array<DialogButton>
 
@@ -52,7 +54,8 @@ buttons?: Array<DialogButton>
 gridCount?: number
 ```
 
-对话框的网格计数。 取值限定为整数。
+对话框的网格计数。
+取值限定为整数。
 
 **类型：** number
 
@@ -88,7 +91,8 @@ message?: DialogMessage
 sheets?: Array<DialogSheet>
 ```
 
-action-sheet样式的表单项数组。 提供时，对话框将显示供用户选择的工作表项目。
+action-sheet样式的表单项数组。
+提供时，对话框将显示供用户选择的工作表项目。
 
 **类型：** Array<DialogSheet>
 

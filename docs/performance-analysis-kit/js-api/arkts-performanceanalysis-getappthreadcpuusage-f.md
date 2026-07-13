@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getAppThreadCpuUsage
@@ -12,7 +12,12 @@ import { hidebug } from '@ohos.hidebug';
 function getAppThreadCpuUsage(): ThreadCpuUsage[]
 ```
 
-Obtains the CPU usage of application threads. > **NOTE** > > This API involves cross-process communication and takes a long time. To avoid performance problems, you are > advised not to call this API in the main thread.
+Obtains the CPU usage of application threads.
+
+> **NOTE**
+>
+> This API involves cross-process communication and takes a long time. To avoid performance problems, you are
+> advised not to call this API in the main thread.
 
 **Since:** 12
 

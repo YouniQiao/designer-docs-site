@@ -1,4 +1,4 @@
-# AVQueueInfo
+# AVQueueInfo (System API)
 
 The play list information definition.
 
@@ -13,6 +13,22 @@ The play list information definition.
 ```TypeScript
 import { avSession } from '@kit.AVSessionKit';
 ```
+
+## avQueueId
+
+```TypeScript
+avQueueId: string
+```
+
+The id of play list
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**System API:** This is a system API.
 
 ## avQueueImage
 
@@ -46,22 +62,6 @@ The name of play list
 
 **System API:** This is a system API.
 
-## avQueueId
-
-```TypeScript
-avQueueId: string
-```
-
-The id of play list
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-**System API:** This is a system API.
-
 ## bundleName
 
 ```TypeScript
@@ -81,12 +81,13 @@ The bundle name of application which current play list belongs to.
 ## lastPlayedTime
 
 ```TypeScript
-lastPlayedTime?: long
+lastPlayedTime?: number
 ```
 
-The time when the user last played the playlist. The time format can be system, such as 1611081385000, it means 2021-01-20 02:36:25.
+The time when the user last played the playlist.
+The time format can be system, such as 1611081385000, it means 2021-01-20 02:36:25.
 
-**Type:** long
+**Type:** number
 
 **Since:** 11
 

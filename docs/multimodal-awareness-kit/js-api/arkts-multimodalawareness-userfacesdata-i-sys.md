@@ -2,7 +2,7 @@
 
 Defines user face data.
 
-**Inheritance/Implementation:** UserFacesData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md#userstatusdata)
+**Inheritance/Implementation:** UserFacesData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md)
 
 **Since:** 26.0.0
 
@@ -13,7 +13,7 @@ Defines user face data.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## angularVelocity
@@ -22,7 +22,7 @@ import { userStatus } from '@ohos.multimodalAwareness.userStatus';
 angularVelocity?: number[]
 ```
 
-Angular velocity of user motion status.
+Angular velocity of user motion status, in rad/s.
 
 **Type:** number[]
 
@@ -41,6 +41,7 @@ azimuth?: number[]
 ```
 
 Azimuth of user motion status.
+The value ranges from 0 to 360, in degrees.
 
 **Type:** number[]
 
@@ -58,7 +59,8 @@ Azimuth of user motion status.
 faceNum?: number
 ```
 
-Number of faces detected. The value range is all integers.
+Number of faces detected.
+The value must be an integer within [0,3].
 
 **Type:** number
 
@@ -76,7 +78,7 @@ Number of faces detected. The value range is all integers.
 gravityAcceleration?: number[]
 ```
 
-Gravity acceleration of user motion status.
+Gravity acceleration of user motion status, in m/s².
 
 **Type:** number[]
 
@@ -94,7 +96,7 @@ Gravity acceleration of user motion status.
 linearAcceleration?: number[][]
 ```
 
-Linear acceleration of user motion status.
+Linear acceleration of user motion status, in m/s².
 
 **Type:** number[][]
 
@@ -113,6 +115,7 @@ visualAngle?: number[]
 ```
 
 User visual angle.
+The value ranges from 0 to 90, in degrees.
 
 **Type:** number[]
 

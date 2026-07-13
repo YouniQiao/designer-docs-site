@@ -1,6 +1,7 @@
 # AbilityState
 
-Enumerates the ability states. This enum can be used together with [AbilityRunningInfo](arkts-ability-abilityrunninginfo-i.md#abilityrunninginfo) to return the ability state.
+Enumerates the ability states. This enum can be used together with
+[AbilityRunningInfo](arkts-ability-abilityrunninginfo-i.md) to return the ability state.
 
 **Since:** 14
 

@@ -44,7 +44,8 @@ Non-CJK text be wrapped at any character
 BREAK_WORD = 2
 ```
 
-Non-CJK text can be wrapped at any character and if a complete word can be preserved in space breaks, the word must be kept on the line.
+Non-CJK text can be wrapped at any character
+and if a complete word can be preserved in space breaks, the word must be kept on the line.
 
 **起始版本：** 11
 

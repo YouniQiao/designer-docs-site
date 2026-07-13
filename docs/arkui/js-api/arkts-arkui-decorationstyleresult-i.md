@@ -48,7 +48,13 @@ Style of the text decoration.
 thicknessScale?: number
 ```
 
-Scale factor of the text decoration thickness. Default value: **1.0** Value range: [0, +∞) Note: Negative values are treated as the default value.
+Scale factor of the text decoration thickness.
+
+Default value: **1.0**
+
+Value range: [0, +∞)
+
+Note: Negative values are treated as the default value.
 
 **Type:** number
 

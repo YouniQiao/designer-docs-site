@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkSecurity } from '@ohos.net.networkSecurity';
+import { networkSecurity } from '@kit.NetworkKit';
 ```
 
 ## isCleartextPermitted
@@ -12,7 +12,8 @@ import { networkSecurity } from '@ohos.net.networkSecurity';
 export function isCleartextPermitted(): boolean
 ```
 
-Checks whether the Cleartext traffic is permitted. To invoke this method, you must have the {@code ohos.permission.INTERNET} permission.
+Checks whether the Cleartext traffic is permitted.
+To invoke this method, you must have the {@code ohos.permission.INTERNET} permission.
 
 **Since:** 18
 

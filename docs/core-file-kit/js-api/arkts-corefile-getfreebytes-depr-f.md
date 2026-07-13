@@ -6,7 +6,8 @@
 function getFreeBytes(path: string, callback: AsyncCallback<number>): void
 ```
 
-Obtains the free size of the specified file system, in bytes. This API uses an asynchronous callback to return the result.
+Obtains the free size of the specified file system, in bytes. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

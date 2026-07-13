@@ -34,7 +34,11 @@ Gets the coordinates of the top-left corner of the current component based on it
 displayX: number
 ```
 
-X coordinate relative to the upper left corner of the screen. Value range: [0, +∞) Unit: vp
+X coordinate relative to the upper left corner of the screen.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 
@@ -52,7 +56,11 @@ X coordinate relative to the upper left corner of the screen. Value range: [0, +
 displayY: number
 ```
 
-Y coordinate relative to the upper left corner of the screen. Value range: [0, +∞) Unit: vp
+Y coordinate relative to the upper left corner of the screen.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 
@@ -70,7 +78,11 @@ Y coordinate relative to the upper left corner of the screen. Value range: [0, +
 globalDisplayX?: number
 ```
 
-X coordinate in the coordinate system with the upper left corner of the main screen as the origin. Unit: vp Value range: [0, +∞)
+X coordinate in the coordinate system with the upper left corner of the main screen as the origin.
+
+Unit: vp
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -88,7 +100,11 @@ X coordinate in the coordinate system with the upper left corner of the main scr
 globalDisplayY?: number
 ```
 
-Y coordinate in the coordinate system with the upper left corner of the main screen as the origin. Unit: vp Value range: [0, +∞)
+Y coordinate in the coordinate system with the upper left corner of the main screen as the origin.
+
+Unit: vp
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -106,7 +122,11 @@ Y coordinate in the coordinate system with the upper left corner of the main scr
 windowX: number
 ```
 
-X coordinate relative to the upper left corner of the window. Value range: [0, +∞) Unit: vp
+X coordinate relative to the upper left corner of the window.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 
@@ -124,7 +144,11 @@ X coordinate relative to the upper left corner of the window. Value range: [0, +
 windowY: number
 ```
 
-Y coordinate relative to the upper left corner of the window. Value range: [0, +∞) Unit: vp
+Y coordinate relative to the upper left corner of the window.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 
@@ -142,7 +166,11 @@ Y coordinate relative to the upper left corner of the window. Value range: [0, +
 x: number
 ```
 
-X coordinate relative to the upper left corner of the component. Value range: [0, +∞) Unit: vp
+X coordinate relative to the upper left corner of the component.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 
@@ -160,7 +188,11 @@ X coordinate relative to the upper left corner of the component. Value range: [0
 y: number
 ```
 
-Y coordinate relative to the upper left corner of the component. Value range: [0, +∞) Unit: vp
+Y coordinate relative to the upper left corner of the component.
+
+Value range: [0, +∞)
+
+Unit: vp
 
 **Type:** number
 

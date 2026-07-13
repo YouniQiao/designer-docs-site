@@ -2,6 +2,7 @@
 
 Defines XComponent.
 
+
 ## XComponent
 
 ```TypeScript

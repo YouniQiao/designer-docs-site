@@ -1,8 +1,15 @@
 # GridLayoutAlgorithm
 
-Grid layout algorithm class. > **NOTE** > > The object of the **GridLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as the > input parameter of the > [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the > layout algorithm.
+Grid layout algorithm class.
 
-**Inheritance/Implementation:** GridLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md#layoutalgorithm)
+> **NOTE**
+>
+> The object of the **GridLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as the
+> input parameter of the
+> [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the
+> layout algorithm.
+
+**Inheritance/Implementation:** GridLayoutAlgorithm implements [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md)
 
 **Since:** 24
 
@@ -36,7 +43,11 @@ Constructs the grid layout algorithm class.
 @Trace public columnsGap?: LengthMetrics
 ```
 
-Spacing between columns. Default value: **LengthMetrics.vp(0)** Invalid values are treated as the default value.
+Spacing between columns.
+
+Default value: **LengthMetrics.vp(0)**
+
+Invalid values are treated as the default value.
 
 **Type:** LengthMetrics
 
@@ -56,7 +67,11 @@ Spacing between columns. Default value: **LengthMetrics.vp(0)** Invalid values a
 @Trace public columnsTemplate?: string | ItemFillPolicy
 ```
 
-Number of columns in the grid layout. Default value: **'1fr'** Invalid values are treated as the default value.
+Number of columns in the grid layout.
+
+Default value: **'1fr'**
+
+Invalid values are treated as the default value.
 
 **Type:** string | ItemFillPolicy
 
@@ -76,7 +91,11 @@ Number of columns in the grid layout. Default value: **'1fr'** Invalid values ar
 @Trace public rowsGap?: LengthMetrics
 ```
 
-Spacing between rows. Default value: **LengthMetrics.vp(0)** Invalid values are treated as the default value.
+Spacing between rows.
+
+Default value: **LengthMetrics.vp(0)**
+
+Invalid values are treated as the default value.
 
 **Type:** LengthMetrics
 

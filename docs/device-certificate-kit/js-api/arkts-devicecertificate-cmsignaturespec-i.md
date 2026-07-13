@@ -1,6 +1,7 @@
 # CMSignatureSpec
 
-Represents a set of parameters used for signing or signature verification, including the key usage purpose, padding mode, and digest algorithm.
+Represents a set of parameters used for signing or signature verification, including the key usage purpose, padding
+mode, and digest algorithm.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Represents a set of parameters used for signing or signature verification, inclu
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## digest
@@ -18,7 +19,8 @@ import { certificateManager } from '@ohos.security.certManager';
 digest?: CmKeyDigest
 ```
 
-Digest algorithm. Default value: CM_DIGEST_SHA256: indicates that the SHA256 digest algorithm is used.
+Digest algorithm.
+Default value: CM_DIGEST_SHA256: indicates that the SHA256 digest algorithm is used.
 
 **Type:** CmKeyDigest
 
@@ -32,7 +34,8 @@ Digest algorithm. Default value: CM_DIGEST_SHA256: indicates that the SHA256 dig
 padding?: CmKeyPadding
 ```
 
-Enumeration representing the padding mode. Default value: CM_PADDING_PSS: indicates that the PSS filling mode is used.
+Enumeration representing the padding mode.
+Default value: CM_PADDING_PSS: indicates that the PSS filling mode is used.
 
 **Type:** CmKeyPadding
 

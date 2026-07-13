@@ -28,7 +28,8 @@ The ordinal number of the currently matched lookup item (starting from 0).
 isDoneCounting: boolean
 ```
 
-Indicates whether the current in-page search operation is complete. The method may be called back multiple times until isDoneCounting is true.
+Indicates whether the current in-page search operation is complete. The method may be called back multiple times
+until isDoneCounting is true.
 
 **Type:** boolean
 

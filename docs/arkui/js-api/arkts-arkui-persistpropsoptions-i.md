@@ -1,6 +1,7 @@
 # PersistPropsOptions
 
-Defines a key-value pair object used to specify persistent properties and their default values, passed as a parameter to [persistProps](arkts-arkui-persistentstorage-c.md#persistprops-1).
+Defines a key-value pair object used to specify persistent properties and their default values, passed as a parameter
+to [persistProps](arkts-arkui-persistentstorage-c.md#persistprops-1).
 
 **Since:** 10
 
@@ -12,7 +13,8 @@ Defines a key-value pair object used to specify persistent properties and their 
 defaultValue: number | string | boolean | Object
 ```
 
-Default value used for initialization if the specified **key** is not found in PersistentStorage and AppStorage. Since API version 12, **defaultValue** can be set to **null** or **undefined**.
+Default value used for initialization if the specified **key** is not found in PersistentStorage and AppStorage.
+Since API version 12, **defaultValue** can be set to **null** or **undefined**.
 
 **Type:** number | string | boolean | Object
 

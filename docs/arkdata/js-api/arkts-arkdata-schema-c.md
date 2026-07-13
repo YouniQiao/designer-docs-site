@@ -1,6 +1,7 @@
 # Schema
 
-Defines the schema of a KV store. You can create a **Schema** object and pass it in [Options](arkts-arkdata-options-i.md#options) when creating or opening a KV store.
+Defines the schema of a KV store. You can create a **Schema** object and pass it in
+[Options](arkts-arkdata-options-i.md) when creating or opening a KV store.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Defines the schema of a KV store. You can create a **Schema** object and pass it
 ## Modules to Import
 
 ```TypeScript
-import { distributedKVStore } from '@ohos.data.distributedKVStore';
+import { distributedKVStore } from '@kit.ArkData';
 ```
 
 ## constructor

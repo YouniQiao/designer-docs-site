@@ -14,7 +14,8 @@ CommonScrollableMethod
 autoAdjustScrollBarMargin(enable: boolean | undefined): T
 ```
 
-Set the scroll bar auto adjust the margin to avoid the padding, safeAreaPadding, and contentStartOffset/contentEndOffset of the component.
+Set the scroll bar auto adjust the margin to avoid the padding, safeAreaPadding, and
+contentStartOffset/contentEndOffset of the component.
 
 **Since:** 26.0.0
 
@@ -296,7 +297,8 @@ Called when setting whether to enable fading Edge effect.
 flingSpeedLimit(speedLimit: number): T
 ```
 
-Sets the maximum initial velocity at the start of the fling animation that occurs after gesture-driven scrolling ends.
+Sets the maximum initial velocity at the start of the fling animation that occurs after gesture-driven scrolling
+ends.
 
 **Since:** 11
 
@@ -558,7 +560,8 @@ Triggered when the scrollable component scrolls.
 onScrollStart(event: () => void): T
 ```
 
-Triggered when the scrollable component starts scrolling initiated by the user's finger dragging the component or its scrollbar.
+Triggered when the scrollable component starts scrolling initiated by the user's finger dragging the component or
+its scrollbar.
 
 **Since:** 11
 

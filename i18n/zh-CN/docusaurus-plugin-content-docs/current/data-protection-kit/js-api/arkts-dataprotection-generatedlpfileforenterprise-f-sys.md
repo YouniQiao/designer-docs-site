@@ -6,7 +6,13 @@
 function generateDlpFileForEnterprise(plaintextFd: number, dlpFd: number, property: DLPProperty, customProperty: CustomProperty): Promise<void>
 ```
 
-将明文文件加密生成企业账号DLP文件，仅支持企业账号调用。使用Promise异步回调。 用于将明文文件加密生成企业账号的DLP权限受控文件，实现企业级的文件权限管理。 > **说明：** > > 该接口仅支持企业账号调用，需要企业自行搭建企业账号服务器配套使用。使用该接口可以将明文文件加密生成权限受控文件，由企业服务器管控账号是否有权限解密该文件。
+将明文文件加密生成企业账号DLP文件，仅支持企业账号调用。使用Promise异步回调。
+
+用于将明文文件加密生成企业账号的DLP权限受控文件，实现企业级的文件权限管理。
+
+> **说明：**
+>
+> 该接口仅支持企业账号调用，需要企业自行搭建企业账号服务器配套使用。使用该接口可以将明文文件加密生成权限受控文件，由企业服务器管控账号是否有权限解密该文件。
 
 **起始版本：** 21
 
@@ -36,7 +42,7 @@ function generateDlpFileForEnterprise(plaintextFd: number, dlpFd: number, proper
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs.<br>**适用版本：** 20 |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs.<br>**适用版本：** 20+ |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100002](../errorcode-dlp.md#19100002-加解密出错) | Credential service busy due to too many tasks or duplicate tasks. |
 | [19100003](../errorcode-dlp.md#19100003-加解密超时) | Credential task time out. |

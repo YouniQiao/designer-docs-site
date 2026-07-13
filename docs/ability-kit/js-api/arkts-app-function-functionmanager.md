@@ -16,17 +16,21 @@ import { functionManager } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[invokeFunction](arkts-functionmanager-invokefunction-f-sys.md#invokeFunction-1) | Invoke a function by functionNamespace and functionName. |
-| <!--DelRow-->[queryFunctions](arkts-functionmanager-queryfunctions-f-sys.md#queryFunctions-1) | Query all available functions. |
+| [invokeFunction](arkts-ability-invokefunction-f-sys.md#invokefunction-1) | Invoke a function by functionNamespace and functionName. |
+| [queryFunctions](arkts-ability-queryfunctions-f-sys.md#queryfunctions-1) | Query all available functions. |
+<!--DelEnd-->
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[InvokeOptions](arkts-functionmanager-invokeoptions-i-sys.md) | Invoke options for function execution. |
-| <!--DelRow-->[InvokeResult](arkts-functionmanager-invokeresult-i-sys.md) | Encapsulates the success or failure status of function invocation. |
+| [InvokeOptions](arkts-ability-invokeoptions-i-sys.md) | Invoke options for function execution. |
+| [InvokeResult](arkts-ability-invokeresult-i-sys.md) | Encapsulates the success or failure status of function invocation. |
+<!--DelEnd-->
 

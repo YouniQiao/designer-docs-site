@@ -1,6 +1,8 @@
 # UserAgentBrandVersion
 
-Class that holds brand name, major version and full version. Brand name and major version used to generated User-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hint sec-ch-ua-full-version-list.
+Class that holds brand name, major version and full version. Brand name and major version used to generated
+User-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hint
+sec-ch-ua-full-version-list.
 
 **Since:** 24
 
@@ -9,7 +11,7 @@ Class that holds brand name, major version and full version. Brand name and majo
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## getBrand

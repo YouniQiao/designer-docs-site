@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## activateSceneAnimation
@@ -12,7 +12,11 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function activateSceneAnimation(formId: string): Promise<void>
 ```
 
-Requests to activate a widget. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state, the widget is the same as a common widget. In the active state, the widget can start the **LiveFormExtensionAbility** process developed by the widget host to implement animations.
+Requests to activate a widget. This API takes effect only for
+[scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a
+promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state,
+the widget is the same as a common widget. In the active state, the widget can start the
+**LiveFormExtensionAbility** process developed by the widget host to implement animations.
 
 **Since:** 20
 

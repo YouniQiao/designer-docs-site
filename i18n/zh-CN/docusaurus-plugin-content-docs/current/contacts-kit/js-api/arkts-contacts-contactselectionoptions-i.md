@@ -12,7 +12,8 @@
 filter?: ContactSelectionFilter
 ```
 
-联系人查询过滤器。 从API version 15 开始，该接口支持在原子化服务中使用。
+联系人查询过滤器。
+从API version 15 开始，该接口支持在原子化服务中使用。
 
 **类型：** ContactSelectionFilter
 
@@ -28,7 +29,8 @@ filter?: ContactSelectionFilter
 isAutoDismissOnNavigation?: boolean
 ```
 
-联系人picker发生页面路由时是否自动关闭，比如应用退后台场景 默认值为false
+联系人picker发生页面路由时是否自动关闭，比如应用退后台场景
+默认值为false
 
 **类型：** boolean
 
@@ -46,7 +48,8 @@ isAutoDismissOnNavigation?: boolean
 isDisplayedByName?: boolean
 ```
 
-是否按联系人姓名维度展示，true:按联系人姓名维度展示，false:按联系人号码维度展示，默认值为false。 从API version 15 开始，该接口支持在原子化服务中使用。
+是否按联系人姓名维度展示，true:按联系人姓名维度展示，false:按联系人号码维度展示，默认值为false。
+从API version 15 开始，该接口支持在原子化服务中使用。
 
 **类型：** boolean
 
@@ -78,7 +81,8 @@ isMultiSelect?: boolean
 maxSelectable?: number
 ```
 
-联系人数量上限。默认值为10000，超出上限则以默认值筛选。 从API version 15 开始，该接口支持在原子化服务中使用。
+联系人数量上限。默认值为10000，超出上限则以默认值筛选。
+从API version 15 开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 

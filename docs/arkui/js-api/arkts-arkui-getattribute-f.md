@@ -6,7 +6,8 @@
 export function getAttribute(node: FrameNode, nodeType: 'Text'): TextAttribute | undefined
 ```
 
-Obtains the attributes of a **Text** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Text** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -36,7 +37,8 @@ Obtains the attributes of a **Text** node. If the node is not created using ArkT
 export function getAttribute(node: FrameNode, nodeType: 'Column'): ColumnAttribute | undefined
 ```
 
-Obtains the attributes of a **Column** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Column** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -66,7 +68,8 @@ Obtains the attributes of a **Column** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'Row'): RowAttribute | undefined
 ```
 
-Obtains the attributes of a **Row** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Row** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -96,7 +99,8 @@ Obtains the attributes of a **Row** node. If the node is not created using ArkTS
 export function getAttribute(node: FrameNode, nodeType: 'Stack'): StackAttribute | undefined
 ```
 
-Obtains the attributes of a **Stack** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Stack** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -126,7 +130,8 @@ Obtains the attributes of a **Stack** node. If the node is not created using Ark
 export function getAttribute(node: FrameNode, nodeType: 'Flex'): FlexAttribute | undefined
 ```
 
-Obtains the Flex node attributes. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the Flex node attributes. If the node is not created using ArkTS, cross-language access must be enabled;
+otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -156,7 +161,8 @@ Obtains the Flex node attributes. If the node is not created using ArkTS, cross-
 export function getAttribute(node: FrameNode, nodeType: 'Swiper'): SwiperAttribute | undefined
 ```
 
-Obtains the attributes of a **Swiper** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Swiper** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -186,7 +192,8 @@ Obtains the attributes of a **Swiper** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'Progress'): ProgressAttribute | undefined
 ```
 
-Obtains the attributes of a **Progress** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Progress** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -216,7 +223,8 @@ Obtains the attributes of a **Progress** node. If the node is not created using 
 function getAttribute(node: FrameNode, nodeType: 'Scroll'): ScrollAttribute | undefined
 ```
 
-Obtains the attributes of a **Scroll** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Scroll** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 15
 
@@ -246,7 +254,9 @@ Obtains the attributes of a **Scroll** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'RelativeContainer'): RelativeContainerAttribute | undefined
 ```
 
-Obtains the attributes of a **RelativeContainer** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **RelativeContainer** node. If the node is not created using ArkTS, cross-language
+access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created
+nodes.
 
 **Since:** 20
 
@@ -276,7 +286,9 @@ Obtains the attributes of a **RelativeContainer** node. If the node is not creat
 export function getAttribute(node: FrameNode, nodeType: 'LoadingProgress'): LoadingProgressAttribute | undefined
 ```
 
-Obtains the attributes of a [LoadingProgress](../arkts-components/arkts-arkui-loadingprogress.md) node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a [LoadingProgress](../arkts-components/arkts-arkui-loadingprogress.md) node. If the node is not created using ArkTS,
+cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support
+declaratively created nodes.
 
 **Since:** 20
 
@@ -306,7 +318,8 @@ Obtains the attributes of a [LoadingProgress](../arkts-components/arkts-arkui-lo
 export function getAttribute(node: FrameNode, nodeType: 'Image'): ImageAttribute | undefined
 ```
 
-Obtains the attributes of an **Image** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of an **Image** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -336,7 +349,8 @@ Obtains the attributes of an **Image** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'List'): ListAttribute | undefined
 ```
 
-Obtains the attributes of a **List** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **List** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -366,7 +380,8 @@ Obtains the attributes of a **List** node. If the node is not created using ArkT
 export function getAttribute(node: FrameNode, nodeType: 'ListItem'): ListItemAttribute | undefined
 ```
 
-Obtains the attributes of a **ListItem** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **ListItem** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -396,7 +411,8 @@ Obtains the attributes of a **ListItem** node. If the node is not created using 
 export function getAttribute(node: FrameNode, nodeType: 'TextInput'): TextInputAttribute | undefined
 ```
 
-Obtains the attributes of a **TextInput** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **TextInput** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -426,7 +442,8 @@ Obtains the attributes of a **TextInput** node. If the node is not created using
 export function getAttribute(node: FrameNode, nodeType: 'Button'): ButtonAttribute | undefined
 ```
 
-Obtains the attributes of a **Button** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Button** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -456,7 +473,8 @@ Obtains the attributes of a **Button** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'ListItemGroup'): ListItemGroupAttribute | undefined
 ```
 
-Obtains the attributes of a **ListItemGroup** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **ListItemGroup** node. If the node is not created using ArkTS, cross-language access
+must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -486,7 +504,8 @@ Obtains the attributes of a **ListItemGroup** node. If the node is not created u
 export function getAttribute(node: FrameNode, nodeType: 'WaterFlow'): WaterFlowAttribute | undefined
 ```
 
-Obtains the attributes of a **WaterFlow** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **WaterFlow** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -516,7 +535,8 @@ Obtains the attributes of a **WaterFlow** node. If the node is not created using
 export function getAttribute(node: FrameNode, nodeType: 'FlowItem'): FlowItemAttribute | undefined
 ```
 
-Obtains the attributes of a **FlowItem** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **FlowItem** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -546,7 +566,8 @@ Obtains the attributes of a **FlowItem** node. If the node is not created using 
 export function getAttribute(node: FrameNode, nodeType: 'XComponent'): XComponentAttribute | undefined
 ```
 
-Obtain the attributes of an **XComponent** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtain the attributes of an **XComponent** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -576,7 +597,8 @@ Obtain the attributes of an **XComponent** node. If the node is not created usin
 export function getAttribute(node: FrameNode, nodeType: 'Checkbox'): CheckboxAttribute | undefined
 ```
 
-Obtains the attributes of a **Checkbox** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Checkbox** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -606,7 +628,8 @@ Obtains the attributes of a **Checkbox** node. If the node is not created using 
 export function getAttribute(node: FrameNode, nodeType: 'Radio'): RadioAttribute | undefined
 ```
 
-Obtains the attributes of a **Radio** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Radio** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -636,7 +659,8 @@ Obtains the attributes of a **Radio** node. If the node is not created using Ark
 export function getAttribute(node: FrameNode, nodeType: 'Slider'): SliderAttribute | undefined
 ```
 
-Obtains the attributes of a **Slider** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Slider** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -666,7 +690,8 @@ Obtains the attributes of a **Slider** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'Toggle'): ToggleAttribute | undefined
 ```
 
-Obtains the attributes of a **Toggle** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Toggle** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -696,7 +721,8 @@ Obtains the attributes of a **Toggle** node. If the node is not created using Ar
 export function getAttribute(node: FrameNode, nodeType: 'TextArea'): TextAreaAttribute | undefined
 ```
 
-Obtains the attributes of a **TextArea** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **TextArea** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -726,7 +752,8 @@ Obtains the attributes of a **TextArea** node. If the node is not created using 
 export function getAttribute(node: FrameNode, nodeType: 'Grid'): GridAttribute | undefined
 ```
 
-Obtains the attributes of a **Grid** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **Grid** node. If the node is not created using ArkTS, cross-language access must be
+enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 
@@ -756,7 +783,8 @@ Obtains the attributes of a **Grid** node. If the node is not created using ArkT
 export function getAttribute(node: FrameNode, nodeType: 'GridItem'): GridItemAttribute | undefined
 ```
 
-Obtains the attributes of a **GridItem** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
+Obtains the attributes of a **GridItem** node. If the node is not created using ArkTS, cross-language access must
+be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes.
 
 **Since:** 20
 

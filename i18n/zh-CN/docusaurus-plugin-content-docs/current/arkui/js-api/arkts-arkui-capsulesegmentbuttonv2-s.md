@@ -44,7 +44,11 @@ $selectedIndex?: OnSelectedIndexChange
 readonly buttonBackgroundBlurStyle?: BlurStyle
 ```
 
-配置分段按钮背板模糊材质。 默认值：undefined 该成员只读，不支持更改。
+配置分段按钮背板模糊材质。
+
+默认值：undefined
+
+该成员只读，不支持更改。
 
 **类型：** BlurStyle
 
@@ -62,7 +66,11 @@ readonly buttonBackgroundBlurStyle?: BlurStyle
 readonly buttonBackgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-配置分段按钮背板模糊材质配置参数。 默认值：undefined 该成员只读，不支持更改。
+配置分段按钮背板模糊材质配置参数。
+
+默认值：undefined
+
+该成员只读，不支持更改。
 
 **类型：** BackgroundBlurStyleOptions
 
@@ -80,7 +88,13 @@ readonly buttonBackgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 readonly buttonBackgroundColor?: ColorMetrics
 ```
 
-配置分段按钮背板颜色。 默认值：`$r('sys.color.segment_button_v2_tab_button_background')` 值为undefined时，按默认值处理。 该成员只读，不支持更改。
+配置分段按钮背板颜色。
+
+默认值：`$r('sys.color.segment_button_v2_tab_button_background')`
+
+值为undefined时，按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -98,7 +112,11 @@ readonly buttonBackgroundColor?: ColorMetrics
 readonly buttonBackgroundEffect?: BackgroundEffectOptions
 ```
 
-配置分段按钮背板模糊配置参数。 默认值：undefined 该成员只读，不支持更改。
+配置分段按钮背板模糊配置参数。
+
+默认值：undefined
+
+该成员只读，不支持更改。
 
 **类型：** BackgroundEffectOptions
 
@@ -116,7 +134,15 @@ readonly buttonBackgroundEffect?: BackgroundEffectOptions
 readonly buttonBorderRadius?: LengthMetrics
 ```
 
-配置分段按钮背板的圆角大小。 取值范围：[0, +∞) 默认值：`$r('sys.float.segment_button_v2_background_corner_radius')` 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮背板的圆角大小。
+
+取值范围：[0, +∞)
+
+默认值：`$r('sys.float.segment_button_v2_background_corner_radius')`
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -134,7 +160,16 @@ readonly buttonBorderRadius?: LengthMetrics
 readonly buttonMinHeight?: LengthMetrics
 ```
 
-配置分段按钮最小高度。 取值范围：[0, +∞) 默认值：只有纯文本或者纯图标选项时：`$r('sys.float.segment_button_v2_singleline_background_height')`；有图文混合的选项时： `$r('sys.float.segment_button_v2_doubleline_background_height')` 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮最小高度。
+
+取值范围：[0, +∞)
+
+默认值：只有纯文本或者纯图标选项时：`$r('sys.float.segment_button_v2_singleline_background_height')`；有图文混合的选项时：
+`$r('sys.float.segment_button_v2_doubleline_background_height')`
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -152,7 +187,15 @@ readonly buttonMinHeight?: LengthMetrics
 readonly buttonPadding?: LengthMetrics
 ```
 
-配置分段按钮内边距。 取值范围：[0, +∞) 默认值：`$r('sys.float.padding_level1')` 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮内边距。
+
+取值范围：[0, +∞)
+
+默认值：`$r('sys.float.padding_level1')`
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -170,7 +213,10 @@ readonly buttonPadding?: LengthMetrics
 readonly enableStateAnimation?: boolean
 ```
 
-设置当通过变量修改selectedIndex值时，是否开启分段按钮的属性动画。 true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用原有动画。 默认值：false 该成员只读，不支持更改。
+设置当通过变量修改selectedIndex值时，是否开启分段按钮的属性动画。
+true表示开启分段按钮的属性动画；未配置该属性或值为false时表示不开启分段按钮的属性动画，使用原有动画。
+默认值：false
+该成员只读，不支持更改。
 
 **类型：** boolean
 
@@ -188,7 +234,15 @@ readonly enableStateAnimation?: boolean
 readonly itemBorderRadius?: LengthMetrics
 ```
 
-配置分段按钮选项的圆角大小。 取值范围：[0, +∞) 默认值：`$r('sys.float.segment_button_v2_selected_corner_radius')` 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选项的圆角大小。
+
+取值范围：[0, +∞)
+
+默认值：`$r('sys.float.segment_button_v2_selected_corner_radius')`
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -206,7 +260,17 @@ readonly itemBorderRadius?: LengthMetrics
 readonly itemFontColor?: ColorMetrics
 ```
 
-配置分段按钮选中项的字体颜色。 默认值：`$r('sys.color.font_primary')` 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。
+配置分段按钮选中项的字体颜色。
+
+默认值：`$r('sys.color.font_primary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -224,7 +288,19 @@ readonly itemFontColor?: ColorMetrics
 readonly itemFontSize?: LengthMetrics
 ```
 
-配置分段按钮非选中选项的字体大小。 取值范围：[0, +∞) 默认值：`14fp` **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemFontSize不生效。 该成员只读，不支持更改。
+配置分段按钮非选中选项的字体大小。
+
+取值范围：[0, +∞)
+
+默认值：`14fp`
+
+**说明：**
+
+不支持设置百分比类型，异常值按默认值处理。
+
+items设置textModifier的fontSize属性值时，itemFontSize不生效。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -242,7 +318,17 @@ readonly itemFontSize?: LengthMetrics
 readonly itemFontWeight?: FontWeight
 ```
 
-配置分段按钮非选中选项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemFontWeight不生效。 该成员只读，不支持更改。
+配置分段按钮非选中选项的字体字重。
+
+默认值：FontWeight.Medium
+
+超出取值范围按默认值处理。
+
+**说明：**
+
+items设置textModifier的fontWeight属性值时，itemFontWeight不生效。
+
+该成员只读，不支持更改。
 
 **类型：** FontWeight
 
@@ -260,7 +346,17 @@ readonly itemFontWeight?: FontWeight
 readonly itemIconFillColor?: ColorMetrics
 ```
 
-配置分段按钮非选中的选项图标颜色。 默认值：`$r('sys.color.font_secondary')` 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemIconFillColor不生效。 该成员只读，不支持更改。
+配置分段按钮非选中的选项图标颜色。
+
+默认值：`$r('sys.color.font_secondary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置iconModifier的fillColor属性值时，itemIconFillColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -278,7 +374,19 @@ readonly itemIconFillColor?: ColorMetrics
 readonly itemIconSize?: SizeT<LengthMetrics>
 ```
 
-配置分段按钮选项中Image类型的图标大小。 取值范围：[0, +∞) 默认值：`{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) }` 超出取值范围按默认值处理。 **说明：** items设置iconModifier的width、height属性值时，itemIconSize不生效。 该成员只读，不支持更改。
+配置分段按钮选项中Image类型的图标大小。
+
+取值范围：[0, +∞)
+
+默认值：`{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) }`
+
+超出取值范围按默认值处理。
+
+**说明：**
+
+items设置iconModifier的width、height属性值时，itemIconSize不生效。
+
+该成员只读，不支持更改。
 
 **类型：** SizeT<LengthMetrics>
 
@@ -296,7 +404,17 @@ readonly itemIconSize?: SizeT<LengthMetrics>
 readonly itemMaxFontScale?: number | Resource
 ```
 
-配置分段按钮选项文字大小的最大放大倍数。 取值范围：[1, 2] 默认值：1 **说明：** 设置的值小于 1 时，按值为 1 处理，设置的值大于 2，按值为 2 处理，异常值默认不生效。 该成员只读，不支持更改。
+配置分段按钮选项文字大小的最大放大倍数。
+
+取值范围：[1, 2]
+
+默认值：1
+
+**说明：**
+
+设置的值小于 1 时，按值为 1 处理，设置的值大于 2，按值为 2 处理，异常值默认不生效。
+
+该成员只读，不支持更改。
 
 **类型：** number | Resource
 
@@ -314,7 +432,17 @@ readonly itemMaxFontScale?: number | Resource
 readonly itemMinFontScale?: number | Resource
 ```
 
-配置分段按钮选项文字大小的最小字体缩放倍数。 取值范围：[0, 1] 默认值：0 **说明：** 设置的值小于 0 时，按值为 0 处理，设置的值大于 1，按值为 1 处理，异常值默认不生效。 该成员只读，不支持更改。
+配置分段按钮选项文字大小的最小字体缩放倍数。
+
+取值范围：[0, 1]
+
+默认值：0
+
+**说明：**
+
+设置的值小于 0 时，按值为 0 处理，设置的值大于 1，按值为 1 处理，异常值默认不生效。
+
+该成员只读，不支持更改。
 
 **类型：** number | Resource
 
@@ -332,7 +460,18 @@ readonly itemMinFontScale?: number | Resource
 readonly itemMinHeight?: LengthMetrics
 ```
 
-配置分段按钮选项最小高度。 取值范围：[0, +∞) 默认值： 只有纯文本或者纯图标选项时：`$r('sys.float.segment_button_v2_singleline_selected_height')`；有图文混合的选项时： `$r('sys.float.segment_button_v2_doubleline_selected_height')` 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选项最小高度。
+
+取值范围：[0, +∞)
+
+默认值：
+
+只有纯文本或者纯图标选项时：`$r('sys.float.segment_button_v2_singleline_selected_height')`；有图文混合的选项时：
+`$r('sys.float.segment_button_v2_doubleline_selected_height')`
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -350,7 +489,14 @@ readonly itemMinHeight?: LengthMetrics
 readonly itemPadding?: LocalizedPadding
 ```
 
-配置分段按钮选项内边距。 默认值： `{ top: LengthMetrics.resource($r('sys.float.padding_level2')), bottom: LengthMetrics.resource($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4')) }` 值为undefined时，按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选项内边距。
+
+默认值：
+`{ top: LengthMetrics.resource($r('sys.float.padding_level2')), bottom: LengthMetrics.resource($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4')) }`
+
+值为undefined时，按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LocalizedPadding
 
@@ -368,7 +514,13 @@ readonly itemPadding?: LocalizedPadding
 readonly itemSelectedBackgroundColor?: ColorMetrics
 ```
 
-配置分段按钮选中的选项背景颜色。 默认值：`$r('sys.color.segment_button_v2_tab_selected_item_background')` 值为undefined时，按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选中的选项背景颜色。
+
+默认值：`$r('sys.color.segment_button_v2_tab_selected_item_background')`
+
+值为undefined时，按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -386,7 +538,17 @@ readonly itemSelectedBackgroundColor?: ColorMetrics
 readonly itemSelectedFontColor?: ColorMetrics
 ```
 
-配置分段按钮选中项的字体颜色。 默认值：`$r('sys.color.font_primary')` 值为undefined时，按默认值处理。 **说明：** items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。 该成员只读，不支持更改。
+配置分段按钮选中项的字体颜色。
+
+默认值：`$r('sys.color.font_primary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置textModifier的fontColor属性值时，itemSelectedFontColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -404,7 +566,19 @@ readonly itemSelectedFontColor?: ColorMetrics
 readonly itemSelectedFontSize?: LengthMetrics
 ```
 
-配置分段按钮选中项的字体大小。 取值范围：[0, +∞) 默认值：`14fp` **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置textModifier的fontSize属性值时，itemSelectedFontSize不生效。 该成员只读，不支持更改。
+配置分段按钮选中项的字体大小。
+
+取值范围：[0, +∞)
+
+默认值：`14fp`
+
+**说明：**
+
+不支持设置百分比类型，异常值按默认值处理。
+
+items设置textModifier的fontSize属性值时，itemSelectedFontSize不生效。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -422,7 +596,17 @@ readonly itemSelectedFontSize?: LengthMetrics
 readonly itemSelectedFontWeight?: FontWeight
 ```
 
-配置分段按钮选中项的字体字重。 默认值：FontWeight.Medium 超出取值范围按默认值处理。 **说明：** items设置textModifier的fontWeight属性值时，itemSelectedFontWeight不生效。 该成员只读，不支持更改。
+配置分段按钮选中项的字体字重。
+
+默认值：FontWeight.Medium
+
+超出取值范围按默认值处理。
+
+**说明：**
+
+items设置textModifier的fontWeight属性值时，itemSelectedFontWeight不生效。
+
+该成员只读，不支持更改。
 
 **类型：** FontWeight
 
@@ -440,7 +624,17 @@ readonly itemSelectedFontWeight?: FontWeight
 readonly itemSelectedIconFillColor?: ColorMetrics
 ```
 
-配置分段按钮选中的选项图标颜色。 默认值：`$r('sys.color.font_primary')` 值为undefined时，按默认值处理。 **说明：** items设置iconModifier的fillColor属性值时，itemSelectedIconFillColor不生效。 该成员只读，不支持更改。
+配置分段按钮选中的选项图标颜色。
+
+默认值：`$r('sys.color.font_primary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置iconModifier的fillColor属性值时，itemSelectedIconFillColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -458,7 +652,17 @@ readonly itemSelectedIconFillColor?: ColorMetrics
 readonly itemSelectedSymbolFontColor?: ColorMetrics
 ```
 
-配置分段按钮选中选项的HM Symbol类型图标颜色。 默认值：`$r('sys.color.font_primary')` 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSelectedSymbolFontColor不生效。 该成员只读，不支持更改。
+配置分段按钮选中选项的HM Symbol类型图标颜色。
+
+默认值：`$r('sys.color.font_primary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置symbolModifier的fontColor属性值时，itemSelectedSymbolFontColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -476,7 +680,13 @@ readonly itemSelectedSymbolFontColor?: ColorMetrics
 readonly itemShadow?: ShadowOptions | ShadowStyle
 ```
 
-配置分段按钮选项阴影。 默认值：ShadowStyle.OUTER_DEFAULT_XS 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选项阴影。
+
+默认值：ShadowStyle.OUTER_DEFAULT_XS
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** ShadowOptions | ShadowStyle
 
@@ -494,7 +704,17 @@ readonly itemShadow?: ShadowOptions | ShadowStyle
 readonly itemSpace?: LengthMetrics
 ```
 
-配置分段按钮选项之间的间隔。 取值范围：[0, +∞) 默认值：`LengthMetrics.vp(0)` **说明：** 不支持设置百分比类型，异常值按默认值处理。 该成员只读，不支持更改。
+配置分段按钮选项之间的间隔。
+
+取值范围：[0, +∞)
+
+默认值：`LengthMetrics.vp(0)`
+
+**说明：**
+
+不支持设置百分比类型，异常值按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -512,7 +732,17 @@ readonly itemSpace?: LengthMetrics
 readonly itemSymbolFontColor?: ColorMetrics
 ```
 
-配置分段按钮非选中选项HM Symbol类型图标的颜色。 默认值：`$r('sys.color.font_secondary')` 值为undefined时，按默认值处理。 **说明：** items设置symbolModifier的fontColor属性值时，itemSymbolFontColor不生效。 该成员只读，不支持更改。
+配置分段按钮非选中选项HM Symbol类型图标的颜色。
+
+默认值：`$r('sys.color.font_secondary')`
+
+值为undefined时，按默认值处理。
+
+**说明：**
+
+items设置symbolModifier的fontColor属性值时，itemSymbolFontColor不生效。
+
+该成员只读，不支持更改。
 
 **类型：** ColorMetrics
 
@@ -530,7 +760,19 @@ readonly itemSymbolFontColor?: ColorMetrics
 readonly itemSymbolFontSize?: LengthMetrics
 ```
 
-配置分段按钮选项中HM Symbol类型图标大小。 取值范围：[0, +∞) 默认值：`20fp` **说明：** 不支持设置百分比类型，异常值按默认值处理。 items设置symbolModifier的fontSize属性值时，itemSymbolFontSize不生效。 该成员只读，不支持更改。
+配置分段按钮选项中HM Symbol类型图标大小。
+
+取值范围：[0, +∞)
+
+默认值：`20fp`
+
+**说明：**
+
+不支持设置百分比类型，异常值按默认值处理。
+
+items设置symbolModifier的fontSize属性值时，itemSymbolFontSize不生效。
+
+该成员只读，不支持更改。
 
 **类型：** LengthMetrics
 
@@ -548,7 +790,11 @@ readonly itemSymbolFontSize?: LengthMetrics
 readonly items: SegmentButtonV2Items
 ```
 
-配置分段按钮的选项集合信息。 值为undefined时，不显示选项信息。 该成员只读，不支持更改。
+配置分段按钮的选项集合信息。
+
+值为undefined时，不显示选项信息。
+
+该成员只读，不支持更改。
 
 **类型：** SegmentButtonV2Items
 
@@ -566,7 +812,13 @@ readonly items: SegmentButtonV2Items
 readonly languageDirection?: Direction
 ```
 
-配置分段按钮的布局方向。 默认值：Direction.Auto 超出取值范围按默认值处理。 该成员只读，不支持更改。
+配置分段按钮的布局方向。
+
+默认值：Direction.Auto
+
+超出取值范围按默认值处理。
+
+该成员只读，不支持更改。
 
 **类型：** Direction
 
@@ -602,7 +854,11 @@ onItemClicked?: Callback<number>
 readonly selectedIndex: number
 ```
 
-配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。 值为undefined时，不选中任何选项，其他非正数值，默认选项下标为0。 该成员只读，不支持更改。
+配置分段按钮被选中的选项下标，第一项的编号为0，之后顺序增加。
+
+值为undefined时，不选中任何选项，其他非正数值，默认选项下标为0。
+
+该成员只读，不支持更改。
 
 **类型：** number
 

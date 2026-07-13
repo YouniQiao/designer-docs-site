@@ -14,7 +14,8 @@ Defines the **AccessibilityVirtualNode**.
 accessibilityFocused?: boolean
 ```
 
-Whether the accessibility virtual node is focused for accessibility purposes. The value **true** indicates that the element is focused, and **false** indicates the opposite.
+Whether the accessibility virtual node is focused for accessibility purposes.
+The value **true** indicates that the element is focused, and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -32,7 +33,8 @@ Whether the accessibility virtual node is focused for accessibility purposes. Th
 accessibilityGroup?: boolean
 ```
 
-Whether the accessibility virtual node is an accessibility group. The value **true** indicates that the element is an accessibility group, and **false** indicates the opposite.
+Whether the accessibility virtual node is an accessibility group.
+The value **true** indicates that the element is an accessibility group, and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -86,7 +88,8 @@ Accessibility text information of an accessibility virtual node.
 checkable?: boolean
 ```
 
-Whether the accessibility virtual node is checkable. The value **true** indicates that the node is checkable, and **false** indicates the opposite.
+Whether the accessibility virtual node is checkable. The value **true** indicates that the node is checkable,
+and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -104,7 +107,8 @@ Whether the accessibility virtual node is checkable. The value **true** indicate
 checked?: boolean
 ```
 
-Whether the accessibility virtual node is checked. The value **true** indicates that the node is checked, and **false** indicates the opposite.
+Whether the accessibility virtual node is checked. The value **true** indicates that the node is checked,
+and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -140,7 +144,8 @@ List of child accessibility virtual node ids of a component.
 clickable?: boolean
 ```
 
-Whether the accessibility virtual node is clickable. The value **true** indicates that the node is clickable, and **false** indicates the opposite.
+Whether the accessibility virtual node is clickable. The value **true** indicates that the node is clickable,
+and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -194,7 +199,8 @@ The id of accessibility element.
 enabled?: boolean
 ```
 
-Whether the accessibility virtual node is enabled. The value **true** indicates that the node is enabled, and **false** indicates the opposite.
+Whether the accessibility virtual node is enabled. The value **true** indicates that the node is enabled,
+and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -248,7 +254,8 @@ Area of the accessibility virtual node.
 selected?: boolean
 ```
 
-Whether the accessibility virtual node is selected. The value **true** indicates that the node is selected, and **false** indicates the opposite.
+Whether the accessibility virtual node is selected. The value **true** indicates that the node is selected,
+and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -320,7 +327,8 @@ Click position of the accessibility virtual node.
 virtualNodeId: number
 ```
 
-ID of the accessibility virtual node. Default value: **-1**.
+ID of the accessibility virtual node.
+Default value: **-1**.
 
 **Type:** number
 

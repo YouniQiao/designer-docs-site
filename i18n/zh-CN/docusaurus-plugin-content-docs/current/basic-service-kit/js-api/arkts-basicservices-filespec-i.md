@@ -58,7 +58,9 @@ filename?: string
 mimeType?: string
 ```
 
-文件的mimeType，通过文件名获取，默认值为文件名后缀。 从 API version 18 开始废弃，建议使用contentType替代。
+文件的mimeType，通过文件名获取，默认值为文件名后缀。
+
+从 API version 18 开始废弃，建议使用contentType替代。
 
 **类型：** string
 
@@ -78,7 +80,27 @@ mimeType?: string
 path: string
 ```
 
-文件路径。 - 相对路径，位于调用方的缓存路径下。 例如："./xxx/yyy/zzz.html"、"xxx/yyy/zzz.html"。 - internal协议路径，支持"internal://"及其子路径。internal为调用方（即传入的context）对应路径，"internal://cache"对应context.cacheDir。 例如："internal://cache/path/to/file.txt"。 - 应用沙箱目录，只支持到base及其子目录下。 例如："/data/storage/el1/base/path/to/file.txt"。 - file协议路径，必须匹配应用包名，只支持到base及其子目录下。 例如："file://com.example.test/data/storage/el2/base/file.txt"。 - 用户公共文件，仅支持上传任务。 例如："file://media/Photo/path/to/file.img"。仅支持前台任务。
+文件路径。
+
+- 相对路径，位于调用方的缓存路径下。
+
+例如："./xxx/yyy/zzz.html"、"xxx/yyy/zzz.html"。
+
+- internal协议路径，支持"internal://"及其子路径。internal为调用方（即传入的context）对应路径，"internal://cache"对应context.cacheDir。
+
+例如："internal://cache/path/to/file.txt"。
+
+- 应用沙箱目录，只支持到base及其子目录下。
+
+例如："/data/storage/el1/base/path/to/file.txt"。
+
+- file协议路径，必须匹配应用包名，只支持到base及其子目录下。
+
+例如："file://com.example.test/data/storage/el2/base/file.txt"。
+
+- 用户公共文件，仅支持上传任务。
+
+例如："file://media/Photo/path/to/file.img"。仅支持前台任务。
 
 **类型：** string
 

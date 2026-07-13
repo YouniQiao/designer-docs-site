@@ -1,6 +1,7 @@
 # Driver
 
-**Driver**类是UiTest框架的主要入口。它提供组件匹配/查找、按键注入、坐标单击/滑动和截图等功能的API。 此类提供的所有API（除**Driver.create()**外）都使用Promise返回结果，必须使用**await**调用。
+Driver类为uitest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等能力。
+该类提供的方法除Driver.create()和Driver.createUIEventObserver()以外的所有方法都使用Promise方式作为异步方法，需使用await方式调用。
 
 **起始版本：** 9
 
@@ -12,7 +13,7 @@
 assertComponentExist(on: On): Promise<void>
 ```
 
-断言当前页面上是否存在与指定属性匹配的组件。该API使用Promise返回结果。
+断言API，用于断言当前界面是否存在满足给出的目标属性的控件。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -24,21 +25,21 @@ assertComponentExist(on: On): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
+| on | On | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000003](../errorcode-uitest.md#17000003-断言失败) | 断言失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000003](../errorcode-uitest.md#17000003-断言失败) | Assertion failed. |
 
 **示例：**
 
@@ -59,7 +60,7 @@ async function demo() {
 click(x: number, y: number): Promise<void>
 ```
 
-单击目标坐标点。该API使用Promise返回结果。
+在目标坐标点单击。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -71,21 +72,21 @@ click(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -108,7 +109,7 @@ async function demo() {
 clickAt(point: Point): Promise<void>
 ```
 
-单击目标坐标点。该API使用Promise返回结果。
+在目标坐标点进行单击。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -120,20 +121,20 @@ clickAt(point: Point): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | Point对象，用于传递目标点信息。 |
+| point | Point | 是 | 以Point对象的形式传入目标点信息。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -148,13 +149,13 @@ async function demo() {
 
 ```
 
-## clickAt
+## clickAtWithOptions
 
 ```TypeScript
-clickAt(point: Point, options?: TouchOptions): Promise<void>
+clickAtWithOptions(point: Point, options?: TouchOptions): Promise<void>
 ```
 
-在屏幕指定位置单击，可设置触摸选项。
+点击屏幕上的指定位置，可选择触摸选项。
 
 **起始版本：** 26.0.0
 
@@ -166,21 +167,21 @@ clickAt(point: Point, options?: TouchOptions): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 手指触摸屏幕的坐标点。 |
-| options | TouchOptions | 否 | 单击操作的选项。仅'pressure'属性适用于此方法。设置其他属性将导致BusinessError 17000007。默认值：参考TouchOptions的默认值。 |
+| point | Point | 是 | 手指接触屏幕的坐标点。 |
+| options | TouchOptions | 否 | 单击操作的选项。只有''属性适用于此方法。设置其他属性将导致BusinessError 17000007。<br>默认值：参考TouchOptions的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -194,7 +195,7 @@ async function demo() {
     pressure: 0.5
   };
   // 在目标坐标点进行单击，并指定触摸压力
-  await driver.clickAt({ x: 100, y: 100, displayId: 0 }, options);
+  await driver.clickAtWithOptions({ x: 100, y: 100, displayId: 0 }, options);
 }
 
 ```
@@ -205,7 +206,7 @@ async function demo() {
 static create(): Driver
 ```
 
-创建**Driver**对象并返回创建的对象。该API为静态API。
+静态方法，构造一个Driver对象，并返回该对象。
 
 **起始版本：** 9
 
@@ -217,13 +218,13 @@ static create(): Driver
 
 | 类型 | 说明 |
 | --- | --- |
-| Driver | - 创建的**{@link Driver}**对象。 |
+| Driver | - 返回构造的Driver对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000001](../errorcode-uitest.md#17000001-初始化失败) | 初始化失败。 |
+| [17000001](../errorcode-uitest.md#17000001-初始化失败) | Initialization failed. |
 
 **示例：**
 
@@ -243,7 +244,7 @@ async function demo() {
 createUIEventObserver(): UIEventObserver
 ```
 
-创建UI事件监听器{@link UIEventObserver}。
+创建一个UI事件监听器。
 
 **起始版本：** 10
 
@@ -255,13 +256,13 @@ createUIEventObserver(): UIEventObserver
 
 | 类型 | 说明 |
 | --- | --- |
-| UIEventObserver | - UI事件监听器{@link UIEventObserver}。 |
+| UIEventObserver | - 返回找到的目标窗口对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -282,7 +283,7 @@ async function demo() {
 crownRotate(d: number, speed?: number): Promise<void>
 ```
 
-注入表冠旋转事件。可以指定旋转速度。该API使用Promise返回结果。
+注入手表表冠旋转事件，可指定旋转速度。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -294,22 +295,22 @@ crownRotate(d: number, speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| d | number | 是 | 旋转刻度数。正值表示顺时针旋转，负值表示逆时针旋转。该值必须为整数。 |
-| speed | number | 否 | 旋转速度。<br>单位：ticks/s。<br>取值范围：[1, 500]<br>如果为负数则抛出错误码17000007。<br>默认值：20 |
+| d | number | 是 | 手表表冠旋转的格数，正值表示顺时针旋转，负值表示逆时针旋转，取值需为整数。 |
+| speed | number | 否 | 手表表冠旋转的格数，正值表示顺时针旋转，负值表示逆时针旋转，取值需为整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | 能力不支持。由于设备能力限制，无法调用该API。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited device capabilities. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -333,7 +334,7 @@ async function demo() {
 delayMs(duration: number): Promise<void>
 ```
 
-延迟执行指定持续时间。该API使用Promise返回结果。
+在给定的时间内延时。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -345,20 +346,20 @@ delayMs(duration: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| duration | number | 是 | 指定时间，单位为ms。该值为大于或等于0的整数。<br>单位：ms<br>取值范围：值应 &gt;= 0 |
+| duration | number | 是 | 给定的时间，单位：ms，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -379,7 +380,7 @@ async function demo() {
 doubleClick(x: number, y: number): Promise<void>
 ```
 
-双击目标坐标点。该API使用Promise返回结果。
+在目标坐标点双击。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -391,21 +392,21 @@ doubleClick(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -426,7 +427,7 @@ async function demo() {
 doubleClickAt(point: Point): Promise<void>
 ```
 
-双击目标坐标点。该API使用Promise返回结果。
+对目标坐标进行双击。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -438,20 +439,20 @@ doubleClickAt(point: Point): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | Point对象，用于传递目标点信息。 |
+| point | Point | 是 | 以Point对象的形式传入目标点信息。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -472,7 +473,7 @@ async function demo() {
 drag(startx: number, starty: number, endx: number, endy: number, speed?: number): Promise<void>
 ```
 
-从起始坐标点拖动到目标坐标点。该API使用Promise返回结果。
+从起始坐标点拖拽至目的坐标点。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -484,23 +485,24 @@ drag(startx: number, starty: number, endx: number, endy: number, speed?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startx | number | 是 | 数值，表示起点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| starty | number | 是 | 数值，表示起点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
-| endx | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| endy | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
-| speed | number | 否 | 拖动速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| startx | number | 是 | 以number的形式传入起始点的横坐标信息，取值范围：大于等于0的整数。 |
+| starty | number | 是 | 以number的形式传入起始点的纵坐标信息，取值范围：大于等于0的整数。 |
+| endx | number | 是 | 以number的形式传入目的点的横坐标信息，取值范围：大于等于0的整数。 |
+| endy | number | 是 | 以number的形式传入目的点的纵坐标信息，取值范围：大于等于0的整数。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -521,7 +523,7 @@ async function demo() {
 dragBetween(from: Point, to: Point, speed?: number, duration?: number): Promise<void>
 ```
 
-从起点拖动到目标点。可以指定拖动速度和拖动前的点击持续时间。该API使用Promise返回结果。
+从起始坐标点拖拽至目标坐标点，支持指定拖拽速度和拖拽前长按时间。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -533,23 +535,23 @@ dragBetween(from: Point, to: Point, speed?: number, duration?: number): Promise<
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | Point对象，传递起点坐标和起点所属的显示ID。 |
-| to | Point | 是 | Point对象，传递目标点坐标和目标点所属的显示ID。<br>**注意**：目标点和起点必须在同一屏幕上。否则将抛出**17000007**异常。 |
-| speed | number | 否 | 拖动速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
-| duration | number | 否 | 拖动前长按的持续时间。<br>取值范围：值应 &gt;= 1500<br>单位：ms<br>默认值：1500 |
+| from | Point | 是 | 以Point对象的形式传入起始点的坐标信息和所属屏幕ID。 |
+| to | Point | 是 | 以Point对象的形式传入终止点的坐标信息和所属屏幕ID。**说明：** 应与起始点属于同一个屏幕，否则将抛出17000007异常。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出17000007错误码。 |
+| duration | number | 否 | 拖拽前长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -564,13 +566,13 @@ async function demo() {
 
 ```
 
-## dragBetween
+## dragBetweenWithOptions
 
 ```TypeScript
-dragBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
+dragBetweenWithOptions(from: Point, to: Point, options?: TouchOptions): Promise<void>
 ```
 
-在屏幕指定点之间拖动，可设置选项。
+在屏幕上拖拽指定的点之间，具有可选设置。
 
 **起始版本：** 26.0.0
 
@@ -582,22 +584,22 @@ dragBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 手指触摸屏幕的坐标点。 |
+| from | Point | 是 | 手指接触屏幕的坐标点。 |
 | to | Point | 是 | 手指离开屏幕的坐标点。 |
-| options | TouchOptions | 否 | 拖动操作的选项。仅'pressure'、'speed'和'duration'属性适用于此方法。设置其他属性将导致BusinessError 17000007。默认值：参考TouchOptions的默认值。 |
+| options | TouchOptions | 否 | 拖动操作的选项。只有“压力”、“速度”和“持续时间”属性适用于此方法。设置其他属性将导致BusinessError 17000007。<br>默认值：参考TouchOptions的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -613,7 +615,7 @@ async function demo() {
     pressure: 0.5   // 触摸压力值
   };
   // 从起始坐标点拖拽至目标坐标点，并指定拖拽速率、长按时长和触摸压力
-  await driver.dragBetween({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
+  await driver.dragBetweenWithOptions({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
 }
 
 ```
@@ -624,7 +626,7 @@ async function demo() {
 dumpLayout(savePath: string, displayId?: number): Promise<boolean>
 ```
 
-获取当前布局信息并以json格式保存为文件。
+Get the current layout information and save as file with json format.
 
 **起始版本：** 26.0.0
 
@@ -636,21 +638,21 @@ dumpLayout(savePath: string, displayId?: number): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| savePath | string | 是 | 存储json的路径，必须在应用沙箱目录中。路径必须为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
-| displayId | number | 否 | 指定显示的ID，默认为主屏幕的displayId。 |
+| savePath | string | 是 | the path where to store the json, must be in the application sandbox directory.The path must be the [sandbox path](../../../../file-management/app-sandbox-directory.md) of the currentapplication. |
+| displayId | number | 否 | the Id of the specified display, default is the displayId of the main screen. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | 如果成功完成转储布局和文件存储则返回true，否则返回false。 |
+| Promise&lt;boolean&gt; | true if dump layout and file-storing are completed successfully,false otherwise. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -672,7 +674,7 @@ async function demo() {
 findComponent(on: On): Promise<Component>
 ```
 
-根据指定属性查找目标组件。该API使用Promise返回结果。
+根据给出的目标控件属性要求查找目标控件。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -684,20 +686,20 @@ findComponent(on: On): Promise<Component>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
+| on | On | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Component&gt; | - 用于返回{@link Component}或undefined的Promise对象。 |
+| Promise&lt;Component&gt; | - Promise对象，返回控件对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -720,7 +722,7 @@ async function demo() {
 findComponents(on: On): Promise<Array<Component>>
 ```
 
-根据指定属性查找所有匹配的组件并保存到列表中。该API使用Promise返回结果。
+根据给出的目标控件属性要求查找出所有匹配控件，以列表保存。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -732,20 +734,20 @@ findComponents(on: On): Promise<Array<Component>>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
+| on | On | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;Component&gt;&gt; | - 用于返回{@link Component}列表的Promise对象。 |
+| Promise&lt;Array&lt;Component&gt;&gt; | - Promise对象，返回控件对象的列表。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -768,7 +770,7 @@ async function demo() {
 findWindow(filter: WindowFilter): Promise<UiWindow>
 ```
 
-根据指定属性查找窗口。该API使用Promise返回结果。
+通过指定窗口的属性来查找目标窗口。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -780,20 +782,20 @@ findWindow(filter: WindowFilter): Promise<UiWindow>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filter | WindowFilter | 是 | 目标{@link UiWindow}的属性。 |
+| filter | WindowFilter | 是 | 目标窗口的属性。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;UiWindow&gt; | - 用于返回目标{@link UiWindow}的Promise对象。 |
+| Promise&lt;UiWindow&gt; | - Promise对象，返回目标窗口对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -814,7 +816,7 @@ async function demo() {
 fling(from: Point, to: Point, stepLen: number, speed: number): Promise<void>
 ```
 
-模拟fling操作。该API使用Promise返回结果。
+模拟手指滑动后脱离屏幕的快速滑动操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -826,23 +828,23 @@ fling(from: Point, to: Point, stepLen: number, speed: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 手指触摸屏幕的点的坐标。 |
-| to | Point | 是 | 手指离开屏幕的点的坐标。 |
-| stepLen | number | 是 | 步长，单位为像素。该值为大于或等于0的整数。<br>单位：px |
-| speed | number | 是 | fling速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
+| from | Point | 是 | 手指接触屏幕的起始点坐标。 |
+| to | Point | 是 | 手指离开屏幕时的坐标点。 |
+| stepLen | number | 是 | 间隔距离，取值大于等于0的整数，单位：px。 |
+| speed | number | 是 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数时设为默认值600。为负数时抛出401错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -863,7 +865,7 @@ async function demo() {
 fling(direction: UiDirection, speed: number): Promise<void>
 ```
 
-模拟指定方向和速度的fling操作。该API使用Promise返回结果。
+指定方向和滑动速率，模拟手指滑动后脱离屏幕的快速滑动操作。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -875,21 +877,21 @@ fling(direction: UiDirection, speed: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| direction | UiDirection | 是 | fling操作的方向。 |
-| speed | number | 是 | 滚动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| direction | UiDirection | 是 | 进行抛滑的方向。 |
+| speed | number | 是 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数时设为默认值600。为负数时抛出401错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -910,7 +912,7 @@ async function demo() {
 fling(direction: UiDirection, speed: number, displayId: number): Promise<void>
 ```
 
-在指定显示上模拟指定方向和速度的fling操作。该API使用Promise返回结果。
+指定方向、滑动速率和操作屏幕，模拟手指滑动后脱离屏幕的快速滑动操作。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -922,22 +924,22 @@ fling(direction: UiDirection, speed: number, displayId: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| direction | UiDirection | 是 | fling操作的方向。 |
-| speed | number | 是 | fling速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**401**。 |
+| direction | UiDirection | 是 | 进行抛滑的方向。 |
+| speed | number | 是 | 滑动速率，取值范围为200-40000，默认值为600，单位：px/s。为不在范围内的非负数时设为默认值600。为负数时抛出401错误码。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -958,7 +960,7 @@ async function demo() {
 getDisplayDensity(): Promise<Point>
 ```
 
-获取当前设备的显示密度。该API使用Promise返回结果。
+获取当前设备屏幕的分辨率。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -970,13 +972,13 @@ getDisplayDensity(): Promise<Point>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Point&gt; | 用于返回**Point**对象的Promise对象。当前设备显示密度为**Point.x*Point.y**。 |
+| Promise&lt;Point&gt; | Promise对象，返回Point对象，当前设备屏幕的分辨率为Point.x*Point.y。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -997,7 +999,7 @@ async function demo() {
 getDisplayDensity(displayId: number): Promise<Point>
 ```
 
-获取当前设备指定显示的密度。该API使用Promise返回结果。
+获取当前设备指定屏幕的分辨率。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1009,20 +1011,20 @@ getDisplayDensity(displayId: number): Promise<Point>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**17000007**。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Point&gt; | 用于返回**Point**对象的Promise对象。指定显示的密度为**Point.x*Point.y**。 |
+| Promise&lt;Point&gt; | Promise对象，返回Point对象，当前设备指定屏幕的分辨率为Point.x*Point.y。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1043,7 +1045,7 @@ async function demo() {
 getDisplayRotation(): Promise<DisplayRotation>
 ```
 
-获取当前设备的显示旋转方向。该API使用Promise返回结果。
+获取当前设备的屏幕显示方向。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1055,13 +1057,13 @@ getDisplayRotation(): Promise<DisplayRotation>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;DisplayRotation&gt; | - 用于返回当前设备显示旋转方向的Promise对象。 |
+| Promise&lt;DisplayRotation&gt; | - Promise对象，返回当前设备的显示方向。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1082,7 +1084,7 @@ async function demo() {
 getDisplayRotation(displayId: number): Promise<DisplayRotation>
 ```
 
-获取指定设备的显示旋转方向。该API使用Promise返回结果。
+获取当前设备指定屏幕的显示方向。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1094,20 +1096,20 @@ getDisplayRotation(displayId: number): Promise<DisplayRotation>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**17000007**。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;DisplayRotation&gt; | - 用于返回指定设备显示旋转方向的Promise对象。 |
+| Promise&lt;DisplayRotation&gt; | - Promise对象，返回指定屏幕的显示方向。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1128,7 +1130,7 @@ async function demo() {
 getDisplaySize(): Promise<Point>
 ```
 
-获取当前设备的显示大小。该API使用Promise返回结果。
+获取当前设备的屏幕大小。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1140,13 +1142,13 @@ getDisplaySize(): Promise<Point>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Point&gt; | - 用于返回**Point**对象的Promise对象。当前设备屏幕大小为**Point.x * Point.y**。 |
+| Promise&lt;Point&gt; | - Promise对象，返回Point对象，当前设备屏幕的大小为Point.x * Point.y。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1167,7 +1169,7 @@ async function demo() {
 getDisplaySize(displayId: number): Promise<Point>
 ```
 
-获取当前设备指定显示的大小。该API使用Promise返回结果。
+获取当前设备指定屏幕的大小。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1179,20 +1181,20 @@ getDisplaySize(displayId: number): Promise<Point>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**17000007**。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Point&gt; | 用于返回**Point**对象的Promise对象。指定显示的大小为**Point.x * Point.y**。 |
+| Promise&lt;Point&gt; | Promise对象，返回Point对象，当前设备指定屏幕的大小为Point.x * Point.y。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1213,7 +1215,11 @@ async function demo() {
 injectKnucklePointerAction(pointers: PointerMatrix, speed?: number): Promise<void>
 ```
 
-模拟多点指关节滚动操作。该API使用Promise返回结果。 > **说明：** > > 如果设备上的指关节手势已禁用<!--RP4--><!--RP4End-->，将返回17000005。
+模拟指关节多点注入滑动操作。使用Promise异步回调。
+
+> **说明：**
+>
+> 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
 
 **起始版本：** 22
 
@@ -1225,22 +1231,22 @@ injectKnucklePointerAction(pointers: PointerMatrix, speed?: number): Promise<voi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| pointers | PointerMatrix | 是 | 滚动轨迹，包括手指数和沿轨迹的坐标数组。**注意**：目前仅支持单指操作。**PointerMatrix**中的**fingers**值必须设置为**1**。 |
-| speed | number | 否 | 指关节指针动作速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
+| pointers | PointerMatrix | 是 | 滑动轨迹，包括操作手指个数和滑动坐标序列。**说明**：当前仅支持单指操作，PointerMatrix中的操作手指个数fingers必须设置为1。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出17000007错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1269,7 +1275,7 @@ async function demo() {
 injectMultiPointerAction(pointers: PointerMatrix, speed?: number): Promise<boolean>
 ```
 
-向设备注入多指操作。该API使用Promise返回结果。
+向设备注入多指操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1281,21 +1287,21 @@ injectMultiPointerAction(pointers: PointerMatrix, speed?: number): Promise<boole
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| pointers | PointerMatrix | 是 | 滚动轨迹，包括手指数和沿轨迹的坐标数组。 |
-| speed | number | 否 | 指针动作速度，单位为px/s。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| pointers | PointerMatrix | 是 | 滑动轨迹，包括操作手指个数和滑动坐标序列。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回操作是否成功的Promise对象。值**true**表示操作成功，**false**表示失败。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回操作是否成功完成。true：完成，false：未完成。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1332,7 +1338,7 @@ async function demo() {
 injectPenPointerAction(pointers: PointerMatrix, speed?: number, pressure?: number): Promise<void>
 ```
 
-模拟连续多点手写笔注入操作。该API使用Promise返回结果。
+模拟手写笔多点连续注入操作。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -1344,22 +1350,22 @@ injectPenPointerAction(pointers: PointerMatrix, speed?: number, pressure?: numbe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| pointers | PointerMatrix | 是 | 滚动轨迹，包括手指数和沿轨迹的坐标数组。**注意**：目前仅支持单指操作。**PointerMatrix**中的**fingers**值必须设置为**1**。 |
-| speed | number | 否 | 手写笔指针动作速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
-| pressure | number | 否 | 注入压力。<br>取值范围：[0.0, 1.0]<br>默认值：1.0 |
+| pointers | PointerMatrix | 是 | 滑动轨迹，包括操作手指个数和滑动坐标序列。**说明**：当前仅支持单指操作，PointerMatrix中的操作手指个数fingers必须设置为1。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
+| pressure | number | 否 | 手写笔多点连续注入的压力，默认为1.0，取值范围为0.0到1.0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1387,7 +1393,7 @@ async function demo() {
 inputText(p: Point, text: string): Promise<void>
 ```
 
-在指定坐标处输入文本，不清除组件中的原文本。该API使用Promise返回结果。
+在指定坐标点输入文本，不清空组件内原有文本，直接在坐标处追加输入。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -1399,21 +1405,21 @@ inputText(p: Point, text: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 目标坐标。 |
-| text | string | 是 | 输入文本。目前支持英文、中文和特殊字符。 |
+| p | Point | 是 | 输入文本的坐标点。 |
+| text | string | 是 | 输入的文本信息，当前支持英文、中文和特殊字符。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1440,7 +1446,7 @@ async function demo() {
 inputText(p: Point, text: string, mode: InputTextMode): Promise<void>
 ```
 
-在指定坐标点以指定输入模式输入文本。该API使用Promise返回结果。
+在指定坐标点输入文本，支持指定文本输入方式。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1452,23 +1458,23 @@ inputText(p: Point, text: string, mode: InputTextMode): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 目标坐标。 |
-| text | string | 是 | 输入文本。目前支持英文、中文和特殊字符。 |
-| mode | InputTextMode | 是 | 文本输入模式。详见[InputTextMode](arkts-test-inputtextmode-i.md#inputtextmode)。**说明**如果**InputTextMode.addition**设置为**true**，则光标移动到文本末尾并输入指定文本。如果值为**false**，则在坐标点输入指定文本。 |
+| p | Point | 是 | 输入文本的坐标点。 |
+| text | string | 是 | 输入的文本信息，当前支持英文、中文和特殊字符。 |
+| mode | InputTextMode | 是 | 输入文本的方式，取值请参考[InputTextMode](arkts-test-inputtextmode-i.md)。**说明：**InputTextMode.addition取值为true时，将光标移动至文本末尾后输入指定文本。取值为false时，将在坐标点位置输入指定文本。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1499,7 +1505,7 @@ async function demoChinese() {
 isComponentPresentWhenDrag(on: On, from: Point, to: Point, speed?: number, duration?: number): Promise<boolean>
 ```
 
-从起点拖动到终点并检查目标组件是否存在。该API使用Promise返回结果。
+从起始点拖拽至终止点，并查找目标控件是否存在。使用Promise异步回调。
 
 **起始版本：** 22
 
@@ -1511,24 +1517,24 @@ isComponentPresentWhenDrag(on: On, from: Point, to: Point, speed?: number, durat
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
-| from | Point | 是 | Point对象，传递起点坐标和起点所属的显示ID。 |
-| to | Point | 是 | Point对象，传递目标点坐标和目标点所属的显示ID。<br>**注意**：目标点和起点必须在同一屏幕上。否则将抛出**17000007**异常。 |
-| speed | number | 否 | 拖动速度。<br>取值范围：[200, 40000]<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
-| duration | number | 否 | 拖动前长按的持续时间。<br>取值范围：值应 &gt;= 1500<br>默认值：1500 |
+| on | On | 是 | 目标控件的属性要求。 |
+| from | Point | 是 | 以Point对象的形式传入起始点的坐标信息和所属屏幕ID。 |
+| to | Point | 是 | 以Point对象的形式传入终止点的坐标信息和所属屏幕ID。**说明：** 应与起始点属于同一个屏幕，否则将抛出17000007异常。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出17000007错误码。 |
+| duration | number | 否 | 拖拽前长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回拖动操作期间目标组件是否存在的Promise对象。值**true**表示目标组件存在，**false**表示不存在。 |
+| Promise&lt;boolean&gt; | - Promise对象。返回拖拽操作期间目标控件是否存在。true：存在。false：不存在。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1549,7 +1555,7 @@ async function demo() {
 isComponentPresentWhenLongClick(on: On, point: Point, duration?: number): Promise<boolean>
 ```
 
-在指定坐标处长按并检查目标组件是否存在。该API使用Promise返回结果。
+在坐标点长按，并查找目标控件是否存在。使用Promise异步回调。
 
 **起始版本：** 22
 
@@ -1561,22 +1567,22 @@ isComponentPresentWhenLongClick(on: On, point: Point, duration?: number): Promis
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
-| point | Point | 是 | 长按点的坐标。 |
-| duration | number | 否 | 长按持续时间。<br>取值范围：值应 &gt;= 1500<br>默认值：1500 |
+| on | On | 是 | 目标控件的属性要求。 |
+| point | Point | 是 | 长按的坐标点。 |
+| duration | number | 否 | 长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回长按操作期间目标组件是否存在的Promise对象。值**true**表示目标组件存在，**false**表示不存在。 |
+| Promise&lt;boolean&gt; | - Promise对象。返回长按操作期间目标控件是否存在。true：存在。false：不存在。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1597,7 +1603,7 @@ async function demo() {
 isComponentPresentWhenSwipe(on: On, from: Point, to: Point, speed?: number): Promise<boolean>
 ```
 
-从起点滑动到终点并检查目标组件是否存在。该API使用Promise返回结果。
+从起始点滑向终止点，并查找目标控件是否存在。使用Promise异步回调。
 
 **起始版本：** 22
 
@@ -1609,23 +1615,23 @@ isComponentPresentWhenSwipe(on: On, from: Point, to: Point, speed?: number): Pro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标组件的属性。 |
-| from | Point | 是 | Point对象，传递起点坐标和起点所属的显示ID。 |
-| to | Point | 是 | Point对象，传递目标点坐标和目标点所属的显示ID。<br>**注意**：目标点和起点必须在同一屏幕上。否则将抛出**17000007**异常。 |
-| speed | number | 否 | 滚动速度。<br>取值范围：[200, 40000]<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
+| on | On | 是 | 目标控件的属性要求。 |
+| from | Point | 是 | 以Point对象的形式传入起始点的坐标信息和所属屏幕ID。 |
+| to | Point | 是 | 以Point对象的形式传入终止点的坐标信息和所属屏幕ID。**说明：** 应与起始点属于同一个屏幕，否则将抛出17000007异常。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出17000007错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回滑动操作期间目标组件是否存在的Promise对象。值**true**表示目标组件存在，**false**表示不存在。 |
+| Promise&lt;boolean&gt; | - Promise对象。返回滑动操作期间目标控件是否存在。true：存在。false：不存在。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1646,7 +1652,11 @@ async function demo() {
 knuckleKnock(pointers: Array<Point>, times: number): Promise<void>
 ```
 
-模拟显示屏幕上的指关节敲击。该API使用Promise返回结果。 > **说明：** > > 如果设备上的指关节手势已禁用<!--RP4--><!--RP4End-->，将返回17000005。
+模拟指关节敲击屏幕操作。使用Promise异步回调。
+
+> **说明：**
+>
+> 若设备关闭了指关节手势<!--RP4--><!--RP4End-->，则调用本接口返回17000005错误码。
 
 **起始版本：** 22
 
@@ -1658,22 +1668,22 @@ knuckleKnock(pointers: Array<Point>, times: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| pointers | Array&lt;Point&gt; | 是 | 显示屏幕上指关节敲击的坐标数组。数组长度可以为1或2。 |
-| times | number | 是 | 在显示屏幕上连续敲击的次数。<br>取值范围：[1,2] |
+| pointers | Array&lt;Point&gt; | 是 | 指关节敲击屏幕坐标点的数组，数组长度取值为1或2。 |
+| times | number | 是 | 指关节连续敲击屏幕的次数，取值为1或2。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1696,7 +1706,7 @@ async function demo() {
 longClick(x: number, y: number): Promise<void>
 ```
 
-长按目标坐标点。该API使用Promise返回结果。
+在目标坐标点长按。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1708,21 +1718,21 @@ longClick(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1743,7 +1753,7 @@ async function demo() {
 longClickAt(point: Point, duration?: number): Promise<void>
 ```
 
-在目标坐标点长按指定持续时间。该API使用Promise返回结果。
+长按目标坐标点，支持指定长按时长。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -1755,21 +1765,21 @@ longClickAt(point: Point, duration?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | Point对象，用于传递目标点信息。 |
-| duration | number | 否 | 长按持续时间，单位为ms。<br>取值范围：值应 &gt;= 1500<br>单位：ms<br>默认值：1500 |
+| point | Point | 是 | 以Point对象的形式传入目标点信息。 |
+| duration | number | 否 | 长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1784,13 +1794,13 @@ async function demo() {
 
 ```
 
-## longClickAt
+## longClickAtWithOptions
 
 ```TypeScript
-longClickAt(point: Point, options?: TouchOptions): Promise<void>
+longClickAtWithOptions(point: Point, options?: TouchOptions): Promise<void>
 ```
 
-在屏幕指定位置长按，可设置触摸选项。
+长按屏幕上的指定位置，可选择触摸设置。
 
 **起始版本：** 26.0.0
 
@@ -1802,21 +1812,21 @@ longClickAt(point: Point, options?: TouchOptions): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 手指触摸屏幕的坐标点。 |
-| options | TouchOptions | 否 | 长按操作的选项。仅'duration'和'pressure'属性适用于此方法。设置其他属性将导致BusinessError 17000007。默认值：参考TouchOptions的默认值。 |
+| point | Point | 是 | 手指接触屏幕的坐标点。 |
+| options | TouchOptions | 否 | 用于长单击操作的选项。只有“持续时间”和“压力”属性适用于此方法。设置其他属性将导致BusinessError 17000007。<br>默认值：参考TouchOptions的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -1831,7 +1841,7 @@ async function demo() {
     pressure: 0.8  // 触摸压力值
   };
   // 在目标坐标点进行长按，并指定长按时长和触摸压力
-  await driver.longClickAt({ x: 100, y: 100, displayId: 0 }, options);
+  await driver.longClickAtWithOptions({ x: 100, y: 100, displayId: 0 }, options);
 }
 
 ```
@@ -1842,7 +1852,7 @@ async function demo() {
 mouseClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-在指定坐标处注入鼠标单击动作，可选按键或组合键。该API使用Promise返回结果。 例如，如果**key1**的值为**2072**，则鼠标单击时按下**Ctrl**键。
+在指定坐标点注入鼠标点击动作，支持同时按下对应键盘组合键。使用Promise异步回调。例如，Key值为2072时，按下Ctrl并进行鼠标点击动作。
 
 **起始版本：** 10
 
@@ -1854,23 +1864,23 @@ mouseClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 鼠标单击的坐标。 |
-| btnId | MouseButton | 是 | 按下的鼠标按键。 |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
+| p | Point | 是 | 鼠标点击的坐标。 |
+| btnId | MouseButton | 是 | 按下的鼠标按钮。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。<br>**起始版本：** 11 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1891,7 +1901,7 @@ async function demo() {
 mouseDoubleClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-在指定坐标处注入双击动作，可选按键或组合键。该API使用Promise返回结果。 例如，如果**key**的值为**2072**，则双击时按下**Ctrl**键。
+在指定坐标点注入鼠标双击动作，支持同时按下对应键盘组合键。使用Promise异步回调。例如，Key值为2072时，按下Ctrl并进行鼠标双击动作。
 
 **起始版本：** 11
 
@@ -1903,23 +1913,23 @@ mouseDoubleClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Pr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 双击的坐标。 |
-| btnId | MouseButton | 是 | 按下的鼠标按键。 |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
+| p | Point | 是 | 鼠标双击的坐标。 |
+| btnId | MouseButton | 是 | 按下的鼠标按钮。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值0。 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1940,7 +1950,7 @@ async function demo() {
 mouseDrag(from: Point, to: Point, speed?: number): Promise<void>
 ```
 
-将鼠标指针从起点拖动到终点。该API使用Promise返回结果。
+鼠标按住鼠标左键从起始坐标点拖拽至终点坐标点。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -1952,22 +1962,22 @@ mouseDrag(from: Point, to: Point, speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 起点坐标。 |
+| from | Point | 是 | 起始点坐标。 |
 | to | Point | 是 | 终点坐标。 |
-| speed | number | 否 | 鼠标拖动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -1988,7 +1998,7 @@ async function demo() {
 mouseDrag(from: Point, to: Point, speed?: number, duration?: number): Promise<void>
 ```
 
-将鼠标从起点拖动到终点。可以指定拖动速度和拖动前的持续时间。该API使用Promise返回结果。
+鼠标按住鼠标左键从起始坐标点拖拽至终点坐标点，支持指定拖拽速度和拖拽前长按时间。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -2000,23 +2010,23 @@ mouseDrag(from: Point, to: Point, speed?: number, duration?: number): Promise<vo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 起点坐标。 |
+| from | Point | 是 | 起始点坐标。 |
 | to | Point | 是 | 终点坐标。 |
-| speed | number | 否 | 鼠标拖动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
-| duration | number | 否 | 拖动前长按的持续时间。<br>取值范围：值应 &gt;= 1500<br>单位：ms<br>默认值：1500 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
+| duration | number | 否 | 拖拽前长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2031,13 +2041,14 @@ async function demo() {
 
 ```
 
-## mouseDrag
+## mouseDragWithOptions
 
 ```TypeScript
-mouseDrag(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
+mouseDragWithOptions(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyOptions): Promise<void>
 ```
 
-按住鼠标左键在屏幕指定点之间拖动，可设置触摸和按键选项。
+按住鼠标左键并在屏幕上的指定点之间拖动，
+具有可选的触摸和按键设置。
 
 **起始版本：** 26.0.0
 
@@ -2049,23 +2060,23 @@ mouseDrag(from: Point, to: Point, touchOptions?: TouchOptions, keyOptions?: KeyO
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 起始点。 |
-| to | Point | 是 | 结束点。 |
-| touchOptions | TouchOptions | 否 | 用于速度和持续时间设置的触摸选项。此方法中仅'speed'和'duration'属性有效。设置其他属性将导致BusinessError 17000007。默认值：参考TouchOptions的默认值。 |
-| keyOptions | KeyOptions | 否 | 拖动期间按下的键码选项。默认值：参考keyOptions的默认值。 |
+| from | Point | 是 | 起点。 |
+| to | Point | 是 | 终点。 |
+| touchOptions | TouchOptions | 否 | 速度和持续时间设置的触摸选项。在此方法中，只有“速度”和“持续时间”属性有效。设置其他属性会导致BusinessError 17000007。<br>默认值：参考TouchOptions的默认值。 |
+| keyOptions | KeyOptions | 否 | 拖动期间要按的键代码的键选项。<br>默认值：参考keyOptions的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -2084,7 +2095,7 @@ async function demo() {
     key2: 2019   // C键
   };
   // 鼠标拖拽并同时按下Ctrl+C组合键
-  await driver.mouseDrag({ x: 100, y: 100 }, { x: 200, y: 200 }, touchOptions, keyOptions);
+  await driver.mouseDragWithOptions({ x: 100, y: 100 }, { x: 200, y: 200 }, touchOptions, keyOptions);
 }
 
 ```
@@ -2095,7 +2106,7 @@ async function demo() {
 mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Promise<void>
 ```
 
-在指定坐标处注入鼠标长按动作，可选按键或组合键。该API使用Promise返回结果。 例如，如果**Key**的值为**2072**，则在指定坐标处执行鼠标长按，同时按住**Ctrl**键。
+在指定坐标点注入鼠标长按动作，支持同时按下对应键盘组合键。使用Promise异步回调。例如，Key值为2072时，按下Ctrl并进行鼠标长按动作。
 
 **起始版本：** 11
 
@@ -2107,23 +2118,23 @@ mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number): Prom
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 鼠标设备长按的坐标。 |
-| btnId | MouseButton | 是 | 按下的鼠标按键。 |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
+| p | Point | 是 | 鼠标长按的坐标。 |
+| btnId | MouseButton | 是 | 按下的鼠标按钮。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2145,7 +2156,7 @@ async function demo() {
 mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number, duration?: number): Promise<void>
 ```
 
-在指定坐标处注入鼠标长按动作，可选按键或组合键及指定持续时间。该API使用Promise返回结果。 例如，如果**Key**的值为**2072**，则在指定坐标处执行鼠标长按，同时按住**Ctrl**键。
+在指定坐标点注入鼠标长按动作，支持同时按下对应键盘组合键，支持指定长按时长。使用Promise异步回调。例如，Key值为2072时，按下Ctrl并进行鼠标长按动作。
 
 **起始版本：** 20
 
@@ -2157,24 +2168,24 @@ mouseLongClick(p: Point, btnId: MouseButton, key1?: number, key2?: number, durat
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 鼠标设备长按的坐标。 |
-| btnId | MouseButton | 是 | 按下的鼠标按键。 |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| duration | number | 否 | 长按持续时间。<br>取值范围：值应 &gt;= 1500<br>单位：ms<br>默认值：1500 |
+| p | Point | 是 | 鼠标长按的坐标。 |
+| btnId | MouseButton | 是 | 按下的鼠标按钮。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| duration | number | 否 | 长按持续的时间，取值范围为大于等于1500的整数，默认值为1500，单位：ms。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2196,7 +2207,7 @@ async function demo() {
 mouseMoveTo(p: Point): Promise<void>
 ```
 
-将鼠标光标移动到目标点。该API使用Promise返回结果。
+将鼠标光标移到目标点。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -2208,20 +2219,20 @@ mouseMoveTo(p: Point): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 终点坐标。 |
+| p | Point | 是 | 目标点的坐标。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2242,7 +2253,7 @@ async function demo() {
 mouseMoveWithTrack(from: Point, to: Point, speed?: number): Promise<void>
 ```
 
-将鼠标指针从起点移动到终点。该API使用Promise返回结果。
+鼠标从起始坐标点滑向终点坐标点。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -2254,22 +2265,22 @@ mouseMoveWithTrack(from: Point, to: Point, speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 起点坐标。 |
+| from | Point | 是 | 起始点坐标。 |
 | to | Point | 是 | 终点坐标。 |
-| speed | number | 否 | 鼠标移动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2290,7 +2301,7 @@ async function demo() {
 mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number): Promise<void>
 ```
 
-在指定坐标处注入鼠标滚轮滚动动作，可选按键或组合键。该API使用Promise返回结果。 例如，如果**key1**的值为**2072**，则鼠标滚动时按下**Ctrl**键。
+在指定坐标点注入鼠标滚轮滑动动作，支持同时按下对应键盘组合键。使用Promise异步回调。例如，Key值为2072时，按下Ctrl并进行鼠标滚轮滑动动作。
 
 **起始版本：** 10
 
@@ -2302,24 +2313,24 @@ mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number): P
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 鼠标单击的坐标。 |
-| down | boolean | 是 | 鼠标滚轮是否向下滚动。值**true**表示鼠标滚轮向下滚动，**false**表示向上滚动。 |
-| d | number | 是 | 鼠标滚轮滚动的刻度数。一个刻度表示滚动120 px。该值为大于或等于0的整数。<br>取值范围：值应 &gt;= 0<br>单位：px |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
+| p | Point | 是 | 鼠标点击的坐标。 |
+| down | boolean | 是 | 滚轮滑动方向是否向下。true表示向下滑动。false表示向上滚动。 |
+| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应目标点位移120px。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。<br>**起始版本：** 11 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2340,7 +2351,7 @@ async function demo() {
 mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number, speed?: number): Promise<void>
 ```
 
-在指定坐标处注入鼠标滚轮滚动动作，可选按键或组合键及指定滚动速度。该API使用Promise返回结果。
+在指定坐标点注入鼠标滚轮滑动动作，支持同时按下对应键盘组合键并且指定滑动速度。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -2352,25 +2363,25 @@ mouseScroll(p: Point, down: boolean, d: number, key1?: number, key2?: number, sp
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| p | Point | 是 | 鼠标单击的坐标。 |
-| down | boolean | 是 | 鼠标滚轮是否向下滚动。值**true**表示鼠标滚轮向下滚动，**false**表示向上滚动。 |
-| d | number | 是 | 鼠标滚轮滚动的刻度数。一个刻度表示滚动120 px。该值为大于或等于0的整数。<br>单位：cell |
-| key1 | number | 否 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| key2 | number | 否 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| speed | number | 否 | 鼠标滚轮滚动速度。<br>取值范围：[1, 500]<br>单位：ticks/s<br>如果为负数则抛出错误码401。<br>默认值：20 |
+| p | Point | 是 | 鼠标点击的坐标。 |
+| down | boolean | 是 | 滚轮滑动方向是否向下。true表示向下滑动。false表示向上滚动。 |
+| d | number | 是 | 鼠标滚轮滚动的格数，取值大于等于0的整数，每格对应目标点位移120px。 |
+| key1 | number | 否 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| key2 | number | 否 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| speed | number | 否 | 鼠标滚轮滚动的速度，范围：1-500的整数，单位：格/秒。为不在范围内的非负数或为null/undefined时设为默认值20。为负数时抛出401错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2391,7 +2402,7 @@ async function demo() {
 penClick(point: Point): Promise<void>
 ```
 
-模拟手写笔单击操作。该API使用Promise返回结果。
+模拟手写笔点击操作。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -2403,20 +2414,20 @@ penClick(point: Point): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 单击点的坐标。 |
+| point | Point | 是 | 点击的坐标点。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2437,7 +2448,7 @@ async function demo() {
 penDoubleClick(point: Point): Promise<void>
 ```
 
-模拟手写笔双击操作。该API使用Promise返回结果。
+模拟手写笔双击操作。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -2449,20 +2460,20 @@ penDoubleClick(point: Point): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 双击点的坐标。 |
+| point | Point | 是 | 双击的坐标点。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2483,7 +2494,7 @@ async function demo() {
 penLongClick(point: Point, pressure?: number): Promise<void>
 ```
 
-模拟手写笔长按操作。该API使用Promise返回结果。
+模拟手写笔长按操作。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -2495,21 +2506,21 @@ penLongClick(point: Point, pressure?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 长按点的坐标。 |
-| pressure | number | 否 | 手写笔的滑动压力。取值范围为0.0到1.0。默认值为**1.0**。<br>取值范围：[0.0, 1.0]<br>默认值：1.0 |
+| point | Point | 是 | 长按的坐标点。 |
+| pressure | number | 否 | 手写笔滑动操作的压力，默认为1.0，取值范围为0.0到1.0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2530,7 +2541,7 @@ async function demo() {
 penSwipe(startPoint: Point, endPoint: Point, speed?: number, pressure?: number): Promise<void>
 ```
 
-模拟手写笔滑动操作。该API使用Promise返回结果。
+模拟手写笔的滑动操作。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -2542,23 +2553,23 @@ penSwipe(startPoint: Point, endPoint: Point, speed?: number, pressure?: number):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startPoint | Point | 是 | 起点坐标。 |
-| endPoint | Point | 是 | 终点坐标。 |
-| speed | number | 否 | 手写笔滑动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
-| pressure | number | 否 | 手写笔的滑动压力。<br>取值范围：[0.0, 1.0]<br>默认值：1.0 |
+| startPoint | Point | 是 | 起始位置的坐标点。 |
+| endPoint | Point | 是 | 结束位置的坐标点。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。 |
+| pressure | number | 否 | 手写笔滑动操作的压力，默认为1.0，取值范围为0.0到1.0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2579,7 +2590,7 @@ async function demo() {
 pressBack(): Promise<void>
 ```
 
-按下返回键。该API使用Promise返回结果。
+进行点击BACK键的操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -2591,13 +2602,13 @@ pressBack(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2618,7 +2629,7 @@ async function demo() {
 pressBack(displayId: number): Promise<void>
 ```
 
-在指定屏幕上按下返回键。该API使用Promise返回结果。
+对指定屏幕进行点击BACK键的操作。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -2630,20 +2641,20 @@ pressBack(displayId: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**17000007**。 |
+| displayId | number | 是 | 指定的屏幕ID，取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -2664,7 +2675,7 @@ async function demo() {
 pressHome(): Promise<void>
 ```
 
-在设备上注入返回主屏幕的操作。该API使用Promise返回结果。
+设备注入返回桌面操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -2676,13 +2687,13 @@ pressHome(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2703,7 +2714,7 @@ async function demo() {
 pressHome(displayId: number): Promise<void>
 ```
 
-在指定显示上注入返回主屏幕的操作。该API使用Promise返回结果。
+设备指定屏幕上注入返回桌面操作。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -2715,20 +2726,20 @@ pressHome(displayId: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**17000007**。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -2749,7 +2760,7 @@ async function demo() {
 screenCap(savePath: string): Promise<boolean>
 ```
 
-截取当前屏幕并保存为PNG图像到给定的保存路径。该API使用Promise返回结果。 该API可用于支持截图的场景。
+捕获当前屏幕，并保存为PNG格式的图片至给出的保存路径中。使用Promise异步回调。适用于支持截屏的场景。
 
 **起始版本：** 9
 
@@ -2761,20 +2772,20 @@ screenCap(savePath: string): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| savePath | string | 是 | 文件保存路径。路径必须为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
+| savePath | string | 是 | 文件保存路径。路径需为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回截图操作是否成功的Promise对象。值**true**表示操作成功，**false**表示失败。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回截图操作是否成功完成。true：完成，false：未完成。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2795,7 +2806,7 @@ async function demo() {
 screenCap(savePath: string, displayId: number): Promise<boolean>
 ```
 
-截取指定屏幕并保存为PNG图像到给定的保存路径。该API使用Promise返回结果。 该API可用于支持截图的场景。
+捕获指定屏幕，并保存为PNG格式的图片至给出的保存路径中。使用Promise异步回调。适用于支持截屏的场景。
 
 **起始版本：** 20
 
@@ -2807,21 +2818,21 @@ screenCap(savePath: string, displayId: number): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| savePath | string | 是 | 文件保存路径。路径必须为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**401**。 |
+| savePath | string | 是 | 文件保存路径。路径需为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
+| displayId | number | 是 | 指定设备屏幕ID。取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | 用于返回截图操作是否成功的Promise对象。值**true**表示截图操作成功，**false**表示失败。 |
+| Promise&lt;boolean&gt; | Promise对象，返回截图操作是否成功完成。true：完成。false：未完成。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2842,7 +2853,7 @@ async function demo() {
 screenCapture(savePath: string, rect?: Rect): Promise<boolean>
 ```
 
-截取当前屏幕的指定区域并将截图保存为PNG图像到指定路径。该API使用Promise返回结果。 该API可用于支持截图的场景。
+捕获当前屏幕的指定区域，并保存为PNG格式的图片至给出的保存路径中。使用Promise异步回调。适用于支持截屏的场景。
 
 **起始版本：** 10
 
@@ -2854,21 +2865,21 @@ screenCapture(savePath: string, rect?: Rect): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| savePath | string | 是 | 文件保存路径。路径必须为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
-| rect | Rect | 否 | 要截取的屏幕区域。默认值为整个屏幕。 |
+| savePath | string | 是 | 文件保存路径。路径需为当前应用的[沙箱路径](../../../../file-management/app-sandbox-directory.md)。 |
+| rect | Rect | 否 | 截图区域，默认为全屏。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回截图操作是否成功的Promise对象。值**true**表示截图操作成功，**false**表示失败。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回截图操作是否成功完成。true：成功完成，false：未成功完成。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2894,7 +2905,7 @@ async function demo() {
 setDisplayRotation(rotation: DisplayRotation): Promise<void>
 ```
 
-设置当前场景的显示旋转方向。该API使用Promise返回结果。适用于可旋转场景。
+将当前场景的显示方向设置为指定的显示方向。使用Promise异步回调。适用于可旋转的应用场景。
 
 **起始版本：** 9
 
@@ -2906,20 +2917,20 @@ setDisplayRotation(rotation: DisplayRotation): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rotation | DisplayRotation | 是 | 设备的显示旋转方向。 |
+| rotation | DisplayRotation | 是 | 设备的显示方向。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2940,7 +2951,7 @@ async function demo() {
 setDisplayRotationEnabled(enabled: boolean): Promise<void>
 ```
 
-启用或禁用显示旋转。该API使用Promise返回结果。
+启用/禁用设备旋转屏幕的功能。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -2952,20 +2963,20 @@ setDisplayRotationEnabled(enabled: boolean): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | 屏幕是否可以旋转。值**true**表示屏幕可以旋转，**false**表示不可旋转。 |
+| enabled | boolean | 是 | 能否旋转屏幕的标识。true：可以旋转。false：不可以旋转。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -2986,7 +2997,7 @@ async function demo() {
 swipe(startx: number, starty: number, endx: number, endy: number, speed?: number): Promise<void>
 ```
 
-从起始坐标点滑动到目标坐标点。该API使用Promise返回结果。
+从起始坐标点滑向目的坐标点。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -2998,24 +3009,24 @@ swipe(startx: number, starty: number, endx: number, endy: number, speed?: number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startx | number | 是 | 数值，表示起点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| starty | number | 是 | 数值，表示起点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
-| endx | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| endy | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
-| speed | number | 否 | 滑动速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| startx | number | 是 | 以number的形式传入起始点的横坐标信息，取值范围：大于等于0的整数。 |
+| starty | number | 是 | 以number的形式传入起始点的纵坐标信息，取值范围：大于等于0的整数。 |
+| endx | number | 是 | 以number的形式传入目的点的横坐标信息，取值范围：大于等于0的整数。 |
+| endy | number | 是 | 以number的形式传入目的点的纵坐标信息，取值范围：大于等于0的整数。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3038,7 +3049,7 @@ async function demo() {
 swipeBetween(from: Point, to: Point, speed?: number): Promise<void>
 ```
 
-从起始坐标点滑动到目标坐标点。该API使用Promise返回结果。
+从起始坐标点滑向目标坐标点。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -3050,22 +3061,22 @@ swipeBetween(from: Point, to: Point, speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | Point对象，传递起点坐标和起点所属的显示ID。 |
-| to | Point | 是 | Point对象，传递目标点坐标和目标点所属的显示ID。<br>**注意**：目标点和起点必须在同一屏幕上。否则将抛出**17000007**异常。 |
-| speed | number | 否 | 滑动速度，单位为px/s。取值范围为200到40000。如果设置的值不在范围内，将使用默认值**600**。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码17000007。<br>默认值：600 |
+| from | Point | 是 | 以Point对象的形式传入起始点的坐标信息和所属屏幕ID。 |
+| to | Point | 是 | 以Point对象的形式传入终止点的坐标信息和所属屏幕ID。**说明：** 应与起始点属于同一个屏幕，否则将抛出17000007异常。 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出17000007错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -3080,13 +3091,13 @@ async function demo() {
 
 ```
 
-## swipeBetween
+## swipeBetweenWithOptions
 
 ```TypeScript
-swipeBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
+swipeBetweenWithOptions(from: Point, to: Point, options?: TouchOptions): Promise<void>
 ```
 
-在屏幕指定点之间滑动，可设置触摸选项。
+使用可选的触摸选项在指定点之间滑动屏幕。
 
 **起始版本：** 26.0.0
 
@@ -3098,22 +3109,22 @@ swipeBetween(from: Point, to: Point, options?: TouchOptions): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| from | Point | 是 | 手指触摸屏幕的坐标点。 |
+| from | Point | 是 | 手指接触屏幕的坐标点。 |
 | to | Point | 是 | 手指离开屏幕的坐标点。 |
-| options | TouchOptions | 否 | 滑动操作的选项。仅'speed'和'pressure'属性适用于此方法。设置其他属性将导致BusinessError 17000007。默认值：参考TouchOptions的默认值。 |
+| options | TouchOptions | 否 | 滑动操作的选项。只有“速度”和“压力”属性适用于此方法。设置其他属性将导致BusinessError 17000007。<br>默认值：参考TouchOptions的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -3128,7 +3139,7 @@ async function demo() {
     pressure: 0.5  // 触摸压力值
   };
   // 从起始坐标点滑向目标坐标点，并指定滑动速率和触摸压力
-  await driver.swipeBetween({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
+  await driver.swipeBetweenWithOptions({ x: 100, y: 100, displayId: 0 }, { x: 1000, y: 1000, displayId: 0 }, options);
 }
 
 ```
@@ -3139,7 +3150,7 @@ async function demo() {
 touchPadMultiFingerSwipe(fingers: number, direction: UiDirection, options?: TouchPadSwipeOptions): Promise<void>
 ```
 
-模拟触控板上的多指滑动手势。该API使用Promise返回结果。
+模拟触摸板多指滑动手势。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -3151,22 +3162,22 @@ touchPadMultiFingerSwipe(fingers: number, direction: UiDirection, options?: Touc
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fingers | number | 是 | 手指数。值可以为3或4。 |
-| direction | UiDirection | 是 | 滑动方向。 |
-| options | TouchPadSwipeOptions | 否 | 触控板多指滑动手势的附加选项。默认使用**{@link TouchPadSwipeOptions}**中属性的默认值。 |
+| fingers | number | 是 | 触摸板多指滑动的手指数。取值为3或者4。 |
+| direction | UiDirection | 是 | 触摸板多指滑动的方向。 |
+| options | TouchPadSwipeOptions | 否 | 触摸板多指滑动手势附加选项，默认取TouchPadSwipeOptions中各属性的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，返回无结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 | [17000005](../errorcode-uitest.md#17000005-操作不支持) |  |
 
 **示例：**
@@ -3188,7 +3199,7 @@ async function demo() {
 touchPadTwoFingersScroll(point: Point, direction: UiDirection, d: number, speed?: number): Promise<void>
 ```
 
-模拟触控板上的双指滚动操作。该API使用Promise返回结果。
+模拟触摸板双指滚动手势。使用Promise异步回调。
 
 **起始版本：** 22
 
@@ -3200,24 +3211,24 @@ touchPadTwoFingersScroll(point: Point, direction: UiDirection, d: number, speed?
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| point | Point | 是 | 在触控板上执行双指滚动时鼠标光标的位置。 |
-| direction | UiDirection | 是 | 触控板上双指滚动的方向。 |
-| d | number | 是 | 双指在触控板上滚动的刻度数。一个刻度表示向目标点移动120 px。该值为大于或等于0的整数。 |
-| speed | number | 否 | 触控板上双指滚动的速度。<br>单位：ticks/s。<br>取值范围：[1, 500]<br>如果为负数则抛出错误码17000007。<br>默认值：20 |
+| point | Point | 是 | 触摸板双指滚动时鼠标光标的位置。 |
+| direction | UiDirection | 是 | 触摸板双指滚动的方向。 |
+| d | number | 是 | 触摸板双指滚动的格数，取值为大于等于0的整数，每格对应目标点位移120px。 |
+| speed | number | 否 | 触摸板双指滚动的速度，范围：1-500的整数，单位：格/秒。为不在范围内的非负数或为null/undefined时设为默认值20。为负数时抛出17000007错误码。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. |
 
 **示例：**
 
@@ -3238,7 +3249,7 @@ async function demo() {
 triggerCombineKeys(key0: number, key1: number, key2?: number): Promise<void>
 ```
 
-根据指定键值触发组合键事件。该API使用Promise返回结果。 例如，如果**Key**的值为(2072, 2019)，则找到并单击匹配的组合键**Ctrl+C**。
+通过给定的key值，找到对应组合键并点击。使用Promise异步回调。例如，Key值为(2072, 2019)时，找到key值对应的组合键并点击，如Ctrl+c。
 
 **起始版本：** 9
 
@@ -3250,22 +3261,22 @@ triggerCombineKeys(key0: number, key1: number, key2?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key0 | number | 是 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
-| key1 | number | 是 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
-| key2 | number | 否 | 第三个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
+| key0 | number | 是 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
+| key1 | number | 是 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
+| key2 | number | 否 | 指定的第三个key值，取值范围：大于等于0的整数。取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3287,7 +3298,7 @@ async function demo() {
 triggerCombineKeys(key0: number, key1: number, key2?: number, displayId?: number): Promise<void>
 ```
 
-在指定屏幕上根据指定键值触发组合键事件。该API使用Promise返回结果。 例如，如果**Key**的值为(2072, 2019)，则找到并单击匹配的组合键**Ctrl+C**。
+通过给定的key值，找到对应组合键，并在指定屏幕下进行点击。使用Promise异步回调。例如，Key值为(2072, 2019)时，找到key值对应的组合键并点击，如Ctrl+c。
 
 **起始版本：** 20
 
@@ -3299,23 +3310,23 @@ triggerCombineKeys(key0: number, key1: number, key2?: number, displayId?: number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key0 | number | 是 | 第一个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
-| key1 | number | 是 | 第二个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
-| key2 | number | 否 | 第三个键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。<br>默认值：0 |
-| displayId | number | 否 | 显示ID。该值为大于或等于0的整数。默认值为设备的默认显示ID。 |
+| key0 | number | 是 | 指定的第一个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
+| key1 | number | 是 | 指定的第二个key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
+| key2 | number | 否 | 指定的第三个key值，取值范围：大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)，默认值为0。 |
+| displayId | number | 否 | 指定的屏幕ID，取值范围：大于等于0的整数，默认值为设备默认屏幕ID。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3336,7 +3347,7 @@ async function demo() {
 triggerKey(keyCode: number): Promise<void>
 ```
 
-通过传入键值触发按键事件。该API使用Promise返回结果。
+传入key值实现模拟点击对应按键的效果。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -3348,20 +3359,20 @@ triggerKey(keyCode: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keyCode | number | 是 | 键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
+| keyCode | number | 是 | 指定的key值，取值范围：大于等于0的整数。取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3383,7 +3394,7 @@ async function demo() {
 triggerKey(keyCode: number, displayId: number): Promise<void>
 ```
 
-在指定屏幕上通过传入键值触发按键事件。该API使用Promise返回结果。
+在指定屏幕，传入key值实现模拟点击对应按键的效果。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -3395,21 +3406,21 @@ triggerKey(keyCode: number, displayId: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keyCode | number | 是 | 键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
-| displayId | number | 是 | 显示ID。该值为大于或等于0的整数。<br>**注意**：如果输入的**displayId**不存在，将上报异常**401**。 |
+| keyCode | number | 是 | 指定的key值，取值范围：大于等于0的整数。取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
+| displayId | number | 是 | 指定的屏幕ID，取值范围：大于等于0的整数。**说明：** 传入displayId不存在时，将抛出17000007异常。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3431,7 +3442,14 @@ async function demo() {
 triggerPenKey(key: PenKey, mode: PenMode, operation: PenKeyOperation, options?: PenKeyOperationOptions): Promise<void>
 ```
 
-触发手写笔按键操作。 支持的组合： - HANDWRITING模式：HANDWRITING键配合CLICK或DOUBLE_CLICK操作。 - AIR_MOUSE模式：AIR_MOUSE键配合CLICK或DOUBLE_CLICK操作（需要options中的point）， HANDWRITING键配合CLICK或DOUBLE_CLICK操作，SMART键配合CLICK操作。 其他组合将导致BusinessError 17000007。
+Trigger pen key operation.
+
+Supported combinations:
+
+- HANDWRITING mode: HANDWRITING key with CLICK or DOUBLE_CLICK operation.
+- AIR_MOUSE mode: AIR_MOUSE key with CLICK or DOUBLE_CLICK operation (requires point in options),
+HANDWRITING key with CLICK or DOUBLE_CLICK operation, SMART key with CLICK operation.
+Other combinations will result in a BusinessError 17000007.
 
 **起始版本：** 26.0.0
 
@@ -3443,24 +3461,24 @@ triggerPenKey(key: PenKey, mode: PenMode, operation: PenKeyOperation, options?: 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | PenKey | 是 | 要操作的手写笔按键。 |
-| mode | PenMode | 是 | 手写笔模式。 |
-| operation | PenKeyOperation | 是 | 操作类型。 |
-| options | PenKeyOperationOptions | 否 | 操作选项，包括可选的坐标点。默认值：参考PenKeyOperationOption的默认值。 |
+| key | PenKey | 是 | the pen key to operate. |
+| mode | PenMode | 是 | the pen mode. |
+| operation | PenKeyOperation | 是 | the operation type. |
+| options | PenKeyOperationOptions | 否 | the operation options, including optional coordinate point.Default value: Refer to the default value of PenKeyOperationOption.<br>默认值：参考PenKeyOperationOption的默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | @throws { BusinessError } 17000002 - 该API不支持并发调用。 |
+| Promise&lt;void&gt; | - Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000005](../errorcode-uitest.md#17000005-操作不支持) | 不支持此操作。 |
-| [17000007](../errorcode-uitest.md#17000007-参数不合法) | 参数校验失败。不支持的键、模式和操作组合。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000005](../errorcode-uitest.md#17000005-操作不支持) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-参数不合法) | Parameter verification failed. Unsupported key, mode, and operation combination. |
 
 **示例：**
 
@@ -3486,7 +3504,7 @@ async function demo() {
 waitForComponent(on: On, time: number): Promise<Component>
 ```
 
-在指定时间内根据属性查找目标组件。该API使用Promise返回结果。
+在用户给定的时间内，持续查找满足控件属性要求的目标控件。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -3498,21 +3516,21 @@ waitForComponent(on: On, time: number): Promise<Component>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标{@link Component}的属性。 |
-| time | number | 是 | 查找目标{@link Component}的持续时间，单位为ms。该值为大于或等于0的整数。<br>单位：ms<br>取值范围：值应 &gt;= 0 |
+| on | On | 是 | 目标控件的属性要求。 |
+| time | number | 是 | 查找目标控件的持续时间。单位ms，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Component&gt; | 第一个匹配的{@link Component}或undefined。 |
+| Promise&lt;Component&gt; | Promise对象，返回控件对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3533,7 +3551,7 @@ async function demo() {
 waitForIdle(idleTime: number, timeout: number): Promise<boolean>
 ```
 
-检查当前UI上的所有组件是否处于空闲状态。该API使用Promise返回结果。
+判断当前界面的所有控件是否已经空闲。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -3545,21 +3563,21 @@ waitForIdle(idleTime: number, timeout: number): Promise<boolean>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| idleTime | number | 是 | 空闲时间阈值，单位为ms。如果组件保持不活跃的持续时间达到此阈值，则认为其处于空闲状态。该值必须为大于或等于0的整数。<br>单位：ms |
-| timeout | number | 是 | 最大等待时间，单位为毫秒。该值为大于或等于0的整数。<br>单位：ms |
+| idleTime | number | 是 | 空闲时间的阈值。在这个时间段控件不发生变化，视为该控件空闲，单位：毫秒，取值范围：大于等于0的整数。 |
+| timeout | number | 是 | 等待空闲的最大时间，单位：毫秒，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回当前UI上所有组件是否处于空闲状态的Promise对象。值true表示当前UI上所有组件处于空闲状态，false表示相反。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回当前界面的所有控件是否已经空闲。true：已经空闲，false：不空闲。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 
@@ -3580,7 +3598,7 @@ async function demo() {
 wakeUpDisplay(): Promise<void>
 ```
 
-唤醒当前显示。该API使用Promise返回结果。
+唤醒当前设备即设备亮屏。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -3592,13 +3610,13 @@ wakeUpDisplay(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
 
 **示例：**
 

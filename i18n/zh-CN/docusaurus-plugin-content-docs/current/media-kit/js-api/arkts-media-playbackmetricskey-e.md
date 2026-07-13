@@ -1,10 +1,6 @@
 # PlaybackMetricsKey
 
-```TypeScript
-enum PlaybackMetricsKey
-```
-
-Enumerates the playback metric keys.
+表示播放器指标信息的枚举。
 
 **起始版本：** 23
 
@@ -16,7 +12,7 @@ Enumerates the playback metric keys.
 PREPARE_DURATION = 'prepare_duration'
 ```
 
-Preparation duration, in milliseconds.
+表示准备时长，单位为毫秒（ms）。
 
 **起始版本：** 23
 
@@ -28,7 +24,7 @@ Preparation duration, in milliseconds.
 RESOURCE_CONNECTION_DURATION = 'resource_connection_duration'
 ```
 
-Duration for establishing a resource connection, in milliseconds.
+表示资源建链时长，单位为毫秒（ms）。
 
 **起始版本：** 23
 
@@ -40,7 +36,7 @@ Duration for establishing a resource connection, in milliseconds.
 FIRST_FRAME_DECAPSULATION_DURATION = 'first_frame_decapsulation_duration'
 ```
 
-Duration for decapsulating the first frame, in milliseconds.
+表示第一帧的解封装时长，单位为毫秒（ms）。
 
 **起始版本：** 23
 
@@ -52,7 +48,7 @@ Duration for decapsulating the first frame, in milliseconds.
 TOTAL_PLAYING_TIME = 'total_playback_time'
 ```
 
-Total playback duration, in milliseconds.
+表示总的播放时长，单位为毫秒（ms）。
 
 **起始版本：** 23
 
@@ -64,7 +60,9 @@ Total playback duration, in milliseconds.
 DOWNLOAD_REQUESTS_COUNT  = 'loading_requests_count'
 ```
 
-Total number of requests.
+表示总的请求次数。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 23
 
@@ -78,7 +76,7 @@ Total number of requests.
 TOTAL_DOWNLOAD_TIME  = 'total_loading_time'
 ```
 
-Total loading duration, in milliseconds.
+表示总的加载时长，单位为毫秒（ms）。
 
 **起始版本：** 23
 
@@ -90,7 +88,9 @@ Total loading duration, in milliseconds.
 TOTAL_DOWNLOAD_SIZE  = 'total_loading_bytes'
 ```
 
-Total loading size, in bytes.
+表示总的加载大小，单位为字节（Byte）。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 23
 
@@ -104,7 +104,7 @@ Total loading size, in bytes.
 STALLING_COUNT  = 'stalling_count'
 ```
 
-Total number of stalling times.
+表示总的卡顿次数。
 
 **起始版本：** 23
 
@@ -116,37 +116,9 @@ Total number of stalling times.
 TOTAL_STALLING_TIME  = 'total_stalling_time'
 ```
 
-Total stalling duration, in milliseconds.
+表示总的卡顿时长，单位为毫秒（ms）。
 
 **起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
-
-## LIP_ASYNC_COUNT
-
-```TypeScript
-LIP_ASYNC_COUNT  = 'lip_async_count'
-```
-
-Cumulative lip async count.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
-
-## TOTAL_LIP_ASYNC_TIME
-
-```TypeScript
-TOTAL_LIP_ASYNC_TIME  = 'total_lip_async_time'
-```
-
-Total lip async duration during the playback, in milliseconds.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 

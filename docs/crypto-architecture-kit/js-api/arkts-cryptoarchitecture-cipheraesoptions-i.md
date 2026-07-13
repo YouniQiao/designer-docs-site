@@ -1,6 +1,6 @@
 # CipherAesOptions
 
-Defines the aes cipher options.
+Defines the input parameters of **cipher.aes()**.
 
 **Since:** 3
 
@@ -13,7 +13,7 @@ Defines the aes cipher options.
 ## Modules to Import
 
 ```TypeScript
-import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@system.cipher';
+import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@kit.CryptoArchitectureKit';
 ```
 
 ## action
@@ -22,7 +22,10 @@ import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@system.ciph
 action: string
 ```
 
-Action type. The options are as follows: encrypt: Encrypts data. decrypt: Decrypts data.
+Action to perform. The options are as follows:
+
+1. **encrypt**: Encrypts data.
+2. **decrypt**: Decrypts data.
 
 **Type:** string
 
@@ -40,7 +43,7 @@ Action type. The options are as follows: encrypt: Encrypts data. decrypt: Decryp
 complete: () => void
 ```
 
-Called when the execution is completed.
+Called when the execution is complete.
 
 **Type:** () => void
 
@@ -76,7 +79,8 @@ Called when data fails to be encrypted or decrypted.
 iv?: string
 ```
 
-Initial vector for AES-based encryption and decryption. The value is a character string encoded using Base64. The default value is the key value.
+Initialization vector (IV) for AES-based encryption and decryption. The value is a string encoded in Base64. The
+default value is the key value.
 
 **Type:** string
 
@@ -94,7 +98,7 @@ Initial vector for AES-based encryption and decryption. The value is a character
 ivLen?: string
 ```
 
-Length of the initial vector for AES-based encryption and decryption. The default value is 16.
+Length of the IV, in bytes. This field is reserved. The default value is **16**, which is the only value supported.
 
 **Type:** string
 
@@ -112,7 +116,8 @@ Length of the initial vector for AES-based encryption and decryption. The defaul
 ivOffset?: string
 ```
 
-Offset of the initial vector for AES-based encryption and decryption. The default value is 0.
+Offset of the IV for AES-based encryption and decryption. The default value is **0**, which is the only value
+supported.
 
 **Type:** string
 
@@ -130,7 +135,7 @@ Offset of the initial vector for AES-based encryption and decryption. The defaul
 key: string
 ```
 
-Key used for encryption or decryption, which is a character string encrypted using Base64.
+Key used for encryption or decryption. It is a Base64 encoded string.
 
 **Type:** string
 
@@ -166,7 +171,10 @@ Called when data is encrypted or decrypted successfully.
 text: string
 ```
 
-Text content to be encrypted or decrypted. The text to be encrypted must be a common text. The text content to be decrypted must be a binary value encoded using Base64. The default format is used for Base64 encoding.
+Text to be encrypted or decrypted.
+
+The text to be encrypted must be common text. The text to be decrypted must be a binary value encoded in Base64.
+The default format is used for Base64 encoding.
 
 **Type:** string
 
@@ -184,7 +192,7 @@ Text content to be encrypted or decrypted. The text to be encrypted must be a co
 transformation?: string
 ```
 
-Encryption mode and padding of the AES algorithm. The default value is AES/CBC/PKCS5Padding.
+Encryption mode and padding of the AES algorithm. The default value is **AES/CBC/PKCS5Padding**.
 
 **Type:** string
 

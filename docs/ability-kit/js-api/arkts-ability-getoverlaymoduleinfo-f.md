@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { overlay } from '@ohos.bundle.overlay';
+import { overlay } from '@kit.AbilityKit';
 ```
 
 ## getOverlayModuleInfo
@@ -12,7 +12,8 @@ import { overlay } from '@ohos.bundle.overlay';
 function getOverlayModuleInfo(moduleName: string, callback: AsyncCallback<OverlayModuleInfo>): void
 ```
 
-Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses an asynchronous callback to return the result.
+Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -23,7 +24,7 @@ Obtains the OverlayModuleInfo about a module with the overlay feature in the cur
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Name of the module with the overlay feature. |
-| callback | AsyncCallback&lt;OverlayModuleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to returnthe result, which is an [OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) object.If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;OverlayModuleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to returnthe result, which is an [OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) object.If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,7 +66,8 @@ try {
 function getOverlayModuleInfo(moduleName: string): Promise<OverlayModuleInfo>
 ```
 
-Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses a promise to return the result.
+Obtains the OverlayModuleInfo about a module with the overlay feature in the current application. This API uses a
+promise to return the result.
 
 **Since:** 10
 
@@ -81,7 +83,7 @@ Obtains the OverlayModuleInfo about a module with the overlay feature in the cur
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;OverlayModuleInfo&gt; | Promise used to return the result, which is an[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) object. |
+| Promise&lt;OverlayModuleInfo&gt; | Promise used to return the result, which is an[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) object. |
 
 **Error codes:**
 

@@ -1,6 +1,6 @@
 # @ohos.app.ability.appRecovery
 
-appRecovery模块提供了应用在故障状态下的恢复能力。 > **说明：** > > API9仅支持单进程中单Ability的应用恢复。 > > API10支持进程中包含多个Ability的场景。 > > API24支持发生CPP_CRASH时应用恢复。
+The appRecovery module provides APIs for recovering faulty applications.
 
 **Since:** 9
 
@@ -18,17 +18,17 @@ import { appRecovery } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [enableAppRecovery](arkts-apprecovery-enableapprecovery-f.md#enableAppRecovery-1) | 使能应用恢复功能，参数按顺序填入。该接口调用后，应用从启动器启动时第一个Ability支持恢复。 |
-| [restartApp](arkts-apprecovery-restartapp-f.md#restartApp-1) | 重启当前进程，并拉起应用启动时第一个Ability，如果该Ability存在已经保存的状态，这些状态数据会在Ability的onCreate生命周期回调的want参数中作为wantParam属性传入。 API10时将启动由[setRestartWant]{@link appRecovery.setRestartWant}指定的Ability。如果没有指定则按以下规则启动： 如果当前应用前台的Ability支持恢复，则重新拉起该Ability。 如果存在多个支持恢复的Ability处于前台，则只拉起最后一个。 如果没有Ability处于前台，则不拉起。 可以配合[errorManager]{@link @ohos.app.ability.errorManager:errorManager}相关接口使用。两次重启的间隔应大于一分钟，一分钟之内重复调用此接口只会退出应用不会重启应用。 自动重启的行为与主动重启一致。 |
-| [saveAppState](arkts-apprecovery-saveappstate-f.md#saveAppState-1) | 保存当前App状态，可以配合[errorManager]{@link @ohos.app.ability.errorManager:errorManager}相关接口使用。 |
-| [saveAppState](arkts-apprecovery-saveappstate-f.md#saveAppState-2) | 主动保存Ability的状态，这个状态将在下次恢复启动时使用。可以配合[errorManager]{@link @ohos.app.ability.errorManager:errorManager}相关接口使用。 |
-| [setRestartWant](arkts-apprecovery-setrestartwant-f.md#setRestartWant-1) | 设置下次恢复主动拉起场景下的Ability。该Ability必须为当前包下的UIAbility。 |
+| [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1) | Enables application recovery. After this API is called, the first ability that is displayed when the application isstarted from the initiator can be restored. |
+| [restartApp](arkts-ability-restartapp-f.md#restartapp-1) | Restarts the current process and starts the first ability that is displayed when the application is started. If thestate of this ability is saved, the saved state data is passed into the **wantParam** property in the **want** parameter of the **onCreate** lifecycle callback of the ability.In API version 10, the ability specified by [setRestartWant](arkts-ability-setrestartwant-f.md#setrestartwant-1) is started. If no ability is specified, the following rules are used:If the ability of the current application running in the foreground supports recovery, that ability is started.If multiple abilities that support recovery is running in the foreground, only the last ability is started.If no ability is running in the foreground, none of them is started.This API can be used together with the APIs of [errorManager](arkts-app-ability-errormanager.md). The interval between two restarts must be greater than one minute. If this API is called repeatedly within one minute, the application exits but does not restart. The behavior of automatic restart is the same as that of proactive restart. |
+| [saveAppState](arkts-ability-saveappstate-f.md#saveappstate-1) | Saves the application state. This API can be used together with the APIs of [errorManager](arkts-app-ability-errormanager.md). |
+| [saveAppState](arkts-ability-saveappstate-f.md#saveappstate-2) | Saves the ability state, which will be used for recovery. This API can be used together with the APIs of [errorManager](arkts-app-ability-errormanager.md). |
+| [setRestartWant](arkts-ability-setrestartwant-f.md#setrestartwant-1) | Sets an ability that will be recovered. The ability must be a UIAbility in the current bundle. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [RestartFlag](arkts-apprecovery-restartflag-e.md) | 应用重启标志，[enableAppRecovery]{@link appRecovery.enableAppRecovery}接口重启选项参数，该类型为枚举。 |
-| [SaveModeFlag](arkts-apprecovery-savemodeflag-e.md) | 状态保存标志，[enableAppRecovery]{@link appRecovery.enableAppRecovery}接口状态保存方式的参数，该类型为枚举。 |
-| [SaveOccasionFlag](arkts-apprecovery-saveoccasionflag-e.md) | 保存条件标志，[enableAppRecovery]{@link appRecovery.enableAppRecovery}接口状态保存时的选项参数，该类型为枚举。 |
+| [RestartFlag](arkts-ability-restartflag-e.md) | Enumerates the application restart flags. This enum is used as an input parameter of [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1). |
+| [SaveModeFlag](arkts-ability-savemodeflag-e.md) | Enumerates the application state saving modes. This enum is used as an input parameter of [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1). |
+| [SaveOccasionFlag](arkts-ability-saveoccasionflag-e.md) | Enumerates the scenarios for saving the application state. This enum is used as an input parameter of [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1). |
 

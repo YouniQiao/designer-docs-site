@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dialogRequest } from '@ohos.app.ability.dialogRequest';
+import { dialogRequest } from '@kit.AbilityKit';
 ```
 
 ## getRequestCallback
@@ -12,7 +12,13 @@ import { dialogRequest } from '@ohos.app.ability.dialogRequest';
 function getRequestCallback(want: Want): RequestCallback
 ```
 
-Obtains the request callback from Want. > **NOTE** > > This API can be used by a ServiceExtensionAbility. If the ServiceExtensionAbility implements modal dialog boxes, > the request callback can be obtained from Want. If this API is used in other scenarios, no return value is > obtained.
+Obtains the request callback from Want.
+
+> **NOTE**
+>
+> This API can be used by a ServiceExtensionAbility. If the ServiceExtensionAbility implements modal dialog boxes,
+> the request callback can be obtained from Want. If this API is used in other scenarios, no return value is
+> obtained.
 
 **Since:** 9
 

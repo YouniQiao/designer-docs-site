@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
+import { defaultAppManager } from '@kit.AbilityKit';
 ```
 
 ## isDefaultApplicationSync
@@ -12,7 +12,9 @@ import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
 function isDefaultApplicationSync(type: string): boolean
 ```
 
-Checks whether this application is the default application of a system-defined application type or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). This API returns the result synchronously.
+Checks whether this application is the default application of a system-defined application type or a
+[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API returns the result
+synchronously.
 
 **Since:** 10
 
@@ -22,7 +24,7 @@ Checks whether this application is the default application of a system-defined a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype) or[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). |
+| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md) or[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). |
 
 **Return value:**
 

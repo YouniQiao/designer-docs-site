@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## startShortcutWithReason
@@ -12,7 +12,12 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function startShortcutWithReason(shortcutInfo: ShortcutInfo, startReason: string, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability based on the specified shortcut information, and carries the reason for the shortcut launch. This API uses a promise to return the result. The launched ability can obtain the launch reason through the **launchReasonMessage** field of [LaunchParam](arkts-ability-launchparam-i.md#launchparam) and handle service logic accordingly.
+Starts an ability based on the specified shortcut information, and carries the reason for the shortcut launch. This
+API uses a promise to return the result.
+
+The launched ability can obtain the launch reason through the **launchReasonMessage** field of
+[LaunchParam](arkts-ability-launchparam-i.md) and handle service logic
+accordingly.
 
 **Since:** 20
 

@@ -1,6 +1,7 @@
 # types
 
-Provides APIs to check different types of built-in objects, such as ArrayBuffer, Map, and Set, so as to avoid exceptions caused by type errors.
+Provides APIs to check different types of built-in objects, such as ArrayBuffer, Map, and Set, so as to avoid
+exceptions caused by type errors.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ Provides APIs to check different types of built-in objects, such as ArrayBuffer,
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## constructor
@@ -294,7 +295,11 @@ console.info("result = " + result);
 isBooleanObject(value: Object): boolean
 ```
 
-Checks whether the value is of the Boolean type. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
+Checks whether the value is of the Boolean type.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
 
 **Since:** 8
 
@@ -332,7 +337,11 @@ console.info("result = " + result);
 isBoxedPrimitive(value: Object): boolean
 ```
 
-Checks whether the value is of the Boolean, Number, String, or Symbol type. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
+Checks whether the value is of the Boolean, Number, String, or Symbol type.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
 
 **Since:** 8
 
@@ -943,7 +952,11 @@ console.info("result = " + result);
 isNumberObject(value: Object): boolean
 ```
 
-Checks whether the value is of the Number type. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
+Checks whether the value is of the Number type.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
 
 **Since:** 8
 
@@ -1203,7 +1216,11 @@ console.info("result = " + result);
 isStringObject(value: Object): boolean
 ```
 
-Checks whether the value is a string object. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
+Checks whether the value is a string object.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
 
 **Since:** 8
 
@@ -1241,7 +1258,11 @@ console.info("result = " + result);
 isSymbolObject(value: Object): boolean
 ```
 
-Checks whether the value is a symbol object. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
+Checks whether the value is a symbol object.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 14. No substitute is provided.
 
 **Since:** 8
 

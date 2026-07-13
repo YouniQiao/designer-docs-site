@@ -11,7 +11,7 @@ Provides fingerprint gesture event types and the offset of the fingerprint senso
 ## Modules to Import
 
 ```TypeScript
-import { shortKey } from '@ohos.multimodalInput.shortKey';
+import { shortKey } from '@kit.InputKit';
 ```
 
 ## action
@@ -36,7 +36,8 @@ Enumeration of fingerprint gesture event types.
 distanceX: number
 ```
 
-Offset relative to the short axis of the side fingerprint device (positive values indicate movement to the right, and negative values indicate movement to the left).
+Offset relative to the short axis of the side fingerprint device (positive values indicate movement to the right,
+and negative values indicate movement to the left).
 
 **Type:** number
 
@@ -52,7 +53,8 @@ Offset relative to the short axis of the side fingerprint device (positive value
 distanceY: number
 ```
 
-Offset relative to the long axis of the side fingerprint device (positive values indicate upward movement, and negative values indicate downward movement).
+Offset relative to the long axis of the side fingerprint device (positive values indicate upward movement, and
+negative values indicate downward movement).
 
 **Type:** number
 

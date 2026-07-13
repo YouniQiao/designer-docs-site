@@ -1,6 +1,8 @@
 # ChildProcessOptions
 
-The module describes the startup configuration of a child process. When starting a child process through [childProcessManager](arkts-app-ability-childprocessmanager.md#childprocessmanager), you can configure the startup configuration of the child process through **ChildProcessOptions**.
+The module describes the startup configuration of a child process. When starting a child process through
+[childProcessManager](arkts-app-ability-childprocessmanager.md), you can configure the startup
+configuration of the child process through **ChildProcessOptions**.
 
 **Since:** 12
 
@@ -9,7 +11,7 @@ The module describes the startup configuration of a child process. When starting
 ## Modules to Import
 
 ```TypeScript
-import { ChildProcessOptions } from '@ohos.app.ability.ChildProcessOptions';
+import { ChildProcessOptions } from '@kit.AbilityKit';
 ```
 
 ## isolationMode
@@ -18,7 +20,9 @@ import { ChildProcessOptions } from '@ohos.app.ability.ChildProcessOptions';
 isolationMode?: boolean
 ```
 
-Controls the sandbox isolation level and network access permissions of the child process. **true** if the child process runs in an independent sandbox environment and cannot access the network; **false** if the child process shares the sandbox and network environment with the main process. The default value is **false**.
+Controls the sandbox isolation level and network access permissions of the child process. **true** if the child
+process runs in an independent sandbox environment and cannot access the network; **false** if the child process
+shares the sandbox and network environment with the main process. The default value is **false**.
 
 **Type:** boolean
 
@@ -34,7 +38,9 @@ Controls the sandbox isolation level and network access permissions of the child
 isolationUid?: boolean
 ```
 
-Whether the child process uses an independent UID. **true** if the child process uses an independent UID; **false** if the child process and the main process share the same UID. The default value is **false**. This parameter is valid only when **isolationMode** is set to **true**.
+Whether the child process uses an independent UID. **true** if the child process uses an independent UID; **false**
+if the child process and the main process share the same UID. The default value is **false**. This parameter is
+valid only when **isolationMode** is set to **true**.
 
 **Type:** boolean
 

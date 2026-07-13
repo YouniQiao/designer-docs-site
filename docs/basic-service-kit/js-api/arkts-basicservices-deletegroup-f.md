@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## deleteGroup
@@ -12,7 +12,10 @@ import { request } from '@ohos.request';
 function deleteGroup(gid: string): Promise<void>
 ```
 
-Deletes a specified group. No task ID can be added to the group. This API uses a promise to return the result. When all tasks in a group are succeeded, failed, or removed and the group is deleted, the completion and failure notifications of this group are displayed.
+Deletes a specified group. No task ID can be added to the group. This API uses a promise to return the result.
+
+When all tasks in a group are succeeded, failed, or removed and the group is deleted, the completion and failure
+notifications of this group are displayed.
 
 **Since:** 15
 

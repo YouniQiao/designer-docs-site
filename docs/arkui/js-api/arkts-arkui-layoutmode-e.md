@@ -12,7 +12,9 @@ Enumerates the layout modes of the images and texts on the bottom tabs.
 AUTO = 0
 ```
 
-When the tab width is greater than 104 vp, the tab content is arranged from left to right. Otherwise,the tab content is arranged from top to bottom. This parameter is valid only when the tab bar is in vertical mode or fixed horizontal mode.
+When the tab width is greater than 104 vp, the tab content is arranged from left to right.
+Otherwise,the tab content is arranged from top to bottom. This parameter is valid only when the tab bar is in
+vertical mode or fixed horizontal mode.
 
 **Since:** 10
 

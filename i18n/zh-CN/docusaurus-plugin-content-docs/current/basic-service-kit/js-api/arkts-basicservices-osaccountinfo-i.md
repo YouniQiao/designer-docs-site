@@ -82,7 +82,9 @@ isActivated: boolean
 isActived: boolean
 ```
 
-系统账号激活状态。true表示指定账号处于激活状态；false表示指定账号处于未激活状态。 **说明：**从API version 7开始支持，从API version 11开始废弃，建议使用isActivated。
+系统账号激活状态。true表示指定账号处于激活状态；false表示指定账号处于未激活状态。
+
+**说明：**从API version 7开始支持，从API version 11开始废弃，建议使用isActivated。
 
 **类型：** boolean
 
@@ -128,7 +130,9 @@ isUnlocked: boolean
 isVerified: boolean
 ```
 
-账号是否验证。true表示指定账号已验证；false表示指定账号未验证。 **说明：**从API version 7开始支持，从API version 11开始废弃，建议使用isUnlocked。
+账号是否验证。true表示指定账号已验证；false表示指定账号未验证。
+
+**说明：**从API version 7开始支持，从API version 11开始废弃，建议使用isUnlocked。
 
 **类型：** boolean
 

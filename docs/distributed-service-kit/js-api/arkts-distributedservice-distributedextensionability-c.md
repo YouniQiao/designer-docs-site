@@ -1,6 +1,7 @@
 # DistributedExtensionAbility
 
-The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks for distributed ability creation, destruction, and connection.
+The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks for
+distributed ability creation, destruction, and connection.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ The **DistributedExtensionAbility** module provides distributed extension capabi
 ## Modules to Import
 
 ```TypeScript
-import { DistributedExtensionAbility } from '@ohos.application.DistributedExtensionAbility';
+import { DistributedExtensionAbility } from '@kit.DistributedServiceKit';
 ```
 
 ## onCollaborate

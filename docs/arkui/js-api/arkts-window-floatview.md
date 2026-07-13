@@ -1,6 +1,50 @@
 # @ohos.window.floatView
 
-标准悬浮窗是悬浮在桌面/应用界面上的小型窗口，提供灵活的窗口管理能力。 本模块提供标准悬浮窗能力，包括判断设备是否支持标准悬浮窗功能、创建标准悬浮窗控制器以启动、更新或停止标准悬浮窗等。 **适用场景：** 标准悬浮窗适用于需要在独立小窗口中持续展示应用内容或提供快捷操作的场景。例如： - 股市盯盘应用：用户在浏览其他应用时，通过标准悬浮窗实时查看股票行情变化，无需频繁切换应用。 - 手机直播应用：主播在直播过程中使用标准悬浮窗展示自定义的互动面板或控制界面，方便实时操作和互动。 **与闪控球联动：** 本模块可与[@ohos.window.floatingBall]{@link @ohos.window.floatingBall:floatingBall}（闪控球）联合使用。通过 [floatView.bind]{@link floatView.bind}接口将标准悬浮窗控制器与闪控球控制器绑定后，用户点击闪控球可展开为标准悬浮窗，点击标准悬浮窗左上角的缩小按钮可收起为闪控球，实现两种窗口形态的相互切换。 **全局悬浮窗和标准悬浮窗对比** - 共同点：全局悬浮窗和标准悬浮窗均为一种特殊的应用辅助窗口，具备在应用主窗口和对应Ability退至后台后仍然可以在前台显示的能力。可以用于应用退至后台后，使用其继续显示UI。 - 区别： - 全局悬浮窗由开发者管理并实现UI绘制，无统一UI及动效。 - 标准悬浮窗由系统管理并统一绘制UI，动效更为高端精致。 - 标准悬浮窗支持与[闪控球]{@link @ohos.window.floatingBall:floatingBall}互相绑定联合使用，实现更复杂场景。 **起始版本：** 26.0.0 > **说明：** > > - 针对系统能力SystemCapability.Window.SessionManager，请先使用 > [canIUse()](docroot://reference/common/js-apis-syscap.md#caniuse)接口判断当前设备是否支持此syscap及对应接口。 > > - 本模块接口仅可在Stage模型下使用。
+A float view is a small window that floats on a desktop or an application screen, providing flexible window
+management capabilities.
+
+This module provides capabilities about the float view, including determining whether a device supports a float view,
+and creating a float view controller to start, update, or stop a float view.
+
+**Application scenarios**:
+
+A float view is applicable to scenarios where application content needs to be continuously displayed in an
+independent small window or shortcut operations need to be provided. Examples:
+
+- Application for stock market tracking: When browsing other applications, users can use a float view to view real-
+time stock market changes without frequently switching between applications.
+- Live streaming application on a mobile phone: During live streaming, hosts can use a float view to display a custom
+interaction panel or control UI, facilitating real-time operations and interactions.
+
+**Linkage with the floating ball**:
+
+This module can be used together with [@ohos.window.floatingBall](arkts-window-floatingball.md).
+After the float view controller is bound to the floating ball controller using the
+[floatView.bind](arkts-arkui-bind-f.md#bind-1) API, users can tap the floating ball to expand it as a float view, and click
+the minimize button in the upper left corner of the float view to collapse it back as a floating ball. This allows
+for seamless switching between the two window forms.
+
+**Comparison between the global floating window and float view**:
+
+- Similarities: Both the global floating window and float view are special types of application auxiliary windows
+that can remain displayed on the foreground even after the application's main window and corresponding ability
+transition to the background. They can be used to continue displaying the UI after the application transitions to the
+background.
+- Differences:
+- The global floating window is managed and its UI is drawn by developers, without a unified UI or animation effect.
+- The float view is managed by the system and its UI is drawn in a unified manner, offering a more sophisticated and
+refined animation effect.
+- The float view can be bound to the [floating ball](arkts-window-floatingball.md) for joint use,
+enabling more complex scenarios.
+
+**Start version**: 26.0.0
+
+> **NOTE**
+>
+> - Use [canIUse()](../../../../reference/common/js-apis-syscap.md#caniuse) to check whether the device supports the
+> system capability SystemCapability.Window.SessionManager and the corresponding APIs.
+>
+> - The APIs of this module can be used only in the stage model.
 
 **Since:** 26.0.0
 
@@ -18,29 +62,29 @@ import { floatView } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [bind](arkts-floatview-bind-f.md#bind-1) | 绑定标准悬浮窗和闪控球。需要先创建[标准悬浮窗控制器]{@link floatView.FloatViewController}和 [闪控球控制器]{@link @ohos.window.floatingBall:floatingBall.FloatingBallController}，且均未启动。使用Promise异步回调。 > **说明：** > > - 绑定成功后，调用[start()]{@link floatView.FloatViewController.start}或 > [startFloatingBall()]{@link @ohos.window.floatingBall:floatingBall.FloatingBallController.startFloatingBall}均会同时创 > 建标准悬浮窗窗口和闪控球窗口，并触发对应窗口已注册的状态回调。但同一时刻仅展示其中一个窗口，展示顺序取决于先调用哪个控制器的启动接口。 > > - 绑定成功后，用户可通过点击操作在标准悬浮窗窗口与闪控球之间进行切换。 > > - 绑定成功后，调用任一控制器的停止接口（[stop()]{@link floatView.FloatViewController.stop}或 > [stopFloatingBall()]{@link @ohos.window.floatingBall:floatingBall.FloatingBallController.stopFloatingBall}）会同时销毁标 > 准悬浮窗窗口和闪控球窗口，并触发对应窗口已注册的状态回调。 |
-| [create](arkts-floatview-create-f.md#create-1) | 创建标准悬浮窗控制器。使用Promise异步回调。 |
-| [getFloatViewLimits](arkts-floatview-getfloatviewlimits-f.md#getFloatViewLimits-1) | 根据传入的模板类型获取对应标准悬浮窗窗口的限制，单位为px。 |
-| [isFloatViewEnabled](arkts-floatview-isfloatviewenabled-f.md#isFloatViewEnabled-1) | 判断当前设备是否支持标准悬浮窗功能。 |
-| [unbind](arkts-floatview-unbind-f.md#unbind-1) | 解绑标准悬浮窗和闪控球。需要在[标准悬浮窗控制器]{@link floatView.FloatViewController}和 [闪控球控制器]{@link @ohos.window.floatingBall:floatingBall.FloatingBallController}均停止后才可解绑。使用Promise异步回调。 |
+| [bind](arkts-arkui-bind-f.md#bind-1) | Binds the float view and floating ball. You need to create the[float view controller](arkts-arkui-floatviewcontroller-i.md) and[floating ball controller](arkts-arkui-floatingballcontroller-i.md) first, and neitherof them has been started. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; - After the binding is successful, calling [start()](arkts-arkui-floatviewcontroller-i.md#start-1) or&gt; [startFloatingBall()](arkts-arkui-floatingballcontroller-i.md#startfloatingball-1) will&gt; create both a float view and the floating ball window, and trigger the status callback registered for the&gt; corresponding window. However, only one window is displayed at a time, and the display sequence depends on which&gt; controller's start API is called first.&gt;&gt; - After the binding is successful, users can switch between the float view and the floating ball window by&gt; clicking.&gt;&gt; - After the binding is successful, calling the stop API ([stop()](arkts-arkui-floatviewcontroller-i.md#stop-1) or&gt; [stopFloatingBall()](arkts-arkui-floatingballcontroller-i.md#stopfloatingball-1)) of&gt; either controller will destroy both the float view and the floating ball window, and trigger the status callback&gt; registered for the corresponding window. |
+| [create](arkts-arkui-create-f.md#create-1) | Creates a float view controller. This API uses a promise to return the result. |
+| [getFloatViewLimits](arkts-arkui-getfloatviewlimits-f.md#getfloatviewlimits-1) | Obtains the limits of the float view based on the passed template type. The unit is px. |
+| [isFloatViewEnabled](arkts-arkui-isfloatviewenabled-f.md#isfloatviewenabled-1) | Checks whether the device supports the float view.\| Type\| Description\|\|------------\|------------\|\| boolean \| Whether the device supports the float view. **true** to support; **false** otherwise.\| |
+| [unbind](arkts-arkui-unbind-f.md#unbind-1) | Unbinds the float view and floating ball. The unbinding can be performed only after both the[float view controller](arkts-arkui-floatviewcontroller-i.md) and[floating ball controller](arkts-arkui-floatingballcontroller-i.md) are stopped. ThisAPI uses a promise to return the result. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [FloatViewConfiguration](arkts-floatview-floatviewconfiguration-i.md) | 创建标准悬浮窗控制器时需要提供的参数配置。 |
-| [FloatViewController](arkts-floatview-floatviewcontroller-i.md) | 标准悬浮窗控制器实例。用于启动、停止标准悬浮窗以及注册回调等操作。 下列API示例中都需先使用[floatView.create()]{@link floatView.create}方法获取到标准悬浮窗控制器实例（即floatViewController），再通过此实例调用对应方法。 |
-| [FloatViewLimits](arkts-floatview-floatviewlimits-i.md) | 标准悬浮窗窗口的限制。 |
-| [FloatViewProperties](arkts-floatview-floatviewproperties-i.md) | 标准悬浮窗窗口的属性。 |
-| [FloatViewRectChangeInfo](arkts-floatview-floatviewrectchangeinfo-i.md) | 标准悬浮窗矩形区域变化信息。 |
-| [FloatViewStateChangeInfo](arkts-floatview-floatviewstatechangeinfo-i.md) | 标准悬浮窗状态变化信息。 |
-| [RatioLimit](arkts-floatview-ratiolimit-i.md) | 标准悬浮窗的宽高比限制范围。宽高比比值由窗口矩形区域的宽除以高获得。 |
-| [TemplateProperty](arkts-floatview-templateproperty-i.md) | 切换悬浮窗模板并修改窗口尺寸时需要提供的参数配置。 |
+| [FloatViewConfiguration](arkts-arkui-floatviewconfiguration-i.md) | Provides parameter configuration required for creating a float view controller. |
+| [FloatViewController](arkts-arkui-floatviewcontroller-i.md) | Defines a float view controller instance, which is used to start and stop the float view and register callbacks.Before calling the following APIs, you must use [floatView.create()](arkts-arkui-create-f.md#create-1) to create a float viewcontroller instance (that is, **floatViewController**). |
+| [FloatViewLimits](arkts-arkui-floatviewlimits-i.md) | Provides the limits of the float view. |
+| [FloatViewProperties](arkts-arkui-floatviewproperties-i.md) | Provides the properties of the float view. |
+| [FloatViewRectChangeInfo](arkts-arkui-floatviewrectchangeinfo-i.md) | Provides the rectangle area change information of the float view. |
+| [FloatViewStateChangeInfo](arkts-arkui-floatviewstatechangeinfo-i.md) | Provides the state change information of the float view. |
+| [RatioLimit](arkts-arkui-ratiolimit-i.md) | Provides the aspect ratio range of the float view. The aspect ratio is obtained by dividing the width of therectangular area of the window by its height. |
+| [TemplateProperty](arkts-arkui-templateproperty-i.md) | Provides parameter configuration required for switching the float view template and modifying the size of thewindow. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [FloatViewState](arkts-floatview-floatviewstate-e.md) | 标准悬浮窗状态的枚举。 |
-| [FloatViewTemplateType](arkts-floatview-floatviewtemplatetype-e.md) | 标准悬浮窗模板类型的枚举。 |
+| [FloatViewState](arkts-arkui-floatviewstate-e.md) | Enumerates the states of the float view. |
+| [FloatViewTemplateType](arkts-arkui-floatviewtemplatetype-e.md) | Provides the template type of the float view. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## getAllBundleInfo
@@ -12,7 +12,8 @@ import { bundle } from '@ohos.bundle';
 function getAllBundleInfo(bundleFlag: BundleFlag, userId: number, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains the information of all bundles of the specified user. This API uses an asynchronous callback to return the result.
+Obtains the information of all bundles of the specified user. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -26,7 +27,7 @@ Obtains the information of all bundles of the specified user. This API uses an a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md#bundleflag). |
+| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md). |
 | userId | number | Yes | User ID. The default value is the user ID of the caller. The value must be greater thanor equal to 0. |
 | callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the information of all bundles. |
 
@@ -37,7 +38,8 @@ Obtains the information of all bundles of the specified user. This API uses an a
 function getAllBundleInfo(bundleFlag: BundleFlag, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains the information of all bundles of the current user. This API uses an asynchronous callback to return the result.
+Obtains the information of all bundles of the current user. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -51,7 +53,7 @@ Obtains the information of all bundles of the current user. This API uses an asy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md#bundleflag). |
+| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md). |
 | callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the information of all bundles. |
 
 
@@ -75,7 +77,7 @@ Obtains the information of all bundles of the specified user. This API uses a pr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md#bundleflag). |
+| bundleFlag | BundleFlag | Yes | Type of information that will be returned. For details about the availableenumerated values, see the bundle information flags in [BundleFlag](arkts-ability-bundleflag-e.md). |
 | userId | number | No | User ID. The default value is the user ID of the caller. The value must be greater thanor equal to 0. |
 
 **Return value:**

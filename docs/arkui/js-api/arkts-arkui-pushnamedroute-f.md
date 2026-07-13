@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { router } from '@ohos.router';
+import { router } from '@kit.ArkUI';
 ```
 
 ## pushNamedRoute
@@ -12,7 +12,14 @@ import { router } from '@ohos.router';
 function pushNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Navigates to a page using the named route. This API uses a promise to return the result. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Navigates to a page using the named route. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -83,7 +90,14 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions): Promise<void>
 ```
 
-Navigates to a page using the named route. This API uses a promise to return the result. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Navigates to a page using the named route. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -146,7 +160,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 })
   .then(() => {
-    console.error(`pushNamedRoute finish`);
+    console.info(`pushNamedRoute finish`);
   })
   .catch((err: ESObject) => {
     console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
@@ -161,7 +175,14 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Navigates to a page using the named route. This API uses a promise to return the result. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Navigates to a page using the named route. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -233,7 +254,14 @@ router.pushNamedRoute({
 function pushNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Navigates to a page using the named route. This API uses a promise to return the result. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Navigates to a page using the named route. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -287,8 +315,8 @@ class RouterParams {
   data2: innerParams;
 
   constructor(str: string, tuple: number[]) {
-    this.data1 = str
-    this.data2 = new innerParams(tuple)
+    this.data1 = str;
+    this.data2 = new innerParams(tuple);
   }
 }
 
@@ -297,7 +325,7 @@ router.pushNamedRoute({
   params: new RouterParams('message', [123, 456, 789])
 }, router.RouterMode.Standard)
   .then(() => {
-    console.error(`pushNamedRoute finish`);
+    console.info(`pushNamedRoute finish`);
   })
   .catch((err: ESObject) => {
     console.error(`pushNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);

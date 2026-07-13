@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appRecovery } from '@ohos.app.ability.appRecovery';
+import { appRecovery } from '@kit.AbilityKit';
 ```
 
 ## saveAppState
@@ -12,7 +12,8 @@ import { appRecovery } from '@ohos.app.ability.appRecovery';
 function saveAppState(): boolean
 ```
 
-Saves the application state. This API can be used together with the APIs of [errorManager](arkts-app-ability-errormanager.md#errormanager).
+Saves the application state. This API can be used together with the APIs of
+[errorManager](arkts-app-ability-errormanager.md).
 
 **Since:** 9
 
@@ -56,7 +57,8 @@ try {
 function saveAppState(context?: UIAbilityContext): boolean
 ```
 
-Saves the ability state, which will be used for recovery. This API can be used together with the APIs of [errorManager](arkts-app-ability-errormanager.md#errormanager).
+Saves the ability state, which will be used for recovery. This API can be used together with the APIs of
+[errorManager](arkts-app-ability-errormanager.md).
 
 **Since:** 10
 

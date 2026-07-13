@@ -9,7 +9,7 @@ Represents the progress information.
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## progress
@@ -18,7 +18,10 @@ import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
 progress: number
 ```
 
-Progress of the drag task, in percentage. The value is an integer ranging from -1 to 100. The value **-1** indicates a failure to obtain data, and the value **100** indicates data is obtained.
+Progress of the drag task, in percentage.
+
+The value is an integer ranging from -1 to 100. The value **-1** indicates a failure to obtain data, and the
+value **100** indicates data is obtained.
 
 **Type:** number
 

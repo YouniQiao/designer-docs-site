@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { particleAbility } from '@ohos.ability.particleAbility';
+import { particleAbility } from '@kit.AbilityKit';
 ```
 
 ## startAbility
@@ -12,7 +12,12 @@ import { particleAbility } from '@ohos.ability.particleAbility';
 function startAbility(parameter: StartAbilityParameter, callback: AsyncCallback<void>): void
 ```
 
-Service ability uses this method to start a specific ability.
+Starts a ParticleAbility. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the FA model, see
+> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -24,8 +29,8 @@ Service ability uses this method to start a specific ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | StartAbilityParameter | Yes | Indicates the ability to start. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Returns the result of starting Ability in the form of callback. |
+| parameter | StartAbilityParameter | Yes | Ability to start. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the ParticleAbility is started, **err**is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -64,7 +69,12 @@ particleAbility.startAbility(
 function startAbility(parameter: StartAbilityParameter): Promise<void>
 ```
 
-Service ability uses this method to start a specific ability.
+Starts a ParticleAbility. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the FA model, see
+> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
 
 **Since:** 7
 
@@ -76,13 +86,13 @@ Service ability uses this method to start a specific ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | StartAbilityParameter | Yes | Indicates the ability to start. |
+| parameter | StartAbilityParameter | Yes | Ability to start. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | the promise returned by the function. |
+| Promise&lt;void&gt; | Promise used to return the result. Promise that returns no value. |
 
 **Example**
 

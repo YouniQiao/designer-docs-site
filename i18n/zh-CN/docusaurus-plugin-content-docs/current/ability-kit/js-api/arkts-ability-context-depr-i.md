@@ -2,7 +2,7 @@
 
 Context模块提供了Ability或Application的上下文的基础能力，包括允许访问特定于应用程序的资源、请求和验证权限等。
 
-**继承/实现关系：** Context extends [BaseContext](arkts-ability-basecontext-c.md#basecontext)
+**继承/实现关系：** Context extends [BaseContext](arkts-ability-basecontext-c.md)
 
 **起始版本：** 6
 
@@ -354,7 +354,8 @@ getDisplayOrientation(): Promise<bundle.DisplayOrientation>
 getElementName(callback: AsyncCallback<ElementName>): void
 ```
 
-获取当前ability的ohos.bundleManager.ElementName对象。使用callback异步回调。 此方法仅适用于页面功能。
+获取当前ability的ohos.bundleManager.ElementName对象。使用callback异步回调。
+此方法仅适用于页面功能。
 
 **起始版本：** 7
 
@@ -374,7 +375,8 @@ getElementName(callback: AsyncCallback<ElementName>): void
 getElementName(): Promise<ElementName>
 ```
 
-获取当前能力的ohos.bundleManager.ElementName对象。使用Promise异步回调。 此方法仅适用于页面功能。
+获取当前能力的ohos.bundleManager.ElementName对象。使用Promise异步回调。
+此方法仅适用于页面功能。
 
 **起始版本：** 7
 
@@ -518,7 +520,8 @@ getHapModuleInfo(): Promise<HapModuleInfo>
 getOrCreateDistributedDir(): Promise<string>
 ```
 
-获取Ability或应用的分布式文件路径。使用callback异步回调。 如果分布式文件路径不存在，系统将创建一个路径并返回创建的路径。
+获取Ability或应用的分布式文件路径。使用callback异步回调。
+如果分布式文件路径不存在，系统将创建一个路径并返回创建的路径。
 
 **起始版本：** 7
 
@@ -538,7 +541,8 @@ getOrCreateDistributedDir(): Promise<string>
 getOrCreateDistributedDir(callback: AsyncCallback<string>): void
 ```
 
-获取Ability或应用的分布式文件路径。使用Promise异步回调。 如果分布式文件路径不存在，系统将创建一个路径并返回创建的路径。
+获取Ability或应用的分布式文件路径。使用Promise异步回调。
+如果分布式文件路径不存在，系统将创建一个路径并返回创建的路径。
 
 **起始版本：** 7
 
@@ -558,7 +562,8 @@ getOrCreateDistributedDir(callback: AsyncCallback<string>): void
 getOrCreateLocalDir(): Promise<string>
 ```
 
-获取应用程序的本地根目录。使用Promise异步回调。 如果是第一次调用，将创建目录。
+获取应用程序的本地根目录。使用Promise异步回调。
+如果是第一次调用，将创建目录。
 
 **起始版本：** 7
 
@@ -578,7 +583,8 @@ getOrCreateLocalDir(): Promise<string>
 getOrCreateLocalDir(callback: AsyncCallback<string>): void
 ```
 
-获取应用程序的本地根目录。使用callback异步回调。 如果是第一次调用，将创建目录。
+获取应用程序的本地根目录。使用callback异步回调。
+如果是第一次调用，将创建目录。
 
 **起始版本：** 7
 
@@ -775,7 +781,7 @@ requestPermissionsFromUser(
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | permissions | Array&lt;string&gt; | 是 | 指示要请求的权限列表。此参数不能为null。 |
-| requestCode | number | 是 | 指示要传递给[PermissionRequestResult](arkts-ability-permissionrequestresult-depr-i.md#permissionrequestresult)的请求代码。 |
+| requestCode | number | 是 | 指示要传递给[PermissionRequestResult](arkts-ability-permissionrequestresult-depr-i.md)的请求代码。 |
 | resultCallback | AsyncCallback&lt;PermissionRequestResult&gt; | 是 | 回调函数，返回授权结果信息。 |
 
 ## requestPermissionsFromUser
@@ -797,7 +803,7 @@ requestPermissionsFromUser(permissions: Array<string>, requestCode: number): Pro
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | permissions | Array&lt;string&gt; | 是 | 指示要请求的权限列表。此参数不能为null。 |
-| requestCode | number | 是 | 指示要传递给[PermissionRequestResult](arkts-ability-permissionrequestresult-depr-i.md#permissionrequestresult)的请求代码。 |
+| requestCode | number | 是 | 指示要传递给[PermissionRequestResult](arkts-ability-permissionrequestresult-depr-i.md)的请求代码。 |
 
 **返回值：**
 

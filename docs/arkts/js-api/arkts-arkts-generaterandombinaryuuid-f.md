@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## generateRandomBinaryUUID
@@ -12,7 +12,8 @@ import { util } from '@ohos.util';
 function generateRandomBinaryUUID(entropyCache?: boolean): Uint8Array
 ```
 
-Uses a secure random number generator to generate a random universally unique identifier (UUID) of RFC 4122 version 4.
+Uses a secure random number generator to generate a random universally unique identifier (UUID) of RFC 4122 version
+4.
 
 **Since:** 9
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { resourceManager } from '@ohos.resourceManager';
+import { resourceManager } from '@kit.LocalizationKit';
 ```
 
 ## getResourceManager
@@ -12,7 +12,8 @@ import { resourceManager } from '@ohos.resourceManager';
 export function getResourceManager(callback: AsyncCallback<ResourceManager>): void
 ```
 
-Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the result.
+Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 6
 
@@ -61,7 +62,8 @@ export default {
 export function getResourceManager(bundleName: string, callback: AsyncCallback<ResourceManager>): void
 ```
 
-Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to return the result.
+Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 6
 

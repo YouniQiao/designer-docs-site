@@ -1,8 +1,10 @@
 # LinkIntentDecoratorInfo
 
-LinkIntentDecoratorInfo继承自[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)，用于描述 [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器支持的参数，例如应用间跳转需要的uri信息。
+LinkIntentDecoratorInfo继承自[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)，用于描述
+[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+装饰器支持的参数，例如应用间跳转需要的uri信息。
 
-**继承/实现关系：** LinkIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)
+**继承/实现关系：** LinkIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 
 **起始版本：** 20
 

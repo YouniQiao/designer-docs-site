@@ -1,6 +1,9 @@
 # Storage
 
-Provides APIs for obtaining and modifying storage data. Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) or [data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) to obtain the **Storage** instance.
+Provides APIs for obtaining and modifying storage data.
+
+Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) or
+[data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) to obtain the **Storage** instance.
 
 **Since:** 6
 
@@ -102,7 +105,8 @@ storage.clearSync();
 delete(key: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes data with the specified key from this storage object. This API uses an asynchronous callback to return the result.
+Deletes data with the specified key from this storage object. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 6
 
@@ -201,7 +205,8 @@ Deletes data with the specified key from this storage object.
 flush(callback: AsyncCallback<void>): void
 ```
 
-Saves the modification of this object to the **Storage** instance and synchronizes the modification to the file. This API uses an asynchronous callback to return the result.
+Saves the modification of this object to the **Storage** instance and synchronizes the modification to the file.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 6
 
@@ -234,7 +239,8 @@ storage.flush(function (err) {
 flush(): Promise<void>
 ```
 
-Saves the modification of this object to the **Storage** instance and synchronizes the modification to the file. This API uses a promise to return the result.
+Saves the modification of this object to the **Storage** instance and synchronizes the modification to the file.
+This API uses a promise to return the result.
 
 **Since:** 6
 
@@ -287,7 +293,8 @@ storage.flushSync();
 get(key: string, defValue: ValueType, callback: AsyncCallback<ValueType>): void
 ```
 
-Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is returned. This API uses an asynchronous callback to return the result.
+Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is
+returned. This API uses an asynchronous callback to return the result.
 
 **Since:** 6
 
@@ -322,7 +329,8 @@ storage.get('startup', 'default', function(err, value) {
 get(key: string, defValue: ValueType): Promise<ValueType>
 ```
 
-Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is returned. This API uses a promise to return the result.
+Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is
+returned. This API uses a promise to return the result.
 
 **Since:** 6
 
@@ -361,7 +369,8 @@ promiseget.then((value) => {
 getSync(key: string, defValue: ValueType): ValueType
 ```
 
-Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is returned.
+Obtains the value corresponding to a key. If the value is null or not of the default value type, **defValue** is
+returned.
 
 **Since:** 6
 
@@ -396,7 +405,8 @@ console.info("The value of startup is " + value);
 has(key: string, callback: AsyncCallback<boolean>): boolean
 ```
 
-Checks whether the storage object contains data with a given key. This API uses an asynchronous callback to return the result.
+Checks whether the storage object contains data with a given key. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 6
 
@@ -545,7 +555,8 @@ storage.off('change', observer);
 on(type: 'change', callback: Callback<StorageObserver>): void
 ```
 
-Subscribes to data changes. The **StorageObserver** needs to be implemented. When the value of the key subscribed to is changed, a callback will be invoked after **flush()** or **flushSync()** is executed.
+Subscribes to data changes. The **StorageObserver** needs to be implemented. When the value of the key subscribed
+to is changed, a callback will be invoked after **flush()** or **flushSync()** is executed.
 
 **Since:** 6
 
@@ -578,7 +589,9 @@ storage.flushSync();  // observer will be called.
 put(key: string, value: ValueType, callback: AsyncCallback<void>): void
 ```
 
-Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance using a **Storage** API, and saves the modification using **flush()** or **flushSync()**. This API uses an asynchronous callback to return the result.
+Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance
+using a **Storage** API, and saves the modification using **flush()** or **flushSync()**. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 6
 
@@ -613,7 +626,9 @@ storage.put('startup', 'auto', function (err) {
 put(key: string, value: ValueType): Promise<void>
 ```
 
-Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance using a **Storage** API, and saves the modification using **flush()** or **flushSync()**. This API uses a promise to return the result.
+Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance
+using a **Storage** API, and saves the modification using **flush()** or **flushSync()**. This API uses a promise
+to return the result.
 
 **Since:** 6
 
@@ -652,7 +667,8 @@ promiseput.then(() => {
 putSync(key: string, value: ValueType): void
 ```
 
-Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance using a **Storage** API, and saves the modification using **flush()** or **flushSync()**.
+Obtains the **Storage** instance corresponding to the specified file, writes data to the **Storage** instance
+using a **Storage** API, and saves the modification using **flush()** or **flushSync()**.
 
 **Since:** 6
 

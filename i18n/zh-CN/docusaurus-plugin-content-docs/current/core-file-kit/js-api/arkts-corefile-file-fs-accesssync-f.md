@@ -6,7 +6,9 @@
 declare function accessSync(path: string, mode?: AccessModeType): boolean
 ```
 
-以同步方法检查文件或目录是否存在，或校验操作权限。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。
+以同步方法检查文件或目录是否存在，或校验操作权限。
+
+校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。
 
 **起始版本：** 9
 
@@ -51,7 +53,9 @@ declare function accessSync(path: string, mode?: AccessModeType): boolean
 declare function accessSync(path: string, mode: AccessModeType, flag: AccessFlagType): boolean
 ```
 
-以同步方法检查文件或目录是否在本地，或校验操作权限。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。
+以同步方法检查文件或目录是否在本地，或校验操作权限。
+
+校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。
 
 **起始版本：** 12
 
@@ -75,7 +79,7 @@ declare function accessSync(path: string, mode: AccessModeType, flag: AccessFlag
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 | 13900005 | I/O error |
 | 13900011 | Out of memory |
 | 13900012 | Permission denied |

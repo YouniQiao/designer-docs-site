@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## getMultiLinkedInfo
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function getMultiLinkedInfo(): Array<WifiLinkedInfo>
 ```
 
-Obtain multiple Wi-Fi connection information when Wi-Fi linked in MLO(Muti-Link Operation) state. If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC, return random bssid.
+Obtain multiple Wi-Fi connection information when Wi-Fi linked in MLO(Muti-Link Operation) state.
+If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC, return random bssid.
 
 **Since:** 18
 

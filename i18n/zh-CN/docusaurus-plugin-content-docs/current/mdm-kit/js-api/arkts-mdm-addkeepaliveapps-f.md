@@ -6,7 +6,16 @@
 function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number): void
 ```
 
-添加保活应用名单，添加后将自动保活应用进程。在开机和应用被杀死后，由系统主动拉起应用进程。<!--RP7--><!--RP7End--> 通过本接口添加至保活名单的应用，禁止用户在设备上手动取消保活<!--RP6--><!--RP6End-->，但可通过 [removeKeepAliveApps](arkts-mdm-removekeepaliveapps-f.md#removekeepaliveapps-1)接口将应用从保活名单中移除。 如果将应用添加至应用禁止运行名单[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1)，就不能将应用添 加至保活应用名单，否则会报9200010冲突错误码。 如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1)或者 [addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1)接口，具体功能请参考相关文档。
+添加保活应用名单，添加后将自动保活应用进程。在开机和应用被杀死后，由系统主动拉起应用进程。<!--RP7--><!--RP7End-->
+
+通过本接口添加至保活名单的应用，禁止用户在设备上手动取消保活<!--RP6--><!--RP6End-->，但可通过
+[removeKeepAliveApps](arkts-mdm-removekeepaliveapps-f.md#removekeepaliveapps-1)接口将应用从保活名单中移除。
+
+如果将应用添加至应用禁止运行名单[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1)，就不能将应用添
+加至保活应用名单，否则会报9200010冲突错误码。
+
+如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1)或者
+[addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1)接口，具体功能请参考相关文档。
 
 **起始版本：** 14
 
@@ -33,8 +42,8 @@ function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: nu
 | [9200010](../errorcode-enterpriseDeviceManager.md#9200010-策略冲突) | A conflict policy has been configured. |
 | [9201005](../errorcode-enterpriseDeviceManager.md#9201005-添加保活应用失败) | Add keep alive applications failed. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permissionrequired to call the API |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types;3.Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types;3.Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 
 **示例：**
 
@@ -66,7 +75,17 @@ try {
 function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: number, disallowModify: boolean): void
 ```
 
-添加保活应用名单，并设置是否禁止用户手动取消保活，添加后将自动保活应用进程。在开机和应用被杀死后，由系统主动拉起应用进程。 通过本接口、 [addKeepAliveApps](arkts-mdm-addkeepaliveapps-f.md#addkeepaliveapps-1) 接口均可添加保活应用名单，两个接口的设置可同时生效。同一用户下，保活应用名单最多支持包含5个应用。例如：若当前名单中已有3个应用，则最多还能通过本接口为当前用户添加2个应用。 如果通过[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1)接口将应用添加至应用禁止运行名单，就不能 将应用添加至保活应用名单，否则会报9200010冲突错误码。 如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1)或者 [addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1)接口，具体功能请参考相关文档。
+添加保活应用名单，并设置是否禁止用户手动取消保活，添加后将自动保活应用进程。在开机和应用被杀死后，由系统主动拉起应用进程。
+
+通过本接口、
+[addKeepAliveApps](arkts-mdm-addkeepaliveapps-f.md#addkeepaliveapps-1)
+接口均可添加保活应用名单，两个接口的设置可同时生效。同一用户下，保活应用名单最多支持包含5个应用。例如：若当前名单中已有3个应用，则最多还能通过本接口为当前用户添加2个应用。
+
+如果通过[addDisallowedRunningBundlesSync](arkts-mdm-adddisallowedrunningbundlessync-f.md#adddisallowedrunningbundlessync-1)接口将应用添加至应用禁止运行名单，就不能
+将应用添加至保活应用名单，否则会报9200010冲突错误码。
+
+如果需要在Phone/Tablet设备使用类似功能，可以调用[addUserNonStopApps](arkts-mdm-addusernonstopapps-f.md#addusernonstopapps-1)或者
+[addFreezeExemptedApps](arkts-mdm-addfreezeexemptedapps-f.md#addfreezeexemptedapps-1)接口，具体功能请参考相关文档。
 
 **起始版本：** 20
 
@@ -94,7 +113,7 @@ function addKeepAliveApps(admin: Want, bundleNames: Array<string>, accountId: nu
 | [9200010](../errorcode-enterpriseDeviceManager.md#9200010-策略冲突) | A conflict policy has been configured. |
 | [9201005](../errorcode-enterpriseDeviceManager.md#9201005-添加保活应用失败) | Add keep alive applications failed. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permissionrequired to call the API |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 
 **示例：**
 

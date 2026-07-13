@@ -1,6 +1,8 @@
 # HceService
 
-A class for NFC host application. <p>The NFC host application use this class, then Nfc service can access the application installation information and connect to services of the application.
+A class for NFC host application.
+<p>The NFC host application use this class, then Nfc service can access the application
+installation information and connect to services of the application.
 
 **Since:** 12
 
@@ -9,7 +11,7 @@ A class for NFC host application. <p>The NFC host application use this class, th
 ## Modules to Import
 
 ```TypeScript
-import { cardEmulation } from '@ohos.nfc.cardEmulation';
+import { cardEmulation } from '@kit.ConnectivityKit';
 ```
 
 ## off('hceCmd')
@@ -115,7 +117,8 @@ register HCE event to receive the APDU data.
 sendResponse(responseApdu: number[]): void
 ```
 
-Sends a response APDU to the remote device. <p>This method is used by a host application when swiping card.
+Sends a response APDU to the remote device.
+<p>This method is used by a host application when swiping card.
 
 **Since:** 8
 
@@ -124,6 +127,8 @@ Sends a response APDU to the remote device. <p>This method is used by a host app
 **Substitutes:** transmit
 
 **Required permissions:** ohos.permission.NFC_CARD_EMULATION
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NFC.CardEmulation
 
@@ -180,6 +185,8 @@ start HCE
 **Substitutes:** start
 
 **Required permissions:** ohos.permission.NFC_CARD_EMULATION
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NFC.CardEmulation
 
@@ -241,6 +248,8 @@ stop HCE
 **Substitutes:** stop
 
 **Required permissions:** ohos.permission.NFC_CARD_EMULATION
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NFC.CardEmulation
 

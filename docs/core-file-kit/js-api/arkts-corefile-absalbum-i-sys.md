@@ -6,7 +6,7 @@ Defines the AbsAlbum.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AbsAlbum](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-absalbum-i.md#absalbum)
+**Substitutes:** [AbsAlbum](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-absalbum-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ Defines the AbsAlbum.
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## getPhotoAssets
@@ -215,7 +215,8 @@ CoverUri for the album
 readonly dateModified: number
 ```
 
-Time when the album was modified. Unit: ms, The value must be an integer greater than or equal to 0.
+Time when the album was modified.
+Unit: ms, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

@@ -1,8 +1,17 @@
 # EmbeddableUIAbilityContext
 
-EmbeddableUIAbilityContext provides the context environment for the [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md#embeddableuiability). It inherits from [UIAbilityContext](arkts-ability-uiabilitycontext-c.md#uiabilitycontext). When an EmbeddableUIAbility component is instantiated, the system automatically creates the corresponding EmbeddableUIAbilityContext. > **NOTE** > > - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
+EmbeddableUIAbilityContext provides the context environment for the
+[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md). It inherits from
+[UIAbilityContext](arkts-ability-uiabilitycontext-c.md).
 
-**Inheritance/Implementation:** EmbeddableUIAbilityContext extends [UIAbilityContext](arkts-ability-uiabilitycontext-c.md#uiabilitycontext)
+When an EmbeddableUIAbility component is instantiated, the system automatically creates the corresponding
+EmbeddableUIAbilityContext.
+
+> **NOTE**
+>
+> - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.
+
+**Inheritance/Implementation:** EmbeddableUIAbilityContext extends [UIAbilityContext](arkts-ability-uiabilitycontext-c.md)
 
 **Since:** 12
 

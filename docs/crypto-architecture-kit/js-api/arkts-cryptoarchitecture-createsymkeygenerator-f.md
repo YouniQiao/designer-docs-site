@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## createSymKeyGenerator
@@ -12,7 +12,11 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 function createSymKeyGenerator(algName: string): SymKeyGenerator
 ```
 
-Creates a symmetric key generator instance with the specified algorithm. For details about the supported specifications, see [Symmetric Key Generation and Conversion Specifications](../../../../security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md) .
+Creates a symmetric key generator instance with the specified algorithm.
+
+For details about the supported specifications, see
+[Symmetric Key Generation and Conversion Specifications](../../../../security/CryptoArchitectureKit/crypto-sym-key-generation-conversion-spec.md)
+.
 
 **Since:** 9
 

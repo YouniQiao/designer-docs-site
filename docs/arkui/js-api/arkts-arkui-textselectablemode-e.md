@@ -12,7 +12,8 @@ Sets whether text can be selected and focused on.
 SELECTABLE_UNFOCUSABLE = 0
 ```
 
-The text is selectable, but not focusable. Setting the **selection**, **bindSelectionMenu**, or **copyOption** attribute does not affect the behavior.
+The text is selectable, but not focusable. Setting the **selection**, **bindSelectionMenu**, or **copyOption**
+attribute does not affect the behavior.
 
 **Since:** 12
 
@@ -44,7 +45,8 @@ The text is selectable and focusable. It obtains focus when touched.
 UNSELECTABLE = 2
 ```
 
-The text is not selectable nor focusable. The **selection**, **bindSelectionMenu**, and **copyOption** attributes do not work in this case.
+The text is not selectable nor focusable. The **selection**, **bindSelectionMenu**, and **copyOption** attributes
+do not work in this case.
 
 **Since:** 12
 

@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ApplicationInfo](arkts-applicationinfo-i.md) | 应用程序信息，未做特殊说明的属性，均通过 [bundle.getApplicationInfo]{@link ./../@ohos.bundle:bundle.getApplicationInfo(bundleName: string, bundleFlags: number, userId?: number)} 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-ApplicationInfo]{@link applicationInfo:ApplicationInfo}替代。 |
+| [ApplicationInfo](arkts-ability-applicationinfo-depr-i.md) | 应用程序信息，未做特殊说明的属性，均通过[bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3)获取。@link applicationInfo:ApplicationInfo}替代。 |
 

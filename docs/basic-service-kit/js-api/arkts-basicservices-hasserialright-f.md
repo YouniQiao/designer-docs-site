@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { serialManager } from '@ohos.usbManager.serial';
+import { serialManager } from '@kit.BasicServicesKit';
 ```
 
 ## hasSerialRight
@@ -12,7 +12,8 @@ import { serialManager } from '@ohos.usbManager.serial';
 function hasSerialRight(portId: number): boolean
 ```
 
-Checks whether the application has the permission to access the serial port device. When an application is restarted after exits, you need to request the permission from the user again.
+Checks whether the application has the permission to access the serial port device. When an application is
+restarted after exits, you need to request the permission from the user again.
 
 **Since:** 19
 

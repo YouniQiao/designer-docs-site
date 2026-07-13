@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## dumpJsHeapData
@@ -12,7 +12,12 @@ import { hidebug } from '@ohos.hidebug';
 function dumpJsHeapData(filename : string) : void
 ```
 
-Dumps VM heap data. > **NOTE** > > Exporting the VM heap is time-consuming, and this API is a synchronous API. Therefore, you are advised not to > call this API in the release version. Otherwise, the application screen may freeze, affecting user experience.
+Dumps VM heap data.
+
+> **NOTE**
+>
+> Exporting the VM heap is time-consuming, and this API is a synchronous API. Therefore, you are advised not to
+> call this API in the release version. Otherwise, the application screen may freeze, affecting user experience.
 
 **Since:** 9
 
@@ -51,7 +56,9 @@ try {
 function dumpJsHeapData(filename: string, needClean: boolean): void
 ```
 
-Exports the heap data. The input parameter is a user-defined file name, excluding the file suffix. The generated file is in the files folder under the application directory.
+Exports the heap data.
+The input parameter is a user-defined file name, excluding the file suffix.
+The generated file is in the files folder under the application directory.
 
 **Since:** 24
 

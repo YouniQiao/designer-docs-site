@@ -1,6 +1,8 @@
 # DowngradeDownload (System API)
 
-Full download: provides the capability of downloading cloud data for applications. It supports the full download of cloud application files.
+Full download: provides the capability of downloading cloud data for applications.
+
+It supports the full download of cloud application files.
 
 **Since:** 20
 
@@ -11,7 +13,7 @@ Full download: provides the capability of downloading cloud data for application
 ## Modules to Import
 
 ```TypeScript
-import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -66,7 +68,8 @@ try {
 getCloudFileInfo(): Promise<CloudFileInfo>
 ```
 
-Obtains the size and count of files for applications requiring full download, including those stored only locally , only in the cloud, or both locally and in the cloud. This API uses a promise to return the result.
+Obtains the size and count of files for applications requiring full download, including those stored only locally
+, only in the cloud, or both locally and in the cloud. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -113,7 +116,10 @@ downgradeMgr.getCloudFileInfo().then((fileInfo: cloudSyncManager.CloudFileInfo) 
 startDownload(callback: Callback<DownloadProgress>): Promise<void>
 ```
 
-Starts the full download for the specified application's cloud files. This API uses a promise to return the result. This API uses an asynchronous callback to return the result. Repeated triggering of a full download task will throw an error (22400006).
+Starts the full download for the specified application's cloud files. This API uses a promise to return the
+result. This API uses an asynchronous callback to return the result.
+
+Repeated triggering of a full download task will throw an error (22400006).
 
 **Since:** 20
 
@@ -193,7 +199,7 @@ Start to migrate the downloaded full data to the specified public directory of f
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | targetUri | string | Yes | Transfer target Uri. |
-| callback | Callback&lt;TransferProgress&gt; | Yes | Callback function. |
+| callback | Callback&lt;TransferProgress&gt; | Yes | Callback function. The callback will be triggered when the transfer progress changes or the transfer task completes. |
 
 **Error codes:**
 
@@ -213,7 +219,8 @@ Start to migrate the downloaded full data to the specified public directory of f
 stopDownload(): Promise<void>
 ```
 
-Stops the full download task triggered by [startDownload](arkts-corefile-downgradedownload-c-sys.md#startdownload-1) . This API uses a promise to return the result.
+Stops the full download task triggered by [startDownload](arkts-corefile-downgradedownload-c-sys.md#startdownload-1)
+. This API uses a promise to return the result.
 
 **Since:** 20
 

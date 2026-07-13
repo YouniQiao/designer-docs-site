@@ -1,12 +1,13 @@
 # Stream
 
-Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to create a **Stream** instance synchronously or asynchronously.
+Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to
+create a **Stream** instance synchronously or asynchronously.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:Stream](arkts-corefile-stream-i.md#stream)
+**Substitutes:** [fs:Stream](arkts-corefile-stream-i.md)
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

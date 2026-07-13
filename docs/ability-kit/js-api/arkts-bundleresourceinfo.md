@@ -2,9 +2,11 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[BundleResourceInfo](arkts-bundleresourceinfo-i.md) | 应用配置的图标和名称信息，可以通过 [getBundleResourceInfo]{@link ./../@ohos.bundle.bundleResourceManager:bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int)} 获取。 > **说明：** > > 本模块为系统接口。 |
+| [BundleResourceInfo](arkts-ability-bundleresourceinfo-i-sys.md) | The module provides resource information of an application, such as the icon and label. The information can beobtained by calling[getBundleResourceInfo](./../@ohos.bundle.bundleResourceManager:bundleResourceManager.bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int)).&gt; **NOTE**&gt;&gt; The APIs provided by this module are system APIs. |
+<!--DelEnd-->
 

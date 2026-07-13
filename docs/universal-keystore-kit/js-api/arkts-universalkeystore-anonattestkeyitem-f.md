@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## anonAttestKeyItem
@@ -12,7 +12,13 @@ import { huks } from '@ohos.security.huks';
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksReturnResult>): void
 ```
 
-Attests an anonymous key. This API uses an asynchronous callback to return the result. This operation requires Internet access and takes time. If error code 12000012 is returned, the network is abnormal. If the device is not connected to the network, display a message, indicating that the network is not connected. If the network is connected, the failure may be caused by network jitter. Tray again later. <!--RP1--><!--RP1End-->
+Attests an anonymous key. This API uses an asynchronous callback to return the result.
+
+This operation requires Internet access and takes time. If error code 12000012 is returned, the network is
+abnormal. If the device is not connected to the network, display a message, indicating that the network is not
+connected. If the network is connected, the failure may be caused by network jitter. Try again later.
+
+<!--RP1--><!--RP1End-->
 
 **Since:** 11
 
@@ -41,8 +47,8 @@ Attests an anonymous key. This API uses an asynchronous callback to return the r
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 
@@ -145,7 +151,13 @@ async function generateKeyThenAttestKey(): Promise<void> {
 function anonAttestKeyItem(keyAlias: string, options: HuksOptions): Promise<HuksReturnResult>
 ```
 
-Attests an anonymous key. This API uses a promise to return the result. This operation requires Internet access and takes time. If error code 12000012 is returned, the network is abnormal. If the device is not connected to the network, display a message, indicating that the network is not connected. If the network is connected, the failure may be caused by network jitter. Tray again later. <!--RP1--><!--RP1End-->
+Attests an anonymous key. This API uses a promise to return the result.
+
+This operation requires Internet access and takes time. If error code 12000012 is returned, the network is
+abnormal. If the device is not connected to the network, display a message, indicating that the network is not
+connected. If the network is connected, the failure may be caused by network jitter. Try again later.
+
+<!--RP1--><!--RP1End-->
 
 **Since:** 11
 
@@ -173,16 +185,16 @@ Attests an anonymous key. This API uses a promise to return the result. This ope
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-feature-not-supported) | algorithm mode is not supported |
-| [12000002](../errorcode-huks.md#12000002-missing-key-algorithm-parameter) | algorithm param is missing<br>**Applicable version:** 11 |
-| [12000003](../errorcode-huks.md#12000003-invalid-key-algorithm-parameter) | algorithm param is invalid<br>**Applicable version:** 11 |
+| [12000002](../errorcode-huks.md#12000002-missing-key-algorithm-parameter) | algorithm param is missing<br>**Applicable version:** 11 and later |
+| [12000003](../errorcode-huks.md#12000003-invalid-key-algorithm-parameter) | algorithm param is invalid<br>**Applicable version:** 11 and later |
 | [12000004](../errorcode-huks.md#12000004-file-error) | operating file failed |
 | [12000005](../errorcode-huks.md#12000005-ipc-error) | IPC communication failed |
 | [12000006](../errorcode-huks.md#12000006-algorithm-library-operation-failed) | error occurred in crypto engine |
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 

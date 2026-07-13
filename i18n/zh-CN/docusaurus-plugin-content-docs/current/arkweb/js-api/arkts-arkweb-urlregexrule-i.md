@@ -28,7 +28,9 @@ Full URL regular expression.
 secondLevelDomain : string
 ```
 
-Exact match of the second-level domain. For example, the second-level domain of https://www.example.com is example.com, and the second-level domain of https://www.example.com.cn is example.com.cn. If the URL is an IP address, the full IP is matched against the secondLevelDomain.
+Exact match of the second-level domain. For example, the second-level domain of https://www.example.com
+is example.com, and the second-level domain of https://www.example.com.cn is example.com.cn. If the URL
+is an IP address, the full IP is matched against the secondLevelDomain.
 
 **类型：** string
 

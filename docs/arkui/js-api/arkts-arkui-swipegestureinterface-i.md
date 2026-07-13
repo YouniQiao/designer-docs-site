@@ -1,6 +1,7 @@
 # SwipeGestureInterface
 
-**SwipeGesture** is used to trigger a swipe gesture. This gesture is successfully recognized when the swipe speed exceeds the specified threshold, which is 100 vp/s by default.
+**SwipeGesture** is used to trigger a swipe gesture. This gesture is successfully recognized when the swipe speed
+exceeds the specified threshold, which is 100 vp/s by default.
 
 **Inheritance/Implementation:** SwipeGestureInterface extends [GestureInterface<SwipeGestureInterface>](GestureInterface<SwipeGestureInterface>)
 
@@ -14,7 +15,7 @@
 (value?: { fingers?: number; direction?: SwipeDirection; speed?: number }): SwipeGestureInterface
 ```
 
-Sets the parameters for the swipe gesture. Inherits from [GestureInterface<T>](arkts-arkui-gestureinterface-i.md#gestureinterface).
+Sets the parameters for the swipe gesture. Inherits from [GestureInterface<T>](arkts-arkui-gestureinterface-i.md).
 
 **Since:** 8
 
@@ -40,7 +41,9 @@ Sets the parameters for the swipe gesture. Inherits from [GestureInterface<T>](a
 (options?: SwipeGestureHandlerOptions): SwipeGestureInterface
 ```
 
-Sets the parameters for the swipe gesture. Compared with [SwipeGesture](SwipeGestureInterface(value?: { fingers?: number; direction?: SwipeDirection; speed?: number ))}, this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact number of fingers touching the screen.
+Sets the parameters for the swipe gesture. Compared with [SwipeGesture](SwipeGestureInterface(value?: { fingers?: number; direction?: SwipeDirection; speed?: number ))},
+this API adds the **isFingerCountLimited** parameter to **options**, which determines whether to enforce the exact
+number of fingers touching the screen.
 
 **Since:** 15
 

@@ -9,7 +9,7 @@ Defines the property of the certificate management dialog box.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## showInstallButton
@@ -18,7 +18,8 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 showInstallButton: boolean
 ```
 
-Whether to display the button for installing the certificate. The value **true** means to display the button; the value **false** means the opposite.
+Whether to display the button for installing the certificate. The value **true** means to display the button; the
+value **false** means the opposite.
 
 **Type:** boolean
 

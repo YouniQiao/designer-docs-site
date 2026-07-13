@@ -9,7 +9,7 @@ Represents the batch download progress of a file from the Drive Kit.
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## getFailedFiles
@@ -130,7 +130,8 @@ fileCache.startBatch(uriList, cloudSync.DownloadFileType.CONTENT).then((download
 downloadedSize: number
 ```
 
-Size of the downloaded file, in bytes. The value range is [0, INT64_MAX). If the progress is abnormal, the value **INT64_MAX** is returned.
+Size of the downloaded file, in bytes. The value range is
+[0, INT64_MAX). If the progress is abnormal, the value **INT64_MAX** is returned.
 
 **Type:** number
 
@@ -158,7 +159,8 @@ Type of the error returned when the batch download fails.
 failedCount: number
 ```
 
-Number of files that fail to be downloaded. The value ranges from 0 to 400. If the progress is abnormal, the value **-1** is returned.
+Number of files that fail to be downloaded. The value ranges from 0 to 400. If the progress is abnormal, the
+value **-1** is returned.
 
 **Type:** number
 
@@ -186,7 +188,8 @@ Execution state of the batch download.
 successfulCount: number
 ```
 
-Number of successfully downloaded files. The value ranges from 0 to 400. If the progress is abnormal, the value **-1** is returned.
+Number of successfully downloaded files. The value ranges from 0 to 400. If the progress is abnormal, the value
+**-1** is returned.
 
 **Type:** number
 
@@ -200,7 +203,8 @@ Number of successfully downloaded files. The value ranges from 0 to 400. If the 
 taskId: number
 ```
 
-ID of a batch download task. The value ranges from 0 to INT64_MAX. If the progress is abnormal, the value **-1** is returned.
+ID of a batch download task. The value ranges from 0 to INT64_MAX. If the progress is abnormal, the value **-1**
+is returned.
 
 **Type:** number
 
@@ -228,7 +232,8 @@ Total number of files. The value ranges from 0 to 400. If the progress is abnorm
 totalSize: number
 ```
 
-Total size of the files to be downloaded, in bytes. The value range is [0, INT64_MAX). If the progress is abnormal, the value **INT64_MAX** is returned.
+Total size of the files to be downloaded, in bytes. The value range is
+[0, INT64_MAX). If the progress is abnormal, the value **INT64_MAX** is returned.
 
 **Type:** number
 

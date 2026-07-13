@@ -9,7 +9,7 @@ Describes the network registration state.
 ## Modules to Import
 
 ```TypeScript
-import { radio } from '@ohos.telephony.radio';
+import { radio } from '@kit.TelephonyKit';
 ```
 
 ## cfgTech
@@ -32,7 +32,9 @@ Obtains the radio Access technology after config conversion.
 isCaActive: boolean
 ```
 
-Obtains the status of CA. Returns {@code true} if CA is actived; returns {@code false} otherwise.
+Obtains the status of CA.
+
+Returns {@code true} if CA is actived; returns {@code false} otherwise.
 
 **Type:** boolean
 
@@ -46,7 +48,10 @@ Obtains the status of CA. Returns {@code true} if CA is actived; returns {@code 
 isEmergency: boolean
 ```
 
-Checks whether this device is allowed to make emergency calls only. Returns {@code true} if this device is allowed to make emergency calls only; returns {@code false} otherwise.
+Checks whether this device is allowed to make emergency calls only.
+
+Returns {@code true} if this device is allowed to make emergency calls only;
+returns {@code false} otherwise.
 
 **Type:** boolean
 
@@ -74,7 +79,10 @@ Checks whether the device is roaming.
 longOperatorName: string
 ```
 
-Obtains the operator name in the long alphanumeric format of the registered network. Returns the operator name in the long alphanumeric format as a string; returns an empty string if no operator name is obtained.
+Obtains the operator name in the long alphanumeric format of the registered network.
+
+Returns the operator name in the long alphanumeric format as a string;
+returns an empty string if no operator name is obtained.
 
 **Type:** string
 
@@ -88,7 +96,9 @@ Obtains the operator name in the long alphanumeric format of the registered netw
 nsaState: NsaState
 ```
 
-Obtains the NSA network registration status of the device. Returns the NSA network registration status {@code NsaState}.
+Obtains the NSA network registration status of the device.
+
+Returns the NSA network registration status {@code NsaState}.
 
 **Type:** NsaState
 
@@ -102,7 +112,9 @@ Obtains the NSA network registration status of the device. Returns the NSA netwo
 plmnNumeric: string
 ```
 
-Obtains the PLMN code of the registered network. Returns the PLMN code as a string; returns an empty string if no operator name is obtained.
+Obtains the PLMN code of the registered network.
+
+Returns the PLMN code as a string; returns an empty string if no operator name is obtained.
 
 **Type:** string
 
@@ -130,7 +142,10 @@ Obtains the network registration status of the device.
 shortOperatorName: string
 ```
 
-Obtains the operator name in the short alphanumeric format of the registered network. Returns the operator name in the short alphanumeric format as a string; returns an empty string if no operator name is obtained.
+Obtains the operator name in the short alphanumeric format of the registered network.
+
+Returns the operator name in the short alphanumeric format as a string;
+returns an empty string if no operator name is obtained.
 
 **Type:** string
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## listFileSync
@@ -15,7 +15,11 @@ declare function listFileSync(
 ): string[]
 ```
 
-Lists the names of all files and directories in the current directory. This API returns the result synchronously. Filtering is supported. You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The relative path starts with a slash (/).
+Lists the names of all files and directories in the current directory. This API returns the result synchronously.
+Filtering is supported.
+
+You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. The
+relative path starts with a slash (/).
 
 **Since:** 9
 

@@ -12,7 +12,14 @@ This class is used to set adblock config.
 static addAdsBlockAllowedList(domainSuffixes: Array<string>): void
 ```
 
-向AdsBlockManager的AllowedList中添加一组域名，主要用于重新开启DisallowedList中的部分网站的广告过滤。 > **说明：** > > 此接口设置的域名不会持久化，应用重启需要重新设置。 > > AllowedList的优先级比DisallowedList高，例如，DisallowedList中配置了['example.com']，禁用了所有example.com域名下的网页，此时如果需要开启' > news.example.com'下的广告过滤，可以使用addAdsBlockAllowedList(['news.example.com'])。
+向AdsBlockManager的AllowedList中添加一组域名，主要用于重新开启DisallowedList中的部分网站的广告过滤。
+
+> **说明：**
+>
+> 此接口设置的域名不会持久化，应用重启需要重新设置。
+>
+> AllowedList的优先级比DisallowedList高，例如，DisallowedList中配置了['example.com']，禁用了所有example.com域名下的网页，此时如果需要开启'
+> news.example.com'下的广告过滤，可以使用addAdsBlockAllowedList(['news.example.com'])。
 
 **起始版本：** 12
 
@@ -30,8 +37,8 @@ static addAdsBlockAllowedList(domainSuffixes: Array<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## addAdsBlockDisallowedList
 
@@ -39,7 +46,14 @@ static addAdsBlockAllowedList(domainSuffixes: Array<string>): void
 static addAdsBlockDisallowedList(domainSuffixes: Array<string>): void
 ```
 
-向AdsBlockManager的DisallowedList中添加一组域名。广告过滤功能开启时，将禁用这些网站的广告过滤功能。 > **说明：** > > 此接口设置的域名不会持久化，应用重启需要重新设置。 > > 广告过滤特性会使用后缀匹配的方式判断domainSuffix和当前站点的url是否能匹配，例如，当前Web组件打开的网站是https://www.example.com，设置的DisallowedList中有' > example.com'或者'www.example.com'，后缀匹配成功，此网站将禁用广告过滤，访问'https://m.example.com'也将禁用广告过滤。
+向AdsBlockManager的DisallowedList中添加一组域名。广告过滤功能开启时，将禁用这些网站的广告过滤功能。
+
+> **说明：**
+>
+> 此接口设置的域名不会持久化，应用重启需要重新设置。
+>
+> 广告过滤特性会使用后缀匹配的方式判断domainSuffix和当前站点的url是否能匹配，例如，当前Web组件打开的网站是https://www.example.com，设置的DisallowedList中有'
+> example.com'或者'www.example.com'，后缀匹配成功，此网站将禁用广告过滤，访问'https://m.example.com'也将禁用广告过滤。
 
 **起始版本：** 12
 
@@ -57,8 +71,8 @@ static addAdsBlockDisallowedList(domainSuffixes: Array<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## clearAdsBlockAllowedList
 
@@ -78,7 +92,7 @@ clear Ads Block Allowed list.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## clearAdsBlockDisallowedList
 
@@ -98,7 +112,7 @@ clear Ads Block Disallowed list.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## removeAdsBlockAllowedList
 
@@ -124,8 +138,8 @@ static removeAdsBlockAllowedList(domainSuffixes: Array<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## removeAdsBlockDisallowedList
 
@@ -151,8 +165,8 @@ static removeAdsBlockDisallowedList(domainSuffixes: Array<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 
 ## setAdsBlockRules
 
@@ -160,7 +174,11 @@ static removeAdsBlockDisallowedList(domainSuffixes: Array<string>): void
 static setAdsBlockRules(rulesFile: string, replace: boolean): void
 ```
 
-向Web组件中设置自定义的符合通用easylist语法规则的广告过滤配置文件。 > **说明：** > > 此接口设置的广告过滤规则，内部解析成功后会持久化存储，应用重启后不需要重复设置。
+向Web组件中设置自定义的符合通用easylist语法规则的广告过滤配置文件。
+
+> **说明：**
+>
+> 此接口设置的广告过滤规则，内部解析成功后会持久化存储，应用重启后不需要重复设置。
 
 **起始版本：** 12
 
@@ -179,6 +197,6 @@ static setAdsBlockRules(rulesFile: string, replace: boolean): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 

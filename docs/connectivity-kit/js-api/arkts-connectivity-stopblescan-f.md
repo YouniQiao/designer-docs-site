@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## stopBLEScan
@@ -12,7 +12,9 @@ import { bluetoothManager } from '@ohos.bluetoothManager';
 function stopBLEScan(): void
 ```
 
-Stops BLE scanning. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH.
+Stops BLE scanning.
+On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
+ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -22,7 +24,7 @@ Stops BLE scanning. On API 10 and above, the permission required by this interfa
 
 **Required permissions:** 
 - API version 10+: ohos.permission.ACCESS_BLUETOOTH
-- API version 9 - 9: ohos.permission.DISCOVER_BLUETOOTH
+- API version 9: ohos.permission.DISCOVER_BLUETOOTH
 
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 

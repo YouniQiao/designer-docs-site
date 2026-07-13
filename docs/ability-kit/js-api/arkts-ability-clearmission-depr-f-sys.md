@@ -6,7 +6,8 @@
 function clearMission(missionId: number, callback: AsyncCallback<void>): void
 ```
 
-Clears a given mission, regardless of whether it is locked. This API uses an asynchronous callback to return the result.
+Clears a given mission, regardless of whether it is locked. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

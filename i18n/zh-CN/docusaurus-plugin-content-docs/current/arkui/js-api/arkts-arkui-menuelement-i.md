@@ -28,7 +28,11 @@ action: () => void
 enabled?: boolean
 ```
 
-菜单条目是否可进行交互。 true：菜单条目可以进行交互；false：菜单条目不可以进行交互。 默认值：true
+菜单条目是否可进行交互。
+
+true：菜单条目可以进行交互；false：菜单条目不可以进行交互。
+
+默认值：true
 
 **类型：** boolean
 

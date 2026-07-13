@@ -46,7 +46,9 @@ Bundle name of the widget.
 dimension?: FormDimension
 ```
 
-Dimensions of the widget. The 2 x 2, 4 x 4, 4 x 2, and more options are available. Default value: **Dimension_2_2**
+Dimensions of the widget. The 2 x 2, 4 x 4, 4 x 2, and more options are available.
+
+Default value: **Dimension_2_2**
 
 **Type:** FormDimension
 
@@ -62,7 +64,11 @@ Dimensions of the widget. The 2 x 2, 4 x 4, 4 x 2, and more options are availabl
 exemptAppLock?: boolean
 ```
 
-Whether the widget is exempt from app lock. **true**: The widget is exempt from app lock management. No app lock overlay is displayed when an app lock is applied to the host application. **false**: The widget is managed by app lock. The app lock overlay is displayed when an app lock is applied to the host application. Default value: **false**.
+Whether the widget is exempt from app lock. **true**: The widget is exempt from app lock management. No app lock
+overlay is displayed when an app lock is applied to the host application. **false**: The widget is managed by app
+lock. The app lock overlay is displayed when an app lock is applied to the host application.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -78,7 +84,13 @@ Whether the widget is exempt from app lock. **true**: The widget is exempt from 
 id: number | string
 ```
 
-Widget ID. Set this parameter to **0** for a new widget. **NOTE** Different widget hosts cannot use the same ID. If a widget host uses the same ID for two widgets, the one added later is displayed.
+Widget ID. Set this parameter to **0** for a new widget.
+
+**NOTE**
+
+Different widget hosts cannot use the same ID.
+
+If a widget host uses the same ID for two widgets, the one added later is displayed.
 
 **Type:** number | string
 
@@ -126,7 +138,17 @@ Widget name.
 renderingMode?: FormRenderingMode
 ```
 
-Widget rendering mode. Default value: **FULL_COLOR**. The options are as follows: - **FULL_COLOR**: full color mode, where the widget framework does not change the widget effect, which means that the widget is displayed in the effect as you set it. - **SINGLE_COLOR**: single color mode, where the widget framework sets the widget background to transparent. In this mode you need to set the widget style based on the best practices. **NOTE** If the system does not support unified rendering, the widget framework does not set the widget background to transparent in single color mode.
+Widget rendering mode. Default value: **FULL_COLOR**. The options are as follows:
+
+- **FULL_COLOR**: full color mode, where the widget framework does not change the widget effect, which means that
+the widget is displayed in the effect as you set it.
+- **SINGLE_COLOR**: single color mode, where the widget framework sets the widget background to transparent. In
+this mode you need to set the widget style based on the best practices.
+
+**NOTE**
+
+If the system does not support unified rendering, the widget framework does not set the widget background to
+transparent in single color mode.
 
 **Type:** FormRenderingMode
 
@@ -158,7 +180,10 @@ The shape of the form.
 temporary?: boolean
 ```
 
-Whether the widget is a temporary widget. **true**: The widget is a temporary widget. **false**: The widget is not a temporary widget. Default value: **false**.
+Whether the widget is a temporary widget. **true**: The widget is a temporary widget. **false**: The widget is not
+a temporary widget.
+
+Default value: **false**.
 
 **Type:** boolean
 

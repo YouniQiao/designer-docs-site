@@ -1,6 +1,7 @@
 # AbilityWindowConfiguration
 
-Enum for the window configuration.
+Defines the window configuration corresponding to this ability. The configuration is obtained through
+**featureAbility.AbilityWindowConfiguration**.
 
 **Since:** 7
 
@@ -12,7 +13,7 @@ Enum for the window configuration.
 WINDOW_MODE_UNDEFINED = 0
 ```
 
-Undefined window format.
+The PageAbility is in an undefined window display mode.
 
 **Since:** 7
 
@@ -26,7 +27,7 @@ Undefined window format.
 WINDOW_MODE_FULLSCREEN = 1
 ```
 
-Full screen.
+The PageAbility is in full screen mode.
 
 **Since:** 7
 
@@ -40,7 +41,7 @@ Full screen.
 WINDOW_MODE_SPLIT_PRIMARY = 100
 ```
 
-If the screen is horizontally oriented, it indicates left split, and if the screen is vertically oriented, it indicates upper split.
+The left screen in horizontal direction or the upper screen in vertical direction is the primary window.
 
 **Since:** 7
 
@@ -54,7 +55,7 @@ If the screen is horizontally oriented, it indicates left split, and if the scre
 WINDOW_MODE_SPLIT_SECONDARY = 101
 ```
 
-If the screen is horizontally oriented, it indicates right split, and if the screen is vertically oriented, it indicates bottom split.
+The right screen in horizontal direction or the lower screen in vertical direction is the secondary window.
 
 **Since:** 7
 
@@ -68,7 +69,7 @@ If the screen is horizontally oriented, it indicates right split, and if the scr
 WINDOW_MODE_FLOATING = 102
 ```
 
-Suspended window.
+The PageAbility is displayed in floating window mode.
 
 **Since:** 7
 

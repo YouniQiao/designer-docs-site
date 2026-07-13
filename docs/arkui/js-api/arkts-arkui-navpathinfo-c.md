@@ -37,7 +37,21 @@ Creates a **NavPathInfo** object.
 isEntry?: boolean
 ```
 
-Whether the navigation destination page is the entry page. **true**: yes; **false**: no Default value: **false** The value of this parameter is reviewed or reset under the following conditions: 1. A global back event is triggered on the current navigation destination page. 2. The application is switched to the background. **NOTE** The navigation destination page serving as an entry does not respond to the in-app global back events; instead, it directly triggers the global back event between applications.
+Whether the navigation destination page is the entry page.
+
+**true**: yes; **false**: no
+
+Default value: **false**
+
+The value of this parameter is reviewed or reset under the following conditions:
+
+1. A global back event is triggered on the current navigation destination page.
+2. The application is switched to the background.
+
+**NOTE**
+
+The navigation destination page serving as an entry does not respond to the in-app global back events; instead, it
+directly triggers the global back event between applications.
 
 **Type:** boolean
 
@@ -55,7 +69,10 @@ Whether the navigation destination page is the entry page. **true**: yes; **fals
 name: string
 ```
 
-Name of the navigation destination page. The name matches the name in the following route tables: 1. Custom route table, which is passed via the [navDestination](NavigationAttribute#navDestination) method. 2. System route table, which is set by **name** in **routerMap**. For details, please refer to [Example 2: Using NavPathStack APIs](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-2-using-navpathstack-apis).
+Name of the navigation destination page. The name matches the name in the following route tables:
+
+1. Custom route table, which is passed via the [navDestination](NavigationAttribute#navDestination) method.
+2. System route table, which is set by **name** in **routerMap**. For details, please refer to [Example 2: Using NavPathStack APIs](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-2-using-navpathstack-apis).
 
 **Type:** string
 
@@ -73,7 +90,8 @@ Name of the navigation destination page. The name matches the name in the follow
 navDestinationId?: string
 ```
 
-Unique ID of the navigation destination page. This ID is system-generated and globally unique. It can be obtained using the [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1) API and should not be manually reassigned.
+Unique ID of the navigation destination page. This ID is system-generated and globally unique. It can be obtained
+using the [getPathStack](arkts-arkui-navpathstack-c.md#getpathstack-1) API and should not be manually reassigned.
 
 **Type:** string
 
@@ -91,7 +109,13 @@ Unique ID of the navigation destination page. This ID is system-generated and gl
 onPop?: import('../api/@ohos.base').Callback<PopInfo>
 ```
 
-Callback returned when [pop](NavPathStack#pop(result: Object, animated?: boolean)), [popToName](arkts-arkui-navpathstack-c.md#poptoname-2), or [popToIndex](arkts-arkui-navpathstack-c.md#poptoindex-2) is called on the navigation destination page. It is triggered only when the **result** parameter is set in [pop](NavPathStack#pop(result: Object, animated?: boolean)), [popToName](arkts-arkui-navpathstack-c.md#poptoname-2), or [popToIndex](arkts-arkui-navpathstack-c.md#poptoindex-2).
+Callback returned when [pop](NavPathStack#pop(result: Object, animated?: boolean)),
+[popToName](arkts-arkui-navpathstack-c.md#poptoname-2), or
+[popToIndex](arkts-arkui-navpathstack-c.md#poptoindex-2) is called on the
+navigation destination page. It is triggered only when the **result** parameter is set in
+[pop](NavPathStack#pop(result: Object, animated?: boolean)),
+[popToName](arkts-arkui-navpathstack-c.md#poptoname-2), or
+[popToIndex](arkts-arkui-navpathstack-c.md#poptoindex-2).
 
 **Type:** import('../api/@ohos.base').Callback<PopInfo>
 
@@ -109,7 +133,8 @@ Callback returned when [pop](NavPathStack#pop(result: Object, animated?: boolean
 param?: unknown
 ```
 
-Detailed parameters for the custom **NavDestination** page. The **unknown** type can be replaced with a user- defined type.
+Detailed parameters for the custom **NavDestination** page. The **unknown** type can be replaced with a user-
+defined type.
 
 **Type:** unknown
 

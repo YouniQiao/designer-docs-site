@@ -1,6 +1,8 @@
 # ContinueState
 
-Enumerates the mission continuation states of the application. It is used in the [setMissionContinueState](arkts-ability-uiabilitycontext-c.md#setmissioncontinuestate-1) API of [UIAbilityContext](arkts-ability-uiabilitycontext-c.md#uiabilitycontext).
+Enumerates the mission continuation states of the application. It is used in the
+[setMissionContinueState](arkts-ability-uiabilitycontext-c.md#setmissioncontinuestate-1)
+API of [UIAbilityContext](arkts-ability-uiabilitycontext-c.md).
 
 **Since:** 10
 

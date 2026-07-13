@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## setAlternateIcon
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function setAlternateIcon(alternateIconName: string): Promise<void>
 ```
 
-Set the alternate icon for the current application. If you need to restore the app's default icon, please input an empty value for the icon name parameter.
+Sets the alternate icon of the caller based on the given alternate icon name.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -24,13 +25,13 @@ Set the alternate icon for the current application. If you need to restore the a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| alternateIconName | string | Yes | Indicates the alternate icon name.This value matches the name field under alternateIcons in the app.json5 file.If an empty string is passed, the app's default icon will be restored. |
+| alternateIconName | string | Yes | Name of the alternate icon to be set.The alternate icon name must be in the name field of alternateIcons in app.json5.If alternateIconName is left empty, the alternate icon is canceled. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Returns the result of setAlternateIcon. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 

@@ -12,7 +12,11 @@
 validate(certChain: CertChainData, callback: AsyncCallback<void>): void
 ```
 
-表示校验X509证书链。使用Callback异步回调。 由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的 [checkValidityWithDate](arkts-devicecertificate-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见 [证书规格](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
+表示校验X509证书链。使用Callback异步回调。
+
+由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的
+[checkValidityWithDate](arkts-devicecertificate-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见
+[证书规格](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
 
 **起始版本：** 9
 
@@ -31,7 +35,7 @@ validate(certChain: CertChainData, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -142,7 +146,11 @@ try {
 validate(certChain: CertChainData): Promise<void>
 ```
 
-表示校验X509证书链。使用Promise方式返回结果。 由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的 [checkValidityWithDate](arkts-devicecertificate-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见 [证书规格](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
+表示校验X509证书链。使用Promise方式返回结果。
+
+由于端侧系统时间不可信，证书链校验不包含对证书有效时间的校验。如果需要检查证书的时间有效性，可使用X509证书的
+[checkValidityWithDate](arkts-devicecertificate-x509cert-i.md#checkvaliditywithdate-1)方法进行检查。详见
+[证书规格](../../../../security/DeviceCertificateKit/certificate-framework-overview.md#certificate-specifications)。
 
 **起始版本：** 9
 
@@ -166,7 +174,7 @@ validate(certChain: CertChainData): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -275,7 +283,16 @@ try {
 validateCert(cert: X509Cert, params: CertValidationParams): Promise<CertValidationResult>
 ```
 
-通过构建和验证证书链来验证证书。该接口使用Promise返回结果。 证书链构建过程遵循以下规则： 1. 信任锚来源：始终以信任证书列表（trustedCerts）作为信任锚源。仅当trustSystemCa设置为true时，才使用预配置证书作为信任锚源。 2. 颁发者搜索顺序：系统首先从信任锚来源中搜索颁发者，若未找到，则继续在非信任证书列表（untrustedCerts）中查找。在线下载的中间CA证书 属于非受信任证书。 3. 信任锚锁定：一旦在信任锚来源中找到颁发者，后续查找过程将不会再回至非信任证书，即后续证书必须来自信任锚来源。 4. 构建完成条件：若partialChain为false（默认值），则仅在找到根证书（自签名证书）时构建完成。若partialChain为true，则在首次在 信任锚来源中找到颁发者时构建完成。 5. 后续验证：证书链构建完成后，执行其他验证操作，如证书签名验证和证书吊销检查。
+通过构建和验证证书链来验证证书。该接口使用Promise返回结果。
+
+证书链构建过程遵循以下规则：
+1. 信任锚来源：始终以信任证书列表（trustedCerts）作为信任锚源。仅当trustSystemCa设置为true时，才使用预配置证书作为信任锚源。
+2. 颁发者搜索顺序：系统首先从信任锚来源中搜索颁发者，若未找到，则继续在非信任证书列表（untrustedCerts）中查找。在线下载的中间CA证书
+属于非受信任证书。
+3. 信任锚锁定：一旦在信任锚来源中找到颁发者，后续查找过程将不会再回至非信任证书，即后续证书必须来自信任锚来源。
+4. 构建完成条件：若partialChain为false（默认值），则仅在找到根证书（自签名证书）时构建完成。若partialChain为true，则在首次在
+信任锚来源中找到颁发者时构建完成。
+5. 后续验证：证书链构建完成后，执行其他验证操作，如证书签名验证和证书吊销检查。
 
 **起始版本：** 26.0.0
 

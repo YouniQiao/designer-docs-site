@@ -1,6 +1,7 @@
 # JoinStyle
 
-Enumerates the join styles of a pen. The join style defines the shape of the joints of a polyline segment drawn by the pen.
+Enumerates the join styles of a pen. The join style defines the shape of the joints of a polyline segment drawn by
+the pen.
 
 **Since:** 12
 
@@ -12,7 +13,8 @@ Enumerates the join styles of a pen. The join style defines the shape of the joi
 MITER_JOIN = 0
 ```
 
-Mitered corner. If the angle of a polyline is small, its miter length may be inappropriate. In this case, you need to use the miter limit to limit the miter length.
+Mitered corner. If the angle of a polyline is small, its miter length may be inappropriate. In this case, you
+need to use the miter limit to limit the miter length.
 
 **Since:** 12
 

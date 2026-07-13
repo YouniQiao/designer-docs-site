@@ -1,6 +1,14 @@
 # PathIterator
 
-表示路径操作迭代器，可通过遍历迭代器读取path的操作指令。 > **说明：** > > - 本Class首批接口从API version 18开始支持。 > > - 本模块使用屏幕物理像素单位px。 > > - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
+表示路径操作迭代器，可通过遍历迭代器读取path的操作指令。
+
+> **说明：**
+>
+> - 本Class首批接口从API version 18开始支持。
+>
+> - 本模块使用屏幕物理像素单位px。
+>
+> - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 **起始版本：** 18
 
@@ -71,7 +79,7 @@ next(points: Array<common2D.Point>, offset?: number): PathIteratorVerb
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## peek
 

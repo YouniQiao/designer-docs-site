@@ -9,7 +9,7 @@ Defines a print job.
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## binaryData
@@ -130,7 +130,8 @@ FD list of files to print.
 isAutoRotate?: boolean
 ```
 
-Whether to automatically rotate the page. The value **true** means to automatically rotate the page, and **false** means the opposite. Default value: **true**.
+Whether to automatically rotate the page. The value **true** means to automatically rotate the page, and
+**false** means the opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -146,7 +147,8 @@ Whether to automatically rotate the page. The value **true** means to automatica
 isBorderless?: boolean
 ```
 
-Whether to print without margins. The value **true** means to print without margins, and **false** means the opposite. Default value: **true**.
+Whether to print without margins. The value **true** means to print without margins, and **false** means the
+opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -162,7 +164,8 @@ Whether to print without margins. The value **true** means to print without marg
 isCollate?: boolean
 ```
 
-Whether pages are printed uncollated. The value **true** means that pages are printed uncollated, and **false** means the opposite. Default value: **true**.
+Whether pages are printed uncollated. The value **true** means that pages are printed uncollated, and **false**
+means the opposite. Default value: **true**.
 
 **Type:** boolean
 
@@ -178,7 +181,8 @@ Whether pages are printed uncollated. The value **true** means that pages are pr
 isLandscape: boolean
 ```
 
-Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
+Whether pages are printed in landscape mode. The value **true** indicates that pages are printed in landscape
+mode, and **false** indicates that pages are printed in portrait mode. The default value is **false**.
 
 **Type:** boolean
 
@@ -194,7 +198,8 @@ Whether pages are printed in landscape mode. The value **true** indicates that p
 isReverse?: boolean
 ```
 
-Whether pages are printed in reverse order. The value **true** means that pages are printed in reverse order, and **false** means that pages are printed in normal order. The default value is **false**.
+Whether pages are printed in reverse order. The value **true** means that pages are printed in reverse order, and
+**false** means that pages are printed in normal order. The default value is **false**.
 
 **Type:** boolean
 

@@ -6,28 +6,6 @@ Interface for defining time base metadata
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
-
-## duration
-
-```TypeScript
-duration: int
-```
-
-Duration of the time primitive information The value should be an integer. <br>Unit:milliseconds.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Media.Core
-
 ## classify
 
 ```TypeScript
@@ -60,15 +38,17 @@ Key-value pair set corresponding to time primitive information
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
-## start
+## duration
 
 ```TypeScript
-start: int
+duration: number
 ```
 
-Defines the offset value of the time primitive information relative to the start time of the entire media. The value should be an integer. <br>Unit:milliseconds.
+Duration of the time primitive information
+The value should be an integer.
+<br>Unit:milliseconds.
 
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 
@@ -82,9 +62,28 @@ Defines the offset value of the time primitive information relative to the start
 id?: string
 ```
 
-Defines the unique token of the time base metadata, The tag must be unique in other time metadata of the video source.
+Defines the unique token of the time base metadata,
+The tag must be unique in other time metadata of the video source.
 
 **类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Media.Core
+
+## start
+
+```TypeScript
+start: number
+```
+
+Defines the offset value of the time primitive information relative to the start time of the entire media.
+The value should be an integer.
+<br>Unit:milliseconds.
+
+**类型：** number
 
 **起始版本：** 26.0.0
 

@@ -12,7 +12,9 @@ Provides the options for customizing the context menu on selection.
 showMode?: TextMenuShowMode
 ```
 
-Menu display mode. Default value: **TextMenuShowMode.DEFAULT**
+Menu display mode.
+
+Default value: **TextMenuShowMode.DEFAULT**
 
 **Type:** TextMenuShowMode
 

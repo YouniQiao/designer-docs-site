@@ -1,8 +1,10 @@
 # DialogCustomOptions
 
-Options for the custom-style dialog. The dialog content is provided as the first parameter of present() method, not inside this options object.
+Options for the custom-style dialog.
+The dialog content is provided as the first parameter of present() method,
+not inside this options object.
 
-**Inheritance/Implementation:** DialogCustomOptions extends [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md#dialogbaseoptions)
+**Inheritance/Implementation:** DialogCustomOptions extends [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md)
 
 **Since:** 26.1.0
 
@@ -11,7 +13,7 @@ Options for the custom-style dialog. The dialog content is provided as the first
 ## Modules to Import
 
 ```TypeScript
-import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@ohos.arkui.dialog';
+import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@kit.ArkUI';
 ```
 
 ## customStyle

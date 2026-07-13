@@ -9,7 +9,7 @@ Provides the ImageProcessor type, including the processing function.
 ## Modules to Import
 
 ```TypeScript
-import { videoProcessingEngine } from '@ohos.multimedia.videoProcessingEngine';
+import { videoProcessingEngine } from '@kit.ImageKit';
 ```
 
 ## enhanceDetail
@@ -18,7 +18,9 @@ import { videoProcessingEngine } from '@ohos.multimedia.videoProcessingEngine';
 enhanceDetail(sourceImage: image.PixelMap, width: number, height: number, level?: QualityLevel): Promise<image.PixelMap>
 ```
 
-The function generate the destinationImage from sourceImage with necessary scaling operation <br>according to width and height. Different levels of scaling methods are provided to <br>balance performance and image quality. This method uses a promise to return the result.
+The function generate the destinationImage from sourceImage with necessary scaling operation
+<br>according to width and height. Different levels of scaling methods are provided to
+<br>balance performance and image quality. This method uses a promise to return the result.
 
 **Since:** 18
 
@@ -70,7 +72,9 @@ async function enhanceDetail(sourceImage: image.PixelMap, width: number, height:
 enhanceDetail(sourceImage: image.PixelMap, scale: number, level?: QualityLevel): Promise<image.PixelMap>
 ```
 
-The function generate the destinationImage from sourceImage with necessary scaling operation <br>according to the zoom ratio. Different levels of scaling methods are provided to <br>balance performance and image quality. This method uses a promise to return the result.
+The function generate the destinationImage from sourceImage with necessary scaling operation
+<br>according to the zoom ratio. Different levels of scaling methods are provided to
+<br>balance performance and image quality. This method uses a promise to return the result.
 
 **Since:** 18
 
@@ -121,7 +125,9 @@ async function enhanceDetail(sourceImage: image.PixelMap, scale: number) {
 enhanceDetailSync(sourceImage: image.PixelMap, width: number, height: number, level?: QualityLevel): image.PixelMap
 ```
 
-The function generate the destinationImage from sourceImage with necessary scaling operation <br>according to width and height. Different levels of scaling methods are provided to <br>balance performance and image quality.
+The function generate the destinationImage from sourceImage with necessary scaling operation
+<br>according to width and height. Different levels of scaling methods are provided to
+<br>balance performance and image quality.
 
 **Since:** 18
 
@@ -174,7 +180,9 @@ async function enhanceDetailSync(sourceImage: image.PixelMap, width: number, hei
 enhanceDetailSync(sourceImage: image.PixelMap, scale: number, level?: QualityLevel): image.PixelMap
 ```
 
-The function generate the destinationImage from sourceImage with necessary scaling operation <br>according to the zoom ratio. Different levels of scaling methods are provided to <br>balance performance and image quality.
+The function generate the destinationImage from sourceImage with necessary scaling operation
+<br>according to the zoom ratio. Different levels of scaling methods are provided to
+<br>balance performance and image quality.
 
 **Since:** 18
 

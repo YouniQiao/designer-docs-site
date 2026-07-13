@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { curves } from '@ohos.curves';
+import { curves } from '@kit.ArkUI';
 ```
 
 ## initCurve
@@ -12,7 +12,8 @@ import { curves } from '@ohos.curves';
 function initCurve(curve?: Curve): ICurve
 ```
 
-Implements initialization for the interpolation curve, which is used to create an interpolation curve based on the input parameter.
+Implements initialization for the interpolation curve, which is used to create an interpolation curve based on the
+input parameter.
 
 **Since:** 9
 

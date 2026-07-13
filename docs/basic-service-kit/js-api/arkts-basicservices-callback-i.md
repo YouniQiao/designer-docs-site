@@ -1,6 +1,7 @@
 # Callback
 
-Defines a common callback. You can set **data** to customize the data type of the information returned by the callback.
+Defines a common callback. You can set **data** to customize the data type of the information returned by the
+callback.
 
 **Since:** 6
 
@@ -9,7 +10,7 @@ Defines a common callback. You can set **data** to customize the data type of th
 ## Modules to Import
 
 ```TypeScript
-import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@ohos.base';
+import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.BasicServicesKit';
 ```
 
 ## constructor

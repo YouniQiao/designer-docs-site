@@ -6,13 +6,22 @@
 function on(type: 'accessibilityStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes of the accessibility application. This API uses an asynchronous callback to return the result. To obtain information about accessibility applications in the system, use [accessibility.getAccessibilityExtensionListSync]accessibility.getAccessibilityExtensionListSync. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('accessibilityStateChange')]accessibility.off(type: 'accessibilityStateChange', callback?: Callback<boolean>) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+监听辅助应用启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用
+[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。
+
+> **说明：**
+>
+> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
+>
+> - 调用此方法后，务必在对象生命周期结束前使用
+> [accessibility.off('accessibilityStateChange')](arkts-accessibility-off-f.md#off-1)
+> 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -20,14 +29,14 @@ Subscribes to the state changes of the accessibility application. This API uses 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'accessibilityStateChange' | 是 | Event type, which is set to 'accessibilityStateChange' in this  API. |
-| callback | Callback&lt;boolean> | 是 | Callback invoked when the enabled status of accessibility application  changes. The returned result indicates the global enabled status of the accessibility application. The value  true indicates that the accessibility application is enabled, and false indicates that the  accessibility application is disabled. |
+| type | 'accessibilityStateChange' | 是 | 监听的事件名，固定为‘accessibilityStateChange’，即辅助应用启用状态变化事件。 |
+| callback | Callback&lt;boolean&gt; | 是 | 回调函数，在辅助应用启用状态变化时将状态通过此函数进行通知。此状态为全局辅助应用启用状态。返回true表示已启用辅助应用，返回false表示已禁用辅助应用。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
 **示例：**
 
@@ -43,19 +52,29 @@ accessibility.on('accessibilityStateChange', (data: boolean) => {
 
 ```
 
+
 ## on('touchGuideStateChange')
 
 ```TypeScript
 function on(type: 'touchGuideStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes in touch guide mode. This API uses an asynchronous callback to return the result. To obtain information about accessibility applications in the system, use [accessibility.getAccessibilityExtensionListSync]accessibility.getAccessibilityExtensionListSync. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('touchGuideStateChange')]accessibility.off(type: 'touchGuideStateChange', callback?: Callback<boolean>) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+监听触摸浏览功能启用状态变化事件，使用callback异步回调。如需获取系统内辅助应用信息，推荐使用
+[accessibility.getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md#getaccessibilityextensionlistsync-1)。
+
+> **说明：**
+>
+> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
+>
+> - 调用此方法后，务必在对象生命周期结束前使用
+> [accessibility.off('touchGuideStateChange')](arkts-accessibility-off-f.md#off-2)
+> 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Vision
 
@@ -63,14 +82,14 @@ Subscribes to the state changes in touch guide mode. This API uses an asynchrono
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'touchGuideStateChange' | 是 | Event type, which is set to 'touchGuideStateChange' in this API. |
-| callback | Callback&lt;boolean> | 是 | Callback invoked when the enabling state of touch guide mode changes. The  value true indicates that the touch guide mode is enabled, and the value false indicates that the touch  guide mode is disabled. |
+| type | 'touchGuideStateChange' | 是 | 监听的事件名，固定为‘touchGuideStateChange’，即触摸浏览启用状态变化事件。 |
+| callback | Callback&lt;boolean&gt; | 是 | 回调函数，在触摸浏览启用状态变化时将状态通过此函数进行通知。返回true表示触摸浏览功能已开启，返回false表示触摸浏览功能已关闭。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
 **示例：**
 
@@ -86,19 +105,28 @@ accessibility.on('touchGuideStateChange', (data: boolean) => {
 
 ```
 
+
 ## on('screenReaderStateChange')
 
 ```TypeScript
 function on(type: 'screenReaderStateChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to the state changes of the screen reader. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('screenReaderStateChange')]accessibility.off(type: 'screenReaderStateChange', callback?: Callback<boolean>) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+监听屏幕朗读功能启用状态变化事件，使用callback异步回调。
+
+> **说明：**
+>
+> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
+>
+> - 调用此方法后，务必在对象生命周期结束前使用
+> [accessibility.off('screenReaderStateChange')](arkts-accessibility-off-f.md#off-3)
+> 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 18
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -106,14 +134,14 @@ Subscribes to the state changes of the screen reader. This API uses an asynchron
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'screenReaderStateChange' | 是 | Event type, which is set to 'screenReaderStateChange' in this API. |
-| callback | Callback&lt;boolean> | 是 | Callback invoked when the enabling state of screen reader changes. The  value true indicates that the screen reader is enabled, and the value false indicates that the screen  reader is disabled. |
+| type | 'screenReaderStateChange' | 是 | 监听的事件名，固定为‘screenReaderStateChange’，即屏幕朗读启用状态变化事件。 |
+| callback | Callback&lt;boolean&gt; | 是 | 回调函数，在屏幕朗读启用状态变化时将状态通过此函数进行通知。返回true表示屏幕朗读功能已开启，返回false表示屏幕朗读功能已关闭。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
 **示例：**
 
@@ -126,19 +154,28 @@ accessibility.on('screenReaderStateChange', (data: boolean) => {
 
 ```
 
+
 ## on('touchModeChange')
 
 ```TypeScript
 function on(type: 'touchModeChange', callback: Callback<string>): void
 ```
 
-Subscribes to the single- or double-touch event changes in touch guide mode. This API uses an asynchronous callback to return the result. > **NOTE** > > - The callback parameter for registering a listener must use a named function instead of an anonymous function. > Otherwise, a new underlying object is created each time the function is called, causing memory leakage. > > - After calling this method, you must use > [accessibility.off('touchModeChange')]accessibility.off(type: 'touchModeChange', callback?: Callback<string>) > to cancel the listener before the object's lifecycle ends. Otherwise, a crash may occur.
+监听触摸浏览功能下的单击/双击操作模式变化事件，使用callback异步回调。
+
+> **说明：**
+>
+> - 注册监听的callback参数应使用具名函数而非匿名函数，否则每次调用时会创建一个新的底层对象，引起内存泄漏问题。
+>
+> - 调用此方法后，务必在对象生命周期结束前使用
+> [accessibility.off('touchModeChange')](arkts-accessibility-off-f.md#off-4)
+> 取消监听，否则可能会导致崩溃。
 
 **起始版本：** 20
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -146,14 +183,14 @@ Subscribes to the single- or double-touch event changes in touch guide mode. Thi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'touchModeChange' | 是 | Event type, which is set to 'touchModeChange' in this API. |
-| callback | Callback&lt;string> | 是 | Callback to be invoked when the single- or double-touch event changes. |
+| type | 'touchModeChange' | 是 | 监听的事件名，固定为‘touchModeChange’，即触摸浏览功能下的单击/双击操作模式变化事件。 |
+| callback | Callback&lt;string&gt; | 是 | 回调函数，在触摸浏览功能下的单击/双击操作模式变化时将状态通过此函数进行通知。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 |  |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
 
 **示例：**
 

@@ -1,6 +1,6 @@
 # BundleUsedRecord (System API)
 
-BundleUsedRecord.
+Represents the access records of an application or device.
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ BundleUsedRecord.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## bundleName
@@ -20,7 +20,8 @@ import { privacyManager } from '@ohos.privacyManager';
 bundleName: string
 ```
 
-The bundle name
+Bundle name of the application using the permission. In local scenarios, it can be used to directly locate the
+target application; this field is invalid in distributed scenarios.
 
 **Type:** string
 
@@ -36,7 +37,8 @@ The bundle name
 deviceId: string
 ```
 
-The device id
+ID of the device where the application using the permission is located. Mainly used to identify the source of a
+remote device in distributed scenarios; this field can usually be ignored in local scenarios.
 
 **Type:** string
 
@@ -52,7 +54,9 @@ The device id
 deviceName?: string
 ```
 
-The device name
+Name of the device where the application using the permission is located, used only in distributed scenarios.
+It can be used to display a more understandable device identifier in the UI.
+Default value: Empty string.
 
 **Type:** string
 
@@ -68,7 +72,8 @@ The device name
 isRemote: boolean
 ```
 
-Distribute flag
+Whether it is an access record in a distributed scenario. false indicates a local application record, and true
+indicates a permission usage record on a remote device.
 
 **Type:** boolean
 
@@ -84,7 +89,9 @@ Distribute flag
 permissionRecords: Array<PermissionUsedRecord>
 ```
 
-The list of permission used records
+Collection of permission usage records under the current application or device. Each element corresponds to a
+specific permission, allowing further viewing of access count, rejection count, last access time, and detailed
+records.
 
 **Type:** Array<PermissionUsedRecord>
 
@@ -100,7 +107,8 @@ The list of permission used records
 tokenId: number
 ```
 
-AccessTokenID
+Application identity identifier for using the permission. This field is invalid in distributed scenarios; the
+source device must be identified using deviceId and deviceName.
 
 **Type:** number
 

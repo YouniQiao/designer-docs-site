@@ -9,7 +9,7 @@ Provides APIs for registering the component layout and drawing display completio
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## createComponentObserver
@@ -46,7 +46,10 @@ Registers a callback for layout and drawing display completion notifications for
 createComponentObserver(id: string | number): inspector.ComponentObserver
 ```
 
-Registers a callback for layout and drawing display completion notifications for a specific component. <br>Display refers to the process of sending the drawing command of a node to the graphics service and completing <br>the display. Compared with createComponentObserver, this API supports the input of **UniqueID** (the unique ID <br>allocated by the system to a node).
+Registers a callback for layout and drawing display completion notifications for a specific component.
+<br>Display refers to the process of sending the drawing command of a node to the graphics service and completing
+<br>the display. Compared with createComponentObserver, this API supports the input of **UniqueID** (the unique ID
+<br>allocated by the system to a node).
 
 **Since:** 23
 

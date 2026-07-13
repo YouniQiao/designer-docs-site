@@ -9,7 +9,7 @@ Describes the scale parameters.
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## centerX
@@ -18,7 +18,13 @@ import { matrix4 } from '@ohos.matrix4';
 centerX?: number
 ```
 
-X-coordinate of the center point. Unit: px Default value: X-coordinate of the component center Value range: (-∞, +∞)
+X-coordinate of the center point.
+
+Unit: px
+
+Default value: X-coordinate of the component center
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -34,7 +40,13 @@ X-coordinate of the center point. Unit: px Default value: X-coordinate of the co
 centerY?: number
 ```
 
-Y-coordinate of the center point. Unit: px Default value: Y-coordinate of the component center Value range: (-∞, +∞)
+Y-coordinate of the center point.
+
+Unit: px
+
+Default value: Y-coordinate of the component center
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -50,7 +62,15 @@ Y-coordinate of the center point. Unit: px Default value: Y-coordinate of the co
 x?: number
 ```
 
-Scaling multiple along the x-axis. x > 1: The image is scaled up along the x-axis. 0 < x < 1: The image is scaled down along the x-axis. x < 0: The image is scaled in the reverse direction along the x-axis. Default value: **1** Value range: (-∞, +∞)
+Scaling multiple along the x-axis. x > 1: The image is scaled up along the x-axis.
+
+0 < x < 1: The image is scaled down along the x-axis.
+
+x < 0: The image is scaled in the reverse direction along the x-axis.
+
+Default value: **1**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -66,7 +86,15 @@ Scaling multiple along the x-axis. x > 1: The image is scaled up along the x-axi
 y?: number
 ```
 
-Scaling multiple along the y-axis. y > 1: The image is scaled up along the y-axis. 0 < y < 1: The image is scaled down along the y-axis. y < 0: The image is scaled in the reverse direction along the y-axis. Default value: **1** Value range: (-∞, +∞)
+Scaling multiple along the y-axis. y > 1: The image is scaled up along the y-axis.
+
+0 < y < 1: The image is scaled down along the y-axis.
+
+y < 0: The image is scaled in the reverse direction along the y-axis.
+
+Default value: **1**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -82,7 +110,15 @@ Scaling multiple along the y-axis. y > 1: The image is scaled up along the y-axi
 z?: number
 ```
 
-Scaling multiple along the z-axis. z > 1: The image is scaled up along the z-axis. 0 < z < 1: The image is scaled down along the z-axis. z < 0: The image is scaled in the reverse direction along the z-axis. Default value: **1** Value range: (-∞, +∞)
+Scaling multiple along the z-axis. z > 1: The image is scaled up along the z-axis.
+
+0 < z < 1: The image is scaled down along the z-axis.
+
+z < 0: The image is scaled in the reverse direction along the z-axis.
+
+Default value: **1**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 

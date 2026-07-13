@@ -100,7 +100,8 @@ Applies the specified position constraints to the child component.
 measureResult: MeasureResult
 ```
 
-Measurement result of the child component. Unit: vp.
+Measurement result of the child component.
+Unit: vp.
 
 **Type:** MeasureResult
 
@@ -118,7 +119,8 @@ Measurement result of the child component. Unit: vp.
 uniqueId?: number
 ```
 
-Unique ID that the system assigns to the child component. The value must be an integer greater than or equal to 0.
+Unique ID that the system assigns to the child component.
+The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

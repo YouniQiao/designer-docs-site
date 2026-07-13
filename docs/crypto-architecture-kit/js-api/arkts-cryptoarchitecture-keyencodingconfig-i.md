@@ -1,6 +1,14 @@
 # KeyEncodingConfig
 
-Represents the RSA private key encoding parameters. You can use it to generate an encoded private key string with the specified algorithm and password. > **NOTE** > > - **password** specifies the password used for encoding the private key. It is mandatory. > > - **cipherName** specifies the algorithm used for encoding. It is mandatory. Currently, only **AES-128-CBC**, > **AES-192-CBC**, **AES-256-CBC**, and **DES-EDE3-CBC** are supported.
+Represents the RSA private key encoding parameters. You can use it to generate an encoded private key string with
+the specified algorithm and password.
+
+> **NOTE**
+>
+> - **password** specifies the password used for encoding the private key. It is mandatory.
+>
+> - **cipherName** specifies the algorithm used for encoding. It is mandatory. Currently, only **AES-128-CBC**,
+> **AES-192-CBC**, **AES-256-CBC**, and **DES-EDE3-CBC** are supported.
 
 **Since:** 18
 
@@ -9,7 +17,7 @@ Represents the RSA private key encoding parameters. You can use it to generate a
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## cipherName
@@ -18,7 +26,7 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 cipherName: string
 ```
 
-Algorithm to use.
+Symmetric cipher algorithm used for encoding the private key.
 
 **Type:** string
 

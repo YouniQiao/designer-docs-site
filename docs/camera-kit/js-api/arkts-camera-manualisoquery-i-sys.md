@@ -1,8 +1,9 @@
-# ManualIsoQuery
+# ManualIsoQuery (System API)
 
-Provides APIs to check whether a camera device supports manual ISO setting and obtain the ISO range supported by the device.
+Provides APIs to check whether a camera device supports manual ISO setting and obtain the ISO range supported by
+the device.
 
-**Since:** 12
+**Since:** 24
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -17,7 +18,7 @@ import { camera } from '@kit.CameraKit';
 ## getIsoRange
 
 ```TypeScript
-getIsoRange(): Array<int>
+getIsoRange(): Array<number>
 ```
 
 Obtains the supported ISO range.
@@ -32,14 +33,14 @@ Obtains the supported ISO range.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;int> | ISO range. The value range is [50, 100, ..., 6400]. The actual value depends on the  bottom-layer capability. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| Array&lt;number&gt; | ISO range. The value range is [50, 100, ..., 6400]. The actual value depends on thebottom-layer capability. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not System Application. |
-| 7400103 | Session not config, only throw in session usage. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
 **Example**
 
@@ -60,33 +61,6 @@ function getIsoRange(professionalPhotoSession: camera.ProfessionalPhotoSession):
 
 ```
 
-## getSupportedIsoRange
-
-```TypeScript
-getSupportedIsoRange(): int[]
-```
-
-Get a array of supported standard ISO sensitivity values, as defined in ISO 12232:2006.
-
-**Since:** 24
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| int[] | The array of ISO sensitivity values. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
-| 7400103 | Session not config, only throw in session usage. |
-
 ## isManualIsoSupported
 
 ```TypeScript
@@ -105,14 +79,14 @@ Checks whether manual ISO setting is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of manual ISO setting. true if supported, false  otherwise. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for the support of manual ISO setting. **true** if supported, **false**otherwise. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not System Application. |
-| 7400103 | Session not config, only throw in session usage. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
 **Example**
 

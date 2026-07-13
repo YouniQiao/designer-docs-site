@@ -1,8 +1,8 @@
 # SignificantMotionResponse
 
-Describes the significant motion sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).
+Describes the significant motion sensor data. It extends from [Response](arkts-sensorservice-response-i.md).
 
-**Inheritance/Implementation:** SignificantMotionResponse extends [Response](arkts-sensorservice-response-i.md#response)
+**Inheritance/Implementation:** SignificantMotionResponse extends [Response](arkts-sensorservice-response-i.md)
 
 **Since:** 8
 
@@ -11,7 +11,7 @@ Describes the significant motion sensor data. It extends from [Response](arkts-s
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## scalar
@@ -20,7 +20,8 @@ import { sensor } from '@ohos.sensor';
 scalar: number
 ```
 
-Intensity of a motion. This parameter specifies whether a device has a significant motion on three physical axes (X, Y, and Z). The value **1** is reported when the device has a significant motion.
+Intensity of a motion. This parameter specifies whether a device has a significant motion on three physical axes
+(X, Y, and Z). The value **1** is reported when the device has a significant motion.
 
 **Type:** number
 

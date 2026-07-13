@@ -14,7 +14,8 @@ Enumerates the ExtensionAbility flags, which indicate the type of ExtensionAbili
 GET_EXTENSION_ABILITY_INFO_DEFAULT = 0x00000000
 ```
 
-Used to obtain the default ExtensionAbility information. The obtained information does not contain the permission , metadata, or disabled ExtensionAbility information.
+Used to obtain the default ExtensionAbility information. The obtained information does not contain the permission
+, metadata, or disabled ExtensionAbility information.
 
 **Since:** 9
 

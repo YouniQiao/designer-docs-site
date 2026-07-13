@@ -4,7 +4,8 @@
 export type LoopObserver = _LoopObserver
 ```
 
-Defines the LoopObserver module. It can be used as a parameter of **errormanager.on** to listen for and handle main thread timeout events in the current application.
+Defines the LoopObserver module. It can be used as a parameter of **errormanager.on** to listen for and handle main
+thread timeout events in the current application.
 
 **Since:** 12
 

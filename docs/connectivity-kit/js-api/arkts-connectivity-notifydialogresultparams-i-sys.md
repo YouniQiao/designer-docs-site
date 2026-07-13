@@ -11,7 +11,7 @@ Describes the result of bluetooth dialog.
 ## Modules to Import
 
 ```TypeScript
-import { access } from '@ohos.bluetooth.access';
+import { access } from '@kit.ConnectivityKit';
 ```
 
 ## dialogResult
@@ -20,7 +20,8 @@ import { access } from '@ohos.bluetooth.access';
 dialogResult: boolean
 ```
 
-The result of bluetooth dialog. The value true indicates that the user approves the request, and the value false indicates that the user rejects the request.
+The result of bluetooth dialog. The value true indicates that the user approves the request,
+and the value false indicates that the user rejects the request.
 
 **Type:** boolean
 

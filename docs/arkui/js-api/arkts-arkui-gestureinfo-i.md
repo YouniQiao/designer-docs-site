@@ -12,7 +12,10 @@ Defines the gesture information type.
 isSystemGesture: boolean
 ```
 
-Whether the gesture is a system/component gesture. **true** if the gesture is a system/component gesture, **false** otherwise. Default value: **false**
+Whether the gesture is a system/component gesture. **true** if the gesture is a system/component gesture, **false**
+otherwise.
+
+Default value: **false**
 
 **Type:** boolean
 
@@ -30,7 +33,11 @@ Whether the gesture is a system/component gesture. **true** if the gesture is a 
 tag?: string
 ```
 
-Gesture tag. **NOTE** Returns **undefined** if the gesture's **tag** attribute was not set.
+Gesture tag.
+
+**NOTE**
+
+Returns **undefined** if the gesture's **tag** attribute was not set.
 
 **Type:** string
 
@@ -48,7 +55,11 @@ Gesture tag. **NOTE** Returns **undefined** if the gesture's **tag** attribute w
 type: GestureControl.GestureType
 ```
 
-Gesture type. **NOTE** Returns **-1** for built-in gestures of unexposed types.
+Gesture type.
+
+**NOTE**
+
+Returns **-1** for built-in gestures of unexposed types.
 
 **Type:** GestureControl.GestureType
 

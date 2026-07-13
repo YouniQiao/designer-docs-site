@@ -1,6 +1,7 @@
 # AbstractProperty
 
-AbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中属性的引用。
+AbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/
+[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中属性的引用。
 
 **起始版本：** 12
 
@@ -12,7 +13,8 @@ AbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage
 get(): T
 ```
 
-读取[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的数据。
+读取[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/
+[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的数据。
 
 **起始版本：** 12
 
@@ -32,7 +34,8 @@ get(): T
 info(): string
 ```
 
-读取[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的属性名。
+读取[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/
+[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的属性名。
 
 **起始版本：** 12
 
@@ -52,7 +55,12 @@ info(): string
 set(newValue: T): void
 ```
 
-更新[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的数据，newValue必须是T类型，可以为null或undefined。 > **说明：** > 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
+更新[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/
+[LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中所引用属性的数据，newValue必须是T类型，可以为null或undefined。
+
+> **说明：**
+
+> 从API version 12开始，AppStorage/LocalStorage支持Map、Set、Date类型，支持null、undefined以及联合类型。
 
 **起始版本：** 12
 

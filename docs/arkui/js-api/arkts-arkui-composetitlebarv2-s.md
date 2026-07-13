@@ -1,6 +1,8 @@
 # ComposeTitleBarV2
 
-Declaration of the composable title bar. Composable title bar represents a common title bar that contains a title, subtitle (optional), and profile picture (optional). It can come with a Back button for switching between pages of different levels.
+Declaration of the composable title bar. Composable title bar represents a common title bar that contains a title,
+subtitle (optional), and profile picture (optional). It can come with a Back button for switching between pages of
+different levels.
 
 **Since:** 26.0.0
 
@@ -9,7 +11,7 @@ Declaration of the composable title bar. Composable title bar represents a commo
 ## Modules to Import
 
 ```TypeScript
-import { ComposeTitleBarV2MenuItemParams, ComposeTitleBarV2, ComposeTitleBarV2MenuItem } from '@ohos.arkui.advanced.ComposeTitleBarV2';
+import { ComposeTitleBarV2MenuItemParams, ComposeTitleBarV2, ComposeTitleBarV2MenuItem } from '@kit.ArkUI';
 ```
 
 ## item

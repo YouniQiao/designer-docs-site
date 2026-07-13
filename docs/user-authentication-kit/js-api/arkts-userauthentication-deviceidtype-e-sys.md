@@ -1,6 +1,7 @@
 # DeviceIdType (System API)
 
-Enumerates device ID types.
+Enumerates device ID types. They are used to define the device service identifier type. System-defined types and
+vendor-defined types are supported.
 
 **Since:** 23
 
@@ -14,7 +15,8 @@ Enumerates device ID types.
 UNIFIED_DEVICE_ID = 1
 ```
 
-Unified device ID.
+Unified device ID. It is a system-defined device service ID type, used for unified device identification
+across devices.
 
 **Since:** 23
 
@@ -30,7 +32,9 @@ Unified device ID.
 VENDOR_BEGIN = 10000
 ```
 
-Start value of the service ID defined by the vendor. The actual value must be greater than or equal to 10000 to avoid conflicts with the reserved values of the system.
+Start value of the vendor-defined device ID type. The vendor can extend device ID types based on this value.
+The actual value must be greater than or equal to 10000 to avoid conflicts with the reserved system values
+[1-9999].
 
 **Since:** 23
 

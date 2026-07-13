@@ -1,6 +1,7 @@
 # RenderFit
 
-Enumerates the modes in which the final state of the component's content is rendered during its width and height animation process.
+Enumerates the modes in which the final state of the component's content is rendered during its width and height
+animation process.
 
 **Since:** 10
 
@@ -174,7 +175,8 @@ The component's content stays at the final size and always aligned with the lowe
 RESIZE_FILL = 9
 ```
 
-The component's content is always resized to fill the component's content box, without considering its aspect ratio in the final state.
+The component's content is always resized to fill the component's content box, without considering its aspect ratio
+in the final state.
 
 **Since:** 10
 
@@ -192,7 +194,8 @@ The component's content is always resized to fill the component's content box, w
 RESIZE_CONTAIN = 10
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the component's content box. It is always aligned with the center of the component.
+While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the
+component's content box. It is always aligned with the center of the component.
 
 **Since:** 10
 
@@ -210,7 +213,10 @@ While maintaining its aspect ratio in the final state, the component's content i
 RESIZE_CONTAIN_TOP_LEFT = 11
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the component's content box. When there is remaining space in the width direction of the component, the content is left -aligned with the component. When there is remaining space in the height direction of the component, the content is top-aligned with the component.
+While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the
+component's content box. When there is remaining space in the width direction of the component, the content is left
+-aligned with the component. When there is remaining space in the height direction of the component, the content is
+top-aligned with the component.
 
 **Since:** 10
 
@@ -228,7 +234,10 @@ While maintaining its aspect ratio in the final state, the component's content i
 RESIZE_CONTAIN_BOTTOM_RIGHT = 12
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the component's content box. When there is remaining space in the width direction of the component, the content is right-aligned with the component. When there is remaining space in the height direction of the component, the content is bottom-aligned with the component.
+While maintaining its aspect ratio in the final state, the component's content is scaled to fit within the
+component's content box. When there is remaining space in the width direction of the component, the content is
+right-aligned with the component. When there is remaining space in the height direction of the component, the
+content is bottom-aligned with the component.
 
 **Since:** 10
 
@@ -246,7 +255,8 @@ While maintaining its aspect ratio in the final state, the component's content i
 RESIZE_COVER = 13
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's entire content box. It is always aligned with the center of the component, so that its middle part is displayed.
+While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's
+entire content box. It is always aligned with the center of the component, so that its middle part is displayed.
 
 **Since:** 10
 
@@ -264,7 +274,10 @@ While maintaining its aspect ratio in the final state, the component's content i
 RESIZE_COVER_TOP_LEFT = 14
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's entire content box. When there is remaining space in the width direction, the content is left-aligned with the component, so that its left part is displayed. When there is remaining space in the height direction, the content is top-aligned with the component, so that its top part is displayed.
+While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's
+entire content box. When there is remaining space in the width direction, the content is left-aligned with the
+component, so that its left part is displayed. When there is remaining space in the height direction, the content
+is top-aligned with the component, so that its top part is displayed.
 
 **Since:** 10
 
@@ -282,7 +295,10 @@ While maintaining its aspect ratio in the final state, the component's content i
 RESIZE_COVER_BOTTOM_RIGHT = 15
 ```
 
-While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's entire content box. When there is remaining space in the width direction, the content is right-aligned with the component, so that its right part is displayed. When there is remaining space in the height direction, the content is bottom-aligned with the component, so that its bottom part is displayed.
+While maintaining its aspect ratio in the final state, the component's content is scaled to cover the component's
+entire content box. When there is remaining space in the width direction, the content is right-aligned with the
+component, so that its right part is displayed. When there is remaining space in the height direction, the content
+is bottom-aligned with the component, so that its bottom part is displayed.
 
 **Since:** 10
 

@@ -1,6 +1,6 @@
 # PermissionStatusInfo (System API)
 
-Permission status information.
+Indicates the permission status.
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Permission status information.
 ## Modules to Import
 
 ```TypeScript
-import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## grantFlags
@@ -20,7 +20,22 @@ import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAcce
 grantFlags: number
 ```
 
-Permission grant flag.
+Permission flags. The value range is as follows:
+- 0: The permission is not set by the user.
+- 1: The permission is set by the user. If the permission is not granted, a permission dialog box can be
+displayed again to request authorization.
+- 2: The permission is set by the user. If the permission is not granted, a permission dialog box cannot be
+displayed again to request authorization. The user needs to grant the permission in system settings.
+- 4: The permission is set by the system.
+- 8: The permission is pre-granted by the system and can be revoked.
+- 16: The permission is set by a security control.
+- 32: The permission is fixed by a security policy. The user cannot grant or revoke it.
+- 64: The permission is allowed only when the app is in the foreground during the current lifecycle.
+- 128: The permission is fixed by an administrator policy. The user cannot grant or revoke it, but the
+administrator can unfix it.
+- 256: The permission is unfixed by an administrator policy. The user can grant or revoke it.
+- 512: The permission is restricted by a user policy.
+The value should be an integer.
 
 **Type:** number
 
@@ -38,7 +53,7 @@ Permission grant flag.
 grantStatus: GrantStatus
 ```
 
-Permission grant status.
+Permission authorization status.
 
 **Type:** GrantStatus
 
@@ -56,7 +71,9 @@ Permission grant status.
 grantTimestamp?: number
 ```
 
-Timestamp(in milliseconds) of the last permission grant status change.
+Timestamp of the authorization status change. This is an optional field and is returned when the
+permission status changes.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -92,7 +109,8 @@ Permission name.
 tokenID: number
 ```
 
-Token ID of the application.
+Application ID.
+The value should be an integer.
 
 **Type:** number
 

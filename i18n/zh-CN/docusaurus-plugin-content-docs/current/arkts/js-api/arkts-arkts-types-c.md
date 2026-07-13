@@ -320,7 +320,11 @@ console.info("result = " + result);
 isBooleanObject(value: Object): boolean
 ```
 
-判断入参是否为 Boolean 类型。 > **NOTE** > > 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
+判断入参是否为 Boolean 类型。
+
+> **NOTE**
+>
+> 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -358,7 +362,11 @@ console.info("result = " + result);
 isBoxedPrimitive(value: Object): boolean
 ```
 
-判断入参是否为 Boolean、Number、String 或 Symbol 类型。 > **NOTE** > > 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
+判断入参是否为 Boolean、Number、String 或 Symbol 类型。
+
+> **NOTE**
+>
+> 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -519,7 +527,7 @@ static napi_value Init(napi_env env, napi_value exports)
 }
 EXTERN_C_END
 // 此处已省略模块注册的代码, 你可能需要自行注册Testexternal方法
-...
+// ...
 
 
 ```
@@ -991,7 +999,11 @@ console.info("result = " + result);
 isNumberObject(value: Object): boolean
 ```
 
-判断入参是否为 Number 类型。 > **NOTE** > > 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
+判断入参是否为 Number 类型。
+
+> **NOTE**
+>
+> 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -1251,7 +1263,11 @@ console.info("result = " + result);
 isStringObject(value: Object): boolean
 ```
 
-判断入参是否为字符串对象。 > **NOTE** > > 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
+判断入参是否为字符串对象。
+
+> **NOTE**
+>
+> 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -1289,7 +1305,11 @@ console.info("result = " + result);
 isSymbolObject(value: Object): boolean
 ```
 
-判断入参是否为 symbol 对象。 > **NOTE** > > 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
+判断入参是否为 symbol 对象。
+
+> **NOTE**
+>
+> 本接口从 API version 8 起支持，从 API version 14 起废弃。无替代接口。
 
 **起始版本：** 8
 

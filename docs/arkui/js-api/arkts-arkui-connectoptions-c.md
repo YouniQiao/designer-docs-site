@@ -9,7 +9,7 @@ Defines the parameter type for **globalConnect**.
 ## Modules to Import
 
 ```TypeScript
-import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@ohos.arkui.StateManagement';
+import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
 ## areaMode
@@ -18,7 +18,10 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 areaMode?: contextConstant.AreaMode
 ```
 
-Encryption level, ranging from EL1 to EL5 (corresponding to the value from 0 to 4). For details, see [Encryption Levels](../../../../application-models/application-context-stage.md#obtaining-and-modifying-encryption-levels). If no value is passed in, EL2 is used by default. Storage paths vary based on the encryption levels. If the input value of encryption level is not in the range of **0** to **4**, a crash occurs.
+Encryption level, ranging from EL1 to EL5 (corresponding to the value from 0 to 4). For details, see
+[Encryption Levels](../../../../application-models/application-context-stage.md#obtaining-and-modifying-encryption-levels).
+If no value is passed in, EL2 is used by default. Storage paths vary based on the encryption levels. If the input
+value of encryption level is not in the range of **0** to **4**, a crash occurs.
 
 **Type:** contextConstant.AreaMode
 
@@ -36,7 +39,8 @@ Encryption level, ranging from EL1 to EL5 (corresponding to the value from 0 to 
 defaultCreator?: StorageDefaultCreator<T>
 ```
 
-Default constructor. You are advised to pass this parameter. If **globalConnect** is connected to the key for the first time, an error is reported if this parameter is not passed in.
+Default constructor. You are advised to pass this parameter. If **globalConnect** is connected to the key for the
+first time, an error is reported if this parameter is not passed in.
 
 **Type:** StorageDefaultCreator<T>
 

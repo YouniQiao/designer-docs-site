@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## removeGrantedPublicCertificate
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function removeGrantedPublicCertificate(keyUri: string, clientAppUid: number) : Promise<void>
 ```
 
-Removes the permission for an application to use the public credentials of a user. This API is called only by the certificate management application. This API uses a promise to return the result.
+Removes the permission for an application to use the public credentials of a user. This API is called only by the
+certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

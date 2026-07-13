@@ -1,8 +1,10 @@
 # SuffixImageIconOptions
 
-Defines the configuration options for suffix icons. Inherits from [IconOptions](arkts-arkui-iconoptions-i.md#iconoptions).
+Defines the configuration options for suffix icons.
 
-**Inheritance/Implementation:** SuffixImageIconOptions extends [IconOptions](arkts-arkui-iconoptions-i.md#iconoptions)
+Inherits from [IconOptions](arkts-arkui-iconoptions-i.md).
+
+**Inheritance/Implementation:** SuffixImageIconOptions extends [IconOptions](arkts-arkui-iconoptions-i.md)
 
 **Since:** 14
 
@@ -11,7 +13,7 @@ Defines the configuration options for suffix icons. Inherits from [IconOptions](
 ## Modules to Import
 
 ```TypeScript
-import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@ohos.arkui.advanced.ChipGroup';
+import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@kit.ArkUI';
 ```
 
 ## accessibilityDescription
@@ -20,7 +22,14 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 accessibilityDescription?: ResourceStr
 ```
 
-Accessible description of the suffix icon. You can provide comprehensive text explanations to help users understand the operation they are about to perform and its potential consequences, especially when these cannot be inferred from the component's attributes and accessibility text alone. If an icon contains both text information and the accessible description, the text is announced first and then the accessible description, when the icon is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessible description of the suffix icon. You can provide comprehensive text explanations to help users understand
+the operation they are about to perform and its potential consequences, especially when these cannot be inferred
+from the component's attributes and accessibility text alone. If an icon contains both text information and the
+accessible description, the text is announced first and then the accessible description, when the icon is selected.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -38,7 +47,21 @@ Accessible description of the suffix icon. You can provide comprehensive text ex
 accessibilityLevel?: string
 ```
 
-Accessibility level of the suffix icon. It determines whether the icon can be recognized by accessibility services. The options are as follows: **"auto"**: It is treated as "yes" when **action** is set for the icon and as "no" otherwise. **"yes"**: The icon can be recognized by accessibility services. **"no"**: The icon cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the icon nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
+Accessibility level of the suffix icon. It determines whether the icon can be recognized by accessibility services.
+
+The options are as follows:
+
+**"auto"**: It is treated as "yes" when **action** is set for the icon and as "no" otherwise.
+
+**"yes"**: The icon can be recognized by accessibility services.
+
+**"no"**: The icon cannot be recognized by accessibility services.
+
+**"no-hide-descendants"**: Neither the icon nor its child components can be recognized by accessibility services.
+
+Default value: **"auto"**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -58,7 +81,15 @@ Accessibility level of the suffix icon. It determines whether the icon can be re
 accessibilityText?: ResourceStr
 ```
 
-Accessibility text, that is, accessibility label name, of the suffix icon. If an icon does not contain text information, it will not be announced by the screen reader when selected. In this case, the screen reader user cannot know which icon is selected. To solve this problem, you can set accessibility text for icons without text information. When such an icon is selected, the screen reader announces the specified accessibility text, informing the user which icon is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessibility text, that is, accessibility label name, of the suffix icon. If an icon does not contain text
+information, it will not be announced by the screen reader when selected. In this case, the screen reader user
+cannot know which icon is selected. To solve this problem, you can set accessibility text for icons without text
+information. When such an icon is selected, the screen reader announces the specified accessibility text, informing
+the user which icon is selected.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -76,7 +107,9 @@ Accessibility text, that is, accessibility label name, of the suffix icon. If an
 action?: VoidCallback
 ```
 
-Action of the suffix icon. If the value is **undefined**, no suffix icon interaction event is triggered.
+Action of the suffix icon.
+
+If the value is **undefined**, no suffix icon interaction event is triggered.
 
 **Type:** VoidCallback
 

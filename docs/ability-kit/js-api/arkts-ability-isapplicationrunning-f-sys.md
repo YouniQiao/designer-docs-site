@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## isApplicationRunning
@@ -12,7 +12,8 @@ import { appManager } from '@ohos.app.ability.appManager';
 function isApplicationRunning(bundleName: string): Promise<boolean>
 ```
 
-Checks whether the application with the specified bundle name is running across all users. This API uses a promise to return the result.
+Checks whether the application with the specified bundle name is running across all users. This API uses a promise
+to return the result.
 
 **Since:** 11
 
@@ -66,7 +67,8 @@ appManager.isApplicationRunning(bundleName).then((data) => {
 function isApplicationRunning(bundleName: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the application with the specified bundle name is running across all users. This API uses an asynchronous callback to return the result.
+Checks whether the application with the specified bundle name is running across all users. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 

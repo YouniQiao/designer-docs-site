@@ -1,8 +1,12 @@
 # ECCPubKeySpec
 
-Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#asykeyspec) used to specify the parameters of the public key in the ECC algorithm. To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md) used to specify the parameters of the
+public key in the ECC algorithm.
 
-**Inheritance/Implementation:** ECCPubKeySpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#asykeyspec)
+To generate a key based on key parameters, pass it to
+[createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.
+
+**Inheritance/Implementation:** ECCPubKeySpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md)
 
 **Since:** 10
 
@@ -13,7 +17,7 @@ Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#a
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## params

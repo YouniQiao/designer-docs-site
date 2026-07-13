@@ -11,7 +11,7 @@ Device attest result information.
 ## Modules to Import
 
 ```TypeScript
-import { deviceAttest } from '@ohos.deviceAttest';
+import { deviceAttest } from '@kit.BasicServicesKit';
 ```
 
 ## authResult
@@ -52,7 +52,8 @@ Result of the device software information authentication.
 softwareResultDetail: Array<number>
 ```
 
-Software result detail array that includes versionId, patchLevel, rootHash and a reserved space.
+Software result detail array that includes versionId, patchLevel,
+rootHash and a reserved space.
 
 **Type:** Array<number>
 

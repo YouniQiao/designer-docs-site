@@ -1,8 +1,10 @@
 # ExifMetadata
 
-ExifMetadata implements Metadata Exif（Exchangeable image file format）元数据。
+ExifMetadata implements Metadata
 
-**Inheritance:** ExifMetadataimplements: Metadata.
+Exchangeable Image File Format (Exif) metadata.
+
+**Inheritance/Implementation:** ExifMetadata implements [Metadata](arkts-image-metadata-i.md)
 
 **Since:** 23
 
@@ -20,11 +22,11 @@ import { image } from '@kit.ImageKit';
 clone(): Promise<ExifMetadata>
 ```
 
-对Exif元数据进行克隆。使用Promise异步回调。
+Clones the Exif metadata. This API returns the result asynchronously through a promise.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -32,7 +34,7 @@ clone(): Promise<ExifMetadata>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ExifMetadata> | Promise对象，成功返回Exif元数据实例。 |
+| Promise&lt;ExifMetadata&gt; | Promise used to return the Exif metadata instance if the operation issuccessful. |
 
 ## createInstance
 
@@ -40,11 +42,11 @@ clone(): Promise<ExifMetadata>
 static createInstance(): ExifMetadata
 ```
 
-创建一个空的[ExifMetadata]image.ExifMetadata实例。
+Creates an empty [ExifMetadata](arkts-image-exifmetadata-c.md) instance.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -52,7 +54,7 @@ static createInstance(): ExifMetadata
 
 | Type | Description |
 | --- | --- |
-| ExifMetadata | 返回ExifMetadata的空实例。 |
+| ExifMetadata | Empty **ExifMetadata** instance. |
 
 ## getAllProperties
 
@@ -60,11 +62,12 @@ static createInstance(): ExifMetadata
 getAllProperties(): Promise<Record<string, string | null>>
 ```
 
-获取图片中所有元数据的属性和值。使用Promise异步回调。
+Obtains all properties and their values from the image metadata. This API returns the result asynchronously
+through a promise.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -72,7 +75,7 @@ getAllProperties(): Promise<Record<string, string | null>>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据拥有的所有属性的值。 |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
 
 ## getBlob
 
@@ -80,11 +83,11 @@ getAllProperties(): Promise<Record<string, string | null>>
 getBlob(): Promise<ArrayBuffer>
 ```
 
-以二进制数据的形式获取元数据。使用Promise异步回调。
+Obtains the metadata in binary format. This API uses a promise to return the result.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -92,7 +95,7 @@ getBlob(): Promise<ArrayBuffer>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回元数据的二进制数据。 |
+| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
 
 ## getProperties
 
@@ -100,11 +103,13 @@ getBlob(): Promise<ArrayBuffer>
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-获取图像的元数据属性值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey]image.PropertyKey。
+Obtains the property values from image metadata. This API returns the result asynchronously through a promise.
+
+For details about the properties, see [PropertyKey](arkts-image-propertykey-e.md).
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -112,19 +117,19 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | Array&lt;string> | Yes | 要获取的值的属性名称。 |
+| key | Array&lt;string&gt; | Yes | Names of the properties to query. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回获取到的图像元数据属性值。 |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the obtained image metadata propertyvalues. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type. |
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type. |
 
 ## setBlob
 
@@ -132,11 +137,11 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 setBlob(blob: ArrayBuffer): Promise<void>
 ```
 
-使用二进制数据替换当前元数据。使用Promise异步回调。
+Replaces the current metadata with binary data. This API uses a promise to return the result.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -144,19 +149,19 @@ setBlob(blob: ArrayBuffer): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | ArrayBuffer | Yes | 要替换的二进制数据。 |
+| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600206 | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
+| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
 ## setProperties
 
@@ -164,11 +169,14 @@ setBlob(blob: ArrayBuffer): Promise<void>
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey]image.PropertyKey。
+Sets the values of specified properties in image metadata in batches. This API returns the result asynchronously
+through a promise.
+
+For details about the properties, see [PropertyKey](arkts-image-propertykey-e.md).
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -176,721 +184,33 @@ setProperties(records: Record<string, string | null>): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | Record&lt;string, string \| null> | Yes | 用户要修改的ExifMetadata对象的属性和键值对的集合。 |
+| records | Record&lt;string, string \| null&gt; | Yes | Set of key-value pairs representing properties andcorresponding values of the **ExifMetadata** object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type. |
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type. |
 
-## gpsLongitudeRef
+## apertureValue
 
 ```TypeScript
-gpsLongitudeRef?: string
+apertureValue?: number
 ```
 
-GPS经度参考。例如，E表示东经，W表示西经。
+Lens aperture. The unit is APEX.
 
-**Type:** string
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsLongitude
-
-```TypeScript
-gpsLongitude?: double[]
-```
-
-GPS经度。 经度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。 当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100，0/1。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## copyright
-
-```TypeScript
-copyright?: string
-```
-
-图像的版权信息。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## spectralSensitivity
-
-```TypeScript
-spectralSensitivity?: string
-```
-
-指示相机每个通道的光谱灵敏度。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## software
-
-```TypeScript
-software?: string
-```
-
-用于生成图像的软件名称和版本。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## whiteBalance
-
-```TypeScript
-whiteBalance?: int
-```
-
-白平衡。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## yCbCrCoefficients
-
-```TypeScript
-yCbCrCoefficients?: double[]
-```
-
-用于将RGB图像数据转换为YCbCr图像数据的变换矩阵系数。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lensSpecification
-
-```TypeScript
-lensSpecification?: double[]
-```
-
-所用镜头的规格。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## deviceSettingDescription
-
-```TypeScript
-deviceSettingDescription?: ArrayBuffer
-```
-
-特定相机型号的拍照条件信息。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lensMake
-
-```TypeScript
-lensMake?: string
-```
-
-镜头的制造商。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## compositeImage
-
-```TypeScript
-compositeImage?: int
-```
-
-指示图像是否为合成图像。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneCaptureType
-
-```TypeScript
-sceneCaptureType?: int
-```
-
-拍摄的场景类型。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsImgDirection
-
-```TypeScript
-gpsImgDirection?: double
-```
-
-拍摄时图像的方向。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subjectDistance
-
-```TypeScript
-subjectDistance?: double
-```
-
-拍照设备到被摄体的距离。单位为米（m）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestLatitudeRef
-
-```TypeScript
-gpsDestLatitudeRef?: string
-```
-
-指示目标点的纬度参考。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## offsetTimeOriginal
-
-```TypeScript
-offsetTimeOriginal?: string
-```
-
-设备的地理时区位置。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## imageDescription
-
-```TypeScript
-imageDescription?: string
-```
-
-图像描述。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDop
-
-```TypeScript
-gpsDop?: double
-```
-
-GPS数据精度DOP精度衰减因子（Dilution of Precision）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## model
-
-```TypeScript
-model?: string
-```
-
-相机型号。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sharpness
-
-```TypeScript
-sharpness?: int
-```
-
-相机应用的边缘增强处理方式。例如：弱锐化、标准锐化等。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsSpeedRef
-
-```TypeScript
-gpsSpeedRef?: string
-```
-
-GPS接收器移动速度的单位。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## makerNote
-
-```TypeScript
-makerNote?: ArrayBuffer
-```
-
-Exif/相机文件系统设计规则DCF（Design rule for Camera File system）写入器制造商记录所需信息的标签。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestDistance
-
-```TypeScript
-gpsDestDistance?: double
-```
-
-到目的地的距离。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## offsetTime
-
-```TypeScript
-offsetTime?: string
-```
-
-作为DateTime标签的补充元数据，解决因地理时区变化导致的时间戳歧义问题。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## planarConfiguration
-
-```TypeScript
-planarConfiguration?: int
-```
-
-指示像素分量是以块状或平面格式记录。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## customRendered
-
-```TypeScript
-customRendered?: int
-```
-
-表示对图像数据的特殊处理，如HDR合成、AI场景增强。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## flashEnergy
-
-```TypeScript
-flashEnergy?: double
-```
-
-图像捕获时的闪光灯能量。单位为光束烛光秒（BCPS，Beam Candlepower Seconds）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## standardOutputSensitivity
-
-```TypeScript
-standardOutputSensitivity?: int
-```
-
-标准输出灵敏度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## primaryChromaticities
-
-```TypeScript
-primaryChromaticities?: double[]
-```
-
-图像原色的色度。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## samplesPerPixel
-
-```TypeScript
-samplesPerPixel?: int
-```
-
-记录每个像素的颜色分量数量，适用于RGB（红绿蓝，Red Green Blue）和YCbCr（亮度-蓝色色差-红色色差，Luma-Chrominance）色彩模型。 由于这两种模型都是三分量模型（一个亮度分量加两个色度分量，或三个颜色通道），因此该标签的标准值为3。 对于JPEG压缩图像，此标签将会被对应的JPEG标记替换。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lightSource
-
-```TypeScript
-lightSource?: int
-```
-
-光源。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dateTimeOriginal
-
-```TypeScript
-dateTimeOriginal?: string
-```
-
-生成原始图像数据的日期和时间。 对于DSC（Digital Still Camera 数码静态相机），会记录拍摄照片的日期和时间。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sensitivityType
-
-```TypeScript
-sensitivityType?: int
-```
-
-灵敏度类型。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exifVersion
-
-```TypeScript
-exifVersion?: string
-```
-
-支持的Exif标准的版本。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## fNumber
-
-```TypeScript
-fNumber?: double
-```
-
-光圈值，如f/1.8。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## contrast
-
-```TypeScript
-contrast?: int
-```
-
-相机应用的对比度优化策略。例如：标准处理、弱化对比度等。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exposureProgram
-
-```TypeScript
-exposureProgram?: int
-```
-
-相机在拍摄照片时用于设置曝光的程序类。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sourceImageNumberOfCompositeImage
-
-```TypeScript
-sourceImageNumberOfCompositeImage?: int[]
-```
-
-用于合成图像的源图像数量。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsImgDirectionRef
-
-```TypeScript
-gpsImgDirectionRef?: string
-```
-
-图像方向的参考。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## compression
-
-```TypeScript
-compression?: int
-```
-
-用于图像压缩的算法标准。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## flash
-
-```TypeScript
-flash?: int
-```
-
-闪光。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exposureBiasValue
-
-```TypeScript
-exposureBiasValue?: double
-```
-
-曝光偏差值。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dateTime
-
-```TypeScript
-dateTime?: string
-```
-
-图像创建的日期和时间。 在本标准中，指文件更改的日期和时间。格式为：“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。例如：“2025:12:15 18:44:59”。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gainControl
-
-```TypeScript
-gainControl?: int
-```
-
-整体图像增益调整程度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -900,45 +220,29 @@ gainControl?: int
 artist?: string
 ```
 
-创建图像的人的姓名。
+Name of the person who creates the image.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## subsecTimeOriginal
+## bitsPerSample
 
 ```TypeScript
-subsecTimeOriginal?: string
+bitsPerSample?: number[]
 ```
 
-记录DateTimeOriginal标记的秒数。
+Number of bits for each pixel component. For example, RGB has 3 components with a format of 8,8,8.
 
-**Type:** string
+**Type:** number[]
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## photometricInterpretation
-
-```TypeScript
-photometricInterpretation?: int
-```
-
-像素组成，如RGB（红绿蓝，Red Green Blue）和YCbCr（亮度-蓝色色差-红色色差，Luma-Chrominance）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -948,1197 +252,29 @@ photometricInterpretation?: int
 bodySerialNumber?: string
 ```
 
-相机机身的序列号。
+Serial number of the camera body.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsAltitude
-
-```TypeScript
-gpsAltitude?: double
-```
-
-基于GPSAltitudeRef中的参考高度。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dateTimeDigitized
-
-```TypeScript
-dateTimeDigitized?: string
-```
-
-将图像作为数字数据存储的日期和时间。 例如，如果DSC捕获了图像，并同时记录了文件，则DateTimeOriginal和DateTimeDigitized将具有相同的内容。格式为“YYYY:MM:DD HH:MM:SS”，时间以24小时格式显示。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## transferFunction
-
-```TypeScript
-transferFunction?: string
-```
-
-图像的传递函数，通常用于颜色校正。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## colorSpace
-
-```TypeScript
-colorSpace?: int
-```
-
-颜色空间信息标签，通常记录为颜色空间说明符。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## spatialFrequencyResponse
-
-```TypeScript
-spatialFrequencyResponse?: ArrayBuffer
-```
-
-相机或输入设备空间频率表。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## bitsPerSample
-
-```TypeScript
-bitsPerSample?: int[]
-```
-
-像素各分量的位数。如RGB是3分量，格式是8，8，8。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDateStamp
-
-```TypeScript
-gpsDateStamp?: string
-```
-
-GPS日期戳。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## focalPlaneXResolution
-
-```TypeScript
-focalPlaneXResolution?: double
-```
-
-传感器物理平面X轴方向上每单位物理长度的像素数量。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## brightnessValue
 
 ```TypeScript
-brightnessValue?: double
+brightnessValue?: number
 ```
 
-图像的亮度值。单位为APEX。
+Image brightness. The unit is APEX.
 
-**Type:** double
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## cfaPattern
-
-```TypeScript
-cfaPattern?: ArrayBuffer
-```
-
-图像传感器的滤色器阵列CFA（Color Filter Array）几何图案。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rowsPerStrip
-
-```TypeScript
-rowsPerStrip?: int
-```
-
-每条图像数据的行数。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsLatitudeRef
-
-```TypeScript
-gpsLatitudeRef?: string
-```
-
-GPS纬度参考。例如，N表示北纬，S表示南纬。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## jpegInterchangeFormat
-
-```TypeScript
-jpegInterchangeFormat?: int
-```
-
-JPEG交换格式比特流的SOI（Start of Image）标记。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestBearingRef
-
-```TypeScript
-gpsDestBearingRef?: string
-```
-
-指向目的地的方位参考。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestLatitude
-
-```TypeScript
-gpsDestLatitude?: double[]
-```
-
-目的地的纬度。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subsecTimeDigitized
-
-```TypeScript
-subsecTimeDigitized?: string
-```
-
-记录DateTimeDigitized标记的秒数。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsTrackRef
-
-```TypeScript
-gpsTrackRef?: string
-```
-
-提供GPS接收机运动方向的参考。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subjectDistanceRange
-
-```TypeScript
-subjectDistanceRange?: int
-```
-
-指示到对象的距离范围。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## focalLengthIn35mmFilm
-
-```TypeScript
-focalLengthIn35mmFilm?: int
-```
-
-换算成35mm等效焦距。单位为毫米（mm）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## maxApertureValue
-
-```TypeScript
-maxApertureValue?: double
-```
-
-镜头的最小光圈值。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## jpegInterchangeFormatLength
-
-```TypeScript
-jpegInterchangeFormatLength?: int
-```
-
-JPEG流的字节数。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## flashpixVersion
-
-```TypeScript
-flashpixVersion?: string
-```
-
-FPXR（FlashPix Extension Resource）支持的FlashPix格式版本，用于增强设备兼容性。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsVersionID
-
-```TypeScript
-gpsVersionID?: int[]
-```
-
-GPS信息的格式版本标识符。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subjectLocation
-
-```TypeScript
-subjectLocation?: int[]
-```
-
-图像中主体的像素坐标（基于左上角原点）。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## whitePoint
-
-```TypeScript
-whitePoint?: double[]
-```
-
-图像白点的色度。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lensSerialNumber
-
-```TypeScript
-lensSerialNumber?: string
-```
-
-镜头的序列号。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sensingMethod
-
-```TypeScript
-sensingMethod?: int
-```
-
-摄像头的图像传感器类型。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestLongitude
-
-```TypeScript
-gpsDestLongitude?: double[]
-```
-
-目的地的经度。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## offsetTimeDigitized
-
-```TypeScript
-offsetTimeDigitized?: string
-```
-
-记录图像数字化时的UTC协调世界时（Coordinated Universal Time）偏移，有助于精确调整时间戳。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gamma
-
-```TypeScript
-gamma?: double
-```
-
-每个组件的伽玛值。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## compressedBitsPerPixel
-
-```TypeScript
-compressedBitsPerPixel?: double
-```
-
-图像压缩方案。单位为每像素比特。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## photoMode
-
-```TypeScript
-photoMode?: int
-```
-
-照片模式。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## stripByteCounts
-
-```TypeScript
-stripByteCounts?: int[]
-```
-
-压缩后每个条带中的字节数。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## photographicSensitivity
-
-```TypeScript
-photographicSensitivity?: int[]
-```
-
-拍摄图像时相机或输入设备的灵敏度。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## oecf
-
-```TypeScript
-oecf?: ArrayBuffer
-```
-
-ISO 14524中规定的光电转换函数（OECF）。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## isoSpeedRatings
-
-```TypeScript
-isoSpeedRatings?: int
-```
-
-ISO 12232中指定的相机或输入设备的ISO速度和ISO纬度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## digitalZoomRatio
-
-```TypeScript
-digitalZoomRatio?: double
-```
-
-拍摄时的数字变焦比。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## yResolution
-
-```TypeScript
-yResolution?: double
-```
-
-高度方向上的图像分辨率。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## saturation
-
-```TypeScript
-saturation?: int
-```
-
-相机应用的色彩饱和度调节策略。例如：标准、降饱和模式等。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsAreaInformation
-
-```TypeScript
-gpsAreaInformation?: string
-```
-
-GPS区域名称的字符串。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## resolutionUnit
-
-```TypeScript
-resolutionUnit?: int
-```
-
-用于测量宽度方向上的图像分辨率和高度方向上的图像分辨率的单位。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exposureIndex
-
-```TypeScript
-exposureIndex?: double
-```
-
-拍摄时选定的曝光指数。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsStatus
-
-```TypeScript
-gpsStatus?: string
-```
-
-记录图像时GPS接收器的状态。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lensModel
-
-```TypeScript
-lensModel?: string
-```
-
-镜头的型号名称。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## isoSpeedLatitudezzz
-
-```TypeScript
-isoSpeedLatitudezzz?: int
-```
-
-表示相机传感器在过曝方向保护高光细节的能力边界。单位为EV。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## imageWidth
-
-```TypeScript
-imageWidth?: int
-```
-
-图像宽度。单位为像素（px）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsProcessingMethod
-
-```TypeScript
-gpsProcessingMethod?: string
-```
-
-记录定位方法的名称。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## meteringMode
-
-```TypeScript
-meteringMode?: int
-```
-
-测光模式。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## focalPlaneResolutionUnit
-
-```TypeScript
-focalPlaneResolutionUnit?: int
-```
-
-FocalPlaneXResolution和FocalPlaneYResolution的测量单位。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsTrack
-
-```TypeScript
-gpsTrack?: double
-```
-
-GPS接收器移动的方向。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## imageUniqueId
-
-```TypeScript
-imageUniqueId?: string
-```
-
-为每个图像分配的唯一标识符。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subsecTime
-
-```TypeScript
-subsecTime?: string
-```
-
-记录DateTime标记的秒分数的标记。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## shutterSpeedValue
-
-```TypeScript
-shutterSpeedValue?: double
-```
-
-快门速度，表示为摄影曝光相加系统值APEX（Additive System of Photographic Exposure）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## fileSource
-
-```TypeScript
-fileSource?: ArrayBuffer
-```
-
-指示图像源。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## pixelXDimension
-
-```TypeScript
-pixelXDimension?: int
-```
-
-图像在X轴上的（二维坐标系中的Horizontal Axis）尺寸。单位为像素（px）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sourceExposureTimesOfCompositeImage
-
-```TypeScript
-sourceExposureTimesOfCompositeImage?: ArrayBuffer
-```
-
-合成图像的源图像的曝光时间，例如1/33秒。
-
-**Type:** ArrayBuffer
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## stripOffsets
-
-```TypeScript
-stripOffsets?: int[]
-```
-
-图像数据的分块存储偏移量，单位为字节（Byte）。 为提高大图像访问效率，原始像素数据被分割为多个连续区块（称为条带）。 此标签按顺序存储每个条带在文件中的起始位置偏移量。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## yCbCrSubSampling
-
-```TypeScript
-yCbCrSubSampling?: int[]
-```
-
-色度分量与亮度分量的采样比。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## userComment
-
-```TypeScript
-userComment?: string
-```
-
-用户评论。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestDistanceRef
-
-```TypeScript
-gpsDestDistanceRef?: string
-```
-
-到目标点距离的测量单位。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## yCbCrPositioning
-
-```TypeScript
-yCbCrPositioning?: int
-```
-
-色度分量相对于亮度分量的位置。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## componentsConfiguration
-
-```TypeScript
-componentsConfiguration?: string
-```
-
-压缩数据的信息。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## pixelYDimension
-
-```TypeScript
-pixelYDimension?: int
-```
-
-图像在Y轴上的（二维坐标系中的Vertical Axis）尺寸。单位为像素（px）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsMeasureMode
-
-```TypeScript
-gpsMeasureMode?: string
-```
-
-GPS测量模式。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsDestBearing
-
-```TypeScript
-gpsDestBearing?: double
-```
-
-到达目的地的方位。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subfileType
-
-```TypeScript
-subfileType?: int
-```
-
-已弃用标签，表示该子文件中的数据类型。请使用newSubfileType替代。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## apertureValue
-
-```TypeScript
-apertureValue?: double
-```
-
-镜头光圈。单位为APEX。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exposureTime
-
-```TypeScript
-exposureTime?: double
-```
-
-曝光时间。单位为秒（s）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## imageLength
-
-```TypeScript
-imageLength?: int
-```
-
-图像长度。单位为像素（px）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsHPositioningError
-
-```TypeScript
-gpsHPositioningError?: double
-```
-
-水平定位误差。单位为米（m）。
-
-**Type:** double
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## recommendedExposureIndex
-
-```TypeScript
-recommendedExposureIndex?: int
-```
-
-推荐曝光指数。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## referenceBlackWhite
-
-```TypeScript
-referenceBlackWhite?: double[]
-```
-
-参考黑点值和白点值。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## relatedSoundFile
-
-```TypeScript
-relatedSoundFile?: string
-```
-
-与图像数据相关的音频文件的名称。
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gpsTimestamp
-
-```TypeScript
-gpsTimestamp?: double[]
-```
-
-GPS时间戳。
-
-**Type:** double[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2148,157 +284,720 @@ GPS时间戳。
 cameraOwnerName?: string
 ```
 
-相机所有者的姓名。
+Name of the camera owner.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsSatellites
+## cfaPattern
 
 ```TypeScript
-gpsSatellites?: string
+cfaPattern?: ArrayBuffer
 ```
 
-用于测量的GPS卫星。通常是它的伪随机噪声码（PRN）编号。
+Color filter array (CFA) geometric pattern of the image sensor.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## colorSpace
+
+```TypeScript
+colorSpace?: number
+```
+
+Color space information, which is usually recorded as a color space descriptor.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## componentsConfiguration
+
+```TypeScript
+componentsConfiguration?: string
+```
+
+Information about the compressed data.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsMapDatum
+## compositeImage
 
 ```TypeScript
-gpsMapDatum?: string
+compositeImage?: number
 ```
 
-GPS接收机使用的大地测量数据。
+Whether the image is a composite image.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## compressedBitsPerPixel
+
+```TypeScript
+compressedBitsPerPixel?: number
+```
+
+Image compression scheme. The unit is bit/pixel.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## compression
+
+```TypeScript
+compression?: number
+```
+
+Algorithm standard for image compression.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## contrast
+
+```TypeScript
+contrast?: number
+```
+
+Contrast optimization policy applied by the camera. For example, standard processing and contrast reduction.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## copyright
+
+```TypeScript
+copyright?: string
+```
+
+Copyright notice of the image.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## subjectArea
+## customRendered
 
 ```TypeScript
-subjectArea?: int[]
+customRendered?: number
 ```
 
-用于指示主要对象在整个场景中的位置和区域。
+Special processing of image data, such as HDR composition and AI scene enhancement.
+The value range is all integers.
 
-**Type:** int[]
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## make
+## dateTime
 
 ```TypeScript
-make?: string
+dateTime?: string
 ```
 
-拍摄设备的品牌制造商名称。
+Date and time when the image is created.
+In this standard, it refers to the file date and time. The value format is *YYYY:MM:DD HH:MM:SS* (24-hour clock).
+For example, 2025:12:15 18:44:59.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsLatitude
+## dateTimeDigitized
 
 ```TypeScript
-gpsLatitude?: double[]
+dateTimeDigitized?: string
 ```
 
-GPS纬度。 纬度用三个RATIONAL（分数形式存储的数值）值表示，分别是度、分和秒，格式为dd/1、mm/1、ss/1。 当使用度数和分钟时，分钟分数最多保留两位小数，格式为dd/1，mmmm/100,0/1。
+Date and time when the image is stored as digital data.
+For example, if a DSC captures an image and records the file at the same time, the values of **DateTimeOriginal**
+and **DateTimeDigitized** are the same. The value format is *YYYY:MM:DD HH:MM:SS* (24-hour clock).
 
-**Type:** double[]
+**Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## orientation
+## dateTimeOriginal
 
 ```TypeScript
-orientation?: Orientation
+dateTimeOriginal?: string
 ```
 
-图像方向。
+Date and time when the original image data is generated.
+For a digital still camera (DSC), the date and time when a photo is taken are recorded. The value format is *YYYY
+:MM:DD HH:MM:SS* (24-hour clock).
 
-**Type:** Orientation
+**Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## xResolution
+## deviceSettingDescription
 
 ```TypeScript
-xResolution?: double
+deviceSettingDescription?: ArrayBuffer
 ```
 
-宽度方向上的图像分辨率。
+Capture condition information of a specific camera model.
 
-**Type:** double
+**Type:** ArrayBuffer
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsSpeed
+## digitalZoomRatio
 
 ```TypeScript
-gpsSpeed?: double
+digitalZoomRatio?: number
 ```
 
-GPS接收器移动的速度。
+Digital zoom ratio used when the image is captured.
 
-**Type:** double
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsDifferential
+## exifVersion
 
 ```TypeScript
-gpsDifferential?: int
+exifVersion?: string
 ```
 
-是否对GPS数据应用了差分校正，这对精确定位精度至关重要。
+Version of the supported Exif standard.
 
-**Type:** int
+**Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exposureBiasValue
+
+```TypeScript
+exposureBiasValue?: number
+```
+
+Exposure bias.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exposureIndex
+
+```TypeScript
+exposureIndex?: number
+```
+
+Exposure index selected at the time the image is captured.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exposureMode
+
+```TypeScript
+exposureMode?: number
+```
+
+Exposure mode.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exposureProgram
+
+```TypeScript
+exposureProgram?: number
+```
+
+Class used for exposure setting when the camera captures a photo.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exposureTime
+
+```TypeScript
+exposureTime?: number
+```
+
+Exposure time.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## fNumber
+
+```TypeScript
+fNumber?: number
+```
+
+F number, for example, f/1.8.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## fileSource
+
+```TypeScript
+fileSource?: ArrayBuffer
+```
+
+Image source.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## flash
+
+```TypeScript
+flash?: number
+```
+
+Flash.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## flashEnergy
+
+```TypeScript
+flashEnergy?: number
+```
+
+Flash energy at the time the image is captured. The unit is beam candlepower seconds (BCPS).
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## flashpixVersion
+
+```TypeScript
+flashpixVersion?: string
+```
+
+FlashPix format version supported by the FlashPix Extension Resource (FPXR), which is used to enhance device
+compatibility.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## focalLength
+
+```TypeScript
+focalLength?: number
+```
+
+Focal length of the lens, in milliseconds.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## focalLengthIn35mmFilm
+
+```TypeScript
+focalLengthIn35mmFilm?: number
+```
+
+Focal length of the 35 mm film.
+The value should be an integer.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## focalPlaneResolutionUnit
+
+```TypeScript
+focalPlaneResolutionUnit?: number
+```
+
+Measurement unit of **FocalPlaneXResolution** and **FocalPlaneYResolution**.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## focalPlaneXResolution
+
+```TypeScript
+focalPlaneXResolution?: number
+```
+
+Number of pixels per unit physical length in the X-axis of the sensor's physical plane.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## focalPlaneYResolution
+
+```TypeScript
+focalPlaneYResolution?: number
+```
+
+Number of pixels per unit physical length in the Y-axis of the sensor's physical plane.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gainControl
+
+```TypeScript
+gainControl?: number
+```
+
+Degree of overall image gain adjustment.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gamma
+
+```TypeScript
+gamma?: number
+```
+
+Gamma value of each component.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsAltitude
+
+```TypeScript
+gpsAltitude?: number
+```
+
+GPS altitude based on **GPSAltitudeRef**.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsAltitudeRef
+
+```TypeScript
+gpsAltitudeRef?: number
+```
+
+GPS altitude reference.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsAreaInformation
+
+```TypeScript
+gpsAreaInformation?: string
+```
+
+String of the GPS area name.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDateStamp
+
+```TypeScript
+gpsDateStamp?: string
+```
+
+GPS date stamp.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestBearing
+
+```TypeScript
+gpsDestBearing?: number
+```
+
+Bearing to the destination.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestBearingRef
+
+```TypeScript
+gpsDestBearingRef?: string
+```
+
+Bearing reference to the destination.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestDistance
+
+```TypeScript
+gpsDestDistance?: number
+```
+
+Distance to the destination.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestDistanceRef
+
+```TypeScript
+gpsDestDistanceRef?: string
+```
+
+Unit used to express the distance to the destination.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestLatitude
+
+```TypeScript
+gpsDestLatitude?: number[]
+```
+
+Latitude of the destination.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestLatitudeRef
+
+```TypeScript
+gpsDestLatitudeRef?: string
+```
+
+Latitude reference of the destination.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDestLongitude
+
+```TypeScript
+gpsDestLongitude?: number[]
+```
+
+Longitude of the destination.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2308,29 +1007,1008 @@ gpsDifferential?: int
 gpsDestLongitudeRef?: string
 ```
 
-指示目标点的经度参考。
+Longitude reference of the destination.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDifferential
+
+```TypeScript
+gpsDifferential?: number
+```
+
+Whether differential correction has been applied to the GPS data, which is crucial for precise positioning
+accuracy.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsDop
+
+```TypeScript
+gpsDop?: number
+```
+
+Dilution of Precision (DOP) of the GPS data.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsHPositioningError
+
+```TypeScript
+gpsHPositioningError?: number
+```
+
+Horizontal positioning error, in meters.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsImgDirection
+
+```TypeScript
+gpsImgDirection?: number
+```
+
+Image orientation at the time of capture.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsImgDirectionRef
+
+```TypeScript
+gpsImgDirectionRef?: string
+```
+
+Reference of the image orientation.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsLatitude
+
+```TypeScript
+gpsLatitude?: number[]
+```
+
+GPS latitude.
+The latitude is represented by three RATIONAL values (numeric values stored in fractional form), corresponding to
+degrees, minutes, and seconds, in the **dd/1, mm/1, ss/1** format.
+When using degrees and minutes, the minutes are stored with up to two decimal places, in the
+**dd/1, mmmm/100, 0/1** format.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsLatitudeRef
+
+```TypeScript
+gpsLatitudeRef?: string
+```
+
+GPS latitude reference. For example, **N** indicates north latitude, and **S** indicates south latitude.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsLongitude
+
+```TypeScript
+gpsLongitude?: number[]
+```
+
+GPS longitude.
+The longitude is represented by three RATIONAL values (numeric values stored in fractional form), corresponding
+to degrees, minutes, and seconds, in the **dd/1, mm/1, ss/1** format.
+When using degrees and minutes, the minutes are stored with up to two decimal places, in the
+**dd/1, mmmm/100, 0/1** format.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsLongitudeRef
+
+```TypeScript
+gpsLongitudeRef?: string
+```
+
+GPS longitude reference. For example, **E** indicates east longitude, and **W** indicates west longitude.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsMapDatum
+
+```TypeScript
+gpsMapDatum?: string
+```
+
+Geodetic data used by the GPS receiver.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsMeasureMode
+
+```TypeScript
+gpsMeasureMode?: string
+```
+
+GPS measurement mode.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsProcessingMethod
+
+```TypeScript
+gpsProcessingMethod?: string
+```
+
+Name of the positioning method.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsSatellites
+
+```TypeScript
+gpsSatellites?: string
+```
+
+GPS satellite used for measurement. Generally, the value is the GPS satellite's pseudo-random noise (PRN) number.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsSpeed
+
+```TypeScript
+gpsSpeed?: number
+```
+
+Speed of the GPS receiver.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsSpeedRef
+
+```TypeScript
+gpsSpeedRef?: string
+```
+
+Speed unit of the GPS receiver.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsStatus
+
+```TypeScript
+gpsStatus?: string
+```
+
+Status of the GPS receiver when the image is recorded.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsTimestamp
+
+```TypeScript
+gpsTimestamp?: number[]
+```
+
+GPS timestamp.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsTrack
+
+```TypeScript
+gpsTrack?: number
+```
+
+Movement direction of the GPS receiver.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsTrackRef
+
+```TypeScript
+gpsTrackRef?: string
+```
+
+Reference for the GPS receiver movement direction.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gpsVersionID
+
+```TypeScript
+gpsVersionID?: number[]
+```
+
+GPS information format version identifier.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## imageDescription
+
+```TypeScript
+imageDescription?: string
+```
+
+Image description.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## imageLength
+
+```TypeScript
+imageLength?: number
+```
+
+Image length. The unit is px.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## imageUniqueId
+
+```TypeScript
+imageUniqueId?: string
+```
+
+Unique ID assigned to each image.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## imageWidth
+
+```TypeScript
+imageWidth?: number
+```
+
+Image width. The unit is px.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## isoSpeedLatitudeyyy
+
+```TypeScript
+isoSpeedLatitudeyyy?: number
+```
+
+Maximum dynamic range recordable by the camera sensor in a single exposure. The unit is EV.
+The value should be an integer.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## isoSpeedLatitudezzz
+
+```TypeScript
+isoSpeedLatitudezzz?: number
+```
+
+Highlight retention capacity of the camera sensor in overexposure. The unit is EV.
+The value should be an integer.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## isoSpeedRatings
+
+```TypeScript
+isoSpeedRatings?: number
+```
+
+ISO speed and latitude of the camera or input device, which are specified in ISO 12232.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## jpegInterchangeFormat
+
+```TypeScript
+jpegInterchangeFormat?: number
+```
+
+Start of Image (SOI) marker of the JPEG bitstream in interchange format.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## jpegInterchangeFormatLength
+
+```TypeScript
+jpegInterchangeFormatLength?: number
+```
+
+Number of bytes in the JPEG stream.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lensMake
+
+```TypeScript
+lensMake?: string
+```
+
+Manufacturer of the lens.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lensModel
+
+```TypeScript
+lensModel?: string
+```
+
+Model of the lens.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lensSerialNumber
+
+```TypeScript
+lensSerialNumber?: string
+```
+
+Serial number of the lens.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lensSpecification
+
+```TypeScript
+lensSpecification?: number[]
+```
+
+Specifications of the lens.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lightSource
+
+```TypeScript
+lightSource?: number
+```
+
+Light source.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## make
+
+```TypeScript
+make?: string
+```
+
+Manufacturer name of the capture device.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## makerNote
+
+```TypeScript
+makerNote?: ArrayBuffer
+```
+
+Information required by the Exif/Design rule for Camera File system (DCF) writer manufacturer.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## maxApertureValue
+
+```TypeScript
+maxApertureValue?: number
+```
+
+Minimum aperture value of the lens.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## meteringMode
+
+```TypeScript
+meteringMode?: number
+```
+
+Metering mode.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## model
+
+```TypeScript
+model?: string
+```
+
+Camera model.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## newSubfileType
 
 ```TypeScript
-newSubfileType?: int
+newSubfileType?: number
 ```
 
-表示该子文件的数据类型（例如文本/图像等基本类型，而非具体存储格式）。
+Data type of a subfile (for example, basic types such as text or image, rather than specific storage formats).
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## oecf
+
+```TypeScript
+oecf?: ArrayBuffer
+```
+
+Opto-Electric Conversion Function (OECF) specified in ISO 14524.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## offsetTime
+
+```TypeScript
+offsetTime?: string
+```
+
+Geographical time zone of the device.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## offsetTimeDigitized
+
+```TypeScript
+offsetTimeDigitized?: string
+```
+
+Coordinated Universal Time (UTC) offset at the time of image digitization, which helps to precisely adjust the
+timestamp.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## offsetTimeOriginal
+
+```TypeScript
+offsetTimeOriginal?: string
+```
+
+Geographical time zone of the device.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## orientation
+
+```TypeScript
+orientation?: Orientation
+```
+
+Image orientation.
+
+**Type:** Orientation
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## photoMode
+
+```TypeScript
+photoMode?: number
+```
+
+Image mode.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## photographicSensitivity
+
+```TypeScript
+photographicSensitivity?: number[]
+```
+
+Sensitivity of the camera or input device during image capture.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## photometricInterpretation
+
+```TypeScript
+photometricInterpretation?: number
+```
+
+Pixel composition, such as RGB (Red, Green, Blue) and YCbCr (Luma, Blue-difference Chroma, Red-difference Chroma)
+.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## pixelXDimension
+
+```TypeScript
+pixelXDimension?: number
+```
+
+Image size on the X axis (horizontal axis in a two-dimensional coordinate system).
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## pixelYDimension
+
+```TypeScript
+pixelYDimension?: number
+```
+
+Image size on the Y axis (vertical axis in a two-dimensional coordinate system).
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## planarConfiguration
+
+```TypeScript
+planarConfiguration?: number
+```
+
+Whether the pixel components are recorded in chunked or planar format.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## primaryChromaticities
+
+```TypeScript
+primaryChromaticities?: number[]
+```
+
+Chromaticity of the image primaries.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## recommendedExposureIndex
+
+```TypeScript
+recommendedExposureIndex?: number
+```
+
+GPS measurement mode.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## referenceBlackWhite
+
+```TypeScript
+referenceBlackWhite?: number[]
+```
+
+Reference black point value and white point value.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## relatedSoundFile
+
+```TypeScript
+relatedSoundFile?: string
+```
+
+Name of the audio file related to the image data.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## resolutionUnit
+
+```TypeScript
+resolutionUnit?: number
+```
+
+Unit of the image resolution in the width and height directions.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rowsPerStrip
+
+```TypeScript
+rowsPerStrip?: number
+```
+
+Number of rows per image strip.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## samplesPerPixel
+
+```TypeScript
+samplesPerPixel?: number
+```
+
+Number of color components per pixel, applicable to RGB and YCbCr color models.
+Since both the models are three-component models (three color channels, or one luminance component plus two
+chroma components), the standard value for this property is 3.
+For JPEG-compressed images, this property will be replaced by the corresponding JPEG marker.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## saturation
+
+```TypeScript
+saturation?: number
+```
+
+Color saturation adjustment policy applied by the camera. For example, standard processing and saturation
+reduction.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneCaptureType
+
+```TypeScript
+sceneCaptureType?: number
+```
+
+Type of the scene that is captured.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2340,93 +2018,488 @@ newSubfileType?: int
 sceneType?: ArrayBuffer
 ```
 
-场景类型。
+Scene type.
 
 **Type:** ArrayBuffer
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## gpsAltitudeRef
+## sensingMethod
 
 ```TypeScript
-gpsAltitudeRef?: int
+sensingMethod?: number
 ```
 
-用于GPS的参考高度。
+Type of the image sensor on the camera.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## focalPlaneYResolution
+## sensitivityType
 
 ```TypeScript
-focalPlaneYResolution?: double
+sensitivityType?: number
 ```
 
-传感器物理平面Y轴方向上每单位物理长度的像素数量。
+Sensitivity type.
+The value range is all integers.
 
-**Type:** double
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## isoSpeedLatitudeyyy
+## sharpness
 
 ```TypeScript
-isoSpeedLatitudeyyy?: int
+sharpness?: number
 ```
 
-表示相机传感器在单次曝光中可记录的最大动态范围。单位为EV。
+Edge enhancement processing method applied by the camera. For example, weak sharpening and standard sharpening.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## exposureMode
+## shutterSpeedValue
 
 ```TypeScript
-exposureMode?: int
+shutterSpeedValue?: number
 ```
 
-曝光模式。
+Shutter speed, expressed as an Additive System of Photographic Exposure (APEX) value.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## focalLength
+## software
 
 ```TypeScript
-focalLength?: double
+software?: string
 ```
 
-焦距。单位为毫米（mm）。
+Name and version number of the software used to create the image.
 
-**Type:** double
+**Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sourceExposureTimesOfCompositeImage
+
+```TypeScript
+sourceExposureTimesOfCompositeImage?: ArrayBuffer
+```
+
+Exposure time of source images for the composite image, for example, 1/33 s.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sourceImageNumberOfCompositeImage
+
+```TypeScript
+sourceImageNumberOfCompositeImage?: number[]
+```
+
+Number of source images of the composite image.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## spatialFrequencyResponse
+
+```TypeScript
+spatialFrequencyResponse?: ArrayBuffer
+```
+
+Spatial frequency table of the camera or input device.
+
+**Type:** ArrayBuffer
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## spectralSensitivity
+
+```TypeScript
+spectralSensitivity?: string
+```
+
+Spectral sensitivity of each channel of the camera.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## standardOutputSensitivity
+
+```TypeScript
+standardOutputSensitivity?: number
+```
+
+Standard output sensitivity.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## stripByteCounts
+
+```TypeScript
+stripByteCounts?: number[]
+```
+
+Number of bytes in each strip after compression.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## stripOffsets
+
+```TypeScript
+stripOffsets?: number[]
+```
+
+Strip storage offset of the image data, in bytes.
+To improve the efficiency of large image access, the original pixel data is divided into multiple contiguous
+blocks (called strips).
+This property stores the starting offset of each strip in the file sequentially.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subfileType
+
+```TypeScript
+subfileType?: number
+```
+
+Data type of a subfile. It has been deprecated. Use **newSubfileType** instead.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subjectArea
+
+```TypeScript
+subjectArea?: number[]
+```
+
+Location and area of the main object in the entire scene.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subjectDistance
+
+```TypeScript
+subjectDistance?: number
+```
+
+Distance from the capture device to the photographed object, in meters.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subjectDistanceRange
+
+```TypeScript
+subjectDistanceRange?: number
+```
+
+Distance range to the object.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subjectLocation
+
+```TypeScript
+subjectLocation?: number[]
+```
+
+Pixel coordinates of the primary object in the image (based on the origin in the upper left corner).
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subsecTime
+
+```TypeScript
+subsecTime?: string
+```
+
+Second fraction of **DateTime**.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subsecTimeDigitized
+
+```TypeScript
+subsecTimeDigitized?: string
+```
+
+Second of **DateTimeDigitized**.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subsecTimeOriginal
+
+```TypeScript
+subsecTimeOriginal?: string
+```
+
+Second of **DateTimeOriginal**.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## transferFunction
+
+```TypeScript
+transferFunction?: string
+```
+
+Transfer function for the image, which is usually used for color correction.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## userComment
+
+```TypeScript
+userComment?: string
+```
+
+User comments.
+
+**Type:** string
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## whiteBalance
+
+```TypeScript
+whiteBalance?: number
+```
+
+White balance.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## whitePoint
+
+```TypeScript
+whitePoint?: number[]
+```
+
+Chromaticity of the image white point.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## xResolution
+
+```TypeScript
+xResolution?: number
+```
+
+Image resolution in the width direction.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yCbCrCoefficients
+
+```TypeScript
+yCbCrCoefficients?: number[]
+```
+
+Transformation matrix coefficients for converting RGB image data to YCbCr image data.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yCbCrPositioning
+
+```TypeScript
+yCbCrPositioning?: number
+```
+
+Position of chroma components relative to the luminance component.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yCbCrSubSampling
+
+```TypeScript
+yCbCrSubSampling?: number[]
+```
+
+Sampling ratios of the chroma components and luminance component.
+
+**Type:** number[]
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yResolution
+
+```TypeScript
+yResolution?: number
+```
+
+Image resolution in the height direction.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -60,7 +60,10 @@ ERR_CONTROLLER_NOT_INITED = -3
 ERR_KEY_NOT_MATCH = -4
 ```
 
-No key value is matched. [setBlanklessLoadingWithKey](arkts-arkweb-webviewcontroller-c.md#setblanklessloadingwithkey-1) must be used with [getBlanklessInfoWithKey](arkts-arkweb-webviewcontroller-c.md#getblanklessinfowithkey-1) and their key values must be the same. Otherwise, this error code is returned.
+No key value is matched.
+[setBlanklessLoadingWithKey](arkts-arkweb-webviewcontroller-c.md#setblanklessloadingwithkey-1) must
+be used with [getBlanklessInfoWithKey](arkts-arkweb-webviewcontroller-c.md#getblanklessinfowithkey-1)
+and their key values must be the same. Otherwise, this error code is returned.
 
 **Since:** 20
 
@@ -72,7 +75,10 @@ No key value is matched. [setBlanklessLoadingWithKey](arkts-arkweb-webviewcontro
 ERR_SIGNIFICANT_CHANGE = -5
 ```
 
-The similarity is low, and the system determines that the scene change is too large. As a result, the [setBlanklessLoadingWithKey](arkts-arkweb-webviewcontroller-c.md#setblanklessloadingwithkey-1) API does not enable frame interpolation.
+The similarity is low, and the system determines that the scene change is too
+large. As a result, the
+[setBlanklessLoadingWithKey](arkts-arkweb-webviewcontroller-c.md#setblanklessloadingwithkey-1) API
+does not enable frame interpolation.
 
 **Since:** 20
 
@@ -84,7 +90,8 @@ The similarity is low, and the system determines that the scene change is too la
 ERR_DURATION_OUT_OF_RANGE = -6
 ```
 
-The frame interpolation duration set in [BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md#blanklessloadingparam) is out of range.
+The frame interpolation duration set in
+[BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md) is out of range.
 
 **Since:** 23
 
@@ -98,7 +105,8 @@ The frame interpolation duration set in [BlanklessLoadingParam](arkts-arkweb-bla
 ERR_EXPIRATION_TIME_OUT_OF_RANGE = -7
 ```
 
-The historical frame expiration time set in [BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md#blanklessloadingparam) is out of range.
+The historical frame expiration time set in
+[BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md) is out of range.
 
 **Since:** 23
 

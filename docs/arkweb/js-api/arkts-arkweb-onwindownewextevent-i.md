@@ -28,7 +28,8 @@ handler: ControllerHandler
 isAlert: boolean
 ```
 
-The value **true** indicates that a dialog box is requested to be created, and the value **false** indicates that a new tab page is requested to be created.
+The value **true** indicates that a dialog box is requested to be created, and the value **false** indicates that a
+new tab page is requested to be created.
 
 **Type:** boolean
 
@@ -44,7 +45,8 @@ The value **true** indicates that a dialog box is requested to be created, and t
 isUserTrigger: boolean
 ```
 
-Whether the creation is triggered by the user. The value **true** means that the creation is triggered by the user, and **false** means the opposite.
+Whether the creation is triggered by the user. The value **true** means that the creation is triggered by the user,
+and **false** means the opposite.
 
 **Type:** boolean
 

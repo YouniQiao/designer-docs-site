@@ -9,7 +9,7 @@ Defines the photo or video change data.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## assetAfterChange
@@ -46,7 +46,8 @@ Photo or video information before change.
 isContentChanged: boolean
 ```
 
-Whether the content of a photo or video changes. It is used to distinguish between attribute changes and content changes of a photo or video.
+Whether the content of a photo or video changes. It is used to distinguish between attribute changes
+and content changes of a photo or video.
 
 **Type:** boolean
 

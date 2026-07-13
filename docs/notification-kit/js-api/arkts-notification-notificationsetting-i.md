@@ -9,7 +9,7 @@ Describes the setting status of the notification mode switch.
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## badgeNumberEnabled
@@ -18,7 +18,10 @@ import { notificationManager } from '@ohos.notificationManager';
 badgeNumberEnabled?: boolean
 ```
 
-Whether to enable the display of notification badges. - **true**: enabled. - **false**: disable.
+Whether to enable the display of notification badges.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 
@@ -34,7 +37,10 @@ Whether to enable the display of notification badges. - **true**: enabled. - **f
 bannerEnabled?: boolean
 ```
 
-Whether to enable banner notification. - **true**: enabled. - **false**: disable.
+Whether to enable banner notification.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 
@@ -50,7 +56,10 @@ Whether to enable banner notification. - **true**: enabled. - **false**: disable
 lockScreenEnabled?: boolean
 ```
 
-Whether to enable lock screen notification. - **true**: enabled. - **false**: disable.
+Whether to enable lock screen notification.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 
@@ -66,7 +75,10 @@ Whether to enable lock screen notification. - **true**: enabled. - **false**: di
 notificationEnabled?: boolean
 ```
 
-Whether to enable the application notification. - **true**: enabled. - **false**: disable.
+Whether to enable the application notification.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 
@@ -82,7 +94,10 @@ Whether to enable the application notification. - **true**: enabled. - **false**
 soundEnabled: boolean
 ```
 
-Whether to enable ringtone. - **true**: enabled. - **false**: disable.
+Whether to enable ringtone.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 
@@ -96,7 +111,10 @@ Whether to enable ringtone. - **true**: enabled. - **false**: disable.
 vibrationEnabled: boolean
 ```
 
-Whether to enable vibration. - **true**: enabled. - **false**: disable.
+Whether to enable vibration.
+
+- **true**: enabled.
+- **false**: disable.
 
 **Type:** boolean
 

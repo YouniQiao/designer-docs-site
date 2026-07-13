@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## setAppResourceLimit
@@ -12,7 +12,11 @@ import { hidebug } from '@ohos.hidebug';
 function setAppResourceLimit(type: string, value: number, enableDebugLog: boolean): void
 ```
 
-Sets the number of FDs, number of threads, JS memory, or native memory limit of the application. > **NOTE** > > Enable **System resource leak log** in **Developer options** and restart the device for the API to take effect.
+Sets the number of FDs, number of threads, JS memory, or native memory limit of the application.
+
+> **NOTE**
+>
+> Enable **System resource leak log** in **Developer options** and restart the device for the API to take effect.
 
 **Since:** 12
 

@@ -9,7 +9,7 @@ Describes the configuration of the main window screenshot.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## useCache
@@ -18,7 +18,10 @@ import { window } from '@ohos.window';
 useCache?: boolean
 ```
 
-Whether the existing screenshot of the main window should be used. The default value is **true**. When it is set to **true**, the system uses the existing screenshot of the main window, or captures the latest screenshot if no existing screenshot is saved. When it is set to **false**, the system captures the latest screenshot of the main window.
+Whether the existing screenshot of the main window should be used. The default value is **true**. When it is set
+to **true**, the system uses the existing screenshot of the main window, or captures the latest screenshot if no
+existing screenshot is saved. When it is set to **false**, the system captures the latest screenshot of the main
+window.
 
 **Type:** boolean
 

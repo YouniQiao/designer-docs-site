@@ -1,6 +1,8 @@
 # AbortSignal
 
-Object used to abort an async operation. An instance of this class must be accessed in the same thread where the instance is created. Access to fields of this class from another thread is undefined behaviour.
+Object used to abort an async operation.
+An instance of this class must be accessed in the same thread where the instance is created.
+Access to fields of this class from another thread is undefined behaviour.
 
 **Since:** 12
 
@@ -9,7 +11,7 @@ Object used to abort an async operation. An instance of this class must be acces
 ## Modules to Import
 
 ```TypeScript
-import { ArkTSUtils } from '@arkts.utils';
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 ## aborted

@@ -13,7 +13,7 @@ Defines published device information.
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.distributedHardware.deviceManager';
+import { deviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## freq
@@ -76,7 +76,8 @@ ID used to identify a publication period.
 ranging: boolean
 ```
 
-Whether the device supports ranging. The value **true** indicates that the device supports ranging and the value **false** indicates the opposite.
+Whether the device supports ranging. The value **true** indicates that the device supports ranging and the value
+**false** indicates the opposite.
 
 **Type:** boolean
 

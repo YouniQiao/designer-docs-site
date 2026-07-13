@@ -9,7 +9,7 @@ Represents CMS verification configuration.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## contentData
@@ -18,7 +18,8 @@ import { cert } from '@ohos.security.cert';
 contentData?: Uint8Array
 ```
 
-Content data. If the detached mode is used, you need to specify the plaintext data. This parameter can be left empty in attached mode.
+Content data. If the detached mode is used, you need to specify the plaintext data. This parameter can be left
+empty in attached mode.
 
 **Type:** Uint8Array
 
@@ -52,7 +53,7 @@ Format of the content. The default value is **CmsContentDataFormat.BINARY**.
 signerCerts?: Array<X509Cert>
 ```
 
-Signing certificate. This parameter is left empty by default.
+Signer certificates.
 
 **Type:** Array<X509Cert>
 
@@ -68,7 +69,11 @@ Signing certificate. This parameter is left empty by default.
 trustCerts: Array<X509Cert>
 ```
 
-Trust certificate. **NOTE**: You need to configure the trust certificates of all signers.
+Trusted certificates.
+
+> **NOTE**
+>
+> You need to configure the trust certificates of all signers.
 
 **Type:** Array<X509Cert>
 

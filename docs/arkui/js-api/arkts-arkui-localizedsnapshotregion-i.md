@@ -1,6 +1,15 @@
 # LocalizedSnapshotRegion
 
-Defines the rectangular region for capturing the component snapshot, with coordinates adjusted based on the layout direction (LTR or RTL). > **NOTE** > > Directly using **componentSnapshot** can lead to the issue of > [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain a > **UIContext** instance using **getUIContext()**, and then obtain the associated **componentSnapshot** object > using > [getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12).
+Defines the rectangular region for capturing the component snapshot, with coordinates adjusted based on the layout
+direction (LTR or RTL).
+
+> **NOTE**
+>
+> Directly using **componentSnapshot** can lead to the issue of
+> [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain a
+> **UIContext** instance using **getUIContext()**, and then obtain the associated **componentSnapshot** object
+> using
+> [getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12).
 
 **Since:** 15
 
@@ -9,7 +18,7 @@ Defines the rectangular region for capturing the component snapshot, with coordi
 ## Modules to Import
 
 ```TypeScript
-import { componentSnapshot } from '@ohos.arkui.componentSnapshot';
+import { componentSnapshot } from '@kit.ArkUI';
 ```
 
 ## bottom
@@ -18,7 +27,11 @@ import { componentSnapshot } from '@ohos.arkui.componentSnapshot';
 bottom: number
 ```
 
-Y-coordinate of the lower right corner of the rectangular region. Unit: px. Value range: [0, Component height].
+Y-coordinate of the lower right corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component height].
 
 **Type:** number
 
@@ -36,7 +49,13 @@ Y-coordinate of the lower right corner of the rectangular region. Unit: px. Valu
 end: number
 ```
 
-For LTR layouts: X-coordinate of the lower right corner of the rectangular region. For RTL layouts: X-coordinate of the lower left corner of the rectangular region. Unit: px. Value range: [0, Component width].
+For LTR layouts: X-coordinate of the lower right corner of the rectangular region.
+
+For RTL layouts: X-coordinate of the lower left corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component width].
 
 **Type:** number
 
@@ -54,7 +73,13 @@ For LTR layouts: X-coordinate of the lower right corner of the rectangular regio
 start: number
 ```
 
-For LTR layouts: X-coordinate of the upper left corner of the rectangular region. For RTL layouts: X-coordinate of the upper right corner of the rectangular region. Unit: px. Value range: [0, Component width].
+For LTR layouts: X-coordinate of the upper left corner of the rectangular region.
+
+For RTL layouts: X-coordinate of the upper right corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component width].
 
 **Type:** number
 
@@ -72,7 +97,13 @@ For LTR layouts: X-coordinate of the upper left corner of the rectangular region
 top: number
 ```
 
-For LTR layouts: Y-coordinate of the upper left corner of the rectangular region. For RTL layouts: Y-coordinate of the upper right corner of the rectangular region. Unit: px. Value range: [0, Component height].
+For LTR layouts: Y-coordinate of the upper left corner of the rectangular region.
+
+For RTL layouts: Y-coordinate of the upper right corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component height].
 
 **Type:** number
 

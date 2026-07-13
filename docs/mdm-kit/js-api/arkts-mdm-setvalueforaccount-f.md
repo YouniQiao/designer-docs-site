@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceSettings } from '@ohos.enterprise.deviceSettings';
+import { deviceSettings } from '@kit.MDMKit';
 ```
 
 ## setValueForAccount
@@ -12,7 +12,8 @@ import { deviceSettings } from '@ohos.enterprise.deviceSettings';
 function setValueForAccount(admin: Want, item: SettingsItem, accountId: number, value: string): void
 ```
 
-Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such as setting the device name for user 100.
+Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such
+as setting the device name for user 100.
 
 **Since:** 24
 
@@ -29,7 +30,7 @@ Sets the device policy for a specified user. This API allows you to set a specif
 | admin | Want | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of theEnterpriseAdminExtensionAbility and the bundle name of the application. |
 | item | SettingsItem | Yes | Type of the policy to set. |
 | accountId | number | Yes | Account ID, which must be greater than or equal to 0.<br>You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)to obtain the account ID. |
-| value | string | Yes | Policy type value.<br>When **item** is set to[SettingsItem.DEVICE_NAME](arkts-mdm-settingsitem-e.md#settingsitem), **value** indicates the device name, which is acharacter string. The string length ranges from 1 to 100. Only the device name of the current user can be set.If the device name of another user is set, error code 9200012 is returned.<br>When **item** is set to[SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md#settingsitem), **value** indicates the state of thethree-key navigation switch. Its **0** indicates that the three-key navigation switch is enabled. (In[Kiosk mode](../../apis-ability-kit/arkts-apis/arkts-ability-enterkioskmode-f.md#enterkioskmode-1), the display of three-buttonnavigation also requires the bottom gesture being enabled. Specifically, three-button navigation is displayedonly when both the three-button navigation switch and the bottom gesture switch are enabled. The bottom gesturecan be enabled or disabled through the[applicationManager.setKioskFeatures](arkts-mdm-setkioskfeatures-f.md#setkioskfeatures-1)API.) The value **1** indicates that three-key navigation is disabled.<br>When **item** is set to[SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md#settingsitem), this API can be called properly onphones and tablets but returns error code 801 on other devices. |
+| value | string | Yes | Policy type value.<br>When **item** is set to[SettingsItem.DEVICE_NAME](arkts-mdm-settingsitem-e.md), **value** indicates the device name, which is acharacter string. The string length ranges from 1 to 100. Only the device name of the current user can be set.If the device name of another user is set, error code 9200012 is returned.<br>When **item** is set to[SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md), **value** indicates the state of thethree-key navigation switch. Its **0** indicates that the three-key navigation switch is enabled. (In[Kiosk mode](../../apis-ability-kit/arkts-apis/arkts-ability-enterkioskmode-f.md#enterkioskmode-1), the display of three-buttonnavigation also requires the bottom gesture being enabled. Specifically, three-button navigation is displayedonly when both the three-button navigation switch and the bottom gesture switch are enabled. The bottom gesturecan be enabled or disabled through the[applicationManager.setKioskFeatures](arkts-mdm-setkioskfeatures-f.md#setkioskfeatures-1)API.) The value **1** indicates that three-key navigation is disabled.<br>When **item** is set to[SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md), this API can be called properly onphones and tablets but returns error code 801 on other devices. |
 
 **Error codes:**
 

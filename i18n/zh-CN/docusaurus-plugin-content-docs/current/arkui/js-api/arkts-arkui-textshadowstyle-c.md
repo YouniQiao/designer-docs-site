@@ -12,7 +12,9 @@
 constructor(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-文本阴影对象的构造函数。 ShadowOptions对象中不支持fill字段。
+文本阴影对象的构造函数。
+
+ShadowOptions对象中不支持fill字段。
 
 **起始版本：** 12
 

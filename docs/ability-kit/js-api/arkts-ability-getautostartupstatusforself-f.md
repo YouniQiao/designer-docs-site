@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { autoStartupManager } from '@ohos.app.ability.autoStartupManager';
+import { autoStartupManager } from '@kit.AbilityKit';
 ```
 
 ## getAutoStartupStatusForSelf
@@ -12,7 +12,10 @@ import { autoStartupManager } from '@ohos.app.ability.autoStartupManager';
 function getAutoStartupStatusForSelf(): Promise<boolean>
 ```
 
-Checks whether the current application is enabled for automatic startup at boot time. This API uses a promise to return the result. This API can be properly called only on phones, PC/2-in-1 devices, tablets, and wearables. On other devices, it returns the error code 801.
+Checks whether the current application is enabled for automatic startup at boot time. This API uses a promise to
+return the result.
+This API can be properly called only on phones, PC/2-in-1 devices, tablets, and wearables. On other devices, it
+returns the error code 801.
 
 **Since:** 21
 

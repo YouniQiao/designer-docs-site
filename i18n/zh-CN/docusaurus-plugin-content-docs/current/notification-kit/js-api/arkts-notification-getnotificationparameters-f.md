@@ -3,7 +3,7 @@
 ## 导入模块
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## getNotificationParameters
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function getNotificationParameters(id: number, label?: string): Promise<NotificationParameters>
 ```
 
-获取通知[NotificationRequest](arkts-notification-notificationrequest-i.md#notificationrequest)中wantAgent字段的部分信息。使用Promise异 步回调。
+获取通知[NotificationRequest](arkts-notification-notificationrequest-i.md)中wantAgent字段的部分信息。使用Promise异
+步回调。
 
 **起始版本：** 24
 

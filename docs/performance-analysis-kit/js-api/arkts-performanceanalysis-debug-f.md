@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hilog } from '@ohos.hilog';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## debug
@@ -12,7 +12,10 @@ import { hilog } from '@ohos.hilog';
 function debug(domain: number, tag: string, format: string, ...args: any[]): void
 ```
 
-Prints DEBUG logs. DEBUG logs are not recorded in official versions by default. They are available in debug versions or in official versions with the debug function enabled.
+Prints DEBUG logs.
+
+DEBUG logs are not recorded in official versions by default. They are available in debug versions or in official
+versions with the debug function enabled.
 
 **Since:** 7
 

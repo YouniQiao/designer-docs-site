@@ -9,7 +9,7 @@ Describes the vibration attribute.
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## deviceId
@@ -18,7 +18,10 @@ import { vibrator } from '@ohos.vibrator';
 deviceId?: number
 ```
 
-Device ID. The default value is **-1**, indicating the local device. Since API version 19, you can use [getVibratorInfoSync](arkts-sensorservice-getvibratorinfosync-f.md#getvibratorinfosync-1) or [on](vibrator.on) to query the device ID. This API can be used in atomic services since API version 19.
+Device ID. The default value is **-1**, indicating the local device. Since API version 19, you can use
+[getVibratorInfoSync](arkts-sensorservice-getvibratorinfosync-f.md#getvibratorinfosync-1) or [on](vibrator.on) to query the device ID.
+
+This API can be used in atomic services since API version 19.
 
 **Type:** number
 
@@ -50,7 +53,8 @@ Vibrator ID. The default value is **0**.
 usage: Usage
 ```
 
-Vibration scenario. The default value is **unknown**. The value must be an enum defined in [Usage](arkts-sensorservice-usage-t.md#usage).
+Vibration scenario. The default value is **unknown**. The value must be an enum defined in
+[Usage](arkts-sensorservice-usage-t.md).
 
 **Type:** Usage
 

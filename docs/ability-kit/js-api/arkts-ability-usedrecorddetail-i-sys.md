@@ -1,6 +1,6 @@
 # UsedRecordDetail (System API)
 
-UsedRecordDetail.
+Represents the details of a single access record.
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ UsedRecordDetail.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## accessDuration
@@ -20,7 +20,8 @@ import { privacyManager } from '@ohos.privacyManager';
 accessDuration: number
 ```
 
-Access duration, in milliseconds
+Access duration.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -36,7 +37,10 @@ Access duration, in milliseconds
 count?: number
 ```
 
-The value of successCount or failCount passed in to addPermissionUsedRecord.
+Number of accesses. In accessRecords, it indicates the number of successful accesses; in rejectRecords, it
+indicates the number of failures or rejections.
+
+Default value: 0.
 
 **Type:** number
 
@@ -52,7 +56,12 @@ The value of successCount or failCount passed in to addPermissionUsedRecord.
 lockScreenStatus?: number
 ```
 
-Indicates the status of lockscreen.
+Lock screen status at the time of access.
+
+- 1: Indicates permission usage in a non-lock-screen scenario.
+- 2: Indicates permission usage in a lock-screen scenario.
+
+Default value: 1.
 
 **Type:** number
 
@@ -68,7 +77,7 @@ Indicates the status of lockscreen.
 status: number
 ```
 
-The status
+Access status. 0 indicates stopped usage, 1 indicates foreground usage, and 2 indicates background usage.
 
 **Type:** number
 
@@ -84,7 +93,8 @@ The status
 timestamp: number
 ```
 
-Timestamp, in milliseconds
+Access timestamp.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -100,7 +110,9 @@ Timestamp, in milliseconds
 usedType?: PermissionUsedType
 ```
 
-Used type of the permission accessed.
+Sensitive permission access method.
+
+Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

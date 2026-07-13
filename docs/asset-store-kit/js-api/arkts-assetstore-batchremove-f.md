@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { asset } from '@ohos.security.asset';
+import { asset } from '@kit.AssetStoreKit';
 ```
 
 ## batchRemove
@@ -12,7 +12,9 @@ import { asset } from '@ohos.security.asset';
 function batchRemove(assetsToBeRemoved: Array<AssetMap>): Promise<void>
 ```
 
-Removes assets in batches based on an alias list. Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be removed in batches.
+Removes assets in batches based on an alias list.
+
+Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be removed in batches.
 
 **Since:** 26.0.0
 

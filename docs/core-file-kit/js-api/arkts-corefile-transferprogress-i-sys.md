@@ -11,7 +11,7 @@ Defines the TransferProgress data structure.
 ## Modules to Import
 
 ```TypeScript
-import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
 ## failedCount
@@ -20,7 +20,9 @@ import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
 failedCount: number
 ```
 
-failed count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
+failed count in TransferProgress.
+The value should be an integer.
+<br>Unit:Pcs.
 
 **Type:** number
 
@@ -74,7 +76,9 @@ Describes the state type of transfer stop reason.
 successfulCount: number
 ```
 
-successful count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
+successful count in TransferProgress.
+The value should be an integer.
+<br>Unit:Pcs.
 
 **Type:** number
 
@@ -92,7 +96,9 @@ successful count in TransferProgress. The value should be an integer. <br>Unit:P
 totalCount: number
 ```
 
-total count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
+total count in TransferProgress.
+The value should be an integer.
+<br>Unit:Pcs.
 
 **Type:** number
 
@@ -110,7 +116,8 @@ total count in TransferProgress. The value should be an integer. <br>Unit:Pcs.
 totalSize: number
 ```
 
-Total size in TransferProgress. <br>Unit:Byte.
+Total size in TransferProgress.
+<br>Unit:Byte.
 
 **Type:** number
 
@@ -128,7 +135,8 @@ Total size in TransferProgress. <br>Unit:Byte.
 transferredSize: number
 ```
 
-transferred size in TransferProgress. <br>Unit:Byte.
+transferred size in TransferProgress.
+<br>Unit:Byte.
 
 **Type:** number
 

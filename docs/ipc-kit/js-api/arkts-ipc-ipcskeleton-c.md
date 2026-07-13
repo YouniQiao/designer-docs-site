@@ -1,6 +1,7 @@
 # IPCSkeleton
 
-Obtains IPC context, including the UID and PID, local and remote device IDs, and whether the method is invoked on the same device.
+Obtains IPC context, including the UID and PID, local and remote device IDs, and whether the method is invoked on
+the same device.
 
 **Since:** 7
 
@@ -9,7 +10,7 @@ Obtains IPC context, including the UID and PID, local and remote device IDs, and
 ## Modules to Import
 
 ```TypeScript
-import { rpc } from '@ohos.rpc';
+import { rpc } from '@kit.IPCKit';
 ```
 
 ## flushCmdBuffer
@@ -18,7 +19,8 @@ import { rpc } from '@ohos.rpc';
 static flushCmdBuffer(object: IRemoteObject): void
 ```
 
-Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API is a static method. You are advised to call this API before performing any sensitive operation.
+Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API
+is a static method. You are advised to call this API before performing any sensitive operation.
 
 **Since:** 9
 
@@ -70,7 +72,8 @@ try {
 static flushCommands(object: IRemoteObject): number
 ```
 
-Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API is a static method. You are advised to call this API before performing any sensitive operation.
+Flushes all suspended commands from the specified **RemoteProxy** to the corresponding **RemoteObject**. This API
+is a static method. You are advised to call this API before performing any sensitive operation.
 
 **Since:** 7
 
@@ -165,7 +168,9 @@ class Stub extends rpc.RemoteObject {
 static getCallingPid(): number
 ```
 
-Obtains the PID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the PID of the process will be returned.
+Obtains the PID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in
+the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the
+PID of the process will be returned.
 
 **Since:** 7
 
@@ -243,7 +248,9 @@ class Stub extends rpc.RemoteObject {
 static getCallingUid(): number
 ```
 
-Obtains the UID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the UID of the process will be returned.
+Obtains the UID of the caller. This API is a static method, which is invoked by the **RemoteObject** object in
+the **onRemoteRequest** method. If this method is not invoked in the IPC context (**onRemoteRequest**), the
+UID of the process will be returned.
 
 **Since:** 7
 
@@ -393,7 +400,8 @@ class Stub extends rpc.RemoteObject {
 static resetCallingIdentity(): string
 ```
 
-Resets the UID and PID of the remote user to those of the local user. This API is a static method and is used in scenarios such as identity authentication.
+Resets the UID and PID of the remote user to those of the local user. This API is a static method and is used in
+scenarios such as identity authentication.
 
 **Since:** 7
 
@@ -432,7 +440,9 @@ class Stub extends rpc.RemoteObject {
 static restoreCallingIdentity(identity: string): void
 ```
 
-Restores the UID and PID of the remote user. This API is a static method. It is usually called after **resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are required.
+Restores the UID and PID of the remote user. This API is a static method. It is usually called after
+**resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are
+required.
 
 **Since:** 9
 
@@ -478,7 +488,9 @@ class Stub extends rpc.RemoteObject {
 static setCallingIdentity(identity: string): boolean
 ```
 
-Sets the UID and PID of the remote user. This API is a static method. It is usually called after **resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are required.
+Sets the UID and PID of the remote user. This API is a static method. It is usually called after
+**resetCallingIdentity**, and the UID and PID of the remote user returned by **resetCallingIdentity** are
+required.
 
 **Since:** 7
 

@@ -6,7 +6,7 @@ Provides methods to encapsulate file attributes.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [PhotoAsset](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoasset-i.md#photoasset)
+**Substitutes:** [PhotoAsset](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoasset-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ Provides methods to encapsulate file attributes.
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## close

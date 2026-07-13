@@ -12,11 +12,5 @@ import { Queue } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [Queue](arkts-queue-c.md) | Queue的特点是先进先出，在尾部增加元素，在头部删除元素。根据循环队列的数据结构实现。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [QueueForEachCb](arkts-queueforeachcb-t.md) | Queue的回调函数类型。 |
+| [Queue](arkts-arkts-queue-c.md) | Queue follows the principle of First In First Out (FIFO).It supports insertion of elements at the end and removal from the front of the queue.Queue is implemented based on the queue data structure. |
 

@@ -9,7 +9,7 @@ Defines a struct for the batch operation result of shared configuration.
 ## Modules to Import
 
 ```TypeScript
-import { dataShare } from '@ohos.data.dataShare';
+import { dataShare } from '@kit.ArkData';
 ```
 
 ## result
@@ -34,7 +34,9 @@ Operation result code.
 uri: string
 ```
 
-URI to be operated, with a maximum of 256 bytes. The value is fixed at the format of **"datashareproxy://{*bundleName*}/{*path*}"**, in which **bundleName** indicates the bundle name of the publisher application, and **path** can be set to any value but must be unique in the same application.
+URI to be operated, with a maximum of 256 bytes. The value is fixed at the format of
+**"datashareproxy://{*bundleName*}/{*path*}"**, in which **bundleName** indicates the bundle name of the
+publisher application, and **path** can be set to any value but must be unique in the same application.
 
 **Type:** string
 

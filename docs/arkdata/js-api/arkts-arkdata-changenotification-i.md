@@ -1,6 +1,7 @@
 # ChangeNotification
 
-Defines the content of a data change notification, including inserted data, updated data, deleted data, and device ID.
+Defines the content of a data change notification, including inserted data, updated data, deleted data, and device
+ID.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Defines the content of a data change notification, including inserted data, upda
 ## Modules to Import
 
 ```TypeScript
-import { distributedKVStore } from '@ohos.data.distributedKVStore';
+import { distributedKVStore } from '@kit.ArkData';
 ```
 
 ## deleteEntries

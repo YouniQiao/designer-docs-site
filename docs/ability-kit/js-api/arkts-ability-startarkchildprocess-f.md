@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { childProcessManager } from '@ohos.app.ability.childProcessManager';
+import { childProcessManager } from '@kit.AbilityKit';
 ```
 
 ## startArkChildProcess
@@ -12,7 +12,19 @@ import { childProcessManager } from '@ohos.app.ability.childProcessManager';
 function startArkChildProcess(srcEntry: string, args: ChildProcessArgs, options?: ChildProcessOptions): Promise<number>
 ```
 
-Starts an [ArkTS child process](../../../../application-models/ability-terminology.md#arkts-child-process). This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801 is returned. > **NOTE** > > The child process started by calling this API does not inherit the resources of the parent process. If the child > process is created successfully, its PID is returned, and its > [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1) function is executed. After the > function is done, the child process is not automatically destroyed. Instead, it must be destroyed by calling > [process.abort](../../apis-arkts/arkts-apis/arkts-arkts-abort-f.md#abort-1). After the process that calls this API is destroyed, the > created child process is also destroyed.
+Starts an [ArkTS child process](../../../../application-models/ability-terminology.md#arkts-child-process). This API
+uses a promise to return the result.
+This API can be properly called on PCs/2-in-1 devices and tablets. If it is called on other devices, error code 801
+is returned.
+
+> **NOTE**
+>
+> The child process started by calling this API does not inherit the resources of the parent process. If the child
+> process is created successfully, its PID is returned, and its
+> [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1) function is executed. After the
+> function is done, the child process is not automatically destroyed. Instead, it must be destroyed by calling
+> [process.abort](../../apis-arkts/arkts-apis/arkts-arkts-abort-f.md#abort-1). After the process that calls this API is destroyed, the
+> created child process is also destroyed.
 
 **Since:** 12
 
@@ -42,7 +54,7 @@ Starts an [ArkTS child process](../../../../application-models/ability-terminolo
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000061](../errorcode-ability.md#16000061-unsupported-operation) | Operation not supported. |
-| [16000062](../errorcode-ability.md#16000062-too-many-child-processes) | The number of child processes exceeds the upper limit.<br>**Applicable version:** 13 |
+| [16000062](../errorcode-ability.md#16000062-too-many-child-processes) | The number of child processes exceeds the upper limit.<br>**Applicable version:** 13 and later |
 
 **Example**
 

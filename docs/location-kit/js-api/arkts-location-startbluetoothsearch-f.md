@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { geoLocationManager } from '@ohos.geoLocationManager';
+import { geoLocationManager } from '@kit.LocationKit';
 ```
 
 ## startBluetoothSearch
@@ -13,7 +13,9 @@ function startBluetoothSearch(
       request: BluetoothSearchRequest, callback: Callback<BluetoothScanResult>): void
 ```
 
-Starts Bluetooth scanning and matches the device ID list in the input parameter with the Bluetooth scanning result. If the matching is successful, the Bluetooth device information is returned through the callback.
+Starts Bluetooth scanning and matches the device ID list in the input parameter
+with the Bluetooth scanning result. If the matching is successful, the Bluetooth
+device information is returned through the callback.
 
 **Since:** 26.0.0
 

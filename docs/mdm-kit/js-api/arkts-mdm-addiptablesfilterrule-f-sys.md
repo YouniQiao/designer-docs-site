@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## addIptablesFilterRule
@@ -12,7 +12,8 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function addIptablesFilterRule(admin: Want, filterRule: AddFilterRule, callback: AsyncCallback<void>): void
 ```
 
-Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses an asynchronous callback to return the result.
+Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 
@@ -84,7 +85,8 @@ networkManager.addIptablesFilterRule(wantTemp, filterRule, (err) => {
 function addIptablesFilterRule(admin: Want, filterRule: AddFilterRule): Promise<void>
 ```
 
-Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses a promise to return the result.
+Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses a promise to return the
+result.
 
 **Since:** 10
 

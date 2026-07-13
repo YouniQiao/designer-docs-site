@@ -1,6 +1,8 @@
 # AuthToken (System API)
 
-Represents the AuthToken data returned after a successful verification.
+Authentication token data. It indicates the parsed **AuthToken** data returned after the verification is
+successful, including detailed authentication information such as the challenge value, authentication trust level,
+authentication type, and user ID.
 
 **Since:** 18
 
@@ -11,7 +13,7 @@ Represents the AuthToken data returned after a successful verification.
 ## Modules to Import
 
 ```TypeScript
-import { userAccessCtrl } from '@ohos.userIAM.userAccessCtrl';
+import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 ```
 
 ## authTrustLevel
@@ -20,7 +22,9 @@ import { userAccessCtrl } from '@ohos.userIAM.userAccessCtrl';
 authTrustLevel: userAuth.AuthTrustLevel
 ```
 
-Authentication trust level.
+Authentication trust level. It indicates the security strength level of the current authentication. The value can
+be **ATL1(10000)**, **ATL2(20000)**, **ATL3(30000)**, or **ATL4(40000)**. A higher level indicates a stronger
+liveness detection capability and more accurate identity recognition.
 
 **Type:** userAuth.AuthTrustLevel
 
@@ -36,7 +40,8 @@ Authentication trust level.
 authType: userAuth.UserAuthType
 ```
 
-Credential type for the identity authentication.
+Credential type for the identity authentication. It indicates the authentication mode used for the current
+authentication, such as **PIN(1)**, **FACE(2)**, and **FINGERPRINT(4)**.
 
 **Type:** userAuth.UserAuthType
 
@@ -52,7 +57,9 @@ Credential type for the identity authentication.
 challenge: Uint8Array
 ```
 
-Random challenge for the authentication.
+Random challenge value for the authentication. It is used to prevent replay attacks. The challenge value passed
+during authentication is included in the **AuthToken**. The service can verify this field to confirm the validity
+of the authentication result.
 
 **Type:** Uint8Array
 
@@ -68,7 +75,8 @@ Random challenge for the authentication.
 credentialId?: bigint
 ```
 
-Credential ID.
+Credential ID. It indicates the ID of the credential that is successfully matched in the current authentication.
+It is used to associate with the specific authentication credential.
 
 **Type:** bigint
 
@@ -84,7 +92,8 @@ Credential ID.
 enrolledId?: bigint
 ```
 
-Credential enrollment ID.
+Credential enrollment ID. It indicates the original value of **credentialDigest** in **enrolledState**, which
+reflects the credential change.
 
 **Type:** bigint
 
@@ -100,7 +109,8 @@ Credential enrollment ID.
 secureUid?: bigint
 ```
 
-Secure user ID.
+Secure user ID. It indicates the security ID of a user, which is used internally by the system and returned only
+in specific authentication scenarios.
 
 **Type:** bigint
 
@@ -116,7 +126,7 @@ Secure user ID.
 timeInterval: bigint
 ```
 
-Time elapsed since the issuance of the authentication token, in milliseconds.
+Time elapsed since the **AuthToken** was issued, in milliseconds.
 
 **Type:** bigint
 
@@ -132,7 +142,8 @@ Time elapsed since the issuance of the authentication token, in milliseconds.
 tokenType: AuthTokenType
 ```
 
-Authentication token type.
+Enumerates the authentication token types. It identifies the source of the token, such as local authentication,
+reuse authentication, or collaborative authentication.
 
 **Type:** AuthTokenType
 
@@ -148,7 +159,8 @@ Authentication token type.
 userId: number
 ```
 
-User ID.
+User ID. It indicates the ID of the user who has completed authentication. The value is a positive integer
+greater than or equal to 0.
 
 **Type:** number
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { particleAbility } from '@ohos.ability.particleAbility';
+import { particleAbility } from '@kit.AbilityKit';
 ```
 
 ## disconnectAbility
@@ -12,7 +12,8 @@ import { particleAbility } from '@ohos.ability.particleAbility';
 function disconnectAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects ability to a Service ability.
+Disconnects this ability from a specific ServiceAbility. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -24,8 +25,8 @@ Disconnects ability to a Service ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | the connection id returned from connectAbility api. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Returns the disconnection result in the form of callback. |
+| connection | number | Yes | ID of the ServiceAbility to disconnect. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the disconnection is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -64,7 +65,7 @@ particleAbility.disconnectAbility(connId, (err) => {
 function disconnectAbility(connection: number): Promise<void>
 ```
 
-Disconnects ability to a Service ability.
+Disconnects this ability from a specific ServiceAbility. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -76,13 +77,13 @@ Disconnects ability to a Service ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | the connection id returned from connectAbility api. |
+| connection | number | Yes | ID of the ServiceAbility to disconnect. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | the promise returned by the function. |
+| Promise&lt;void&gt; | Promise used to return the result. Promise that returns no value. |
 
 **Example**
 

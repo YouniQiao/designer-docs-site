@@ -1,6 +1,7 @@
 # FilterResult
 
-This parameter specifies the selection result of a filtering dimension. The index starts from 0.
+This parameter specifies the selection result of a filtering dimension.
+The index starts from 0.
 
 **Since:** 22
 
@@ -9,7 +10,7 @@ This parameter specifies the selection result of a filtering dimension. The inde
 ## Modules to Import
 
 ```TypeScript
-import { FilterType, Filter, FilterParams, FilterResult } from '@ohos.arkui.advanced.Filter';
+import { FilterType, Filter, FilterParams, FilterResult } from '@kit.ArkUI';
 ```
 
 ## index

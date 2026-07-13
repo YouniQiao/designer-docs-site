@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceInfo } from '@ohos.deviceInfo';
+import { deviceInfo } from '@kit.BasicServicesKit';
 ```
 
 ## apiAvailable
@@ -12,7 +12,9 @@ import { deviceInfo } from '@ohos.deviceInfo';
 function apiAvailable(version: string | number): boolean
 ```
 
-Checks whether a specified API version is available on the current device. This API provides compatibility check across different OpenHarmony/distributed OS versions. A suitable version check method is automatically selected based on the input format and supported API versions.
+Checks whether a specified API version is available on the current device.
+This API provides compatibility check across different OpenHarmony/distributed OS versions.
+A suitable version check method is automatically selected based on the input format and supported API versions.
 
 **Since:** 26.0.0
 

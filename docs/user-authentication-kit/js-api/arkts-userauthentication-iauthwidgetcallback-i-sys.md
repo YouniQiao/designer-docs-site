@@ -1,6 +1,8 @@
 # IAuthWidgetCallback (System API)
 
-Provides the callback for returning the commands sent from the user authentication framework to the user authentication widget.
+Defines the callback of the authentication widget. The authentication widget uses this callback to obtain commands
+sent by the user authentication framework and perform corresponding authentication operations based on the command
+content.
 
 **Since:** 10
 
@@ -11,7 +13,7 @@ Provides the callback for returning the commands sent from the user authenticati
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## sendCommand
@@ -20,7 +22,9 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 sendCommand(cmdData: string): void
 ```
 
-Called to return the command sent from the user authentication framework to the user authentication widget.
+Triggered to receive commands from the user authentication framework. The user authentication framework uses this
+callback to send commands to the identity authentication widget. The widget needs to parse the command content
+and perform corresponding operations.
 
 **Since:** 10
 
@@ -32,7 +36,7 @@ Called to return the command sent from the user authentication framework to the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cmdData | string | Yes | Command from the user authentication framework to the user authentication widget. |
+| cmdData | string | Yes | Command data. It is a JSON string, containing the command content sent by the userauthentication framework to the authentication widget, such as commands for switching the authentication typeand returning the authentication result. The widget needs to parse the data and perform the correspondingoperations. |
 
 **Example**
 

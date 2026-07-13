@@ -6,14 +6,14 @@ Defines information about the images or videos selected.
 
 **Deprecated since:** 12
 
-**Substitutes:** [PhotoSelectResult](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoselectresult-c.md#photoselectresult)
+**Substitutes:** [PhotoSelectResult](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoselectresult-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## isOriginalPhoto
@@ -22,7 +22,8 @@ import { picker } from '@ohos.file.picker';
 isOriginalPhoto: boolean
 ```
 
-Whether the selected image is the original one. The value **true** means the selected image is the original one; the value **false** means the opposite.
+Whether the selected image is the original one. The value **true** means the selected image is the original one;
+the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -42,7 +43,10 @@ Whether the selected image is the original one. The value **true** means the sel
 photoUris: Array<string>
 ```
 
-URIs of the media files selected. This URI array can be used only by [photoAccessHelper.getAssets](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i.md#getassets-1) . For details, see [Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
+URIs of the media files selected. This URI array can be used only by
+[photoAccessHelper.getAssets](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-i.md#getassets-1)
+. For details, see
+[Using a Media File URI](../../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Type:** Array<string>
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## getGeomagneticField
@@ -12,7 +12,8 @@ import { sensor } from '@ohos.sensor';
 function getGeomagneticField(locationOptions: LocationOptions, timeMillis: number, callback: AsyncCallback<GeomagneticResponse>): void
 ```
 
-Obtains the geomagnetic field of a geographic location. This API uses an asynchronous callback to return the result.
+Obtains the geomagnetic field of a geographic location. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

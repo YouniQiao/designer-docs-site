@@ -11,7 +11,7 @@ Describes the parameters for requesting efficiency resources.
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## cpuLevel
@@ -20,7 +20,9 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 cpuLevel?: EfficiencyResourcesCpuLevel
 ```
 
-CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the CPU resource size. The system allocates the specified CPU resources to the application during the idle time of load (for example, when the screen is off).
+CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the CPU resource size. The system
+allocates the specified CPU resources to the application during the idle time of load (for example, when the
+screen is off).
 
 **Type:** EfficiencyResourcesCpuLevel
 
@@ -38,7 +40,10 @@ CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the 
 isApply: boolean
 ```
 
-Whether the request is used to apply for resources. - **true**: The request is used to apply for resources. - **false**: The request is used to release resources.
+Whether the request is used to apply for resources.
+
+- **true**: The request is used to apply for resources.
+- **false**: The request is used to release resources.
 
 **Type:** boolean
 
@@ -54,7 +59,10 @@ Whether the request is used to apply for resources. - **true**: The request is u
 isPersist?: boolean
 ```
 
-Whether the resource is permanently held. The default value is **false**. - **true**: The resource is permanently held. - **false**: The resource is held for a limited period of time.
+Whether the resource is permanently held. The default value is **false**.
+
+- **true**: The resource is permanently held.
+- **false**: The resource is held for a limited period of time.
 
 **Type:** boolean
 
@@ -70,7 +78,10 @@ Whether the resource is permanently held. The default value is **false**. - **tr
 isProcess?: boolean
 ```
 
-Whether the request is initiated by a process. The default value is **false**. - **true**: The request is initiated by a process. - **false**: The request is initiated by an application.
+Whether the request is initiated by a process. The default value is **false**.
+
+- **true**: The request is initiated by a process.
+- **false**: The request is initiated by an application.
 
 **Type:** boolean
 

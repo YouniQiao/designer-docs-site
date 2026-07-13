@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## cancelAsBundle
@@ -17,7 +17,8 @@ function cancelAsBundle(
   ): void
 ```
 
-Cancels a notification published through the reminder agent. This API uses an asynchronous callback to return the result.
+Cancels a notification published through the reminder agent. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

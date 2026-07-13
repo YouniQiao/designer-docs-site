@@ -11,7 +11,7 @@ Defines the switch information of a device-cloud synergy database.
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## enable
@@ -20,7 +20,8 @@ import { cloudData } from '@ohos.data.cloudData';
 enable: boolean
 ```
 
-Whether to enable device-cloud synergy for the database. The value **true** indicates that device-cloud synergy is enabled, and the value **false** indicates the opposite.
+Whether to enable device-cloud synergy for the database. The value **true** indicates that device-cloud synergy
+is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -36,7 +37,10 @@ Whether to enable device-cloud synergy for the database. The value **true** indi
 tableInfo?: Record<string, boolean>
 ```
 
-Device-cloud synergy configuration of a table. The key is the table name, and the value is the switch status of the table. The value **true** indicates that device-cloud synergy is enabled for the table, and the value **false** indicates the opposite. If this parameter is not set, the device-cloud synergy is enabled for the database by default.
+Device-cloud synergy configuration of a table. The key is the table name, and the value is the switch status of
+the table. The value **true** indicates that device-cloud synergy is enabled for the table, and the value
+**false** indicates the opposite. If this parameter is not set, the device-cloud synergy is enabled for the
+database by default.
 
 **Type:** Record<string, boolean>
 

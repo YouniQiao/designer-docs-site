@@ -36,7 +36,7 @@
 | 名称 | 说明 |
 | --- | --- |
 | [Filter](arkts-arkgraphics2d-filter-i.md) |  |
-| [HdrBrightnessBlender](arkts-arkgraphics2d-hdrbrightnessblender-i.md) | 支持HDR的提亮混合器（继承自BrightnessBlender），用于将提亮效果添加到指定的组件上。 在调用HdrBrightnessBlender前，需要先通过createHdrBrightnessBlender创建一个HdrBrightnessBlender实例。 该混合器参数可参考BrightnessBlender。 |
+| [HdrBrightnessBlender](arkts-arkgraphics2d-hdrbrightnessblender-i.md) | 支持HDR的提亮混合器（继承自BrightnessBlender），用于将提亮效果添加到指定的组件上。在调用HdrBrightnessBlender前，需要先通过createHdrBrightnessBlender创建一个HdrBrightnessBlender实例。该混合器参数可参考BrightnessBlender。 |
 
 <!--Del-->
 ### 接口（系统接口）
@@ -44,13 +44,13 @@
 | 名称 | 说明 |
 | --- | --- |
 | [Filter](arkts-arkgraphics2d-filter-i-sys.md) |  |
-| [VisualEffect](arkts-arkgraphics2d-visualeffect-i-sys.md) | VisualEffect效果类，用于将相应的效果添加到指定的组件上。 在调用VisualEffect的方法前，需要先通过createEffect创建一个VisualEffect实例。 |
+| [VisualEffect](arkts-arkgraphics2d-visualeffect-i-sys.md) | VisualEffect效果类，用于将相应的效果添加到指定的组件上。在调用VisualEffect的方法前，需要先通过createEffect创建一个VisualEffect实例。 |
 | [BrightnessParam](arkts-arkgraphics2d-brightnessparam-i-sys.md) | 材质提亮参数的详细说明。 |
 | [HeatDistortionEffectParam](arkts-arkgraphics2d-heatdistortioneffectparam-i-sys.md) | 热浪扭曲效果的参数。 |
 | [BlurBubblesRiseEffectParam](arkts-arkgraphics2d-blurbubblesriseeffectparam-i-sys.md) | 模糊气泡上升效果的参数。 |
 | [LiquidMaterialEffectParam](arkts-arkgraphics2d-liquidmaterialeffectparam-i-sys.md) | 材质的各项参数及其用途的详细说明。 |
-| [BrightnessBlender](arkts-arkgraphics2d-brightnessblender-i-sys.md) | 提亮混合器，用于将提亮效果添加到指定的组件上。 在调用BrightnessBlender前，需要先通过createBrightnessBlender创建一个BrightnessBlender实例。 |
-| [HdrDarkenBlender](arkts-arkgraphics2d-hdrdarkenblender-i-sys.md) | 支持HDR的压暗混合器，用于将压暗效果添加到指定的组件上。 在调用HdrDarkenBlender前，需要先通过createHdrDarkenBlender创建一个HdrDarkenBlender实例。 |
+| [BrightnessBlender](arkts-arkgraphics2d-brightnessblender-i-sys.md) | 提亮混合器，用于将提亮效果添加到指定的组件上。在调用BrightnessBlender前，需要先通过createBrightnessBlender创建一个BrightnessBlender实例。 |
+| [HdrDarkenBlender](arkts-arkgraphics2d-hdrdarkenblender-i-sys.md) | 支持HDR的压暗混合器，用于将压暗效果添加到指定的组件上。在调用HdrDarkenBlender前，需要先通过createHdrDarkenBlender创建一个HdrDarkenBlender实例。 |
 | [Color](arkts-arkgraphics2d-color-i-sys.md) | RGBA格式的颜色描述。 |
 <!--DelEnd-->
 

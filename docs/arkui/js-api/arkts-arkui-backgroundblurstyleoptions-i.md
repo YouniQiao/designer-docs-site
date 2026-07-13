@@ -2,7 +2,7 @@
 
 Defines the options of backgroundBlurStyle
 
-**Inheritance/Implementation:** BackgroundBlurStyleOptions extends [BlurStyleOptions](arkts-arkui-blurstyleoptions-i.md#blurstyleoptions)
+**Inheritance/Implementation:** BackgroundBlurStyleOptions extends [BlurStyleOptions](arkts-arkui-blurstyleoptions-i.md)
 
 **Since:** 10
 
@@ -14,7 +14,9 @@ Defines the options of backgroundBlurStyle
 inactiveColor?: ResourceColor
 ```
 
-Background color when the blur effect does not take effect. This parameter must be used together with the **policy** parameter. When **policy** is set to a value that disables the blur effect, the blur effect on the components is removed. If **inactiveColor** is specified, it is applied as the component background color.
+Background color when the blur effect does not take effect. This parameter must be used together with the
+**policy** parameter. When **policy** is set to a value that disables the blur effect, the blur effect on the
+components is removed. If **inactiveColor** is specified, it is applied as the component background color.
 
 **Type:** ResourceColor
 

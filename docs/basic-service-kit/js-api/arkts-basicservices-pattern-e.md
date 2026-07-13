@@ -48,7 +48,8 @@ Email address.
 HTTP_URL = 3
 ```
 
-HTTP URL. This API can be used only in the stage model.
+HTTP URL.
+This API can be used only in the stage model.
 
 **Since:** 24
 
@@ -62,7 +63,8 @@ HTTP URL. This API can be used only in the stage model.
 FLIGHT_NUMBER = 4
 ```
 
-Flight number. This API can be used only in the stage model.
+Flight number.
+This API can be used only in the stage model.
 
 **Since:** 24
 

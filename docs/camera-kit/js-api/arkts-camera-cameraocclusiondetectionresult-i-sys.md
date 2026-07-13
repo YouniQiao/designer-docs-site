@@ -1,8 +1,9 @@
-# CameraOcclusionDetectionResult
+# CameraOcclusionDetectionResult (System API)
 
-Describes the instance returned by the occlusion status callback, which indicates whether the camera lens is blocked or dirty.
+Describes the instance returned by the occlusion status callback, which indicates whether the camera lens is
+blocked or dirty.
 
-**Since:** 12
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -24,9 +25,9 @@ Whether the camera lens is dirty. **true** if dirty, false otherwise.
 
 **Type:** boolean
 
-**Since:** 13
+**Since:** 23
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -42,9 +43,9 @@ Whether the camera lens is blocked. **true** if blocked, **false** otherwise.
 
 **Type:** boolean
 
-**Since:** 12
+**Since:** 23
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

@@ -1,6 +1,8 @@
 # InputMethodAbility
 
-In the following API examples, you must first use [getInputMethodAbility](arkts-ime-getinputmethodability-f.md#getinputmethodability-1) to obtain an **InputMethodAbility** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use
+[getInputMethodAbility](arkts-ime-getinputmethodability-f.md#getinputmethodability-1) to obtain an **InputMethodAbility**
+instance, and then call the APIs using the obtained instance.
 
 **Since:** 9
 
@@ -9,7 +11,7 @@ In the following API examples, you must first use [getInputMethodAbility](arkts-
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## createPanel
@@ -18,7 +20,23 @@ import { inputMethodEngine } from '@ohos.inputMethodEngine';
 createPanel(ctx: BaseContext, info: PanelInfo, callback: AsyncCallback<Panel>): void
 ```
 
-Creates an input method panel. This API can be called only by the input method application in the [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md#inputmethodextensionability) class. This API uses an asynchronous callback to return the result. > **NOTE** > > Only one [SOFT_KEYBOARD](arkts-ime-paneltype-e.md#paneltype) panel and one > [STATUS_BAR](arkts-ime-paneltype-e.md#paneltype) panel can be created for a single input method. > The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such > as > [window.createWindow](../../apis-arkui/arkts-apis/arkts-arkui-createwindow-f.md#createwindow-1) > , [bindContextMenu](CommonMethod<T>.bindContextMenu), > and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or > [bindMenu](CommonMethod<T>.bindMenu), or set > **showInSubwindow** to **false**.
+Creates an input method panel. This API can be called only by the input method application in the
+[InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md) class. This
+API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Only one [SOFT_KEYBOARD](arkts-ime-paneltype-e.md) panel and one
+> [STATUS_BAR](arkts-ime-paneltype-e.md) panel can be created for a single input method.
+
+> The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such
+> as
+> [window.createWindow](../../apis-arkui/arkts-apis/arkts-arkui-createwindow-f.md#createwindow-1)
+> , [bindContextMenu](CommonMethod<T>.bindContextMenu),
+> and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt
+> alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or
+> [bindMenu](CommonMethod<T>.bindMenu), or set
+> **showInSubwindow** to **false**.
 
 **Since:** 10
 
@@ -75,7 +93,23 @@ class InputMethodExt extends InputMethodExtensionAbility {
 createPanel(ctx: BaseContext, info: PanelInfo): Promise<Panel>
 ```
 
-Creates an input method panel. This API can be called only by the input method application in the [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md#inputmethodextensionability) class. This API uses a promise to return the result. > **NOTE** > > Only one [SOFT_KEYBOARD](arkts-ime-paneltype-e.md#paneltype) panel and one > [STATUS_BAR](arkts-ime-paneltype-e.md#paneltype) panel can be created for a single input method. > The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such > as > [window.createWindow](../../../../windowmanager/application-window-fa.md#setting-the-child-window-of-an-application) > , [bindContextMenu](CommonMethod<T>.bindContextMenu), > and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or > [bindMenu](CommonMethod<T>.bindMenu), or set > **showInSubwindow** to **false**.
+Creates an input method panel. This API can be called only by the input method application in the
+[InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md) class. This
+API uses a promise to return the result.
+
+> **NOTE**
+>
+> Only one [SOFT_KEYBOARD](arkts-ime-paneltype-e.md) panel and one
+> [STATUS_BAR](arkts-ime-paneltype-e.md) panel can be created for a single input method.
+
+> The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such
+> as
+> [window.createWindow](../../../../windowmanager/application-window-fa.md#setting-the-child-window-of-an-application)
+> , [bindContextMenu](CommonMethod<T>.bindContextMenu),
+> and [CustomDialog](./@internal/component/ets/custom_dialog_controller). You are advised to adopt
+> alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or
+> [bindMenu](CommonMethod<T>.bindMenu), or set
+> **showInSubwindow** to **false**.
 
 **Since:** 10
 
@@ -290,7 +324,8 @@ console.error(`getSecurityMode, securityMode is : ${security}`);
 off(type: 'inputStart', callback?: (kbController: KeyboardController, inputClient: InputClient) => void): void
 ```
 
-Disables listening for the input method binding event. This API uses an asynchronous callback to return the result.
+Disables listening for the input method binding event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -344,7 +379,8 @@ inputMethodEngine.getInputMethodAbility().off('inputStop', () => {
 off(type: 'setCallingWindow', callback: (wid: number) => void): void
 ```
 
-Disables listening for the window invocation setting event. This API uses an asynchronous callback to return the result.
+Disables listening for the window invocation setting event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -434,7 +470,8 @@ inputMethodEngine.getInputMethodAbility().off('keyboardHide', () => {
 off(type: 'setSubtype', callback?: (inputMethodSubtype: InputMethodSubtype) => void): void
 ```
 
-Disables listening for the input method subtype setting event. This API uses an asynchronous callback to return the result.
+Disables listening for the input method subtype setting event. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -462,7 +499,8 @@ inputMethodEngine.getInputMethodAbility().off('setSubtype', () => {
 off(type: 'securityModeChange', callback?: Callback<SecurityMode>): void
 ```
 
-Disables listening for the security mode changes of the input method. This API uses an asynchronous callback to return the result.
+Disables listening for the security mode changes of the input method. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 11
 
@@ -494,7 +532,8 @@ inputMethodAbility.off('securityModeChange', securityChangeCallback);
 off(type: 'privateCommand', callback?: Callback<Record<string, CommandDataType>>): void
 ```
 
-Disables listening for the private data event of the input method. This API uses an asynchronous callback to return the result.
+Disables listening for the private data event of the input method. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 12
 
@@ -533,7 +572,8 @@ inputMethodEngine.getInputMethodAbility().off('privateCommand', privateCommandCa
 off(type: 'callingDisplayDidChange', callback?: Callback<number>): void
 ```
 
-Disables listening for changes of the screen ID of the window associated with the edit box. This API uses an asynchronous callback to return the result.
+Disables listening for changes of the screen ID of the window associated with the edit box. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -561,7 +601,8 @@ inputMethodEngine.getInputMethodAbility().off('callingDisplayDidChange', (num: n
 off(type: 'discardTypingText', callback?: Callback<void>): void
 ```
 
-Unsubscribes from the event of discarding candidate words and sends the event to the input method. This API uses an asynchronous callback to return the result.
+Unsubscribes from the event of discarding candidate words and sends the event to the input method. This API uses
+an asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -589,7 +630,8 @@ inputMethodEngine.getInputMethodAbility().off('discardTypingText', () => {
 on(type: 'inputStart', callback: (kbController: KeyboardController, inputClient: InputClient) => void): void
 ```
 
-Enables listening for the input method binding event. This API uses an asynchronous callback to return the result.
+Enables listening for the input method binding event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -620,7 +662,8 @@ inputMethodEngine.getInputMethodAbility()
 on(type: 'inputStop', callback: () => void): void
 ```
 
-Enables listening for the input method unbinding event. This API uses an asynchronous callback to return the result.
+Enables listening for the input method unbinding event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -648,7 +691,8 @@ inputMethodEngine.getInputMethodAbility().on('inputStop', () => {
 on(type: 'setCallingWindow', callback: (wid: number) => void): void
 ```
 
-Enables listening for the window invocation setting event. This API uses an asynchronous callback to return the result.
+Enables listening for the window invocation setting event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -738,7 +782,8 @@ inputMethodEngine.getInputMethodAbility().on('keyboardHide', () => {
 on(type: 'setSubtype', callback: (inputMethodSubtype: InputMethodSubtype) => void): void
 ```
 
-Enables listening for the input method subtype setting event. This API uses an asynchronous callback to return the result.
+Enables listening for the input method subtype setting event. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -768,7 +813,8 @@ inputMethodEngine.getInputMethodAbility().on('setSubtype', (inputMethodSubtype: 
 on(type: 'securityModeChange', callback: Callback<SecurityMode>): void
 ```
 
-Enables listening for the security mode changes of the input method. This API uses an asynchronous callback to return the result.
+Enables listening for the security mode changes of the input method. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 11
 
@@ -797,7 +843,8 @@ inputMethodEngine.getInputMethodAbility()
 on(type: 'privateCommand', callback: Callback<Record<string, CommandDataType>>): void
 ```
 
-Enables listening for the private data event of the input method. This API uses an asynchronous callback to return the result.
+Enables listening for the private data event of the input method. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 12
 
@@ -835,7 +882,8 @@ inputMethodEngine.getInputMethodAbility().on('privateCommand', privateCommandCal
 on(type: 'callingDisplayDidChange', callback: Callback<number>): void
 ```
 
-Enables listening for changes of the screen ID of the window associated with the edit box. This API uses an asynchronous callback to return the result.
+Enables listening for changes of the screen ID of the window associated with the edit box. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 18
 
@@ -870,7 +918,8 @@ inputMethodEngine.getInputMethodAbility().on('callingDisplayDidChange', callingD
 on(type: 'discardTypingText', callback: Callback<void>): void
 ```
 
-Subscribes to the event of discarding candidate words and sends the event to the input method. This API uses an asynchronous callback to return the result.
+Subscribes to the event of discarding candidate words and sends the event to the input method. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 20
 

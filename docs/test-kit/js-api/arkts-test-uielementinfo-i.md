@@ -9,7 +9,7 @@ Provides information about the UI event.
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## bundleName
@@ -34,7 +34,8 @@ Bundle name of the application.
 readonly componentEventType?: ComponentEventType
 ```
 
-Component operation event type. If it is not a component operation event, {@link ComponentEventType.COMPONENT_UNDEFINED} is returned.
+Component operation event type.
+If it is not a component operation event, {@link ComponentEventType.COMPONENT_UNDEFINED} is returned.
 
 **Type:** ComponentEventType
 
@@ -114,7 +115,8 @@ Component or window type.
 readonly windowChangeType?: WindowChangeType
 ```
 
-Window change event type. If the event is not a window change event, {@link WindowChangeType.WINDOW_UNDEFINED} is returned.
+Window change event type.
+If the event is not a window change event, {@link WindowChangeType.WINDOW_UNDEFINED} is returned.
 
 **Type:** WindowChangeType
 

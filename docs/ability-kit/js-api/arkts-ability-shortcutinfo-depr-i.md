@@ -1,12 +1,15 @@
 # ShortcutInfo
 
-> **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [bundleManager-ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md#shortcutinfo) instead.
+> **NOTE**
+>
+> This API has been supported since API version 7 and deprecated since API version 9. You are advised to use
+> [bundleManager-ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [shortcutInfo:ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md#shortcutinfo)
+**Substitutes:** [shortcutInfo:ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md)
 
 **System capability:** SystemCapability.BundleManager.BundleFramework
 

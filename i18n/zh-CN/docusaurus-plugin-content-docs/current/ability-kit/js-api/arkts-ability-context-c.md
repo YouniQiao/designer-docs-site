@@ -2,7 +2,7 @@
 
 Context是Stage模型的上下文基类，主要用于访问特定应用程序的资源，以及执行应用级操作的回调。
 
-**继承/实现关系：** Context extends [BaseContext](arkts-ability-basecontext-c.md#basecontext)
+**继承/实现关系：** Context extends [BaseContext](arkts-ability-basecontext-c.md)
 
 **起始版本：** 9
 
@@ -42,7 +42,8 @@ createAreaModeContext(areaMode: contextConstant.AreaMode): Context
 createDisplayContext(displayId: number): Context
 ```
 
-根据指定的物理屏幕ID创建带有屏幕信息（包括屏幕密度[ScreenDensity](../../apis-localization-kit/arkts-apis/arkts-localization-screendensity-e.md#screendensity)和屏幕方向 [Direction](../../apis-localization-kit/arkts-apis/arkts-localization-direction-e.md#direction)）的应用上下文。
+根据指定的物理屏幕ID创建带有屏幕信息（包括屏幕密度[ScreenDensity](../../apis-localization-kit/arkts-apis/arkts-localization-screendensity-e.md)和屏幕方向
+[Direction](../../apis-localization-kit/arkts-apis/arkts-localization-direction-e.md)）的应用上下文。
 
 **起始版本：** 15
 
@@ -68,7 +69,7 @@ createDisplayContext(displayId: number): Context
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
 ## createModuleContext
 
@@ -76,7 +77,12 @@ createDisplayContext(displayId: number): Context
 createModuleContext(moduleName: string): Context
 ```
 
-根据模块名创建上下文。 > **说明：** > > - 仅支持获取本应用中其他Module的Context和应用内HSP的Context，不支持获取其他应用的Context。 > - 由于创建模块上下文的过程涉及资源查询与初始化，耗时相对较长，在对应用流畅性要求较高的场景下，不建议频繁或多次调用createModuleContext接口创建多个Context实例，以免影响用户体验。
+根据模块名创建上下文。
+
+> **说明：**
+>
+> - 仅支持获取本应用中其他Module的Context和应用内HSP的Context，不支持获取其他应用的Context。
+> - 由于创建模块上下文的过程涉及资源查询与初始化，耗时相对较长，在对应用流畅性要求较高的场景下，不建议频繁或多次调用createModuleContext接口创建多个Context实例，以免影响用户体验。
 
 **起始版本：** 9
 
@@ -106,7 +112,7 @@ createModuleContext(moduleName: string): Context
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
 ## getApplicationContext
 
@@ -134,7 +140,7 @@ getApplicationContext(): ApplicationContext
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 
 ## getGroupDir
 
@@ -163,7 +169,7 @@ getGroupDir(dataGroupID: string, callback: AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-上下文对象不存在) | The context does not exist. |
 
 ## getGroupDir
@@ -198,7 +204,7 @@ getGroupDir(dataGroupID: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified. 2.Incorrect parameter types. |
 | [16000011](../errorcode-ability.md#16000011-上下文对象不存在) | The context does not exist. |
 
 ## isContextOf
@@ -271,7 +277,8 @@ area: contextConstant.AreaMode
 bundleCodeDir: string
 ```
 
-安装包目录。不能拼接路径访问资源文件，请使用[资源管理接口](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md#resourcemanager)访问资源，详情参考 [应用沙箱目录](../../../../file-management/app-sandbox-directory.md)。
+安装包目录。不能拼接路径访问资源文件，请使用[资源管理接口](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md)访问资源，详情参考
+[应用沙箱目录](../../../../file-management/app-sandbox-directory.md)。
 
 **类型：** string
 
@@ -451,7 +458,11 @@ processName: string
 resourceDir: string
 ```
 
-资源目录。 > **说明：** > > 需要开发者手动在`\<module-name>\resource`路径下创建`resfile`目录。创建的`resfile`目录仅支持以只读方式访问。
+资源目录。
+
+> **说明：**
+>
+> 需要开发者手动在`\<module-name>\resource`路径下创建`resfile`目录。创建的`resfile`目录仅支持以只读方式访问。
 
 **类型：** string
 

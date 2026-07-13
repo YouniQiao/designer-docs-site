@@ -1,6 +1,8 @@
 # InsightIntentContext
 
-本模块提供意图执行上下文，是[意图执行基类](arkts-ability-insightintentexecutor-c.md#insightintentexecutor)和 [@InsightIntentEntry的意图执行基类](arkts-ability-insightintententryexecutor-c.md#insightintententryexecutor)的属性，为意图执行提 供基础能力，例如启动本应用内的[UIAbility组件](arkts-app-ability-uiability.md)。
+本模块提供意图执行上下文，是[意图执行基类](arkts-ability-insightintentexecutor-c.md)和
+[@InsightIntentEntry的意图执行基类](arkts-ability-insightintententryexecutor-c.md)的属性，为意图执行提
+供基础能力，例如启动本应用内的[UIAbility组件](arkts-app-ability-uiability.md)。
 
 **起始版本：** 11
 
@@ -12,7 +14,7 @@
 setReturnModeForUIAbilityForeground(returnMode: insightIntent.ReturnMode): void
 ```
 
-设置意图执行结果的返回形式，适用于执行模式为[UI_ABILITY_FOREGROUND](arkts-ability-executemode-e.md#executemode)的意图。
+设置意图执行结果的返回形式，适用于执行模式为[UI_ABILITY_FOREGROUND](arkts-ability-executemode-e.md)的意图。
 
 **起始版本：** 23
 
@@ -84,7 +86,7 @@ export default class InsightIntentExecutorUI extends InsightIntentExecutor {
 setReturnModeForUIExtensionAbility(returnMode: insightIntent.ReturnMode): void
 ```
 
-设置意图执行结果的返回形式，适用于执行模式为[UI_EXTENSION_ABILITY](arkts-ability-executemode-e.md#executemode)的意图。
+设置意图执行结果的返回形式，适用于执行模式为[UI_EXTENSION_ABILITY](arkts-ability-executemode-e.md)的意图。
 
 **起始版本：** 23
 
@@ -176,7 +178,7 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
 | [16000005](../errorcode-ability.md#16000005-指定的进程权限校验失败) | The specified process does not have the permission. |
@@ -264,7 +266,7 @@ startAbility(want: Want): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
 | [16000005](../errorcode-ability.md#16000005-指定的进程权限校验失败) | The specified process does not have the permission. |
@@ -321,7 +323,11 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 instanceId: number
 ```
 
-意图实例唯一ID。用于通过 [insightIntentProvider.sendExecuteResult接口] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} 和 [insightIntentProvider.sendIntentResult接口] {@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}返回指定意图的执行结果。
+意图实例唯一ID。用于通过
+[insightIntentProvider.sendExecuteResult接口]
+{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendExecuteResult} 和
+[insightIntentProvider.sendIntentResult接口]
+{@link @ohos.app.ability.insightIntentProvider:insightIntentProvider.sendIntentResult}返回指定意图的执行结果。
 
 **类型：** number
 

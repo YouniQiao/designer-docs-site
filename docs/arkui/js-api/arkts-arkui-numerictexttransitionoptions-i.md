@@ -12,7 +12,13 @@ Defines the options of the numeric flip animation.
 enableBlur?: boolean
 ```
 
-Whether to enable the blur effect for the flip animation. Default value: **false** **true**: Enable the blur effect. **false**: Disable the blur effect.
+Whether to enable the blur effect for the flip animation.
+
+Default value: **false**
+
+**true**: Enable the blur effect.
+
+**false**: Disable the blur effect.
 
 **Type:** boolean
 
@@ -30,7 +36,9 @@ Whether to enable the blur effect for the flip animation. Default value: **false
 flipDirection?: FlipDirection
 ```
 
-Direction of the flip animation. Default value: **FlipDirection.DOWN**
+Direction of the flip animation.
+
+Default value: **FlipDirection.DOWN**
 
 **Type:** FlipDirection
 

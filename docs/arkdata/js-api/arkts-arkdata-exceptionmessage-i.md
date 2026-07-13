@@ -9,7 +9,7 @@ Represents an exception message about the SQL statement executed by the database
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## code
@@ -18,7 +18,8 @@ import { relationalStore } from '@ohos.data.relationalStore';
 code: number
 ```
 
-Error code returned by the executed SQL statement. For details about the values and meanings, see [SQLite Error Codes](https://www.sqlite.org/rescode.html).
+Error code returned by the executed SQL statement. For details about the values and meanings, see
+[SQLite Error Codes](https://www.sqlite.org/rescode.html).
 
 **Type:** number
 

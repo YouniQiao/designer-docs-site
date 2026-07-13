@@ -6,7 +6,16 @@
 function queryOpenedEnterpriseDlpFiles(options?: DlpFileQueryOptions): Promise<Array<string>>
 ```
 
-查询已打开且符合指定选项的企业DLP文件的URI列表。使用Promise异步回调。 在需要管理或追踪当前应用已打开的企业DLP文件时调用该接口，可用于文件状态检查、资源管理等场景。 > **说明：** > > - 该接口仅能查询调用方应用通过[generateDlpFileForEnterprise](arkts-dataprotection-generatedlpfileforenterprise-f-sys.md#generatedlpfileforenterprise-1)生成的企业DLP文件，无法查询 > 其他应用生成的企业DLP文件。 > > - 相同分类标签的只读企业DLP文件在同一个沙箱中打开。如果一个沙箱中打开了多个相同标签的只读企业DLP文件，则查询结果返回所有该沙箱打开过文件的URI（包括手动关闭的文件）。
+查询已打开且符合指定选项的企业DLP文件的URI列表。使用Promise异步回调。
+
+在需要管理或追踪当前应用已打开的企业DLP文件时调用该接口，可用于文件状态检查、资源管理等场景。
+
+> **说明：**
+>
+> - 该接口仅能查询调用方应用通过[generateDlpFileForEnterprise](arkts-dataprotection-generatedlpfileforenterprise-f-sys.md#generatedlpfileforenterprise-1)生成的企业DLP文件，无法查询
+> 其他应用生成的企业DLP文件。
+>
+> - 相同分类标签的只读企业DLP文件在同一个沙箱中打开。如果一个沙箱中打开了多个相同标签的只读企业DLP文件，则查询结果返回所有该沙箱打开过文件的URI（包括手动关闭的文件）。
 
 **起始版本：** 26.0.0
 
@@ -33,7 +42,7 @@ function queryOpenedEnterpriseDlpFiles(options?: DlpFileQueryOptions): Promise<A
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

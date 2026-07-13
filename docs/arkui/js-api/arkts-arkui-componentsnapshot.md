@@ -1,6 +1,32 @@
 # @ohos.arkui.componentSnapshot
 
-本模块提供获取组件截图的能力，包括已加载的组件的截图和没有加载的组件的截图。组件截图只能够截取组件大小的区域，如果组件的绘制超出了它的区域，或子组件的绘制超出了父组件的区域，这些在组件区域外绘制的内容不会在截图中呈现。兄弟节点堆叠在组 件区域内，截图不会显示兄弟组件。 缩放、平移、旋转等图形变换属性只对被截图组件的子组件生效；对目标组件本身应用图形变换属性不生效，显示的仍然是图形变换前的效果。 组件截图典型使用场景（如长截图）及最佳实践请参考[使用组件截图](docroot://ui/arkts-uicontext-component-snapshot.md)。 > **说明：** > > - 对于使用[XComponent]{@link xcomponent}的场景，例如：Video或者相机流媒体展示类组件，不建议使用组件截图相关接口，建议使用 > [createPixelMapFromSurface]{@link @ohos.multimedia.image:image.createPixelMapFromSurface(surfaceId: string, region: Region)} > 直接获取图片。 > > - 如果组件自身内容不能填满组件大小区域，那么剩余位置截图返回的内容为透明像素。如果组件使用了[图像效果]{@link common}类属性或其他的效果类属性，则可能产生非用户预期的截图结果。请排查是否需要填充组件透明内容区域，或 > 使用窗口截图接口[snapshot]{@link @ohos.window:window.Window#snapshot(callback: AsyncCallback<image.PixelMap>)}替代。 > > - 示例效果请以真机运行为准，当前 DevEco Studio预览器不支持。
+The **componentSnapshot** module provides APIs for obtaining component snapshots, including snapshots of components
+that have been loaded and snapshots of components that have not been loaded yet. Snapshots are strictly limited to
+the component's layout bounds. Content drawn outside the area of the owning component or the parent component is not
+visible in the snapshots. In addition, sibling components stacked in the component's area are not displayed in the
+snapshot.
+
+Transformation attributes such as scaling, translation, and rotation only apply to the child components of the target
+component. Applying these transformation attributes directly to the target component itself has no effect; the
+snapshot will still display the component as it appears before any transformations are applied.
+
+For typical use cases (for example, long screenshots) and best practices of component snapshots, see
+[Using Component Snapshot (ComponentSnapshot)](../../../../ui/arkts-uicontext-component-snapshot.md).
+
+> **NOTE**
+>
+> - In scenarios where [XComponent](../arkts-components/arkts-arkui-xcomponent.md) is used to, for example, display video or camera streams,
+> obtain images through
+> [createPixelMapFromSurface](../../apis-image-kit/arkts-apis/arkts-image-createpixelmapfromsurface-f.md#createpixelmapfromsurface-1),
+> instead of through an API in this module.
+>
+> - If the content of a component does not fill the entire area allocated for it, any remaining space in the snapshot
+> will be rendered as transparent pixels. In addition, if the component uses [image effects](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) or other
+> effect-related attributes, the resulting snapshot may not be as expected. To address these potential issues, check
+> whether the component's transparent content area needs to be filled, or use the window screenshot API
+> [snapshot](arkts-arkui-window-i.md#snapshot-1) instead.
+>
+> - You can preview how this component looks on a real device, but not in DevEco Studio Previewer.
 
 **Since:** 10
 
@@ -18,26 +44,26 @@ import { componentSnapshot } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [createFromBuilder](arkts-componentsnapshot-createfrombuilder-f.md#createFromBuilder-1) | 在应用后台渲染CustomBuilder自定义组件，并输出其截图。通过回调返回结果并支持在回调中获取离屏组件绘制区域坐标和大小。 > **说明：** > > - 从API version 12开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getComponentSnapshot]{@link @ohos.arkui.UIContext:UIContext#getComponentSnapshot}方法 > 获取当前UI上下文关联的[ComponentSnapshot]{@link @ohos.arkui.UIContext:ComponentSnapshot}对象。 > > - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟。 > > - builder中的组件不支持设置动画相关的属性，如[transition]{@link common}。 > > - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image]{@link image}组件、[Web]{@link web}组件。 |
-| [createFromBuilder](arkts-componentsnapshot-createfrombuilder-f.md#createFromBuilder-2) | 在应用后台渲染CustomBuilder自定义组件，并输出其截图。通过Promise返回结果，支持获取离屏组件绘制区域的坐标和大小。 > **说明：** > > - 从API version 12开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getComponentSnapshot]{@link @ohos.arkui.UIContext:UIContext#getComponentSnapshot}方法 > 获取当前UI上下文关联的[ComponentSnapshot]{@link @ohos.arkui.UIContext:ComponentSnapshot}对象。 > > - 由于需要等待组件构建、渲染成功，离屏截图的回调有500ms以内的延迟。 > > - builder中的组件不支持设置动画相关的属性，如[transition]{@link common}。 > > - 部分执行耗时任务的组件可能无法及时在截图前加载完成，因此会截取不到加载成功后的图像。例如：加载网络图片的[Image]{@link image}组件、[Web]{@link web}组件。 |
-| [get](arkts-componentsnapshot-get-f.md#get-1) | 获取已加载的组件的截图，传入组件的[组件标识]{@link common}，找到对应组件进行截图。通过回调返回结果。 > **说明：** > > - 从API version 12开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getComponentSnapshot]{@link @ohos.arkui.UIContext:UIContext#getComponentSnapshot}方法 > 获取当前UI上下文关联的[ComponentSnapshot]{@link @ohos.arkui.UIContext:ComponentSnapshot}对象。 > > - 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。 |
-| [get](arkts-componentsnapshot-get-f.md#get-2) | 获取已加载的组件的截图，传入组件的[组件标识]{@link common}，找到对应组件进行截图。通过Promise返回结果。 > **说明：** > > - 从API version 12开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getComponentSnapshot]{@link @ohos.arkui.UIContext:UIContext#getComponentSnapshot}方法 > 获取当前UI上下文关联的[ComponentSnapshot]{@link @ohos.arkui.UIContext:ComponentSnapshot}对象。 > > - 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。 |
-| [getSync](arkts-componentsnapshot-getsync-f.md#getSync-1) | 获取已加载的组件的截图，传入组件的[组件标识]{@link common}，找到对应组件进行截图。同步等待截图完成返回[PixelMap]{@link @ohos.multimedia.image:image.PixelMap}。 > **说明：** > > 截图会获取最近一帧的绘制内容。如果在组件触发更新的同时调用截图，更新的渲染内容不会被截取到，截图会返回上一帧的绘制内容。 |
+| [createFromBuilder](arkts-arkui-createfrombuilder-f.md#createfrombuilder-1) | Renders a custom component in the application background and outputs its snapshot. This API uses an asynchronouscallback to return the result. The coordinates and size of the offscreen component's drawing area can be obtainedthrough the callback.&gt; **NOTE**&gt;&gt; - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)&gt; API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)&gt; object associated with the current UI context.&gt;&gt; - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots&gt; has a delay of less than 500 ms.&gt;&gt; - Components in the builder do not support the setting of animation-related attributes, such as&gt; [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).&gt;&gt; - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component&gt; that is loading online images, its loading may be still in progress when this API is called. In this case, the&gt; output snapshot does not represent the component in the way it looks when the loading is successfully completed. |
+| [createFromBuilder](arkts-arkui-createfrombuilder-f.md#createfrombuilder-2) | Renders a custom component in the application background and outputs its snapshot. This API uses a promise toreturn the result. The coordinates and size of the offscreen component's drawing area can be obtained through thecallback.&gt; **NOTE**&gt;&gt; - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)&gt; API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)&gt; object associated with the current UI context.&gt;&gt; - To account for the time spent in awaiting component building and rendering, the callback of offscreen snapshots&gt; has a delay of less than 500 ms.&gt;&gt; - Components in the builder do not support the setting of animation-related attributes, such as&gt; [transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).&gt;&gt; - If a component is on a time-consuming task, for example, an [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) or [Web](../../apis-arkweb/arkts-components/arkts-arkweb-web.md) component&gt; that is loading online images, its loading may be still in progress when this API is called. In this case, the&gt; output snapshot does not represent the component in the way it looks when the loading is successfully completed. |
+| [get](arkts-arkui-get-f.md#get-1) | Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). ThisAPI uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)&gt; API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)&gt; object associated with the current UI context.&gt;&gt; - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an&gt; update, the re-rendered content will not be included in the obtained snapshot. |
+| [get](arkts-arkui-get-f.md#get-2) | Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). ThisAPI uses a promise to return the result.&gt; **NOTE**&gt;&gt; - Since API version 12, you can use the [getComponentSnapshot](arkts-arkui-uicontext-c.md#getcomponentsnapshot-1)&gt; API in [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentSnapshot](arkts-arkui-componentsnapshot-c.md)&gt; object associated with the current UI context.&gt;&gt; - The snapshot captures content rendered in the last frame. If this API is called when the component triggers an&gt; update, the re-rendered content will not be included in the obtained snapshot. |
+| [getSync](arkts-arkui-getsync-f.md#getsync-1) | Obtains the snapshot of a component that has been loaded based on the provided [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). ThisAPI synchronously waits for the snapshot to complete and returns a[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md) object.&gt; **NOTE**&gt;&gt; The snapshot captures content rendered in the last frame. If this API is called when the component triggers an&gt; update, the re-rendered content will not be included in the obtained snapshot. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ColorModeOptions](arkts-componentsnapshot-colormodeoptions-i.md) | 定义截图时所使用的色彩空间。 |
-| [DynamicRangeModeOptions](arkts-componentsnapshot-dynamicrangemodeoptions-i.md) | 定义截图所使用的动态范围模式。 |
-| [LocalizedSnapshotRegion](arkts-componentsnapshot-localizedsnapshotregion-i.md) | 定义组件截图的矩形区域，start和end的值在布局方向为LTR时指定为left和right，在布局方向为RTL时指定为right和left。 > **说明：** > > 直接使用componentSnapshot可能导致[UI上下文不明确](docroot://ui/arkts-global-interface.md#ui上下文不明确)的问题，建议使用getUIContext()获取 > [UIContext]{@link @ohos.arkui.UIContext}实例，并使用[getComponentSnapshot]{@link @ohos.arkui.UIContext:UIContext#getComponentSnapshot} > 获取绑定实例的componentSnapshot。 |
-| [SnapshotOptions](arkts-componentsnapshot-snapshotoptions-i.md) | 定义截图额外选项。 |
-| [SnapshotRegion](arkts-componentsnapshot-snapshotregion-i.md) | 定义组件截图的矩形区域。 |
-| [SnapshotSizeLimitation](arkts-componentsnapshot-snapshotsizelimitation-i.md) | 定义组件截图的尺寸限制。 |
+| [ColorModeOptions](arkts-arkui-colormodeoptions-i.md) | Defines the color space used for the snapshot. |
+| [DynamicRangeModeOptions](arkts-arkui-dynamicrangemodeoptions-i.md) | Defines the dynamic range mode used for the snapshot. |
+| [LocalizedSnapshotRegion](arkts-arkui-localizedsnapshotregion-i.md) | Defines the rectangular region for capturing the component snapshot, with coordinates adjusted based on the layoutdirection (LTR or RTL).&gt; **NOTE**&gt;&gt; Directly using **componentSnapshot** can lead to the issue of&gt; [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain a&gt; **UIContext** instance using **getUIContext()**, and then obtain the associated **componentSnapshot** object&gt; using&gt; [getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12). |
+| [SnapshotOptions](arkts-arkui-snapshotoptions-i.md) | Defines the extra options for snapshot taking. |
+| [SnapshotRegion](arkts-arkui-snapshotregion-i.md) | Defines the rectangular region for capturing the component snapshot. |
+| [SnapshotSizeLimitation](arkts-arkui-snapshotsizelimitation-i.md) | Defines the size limit of a component screenshot. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [SnapshotRegionType](arkts-componentsnapshot-snapshotregiontype-t.md) | 表示组件截图区域。 |
+| [SnapshotRegionType](arkts-arkui-snapshotregiontype-t.md) | Defines the snapshot region rect type. |
 

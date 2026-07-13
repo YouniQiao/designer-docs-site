@@ -9,7 +9,7 @@ Defines shortcut key options.
 ## Modules to Import
 
 ```TypeScript
-import { inputConsumer } from '@ohos.multimodalInput.inputConsumer';
+import { inputConsumer } from '@kit.InputKit';
 ```
 
 ## finalKey
@@ -18,7 +18,10 @@ import { inputConsumer } from '@ohos.multimodalInput.inputConsumer';
 finalKey: number
 ```
 
-Modified key, which can be any key except the modifier keys and Meta key. For details about the keys, see [@ohos.multimodalInput.keyCode (Keycode)](arkts-input-keycode-e.md#keycode). For example, in **Ctrl+Shift+Esc**, **Esc** is the modifier key.
+Modified key, which can be any key except the modifier keys and Meta key. For details about the keys, see
+[@ohos.multimodalInput.keyCode (Keycode)](arkts-input-keycode-e.md).
+
+For example, in **Ctrl+Shift+Esc**, **Esc** is the modifier key.
 
 **Type:** number
 
@@ -32,7 +35,8 @@ Modified key, which can be any key except the modifier keys and Meta key. For de
 isRepeat?: boolean
 ```
 
-Whether to report repeated key events. The value **true** means to report repeated key events, and the value **false** means the opposite. The default value is **true**.
+Whether to report repeated key events. The value **true** means to report repeated key events, and the value
+**false** means the opposite. The default value is **true**.
 
 **Type:** boolean
 
@@ -46,7 +50,10 @@ Whether to report repeated key events. The value **true** means to report repeat
 preKeys: Array<number>
 ```
 
-Modifier key set (including Ctrl, Shift, and Alt). One to four modifier keys are supported. There is no requirement on the sequence of modifier keys. For example, in **Ctrl+Shift+Esc**, **Ctrl** and **Shift** are modifier keys.
+Modifier key set (including Ctrl, Shift, and Alt). One to four modifier keys are supported. There is no
+requirement on the sequence of modifier keys.
+
+For example, in **Ctrl+Shift+Esc**, **Ctrl** and **Shift** are modifier keys.
 
 **Type:** Array<number>
 

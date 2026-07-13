@@ -12,7 +12,8 @@ Provides parameters for page scrolling behavior.
 animation?: boolean
 ```
 
-Whether to enable the page-turning animation.The value true means to enable the page-turning animation, and false means the opposite.
+Whether to enable the page-turning animation.The value true means to enable the page-turning animation,
+and false means the opposite.
 
 **Type:** boolean
 
@@ -32,7 +33,8 @@ Whether to enable the page-turning animation.The value true means to enable the 
 next: boolean
 ```
 
-Whether to turn to the next page.The value true means to scroll to the next page, and false means to scroll to the previous page.
+Whether to turn to the next page.The value true means to scroll to the next page,
+and false means to scroll to the previous page.
 
 **Type:** boolean
 

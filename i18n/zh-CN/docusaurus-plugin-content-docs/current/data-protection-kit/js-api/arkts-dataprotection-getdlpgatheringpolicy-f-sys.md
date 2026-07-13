@@ -6,7 +6,9 @@
 function getDLPGatheringPolicy(): Promise<GatheringPolicyType>
 ```
 
-查询DLP沙箱聚合策略。使用Promise异步回调。 应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
+查询DLP沙箱聚合策略。使用Promise异步回调。
+
+应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
 
 **起始版本：** 10
 
@@ -51,7 +53,9 @@ dlpPermission.getDLPGatheringPolicy().then((gatheringPolicy: dlpPermission.Gathe
 function getDLPGatheringPolicy(callback: AsyncCallback<GatheringPolicyType>): void
 ```
 
-查询DLP沙箱聚合策略。使用callback异步回调。 应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
+查询DLP沙箱聚合策略。使用callback异步回调。
+
+应用需要获取当前系统的DLP沙箱聚合策略配置时使用此接口。
 
 **起始版本：** 10
 
@@ -73,7 +77,7 @@ function getDLPGatheringPolicy(callback: AsyncCallback<GatheringPolicyType>): vo
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

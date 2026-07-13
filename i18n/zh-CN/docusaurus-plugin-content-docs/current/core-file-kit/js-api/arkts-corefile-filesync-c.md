@@ -22,7 +22,7 @@ constructor()
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
 
 **示例：**
 
@@ -53,7 +53,7 @@ getLastSyncTime(): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
 | 13600001 | IPC error. |
 
 **示例：**
@@ -95,7 +95,7 @@ getLastSyncTime(callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error. |
 
 **示例：**
@@ -139,7 +139,7 @@ off(event: 'progress', callback?: Callback<SyncProgress>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;2.Incorrect parameter types. |
 | 13600001 | IPC error |
 
 **示例：**
@@ -180,7 +180,7 @@ on(event: 'progress', callback: Callback<SyncProgress>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error |
 
 **示例：**
@@ -217,7 +217,7 @@ start(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
 | 13600001 | IPC error. |
 | 22400001 | Cloud status not ready. |
 | 22400002 | Network unavailable. |
@@ -266,7 +266,7 @@ start(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;2.Incorrect parameter types. |
 | 13600001 | IPC error. |
 | 22400001 | Cloud status not ready. |
 | 22400002 | Network unavailable. |
@@ -295,7 +295,9 @@ fileSync.start((err: BusinessError) => {
 stop(): Promise<void>
 ```
 
-异步方法停止云盘端云同步。使用Promise异步回调。 调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
+异步方法停止云盘端云同步。使用Promise异步回调。
+
+调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
 
 **起始版本：** 12
 
@@ -311,7 +313,7 @@ stop(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Incorrect parameter types. |
 | 13600001 | IPC error. |
 
 **示例：**
@@ -335,7 +337,9 @@ fileSync.stop().then(() => {
 stop(callback: AsyncCallback<void>): void
 ```
 
-异步方法停止云盘端云同步。使用callback异步回调。 调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
+异步方法停止云盘端云同步。使用callback异步回调。
+
+调用stop接口，同步流程会停止。再次调用[start](arkts-corefile-filesync-c.md#start-1)接口会继续同步。
 
 **起始版本：** 12
 
@@ -351,7 +355,7 @@ stop(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error. |
 
 **示例：**

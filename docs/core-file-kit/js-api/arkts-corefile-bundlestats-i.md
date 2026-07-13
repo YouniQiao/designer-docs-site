@@ -9,7 +9,7 @@ Get the bundle statistics.
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## appSize
@@ -18,7 +18,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 appSize: number
 ```
 
-The size of application installation data. <br>Unit: Byte.
+The size of application installation data.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -32,7 +33,8 @@ The size of application installation data. <br>Unit: Byte.
 cacheSize: number
 ```
 
-The size of application cache data. <br>Unit: Byte.
+The size of application cache data.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -46,7 +48,8 @@ The size of application cache data. <br>Unit: Byte.
 dataSize: number
 ```
 
-The size of application local data, distributed data and database data. <br>Unit: Byte.
+The size of application local data, distributed data and database data.
+<br>Unit: Byte.
 
 **Type:** number
 

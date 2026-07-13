@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## recoverForms
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function recoverForms(formIds: Array<string>): Promise<void>
 ```
 
-Recovers recycled widgets and updates their status to non-recyclable, or updates the status of widgets to non- recyclable if the widgets are not recycled. This API uses a promise to return the result.
+Recovers recycled widgets and updates their status to non-recyclable, or updates the status of widgets to non-
+recyclable if the widgets are not recycled. This API uses a promise to return the result.
 
 **Since:** 11
 

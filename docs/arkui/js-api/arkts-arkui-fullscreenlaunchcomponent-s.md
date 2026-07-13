@@ -1,6 +1,8 @@
 # FullScreenLaunchComponent
 
-Declares the FullScreenLaunchComponent, a component provided by ArkUI that allows you to define and use it in your application through the ArkTS-based declarative development paradigm.
+Declares the FullScreenLaunchComponent, a component provided by ArkUI that allows
+you to define and use it in your application through the ArkTS-based declarative
+development paradigm.
 
 **Since:** 12
 
@@ -9,7 +11,7 @@ Declares the FullScreenLaunchComponent, a component provided by ArkUI that allow
 ## Modules to Import
 
 ```TypeScript
-import { FullScreenLaunchComponent } from '@ohos.arkui.advanced.FullScreenLaunchComponent';
+import { FullScreenLaunchComponent } from '@kit.ArkUI';
 ```
 
 ## appId
@@ -40,7 +42,7 @@ Sets the component content.
 
 **Since:** 12
 
-**Decorator:** @Builder
+**Decorator:** @BuilderParam
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -52,7 +54,9 @@ Sets the component content.
 onError?: ErrorCallback
 ```
 
-Callback triggered when an error occurs during running of the started ExtensionAbility. It is supported only when the atomic service runs in embedded mode, with the parameter being of type BusinessError.
+Callback triggered when an error occurs during running of the started ExtensionAbility.
+It is supported only when the atomic service runs in embedded mode,
+with the parameter being of type BusinessError.
 
 **Type:** ErrorCallback
 
@@ -84,7 +88,9 @@ Indicates the callback of onReceive.
 onTerminated?: Callback<TerminationInfo>
 ```
 
-Callback triggered when the EmbeddableUIAbility is terminated to receive the information about the termination. It is supported only when the atomic service runs in embedded mode, with the parameter being of type TerminationInfo.
+Callback triggered when the EmbeddableUIAbility is terminated to receive the information
+about the termination. It is supported only when the atomic service runs in embedded mode,
+with the parameter being of type TerminationInfo.
 
 **Type:** Callback<TerminationInfo>
 

@@ -40,7 +40,8 @@ Called when the system shares the form.
 onShareForm?(formId: string): Record<string, Object>
 ```
 
-Called when the system shares the form. The ability of this function is same as onShare. If both are set, this function will be called.
+Called when the system shares the form.
+The ability of this function is same as onShare. If both are set, this function will be called.
 
 **Since:** 11
 

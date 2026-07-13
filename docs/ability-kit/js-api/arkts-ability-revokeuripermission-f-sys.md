@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { uriPermissionManager } from '@ohos.application.uriPermissionManager';
+import { uriPermissionManager } from '@kit.AbilityKit';
 ```
 
 ## revokeUriPermission
@@ -12,7 +12,16 @@ import { uriPermissionManager } from '@ohos.application.uriPermissionManager';
 function revokeUriPermission(uri: string, targetBundleName: string, callback: AsyncCallback<number>): void
 ```
 
-Revokes the URI permission from an application. This API uses an asynchronous callback to return the result. > **NOTE** > > - This API can be used to revoke the URI permission of another application obtained by this application or URI > permission granted by this application. > > - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the > [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the > system cannot guarantee their functions.
+Revokes the URI permission from an application. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> - This API can be used to revoke the URI permission of another application obtained by this application or URI
+> permission granted by this application.
+>
+> - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the
+> [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the
+> system cannot guarantee their functions.
 
 **Since:** 10
 
@@ -40,7 +49,7 @@ Revokes the URI permission from an application. This API uses an asynchronous ca
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-specified-uri-type-is-invalid) | Invalid URI type. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 and later |
 
 **Example**
 
@@ -67,7 +76,16 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName, (error) => {
 function revokeUriPermission(uri: string, targetBundleName: string): Promise<number>
 ```
 
-Revokes the URI permission from an application. This API uses a promise to return the result. > **NOTE** > > - This API can be used to revoke the URI permission of another application obtained by this application or URI > permission granted by this application. > > - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the > [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the > system cannot guarantee their functions.
+Revokes the URI permission from an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - This API can be used to revoke the URI permission of another application obtained by this application or URI
+> permission granted by this application.
+>
+> - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the
+> [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the
+> system cannot guarantee their functions.
 
 **Since:** 10
 
@@ -100,7 +118,7 @@ Revokes the URI permission from an application. This API uses a promise to retur
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-specified-uri-type-is-invalid) | Invalid URI type. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 and later |
 
 **Example**
 
@@ -127,7 +145,19 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName)
 function revokeUriPermission(uri: string, targetBundleName: string, appCloneIndex: number): Promise<void>
 ```
 
-Revokes the URI permission from an application. This API uses a promise to return the result. > **NOTE** > > - This API can be used to revoke the URI permission of another application obtained by this application or URI > permission granted by this application. > > - This API can be used to revoke the URI permissions granted to a cloned application. You need to specify the > application bundle name and index of the cloned application. > > - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the > [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the > system cannot guarantee their functions.
+Revokes the URI permission from an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - This API can be used to revoke the URI permission of another application obtained by this application or URI
+> permission granted by this application.
+>
+> - This API can be used to revoke the URI permissions granted to a cloned application. You need to specify the
+> application bundle name and index of the cloned application.
+>
+> - URI processing involves encoding and decoding. Therefore, the input URI must be obtained through the
+> [getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-geturifrompath-f.md#geturifrompath-1) API. For URIs combined by the application, the
+> system cannot guarantee their functions.
 
 **Since:** 14
 
@@ -158,7 +188,7 @@ Revokes the URI permission from an application. This API uses a promise to retur
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-specified-uri-type-is-invalid) | Invalid URI type. |
 | [16000081](../errorcode-ability.md#16000081-failed-to-obtain-the-target-application-information) | Failed to obtain the target application information. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 19 and later |
 
 **Example**
 

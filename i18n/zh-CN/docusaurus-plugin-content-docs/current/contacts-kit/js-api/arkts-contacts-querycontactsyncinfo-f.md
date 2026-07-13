@@ -6,7 +6,9 @@
 function queryContactSyncInfo(context: Context): Promise<Array<ContactSyncInfo>>
 ```
 
-查询调用应用程序正在进行的联系人同步信息。 如果返回的联系人同步信息为空，则调用方不进行联系人同步或联系人同步已完成。
+查询调用应用程序正在进行的联系人同步信息。
+
+如果返回的联系人同步信息为空，则调用方不进行联系人同步或联系人同步已完成。
 
 **起始版本：** 26.0.0
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## setPacUrl
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function setPacUrl(pacUrl: string): void
 ```
 
-Set the URL {@link pacUrl} of the current PAC script. To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
+Set the URL {@link pacUrl} of the current PAC script.
+To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
 
 **Since:** 15
 

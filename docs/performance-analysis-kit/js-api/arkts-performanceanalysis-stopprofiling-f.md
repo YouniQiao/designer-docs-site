@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## stopProfiling
@@ -12,7 +12,9 @@ import { hidebug } from '@ohos.hidebug';
 function stopProfiling(): void
 ```
 
-Stops the VM profiling method. **stopProfiling()** and **startProfiling(filename: string)** are called in pairs. **startProfiling(filename: string)** always occurs before **stopProfiling()**. You are advised not to call either of these methods repeatedly. Otherwise, an exception may occur.
+Stops the VM profiling method. **stopProfiling()** and **startProfiling(filename: string)** are called in pairs.
+**startProfiling(filename: string)** always occurs before **stopProfiling()**. You are advised not to call either
+of these methods repeatedly. Otherwise, an exception may occur.
 
 **Since:** 8
 

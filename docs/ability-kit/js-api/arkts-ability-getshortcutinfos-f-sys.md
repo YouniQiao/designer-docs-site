@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { BundleStatusCallback } from '@ohos.bundle.innerBundleManager';
+import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
 ## getShortcutInfos
@@ -12,7 +12,14 @@ import { BundleStatusCallback } from '@ohos.bundle.innerBundleManager';
 function getShortcutInfos(bundleName: string, callback: AsyncCallback<Array<ShortcutInfo>>): void
 ```
 
-Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>)) > instead.
+Obtains an array of the shortcut information based on a given bundle name. This API uses an asynchronous callback
+to return the result.
+
+> **NOTE**
+>
+> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>))
+> instead.
 
 **Since:** 8
 
@@ -40,7 +47,14 @@ Obtains an array of the shortcut information based on a given bundle name. This 
 function getShortcutInfos(bundleName: string): Promise<Array<ShortcutInfo>>
 ```
 
-Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>)) > instead.
+Obtains an array of the shortcut information based on a given bundle name. This API uses a promise to return the
+result.
+
+> **NOTE**
+>
+> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getShortcutInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getShortcutInfo(bundleName :string, callback: AsyncCallback<Array<ShortcutInfo>>))
+> instead.
 
 **Since:** 8
 

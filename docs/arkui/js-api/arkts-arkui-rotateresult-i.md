@@ -9,7 +9,7 @@ Rotation Result.
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## angle
@@ -18,7 +18,9 @@ import { componentUtils } from '@ohos.arkui.componentUtils';
 angle: number
 ```
 
-Rotation angle. Unit: deg
+Rotation angle.
+
+Unit: deg
 
 **Type:** number
 
@@ -36,7 +38,9 @@ Rotation angle. Unit: deg
 centerX: number
 ```
 
-X-coordinate of the center point. Unit: vp
+X-coordinate of the center point.
+
+Unit: vp
 
 **Type:** number
 
@@ -54,7 +58,9 @@ X-coordinate of the center point. Unit: vp
 centerY: number
 ```
 
-Y-coordinate of the center point. Unit: vp
+Y-coordinate of the center point.
+
+Unit: vp
 
 **Type:** number
 

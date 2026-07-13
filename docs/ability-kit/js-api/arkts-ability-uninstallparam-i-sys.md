@@ -11,7 +11,7 @@ Defines the parameters required for the uninstall of a shared bundle.
 ## Modules to Import
 
 ```TypeScript
-import { installer } from '@ohos.bundle.installer';
+import { installer } from '@kit.AbilityKit';
 ```
 
 ## bundleName
@@ -36,7 +36,8 @@ Name of the shared bundle.
 versionCode?: number
 ```
 
-Version number of the shared bundle. By default, no value is passed, and all shared bundles of the specified name are uninstalled.
+Version number of the shared bundle. By default, no value is passed, and all shared bundles of the specified name
+are uninstalled.
 
 **Type:** number
 

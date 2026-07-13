@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## startBackgroundRunning
@@ -12,7 +12,12 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent, callback: AsyncCallback<void>): void
 ```
 
-Requests a continuous task of a specific type. This API uses an asynchronous callback to return the result. After a continuous task is successfully requested, there will be a notification message without prompt tone. A UIAbility ( ServiceAbility in the FA model) can request only one continuous task at a time through this API. You can request multiple continuous tasks by calling [startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4) added in API version 21.
+Requests a continuous task of a specific type. This API uses an asynchronous callback to return the result. After a
+continuous task is successfully requested, there will be a notification message without prompt tone. A UIAbility (
+ServiceAbility in the FA model) can request only one continuous task at a time through this API. You can request
+multiple continuous tasks by calling
+[startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4)
+added in API version 21.
 
 **Since:** 9
 
@@ -26,7 +31,7 @@ Requests a continuous task of a specific type. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 | bgMode | BackgroundMode | Yes | Type of the continuous task. |
 | wantAgent | WantAgent | Yes | Notification parameters, which are used to specify the target page that isredirected to when a continuous task notification is clicked. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the continuous task is requested,**err** is **undefined**. Otherwise, **err** is an error object. |
@@ -107,7 +112,12 @@ export default class EntryAbility extends UIAbility {
 function startBackgroundRunning(context: Context, bgMode: BackgroundMode, wantAgent: WantAgent): Promise<void>
 ```
 
-Requests a continuous task of a specific type. This API uses a promise to return the result. After a continuous task is successfully requested, there will be a notification message without prompt tone. A UIAbility ( ServiceAbility in the FA model) can request only one continuous task at a time through this API. You can request multiple continuous tasks by calling [startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4) added in API version 21.
+Requests a continuous task of a specific type. This API uses a promise to return the result. After a continuous
+task is successfully requested, there will be a notification message without prompt tone. A UIAbility (
+ServiceAbility in the FA model) can request only one continuous task at a time through this API. You can request
+multiple continuous tasks by calling
+[startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4)
+added in API version 21.
 
 **Since:** 9
 
@@ -121,7 +131,7 @@ Requests a continuous task of a specific type. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 | bgMode | BackgroundMode | Yes | Type of the continuous task. |
 | wantAgent | WantAgent | Yes | Notification parameters, which are used to specify the target page that isredirected to when a continuous task notification is clicked. |
 
@@ -203,7 +213,12 @@ export default class EntryAbility extends UIAbility {
 function startBackgroundRunning(context: Context, bgModes: string[], wantAgent: WantAgent): Promise<ContinuousTaskNotification>
 ```
 
-Requests continuous tasks of multiple types. This API uses a promise to return the result. After a continuous task is successfully requested, there will be a notification message without prompt tone. A UIAbility (ServiceAbility in the FA model) can request only one continuous task at a time through this API. You can request multiple continuous tasks by calling [startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4) added in API version 21.
+Requests continuous tasks of multiple types. This API uses a promise to return the result. After a continuous task
+is successfully requested, there will be a notification message without prompt tone. A UIAbility (ServiceAbility in
+the FA model) can request only one continuous task at a time through this API. You can request multiple continuous
+tasks by calling
+[startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4)
+added in API version 21.
 
 **Since:** 12
 
@@ -217,7 +232,7 @@ Requests continuous tasks of multiple types. This API uses a promise to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 | bgModes | string[] | Yes | Types of continuous tasks.<br>For details about the available options, see[Item](../../../../task-management/continuous-task.md#use-cases).<br> Note: One or more types can be passed. |
 | wantAgent | WantAgent | Yes | Notification parameters, which are used to specify the target page that isredirected to when a continuous task notification is clicked. |
 
@@ -225,7 +240,7 @@ Requests continuous tasks of multiple types. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ContinuousTaskNotification&gt; | Promise that returns an object of the[ContinuousTaskNotification](arkts-backgroundtasks-continuoustasknotification-i.md#continuoustasknotification) type. |
+| Promise&lt;ContinuousTaskNotification&gt; | Promise that returns an object of the[ContinuousTaskNotification](arkts-backgroundtasks-continuoustasknotification-i.md) type. |
 
 **Error codes:**
 
@@ -342,7 +357,19 @@ export default class EntryAbility extends UIAbility {
 function startBackgroundRunning(context: Context, request: ContinuousTaskRequest): Promise<ContinuousTaskNotification>
 ```
 
-Requests a continuous task. This API allows a UIAbility (ServiceAbility in the FA model) to request multiple continuous tasks and uses a promise to return the result. When using this API to request a continuous task, its notification can be combined with that of an existing continuous task. For details, see [ContinuousTaskRequest](arkts-backgroundtasks-continuoustaskrequest-c.md#continuoustaskrequest). A maximum of 10 continuous tasks can be created simultaneously. Upon successful creation of a continuous task, a notification will be sent without a prompt tone. If a continuous task requested via this API includes multiple task types (including data transmission tasks), two notifications will appear in the notification panel: one for the data transmission task and the other for the remaining tasks. Removing either notification will cancel the continuous task and remove the other notification. The continuous task notification ID returned by the API is the ID of the data transmission type, which is used to update the data transmission progress.
+Requests a continuous task. This API allows a UIAbility (ServiceAbility in the FA model) to request multiple
+continuous tasks and uses a promise to return the result. When using this API to request a continuous task, its
+notification can be combined with that of an existing continuous task. For details, see
+[ContinuousTaskRequest](arkts-backgroundtasks-continuoustaskrequest-c.md).
+
+A maximum of 10 continuous tasks can be created simultaneously. Upon successful creation of a continuous task, a
+notification will be sent without a prompt tone.
+
+If a continuous task requested via this API includes multiple task types (including data transmission tasks), two
+notifications will appear in the notification panel: one for the data transmission task and the other for the
+remaining tasks. Removing either notification will cancel the continuous task and remove the other notification.
+The continuous task notification ID returned by the API is the ID of the data transmission type, which is used to
+update the data transmission progress.
 
 **Since:** 21
 
@@ -356,7 +383,7 @@ Requests a continuous task. This API allows a UIAbility (ServiceAbility in the F
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 | request | ContinuousTaskRequest | Yes | Request information of a continuous task, including the main type andsubtype. |
 
 **Return value:**

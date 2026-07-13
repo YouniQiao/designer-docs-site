@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## generateKeyItem
@@ -12,7 +12,11 @@ import { huks } from '@ohos.security.huks';
 function generateKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<void>): void
 ```
 
-Generates a key. This API uses an asynchronous callback to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
+Generates a key. This API uses an asynchronous callback to return the result.
+
+Based on the principle that the key cannot be transferred out of
+[Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key
+material content is not returned through this API and is only used to indicate whether the call is successful.
 
 **Since:** 9
 
@@ -44,14 +48,14 @@ Generates a key. This API uses an asynchronous callback to return the result. Ba
 | [12000013](../errorcode-huks.md#12000013-the-credential-does-not-exist) | queried credential does not exist |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
 | [12000015](../errorcode-huks.md#12000015-failed-to-invoke-other-system-services) | Failed to obtain the security information via UserIAM |
-| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with the same alias already exists<br>**Applicable version:** 20 |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
-| [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | The queried entity does not exist. This may happen becausethe key resource ID specified by keyAlias has not been opened in the external crypto scenario.<br>**Applicable version:** 26.0.0 |
-| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 26.0.0 |
-| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 26.0.0 |
-| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 26.0.0 |
-| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 26.0.0 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with the same alias already exists<br>**Applicable version:** 20 and later |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
+| [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | The queried entity does not exist. This may happen becausethe key resource ID specified by keyAlias has not been opened in the external crypto scenario.<br>**Applicable version:** 26.0.0 and later |
+| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 26.0.0 and later |
+| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 26.0.0 and later |
+| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 26.0.0 and later |
+| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 26.0.0 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 
@@ -186,7 +190,11 @@ export default {
 function generateKeyItem(keyAlias: string, options: HuksOptions): Promise<void>
 ```
 
-Generates a key. This API uses a promise to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through this API and is only used to indicate whether the call is successful.
+Generates a key. This API uses a promise to return the result.
+
+Based on the principle that the key cannot be transferred out of
+[Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key
+material content is not returned through this API and is only used to indicate whether the call is successful.
 
 **Since:** 9
 
@@ -223,14 +231,14 @@ Generates a key. This API uses a promise to return the result. Based on the prin
 | [12000013](../errorcode-huks.md#12000013-the-credential-does-not-exist) | queried credential does not exist |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
 | [12000015](../errorcode-huks.md#12000015-failed-to-invoke-other-system-services) | Failed to obtain the security information via UserIAM |
-| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with the same alias already exists<br>**Applicable version:** 20 |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
-| [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | The queried entity does not exist. This may happen becausethe key resource ID specified by keyAlias has not been opened in the external crypto scenario.<br>**Applicable version:** 26.0.0 |
-| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 26.0.0 |
-| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 26.0.0 |
-| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 26.0.0 |
-| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 26.0.0 |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with the same alias already exists<br>**Applicable version:** 20 and later |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
+| [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | The queried entity does not exist. This may happen becausethe key resource ID specified by keyAlias has not been opened in the external crypto scenario.<br>**Applicable version:** 26.0.0 and later |
+| [12000020](../errorcode-huks.md#12000020-dependent-module-error) | the provider operation failed<br>**Applicable version:** 26.0.0 and later |
+| [12000021](../errorcode-huks.md#12000021-ukey-pin-locked) | the UKey PIN is locked<br>**Applicable version:** 26.0.0 and later |
+| [12000023](../errorcode-huks.md#12000023-unauthenticated-ukey-pin) | the UKey PIN not authenticated<br>**Applicable version:** 26.0.0 and later |
+| [12000024](../errorcode-huks.md#12000024-device-or-resource-busy) | the provider or UKey is busy<br>**Applicable version:** 26.0.0 and later |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 

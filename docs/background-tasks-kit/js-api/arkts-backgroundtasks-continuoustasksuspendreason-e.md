@@ -24,7 +24,8 @@ A continuous task of the **DATA_TRANSFER** type is requested, but the data trans
 SYSTEM_SUSPEND_AUDIO_PLAYBACK_NOT_USE_AVSESSION = 5
 ```
 
-A continuous task of the **AUDIO_PLAYBACK** type is requested, but [AVSession](../../../../media/avsession/avsession-overview.md) is not accessed.
+A continuous task of the **AUDIO_PLAYBACK** type is requested, but
+[AVSession](../../../../media/avsession/avsession-overview.md) is not accessed.
 
 **Since:** 20
 
@@ -84,7 +85,8 @@ A continuous task of the **BLUETOOTH_INTERACTION** type is requested, but Blueto
 SYSTEM_SUSPEND_MULTI_DEVICE_NOT_USED = 10
 ```
 
-A continuous task of the **MULTI_DEVICE_CONNECTION** type is requested, but the multi-device connection service is not in use.
+A continuous task of the **MULTI_DEVICE_CONNECTION** type is requested, but the multi-device connection service
+is not in use.
 
 **Since:** 20
 
@@ -96,7 +98,8 @@ A continuous task of the **MULTI_DEVICE_CONNECTION** type is requested, but the 
 SYSTEM_SUSPEND_USED_ILLEGALLY = 11
 ```
 
-A continuous task of an invalid type is used. For example, a continuous task of the **AUDIO_PLAYBACK** type is requested, but the audio playback and location services are in use. This value is reserved.
+A continuous task of an invalid type is used. For example, a continuous task of the **AUDIO_PLAYBACK** type is
+requested, but the audio playback and location services are in use. This value is reserved.
 
 **Since:** 20
 
@@ -134,7 +137,8 @@ A continuous task of the **VOIP** type is requested, but no audio stream or reco
 SYSTEM_SUSPEND_BLUETOOTH_DATA_NOT_EXIST = 14
 ```
 
-A continuous task of the **BLUETOOTH_INTERACTION** type is requested, but there is no Bluetooth data flow for a period of time.
+A continuous task of the **BLUETOOTH_INTERACTION** type is requested, but there is no Bluetooth data flow for a
+period of time.
 
 **Since:** 26.0.0
 

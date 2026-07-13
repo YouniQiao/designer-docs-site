@@ -11,7 +11,7 @@ Album operation info.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## attr
@@ -56,7 +56,8 @@ The album operation type.
 values: string[]
 ```
 
-The album operation parameters. The maximum length is 20, The array can contain a maximum of 20 strings, and each string must not exceed 500 characters in length.
+The album operation parameters. The maximum length is 20, The array can contain a maximum of 20 strings, and
+each string must not exceed 500 characters in length.
 
 **Type:** string[]
 

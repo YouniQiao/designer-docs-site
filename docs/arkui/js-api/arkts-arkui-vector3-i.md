@@ -12,7 +12,9 @@ Represents a vector including three values: x, y, and z.
 x: number
 ```
 
-X coordinate value of the vector. Value range: (-∞, +∞).
+X coordinate value of the vector.
+
+Value range: (-∞, +∞).
 
 **Type:** number
 
@@ -30,7 +32,9 @@ X coordinate value of the vector. Value range: (-∞, +∞).
 y: number
 ```
 
-Y coordinate value of the vector. Value range: (-∞, +∞).
+Y coordinate value of the vector.
+
+Value range: (-∞, +∞).
 
 **Type:** number
 
@@ -48,7 +52,9 @@ Y coordinate value of the vector. Value range: (-∞, +∞).
 z: number
 ```
 
-Rotation angle along the z-axis. Value range: (-∞, +∞).
+Rotation angle along the z-axis.
+
+Value range: (-∞, +∞).
 
 **Type:** number
 

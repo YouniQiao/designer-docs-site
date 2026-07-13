@@ -9,7 +9,7 @@ Describes the text shadow.
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## blurRadius
@@ -50,7 +50,8 @@ Color of the text shadow. The default value is black (255, 0, 0, 0).
 point?: common2D.Point
 ```
 
-Shadow offset position of the font based on the current text, in which the horizontal and vertical coordinates are greater than or equal to 0, with the unit being physical pixels (px).
+Shadow offset position of the font based on the current text, in which the horizontal and vertical coordinates
+are greater than or equal to 0, with the unit being physical pixels (px).
 
 **Type:** common2D.Point
 

@@ -11,7 +11,7 @@ Details the space usage of system applications or system services.
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## businessName
@@ -38,7 +38,9 @@ System application bundle name or system service name.
 flag: boolean
 ```
 
-Whether the space occupied by system applications or system services needs to be displayed separately on the **Settings** > **Storage** page. A value of **true** enables independent display; a value of **false** merges the usage data into the application specified by **businessName**.
+Whether the space occupied by system applications or system services needs to be displayed separately on the
+**Settings** > **Storage** page. A value of **true** enables independent display; a value of **false** merges
+the usage data into the application specified by **businessName**.
 
 **Type:** boolean
 
@@ -56,7 +58,8 @@ Whether the space occupied by system applications or system services needs to be
 size: number
 ```
 
-The business size. <br>Unit: Byte.
+The business size.
+<br>Unit: Byte.
 
 **Type:** number
 

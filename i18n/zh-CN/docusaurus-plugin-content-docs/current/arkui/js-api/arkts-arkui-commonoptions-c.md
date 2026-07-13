@@ -12,7 +12,17 @@ CommonOptions定义了Counter的共通属性和事件。
 focusable?: boolean
 ```
 
-设置Counter是否可获焦。 **说明：** 该属性对列表型和紧凑型Counter生效。 默认值：true true：Counter可获焦；false：Counter不可获焦。 值为undefined时，按默认值处理。
+设置Counter是否可获焦。
+
+**说明：**
+
+该属性对列表型和紧凑型Counter生效。
+
+默认值：true
+
+true：Counter可获焦；false：Counter不可获焦。
+
+值为undefined时，按默认值处理。
 
 **类型：** boolean
 
@@ -32,7 +42,13 @@ focusable?: boolean
 onHoverDecrease?: (isHover: boolean) => void
 ```
 
-鼠标进入或退出Counter组件的减小按钮时触发该回调。 isHover：表示鼠标是否悬浮在组件上，进入时为true，离开时为false。 默认值：不触发鼠标进入或退出Counter组件的减小按钮时的回调。 值为undefined时，按默认值处理。
+鼠标进入或退出Counter组件的减小按钮时触发该回调。
+
+isHover：表示鼠标是否悬浮在组件上，进入时为true，离开时为false。
+
+默认值：不触发鼠标进入或退出Counter组件的减小按钮时的回调。
+
+值为undefined时，按默认值处理。
 
 **类型：** (isHover: boolean) => void
 
@@ -50,7 +66,13 @@ onHoverDecrease?: (isHover: boolean) => void
 onHoverIncrease?: (isHover: boolean) => void
 ```
 
-鼠标进入或退出Counter组件的增加按钮时触发该回调。 isHover：表示鼠标是否悬浮在组件上，鼠标进入时为true，退出时为false。 默认值：不触发鼠标进入或退出Counter组件的增加按钮时的回调。 值为undefined时，按默认值处理。
+鼠标进入或退出Counter组件的增加按钮时触发该回调。
+
+isHover：表示鼠标是否悬浮在组件上，鼠标进入时为true，退出时为false。
+
+默认值：不触发鼠标进入或退出Counter组件的增加按钮时的回调。
+
+值为undefined时，按默认值处理。
 
 **类型：** (isHover: boolean) => void
 
@@ -68,7 +90,13 @@ onHoverIncrease?: (isHover: boolean) => void
 step?: number
 ```
 
-设置Counter的步长。 取值范围：大于等于1的整数。 默认值：1 超出取值范围按默认值处理。
+设置Counter的步长。
+
+取值范围：大于等于1的整数。
+
+默认值：1
+
+超出取值范围按默认值处理。
 
 **类型：** number
 

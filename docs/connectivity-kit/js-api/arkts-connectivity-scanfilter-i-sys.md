@@ -9,7 +9,7 @@ Describes the criteria for filtering scanning results can be set.
 ## Modules to Import
 
 ```TypeScript
-import { ble } from '@ohos.bluetooth.ble';
+import { ble } from '@kit.ConnectivityKit';
 ```
 
 ## irk
@@ -18,7 +18,8 @@ import { ble } from '@ohos.bluetooth.ble';
 irk?: Uint8Array
 ```
 
-Identity Resolving Key of BLE peripheral device. {@link ScanFilter#irk} needs to be used with {@link ScanFilter#address}.
+Identity Resolving Key of BLE peripheral device.
+{@link ScanFilter#irk} needs to be used with {@link ScanFilter#address}.
 
 **Type:** Uint8Array
 

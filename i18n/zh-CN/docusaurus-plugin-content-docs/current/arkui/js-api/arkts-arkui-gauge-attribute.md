@@ -1,6 +1,6 @@
 # Gauge属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性。
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性。
 
 **继承/实现关系：** GaugeAttribute extends [CommonMethod<GaugeAttribute>](CommonMethod<GaugeAttribute>)
 
@@ -14,7 +14,17 @@
 colors(colors: ResourceColor | LinearGradient | Array<[ResourceColor | LinearGradient, number]>)
 ```
 
-设置量规图的颜色。 从API version 11开始，该接口使用以下规则： 参数类型为[ResourceColor](arkts-arkui-resourcecolor-t.md#resourcecolor)，则圆环类型为单色环。 参数类型为[LinearGradient](arkts-arkui-lineargradient-i.md#lineargradient)，则圆环类型为渐变环。 参数类型为数组，则圆环类型为分段渐变环，第一个参数为颜色值，若设置为非颜色类型，则置为"0xFFE84026"。第二个参数为颜色所占比重，若设置为负数或是非数值类型，则将比重置为0。 分段渐变环最大显示段数为9段，若多于9段，则多于部分不显示。
+设置量规图的颜色。
+
+从API version 11开始，该接口使用以下规则：
+
+参数类型为[ResourceColor](arkts-arkui-resourcecolor-t.md)，则圆环类型为单色环。
+
+参数类型为[LinearGradient](arkts-arkui-lineargradient-i.md)，则圆环类型为渐变环。
+
+参数类型为数组，则圆环类型为分段渐变环，第一个参数为颜色值，若设置为非颜色类型，则置为"0xFFE84026"。第二个参数为颜色所占比重，若设置为负数或是非数值类型，则将比重置为0。
+
+分段渐变环最大显示段数为9段，若多于9段，则多于部分不显示。
 
 **起始版本：** 8
 
@@ -128,7 +138,11 @@ indicator(value: GaugeIndicatorOptions)
 privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 ```
 
-设置隐私敏感。 > **说明：** > > 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
+设置隐私敏感。
+
+> **说明：**
+>
+> 从API version 20开始，该接口支持在[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)中调用。
 
 **起始版本：** 12
 
@@ -144,7 +158,7 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isPrivacySensitiveMode | Optional&lt;boolean&gt; | 是 | 设置隐私敏感。在隐私模式下，Gauge指针指向0位置，最大值最小值文本将被遮罩，量程显示灰色或底色。true表示打开隐私敏感，false表示关闭隐私敏感。<br/>默认值：false。&lt;!--Del--&gt;<br/>需要在卡片中使用Gauge，并用[FormComponent](form_component)组件设置[隐私遮罩](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)属性，显示卡片时才有隐私遮罩效果。&lt;!--DelEnd--&gt; |
+| isPrivacySensitiveMode | Optional&lt;boolean&gt; | 是 | 设置隐私敏感。在隐私模式下，Gauge指针指向0位置，最大值最小值文本将被遮罩，量程显示灰色或底色。true表示打开隐私敏感，false表示关闭隐私敏感。<br/>默认值：false。&lt;!--Del--&gt;<br/>需要在卡片中使用Gauge，并用[FormComponent](form_component)组件设置[隐私遮罩](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)属性，显示卡片时才有隐私遮罩效果。&lt;!--DelEnd--&gt; |
 
 ## startAngle
 

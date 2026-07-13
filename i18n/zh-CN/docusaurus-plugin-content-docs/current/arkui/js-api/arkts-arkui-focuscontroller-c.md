@@ -1,6 +1,10 @@
 # FocusController
 
-提供控制焦点的能力，如清除、移动和激活焦点等功能。 > **说明：** > > 以下API需先使用UIContext中的[getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1)方法获取FocusController实例，再通过该实例调用对应方法。
+提供控制焦点的能力，如清除、移动和激活焦点等功能。
+
+> **说明：**
+>
+> 以下API需先使用UIContext中的[getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1)方法获取FocusController实例，再通过该实例调用对应方法。
 
 **起始版本：** 12
 
@@ -51,7 +55,9 @@ clearFocus(): void
 isActive(): boolean
 ```
 
-返回UI实例的焦点激活态。 焦点激活态可参考[基础概念：焦点激活态](../../../../ui/arkts-common-events-focus-event.md#基础概念)。
+返回UI实例的焦点激活态。
+
+焦点激活态可参考[基础概念：焦点激活态](../../../../ui/arkts-common-events-focus-event.md#基础概念)。
 
 **起始版本：** 20
 
@@ -87,7 +93,7 @@ requestFocus(key: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | 节点对应的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)。 |
+| key | string | 是 | 节点对应的[组件标识](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)。 |
 
 **错误码：**
 
@@ -117,7 +123,7 @@ setAutoFocusTransfer(isAutoFocusTransfer: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| isAutoFocusTransfer | boolean | 是 | 设置页面切换时，新的页面是否需要主动获取焦点，例如[Router](arkts-router.md#router)、[Navigation](../arkts-components/arkts-arkui-navigation.md)、[Menu](../arkts-components/arkts-arkui-menu.md)、[Dialog](@ohos.arkui.advanced.Dialog)、[Popup](arkts-arkui-advanced-popup.md)等。true表示需要主动获取焦点，false表示不需要主动获取焦点。默认值为true。 |
+| isAutoFocusTransfer | boolean | 是 | 设置页面切换时，新的页面是否需要主动获取焦点，例如[Router](arkts-router.md)、[Navigation](../arkts-components/arkts-arkui-navigation.md)、[Menu](../arkts-components/arkts-arkui-menu.md)、[Dialog](@ohos.arkui.advanced.Dialog)、[Popup](arkts-arkui-advanced-popup.md)等。true表示需要主动获取焦点，false表示不需要主动获取焦点。默认值为true。 |
 
 ## setKeyProcessingMode
 

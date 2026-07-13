@@ -1,6 +1,12 @@
 # AVMetadataExtractor
 
-AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from media assets. Before calling any API of AVMetadataExtractor, you must use [media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3) to create an AVMetadataExtractor instance. For details about the demo of obtaining audio or video metadata and video thumbnails, see [Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
+AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtain metadata and thumbnails from
+media assets. Before calling any API of AVMetadataExtractor, you must use
+[media.createAVMetadataExtractor](arkts-media-createavmetadataextractor-f.md#createavmetadataextractor-3)
+to create an AVMetadataExtractor instance.
+
+For details about the demo of obtaining audio or video metadata and video thumbnails, see
+[Using AVMetadataExtractor to Extract Audio and Video Metadata (ArkTS)](../../../../media/media/avmetadataextractor.md).
 
 **Since:** 11
 
@@ -9,7 +15,7 @@ AVMetadataExtractor is a class for metadata retrieval. It provides APIs to obtai
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## getFrameIndexByTime

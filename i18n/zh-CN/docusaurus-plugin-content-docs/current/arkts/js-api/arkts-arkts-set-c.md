@@ -1,6 +1,14 @@
 # Set
 
-一种非线性数据结构。 > **说明** > > - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > 本节使用以下标识来表示泛型的使用： - T：Type，支持[Sendable支持的数据类型](../../../../arkts-utils/arkts-sendable.md#sendable支持的数据类型)。 **装饰器类型：** \@Sendable
+一种非线性数据结构。
+
+> **说明**
+>
+> - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。
+> 本节使用以下标识来表示泛型的使用：
+
+- T：Type，支持[Sendable支持的数据类型](../../../../arkts-utils/arkts-sendable.md#sendable支持的数据类型)。
+**装饰器类型：** \@Sendable
 
 **起始版本：** 12
 
@@ -14,7 +22,9 @@
 [Symbol.iterator](): IterableIterator<T>
 ```
 
-返回一个迭代器，迭代器的每一项都是一个JavaScript对象。 说明： 本接口不支持在.ets文件中使用。
+返回一个迭代器，迭代器的每一项都是一个JavaScript对象。
+说明：
+本接口不支持在.ets文件中使用。
 
 **起始版本：** 12
 

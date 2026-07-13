@@ -1,6 +1,11 @@
 # @ohos.bundle.freeInstall
 
-本模块提供免安装相关的设置和查询能力，支持BundlePackInfo、DispatchInfo等信息的查询。 > **说明：** > > 本模块为系统接口。
+The module provides APIs for setting and obtaining installation-free information and APIs for obtaining
+BundlePackInfo and DispatchInfo.
+
+> **NOTE**
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 9
 
@@ -16,51 +21,46 @@ import { freeInstall } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getBundlePackInfo](arkts-freeinstall-getbundlepackinfo-f-sys.md#getBundlePackInfo-1) | 基于bundleName和bundlePackFlag来获取bundlePackInfo。使用callback异步回调。 |
-| <!--DelRow-->[getBundlePackInfo](arkts-freeinstall-getbundlepackinfo-f-sys.md#getBundlePackInfo-2) | 基于bundleName和BundlePackFlag来获取bundlePackInfo。使用Promise异步回调。 |
-| <!--DelRow-->[getDispatchInfo](arkts-freeinstall-getdispatchinfo-f-sys.md#getDispatchInfo-1) | 获取有关dispatch版本的信息。使用callback异步回调。 |
-| <!--DelRow-->[getDispatchInfo](arkts-freeinstall-getdispatchinfo-f-sys.md#getDispatchInfo-2) | 获取有关dispatch版本的信息。使用Promise异步回调。 |
-| <!--DelRow-->[isHapModuleRemovable](arkts-freeinstall-ishapmoduleremovable-f-sys.md#isHapModuleRemovable-1) | 查询指定模块是否可以被移除。使用callback异步回调。 |
-| <!--DelRow-->[isHapModuleRemovable](arkts-freeinstall-ishapmoduleremovable-f-sys.md#isHapModuleRemovable-2) | 查询指定模块是否可以被移除。使用Promise异步回调。 |
-| <!--DelRow-->[setHapModuleUpgradeFlag](arkts-freeinstall-sethapmoduleupgradeflag-f-sys.md#setHapModuleUpgradeFlag-1) | 设置指定模块是否升级。使用callback异步回调。 |
-| <!--DelRow-->[setHapModuleUpgradeFlag](arkts-freeinstall-sethapmoduleupgradeflag-f-sys.md#setHapModuleUpgradeFlag-2) | 设置指定模块是否升级。使用Promise异步回调。 |
+| [getBundlePackInfo](arkts-ability-getbundlepackinfo-f-sys.md#getbundlepackinfo-1) | Obtains bundlePackInfo based on **bundleName** and **bundlePackFlag**. This API uses an asynchronous callback toreturn the result. |
+| [getBundlePackInfo](arkts-ability-getbundlepackinfo-f-sys.md#getbundlepackinfo-2) | Obtains bundlePackInfo based on **bundleName** and **bundlePackFlag**. This API uses a promise to return theresult. |
+| [getDispatchInfo](arkts-ability-getdispatchinfo-f-sys.md#getdispatchinfo-1) | Obtains the dispatch information. This API uses an asynchronous callback to return the result. |
+| [getDispatchInfo](arkts-ability-getdispatchinfo-f-sys.md#getdispatchinfo-2) | Obtains the dispatch information. This API uses a promise to return the result. |
+| [isHapModuleRemovable](arkts-ability-ishapmoduleremovable-f-sys.md#ishapmoduleremovable-1) | Checks whether a module can be removed. This API uses an asynchronous callback to return the result. |
+| [isHapModuleRemovable](arkts-ability-ishapmoduleremovable-f-sys.md#ishapmoduleremovable-2) | Checks whether a module can be removed. This API uses a promise to return the result. |
+| [setHapModuleUpgradeFlag](arkts-ability-sethapmoduleupgradeflag-f-sys.md#sethapmoduleupgradeflag-1) | Sets an upgrade flag for a module. This API uses an asynchronous callback to return the result. |
+| [setHapModuleUpgradeFlag](arkts-ability-sethapmoduleupgradeflag-f-sys.md#sethapmoduleupgradeflag-2) | Sets an upgrade flag for a module. This API uses a promise to return the result. |
+<!--DelEnd-->
 
-### Types
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[AbilityFormInfo](arkts-freeinstall-abilityforminfo-t-sys.md) | 卡片信息。 |
-| <!--DelRow-->[AbilityFormInfo](arkts-freeinstall-abilityforminfo-t-sys.md) | 卡片信息。 |
-| <!--DelRow-->[ApiVersion](arkts-freeinstall-apiversion-t-sys.md) | module的api版本。 |
-| <!--DelRow-->[ApiVersion](arkts-freeinstall-apiversion-t-sys.md) | module的api版本。 |
-| <!--DelRow-->[BundleConfigInfo](arkts-freeinstall-bundleconfiginfo-t-sys.md) | 包的配置信息。 |
-| <!--DelRow-->[BundleConfigInfo](arkts-freeinstall-bundleconfiginfo-t-sys.md) | 包的配置信息。 |
-| <!--DelRow-->[BundlePackInfo](arkts-freeinstall-bundlepackinfo-t-sys.md) | 应用包信息。 |
-| <!--DelRow-->[BundlePackInfo](arkts-freeinstall-bundlepackinfo-t-sys.md) | 应用包信息。 |
-| <!--DelRow-->[DispatchInfo](arkts-freeinstall-dispatchinfo-t-sys.md) | 免安装结构体和接口版本信息类。 |
-| <!--DelRow-->[ExtensionAbility](arkts-freeinstall-extensionability-t-sys.md) | extensionAbilities的配置信息。 |
-| <!--DelRow-->[ExtensionAbility](arkts-freeinstall-extensionability-t-sys.md) | extensionAbilities的配置信息。 |
-| <!--DelRow-->[ModuleAbilityInfo](arkts-freeinstall-moduleabilityinfo-t-sys.md) | module包含的ability组件信息。 |
-| <!--DelRow-->[ModuleAbilityInfo](arkts-freeinstall-moduleabilityinfo-t-sys.md) | module包含的ability组件信息。 |
-| <!--DelRow-->[ModuleConfigInfo](arkts-freeinstall-moduleconfiginfo-t-sys.md) | 包的module配置信息。 |
-| <!--DelRow-->[ModuleConfigInfo](arkts-freeinstall-moduleconfiginfo-t-sys.md) | 包的module配置信息。 |
-| <!--DelRow-->[ModuleDistroInfo](arkts-freeinstall-moduledistroinfo-t-sys.md) | module发行版信息。 |
-| <!--DelRow-->[ModuleDistroInfo](arkts-freeinstall-moduledistroinfo-t-sys.md) | module发行版信息。 |
-| <!--DelRow-->[PackageConfig](arkts-freeinstall-packageconfig-t-sys.md) | pack.info的包信息。 |
-| <!--DelRow-->[PackageConfig](arkts-freeinstall-packageconfig-t-sys.md) | pack.info的包信息。 |
-| <!--DelRow-->[PackageSummary](arkts-freeinstall-packagesummary-t-sys.md) | pack.info中的包摘要信息。 |
-| <!--DelRow-->[PackageSummary](arkts-freeinstall-packagesummary-t-sys.md) | pack.info中的包摘要信息。 |
-| <!--DelRow-->[Version](arkts-freeinstall-version-t-sys.md) | 包的版本。 |
-| <!--DelRow-->[Version](arkts-freeinstall-version-t-sys.md) | 包的版本。 |
-
-### Enums
+<!--Del-->
+### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[BundlePackFlag](arkts-freeinstall-bundlepackflag-e-sys.md) | 要查询的应用包标志 |
-| <!--DelRow-->[UpgradeFlag](arkts-freeinstall-upgradeflag-e-sys.md) | 仅供内部系统使用标志位 |
+| [BundlePackFlag](arkts-ability-bundlepackflag-e-sys.md) | Flag of the bundle package. |
+| [UpgradeFlag](arkts-ability-upgradeflag-e-sys.md) | Upgrade flag, which is for internal use only. |
+<!--DelEnd-->
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AbilityFormInfo](arkts-ability-abilityforminfo-t-sys.md) | Defines the widget information. |
+| [ApiVersion](arkts-ability-apiversion-t-sys.md) | Defines the API version of the module. |
+| [BundleConfigInfo](arkts-ability-bundleconfiginfo-t-sys.md) | Defines the bundle configuration information. |
+| [BundlePackInfo](arkts-ability-bundlepackinfo-t-sys.md) | Defines the bundle information. |
+| [DispatchInfo](arkts-ability-dispatchinfo-t-sys.md) | Defines the installation-free structure and API version information. |
+| [ExtensionAbility](arkts-ability-extensionability-t-sys.md) | Defines the ExtensionAbility configuration information. |
+| [ModuleAbilityInfo](arkts-ability-moduleabilityinfo-t-sys.md) | Defines the ability information of the module. |
+| [ModuleConfigInfo](arkts-ability-moduleconfiginfo-t-sys.md) | Defines the module configuration information of the bundle. |
+| [ModuleDistroInfo](arkts-ability-moduledistroinfo-t-sys.md) | Defines the distribution information of the module. |
+| [PackageConfig](arkts-ability-packageconfig-t-sys.md) | Defines the package configuration information in the **pack.info** file. |
+| [PackageSummary](arkts-ability-packagesummary-t-sys.md) | Defines the package summary information in the **pack.info** file. |
+| [Version](arkts-ability-version-t-sys.md) | Defines the version in the **pack.info** file. |
+<!--DelEnd-->
 

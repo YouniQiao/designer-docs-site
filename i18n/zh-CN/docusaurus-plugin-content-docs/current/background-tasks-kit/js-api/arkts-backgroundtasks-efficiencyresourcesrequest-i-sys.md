@@ -32,7 +32,10 @@ cpuLevel?: EfficiencyResourcesCpuLevel
 isApply: boolean
 ```
 
-申请或释放资源。 - true表示申请资源。 - false表示释放部分资源。
+申请或释放资源。
+
+- true表示申请资源。
+- false表示释放部分资源。
 
 **类型：** boolean
 
@@ -48,7 +51,10 @@ isApply: boolean
 isPersist?: boolean
 ```
 
-是否永久持有资源，默认为false。 - true表示永久持有 - false表示有限时间内持有。
+是否永久持有资源，默认为false。
+
+- true表示永久持有
+- false表示有限时间内持有。
 
 **类型：** boolean
 
@@ -64,7 +70,10 @@ isPersist?: boolean
 isProcess?: boolean
 ```
 
-进程或应用申请，默认为false。 - true表示进程申请。 - false表示应用申请。
+进程或应用申请，默认为false。
+
+- true表示进程申请。
+- false表示应用申请。
 
 **类型：** boolean
 

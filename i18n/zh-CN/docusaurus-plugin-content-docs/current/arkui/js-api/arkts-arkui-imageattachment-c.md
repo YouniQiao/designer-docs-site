@@ -34,7 +34,7 @@ constructor(value: ImageAttachmentInterface)
 constructor(attachment: Optional<AttachmentType>)
 ```
 
-图片对象的构造函数。与value类型入参构造函数相比，attachment参数增加了对undefined类型和[ResourceStr](arkts-arkui-resourcestr-t.md#resourcestr)类型图片的支持。
+图片对象的构造函数。与value类型入参构造函数相比，attachment参数增加了对undefined类型和[ResourceStr](arkts-arkui-resourcestr-t.md)类型图片的支持。
 
 **起始版本：** 15
 
@@ -48,7 +48,7 @@ constructor(attachment: Optional<AttachmentType>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| attachment | Optional&lt;AttachmentType&gt; | 是 | PixelMap类型或[ResourceStr](arkts-arkui-resourcestr-t.md#resourcestr)类型图片设置项。 |
+| attachment | Optional&lt;AttachmentType&gt; | 是 | PixelMap类型或[ResourceStr](arkts-arkui-resourcestr-t.md)类型图片设置项。 |
 
 ## colorFilter
 
@@ -110,7 +110,9 @@ readonly objectFit?: ImageFit
 readonly size?: SizeOptions
 ```
 
-获取属性字符串的图片尺寸。 返回number类型值的单位为`px`。
+获取属性字符串的图片尺寸。
+
+返回number类型值的单位为`px`。
 
 **类型：** SizeOptions
 
@@ -128,7 +130,11 @@ readonly size?: SizeOptions
 readonly sizeInVp?: SizeOptions
 ```
 
-获取属性字符串的图片尺寸。 返回number类型值的单位为`vp`。 当ImageAttachment尺寸设置为负数值或undefined时，返回为undefined。
+获取属性字符串的图片尺寸。
+
+返回number类型值的单位为`vp`。
+
+当ImageAttachment尺寸设置为负数值或undefined时，返回为undefined。
 
 **类型：** SizeOptions
 
@@ -146,7 +152,11 @@ readonly sizeInVp?: SizeOptions
 readonly supportSvg2?: boolean
 ```
 
-获取属性字符串是否开启[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)。 true：支持SVG解析新能力；false：保持原有SVG解析能力。 默认值：false
+获取属性字符串是否开启[SVG标签解析能力增强功能](../../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md)。
+
+true：支持SVG解析新能力；false：保持原有SVG解析能力。
+
+默认值：false
 
 **类型：** boolean
 

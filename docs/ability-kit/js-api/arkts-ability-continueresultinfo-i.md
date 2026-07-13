@@ -9,7 +9,7 @@ Describes the quick start result returned by the callback.
 ## Modules to Import
 
 ```TypeScript
-import { continueManager } from '@ohos.app.ability.continueManager';
+import { continueManager } from '@kit.AbilityKit';
 ```
 
 ## resultInfo
@@ -18,7 +18,9 @@ import { continueManager } from '@ohos.app.ability.continueManager';
 resultInfo?: string
 ```
 
-Description of the operation result. This API can be used only in the stage model.
+Description of the operation result.
+
+This API can be used only in the stage model.
 
 **Type:** string
 

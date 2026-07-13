@@ -1,6 +1,7 @@
 # PointerMatrix
 
-Represents a two-dimensional array of pointers on the device display, it's used to build a multi-finger trace which can be injected with UiDriver.
+Represents a two-dimensional array of pointers on the device display, it's used to build a
+multi-finger trace which can be injected with UiDriver.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Represents a two-dimensional array of pointers on the device display, it's used 
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## create
@@ -63,7 +64,8 @@ async function demo() {
 setPoint(finger: number, step: number, point: Point): void
 ```
 
-Sets the coordinates for the action corresponding to the specified finger and step in the **PointerMatrix** object.
+Sets the coordinates for the action corresponding to the specified finger and step in the **PointerMatrix**
+object.
 
 **Since:** 9
 

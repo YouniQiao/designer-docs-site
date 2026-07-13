@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { configPolicy } from '@ohos.configPolicy';
+import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
 ## getCfgFilesSync
@@ -12,7 +12,8 @@ import { configPolicy } from '@ohos.configPolicy';
 function getCfgFilesSync(relPath: string, followMode?: FollowXMode, extra?: string): Array<string>
 ```
 
-Obtains a list of all files of a specified file name based on the provided follow mode, in ascending order of priority.
+Obtains a list of all files of a specified file name based on the provided follow mode, in ascending order of
+priority.
 
 **Since:** 11
 

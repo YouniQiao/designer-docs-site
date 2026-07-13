@@ -9,7 +9,7 @@ Provides APIs for managing a CRL object.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## getEncoded
@@ -76,7 +76,7 @@ Obtains the serialized X.509 CRL data. This API uses a promise to return the res
 getExtensions(): DataBlob
 ```
 
-Obtains the CRL extensions.
+Obtains the CRL extensions data in DER format.
 
 **Since:** 11
 
@@ -88,7 +88,7 @@ Obtains the CRL extensions.
 
 | Type | Description |
 | --- | --- |
-| DataBlob | X.509 CRL extensions obtained. |
+| DataBlob | CRL extensions data in DER format obtained. |
 
 **Error codes:**
 
@@ -104,7 +104,7 @@ Obtains the CRL extensions.
 getExtensionsObject(): CertExtension
 ```
 
-Obtains the certificate extensions in DER format.
+Obtains the CRL extensions in DER format.
 
 **Since:** 12
 
@@ -116,7 +116,7 @@ Obtains the certificate extensions in DER format.
 
 | Type | Description |
 | --- | --- |
-| CertExtension | Certificate extensions object obtained. |
+| CertExtension | CRL extensions object obtained. |
 
 **Error codes:**
 
@@ -132,7 +132,11 @@ Obtains the certificate extensions in DER format.
 getIssuerName(): DataBlob
 ```
 
-Obtains the issuer of the X.509 CRL. > **NOTE** > > The obtained X.509 CRL issuer name contains a string terminator.
+Obtains the issuer of the X.509 CRL.
+
+> **NOTE**
+>
+> The obtained X.509 CRL issuer name contains a string terminator.
 
 **Since:** 11
 
@@ -195,7 +199,7 @@ Obtains the issuer name of an X.509 CRL based on the encoding type.
 getIssuerX500DistinguishedName(): X500DistinguishedName
 ```
 
-Obtains the distinguished name (DN) of the X.509 certificate issuer.
+Obtains the distinguished name (DN) of the X.509 CRL issuer.
 
 **Since:** 12
 
@@ -279,7 +283,7 @@ Obtains the next update date of this CRL.
 getRevokedCert(serialNumber: bigint): X509CRLEntry
 ```
 
-Obtains the revoked X.509 certificate based on the specified serial number of the certificate.
+Obtains the revoked certificate entry from the X.509 CRL based on the specified serial number.
 
 **Since:** 11
 
@@ -297,7 +301,7 @@ Obtains the revoked X.509 certificate based on the specified serial number of th
 
 | Type | Description |
 | --- | --- |
-| X509CRLEntry | Revoked X.509 certificate obtained. |
+| X509CRLEntry | Revoked certificate entry obtained. |
 
 **Error codes:**
 
@@ -313,7 +317,7 @@ Obtains the revoked X.509 certificate based on the specified serial number of th
 getRevokedCertWithCert(cert: X509Cert): X509CRLEntry
 ```
 
-Obtains the revoked X.509 certificate based on the specified certificate.
+Obtains the revoked certificate entry from the X.509 CRL based on the specified certificate.
 
 **Since:** 11
 
@@ -331,7 +335,7 @@ Obtains the revoked X.509 certificate based on the specified certificate.
 
 | Type | Description |
 | --- | --- |
-| X509CRLEntry | Revoked X.509 certificate obtained. |
+| X509CRLEntry | Revoked certificate entry obtained. |
 
 **Error codes:**
 
@@ -347,7 +351,8 @@ Obtains the revoked X.509 certificate based on the specified certificate.
 getRevokedCerts(callback: AsyncCallback<Array<X509CRLEntry>>): void
 ```
 
-Obtains all the revoked X.509 certificates. This API uses an asynchronous callback to return the result.
+Obtains all the revoked certificate entries from the X.509 CRL. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 11
 
@@ -359,7 +364,7 @@ Obtains all the revoked X.509 certificates. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;X509CRLEntry&gt;&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined**, and **data** is the revoked X.509 certificates obtained. Otherwise,**err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;X509CRLEntry&gt;&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined**, and **data** is the revoked certificate entries obtained. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
@@ -375,7 +380,7 @@ Obtains all the revoked X.509 certificates. This API uses an asynchronous callba
 getRevokedCerts(): Promise<Array<X509CRLEntry>>
 ```
 
-Obtains all the revoked X.509 certificates. This API uses a promise to return the result.
+Obtains all the revoked certificate entries from the X.509 CRL. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -387,7 +392,7 @@ Obtains all the revoked X.509 certificates. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;X509CRLEntry&gt;&gt; | Promise used to return the revoked X.509 certificates obtained. |
+| Promise&lt;Array&lt;X509CRLEntry&gt;&gt; | Promise used to return the revoked certificate entries obtained. |
 
 **Error codes:**
 
@@ -459,7 +464,8 @@ Obtains the signing algorithm of the X.509 CRL.
 getSignatureAlgOid(): string
 ```
 
-Obtains the OID of the X.509 CRL signing algorithm. OIDs are allocated by the International Organization for Standardization (ISO).
+Obtains the OID of the X.509 CRL signing algorithm. OIDs are allocated by the International Organization for
+Standardization (ISO).
 
 **Since:** 11
 
@@ -656,13 +662,13 @@ Checks whether this CRL matches the specified parameters.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| param | X509CRLMatchParameters | Yes | Parameters specified for matching the certificate. |
+| param | X509CRLMatchParameters | Yes | Parameters specified for matching the CRL. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Returns **true** if the certificate matches the parameters specified; returns **false**otherwise. |
+| boolean | Returns **true** if the CRL matches the parameters specified; returns **false**otherwise. |
 
 **Error codes:**
 
@@ -741,7 +747,8 @@ Converts this object into a string in the specified encoding format.
 verify(key: cryptoFramework.PubKey, callback: AsyncCallback<void>): void
 ```
 
-Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This API uses an asynchronous callback to return the result.
+Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 11
 
@@ -769,7 +776,8 @@ Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This AP
 verify(key: cryptoFramework.PubKey): Promise<void>
 ```
 
-Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This API uses a promise to return the result.
+Verifies the signature of the X.509 CRL. The RSA algorithm is supported. This API uses a promise to return the
+result.
 
 **Since:** 11
 

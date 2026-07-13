@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## getWantAgent
@@ -12,7 +12,13 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function getWantAgent(info: WantAgentInfo, callback: AsyncCallback<WantAgent>): void
 ```
 
-Obtains a WantAgent object. This API uses an asynchronous callback to return the result. If the creation fails, a null WantAgent object is returned. <p>**NOTE**: <br>Third-party applications can set only their own abilities. </p>
+Obtains a WantAgent object.
+This API uses an asynchronous callback to return the result.
+If the creation fails, a null WantAgent object is returned.
+
+<p>**NOTE**:
+<br>Third-party applications can set only their own abilities.
+</p>
 
 **Since:** 9
 
@@ -96,7 +102,13 @@ try {
 function getWantAgent(info: WantAgentInfo): Promise<WantAgent>
 ```
 
-Obtains a WantAgent object. This API uses a promise to return the result. If the creation fails, a null WantAgent object is returned. <p>**NOTE**: <br>Third-party applications can set only their own abilities. </p>
+Obtains a WantAgent object.
+This API uses a promise to return the result.
+If the creation fails, a null WantAgent object is returned.
+
+<p>**NOTE**:
+<br>Third-party applications can set only their own abilities.
+</p>
 
 **Since:** 9
 

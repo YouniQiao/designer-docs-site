@@ -35,9 +35,9 @@ addEncodedSegment(pathSegment: string): URI
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("http://www.test.com");
-const newRoute = uriInstance.addEncodedSegment("my%20image.jpg");
-console.info(newRoute.toString()); // http://www.test.com/my%20image.jpg
+const uriInstance = new uri.URI('http://www.test.com');
+const uriWithEncodedSegment = uriInstance.addEncodedSegment('my%20image.jpg');
+console.info(uriWithEncodedSegment.toString()); // http://www.test.com/my%20image.jpg
 
 ```
 
@@ -71,8 +71,8 @@ addQueryValue(key: string, value: string): URI
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.test.com");
-const newRoute = uriInstance.addQueryValue("param1", "hello world");
+const uriInstance = new uri.URI('https://www.test.com');
+const newRoute = uriInstance.addQueryValue('param1', 'hello world');
 console.info(newRoute.toString()); // https://www.test.com?param1=hello%20world
 
 ```
@@ -106,9 +106,9 @@ addSegment(pathSegment: string): URI
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("http://www.test.com");
-const newRoute = uriInstance.addSegment("my image.jpg");
-console.info(newRoute.toString()); // http://www.test.com/my%20image.jpg
+const uriInstance = new uri.URI('http://www.test.com');
+const uriWithSegment = uriInstance.addSegment('my image.jpg');
+console.info(uriWithSegment.toString()); // http://www.test.com/my%20image.jpg
 
 ```
 
@@ -135,9 +135,9 @@ checkHierarchical(): boolean
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("http://www.test.com/images/pic.jpg");
+const uriInstance = new uri.URI('http://www.test.com/images/pic.jpg');
 console.info(`${uriInstance.checkHierarchical()}`); // true
-const uriInstance1 = new uri.URI("mailto:user@example.com");
+const uriInstance1 = new uri.URI('mailto:user@example.com');
 console.info(`${uriInstance1.checkHierarchical()}`); // false
 
 ```
@@ -195,9 +195,9 @@ checkOpaque(): boolean
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("http://www.test.com/images/pic.jpg");
+const uriInstance = new uri.URI('http://www.test.com/images/pic.jpg');
 console.info(`${uriInstance.checkOpaque()}`); // false
-const uriInstance1 = new uri.URI("mailto:user@example.com");
+const uriInstance1 = new uri.URI('mailto:user@example.com');
 console.info(`${uriInstance1.checkOpaque()}`); // true
 
 ```
@@ -225,9 +225,9 @@ checkRelative(): boolean
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://username:password@www.qwer.com:8080?query=p");
+const uriInstance = new uri.URI('https://username:password@www.qwer.com:8080?query=p');
 console.info(`${uriInstance.checkRelative()}`); // false
-const uriInstance1 = new uri.URI("/images/pic.jpg");
+const uriInstance1 = new uri.URI('/images/pic.jpg');
 console.info(`${uriInstance1.checkRelative()}`); // true
 
 ```
@@ -255,7 +255,7 @@ clearQuery(): URI
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.test.com?param1=value1");
+const uriInstance = new uri.URI('https://www.test.com?param1=value1');
 console.info(uriInstance.clearQuery().toString()); // https://www.test.com
 
 ```
@@ -289,8 +289,8 @@ constructor(uri: string)
 **示例：**
 
 ```TypeScript
-let mm = 'https://username:password@host:8080/directory/file?foo=1&bar=2#fragment';
-new uri.URI(mm);
+let uriString = 'https://username:password@host:8080/directory/file?foo=1&bar=2#fragment';
+new uri.URI(uriString);
 
 ```
 
@@ -330,7 +330,7 @@ static createFromParts(scheme: string, ssp: string, fragment: string): URI
 **示例：**
 
 ```TypeScript
-const uriInstance = uri.URI.createFromParts("mailto", "no body", "top");
+const uriInstance = uri.URI.createFromParts('mailto', 'no body', 'top');
 console.info(uriInstance.toString()); // mailto:no%20body#top
 
 ```
@@ -437,16 +437,16 @@ getBooleanQueryValue(key: string, defaultValue: boolean): boolean
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.test.com/search?active=true");
-console.info(`${uriInstance.getBooleanQueryValue("active", false)}`); // true
-const uriInstance1 = new uri.URI("https://www.test.com/search");
-console.info(`${uriInstance1.getBooleanQueryValue("active", false)}`); // false
-const uriInstance2 = new uri.URI("https://www.test.com/search?active=aa&active=false");
-console.info(`${uriInstance2.getBooleanQueryValue("active", false)}`); // true
-const uriInstance3 = new uri.URI("https://www.test.com/search?active=0");
-console.info(`${uriInstance3.getBooleanQueryValue("active", true)}`); // false
-const uriInstance4 = new uri.URI("https://www.test.com/search");
-console.info(`${uriInstance4.getBooleanQueryValue("active", true)}`); // true
+const uriInstance = new uri.URI('https://www.test.com/search?active=true');
+console.info(`${uriInstance.getBooleanQueryValue('active', false)}`); // true
+const uriInstance1 = new uri.URI('https://www.test.com/search');
+console.info(`${uriInstance1.getBooleanQueryValue('active', false)}`); // false
+const uriInstance2 = new uri.URI('https://www.test.com/search?active=aa&active=false');
+console.info(`${uriInstance2.getBooleanQueryValue('active', false)}`); // true
+const uriInstance3 = new uri.URI('https://www.test.com/search?active=0');
+console.info(`${uriInstance3.getBooleanQueryValue('active', true)}`); // false
+const uriInstance4 = new uri.URI('https://www.test.com/search');
+console.info(`${uriInstance4.getBooleanQueryValue('active', true)}`); // true
 
 ```
 
@@ -473,7 +473,7 @@ getLastSegment(): string
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("content://com.test.provider/files/image.jpg");
+const uriInstance = new uri.URI('content://com.test.provider/files/image.jpg');
 console.info(uriInstance.getLastSegment()); // image.jpg
 
 ```
@@ -501,7 +501,7 @@ getQueryNames(): string[]
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.test.com?param1=value1&param2=value2");
+const uriInstance = new uri.URI('https://www.test.com?param1=value1&param2=value2');
 const paramNames = uriInstance.getQueryNames();
 console.info(paramNames.toString()); // param1,param2
 
@@ -513,7 +513,9 @@ console.info(paramNames.toString()); // param1,param2
 getQueryValue(key: string): string
 ```
 
-根据给定的查询关键词，从URI查询参数部分中提取出该关键词对应的第一个值，若查询参数中存在已编码过的内容，需将对应Key进行解码后获取Value。 查询参数在问号“?”后，由键值对组成。键和值用等号“=”连接，键值对用与号“&”分隔。
+根据给定的查询关键词，从URI查询参数部分中提取出该关键词对应的第一个值，若查询参数中存在已编码过的内容，需将对应Key进行解码后获取Value。
+
+查询参数在问号“?”后，由键值对组成。键和值用等号“=”连接，键值对用与号“&”分隔。
 
 **起始版本：** 12
 
@@ -536,9 +538,9 @@ getQueryValue(key: string): string
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.com?param1=value1&param2=value2");
-console.info(uriInstance.getQueryValue("param1")); // value1
-let uriInstance1 = new uri.URI('https://www.zyy.ss?sa%3D=po%7E');
+const uriInstance = new uri.URI('https://www.com?param1=value1&param2=value2');
+console.info(uriInstance.getQueryValue('param1')); // value1
+const uriInstance1 = new uri.URI('https://www.zyy.ss?sa%3D=po%7E');
 console.info(uriInstance1.getQueryValue('sa=')) // po~
 console.info(uriInstance1.getQueryValue('abc')) // null
 
@@ -550,7 +552,9 @@ console.info(uriInstance1.getQueryValue('abc')) // null
 getQueryValues(key: string): string[]
 ```
 
-获取URI中查询参数指定键的所有值。如果查询参数已编码，需先解码键再获取值。 查询参数是出现在问号“?”之后的部分，由键值对组成，键和值用等号“=”连接，键值对间用与号“&”分隔。
+获取URI中查询参数指定键的所有值。如果查询参数已编码，需先解码键再获取值。
+
+查询参数是出现在问号“?”之后的部分，由键值对组成，键和值用等号“=”连接，键值对间用与号“&”分隔。
 
 **起始版本：** 12
 
@@ -573,9 +577,9 @@ getQueryValues(key: string): string[]
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("https://www.test.com/search?query=name&query=my");
-console.info(uriInstance.getQueryValues("query").toString()); // name,my
-console.info(JSON.stringify(uriInstance.getQueryValues("abc"))); // []
+const uriInstance = new uri.URI('https://www.test.com/search?query=name&query=my');
+console.info(uriInstance.getQueryValues('query').toString()); // name,my
+console.info(JSON.stringify(uriInstance.getQueryValues('abc'))); // []
 
 ```
 
@@ -602,7 +606,7 @@ getSegment(): string[]
 **示例：**
 
 ```TypeScript
-const uriInstance = new uri.URI("http://www.test.com/path/to/image.jpg");
+const uriInstance = new uri.URI('http://www.test.com/path/to/image.jpg');
 console.info(uriInstance.getSegment().toString()); // path,to,image.jpg
 
 ```
@@ -613,7 +617,17 @@ console.info(uriInstance.getSegment().toString()); // path,to,image.jpg
 normalize(): URI
 ```
 
-规范化此URI的路径。 > **说明：** > > 如果此URI是不透明的，或者其路径已经是规范形式，则返回该URI。否则将构造一个新的URI，该URI与当前URI相同，唯一的区别是其路径通过规范化当前URI的路径来计算，具体规则如下： > > 1.移除所有的 .（点）段。 > > 2.如果 ..（双点）段前面有一个非 .. 段，则将这两个段一起移除。重复此步骤，直到不再适用为止。 > > 如果路径规范化后以 ..（双点）段开头，这表明之前没有足够的非 .. 段可以移除，因此路径将以 .. 段开始。
+规范化此URI的路径。
+
+> **说明：**
+>
+> 如果此URI是不透明的，或者其路径已经是规范形式，则返回该URI。否则将构造一个新的URI，该URI与当前URI相同，唯一的区别是其路径通过规范化当前URI的路径来计算，具体规则如下：
+>
+> 1.移除所有的 .（点）段。
+>
+> 2.如果 ..（双点）段前面有一个非 .. 段，则将这两个段一起移除。重复此步骤，直到不再适用为止。
+>
+> 如果路径规范化后以 ..（双点）段开头，这表明之前没有足够的非 .. 段可以移除，因此路径将以 .. 段开始。
 
 **起始版本：** 8
 
@@ -633,7 +647,7 @@ normalize(): URI
 const uriInstance = new uri.URI('https://username:password@www.qwer.com:8080/path/path1/../path2/./path3?query=pppppp');
 console.info(uriInstance.path); // /path/path1/../path2/./path3
 // 规范化path后，移除所有的.（点）段,如果 ..（双点）段前面有一个非 .. 段，则将这两个段一起移除。
-let uriInstance1 = uriInstance.normalize();
+const uriInstance1 = uriInstance.normalize();
 console.info(uriInstance1.path); // /path/path2/path3
 let uri1 = new uri.URI('http://www.test.com/../../patch/path1/../path2/path3/./path4/../');
 console.info(uri1.path); // /../../patch/path1/../path2/path3/./path4/../

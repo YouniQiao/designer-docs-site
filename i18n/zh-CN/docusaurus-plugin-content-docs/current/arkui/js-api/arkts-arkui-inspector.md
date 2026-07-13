@@ -6,23 +6,17 @@ Used to do observer layout and draw event for component.
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
-## 导入模块
-
-```TypeScript
-import { inspector } from '@kit.ArkUI';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [createComponentObserver](arkts-inspector-createcomponentobserver-f.md#createComponentObserver-1) |  |
+| [createComponentObserver](arkts-arkui-createcomponentobserver-f.md#createcomponentobserver-1) |  |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ComponentObserver](arkts-inspector-componentobserver-i.md) | The ComponentObserver is used to listen for layout and draw events. |
+| [ComponentObserver](arkts-arkui-componentobserver-i.md) | The ComponentObserver is used to listen for layout and draw events. |
 

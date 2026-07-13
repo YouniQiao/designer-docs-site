@@ -1,6 +1,11 @@
 # NodeAdapter
 
-Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md) API functionality. > **NOTE** > > Negative input parameters are ignored and trigger no processing.
+Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md) API
+functionality.
+
+> **NOTE**
+>
+> Negative input parameters are ignored and trigger no processing.
 
 **Since:** 12
 
@@ -12,7 +17,13 @@ Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach
 static attachNodeAdapter(adapter: NodeAdapter, node: FrameNode): boolean
 ```
 
-Attaches a FrameNode to a NodeAdapter. Each node can be bound to only one NodeAdapter. Attempts to re-attach to a NodeAdapter that has already been attached to will fail and return **false**. > **NOTE** > > The following components can be bound: **Column**, **Row**, **Stack**, **GridRow**, **Flex**, **Swiper**, > **RelativeContainer**, **List**, **ListItemGroup**, **WaterFlow**, and **Grid**.
+Attaches a FrameNode to a NodeAdapter. Each node can be bound to only one NodeAdapter. Attempts to re-attach to a
+NodeAdapter that has already been attached to will fail and return **false**.
+
+> **NOTE**
+>
+> The following components can be bound: **Column**, **Row**, **Stack**, **GridRow**, **Flex**, **Swiper**,
+> **RelativeContainer**, **List**, **ListItemGroup**, **WaterFlow**, and **Grid**.
 
 **Since:** 12
 
@@ -79,7 +90,8 @@ Detaches a FrameNode from its NodeAdapter.
 dispose(): void
 ```
 
-Disposes of this **NodeAdapter** object. Bindings, if any, of the object will be cleared before the object is disposed of.
+Disposes of this **NodeAdapter** object. Bindings, if any, of the object will be cleared before the object is
+disposed of.
 
 **Since:** 12
 
@@ -95,7 +107,10 @@ Disposes of this **NodeAdapter** object. Bindings, if any, of the object will be
 getAllAvailableItems(): Array<FrameNode>
 ```
 
-Obtains all available items. Available nodes include both currently displayed and preloaded nodes. The number of preloaded nodes can be configured by adjusting the **cachedCount** property of the parent container, following the [usage constraints](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md#constraints) of **LazyForEach**.
+Obtains all available items. Available nodes include both currently displayed and preloaded nodes. The number of
+preloaded nodes can be configured by adjusting the **cachedCount** property of the parent container, following the
+[usage constraints](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md#constraints) of
+**LazyForEach**.
 
 **Since:** 12
 
@@ -140,7 +155,10 @@ Inserts a specified number of items starting from a specific index.
 isDisposed(): boolean
 ```
 
-Checks whether this FrameNode object has released its reference to its backend entity node. Frontend nodes maintain references to corresponding backend entity nodes. After a node calls the **dispose** API to release this reference, subsequent API calls may cause crashes or return default values. This API facilitates validation of node validity prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
+Checks whether this FrameNode object has released its reference to its backend entity node. Frontend nodes maintain
+references to corresponding backend entity nodes. After a node calls the **dispose** API to release this reference,
+subsequent API calls may cause crashes or return default values. This API facilitates validation of node validity
+prior to operations, thereby mitigating risks in scenarios where calls after disposal are required.
 
 **Since:** 20
 
@@ -207,7 +225,10 @@ Called when a FrameNode is attached to the NodeAdapter.
 onCreateChild?(index: number): FrameNode
 ```
 
-Called during node initialization or when new child nodes are detected. When adding child components, follow the child component restrictions for declarative components. For example, **WaterFlow** only supports adding **FlowItem** child nodes. The parent node uses the child node's index and key to determine whether the node is being loaded for the first time or a new node is sliding into view.
+Called during node initialization or when new child nodes are detected. When adding child components, follow the
+child component restrictions for declarative components. For example, **WaterFlow** only supports adding
+**FlowItem** child nodes. The parent node uses the child node's index and key to determine whether the node is
+being loaded for the first time or a new node is sliding into view.
 
 **Since:** 12
 
@@ -251,7 +272,8 @@ Called when detachment occurs.
 onDisposeChild?(id: number, node: FrameNode): void
 ```
 
-Called when a child node is about to be disposed. Nodes that are neither displayed on the screen nor within the preload range are considered nodes about to be disposed.
+Called when a child node is about to be disposed. Nodes that are neither displayed on the screen nor within the
+preload range are considered nodes about to be disposed.
 
 **Since:** 12
 
@@ -274,7 +296,8 @@ Called when a child node is about to be disposed. Nodes that are neither display
 onGetChildId?(index: number): number
 ```
 
-Called during node initialization or when new child nodes are detected. The **index** parameter enables custom ID generation. Ensure that IDs remain unique across different index values.
+Called during node initialization or when new child nodes are detected. The **index** parameter enables custom ID
+generation. Ensure that IDs remain unique across different index values.
 
 **Since:** 12
 
@@ -302,7 +325,8 @@ Called during node initialization or when new child nodes are detected. The **in
 onUpdateChild?(id: number, node: FrameNode): void
 ```
 
-Called when a loaded node is reused. Node reuse occurs when the key value of a cached node matches that of the node to be reused.
+Called when a loaded node is reused. Node reuse occurs when the key value of a cached node matches that of the node
+to be reused.
 
 **Since:** 12
 
@@ -325,7 +349,8 @@ Called when a loaded node is reused. Node reuse occurs when the key value of a c
 reloadAllItems(): void
 ```
 
-Reloads all items in this node. This API calls the [OnDataReloaded](../arkts-components/arkts-arkui-datachangelistener-i.md#ondatareloaded-1) API in **LazyForEach** to trigger component data refresh.
+Reloads all items in this node. This API calls the [OnDataReloaded](../arkts-components/arkts-arkui-datachangelistener-i.md#ondatareloaded-1) API in
+**LazyForEach** to trigger component data refresh.
 
 **Since:** 12
 

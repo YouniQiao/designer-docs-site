@@ -1,6 +1,10 @@
 # VibrateFromFile
 
-Represents a custom vibration pattern. It is supported only by certain devices. An error code will be returned if a device does not support this vibration mode. You can pass **VibrateFromFile** to [VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md#vibrateeffect) to specify a custom vibration pattern when calling [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-1) or [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-2).
+Represents a custom vibration pattern. It is supported only by certain devices. An error code will be returned if a
+device does not support this vibration mode. You can pass **VibrateFromFile** to
+[VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md) to specify a custom vibration pattern when calling
+[vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-1)
+or [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-2).
 
 **Since:** 10
 
@@ -9,7 +13,7 @@ Represents a custom vibration pattern. It is supported only by certain devices. 
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## hapticFd

@@ -9,7 +9,7 @@ Describes the configuration options for polygon-to-polygon transformation mappin
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## dst
@@ -36,7 +36,11 @@ Coordinates of the destination point.
 dstIndex?: number
 ```
 
-Start index of the destination point coordinates. Default value: **src.length/2**. Value range: [0, +∞).
+Start index of the destination point coordinates.
+
+Default value: **src.length/2**.
+
+Value range: [0, +∞).
 
 **Type:** number
 
@@ -56,7 +60,12 @@ Start index of the destination point coordinates. Default value: **src.length/2*
 pointCount?:number
 ```
 
-Number of used points. **0**: returns an identity matrix. **1**: returns a translation matrix. 2-4: returns a transformation matrix. Default value: **0**. Value range: [0, +∞).
+Number of used points. **0**: returns an identity matrix. **1**: returns a translation matrix. 2-4: returns a
+transformation matrix.
+
+Default value: **0**.
+
+Value range: [0, +∞).
 
 **Type:** number
 
@@ -94,7 +103,11 @@ Coordinates of the source point.
 srcIndex?: number
 ```
 
-Start index of the source point coordinates. Default value: **0**. Value range: [0, +∞).
+Start index of the source point coordinates.
+
+Default value: **0**.
+
+Value range: [0, +∞).
 
 **Type:** number
 

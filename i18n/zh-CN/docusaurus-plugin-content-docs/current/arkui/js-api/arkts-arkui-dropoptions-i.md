@@ -12,7 +12,11 @@
 disableDataPrefetch?: boolean
 ```
 
-设置拖拽是否提前获取数据。true表示不提前获取数据，false表示提前获取数据，默认值为false。 **说明：** 当使用[startDataLoading](arkts-arkui-dragevent-i.md#startdataloading-1)获取数据时需设置该参数为true，防止拖拽提前获取数据。
+设置拖拽是否提前获取数据。true表示不提前获取数据，false表示提前获取数据，默认值为false。
+
+**说明：**
+
+当使用[startDataLoading](arkts-arkui-dragevent-i.md#startdataloading-1)获取数据时需设置该参数为true，防止拖拽提前获取数据。
 
 **类型：** boolean
 

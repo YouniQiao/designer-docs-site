@@ -12,7 +12,9 @@
 accountId: number
 ```
 
-Account ID, which must be greater than or equal to 0. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2) of **@ohos.account.osAccount** to obtain the account ID.
+Account ID, which must be greater than or equal to 0. You can call
+[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2) of
+**@ohos.account.osAccount** to obtain the account ID.
 
 **类型：** number
 
@@ -28,7 +30,9 @@ Account ID, which must be greater than or equal to 0. You can call [getOsAccount
 appIdentifier: string
 ```
 
-应用[唯一标识符](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md#signatureinfo)，如果应用没有appIdentifier可使用appId代替，可以通过接口 [bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3) 获取bundleInfo.signatureInfo.appIdentifier和bundleInfo.signatureInfo.appId。
+应用[唯一标识符](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md)，如果应用没有appIdentifier可使用appId代替，可以通过接口
+[bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3)
+获取bundleInfo.signatureInfo.appIdentifier和bundleInfo.signatureInfo.appId。
 
 **类型：** string
 
@@ -44,7 +48,9 @@ appIdentifier: string
 appIndex: number
 ```
 
-表示分身应用的索引，默认值为0。 appIndex为0时，表示主应用。appIndex大于0时，表示指定的分身应用。
+表示分身应用的索引，默认值为0。
+
+appIndex为0时，表示主应用。appIndex大于0时，表示指定的分身应用。
 
 **类型：** number
 

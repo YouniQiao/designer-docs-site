@@ -1,12 +1,15 @@
 # ShortcutWant (System API)
 
-> **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [bundleManager-ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md#shortcutwant) instead.
+> **NOTE**
+>
+> This API has been supported since API version 7 and deprecated since API version 9. You are advised to use
+> [bundleManager-ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [shortcutInfo:ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md#shortcutwant)
+**Substitutes:** [shortcutInfo:ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md)
 
 **System capability:** SystemCapability.BundleManager.BundleFramework
 

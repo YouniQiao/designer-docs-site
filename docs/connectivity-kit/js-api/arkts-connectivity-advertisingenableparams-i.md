@@ -9,7 +9,7 @@ Parameter for dynamically enable advertising.
 ## Modules to Import
 
 ```TypeScript
-import { ble } from '@ohos.bluetooth.ble';
+import { ble } from '@kit.ConnectivityKit';
 ```
 
 ## advertisingId
@@ -34,7 +34,9 @@ Indicates the ID of current advertising.
 duration?: number
 ```
 
-Indicates the duration for advertising continuously. The duration, in 10ms unit. Valid range is from 1 (10ms) to 65535 (655,350 ms). If this parameter is not specified or is set to 0, advertise is continuously sent.
+Indicates the duration for advertising continuously.
+The duration, in 10ms unit. Valid range is from 1 (10ms) to 65535 (655,350 ms).
+If this parameter is not specified or is set to 0, advertise is continuously sent.
 
 **Type:** number
 

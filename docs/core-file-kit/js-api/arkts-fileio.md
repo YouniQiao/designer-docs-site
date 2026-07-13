@@ -59,12 +59,12 @@ fileio
 | [ftruncateSync](arkts-corefile-fileio-ftruncatesync-f.md#ftruncatesync-1) | Truncates a file based on the file descriptor. This API returns the result synchronously. |
 | [hash](arkts-corefile-fileio-hash-f.md#hash-1) | Calculates the hash value of a file. This API uses a promise to return the result. |
 | [hash](arkts-corefile-fileio-hash-f.md#hash-2) | Calculates the hash value of a file. This API uses an asynchronous callback to return the result. |
-| [lchown](arkts-corefile-fileio-lchown-f.md#lchown-1) | Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on the file path. This API uses a promise to return the result. |
-| [lchown](arkts-corefile-fileio-lchown-f.md#lchown-2) | Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on a file path. This API uses an asynchronous callback to return the result. |
-| [lchownSync](arkts-corefile-fileio-lchownsync-f.md#lchownsync-1) | Changes the file owner based on a file path and changes the owner of the symbolic link (not the referenced file). This API returns the result synchronously. |
-| [lstat](arkts-corefile-fileio-lstat-f.md#lstat-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise to return the result. |
-| [lstat](arkts-corefile-fileio-lstat-f.md#lstat-2) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronous callback to return the result. |
-| [lstatSync](arkts-corefile-fileio-lstatsync-f.md#lstatsync-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the result synchronously. |
+| [lchown](arkts-corefile-fileio-lchown-f.md#lchown-1) | Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on the filepath. This API uses a promise to return the result. |
+| [lchown](arkts-corefile-fileio-lchown-f.md#lchown-2) | Changes the file owner (owner of the symbolic link, not the file referred to by the symbolic link) based on a filepath. This API uses an asynchronous callback to return the result. |
+| [lchownSync](arkts-corefile-fileio-lchownsync-f.md#lchownsync-1) | Changes the file owner based on a file path and changes the owner of the symbolic link (not the referenced file).This API returns the result synchronously. |
+| [lstat](arkts-corefile-fileio-lstat-f.md#lstat-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise toreturn the result. |
+| [lstat](arkts-corefile-fileio-lstat-f.md#lstat-2) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronouscallback to return the result. |
+| [lstatSync](arkts-corefile-fileio-lstatsync-f.md#lstatsync-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the resultsynchronously. |
 | [mkdir](arkts-corefile-fileio-mkdir-f.md#mkdir-1) | Creates a directory. This API uses a promise to return the result. |
 | [mkdir](arkts-corefile-fileio-mkdir-f.md#mkdir-2) | Creates a directory. This API uses an asynchronous callback to return the result. |
 | [mkdir](arkts-corefile-fileio-mkdir-f.md#mkdir-3) | Creates a directory. This API uses an asynchronous callback to return the result. |
@@ -115,10 +115,10 @@ fileio
 
 | Name | Description |
 | --- | --- |
-| [Dir](arkts-corefile-dir-depr-i.md) | Manages directories. Before calling a method of the **Dir** class, use the **opendir()** method synchronously or asynchronously to create a **Dir** instance. |
-| [Dirent](arkts-corefile-dirent-depr-i.md) | Provides information about files and directories. Before calling an API of the **Dirent** class, use [dir.read()](arkts-corefile-fileio-read-f.md#read-1) synchronously or asynchronously to create a **Dirent** instance. |
+| [Dir](arkts-corefile-dir-depr-i.md) | Manages directories. Before calling a method of the **Dir** class, use the **opendir()** method synchronously orasynchronously to create a **Dir** instance. |
+| [Dirent](arkts-corefile-dirent-depr-i.md) | Provides information about files and directories. Before calling an API of the **Dirent** class, use[dir.read()](arkts-corefile-fileio-read-f.md#read-1) synchronously or asynchronously to create a **Dirent** instance. |
 | [ReadOut](arkts-corefile-readout-depr-i.md) | Obtains the file read result. This class applies only to the **read()** method. |
-| [Stat](arkts-corefile-stat-depr-i.md) | Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat-1) method synchronously or asynchronously to create a **Stat** instance. |
-| [Stream](arkts-corefile-stream-depr-i.md) | Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to create a **Stream** instance synchronously or asynchronously. |
-| [Watcher](arkts-corefile-watcher-depr-i.md) | Listens for file change. You can call the **Watcher.stop()** method synchronously or asynchronously to stop the listening. |
+| [Stat](arkts-corefile-stat-depr-i.md) | Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat-1)method synchronously or asynchronously to create a **Stat** instance. |
+| [Stream](arkts-corefile-stream-depr-i.md) | Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** tocreate a **Stream** instance synchronously or asynchronously. |
+| [Watcher](arkts-corefile-watcher-depr-i.md) | Listens for file change. You can call the **Watcher.stop()** method synchronously or asynchronously to stop thelistening. |
 

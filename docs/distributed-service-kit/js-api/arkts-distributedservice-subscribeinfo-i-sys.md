@@ -13,7 +13,7 @@ Defines subscription information.
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.distributedHardware.deviceManager';
+import { deviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## capability
@@ -58,7 +58,8 @@ Frequency of device discovery.
 isSameAccount: boolean
 ```
 
-Whether the account is the same as the current account. The value **true** indicates the same account and the value **false** indicates a different account.
+Whether the account is the same as the current account. The value **true** indicates the same account and the
+value **false** indicates a different account.
 
 **Type:** boolean
 
@@ -76,7 +77,8 @@ Whether the account is the same as the current account. The value **true** indic
 isWakeRemote: boolean
 ```
 
-Whether to wake up the device. The value **true** means to wake up the device and the value **false** means the opposite.
+Whether to wake up the device. The value **true** means to wake up the device and the value **false** means the
+opposite.
 
 **Type:** boolean
 

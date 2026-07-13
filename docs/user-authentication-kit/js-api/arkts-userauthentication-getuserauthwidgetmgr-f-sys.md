@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## getUserAuthWidgetMgr
@@ -12,7 +12,13 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 function getUserAuthWidgetMgr(version: number): UserAuthWidgetMgr
 ```
 
-Obtains a **UserAuthWidgetMgr** instance for user authentication. > **NOTE** > A **UserAuthInstance** instance can be used for an authentication only once.
+Obtains the authentication widget manager object. It is used to obtain the **UserAuthWidgetMgr** instance, which
+can be used to register custom authentication widgets with the system for unified management.
+
+> **NOTE**
+
+> Each **UserAuthWidgetMgr** instance can manage one authentication widget. To manage multiple widgets, you need to
+> obtain multiple instances.
 
 **Since:** 10
 
@@ -26,13 +32,13 @@ Obtains a **UserAuthWidgetMgr** instance for user authentication. > **NOTE** > A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| version | number | Yes | Version of the user authentication widget. |
+| version | number | Yes | Version number of the authentication widget. Currently, version 1 is supported. The widgetversion determines the communication protocol and supported features between the widget and the framework. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| UserAuthWidgetMgr | **UserAuthWidgetMgr** instance obtained. |
+| UserAuthWidgetMgr | Authentication widget manager object. It can be used to subscribe to and unsubscribefrom commands from the user authentication framework. |
 
 **Error codes:**
 

@@ -1,6 +1,8 @@
 # TaskGroup
 
-表示任务组，一次执行一组任务，适用于执行一组有关联的任务。如果所有任务正常执行，异步执行完毕后返回所有任务结果的数组， 数组中元素的顺序与调用[addTask](arkts-arkts-taskgroup-c.md#addtask-2)添加任务的顺序相同。如果任意任务失败， 则会抛出对应异常。如果任务组中存在多个任务失败的情况，则会抛出第一个失败任务的异常。任务组可以多次执行，但执行后不能新增任务。
+表示任务组，一次执行一组任务，适用于执行一组有关联的任务。如果所有任务正常执行，异步执行完毕后返回所有任务结果的数组，
+数组中元素的顺序与调用[addTask](arkts-arkts-taskgroup-c.md#addtask-2)添加任务的顺序相同。如果任意任务失败，
+则会抛出对应异常。如果任务组中存在多个任务失败的情况，则会抛出第一个失败任务的异常。任务组可以多次执行，但执行后不能新增任务。
 
 **起始版本：** 10
 
@@ -53,7 +55,8 @@ taskGroup.addTask(printArgs, 100); // 100: test number
 addTask(task: Task): void
 ```
 
-将创建好的任务添加到任务组中。使用此方法前需要先构造**TaskGroup**实例。任务组不能添加其他任务组中的任务、串行队列任务、 异步队列任务、有依赖关系的任务、长时任务、周期任务和已执行的任务。
+将创建好的任务添加到任务组中。使用此方法前需要先构造**TaskGroup**实例。任务组不能添加其他任务组中的任务、串行队列任务、
+异步队列任务、有依赖关系的任务、长时任务、周期任务和已执行的任务。
 
 **起始版本：** 10
 
@@ -72,8 +75,8 @@ addTask(task: Task): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200014](../errorcode-utils.md#10200014-非concurrent函数错误) | The function is not marked as concurrent. |
-| [10200051](../errorcode-utils.md#10200051-无法再次执行周期任务) | The periodic task cannot be executed again.<br>**适用版本：** 12 |
-| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18 |
+| [10200051](../errorcode-utils.md#10200051-无法再次执行周期任务) | The periodic task cannot be executed again.<br>**适用版本：** 12+ |
+| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18+ |
 
 **示例：**
 

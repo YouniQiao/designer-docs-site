@@ -1,6 +1,8 @@
 # @ohos.notificationExtensionSubscription
 
-本模块提供管理通知扩展的能力，具体包括：打开通知扩展订阅设置界面、订阅和取消订阅通知扩展、获取和设置通知授权状态。
+The **notificationExtensionSubscription** module provides capabilities for managing notification extension, including
+opening the extension settings screen, subscribing to/unsubscribing from notification extension, and obtaining/
+setting the notification authorization status.
 
 **Since:** 22
 
@@ -18,32 +20,39 @@ import { notificationExtensionSubscription } from '@kit.NotificationKit';
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getAllSubscriptionBundles](arkts-notificationextensionsubscription-getallsubscriptionbundles-f-sys.md#getAllSubscriptionBundles-1) | 获取所有具有ohos.permission.SUBSCRIBE_NOTIFICATION权限并且实现了 [NotificationSubscriberExtensionAbility]{@link @ohos.application.NotificationSubscriberExtensionAbility:NotificationSubscriberExtensionAbility}的应用列表。 使用Promise异步回调。 |
-| [getSubscribeInfo](arkts-notificationextensionsubscription-getsubscribeinfo-f.md#getSubscribeInfo-1) | 获取当前应用的通知扩展订阅信息。使用Promise异步回调。 |
-| [getUserGrantedEnabledBundles](arkts-notificationextensionsubscription-getusergrantedenabledbundles-f.md#getUserGrantedEnabledBundles-1) | 获取指定应用中“已获取的本机通知”通知开关开启的应用列表。使用Promise异步回调。 |
-| <!--DelRow-->[getUserGrantedEnabledBundles](arkts-notificationextensionsubscription-getusergrantedenabledbundles-f-sys.md#getUserGrantedEnabledBundles-1) | 获取指定应用中“已获取的本机通知”通知开关开启的应用列表。使用Promise异步回调。 |
-| <!--DelRow-->[getUserGrantedState](arkts-notificationextensionsubscription-getusergrantedstate-f-sys.md#getUserGrantedState-1) | 查询指定应用的“允许获取本机通知”的开关状态。使用Promise异步回调。 |
-| [isUserGranted](arkts-notificationextensionsubscription-isusergranted-f.md#isUserGranted-1) | 查询“允许获取本机通知”的开关状态。使用Promise异步回调。 |
-| [openSubscriptionSettings](arkts-notificationextensionsubscription-opensubscriptionsettings-f.md#openSubscriptionSettings-1) | 打开应用的通知扩展订阅授权页面，以半模态弹窗形式显示。用户可在该页面授权“允许获取本机通知”开关与“已获取的本机通知”应用开关。 使用Promise异步回调。 |
-| [openSubscriptionSettingsWithResult](arkts-notificationextensionsubscription-opensubscriptionsettingswithresult-f.md#openSubscriptionSettingsWithResult-1) | 打开应用的通知扩展订阅授权页面，以半模态弹窗形式显示。用户可在该页面授权“允许获取本机通知”开关与“已获取的本机通知”应用开关。 使用Promise异步回调，当半模态窗口关闭时返回用户设置的授权的结果。 |
-| <!--DelRow-->[setUserGrantedBundleState](arkts-notificationextensionsubscription-setusergrantedbundlestate-f-sys.md#setUserGrantedBundleState-1) | 设置指定应用中“已获取的本机通知”的应用通知开关状态。使用Promise异步回调。 |
-| <!--DelRow-->[setUserGrantedState](arkts-notificationextensionsubscription-setusergrantedstate-f-sys.md#setUserGrantedState-1) | 设置指定应用的“允许获取本机通知”的开关状态。使用Promise异步回调。 |
-| [subscribe](arkts-notificationextensionsubscription-subscribe-f.md#subscribe-1) | 订阅通知扩展。使用[蓝牙模块](docroot://connectivity/connectivity-kit-intro.md#蓝牙简介)相关接口获取蓝牙设备的唯一地址后 方可订阅。使用Promise异步回调。 |
-| [unsubscribe](arkts-notificationextensionsubscription-unsubscribe-f.md#unsubscribe-1) | 取消通知扩展的订阅。使用Promise异步回调。 |
+| [getSubscribeInfo](arkts-notification-getsubscribeinfo-f.md#getsubscribeinfo-1) | Obtains the subscription information about the notification extension of this application. This API uses a promise to return the result. |
+| [getUserGrantedEnabledBundles](arkts-notification-getusergrantedenabledbundles-f.md#getusergrantedenabledbundles-2) | Obtains the applications that are allowed to access device notifications. This API uses a promise to return the result. |
+| [isUserGranted](arkts-notification-isusergranted-f.md#isusergranted-1) | Checks whether the **Allow access to notifications on this device** switch is toggled on. This API uses a promise to return the result. |
+| [openSubscriptionSettings](arkts-notification-opensubscriptionsettings-f.md#opensubscriptionsettings-1) | Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications for specified applications. This API uses a promise to return the result. |
+| [openSubscriptionSettingsWithResult](arkts-notification-opensubscriptionsettingswithresult-f.md#opensubscriptionsettingswithresult-1) | Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications for specified applications. This API uses a promise to return the result. When the semi-modal window is closed, theuser-defined authorization result is returned. |
+| [subscribe](arkts-notification-subscribe-f.md#subscribe-1) | Subscribes to the notification extension. You can subscribe to the notification extension only after obtaining the unique address of the Bluetooth device by calling the APIs related to the [Bluetooth modules](../../../../connectivity/connectivity-kit-intro.md#bluetooth). This API uses a promise to return the result. |
+| [unsubscribe](arkts-notification-unsubscribe-f.md#unsubscribe-1) | Unsubscribes from the notification extension. This API uses a promise to return the result. |
 
-### Types
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [BundleOption](arkts-notificationextensionsubscription-bundleoption-t.md) | 指定应用的包信息。 |
-| [GrantedBundleInfo](arkts-notificationextensionsubscription-grantedbundleinfo-t.md) | 授权应用的包信息。 |
-| [NotificationExtensionSubscriptionInfo](arkts-notificationextensionsubscription-notificationextensionsubscriptioninfo-t.md) | 用于描述通知扩展订阅的信息。 |
-| [NotificationInfo](arkts-notificationextensionsubscription-notificationinfo-t.md) | 通知订阅扩展能力中 [onReceiveMessage]{@link @ohos.application.NotificationSubscriberExtensionAbility:NotificationSubscriberExtensionAbility.onReceiveMessage} 回调的通知信息。 |
-| [UserGrantSetting](arkts-notificationextensionsubscription-usergrantsetting-t.md) | 用户授权的设置信息。 |
+| [getAllSubscriptionBundles](arkts-notification-getallsubscriptionbundles-f-sys.md#getallsubscriptionbundles-1) | Obtains all applications that have requested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented [NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md). This API uses a promise to return the result. |
+| [getUserGrantedEnabledBundles](arkts-notification-getusergrantedenabledbundles-f-sys.md#getusergrantedenabledbundles-1) | Obtains the applications that are allowed to access device notifications.This API uses a promise to return the result. |
+| [getUserGrantedState](arkts-notification-getusergrantedstate-f-sys.md#getusergrantedstate-1) | Obtains the enabling state of the **Allow access to notifications on this device** switchof a specified application. This API uses a promise to return the result. |
+| [setUserGrantedBundleState](arkts-notification-setusergrantedbundlestate-f-sys.md#setusergrantedbundlestate-1) | Sets the enabling state of device notification access for the specified application.This API uses a promise to return the result. |
+| [setUserGrantedState](arkts-notification-setusergrantedstate-f-sys.md#setusergrantedstate-1) | Sets the enabling state of the **Allow access to notifications on this device** switch for a specified application.This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [SubscribeType](arkts-notificationextensionsubscription-subscribetype-e.md) | 表示通知扩展订阅的类型。 |
+| [SubscribeType](arkts-notification-subscribetype-e.md) | Describes the type that enables notification extension subscription. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [BundleOption](arkts-notification-bundleoption-t.md) | Describes the bundle information of an application. |
+| [GrantedBundleInfo](arkts-notification-grantedbundleinfo-t.md) | Describes the bundle information of the authorized application. |
+| [NotificationExtensionSubscriptionInfo](arkts-notification-notificationextensionsubscriptioninfo-t.md) | Describes the information about the notification extension subscription. |
+| [NotificationInfo](arkts-notification-notificationinfo-t.md) | Describes the notification information delivered to the [onReceiveMessage](arkts-notification-notificationsubscriberextensionability-c.md#onreceivemessage-1)callback of ExtensionAbility for notification subscriptions. |
+| [UserGrantSetting](arkts-notification-usergrantsetting-t.md) | Describes the user authorization settings. |
 

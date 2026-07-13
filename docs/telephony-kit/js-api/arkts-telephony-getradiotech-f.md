@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { radio } from '@ohos.telephony.radio';
+import { radio } from '@kit.TelephonyKit';
 ```
 
 ## getRadioTech
@@ -12,7 +12,8 @@ import { radio } from '@ohos.telephony.radio';
 function getRadioTech(slotId: number, callback: AsyncCallback<NetworkRadioTech>): void
 ```
 
-Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain.
+Obtains radio access technology (RAT) of the registered network. The system
+returns RAT of the packet service (PS) and circuit service (CS) domain.
 
 **Since:** 11
 
@@ -45,7 +46,8 @@ Obtains radio access technology (RAT) of the registered network. The system retu
 function getRadioTech(slotId: number): Promise<NetworkRadioTech>
 ```
 
-Obtains radio access technology (RAT) of the registered network. The system returns RAT of the packet service (PS) and circuit service (CS) domain.
+Obtains radio access technology (RAT) of the registered network. The system
+returns RAT of the packet service (PS) and circuit service (CS) domain.
 
 **Since:** 11
 

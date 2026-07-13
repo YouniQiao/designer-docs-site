@@ -9,7 +9,7 @@ Class for declaring the result of smart gesture handling.
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -40,7 +40,12 @@ Constructor for the smart gesture handling result.
 isConsumed: boolean
 ```
 
-Whether to consume the current smart gesture. **true**: The smart gesture is consumed. If **selectedProposal** is not set, the system default action handling is used. If **selectedProposal** is set, the custom action handling is used. **false**: The smart gesture is not consumed, and the system treats it as unhandled.
+Whether to consume the current smart gesture.
+
+**true**: The smart gesture is consumed. If **selectedProposal** is not set, the system default action handling is
+used. If **selectedProposal** is set, the custom action handling is used.
+
+**false**: The smart gesture is not consumed, and the system treats it as unhandled.
 
 **Type:** boolean
 
@@ -58,7 +63,12 @@ Whether to consume the current smart gesture. **true**: The smart gesture is con
 selectedProposal?: BaseGestureHandlingProposal
 ```
 
-The smart gesture handling behavior specified by the user. When **isConsumed** is **true**: If **selectedProposal** is not set, the system default action handling is used. If **selectedProposal** is set, the custom action handling is used. When **isConsumed** is **false**, the **selectedProposal** setting does not take effect.
+The smart gesture handling behavior specified by the user.
+
+When **isConsumed** is **true**: If **selectedProposal** is not set, the system default action handling is used. If
+**selectedProposal** is set, the custom action handling is used.
+
+When **isConsumed** is **false**, the **selectedProposal** setting does not take effect.
 
 **Type:** BaseGestureHandlingProposal
 

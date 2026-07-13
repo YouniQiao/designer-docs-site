@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## getPermissionUsedRecordToggleStatus
@@ -12,7 +12,9 @@ import { privacyManager } from '@ohos.privacyManager';
 function getPermissionUsedRecordToggleStatus(): Promise<boolean>
 ```
 
-Obtains the toggle state of permission access records of the current user.
+A system application can call this API to obtain the current user's permission usage record toggle status, for
+example, to display the current toggle setting status on the permission management interface. This API uses a
+promise to return the result.
 
 **Since:** 18
 
@@ -26,15 +28,15 @@ Obtains the toggle state of permission access records of the current user.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Return the toggle status. |
+| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the switchstatus value of the current user is on, and **false** indicates that the switch status value ofthe current user is off. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.PERMISSION_USED_STATS". |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 
 **Example**
 

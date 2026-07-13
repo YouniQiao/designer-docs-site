@@ -1,6 +1,7 @@
 # GetInputDataOptions (System API)
 
-Represents a set of optional parameters for [onGetData](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8).
+Represents a set of optional parameters for
+[onGetData](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8).
 
 **Since:** 12
 
@@ -11,7 +12,7 @@ Represents a set of optional parameters for [onGetData](../../../../reference/ap
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## challenge

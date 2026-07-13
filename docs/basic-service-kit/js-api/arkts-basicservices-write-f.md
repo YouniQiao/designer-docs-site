@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { serialManager } from '@ohos.usbManager.serial';
+import { serialManager } from '@kit.BasicServicesKit';
 ```
 
 ## write
@@ -12,7 +12,9 @@ import { serialManager } from '@ohos.usbManager.serial';
 function write(portId: number, buffer: Uint8Array, timeout?: number): Promise<number>
 ```
 
-Writes data to the serial port device asynchronously. The length of data written each time cannot exceed 4 KB; otherwise, data loss may occur. You are advised to write long data in multiple packets. This API uses a promise to return the result.
+Writes data to the serial port device asynchronously. The length of data written each time cannot exceed 4 KB;
+otherwise, data loss may occur. You are advised to write long data in multiple packets. This API uses a promise to
+return the result.
 
 **Since:** 19
 

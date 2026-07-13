@@ -1,8 +1,8 @@
 # LongPressGestureHandlerOptions
 
-长按手势处理器配置参数。继承自[BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions)。
+长按手势处理器配置参数。继承自[BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md)。
 
-**继承/实现关系：** LongPressGestureHandlerOptions extends [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions)
+**继承/实现关系：** LongPressGestureHandlerOptions extends [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md)
 
 **起始版本：** 12
 
@@ -14,7 +14,11 @@
 allowableMovement?: number
 ```
 
-长按手势识别器识别的手势的最大移动距离，单位为px。 默认值：15 取值范围：(0, +∞)，设置小于等于0时，按照默认值15处理。
+长按手势识别器识别的手势的最大移动距离，单位为px。
+
+默认值：15
+
+取值范围：(0, +∞)，设置小于等于0时，按照默认值15处理。
 
 **类型：** number
 
@@ -32,7 +36,13 @@ allowableMovement?: number
 duration?: number
 ```
 
-触发长按的最短时间，单位为毫秒（ms）。 默认值：500 **说明：** 取值范围：[0, +∞)，设置小于等于0时，按照默认值500处理。
+触发长按的最短时间，单位为毫秒（ms）。
+
+默认值：500
+
+**说明：**
+
+取值范围：[0, +∞)，设置小于等于0时，按照默认值500处理。
 
 **类型：** number
 
@@ -50,7 +60,15 @@ duration?: number
 fingers?: number
 ```
 
-触发长按的最少手指数，最小为1指， 最大取值为10指。 默认值：1 取值范围：[1, 10] **说明：** 手指按下后若发生超过15px的移动，则判定当前长按手势识别失败。
+触发长按的最少手指数，最小为1指， 最大取值为10指。
+
+默认值：1
+
+取值范围：[1, 10]
+
+**说明：**
+
+手指按下后若发生超过15px的移动，则判定当前长按手势识别失败。
 
 **类型：** number
 
@@ -68,7 +86,9 @@ fingers?: number
 repeat?: boolean
 ```
 
-是否连续触发事件回调。true表示为连续触发事件回调，false表示不连续触发事件回调。 默认值：false
+是否连续触发事件回调。true表示为连续触发事件回调，false表示不连续触发事件回调。
+
+默认值：false
 
 **类型：** boolean
 

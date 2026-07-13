@@ -11,7 +11,7 @@ Describes the bundle information of an application that enables cross-device col
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## bundleName
@@ -36,7 +36,8 @@ Bundle name.
 enable?: boolean
 ```
 
-Whether the application enables cross-device collaboration. The value **true** indicates that the cross-device collaboration is enabled, and the value **false** indicates the opposite.
+Whether the application enables cross-device collaboration. The value **true** indicates that the cross-device
+collaboration is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

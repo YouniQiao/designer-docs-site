@@ -6,7 +6,8 @@
 function getAppMemorySize(): Promise<number>
 ```
 
-Obtains the maximum memory (RAM allocation) available to the current application. This API uses a promise to return the result.
+Obtains the maximum memory (RAM allocation) available to the current application. This API uses a promise to return
+the result.
 
 **Since:** 7
 
@@ -43,7 +44,8 @@ appManager.getAppMemorySize().then((data) => {
 function getAppMemorySize(callback: AsyncCallback<number>): void
 ```
 
-Obtains the maximum memory (RAM allocation) available to the current application. This API uses an asynchronous callback to return the result.
+Obtains the maximum memory (RAM allocation) available to the current application. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 7
 

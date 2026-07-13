@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { securityLabel } from '@ohos.file.securityLabel';
+import { securityLabel } from '@kit.CoreFileKit';
 ```
 
 ## setSecurityLabelSync
@@ -12,7 +12,8 @@ import { securityLabel } from '@ohos.file.securityLabel';
 function setSecurityLabelSync(path: string, type: DataLevel): void
 ```
 
-Sets the data security level for a file or directory in synchronous mode. The level can only be adjusted from low to high, or set to the same level.
+Sets the data security level for a file or directory in synchronous mode. The level can only be adjusted from low
+to high, or set to the same level.
 
 **Since:** 9
 

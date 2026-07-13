@@ -12,7 +12,7 @@ Enumerates the scale modes of the preview image.
 AUTO = 0
 ```
 
-The preview image automatically adjusts its width, height, and scale based on [Placement](arkts-arkui-placement-e.md#placement).
+The preview image automatically adjusts its width, height, and scale based on [Placement](arkts-arkui-placement-e.md).
 
 **Since:** 20
 
@@ -28,7 +28,8 @@ The preview image automatically adjusts its width, height, and scale based on [P
 CONSTANT = 1
 ```
 
-The preview image retains its original size. However, the preview image may still be compressed or cropped due to the safe area constraints.
+The preview image retains its original size. However, the preview image may still be compressed or cropped due to
+the safe area constraints.
 
 **Since:** 20
 

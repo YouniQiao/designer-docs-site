@@ -1,4 +1,10 @@
-# createVideoRecorder
+# createVideoRecorder (System API)
+
+## Modules to Import
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
 
 ## createVideoRecorder
 
@@ -6,7 +12,8 @@
 function createVideoRecorder(callback: AsyncCallback<VideoRecorder>): void
 ```
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder Creates an VideoRecorder instance.
+The maintenance of this interface has been stopped since version api 9. Please use AVRecorder
+Creates an VideoRecorder instance.
 
 **Since:** 9
 
@@ -18,14 +25,14 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;VideoRecorder> | Yes | used to return AudioPlayer instance if the operation is  successful; returns null otherwise. |
+| callback | AsyncCallback&lt;VideoRecorder&gt; | Yes | used to return AudioPlayer instance if the operation issuccessful; returns null otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400101 | No memory. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -44,13 +51,15 @@ media.createVideoRecorder((error: BusinessError, video: media.VideoRecorder) => 
 
 ```
 
+
 ## createVideoRecorder
 
 ```TypeScript
 function createVideoRecorder(): Promise<VideoRecorder>
 ```
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder Creates an VideoRecorder instance.
+The maintenance of this interface has been stopped since version api 9. Please use AVRecorder
+Creates an VideoRecorder instance.
 
 **Since:** 9
 
@@ -62,14 +71,14 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;VideoRecorder> | A Promise instance used to return VideoRecorder instance if the operation is  successful; returns null otherwise. |
+| Promise&lt;VideoRecorder&gt; | A Promise instance used to return VideoRecorder instance if the operation issuccessful; returns null otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400101 | No memory. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 

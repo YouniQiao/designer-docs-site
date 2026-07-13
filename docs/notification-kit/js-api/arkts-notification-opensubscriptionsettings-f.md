@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## openSubscriptionSettings
@@ -12,7 +12,9 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function openSubscriptionSettings(context: UIAbilityContext): Promise<void>
 ```
 
-Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications for specified applications. This API uses a promise to return the result.
+Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the
+user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications
+for specified applications. This API uses a promise to return the result.
 
 **Since:** 22
 

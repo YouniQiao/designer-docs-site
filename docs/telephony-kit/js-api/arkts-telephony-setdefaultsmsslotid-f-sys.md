@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sms } from '@ohos.telephony.sms';
+import { sms } from '@kit.TelephonyKit';
 ```
 
 ## setDefaultSmsSlotId
@@ -12,7 +12,8 @@ import { sms } from '@ohos.telephony.sms';
 function setDefaultSmsSlotId(slotId: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by using {@code getDefaultSmsSlotId}.
+Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by
+using {@code getDefaultSmsSlotId}.
 
 **Since:** 7
 
@@ -61,7 +62,8 @@ sms.setDefaultSmsSlotId(0, (err: BusinessError) => {
 function setDefaultSmsSlotId(slotId: number): Promise<void>
 ```
 
-Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by using {@code getDefaultSmsSlotId}.
+Sets the default SIM card for sending SMS messages. You can obtain the default SIM card by
+using {@code getDefaultSmsSlotId}.
 
 **Since:** 7
 

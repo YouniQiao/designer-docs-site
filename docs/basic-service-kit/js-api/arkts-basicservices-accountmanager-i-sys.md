@@ -9,7 +9,7 @@ Provides APIs for managing OS accounts.
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## activateOsAccount
@@ -46,8 +46,8 @@ Activates an OS account. This API uses an asynchronous callback to return the re
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
 | [12300008](../../apis-basic-services-kit/errorcode-account.md#12300008-restricted-account) | Restricted Account. |
 | [12300009](../../apis-basic-services-kit/errorcode-account.md#12300009-account-already-activated) | Account has been activated.<br>**Applicable version:** 7 - 11 |
-| [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-account-service-not-respond) | Service busy. Possible causes: The target account is beingoperated.<br>**Applicable version:** 12 |
-| [12300016](../../apis-basic-services-kit/errorcode-account.md#12300016-login-accounts-reached-the-limit) | The number of logged in accounts reaches the upper limit.<br>**Applicable version:** 12 |
+| [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-account-service-not-respond) | Service busy. Possible causes: The target account is beingoperated.<br>**Applicable version:** 12 and later |
+| [12300016](../../apis-basic-services-kit/errorcode-account.md#12300016-login-accounts-reached-the-limit) | The number of logged in accounts reaches the upper limit.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -112,8 +112,8 @@ Activates an OS account. This API uses a promise to return the result.
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
 | [12300008](../../apis-basic-services-kit/errorcode-account.md#12300008-restricted-account) | Restricted Account. |
 | [12300009](../../apis-basic-services-kit/errorcode-account.md#12300009-account-already-activated) | Account has been activated.<br>**Applicable version:** 7 - 11 |
-| [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-account-service-not-respond) | Service busy. Possible causes: The target account is beingoperated.<br>**Applicable version:** 12 |
-| [12300016](../../apis-basic-services-kit/errorcode-account.md#12300016-login-accounts-reached-the-limit) | The number of logged in accounts reaches the upper limit.<br>**Applicable version:** 12 |
+| [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-account-service-not-respond) | Service busy. Possible causes: The target account is beingoperated.<br>**Applicable version:** 12 and later |
+| [12300016](../../apis-basic-services-kit/errorcode-account.md#12300016-login-accounts-reached-the-limit) | The number of logged in accounts reaches the upper limit.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -143,7 +143,10 @@ try {
 activateOsAccount(localId: number, displayId: number): Promise<void>
 ```
 
-Activates (Starts on the foreground or switches to) the target OS account on the specified logical display. This API uses a promise to return the result. Currently, cross-logical-display activation is not supported. That is, you cannot activate an OS account that is already running on the foreground of another logical display on the specified logical display.
+Activates (Starts on the foreground or switches to) the target OS account on the specified logical display.
+This API uses a promise to return the result.
+Currently, cross-logical-display activation is not supported. That is, you cannot activate an OS account that
+is already running on the foreground of another logical display on the specified logical display.
 
 **Since:** 23
 
@@ -300,14 +303,14 @@ Creates an OS account. This API uses an asynchronous callback to return the resu
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid localName or type. |
-| [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Local name already exists.<br>**Applicable version:** 12 |
+| [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Local name already exists.<br>**Applicable version:** 12 and later |
 | [12300005](../../apis-basic-services-kit/errorcode-account.md#12300005-multiple-users-not-supported) | Multi-user not supported. |
 | [12300006](../../apis-basic-services-kit/errorcode-account.md#12300006-unsupported-account-type) | Unsupported account type. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-account-count-reached-the-limit) | The number of accounts has reached the upper limit. |
-| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 |
+| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 and later |
 
 **Example**
 
@@ -367,15 +370,15 @@ Creates an OS account. This API uses a promise to return the result.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid localName, type or options. |
-| [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Local name already exists.<br>**Applicable version:** 12 |
+| [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Local name already exists.<br>**Applicable version:** 12 and later |
 | [12300005](../../apis-basic-services-kit/errorcode-account.md#12300005-multiple-users-not-supported) | Multi-user not supported. |
 | [12300006](../../apis-basic-services-kit/errorcode-account.md#12300006-unsupported-account-type) | Unsupported account type. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-account-count-reached-the-limit) | The number of accounts has reached the upper limit. |
-| [12300015](../../apis-basic-services-kit/errorcode-account.md#12300015-duplicate-short-name) | The short name already exists.<br>**Applicable version:** 12 |
-| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 |
+| [12300015](../../apis-basic-services-kit/errorcode-account.md#12300015-duplicate-short-name) | The short name already exists.<br>**Applicable version:** 12 and later |
+| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 and later |
 
 **Example**
 
@@ -412,7 +415,8 @@ createOsAccountForDomain(
     ): void
 ```
 
-Creates an OS account and associates it with the specified domain account. This API uses an asynchronous callback to return the result.
+Creates an OS account and associates it with the specified domain account. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 8
 
@@ -436,15 +440,15 @@ Creates an OS account and associates it with the specified domain account. This 
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 12 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 12 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid type or domainInfo. |
 | [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Account already exists. |
 | [12300005](../../apis-basic-services-kit/errorcode-account.md#12300005-multiple-users-not-supported) | Multi-user not supported. |
 | [12300006](../../apis-basic-services-kit/errorcode-account.md#12300006-unsupported-account-type) | Unsupported account type. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-account-count-reached-the-limit) | The number of accounts has reached the upper limit. |
-| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 |
+| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 and later |
 
 **Example**
 
@@ -476,7 +480,8 @@ try {
 createOsAccountForDomain(type: OsAccountType, domainInfo: DomainAccountInfo, options?: CreateOsAccountForDomainOptions): Promise<OsAccountInfo>
 ```
 
-Creates an OS account and associates it with the specified domain account. This API uses a promise to return the result.
+Creates an OS account and associates it with the specified domain account. This API uses a promise to return
+the result.
 
 **Since:** 8
 
@@ -506,16 +511,16 @@ Creates an OS account and associates it with the specified domain account. This 
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 12 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 12 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid type, domainInfo or options. |
 | [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-account-already-exists) | Account already exists. |
 | [12300005](../../apis-basic-services-kit/errorcode-account.md#12300005-multiple-users-not-supported) | Multi-user not supported. |
 | [12300006](../../apis-basic-services-kit/errorcode-account.md#12300006-unsupported-account-type) | Unsupported account type. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-account-count-reached-the-limit) | The number of accounts has reached the upper limit. |
-| [12300015](../../apis-basic-services-kit/errorcode-account.md#12300015-duplicate-short-name) | The short name already exists.<br>**Applicable version:** 12 |
-| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 |
+| [12300015](../../apis-basic-services-kit/errorcode-account.md#12300015-duplicate-short-name) | The short name already exists.<br>**Applicable version:** 12 and later |
+| [12300023](../../apis-basic-services-kit/errorcode-account.md#12300023-accounts-of-a-specified-type-reached-the-limit) | The number of accounts of the specified type has reached the upperlimit.<br>**Applicable version:** 24 and later |
 
 **Example**
 
@@ -829,7 +834,8 @@ try {
 getForegroundOsAccountDisplayId(localId: number): Promise<number>
 ```
 
-Obtains the logical display ID of the specified foreground OS account. This API uses a promise to return the result.
+Obtains the logical display ID of the specified foreground OS account. This API uses a promise to return the
+result.
 
 **Since:** 23
 
@@ -886,7 +892,8 @@ try {
 getForegroundOsAccountLocalId(displayId: number): Promise<number>
 ```
 
-Obtains the ID of the foreground OS account running on a specified logical display. This API uses a promise to return the result.
+Obtains the ID of the foreground OS account running on a specified logical display. This API uses a promise
+to return the result.
 
 **Since:** 23
 
@@ -943,7 +950,8 @@ try {
 getOsAccountConstraintSourceTypes(localId: number, constraint: string, callback: AsyncCallback<Array<ConstraintSourceTypeInfo>>): void
 ```
 
-Obtains the constraint source information of an OS account. This API uses an asynchronous callback to return the result.
+Obtains the constraint source information of an OS account. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -1237,7 +1245,8 @@ try {
 isMainOsAccount(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the current process belongs to the main OS account. This API uses an asynchronous callback to return the result.
+Checks whether the current process belongs to the main OS account. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -1289,7 +1298,8 @@ try {
 isMainOsAccount(): Promise<boolean>
 ```
 
-Checks whether the current process belongs to the main OS account. This API uses a promise to return the result.
+Checks whether the current process belongs to the main OS account. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -1518,7 +1528,8 @@ try {
 off(type: 'activate' | 'activating', name: string, callback?: Callback<number>): void
 ```
 
-Unsubscribes from the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
+Unsubscribes from the OS account activation states, including the states of the account being activated and
+the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1572,7 +1583,8 @@ try {
 off(type: 'activate' | 'activating', name: string, callback?: Callback<number>): void
 ```
 
-Unsubscribes from the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
+Unsubscribes from the OS account activation states, including the states of the account being activated and
+the account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1626,7 +1638,8 @@ try {
 off(type: 'switching', callback?: Callback<OsAccountSwitchEventData>): void
 ```
 
-Unsubscribes from the switchover between a foreground OS account and a background OS account in progress. This API uses an asynchronous callback to return the result.
+Unsubscribes from the switchover between a foreground OS account and a background OS account in progress.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1675,7 +1688,8 @@ try {
 off(type: 'switched', callback?: Callback<OsAccountSwitchEventData>): void
 ```
 
-Unsubscribes from the end of a switchover between a foreground OS account and a background OS account. This API uses an asynchronous callback to return the result.
+Unsubscribes from the end of a switchover between a foreground OS account and a background OS account.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1724,7 +1738,8 @@ try {
 offConstraintChanged(callback?: Callback<ConstraintChangeInfo>): void
 ```
 
-Unsubscribes from constraint change events associated with the specified callback. If no callback is specified, this API unsubscribes from all subscription records.
+Unsubscribes from constraint change events associated with the specified callback. If no callback is specified,
+this API unsubscribes from all subscription records.
 
 **Since:** 23
 
@@ -1778,7 +1793,8 @@ try {
 on(type: 'activate' | 'activating', name: string, callback: Callback<number>): void
 ```
 
-Subscribes to the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
+Subscribes to the OS account activation states, including the states of the account being activated and the
+account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1832,7 +1848,8 @@ try {
 on(type: 'activate' | 'activating', name: string, callback: Callback<number>): void
 ```
 
-Subscribes to the OS account activation states, including the states of the account being activated and the account with activation completed. This API uses an asynchronous callback to return the result.
+Subscribes to the OS account activation states, including the states of the account being activated and the
+account with activation completed. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -1886,7 +1903,8 @@ try {
 on(type: 'switching', callback: Callback<OsAccountSwitchEventData>): void
 ```
 
-Subscribes to the switchover between a foreground OS account and a background OS account in progress. This API uses an asynchronous callback to return the result.
+Subscribes to the switchover between a foreground OS account and a background OS account in progress.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1940,7 +1958,8 @@ try {
 on(type: 'switched', callback: Callback<OsAccountSwitchEventData>): void
 ```
 
-Subscribes to the end of a switchover between a foreground OS account and a background OS account. This API uses an asynchronous callback to return the result.
+Subscribes to the end of a switchover between a foreground OS account and a background OS account. This
+API uses an asynchronous callback to return the result.
 
 **Since:** 12
 
@@ -1994,7 +2013,8 @@ try {
 onConstraintChanged(constraints: string[], callback: Callback<ConstraintChangeInfo>): void
 ```
 
-Subscribes to one or more constraint change events of the OS account to which the caller belongs. This API uses an asynchronous callback to return the result.
+Subscribes to one or more constraint change events of the OS account to which the caller belongs. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -2043,7 +2063,8 @@ try {
 queryAllCreatedOsAccounts(callback: AsyncCallback<Array<OsAccountInfo>>): void
 ```
 
-Queries information about all the OS accounts created. This API uses an asynchronous callback to return the result.
+Queries information about all the OS accounts created. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -2144,7 +2165,8 @@ try {
 queryMaxLoggedInOsAccountNumber(): Promise<number>
 ```
 
-Queries the maximum number of OS accounts allowed to log in to the system. This API uses a promise to return the result.
+Queries the maximum number of OS accounts allowed to log in to the system. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -2190,7 +2212,8 @@ try {
 queryMaxOsAccountNumber(callback: AsyncCallback<number>): void
 ```
 
-Queries the maximum number of OS accounts that can be created. This API uses an asynchronous callback to return the result.
+Queries the maximum number of OS accounts that can be created. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 7
 
@@ -2285,7 +2308,8 @@ try {
 queryOsAccount(): Promise<OsAccountInfo>
 ```
 
-Obtains information about the OS account to which the current process belongs. This API uses a promise to return the result.
+Obtains information about the OS account to which the current process belongs. This API uses a promise to
+return the result.
 
 **Since:** 11
 
@@ -2334,7 +2358,8 @@ try {
 queryOsAccountById(localId: number, callback: AsyncCallback<OsAccountInfo>): void
 ```
 
-Queries information about the OS account of the given ID. This API uses an asynchronous callback to return the result.
+Queries information about the OS account of the given ID. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 7
 
@@ -2476,7 +2501,7 @@ Removes an OS account. This API uses an asynchronous callback to return the resu
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid localId. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
@@ -2542,7 +2567,7 @@ Removes an OS account. This API uses a promise to return the result.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
-| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 |
+| [204](../../errorcode-universal.md#204-access-denied-by-user-access-control-policy) | Access denied due to user access control policy. Possible causes:1. The operation is restricted by the OS-account constraint.2. The required privilege for the operation has not been granted.<br>**Applicable version:** 24 and later |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid localId. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |

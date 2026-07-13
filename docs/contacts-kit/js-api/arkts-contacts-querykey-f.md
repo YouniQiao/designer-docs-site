@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## queryKey
@@ -12,7 +12,8 @@ import { contact } from '@ohos.contact';
 function queryKey(id: number, callback: AsyncCallback<string>): void
 ```
 
-Queries the key of a contact based on the specified contact ID. This API uses an asynchronous callback to return the result.
+Queries the key of a contact based on the specified contact ID. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 7
 
@@ -54,7 +55,8 @@ contact.queryKey(1, (err: BusinessError, data) => {
 function queryKey(context: Context, id: number, callback: AsyncCallback<string>): void
 ```
 
-Queries the key of a contact based on the specified contact ID. This API uses an asynchronous callback to return the result.
+Queries the key of a contact based on the specified contact ID. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 
@@ -105,7 +107,8 @@ contact.queryKey(context, 1, (err: BusinessError, data) => {
 function queryKey(id: number, holder: Holder, callback: AsyncCallback<string>): void
 ```
 
-Queries the key of a contact based on the specified contact ID and holder. This API uses an asynchronous callback to return the result.
+Queries the key of a contact based on the specified contact ID and holder. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 7
 
@@ -152,7 +155,8 @@ contact.queryKey(1, {
 function queryKey(context: Context, id: number, holder: Holder, callback: AsyncCallback<string>): void
 ```
 
-Queries the key of a contact based on the specified contact ID and holder. This API uses an asynchronous callback to return the result.
+Queries the key of a contact based on the specified contact ID and holder. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 
@@ -208,7 +212,8 @@ contact.queryKey(context, 1, {
 function queryKey(id: number, holder?: Holder): Promise<string>
 ```
 
-Queries the key of a contact based on the specified contact ID and holder. This API uses a promise to return the result.
+Queries the key of a contact based on the specified contact ID and holder. This API uses a promise to return the
+result.
 
 **Since:** 7
 
@@ -256,7 +261,8 @@ promise.then((data) => {
 function queryKey(context: Context, id: number, holder?: Holder): Promise<string>
 ```
 
-Queries the key of a contact based on the specified contact ID and holder. This API uses a promise to return the result.
+Queries the key of a contact based on the specified contact ID and holder. This API uses a promise to return the
+result.
 
 **Since:** 10
 

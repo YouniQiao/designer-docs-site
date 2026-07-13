@@ -1,10 +1,6 @@
 # MediaType
 
-```TypeScript
-enum MediaType
-```
-
-Enumerates the media types.
+媒体类型枚举。
 
 **起始版本：** 8
 
@@ -16,11 +12,13 @@ Enumerates the media types.
 MEDIA_TYPE_UNSUPPORTED = -1
 ```
 
-The media type is not supported.
+表示未支持的类型。
+
+**原子化服务API：** 从API version 20 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 20
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -30,11 +28,13 @@ The media type is not supported.
 MEDIA_TYPE_AUD = 0
 ```
 
-Media.
+表示音频。
+
+**原子化服务API：** 从API version 11 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -44,11 +44,13 @@ Media.
 MEDIA_TYPE_VID = 1
 ```
 
-Video.
+表示视频。
+
+**原子化服务API：** 从API version 11 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -58,11 +60,13 @@ Video.
 MEDIA_TYPE_SUBTITLE = 2
 ```
 
-Subtitle.
+表示字幕。
+
+**原子化服务API：** 从API version 12 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -72,11 +76,13 @@ Subtitle.
 MEDIA_TYPE_ATTACHMENT = 3
 ```
 
-Attachment information (for example, an embedded external file).
+表示附件信息（如嵌入的外部文件）。
+
+**原子化服务API：** 从API version 20 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 20
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -86,11 +92,13 @@ Attachment information (for example, an embedded external file).
 MEDIA_TYPE_DATA = 4
 ```
 
-Data.
+表示数据。
+
+**原子化服务API：** 从API version 20 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 20
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -100,11 +108,13 @@ Data.
 MEDIA_TYPE_TIMED_METADATA = 5
 ```
 
-Metadata with a timestamp.
+表示带时间戳的元数据。
+
+**原子化服务API：** 从API version 20 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 20
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -114,11 +124,13 @@ Metadata with a timestamp.
 MEDIA_TYPE_AUXILIARY = 6
 ```
 
-Auxiliary (track) information.
+表示辅助（轨道）信息。
+
+**原子化服务API：** 从API version 20 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 20
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

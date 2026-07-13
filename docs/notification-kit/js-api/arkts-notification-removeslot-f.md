@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## removeSlot
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function removeSlot(slotType: SlotType, callback: AsyncCallback<void>): void
 ```
 
-Removes a notification slot of a specified type for this application. This API uses an asynchronous callback to return the result.
+Removes a notification slot of a specified type for this application. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 

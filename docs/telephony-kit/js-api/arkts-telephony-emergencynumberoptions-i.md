@@ -9,7 +9,7 @@ Indicates the option for determining if a number is an emergency number for spec
 ## Modules to Import
 
 ```TypeScript
-import { call } from '@ohos.telephony.call';
+import { call } from '@kit.TelephonyKit';
 ```
 
 ## slotId
@@ -18,7 +18,8 @@ import { call } from '@ohos.telephony.call';
 slotId?: number
 ```
 
-Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device.
+Indicates the card slot index number, ranging from 0 to the
+maximum card slot index number supported by the device.
 
 **Type:** number
 

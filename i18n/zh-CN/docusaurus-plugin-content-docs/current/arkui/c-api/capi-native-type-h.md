@@ -228,7 +228,6 @@ Defines the common types for the native module.
 | [OH_ArkUI_LineBreakStrategy](#oh_arkui_linebreakstrategy) | OH_ArkUI_LineBreakStrategy | 换行策略类型枚举。 |
 | [ArkUI_TextSpanType](#arkui_textspantype) | ArkUI_TextSpanType | Enumerates the text span type. |
 | [ArkUI_TextResponseType](#arkui_textresponsetype) | ArkUI_TextResponseType | Enumerates the text response type. |
-| [ArkUI_RawInputEventType](#arkui_rawinputeventtype) | ArkUI_RawInputEventType | Enumerates raw input event types. |
 | [ArkUI_MarqueeStartPolicy](#arkui_marqueestartpolicy) | ArkUI_MarqueeStartPolicy | Enumerates the MarqueeStartPolicy. |
 | [ArkUI_MarqueeUpdatePolicy](#arkui_marqueeupdatepolicy) | ArkUI_MarqueeUpdatePolicy | Enumerates the MarqueeUpdatePolicy. |
 | [OH_ArkUI_CrossLanguageOperatingStatus](#oh_arkui_crosslanguageoperatingstatus) | OH_ArkUI_CrossLanguageOperatingStatus | Enumerates the tree operating status for the cross-language option. |
@@ -3387,23 +3386,6 @@ Enumerates the text response type.
 | ARKUI_TEXT_RESPONSE_TYPE_LONG_PRESS = 1 | The response type of long press. |
 | ARKUI_TEXT_RESPONSE_TYPE_SELECT = 2 | The response type of select by mouse. |
 | ARKUI_TEXT_RESPONSE_TYPE_DEFAULT = 3 | When no other types are explicitly specified, this type will be matched.When this type is registered but RIGHT_CLICK, LONG_PRESS, or SELECT types are not registered,this type will be triggered and displayed for right-click, long press, and mouse selection actions. |
-
-### ArkUI_RawInputEventType
-
-```c
-enum ArkUI_RawInputEventType
-```
-
-**描述**
-
-Enumerates raw input event types.
-
-**起始版本：** 26.0.0
-
-| 枚举项 | 描述 |
-| -- | -- |
-| ARKUI_RAW_INPUT_EVENT_TYPE_TOUCH = 0 |  |
-| ARKUI_RAW_INPUT_EVENT_TYPE_MOUSE = 1 |  |
 
 ### ArkUI_MarqueeStartPolicy
 

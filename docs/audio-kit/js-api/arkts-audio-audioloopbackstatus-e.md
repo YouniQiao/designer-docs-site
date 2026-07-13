@@ -1,9 +1,5 @@
 # AudioLoopbackStatus
 
-```TypeScript
-enum AudioLoopbackStatus
-```
-
 Enumerates the audio loopback statuses.
 
 **Since:** 20
@@ -16,7 +12,8 @@ Enumerates the audio loopback statuses.
 UNAVAILABLE_DEVICE = -2
 ```
 
-Loopback is unavailable due to issues with the input or output device (for example, changes in the audio output device).
+Loopback is unavailable due to issues with the input or output device (for example, changes in the audio output
+device).
 
 **Since:** 20
 
@@ -28,7 +25,8 @@ Loopback is unavailable due to issues with the input or output device (for examp
 UNAVAILABLE_SCENE = -1
 ```
 
-Loopback is unavailable due to restrictions in the audio scene (for example, audio focus or low-latency management).
+Loopback is unavailable due to restrictions in the audio scene (for example, audio focus or low-latency
+management).
 
 **Since:** 20
 

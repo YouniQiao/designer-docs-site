@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## getDefaultDisplaySync
@@ -12,7 +12,9 @@ import { display } from '@ohos.display';
 function getDefaultDisplaySync(): Display
 ```
 
-Obtains the **Display** object of the screen where the application is located. If multiple abilities of an application are on different screens, the **Display** object of the main screen is returned. If multiple abilities of an application are on the same screen, the **Display** object of the screen is returned.
+Obtains the **Display** object of the screen where the application is located. If multiple abilities of an
+application are on different screens, the **Display** object of the main screen is returned. If multiple abilities
+of an application are on the same screen, the **Display** object of the screen is returned.
 
 **Since:** 9
 

@@ -30,7 +30,8 @@ The controller of xcomponent.
 imageAIOptions?: ImageAIOptions
 ```
 
-AI image analysis options. You can configure the analysis type or bind an analyzer controller through this parameter.
+AI image analysis options.
+You can configure the analysis type or bind an analyzer controller through this parameter.
 
 **Type:** ImageAIOptions
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { effectKit } from '@ohos.effectKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
 ## createColorPicker
@@ -74,7 +74,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 function createColorPicker(source: image.PixelMap, region: Array<number>): Promise<ColorPicker>
 ```
 
-Creates a ColorPicker instance for the selected region based on a pixel map. This API uses a promise to return the result.
+Creates a ColorPicker instance for the selected region based on a pixel map. This API uses a promise to return the
+result.
 
 **Since:** 10
 
@@ -194,7 +195,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 function createColorPicker(source: image.PixelMap, region: Array<number>, callback: AsyncCallback<ColorPicker>): void
 ```
 
-Creates a ColorPicker instance for the selected region based on a pixel map. This API uses an asynchronous callback to return the result.
+Creates a ColorPicker instance for the selected region based on a pixel map. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 

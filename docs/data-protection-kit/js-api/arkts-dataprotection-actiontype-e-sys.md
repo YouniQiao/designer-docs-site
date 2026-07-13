@@ -1,6 +1,7 @@
 # ActionType (System API)
 
-Enumerates the actions to be performed when the file's permission expiration time is reached. The default value is **NOT_OPEN**.
+Enumerates the actions to be performed when the file's permission expiration time is reached. The default value
+is **NOT_OPEN**.
 
 **Since:** 21
 
@@ -28,7 +29,8 @@ Users are not allowed to open the DLP file when the file's permission expiration
 OPEN = 1
 ```
 
-Logged-in accounts can still open and edit the DLP file when the file's permission expiration time is reached.
+Logged-in accounts can still open and edit the DLP file when the file's permission expiration time is
+reached.
 
 **Since:** 21
 

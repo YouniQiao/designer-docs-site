@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## reloadAllForms
@@ -12,7 +12,9 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function reloadAllForms(context: UIAbilityContext): Promise<number>
 ```
 
-Reloads all widgets. Invoked in the main process of the application, this API notifies the FormExtension process to perform batch updates of all widgets added to the current application. It can only be called within a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result.
+Reloads all widgets. Invoked in the main process of the application, this API notifies the FormExtension process to
+perform batch updates of all widgets added to the current application. It can only be called within a
+[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result.
 
 **Since:** 22
 

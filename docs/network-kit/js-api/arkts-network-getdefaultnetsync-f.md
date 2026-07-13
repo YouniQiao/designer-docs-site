@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getDefaultNetSync
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getDefaultNetSync(): NetHandle
 ```
 
-Obtains the data network that is activated by default. To call this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains the data network that is activated by default.
+To call this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 11
 

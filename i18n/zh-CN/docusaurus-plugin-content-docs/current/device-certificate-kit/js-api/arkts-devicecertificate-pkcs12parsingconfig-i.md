@@ -1,6 +1,6 @@
 # Pkcs12ParsingConfig
 
-表示解析P12文件的配置。
+表示解析P12的配置。
 
 **起始版本：** 18
 
@@ -30,7 +30,7 @@ needsCert?: boolean
 needsOtherCerts?: boolean
 ```
 
-表示是否获取其他证书合集。默认为false。true为获取，false为不获取。
+表示是否获取其他证书。默认为false。true为获取，false为不获取。
 
 **类型：** boolean
 
@@ -48,7 +48,9 @@ needsOtherCerts?: boolean
 needsPrivateKey?: boolean
 ```
 
-表示是否获取私钥。默认为true。 true为获取，返回PKCS8编码的私钥数据；false为不获取。
+表示是否获取私钥。默认为true。
+
+true为获取，返回PKCS8编码的私钥数据；false为不获取。
 
 **类型：** boolean
 
@@ -66,7 +68,7 @@ needsPrivateKey?: boolean
 password: string
 ```
 
-表示P12文件的密码。
+密码。
 
 **类型：** string
 
@@ -82,7 +84,11 @@ password: string
 privateKeyFormat?: EncodingBaseFormat
 ```
 
-表示获取私钥的格式，当前支持PEM和DER格式。参数缺省时，默认为PEM格式。 **说明：**当needsPrivateKey值为true时，该参数生效。
+表示获取私钥的格式，当前支持PEM和DER格式。参数缺省时，默认为PEM格式。
+
+> **说明：**
+>
+> 当needsPrivateKey值为true时，该参数生效。
 
 **类型：** EncodingBaseFormat
 

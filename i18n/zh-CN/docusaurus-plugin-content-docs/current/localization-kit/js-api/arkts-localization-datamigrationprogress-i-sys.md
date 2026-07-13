@@ -14,7 +14,8 @@
 progressPercentage: number
 ```
 
-表示数据迁移百分比进展，取值：0-100。 取值范围为全体整数。
+表示数据迁移百分比进展，取值：0-100。
+取值范围为全体整数。
 
 **类型：** number
 
@@ -30,7 +31,8 @@ progressPercentage: number
 timeRemaining: number
 ```
 
-表示预计剩余时间，单位：秒。 取值限定为整数。
+表示预计剩余时间，单位：秒。
+取值限定为整数。
 
 **类型：** number
 

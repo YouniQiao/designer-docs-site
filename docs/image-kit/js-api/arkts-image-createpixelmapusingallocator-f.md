@@ -1,5 +1,11 @@
 # createPixelMapUsingAllocator
 
+## Modules to Import
+
+```TypeScript
+import { image } from '@kit.ImageKit';
+```
+
 ## createPixelMapUsingAllocator
 
 ```TypeScript
@@ -7,7 +13,10 @@ function createPixelMapUsingAllocator(colors: ArrayBuffer, param: Initialization
     allocatorType?: AllocatorType): Promise<PixelMap>
 ```
 
-Create pixelmap by data buffer based on opts, the memory type used by the PixelMap can be specified by allocatorType. By default, the system selects the memory type based on the image type, image size, platform capability, etc. When processing the PixelMap returned by this interface, please always consider the impact of stride.
+Create pixelmap by data buffer based on opts, the memory type used by the PixelMap can be specified
+by allocatorType. By default, the system selects the memory type based on the image type, image size,
+platform capability, etc. When processing the PixelMap returned by this interface, please always
+consider the impact of stride.
 
 **Since:** 20
 
@@ -19,21 +28,21 @@ Create pixelmap by data buffer based on opts, the memory type used by the PixelM
 | --- | --- | --- | --- |
 | colors | ArrayBuffer | Yes | The image color buffer. |
 | param | InitializationOptions | Yes | Initialization options for pixelmap. |
-| allocatorType | AllocatorType | No |  |
+| allocatorType | AllocatorType | No | Indicate which memory type will be used by the returned PixelMap. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap> | A Promise instance used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600201 | Unsupported operation. |
-| 7600301 | Memory alloc failed. |
-| 7600302 | Memory copy failed. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. |
+| [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Memory alloc failed. |
+| [7600302](../errorcode-image.md#7600302-memory-copy-failure) | Memory copy failed. |
 
 **Example**
 

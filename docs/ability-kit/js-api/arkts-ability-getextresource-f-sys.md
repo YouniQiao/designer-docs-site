@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getExtResource
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getExtResource(bundleName: string): Promise<Array<string>>
 ```
 
-Obtains the module names corresponding to the extended resources based on the given bundle name. This API uses a promise to return the result.
+Obtains the module names corresponding to the extended resources based on the given bundle name. This API uses a
+promise to return the result.
 
 **Since:** 12
 

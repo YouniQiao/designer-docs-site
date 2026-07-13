@@ -1,6 +1,10 @@
 # CommonEventSubscribeInfo
 
-用于表示订阅者的信息。 > **说明：** > > 订阅自定义公共事件后，任意应用都可以向订阅者发送潜在的恶意公共事件。通过本模块的publisherPermission和publisherBundleName参数，可以限制公共事件发布方的范围。
+用于表示订阅者的信息。
+
+> **说明：**
+>
+> 订阅自定义公共事件后，任意应用都可以向订阅者发送潜在的恶意公共事件。通过本模块的publisherPermission和publisherBundleName参数，可以限制公共事件发布方的范围。
 
 **起始版本：** 7
 
@@ -60,7 +64,7 @@ publisherBundleName?: string
 publisherDeviceId?: string
 ```
 
-表示设备ID。通过[@ohos.deviceInfo](arkts-deviceinfo.md#deviceinfo)获取udid，作为订阅者的设备ID。预留能力，暂不支持。
+表示设备ID。通过[@ohos.deviceInfo](arkts-deviceinfo.md)获取udid，作为订阅者的设备ID。预留能力，暂不支持。
 
 **类型：** string
 
@@ -92,7 +96,9 @@ publisherPermission?: string
 userId?: number
 ```
 
-表示用户ID。此参数是可选的，默认值当前用户的ID。如果指定了此参数，则该值必须是系统中现有的用户ID。通过 [getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1) 获取系统账号ID，作为订阅者的用户ID。
+表示用户ID。此参数是可选的，默认值当前用户的ID。如果指定了此参数，则该值必须是系统中现有的用户ID。通过
+[getOsAccountLocalId](arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)
+获取系统账号ID，作为订阅者的用户ID。
 
 **类型：** number
 

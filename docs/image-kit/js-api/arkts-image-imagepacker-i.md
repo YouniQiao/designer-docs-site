@@ -1,6 +1,20 @@
 # ImagePacker
 
-ImagePacker类，用于图片压缩和编码。 在调用ImagePacker的方法前，需要先通过[image.createImagePacker]image.createImagePacker构建一个ImagePacker实例。 编码期间，请避免修改或释放作为输入的ImageSource/PixelMap/Picture对象，以免出现crash或其他未定义行为。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用[release]image.ImagePacker.release(callback: AsyncCallback<void>)方法及时 释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 当前支持的格式有：JPEG、WebP、PNG、HEIC<sup>12+</sup>、GIF<sup>18+</sup>、从API版本26.0.0开始支持TIFF格式（不同硬件设备支持情况不同，可通过ImagePacker的 supportedFormats属性查看）。
+The **ImagePacker** class provides APIs to compress and encode images.
+
+Before calling any API in ImagePacker, you must use
+[image.createImagePacker](arkts-image-createimagepacker-f.md#createimagepacker-1) to create an ImagePacker instance.
+During encoding, do not modify or release the ImageSource, PixelMap, or Picture object that is being used as the
+input. Otherwise, a crash or other undefined behavior may occur.
+
+Images occupy a large amount of memory. When you finish using an ImagePacker instance, call
+[release](arkts-image-imagepacker-i.md#release-1) to free the memory promptly. Before
+releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the
+instance is no longer needed.
+
+Currently, the following formats are supported: jpeg, webp, png, heic<sup>12+</sup>, and gif<sup>18+</sup>. (The
+supported formats may vary depending on the hardware. You can refer to the **supportedFormats** property of
+ImagePacker to see which ones are supported.)
 
 **Since:** 6
 
@@ -18,11 +32,11 @@ import { image } from '@kit.ImageKit';
 packBinaryImageToTiffData(bufferInfo: BinaryBufferInfo, options?: PackingOptionsForTiff): Promise<ArrayBuffer>
 ```
 
-将二值图像数据编码为TIFF数据，以ArrayBuffer的形式返回。使用Promise异步回调。
+Compresses or packs an image into a file and uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -30,33 +44,33 @@ packBinaryImageToTiffData(bufferInfo: BinaryBufferInfo, options?: PackingOptions
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bufferInfo | BinaryBufferInfo | Yes | 图像缓冲区信息。 |
-| options | PackingOptionsForTiff | No |  |
+| bufferInfo | BinaryBufferInfo | Yes | image buffer info. |
+| options | PackingOptionsForTiff | No | Options for tiff image packing. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回编码后的数据。 |
+| Promise&lt;ArrayBuffer&gt; | A Promise instance used to return the compressed or packed data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7800202 | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithm  mismatch. |
-| 7800301 | Encode failed. |
+| [7800202](../errorcode-image.md#7800202-invalid-imagepacker-parameter) | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithmmismatch. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
 ## packBinaryImageToTiffFile
 
 ```TypeScript
-packBinaryImageToTiffFile(bufferInfo: BinaryBufferInfo, fd: int, options?: PackingOptionsForTiff): Promise<void>
+packBinaryImageToTiffFile(bufferInfo: BinaryBufferInfo, fd: number, options?: PackingOptionsForTiff): Promise<void>
 ```
 
-将二值图像数据编码到入参fd对应的TIFF文件。使用Promise异步回调。
+Compresses or packs an image into a file and uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -64,168 +78,22 @@ packBinaryImageToTiffFile(bufferInfo: BinaryBufferInfo, fd: int, options?: Packi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bufferInfo | BinaryBufferInfo | Yes | 图像缓冲区信息。 |
-| fd | int | Yes | 文件描述符ID。该值必须为正整数。 |
-| options | PackingOptionsForTiff | No |  |
+| bufferInfo | BinaryBufferInfo | Yes | image buffer info. |
+| fd | number | Yes | ID of a file descriptor<br>The value must be a positive integer. |
+| options | PackingOptionsForTiff | No | Options for tiff image packing. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7800202 | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithm  mismatch. |
-| 7800301 | Encode failed. |
-
-## packing
-
-```TypeScript
-packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
-```
-
-图片压缩或重新编码。使用callback异步回调。 > **说明：** > > [packToData]image.ImagePacker.packToData(source: ImageSource, options: PackingOption)代替。
-
-**Since:** 6
-
-**Deprecated since:** 13
-
-**Substitute:** image.ImagePacker#packToData
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| source | ImageSource | Yes | 编码的ImageSource。 |
-| option | PackingOption | Yes | 设置编码参数。 |
-| callback | AsyncCallback&lt;ArrayBuffer> | Yes | 回调函数，当图片编码成功，err为undefined，data为获取到的压缩或编码数据；否则为错误对象。 |
-
-## packing
-
-```TypeScript
-packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>
-```
-
-图片压缩或重新编码。使用Promise异步回调。 > **说明：** > > [packToData]image.ImagePacker.packToData(source: ImageSource, options: PackingOption)代替。
-
-**Since:** 6
-
-**Deprecated since:** 13
-
-**Substitute:** image.ImagePacker#packToData
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| source | ImageSource | Yes | 编码的ImageSource。 |
-| option | PackingOption | Yes | 设置编码参数。 |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回压缩或编码后的数据。 |
-
-## packing
-
-```TypeScript
-packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
-```
-
-图片压缩或重新编码。使用callback异步回调。 > **说明：** > > [packToData]image.ImagePacker.packToData(source: ImageSource, options: PackingOption)代替。 > > **注意：** > > 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
-
-**Since:** 8
-
-**Deprecated since:** 13
-
-**Substitute:** image.ImagePacker#packToData
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| source | PixelMap | Yes | 编码的PixelMap资源。 |
-| option | PackingOption | Yes | 设置编码参数。 |
-| callback | AsyncCallback&lt;ArrayBuffer> | Yes | 回调函数，当图片编码成功，err为undefined，data为获取到的压缩或编码数据；否则为错误对象。 |
-
-## packing
-
-```TypeScript
-packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>
-```
-
-图片压缩或重新编码。使用Promise异步回调。 > **说明：** > > [packToData]image.ImagePacker.packToData(source: ImageSource, options: PackingOption)代替。 > > **注意：** > > 接口如果返回"PixelMap mismatch"，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
-
-**Since:** 8
-
-**Deprecated since:** 13
-
-**Substitute:** image.ImagePacker#packToData
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| source | PixelMap | Yes | 编码的PixelMap源。 |
-| option | PackingOption | Yes | 设置编码参数。 |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回压缩或编码后的数据。 |
-
-## packing
-
-```TypeScript
-packing(picture: Picture, options: PackingOption): Promise<ArrayBuffer>
-```
-
-将图像压缩或重新编码。使用Promise异步回调。
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| picture | Picture | Yes | 编码的Picture对象。 |
-| options | PackingOption | Yes | 设置编码参数。 |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回压缩或编码后的数据。 |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 7800301 | Encode failed. |
+| [7800202](../errorcode-image.md#7800202-invalid-imagepacker-parameter) | Invalid parameter. Possible causes: 1. Invalid FD; 2. Compression algorithmmismatch. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
 ## packToData
 
@@ -233,11 +101,11 @@ packing(picture: Picture, options: PackingOption): Promise<ArrayBuffer>
 packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>
 ```
 
-图片压缩或重新编码。使用Promise异步回调。
+Compresses or re-encodes an image. This API uses a promise to return the result.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -245,28 +113,28 @@ packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | ImageSource | Yes | 编码的ImageSource。 |
-| options | PackingOption | Yes | 设置编码参数。 |
+| source | ImageSource | Yes | Image source to compress or re-encode. |
+| options | PackingOption | Yes | Encoding parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回压缩或编码后的数据。 |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | If the parameter is invalid. |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the parameter is invalid. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToData
 
@@ -274,11 +142,17 @@ packToData(source: ImageSource, options: PackingOption): Promise<ArrayBuffer>
 packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>
 ```
 
-图片压缩或重新编码。使用Promise异步回调。 > **注意：** > > 接口如果返回401错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+Compresses or re-encodes an image. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> If error code 401 is returned, the parameters are abnormal. The possible cause is that the PixelMap object is
+> released in advance. You need to check the code and ensure that the PixelMap object is released after this API
+> is called.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -286,28 +160,28 @@ packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | PixelMap | Yes | 编码的PixelMap源。 |
-| options | PackingOption | Yes | 设置编码参数。 |
+| source | PixelMap | Yes | PixelMap to compress or re-encode. |
+| options | PackingOption | Yes | Encoding parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回压缩或编码后的数据。 |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | If the parameter is invalid. |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the parameter is invalid. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToDataFromPixelmapSequence
 
@@ -315,7 +189,7 @@ packToData(source: PixelMap, options: PackingOption): Promise<ArrayBuffer>
 packToDataFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, options: PackingOptionsForSequence): Promise<ArrayBuffer>
 ```
 
-将多个PixelMap编码成GIF数据。使用Promise异步回调。
+Encodes multiple PixelMap objects into GIF data. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -325,29 +199,30 @@ packToDataFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, options: Packi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pixelmapSequence | Array&lt;PixelMap> | Yes | 待编码的PixelMap序列。 |
-| options | PackingOptionsForSequence | Yes | 动图编码参数。 |
+| pixelmapSequence | Array&lt;PixelMap&gt; | Yes | PixelMaps to encode. |
+| options | PackingOptionsForSequence | Yes | Options for encoding animated images. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回编码后的数据。 |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the encoded data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types;3.Parameter verification failed. |
-| 7800301 | Failed to encode image. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types;3.Parameter verification failed. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Failed to encode image. |
 
 ## packToFile
 
 ```TypeScript
-packToFile(source: ImageSource, fd: int, options: PackingOption, callback: AsyncCallback<void>): void
+packToFile(source: ImageSource, fd: number, options: PackingOption, callback: AsyncCallback<void>): void
 ```
 
-指定编码参数，将ImageSource直接编码进文件。使用callback异步回调。
+Encodes the image source into a file based on the specified encoding parameters. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 11
 
@@ -357,32 +232,33 @@ packToFile(source: ImageSource, fd: int, options: PackingOption, callback: Async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | ImageSource | Yes | 编码的ImageSource。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOption | Yes | 设置编码参数。 |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当编码进文件成功，err为undefined，否则为错误对象。 |
+| source | ImageSource | Yes | Image source to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOption | Yes | Encoding parameters. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980115 | Invalid input parameter. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid input parameter. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToFile
 
 ```TypeScript
-packToFile(source: ImageSource, fd: int, options: PackingOption): Promise<void>
+packToFile(source: ImageSource, fd: number, options: PackingOption): Promise<void>
 ```
 
-指定编码参数，将ImageSource直接编码进文件。使用Promise异步回调。
+Encodes the image source into a file based on the specified encoding parameters. This API uses a promise to
+return the result.
 
 **Since:** 11
 
@@ -392,37 +268,44 @@ packToFile(source: ImageSource, fd: int, options: PackingOption): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | ImageSource | Yes | 编码的ImageSource。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOption | Yes | 设置编码参数。 |
+| source | ImageSource | Yes | Image source to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOption | Yes | Encoding parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980115 | Invalid input parameter. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid input parameter. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToFile
 
 ```TypeScript
-packToFile(source: PixelMap, fd: int, options: PackingOption, callback: AsyncCallback<void>): void
+packToFile(source: PixelMap, fd: number, options: PackingOption, callback: AsyncCallback<void>): void
 ```
 
-指定编码参数，将PixelMap直接编码进文件。使用callback异步回调。 > **注意：** > > 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+Encodes the PixelMap into a file based on the specified encoding parameters. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> If error code 62980115 is returned, the parameters are abnormal. The possible cause is that the PixelMap
+> object is released in advance. You need to check the code and ensure that the PixelMap object is released after
+> this API is called.
 
 **Since:** 11
 
@@ -432,32 +315,39 @@ packToFile(source: PixelMap, fd: int, options: PackingOption, callback: AsyncCal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | PixelMap | Yes | 编码的PixelMap资源。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOption | Yes | 设置编码参数。 |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当编码图片进文件成功，err为undefined，否则为错误对象。 |
+| source | PixelMap | Yes | PixelMap to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOption | Yes | Encoding parameters. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980115 | Invalid input parameter. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid input parameter. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToFile
 
 ```TypeScript
-packToFile(source: PixelMap, fd: int, options: PackingOption): Promise<void>
+packToFile(source: PixelMap, fd: number, options: PackingOption): Promise<void>
 ```
 
-指定编码参数，将PixelMap直接编码进文件。使用Promise异步回调。 > **注意：** > > 接口如果返回62980115错误码，表明参数异常，可能是PixelMap对象被提前释放了。需要调用方排查，在该方法调用结束后再释放PixelMap对象。
+Encodes the PixelMap into a file based on the specified encoding parameters. This API uses a promise to return
+the result.
+
+> **NOTE**
+>
+> If error code 62980115 is returned, the parameters are abnormal. The possible cause is that the PixelMap
+> object is released in advance. You need to check the code and ensure that the PixelMap object is released after
+> this API is called.
 
 **Since:** 11
 
@@ -467,37 +357,38 @@ packToFile(source: PixelMap, fd: int, options: PackingOption): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| source | PixelMap | Yes | 编码的PixelMap资源。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOption | Yes | 设置编码参数。 |
+| source | PixelMap | Yes | PixelMap to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOption | Yes | Encoding parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
-| 62980101 | The image data is abnormal. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-| 62980113 | Unknown image format.  The image data provided is not in a recognized or supported format, or it may be corrupted. |
-| 62980115 | Invalid input parameter. |
-| 62980119 | Failed to encode the image. |
-| 62980120 | Add pixelmap out of range. |
-| 62980172 | Failed to encode icc. |
-| 62980252 | Failed to create surface. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. Possible cause: 1.Image upload exception.2. Decoding process exception. 3. Insufficient memory. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | The image data is abnormal. |
+| [62980106](../errorcode-image.md#62980106-too-large-image-data) | The image data is too large. This status code is thrown when an error occursduring the process of checking size. |
+| [62980113](../errorcode-image.md#62980113-unknown-image-format) | Unknown image format.The image data provided is not in a recognized or supported format, or it may be corrupted. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid input parameter. |
+| [62980119](../errorcode-image.md#62980119-image-encoding-failure) | Failed to encode the image. |
+| [62980120](../errorcode-image.md#62980120-failure-in-adding-pixel-mappings) | Add pixelmap out of range. |
+| [62980172](../errorcode-image.md#62980172-failed-to-encode-icc) | Failed to encode icc. |
+| [62980252](../errorcode-image.md#62980252-failed-to-create-a-surface) | Failed to create surface. |
 
 ## packToFile
 
 ```TypeScript
-packToFile(picture: Picture, fd: int, options: PackingOption): Promise<void>
+packToFile(picture: Picture, fd: number, options: PackingOption): Promise<void>
 ```
 
-指定编码参数，将Picture直接编码进文件。使用Promise异步回调。
+Encodes the Picture into a file based on the specified encoding parameters. This API uses a promise to return the
+result.
 
 **Since:** 13
 
@@ -507,30 +398,30 @@ packToFile(picture: Picture, fd: int, options: PackingOption): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| picture | Picture | Yes | 编码的Picture资源。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOption | Yes | 设置编码参数。 |
+| picture | Picture | Yes | Picture to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOption | Yes | Encoding parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 7800301 | Encode failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
 ## packToFileFromPixelmapSequence
 
 ```TypeScript
-packToFileFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, fd: int, options: PackingOptionsForSequence): Promise<void>
+packToFileFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, fd: number, options: PackingOptionsForSequence): Promise<void>
 ```
 
-指定编码参数，将多个PixelMap编码成GIF文件。使用Promise异步回调。
+Encodes multiple PixelMaps into a GIF file. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -540,22 +431,180 @@ packToFileFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, fd: int, optio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pixelmapSequence | Array&lt;PixelMap> | Yes | 待编码的PixelMap序列。 |
-| fd | int | Yes | 文件描述符。取值范围为[0，65535]。 |
-| options | PackingOptionsForSequence | Yes | 动图编码参数。 |
+| pixelmapSequence | Array&lt;PixelMap&gt; | Yes | PixelMaps to encode. |
+| fd | number | Yes | File descriptor. |
+| options | PackingOptionsForSequence | Yes | Options for encoding animated images. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types;3.Parameter verification failed. |
-| 7800301 | Failed to encode image. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types;3.Parameter verification failed. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Failed to encode image. |
+
+## packing
+
+```TypeScript
+packing(source: ImageSource, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
+```
+
+Compresses or re-encodes an image. This API uses an asynchronous callback to return the result.
+
+**Since:** 6
+
+**Deprecated since:** 13
+
+**Substitutes:** [packToData](arkts-image-imagepacker-i.md#packtodata-1)
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| source | ImageSource | Yes | Image source to compress or re-encode. |
+| option | PackingOption | Yes | Encoding parameters. |
+| callback | AsyncCallback&lt;ArrayBuffer&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err**is an error object. |
+
+## packing
+
+```TypeScript
+packing(source: ImageSource, option: PackingOption): Promise<ArrayBuffer>
+```
+
+Compresses or re-encodes an image. This API uses a promise to return the result.
+
+**Since:** 6
+
+**Deprecated since:** 13
+
+**Substitutes:** [packToData](arkts-image-imagepacker-i.md#packtodata-1)
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| source | ImageSource | Yes | Image source to compress or re-encode. |
+| option | PackingOption | Yes | Encoding parameters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
+
+## packing
+
+```TypeScript
+packing(source: PixelMap, option: PackingOption, callback: AsyncCallback<ArrayBuffer>): void
+```
+
+Compresses or re-encodes an image. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> If the message "PixelMap mismatch" is returned, the parameters are abnormal. The possible cause is that the
+> PixelMap object is released in advance. You need to check the code and ensure that the PixelMap object is
+> released after this API is called.
+
+**Since:** 8
+
+**Deprecated since:** 13
+
+**Substitutes:** [packToData](arkts-image-imagepacker-i.md#packtodata-1)
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| source | PixelMap | Yes | PixelMap to compress or re-encode. |
+| option | PackingOption | Yes | Encoding parameters. |
+| callback | AsyncCallback&lt;ArrayBuffer&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the compressed or encoded image data; otherwise, **err**is an error object. |
+
+## packing
+
+```TypeScript
+packing(source: PixelMap, option: PackingOption): Promise<ArrayBuffer>
+```
+
+Compresses or re-encodes an image. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> If the message "PixelMap mismatch" is returned, the parameters are abnormal. The possible cause is that the
+> PixelMap object is released in advance. You need to check the code and ensure that the PixelMap object is
+> released after this API is called.
+
+**Since:** 8
+
+**Deprecated since:** 13
+
+**Substitutes:** [packToData](arkts-image-imagepacker-i.md#packtodata-1)
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| source | PixelMap | Yes | PixelMap to compress or re-encode. |
+| option | PackingOption | Yes | Encoding parameters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
+
+## packing
+
+```TypeScript
+packing(picture: Picture, options: PackingOption): Promise<ArrayBuffer>
+```
+
+Compresses or re-encodes an image. This API uses a promise to return the result.
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| picture | Picture | Yes | Picture to compress or re-encode. |
+| options | PackingOption | Yes | Encoding parameters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;ArrayBuffer&gt; | Promise used to return the compressed or encoded image data. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [7800301](../errorcode-image.md#7800301-encoding-failure) | Encode failed. |
 
 ## release
 
@@ -563,7 +612,13 @@ packToFileFromPixelmapSequence(pixelmapSequence: Array<PixelMap>, fd: int, optio
 release(callback: AsyncCallback<void>): void
 ```
 
-释放图片编码实例。使用callback异步回调。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+Releases this ImagePacker instance. This API uses an asynchronous callback to return the result.
+
+Images occupy a large amount of memory. When you finish using an ImagePacker instance, call this API to free the
+memory promptly.
+
+Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
+and the instance is no longer needed.
 
 **Since:** 6
 
@@ -573,7 +628,7 @@ release(callback: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当释放图片编码实例成功，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 ## release
 
@@ -581,7 +636,13 @@ release(callback: AsyncCallback<void>): void
 release(): Promise<void>
 ```
 
-释放图片编码实例。使用Promise异步回调。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+Releases this ImagePacker instance. This API uses a promise to return the result.
+
+Images occupy a large amount of memory. When you finish using an ImagePacker instance, call this API to free the
+memory promptly.
+
+Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
+and the instance is no longer needed.
 
 **Since:** 6
 
@@ -591,7 +652,7 @@ release(): Promise<void>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## supportedFormats
 
@@ -599,7 +660,8 @@ release(): Promise<void>
 readonly supportedFormats: Array<string>
 ```
 
-图片编码支持的格式，包括：JPEG、WebP、PNG、HEIC<sup>12+</sup>、GIF<sup>18+</sup>、从API版本26.0.0开始支持TIFF格式（不同硬件设备支持情况不同）。
+Supported formats for image encoding, including jpeg, webp, png, heic<sup>12+</sup>, and gif<sup>18+</sup>. (The
+supported formats may vary depending on the hardware.)
 
 **Type:** Array<string>
 

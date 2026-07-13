@@ -1,6 +1,6 @@
 # Tag
 
-Enumerate the keys of asset attributes ([AssetMap](arkts-assetstore-assetmap-t.md#assetmap)), which are in key-value (KV) pairs.
+Enumerate the keys of asset attributes ([AssetMap](arkts-assetstore-assetmap-t.md)), which are in key-value (KV) pairs.
 
 **Since:** 11
 
@@ -262,7 +262,8 @@ Additional asset data customized by the service without integrity protection.
 DATA_LABEL_NORMAL_LOCAL_1 = TagType.BYTES | 0x34
 ```
 
-Local information about the asset. The value is assigned by the service without integrity protection and will not be synced.
+Local information about the asset. The value is assigned by the service without integrity protection and
+will not be synced.
 
 **Since:** 12
 
@@ -276,7 +277,8 @@ Local information about the asset. The value is assigned by the service without 
 DATA_LABEL_NORMAL_LOCAL_2 = TagType.BYTES | 0x35
 ```
 
-Local information about the asset. The value is assigned by the service without integrity protection and will not be synced.
+Local information about the asset. The value is assigned by the service without integrity protection and
+will not be synced.
 
 **Since:** 12
 
@@ -290,7 +292,8 @@ Local information about the asset. The value is assigned by the service without 
 DATA_LABEL_NORMAL_LOCAL_3 = TagType.BYTES | 0x36
 ```
 
-Local information about the asset. The value is assigned by the service without integrity protection and will not be synced.
+Local information about the asset. The value is assigned by the service without integrity protection and
+will not be synced.
 
 **Since:** 12
 
@@ -304,7 +307,8 @@ Local information about the asset. The value is assigned by the service without 
 DATA_LABEL_NORMAL_LOCAL_4 = TagType.BYTES | 0x37
 ```
 
-Local information about the asset. The value is assigned by the service without integrity protection and will not be synced.
+Local information about the asset. The value is assigned by the service without integrity protection and
+will not be synced.
 
 **Since:** 12
 
@@ -346,7 +350,9 @@ Maximum number of asset records to return.
 RETURN_OFFSET = TagType.NUMBER | 0x42
 ```
 
-Offset of the asset query result. **Note**: This parameter specifies the starting asset record to return in batch asset query.
+Offset of the asset query result.
+
+**Note**: This parameter specifies the starting asset record to return in batch asset query.
 
 **Since:** 11
 
@@ -360,7 +366,9 @@ Offset of the asset query result. **Note**: This parameter specifies the startin
 RETURN_ORDERED_BY = TagType.NUMBER | 0x43
 ```
 
-Sorting order of the query results. Currently, the results can be sorted only by **ASSET_TAG_DATA_LABEL**. **Note**: By default, assets are returned in the order in which they are added.
+Sorting order of the query results. Currently, the results can be sorted only by **ASSET_TAG_DATA_LABEL**.
+
+**Note**: By default, assets are returned in the order in which they are added.
 
 **Since:** 11
 

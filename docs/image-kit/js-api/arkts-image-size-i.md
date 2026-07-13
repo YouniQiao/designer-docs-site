@@ -1,50 +1,53 @@
 # Size
 
-表示图片尺寸。
+Describes the size of an image.
+It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
 
-**Since:** 6
+**Inheritance/Implementation:** Size extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
+
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+import { sendableImage } from '@kit.ImageKit';
 ```
-
-## width
-
-```TypeScript
-width: int
-```
-
-Width Unit:px.
-
-**Type:** int
-
-**Since:** 6
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## height
 
 ```TypeScript
-height: int
+height: number
 ```
 
-Height Unit:px.
+Height of the output image, in px.
 
-**Type:** int
+**Type:** number
 
-**Since:** 6
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## width
+
+```TypeScript
+width: number
+```
+
+Width of the output image, in px.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

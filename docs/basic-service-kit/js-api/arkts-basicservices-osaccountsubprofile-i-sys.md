@@ -11,7 +11,7 @@ Definition of an OS account sub-profile.
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## distributedInfo
@@ -56,7 +56,9 @@ Identifier of the OS account sub-profile.
 index: number
 ```
 
-Position index of the OS account sub-profile, ranging from 0 to the number of sub-profiles minus 1. This index is unique within each OS account and is automatically assigned by the system when the sub-profile is created.
+Position index of the OS account sub-profile, ranging from 0 to the number of sub-profiles minus 1.
+This index is unique within each OS account and is automatically assigned by the system
+when the sub-profile is created.
 
 **Type:** number
 

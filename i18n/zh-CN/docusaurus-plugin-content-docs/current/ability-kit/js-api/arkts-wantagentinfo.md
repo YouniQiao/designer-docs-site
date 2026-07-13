@@ -4,8 +4,16 @@
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[LocalWantAgentInfo](arkts-localwantagentinfo-i.md) | 定义触发本地WantAgent所需要的信息，可以作为 [createLocalWantAgent](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent-sys.md#wantagentcreatelocalwantagent20) 的入参创建指定的本地WantAgent对象。 |
-| [WantAgentInfo](arkts-wantagentinfo-i.md) | 定义触发WantAgent所需要的信息，可以作为 [getWantAgent](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent)的入参创建指定的 WantAgent对象。 |
+| [WantAgentInfo](arkts-ability-wantagentinfo-i.md) | 定义触发WantAgent所需要的信息，可以作为[getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent)的入参创建指定的WantAgent对象。 |
+
+<!--Del-->
+### 接口（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [LocalWantAgentInfo](arkts-ability-localwantagentinfo-i-sys.md) | 定义触发本地WantAgent所需要的信息，可以作为[createLocalWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent-sys.md#wantagentcreatelocalwantagent20)的入参创建指定的本地WantAgent对象。 |
+| [WantAgentInfo](arkts-ability-wantagentinfo-i-sys.md) | 定义触发WantAgent所需要的信息，可以作为[getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent)的入参创建指定的WantAgent对象。 |
+<!--DelEnd-->
 

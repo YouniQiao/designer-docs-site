@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { conversation } from '@ohos.distributedSoftBus.conversation';
+import { conversation } from '@kit.DistributedServiceKit';
 ```
 
 ## unregisterConversationListener
@@ -12,7 +12,9 @@ import { conversation } from '@ohos.distributedSoftBus.conversation';
 function unregisterConversationListener(bundleName: string, abilityName: string): void
 ```
 
-Unregisters the conversation listener for the specified bundle and ability. After calling this API, the application will no longer receive messages. If no listener was previously registered for the given bundle and ability, this API returns success without any effect.
+Unregisters the conversation listener for the specified bundle and ability. After calling this API, the
+application will no longer receive messages. If no listener was previously registered for the given bundle
+and ability, this API returns success without any effect.
 
 **Since:** 26.1.0
 
@@ -39,5 +41,5 @@ Unregisters the conversation listener for the specified bundle and ability. Afte
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. The bundleName or abilityName is invalid or empty. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| 2000001 | Internal error. |
+| [2000001](../../apis-distributedservice-kit/errorcode-conversation.md#2000001-internal-error) | Internal error. |
 

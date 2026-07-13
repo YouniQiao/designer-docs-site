@@ -2,7 +2,7 @@
 
 Manager pan profile.
 
-**Inheritance/Implementation:** PanProfile extends [BaseProfile](arkts-connectivity-baseprofile-i.md#baseprofile)
+**Inheritance/Implementation:** PanProfile extends [BaseProfile](arkts-connectivity-baseprofile-i.md)
 
 **Since:** 9
 
@@ -15,7 +15,7 @@ Manager pan profile.
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## disconnect
@@ -24,7 +24,8 @@ import { bluetoothManager } from '@ohos.bluetoothManager';
 disconnect(device: string): void
 ```
 
-Disconnect to device with pan. On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
+Disconnect to device with pan.
+On API 10 and above, the permission required by this interface is changed from USE_BLUETOOTH to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -34,7 +35,7 @@ Disconnect to device with pan. On API 10 and above, the permission required by t
 
 **Required permissions:** 
 - API version 10+: ohos.permission.ACCESS_BLUETOOTH
-- API version 9 - 9: ohos.permission.USE_BLUETOOTH
+- API version 9: ohos.permission.USE_BLUETOOTH
 
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 
@@ -65,7 +66,8 @@ Disconnect to device with pan. On API 10 and above, the permission required by t
 isTetheringOn(): boolean
 ```
 
-Obtains the tethering enable or disable. On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
+Obtains the tethering enable or disable.
+On API 10 and above, the permission required by this interface is changed to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -99,7 +101,9 @@ Obtains the tethering enable or disable. On API 10 and above, the permission req
 setTethering(enable: boolean): void
 ```
 
-Enable bluetooth tethering. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to ACCESS_BLUETOOTH and MANAGE_BLUETOOTH.
+Enable bluetooth tethering.
+On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH to
+ACCESS_BLUETOOTH and MANAGE_BLUETOOTH.
 
 **Since:** 9
 
@@ -109,7 +113,7 @@ Enable bluetooth tethering. On API 10 and above, the permission required by this
 
 **Required permissions:** 
 - API version 10+: ohos.permission.ACCESS_BLUETOOTH and ohos.permission.MANAGE_BLUETOOTH
-- API version 9 - 9: ohos.permission.DISCOVER_BLUETOOTH
+- API version 9: ohos.permission.DISCOVER_BLUETOOTH
 
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 

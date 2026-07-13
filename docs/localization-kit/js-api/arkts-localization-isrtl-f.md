@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## isRTL
@@ -12,7 +12,8 @@ import { i18n } from '@ohos.i18n';
 export function isRTL(locale: string): boolean
 ```
 
-Checks whether a language is an RTL language. For an RTL language, [UI mirroring](../../../../internationalization/i18n-ui-design.md#ui-mirroring) is required.
+Checks whether a language is an RTL language. For an RTL language,
+[UI mirroring](../../../../internationalization/i18n-ui-design.md#ui-mirroring) is required.
 
 **Since:** 7
 

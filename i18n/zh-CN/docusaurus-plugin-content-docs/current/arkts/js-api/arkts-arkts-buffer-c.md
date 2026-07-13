@@ -137,7 +137,7 @@ entries(): IterableIterator<[number, number]>
 | 类型 | 说明 |
 | --- | --- |
 | IterableIterator&lt;[number, number]&gt; | 包含key和value的迭代器，同时两者皆为number类型。<br>**适用版本：** 9 - 10 |
-| IterableIterator&lt;[number, number]&gt; | <br>**适用版本：** 11 |
+| IterableIterator&lt;[number, number]&gt; | <br>**适用版本：** 11+ |
 
 **示例：**
 
@@ -2789,7 +2789,10 @@ ArrayBuffer对象。
 byteOffset: number
 ```
 
-当前Buffer所在内存池的偏移量。 当Buffer通过内存池创建时（如使用[allocUninitializedFromPool](arkts-arkts-allocuninitializedfrompool-f.md#allocuninitializedfrompool-1)创建Buffer， 或使用buffer.from()传入字符串，且字符串长度加当前内存池偏移量小于4kb），返回相对于内存池的偏移量。 当Buffer直接分配内存时（如使用[alloc](arkts-arkts-alloc-f.md#alloc-1)），返回值为0。
+当前Buffer所在内存池的偏移量。
+当Buffer通过内存池创建时（如使用[allocUninitializedFromPool](arkts-arkts-allocuninitializedfrompool-f.md#allocuninitializedfrompool-1)创建Buffer，
+或使用buffer.from()传入字符串，且字符串长度加当前内存池偏移量小于4kb），返回相对于内存池的偏移量。
+当Buffer直接分配内存时（如使用[alloc](arkts-arkts-alloc-f.md#alloc-1)），返回值为0。
 
 **类型：** number
 

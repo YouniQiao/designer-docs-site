@@ -9,7 +9,7 @@ Defines the optional parameters carried in the request for establishing a WebSoc
 ## Modules to Import
 
 ```TypeScript
-import { webSocket } from '@ohos.net.webSocket';
+import { webSocket } from '@kit.NetworkKit';
 ```
 
 ## caPath
@@ -78,7 +78,9 @@ The minimum support version of TLS protocol.
 pingInterval?: number
 ```
 
-Self defined interval of ping frame. default: 30. disable: 0. max: 30000. unit:second. Ping is performed at every pingInterval.
+Self defined interval of ping frame.
+default: 30. disable: 0. max: 30000. unit:second.
+Ping is performed at every pingInterval.
 
 **Type:** number
 
@@ -92,7 +94,9 @@ Self defined interval of ping frame. default: 30. disable: 0. max: 30000. unit:s
 pongTimeout?: number
 ```
 
-Self defined timeout of pong frame. default: 30. max: 30000. unit:second. The value must be less than or equal to pingInterval. If no pong is received within the pongTimeout period, the websocket connection will be disconnected.
+Self defined timeout of pong frame.
+default: 30. max: 30000. unit:second. The value must be less than or equal to pingInterval.
+If no pong is received within the pongTimeout period, the websocket connection will be disconnected.
 
 **Type:** number
 
@@ -120,7 +124,7 @@ Self defined protocol.
 proxy?: ProxyConfiguration
 ```
 
-HTTP proxy configuration. Use 'system' if this filed is not set.
+HTTP proxy configuration. Use 'system' if this field is not set.
 
 **Type:** ProxyConfiguration
 
@@ -134,7 +138,7 @@ HTTP proxy configuration. Use 'system' if this filed is not set.
 skipServerCertVerification?: boolean
 ```
 
-Wheter or not to skip the verification of the server's certification.
+Whether or not to skip the verification of the server's certification.
 
 **Type:** boolean
 

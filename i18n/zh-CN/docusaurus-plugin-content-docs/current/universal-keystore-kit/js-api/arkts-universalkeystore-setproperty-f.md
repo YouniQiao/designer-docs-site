@@ -6,7 +6,8 @@
 function setProperty(resourceId: string, propertyId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-The set-type operations of the external crypto extension support calling custom interfaces. However, the custom interface must be registered with the provider.
+The set-type operations of the external crypto extension support calling custom interfaces.
+However, the custom interface must be registered with the provider.
 
 **起始版本：** 26.0.0
 
@@ -20,7 +21,7 @@ The set-type operations of the external crypto extension support calling custom 
 | --- | --- | --- | --- |
 | resourceId | string | 是 | 资源ID，可通过[导出证书的接口](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-2)获取，该接口的返回结果中附带resourceId。 |
 | propertyId | string | 是 | 查找操作的属性名称，是GMT 0016-2023中定义的SKF接口名，应用开发者需要针对接口名进行适配。 |
-| params | HuksExternalCryptoParam[] | 否 | 需要传递给[Extension Ability](arkts-security-cryptoextensionability.md)的输入参数。非系统应用传入[HUKS_EXT_CRYPTO_TAG_UID](arkts-universalkeystore-huksexternalcryptotagtype-e.md#huksexternalcryptotagtype)是非法参数。 |
+| params | HuksExternalCryptoParam[] | 否 | 需要传递给[Extension Ability](arkts-security-cryptoextensionability.md)的输入参数。非系统应用传入[HUKS_EXT_CRYPTO_TAG_UID](arkts-universalkeystore-huksexternalcryptotagtype-e.md)是非法参数。 |
 
 **返回值：**
 
@@ -32,7 +33,7 @@ The set-type operations of the external crypto extension support calling custom 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | API is not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | API is not supported. |
 | [12000005](../errorcode-huks.md#12000005-进程通信错误) | IPC communication failed. |
 | [12000006](../errorcode-huks.md#12000006-算法库操作失败) | Failed to call the UKey driver interface.Please check the UKey connection and driver status. |
 | [12000011](../errorcode-huks.md#12000011-目标对象不存在) | The cached resource ID not found. |

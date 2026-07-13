@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## off('continuousTaskCancel')
@@ -12,7 +12,8 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function off(type: 'continuousTaskCancel', callback?: Callback<ContinuousTaskCancelInfo>): void
 ```
 
-Unsubscribes from continuous task cancellation events. This API uses an asynchronous callback to return the result.
+Unsubscribes from continuous task cancellation events. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 15
 
@@ -65,7 +66,8 @@ export default class EntryAbility extends UIAbility {
 function off(type: 'continuousTaskSuspend', callback?: Callback<ContinuousTaskSuspendInfo>): void
 ```
 
-Unregisters from the listener for continuous task suspension. This API uses an asynchronous callback to return the result.
+Unregisters from the listener for continuous task suspension. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 20
 
@@ -119,7 +121,8 @@ export default class EntryAbility extends UIAbility {
 function off(type: 'continuousTaskActive', callback?: Callback<ContinuousTaskActiveInfo>): void
 ```
 
-Unregisters from the listener for continuous task activation. This API uses an asynchronous callback to return the result.
+Unregisters from the listener for continuous task activation. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 20
 

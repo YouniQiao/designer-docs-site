@@ -11,7 +11,7 @@ The **StaticSubscriberExtensionAbility** module provides Extension abilities for
 ## Modules to Import
 
 ```TypeScript
-import { StaticSubscriberExtensionAbility } from '@ohos.application.StaticSubscriberExtensionAbility';
+import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
 ## onReceiveEvent

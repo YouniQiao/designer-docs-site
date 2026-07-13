@@ -6,7 +6,7 @@ Describes the parameters required for bundle installation, recovery, or uninstal
 
 **Deprecated since:** 9
 
-**Substitutes:** [InstallParam](arkts-ability-installparam-i-sys.md#installparam)
+**Substitutes:** [InstallParam](arkts-ability-installparam-i-sys.md)
 
 **System capability:** SystemCapability.BundleManager.BundleFramework
 
@@ -18,7 +18,13 @@ Describes the parameters required for bundle installation, recovery, or uninstal
 installFlag: number
 ```
 
-Installation flag. The value can be: **1** (default): overwrite installation. **16**: installation-free.
+Installation flag.
+
+The value can be:
+
+**1** (default): overwrite installation.
+
+**16**: installation-free.
 
 **Type:** number
 
@@ -40,7 +46,8 @@ Installation flag. The value can be: **1** (default): overwrite installation. **
 isKeepData: boolean
 ```
 
-Whether to retain the bundle data when the application is uninstalled. The default value is **false**. **true** to retain, **false** otherwise.
+Whether to retain the bundle data when the application is uninstalled. The default value is **false**. **true** to
+retain, **false** otherwise.
 
 **Type:** boolean
 

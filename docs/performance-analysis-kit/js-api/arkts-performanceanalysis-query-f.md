@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { FaultLogger } from '@ohos.faultLogger';
+import { FaultLogger } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## query
@@ -12,7 +12,8 @@ import { FaultLogger } from '@ohos.faultLogger';
 function query(faultType: FaultType, callback: AsyncCallback<Array<FaultLogInfo>>): void
 ```
 
-Obtains the fault information about the current application. This API uses an asynchronous callback to return the fault information array obtained, which contains a maximum of 10 pieces of fault information.
+Obtains the fault information about the current application. This API uses an asynchronous callback to return the
+fault information array obtained, which contains a maximum of 10 pieces of fault information.
 
 **Since:** 9
 
@@ -77,7 +78,8 @@ try {
 function query(faultType: FaultType): Promise<Array<FaultLogInfo>>
 ```
 
-Obtains the fault information about the current application. This API uses a promise to return the fault information array obtained, which contains a maximum of 10 pieces of fault information.
+Obtains the fault information about the current application. This API uses a promise to return the fault
+information array obtained, which contains a maximum of 10 pieces of fault information.
 
 **Since:** 9
 

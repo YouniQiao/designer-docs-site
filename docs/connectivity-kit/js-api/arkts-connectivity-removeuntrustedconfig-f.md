@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifi } from '@ohos.wifi';
+import { wifi } from '@kit.ConnectivityKit';
 ```
 
 ## removeUntrustedConfig
@@ -12,7 +12,9 @@ import { wifi } from '@ohos.wifi';
 function removeUntrustedConfig(config: WifiDeviceConfig): Promise<boolean>
 ```
 
-Removes a specified untrusted hotspot configuration. <p>This method removes one configuration at a time.
+Removes a specified untrusted hotspot configuration.
+
+<p>This method removes one configuration at a time.
 
 **Since:** 7
 
@@ -77,7 +79,9 @@ try {
 function removeUntrustedConfig(config: WifiDeviceConfig, callback: AsyncCallback<boolean>): void
 ```
 
-Removes a specified untrusted hotspot configuration. <p>This method removes one configuration at a time.
+Removes a specified untrusted hotspot configuration.
+
+<p>This method removes one configuration at a time.
 
 **Since:** 7
 

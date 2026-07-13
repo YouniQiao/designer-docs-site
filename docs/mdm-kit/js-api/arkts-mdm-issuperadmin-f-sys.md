@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## isSuperAdmin
@@ -12,7 +12,8 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function isSuperAdmin(bundleName: String, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a super device administrator application is enabled based on **bundleName**. This API uses an asynchronous callback to return the result.
+Checks whether a super device administrator application is enabled based on **bundleName**. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -62,7 +63,8 @@ adminManager.isSuperAdmin(bundleName, (err, result) => {
 function isSuperAdmin(bundleName: String): Promise<boolean>
 ```
 
-Checks whether a super device administrator application is enabled based on **bundleName**. This API uses a promise to return the result.
+Checks whether a super device administrator application is enabled based on **bundleName**. This API uses a promise
+to return the result.
 
 **Since:** 9
 

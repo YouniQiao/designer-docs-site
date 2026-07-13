@@ -6,7 +6,8 @@
 function configure(config: ConfigOption): boolean
 ```
 
-Configures the application event logging function, such as setting the event logging switch and maximum size of the directory that stores the event logging files.
+Configures the application event logging function, such as setting the event logging switch and maximum size of the
+directory that stores the event logging files.
 
 **Since:** 7
 

@@ -1,8 +1,19 @@
 # PasteButtonOptions
 
-Declares the interface for setting the paste button options.
+Defines options for the paste button, including icon, text and button type.
 
-**Since:** 11
+> **NOTE**
+>
+> - You are advised to specify at least one of **icon** or **text**.
+
+> - If neither **icon** nor **text** is specified, **PasteButton** is created with default styles as follows:
+> **PasteIconStyle** defaults to **LINES**, **PasteDescription** to **PASTE**, and **ButtonType** to **Capsule**.
+
+> - The **icon**, **text**, and **buttonType** parameters do not support dynamic modification. Styles and properties
+> of security components are verified by the system upon creation. Dynamic changes may cause the component to
+> violate specifications for security components and invalidate authorization.
+
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -12,11 +23,12 @@ Declares the interface for setting the paste button options.
 buttonType?: ButtonType
 ```
 
-Type of the button.
+Shape of the **PasteButton** component.
+Default value: ButtonType.Capsule.
 
 **Type:** ButtonType
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -30,11 +42,13 @@ Type of the button.
 icon?: PasteIconStyle
 ```
 
-Style of the icon to be drawn.
+Icon style of the **PasteButton** component.
+Default value: No icon is displayed.
+<br>If neither **icon** nor **text** is provided, the component uses the default style.
 
 **Type:** PasteIconStyle
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -48,11 +62,13 @@ Style of the icon to be drawn.
 text?: PasteDescription
 ```
 
-Text to be displayed on the button.
+Text on the **PasteButton** component.
+Default value: No text description is displayed.
+<br>If the icon is not transferred, the control is displayed in the default style.
 
 **Type:** PasteDescription
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 

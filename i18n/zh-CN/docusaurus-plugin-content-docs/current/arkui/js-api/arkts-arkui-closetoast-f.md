@@ -6,7 +6,14 @@
 function closeToast(toastId: number): void
 ```
 
-关闭即时反馈。 > **说明：** > > 直接使用closeToast可能导致[UI上下文不明确](../../../../ui/arkts-global-interface.md#ui上下文不明确)的问题，建议使用 UIContext中的getPromptAction方法获取 > 到PromptAction对象，再通过该对象调用 > [closeToast](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#closetoast18)实现。
+关闭即时反馈。
+
+> **说明：**
+>
+> 直接使用closeToast可能导致[UI上下文不明确](../../../../ui/arkts-global-interface.md#ui上下文不明确)的问题，建议使用
+UIContext中的getPromptAction方法获取
+> 到PromptAction对象，再通过该对象调用
+> [closeToast](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#closetoast18)实现。
 
 **起始版本：** 18
 
@@ -26,7 +33,7 @@ function closeToast(toastId: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-接口调用异常错误码) | Internal error. |
 | [103401](../errorcode-promptAction.md#103401-无法找到对应的文本提示框) | Cannot find the toast. |
 

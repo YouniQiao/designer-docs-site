@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## symlink
@@ -12,7 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function symlink(target: string, srcPath: string): Promise<void>
 ```
 
-Creates a symbolic link based on a file path. This API uses a promise to return the result. > **NOTE** > > Since API version 11, this API cannot be used by third-party applications.
+Creates a symbolic link based on a file path. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> Since API version 11, this API cannot be used by third-party applications.
 
 **Since:** 9
 
@@ -57,7 +61,11 @@ Creates a symbolic link based on a file path. This API uses a promise to return 
 declare function symlink(target: string, srcPath: string, callback: AsyncCallback<void>): void
 ```
 
-Creates a symbolic link based on the file path. This API uses an asynchronous callback to return the result. > **NOTE** > > Since API version 11, this API cannot be used by third-party applications.
+Creates a symbolic link based on the file path. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Since API version 11, this API cannot be used by third-party applications.
 
 **Since:** 9
 

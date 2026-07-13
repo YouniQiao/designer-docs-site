@@ -1,34 +1,12 @@
 # ImageReceiver
 
-ImageReceiver类，用于获取组件surface id、接收最新的图片和读取下一张图片以及释放ImageReceiver实例。ImageReceiver作为图片的接收方和消费者，其参数属性实际上不会对接收到的图片产生影响。 图片属性的配置应在发送方和生产者上进行，如相机预览流 [createPreviewOutput](../../apis-camera-kit/arkts-apis/arkts-camera-cameramanager-i.md#createPreviewOutput) 。 在调用以下方法前需要先通过[image.createImageReceiver]image.createImageReceiver创建ImageReceiver实例。 从API version 23开始，更推荐使用[image.createImageReceiver]image.createImageReceiver，通过传入 [ImageReceiverOptions]image.ImageReceiverOptions创建ImageReceiver实例。 由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用[release]image.ImageReceiver.release(callback: AsyncCallback<void>) 方法及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
+图像接收类，用于获取组件Surface ID，接收最新的图片和读取下一张图片，以及释放ImageReceiver实例。
 
-**起始版本：** 9
+在调用以下方法前需要先创建ImageReceiver实例。
 
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-## 导入模块
-
-```TypeScript
-import { image } from '@kit.ImageKit';
-```
-
-## getReceivingSurfaceId
-
-```TypeScript
-getReceivingSurfaceId(callback: AsyncCallback<string>): void
-```
-
-用于获取一个surface id供Camera或其他组件使用。使用callback异步回调。
-
-**起始版本：** 9
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string> | 是 | 回调函数，当获取surface id成功，err为undefined，data为获取到的surface id；否则为错误对象。 |
 
 ## getReceivingSurfaceId
 
@@ -36,9 +14,9 @@ getReceivingSurfaceId(callback: AsyncCallback<string>): void
 getReceivingSurfaceId(): Promise<string>
 ```
 
-用于获取一个surface id供Camera或其他组件使用。使用Promise异步回调。
+用于获取一个Surface ID供Camera或其他组件使用。使用promise异步回调。
 
-**起始版本：** 9
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -46,44 +24,29 @@ getReceivingSurfaceId(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string> | Promise对象，返回surface id。 |
+| Promise&lt;string&gt; | 异步返回Surface ID。 |
 
-## off('imageArrival')
-
-```TypeScript
-off(type: 'imageArrival', callback?: AsyncCallback<void>): void
-```
-
-释放buffer时移除注册回调。使用callback异步回调。
-
-**起始版本：** 13
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| type | 'imageArrival' | 是 | 注册事件的类型，固定为'imageArrival'，释放buffer时触发。 |
-| callback | AsyncCallback&lt;void> | 否 | 移除的回调函数。 |
-
-## offImageArrival
+**示例：**
 
 ```TypeScript
-offImageArrival(callback?: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { image } from '@kit.ImageKit';
+
+async function GetReceivingSurfaceId() {
+  let size: image.Size = {
+    height: 8192,
+    width: 8
+  }
+  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
+  receiver.getReceivingSurfaceId().then((id: string) => {
+    console.info('Succeeded in getting the ReceivingSurfaceId.');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to get the ReceivingSurfaceId.code ${error.code}, message is ${error.message}`);
+  })
+}
+
 ```
-
-Remove callback subscriptions when releasing buffer.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 否 |  |
 
 ## on('imageArrival')
 
@@ -91,9 +54,9 @@ Remove callback subscriptions when releasing buffer.
 on(type: 'imageArrival', callback: AsyncCallback<void>): void
 ```
 
-接收图片时注册回调。使用callback异步回调。
+接收图片时注册。使用callback异步回调。
 
-**起始版本：** 9
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -101,44 +64,27 @@ on(type: 'imageArrival', callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'imageArrival' | 是 | 注册事件的类型，固定为'imageArrival'，接收图片到达时触发。 |
-| callback | AsyncCallback&lt;void> | 是 | 回调函数，当注册事件触发成功，err为undefined，否则为错误对象。 |
+| type | 'imageArrival' | 是 | 注册事件的类型，固定为'imageArrival'，接收图片时触发。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 注册的事件回调。 |
 
-## onImageArrival
+**示例：**
 
 ```TypeScript
-onImageArrival(callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function On() {
+  let size: image.Size = {
+    height: 8192,
+    width: 8
+  }
+  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
+  receiver.on('imageArrival', () => {
+    // 接收到图片，实现回调函数逻辑。
+  })
+}
+
 ```
-
-Subscribe callback when receiving an image.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return image. |
-
-## readLatestImage
-
-```TypeScript
-readLatestImage(callback: AsyncCallback<Image>): void
-```
-
-从ImageReceiver读取最新的图片。使用callback异步回调。 > **注意**： > > 此接口需要在[on]image.ImageReceiver.on(type: 'imageArrival', callback: AsyncCallback<void>)回调触发后调用，才能正常的接收到数 > 据。且此接口返回的[Image]image.Image对象使用完毕后需要调用 > [release]image.Image.release(callback: AsyncCallback<void>)方法释放，释放后才可以继续接收新的数据。
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Image> | 是 | 回调函数，当读取最新图片成功，err为undefined，data为获取到的最新图片；否则为错误对象。 |
 
 ## readLatestImage
 
@@ -146,9 +92,14 @@ readLatestImage(callback: AsyncCallback<Image>): void
 readLatestImage(): Promise<Image>
 ```
 
-从ImageReceiver读取最新的图片。使用Promise异步回调。 > **注意**： > > 此接口需要在[on]image.ImageReceiver.on(type: 'imageArrival', callback: AsyncCallback<void>)回调触发后调用，才能正常的接收到数 > 据。且此接口返回的[Image]image.Image对象使用完毕后需要调用 > [release]image.Image.release(callback: AsyncCallback<void>)方法释放，释放后才可以继续接收新的数据。
+从ImageReceiver读取最新的图片。使用promise异步回调。
 
-**起始版本：** 9
+> **注意**：
+>
+> 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使
+> 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -156,25 +107,29 @@ readLatestImage(): Promise<Image>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Image> | Promise对象，返回最新图片。 |
+| Promise&lt;Image&gt; | 异步返回最新图片。 |
 
-## readNextImage
+**示例：**
 
 ```TypeScript
-readNextImage(callback: AsyncCallback<Image>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { image } from '@kit.ImageKit';
+
+async function ReadLatestImage() {
+  let size: image.Size = {
+    height: 8192,
+    width: 8
+  }
+  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
+  receiver.readLatestImage().then((img: sendableImage.Image) => {
+    console.info('Succeeded in reading the latest image.');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to read the latest image. Code: ${error.code}, message: ${error.message}.`);
+  })
+}
+
 ```
-
-从ImageReceiver读取下一张图片。使用callback异步回调。 > **注意**： > > 此接口需要在[on]image.ImageReceiver.on(type: 'imageArrival', callback: AsyncCallback<void>)回调触发后调用，才能正常的接收到数 > 据。且此接口返回的[Image]image.Image对象使用完毕后需要调用 > [release]image.Image.release(callback: AsyncCallback<void>)方法释放，释放后才可以继续接收新的数据。
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Image> | 是 | 回调函数，当获取下一张图片成功，err为undefined，data为获取到的下一张图片；否则为错误对象。 |
 
 ## readNextImage
 
@@ -182,9 +137,14 @@ readNextImage(callback: AsyncCallback<Image>): void
 readNextImage(): Promise<Image>
 ```
 
-从ImageReceiver读取下一张图片。使用Promise异步回调。 > **注意**： > > 此接口需要在[on]image.ImageReceiver.on(type: 'imageArrival', callback: AsyncCallback<void>)回调触发后调用，才能正常的接收到数 > 据。且此接口返回的[Image]image.Image对象使用完毕后需要调用 > [release]image.Image.release(callback: AsyncCallback<void>)方法释放，释放后才可以继续接收新的数据。
+从ImageReceiver读取下一张图片。使用promise异步回调。
 
-**起始版本：** 9
+> **注意**：
+>
+> 此接口需要在[on](sendableImage.ImageReceiver.on)回调触发后调用，才能正常的接收到数据。且此接口返回的[Image](arkts-image-image-i.md)对象使
+> 用完毕后需要调用[release](arkts-image-pixelmap-i.md#release-1)方法释放，释放后才可以继续接收新的数据。
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -192,25 +152,29 @@ readNextImage(): Promise<Image>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Image> | Promise对象，返回下一张图片。 |
+| Promise&lt;Image&gt; | 异步返回下一张图片。 |
 
-## release
+**示例：**
 
 ```TypeScript
-release(callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { image } from '@kit.ImageKit';
+
+async function ReadNextImage() {
+  let size: image.Size = {
+    height: 8192,
+    width: 8
+  }
+  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
+  receiver.readNextImage().then((img: sendableImage.Image) => {
+    console.info('Succeeded in reading the next image.');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to read the next image. Code: ${error.code}, message: ${error.message}.`);
+  })
+}
+
 ```
-
-释放ImageReceiver实例。使用callback异步回调。 由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | 回调函数，当释放ImageReceiver实例成功，err为undefined，否则为错误对象。 |
 
 ## release
 
@@ -218,9 +182,13 @@ release(callback: AsyncCallback<void>): void
 release(): Promise<void>
 ```
 
-释放ImageReceiver实例。使用Promise异步回调。 由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+释放ImageReceiver实例。使用promise异步回调。
 
-**起始版本：** 9
+由于图片占用内存较大，所以当ImageReceiver实例使用完成后，应主动调用该方法，及时释放内存。
+
+释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
@@ -228,47 +196,69 @@ release(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | 异步返回操作结果。 |
 
-## size
+**示例：**
 
 ```TypeScript
-readonly size: Size
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { image } from '@kit.ImageKit';
+
+async function Release() {
+  let size: image.Size = {
+    height: 8192,
+    width: 8
+  }
+  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
+  receiver.release().then(() => {
+    console.info('Succeeded in releasing an image receiver.');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to release an image receiver. Code: ${error.code}, message: ${error.message}.`);
+  })
+}
+
 ```
 
-图片大小。该参数不会影响接收到的图片大小，实际返回大小由生产者决定，如相机。
+## capacity
 
-**类型：** Size
+```TypeScript
+readonly capacity: number
+```
 
-**起始版本：** 9
+同时访问的图像数。该参数仅作为期望值，实际capacity由设备硬件决定。
+
+**类型：** number
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
 ## format
 
 ```TypeScript
-readonly format: ImageFormat
+readonly format: image.ImageFormat
 ```
 
-图像格式，取值为[ImageFormat]image.ImageFormat常量（目前仅支持 ImageFormat:JPEG，实际返回格式由生产者决定，如相机）。
+图像格式。
 
-**类型：** ImageFormat
+**类型：** image.ImageFormat
 
-**起始版本：** 9
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 
-## capacity
+## size
 
 ```TypeScript
-readonly capacity: int
+readonly size: image.Size
 ```
 
-同时访问的图像数。该参数仅作为期望值，实际capacity由设备硬件决定。
+图片大小。
 
-**类型：** int
+**类型：** image.Size
 
-**起始版本：** 9
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageReceiver
 

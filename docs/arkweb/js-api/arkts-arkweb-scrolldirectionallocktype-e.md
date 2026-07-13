@@ -12,7 +12,8 @@ Enum defining the scope of directional lock behavior in the WebView, used with {
 ALL = 0
 ```
 
-Applies directional lock across all scroll contexts. This includes both nested and flat scroll scenarios.
+Applies directional lock across all scroll contexts.
+This includes both nested and flat scroll scenarios.
 
 **Since:** 26.0.0
 
@@ -26,7 +27,8 @@ Applies directional lock across all scroll contexts. This includes both nested a
 NESTED_SCROLL = 1
 ```
 
-Applies directional lock only within nested scroll scenarios. This is the default behavior in ArkWeb to improve UX in complex scroll hierarchies.
+Applies directional lock only within nested scroll scenarios.
+This is the default behavior in ArkWeb to improve UX in complex scroll hierarchies.
 
 **Since:** 26.0.0
 

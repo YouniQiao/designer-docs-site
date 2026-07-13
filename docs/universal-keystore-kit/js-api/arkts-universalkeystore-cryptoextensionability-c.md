@@ -9,7 +9,7 @@ Class to be override for external crypto extension ability.
 ## Modules to Import
 
 ```TypeScript
-import { HuksCryptoExtensionCertInfo, HuksCryptoExtensionResultCode, HuksCryptoExtensionParams, HuksCryptoExtensionParam, HuksCryptoExtensionResult } from '@ohos.security.CryptoExtensionAbility';
+import { HuksCryptoExtensionCertInfo, HuksCryptoExtensionResultCode, HuksCryptoExtensionParams, HuksCryptoExtensionParam, HuksCryptoExtensionResult } from '@kit.UniversalKeystoreKit';
 ```
 
 ## onAuthUkeyPin
@@ -392,7 +392,8 @@ onOpenResource(resourceId: string, params: Array<huksExternalCrypto.HuksExternal
      HuksCryptoExtensionParam[]): Promise<HuksCryptoExtensionResult>
 ```
 
-Callback to be called to open the resource handle before crypto operations. NOTE: the handle returned must be closed by onCloseResource.
+Callback to be called to open the resource handle before crypto operations.
+NOTE: the handle returned must be closed by onCloseResource.
 
 **Since:** 22
 

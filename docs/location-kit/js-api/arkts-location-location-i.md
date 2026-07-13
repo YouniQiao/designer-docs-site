@@ -15,7 +15,7 @@ Provides information about geographic locations
 ## Modules to Import
 
 ```TypeScript
-import { geolocation } from '@ohos.geolocation';
+import { geolocation } from '@kit.LocationKit';
 ```
 
 ## accuracy
@@ -124,7 +124,9 @@ Indicates direction information.
 latitude: number
 ```
 
-Indicates latitude information. A positive value indicates north latitude, and a negative value indicates south latitude.
+Indicates latitude information.
+A positive value indicates north latitude,
+and a negative value indicates south latitude.
 
 **Type:** number
 
@@ -144,7 +146,9 @@ Indicates latitude information. A positive value indicates north latitude, and a
 longitude: number
 ```
 
-Indicates Longitude information. A positive value indicates east longitude , and a negative value indicates west longitude .
+Indicates Longitude information.
+A positive value indicates east longitude ,
+and a negative value indicates west longitude .
 
 **Type:** number
 

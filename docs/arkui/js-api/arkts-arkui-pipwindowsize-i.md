@@ -9,7 +9,7 @@ Describes the size of a PiP window.
 ## Modules to Import
 
 ```TypeScript
-import { PiPWindow } from '@ohos.PiPWindow';
+import { PiPWindow } from '@kit.ArkUI';
 ```
 
 ## height
@@ -34,7 +34,9 @@ Window height, in px. The value must be a positive integer and cannot be greater
 scale: number
 ```
 
-Scale factor of the window, representing the display size relative to the width and height. The value is a floating-point number in the range (0.0, 1.0]. The value **1** means that the window matches the specified width and height.
+Scale factor of the window, representing the display size relative to the width and height. The value is a
+floating-point number in the range (0.0, 1.0]. The value **1** means that the window matches the specified width
+and height.
 
 **Type:** number
 

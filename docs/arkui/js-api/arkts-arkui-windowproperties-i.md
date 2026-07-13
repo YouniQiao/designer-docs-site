@@ -9,7 +9,7 @@ Describes the window properties.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## brightness
@@ -18,7 +18,11 @@ import { window } from '@ohos.window';
 brightness: number
 ```
 
-Screen brightness of the window. The brightness can be set by calling [setWindowBrightness()](arkts-arkui-window-i.md#setwindowbrightness-2) . The value is a floating-point number. Valid values are in the range [0.0, 1.0] (where **1.0** means the brightest) or the special value **-1.0** (which means that the brightness follows the system). If no value is passed, the brightness follows the system. In this case, the obtained brightness value is **-1.0**.
+Screen brightness of the window. The brightness can be set by calling
+[setWindowBrightness()](arkts-arkui-window-i.md#setwindowbrightness-2)
+. The value is a floating-point number. Valid values are in the range [0.0, 1.0] (where **1.0** means the
+brightest) or the special value **-1.0** (which means that the brightness follows the system). If no value is
+passed, the brightness follows the system. In this case, the obtained brightness value is **-1.0**.
 
 **Type:** number
 
@@ -34,7 +38,11 @@ Screen brightness of the window. The brightness can be set by calling [setWindow
 dimBehindValue: number
 ```
 
-Dimness of the window that is not on top. The value is a floating-point number in the range [0.0, 1.0], and the value **1.0** means the dimmest. Note: This property is supported since API version 7 and deprecated since API version 9. Currently, no substitute is available.
+Dimness of the window that is not on top. The value is a floating-point number in the range [0.0, 1.0], and the
+value **1.0** means the dimmest.
+
+Note: This property is supported since API version 7 and deprecated since API version 9. Currently, no substitute
+is available.
 
 **Type:** number
 
@@ -50,7 +58,8 @@ Dimness of the window that is not on top. The value is a floating-point number i
 displayId?: number
 ```
 
-ID of the screen where the window is located. By default, the ID of the main screen is returned. The value is an integer.
+ID of the screen where the window is located. By default, the ID of the main screen is returned. The value is an
+integer.
 
 **Type:** number
 
@@ -66,7 +75,11 @@ ID of the screen where the window is located. By default, the ID of the main scr
 drawableRect: Rect
 ```
 
-Size of the rectangle that can be drawn in the window. The upper boundary and left boundary are calculated relative to the top-left vertex of the window. In the stage model, this property should be obtained after [loadContent()](arkts-arkui-window-i.md#loadcontent-1) or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1) is called to load the page content.
+Size of the rectangle that can be drawn in the window. The upper boundary and left boundary are calculated
+relative to the top-left vertex of the window. In the stage model, this property should be obtained after
+[loadContent()](arkts-arkui-window-i.md#loadcontent-1)
+or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1)
+is called to load the page content.
 
 **Type:** Rect
 
@@ -98,7 +111,9 @@ Whether the window is focusable. **true** if focusable, **false** otherwise.
 globalDisplayRect?: Rect
 ```
 
-Window size in the global coordinate system. In extended screen scenarios, the top-left corner of the primary screen is used as the coordinate origin. In virtual screen scenarios, the top-left corner of the virtual screen is used as the coordinate origin. The default value is [0, 0, 0, 0].
+Window size in the global coordinate system. In extended screen scenarios, the top-left corner of the primary
+screen is used as the coordinate origin. In virtual screen scenarios, the top-left corner of the virtual screen
+is used as the coordinate origin. The default value is [0, 0, 0, 0].
 
 **Type:** Rect
 
@@ -128,7 +143,8 @@ Window ID. The value is an integer.
 isFullScreen: boolean
 ```
 
-Whether the status bar is hidden when **isLayoutFullScreen** is set to **true**. If the status bar is hidden, the return value is **true**. In other cases, the return value is **false**.
+Whether the status bar is hidden when **isLayoutFullScreen** is set to **true**. If the status bar is hidden, the
+return value is **true**. In other cases, the return value is **false**.
 
 **Type:** boolean
 
@@ -160,7 +176,14 @@ Whether the screen is always on. **true** if always on, **false** otherwise.
 isLayoutFullScreen: boolean
 ```
 
-Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for a child window. If an immersive-layout is set for the child window, the return value is **true**. Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for the main window and the main window is in full-screen mode. If an immersive-layout is set for the main window and the main window is in full-screen mode, the return value is **true**. In other cases, the return value is **false**.
+Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for a child
+window. If an immersive-layout is set for the child window, the return value is **true**.
+
+Whether an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) is set for the main
+window and the main window is in full-screen mode. If an immersive-layout is set for the main window and the main
+window is in full-screen mode, the return value is **true**.
+
+In other cases, the return value is **false**.
 
 **Type:** boolean
 
@@ -176,7 +199,10 @@ Whether an [immersive layout](../../../../windowmanager/window-terminology.md#im
 isPrivacyMode: boolean
 ```
 
-Whether the window is in privacy mode. **true** if the window is in privacy mode, **false** otherwise. You can call [setWindowPrivacyMode()](arkts-arkui-window-i.md#setwindowprivacymode-2) to set the privacy mode of the window.
+Whether the window is in privacy mode. **true** if the window is in privacy mode, **false** otherwise. You can
+call
+[setWindowPrivacyMode()](arkts-arkui-window-i.md#setwindowprivacymode-2)
+to set the privacy mode of the window.
 
 **Type:** boolean
 
@@ -192,7 +218,10 @@ Whether the window is in privacy mode. **true** if the window is in privacy mode
 isRoundCorner: boolean
 ```
 
-Whether the window has rounded corners. **true** if the window has rounded corners; **false** otherwise. Note: This property is supported since API version 7 and deprecated since API version 9. Currently, no substitute is available.
+Whether the window has rounded corners. **true** if the window has rounded corners; **false** otherwise.
+
+Note: This property is supported since API version 7 and deprecated since API version 9. Currently, no substitute
+is available.
 
 **Type:** boolean
 
@@ -276,7 +305,9 @@ Window type.
 windowRect: Rect
 ```
 
-Window size, which can be obtained from the page lifecycle [onPageShow](@ohos.app.ability.UIAbility:UIAbility.onPageShow) or the application lifecycle [onForeground](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onforeground-1).
+Window size, which can be obtained from the page lifecycle
+[onPageShow](@ohos.app.ability.UIAbility:UIAbility.onPageShow) or the
+application lifecycle [onForeground](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onforeground-1).
 
 **Type:** Rect
 

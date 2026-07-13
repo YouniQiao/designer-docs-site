@@ -1,8 +1,10 @@
 # AnimatedDrawableDescriptor
 
-使用[Image](./@internal/component/ets/image)组件播放PixelMap数组或动图资源时传入 AnimatedDrawableDescriptor对象， 该对象继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult)。
+使用[Image](./@internal/component/ets/image)组件播放PixelMap数组或动图资源时传入
+AnimatedDrawableDescriptor对象，
+该对象继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
 
-**继承/实现关系：** AnimatedDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+**继承/实现关系：** AnimatedDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
 **起始版本：** 12
 
@@ -51,7 +53,7 @@ AnimatedDrawableDescriptor的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | ResourceStr \| Array&lt;image.PixelMap&gt; | 是 | 动图资源地址或者[PixelMap](@ohos.multimedia.image:image.PixelMap)对象构成的数组。<br/> ResourceStr当前支持的范围：应用资源Resource，沙箱路径（file://&lt;bundleName&gt;/&lt;sandboxPath&gt;），BASE64字符串。 |
+| src | ResourceStr \| Array&lt;image.PixelMap&gt; | 是 | 动图资源地址或者[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md)对象构成的数组。<br/> ResourceStr当前支持的范围：应用资源Resource，沙箱路径（file://&lt;bundleName&gt;/&lt;sandboxPath&gt;），BASE64字符串。 |
 | options | AnimationOptions | 否 | 动画控制参数。 |
 
 **示例：**
@@ -107,7 +109,7 @@ getAnimationController(id?: string): AnimationController | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | string | 否 | 组件的id。<br/>当[Image](./@internal/component/ets/image)组件与AnimatedDrawableDescriptor确保1比1持有（仅传入一个[Image](./@internal/component/ets/image)组件）时，id非必填；<br/>若同一AnimatedDrawableDescriptor需绑定多个[Image](./@internal/component/ets/image)组件，则必须设置唯一id以准确获取对应组件的动画控制器（唯一性由开发者保证）。<br/>此规则基于动画系统设计原则：动画数据可多组件共享，但各组件动画独立运行，AnimationController与组件严格1比1持有关系（一个组件一个AnimationController对象）。<br/>另外，[AnimatedDrawableDescriptor](arkts-arkui-animateddrawabledescriptor-c.md#animateddrawabledescriptor)支持不可见时自动暂停播放功能，详见[onVisibleAreaChange](../arkts-components/arkts-arkui-commonmethod-c.md#onvisibleareachange-1)。 |
+| id | string | 否 | 组件的id。<br/>当[Image](./@internal/component/ets/image)组件与AnimatedDrawableDescriptor确保1比1持有（仅传入一个[Image](./@internal/component/ets/image)组件）时，id非必填；<br/>若同一AnimatedDrawableDescriptor需绑定多个[Image](./@internal/component/ets/image)组件，则必须设置唯一id以准确获取对应组件的动画控制器（唯一性由开发者保证）。<br/>此规则基于动画系统设计原则：动画数据可多组件共享，但各组件动画独立运行，AnimationController与组件严格1比1持有关系（一个组件一个AnimationController对象）。<br/>另外，[AnimatedDrawableDescriptor](arkts-arkui-animateddrawabledescriptor-c.md)支持不可见时自动暂停播放功能，详见[onVisibleAreaChange](../arkts-components/arkts-arkui-commonmethod-c.md#onvisibleareachange-1)。 |
 
 **返回值：**
 

@@ -14,7 +14,8 @@ Enumerates the application flags, which indicate the type of application informa
 GET_APPLICATION_INFO_DEFAULT = 0x00000000
 ```
 
-Used to obtain the default application information. The obtained information does not contain the permission information or metadata.
+Used to obtain the default application information. The obtained information does not contain the permission
+information or metadata.
 
 **Since:** 9
 

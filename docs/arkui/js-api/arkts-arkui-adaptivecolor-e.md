@@ -12,7 +12,8 @@ Enumerates the adaptive color modes used for the background blur effect.
 DEFAULT = 0
 ```
 
-Adaptive color mode is not used. The default color is used as the mask color. Using a mode other than **DEFAULT** can be more time-consuming.
+Adaptive color mode is not used. The default color is used as the mask color. Using a mode other than **DEFAULT**
+can be more time-consuming.
 
 **Since:** 10
 

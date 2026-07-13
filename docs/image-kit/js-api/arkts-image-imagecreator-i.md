@@ -1,6 +1,15 @@
 # ImageCreator
 
-ImageCreator类，作为图片的生产者，用于将图片写入到Surface中。 在调用以下方法前需要先通过[image.createImageCreator]image.createImageCreator创建ImageCreator实例，ImageCreator不支持多线程。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release]image.ImageCreator.release(callback: AsyncCallback<void>)方法 及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
+The ImageCreator class provides APIs for applications to request an image data area and compile image data.
+
+Before calling any APIs in ImageCreator, you must use
+[image.createImageCreator](arkts-image-createimagecreator-f.md#createimagecreator-2)
+to create an ImageCreator instance. ImageCreator does not support multiple threads.
+
+Images occupy a large amount of memory. When you finish using an ImageCreator instance, call
+[release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before
+releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the
+instance is no longer needed.
 
 **Since:** 9
 
@@ -18,7 +27,8 @@ import { image } from '@kit.ImageKit';
 dequeueImage(callback: AsyncCallback<Image>): void
 ```
 
-从空闲队列中获取buffer图片，用于绘制UI内容。使用callback异步回调。
+Obtains an image buffer from the idle queue and writes image data into it. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -28,7 +38,7 @@ dequeueImage(callback: AsyncCallback<Image>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Image> | Yes | 回调函数，当获取最新图片成功，err为undefined，data为获取到的最新图片；否则为错误对象。 |
+| callback | AsyncCallback&lt;Image&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the latest image obtained; otherwise, **err** is an error object. |
 
 ## dequeueImage
 
@@ -36,7 +46,8 @@ dequeueImage(callback: AsyncCallback<Image>): void
 dequeueImage(): Promise<Image>
 ```
 
-从空闲队列中获取buffer图片，用于绘制UI内容。使用Promise异步回调。
+Obtains an image buffer from the idle queue and writes image data into it. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -46,7 +57,7 @@ dequeueImage(): Promise<Image>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Image> | Promise对象，返回最新图片。 |
+| Promise&lt;Image&gt; | Promise used to return the latest image. |
 
 ## off('imageRelease')
 
@@ -54,7 +65,8 @@ dequeueImage(): Promise<Image>
 off(type: 'imageRelease', callback?: AsyncCallback<void>): void
 ```
 
-释放buffer时，移除注册的回调函数。使用callback异步回调。
+Unregisters the callback function that is triggered when the buffer is released. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 13
 
@@ -64,26 +76,8 @@ off(type: 'imageRelease', callback?: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'imageRelease' | Yes | 监听事件类型，如'imageRelease'。 |
-| callback | AsyncCallback&lt;void> | No | 回调函数。当移除注册成功时，err为undefined，否则为错误对象。 |
-
-## offImageRelease
-
-```TypeScript
-offImageRelease(callback?: AsyncCallback<void>): void
-```
-
-Remove callback subscriptions when releasing buffer
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Image.ImageCreator
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | No |  |
+| type | 'imageRelease' | Yes | Type of event, which is **'imageRelease'**. |
+| callback | AsyncCallback&lt;void&gt; | No | Callback used to return the result. If the operation is successful,**err** is null; otherwise, **err** is an error object. |
 
 ## on('imageRelease')
 
@@ -91,7 +85,7 @@ Remove callback subscriptions when releasing buffer
 on(type: 'imageRelease', callback: AsyncCallback<void>): void
 ```
 
-监听imageRelease事件。使用callback异步回调。
+Listens for image release events. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -101,26 +95,8 @@ on(type: 'imageRelease', callback: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'imageRelease' | Yes | 监听事件类型，如'imageRelease'。 |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当监听事件触发成功，err为undefined，否则为错误对象。 |
-
-## onImageRelease
-
-```TypeScript
-onImageRelease(callback: AsyncCallback<void>): void
-```
-
-Subscribe callback when releasing buffer
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Image.ImageCreator
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the operation result. |
+| type | 'imageRelease' | Yes | Type of event, which is **'imageRelease'**. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 ## queueImage
 
@@ -128,7 +104,7 @@ Subscribe callback when releasing buffer
 queueImage(image: Image, callback: AsyncCallback<void>): void
 ```
 
-将绘制好的图片放入队列。使用callback异步回调。
+Places the drawn image in the queue. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -138,8 +114,8 @@ queueImage(image: Image, callback: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| image | Image | Yes | 绘制好的buffer图像。 |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当将图片放入队列成功，err为undefined，否则为错误对象。 |
+| image | Image | Yes | Drawn image. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 ## queueImage
 
@@ -147,7 +123,7 @@ queueImage(image: Image, callback: AsyncCallback<void>): void
 queueImage(image: Image): Promise<void>
 ```
 
-将绘制好的图片放入队列。使用Promise异步回调。
+Places the drawn image in the queue. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -157,13 +133,13 @@ queueImage(image: Image): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| image | Image | Yes | 绘制好的buffer图像。 |
+| image | Image | Yes | Drawn image. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## release
 
@@ -171,7 +147,13 @@ queueImage(image: Image): Promise<void>
 release(callback: AsyncCallback<void>): void
 ```
 
-释放当前图像。使用callback异步回调。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+Releases this ImageCreator instance. This API uses an asynchronous callback to return the result.
+
+Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the
+memory promptly.
+
+Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
+and the instance is no longer needed.
 
 **Since:** 9
 
@@ -181,7 +163,7 @@ release(callback: AsyncCallback<void>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | 回调函数，当图像释放成功，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 ## release
 
@@ -189,7 +171,13 @@ release(callback: AsyncCallback<void>): void
 release(): Promise<void>
 ```
 
-释放当前图像。使用Promise异步回调。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+Releases this ImageCreator instance. This API uses a promise to return the result.
+
+Images occupy a large amount of memory. When you finish using an ImageCreator instance, call this API to free the
+memory promptly.
+
+Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
+and the instance is no longer needed.
 
 **Since:** 9
 
@@ -199,7 +187,22 @@ release(): Promise<void>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+## capacity
+
+```TypeScript
+readonly capacity: number
+```
+
+Maximum number of images that can be accessed at the same time. This parameter is used only as an expected value.
+The actual capacity is determined by the device hardware.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.ImageCreator
 
 ## format
 
@@ -207,23 +210,9 @@ release(): Promise<void>
 readonly format: ImageFormat
 ```
 
-图像格式。
+Image format.
 
 **Type:** ImageFormat
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Image.ImageCreator
-
-## capacity
-
-```TypeScript
-readonly capacity: int
-```
-
-同时访问的图像数。该参数仅作为期望值，实际capacity由设备硬件决定。
-
-**Type:** int
 
 **Since:** 9
 

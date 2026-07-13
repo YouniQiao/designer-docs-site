@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { InsightIntentFunction,InsightIntentForm,InsightIntentLink,InsightIntentEntity,LinkParamCategory,InsightIntentPage,InsightIntentEntry,InsightIntentFunctionMethod } from '@kit.AbilityKit';
+import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightIntentEntity, LinkParamCategory, InsightIntentPage, InsightIntentEntry, InsightIntentFunctionMethod } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,18 +12,18 @@ import { InsightIntentFunction,InsightIntentForm,InsightIntentLink,InsightIntent
 
 | Name | Description |
 | --- | --- |
-| [EntryIntentDecoratorInfo](arkts-entryintentdecoratorinfo-i.md) | EntryIntentDecoratorInfo继承自[IntentDecoratorInfo]{@link IntentDecoratorInfo}，用于描述 [@InsightIntentEntry](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry) 装饰器支持的参数。 |
-| [FormIntentDecoratorInfo](arkts-formintentdecoratorinfo-i.md) | FormIntentDecoratorInfo继承自[IntentDecoratorInfo]{@link IntentDecoratorInfo}，用于描述 [@InsightIntentForm](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) 装饰器支持的参数。 |
-| [FunctionIntentDecoratorInfo](arkts-functionintentdecoratorinfo-i.md) | [@InsightIntentFunctionMethod](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) 装饰器的参数类型，当前全部属性均继承自[IntentDecoratorInfo]{@link IntentDecoratorInfo}。 |
-| [IntentDecoratorInfo](arkts-intentdecoratorinfo-i.md) | 意图装饰器的通用属性，用于定义意图的基本信息（包括意图名称、意图版本号）。适用于本模块的所有装饰器。 > **说明：** > > 如果根据schema与intentVersion字段，在标准意图列表存在匹配的标准意图，系统会将intentName、domain、llmDescription、keywords、parameters、result字段均设置为标准 > 意图的相应字段值。 |
-| [IntentEntityDecoratorInfo](arkts-intententitydecoratorinfo-i.md) | 用于描述 [@InsightIntentEntity](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) 装饰器支持的参数。 |
-| [LinkIntentDecoratorInfo](arkts-linkintentdecoratorinfo-i.md) | LinkIntentDecoratorInfo继承自[IntentDecoratorInfo]{@link IntentDecoratorInfo}，用于描述 [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器支持的参数，例如应用间跳转需要的uri信息。 |
-| [LinkIntentParamMapping](arkts-linkintentparammapping-i.md) | LinkIntentParamMapping是 [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器的意图参数和uri信息的映射。 |
-| [PageIntentDecoratorInfo](arkts-pageintentdecoratorinfo-i.md) | PageIntentDecoratorInfo继承自[IntentDecoratorInfo]{@link IntentDecoratorInfo}，用于描述 [@InsightIntentPage](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) 装饰器支持的参数，例如目标页面的 [NavDestination](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)名称。 |
+| [EntryIntentDecoratorInfo](arkts-ability-entryintentdecoratorinfo-i.md) | Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and is used to describe the parameters supported bythe[@InsightIntentEntry](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry) decorator. |
+| [FormIntentDecoratorInfo](arkts-ability-formintentdecoratorinfo-i.md) | Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and is used to describe the parameters supported bythe[@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) decorator. |
+| [FunctionIntentDecoratorInfo](arkts-ability-functionintentdecoratorinfo-i.md) | Parameter type of the[@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) decorator. All properties inherit from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md). |
+| [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) | Common properties for intent decorators, used to define basic information about an intent (including the intent nameand version number). It applies to all decorators provided by this module.&gt; **NOTE**&gt;&gt; If a matching intent is found in the standard intent list based on the **schema** and **intentVersion** fields, the&gt; system automatically populates the **intentName**, **domain**, **llmDescription**, **keywords**, **parameters**,&gt; and **result** fields with the values from the matching standard intent. |
+| [IntentEntityDecoratorInfo](arkts-ability-intententitydecoratorinfo-i.md) | Describes the parameters supported by the[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) decorator. |
+| [LinkIntentDecoratorInfo](arkts-ability-linkintentdecoratorinfo-i.md) | LinkIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and describes the parameterssupported by the[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator, such as the URI information required for application redirection. |
+| [LinkIntentParamMapping](arkts-ability-linkintentparammapping-i.md) | LinkIntentParamMapping defines the mapping between intent parameters and URI information for the[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator. |
+| [PageIntentDecoratorInfo](arkts-ability-pageintentdecoratorinfo-i.md) | PageIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and describes the parameterssupported by the[@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) decorator, such as the name of[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) of thetarget page. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [LinkParamCategory](arkts-linkparamcategory-e.md) | [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器的意图参数类别，用于定义意图参数的传递形式。 |
+| [LinkParamCategory](arkts-ability-linkparamcategory-e.md) | Enumerates the intent parameter categories available for the[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator. The enum is used to define how intent parameters should be passed. |
 

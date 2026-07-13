@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## getDLPGatheringPolicy
@@ -12,7 +12,9 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function getDLPGatheringPolicy(): Promise<GatheringPolicyType>
 ```
 
-Obtains the DLP sandbox gathering policy. This API uses a promise to return the result. This API is used to obtain the DLP sandbox gathering policy of the current system.
+Obtains the DLP sandbox gathering policy. This API uses a promise to return the result.
+
+This API is used to obtain the DLP sandbox gathering policy of the current system.
 
 **Since:** 10
 
@@ -57,7 +59,9 @@ dlpPermission.getDLPGatheringPolicy().then((gatheringPolicy: dlpPermission.Gathe
 function getDLPGatheringPolicy(callback: AsyncCallback<GatheringPolicyType>): void
 ```
 
-Obtains the DLP sandbox gathering policy. This API uses an asynchronous callback to return the result. This API is used to obtain the DLP sandbox gathering policy of the current system.
+Obtains the DLP sandbox gathering policy. This API uses an asynchronous callback to return the result.
+
+This API is used to obtain the DLP sandbox gathering policy of the current system.
 
 **Since:** 10
 

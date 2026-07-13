@@ -12,7 +12,13 @@ Provides the parameters of the gesture group handler.
 gestures: GestureHandler<TapGestureHandler | LongPressGestureHandler | PanGestureHandler | SwipeGestureHandler | PinchGestureHandler | RotationGestureHandler | GestureGroupHandler>[]
 ```
 
-Gestures to be included in a gesture group. **NOTE** To add both single-tap and double-tap gestures for a component, add two [TapGesture](TapGesture) instances as the [combined gestures](arkts-arkui-tapgesture-con.md#gesturegroup), with the double-tap gesture preceding the single-tap gesture. The gestures will not work correctly if this order is reversed.
+Gestures to be included in a gesture group.
+
+**NOTE**
+
+To add both single-tap and double-tap gestures for a component, add two [TapGesture](TapGesture) instances as
+the [combined gestures](arkts-arkui-tapgesture-con.md#gesturegroup), with the double-tap gesture preceding the single-tap gesture. The gestures
+will not work correctly if this order is reversed.
 
 **Type:** GestureHandler<TapGestureHandler | LongPressGestureHandler | PanGestureHandler | SwipeGestureHandler | PinchGestureHandler | RotationGestureHandler | GestureGroupHandler>[]
 
@@ -30,7 +36,9 @@ Gestures to be included in a gesture group. **NOTE** To add both single-tap and 
 mode: GestureMode
 ```
 
-Recognition mode of combined gestures. Default value: **GestureMode.Sequence**
+Recognition mode of combined gestures.
+
+Default value: **GestureMode.Sequence**
 
 **Type:** GestureMode
 

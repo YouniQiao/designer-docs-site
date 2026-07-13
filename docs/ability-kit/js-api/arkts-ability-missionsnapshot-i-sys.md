@@ -1,6 +1,8 @@
 # MissionSnapshot (System API)
 
-The module defines the snapshot of a mission. The snapshot can be obtained through [missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1) .
+The module defines the snapshot of a mission. The snapshot can be obtained through
+[missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1)
+.
 
 **Since:** 8
 

@@ -48,7 +48,8 @@ Indicates that an incoming call is ringing or waiting.
 CALL_STATE_OFFHOOK = 2
 ```
 
-Indicates that a least one call is in the dialing, active, or hold state, and there is no new incoming call ringing or waiting.
+Indicates that a least one call is in the dialing, active, or hold state, and there is no new
+incoming call ringing or waiting.
 
 **Since:** 6
 

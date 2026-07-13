@@ -1,6 +1,12 @@
 # NativeMediaPlayerHandler
 
-Implements a **NativeMediaPlayerHandler** object used as a parameter of the [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md#createnativemediaplayercallback) callback. The application uses this object to report the player status to the ArkWeb engine. > **NOTE** > > - The sample effect is subject to the actual device.
+Implements a **NativeMediaPlayerHandler** object used as a parameter of the
+[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) callback. The
+application uses this object to report the player status to the ArkWeb engine.
+
+> **NOTE**
+>
+> - The sample effect is subject to the actual device.
 
 **Since:** 12
 
@@ -9,7 +15,7 @@ Implements a **NativeMediaPlayerHandler** object used as a parameter of the [Cre
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## handleBufferedEndTimeChanged

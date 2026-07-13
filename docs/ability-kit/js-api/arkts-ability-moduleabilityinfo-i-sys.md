@@ -14,7 +14,8 @@ ModuleAbilityInfo: the ability info of a module.
 readonly exported: boolean
 ```
 
-Whether the ability can be invoked by other applications. **true** if it can be invoked by other applications, **false** otherwise.
+Whether the ability can be invoked by other applications. **true** if it can be invoked by other applications,
+**false** otherwise.
 
 **Type:** boolean
 

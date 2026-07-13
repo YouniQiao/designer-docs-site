@@ -6,7 +6,9 @@
 function getBundleInfoSync(bundleName: string, bundleFlags: number, userId: number): BundleInfo
 ```
 
-以同步方法根据给定的bundleName、bundleFlags和userId获取BundleInfo。 获取调用方自身的信息时不需要权限。
+以同步方法根据给定的bundleName、bundleFlags和userId获取BundleInfo。
+
+获取调用方自身的信息时不需要权限。
 
 **起始版本：** 14
 
@@ -33,7 +35,7 @@ function getBundleInfoSync(bundleName: string, bundleFlags: number, userId: numb
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 | [17700026](../errorcode-bundle.md#17700026-指定应用被禁用) | The specified bundle is disabled. |
@@ -66,7 +68,9 @@ try {
 function getBundleInfoSync(bundleName: string, bundleFlags: number): BundleInfo
 ```
 
-以同步方法根据给定的bundleName、bundleFlags获取调用方所在用户下的BundleInfo。 获取调用方自身的信息时不需要权限。
+以同步方法根据给定的bundleName、bundleFlags获取调用方所在用户下的BundleInfo。
+
+获取调用方自身的信息时不需要权限。
 
 **起始版本：** 14
 
@@ -92,7 +96,7 @@ function getBundleInfoSync(bundleName: string, bundleFlags: number): BundleInfo
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700026](../errorcode-bundle.md#17700026-指定应用被禁用) | The specified bundle is disabled. |
 

@@ -5,7 +5,9 @@ declare type DataOperation =
   DataAddOperation | DataDeleteOperation | DataChangeOperation | DataMoveOperation | DataExchangeOperation | DataReloadOperation
 ```
 
-定义数据操作类型。 > **说明**
+定义数据操作类型。
+
+> **说明**
 
 **起始版本：** 12
 

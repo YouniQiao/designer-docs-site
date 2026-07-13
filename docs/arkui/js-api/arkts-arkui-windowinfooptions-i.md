@@ -9,7 +9,7 @@ Filter criteria for window information.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## excludeSystemWindows
@@ -18,7 +18,9 @@ import { window } from '@ohos.window';
 excludeSystemWindows?: boolean
 ```
 
-Whether the result excludes system windows. If true, the result list does not include system windows; if false, the result list includes system windows.
+Whether the result excludes system windows.
+If true, the result list does not include system windows;
+if false, the result list includes system windows.
 
 **Type:** boolean
 
@@ -38,7 +40,8 @@ Whether the result excludes system windows. If true, the result list does not in
 foregroundAboveWindow?: number
 ```
 
-Only include windows with a higher z-order than the specified window ID. When this field is set to the default value 0, this field is not used as a filter criterion.
+Only include windows with a higher z-order than the specified window ID.
+When this field is set to the default value 0, this field is not used as a filter criterion.
 
 **Type:** number
 
@@ -58,7 +61,8 @@ Only include windows with a higher z-order than the specified window ID. When th
 foregroundBelowWindow?: number
 ```
 
-Only include windows with a lower z-order than the specified window ID. When this field is set to the default value 0, this field is not used as a filter criterion.
+Only include windows with a lower z-order than the specified window ID.
+When this field is set to the default value 0, this field is not used as a filter criterion.
 
 **Type:** number
 

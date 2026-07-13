@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { uiAppearance } from '@ohos.uiAppearance';
+import { uiAppearance } from '@kit.ArkUI';
 ```
 
 ## setFontWeightScale
@@ -12,7 +12,9 @@ import { uiAppearance } from '@ohos.uiAppearance';
 function setFontWeightScale(fontWeightScale: number): Promise<void>
 ```
 
-Sets the system font weight scale. **Permission required**: ohos.permission.UPDATE_CONFIGURATION
+Sets the system font weight scale.
+
+**Permission required**: ohos.permission.UPDATE_CONFIGURATION
 
 **Since:** 12
 

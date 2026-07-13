@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { shortKey } from '@ohos.multimodalInput.shortKey';
+import { shortKey } from '@kit.InputKit';
 ```
 
 ## setKeyDownDuration
@@ -12,7 +12,8 @@ import { shortKey } from '@ohos.multimodalInput.shortKey';
 function setKeyDownDuration(businessKey: string, delay: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the delay for starting an ability using shortcut keys. This API uses an asynchronous callback to return the result.
+Sets the delay for starting an ability using shortcut keys. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

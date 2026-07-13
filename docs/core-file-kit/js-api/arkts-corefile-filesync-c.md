@@ -1,6 +1,7 @@
 # FileSync
 
-Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit. Before using the APIs of this class, you need to create a **FileSync** instance.
+Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.
+Before using the APIs of this class, you need to create a **FileSync** instance.
 
 **Since:** 12
 
@@ -9,7 +10,7 @@ Provides APIs for the file manager application to perform device-cloud sync of t
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -301,7 +302,9 @@ fileSync.start((err: BusinessError) => {
 stop(): Promise<void>
 ```
 
-Stops device-cloud sync of a file. This API uses a promise to return the result. Calling **stop** will stop the sync process. To resume the sync, call [start](arkts-corefile-filesync-c.md#start-1).
+Stops device-cloud sync of a file. This API uses a promise to return the result.
+
+Calling **stop** will stop the sync process. To resume the sync, call [start](arkts-corefile-filesync-c.md#start-1).
 
 **Since:** 12
 
@@ -341,7 +344,9 @@ fileSync.stop().then(() => {
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops device-cloud sync of a file. This API uses an asynchronous callback to return the result. Calling **stop** will stop the sync process. To resume the sync, call [start](arkts-corefile-filesync-c.md#start-1).
+Stops device-cloud sync of a file. This API uses an asynchronous callback to return the result.
+
+Calling **stop** will stop the sync process. To resume the sync, call [start](arkts-corefile-filesync-c.md#start-1).
 
 **Since:** 12
 

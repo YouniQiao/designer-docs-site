@@ -24,7 +24,9 @@ Normal latency mode.
 AUDIO_LATENCY_MODE_FAST = 1
 ```
 
-Low latency mode. This mode is applicable to short audio files. A long audio file may be truncated in this mode. It functions the same as [SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool).
+Low latency mode. This mode is applicable to short audio files. A long audio file may be truncated in this mode.
+It functions the same as
+[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool).
 
 **Since:** 11
 

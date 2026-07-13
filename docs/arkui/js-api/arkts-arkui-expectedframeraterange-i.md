@@ -12,7 +12,9 @@ Sets the expected frame rate range for an animation.
 expected: number
 ```
 
-Expected optimal frame rate, in fps. The value range is [**min**, **max**]. When this parameter is set to **0**, the frame rate of the app is used.
+Expected optimal frame rate, in fps.
+
+The value range is [**min**, **max**]. When this parameter is set to **0**, the frame rate of the app is used.
 
 **Type:** number
 
@@ -30,7 +32,9 @@ Expected optimal frame rate, in fps. The value range is [**min**, **max**]. When
 max: number
 ```
 
-Expected maximum frame rate, in fps. The value range is [**min**, Maximum frame rate of the device].
+Expected maximum frame rate, in fps.
+
+The value range is [**min**, Maximum frame rate of the device].
 
 **Type:** number
 
@@ -48,7 +52,9 @@ Expected maximum frame rate, in fps. The value range is [**min**, Maximum frame 
 min: number
 ```
 
-Expected minimum frame rate, in fps. The value range is [0, Maximum frame rate of the device].
+Expected minimum frame rate, in fps.
+
+The value range is [0, Maximum frame rate of the device].
 
 **Type:** number
 

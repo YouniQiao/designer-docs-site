@@ -44,7 +44,11 @@ finishTransition(): void
 updateTransition?(progress: number): void
 ```
 
-更新交互转场动画进度(不可交互动画不支持动画进度设置)。 > **说明：** > > 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
+更新交互转场动画进度(不可交互动画不支持动画进度设置)。
+
+> **说明：**
+>
+> 不建议在[aboutToAppear](arkts-arkui-basecustomcomponent-c.md#abouttoappear-1)中使用栈操作，此时的页面还未构建完成，会导致白屏或跳转失败等问题。
 
 **起始版本：** 12
 
@@ -84,7 +88,11 @@ from: NavContentInfo
 isInteractive?: boolean
 ```
 
-本次转场动画是否为可交互转场。 true：本次转场动画是可交互转场；false：本次转场动画不是可交互转场。 默认值：false
+本次转场动画是否为可交互转场。
+
+true：本次转场动画是可交互转场；false：本次转场动画不是可交互转场。
+
+默认值：false
 
 **类型：** boolean
 

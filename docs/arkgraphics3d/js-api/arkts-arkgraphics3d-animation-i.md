@@ -2,7 +2,7 @@
 
 Animation resource.
 
-**Inheritance/Implementation:** Animation extends [SceneResource](arkts-arkgraphics3d-sceneresource-i.md#sceneresource)
+**Inheritance/Implementation:** Animation extends [SceneResource](arkts-arkgraphics3d-sceneresource-i.md)
 
 **Since:** 12
 
@@ -184,7 +184,8 @@ Whether the animation is running.
 speed?: number
 ```
 
-Animation speed factor A negative value runs the animation in reverse using the given speed factor
+Animation speed factor
+A negative value runs the animation in reverse using the given speed factor
 
 **Type:** number
 

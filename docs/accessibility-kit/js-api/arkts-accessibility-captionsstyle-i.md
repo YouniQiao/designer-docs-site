@@ -15,54 +15,48 @@ import { accessibility } from '@kit.AccessibilityKit';
 ## backgroundColor
 
 ```TypeScript
-backgroundColor: int | string
+backgroundColor: number | string
 ```
 
-Background color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+Background color of captions.
 
-**Type:** int | string
+**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
+
+**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
+
+Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+
+**Type:** number | string
 
 **Since:** 8
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
 
-## fontFamily
+## fontColor
 
 ```TypeScript
-fontFamily: CaptionsFontFamily
+fontColor: number | string
 ```
 
-Font family of captions.
+Font color of captions.
 
-**Type:** CaptionsFontFamily
+**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
+
+**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
+
+Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+
+**Type:** number | string
 
 **Since:** 8
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
-
-## windowColor
-
-```TypeScript
-windowColor: int | string
-```
-
-Window color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
-
-**Type:** int | string
-
-**Since:** 8
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
 
@@ -78,45 +72,69 @@ Font edge type of captions.
 
 **Since:** 8
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
+
+## fontFamily
+
+```TypeScript
+fontFamily: CaptionsFontFamily
+```
+
+Font family of captions.
+
+**Type:** CaptionsFontFamily
+
+**Since:** 8
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
 
 ## fontScale
 
 ```TypeScript
-fontScale: int
+fontScale: number
 ```
 
 Font scale factor of captions, in percentage. The value ranges from 1 to 200.
 
-**Type:** int
+**Type:** number
 
 **Since:** 8
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
 
-## fontColor
+## windowColor
 
 ```TypeScript
-fontColor: int | string
+windowColor: number | string
 ```
 
-Font color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+Window color of captions.
 
-**Type:** int | string
+**number**: HEX format, used to represent colors defined in either the RGB or ARGB color models.
+
+**string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format.
+
+Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+
+**Type:** number | string
 
 **Since:** 8
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Hearing
 

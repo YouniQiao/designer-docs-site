@@ -11,7 +11,7 @@ The HDR-adaptive darken blender.
 ## Modules to Import
 
 ```TypeScript
-import { uiEffect } from '@ohos.graphics.uiEffect';
+import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
 ## grayscaleFactor
@@ -20,7 +20,8 @@ import { uiEffect } from '@ohos.graphics.uiEffect';
 grayscaleFactor?: [number, number, number]
 ```
 
-Defines the grayscale factor for converting dst's RGB channels to grayscale. Formula: grayscale = dot(grayscaleFactor, dst).
+Defines the grayscale factor for converting dst's RGB channels to grayscale.
+Formula: grayscale = dot(grayscaleFactor, dst).
 
 **Type:** [number, number, number]
 

@@ -1,6 +1,6 @@
-# HdrDecomposeOptions
+# HdrDecomposeOptions (System API)
 
-HDR PixelMap分解为Picture的配置选项，分解后的Picture包含一张SDR主图和一张增益图（GainMap）。
+Describes the options for decomposing an HDR Pixelmap to a Picture containing an SDR PixelMap and a gainmap.
 
 **Since:** 26.0.0
 
@@ -20,13 +20,15 @@ import { image } from '@kit.ImageKit';
 desiredPixelFormat?: PixelMapFormat
 ```
 
-分解后SDR PixelMap和增益图的像素格式。支持RGBA_8888、NV12、NV21。默认值为RGBA_8888。
+Indicates the pixel format of the decomposed SDR Pixelmap and the gainmap. The formats of
+RGBA_8888\NV12\NV21 are supported.
+Default value: RGBA_8888.
 
 **Type:** PixelMapFormat
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -38,13 +40,14 @@ desiredPixelFormat?: PixelMapFormat
 isFullSizeGainmap?: boolean
 ```
 
-是否生成全尺寸增益图。 true表示生成全尺寸增益图，增益图尺寸和主图一致；false表示不生成全尺寸增益图，增益图尺寸是主图的一半。默认值为false。
+Indicates generating a full-size gainmap or a 1/2 downscaled gainmap.
+Default value: false.
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

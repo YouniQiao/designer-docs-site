@@ -12,7 +12,13 @@
 addAccount(name: string, callback: AsyncCallback<void>): void
 ```
 
-根据账号名添加应用账号。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-1)替 > 代。
+根据账号名添加应用账号。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-1)替
+> 代。
 
 **起始版本：** 7
 
@@ -46,7 +52,13 @@ appAccountManager.addAccount('WangWu', (err: BusinessError) => {
 addAccount(name: string, extraInfo: string, callback: AsyncCallback<void>): void
 ```
 
-根据账号名和额外信息添加应用账号。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-2) > 替代。
+根据账号名和额外信息添加应用账号。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -81,7 +93,12 @@ appAccountManager.addAccount('LiSi', 'token101', (err: BusinessError) => {
 addAccount(name: string, extraInfo?: string): Promise<void>
 ```
 
-根据账号名和额外信息添加应用账号。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-3) > 替代。
+根据账号名和额外信息添加应用账号。使用Promise异步回调。
+
+> **说明：**
+> > 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-3)
+> 替代。
 
 **起始版本：** 7
 
@@ -128,7 +145,13 @@ addAccountImplicitly(
     ): void
 ```
 
-根据指定的账号所有者隐式地添加应用账号。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [createAccountImplicitly](arkts-basicservices-appaccountmanager-i.md#createaccountimplicitly-1) > 替代。
+根据指定的账号所有者隐式地添加应用账号。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [createAccountImplicitly](arkts-basicservices-appaccountmanager-i.md#createaccountimplicitly-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -214,7 +237,7 @@ auth(name: string, owner: string, authType: string, callback: AuthCallback): voi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or authType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -301,7 +324,7 @@ auth(
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner, authType or options. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -371,7 +394,13 @@ authenticate(
     ): void
 ```
 
-对应用账号进行鉴权以获取授权令牌。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [auth](arkts-basicservices-appaccountmanager-i.md#auth-1) > 替代。
+对应用账号进行鉴权以获取授权令牌。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [auth](arkts-basicservices-appaccountmanager-i.md#auth-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -458,7 +487,7 @@ checkAccountLabels(name: string, owner: string, labels: Array<string>, callback:
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or labels. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -518,7 +547,7 @@ checkAccountLabels(name: string, owner: string, labels: Array<string>): Promise<
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or labels. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -570,7 +599,7 @@ checkAppAccess(name: string, bundleName: string, callback: AsyncCallback<boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -625,7 +654,7 @@ checkAppAccess(name: string, bundleName: string): Promise<boolean>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -654,7 +683,13 @@ try {
 checkAppAccountSyncEnable(name: string, callback: AsyncCallback<boolean>): void
 ```
 
-检查指定应用账号是否开启数据同步功能。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-1) > 替代。
+检查指定应用账号是否开启数据同步功能。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -694,7 +729,12 @@ appAccountManager.checkAppAccountSyncEnable('ZhangSan', (err: BusinessError, res
 checkAppAccountSyncEnable(name: string): Promise<boolean>
 ```
 
-检查指定应用账号是否开启数据同步功能。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-2)替代。
+检查指定应用账号是否开启数据同步功能。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-2)替代。
 
 **起始版本：** 7
 
@@ -756,7 +796,7 @@ checkAuthTokenVisibility(name: string, authType: string, bundleName: string, cal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, authType or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -813,7 +853,7 @@ checkAuthTokenVisibility(name: string, authType: string, bundleName: string): Pr
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, authType or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -864,7 +904,7 @@ checkDataSyncEnabled(name: string, callback: AsyncCallback<boolean>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -920,7 +960,7 @@ checkDataSyncEnabled(name: string): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -954,7 +994,13 @@ checkOAuthTokenVisibility(
     ): void
 ```
 
-检查指定应用账号的特定鉴权类型的授权令牌对指定应用的可见性。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-1) > 替代。
+检查指定应用账号的特定鉴权类型的授权令牌对指定应用的可见性。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -995,7 +1041,13 @@ appAccountManager.checkOAuthTokenVisibility('LiSi', 'getSocialData', 'com.exampl
 checkOAuthTokenVisibility(name: string, authType: string, bundleName: string): Promise<boolean>
 ```
 
-检查指定应用账号的特定鉴权类型的授权令牌对指定应用的可见性。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-2) > 替代。
+检查指定应用账号的特定鉴权类型的授权令牌对指定应用的可见性。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-2)
+> 替代。
 
 **起始版本：** 8
 
@@ -1056,7 +1108,7 @@ createAccount(name: string, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-账号已存在) | Account already exists. |
@@ -1106,7 +1158,7 @@ createAccount(name: string, options: CreateAccountOptions, callback: AsyncCallba
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or options. |
 | [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-账号已存在) | Account already exists. |
@@ -1166,7 +1218,7 @@ createAccount(name: string, options?: CreateAccountOptions): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or options. |
 | [12300004](../../apis-basic-services-kit/errorcode-account.md#12300004-账号已存在) | Account already exists. |
@@ -1218,7 +1270,7 @@ createAccountImplicitly(owner: string, callback: AuthCallback): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-账号数量已达上限) | The number of accounts reaches the upper limit. |
@@ -1296,7 +1348,7 @@ createAccountImplicitly(owner: string, options: CreateAccountImplicitlyOptions, 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner or options. |
 | [12300007](../../apis-basic-services-kit/errorcode-account.md#12300007-账号数量已达上限) | The number of accounts reaches the upper limit. |
@@ -1360,7 +1412,13 @@ struct Index {
 deleteAccount(name: string, callback: AsyncCallback<void>): void
 ```
 
-删除应用账号。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-1)替 > 代。
+删除应用账号。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-1)替
+> 代。
 
 **起始版本：** 7
 
@@ -1394,7 +1452,13 @@ appAccountManager.deleteAccount('ZhaoLiu', (err: BusinessError) => {
 deleteAccount(name: string): Promise<void>
 ```
 
-删除应用账号。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-2)替 > 代。
+删除应用账号。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-2)替
+> 代。
 
 **起始版本：** 7
 
@@ -1455,7 +1519,7 @@ deleteAuthToken(name: string, owner: string, authType: string, token: string, ca
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner, authType or token. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -1513,7 +1577,7 @@ deleteAuthToken(name: string, owner: string, authType: string, token: string): P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner, authType or token. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -1561,7 +1625,7 @@ deleteCredential(name: string, credentialType: string, callback: AsyncCallback<v
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or credentialType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -1616,7 +1680,7 @@ deleteCredential(name: string, credentialType: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or credentialType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -1646,7 +1710,13 @@ try {
 deleteOAuthToken(name: string, owner: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-删除指定应用账号的特定鉴权类型的授权令牌。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-1) > 替代。
+删除指定应用账号的特定鉴权类型的授权令牌。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -1688,7 +1758,13 @@ appAccountManager.deleteOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSoci
 deleteOAuthToken(name: string, owner: string, authType: string, token: string): Promise<void>
 ```
 
-删除指定应用账号的特定鉴权类型的授权令牌。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-2) > 替代。
+删除指定应用账号的特定鉴权类型的授权令牌。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-2)
+> 替代。
 
 **起始版本：** 8
 
@@ -1732,7 +1808,13 @@ appAccountManager.deleteOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSoci
 disableAppAccess(name: string, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-禁止指定第三方应用账号名称对指定的第三方应用进行访问。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1) > 替代。
+禁止指定第三方应用账号名称对指定的第三方应用进行访问。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -1767,7 +1849,13 @@ appAccountManager.disableAppAccess('ZhangSan', 'com.example.accountjsdemo', (err
 disableAppAccess(name: string, bundleName: string): Promise<void>
 ```
 
-禁止指定第三方应用账号名称对指定包名称的第三方应用进行访问。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2) > 替代。
+禁止指定第三方应用账号名称对指定包名称的第三方应用进行访问。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -1809,7 +1897,13 @@ appAccountManager.disableAppAccess('ZhangSan', 'com.example.accountjsdemo').then
 enableAppAccess(name: string, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-允许指定第三方应用账号名称对指定包名称的第三方应用进行访问。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1) > 替代。
+允许指定第三方应用账号名称对指定包名称的第三方应用进行访问。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -1848,7 +1942,13 @@ appAccountManager.enableAppAccess('ZhangSan', 'com.example.accountjsdemo', (err:
 enableAppAccess(name: string, bundleName: string): Promise<void>
 ```
 
-允许指定第三方应用账号的名称对指定包名称的第三方应用进行访问。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2) > 替代。
+允许指定第三方应用账号的名称对指定包名称的第三方应用进行访问。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -1890,7 +1990,13 @@ appAccountManager.enableAppAccess('ZhangSan', 'com.example.accountjsdemo').then(
 getAccountCredential(name: string, credentialType: string, callback: AsyncCallback<string>): void
 ```
 
-获取指定应用账号的凭据。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-1) > 替代。
+获取指定应用账号的凭据。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -1929,7 +2035,12 @@ appAccountManager.getAccountCredential('ZhangSan', 'credentialType001', (err: Bu
 getAccountCredential(name: string, credentialType: string): Promise<string>
 ```
 
-获取指定应用账号的凭据。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-2)替代。
+获取指定应用账号的凭据。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-2)替代。
 
 **起始版本：** 7
 
@@ -1971,7 +2082,13 @@ appAccountManager.getAccountCredential('ZhangSan', 'credentialType001').then((da
 getAccountExtraInfo(name: string, callback: AsyncCallback<string>): void
 ```
 
-获取指定应用账号的额外信息（能转换成string类型的其它信息）。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1) > 替代。
+获取指定应用账号的额外信息（能转换成string类型的其它信息）。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -2009,7 +2126,12 @@ appAccountManager.getAccountExtraInfo('ZhangSan', (err: BusinessError, result: s
 getAccountExtraInfo(name: string): Promise<string>
 ```
 
-获取指定应用账号的额外信息（能转换成string类型的其它信息）。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2)替代。
+获取指定应用账号的额外信息（能转换成string类型的其它信息）。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2)替代。
 
 **起始版本：** 7
 
@@ -2050,7 +2172,12 @@ appAccountManager.getAccountExtraInfo('ZhangSan').then((data: string) => {
 getAccountsByOwner(owner: string, callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-根据应用账号所有者获取调用方可访问的应用账号列表。使用callback异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权，或 <br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
+根据应用账号所有者获取调用方可访问的应用账号列表。使用callback异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权，或
+<br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
 
 **起始版本：** 9
 
@@ -2098,7 +2225,12 @@ try {
 getAccountsByOwner(owner: string): Promise<Array<AppAccountInfo>>
 ```
 
-根据应用账号所有者获取调用方可访问的应用账号列表。使用Promise异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权，或 <br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
+根据应用账号所有者获取调用方可访问的应用账号列表。使用Promise异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权，或
+<br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
 
 **起始版本：** 9
 
@@ -2149,7 +2281,17 @@ try {
 getAllAccessibleAccounts(callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-获取所有可访问的应用账号信息。使用callback异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-1) > 替代。
+获取所有可访问的应用账号信息。使用callback异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -2188,7 +2330,16 @@ appAccountManager.getAllAccessibleAccounts((err: BusinessError, data: appAccount
 getAllAccessibleAccounts(): Promise<Array<AppAccountInfo>>
 ```
 
-获取所有可访问的应用账号信息。使用Promise异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用[getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-2) > 替代。
+获取所有可访问的应用账号信息。使用Promise异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用[getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -2225,7 +2376,12 @@ appAccountManager.getAllAccessibleAccounts().then((data: appAccount.AppAccountIn
 getAllAccounts(callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-获取所有可访问的应用账号信息。使用callback异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权，或 <br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
+获取所有可访问的应用账号信息。使用callback异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权，或
+<br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
 
 **起始版本：** 9
 
@@ -2241,7 +2397,7 @@ getAllAccounts(callback: AsyncCallback<Array<AppAccountInfo>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 
 **示例：**
@@ -2270,7 +2426,12 @@ try {
 getAllAccounts(): Promise<Array<AppAccountInfo>>
 ```
 
-获取所有可访问的应用账号信息。使用Promise异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权，或 <br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
+获取所有可访问的应用账号信息。使用Promise异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权，或
+<br> 已获得ohos.permission.GET_ALL_APP_ACCOUNTS权限。
 
 **起始版本：** 9
 
@@ -2312,7 +2473,17 @@ try {
 getAllAccounts(owner: string, callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-根据应用账号所有者获取调用方可访问的应用账号列表。使用callback异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-1) > 替代。
+根据应用账号所有者获取调用方可访问的应用账号列表。使用callback异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -2353,7 +2524,16 @@ appAccountManager.getAllAccounts(selfBundle, (err: BusinessError, data: appAccou
 getAllAccounts(owner: string): Promise<Array<AppAccountInfo>>
 ```
 
-根据应用账号所有者获取调用方可访问的应用账号列表。使用Promise异步回调。 此方法适用于以下账户： <br> 本应用的账户。 <br> 第三方应用的账户。要获取此类信息， <br> 您的应用必须已获得第三方应用的授权。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-2)替代。
+根据应用账号所有者获取调用方可访问的应用账号列表。使用Promise异步回调。
+此方法适用于以下账户：
+<br> 本应用的账户。
+<br> 第三方应用的账户。要获取此类信息，
+<br> 您的应用必须已获得第三方应用的授权。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-2)替代。
 
 **起始版本：** 7
 
@@ -2415,7 +2595,7 @@ getAllAuthTokens(name: string, owner: string, callback: AsyncCallback<Array<Auth
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or owner. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -2470,7 +2650,7 @@ getAllAuthTokens(name: string, owner: string): Promise<Array<AuthTokenInfo>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or owner. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -2500,7 +2680,13 @@ try {
 getAllOAuthTokens(name: string, owner: string, callback: AsyncCallback<Array<OAuthTokenInfo>>): void
 ```
 
-获取指定账号对调用方可见的所有授权令牌。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-1) > 替代。
+获取指定账号对调用方可见的所有授权令牌。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -2540,7 +2726,12 @@ appAccountManager.getAllOAuthTokens('LiSi', 'com.example.accountjsdemo',
 getAllOAuthTokens(name: string, owner: string): Promise<Array<OAuthTokenInfo>>
 ```
 
-获取指定账号对调用方可见的所有授权令牌。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-2)替代。
+获取指定账号对调用方可见的所有授权令牌。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-2)替代。
 
 **起始版本：** 8
 
@@ -2583,7 +2774,13 @@ appAccountManager.getAllOAuthTokens('LiSi', 'com.example.accountjsdemo').then((
 getAssociatedData(name: string, key: string, callback: AsyncCallback<string>): void
 ```
 
-根据指定键名获取特定应用账号的关联数据。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1) > 替代。
+根据指定键名获取特定应用账号的关联数据。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -2622,7 +2819,12 @@ appAccountManager.getAssociatedData('ZhangSan', 'k001', (err: BusinessError, res
 getAssociatedData(name: string, key: string): Promise<string>
 ```
 
-获取与此应用程序账号关联的数据。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2)替代。
+获取与此应用程序账号关联的数据。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2)替代。
 
 **起始版本：** 7
 
@@ -2681,7 +2883,7 @@ getAuthCallback(sessionId: string, callback: AsyncCallback<AuthCallback>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid sessionId. |
 | [12300108](../../apis-basic-services-kit/errorcode-account.md#12300108-认证会话不存在) | Session not found. |
@@ -2750,7 +2952,7 @@ getAuthCallback(sessionId: string): Promise<AuthCallback>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid sessionId. |
 | [12300108](../../apis-basic-services-kit/errorcode-account.md#12300108-认证会话不存在) | Session not found. |
@@ -2795,7 +2997,9 @@ export default class EntryAbility extends UIAbility {
 getAuthList(name: string, authType: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过 [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) 来设置）。使用callback异步回调。
+获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过
+[setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+来设置）。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -2813,7 +3017,7 @@ getAuthList(name: string, authType: string, callback: AsyncCallback<Array<string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or authType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -2845,7 +3049,9 @@ try {
 getAuthList(name: string, authType: string): Promise<Array<string>>
 ```
 
-获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过 [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) 来设置）。使用Promise异步回调。
+获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过
+[setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+来设置）。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -2868,7 +3074,7 @@ getAuthList(name: string, authType: string): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or authType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -2917,7 +3123,7 @@ getAuthToken(name: string, owner: string, authType: string, callback: AsyncCallb
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or authType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -2974,7 +3180,7 @@ getAuthToken(name: string, owner: string, authType: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or authType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3004,7 +3210,13 @@ try {
 getAuthenticatorCallback(sessionId: string, callback: AsyncCallback<AuthenticatorCallback>): void
 ```
 
-获取鉴权会话的认证器回调。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-1) > 替代。
+获取鉴权会话的认证器回调。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -3054,7 +3266,12 @@ export default class EntryAbility extends UIAbility {
 getAuthenticatorCallback(sessionId: string): Promise<AuthenticatorCallback>
 ```
 
-获取鉴权会话的认证器回调。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-2)替代。
+获取鉴权会话的认证器回调。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-2)替代。
 
 **起始版本：** 8
 
@@ -3107,7 +3324,13 @@ export default class EntryAbility extends UIAbility {
 getAuthenticatorInfo(owner: string, callback: AsyncCallback<AuthenticatorInfo>): void
 ```
 
-获取指定应用的认证器信息。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-1) > 替代。
+获取指定应用的认证器信息。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -3146,7 +3369,12 @@ appAccountManager.getAuthenticatorInfo('com.example.accountjsdemo',
 getAuthenticatorInfo(owner: string): Promise<AuthenticatorInfo>
 ```
 
-获取指定应用的认证器信息。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-2)替代。
+获取指定应用的认证器信息。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-2)替代。
 
 **起始版本：** 8
 
@@ -3206,7 +3434,7 @@ getCredential(name: string, credentialType: string, callback: AsyncCallback<stri
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or credentialType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3261,7 +3489,7 @@ getCredential(name: string, credentialType: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or credentialType. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3309,7 +3537,7 @@ getCustomData(name: string, key: string, callback: AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or key. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3364,7 +3592,7 @@ getCustomData(name: string, key: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or key. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3417,7 +3645,7 @@ getCustomDataSync(name: string, key: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or key. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3444,7 +3672,15 @@ try {
 getOAuthList(name: string, authType: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过 [setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1) 来设置）。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-1) > 替代。
+获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过
+[setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1)
+来设置）。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -3483,7 +3719,14 @@ appAccountManager.getOAuthList('LiSi', 'getSocialData', (err: BusinessError, dat
 getOAuthList(name: string, authType: string): Promise<Array<string>>
 ```
 
-获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过 [setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1) 来设置）。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-2)替代。
+获取指定应用账号的特定鉴权类型的授权列表，即被授权的包名数组（令牌的授权列表通过
+[setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1)
+来设置）。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-2)替代。
 
 **起始版本：** 8
 
@@ -3525,7 +3768,13 @@ appAccountManager.getOAuthList('LiSi', 'getSocialData').then((data: string[]) =>
 getOAuthToken(name: string, owner: string, authType: string, callback: AsyncCallback<string>): void
 ```
 
-获取指定应用账号的特定鉴权类型的授权令牌。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-1) > 替代。
+获取指定应用账号的特定鉴权类型的授权令牌。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -3566,7 +3815,13 @@ appAccountManager.getOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSocialD
 getOAuthToken(name: string, owner: string, authType: string): Promise<string>
 ```
 
-获取指定应用账号的特定鉴权类型的授权令牌。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-2)替 > 代。
+获取指定应用账号的特定鉴权类型的授权令牌。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-2)替
+> 代。
 
 **起始版本：** 8
 
@@ -3609,7 +3864,13 @@ appAccountManager.getOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSocialD
 off(type: 'change', callback?: Callback<Array<AppAccountInfo>>): void
 ```
 
-取消订阅账号信息变更事件。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [off('accountChange')](arkts-basicservices-appaccountmanager-i.md#off-2) > 替代。
+取消订阅账号信息变更事件。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [off('accountChange')](arkts-basicservices-appaccountmanager-i.md#off-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -3670,7 +3931,7 @@ off(type: 'accountChange', callback?: Callback<Array<AppAccountInfo>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid type. |
 
@@ -3704,7 +3965,13 @@ try {
 on(type: 'change', owners: Array<string>, callback: Callback<Array<AppAccountInfo>>): void
 ```
 
-订阅指定应用的账号信息变更事件。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [on('accountChange')](arkts-basicservices-appaccountmanager-i.md#on-2) > 替代。
+订阅指定应用的账号信息变更事件。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [on('accountChange')](arkts-basicservices-appaccountmanager-i.md#on-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -3809,7 +4076,7 @@ queryAuthenticatorInfo(owner: string, callback: AsyncCallback<AuthenticatorInfo>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner. |
 | [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-认证服务不存在) | Authenticator service not found. |
@@ -3863,7 +4130,7 @@ queryAuthenticatorInfo(owner: string): Promise<AuthenticatorInfo>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner. |
 | [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-认证服务不存在) | Authenticator service not found. |
@@ -3910,7 +4177,7 @@ removeAccount(name: string, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -3963,7 +4230,7 @@ removeAccount(name: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -4009,7 +4276,7 @@ selectAccountsByOptions(options: SelectAccountsOptions, callback: AsyncCallback<
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid options. |
 | [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-账号服务忙碌) | Account service busy. |
@@ -4068,7 +4335,7 @@ selectAccountsByOptions(options: SelectAccountsOptions): Promise<Array<AppAccoun
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid options. |
 | [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-账号服务忙碌) | Account service busy. |
@@ -4101,7 +4368,13 @@ try {
 setAccountCredential(name: string, credentialType: string, credential: string, callback: AsyncCallback<void>): void
 ```
 
-设置指定应用账号的凭据。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-1) > 替代。
+设置指定应用账号的凭据。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -4141,7 +4414,13 @@ appAccountManager.setAccountCredential('ZhangSan', 'credentialType001', 'credent
 setAccountCredential(name: string, credentialType: string, credential: string): Promise<void>
 ```
 
-设置指定应用账号的凭据。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-2) > 替代。
+设置指定应用账号的凭据。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-2)
+> 替代。
 
 **起始版本：** 7
 
@@ -4184,7 +4463,13 @@ appAccountManager.setAccountCredential('ZhangSan', 'credentialType001', 'credent
 setAccountExtraInfo(name: string, extraInfo: string, callback: AsyncCallback<void>): void
 ```
 
-设置指定应用账号的额外信息。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1) > 替代。
+设置指定应用账号的额外信息。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -4223,7 +4508,12 @@ appAccountManager.setAccountExtraInfo('ZhangSan', 'Tk002', (err: BusinessError) 
 setAccountExtraInfo(name: string, extraInfo: string): Promise<void>
 ```
 
-设置此应用程序账号的额外信息。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)替代。
+设置此应用程序账号的额外信息。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)替代。
 
 **起始版本：** 7
 
@@ -4288,7 +4578,7 @@ setAppAccess(name: string, bundleName: string, isAccessible: boolean, callback: 
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
 | [12400001](../../apis-basic-services-kit/errorcode-account.md#12400001-应用不存在) | Application not found.<br>**适用版本：** 9 - 13 |
-| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-授权列表已达上限) | The size of authorization list reaches the upper limit.<br>**适用版本：** 14 |
+| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-授权列表已达上限) | The size of authorization list reaches the upper limit.<br>**适用版本：** 14+ |
 
 **示例：**
 
@@ -4344,7 +4634,7 @@ setAppAccess(name: string, bundleName: string, isAccessible: boolean): Promise<v
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
 | [12400001](../../apis-basic-services-kit/errorcode-account.md#12400001-应用不存在) | Application not found.<br>**适用版本：** 9 - 13 |
-| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-授权列表已达上限) | The size of authorization list reaches the upper limit.<br>**适用版本：** 14 |
+| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-授权列表已达上限) | The size of authorization list reaches the upper limit.<br>**适用版本：** 14+ |
 
 **示例：**
 
@@ -4370,7 +4660,13 @@ try {
 setAppAccountSyncEnable(name: string, isEnable: boolean, callback: AsyncCallback<void>): void
 ```
 
-开启或禁止指定应用账号的数据同步功能。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-1) > 替代。
+开启或禁止指定应用账号的数据同步功能。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -4411,7 +4707,13 @@ appAccountManager.setAppAccountSyncEnable('ZhangSan', true, (err: BusinessError)
 setAppAccountSyncEnable(name: string, isEnable: boolean): Promise<void>
 ```
 
-开启或禁止指定应用账号的数据同步功能。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-2)替代 > 。
+开启或禁止指定应用账号的数据同步功能。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-2)替代
+> 。
 
 **起始版本：** 7
 
@@ -4455,7 +4757,13 @@ appAccountManager.setAppAccountSyncEnable('ZhangSan', true).then(() => {
 setAssociatedData(name: string, key: string, value: string, callback: AsyncCallback<void>): void
 ```
 
-设置指定应用账号的关联数据。使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1) > 替代。
+设置指定应用账号的关联数据。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1)
+> 替代。
 
 **起始版本：** 7
 
@@ -4495,7 +4803,12 @@ appAccountManager.setAssociatedData('ZhangSan', 'k001', 'v001', (err: BusinessEr
 setAssociatedData(name: string, key: string, value: string): Promise<void>
 ```
 
-设置指定应用账号的关联数据。使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用 > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)替代。
+设置指定应用账号的关联数据。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)替代。
 
 **起始版本：** 7
 
@@ -4557,7 +4870,7 @@ setAuthToken(name: string, authType: string, token: string, callback: AsyncCallb
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, authType or token. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -4613,7 +4926,7 @@ setAuthToken(name: string, authType: string, token: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, authType or token. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -4776,7 +5089,7 @@ setAuthenticatorProperties(owner: string, callback: AuthCallback): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner. |
 | [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-账号服务忙碌) | Account service busy. |
@@ -4830,7 +5143,7 @@ setAuthenticatorProperties(owner: string, options: SetPropertiesOptions, callbac
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid owner or options. |
 | [12300010](../../apis-basic-services-kit/errorcode-account.md#12300010-账号服务忙碌) | Account service busy. |
@@ -4889,7 +5202,7 @@ setCredential(name: string, credentialType: string, credential: string,
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, credentialType or credential. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -4944,7 +5257,7 @@ setCredential(name: string, credentialType: string, credential: string): Promise
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, credentialType or credential. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -4992,7 +5305,7 @@ setCustomData(name: string, key: string, value: string, callback: AsyncCallback<
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, key or value. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -5048,7 +5361,7 @@ setCustomData(name: string, key: string, value: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, key or value. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -5099,7 +5412,7 @@ setDataSyncEnabled(name: string, isEnabled: boolean, callback: AsyncCallback<voi
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -5152,7 +5465,7 @@ setDataSyncEnabled(name: string, isEnabled: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -5181,7 +5494,13 @@ try {
 setOAuthToken(name: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-为指定应用账号设置特定鉴权类型的授权令牌。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-1) > 替代。
+为指定应用账号设置特定鉴权类型的授权令牌。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -5221,7 +5540,13 @@ appAccountManager.setOAuthToken('LiSi', 'getSocialData', 'xxxx', (err: BusinessE
 setOAuthToken(name: string, authType: string, token: string): Promise<void>
 ```
 
-为指定应用账号设置特定鉴权类型的授权令牌。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-2)替 > 代。
+为指定应用账号设置特定鉴权类型的授权令牌。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-2)替
+> 代。
 
 **起始版本：** 8
 
@@ -5270,7 +5595,13 @@ setOAuthTokenVisibility(
     ): void
 ```
 
-设置指定账号的特定鉴权类型的授权令牌对指定应用的可见性。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) > 替代。
+设置指定账号的特定鉴权类型的授权令牌对指定应用的可见性。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -5312,7 +5643,13 @@ appAccountManager.setOAuthTokenVisibility('LiSi', 'getSocialData', 'com.example.
 setOAuthTokenVisibility(name: string, authType: string, bundleName: string, isVisible: boolean): Promise<void>
 ```
 
-设置指定账号的特定鉴权类型的授权令牌对指定应用的可见性。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用 > [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-2) > 替代。
+设置指定账号的特定鉴权类型的授权令牌对指定应用的可见性。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃。建议使用
+> [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-2)
+> 替代。
 
 **起始版本：** 8
 
@@ -5374,7 +5711,7 @@ verifyCredential(name: string, owner: string, callback: AuthCallback): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name or owner. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |
@@ -5430,7 +5767,7 @@ verifyCredential(name: string, owner: string, options: VerifyCredentialOptions, 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameter types. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-系统服务异常) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-无效参数) | Invalid name, owner or options. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-账号不存在) | Account not found. |

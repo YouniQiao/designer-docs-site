@@ -1,16 +1,16 @@
 # AudioRenderer
 
-This interface provides APIs for audio rendering. Before calling any API in AudioRenderer, you must use [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createAudioRenderer-1) to create an AudioRenderer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
+提供音频渲染的相关接口。
+
+在使用AudioRenderer的接口之前，需先通过[createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1)获取AudioRenderer实例。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 8开始支持。
 
 **起始版本：** 8
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## drain
 
@@ -18,7 +18,7 @@ import { audio } from '@kit.AudioKit';
 drain(callback: AsyncCallback<void>): void
 ```
 
-Drains the playback buffer. This API uses an asynchronous callback to return the result.
+检查缓冲区是否已被耗尽。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -28,7 +28,7 @@ Drains the playback buffer. This API uses an asynchronous callback to return the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当检查缓冲区是否已被耗尽成功，err为undefined，否则为错误对象。 |
 
 ## drain
 
@@ -36,7 +36,7 @@ Drains the playback buffer. This API uses an asynchronous callback to return the
 drain(): Promise<void>
 ```
 
-Drains the playback buffer. This API uses a promise to return the result.
+检查缓冲区是否已被耗尽。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -46,7 +46,7 @@ Drains the playback buffer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## flush
 
@@ -54,7 +54,7 @@ Drains the playback buffer. This API uses a promise to return the result.
 flush(): Promise<void>
 ```
 
-Flushes the buffer. This API is available when [AudioState](arkts-audio-audiostate-e.md#AudioState) is **STATE_RUNNING**, **STATE_PAUSED**, or **STATE_STOPPED**. This API uses a promise to return the result.
+清空缓冲区（[AudioState](arkts-audio-audiostate-e.md)为STATE_RUNNING、STATE_PAUSED、STATE_STOPPED状态下可用）。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -64,13 +64,13 @@ Flushes the buffer. This API is available when [AudioState](arkts-audio-audiosta
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permit at current state. Return by promise. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. Return by promise. |
 
 ## getAudioEffectMode
 
@@ -78,7 +78,7 @@ Flushes the buffer. This API is available when [AudioState](arkts-audio-audiosta
 getAudioEffectMode(callback: AsyncCallback<AudioEffectMode>): void
 ```
 
-Obtains the audio effect mode in use. This API uses an asynchronous callback to return the result.
+获取当前音效模式。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -88,7 +88,7 @@ Obtains the audio effect mode in use. This API uses an asynchronous callback to 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioEffectMode> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the audio effect mode obtained; otherwise, err is an  error object. |
+| callback | AsyncCallback&lt;AudioEffectMode&gt; | 是 | 回调函数。当获取当前音效模式成功，err为undefined，data为获取到的当前音效模式；否则为错误对象。 |
 
 ## getAudioEffectMode
 
@@ -96,7 +96,7 @@ Obtains the audio effect mode in use. This API uses an asynchronous callback to 
 getAudioEffectMode(): Promise<AudioEffectMode>
 ```
 
-Obtains the audio effect mode in use. This API uses a promise to return the result.
+获取当前音效模式。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -106,15 +106,15 @@ Obtains the audio effect mode in use. This API uses a promise to return the resu
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioEffectMode> | Promise used to return the audio effect mode. |
+| Promise&lt;AudioEffectMode&gt; | Promise对象，返回当前音效模式。 |
 
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(callback: AsyncCallback<long>): void
+getAudioStreamId(callback: AsyncCallback<number>): void
 ```
 
-Obtains the stream ID of this audio renderer. This API uses an asynchronous callback to return the result.
+获取音频流id。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -124,15 +124,15 @@ Obtains the stream ID of this audio renderer. This API uses an asynchronous call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the stream ID obtained; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音频流id成功，err为undefined，data为获取到的音频流id；否则为错误对象。 |
 
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(): Promise<long>
+getAudioStreamId(): Promise<number>
 ```
 
-Obtains the stream ID of this audio renderer. This API uses a promise to return the result.
+获取音频流id。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -142,15 +142,15 @@ Obtains the stream ID of this audio renderer. This API uses a promise to return 
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the stream ID. |
+| Promise&lt;number&gt; | Promise对象，返回音频流id。 |
 
 ## getAudioStreamIdSync
 
 ```TypeScript
-getAudioStreamIdSync(): long
+getAudioStreamIdSync(): number
 ```
 
-Obtains the stream ID of this audio renderer. This API returns the result synchronously.
+获取音频流id。同步返回结果。
 
 **起始版本：** 10
 
@@ -160,15 +160,15 @@ Obtains the stream ID of this audio renderer. This API returns the result synchr
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Stream ID. |
+| number | 返回音频流id。 |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(callback: AsyncCallback<long>): void
+getAudioTime(callback: AsyncCallback<number>): void
 ```
 
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API uses an asynchronous callback to return the result.
+获取当前播放位置的时间戳（从1970年1月1日开始），单位为纳秒。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -178,15 +178,15 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the number of nanoseconds obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取时间戳成功，err为undefined，data为获取到的时间戳；否则为错误对象。 |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(): Promise<long>
+getAudioTime(): Promise<number>
 ```
 
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API uses a promise to return the result.
+获取当前播放位置的时间戳（从1970年1月1日开始），单位为纳秒。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -196,7 +196,25 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the timestamp. |
+| Promise&lt;number&gt; | Promise对象，返回时间戳。 |
+
+## getAudioTimeSync
+
+```TypeScript
+getAudioTimeSync(): number
+```
+
+获取当前播放位置的时间戳（从1970年1月1日开始），单位为纳秒。同步返回结果。
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.Multimedia.Audio.Renderer
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| number | 返回时间戳。 |
 
 ## getAudioTimestampInfo
 
@@ -204,7 +222,14 @@ Obtains the timestamp of the current playback position, measured in nanoseconds 
 getAudioTimestampInfo(): Promise<AudioTimestampInfo>
 ```
 
-Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment interface. This API uses a promise to return the result. This information is commonly used for audio and video synchronization. Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the stream begins to play. The playback position is also reset when **Flush** is called. Additionally, changes in the audio stream route, such as switching devices or output types, will reset the playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position increases is also twice the normal speed.
+获取输出音频流时间戳和位置信息，适配倍速接口。使用Promise异步回调。
+
+获取输出音频流时间戳和位置信息，通常用于进行音画同步对齐。
+
+注意，当实际播放位置（framePosition）为0时，时间戳（timestamp）是固定值，直到流真正开始播放时才会更新。当调用Flush接口时实际播放位置也会被重置。
+
+当音频流路由（route）变化时，例如设备变化或者输出类型变化时，播放位置也会被重置，但此时时间戳仍会持续增长。推荐当实际播放位置和时间戳的变化稳定后再使用该接口获取的值。该接口适配倍速接口，例如当播放速度设置为2倍时，播放位
+置的增长速度也会返回为正常的2倍。
 
 **起始版本：** 19
 
@@ -214,13 +239,13 @@ Obtains the timestamp and position information of an output audio stream. It ada
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioTimestampInfo> | Promise used to return the audio stream timestamp and the current data  frame position. |
+| Promise&lt;AudioTimestampInfo&gt; | Promise对象，返回音频流时间戳和当前数据帧位置信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permit at current state. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## getAudioTimestampInfoSync
 
@@ -228,7 +253,7 @@ Obtains the timestamp and position information of an output audio stream. It ada
 getAudioTimestampInfoSync(): AudioTimestampInfo
 ```
 
-Obtains the timestamp and position information of an output audio stream. It adapts to the speed adjustment interface. This API returns the result synchronously. This information is commonly used for audio and video synchronization. Note that when the actual playback position (**framePosition**) is 0, the timestamp remains fixed until the stream begins to play. The playback position is also reset when **Flush** is called. Additionally, changes in the audio stream route, such as switching devices or output types, will reset the playback position, whereas the timestamp keeps increasing. You are advised to call this API to obtain the corresponding value only when the actual playback position and timestamp are stable. This API adapts to the speed adjustment interface. For example, if the playback speed is set to 2x, the rate at which the playback position increases is also twice the normal speed.
+获取音频流时间戳和当前数据帧位置信息。同步返回结果。
 
 **起始版本：** 19
 
@@ -238,39 +263,21 @@ Obtains the timestamp and position information of an output audio stream. It ada
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioTimestampInfo | Information about the audio stream timestamp and the current data frame position. |
+| AudioTimestampInfo | 返回音频流时间戳和当前数据帧位置信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800103 | Operation not permit at current state. |
-
-## getAudioTimeSync
-
-```TypeScript
-getAudioTimeSync(): long
-```
-
-Obtains the timestamp of the current playback position, measured in nanoseconds from the Unix epoch (January 1, 1 970). This API returns the result synchronously.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| long | Timestamp. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(callback: AsyncCallback<long>): void
+getBufferSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains a reasonable minimum buffer size in bytes for rendering. This API uses an asynchronous callback to return the result.
+获取音频渲染器的最小缓冲区大小。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -280,15 +287,15 @@ Obtains a reasonable minimum buffer size in bytes for rendering. This API uses a
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum buffer size obtained; otherwise, err is an error  object. The unit is bytes. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音频渲染器的最小缓冲区大小成功，err为undefined，data为获取到的最小缓冲区大小；否则为错误对象。<br>单位为字节。 |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(): Promise<long>
+getBufferSize(): Promise<number>
 ```
 
-Obtains a reasonable minimum buffer size in bytes for rendering. This API uses a promise to return the result.
+获取音频渲染器的最小缓冲区大小。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -298,15 +305,15 @@ Obtains a reasonable minimum buffer size in bytes for rendering. This API uses a
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the buffer size.  The unit is bytes. |
+| Promise&lt;number&gt; | Promise对象，返回缓冲区大小。<br>单位为字节。 |
 
 ## getBufferSizeSync
 
 ```TypeScript
-getBufferSizeSync(): long
+getBufferSizeSync(): number
 ```
 
-Obtains a reasonable minimum buffer size in bytes for rendering. This API returns the result synchronously.
+获取音频渲染器的最小缓冲区大小。同步返回结果。
 
 **起始版本：** 10
 
@@ -316,7 +323,7 @@ Obtains a reasonable minimum buffer size in bytes for rendering. This API return
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Buffer size, in bytes. |
+| number | 返回缓冲区大小，单位为字节。 |
 
 ## getCurrentOutputDevices
 
@@ -324,7 +331,7 @@ Obtains a reasonable minimum buffer size in bytes for rendering. This API return
 getCurrentOutputDevices(callback: AsyncCallback<AudioDeviceDescriptors>): void
 ```
 
-Obtains the output device information of the audio stream. This API uses an asynchronous callback to return the result.
+获取音频流输出设备信息。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -334,7 +341,7 @@ Obtains the output device information of the audio stream. This API uses an asyn
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioDeviceDescriptors> | 是 | Callback used to return the result. If the operation  is successful, err is undefined and data is the output device information obtained; otherwise,  err is an error object. |
+| callback | AsyncCallback&lt;AudioDeviceDescriptors&gt; | 是 | 回调函数。当获取音频流输出设备信息成功，err为undefined，data为获取到的音频流输出设备信息；否则为错误对象。 |
 
 ## getCurrentOutputDevices
 
@@ -342,7 +349,7 @@ Obtains the output device information of the audio stream. This API uses an asyn
 getCurrentOutputDevices(): Promise<AudioDeviceDescriptors>
 ```
 
-Obtains the output device information of the audio stream. This API uses a promise to return the result.
+获取音频流输出设备信息。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -352,7 +359,7 @@ Obtains the output device information of the audio stream. This API uses a promi
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioDeviceDescriptors> | Promise used to return the output device information. |
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise对象，返回音频流的输出设备信息。 |
 
 ## getCurrentOutputDevicesSync
 
@@ -360,7 +367,7 @@ Obtains the output device information of the audio stream. This API uses a promi
 getCurrentOutputDevicesSync(): AudioDeviceDescriptors
 ```
 
-Obtains the output device information of the audio stream. This API returns the result synchronously.
+获取音频流输出设备信息。同步返回结果。
 
 **起始版本：** 10
 
@@ -370,15 +377,24 @@ Obtains the output device information of the audio stream. This API returns the 
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioDeviceDescriptors | Output device information. |
+| AudioDeviceDescriptors | 返回音频流的输出设备信息。 |
 
 ## getLatency
 
 ```TypeScript
-getLatency(type: AudioLatencyType): int
+getLatency(type: AudioLatencyType): number
 ```
 
-Obtains the estimated latency of the current audio route. > **NOTE** > > - The estimated latency of a wireless audio device may be inaccurate. The result is for reference only. > > - Since the latency is not counted in the real-time buffer, you are advised to obtain the latency only when the > audio playback starts to avoid frequent calls. Otherwise, the API call may be blocked due to route switching. > > - You are advised to use [getAudioTimestampInfo]audio.AudioRenderer.getAudioTimestampInfo or > [getAudioTimestampInfoSync]audio.AudioRenderer.getAudioTimestampInfoSync to implement audio and video > synchronization after the audio is output to the hardware.
+获取当前音频路由的预估时延。
+
+> **说明：**
+>
+> - 无线连接的音频设备，时延估算会存在误差，结果仅供参考。
+>
+> - 由于时延未计入实时缓冲区，建议仅在音频播放开始时获取，避免频繁调用，否则可能因路由切换而阻塞该接口调用。
+>
+> - 音频输出到硬件后的音画同步建议使用[getAudioTimestampInfo](arkts-audio-audiorenderer-i.md#getaudiotimestampinfo-1)或
+> [getAudioTimestampInfoSync](arkts-audio-audiorenderer-i.md#getaudiotimestampinfosync-1)完成。
 
 **起始版本：** 23
 
@@ -390,29 +406,29 @@ Obtains the estimated latency of the current audio route. > **NOTE** > > - The e
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | AudioLatencyType | 是 | Obtains the latency type. |
+| type | AudioLatencyType | 是 | 获取的时延类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Audio latency, in milliseconds. |
+| number | 返回音频时延，单位为毫秒。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permitted in release state. |
-| 6800301 | System internal error, like audio service error. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permitted in release state. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System internal error, like audio service error. |
 
 ## getLoudnessGain
 
 ```TypeScript
-getLoudnessGain(): double
+getLoudnessGain(): number
 ```
 
-Gets loudness gain of this stream.
+获取播放响度。
 
 **起始版本：** 20
 
@@ -422,15 +438,15 @@ Gets loudness gain of this stream.
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Returns one float value, unit is dB. |
+| number | 返回播放的响度值，单位为分贝。 |
 
 ## getMaxStreamVolume
 
 ```TypeScript
-getMaxStreamVolume(callback: AsyncCallback<double>): void
+getMaxStreamVolume(callback: AsyncCallback<number>): void
 ```
 
-Obtains the maximum volume of the audio stream. This API uses an asynchronous callback to return the result.
+获取音频流的最大音量。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -440,15 +456,15 @@ Obtains the maximum volume of the audio stream. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;double> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the maximum volume obtained; otherwise, err is an error object.The volume range is [0.0, 1.0]. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音频流的最大音量成功，err为undefined，data为获取到的应用基于音频流的最大音量；否则为错误对象。<br>音量范围为[0.0, 1.0]。 |
 
 ## getMaxStreamVolume
 
 ```TypeScript
-getMaxStreamVolume(): Promise<double>
+getMaxStreamVolume(): Promise<number>
 ```
 
-Obtains the maximum volume of the audio stream. This API uses a promise to return the result.
+获取音频流的最大音量。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -458,15 +474,15 @@ Obtains the maximum volume of the audio stream. This API uses a promise to retur
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;double> | Promise used to return the maximum volume of the audio stream.  The volume range is [0.0, 1.0]. |
+| Promise&lt;number&gt; | Promise对象，返回音频流最大音量。<br>音量范围为[0.0, 1.0]。 |
 
 ## getMaxStreamVolumeSync
 
 ```TypeScript
-getMaxStreamVolumeSync(): double
+getMaxStreamVolumeSync(): number
 ```
 
-Obtains the maximum volume of the audio stream. This API returns the result synchronously.
+获取音频流的最大音量。同步返回结果。
 
 **起始版本：** 10
 
@@ -476,15 +492,15 @@ Obtains the maximum volume of the audio stream. This API returns the result sync
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Maximum volume of the audio stream, which ranges from 0.0 to 1.0. |
+| number | 返回音频流最大音量，音量范围为[0.0, 1.0]。 |
 
 ## getMinStreamVolume
 
 ```TypeScript
-getMinStreamVolume(callback: AsyncCallback<double>): void
+getMinStreamVolume(callback: AsyncCallback<number>): void
 ```
 
-Obtains the minimum volume of the audio stream. This API uses an asynchronous callback to return the result.
+获取音频流的最小音量。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -494,15 +510,15 @@ Obtains the minimum volume of the audio stream. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;double> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum volume obtained; otherwise, err is an error object.The volume range is [0.0, 1.0]. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音频流的最小音量成功，err为undefined，data为获取到的应用基于音频流的最小音量；否则为错误对象。<br>音量范围为[0.0, 1.0]。 |
 
 ## getMinStreamVolume
 
 ```TypeScript
-getMinStreamVolume(): Promise<double>
+getMinStreamVolume(): Promise<number>
 ```
 
-Obtains the minimum volume of the audio stream. This API uses a promise to return the result.
+获取音频流的最小音量。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -512,15 +528,15 @@ Obtains the minimum volume of the audio stream. This API uses a promise to retur
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;double> | Promise used to return the minimum volume of the audio stream.  The volume range is [0.0, 1.0]. |
+| Promise&lt;number&gt; | Promise对象，返回音频流最小音量。<br>音量范围为[0.0, 1.0]。 |
 
 ## getMinStreamVolumeSync
 
 ```TypeScript
-getMinStreamVolumeSync(): double
+getMinStreamVolumeSync(): number
 ```
 
-Obtains the minimum volume of the audio stream. This API returns the result synchronously.
+获取音频流的最小音量。同步返回结果。
 
 **起始版本：** 10
 
@@ -530,61 +546,7 @@ Obtains the minimum volume of the audio stream. This API returns the result sync
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Minimum volume of the audio stream, which ranges from 0.0 to 1.0. |
-
-## getRendererInfo
-
-```TypeScript
-getRendererInfo(callback: AsyncCallback<AudioRendererInfo>): void
-```
-
-Obtains the information about this audio renderer. This API uses an asynchronous callback to return the result.
-
-**起始版本：** 8
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRendererInfo> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the audio renderer information obtained; otherwise,  err is an error object. |
-
-## getRendererInfo
-
-```TypeScript
-getRendererInfo(): Promise<AudioRendererInfo>
-```
-
-Obtains the information about this audio renderer. This API uses a promise to return the result.
-
-**起始版本：** 8
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;AudioRendererInfo> | Promise used to return the audio renderer information. |
-
-## getRendererInfoSync
-
-```TypeScript
-getRendererInfoSync(): AudioRendererInfo
-```
-
-Obtains the information about this audio renderer. This API returns the result synchronously.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| AudioRendererInfo | Audio renderer information. |
+| number | 返回音频流最小音量，音量范围为[0.0, 1.0]。 |
 
 ## getRenderRate
 
@@ -592,13 +554,13 @@ Obtains the information about this audio renderer. This API returns the result s
 getRenderRate(callback: AsyncCallback<AudioRendererRate>): void
 ```
 
-Obtains the audio renderer rate. This API uses an asynchronous callback to return the result.
+获取音频渲染速率。使用callback异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#getSpeed
+**替代接口：** getSpeed
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -606,7 +568,7 @@ Obtains the audio renderer rate. This API uses an asynchronous callback to retur
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRendererRate> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the render rate obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;AudioRendererRate&gt; | 是 | 回调函数。当获取当前渲染速率成功，err为undefined，data为获取到的当前渲染速率；否则为错误对象。 |
 
 ## getRenderRate
 
@@ -614,13 +576,13 @@ Obtains the audio renderer rate. This API uses an asynchronous callback to retur
 getRenderRate(): Promise<AudioRendererRate>
 ```
 
-Obtains the audio renderer rate. This API uses a promise to return the result.
+获取音频渲染速率。使用Promise异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#getSpeed
+**替代接口：** getSpeed
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -628,7 +590,7 @@ Obtains the audio renderer rate. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioRendererRate> | Promise used to return the render rate. |
+| Promise&lt;AudioRendererRate&gt; | Promise对象，返回渲染速率。 |
 
 ## getRenderRateSync
 
@@ -636,13 +598,13 @@ Obtains the audio renderer rate. This API uses a promise to return the result.
 getRenderRateSync(): AudioRendererRate
 ```
 
-Obtains the audio renderer rate. This API returns the result synchronously.
+获取音频渲染速率。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#getSpeed
+**替代接口：** getSpeed
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -650,7 +612,61 @@ Obtains the audio renderer rate. This API returns the result synchronously.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioRendererRate | Audio render rate. |
+| AudioRendererRate | 返回渲染速率。 |
+
+## getRendererInfo
+
+```TypeScript
+getRendererInfo(callback: AsyncCallback<AudioRendererInfo>): void
+```
+
+获取当前创建的音频渲染器信息。使用callback异步回调。
+
+**起始版本：** 8
+
+**系统能力：** SystemCapability.Multimedia.Audio.Renderer
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;AudioRendererInfo&gt; | 是 | 回调函数。当获取音频渲染器的信息成功，err为undefined，data为获取到的音频渲染器的信息；否则为错误对象。 |
+
+## getRendererInfo
+
+```TypeScript
+getRendererInfo(): Promise<AudioRendererInfo>
+```
+
+获取当前创建的音频渲染器信息。使用Promise异步回调。
+
+**起始版本：** 8
+
+**系统能力：** SystemCapability.Multimedia.Audio.Renderer
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;AudioRendererInfo&gt; | Promise对象，返回音频渲染器信息。 |
+
+## getRendererInfoSync
+
+```TypeScript
+getRendererInfoSync(): AudioRendererInfo
+```
+
+获取当前创建的音频渲染器信息。同步返回结果。
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.Multimedia.Audio.Renderer
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| AudioRendererInfo | 返回音频渲染器信息。 |
 
 ## getSilentModeAndMixWithOthers
 
@@ -658,7 +674,7 @@ Obtains the audio renderer rate. This API returns the result synchronously.
 getSilentModeAndMixWithOthers(): boolean
 ```
 
-Obtains the silent mode in concurrent playback for the audio stream.
+获取静音并发播放模式。
 
 **起始版本：** 12
 
@@ -668,15 +684,15 @@ Obtains the silent mode in concurrent playback for the audio stream.
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Enabled status of the silent mode in concurrent playback. true if enabled, false  otherwise. |
+| boolean | 静音并发播放模式状态。返回true表示打开，返回false表示关闭。 |
 
 ## getSpeed
 
 ```TypeScript
-getSpeed(): double
+getSpeed(): number
 ```
 
-Obtains the playback speed.
+获取播放倍速。
 
 **起始版本：** 11
 
@@ -686,7 +702,7 @@ Obtains the playback speed.
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Playback rate, which ranges from 0.25 to 4.0. |
+| number | 返回播放的倍速值，倍速范围为[0.25, 4.0]。 |
 
 ## getStreamInfo
 
@@ -694,7 +710,7 @@ Obtains the playback speed.
 getStreamInfo(callback: AsyncCallback<AudioStreamInfo>): void
 ```
 
-Obtains the stream information of this audio renderer. This API uses an asynchronous callback to return the result.
+获取音频流信息。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -704,7 +720,7 @@ Obtains the stream information of this audio renderer. This API uses an asynchro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioStreamInfo> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the stream information obtained; otherwise, err is  an error object. |
+| callback | AsyncCallback&lt;AudioStreamInfo&gt; | 是 | 回调函数。当获取音频流信息成功，err为undefined，data为获取到的音频流信息；否则为错误对象。 |
 
 ## getStreamInfo
 
@@ -712,7 +728,7 @@ Obtains the stream information of this audio renderer. This API uses an asynchro
 getStreamInfo(): Promise<AudioStreamInfo>
 ```
 
-Obtains the stream information of this audio renderer. This API uses a promise to return the result.
+获取音频流信息。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -722,7 +738,7 @@ Obtains the stream information of this audio renderer. This API uses a promise t
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioStreamInfo> | Promise used to return the stream information. |
+| Promise&lt;AudioStreamInfo&gt; | Promise对象，返回音频流信息。 |
 
 ## getStreamInfoSync
 
@@ -730,7 +746,7 @@ Obtains the stream information of this audio renderer. This API uses a promise t
 getStreamInfoSync(): AudioStreamInfo
 ```
 
-Obtains the stream information of this audio renderer. This API returns the result synchronously.
+获取音频流信息。同步返回结果。
 
 **起始版本：** 10
 
@@ -740,56 +756,15 @@ Obtains the stream information of this audio renderer. This API returns the resu
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioStreamInfo | Stream information. |
-
-## getTarget
-
-```TypeScript
-getTarget(): RenderTarget
-```
-
-Gets the currently render target of this audio renderer. If the render target has not been changed, the default value {@link RenderTarget#PLAYBACK} will be returned. If the {@link setTarget} has been called before calling this interface, ensure its promise object has been resolved successfully, otherwise, the obtained value may be inaccurate.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| RenderTarget | Render target of this audio renderer. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Caller is not a system application. |
-
-**示例：**
-
-```TypeScript
-async function getTarget(){
-  // 可选步骤：设置注入模式。
-  await audioRenderer.setTarget(audio.RenderTarget.INJECT_TO_VOICE_COMMUNICATION_CAPTURE);
-  console.info('Succeeded in setting target.');
-
-  // 调用此接口前，若已经调用过SetTarget接口，请确保SetTarget接口已经设置成功，否则获取到的数值可能不准确。
-  let renderTarget = audioRenderer.getTarget();
-  console.info(`Succeeded in getting target, RenderTarget: ${renderTarget}.`);
-}
-
-```
+| AudioStreamInfo | 返回音频流信息。 |
 
 ## getUnderflowCount
 
 ```TypeScript
-getUnderflowCount(callback: AsyncCallback<long>): void
+getUnderflowCount(callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API uses an asynchronous callback to return the result.
+获取当前播放音频流的欠载音频帧数量。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -799,15 +774,15 @@ Obtains the number of underflow audio frames in the audio stream that is being p
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;long> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the number of underloaded audio frames obtained; otherwise, err  is an error object. |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取当前播放音频流的欠载音频帧数量成功，err为undefined，data为获取到的当前播放音频流的欠载音频帧数量；否则为错误对象。 |
 
 ## getUnderflowCount
 
 ```TypeScript
-getUnderflowCount(): Promise<long>
+getUnderflowCount(): Promise<number>
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API uses a promise to return the result.
+获取当前播放音频流的欠载音频帧数量。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -817,15 +792,15 @@ Obtains the number of underflow audio frames in the audio stream that is being p
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;long> | Promise used to return the number of underflow audio frames. |
+| Promise&lt;number&gt; | Promise对象，返回音频流的欠载音频帧数量。 |
 
 ## getUnderflowCountSync
 
 ```TypeScript
-getUnderflowCountSync(): long
+getUnderflowCountSync(): number
 ```
 
-Obtains the number of underflow audio frames in the audio stream that is being played. This API returns the result synchronously.
+获取当前播放音频流的欠载音频帧数量，同步返回数据。
 
 **起始版本：** 10
 
@@ -835,15 +810,15 @@ Obtains the number of underflow audio frames in the audio stream that is being p
 
 | 类型 | 说明 |
 | --- | --- |
-| long | Number of underflow audio frames. |
+| number | 返回音频流的欠载音频帧数量。 |
 
 ## getVolume
 
 ```TypeScript
-getVolume(): double
+getVolume(): number
 ```
 
-Obtains the volume of the audio stream. This API returns the result synchronously.
+获取音频流的音量。同步返回结果。
 
 **起始版本：** 12
 
@@ -853,7 +828,7 @@ Obtains the volume of the audio stream. This API returns the result synchronousl
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Volume, in the range [0.0, 1.0]. |
+| number | 返回音量大小，音量值范围为[0.0, 1.0]。 |
 
 ## off('audioInterrupt')
 
@@ -861,7 +836,7 @@ Obtains the volume of the audio stream. This API returns the result synchronousl
 off(type: 'audioInterrupt', callback?: Callback<InterruptEvent>): void
 ```
 
-Unsubscribes from the audio interruption event. This API uses an asynchronous callback to return the result.
+取消监听音频中断事件。使用callback异步回调。
 
 **起始版本：** 18
 
@@ -871,22 +846,22 @@ Unsubscribes from the audio interruption event. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | 是 | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
-| callback | Callback&lt;InterruptEvent> | 否 | Callback used to return the event information. |
+| type | 'audioInterrupt' | 是 | 事件回调类型，支持的事件为'audioInterrupt'，当取消监听音频中断事件时，触发该事件。 |
+| callback | Callback&lt;InterruptEvent&gt; | 否 | 回调函数，返回中断事件信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('markReach')
 
 ```TypeScript
-off(type: 'markReach', callback?: Callback<long>): void
+off(type: 'markReach', callback?: Callback<number>): void
 ```
 
-Unsubscribes from the mark reached event. This API uses an asynchronous callback to return the result.
+取消监听标记到达事件。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -896,16 +871,16 @@ Unsubscribes from the mark reached event. This API uses an asynchronous callback
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'markReach' | 是 | Event type. The event 'markReach' is triggered when the number of frames  rendered reaches the value of the frame parameter. |
-| callback | Callback&lt;long> | 否 | Callback used to return the value of the frame parameter. [since 18] |
+| type | 'markReach' | 是 | 事件回调类型，支持的事件为'markReach'，当取消监听标记到达事件时，触发该事件。 |
+| callback | Callback&lt;number&gt; | 否 | 回调函数，返回frame参数的值。<br>**起始版本：** 18 |
 
 ## off('periodReach')
 
 ```TypeScript
-off(type: 'periodReach', callback?: Callback<long>): void
+off(type: 'periodReach', callback?: Callback<number>): void
 ```
 
-Unsubscribes from the period reached event. This API uses an asynchronous callback to return the result.
+取消监听标记到达事件。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -915,8 +890,8 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'periodReach' | 是 | Event type. The event 'periodReach' is triggered each time the number of  frames rendered reaches the value of the frame parameter. |
-| callback | Callback&lt;long> | 否 | Callback used to return the value of the frame parameter. [since 18] |
+| type | 'periodReach' | 是 | 事件回调类型，支持的事件为'periodReach'，当取消监听标记到达事件时，触发该事件。 |
+| callback | Callback&lt;number&gt; | 否 | 回调函数，返回frame参数的值。<br>**起始版本：** 18 |
 
 ## off('stateChange')
 
@@ -924,7 +899,7 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 off(type: 'stateChange', callback?: Callback<AudioState>): void
 ```
 
-Unsubscribes from the audio renderer state change event. This API uses an asynchronous callback to return the result.
+取消监听状态变化事件。使用callback异步回调。
 
 **起始版本：** 18
 
@@ -934,14 +909,14 @@ Unsubscribes from the audio renderer state change event. This API uses an asynch
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'stateChange' | 是 | Event type. The event 'stateChange' is triggered when the listening for audio  renderer state change event is canceled. |
-| callback | Callback&lt;AudioState> | 否 | Callback used to return the audio status. |
+| type | 'stateChange' | 是 | 事件回调类型，支持的事件为'stateChange'，当取消监听状态变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioState&gt; | 否 | 回调函数，返回当前音频的状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('outputDeviceChange')
 
@@ -949,7 +924,7 @@ Unsubscribes from the audio renderer state change event. This API uses an asynch
 off(type: 'outputDeviceChange', callback?: Callback<AudioDeviceDescriptors>): void
 ```
 
-Unsubscribes from the audio output device change event. This API uses an asynchronous callback to return the result.
+取消监听音频输出设备变化事件。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -959,15 +934,15 @@ Unsubscribes from the audio output device change event. This API uses an asynchr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'outputDeviceChange' | 是 | Event type. The event 'outputDeviceChange' is triggered when an audio  output device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors> | 否 | Callback used to return the output device descriptor of  the current audio stream. |
+| type | 'outputDeviceChange' | 是 | 事件回调类型，支持的事件为'outputDeviceChange'，当取消监听音频输出设备变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioDeviceDescriptors&gt; | 否 | 回调函数，返回当前音频流的输出设备描述信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('outputDeviceChangeWithInfo')
 
@@ -975,7 +950,7 @@ Unsubscribes from the audio output device change event. This API uses an asynchr
 off(type: 'outputDeviceChangeWithInfo', callback?: Callback<AudioStreamDeviceChangeInfo>): void
 ```
 
-Unsubscribes from the change event of audio output devices and reasons. This API uses an asynchronous callback to return the result.
+取消监听音频流输出设备变化及原因事件。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -985,15 +960,15 @@ Unsubscribes from the change event of audio output devices and reasons. This API
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'outputDeviceChangeWithInfo' | 是 | Event type. The event 'outputDeviceChangeWithInfo' is  triggered when an audio output device is changed, and the change reason is reported. |
-| callback | Callback&lt;AudioStreamDeviceChangeInfo> | 否 | Callback used to return the output device descriptor  of the current audio stream and the change reason. |
+| type | 'outputDeviceChangeWithInfo' | 是 | 事件回调类型，支持的事件为'outputDeviceChangeWithInfo'，当取消监听音频流输出设备变化及原因事件时，触发该事件。 |
+| callback | Callback&lt;AudioStreamDeviceChangeInfo&gt; | 否 | 回调函数，返回当前音频流的输出设备描述信息及变化原因。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('writeData')
 
@@ -1001,7 +976,7 @@ Unsubscribes from the change event of audio output devices and reasons. This API
 off(type: 'writeData', callback?: AudioRendererWriteDataCallback): void
 ```
 
-Unsubscribes from the audio data write event. This API uses an asynchronous callback to return the result.
+取消监听音频数据写入回调事件。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -1011,171 +986,15 @@ Unsubscribes from the audio data write event. This API uses an asynchronous call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'writeData' | 是 | Event type. The event 'writeData' is triggered when audio data needs to be  written. |
-| callback | AudioRendererWriteDataCallback | 否 | Callback used to write the data to the buffer. API  version 11 does not support the return of the callback result. API version 12 and later support the return of  the callback result [AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md#AudioDataCallbackResult)  . [since 12] |
+| type | 'writeData' | 是 | 事件回调类型，支持的事件为'writeData'，当取消监听音频数据写入回调事件时，触发该事件。 |
+| callback | AudioRendererWriteDataCallback | 否 | 回调函数，入参代表应用接收待写入的数据缓冲区。<br>API version 11 不支持返回回调结果，从 API version 12 开始支持返回回调结果[AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md)。<br>**起始版本：** 12 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## offAudioInterrupt
-
-```TypeScript
-offAudioInterrupt(callback?: Callback<InterruptEvent>): void
-```
-
-Unsubscribes audio interrupt events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Interrupt
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;InterruptEvent> | 否 | Callback used to listen for interrupt callback. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offMarkReach
-
-```TypeScript
-offMarkReach(callback?: Callback<long>): void
-```
-
-Unsubscribes from mark reached events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;long> | 否 | Callback invoked when the event is triggered. |
-
-## offOutputDeviceChange
-
-```TypeScript
-offOutputDeviceChange(callback?: Callback<AudioDeviceDescriptors>): void
-```
-
-Unsubscribes output device change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioDeviceDescriptors> | 否 | Callback used in subscribe. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offOutputDeviceChangeWithInfo
-
-```TypeScript
-offOutputDeviceChangeWithInfo(callback?: Callback<AudioStreamDeviceChangeInfo>): void
-```
-
-Unsubscribes output device change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioStreamDeviceChangeInfo> | 否 | Callback used in subscribe. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offPeriodReach
-
-```TypeScript
-offPeriodReach(callback?: Callback<long>): void
-```
-
-Unsubscribes from period reached events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;long> | 否 | Callback invoked when the event is triggered. |
-
-## offStateChange
-
-```TypeScript
-offStateChange(callback?: Callback<AudioState>): void
-```
-
-Unsubscribes audio state change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioState> | 否 | Callback invoked when state change. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offWriteData
-
-```TypeScript
-offWriteData(callback?: AudioRendererWriteDataCallback): void
-```
-
-Unsubscribes audio data callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AudioRendererWriteDataCallback | 否 | Audio renderer write data callback. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('audioInterrupt')
 
@@ -1183,7 +1002,12 @@ Unsubscribes audio data callback.
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioRenderer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received when the AudioRenderer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
+监听音频中断事件（当音频焦点发生变化时触发）。使用callback异步回调。
+
+AudioRenderer对象在start事件时获取焦点，在pause、stop等事件时释放焦点，无需开发者主动申请。
+
+调用此方法后，如果AudioRenderer对象获取焦点失败或发生中断事件（如被其他音频打断等），会收到[InterruptEvent](arkts-audio-interruptevent-i.md)。建议应用根据
+InterruptEvent的信息进行进一步处理。更多信息请参阅文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。
 
 **起始版本：** 9
 
@@ -1193,23 +1017,25 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | 是 | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
-| callback | Callback&lt;InterruptEvent> | 是 | Callback used to return the event information. |
+| type | 'audioInterrupt' | 是 | 事件回调类型，支持的事件为'audioInterrupt'，当音频焦点状态发生变化时，触发该事件。 |
+| callback | Callback&lt;InterruptEvent&gt; | 是 | 回调函数，返回中断事件信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('markReach')
 
 ```TypeScript
-on(type: 'markReach', frame: long, callback: Callback<long>): void
+on(type: 'markReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the mark reached event, which is triggered (only once) when the number of frames rendered reaches the value of the **frame** parameter. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **100**, the callback is invoked when the number of rendered frames reaches the 100th frame.
+监听标记到达事件（当渲染的帧数到达frame参数的值时触发，仅调用一次）。使用callback异步回调。
+
+如果将frame设置为100，当渲染帧数到达第100帧时，系统将上报信息。
 
 **起始版本：** 8
 
@@ -1219,17 +1045,19 @@ Subscribes to the mark reached event, which is triggered (only once) when the nu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'markReach' | 是 | Event type. The event 'markReach' is triggered when the number of frames  rendered reaches the value of the frame parameter. |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback used to return the value of the frame parameter. |
+| type | 'markReach' | 是 | 事件回调类型，支持的事件为'markReach'，当渲染的帧数到达frame参数的值时，触发该事件。 |
+| frame | number | 是 | 触发事件的帧数。该值必须大于0。 |
+| callback | Callback&lt;number&gt; | 是 | 回调函数，返回frame参数的值。 |
 
 ## on('periodReach')
 
 ```TypeScript
-on(type: 'periodReach', frame: long, callback: Callback<long>): void
+on(type: 'periodReach', frame: number, callback: Callback<number>): void
 ```
 
-Subscribes to the period reached event, which is triggered each time the number of frames rendered reaches the value of the **frame** parameter. In other words, the information is reported periodically. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are rendered, for example , when the number of frames rendered reaches the 10th frame, 20th frame, and 30th frame.
+监听标记到达事件（每当渲染的帧数达到frame参数的值时触发，即按周期上报信息）。使用callback异步回调。
+
+如果将frame设置为10，每渲染10帧数据均会上报信息（例如：第10帧、第20帧、第30帧......）。
 
 **起始版本：** 8
 
@@ -1239,9 +1067,9 @@ Subscribes to the period reached event, which is triggered each time the number 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'periodReach' | 是 | Event type. The event 'periodReach' is triggered each time the number of  frames rendered reaches the value of the frame parameter. |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback used to return the value of the frame parameter. |
+| type | 'periodReach' | 是 | 事件回调类型，支持的事件为'periodReach'，当渲染的帧数达到frame参数的值时，触发该事件。 |
+| frame | number | 是 | 触发事件的帧数。该值必须大于 0。 |
+| callback | Callback&lt;number&gt; | 是 | 回调函数，返回frame参数的值。 |
 
 ## on('stateChange')
 
@@ -1249,7 +1077,7 @@ Subscribes to the period reached event, which is triggered each time the number 
 on(type: 'stateChange', callback: Callback<AudioState>): void
 ```
 
-Subscribes to the audio renderer state change event, which is triggered when the state of the audio renderer is changed. This API uses an asynchronous callback to return the result.
+监听状态变化事件（当AudioRenderer的状态发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1259,8 +1087,8 @@ Subscribes to the audio renderer state change event, which is triggered when the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'stateChange' | 是 | Event type. The event 'stateChange' is triggered when the state of the audio  renderer is changed. |
-| callback | Callback&lt;AudioState> | 是 | Callback used to return the audio status. |
+| type | 'stateChange' | 是 | 事件回调类型，支持的事件为'stateChange'，当AudioRenderer的状态发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioState&gt; | 是 | 回调函数，返回当前音频的状态。 |
 
 ## on('outputDeviceChange')
 
@@ -1268,7 +1096,7 @@ Subscribes to the audio renderer state change event, which is triggered when the
 on(type: 'outputDeviceChange', callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to the audio output device change event, which is triggered when an audio output device is changed. This API uses an asynchronous callback to return the result.
+监听音频输出设备变化事件（当音频输出设备发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -1278,15 +1106,15 @@ Subscribes to the audio output device change event, which is triggered when an a
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'outputDeviceChange' | 是 | Event type. The event 'outputDeviceChange' is triggered when an audio  output device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors> | 是 | Callback used to return the output device descriptor of  the current audio stream. |
+| type | 'outputDeviceChange' | 是 | 事件回调类型，支持的事件为'outputDeviceChange'，当音频输出设备发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioDeviceDescriptors&gt; | 是 | 回调函数，返回当前音频流的输出设备描述信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('outputDeviceChangeWithInfo')
 
@@ -1294,7 +1122,7 @@ Subscribes to the audio output device change event, which is triggered when an a
 on(type: 'outputDeviceChangeWithInfo', callback: Callback<AudioStreamDeviceChangeInfo>): void
 ```
 
-Subscribes to the change event of audio output devices and reasons, which is triggered when an audio output device is changed, and the change reason is reported. This API uses an asynchronous callback to return the result.
+监听音频流输出设备变化及原因事件（当音频输出设备发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 11
 
@@ -1304,15 +1132,15 @@ Subscribes to the change event of audio output devices and reasons, which is tri
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'outputDeviceChangeWithInfo' | 是 | Event type. The event 'outputDeviceChangeWithInfo' is  triggered when an audio output device is changed, and the change reason is reported. |
-| callback | Callback&lt;AudioStreamDeviceChangeInfo> | 是 | Callback used to return the output device descriptor  of the current audio stream and the change reason. |
+| type | 'outputDeviceChangeWithInfo' | 是 | 事件回调类型，支持的事件为'outputDeviceChangeWithInfo'，当音频输出设备发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioStreamDeviceChangeInfo&gt; | 是 | 回调函数，返回当前音频流的输出设备描述信息及变化原因。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('writeData')
 
@@ -1320,7 +1148,13 @@ Subscribes to the change event of audio output devices and reasons, which is tri
 on(type: 'writeData', callback: AudioRendererWriteDataCallback): void
 ```
 
-Subscribes to the audio data write event, which is triggered when audio data needs to be written. This API uses an asynchronous callback to return the result. The callback function is used only to write audio data. Do not call AudioRenderer APIs in it.
+监听音频数据写入回调事件（当需要写入音频数据时触发）。使用callback异步回调。
+
+> **说明：**
+>
+> - 回调函数仅用来写入音频数据，请勿在回调函数中调用AudioRenderer相关接口。
+>
+> - 为避免音频播放启动和停止时数据不连续可能出现的杂音，系统通常会在启动和停止时对音频数据做20ms以内的淡入淡出处理。
 
 **起始版本：** 11
 
@@ -1330,167 +1164,15 @@ Subscribes to the audio data write event, which is triggered when audio data nee
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'writeData' | 是 | Event type. The event 'writeData' is triggered when audio data needs to be  written. |
-| callback | AudioRendererWriteDataCallback | 是 | Callback used to write the data to the buffer. API  version 11 does not support the return of the callback result. API version 12 and later support the return of  the callback result [AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md#AudioDataCallbackResult)  . [since 12] |
+| type | 'writeData' | 是 | 事件回调类型，支持的事件为'writeData'，当需要写入音频数据时，触发该事件。 |
+| callback | AudioRendererWriteDataCallback | 是 | 回调函数，入参代表应用接收待写入的数据缓冲区。<br>API version 11 不支持返回回调结果，从 API version 12 开始支持返回回调结果[AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md)。<br>**起始版本：** 12 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## onAudioInterrupt
-
-```TypeScript
-onAudioInterrupt(callback: Callback<InterruptEvent>): void
-```
-
-Listens for audio interrupt events. This method uses a callback to get interrupt events. The interrupt event is triggered when audio playback is interrupted.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Interrupt
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;InterruptEvent> | 是 | Callback used to listen for interrupt callback. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onMarkReach
-
-```TypeScript
-onMarkReach(frame: long, callback: Callback<long>): void
-```
-
-Subscribes to mark reached events. When the number of frames rendered reaches the value of the frame parameter, the callback is invoked.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| frame | long | 是 | Number of frames to trigger the event. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback invoked when the event is triggered. |
-
-## onOutputDeviceChange
-
-```TypeScript
-onOutputDeviceChange(callback: Callback<AudioDeviceDescriptors>): void
-```
-
-Subscribes output device change event callback. The event is triggered when output device change for this stream.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioDeviceDescriptors> | 是 | Callback used to listen device change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onOutputDeviceChangeWithInfo
-
-```TypeScript
-onOutputDeviceChangeWithInfo(callback: Callback<AudioStreamDeviceChangeInfo>): void
-```
-
-Subscribes output device change event callback. The event is triggered when output device change for this stream.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioStreamDeviceChangeInfo> | 是 | Callback used to listen device change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onPeriodReach
-
-```TypeScript
-onPeriodReach(frame: long, callback: Callback<long>): void
-```
-
-Subscribes to period reached events. When the period of frame rendering reaches the value of frame parameter, the callback is invoked.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| frame | long | 是 | Period during which frame rendering is listened. The value must be greater than 0. |
-| callback | Callback&lt;long> | 是 | Callback invoked when the event is triggered. |
-
-## onStateChange
-
-```TypeScript
-onStateChange(callback: Callback<AudioState>): void
-```
-
-Subscribes audio renderer state change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioState> | 是 | Callback invoked when state change. |
-
-## onWriteData
-
-```TypeScript
-onWriteData(callback: AudioRendererWriteDataCallback): void
-```
-
-Subscribes audio data callback. The event is triggered when audio buffer is available for writing more data.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AudioRendererWriteDataCallback | 是 | Audio renderer write data callback. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## pause
 
@@ -1498,7 +1180,7 @@ Subscribes audio data callback. The event is triggered when audio buffer is avai
 pause(callback: AsyncCallback<void>): void
 ```
 
-Pauses this audio renderer. This API uses an asynchronous callback to return the result.
+暂停音频渲染。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1508,7 +1190,7 @@ Pauses this audio renderer. This API uses an asynchronous callback to return the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当暂停渲染成功，err为undefined，否则为错误对象。 |
 
 ## pause
 
@@ -1516,7 +1198,7 @@ Pauses this audio renderer. This API uses an asynchronous callback to return the
 pause(): Promise<void>
 ```
 
-Pauses this audio renderer. This API uses a promise to return the result.
+暂停音频渲染。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -1526,7 +1208,7 @@ Pauses this audio renderer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## release
 
@@ -1534,7 +1216,7 @@ Pauses this audio renderer. This API uses a promise to return the result.
 release(callback: AsyncCallback<void>): void
 ```
 
-Releases the renderer. This API uses an asynchronous callback to return the result.
+释放音频渲染器。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -1544,7 +1226,7 @@ Releases the renderer. This API uses an asynchronous callback to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当释放音频渲染器成功，err为undefined，否则为错误对象。 |
 
 ## release
 
@@ -1552,7 +1234,7 @@ Releases the renderer. This API uses an asynchronous callback to return the resu
 release(): Promise<void>
 ```
 
-Releases the renderer. This API uses a promise to return the result.
+释放音频渲染器。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -1562,7 +1244,7 @@ Releases the renderer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setAudioEffectMode
 
@@ -1570,7 +1252,7 @@ Releases the renderer. This API uses a promise to return the result.
 setAudioEffectMode(mode: AudioEffectMode, callback: AsyncCallback<void>): void
 ```
 
-Sets an audio effect mode. This API uses an asynchronous callback to return the result.
+设置当前音效模式。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -1580,15 +1262,15 @@ Sets an audio effect mode. This API uses an asynchronous callback to return the 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | AudioEffectMode | 是 | Audio effect mode to set. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| mode | AudioEffectMode | 是 | 音效模式。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置当前音效模式成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by callback. |
 
 ## setAudioEffectMode
 
@@ -1596,7 +1278,7 @@ Sets an audio effect mode. This API uses an asynchronous callback to return the 
 setAudioEffectMode(mode: AudioEffectMode): Promise<void>
 ```
 
-Sets an audio effect mode. This API uses a promise to return the result.
+设置当前音效模式。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -1606,20 +1288,20 @@ Sets an audio effect mode. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | AudioEffectMode | 是 | Audio effect mode to set. |
+| mode | AudioEffectMode | 是 | 音效模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by promise. |
 
 ## setChannelBlendMode
 
@@ -1627,7 +1309,7 @@ Sets an audio effect mode. This API uses a promise to return the result.
 setChannelBlendMode(mode: ChannelBlendMode): void
 ```
 
-Sets the audio channel blending mode. This API returns the result synchronously.
+设置单双声道混合模式。同步返回结果。
 
 **起始版本：** 11
 
@@ -1637,15 +1319,15 @@ Sets the audio channel blending mode. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | ChannelBlendMode | 是 | Audio channel blending mode. |
+| mode | ChannelBlendMode | 是 | 声道混合模式类型。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permit at current state. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## setDefaultOutputDevice
 
@@ -1653,7 +1335,14 @@ Sets the audio channel blending mode. This API returns the result synchronously.
 setDefaultOutputDevice(deviceType: DeviceType): Promise<void>
 ```
 
-Temporarily changes the current audio device This function applies on audiorenderers whose StreamUsage are STREAM_USAGE_VOICE_COMMUNICATION/STREAM_USAGE_VIDEO_COMMUNICATION/STREAM_USAGE_VOICE_MESSAGE. Setting the device will only takes effect if no other accessory such as headphones are in use
+设置默认发声设备。使用Promise异步回调。
+
+> **说明：**
+>
+> - 本接口仅适用于[StreamUsage](arkts-audio-streamusage-e.md)为语音消息、VoIP语音通话或者VoIP视频通话的场景，支持听筒、扬声器和系统默认设备。
+>
+> - 本接口允许在AudioRenderer创建后随时调用，系统会记录应用设置的默认本机内置发声设备。应用启动播放时，若外接设备如蓝牙耳机或有线耳机已接入，系统优先从外接设备发声；否则，系统遵循应用设置的默认本机内置发声设
+> 备。
 
 **起始版本：** 12
 
@@ -1663,29 +1352,33 @@ Temporarily changes the current audio device This function applies on audiorende
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | DeviceType | 是 | the available deviceTypes are  EARPIECE: Built-in earpiece  SPEAKER: Built-in speaker  DEFAULT: System default output device |
+| deviceType | DeviceType | 是 | 设备类型。<br>仅支持以下设备：EARPIECE（听筒）、SPEAKER（扬声器）和DEFAULT（系统默认设备）。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permit at current state. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## setIndependentAudioSessionStrategy
 
 ```TypeScript
-setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: int): void
+setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
 ```
 
-Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio renderer is running, you must call the > [start](arkts-audio-audiorenderer-i.md#start) API again for > the settings to take effect.
+设置独立的音频会话策略和行为参数。
+
+> **说明：**
+>
+> 当音频渲染器在运行状态时调用此接口后，必须重新调用接口[start](arkts-audio-audiorenderer-i.md#start-1)使其生效。
 
 **起始版本：** 24
 
@@ -1697,15 +1390,15 @@ Sets the independent audio session strategy and behavior parameters. > **NOTE** 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategy | AudioSessionStrategy | 是 | Audio session strategy. |
-| behavior | int | 是 | Specifies the audio session behavior. This can be a single flag or a bitwise OR  combination of multiple flags. For details about the supported audio session behaviors, see  [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md#AudioSessionBehaviorFlags). |
+| strategy | AudioSessionStrategy | 是 | 音频会话策略。 |
+| behavior | number | 是 | 用于设置音频会话行为。<br>该参数可以是单个标志，也可以是多个标志的按位OR组合。<br>当前支持的音频会话行为详见[AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md)中定义的标志。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permit at current state. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800103](../errorcode-audio.md#6800103-状态不支持) | Operation not permit at current state. |
 
 ## setInterruptMode
 
@@ -1713,7 +1406,7 @@ Sets the independent audio session strategy and behavior parameters. > **NOTE** 
 setInterruptMode(mode: InterruptMode, callback: AsyncCallback<void>): void
 ```
 
-Sets the audio interruption mode for the application. This API uses an asynchronous callback to return the result.
+设置应用的焦点模型。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -1723,8 +1416,8 @@ Sets the audio interruption mode for the application. This API uses an asynchron
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | InterruptMode | 是 | Audio interruption mode. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| mode | InterruptMode | 是 | 焦点模型。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置应用的焦点模型成功，err为undefined，否则为错误对象。 |
 
 ## setInterruptMode
 
@@ -1732,7 +1425,7 @@ Sets the audio interruption mode for the application. This API uses an asynchron
 setInterruptMode(mode: InterruptMode): Promise<void>
 ```
 
-Sets the audio interruption mode for the application. This API uses a promise to return the result.
+设置应用的焦点模型。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1742,13 +1435,13 @@ Sets the audio interruption mode for the application. This API uses a promise to
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | InterruptMode | 是 | Audio interruption mode. |
+| mode | InterruptMode | 是 | 焦点模型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setInterruptModeSync
 
@@ -1756,7 +1449,7 @@ Sets the audio interruption mode for the application. This API uses a promise to
 setInterruptModeSync(mode: InterruptMode): void
 ```
 
-Sets the audio interruption mode for the application. This API returns the result synchronously.
+设置应用的焦点模型。同步设置。
 
 **起始版本：** 10
 
@@ -1766,22 +1459,33 @@ Sets the audio interruption mode for the application. This API returns the resul
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | InterruptMode | 是 | Audio interruption mode. |
+| mode | InterruptMode | 是 | 焦点模型。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setLoudnessGain
 
 ```TypeScript
-setLoudnessGain(loudnessGain: double): Promise<void>
+setLoudnessGain(loudnessGain: number): Promise<void>
 ```
 
-Sets the loudness gain of this stream. The default loudness gain is 0.0dB. The stream usage of the audio renderer must be {@link StreamUsage#STREAM_USAGE_MUSIC}, {@link StreamUsage#STREAM_USAGE_MOVIE} or {@link StreamUsage#STREAM_USAGE_AUDIOBOOK}. After calling this interface, the adjustment of loundness gain will take effect immediately.
+设置播放响度。使用Promise异步回调。
+
+> **说明：**
+>
+> - 该接口仅支持类型为[STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md)、[STREAM_USAGE_MOVIE](arkts-audio-streamusage-e.md)或
+> [STREAM_USAGE_AUDIOBOOK](arkts-audio-streamusage-e.md)的音频流。
+>
+> - 该接口不支持高清通路的响度设置。
+>
+> - 由于音频框架与硬件之间存在缓冲区，响度调节实际生效存在延迟，时长取决于缓冲区长度。
+>
+> - 建议在不同音频开始播放前预先设置响度，以实现最佳均衡效果。
 
 **起始版本：** 20
 
@@ -1791,20 +1495,20 @@ Sets the loudness gain of this stream. The default loudness gain is 0.0dB. The s
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| loudnessGain | double | 是 | Loudness gain to set, expressed in dB. The value type is float.  The loudness gain changes from -90.0dB to 24.0dB. |
+| loudnessGain | number | 是 | 设置播放的响度值，单位为dB，响度范围为[-90.0, 24.0]。默认值为0.0dB。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800104 | Operation is not supported on this renderer, e.g. the stream usage of this  renderer is not one of {@link StreamUsage#STREAM_USAGE_MUSIC}, {@link StreamUsage#STREAM_USAGE_MOVIE} or  {@link StreamUsage#STREAM_USAGE_AUDIOBOOK}, or this renderer is routed through the high-resolution playback path. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800104](../errorcode-audio.md#6800104-参数选项不支持) | Operation is not supported on this renderer,e.g. the stream usage of this renderer is not one of {@link StreamUsage#STREAM_USAGE_MUSIC},{@link StreamUsage#STREAM_USAGE_MOVIE} or {@link StreamUsage#STREAM_USAGE_AUDIOBOOK}. |
 
 ## setRenderRate
 
@@ -1812,13 +1516,13 @@ Sets the loudness gain of this stream. The default loudness gain is 0.0dB. The s
 setRenderRate(rate: AudioRendererRate, callback: AsyncCallback<void>): void
 ```
 
-Sets the render rate. This API uses an asynchronous callback to return the result.
+设置音频渲染速率。使用callback异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#setSpeed
+**替代接口：** setSpeed
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -1826,8 +1530,8 @@ Sets the render rate. This API uses an asynchronous callback to return the resul
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | AudioRendererRate | 是 | Audio render rate. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| rate | AudioRendererRate | 是 | 渲染的速率。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置音频渲染速率成功，err为undefined，否则为错误对象。 |
 
 ## setRenderRate
 
@@ -1835,13 +1539,13 @@ Sets the render rate. This API uses an asynchronous callback to return the resul
 setRenderRate(rate: AudioRendererRate): Promise<void>
 ```
 
-Sets the render rate. This API uses a promise to return the result.
+设置音频渲染速率。使用Promise异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#setSpeed
+**替代接口：** setSpeed
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -1849,13 +1553,13 @@ Sets the render rate. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | AudioRendererRate | 是 | Audio render rate. |
+| rate | AudioRendererRate | 是 | 渲染的速率。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setSilentModeAndMixWithOthers
 
@@ -1863,7 +1567,9 @@ Sets the render rate. This API uses a promise to return the result.
 setSilentModeAndMixWithOthers(on: boolean): void
 ```
 
-Sets the silent mode in concurrent playback for the audio stream. If the silent mode in concurrent playback is enabled, the system mutes the audio stream and does not interrupt other audio streams. If the silent mode in concurrent playback is disabled, the audio stream can gain focus based on the system focus strategy.
+设置静音并发播放模式。
+
+当设置为true，打开静音并发播放模式，系统将让此音频流静音播放，并且不会打断其他音频流。设置为false，将关闭静音并发播放，音频流可根据系统焦点策略抢占焦点。
 
 **起始版本：** 12
 
@@ -1873,15 +1579,15 @@ Sets the silent mode in concurrent playback for the audio stream. If the silent 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | boolean | 是 | Whether to enable or disable the silent mode in concurrent playback for the audio stream.  true to enable, false otherwise. |
+| on | boolean | 是 | 打开/关闭静音并发播放模式。true表示设置当前播放的音频流静音播放，并且不会打断其它音频流播放。false表示取消当前播放的音频流静音播放，音频流可根据系统焦点策略抢占焦点。 |
 
 ## setSpeed
 
 ```TypeScript
-setSpeed(speed: double): void
+setSpeed(speed: number): void
 ```
 
-Sets the playback speed.
+设置播放倍速。
 
 **起始版本：** 11
 
@@ -1891,76 +1597,22 @@ Sets the playback speed.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | double | 是 | Playback rate, which ranges from 0.25 to 4.0. |
+| speed | number | 是 | 设置播放的倍速值，倍速范围为[0.25, 4.0]。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## setTarget
-
-```TypeScript
-setTarget(target: RenderTarget): Promise<void>
-```
-
-Sets the render target of this audio renderer. This function can only be called when the audio renderer is not in the running or released state. Otherwise, it will return an error. The caller must have the ohos.permission.INJECT_PLAYBACK_TO_AUDIO_CAPTURE permission when target is not {@link RenderTarget#PLAYBACK}. This method can only be called when the audio renderer is ​​not​​ in the RUNNING or RELEASED state. Otherwise, an error will be returned. After changing render target to non-PLAYBACK： 1. The audio route and interruption strategy of this renderer will not be affected by {@link AudioSessionManager}. 2. The device type of this renderer will be {@link DeviceType#SYSTEM_PRIVATE}. 3. Calling {@link start} when the audio scene is not {@link AudioScene#AUDIO_SCENE_VOICE_CHAT} will return error code 6800301. 4. Calling {@link getAudioTime} or {@link getAudioTimeSync} will return error code 6800301. 5. Calling {@link getAudioTimestampInfo} or {@link getAudioTimestampInfoSync} will return error code 6800301. 6. Calling {@link setDefaultOutputDevice} will return error code 6800301.
-
-**起始版本：** 22
-
-**需要权限：** 
-
- ohos.permission.INJECT_PLAYBACK_TO_AUDIO_CAPTURE
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| target | RenderTarget | 是 | Render target. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. |
-| 6800103 | Operation not permit at running and release state. |
-| 6800104 | Current renderer is not supported to set target. |
-| 6800301 | Audio client call audio service error, System error. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioRenderer.setTarget(audio.RenderTarget.INJECT_TO_VOICE_COMMUNICATION_CAPTURE).then(() => {
-  console.info('Succeeded in setting target.');
-}).catch((err: BusinessError) => {
-  console.error(`Failed to set target. code: ${err.code}, message: ${err.message}`);
-});
-
-```
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setVolume
 
 ```TypeScript
-setVolume(volume: double, callback: AsyncCallback<void>): void
+setVolume(volume: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the volume for the audio stream. This API uses an asynchronous callback to return the result.
+设置音频流的音量。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -1970,16 +1622,16 @@ Sets the volume for the audio stream. This API uses an asynchronous callback to 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volume | double | 是 | Volume to set, which is in the range [0.0, 1.0]. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| volume | number | 是 | 音量值范围为[0.0, 1.0]。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置应用的音量成功，err为undefined，否则为错误对象。 |
 
 ## setVolume
 
 ```TypeScript
-setVolume(volume: double): Promise<void>
+setVolume(volume: number): Promise<void>
 ```
 
-Sets the volume for the audio stream. This API uses a promise to return the result.
+设置音频流的音量。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1989,21 +1641,21 @@ Sets the volume for the audio stream. This API uses a promise to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volume | double | 是 | Volume to set, which is in the range [0.0, 1.0]. |
+| volume | number | 是 | 音量值范围为[0.0, 1.0]。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setVolumeWithRamp
 
 ```TypeScript
-setVolumeWithRamp(volume: double, duration: int): void
+setVolumeWithRamp(volume: number, duration: number): void
 ```
 
-Sets a volume ramp. This API returns the result synchronously.
+在指定时间范围内设置音量渐变模式。同步返回结果。
 
 **起始版本：** 11
 
@@ -2013,15 +1665,15 @@ Sets a volume ramp. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volume | double | 是 | Target volume, within the range [0.0, 1.0]. |
-| duration | int | 是 | Time range during which the ramp applies, in ms. |
+| volume | number | 是 | 渐变目标音量值，音量范围为[0.0, 1.0]。 |
+| duration | number | 是 | 渐变持续时间，单位为ms。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## start
 
@@ -2029,7 +1681,7 @@ Sets a volume ramp. This API returns the result synchronously.
 start(callback: AsyncCallback<void>): void
 ```
 
-Starts this audio renderer. This API uses an asynchronous callback to return the result.
+启动音频渲染器。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -2039,7 +1691,7 @@ Starts this audio renderer. This API uses an asynchronous callback to return the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. If the operation fails, an error object with  one of the following error codes is returned: Error code 6800301: indicates abnormal status, focus  preemption failure, and abnormal system processing. For details, see system logs. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当启动音频渲染器成功，err为undefined，否则为错误对象。异常将返回error对象：<br>错误码6800301：表示包含状态检查异常、焦点抢占失败、系统处理异常（具体错误查看系统日志）。 |
 
 ## start
 
@@ -2047,7 +1699,7 @@ Starts this audio renderer. This API uses an asynchronous callback to return the
 start(): Promise<void>
 ```
 
-Starts this audio renderer. This API uses a promise to return the result.
+启动音频渲染器。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -2057,7 +1709,7 @@ Starts this audio renderer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise object, which indicates that the renderer is started successfully. If the  operation fails, an error object with one of the following error codes is returned:  Error code 6800301: indicates abnormal status, focus preemption failure, and abnormal system processing. For  details, see system logs. |
+| Promise&lt;void&gt; | Promise对象，成功表示启动音频渲染器成功。异常将返回error对象：<br>错误码6800301：表示包含状态检查异常、焦点抢占失败、系统处理异常（具体错误查看系统日志）。 |
 
 ## stop
 
@@ -2065,7 +1717,7 @@ Starts this audio renderer. This API uses a promise to return the result.
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops this audio renderer. This API uses an asynchronous callback to return the result.
+停止音频渲染。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -2075,7 +1727,7 @@ Stops this audio renderer. This API uses an asynchronous callback to return the 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当停止渲染成功，err为undefined，否则为错误对象。 |
 
 ## stop
 
@@ -2083,7 +1735,7 @@ Stops this audio renderer. This API uses an asynchronous callback to return the 
 stop(): Promise<void>
 ```
 
-Stops this audio renderer. This API uses a promise to return the result.
+停止音频渲染。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -2093,7 +1745,7 @@ Stops this audio renderer. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## write
 
@@ -2101,13 +1753,13 @@ Stops this audio renderer. This API uses a promise to return the result.
 write(buffer: ArrayBuffer, callback: AsyncCallback<number>): void
 ```
 
-Writes the buffer. This API uses an asynchronous callback to return the result.
+写入缓冲区。使用callback异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#event:writeData
+**替代接口：** event:writeData
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -2115,8 +1767,8 @@ Writes the buffer. This API uses an asynchronous callback to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | 是 | Data to be written to the buffer. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the number of bytes written; otherwise, err is an error object. |
+| buffer | ArrayBuffer | 是 | 要写入缓冲区的数据。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当写入缓冲区成功，err为undefined，data为获取到的写入的字节数；否则为错误对象。 |
 
 ## write
 
@@ -2124,13 +1776,13 @@ Writes the buffer. This API uses an asynchronous callback to return the result.
 write(buffer: ArrayBuffer): Promise<number>
 ```
 
-Writes the buffer. This API uses a promise to return the result.
+写入缓冲区。使用Promise异步回调。
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#event:writeData
+**替代接口：** event:writeData
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -2138,13 +1790,13 @@ Writes the buffer. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | 是 | Data to be written to the buffer. |
+| buffer | ArrayBuffer | 是 | 要写入缓冲区的数据。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the number of written bytes. |
+| Promise&lt;number&gt; | Promise对象，返回写入的字节数。 |
 
 ## state
 
@@ -2152,7 +1804,7 @@ Writes the buffer. This API uses a promise to return the result.
 readonly state: AudioState
 ```
 
-Audio renderer state.
+音频渲染器的状态。
 
 **类型：** AudioState
 

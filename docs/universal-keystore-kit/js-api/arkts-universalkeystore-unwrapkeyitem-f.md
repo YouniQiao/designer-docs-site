@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## unwrapKeyItem
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function unwrapKeyItem(keyAlias: string, params: HuksOptions, wrappedKey: Uint8Array): Promise<HuksReturnResult>
 ```
 
-Unwraps a key. This API uses a promise to return the result. <!--Del-->This feature is not supported currently.<!--DelEnd-->
+Unwraps a key. This API uses a promise to return the result.
+
+<!--Del-->This feature is not supported currently.<!--DelEnd-->
 
 **Since:** 20
 
@@ -45,5 +47,5 @@ Unwraps a key. This API uses a promise to return the result. <!--Del-->This feat
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
 | [12000015](../errorcode-huks.md#12000015-failed-to-invoke-other-system-services) | Failed to obtain the security information via UserIAM |
 | [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid |
-| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 and later |
 

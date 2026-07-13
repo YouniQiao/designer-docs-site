@@ -9,7 +9,7 @@ Provides calendar management capabilities, such as calendar name retrieval and d
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## add
@@ -64,7 +64,8 @@ try {
 compareDays(date: Date): number
 ```
 
-Compares the current date of this **Calendar** object with the specified date for the difference in the number of days.
+Compares the current date of this **Calendar** object with the specified date for the difference in the number of
+days.
 
 **Since:** 11
 
@@ -488,7 +489,7 @@ Sets the date and time for a **Calendar** object based on the input timestamp.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| time | number | Yes | Unix timestamp, which indicates the number of milliseconds that have elapsed since theUnix epoch. |
+| time | number | Yes | Unix timestamp, which indicates the number of millisecondsthat have elapsed since the Unix epoch. |
 
 **Example**
 

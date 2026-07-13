@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { logLibrary } from '@ohos.logLibrary';
+import { logLibrary } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## move
@@ -12,7 +12,8 @@ import { logLibrary } from '@ohos.logLibrary';
 function move(logType: string, logName: string, dest: string): Promise<void>
 ```
 
-Moves log files of the specified type to the target application directory. This API uses a promise to return the result.
+Moves log files of the specified type to the target application directory. This API uses a promise to return the
+result.
 
 **Since:** 10
 
@@ -78,7 +79,8 @@ try {
 function move(logType: string, logName: string, dest: string, callback: AsyncCallback<void>): void
 ```
 
-Moves log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result.
+Moves log files of the specified type to the target application directory. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 

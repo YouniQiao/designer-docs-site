@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## updateEnabledBusinessIds
@@ -12,7 +12,9 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 function updateEnabledBusinessIds(templateId: Uint8Array, enabledBusinessIds: number[]): Promise<void>
 ```
 
-Updates the service scope supported by the specified companion device template. This API uses a promise to return the result.
+Updates the service scope supported by the specified companion device template. This API is used to modify the
+list of service IDs enabled for a registered template, thereby controlling the service scenarios in which the
+template can be used. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -28,8 +30,8 @@ Updates the service scope supported by the specified companion device template. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| templateId | Uint8Array | Yes | ID of the target template. |
-| enabledBusinessIds | number[] | Yes | ID set of services supported by the template. |
+| templateId | Uint8Array | Yes | ID of the target template. Unique ID of the template whose service scope is tobe updated, which can be obtained through[getTemplateStatus](arkts-userauthentication-statusmonitor-i-sys.md#gettemplatestatus-1). |
+| enabledBusinessIds | number[] | Yes | ID set of services supported by the template. It indicates the list ofservice scenarios to be enabled, such as [DEFAULT] and [Service ID for unlocking the screen]. Differentservice IDs correspond to different authentication scenarios. You can configure the service IDs based onservice requirements. |
 
 **Return value:**
 

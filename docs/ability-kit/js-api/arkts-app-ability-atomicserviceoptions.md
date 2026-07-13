@@ -12,5 +12,5 @@ import { AtomicServiceOptions } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceOptions](arkts-atomicserviceoptions-c.md) | AtomicServiceOptions** is used as an input parameter of [openAtomicService()]{@link ./application/UIAbilityContext:UIAbilityContext.openAtomicService} to carry arguments. It inherits from [StartOptions]{@link @ohos.app.ability.StartOptions:StartOptions}. |
+| [AtomicServiceOptions](arkts-ability-atomicserviceoptions-c.md) | **AtomicServiceOptions** is used as an input parameter of[openAtomicService()](arkts-ability-uiabilitycontext-c.md#openatomicservice-1) to carry arguments. Itinherits from [StartOptions](arkts-ability-startoptions-c.md). |
 

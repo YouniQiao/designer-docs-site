@@ -1,6 +1,6 @@
 # @ohos.abilityToolAccessCtrl
 
-abilityToolAccessCtrl的命名空间
+The namespace of abilityToolAccessCtrl
 
 **Since:** 26.0.0
 
@@ -10,30 +10,36 @@ abilityToolAccessCtrl的命名空间
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[grantToolPermissionsByUser](arkts-abilitytoolaccessctrl-granttoolpermissionsbyuser-f-sys.md#grantToolPermissionsByUser-1) | 根据用户授权结果授予工具权限。 该功能根据用户的授权决定授予工具（CLI命令或API）的权限。 授权成功后，会生成工单，用于权限验证。 |
-| <!--DelRow-->[requestToolPermissions](arkts-abilitytoolaccessctrl-requesttoolpermissions-f-sys.md#requestToolPermissions-1) | 根据指定的操作查询工具权限。 该函数用于检查权限查询中指定的CLI命令或API的权限状态。 对于每个操作，它返回权限状态、授权状态以及是否需要用户对话框。 当needTicket设置为true时，远程授权会生成一个票据。 |
+| [grantToolPermissionsByUser](arkts-ability-granttoolpermissionsbyuser-f-sys.md#granttoolpermissionsbyuser-1) | Grants tool permissions based on user authorization results.This function grants permissions for tools (CLI commands or APIs) according to the user's authorization decisions.After successful authorization, tickets are generated which can be used for permission verification. |
+| [requestToolPermissions](arkts-ability-requesttoolpermissions-f-sys.md#requesttoolpermissions-1) | Queries tool permissions based on the specified operations.This function checks the permission status for CLI commands or APIs specified in permissionQuery.operationInfo.For each operation, it returns the permission status, authorization status, and whether a user dialog is required.When needTicket is set to true, a ticket will be generated for remote authorization. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[AuthStatusInfo](arkts-abilitytoolaccessctrl-authstatusinfo-i-sys.md) | 授权状态信息。 |
-| <!--DelRow-->[CliCmdInfo](arkts-abilitytoolaccessctrl-clicmdinfo-i-sys.md) | CLI命令信息。 |
-| <!--DelRow-->[OperationInfo](arkts-abilitytoolaccessctrl-operationinfo-i-sys.md) | 操作信息。 |
-| <!--DelRow-->[PermissionInfo](arkts-abilitytoolaccessctrl-permissioninfo-i-sys.md) | 权限信息。 |
-| <!--DelRow-->[PermissionQuery](arkts-abilitytoolaccessctrl-permissionquery-i-sys.md) | 权限查询信息。 |
-| <!--DelRow-->[PermissionQueryResult](arkts-abilitytoolaccessctrl-permissionqueryresult-i-sys.md) | 权限查询结果。 |
-| <!--DelRow-->[TicketInfo](arkts-abilitytoolaccessctrl-ticketinfo-i-sys.md) | 凭据信息。 |
-| <!--DelRow-->[UserAuthResult](arkts-abilitytoolaccessctrl-userauthresult-i-sys.md) | 用户授权结果。 |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AuthStatus](arkts-abilitytoolaccessctrl-authstatus-e-sys.md) | 授权状态。 |
-| <!--DelRow-->[OperationType](arkts-abilitytoolaccessctrl-operationtype-e-sys.md) | 操作类型。 |
+| [AuthStatusInfo](arkts-ability-authstatusinfo-i-sys.md) | Authorization status information. |
+| [CliCmdInfo](arkts-ability-clicmdinfo-i-sys.md) | CLI command information. |
+| [OperationInfo](arkts-ability-operationinfo-i-sys.md) | Operation information. |
+| [PermissionInfo](arkts-ability-permissioninfo-i-sys.md) | Permission information. |
+| [PermissionQuery](arkts-ability-permissionquery-i-sys.md) | Permission query information. |
+| [PermissionQueryResult](arkts-ability-permissionqueryresult-i-sys.md) | Permission query result. |
+| [TicketInfo](arkts-ability-ticketinfo-i-sys.md) | Ticket information. |
+| [UserAuthResult](arkts-ability-userauthresult-i-sys.md) | User authorization result. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AuthStatus](arkts-ability-authstatus-e-sys.md) | Authorization status. |
+| [OperationType](arkts-ability-operationtype-e-sys.md) | Operation type. |
+<!--DelEnd-->
 

@@ -2,9 +2,11 @@
 
 ## 汇总
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [SystemSoundPlayer](arkts-systemsoundplayer-i.md) | Implements a system sound player that provides functions for loading, unloading, playing system sounds. Before using these functions, application must call [createSystemSoundPlayer]{@link #systemSoundManager.createSystemSoundPlayer} to create a SystemSoundPlayer instance first. |
+| [SystemSoundPlayer](arkts-audio-systemsoundplayer-i.md) | 音效播放器提供了加载、卸载和播放系统声音的功能。SystemSoundPlayer需要和[@ohos.multimedia.systemSoundManager](arkts-multimedia-systemsoundmanager.md)配合使用，才能完成管理系统音效的功能。 |
+<!--DelEnd-->
 

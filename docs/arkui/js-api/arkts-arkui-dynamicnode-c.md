@@ -12,7 +12,10 @@ Define DynamicNode.
 onMove(handler: Optional<OnMoveHandler>): T
 ```
 
-Invoked when data is moved during drag and drop sorting. This callback is only applicable in a List component. where each ForEach iteration generates a ListItem component. It allows you to define custom drag actions and handle various drag events.
+Invoked when data is moved during drag and drop sorting.
+This callback is only applicable in a List component.
+where each ForEach iteration generates a ListItem component.
+It allows you to define custom drag actions and handle various drag events.
 
 **Since:** 12
 

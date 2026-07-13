@@ -2,7 +2,7 @@
 
 自定义组件V2
 
-**继承/实现关系：** CustomComponentV2 extends [BaseCustomComponent](arkts-arkui-basecustomcomponent-c.md#basecustomcomponent)
+**继承/实现关系：** CustomComponentV2 extends [BaseCustomComponent](arkts-arkui-basecustomcomponent-c.md)
 
 **起始版本：** 18
 
@@ -14,7 +14,8 @@
 aboutToReuse?(): void
 ```
 
-aboutToReuse Method for @ComponentV2, it is executed when fetching instance of custom component from RecyclePool. It is different from the @Reusable in CustomComponent, there is no param parameter in this callback.
+aboutToReuse Method for @ComponentV2, it is executed when fetching instance of custom component from RecyclePool.
+It is different from the @Reusable in CustomComponent, there is no param parameter in this callback.
 
 **起始版本：** 18
 

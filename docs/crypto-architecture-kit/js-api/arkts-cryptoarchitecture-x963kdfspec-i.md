@@ -1,8 +1,13 @@
 # X963KdfSpec
 
-Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec). It is a parameter for X963KDF key derivation function (KDF). > **NOTE** > > **key** is the original key material entered by the user.
+Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md). It is a parameter for X963KDF key derivation
+function (KDF).
 
-**Inheritance/Implementation:** X963KdfSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec)
+> **NOTE**
+>
+> **key** is the original key material entered by the user.
+
+**Inheritance/Implementation:** X963KdfSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md)
 
 **Since:** 22
 
@@ -11,7 +16,7 @@ Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfsp
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## info
@@ -20,7 +25,7 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 info: Uint8Array
 ```
 
-Additional description.
+Shared information.
 
 **Type:** Uint8Array
 
@@ -52,7 +57,8 @@ Key material.
 keySize: number
 ```
 
-Length of the derived key, in bytes. The value must be a positive integer.
+Length of the derived key, in bytes.
+The value must be a positive integer.
 
 **Type:** number
 

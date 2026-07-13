@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { IDataSourcePrefetching,BasicPrefetcher,IPrefetcher } from '@kit.ArkUI';
+import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { IDataSourcePrefetching,BasicPrefetcher,IPrefetcher } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [BasicPrefetcher](arkts-basicprefetcher-c.md) | BasicPrefetcher是IPrefetcher的基础实现。它提供了一种智能数据预取算法，以根据屏幕上可见区域的实时变化和预取持续时间的变化来决定应预取哪些数据项。它还可以根据用户的滚动操作来确定哪些预取请求应该被取消。 BasicPrefetcher对象不支持使用JSON序列化。 |
+| [BasicPrefetcher](arkts-arkui-basicprefetcher-c.md) | **BasicPrefetcher** is a fundamental implementation of **IPrefetcher**. It offers an intelligent data prefetchingalgorithm that decides the data items to prefetch based on real-time changes in the visible area on the screen andvariations in the prefetch duration. It can also determine the prefetch requests to be canceled based on the user'sscrolling actions.**BasicPrefetcher** objects do not support JSON serialization. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [IDataSourcePrefetching](arkts-idatasourceprefetching-i.md) | 继承自[IDataSource]{@link IDataSource}。实现该接口，提供具备预取能力的DataSource。 |
-| [IPrefetcher](arkts-iprefetcher-i.md) | 实现此接口以提供预取能力。 |
+| [IDataSourcePrefetching](arkts-arkui-idatasourceprefetching-i.md) | Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md) API to add data prefetching capability to your data source. |
+| [IPrefetcher](arkts-arkui-iprefetcher-i.md) | Provides prefetching capabilities. |
 

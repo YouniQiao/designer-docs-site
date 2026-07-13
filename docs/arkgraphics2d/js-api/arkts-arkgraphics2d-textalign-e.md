@@ -54,7 +54,8 @@ Center-aligned.
 JUSTIFY = 3
 ```
 
-Justified, which means that each line (except the last line) is stretched so that every line has equal width, and the left and right margins are straight.
+Justified, which means that each line (except the last line) is stretched so that every line has equal width, and
+the left and right margins are straight.
 
 **Since:** 12
 
@@ -68,7 +69,7 @@ Justified, which means that each line (except the last line) is stretched so tha
 START = 4
 ```
 
-Aligned with the start position, which depends on [TextDirection](arkts-arkgraphics2d-textdirection-e.md#textdirection).
+Aligned with the start position, which depends on [TextDirection](arkts-arkgraphics2d-textdirection-e.md).
 
 **Since:** 12
 
@@ -82,7 +83,7 @@ Aligned with the start position, which depends on [TextDirection](arkts-arkgraph
 END = 5
 ```
 
-Aligned with the end position, which depends on [TextDirection](arkts-arkgraphics2d-textdirection-e.md#textdirection).
+Aligned with the end position, which depends on [TextDirection](arkts-arkgraphics2d-textdirection-e.md).
 
 **Since:** 12
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## addDisallowedWifiList
@@ -12,7 +12,14 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 function addDisallowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 ```
 
-Adds disallowed Wi-Fi networks. The current device cannot connect to the disallowed Wi-Fi networks. A policy conflict is reported when this API is called in the following scenarios: 1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Allowed Wi-Fi networks have been added by calling [addAllowedWifiList](arkts-mdm-addallowedwifilist-f.md#addallowedwifilist-1). You can resolve the conflict by removing the allowed Wi-Fi networks through [removeAllowedWifiList](arkts-mdm-removeallowedwifilist-f.md#removeallowedwifilist-1).
+Adds disallowed Wi-Fi networks. The current device cannot connect to the disallowed Wi-Fi networks.
+
+A policy conflict is reported when this API is called in the following scenarios:
+
+1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
+You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1).
+2. Allowed Wi-Fi networks have been added by calling [addAllowedWifiList](arkts-mdm-addallowedwifilist-f.md#addallowedwifilist-1).
+You can resolve the conflict by removing the allowed Wi-Fi networks through [removeAllowedWifiList](arkts-mdm-removeallowedwifilist-f.md#removeallowedwifilist-1).
 
 **Since:** 19
 

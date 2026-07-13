@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## convertGlobalToRelativeCoordinate
@@ -12,7 +12,10 @@ import { display } from '@ohos.display';
 function convertGlobalToRelativeCoordinate(position: Position, displayId?: number): RelativePosition
 ```
 
-Converts global coordinates (based on the top-left corner of the primary screen) into relative coordinates (based on the top-left corner of the screen specified by **displayId**). If **displayId** is not passed, the coordinates are converted relative to the screen where the global coordinates are located. If the global coordinates are not on any screen, the coordinates are converted relative to the primary screen by default.
+Converts global coordinates (based on the top-left corner of the primary screen) into relative coordinates (based
+on the top-left corner of the screen specified by **displayId**). If **displayId** is not passed, the coordinates
+are converted relative to the screen where the global coordinates are located. If the global coordinates are not on
+any screen, the coordinates are converted relative to the primary screen by default.
 
 **Since:** 20
 
@@ -43,12 +46,14 @@ Converts global coordinates (based on the top-left corner of the primary screen)
 **Example**
 
 ```TypeScript
+// Define the global coordinates to convert.
 let position: display.Position = {
     x: 100,
     y: 200
 };
 
 try {
+  // Convert the global coordinates to relative coordinates.
   let relPos: display.RelativePosition = display.convertGlobalToRelativeCoordinate(position, 0);
   console.info(`The relative coordinate is ${relPos.displayId}, ${relPos.position.x}, ${relPos.position.y}`)
 } catch (exception) {

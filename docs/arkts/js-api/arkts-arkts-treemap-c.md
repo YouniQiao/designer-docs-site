@@ -1,6 +1,8 @@
 # TreeMap
 
-TreeMap stores key-value (KV) pairs. Each key must be unique and have only one value. TreeMap is implemented using a red-black tree, which is a binary search tree where keys are stored in sorted order for efficient insertion and removal.
+TreeMap stores key-value (KV) pairs. Each key must be unique and have only one value.
+TreeMap is implemented using a red-black tree, which is a binary search tree where keys
+are stored in sorted order for efficient insertion and removal.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ TreeMap stores key-value (KV) pairs. Each key must be unique and have only one v
 ## Modules to Import
 
 ```TypeScript
-import { TreeMap } from '@ohos.util.TreeMap';
+import { TreeMap } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -194,7 +196,8 @@ console.info("length:", ts1.length); // length: 2
 entries(): IterableIterator<[K, V]>
 ```
 
-Returns a new Iterator object that contains the [key, value] pairs for each element in the Map object in insertion order
+Returns a new Iterator object that contains the [key, value] pairs for each element in the Map object in insertion
+order
 
 **Since:** 8
 
@@ -250,7 +253,8 @@ while(!t.done) {
 forEach(callbackFn: (value?: V, key?: K, map?: TreeMap<K, V>) => void, thisArg?: Object): void
 ```
 
-Executes the given callback function once for each real key in the map. It does not perform functions on deleted keys
+Executes the given callback function once for each real key in the map.
+It does not perform functions on deleted keys
 
 **Since:** 8
 
@@ -347,7 +351,8 @@ console.info("result:", result); // result: 356
 getFirstKey(): K
 ```
 
-Obtains the first sorted key in the treemap. Or returns undefined if tree map is empty
+Obtains the first sorted key in the treemap.
+Or returns undefined if tree map is empty
 
 **Since:** 8
 
@@ -366,7 +371,7 @@ Obtains the first sorted key in the treemap. Or returns undefined if tree map is
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirstKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -385,7 +390,8 @@ console.info("result:", result); // result: sparrow
 getHigherKey(key: K): K
 ```
 
-Returns the least element greater than or equal to the specified key if the key does not exist, undefined is returned
+Returns the least element greater than or equal to the specified key
+if the key does not exist, undefined is returned
 
 **Since:** 8
 
@@ -430,7 +436,8 @@ console.info("result:", result); // result: 4
 getLastKey(): K
 ```
 
-Obtains the last sorted key in the treemap. Or returns undefined if tree map is empty
+Obtains the last sorted key in the treemap.
+Or returns undefined if tree map is empty
 
 **Since:** 8
 
@@ -449,7 +456,7 @@ Obtains the last sorted key in the treemap. Or returns undefined if tree map is 
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLastKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -468,7 +475,8 @@ console.info("result:", result); // result: squirrel
 getLowerKey(key: K): K
 ```
 
-Returns the greatest element smaller than or equal to the specified key if the key does not exist, undefined is returned
+Returns the greatest element smaller than or equal to the specified key
+if the key does not exist, undefined is returned
 
 **Since:** 8
 

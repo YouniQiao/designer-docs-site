@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { uiAppearance } from '@ohos.uiAppearance';
+import { uiAppearance } from '@kit.ArkUI';
 ```
 
 ## getDarkMode
@@ -12,7 +12,17 @@ import { uiAppearance } from '@ohos.uiAppearance';
 function getDarkMode(): DarkMode
 ```
 
-Obtains the current system dark mode configuration. <!--Del--> > **NOTE** > This API is a system API in API version 19 and earlier. Using this API requires the > [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > permission. <!--DelEnd-->
+Obtains the current system dark mode configuration.
+
+<!--Del-->
+
+> **NOTE**
+
+> This API is a system API in API version 19 and earlier. Using this API requires the
+> [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration)
+> permission.
+
+<!--DelEnd-->
 
 **Since:** 20
 

@@ -4,7 +4,8 @@
 export type ValidationCallback = (context: ValidationContext) => boolean | Promise<boolean>
 ```
 
-Self defined remote validation. This API uses a promise to return the result.
+Self defined remote validation.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

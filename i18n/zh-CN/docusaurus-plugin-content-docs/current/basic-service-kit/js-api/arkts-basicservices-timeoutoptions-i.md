@@ -12,7 +12,10 @@ Task timeout configuration.
 httpTotalTimeout?: number
 ```
 
-Complete HTTP request-response cycle timeout, in seconds. The default value is 60. The minimum value is 1. The value should be an integer.
+Complete HTTP request-response cycle timeout, in seconds.
+The default value is 60.
+The minimum value is 1.
+The value should be an integer.
 
 **类型：** number
 
@@ -28,7 +31,12 @@ Complete HTTP request-response cycle timeout, in seconds. The default value is 6
 networkCheckTimeout?: number
 ```
 
-Network availability check timeout, in seconds. The default value is 20. The minimum value is 0. The maximum value is 20. When set to 0, no check will be performed. The value should be an integer.
+Network availability check timeout, in seconds.
+The default value is 20.
+The minimum value is 0.
+The maximum value is 20.
+When set to 0, no check will be performed.
+The value should be an integer.
 
 **类型：** number
 

@@ -9,7 +9,7 @@ Describes information about the touchpad swipe gesture option.
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## speed
@@ -18,7 +18,11 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 speed?: number
 ```
 
-Swipe speed. <br>Value range:[200, 40000] <br>Unit: px/s. <br>Throws error code 17000007 if negative. <br>Default value: 2000
+Swipe speed.
+<br>Value range:[200, 40000]
+<br>Unit: px/s.
+<br>Throws error code 17000007 if negative.
+<br>Default value: 2000
 
 **Type:** number
 
@@ -34,7 +38,9 @@ Swipe speed. <br>Value range:[200, 40000] <br>Unit: px/s. <br>Throws error code 
 stay?: boolean
 ```
 
-Whether the swipe gesture stays on the touchpad for 1s before it is lifted. The value **true** indicates that the swipe gesture stays on the touchpad for 1s, and **false** indicates the opposite. <br>Default value: false
+Whether the swipe gesture stays on the touchpad for 1s before it is lifted.
+The value **true** indicates that the swipe gesture stays on the touchpad for 1s, and **false** indicates the opposite.
+<br>Default value: false
 
 **Type:** boolean
 

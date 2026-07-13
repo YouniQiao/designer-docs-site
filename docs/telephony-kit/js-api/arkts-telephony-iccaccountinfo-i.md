@@ -9,7 +9,7 @@ Defines the ICC account information.
 ## Modules to Import
 
 ```TypeScript
-import { sim } from '@ohos.telephony.sim';
+import { sim } from '@kit.TelephonyKit';
 ```
 
 ## iccId
@@ -102,7 +102,8 @@ Indicates the sim Id for card.
 slotIndex: number
 ```
 
-Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device.
+Indicates the card slot index number,
+ranging from 0 to the maximum card slot index number supported by the device.
 
 **Type:** number
 

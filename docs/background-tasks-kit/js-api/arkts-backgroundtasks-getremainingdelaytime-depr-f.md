@@ -6,7 +6,8 @@
 function getRemainingDelayTime(requestId: number, callback: AsyncCallback<number>): void
 ```
 
-Obtains the remaining duration before the application is suspended. This API uses an asynchronous callback to return the result.
+Obtains the remaining duration before the application is suspended. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 7
 

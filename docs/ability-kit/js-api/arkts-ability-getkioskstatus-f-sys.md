@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { kioskManager } from '@ohos.app.ability.kioskManager';
+import { kioskManager } from '@kit.AbilityKit';
 ```
 
 ## getKioskStatus
@@ -12,7 +12,8 @@ import { kioskManager } from '@ohos.app.ability.kioskManager';
 function getKioskStatus(): Promise<KioskStatus>
 ```
 
-Obtains the Kiosk mode status information, including whether the system is in kiosk mode, and the name and UID of the application that has entered Kiosk mode. This API uses a promise to return the result.
+Obtains the Kiosk mode status information, including whether the system is in kiosk mode, and the name and UID of
+the application that has entered Kiosk mode. This API uses a promise to return the result.
 
 **Since:** 20
 

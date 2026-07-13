@@ -1,6 +1,6 @@
 # ListItem属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
 
 **继承/实现关系：** ListItemAttribute extends [CommonMethod<ListItemAttribute>](CommonMethod<ListItemAttribute>)
 
@@ -78,7 +78,8 @@ selectable(value: boolean)
 selected(value: boolean)
 ```
 
-设置当前ListItem选中状态。该属性支持$$双向绑定变量。 该属性需要在设置多态样式前使用才能生效选中态样式。
+设置当前ListItem选中状态。该属性支持$$双向绑定变量。
+该属性需要在设置多态样式前使用才能生效选中态样式。
 
 **起始版本：** 10
 

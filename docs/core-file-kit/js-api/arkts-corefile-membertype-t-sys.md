@@ -10,7 +10,7 @@ Indicates the type of file asset member.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [MemberType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-membertype-t.md#membertype)
+**Substitutes:** [MemberType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-membertype-t.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

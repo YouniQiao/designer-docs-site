@@ -1,6 +1,8 @@
 # EmbeddedComponent
 
-Provide an interface for the EmbeddedComponent, which is used <br/>to render UI asynchronously
+Provide an interface for the EmbeddedComponent, which is used
+<br/>to render UI asynchronously
+
 
 ## EmbeddedComponent
 
@@ -10,7 +12,8 @@ EmbeddedComponent(
   )
 ```
 
-Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/>
+Called when the EmbeddedComponent is used.
 
 **Since:** 12
 
@@ -32,11 +35,12 @@ Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
 ```TypeScript
 EmbeddedComponent(
     loader: import('../api/type: EmbeddedType,
-    options: EmbeddedOptions
+    options?: EmbeddedOptions
   )
 ```
 
-Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
+Construct the EmbeddedComponent.<br/>
+Called when the EmbeddedComponent is used.
 
 **Since:** 26.0.0
 
@@ -52,7 +56,7 @@ Construct the EmbeddedComponent.<br/> Called when the EmbeddedComponent is used.
 | --- | --- | --- | --- |
 | loader | import('../api/@ohos.app.ability.Want').default | Yes | indicates initialization parameter |
 | type | EmbeddedType | Yes | indicates type of the EmbeddedComponent |
-| options | EmbeddedOptions | Yes | construction configuration of EmbeddedComponent |
+| options | EmbeddedOptions | No | construction configuration of EmbeddedComponent |
 
 ## Summary
 

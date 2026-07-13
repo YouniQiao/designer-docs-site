@@ -9,7 +9,7 @@ Defines the option of ShowActionMenu.
 ## Modules to Import
 
 ```TypeScript
-import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, ShowDialogSuccessResponse } from '@system.prompt';
+import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, ShowDialogSuccessResponse } from '@kit.ArkUI';
 ```
 
 ## buttons
@@ -18,7 +18,9 @@ import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, Sho
 buttons: [Button, Button?, Button?, Button?, Button?, Button?]
 ```
 
-Array of buttons in the dialog box. The array structure is {text:'button', color: '#666666'}. One to six buttons are supported.
+Array of buttons in the dialog box.
+The array structure is {text:'button', color: '#666666'}.
+One to six buttons are supported.
 
 **Type:** [Button, Button?, Button?, Button?, Button?, Button?]
 

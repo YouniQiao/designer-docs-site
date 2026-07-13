@@ -14,7 +14,8 @@ Version: the bundle version class.
 readonly code: number
 ```
 
-Version number of the bundle used only for bundle management. The value is a 32-bit non-negative integer. It is used only to determine whether a version is later than another version. A larger value indicates a later version.
+Version number of the bundle used only for bundle management. The value is a 32-bit non-negative integer. It is
+used only to determine whether a version is later than another version. A larger value indicates a later version.
 
 **Type:** number
 
@@ -30,7 +31,8 @@ Version number of the bundle used only for bundle management. The value is a 32-
 readonly minCompatibleVersionCode: number
 ```
 
-Minimum compatible version of the bundle. It is used to check whether the bundle is compatible with a version on other devices in the cross-device scenario. The value is a 32-bit non-negative integer.
+Minimum compatible version of the bundle. It is used to check whether the bundle is compatible with a version on
+other devices in the cross-device scenario. The value is a 32-bit non-negative integer.
 
 **Type:** number
 

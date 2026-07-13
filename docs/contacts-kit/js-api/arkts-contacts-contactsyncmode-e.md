@@ -28,7 +28,10 @@ Indicates that contacts differing between cloud and local will be inserted or up
 MODE_CLOUD_BASED = 2
 ```
 
-Indicates that all local contacts will be replaced by cloud contacts. When the cloud overwrite local mode is used for batch synchronization, all local contacts (excluding third-party contacts) are deleted during the first batch synchronization.
+Indicates that all local contacts will be replaced by cloud contacts.
+
+When the cloud overwrite local mode is used for batch synchronization, all local contacts
+(excluding third-party contacts) are deleted during the first batch synchronization.
 
 **Since:** 26.0.0
 

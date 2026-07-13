@@ -1,6 +1,7 @@
 # Dirent
 
-Provides information about files and directories. Before calling an API of the **Dirent** class, use [dir.read()](arkts-corefile-fileio-read-f.md#read-1) synchronously or asynchronously to create a **Dirent** instance.
+Provides information about files and directories. Before calling an API of the **Dirent** class, use
+[dir.read()](arkts-corefile-fileio-read-f.md#read-1) synchronously or asynchronously to create a **Dirent** instance.
 
 **Since:** 6
 
@@ -16,7 +17,8 @@ Provides information about files and directories. Before calling an API of the *
 isBlockDevice(): boolean
 ```
 
-Checks whether this directory entry is a block special file. A block special file supports access by block only, and it is cached when accessed.
+Checks whether this directory entry is a block special file. A block special file supports access by block only,
+and it is cached when accessed.
 
 **Since:** 6
 
@@ -46,7 +48,8 @@ let isBLockDevice = dir.readSync().isBlockDevice();
 isCharacterDevice(): boolean
 ```
 
-Checks whether this directory entry is a character special file. A character special file supports random access, and it is not cached when accessed.
+Checks whether this directory entry is a character special file. A character special file supports random access,
+and it is not cached when accessed.
 
 **Since:** 6
 
@@ -106,7 +109,8 @@ let isDirectory = dir.readSync().isDirectory();
 isFIFO(): boolean
 ```
 
-Checks whether this directory entry is a named pipe (also called FIFO). Named pipes are used for inter-process communication.
+Checks whether this directory entry is a named pipe (also called FIFO). Named pipes are used for inter-process
+communication.
 
 **Since:** 6
 

@@ -9,7 +9,7 @@ The bundle statistics information.
 ## Modules to Import
 
 ```TypeScript
-import { applicationManager } from '@ohos.enterprise.applicationManager';
+import { applicationManager } from '@kit.MDMKit';
 ```
 
 ## abilityInFgTotalTime
@@ -18,7 +18,8 @@ import { applicationManager } from '@ohos.enterprise.applicationManager';
 abilityInFgTotalTime: number
 ```
 
-The total duration, in milliseconds. The value should be an integer.
+The total duration, in milliseconds.
+The value should be an integer.
 
 **Type:** number
 

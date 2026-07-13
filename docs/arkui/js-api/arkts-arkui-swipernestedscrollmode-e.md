@@ -12,7 +12,8 @@ Enumerates the nested scrolling modes of the **Swiper** component and its parent
 SELF_ONLY = 0
 ```
 
-The scrolling is contained within the **Swiper** component, and no scroll chaining occurs, that is, the parent container does not scroll when the component scrolling reaches the boundary.
+The scrolling is contained within the **Swiper** component, and no scroll chaining occurs, that is,
+the parent container does not scroll when the component scrolling reaches the boundary.
 
 **Since:** 11
 
@@ -28,7 +29,10 @@ The scrolling is contained within the **Swiper** component, and no scroll chaini
 SELF_FIRST = 1
 ```
 
-The **Swiper** component scrolls first, and when it hits the boundary, the parent container scrolls. When the parent container hits the boundary, its edge effect is displayed. If no edge effect is specified for the parent container, the edge effect of the **Swiper** component is displayed instead.
+The **Swiper** component scrolls first, and when it hits the boundary, the parent container scrolls.
+When the parent container hits the boundary, its edge effect is displayed.
+If no edge effect is specified for the parent container,
+the edge effect of the **Swiper** component is displayed instead.
 
 **Since:** 11
 

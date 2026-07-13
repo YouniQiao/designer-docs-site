@@ -12,7 +12,8 @@ Enumerates the media types that trigger the context menu (enhanced type obtainin
 NONE = 0
 ```
 
-Default value, indicating that the current context menu is not associated with any media type (for example, right-click text or blank area).
+Default value, indicating that the current context menu is not associated with any media type (for
+example, right-click text or blank area).
 
 **Since:** 22
 

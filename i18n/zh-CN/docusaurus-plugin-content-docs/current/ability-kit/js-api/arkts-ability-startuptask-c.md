@@ -1,6 +1,7 @@
 # StartupTask
 
-The module provides capabilities related to startup tasks in [AppStartup](../../../../application-models/app-startup.md).
+The module provides capabilities related to startup tasks in
+[AppStartup](../../../../application-models/app-startup.md).
 
 **起始版本：** 12
 
@@ -26,7 +27,7 @@ init(context: AbilityStageContext): Promise<Object | void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | AbilityStageContext | 是 | [AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)的上下文环境 |
+| context | AbilityStageContext | 是 | [AbilityStage](arkts-ability-abilitystage-c.md)的上下文环境 |
 
 **返回值：**
 

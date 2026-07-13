@@ -12,7 +12,10 @@ Provides attribute names and value types of a node element.
 accessibilityFocused: boolean
 ```
 
-Whether the element is focused for accessibility purposes. The value **true** indicates that the element is focused , and **false** indicates the opposite. Default value: **false**.
+Whether the element is focused for accessibility purposes. The value **true** indicates that the element is focused
+, and **false** indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -26,7 +29,10 @@ Whether the element is focused for accessibility purposes. The value **true** in
 accessibilityNextFocusId?: number
 ```
 
-ID of the next component to be focused on. You can use **findElement('elementId')** to obtain the value of this attribute set on the component from the **AccessibilityElementInfo** object. Default value: **-1**.
+ID of the next component to be focused on. You can use **findElement('elementId')** to obtain the value of this
+attribute set on the component from the **AccessibilityElementInfo** object.
+
+Default value: **-1**.
 
 **Type:** number
 
@@ -40,7 +46,10 @@ ID of the next component to be focused on. You can use **findElement('elementId'
 accessibilityPreviousFocusId?: number
 ```
 
-ID of the previous component to be focused on. You can use **findElement('elementId')** to obtain the value of this attribute set on the component from the **AccessibilityElementInfo** object. Default value: **-1**.
+ID of the previous component to be focused on. You can use **findElement('elementId')** to obtain the value of this
+attribute set on the component from the **AccessibilityElementInfo** object.
+
+Default value: **-1**.
 
 **Type:** number
 
@@ -54,7 +63,10 @@ ID of the previous component to be focused on. You can use **findElement('elemen
 accessibilityScrollable?: boolean
 ```
 
-Whether an element is scrollable for accessibility. This attribute has a higher priority than **scrollable**. - **true** (default): the element is scrollable. - **false**: the element is not scrollable.
+Whether an element is scrollable for accessibility. This attribute has a higher priority than **scrollable**.
+
+- **true** (default): the element is scrollable.
+- **false**: the element is not scrollable.
 
 **Type:** boolean
 
@@ -96,7 +108,10 @@ Bundle name.
 checkable: boolean
 ```
 
-Whether the element is checkable. The value **true** indicates that the element is checkable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is checkable. The value **true** indicates that the element is checkable, and **false**
+indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -110,7 +125,10 @@ Whether the element is checkable. The value **true** indicates that the element 
 checked: boolean
 ```
 
-Whether the element is checked. The value **true** indicates that the element is checked, and **false** indicates the opposite. Default value: **false**.
+Whether the element is checked. The value **true** indicates that the element is checked, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -138,7 +156,10 @@ All child elements.
 clickable: boolean
 ```
 
-Whether the element is clickable. The value **true** indicates that the element is clickable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is clickable. The value **true** indicates that the element is clickable, and **false**
+indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -152,7 +173,9 @@ Whether the element is clickable. The value **true** indicates that the element 
 componentId: number
 ```
 
-ID of the component to which the element belongs. Default value: **-1**.
+ID of the component to which the element belongs.
+
+Default value: **-1**.
 
 **Type:** number
 
@@ -166,7 +189,8 @@ ID of the component to which the element belongs. Default value: **-1**.
 componentType: string
 ```
 
-Type of the component to which the element belongs, for example, **Button** for the button component and **Image** for the image component.
+Type of the component to which the element belongs, for example, **Button** for the button component and **Image**
+for the image component.
 
 **Type:** string
 
@@ -194,7 +218,9 @@ List of contents. Set this parameter based on site requirements. No special rest
 currentIndex: number
 ```
 
-Index of the current item. Default value: **0**.
+Index of the current item.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -208,7 +234,9 @@ Index of the current item. Default value: **0**.
 customComponentType?: string
 ```
 
-Custom component type. It corresponds to [AccessibilityRoleType Enumeration Description](../../apis-arkui/arkts-components/arkts-arkui-accessibilityroletype-e.md#accessibilityroletype) of the element.
+Custom component type. It corresponds to
+[AccessibilityRoleType Enumeration Description](../../apis-arkui/arkts-components/arkts-arkui-accessibilityroletype-e.md) of
+the element.
 
 **Type:** string
 
@@ -236,7 +264,10 @@ Description of the element. Set this parameter based on site requirements. No sp
 editable: boolean
 ```
 
-Whether the element is editable. The value **true** indicates that the element is editable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is editable. The value **true** indicates that the element is editable, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -250,7 +281,9 @@ Whether the element is editable. The value **true** indicates that the element i
 endIndex: number
 ```
 
-Index of the last list item displayed on the screen. Default value: **0**.
+Index of the last list item displayed on the screen.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -278,7 +311,48 @@ Error status.
 extraInfo?: string
 ```
 
-Extended attributes, which are used to define the attributes of specific components, including: - **CheckboxGroupSelectedStatus**: selection status of the **CheckboxGroup** component. The options are as follows: **0**: selected **1**: partially selected **2**: not selected - **Row**: row where a focused item is located in **Grid**. - **Column**: column where a focused item is located in **Grid**. - **ListItemIndex**: row where a focused item is located in **List**. - **SideBarContainerStates**: expansion state of the expandable components (such as **SideBarContainer** and **Select**). The options are as follows: **0**: collapsed **1**: expanded - **ToggleType**: type of the **Toggle** component. The options are as follows: **0**: checkbox **1**: switch **2**: button - **BindSheet**: position of the **BindSheet** component on the screen. The options are as follows: **0**: high **1**: middle **2**: low - **hasRegisteredHover**: whether the component has registered the **onAccessibilityHover** event callback. The value **1** indicates that the component has registered the event callback; otherwise, this field is not used. - **direction**: layout direction of the **List** component. The value can be **vertical** or **horizontal**. - **expandedState**: expanded state of list items in the **List** component. The value can be **expanded** or **collapsed**. - **componentTypeDescription**: detailed information about the component type.
+Extended attributes, which are used to define the attributes of specific components, including:
+
+- **CheckboxGroupSelectedStatus**: selection status of the **CheckboxGroup** component. The options are as follows:
+
+**0**: selected
+
+**1**: partially selected
+
+**2**: not selected
+
+- **Row**: row where a focused item is located in **Grid**.
+- **Column**: column where a focused item is located in **Grid**.
+- **ListItemIndex**: row where a focused item is located in **List**.
+- **SideBarContainerStates**: expansion state of the expandable components (such as **SideBarContainer** and
+**Select**). The options are as follows:
+
+**0**: collapsed
+
+**1**: expanded
+
+- **ToggleType**: type of the **Toggle** component. The options are as follows:
+
+**0**: checkbox
+
+**1**: switch
+
+**2**: button
+
+- **BindSheet**: position of the **BindSheet** component on the screen. The options are as follows:
+
+**0**: high
+
+**1**: middle
+
+**2**: low
+
+- **hasRegisteredHover**: whether the component has registered the **onAccessibilityHover** event callback. The
+value **1** indicates that the component has registered the event callback; otherwise, this field is not used.
+- **direction**: layout direction of the **List** component. The value can be **vertical** or **horizontal**.
+- **expandedState**: expanded state of list items in the **List** component. The value can be **expanded** or
+**collapsed**.
+- **componentTypeDescription**: detailed information about the component type.
 
 **Type:** string
 
@@ -292,7 +366,10 @@ Extended attributes, which are used to define the attributes of specific compone
 focusable: boolean
 ```
 
-Whether the element is focusable. The value **true** indicates that the element is focusable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is focusable. The value **true** indicates that the element is focusable, and **false**
+indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -334,7 +411,9 @@ Touchable area of an element.
 inputType: number
 ```
 
-Type of the input text. Default value: **0**.
+Type of the input text.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -362,7 +441,10 @@ Alias of the element.
 isActive: boolean
 ```
 
-Whether the element is active. The value **true** indicates that the element is active and **false** indicates the opposite. Default value: **true**.
+Whether the element is active. The value **true** indicates that the element is active and **false** indicates the
+opposite.
+
+Default value: **true**.
 
 **Type:** boolean
 
@@ -376,7 +458,10 @@ Whether the element is active. The value **true** indicates that the element is 
 isEnable: boolean
 ```
 
-Whether the element is enabled. The value **true** indicates that the element is enabled, and **false** indicates the opposite. Default value: **false**.
+Whether the element is enabled. The value **true** indicates that the element is enabled, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -390,7 +475,10 @@ Whether the element is enabled. The value **true** indicates that the element is
 isFocused: boolean
 ```
 
-Whether the element is focused. The value **true** indicates that the element is focused, and **false** indicates the opposite. Default value: **false**.
+Whether the element is focused. The value **true** indicates that the element is focused, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -404,7 +492,10 @@ Whether the element is focused. The value **true** indicates that the element is
 isHint: boolean
 ```
 
-Whether the element is a hint. The value **true** indicates that the element is a hint, and **false** indicates the opposite. Default value: **false**.
+Whether the element is a hint. The value **true** indicates that the element is a hint, and **false** indicates the
+opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -418,7 +509,10 @@ Whether the element is a hint. The value **true** indicates that the element is 
 isPassword: boolean
 ```
 
-Whether the element is a password. The value **true** indicates that the element is a password, and **false** indicates the opposite. Default value: **false**.
+Whether the element is a password. The value **true** indicates that the element is a password, and **false**
+indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -432,7 +526,10 @@ Whether the element is a password. The value **true** indicates that the element
 isVisible: boolean
 ```
 
-Whether the element is visible. The value **true** indicates that the element is visible, and **false** indicates the opposite. Default value: **false**.
+Whether the element is visible. The value **true** indicates that the element is visible, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -446,7 +543,9 @@ Whether the element is visible. The value **true** indicates that the element is
 itemCount: number
 ```
 
-Total number of items. Default value: **0**.
+Total number of items.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -488,7 +587,10 @@ Display layer of the element.
 longClickable: boolean
 ```
 
-Whether the element is long-clickable. The value **true** indicates that the element is long-clickable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is long-clickable. The value **true** indicates that the element is long-clickable, and
+**false** indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -502,7 +604,10 @@ Whether the element is long-clickable. The value **true** indicates that the ele
 offset: number
 ```
 
-For scrollable components such as **List** and **Grid**, this attribute indicates the pixel offset of the content area relative to the top coordinate of the component. The unit is pixel (px). Default value: **0**.
+For scrollable components such as **List** and **Grid**, this attribute indicates the pixel offset of the content
+area relative to the top coordinate of the component. The unit is pixel (px).
+
+Default value: **0**.
 
 **Type:** number
 
@@ -516,7 +621,9 @@ For scrollable components such as **List** and **Grid**, this attribute indicate
 pageId: number
 ```
 
-Page ID. Default value: **-1**.
+Page ID.
+
+Default value: **-1**.
 
 **Type:** number
 
@@ -544,7 +651,10 @@ Parent element of the element.
 pluralLineSupported: boolean
 ```
 
-Whether the element supports multiple lines of text. The value **true** indicates that the element supports multiple lines of text, and **false** indicates the opposite. Default value: **false**.
+Whether the element supports multiple lines of text. The value **true** indicates that the element supports
+multiple lines of text, and **false** indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -614,7 +724,10 @@ Display area of the element.
 scrollable: boolean
 ```
 
-Whether the element is scrollable. The value **true** indicates that the element is scrollable, and **false** indicates the opposite. Default value: **false**.
+Whether the element is scrollable. The value **true** indicates that the element is scrollable, and **false**
+indicates the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -628,7 +741,10 @@ Whether the element is scrollable. The value **true** indicates that the element
 selected: boolean
 ```
 
-Whether the element is selected. The value **true** indicates that the element is selected, and **false** indicates the opposite. Default value: **false**.
+Whether the element is selected. The value **true** indicates that the element is selected, and **false** indicates
+the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -642,7 +758,9 @@ Whether the element is selected. The value **true** indicates that the element i
 startIndex: number
 ```
 
-Index of the first list item on the screen. Default value: **0**.
+Index of the first list item on the screen.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -698,7 +816,8 @@ Granularity of movement when the text is read.
 textType: string
 ```
 
-Accessibility text type of an element, which is configured by the **accessibilityTextHint** attribute of the component.
+Accessibility text type of an element, which is configured by the **accessibilityTextHint** attribute of the
+component.
 
 **Type:** string
 
@@ -740,7 +859,9 @@ Window type of the element.
 valueMax: number
 ```
 
-Maximum value. Default value: **0**.
+Maximum value.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -754,7 +875,9 @@ Maximum value. Default value: **0**.
 valueMin: number
 ```
 
-Minimum value. Default value: **0**.
+Minimum value.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -768,7 +891,9 @@ Minimum value. Default value: **0**.
 valueNow: number
 ```
 
-Current value. Default value: **0**.
+Current value.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -782,7 +907,9 @@ Current value. Default value: **0**.
 windowId: number
 ```
 
-Window ID. Default value: **-1**.
+Window ID.
+
+Default value: **-1**.
 
 **Type:** number
 

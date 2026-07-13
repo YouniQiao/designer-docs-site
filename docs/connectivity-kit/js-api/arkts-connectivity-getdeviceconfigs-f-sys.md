@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifi } from '@ohos.wifi';
+import { wifi } from '@kit.ConnectivityKit';
 ```
 
 ## getDeviceConfigs
@@ -12,7 +12,9 @@ import { wifi } from '@ohos.wifi';
 function getDeviceConfigs(): Array<WifiDeviceConfig>
 ```
 
-Obtains the list of all existing Wi-Fi configurations. <p>You can obtain only the Wi-Fi configurations you created on your own application.
+Obtains the list of all existing Wi-Fi configurations.
+
+<p>You can obtain only the Wi-Fi configurations you created on your own application.
 
 **Since:** 7
 

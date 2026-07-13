@@ -12,7 +12,9 @@ Surface config.
 isOpaque?: boolean
 ```
 
-Whether the surface held by XComponent needs to be considered opaque, even if the surface has translucent pixel. True means needing to be considered opaque, false otherwise.
+Whether the surface held by XComponent needs to be considered opaque,
+even if the surface has translucent pixel.
+True means needing to be considered opaque, false otherwise.
 
 **Type:** boolean
 

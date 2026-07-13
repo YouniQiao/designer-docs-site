@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
+import { defaultAppManager } from '@kit.AbilityKit';
 ```
 
 ## setDefaultApplicationForAppClone
@@ -12,7 +12,8 @@ import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
 function setDefaultApplicationForAppClone(type: string, elementName: ElementName, appIndex: number, userId?: number): void
 ```
 
-Sets an application clone as the default application of the specified type. This API returns the result synchronously.
+Sets an application clone as the default application of the specified type. This API returns the result
+synchronously.
 
 **Since:** 23
 
@@ -26,7 +27,7 @@ Sets an application clone as the default application of the specified type. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the application. The value can be a value of[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype),[MIMEType](../../../../database/uniform-data-type-list.md#generic-utds), or[UniformDataType](../../apis-arkdata/arkts-apis/arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Type of the application. The value can be a value of[ApplicationType](arkts-ability-applicationtype-e.md),[MIMEType](../../../../database/uniform-data-type-list.md#generic-utds), or[UniformDataType](../../apis-arkdata/arkts-apis/arkts-arkdata-uniformdatatype-e.md). |
 | elementName | ElementName | Yes | Element information of the application. Only **bundleName**, **abilityName**,and **moduleName** are used, and the three properties must be set. |
 | appIndex | number | Yes | Index of the application clone.<br>The options include 1, 2, 3, 4, and 5. |
 | userId | number | No | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1).<br>The default value is the user ID of the caller. |

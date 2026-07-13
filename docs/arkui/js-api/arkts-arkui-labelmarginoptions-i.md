@@ -9,7 +9,7 @@ Defines the spacing between the text and the left and right icons.
 ## Modules to Import
 
 ```TypeScript
-import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@ohos.arkui.advanced.Chip';
+import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@kit.ArkUI';
 ```
 
 ## left
@@ -18,7 +18,19 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 left?: Dimension
 ```
 
-Spacing between the text and the left icon. This parameter cannot be set in percentage. Default value: When **size** is set to **ChipSize.SMALL**, the default value of **left** is **4**. When **size** is set to **ChipSize.NORMAL**, the default value of **left** is **6**. Unit: vp. If the value is out of the range, the default value is used. Value range: [0, +∞)
+Spacing between the text and the left icon. This parameter cannot be set in percentage.
+
+Default value:
+
+When **size** is set to **ChipSize.SMALL**, the default value of **left** is **4**.
+
+When **size** is set to **ChipSize.NORMAL**, the default value of **left** is **6**.
+
+Unit: vp.
+
+If the value is out of the range, the default value is used.
+
+Value range: [0, +∞)
 
 **Type:** Dimension
 
@@ -36,7 +48,19 @@ Spacing between the text and the left icon. This parameter cannot be set in perc
 right?: Dimension
 ```
 
-Spacing between the text and the right icon. This parameter cannot be set in percentage. Default value: When **size** is set to **ChipSize.SMALL**, the default value of **right** is **4**. When **size** is set to **ChipSize.NORMAL**, the default value of **right** is **6**. Unit: vp. If the value is out of the range, the default value is used. Value range: [0, +∞)
+Spacing between the text and the right icon. This parameter cannot be set in percentage.
+
+Default value:
+
+When **size** is set to **ChipSize.SMALL**, the default value of **right** is **4**.
+
+When **size** is set to **ChipSize.NORMAL**, the default value of **right** is **6**.
+
+Unit: vp.
+
+If the value is out of the range, the default value is used.
+
+Value range: [0, +∞)
 
 **Type:** Dimension
 

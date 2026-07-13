@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getBundleArchiveInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getBundleArchiveInfo(hapFilePath: string, bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-Obtains the bundle information based on the given HAP file path and bundle flags. This API uses an asynchronous callback to return the result.
+Obtains the bundle information based on the given HAP file path and bundle flags. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -28,7 +29,7 @@ Obtains the bundle information based on the given HAP file path and bundle flags
 | --- | --- | --- | --- |
 | hapFilePath | string | Yes | Path where the HAP file is stored. The path must be the relative path of thecurrent bundle's data directory. |
 | bundleFlags | number | Yes | Type of the bundle information to obtain. |
-| callback | AsyncCallback&lt;BundleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return theresult. If the operation is successful, **err** is **null** and **data** is the bundle information obtained.Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;BundleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return theresult. If the operation is successful, **err** is **null** and **data** is the bundle information obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -71,7 +72,8 @@ try {
 function getBundleArchiveInfo(hapFilePath: string,  bundleFlags: number): Promise<BundleInfo>
 ```
 
-Obtains the bundle information based on the given HAP file path and bundle flags. This API uses a promise to return the result.
+Obtains the bundle information based on the given HAP file path and bundle flags. This API uses a promise to return
+the result.
 
 **Since:** 9
 

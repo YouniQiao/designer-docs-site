@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## disableAirplaneMode
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function disableAirplaneMode(callback: AsyncCallback<void>): void
 ```
 
-Disables the airplane mode for a device. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Disables the airplane mode for a device.
+To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 8
 
@@ -57,7 +58,8 @@ connection.disableAirplaneMode((error: BusinessError) => {
 function disableAirplaneMode(): Promise<void>
 ```
 
-Disables the airplane mode for a device. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Disables the airplane mode for a device.
+To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 8
 

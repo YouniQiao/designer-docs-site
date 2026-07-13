@@ -12,7 +12,8 @@ Defines the content for color filling.
 static readonly ORIGIN: ColorContent
 ```
 
-Resets the [fillColor](ImageAttribute#fillColor(value: ResourceColor)) API, effectively the same as not setting [fillColor](ImageAttribute#fillColor(value: ResourceColor)).
+Resets the [fillColor](ImageAttribute#fillColor(value: ResourceColor)) API, effectively the same as not
+setting [fillColor](ImageAttribute#fillColor(value: ResourceColor)).
 
 **Type:** ColorContent
 

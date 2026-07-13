@@ -1,8 +1,10 @@
 # RectShapeOptions
 
-RectShape 的构造函数参数。 继承自[ShapeSize](arkts-arkui-shapesize-i.md#shapesize)。
+RectShape 的构造函数参数。
 
-**继承/实现关系：** RectShapeOptions extends [ShapeSize](arkts-arkui-shapesize-i.md#shapesize)
+继承自[ShapeSize](arkts-arkui-shapesize-i.md)。
+
+**继承/实现关系：** RectShapeOptions extends [ShapeSize](arkts-arkui-shapesize-i.md)
 
 **起始版本：** 12
 
@@ -14,7 +16,13 @@ RectShape 的构造函数参数。 继承自[ShapeSize](arkts-arkui-shapesize-i.
 radius?: number | string | Array<number | string>
 ```
 
-矩形形状的圆角半径。 类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md#length)。 单位：vp 取值为异常值时按照0vp处理。
+矩形形状的圆角半径。
+
+类型为number时取值范围是[0, +∞)，string时是[Length](../arkts-components/arkts-arkui-length-t.md)。
+
+单位：vp
+
+取值为异常值时按照0vp处理。
 
 **类型：** number | string | Array<number | string>
 

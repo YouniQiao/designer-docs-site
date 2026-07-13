@@ -172,7 +172,8 @@ Matches fields outside the specified range. The value length is limited to 10.
 BEGIN_WRAP = 11
 ```
 
-Used to add a left parenthesis to the predicate, equivalent to the "(" in SQL. Must be used together with a right parenthesis. No field or value parameters required.
+Used to add a left parenthesis to the predicate, equivalent to the "(" in SQL.
+Must be used together with a right parenthesis. No field or value parameters required.
 
 **Since:** 22
 
@@ -188,7 +189,8 @@ Used to add a left parenthesis to the predicate, equivalent to the "(" in SQL. M
 END_WRAP = 12
 ```
 
-Used to add a right parenthesis to the predicate, equivalent to the ")" in SQL. Must be used together with a left parenthesis. No field or value parameters required.
+Used to add a right parenthesis to the predicate, equivalent to the ")" in SQL.
+Must be used together with a left parenthesis. No field or value parameters required.
 
 **Since:** 22
 
@@ -204,7 +206,8 @@ Used to add a right parenthesis to the predicate, equivalent to the ")" in SQL. 
 BETWEEN = 13
 ```
 
-Matches fields within the specified range. The interval is inclusive of both endpoints (closed interval). The value length is limited to 2, representing the left and right boundaries.
+Matches fields within the specified range. The interval is inclusive of both endpoints (closed interval).
+The value length is limited to 2, representing the left and right boundaries.
 
 **Since:** 22
 
@@ -220,7 +223,8 @@ Matches fields within the specified range. The interval is inclusive of both end
 NOT_BETWEEN = 14
 ```
 
-Matches fields outside the specified range. The interval is exclusive of both endpoints (open interval). The value length is limited to 2, representing the left and right boundaries.
+Matches fields outside the specified range. The interval is exclusive of both endpoints (open interval).
+The value length is limited to 2, representing the left and right boundaries.
 
 **Since:** 22
 

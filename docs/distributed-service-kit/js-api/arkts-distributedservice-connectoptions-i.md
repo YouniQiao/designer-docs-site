@@ -9,7 +9,7 @@ Connection options for the application.
 ## Modules to Import
 
 ```TypeScript
-import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnectionManager';
+import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
 ## needSendData
@@ -18,7 +18,8 @@ import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnecti
 needSendData?: boolean
 ```
 
-Whether to send data. The value **true** indicates that data needs to be sent, and the value **false** indicates the opposite.
+Whether to send data. The value **true** indicates that data needs to be sent, and the value **false** indicates
+the opposite.
 
 **Type:** boolean
 

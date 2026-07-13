@@ -54,7 +54,11 @@ selectionPanel.hide().then(() => {
 moveTo(x: number, y: number): Promise<void>
 ```
 
-移动划词面板至屏幕指定位置。使用Promise异步回调。 > **说明：** > 从API version 20开始支持，从API version 24开始废弃。建议使用 > [moveToGlobalDisplay](arkts-basicservices-panel-i.md#movetoglobaldisplay-1)替代。
+移动划词面板至屏幕指定位置。使用Promise异步回调。
+
+> **说明：**
+> 从API version 20开始支持，从API version 24开始废弃。建议使用
+> [moveToGlobalDisplay](arkts-basicservices-panel-i.md#movetoglobaldisplay-1)替代。
 
 **起始版本：** 20
 

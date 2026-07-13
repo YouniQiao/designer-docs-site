@@ -9,7 +9,7 @@ A panel to set the system audio output volume.
 ## Modules to Import
 
 ```TypeScript
-import { AVVolumePanelParameter, AVVolumePanel } from '@ohos.multimedia.avVolumePanel';
+import { AVVolumePanelParameter, AVVolumePanel } from '@kit.AudioKit';
 ```
 
 ## volumeLevel
@@ -18,7 +18,8 @@ import { AVVolumePanelParameter, AVVolumePanel } from '@ohos.multimedia.avVolume
 volumeLevel?: number
 ```
 
-Sets the device volume through the volume panel. The value should be between mininum and maxinum current device volume, otherwise it will be discarded.
+Sets the device volume through the volume panel.
+The value should be between mininum and maxinum current device volume, otherwise it will be discarded.
 
 **Type:** number
 

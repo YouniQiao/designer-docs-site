@@ -6,5 +6,13 @@
 
 | Name | Description |
 | --- | --- |
-| [TriggerInfo](arkts-triggerinfo-i.md) | 作为[trigger](docroot://reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger)的入参定义触发WantAgent所需 要的信息。 |
+| [TriggerInfo](arkts-ability-triggerinfo-i.md) | The module defines the information required for triggering the WantAgent. The information is used as an inputparameter of [trigger](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger). |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [TriggerInfo](arkts-ability-triggerinfo-i-sys.md) | The module defines the information required for triggering the WantAgent. The information is used as an inputparameter of [trigger](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger). |
+<!--DelEnd-->
 

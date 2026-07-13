@@ -6,7 +6,7 @@ File position
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [PositionType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-positiontype-e.md#positiontype)
+**Substitutes:** [PositionType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-positiontype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

@@ -26,7 +26,10 @@ The component is not pulled down. This is the default value.
 Drag
 ```
 
-The component is being pulled down, but the pull-down distance is shorter than the refresh threshold. If you release the component, it enters the **Inactive** state. If you continue to pull down the component and the pull-down distance exceeds the refresh threshold, the component enters the **OverDrag** state.
+The component is being pulled down, but the pull-down distance is shorter than the refresh threshold.
+
+If you release the component, it enters the **Inactive** state. If you continue to pull down the component and the
+pull-down distance exceeds the refresh threshold, the component enters the **OverDrag** state.
 
 **Since:** 8
 
@@ -40,7 +43,10 @@ The component is being pulled down, but the pull-down distance is shorter than t
 OverDrag
 ```
 
-The component is being pulled down, and the pull-down distance exceeds the refresh threshold. If you release the component, the component enters the **Refresh** state. If you swipe upward and the pull-down distance is less than the refresh threshold, the component enters the **Drag** state.
+The component is being pulled down, and the pull-down distance exceeds the refresh threshold.
+
+If you release the component, the component enters the **Refresh** state. If you swipe upward and the pull-down
+distance is less than the refresh threshold, the component enters the **Drag** state.
 
 **Since:** 8
 
@@ -54,7 +60,8 @@ The component is being pulled down, and the pull-down distance exceeds the refre
 Refresh
 ```
 
-The pull-down ends, and the component rebounds to the minimum length required to trigger the refresh and enters the refreshing state.
+The pull-down ends, and the component rebounds to the minimum length required to trigger the refresh and enters the
+refreshing state.
 
 **Since:** 8
 

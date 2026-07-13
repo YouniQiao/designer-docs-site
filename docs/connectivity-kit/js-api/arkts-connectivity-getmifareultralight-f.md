@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## getMifareUltralight
@@ -12,7 +12,9 @@ import { tag } from '@ohos.nfc.tag';
 function getMifareUltralight(tagInfo: TagInfo): MifareUltralightTag
 ```
 
-Obtains an {@link MifareUltralightTag} object based on the tag information. During tag reading, if the tag supports the MIFARE Ultralight technology, an {@link MifareUltralightTag} object will be created based on the tag information.
+Obtains an {@link MifareUltralightTag} object based on the tag information.
+During tag reading, if the tag supports the MIFARE Ultralight technology,
+an {@link MifareUltralightTag} object will be created based on the tag information.
 
 **Since:** 12
 

@@ -102,7 +102,8 @@ Chip激活时的背景色。
 activatedBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-为激活的组件设置系统样式材质。不同的材料有不同的效果， 它可以影响组件的背景颜色、边框、阴影和其他视觉属性。
+为激活的组件设置系统样式材质。不同的材料有不同的效果，
+它可以影响组件的背景颜色、边框、阴影和其他视觉属性。
 
 **类型：** uiMaterial.Material
 
@@ -156,7 +157,8 @@ Chip背景色。
 backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-为组件设置系统样式材质。不同的材料有不同的效果，会影响 组件的背景颜色、边框、阴影和其他视觉属性。
+为组件设置系统样式材质。不同的材料有不同的效果，会影响
+组件的背景颜色、边框、阴影和其他视觉属性。
 
 **类型：** uiMaterial.Material
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { serialManager } from '@ohos.usbManager.serial';
+import { serialManager } from '@kit.BasicServicesKit';
 ```
 
 ## setAttribute
@@ -12,7 +12,8 @@ import { serialManager } from '@ohos.usbManager.serial';
 function setAttribute(portId: number, attribute: SerialAttribute): void
 ```
 
-Sets the parameters of the serial port. If this method is not called, the default configuration parameters are used (baud rate: 9600 bit/s; data bit: 8; parity bit: 0; stop bit: 1).
+Sets the parameters of the serial port. If this method is not called, the default configuration parameters are used
+(baud rate: 9600 bit/s; data bit: 8; parity bit: 0; stop bit: 1).
 
 **Since:** 19
 

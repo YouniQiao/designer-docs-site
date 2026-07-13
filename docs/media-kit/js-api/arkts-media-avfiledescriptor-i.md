@@ -1,6 +1,7 @@
 # AVFileDescriptor
 
-Media file descriptor. The caller needs to ensure that the fd is valid and the offset and length are correct.
+Media file descriptor. The caller needs to ensure that the fd is valid and
+the offset and length are correct.
 
 **Since:** 9
 
@@ -12,51 +13,54 @@ Media file descriptor. The caller needs to ensure that the fd is valid and the o
 import { media } from '@kit.MediaKit';
 ```
 
-## offset
+## fd
 
 ```TypeScript
-offset?: long
+fd: number
 ```
 
-The offset into the file where the data to be read, in bytes. By default, the offset is zero.
+The file descriptor of audio or video source from file system. The caller
+is responsible to close the file descriptor.
 
-**Type:** long
+**Type:** number
 
 **Since:** 9
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
 ## length
 
 ```TypeScript
-length?: long
+length?: number
 ```
 
-The length in bytes of the data to be read. By default, the length is the rest of bytes in the file from the offset.
+The length in bytes of the data to be read. By default, the length is the
+rest of bytes in the file from the offset.
 
-**Type:** long
+**Type:** number
 
 **Since:** 9
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## fd
+## offset
 
 ```TypeScript
-fd: int
+offset?: number
 ```
 
-The file descriptor of audio or video source from file system. The caller is responsible to close the file descriptor.
+The offset into the file where the data to be read, in bytes. By default,
+the offset is zero.
 
-**Type:** int
+**Type:** number
 
 **Since:** 9
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

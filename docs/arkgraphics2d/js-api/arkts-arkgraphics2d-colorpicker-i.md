@@ -1,6 +1,7 @@
 # ColorPicker
 
-A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to create a ColorPicker instance.
+A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to
+create a ColorPicker instance.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ A class used to obtain the color from an image. Before calling any method of Col
 ## Modules to Import
 
 ```TypeScript
-import { effectKit } from '@ohos.effectKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
 ## getAverageColor
@@ -18,7 +19,8 @@ import { effectKit } from '@ohos.effectKit';
 getAverageColor(): Color
 ```
 
-Obtains the average color from the image and writes the result to a Color instance. This API returns the result synchronously.
+Obtains the average color from the image and writes the result to a Color instance. This API returns the result
+synchronously.
 
 **Since:** 10
 
@@ -69,7 +71,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getHighestSaturationColor(): Color
 ```
 
-Obtains the color with the highest saturation from the image and writes the result to a Color instance. This API returns the result synchronously.
+Obtains the color with the highest saturation from the image and writes the result to a Color instance. This API
+returns the result synchronously.
 
 **Since:** 10
 
@@ -120,7 +123,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getLargestProportionColor(): Color
 ```
 
-Obtains the color with the largest proportion from the image and writes the result to a Color instance. This API returns the result synchronously.
+Obtains the color with the largest proportion from the image and writes the result to a Color instance. This API
+returns the result synchronously.
 
 **Since:** 10
 
@@ -171,7 +175,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getMainColor(): Promise<Color>
 ```
 
-Obtains the main color from the image and writes the result to a Color instance. This API uses a promise to return the result.
+Obtains the main color from the image and writes the result to a Color instance. This API uses a promise to
+return the result.
 
 **Since:** 9
 
@@ -224,7 +229,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getMainColorSync(): Color
 ```
 
-Obtains the main color from the image and writes the result to a Color instance. This API returns the result synchronously.
+Obtains the main color from the image and writes the result to a Color instance. This API returns the result
+synchronously.
 
 **Since:** 9
 
@@ -275,7 +281,8 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 getTopProportionColors(colorCount: number): Array<Color | null>
 ```
 
-Obtains a given number of colors with the top proportions in the image. This API returns the result synchronously.
+Obtains a given number of colors with the top proportions in the image. This API returns the result
+synchronously.
 
 **Since:** 12
 

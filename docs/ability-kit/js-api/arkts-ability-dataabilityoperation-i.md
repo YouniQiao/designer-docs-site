@@ -1,6 +1,8 @@
 # DataAbilityOperation
 
-The module defines the operation on DataAbilities. It can be used as an input parameter of [executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) to specify the database operation information.
+The module defines the operation on DataAbilities. It can be used as an input parameter of
+[executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch)
+to specify the database operation information.
 
 **Since:** 7
 
@@ -44,7 +46,8 @@ Specifies whether a batch operation can be interrupted.
 predicates?: dataAbility.DataAbilityPredicates
 ```
 
-Indicates the filter criteria to set. If this parameter is null, all data records will be operated by default.
+Indicates the filter criteria to set. If this parameter is null, all data records
+will be operated by default.
 
 **Type:** dataAbility.DataAbilityPredicates
 

@@ -1,6 +1,17 @@
 # KVStoreResultSet
 
-Provides APIs for obtaining the distributed KV store result sets. A maximum of eight result sets can be opened at a time. The **KVStoreResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. Before calling any API in **KVStoreResultSet**, you must use ** [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) ** to construct a **SingleKVStore** or **DeviceKVStore** instance. > **NOTE** > > The cursor start position of **KVStoreResultSet** is **-1**.
+Provides APIs for obtaining the distributed KV store result sets. A maximum of eight result sets can be opened at a
+time.
+The **KVStoreResultSet** instance is not refreshed in real time. After using the result set, if the data in the
+database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the
+latest data.
+Before calling any API in **KVStoreResultSet**, you must use **
+[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
+** to construct a **SingleKVStore** or **DeviceKVStore** instance.
+
+> **NOTE**
+>
+> The cursor start position of **KVStoreResultSet** is **-1**.
 
 **Since:** 9
 
@@ -9,7 +20,7 @@ Provides APIs for obtaining the distributed KV store result sets. A maximum of e
 ## Modules to Import
 
 ```TypeScript
-import { distributedKVStore } from '@ohos.data.distributedKVStore';
+import { distributedKVStore } from '@kit.ArkData';
 ```
 
 ## getCount
@@ -101,7 +112,9 @@ try {
 getPosition(): number
 ```
 
-Obtains the current data read position (position from which data is read) in the result set. The read position changes with the operations, such as [moveToFirst](arkts-arkdata-kvstoreresultset-i.md#movetofirst-1) and [moveToLast](arkts-arkdata-kvstoreresultset-i.md#movetolast-1).
+Obtains the current data read position (position from which data is read) in the result set. The read position
+changes with the operations, such as [moveToFirst](arkts-arkdata-kvstoreresultset-i.md#movetofirst-1) and
+[moveToLast](arkts-arkdata-kvstoreresultset-i.md#movetolast-1).
 
 **Since:** 9
 
@@ -309,7 +322,8 @@ try {
 move(offset: number): boolean
 ```
 
-Moves the data read position with the specified offset from the current position. That is, moves the number of rows specified by **offset** from the current position.
+Moves the data read position with the specified offset from the current position. That is, moves the number of
+rows specified by **offset** from the current position.
 
 **Since:** 9
 
@@ -448,7 +462,8 @@ try {
 moveToNext(): boolean
 ```
 
-Moves the data read position to the next row. If the result set is empty, **false** will be returned. This API applies when the whole result set is obtained.
+Moves the data read position to the next row. If the result set is empty, **false** will be returned. This API
+applies when the whole result set is obtained.
 
 **Since:** 9
 
@@ -547,7 +562,8 @@ try {
 moveToPrevious(): boolean
 ```
 
-Moves the data read position to the previous row. If the result set is empty, **false** will be returned. This API applies when the whole result set is obtained.
+Moves the data read position to the previous row. If the result set is empty, **false** will be returned. This
+API applies when the whole result set is obtained.
 
 **Since:** 9
 

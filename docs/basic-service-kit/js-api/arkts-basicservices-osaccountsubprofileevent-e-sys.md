@@ -14,7 +14,8 @@ Enumerates the events of an OS account sub-profile.
 CREATED = 0
 ```
 
-CREATED event. Triggered when an OS account sub-profile creation is completed.
+CREATED event.
+Triggered when an OS account sub-profile creation is completed.
 
 **Since:** 26.0.0
 
@@ -30,7 +31,8 @@ CREATED event. Triggered when an OS account sub-profile creation is completed.
 DELETED = 1
 ```
 
-DELETED event. Triggered when an OS account sub-profile deletion is completed.
+DELETED event.
+Triggered when an OS account sub-profile deletion is completed.
 
 **Since:** 26.0.0
 
@@ -46,7 +48,8 @@ DELETED event. Triggered when an OS account sub-profile deletion is completed.
 SWITCHING = 2
 ```
 
-SWITCHING event. Triggered when an OS account sub-profile switch is about to happen.
+SWITCHING event.
+Triggered when an OS account sub-profile switch is about to happen.
 
 **Since:** 26.0.0
 
@@ -62,7 +65,8 @@ SWITCHING event. Triggered when an OS account sub-profile switch is about to hap
 SWITCHED = 3
 ```
 
-SWITCHED event. Triggered when an OS account sub-profile switch is completed.
+SWITCHED event.
+Triggered when an OS account sub-profile switch is completed.
 
 **Since:** 26.0.0
 

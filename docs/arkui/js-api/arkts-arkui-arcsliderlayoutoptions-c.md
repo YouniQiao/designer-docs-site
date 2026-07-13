@@ -9,7 +9,7 @@ Defines the layout of the arc slider.
 ## Modules to Import
 
 ```TypeScript
-import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@ohos.arkui.advanced.ArcSlider';
+import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -38,7 +38,9 @@ A constructor used to create an **ArcSliderLayoutOptions** instance.
 position?: ArcSliderPosition
 ```
 
-Position of the arc slider on the screen. Default value: **ArcSliderPosition.RIGHT**
+Position of the arc slider on the screen.
+
+Default value: **ArcSliderPosition.RIGHT**
 
 **Type:** ArcSliderPosition
 
@@ -56,7 +58,9 @@ Position of the arc slider on the screen. Default value: **ArcSliderPosition.RIG
 reverse?: boolean
 ```
 
-Whether the value range of the arc slider is reversed. **false**: top-to-bottom sliding. **true** (default): bottom-to-top sliding.
+Whether the value range of the arc slider is reversed. **false**: top-to-bottom sliding.
+
+**true** (default): bottom-to-top sliding.
 
 **Type:** boolean
 

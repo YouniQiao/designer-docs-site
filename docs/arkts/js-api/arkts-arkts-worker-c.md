@@ -2,7 +2,7 @@
 
 The Worker class contains all Worker functions.
 
-**Inheritance/Implementation:** Worker implements [EventTarget](arkts-arkts-eventtarget-i.md#eventtarget)
+**Inheritance/Implementation:** Worker implements [EventTarget](arkts-arkts-eventtarget-i.md)
 
 **Since:** 7
 
@@ -15,7 +15,7 @@ The Worker class contains all Worker functions.
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## constructor
@@ -131,7 +131,8 @@ workerInstance.on("alert", () => {
 once(type: string, listener: EventListener): void
 ```
 
-Adds an event listener to the worker and removes the event listener automatically after it is invoked once.
+Adds an event listener to the worker
+and removes the event listener automatically after it is invoked once.
 
 **Since:** 7
 
@@ -167,7 +168,8 @@ workerInstance.once("alert", () => {
 postMessage(message: Object, transfer: ArrayBuffer[]): void
 ```
 
-Sends a message to the worker thread. The data is transferred using the structured clone algorithm.
+Sends a message to the worker thread.
+The data is transferred using the structured clone algorithm.
 
 **Since:** 7
 
@@ -203,7 +205,8 @@ workerInstance.postMessage(buffer, [buffer]);
 postMessage(message: Object, options?: PostMessageOptions): void
 ```
 
-Sends a message to the worker thread. The data is transferred using the structured clone algorithm.
+Sends a message to the worker thread.
+The data is transferred using the structured clone algorithm.
 
 **Since:** 7
 
@@ -268,7 +271,9 @@ workerInstance.terminate();
 onerror?: (err: ErrorEvent) => void
 ```
 
-The onerror attribute of the worker specifies the event handler to be called when an exception occurs during worker execution. The event handler is executed in the host thread.
+The onerror attribute of the worker specifies the event handler to be called
+when an exception occurs during worker execution.
+The event handler is executed in the host thread.
 
 **Type:** (err: ErrorEvent) => void
 
@@ -286,7 +291,8 @@ The onerror attribute of the worker specifies the event handler to be called whe
 onexit?: (code: number) => void
 ```
 
-Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function, the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
+Called when the Worker thread exits. The event handler is executed in the host thread. In the callback function,
+the code value is of the number type, where the value 1 indicates abnormal exit and 0 indicates normal exit.The default value is undefined.
 
 **Type:** (code: number) => void
 
@@ -304,7 +310,10 @@ Called when the Worker thread exits. The event handler is executed in the host t
 onmessage?: (event: MessageEvent) => void
 ```
 
-The onmessage attribute of the worker specifies the event handler to be called then the host thread receives a message created by itself and sent by the worker through the parentPort.postMessage. The event handler is executed in the host thread.
+The onmessage attribute of the worker specifies the event handler
+to be called then the host thread receives a message created by itself
+and sent by the worker through the parentPort.postMessage.
+The event handler is executed in the host thread.
 
 **Type:** (event: MessageEvent) => void
 
@@ -322,7 +331,9 @@ The onmessage attribute of the worker specifies the event handler to be called t
 onmessageerror?: (event: MessageEvent) => void
 ```
 
-The onmessage attribute of the worker specifies the event handler when the worker receives a message that cannot be serialized. The event handler is executed in the host thread.
+The onmessage attribute of the worker specifies the event handler
+when the worker receives a message that cannot be serialized.
+The event handler is executed in the host thread.
 
 **Type:** (event: MessageEvent) => void
 

@@ -1,8 +1,9 @@
 # PartnerAgentExtensionAbility
 
-Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices.
+Class for the PartnerAgentExtensionAbility.
+Applications can use this ability to discover devices.
 
-**Inheritance/Implementation:** PartnerAgentExtensionAbility extends [ExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-extensionability-c.md#extensionability)
+**Inheritance/Implementation:** PartnerAgentExtensionAbility extends [ExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-extensionability-c.md)
 
 **Since:** 23
 
@@ -11,7 +12,7 @@ Class for the PartnerAgentExtensionAbility. Applications can use this ability to
 ## Modules to Import
 
 ```TypeScript
-import { PartnerAgentExtensionAbility } from '@ohos.FusionConnectivity.PartnerAgentExtensionAbility';
+import { PartnerAgentExtensionAbility } from '@kit.ConnectivityKit';
 ```
 
 ## onDestroyWithReason
@@ -20,7 +21,8 @@ import { PartnerAgentExtensionAbility } from '@ohos.FusionConnectivity.PartnerAg
 onDestroyWithReason(reason: PartnerAgentExtensionAbilityDestroyReason): void
 ```
 
-Called when the PartnerAgentExtensionAbility is to be destroyed. Applications can clean up resources in this callback function.
+Called when the PartnerAgentExtensionAbility is to be destroyed.
+Applications can clean up resources in this callback function.
 
 **Since:** 23
 

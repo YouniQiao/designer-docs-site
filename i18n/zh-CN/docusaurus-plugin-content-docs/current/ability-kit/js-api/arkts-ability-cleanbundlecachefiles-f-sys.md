@@ -6,7 +6,9 @@
 function cleanBundleCacheFiles(bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-根据给定的bundleName清理BundleCache。使用callback异步回调。 调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName清理BundleCache。使用callback异步回调。
+
+调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 9
 
@@ -21,7 +23,7 @@ function cleanBundleCacheFiles(bundleName: string, callback: AsyncCallback<void>
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 表示要清理其缓存数据的应用程序的bundleName。 |
-| callback | AsyncCallback&lt;void&gt; | 是 | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback)，当清理应用缓存目录数据成功，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md)，当清理应用缓存目录数据成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
@@ -29,7 +31,7 @@ function cleanBundleCacheFiles(bundleName: string, callback: AsyncCallback<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700030](../errorcode-bundle.md#17700030-指定的应用不支持清除缓存文件) | The specified bundle does not support clearing of cache files. |
 
@@ -64,7 +66,9 @@ try {
 function cleanBundleCacheFiles(bundleName: string): Promise<void>
 ```
 
-根据给定的bundleName清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName清理BundleCache。使用Promise异步回调。
+
+调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 9
 
@@ -92,7 +96,7 @@ function cleanBundleCacheFiles(bundleName: string): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700030](../errorcode-bundle.md#17700030-指定的应用不支持清除缓存文件) | The specified bundle does not support clearing of cache files. |
 
@@ -125,7 +129,9 @@ try {
 function cleanBundleCacheFiles(bundleName: string, appIndex: number): Promise<void>
 ```
 
-根据给定的bundleName和appIndex清理BundleCache。使用Promise异步回调。 调用方清理自身缓存数据时不需要权限。
+根据给定的bundleName和appIndex清理BundleCache。使用Promise异步回调。
+
+调用方清理自身缓存数据时不需要权限。
 
 **起始版本：** 15
 
@@ -154,7 +160,7 @@ function cleanBundleCacheFiles(bundleName: string, appIndex: number): Promise<vo
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700030](../errorcode-bundle.md#17700030-指定的应用不支持清除缓存文件) | The specified bundle does not support clearing of cache files. |
 | [17700061](../errorcode-bundle.md#17700061-指定的应用分身索引无效) | AppIndex not in valid range. |

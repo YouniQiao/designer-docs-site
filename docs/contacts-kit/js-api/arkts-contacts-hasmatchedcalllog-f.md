@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## hasMatchedCallLog
@@ -12,7 +12,9 @@ import { contact } from '@ohos.contact';
 function hasMatchedCallLog(context: Context, phoneNumber: string, minDuration: number): Promise<boolean>
 ```
 
-Check whether there are any calls that meet the specified condition. By default, the system queries call records generated within 6 hours.
+Check whether there are any calls that meet the specified condition.
+
+By default, the system queries call records generated within 6 hours.
 
 **Since:** 24
 

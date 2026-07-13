@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { startupManager } from '@ohos.app.appstartup.startupManager';
+import { startupManager } from '@kit.AbilityKit';
 ```
 
 ## run
@@ -12,7 +12,13 @@ import { startupManager } from '@ohos.app.appstartup.startupManager';
 function run(startupTasks: Array<string>, config?: StartupConfig): Promise<void>
 ```
 
-Runs startup tasks or loads .so files. > **NOTE** > > This API cannot be used to run startup tasks defined in a feature-type HAP. To run those tasks, use > [startupManager.run](arkts-ability-run-f.md#run-2) > .
+Runs startup tasks or loads .so files.
+
+> **NOTE**
+>
+> This API cannot be used to run startup tasks defined in a feature-type HAP. To run those tasks, use
+> [startupManager.run](arkts-ability-run-f.md#run-2)
+> .
 
 **Since:** 12
 
@@ -24,7 +30,7 @@ Runs startup tasks or loads .so files. > **NOTE** > > This API cannot be used to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startupTasks | Array&lt;string&gt; | Yes | Array of [StartupTask](arkts-ability-startuptask-c.md#startuptask)names or names of .so files to be preloaded. |
+| startupTasks | Array&lt;string&gt; | Yes | Array of [StartupTask](arkts-ability-startuptask-c.md)names or names of .so files to be preloaded. |
 | config | StartupConfig | No | Configuration for the timeout duration and listener of startup tasks inAppStartup. |
 
 **Return value:**
@@ -81,7 +87,9 @@ export default class EntryAbility extends UIAbility {
 function run(startupTasks: Array<string>, context: common.AbilityStageContext, config: StartupConfig): Promise<void>
 ```
 
-Runs startup tasks or loads .so files. You can specify [AbilityStageContext](arkts-ability-abilitystagecontext-c.md#abilitystagecontext) for loading startup tasks. This API uses a promise to return the result.
+Runs startup tasks or loads .so files. You can specify
+[AbilityStageContext](arkts-ability-abilitystagecontext-c.md) for loading startup tasks. This
+API uses a promise to return the result.
 
 **Since:** 20
 
@@ -93,8 +101,8 @@ Runs startup tasks or loads .so files. You can specify [AbilityStageContext](ark
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startupTasks | Array&lt;string&gt; | Yes | Array of [StartupTask](arkts-ability-startuptask-c.md#startuptask)names or names of .so files to be preloaded. |
-| context | common.AbilityStageContext | Yes | AbilityStage context that executes the[StartupTask](arkts-ability-startuptask-c.md#startuptask). It is passed as an input parameter to[init](arkts-ability-startuptask-c.md#init-1) of the task. |
+| startupTasks | Array&lt;string&gt; | Yes | Array of [StartupTask](arkts-ability-startuptask-c.md)names or names of .so files to be preloaded. |
+| context | common.AbilityStageContext | Yes | AbilityStage context that executes the[StartupTask](arkts-ability-startuptask-c.md). It is passed as an input parameter to[init](arkts-ability-startuptask-c.md#init-1) of the task. |
 | config | StartupConfig | Yes | Configuration for the timeout duration and listener of startup tasks inAppStartup. |
 
 **Return value:**

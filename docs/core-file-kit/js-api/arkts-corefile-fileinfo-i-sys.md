@@ -13,7 +13,7 @@ Represents information about a file or directory in the **Recently deleted** lis
 ## Modules to Import
 
 ```TypeScript
-import { trash } from '@ohos.file.trash';
+import { trash } from '@kit.CoreFileKit';
 ```
 
 ## ctime
@@ -22,7 +22,8 @@ import { trash } from '@ohos.file.trash';
 readonly ctime: number
 ```
 
-Time when the file or directory was created. It is the number of seconds elapsed since the Unix epoch (00:00:00 UTC on January 1, 1970).
+Time when the file or directory was created. It is the number of seconds elapsed since the Unix epoch (00:00:00
+UTC on January 1, 1970).
 
 **Type:** number
 
@@ -82,7 +83,8 @@ Permission on the file or directory.
 readonly mtime: number
 ```
 
-Time when the file or directory was last modified. It is the number of milliseconds elapsed since the Unix epoch (00:00:00 UTC on January 1, 1970).
+Time when the file or directory was last modified. It is the number of milliseconds elapsed since the Unix epoch
+(00:00:00 UTC on January 1, 1970).
 
 **Type:** number
 

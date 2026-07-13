@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getConnectionPropertiesSync
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getConnectionPropertiesSync(netHandle: NetHandle): ConnectionProperties
 ```
 
-Queries the connection properties of a network. This method requires the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Queries the connection properties of a network.
+This method requires the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 10
 

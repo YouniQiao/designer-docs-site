@@ -1,6 +1,7 @@
 # AudioHapticManager
 
-Manages the audio-haptic feature. Before calling any API in AudioHapticManager, you must use [getAudioHapticManager](arkts-audio-getaudiohapticmanager-f.md#getaudiohapticmanager-1) to create an AudioHapticManager instance.
+Manages the audio-haptic feature. Before calling any API in AudioHapticManager, you must use
+[getAudioHapticManager](arkts-audio-getaudiohapticmanager-f.md#getaudiohapticmanager-1) to create an AudioHapticManager instance.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Manages the audio-haptic feature. Before calling any API in AudioHapticManager, 
 ## Modules to Import
 
 ```TypeScript
-import { audioHaptic } from '@ohos.multimedia.audioHaptic';
+import { audioHaptic } from '@kit.AudioKit';
 ```
 
 ## createPlayer
@@ -18,7 +19,8 @@ import { audioHaptic } from '@ohos.multimedia.audioHaptic';
 createPlayer(id: number, options?: AudioHapticPlayerOptions): Promise<AudioHapticPlayer>
 ```
 
-Create an audio haptic player. This method uses a promise to return the result. If haptics is needed, caller should have the permission of ohos.permission.VIBRATE.
+Create an audio haptic player. This method uses a promise to return the result. If haptics is needed, caller
+should have the permission of ohos.permission.VIBRATE.
 
 **Since:** 11
 
@@ -74,7 +76,14 @@ audioHapticManagerInstance.createPlayer(id, options).then((value: audioHaptic.Au
 registerSource(audioUri: string, hapticUri: string): Promise<number>
 ```
 
-Registers audio and haptic resources via URIs. This API uses a promise to return the result. > **NOTE** > > A maximum of 128 resources can be registered at the same time for an application. Any attempt to register > beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number > of registered resources. For resources that are no longer used, you are advised to unregister them in a timely > manner.
+Registers audio and haptic resources via URIs. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> A maximum of 128 resources can be registered at the same time for an application. Any attempt to register
+> beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number
+> of registered resources. For resources that are no longer used, you are advised to unregister them in a timely
+> manner.
 
 **Since:** 11
 
@@ -84,8 +93,8 @@ Registers audio and haptic resources via URIs. This API uses a promise to return
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| audioUri | string | Yes | URI of the audio source.<br>- For details about the supported audio resource formatsand path formats in the normal latency mode, see [AVPlayer](../../apis-media-kit/arkts-apis/arkts-multimedia-media.md#media).<br>- Fordetails about the supported audio resource formats in the low-latency mode, see[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool). The pathformat must meet the requirements described in[fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>- In both modes, youare advised to pass in the absolute path of the file. |
-| hapticUri | string | Yes | URI of the haptic source.<br>For details about the supported haptic resourceformats, see [HapticFileDescriptor](../../apis-sensor-service-kit/arkts-apis/arkts-sensorservice-hapticfiledescriptor-i.md#hapticfiledescriptor). The path format mustmeet the requirements described in[fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>You are advised topass in the absolute path of the file. |
+| audioUri | string | Yes | URI of the audio source.<br>- For details about the supported audio resource formatsand path formats in the normal latency mode, see [AVPlayer](../../apis-media-kit/arkts-apis/arkts-multimedia-media.md).<br>- Fordetails about the supported audio resource formats in the low-latency mode, see[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool). The pathformat must meet the requirements described in[fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>- In both modes, youare advised to pass in the absolute path of the file. |
+| hapticUri | string | Yes | URI of the haptic source.<br>For details about the supported haptic resourceformats, see [HapticFileDescriptor](../../apis-sensor-service-kit/arkts-apis/arkts-sensorservice-hapticfiledescriptor-i.md). The path format mustmeet the requirements described in[fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen).<br>You are advised topass in the absolute path of the file. |
 
 **Return value:**
 
@@ -123,7 +132,14 @@ audioHapticManagerInstance.registerSource(audioUri, hapticUri).then((value: numb
 registerSourceFromFd(audioFd: AudioHapticFileDescriptor, hapticFd: AudioHapticFileDescriptor): Promise<number>
 ```
 
-Registers audio and haptic resources via file descriptors. This API uses a promise to return the result. > **NOTE** > > A maximum of 128 resources can be registered at the same time for an application. Any attempt to register > beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number > of registered resources. For resources that are no longer used, you are advised to unregister them in a timely > manner.
+Registers audio and haptic resources via file descriptors. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> A maximum of 128 resources can be registered at the same time for an application. Any attempt to register
+> beyond this limit will fail (returning a negative resource ID). You are advised to reasonably manage the number
+> of registered resources. For resources that are no longer used, you are advised to unregister them in a timely
+> manner.
 
 **Since:** 20
 
@@ -260,7 +276,12 @@ audioHapticManagerInstance.setStreamUsage(id, usage);
 unregisterSource(id: number): Promise<void>
 ```
 
-Unregisters an audio-haptic source. This API uses a promise to return the result. > **NOTE** > > For resources that are no longer used, you are advised to unregister them in a timely manner to avoid issues > such as resource leaks or the number of resources exceeding the upper limit.
+Unregisters an audio-haptic source. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> For resources that are no longer used, you are advised to unregister them in a timely manner to avoid issues
+> such as resource leaks or the number of resources exceeding the upper limit.
 
 **Since:** 11
 

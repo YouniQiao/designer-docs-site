@@ -9,7 +9,7 @@ Serial port communication configuration.
 ## Modules to Import
 
 ```TypeScript
-import { serial } from '@ohos.busManager.serial';
+import { serial } from '@kit.BasicServicesKit';
 ```
 
 ## baudRate
@@ -18,7 +18,11 @@ import { serial } from '@ohos.busManager.serial';
 baudRate?: number
 ```
 
-Baud rate. The value must be an integer. Value constraint: standard baud rates. <br>Unit: bit/s <br>Default value: 115200
+Baud rate.
+The value must be an integer.
+Value constraint: standard baud rates.
+<br>Unit: bit/s
+<br>Default value: 115200
 
 **Type:** number
 
@@ -36,7 +40,8 @@ Baud rate. The value must be an integer. Value constraint: standard baud rates. 
 dataBits?: DataBits
 ```
 
-Data bits. <br>Default value: EIGHT
+Data bits.
+<br>Default value: EIGHT
 
 **Type:** DataBits
 
@@ -54,7 +59,8 @@ Data bits. <br>Default value: EIGHT
 parity?: Parity
 ```
 
-Parity bit. <br>Default value: NONE
+Parity bit.
+<br>Default value: NONE
 
 **Type:** Parity
 
@@ -72,7 +78,8 @@ Parity bit. <br>Default value: NONE
 rtscts?: boolean
 ```
 
-Whether to enable hardware-based automatic flow control. <br>Default value: false.
+Whether to enable hardware-based automatic flow control.
+<br>Default value: false.
 
 **Type:** boolean
 
@@ -90,7 +97,9 @@ Whether to enable hardware-based automatic flow control. <br>Default value: fals
 stopBits?: StopBits
 ```
 
-Stop bits. Default value: ONE
+Stop bits.
+
+Default value: ONE
 
 **Type:** StopBits
 
@@ -108,7 +117,8 @@ Stop bits. Default value: ONE
 xany?: boolean
 ```
 
-Whether to enable XANY to control the flow. <br>Default value: false
+Whether to enable XANY to control the flow.
+<br>Default value: false
 
 **Type:** boolean
 
@@ -126,7 +136,8 @@ Whether to enable XANY to control the flow. <br>Default value: false
 xoff?: boolean
 ```
 
-Whether to enable XOFF to control the reception of flows. <br>Default value: false
+Whether to enable XOFF to control the reception of flows.
+<br>Default value: false
 
 **Type:** boolean
 
@@ -144,7 +155,8 @@ Whether to enable XOFF to control the reception of flows. <br>Default value: fal
 xon?: boolean
 ```
 
-Whether to enable XON to control the sending of flows. <br>Default value: false
+Whether to enable XON to control the sending of flows.
+<br>Default value: false
 
 **Type:** boolean
 

@@ -40,7 +40,8 @@ Sets the page exit animation.
 onExit(event: PageTransitionCallback): PageTransitionExitInterface
 ```
 
-Invoked on a per-frame basis until the exit animation is complete, with the **progress** parameter changing from 0 to 1.
+Invoked on a per-frame basis until the exit animation is complete, with the **progress** parameter changing from 0
+to 1.
 
 **Since:** 7
 

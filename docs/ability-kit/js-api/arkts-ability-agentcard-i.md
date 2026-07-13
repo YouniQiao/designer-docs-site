@@ -84,7 +84,8 @@ The category of this agent.
 defaultInputModes: Array<string>
 ```
 
-The set of interaction modes that the agent supports across all skills. This can be overridden per skill. Defined as media types.
+The set of interaction modes that the agent supports across all skills.
+This can be overridden per skill. Defined as media types.
 
 **Type:** Array<string>
 
@@ -246,7 +247,9 @@ Skills represent the abilities of an agent.
 type?: agentConstant.AgentCardType
 ```
 
-The type of the AgentCard. When `type` is `agentConstant.AgentCardType.LOW_CODE`, the corresponding application must be a system application. Otherwise, the agent card cannot be registered, installed, or updated.
+The type of the AgentCard.
+When `type` is `agentConstant.AgentCardType.LOW_CODE`, the corresponding application must be a system application.
+Otherwise, the agent card cannot be registered, installed, or updated.
 
 **Type:** agentConstant.AgentCardType
 

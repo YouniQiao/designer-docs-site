@@ -1,8 +1,8 @@
 # MenuOptions
 
-菜单项的信息，继承自[ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md#contextmenuoptions)。
+菜单项的信息，继承自[ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md)。
 
-**继承/实现关系：** MenuOptions extends [ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md#contextmenuoptions)
+**继承/实现关系：** MenuOptions extends [ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md)
 
 **起始版本：** 10
 
@@ -14,7 +14,15 @@
 showInSubWindow?: boolean
 ```
 
-是否在子窗口显示菜单。 true：在子窗口显示菜单；false：不在子窗显示菜单。 默认值：2in1设备上为true，其他设备为false。 **说明：** 仅对2in1设备生效。
+是否在子窗口显示菜单。
+
+true：在子窗口显示菜单；false：不在子窗显示菜单。
+
+默认值：2in1设备上为true，其他设备为false。
+
+**说明：**
+
+仅对2in1设备生效。
 
 **类型：** boolean
 
@@ -34,7 +42,11 @@ showInSubWindow?: boolean
 title?: ResourceStr
 ```
 
-菜单标题。 **说明：** 仅在content设置为Array<[MenuElement](arkts-arkui-menuelement-i.md#menuelement)> 时生效。
+菜单标题。
+
+**说明：**
+
+仅在content设置为Array<[MenuElement](arkts-arkui-menuelement-i.md)> 时生效。
 
 **类型：** ResourceStr
 

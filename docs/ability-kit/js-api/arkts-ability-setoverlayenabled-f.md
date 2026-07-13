@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { overlay } from '@ohos.bundle.overlay';
+import { overlay } from '@kit.AbilityKit';
 ```
 
 ## setOverlayEnabled
@@ -12,7 +12,8 @@ import { overlay } from '@ohos.bundle.overlay';
 function setOverlayEnabled(moduleName:string, isEnabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Enables or disables a module with the overlay feature in the current application. This API uses an asynchronous callback to return the result.
+Enables or disables a module with the overlay feature in the current application. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 10
 
@@ -24,7 +25,7 @@ Enables or disables a module with the overlay feature in the current application
 | --- | --- | --- | --- |
 | moduleName | string | Yes | Name of the module with the overlay feature. |
 | isEnabled | boolean | Yes | Whether to enable the module with the overlay feature. **true** to enable, **false**otherwise. |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -66,7 +67,8 @@ try {
 function setOverlayEnabled(moduleName:string, isEnabled: boolean): Promise<void>
 ```
 
-Enables or disables a module with the overlay feature in the current application. This API uses a promise to return the result.
+Enables or disables a module with the overlay feature in the current application. This API uses a promise to return
+the result.
 
 **Since:** 10
 

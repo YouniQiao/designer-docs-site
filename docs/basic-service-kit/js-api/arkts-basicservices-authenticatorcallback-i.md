@@ -1,19 +1,24 @@
 # AuthenticatorCallback
 
-Provides OAuth authenticator callbacks. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [AuthCallback](arkts-basicservices-authcallback-i.md#authcallback) instead.
+Provides OAuth authenticator callbacks.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [AuthCallback](arkts-basicservices-authcallback-i.md) instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [AuthCallback](arkts-basicservices-authcallback-i.md#authcallback)
+**Substitutes:** [AuthCallback](arkts-basicservices-authcallback-i.md)
 
 **System capability:** SystemCapability.Account.AppAccount
 
 ## Modules to Import
 
 ```TypeScript
-import { appAccount } from '@ohos.account.appAccount';
+import { appAccount } from '@kit.BasicServicesKit';
 ```
 
 ## onRequestRedirected
@@ -22,7 +27,11 @@ import { appAccount } from '@ohos.account.appAccount';
 onRequestRedirected: (request: Want) => void
 ```
 
-Called to redirect a request. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. Use [onRequestRedirected](#onrequestredirected9) instead.
+Called to redirect a request.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. Use [onRequestRedirected](#onrequestredirected9) instead.
 
 **Type:** (request: Want) => void
 
@@ -40,7 +49,11 @@ Called to redirect a request. > **NOTE** > > This API is supported since API ver
 onResult: (code: number, result: { [key: string]: any }) => void
 ```
 
-Called to return the result of an authentication request. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. Use [onResult](#onresult9) instead.
+Called to return the result of an authentication request.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. Use [onResult](#onresult9) instead.
 
 **Type:** (code: number, result: { [key: string]: any }) => void
 

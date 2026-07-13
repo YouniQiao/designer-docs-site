@@ -1,6 +1,11 @@
 # Counter
 
-The **Counter** component provides an operation to increase or decrease the number. > **NOTE** > - This component supports [WithTheme]{@link with_theme} since API version 26.0.0.
+The **Counter** component provides an operation to increase or decrease the number.
+
+> **NOTE**
+
+> - This component supports [WithTheme]{@link with_theme} since API version 26.0.0.
+
 
 ## Counter
 

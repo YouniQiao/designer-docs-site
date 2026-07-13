@@ -30,7 +30,11 @@ icon: string | Resource
 text?: string | Resource
 ```
 
-文本信息。 默认值：空字符串 **说明**：当文本长度大于列宽时，文本被截断。
+文本信息。
+
+默认值：空字符串
+
+**说明**：当文本长度大于列宽时，文本被截断。
 
 **类型：** string | Resource
 

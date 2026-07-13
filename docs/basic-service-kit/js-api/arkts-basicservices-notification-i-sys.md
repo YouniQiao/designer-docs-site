@@ -9,7 +9,7 @@ Describes the custom information of the notification bar.
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## disable
@@ -18,7 +18,9 @@ import { request } from '@ohos.request';
 disable?: boolean
 ```
 
-Disables the notification. If the value is false, a notification will be displayed, otherwise nothing will be displayed. If not specified, the value is false.
+Disables the notification.
+If the value is false, a notification will be displayed, otherwise nothing will be displayed.
+If not specified, the value is false.
 
 **Type:** boolean
 

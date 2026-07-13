@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## getAllContinuousTasks
@@ -12,7 +12,8 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function getAllContinuousTasks(context: Context): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. This API uses a promise to return the result.
+Obtains all continuous task information, including the task ID and type. This API uses a promise to return the
+result.
 
 **Since:** 20
 
@@ -24,7 +25,7 @@ Obtains all continuous task information, including the task ID and type. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 
 **Return value:**
 
@@ -72,7 +73,8 @@ export default class EntryAbility extends UIAbility {
 function getAllContinuousTasks(context: Context, includeSuspended: boolean): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. It supports specifying whether to include suspended tasks and uses a promise to return the result.
+Obtains all continuous task information, including the task ID and type. It supports specifying whether to include
+suspended tasks and uses a promise to return the result.
 
 **Since:** 20
 
@@ -84,7 +86,7 @@ Obtains all continuous task information, including the task ID and type. It supp
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
+| context | Context | Yes | Application context.<br>For details about the application context of the FA model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md).<br>For details about the application context of the stage model, see[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md).<br> Note: Continuous tasks can be requested only by theUIAbility in the stage model and the ServiceAbility in the FA model. |
 | includeSuspended | boolean | Yes | Whether to obtain the information about the suspended continuous task. Thevalue **true** means to obtain the information, and the value **false** means the opposite. |
 
 **Return value:**

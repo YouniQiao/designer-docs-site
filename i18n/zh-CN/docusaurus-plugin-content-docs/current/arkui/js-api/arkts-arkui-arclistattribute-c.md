@@ -1,6 +1,6 @@
 # ArcListAttribute
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
 
 **继承/实现关系：** ArcListAttribute extends [CommonMethod<ArcListAttribute>](CommonMethod<ArcListAttribute>)
 
@@ -14,7 +14,9 @@
 cachedCount(count: Optional<number>): ArcListAttribute
 ```
 
-设置列表中ArcListItem的预加载数量，懒加载场景只会预加载ArcList显示区域外上下各cachedCount行的ArcListItem，非懒加载场景会全部加载。 懒加载、非懒加载都只布局ArcList显示区域+ArcList显示区域外上下各cachedCount行的ArcListItem。 ArcList设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ArcListItem。
+设置列表中ArcListItem的预加载数量，懒加载场景只会预加载ArcList显示区域外上下各cachedCount行的ArcListItem，非懒加载场景会全部加载。
+懒加载、非懒加载都只布局ArcList显示区域+ArcList显示区域外上下各cachedCount行的ArcListItem。
+ArcList设置cachedCount后，显示区域外上下各会预加载并布局cachedCount行ArcListItem。
 
 **起始版本：** 18
 
@@ -40,7 +42,9 @@ cachedCount(count: Optional<number>): ArcListAttribute
 chainAnimation(enable: Optional<boolean>): ArcListAttribute
 ```
 
-设置当前ArcList是否启用链式联动动效，开启后列表滑动以及顶部和底部拖拽时会有链式联动的效果。 链式联动效果：ArcList内的ArcListItem间隔一定距离，在基本的滑动交互行为下，主动对象驱动从动对象进行联动，驱动效果遵循弹簧物理动效。 链式动效生效需要满足前提条件：ArcList边缘效果为EdgeEffect.Spring类型。
+设置当前ArcList是否启用链式联动动效，开启后列表滑动以及顶部和底部拖拽时会有链式联动的效果。
+链式联动效果：ArcList内的ArcListItem间隔一定距离，在基本的滑动交互行为下，主动对象驱动从动对象进行联动，驱动效果遵循弹簧物理动效。
+链式动效生效需要满足前提条件：ArcList边缘效果为EdgeEffect.Spring类型。
 
 **起始版本：** 18
 
@@ -248,7 +252,8 @@ onDidScroll(handler: Optional<OnScrollCallback>): ArcListAttribute
 onReachEnd(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-列表到达末尾位置时触发。 ArcList边缘效果为弹簧效果时，划动经过末尾位置时触发一次该事件，回弹回末尾位置时再触发一次该事件。
+列表到达末尾位置时触发。
+ArcList边缘效果为弹簧效果时，划动经过末尾位置时触发一次该事件，回弹回末尾位置时再触发一次该事件。
 
 **起始版本：** 18
 
@@ -274,7 +279,8 @@ onReachEnd(handler: Optional<VoidCallback>): ArcListAttribute
 onReachStart(handler: Optional<VoidCallback>): ArcListAttribute
 ```
 
-列表到达起始位置时触发。 当ArcList进行初始化时，若initialIndex设定为0，将触发一次事件。当ArcList滚动至起始位置，亦会触发一次事件。在ArcList的边缘效果设置为弹簧效果时，滑动经过起始位置时会触发一次事件，而在回弹返回起始位置时，将再次触发一次事件。
+列表到达起始位置时触发。
+当ArcList进行初始化时，若initialIndex设定为0，将触发一次事件。当ArcList滚动至起始位置，亦会触发一次事件。在ArcList的边缘效果设置为弹簧效果时，滑动经过起始位置时会触发一次事件，而在回弹返回起始位置时，将再次触发一次事件。
 
 **起始版本：** 18
 
@@ -300,7 +306,8 @@ onReachStart(handler: Optional<VoidCallback>): ArcListAttribute
 onScrollIndex(handler: Optional<ArcScrollIndexHandler>): ArcListAttribute
 ```
 
-当子组件划入或划出ArcList的显示区域时，将触发此事件。在ArcList初始化时，此事件会被触发一次。当ArcList显示区域内的首个或末个子组件的索引值发生变化，或是显示区域中心的子组件发生变动时，同样会触发此事件。 ArcList的边缘效果为弹簧效果时，在ArcList划动到边缘继续划动和松手回弹过程不会触发onScrollIndex事件。
+当子组件划入或划出ArcList的显示区域时，将触发此事件。在ArcList初始化时，此事件会被触发一次。当ArcList显示区域内的首个或末个子组件的索引值发生变化，或是显示区域中心的子组件发生变动时，同样会触发此事件。
+ArcList的边缘效果为弹簧效果时，在ArcList划动到边缘继续划动和松手回弹过程不会触发onScrollIndex事件。
 
 **起始版本：** 18
 

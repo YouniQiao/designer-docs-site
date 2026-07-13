@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## removeGroupByBundle
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function removeGroupByBundle(bundle: BundleOption, groupName: string, callback: AsyncCallback<void>): void
 ```
 
-Removes notifications under a notification group of the specified application. This API uses an asynchronous callback to return the result.
+Removes notifications under a notification group of the specified application. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -69,7 +70,8 @@ notificationManager.removeGroupByBundle(bundleOption, groupName, removeGroupByBu
 function removeGroupByBundle(bundle: BundleOption, groupName: string): Promise<void>
 ```
 
-Removes notifications under a notification group of the specified application. This API uses a promise to return the result.
+Removes notifications under a notification group of the specified application. This API uses a promise to return
+the result.
 
 **Since:** 9
 

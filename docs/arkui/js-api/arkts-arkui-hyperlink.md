@@ -1,6 +1,11 @@
 # Hyperlink
 
-The **Hyperlink** component implements a link from a location in the component to another location. > **NOTE** > > - This component must be used with the system browser.
+The **Hyperlink** component implements a link from a location in the component to another location.
+
+> **NOTE**
+>
+> - This component must be used with the system browser.
+
 
 ## Hyperlink
 

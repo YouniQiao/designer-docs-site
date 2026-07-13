@@ -1,6 +1,7 @@
 # GutterOption
 
-Provides the gutter options for the grid layout to define the spacing between child components in different directions.
+Provides the gutter options for the grid layout to define the spacing between child components in different
+directions.
 
 **Since:** 9
 
@@ -12,7 +13,8 @@ Provides the gutter options for the grid layout to define the spacing between ch
 x?: Length | GridRowSizeOption
 ```
 
-Horizontal spacing between grid child components. Unit: vp.
+Horizontal spacing between grid child components.
+Unit: vp.
 
 **Type:** Length | GridRowSizeOption
 
@@ -30,7 +32,8 @@ Horizontal spacing between grid child components. Unit: vp.
 y?: Length | GridRowSizeOption
 ```
 
-Vertical spacing between grid child components. Unit: vp.
+Vertical spacing between grid child components.
+Unit: vp.
 
 **Type:** Length | GridRowSizeOption
 

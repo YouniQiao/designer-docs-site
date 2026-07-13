@@ -2,7 +2,7 @@
 
 Defines user blow data.
 
-**Inheritance/Implementation:** UserBlowData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md#userstatusdata)
+**Inheritance/Implementation:** UserBlowData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md)
 
 **Since:** 26.0.0
 
@@ -13,7 +13,7 @@ Defines user blow data.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## blowDirection
@@ -22,7 +22,8 @@ import { userStatus } from '@ohos.multimodalAwareness.userStatus';
 blowDirection?: number
 ```
 
-Blow direction. The value range is all integers.
+Blow direction.
+The value ranges from 0 to 2. 0: Not blowing, 1: Blowing from bottom mic, 2: Blowing from top mic.
 
 **Type:** number
 
@@ -40,7 +41,9 @@ Blow direction. The value range is all integers.
 emotion?: number
 ```
 
-User emotion level. The value range is all integers.
+User emotion level.
+The value ranges from 0 to 5. 0: Very happy, 1: A little happy, 2: Calm,
+3: A little unhappy, 4: Angry, 5: Crying.
 
 **Type:** number
 
@@ -59,6 +62,7 @@ facePosition?: number[]
 ```
 
 Face position relative to screen.
+The normalized coordinate system ranges from 0 to 640.
 
 **Type:** number[]
 
@@ -76,7 +80,7 @@ Face position relative to screen.
 gravityAcceleration?: number[]
 ```
 
-Gravity acceleration of user motion status.
+Gravity acceleration of user motion status, in m/s².
 
 **Type:** number[]
 
@@ -112,7 +116,7 @@ Whether user is gazing at screen.
 linearAcceleration?: number[][]
 ```
 
-Linear acceleration of user motion status.
+Linear acceleration of user motion status, in m/s²..
 
 **Type:** number[][]
 
@@ -130,7 +134,8 @@ Linear acceleration of user motion status.
 strengthLevel?: number
 ```
 
-Blow strength level. The value range is all integers.
+Blow strength level.
+The value must be an integer within [1,12].
 
 **Type:** number
 

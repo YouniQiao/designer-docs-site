@@ -86,7 +86,9 @@ readonly displayName: string
 readonly domain: string
 ```
 
-表示意图垂域，用于将意图按垂直领域分类（例如：视频、音乐、游戏），取值范围参见 [各垂域的智慧分发特性列表](https://developer.huawei.com/consumer/cn/doc/service/intents-ai-distribution-characteristic-0000001901922213#section2656133582215) 中的垂域字段。
+表示意图垂域，用于将意图按垂直领域分类（例如：视频、音乐、游戏），取值范围参见
+[各垂域的智慧分发特性列表](https://developer.huawei.com/consumer/cn/doc/service/intents-ai-distribution-characteristic-0000001901922213#section2656133582215)
+中的垂域字段。
 
 **类型：** string
 
@@ -158,7 +160,12 @@ readonly intentName: string
 readonly intentType: InsightIntentType
 ```
 
-表示通过意图装饰器定义的意图类型。 **说明：** 对于使用配置文件开发的意图，该字段返回值默认为[@InsightIntentEntry](./js-apis-app-ability-InsightIntentDecorator.md#insightintententry)类 型装饰器。
+表示通过意图装饰器定义的意图类型。
+
+**说明：**
+
+对于使用配置文件开发的意图，该字段返回值默认为[@InsightIntentEntry](./js-apis-app-ability-InsightIntentDecorator.md#insightintententry)类
+型装饰器。
 
 **类型：** InsightIntentType
 
@@ -302,7 +309,11 @@ readonly schema: string
 readonly subIntentInfo: LinkIntentInfo | PageIntentInfo | FunctionIntentInfo | FormIntentInfo | EntryIntentInfo
 ```
 
-表示特定意图装饰器的意图信息。 **说明：** 对于使用配置文件开发的意图，该字段返回值默认为[EntryIntentInfo](#entryintentinfo20)。
+表示特定意图装饰器的意图信息。
+
+**说明：**
+
+对于使用配置文件开发的意图，该字段返回值默认为[EntryIntentInfo](#entryintentinfo20)。
 
 **类型：** LinkIntentInfo | PageIntentInfo | FunctionIntentInfo | FormIntentInfo | EntryIntentInfo
 

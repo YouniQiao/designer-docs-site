@@ -9,7 +9,7 @@ Describes heap memory information of either an ArkTS-VM, or the shared heap memo
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## heapObjectSize
@@ -18,7 +18,8 @@ import { util } from '@ohos.util';
 heapObjectSize: number
 ```
 
-The value is a number representing the total size of all heap objects in KB, from either an ArkTS-VM local heap or the shared heap.
+The value is a number representing the total size of all heap objects in KB, from either an ArkTS-VM local heap
+or the shared heap.
 
 **Type:** number
 
@@ -34,7 +35,8 @@ The value is a number representing the total size of all heap objects in KB, fro
 heapType: string
 ```
 
-The value is a string representing whether this memory information is from an ArkTS-VM local heap, or the shared heap.
+The value is a string representing whether this memory information is from an ArkTS-VM local heap,
+or the shared heap.
 
 **Type:** string
 
@@ -50,7 +52,9 @@ The value is a string representing whether this memory information is from an Ar
 threadId?: number
 ```
 
-If this memory information describes an ArkTS-VM local heap, the value is a number representing the running thread; If this memory information describes the shared heap, the value is undefined.
+If this memory information describes an ArkTS-VM local heap,
+the value is a number representing the running thread;
+If this memory information describes the shared heap, the value is undefined.
 
 **Type:** number
 
@@ -66,7 +70,9 @@ If this memory information describes an ArkTS-VM local heap, the value is a numb
 threadName?: string
 ```
 
-If this memory information describes an ArkTS-VM local heap, the value is a string representing the name of the running thread; If this memory information describes the shared heap, the value is undefined.
+If this memory information describes an ArkTS-VM local heap,
+the value is a string representing the name of the running thread;
+If this memory information describes the shared heap, the value is undefined.
 
 **Type:** string
 

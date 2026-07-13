@@ -1,6 +1,6 @@
 # ImageReceiverOptions
 
-ImageReceiver的初始化选项。
+Describes the initialization options for ImageReceiver.
 
 **Since:** 23
 
@@ -12,35 +12,37 @@ ImageReceiver的初始化选项。
 import { image } from '@kit.ImageKit';
 ```
 
+## capacity
+
+```TypeScript
+capacity?: number
+```
+
+Maximum number of images that can be accessed simultaneously.
+The value range is all integers, The value must be a positive integer less than
+or equal to 64.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.ImageReceiver
+
 ## size
 
 ```TypeScript
 size?: Size
 ```
 
-图像的大小，包括宽与高，且值都大于0。单位：像素（px）。 该参数不会影响接收到的图片大小，实际返回大小由生产者决定，如相机。
+Image size, with both the width and height greater than 0.
 
 **Type:** Size
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.ImageReceiver
-
-## capacity
-
-```TypeScript
-capacity?: int
-```
-
-可同时访问的最大图像数量。该值必须为正整数，且小于或等于64张。 该参数仅作为期望值，实际capacity由设备硬件决定。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImageReceiver
 

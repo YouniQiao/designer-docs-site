@@ -13,7 +13,7 @@ Describes the value of the indication or notification sent by the Gatt server.
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## characteristicUuid
@@ -58,7 +58,8 @@ The value of a NotifyCharacteristic instance
 confirm: boolean
 ```
 
-Specifies whether to request confirmation from the BLE peripheral device (indication) or send a notification. Value {@code true} indicates the former and {@code false} indicates the latter.
+Specifies whether to request confirmation from the BLE peripheral device (indication) or
+send a notification. Value {@code true} indicates the former and {@code false} indicates the latter.
 
 **Type:** boolean
 

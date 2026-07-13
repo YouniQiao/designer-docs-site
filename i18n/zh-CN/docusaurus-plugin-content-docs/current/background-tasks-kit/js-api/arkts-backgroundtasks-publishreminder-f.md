@@ -6,7 +6,14 @@
 function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void
 ```
 
-发布后台代理提醒。使用callback异步回调。 > **说明：** > > 该接口需要申请通知弹窗权限 > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > 后调用。 >
+发布后台代理提醒。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口需要申请通知弹窗权限
+> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
+> 后调用。
+>
 
 **起始版本：** 9
 
@@ -25,7 +32,7 @@ function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<n
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter is not valid parameter. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter is not valid parameter. |
 | [1700001](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700001-通知使能未开启) | Notification is not enabled. |
 | [1700002](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700002-提醒数量超出限制) | The number of reminders exceeds the limit. |
 
@@ -57,7 +64,14 @@ reminderAgentManager.publishReminder(timer, (err: BusinessError, reminderId: num
 function publishReminder(reminderReq: ReminderRequest): Promise<number>
 ```
 
-发布后台代理提醒。使用Promise异步回调。 > **说明：** > > 该接口需要申请通知弹窗权限 > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > 后调用。 >
+发布后台代理提醒。使用Promise异步回调。
+
+> **说明：**
+>
+> 该接口需要申请通知弹窗权限
+> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
+> 后调用。
+>
 
 **起始版本：** 9
 
@@ -81,7 +95,7 @@ function publishReminder(reminderReq: ReminderRequest): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter is not valid parameter. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter is not valid parameter. |
 | [1700001](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700001-通知使能未开启) | Notification is not enabled. |
 | [1700002](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700002-提醒数量超出限制) | The number of reminders exceeds the limit. |
 

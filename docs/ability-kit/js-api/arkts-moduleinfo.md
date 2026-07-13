@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ModuleInfo](arkts-moduleinfo-i.md) | 应用程序的模块信息。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo]{@link hapModuleInfo:HapModuleInfo}替代。 |
+| [ModuleInfo](arkts-ability-moduleinfo-depr-i.md) | The ModuleInfo module provides module information of an application.&gt; **NOTE**&gt;&gt; The APIs of this module have been deprecated since API version 9. You are advised to use&gt; [bundleManager-HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md) instead. |
 

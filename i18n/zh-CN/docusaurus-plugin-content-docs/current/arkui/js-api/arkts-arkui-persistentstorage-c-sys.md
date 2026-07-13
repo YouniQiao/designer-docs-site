@@ -1,6 +1,10 @@
 # PersistentStorage
 
-PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储UI状态)](../../../../ui/state-management/arkts-persiststorage.md) > **说明：** > 从API version 12开始，PersistentStorage支持null、undefined。
+PersistentStorage具体UI使用说明，详见[PersistentStorage(持久化存储UI状态)](../../../../ui/state-management/arkts-persiststorage.md)
+
+> **说明：**
+
+> 从API version 12开始，PersistentStorage支持null、undefined。
 
 **起始版本：** 7
 

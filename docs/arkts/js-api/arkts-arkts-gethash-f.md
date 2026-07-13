@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## getHash
@@ -12,7 +12,10 @@ import { util } from '@ohos.util';
 function getHash(object: object): number
 ```
 
-Obtains the hash value of an object. If no hash value has been obtained, a random hash value is generated, saved to the **hash** field of the object, and returned. If a hash value has been obtained, the hash value saved in the **hash** field is returned (the same value is returned for the same object).
+Obtains the hash value of an object.
+If no hash value has been obtained, a random hash value is generated, saved to the **hash** field of the object,
+and returned. If a hash value has been obtained, the hash value saved in the **hash** field is returned (the same
+value is returned for the same object).
 
 **Since:** 12
 

@@ -1124,7 +1124,8 @@ try {
 getRoots(): Promise<RootIterator>
 ```
 
-以异步方法获取helper对象连接的文件管理服务类的设备根节点信息。使用Promise异步回调。 该方法返回迭代器对象RootIterator，然后通过[next](arkts-corefile-fileiterator-i-sys.md#next-1)方法返回[RootInfo](arkts-corefile-rootinfo-i-sys.md#rootinfo)。
+以异步方法获取helper对象连接的文件管理服务类的设备根节点信息。使用Promise异步回调。
+该方法返回迭代器对象RootIterator，然后通过[next](arkts-corefile-fileiterator-i-sys.md#next-1)方法返回[RootInfo](arkts-corefile-rootinfo-i-sys.md)。
 
 **起始版本：** 9
 
@@ -1219,7 +1220,9 @@ async function getRoots() {
 getRoots(callback: AsyncCallback<RootIterator>): void
 ```
 
-以异步方法获取helper对象连接的文件管理服务类的设备根节点信息。使用callback异步回调。 callback带回迭代器对象RootIterator，然后通过[next](arkts-corefile-fileiterator-i-sys.md#next-1)方法返回 [RootInfo](arkts-corefile-rootinfo-i-sys.md#rootinfo)。
+以异步方法获取helper对象连接的文件管理服务类的设备根节点信息。使用callback异步回调。
+callback带回迭代器对象RootIterator，然后通过[next](arkts-corefile-fileiterator-i-sys.md#next-1)方法返回
+[RootInfo](arkts-corefile-rootinfo-i-sys.md)。
 
 **起始版本：** 9
 
@@ -1702,7 +1705,9 @@ try {
 moveFile(sourceUri: string, destUri: string, fileName: string): Promise<string>
 ```
 
-以异步方法移动文件，返回移动后文件的uri。使用Promise异步回调。 当存在同名文件时（即发生文件移动冲突时），可以重命名待移动的文件，再保存到目标文件夹。 目前仅支持设备内移动，跨设备不支持移动。
+以异步方法移动文件，返回移动后文件的uri。使用Promise异步回调。
+当存在同名文件时（即发生文件移动冲突时），可以重命名待移动的文件，再保存到目标文件夹。
+目前仅支持设备内移动，跨设备不支持移动。
 
 **起始版本：** 11
 
@@ -1793,7 +1798,9 @@ async function moveFile01() {
 moveFile(sourceUri: string, destUri: string, fileName: string, callback: AsyncCallback<string>): void
 ```
 
-以异步方法移动文件，返回移动后文件的uri。使用callback异步回调。 当存在同名文件时（即发生文件移动冲突时），可以重命名待移动的文件，再保存到目标文件夹。 当前仅支持设备内移动，不支持跨设备移动。
+以异步方法移动文件，返回移动后文件的uri。使用callback异步回调。
+当存在同名文件时（即发生文件移动冲突时），可以重命名待移动的文件，再保存到目标文件夹。
+当前仅支持设备内移动，不支持跨设备移动。
 
 **起始版本：** 11
 
@@ -1881,7 +1888,9 @@ try {
 moveItem(sourceUri: string, destUri: string, force?: boolean): Promise<Array<MoveResult>>
 ```
 
-以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用Promise异步回调。 当存在同名文件时，可以选择强制覆盖文件。 目前仅支持设备内移动，跨设备不支持移动。
+以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用Promise异步回调。
+当存在同名文件时，可以选择强制覆盖文件。
+目前仅支持设备内移动，跨设备不支持移动。
 
 **起始版本：** 11
 
@@ -1946,7 +1955,8 @@ moveItem(sourceUri: string, destUri: string, force?: boolean): Promise<Array<Mov
 moveItem(sourceUri: string, destUri: string, callback: AsyncCallback<Array<MoveResult>>): void
 ```
 
-以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用callback异步回调。 当前仅支持设备内移动，不支持跨设备移动。
+以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用callback异步回调。
+当前仅支持设备内移动，不支持跨设备移动。
 
 **起始版本：** 11
 
@@ -2041,7 +2051,9 @@ try {
 moveItem(sourceUri: string, destUri: string, force: boolean, callback: AsyncCallback<Array<MoveResult>>): void
 ```
 
-以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用callback异步回调。 当存在同名文件时，可以选择强制覆盖文件。 当前仅支持设备内移动，不支持跨设备移动。
+以异步方法移动文件(夹)，返回移动后文件(夹)的uri。使用callback异步回调。
+当存在同名文件时，可以选择强制覆盖文件。
+当前仅支持设备内移动，不支持跨设备移动。
 
 **起始版本：** 11
 
@@ -2343,8 +2355,8 @@ query(uri: string, metaJson: string) : Promise<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 所选文件或目录的uri（从[FileInfo](arkts-corefile-fileinfo-i-sys.md#fileinfo)中获取）。 |
-| metaJson | string | 是 | json字符串，包含查询属性[FILEKEY](arkts-corefile-filekey-e-sys.md#filekey) 。 |
+| uri | string | 是 | 所选文件或目录的uri（从[FileInfo](arkts-corefile-fileinfo-i-sys.md)中获取）。 |
+| metaJson | string | 是 | json字符串，包含查询属性[FILEKEY](arkts-corefile-filekey-e-sys.md) 。 |
 
 **返回值：**
 
@@ -2399,8 +2411,8 @@ query(uri: string, metaJson: string, callback: AsyncCallback<string>) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| uri | string | 是 | 所选文件或目录的uri（从[FileInfo](arkts-corefile-fileinfo-i-sys.md#fileinfo)中获取）。 |
-| metaJson | string | 是 | json字符串，包含查询属性[FILEKEY](arkts-corefile-filekey-e-sys.md#filekey)。 |
+| uri | string | 是 | 所选文件或目录的uri（从[FileInfo](arkts-corefile-fileinfo-i-sys.md)中获取）。 |
+| metaJson | string | 是 | json字符串，包含查询属性[FILEKEY](arkts-corefile-filekey-e-sys.md)。 |
 | callback | AsyncCallback&lt;string&gt; | 是 | 返回json字符串，包括查询属性和值。 |
 
 **示例：**

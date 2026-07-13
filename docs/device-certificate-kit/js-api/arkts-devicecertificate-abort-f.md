@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## abort
@@ -12,7 +12,9 @@ import { certificateManager } from '@ohos.security.certManager';
 function abort(handle: Uint8Array, callback: AsyncCallback<void>): void
 ```
 
-Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method. Only one method can be invoked in a signature verification process. This API uses an asynchronous callback to return the result.
+Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.
+Only one method can be invoked in a signature verification process. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 11
 
@@ -65,7 +67,8 @@ try {
 function abort(handle: Uint8Array): Promise<void>
 ```
 
-Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method. Only one method can be invoked in a signature verification process. This API uses a promise to return the result.
+Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.
+Only one method can be invoked in a signature verification process. This API uses a promise to return the result.
 
 **Since:** 11
 

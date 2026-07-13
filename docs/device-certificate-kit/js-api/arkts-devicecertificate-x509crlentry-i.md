@@ -1,6 +1,6 @@
 # X509CRLEntry
 
-Provides APIs for operating on revoked certificates.
+Provides APIs for operating on a revoked certificate entry in a CRL.
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ Provides APIs for operating on revoked certificates.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## getCertIssuer
@@ -18,7 +18,11 @@ import { cert } from '@ohos.security.cert';
 getCertIssuer(): DataBlob
 ```
 
-Obtains the issuer of a revoked certificate. > **NOTE** > > The obtained issuer of this revoked certificate contains a string terminator.
+Obtains the issuer name of the revoked certificate.
+
+> **NOTE**
+>
+> The obtained issuer name of this revoked certificate contains a string terminator.
 
 **Since:** 11
 
@@ -30,7 +34,7 @@ Obtains the issuer of a revoked certificate. > **NOTE** > > The obtained issuer 
 
 | Type | Description |
 | --- | --- |
-| DataBlob | Issuer of the revoked certificate obtained. |
+| DataBlob | Issuer name of the revoked certificate obtained. |
 
 **Error codes:**
 
@@ -47,7 +51,7 @@ Obtains the issuer of a revoked certificate. > **NOTE** > > The obtained issuer 
 getCertIssuer(encodingType: EncodingType): string
 ```
 
-Obtains the issuer information of a revoked certificate based on the encoding type.
+Obtains the issuer name of the revoked certificate based on the encoding type.
 
 **Since:** 20
 
@@ -65,7 +69,7 @@ Obtains the issuer information of a revoked certificate based on the encoding ty
 
 | Type | Description |
 | --- | --- |
-| string | Issuer information of a revoked certificate, separated by commas (,). |
+| string | Issuer name of the revoked certificate, separated by commas (,). |
 
 **Error codes:**
 
@@ -83,7 +87,7 @@ Obtains the issuer information of a revoked certificate based on the encoding ty
 getCertIssuerX500DistinguishedName(): X500DistinguishedName
 ```
 
-Obtains the distinguished name (DN) of the X.509 certificate issuer.
+Obtains the distinguished name (DN) of the issuer of the revoked certificate.
 
 **Since:** 12
 
@@ -111,7 +115,8 @@ Obtains the distinguished name (DN) of the X.509 certificate issuer.
 getEncoded(callback: AsyncCallback<EncodingBlob>): void
 ```
 
-Obtains the serialized data of this revoked certificate. This API uses an asynchronous callback to return the result.
+Obtains the serialized data of this revoked certificate entry. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 11
 
@@ -123,7 +128,7 @@ Obtains the serialized data of this revoked certificate. This API uses an asynch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;EncodingBlob&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined**, and **data** is the serialized data of the revoked certificate obtained.Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;EncodingBlob&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined**, and **data** is the serialized data of the revoked certificate entry obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -140,7 +145,7 @@ Obtains the serialized data of this revoked certificate. This API uses an asynch
 getEncoded(): Promise<EncodingBlob>
 ```
 
-Obtains the serialized data of this revoked certificate. This API uses a promise to return the result.
+Obtains the serialized data of this revoked certificate entry. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -152,7 +157,7 @@ Obtains the serialized data of this revoked certificate. This API uses a promise
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;EncodingBlob&gt; | Promise used to return the serialized data of the revoked certificateobtained. |
+| Promise&lt;EncodingBlob&gt; | Promise used to return the serialized data of the revoked certificate entryobtained. |
 
 **Error codes:**
 
@@ -169,7 +174,7 @@ Obtains the serialized data of this revoked certificate. This API uses a promise
 getExtensions(): DataBlob
 ```
 
-Obtains the CRL extensions.
+Obtains the CRL entry extensions in DER format.
 
 **Since:** 11
 
@@ -181,7 +186,7 @@ Obtains the CRL extensions.
 
 | Type | Description |
 | --- | --- |
-| DataBlob | X.509 CRL extensions obtained. |
+| DataBlob | X.509 CRL entry extensions obtained. |
 
 **Error codes:**
 
@@ -197,7 +202,7 @@ Obtains the CRL extensions.
 getExtensionsObject(): CertExtension
 ```
 
-Obtains the certificate extensions in DER format.
+Obtains the CRL entry extensions.
 
 **Since:** 12
 
@@ -209,7 +214,7 @@ Obtains the certificate extensions in DER format.
 
 | Type | Description |
 | --- | --- |
-| CertExtension | Certificate extensions object obtained. |
+| CertExtension | CRL entry extensions. |
 
 **Error codes:**
 
@@ -225,7 +230,7 @@ Obtains the certificate extensions in DER format.
 getRevocationDate(): string
 ```
 
-Obtains the date when the certificate was revoked.
+Obtains the certificate's revocation date.
 
 **Since:** 11
 

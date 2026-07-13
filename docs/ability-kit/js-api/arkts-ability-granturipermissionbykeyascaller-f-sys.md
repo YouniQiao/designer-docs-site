@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { uriPermissionManager } from '@ohos.application.uriPermissionManager';
+import { uriPermissionManager } from '@kit.AbilityKit';
 ```
 
 ## grantUriPermissionByKeyAsCaller
@@ -12,7 +12,12 @@ import { uriPermissionManager } from '@ohos.application.uriPermissionManager';
 function grantUriPermissionByKeyAsCaller(key: string, flag: wantConstant.Flags, callerTokenId: number, targetTokenId: number): Promise<void>
 ```
 
-Grants the URI access permission of the specified application to the target application through the unique key of the Unified Data Management Framework (UDMF) data. The permission will be revoked after the target application exits. This API uses a promise to return the result. This API can be properly called only on phones, 2-in-1 devices, and tablets. If it is called on other device types, error code 801 is returned. **System API**: This is a system API.
+Grants the URI access permission of the specified application to the target application through the unique key of
+the Unified Data Management Framework (UDMF) data. The permission will be revoked after the target application
+exits. This API uses a promise to return the result.
+This API can be properly called only on phones, 2-in-1 devices, and tablets. If it is called on other device types,
+error code 801 is returned.
+**System API**: This is a system API.
 
 **Since:** 20
 
@@ -26,9 +31,9 @@ Grants the URI access permission of the specified application to the target appl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Unique key of the target UDMF data. The key must be created by the application (corresponding to**callerTokenId**) through[unifiedDataChannel.insertData](../../apis-arkdata/arkts-apis/arkts-arkdata-insertdata-f.md#insertdata-1), and the written data must be the URIs of the authorized files.<br>Currently, only the keys of the[UDMF data channels](../../apis-arkdata/arkts-apis/arkts-arkdata-intention-e.md#intention) of the **SYSTEM_SHARE**,**PICKER**, and **MENU** types are supported. For details about how to create and use a key, see[Sharing Data via Unified Data Channels](../../../../database/unified-data-channels.md). |
+| key | string | Yes | Unique key of the target UDMF data. The key must be created by the application (corresponding to**callerTokenId**) through[unifiedDataChannel.insertData](../../apis-arkdata/arkts-apis/arkts-arkdata-insertdata-f.md#insertdata-1), and the written data must be the URIs of the authorized files.<br>Currently, only the keys of the[UDMF data channels](../../apis-arkdata/arkts-apis/arkts-arkdata-intention-e.md) of the **SYSTEM_SHARE**,**PICKER**, and **MENU** types are supported. For details about how to create and use a key, see[Sharing Data via Unified Data Channels](../../../../database/unified-data-channels.md). |
 | flag | wantConstant.Flags | Yes | Read or write permission on the file to grant. The options are as follows:<br>-**FLAG_AUTH_READ_URI_PERMISSION**: read permission.<br>- **FLAG_AUTH_WRITE_URI_PERMISSION**: write permission. |
-| callerTokenId | number | Yes | Identity of the caller application. You can obtain the value from the**ohos.aafwk.param.callerToken** field in [want](arkts-ability-want-c.md#want). |
+| callerTokenId | number | Yes | Identity of the caller application. You can obtain the value from the**ohos.aafwk.param.callerToken** field in [want](arkts-ability-want-c.md). |
 | targetTokenId | number | Yes | Identity of the target application, which can be obtained through[bundleManager.getApplicationInfo](arkts-ability-getapplicationinfo-f-sys.md#getapplicationinfo-2). |
 
 **Return value:**

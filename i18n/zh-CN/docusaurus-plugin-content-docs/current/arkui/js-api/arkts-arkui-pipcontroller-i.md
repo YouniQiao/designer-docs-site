@@ -1,6 +1,9 @@
 # PiPController
 
-画中画控制器实例。用于启动、停止画中画以及更新回调注册等。 下列API示例中都需先使用[PiPWindow.create()](arkts-arkui-create-f.md#create-1)方法获取到PiPController实例，再通过此实例调用对应方 法。
+画中画控制器实例。用于启动、停止画中画以及更新回调注册等。
+
+下列API示例中都需先使用[PiPWindow.create()](arkts-arkui-create-f.md#create-1)方法获取到PiPController实例，再通过此实例调用对应方
+法。
 
 **起始版本：** 11
 
@@ -30,7 +33,7 @@ getPiPSettingSwitch(): Promise<boolean>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
 
 **示例：**
@@ -77,7 +80,7 @@ getPiPWindowInfo(): Promise<PiPWindowInfo>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
 
 **示例：**
@@ -118,7 +121,7 @@ isPiPActive(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise对象，返回当前画中画的隐藏状态。true表示前台可见，false表示前台不可见（收入侧边栏）。画中画生命周期不为[STARTED](arkts-arkui-pipstate-e.md#pipstate)时调用本接口总是返回false。 |
+| Promise&lt;boolean&gt; | Promise对象，返回当前画中画的隐藏状态。true表示前台可见，false表示前台不可见（收入侧边栏）。画中画生命周期不为[STARTED](arkts-arkui-pipstate-e.md)时调用本接口总是返回false。 |
 
 **错误码：**
 
@@ -180,7 +183,9 @@ this.pipController.off('stateChange');
 off(type: 'controlPanelActionEvent'): void
 ```
 
-关闭画中画控制面板控件动作事件的监听。推荐使用 [off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3) 来关闭画中画控制面板控件动作事件的监听。
+关闭画中画控制面板控件动作事件的监听。推荐使用
+[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)
+来关闭画中画控制面板控件动作事件的监听。
 
 **起始版本：** 11
 
@@ -259,7 +264,7 @@ off(type: 'pipWindowSizeChange', callback?: Callback<PiPWindowSize>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 
 **示例：**
 
@@ -336,7 +341,7 @@ on(type: 'stateChange', callback: (state: PiPState, reason: string) => void): vo
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | 'stateChange' | 是 | 事件类型，固定为'stateChange'，即画中画生命周期状态变化事件。 |
-| callback | (state: PiPState, reason: string) =&gt; void | 是 | 回调生命周期状态变化事件以及原因。<br/>state：[PiPState](arkts-arkui-pipstate-e.md#pipstate)，表示当前画中画生命周期状态。<br/>reason：string，表示当前生命周期的切换原因。<br/>在&lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;之前，reason始终为“0”，无需关注。<br/>从&lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;开始，reason为当前生命周期的切换原因：<br/>"requestStart"：应用调用startPip接口；<br/>"autoStart"：应用退后台触发画中画自动启动；<br/>"requestDelete"：应用调用stopPip接口；<br/>"panelActionDelete"：用户点击画中画窗口的关闭按钮；<br/>"dragDelete"：用户将画中画窗口拖入垃圾桶；<br/>"panelActionRestore"：用户点击画中画窗口的还原按钮（无还原按钮时可点击画中画窗口）触发还原；<br/>"other"：其他原因，如新的画中画窗口拉起导致当前窗口被关闭、应用主窗口被关闭等场景。 |
+| callback | (state: PiPState, reason: string) =&gt; void | 是 | 回调生命周期状态变化事件以及原因。<br/>state：[PiPState](arkts-arkui-pipstate-e.md)，表示当前画中画生命周期状态。<br/>reason：string，表示当前生命周期的切换原因。<br/>在&lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;之前，reason始终为“0”，无需关注。<br/>从&lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;开始，reason为当前生命周期的切换原因：<br/>"requestStart"：应用调用startPip接口；<br/>"autoStart"：应用退后台触发画中画自动启动；<br/>"requestDelete"：应用调用stopPip接口；<br/>"panelActionDelete"：用户点击画中画窗口的关闭按钮；<br/>"dragDelete"：用户将画中画窗口拖入垃圾桶；<br/>"panelActionRestore"：用户点击画中画窗口的还原按钮（无还原按钮时可点击画中画窗口）触发还原；<br/>"other"：其他原因，如新的画中画窗口拉起导致当前窗口被关闭、应用主窗口被关闭等场景。 |
 
 **示例：**
 
@@ -377,7 +382,9 @@ this.pipController.on('stateChange', (state: PiPWindow.PiPState, reason: string)
 on(type: 'controlPanelActionEvent', callback: ControlPanelActionEventCallback): void
 ```
 
-开启画中画控制面板控件动作事件的监听，建议在不需要使用时关闭监听，否则可能存在内存泄漏。推荐使用 [on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3) 来开启画中画控制面板控件动作事件的监听。
+开启画中画控制面板控件动作事件的监听，建议在不需要使用时关闭监听，否则可能存在内存泄漏。推荐使用
+[on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3)
+来开启画中画控制面板控件动作事件的监听。
 
 **起始版本：** 11
 
@@ -504,7 +511,7 @@ on(type: 'pipWindowSizeChange', callback: Callback<PiPWindowSize>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
 
 **示例：**
@@ -559,7 +566,9 @@ this.pipController.on('activeStatusChange', callback);
 setAutoStartEnabled(enable: boolean): void
 ```
 
-设置是否在返回桌面时自动启动画中画，默认不自动拉起。 在使用XComponent方案实现画中画功能并结合Navigation进行路由管理时，首次调用setAutoStartEnabled(true)方法，系统会缓存当前应用传入的NavigationId的栈顶信息。
+设置是否在返回桌面时自动启动画中画，默认不自动拉起。
+
+在使用XComponent方案实现画中画功能并结合Navigation进行路由管理时，首次调用setAutoStartEnabled(true)方法，系统会缓存当前应用传入的NavigationId的栈顶信息。
 
 **起始版本：** 11
 
@@ -639,7 +648,7 @@ startPiP(): Promise<void>
 | [1300013](../errorcode-window.md#1300013-创建画中画窗口失败) | Failed to create the PiP window. |
 | [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
 | [1300015](../errorcode-window.md#1300015-重复操作画中画) | Repeated PiP operation. |
-| [1300034](../errorcode-window.md#1300034-闪控窗与其他悬浮窗口操作冲突) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**适用版本：** 26.0.0 |
+| [1300034](../errorcode-window.md#1300034-闪控窗与其他悬浮窗口操作冲突) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 
@@ -724,7 +733,7 @@ updateContentNode(contentNode: typeNode.XComponent): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300014](../errorcode-window.md#1300014-画中画内部错误) | PiP internal error. |
 
 **示例：**

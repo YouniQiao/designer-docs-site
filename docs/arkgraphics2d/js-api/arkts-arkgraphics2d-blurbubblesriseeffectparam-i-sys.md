@@ -11,7 +11,7 @@ The parameters of blur bubbles rise effect.
 ## Modules to Import
 
 ```TypeScript
-import { uiEffect } from '@ohos.graphics.uiEffect';
+import { uiEffect } from '@kit.ArkGraphics2D';
 ```
 
 ## blurIntensity
@@ -20,7 +20,9 @@ import { uiEffect } from '@ohos.graphics.uiEffect';
 blurIntensity: number
 ```
 
-Defines gaussian blur intensity for blur bubbles rise effect. Value range [0, 1], and values outside the range will be clamped. 0 means no blur, and 1 represents the maximum blur level.
+Defines gaussian blur intensity for blur bubbles rise effect.
+Value range [0, 1], and values outside the range will be clamped.
+0 means no blur, and 1 represents the maximum blur level.
 
 **Type:** number
 
@@ -38,7 +40,8 @@ Defines gaussian blur intensity for blur bubbles rise effect. Value range [0, 1]
 maskImage: image.PixelMap
 ```
 
-Defines mask image for blur bubbles rise effect, controls the blur bubbles area. The masked area has a blur effect, while the unmasked area has no blur effect.
+Defines mask image for blur bubbles rise effect, controls the blur bubbles area.
+The masked area has a blur effect, while the unmasked area has no blur effect.
 
 **Type:** image.PixelMap
 
@@ -56,7 +59,9 @@ Defines mask image for blur bubbles rise effect, controls the blur bubbles area.
 mixStrength: number
 ```
 
-Defines mix strength between original and blurred images. Value range [0, 1], and values outside the range will be clamped. 0 corresponds to the original image, and 1 corresponds to the blurred image.
+Defines mix strength between original and blurred images.
+Value range [0, 1], and values outside the range will be clamped.
+0 corresponds to the original image, and 1 corresponds to the blurred image.
 
 **Type:** number
 
@@ -74,7 +79,9 @@ Defines mix strength between original and blurred images. Value range [0, 1], an
 progress: number
 ```
 
-Defines animation progress for blur bubbles rise effect. Value range [0, 1], and values outside the range will be clamped. 0 corresponds to the start of the animation, and 1 corresponds to the end of the animation.
+Defines animation progress for blur bubbles rise effect.
+Value range [0, 1], and values outside the range will be clamped.
+0 corresponds to the start of the animation, and 1 corresponds to the end of the animation.
 
 **Type:** number
 

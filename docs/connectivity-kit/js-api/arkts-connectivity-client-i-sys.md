@@ -1,6 +1,7 @@
 # Client
 
-Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance.
+Manages SSAP client. Before calling a SSAP client method,
+you must use {@link createClient} to create a ssap client instance.
 
 **Since:** 26.0.0
 
@@ -57,8 +58,6 @@ Unsubscribes from event notifications.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -71,13 +70,6 @@ Unsubscribes from event notifications.
 | --- | --- | --- | --- |
 | callback | Callback&lt;Event&gt; | No | Callback used to listen for the event notified event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
-
 ## onEventNotify
 
 ```TypeScript
@@ -86,9 +78,9 @@ onEventNotify(callback: Callback<Event>): void
 
 Subscribes to event notifications.
 
-**Since:** 26.0.0
+This event is accessible only to system applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -101,13 +93,6 @@ Subscribes to event notifications.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;Event&gt; | Yes | Callback used to listen for the event notified event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
 
 ## readDescriptor
 
@@ -201,6 +186,10 @@ writeDescriptor(descriptor: PropertyDescriptor): Promise<void>
 
 Writes the descriptor of a server.
 
+This method does not support writing client property configuration descriptors. To write client property
+configuration descriptors, call [setPropertyNotification](arkts-connectivity-client-i.md#setpropertynotification-1) or
+[setPropertyIndication](arkts-connectivity-client-i-sys.md#setpropertyindication-1) instead.
+
 **Since:** 26.0.0
 
 **Required permissions:** ohos.permission.ACCESS_NEARLINK
@@ -215,7 +204,7 @@ Writes the descriptor of a server.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| descriptor | PropertyDescriptor | Yes | Indicates the descriptor to write. |
+| descriptor | PropertyDescriptor | Yes | Indicates the descriptor to write.<br>The descriptor type should not be CLIENT_PROPERTY_CONFIG. |
 
 **Return value:**
 

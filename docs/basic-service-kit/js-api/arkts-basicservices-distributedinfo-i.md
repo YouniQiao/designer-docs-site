@@ -9,7 +9,7 @@ Represents the distributed information about an OS account.
 ## Modules to Import
 
 ```TypeScript
-import { distributedAccount } from '@ohos.account.distributedAccount';
+import { distributedAccount } from '@kit.BasicServicesKit';
 ```
 
 ## avatar
@@ -32,7 +32,16 @@ Avatar of the distributed account. By default, no value is passed in.
 event: string
 ```
 
-Login state of the distributed account. The state can be login, logout, token invalid, or logoff, which correspond to the following strings respectively: - Ohos.account.event.LOGIN - Ohos.account.event.LOGOUT - Ohos.account.event.TOKEN_INVALID - Ohos.account.event.LOGOFF
+Login state of the distributed account. The state can be login, logout, token invalid, or logoff, which
+correspond to the following strings respectively:
+
+- Ohos.account.event.LOGIN
+
+- Ohos.account.event.LOGOUT
+
+- Ohos.account.event.TOKEN_INVALID
+
+- Ohos.account.event.LOGOFF
 
 **Type:** string
 
@@ -88,7 +97,8 @@ Nickname of the distributed account. By default, no value is passed in.
 scalableData?: object
 ```
 
-Additional information about the distributed account, in the form of KV pairs. This parameter is left empty by default.
+Additional information about the distributed account, in the form of KV pairs. This parameter is left empty by
+default.
 
 **Type:** object
 

@@ -11,7 +11,7 @@ Represents the authorization information.
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## actionUponExpiry
@@ -20,7 +20,8 @@ import { dlpPermission } from '@ohos.dlpPermission';
 actionUponExpiry?: ActionType
 ```
 
-Whether the file can be opened after the permission expires (with the editing permission). This parameter is valid only when **expireTime** is not empty. This parameter is left empty by default.
+Whether the file can be opened after the permission expires (with the editing permission). This parameter is
+valid only when **expireTime** is not empty. This parameter is left empty by default.
 
 **Type:** ActionType
 
@@ -52,7 +53,8 @@ List of users who are authorized to access the DLP file. By default, this parame
 contactAccount: string
 ```
 
-Account of the contact. The value contains 1 to 255 bytes. If the value is out of range, error code 19100001 is thrown.
+Account of the contact. The value contains 1 to 255 bytes. If the value is out of range, error code 19100001
+is thrown.
 
 **Type:** string
 
@@ -84,7 +86,8 @@ Permission granted to everyone. This parameter is left blank by default.
 expireTime?: number
 ```
 
-Timestamp when the file permission has expired. This parameter is left blank by default. The value must be greater than or equal to 0. If the value is out of range, an error code is thrown. Unit: s.
+Timestamp when the file permission has expired. This parameter is left blank by default. The value must be
+greater than or equal to 0. If the value is out of range, an error code is thrown. Unit: s.
 
 **Type:** number
 
@@ -116,7 +119,8 @@ Whether the file can be accessed offline. **true**: yes; **false**: no.
 ownerAccount: string
 ```
 
-Account of the owner who can set the permission. The value contains 1 to 255 bytes. If the value is out of range, error code 19100001 is thrown.
+Account of the owner who can set the permission. The value contains 1 to 255 bytes. If the value is out of
+range, error code 19100001 is thrown.
 
 **Type:** string
 
@@ -132,7 +136,8 @@ Account of the owner who can set the permission. The value contains 1 to 255 byt
 ownerAccountID: string
 ```
 
-Account ID of the owner. The value contains a maximum of 255 bytes. If the value is out of range, error code 19100001 is thrown.
+Account ID of the owner. The value contains a maximum of 255 bytes. If the value is out of range, error code
+19100001 is thrown.
 
 **Type:** string
 

@@ -6,7 +6,15 @@
 function startArkChildProcess(srcEntry: string, args: ChildProcessArgs, options?: ChildProcessOptions): Promise<number>
 ```
 
-启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。 > **说明：** > > 调用该接口创建的子进程不会继承父进程资源，子进程创建成功会返回子进程pid，然后执行子进程的 > [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数。 > [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程不会自动销毁，需要子进程调用 > [process.abort](../../apis-arkts/arkts-apis/arkts-arkts-abort-f.md#abort-1)销毁。调用该接口的进程销毁后，所创建的子进程也会一并销毁。
+启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。
+该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。
+
+> **说明：**
+>
+> 调用该接口创建的子进程不会继承父进程资源，子进程创建成功会返回子进程pid，然后执行子进程的
+> [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数。
+> [ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程不会自动销毁，需要子进程调用
+> [process.abort](../../apis-arkts/arkts-apis/arkts-arkts-abort-f.md#abort-1)销毁。调用该接口的进程销毁后，所创建的子进程也会一并销毁。
 
 **起始版本：** 12
 
@@ -32,11 +40,11 @@ function startArkChildProcess(srcEntry: string, args: ChildProcessArgs, options?
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000061](../errorcode-ability.md#16000061-不支持的操作) | Operation not supported. |
-| [16000062](../errorcode-ability.md#16000062-子进程数量超出上限) | The number of child processes exceeds the upper limit.<br>**适用版本：** 13 |
+| [16000062](../errorcode-ability.md#16000062-子进程数量超出上限) | The number of child processes exceeds the upper limit.<br>**适用版本：** 13+ |
 
 **示例：**
 

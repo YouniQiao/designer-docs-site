@@ -2,13 +2,13 @@
 
 Defines the private album
 
-**Inheritance/Implementation:** PrivateAlbum extends [AbsAlbum](arkts-corefile-absalbum-i-sys.md#absalbum)
+**Inheritance/Implementation:** PrivateAlbum extends [AbsAlbum](arkts-corefile-absalbum-i-sys.md)
 
 **Since:** 9
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [Album](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-album-i.md#album)
+**Substitutes:** [Album](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-album-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -17,7 +17,7 @@ Defines the private album
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## delete

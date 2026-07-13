@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## getAuthorizedAppList
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function getAuthorizedAppList(keyUri: string) : Promise<CMResult>
 ```
 
-Obtains the list of authorized applications of a user's public credential. This API is called only by the certificate management application. This API uses a promise to return the result.
+Obtains the list of authorized applications of a user's public credential. This API is called only by the
+certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -34,7 +35,7 @@ Obtains the list of authorized applications of a user's public credential. This 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CMResult&gt; | Promise used to return the result, which is the value of **appUidList** in the[CMResult](arkts-devicecertificate-cmresult-i.md#cmresult) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the result, which is the value of **appUidList** in the[CMResult](arkts-devicecertificate-cmresult-i.md) object. |
 
 **Error codes:**
 

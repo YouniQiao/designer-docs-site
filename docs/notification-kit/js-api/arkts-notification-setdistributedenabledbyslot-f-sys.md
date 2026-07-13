@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setDistributedEnabledBySlot
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function setDistributedEnabledBySlot(slot: SlotType, deviceType: string, enabled: boolean): Promise<void>
 ```
 
-Sets whether notifications of a specified slot can be sent to devices of a specified type through cross-device collaboration. This API uses a promise to return the result.
+Sets whether notifications of a specified slot can be sent to devices of a specified type through cross-device
+collaboration. This API uses a promise to return the result.
 
 **Since:** 18
 

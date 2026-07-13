@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## getDomainFilterRules
@@ -12,7 +12,11 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function getDomainFilterRules(admin: Want): Array<DomainFilterRule>
 ```
 
-Obtains domain name filtering rules. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23.
+Obtains domain name filtering rules.
+
+In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
+
+[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
 
 **Since:** 12
 

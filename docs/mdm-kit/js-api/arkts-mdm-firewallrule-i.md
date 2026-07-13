@@ -1,6 +1,10 @@
 # FirewallRule
 
-Represents a firewall rule. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23.
+Represents a firewall rule.
+
+In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
+
+[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
 
 **Since:** 12
 
@@ -9,7 +13,7 @@ Represents a firewall rule. In API version 21 and earlier versions, only IPv4 is
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## action
@@ -18,7 +22,13 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 action?: Action
 ```
 
-Action to take, that is, receive or discard the data packets. This parameter is mandatory when a firewall filtering rule is added. This parameter is optional when a firewall is removed. If this parameter is left empty, all [Action](arkts-mdm-action-e.md#action) chains are cleared, and **srcAddr**, **destAddr**, **srcPort**, **destPort**, and **appUid** must be also left empty.
+Action to take, that is, receive or discard the data packets.
+
+This parameter is mandatory when a firewall filtering rule is added.
+
+This parameter is optional when a firewall is removed. If this parameter is left empty, all
+[Action](arkts-mdm-action-e.md) chains are cleared, and **srcAddr**, **destAddr**, **srcPort**,
+**destPort**, and **appUid** must be also left empty.
 
 **Type:** Action
 
@@ -50,7 +60,8 @@ UID of the application.
 destAddr?: string
 ```
 
-Destination IP address. An IP address segment, for example, **192.168.0.0/22** or **192.168.1.100-192.168.1.200** is supported.
+Destination IP address. An IP address segment, for example, **192.168.0.0/22** or **192.168.1.100-192.168.1.200**
+is supported.
 
 **Type:** string
 
@@ -82,7 +93,13 @@ Destination port.
 direction?: Direction
 ```
 
-Direction chains to which the rule applies. This parameter is mandatory when a firewall filtering rule is added. This parameter is optional when a firewall is removed. If this parameter is left empty, all [Direction](arkts-mdm-direction-e.md#direction) chains are cleared, and **srcAddr**, **destAddr**, **srcPort**, **destPort**, and **appUid** must be also left empty.
+Direction chains to which the rule applies.
+
+This parameter is mandatory when a firewall filtering rule is added.
+
+This parameter is optional when a firewall is removed. If this parameter is left empty, all
+[Direction](arkts-mdm-direction-e.md) chains are cleared, and **srcAddr**, **destAddr**, **srcPort**,
+**destPort**, and **appUid** must be also left empty.
 
 **Type:** Direction
 
@@ -98,7 +115,8 @@ Direction chains to which the rule applies. This parameter is mandatory when a f
 family?: number
 ```
 
-IP protocol version. The value can be **1** (IPv4) or **2** (IPv6). The value should be an integer. Default value: 1.
+IP protocol version. The value can be **1** (IPv4) or **2** (IPv6).
+The value should be an integer. Default value: 1.
 
 **Type:** number
 
@@ -114,7 +132,14 @@ IP protocol version. The value can be **1** (IPv4) or **2** (IPv6). The value sh
 logType?: LogType
 ```
 
-Log type. Currently, only **NFLOG** is supported. This parameter applies only to PCs/2-in-1 devices. When adding a firewall filter rule, this parameter is optional. If configured, it only takes effect when data packets are dropped or rejected.<!--RP1--><!--RP1End--> When removing firewall filter rules, this parameter is optional if a chain is cleared. The clearing of the entire chain is not affected. When removing a single rule, the value of this parameter must be the same as that of the rule. Otherwise, the filter rule may have been removed, but logs are still recorded. When removing the same filter rule, you must remove the rule in the sequence in which the rule is added. When obtaining firewall filter rules, the **logType** field can be obtained only when logs take effect.
+Log type. Currently, only **NFLOG** is supported. This parameter applies only to PCs/2-in-1 devices.
+When adding a firewall filter rule, this parameter is optional. If configured, it only takes effect when data
+packets are dropped or rejected.<!--RP1--><!--RP1End-->
+When removing firewall filter rules, this parameter is optional if a chain is cleared. The clearing of the entire
+chain is not affected. When removing a single rule, the value of this parameter must be the same as that of the
+rule. Otherwise, the filter rule may have been removed, but logs are still recorded. When removing the same
+filter rule, you must remove the rule in the sequence in which the rule is added.
+When obtaining firewall filter rules, the **logType** field can be obtained only when logs take effect.
 
 **Type:** LogType
 
@@ -146,7 +171,8 @@ Network protocol. If the value is **ALL** or **ICMP**, the settings of **srcPort
 srcAddr?: string
 ```
 
-Source IP address. An IP address segment, for example, **192.168.0.0/22** or **192.168.1.100-192.168.1.200** is supported.
+Source IP address. An IP address segment, for example, **192.168.0.0/22** or **192.168.1.100-192.168.1.200** is
+supported.
 
 **Type:** string
 

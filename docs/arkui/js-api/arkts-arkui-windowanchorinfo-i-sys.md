@@ -1,6 +1,7 @@
 # WindowAnchorInfo (System API)
 
-Describes the anchor point information used to maintain the relative position between the level-1 child window and the main window.
+Describes the anchor point information used to maintain the relative position between the level-1 child window and
+the main window.
 
 **Since:** 24
 
@@ -11,7 +12,7 @@ Describes the anchor point information used to maintain the relative position be
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## anchorType
@@ -38,7 +39,8 @@ Type of the anchor point used to maintain the relative position.
 offsetX?: number
 ```
 
-X-axis offset between the anchor points of the child window and the main window, in px. The value must be an integer. Floating-point numbers are rounded down. The default value is **0**.
+X-axis offset between the anchor points of the child window and the main window, in px. The value must be an
+integer. Floating-point numbers are rounded down. The default value is **0**.
 
 **Type:** number
 
@@ -58,7 +60,8 @@ X-axis offset between the anchor points of the child window and the main window,
 offsetY?: number
 ```
 
-Y-axis offset between the anchor points of the child window and the main window, in px. The value must be an integer. Floating-point numbers are rounded down. The default value is **0**.
+Y-axis offset between the anchor points of the child window and the main window, in px. The value must be an
+integer. Floating-point numbers are rounded down. The default value is **0**.
 
 **Type:** number
 

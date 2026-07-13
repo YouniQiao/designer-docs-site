@@ -12,7 +12,9 @@ Defines the length attribute. When the length unit is PERCENT, the value **1** i
 autoRefresh?(value: boolean): LengthMetrics
 ```
 
-Sets automatic refresh for the LengthMetrics object. When enabled, the length value of the object created by LengthMetrics.resource() is automatically updated when the system configuration changes.
+Sets automatic refresh for the LengthMetrics object.
+When enabled, the length value of the object created by LengthMetrics.resource() is automatically updated
+when the system configuration changes.
 
 **Since:** 26.0.0
 
@@ -40,7 +42,9 @@ Sets automatic refresh for the LengthMetrics object. When enabled, the length va
 constructor(value: number, unit?:LengthUnit)
 ```
 
-A constructor used to create a **LengthMetrics** instance. If the **unit** parameter is omitted or explicitly set to **undefined**, the default unit VP is used. If it is set to a value that is not of the LengthUnit type, the default value 0 VP is used.
+A constructor used to create a **LengthMetrics** instance. If the **unit** parameter is omitted or explicitly set
+to **undefined**, the default unit VP is used. If it is set to a value that is not of the LengthUnit type, the
+default value 0 VP is used.
 
 **Since:** 12
 

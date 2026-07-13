@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { call } from '@ohos.telephony.call';
+import { call } from '@kit.TelephonyKit';
 ```
 
 ## muteRinger
@@ -12,7 +12,9 @@ import { call } from '@ohos.telephony.call';
 function muteRinger(callback: AsyncCallback<void>): void
 ```
 
-Stops the ringtone. If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function.
+Stops the ringtone.
+
+If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function.
 
 **Since:** 8
 
@@ -62,7 +64,9 @@ call.muteRinger((err: BusinessError) => {
 function muteRinger(): Promise<void>
 ```
 
-Stops the ringtone. If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function.
+Stops the ringtone.
+
+If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function.
 
 **Since:** 8
 

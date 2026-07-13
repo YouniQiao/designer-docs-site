@@ -12,7 +12,9 @@ Defines MonitorDecoratorOptions interface
 enableWildcard?: boolean
 ```
 
-Enables wildcard feature. Set to true to enable wildcard feature, set to false to disable it. The default value is true.
+Enables wildcard feature.
+Set to true to enable wildcard feature, set to false to disable it.
+The default value is true.
 
 **Type:** boolean
 

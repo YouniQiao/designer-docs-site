@@ -6,7 +6,8 @@
 function getTotalBytes(path: string, callback: AsyncCallback<number>): void
 ```
 
-Obtains the total size of the specified file system, in bytes. This API uses an asynchronous callback to return the result.
+Obtains the total size of the specified file system, in bytes. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

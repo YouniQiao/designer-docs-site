@@ -1,6 +1,8 @@
 # StatusMonitor (System API)
 
-Defines the object for listening to or obtaining the template or continuous authentication status.
+Status monitor object. It is used to listen for or obtain information such as the template status, continuous
+authentication status, and available device status. This object can be obtained by calling
+[getStatusMonitor](arkts-userauthentication-getstatusmonitor-f-sys.md#getstatusmonitor-1).
 
 **Since:** 23
 
@@ -11,7 +13,7 @@ Defines the object for listening to or obtaining the template or continuous auth
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## getTemplateStatus
@@ -20,7 +22,9 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 getTemplateStatus(): Promise<TemplateStatus[]>
 ```
 
-Obtains the status of the companion device template. This API uses a promise to return the result.
+Obtains the status of the companion device template. This API is used to query the status of all registered
+companion device authentication templates of the current user, including the template validity, supported
+services, and associated device status. This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -36,7 +40,7 @@ Obtains the status of the companion device template. This API uses a promise to 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;TemplateStatus[]&gt; | Promise used to return the list of all template states. |
+| Promise&lt;TemplateStatus[]&gt; | Promise used to return the status list of all templates of the currentuser. The status of each template contains the template ID, validity, and device information. If theoperation fails, an error code is returned. |
 
 **Error codes:**
 
@@ -50,7 +54,8 @@ Obtains the status of the companion device template. This API uses a promise to 
 offAvailableDeviceChange(callback?: AvailableDeviceStatusCallback): void
 ```
 
-Unsubscribes from the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+Unsubscribes from the events for status changes of companion devices that can be added. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -80,7 +85,9 @@ Unsubscribes from the events for status changes of companion devices that can be
 offContinuousAuthChange(callback?: ContinuousAuthStatusCallback): void
 ```
 
-Unsubscribes from the events for continuous authentication status of companion devices. This API uses an asynchronous callback to return the result.
+Unsubscribes from the continuous authentication status change event of the companion device. After the
+unsubscription, the application will no longer receive notifications of continuous authentication status
+changes. This API uses an asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -96,7 +103,7 @@ Unsubscribes from the events for continuous authentication status of companion d
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | ContinuousAuthStatusCallback | No | Callback to unregister. If this parameter is notspecified, all callbacks corresponding to the event type are unsubscribed. |
+| callback | ContinuousAuthStatusCallback | No | Callback to unregister. If this parameter is passed,only the specified callback is unregistered. If this parameter is not passed, all callbacks registeredwith **onContinuousAuthChange** are unregistered. |
 
 **Error codes:**
 
@@ -140,7 +147,8 @@ Unsubscribes from template status change events. This API uses an asynchronous c
 onAvailableDeviceChange(callback: AvailableDeviceStatusCallback): void
 ```
 
-Subscribes to the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+Subscribes to the events for status changes of companion devices that can be added. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 23
 
@@ -170,7 +178,8 @@ Subscribes to the events for status changes of companion devices that can be add
 onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback): void
 ```
 
-Subscribes to the events for continuous authentication status of companion devices. This API uses an asynchronous callback to return the result.
+Subscribes to the events for continuous authentication status of companion devices. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 23
 

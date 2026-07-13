@@ -2,6 +2,7 @@
 
 Provides an interface for RichText component.
 
+
 ## RichText
 
 ```TypeScript

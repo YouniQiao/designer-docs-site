@@ -1,8 +1,9 @@
 # PictureDrawableDescriptor
 
-Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. This API inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult).
+Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. This API inherits from
+[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md).
 
-**Inheritance/Implementation:** PictureDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+**Inheritance/Implementation:** PictureDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +12,7 @@ Creates a **PictureDrawableDescriptor** object by passing a **Picture** object. 
 ## Modules to Import
 
 ```TypeScript
-import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@ohos.arkui.drawableDescriptor';
+import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
 ## constructor

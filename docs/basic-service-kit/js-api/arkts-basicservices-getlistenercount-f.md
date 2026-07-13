@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { emitter } from '@ohos.events.emitter';
+import { emitter } from '@kit.BasicServicesKit';
 ```
 
 ## getListenerCount

@@ -1,6 +1,7 @@
 # GallerySync (System API)
 
-Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of **GallerySync**, you need to create a **GallerySync** instance.
+Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of
+**GallerySync**, you need to create a **GallerySync** instance.
 
 **Since:** 10
 
@@ -11,7 +12,7 @@ Provides APIs to implement device-cloud sync of media assets in **Gallery**. Bef
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -56,7 +57,7 @@ Removes the specified callback from the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is[SyncProgress](arkts-corefile-syncprogress-i.md#syncprogress), and the return value is **void**. |
+| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is[SyncProgress](arkts-corefile-syncprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -147,7 +148,7 @@ Registers a listener for the device-cloud sync progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is[SyncProgress](arkts-corefile-syncprogress-i.md#syncprogress), and the return value is **void**. |
+| callback | (pg: SyncProgress) =&gt; void | Yes | Callback used to return the sync progress. The input parameter is[SyncProgress](arkts-corefile-syncprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -277,7 +278,12 @@ gallerySync.start((err: BusinessError) => {
 stop(): Promise<void>
 ```
 
-Stops device-cloud sync. This API uses a promise to return the result. > **NOTE** > > Calling **stop** will stop the sync process. To resume the sync, call > [start](arkts-corefile-gallerysync-c-sys.md#start-1).
+Stops device-cloud sync. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> Calling **stop** will stop the sync process. To resume the sync, call
+> [start](arkts-corefile-gallerysync-c-sys.md#start-1).
 
 **Since:** 10
 
@@ -322,7 +328,12 @@ gallerySync.stop().then(() => {
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops device-cloud sync. This API uses an asynchronous callback to return the result. > **NOTE** > > Calling **stop** will stop the sync process. To resume the sync, call > [start](arkts-corefile-gallerysync-c-sys.md#start-1).
+Stops device-cloud sync. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Calling **stop** will stop the sync process. To resume the sync, call
+> [start](arkts-corefile-gallerysync-c-sys.md#start-1).
 
 **Since:** 10
 

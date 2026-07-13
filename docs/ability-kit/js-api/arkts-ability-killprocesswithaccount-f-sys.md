@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## killProcessWithAccount
@@ -12,7 +12,12 @@ import { appManager } from '@ohos.app.ability.appManager';
 function killProcessWithAccount(bundleName: string, accountId: number): Promise<void>
 ```
 
-Kills a process by bundle name and account ID. This API uses a promise to return the result. > **NOTE** > > The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the > current user.
+Kills a process by bundle name and account ID. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the
+> current user.
 
 **Since:** 9
 
@@ -77,7 +82,12 @@ function killProcessWithAccount(bundleName: string, accountId: number, clearPage
     Promise<void>
 ```
 
-Kills a process by bundle name and account ID. This API uses a promise to return the result. > **NOTE** > > The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the > current user.
+Kills a process by bundle name and account ID. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the
+> current user.
 
 **Since:** 14
 
@@ -143,7 +153,12 @@ try {
 function killProcessWithAccount(bundleName: string, accountId: number, callback: AsyncCallback<void>): void
 ```
 
-Kills a process by bundle name and account ID. This API uses an asynchronous callback to return the result. > **NOTE** > > The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the > current user.
+Kills a process by bundle name and account ID. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the
+> current user.
 
 **Since:** 9
 

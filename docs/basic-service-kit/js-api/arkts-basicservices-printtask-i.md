@@ -9,7 +9,7 @@ Implements event listeners for print jobs.
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## off('block')
@@ -159,7 +159,8 @@ print.print([fileUri.getUriFromPath(filePath)]).then((printTask: print.PrintTask
 off(type: 'cancel', callback?: Callback<void>): void
 ```
 
-Unsubscribes from the cancellation events of a print job. This API uses an asynchronous callback to return the result.
+Unsubscribes from the cancellation events of a print job. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -347,7 +348,8 @@ print.print([fileUri.getUriFromPath(filePath)]).then((printTask: print.PrintTask
 on(type: 'cancel', callback: Callback<void>): void
 ```
 
-Subscribes to the cancellation events of a print job. This API uses an asynchronous callback to return the result.
+Subscribes to the cancellation events of a print job. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

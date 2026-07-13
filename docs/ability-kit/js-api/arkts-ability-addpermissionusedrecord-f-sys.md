@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## addPermissionUsedRecord
@@ -18,9 +18,19 @@ function addPermissionUsedRecord(
   ): Promise<void>
 ```
 
-Adds an access record of a sensitive permission.
+When an application protected by a permission is called by another service or application, this API can be used to
+add a permission usage record. It is recommended to call this API after accessing a sensitive permission, so that
+the system records the corresponding sensitive permission access event. This API uses a promise to return the
+result.
 
-**Since:** 12
+The permission usage record includes the application identity of the caller, the name of the application permission,
+and the number of successful and failed accesses to this application by the caller.
+
+> **NOTE**
+> The permission usage record is controlled by the toggle status set by [setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1). When the toggle is off, calling this API will not generate a
+permission usage record.
+
+**Since:** 9
 
 **Required permissions:** ohos.permission.PERMISSION_USED_STATS
 
@@ -32,11 +42,11 @@ Adds an access record of a sensitive permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Token ID of the application. |
-| permissionName | Permissions | Yes | Name of the permission accessed. |
-| successCount | number | Yes | Number of successful accesses to the permission. |
-| failCount | number | Yes | Number of failed accesses to the permission. |
-| options | AddPermissionUsedRecordOptions | No | Options to be added. |
+| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfoof BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to:[bundleManager.getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1). |
+| permissionName | Permissions | Yes | Name of the permission to be recorded. Passing an invalid value returnserror code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| successCount | number | Yes | Number of successful accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
+| failCount | number | Yes | Number of failed accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
+| options | AddPermissionUsedRecordOptions | No | Optional parameter for adding a permission usage record, usedto specify the sensitive permission usage type and extension identity. Pass this parameter when you need todistinguish the permission access method (such as access via Picker or security control) or identify thecaller's extension identity.<br>**Since:** 12 |
 
 **Return value:**
 
@@ -48,13 +58,13 @@ Adds an access record of a sensitive permission.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The tokenID is 0, the permissionName exceeds256 characters, the count value is invalid, usedType in AddPermissionUsedRecordOptions is invalid,or the enhancedIdentity in AddPermissionUsedRecordOptions exceeds 48 characters. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid-not-exist) | The specified tokenID does not exist or refer to an application process. |
 | [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist or is not a user_grant permission. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 | [12100008](../errorcode-access-token.md#12100008-out-of-memory) | Out of memory. |
 | [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. A database error occurs. |
 
@@ -97,7 +107,17 @@ function addPermissionUsedRecord(
   ): void
 ```
 
-Adds access record of sensitive permission.
+When an application protected by a permission is called by another service or application, this API can be used to
+add a permission usage record. It is recommended to call this API after accessing a sensitive permission, so that
+the system records the corresponding sensitive permission access event. This API uses an asynchronous callback to
+return the result.
+
+The permission usage record includes the application identity of the caller, the name of the application
+permission used, and the number of successful and failed accesses to this application by the caller.
+
+The permission usage record is controlled by the toggle status set by
+[setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1). When the toggle
+is off, calling this API will not generate a permission usage record.
 
 **Since:** 9
 
@@ -111,23 +131,23 @@ Adds access record of sensitive permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Token ID of the application. |
-| permissionName | Permissions | Yes | Name of the permission to be added. |
-| successCount | number | Yes | Access count. |
-| failCount | number | Yes | Reject count. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Asynchronous callback interface. |
+| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo ofBundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1). |
+| permissionName | Permissions | Yes | Name of the permission to be recorded. Passing an invalid value returnserror code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| successCount | number | Yes | Number of successful accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
+| failCount | number | Yes | Number of failed accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.PERMISSION_USED_STATS". |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
-| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256 characters, or the count value is invalid. |
+| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256characters, or the count value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid-not-exist) | The specified tokenID does not exist or refer to an application process. |
 | [12100003](../errorcode-access-token.md#12100003-permission-not-exist) | The specified permission does not exist or is not a user_grant permission. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 | [12100008](../errorcode-access-token.md#12100008-out-of-memory) | Out of memory. |
 | [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. A database error occurs. |
 

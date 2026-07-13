@@ -38,7 +38,7 @@ getModifierKeyState?(keys: Array<string>): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameterverification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameterverification failed. |
 
 ## deviceId
 
@@ -62,7 +62,9 @@ deviceId: number
 intentionCode: IntentionCode
 ```
 
-按键对应的意图。 默认值：IntentionCode.INTENTION_UNKNOWN。
+按键对应的意图。
+
+默认值：IntentionCode.INTENTION_UNKNOWN。
 
 **类型：** IntentionCode
 
@@ -136,7 +138,7 @@ ScrollLock是否锁定（true: 锁定；false: 解锁）。
 keyCode: number
 ```
 
-按键的键值。按键设备提供的键值请参考[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。
+按键的键值。按键设备提供的键值请参考[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。
 
 **类型：** number
 

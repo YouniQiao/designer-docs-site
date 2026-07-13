@@ -12,21 +12,19 @@ Describes audio capturer configurations.
 import { audio } from '@kit.AudioKit';
 ```
 
-## preferredInputDevice
+## capturerInfo
 
 ```TypeScript
-preferredInputDevice?: AudioDeviceDescriptor
+capturerInfo: AudioCapturerInfo
 ```
 
-Perfered input device for this audio capturer. The preferredInputDevice must be an input device, and the source type in {@link captureInfo} must be {@link SourceType#SOURCE_TYPE_RECONGITION} or {@link SourceType#SOURCE_TYPE_VOICE_TRANSCRIPTION}, otherwise this parameter will be ignored. If the user does not specify a device, the system automatically selects the recording device for the audio capturer. When the user specifies a prefer device to create a recongition or transcription recording, 1) If the prefer device is online, the current audiocapturer may use the preferred device for recording; if the prefer device goes offline during operation, the system automatically selects a recording device. 2) If the prefer device is offline, the system automatically selects a recording device; if the prefer device comes online during operation, it may switch to the prefer device for recording. Users can query the device which is in use by {@link AudioCapturer#getCurrentAudioCapturerChangeInfo}.
+Audio capturer information.
 
-**Type:** AudioDeviceDescriptor
+**Type:** AudioCapturerInfo
 
-**Since:** 22
+**Since:** 8
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-**System API:** This is a system API.
 
 ## playbackCaptureConfig
 
@@ -34,7 +32,10 @@ Perfered input device for this audio capturer. The preferredInputDevice must be 
 playbackCaptureConfig?: AudioPlaybackCaptureConfig
 ```
 
-Defines configuration for capturing played audio. This API is supported since API version 10 and deprecated since API version 12. You are advised to use [AVScreenCapture](docroot://reference/apis-media-kit/capi-avscreencapture.md) instead.
+Defines configuration for capturing played audio.
+
+This API is supported since API version 10 and deprecated since API version 12. You are advised to use
+[AVScreenCapture](../../../../reference/apis-media-kit/capi-avscreencapture.md) instead.
 
 **Type:** AudioPlaybackCaptureConfig
 
@@ -42,7 +43,24 @@ Defines configuration for capturing played audio. This API is supported since AP
 
 **Deprecated since:** 12
 
-**Substitute:** OH_AVScreenCapture
+**Substitutes:** OH_AVScreenCapture
+
+**System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
+
+## playbackCaptureMode
+
+```TypeScript
+playbackCaptureMode?: AudioPlaybackCaptureMode
+```
+
+The playback capture mode for audio capturer.
+This can be a combination of the available {@link AudioPlaybackCaptureMode}.
+
+**Type:** AudioPlaybackCaptureMode
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
@@ -55,36 +73,6 @@ streamInfo: AudioStreamInfo
 Audio stream information.
 
 **Type:** AudioStreamInfo
-
-**Since:** 8
-
-**System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-## playbackCaptureMode
-
-```TypeScript
-playbackCaptureMode?: AudioPlaybackCaptureMode
-```
-
-The playback capture mode for audio capturer. This can be a combination of the available {@link AudioPlaybackCaptureMode}.
-
-**Type:** AudioPlaybackCaptureMode
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
-
-## capturerInfo
-
-```TypeScript
-capturerInfo: AudioCapturerInfo
-```
-
-Audio capturer information.
-
-**Type:** AudioCapturerInfo
 
 **Since:** 8
 

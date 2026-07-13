@@ -1,6 +1,8 @@
 # SegmentButtonV2Items
 
-Represents items of the **SegmentButtonV2** component. This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-segmentbuttonv2items-c.md#segmentbuttonv2items)>.
+Represents items of the **SegmentButtonV2** component.
+
+This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-segmentbuttonv2items-c.md)>.
 
 **Inheritance/Implementation:** SegmentButtonV2Items extends [Array<SegmentButtonV2Item>](Array<SegmentButtonV2Item>)
 
@@ -11,7 +13,7 @@ Represents items of the **SegmentButtonV2** component. This parameter is inherit
 ## Modules to Import
 
 ```TypeScript
-import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@ohos.arkui.advanced.SegmentButtonV2';
+import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@kit.ArkUI';
 ```
 
 ## constructor

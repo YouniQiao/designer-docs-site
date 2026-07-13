@@ -6,7 +6,13 @@
 function getRunningProcessInformation(): Promise<Array<ProcessInformation>>
 ```
 
-获取当前应用运行进程的相关信息。使用Promise异步回调。 > **说明：** > > - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。 > > - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+获取当前应用运行进程的相关信息。使用Promise异步回调。
+
+> **说明：**
+>
+> - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。
+>
+> - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
 
 **起始版本：** 9
 
@@ -50,7 +56,13 @@ appManager.getRunningProcessInformation().then((data) => {
 function getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInformation>>): void
 ```
 
-获取当前应用运行进程的相关信息。使用callback异步回调。 > **说明：** > > - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。 > > - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
+获取当前应用运行进程的相关信息。使用callback异步回调。
+
+> **说明：**
+>
+> - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。
+>
+> - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。
 
 **起始版本：** 9
 
@@ -71,7 +83,7 @@ function getRunningProcessInformation(callback: AsyncCallback<Array<ProcessInfor
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 **示例：**

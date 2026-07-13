@@ -9,7 +9,7 @@ Defines the options used in **createReadStream()**.
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## end
@@ -32,7 +32,8 @@ End position to read the data, in bytes. This parameter is optional. The default
 start?: number
 ```
 
-Start position to read the data, in bytes. This parameter is optional. By default, data is read from the current position.
+Start position to read the data, in bytes. This parameter is optional. By default, data is read from the current
+position.
 
 **Type:** number
 

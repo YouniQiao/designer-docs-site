@@ -6,21 +6,17 @@ Describes the video Dimensions.
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
-## 导入模块
+## height
 
 ```TypeScript
-import { media } from '@kit.MediaKit';
+height?: number
 ```
 
-## width
+height of the video resolution.
+The value should be an integer.Value constraint:The value must be a positive integer.
+<br>Unit:Pixel.
 
-```TypeScript
-width?: int
-```
-
-width of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 
@@ -28,15 +24,17 @@ width of the video resolution. The value should be an integer.Value constraint:T
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
-## height
+## width
 
 ```TypeScript
-height?: int
+width?: number
 ```
 
-height of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
+width of the video resolution.
+The value should be an integer.Value constraint:The value must be a positive integer.
+<br>Unit:Pixel.
 
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { JSON } from '@ohos.util.json';
+import { JSON } from '@kit.ArkTS';
 ```
 
 ## remove
@@ -12,7 +12,9 @@ import { JSON } from '@ohos.util.json';
 function remove(obj: object, property: string): void
 ```
 
-Removes a key from an ArkTS object. This API can be used for related operations after [JSON.parse](arkts-arkts-parse-f.md#parse-1) is called to parse a JSON string. This API supports only valid JSON strings whose outermost layer is in dictionary format (in braces instead of square brackets).
+Removes a key from an ArkTS object. This API can be used for related operations after
+[JSON.parse](arkts-arkts-parse-f.md#parse-1) is called to parse a JSON string. This API supports only valid JSON strings whose
+outermost layer is in dictionary format (in braces instead of square brackets).
 
 **Since:** 12
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getVss
@@ -12,7 +12,8 @@ import { hidebug } from '@ohos.hidebug';
 function getVss(): bigint
 ```
 
-Obtains the virtual set size used by the application process. This API is implemented by multiplying the value of **size** (number of memory pages) in the **\/proc/{pid}/statm** node by the page size (4 KB per page).
+Obtains the virtual set size used by the application process. This API is implemented by multiplying the value of
+**size** (number of memory pages) in the **\/proc/{pid}/statm** node by the page size (4 KB per page).
 
 **Since:** 11
 

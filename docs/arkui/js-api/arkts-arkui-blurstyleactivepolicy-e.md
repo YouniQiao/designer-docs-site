@@ -12,7 +12,8 @@ Enumerates the policies for activating the blur style.
 FOLLOWS_WINDOW_ACTIVE_STATE = 0
 ```
 
-The blur effect changes according to the window's focus state; it is inactive when the window is not in focus and active when the window is in focus.
+The blur effect changes according to the window's focus state; it is inactive when the window is not in focus and
+active when the window is in focus.
 
 **Since:** 14
 

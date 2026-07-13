@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnectionManager';
+import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
 ## reject
@@ -12,7 +12,8 @@ import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnecti
 function reject(token: string, reason: string): void
 ```
 
-Rejects a connection request in a cross-device collaboration session. After a connection request sent from the peer application is rejected, a rejection reason is returned.
+Rejects a connection request in a cross-device collaboration session. After a connection request sent from the peer
+application is rejected, a rejection reason is returned.
 
 **Since:** 18
 

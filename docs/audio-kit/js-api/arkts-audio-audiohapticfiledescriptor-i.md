@@ -1,6 +1,10 @@
 # AudioHapticFileDescriptor
 
-Describes the audio-haptic file descriptor. > **NOTE** > > Ensure that **fd** is an available file descriptor and the values of **offset** and **length** are correct.
+Describes the audio-haptic file descriptor.
+
+> **NOTE**
+>
+> Ensure that **fd** is an available file descriptor and the values of **offset** and **length** are correct.
 
 **Since:** 20
 
@@ -9,7 +13,7 @@ Describes the audio-haptic file descriptor. > **NOTE** > > Ensure that **fd** is
 ## Modules to Import
 
 ```TypeScript
-import { audioHaptic } from '@ohos.multimedia.audioHaptic';
+import { audioHaptic } from '@kit.AudioKit';
 ```
 
 ## fd
@@ -32,7 +36,8 @@ File descriptor of the audio-haptic file, which is generally greater than or equ
 length?: number
 ```
 
-Number of bytes to read. By default, the length is the number of bytes remaining in the file from the offset position.
+Number of bytes to read. By default, the length is the number of bytes remaining in the file from the offset
+position.
 
 **Type:** number
 

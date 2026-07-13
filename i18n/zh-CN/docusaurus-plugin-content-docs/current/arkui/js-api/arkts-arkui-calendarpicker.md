@@ -1,6 +1,11 @@
 # CalendarPicker
 
-日历选择器组件，提供下拉日历弹窗，可以让用户选择日期。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link ./with_theme}。
+日历选择器组件，提供下拉日历弹窗，可以让用户选择日期。
+
+> **说明：**
+
+> - 该组件从API版本26.0.0开始支持[WithTheme]{@link ./with_theme}。
+
 
 ## CalendarPicker
 

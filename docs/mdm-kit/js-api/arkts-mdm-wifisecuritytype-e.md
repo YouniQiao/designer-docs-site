@@ -68,7 +68,8 @@ PSK. For example, home and small office Wi-Fi.
 WIFI_SEC_TYPE_SAE = 4
 ```
 
-Simultaneous Authentication of Equals (SAE). For example, smart home and small- and medium-sized enterprise networks.
+Simultaneous Authentication of Equals (SAE). For example, smart home and small- and medium-sized enterprise
+networks.
 
 **Since:** 12
 
@@ -110,7 +111,8 @@ Suite B 192-bit encryption. For example, government and high-security organizati
 WIFI_SEC_TYPE_OWE = 7
 ```
 
-Opportunistic Wireless Encryption (OWE). For example, public Wi-Fi in a coffee shop, which does not require a password to provide encryption for connections.
+Opportunistic Wireless Encryption (OWE). For example, public Wi-Fi in a coffee shop, which does not require a
+password to provide encryption for connections.
 
 **Since:** 12
 
@@ -124,7 +126,8 @@ Opportunistic Wireless Encryption (OWE). For example, public Wi-Fi in a coffee s
 WIFI_SEC_TYPE_WAPI_CERT = 8
 ```
 
-WLAN Authentication and Privacy Infrastructure (WAPI) in certificate-based mode (WAPI-CERT). It is China's own wireless security standard.
+WLAN Authentication and Privacy Infrastructure (WAPI) in certificate-based mode (WAPI-CERT). It is China's own
+wireless security standard.
 
 **Since:** 12
 

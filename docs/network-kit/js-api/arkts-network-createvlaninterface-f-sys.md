@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## createVlanInterface
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function createVlanInterface(ifName: string, vlanId: number): Promise<void>
 ```
 
-Create vlan interface by vlanId. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Create vlan interface by vlanId.
+To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 23
 

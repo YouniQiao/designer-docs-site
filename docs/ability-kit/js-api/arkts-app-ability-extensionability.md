@@ -12,5 +12,5 @@ import { ExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ExtensionAbility](arkts-extensionability-c.md) | ExtensionAbility是特定场景扩展能力的基类，继承自[Ability]{@link @ohos.app.ability.Ability:Ability}，未新增属性和方法。不支持开发者直接继承 ExtensionAbility。各类Ability的继承关系详见 [继承关系说明](docroot://reference/apis-ability-kit/js-apis-app-ability-ability.md#ability的继承关系说明)。 |
+| [ExtensionAbility](arkts-ability-extensionability-c.md) | ExtensionAbility is the base class for scenario-specific ExtensionAbilities. It inherits from[Ability](arkts-ability-ability-c.md), with no property or method added. You cannot directly inheritfrom ExtensionAbility. For details about the inheritance relationship of each ability, see[Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship). |
 

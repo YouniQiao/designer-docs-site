@@ -1,10 +1,6 @@
 # DeviceType
 
-```TypeScript
-enum DeviceType
-```
-
-Enumerates the device types.
+表示设备类型的枚举。
 
 **起始版本：** 7
 
@@ -16,11 +12,11 @@ Enumerates the device types.
 INVALID = 0
 ```
 
-Invalid device.
+无效设备。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -30,11 +26,11 @@ Invalid device.
 EARPIECE = 1
 ```
 
-Built-in earpiece.
+听筒。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -44,11 +40,11 @@ Built-in earpiece.
 SPEAKER = 2
 ```
 
-Built-in speaker.
+扬声器。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -58,11 +54,11 @@ Built-in speaker.
 WIRED_HEADSET = 3
 ```
 
-Wired headset with a microphone.
+有线耳机，带麦克风。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -72,11 +68,11 @@ Wired headset with a microphone.
 WIRED_HEADPHONES = 4
 ```
 
-Wired headset without a microphone.
+有线耳机，不带麦克风。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -86,11 +82,11 @@ Wired headset without a microphone.
 BLUETOOTH_SCO = 7
 ```
 
-Bluetooth device using Synchronous Connection Oriented (SCO) links.
+蓝牙设备SCO（Synchronous Connection Oriented）连接。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -100,11 +96,11 @@ Bluetooth device using Synchronous Connection Oriented (SCO) links.
 BLUETOOTH_A2DP = 8
 ```
 
-Bluetooth device using Advanced Audio Distribution Profile (A2DP) links.
+蓝牙设备A2DP（Advanced Audio Distribution Profile）连接。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -114,11 +110,11 @@ Bluetooth device using Advanced Audio Distribution Profile (A2DP) links.
 MIC = 15
 ```
 
-Built-in microphone.
+麦克风。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -128,11 +124,11 @@ Built-in microphone.
 USB_HEADSET = 22
 ```
 
-USB Type-C headset.
+USB耳机，带麦克风。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -142,11 +138,11 @@ USB Type-C headset.
 DISPLAY_PORT = 23
 ```
 
-Display port (DP), which is used to connect to external devices.
+DisplayPort（显示接口，简称DP），用于外接扩展设备。
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -156,11 +152,11 @@ Display port (DP), which is used to connect to external devices.
 REMOTE_CAST = 24
 ```
 
-Remote cast device.
+音频被系统应用投送到其他的远程设备。
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -170,25 +166,11 @@ Remote cast device.
 USB_DEVICE = 25
 ```
 
-USB device (excluding USB headsets).
+USB设备（不包含USB耳机）。
 
 **起始版本：** 18
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
-
-## ACCESSORY
-
-```TypeScript
-ACCESSORY = 26
-```
-
-Accessory devices, such as the mic on remote control.
-
-**起始版本：** 19
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**系统接口：** 此接口为系统接口。
 
 ## HDMI
 
@@ -196,7 +178,7 @@ Accessory devices, such as the mic on remote control.
 HDMI = 27
 ```
 
-HDMI device (such as HDMI, ARC, and eARC).
+HDMI设备（例如HDMI、ARC、eARC等）。
 
 **起始版本：** 19
 
@@ -208,7 +190,7 @@ HDMI device (such as HDMI, ARC, and eARC).
 LINE_DIGITAL = 28
 ```
 
-Wired digital device (such as S/PDIF)
+有线数字设备（例如S/PDIF等）。
 
 **起始版本：** 19
 
@@ -217,14 +199,14 @@ Wired digital device (such as S/PDIF)
 ## REMOTE_DAUDIO
 
 ```TypeScript
-REMOTE_DAUDIO = 29
+REMOTE_DAUDIO = 25
 ```
 
-Distributed device.
+Distributed virtual audio device.
 
-**起始版本：** 18
+**起始版本：** 16
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本16开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -234,7 +216,10 @@ Distributed device.
 HEARING_AID = 30
 ```
 
-Hearing aid audio device. Note: This original device type can be obtained after it is declared via {@link AudioRoutingManager#declareDeviceTypesCompatibility}.
+助听器设备。
+
+Note: This original device type can be obtained after it is declared via
+{@link AudioRoutingManager#declareDeviceTypesCompatibility}.
 
 **起始版本：** 26.0.0
 
@@ -246,39 +231,14 @@ Hearing aid audio device. Note: This original device type can be obtained after 
 NEARLINK = 31
 ```
 
-Nearlink device. Note: This original device type can be obtained after it is declared via {@link AudioRoutingManager#declareDeviceTypesCompatibility}.
+星闪设备。
+
+Note: This original device type can be obtained after it is declared via
+{@link AudioRoutingManager#declareDeviceTypesCompatibility}.
 
 **起始版本：** 26.0.0
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
-
-## BLUETOOTH_SPP
-
-```TypeScript
-BLUETOOTH_SPP = 33
-```
-
-Bluetooth device using the spp profile.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**系统接口：** 此接口为系统接口。
-
-## NEARLINK_PORT
-
-```TypeScript
-NEARLINK_PORT = 34
-```
-
-Nearlink port.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Audio.Device
-
-**系统接口：** 此接口为系统接口。
 
 ## SYSTEM_PRIVATE
 
@@ -286,7 +246,7 @@ Nearlink port.
 SYSTEM_PRIVATE = 200
 ```
 
-System private device. (This device is a private device within the system, and applications can ignore it.)
+系统私有设备（由于该设备在系统中属于私有设备，因此应用程序可以忽略该设备）。
 
 **起始版本：** 22
 
@@ -298,11 +258,11 @@ System private device. (This device is a private device within the system, and a
 DEFAULT = 1000
 ```
 
-Default device type.
+默认设备类型。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 

@@ -1,6 +1,17 @@
 # AbilityDelegator
 
-The **AbilityDelegator** module can listen for and manage the lifecycle changes of [UIAbility](arkts-app-ability-uiability.md) through [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instances. For example, you can obtain the current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the **onForeground** state), start a specified UIAbility, and set the timeout mechanism. You can obtain **AbilityDelegator** by calling [getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1). > **NOTE** > > The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
+The **AbilityDelegator** module can listen for and manage the lifecycle changes of
+[UIAbility](arkts-app-ability-uiability.md) through
+[AbilityMonitor](arkts-ability-abilitymonitor-i.md) instances. For example, you can obtain the
+current state of a UIAbility (for example, whether the UIAbility has been created or is in the foreground), obtain
+the UIAbility that currently has the focus, wait for the UIAbility to enter a lifecycle node (for example, the
+**onForeground** state), start a specified UIAbility, and set the timeout mechanism.
+You can obtain **AbilityDelegator** by calling
+[getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1).
+
+> **NOTE**
+>
+> The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).
 
 **Since:** 9
 
@@ -12,7 +23,8 @@ The **AbilityDelegator** module can listen for and manage the lifecycle changes 
 addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
+Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to return the result. Multi-thread
+concurrent calls are not supported.
 
 **Since:** 9
 
@@ -24,7 +36,7 @@ Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance isadded, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -40,7 +52,8 @@ Adds an **AbilityMonitor** instance. This API uses an asynchronous callback to r
 addAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
+Adds an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
+are not supported.
 
 **Since:** 9
 
@@ -52,7 +65,7 @@ Adds an **AbilityMonitor** instance. This API uses a promise to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Return value:**
 
@@ -73,7 +86,8 @@ Adds an **AbilityMonitor** instance. This API uses a promise to return the resul
 addAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
+Adds an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are
+not supported.
 
 **Since:** 10
 
@@ -85,7 +99,7 @@ Adds an **AbilityMonitor** instance. This API returns the result synchronously. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -100,7 +114,8 @@ Adds an **AbilityMonitor** instance. This API returns the result synchronously. 
 addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses an asynchronous callback to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
+an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -112,7 +127,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance isadded, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -128,7 +143,8 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses a promise to return the result.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API uses
+a promise to return the result.
 
 **Since:** 9
 
@@ -140,7 +156,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Return value:**
 
@@ -161,7 +177,8 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void
 ```
 
-Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API returns the result synchronously.
+Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes of an ability stage. This API
+returns the result synchronously.
 
 **Since:** 10
 
@@ -173,7 +190,7 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -188,7 +205,8 @@ Adds an **AbilityStageMonitor** instance to monitor the lifecycle state changes 
 addInteropAbilityMonitorSync(monitor: InteropAbilityMonitor): void
 ```
 
-Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability in this process.
+Add an InteropAbilityMonitor object for monitoring the lifecycle state changes of the specified ability
+in this process.
 
 **Since:** 26.0.0
 
@@ -216,7 +234,8 @@ Add an InteropAbilityMonitor object for monitoring the lifecycle state changes o
 doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the result.
+Schedules the lifecycle state of an ability to **Background**. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -277,7 +296,8 @@ Schedules the lifecycle state of an ability to **Background**. This API uses a p
 doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void
 ```
 
-Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the result.
+Schedules the lifecycle state of an ability to **Foreground**. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -338,7 +358,9 @@ Schedules the lifecycle state of an ability to **Foreground**. This API uses a p
 executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command. This API uses an asynchronous callback to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command. This API uses an asynchronous callback to return the result.
+Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
+hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -359,7 +381,10 @@ Executes a shell command. This API uses an asynchronous callback to return the r
 executeShellCommand(cmd: string, timeoutSecs: number, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses an asynchronous callback to return the
+result.
+Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
+hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -381,7 +406,9 @@ Executes a shell command with the timeout period specified. This API uses an asy
 executeShellCommand(cmd: string, timeoutSecs?: number): Promise<ShellCmdResult>
 ```
 
-Executes a shell command with the timeout period specified. This API uses a promise to return the result. Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, and pidof.
+Executes a shell command with the timeout period specified. This API uses a promise to return the result.
+Only the following shell commands are supported: aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm,
+hidumper, wukong, pkill, ps, and pidof.
 
 **Since:** 9
 
@@ -400,7 +427,7 @@ Executes a shell command with the timeout period specified. This API uses a prom
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ShellCmdResult&gt; | Promise used to return a[ShellCmdResult](arkts-ability-shellcmdresult-i.md#shellcmdresult) object. |
+| Promise&lt;ShellCmdResult&gt; | Promise used to return a[ShellCmdResult](arkts-ability-shellcmdresult-i.md) object. |
 
 ## finishTest
 
@@ -408,7 +435,8 @@ Executes a shell command with the timeout period specified. This API uses a prom
 finishTest(msg: string, code: number, callback: AsyncCallback<void>): void
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to return the result.
+Finishes the test and prints log information to the unit test console. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -437,7 +465,8 @@ Finishes the test and prints log information to the unit test console. This API 
 finishTest(msg: string, code: number): Promise<void>
 ```
 
-Finishes the test and prints log information to the unit test console. This API uses a promise to return the result.
+Finishes the test and prints log information to the unit test console. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -489,7 +518,7 @@ Obtains the lifecycle state of an ability.
 
 | Type | Description |
 | --- | --- |
-| number | Lifecycle state of the ability, For details about the state values, see[AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitylifecyclestate-e.md#abilitylifecyclestate). |
+| number | Lifecycle state of the ability, For details about the state values, see[AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitylifecyclestate-e.md). |
 
 **Error codes:**
 
@@ -515,7 +544,7 @@ Obtains the application context.
 
 | Type | Description |
 | --- | --- |
-| Context | [Context](arkts-ability-context-depr-i.md#context). |
+| Context | [Context](arkts-ability-context-depr-i.md). |
 
 ## getCurrentTopAbility
 
@@ -523,7 +552,8 @@ Obtains the application context.
 getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void
 ```
 
-Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot be called in the worker thread.
+Obtains the top ability of this application. This API uses an asynchronous callback to return the result. It cannot
+be called in the worker thread.
 
 **Since:** 9
 
@@ -550,7 +580,8 @@ Obtains the top ability of this application. This API uses an asynchronous callb
 getCurrentTopAbility(): Promise<UIAbility>
 ```
 
-Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in the worker thread.
+Obtains the top ability of this application. This API uses a promise to return the result. It cannot be called in
+the worker thread.
 
 **Since:** 9
 
@@ -661,7 +692,7 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityMonitor** instance isremoved, **err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -677,7 +708,8 @@ Removes an **AbilityMonitor** instance. This API uses an asynchronous callback t
 removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 ```
 
-Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
+Removes an **AbilityMonitor** instance. This API uses a promise to return the result. Multi-thread concurrent calls
+are not supported.
 
 **Since:** 9
 
@@ -689,7 +721,7 @@ Removes an **AbilityMonitor** instance. This API uses a promise to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Return value:**
 
@@ -710,7 +742,8 @@ Removes an **AbilityMonitor** instance. This API uses a promise to return the re
 removeAbilityMonitorSync(monitor: AbilityMonitor): void
 ```
 
-Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls are not supported.
+Removes an **AbilityMonitor** instance. This API returns the result synchronously. Multi-thread concurrent calls
+are not supported.
 
 **Since:** 10
 
@@ -722,7 +755,7 @@ Removes an **AbilityMonitor** instance. This API returns the result synchronousl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -737,7 +770,8 @@ Removes an **AbilityMonitor** instance. This API returns the result synchronousl
 removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<void>): void
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to return the result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -749,7 +783,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the **AbilityStageMonitor** instance isremoved, **err** is undefined. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -765,7 +799,8 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 ```
 
-Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the result.
+Removes an **AbilityStageMonitor** instance from the application memory. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -777,7 +812,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Return value:**
 
@@ -810,7 +845,7 @@ Removes an **AbilityStageMonitor** instance from the application memory. This AP
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 
 **Error codes:**
 
@@ -913,8 +948,8 @@ Starts an ability. This API uses an asynchronous callback to return the result.
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 |
-| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 |
+| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 and later |
+| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 
 ## startAbility
 
@@ -960,8 +995,8 @@ Starts an ability. This API uses a promise to return the result.
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
-| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 |
-| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 |
+| [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 and later |
+| [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 
 ## waitAbilityMonitor
 
@@ -969,7 +1004,9 @@ Starts an ability. This API uses a promise to return the result.
 waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi- thread concurrent calls are not supported.
+Waits for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle
+state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-
+thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -981,7 +1018,7 @@ Waits for the **Ability** instance that matches the **AbilityMonitor** instance 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | callback | AsyncCallback&lt;UIAbility&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the **Ability** instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -997,7 +1034,9 @@ Waits for the **Ability** instance that matches the **AbilityMonitor** instance 
 waitAbilityMonitor(monitor: AbilityMonitor, timeout: number, callback: AsyncCallback<UIAbility>): void
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return the result. Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
+**onCreate** lifecycle state and returns the **Ability** instance. This API uses an asynchronous callback to return
+the result. Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -1009,7 +1048,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
 | callback | AsyncCallback&lt;UIAbility&gt; | Yes | Callback used to return the result. |
 
@@ -1026,7 +1065,9 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 waitAbilityMonitor(monitor: AbilityMonitor, timeout?: number): Promise<UIAbility>
 ```
 
-Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the **onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result. Multi-thread concurrent calls are not supported.
+Waits a period of time for the **Ability** instance that matches the **AbilityMonitor** instance to reach the
+**onCreate** lifecycle state and returns the **Ability** instance. This API uses a promise to return the result.
+Multi-thread concurrent calls are not supported.
 
 **Since:** 9
 
@@ -1038,7 +1079,7 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor) instance. |
+| monitor | AbilityMonitor | Yes | [AbilityMonitor](arkts-ability-abilitymonitor-i.md) instance. |
 | timeout | number | No | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
 
 **Return value:**
@@ -1060,7 +1101,8 @@ Waits a period of time for the **Ability** instance that matches the **AbilityMo
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. This
+API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1072,8 +1114,8 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
-| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)instance obtained. Otherwise, **err** is an error object. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
+| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1088,7 +1130,8 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: number, callback: AsyncCallback<AbilityStage>): void
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within the specified timeout period. This API uses an asynchronous callback to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance within
+the specified timeout period. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1100,9 +1143,9 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | timeout | number | Yes | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
-| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)instance obtained. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;AbilityStage&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is undefined and data is the [AbilityStage](arkts-ability-abilitystage-c.md)instance obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1117,7 +1160,8 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: number): Promise<AbilityStage>
 ```
 
-Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You can specify the timeout period. This API uses a promise to return the result.
+Returns an **AbilityStage** instance that matches the conditions set in an **AbilityStageMonitor** instance. You
+can specify the timeout period. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -1129,14 +1173,14 @@ Returns an **AbilityStage** instance that matches the conditions set in an **Abi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) instance. |
+| monitor | AbilityStageMonitor | Yes | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) instance. |
 | timeout | number | No | Maximum waiting time, in milliseconds. The default value is 5000 ms. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AbilityStage&gt; | Promise used to return the[AbilityStage](arkts-ability-abilitystage-c.md#abilitystage) instance. |
+| Promise&lt;AbilityStage&gt; | Promise used to return the[AbilityStage](arkts-ability-abilitystage-c.md) instance. |
 
 **Error codes:**
 

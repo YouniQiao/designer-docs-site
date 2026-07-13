@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## getTransientTaskInfo
@@ -12,7 +12,8 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function getTransientTaskInfo(): Promise<TransientTaskInfo>
 ```
 
-Obtains all transient task information, including the remaining quota of the current day. This API uses a promise to return the result.
+Obtains all transient task information, including the remaining quota of the current day. This API uses a promise
+to return the result.
 
 **Since:** 20
 

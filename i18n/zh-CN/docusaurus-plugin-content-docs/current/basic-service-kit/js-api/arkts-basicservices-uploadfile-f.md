@@ -6,7 +6,13 @@
 function uploadFile(context: BaseContext, config: UploadConfig, callback: AsyncCallback<UploadTask>): void
 ```
 
-创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过 [on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3) 可获取任务上传时的成功信息或错误信息。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过
+[on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3)
+可获取任务上传时的成功信息或错误信息。
+
+> **说明：**
+>
+> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 9
 
@@ -27,7 +33,7 @@ function uploadFile(context: BaseContext, config: UploadConfig, callback: AsyncC
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The permissions check fails. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [13400002](../../apis-basic-services-kit/errorcode-request.md#13400002-文件路径异常) | File path not supported or invalid. |
 
 **示例：**
@@ -67,7 +73,13 @@ try {
 function uploadFile(context: BaseContext, config: UploadConfig): Promise<UploadTask>
 ```
 
-创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过 [on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3) 可获取任务上传时的成功信息或错误信息。 > **说明：** > > 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
+创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过
+[on('complete'|'fail')](arkts-basicservices-uploadtask-i.md#on-3)
+可获取任务上传时的成功信息或错误信息。
+
+> **说明：**
+>
+> 示例中context的获取方式请参见[获取UIAbility的上下文信息](../../../../application-models/uiability-usage.md#获取uiability的上下文信息)。
 
 **起始版本：** 9
 
@@ -93,7 +105,7 @@ function uploadFile(context: BaseContext, config: UploadConfig): Promise<UploadT
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The permissions check fails. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [13400002](../../apis-basic-services-kit/errorcode-request.md#13400002-文件路径异常) | File path not supported or invalid. |
 
 **示例：**

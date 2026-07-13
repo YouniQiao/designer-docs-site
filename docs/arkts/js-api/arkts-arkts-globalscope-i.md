@@ -2,7 +2,7 @@
 
 Implements the running environment of the Worker thread. The GlobalScope class inherits from WorkerEventTarget.
 
-**Inheritance/Implementation:** GlobalScope extends [WorkerEventTarget](arkts-arkts-workereventtarget-i.md#workereventtarget)
+**Inheritance/Implementation:** GlobalScope extends [WorkerEventTarget](arkts-arkts-workereventtarget-i.md)
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ Implements the running environment of the Worker thread. The GlobalScope class i
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## name
@@ -36,7 +36,8 @@ Worker instance specified when there is a new Worker instance.
 onerror?: (ev: ErrorEvent) => void
 ```
 
-Called when an exception occurs during worker execution. The event handler is executed in the Worker thread. In the callback function, the ev type is ErrorEvent, indicating the received abnormal data.
+Called when an exception occurs during worker execution. The event handler is executed in the Worker thread.
+In the callback function, the ev type is ErrorEvent, indicating the received abnormal data.
 
 **Type:** (ev: ErrorEvent) => void
 

@@ -11,7 +11,7 @@ Class to execute an asynchronous operation under lock.
 ## Modules to Import
 
 ```TypeScript
-import { ArkTSUtils } from '@arkts.utils';
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 ## constructor
@@ -34,7 +34,9 @@ Default constructor.
 lockAsync<T>(callback: AsyncLockCallback<T>): Promise<T>
 ```
 
-Perform an operation with the acquired lock exclusively. The method acquires the lock first, then calls the callback, and then releases the lock. The callback is called asynchronously in the same thread where lockAsync was called.
+Perform an operation with the acquired lock exclusively.
+The method acquires the lock first, then calls the callback, and then releases the lock.
+The callback is called asynchronously in the same thread where lockAsync was called.
 
 **Since:** 12
 
@@ -66,7 +68,9 @@ Perform an operation with the acquired lock exclusively. The method acquires the
 lockAsync<T>(callback: AsyncLockCallback<T>, mode: AsyncLockMode): Promise<T>
 ```
 
-Perform an operation with the acquired lock. The method acquires the lock first, then calls the callback, and then releases the lock. The callback is called asynchronously in the same thread where lockAsync was called.
+Perform an operation with the acquired lock.
+The method acquires the lock first, then calls the callback, and then releases the lock.
+The callback is called asynchronously in the same thread where lockAsync was called.
 
 **Since:** 12
 
@@ -100,7 +104,13 @@ lockAsync<T, U>(callback: AsyncLockCallback<T>, mode: AsyncLockMode,
         options: AsyncLockOptions<U>): Promise<T | U>
 ```
 
-Perform an operation with the acquired lock. The method acquires the lock first, then calls the callback, and then releases the lock. The callback is called asynchronously in the same thread where lockAsync was called. An optional timeout value can be provided in {@link AsyncLockOptions}. In this case, lockAsync will reject the resulting promise with a BusinessError instance if the lock is not acquired before timeout exceeds. The error message, in this case, will contain the held and waited locks information and possible deadlock warnings.
+Perform an operation with the acquired lock.
+The method acquires the lock first, then calls the callback, and then releases the lock.
+The callback is called asynchronously in the same thread where lockAsync was called.
+An optional timeout value can be provided in {@link AsyncLockOptions}. In this case, lockAsync will reject the
+resulting promise with a BusinessError instance if the lock is not acquired before timeout exceeds.
+The error message, in this case, will contain the held and waited locks information and possible deadlock
+warnings.
 
 **Since:** 12
 

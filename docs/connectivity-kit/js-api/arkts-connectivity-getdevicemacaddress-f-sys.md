@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifi } from '@ohos.wifi';
+import { wifi } from '@kit.ConnectivityKit';
 ```
 
 ## getDeviceMacAddress
@@ -12,7 +12,9 @@ import { wifi } from '@ohos.wifi';
 function getDeviceMacAddress(): string[]
 ```
 
-Obtains the MAC address of a Wi-Fi device. Wi-Fi must be enabled. <p>The MAC address is unique and cannot be changed.
+Obtains the MAC address of a Wi-Fi device. Wi-Fi must be enabled.
+
+<p>The MAC address is unique and cannot be changed.
 
 **Since:** 7
 

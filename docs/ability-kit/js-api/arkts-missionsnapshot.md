@@ -2,9 +2,11 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[MissionSnapshot](arkts-missionsnapshot-i.md) | 一个任务的任务快照对象，可以通过 [missionManager.getMissionSnapShot]{@link @ohos.app.ability.missionManager:missionManager.getMissionSnapShot(deviceId: string, missionId: int, callback: AsyncCallback<MissionSnapshot>)} 获取。 |
+| [MissionSnapshot](arkts-ability-missionsnapshot-i-sys.md) | The module defines the snapshot of a mission. The snapshot can be obtained through[missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1). |
+<!--DelEnd-->
 

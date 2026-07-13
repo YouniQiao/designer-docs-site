@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## getAllExtBundleStats
@@ -12,7 +12,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 function getAllExtBundleStats(userId: number): Promise<Array<ExtBundleStats>>
 ```
 
-Obtains the space usage of all system applications or system services of a specified user. This API uses a promise to return the result.
+Obtains the space usage of all system applications or system services of a specified user. This API uses a promise
+to return the result.
 
 **Since:** 23
 

@@ -12,7 +12,8 @@ How a raycast should be performed.
 rootNode?: Node
 ```
 
-If defined, search only the nodes in the hierarchy under this node If undefined, search all the nodes in the scene
+If defined, search only the nodes in the hierarchy under this node
+If undefined, search all the nodes in the scene
 
 **Type:** Node
 

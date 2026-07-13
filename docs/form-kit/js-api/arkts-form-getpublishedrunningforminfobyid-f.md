@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## getPublishedRunningFormInfoById
@@ -12,7 +12,8 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function getPublishedRunningFormInfoById(formId: string): Promise<formInfo.RunningFormInfo>
 ```
 
-Obtains the information of a specified widget that has been added to the home screen. This API uses a promise to return the result.
+Obtains the information of a specified widget that has been added to the home screen. This API uses a promise to
+return the result.
 
 **Since:** 20
 

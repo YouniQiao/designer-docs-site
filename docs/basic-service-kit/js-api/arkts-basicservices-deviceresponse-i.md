@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { DeviceResponse, GetDeviceOptions } from '@system.device';
+import { DeviceResponse, GetDeviceOptions } from '@kit.BasicServicesKit';
 ```
 
 ## apiVersion
@@ -50,7 +50,19 @@ Brand.
 deviceType: string
 ```
 
-Device type. The options are as follows: phone: smartphone tablet: tablet tv: smart TV wearable: wearable liteWearable: lite wearable ar: AR vr: virtual reality earphones: headset pc: personal computer speaker: speaker smartVision: smart visual device linkIoT: connection module
+Device type. The options are as follows:
+phone: smartphone
+tablet: tablet
+tv: smart TV
+wearable: wearable
+liteWearable: lite wearable
+ar: AR
+vr: virtual reality
+earphones: headset
+pc: personal computer
+speaker: speaker
+smartVision: smart visual device
+linkIoT: connection module
 
 **Type:** string
 
@@ -162,7 +174,9 @@ Screen density, unit dpi.
 screenShape: 'rect' | 'circle'
 ```
 
-Screen shape. The options are as follows: rect: Rectangle screen. circle: Circle screen.
+Screen shape. The options are as follows:
+rect: Rectangle screen.
+circle: Circle screen.
 
 **Type:** 'rect' | 'circle'
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAppCloneBundleInfo
@@ -12,7 +12,11 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAppCloneBundleInfo(bundleName: string, appIndex: number, bundleFlags: number, userId?: number): Promise<BundleInfo>
 ```
 
-Obtains the bundle information of an application or an application clone based on the given bundle name, app index, [bundleFlags](arkts-ability-bundleflag-e.md#bundleflag), and user ID. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
+Obtains the bundle information of an application or an application clone based on the given bundle name, app index,
+[bundleFlags](arkts-ability-bundleflag-e.md), and user ID. This API uses a promise to
+return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 12
 

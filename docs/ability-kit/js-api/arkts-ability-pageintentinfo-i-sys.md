@@ -1,6 +1,10 @@
 # PageIntentInfo (System API)
 
-Describes the parameters supported by the [@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) decorator, such as the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) name of the target page.
+Describes the parameters supported by the
+[@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)
+decorator, such as the
+[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) name
+of the target page.
 
 **Since:** 20
 
@@ -11,7 +15,7 @@ Describes the parameters supported by the [@InsightIntentPage](../../../../refer
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
+import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
 ## navDestinationName
@@ -20,7 +24,9 @@ import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
 readonly navDestinationName: string
 ```
 
-Name of the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) component bound to the intent.
+Name of the
+[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)
+component bound to the intent.
 
 **Type:** string
 

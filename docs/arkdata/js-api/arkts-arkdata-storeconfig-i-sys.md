@@ -9,7 +9,7 @@ Defines the RDB store configuration.
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## autoCleanDeviceDirtyData
@@ -18,7 +18,9 @@ import { relationalStore } from '@ohos.data.relationalStore';
 autoCleanDeviceDirtyData?: boolean
 ```
 
-Specifies whether to clean up dirty data that is synchronized to the local but deleted on the remote device. <br>Default value:true.
+Specifies whether to clean up dirty data that is synchronized to
+the local but deleted on the remote device.
+<br>Default value:true.
 
 **Type:** boolean
 

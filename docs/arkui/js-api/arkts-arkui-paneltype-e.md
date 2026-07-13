@@ -30,7 +30,8 @@ The switch between the minibar and full-screen display is provided.
 Foldable = 1
 ```
 
-Permanent content display class. The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
+Permanent content display class.
+The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
 
 **Since:** 11
 
@@ -46,7 +47,8 @@ Permanent content display class. The switchover effect is provided in three size
 Temporary = 2
 ```
 
-Temporary content display area. The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
+Temporary content display area.
+The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
 
 **Since:** 11
 
@@ -62,7 +64,8 @@ Temporary content display area. The switchover effect is provided in three sizes
 CUSTOM = 3
 ```
 
-Custom content display area. The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
+Custom content display area.
+The switchover effect is provided in three sizes: large (full-screen), medium (half-screen), and small.
 
 **Since:** 11
 

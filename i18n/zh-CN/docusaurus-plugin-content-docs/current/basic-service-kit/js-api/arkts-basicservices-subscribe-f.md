@@ -25,10 +25,10 @@ function subscribe(subscriber: CommonEventSubscriber, callback: AsyncCallback<Co
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | capability not supported |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | capability not supported |
 | [1500007](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500007-ipc请求发送失败) | Failed to send the message to the common event service. |
 | [1500008](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500008-公共事件服务端初始化失败) | Failed to initialize the common event service. |
-| [1500010](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500010-订阅者数量超限) | The count of subscriber exceed system specification.<br>**适用版本：** 20 |
+| [1500010](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500010-订阅者数量超限) | The count of subscriber exceed system specification.<br>**适用版本：** 20+ |
 
 **示例：**
 

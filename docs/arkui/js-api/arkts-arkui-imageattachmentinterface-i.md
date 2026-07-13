@@ -48,7 +48,9 @@ Image layout.
 objectFit?: ImageFit
 ```
 
-Image scaling type. The **ImageFit.MATRIX** enum value is not supported. Default value: **ImageFit.Cover**
+Image scaling type. The **ImageFit.MATRIX** enum value is not supported.
+
+Default value: **ImageFit.Cover**
 
 **Type:** ImageFit
 
@@ -66,7 +68,11 @@ Image scaling type. The **ImageFit.MATRIX** enum value is not supported. Default
 size?: SizeOptions
 ```
 
-Image size, which does not support percentage values. The default value of **size** depends on the value of **objectFit**. For example, if the value of **objectFit** is **Cover**, the image height is the component height minus the top and bottom paddings, and the image width is the component width minus the left and right paddings.
+Image size, which does not support percentage values.
+
+The default value of **size** depends on the value of **objectFit**. For example, if the value of **objectFit** is
+**Cover**, the image height is the component height minus the top and bottom paddings, and the image width is the
+component width minus the left and right paddings.
 
 **Type:** SizeOptions
 
@@ -102,7 +108,9 @@ Image data source.
 verticalAlign?: ImageSpanAlignment
 ```
 
-Alignment mode of the image with the text. Default value: **ImageSpanAlignment.BOTTOM**
+Alignment mode of the image with the text.
+
+Default value: **ImageSpanAlignment.BOTTOM**
 
 **Type:** ImageSpanAlignment
 

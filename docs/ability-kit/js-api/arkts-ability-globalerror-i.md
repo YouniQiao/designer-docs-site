@@ -1,8 +1,9 @@
 # GlobalError
 
-Describes the object related to the exception event name, message, error stack information, exception thread name, and exception thread type.
+Describes the object related to the exception event name, message, error stack information, exception thread name,
+and exception thread type.
 
-**Inheritance/Implementation:** GlobalError extends [Error](../../apis-na/arkts-apis/arkts-na-error-i.md#error)
+**Inheritance/Implementation:** GlobalError extends [Error](../../apis-na/arkts-apis/arkts-na-error-i.md)
 
 **Since:** 18
 
@@ -11,7 +12,7 @@ Describes the object related to the exception event name, message, error stack i
 ## Modules to Import
 
 ```TypeScript
-import { errorManager } from '@ohos.app.ability.errorManager';
+import { errorManager } from '@kit.AbilityKit';
 ```
 
 ## instanceName
@@ -20,7 +21,15 @@ import { errorManager } from '@ohos.app.ability.errorManager';
 instanceName: string
 ```
 
-Name of a VM instance. **NOTE** Rules for the **instanceName** field in exceptions in the TaskPool thread: - **globalErrorOccurred** events: identified as "TaskPool Thread + method name". - **globalUnhandledRejectionDetected** events: identified as "TaskPool Thread + task name". - If identified as "TaskPool Thread" only, the exception occurs within an asynchronous callback.
+Name of a VM instance.
+
+**NOTE**
+
+Rules for the **instanceName** field in exceptions in the TaskPool thread:
+
+- **globalErrorOccurred** events: identified as "TaskPool Thread + method name".
+- **globalUnhandledRejectionDetected** events: identified as "TaskPool Thread + task name".
+- If identified as "TaskPool Thread" only, the exception occurs within an asynchronous callback.
 
 **Type:** string
 

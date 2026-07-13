@@ -6,7 +6,7 @@
 compile(pattern: string, flags?: string): this
 ```
 
-**Deprecated since:** legacy feature for browser compatibility
+**Deprecated since:** legacy feature for browser compatibility 
 
 **Parameters:**
 

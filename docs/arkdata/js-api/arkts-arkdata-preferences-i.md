@@ -1,8 +1,12 @@
 # Preferences
 
-Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads) by reference. Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1).
+Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from
+[ISendable](../../../../arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS
+instances (including the main thread and the TaskPool or Worker threads) by reference.
+Before calling any API of **Preferences**, obtain a **Preferences** instance by using
+[sendablePreferences.getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1).
 
-**Inheritance/Implementation:** Preferences extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
+**Inheritance/Implementation:** Preferences extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
 **Since:** 12
 
@@ -11,7 +15,7 @@ Provides APIs for obtaining and modifying **Preferences** instances. **Preferenc
 ## Modules to Import
 
 ```TypeScript
-import { sendablePreferences } from '@ohos.data.sendablePreferences';
+import { sendablePreferences } from '@kit.ArkData';
 ```
 
 ## clear
@@ -20,7 +24,8 @@ import { sendablePreferences } from '@ohos.data.sendablePreferences';
 clear(): Promise<void>
 ```
 
-Clears this **Preferences** instance. This API uses a promise to return the result. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Clears this **Preferences** instance. This API uses a promise to return the result. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 
@@ -60,7 +65,8 @@ promise.then(() => {
 clearSync(): void
 ```
 
-Clears this **Preferences** instance. This API returns the result synchronously. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Clears this **Preferences** instance. This API returns the result synchronously. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 
@@ -87,7 +93,8 @@ preferences.clearSync();
 delete(key: string): Promise<void>
 ```
 
-Deletes a KV pair from this **Preferences** instance. This API uses a promise to return the result. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Deletes a KV pair from this **Preferences** instance. This API uses a promise to return the result. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 
@@ -134,7 +141,8 @@ promise.then(() => {
 deleteSync(key: string): void
 ```
 
-Deletes a KV pair from this **Preferences** instance. This API returns the result synchronously. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Deletes a KV pair from this **Preferences** instance. This API returns the result synchronously. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 
@@ -168,7 +176,8 @@ preferences.deleteSync('startup');
 flush(): Promise<void>
 ```
 
-Flushes the data in this **Preferences** instance to the persistent file. This API uses a promise to return the result.
+Flushes the data in this **Preferences** instance to the persistent file. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -235,7 +244,8 @@ preferences.flushSync();
 get(key: string, defValue: lang.ISendable): Promise<lang.ISendable>
 ```
 
-Obtains the value of a key from this **Preferences** instance. This API uses a promise to return the result. If the value is null or is not of the default value type, **defValue** is returned.
+Obtains the value of a key from this **Preferences** instance. This API uses a promise to return the result. If
+the value is null or is not of the default value type, **defValue** is returned.
 
 **Since:** 12
 
@@ -366,7 +376,8 @@ for (let value of Object.keys(keyValues)) {
 getSync(key: string, defValue: lang.ISendable): lang.ISendable
 ```
 
-Obtains the value of a key from this **Preferences** instance. This API returns the result synchronously. If the value is null or is not of the default value type, **defValue** is returned.
+Obtains the value of a key from this **Preferences** instance. This API returns the result synchronously. If the
+value is null or is not of the default value type, **defValue** is returned.
 
 **Since:** 12
 
@@ -408,7 +419,8 @@ let value: lang.ISendable = preferences.getSync('startup', 'default');
 has(key: string): Promise<boolean>
 ```
 
-Checks whether this **Preferences** instance contains the KV pair of the given key. This API uses a promise to return the result.
+Checks whether this **Preferences** instance contains the KV pair of the given key. This API uses a promise to
+return the result.
 
 **Since:** 12
 
@@ -459,7 +471,8 @@ promise.then((val: boolean) => {
 hasSync(key: string): boolean
 ```
 
-Checks whether this **Preferences** instance contains the KV pair of the given key. This API returns the result synchronously.
+Checks whether this **Preferences** instance contains the KV pair of the given key. This API returns the result
+synchronously.
 
 **Since:** 12
 
@@ -551,7 +564,10 @@ preferences.flush().then(() => {
 off(type: 'multiProcessChange', callback?: Callback<string>): void
 ```
 
-Unsubscribes from inter-process data changes. This API is provided for applications that have applied for [dataGroupId](arkts-arkdata-options-i.md#options). Avoid using this API for the applications that have not applied for **dataGroupId** because calling it in multiple process may damage the persistent files and cause data loss.
+Unsubscribes from inter-process data changes.
+This API is provided for applications that have applied for [dataGroupId](arkts-arkdata-options-i.md).
+Avoid using this API for the applications that have not applied for **dataGroupId** because calling it in
+multiple process may damage the persistent files and cause data loss.
 
 **Since:** 12
 
@@ -649,7 +665,8 @@ preferences.flush().then(() => {
 on(type: 'change', callback: Callback<string>): void
 ```
 
-Subscribes to data changes. The registered callback will be invoked to return the new value if the data change is [flushed](arkts-arkdata-preferences-i.md#flush-1).
+Subscribes to data changes. The registered callback will be invoked to return the new value if the data change
+is [flushed](arkts-arkdata-preferences-i.md#flush-1).
 
 **Since:** 12
 
@@ -695,7 +712,12 @@ preferences.flush().then(() => {
 on(type: 'multiProcessChange', callback: Callback<string>): void
 ```
 
-Subscribes to data changes between processes. When multiple processes hold the same preference file, calling [flush](arkts-arkdata-preferences-i.md#flush-1) in any process (including the current process) will trigger the callback in this API. This API is provided for applications that have applied for [dataGroupId](arkts-arkdata-options-i.md#options). Avoid using this API for the applications that have not applied for **dataGroupId** because calling it in multiple process may damage the persistent files and cause data loss.
+Subscribes to data changes between processes. When multiple processes hold the same preference file, calling
+[flush](arkts-arkdata-preferences-i.md#flush-1) in any process (including the current process) will trigger
+the callback in this API.
+This API is provided for applications that have applied for [dataGroupId](arkts-arkdata-options-i.md).
+Avoid using this API for the applications that have not applied for **dataGroupId** because calling it in
+multiple process may damage the persistent files and cause data loss.
 
 **Since:** 12
 
@@ -742,7 +764,8 @@ preferences.flush().then(() => {
 on(type: 'dataChange', keys: Array<string>, callback: Callback<lang.ISendable>): void
 ```
 
-Subscribes to changes of specific data. The registered callback will be invoked only after the values of the specified keys are changed and [flushed](arkts-arkdata-preferences-i.md#flush-1).
+Subscribes to changes of specific data. The registered callback will be invoked only after the values of the
+specified keys are changed and [flushed](arkts-arkdata-preferences-i.md#flush-1).
 
 **Since:** 12
 
@@ -792,7 +815,8 @@ preferences.flush().then(() => {
 put(key: string, value: lang.ISendable): Promise<void>
 ```
 
-Writes data to this **Preferences** instance. This API uses a promise to return the result. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Writes data to this **Preferences** instance. This API uses a promise to return the result. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 
@@ -840,7 +864,8 @@ promise.then(() => {
 putSync(key: string, value: lang.ISendable): void
 ```
 
-Writes data to this **Preferences** instance. This API returns the result synchronously. You can use [flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
+Writes data to this **Preferences** instance. This API returns the result synchronously. You can use
+[flush](arkts-arkdata-preferences-i.md#flush-1) to persist the **Preferences** instance.
 
 **Since:** 12
 

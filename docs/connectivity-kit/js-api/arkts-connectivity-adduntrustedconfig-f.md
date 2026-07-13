@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifi } from '@ohos.wifi';
+import { wifi } from '@kit.ConnectivityKit';
 ```
 
 ## addUntrustedConfig
@@ -12,7 +12,10 @@ import { wifi } from '@ohos.wifi';
 function addUntrustedConfig(config: WifiDeviceConfig): Promise<boolean>
 ```
 
-Adds a specified untrusted hotspot configuration. <p>This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot.
+Adds a specified untrusted hotspot configuration.
+
+<p>This method adds one configuration at a time. After this configuration is added,
+your device will determine whether to connect to the hotspot.
 
 **Since:** 7
 
@@ -77,7 +80,10 @@ try {
 function addUntrustedConfig(config: WifiDeviceConfig, callback: AsyncCallback<boolean>): void
 ```
 
-Adds a specified untrusted hotspot configuration. <p>This method adds one configuration at a time. After this configuration is added, your device will determine whether to connect to the hotspot.
+Adds a specified untrusted hotspot configuration.
+
+<p>This method adds one configuration at a time. After this configuration is added,
+your device will determine whether to connect to the hotspot.
 
 **Since:** 7
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## setGlobalTimeoutOptions
@@ -12,7 +12,8 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 function setGlobalTimeoutOptions(options?: TimeoutOptions): void
 ```
 
-Sets timeout configuration for all tasks. Used when task-specific timeout configuration is not configured.
+Sets timeout configuration for all tasks.
+Used when task-specific timeout configuration is not configured.
 
 **Since:** 26.0.0
 

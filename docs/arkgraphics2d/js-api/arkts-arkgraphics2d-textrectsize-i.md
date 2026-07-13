@@ -1,6 +1,7 @@
 # TextRectSize
 
-Represents the text rectangle size, which is used to describe the width and height of the text rectangle. It is a floating-point value in physical pixels (px).
+Represents the text rectangle size, which is used to describe the width and height of the text rectangle. It is a
+floating-point value in physical pixels (px).
 
 **Since:** 24
 
@@ -9,7 +10,7 @@ Represents the text rectangle size, which is used to describe the width and heig
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## height

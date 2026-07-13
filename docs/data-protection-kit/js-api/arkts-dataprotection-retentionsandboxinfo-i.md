@@ -9,7 +9,7 @@ Represents the sandbox retention information.
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## appIndex
@@ -32,7 +32,8 @@ Index of the DLP sandbox application. The value ranges from 1001 to 1100.
 bundleName: string
 ```
 
-Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code 19100001 is thrown.
+Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code
+19100001 is thrown.
 
 **Type:** string
 
@@ -46,7 +47,8 @@ Bundle name of the application. The value contains 7 to 128 bytes. If the value 
 docUris: Array<string>
 ```
 
-URI list of the DLP files. The length of the array is not limited. Each string contains a maximum of 4095 bytes. If the string is out of range, error code 19100001 is thrown.
+URI list of the DLP files. The length of the array is not limited. Each string contains a maximum of 4095
+bytes. If the string is out of range, error code 19100001 is thrown.
 
 **Type:** Array<string>
 

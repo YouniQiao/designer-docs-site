@@ -1,6 +1,8 @@
 # Session
 
-**Session** implements a session, which saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera and requests the camera to take a photo or record a video.
+**Session** implements a session, which saves all [CameraInput](arkts-camera-camerainput-i.md) and
+[CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera and requests the camera
+to take a photo or record a video.
 
 **Since:** 11
 
@@ -9,7 +11,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getActiveParameter

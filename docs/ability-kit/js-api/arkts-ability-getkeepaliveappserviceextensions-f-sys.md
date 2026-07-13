@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getKeepAliveAppServiceExtensions
@@ -12,7 +12,10 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getKeepAliveAppServiceExtensions(): Promise<Array<KeepAliveBundleInfo>>
 ```
 
-Obtains information about all AppServiceExtensionAbility components that are kept alive. The information is defined by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md#keepalivebundleinfo). This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned.
+Obtains information about all AppServiceExtensionAbility components that are kept alive. The information is defined
+by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md). This API uses a promise to return the result.
+This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is
+returned.
 
 **Since:** 20
 

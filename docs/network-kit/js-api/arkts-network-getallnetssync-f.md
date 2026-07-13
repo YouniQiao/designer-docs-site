@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getAllNetsSync
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getAllNetsSync(): Array<NetHandle>
 ```
 
-Obtains the list of data networks that are activated. To call this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains the list of data networks that are activated.
+To call this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 10
 

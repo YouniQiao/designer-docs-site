@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getRunningProcessInfoByBundleName
@@ -12,7 +12,8 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getRunningProcessInfoByBundleName(bundleName: string, callback: AsyncCallback<Array<ProcessInformation>>): void
 ```
 
-Obtains information about the running processes by bundle name. This API uses an asynchronous callback to return the result.
+Obtains information about the running processes by bundle name. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 
@@ -67,7 +68,8 @@ try {
 function getRunningProcessInfoByBundleName(bundleName: string, userId: number, callback: AsyncCallback<Array<ProcessInformation>>): void
 ```
 
-Obtains information about the running processes by bundle name and user ID. This API uses an asynchronous callback to return the result.
+Obtains information about the running processes by bundle name and user ID. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 10
 
@@ -181,7 +183,8 @@ try {
 function getRunningProcessInfoByBundleName(bundleName: string, userId: number): Promise<Array<ProcessInformation>>
 ```
 
-Obtains information about the running processes by bundle name and user ID. This API uses a promise to return the result.
+Obtains information about the running processes by bundle name and user ID. This API uses a promise to return the
+result.
 
 **Since:** 10
 

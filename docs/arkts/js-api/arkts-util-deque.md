@@ -12,11 +12,5 @@ import { Deque } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [Deque](arkts-deque-c.md) | Deque（double ended queue）是基于队列数据结构实现的序列容器，具备先进先出和先进后出的特点。 支持在两端进行元素的插入和删除。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [DequeForEachCb](arkts-dequeforeachcb-t.md) | Deque的forEach回调函数类型。 |
+| [Deque](arkts-arkts-deque-c.md) | Double-ended queue (deque) is a sequence container implemented based on the queue data structure thatfollows the principles of First In First Out (FIFO) and Last In First Out (LIFO).It allows insertion and removal of elements at both the ends. |
 

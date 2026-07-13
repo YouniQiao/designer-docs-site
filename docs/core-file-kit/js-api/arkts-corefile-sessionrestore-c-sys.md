@@ -11,7 +11,7 @@ Control class for restore procedure.
 ## Modules to Import
 
 ```TypeScript
-import { backup } from '@ohos.file.backup';
+import { backup } from '@kit.CoreFileKit';
 ```
 
 ## appendBundles
@@ -680,7 +680,9 @@ async function getRestoreCompatibilityInfo() {
 getFileHandle(fileMeta: FileMeta): Promise<void>
 ```
 
-Request to get a shared file from the service. This interface is part of the zero-copy feature. Developers could get the file through onFileReady callback. When the client accomplished the file, use publishFile to publish.
+Request to get a shared file from the service. This interface is part of the zero-copy feature.
+Developers could get the file through onFileReady callback.
+When the client accomplished the file, use publishFile to publish.
 
 **Since:** 10
 
@@ -780,7 +782,9 @@ async function getFileHandle() {
 getFileHandle(fileMeta: FileMeta, callback: AsyncCallback<void>): void
 ```
 
-Request to get a shared file from the service. This interface is part of the zero-copy feature. Developers could get the file through onFileReady callback. When the client accomplished the file, use publishFile to publish.
+Request to get a shared file from the service. This interface is part of the zero-copy feature.
+Developers could get the file through onFileReady callback.
+When the client accomplished the file, use publishFile to publish.
 
 **Since:** 10
 
@@ -865,6 +869,48 @@ sessionRestore.getFileHandle(fileMeta, (err: BusinessError) => {
 });
 
 ```
+
+## getFileHandles
+
+```TypeScript
+getFileHandles(fileMeta: FileMeta): Promise<void>
+```
+
+Request to get shared files from the service. This interface is part of the zero-copy feature.
+Developers could get the file through onFileReadyBatch callback.
+When the client accomplished the file, use publishFile to publish.
+
+**Since:** 26.0.0
+
+**Required permissions:** ohos.permission.BACKUP
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.FileManagement.StorageService.Backup
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| fileMeta | FileMeta | Yes | Metadata of the file to be sent. Note that all the files should comefrom the backup procedure or the getLocalCapabilities method. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed, usually the result returned by VerifyAccessToken. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
+| 13600001 | IPC error |
+| 13900001 | Operation not permitted |
+| 13900020 | Invalid argument |
 
 ## getLocalCapabilities
 
@@ -1075,7 +1121,8 @@ Migrate file from source path to destination path.
 publishFile(fileMeta: FileMeta): Promise<void>
 ```
 
-Publish the file handle to the backup service to make the service aware that the file's content is ready. This interface is part of the zero-copy feature.
+Publish the file handle to the backup service to make the service aware that the file's content is ready.
+This interface is part of the zero-copy feature.
 
 **Since:** 10
 
@@ -1187,7 +1234,8 @@ g_session = createSessionRestore();
 publishFile(fileMeta: FileMeta, callback: AsyncCallback<void>): void
 ```
 
-Publish the file handle to the backup service to make the service aware that the file's content is ready. This interface is part of the zero-copy feature.
+Publish the file handle to the backup service to make the service aware that the file's content is ready.
+This interface is part of the zero-copy feature.
 
 **Since:** 10
 

@@ -9,7 +9,7 @@ Describes the edit menu options.
 ## Modules to Import
 
 ```TypeScript
-import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@ohos.arkui.advanced.SelectionMenu';
+import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@kit.ArkUI';
 ```
 
 ## action
@@ -36,7 +36,8 @@ Action triggered when the menu option is clicked.
 builder?: () => void
 ```
 
-Builder of the custom component displayed upon click. It must be used with @Builder for building the custom component.
+Builder of the custom component displayed upon click. It must be used with @Builder for building the custom
+component.
 
 **Type:** () => void
 

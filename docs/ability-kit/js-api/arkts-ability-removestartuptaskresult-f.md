@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { startupManager } from '@ohos.app.appstartup.startupManager';
+import { startupManager } from '@kit.AbilityKit';
 ```
 
 ## removeStartupTaskResult
@@ -12,7 +12,11 @@ import { startupManager } from '@ohos.app.appstartup.startupManager';
 function removeStartupTaskResult(startupTask: string): void
 ```
 
-Removes the initialization result of a startup task or .so file preloading task. - If a startup task name is passed, the initialization result of that startup task is removed. - If a .so file is passed, the .so file is set to the unloaded state, but the loaded .so file in the cache is not removed.
+Removes the initialization result of a startup task or .so file preloading task.
+
+- If a startup task name is passed, the initialization result of that startup task is removed.
+- If a .so file is passed, the .so file is set to the unloaded state, but the loaded .so file in the cache is not
+removed.
 
 **Since:** 12
 
@@ -24,7 +28,7 @@ Removes the initialization result of a startup task or .so file preloading task.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| startupTask | string | Yes | Name of the [StartupTask](arkts-ability-startuptask-c.md#startuptask) orname of the .so file to be preloaded. |
+| startupTask | string | Yes | Name of the [StartupTask](arkts-ability-startuptask-c.md) orname of the .so file to be preloaded. |
 
 **Error codes:**
 

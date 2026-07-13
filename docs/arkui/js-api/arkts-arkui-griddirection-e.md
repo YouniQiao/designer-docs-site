@@ -40,7 +40,8 @@ Vertical layout, where the child components are arranged from top to bottom as t
 RowReverse
 ```
 
-Reverse horizontal layout, where the child components are arranged from right to left as the main axis runs along the rows.
+Reverse horizontal layout, where the child components are arranged from right to left as the main axis runs along
+the rows.
 
 **Since:** 8
 
@@ -54,7 +55,8 @@ Reverse horizontal layout, where the child components are arranged from right to
 ColumnReverse
 ```
 
-Reverse vertical layout, where the child components are arranged from bottom up as the main axis runs down the columns.
+Reverse vertical layout, where the child components are arranged from bottom up as the main axis runs down the
+columns.
 
 **Since:** 8
 

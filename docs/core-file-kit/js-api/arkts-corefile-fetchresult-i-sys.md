@@ -6,7 +6,7 @@ Implements file retrieval.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [FetchResult](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-fetchresult-i.md#fetchresult)
+**Substitutes:** [FetchResult](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-fetchresult-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ Implements file retrieval.
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## close
@@ -67,7 +67,8 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllObject(callback: AsyncCallback<Array<T>>): void
 ```
 
-Obtains all T in the file retrieval result. This method uses a callback to return the result. After this method is called,
+Obtains all T in the file retrieval result.
+This method uses a callback to return the result. After this method is called,
 
 **Since:** 10
 
@@ -117,7 +118,8 @@ async function example(mgr: userFileManager.UserFileManager) {
 getAllObject(): Promise<Array<T>>
 ```
 
-Obtains all T in the file retrieval result. This method uses a promise to return the result. that store the selected media resources.
+Obtains all T in the file retrieval result.
+This method uses a promise to return the result. that store the selected media resources.
 
 **Since:** 10
 
@@ -397,7 +399,10 @@ async function example(mgr: userFileManager.UserFileManager) {
 getNextObject(callback: AsyncCallback<T>): void
 ```
 
-Obtains the next T in the file retrieval result. This method uses a callback to return the file. Before calling this method, you must use isAfterLast() to check whether the result set points to the last row. This method returns the next file only when False is returned for isAfterLast().
+Obtains the next T in the file retrieval result.
+This method uses a callback to return the file.
+Before calling this method, you must use isAfterLast() to check whether the result set points to the last row.
+This method returns the next file only when False is returned for isAfterLast().
 
 **Since:** 9
 
@@ -450,7 +455,10 @@ async function example(mgr: userFileManager.UserFileManager) {
 getNextObject(): Promise<T>
 ```
 
-Obtains the next T in the file retrieval result. This method uses a promise to return the file. Before calling this method, you must use isAfterLast() to check whether the result set points to the last row. This method returns the next file only when False is returned for isAfterLast().
+Obtains the next T in the file retrieval result.
+This method uses a promise to return the file.
+Before calling this method, you must use isAfterLast() to check whether the result set points to the last row.
+This method returns the next file only when False is returned for isAfterLast().
 
 **Since:** 9
 
@@ -498,7 +506,8 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPositionObject(index: number, callback: AsyncCallback<T>): void
 ```
 
-Obtains the T with the specified index in the file retrieval result. This method uses a callback to return the file.
+Obtains the T with the specified index in the file retrieval result.
+This method uses a callback to return the file.
 
 **Since:** 9
 
@@ -555,7 +564,8 @@ async function example(mgr: userFileManager.UserFileManager) {
 getPositionObject(index: number): Promise<T>
 ```
 
-Obtains the T with the specified index in the file retrieval result. This method uses a promise to return the file.
+Obtains the T with the specified index in the file retrieval result.
+This method uses a promise to return the file.
 
 **Since:** 9
 

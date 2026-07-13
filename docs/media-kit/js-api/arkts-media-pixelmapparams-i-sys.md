@@ -9,7 +9,7 @@ Defines the format parameters of the video thumbnail to be obtained.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## autoFlip
@@ -18,7 +18,10 @@ import { media } from '@ohos.multimedia.media';
 autoFlip?: boolean
 ```
 
-Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizontal Flip). If the value is false, the returned thumbnail will not be flipped. **System API**: This is a system API.
+Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizontal Flip).
+If the value is false, the returned thumbnail will not be flipped.
+
+**System API**: This is a system API.
 
 **Type:** boolean
 
@@ -34,7 +37,9 @@ Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizo
 colorFormat?: PixelFormat
 ```
 
-Color format of the thumbnail. **System API**: This is a system API.
+Color format of the thumbnail.
+
+**System API**: This is a system API.
 
 **Type:** PixelFormat
 

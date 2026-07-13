@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## getAllTemplateFormsInfo
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function getAllTemplateFormsInfo(): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the template widget information provided by all applications on the device. This API uses a promise to return the result.
+Obtains the template widget information provided by all applications on the device. This API uses a promise to
+return the result.
 
 **Since:** 23
 

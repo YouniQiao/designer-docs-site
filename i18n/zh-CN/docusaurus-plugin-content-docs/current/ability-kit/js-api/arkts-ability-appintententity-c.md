@@ -2,7 +2,7 @@
 
 定义AppIntentEntity。
 
-**继承/实现关系：** AppIntentEntity implements [IntentEntity](arkts-ability-intententity-i.md#intententity)
+**继承/实现关系：** AppIntentEntity implements [IntentEntity](arkts-ability-intententity-i.md)
 
 **起始版本：** 26.0.0
 

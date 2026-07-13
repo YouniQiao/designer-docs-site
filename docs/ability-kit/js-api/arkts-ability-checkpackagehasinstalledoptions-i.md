@@ -1,6 +1,10 @@
 # CheckPackageHasInstalledOptions
 
-> **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. Checks whether a bundle has been installed.
+> **NOTE**
+>
+> This API has been supported since API version 3 and deprecated since API version 9.
+
+Checks whether a bundle has been installed.
 
 **Since:** 3
 
@@ -11,7 +15,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { CheckPackageHasInstalledResponse, CheckPackageHasInstalledOptions } from '@system.package';
+import { CheckPackageHasInstalledResponse, CheckPackageHasInstalledOptions } from '@kit.AbilityKit';
 ```
 
 ## bundleName

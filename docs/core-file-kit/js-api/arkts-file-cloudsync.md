@@ -1,6 +1,7 @@
 # @ohos.file.cloudSync
 
-该模块向应用提供端云同步能力，包括启动/停止端云同步以及启动/停止原图下载功能。
+The **cloudSync** module provides the device-cloud sync capabilities for applications. You can use the APIs to start
+or stop device-cloud sync and start or stop the download of images.
 
 **Since:** 11
 
@@ -18,53 +19,85 @@ import { cloudSync } from '@kit.CoreFileKit';
 
 | Name | Description |
 | --- | --- |
-| [getCoreFileSyncState](arkts-cloudsync-getcorefilesyncstate-f.md#getCoreFileSyncState-1) | 同步方法获取云盘文件同步上行状态。 |
-| <!--DelRow-->[getFileSyncState](arkts-cloudsync-getfilesyncstate-f-sys.md#getFileSyncState-1) | 异步方法获取文件同步状态。使用Promise异步回调。 |
-| <!--DelRow-->[getFileSyncState](arkts-cloudsync-getfilesyncstate-f-sys.md#getFileSyncState-2) | 异步方法获取文件同步状态。使用callback异步回调。 |
-| <!--DelRow-->[getFileSyncState](arkts-cloudsync-getfilesyncstate-f-sys.md#getFileSyncState-3) | 获取文件同步状态。 |
-| <!--DelRow-->[optimizeStorage](arkts-cloudsync-optimizestorage-f-sys.md#optimizeStorage-1) | 优化图库已同步云空间的本地资源，按照本地剩余空间执行自动老化策略。使用Promise异步回调。 |
-| [registerChange](arkts-cloudsync-registerchange-f.md#registerChange-1) | 订阅监听指定文件的变化通知。callback返回更改的数据。 |
-| <!--DelRow-->[startOptimizeSpace](arkts-cloudsync-startoptimizespace-f-sys.md#startOptimizeSpace-1) | 优化图库已同步云空间的本地资源，执行立即优化空间策略，对老化天数前未访问的本地图片/视频进行优化。使用Promise异步回调。callback返回优化进度。 startOptimizeSpace的使用和stopOptimizeSpace方法调用一一对应，重复开启将返回其他任务正在执行的错误信息（22400006）。 |
-| <!--DelRow-->[stopOptimizeSpace](arkts-cloudsync-stopoptimizespace-f-sys.md#stopOptimizeSpace-1) | 同步方法停止图库云图资源空间优化，和startOptimizeSpace配对使用。 |
-| [unregisterChange](arkts-cloudsync-unregisterchange-f.md#unregisterChange-1) | 取消订阅监听指定文件的变化通知。 |
+| [getCoreFileSyncState](arkts-corefile-getcorefilesyncstate-f.md#getcorefilesyncstate-1) | Obtains the upload sync state of a cloud file. This API returns the result synchronously. |
+| [registerChange](arkts-corefile-registerchange-f.md#registerchange-1) | Subscribes to the change of a file. The callback returns the changed data. |
+| [unregisterChange](arkts-corefile-unregisterchange-f.md#unregisterchange-1) | Unsubscribes from the change of a file. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-1) | Obtains the file sync state. This API uses a promise to return the result. |
+| [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-2) | Obtains the file sync state. This API uses an asynchronous callback to return the result. |
+| [getFileSyncState](arkts-corefile-getfilesyncstate-f-sys.md#getfilesyncstate-3) | Obtains the file sync state. |
+| [optimizeStorage](arkts-corefile-optimizestorage-f-sys.md#optimizestorage-1) | Optimizes the resources that have been synced to the cloud from the local Gallery and executes the automatic agingpolicy according to the remaining local space. This API uses a promise to return the result. |
+| [startOptimizeSpace](arkts-corefile-startoptimizespace-f-sys.md#startoptimizespace-1) | Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have notbeen accessed before the aging period expires. This API uses a promise to return the result. The callback returnsthe optimization progress.startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, theerror code 22400006 will be returned, indicating that other tasks are being executed. |
+| [stopOptimizeSpace](arkts-corefile-stopoptimizespace-f-sys.md#stopoptimizespace-1) | Synchronously stops optimizing cloud resource space. This method is used with **startOptimizeSpace**. |
+<!--DelEnd-->
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [CloudFileCache](arkts-cloudsync-cloudfilecache-c.md) | 云盘文件缓存对象，用来支撑文件管理应用原文件下载流程。 |
-| <!--DelRow-->[Download](arkts-cloudsync-download-c-sys.md) | 云文件下载对象，用来支撑图库应用原图文件下载流程。在使用前，需要先创建Download实例。 |
-| [FileSync](arkts-cloudsync-filesync-c.md) | 云盘同步对象，用于支撑文件管理器应用完成云盘文件的端云同步流程。在使用前，需要先创建FileSync实例。 |
-| [FileVersion](arkts-cloudsync-fileversion-c.md) | 端云文件版本管理类。支持对端云文件的历史版本进行管理，提供获取文件历史版本信息列表的能力，通过历史版本信息，可将历史版本下载到本地；并提供历史版本文件替换当前本地文件的能力，针对版本冲突，提供查询冲突标志，解除冲突标志的能力。 |
-| <!--DelRow-->[GallerySync](arkts-cloudsync-gallerysync-c-sys.md) | 云图同步对象，用来支撑图库应用媒体资源端云同步流程。在使用前，需要先创建GallerySync实例。 |
-| [MultiDownloadProgress](arkts-cloudsync-multidownloadprogress-c.md) | 云文件批量缓存的进度信息。 |
+| [CloudFileCache](arkts-corefile-cloudfilecache-c.md) | Provides APIs for the file manager application to download files from the Drive Kit to a local device. |
+| [FileSync](arkts-corefile-filesync-c.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.Before using the APIs of this class, you need to create a **FileSync** instance. |
+| [FileVersion](arkts-corefile-fileversion-c.md) | Represents the device-cloud file version management class. It allows you to manage historical versions of client-cloud files, obtain the list of historical versions, download historical versions to the local device, replace thecurrent local file with a historical version file, and query and remove conflict flags for version conflicts. |
+| [MultiDownloadProgress](arkts-corefile-multidownloadprogress-c.md) | Represents the batch download progress of a file from the Drive Kit. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [CloudFileCache](arkts-corefile-cloudfilecache-c-sys.md) | Provides APIs for the file manager application to download files from the Drive Kit to a local device. |
+| [Download](arkts-corefile-download-c-sys.md) | Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to createa **Download** instance. |
+| [FileSync](arkts-corefile-filesync-c-sys.md) | Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.Before using the APIs of this class, you need to create a **FileSync** instance. |
+| [GallerySync](arkts-corefile-gallerysync-c-sys.md) | Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of**GallerySync**, you need to create a **GallerySync** instance. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ChangeData](arkts-cloudsync-changedata-i.md) | 定义变更数据。 |
-| [DownloadProgress](arkts-cloudsync-downloadprogress-i.md) | 云文件下载过程。 |
-| [FailedFileInfo](arkts-cloudsync-failedfileinfo-i.md) | 云文件批量缓存失败列表及失败原因。 |
-| [HistoryVersion](arkts-cloudsync-historyversion-i.md) | 端云文件历史版本信息，调用端云文件版本管理类[FileVersion]{@link cloudSync.FileVersion}的 [gethistoryversionlist]{@link cloudSync.FileVersion.getHistoryVersionList}方法时，历史版本列表中的属性。 |
-| <!--DelRow-->[OptimizeSpaceParam](arkts-cloudsync-optimizespaceparam-i-sys.md) | 立即优化空间设置参数，设置优化总空间和老化天数。 |
-| <!--DelRow-->[OptimizeSpaceProgress](arkts-cloudsync-optimizespaceprogress-i-sys.md) | 立即优化空间状态和当前进度。 |
-| [SyncProgress](arkts-cloudsync-syncprogress-i.md) | 端云同步过程。 |
-| <!--DelRow-->[UploadProgress](arkts-cloudsync-uploadprogress-i-sys.md) | 文件上传进度信息。 |
-| [VersionDownloadProgress](arkts-cloudsync-versiondownloadprogress-i.md) | 历史版本文件下载状态和进度信息，调用端云文件版本管理类[FileVersion]{@link cloudSync.FileVersion}的 [downloadHistoryVersion]{@link cloudSync.FileVersion.downloadHistoryVersion}方法时，回调函数的入参类型。 |
+| [ChangeData](arkts-corefile-changedata-i.md) | Represents the data change information. |
+| [DownloadProgress](arkts-corefile-downloadprogress-i.md) | Represents information about the download progress of a cloud file. |
+| [FailedFileInfo](arkts-corefile-failedfileinfo-i.md) | Represents a list of files that fail to be downloaded from the Drive Kit and failure causes. |
+| [HistoryVersion](arkts-corefile-historyversion-i.md) | Represents the historical version information of the device-cloud file when the[gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the[FileVersion](arkts-corefile-fileversion-c.md) class is called. |
+| [SyncProgress](arkts-corefile-syncprogress-i.md) | Represents information about the device-cloud sync progress. |
+| [VersionDownloadProgress](arkts-corefile-versiondownloadprogress-i.md) | Represents the download state and progress information of historical version files when the[downloadHistoryVersion](arkts-corefile-fileversion-c.md#downloadhistoryversion-1) method of the[FileVersion](arkts-corefile-fileversion-c.md) class is called. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [OptimizeSpaceParam](arkts-corefile-optimizespaceparam-i-sys.md) | Sets the total optimization space and aging days. |
+| [OptimizeSpaceProgress](arkts-corefile-optimizespaceprogress-i-sys.md) | Represents the space optimization states and optimization progress. |
+| [UploadProgress](arkts-corefile-uploadprogress-i-sys.md) | The UploadProgress data structure. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DownloadErrorType](arkts-cloudsync-downloaderrortype-e.md) | 端云下载错误类型，为枚举类型。 |
-| [DownloadFileType](arkts-cloudsync-downloadfiletype-e.md) | 云盘缓存文件类型的枚举。 |
-| [ErrorType](arkts-cloudsync-errortype-e.md) | 端云同步失败类型，为枚举类型。 - 当前阶段，同步过程中，当开启无限量使用移动数据网络，移动数据网络和WIFI均不可用时，才会返回NETWORK_UNAVAILABLE；开启无限量使用移动数据网络，若有一种类型网络可用，则能正常同步。 - 同步过程中，非充电场景下，电量低于10%，完成当前批上行同步后停止同步，返回低电量； - 触发同步时，非充电场景下，若电量低于10%，则不允许同步 - 上行时，若云端空间不足，则文件上行失败，云端无该文件记录。 |
-| [FileState](arkts-cloudsync-filestate-e.md) | 端云文件同步状态，为枚举类型。 |
-| <!--DelRow-->[FileSyncState](arkts-cloudsync-filesyncstate-e-sys.md) | 端云文件同步状态，为枚举类型。 |
-| [NotifyType](arkts-cloudsync-notifytype-e.md) | 数据变更通知类型。 |
-| <!--DelRow-->[OptimizeState](arkts-cloudsync-optimizestate-e-sys.md) | 优化空间状态，为枚举类型。 |
-| [State](arkts-cloudsync-state-e.md) | 云文件下载状态，为枚举类型。 |
-| [SyncState](arkts-cloudsync-syncstate-e.md) | 端云同步状态，为枚举类型。 > **说明：** > > 以下同步状态发生变更时，如果应用注册了同步过程事件监听，则通过回调通知应用。 |
-| <!--DelRow-->[UploadState](arkts-cloudsync-uploadstate-e-sys.md) | 文件上传状态的枚举。 |
+| [DownloadErrorType](arkts-corefile-downloaderrortype-e.md) | Enumerates the device-cloud download error types. |
+| [DownloadFileType](arkts-corefile-downloadfiletype-e.md) | Enumerates the download file types from the Drive Kit. |
+| [ErrorType](arkts-corefile-errortype-e.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi areunavailable. If the mobile data network is available, the synchronization can be performed normally.- During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW**will be return when the current upload is complete.- When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is notallowed.- If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file inthe cloud. |
+| [FileState](arkts-corefile-filestate-e.md) | Enumerates the device-cloud file sync states. |
+| [NotifyType](arkts-corefile-notifytype-e.md) | Enumerates the data change types. |
+| [State](arkts-corefile-state-e.md) | Enumerates the download states of a cloud file. |
+| [SyncState](arkts-corefile-syncstate-e.md) | Enumerates the device-cloud sync states.&gt; **NOTE**&gt;&gt; If a sync progress event listener is registered for an application, a callback will be invoked to notify the&gt; application when the device-cloud sync state is changed. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ErrorType](arkts-corefile-errortype-e-sys.md) | Enumerates the device-cloud sync errors.- In the current phase, **NETWORK_UNAVAILABLE** is returned only when the mobile data network and Wi-Fi areunavailable. If the mobile data network is available, the synchronization can be performed normally.- During the sync process, if the battery level is lower than 10% in non-charging scenarios, **BATTERY_LEVEL_LOW**will be return when the current upload is complete.- When sync is being triggered, if the battery level is lower than 10% in non-charging scenarios, sync is notallowed.- If the cloud space is insufficient when a file is uploaded, the upload will fail and there is no such a file inthe cloud. |
+| [FileSyncState](arkts-corefile-filesyncstate-e-sys.md) | Enumerates the device-cloud file sync states. |
+| [OptimizeState](arkts-corefile-optimizestate-e-sys.md) | Enumerates the space optimization states. |
+| [State](arkts-corefile-state-e-sys.md) | Enumerates the download states of a cloud file. |
+| [UploadState](arkts-corefile-uploadstate-e-sys.md) | Describes the State type of file upload. |
+<!--DelEnd-->
 

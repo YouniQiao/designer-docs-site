@@ -12,6 +12,78 @@ Gif metadata.
 import { image } from '@kit.ImageKit';
 ```
 
+## canvasHeight
+
+```TypeScript
+readonly canvasHeight?: number
+```
+
+Canvas height.
+Unit: px, The value should be an integer.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## canvasWidth
+
+```TypeScript
+readonly canvasWidth?: number
+```
+
+Canvas width.
+Unit: px, The value should be an integer.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## delayTime
+
+```TypeScript
+readonly delayTime?: number
+```
+
+Delay of each frame in milliseconds.
+Unit: ms, The value should be an integer.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## disposalType
+
+```TypeScript
+readonly disposalType?: number
+```
+
+Disposal type of each frame in the image.
+0 - No disposal specified.
+1 - Do not dispose.
+2 - Restore to background color.
+3 - Restore to previous.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
 ## hasGlobalColorMap
 
 ```TypeScript
@@ -24,103 +96,41 @@ whether the GIF image has a global color map.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## canvasWidth
-
-```TypeScript
-readonly canvasWidth?: int
-```
-
-Canvas width. Unit: px, The value should be an integer.
-
-**Type:** int
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## loopCount
 
 ```TypeScript
-readonly loopCount?: int
+readonly loopCount?: number
 ```
 
-Loop count. The value range is all integers.
+Loop count.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## disposalType
-
-```TypeScript
-readonly disposalType?: int
-```
-
-Disposal type of each frame in the image. 0 - No disposal specified. 1 - Do not dispose. 2 - Restore to background color. 3 - Restore to previous. The value range is all integers.
-
-**Type:** int
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## unclampedDelayTime
 
 ```TypeScript
-readonly unclampedDelayTime?: int
+readonly unclampedDelayTime?: number
 ```
 
-Unclamped delay of each frame in milliseconds. Unit: ms, The value should be an integer.
+Unclamped delay of each frame in milliseconds.
+Unit: ms, The value should be an integer.
 
-**Type:** int
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## delayTime
-
-```TypeScript
-readonly delayTime?: int
-```
-
-Delay of each frame in milliseconds. Unit: ms, The value should be an integer.
-
-**Type:** int
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## canvasHeight
-
-```TypeScript
-readonly canvasHeight?: int
-```
-
-Canvas height. Unit: px, The value should be an integer.
-
-**Type:** int
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

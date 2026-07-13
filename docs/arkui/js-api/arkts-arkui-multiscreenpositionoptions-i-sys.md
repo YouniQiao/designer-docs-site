@@ -11,7 +11,7 @@ Describes the screen position information.
 ## Modules to Import
 
 ```TypeScript
-import { screen } from '@ohos.screen';
+import { screen } from '@kit.ArkUI';
 ```
 
 ## id
@@ -20,7 +20,8 @@ import { screen } from '@ohos.screen';
 id: number
 ```
 
-Screen ID. The value must be a positive integer. Any non-positive integer values will be considered invalid and result in an error.
+Screen ID. The value must be a positive integer. Any non-positive integer values will be considered invalid and
+result in an error.
 
 **Type:** number
 
@@ -36,7 +37,9 @@ Screen ID. The value must be a positive integer. Any non-positive integer values
 startX: number
 ```
 
-Start X coordinate of the screen. The top-left vertex of the bounding rectangle formed by the two screens is used as the origin, with the positive direction being rightwards. The value must be a positive integer. Any non- positive integer values will be considered invalid and result in an error.
+Start X coordinate of the screen. The top-left vertex of the bounding rectangle formed by the two screens is used
+as the origin, with the positive direction being rightwards. The value must be a positive integer. Any non-
+positive integer values will be considered invalid and result in an error.
 
 **Type:** number
 
@@ -52,7 +55,9 @@ Start X coordinate of the screen. The top-left vertex of the bounding rectangle 
 startY: number
 ```
 
-Start Y coordinate of the screen. The top-left vertex of the bounding rectangle formed by the two screens is used as the origin, with the positive direction being downwards. The value must be a positive integer. Any non- positive integer values will be considered invalid and result in an error.
+Start Y coordinate of the screen. The top-left vertex of the bounding rectangle formed by the two screens is used
+as the origin, with the positive direction being downwards. The value must be a positive integer. Any non-
+positive integer values will be considered invalid and result in an error.
 
 **Type:** number
 

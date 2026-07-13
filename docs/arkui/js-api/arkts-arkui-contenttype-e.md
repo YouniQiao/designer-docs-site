@@ -60,7 +60,8 @@ New password. Password Vault, when enabled, can automatically generate a new pas
 FULL_STREET_ADDRESS = 3
 ```
 
-Full street address. The scenario-based autofill feature, when enabled, can automatically save and fill in full street addresses.
+Full street address. The scenario-based autofill feature, when enabled, can automatically save and fill in full
+street addresses.
 
 **Since:** 12
 
@@ -92,7 +93,8 @@ House number. The scenario-based autofill feature, when enabled, can automatical
 DISTRICT_ADDRESS = 5
 ```
 
-District and county. The scenario-based autofill feature, when enabled, can automatically save and fill in districts and counties.
+District and county. The scenario-based autofill feature, when enabled, can automatically save and fill in
+districts and counties.
 
 **Since:** 12
 
@@ -236,7 +238,8 @@ Country code. The scenario-based autofill feature, when enabled, can automatical
 FULL_PHONE_NUMBER = 14
 ```
 
-Phone number with country code. The scenario-based autofill feature, when enabled, can automatically save and fill in phone numbers with country codes.
+Phone number with country code. The scenario-based autofill feature, when enabled, can automatically save and fill
+in phone numbers with country codes.
 
 **Since:** 12
 
@@ -252,7 +255,8 @@ Phone number with country code. The scenario-based autofill feature, when enable
 EMAIL_ADDRESS = 15
 ```
 
-Email address. The scenario-based autofill feature, when enabled, can automatically save and fill in email addresses.
+Email address. The scenario-based autofill feature, when enabled, can automatically save and fill in email
+addresses.
 
 **Since:** 12
 
@@ -268,7 +272,8 @@ Email address. The scenario-based autofill feature, when enabled, can automatica
 BANK_CARD_NUMBER = 16
 ```
 
-Bank card number. The scenario-based autofill feature, when enabled, can automatically save and fill in bank card numbers.
+Bank card number. The scenario-based autofill feature, when enabled, can automatically save and fill in bank card
+numbers.
 
 **Since:** 12
 
@@ -284,7 +289,8 @@ Bank card number. The scenario-based autofill feature, when enabled, can automat
 ID_CARD_NUMBER = 17
 ```
 
-ID card number. The scenario-based autofill feature, when enabled, can automatically save and fill in ID card numbers.
+ID card number. The scenario-based autofill feature, when enabled, can automatically save and fill in ID card
+numbers.
 
 **Since:** 12
 
@@ -316,7 +322,8 @@ Nickname. The scenario-based autofill feature, when enabled, can automatically s
 DETAIL_INFO_WITHOUT_STREET = 24
 ```
 
-Address information without street address. The scenario-based autofill feature, when enabled, can automatically save and fill in address information without street addresses.
+Address information without street address. The scenario-based autofill feature, when enabled, can automatically
+save and fill in address information without street addresses.
 
 **Since:** 12
 
@@ -332,7 +339,8 @@ Address information without street address. The scenario-based autofill feature,
 FORMAT_ADDRESS = 25
 ```
 
-Standard address. The scenario-based autofill feature, when enabled, can automatically save and fill in standard addresses.
+Standard address. The scenario-based autofill feature, when enabled, can automatically save and fill in standard
+addresses.
 
 **Since:** 12
 
@@ -348,7 +356,8 @@ Standard address. The scenario-based autofill feature, when enabled, can automat
 PASSPORT_NUMBER = 26
 ```
 
-Passport number. The scenario-based autofill feature, when enabled, can automatically save and fill in passport numbers.
+Passport number. The scenario-based autofill feature, when enabled, can automatically save and fill in passport
+numbers.
 
 **Since:** 18
 
@@ -364,7 +373,8 @@ Passport number. The scenario-based autofill feature, when enabled, can automati
 VALIDITY = 27
 ```
 
-Passport validity period. The scenario-based autofill feature, when enabled, can automatically save and fill in passport validity periods.
+Passport validity period. The scenario-based autofill feature, when enabled, can automatically save and fill in
+passport validity periods.
 
 **Since:** 18
 
@@ -380,7 +390,8 @@ Passport validity period. The scenario-based autofill feature, when enabled, can
 ISSUE_AT = 28
 ```
 
-Passport place of issue. The scenario-based autofill feature, when enabled, can automatically save and fill in the place of issue for passports.
+Passport place of issue. The scenario-based autofill feature, when enabled, can automatically save and fill in the
+place of issue for passports.
 
 **Since:** 18
 
@@ -396,7 +407,8 @@ Passport place of issue. The scenario-based autofill feature, when enabled, can 
 ORGANIZATION = 29
 ```
 
-Invoice title. The scenario-based autofill feature, when enabled, can automatically save and fill in invoice titles.
+Invoice title. The scenario-based autofill feature, when enabled, can automatically save and fill in invoice
+titles.
 
 **Since:** 18
 
@@ -492,7 +504,8 @@ Driver's license file number. Currently not supported for automatic saving and a
 LICENSE_PLATE = 35
 ```
 
-License plate number. The scenario-based autofill feature, when enabled, can automatically save and fill in license plate numbers.
+License plate number. The scenario-based autofill feature, when enabled, can automatically save and fill in license
+plate numbers.
 
 **Since:** 18
 

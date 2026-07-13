@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { featureAbility } from '@ohos.ability.featureAbility';
+import { featureAbility } from '@kit.AbilityKit';
 ```
 
 ## hasWindowFocus
@@ -12,7 +12,8 @@ import { featureAbility } from '@ohos.ability.featureAbility';
 function hasWindowFocus(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the main window of this ability has window focus.
+Checks whether the main window of this ability has the focus. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -24,7 +25,7 @@ Checks whether the main window of this ability has window focus.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | Returns the result in the form of callback.If this ability currentlyhas window focus,return true otherwise,return false. |
+| callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result.<br>If the main window has thefocus, **true** is returned. Otherwise, **false** is returned. |
 
 **Example**
 
@@ -48,7 +49,7 @@ featureAbility.hasWindowFocus((error, data) => {
 function hasWindowFocus(): Promise<boolean>
 ```
 
-Checks whether the main window of this ability has window focus.
+Checks whether the main window of this ability has the focus. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -60,7 +61,7 @@ Checks whether the main window of this ability has window focus.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Returns {@code true} if this ability currently has window focus;returns {@code false} otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. If the main window has the focus, **true** isreturned. Otherwise, **false** is returned. |
 
 **Example**
 

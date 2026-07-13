@@ -1,44 +1,18 @@
 # PixelMap
 
-The **PixelMap** class provides APIs to read or write image data and obtain image information. Before calling any API in PixelMap, you must use [image.createPixelMap](arkts-image-createpixelmap-f.md#createPixelMap-2) to create a PixelMap object. Currently, the maximum size of a serialized PixelMap is 128 MB. A larger size will cause a display failure. The size is calculated as follows: Width x Height x [Bytes per pixel](arkts-image-pixelmapformat-e.md#PixelMapFormat). Since API version 11, PixelMap supports cross-thread calls through [Worker]@ohos.worker. If a PixelMap object is invoked by another thread through [Worker]@ohos.worker, all APIs of the PixelMap object cannot be called in the original thread. Otherwise, error 501 is reported, indicating that the server cannot complete the request. Before calling any API in PixelMap, you can use [image.createPixelMap](arkts-image-createpixelmap-f.md#createPixelMap-2) to pass pixel data to create a PixelMap object, or use [ImageSource](arkts-multimedia-image.md#image) to decode an image to a PixelMap object. To develop an atomic service, use [ImageSource](arkts-multimedia-image.md#image) to create a PixelMap object. Images occupy a large amount of memory. When you finish using a PixelMap instance, call [release]image.PixelMap.release() to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Sendable PixelMap instance.
 
-**Since:** 7
+**Inheritance/Implementation:** PixelMap extends [ISendable](arkts-image-isendable-t.md)
+
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+import { sendableImage } from '@kit.ImageKit';
 ```
-
-## applyColorSpace
-
-```TypeScript
-applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager, callback: AsyncCallback<void>): void
-```
-
-Performs color space conversion (CSC) on the image pixel color based on a given color space. This API uses an asynchronous callback to return the result.
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| targetColorSpace | colorSpaceManager.ColorSpaceManager | Yes | Target color space. SRGB, DCI_P3, DISPLAY_P3,  and ADOBE_RGB_1998 are supported. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980104 | Failed to initialize the internal object. |
-| 62980108 | Failed to convert the color space. |
-| 62980115 | Invalid image parameter. |
 
 ## applyColorSpace
 
@@ -46,484 +20,13 @@ Performs color space conversion (CSC) on the image pixel color based on a given 
 applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager): Promise<void>
 ```
 
-Performs Color Space Converters (CSC) on the image pixel color based on a given color space. This API uses a promise to return the result.
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| targetColorSpace | colorSpaceManager.ColorSpaceManager | Yes | Target color space. SRGB, DCI_P3, DISPLAY_P3,  and ADOBE_RGB_1998 are supported. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980104 | Failed to initialize the internal object. |
-| 62980108 | Failed to convert the color space. |
-| 62980115 | Invalid image parameter. |
-
-## applyCrop
-
-```TypeScript
-applyCrop(region: Region): Promise<void>
-```
-
-Crops the PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| region | Region | Yes | The region to crop. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600204 | The specified region is invalid or out of range. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. Failed to process pixel data. 2. The system is out of memory. |
-
-## applyCropSync
-
-```TypeScript
-applyCropSync(region: Region): void
-```
-
-Crops the PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| region | Region | Yes | The region to crop. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600204 | The specified region is invalid or out of range. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. Failed to process pixel data. 2. The system is out of memory. |
-
-## applyFlip
-
-```TypeScript
-applyFlip(horizontal: boolean, vertical: boolean): Promise<void>
-```
-
-Flips the PixelMap in the horizontal and/or vertical directions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| horizontal | boolean | Yes | Whether to flip horizontally. |
-| vertical | boolean | Yes | Whether to flip vertically. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory. Possible cause: The system is out of memory. |
-
-## applyFlipSync
-
-```TypeScript
-applyFlipSync(horizontal: boolean, vertical: boolean): void
-```
-
-Flips the PixelMap in the horizontal and/or vertical directions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| horizontal | boolean | Yes | Whether to flip horizontally. |
-| vertical | boolean | Yes | Whether to flip vertically. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory. Possible cause: The system is out of memory. |
-
-## applyRotate
-
-```TypeScript
-applyRotate(angle: double): Promise<void>
-```
-
-Rotates the PixelMap. Note: YUV format PixelMaps only support rotation angles that are multiples of 90 degrees.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| angle | double | Yes | The rotation angle in degrees. Unit: Degree. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyRotateSync
-
-```TypeScript
-applyRotateSync(angle: double): void
-```
-
-Rotates the PixelMap. Note: YUV format PixelMaps only support rotation angles that are multiples of 90 degrees.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| angle | double | Yes | The rotation angle in degrees. Unit: Degree. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyScale
-
-```TypeScript
-applyScale(x: double, y: double, level?: AntiAliasingLevel): Promise<void>
-```
-
-Scales the PixelMap in the horizontal and/or vertical dimensions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | The scale ratio of width. Unit: Percentage. |
-| y | double | Yes | The scale ratio of height. Unit: Percentage. |
-| level | AntiAliasingLevel | No |  |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyScaleSync
-
-```TypeScript
-applyScaleSync(x: double, y: double, level?: AntiAliasingLevel): void
-```
-
-Scales the PixelMap in the horizontal and/or vertical dimensions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | The scale ratio of width. Unit: Percentage. |
-| y | double | Yes | The scale ratio of height. Unit: Percentage. |
-| level | AntiAliasingLevel | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyTranslate
-
-```TypeScript
-applyTranslate(x: double, y: double): Promise<void>
-```
-
-Repositions the PixelMap in the horizontal and/or vertical directions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | The distance in pixels to move in the horizontal direction. Unit: px. |
-| y | double | Yes | The distance in pixels to move in the vertical direction. Unit: px. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyTranslateSync
-
-```TypeScript
-applyTranslateSync(x: double, y: double): void
-```
-
-Repositions the PixelMap in the horizontal and/or vertical directions.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | The distance in pixels to move in the horizontal direction. Unit: px. |
-| y | double | Yes | The distance in pixels to move in the vertical direction. Unit: px. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## clone
-
-```TypeScript
-clone(): Promise<PixelMap>
-```
-
-Copies this PixelMap object. This API uses a promise to return the result.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 501 | Resource unavailable. |
-| 62980102 | Image malloc abnormal. This status code is thrown when an error occurs  during the process of copying data. |
-| 62980103 | Image YUV And ASTC types are not supported. |
-| 62980104 | Image initialization abnormal.  This status code is thrown when an error occurs during the process of creating empty pixelmap. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-
-## cloneSync
-
-```TypeScript
-cloneSync(): PixelMap
-```
-
-Copies this PixelMap object. This API returns the result synchronously.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 501 | Resource unavailable. |
-| 62980102 | Image malloc abnormal. This status code is thrown when an error occurs  during the process of copying data. |
-| 62980103 | Image YUV And ASTC types are not supported. |
-| 62980104 | Image initialization abnormal.  This status code is thrown when an error occurs during the process of creating empty pixelmap. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-
-## convertPixelFormat
-
-```TypeScript
-convertPixelFormat(targetPixelFormat: PixelMapFormat): Promise<void>
-```
-
-The method is used for the transformation of the image formats. Pixel data will be changed by calling this method.
+Apply color space of pixelmap, the pixels will be changed by input color space.
+This method uses a promise to return the result.
+
+This method is used to change color space of PixelMap.
+Pixel data will be changed by calling this method.
+If you want to set the colorspace property of PixelMap only,
+use method {@Link #setColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **Since:** 12
 
@@ -533,23 +36,41 @@ The method is used for the transformation of the image formats. Pixel data will 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| targetPixelFormat | PixelMapFormat | Yes | The pixel format for pixelmap conversion. |
+| targetColorSpace | colorSpaceManager.ColorSpaceManager | Yes | The color space for pixelmap. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980115 | Invalid input parameter. |
-| 62980111 | The image source data is incomplete. |
-| 62980274 | The conversion failed. |
-| 62980276 | The type to be converted is an unsupported target pixel format. |
-| 62980178 | Failed to create the pixelmap. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980104](../errorcode-image.md#62980104-image-initialization-error) | Failed to initialize the internal object. |
+| [62980108](../errorcode-image.md#62980108-image-color-conversion-error) | Failed to convert the color space. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid image parameter. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { colorSpaceManager } from '@kit.ArkGraphics2D';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+    let colorSpaceName = colorSpaceManager.ColorSpace.SRGB; // The colorSpaceManager.ColorSpace object is supported only on 2-in-1 devices/PCs.
+    let targetColorSpace: colorSpaceManager.ColorSpaceManager = colorSpaceManager.create(colorSpaceName);
+    pixelMap.applyColorSpace(targetColorSpace).then(() => {
+        console.info('Succeeded in applying color space for pixelmap object.');
+    }).catch((error: BusinessError) => {
+        console.error(`Failed to apply color space for pixelmap object. code is ${error.code}, message is ${error.message}`); 
+    })
+}
+
+```
 
 ## createAlphaPixelmap
 
@@ -557,13 +78,11 @@ The method is used for the transformation of the image formats. Pixel data will 
 createAlphaPixelmap(): Promise<PixelMap>
 ```
 
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. It is invalid for YUV images. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMap} instead for better exception handling capabilities.
+Obtains new pixelmap with alpha information. This method uses a promise to return the information.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -571,29 +90,25 @@ Creates a PixelMap object that contains only the alpha channel information. This
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the new image pixelmap.If the operation fails, an error message is returned. |
 
-## createAlphaPixelmap
+**Example**
 
 ```TypeScript
-createAlphaPixelmap(callback: AsyncCallback<PixelMap>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    pixelMap.createAlphaPixelmap().then((alphaPixelMap: sendableImage.PixelMap) => {
+      console.info('Succeeded in creating alpha pixelmap.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to create alpha pixelmap. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. It is invalid for YUV images. This API returns the result through a callback. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMap} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;PixelMap> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the PixelMap object obtained; otherwise, err is an error object. |
 
 ## createAlphaPixelmapSync
 
@@ -601,11 +116,11 @@ Creates a PixelMap object that contains only the alpha channel information. This
 createAlphaPixelmapSync(): PixelMap
 ```
 
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. This API returns the result synchronously. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMapSync} instead for better exception handling capabilities.
+Obtains new pixelmap with alpha information.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -613,166 +128,38 @@ Creates a PixelMap object that contains only the alpha channel information. This
 
 | Type | Description |
 | --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
+| PixelMap | return the new image pixelmap.If the operation fails, an error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## createCroppedAndScaledPixelMap
+**Example**
 
 ```TypeScript
-createCroppedAndScaledPixelMap(region: Region, x: double, y: double, level?: AntiAliasingLevel): Promise<PixelMap>
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let resPixelMap : sendableImage.PixelMap = pixelMap.createAlphaPixelmapSync();
+  return resPixelMap;
+}
+
 ```
-
-Creates an image that has been cropped and resized based on the specified cropping area, scale factors of the width and height, and anti-aliasing level. This API uses a promise to return the result.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| region | Region | Yes | Area to crop. It must be within the original image's dimension (in pixels). |
-| x | double | Yes | Scale factor of the width. It must not be 0. |
-| y | double | Yes | Scale factor of the height. It must not be 0. |
-| level | AntiAliasingLevel | No |  |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-| 7600204 | Invalid region. |
-| 7600205 | Unsupported memory format or pixel format. |
-| 7600301 | Memory alloc failed. |
-
-## createCroppedAndScaledPixelMapSync
-
-```TypeScript
-createCroppedAndScaledPixelMapSync(region: Region, x: double, y: double, level?: AntiAliasingLevel): PixelMap
-```
-
-Creates an image that has been cropped and resized based on the specified cropping area, scale factors of the width and height, and anti-aliasing level. This API returns the result synchronously.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| region | Region | Yes | Area to crop. It must be within the original image's dimension (in pixels). |
-| x | double | Yes | Scale factor of the width. It must not be 0. |
-| y | double | Yes | Scale factor of the height. It must not be 0. |
-| level | AntiAliasingLevel | No |  |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-| 7600204 | Invalid region. |
-| 7600205 | Unsupported memory format or pixel format. |
-| 7600301 | Memory alloc failed. |
-
-## createScaledPixelMap
-
-```TypeScript
-createScaledPixelMap(x: double, y: double, level?: AntiAliasingLevel): Promise<PixelMap>
-```
-
-Creates an image that has been resized based on the specified anti-aliasing level and the scale factors of the width and height. This API uses a promise to return the result.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
-| level | AntiAliasingLevel | No | Anti-aliasing level. The default value is AntiAliasingLevel.NONE. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
-
-## createScaledPixelMapSync
-
-```TypeScript
-createScaledPixelMapSync(x: double, y: double, level?: AntiAliasingLevel): PixelMap
-```
-
-Creates an image that has been resized based on the specified anti-aliasing level and the scale factors of the width and height. This API returns the result synchronously.
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
-| level | AntiAliasingLevel | No | Anti-aliasing level. The default value is AntiAliasingLevel.NONE. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## crop
 
 ```TypeScript
-crop(region: Region, callback: AsyncCallback<void>): void
+crop(region: image.Region): Promise<void>
 ```
 
-Crops this image based on a given size. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyCrop} instead for better exception handling capabilities.
+Crop the image. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -780,48 +167,46 @@ Crops this image based on a given size. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| region | Region | Yes | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## crop
-
-```TypeScript
-crop(region: Region): Promise<void>
-```
-
-Crops a PixelMap based on a given size. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyCrop} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| region | Region | Yes | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
+| region | image.Region | Yes | The region to crop. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let region: image.Region = { x: 0, y: 0, size: { height: 100, width: 100 } };
+  if (pixelMap != undefined) {
+    pixelMap.crop(region).then(() => {
+      console.info('Succeeded in cropping pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to crop pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    });
+  }
+}
+
+```
 
 ## cropSync
 
 ```TypeScript
-cropSync(region: Region): void
+cropSync(region: image.Region): void
 ```
 
-Crops this image based on a given size. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyCropSync} instead for better exception handling capabilities.
+Crop the image.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -829,106 +214,29 @@ Crops this image based on a given size. This API returns the result synchronousl
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| region | Region | Yes | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
+| region | image.Region | Yes | The region to crop. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## extractAlphaPixelMap
-
-```TypeScript
-extractAlphaPixelMap(): Promise<PixelMap>
-```
-
-Extracts the alpha channel from the current PixelMap to create a new ALPHA_U8 format PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;PixelMap> | A Promise of the new ALPHA_U8 format PixelMap. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The current PixelMap has been released. |
-| 7600106 | The current PixelMap has been passed across threads. |
-| 7600305 | Failed to create the PixelMap.  Possible cause: Current PixelMap data is corrupted. |
-| 7600306 | Failed to convert the data.  Possible causes: 1. Failed to perform pixel format conversion. 2. The system is out of memory. |
-
-## extractAlphaPixelMapSync
+**Example**
 
 ```TypeScript
-extractAlphaPixelMapSync(): PixelMap
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let region : image.Region = { x: 0, y: 0, size: { height: 100, width: 100 } };
+  if (pixelMap != undefined) {
+    pixelMap.cropSync(region);
+  }
+}
+
 ```
-
-Extracts the alpha channel from the current PixelMap to create a new ALPHA_U8 format PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| PixelMap | A new ALPHA_U8 format PixelMap. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The current PixelMap has been released. |
-| 7600106 | The current PixelMap has been passed across threads. |
-| 7600305 | Failed to create the PixelMap.  Possible cause: Current PixelMap data is corrupted. |
-| 7600306 | Failed to convert the data.  Possible causes: 1. Failed to perform pixel format conversion. 2. The system is out of memory. |
-
-## flip
-
-```TypeScript
-flip(horizontal: boolean, vertical: boolean, callback: AsyncCallback<void>): void
-```
-
-Flips this image horizontally or vertically, or both. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyFlip} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| horizontal | boolean | Yes | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | Yes | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## flip
 
@@ -936,13 +244,11 @@ Flips this image horizontally or vertically, or both. This API uses an asynchron
 flip(horizontal: boolean, vertical: boolean): Promise<void>
 ```
 
-Flips a PixelMap based on a given angle. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyFlip} instead for better exception handling capabilities.
+Image flipping. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -950,14 +256,35 @@ Flips a PixelMap based on a given angle. This API uses a promise to return the r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| horizontal | boolean | Yes | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | Yes | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
+| horizontal | boolean | Yes | Is flip in horizontal. |
+| vertical | boolean | Yes | Is flip in vertical. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let horizontal: boolean = true;
+  let vertical: boolean = false;
+  if (pixelMap != undefined) {
+    pixelMap.flip(horizontal, vertical).then(() => {
+      console.info('Succeeded in flipping pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to flip pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    })
+  }
+}
+
+```
 
 ## flipSync
 
@@ -965,11 +292,11 @@ Flips a PixelMap based on a given angle. This API uses a promise to return the r
 flipSync(horizontal: boolean, vertical: boolean): void
 ```
 
-Flips this image horizontally or vertically, or both. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyFlipSync} instead for better exception handling capabilities.
+Image flipping.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -977,29 +304,42 @@ Flips this image horizontally or vertically, or both. This API returns the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| horizontal | boolean | Yes | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | Yes | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
+| horizontal | boolean | Yes | Is flip in horizontal. |
+| vertical | boolean | Yes | Is flip in vertical. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let horizontal : boolean = true;
+  let vertical : boolean = false;
+  if (pixelMap != undefined) {
+    pixelMap.flipSync(horizontal, vertical);
+  }
+}
+
+```
 
 ## getBytesNumberPerRow
 
 ```TypeScript
-getBytesNumberPerRow(): int
+getBytesNumberPerRow(): number
 ```
 
-Obtains the number of bytes per row of this image. Unit: bytes.
+Obtains the number of bytes in each line of the image pixelmap.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1007,7 +347,18 @@ Obtains the number of bytes per row of this image. Unit: bytes.
 
 | Type | Description |
 | --- | --- |
-| int | Number of bytes per row. |
+| number | Number of bytes in each line. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let rowCount: number = pixelMap.getBytesNumberPerRow();
+}
+
+```
 
 ## getColorSpace
 
@@ -1015,9 +366,9 @@ Obtains the number of bytes per row of this image. Unit: bytes.
 getColorSpace(): colorSpaceManager.ColorSpaceManager
 ```
 
-Obtains the color space of this image.
+Get color space of pixelmap.
 
-**Since:** 10
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1025,29 +376,40 @@ Obtains the color space of this image.
 
 | Type | Description |
 | --- | --- |
-| colorSpaceManager.ColorSpaceManager | Color space obtained. |
+| colorSpaceManager.ColorSpaceManager | If the operation fails, an error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980101 | The image data is abnormal. |
-| 62980103 | The image data is not supported. |
-| 62980115 | Invalid image parameter. |
+| [62980101](../errorcode-image.md#62980101-incorrect-input-image-data) | If the image data abnormal. |
+| [62980103](../errorcode-image.md#62980103-unsupported-image-type) | If the image data unsupport. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | If the image parameter invalid. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    let csm = pixelMap.getColorSpace();
+  }
+}
+
+```
 
 ## getDensity
 
 ```TypeScript
-getDensity(): int
+getDensity(): number
 ```
 
-Obtains the pixel density of this image. Unit: ppi (pixels/inch)
+Obtains the density of the image pixelmap.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1055,21 +417,30 @@ Obtains the pixel density of this image. Unit: ppi (pixels/inch)
 
 | Type | Description |
 | --- | --- |
-| int | Pixel density, in ppi. |
+| number | The number of density, in ppi. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let getDensity: number = pixelMap.getDensity();
+}
+
+```
 
 ## getImageInfo
 
 ```TypeScript
-getImageInfo(): Promise<ImageInfo>
+getImageInfo(): Promise<image.ImageInfo>
 ```
 
-Obtains the image information of a PixelMap. This API uses a promise to return the result.
+Obtains pixelmap information about this image. This method uses a promise to return the information.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1077,43 +448,40 @@ Obtains the image information of a PixelMap. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ImageInfo> | Promise used to return the image information. |
+| Promise&lt;image.ImageInfo&gt; | A Promise instance used to return the image pixelmap information.If the operation fails, an error message is returned. |
 
-## getImageInfo
+**Example**
 
 ```TypeScript
-getImageInfo(callback: AsyncCallback<ImageInfo>): void
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    pixelMap.getImageInfo().then((imageInfo: image.ImageInfo) => {
+      if (imageInfo != undefined) {
+        console.info("Succeeded in obtaining the image pixel map information."+ imageInfo.size.height);
+      }
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to obtain the image pixel map information. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Obtains the image information. This API uses an asynchronous callback to return the result.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;ImageInfo> | Yes | Callback used to return the result. If the operation is successful  , err is undefined and data is the image information obtained; otherwise, err is an error  object. |
 
 ## getImageInfoSync
 
 ```TypeScript
-getImageInfoSync(): ImageInfo
+getImageInfoSync(): image.ImageInfo
 ```
 
-Obtains the image information. This API returns the result synchronously.
+Get image information from image source.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
@@ -1121,60 +489,39 @@ Obtains the image information. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| ImageInfo | Image information. |
+| image.ImageInfo | the image information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 501 | Resource Unavailable. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## getMetadata
+**Example**
 
 ```TypeScript
-getMetadata(key: HdrMetadataKey): HdrMetadataValue
+import { image } from '@kit.ImageKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    let imageInfo : image.ImageInfo = pixelMap.getImageInfoSync();
+  }
+}
+
 ```
-
-Obtains the value of the metadata with a given key in this PixelMap.
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| key | HdrMetadataKey | Yes | Key of the HDR metadata. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| HdrMetadataValue | Value of the metadata with the given key. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980173 | The DMA memory does not exist. |
-| 62980302 | Memory copy failed. Possibly caused by invalid metadata value. |
 
 ## getPixelBytesNumber
 
 ```TypeScript
-getPixelBytesNumber(): int
+getPixelBytesNumber(): number
 ```
 
-Obtains the total number of bytes of this image. Unit: bytes.
+Obtains the total number of bytes of the image pixelmap.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1182,49 +529,18 @@ Obtains the total number of bytes of this image. Unit: bytes.
 
 | Type | Description |
 | --- | --- |
-| int | Total number of bytes. |
+| number | Total number of bytes. |
 
-## getUniqueId
+**Example**
 
 ```TypeScript
-getUniqueId(): int
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let pixelBytesNumber: number = pixelMap.getPixelBytesNumber();
+}
+
 ```
-
-Obtains the unique ID of this PixelMap.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| int | Unique ID. The value is a positive integer. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-
-## isReleased
-
-```TypeScript
-isReleased(): boolean
-```
-
-Checks whether this PixelMap object is released. If released, any attempt to access the internal data of this object will fail. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| boolean | Check result for whether the PixelMap object is released. true if released; false  otherwise. |
 
 ## marshalling
 
@@ -1232,9 +548,9 @@ Checks whether this PixelMap object is released. If released, any attempt to acc
 marshalling(sequence: rpc.MessageSequence): void
 ```
 
-Marshals this PixelMap object and writes it to a MessageSequence object.
+Marshalling PixelMap and write into MessageSequence.
 
-**Since:** 10
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1242,28 +558,86 @@ Marshals this PixelMap object and writes it to a MessageSequence object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | Yes | MessageSequence object. |
+| sequence | rpc.MessageSequence | Yes | rpc.MessageSequence parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980115 | Invalid image parameter. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid image parameter. |
+| [62980097](../errorcode-image.md#62980097-pixelmap-serialization-failed) | IPC error. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { rpc } from '@kit.IPCKit';
+
+class MySequence implements rpc.Parcelable {
+  pixel_map: sendableImage.PixelMap;
+  constructor(conPixelMap : sendableImage.PixelMap) {
+    this.pixel_map = conPixelMap;
+  }
+  marshalling(messageSequence : rpc.MessageSequence) {
+    this.pixel_map.marshalling(messageSequence);
+    console.info('marshalling');
+    return true;
+  }
+  unmarshalling(messageSequence : rpc.MessageSequence) {
+    sendableImage.createPixelMap(new ArrayBuffer(96), {size: { height:4, width: 6}}).then((pixelParcel: sendableImage.PixelMap) => {
+      pixelParcel.unmarshalling(messageSequence).then(async (pixelMap: sendableImage.PixelMap) => {
+        this.pixel_map = pixelMap;
+        pixelMap.getImageInfo().then((imageInfo: image.ImageInfo) => {
+          console.info("unmarshalling information h:" + imageInfo.size.height + "w:" + imageInfo.size.width);
+        })
+      })
+    });
+    return true;
+  }
+}
+
+async function Demo() {
+  const color: ArrayBuffer = new ArrayBuffer(96);
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = 0x80;
+  }
+  let opts: image.InitializationOptions = {
+    editable: true,
+    pixelFormat: 4,
+    size: { height: 4, width: 6 },
+    alphaType: 3
+  }
+  let pixelMap: sendableImage.PixelMap | undefined = undefined;
+  await sendableImage.createPixelMap(color, opts).then((srcPixelMap: sendableImage.PixelMap) => {
+    pixelMap = srcPixelMap;
+  })
+  if (pixelMap != undefined) {
+    // Implement serialization.
+    let parcelable: MySequence = new MySequence(pixelMap);
+    let data: rpc.MessageSequence = rpc.MessageSequence.create();
+    data.writeParcelable(parcelable);
+
+    // Implement deserialization to obtain data through the RPC.
+    let ret: MySequence = new MySequence(pixelMap);
+    data.readParcelable(ret);
+  }
+}
+
+```
 
 ## opacity
 
 ```TypeScript
-opacity(rate: double, callback: AsyncCallback<void>): void
+opacity(rate: number): Promise<void>
 ```
 
-Sets an opacity rate for this image. This API uses an asynchronous callback to return the result. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link setOpacity} instead for better exception handling capabilities.
+Set the transparent rate of pixelmap. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1271,48 +645,44 @@ Sets an opacity rate for this image. This API uses an asynchronous callback to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rate | double | Yes | Opacity rate. The value range is (0,1]. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## opacity
-
-```TypeScript
-opacity(rate: double): Promise<void>
-```
-
-Sets an opacity rate for this image. It is invalid for YUV images. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link setOpacity} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| rate | double | Yes | Opacity rate. The value range is (0,1]. |
+| rate | number | Yes | The value of transparent rate. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let rate: number = 0.5;
+  if (pixelMap != undefined) {
+    pixelMap.opacity(rate).then(() => {
+      console.info('Succeeded in setting opacity.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to set opacity. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## opacitySync
 
 ```TypeScript
-opacitySync(rate: double): void
+opacitySync(rate: number): void
 ```
 
-Sets an opacity rate for this image. This API returns the result synchronously. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link setOpacitySync} instead for better exception handling capabilities.
+Set the transparent rate of pixelmap.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1320,30 +690,40 @@ Sets an opacity rate for this image. This API returns the result synchronously. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rate | double | Yes | Opacity rate. The value range is (0,1]. |
+| rate | number | Yes | The value of transparent rate. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## readAllPixelsToBuffer
+**Example**
 
 ```TypeScript
-readAllPixelsToBuffer(dst: ArrayBuffer): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let rate : number = 0.5;
+  if (pixelMap != undefined) {
+    pixelMap.opacitySync(rate);
+  }
+}
+
 ```
 
-Reads all the pixel data from the PixelMap and writes the data to a buffer. The resulting data will be in the same pixel format as the PixelMap.
+## readPixels
 
-**Since:** 26.0.0
+```TypeScript
+readPixels(area: image.PositionArea): Promise<void>
+```
 
-**Model restriction:** This API can be used only in the Stage model.
+Reads image pixelmap data in an area. This method uses a promise to return the data read.
 
-**Atomic service API:** This API can be used in atomic services.
+**Since:** 12
 
-**Widget capability:** This API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1351,120 +731,50 @@ Reads all the pixel data from the PixelMap and writes the data to a buffer. The 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | Yes | The buffer to receive the pixel data from the PixelMap. |
+| area | image.PositionArea | Yes | Area from which the image pixelmap data will be read. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## readAllPixelsToBufferSync
+**Example**
 
 ```TypeScript
-readAllPixelsToBufferSync(dst: ArrayBuffer): void
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  if (pixelMap != undefined) {
+    pixelMap.readPixels(area).then(() => {
+      console.info('Succeeded in reading the image data in the area.'); // Called if the condition is met.
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to read the image data in the area. code is ${error.code}, message is ${error.message}`); // Called if no condition is met.
+    })
+  }
+}
+
 ```
-
-Reads all the pixel data from the PixelMap and writes the data to a buffer. The resulting data will be in the same pixel format as the PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| dst | ArrayBuffer | Yes | The buffer to receive the pixel data from the PixelMap. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## readPixels
-
-```TypeScript
-readPixels(area: PositionArea): Promise<void>
-```
-
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API uses a promise to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link readPixelsToArea} instead for better exception handling capabilities.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area from which the pixels will be read. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-## readPixels
-
-```TypeScript
-readPixels(area: PositionArea, callback: AsyncCallback<void>): void
-```
-
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API uses an asynchronous callback to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link readPixelsToArea} instead for better exception handling capabilities.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area from which the pixels will be read. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## readPixelsSync
 
 ```TypeScript
-readPixelsSync(area: PositionArea): void
+readPixelsSync(area: image.PositionArea): void
 ```
 
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link readPixelsToAreaSync} instead for better exception handling capabilities.
+Reads image pixelmap data in an area.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1472,88 +782,34 @@ Reads the pixels in the area specified by [PositionArea](arkts-image-positionare
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| area | PositionArea | Yes | Area from which the pixels will be read. |
+| area | image.PositionArea | Yes | Area from which the image pixelmap data will be read. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## readPixelsToArea
+**Example**
 
 ```TypeScript
-readPixelsToArea(area: PositionArea): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const area : image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsSync(area);
+  }
+}
+
 ```
-
-Reads pixel data from a certain area of the PixelMap to a buffer. The resulting data will be in BGRA_8888 format.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area of the PixelMap to read the data.  Data will be read from the PixelMap and copied into PositionArea.pixels. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
-
-## readPixelsToAreaSync
-
-```TypeScript
-readPixelsToAreaSync(area: PositionArea): void
-```
-
-Reads pixel data from a certain area of the PixelMap to a buffer. The resulting data will be in BGRA_8888 format.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area of the PixelMap to read the data.  Data will be read from the PixelMap and copied into PositionArea.pixels. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
 
 ## readPixelsToBuffer
 
@@ -1561,13 +817,12 @@ Reads pixel data from a certain area of the PixelMap to a buffer. The resulting 
 readPixelsToBuffer(dst: ArrayBuffer): Promise<void>
 ```
 
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBuffer} instead for better exception handling capabilities.
+Reads image pixelmap data and writes the data to an ArrayBuffer. This method uses
+a promise to return the result.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1575,36 +830,32 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | Yes | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| dst | ArrayBuffer | Yes | A buffer to which the image pixelmap data will be written. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## readPixelsToBuffer
+**Example**
 
 ```TypeScript
-readPixelsToBuffer(dst: ArrayBuffer, callback: AsyncCallback<void>): void
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const readBuffer: ArrayBuffer = new ArrayBuffer(96); // 96 is the size of the pixel buffer to create. The value is calculated as follows: height * width *4.
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsToBuffer(readBuffer).then(() => {
+      console.info('Succeeded in reading image pixel data.'); // Called if the condition is met.
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to read image pixel data. code is ${error.code}, message is ${error.message}`); // Called if no condition is met.
+    })
+  }
+}
+
 ```
-
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBuffer} instead for better exception handling capabilities.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| dst | ArrayBuffer | Yes | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## readPixelsToBufferSync
 
@@ -1612,13 +863,11 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 readPixelsToBufferSync(dst: ArrayBuffer): void
 ```
 
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBufferSync} instead for better exception handling capabilities.
+Reads image pixelmap data and writes the data to an ArrayBuffer.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1626,36 +875,29 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | Yes | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| dst | ArrayBuffer | Yes | A buffer to which the image pixelmap data will be written. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## release
+**Example**
 
 ```TypeScript
-release(callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap: sendableImage.PixelMap) {
+  const bufferSize = pixelMap.getPixelBytesNumber();
+  const readBuffer: ArrayBuffer = new ArrayBuffer(bufferSize);
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsToBufferSync(readBuffer);
+  }
+}
+
 ```
-
-Releases this PixelMap instance. After the release, any attempt to access the internal data of this object will fail. This API uses an asynchronous callback to return the result. Images occupy a large amount of memory. When you finish using a PixelMap instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## release
 
@@ -1663,13 +905,11 @@ Releases this PixelMap instance. After the release, any attempt to access the in
 release(): Promise<void>
 ```
 
-Releases this PixelMap instance. After the release, any attempt to access the internal data of this object will fail. This API uses a promise to return the result. Images occupy a large amount of memory. When you finish using a PixelMap instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
+Releases this PixelMap object. This method uses a promise to return the result.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1677,21 +917,37 @@ Releases this PixelMap instance. After the release, any attempt to access the in
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the instance release result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap: sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    await pixelMap.release().then(() => {
+      console.info('Succeeded in releasing pixelmap object.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to release pixelmap object. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
+```
 
 ## rotate
 
 ```TypeScript
-rotate(angle: double, callback: AsyncCallback<void>): void
+rotate(angle: number): Promise<void>
 ```
 
-Rotates this image based on a given angle. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyRotate} instead for better exception handling capabilities.
+Image rotation. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1699,48 +955,44 @@ Rotates this image based on a given angle. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| angle | double | Yes | Angle to rotate. Unit: degrees. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## rotate
-
-```TypeScript
-rotate(angle: double): Promise<void>
-```
-
-Rotates a PixelMap based on a given angle. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyRotate} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| angle | double | Yes | Angle to rotate. Unit: degrees. |
+| angle | number | Yes | The rotation angle, in degrees. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let angle: number = 90.0;
+  if (pixelMap != undefined) {
+    pixelMap.rotate(angle).then(() => {
+      console.info('Succeeded in rotating pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to rotate pixelmap. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## rotateSync
 
 ```TypeScript
-rotateSync(angle: double): void
+rotateSync(angle: number): void
 ```
 
-Rotates this image based on a given angle. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyRotateSync} instead for better exception handling capabilities.
+Image rotation.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1748,28 +1000,40 @@ Rotates this image based on a given angle. This API returns the result synchrono
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| angle | double | Yes | Angle to rotate. Unit: degrees. |
+| angle | number | Yes | The rotation angle, in degrees. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let angle : number = 90.0;
+  if (pixelMap != undefined) {
+    pixelMap.rotateSync(angle);
+  }
+}
+
+```
 
 ## scale
 
 ```TypeScript
-scale(x: double, y: double, callback: AsyncCallback<void>): void
+scale(x: number, y: number): Promise<void>
 ```
 
-Scales this image based on the scale factors of the width and height. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
+Image zoom in width and height. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1777,87 +1041,47 @@ Scales this image based on the scale factors of the width and height. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## scale
-
-```TypeScript
-scale(x: double, y: double): Promise<void>
-```
-
-Scales this image based on the scale factors of the width and height. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
+| x | number | Yes | The zoom value of width. |
+| y | number | Yes | The zoom value of height. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## scale
+**Example**
 
 ```TypeScript
-scale(x: double, y: double, level: AntiAliasingLevel): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let scaleX: number = 2.0;
+  let scaleY: number = 1.0;
+  if (pixelMap != undefined) {
+    pixelMap.scale(scaleX, scaleY).then(() => {
+      console.info('Succeeded in scaling pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to scale pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    })
+  }
+}
+
 ```
-
-Scales this image based on the specified anti-aliasing level and the scale factors for the width and height. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
-| level | AntiAliasingLevel | Yes | Anti-aliasing level. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## scaleSync
 
 ```TypeScript
-scaleSync(x: double, y: double): void
+scaleSync(x: number, y: number): void
 ```
 
-Scales this image based on the scale factors of the width and height. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyScaleSync} instead for better exception handling capabilities.
+Image zoom in width and height.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1865,44 +1089,30 @@ Scales this image based on the scale factors of the width and height. This API r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
+| x | number | Yes | The zoom value of width. |
+| y | number | Yes | The zoom value of height. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
 
-## scaleSync
+**Example**
 
 ```TypeScript
-scaleSync(x: double, y: double, level: AntiAliasingLevel): void
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let scaleX: number = 2.0;
+  let scaleY: number = 1.0;
+  if (pixelMap != undefined) {
+    pixelMap.scaleSync(scaleX, scaleY);
+  }
+}
+
 ```
-
-Scales this image based on the specified anti-aliasing level and the scale factors for the width and height. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyScaleSync} instead for better exception handling capabilities.
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | Scale factor of the width. |
-| y | double | Yes | Scale factor of the height. |
-| level | AntiAliasingLevel | Yes | Anti-aliasing level. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## setColorSpace
 
@@ -1910,7 +1120,12 @@ Scales this image based on the specified anti-aliasing level and the scale facto
 setColorSpace(colorSpace: colorSpaceManager.ColorSpaceManager): void
 ```
 
-Set color space of pixel map. This method is only used to set the colorspace property of pixelmap, while all pixel data remains the same after calling this method. If you want to change colorspace for all pixels, use method {@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)} or {@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager, AsyncCallback<void>)}.
+Set color space of pixelmap.
+
+This method is only used to set the colorspace property of PixelMap,
+while all pixel data remains the same after calling this method.
+If you want to change colorspace for all pixels, use method
+{@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **Since:** 12
 
@@ -1920,212 +1135,42 @@ Set color space of pixel map. This method is only used to set the colorspace pro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| colorSpace | colorSpaceManager.ColorSpaceManager | Yes | The color space for pixel map. |
+| colorSpace | colorSpaceManager.ColorSpaceManager | Yes | The color space for pixelmap. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980111 | The image source data is incomplete. |
-| 62980115 | If the image parameter invalid. |
+| [62980111](../errorcode-image.md#62980111-incomplete-image-source-data) | If the operation invalid. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | If the image parameter invalid. |
 
-## setMemoryNameSync
+**Example**
 
 ```TypeScript
-setMemoryNameSync(name: string): void
+import { sendableImage } from '@kit.ImageKit';
+import { colorSpaceManager } from '@kit.ArkGraphics2D';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let colorSpaceName = colorSpaceManager.ColorSpace.SRGB; // The colorSpaceManager.ColorSpace object is supported only on 2-in-1 devices/PCs.
+  let csm: colorSpaceManager.ColorSpaceManager = colorSpaceManager.create(colorSpaceName);
+  if (pixelMap != undefined) {
+    pixelMap.setColorSpace(csm);
+  }
+}
+
 ```
-
-Sets a memory name for this PixelMap.
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| name | string | Yes | Memory name, which can be set only for a PixelMap with the DMA or ASHMEM memory format.  The name length for DMA memory settings should be within the range of 1 to 255 bytes. For ASHMEM memory  settings, the name length should be within the range of 1 to 244 bytes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.The length of the input parameter is too  long.  2.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980286 | Memory format not supported. |
-
-## setMetadata
-
-```TypeScript
-setMetadata(key: HdrMetadataKey, value: HdrMetadataValue): Promise<void>
-```
-
-Sets the value for the metadata with a given key in this PixelMap. This API uses a promise to return the result.
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| key | HdrMetadataKey | Yes | Key of the HDR metadata. |
-| value | HdrMetadataValue | Yes | Value of the metadata. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980173 | The DMA memory does not exist. |
-| 62980302 | Memory copy failed. Possibly caused by invalid metadata value. |
-
-## setOpacity
-
-```TypeScript
-setOpacity(value: double): Promise<void>
-```
-
-Sets opacity of the PixelMap. Every pixel will be set to the same opacity value.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| value | double | Yes | The target opacity value to be set. Unit: Percentage, Value range: (0,1].  The valid range is (0.0, 1.0] where 1.0 is fully opaque and becoming transparent as it approaches 0.0. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. Possible cause: The specified value is out of range. |
-| 7600207 | Unsupported data format. Possible cause: Alpha type is not supported. |
-
-## setOpacitySync
-
-```TypeScript
-setOpacitySync(value: double): void
-```
-
-Sets opacity of the PixelMap. Every pixel will be set to the same opacity value.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| value | double | Yes | The target opacity value to be set. Unit: Percentage, Value range: (0,1].  The valid range is (0.0, 1.0] where 1.0 is fully opaque and becoming transparent as it approaches 0.0. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. Possible cause: The specified value is out of range. |
-| 7600207 | Unsupported data format. Possible cause: Alpha type is not supported. |
-
-## setTransferDetached
-
-```TypeScript
-setTransferDetached(detached: boolean): void
-```
-
-Sets whether to detach from the original thread when this PixelMap is transmitted across threads. This API applies to the scenario where the PixelMap needs to be released immediately.
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| detached | boolean | Yes | Whether to detach from the original thread. true to detach, false  otherwise. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 501 | Resource Unavailable. |
-
-## toSdr
-
-```TypeScript
-toSdr(): Promise<void>
-```
-
-Convert pixelmap to standard dynamic range.
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 62980137 | Invalid image operation. |
 
 ## translate
 
 ```TypeScript
-translate(x: double, y: double, callback: AsyncCallback<void>): void
+translate(x: number, y: number): Promise<void>
 ```
 
-Translates this image based on given coordinates. This API uses an asynchronous callback to return the result. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslate} instead for better exception handling capabilities.
+Image position transformation. This method uses a promise to return the result.
 
-**Since:** 9
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2133,50 +1178,46 @@ Translates this image based on given coordinates. This API uses an asynchronous 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | double | Yes | X coordinate to translate, in px. |
-| y | double | Yes | Y coordinate to translate, in px. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## translate
-
-```TypeScript
-translate(x: double, y: double): Promise<void>
-```
-
-Translates a PixelMap based on given coordinates. This API uses a promise to return the result. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslate} instead for better exception handling capabilities.
-
-**Since:** 9
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| x | double | Yes | X coordinate to translate, in px. |
-| y | double | Yes | Y coordinate to translate, in px. |
+| x | number | Yes | The position value of width, in px. |
+| y | number | Yes | The position value of height, in px. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let translateX: number = 50.0;
+  let translateY: number = 10.0;
+  if (pixelMap != undefined) {
+    pixelMap.translate(translateX, translateY).then(() => {
+      console.info('Succeeded in translating pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to translate pixelmap. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## translateSync
 
 ```TypeScript
-translateSync(x: double, y: double): void
+translateSync(x: number, y: number): void
 ```
 
-Translates this image based on given coordinates. This API returns the result synchronously. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslateSync} instead for better exception handling capabilities.
+Image position transformation.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2184,15 +1225,30 @@ Translates this image based on given coordinates. This API returns the result sy
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | double | Yes | X coordinate to translate, in px. |
-| y | double | Yes | Y coordinate to translate, in px. |
+| x | number | Yes | The position value of width, in px. |
+| y | number | Yes | The position value of height, in px. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  let translateX : number = 50.0;
+  let translateY : number = 10.0;
+  if (pixelMap != undefined) {
+    pixelMap.translateSync(translateX, translateY);
+  }
+}
+
+```
 
 ## unmarshalling
 
@@ -2200,9 +1256,9 @@ Translates this image based on given coordinates. This API returns the result sy
 unmarshalling(sequence: rpc.MessageSequence): Promise<PixelMap>
 ```
 
-Unmarshals a MessageSequence object to obtain a PixelMap object. To create a PixelMap object in synchronous mode, use [createPixelMapFromParcel](arkts-image-createpixelmapfromparcel-f.md#createPixelMapFromParcel-1).
+Creates a PixelMap object based on MessageSequence parameter.
 
-**Since:** 10
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2210,97 +1266,81 @@ Unmarshals a MessageSequence object to obtain a PixelMap object. To create a Pix
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | Yes | MessageSequence object that stores the PixelMap information. |
+| sequence | rpc.MessageSequence | Yes | rpc.MessageSequence parameter. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 62980115 | Invalid image parameter. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
+| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | Invalid image parameter. |
+| [62980097](../errorcode-image.md#62980097-pixelmap-serialization-failed) | IPC error. |
+| [62980096](../errorcode-image.md#62980096-operation-failed) | The operation failed. |
 
-## writeAllPixelsFromBuffer
+**Example**
 
 ```TypeScript
-writeAllPixelsFromBuffer(src: ArrayBuffer): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { rpc } from '@kit.IPCKit';
+
+class MySequence implements rpc.Parcelable {
+  pixel_map: sendableImage.PixelMap;
+  constructor(conPixelMap: sendableImage.PixelMap) {
+    this.pixel_map = conPixelMap;
+  }
+  marshalling(messageSequence: rpc.MessageSequence) {
+    this.pixel_map.marshalling(messageSequence);
+    console.info('marshalling');
+    return true;
+  }
+  unmarshalling(messageSequence: rpc.MessageSequence) {
+    sendableImage.createPixelMap(new ArrayBuffer(96), {size: { height:4, width: 6}}).then((pixelParcel : sendableImage.PixelMap) => {
+      pixelParcel.unmarshalling(messageSequence).then(async (pixelMap : sendableImage.PixelMap) => {
+        this.pixel_map = pixelMap;
+        pixelMap.getImageInfo().then((imageInfo : image.ImageInfo) => {
+          console.info("unmarshalling information h:" + imageInfo.size.height + "w:" + imageInfo.size.width);
+        })
+      })
+    });
+    return true;
+  }
+}
+
+async function Demo() {
+  const color: ArrayBuffer = new ArrayBuffer(96);
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = 0x80;
+  }
+  let opts: image.InitializationOptions = {
+    editable: true,
+    pixelFormat: 4,
+    size: { height: 4, width: 6 },
+    alphaType: 3
+  }
+  let pixelMap: sendableImage.PixelMap | undefined = undefined;
+  await sendableImage.createPixelMap(color, opts).then((srcPixelMap : sendableImage.PixelMap) => {
+    pixelMap = srcPixelMap;
+  })
+  if (pixelMap != undefined) {
+    // Implement serialization.
+    let parcelable: MySequence = new MySequence(pixelMap);
+    let data : rpc.MessageSequence = rpc.MessageSequence.create();
+    data.writeParcelable(parcelable);
+
+    // Implement deserialization to obtain data through the RPC.
+    let ret : MySequence = new MySequence(pixelMap);
+    data.readParcelable(ret);
+  }
+}
+
 ```
-
-Reads the pixel data from a buffer and writes the data to the PixelMap. The source data must be in the same pixel format as the PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | Yes | The buffer that contains pixel data to be written to the PixelMap. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## writeAllPixelsFromBufferSync
-
-```TypeScript
-writeAllPixelsFromBufferSync(src: ArrayBuffer): void
-```
-
-Reads the pixel data from a buffer and writes the data to the PixelMap. The source data must be in the same pixel format as the PixelMap.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | Yes | The buffer that contains pixel data to be written to the PixelMap. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
 
 ## writeBufferToPixels
 
@@ -2308,13 +1348,12 @@ Reads the pixel data from a buffer and writes the data to the PixelMap. The sour
 writeBufferToPixels(src: ArrayBuffer): Promise<void>
 ```
 
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBuffer} instead for better exception handling capabilities.
+Reads image data in an ArrayBuffer and writes the data to a PixelMap object. This method
+uses a promise to return the result.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2322,36 +1361,36 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | ArrayBuffer | Yes | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| src | ArrayBuffer | Yes | A buffer from which the image data will be read. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## writeBufferToPixels
+**Example**
 
 ```TypeScript
-writeBufferToPixels(src: ArrayBuffer, callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const color: ArrayBuffer = new ArrayBuffer(96); // 96 is the size of the pixel buffer to create. The value is calculated as follows: height * width *4.
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writeBufferToPixels(color).then(() => {
+      console.info("Succeeded in writing data from a buffer to a PixelMap.");
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to write data from a buffer to a PixelMap. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBuffer} instead for better exception handling capabilities.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | Yes | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the pixels in the buffer are  successfully written to the PixelMap, err is undefined; otherwise, err is an error object. |
 
 ## writeBufferToPixelsSync
 
@@ -2359,11 +1398,11 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 writeBufferToPixelsSync(src: ArrayBuffer): void
 ```
 
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBufferSync} instead for better exception handling capabilities.
+Reads image data in an ArrayBuffer and writes the data to a PixelMap object.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2371,28 +1410,46 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| src | ArrayBuffer | Yes | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| src | ArrayBuffer | Yes | A buffer from which the image data will be read. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function Demo(pixelMap: sendableImage.PixelMap) {
+  const bufferSize = pixelMap.getPixelBytesNumber();
+  const color : ArrayBuffer = new ArrayBuffer(bufferSize);
+  let bufferArr : Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writeBufferToPixelsSync(color);
+  }
+}
+
+```
 
 ## writePixels
 
 ```TypeScript
-writePixels(area: PositionArea): Promise<void>
+writePixels(area: image.PositionArea): Promise<void>
 ```
 
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API uses a promise to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link writePixelsFromArea} instead for better exception handling capabilities.
+Writes image pixelmap data to the specified area. This method uses a promise to return
+the operation result.
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2400,126 +1457,54 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| area | PositionArea | Yes | Area to which the pixels will be written. |
+| area | image.PositionArea | Yes | Area to which the image pixelmap data will be written. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## writePixels
-
-```TypeScript
-writePixels(area: PositionArea, callback: AsyncCallback<void>): void
-```
-
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API uses an asynchronous callback to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link writePixelsFromArea} instead for better exception handling capabilities.
-
-**Since:** 7
-
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area to which the pixels will be written. |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## writePixelsFromArea
+**Example**
 
 ```TypeScript
-writePixelsFromArea(area: PositionArea): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  let bufferArr: Uint8Array = new Uint8Array(area.pixels);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writePixels(area).then(() => {
+      console.info('Succeeded to write pixelmap into the specified area.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to write pixelmap into the specified area. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Writes data from a buffer to a certain area of the PixelMap. The source data must be in BGRA_8888 format.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area of the PixelMap to write the data.  Data will be copied from PositionArea.pixels to the PixelMap. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
-
-## writePixelsFromAreaSync
-
-```TypeScript
-writePixelsFromAreaSync(area: PositionArea): void
-```
-
-Writes data from a buffer to a certain area of the PixelMap. The source data must be in BGRA_8888 format.
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| area | PositionArea | Yes | Area of the PixelMap to write the data.  Data will be copied from PositionArea.pixels to the PixelMap. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
 
 ## writePixelsSync
 
 ```TypeScript
-writePixelsSync(area: PositionArea): void
+writePixelsSync(area: image.PositionArea): void
 ```
 
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link writePixelsFromAreaSync} instead for better exception handling capabilities.
+Writes image pixelmap data to the specified area.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2527,14 +1512,38 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| area | PositionArea | Yes | Area to which the pixels will be written. |
+| area | image.PositionArea | Yes | Area to which the image pixelmap data will be written. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-api-call-failed) | Resource Unavailable. |
+
+**Example**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function Demo(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  let bufferArr: Uint8Array = new Uint8Array(area.pixels);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writePixelsSync(area);
+  }
+}
+
+```
 
 ## isEditable
 
@@ -2542,15 +1551,13 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 readonly isEditable: boolean
 ```
 
-Whether the image pixels are editable. **true** if editable, **false** otherwise. The value **false** provides better image rendering and transmission performance.<br> This API can be used in atomic services since API version 11.<br> This API can be used in ArkTS widgets since API version 12.
+Whether the image pixelmap can be edited.
 
 **Type:** boolean
 
-**Since:** 7
+**Since:** 12
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
-
-**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -2560,11 +1567,11 @@ Whether the image pixels are editable. **true** if editable, **false** otherwise
 readonly isStrideAlignment: boolean
 ```
 
-Whether the row data of the image is memory aligned. The value **true** means that the row data is memory-aligned , and there may be blank bytes padded at the end of each row to meet alignment requirements. The value **false** means that the row data is not memory-aligned, and rows are packed contiguously with no padding bytes at the end.
+Is it stride Alignment
 
 **Type:** boolean
 
-**Since:** 11
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

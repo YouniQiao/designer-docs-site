@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## getBundleInfos
@@ -12,7 +12,8 @@ import { bundle } from '@ohos.bundle';
 function getBundleInfos(bundleFlag: BundleFlag, userId: number, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains BundleInfo of all bundles available in the system.
+Obtains all BundleInfo for a specified user in the system.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -30,9 +31,9 @@ Obtains BundleInfo of all bundles available in the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Indicates the flag used to specify information containedin the BundleInfo that will be returned. |
-| userId | number | Yes | Indicates the user ID. |
-| callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | When obtaining the array of BundleInfo objectssucceeds, err is undefined, and data is the obtained array of BundleInfo objects;otherwise, the outcome is an error object. |
+| bundleFlag | BundleFlag | Yes | Flag used to specify the information contained in the returned bundleinformation object. Value range: see the bundle information related flagsin [BundleFlag](arkts-ability-bundleflag-e.md). |
+| userId | number | Yes | User ID. Value range: greater than or equal to 0. |
+| callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the result. If getBundleInfosis successful, **err** is **undefined**, and the BundleInfo of allbundles under the specified user as the input parameter at program startup.Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -59,7 +60,7 @@ bundle.getBundleInfos(bundleFlag, userId, (err, data) => {
 function getBundleInfos(bundleFlag: BundleFlag, callback: AsyncCallback<Array<BundleInfo>>): void
 ```
 
-Obtains BundleInfo of all bundles available in the system.
+Obtains all BundleInfo for the current user. This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -77,8 +78,8 @@ Obtains BundleInfo of all bundles available in the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Indicates the flag used to specify information containedin the BundleInfo that will be returned. |
-| callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | When obtaining the array of BundleInfo objectssucceeds, err is undefined, and data is the obtained array of BundleInfo objects;otherwise, the outcome is an error object. |
+| bundleFlag | BundleFlag | Yes | Flag used to specify the information contained in the returned bundleinformation object. Value range: see the bundle information related flagsin [BundleFlag](arkts-ability-bundleflag-e.md). |
+| callback | AsyncCallback&lt;Array&lt;BundleInfo&gt;&gt; | Yes | Callback used to return the result. If getBundleInfosis successful, **err** is **undefined**, and all available BundleInfo as the input parameter atprogram startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -104,7 +105,7 @@ bundle.getBundleInfos(bundleFlag, (err, data) => {
 function getBundleInfos(bundleFlag: BundleFlag, userId?: number): Promise<Array<BundleInfo>>
 ```
 
-Obtains BundleInfo of all bundles available in the system.
+Obtains all BundleInfo for a specified user. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -122,14 +123,14 @@ Obtains BundleInfo of all bundles available in the system.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | Yes | Indicates the flag used to specify information containedin the BundleInfo that will be returned. |
-| userId | number | No | Indicates the user ID. |
+| bundleFlag | BundleFlag | Yes | Flag used to specify the information contained in thereturned bundle information object. Value range: see the bundle information related flagsin [BundleFlag](arkts-ability-bundleflag-e.md). |
+| userId | number | No | User ID.Default value: the user to which the caller belongs.Value range: greater than or equal to 0. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return a list of BundleInfo objects. |
+| Promise&lt;Array&lt;BundleInfo&gt;&gt; | Promise used to return all available BundleInfo. |
 
 **Example**
 

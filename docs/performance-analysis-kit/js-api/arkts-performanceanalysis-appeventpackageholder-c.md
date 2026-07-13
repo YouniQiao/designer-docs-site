@@ -9,7 +9,7 @@ Defines a subscription data holder for processing event information.
 ## Modules to Import
 
 ```TypeScript
-import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## constructor
@@ -18,7 +18,9 @@ import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
 constructor(watcherName: string)
 ```
 
-Constructs an **AppEventPackageHolder** instance. You can call [addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1) to add an event watcher, and then associate the **AppEventPackageHolder** instance with the watcher added in the application based on the watcher name.
+Constructs an **AppEventPackageHolder** instance. You can call [addWatcher](arkts-performanceanalysis-addwatcher-f.md#addwatcher-1) to add
+an event watcher, and then associate the **AppEventPackageHolder** instance with the watcher added in the
+application based on the watcher name.
 
 **Since:** 9
 
@@ -56,7 +58,8 @@ let holder1: hiAppEvent.AppEventPackageHolder = new hiAppEvent.AppEventPackageHo
 setRow(size: number): void
 ```
 
-Sets the number of data records of the event package obtained each time. When **setRow()** and **setSize()** are called at the same time, only **setRow()** takes effect.
+Sets the number of data records of the event package obtained each time. When **setRow()** and **setSize()** are
+called at the same time, only **setRow()** takes effect.
 
 **Since:** 12
 
@@ -75,7 +78,7 @@ Sets the number of data records of the event package obtained each time. When **
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
-| [11104001](../errorcode-hiappevent.md#11104001-invalid-event-package-size) | Invalid size value. Possible caused by the size value is less than or equalto zero. |
+| [11104001](../errorcode-hiappevent.md#11104001-invalid-event-package-size) | Invalid size value. Possibly caused by the size value is less than or equalto zero. |
 
 **Example**
 
@@ -112,7 +115,7 @@ Sets the threshold for the data size of the event package obtained each time.
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
-| [11104001](../errorcode-hiappevent.md#11104001-invalid-event-package-size) | Invalid size value. Possible caused by the size value is less than or equalto zero. |
+| [11104001](../errorcode-hiappevent.md#11104001-invalid-event-package-size) | Invalid size value. Possibly caused by the size value is less than or equalto zero. |
 
 **Example**
 
@@ -130,7 +133,13 @@ holder2.setSize(1000);
 takeNext(): AppEventPackage
 ```
 
-Obtains the subscription event. The system obtains the subscription event data based on the data size threshold specified by **setSize** or the number of data records specified by **setRow**. By default, one subscription event data record is obtained. When all subscription event data is obtained, **null** is returned. When **setRow** and **setSize** are called at the same time, only **setRow** takes effect.
+Obtains the subscription event.
+
+The system obtains the subscription event data based on the data size threshold specified by **setSize** or the
+number of data records specified by **setRow**. By default, one subscription event data record is obtained. When
+all subscription event data is obtained, **null** is returned.
+
+When **setRow** and **setSize** are called at the same time, only **setRow** takes effect.
 
 **Since:** 9
 

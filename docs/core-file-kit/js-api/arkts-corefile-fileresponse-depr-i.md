@@ -14,7 +14,9 @@ Returns a file, including the file information.
 lastModifiedTime: number
 ```
 
-Timestamp when the file is stored the last time, which is the number of milliseconds elapsed since 1970/01/01 00:00:00 GMT. For lite wearables, the value is fixed to 0, because this parameter is restricted by the underlying file system.
+Timestamp when the file is stored the last time, which is the number of milliseconds elapsed since
+1970/01/01 00:00:00 GMT. For lite wearables, the value is fixed to 0, because this parameter
+is restricted by the underlying file system.
 
 **Type:** number
 
@@ -46,7 +48,8 @@ File length, in bytes.
 subFiles?: Array<FileResponse>
 ```
 
-List of files. When the recursive value is true and the type is dir, the file information under the subdirectory will be returned. Otherwise, no value will be returned.
+List of files. When the recursive value is true and the type is dir, the file information under the
+subdirectory will be returned. Otherwise, no value will be returned.
 
 **Type:** Array<FileResponse>
 
@@ -62,7 +65,9 @@ List of files. When the recursive value is true and the type is dir, the file in
 type: 'dir' | 'file'
 ```
 
-File type. Available values are as follows: **dir**: directory **file**: file
+File type. Available values are as follows:
+**dir**: directory
+**file**: file
 
 **Type:** 'dir' | 'file'
 

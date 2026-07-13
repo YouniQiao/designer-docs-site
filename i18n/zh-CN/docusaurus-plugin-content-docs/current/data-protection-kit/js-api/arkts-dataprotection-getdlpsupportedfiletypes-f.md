@@ -6,7 +6,9 @@
 function getDLPSupportedFileTypes(): Promise<Array<string>>
 ```
 
-查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用Promise异步回调。 该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
+查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用Promise异步回调。
+
+该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
 
 **起始版本：** 10
 
@@ -45,7 +47,9 @@ dlpPermission.getDLPSupportedFileTypes().then((fileTypes) => { // 获取支持DL
 function getDLPSupportedFileTypes(callback: AsyncCallback<Array<string>>): void
 ```
 
-查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用callback异步回调。 该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
+查询当前可支持权限设置和校验的文件扩展名类型列表。调用成功后返回支持的文件类型列表，用于判断哪些文件类型可进行DLP权限管理。使用callback异步回调。
+
+该接口用于获取支持DLP权限管理的文件类型列表，以便决定当前文件是否可以进行加密。
 
 **起始版本：** 10
 
@@ -61,7 +65,7 @@ function getDLPSupportedFileTypes(callback: AsyncCallback<Array<string>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

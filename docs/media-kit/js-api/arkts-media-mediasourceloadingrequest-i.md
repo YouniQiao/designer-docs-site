@@ -1,6 +1,7 @@
 # MediaSourceLoadingRequest
 
-The MediaSourceLoadingRequest class defines a loading request object. Applications use this object to obtain the location of the requested resource and to interact with the player for data exchange.
+The MediaSourceLoadingRequest class defines a loading request object. Applications use this object to obtain the
+location of the requested resource and to interact with the player for data exchange.
 
 **Since:** 18
 
@@ -15,14 +16,16 @@ import { media } from '@kit.MediaKit';
 ## finishLoading
 
 ```TypeScript
-finishLoading(uuid: long, state: LoadingRequestError): void
+finishLoading(uuid: number, state: LoadingRequestError): void
 ```
 
-Notifies the player of the current request status. After pushing all the data for a single resource, the application should send the **LOADING_ERROR_SUCCESS** state to notify the player that the resource push is complete.
+Notifies the player of the current request status. After pushing all the data for a single resource, the
+application should send the **LOADING_ERROR_SUCCESS** state to notify the player that the resource push is
+complete.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -30,7 +33,7 @@ Notifies the player of the current request status. After pushing all the data fo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uuid | long | Yes | ID for the resource handle. The source is  [SourceOpenCallback](arkts-media-sourceopencallback-t.md#SourceOpenCallback). |
+| uuid | number | Yes | ID for the resource handle. The source is[SourceOpenCallback](arkts-media-sourceopencallback-t.md). |
 | state | LoadingRequestError | Yes | Request status. |
 
 ## respondData
@@ -43,7 +46,7 @@ Sends data to the player.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -51,53 +54,28 @@ Sends data to the player.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uuid | number | Yes | ID for the resource handle. The source is  [SourceOpenCallback](arkts-media-sourceopencallback-t.md#SourceOpenCallback). |
-| offset | number | Yes | Offset of the current media data relative to the start of the resource. The value  cannot be less than 0. |
-| buffer | ArrayBuffer | Yes | Media data sent to the player. Note: Do not transmit irrelevant data, as  it can affect normal data parsing and playback. |
+| uuid | number | Yes | ID for the resource handle. The source is[SourceOpenCallback](arkts-media-sourceopencallback-t.md). |
+| offset | number | Yes | Offset of the current media data relative to the start of the resource. The valuecannot be less than 0. |
+| buffer | ArrayBuffer | Yes | Media data sent to the player.<br>**Note**: Do not transmit irrelevant data, asit can affect normal data parsing and playback. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | Number of bytes received by the server.  - A return value less than 0 indicates failure.  - A return value of -2 indicates that the player no longer needs the current data, and the client should stop  the current read process.  - A return value of -3 indicates that the player's buffer is full, and the client should wait for the next read. |
-
-## respondData
-
-```TypeScript
-respondData(uuid: long, offset: long, buffer: ArrayBuffer): int | undefined
-```
-
-The interface for application used to send requested data to AVPlayer.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| uuid | long | Yes | ID for the resource handle. |
-| offset | long | Yes | Offset of the current media data relative to the start of the resource. |
-| buffer | ArrayBuffer | Yes | Media data sent to the player. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| int | - accept bytes for current read. The value less than zero means failed.  -2, means player need current data any more, the client should stop current read process.  -3, means player buffer is full, the client should wait for next read. |
+| number | Number of bytes received by the server.<br>- A return value less than 0 indicates failure.<br>- A return value of -2 indicates that the player no longer needs the current data, and the client should stopthe current read process.<br>- A return value of -3 indicates that the player's buffer is full, and the client should wait for the next read. |
 
 ## respondHeader
 
 ```TypeScript
-respondHeader(uuid: long, header?: Record<string, string>, redirectUrl?: string): void
+respondHeader(uuid: number, header?: Record<string, string>, redirectUrl?: string): void
 ```
 
-Sends response header information to the player. This API must be called before the first call to [respondData]media.MediaSourceLoadingRequest.respondData(uuid: number, offset: number, buffer: ArrayBuffer).
+Sends response header information to the player. This API must be called before the first call to
+[respondData](arkts-media-mediasourceloadingrequest-i.md#responddata-1).
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -105,9 +83,9 @@ Sends response header information to the player. This API must be called before 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uuid | long | Yes | ID for the resource handle. The source is  [SourceOpenCallback](arkts-media-sourceopencallback-t.md#SourceOpenCallback). |
-| header | Record&lt;string, string> | No |  |
-| redirectUrl | string | No |  |
+| uuid | number | Yes | ID for the resource handle. The source is[SourceOpenCallback](arkts-media-sourceopencallback-t.md). |
+| header | Record&lt;string, string&gt; | No | Header information in the HTTP response. The application canintersect the header fields with the fields supported by the underlying layer for parsing or directly pass inall corresponding header information.<br> - The following fields need to be parsed by the underlying player:Transfer-Encoding, Location, Content-Type, Content-Range, Content-Encode, Accept-Ranges, and content-length. |
+| redirectUrl | string | No | Redirect URL in the HTTP response. |
 
 ## header
 
@@ -115,13 +93,14 @@ Sends response header information to the player. This API must be called before 
 header?: Record<string, string>
 ```
 
-HTTP request header. If the header exists, the application should set the header information in the HTTP request when downloading data.
+HTTP request header. If the header exists, the application should set the header information in the HTTP request
+when downloading data.
 
 **Type:** Record<string, string>
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -137,7 +116,7 @@ Resource URL, which is the path to the resource that the application needs to op
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

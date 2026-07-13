@@ -9,7 +9,7 @@ Provides the information contained in **RouterPageInfo**, returned by the system
 ## Modules to Import
 
 ```TypeScript
-import { uiObserver } from '@ohos.arkui.observer';
+import { uiObserver } from '@kit.ArkUI';
 ```
 
 ## context
@@ -36,7 +36,8 @@ Context of the router page that invokes the lifecycle callback.
 index: number
 ```
 
-Position of the router page that invokes the lifecycle callback, in the navigation stack. The value must be greater than or equal to 0.
+Position of the router page that invokes the lifecycle callback, in the navigation stack.
+The value must be greater than or equal to 0.
 
 **Type:** number
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
 ## changeAppCloudSwitch
@@ -64,7 +64,8 @@ cloudSyncManager.changeAppCloudSwitch(accountId, bundleName, true).then(() => {
 function changeAppCloudSwitch(accountId: string, bundleName: string, status: boolean, callback: AsyncCallback<void>): void
 ```
 
-Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return the result.
+Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

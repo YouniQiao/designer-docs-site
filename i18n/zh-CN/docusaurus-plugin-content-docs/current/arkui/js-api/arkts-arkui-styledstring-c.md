@@ -55,7 +55,7 @@ equals(other: StyledString): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 两个属性字符串是否相等。<br/>true表示相等，false表示不相等。<br/>**说明：** <br/>当属性字符串的文本及样式均一致，视为相等。<br/>不比较[GestureStyle](arkts-arkui-gesturestyle-c.md#gesturestyle)，当属性字符串配置了不同事件，文本和其他样式相同时，亦视为相等。<br/>当比较[CustomSpan](arkts-arkui-customspan-c.md#customspan)或[LeadingMarginSpan](arkts-arkui-leadingmarginspan-c.md#leadingmarginspan)时，比较的是地址，地址相等，视为相等。 |
+| boolean | 两个属性字符串是否相等。<br/>true表示相等，false表示不相等。<br/>**说明：** <br/>当属性字符串的文本及样式均一致，视为相等。<br/>不比较[GestureStyle](arkts-arkui-gesturestyle-c.md)，当属性字符串配置了不同事件，文本和其他样式相同时，亦视为相等。<br/>当比较[CustomSpan](arkts-arkui-customspan-c.md)或[LeadingMarginSpan](arkts-arkui-leadingmarginspan-c.md)时，比较的是地址，地址相等，视为相等。 |
 
 ## fromHtml
 
@@ -63,7 +63,49 @@ equals(other: StyledString): boolean
 static fromHtml(html: string): Promise<StyledString>
 ```
 
-将HTML格式字符串转换成属性字符串，当前支持转换的HTML标签范围：\<p>、\<span>、\<img>、\ 、\<strong>、\<b>、\<a>、\<i>、\<em>、\<s>、\<u>、\<del>、\<sup>、\<sub>、\<cite>、\<dfn>、\<small>、\<h1>、\<h2>、\<h3>、\<h4>、\<h5 >、\<h6>。支持将标签中的style属性样式转换成对应的属性字符串样式。 使用方法参考 [示例12（fromHtml和toHtml互相转换）] (../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换) 和[示例18（fromHtml转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例18fromhtml转换)。 | 标签名称 | 说明 | | ------------- | ---------------------------- | | \<p\> | 段落，分隔文本段落。 | | \<span\> | 行内文本，支持样式设置。 | | \<img\> | 插入图片。 | | \<strong\> | 加粗文本。 | | &lt;br&gt;<sup>20+</sup> | 换行。 | | \<b\><sup>20+</sup> | 加粗文本。 | | \<a\><sup>20+</sup> | 超链接。 | | \<i\><sup>20+</sup> | 斜体文本。 | | \<em\><sup>20+</sup> | 斜体文本。 | | \<s\><sup>20+</sup> | 删除线（中划线）。 | | \<u\><sup>20+</sup> | 下划线。 | | \<del\><sup>20+</sup> | 删除线（中划线）。 | | \<sup\><sup>20+</sup> | 上标文本。 | | \<sub\><sup>20+</sup> | 下标文本。 | | \<cite\> | 斜体文本。 | \<dfn\> | 斜体文本。 | \<small\> | 缩小字号标签。字号缩放为父容器字号属性的0.8倍，支持嵌套叠加。 | \<h1\> | 一级标题。 | \<h2\> | 二级标题。 | \<h3\> | 三级标题。 | \<h4\> | 四级标题。 | \<h5\> | 五级标题。 | \<h6\> | 六级标题。
+将HTML格式字符串转换成属性字符串，当前支持转换的HTML标签范围：\<p>、\<span>、\<img>、\
+
+、\<strong>、\<b>、\<a>、\<i>、\<em>、\<s>、\<u>、\<del>、\<sup>、\<sub>、\<cite>、\<dfn>、\<small>、\<h1>、\<h2>、\<h3>、\<h4>、\<h5
+>、\<h6>。支持将标签中的style属性样式转换成对应的属性字符串样式。
+
+使用方法参考
+[示例12（fromHtml和toHtml互相转换）]
+(../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)
+和[示例18（fromHtml转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例18fromhtml转换)。
+
+| 标签名称 | 说明 |
+| ------------- | ---------------------------- |
+| \<p\> | 段落，分隔文本段落。 |
+| \<span\> | 行内文本，支持样式设置。 |
+| \<img\> | 插入图片。 |
+| \<strong\> | 加粗文本。 |
+| &lt;br&gt;<sup>20+</sup> | 换行。 |
+| \<b\><sup>20+</sup> | 加粗文本。 |
+| \<a\><sup>20+</sup> | 超链接。 |
+| \<i\><sup>20+</sup> | 斜体文本。 |
+| \<em\><sup>20+</sup> | 斜体文本。 |
+| \<s\><sup>20+</sup> | 删除线（中划线）。 |
+| \<u\><sup>20+</sup> | 下划线。 |
+| \<del\><sup>20+</sup> | 删除线（中划线）。 |
+| \<sup\><sup>20+</sup> | 上标文本。 |
+| \<sub\><sup>20+</sup> | 下标文本。 |
+| \<cite\> | 斜体文本。
+
+| \<dfn\> | 斜体文本。
+
+| \<small\> | 缩小字号标签。字号缩放为父容器字号属性的0.8倍，支持嵌套叠加。
+
+| \<h1\> | 一级标题。
+
+| \<h2\> | 二级标题。
+
+| \<h3\> | 三级标题。
+
+| \<h4\> | 四级标题。
+
+| \<h5\> | 五级标题。
+
+| \<h6\> | 六级标题。
 
 **起始版本：** 12
 
@@ -89,7 +131,7 @@ static fromHtml(html: string): Promise<StyledString>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [170001](../errorcode-styled-string.md#170001-转换错误) | Convert Error. |
 
 ## getString
@@ -112,7 +154,7 @@ getString(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 属性字符串文本内容。<br/>**说明：** <br/>当属性字符串中包含图片或[CustomSpan](arkts-arkui-customspan-c.md#customspan)时，其返回的结果用空格表示。 |
+| string | 属性字符串文本内容。<br/>**说明：** <br/>当属性字符串中包含图片或[CustomSpan](arkts-arkui-customspan-c.md)时，其返回的结果用空格表示。 |
 
 ## getStyles
 
@@ -120,7 +162,9 @@ getString(): string
 getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<SpanStyle>
 ```
 
-获取指定范围属性字符串的样式集合。不能超出属性字符串的长度。 该接口仅返回开发者设置的样式。
+获取指定范围属性字符串的样式集合。不能超出属性字符串的长度。
+
+该接口仅返回开发者设置的样式。
 
 **起始版本：** 12
 
@@ -136,7 +180,7 @@ getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<Spa
 | --- | --- | --- | --- |
 | start | number | 是 | 指定范围属性字符串的下标。 |
 | length | number | 是 | 指定范围属性字符串的长度。 |
-| styledKey | StyledStringKey | 否 | 指定范围属性字符串样式的枚举值。<br/>**说明：** <br/>当不传入该参数时默认获取开发者设置的[StyledStringKey](arkts-arkui-styledstringkey-e.md#styledstringkey)所有枚举值样式。 |
+| styledKey | StyledStringKey | 否 | 指定范围属性字符串样式的枚举值。<br/>**说明：** <br/>当不传入该参数时默认获取开发者设置的[StyledStringKey](arkts-arkui-styledstringkey-e.md)所有枚举值样式。 |
 
 **返回值：**
 
@@ -148,7 +192,7 @@ getStyles(start: number, length: number, styledKey?: StyledStringKey): Array<Spa
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 ## subStyledString
 
@@ -183,7 +227,7 @@ subStyledString(start: number, length?: number): StyledString
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 ## toHtml
 
@@ -191,7 +235,12 @@ subStyledString(start: number, length?: number): StyledString
 static toHtml(styledString: StyledString): string
 ```
 
-将属性字符串转换成HTML格式字符串。支持转换的属性字符串[StyledStringKey](arkts-arkui-styledstringkey-e.md#styledstringkey)包括：StyledStringKey.FONT、 StyledStringKey.DECORATION、StyledStringKey.LETTER_SPACING、StyledStringKey.TEXT_SHADOW、StyledStringKey.LINE_HEIGHT、 StyledStringKey.IMAGE。 使用方法参考 [示例12（fromHtml和toHtml互相转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)。
+将属性字符串转换成HTML格式字符串。支持转换的属性字符串[StyledStringKey](arkts-arkui-styledstringkey-e.md)包括：StyledStringKey.FONT、
+StyledStringKey.DECORATION、StyledStringKey.LETTER_SPACING、StyledStringKey.TEXT_SHADOW、StyledStringKey.LINE_HEIGHT、
+StyledStringKey.IMAGE。
+
+使用方法参考
+[示例12（fromHtml和toHtml互相转换）](../../../../reference/apis-arkui/arkui-ts/ts-universal-styled-string.md#示例12fromhtml和tohtml互相转换)。
 
 **起始版本：** 14
 
@@ -217,7 +266,7 @@ static toHtml(styledString: StyledString): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 ## length
 
@@ -225,7 +274,11 @@ static toHtml(styledString: StyledString): string
 readonly length: number
 ```
 
-属性字符串字符的长度。 **说明：** 属性字符串中的ImageAttachment和CustomSpan长度都计为1。
+属性字符串字符的长度。
+
+**说明：**
+
+属性字符串中的ImageAttachment和CustomSpan长度都计为1。
 
 **类型：** number
 

@@ -1,6 +1,28 @@
 # ChipOptions
 
-Defines the type and style parameters of the chip. > **NOTE** > > 1. When **suffixSymbol** is provided with an argument, **suffixIcon** and **allowClose** will not take effect. If > **suffixSymbol** is not provided, but **suffixIcon** is, **allowClose** still will not take effect. When neither > **suffixSymbol** nor **suffixIcon** is provided with arguments, **allowClose** determines whether the deletion icon > is displayed. > > 2. If **undefined** is assigned to **backgroundColor** or **activatedBackgroundColor**, the default background > color is used. If an invalid value is specified, the background color is transparent. > > 3. Default font colors for **prefixSymbol** and **suffixSymbol**: **normalFontColor**: > **[$r('sys.color.ohos_id_color_primary')]**; **activatedFontColor**: > **[$r('sys.color.ohos_id_color_text_primary_contrary')]**. The default value of **fontColor** is **16**. > > 4. The default value of **fillColor** is **$r('sys.color.ohos_id_color_secondary')** for **prefixIcon** and > **$r('sys.color.ohos_id_color_primary')** for **suffixIcon**. The color parsing of **fillColor** is the same as > that of the **Image** component. > > 5. The default value of **activatedFillColor** in **prefixIcon** and **suffixIcon** is > **$r('sys.color.ohos_id_color_text_primary_contrary')**. The color parsing of **activatedFillColor** is the same as > that of the **Image** component.
+Defines the type and style parameters of the chip.
+
+> **NOTE**
+>
+> 1. When **suffixSymbol** is provided with an argument, **suffixIcon** and **allowClose** will not take effect. If
+> **suffixSymbol** is not provided, but **suffixIcon** is, **allowClose** still will not take effect. When neither
+> **suffixSymbol** nor **suffixIcon** is provided with arguments, **allowClose** determines whether the deletion icon
+> is displayed.
+>
+> 2. If **undefined** is assigned to **backgroundColor** or **activatedBackgroundColor**, the default background
+> color is used. If an invalid value is specified, the background color is transparent.
+>
+> 3. Default font colors for **prefixSymbol** and **suffixSymbol**: **normalFontColor**:
+> **[$r('sys.color.ohos_id_color_primary')]**; **activatedFontColor**:
+> **[$r('sys.color.ohos_id_color_text_primary_contrary')]**. The default value of **fontColor** is **16**.
+>
+> 4. The default value of **fillColor** is **$r('sys.color.ohos_id_color_secondary')** for **prefixIcon** and
+> **$r('sys.color.ohos_id_color_primary')** for **suffixIcon**. The color parsing of **fillColor** is the same as
+> that of the **Image** component.
+>
+> 5. The default value of **activatedFillColor** in **prefixIcon** and **suffixIcon** is
+> **$r('sys.color.ohos_id_color_text_primary_contrary')**. The color parsing of **activatedFillColor** is the same as
+> that of the **Image** component.
 
 **Since:** 11
 
@@ -9,7 +31,7 @@ Defines the type and style parameters of the chip. > **NOTE** > > 1. When **suff
 ## Modules to Import
 
 ```TypeScript
-import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@ohos.arkui.advanced.Chip';
+import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@kit.ArkUI';
 ```
 
 ## accessibilityDescription
@@ -18,7 +40,15 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 accessibilityDescription?: ResourceStr
 ```
 
-Accessible description of the chip. You can provide comprehensive text explanations to help users understand the operation they are about to perform and its potential consequences, especially when these cannot be inferred from the component's attributes and accessibility text alone. If a component contains both text information and the accessible description, the text is announced first and then the accessible description, when the component is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessible description of the chip. You can provide comprehensive text explanations to help users understand the
+operation they are about to perform and its potential consequences, especially when these cannot be inferred from
+the component's attributes and accessibility text alone. If a component contains both text information and the
+accessible description, the text is announced first and then the accessible description, when the component is
+selected.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -36,7 +66,22 @@ Accessible description of the chip. You can provide comprehensive text explanati
 accessibilityLevel?: string
 ```
 
-Accessibility level of the chip. It determines whether the component can be recognized by accessibility services. The options are as follows: **"auto"**: It is treated as "yes" by the system. **"yes"**: The component can be recognized by accessibility services. **"no"**: The component cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
+Accessibility level of the chip. It determines whether the component can be recognized by accessibility services.
+
+The options are as follows:
+
+**"auto"**: It is treated as "yes" by the system.
+
+**"yes"**: The component can be recognized by accessibility services.
+
+**"no"**: The component cannot be recognized by accessibility services.
+
+**"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility
+services.
+
+Default value: **"auto"**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -56,7 +101,14 @@ Accessibility level of the chip. It determines whether the component can be reco
 accessibilitySelectedType?: AccessibilitySelectedType
 ```
 
-Type of selected state for the chip. Default value: If the **activated** property is set but **accessibilitySelectedType** is not specified, the default type is **CHECKED**. If the **activated** property is not set, the default type is **CLICKED**. If the value is **undefined**, the default value is used.
+Type of selected state for the chip.
+
+Default value:
+
+If the **activated** property is set but **accessibilitySelectedType** is not specified, the default type is
+**CHECKED**. If the **activated** property is not set, the default type is **CLICKED**.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** AccessibilitySelectedType
 
@@ -74,7 +126,15 @@ Type of selected state for the chip. Default value: If the **activated** propert
 activated?: boolean
 ```
 
-Whether the chip is activated. Default value: **false** **true**: The chip is activated. **false**: The chip is not activated. If the value is **undefined**, the default value is used.
+Whether the chip is activated.
+
+Default value: **false**
+
+**true**: The chip is activated.
+
+**false**: The chip is not activated.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** boolean
 
@@ -92,7 +152,11 @@ Whether the chip is activated. Default value: **false** **true**: The chip is ac
 activatedBackgroundColor?: ResourceColor
 ```
 
-Background color of the chip when it is activated. Default value: **$r('sys.color.ohos_id_color_emphasize')** If the value is **undefined**, the default value is used.
+Background color of the chip when it is activated.
+
+Default value: **$r('sys.color.ohos_id_color_emphasize')**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -110,7 +174,9 @@ Background color of the chip when it is activated. Default value: **$r('sys.colo
 activatedBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component which is activated. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component which is activated. Different materials have different effects, which
+can influence
+the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 
@@ -128,7 +194,13 @@ Set system-styled materials for the component which is activated. Different mate
 allowClose?: boolean
 ```
 
-Whether to display the close icon. Default value: **true** The value **true** means to show the delete icon, and **false** means the opposite. If the value is **undefined**, the default value is used.
+Whether to display the close icon.
+
+Default value: **true**
+
+The value **true** means to show the delete icon, and **false** means the opposite.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** boolean
 
@@ -146,7 +218,11 @@ Whether to display the close icon. Default value: **true** The value **true** me
 backgroundColor?: ResourceColor
 ```
 
-Chip background color. Default value: **$r('sys.color.ohos_id_color_button_normal')** If the value is **undefined**, the default value is used.
+Chip background color.
+
+Default value: **$r('sys.color.ohos_id_color_button_normal')**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceColor
 
@@ -164,7 +240,8 @@ Chip background color. Default value: **$r('sys.color.ohos_id_color_button_norma
 backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the component.
+Set system-styled materials for the component. Different materials have different effects, which can influence
+the backgroundColor, border, shadow, and other visual attributes of the component.
 
 **Type:** uiMaterial.Material
 
@@ -182,7 +259,11 @@ Set system-styled materials for the component. Different materials have differen
 borderRadius?: Dimension
 ```
 
-Radius of the rounded corner of the chip background. Percentage is not supported. Default value: **$r('sys.float.ohos_id_corner_radius_button')** If the value is **undefined**, the default value is used.
+Radius of the rounded corner of the chip background. Percentage is not supported.
+
+Default value: **$r('sys.float.ohos_id_corner_radius_button')**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** Dimension
 
@@ -200,7 +281,9 @@ Radius of the rounded corner of the chip background. Percentage is not supported
 closeOptions?: CloseOptions
 ```
 
-Accessibility settings of the default close icon. If the value is **undefined**, the default value is used.
+Accessibility settings of the default close icon.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** CloseOptions
 
@@ -218,7 +301,11 @@ Accessibility settings of the default close icon. If the value is **undefined**,
 direction?: Direction
 ```
 
-Layout direction. Default value: **Direction.Auto** If the value is **undefined**, the default value is used.
+Layout direction.
+
+Default value: **Direction.Auto**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** Direction
 
@@ -236,7 +323,15 @@ Layout direction. Default value: **Direction.Auto** If the value is **undefined*
 enabled?: boolean
 ```
 
-Whether the chip can be selected. Default value: **true** **true**: The chip can be selected. **false**: The chip cannot be selected. If the value is **undefined**, the default value is used.
+Whether the chip can be selected.
+
+Default value: **true**
+
+**true**: The chip can be selected.
+
+**false**: The chip cannot be selected.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** boolean
 
@@ -254,7 +349,19 @@ Whether the chip can be selected. Default value: **true** **true**: The chip can
 fontSize?: Dimension
 ```
 
-Uniform font size for both text and icons in the chip. Percentage values are not supported. The priority of **fontSize** is lower than the **fontSize** property in **prefixSymbol**, **label**, **suffixSymbol**, and **closeOptions**. Default value: - When **size** is **ChipSize.SMALL**: **$r('sys.float.chip_small_font_size')** for text and **$r('sys.float.chip_small_icon_size')** for icons. - Other cases: **$r('sys.float.chip_normal_font_size')** for text and **$r('sys.float.chip_normal_icon_size')** for icons. If the value is **undefined**, the default value is used.
+Uniform font size for both text and icons in the chip. Percentage values are not supported.
+
+The priority of **fontSize** is lower than the **fontSize** property in **prefixSymbol**, **label**,
+**suffixSymbol**, and **closeOptions**.
+
+Default value:
+
+- When **size** is **ChipSize.SMALL**: **$r('sys.float.chip_small_font_size')** for text and
+**$r('sys.float.chip_small_icon_size')** for icons.
+- Other cases: **$r('sys.float.chip_normal_font_size')** for text and **$r('sys.float.chip_normal_icon_size')** for
+icons.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** Dimension
 
@@ -290,7 +397,8 @@ Text of the chip.
 maxFontScale?: number | Resource
 ```
 
-Maximum font scale factor for the text and icon of the chip. Value range: [1, +∞).
+Maximum font scale factor for the text and icon of the chip.
+Value range: [1, +∞).
 
 **Type:** number | Resource
 
@@ -308,7 +416,8 @@ Maximum font scale factor for the text and icon of the chip. Value range: [1, +�
 minFontScale?: number | Resource
 ```
 
-Minimum font scale factor for the text and icon of the chip. Value range: [0, 1].
+Minimum font scale factor for the text and icon of the chip.
+Value range: [0, 1].
 
 **Type:** number | Resource
 
@@ -326,7 +435,9 @@ Minimum font scale factor for the text and icon of the chip. Value range: [0, 1]
 onClicked?: Callback<void>
 ```
 
-Chip click event. If the value is **undefined**, the chip cannot be clicked.
+Chip click event.
+
+If the value is **undefined**, the chip cannot be clicked.
 
 **Type:** Callback<void>
 
@@ -344,7 +455,9 @@ Chip click event. If the value is **undefined**, the chip cannot be clicked.
 onClose?: () => void
 ```
 
-Event triggered when the close icon is clicked. If the value is **undefined**, clicking the close icon will not trigger any event.
+Event triggered when the close icon is clicked.
+
+If the value is **undefined**, clicking the close icon will not trigger any event.
 
 **Type:** () => void
 
@@ -362,7 +475,28 @@ Event triggered when the close icon is clicked. If the value is **undefined**, c
 padding?: LocalizedPadding
 ```
 
-Padding of the chip. Default value: - When **size** is **ChipSize.SMALL** and **activated** is **true**: **{ start: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**. - When **size** is **ChipSize.SMALL** and **activated** is **false**: **{ start: LengthMetrics.resource('sys.float.chip_small_text_padding'), end: LengthMetrics.resource('sys.float.chip_small_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**. - When **size** is not **ChipSize.SMALL** and **activated** is **true**: **{ start: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**. - When **size** is not **ChipSize.SMALL** and **activated** is **false**: **{ start: LengthMetrics.resource('sys.float.chip_normal_text_padding'), end: LengthMetrics.resource('sys.float.chip_normal_text_padding'), top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**. If the value is **undefined**, the default value is used.
+Padding of the chip.
+
+Default value:
+
+- When **size** is **ChipSize.SMALL** and **activated** is **true**:
+**{ start: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'),
+end: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'),
+top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**.
+- When **size** is **ChipSize.SMALL** and **activated** is **false**:
+**{ start: LengthMetrics.resource('sys.float.chip_small_text_padding'),
+end: LengthMetrics.resource('sys.float.chip_small_text_padding'),
+top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**.
+- When **size** is not **ChipSize.SMALL** and **activated** is **true**:
+**{ start: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'),
+end: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'),
+top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**.
+- When **size** is not **ChipSize.SMALL** and **activated** is **false**:
+**{ start: LengthMetrics.resource('sys.float.chip_normal_text_padding'),
+end: LengthMetrics.resource('sys.float.chip_normal_text_padding'),
+top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}**.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** LocalizedPadding
 
@@ -380,7 +514,14 @@ Padding of the chip. Default value: - When **size** is **ChipSize.SMALL** and **
 prefixIcon?: PrefixIconOptions
 ```
 
-Prefix icon of the chip. Default value: The prefix icon is not displayed. If the value is **undefined**, the default value is used. If both **prefixIcon** and **prefixSymbol** are set, the effect specified by **prefixSymbol** will be displayed, and **prefixIcon** will be ignored.
+Prefix icon of the chip.
+
+Default value: The prefix icon is not displayed.
+
+If the value is **undefined**, the default value is used.
+
+If both **prefixIcon** and **prefixSymbol** are set, the effect specified by **prefixSymbol** will be displayed,
+and **prefixIcon** will be ignored.
 
 **Type:** PrefixIconOptions
 
@@ -398,7 +539,14 @@ Prefix icon of the chip. Default value: The prefix icon is not displayed. If the
 prefixSymbol?: ChipSymbolGlyphOptions
 ```
 
-Symbol-type prefix icon of the chip. Default value: The prefix icon is not displayed. If the value is **undefined**, the default value is used. If both **prefixIcon** and **prefixSymbol** are set, the effect specified by **prefixSymbol** will be displayed, and **prefixIcon** will be ignored.
+Symbol-type prefix icon of the chip.
+
+Default value: The prefix icon is not displayed.
+
+If the value is **undefined**, the default value is used.
+
+If both **prefixIcon** and **prefixSymbol** are set, the effect specified by **prefixSymbol** will be displayed,
+and **prefixIcon** will be ignored.
 
 **Type:** ChipSymbolGlyphOptions
 
@@ -416,7 +564,15 @@ Symbol-type prefix icon of the chip. Default value: The prefix icon is not displ
 size?: ChipSize | SizeOptions
 ```
 
-Chip size. Default value: **ChipSize.NORMAL** The SizeOptions type parameter does not support percentage values. If an invalid value is provided, the system will use the default value instead. Note: [Aging-friendly design implementation](../../../../ui/arkui-support-for-aging-adaptation.md) does not take effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
+Chip size.
+
+Default value: **ChipSize.NORMAL**
+
+The SizeOptions type parameter does not support percentage values. If an invalid value is provided, the system will
+use the default value instead.
+
+Note: [Aging-friendly design implementation](../../../../ui/arkui-support-for-aging-adaptation.md) does not take
+effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
 
 **Type:** ChipSize | SizeOptions
 
@@ -434,7 +590,14 @@ Chip size. Default value: **ChipSize.NORMAL** The SizeOptions type parameter doe
 suffixIcon?: SuffixIconOptions
 ```
 
-Suffix icon of the chip. Default value: The suffix icon is not displayed. If the value is **undefined**, the default value is used. If both **suffixIcon** and **suffixSymbol** are set, the effect specified by **suffixSymbol** will be displayed, and **suffixIcon** will be ignored.
+Suffix icon of the chip.
+
+Default value: The suffix icon is not displayed.
+
+If the value is **undefined**, the default value is used.
+
+If both **suffixIcon** and **suffixSymbol** are set, the effect specified by **suffixSymbol** will be displayed,
+and **suffixIcon** will be ignored.
 
 **Type:** SuffixIconOptions
 
@@ -452,7 +615,14 @@ Suffix icon of the chip. Default value: The suffix icon is not displayed. If the
 suffixSymbol?: ChipSymbolGlyphOptions
 ```
 
-Symbol-type suffix icon of the chip. Default value: The suffix icon is not displayed. If the value is **undefined**, the default value is used. If both **suffixIcon** and **suffixSymbol** are set, the effect specified by **suffixSymbol** will be displayed, and **suffixIcon** will be ignored.
+Symbol-type suffix icon of the chip.
+
+Default value: The suffix icon is not displayed.
+
+If the value is **undefined**, the default value is used.
+
+If both **suffixIcon** and **suffixSymbol** are set, the effect specified by **suffixSymbol** will be displayed,
+and **suffixIcon** will be ignored.
 
 **Type:** ChipSymbolGlyphOptions
 
@@ -470,7 +640,11 @@ Symbol-type suffix icon of the chip. Default value: The suffix icon is not displ
 suffixSymbolOptions?: ChipSuffixSymbolGlyphOptions
 ```
 
-Accessibility settings of the symbol-type suffix icon. Default value: The suffix icon is not displayed. If the value is **undefined**, the default value is used.
+Accessibility settings of the symbol-type suffix icon.
+
+Default value: The suffix icon is not displayed.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ChipSuffixSymbolGlyphOptions
 

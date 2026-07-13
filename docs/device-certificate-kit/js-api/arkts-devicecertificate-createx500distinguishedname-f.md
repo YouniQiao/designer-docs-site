@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## createX500DistinguishedName
@@ -12,7 +12,8 @@ import { cert } from '@ohos.security.cert';
 function createX500DistinguishedName(nameStr: string): Promise<X500DistinguishedName>
 ```
 
-Creates an **X500DistinguishedName** object with a name in the form of a string. This API uses a promise to return the result.
+Creates an **X500DistinguishedName** object with a name in the form of a string. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -24,7 +25,7 @@ Creates an **X500DistinguishedName** object with a name in the form of a string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| nameStr | string | Yes | Name string format defined by X.509. The name is separated by slashes (/). Eachdistinguished name is in the format of **attribute=value**. Common attributes include **CN** (common name),**O** (organization name), **OU** (organization unit), **C** (country/region), **ST** (province/state), and**L** (city/district). For example, **\/CN=example.com/O=Example/C=CN**. |
+| nameStr | string | Yes | Name in a slash-separated format, each relative distinguished name is in the format of**attribute=value**. Common attributes include **CN** (common name), **O** (organization name),**OU** (organization unit), **C** (country/region), **ST** (province/state), and **L** (city/district).For example, **\/CN=example.com/O=Example/C=CN**. |
 
 **Return value:**
 
@@ -87,7 +88,8 @@ async function createX500DistinguishedName() {
 function createX500DistinguishedName(nameDer: Uint8Array): Promise<X500DistinguishedName>
 ```
 
-Creates an **X500DistinguishedName** object with a name in DER format. This API uses a promise to return the result.
+Creates an **X500DistinguishedName** object with a name in DER format. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -99,7 +101,7 @@ Creates an **X500DistinguishedName** object with a name in DER format. This API 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| nameDer | Uint8Array | Yes | Name of the Uint8Array type in DER format defined by X.509. |
+| nameDer | Uint8Array | Yes | X.500 Distinguished Name in DER format. |
 
 **Return value:**
 

@@ -34,7 +34,9 @@ Gets the coordinates of the top-left corner of the current component based on it
 displayX: number
 ```
 
-X-coordinate relative to the upper left corner of the screen, in vp. Value range: [0, +∞)
+X-coordinate relative to the upper left corner of the screen, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -52,7 +54,9 @@ X-coordinate relative to the upper left corner of the screen, in vp. Value range
 displayY: number
 ```
 
-Y-coordinate relative to the upper left corner of the screen, in vp. Value range: [0, +∞)
+Y-coordinate relative to the upper left corner of the screen, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -70,7 +74,9 @@ Y-coordinate relative to the upper left corner of the screen, in vp. Value range
 globalDisplayX?: number
 ```
 
-X-coordinate relative to the upper left corner of the global display, in vp. Value range: [0, +∞)
+X-coordinate relative to the upper left corner of the global display, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -88,7 +94,9 @@ X-coordinate relative to the upper left corner of the global display, in vp. Val
 globalDisplayY?: number
 ```
 
-Y-coordinate relative to the upper left corner of the global display, in vp. Value range: [0, +∞)
+Y-coordinate relative to the upper left corner of the global display, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -106,7 +114,9 @@ Y-coordinate relative to the upper left corner of the global display, in vp. Val
 globalX: number
 ```
 
-X-coordinate relative to the upper left corner of the application window, in vp. Value range: [0, +∞)
+X-coordinate relative to the upper left corner of the application window, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -122,7 +132,9 @@ X-coordinate relative to the upper left corner of the application window, in vp.
 globalY: number
 ```
 
-Y-coordinate relative to the upper left corner of the application window, in vp. Value range: [0, +∞)
+Y-coordinate relative to the upper left corner of the application window, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -156,7 +168,15 @@ Whether the event is triggered by a left-hand or right-hand tap.
 id: number
 ```
 
-Index of the finger, determined by the number of fingers pressed. The first pressed finger is assigned 0, with the index incrementing by one for each subsequent finger. **NOTE** Indexes for other input sources (mouse: 1001, stylus: 102, mouse wheel: 0, two-finger trackpad slide: 0) are also converted to finger indexes. Value range: [0, 9)
+Index of the finger, determined by the number of fingers pressed. The first pressed finger is assigned 0, with the
+index incrementing by one for each subsequent finger.
+
+**NOTE**
+
+Indexes for other input sources (mouse: 1001, stylus: 102, mouse wheel: 0, two-finger trackpad slide: 0) are also
+converted to finger indexes.
+
+Value range: [0, 9)
 
 **Type:** number
 
@@ -172,7 +192,9 @@ Index of the finger, determined by the number of fingers pressed. The first pres
 localX: number
 ```
 
-X-coordinate relative to the upper left corner of the current component's original area, in vp. Value range: [0, +∞)
+X-coordinate relative to the upper left corner of the current component's original area, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 
@@ -188,7 +210,9 @@ X-coordinate relative to the upper left corner of the current component's origin
 localY: number
 ```
 
-Y-coordinate relative to the upper left corner of the current component's original area, in vp. Value range: [0, +∞)
+Y-coordinate relative to the upper left corner of the current component's original area, in vp.
+
+Value range: [0, +∞)
 
 **Type:** number
 

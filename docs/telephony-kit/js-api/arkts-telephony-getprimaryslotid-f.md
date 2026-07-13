@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { radio } from '@ohos.telephony.radio';
+import { radio } from '@kit.TelephonyKit';
 ```
 
 ## getPrimarySlotId
@@ -12,7 +12,9 @@ import { radio } from '@ohos.telephony.radio';
 function getPrimarySlotId(callback: AsyncCallback<number>): void
 ```
 
-Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted. The primary card is the SIM card inserted in the card slot that uses data services by default.
+Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted.
+
+The primary card is the SIM card inserted in the card slot that uses data services by default.
 
 **Since:** 7
 
@@ -56,7 +58,9 @@ radio.getPrimarySlotId((err: BusinessError, data: number) => {
 function getPrimarySlotId(): Promise<number>
 ```
 
-Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted. The primary card is the SIM card inserted in the card slot that uses data services by default.
+Obtains the index number of the card slot where the primary card is located if multiple SIM cards are inserted.
+
+The primary card is the SIM card inserted in the card slot that uses data services by default.
 
 **Since:** 7
 

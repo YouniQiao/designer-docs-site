@@ -9,7 +9,7 @@ Declare class TreeListenerV2
 ## Modules to Import
 
 ```TypeScript
-import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@ohos.arkui.advanced.TreeViewV2';
+import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@kit.ArkUI';
 ```
 
 ## offNodeAdd
@@ -128,7 +128,8 @@ Destroy node move callback event.
 onNodeAdd(callback: OnChangedCallback): void
 ```
 
-Node add event registration and processing. The event will not be destroyed after being processed.
+Node add event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 26.0.0
 
@@ -150,7 +151,8 @@ Node add event registration and processing. The event will not be destroyed afte
 onNodeClick(callback: OnChangedCallback): void
 ```
 
-Node click event registration and processing. The event will not be destroyed after being processed.
+Node click event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 26.0.0
 
@@ -172,7 +174,8 @@ Node click event registration and processing. The event will not be destroyed af
 onNodeDelete(callback: OnChangedCallback): void
 ```
 
-Node delete event registration and processing. The event will not be destroyed after being processed.
+Node delete event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 26.0.0
 
@@ -194,7 +197,8 @@ Node delete event registration and processing. The event will not be destroyed a
 onNodeModify(callback: OnChangedCallback): void
 ```
 
-Node modify event registration and processing. The event will not be destroyed after being processed.
+Node modify event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 26.0.0
 
@@ -216,7 +220,8 @@ Node modify event registration and processing. The event will not be destroyed a
 onNodeMove(callback: OnChangedCallback): void
 ```
 
-Node move event registration and processing. The event will not be destroyed after being processed.
+Node move event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 26.0.0
 
@@ -238,7 +243,8 @@ Node move event registration and processing. The event will not be destroyed aft
 onceNodeAdd(callback: OnChangedCallback): void
 ```
 
-Node add event registration and processing. After the event is processed once, it will be destroyed.
+Node add event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 26.0.0
 
@@ -260,7 +266,8 @@ Node add event registration and processing. After the event is processed once, i
 onceNodeClick(callback: OnChangedCallback): void
 ```
 
-Node click event registration and processing. After the event is processed once, it will be destroyed.
+Node click event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 26.0.0
 
@@ -282,7 +289,8 @@ Node click event registration and processing. After the event is processed once,
 onceNodeDelete(callback: OnChangedCallback): void
 ```
 
-Node delete event registration and processing. After the event is processed once, it will be destroyed.
+Node delete event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 26.0.0
 
@@ -304,7 +312,8 @@ Node delete event registration and processing. After the event is processed once
 onceNodeModify(callback: OnChangedCallback): void
 ```
 
-Node modify event registration and processing. After the event is processed once, it will be destroyed.
+Node modify event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 26.0.0
 
@@ -326,7 +335,8 @@ Node modify event registration and processing. After the event is processed once
 onceNodeMove(callback: OnChangedCallback): void
 ```
 
-Node move event registration and processing. After the event is processed once, it will be destroyed.
+Node move event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 26.0.0
 

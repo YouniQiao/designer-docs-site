@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { distributedBundleManager } from '@ohos.bundle.distributedBundleManager';
+import { distributedBundleManager } from '@kit.AbilityKit';
 ```
 
 ## getRemoteBundleVersionCode
@@ -12,7 +12,8 @@ import { distributedBundleManager } from '@ohos.bundle.distributedBundleManager'
 function getRemoteBundleVersionCode(deviceId: string, bundleName: string): Promise<number>
 ```
 
-Obtains the version code of the bundle on the remote device.
+Obtains the version information of an app with a specified bundle name on a specified remote device.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -28,14 +29,14 @@ Obtains the version code of the bundle on the remote device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| deviceId | string | Yes | Indicates the device ID. |
-| bundleName | string | Yes | Indicates the bundle name. |
+| deviceId | string | Yes | ID of the remote device. You can call getAvailableDeviceList to obtainall trusted device lists. The value is the networkId field in the trusted device information. |
+| bundleName | string | Yes | Bundle name of the app. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Returns the version code of the bundle on the remote device. |
+| Promise&lt;number&gt; | Promise object. If the call succeeds, the version information is returned;if the call fails, an error object is returned. |
 
 **Error codes:**
 

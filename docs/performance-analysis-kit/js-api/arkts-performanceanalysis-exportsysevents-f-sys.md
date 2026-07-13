@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiSysEvent } from '@ohos.hiSysEvent';
+import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## exportSysEvents
@@ -12,7 +12,8 @@ import { hiSysEvent } from '@ohos.hiSysEvent';
 function exportSysEvents(queryArg: QueryArg, rules: QueryRule[]): number
 ```
 
-Exports system events in batches and writes them as a file to the fixed directory of the application sandbox (that is, /data/storage/el2/base/cache/hiview/event/).
+Exports system events in batches and writes them as a file to the fixed directory of the application sandbox (that
+is, /data/storage/el2/base/cache/hiview/event/).
 
 **Since:** 10
 

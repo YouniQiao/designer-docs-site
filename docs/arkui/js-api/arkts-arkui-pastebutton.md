@@ -2,15 +2,21 @@
 
 Defines the interface for setting a paste button.
 
+
 ## PasteButton
 
 ```TypeScript
 PasteButton()
 ```
 
-Creates a paste button.
+Creates a **PasteButton** component with an icon, text, and background by default. After creation, the system
+triggers an authorization check when the button is tapped. Upon successful authorization, the application gains
+permission to read the current clipboard content.
+<br>**Description**</br>
+<ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints)
+to avoid authorization failures caused by incompliant styles.</li></ul>
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -24,9 +30,14 @@ Creates a paste button.
 PasteButton(options: PasteButtonOptions)
 ```
 
-Creates a paste button with the specified composition. If an attribute is not set, the corresponding element will not be drawn.
+Creates a paste button with the specified icon, text and button type. After creation, the system triggers an
+authorization check when the button is tapped. Upon successful authorization, the app gains temporary permission to
+read the clipboard.
+<br>**Description**</br>
+<ul><li>You may want to learn the [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints)
+to avoid authorization failures caused by incompliant styles.</li></ul>
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -38,7 +49,7 @@ Creates a paste button with the specified composition. If an attribute is not se
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | PasteButtonOptions | Yes | Indicates the options of the paste button. |
+| options | PasteButtonOptions | Yes | Configuration options for the paste button, used to set properties such asicon, text and button type.<br>You are advised to explicitly set at least one of **icon** or **text** to help users identify the button.<br>If neither **icon** nor **text** is specified, **options** does not take effect and the button is displayedin the default style.<br>{<br>icon: PasteIconStyle.LINES,<br>text:PasteDescription.PASTE,<br>buttonType: ButtonType.Capsule <br>}. |
 
 ## Summary
 

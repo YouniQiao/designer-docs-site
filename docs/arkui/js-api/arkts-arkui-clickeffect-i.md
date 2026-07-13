@@ -12,7 +12,14 @@ Defines the click effect.
 level: ClickEffectLevel
 ```
 
-Click feedback effect of the component. Default value: **ClickEffectLevel.LIGHT** **NOTE** When **level** is **undefined** or **null**, **ClickEffect** uses the effect corresponding to **ClickEffectLevel.LIGHT** with a scaling ratio as described below.
+Click feedback effect of the component.
+
+Default value: **ClickEffectLevel.LIGHT**
+
+**NOTE**
+
+When **level** is **undefined** or **null**, **ClickEffect** uses the effect corresponding to
+**ClickEffectLevel.LIGHT** with a scaling ratio as described below.
 
 **Type:** ClickEffectLevel
 
@@ -32,7 +39,19 @@ Click feedback effect of the component. Default value: **ClickEffectLevel.LIGHT*
 scale?: number
 ```
 
-Custom scaling ratio for fine-tuning the click feedback effect. **NOTE** The default value varies depending on the value of **level**: **ClickEffectLevel.LIGHT**: **0.90** **ClickEffectLevel.MIDDLE** or **ClickEffectLevel.HEAVY**: **0.95** **undefined** or **null** (treated as **ClickEffectLevel.LIGHT**): **0.90** When **scale** is set to **undefined** or **null**, the default scaling ratio for the current **level** is used.
+Custom scaling ratio for fine-tuning the click feedback effect.
+
+**NOTE**
+
+The default value varies depending on the value of **level**:
+
+**ClickEffectLevel.LIGHT**: **0.90**
+
+**ClickEffectLevel.MIDDLE** or **ClickEffectLevel.HEAVY**: **0.95**
+
+**undefined** or **null** (treated as **ClickEffectLevel.LIGHT**): **0.90**
+
+When **scale** is set to **undefined** or **null**, the default scaling ratio for the current **level** is used.
 
 **Type:** number
 

@@ -9,7 +9,7 @@ Defines the information provided when a specific gesture callback is triggered.
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## current
@@ -18,7 +18,8 @@ import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChange
 current: GestureRecognizer
 ```
 
-Gesture recognizer object. Detailed gesture information can be obtained from this object. However, avoid retaining this object locally as it may become invalid after the node is released.
+Gesture recognizer object. Detailed gesture information can be obtained from this object. However, avoid retaining
+this object locally as it may become invalid after the node is released.
 
 **Type:** GestureRecognizer
 
@@ -72,7 +73,8 @@ Gesture event object.
 node?: FrameNode
 ```
 
-Node that triggers the gesture. The default value is **null**, indicating that no specific node triggers the gesture.
+Node that triggers the gesture. The default value is **null**, indicating that no specific node triggers the
+gesture.
 
 **Type:** FrameNode
 

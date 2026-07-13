@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { font } from '@ohos.font';
+import { font } from '@kit.ArkUI';
 ```
 
 ## registerFont
@@ -12,7 +12,16 @@ import { font } from '@ohos.font';
 function registerFont(options: FontOptions): void
 ```
 
-Registers a custom font with the font manager. This API is asynchronous and does not support concurrent calls. > **NOTE** > > - Since API version 10, you can use the > [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Font](arkts-arkui-uicontext.md) object associated with > the current UI context.
+Registers a custom font with the font manager.
+
+This API is asynchronous and does not support concurrent calls.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Font](arkts-arkui-uicontext.md) object associated with
+> the current UI context.
 
 **Since:** 9
 

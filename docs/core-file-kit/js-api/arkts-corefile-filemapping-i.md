@@ -1,6 +1,7 @@
 # FileMapping
 
-File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous or asynchronous) to construct a FileMapping instance.
+File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous or
+asynchronous) to construct a FileMapping instance.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ File mapping object. Before invoking the FileMapping method, you need to use the
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## capacity
@@ -46,7 +47,8 @@ Obtains the capacity of the file mapping area.
 flip(): void
 ```
 
-Mode reversal. That is, the limit attribute is set to the current position, and then the current position is set to 0.
+Mode reversal. That is, the limit attribute is set to the current position, and then the current position is set
+to 0.
 
 **Since:** 26.0.0
 
@@ -124,7 +126,10 @@ Gets the current location of the file mapping area.
 msync(): Promise<void>
 ```
 
-Synchronizes the dirty page data in the entire file mapping area to the disk file and uses the promise asynchronous callback function. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
+Synchronizes the dirty page data in the entire file mapping area to the disk file and uses the promise
+asynchronous callback function.
+Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
+stored persistently.
 
 **Since:** 26.0.0
 
@@ -155,7 +160,10 @@ Synchronizes the dirty page data in the entire file mapping area to the disk fil
 msync(position: number, length: number): Promise<void>
 ```
 
-Synchronizes the dirty page data in the specified range of the file mapping area to the disk file and uses the promise asynchronous callback function. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
+Synchronizes the dirty page data in the specified range of the file mapping area to the disk file and uses the
+promise asynchronous callback function.
+Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
+stored persistently.
 
 **Since:** 26.0.0
 
@@ -193,7 +201,10 @@ Synchronizes the dirty page data in the specified range of the file mapping area
 msyncSync(): void
 ```
 
-Synchronizes the dirty page data of the entire file mapping area to the disk file by using the synchronization method. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
+Synchronizes the dirty page data of the entire file mapping area to the disk file by using the synchronization
+method.
+Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
+stored persistently.
 
 **Since:** 26.0.0
 
@@ -218,7 +229,10 @@ Synchronizes the dirty page data of the entire file mapping area to the disk fil
 msyncSync(position: number, length: number): void
 ```
 
-Synchronize the dirty page data in the specified range of the file mapping area to the disk file by using the synchronization method. Note: If the file is not stored on the local device, calling this API does not ensure that all changes are stored persistently.
+Synchronize the dirty page data in the specified range of the file mapping area to the disk file by using the
+synchronization method.
+Note: If the file is not stored on the local device, calling this API does not ensure that all changes are
+stored persistently.
 
 **Since:** 26.0.0
 
@@ -325,7 +339,8 @@ Reads data from the specified location without affecting the current location.
 remaining(): number
 ```
 
-Obtains the number of remaining bytes between the current position (position) and the upper bound (limit) of the readable and writable area.
+Obtains the number of remaining bytes between the current position (position) and the upper bound (limit) of the
+readable and writable area.
 
 **Since:** 26.0.0
 
@@ -353,7 +368,8 @@ Obtains the number of remaining bytes between the current position (position) an
 setLimit(limit: number): void
 ```
 
-Sets the upper bound of the readable and writable area of the file mapping area. The upper bound does not exceed the total capacity of the mapping area (0 <= limit <= capacity).
+Sets the upper bound of the readable and writable area of the file mapping area. The upper bound does not exceed
+the total capacity of the mapping area (0 <= limit <= capacity).
 
 **Since:** 26.0.0
 

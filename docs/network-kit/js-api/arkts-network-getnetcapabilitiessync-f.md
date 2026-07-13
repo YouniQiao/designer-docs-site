@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getNetCapabilitiesSync
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getNetCapabilitiesSync(netHandle: NetHandle): NetCapabilities
 ```
 
-Obtains {@link NetCapabilities} of a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains {@link NetCapabilities} of a {@link NetHandle} object.
+To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 11
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## getAbilityRunningInfos
@@ -12,7 +12,13 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function getAbilityRunningInfos(): Promise<Array<AbilityRunningInfo>>
 ```
 
-Obtains the UIAbility running information. This API uses a promise to return the result. > **NOTE** > > If the application has requested the ohos.permission.GET_RUNNING_INFO permission, it can obtain the UIAbility > running information of all applications; otherwise, it can obtain the UIAbility running information of the > current application.
+Obtains the UIAbility running information. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> If the application has requested the ohos.permission.GET_RUNNING_INFO permission, it can obtain the UIAbility
+> running information of all applications; otherwise, it can obtain the UIAbility running information of the
+> current application.
 
 **Since:** 14
 

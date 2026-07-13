@@ -9,7 +9,7 @@ Provides the flag attributes of this window.
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## active
@@ -18,7 +18,8 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 active?: boolean
 ```
 
-Whether the window is interacting with the user. The value **true** indicates that the window is interacting with the user, and **false** indicates the opposite.
+Whether the window is interacting with the user. The value **true** indicates that the window is interacting with
+the user, and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -34,7 +35,10 @@ Whether the window is interacting with the user. The value **true** indicates th
 actived?: boolean
 ```
 
-Whether the window is interacting with the user. The value **true** indicates that the window is interacting with the user, and **false** indicates the opposite. This API is deprecated since API version 11. You are advised to use the **active** API instead.
+Whether the window is interacting with the user. The value **true** indicates that the window is interacting with
+the user, and **false** indicates the opposite.
+
+This API is deprecated since API version 11. You are advised to use the **active** API instead.
 
 **Type:** boolean
 
@@ -68,7 +72,8 @@ Bundle name of the application to which the window belongs. The default value is
 displayId?: number
 ```
 
-ID of the display to which the window belongs. The value is an integer greater than or equal to 0. The default value is the default screen ID of the device.
+ID of the display to which the window belongs. The value is an integer greater than or equal to 0. The default
+value is the default screen ID of the device.
 
 **Type:** number
 
@@ -84,7 +89,8 @@ ID of the display to which the window belongs. The value is an integer greater t
 focused?: boolean
 ```
 
-Whether the window is focused. The value **true** indicates that the window is focused, and **false** indicates the opposite. The default value is **false**.
+Whether the window is focused. The value **true** indicates that the window is focused, and **false** indicates the
+opposite. The default value is **false**.
 
 **Type:** boolean
 

@@ -6,7 +6,10 @@
 function removeStartupTaskResult(startupTask: string): void
 ```
 
-删除指定启动任务或so预加载任务的初始化结果。 - 输入为启动任务名时，删除指定启动任务的初始化结果。 - 输入为so文件时，将该so文件置为未加载，缓存中已加载的so文件不会被移除。
+删除指定启动任务或so预加载任务的初始化结果。
+
+- 输入为启动任务名时，删除指定启动任务的初始化结果。
+- 输入为so文件时，将该so文件置为未加载，缓存中已加载的so文件不会被移除。
 
 **起始版本：** 12
 
@@ -18,13 +21,13 @@ function removeStartupTaskResult(startupTask: string): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startupTask | string | 是 | 启动任务[StartupTask](arkts-ability-startuptask-c.md#startuptask)的名称或预加载so名称。 |
+| startupTask | string | 是 | 启动任务[StartupTask](arkts-ability-startuptask-c.md)的名称或预加载so名称。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 
 **示例：**
 

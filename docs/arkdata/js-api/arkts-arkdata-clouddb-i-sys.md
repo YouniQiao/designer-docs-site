@@ -11,7 +11,7 @@ Provides APIs for performing cloud database operations.
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## delete
@@ -67,7 +67,8 @@ class MyCloudDB implements cloudExtension.CloudDB {
 generateId(count: number): Promise<Result<Array<string>>>
 ```
 
-Generates IDs for the data records inserted to the cloud database. The IDs are unique. This API uses a promise to return the result.
+Generates IDs for the data records inserted to the cloud database.
+The IDs are unique. This API uses a promise to return the result.
 
 **Since:** 11
 

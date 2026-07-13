@@ -12,7 +12,8 @@ Enumerates the update policy types.
 DEFAULT = 0
 ```
 
-Default update policy, which periodically notifies the user of the update and starts the update after user confirmation.
+Default update policy, which periodically notifies the user of the update and starts the update after user
+confirmation.
 
 **Since:** 12
 

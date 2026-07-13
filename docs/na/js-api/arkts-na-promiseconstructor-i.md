@@ -6,7 +6,8 @@
 all<T>(values: Iterable<T | PromiseLike<T>>): Promise<Awaited<T>[]>
 ```
 
-Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected when any Promise is rejected.
+Creates a Promise that is resolved with an array of results when all of the provided Promises
+resolve, or rejected when any Promise is rejected.
 
 **Parameters:**
 
@@ -26,7 +27,8 @@ Creates a Promise that is resolved with an array of results when all of the prov
 race<T>(values: Iterable<T | PromiseLike<T>>): Promise<Awaited<T>>
 ```
 
-Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
+Creates a Promise that is resolved or rejected when any of the provided Promises are resolved
+or rejected.
 
 **Parameters:**
 

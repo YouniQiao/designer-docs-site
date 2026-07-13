@@ -1,6 +1,7 @@
 # CallingInfo
 
-Defines the IPC context, including the PID and UID, local and remote device IDs, and whether the API is invoked on the same device.
+Defines the IPC context, including the PID and UID, local and remote device IDs, and whether the API is invoked on
+the same device.
 
 **Since:** 23
 
@@ -9,7 +10,7 @@ Defines the IPC context, including the PID and UID, local and remote device IDs,
 ## Modules to Import
 
 ```TypeScript
-import { rpc } from '@ohos.rpc';
+import { rpc } from '@kit.IPCKit';
 ```
 
 ## callerPid
@@ -18,7 +19,8 @@ import { rpc } from '@ohos.rpc';
 readonly callerPid: number
 ```
 
-PID of the caller. callerPid is valid only when the {@link isLocalCalling} is true. Otherwise callerPid is invalid
+PID of the caller.
+callerPid is valid only when the {@link isLocalCalling} is true. Otherwise callerPid is invalid
 
 **Type:** number
 
@@ -34,7 +36,8 @@ PID of the caller. callerPid is valid only when the {@link isLocalCalling} is tr
 readonly callerTokenId: number
 ```
 
-Token ID of the caller. callerTokenId is valid only when the {@link isLocalCalling} is true. Otherwise callerTokenId is invalid.
+Token ID of the caller.
+callerTokenId is valid only when the {@link isLocalCalling} is true. Otherwise callerTokenId is invalid.
 
 **Type:** number
 
@@ -50,7 +53,8 @@ Token ID of the caller. callerTokenId is valid only when the {@link isLocalCalli
 readonly callerUid: number
 ```
 
-UID of the caller. callerUid is valid only when the {@link isLocalCalling} is true. Otherwise callerUid is invalid.
+UID of the caller.
+callerUid is valid only when the {@link isLocalCalling} is true. Otherwise callerUid is invalid.
 
 **Type:** number
 
@@ -66,7 +70,8 @@ UID of the caller. callerUid is valid only when the {@link isLocalCalling} is tr
 readonly isLocalCalling: boolean
 ```
 
-Whether the peer end of the current communication is a process on the local device. Returns **true** if the local and peer processes are on the same device; returns **false** otherwise.
+Whether the peer end of the current communication is a process on the local device. Returns **true** if the local
+and peer processes are on the same device; returns **false** otherwise.
 
 **Type:** boolean
 
@@ -82,7 +87,8 @@ Whether the peer end of the current communication is a process on the local devi
 readonly localDeviceId: string
 ```
 
-Local device ID. This parameter is valid only in RPC scenarios. localDeviceId is valid only when the {@link isLocalCalling} is false. Otherwise localDeviceId is invalid.
+Local device ID. This parameter is valid only in RPC scenarios.
+localDeviceId is valid only when the {@link isLocalCalling} is false. Otherwise localDeviceId is invalid.
 
 **Type:** string
 
@@ -99,7 +105,8 @@ Local device ID. This parameter is valid only in RPC scenarios. localDeviceId is
 readonly remoteDeviceId: string
 ```
 
-Remote device ID. This parameter is valid only in RPC scenarios. remoteDeviceId is valid only when the {@link isLocalCalling} is false. Otherwise remoteDeviceId is invalid.
+Remote device ID. This parameter is valid only in RPC scenarios.
+remoteDeviceId is valid only when the {@link isLocalCalling} is false. Otherwise remoteDeviceId is invalid.
 
 **Type:** string
 

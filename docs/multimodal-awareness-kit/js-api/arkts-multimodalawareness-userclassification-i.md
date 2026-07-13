@@ -11,7 +11,7 @@ Defines the user age group detection result.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## ageGroup
@@ -36,7 +36,8 @@ User age group, for example, child or adult.
 confidence?: float
 ```
 
-Confidence of the detection result. The value is a floating point number ranging from 0 to 1. A larger value indicates a higher confidence.
+Confidence of the detection result. The value is a floating point number ranging from 0 to 1. A larger value
+indicates a higher confidence.
 
 **Type:** float
 

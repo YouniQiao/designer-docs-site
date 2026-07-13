@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## rename
@@ -12,7 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function rename(oldPath: string, newPath: string): Promise<void>
 ```
 
-Renames a file or directory. This API uses a promise to return the result. > **NOTE** > > This API is not supported in a distributed directory.
+Renames a file or directory. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is not supported in a distributed directory.
 
 **Since:** 9
 
@@ -64,7 +68,11 @@ Renames a file or directory. This API uses a promise to return the result. > **N
 declare function rename(oldPath: string, newPath: string, callback: AsyncCallback<void>): void
 ```
 
-Renames a file or directory. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is not supported in a distributed directory.
+Renames a file or directory. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is not supported in a distributed directory.
 
 **Since:** 9
 

@@ -9,7 +9,7 @@ Represents the basic information about a distributed device.
 ## Modules to Import
 
 ```TypeScript
-import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
+import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## deviceId
@@ -18,7 +18,8 @@ import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
 deviceId: string
 ```
 
-Device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID), **appid**, and salt using the SHA-256 algorithm.
+Device ID. The value is the result of obfuscating the udid-hash (hash value of the UDID), **appid**, and salt
+using the SHA-256 algorithm.
 
 **Type:** string
 

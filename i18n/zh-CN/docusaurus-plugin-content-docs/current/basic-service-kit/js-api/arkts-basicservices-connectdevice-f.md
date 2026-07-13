@@ -6,7 +6,10 @@
 function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 ```
 
-根据getDevices()返回的设备信息打开USB设备。如果USB服务异常，可能返回`undefined`，注意需要对接口返回值做判空处理。 1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备信息以及device; 2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)请求使用该设备的权限。
+根据getDevices()返回的设备信息打开USB设备。如果USB服务异常，可能返回`undefined`，注意需要对接口返回值做判空处理。
+
+1. 需要调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备信息以及device;
+2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)请求使用该设备的权限。
 
 **起始版本：** 9
 
@@ -28,8 +31,8 @@ function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 | [14400001](../../apis-basic-services-kit/errorcode-usb.md#14400001-连接usb设备被拒绝) | Access right denied. Call requestRight to get the USBDevicePipe access right first. |
 | [14400004](../../apis-basic-services-kit/errorcode-usb.md#14400004-服务异常) |  |
 | [14400012](../../apis-basic-services-kit/errorcode-usb.md#14400012-io错误) |  |

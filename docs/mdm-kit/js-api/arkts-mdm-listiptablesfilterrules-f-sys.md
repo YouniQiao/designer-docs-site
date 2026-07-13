@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## listIptablesFilterRules
@@ -12,7 +12,8 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function listIptablesFilterRules(admin: Want, callback: AsyncCallback<string>): void
 ```
 
-Obtains the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return the result.
+Obtains the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 

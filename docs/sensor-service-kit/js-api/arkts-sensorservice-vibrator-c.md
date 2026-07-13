@@ -13,7 +13,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { VibrateOptions } from '@system.vibrator';
+import { VibrateOptions } from '@kit.SensorServiceKit';
 ```
 
 ## vibrate
@@ -22,7 +22,12 @@ import { VibrateOptions } from '@system.vibrator';
 static vibrate(options?: VibrateOptions): void
 ```
 
-Triggers device vibration. > **NOTE** > > Except for lite wearables. You are advised to use > [vibrator.startVibration()](arkts-sensorservice-startvibration-f.md#startvibration-1) since API version 8.
+Triggers device vibration.
+
+> **NOTE**
+>
+> Except for lite wearables. You are advised to use
+> [vibrator.startVibration()](arkts-sensorservice-startvibration-f.md#startvibration-1) since API version 8.
 
 **Since:** 3
 
@@ -31,6 +36,8 @@ Triggers device vibration. > **NOTE** > > Except for lite wearables. You are adv
 **Substitutes:** startVibration(effect:
 
 **Required permissions:** ohos.permission.VIBRATE
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Sensors.MiscDevice.Lite
 

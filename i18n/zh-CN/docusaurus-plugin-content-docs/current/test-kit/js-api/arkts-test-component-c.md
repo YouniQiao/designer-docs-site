@@ -1,6 +1,7 @@
 # Component
 
-表示UI上的组件，提供获取组件属性、单击组件、滚动查找组件和文本注入的API。 此类中提供的所有API都使用Promise返回结果，必须使用**await**调用。
+UiTest框架在API9中，Component类代表了UI界面上的一个控件，提供控件属性获取，控件点击，滑动查找，文本注入等API。
+该类提供的所有方法都使用Promise方式作为异步方法，需使用await调用。
 
 **起始版本：** 9
 
@@ -12,7 +13,7 @@
 clearText(): Promise<void>
 ```
 
-清除组件的文本信息。该API仅对可编辑文本组件生效。该API使用Promise返回结果。
+清除控件的文本信息，仅针对可编辑的文本组件生效。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -24,14 +25,14 @@ clearText(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -53,7 +54,7 @@ async function demo() {
 click(): Promise<void>
 ```
 
-单击此组件。该API使用Promise返回结果。
+控件对象进行点击操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -65,14 +66,14 @@ click(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -97,7 +98,7 @@ async function demo() {
 doubleClick(): Promise<void>
 ```
 
-双击此组件。该API使用Promise返回结果。
+控件对象进行双击操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -109,14 +110,14 @@ doubleClick(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -138,7 +139,7 @@ async function demo() {
 dragTo(target: Component): Promise<void>
 ```
 
-将此组件拖动到目标组件。该API使用Promise返回结果。
+将控件拖拽至目标控件处。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -150,21 +151,21 @@ dragTo(target: Component): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| target | Component | 是 | 目标组件。 |
+| target | Component | 是 | 目标控件。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -191,7 +192,7 @@ async function demo() {
 getBounds(): Promise<Rect>
 ```
 
-获取此组件的边界信息。该API使用Promise返回结果。
+获取控件对象的边框信息。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -203,14 +204,14 @@ getBounds(): Promise<Rect>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Rect&gt; | - 用于返回组件对象边界信息的Promise对象。 |
+| Promise&lt;Rect&gt; | - Promise对象，返回控件对象的边框信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -232,7 +233,7 @@ async function demo() {
 getBoundsCenter(): Promise<Point>
 ```
 
-获取此组件所占区域的中心点。该API使用Promise返回结果。
+获取控件对象所占区域的中心点信息。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -244,14 +245,14 @@ getBoundsCenter(): Promise<Point>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Point&gt; | - 用于返回组件对象所占区域中心点的Promise对象。 |
+| Promise&lt;Point&gt; | - Promise对象，返回控件对象所占区域的中心点信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -273,7 +274,7 @@ async function demo() {
 getDescription(): Promise<string>
 ```
 
-获取此组件的描述。该API使用Promise返回结果。
+获取控件对象的描述信息。使用Promise异步回调。
 
 **起始版本：** 11
 
@@ -285,14 +286,14 @@ getDescription(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件描述的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的描述信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -314,7 +315,7 @@ async function demo() {
 getDisplayId(): Promise<number>
 ```
 
-获取组件所属的显示ID。该API使用Promise返回结果。
+获取控件对象所属的屏幕ID。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -326,14 +327,14 @@ getDisplayId(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number&gt; | - 用于返回组件所属显示ID的Promise对象。 |
+| Promise&lt;number&gt; | - Promise对象，返回控件所属的屏幕ID。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -355,7 +356,7 @@ async function demo() {
 getHint(): Promise<string>
 ```
 
-获取组件的提示文本。该API使用Promise返回结果。
+获取控件对象的提示文本。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -367,14 +368,14 @@ getHint(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件提示文本的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的提示文本。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -396,7 +397,7 @@ async function demo() {
 getId(): Promise<string>
 ```
 
-获取此组件的ID。该API使用Promise返回结果。
+获取控件对象的id值。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -408,14 +409,14 @@ getId(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件ID的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的id值。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -437,7 +438,9 @@ async function demo() {
 getOriginalText(): Promise<string>
 ```
 
-获取此组件的文本信息。该API使用Promise返回结果。如果组件的 [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) 属性设置为**no**或**no-hide-descendants**，可以使用此API获取组件的文本信息， 但[Component.getText()](arkts-test-component-c.md#gettext-1)无法获取。
+获取控件对象的文本信息。使用Promise异步回调。如果控件的无障碍属性
+[accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel)
+设置为'no'或'no-hide-descendants'，可以使用本接口获取控件的文本信息，无法使用[Component.getText()](arkts-test-component-c.md#gettext-1)获取控件的文本信息。
 
 **起始版本：** 20
 
@@ -449,14 +452,14 @@ getOriginalText(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件文本信息的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的文本信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -478,7 +481,14 @@ async function demo() {
 getText(): Promise<string>
 ```
 
-获取此组件的文本信息。该API使用Promise返回结果。 > **说明：** > > 如果组件的[accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel-1) > 属性设置为**no**或**no-hide-descendants**，则无法使用此API获取组件的文本信息。 > 此时可以使用[Component.getOriginalText()](arkts-test-component-c.md#getoriginaltext-1)替代。
+获取控件对象的文本信息。使用Promise异步回调。
+
+> **说明**
+>
+> 如果控件的无障碍属性
+> [accessibilityLevel](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-accessibility.md#accessibilitylevel)
+> 设置为'no'或'no-hide-descendants'，无法使用本接口获取控件的文本信息，可以使用[Component.getOriginalText()](arkts-test-component-c.md#getoriginaltext-1)
+> 获取控件的文本信息。
 
 **起始版本：** 9
 
@@ -490,14 +500,14 @@ getText(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件文本信息的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的文本信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -519,7 +529,7 @@ async function demo() {
 getType(): Promise<string>
 ```
 
-获取此组件的类型。该API使用Promise返回结果。
+获取控件对象的控件类型。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -531,14 +541,14 @@ getType(): Promise<string>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | - 用于返回组件类型的Promise对象。 |
+| Promise&lt;string&gt; | - Promise对象，返回控件的类型。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -560,7 +570,7 @@ async function demo() {
 inputText(text: string): Promise<void>
 ```
 
-清除组件中的原文本并输入指定文本。该API仅对可编辑文本组件生效。该API使用Promise返回结果。
+清空组件内原有文本并输入指定文本内容，仅针对可编辑的文本组件生效。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -572,21 +582,21 @@ inputText(text: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| text | string | 是 | 输入文本。目前支持英文、中文和特殊字符。 |
+| text | string | 是 | 输入的文本信息，当前支持英文、中文和特殊字符。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -611,7 +621,7 @@ async function demo() {
 inputText(text: string, mode: InputTextMode): Promise<void>
 ```
 
-以指定文本输入模式向组件输入文本。该API仅对可编辑文本组件生效。该API使用Promise返回结果。
+向控件中输入文本，并支持指定文本输入方式，仅针对可编辑的文本组件生效。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -623,23 +633,23 @@ inputText(text: string, mode: InputTextMode): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| text | string | 是 | 输入文本。目前支持英文、中文和特殊字符。 |
-| mode | InputTextMode | 是 | 文本输入模式。详见[InputTextMode](arkts-test-inputtextmode-i.md#inputtextmode)。<br>**注意**：如果**InputTextMode.addition**设置为**true**，则指定文本将追加到组件现有文本末尾。否则，指定文本将覆盖组件现有文本。 |
+| text | string | 是 | 输入的文本信息，当前支持英文、中文和特殊字符。 |
+| mode | InputTextMode | 是 | 输入文本的方式，取值请参考[InputTextMode](arkts-test-inputtextmode-i.md)。**说明：** InputTextMode.addition取值为true时，在控件已有文本末尾后追加指定文本。取值为false时，指定文本将覆盖控件已有文本。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | 能力不支持。由于设备能力限制，功能无法正常工作。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Function can not work correctly due to limited devicecapabilities. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -661,7 +671,7 @@ async function mode_demo() {
 isCheckable(): Promise<boolean>
 ```
 
-获取此组件的可勾选状态。该API使用Promise返回结果。
+获取控件对象能否被勾选属性。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -673,14 +683,14 @@ isCheckable(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件对象是否可勾选的Promise对象。值**true**表示组件可勾选，**false**表示不可勾选。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象能否可被勾选属性。true：可被勾选。false：不可被勾选。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -706,7 +716,7 @@ async function demo() {
 isChecked(): Promise<boolean>
 ```
 
-获取此组件的勾选状态。该API使用Promise返回结果。
+获取控件对象被勾选状态。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -718,14 +728,14 @@ isChecked(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件对象勾选状态的Promise对象。值**true**表示组件已勾选，**false**表示未勾选。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象被勾选状态。true：被勾选。false：未被勾选。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -751,7 +761,7 @@ async function demo() {
 isClickable(): Promise<boolean>
 ```
 
-获取此组件的可点击状态。该API使用Promise返回结果。
+获取控件对象可点击属性。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -763,14 +773,14 @@ isClickable(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件对象是否可点击的Promise对象。值**true**表示组件可点击，**false**表示不可点击。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象是否可点击。true：可点击。false：不可点击。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -796,7 +806,7 @@ async function demo() {
 isEnabled(): Promise<boolean>
 ```
 
-获取此组件的可用状态。该API使用Promise返回结果。
+获取控件使能状态。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -808,14 +818,14 @@ isEnabled(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件是否可用的Promise对象。值**true**表示组件可用，**false**表示不可用。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件使能状态。true：使能。false：未使能。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -841,7 +851,7 @@ async function demo() {
 isFocused(): Promise<boolean>
 ```
 
-检查组件是否已聚焦。该API使用Promise返回结果。
+判断控件对象获焦状态。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -853,14 +863,14 @@ isFocused(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件是否聚焦的Promise对象。值**true**表示组件已聚焦，**false**表示未聚焦。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象获焦状态。true：获焦。false：未获焦。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -886,7 +896,7 @@ async function demo() {
 isLongClickable(): Promise<boolean>
 ```
 
-获取此组件的可长按状态。该API使用Promise返回结果。
+获取控件对象可点击属性。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -898,14 +908,14 @@ isLongClickable(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件对象是否可长按的Promise对象。值**true**表示组件可长按，**false**表示不可长按。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象是否可点击。true：可点击。false：不可点击。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -931,7 +941,7 @@ async function demo() {
 isScrollable(): Promise<boolean>
 ```
 
-获取此组件的可滚动状态。该API使用Promise返回结果。
+获取控件对象可滑动属性。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -943,14 +953,14 @@ isScrollable(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件对象是否可滚动的Promise对象。值**true**表示组件可滚动，**false**表示不可滚动。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象是否可滑动。true：可滑动。false：不可滑动。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -976,7 +986,7 @@ async function demo() {
 isSelected(): Promise<boolean>
 ```
 
-获取此组件的选中状态。该API使用Promise返回结果。
+获取控件对象被选中状态。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -988,14 +998,14 @@ isSelected(): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回组件是否选中的Promise对象。值**true**表示组件已选中，**false**表示未选中。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回控件对象被选中状态。true：被选中。false：未被选中。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1021,7 +1031,7 @@ async function demo() {
 longClick(): Promise<void>
 ```
 
-长按此组件。该API使用Promise返回结果。
+控件对象进行长按操作。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1033,14 +1043,14 @@ longClick(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1062,7 +1072,7 @@ async function demo() {
 pinchIn(scale: number): Promise<void>
 ```
 
-以指定比例对此组件执行双指捏合操作。该API使用Promise返回结果。
+将控件按指定的比例进行捏合缩小。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1074,21 +1084,21 @@ pinchIn(scale: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scale | number | 是 | 缩放因子，为0到1之间的值。 |
+| scale | number | 是 | 指定缩小的比例。取值范围为0~1。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1110,7 +1120,7 @@ async function demo() {
 pinchOut(scale: number): Promise<void>
 ```
 
-以指定比例对此组件执行双指张开操作。该API使用Promise返回结果。
+将控件按指定的比例进行捏合放大。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1122,21 +1132,21 @@ pinchOut(scale: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| scale | number | 是 | 缩放因子，为大于1的值。 |
+| scale | number | 是 | 指定放大的比例。取值范围大于1。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1158,7 +1168,7 @@ async function demo() {
 scrollSearch(on: On): Promise<Component>
 ```
 
-在此组件上滚动查找目标组件。该API适用于支持滚动的组件。该API使用Promise返回结果。
+在控件上滑动查找目标控件（适用支持滑动的控件）。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1170,21 +1180,21 @@ scrollSearch(on: On): Promise<Component>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标组件的属性。 |
+| on | On | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Component&gt; | - 用于返回目标组件的Promise对象。 |
+| Promise&lt;Component&gt; | - Promise对象，返回目标控件对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1209,7 +1219,7 @@ async function demo() {
 scrollSearch(on: On, vertical?: boolean, offset?: number): Promise<Component>
 ```
 
-在此组件上滚动查找目标组件。该API适用于支持滚动的组件。可以指定滚动方向和滚动起止点与组件边界的偏移量。 该API使用Promise返回结果。
+在控件上滑动查找目标控件（适用支持滑动的控件），支持指定滑动方向和滑动起止点与组件边框的偏移量。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -1221,23 +1231,23 @@ scrollSearch(on: On, vertical?: boolean, offset?: number): Promise<Component>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| on | On | 是 | 目标组件的属性。 |
-| vertical | boolean | 否 | 搜索方向是否为垂直方向。默认值**true**表示搜索方向为垂直方向。**false**表示搜索方向为水平方向。 |
-| offset | number | 否 | 滚动起止点与组件边界的偏移量，单位为像素。默认值为**80**。该值为大于或等于0的整数。<br>默认值：80<br>单位：px |
+| on | On | 是 | 目标控件的属性要求。 |
+| vertical | boolean | 否 | 默认为true，表示查找方向是纵向。false表示查找方向为横向。 |
+| offset | number | 否 | 滑动起点/终点到组件边框的偏移，默认80，单位：px，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Component&gt; | - 用于返回目标组件的Promise对象。 |
+| Promise&lt;Component&gt; | - Promise对象，返回目标控件对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.必填参数未指定；2.参数类型错误；3.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1259,7 +1269,7 @@ async function demo() {
 scrollToBottom(speed?: number): Promise<void>
 ```
 
-滚动到此组件的底部。该API适用于支持滚动的组件。该API使用Promise返回结果。
+在控件上滑动到底部（适用支持滑动的控件）。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1271,21 +1281,21 @@ scrollToBottom(speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | number | 否 | 滚动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.参数类型错误；2.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameterverification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 
@@ -1307,7 +1317,7 @@ async function demo() {
 scrollToTop(speed?: number): Promise<void>
 ```
 
-滚动到此组件的顶部。该API适用于支持滚动的组件。该API使用Promise返回结果。
+在控件上滑动到顶部（适用支持滑动的控件）。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -1319,21 +1329,21 @@ scrollToTop(speed?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | number | 否 | 滚动速度。<br>取值范围：[200, 40000]<br>单位：px/s。<br>如果为负数则抛出错误码401。<br>默认值：600 |
+| speed | number | 否 | 滑动速率，取值范围为200-40000的整数，默认值为600，单位：px/s。为不在范围内的非负数或为null/undefined时设为默认值600。为负数时抛出401错误码。<br>**起始版本：** 11 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能原因：1.参数类型错误；2.参数校验失败。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000004](../errorcode-uitest.md#17000004-目标控件窗口丢失) | 窗口或组件不可见或已销毁。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types; 2. Parameterverification failed. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000004](../errorcode-uitest.md#17000004-目标控件窗口不可见或已销毁) | The window or component is invisible or destroyed. |
 
 **示例：**
 

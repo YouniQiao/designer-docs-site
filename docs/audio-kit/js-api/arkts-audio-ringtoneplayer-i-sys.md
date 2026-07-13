@@ -1,6 +1,9 @@
 # RingtonePlayer (System API)
 
-Provides APIs for setting and obtaining ringtone parameters as well as playing and stopping ringtones. Before calling any API in RingtonePlayer, you must use [getRingtonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getringtoneplayer-1) to obtain a RingtonePlayer instance.
+Provides APIs for setting and obtaining ringtone parameters as well as playing and stopping ringtones. Before calling
+any API in RingtonePlayer, you must use
+[getRingtonePlayer](arkts-audio-systemsoundmanager-i-sys.md#getringtoneplayer-1)
+to obtain a RingtonePlayer instance.
 
 **Since:** 10
 
@@ -61,7 +64,8 @@ Sets ringtone parameters. This API uses a promise to return the result.
 getAudioRendererInfo(callback: AsyncCallback<audio.AudioRendererInfo>): void
 ```
 
-Obtains the information about the audio renderer used by the ringtone. This API uses an asynchronous callback to return the result.
+Obtains the information about the audio renderer used by the ringtone. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 10
 
@@ -81,7 +85,8 @@ Obtains the information about the audio renderer used by the ringtone. This API 
 getAudioRendererInfo(): Promise<audio.AudioRendererInfo>
 ```
 
-Obtains the information about the audio renderer used by the ringtone. This API uses a promise to return the result.
+Obtains the information about the audio renderer used by the ringtone. This API uses a promise to return the
+result.
 
 **Since:** 10
 
@@ -168,7 +173,8 @@ Unsubscribes from the audio interruption event.
 on(type: 'audioInterrupt', callback: Callback<audio.InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result.
+Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 

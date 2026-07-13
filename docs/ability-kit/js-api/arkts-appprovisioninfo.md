@@ -2,10 +2,12 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AppProvisionInfo](arkts-appprovisioninfo-i.md) | 应用[HarmonyAppProvision配置文件](docroot://security/app-provision-structure.md)中的信息。 |
-| <!--DelRow-->[Validity](arkts-validity-i.md) | 配置文件中的有效期。 |
+| [AppProvisionInfo](arkts-ability-appprovisioninfo-i-sys.md) | The module provides information in the[HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md). |
+| [Validity](arkts-ability-validity-i-sys.md) | Validity period in the configuration file. |
+<!--DelEnd-->
 

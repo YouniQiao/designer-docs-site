@@ -1,6 +1,7 @@
 # ISO8601DateTimeFormat
 
-Provide a DateTime formatting interface which could format date to ISO 8601 standard string. [ISO8601](https://iso8601.com/).
+Provide a DateTime formatting interface which could format date to ISO 8601 standard string.
+[ISO8601](https://iso8601.com/).
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Provide a DateTime formatting interface which could format date to ISO 8601 stan
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -32,7 +33,7 @@ A constructor used to create a ISO8601DateTimeFormat object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | ISO8601DateTimeFormatOptions | No | Indicates the format options formatted result include.Default format is yyyy-MM-ddThh:mm:ssZZZZZ.<br>ISO8601 Style DateTime Formatting Options. |
+| options | ISO8601DateTimeFormatOptions | No | Options for creating a date formatting objectthat complies with ISO 8601. |
 
 ## format
 
@@ -60,5 +61,5 @@ Formats a date to ISO 8601 formatted string.
 
 | Type | Description |
 | --- | --- |
-| string | ISO 8601 formatted string, such as yyyy-MM-dd or yyyy-MM-ddThh:mm:ssZZZZZ. |
+| string | Date and time string that complies with ISO 8601. |
 

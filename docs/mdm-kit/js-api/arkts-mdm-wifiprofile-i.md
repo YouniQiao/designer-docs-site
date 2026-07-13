@@ -9,7 +9,7 @@ Represents the Wi-Fi configuration information.
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## bssid
@@ -18,7 +18,9 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 bssid?: string
 ```
 
-MAC address of the Wi-Fi hotspot. To obtain the MAC address, enable **Enable Wi-Fi verbose logging** under **Settings** > **System & updates** > **Developer options** first, and then go to the WLAN list to check the MAC address. If a Wi-Fi network has multiple MAC addresses, all of them must be added here.
+MAC address of the Wi-Fi hotspot. To obtain the MAC address, enable **Enable Wi-Fi verbose logging** under
+**Settings** > **System & updates** > **Developer options** first, and then go to the WLAN list to check the MAC
+address. If a Wi-Fi network has multiple MAC addresses, all of them must be added here.
 
 **Type:** string
 
@@ -66,7 +68,8 @@ Reason for disabling Wi-Fi.
 eapProfile?: WifiEapProfile
 ```
 
-Extensible Authentication Protocol (EAP) configuration. This field is mandatory only when **securityType** is set to **WIFI_SEC_TYPE_EAP**.
+Extensible Authentication Protocol (EAP) configuration. This field is mandatory only when **securityType** is set
+to **WIFI_SEC_TYPE_EAP**.
 
 **Type:** WifiEapProfile
 
@@ -98,7 +101,8 @@ IP address type.
 isHiddenSsid?: boolean
 ```
 
-Whether the network is hidden. The value **true** indicates that the network is hidden; the value **false** indicates the opposite.
+Whether the network is hidden. The value **true** indicates that the network is hidden; the value **false**
+indicates the opposite.
 
 **Type:** boolean
 

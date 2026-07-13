@@ -1,6 +1,7 @@
 # DataObject
 
-Provides APIs for managing a distributed data object. Before using any API of this class, use create() to create a DataObject object.
+Provides APIs for managing a distributed data object. Before using any API of this class, use create() to create a
+DataObject object.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Provides APIs for managing a distributed data object. Before using any API of th
 ## Modules to Import
 
 ```TypeScript
-import { distributedDataObject } from '@ohos.data.distributedDataObject';
+import { distributedDataObject } from '@kit.ArkData';
 ```
 
 ## bindAssetStore
@@ -18,7 +19,8 @@ import { distributedDataObject } from '@ohos.data.distributedDataObject';
 bindAssetStore(assetKey: string, bindInfo: BindInfo, callback: AsyncCallback<void>): void
 ```
 
-Binds joint assets. Currently, only the binding between an asset in a distributed data object and an asset in an RDB store is supported. This API uses an asynchronous callback to return the result.
+Binds joint assets. Currently, only the binding between an asset in a distributed data object and an asset in an
+RDB store is supported. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -101,7 +103,8 @@ class EntryAbility extends UIAbility {
 bindAssetStore(assetKey: string, bindInfo: BindInfo): Promise<void>
 ```
 
-Binds joint assets. Currently, only the binding between an asset in a distributed data object and an asset in an RDB store is supported. This API uses a promise to return the result.
+Binds joint assets. Currently, only the binding between an asset in a distributed data object and an asset in an
+RDB store is supported. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -596,7 +599,8 @@ try {
 revokeSave(callback: AsyncCallback<RevokeSaveSuccessResponse>): void
 ```
 
-Revokes the data of this distributed data object saved. This API uses an asynchronous callback to return the result.
+Revokes the data of this distributed data object saved. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -790,7 +794,8 @@ g_object.save("local").then((callbackInfo: distributedDataObject.SaveSuccessResp
 setAsset(assetKey: string, uri: string): Promise<void>
 ```
 
-Sets the property information about a single asset in a distributed object. This API must be called before the setSessionId API is called. This API uses a promise to return the result.
+Sets the property information about a single asset in a distributed object. This API must be called before the
+setSessionId API is called. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -867,7 +872,9 @@ class EntryAbility extends UIAbility {
 setAssets(assetsKey: string, uris: Array<string>): Promise<void>
 ```
 
-Sets the property information about multiple assets in a distributed object. This API must be called before the setSessionId API is called. The number of values contained in the uris array ranges from 1 to 50. This API uses a promise to return the result.
+Sets the property information about multiple assets in a distributed object. This API must be called before the
+setSessionId API is called. The number of values contained in the uris array ranges from 1 to 50.
+This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -944,7 +951,9 @@ class EntryAbility extends UIAbility {
 setSessionId(sessionId: string, callback: AsyncCallback<void>): void
 ```
 
-Sets a session ID. This API uses an asynchronous callback to return the result. For the devices in the collaboration state in a trusted network, data of the distributed objects with the same session ID can be automatically synced across devices.
+Sets a session ID. This API uses an asynchronous callback to return the result. For the devices in the
+collaboration state in a trusted network, data of the distributed objects with the same session ID can be
+automatically synced across devices.
 
 **Since:** 9
 
@@ -1030,7 +1039,10 @@ g_object.setSessionId(() => {
 setSessionId(sessionId?: string): Promise<void>
 ```
 
-Sets a session ID or exits the distributed network. This API uses a promise to return the result. If this parameter is set to "" or null, or left empty, the distributed data object exits the network. For the devices in the collaboration state in a trusted network, data of the distributed objects with the same session ID can be automatically synced across devices.
+Sets a session ID or exits the distributed network. This API uses a promise to return the result. If this
+parameter is set to "" or null, or left empty, the distributed data object exits the network. For the devices in
+the collaboration state in a trusted network, data of the distributed objects with the same session ID can be
+automatically synced across devices.
 
 **Since:** 9
 

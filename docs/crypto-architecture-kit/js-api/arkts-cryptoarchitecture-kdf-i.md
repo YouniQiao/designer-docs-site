@@ -1,6 +1,7 @@
 # Kdf
 
-Defines the key derivation function class. Before using APIs of this class, you need to create an instance of this class by using **createKdf(algName: string): Kdf**.
+Defines the key derivation function class. Before using APIs of this class, you need to create an instance of this
+class by using **createKdf(algName: string): Kdf**.
 
 **Since:** 11
 
@@ -11,7 +12,7 @@ Defines the key derivation function class. Before using APIs of this class, you 
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## generateSecret
@@ -20,7 +21,8 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 generateSecret(params: KdfSpec, callback: AsyncCallback<DataBlob>): void
 ```
 
-Generates a key based on the specified key derivation parameters. This API uses an asynchronous callback to return the result.
+Generates a key based on the specified key derivation parameters. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 11
 
@@ -44,7 +46,7 @@ Generates a key based on the specified key derivation parameters. This API uses 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
-| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 |
+| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 and later |
 
 **Example**
 
@@ -129,7 +131,7 @@ Generates a key based on the specified key derivation parameters. This API uses 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
-| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 |
+| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 and later |
 
 **Example**
 
@@ -185,7 +187,12 @@ kdfPromise.then(secret => {
 generateSecretSync(params: KdfSpec): DataBlob
 ```
 
-Generates a key based on the specified key derivation parameters. This API returns the result synchronously. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Generates a key based on the specified key derivation parameters. This API returns the result synchronously.
+
+<br><br>**NOTE**
+<br>It is recommended to prioritize the use of asynchronous API, {@link generateSecret}. Synchronous API may
+take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
+it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 12
 
@@ -203,7 +210,7 @@ Generates a key based on the specified key derivation parameters. This API retur
 
 | Type | Description |
 | --- | --- |
-| DataBlob | the derived key. |
+| DataBlob | The derived key. |
 
 **Error codes:**
 
@@ -213,7 +220,7 @@ Generates a key based on the specified key derivation parameters. This API retur
 | [17620001](../errorcode-crypto-framework.md#17620001-memory-operation-failed) | Memory operation failed. |
 | [17620002](../errorcode-crypto-framework.md#17620002-parameter-conversion-between-arkts-and-c-failed) | Failed to obtain the native object or convert parameters. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
-| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 |
+| [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. Possible causes:<br>1. Invalid key length in the params;<br>2. Invalid info length in the params;<br>3. Invalid keySize in the params.<br>**Applicable version:** 22 and later |
 
 **Example**
 

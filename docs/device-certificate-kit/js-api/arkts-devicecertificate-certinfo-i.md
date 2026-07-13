@@ -9,7 +9,7 @@ Represents detailed information about a certificate.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## cert
@@ -102,7 +102,8 @@ Start date of a certificate. The value contains up to 32 bytes.
 serial: string
 ```
 
-Serial number of a certificate. The value contains up to 64 bytes. The value is a hexadecimal string, for example , **62C2CB4DE8405E96**.
+Serial number of a certificate. The value contains up to 64 bytes. The value is a hexadecimal string, for example
+, **62C2CB4DE8405E96**.
 
 **Type:** string
 
@@ -116,7 +117,8 @@ Serial number of a certificate. The value contains up to 64 bytes. The value is 
 state: boolean
 ```
 
-Certificate state. The value **true** indicates that the certificate is enabled, and **false** means the opposite.
+Certificate state. The value **true** indicates that the certificate is enabled, and **false** means the
+opposite.
 
 **Type:** boolean
 

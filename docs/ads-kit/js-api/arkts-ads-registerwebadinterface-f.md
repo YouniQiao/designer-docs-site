@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { advertising } from '@ohos.advertising';
+import { advertising } from '@kit.AdsKit';
 ```
 
 ## registerWebAdInterface
@@ -12,7 +12,8 @@ import { advertising } from '@ohos.advertising';
 function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext): void
 ```
 
-Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications).
+Injects an ad JavaScript object to the **Web** component
+(this API is only open to some pre-installed system applications).
 
 **Since:** 12
 
@@ -72,7 +73,8 @@ function registerWebAdInterface(controller: web_webview.WebviewController, conte
     needRefresh: boolean): void
 ```
 
-Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications).
+Injects an ad JavaScript object to the **Web** component
+(this API is only open to some pre-installed system applications).
 
 **Since:** 16
 

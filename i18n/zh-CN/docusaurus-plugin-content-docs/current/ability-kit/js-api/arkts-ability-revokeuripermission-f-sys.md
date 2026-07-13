@@ -6,7 +6,15 @@
 function revokeUriPermission(uri: string, targetBundleName: string, callback: AsyncCallback<number>): void
 ```
 
-撤销授权指定应用的URI。使用callback异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
+撤销授权指定应用的URI。使用callback异步回调。
+该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
+
+> **说明：**
+>
+> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
+>
+> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
+> 其功能。
 
 **起始版本：** 10
 
@@ -31,10 +39,10 @@ function revokeUriPermission(uri: string, targetBundleName: string, callback: As
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied.<br>**适用版本：** 10 - 11 |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-指定的uri类型无效) | Invalid URI type. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 19 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 19+ |
 
 **示例：**
 
@@ -61,7 +69,15 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName, (error) => {
 function revokeUriPermission(uri: string, targetBundleName: string): Promise<number>
 ```
 
-撤销授权指定应用的URI。使用Promise异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
+撤销授权指定应用的URI。使用Promise异步回调。
+该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
+
+> **说明：**
+>
+> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
+>
+> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
+> 其功能。
 
 **起始版本：** 10
 
@@ -91,10 +107,10 @@ function revokeUriPermission(uri: string, targetBundleName: string): Promise<num
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied.<br>**适用版本：** 10 - 11 |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-指定的uri类型无效) | Invalid URI type. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 19 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 19+ |
 
 **示例：**
 
@@ -121,7 +137,17 @@ uriPermissionManager.revokeUriPermission(uri, targetBundleName)
 function revokeUriPermission(uri: string, targetBundleName: string, appCloneIndex: number): Promise<void>
 ```
 
-撤销授权指定应用的URI。使用Promise异步回调。 该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。 > **说明：** > > - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。 > > - 该接口支持撤销授权给分身应用的URI权限，需要指定目标应用的应用包名和分身索引。 > > - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证 > 其功能。
+撤销授权指定应用的URI。使用Promise异步回调。
+该接口仅在Phone、PC/2in1、Tablet设备中可正常调用，在其他设备可以调用但是不生效。
+
+> **说明：**
+>
+> - 允许应用撤销自身获得的其他应用URI权限，或授权给其他应用的URI权限。
+>
+> - 该接口支持撤销授权给分身应用的URI权限，需要指定目标应用的应用包名和分身索引。
+>
+> - 因URI处理涉及编解码，传入的URI需要使用[getUriFromPath](@ohos.file.fileuri:fileUri.getUriFromPath)接口获取。对于应用自行拼接的URI，系统无法保证
+> 其功能。
 
 **起始版本：** 14
 
@@ -148,11 +174,11 @@ function revokeUriPermission(uri: string, targetBundleName: string, appCloneInde
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000059](../errorcode-ability.md#16000059-指定的uri类型无效) | Invalid URI type. |
 | [16000081](../errorcode-ability.md#16000081-获取目标应用信息失败) | Failed to obtain the target application information. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 19 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 19+ |
 
 **示例：**
 

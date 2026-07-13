@@ -6,7 +6,11 @@
 function removeHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 ```
 
-取消隐藏桌面应用图标名单。 > **说明：** > > 取消隐藏的应用会从桌面第2屏开始找空位显示；如果第2~18屏无空位，则在第1屏找空位；如果第1屏无空位，则在第2屏第1个应用的位置创建小文件夹放置应用。
+取消隐藏桌面应用图标名单。
+
+> **说明：**
+>
+> 取消隐藏的应用会从桌面第2屏开始找空位显示；如果第2~18屏无空位，则在第1屏找空位；如果第1屏无空位，则在第2屏第1个应用的位置创建小文件夹放置应用。
 
 **起始版本：** 26.0.0
 
@@ -31,7 +35,7 @@ function removeHideLauncherIcon(admin: Want, bundleNames: Array<string>): void
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-参数校验失败) | Parameter verification failed. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 
 **示例：**
 

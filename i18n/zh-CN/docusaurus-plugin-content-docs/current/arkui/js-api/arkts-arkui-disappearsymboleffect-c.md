@@ -2,7 +2,7 @@
 
 定义DisappearSymbolEffect类，继承自父类SymbolEffect。
 
-**继承/实现关系：** DisappearSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md#symboleffect)
+**继承/实现关系：** DisappearSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md)
 
 **起始版本：** 12
 
@@ -38,7 +38,9 @@ AppearSymbolEffect的构造函数，出现动效。
 scope?: EffectScope
 ```
 
-动效范围。 默认值：EffectScope.LAYER
+动效范围。
+
+默认值：EffectScope.LAYER
 
 **类型：** EffectScope
 

@@ -1,20 +1,19 @@
 # AudioRecorder
 
-AudioRecorder is a class for audio recording management. It provides APIs to record audio. Before calling any API in AudioRecorder, you must use [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createAudioRecorder-1) to create an AudioRecorder instance.
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用[AVRecorder](arkts-media-media-n.md)替代。
+
+音频录制管理类，用于录制音频媒体。在调用AudioRecorder的方法前，需要先通过
+[createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) 构建一个AudioRecorder实例。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media
+**替代接口：** [media:media](arkts-media-media-n.md)
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
-
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -22,13 +21,18 @@ import { media } from '@kit.MediaKit';
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -36,8 +40,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -45,13 +49,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -59,8 +68,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -68,13 +77,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -82,8 +96,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -91,13 +105,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -105,8 +124,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -114,13 +133,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -128,8 +152,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -137,13 +161,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -151,8 +180,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -160,13 +189,18 @@ Subscribes to the audio recording events.
 on(type: 'prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset', callback: () => void): void
 ```
 
-Subscribes to the audio recording events.
+开始订阅音频录制事件。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('stateChange')](@ohos.multimedia.media:media.AVRecorder.on(type: 'stateChange', callback: OnAVRecorderStateChangeHandler))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -174,8 +208,8 @@ Subscribes to the audio recording events.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | 是 | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | 是 | 录制事件回调类型，支持的事件包括：'prepare' \| 'start' \| 'pause' \| ’resume‘ \| 'stop' \| 'release' \| 'reset'。<br/>- 'prepare' ：完成prepare调用，音频录制参数设置完成，触发该事件。<br/>- 'start' ：完成start调用，音频录制开始，触发该事件。<br/>- 'pause': 完成pause调用，音频暂停录制，触发该事件。<br/>- 'resume': 完成resume调用，音频恢复录制，触发该事件。<br/>- 'stop' ：完成stop调用，音频停止录制，触发该事件。<br/>- 'release' ：完成release调用，音频释放录制资源，触发该事件。<br/>- 'reset'：完成reset调用，音频重置为初始状态，触发该事件。 |
+| callback | () =&gt; void | 是 | 录制事件回调方法。 |
 
 ## on('error')
 
@@ -183,13 +217,18 @@ Subscribes to the audio recording events.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to audio recording error events. After an error event is reported, you must handle the event and exit the recording.
+开始订阅音频录制错误事件，当上报error错误事件后，用户需处理error事件，退出录制操作。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.on('error')](@ohos.multimedia.media:media.AVRecorder.on(type: 'error', callback: ErrorCallback))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -197,8 +236,8 @@ Subscribes to audio recording error events. After an error event is reported, yo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'error' | 是 | Event type, which is 'error' in this case. This event is triggered when an error  occurs during audio recording. |
-| callback | ErrorCallback | 是 | Callback invoked when the event is triggered. |
+| type | 'error' | 是 | 录制错误事件回调类型'error'。<br/>- 'error'：音频录制过程中发生错误，触发该事件。 |
+| callback | ErrorCallback | 是 | 录制错误事件回调方法。 |
 
 ## pause
 
@@ -206,13 +245,17 @@ Subscribes to audio recording error events. After an error event is reported, yo
 pause(): void
 ```
 
-Pauses audio recording. This API can be called only after the **'start'** event is triggered.
+暂停录制，需要在'start'事件成功触发后，才能调用pause方法。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.pause](@ohos.multimedia.media:media.AVRecorder.pause(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.pause(callback:
+**替代接口：** pause(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -222,17 +265,20 @@ Pauses audio recording. This API can be called only after the **'start'** event 
 prepare(config: AudioRecorderConfig): void
 ```
 
-Prepares for recording.
+录音准备。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.prepare](@ohos.multimedia.media:media.AVRecorder.prepare(config: AVRecorderConfig, callback: AsyncCallback<void>))
+> 替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.prepare(config:
+**替代接口：** prepare(config:
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -240,13 +286,13 @@ Prepares for recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | AudioRecorderConfig | 是 | Audio recording parameters, including the audio output URI, encoding  format, sample rate, audio channel count, and output format. |
+| config | AudioRecorderConfig | 是 | 配置录音的相关参数，包括音频输出URI、编码格式、采样率、声道数、输出格式等。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | permission denied. [since 12] |
+| [201](../../errorcode-universal.md#201-权限校验失败) | permission denied.<br>**适用版本：** 12+ |
 
 ## release
 
@@ -254,13 +300,17 @@ Prepares for recording.
 release(): void
 ```
 
-Releases the audio recording resources.
+释放录音资源。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.release](@ohos.multimedia.media:media.AVRecorder.release(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.release(callback:
+**替代接口：** release(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -270,13 +320,19 @@ Releases the audio recording resources.
 reset(): void
 ```
 
-Resets audio recording. Before resetting audio recording, you must call **stop()** to stop recording. After audio recording is reset, you must call **prepare()** to set the recording configurations for another recording.
+重置录音。
+
+进行重置录音之前，需要先调用stop()停止录音。重置录音之后，需要调用prepare()设置录音参数项，才能再次进行录音。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.reset](@ohos.multimedia.media:media.AVRecorder.reset(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.reset(callback:
+**替代接口：** reset(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -286,13 +342,17 @@ Resets audio recording. Before resetting audio recording, you must call **stop()
 resume(): void
 ```
 
-Resumes audio recording. This API can be called only after the **'pause'** event is triggered.
+恢复录制，需要在'pause'事件成功触发后，才能调用resume方法。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.resume](@ohos.multimedia.media:media.AVRecorder.resume(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.resume(callback:
+**替代接口：** resume(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -302,13 +362,17 @@ Resumes audio recording. This API can be called only after the **'pause'** event
 start(): void
 ```
 
-Starts audio recording. This API can be called only after the **'prepare'** event is triggered.
+开始录制，需在'prepare'事件成功触发后，才能调用start方法。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.start](@ohos.multimedia.media:media.AVRecorder.start(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.start(callback:
+**替代接口：** start(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -318,13 +382,17 @@ Starts audio recording. This API can be called only after the **'prepare'** even
 stop(): void
 ```
 
-Stops audio recording.
+停止录音。
+
+> **说明：**
+> > 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [AVRecorder.stop](@ohos.multimedia.media:media.AVRecorder.stop(callback: AsyncCallback<void>))替代。
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVRecorder.stop(callback:
+**替代接口：** stop(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { serialManager } from '@ohos.usbManager.serial';
+import { serialManager } from '@kit.BasicServicesKit';
 ```
 
 ## writeSync
@@ -12,7 +12,8 @@ import { serialManager } from '@ohos.usbManager.serial';
 function writeSync(portId: number, buffer: Uint8Array, timeout?: number): number
 ```
 
-Writes data to the serial port device synchronously. The length of data written each time cannot exceed 4 KB; otherwise, data loss may occur. You are advised to write long data in multiple packets.
+Writes data to the serial port device synchronously. The length of data written each time cannot exceed 4 KB;
+otherwise, data loss may occur. You are advised to write long data in multiple packets.
 
 **Since:** 19
 

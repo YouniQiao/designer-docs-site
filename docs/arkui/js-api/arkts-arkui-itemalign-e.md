@@ -9,7 +9,7 @@ ItemAlign enumeration description
 ## Auto
 
 ```TypeScript
-Auto = 0
+Auto
 ```
 
 Use the default configuration in the Flex container.
@@ -25,7 +25,7 @@ Use the default configuration in the Flex container.
 ## Start
 
 ```TypeScript
-Start = 1
+Start
 ```
 
 The element is in the Flex container with the cross-axis direction head aligned.
@@ -41,7 +41,7 @@ The element is in the Flex container with the cross-axis direction head aligned.
 ## Center
 
 ```TypeScript
-Center = 2
+Center
 ```
 
 The element is centered in the Flex container with the cross axis direction aligned.
@@ -57,7 +57,7 @@ The element is centered in the Flex container with the cross axis direction alig
 ## End
 
 ```TypeScript
-End = 3
+End
 ```
 
 The element is bottom aligned in the Flex container with the cross axis direction.
@@ -73,7 +73,7 @@ The element is bottom aligned in the Flex container with the cross axis directio
 ## Baseline
 
 ```TypeScript
-Baseline = 4
+Baseline
 ```
 
 Element In the Flex container, the cross-axis direction text baseline is aligned.
@@ -89,10 +89,11 @@ Element In the Flex container, the cross-axis direction text baseline is aligned
 ## Stretch
 
 ```TypeScript
-Stretch = 5
+Stretch
 ```
 
-Element In a Flex container, the fill is stretched across the axis and, when no dimension is set, to the container size.
+Element In a Flex container, the fill is stretched across the axis and, when no dimension is set, to the container
+size.
 
 **Since:** 7
 

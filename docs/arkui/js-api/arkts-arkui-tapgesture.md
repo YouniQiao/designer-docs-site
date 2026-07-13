@@ -1,6 +1,12 @@
 # TapGesture
 
-TapGesture is used to trigger a tap gesture with one, two, or more taps. > **NOTE** > > When both double-tap and single-tap gestures are bound to a component with the double-tap gesture bound first, the > single-tap gesture will have a 300 ms delay.
+TapGesture is used to trigger a tap gesture with one, two, or more taps.
+
+> **NOTE**
+>
+> When both double-tap and single-tap gestures are bound to a component with the double-tap gesture bound first, the
+> single-tap gesture will have a 300 ms delay.
+
 
 ## TapGesture
 
@@ -8,7 +14,10 @@ TapGesture is used to trigger a tap gesture with one, two, or more taps. > **NOT
 TapGesture(value?: TapGestureParameters)
 ```
 
-Creates a tap gesture. Inherits from [GestureInterface<T>]{@link GestureInterface}. When triggered by keyboard or gamepad input, the gesture event's [SourceTool]{@link SourceTool} is **Unknown**, and [SourceType]{@link SourceType} is **KEY** or **JOYSTICK**.
+Creates a tap gesture. Inherits from [GestureInterface<T>]{@link GestureInterface}.
+
+When triggered by keyboard or gamepad input, the gesture event's [SourceTool]{@link SourceTool} is **Unknown**, and
+[SourceType]{@link SourceType} is **KEY** or **JOYSTICK**.
 
 **Since:** 7
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { resourceManager } from '@ohos.resourceManager';
+import { resourceManager } from '@kit.LocalizationKit';
 ```
 
 ## getSystemResourceManager
@@ -12,7 +12,13 @@ import { resourceManager } from '@ohos.resourceManager';
 export function getSystemResourceManager(): ResourceManager
 ```
 
-Obtains a system **ResourceManager** object. > **NOTE** > > The **Configuration** field in the **ResourceManager** object obtained via this API uses the default value, > which is as follows: > {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}.
+Obtains a system **ResourceManager** object.
+
+> **NOTE**
+>
+> The **Configuration** field in the **ResourceManager** object obtained via this API uses the default value,
+> which is as follows:
+> {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}.
 
 **Since:** 10
 

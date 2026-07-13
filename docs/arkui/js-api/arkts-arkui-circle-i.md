@@ -48,7 +48,9 @@ Y-coordinate of the center of the circle, in px.
 radius: number
 ```
 
-Radius of the circle, in px. Value range: [0, +∞).
+Radius of the circle, in px.
+
+Value range: [0, +∞).
 
 **Type:** number
 

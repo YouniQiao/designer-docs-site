@@ -9,7 +9,7 @@ FlexWrap enumeration description
 ## NoWrap
 
 ```TypeScript
-NoWrap = 0
+NoWrap
 ```
 
 The Flex container has a single row/column layout of elements, and children are allowed to go beyond the container.
@@ -25,10 +25,11 @@ The Flex container has a single row/column layout of elements, and children are 
 ## Wrap
 
 ```TypeScript
-Wrap = 1
+Wrap
 ```
 
-The elements of the Flex container are arranged in multiple rows or columns, and the sub-items are allowed to exceed the container.
+The elements of the Flex container are arranged in multiple rows or columns, and the sub-items are allowed to
+exceed the container.
 
 **Since:** 7
 
@@ -41,10 +42,11 @@ The elements of the Flex container are arranged in multiple rows or columns, and
 ## WrapReverse
 
 ```TypeScript
-WrapReverse = 2
+WrapReverse
 ```
 
-The elements of the Flex container are arranged in reverse multiple rows/columns, and children are allowed to exceed the container.
+The elements of the Flex container are arranged in reverse multiple rows/columns, and children are allowed to
+exceed the container.
 
 **Since:** 7
 

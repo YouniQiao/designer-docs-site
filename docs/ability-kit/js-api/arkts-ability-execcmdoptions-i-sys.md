@@ -2,7 +2,7 @@
 
 Options for executing a command.
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.Ability.AgentRuntime.Core
 
@@ -11,7 +11,7 @@ Options for executing a command.
 ## Modules to Import
 
 ```TypeScript
-import { cliManager } from '@ohos.app.cli.cliManager';
+import { cliManager } from '@kit.AbilityKit';
 ```
 
 ## background
@@ -20,11 +20,12 @@ import { cliManager } from '@ohos.app.cli.cliManager';
 background?: boolean
 ```
 
-Indicates whether the command is executed in the background. Default value is false.
+Indicates whether the command is executed in the background.
+Default value is false.
 
 **Type:** boolean
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -42,7 +43,7 @@ Indicates the event callback for receiving tool events. If provided, auto-subscr
 
 **Type:** ToolEventCallback
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -60,7 +61,7 @@ Indicates the environment variables for the command.
 
 **Type:** Record<string, string>
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -78,7 +79,7 @@ Indicates the security policy.
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -92,11 +93,12 @@ Indicates the security policy.
 timeout?: number
 ```
 
-Indicates the maximum execution time of the command, in seconds. Default value is 1800.
+Indicates the maximum execution time of the command, in seconds.
+Default value is 1800.
 
 **Type:** number
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -114,7 +116,7 @@ Indicates the working directory for the command.
 
 **Type:** string
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -128,11 +130,12 @@ Indicates the working directory for the command.
 yieldMs?: number
 ```
 
-Indicates the foreground waiting timeout in milliseconds. Default value is 0.
+Indicates the foreground waiting timeout in milliseconds.
+Default value is 0.
 
 **Type:** number
 
-**Since:** 26.1.0
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 

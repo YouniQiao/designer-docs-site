@@ -9,7 +9,7 @@ Represents the result returned.
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## certChains
@@ -34,7 +34,9 @@ Certificate chain information. The default value is **undefined**.
 outData?: Uint8Array
 ```
 
-Challenge obtained after the [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) operation. The default value is **undefined**.
+Challenge obtained after the
+[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
+operation. The default value is **undefined**.
 
 **Type:** Uint8Array
 
@@ -50,7 +52,9 @@ Challenge obtained after the [initSession](arkts-universalkeystore-initsession-f
 properties?: Array<HuksParam>
 ```
 
-Challenge obtained after the [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) operation. The default value is **undefined**.
+Challenge obtained after the
+[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
+operation. The default value is **undefined**.
 
 **Type:** Array<HuksParam>
 
@@ -71,8 +75,6 @@ Shared key.
 **Type:** Uint8Array
 
 **Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 

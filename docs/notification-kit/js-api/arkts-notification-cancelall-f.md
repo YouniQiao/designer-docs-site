@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## cancelAll
@@ -38,7 +38,7 @@ Cancels all notifications of this application. This API uses an asynchronous cal
 ```TypeScript
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// cancel callback
+// cancelAll callback
 let cancelAllCallback = (err: BusinessError): void => {
   if (err) {
     console.error(`Failed to cancel all notification. Code is ${err.code}, message is ${err.message}`);

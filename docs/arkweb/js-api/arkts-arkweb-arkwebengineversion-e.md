@@ -1,6 +1,8 @@
 # ArkWebEngineVersion
 
-For details about the ArkWeb kernel version, see [Adaptation Guide for the M114 Kernel on OpenHarmony 6.0](https://gitcode.com/openharmony-tpc/chromium_src/blob/132_trunk/web/ReleaseNote/CompatibleWithLegacyWebEngine.md) .
+For details about the ArkWeb kernel version, see
+[Adaptation Guide for the M114 Kernel on OpenHarmony 6.0](https://gitcode.com/openharmony-tpc/chromium_src/blob/132_trunk/web/ReleaseNote/CompatibleWithLegacyWebEngine.md)
+.
 
 **Since:** 20
 
@@ -24,7 +26,8 @@ Default system kernel. For OpenHarmony 6.0, the default kernel is M132.
 M114 = 1
 ```
 
-Legacy kernel of OpenHarmony 6.0. You can select this legacy kernel. If it does not exist, the setting is invalid.
+Legacy kernel of OpenHarmony 6.0. You can select this legacy kernel. If it does not exist, the setting is
+invalid.
 
 **Since:** 20
 
@@ -62,7 +65,8 @@ ArkWeb M144 version.
 ARKWEB_EVERGREEN = 99999
 ```
 
-Evergreen kernel, which is the latest kernel of the system. You can choose to use the latest kernel for each system version. This setting takes effect for OpenHarmony 6.1 and later versions.
+Evergreen kernel, which is the latest kernel of the system. You can choose to use the latest kernel for each
+system version. This setting takes effect for OpenHarmony 6.1 and later versions.
 
 **Since:** 23
 

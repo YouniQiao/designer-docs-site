@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## setDevicePairingConfirmation
@@ -12,7 +12,9 @@ import { bluetoothManager } from '@ohos.bluetoothManager';
 function setDevicePairingConfirmation(device: string, accept: boolean): void
 ```
 
-Sets the confirmation of pairing with a certain device. On API 10 and above, the permission required by this interface is changed from MANAGE_BLUETOOTH to ACCESS_BLUETOOTH and MANAGE_BLUETOOTH.
+Sets the confirmation of pairing with a certain device.
+On API 10 and above, the permission required by this interface is changed from MANAGE_BLUETOOTH to ACCESS_BLUETOOTH
+and MANAGE_BLUETOOTH.
 
 **Since:** 9
 
@@ -22,7 +24,7 @@ Sets the confirmation of pairing with a certain device. On API 10 and above, the
 
 **Required permissions:** 
 - API version 10+: ohos.permission.ACCESS_BLUETOOTH and ohos.permission.MANAGE_BLUETOOTH
-- API version 9 - 9: ohos.permission.MANAGE_BLUETOOTH
+- API version 9: ohos.permission.MANAGE_BLUETOOTH
 
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 

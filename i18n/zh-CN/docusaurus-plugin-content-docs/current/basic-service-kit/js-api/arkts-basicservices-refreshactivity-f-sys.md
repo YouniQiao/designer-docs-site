@@ -6,7 +6,9 @@
 function refreshActivity(reason: string): void
 ```
 
-刷新设备活动状态（如：重设屏幕超时息屏时间等）。 只有设备在活动状态下生效，设备活动状态见[power.isActive](arkts-basicservices-isactive-f.md#isactive-1)接口。
+刷新设备活动状态（如：重设屏幕超时息屏时间等）。
+
+只有设备在活动状态下生效，设备活动状态见[power.isActive](arkts-basicservices-isactive-f.md#isactive-1)接口。
 
 **起始版本：** 20
 

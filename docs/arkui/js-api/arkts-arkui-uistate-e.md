@@ -76,7 +76,9 @@ Disabled state.
 SELECTED = 1 << 3
 ```
 
-Selected state. Only supported by specific components: **Checkbox**, **Radio**, **Toggle**, **List**, **Grid**, **MenuItem**.
+Selected state.
+
+Only supported by specific components: **Checkbox**, **Radio**, **Toggle**, **List**, **Grid**, **MenuItem**.
 
 **Since:** 20
 

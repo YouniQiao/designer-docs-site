@@ -6,7 +6,10 @@
 function getLastWindow(ctx: BaseContext, callback: AsyncCallback<Window>): void
 ```
 
-获取当前应用内层级最高的子窗口，使用callback异步回调。 若无应用子窗口或子窗口未调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)进行显示，则返回应用主 窗口。
+获取当前应用内层级最高的子窗口，使用callback异步回调。
+
+若无应用子窗口或子窗口未调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)进行显示，则返回应用主
+窗口。
 
 **起始版本：** 9
 
@@ -25,7 +28,7 @@ function getLastWindow(ctx: BaseContext, callback: AsyncCallback<Window>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal. Possible cause:1. Top window or main window is null or destroyed;2. This window context is abnormal. |
 | [1300006](../errorcode-window.md#1300006-窗口上下文异常) | This window context is abnormal. |
 
@@ -82,7 +85,10 @@ export default class EntryAbility extends UIAbility {
 function getLastWindow(ctx: BaseContext): Promise<Window>
 ```
 
-获取当前应用内层级最高的子窗口，使用Promise异步回调。 若无应用子窗口或子窗口未调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)进行显示，则返回应用主 窗口。
+获取当前应用内层级最高的子窗口，使用Promise异步回调。
+
+若无应用子窗口或子窗口未调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)进行显示，则返回应用主
+窗口。
 
 **起始版本：** 9
 
@@ -106,7 +112,7 @@ function getLastWindow(ctx: BaseContext): Promise<Window>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal. Possible cause:1. Top window or main window is null or destroyed;2. This window context is abnormal. |
 | [1300006](../errorcode-window.md#1300006-窗口上下文异常) | This window context is abnormal. |
 

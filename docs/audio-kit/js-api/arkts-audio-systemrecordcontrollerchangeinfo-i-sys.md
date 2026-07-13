@@ -1,6 +1,7 @@
-# SystemRecordControllerChangeInfo
+# SystemRecordControllerChangeInfo (System API)
 
-Defines the information carried when the system recording controller state changes. It includes the enable status, application UID and expected audio source type.
+Defines the information carried when the system recording controller state changes.
+It includes the enable status, application UID and expected audio source type.
 
 **Since:** 26.0.0
 
@@ -14,19 +15,20 @@ Defines the information carried when the system recording controller state chang
 import { audio } from '@kit.AudioKit';
 ```
 
-## uid
+## enabled
 
 ```TypeScript
-uid?: int
+enabled: boolean
 ```
 
-The UID of the application that triggers the system recording controller state change. The value range is all integers.
+Whether the system recording controller panel is enabled.
+The value true means the panel is enabled, and false means disabled.
 
-**Type:** int
+**Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -38,31 +40,33 @@ The UID of the application that triggers the system recording controller state c
 sourceType?: SourceType
 ```
 
-The expected audio source type configured by the application when enabling the recording controller. It is used to match the corresponding recording scenario and noise reduction mode.
+The expected audio source type configured by the application when enabling the recording controller.
+It is used to match the corresponding recording scenario and noise reduction mode.
 
 **Type:** SourceType
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
 **System API:** This is a system API.
 
-## enabled
+## uid
 
 ```TypeScript
-enabled: boolean
+uid?: number
 ```
 
-Whether the system recording controller panel is enabled. The value true means the panel is enabled, and false means disabled.
+The UID of the application that triggers the system recording controller state change.
+The value range is all integers.
 
-**Type:** boolean
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 

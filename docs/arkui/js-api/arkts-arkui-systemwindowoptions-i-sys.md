@@ -11,7 +11,7 @@ Describes the parameters for creating a system window.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## windowType
@@ -20,7 +20,8 @@ import { window } from '@ohos.window';
 windowType: WindowType
 ```
 
-Window type. There is no default value. If null is passed in, the window fails to be created. **TYPE_DIALOG** is not supported.
+Window type. There is no default value. If null is passed in, the window fails to be created. **TYPE_DIALOG** is
+not supported.
 
 **Type:** WindowType
 

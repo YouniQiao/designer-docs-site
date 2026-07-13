@@ -12,5 +12,5 @@ import { AppServiceExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AppServiceExtensionAbility](arkts-appserviceextensionability-c.md) | AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后台服务的创建、销毁、连接、断开等生命周期回调。 |
+| [AppServiceExtensionAbility](arkts-ability-appserviceextensionability-c.md) | The AppServiceExtensionAbility module provides extended capabilities for background services, including lifecyclecallbacks for creating, destroying, connecting, and disconnecting background services. |
 

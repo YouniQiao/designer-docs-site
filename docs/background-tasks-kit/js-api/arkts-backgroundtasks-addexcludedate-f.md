@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { reminderAgentManager } from '@ohos.reminderAgentManager';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## addExcludeDate
@@ -12,7 +12,8 @@ import { reminderAgentManager } from '@ohos.reminderAgentManager';
 function addExcludeDate(reminderId: number, date: Date): Promise<void>
 ```
 
-Adds a non-reminder date for a recurring calendar reminder with a specific ID. For example, configure a daily reminder to skip notifications on Tuesdays. This API uses a promise to return the result.
+Adds a non-reminder date for a recurring calendar reminder with a specific ID. For example, configure a daily
+reminder to skip notifications on Tuesdays. This API uses a promise to return the result.
 
 **Since:** 12
 

@@ -64,7 +64,7 @@ Binds to or updates the specified styled string.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | StyledString | Yes | Styled string.<br>**NOTE**<br>The child class[MutableStyledString](arkts-arkui-mutablestyledstring-c.md#mutablestyledstring) of **StyledString** can also serve as the argument. |
+| value | StyledString | Yes | Styled string.<br>**NOTE**<br>The child class[MutableStyledString](arkts-arkui-mutablestyledstring-c.md) of **StyledString** can also serve as the argument. |
 
 ## setTextSelection
 
@@ -73,7 +73,29 @@ setTextSelection(selectionStart: number | undefined, selectionEnd: number | unde
                    options?: SelectionOptions): void
 ```
 
-Sets the text selection area, which will be highlighted. > **NOTE** > > If [copyOption](TextAttribute#copyOption) is set to **CopyOptions.None**, the setting of > **setTextSelection** does not take effect. > > If [textOverflow](TextAttribute#textOverflow) is set to **TextOverflow.MARQUEE**, the setting of > **setTextSelection** does not take effect. > > If the value of **selectionStart** is greater than or equal to that of **selectionEnd**, no text will be > selected. The value range is [0, textSize], where **textSize** indicates the maximum number of characters in the > text content. If the value is less than 0, the value **0** will be used. If the value is greater than > **textSize**, **textSize** will be used. > > If the selection range falls within a truncated or invisible area, selection is ignored. When truncation is > disabled, selection can extend beyond the parent component's bounds. > > On PC or 2-in-1 devices, calling **setTextSelection** does not show the menu even if **options** is set to > **MenuPolicy.SHOW**. > > When an emoji is truncated by the selection range, the emoji is selected if its start position is within the > specified text selection range.
+Sets the text selection area, which will be highlighted.
+
+> **NOTE**
+>
+> If [copyOption](TextAttribute#copyOption) is set to **CopyOptions.None**, the setting of
+> **setTextSelection** does not take effect.
+>
+> If [textOverflow](TextAttribute#textOverflow) is set to **TextOverflow.MARQUEE**, the setting of
+> **setTextSelection** does not take effect.
+>
+> If the value of **selectionStart** is greater than or equal to that of **selectionEnd**, no text will be
+> selected. The value range is [0, textSize], where **textSize** indicates the maximum number of characters in the
+> text content. If the value is less than 0, the value **0** will be used. If the value is greater than
+> **textSize**, **textSize** will be used.
+>
+> If the selection range falls within a truncated or invisible area, selection is ignored. When truncation is
+> disabled, selection can extend beyond the parent component's bounds.
+>
+> On PC or 2-in-1 devices, calling **setTextSelection** does not show the menu even if **options** is set to
+> **MenuPolicy.SHOW**.
+>
+> When an emoji is truncated by the selection range, the emoji is selected if its start position is within the
+> specified text selection range.
 
 **Since:** 23
 

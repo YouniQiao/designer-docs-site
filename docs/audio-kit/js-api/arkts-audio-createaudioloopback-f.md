@@ -1,12 +1,19 @@
 # createAudioLoopback
 
+## Modules to Import
+
+```TypeScript
+import { audio } from '@kit.AudioKit';
+```
+
 ## createAudioLoopback
 
 ```TypeScript
 function createAudioLoopback(mode: AudioLoopbackMode): Promise<AudioLoopback>
 ```
 
-Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear monitoring using a fast capturer and renderer.
+Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear
+monitoring using a fast capturer and renderer.
 
 **Since:** 26.0.0
 
@@ -22,14 +29,14 @@ Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear moni
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioLoopback> | Promise used to return the AudioLoopback instance. |
+| Promise&lt;AudioLoopback&gt; | Promise used to return the <b>AudioLoopback</b> instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-| 6800104 | Loopback mode is unsupported. |
+| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Loopback mode is unsupported. |
 
 **Example**
 

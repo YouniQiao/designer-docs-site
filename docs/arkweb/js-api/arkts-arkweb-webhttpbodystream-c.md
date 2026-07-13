@@ -9,7 +9,7 @@ The http body stream of the request.
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## getPosition
@@ -104,7 +104,8 @@ Whether data stream is chunked.
 isEof(): boolean
 ```
 
-Whether all data stream has been consumed. For chunked uploads, returns false until the first read attempt.
+Whether all data stream has been consumed. For chunked uploads,
+returns false until the first read attempt.
 
 **Since:** 12
 
@@ -124,7 +125,8 @@ Whether all data stream has been consumed. For chunked uploads, returns false un
 isInMemory(): boolean
 ```
 
-Returns true if the upload data in the stream is entirely in memory, and all read requests will succeed synchronously. Expected to return false for chunked requests.
+Returns true if the upload data in the stream is entirely in memory, and all read requests will succeed
+synchronously. Expected to return false for chunked requests.
 
 **Since:** 12
 

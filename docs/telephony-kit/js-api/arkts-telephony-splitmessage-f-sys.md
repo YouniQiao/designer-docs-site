@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sms } from '@ohos.telephony.sms';
+import { sms } from '@kit.TelephonyKit';
 ```
 
 ## splitMessage
@@ -12,7 +12,10 @@ import { sms } from '@ohos.telephony.sms';
 function splitMessage(content: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Splits a long SMS message into multiple fragments. <p>If the length of an SMS message exceeds the maximum length allowed (140 bytes), the SMS message is split into multiple segments for processing.
+Splits a long SMS message into multiple fragments.
+
+<p>If the length of an SMS message exceeds the maximum length allowed (140 bytes),
+the SMS message is split into multiple segments for processing.
 
 **Since:** 8
 
@@ -61,7 +64,10 @@ sms.splitMessage(content, (err: BusinessError, data: string[]) => {
 function splitMessage(content: string): Promise<Array<string>>
 ```
 
-Splits a long SMS message into multiple fragments. <p>If the length of an SMS message exceeds the maximum length allowed (140 bytes), the SMS message is split into multiple segments for processing.
+Splits a long SMS message into multiple fragments.
+
+<p>If the length of an SMS message exceeds the maximum length allowed (140 bytes),
+the SMS message is split into multiple segments for processing.
 
 **Since:** 8
 

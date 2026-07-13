@@ -1,6 +1,8 @@
 # EllipseShape
 
-Represents an ellipse shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md#baseshape).
+Represents an ellipse shape used in the **clipShape** and **maskShape** APIs.
+
+This API inherits from [BaseShape](arkts-arkui-baseshape-c.md).
 
 **Inheritance/Implementation:** EllipseShape extends [BaseShape<EllipseShape>](BaseShape<EllipseShape>)
 
@@ -11,7 +13,7 @@ Represents an ellipse shape used in the **clipShape** and **maskShape** APIs. Th
 ## Modules to Import
 
 ```TypeScript
-import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.shape';
+import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
 ## constructor

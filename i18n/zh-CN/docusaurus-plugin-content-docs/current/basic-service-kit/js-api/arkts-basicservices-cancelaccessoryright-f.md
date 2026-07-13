@@ -6,7 +6,9 @@
 function cancelAccessoryRight(accessory: USBAccessory): void
 ```
 
-取消当前应用程序访问USB配件的权限。 需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到 [USBAccessory](arkts-basicservices-usbaccessory-i.md#usbaccessory)作为参数。
+取消当前应用程序访问USB配件的权限。
+需要调用[usbManager.getAccessoryList](arkts-basicservices-getaccessorylist-f.md#getaccessorylist-1)获取配件列表，得到
+[USBAccessory](arkts-basicservices-usbaccessory-i.md)作为参数。
 
 **起始版本：** 14
 
@@ -22,8 +24,8 @@ function cancelAccessoryRight(accessory: USBAccessory): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 | [14401001](../../apis-basic-services-kit/errorcode-usb.md#14401001-目标usb配件未匹配) | The target USBAccessory not matched. |
 | [14400004](../../apis-basic-services-kit/errorcode-usb.md#14400004-服务异常) | Service exception. Possible causes:<br>1. No accessory is plugged in. |
 | [14400005](../../apis-basic-services-kit/errorcode-usb.md#14400005-数据库操作异常) | Database operation exception. |

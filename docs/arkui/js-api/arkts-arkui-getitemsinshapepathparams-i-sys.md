@@ -11,7 +11,7 @@ Image options setted when need to get the image objects.
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## images
@@ -38,7 +38,8 @@ image information.
 ratio?: number
 ```
 
-The proportion of non-transparent blank pixels in the selected area relative to the total pixels of the image. Default value is 0.15.
+The proportion of non-transparent blank pixels in the selected area
+relative to the total pixels of the image. Default value is 0.15.
 
 **Type:** number
 

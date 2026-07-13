@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceSettings } from '@ohos.enterprise.deviceSettings';
+import { deviceSettings } from '@kit.MDMKit';
 ```
 
 ## getValueForAccount
@@ -12,7 +12,8 @@ import { deviceSettings } from '@ohos.enterprise.deviceSettings';
 function getValueForAccount(admin: Want, item: SettingsItem, accountId: number): string
 ```
 
-Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user, such as obtaining the device name of user 100.
+Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user,
+such as obtaining the device name of user 100.
 
 **Since:** 24
 
@@ -34,7 +35,7 @@ Obtains the device policy of a specified user. This API allows you to obtain a s
 
 | Type | Description |
 | --- | --- |
-| string | Policy type value.<br>When **item** is set to [SettingsItem.DEVICE_NAME](arkts-mdm-settingsitem-e.md#settingsitem), this API returns thedevice name of the current user. If the device name of another user is queried, error code 9200012 is returned.<br>When **item** is set to [SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md#settingsitem),this API returns the three-key navigation switch state for the specified user.<br>When **item** is set to [SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md#settingsitem),this API can be called properly on phones and tablets but returns error code 801 on other devices. |
+| string | Policy type value.<br>When **item** is set to [SettingsItem.DEVICE_NAME](arkts-mdm-settingsitem-e.md), this API returns thedevice name of the current user. If the device name of another user is queried, error code 9200012 is returned.<br>When **item** is set to [SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md),this API returns the three-key navigation switch state for the specified user.<br>When **item** is set to [SettingsItem.FLOATING_NAVIGATION](arkts-mdm-settingsitem-e.md),this API can be called properly on phones and tablets but returns error code 801 on other devices. |
 
 **Error codes:**
 

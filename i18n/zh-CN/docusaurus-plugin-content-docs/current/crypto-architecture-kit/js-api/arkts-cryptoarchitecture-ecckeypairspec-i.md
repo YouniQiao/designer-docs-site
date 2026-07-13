@@ -1,8 +1,11 @@
 # ECCKeyPairSpec
 
-密钥参数[AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#asykeyspec)的子类，用于指定ECC算法中公私钥包含的全量参数。 在使用密钥参数生成密钥时，将其传入[createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1)方法 创建密钥生成器。
+密钥参数[AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md)的子类，用于指定ECC算法中公私钥包含的全量参数。
 
-**继承/实现关系：** ECCKeyPairSpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#asykeyspec)
+在使用密钥参数生成密钥时，将其传入[createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1)方法
+创建密钥生成器。
+
+**继承/实现关系：** ECCKeyPairSpec extends [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md)
 
 **起始版本：** 10
 

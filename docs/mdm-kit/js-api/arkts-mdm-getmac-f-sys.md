@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## getMac
@@ -12,7 +12,8 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function getMac(admin: Want, networkInterface: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the MAC address of a device based on the network interface. This API uses an asynchronous callback to return the result.
+Obtains the MAC address of a device based on the network interface. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 10
 

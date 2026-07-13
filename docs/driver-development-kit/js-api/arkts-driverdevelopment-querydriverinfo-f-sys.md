@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.driver.deviceManager';
+import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
 ## queryDriverInfo
@@ -12,7 +12,8 @@ import { deviceManager } from '@ohos.driver.deviceManager';
 function queryDriverInfo(driverUid?: string): Array<Readonly<DriverInfo>>
 ```
 
-Obtains the list of detailed information about peripheral drivers. If the device has no peripheral device connected, an empty list is returned.
+Obtains the list of detailed information about peripheral drivers. If the device has no peripheral device
+connected, an empty list is returned.
 
 **Since:** 12
 

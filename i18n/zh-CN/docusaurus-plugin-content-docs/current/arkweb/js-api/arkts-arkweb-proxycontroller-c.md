@@ -12,7 +12,9 @@ This class is used for set proxy for ArkWeb.
 static applyProxyOverride(proxyConfig: ProxyConfig, callback: OnProxyConfigChangeCallback): void
 ```
 
-设置应用中所有Web使用的代理配置，与[insertBypassRule](arkts-arkweb-proxyconfig-c.md#insertbypassrule-1)中插入的bypass规则匹配 的URL将不会使用代理，而是直接向URL指定的源地址发起请求。代理设置成功后，不保证网络连接后会立即使用新的代理设置，在加载页面之前请等待监听器触发，这个监听器将在UI线程上被调用。 注意：调用 `applyProxyOverride` 会导致忽略任何现有的系统范围设置。
+设置应用中所有Web使用的代理配置，与[insertBypassRule](arkts-arkweb-proxyconfig-c.md#insertbypassrule-1)中插入的bypass规则匹配
+的URL将不会使用代理，而是直接向URL指定的源地址发起请求。代理设置成功后，不保证网络连接后会立即使用新的代理设置，在加载页面之前请等待监听器触发，这个监听器将在UI线程上被调用。
+注意：调用 `applyProxyOverride` 会导致忽略任何现有的系统范围设置。
 
 **起始版本：** 15
 
@@ -31,7 +33,7 @@ static applyProxyOverride(proxyConfig: ProxyConfig, callback: OnProxyConfigChang
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 
 ## removeProxyOverride
 
@@ -57,5 +59,5 @@ static removeProxyOverride(callback: OnProxyConfigChangeCallback): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## startBluetoothDiscovery
@@ -12,7 +12,9 @@ import { bluetoothManager } from '@ohos.bluetoothManager';
 function startBluetoothDiscovery(): void
 ```
 
-Starts scanning Bluetooth devices. On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and LOCATION and APPROXIMATELY_LOCATION to ACCESS_BLUETOOTH.
+Starts scanning Bluetooth devices.
+On API 10 and above, the permission required by this interface is changed from DISCOVER_BLUETOOTH and LOCATION and
+APPROXIMATELY_LOCATION to ACCESS_BLUETOOTH.
 
 **Since:** 9
 
@@ -22,7 +24,7 @@ Starts scanning Bluetooth devices. On API 10 and above, the permission required 
 
 **Required permissions:** 
 - API version 10+: ohos.permission.ACCESS_BLUETOOTH
-- API version 9 - 9: ohos.permission.DISCOVER_BLUETOOTH and ohos.permission.LOCATION and ohos.permission.APPROXIMATELY_LOCATION
+- API version 9: ohos.permission.DISCOVER_BLUETOOTH and ohos.permission.LOCATION and ohos.permission.APPROXIMATELY_LOCATION
 
 **System capability:** SystemCapability.Communication.Bluetooth.Core
 

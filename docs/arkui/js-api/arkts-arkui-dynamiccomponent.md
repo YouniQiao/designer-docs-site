@@ -2,13 +2,15 @@
 
 Provide an interface for the DynamicComponent, which is used to render UI of other ABC
 
+
 ## DynamicComponent
 
 ```TypeScript
 DynamicComponent(options: DynamicOptions)
 ```
 
-Construct the DynamicComponentInterface.<br/> Called when the DynamicComponentInterface is used.
+Construct the DynamicComponentInterface.<br/>
+Called when the DynamicComponentInterface is used.
 
 **Since:** 26.0.0
 

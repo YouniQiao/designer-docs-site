@@ -1,9 +1,23 @@
 # @ohos.promptAction
 
+This module provides API for creating and displaying toasts, dialog boxes, and action menus.
+
+> **NOTE**
+>
+> - This module cannot be used in the file declaration of the [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md). In
+> other words, the APIs of this module can be used only after a component instance is created; they cannot be called
+> in the lifecycle of the UIAbility.
+>
+> - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used
+> where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see
+> [UIContext](arkts-arkui-uicontext.md). It is recommended that you use the dialog box APIs provided by
+> **UIContext**<!--Del-->, except for UI-less scenarios such as
+> [ServiceExtensionAbility](../../../../application-models/serviceextensionability-sys.md)<!--DelEnd-->.
+
 ## Modules to Import
 
 ```TypeScript
-import { LevelMode,ImmersiveMode,LevelOrder } from '@kit.ArkUI';
+import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,24 +26,24 @@ import { LevelMode,ImmersiveMode,LevelOrder } from '@kit.ArkUI';
 
 | Name | Description |
 | --- | --- |
-| [promptAction](arkts-promptaction-n.md) | 创建并显示即时反馈、对话框和操作菜单。 > **说明：** > - 本模块不支持在[UIAbility]{@link @ohos.app.ability.UIAbility}的文件声明处使用，即不能在UIAbility的生命周期中调用，需要在 创建组件实例后使用。 > > - 本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](docroot://ui/arkts-global-interface.md#ui上下文不明确)的地方使用，参见 > [UIContext]{@link @ohos.arkui.UIContext}说明。建议<!--Del-->在除 > [ServiceExtensionAbility](docroot://application-models/serviceextensionability-sys.md)等无UI界面的场景外，均<!--DelEnd-->使用 > UIContext中的弹窗方法。 |
+| [promptAction](arkts-arkui-promptaction-n.md) | This module provides API for creating and displaying toasts, dialog boxes, and action menus.&gt; **NOTE**&gt;&gt; - This module cannot be used in the file declaration of the [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md). In &gt; other words, the APIs of this module can be used only after a component instance is created; they cannot be called &gt; in the lifecycle of the UIAbility.&gt;&gt; - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used &gt; where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see &gt; [UIContext](arkts-arkui-uicontext.md). It is recommended that you use the dialog box APIs provided by &gt; **UIContext**&lt;!--Del--&gt;, except for UI-less scenarios such as &gt; [ServiceExtensionAbility](../../../../application-models/serviceextensionability-sys.md)&lt;!--DelEnd--&gt;. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [LevelOrder](arkts-levelorder-c.md) | 弹窗层级，可以控制弹窗显示的顺序。 |
+| [LevelOrder](arkts-arkui-levelorder-c.md) | Defines the display order of a dialog box. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DismissDialogAction](arkts-dismissdialogaction-i.md) | Dialog关闭的信息。 |
+| [DismissDialogAction](arkts-arkui-dismissdialogaction-i.md) | Provides information about the action to dismiss the dialog box. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ImmersiveMode](arkts-immersivemode-e.md) | 页面内弹窗蒙层显示区域模式。 |
-| [LevelMode](arkts-levelmode-e.md) | 弹窗显示层级模式。 |
+| [ImmersiveMode](arkts-arkui-immersivemode-e.md) | Enumerates the display area modes of the dialog box overlay within a page. |
+| [LevelMode](arkts-arkui-levelmode-e.md) | Enumerates the display level modes of the dialog box. |
 

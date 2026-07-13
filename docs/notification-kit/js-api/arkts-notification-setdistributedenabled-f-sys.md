@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setDistributedEnabled
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function setDistributedEnabled(enable: boolean, deviceType: string): Promise<void>
 ```
 
-Sets whether the device of a specified type enables cross-device notification. This API uses a promise to return the result.
+Sets whether the device of a specified type enables cross-device notification. This API uses a promise to return
+the result.
 
 **Since:** 20
 

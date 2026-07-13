@@ -1,6 +1,11 @@
 # Uint16Array
 
-A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md#collections). > **NOTE** > > - This module can be imported only to ArkTS files (with the file name extension .ets). > **Decorator**: \@Sendable
+A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md).
+
+> **NOTE**
+>
+> - This module can be imported only to ArkTS files (with the file name extension .ets).
+> **Decorator**: \@Sendable
 
 **Since:** 12
 
@@ -11,7 +16,7 @@ A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collect
 ## Modules to Import
 
 ```TypeScript
-import { collections } from '@arkts.collections';
+import { collections } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -368,7 +373,8 @@ Returns a new ArkTS Uint16Array that contains all elements that meet the given c
 find(predicate: TypedArrayPredicateFn<number, Uint16Array>): number | undefined
 ```
 
-Returns the value of the first element that passes a test provided by a callback function. If none of the elements pass the test, **undefined** is returned.
+Returns the value of the first element that passes a test provided by a callback function. If none of the
+elements pass the test, **undefined** is returned.
 
 **Since:** 12
 
@@ -401,7 +407,8 @@ Returns the value of the first element that passes a test provided by a callback
 findIndex(predicate: TypedArrayPredicateFn<number, Uint16Array>): number
 ```
 
-Returns the index of the first element that passes a test provided by a callback function. If none of the elements pass the test, **-1** is returned.
+Returns the index of the first element that passes a test provided by a callback function. If none of the
+elements pass the test, **-1** is returned.
 
 **Since:** 12
 
@@ -575,7 +582,8 @@ Checks whether elements are contained in this ArkTS Float32Array.
 indexOf(searchElement: number, fromIndex?: number): number
 ```
 
-Returns the index of the first occurrence of a value in this ArkTS Float32Array. If the value is not found, **-1** is returned.
+Returns the index of the first occurrence of a value in this ArkTS Float32Array. If the value is not found,
+**-1** is returned.
 
 **Since:** 12
 
@@ -703,7 +711,8 @@ Obtains the index of the last occurrence of the specified value in this ArkTS Ui
 map(callbackFn: TypedArrayMapCallback<number, Uint16Array>): Uint16Array
 ```
 
-Applies a callback function to each element in this ArkTS Uint16Array and uses the result to create an ArkTS Uint 16Array.
+Applies a callback function to each element in this ArkTS Uint16Array and uses the result to create an ArkTS Uint
+16Array.
 
 **Since:** 12
 
@@ -795,7 +804,8 @@ Applies a reduce function on each element in this ArkTS Uint16Array and returns 
 reduce(callbackFn: TypedArrayReduceCallback<number, number, Uint16Array>, initialValue: number): number
 ```
 
-Applies a reduce function for each element in this ArkTS Uint16Array, receives an initial value as the parameter called by the reduce function for the first time, and returns the final reduction result.
+Applies a reduce function for each element in this ArkTS Uint16Array, receives an initial value as the parameter
+called by the reduce function for the first time, and returns the final reduction result.
 
 **Since:** 12
 
@@ -829,7 +839,8 @@ Applies a reduce function for each element in this ArkTS Uint16Array, receives a
 reduce<U>(callbackFn: TypedArrayReduceCallback<U, number, Uint16Array>, initialValue: U): U
 ```
 
-Applies a reduce function for each element in this ArkTS Uint16Array, receives an initial value as the parameter called by the reduce function for the first time, and returns the final reduction result.
+Applies a reduce function for each element in this ArkTS Uint16Array, receives an initial value as the parameter
+called by the reduce function for the first time, and returns the final reduction result.
 
 **Since:** 12
 
@@ -863,7 +874,9 @@ Applies a reduce function for each element in this ArkTS Uint16Array, receives a
 reduceRight<U = number>(callbackFn: TypedArrayReduceCallback<U, number, Uint16Array>, initialValue: U): U
 ```
 
-Reversely traverses this ArkTS Uint16Array, applies a reduce function for each element in the array, receives an initial value as the parameter called by the reduce function for the first time, and returns the final reduction result.
+Reversely traverses this ArkTS Uint16Array, applies a reduce function for each element in the array, receives an
+initial value as the parameter called by the reduce function for the first time, and returns the final reduction
+result.
 
 **Since:** 18
 
@@ -897,7 +910,8 @@ Reversely traverses this ArkTS Uint16Array, applies a reduce function for each e
 reduceRight(callbackFn: TypedArrayReduceCallback<number, number, Uint16Array>): number
 ```
 
-Reversely traverses this ArkTS Uint16Array, applies a reduce function on each element in the array, and returns the final reduction result.
+Reversely traverses this ArkTS Uint16Array, applies a reduce function on each element in the array, and returns
+the final reduction result.
 
 **Since:** 18
 
@@ -1085,7 +1099,8 @@ Sorts elements in this ArkTS Uint16Array and returns the sorted ArkTS Uint16Arra
 subarray(begin?: number, end?: number): Uint16Array
 ```
 
-Truncates an array from a specified position and returns a new ArkTS Uint16Array based on the same ArkTS ArrayBuffer.
+Truncates an array from a specified position and returns a new ArkTS Uint16Array based on the same ArkTS
+ArrayBuffer.
 
 **Since:** 12
 
@@ -1119,7 +1134,9 @@ Truncates an array from a specified position and returns a new ArkTS Uint16Array
 toLocaleString(): string
 ```
 
-Generates a string of digits that matches the cultural conventions of the current system locale. Each element converts its digits to a string via its **toLocaleString** API, and these strings are then joined in sequence with commas (,).
+Generates a string of digits that matches the cultural conventions of the current system locale. Each element
+converts its digits to a string via its **toLocaleString** API, and these strings are then joined in sequence
+with commas (,).
 
 **Since:** 18
 

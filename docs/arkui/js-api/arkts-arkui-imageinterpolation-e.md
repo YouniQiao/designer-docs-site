@@ -60,7 +60,8 @@ MipMap interpolation.
 High = 3
 ```
 
-Cubic interpolation. This mode produces scaled images of the highest possible quality, but may require more image rendering time.
+Cubic interpolation. This mode produces scaled images of the highest possible quality, but may require more image
+rendering time.
 
 **Since:** 7
 

@@ -1,6 +1,7 @@
 # AnimationController
 
-Implements an animation controller object. It provides APIs for playing, stopping, resuming, and pausing animations, as well as querying the status.
+Implements an animation controller object. It provides APIs for playing, stopping, resuming, and pausing animations,
+as well as querying the status.
 
 **Since:** 21
 
@@ -9,7 +10,7 @@ Implements an animation controller object. It provides APIs for playing, stoppin
 ## Modules to Import
 
 ```TypeScript
-import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@ohos.arkui.drawableDescriptor';
+import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
 ## getStatus

@@ -1,19 +1,21 @@
 # PhotoViewPicker
 
-Provides APIs for selecting and saving images or videos. You are advised to use [PhotoViewPicker of PhotoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md#photoaccesshelper) to select a file. Before using the APIs of **PhotoViewPicker**, you need to create a **PhotoViewPicker** instance.
+Provides APIs for selecting and saving images or videos. You are advised to use
+[PhotoViewPicker of PhotoAccessHelper](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md) to select a file.
+Before using the APIs of **PhotoViewPicker**, you need to create a **PhotoViewPicker** instance.
 
 **Since:** 9
 
 **Deprecated since:** 12
 
-**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md#photoviewpicker)
+**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -22,13 +24,14 @@ import { picker } from '@ohos.file.picker';
 constructor()
 ```
 
-A constructor used to create a PhotoViewPicker instance. This constructor is not recommended due to the potential risk of operation failure.
+A constructor used to create a PhotoViewPicker instance. This constructor is not recommended due to
+the potential risk of operation failure.
 
 **Since:** 12
 
 **Deprecated since:** 18
 
-**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md#photoviewpicker)
+**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -47,13 +50,14 @@ let photoPicker = new picker.PhotoViewPicker(); // Construction without paramete
 constructor(context: Context)
 ```
 
-A constructor used to create a PhotoViewPicker instance. This constructor is recommended. For details about how to obtain the context, see [getHostContext](@ohos.arkui.UIContext.UIContext#getHostContext).
+A constructor used to create a PhotoViewPicker instance. This constructor is recommended. For details about how
+to obtain the context, see [getHostContext](@ohos.arkui.UIContext.UIContext#getHostContext).
 
 **Since:** 12
 
 **Deprecated since:** 18
 
-**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md#photoviewpicker)
+**Substitutes:** [PhotoViewPicker](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
@@ -61,7 +65,7 @@ A constructor used to create a PhotoViewPicker instance. This constructor is rec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). |
+| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). |
 
 **Example**
 
@@ -98,7 +102,8 @@ struct Index {
 save(option?: PhotoSaveOptions): Promise<Array<string>>
 ```
 
-Starts a **photoPicker** page for the user to save one or more images or videos. This API uses a promise to return the result. You can pass in **PhotoSaveOptions** to specify the URIs of the images or videos to save.
+Starts a **photoPicker** page for the user to save one or more images or videos. This API uses a promise to
+return the result. You can pass in **PhotoSaveOptions** to specify the URIs of the images or videos to save.
 
 **Since:** 9
 
@@ -150,7 +155,9 @@ async function example04(context: common.UIAbilityContext) { // Ensure that cont
 save(option: PhotoSaveOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **photoPicker** page for the user to save one or more images or videos. This API uses an asynchronous callback to return the result. You can pass in **PhotoSaveOptions** to specify the URIs of the images or videos to save.
+Starts a **photoPicker** page for the user to save one or more images or videos. This API uses an asynchronous
+callback to return the result. You can pass in **PhotoSaveOptions** to specify the URIs of the images or videos
+to save.
 
 **Since:** 9
 
@@ -199,7 +206,8 @@ async function example05(context: common.UIAbilityContext) { // Ensure that cont
 save(callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **photoPicker** page for the user to save one or more images or videos. This API uses an asynchronous callback to return the URIs of the images or videos to save.
+Starts a **photoPicker** page for the user to save one or more images or videos. This API uses an asynchronous
+callback to return the URIs of the images or videos to save.
 
 **Since:** 9
 
@@ -245,7 +253,9 @@ async function example06(context: common.UIAbilityContext) { // Ensure that cont
 select(option?: PhotoSelectOptions): Promise<PhotoSelectResult>
 ```
 
-Starts a **photoPicker** page for the user to select one or more images or videos. This API uses a promise to return the result. You can pass in **PhotoSelectOptions** to specify the type and maximum number of the files to select.
+Starts a **photoPicker** page for the user to select one or more images or videos. This API uses a promise to
+return the result. You can pass in **PhotoSelectOptions** to specify the type and maximum number of the files to
+select.
 
 **Since:** 9
 
@@ -300,7 +310,9 @@ async function example01(context: common.UIAbilityContext) { // Ensure that cont
 select(option: PhotoSelectOptions, callback: AsyncCallback<PhotoSelectResult>): void
 ```
 
-Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous callback to return the result. You can pass in **PhotoSelectOptions** to specify the type and maximum number of the files to select.
+Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous
+callback to return the result. You can pass in **PhotoSelectOptions** to specify the type and maximum number of
+the files to select.
 
 **Since:** 9
 
@@ -352,7 +364,8 @@ async function example02(context: common.UIAbilityContext) { // Ensure that cont
 select(callback: AsyncCallback<PhotoSelectResult>): void
 ```
 
-Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous callback to return the result.
+Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 

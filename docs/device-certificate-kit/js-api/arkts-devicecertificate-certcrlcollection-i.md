@@ -9,7 +9,7 @@ Provides APIs for locating certificates or CRLs in a **CertCRLCollection** objec
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## selectCRLs
@@ -379,7 +379,8 @@ async function selectCerts() {
 selectCerts(param: X509CertMatchParameters, callback: AsyncCallback<Array<X509Cert>>): void
 ```
 
-Selects certificates that match the specified parameters. This API uses an asynchronous callback to return the result.
+Selects certificates that match the specified parameters. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 11
 

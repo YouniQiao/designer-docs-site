@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## getPermissionUsedRecord
@@ -12,7 +12,9 @@ import { privacyManager } from '@ohos.privacyManager';
 function getPermissionUsedRecord(request: PermissionUsedRequest): Promise<PermissionUsedResponse>
 ```
 
-Queries the access records of sensitive permission.
+Obtains historical permission usage records, which can be used in permission auditing or security monitoring
+scenarios, such as checking an application's usage of sensitive permissions within a specified time period.
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -26,23 +28,23 @@ Queries the access records of sensitive permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | PermissionUsedRequest | Yes | The request of permission used records. |
+| request | PermissionUsedRequest | Yes | Request for querying permission usage records. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PermissionUsedResponse&gt; | Return the response of permission used records. |
+| Promise&lt;PermissionUsedResponse&gt; | Promise used to return the queried permission usage record. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.PERMISSION_USED_STATS". |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The value of flag, begin, or end in request is invalid. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 
 **Example**
 
@@ -76,11 +78,12 @@ privacyManager.getPermissionUsedRecord(request).then((data) => {
 ```TypeScript
 function getPermissionUsedRecord(
     request: PermissionUsedRequest,
-    callback: AsyncCallback<PermissionUsedResponse>
-  ): void
+    callback: AsyncCallback<PermissionUsedResponse>): void
 ```
 
-Queries the access records of sensitive permission.
+Obtains historical permission usage records, which can be used in permission auditing or security monitoring
+scenarios, such as checking an application's usage of sensitive permissions within a specified time period.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -94,18 +97,18 @@ Queries the access records of sensitive permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | PermissionUsedRequest | Yes | The request of permission used records. |
-| callback | AsyncCallback&lt;PermissionUsedResponse&gt; | Yes | Return the response of permission used records. |
+| request | PermissionUsedRequest | Yes | Request for querying permission usage records. |
+| callback | AsyncCallback&lt;PermissionUsedResponse&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined**, and data is the permission usage record is obtained. Otherwise,**err** is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.PERMISSION_USED_STATS". |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The value of flag, begin, or end in request is invalid. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 
 **Example**
 

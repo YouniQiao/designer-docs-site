@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## symlinkSync
@@ -12,7 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function symlinkSync(target: string, srcPath: string): void
 ```
 
-Creates a symbolic link based on the file path. This API returns the result synchronously. > **NOTE** > > Since API version 11, this API cannot be used by third-party applications.
+Creates a symbolic link based on the file path. This API returns the result synchronously.
+
+> **NOTE**
+>
+> Since API version 11, this API cannot be used by third-party applications.
 
 **Since:** 9
 

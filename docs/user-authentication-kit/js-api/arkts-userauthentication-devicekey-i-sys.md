@@ -1,6 +1,7 @@
 # DeviceKey (System API)
 
-Defines the device key.
+Defines the device service ID. It uniquely identifies a device and its user, including the device ID type, device
+ID, and user ID.
 
 **Since:** 23
 
@@ -11,7 +12,7 @@ Defines the device key.
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## deviceId
@@ -20,7 +21,8 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 deviceId: string
 ```
 
-Device ID.
+Device ID. It is a string that uniquely identifies a device. The format is determined by the value of
+**deviceIdType**.
 
 **Type:** string
 
@@ -38,7 +40,9 @@ Device ID.
 deviceIdType: number
 ```
 
-Device ID type. You can customize the extension based on [DeviceIdType](arkts-userauthentication-deviceidtype-e-sys.md#deviceidtype).
+Enumerates device ID types. They are used to specify the type of the device service ID and can be extended
+based on [DeviceIdType](arkts-userauthentication-deviceidtype-e-sys.md). For example, you can use
+**UNIFIED_DEVICE_ID(1)** to indicate the unified device ID or use the vendor-defined value (≥ 10000).
 
 **Type:** number
 
@@ -56,7 +60,8 @@ Device ID type. You can customize the extension based on [DeviceIdType](arkts-us
 deviceUserId: number
 ```
 
-Device user ID.
+Device user ID. It is an integer greater than or equal to 0 and is used to distinguish different users on the
+device.
 
 **Type:** number
 

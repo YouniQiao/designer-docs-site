@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## unshare
@@ -16,7 +16,8 @@ function unshare(
     ): void
 ```
 
-Unshares data based on the specified shared resource ID and participants. This API uses an asynchronous callback to return the result.
+Unshares data based on the specified shared resource ID and participants.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -80,7 +81,8 @@ function unshare(
     ): Promise<Result<Array<Result<Participant>>>>
 ```
 
-Unshares data based on the specified shared resource ID and participants. This API uses a promise to return the result.
+Unshares data based on the specified shared resource ID and participants.
+This API uses a promise to return the result.
 
 **Since:** 11
 

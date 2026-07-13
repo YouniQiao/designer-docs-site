@@ -12,7 +12,8 @@ Enumerates the PiP template types.
 VIDEO_PLAY = 0
 ```
 
-Video playback template. A PiP window will be started during video playback, and the video playback template will be loaded. The template contains the play/pause component by default.
+Video playback template. A PiP window will be started during video playback, and the video playback template will
+be loaded. The template contains the play/pause component by default.
 
 **Since:** 11
 
@@ -26,7 +27,8 @@ Video playback template. A PiP window will be started during video playback, and
 VIDEO_CALL = 1
 ```
 
-Video call template. A PiP window will be started during a video call, and the video call template will be loaded.
+Video call template. A PiP window will be started during a video call, and the video call template will be
+loaded.
 
 **Since:** 11
 
@@ -40,7 +42,8 @@ Video call template. A PiP window will be started during a video call, and the v
 VIDEO_MEETING = 2
 ```
 
-Video meeting template. A PiP window will be started during a video meeting, and the video meeting template will be loaded.
+Video meeting template. A PiP window will be started during a video meeting, and the video meeting template will
+be loaded.
 
 **Since:** 11
 

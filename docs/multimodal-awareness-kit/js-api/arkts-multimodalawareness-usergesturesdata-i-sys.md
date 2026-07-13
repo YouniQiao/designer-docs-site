@@ -2,7 +2,7 @@
 
 Defines user gesture data.
 
-**Inheritance/Implementation:** UserGesturesData extends [UserFacesData](arkts-multimodalawareness-userfacesdata-i-sys.md#userfacesdata)
+**Inheritance/Implementation:** UserGesturesData extends [UserFacesData](arkts-multimodalawareness-userfacesdata-i-sys.md)
 
 **Since:** 26.0.0
 
@@ -13,7 +13,7 @@ Defines user gesture data.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## directionAngle
@@ -23,6 +23,7 @@ directionAngle?: number[]
 ```
 
 Angle between user gesture and screen directions.
+The value ranges from 0 to 90, in degrees.
 
 **Type:** number[]
 
@@ -40,7 +41,7 @@ Angle between user gesture and screen directions.
 gestureSpeed?: number[]
 ```
 
-Gesture speed.
+Gesture speed, in frames per second (fps).
 
 **Type:** number[]
 
@@ -59,6 +60,7 @@ handPosition?: number[]
 ```
 
 Hand position relative to screen.
+The normalized coordinate system ranges from 0 to 640.
 
 **Type:** number[]
 
@@ -76,7 +78,8 @@ Hand position relative to screen.
 handType?: number
 ```
 
-User static gesture type. The value range is all integers.
+User static gesture type.
+The value ranges from 0 to 3. 0: Palm, 1: Fist, 2: Scissors, 3: Finger heart.
 
 **Type:** number
 
@@ -112,7 +115,8 @@ Whether user hand exists.
 motionGesture?: number
 ```
 
-User dynamic gesture type. The value range is all integers.
+User dynamic gesture type.
+The value ranges from 0 to 3. 0: Up, 1: Down, 2: Screen capture, 3: Release.
 
 **Type:** number
 

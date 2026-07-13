@@ -9,7 +9,7 @@ Describes the image embedding functions of the multi-modal embedding model.
 ## Modules to Import
 
 ```TypeScript
-import { intelligence } from '@ohos.data.intelligence';
+import { intelligence } from '@kit.ArkData';
 ```
 
 ## getEmbedding
@@ -18,7 +18,8 @@ import { intelligence } from '@ohos.data.intelligence';
 getEmbedding(image: Image): Promise<Array<number>>
 ```
 
-Obtains the embedding vector of the given image. The model can handle images below 20 MB in size in a single inference.
+Obtains the embedding vector of the given image.
+The model can handle images below 20 MB in size in a single inference.
 
 **Since:** 15
 

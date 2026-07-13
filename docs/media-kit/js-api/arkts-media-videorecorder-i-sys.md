@@ -1,6 +1,8 @@
-# VideoRecorder
+# VideoRecorder (System API)
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder. Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder() to create an VideoRecorder instance.
+The maintenance of this interface has been stopped since version api 9. Please use AVRecorder.
+Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder()
+to create an VideoRecorder instance.
 
 **Since:** 9
 
@@ -32,16 +34,16 @@ get input surface.it must be called between prepare completed and start.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string> | Yes | Callback used to return the input surface id in string. |
+| callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the input surface id in string. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -64,35 +66,6 @@ videoRecorder.getInputSurface((err: BusinessError, surfaceId: string) => {
 ## getInputSurface
 
 ```TypeScript
-getInputSurface(callback: AsyncCallback<string | undefined>): void
-```
-
-get input surface.it must be called between prepare completed and start.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string \| undefined> | Yes | Callback used to return the input surface id in string. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 202 | Not System App. |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-
-## getInputSurface
-
-```TypeScript
 getInputSurface(): Promise<string>
 ```
 
@@ -108,16 +81,16 @@ get input surface. it must be called between prepare completed and start.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string> | A Promise instance used to return the input surface id in string. |
+| Promise&lt;string&gt; | A Promise instance used to return the input surface id in string. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -134,35 +107,6 @@ videoRecorder.getInputSurface().then((surfaceId: string) => {
 });
 
 ```
-
-## getInputSurface
-
-```TypeScript
-getInputSurface(): Promise<string | undefined>
-```
-
-get input surface. it must be called between prepare completed and start.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
-
-**System API:** This is a system API.
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;string \| undefined> | A Promise instance used to return the input surface id in string. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 202 | Not System App. |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
 
 ## on('error')
 
@@ -189,10 +133,10 @@ Listens for video recording error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 201 | permission denied. [since 12] |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [201](../../errorcode-universal.md#201-permission-denied) | permission denied.<br>**Applicable version:** 12 and later |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -205,35 +149,6 @@ videoRecorder.on('error', (error: BusinessError) => { // Set the 'error' event c
 })
 
 ```
-
-## onError
-
-```TypeScript
-onError(callback: ErrorCallback): void
-```
-
-Listens for video recording error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the video recording error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 201 | permission denied. |
-| 202 | Not System App. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
 
 ## pause
 
@@ -253,16 +168,16 @@ Pauses video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when pause completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when pause completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -298,16 +213,16 @@ Pauses video recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when pause completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when pause completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -333,9 +248,7 @@ Prepares for recording.
 
 **Since:** 9
 
-**Required permissions:** 
-
- ohos.permission.MICROPHONE
+**Required permissions:** ohos.permission.MICROPHONE
 
 **System capability:** SystemCapability.Multimedia.Media.VideoRecorder
 
@@ -346,17 +259,17 @@ Prepares for recording.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | config | VideoRecorderConfig | Yes | Recording parameters. |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when prepare completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when prepare completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 201 | Permission denied. Return by callback. |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3.Parameter verification failed. |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Return by callback. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -407,9 +320,7 @@ Prepares for recording.
 
 **Since:** 9
 
-**Required permissions:** 
-
- ohos.permission.MICROPHONE
+**Required permissions:** ohos.permission.MICROPHONE
 
 **System capability:** SystemCapability.Multimedia.Media.VideoRecorder
 
@@ -425,17 +336,17 @@ Prepares for recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when prepare completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when prepare completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 201 | Permission denied. Return by promise. |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3.Parameter verification failed. |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Return by promise. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -492,14 +403,14 @@ Releases resources used for video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when release completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when release completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -535,14 +446,14 @@ Releases resources used for video recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when release completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when release completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -564,7 +475,9 @@ videoRecorder.release().then(() => {
 reset(callback: AsyncCallback<void>): void
 ```
 
-Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
+Resets video recording.
+Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
+you must call prepare() to set the recording configurations for another recording.
 
 **Since:** 9
 
@@ -576,15 +489,15 @@ Resets video recording. Before resetting video recording, you must call stop() t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when reset completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when reset completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -608,7 +521,9 @@ videoRecorder.reset((err: BusinessError) => {
 reset(): Promise<void>
 ```
 
-Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
+Resets video recording.
+Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
+you must call prepare() to set the recording configurations for another recording.
 
 **Since:** 9
 
@@ -620,15 +535,15 @@ Resets video recording. Before resetting video recording, you must call stop() t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when reset completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when reset completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -662,16 +577,16 @@ Resumes video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when resume completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when resume completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -707,16 +622,16 @@ Resumes video recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when resume completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when resume completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -750,16 +665,16 @@ Starts video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when start completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when start completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -795,16 +710,16 @@ Starts video recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when start completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when start completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -838,16 +753,16 @@ Stops video recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when stop completed. |
+| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when stop completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -883,16 +798,16 @@ Stops video recording.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when stop completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when stop completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 12 and later |
 
 **Example**
 

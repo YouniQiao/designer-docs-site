@@ -1,40 +1,47 @@
 # @ohos.data.sendablePreferences
 
-The **sendablePreferences** module provides APIs for processing data in the form of key-value (KV) pairs, including querying, modifying, and persisting KV pairs. In the KV pairs, the key must be a string, and the value can be a number, a string, a Boolean value, a bigint, or a serializable object. The persistent files of the shared user preferences are stored in the [preferencesDir](docroot://application-models/application-context-stage.md#obtaining-application-file-paths) directory. Before creating a preferences object, ensure that the **preferencesDir** path can be read and written. The [encryption level]{@link @ohos.app.ability.contextConstant:contextConstant.AreaMode} of the persistent file directory determines the access to the files. For details, see [Application File Directory and Application File Path](docroot://file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path) . Sendable preferences can be passed between concurrent ArkTS instances (including the main thread and TaskPool or Worker threads) by reference. It allows for higher performance than [user preferences]{@link @ohos.data.preferences:preferences}. For more information, see [Using Sendable Objects](docroot://arkts-utils/sendable-guide.md). > **NOTE** > > The shared user preferences are not thread-safe and may cause file damage and data loss when used in multi-process > scenarios. Do not use it in multi-process scenarios.
+共享用户首选项为应用提供Key-Value键值型的数据处理能力，支持应用持久化轻量级数据，并对其修改和查询。
+
+数据存储形式为键值对，键的类型为字符串型，值的存储数据类型包括number、string、boolean、bigint以及可序列化的object。
+
+共享用户首选项的持久化文件存储在[preferencesDir](../../../../application-models/application-context-stage.md#获取应用文件路径)路径下，创建preferences
+对象前，需要保证preferencesDir路径可读写。持久化文件存储路径中的[加密等级](../../apis-ability-kit/arkts-apis/arkts-ability-areamode-e.md)会影响文件的
+可读写状态，路径访问限制详见[应用文件目录与应用文件路径](../../../../file-management/app-sandbox-directory.md#应用文件目录与应用文件路径)。
+
+共享用户首选项可以在ArkTS并发实例间（包括主线程、TaskPool&Worker工作线程）传递，传递的行为是引用传递，性能优于普通的[用户首选项](arkts-data-preferences.md)
+，可参考[Sendable使用场景](../../../../arkts-utils/sendable-guide.md)。
+
+> **说明：**
+>
+> 共享用户首选项无法保证进程并发安全，会有文件损坏和数据丢失的风险，不支持在多进程场景下使用。
 
 **起始版本：** 12
 
 **系统能力：** SystemCapability.DistributedDataManager.Preferences.Core
 
-## 导入模块
-
-```TypeScript
-import { sendablePreferences } from '@kit.ArkData';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [deletePreferences](arkts-sendablepreferences-deletepreferences-f.md#deletePreferences-1) | Deletes a specified **Preferences** instance from the cache. If the **Preferences** instance has a corresponding persistent file, the persistent file is also deleted. This API uses a promise to return the result. Avoid using a deleted **Preferences** instance to perform data operations, which may cause data inconsistency. |
-| [getPreferences](arkts-sendablepreferences-getpreferences-f.md#getPreferences-1) | Obtains a **Preferences** instance. This API uses a promise to return the result. |
-| [getPreferencesSync](arkts-sendablepreferences-getpreferencessync-f.md#getPreferencesSync-1) | Obtains a **Preferences** instance. This API returns the result synchronously. |
-| [removePreferencesFromCache](arkts-sendablepreferences-removepreferencesfromcache-f.md#removePreferencesFromCache-1) | Removes a **Preferences** instance from the cache. This API uses a promise to return the result. After an application calls [getPreferences]{@link sendablePreferences.getPreferences} for the first time to obtain a **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences]{@link sendablePreferences.getPreferences} again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
-| [removePreferencesFromCacheSync](arkts-sendablepreferences-removepreferencesfromcachesync-f.md#removePreferencesFromCacheSync-1) | Removes a **Preferences** instance from the cache. This API returns the result synchronously. After an application calls [getPreferences]{@link sendablePreferences.getPreferences} for the first time to obtain a **Preferences** instance, the obtained **Preferences** instance is cached. When the application calls [getPreferences]{@link sendablePreferences.getPreferences} again, the **Preferences** instance will be read from the cache instead of from the persistent file. After this API is called to remove the instance from the cache, calling **getPreferences** again will read data from the persistent file and create a **Preferences** instance. |
+| [deletePreferences](arkts-arkdata-deletepreferences-f.md#deletepreferences-1) | 从缓存中删除指定的Preferences实例，若Preferences实例有对应的持久化文件，则同时删除其持久化文件。使用Promise异步回调。调用该接口后，不建议再使用旧的Preferences实例进行数据操作，否则会导致数据一致性问题。 |
+| [getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1) | 获取Preferences实例，使用Promise异步回调。应用首次调用该接口获取某个Preferences实例后，该实例会被缓存起来，后续再次调用时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。 |
+| [getPreferencesSync](arkts-arkdata-getpreferencessync-f.md#getpreferencessync-1) | 获取Preferences实例，此为同步接口。应用首次调用该接口获取某个Preferences实例后，该实例会被缓存起来，后续再次调用时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。 |
+| [removePreferencesFromCache](arkts-arkdata-removepreferencesfromcache-f.md#removepreferencesfromcache-1) | 从缓存中移除指定的Preferences实例，使用Promise异步回调。应用首次调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)接口获取某个Preferences实例后，该实例会被缓存起来，后续调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。调用此接口移除缓存中的实例之后，再次getPreferences将会重新读取持久化文件，生成新的Preferences实例。 |
+| [removePreferencesFromCacheSync](arkts-arkdata-removepreferencesfromcachesync-f.md#removepreferencesfromcachesync-1) | 从缓存中移除指定的Preferences实例，此为同步接口。应用首次调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)接口获取某个Preferences实例后，该实例会被缓存起来，后续调用[getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)时不会再次从持久化文件中读取，直接从缓存中获取Preferences实例。调用此接口移除缓存中的实例之后，再次getPreferences将会重新读取持久化文件，生成新的Preferences实例。 |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [Options](arkts-sendablepreferences-options-i.md) | Represents the configuration options of a **Preferences** instance. |
-| [Preferences](arkts-sendablepreferences-preferences-i.md) | Provides APIs for obtaining and modifying **Preferences** instances. **Preferences** inherits from [ISendable](docroot://arkts-utils/arkts-sendable.md#isendable) and can be passed between concurrent ArkTS instances (including the main thread and the TaskPool or Worker threads) by reference. Before calling any API of **Preferences**, obtain a **Preferences** instance by using [sendablePreferences.getPreferences]{@link sendablePreferences.getPreferences}. |
+| [Options](arkts-arkdata-options-i.md) | Preferences实例配置选项。 |
+| [Preferences](arkts-arkdata-preferences-i.md) | Preferences继承自[ISendable](../../../../arkts-utils/arkts-sendable.md#isendable)，可以在ArkTS并发实例间（包括主线程、TaskPool&Worker工作线程）传递，传递的行为是引用传递，提供获取和修改存储数据的接口。下列接口都需先使用[sendablePreferences.getPreferences](arkts-arkdata-getpreferences-f.md#getpreferences-1)获取到Preferences实例，再通过此实例调用对应接口。 |
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [MAX_KEY_LENGTH](arkts-sendablepreferences-con.md#MAX_KEY_LENGTH) | Maximum length of a key, which is 1024 bytes. |
-| [MAX_VALUE_LENGTH](arkts-sendablepreferences-con.md#MAX_VALUE_LENGTH) | Maximum length of a value, which is 16 MB. |
+| [MAX_KEY_LENGTH](arkts-arkdata-sendablepreferences-con.md#max_key_length) | Key的最大长度限制为1024个字节。 |
+| [MAX_VALUE_LENGTH](arkts-arkdata-sendablepreferences-con.md#max_value_length) | Value的最大长度限制为16MB。 |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## enableHotspot
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function enableHotspot(): void
 ```
 
-Enable Wi-Fi hotspot function. This method is asynchronous. After the Wi-Fi hotspot is enabled, Wi-Fi may be disabled.
+Enable Wi-Fi hotspot function.
+This method is asynchronous. After the Wi-Fi hotspot is enabled, Wi-Fi may be disabled.
 
 **Since:** 9
 

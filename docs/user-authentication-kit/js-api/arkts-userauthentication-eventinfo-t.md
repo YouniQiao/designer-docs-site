@@ -6,11 +6,13 @@ type EventInfo = AuthResultInfo | TipInfo
 
 Enumerates the authentication event information types.
 
+It consists of the fields in **Type** in the following table.
+
 **Since:** 9
 
 **Deprecated since:** 11
 
-**Substitutes:** [UserAuthResult](arkts-userauthentication-userauthresult-i.md#userauthresult)
+**Substitutes:** [UserAuthResult](arkts-userauthentication-userauthresult-i.md)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 

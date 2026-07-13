@@ -26,7 +26,10 @@ currentValue?: number
 isPercentage?: boolean
 ```
 
-是否按百分比展示。默认为false。 - true：是。 - false：否。
+是否按百分比展示。默认为false。
+
+- true：是。
+- false：否。
 
 **类型：** boolean
 

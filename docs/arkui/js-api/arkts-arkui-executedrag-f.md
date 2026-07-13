@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dragController } from '@ohos.arkui.dragController';
+import { dragController } from '@kit.ArkUI';
 ```
 
 ## executeDrag
@@ -13,7 +13,14 @@ function executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo,
     callback: AsyncCallback<DragEventParam>): void
 ```
 
-Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses an asynchronous callback to return the result. > **NOTE** > > Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object > associated with the current UI context.
+Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object
+> associated with the current UI context.
 
 **Since:** 10
 
@@ -31,7 +38,7 @@ Initiates a drag action, with the object to be dragged and the drag information 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| custom | CustomBuilder \| DragItemInfo | Yes | Object to be dragged.<br>**NOTE**<br>The global builder is notsupported. If the [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md#image) component is used in the builder, enable synchronous loading, that is,set the [syncLoad](ImageAttribute#syncLoad) attribute of the component to **true**. The builder is usedonly to generate the image displayed during the current dragging. If the root component of the builder has zerowidth or height, it will cause failure in drag image generation, which in turn breaks the entire dragoperation. Changes to the builder, if any, apply to the next dragging, but not to the current dragging. |
+| custom | CustomBuilder \| DragItemInfo | Yes | Object to be dragged.<br>**NOTE**<br>The global builder is notsupported. If the [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) component is used in the builder, enable synchronous loading, that is,set the [syncLoad](ImageAttribute#syncLoad) attribute of the component to **true**. The builder is usedonly to generate the image displayed during the current dragging. If the root component of the builder has zerowidth or height, it will cause failure in drag image generation, which in turn breaks the entire dragoperation. Changes to the builder, if any, apply to the next dragging, but not to the current dragging. |
 | dragInfo | DragInfo | Yes | Drag information. |
 | callback | AsyncCallback&lt;DragEventParam&gt; | Yes | Callback function. If the operation is successful, **err** is**undefined** and **data** is the **DragEventParam** object obtained. Otherwise, **err** is an errorobject.<br>**Since:** 12 |
 
@@ -131,7 +138,14 @@ struct DragControllerPage {
 function executeDrag(custom: CustomBuilder | DragItemInfo, dragInfo: DragInfo): Promise<DragEventParam>
 ```
 
-Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise to return the result. > **NOTE** > > Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object > associated with the current UI context.
+Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise
+to return the result.
+
+> **NOTE**
+>
+> Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md) object
+> associated with the current UI context.
 
 **Since:** 10
 

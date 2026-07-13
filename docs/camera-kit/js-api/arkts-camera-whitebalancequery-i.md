@@ -1,6 +1,7 @@
 # WhiteBalanceQuery (System API)
 
-WhiteBalanceQuery provides APIs to check whether a white balance mode is supported and obtain the white balance mode range supported.
+WhiteBalanceQuery provides APIs to check whether a white balance mode is supported and obtain the white balance
+mode range supported.
 
 **Since:** 20
 
@@ -11,7 +12,7 @@ WhiteBalanceQuery provides APIs to check whether a white balance mode is support
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getColorTintRange

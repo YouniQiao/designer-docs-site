@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## onPublishFormCrossBundleControl
@@ -12,7 +12,8 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function onPublishFormCrossBundleControl(callback: formInfo.PublishFormCrossBundleControlCallback): void
 ```
 
-Subscribes to controls on cross-bundle widget addition to the home screen. This API uses an asynchronous callback to return the result.
+Subscribes to controls on cross-bundle widget addition to the home screen. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 23
 

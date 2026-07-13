@@ -12,7 +12,9 @@ TextStyleInterface
 fontColor?: ResourceColor
 ```
 
-字体颜色。 默认为主题色。
+字体颜色。
+
+默认为主题色。
 
 **类型：** ResourceColor
 
@@ -48,7 +50,9 @@ fontConfigs?: FontConfigs
 fontFamily?: ResourceStr
 ```
 
-文本字体。 默认为主题字体。
+文本字体。
+
+默认为主题字体。
 
 **类型：** ResourceStr
 
@@ -66,7 +70,13 @@ fontFamily?: ResourceStr
 fontSize?: LengthMetrics
 ```
 
-字体大小。 默认字体大小为16fp。 如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为16fp。 单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位)
+字体大小。
+
+默认字体大小为16fp。
+
+如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为16fp。
+
+单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位) 
 
 **类型：** LengthMetrics
 
@@ -84,7 +94,9 @@ fontSize?: LengthMetrics
 fontStyle?: FontStyle
 ```
 
-字体样式。 默认值：FontStyle.Normal
+字体样式。
+
+默认值：FontStyle.Normal
 
 **类型：** FontStyle
 
@@ -102,7 +114,11 @@ fontStyle?: FontStyle
 fontVariations?: Array<FontVariation>
 ```
 
-可变字体的属性。 默认值：undefined，表示未设置可变字体的属性。 fontVariations属性的优先级高于fontWeight。
+可变字体的属性。
+
+默认值：undefined，表示未设置可变字体的属性。
+
+fontVariations属性的优先级高于fontWeight。
 
 **类型：** Array<FontVariation>
 
@@ -120,7 +136,10 @@ fontVariations?: Array<FontVariation>
 fontWeight?: number | FontWeight | string
 ```
 
-字体粗细。 number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、" regular"、"medium"，分别对应FontWeight中相应的枚举值。
+字体粗细。
+
+number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"
+regular"、"medium"，分别对应FontWeight中相应的枚举值。
 
 **类型：** number | FontWeight | string
 
@@ -138,7 +157,9 @@ fontWeight?: number | FontWeight | string
 strokeColor?: ResourceColor
 ```
 
-文本描边颜色。 默认值为字体颜色，设置异常值时取字体颜色。
+文本描边颜色。
+
+默认值为字体颜色，设置异常值时取字体颜色。
 
 **类型：** ResourceColor
 
@@ -156,7 +177,9 @@ strokeColor?: ResourceColor
 strokeJoinStyle?: StrokeJoinStyle
 ```
 
-文本描边拐角样式。 默认值：StrokeJoinStyle.MITER_JOIN。
+文本描边拐角样式。
+
+默认值：StrokeJoinStyle.MITER_JOIN。
 
 **类型：** StrokeJoinStyle
 
@@ -174,7 +197,11 @@ strokeJoinStyle?: StrokeJoinStyle
 strokeWidth?: LengthMetrics
 ```
 
-文本描边宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为0。 设置值小于0时为实心字，大于0时为空心字。 默认值为0。
+文本描边宽度。如果LengthMetrics的unit值是PERCENT，当前设置不生效，处理为0。
+
+设置值小于0时为实心字，大于0时为空心字。
+
+默认值为0。
 
 **类型：** LengthMetrics
 
@@ -192,7 +219,9 @@ strokeWidth?: LengthMetrics
 superscript?: SuperscriptStyle
 ```
 
-文本上下角标。 默认值：SuperscriptStyle.NORMAL
+文本上下角标。
+
+默认值：SuperscriptStyle.NORMAL
 
 **类型：** SuperscriptStyle
 

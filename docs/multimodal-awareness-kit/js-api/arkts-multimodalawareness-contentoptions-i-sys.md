@@ -11,7 +11,7 @@ Defines the options for obtaining the onscreen content.
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## contentUnderstand
@@ -68,7 +68,8 @@ Whether to obtain only the text and divide the text into paragraphs. The default
 windowId?: number
 ```
 
-ID of the window whose content needs to be obtained. If this parameter is not set or is set to **undefined**, the content of the full-screen window is obtained by default.
+ID of the window whose content needs to be obtained. If this parameter is not set or is set to **undefined**, the
+content of the full-screen window is obtained by default.
 
 **Type:** number
 

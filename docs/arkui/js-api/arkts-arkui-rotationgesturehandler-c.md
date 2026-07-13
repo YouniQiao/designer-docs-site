@@ -36,7 +36,8 @@ Constructor used to create a rotation gesture handler instance.
 onActionCancel(event: Callback<void>): RotationGestureHandler
 ```
 
-Sets the callback for rotation gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful recognition. No gesture event information is returned.
+Sets the callback for rotation gesture cancellation. This callback is triggered when a touch cancellation event
+occurs after successful recognition. No gesture event information is returned.
 
 **Since:** 12
 
@@ -64,7 +65,10 @@ Sets the callback for rotation gesture cancellation. This callback is triggered 
 onActionCancel(event: Callback<GestureEvent>): RotationGestureHandler
 ```
 
-Sets the callback for rotation gesture cancellation. This callback is triggered when a touch cancellation event occurs after successful recognition. Compared with [onActionCancel](arkts-arkui-rotationgesturehandler-c.md#onactioncancel-1), this API returns gesture event information.
+Sets the callback for rotation gesture cancellation. This callback is triggered when a touch cancellation event
+occurs after successful recognition. Compared with
+[onActionCancel](arkts-arkui-rotationgesturehandler-c.md#onactioncancel-1), this API returns
+gesture event information.
 
 **Since:** 18
 
@@ -92,7 +96,8 @@ Sets the callback for rotation gesture cancellation. This callback is triggered 
 onActionEnd(event: Callback<GestureEvent>): RotationGestureHandler
 ```
 
-Sets the callback for rotation gesture recognition completion. This callback is triggered when all fingers are lifted after successful recognition.
+Sets the callback for rotation gesture recognition completion. This callback is triggered when all fingers are
+lifted after successful recognition.
 
 **Since:** 12
 

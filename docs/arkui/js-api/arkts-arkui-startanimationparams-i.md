@@ -1,6 +1,10 @@
 # StartAnimationParams
 
-Describes the parameters for the startup animation. The configuration is valid only for transitions between different abilities within the same application. The configuration is valid only full-screen applications.
+Describes the parameters for the startup animation.
+
+The configuration is valid only for transitions between different abilities within the same application.
+
+The configuration is valid only full-screen applications.
 
 **Since:** 20
 
@@ -9,7 +13,7 @@ Describes the parameters for the startup animation. The configuration is valid o
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## type

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { pointer } from '@ohos.multimodalInput.pointer';
+import { pointer } from '@kit.InputKit';
 ```
 
 ## getPointerStyle
@@ -12,7 +12,8 @@ import { pointer } from '@ohos.multimodalInput.pointer';
 function getPointerStyle(windowId: number, callback: AsyncCallback<PointerStyle>): void
 ```
 
-Obtains the mouse pointer style type of a specified window. This API can obtain only the mouse pointer style type of windows within the current application process. This API uses an asynchronous callback to return the result.
+Obtains the mouse pointer style type of a specified window. This API can obtain only the mouse pointer style type
+of windows within the current application process. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -79,7 +80,8 @@ struct Index {
 function getPointerStyle(windowId: number): Promise<PointerStyle>
 ```
 
-Obtains the mouse pointer style type. This API can obtain only the mouse pointer style type of windows within the current application process. This API uses a promise to return the result.
+Obtains the mouse pointer style type. This API can obtain only the mouse pointer style type of windows within the
+current application process. This API uses a promise to return the result.
 
 **Since:** 9
 

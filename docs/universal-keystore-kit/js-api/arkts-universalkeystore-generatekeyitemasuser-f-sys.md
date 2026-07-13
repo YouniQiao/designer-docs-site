@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## generateKeyItemAsUser
@@ -12,7 +12,10 @@ import { huks } from '@ohos.security.huks';
 function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<void>
 ```
 
-Generates a key for the specified user. This API uses a promise to return the result. Based on the principle that the key cannot be transferred out of [Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key material content is not returned through the promise and is only used to indicate whether the call is successful.
+Generates a key for the specified user. This API uses a promise to return the result. Based on the principle that
+the key cannot be transferred out of
+[Trusted Execution Environment (TEE)](../../../../security/UniversalKeystoreKit/huks-concepts.md#tee), the key
+material content is not returned through the promise and is only used to indicate whether the call is successful.
 
 **Since:** 12
 
@@ -54,7 +57,7 @@ Generates a key for the specified user. This API uses a promise to return the re
 | [12000013](../errorcode-huks.md#12000013-the-credential-does-not-exist) | queried credential does not exist |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
 | [12000015](../errorcode-huks.md#12000015-failed-to-invoke-other-system-services) | Failed to obtain the security information via UserIAM |
-| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with same alias is already exist<br>**Applicable version:** 20 |
+| [12000017](../errorcode-huks.md#12000017-duplicate-key-alias) | The key with the same alias already exists<br>**Applicable version:** 20 and later |
 
 **Example**
 

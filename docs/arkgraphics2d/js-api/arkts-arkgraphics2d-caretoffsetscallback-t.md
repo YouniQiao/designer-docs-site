@@ -4,7 +4,8 @@
 type CaretOffsetsCallback = (offset: number, index: number, leadingEdge: boolean) => boolean
 ```
 
-Defines the callback used to receive the offset and index of each character in a text line object as its parameters.
+Defines the callback used to receive the offset and index of each character in a text line object as its
+parameters.
 
 **Since:** 18
 

@@ -12,83 +12,87 @@ WebP metadata.
 import { image } from '@kit.ImageKit';
 ```
 
+## canvasHeight
+
+```TypeScript
+readonly canvasHeight?: number
+```
+
+Canvas Height.
+Unit: px, The value should be an integer.
+
+**Type:** number
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
 ## canvasWidth
 
 ```TypeScript
-readonly canvasWidth?: int
+readonly canvasWidth?: number
 ```
 
-Canvas Width. Unit: px, The value should be an integer.
+Canvas Width.
+Unit: px, The value should be an integer.
 
-**Type:** int
+**Type:** number
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## loopCount
-
-```TypeScript
-readonly loopCount?: int
-```
-
-WebP图片动画循环的次数。如果取值为0，则表示不限次数。
-
-**Type:** int
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## unclampedDelayTime
-
-```TypeScript
-readonly unclampedDelayTime?: int
-```
-
-Unclamped delay of each frame. Unit: ms, The value should be an integer.
-
-**Type:** int
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## delayTime
 
 ```TypeScript
-readonly delayTime?: int
+readonly delayTime?: number
 ```
 
-Delay of each frame. Unit: ms, The value should be an integer.
+Delay of each frame.
+Unit: ms, The value should be an integer.
 
-**Type:** int
+**Type:** number
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## canvasHeight
+## loopCount
 
 ```TypeScript
-readonly canvasHeight?: int
+readonly loopCount?: number
 ```
 
-Canvas Height. Unit: px, The value should be an integer.
+Loop count.
 
-**Type:** int
+**Type:** number
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## unclampedDelayTime
+
+```TypeScript
+readonly unclampedDelayTime?: number
+```
+
+Unclamped delay of each frame.
+Unit: ms, The value should be an integer.
+
+**Type:** number
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

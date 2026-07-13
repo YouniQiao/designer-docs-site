@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getLaunchWantForBundle
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getLaunchWantForBundle(bundleName: string, userId: number, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses an asynchronous callback to return the result.
+Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -28,7 +29,7 @@ Obtains the Want used to launch the bundle based on the given bundle name and us
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | userId | number | Yes | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | AsyncCallback&lt;Want&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null** and **data** is the Want. Otherwise, **err** is an errorobject. |
+| callback | AsyncCallback&lt;Want&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null** and **data** is the Want. Otherwise, **err** is an errorobject. |
 
 **Error codes:**
 
@@ -73,7 +74,8 @@ try {
 function getLaunchWantForBundle(bundleName: string, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name. This API uses an asynchronous callback to return the result.
+Obtains the Want used to launch the bundle based on the given bundle name. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -88,7 +90,7 @@ Obtains the Want used to launch the bundle based on the given bundle name. This 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
-| callback | AsyncCallback&lt;Want&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null** and **data** is the Want. Otherwise, **err** is an errorobject. |
+| callback | AsyncCallback&lt;Want&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null** and **data** is the Want. Otherwise, **err** is an errorobject. |
 
 **Error codes:**
 
@@ -131,7 +133,8 @@ try {
 function getLaunchWantForBundle(bundleName: string, userId?: number): Promise<Want>
 ```
 
-Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses a promise to return the result.
+Obtains the Want used to launch the bundle based on the given bundle name and user ID. This API uses a promise to
+return the result.
 
 **Since:** 9
 

@@ -14,7 +14,12 @@ Ability组件信息标志，指示需要获取的Ability组件信息的内容。
 GET_ABILITY_INFO_DEFAULT = 0x00000000
 ```
 
-获取默认[AbilityInfo](bundleManager/AbilityInfo)，获取的AbilityInfo不包含permissions、metadata、被禁用Ability对应的 AbilityInfo。<!--Del-->通过 [setAbilityEnabled接口](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-2) 可设置Ability禁用状态、通过 [isAbilityEnabled接口](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-3)可获取 Ability禁用状态。<!--DelEnd-->
+获取默认[AbilityInfo](bundleManager/AbilityInfo)，获取的AbilityInfo不包含permissions、metadata、被禁用Ability对应的
+AbilityInfo。<!--Del-->通过
+[setAbilityEnabled接口](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-2)
+可设置Ability禁用状态、通过
+[isAbilityEnabled接口](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-3)可获取
+Ability禁用状态。<!--DelEnd-->
 
 **起始版本：** 20
 

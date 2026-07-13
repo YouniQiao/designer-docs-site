@@ -30,7 +30,7 @@ checkValidityWithDate(date: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 | [19030003](../errorcode-cert.md#19030003-证书尚未生效) | 证书尚未生效。 |
@@ -134,7 +134,7 @@ getEncoded(callback: AsyncCallback<EncodingBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -163,7 +163,7 @@ getEncoded(): Promise<EncodingBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -230,7 +230,11 @@ getExtensionsObject(): CertExtension
 getIssuerAltNames(): DataArray
 ```
 
-表示获取X509证书颁发者可选名称。 > **说明：** > > 获取到的X509证书颁发者可选名称数据带字符串结束符。
+表示获取X509证书颁发者可选名称。
+
+> **说明：**
+>
+> 获取到的X509证书颁发者可选名称数据带字符串结束符。
 
 **起始版本：** 9
 
@@ -258,7 +262,11 @@ getIssuerAltNames(): DataArray
 getIssuerName(): DataBlob
 ```
 
-表示获取X509证书颁发者。 > **说明：** > > 获取到的X509证书颁发者名称包含字符串终止符。
+表示获取X509证书颁发者。
+
+> **说明：**
+>
+> 获取到的X509证书颁发者名称包含字符串终止符。
 
 **起始版本：** 9
 
@@ -304,7 +312,7 @@ getIssuerName(encodingType: EncodingType): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 表示X509证书颁发者名称，以逗号(,)分隔。 |
+| string | 表示X509证书颁发者名称，以逗号（,）分隔。 |
 
 **错误码：**
 
@@ -321,7 +329,7 @@ getIssuerName(encodingType: EncodingType): string
 getIssuerX500DistinguishedName(): X500DistinguishedName
 ```
 
-获取颁发者的X509可分辨名称。
+获取X.509证书颁发者的X.500可分辨名称。
 
 **起始版本：** 12
 
@@ -333,7 +341,7 @@ getIssuerX500DistinguishedName(): X500DistinguishedName
 
 | 类型 | 说明 |
 | --- | --- |
-| X500DistinguishedName | X509的可分辨对象。 |
+| X500DistinguishedName | X.500可分辨对象。 |
 
 **错误码：**
 
@@ -373,7 +381,7 @@ getItem(itemType: CertItemType): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -494,7 +502,12 @@ getPublicKey(): cryptoFramework.PubKey
 getSerialNumber(): number
 ```
 
-表示获取X509证书序列号。 > **说明：** > > 从API version 9开始支持，从API version 10开始废弃，建议使用 > [X509Cert.getCertSerialNumber()](arkts-devicecertificate-x509cert-i.md#getcertserialnumber-1)替代。
+表示获取X509证书序列号。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 10开始废弃，建议使用
+> [X509Cert.getCertSerialNumber()](arkts-devicecertificate-x509cert-i.md#getcertserialnumber-1)替代。
 
 **起始版本：** 9
 
@@ -572,7 +585,7 @@ getSignatureAlgName(): string
 getSignatureAlgOid(): string
 ```
 
-表示获取X509证书签名算法的对象标识符(OID)。OID由国际标准化组织(ISO)分配。
+表示获取X509证书签名算法的对象标识符（OID）。OID由国际标准化组织（ISO）分配。
 
 **起始版本：** 9
 
@@ -584,7 +597,7 @@ getSignatureAlgOid(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 表示签名算法OID。当长度超过128字节时会被截断。 |
+| string | 表示签名算法OID。当长度超过127字节时会被截断。 |
 
 **错误码：**
 
@@ -618,7 +631,7 @@ getSignatureAlgParams(): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | 不支持该操作。 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | 不支持该操作。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -629,7 +642,11 @@ getSignatureAlgParams(): DataBlob
 getSubjectAltNames(): DataArray
 ```
 
-表示获取X509证书主体可选名称。 > **说明：** > > 获取到的X509证书主体可选名称数据带字符串结束符。
+表示获取X509证书主体可选名称。
+
+> **说明：**
+>
+> 获取到的X509证书主体可选名称数据带字符串结束符。
 
 **起始版本：** 9
 
@@ -657,7 +674,11 @@ getSubjectAltNames(): DataArray
 getSubjectName(encodingType?: EncodingType): DataBlob
 ```
 
-表示获取X509证书主体。 > **说明：** > > 获取到的X509证书主体名称包含字符串终止符。
+表示获取X509证书主体。
+
+> **说明：**
+>
+> 获取到的X509证书主体名称包含字符串终止符。
 
 **起始版本：** 9
 
@@ -675,7 +696,7 @@ getSubjectName(encodingType?: EncodingType): DataBlob
 
 | 类型 | 说明 |
 | --- | --- |
-| DataBlob | 表示X509证书主体名称。不设置encodingType参数，数据转换为字符串后以斜杠(/)分隔相对可辨别名称，设置encodingType参数为EncodingType.ENCODING_UTF8时，数据转换为字符串后以逗号(,)分隔相对可辨别名称。 |
+| DataBlob | 表示X509证书主体名称。不设置encodingType参数，数据转换为字符串后以斜杠（/）分隔相对可分辨名称，设置encodingType参数为EncodingType.ENCODING_UTF8时，数据转换为字符串后以逗号（,）分隔相对可分辨名称。 |
 
 **错误码：**
 
@@ -684,7 +705,7 @@ getSubjectName(encodingType?: EncodingType): DataBlob
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 参数类型不正确；<br>2. 参数校验失败。<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 参数类型不正确；<br>2. 参数校验失败。<br>**适用版本：** 12+ |
 
 ## getSubjectX500DistinguishedName
 
@@ -692,7 +713,7 @@ getSubjectName(encodingType?: EncodingType): DataBlob
 getSubjectX500DistinguishedName(): X500DistinguishedName
 ```
 
-获取证书主题的X509可分辨名称。
+获取X.509证书主体的X.500可分辨名称。
 
 **起始版本：** 12
 
@@ -704,7 +725,7 @@ getSubjectX500DistinguishedName(): X500DistinguishedName
 
 | 类型 | 说明 |
 | --- | --- |
-| X500DistinguishedName | X509的可分辨对象。 |
+| X500DistinguishedName | X.500可分辨对象。 |
 
 **错误码：**
 
@@ -792,7 +813,7 @@ match(param: X509CertMatchParameters): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -884,7 +905,7 @@ verify(key: cryptoFramework.PubKey, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
 ## verify
@@ -917,6 +938,6 @@ verify(key: cryptoFramework.PubKey): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 

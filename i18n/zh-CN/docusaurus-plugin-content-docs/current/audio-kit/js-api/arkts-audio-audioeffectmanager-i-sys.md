@@ -1,4 +1,4 @@
-# AudioEffectManager
+# AudioEffectManager（系统接口）
 
 Implements audio effect management.
 
@@ -7,12 +7,6 @@ Implements audio effect management.
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
 **系统接口：** 此接口为系统接口。
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## getAudioEffectProperty
 
@@ -24,9 +18,7 @@ Gets current audio effect properties.
 
 **起始版本：** 18
 
-**需要权限：** 
-
- ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**需要权限：** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -36,15 +28,15 @@ Gets current audio effect properties.
 
 | 类型 | 说明 |
 | --- | --- |
-| Array&lt;AudioEffectProperty> | Array of current audio effect properties. |
+| Array&lt;AudioEffectProperty&gt; | Array of current audio effect properties. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800301 | System error. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. |
 
 **示例：**
 
@@ -71,9 +63,7 @@ Gets supported audio effect properties based on current devices.
 
 **起始版本：** 18
 
-**需要权限：** 
-
- ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**需要权限：** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -83,15 +73,15 @@ Gets supported audio effect properties based on current devices.
 
 | 类型 | 说明 |
 | --- | --- |
-| Array&lt;AudioEffectProperty> | Array of supported audio effect properties. |
+| Array&lt;AudioEffectProperty&gt; | Array of supported audio effect properties. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800301 | System error. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. |
 
 **示例：**
 
@@ -114,7 +104,7 @@ try {
 isAudioSeparationEffectSupported(): boolean
 ```
 
-Checks whether the current device supports audio separation effect in system.
+检查当前设备是否支持系统中的音频分离效果。
 
 **起始版本：** 26.0.0
 
@@ -128,13 +118,13 @@ Checks whether the current device supports audio separation effect in system.
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Whether the current device supports audio separation effect. |
+| boolean | 当前设备是否支持音频分离效果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 202 | Caller is not a system application. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
 
 **示例：**
 
@@ -152,7 +142,7 @@ console.info(`Audio separation effect is supported: ${isSupported}`);
 offAudioSeparationEffectEnabledChange(callback?: Callback<boolean>): void
 ```
 
-Unsubscribes from the system audio separation effect enabled state change event.
+去订阅系统音频分离效果使能状态变更事件。
 
 **起始版本：** 26.0.0
 
@@ -166,14 +156,14 @@ Unsubscribes from the system audio separation effect enabled state change event.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean> | 否 |  |
+| callback | Callback&lt;boolean&gt; | 否 | 订阅函数中用于取消订阅的回调。如果不使用此参数，则之前在当前进程中订阅的所有回调都将被取消订阅 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 **示例：**
 
@@ -190,7 +180,9 @@ audioEffectManager.offAudioSeparationEffectEnabledChange();
 onAudioSeparationEffectEnabledChange(callback: Callback<boolean>): void
 ```
 
-Subscribes to system audio separation effect enabled state change event. The audio separation effect state in system can be set by system playback controller application, other applications can use this function to listen the change event.
+订阅系统音频分离效果使能状态变更事件。
+系统中的音频分离效果状态可由系统播放控制器应用设定，
+其他应用程序可以使用此函数来监听change事件。
 
 **起始版本：** 26.0.0
 
@@ -204,13 +196,13 @@ Subscribes to system audio separation effect enabled state change event. The aud
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean> | 是 | Callback used to listen the system audio separation effect  enabled state change event. |
+| callback | Callback&lt;boolean&gt; | 是 | 监听系统音频分离效果的回调启用状态更改事件 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 202 | Caller is not a system application. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
 
 **示例：**
 
@@ -233,9 +225,7 @@ Sets current audio effect properties.
 
 **起始版本：** 18
 
-**需要权限：** 
-
- ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**需要权限：** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -245,16 +235,16 @@ Sets current audio effect properties.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| propertyArray | Array&lt;AudioEffectProperty> | 是 | array of audio effect property to be set.  Notice that only one effect property name in each effect property category should be set. |
+| propertyArray | Array&lt;AudioEffectProperty&gt; | 是 | array of audio effect property to be set.Notice that only one effect property name in each effect property category should be set. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. Possible causes:  1. More than one effect property name of the same effect property category are in the input array.  2. The input audioEffectProperties are not supported by the current device.  3. The name or category of the input audioEffectProperties is incorrect. |
-| 6800301 | System error. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Possible causes:1. More than one effect property name of the same effect property category are in the input array.2. The input audioEffectProperties are not supported by the current device.3. The name or catergory of the input audioEffectProperties is incorrect. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. |
 
 **示例：**
 
@@ -275,16 +265,16 @@ try {
 ## setAudioSeparationEffectEnabled
 
 ```TypeScript
-setAudioSeparationEffectEnabled(enabled: boolean, uid: int, streamId?: long): Promise<void>
+setAudioSeparationEffectEnabled(enabled: boolean, uid: number, streamId?: number): Promise<void>
 ```
 
-Sets audio separation effect enable or disable for specific application process, or for specific audio playback stream. This API uses a promise to return the result.
+设置特定应用进程的音频分离效果开关。
+或用于特定的音频播放流。
+该接口使用promise返回结果。
 
 **起始版本：** 26.0.0
 
-**需要权限：** 
-
- ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**需要权限：** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
@@ -296,25 +286,25 @@ Sets audio separation effect enable or disable for specific application process,
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enabled | boolean | 是 | The required effect state, true for enabled, false for disabled. |
-| uid | int | 是 | The uid of target application process to add effect.  The value should be an integer. |
-| streamId | long | 否 |  |
+| enabled | boolean | 是 | 所需的效果状态，true表示启用，false表示禁用 |
+| uid | number | 是 | 要添加效果的目标应用程序进程的uid。<br>取值限定为整数。 |
+| streamId | number | 否 | 要添加效果的目标音频播放流的ID，播放应用程序可以使用{@link AudioRenderer#getAudioStreamId}来获取 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 不会返回任何值的Promise。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. |
-| 6800104 | Effect is not supported in this device. |
-| 6800301 | Audio service error occurs like service died. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800104](../errorcode-audio.md#6800104-参数选项不支持) | Effect is not supported in this device. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs like service died. |
 
 **示例：**
 
@@ -333,16 +323,14 @@ audioEffectManager.setAudioSeparationEffectEnabled(true, 10001).then(() => {
 ## setAudioSeparationEffectVolume
 
 ```TypeScript
-setAudioSeparationEffectVolume(type: AudioSeparationVolumeType, volume: double): Promise<void>
+setAudioSeparationEffectVolume(type: AudioSeparationVolumeType, volume: number): Promise<void>
 ```
 
-Sets audio separation effect volume for specific volume type. This API uses a promise to return the result.
+设置特定音量类型的音频分离效果音量。
 
 **起始版本：** 26.0.0
 
-**需要权限：** 
-
- ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**需要权限：** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
@@ -354,24 +342,24 @@ Sets audio separation effect volume for specific volume type. This API uses a pr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | AudioSeparationVolumeType | 是 | The type to set volume. |
-| volume | double | 是 | The target volume value.  Value range: [0,1]. |
+| type | AudioSeparationVolumeType | 是 | 要设置音量的类型 |
+| volume | number | 是 | 目标卷值。<br>取值范围：[0,1]。<br>Value range: [0,1]. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 202 | Caller is not a system application. |
-| 6800101 | Parameter verification failed. |
-| 6800104 | Effect is not supported in this device. |
-| 6800301 | Audio service error occurs like service died. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Caller is not a system application. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
+| [6800104](../errorcode-audio.md#6800104-参数选项不支持) | Effect is not supported in this device. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs like service died. |
 
 **示例：**
 

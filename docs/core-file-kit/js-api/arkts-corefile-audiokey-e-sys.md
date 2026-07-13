@@ -6,7 +6,7 @@ Describes AUDIO TYPE FetchOptions's predicate
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -24,7 +24,7 @@ File uri, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -42,7 +42,7 @@ File name
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -60,7 +60,7 @@ Date of the file creation, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -78,7 +78,7 @@ Modify date of the file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -96,7 +96,7 @@ Title of the file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -114,7 +114,7 @@ Artist of the audio file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -132,7 +132,7 @@ Audio album of the audio file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -150,7 +150,7 @@ Duration of the audio file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -168,7 +168,7 @@ Favorite state of the file, read only
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

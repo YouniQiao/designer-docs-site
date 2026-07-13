@@ -9,7 +9,7 @@ Provides APIs for X.509 certificate operations.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## checkValidityWithDate
@@ -80,7 +80,7 @@ Obtains the CRL distribution points of this X.509 certificate.
 
 | Type | Description |
 | --- | --- |
-| DataArray | URIs of the distribution points for this X.509 CRL obtained. |
+| DataArray | URIs of the CRL distribution points from this X.509 certificate obtained. |
 
 **Error codes:**
 
@@ -236,7 +236,11 @@ Obtains the certificate extensions in DER format.
 getIssuerAltNames(): DataArray
 ```
 
-Obtains the Issuer Alternative Names (IANs) of this X.509 certificate. > **NOTE** > > The obtained IANs contain a string terminator.
+Obtains the Issuer Alternative Names (IANs) of this X.509 certificate.
+
+> **NOTE**
+>
+> The obtained IANs contain a string terminator.
 
 **Since:** 9
 
@@ -264,7 +268,11 @@ Obtains the Issuer Alternative Names (IANs) of this X.509 certificate. > **NOTE*
 getIssuerName(): DataBlob
 ```
 
-Obtains the X.509 certificate issuer. > **NOTE** > > The obtained X.509 certificate issuer name contains a string terminator.
+Obtains the X.509 certificate issuer.
+
+> **NOTE**
+>
+> The obtained X.509 certificate issuer name contains a string terminator.
 
 **Since:** 9
 
@@ -327,7 +335,7 @@ Obtains the issuer name of an X.509 certificate based on the encoding type.
 getIssuerX500DistinguishedName(): X500DistinguishedName
 ```
 
-Obtains the distinguished name (DN) of the X.509 certificate issuer.
+Obtains the X.500 distinguished name object of the X.509 certificate issuer.
 
 **Since:** 12
 
@@ -339,7 +347,7 @@ Obtains the distinguished name (DN) of the X.509 certificate issuer.
 
 | Type | Description |
 | --- | --- |
-| X500DistinguishedName | DN object obtained. |
+| X500DistinguishedName | X.500 distinguished name object. |
 
 **Error codes:**
 
@@ -500,7 +508,12 @@ Obtains the public key of this X.509 certificate.
 getSerialNumber(): number
 ```
 
-Obtains the X.509 certificate serial number. > **NOTE** > > This API is supported since API version 9 and deprecated since API version 10. Use > [X509Cert.getCertSerialNumber()](arkts-devicecertificate-x509cert-i.md#getcertserialnumber-1) instead.
+Obtains the X.509 certificate serial number.
+
+> **NOTE**
+>
+> This API is supported since API version 9 and deprecated since API version 10. Use
+> [X509Cert.getCertSerialNumber()](arkts-devicecertificate-x509cert-i.md#getcertserialnumber-1) instead.
 
 **Since:** 9
 
@@ -578,7 +591,8 @@ Obtains the signing algorithm of this X.509 certificate.
 getSignatureAlgOid(): string
 ```
 
-Obtains the object identifier (OID) of the X.509 certificate signing algorithm. OIDs are allocated by the International Organization for Standardization (ISO).
+Obtains the object identifier (OID) of the X.509 certificate signing algorithm. OIDs are allocated by the
+International Organization for Standardization (ISO).
 
 **Since:** 9
 
@@ -590,7 +604,7 @@ Obtains the object identifier (OID) of the X.509 certificate signing algorithm. 
 
 | Type | Description |
 | --- | --- |
-| string | OID obtained. It will be truncated if the length exceeds 128 bytes. |
+| string | OID obtained. It will be truncated if the length exceeds 127 bytes. |
 
 **Error codes:**
 
@@ -635,7 +649,11 @@ Obtains the signing algorithm parameters of this X.509 certificate.
 getSubjectAltNames(): DataArray
 ```
 
-Obtains the Subject Alternative Names (SANs) of this X.509 certificate. > **NOTE** > > The obtained SANs contain a string terminator.
+Obtains the Subject Alternative Names (SANs) of this X.509 certificate.
+
+> **NOTE**
+>
+> The obtained SANs contain a string terminator.
 
 **Since:** 9
 
@@ -663,7 +681,11 @@ Obtains the Subject Alternative Names (SANs) of this X.509 certificate. > **NOTE
 getSubjectName(encodingType?: EncodingType): DataBlob
 ```
 
-Obtains the subject of this X.509 certificate. > **NOTE** > > The obtained X.509 certificate subject name contains a string terminator.
+Obtains the subject of this X.509 certificate.
+
+> **NOTE**
+>
+> The obtained X.509 certificate subject name contains a string terminator.
 
 **Since:** 9
 
@@ -690,7 +712,7 @@ Obtains the subject of this X.509 certificate. > **NOTE** > > The obtained X.509
 | [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
 | [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
 | [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Incorrect parameter types;<br>2. Parameter verification failed.<br>**Applicable version:** 12 |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Incorrect parameter types;<br>2. Parameter verification failed.<br>**Applicable version:** 12 and later |
 
 ## getSubjectX500DistinguishedName
 
@@ -698,7 +720,7 @@ Obtains the subject of this X.509 certificate. > **NOTE** > > The obtained X.509
 getSubjectX500DistinguishedName(): X500DistinguishedName
 ```
 
-Obtains the DN of the X.509 certificate subject (holder).
+Obtains the X.500 distinguished name object of the X.509 certificate subject.
 
 **Since:** 12
 
@@ -710,7 +732,7 @@ Obtains the DN of the X.509 certificate subject (holder).
 
 | Type | Description |
 | --- | --- |
-| X500DistinguishedName | DN object obtained. |
+| X500DistinguishedName | X.500 distinguished name object. |
 
 **Error codes:**
 

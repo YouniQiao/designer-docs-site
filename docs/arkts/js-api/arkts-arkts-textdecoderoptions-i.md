@@ -9,7 +9,7 @@ Describes decoding-related options, which include **fatal** and **ignoreBOM**.
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## fatal
@@ -18,7 +18,8 @@ import { util } from '@ohos.util';
 fatal?: boolean
 ```
 
-Whether to display fatal errors. The value **true** means to display fatal errors, and **false** means the opposite. The default value is **false**.
+Whether to display fatal errors. The value **true** means to display fatal errors, and **false** means the
+opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -34,7 +35,8 @@ Whether to display fatal errors. The value **true** means to display fatal error
 ignoreBOM?: boolean
 ```
 
-Whether to ignore the BOM. The value **true** means to ignore the BOM, and **false** means the opposite. The default value is **false**.
+Whether to ignore the BOM. The value **true** means to ignore the BOM, and **false** means the opposite. The
+default value is **false**.
 
 **Type:** boolean
 

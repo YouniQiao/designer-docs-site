@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## moveFileSync
@@ -12,7 +12,11 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function moveFileSync(src: string, dest: string, mode?: number): void
 ```
 
-Moves a file. This API returns the result synchronously. > **NOTE** > > This API is not supported in a distributed directory.
+Moves a file. This API returns the result synchronously.
+
+> **NOTE**
+>
+> This API is not supported in a distributed directory.
 
 **Since:** 9
 

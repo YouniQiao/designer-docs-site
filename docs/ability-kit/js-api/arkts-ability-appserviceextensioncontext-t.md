@@ -4,7 +4,9 @@
 export type AppServiceExtensionContext = _AppServiceExtensionContext.default
 ```
 
-Defines the context environment for the [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) . It inherits from Context.
+Defines the context environment for the
+[AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md)
+. It inherits from Context.
 
 **Since:** 20
 

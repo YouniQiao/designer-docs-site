@@ -1,10 +1,13 @@
-# MetadataFaceObject
+# MetadataFaceObject (System API)
 
-Implements the human face metadata object used for camera detection. It inherits from [MetadataObject]camera.MetadataObjectType and is the data source of the camera information in [CameraInput]camera.CameraInput. It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')]camera.MetadataOutput.on(type: 'metadataObjectsAvailable', callback: AsyncCallback<Array<MetadataObject>>).
+Implements the human face metadata object used for camera detection. It inherits from
+[MetadataObject](arkts-camera-metadataobjecttype-e.md) and is the data source of the camera information in
+[CameraInput](arkts-camera-camerainput-i.md). It is obtained by calling metadataOutput.
+[on('metadataObjectsAvailable')](arkts-camera-metadataoutput-i.md#on-1).
 
-**Inheritance:** MetadataFaceObjectextends: MetadataObject.
+**Inheritance/Implementation:** MetadataFaceObject extends [MetadataObject](arkts-camera-metadataobject-i.md)
 
-**Since:** 13
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -16,24 +19,6 @@ Implements the human face metadata object used for camera detection. It inherits
 import { camera } from '@kit.CameraKit';
 ```
 
-## pitchAngle
-
-```TypeScript
-readonly pitchAngle: int
-```
-
-Pitch angle, with a value range of [-90, 90], where downward is positive.
-
-**Type:** int
-
-**Since:** 13
-
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
 ## emotion
 
 ```TypeScript
@@ -44,63 +29,27 @@ Detected emotion.
 
 **Type:** Emotion
 
-**Since:** 13
+**Since:** 26.0.0
 
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## rightEyeBoundingBox
-
-```TypeScript
-readonly rightEyeBoundingBox: Rect
-```
-
-Right eye area.
-
-**Type:** Rect
-
-**Since:** 13
-
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 **System API:** This is a system API.
 
-## yawAngle
+## emotionConfidence
 
 ```TypeScript
-readonly yawAngle: int
+readonly emotionConfidence: number
 ```
 
-Yaw angle, with a value range of [-90, 90], where rightward is positive.
+Confidence of the emotion detection, with a value range of [0, 1].
 
-**Type:** int
+**Type:** number
 
-**Since:** 13
+**Since:** 26.0.0
 
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## rollAngle
-
-```TypeScript
-readonly rollAngle: int
-```
-
-Row angle, with a value range of [-180, 180], where clockwise direction is positive.
-
-**Type:** int
-
-**Since:** 13
-
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -116,27 +65,81 @@ Left eye area.
 
 **Type:** Rect
 
-**Since:** 13
+**Since:** 26.0.0
 
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 **System API:** This is a system API.
 
-## emotionConfidence
+## pitchAngle
 
 ```TypeScript
-readonly emotionConfidence: double
+readonly pitchAngle: number
 ```
 
-Confidence of the emotion detection, with a value range of [0, 1].
+Pitch angle, with a value range of [-90, 90], where downward is positive.
 
-**Type:** double
+**Type:** number
 
-**Since:** 13
+**Since:** 26.0.0
 
-**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## rightEyeBoundingBox
+
+```TypeScript
+readonly rightEyeBoundingBox: Rect
+```
+
+Right eye area.
+
+**Type:** Rect
+
+**Since:** 26.0.0
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## rollAngle
+
+```TypeScript
+readonly rollAngle: number
+```
+
+Row angle, with a value range of [-180, 180], where clockwise direction is positive.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## yawAngle
+
+```TypeScript
+readonly yawAngle: number
+```
+
+Yaw angle, with a value range of [-90, 90], where rightward is positive.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

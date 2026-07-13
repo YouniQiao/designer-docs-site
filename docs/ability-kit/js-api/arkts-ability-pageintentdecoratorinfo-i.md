@@ -1,8 +1,13 @@
 # PageIntentDecoratorInfo
 
-PageIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo) and describes the parameters supported by the [@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) decorator, such as the name of [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) of the target page.
+PageIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and describes the parameters
+supported by the
+[@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage)
+decorator, such as the name of
+[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) of the
+target page.
 
-**Inheritance/Implementation:** PageIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)
+**Inheritance/Implementation:** PageIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 
 **Since:** 20
 
@@ -11,7 +16,7 @@ PageIntentDecoratorInfo inherits from [IntentDecoratorInfo](arkts-ability-intent
 ## Modules to Import
 
 ```TypeScript
-import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightIntentEntity, LinkParamCategory, InsightIntentPage, InsightIntentEntry, InsightIntentFunctionMethod } from '@ohos.app.ability.InsightIntentDecorator';
+import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightIntentEntity, LinkParamCategory, InsightIntentPage, InsightIntentEntry, InsightIntentFunctionMethod } from '@kit.AbilityKit';
 ```
 
 ## navDestinationName
@@ -20,7 +25,9 @@ import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightInt
 navDestinationName?: string
 ```
 
-Name of the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) component bound to the intent.
+Name of the
+[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)
+component bound to the intent.
 
 **Type:** string
 
@@ -38,7 +45,8 @@ Name of the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-
 navigationId?: string
 ```
 
-ID of the [Navigation](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#attributes) component bound to the intent.
+ID of the [Navigation](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#attributes)
+component bound to the intent.
 
 **Type:** string
 

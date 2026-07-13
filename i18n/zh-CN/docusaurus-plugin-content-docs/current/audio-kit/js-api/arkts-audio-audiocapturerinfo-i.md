@@ -1,26 +1,22 @@
 # AudioCapturerInfo
 
-Describes audio capturer information.
+描述音频采集器信息。
 
 **起始版本：** 8
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
 ## capturerFlags
 
 ```TypeScript
-capturerFlags: int
+capturerFlags: number
 ```
 
-Flags that control the capturer behavior. Set this parameter to **0**.
+录制流行为标志。
 
-**类型：** int
+设置为0即可。
+
+**类型：** number
 
 **起始版本：** 8
 
@@ -32,7 +28,7 @@ Flags that control the capturer behavior. Set this parameter to **0**.
 source: SourceType
 ```
 
-Audio source type.
+音源类型。
 
 **类型：** SourceType
 

@@ -1,6 +1,6 @@
 # ActiveChangeResponse (System API)
 
-Indicates the response of permission active status.
+Defines the detailed permission usage information.
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ Indicates the response of permission active status.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## activeStatus
@@ -20,7 +20,7 @@ import { privacyManager } from '@ohos.privacyManager';
 activeStatus: PermissionActiveStatus
 ```
 
-The active status name
+Permission usage status.
 
 **Type:** PermissionActiveStatus
 
@@ -36,7 +36,9 @@ The active status name
 callingTokenId?: number
 ```
 
-AccessTokenID which called the interface
+Identity of the caller application. This field is invalid when **activeStatus** is **INACTIVE**.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -52,7 +54,7 @@ AccessTokenID which called the interface
 deviceId: string
 ```
 
-The device id
+ID of the device where the permission usage status change occurred.
 
 **Type:** string
 
@@ -68,7 +70,10 @@ The device id
 enhancedIdentity?: string
 ```
 
-Enhanced identity.
+Extension identity, used to identify additional identity information of the caller. This field is returned
+when it is necessary to distinguish permission usage records from different call sources within the same
+application.
+The maximum length is 48. Default value: Empty string.
 
 **Type:** string
 
@@ -86,7 +91,7 @@ Enhanced identity.
 permissionName: Permissions
 ```
 
-The permission name
+Name of the permission whose usage status has changed.
 
 **Type:** Permissions
 
@@ -102,7 +107,7 @@ The permission name
 tokenId: number
 ```
 
-AccessTokenID
+Token ID of the application whose permission usage changes are subscribed to.
 
 **Type:** number
 
@@ -118,7 +123,9 @@ AccessTokenID
 usedType?: PermissionUsedType
 ```
 
-Used type of the permission accessed.
+Sensitive permission usage type. This value is invalid when activeStatus is INACTIVE.
+
+Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

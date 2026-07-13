@@ -1,6 +1,7 @@
 # ScopeHelper
 
-Provides APIs to define the valid range of a field. The constructor of this class creates comparable objects with lower and upper limits.
+Provides APIs to define the valid range of a field. The constructor of this class creates comparable objects with
+lower and upper limits.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Provides APIs to define the valid range of a field. The constructor of this clas
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## clamp
@@ -533,7 +534,8 @@ console.info("result = " + result);
 intersect(range: ScopeHelper): ScopeHelper
 ```
 
-Obtains the intersection of this **Scope** and the given **Scope**. If the intersection is empty, an exception is thrown.
+Obtains the intersection of this **Scope** and the given **Scope**. If the intersection is empty, an exception is
+thrown.
 
 **Since:** 9
 
@@ -594,7 +596,8 @@ console.info("result = " + result);
 intersect(lowerObj: ScopeType, upperObj: ScopeType): ScopeHelper
 ```
 
-Obtains the intersection of this **Scope** and the given lower and upper limits. If the intersection is empty, an exception is thrown.
+Obtains the intersection of this **Scope** and the given lower and upper limits. If the intersection is empty, an
+exception is thrown.
 
 **Since:** 9
 

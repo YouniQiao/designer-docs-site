@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { intelligentScene } from '@ohos.intelligentScene';
+import { intelligentScene } from '@kit.BasicServicesKit';
 ```
 
 ## isDoNotDisturbEnabled
@@ -12,7 +12,9 @@ import { intelligentScene } from '@ohos.intelligentScene';
 function isDoNotDisturbEnabled(): Promise<boolean>
 ```
 
-Checks whether Do Not Disturb is enabled on this device. The Do Not Disturb state defines if notifications are allowed to interrupt the user (e.g. via sound & vibration) and is applied globally.
+Checks whether Do Not Disturb is enabled on this device.
+The Do Not Disturb state defines if notifications are allowed to interrupt
+the user (e.g. via sound & vibration) and is applied globally.
 
 **Since:** 23
 

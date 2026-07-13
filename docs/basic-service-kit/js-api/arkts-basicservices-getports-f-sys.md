@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## getPorts
@@ -12,7 +12,8 @@ import { usbManager } from '@ohos.usbManager';
 function getPorts(): Array<USBPort>
 ```
 
-Obtains the list of all physical USB ports. When the developer mode is disabled, **undefined** may be returned if no device is connected. Check whether the return value of the API is empty.
+Obtains the list of all physical USB ports. When the developer mode is disabled, **undefined** may be returned if
+no device is connected. Check whether the return value of the API is empty.
 
 **Since:** 9
 

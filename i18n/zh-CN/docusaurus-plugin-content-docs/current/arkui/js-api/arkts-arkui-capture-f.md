@@ -6,7 +6,9 @@
 function capture(options?: CaptureOption): Promise<image.PixelMap>
 ```
 
-获取屏幕全屏截图，使用Promise异步回调。 此接口可以通过设置不同的displayId截取不同屏幕的截图，且只能截取全屏；[pick](arkts-arkui-pick-f.md#pick-1)接口可实现区域截屏。
+获取屏幕全屏截图，使用Promise异步回调。
+
+此接口可以通过设置不同的displayId截取不同屏幕的截图，且只能截取全屏；[pick](arkts-arkui-pick-f.md#pick-1)接口可实现区域截屏。
 
 **起始版本：** 14
 
@@ -35,8 +37,8 @@ function capture(options?: CaptureOption): Promise<image.PixelMap>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types.2.Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported on this device. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types.2.Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported on this device. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
 **示例：**

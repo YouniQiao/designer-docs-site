@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [Want](arkts-want-i.md) | Want是对象间信息传递的载体, 可以用于应用组件间的信息传递。 Want的使用场景之一是作为 [startAbility]{@link ./application/UIAbilityContext:UIAbilityContext.startAbility(want: Want, callback: AsyncCallback<void>)} 的参数, 其包含了指定的启动目标, 以及启动时需携带的相关数据, 如bundleName和abilityName字段分别指明目标Ability所在应用的Bundle名称以及对应包内的Ability名称。当Ability A需要启动 Ability B并传入一些数据时, 可使用Want作为载体将这些数据传递给Ability B。 |
+| [Want](arkts-ability-want-i.md) | Want is a carrier for information transfer between objects (application components). Want can be used as a parameterof[startAbility](arkts-ability-uiabilitycontext-c.md#startability-1) to specify a startup target and information that needs to be carried during startup, for example, **bundleName** and **abilityName**, which respectively indicate the bundle name of the target ability and the ability name in thebundle. When ability A needs to start ability B and transfer some data to ability B, it can use Want a carrier totransfer the data. |
 

@@ -4,7 +4,8 @@
 export type AgentCapabilities = _AgentCapabilities
 ```
 
-Capabilities in an AgentCard represent the specific skills, services, and functions that an agent can perform or provide within the system.
+Capabilities in an AgentCard represent the specific skills, services, and functions that
+an agent can perform or provide within the system.
 
 **Since:** 24
 

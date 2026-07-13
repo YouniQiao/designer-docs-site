@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## setGlobalRetryOptions
@@ -12,7 +12,8 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 function setGlobalRetryOptions(options?: RetryOptions): void
 ```
 
-Sets retry options for all tasks. Used when task-specific retry configuration is not configured.
+Sets retry options for all tasks.
+Used when task-specific retry configuration is not configured.
 
 **Since:** 26.0.0
 

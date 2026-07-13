@@ -2,7 +2,7 @@
 
 Worker线程自身的运行环境，与宿主线程环境隔离。
 
-**继承/实现关系：** DedicatedWorkerGlobalScope extends [WorkerGlobalScope](arkts-arkts-workerglobalscope-i.md#workerglobalscope)
+**继承/实现关系：** DedicatedWorkerGlobalScope extends [WorkerGlobalScope](arkts-arkts-workerglobalscope-i.md)
 
 **起始版本：** 7
 
@@ -179,7 +179,9 @@ workerPort.onmessage = (): void => {
 onmessage?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-onmessage属性用于指定当Worker线程收到来自其宿主线程通过 postMessage接口发送的消息时被调用的事件处理程序， 该事件处理程序在Worker线程中执行。
+onmessage属性用于指定当Worker线程收到来自其宿主线程通过
+postMessage接口发送的消息时被调用的事件处理程序，
+该事件处理程序在Worker线程中执行。
 
 **类型：** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 
@@ -197,7 +199,8 @@ onmessage属性用于指定当Worker线程收到来自其宿主线程通过 post
 onmessageerror?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-onmessage属性用于指定当Worker线程收到一条无法被反序列化的消息时 被调用的事件处理程序，该事件处理程序在Worker线程中执行。
+onmessage属性用于指定当Worker线程收到一条无法被反序列化的消息时
+被调用的事件处理程序，该事件处理程序在Worker线程中执行。
 
 **类型：** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getApplicationInfoSync
@@ -12,7 +12,10 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getApplicationInfoSync(bundleName: string, applicationFlags: number, userId: number) : ApplicationInfo
 ```
 
-Obtains the application information based on the given bundle name, application flags, and user ID. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
+Obtains the application information based on the given bundle name, application flags, and user ID. This API
+returns the result synchronously.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -75,7 +78,10 @@ try {
 function getApplicationInfoSync(bundleName: string, applicationFlags: number) : ApplicationInfo
 ```
 
-Obtains the application information based on the given bundle name and application flags. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
+Obtains the application information based on the given bundle name and application flags. This API returns the
+result synchronously.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 

@@ -9,7 +9,7 @@ Represents the text information about the recommended images.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## text
@@ -18,7 +18,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 text?: string
 ```
 
-Text based on which images are recommended. The text cannot exceed 250 characters. The default value is an empty string.
+Text based on which images are recommended.
+The text cannot exceed 250 characters. The default value is an empty string.
 
 **Type:** string
 

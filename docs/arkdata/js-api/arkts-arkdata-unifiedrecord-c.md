@@ -1,6 +1,9 @@
 # UnifiedRecord
 
-An abstract definition of the data content supported by the UDMF. A **UnifiedRecord** object contains one or more data records, for example, a text record, an image record, or an HTML record. Since API version 15, different styles of the same content can be added to a **UnifiedRecord** object. Data users can obtain the corresponding styles as required.
+An abstract definition of the data content supported by the UDMF. A **UnifiedRecord** object contains one or more
+data records, for example, a text record, an image record, or an HTML record. Since API version 15, different
+styles of the same content can be added to a **UnifiedRecord** object. Data users can obtain the corresponding
+styles as required.
 
 **Since:** 10
 
@@ -9,7 +12,7 @@ An abstract definition of the data content supported by the UDMF. A **UnifiedRec
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## addEntry
@@ -18,7 +21,8 @@ import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
 addEntry(type: string, value: ValueType): void
 ```
 
-Adds data of a specified data type and content to the current data record. You can use this API to add different data types and contents to the same data.
+Adds data of a specified data type and content to the current data record. You can use this API to add different
+data types and contents to the same data.
 
 **Since:** 15
 
@@ -32,7 +36,7 @@ Adds data of a specified data type and content to the current data record. You c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the data to add. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Type of the data to add. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 | value | ValueType | Yes | Value of the data to add. |
 
 **Error codes:**
@@ -98,7 +102,15 @@ let unifiedRecord = new unifiedDataChannel.UnifiedRecord();
 constructor(type: string, value: ValueType)
 ```
 
-Defines a constructor used to create a data record with the specified type and value. If **value** is of the [image.PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md#image) type, **type** must be the value of **OPENHARMONY_PIXEL_MAP** in [UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). If **value** is of the [Want](../../apis-ability-kit/arkts-apis/arkts-ability-want-c.md#want) type, **type** must be the value of **OPENHARMONY_WANT** in [UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype).
+Defines a constructor used to create a data record with the specified type and value.
+
+If **value** is of the [image.PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) type, **type** must be the value of
+**OPENHARMONY_PIXEL_MAP** in
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
+
+If **value** is of the [Want](../../apis-ability-kit/arkts-apis/arkts-ability-want-c.md) type, **type** must be the value of
+**OPENHARMONY_WANT** in
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Since:** 12
 
@@ -243,7 +255,7 @@ Obtains data of the specified type from the data record.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the data to obtain. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Type of the data to obtain. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Return value:**
 
@@ -312,7 +324,10 @@ for (let i = 0; i < records.length; i++) {
 getType(): string
 ```
 
-Obtains the type of this **UnfiedRecord**. The data obtained by [getRecords](arkts-arkdata-unifieddata-c.md#getrecords-1) from the **UnifiedData** object is a **UnifiedRecord** object. You need to use this API to obtain the specific type of the record, convert the **UnifiedRecord** object to its child class, and call the child class interfaces.
+Obtains the type of this **UnfiedRecord**. The data obtained by
+[getRecords](arkts-arkdata-unifieddata-c.md#getrecords-1) from the **UnifiedData** object is a
+**UnifiedRecord** object. You need to use this API to obtain the specific type of the record, convert the
+**UnifiedRecord** object to its child class, and call the child class interfaces.
 
 **Since:** 10
 
@@ -326,7 +341,7 @@ Obtains the type of this **UnfiedRecord**. The data obtained by [getRecords](ark
 
 | Type | Description |
 | --- | --- |
-| string | Data type obtained. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| string | Data type obtained. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Example**
 
@@ -355,7 +370,9 @@ if (records[0].getType() == uniformTypeDescriptor.UniformDataType.PLAIN_TEXT) {
 getTypes(): Array<string>
 ```
 
-Obtains all the data types in the data record. This API can be called using the **UnifiedRecord** object to query all data types in the record, including the data types added using the [addEntry](arkts-arkdata-unifiedrecord-c.md#addentry-1) function.
+Obtains all the data types in the data record. This API can be called using the **UnifiedRecord** object to query
+all data types in the record, including the data types added using the
+[addEntry](arkts-arkdata-unifiedrecord-c.md#addentry-1) function.
 
 **Since:** 15
 
@@ -369,7 +386,7 @@ Obtains all the data types in the data record. This API can be called using the 
 
 | Type | Description |
 | --- | --- |
-| Array&lt;string&gt; | Array of[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype)s obtained. |
+| Array&lt;string&gt; | Array of[UniformDataType](arkts-arkdata-uniformdatatype-e.md)s obtained. |
 
 **Example**
 

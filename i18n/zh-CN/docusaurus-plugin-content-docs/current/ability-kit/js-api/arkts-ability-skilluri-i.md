@@ -140,7 +140,8 @@ readonly scheme: string
 readonly type: string
 ```
 
-标识与Want相匹配的数据类型，使用MIME（Multipurpose?Internet?Mail?Extensions）类型规范和 [UniformDataType](./../@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型规范。
+标识与Want相匹配的数据类型，使用MIME（Multipurpose?Internet?Mail?Extensions）类型规范和
+[UniformDataType](./../@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型规范。
 
 **类型：** string
 

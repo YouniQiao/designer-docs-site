@@ -1,19 +1,20 @@
 # PluralRulesOptions
 
-Defines the options for creating a **PluralRules** object. Since API version 9, the **PluralRulesOptions** attribute is changed from mandatory to optional.
+Defines the options for creating a **PluralRules** object. Since API version 9, the **PluralRulesOptions**
+attribute is changed from mandatory to optional.
 
 **Since:** 8
 
 **Deprecated since:** 20
 
-**Substitutes:** PluralRulesOptions
+**Substitutes:** options)
 
 **System capability:** SystemCapability.Global.I18n
 
 ## Modules to Import
 
 ```TypeScript
-import { intl } from '@ohos.intl';
+import { intl } from '@kit.LocalizationKit';
 ```
 
 ## localeMatcher
@@ -22,7 +23,9 @@ import { intl } from '@ohos.intl';
 localeMatcher?: string
 ```
 
-Locale matching algorithm. The value can be **lookup** or **best fit**. The default value is **best fit**.
+Locale matching algorithm. The value can be **lookup** or **best fit**.
+
+The default value is **best fit**.
 
 **Type:** string
 
@@ -30,7 +33,7 @@ Locale matching algorithm. The value can be **lookup** or **best fit**. The defa
 
 **Deprecated since:** 20
 
-**Substitutes:** localeMatcher
+**Substitutes:** localematcher)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -42,7 +45,9 @@ Locale matching algorithm. The value can be **lookup** or **best fit**. The defa
 maximumFractionDigits?: number
 ```
 
-Maximum number of digits in the fraction part of a number. The value ranges from **1** to **21**. The default value is **3**.
+Maximum number of digits in the fraction part of a number. The value ranges from **1** to **21**.
+
+The default value is **3**.
 
 **Type:** number
 
@@ -50,7 +55,7 @@ Maximum number of digits in the fraction part of a number. The value ranges from
 
 **Deprecated since:** 20
 
-**Substitutes:** maximumFractionDigits
+**Substitutes:** maximumfractiondigits)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -62,7 +67,9 @@ Maximum number of digits in the fraction part of a number. The value ranges from
 maximumSignificantDigits?: number
 ```
 
-Maximum number of the least significant digits. The value ranges from **1** to **21**. The default value is **21**.
+Maximum number of the least significant digits. The value ranges from **1** to **21**.
+
+The default value is **21**.
 
 **Type:** number
 
@@ -70,7 +77,7 @@ Maximum number of the least significant digits. The value ranges from **1** to *
 
 **Deprecated since:** 20
 
-**Substitutes:** maximumSignificantDigits
+**Substitutes:** maximumsignificantdigits)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -82,7 +89,9 @@ Maximum number of the least significant digits. The value ranges from **1** to *
 minimumFractionDigits?: number
 ```
 
-Minimum number of digits in the fraction part of a number. The value ranges from **0** to **20**. The default value is **0**.
+Minimum number of digits in the fraction part of a number. The value ranges from **0** to **20**.
+
+The default value is **0**.
 
 **Type:** number
 
@@ -90,7 +99,7 @@ Minimum number of digits in the fraction part of a number. The value ranges from
 
 **Deprecated since:** 20
 
-**Substitutes:** minimumFractionDigits
+**Substitutes:** minimumfractiondigits)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -102,7 +111,9 @@ Minimum number of digits in the fraction part of a number. The value ranges from
 minimumIntegerDigits?: number
 ```
 
-Minimum number of digits allowed in the integer part of a number. The value ranges from **1** to **21**. The default value is **1**.
+Minimum number of digits allowed in the integer part of a number. The value ranges from **1** to **21**.
+
+The default value is **1**.
 
 **Type:** number
 
@@ -110,7 +121,7 @@ Minimum number of digits allowed in the integer part of a number. The value rang
 
 **Deprecated since:** 20
 
-**Substitutes:** minimumIntegerDigits
+**Substitutes:** minimumintegerdigits)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -122,7 +133,9 @@ Minimum number of digits allowed in the integer part of a number. The value rang
 minimumSignificantDigits?: number
 ```
 
-Minimum number of the least significant digits. The value ranges from **1** to **21**. The default value is **1**.
+Minimum number of the least significant digits. The value ranges from **1** to **21**.
+
+The default value is **1**.
 
 **Type:** number
 
@@ -130,7 +143,7 @@ Minimum number of the least significant digits. The value ranges from **1** to *
 
 **Deprecated since:** 20
 
-**Substitutes:** minimumSignificantDigits
+**Substitutes:** minimumsignificantdigits)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -142,7 +155,11 @@ Minimum number of the least significant digits. The value ranges from **1** to *
 type?: string
 ```
 
-Collation type. The value can be **cardinal** or **ordinal**. The default value is **cardinal**. The value **cardinal** indicates a cardinal number and the value **ordinal** indicates an ordinal number.
+Collation type. The value can be **cardinal** or **ordinal**.
+
+The default value is **cardinal**.
+
+The value **cardinal** indicates a cardinal number and the value **ordinal** indicates an ordinal number.
 
 **Type:** string
 
@@ -150,7 +167,7 @@ Collation type. The value can be **cardinal** or **ordinal**. The default value 
 
 **Deprecated since:** 20
 
-**Substitutes:** type
+**Substitutes:** type)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 

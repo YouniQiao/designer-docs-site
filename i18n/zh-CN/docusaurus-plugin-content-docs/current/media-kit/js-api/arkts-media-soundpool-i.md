@@ -1,6 +1,24 @@
 # SoundPool
 
-音频池提供了系统声音的加载、播放、音量设置、循环设置、停止播放和资源卸载等功能，在调用SoundPool的接口前，需要先通过 [media.createSoundPool](../../../../reference/apis-media-kit/arkts-apis-media-f.md) 创建实例。 > **说明：** > > - 在使用SoundPool实例的方法时，建议开发者注册相关回调，主动获取当前状态变化。 > > - [on('loadComplete')](arkts-media-soundpool-i.md#on-1)：监听资源加载完成。建议开发者监听此回调以确 > 保音频在加载完成后进行播放。 > > - > [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)：监听播 > 放完成，同时返回播放结束的音频的streamId。 > > - [on('playFinished')](arkts-media-soundpool-i.md#on-4)：监听播放完成。 > > - [on('error')](arkts-media-soundpool-i.md#on-3)：监听错误事件。 > > - [on('errorOccurred')](arkts-media-soundpool-i.md#on-5)：监听错误事件，同时返回 > [errorInfo](arkts-media-errorinfo-i.md#errorinfo)。 > > - SoundPool目前不支持后台播放、设置音频打断等音频焦点策略和跳过音频头尾的静音帧。SoundPool低时延播放可参考 > [使用SoundPool播放短音频(ArkTS)](../../../../media/media/using-soundpool-for-playback.md)。
+音频池提供了系统声音的加载、播放、音量设置、循环设置、停止播放和资源卸载等功能，在调用SoundPool的接口前，需要先通过
+[media.createSoundPool](../../../../reference/apis-media-kit/arkts-apis-media-f.md)
+创建实例。
+
+> **说明：**
+>
+> - 在使用SoundPool实例的方法时，建议开发者注册相关回调，主动获取当前状态变化。
+> > - [on('loadComplete')](arkts-media-soundpool-i.md#on-1)：监听资源加载完成。建议开发者监听此回调以确
+> 保音频在加载完成后进行播放。
+> > -
+> [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)：监听播
+> 放完成，同时返回播放结束的音频的streamId。
+> > - [on('playFinished')](arkts-media-soundpool-i.md#on-4)：监听播放完成。
+> > - [on('error')](arkts-media-soundpool-i.md#on-3)：监听错误事件。
+> > - [on('errorOccurred')](arkts-media-soundpool-i.md#on-5)：监听错误事件，同时返回
+> [errorInfo](arkts-media-errorinfo-i.md)。
+>
+> - SoundPool目前不支持后台播放、设置音频打断等音频焦点策略和跳过音频头尾的静音帧。SoundPool低时延播放可参考
+> [使用SoundPool播放短音频(ArkTS)](../../../../media/media/using-soundpool-for-playback.md)。
 
 **起始版本：** 10
 
@@ -12,7 +30,21 @@
 load(uri: string, callback: AsyncCallback<number>): void
 ```
 
-加载音频资源。使用callback异步回调。 通过callback异步回调获取资源ID，入参URL通过获取文件fd生成以"fd://"开头的文件描述字符串。 该方法不支持加载rawfile目录资源，需要通过 [load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3) 或者 [load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4) 实现。 > **说明：** > > - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。 > > - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
+加载音频资源。使用callback异步回调。
+
+通过callback异步回调获取资源ID，入参URL通过获取文件fd生成以"fd://"开头的文件描述字符串。
+
+该方法不支持加载rawfile目录资源，需要通过
+[load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3)
+或者
+[load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4)
+实现。
+
+> **说明：**
+>
+> - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。
+>
+> - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
 
 **起始版本：** 10
 
@@ -39,7 +71,21 @@ load(uri: string, callback: AsyncCallback<number>): void
 load(uri: string): Promise<number>
 ```
 
-加载音频资源。使用Promise异步回调。 通过Promise异步回调获取资源ID，入参URL通过获取文件fd生成以"fd://"开头的文件描述字符串。 该方法不支持加载rawfile目录资源，需要通过 [load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3) 或者 [load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4) 实现。 > **说明：** > > - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。 > > - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
+加载音频资源。使用Promise异步回调。
+
+通过Promise异步回调获取资源ID，入参URL通过获取文件fd生成以"fd://"开头的文件描述字符串。
+
+该方法不支持加载rawfile目录资源，需要通过
+[load(fd: number, offset: number, length: number, callback: AsyncCallback\<number>): void](arkts-media-soundpool-i.md#load-3)
+或者
+[load(fd: number, offset: number, length: number): Promise\<number>](arkts-media-soundpool-i.md#load-4)
+实现。
+
+> **说明：**
+>
+> - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。
+>
+> - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
 
 **起始版本：** 10
 
@@ -71,7 +117,15 @@ load(uri: string): Promise<number>
 load(fd: number, offset: number, length: number, callback: AsyncCallback<number>): void
 ```
 
-加载音频资源。使用callback异步回调。 通过callback异步回调获取资源ID，入参可手动传入资源信息或通过读取应用内置资源自动获取。 > **说明：** > > - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。 > > - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
+加载音频资源。使用callback异步回调。
+
+通过callback异步回调获取资源ID，入参可手动传入资源信息或通过读取应用内置资源自动获取。
+
+> **说明：**
+>
+> - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。
+>
+> - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
 
 **起始版本：** 10
 
@@ -100,7 +154,15 @@ load(fd: number, offset: number, length: number, callback: AsyncCallback<number>
 load(fd: number, offset: number, length: number): Promise<number>
 ```
 
-加载音频资源。使用Promise异步回调。 通过Promise异步回调获取资源ID，入参可手动传入资源信息或通过读取应用内置资源自动获取。 > **说明：** > > - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。 > > - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
+加载音频资源。使用Promise异步回调。
+
+通过Promise异步回调获取资源ID，入参可手动传入资源信息或通过读取应用内置资源自动获取。
+
+> **说明：**
+>
+> - 将资源句柄（fd）或加载路径描述（uri）传递给音频池播放器之后，请不要通过该资源句柄或加载路径描述做其他读写操作，包括但不限于将同一个资源句柄或加载路径描述传递给多个音频池播放器。
+>
+> - 同一时间通过同一个资源句柄或加载路径描述读写文件时存在竞争关系，将导致播放异常。
 
 **起始版本：** 10
 
@@ -217,7 +279,7 @@ off(type: 'errorOccurred', callback?:Callback<ErrorInfo>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | 'errorOccurred' | 是 | 事件回调类型，取消注册的事件为'errorOccurred'。 |
-| callback | Callback&lt;ErrorInfo&gt; | 否 | 错误事件回调方法。在使用播放器的过程中发生错误时，提供错误信息[ErrorInfo](arkts-media-errorinfo-i.md#errorinfo)，不设置callback时不提供相关信息。 |
+| callback | Callback&lt;ErrorInfo&gt; | 否 | 错误事件回调方法。在使用播放器的过程中发生错误时，提供错误信息[ErrorInfo](arkts-media-errorinfo-i.md)，不设置callback时不提供相关信息。 |
 
 ## on('loadComplete')
 
@@ -263,7 +325,8 @@ on(type: 'playFinished', callback: Callback<void>): void
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-监听[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool)的错误事件，该事件仅用于错误提示。使 用callback异步回调。
+监听[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool)的错误事件，该事件仅用于错误提示。使
+用callback异步回调。
 
 **起始版本：** 10
 
@@ -282,7 +345,15 @@ on(type: 'error', callback: ErrorCallback): void
 on(type: 'playFinishedWithStreamId', callback: Callback<number>): void
 ```
 
-音频池资源播放完成监听，同时返回播放结束的音频的streamId。使用callback异步回调。 当仅单独注册[on('playFinished')](arkts-media-soundpool-i.md#on-4)事件回调或者 [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)事件回调 时，当音频播放完成的时候，都会触发注册的回调。 当同时注册[on('playFinished')](arkts-media-soundpool-i.md#on-4)事件回调和 [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)事件回调 时，当音频播放完成的时候，仅会触发'playFinishedWithStreamId'事件回调，不会触发'playFinished'事件回调。
+音频池资源播放完成监听，同时返回播放结束的音频的streamId。使用callback异步回调。
+
+当仅单独注册[on('playFinished')](arkts-media-soundpool-i.md#on-4)事件回调或者
+[on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)事件回调
+时，当音频播放完成的时候，都会触发注册的回调。
+
+当同时注册[on('playFinished')](arkts-media-soundpool-i.md#on-4)事件回调和
+[on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)事件回调
+时，当音频播放完成的时候，仅会触发'playFinishedWithStreamId'事件回调，不会触发'playFinished'事件回调。
 
 **起始版本：** 18
 
@@ -301,7 +372,8 @@ on(type: 'playFinishedWithStreamId', callback: Callback<number>): void
 on(type:'errorOccurred', callback:Callback<ErrorInfo>): void
 ```
 
-监听[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool)的错误事件，并返回包含错误码、错误发 生阶段、资源ID和音频流ID的[ErrorInfo](arkts-media-errorinfo-i.md#errorinfo)。使用callback异步回调。
+监听[SoundPool](../../../../reference/apis-media-kit/js-apis-inner-multimedia-soundPool.md#soundpool)的错误事件，并返回包含错误码、错误发
+生阶段、资源ID和音频流ID的[ErrorInfo](arkts-media-errorinfo-i.md)。使用callback异步回调。
 
 **起始版本：** 20
 
@@ -312,7 +384,7 @@ on(type:'errorOccurred', callback:Callback<ErrorInfo>): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | type | 'errorOccurred' | 是 | 事件回调类型，支持的事件为'errorOccurred'，当用户或系统操作导致错误，触发该事件。 |
-| callback | Callback&lt;ErrorInfo&gt; | 是 | 回调函数，返回错误事件回调方法。在使用播放器的过程中发生错误时，提供错误信息[ErrorInfo](arkts-media-errorinfo-i.md#errorinfo)。 |
+| callback | Callback&lt;ErrorInfo&gt; | 是 | 回调函数，返回错误事件回调方法。在使用播放器的过程中发生错误时，提供错误信息[ErrorInfo](arkts-media-errorinfo-i.md)。 |
 
 ## play
 
@@ -338,7 +410,7 @@ play(soundID: number, params: PlayParameters, callback: AsyncCallback<number>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -365,7 +437,7 @@ play(soundID: number, callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -398,7 +470,7 @@ play(soundID: number, params?: PlayParameters): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 
@@ -456,7 +528,9 @@ release(): Promise<void>
 setInterruptMode(interruptMode: media.SoundInterruptMode): void
 ```
 
-设置同一ID音频在播放时的打断模式。创建soundPool之后，该接口仅在首次调用soundPool的Play函数之前设置有效，期间可多次设置，否则将默认使用 [SAME_SOUND_INTERRUPT](../../../../reference/apis-media-kit/arkts-apis-media-e.md)，即对同一ID的音频，如果前者尚未播放完成，后者在播放前会先打断前 者的播放。
+设置同一ID音频在播放时的打断模式。创建soundPool之后，该接口仅在首次调用soundPool的Play函数之前设置有效，期间可多次设置，否则将默认使用
+[SAME_SOUND_INTERRUPT](../../../../reference/apis-media-kit/arkts-apis-media-e.md)，即对同一ID的音频，如果前者尚未播放完成，后者在播放前会先打断前
+者的播放。
 
 **起始版本：** 23
 
@@ -494,7 +568,7 @@ setLoop(streamID: number, loop: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -527,7 +601,7 @@ setLoop(streamID: number, loop: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 
@@ -555,7 +629,7 @@ setPriority(streamID: number, priority: number, callback: AsyncCallback<void>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -588,7 +662,7 @@ setPriority(streamID: number, priority: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 
@@ -616,7 +690,7 @@ setRate(streamID: number, rate: audio.AudioRendererRate, callback: AsyncCallback
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -649,7 +723,7 @@ setRate(streamID: number, rate: audio.AudioRendererRate): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 
@@ -678,7 +752,7 @@ setVolume(streamID: number, leftVolume: number, rightVolume: number, callback: A
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -712,7 +786,7 @@ setVolume(streamID: number, leftVolume: number, rightVolume: number): Promise<vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 
@@ -739,7 +813,7 @@ stop(streamID: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by callback. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
 
@@ -771,7 +845,7 @@ stop(streamID: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
 

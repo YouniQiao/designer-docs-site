@@ -9,7 +9,7 @@ Describes the internal information about a task.
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## duration
@@ -18,7 +18,10 @@ import { taskpool } from '@ohos.taskpool';
 duration?: number
 ```
 
-Duration that the task has been executed, in ms. The default value is **0**. If the return value is **0**, the task is not running. If the return value is empty, no task is running. You are advised not to change the value.< br> This API can be used in atomic services since API version 11.
+Duration that the task has been executed, in ms. The default value is **0**. If the return value is **0**, the
+task is not running. If the return value is empty, no task is running. You are advised not to change the value.<
+br>
+This API can be used in atomic services since API version 11.
 
 **Type:** number
 
@@ -34,7 +37,8 @@ Duration that the task has been executed, in ms. The default value is **0**. If 
 name: string
 ```
 
-Task name. You are advised not to change the value.<br> This API can be used in atomic services since API version 12.
+Task name. You are advised not to change the value.<br>
+This API can be used in atomic services since API version 12.
 
 **Type:** string
 
@@ -50,7 +54,8 @@ Task name. You are advised not to change the value.<br> This API can be used in 
 state: State
 ```
 
-Task state. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
+Task state. You are advised not to change the value.<br>
+This API can be used in atomic services since API version 11.
 
 **Type:** State
 
@@ -68,7 +73,8 @@ Task state. You are advised not to change the value.<br> This API can be used in
 taskId: number
 ```
 
-Task ID, which is globally unique by default. You are advised not to change the value.<br> This API can be used in atomic services since API version 11.
+Task ID, which is globally unique by default. You are advised not to change the value.<br>
+This API can be used in atomic services since API version 11.
 
 **Type:** number
 

@@ -30,7 +30,9 @@ content: ResourceStr
 icon?: ResourceStr
 ```
 
-菜单图标。 不支持网络图片。
+菜单图标。
+
+不支持网络图片。
 
 **类型：** ResourceStr
 
@@ -66,7 +68,9 @@ id: TextMenuItemId
 labelInfo?: ResourceStr
 ```
 
-快捷键提示。 该字段仅2in1设备支持。
+快捷键提示。
+
+该字段仅2in1设备支持。
 
 **类型：** ResourceStr
 

@@ -1,6 +1,11 @@
 # FocusController
 
-Provides capabilities to control focus, including features such as clearing, moving, and activating focus. > **NOTE** > > In the following API examples, you must first use [getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1) in > **UIContext** to obtain a **FocusController** instance, and then call the APIs using the obtained instance.
+Provides capabilities to control focus, including features such as clearing, moving, and activating focus.
+
+> **NOTE**
+>
+> In the following API examples, you must first use [getFocusController()](arkts-arkui-uicontext-c.md#getfocuscontroller-1) in
+> **UIContext** to obtain a **FocusController** instance, and then call the APIs using the obtained instance.
 
 **Since:** 12
 
@@ -9,7 +14,7 @@ Provides capabilities to control focus, including features such as clearing, mov
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## activate
@@ -41,7 +46,8 @@ Sets the [focus activation state](../../../../ui/arkts-common-events-focus-event
 clearFocus(): void
 ```
 
-Clears the focus and forcibly moves the focus to the root container node of the page, causing other nodes in the focus chain to lose focus.
+Clears the focus and forcibly moves the focus to the root container node of the page, causing other nodes in the
+focus chain to lose focus.
 
 **Since:** 12
 
@@ -57,7 +63,10 @@ Clears the focus and forcibly moves the focus to the root container node of the 
 isActive(): boolean
 ```
 
-Obtains the focus activation state of the UI instance. For details about the focus activation state, see [Basic Concepts](../../../../ui/arkts-common-events-focus-event.md#basic-concepts).
+Obtains the focus activation state of the UI instance.
+
+For details about the focus activation state, see
+[Basic Concepts](../../../../ui/arkts-common-events-focus-event.md#basic-concepts).
 
 **Since:** 20
 
@@ -93,7 +102,7 @@ Transfers focus to a component node by the component ID, which is effective imme
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | [Component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) of the target node. |
+| key | string | Yes | [Component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) of the target node. |
 
 **Error codes:**
 
@@ -123,7 +132,7 @@ Sets whether the new page automatically obtains focus during page switching.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isAutoFocusTransfer | boolean | Yes | Whether the new page automatically obtains focus during page switchingusing navigation components or APIs, such as [Router](arkts-router.md#router),[Navigation](../arkts-components/arkts-arkui-navigation.md), [Menu](../arkts-components/arkts-arkui-menu.md), [Dialog](arkts-arkui-advanced-dialog.md), and[Popup](arkts-arkui-advanced-popup.md). The value **true** means the new page automatically obtains focus,and **false** means the opposite. Default value: **true**. |
+| isAutoFocusTransfer | boolean | Yes | Whether the new page automatically obtains focus during page switchingusing navigation components or APIs, such as [Router](arkts-router.md),[Navigation](../arkts-components/arkts-arkui-navigation.md), [Menu](../arkts-components/arkts-arkui-menu.md), [Dialog](arkts-arkui-advanced-dialog.md), and[Popup](arkts-arkui-advanced-popup.md). The value **true** means the new page automatically obtains focus,and **false** means the opposite. Default value: **true**. |
 
 ## setKeyProcessingMode
 

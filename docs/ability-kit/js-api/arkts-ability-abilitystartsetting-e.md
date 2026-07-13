@@ -1,6 +1,10 @@
 # AbilityStartSetting
 
-Enum for the special start setting used in starting ability.
+Defines the window property corresponding to this ability. The **abilityStartSetting** property is an object
+defined in the format of [**key: string]: any**, where **key** is an enumerated value of **
+AbilityStartSetting** and **value** is an enumerated value of **AbilityWindowConfiguration**.
+
+The value is obtained through **featureAbility.AbilityStartSetting**.
 
 **Since:** 7
 
@@ -12,7 +16,7 @@ Enum for the special start setting used in starting ability.
 BOUNDS_KEY = 'abilityBounds'
 ```
 
-The parameter name for the window display size attribute.
+Ability window size.
 
 **Since:** 7
 
@@ -26,7 +30,7 @@ The parameter name for the window display size attribute.
 WINDOW_MODE_KEY = 'windowMode'
 ```
 
-The parameter name of the window display mode attribute.
+Ability window display mode.
 
 **Since:** 7
 
@@ -40,7 +44,7 @@ The parameter name of the window display mode attribute.
 DISPLAY_ID_KEY = 'displayId'
 ```
 
-The window displays the parameter name of the device ID attribute.
+Display device ID.
 
 **Since:** 7
 

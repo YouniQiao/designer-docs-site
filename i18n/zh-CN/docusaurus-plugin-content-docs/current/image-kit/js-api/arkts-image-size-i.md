@@ -2,49 +2,47 @@
 
 表示图片尺寸。
 
-**起始版本：** 6
+继承自[lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable)。
 
-**系统能力：** SystemCapability.Multimedia.Image.Core
+**继承/实现关系：** Size extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
-## 导入模块
-
-```TypeScript
-import { image } from '@kit.ImageKit';
-```
-
-## width
-
-```TypeScript
-width: int
-```
-
-Width Unit:px.
-
-**类型：** int
-
-**起始版本：** 6
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
 ## height
 
 ```TypeScript
-height: int
+height: number
 ```
 
-Height Unit:px.
+输出图片的高，单位：像素。
 
-**类型：** int
+**类型：** number
 
-**起始版本：** 6
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## width
+
+```TypeScript
+width: number
+```
+
+输出图片的宽，单位：像素。
+
+**类型：** number
+
+**起始版本：** 12
+
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 

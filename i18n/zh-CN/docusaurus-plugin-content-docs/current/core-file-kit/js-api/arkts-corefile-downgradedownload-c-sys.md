@@ -1,6 +1,8 @@
 # DowngradeDownload（系统接口）
 
-全量下载：为云盘管理应用提供集中下载云端数据的能力。 云盘全量下载对象，用于支撑云盘管理应用完成云盘文件的全量下载流程。
+全量下载：为云盘管理应用提供集中下载云端数据的能力。
+
+云盘全量下载对象，用于支撑云盘管理应用完成云盘文件的全量下载流程。
 
 **起始版本：** 20
 
@@ -107,7 +109,9 @@ downgradeMgr.getCloudFileInfo().then((fileInfo: cloudSyncManager.CloudFileInfo) 
 startDownload(callback: Callback<DownloadProgress>): Promise<void>
 ```
 
-启动指定应用的云文件的全量下载，使用Promise异步回调。使用callback异步回调。 同一应用存在正在执行的全量下载任务的情况下，重复触发会返回错误信息（22400006）。
+启动指定应用的云文件的全量下载，使用Promise异步回调。使用callback异步回调。
+
+同一应用存在正在执行的全量下载任务的情况下，重复触发会返回错误信息（22400006）。
 
 **起始版本：** 20
 
@@ -170,7 +174,9 @@ downgradeMgr.startDownload(callback).then(() => {
 startTransfer(targetUri: string, callback: Callback<TransferProgress>): void
 ```
 
-将云盘目录下已完成本地下载的文件搬迁至指定目录，过程中通过回调上报搬迁进度。使用callback异步回调。 同一应用存在正在执行的搬迁任务的情况下，重复触发会返回错误信息（22400006）。
+将云盘目录下已完成本地下载的文件搬迁至指定目录，过程中通过回调上报搬迁进度。使用callback异步回调。
+
+同一应用存在正在执行的搬迁任务的情况下，重复触发会返回错误信息（22400006）。
 
 **起始版本：** 26.0.0
 

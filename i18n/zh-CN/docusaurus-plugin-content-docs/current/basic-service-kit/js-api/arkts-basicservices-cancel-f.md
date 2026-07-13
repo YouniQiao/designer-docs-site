@@ -6,7 +6,10 @@
 function cancel(url: string): void
 ```
 
-根据url移除一个正在执行的缓存下载任务，已保存的内存缓存和文件缓存不会受到影响。 - 当不存在对应url的任务时无其他效果。 - 使用该方法同步执行时，不阻塞调用线程。
+根据url移除一个正在执行的缓存下载任务，已保存的内存缓存和文件缓存不会受到影响。
+
+- 当不存在对应url的任务时无其他效果。
+- 使用该方法同步执行时，不阻塞调用线程。
 
 **起始版本：** 18
 
@@ -22,7 +25,7 @@ function cancel(url: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 
 **示例：**
 

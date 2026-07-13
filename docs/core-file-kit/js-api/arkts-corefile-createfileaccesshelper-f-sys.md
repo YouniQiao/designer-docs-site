@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { fileAccess } from '@ohos.file.fileAccess';
+import { fileAccess } from '@kit.CoreFileKit';
 ```
 
 ## createFileAccessHelper
@@ -12,7 +12,8 @@ import { fileAccess } from '@ohos.file.fileAccess';
 function createFileAccessHelper(context: Context): FileAccessHelper
 ```
 
-Creates a **Helper** object to bind with all file management services in the system. This API returns the result synchronously.
+Creates a **Helper** object to bind with all file management services in the system. This API returns the result
+synchronously.
 
 **Since:** 9
 
@@ -104,7 +105,8 @@ function createFileAccessHelper02(context: common.UIAbilityContext) {
 function createFileAccessHelper(context: Context, wants: Array<Want>): FileAccessHelper
 ```
 
-Creates a **Helper** object to bind with the specified Wants. This API returns the result synchronously. The **Helper** object provides file access and management capabilities.
+Creates a **Helper** object to bind with the specified Wants. This API returns the result synchronously. The
+**Helper** object provides file access and management capabilities.
 
 **Since:** 9
 

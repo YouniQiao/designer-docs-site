@@ -1,6 +1,10 @@
 # ImageAnimator
 
-The **ImageAnimator** component enables images to be played a frame-by-frame basis. The list of images to be played as well as the duration of each image can be configured. > **NOTE**
+The **ImageAnimator** component enables images to be played a frame-by-frame basis. The list of images to be played
+as well as the duration of each image can be configured.
+
+> **NOTE**
+
 
 ## ImageAnimator
 

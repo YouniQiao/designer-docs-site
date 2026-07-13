@@ -1,9 +1,11 @@
 # @ohos.file.fs
 
+FileIO
+
 ## Modules to Import
 
 ```TypeScript
-import { Options,ReaderIteratorResult,Watcher,ReadTextOptions,WatchEventListener,TaskSignal,WriteOptions,ListFileExtOptions,DfsListeners,Filter,ReadOptions,ListFileOptions,WatchEvent,FileFilter,ConflictFiles } from '@kit.CoreFileKit';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -12,183 +14,183 @@ import { Options,ReaderIteratorResult,Watcher,ReadTextOptions,WatchEventListener
 
 | Name | Description |
 | --- | --- |
-| [fileIo](arkts-fileio-n.md) | FileIO |
+| [fileIo](arkts-corefile-fileio-n.md) | FileIO |
 
 ### Functions
 
 | Name | Description |
 | --- | --- |
-| [access](arkts-file-fs-access-f.md#access-1) | 检查文件或目录是否存在，或校验操作权限，使用promise异步回调。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。 |
-| [access](arkts-file-fs-access-f.md#access-2) | 检查文件或目录是否存在，使用callback异步回调。 |
-| [access](arkts-file-fs-access-f.md#access-3) | 检查文件或目录是否在本地，或校验操作权限，使用promise异步回调。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。 |
-| [accessSync](arkts-file-fs-accesssync-f.md#accessSync-1) | 以同步方法检查文件或目录是否存在，或校验操作权限。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。 |
-| [accessSync](arkts-file-fs-accesssync-f.md#accessSync-2) | 以同步方法检查文件或目录是否在本地，或校验操作权限。 校验读、写或读写权限不通过会抛出13900012（Permission denied）错误码。 |
-| [close](arkts-file-fs-close-f.md#close-1) | 关闭文件或目录，使用promise异步回调。 |
-| [close](arkts-file-fs-close-f.md#close-2) | 关闭文件或目录，使用callback异步回调。 |
-| [closeSync](arkts-file-fs-closesync-f.md#closeSync-1) | 以同步方法关闭文件或目录。 |
-| [connectDfs](arkts-file-fs-connectdfs-f.md#connectDfs-1) | 业务调用connectDfs接口，触发建链。如果对端设备出现异常，业务执行回调DfsListeners内 [onStatus](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#onstatus12)通知应用。 |
-| [copy](arkts-file-fs-copy-f.md#copy-1) | 拷贝文件或目录，使用promise异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。 |
-| [copy](arkts-file-fs-copy-f.md#copy-2) | 拷贝文件或者目录，使用callback异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。 |
-| [copy](arkts-file-fs-copy-f.md#copy-3) | 拷贝文件或者目录，使用callback异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。 |
-| [copyDir](arkts-file-fs-copydir-f.md#copyDir-1) | 复制源目录至目标路径下，使用promise异步回调。 |
-| [copyDir](arkts-file-fs-copydir-f.md#copyDir-2) | 复制源目录至目标路径下，使用callback异步回调。 |
-| [copyDir](arkts-file-fs-copydir-f.md#copyDir-3) | 复制源目录至目标路径下，使用callback异步回调。 如果目标目录下有与源目录名冲突的目录，且冲突目录下有同名文件，则抛出异常。源目录下未冲突的文件全部移动至目标目录下，目标目录下未冲突文件将继续保留，且冲突文件信息将在抛出异常的data属性中以Array\< [ConflictFiles]{@link ConflictFiles}>形式提供。 |
-| [copyDir](arkts-file-fs-copydir-f.md#copyDir-4) | 复制源目录至目标路径下，可设置复制模式。使用callback异步回调。 |
-| [copyDir](arkts-file-fs-copydir-f.md#copyDir-5) | 复制源目录至目标路径下，可设置复制模式。使用callback异步回调。 |
-| [copyDirSync](arkts-file-fs-copydirsync-f.md#copyDirSync-1) | 以同步方法复制源目录至目标路径下。 |
-| [copyFile](arkts-file-fs-copyfile-f.md#copyFile-1) | 复制文件，使用promise异步回调。 |
-| [copyFile](arkts-file-fs-copyfile-f.md#copyFile-2) | 复制文件，覆盖方式为完全覆盖目标文件，未覆盖部分将被裁切。使用callback异步回调。 |
-| [copyFile](arkts-file-fs-copyfile-f.md#copyFile-3) | 复制文件，可设置覆盖文件的方式，使用callback异步回调。 |
-| [copyFileSync](arkts-file-fs-copyfilesync-f.md#copyFileSync-1) | 以同步方法复制文件。 |
-| [createRandomAccessFile](arkts-file-fs-createrandomaccessfile-f.md#createRandomAccessFile-1) | 基于文件路径或文件对象创建RandomAccessFile对象，使用promise异步回调。 |
-| [createRandomAccessFile](arkts-file-fs-createrandomaccessfile-f.md#createRandomAccessFile-2) | 基于文件路径或文件对象，以只读方式创建RandomAccessFile对象，使用callback异步回调。 |
-| [createRandomAccessFile](arkts-file-fs-createrandomaccessfile-f.md#createRandomAccessFile-3) | 基于文件路径或文件对象创建RandomAccessFile对象，使用callback异步回调。 |
-| [createRandomAccessFileSync](arkts-file-fs-createrandomaccessfilesync-f.md#createRandomAccessFileSync-1) | 基于文件路径或文件对象创建RandomAccessFile对象。 |
-| [createReadStream](arkts-file-fs-createreadstream-f.md#createReadStream-1) | 以同步方法打开文件可读流。 |
-| [createStream](arkts-file-fs-createstream-f.md#createStream-1) | 基于文件路径创建文件流，使用promise异步回调。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [createStream](arkts-file-fs-createstream-f.md#createStream-2) | 基于文件路径创建文件流，使用callback异步回调。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [createStreamSync](arkts-file-fs-createstreamsync-f.md#createStreamSync-1) | 以同步方法基于文件路径创建文件流。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [createWatcher](arkts-file-fs-createwatcher-f.md#createWatcher-1) | 创建Watcher对象，监听文件或目录变动。 |
-| [createWriteStream](arkts-file-fs-createwritestream-f.md#createWriteStream-1) | 以同步方法打开文件可写流。 |
-| [disconnectDfs](arkts-file-fs-disconnectdfs-f.md#disconnectDfs-1) | 业务调用disconnectDfs接口，传入networkId参数，触发断链。 |
-| [dup](arkts-file-fs-dup-f.md#dup-1) | 复制文件描述符，并返回对应的File对象。 |
-| [fdatasync](arkts-file-fs-fdatasync-f.md#fdatasync-1) | 实现文件内容数据同步，使用promise异步回调。 |
-| [fdatasync](arkts-file-fs-fdatasync-f.md#fdatasync-2) | 实现文件内容数据同步，使用callback异步回调。 |
-| [fdatasyncSync](arkts-file-fs-fdatasyncsync-f.md#fdatasyncSync-1) | 以同步方法实现文件内容的数据同步。 |
-| [fdopenStream](arkts-file-fs-fdopenstream-f.md#fdopenStream-1) | 基于文件描述符打开文件流，使用promise异步回调。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [fdopenStream](arkts-file-fs-fdopenstream-f.md#fdopenStream-2) | 基于文件描述符打开文件流，使用callback异步回调。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [fdopenStreamSync](arkts-file-fs-fdopenstreamsync-f.md#fdopenStreamSync-1) | 以同步方法基于文件描述符打开文件流。需要配合[Stream]{@link Stream}中的close()函数关闭文件流。 |
-| [fsync](arkts-file-fs-fsync-f.md#fsync-1) | 将文件系统缓存数据写入磁盘，使用promise异步回调。 |
-| [fsync](arkts-file-fs-fsync-f.md#fsync-2) | 将文件系统缓存数据写入磁盘，使用callback异步回调。 |
-| [fsyncSync](arkts-file-fs-fsyncsync-f.md#fsyncSync-1) | 以同步方法将文件系统缓存数据写入磁盘。 |
-| [getxattr](arkts-file-fs-getxattr-f.md#getxattr-1) | 获取文件或目录的扩展属性。使用promise异步回调。 |
-| [getxattrSync](arkts-file-fs-getxattrsync-f.md#getxattrSync-1) | 使用同步接口获取文件或目录的扩展属性。 |
-| [listFile](arkts-file-fs-listfile-f.md#listFile-1) | 默认列出当前目录下所有文件名和目录名。支持过滤。使用promise异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [listFile](arkts-file-fs-listfile-f.md#listFile-2) | 默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [listFile](arkts-file-fs-listfile-f.md#listFile-3) | 默认列出当前目录下所有文件名和目录名。支持过滤。使用callback异步回调。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [listFileExt](arkts-file-fs-listfileext-f.md#listFileExt-1) | 列出目录下所有文件名，使用Promise异步回调。 该接口支持通过自定义过滤函数对文件名进行过滤。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [listFileExtSync](arkts-file-fs-listfileextsync-f.md#listFileExtSync-1) | 以同步方法列出目录下所有文件名，支持通过自定义过滤函数对文件名进行过滤。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [listFileSync](arkts-file-fs-listfilesync-f.md#listFileSync-1) | 默认以同步方式列出当前目录下所有文件名和目录名。支持过滤。 可通过配置options中recursion参数实现递归列出所有文件的相对路径，相对路径以“/”开头。 |
-| [lseek](arkts-file-fs-lseek-f.md#lseek-1) | 调整文件偏移指针位置。 |
-| [lstat](arkts-file-fs-lstat-f.md#lstat-1) | 获取符号链接文件信息，使用promise异步回调。 |
-| [lstat](arkts-file-fs-lstat-f.md#lstat-2) | 获取符号链接文件信息，使用callback异步回调。 |
-| [lstatSync](arkts-file-fs-lstatsync-f.md#lstatSync-1) | 以同步方法获取符号链接文件信息。 |
-| [mkdir](arkts-file-fs-mkdir-f.md#mkdir-1) | 创建目录，使用promise异步回调。 |
-| [mkdir](arkts-file-fs-mkdir-f.md#mkdir-2) | 创建目录，使用promise异步回调。当recursion指定为true时，可递归创建目录。 |
-| [mkdir](arkts-file-fs-mkdir-f.md#mkdir-3) | 创建目录，使用callback异步回调。 |
-| [mkdir](arkts-file-fs-mkdir-f.md#mkdir-4) | 创建目录，使用callback异步回调。当recursion指定为true，可递归创建目录。 |
-| [mkdirSync](arkts-file-fs-mkdirsync-f.md#mkdirSync-1) | 以同步方法创建目录。 |
-| [mkdirSync](arkts-file-fs-mkdirsync-f.md#mkdirSync-2) | 以同步方法创建目录。当recursion指定为true，可递归创建目录。 |
-| [mkdtemp](arkts-file-fs-mkdtemp-f.md#mkdtemp-1) | 创建临时目录，使用promise异步回调。 |
-| [mkdtemp](arkts-file-fs-mkdtemp-f.md#mkdtemp-2) | 创建临时目录，使用callback异步回调。 |
-| [mkdtempSync](arkts-file-fs-mkdtempsync-f.md#mkdtempSync-1) | 以同步的方法创建临时目录。 |
-| [mmap](arkts-file-fs-mmap-f.md#mmap-1) | 基于文件描述符或文件对象创建文件映射对象，使用promise异步回调。将文件内容映射到内存，以实现文件的高效读写访问。 注意：读写模式（MappingMode.READ_WRITE）下，若映射范围超过原始文件大小，将自动扩展文件大小。 > **说明** > 注意：在读写模式（MappingMode.READ_WRITE）下，如果映射范围超过原始文件大小，则文件大小 > 将自动展开。 |
-| [mmapSync](arkts-file-fs-mmapsync-f.md#mmapSync-1) | 以同步方法基于文件描述符或文件对象创建文件映射对象。将文件内容映射到内存，以实现文件的高效读写访问。 注意：读写模式（MappingMode.READ_WRITE）下，若映射范围超过原始文件大小，将自动扩展文件大小。 |
-| [moveDir](arkts-file-fs-movedir-f.md#moveDir-1) | 移动源目录至目标路径下，使用promise异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveDir](arkts-file-fs-movedir-f.md#moveDir-2) | Moves the source directory to the destination directory. This API uses an asynchronous callback to return the result. |
-| [moveDir](arkts-file-fs-movedir-f.md#moveDir-3) | 移动源目录至目标路径下。使用callback异步回调。 移动模式为目录级别抛异常。当目标目录下存在与源目录名冲突的目录，则抛出异常。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveDir](arkts-file-fs-movedir-f.md#moveDir-4) | 移动源目录至目标路径下，支持设置移动模式。使用callback异步回调。 |
-| [moveDir](arkts-file-fs-movedir-f.md#moveDir-5) | 移动源目录至目标路径下，支持设置移动模式。使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveDirSync](arkts-file-fs-movedirsync-f.md#moveDirSync-1) | 以同步方法移动源目录至目标路径下。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveFile](arkts-file-fs-movefile-f.md#moveFile-1) | 移动文件，使用promise异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveFile](arkts-file-fs-movefile-f.md#moveFile-2) | 移动文件。如果移动位置存在同名文件，将强制覆盖。使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveFile](arkts-file-fs-movefile-f.md#moveFile-3) | 移动文件，支持设置移动模式。使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [moveFileSync](arkts-file-fs-movefilesync-f.md#moveFileSync-1) | 以同步方式移动文件。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [open](arkts-file-fs-open-f.md#open-1) | 打开文件或目录，使用promise异步回调。支持使用URI打开文件。 |
-| [open](arkts-file-fs-open-f.md#open-2) | 打开文件或目录，使用callback异步回调。支持使用URI打开文件。 |
-| [open](arkts-file-fs-open-f.md#open-3) | 打开文件或目录，可设置打开文件的选项。使用callback异步回调。 支持使用URI打开文件。 |
-| [openSync](arkts-file-fs-opensync-f.md#openSync-1) | 以同步方法打开文件或目录。支持使用URI打开文件。 |
-| [read](arkts-file-fs-read-f.md#read-1) | 读取文件数据，使用promise异步回调。 |
-| [read](arkts-file-fs-read-f.md#read-2) | 从文件读取数据，使用callback异步回调。 |
-| [read](arkts-file-fs-read-f.md#read-3) | 从文件读取数据，使用callback异步回调。 |
-| [readLines](arkts-file-fs-readlines-f.md#readLines-1) | 逐行读取文件文本内容，使用promise异步回调。只支持读取utf-8格式文件。 |
-| [readLines](arkts-file-fs-readlines-f.md#readLines-2) | 逐行读取文件文本内容，使用callback异步回调，只支持读取utf-8格式文件。 |
-| [readLines](arkts-file-fs-readlines-f.md#readLines-3) | 逐行读取文件文本内容，使用callback异步回调，只支持读取utf-8格式文件。 |
-| [readLinesSync](arkts-file-fs-readlinessync-f.md#readLinesSync-1) | 以同步方式逐行读取文件的文本内容。 |
-| [readSync](arkts-file-fs-readsync-f.md#readSync-1) | 以同步方法从文件读取数据。 |
-| [readText](arkts-file-fs-readtext-f.md#readText-1) | 基于文本方式读取文件（即直接读取文件的文本内容），使用promise异步回调。 |
-| [readText](arkts-file-fs-readtext-f.md#readText-2) | 基于文本方式读取文件内容，使用callback异步回调。 |
-| [readText](arkts-file-fs-readtext-f.md#readText-3) | 基于文本方式读取文件内容，使用callback异步回调。 |
-| [readTextSync](arkts-file-fs-readtextsync-f.md#readTextSync-1) | 以同步方法基于文本方式读取文件（即直接读取文件的文本内容）。 |
-| [rename](arkts-file-fs-rename-f.md#rename-1) | 重命名文件或目录，使用promise异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [rename](arkts-file-fs-rename-f.md#rename-2) | 重命名文件或目录，使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [renameSync](arkts-file-fs-renamesync-f.md#renameSync-1) | 以同步方法重命名文件或目录。 > **说明：** > > 该接口不支持在分布式文件路径下操作。 |
-| [rmdir](arkts-file-fs-rmdir-f.md#rmdir-1) | 删除目录及其所有子目录和文件，使用promise异步回调。 > **说明：** > > 该接口支持删除单个文件，但不推荐使用此方法删除单个文件，推荐使用unlink接口删除单个文件。 |
-| [rmdir](arkts-file-fs-rmdir-f.md#rmdir-2) | 删除目录及其所有子目录和文件，使用callback异步回调。 > **说明：** > > 该接口支持删除单个文件，但不推荐使用此方法删除单个文件，推荐使用unlink接口删除单个文件。 |
-| [rmdirSync](arkts-file-fs-rmdirsync-f.md#rmdirSync-1) | 以同步方法删除目录及其所有子目录和文件。 > **说明：** > > 该接口支持删除单个文件，但不推荐使用此方法删除单个文件，推荐使用unlinkSync接口删除单个文件。 |
-| [setxattr](arkts-file-fs-setxattr-f.md#setxattr-1) | 设置文件或目录的扩展属性。使用promise异步回调。 |
-| [setxattrSync](arkts-file-fs-setxattrsync-f.md#setxattrSync-1) | 设置文件或目录的扩展属性。 |
-| [stat](arkts-file-fs-stat-f.md#stat-1) | 获取文件或目录详细属性信息，使用promise异步回调。 |
-| [stat](arkts-file-fs-stat-f.md#stat-2) | 获取文件或目录的详细属性信息，使用callback异步回调。 |
-| [statSync](arkts-file-fs-statsync-f.md#statSync-1) | 以同步方法获取文件或目录详细属性信息。 |
-| [symlink](arkts-file-fs-symlink-f.md#symlink-1) | 基于文件路径创建符号链接，使用promise异步回调。 > **说明：** > > 从API version 11开始，不支持三方应用使用。 |
-| [symlink](arkts-file-fs-symlink-f.md#symlink-2) | 基于文件路径创建符号链接，使用callback异步回调。 > **说明：** > > 从API version 11开始，不支持三方应用使用。 |
-| [symlinkSync](arkts-file-fs-symlinksync-f.md#symlinkSync-1) | 以同步的方法基于文件路径创建符号链接。 > **说明：** > > 从API version 11开始，不支持三方应用使用。 |
-| [truncate](arkts-file-fs-truncate-f.md#truncate-1) | 截断文件，使用promise异步回调。 |
-| [truncate](arkts-file-fs-truncate-f.md#truncate-2) | 截断文件，使用callback异步回调。 |
-| [truncate](arkts-file-fs-truncate-f.md#truncate-3) | 截断文件，使用callback异步回调。 |
-| [truncateSync](arkts-file-fs-truncatesync-f.md#truncateSync-1) | 以同步方法截断文件内容。 |
-| [unlink](arkts-file-fs-unlink-f.md#unlink-1) | 删除单个文件，使用promise异步回调。 |
-| [unlink](arkts-file-fs-unlink-f.md#unlink-2) | 删除文件，使用callback异步回调。 |
-| [unlinkSync](arkts-file-fs-unlinksync-f.md#unlinkSync-1) | 以同步方法删除文件。 |
-| [utimes](arkts-file-fs-utimes-f.md#utimes-1) | 更改文件上次修改该文件的时间。 |
-| [write](arkts-file-fs-write-f.md#write-1) | 将数据写入文件，使用promise异步回调。 |
-| [write](arkts-file-fs-write-f.md#write-2) | 将数据写入文件，使用callback异步回调。 |
-| [write](arkts-file-fs-write-f.md#write-3) | 将数据写入文件，使用callback异步回调。 |
-| [writeSync](arkts-file-fs-writesync-f.md#writeSync-1) | 以同步方法将数据写入文件。 |
+| [access](arkts-corefile-file-fs-access-f.md#access-1) | Checks whether the file or directory exists or has the operation permission. This API uses a promise to return theresult.If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) willbe thrown. |
+| [access](arkts-corefile-file-fs-access-f.md#access-2) | Checks whether a file or directory exists. This API uses an asynchronous callback to return the result. |
+| [access](arkts-corefile-file-fs-access-f.md#access-3) | Checks whether the file or directory is stored locally or has the operation permission. This API uses a promise toreturn the result.If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) willbe thrown. |
+| [accessSync](arkts-corefile-file-fs-accesssync-f.md#accesssync-1) | Checks whether a file or directory exists or has the operation permission. This API returns the result synchronously.If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) willbe thrown. |
+| [accessSync](arkts-corefile-file-fs-accesssync-f.md#accesssync-2) | Checks whether a file or directory is stored locally or has the operation permission. This API returns the resultsynchronously.If the read, write, or read and write permission verification fails, the error code 13900012 (Permission denied) willbe thrown. |
+| [close](arkts-corefile-file-fs-close-f.md#close-1) | Closes a file or directory. This API uses a promise to return the result. |
+| [close](arkts-corefile-file-fs-close-f.md#close-2) | Closes a file or directory. This API uses an asynchronous callback to return the result. |
+| [closeSync](arkts-corefile-file-fs-closesync-f.md#closesync-1) | Closes a file or directory. This API returns the result synchronously. |
+| [connectDfs](arkts-corefile-file-fs-connectdfs-f.md#connectdfs-1) | Triggers connection. If the peer device is abnormal, [onStatus](arkts-corefile-dfslisteners-i.md#onstatus-1) in **DfsListeners** willbe called to notify the application. |
+| [copy](arkts-corefile-file-fs-copy-f.md#copy-1) | Copies a file or directory. This API uses a promise to return the result.File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can bethe URI of the file or directory.A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a timecannot exceed 500. |
+| [copy](arkts-corefile-file-fs-copy-f.md#copy-2) | Copies a file or directory. This API uses an asynchronous callback to return the result.File copy across devices is supported. This API forcibly overwrites the file or directory.The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasksare allowed at the same time, and the number of files to be copied at a time cannot exceed 500. |
+| [copy](arkts-corefile-file-fs-copy-f.md#copy-3) | Copies a file or directory. This API uses an asynchronous callback to return the result.File copy across devices is supported. This API forcibly overwrites the file or directory.The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasksare allowed at the same time, and the number of files to be copied at a time cannot exceed 500. |
+| [copyDir](arkts-corefile-file-fs-copydir-f.md#copydir-1) | Copies the source directory to the destination path. This API uses a promise to return the result. |
+| [copyDir](arkts-corefile-file-fs-copydir-f.md#copydir-2) | Copies the source directory to the destination directory.This API uses an asynchronous callback to return the result. |
+| [copyDir](arkts-corefile-file-fs-copydir-f.md#copydir-3) | Copies the source directory to the destination path. This API uses an asynchronous callback to return the result.An exception will be thrown if the destination directory contains a directory with the same name as the sourcedirectory and there are files with the same name in the conflicting directory. All the non-conflicting files in thesource directory will be moved to the destination directory, and the non-conflicting files in the destinationdirectory will be retained. The data attribute in the error returned provides information about the conflicting filesin the Array\&lt;[ConflictFiles](arkts-corefile-conflictfiles-i.md)&gt; format. |
+| [copyDir](arkts-corefile-file-fs-copydir-f.md#copydir-4) | Copies the source directory to the destination directory. You can set the copy mode.This API uses an asynchronous callback to return the result. |
+| [copyDir](arkts-corefile-file-fs-copydir-f.md#copydir-5) | Copies the source directory to the destination path. You can set the copy mode. This API uses an asynchronouscallback to return the result. |
+| [copyDirSync](arkts-corefile-file-fs-copydirsync-f.md#copydirsync-1) | Copies the source directory to the destination path. This API returns the result synchronously. |
+| [copyFile](arkts-corefile-file-fs-copyfile-f.md#copyfile-1) | Copies a file. This API uses a promise to return the result. |
+| [copyFile](arkts-corefile-file-fs-copyfile-f.md#copyfile-2) | Copies a file. This API overwrites the file with the same name in the destination directory and truncates the partthat is not overwritten. This API uses an asynchronous callback to return the result. |
+| [copyFile](arkts-corefile-file-fs-copyfile-f.md#copyfile-3) | Copies a file with the specified mode. This API uses an asynchronous callback to return the result. |
+| [copyFileSync](arkts-corefile-file-fs-copyfilesync-f.md#copyfilesync-1) | Copies a file. This API returns the result synchronously. |
+| [createRandomAccessFile](arkts-corefile-file-fs-createrandomaccessfile-f.md#createrandomaccessfile-1) | Creates a **RandomAccessFile** instance based on the specified file path or file object. This API uses a promise toreturn the result. |
+| [createRandomAccessFile](arkts-corefile-file-fs-createrandomaccessfile-f.md#createrandomaccessfile-2) | Creates a **RandomAccessFile** object in read-only mode based on a file path or file object. This API uses anasynchronous callback to return the result. |
+| [createRandomAccessFile](arkts-corefile-file-fs-createrandomaccessfile-f.md#createrandomaccessfile-3) | Creates a **RandomAccessFile** instance based on a file path or file object. This API uses an asynchronous callbackto return the result. |
+| [createRandomAccessFileSync](arkts-corefile-file-fs-createrandomaccessfilesync-f.md#createrandomaccessfilesync-1) | Creates a **RandomAccessFile** instance based on a file path or file object. |
+| [createReadStream](arkts-corefile-file-fs-createreadstream-f.md#createreadstream-1) | Creates a readable stream. This API returns the result synchronously. |
+| [createStream](arkts-corefile-file-fs-createstream-f.md#createstream-1) | Creates a stream based on a file path. This API uses a promise to return the result. To close the stream, use**close()** of [Stream](arkts-corefile-stream-i.md). |
+| [createStream](arkts-corefile-file-fs-createstream-f.md#createstream-2) | Creates a stream based on a file path. This API uses an asynchronous callback to return the result. To close thestream, use **close()** of [Stream](arkts-corefile-stream-i.md). |
+| [createStreamSync](arkts-corefile-file-fs-createstreamsync-f.md#createstreamsync-1) | Creates a stream based on a file path. This API returns the result synchronously. To close the stream, use**close()** of [Stream](arkts-corefile-stream-i.md). |
+| [createWatcher](arkts-corefile-file-fs-createwatcher-f.md#createwatcher-1) | Creates a **Watcher** object to listen for file or directory changes. |
+| [createWriteStream](arkts-corefile-file-fs-createwritestream-f.md#createwritestream-1) | Creates a writeable stream. This API returns the result synchronously. |
+| [disconnectDfs](arkts-corefile-file-fs-disconnectdfs-f.md#disconnectdfs-1) | Triggers disconnection. |
+| [dup](arkts-corefile-file-fs-dup-f.md#dup-1) | Duplicates the file descriptor and returns the corresponding **File** object. |
+| [fdatasync](arkts-corefile-file-fs-fdatasync-f.md#fdatasync-1) | Synchronizes the data of a file. This API uses a promise to return the result. |
+| [fdatasync](arkts-corefile-file-fs-fdatasync-f.md#fdatasync-2) | Synchronizes the data of a file. This API uses an asynchronous callback to return the result. |
+| [fdatasyncSync](arkts-corefile-file-fs-fdatasyncsync-f.md#fdatasyncsync-1) | Synchronizes the data of a file. This API returns the result synchronously. |
+| [fdopenStream](arkts-corefile-file-fs-fdopenstream-f.md#fdopenstream-1) | Opens a stream based on an FD. This API uses a promise to return the result. To close the stream, use **close()** of[Stream](arkts-corefile-stream-i.md). |
+| [fdopenStream](arkts-corefile-file-fs-fdopenstream-f.md#fdopenstream-2) | Opens a stream based on an FD. This API uses an asynchronous callback to return the result. To close the stream, use**close()** of [Stream](arkts-corefile-stream-i.md). |
+| [fdopenStreamSync](arkts-corefile-file-fs-fdopenstreamsync-f.md#fdopenstreamsync-1) | Opens a stream based on an FD. This API returns the result synchronously. To close the stream, use **close()** of[Stream](arkts-corefile-stream-i.md). |
+| [fsync](arkts-corefile-file-fs-fsync-f.md#fsync-1) | Synchronizes the cached data of a file to storage. This API uses a promise to return the result. |
+| [fsync](arkts-corefile-file-fs-fsync-f.md#fsync-2) | Synchronizes the cached data of a file to storage. This API uses an asynchronous callback to return the result. |
+| [fsyncSync](arkts-corefile-file-fs-fsyncsync-f.md#fsyncsync-1) | Synchronizes the cached data of a file to storage. This API returns the result synchronously. |
+| [getxattr](arkts-corefile-file-fs-getxattr-f.md#getxattr-1) | Obtains an extended attribute of a file or directory. This API uses a promise to return the result. |
+| [getxattrSync](arkts-corefile-file-fs-getxattrsync-f.md#getxattrsync-1) | Obtains an extended attribute of a file or directory. This API returns the result synchronously. |
+| [listFile](arkts-corefile-file-fs-listfile-f.md#listfile-1) | Lists the names of all files and directories in the current path. Filtering is supported. This API uses a promise toreturn the result.You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. Therelative path starts with a slash (/). |
+| [listFile](arkts-corefile-file-fs-listfile-f.md#listfile-2) | Lists the names of all files and directories in the current path. Filtering is supported. This API uses anasynchronous callback to return the result.You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. Therelative path starts with a slash (/). |
+| [listFile](arkts-corefile-file-fs-listfile-f.md#listfile-3) | Lists the names of all files and directories in the current path. Filtering is supported. This API uses anasynchronous callback to return the result.You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. Therelative path starts with a slash (/). |
+| [listFileExt](arkts-corefile-file-fs-listfileext-f.md#listfileext-1) | Lists all file names in a directory. This API uses a promise to return the result.This API supports recursive listing of all file names and custom file name filtering.The returned result starts with a slash (/) and contains the subdirectory. |
+| [listFileExtSync](arkts-corefile-file-fs-listfileextsync-f.md#listfileextsync-1) | Lists all file names in a directory. This API returns the result synchronously.This API supports recursive listing of all file names and custom file name filtering.The returned result starts with a slash (/) and contains the subdirectory. |
+| [listFileSync](arkts-corefile-file-fs-listfilesync-f.md#listfilesync-1) | Lists the names of all files and directories in the current directory. This API returns the result synchronously.Filtering is supported.You can configure the **recursion** parameter in **options** to recursively list the relative paths of all files. Therelative path starts with a slash (/). |
+| [lseek](arkts-corefile-file-fs-lseek-f.md#lseek-1) | Adjusts the position of the file offset pointer. |
+| [lstat](arkts-corefile-file-fs-lstat-f.md#lstat-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses a promise toreturn the result. |
+| [lstat](arkts-corefile-file-fs-lstat-f.md#lstat-2) | Obtains information about a symbolic link that is used to refer to a file or directory. This API uses an asynchronouscallback to return the result. |
+| [lstatSync](arkts-corefile-file-fs-lstatsync-f.md#lstatsync-1) | Obtains information about a symbolic link that is used to refer to a file or directory. This API returns the resultsynchronously. |
+| [mkdir](arkts-corefile-file-fs-mkdir-f.md#mkdir-1) | Creates a directory. This API uses a promise to return the result. |
+| [mkdir](arkts-corefile-file-fs-mkdir-f.md#mkdir-2) | Creates a directory. This API uses a promise to return the result. The value **true** means to create a directoryrecursively. |
+| [mkdir](arkts-corefile-file-fs-mkdir-f.md#mkdir-3) | Creates a directory. This API uses an asynchronous callback to return the result. |
+| [mkdir](arkts-corefile-file-fs-mkdir-f.md#mkdir-4) | Creates a directory. This API uses an asynchronous callback to return the result. The value **true** means to createa directory recursively. |
+| [mkdirSync](arkts-corefile-file-fs-mkdirsync-f.md#mkdirsync-1) | Creates a directory. This API returns the result synchronously. |
+| [mkdirSync](arkts-corefile-file-fs-mkdirsync-f.md#mkdirsync-2) | Creates a directory. This API returns the result synchronously. The value **true** means to create a directoryrecursively. |
+| [mkdtemp](arkts-corefile-file-fs-mkdtemp-f.md#mkdtemp-1) | Creates a temporary directory. This API uses a promise to return the result. |
+| [mkdtemp](arkts-corefile-file-fs-mkdtemp-f.md#mkdtemp-2) | Creates a temporary directory. This API uses an asynchronous callback to return the result. |
+| [mkdtempSync](arkts-corefile-file-fs-mkdtempsync-f.md#mkdtempsync-1) | Creates a temporary directory. This API returns the result synchronously. |
+| [mmap](arkts-corefile-file-fs-mmap-f.md#mmap-1) | Creates a file mapping object based on a file descriptor or file object, using promise asynchronous callback. Mapsfile contents to memory for efficient read and write access to files.Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file sizewill be automatically expanded. |
+| [mmapSync](arkts-corefile-file-fs-mmapsync-f.md#mmapsync-1) | Creates a file mapping object based on a file descriptor or file object by using the synchronization method. Mapsfile contents to memory for efficient read and write access to files.Note: In the read/write mode (MappingMode.READ_WRITE), if the mapping range exceeds the raw file size, the file sizewill be automatically expanded. |
+| [moveDir](arkts-corefile-file-fs-movedir-f.md#movedir-1) | Moves the source directory to the destination directory. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveDir](arkts-corefile-file-fs-movedir-f.md#movedir-2) | Moves the source directory to the destination directory. This API uses an asynchronous callback to return the result. |
+| [moveDir](arkts-corefile-file-fs-movedir-f.md#movedir-3) | Moves the source directory to the destination directory. This API uses an asynchronous callback to return the result.An exception will be thrown if a directory conflict occurs, that is, the destination directory contains a directorywith the same name as the source directory.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveDir](arkts-corefile-file-fs-movedir-f.md#movedir-4) | Moves the source directory to the destination directory. You can set the move mode.This API uses an asynchronous callback to return the result. |
+| [moveDir](arkts-corefile-file-fs-movedir-f.md#movedir-5) | Moves the source directory to the destination directory. You can set the move mode. This API uses an asynchronouscallback to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveDirSync](arkts-corefile-file-fs-movedirsync-f.md#movedirsync-1) | Moves the source directory to the destination directory. This API returns the result synchronously.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveFile](arkts-corefile-file-fs-movefile-f.md#movefile-1) | Moves a file. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveFile](arkts-corefile-file-fs-movefile-f.md#movefile-2) | Moves a file and forcibly overwrites the file with the same name in the destination directory. This API uses anasynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveFile](arkts-corefile-file-fs-movefile-f.md#movefile-3) | Moves a file with the specified mode. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [moveFileSync](arkts-corefile-file-fs-movefilesync-f.md#movefilesync-1) | Moves a file. This API returns the result synchronously.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [open](arkts-corefile-file-fs-open-f.md#open-1) | Opens a file or directory. This API uses a promise to return the result. This API supports the use of a URI. |
+| [open](arkts-corefile-file-fs-open-f.md#open-2) | Opens a file or directory. This API uses an asynchronous callback to return the result. This API supports the use ofa URI. |
+| [open](arkts-corefile-file-fs-open-f.md#open-3) | Opens a file or directory with the specified mode. This API uses an asynchronous callback to return the result.This API supports the use of a URI. |
+| [openSync](arkts-corefile-file-fs-opensync-f.md#opensync-1) | Opens a file or directory. This API returns the result synchronously. This API supports the use of a URI. |
+| [read](arkts-corefile-file-fs-read-f.md#read-1) | Reads file data. This API uses a promise to return the result. |
+| [read](arkts-corefile-file-fs-read-f.md#read-2) | Reads data from a file. This API uses an asynchronous callback to return the result. |
+| [read](arkts-corefile-file-fs-read-f.md#read-3) | Reads data from a file. This API uses an asynchronous callback to return the result. |
+| [readLines](arkts-corefile-file-fs-readlines-f.md#readlines-1) | Reads the text content of a file line by line. This API uses a promise to return the result. Only the files in UTF-8format are supported. |
+| [readLines](arkts-corefile-file-fs-readlines-f.md#readlines-2) | Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8format are supported. |
+| [readLines](arkts-corefile-file-fs-readlines-f.md#readlines-3) | Reads a file text line by line. This API uses an asynchronous callback to return the result. Only the files in UTF-8format are supported. |
+| [readLinesSync](arkts-corefile-file-fs-readlinessync-f.md#readlinessync-1) | Reads the text content of a file line by line. This API returns the result synchronously. |
+| [readSync](arkts-corefile-file-fs-readsync-f.md#readsync-1) | Reads data from a file. This API returns the result synchronously. |
+| [readText](arkts-corefile-file-fs-readtext-f.md#readtext-1) | Reads the text content of a file. This API uses a promise to return the result. |
+| [readText](arkts-corefile-file-fs-readtext-f.md#readtext-2) | Reads the text content of a file. This API uses an asynchronous callback to return the result. |
+| [readText](arkts-corefile-file-fs-readtext-f.md#readtext-3) | Reads the text content of a file. This API uses an asynchronous callback to return the result. |
+| [readTextSync](arkts-corefile-file-fs-readtextsync-f.md#readtextsync-1) | Reads the text content of a file. This API returns the result synchronously. |
+| [rename](arkts-corefile-file-fs-rename-f.md#rename-1) | Renames a file or directory. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [rename](arkts-corefile-file-fs-rename-f.md#rename-2) | Renames a file or directory. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [renameSync](arkts-corefile-file-fs-renamesync-f.md#renamesync-1) | Renames a file or directory. This API returns the result synchronously.&gt; **NOTE**&gt;&gt; This API is not supported in a distributed directory. |
+| [rmdir](arkts-corefile-file-fs-rmdir-f.md#rmdir-1) | Removes a directory and all its subdirectories and files. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API can be used to remove a single file. However, you are advised to use **unlink()** instead. |
+| [rmdir](arkts-corefile-file-fs-rmdir-f.md#rmdir-2) | Removes a directory and all its subdirectories and files. This API uses an asynchronous callback to return theresult.&gt; **NOTE**&gt;&gt; This API can be used to remove a single file. However, you are advised to use **unlink()** instead. |
+| [rmdirSync](arkts-corefile-file-fs-rmdirsync-f.md#rmdirsync-1) | Removes a directory and all its subdirectories and files synchronously.&gt; **NOTE**&gt;&gt; This API can be used to remove a single file. However, you are advised to use **unlinkSync** instead. |
+| [setxattr](arkts-corefile-file-fs-setxattr-f.md#setxattr-1) | Sets an extended attribute of a file or directory. This API uses a promise to return the result. |
+| [setxattrSync](arkts-corefile-file-fs-setxattrsync-f.md#setxattrsync-1) | Sets an extended attribute of a file or directory. |
+| [stat](arkts-corefile-file-fs-stat-f.md#stat-1) | Obtains detailed attribute information of a file or directory. This API uses a promise to return the result. |
+| [stat](arkts-corefile-file-fs-stat-f.md#stat-2) | Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return theresult. |
+| [statSync](arkts-corefile-file-fs-statsync-f.md#statsync-1) | Obtains detailed attribute information of a file or directory. This API returns the result synchronously. |
+| [symlink](arkts-corefile-file-fs-symlink-f.md#symlink-1) | Creates a symbolic link based on a file path. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; Since API version 11, this API cannot be used by third-party applications. |
+| [symlink](arkts-corefile-file-fs-symlink-f.md#symlink-2) | Creates a symbolic link based on the file path. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; Since API version 11, this API cannot be used by third-party applications. |
+| [symlinkSync](arkts-corefile-file-fs-symlinksync-f.md#symlinksync-1) | Creates a symbolic link based on the file path. This API returns the result synchronously.&gt; **NOTE**&gt;&gt; Since API version 11, this API cannot be used by third-party applications. |
+| [truncate](arkts-corefile-file-fs-truncate-f.md#truncate-1) | Truncates a file. This API uses a promise to return the result. |
+| [truncate](arkts-corefile-file-fs-truncate-f.md#truncate-2) | Truncates a file. This API uses an asynchronous callback to return the result. |
+| [truncate](arkts-corefile-file-fs-truncate-f.md#truncate-3) | Truncates a file. This API uses an asynchronous callback to return the result. |
+| [truncateSync](arkts-corefile-file-fs-truncatesync-f.md#truncatesync-1) | Truncates the file content. This API returns the result synchronously. |
+| [unlink](arkts-corefile-file-fs-unlink-f.md#unlink-1) | Removes a file. This API uses a promise to return the result. |
+| [unlink](arkts-corefile-file-fs-unlink-f.md#unlink-2) | Removes a file. This API uses an asynchronous callback to return the result. |
+| [unlinkSync](arkts-corefile-file-fs-unlinksync-f.md#unlinksync-1) | Removes a file. This API returns the result synchronously. |
+| [utimes](arkts-corefile-file-fs-utimes-f.md#utimes-1) | Changes the time when the file was last modified. |
+| [write](arkts-corefile-file-fs-write-f.md#write-1) | Writes data into a file. This API uses a promise to return the result. |
+| [write](arkts-corefile-file-fs-write-f.md#write-2) | Writes data to a file. This API uses an asynchronous callback to return the result. |
+| [write](arkts-corefile-file-fs-write-f.md#write-3) | Writes data to a file. This API uses an asynchronous callback to return the result. |
+| [writeSync](arkts-corefile-file-fs-writesync-f.md#writesync-1) | Writes data to a file. This API returns the result synchronously. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [AtomicFile](arkts-atomicfile-c.md) | AtomicFile是一个用于对文件进行原子读写操作的类。 在写操作时，通过写入临时文件，并在写入成功后将其重命名到原始文件位置来确保写入文件的完整性；而在写入失败时删除临时文件，不修改原始文件内容。 使用者可以自行调用finishWrite或failWrite来完成文件内容的写入或回滚。 |
-| [ReadStream](arkts-readstream-c.md) | 文件可读流，需要先通过fileIo.createReadStream方法来构建一个ReadStream实例。ReadStream继承自数据流基类stream.Readable。 ReadStream读到的数据为解码后的字符串，其编码格式当前仅支持'utf-8'。 |
-| [TaskSignal](arkts-tasksignal-c.md) | 拷贝中断信号。 |
-| [WriteStream](arkts-writestream-c.md) | 文件可写流，需要先通过 [fileIo.createWriteStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatewritestream12)方法来构建一 个WriteStream实例。WriteStream继承自数据流基类[stream.Writable]{@link @ohos.util.stream:stream.Writable}。 |
+| [AtomicFile](arkts-corefile-atomicfile-c.md) | AtomicFile is a class used to perform atomic read and write operations on files.A temporary file is written and renamed to the original file location, which ensures file integrity. If the writeoperation fails, the temporary file is deleted without modifying the original file content.You can call **finishWrite()** or **failWrite()** to write or roll back file content. |
+| [ReadStream](arkts-corefile-readstream-c.md) | Defines a readable stream. You need to use[fileIo.createReadStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) tocreate a **ReadStream** instance, which is inherited from[stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readableoptions-i.md).The data obtained by **ReadStream** is a decoded string. Currently, only the UTF-8 format is supported. |
+| [TaskSignal](arkts-corefile-tasksignal-c.md) | Provides APIs for interrupting a copy task. |
+| [WriteStream](arkts-corefile-writestream-c.md) | Defines a writeable stream. You need to use[fileIo.createWriteStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatewritestream12) tocreate a **WriteStream** instance, which is inherited from [stream.Writable](../../apis-arkts/arkts-apis/arkts-arkts-writable-c.md). |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ConflictFiles](arkts-conflictfiles-i.md) | 冲突文件信息，支持copyDir及moveDir接口使用。 |
-| [CopyOptions](arkts-copyoptions-i.md) | 拷贝进度回调监听 |
-| [DfsListeners](arkts-dfslisteners-i.md) | 事件监听类。创建DFSListener对象，用于监听分布式文件系统状态。 |
-| [File](arkts-file-i.md) | 由open接口打开的File对象。 |
-| [FileFilter](arkts-filefilter-i.md) | 文件名过滤器，支持listFileExt接口使用。 |
-| [FileMapping](arkts-filemapping-i.md) | 文件映射对象，在调用FileMapping的方法前，需要先通过mmap()方法（同步或异步）构建一个FileMapping实例。 |
-| [Filter](arkts-filter-i.md) | 文件过滤配置项，支持listFile接口使用。 |
-| [ListFileExtOptions](arkts-listfileextoptions-i.md) | 可选项类型，支持listFileExt接口使用自定义过滤规则。 |
-| [ListFileOptions](arkts-listfileoptions-i.md) | 可选项类型，支持ListFile接口使用。 |
-| [Options](arkts-options-i.md) | 可选项类型，支持readLines接口使用。 |
-| [Progress](arkts-progress-i.md) | 拷贝进度回调数据 |
-| [RandomAccessFile](arkts-randomaccessfile-i.md) | 随机读写文件流。在调用RandomAccessFile的方法前，需要先通过createRandomAccessFile()方法（同步或异步）来构建一个RandomAccessFile实例。 |
-| [RandomAccessFileOptions](arkts-randomaccessfileoptions-i.md) | 可选项类型，支持 createRandomAccessFile 接口使用。 |
-| [ReaderIterator](arkts-readeriterator-i.md) | 文件读取迭代器。在调用ReaderIterator的方法前，需要先通过readLines方法（同步或异步）来构建一个ReaderIterator实例。 |
-| [ReaderIteratorResult](arkts-readeriteratorresult-i.md) | 文件读取迭代器返回结果，支持ReaderIterator接口使用。 |
-| [ReadOptions](arkts-readoptions-i.md) | 可选项类型，支持read接口使用。 |
-| [ReadStreamOptions](arkts-readstreamoptions-i.md) | 可选项类型，支持 createReadStream 接口使用。 |
-| [ReadTextOptions](arkts-readtextoptions-i.md) | 可选项类型，支持readText接口使用，ReadTextOptions继承至[ReadOptions]{@link ReadOptions}。 |
-| [Stat](arkts-stat-i.md) | 文件具体信息，在调用Stat的方法前，需要先通过[stat()](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat)方法（同步或异步）构建一个 Stat实例。 |
-| [Stream](arkts-stream-i.md) | 文件流，在调用Stream的方法前，需要先通过 [fileIo.createStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream)方法或者 [fileIo.fdopenStream](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream)（同步或异步）来构建一个Stream 实例。 |
-| [Watcher](arkts-watcher-i.md) | 文件目录变化监听对象。由createWatcher接口获得。 |
-| [WatchEvent](arkts-watchevent-i.md) | 事件类 |
-| [WatchEventListener](arkts-watcheventlistener-i.md) | 事件监听类。 |
-| [WriteOptions](arkts-writeoptions-i.md) | 可选项类型，支持write接口使用，WriteOptions继承至[Options]{@link Options}。 |
-| [WriteStreamOptions](arkts-writestreamoptions-i.md) | 可选项类型，支持 createWriteStream 接口使用。 |
+| [ConflictFiles](arkts-corefile-conflictfiles-i.md) | Defines conflicting file information used in **copyDir()** or **moveDir()**. |
+| [CopyOptions](arkts-corefile-copyoptions-i.md) | Defines the callback for listening for the copy progress. |
+| [DfsListeners](arkts-corefile-dfslisteners-i.md) | Provides APIs for observing events. listening for the distributed file system status. |
+| [File](arkts-corefile-file-i.md) | Represents a **File** object opened by **open()**. |
+| [FileFilter](arkts-corefile-filefilter-i.md) | Defines the file name filtering interface used by listFileExt(). |
+| [FileMapping](arkts-corefile-filemapping-i.md) | File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous orasynchronous) to construct a FileMapping instance. |
+| [Filter](arkts-corefile-filter-i.md) | Defines the file filtering configuration used by **listFile()**. |
+| [ListFileExtOptions](arkts-corefile-listfileextoptions-i.md) | Defines the options used in listFileExt(). |
+| [ListFileOptions](arkts-corefile-listfileoptions-i.md) | Defines the options used in **listFile()**. |
+| [Options](arkts-corefile-options-i.md) | Defines the options used in **readLines()**. |
+| [Progress](arkts-corefile-progress-i.md) | Defines the copy progress information. |
+| [RandomAccessFile](arkts-corefile-randomaccessfile-i.md) | Provides APIs for randomly reading and writing a stream. Before invoking any API of **RandomAccessFile**, you need touse **createRandomAccessFile()** to create a **RandomAccessFile** instance synchronously or asynchronously. |
+| [RandomAccessFileOptions](arkts-corefile-randomaccessfileoptions-i.md) | Defines the options used in **createRandomAccessFile()**. |
+| [ReadOptions](arkts-corefile-readoptions-i.md) | Defines the options used in **read()**. |
+| [ReadStreamOptions](arkts-corefile-readstreamoptions-i.md) | Defines the options used in **createReadStream()**. |
+| [ReadTextOptions](arkts-corefile-readtextoptions-i.md) | Defines the options used in **readText()**. It inherits from [ReadOptions](arkts-corefile-readoptions-i.md). |
+| [ReaderIterator](arkts-corefile-readeriterator-i.md) | Provides a **ReaderIterator** object. Before calling APIs of **ReaderIterator**, you need to use **readLines()** tocreate a **ReaderIterator** instance. |
+| [ReaderIteratorResult](arkts-corefile-readeriteratorresult-i.md) | Represents the information obtained by the **ReaderIterator** object. |
+| [Stat](arkts-corefile-stat-i.md) | Represents detailed file information. Before calling any API of the **Stat()** class, use[stat()](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiostat) to create a **Stat** instance. |
+| [Stream](arkts-corefile-stream-i.md) | Provides API for stream operations. Before calling any API of **Stream**, you need to create a **Stream** instance byusing [fileIo.createStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatestream) or[fileIo.fdopenStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiofdopenstream). |
+| [WatchEvent](arkts-corefile-watchevent-i.md) | Defines the event to observe. |
+| [WatchEventListener](arkts-corefile-watcheventlistener-i.md) | (event: WatchEvent): voidProvides APIs for observing events. |
+| [Watcher](arkts-corefile-watcher-i.md) | Provides APIs for observing the changes of files or directories. Before using the APIs of **Watcher**, call**createWatcher()** to create a **Watcher** object. |
+| [WriteOptions](arkts-corefile-writeoptions-i.md) | Defines the options used in **write()**. It inherits from [Options](arkts-corefile-options-i.md). |
+| [WriteStreamOptions](arkts-corefile-writestreamoptions-i.md) | Defines the options used in **createWriteStream()**. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AccessFlagType](arkts-accessflagtype-e.md) | 枚举，表示需要校验的文件位置。 |
-| [AccessModeType](arkts-accessmodetype-e.md) | 枚举，表示需要校验的具体权限。若不填，默认校验文件是否存在。 |
-| [LocationType](arkts-locationtype-e.md) | 枚举，文件位置，表示该文件是否在本地或者云端存在。 |
-| [MappingMode](arkts-mappingmode-e.md) | 枚举，文件内存映射模式类型，支持mmap接口使用。 |
-| [WhenceType](arkts-whencetype-e.md) | 枚举，文件偏移指针相对偏移位置类型，支持lseek接口使用。 |
+| [AccessFlagType](arkts-corefile-accessflagtype-e.md) | Enumerates the locations of the file to verify. |
+| [AccessModeType](arkts-corefile-accessmodetype-e.md) | Enumerates the access modes to verify. If this parameter is left blank, the system checks whether the file exists. |
+| [LocationType](arkts-corefile-locationtype-e.md) | Enumerates the file locations. |
+| [MappingMode](arkts-corefile-mappingmode-e.md) | Enumerated type of the file memory mapping mode, which can be used by the mmap API. |
+| [WhenceType](arkts-corefile-whencetype-e.md) | Enumerates the types of the relative offset position used in **lseek()**. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ProgressListener](arkts-progresslistener-t.md) | 拷贝进度监听。 |
+| [ProgressListener](arkts-corefile-progresslistener-t.md) | Listener used to observe the copy progress. |
 

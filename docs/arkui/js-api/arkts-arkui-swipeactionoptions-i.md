@@ -1,6 +1,11 @@
 # SwipeActionOptions
 
-The top layer of the @builder function corresponding to start and end must be a single component. Otherwise, undefined behavior occurs. If the top layer of the @builder function is a statement such as if/else or ForEach, ensure that these statements can generate a single component. The swipe gesture works only in the list item area. If a swipe causes a child component to extend beyond the list item area, the portion outside the area does not respond to the swipe.
+The top layer of the @builder function corresponding to start and end must be a single component.
+Otherwise, undefined behavior occurs. If the top layer of the @builder function is a statement such as
+if/else or ForEach, ensure that these statements can generate a single component.
+
+The swipe gesture works only in the list item area. If a swipe causes a child component to extend beyond
+the list item area, the portion outside the area does not respond to the swipe.
 
 **Since:** 9
 
@@ -28,7 +33,8 @@ Scroll effect.
 end?: CustomBuilder | SwipeActionItem
 ```
 
-Swipe action item displayed on the right of the list item when the item is swiped left (in vertical list layout) or below the list item when the item is swiped up (in horizontal list layout).
+Swipe action item displayed on the right of the list item when the item is swiped left
+(in vertical list layout) or below the list item when the item is swiped up (in horizontal list layout).
 
 **Type:** CustomBuilder | SwipeActionItem
 
@@ -44,7 +50,8 @@ Swipe action item displayed on the right of the list item when the item is swipe
 onOffsetChange?: (offset: number) => void
 ```
 
-Callback invoked when the location of the list item changes, in vp, when it is swiped left or right (in vertical list layout) or up or down (in horizontal list layout).
+Callback invoked when the location of the list item changes, in vp, when it is swiped left or right
+(in vertical list layout) or up or down (in horizontal list layout).
 
 **Type:** (offset: number) => void
 
@@ -62,7 +69,8 @@ Callback invoked when the location of the list item changes, in vp, when it is s
 start?: CustomBuilder | SwipeActionItem
 ```
 
-Swipe action item displayed on the left of the list item when the item is swiped right (in vertical list layout) or above the list item when the item is swiped down (in horizontal list layout).
+Swipe action item displayed on the left of the list item when the item is swiped right
+(in vertical list layout) or above the list item when the item is swiped down (in horizontal list layout).
 
 **Type:** CustomBuilder | SwipeActionItem
 

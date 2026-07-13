@@ -12,7 +12,10 @@ Describes the notification contents.
 contentType?: notification.ContentType
 ```
 
-Notification content type. This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use **notificationContentType** instead.
+Notification content type.
+
+This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use
+**notificationContentType** instead.
 
 **Type:** notification.ContentType
 
@@ -100,7 +103,9 @@ Picture-attached.
 systemLiveView?: NotificationSystemLiveViewContent
 ```
 
-System live view. A third-party application cannot directly create a notification of this type. After the system proxy creates a system live view, the third-party application releases a notification with the same ID to update the specified content.
+System live view. A third-party application cannot directly create a notification of this type. After the system
+proxy creates a system live view, the third-party application releases a notification with the same ID to update
+the specified content.
 
 **Type:** NotificationSystemLiveViewContent
 

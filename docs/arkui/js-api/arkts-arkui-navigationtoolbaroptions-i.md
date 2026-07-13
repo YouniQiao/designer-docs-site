@@ -30,7 +30,13 @@ Background blur style of the title bar. If this parameter is not set, the backgr
 backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-Options for the title bar background blur style. **NOTE** This parameter is only effective when **backgroundBlurStyle** is set. Avoid using this API in conjunction with **backgroundEffect**.
+Options for the title bar background blur style.
+
+**NOTE**
+
+This parameter is only effective when **backgroundBlurStyle** is set.
+
+Avoid using this API in conjunction with **backgroundEffect**.
 
 **Type:** BackgroundBlurStyleOptions
 
@@ -66,7 +72,11 @@ Background color of the title bar. If this parameter is not set, the default col
 backgroundEffect?: BackgroundEffectOptions
 ```
 
-Title bar background properties, including blur radius, brightness, saturation, and color. **NOTE** Avoid using this API in conjunction with **backgroundBlurStyleOptions**.
+Title bar background properties, including blur radius, brightness, saturation, and color.
+
+**NOTE**
+
+Avoid using this API in conjunction with **backgroundBlurStyleOptions**.
 
 **Type:** BackgroundEffectOptions
 
@@ -84,7 +94,9 @@ Title bar background properties, including blur radius, brightness, saturation, 
 barStyle?: BarStyle
 ```
 
-Layout style of the toolbar. Default value: **BarStyle.STANDARD**
+Layout style of the toolbar.
+
+Default value: **BarStyle.STANDARD**
 
 **Type:** BarStyle
 
@@ -104,7 +116,13 @@ Layout style of the toolbar. Default value: **BarStyle.STANDARD**
 hideItemValue?: boolean
 ```
 
-Whether to hide the toolbar text. Default value: **false** **true**: yes; **false**: no Default value: **false**
+Whether to hide the toolbar text.
+
+Default value: **false**
+
+**true**: yes; **false**: no
+
+Default value: **false**
 
 **Type:** boolean
 

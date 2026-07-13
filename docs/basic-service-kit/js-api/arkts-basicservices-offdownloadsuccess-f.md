@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## offDownloadSuccess
@@ -12,7 +12,8 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 function offDownloadSuccess(url: string, callback?: Callback<void>): void
 ```
 
-Unsubscribes from the pre-download completion events. This API uses an asynchronous callback to return the result.
+Unsubscribes from the pre-download completion events. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 23
 

@@ -4,7 +4,8 @@
 export type AgentProvider = _AgentProvider
 ```
 
-AgentCard中的Provider是指发行和的组织或平台。 管理代理的凭据。
+AgentCard中的Provider是指发行和的组织或平台。
+管理代理的凭据。
 
 **起始版本：** 24
 

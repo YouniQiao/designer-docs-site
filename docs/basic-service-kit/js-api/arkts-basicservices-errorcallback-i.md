@@ -1,6 +1,7 @@
 # ErrorCallback
 
-Defines a common callback that carries an error parameter. The information returned by the callback is of the [BusinessError](arkts-basicservices-businesserror-i.md#businesserror) type.
+Defines a common callback that carries an error parameter. The information returned by the callback is of
+the [BusinessError](arkts-basicservices-businesserror-i.md) type.
 
 **Since:** 6
 
@@ -9,7 +10,7 @@ Defines a common callback that carries an error parameter. The information retur
 ## Modules to Import
 
 ```TypeScript
-import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@ohos.base';
+import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.BasicServicesKit';
 ```
 
 ## constructor

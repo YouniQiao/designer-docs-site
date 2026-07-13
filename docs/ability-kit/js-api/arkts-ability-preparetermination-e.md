@@ -1,6 +1,9 @@
 # PrepareTermination
 
-Enumerates the actions triggered when an application is closed by the user. You can use it in [onPrepareTermination](arkts-ability-abilitystage-c.md#onpreparetermination-1) or [onPrepareTerminationAsync](arkts-ability-abilitystage-c.md#onprepareterminationasync-1) of [AbilityStage](arkts-ability-abilitystage-c.md#abilitystage).
+Enumerates the actions triggered when an application is closed by the user. You can use it in
+[onPrepareTermination](arkts-ability-abilitystage-c.md#onpreparetermination-1) or
+[onPrepareTerminationAsync](arkts-ability-abilitystage-c.md#onprepareterminationasync-1) of
+[AbilityStage](arkts-ability-abilitystage-c.md).
 
 **Since:** 15
 

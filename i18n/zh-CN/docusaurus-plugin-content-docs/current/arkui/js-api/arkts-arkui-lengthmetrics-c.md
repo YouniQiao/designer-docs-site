@@ -12,7 +12,9 @@
 autoRefresh?(value: boolean): LengthMetrics
 ```
 
-为LengthMetrics对象设置自动刷新。 启用时，由LengthMetrics.resource()创建的对象的长度值将自动更新 当系统配置发生变化时。
+为LengthMetrics对象设置自动刷新。
+启用时，由LengthMetrics.resource()创建的对象的长度值将自动更新
+当系统配置发生变化时。
 
 **起始版本：** 26.0.0
 

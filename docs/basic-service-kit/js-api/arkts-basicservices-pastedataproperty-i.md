@@ -1,6 +1,8 @@
 # PasteDataProperty
 
-Defines the properties of PasteData in the pasteboard, including the timestamp, data types, pasteable range, and additional data. The defined properties can be applied to the pasteboard only with the [setProperty](arkts-basicservices-pastedata-i.md#setproperty-1) method.
+Defines the properties of PasteData in the pasteboard, including the timestamp, data types, pasteable range,
+and additional data. The defined properties can be applied to the pasteboard only with the
+[setProperty](arkts-basicservices-pastedata-i.md#setproperty-1) method.
 
 **Since:** 7
 
@@ -9,7 +11,7 @@ Defines the properties of PasteData in the pasteboard, including the timestamp, 
 ## Modules to Import
 
 ```TypeScript
-import { pasteboard } from '@ohos.pasteboard';
+import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
 ## additions
@@ -18,7 +20,8 @@ import { pasteboard } from '@ohos.pasteboard';
 additions: Record<string, object>
 ```
 
-Additional property data. It does not allow for dynamic adding of properties. Properties can be added only by re- assigning values. This parameter is left empty by default. For details, see the example of **setProperty**.
+Additional property data. It does not allow for dynamic adding of properties. Properties can be added only by re-
+assigning values. This parameter is left empty by default. For details, see the example of **setProperty**.
 
 **Type:** Record<string, object>
 
@@ -34,7 +37,9 @@ Additional property data. It does not allow for dynamic adding of properties. Pr
 localOnly: boolean
 ```
 
-Whether the pasteboard content is for local access only. The default value is **false**. The value will be overwritten by the value of the **shareOption** attribute. You are advised to use the [ShareOption](arkts-basicservices-shareoption-e.md#shareoption) attribute instead.
+Whether the pasteboard content is for local access only. The default value is **false**. The value will be
+overwritten by the value of the **shareOption** attribute. You are advised to use the
+[ShareOption](arkts-basicservices-shareoption-e.md) attribute instead.
 
 **Type:** boolean
 

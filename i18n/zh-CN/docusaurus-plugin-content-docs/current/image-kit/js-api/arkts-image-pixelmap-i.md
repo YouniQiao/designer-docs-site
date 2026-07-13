@@ -1,44 +1,12 @@
 # PixelMap
 
-The **PixelMap** class provides APIs to read or write image data and obtain image information. Before calling any API in PixelMap, you must use [image.createPixelMap](arkts-image-createpixelmap-f.md#createPixelMap-2) to create a PixelMap object. Currently, the maximum size of a serialized PixelMap is 128 MB. A larger size will cause a display failure. The size is calculated as follows: Width x Height x [Bytes per pixel](arkts-image-pixelmapformat-e.md#PixelMapFormat). Since API version 11, PixelMap supports cross-thread calls through [Worker]@ohos.worker. If a PixelMap object is invoked by another thread through [Worker]@ohos.worker, all APIs of the PixelMap object cannot be called in the original thread. Otherwise, error 501 is reported, indicating that the server cannot complete the request. Before calling any API in PixelMap, you can use [image.createPixelMap](arkts-image-createpixelmap-f.md#createPixelMap-2) to pass pixel data to create a PixelMap object, or use [ImageSource](arkts-multimedia-image.md#image) to decode an image to a PixelMap object. To develop an atomic service, use [ImageSource](arkts-multimedia-image.md#image) to create a PixelMap object. Images occupy a large amount of memory. When you finish using a PixelMap instance, call [release]image.PixelMap.release() to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Sendable PixelMap instance.
 
-**起始版本：** 7
+**继承/实现关系：** PixelMap extends [ISendable](arkts-image-isendable-t.md)
 
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## 导入模块
-
-```TypeScript
-import { image } from '@kit.ImageKit';
-```
-
-## applyColorSpace
-
-```TypeScript
-applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager, callback: AsyncCallback<void>): void
-```
-
-Performs color space conversion (CSC) on the image pixel color based on a given color space. This API uses an asynchronous callback to return the result.
-
-**起始版本：** 11
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| targetColorSpace | colorSpaceManager.ColorSpaceManager | 是 | Target color space. SRGB, DCI_P3, DISPLAY_P3,  and ADOBE_RGB_1998 are supported. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980104 | Failed to initialize the internal object. |
-| 62980108 | Failed to convert the color space. |
-| 62980115 | Invalid image parameter. |
 
 ## applyColorSpace
 
@@ -46,484 +14,13 @@ Performs color space conversion (CSC) on the image pixel color based on a given 
 applyColorSpace(targetColorSpace: colorSpaceManager.ColorSpaceManager): Promise<void>
 ```
 
-Performs Color Space Converters (CSC) on the image pixel color based on a given color space. This API uses a promise to return the result.
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| targetColorSpace | colorSpaceManager.ColorSpaceManager | 是 | Target color space. SRGB, DCI_P3, DISPLAY_P3,  and ADOBE_RGB_1998 are supported. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980104 | Failed to initialize the internal object. |
-| 62980108 | Failed to convert the color space. |
-| 62980115 | Invalid image parameter. |
-
-## applyCrop
-
-```TypeScript
-applyCrop(region: Region): Promise<void>
-```
-
-Crops the PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| region | Region | 是 | The region to crop. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600204 | The specified region is invalid or out of range. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. Failed to process pixel data. 2. The system is out of memory. |
-
-## applyCropSync
-
-```TypeScript
-applyCropSync(region: Region): void
-```
-
-Crops the PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| region | Region | 是 | The region to crop. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600204 | The specified region is invalid or out of range. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. Failed to process pixel data. 2. The system is out of memory. |
-
-## applyFlip
-
-```TypeScript
-applyFlip(horizontal: boolean, vertical: boolean): Promise<void>
-```
-
-Flips the PixelMap in the horizontal and/or vertical directions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| horizontal | boolean | 是 | Whether to flip horizontally. |
-| vertical | boolean | 是 | Whether to flip vertically. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory. Possible cause: The system is out of memory. |
-
-## applyFlipSync
-
-```TypeScript
-applyFlipSync(horizontal: boolean, vertical: boolean): void
-```
-
-Flips the PixelMap in the horizontal and/or vertical directions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| horizontal | boolean | 是 | Whether to flip horizontally. |
-| vertical | boolean | 是 | Whether to flip vertically. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory. Possible cause: The system is out of memory. |
-
-## applyRotate
-
-```TypeScript
-applyRotate(angle: double): Promise<void>
-```
-
-Rotates the PixelMap. Note: YUV format PixelMaps only support rotation angles that are multiples of 90 degrees.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| angle | double | 是 | The rotation angle in degrees. Unit: Degree. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyRotateSync
-
-```TypeScript
-applyRotateSync(angle: double): void
-```
-
-Rotates the PixelMap. Note: YUV format PixelMaps only support rotation angles that are multiples of 90 degrees.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| angle | double | 是 | The rotation angle in degrees. Unit: Degree. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyScale
-
-```TypeScript
-applyScale(x: double, y: double, level?: AntiAliasingLevel): Promise<void>
-```
-
-Scales the PixelMap in the horizontal and/or vertical dimensions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | The scale ratio of width. Unit: Percentage. |
-| y | double | 是 | The scale ratio of height. Unit: Percentage. |
-| level | AntiAliasingLevel | 否 |  |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyScaleSync
-
-```TypeScript
-applyScaleSync(x: double, y: double, level?: AntiAliasingLevel): void
-```
-
-Scales the PixelMap in the horizontal and/or vertical dimensions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | The scale ratio of width. Unit: Percentage. |
-| y | double | 是 | The scale ratio of height. Unit: Percentage. |
-| level | AntiAliasingLevel | 否 |  |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyTranslate
-
-```TypeScript
-applyTranslate(x: double, y: double): Promise<void>
-```
-
-Repositions the PixelMap in the horizontal and/or vertical directions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | The distance in pixels to move in the horizontal direction. Unit: px. |
-| y | double | 是 | The distance in pixels to move in the vertical direction. Unit: px. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## applyTranslateSync
-
-```TypeScript
-applyTranslateSync(x: double, y: double): void
-```
-
-Repositions the PixelMap in the horizontal and/or vertical directions.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | The distance in pixels to move in the horizontal direction. Unit: px. |
-| y | double | 是 | The distance in pixels to move in the vertical direction. Unit: px. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. |
-| 7600301 | Failed to allocate memory.  Possible causes: 1. The resulting PixelMap size is too large. 2. The system is out of memory. |
-
-## clone
-
-```TypeScript
-clone(): Promise<PixelMap>
-```
-
-Copies this PixelMap object. This API uses a promise to return the result.
-
-**起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 501 | Resource unavailable. |
-| 62980102 | Image malloc abnormal. This status code is thrown when an error occurs  during the process of copying data. |
-| 62980103 | Image YUV And ASTC types are not supported. |
-| 62980104 | Image initialization abnormal.  This status code is thrown when an error occurs during the process of creating empty pixelmap. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-
-## cloneSync
-
-```TypeScript
-cloneSync(): PixelMap
-```
-
-Copies this PixelMap object. This API returns the result synchronously.
-
-**起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 501 | Resource unavailable. |
-| 62980102 | Image malloc abnormal. This status code is thrown when an error occurs  during the process of copying data. |
-| 62980103 | Image YUV And ASTC types are not supported. |
-| 62980104 | Image initialization abnormal.  This status code is thrown when an error occurs during the process of creating empty pixelmap. |
-| 62980106 | The image data is too large. This status code is thrown when an error occurs  during the process of checking size. |
-
-## convertPixelFormat
-
-```TypeScript
-convertPixelFormat(targetPixelFormat: PixelMapFormat): Promise<void>
-```
-
-The method is used for the transformation of the image formats. Pixel data will be changed by calling this method.
+Apply color space of pixelmap, the pixels will be changed by input color space.
+This method uses a promise to return the result.
+
+This method is used to change color space of PixelMap.
+Pixel data will be changed by calling this method.
+If you want to set the colorspace property of PixelMap only,
+use method {@Link #setColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **起始版本：** 12
 
@@ -533,23 +30,41 @@ The method is used for the transformation of the image formats. Pixel data will 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| targetPixelFormat | PixelMapFormat | 是 | The pixel format for pixelmap conversion. |
+| targetColorSpace | colorSpaceManager.ColorSpaceManager | 是 | The color space for pixelmap. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980115 | Invalid input parameter. |
-| 62980111 | The image source data is incomplete. |
-| 62980274 | The conversion failed. |
-| 62980276 | The type to be converted is an unsupported target pixel format. |
-| 62980178 | Failed to create the pixelmap. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980104](../errorcode-image.md#62980104-图片初始化错误) | Failed to initialize the internal object. |
+| [62980108](../errorcode-image.md#62980108-图片颜色转换错误) | Failed to convert the color space. |
+| [62980115](../errorcode-image.md#62980115-图片无效参数) | Invalid image parameter. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { colorSpaceManager } from '@kit.ArkGraphics2D';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function ApplyColorSpace(pixelMap : sendableImage.PixelMap) {
+    let colorSpaceName = colorSpaceManager.ColorSpace.SRGB; // colorSpaceManager.ColorSpace该对象当前仅支持2in1/PC设备使用。
+    let targetColorSpace: colorSpaceManager.ColorSpaceManager = colorSpaceManager.create(colorSpaceName);
+    pixelMap.applyColorSpace(targetColorSpace).then(() => {
+        console.info('Succeeded in applying color space for pixelmap object.');
+    }).catch((error: BusinessError) => {
+        console.error(`Failed to apply color space for pixelmap object. code is ${error.code}, message is ${error.message}`); 
+    })
+}
+
+```
 
 ## createAlphaPixelmap
 
@@ -557,13 +72,11 @@ The method is used for the transformation of the image formats. Pixel data will 
 createAlphaPixelmap(): Promise<PixelMap>
 ```
 
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. It is invalid for YUV images. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMap} instead for better exception handling capabilities.
+Obtains new pixelmap with alpha information. This method uses a promise to return the information.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -571,29 +84,25 @@ Creates a PixelMap object that contains only the alpha channel information. This
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the new image pixelmap.If the operation fails, an error message is returned. |
 
-## createAlphaPixelmap
+**示例：**
 
 ```TypeScript
-createAlphaPixelmap(callback: AsyncCallback<PixelMap>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function CreateAlphaPixelmap(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    pixelMap.createAlphaPixelmap().then((alphaPixelMap: sendableImage.PixelMap) => {
+      console.info('Succeeded in creating alpha pixelmap.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to create alpha pixelmap. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. It is invalid for YUV images. This API returns the result through a callback. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMap} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;PixelMap> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the PixelMap object obtained; otherwise, err is an error object. |
 
 ## createAlphaPixelmapSync
 
@@ -601,11 +110,11 @@ Creates a PixelMap object that contains only the alpha channel information. This
 createAlphaPixelmapSync(): PixelMap
 ```
 
-Creates a PixelMap object that contains only the alpha channel information. This object can be used for the shadow effect. This API returns the result synchronously. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link extractAlphaPixelMapSync} instead for better exception handling capabilities.
+Obtains new pixelmap with alpha information.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -613,166 +122,38 @@ Creates a PixelMap object that contains only the alpha channel information. This
 
 | 类型 | 说明 |
 | --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
+| PixelMap | return the new image pixelmap.If the operation fails, an error message is returned. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## createCroppedAndScaledPixelMap
+**示例：**
 
 ```TypeScript
-createCroppedAndScaledPixelMap(region: Region, x: double, y: double, level?: AntiAliasingLevel): Promise<PixelMap>
+import { sendableImage } from '@kit.ImageKit';
+
+async function CreateAlphaPixelmapSync(pixelMap : sendableImage.PixelMap) {
+  let resPixelMap : sendableImage.PixelMap = pixelMap.createAlphaPixelmapSync();
+  return resPixelMap;
+}
+
 ```
-
-Creates an image that has been cropped and resized based on the specified cropping area, scale factors of the width and height, and anti-aliasing level. This API uses a promise to return the result.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| region | Region | 是 | Area to crop. It must be within the original image's dimension (in pixels). |
-| x | double | 是 | Scale factor of the width. It must not be 0. |
-| y | double | 是 | Scale factor of the height. It must not be 0. |
-| level | AntiAliasingLevel | 否 |  |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-| 7600204 | Invalid region. |
-| 7600205 | Unsupported memory format or pixel format. |
-| 7600301 | Memory alloc failed. |
-
-## createCroppedAndScaledPixelMapSync
-
-```TypeScript
-createCroppedAndScaledPixelMapSync(region: Region, x: double, y: double, level?: AntiAliasingLevel): PixelMap
-```
-
-Creates an image that has been cropped and resized based on the specified cropping area, scale factors of the width and height, and anti-aliasing level. This API returns the result synchronously.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| region | Region | 是 | Area to crop. It must be within the original image's dimension (in pixels). |
-| x | double | 是 | Scale factor of the width. It must not be 0. |
-| y | double | 是 | Scale factor of the height. It must not be 0. |
-| level | AntiAliasingLevel | 否 |  |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-| 7600204 | Invalid region. |
-| 7600205 | Unsupported memory format or pixel format. |
-| 7600301 | Memory alloc failed. |
-
-## createScaledPixelMap
-
-```TypeScript
-createScaledPixelMap(x: double, y: double, level?: AntiAliasingLevel): Promise<PixelMap>
-```
-
-Creates an image that has been resized based on the specified anti-aliasing level and the scale factors of the width and height. This API uses a promise to return the result.
-
-**起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
-| level | AntiAliasingLevel | 否 | Anti-aliasing level. The default value is AntiAliasingLevel.NONE. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
-
-## createScaledPixelMapSync
-
-```TypeScript
-createScaledPixelMapSync(x: double, y: double, level?: AntiAliasingLevel): PixelMap
-```
-
-Creates an image that has been resized based on the specified anti-aliasing level and the scale factors of the width and height. This API returns the result synchronously.
-
-**起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
-| level | AntiAliasingLevel | 否 | Anti-aliasing level. The default value is AntiAliasingLevel.NONE. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| PixelMap | PixelMap object. If the operation fails, an error is thrown. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## crop
 
 ```TypeScript
-crop(region: Region, callback: AsyncCallback<void>): void
+crop(region: image.Region): Promise<void>
 ```
 
-Crops this image based on a given size. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyCrop} instead for better exception handling capabilities.
+Crop the image. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -780,48 +161,46 @@ Crops this image based on a given size. This API uses an asynchronous callback t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| region | Region | 是 | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## crop
-
-```TypeScript
-crop(region: Region): Promise<void>
-```
-
-Crops a PixelMap based on a given size. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyCrop} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| region | Region | 是 | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
+| region | image.Region | 是 | The region to crop. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Crop(pixelMap : sendableImage.PixelMap) {
+  let region: image.Region = { x: 0, y: 0, size: { height: 100, width: 100 } };
+  if (pixelMap != undefined) {
+    pixelMap.crop(region).then(() => {
+      console.info('Succeeded in cropping pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to crop pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    });
+  }
+}
+
+```
 
 ## cropSync
 
 ```TypeScript
-cropSync(region: Region): void
+cropSync(region: image.Region): void
 ```
 
-Crops this image based on a given size. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyCropSync} instead for better exception handling capabilities.
+Crop the image.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -829,106 +208,29 @@ Crops this image based on a given size. This API returns the result synchronousl
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| region | Region | 是 | Size of the image after cropping. The value cannot exceed the width or height of the  image. |
+| region | image.Region | 是 | The region to crop. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## extractAlphaPixelMap
-
-```TypeScript
-extractAlphaPixelMap(): Promise<PixelMap>
-```
-
-Extracts the alpha channel from the current PixelMap to create a new ALPHA_U8 format PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;PixelMap> | A Promise of the new ALPHA_U8 format PixelMap. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The current PixelMap has been released. |
-| 7600106 | The current PixelMap has been passed across threads. |
-| 7600305 | Failed to create the PixelMap.  Possible cause: Current PixelMap data is corrupted. |
-| 7600306 | Failed to convert the data.  Possible causes: 1. Failed to perform pixel format conversion. 2. The system is out of memory. |
-
-## extractAlphaPixelMapSync
+**示例：**
 
 ```TypeScript
-extractAlphaPixelMapSync(): PixelMap
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function CropSync(pixelMap : sendableImage.PixelMap) {
+  let region : image.Region = { x: 0, y: 0, size: { height: 100, width: 100 } };
+  if (pixelMap != undefined) {
+    pixelMap.cropSync(region);
+  }
+}
+
 ```
-
-Extracts the alpha channel from the current PixelMap to create a new ALPHA_U8 format PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| PixelMap | A new ALPHA_U8 format PixelMap. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The current PixelMap has been released. |
-| 7600106 | The current PixelMap has been passed across threads. |
-| 7600305 | Failed to create the PixelMap.  Possible cause: Current PixelMap data is corrupted. |
-| 7600306 | Failed to convert the data.  Possible causes: 1. Failed to perform pixel format conversion. 2. The system is out of memory. |
-
-## flip
-
-```TypeScript
-flip(horizontal: boolean, vertical: boolean, callback: AsyncCallback<void>): void
-```
-
-Flips this image horizontally or vertically, or both. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyFlip} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| horizontal | boolean | 是 | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | 是 | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## flip
 
@@ -936,13 +238,11 @@ Flips this image horizontally or vertically, or both. This API uses an asynchron
 flip(horizontal: boolean, vertical: boolean): Promise<void>
 ```
 
-Flips a PixelMap based on a given angle. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyFlip} instead for better exception handling capabilities.
+Image flipping. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -950,14 +250,35 @@ Flips a PixelMap based on a given angle. This API uses a promise to return the r
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| horizontal | boolean | 是 | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | 是 | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
+| horizontal | boolean | 是 | Is flip in horizontal. |
+| vertical | boolean | 是 | Is flip in vertical. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Flip(pixelMap : sendableImage.PixelMap) {
+  let horizontal: boolean = true;
+  let vertical: boolean = false;
+  if (pixelMap != undefined) {
+    pixelMap.flip(horizontal, vertical).then(() => {
+      console.info('Succeeded in flipping pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to flip pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    })
+  }
+}
+
+```
 
 ## flipSync
 
@@ -965,11 +286,11 @@ Flips a PixelMap based on a given angle. This API uses a promise to return the r
 flipSync(horizontal: boolean, vertical: boolean): void
 ```
 
-Flips this image horizontally or vertically, or both. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyFlipSync} instead for better exception handling capabilities.
+Image flipping.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -977,29 +298,42 @@ Flips this image horizontally or vertically, or both. This API returns the resul
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| horizontal | boolean | 是 | Whether to flip the image horizontally. true to flip the image horizontally,  false otherwise. |
-| vertical | boolean | 是 | Whether to flip the image vertically. true to flip the image vertically,  false otherwise. |
+| horizontal | boolean | 是 | Is flip in horizontal. |
+| vertical | boolean | 是 | Is flip in vertical. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function FlipSync(pixelMap : sendableImage.PixelMap) {
+  let horizontal : boolean = true;
+  let vertical : boolean = false;
+  if (pixelMap != undefined) {
+    pixelMap.flipSync(horizontal, vertical);
+  }
+}
+
+```
 
 ## getBytesNumberPerRow
 
 ```TypeScript
-getBytesNumberPerRow(): int
+getBytesNumberPerRow(): number
 ```
 
-Obtains the number of bytes per row of this image. Unit: bytes.
+Obtains the number of bytes in each line of the image pixelmap.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1007,7 +341,18 @@ Obtains the number of bytes per row of this image. Unit: bytes.
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Number of bytes per row. |
+| number | Number of bytes in each line. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function GetBytesNumberPerRow(pixelMap : sendableImage.PixelMap) {
+  let rowCount: number = pixelMap.getBytesNumberPerRow();
+}
+
+```
 
 ## getColorSpace
 
@@ -1015,9 +360,9 @@ Obtains the number of bytes per row of this image. Unit: bytes.
 getColorSpace(): colorSpaceManager.ColorSpaceManager
 ```
 
-Obtains the color space of this image.
+Get color space of pixelmap.
 
-**起始版本：** 10
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1025,29 +370,40 @@ Obtains the color space of this image.
 
 | 类型 | 说明 |
 | --- | --- |
-| colorSpaceManager.ColorSpaceManager | Color space obtained. |
+| colorSpaceManager.ColorSpaceManager | If the operation fails, an error message is returned. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980101 | The image data is abnormal. |
-| 62980103 | The image data is not supported. |
-| 62980115 | Invalid image parameter. |
+| [62980101](../errorcode-image.md#62980101-图片输入数据错误) | If the image data abnormal. |
+| [62980103](../errorcode-image.md#62980103-图片类型不支持) | If the image data unsupport. |
+| [62980115](../errorcode-image.md#62980115-图片无效参数) | If the image parameter invalid. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function GetColorSpace(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    let csm = pixelMap.getColorSpace();
+  }
+}
+
+```
 
 ## getDensity
 
 ```TypeScript
-getDensity(): int
+getDensity(): number
 ```
 
-Obtains the pixel density of this image. Unit: ppi (pixels/inch)
+Obtains the density of the image pixelmap.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1055,21 +411,30 @@ Obtains the pixel density of this image. Unit: ppi (pixels/inch)
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Pixel density, in ppi. |
+| number | The number of density, in ppi. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function GetDensity(pixelMap : sendableImage.PixelMap) {
+  let getDensity: number = pixelMap.getDensity();
+}
+
+```
 
 ## getImageInfo
 
 ```TypeScript
-getImageInfo(): Promise<ImageInfo>
+getImageInfo(): Promise<image.ImageInfo>
 ```
 
-Obtains the image information of a PixelMap. This API uses a promise to return the result.
+Obtains pixelmap information about this image. This method uses a promise to return the information.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1077,43 +442,40 @@ Obtains the image information of a PixelMap. This API uses a promise to return t
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;ImageInfo> | Promise used to return the image information. |
+| Promise&lt;image.ImageInfo&gt; | A Promise instance used to return the image pixelmap information.If the operation fails, an error message is returned. |
 
-## getImageInfo
+**示例：**
 
 ```TypeScript
-getImageInfo(callback: AsyncCallback<ImageInfo>): void
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function GetImageInfo(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    pixelMap.getImageInfo().then((imageInfo: image.ImageInfo) => {
+      if (imageInfo != undefined) {
+        console.info("Succeeded in obtaining the image pixel map information."+ imageInfo.size.height);
+      }
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to obtain the image pixel map information. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Obtains the image information. This API uses an asynchronous callback to return the result.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;ImageInfo> | 是 | Callback used to return the result. If the operation is successful  , err is undefined and data is the image information obtained; otherwise, err is an error  object. |
 
 ## getImageInfoSync
 
 ```TypeScript
-getImageInfoSync(): ImageInfo
+getImageInfoSync(): image.ImageInfo
 ```
 
-Obtains the image information. This API returns the result synchronously.
+Get image information from image source.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageSource
 
@@ -1121,60 +483,39 @@ Obtains the image information. This API returns the result synchronously.
 
 | 类型 | 说明 |
 | --- | --- |
-| ImageInfo | Image information. |
+| image.ImageInfo | the image information. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 501 | Resource Unavailable. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## getMetadata
+**示例：**
 
 ```TypeScript
-getMetadata(key: HdrMetadataKey): HdrMetadataValue
+import { image } from '@kit.ImageKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function GetImageInfoSync(pixelMap : sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    let imageInfo : image.ImageInfo = pixelMap.getImageInfoSync();
+  }
+}
+
 ```
-
-Obtains the value of the metadata with a given key in this PixelMap.
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| key | HdrMetadataKey | 是 | Key of the HDR metadata. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| HdrMetadataValue | Value of the metadata with the given key. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980173 | The DMA memory does not exist. |
-| 62980302 | Memory copy failed. Possibly caused by invalid metadata value. |
 
 ## getPixelBytesNumber
 
 ```TypeScript
-getPixelBytesNumber(): int
+getPixelBytesNumber(): number
 ```
 
-Obtains the total number of bytes of this image. Unit: bytes.
+Obtains the total number of bytes of the image pixelmap.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1182,49 +523,18 @@ Obtains the total number of bytes of this image. Unit: bytes.
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Total number of bytes. |
+| number | Total number of bytes. |
 
-## getUniqueId
+**示例：**
 
 ```TypeScript
-getUniqueId(): int
+import { sendableImage } from '@kit.ImageKit';
+
+async function GetPixelBytesNumber(pixelMap : sendableImage.PixelMap) {
+  let pixelBytesNumber: number = pixelMap.getPixelBytesNumber();
+}
+
 ```
-
-Obtains the unique ID of this PixelMap.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| int | Unique ID. The value is a positive integer. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600201 | The PixelMap has been released. |
-
-## isReleased
-
-```TypeScript
-isReleased(): boolean
-```
-
-Checks whether this PixelMap object is released. If released, any attempt to access the internal data of this object will fail. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
-
-**起始版本：** 22
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| boolean | Check result for whether the PixelMap object is released. true if released; false  otherwise. |
 
 ## marshalling
 
@@ -1232,9 +542,9 @@ Checks whether this PixelMap object is released. If released, any attempt to acc
 marshalling(sequence: rpc.MessageSequence): void
 ```
 
-Marshals this PixelMap object and writes it to a MessageSequence object.
+Marshalling PixelMap and write into MessageSequence.
 
-**起始版本：** 10
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1242,28 +552,87 @@ Marshals this PixelMap object and writes it to a MessageSequence object.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | 是 | MessageSequence object. |
+| sequence | rpc.MessageSequence | 是 | rpc.MessageSequence parameter. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980115 | Invalid image parameter. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
+| [62980115](../errorcode-image.md#62980115-图片无效参数) | Invalid image parameter. |
+| [62980097](../errorcode-image.md#62980097-pixelmap序列化传输失败) | IPC error. |
+
+**示例：**
+
+```TypeScript
+// EntryAbility.ets
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { rpc } from '@kit.IPCKit';
+
+class MySequence implements rpc.Parcelable {
+  pixel_map: sendableImage.PixelMap;
+  constructor(conPixelMap : sendableImage.PixelMap) {
+    this.pixel_map = conPixelMap;
+  }
+  marshalling(messageSequence : rpc.MessageSequence) {
+    this.pixel_map.marshalling(messageSequence);
+    console.info('Succeeded in marshalling a PixelMap.');
+    return true;
+  }
+  unmarshalling(messageSequence : rpc.MessageSequence) {
+    sendableImage.createPixelMap(new ArrayBuffer(96), {size: { height:4, width: 6}}).then((pixelParcel: sendableImage.PixelMap) => {
+      pixelParcel.unmarshalling(messageSequence).then(async (pixelMap: sendableImage.PixelMap) => {
+        this.pixel_map = pixelMap;
+        pixelMap.getImageInfo().then((imageInfo: image.ImageInfo) => {
+          console.info(`Succeeded in unmarshalling a PixelMap. Height: ${imageInfo.size.height}, width: ${imageInfo.size.width}.`);
+        })
+      })
+    });
+    return true;
+  }
+}
+
+async function Marshalling() {
+  const color: ArrayBuffer = new ArrayBuffer(96);
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = 0x80;
+  }
+  let opts: image.InitializationOptions = {
+    editable: true,
+    pixelFormat: 4,
+    size: { height: 4, width: 6 },
+    alphaType: 3
+  }
+  let pixelMap: sendableImage.PixelMap | undefined = undefined;
+  await sendableImage.createPixelMap(color, opts).then((srcPixelMap: sendableImage.PixelMap) => {
+    pixelMap = srcPixelMap;
+  })
+  if (pixelMap != undefined) {
+    // 序列化。
+    let parcelable: MySequence = new MySequence(pixelMap);
+    let data: rpc.MessageSequence = rpc.MessageSequence.create();
+    data.writeParcelable(parcelable);
+
+    // 反序列化rpc获取到data。
+    let ret: MySequence = new MySequence(pixelMap);
+    data.readParcelable(ret);
+  }
+}
+
+```
 
 ## opacity
 
 ```TypeScript
-opacity(rate: double, callback: AsyncCallback<void>): void
+opacity(rate: number): Promise<void>
 ```
 
-Sets an opacity rate for this image. This API uses an asynchronous callback to return the result. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link setOpacity} instead for better exception handling capabilities.
+Set the transparent rate of pixelmap. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1271,48 +640,44 @@ Sets an opacity rate for this image. This API uses an asynchronous callback to r
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | double | 是 | Opacity rate. The value range is (0,1]. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## opacity
-
-```TypeScript
-opacity(rate: double): Promise<void>
-```
-
-Sets an opacity rate for this image. It is invalid for YUV images. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link setOpacity} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| rate | double | 是 | Opacity rate. The value range is (0,1]. |
+| rate | number | 是 | The value of transparent rate. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Opacity(pixelMap : sendableImage.PixelMap) {
+  let rate: number = 0.5;
+  if (pixelMap != undefined) {
+    pixelMap.opacity(rate).then(() => {
+      console.info('Succeeded in setting opacity.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to set opacity. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## opacitySync
 
 ```TypeScript
-opacitySync(rate: double): void
+opacitySync(rate: number): void
 ```
 
-Sets an opacity rate for this image. This API returns the result synchronously. It is invalid for YUV images. Starting from API 26.0.0, it is recommended to use {@link setOpacitySync} instead for better exception handling capabilities.
+Set the transparent rate of pixelmap.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1320,30 +685,40 @@ Sets an opacity rate for this image. This API returns the result synchronously. 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rate | double | 是 | Opacity rate. The value range is (0,1]. |
+| rate | number | 是 | The value of transparent rate. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## readAllPixelsToBuffer
+**示例：**
 
 ```TypeScript
-readAllPixelsToBuffer(dst: ArrayBuffer): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+
+async function OpacitySync(pixelMap : sendableImage.PixelMap) {
+  let rate : number = 0.5;
+  if (pixelMap != undefined) {
+    pixelMap.opacitySync(rate);
+  }
+}
+
 ```
 
-Reads all the pixel data from the PixelMap and writes the data to a buffer. The resulting data will be in the same pixel format as the PixelMap.
+## readPixels
 
-**起始版本：** 26.0.0
+```TypeScript
+readPixels(area: image.PositionArea): Promise<void>
+```
 
-**模型约束：** 此接口仅可在Stage模型下使用。
+Reads image pixelmap data in an area. This method uses a promise to return the data read.
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**起始版本：** 12
 
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1351,120 +726,50 @@ Reads all the pixel data from the PixelMap and writes the data to a buffer. The 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | 是 | The buffer to receive the pixel data from the PixelMap. |
+| area | image.PositionArea | 是 | Area from which the image pixelmap data will be read. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## readAllPixelsToBufferSync
+**示例：**
 
 ```TypeScript
-readAllPixelsToBufferSync(dst: ArrayBuffer): void
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function ReadPixels(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  if (pixelMap != undefined) {
+    pixelMap.readPixels(area).then(() => {
+      console.info('Succeeded in reading the image data in the area.'); // 符合条件则进入。
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to read the image data in the area. code is ${error.code}, message is ${error.message}`);// 不符合条件则进入。
+    })
+  }
+}
+
 ```
-
-Reads all the pixel data from the PixelMap and writes the data to a buffer. The resulting data will be in the same pixel format as the PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| dst | ArrayBuffer | 是 | The buffer to receive the pixel data from the PixelMap. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## readPixels
-
-```TypeScript
-readPixels(area: PositionArea): Promise<void>
-```
-
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API uses a promise to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link readPixelsToArea} instead for better exception handling capabilities.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area from which the pixels will be read. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-## readPixels
-
-```TypeScript
-readPixels(area: PositionArea, callback: AsyncCallback<void>): void
-```
-
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API uses an asynchronous callback to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link readPixelsToArea} instead for better exception handling capabilities.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area from which the pixels will be read. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## readPixelsSync
 
 ```TypeScript
-readPixelsSync(area: PositionArea): void
+readPixelsSync(area: image.PositionArea): void
 ```
 
-Reads the pixels in the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).region of this PixelMap object in the BGRA_8888 format and writes the data to the [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels buffer. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link readPixelsToAreaSync} instead for better exception handling capabilities.
+Reads image pixelmap data in an area.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1472,88 +777,34 @@ Reads the pixels in the area specified by [PositionArea](arkts-image-positionare
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| area | PositionArea | 是 | Area from which the pixels will be read. |
+| area | image.PositionArea | 是 | Area from which the image pixelmap data will be read. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## readPixelsToArea
+**示例：**
 
 ```TypeScript
-readPixelsToArea(area: PositionArea): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function ReadPixelsSync(pixelMap : sendableImage.PixelMap) {
+  const area : image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsSync(area);
+  }
+}
+
 ```
-
-Reads pixel data from a certain area of the PixelMap to a buffer. The resulting data will be in BGRA_8888 format.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area of the PixelMap to read the data.  Data will be read from the PixelMap and copied into PositionArea.pixels. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
-
-## readPixelsToAreaSync
-
-```TypeScript
-readPixelsToAreaSync(area: PositionArea): void
-```
-
-Reads pixel data from a certain area of the PixelMap to a buffer. The resulting data will be in BGRA_8888 format.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area of the PixelMap to read the data.  Data will be read from the PixelMap and copied into PositionArea.pixels. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
 
 ## readPixelsToBuffer
 
@@ -1561,13 +812,12 @@ Reads pixel data from a certain area of the PixelMap to a buffer. The resulting 
 readPixelsToBuffer(dst: ArrayBuffer): Promise<void>
 ```
 
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBuffer} instead for better exception handling capabilities.
+Reads image pixelmap data and writes the data to an ArrayBuffer. This method uses
+a promise to return the result.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1575,36 +825,32 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | 是 | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| dst | ArrayBuffer | 是 | A buffer to which the image pixelmap data will be written. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## readPixelsToBuffer
+**示例：**
 
 ```TypeScript
-readPixelsToBuffer(dst: ArrayBuffer, callback: AsyncCallback<void>): void
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function ReadPixelsToBuffer(pixelMap : sendableImage.PixelMap) {
+  const readBuffer: ArrayBuffer = new ArrayBuffer(96); // 96为需要创建的像素buffer大小，取值为：height * width *4。
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsToBuffer(readBuffer).then(() => {
+      console.info('Succeeded in reading image pixel data.'); // 符合条件则进入。 
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to read image pixel data. code is ${error.code}, message is ${error.message}`);// 不符合条件则进入。
+    })
+  }
+}
+
 ```
-
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBuffer} instead for better exception handling capabilities.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| dst | ArrayBuffer | 是 | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## readPixelsToBufferSync
 
@@ -1612,13 +858,11 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 readPixelsToBufferSync(dst: ArrayBuffer): void
 ```
 
-Reads the pixels of this PixelMap object based on the PixelMap's pixel format and writes the data to the buffer. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link readAllPixelsToBufferSync} instead for better exception handling capabilities.
+Reads image pixelmap data and writes the data to an ArrayBuffer.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1626,36 +870,29 @@ Reads the pixels of this PixelMap object based on the PixelMap's pixel format an
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dst | ArrayBuffer | 是 | Buffer to which the pixels will be written. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| dst | ArrayBuffer | 是 | A buffer to which the image pixelmap data will be written. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## release
+**示例：**
 
 ```TypeScript
-release(callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+
+async function ReadPixelsToBufferSync(pixelMap: sendableImage.PixelMap) {
+  const bufferSize = pixelMap.getPixelBytesNumber();
+  const readBuffer: ArrayBuffer = new ArrayBuffer(bufferSize);
+  if (pixelMap != undefined) {
+    pixelMap.readPixelsToBufferSync(readBuffer);
+  }
+}
+
 ```
-
-Releases this PixelMap instance. After the release, any attempt to access the internal data of this object will fail. This API uses an asynchronous callback to return the result. Images occupy a large amount of memory. When you finish using a PixelMap instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## release
 
@@ -1663,13 +900,11 @@ Releases this PixelMap instance. After the release, any attempt to access the in
 release(): Promise<void>
 ```
 
-Releases this PixelMap instance. After the release, any attempt to access the internal data of this object will fail. This API uses a promise to return the result. Images occupy a large amount of memory. When you finish using a PixelMap instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed. > **NOTE** > > Release occurs when an ArkTS object relinquishes control over its associated native object. The memory occupied > by the native object is reclaimed only after all managing ArkTS objects have relinquished their control.
+Releases this PixelMap object. This method uses a promise to return the result.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1677,21 +912,37 @@ Releases this PixelMap instance. After the release, any attempt to access the in
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the instance release result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sendableImage } from '@kit.ImageKit';
+
+async function Release(pixelMap: sendableImage.PixelMap) {
+  if (pixelMap != undefined) {
+    await pixelMap.release().then(() => {
+      console.info('Succeeded in releasing pixelmap object.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to release pixelmap object. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
+```
 
 ## rotate
 
 ```TypeScript
-rotate(angle: double, callback: AsyncCallback<void>): void
+rotate(angle: number): Promise<void>
 ```
 
-Rotates this image based on a given angle. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyRotate} instead for better exception handling capabilities.
+Image rotation. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1699,48 +950,44 @@ Rotates this image based on a given angle. This API uses an asynchronous callbac
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| angle | double | 是 | Angle to rotate. Unit: degrees. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## rotate
-
-```TypeScript
-rotate(angle: double): Promise<void>
-```
-
-Rotates a PixelMap based on a given angle. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyRotate} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| angle | double | 是 | Angle to rotate. Unit: degrees. |
+| angle | number | 是 | The rotation angle, in degrees. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Rotate(pixelMap : sendableImage.PixelMap) {
+  let angle: number = 90.0;
+  if (pixelMap != undefined) {
+    pixelMap.rotate(angle).then(() => {
+      console.info('Succeeded in rotating pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to rotate pixelmap. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## rotateSync
 
 ```TypeScript
-rotateSync(angle: double): void
+rotateSync(angle: number): void
 ```
 
-Rotates this image based on a given angle. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyRotateSync} instead for better exception handling capabilities.
+Image rotation.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1748,28 +995,40 @@ Rotates this image based on a given angle. This API returns the result synchrono
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| angle | double | 是 | Angle to rotate. Unit: degrees. |
+| angle | number | 是 | The rotation angle, in degrees. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function RotateSync(pixelMap : sendableImage.PixelMap) {
+  let angle : number = 90.0;
+  if (pixelMap != undefined) {
+    pixelMap.rotateSync(angle);
+  }
+}
+
+```
 
 ## scale
 
 ```TypeScript
-scale(x: double, y: double, callback: AsyncCallback<void>): void
+scale(x: number, y: number): Promise<void>
 ```
 
-Scales this image based on the scale factors of the width and height. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
+Image zoom in width and height. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1777,87 +1036,47 @@ Scales this image based on the scale factors of the width and height. This API u
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## scale
-
-```TypeScript
-scale(x: double, y: double): Promise<void>
-```
-
-Scales this image based on the scale factors of the width and height. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
+| x | number | 是 | The zoom value of width. |
+| y | number | 是 | The zoom value of height. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## scale
+**示例：**
 
 ```TypeScript
-scale(x: double, y: double, level: AntiAliasingLevel): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Scale(pixelMap : sendableImage.PixelMap) {
+  let scaleX: number = 2.0;
+  let scaleY: number = 1.0;
+  if (pixelMap != undefined) {
+    pixelMap.scale(scaleX, scaleY).then(() => {
+      console.info('Succeeded in scaling pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to scale pixelmap. code is ${err.code}, message is ${err.message}`);
+
+    })
+  }
+}
+
 ```
-
-Scales this image based on the specified anti-aliasing level and the scale factors for the width and height. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link applyScale} instead for better exception handling capabilities.
-
-**起始版本：** 12
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
-| level | AntiAliasingLevel | 是 | Anti-aliasing level. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## scaleSync
 
 ```TypeScript
-scaleSync(x: double, y: double): void
+scaleSync(x: number, y: number): void
 ```
 
-Scales this image based on the scale factors of the width and height. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyScaleSync} instead for better exception handling capabilities.
+Image zoom in width and height.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -1865,44 +1084,30 @@ Scales this image based on the scale factors of the width and height. This API r
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
+| x | number | 是 | The zoom value of width. |
+| y | number | 是 | The zoom value of height. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
 
-## scaleSync
+**示例：**
 
 ```TypeScript
-scaleSync(x: double, y: double, level: AntiAliasingLevel): void
+import { sendableImage } from '@kit.ImageKit';
+
+async function ScaleSync(pixelMap : sendableImage.PixelMap) {
+  let scaleX: number = 2.0;
+  let scaleY: number = 1.0;
+  if (pixelMap != undefined) {
+    pixelMap.scaleSync(scaleX, scaleY);
+  }
+}
+
 ```
-
-Scales this image based on the specified anti-aliasing level and the scale factors for the width and height. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link applyScaleSync} instead for better exception handling capabilities.
-
-**起始版本：** 12
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | Scale factor of the width. |
-| y | double | 是 | Scale factor of the height. |
-| level | AntiAliasingLevel | 是 | Anti-aliasing level. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
 
 ## setColorSpace
 
@@ -1910,7 +1115,12 @@ Scales this image based on the specified anti-aliasing level and the scale facto
 setColorSpace(colorSpace: colorSpaceManager.ColorSpaceManager): void
 ```
 
-Set color space of pixel map. This method is only used to set the colorspace property of pixelmap, while all pixel data remains the same after calling this method. If you want to change colorspace for all pixels, use method {@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)} or {@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager, AsyncCallback<void>)}.
+Set color space of pixelmap.
+
+This method is only used to set the colorspace property of PixelMap,
+while all pixel data remains the same after calling this method.
+If you want to change colorspace for all pixels, use method
+{@Link #applyColorSpace(colorSpaceManager.ColorSpaceManager)}.
 
 **起始版本：** 12
 
@@ -1920,212 +1130,42 @@ Set color space of pixel map. This method is only used to set the colorspace pro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| colorSpace | colorSpaceManager.ColorSpaceManager | 是 | The color space for pixel map. |
+| colorSpace | colorSpaceManager.ColorSpaceManager | 是 | The color space for pixelmap. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980111 | The image source data is incomplete. |
-| 62980115 | If the image parameter invalid. |
+| [62980111](../errorcode-image.md#62980111-图片源数据不完整) | If the operation invalid. |
+| [62980115](../errorcode-image.md#62980115-图片无效参数) | If the image parameter invalid. |
 
-## setMemoryNameSync
+**示例：**
 
 ```TypeScript
-setMemoryNameSync(name: string): void
+import { sendableImage } from '@kit.ImageKit';
+import { colorSpaceManager } from '@kit.ArkGraphics2D';
+
+async function SetColorSpace(pixelMap : sendableImage.PixelMap) {
+  let colorSpaceName = colorSpaceManager.ColorSpace.SRGB; // colorSpaceManager.ColorSpace该对象当前仅支持2in1/PC设备使用。
+  let csm: colorSpaceManager.ColorSpaceManager = colorSpaceManager.create(colorSpaceName);
+  if (pixelMap != undefined) {
+    pixelMap.setColorSpace(csm);
+  }
+}
+
 ```
-
-Sets a memory name for this PixelMap.
-
-**起始版本：** 13
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| name | string | 是 | Memory name, which can be set only for a PixelMap with the DMA or ASHMEM memory format.  The name length for DMA memory settings should be within the range of 1 to 255 bytes. For ASHMEM memory  settings, the name length should be within the range of 1 to 244 bytes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.The length of the input parameter is too  long.  2.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980286 | Memory format not supported. |
-
-## setMetadata
-
-```TypeScript
-setMetadata(key: HdrMetadataKey, value: HdrMetadataValue): Promise<void>
-```
-
-Sets the value for the metadata with a given key in this PixelMap. This API uses a promise to return the result.
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| key | HdrMetadataKey | 是 | Key of the HDR metadata. |
-| value | HdrMetadataValue | 是 | Value of the metadata. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource unavailable. |
-| 62980173 | The DMA memory does not exist. |
-| 62980302 | Memory copy failed. Possibly caused by invalid metadata value. |
-
-## setOpacity
-
-```TypeScript
-setOpacity(value: double): Promise<void>
-```
-
-Sets opacity of the PixelMap. Every pixel will be set to the same opacity value.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| value | double | 是 | The target opacity value to be set. Unit: Percentage, Value range: (0,1].  The valid range is (0.0, 1.0] where 1.0 is fully opaque and becoming transparent as it approaches 0.0. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. Possible cause: The specified value is out of range. |
-| 7600207 | Unsupported data format. Possible cause: Alpha type is not supported. |
-
-## setOpacitySync
-
-```TypeScript
-setOpacitySync(value: double): void
-```
-
-Sets opacity of the PixelMap. Every pixel will be set to the same opacity value.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| value | double | 是 | The target opacity value to be set. Unit: Percentage, Value range: (0,1].  The valid range is (0.0, 1.0] where 1.0 is fully opaque and becoming transparent as it approaches 0.0. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is locked. |
-| 7600206 | Invalid parameter. Possible cause: The specified value is out of range. |
-| 7600207 | Unsupported data format. Possible cause: Alpha type is not supported. |
-
-## setTransferDetached
-
-```TypeScript
-setTransferDetached(detached: boolean): void
-```
-
-Sets whether to detach from the original thread when this PixelMap is transmitted across threads. This API applies to the scenario where the PixelMap needs to be released immediately.
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| detached | boolean | 是 | Whether to detach from the original thread. true to detach, false  otherwise. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 501 | Resource Unavailable. |
-
-## toSdr
-
-```TypeScript
-toSdr(): Promise<void>
-```
-
-Convert pixelmap to standard dynamic range.
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an error message is returned. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 62980137 | Invalid image operation. |
 
 ## translate
 
 ```TypeScript
-translate(x: double, y: double, callback: AsyncCallback<void>): void
+translate(x: number, y: number): Promise<void>
 ```
 
-Translates this image based on given coordinates. This API uses an asynchronous callback to return the result. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslate} instead for better exception handling capabilities.
+Image position transformation. This method uses a promise to return the result.
 
-**起始版本：** 9
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2133,50 +1173,46 @@ Translates this image based on given coordinates. This API uses an asynchronous 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | double | 是 | X coordinate to translate, in px. |
-| y | double | 是 | Y coordinate to translate, in px. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## translate
-
-```TypeScript
-translate(x: double, y: double): Promise<void>
-```
-
-Translates a PixelMap based on given coordinates. This API uses a promise to return the result. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslate} instead for better exception handling capabilities.
-
-**起始版本：** 9
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| x | double | 是 | X coordinate to translate, in px. |
-| y | double | 是 | Y coordinate to translate, in px. |
+| x | number | 是 | The position value of width, in px. |
+| y | number | 是 | The position value of height, in px. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function Translate(pixelMap : sendableImage.PixelMap) {
+  let translateX: number = 50.0;
+  let translateY: number = 10.0;
+  if (pixelMap != undefined) {
+    pixelMap.translate(translateX, translateY).then(() => {
+      console.info('Succeeded in translating pixelmap.');
+    }).catch((err: BusinessError) => {
+      console.error(`Failed to translate pixelmap. code is ${err.code}, message is ${err.message}`);
+    })
+  }
+}
+
+```
 
 ## translateSync
 
 ```TypeScript
-translateSync(x: double, y: double): void
+translateSync(x: number, y: number): void
 ```
 
-Translates this image based on given coordinates. This API returns the result synchronously. The size of the translated image is changed to width+X and height+Y. It is recommended that the new width and height not exceed the width and height of the screen. Starting from API 26.0.0, it is recommended to use {@link applyTranslateSync} instead for better exception handling capabilities.
+Image position transformation.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2184,15 +1220,30 @@ Translates this image based on given coordinates. This API returns the result sy
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | double | 是 | X coordinate to translate, in px. |
-| y | double | 是 | Y coordinate to translate, in px. |
+| x | number | 是 | The position value of width, in px. |
+| y | number | 是 | The position value of height, in px. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function TranslateSync(pixelMap : sendableImage.PixelMap) {
+  let translateX : number = 50.0;
+  let translateY : number = 10.0;
+  if (pixelMap != undefined) {
+    pixelMap.translateSync(translateX, translateY);
+  }
+}
+
+```
 
 ## unmarshalling
 
@@ -2200,9 +1251,9 @@ Translates this image based on given coordinates. This API returns the result sy
 unmarshalling(sequence: rpc.MessageSequence): Promise<PixelMap>
 ```
 
-Unmarshals a MessageSequence object to obtain a PixelMap object. To create a PixelMap object in synchronous mode, use [createPixelMapFromParcel](arkts-image-createpixelmapfromparcel-f.md#createPixelMapFromParcel-1).
+Creates a PixelMap object based on MessageSequence parameter.
 
-**起始版本：** 10
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2210,97 +1261,82 @@ Unmarshals a MessageSequence object to obtain a PixelMap object. To create a Pix
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | 是 | MessageSequence object that stores the PixelMap information. |
+| sequence | rpc.MessageSequence | 是 | rpc.MessageSequence parameter. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PixelMap> | Promise used to return the PixelMap object. |
+| Promise&lt;PixelMap&gt; | A Promise instance used to return the PixelMap object. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980115 | Invalid image parameter. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
-| 62980096 | The operation failed. Possible cause: 1.Image upload exception.  2. Decoding process exception. 3. Insufficient memory. |
+| [62980115](../errorcode-image.md#62980115-图片无效参数) | Invalid image parameter. |
+| [62980097](../errorcode-image.md#62980097-pixelmap序列化传输失败) | IPC error. |
+| [62980096](../errorcode-image.md#62980096-操作失败) | The operation failed. |
 
-## writeAllPixelsFromBuffer
+**示例：**
 
 ```TypeScript
-writeAllPixelsFromBuffer(src: ArrayBuffer): Promise<void>
+// EntryAbility.ets
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { rpc } from '@kit.IPCKit';
+
+class MySequence implements rpc.Parcelable {
+  pixel_map: sendableImage.PixelMap;
+  constructor(conPixelMap: sendableImage.PixelMap) {
+    this.pixel_map = conPixelMap;
+  }
+  marshalling(messageSequence: rpc.MessageSequence) {
+    this.pixel_map.marshalling(messageSequence);
+    console.info('Succeeded in marshalling a PixelMap.');
+    return true;
+  }
+  unmarshalling(messageSequence: rpc.MessageSequence) {
+    sendableImage.createPixelMap(new ArrayBuffer(96), {size: { height:4, width: 6}}).then((pixelParcel : sendableImage.PixelMap) => {
+      pixelParcel.unmarshalling(messageSequence).then(async (pixelMap : sendableImage.PixelMap) => {
+        this.pixel_map = pixelMap;
+        pixelMap.getImageInfo().then((imageInfo : image.ImageInfo) => {
+          console.info(`Succeeded in unmarshalling a PixelMap. Height: ${imageInfo.size.height}, width: ${imageInfo.size.width}.`);
+        })
+      })
+    });
+    return true;
+  }
+}
+
+async function Unmarshalling() {
+  const color: ArrayBuffer = new ArrayBuffer(96);
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = 0x80;
+  }
+  let opts: image.InitializationOptions = {
+    editable: true,
+    pixelFormat: 4,
+    size: { height: 4, width: 6 },
+    alphaType: 3
+  }
+  let pixelMap: sendableImage.PixelMap | undefined = undefined;
+  await sendableImage.createPixelMap(color, opts).then((srcPixelMap : sendableImage.PixelMap) => {
+    pixelMap = srcPixelMap;
+  })
+  if (pixelMap != undefined) {
+    // 序列化。
+    let parcelable: MySequence = new MySequence(pixelMap);
+    let data : rpc.MessageSequence = rpc.MessageSequence.create();
+    data.writeParcelable(parcelable);
+
+    // 反序列化rpc获取到data。
+    let ret : MySequence = new MySequence(pixelMap);
+    data.readParcelable(ret);
+  }
+}
+
 ```
-
-Reads the pixel data from a buffer and writes the data to the PixelMap. The source data must be in the same pixel format as the PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | 是 | The buffer that contains pixel data to be written to the PixelMap. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
-
-## writeAllPixelsFromBufferSync
-
-```TypeScript
-writeAllPixelsFromBufferSync(src: ArrayBuffer): void
-```
-
-Reads the pixel data from a buffer and writes the data to the PixelMap. The source data must be in the same pixel format as the PixelMap.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | 是 | The buffer that contains pixel data to be written to the PixelMap. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter. Possible cause: Size of the buffer is too small. |
-| 7600302 | Failed to copy the memory. |
 
 ## writeBufferToPixels
 
@@ -2308,13 +1344,12 @@ Reads the pixel data from a buffer and writes the data to the PixelMap. The sour
 writeBufferToPixels(src: ArrayBuffer): Promise<void>
 ```
 
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API uses a promise to return the result. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBuffer} instead for better exception handling capabilities.
+Reads image data in an ArrayBuffer and writes the data to a PixelMap object. This method
+uses a promise to return the result.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2322,36 +1357,36 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | ArrayBuffer | 是 | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| src | ArrayBuffer | 是 | A buffer from which the image data will be read. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## writeBufferToPixels
+**示例：**
 
 ```TypeScript
-writeBufferToPixels(src: ArrayBuffer, callback: AsyncCallback<void>): void
+import { sendableImage } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function WriteBufferToPixels(pixelMap : sendableImage.PixelMap) {
+  const color: ArrayBuffer = new ArrayBuffer(96); // 96为需要创建的像素buffer大小，取值为：height * width *4。
+  let bufferArr: Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writeBufferToPixels(color).then(() => {
+      console.info("Succeeded in writing data from a buffer to a PixelMap.");
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to write data from a buffer to a PixelMap. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API uses an asynchronous callback to return the result. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBuffer} instead for better exception handling capabilities.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| src | ArrayBuffer | 是 | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the pixels in the buffer are  successfully written to the PixelMap, err is undefined; otherwise, err is an error object. |
 
 ## writeBufferToPixelsSync
 
@@ -2359,11 +1394,11 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 writeBufferToPixelsSync(src: ArrayBuffer): void
 ```
 
-Reads the pixels in the buffer based on the PixelMap's pixel format and writes the data to this PixelMap object. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link writeAllPixelsFromBufferSync} instead for better exception handling capabilities.
+Reads image data in an ArrayBuffer and writes the data to a PixelMap object.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2371,28 +1406,46 @@ Reads the pixels in the buffer based on the PixelMap's pixel format and writes t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | ArrayBuffer | 是 | Buffer from which the pixels are read. The buffer size is obtained by calling  [getPixelBytesNumber]image.PixelMap.getPixelBytesNumber. |
+| src | ArrayBuffer | 是 | A buffer from which the image data will be read. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+
+async function WriteBufferToPixelsSync(pixelMap: sendableImage.PixelMap) {
+  const bufferSize = pixelMap.getPixelBytesNumber();
+  const color : ArrayBuffer = new ArrayBuffer(bufferSize);
+  let bufferArr : Uint8Array = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writeBufferToPixelsSync(color);
+  }
+}
+
+```
 
 ## writePixels
 
 ```TypeScript
-writePixels(area: PositionArea): Promise<void>
+writePixels(area: image.PositionArea): Promise<void>
 ```
 
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API uses a promise to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link writePixelsFromArea} instead for better exception handling capabilities.
+Writes image pixelmap data to the specified area. This method uses a promise to return
+the operation result.
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2400,126 +1453,54 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| area | PositionArea | 是 | Area to which the pixels will be written. |
+| area | image.PositionArea | 是 | Area to which the image pixelmap data will be written. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
-## writePixels
-
-```TypeScript
-writePixels(area: PositionArea, callback: AsyncCallback<void>): void
-```
-
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API uses an asynchronous callback to return the result. You can use a formula to calculate the size of the memory to be applied for based on **PositionArea**. YUV region calculation formula: region to read (region.size{width * height}) * 1.5 (1 * Y component + 0.25 * U component + 0.25 * V component) RGBA region calculation formula: region to read (region.size{width * height}) * 4 (1 * R component + 1 * G component + 1 * B component + 1 * A component) Starting from API 26.0.0, it is recommended to use {@link writePixelsFromArea} instead for better exception handling capabilities.
-
-**起始版本：** 7
-
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area to which the pixels will be written. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
-
-## writePixelsFromArea
+**示例：**
 
 ```TypeScript
-writePixelsFromArea(area: PositionArea): Promise<void>
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function WritePixels(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  let bufferArr: Uint8Array = new Uint8Array(area.pixels);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writePixels(area).then(() => {
+      console.info('Succeeded to write pixelmap into the specified area.');
+    }).catch((error: BusinessError) => {
+      console.error(`Failed to write pixelmap into the specified area. code is ${error.code}, message is ${error.message}`);
+    })
+  }
+}
+
 ```
-
-Writes data from a buffer to a certain area of the PixelMap. The source data must be in BGRA_8888 format.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area of the PixelMap to write the data.  Data will be copied from PositionArea.pixels to the PixelMap. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | A Promise that resolves when the operation completes. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
-
-## writePixelsFromAreaSync
-
-```TypeScript
-writePixelsFromAreaSync(area: PositionArea): void
-```
-
-Writes data from a buffer to a certain area of the PixelMap. The source data must be in BGRA_8888 format.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| area | PositionArea | 是 | Area of the PixelMap to write the data.  Data will be copied from PositionArea.pixels to the PixelMap. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 7600104 | Failed to get image data.  Possible cause: Internal data is corrupted. Please check the logs for detailed information. |
-| 7600105 | The PixelMap has been released. |
-| 7600106 | The PixelMap has been passed to another thread. |
-| 7600201 | Unsupported operation because the PixelMap is not editable or is locked. |
-| 7600206 | Invalid parameter.  Possible causes: 1. PositionArea.pixels is too small. 2. PositionArea.region is out of range. |
-| 7600302 | Failed to copy the memory. |
 
 ## writePixelsSync
 
 ```TypeScript
-writePixelsSync(area: PositionArea): void
+writePixelsSync(area: image.PositionArea): void
 ```
 
-Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionArea).region buffer in the BGRA_8888 format and writes the data to the area specified by [PositionArea](arkts-image-positionarea-i.md#PositionArea).pixels in this PixelMap object. This API returns the result synchronously. Starting from API 26.0.0, it is recommended to use {@link writePixelsFromAreaSync} instead for better exception handling capabilities.
+Writes image pixelmap data to the specified area.
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
-
-**卡片能力：** 该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2527,14 +1508,38 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| area | PositionArea | 是 | Area to which the pixels will be written. |
+| area | image.PositionArea | 是 | Area to which the image pixelmap data will be written. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 501 | Resource Unavailable. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [501](../errorcode-image.md#501-无法调用接口) | Resource Unavailable. |
+
+**示例：**
+
+```TypeScript
+import { sendableImage } from '@kit.ImageKit';
+import { image } from '@kit.ImageKit';
+
+async function WritePixelsSync(pixelMap : sendableImage.PixelMap) {
+  const area: image.PositionArea = {
+    pixels: new ArrayBuffer(8),
+    offset: 0,
+    stride: 8,
+    region: { size: { height: 1, width: 2 }, x: 0, y: 0 }
+  };
+  let bufferArr: Uint8Array = new Uint8Array(area.pixels);
+  for (let i = 0; i < bufferArr.length; i++) {
+    bufferArr[i] = i + 1;
+  }
+  if (pixelMap != undefined) {
+    pixelMap.writePixelsSync(area);
+  }
+}
+
+```
 
 ## isEditable
 
@@ -2542,15 +1547,13 @@ Reads the pixels in the [PositionArea](arkts-image-positionarea-i.md#PositionAre
 readonly isEditable: boolean
 ```
 
-Whether the image pixels are editable. **true** if editable, **false** otherwise. The value **false** provides better image rendering and transmission performance.<br> This API can be used in atomic services since API version 11.<br> This API can be used in ArkTS widgets since API version 12.
+Whether the image pixelmap can be edited.
 
 **类型：** boolean
 
-**起始版本：** 7
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
@@ -2560,11 +1563,11 @@ Whether the image pixels are editable. **true** if editable, **false** otherwise
 readonly isStrideAlignment: boolean
 ```
 
-Whether the row data of the image is memory aligned. The value **true** means that the row data is memory-aligned , and there may be blank bytes padded at the end of each row to meet alignment requirements. The value **false** means that the row data is not memory-aligned, and rows are packed contiguously with no padding bytes at the end.
+Is it stride Alignment
 
 **类型：** boolean
 
-**起始版本：** 11
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 

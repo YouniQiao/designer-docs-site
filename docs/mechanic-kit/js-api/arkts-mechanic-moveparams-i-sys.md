@@ -11,7 +11,7 @@ Parameters for moving the target.
 ## Modules to Import
 
 ```TypeScript
-import { mechanicManager } from '@ohos.distributedHardware.mechanicManager';
+import { mechanicManager } from '@kit.MechanicKit';
 ```
 
 ## angle
@@ -36,7 +36,8 @@ Turning angle, unit degree.
 distance: number
 ```
 
-Moving distance, unit cm. The value should be an integer.
+Moving distance, unit cm.
+The value should be an integer.
 
 **Type:** number
 

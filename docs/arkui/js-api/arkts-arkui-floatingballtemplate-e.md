@@ -12,7 +12,8 @@ Enumerates the types of the floating ball template.
 STATIC = 1
 ```
 
-Static layout, which provides a title and an icon. When this template is used, the **title** and **icon** parameters in **FloatingBallParams** must be passed.
+Static layout, which provides a title and an icon. When this template is used, the **title** and **icon**
+parameters in **FloatingBallParams** must be passed.
 
 **Since:** 20
 
@@ -24,7 +25,8 @@ Static layout, which provides a title and an icon. When this template is used, t
 NORMAL = 2
 ```
 
-Standard text layout, which provides a title and content. When this template is used, the **title** parameter in **FloatingBallParams** must be passed.
+Standard text layout, which provides a title and content. When this template is used, the **title** parameter in
+**FloatingBallParams** must be passed.
 
 **Since:** 20
 
@@ -36,7 +38,8 @@ Standard text layout, which provides a title and content. When this template is 
 EMPHATIC = 3
 ```
 
-Emphasized text layout, which provides an icon, a title, and content. When this template is used, the **title** parameter in **FloatingBallParams** must be passed.
+Emphasized text layout, which provides an icon, a title, and content. When this template is used, the **title**
+parameter in **FloatingBallParams** must be passed.
 
 **Since:** 20
 
@@ -48,7 +51,8 @@ Emphasized text layout, which provides an icon, a title, and content. When this 
 SIMPLE = 4
 ```
 
-Plain text layout, which provides only a title. When this template is used, the **title** parameter in **FloatingBallParams** must be passed.
+Plain text layout, which provides only a title. When this template is used, the **title** parameter in
+**FloatingBallParams** must be passed.
 
 **Since:** 20
 

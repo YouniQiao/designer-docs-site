@@ -2,6 +2,7 @@
 
 The **SymbolGlyph** component represents a symbol glyph.<!--RP1--><!--RP1End-->
 
+
 ## SymbolGlyph
 
 ```TypeScript

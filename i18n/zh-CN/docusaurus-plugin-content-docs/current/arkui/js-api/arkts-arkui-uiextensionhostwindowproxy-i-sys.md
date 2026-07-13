@@ -41,8 +41,8 @@ createSubWindowWithOptions(name: string, subWindowOptions: window.SubWindowOptio
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal. Possible causes:1. The window is not created or destroyed.2. Internal task error.3. The subWindow has been created and can not be created again.4. It is not allowed to create non-secure window when secure extension exists. |
 | 1300035 | Creating a subwindow is not allowed in the current context. Possible cause:1. An AgentUIExtensionAbility cannot create a subwindow. |
 
@@ -101,7 +101,8 @@ createSubWindowWithOptions(name: string, subWindowConfig: window.SubWindowOption
         followCreatorLifecycle: boolean): Promise<window.Window>
 ```
 
-创建该UIExtensionHostWindowProxy实例下的子窗口，可通过设置followCreatorLifecycle，决定子窗是否跟随组件（EmbeddedComponent或 UIExtensionComponent）的生命周期，使用Promise异步回调。
+创建该UIExtensionHostWindowProxy实例下的子窗口，可通过设置followCreatorLifecycle，决定子窗是否跟随组件（EmbeddedComponent或
+UIExtensionComponent）的生命周期，使用Promise异步回调。
 
 **起始版本：** 22
 
@@ -129,7 +130,7 @@ createSubWindowWithOptions(name: string, subWindowConfig: window.SubWindowOption
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal. Possible causes:1. The window is not created or destroyed.2. Internal task error.3. The subWindow has been created and can not be created again.4. It is not allowed to create non-secure window when secure extension exists. |
 | 1300035 | Creating a subwindow is not allowed in the current context. Possible cause:1. An AgentUIExtensionAbility cannot create a subwindow. |
 
@@ -213,7 +214,7 @@ getWindowAvoidArea(type: window.AvoidAreaType): window.AvoidArea
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. |
 
 **示例：**
 
@@ -240,7 +241,18 @@ export default class EntryAbility extends UIExtensionAbility {
 hideNonSecureWindows(shouldHide: boolean): Promise<void>
 ```
 
-设置是否隐藏不安全窗口，使用Promise异步回调。 > **说明：** > > - 不安全窗口是指可能遮挡[EmbeddedComponent](./@internal/component/ets/embedded_component)（或 > [UIExtensionComponent](./@internal/component/ets/ui_extension_component)）组件的窗口，如全局悬浮窗、宿主子窗口和宿主创建的Dialog窗口 > （不包括系统应用创建的上述类型窗口）。 > > - 当EmbeddedComponent（或UIExtensionComponent）组件被用来显示敏感操作提示内容时，可以选择隐藏不安全窗口，保护敏感操作提示内容不会被遮挡。当EmbeddedComponent（或 > UIExtensionComponent）组件不显示或销毁时，不安全窗口会重新显示。 > > - 针对PC/2in1设备，当调用hideNonSecureWindows(true)时，不安全窗口中的全局悬浮窗不会被隐藏。
+设置是否隐藏不安全窗口，使用Promise异步回调。
+
+> **说明：**
+>
+> - 不安全窗口是指可能遮挡[EmbeddedComponent](./@internal/component/ets/embedded_component)（或
+> [UIExtensionComponent](./@internal/component/ets/ui_extension_component)）组件的窗口，如全局悬浮窗、宿主子窗口和宿主创建的Dialog窗口
+> （不包括系统应用创建的上述类型窗口）。
+>
+> - 当EmbeddedComponent（或UIExtensionComponent）组件被用来显示敏感操作提示内容时，可以选择隐藏不安全窗口，保护敏感操作提示内容不会被遮挡。当EmbeddedComponent（或
+> UIExtensionComponent）组件不显示或销毁时，不安全窗口会重新显示。
+>
+> - 针对PC/2in1设备，当调用hideNonSecureWindows(true)时，不安全窗口中的全局悬浮窗不会被隐藏。
 
 **起始版本：** 11
 
@@ -269,10 +281,10 @@ hideNonSecureWindows(shouldHide: boolean): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12 |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
-| [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. Permission denied. Interface caller does not have permission "ohos.permission.ALLOW_SHOW_NON_SECURE_WINDOWS".2. The UIExtension window proxy is abnormal.<br>**适用版本：** 12 |
-| [1300003](../errorcode-window.md#1300003-系统服务工作异常) | This window manager service works abnormally.<br>**适用版本：** 12 |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12+ |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. Permission denied. Interface caller does not have permission "ohos.permission.ALLOW_SHOW_NON_SECURE_WINDOWS".2. The UIExtension window proxy is abnormal.<br>**适用版本：** 12+ |
+| [1300003](../errorcode-window.md#1300003-系统服务工作异常) | This window manager service works abnormally.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -311,7 +323,13 @@ export default class EntryAbility extends UIExtensionAbility {
 hidePrivacyContentForHost(shouldHide: boolean): Promise<void>
 ```
 
-设置UIExtension组件在非系统截图时的隐私内容保护开关，使用Promise异步回调。 > **说明：** > > 开启截图隐私内容保护后，使用窗口截图[window.snapshot](../../../../reference/apis-arkui/arkts-apis-window-Window.md#snapshot9)或者组件截图 > [UIContext.getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12) > 将无法截取到当前组件的内容（不包括该组件下创建的子窗）。
+设置UIExtension组件在非系统截图时的隐私内容保护开关，使用Promise异步回调。
+
+> **说明：**
+>
+> 开启截图隐私内容保护后，使用窗口截图[window.snapshot](../../../../reference/apis-arkui/arkts-apis-window-Window.md#snapshot9)或者组件截图
+> [UIContext.getComponentSnapshot](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getcomponentsnapshot12)
+> 将无法截取到当前组件的内容（不包括该组件下创建的子窗）。
 
 **起始版本：** 13
 
@@ -338,7 +356,7 @@ hidePrivacyContentForHost(shouldHide: boolean): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. The UIExtension window proxy is abnormal.2. Not the UIExtensionAbility process calling. |
 
 **示例：**
@@ -389,7 +407,7 @@ off(type: 'avoidAreaChange', callback?: Callback<{ type: window.AvoidAreaType, a
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. The listening type is not supported.2. The listening type is not registered.3. The listener has not been registered.4. The UIExtension window proxy is abnormal. |
 
 **示例：**
@@ -435,7 +453,7 @@ off(type: 'windowSizeChange', callback?: Callback<window.Size>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. The listening type is not supported.2. The listening type is not registered.3. The listener has not been registered.4. The UIExtension window proxy is abnormal. |
 
 **示例：**
@@ -481,7 +499,7 @@ on(type: 'avoidAreaChange', callback: Callback<{ type: window.AvoidAreaType, are
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. The listening type is not supported.2. The listener has been registered.3. The UIExtension window proxy is abnormal. |
 
 **示例：**
@@ -529,7 +547,7 @@ on(type: 'windowSizeChange', callback: Callback<window.Size>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameters types.3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | Abnormal state. Possible causes:1. The listening type is not supported.2. The listener has been registered.3. The UIExtension window proxy is abnormal. |
 
 **示例：**
@@ -556,7 +574,11 @@ export default class EntryAbility extends UIExtensionAbility {
 setWaterMarkFlag(enable: boolean): Promise<void>
 ```
 
-为当前窗口添加或删除安全水印标志，使用Promise异步回调。 > **说明：** > > 添加安全水印标志后，窗口在前台时会将当前全屏幕覆盖水印。全屏、悬浮窗、分屏等场景下只要有添加了安全水印标志的窗口在前台，就会显示全屏水印。
+为当前窗口添加或删除安全水印标志，使用Promise异步回调。
+
+> **说明：**
+>
+> 添加安全水印标志后，窗口在前台时会将当前全屏幕覆盖水印。全屏、悬浮窗、分屏等场景下只要有添加了安全水印标志的窗口在前台，就会显示全屏水印。
 
 **起始版本：** 12
 
@@ -622,7 +644,12 @@ export default class EntryAbility extends UIExtensionAbility {
 properties: UIExtensionHostWindowProxyProperties
 ```
 
-UIExtensionComponent组件以及宿主窗口的信息。 **约束：** 由于架构约束，不建议在 [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1)阶段同步获取该值，建议在收到 [on('windowSizeChange')](arkts-arkui-uiextensionhostwindowproxy-i-sys.md#on-2) 回调之后获取。
+UIExtensionComponent组件以及宿主窗口的信息。
+
+**约束：** 由于架构约束，不建议在
+[onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1)阶段同步获取该值，建议在收到
+[on('windowSizeChange')](arkts-arkui-uiextensionhostwindowproxy-i-sys.md#on-2)
+回调之后获取。
 
 **类型：** UIExtensionHostWindowProxyProperties
 

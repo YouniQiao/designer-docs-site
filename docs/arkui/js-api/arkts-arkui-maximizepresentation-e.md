@@ -40,7 +40,8 @@ The window, when maximized, exits full-screen mode if it is set to full-screen.
 ENTER_IMMERSIVE = 2
 ```
 
-The window, when maximized, transitions into the full-screen mode, and the window title bar and dock bar are displayed when the cursor hovers over the hot zone.
+The window, when maximized, transitions into the full-screen mode, and the window title bar and dock bar are
+displayed when the cursor hovers over the hot zone.
 
 **Since:** 12
 
@@ -54,7 +55,8 @@ The window, when maximized, transitions into the full-screen mode, and the windo
 ENTER_IMMERSIVE_DISABLE_TITLE_AND_DOCK_HOVER = 3
 ```
 
-The window, when maximized, transitions into the full-screen mode, and the window title bar and dock bar are not displayed when the cursor hovers over the hot zone.
+The window, when maximized, transitions into the full-screen mode, and the window title bar and dock bar are not
+displayed when the cursor hovers over the hot zone.
 
 **Since:** 14
 

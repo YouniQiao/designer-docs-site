@@ -1,6 +1,7 @@
 # KeyItem
 
-Enumerates other key information. This refers to the information of other keys that have been pressed when the current [KeyCode](arkts-mdm-keycode-e.md#keycode) event occurs.
+Enumerates other key information. This refers to the information of other keys that have been pressed when the
+current [KeyCode](arkts-mdm-keycode-e.md) event occurs.
 
 **Since:** 23
 
@@ -9,7 +10,7 @@ Enumerates other key information. This refers to the information of other keys t
 ## Modules to Import
 
 ```TypeScript
-import { systemManager } from '@ohos.enterprise.systemManager';
+import { systemManager } from '@kit.MDMKit';
 ```
 
 ## downTime
@@ -18,7 +19,9 @@ import { systemManager } from '@ohos.enterprise.systemManager';
 downTime: number
 ```
 
-Time when the key action occurs. The value is a microsecond-level timestamp after the system is powered on. Navigation keys do not support combination expansion, so their occurrence time is displayed as 0. The value range is all integers.
+Time when the key action occurs. The value is a microsecond-level timestamp after the system is powered on.
+Navigation keys do not support combination expansion, so their occurrence time is displayed as 0.
+The value range is all integers.
 
 **Type:** number
 

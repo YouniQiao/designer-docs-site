@@ -1,6 +1,14 @@
 # WebDataBase
 
-Web组件数据库管理对象。 > **说明：** > > - 本Class首批接口从API version 9开始支持。 > > - 示例效果请以真机运行为准。 > > - 目前调用WebDataBase下的方法，都需要先加载Web组件。
+Web组件数据库管理对象。
+
+> **说明：**
+>
+> - 本Class首批接口从API version 9开始支持。
+>
+> - 示例效果请以真机运行为准。
+>
+> - 目前调用WebDataBase下的方法，都需要先加载Web组件。
 
 **起始版本：** 9
 
@@ -71,7 +79,7 @@ static getHttpAuthCredentials(host: string, realm: string): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
 ## saveHttpAuthCredentials
 
@@ -100,5 +108,5 @@ static saveHttpAuthCredentials(host: string, realm: string, username: string, pa
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 

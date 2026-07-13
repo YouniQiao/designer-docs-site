@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getGraphicsMemory
@@ -12,7 +12,8 @@ import { hidebug } from '@ohos.hidebug';
 function getGraphicsMemory(): Promise<number>
 ```
 
-Obtains the total GPU memory size (**gl** + **graph**) of the application. This API uses a promise to return the result.
+Obtains the total GPU memory size (**gl** + **graph**) of the application. This API uses a promise to return the
+result.
 
 **Since:** 14
 

@@ -4,7 +4,10 @@
 type OnCreateAISession = (id: string, params: string, result: OnAISessionCallback) => boolean
 ```
 
-Triggered when an AI session is created. Allows custom model initialization and result handling. Return `true` to bypass the default system behavior; return `false` to proceed with the default logic.
+Triggered when an AI session is created.
+Allows custom model initialization and result handling.
+Return `true` to bypass the default system behavior;
+return `false` to proceed with the default logic.
 
 **Since:** 26.0.0
 

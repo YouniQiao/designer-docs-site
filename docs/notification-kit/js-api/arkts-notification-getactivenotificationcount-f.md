@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## getActiveNotificationCount
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function getActiveNotificationCount(callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of active notifications of this application. This API uses an asynchronous callback to return the result.
+Obtains the number of active notifications of this application. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 

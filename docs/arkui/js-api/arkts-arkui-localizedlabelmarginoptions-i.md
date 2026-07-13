@@ -9,7 +9,7 @@ Defines the spacing between the localized text and the left and right icons.
 ## Modules to Import
 
 ```TypeScript
-import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@ohos.arkui.advanced.Chip';
+import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@kit.ArkUI';
 ```
 
 ## end
@@ -18,7 +18,19 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 end?: LengthMetrics
 ```
 
-Spacing between the text and the right icon. This parameter cannot be set in percentage. Default value: When **size** is set to **ChipSize.SMALL**, the default value of **end** is as follows: `LengthMetrics.resource($r('sys.float.chip_small_text_margin'))` When **size** is set to **ChipSize.NORMAL**, the default value of **end** is as follows: `LengthMetrics.resource($r('sys.float.chip_normal_text_margin'))` If the value is **undefined**, the default value is used.
+Spacing between the text and the right icon. This parameter cannot be set in percentage.
+
+Default value:
+
+When **size** is set to **ChipSize.SMALL**, the default value of **end** is as follows:
+
+`LengthMetrics.resource($r('sys.float.chip_small_text_margin'))`
+
+When **size** is set to **ChipSize.NORMAL**, the default value of **end** is as follows:
+
+`LengthMetrics.resource($r('sys.float.chip_normal_text_margin'))`
+
+If the value is **undefined**, the default value is used.
 
 **Type:** LengthMetrics
 
@@ -36,7 +48,19 @@ Spacing between the text and the right icon. This parameter cannot be set in per
 start?: LengthMetrics
 ```
 
-Spacing between the text and the left icon. This parameter cannot be set in percentage. Default value: When **size** is set to **ChipSize.SMALL**, the default value of **start** is as follows: `LengthMetrics.resource($r('sys.float.chip_small_text_margin'))` When **size** is set to **ChipSize.NORMAL**, the default value of **start** is as follows: `LengthMetrics.resource($r('sys.float.chip_normal_text_margin'))` If the value is **undefined**, the default value is used.
+Spacing between the text and the left icon. This parameter cannot be set in percentage.
+
+Default value:
+
+When **size** is set to **ChipSize.SMALL**, the default value of **start** is as follows:
+
+`LengthMetrics.resource($r('sys.float.chip_small_text_margin'))`
+
+When **size** is set to **ChipSize.NORMAL**, the default value of **start** is as follows:
+
+`LengthMetrics.resource($r('sys.float.chip_normal_text_margin'))`
+
+If the value is **undefined**, the default value is used.
 
 **Type:** LengthMetrics
 

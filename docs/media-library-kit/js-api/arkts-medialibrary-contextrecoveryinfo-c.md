@@ -1,6 +1,7 @@
 # ContextRecoveryInfo
 
-Context information of the exit status of PhotoPicker, which can be used for on-site recovery of PhotoPicker next time.
+Context information of the exit status of PhotoPicker,
+which can be used for on-site recovery of PhotoPicker next time.
 
 **Since:** 21
 
@@ -9,7 +10,7 @@ Context information of the exit status of PhotoPicker, which can be used for on-
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## albumUri
@@ -18,7 +19,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 albumUri: string
 ```
 
-The album URI from which the user exited during the last selection. The default value is empty string.
+The album URI from which the user exited during the last selection.
+The default value is empty string.
 
 **Type:** string
 
@@ -34,7 +36,8 @@ The album URI from which the user exited during the last selection. The default 
 displayName: string
 ```
 
-Filename of the first fully visible photo in the last selection interface. The default value is empty string.
+Filename of the first fully visible photo in the last selection interface.
+The default value is empty string.
 
 **Type:** string
 
@@ -50,7 +53,9 @@ Filename of the first fully visible photo in the last selection interface. The d
 fileSize?: number
 ```
 
-size of the first fully visible photo in the last selection interface. the default value is 0. Unit: Byte, The value must be an integer greater than or equal to 0.
+size of the first fully visible photo in the last selection interface.
+the default value is 0.
+Unit: Byte, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 
@@ -68,7 +73,8 @@ size of the first fully visible photo in the last selection interface. the defau
 gridLevel?: GridLevel
 ```
 
-Enum value of the grid level by the user during the last selection. This information is only included when gridPinchModeType is configured as FULL_FUNCTION_GRID.
+Enum value of the grid level by the user during the last selection.
+This information is only included when gridPinchModeType is configured as FULL_FUNCTION_GRID.
 
 **Type:** GridLevel
 
@@ -86,7 +92,8 @@ Enum value of the grid level by the user during the last selection. This informa
 recommendationType: number
 ```
 
-Enum value of the recommendation content set by the user during the last selection (see `RecommendationType`). The default value is 0.
+Enum value of the recommendation content set by the user during the last selection (see `RecommendationType`).
+The default value is 0.
 
 **Type:** number
 
@@ -102,7 +109,8 @@ Enum value of the recommendation content set by the user during the last selecti
 selectedRecommendationType: number
 ```
 
-Enum value of the recommendation content selected by the user during the last selection (see `RecommendationType`). The default value is 0.
+Enum value of the recommendation content selected by the user during the last selection (see `RecommendationType`).
+The default value is 0.
 
 **Type:** number
 
@@ -118,7 +126,8 @@ Enum value of the recommendation content selected by the user during the last se
 sortRule?: string
 ```
 
-the sort rule by the user during the last selection. The default value is empty string.
+the sort rule by the user during the last selection.
+The default value is empty string.
 
 **Type:** string
 
@@ -136,7 +145,9 @@ the sort rule by the user during the last selection. The default value is empty 
 time: number
 ```
 
-Timestamp of the first fully visible photo in the last selection interface. The default value is 0. Unit: ms, The value must be greater than or equal to 0.
+Timestamp of the first fully visible photo in the last selection interface.
+The default value is 0.
+Unit: ms, The value must be greater than or equal to 0.
 
 **Type:** number
 

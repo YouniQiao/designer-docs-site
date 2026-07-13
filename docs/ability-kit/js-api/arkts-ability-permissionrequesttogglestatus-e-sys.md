@@ -1,6 +1,6 @@
 # PermissionRequestToggleStatus (System API)
 
-Enum for permission request toggle status.
+Enumerates the permission toggle states.
 
 **Since:** 12
 
@@ -14,7 +14,9 @@ Enum for permission request toggle status.
 CLOSED = 0
 ```
 
-The toggle status of one permission flag is closed.
+Indicates that the dialog box for the specified permission is disabled. When an app calls APIs such as
+[requestPermissionsFromUser](arkts-ability-atmanager-i.md#requestpermissionsfromuser-1)
+to request this permission, no permission dialog box will be displayed.
 
 **Since:** 12
 
@@ -28,7 +30,9 @@ The toggle status of one permission flag is closed.
 OPEN = 1
 ```
 
-The toggle status of one permission flag is open.
+Indicates that the dialog box for the specified permission is enabled. When an app calls APIs such as
+[requestPermissionsFromUser](arkts-ability-atmanager-i.md#requestpermissionsfromuser-1)
+to request this permission, a permission dialog box will be displayed normally.
 
 **Since:** 12
 

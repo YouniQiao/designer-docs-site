@@ -14,7 +14,9 @@ Describes the voice content options for notification subscriptions.
 enabled?: boolean
 ```
 
-Whether to enable voice content generation for subscribed notifications. The value **true** means enable the voice content generation, and **false** means the opposite. Default value: false.
+Whether to enable voice content generation for subscribed notifications. The value **true** means enable
+the voice content generation, and **false** means the opposite.
+Default value: false.
 
 **Type:** boolean
 

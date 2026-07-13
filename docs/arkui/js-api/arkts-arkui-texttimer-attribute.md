@@ -1,6 +1,11 @@
 # TextTimer properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.
+In addition to the
+[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
+attributes are supported.
+
+In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the
+following events are supported.
 
 **Inheritance/Implementation:** TextTimerAttribute extends [CommonMethod<TextTimerAttribute>](CommonMethod<TextTimerAttribute>)
 
@@ -72,7 +77,7 @@ Sets the font family.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceStr | Yes | Font family. The default font is **'HarmonyOS Sans'**.<br>The 'HarmonyOS Sans' fontand [registered custom fonts](../arkts-apis/arkts-font.md#font) are supported for applications.<br>Only the 'HarmonyOSSans' font is supported for widgets. |
+| value | ResourceStr | Yes | Font family. The default font is **'HarmonyOS Sans'**.<br>The 'HarmonyOS Sans' fontand [registered custom fonts](../arkts-apis/arkts-font.md) are supported for applications.<br>Only the 'HarmonyOSSans' font is supported for widgets. |
 
 ## fontSize
 
@@ -138,7 +143,7 @@ Sets the font weight of the text. If the value is too large, the text in differe
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number \| FontWeight \| ResourceStr | Yes | Font weight of the text. The value range of the number type is[100, 900]. The value interval is 100. A larger value indicates a wider font. If the value of the number typeis not within the value range, the default value is **400**. The [ResourceStr](arkts-arkui-resourcestr-t.md#resourcestr) type supportsonly strings of the number type, such as **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and**"medium"**, corresponding to the enums in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>TheResource type is supported since API version 20.<br>**Since:** 20 |
+| value | number \| FontWeight \| ResourceStr | Yes | Font weight of the text. The value range of the number type is[100, 900]. The value interval is 100. A larger value indicates a wider font. If the value of the number typeis not within the value range, the default value is **400**. The [ResourceStr](arkts-arkui-resourcestr-t.md) type supportsonly strings of the number type, such as **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and**"medium"**, corresponding to the enums in **FontWeight**.<br>Default value: **FontWeight.Normal**<br>TheResource type is supported since API version 20.<br>**Since:** 20 |
 
 ## format
 
@@ -146,7 +151,11 @@ Sets the font weight of the text. If the value is too large, the text in differe
 format(value: string)
 ```
 
-Sets the custom format. The value must contain at least one of the following keywords: **HH**, **mm**, **ss**, and **SS**. If the date format is yy, MM, or dd, the default value is used. The timer update frequency is in the minimum unit of **format**. For example, if **format** is set to **'HH:mm'**, the update frequency is one minute.
+Sets the custom format. The value must contain at least one of the following keywords: **HH**, **mm**, **ss**, and
+**SS**. If the date format is yy, MM, or dd, the default value is used.
+
+The timer update frequency is in the minimum unit of **format**. For example, if **format** is set to **'HH:mm'**,
+the update frequency is one minute.
 
 **Since:** 8
 
@@ -168,7 +177,9 @@ Sets the custom format. The value must contain at least one of the following key
 onTimer(event: (utc: number, elapsedTime: number) => void)
 ```
 
-Event triggered when the time text changes. This event is not triggered when the screen is locked or the application is running in the background. When high-precision [format](TextTimerAttribute#format)s (such as **SS**) are used, the callback interval may vary.
+Event triggered when the time text changes. This event is not triggered when the screen is locked or the
+application is running in the background. When high-precision [format](TextTimerAttribute#format)s (such as
+**SS**) are used, the callback interval may vary.
 
 **Since:** 8
 
@@ -190,7 +201,12 @@ Event triggered when the time text changes. This event is not triggered when the
 textShadow(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-Sets the text shadow. It supports input parameters in an array to implement multiple text shadows. This API does not work with the **fill** attribute or coloring strategy. > **NOTE** > > This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+Sets the text shadow. It supports input parameters in an array to implement multiple text shadows. This API does
+not work with the **fill** attribute or coloring strategy.
+
+> **NOTE**
+>
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
 
 **Since:** 11
 

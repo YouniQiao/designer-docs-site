@@ -9,7 +9,7 @@ Represents CMS decapsulation configuration.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## cert
@@ -34,7 +34,7 @@ Public key certificate. This parameter is left empty by default.
 contentDataFormat?: CmsContentDataFormat
 ```
 
-Format of the content. The default value is **CmsContentDataFormat.BINARY**.
+Format of the content.
 
 **Type:** CmsContentDataFormat
 
@@ -52,7 +52,8 @@ Format of the content. The default value is **CmsContentDataFormat.BINARY**.
 encryptedContentData?: Uint8Array
 ```
 
-Encrypted content data used when the CMS does not contain the specified data. This parameter is left empty by default.
+Encrypted content data for detached CMS enveloped data, used when the CMS structure does not contain the
+encrypted content inline.
 
 **Type:** Uint8Array
 

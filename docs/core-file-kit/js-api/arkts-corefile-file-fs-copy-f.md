@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## copy
@@ -12,7 +12,13 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>
 ```
 
-Copies a file or directory. This API uses a promise to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses a promise to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be
+the URI of the file or directory.
+
+A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time
+cannot exceed 500.
 
 **Since:** 11
 
@@ -61,7 +67,7 @@ Copies a file or directory. This API uses a promise to return the result. File c
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
 ## copy
@@ -70,7 +76,11 @@ Copies a file or directory. This API uses a promise to return the result. File c
 declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void
 ```
 
-Copies a file or directory. This API uses an asynchronous callback to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses an asynchronous callback to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory.
+The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
+are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
 
@@ -121,7 +131,11 @@ Copies a file or directory. This API uses an asynchronous callback to return the
 declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void
 ```
 
-Copies a file or directory. This API uses an asynchronous callback to return the result. File copy across devices is supported. This API forcibly overwrites the file or directory. The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
+Copies a file or directory. This API uses an asynchronous callback to return the result.
+
+File copy across devices is supported. This API forcibly overwrites the file or directory.
+The input parameter can be the URI of the file or directory. A maximum of 10 cross-device copy tasks
+are allowed at the same time, and the number of files to be copied at a time cannot exceed 500.
 
 **Since:** 11
 

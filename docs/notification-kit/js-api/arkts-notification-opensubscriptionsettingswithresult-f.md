@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## openSubscriptionSettingsWithResult
@@ -12,7 +12,10 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function openSubscriptionSettingsWithResult(context: UIAbilityContext): Promise<UserGrantSetting>
 ```
 
-Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications for specified applications. This API uses a promise to return the result. When the semi-modal window is closed, the user-defined authorization result is returned.
+Opens the settings screen of notification extension subscription in a semi-modal dialog box. On this screen, the
+user can toggle on the **Allow access to notifications on this device** switch and grant access to notifications
+for specified applications. This API uses a promise to return the result. When the semi-modal window is closed, the
+user-defined authorization result is returned.
 
 **Since:** 26.0.0
 

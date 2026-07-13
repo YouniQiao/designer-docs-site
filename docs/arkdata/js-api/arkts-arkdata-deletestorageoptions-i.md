@@ -48,7 +48,8 @@ Called when the stored content fails to be deleted.
 key: string
 ```
 
-Content index. the value contains a maximum of 32 characters and cannot contain special characters such as \/"*+,:;<=>?[]|\x7F.
+Content index.
+the value contains a maximum of 32 characters and cannot contain special characters such as \/"*+,:;<=>?[]|\x7F.
 
 **Type:** string
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## createLocalWantAgent
@@ -12,7 +12,11 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function createLocalWantAgent(info: LocalWantAgentInfo): WantAgent
 ```
 
-Create a local WantAgent object. The WantAgent created by this interface stores data on the client side and is not managed by the WantAgent servcer. If this WantAgent object is passed across processes, its contained data will be serialized and transmitted to the target process.
+Create a local WantAgent object.
+The WantAgent created by this interface stores data on the client side
+and is not managed by the WantAgent servcer.
+If this WantAgent object is passed across processes,
+its contained data will be serialized and transmitted to the target process.
 
 **Since:** 20
 

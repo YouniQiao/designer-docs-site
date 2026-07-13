@@ -6,7 +6,10 @@
 const MAX_RECORD_NUM = 512
 ```
 
-Maximum number of records in a **PasteData** object. In versions earlier than API version 10, the value is 512, indicating that no more records can be added once the number of records reaches 512. Since API version 10, no limit is placed on the number of records in a **PasteData** object.
+Maximum number of records in a **PasteData** object. In versions earlier than API version 10, the value is 512,
+indicating that no more records can be added once the number of records reaches 512.
+
+Since API version 10, no limit is placed on the number of records in a **PasteData** object.
 
 **Since:** 7
 

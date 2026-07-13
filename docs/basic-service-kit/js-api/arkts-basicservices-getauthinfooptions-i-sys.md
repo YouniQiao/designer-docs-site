@@ -1,6 +1,7 @@
 # GetAuthInfoOptions (System API)
 
-Represents a set of optional parameters for [GetAuthInfo](arkts-basicservices-useridentitymanager-c-sys.md#getauthinfo-4).
+Represents a set of optional parameters for
+[GetAuthInfo](arkts-basicservices-useridentitymanager-c-sys.md#getauthinfo-4).
 
 **Since:** 12
 
@@ -11,7 +12,7 @@ Represents a set of optional parameters for [GetAuthInfo](arkts-basicservices-us
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## accountId

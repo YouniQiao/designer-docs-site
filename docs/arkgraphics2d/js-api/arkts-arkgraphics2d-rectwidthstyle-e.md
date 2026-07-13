@@ -12,7 +12,8 @@ Enumerates the rectangle width styles.
 TIGHT = 0
 ```
 
-If **letterSpacing** is not set, the rectangle conforms tightly to the text it contains. However, if **letterSpacing** is set, a gap is introduced between the rectangle and text.
+If **letterSpacing** is not set, the rectangle conforms tightly to the text it contains. However, if
+**letterSpacing** is set, a gap is introduced between the rectangle and text.
 
 **Since:** 12
 

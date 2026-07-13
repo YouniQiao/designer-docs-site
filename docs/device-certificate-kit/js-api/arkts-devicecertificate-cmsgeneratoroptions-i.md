@@ -1,6 +1,6 @@
 # CmsGeneratorOptions
 
-Represents the configuration for generating the CMS signing result.
+Represents the configuration for generating a CMS message.
 
 **Since:** 18
 
@@ -9,7 +9,7 @@ Represents the configuration for generating the CMS signing result.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## contentDataFormat
@@ -36,7 +36,8 @@ Format of the content. The default value is **CmsContentDataFormat.BINARY**.
 isDetached?: boolean
 ```
 
-Whether the final CMS data does not contain the raw data. The default value is **false**. **true**: raw data is not contained; **false**: raw data is contained.
+Whether the final CMS message does not contain the raw data. The default value is **false**. **true**: raw data is
+not contained; **false**: raw data is contained.
 
 **Type:** boolean
 
@@ -54,7 +55,7 @@ Whether the final CMS data does not contain the raw data. The default value is *
 outFormat?: CmsFormat
 ```
 
-Format of the CMS data generated. The default value is **DER**.
+Format of the CMS message generated. The default value is **DER**.
 
 **Type:** CmsFormat
 

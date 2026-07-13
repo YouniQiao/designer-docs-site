@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## stopVibration
@@ -345,7 +345,8 @@ try {
 function stopVibration(param?: VibratorInfoParam): Promise<void>
 ```
 
-Stops vibration based on the specified vibrator parameters. If no parameters are passed, this API stops all vibrators of the local device by default. This API uses a promise to return the result.
+Stops vibration based on the specified vibrator parameters. If no parameters are passed, this API stops all
+vibrators of the local device by default. This API uses a promise to return the result.
 
 **Since:** 19
 

@@ -1,15 +1,19 @@
 # AbilityLifecycleCallback
 
-The ability lifecycle callback.
+The lifecycle of a [UIAbility](arkts-app-ability-uiability.md) dynamically changes from creation to
+destruction.
+The AbilityLifecycleCallback module provides the capability to listen for these lifecycle changes, which can be used
+for scenarios such as tracking the runtime duration of each UIAbility and performing data loading decoupled from the
+service logic of UIAbility.
 
-**Since:** 11
+**Since:** 9
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
 ## Modules to Import
 
 ```TypeScript
-import { AbilityLifecycleCallback } from '@ohos.app.ability.AbilityLifecycleCallback';
+import { AbilityLifecycleCallback } from '@kit.AbilityKit';
 ```
 
 ## onAbilityBackground
@@ -18,9 +22,10 @@ import { AbilityLifecycleCallback } from '@ohos.app.ability.AbilityLifecycleCall
 onAbilityBackground(ability: UIAbility): void
 ```
 
-Called back when the state of an ability changes to background.
+Called after the [onBackground](arkts-ability-uiability-c.md#onbackground-1) callback of the
+UIAbility is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -32,7 +37,7 @@ Called back when the state of an ability changes to background.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -44,9 +49,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityContinue(ability: UIAbility): void
 ```
 
-Called back when an ability prepares to continue.
+Called after the [onContinue](arkts-ability-uiability-c.md#oncontinue-1) callback of the UIAbility
+is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -58,7 +64,7 @@ Called back when an ability prepares to continue.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -70,9 +76,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityCreate(ability: UIAbility): void
 ```
 
-Called back when an ability is started for initialization.
+Called after the [onCreate](arkts-ability-uiability-c.md#oncreate-1) callback of the UIAbility is
+triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -84,7 +91,7 @@ Called back when an ability is started for initialization.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -96,9 +103,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityDestroy(ability: UIAbility): void
 ```
 
-Called back when an ability is destroyed.
+Called after the [onDestroy](arkts-ability-uiability-c.md#ondestroy-1) callback of the UIAbility
+is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -110,7 +118,7 @@ Called back when an ability is destroyed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -122,9 +130,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityForeground(ability: UIAbility): void
 ```
 
-Called back when the state of an ability changes to foreground.
+Called after the [onForeground](arkts-ability-uiability-c.md#onforeground-1) callback of the
+UIAbility is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -136,7 +145,7 @@ Called back when the state of an ability changes to foreground.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -148,7 +157,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilitySaveState?(ability: UIAbility): void
 ```
 
-Called back when the ability has called onSaveState.
+Called after the [onSaveState](arkts-ability-uiability-c.md#onsavestate-1) callback of the
+UIAbility is triggered.
 
 **Since:** 12
 
@@ -162,7 +172,7 @@ Called back when the ability has called onSaveState.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -174,7 +184,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillBackground?(ability: UIAbility): void
 ```
 
-Called back before the state of an ability changes to background.
+Called before the [onBackground](arkts-ability-uiability-c.md#onbackground-1) callback of the
+UIAbility is triggered.
 
 **Since:** 12
 
@@ -188,7 +199,7 @@ Called back before the state of an ability changes to background.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -200,7 +211,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillContinue?(ability: UIAbility): void
 ```
 
-Called back when the ability prepares to call onContinue.
+Called before the [onContinue](arkts-ability-uiability-c.md#oncontinue-1) callback of the UIAbility
+is triggered.
 
 **Since:** 12
 
@@ -214,7 +226,7 @@ Called back when the ability prepares to call onContinue.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -226,7 +238,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillCreate?(ability: UIAbility): void
 ```
 
-Called back before an ability is started for initialization.
+Called before the [onCreate](arkts-ability-uiability-c.md#oncreate-1) callback of the UIAbility is
+triggered.
 
 **Since:** 12
 
@@ -240,7 +253,7 @@ Called back before an ability is started for initialization.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -252,7 +265,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillDestroy?(ability: UIAbility): void
 ```
 
-Called back before an ability is destroyed.
+Called before the [onDestroy](arkts-ability-uiability-c.md#ondestroy-1) callback of the UIAbility
+is triggered.
 
 **Since:** 12
 
@@ -266,7 +280,7 @@ Called back before an ability is destroyed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -278,7 +292,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillForeground?(ability: UIAbility): void
 ```
 
-Called back before the state of an ability changes to foreground.
+Called before the [onForeground](arkts-ability-uiability-c.md#onforeground-1) callback of the
+UIAbility is triggered.
 
 **Since:** 12
 
@@ -292,7 +307,7 @@ Called back before the state of an ability changes to foreground.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -304,7 +319,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onAbilityWillSaveState?(ability: UIAbility): void
 ```
 
-Called back when the ability prepares to call onSaveState.
+Called before the [onSaveState](arkts-ability-uiability-c.md#onsavestate-1) callback of the
+UIAbility is triggered.
 
 **Since:** 12
 
@@ -318,7 +334,7 @@ Called back when the ability prepares to call onSaveState.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -330,7 +346,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onNewWant?(ability: UIAbility): void
 ```
 
-Called back after the UIAbility called onNewWant.
+Called after the [onNewWant](arkts-ability-uiability-c.md#onnewwant-1) callback of the UIAbility
+is triggered.
 
 **Since:** 12
 
@@ -344,7 +361,7 @@ Called back after the UIAbility called onNewWant.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -356,7 +373,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWillNewWant?(ability: UIAbility): void
 ```
 
-Called back before the UIAbility will called onNewWant.
+Called before the [onNewWant](arkts-ability-uiability-c.md#onnewwant-1) callback of the UIAbility
+is triggered.
 
 **Since:** 12
 
@@ -370,7 +388,7 @@ Called back before the UIAbility will called onNewWant.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
 
 **Example**
 
@@ -382,9 +400,9 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageActive(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when a window stage is active.
+Called when the main window of the UIAbility gains focus.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -396,8 +414,8 @@ Called back when a window stage is active.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to active |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -409,9 +427,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageCreate(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when a window stage is created.
+Called after the [onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1) callback of
+the UIAbility is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -423,8 +442,8 @@ Called back when a window stage is created.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to create |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -436,9 +455,10 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageDestroy(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when a window stage is destroyed.
+Called after the [onWindowStageDestroy](arkts-ability-uiability-c.md#onwindowstagedestroy-1)
+callback of the UIAbility is triggered.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -450,8 +470,8 @@ Called back when a window stage is destroyed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to destroy |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -463,9 +483,9 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageInactive(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when a window stage is inactive.
+Called when the main window of the UIAbility loses focus.
 
-**Since:** 11
+**Since:** 9
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -477,8 +497,8 @@ Called back when a window stage is inactive.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to inactive |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -490,7 +510,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageRestore?(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when the ability has called onWindowStageRestore.
+Called after the [onWindowStageRestore](arkts-ability-uiability-c.md#onwindowstagerestore-1)
+callback of the UIAbility is triggered.
 
 **Since:** 12
 
@@ -504,8 +525,8 @@ Called back when the ability has called onWindowStageRestore.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to restore. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -517,7 +538,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageWillCreate?(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back before a window stage is created.
+Called before the [onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1)
+callback of the UIAbility is triggered.
 
 **Since:** 12
 
@@ -531,8 +553,8 @@ Called back before a window stage is created.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to create |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -544,7 +566,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageWillDestroy?(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back before a window stage is destroyed.
+Called before the [onWindowStageDestroy](arkts-ability-uiability-c.md#onwindowstagedestroy-1)
+callback of the UIAbility is triggered.
 
 **Since:** 12
 
@@ -558,8 +581,8 @@ Called back before a window stage is destroyed.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to destroy |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 
@@ -571,7 +594,8 @@ For details, see [AbilityLifecycleCallback Usage Example](#abilitylifecyclecallb
 onWindowStageWillRestore?(ability: UIAbility, windowStage: window.WindowStage): void
 ```
 
-Called back when the ability prepares to call onWindowStageRestore.
+Called before the [onWindowStageRestore](arkts-ability-uiability-c.md#onwindowstagerestore-1)
+callback of the UIAbility is triggered.
 
 **Since:** 12
 
@@ -585,8 +609,8 @@ Called back when the ability prepares to call onWindowStageRestore.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| ability | UIAbility | Yes | Indicates the ability to register for listening. |
-| windowStage | window.WindowStage | Yes | window stage to restore. |
+| ability | UIAbility | Yes | UIAbility object associated with the callback event. |
+| windowStage | window.WindowStage | Yes | Main window manager of the UIAbility associated with the callback event. |
 
 **Example**
 

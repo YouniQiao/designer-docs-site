@@ -1,8 +1,10 @@
 # TabSegmentButtonConstructionOptions
 
-构建页签类的SegmentButtonOptions对象。 继承[CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md#commonsegmentbuttonoptions)。
+构建页签类的SegmentButtonOptions对象。
 
-**继承/实现关系：** TabSegmentButtonConstructionOptions extends [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md#commonsegmentbuttonoptions)
+继承[CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md)。
+
+**继承/实现关系：** TabSegmentButtonConstructionOptions extends [CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md)
 
 **起始版本：** 11
 

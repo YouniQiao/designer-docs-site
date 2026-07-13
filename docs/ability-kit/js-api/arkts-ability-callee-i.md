@@ -1,6 +1,7 @@
 # Callee
 
-Background communication object created by the system for the UIAbility, known as the Callee UIAbility (Callee), which is capable of receiving data sent from the Caller object.
+Background communication object created by the system for the UIAbility, known as the Callee UIAbility (Callee),
+which is capable of receiving data sent from the Caller object.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Background communication object created by the system for the UIAbility, known a
 ## Modules to Import
 
 ```TypeScript
-import { Callee, Caller, OnReleaseCallback, OnRemoteStateChangeCallback, CalleeCallback } from '@ohos.app.ability.UIAbility';
+import { Callee, Caller, OnReleaseCallback, OnRemoteStateChangeCallback, CalleeCallback } from '@kit.AbilityKit';
 ```
 
 ## off
@@ -79,7 +80,7 @@ Registers a caller notification callback, which is invoked when the target UIAbi
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | method | string | Yes | Method name agreed upon by the Caller UIAbility and Callee UIAbility, used by the CalleeUIAbility to identify the type of message. |
-| callback | CalleeCallback | Yes | JS notification synchronization callback of the[rpc.MessageSequence](../../apis-ipc-kit/arkts-apis/arkts-ipc-messagesequence-c.md#messagesequence) type. The callback must return at least one empty[rpc.Parcelable](../../apis-ipc-kit/arkts-apis/arkts-ipc-parcelable-i.md#parcelable) object. Otherwise, the function execution fails. |
+| callback | CalleeCallback | Yes | JS notification synchronization callback of the[rpc.MessageSequence](../../apis-ipc-kit/arkts-apis/arkts-ipc-messagesequence-c.md) type. The callback must return at least one empty[rpc.Parcelable](../../apis-ipc-kit/arkts-apis/arkts-ipc-parcelable-i.md) object. Otherwise, the function execution fails. |
 
 **Error codes:**
 

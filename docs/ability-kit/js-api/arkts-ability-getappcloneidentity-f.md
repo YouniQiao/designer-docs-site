@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAppCloneIdentity
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAppCloneIdentity(uid: number): Promise<AppCloneIdentity>
 ```
 
-Obtains the bundle name and clone index of a cloned application based on the given UID. This API uses a promise to return the result.
+Obtains the bundle name and clone index of a cloned application based on the given UID. This API uses a promise to
+return the result.
 
 **Since:** 14
 

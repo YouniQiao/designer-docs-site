@@ -40,7 +40,8 @@ UIAbility名称。
 appIndex?: number
 ```
 
-应用分身ID。 取值范围为全体整数。
+应用分身ID。
+取值范围为全体整数。
 
 **类型：** number
 
@@ -54,7 +55,7 @@ appIndex?: number
 backgroundModes: string[]
 ```
 
-[长时任务类型](arkts-backgroundtasks-backgroundmode-e.md#backgroundmode)。
+[长时任务类型](arkts-backgroundtasks-backgroundmode-e.md)。
 
 **类型：** string[]
 
@@ -68,7 +69,7 @@ backgroundModes: string[]
 backgroundSubModes: string[]
 ```
 
-[长时任务子类型](arkts-backgroundtasks-backgroundsubmode-e.md#backgroundsubmode)。
+[长时任务子类型](arkts-backgroundtasks-backgroundsubmode-e.md)。
 
 **类型：** string[]
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wallpaper } from '@ohos.wallpaper';
+import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
 ## getImage
@@ -12,7 +12,8 @@ import { wallpaper } from '@ohos.wallpaper';
 function getImage(wallpaperType: WallpaperType, callback: AsyncCallback<image.PixelMap>): void
 ```
 
-Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. Only the static wallpaper set by using setImage can be obtained.
+Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map.
+Only the static wallpaper set by using setImage can be obtained.
 
 **Since:** 9
 
@@ -60,7 +61,8 @@ wallpaper.getImage(wallpaper.WallpaperType.WALLPAPER_SYSTEM, (error: BusinessErr
 function getImage(wallpaperType: WallpaperType): Promise<image.PixelMap>
 ```
 
-Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map. Only the static wallpaper set by using setImage can be obtained.
+Obtains the default pixel map of a wallpaper of the specified type. Returns the default pixel map.
+Only the static wallpaper set by using setImage can be obtained.
 
 **Since:** 9
 

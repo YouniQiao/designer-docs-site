@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sim } from '@ohos.telephony.sim';
+import { sim } from '@kit.TelephonyKit';
 ```
 
 ## getSimSpn
@@ -12,7 +12,10 @@ import { sim } from '@ohos.telephony.sim';
 function getSimSpn(slotId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains the service provider name (SPN) of the SIM card in a specified slot. <p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network with which the SIM card is currently registered.
+Obtains the service provider name (SPN) of the SIM card in a specified slot.
+
+<p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network
+with which the SIM card is currently registered.
 
 **Since:** 6
 
@@ -55,7 +58,10 @@ sim.getSimSpn(0, (err: BusinessError, data: string) => {
 function getSimSpn(slotId: number): Promise<string>
 ```
 
-Obtains the service provider name (SPN) of the SIM card in a specified slot. <p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network with which the SIM card is currently registered.
+Obtains the service provider name (SPN) of the SIM card in a specified slot.
+
+<p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network
+with which the SIM card is currently registered.
 
 **Since:** 6
 

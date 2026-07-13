@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { SuffixIconOptions,CloseOptions,ChipSymbolGlyphOptions,Chip,AccessibilitySelectedType,LabelMarginOptions,LabelOptions,PrefixIconOptions,IconCommonOptions,ChipOptions,ChipSuffixSymbolGlyphOptions,ChipSize,AccessibilityOptions } from '@kit.ArkUI';
+import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,28 +12,28 @@ import { SuffixIconOptions,CloseOptions,ChipSymbolGlyphOptions,Chip,Accessibilit
 
 | Name | Description |
 | --- | --- |
-| [Chip](arkts-arkui-advanced-chip-chip-f.md#Chip-1) | Chip的构建函数。 |
+| [Chip](arkts-arkui-arkui-advanced-chip-chip-f.md#chip-1) | Build function of Chip. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AccessibilityOptions](arkts-accessibilityoptions-i.md) | 后缀图标的无障碍朗读功能属性。 |
-| [ChipOptions](arkts-chipoptions-i.md) | ChipOptions定义Chip的样式及具体式样参数。 > **说明：** > > 1. 当`suffixSymbol`有传入参数时，`suffixIcon`和`allowClose`不生效；当`suffixSymbol`没有传入参数而`suffixIcon`有传入参数时，`allowClose`不生效；当 > `suffixSymbol`和`suffixIcon`都没有传入参数时，`allowClose`决定是否显示删除图标。 > > 2. `backgroundColor`和`activatedBackgroundColor`赋值为`undefined`时，显示默认背景颜色；赋值为非法值时，背景颜色透明。 > > 3. prefixSymbol/suffixSymbol的fontColor默认值为：normalFontColor: `[$r('sys.color.ohos_id_color_primary')]`、 > activatedFontColor: `[$r('sys.color.ohos_id_color_text_primary_contrary')]`。fontColor默认值为16。 > > 4. prefixIcon的fillColor默认值为：`$r('sys.color.ohos_id_color_secondary')`，suffixIcon的fillColor默认值为： > `$r('sys.color.ohos_id_color_primary')`。fillColor对颜色的解析与Image组件保持一致。 > > 5. prefixIcon和suffixIcon的activatedFillColor默认值均为：`$r('sys.color.ohos_id_color_text_primary_contrary')`。 > activatedFillColor对颜色的解析与Image组件保持一致。 |
-| [ChipSuffixSymbolGlyphOptions](arkts-chipsuffixsymbolglyphoptions-i.md) | symbol类型后缀图标属性的无障碍朗读功能属性类型。 |
-| [ChipSymbolGlyphOptions](arkts-chipsymbolglyphoptions-i.md) | ChipSymbolGlyphOptions定义前缀图标和后缀图标的属性。 > **说明：** > > 不支持使用[SymbolEffect]{@link SymbolEffect}修改动效类型及effectStrategy设置动效。 |
-| [CloseOptions](arkts-closeoptions-i.md) | CloseOptions用于定义Chip组件默认的关闭图标功能属性，包括无障碍功能属性，其中accessibilityText默认为"删除"。 继承于[AccessibilityOptions]{@link AccessibilityOptions}。 |
-| [IconCommonOptions](arkts-iconcommonoptions-i.md) | IconCommonOptions定义图标的共通属性。 > **说明：** > > 仅在图片格式为SVG时，fillColor和activatedFillColor属性才生效。 |
-| [LabelMarginOptions](arkts-labelmarginoptions-i.md) | LabelMarginOptions用于定义文本与左右侧图标之间间距。 |
-| [LabelOptions](arkts-labeloptions-i.md) | LabelOptions定义文本属性。 |
-| [LocalizedLabelMarginOptions](arkts-localizedlabelmarginoptions-i.md) | LocalizedLabelMarginOptions用于定义本地化文本与左右侧图标之间间距。 |
-| [PrefixIconOptions](arkts-prefixiconoptions-i.md) | PrefixIconOptions定义前缀图标的属性。 继承于[IconCommonOptions]{@link IconCommonOptions}。 |
-| [SuffixIconOptions](arkts-suffixiconoptions-i.md) | SuffixIconOptions定义后缀图标的属性。 继承于[IconCommonOptions]{@link IconCommonOptions}。 |
+| [AccessibilityOptions](arkts-arkui-accessibilityoptions-i.md) | Defines the accessibility options of the suffix icon. |
+| [ChipOptions](arkts-arkui-chipoptions-i.md) | Defines the type and style parameters of the chip.&gt; **NOTE**&gt;&gt; 1. When **suffixSymbol** is provided with an argument, **suffixIcon** and **allowClose** will not take effect. If &gt; **suffixSymbol** is not provided, but **suffixIcon** is, **allowClose** still will not take effect. When neither &gt; **suffixSymbol** nor **suffixIcon** is provided with arguments, **allowClose** determines whether the deletion icon&gt; is displayed.&gt;&gt; 2. If **undefined** is assigned to **backgroundColor** or **activatedBackgroundColor**, the default background &gt; color is used. If an invalid value is specified, the background color is transparent.&gt;&gt; 3. Default font colors for **prefixSymbol** and **suffixSymbol**: **normalFontColor**: &gt; **[$r('sys.color.ohos_id_color_primary')]**; **activatedFontColor**: &gt; **[$r('sys.color.ohos_id_color_text_primary_contrary')]**. The default value of **fontColor** is **16**.&gt;&gt; 4. The default value of **fillColor** is **$r('sys.color.ohos_id_color_secondary')** for **prefixIcon** and &gt; **$r('sys.color.ohos_id_color_primary')** for **suffixIcon**. The color parsing of **fillColor** is the same as &gt; that of the **Image** component.&gt;&gt; 5. The default value of **activatedFillColor** in **prefixIcon** and **suffixIcon** is &gt; **$r('sys.color.ohos_id_color_text_primary_contrary')**. The color parsing of **activatedFillColor** is the same as&gt; that of the **Image** component. |
+| [ChipSuffixSymbolGlyphOptions](arkts-arkui-chipsuffixsymbolglyphoptions-i.md) | Defines the accessibility options of the symbol-type suffix icon. |
+| [ChipSymbolGlyphOptions](arkts-arkui-chipsymbolglyphoptions-i.md) | Defines the prefix and suffix icon options.&gt; **NOTE**&gt;&gt; The animation type cannot be modified via &gt; [SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) and &gt; animations cannot be set via **effectStrategy**. |
+| [CloseOptions](arkts-arkui-closeoptions-i.md) | Defines the default close icon behavior attributes for the chip, including accessibility attributes. The default value of **accessibilityText** is **"Delete"**.Inherits from [AccessibilityOptions](arkts-arkui-accessibilityoptions-i.md). |
+| [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md) | Defines the common icon options of the chip.&gt; **NOTE**&gt;&gt; **fillColor** and **activatedFillColor** take effect only when the icon format is SVG. |
+| [LabelMarginOptions](arkts-arkui-labelmarginoptions-i.md) | Defines the spacing between the text and the left and right icons. |
+| [LabelOptions](arkts-arkui-labeloptions-i.md) | Defines text configuration options. |
+| [LocalizedLabelMarginOptions](arkts-arkui-localizedlabelmarginoptions-i.md) | Defines the spacing between the localized text and the left and right icons. |
+| [PrefixIconOptions](arkts-arkui-prefixiconoptions-i.md) | Defines the prefix icon options.Inherits from [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md). |
+| [SuffixIconOptions](arkts-arkui-suffixiconoptions-i.md) | Defines the suffix icon options.Inherits from [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md). |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AccessibilitySelectedType](arkts-accessibilityselectedtype-e.md) | AccessibilitySelectedType是Chip可指定的选中态类型，用于控制无障碍服务如何向用户传达组件的选中状态。不同的选中态类型提供了不同的语义和用户体验。 |
-| [ChipSize](arkts-chipsize-e.md) | Enum for ChipSize |
+| [AccessibilitySelectedType](arkts-arkui-accessibilityselectedtype-e.md) | Enumerates the selected state types of the chip. It allows you to specify how accessibility services convey the component's selected state to users. Different selected state types provide distinct semantics and user experiences. |
+| [ChipSize](arkts-arkui-chipsize-e.md) | Enumerates the chip size types. |
 

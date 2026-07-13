@@ -1,6 +1,9 @@
 # CsrAttribute
 
-Defines the CSR attribute representation. CSR attribute field. Currently, only character string attribute fields are supported. The attribute value added to the CSR is encoded in UTF-8 format. The common type is challengePassword.
+Defines the CSR attribute representation.
+
+CSR attribute field. Currently, only character string attribute fields are supported. The attribute value added to
+the CSR is encoded in UTF-8 format. The common type is challengePassword.
 
 **Since:** 18
 
@@ -9,7 +12,7 @@ Defines the CSR attribute representation. CSR attribute field. Currently, only c
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## type

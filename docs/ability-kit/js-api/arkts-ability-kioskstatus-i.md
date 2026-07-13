@@ -1,6 +1,7 @@
 # KioskStatus
 
-The module provides the kiosk status information, including whether the system is in kiosk mode and the information about the application in kiosk mode.
+The module provides the kiosk status information, including whether the system is in kiosk mode and the information
+about the application in kiosk mode.
 
 **Since:** 20
 

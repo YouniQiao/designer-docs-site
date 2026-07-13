@@ -1,9 +1,5 @@
 # ProtocolType
 
-```TypeScript
-enum ProtocolType
-```
-
 Define different protocol capability
 
 **Since:** 11
@@ -16,27 +12,14 @@ Define different protocol capability
 TYPE_LOCAL = 0
 ```
 
-The default cast type "local", media can be routed on the same device, including internal speakers or audio jack on the device itself, A2DP devices.
+The default cast type "local", media can be routed on the same device,
+including internal speakers or audio jack on the device itself, A2DP devices.
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-## TYPE_CAST_PLUS_MIRROR
-
-```TypeScript
-TYPE_CAST_PLUS_MIRROR = 1
-```
-
-Cast+ mirror capability
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**System API:** This is a system API.
 
 ## TYPE_CAST_PLUS_STREAM
 
@@ -44,11 +27,12 @@ Cast+ mirror capability
 TYPE_CAST_PLUS_STREAM = 2
 ```
 
-The Cast+ Stream indicating the media is presenting on a different device the application need get an AVCastController to control remote playback.
+The Cast+ Stream indicating the media is presenting on a different device
+the application need get an AVCastController to control remote playback.
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -58,11 +42,12 @@ The Cast+ Stream indicating the media is presenting on a different device the ap
 TYPE_DLNA = 4
 ```
 
-The DLNA type indicates the device supports DLNA protocol, the application needs to get an AVCastController to control remote playback.
+The DLNA type indicates the device supports DLNA protocol,
+the application needs to get an AVCastController to control remote playback.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -76,7 +61,7 @@ This type indicates the device supports audio casting with high definition to ge
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 20.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

@@ -1,8 +1,9 @@
 # Image
 
-Represents the image data. It is a child class of [File](arkts-arkdata-file-c.md#file) and is used to describe images.
+Represents the image data. It is a child class of [File](arkts-arkdata-file-c.md) and is used to describe
+images.
 
-**Inheritance/Implementation:** Image extends [File](arkts-arkdata-file-c.md#file)
+**Inheritance/Implementation:** Image extends [File](arkts-arkdata-file-c.md)
 
 **Since:** 10
 
@@ -11,7 +12,7 @@ Represents the image data. It is a child class of [File](arkts-arkdata-file-c.md
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## imageUri

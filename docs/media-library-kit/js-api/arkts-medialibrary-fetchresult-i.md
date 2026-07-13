@@ -2,7 +2,7 @@
 
 Provides APIs to manage the file retrieval result.
 
-**Inheritance/Implementation:** FetchResult extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
+**Inheritance/Implementation:** FetchResult extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Provides APIs to manage the file retrieval result.
 ## Modules to Import
 
 ```TypeScript
-import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper';
+import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## close
@@ -20,7 +20,8 @@ import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper'
 close(): void
 ```
 
-Closes this FetchFileResult instance to invalidate it. After this instance is closed, the APIs in this instance cannot be invoked.
+Closes this FetchFileResult instance to invalidate it.
+After this instance is closed, the APIs in this instance cannot be invoked.
 
 **Since:** 12
 
@@ -248,7 +249,9 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 getNextObject(): Promise<T>
 ```
 
-Obtains the next asset in the result set. This API uses a promise to return the result. Before using this API, you must use isAfterLast() to check whether the current position is the end of <br>the result set.
+Obtains the next asset in the result set. This API uses a promise to return the result.
+Before using this API, you must use isAfterLast() to check whether the current position is the end of
+<br>the result set.
 
 **Since:** 12
 

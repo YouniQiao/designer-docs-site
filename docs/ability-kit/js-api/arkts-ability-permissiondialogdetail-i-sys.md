@@ -1,6 +1,6 @@
 # PermissionDialogDetail (System API)
 
-Permission dialog information for a command.
+Represents the permission dialog information of a single command.
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Permission dialog information for a command.
 ## Modules to Import
 
 ```TypeScript
-import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## authResult
@@ -20,7 +20,7 @@ import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAcce
 authResult: string
 ```
 
-Authorization result.
+Authorization result string.
 
 **Type:** string
 
@@ -38,7 +38,8 @@ Authorization result.
 needPermissionDialog: boolean
 ```
 
-Indicates whether the current CLI requires a permission dialog.
+Whether the current CLI command requires a permission dialog. The value **true** indicates that a permission
+dialog is required, and **false** indicates that no permission dialog is required.
 
 **Type:** boolean
 
@@ -56,7 +57,9 @@ Indicates whether the current CLI requires a permission dialog.
 permissionNameList: Array<Permissions>
 ```
 
-List of permissions that are not granted and do not allow permission dialogs.
+List of permission names that the agent initiating CLI-related operations currently does not satisfy. If the
+related permissions are not satisfied, the CLI cannot be started, or the started CLI process cannot obtain the
+corresponding permissions.
 
 **Type:** Array<Permissions>
 
@@ -74,7 +77,7 @@ List of permissions that are not granted and do not allow permission dialogs.
 statusList: Array<PermissionDecisionStatus>
 ```
 
-Permission decision status list. Each element corresponds to the permission at the same index.
+List of permission decision statuses.
 
 **Type:** Array<PermissionDecisionStatus>
 

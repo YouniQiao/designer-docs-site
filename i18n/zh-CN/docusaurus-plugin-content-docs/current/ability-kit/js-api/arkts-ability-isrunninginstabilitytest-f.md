@@ -6,7 +6,11 @@
 function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void
 ```
 
-查询当前系统是否处于稳定性测试场景。使用callback异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
+查询当前系统是否处于稳定性测试场景。使用callback异步回调。
+
+> **说明：**
+>
+> 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
 
 **起始版本：** 9
 
@@ -24,7 +28,7 @@ function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 **示例：**
@@ -49,7 +53,11 @@ appManager.isRunningInStabilityTest((err, flag) => {
 function isRunningInStabilityTest(): Promise<boolean>
 ```
 
-查询当前系统是否处于稳定性测试场景。使用Promise异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
+查询当前系统是否处于稳定性测试场景。使用Promise异步回调。
+
+> **说明：**
+>
+> 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
 
 **起始版本：** 9
 

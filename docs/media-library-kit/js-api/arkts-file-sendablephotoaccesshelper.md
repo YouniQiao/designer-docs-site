@@ -18,30 +18,58 @@ import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 
 | Name | Description |
 | --- | --- |
-| [getPhotoAccessHelper](arkts-sendablephotoaccesshelper-getphotoaccesshelper-f.md#getPhotoAccessHelper-1) | Returns an instance of PhotoAccessHelper |
-| <!--DelRow-->[getPhotoAccessHelper](arkts-sendablephotoaccesshelper-getphotoaccesshelper-f-sys.md#getPhotoAccessHelper-1) | Returns an instance of PhotoAccessHelper |
+| [getPhotoAccessHelper](arkts-medialibrary-getphotoaccesshelper-f.md#getphotoaccesshelper-1) | Returns an instance of PhotoAccessHelper |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getPhotoAccessHelper](arkts-medialibrary-getphotoaccesshelper-f-sys.md#getphotoaccesshelper-2) | Returns an instance of PhotoAccessHelper |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AbsAlbum](arkts-sendablephotoaccesshelper-absalbum-i.md) | Defines the abstract interface of albums. |
-| [Album](arkts-sendablephotoaccesshelper-album-i.md) | Defines the album. |
-| [FetchResult](arkts-sendablephotoaccesshelper-fetchresult-i.md) | Provides APIs to manage the file retrieval result. |
-| [PhotoAccessHelper](arkts-sendablephotoaccesshelper-photoaccesshelper-i.md) | Helper functions to access photos and albums. |
-| [PhotoAsset](arkts-sendablephotoaccesshelper-photoasset-i.md) | Defines the photo asset |
-| <!--DelRow-->[SharedPhotoAsset](arkts-sendablephotoaccesshelper-sharedphotoasset-i-sys.md) | Defines the shared photo asset |
+| [AbsAlbum](arkts-medialibrary-absalbum-i.md) | Defines the abstract interface of albums. |
+| [Album](arkts-medialibrary-album-i.md) | Defines the album. |
+| [FetchResult](arkts-medialibrary-fetchresult-i.md) | Provides APIs to manage the file retrieval result. |
+| [PhotoAccessHelper](arkts-medialibrary-photoaccesshelper-i.md) | Helper functions to access photos and albums. |
+| [PhotoAsset](arkts-medialibrary-photoasset-i.md) | Defines the photo asset |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AbsAlbum](arkts-medialibrary-absalbum-i-sys.md) | Defines the abstract interface of albums. |
+| [Album](arkts-medialibrary-album-i-sys.md) | Defines the album. |
+| [PhotoAccessHelper](arkts-medialibrary-photoaccesshelper-i-sys.md) | Helper functions to access photos and albums. |
+| [PhotoAsset](arkts-medialibrary-photoasset-i-sys.md) | Defines the photo asset |
+| [SharedPhotoAsset](arkts-medialibrary-sharedphotoasset-i-sys.md) | Defines the shared photo asset |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AlbumSubtype](arkts-sendablephotoaccesshelper-albumsubtype-e.md) | Album subtype |
-| [AlbumType](arkts-sendablephotoaccesshelper-albumtype-e.md) | Enumerates the album types. |
-| [DynamicRangeType](arkts-sendablephotoaccesshelper-dynamicrangetype-e.md) | Enumerates the dynamic range types of media assets. |
-| <!--DelRow-->[MovingPhotoEffectMode](arkts-sendablephotoaccesshelper-movingphotoeffectmode-e-sys.md) | Enumeration of moving photo effect mode. |
-| [PhotoSubtype](arkts-sendablephotoaccesshelper-photosubtype-e.md) | Enumerates the PhotoAsset types. |
-| [PhotoType](arkts-sendablephotoaccesshelper-phototype-e.md) | Enumerates media file types. |
-| <!--DelRow-->[PositionType](arkts-sendablephotoaccesshelper-positiontype-e-sys.md) | Photo asset position |
-| <!--DelRow-->[ThumbnailVisibility](arkts-sendablephotoaccesshelper-thumbnailvisibility-e-sys.md) | Ability to access thumbnail |
+| [AlbumSubtype](arkts-medialibrary-albumsubtype-e.md) | Album subtype |
+| [AlbumType](arkts-medialibrary-albumtype-e.md) | Enumerates the album types. |
+| [DynamicRangeType](arkts-medialibrary-dynamicrangetype-e.md) | Enumerates the dynamic range types of media assets. |
+| [PhotoSubtype](arkts-medialibrary-photosubtype-e.md) | Enumerates the PhotoAsset types. |
+| [PhotoType](arkts-medialibrary-phototype-e.md) | Enumerates media file types. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AlbumSubtype](arkts-medialibrary-albumsubtype-e-sys.md) | Album subtype |
+| [AlbumType](arkts-medialibrary-albumtype-e-sys.md) | Enumerates the album types. |
+| [MovingPhotoEffectMode](arkts-medialibrary-movingphotoeffectmode-e-sys.md) | Enumeration of moving photo effect mode. |
+| [PhotoSubtype](arkts-medialibrary-photosubtype-e-sys.md) | Enumerates the PhotoAsset types. |
+| [PositionType](arkts-medialibrary-positiontype-e-sys.md) | Photo asset position |
+| [ThumbnailVisibility](arkts-medialibrary-thumbnailvisibility-e-sys.md) | Ability to access thumbnail |
+<!--DelEnd-->
 

@@ -9,7 +9,7 @@ Describes the parameters in the callback of the action event of the PiP controll
 ## Modules to Import
 
 ```TypeScript
-import { PiPWindow } from '@ohos.PiPWindow';
+import { PiPWindow } from '@kit.ArkUI';
 ```
 
 ## controlType
@@ -18,7 +18,8 @@ import { PiPWindow } from '@ohos.PiPWindow';
 controlType: PiPControlType
 ```
 
-Type of the action event of the PiP controller. The application performs processing based on the component type. For example, if the video play/pause component is touched, the application starts or stops the video.
+Type of the action event of the PiP controller. The application performs processing based on the component type.
+For example, if the video play/pause component is touched, the application starts or stops the video.
 
 **Type:** PiPControlType
 
@@ -34,7 +35,10 @@ Type of the action event of the PiP controller. The application performs process
 status?: PiPControlStatus
 ```
 
-Status of a component that can be switched. For example, for a microphone on/off component group, a camera on/off component group, and a mute/unmute component group, the value **PiPControlStatus.PLAY** means that the component is enabled and **PiPControlStatus.PAUSE** means that the component is disabled. For the hang-up component, the default value is **-1**.
+Status of a component that can be switched. For example, for a microphone on/off component group, a camera on/off
+component group, and a mute/unmute component group, the value **PiPControlStatus.PLAY** means that the component
+is enabled and **PiPControlStatus.PAUSE** means that the component is disabled. For the hang-up component, the
+default value is **-1**.
 
 **Type:** PiPControlStatus
 

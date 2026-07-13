@@ -1,6 +1,11 @@
 # TextSpanType
 
-Provides the [span](arkts-arkui-span.md) type information. > **NOTE** > > The system follows the priority order below when determining the menu type to display during text interactions: >
+Provides the [span](arkts-arkui-span.md) type information.
+
+> **NOTE**
+>
+> The system follows the priority order below when determining the menu type to display during text interactions:
+>
 
 **Since:** 11
 
@@ -60,7 +65,8 @@ Mixed span, which contains both text and imagery.
 DEFAULT = 3
 ```
 
-When this type is registered but **TEXT**, **IMAGE**, or **MIXED** types are not registered, this type will be triggered and displayed for those registered types.
+When this type is registered but **TEXT**, **IMAGE**, or **MIXED** types are not registered, this type will be
+triggered and displayed for those registered types.
 
 **Since:** 15
 

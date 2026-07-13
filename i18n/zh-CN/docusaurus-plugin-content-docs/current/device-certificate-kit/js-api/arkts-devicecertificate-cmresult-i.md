@@ -124,7 +124,8 @@ uri?: string
 uriList?: Array<string>
 ```
 
-表示证书URI列表。 26.0.0
+表示证书URI列表。
+26.0.0
 
 **类型：** Array<string>
 

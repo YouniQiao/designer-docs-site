@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ranging } from '@ohos.FusionConnectivity.ranging';
+import { ranging } from '@kit.ConnectivityKit';
 ```
 
 ## startRanging
@@ -12,7 +12,12 @@ import { ranging } from '@ohos.FusionConnectivity.ranging';
 function startRanging(params: RangingParams, callback: Callback<RangingResult>): void
 ```
 
-Initiates ranging with a specified device. If the link to the target device is already established, ranging starts directly. If not connected, this interface will: 1. Attempt to establish connection and perform pairing/encryption. 2. Query service to verify the device supports ranging. Initiate ranging upon confirmation. Ranging state updates are notified via onRangingStateChange callback.
+Initiates ranging with a specified device.
+If the link to the target device is already established, ranging starts directly.
+If not connected, this interface will:
+1. Attempt to establish connection and perform pairing/encryption.
+2. Query service to verify the device supports ranging. Initiate ranging upon confirmation.
+Ranging state updates are notified via onRangingStateChange callback.
 
 **Since:** 26.0.0
 

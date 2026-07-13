@@ -1,6 +1,9 @@
 # WebHttpCookie
 
-Defines the Web's HTTPCookie. <p><strong>API Note</strong>:<br> The maximum length allowed for each attribute value in a cookie string is 1024. </p>
+Defines the Web's HTTPCookie.
+<p><strong>API Note</strong>:<br>
+The maximum length allowed for each attribute value in a cookie string is 1024.
+</p>
 
 **Since:** 23
 
@@ -9,7 +12,7 @@ Defines the Web's HTTPCookie. <p><strong>API Note</strong>:<br> The maximum leng
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## domain

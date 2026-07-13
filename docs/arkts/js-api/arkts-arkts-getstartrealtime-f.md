@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { process } from '@ohos.process';
+import { process } from '@kit.ArkTS';
 ```
 
 ## getStartRealtime
@@ -12,7 +12,8 @@ import { process } from '@ohos.process';
 function getStartRealtime(): number
 ```
 
-Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to the time the process starts.
+Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to the
+time the process starts.
 
 **Since:** 8
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
+import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
 ## getAllUninstalledBundleResourceInfo
@@ -12,7 +12,8 @@ import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
 function getAllUninstalledBundleResourceInfo(resourceFlags: number): Promise<Array<BundleResourceInfo>>
 ```
 
-Obtains the bundle resource information of all uninstalled applications that have retained data based on the given resource flags. This API uses a promise to return the result.
+Obtains the bundle resource information of all uninstalled applications that have retained data based on the given
+resource flags. This API uses a promise to return the result.
 
 **Since:** 21
 
@@ -26,7 +27,7 @@ Obtains the bundle resource information of all uninstalled applications that hav
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resourceFlags | number | Yes | Type of the resource information to obtain. For details, see[ResourceFlag](arkts-ability-resourceflag-e-sys.md#resourceflag). |
+| resourceFlags | number | Yes | Type of the resource information to obtain. For details, see[ResourceFlag](arkts-ability-resourceflag-e-sys.md). |
 
 **Return value:**
 

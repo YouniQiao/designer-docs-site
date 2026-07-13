@@ -26,7 +26,8 @@ bundle: string
 uid?: number
 ```
 
-应用程序的UID。从[ApplicationInfo](@link ./bundleManager/ApplicationInfo::ApplicationInfo)获取，默认为0。 应用分身<!--Del-->或车机<!--DelEnd-->场景下，此参数为必填项。
+应用程序的UID。从[ApplicationInfo](@link ./bundleManager/ApplicationInfo::ApplicationInfo)获取，默认为0。
+应用分身<!--Del-->或车机<!--DelEnd-->场景下，此参数为必填项。
 
 **类型：** number
 

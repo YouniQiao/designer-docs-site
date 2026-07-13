@@ -2,7 +2,7 @@
 
 Defines the inline style options.
 
-**Inheritance/Implementation:** CounterV2InlineStyleOptions extends [CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md#counterv2commonoptions)
+**Inheritance/Implementation:** CounterV2InlineStyleOptions extends [CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Defines the inline style options.
 ## Modules to Import
 
 ```TypeScript
-import { CounterV2Component, CounterV2Options, CounterV2Type, CounterV2DateData } from '@ohos.arkui.advanced.CounterV2';
+import { CounterV2Component, CounterV2Options, CounterV2Type, CounterV2DateData } from '@kit.ArkUI';
 ```
 
 ## max
@@ -78,7 +78,8 @@ Trigger an event when the value of the counter has been changed.
 textWidth?: number
 ```
 
-Set text width of the counter component, ranges greater than or equal to 0. If undefined is passed, the text width will adapt to the text content.
+Set text width of the counter component, ranges greater than or equal to 0.
+If undefined is passed, the text width will adapt to the text content.
 
 **Type:** number
 

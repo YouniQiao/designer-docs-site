@@ -6,7 +6,9 @@
 function queryBundleStateInfos(begin: number, end: number, callback: AsyncCallback<BundleActiveInfoResponse>): void
 ```
 
-Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
+Queries usage information about each bundle within a specified period.
+
+This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
 
 **起始版本：** 7
 
@@ -51,7 +53,9 @@ bundleState.queryBundleStateInfos(0, 20000000000000, (err: BusinessError ,
 function queryBundleStateInfos(begin: number, end: number): Promise<BundleActiveInfoResponse>
 ```
 
-Queries usage information about each bundle within a specified period. This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
+Queries usage information about each bundle within a specified period.
+
+This method queries usage information at the {@link #BY_OPTIMIZED} interval by default.
 
 **起始版本：** 7
 

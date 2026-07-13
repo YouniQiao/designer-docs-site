@@ -1,6 +1,13 @@
 # HitTestMode
 
-Sets the response logic and node blocking rules for the hit test. > **NOTE** > > When multiple nodes in a **Stack** component have overlapping touch areas, if the touch point hits a child > component of the topmost node, only the topmost node will undergo hit testing by default. In this case, touch > testing for lower-layer nodes can only be triggered by setting the > [hitTestBehavior](arkts-arkui-commonmethod-c.md#hittestbehavior-1) of the topmost node to **HitTestMode.Transparent**.
+Sets the response logic and node blocking rules for the hit test.
+
+> **NOTE**
+>
+> When multiple nodes in a **Stack** component have overlapping touch areas, if the touch point hits a child
+> component of the topmost node, only the topmost node will undergo hit testing by default. In this case, touch
+> testing for lower-layer nodes can only be triggered by setting the
+> [hitTestBehavior](arkts-arkui-commonmethod-c.md#hittestbehavior-1) of the topmost node to **HitTestMode.Transparent**.
 
 **Since:** 9
 
@@ -9,10 +16,11 @@ Sets the response logic and node blocking rules for the hit test. > **NOTE** > >
 ## Default
 
 ```TypeScript
-Default = 0
+Default
 ```
 
-Default hit test mode. The node itself and its child nodes respond to the hit test, but block the hit test of sibling nodes. It does not affect the hit test of ancestor nodes.
+Default hit test mode. The node itself and its child nodes respond to the hit test, but block the hit test of
+sibling nodes. It does not affect the hit test of ancestor nodes.
 
 **Since:** 9
 
@@ -25,7 +33,7 @@ Default hit test mode. The node itself and its child nodes respond to the hit te
 ## Block
 
 ```TypeScript
-Block = 1
+Block
 ```
 
 The node itself responds to the hit test and blocks the hit test of child nodes, sibling nodes, and ancestor nodes.
@@ -41,10 +49,11 @@ The node itself responds to the hit test and blocks the hit test of child nodes,
 ## Transparent
 
 ```TypeScript
-Transparent = 2
+Transparent
 ```
 
-Both the node itself and its child nodes respond to the hit test and do not block the hit test of sibling nodes and ancestor nodes.
+Both the node itself and its child nodes respond to the hit test and do not block the hit test of sibling nodes and
+ancestor nodes.
 
 **Since:** 9
 
@@ -57,10 +66,11 @@ Both the node itself and its child nodes respond to the hit test and do not bloc
 ## None
 
 ```TypeScript
-None = 3
+None
 ```
 
-The node itself does not respond to the hit test and does not block the hit test of child nodes, sibling nodes, and ancestor nodes.
+The node itself does not respond to the hit test and does not block the hit test of child nodes, sibling nodes, and
+ancestor nodes.
 
 **Since:** 9
 
@@ -73,10 +83,11 @@ The node itself does not respond to the hit test and does not block the hit test
 ## BLOCK_HIERARCHY
 
 ```TypeScript
-BLOCK_HIERARCHY = 4
+BLOCK_HIERARCHY
 ```
 
-The node itself and its child nodes respond to the hit test, preventing all sibling nodes and parent nodes with lower priority from participating in the hit test.
+The node itself and its child nodes respond to the hit test, preventing all sibling nodes and parent nodes with
+lower priority from participating in the hit test.
 
 **Since:** 20
 
@@ -91,10 +102,11 @@ The node itself and its child nodes respond to the hit test, preventing all sibl
 ## BLOCK_DESCENDANTS
 
 ```TypeScript
-BLOCK_DESCENDANTS = 5
+BLOCK_DESCENDANTS
 ```
 
-The node itself does not respond to the hit test, and all its descendants (children, grandchildren, and more) also do not respond to the hit test. It does not affect the hit test of ancestor nodes.
+The node itself does not respond to the hit test, and all its descendants (children, grandchildren, and more) also
+do not respond to the hit test. It does not affect the hit test of ancestor nodes.
 
 **Since:** 20
 

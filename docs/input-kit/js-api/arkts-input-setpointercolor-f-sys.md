@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { pointer } from '@ohos.multimodalInput.pointer';
+import { pointer } from '@kit.InputKit';
 ```
 
 ## setPointerColor
@@ -12,7 +12,11 @@ import { pointer } from '@ohos.multimodalInput.pointer';
 function setPointerColor(color: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the mouse pointer color. This API uses an asynchronous callback to return the result. > **NOTE** > > When performing this operation, you need to connect an external device, such as a mouse or Bluetooth device.
+Sets the mouse pointer color. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> When performing this operation, you need to connect an external device, such as a mouse or Bluetooth device.
 
 **Since:** 10
 
@@ -73,7 +77,11 @@ struct Index {
 function setPointerColor(color: number): Promise<void>
 ```
 
-Sets the mouse pointer color. This API uses a promise to return the result. > **NOTE** > > When performing this operation, you need to connect an external device, such as a mouse or Bluetooth device.
+Sets the mouse pointer color. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> When performing this operation, you need to connect an external device, such as a mouse or Bluetooth device.
 
 **Since:** 10
 

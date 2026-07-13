@@ -1,8 +1,11 @@
 # GenericsTask
 
-Implements a generic task. **GenericsTask** inherits from [Task](arkts-arkts-execute-f.md#execute-1). During the creation of a generic task, the passed-in parameter types and return value types of concurrent functions are verified in the compilation phase. Other behaviors are the same as those during the creation of a task.
+Implements a generic task. **GenericsTask** inherits from
+[Task](arkts-arkts-execute-f.md#execute-1).
+During the creation of a generic task, the passed-in parameter types and return value types of concurrent functions
+are verified in the compilation phase. Other behaviors are the same as those during the creation of a task.
 
-**Inheritance/Implementation:** GenericsTask extends [Task](arkts-arkts-task-c.md#task)
+**Inheritance/Implementation:** GenericsTask extends [Task](arkts-arkts-task-c.md)
 
 **Since:** 13
 
@@ -11,7 +14,7 @@ Implements a generic task. **GenericsTask** inherits from [Task](arkts-arkts-exe
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## constructor

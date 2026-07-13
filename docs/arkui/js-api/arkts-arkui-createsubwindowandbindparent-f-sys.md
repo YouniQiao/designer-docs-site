@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## createSubWindowAndBindParent
@@ -13,7 +13,10 @@ function createSubWindowAndBindParent(name: string, parentId: number, ctx: BaseC
     parentWindowEventListener: WindowEventListener): Promise<Window>
 ```
 
-Create a subwindow with a specific name and bind parent. The parent window only supports main window. The subwindow follows the parent window to show/hide, but does not follow the parent window to destroy. The subwindow listens to the parent window lifecycle changes through the callback function.
+Create a subwindow with a specific name and bind parent.
+The parent window only supports main window.
+The subwindow follows the parent window to show/hide, but does not follow the parent window to destroy.
+The subwindow listens to the parent window lifecycle changes through the callback function.
 
 **Since:** 26.0.0
 

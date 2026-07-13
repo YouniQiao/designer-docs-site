@@ -6,21 +6,16 @@ JFIF metadata.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## 导入模块
+## densityUnit
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+readonly densityUnit?: number
 ```
 
-## xDensity
+JFIF density unit.
+The value should be an integer.
 
-```TypeScript
-readonly xDensity?: int
-```
-
-JFIF x density. The value should be an integer.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 
@@ -44,15 +39,32 @@ whether the JFIF image is progressive.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## densityUnit
+## version
 
 ```TypeScript
-readonly densityUnit?: int
+readonly version?: number[]
 ```
 
-JFIF density unit. The value should be an integer.
+JFIF version.
 
-**类型：** int
+**类型：** number[]
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## xDensity
+
+```TypeScript
+readonly xDensity?: number
+```
+
+JFIF x density.
+The value should be an integer.
+
+**类型：** number
 
 **起始版本：** 26.0.0
 
@@ -63,28 +75,13 @@ JFIF density unit. The value should be an integer.
 ## yDensity
 
 ```TypeScript
-readonly yDensity?: int
+readonly yDensity?: number
 ```
 
-JFIF y density. The value should be an integer.
+JFIF y density.
+The value should be an integer.
 
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## version
-
-```TypeScript
-readonly version?: int[]
-```
-
-JFIF version.
-
-**类型：** int[]
+**类型：** number
 
 **起始版本：** 26.0.0
 

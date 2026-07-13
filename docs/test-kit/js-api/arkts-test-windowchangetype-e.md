@@ -12,7 +12,8 @@ Enumerates the window change event types that can be listened for.
 WINDOW_UNDEFINED = 0
 ```
 
-Non-window change event. <br>Note: This value can only be used as a return value. If it is passed in an API, an exception will be thrown.
+Non-window change event.
+<br>Note: This value can only be used as a return value. If it is passed in an API, an exception will be thrown.
 
 **Since:** 22
 

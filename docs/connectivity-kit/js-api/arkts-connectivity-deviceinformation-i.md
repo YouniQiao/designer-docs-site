@@ -12,7 +12,8 @@ Describes the remote device information.
 manufacturerData: string
 ```
 
-The manufacturer data of the remote device. The maximum length is 255.
+The manufacturer data of the remote device.
+The maximum length is 255.
 
 **Type:** string
 
@@ -28,7 +29,8 @@ The manufacturer data of the remote device. The maximum length is 255.
 modelData: string
 ```
 
-The model data of the remote device. The maximum length is 255.
+The model data of the remote device.
+The maximum length is 255.
 
 **Type:** string
 

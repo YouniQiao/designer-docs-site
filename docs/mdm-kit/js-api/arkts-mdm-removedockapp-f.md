@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { applicationManager } from '@ohos.enterprise.applicationManager';
+import { applicationManager } from '@kit.MDMKit';
 ```
 
 ## removeDockApp
@@ -12,7 +12,12 @@ import { applicationManager } from '@ohos.enterprise.applicationManager';
 function removeDockApp(admin: Want, bundleName: string, abilityName: string): void
 ```
 
-Removes an application from the shortcut bar. > **NOTE** > > The following applications cannot be removed from the shortcut bar using this API: Application Center, Task > Center, Files, and Recycle Bin. Otherwise, error code 9201018 will be reported.
+Removes an application from the shortcut bar.
+
+> **NOTE**
+>
+> The following applications cannot be removed from the shortcut bar using this API: Application Center, Task
+> Center, Files, and Recycle Bin. Otherwise, error code 9201018 will be reported.
 
 **Since:** 24
 

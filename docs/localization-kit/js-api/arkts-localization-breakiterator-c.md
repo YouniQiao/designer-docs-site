@@ -9,7 +9,7 @@ Provides text line breaking capabilities, such as obtaining, moving, and identif
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## current
@@ -188,7 +188,8 @@ isBoundary = iterator.isBoundary(5); // isBoundary = false;
 last(): number
 ```
 
-Moves the break iterator to the last line break point, which is always the next position after the end of the processed text.
+Moves the break iterator to the last line break point, which is always the next position after the end of the
+processed text.
 
 **Since:** 8
 

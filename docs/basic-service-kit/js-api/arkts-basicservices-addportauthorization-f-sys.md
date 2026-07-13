@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { serial } from '@ohos.busManager.serial';
+import { serial } from '@kit.BasicServicesKit';
 ```
 
 ## addPortAuthorization
@@ -12,7 +12,8 @@ import { serial } from '@ohos.busManager.serial';
 function addPortAuthorization(tokenId: string, deviceId: string): Promise<void>
 ```
 
-Adds the permission for applications to access the serial port. This API is open only to system applications that display a pop-up window for serial port authorization.
+Adds the permission for applications to access the serial port.
+This API is open only to system applications that display a pop-up window for serial port authorization.
 
 **Since:** 26.0.0
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getDynamicIconInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getDynamicIconInfo(bundleName: string): Promise<Array<DynamicIconInfo>>
 ```
 
-Obtains the dynamic icon information of all users and all application clones based on the given bundle name. This API uses a promise to return the result.
+Obtains the dynamic icon information of all users and all application clones based on the given bundle name. This
+API uses a promise to return the result.
 
 **Since:** 20
 

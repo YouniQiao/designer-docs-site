@@ -1,6 +1,7 @@
 # Server
 
-Manages SSAP server. Before calling a SSAP server method, you must use {@link createServer} to create a SSAP server instance.
+Manages SSAP server. Before calling a SSAP server method,
+you must use {@link createServer} to create a SSAP server instance.
 
 **Since:** 26.0.0
 
@@ -34,7 +35,6 @@ Adds a SSAP service.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | 36100003 | NearLink disabled. |
-| 36100042 | Property array is empty. |
 | 36100043 | Invalid UUID. |
 | 36100044 | NearLink standard UUID not allowed. |
 | 36100099 | Operation failed. |
@@ -113,8 +113,6 @@ Unsubscribes from server connection state changed events.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -124,12 +122,6 @@ Unsubscribes from server connection state changed events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;ConnectionChangeState&gt; | No | Callback used to listen for the SSAP connection state changed event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## offMtuChange
 
@@ -141,8 +133,6 @@ Unsubscribes from MTU changed events.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -152,12 +142,6 @@ Unsubscribes from MTU changed events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;number&gt; | No | Callback used to listen for the MTU changed event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## offPropertyRead
 
@@ -169,8 +153,6 @@ Unsubscribes from property read events from the client.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -180,12 +162,6 @@ Unsubscribes from property read events from the client.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;PropertyReadRequest&gt; | No | Callback used to listen for the property operation event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## offPropertyWrite
 
@@ -197,8 +173,6 @@ Unsubscribes from property write events from the client.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
-
 **Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NearLink.Base
@@ -209,23 +183,19 @@ Unsubscribes from property write events from the client.
 | --- | --- | --- | --- |
 | callback | Callback&lt;PropertyWriteRequest&gt; | No | Callback used to listen for the property operation event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onConnectionStateChange
 
 ```TypeScript
 onConnectionStateChange(callback: Callback<ConnectionChangeState>): void
 ```
 
-Subscribes to server connection state changed events. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned.
+Subscribes to server connection state changed events.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -237,12 +207,6 @@ Subscribes to server connection state changed events. If the user has the ohos.p
 | --- | --- | --- | --- |
 | callback | Callback&lt;ConnectionChangeState&gt; | Yes | Callback used to listen for the SSAP connection state changed event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onMtuChange
 
 ```TypeScript
@@ -251,9 +215,9 @@ onMtuChange(callback: Callback<number>): void
 
 Subscribes to MTU changed events.
 
-**Since:** 26.0.0
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -263,13 +227,7 @@ Subscribes to MTU changed events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;number&gt; | Yes | Callback used to listen for the MTU changed event |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| callback | Callback&lt;number&gt; | Yes | Callback used to listen for the MTU changed event. |
 
 ## onPropertyRead
 
@@ -277,11 +235,13 @@ Subscribes to MTU changed events.
 onPropertyRead(callback: Callback<PropertyReadRequest>): void
 ```
 
-Subscribes to property read events from the client. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned.
+Subscribes to property read events from the client.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -293,23 +253,19 @@ Subscribes to property read events from the client. If the user has the ohos.per
 | --- | --- | --- | --- |
 | callback | Callback&lt;PropertyReadRequest&gt; | Yes | Callback used to listen for the property operation event. |
 
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-
 ## onPropertyWrite
 
 ```TypeScript
 onPropertyWrite(callback: Callback<PropertyWriteRequest>): void
 ```
 
-Subscribes to property write events from the client. If the user has the ohos.permission.GET_NEARLINK_PEER_MAC permission, the real device address is returned. Otherwise, a random device address is returned.
+Subscribes to property write events from the client.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -320,12 +276,6 @@ Subscribes to property write events from the client. If the user has the ohos.pe
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | callback | Callback&lt;PropertyWriteRequest&gt; | Yes | Callback used to listen for the property operation event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 
 ## removeService
 

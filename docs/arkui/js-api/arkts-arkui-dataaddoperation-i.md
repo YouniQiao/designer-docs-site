@@ -12,7 +12,9 @@ Represents an operation for adding data.
 count?: number
 ```
 
-Number of data records to insert. Default value: **1**.
+Number of data records to insert.
+
+Default value: **1**.
 
 **Type:** number
 

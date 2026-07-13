@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## registerDeviceSelectCallback
@@ -12,7 +12,10 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 function registerDeviceSelectCallback(callback: DeviceSelectCallback): void
 ```
 
-Registers the callback for companion device selection.
+Registers a callback for companion device selection. When the system requires the user to select a companion
+device, this callback is triggered. The application needs to return the information about the selected device in
+the callback. Through this callback, the application can implement custom device selection logic, for example,
+displaying a device selection screen for the user to select a device.
 
 **Since:** 23
 
@@ -28,7 +31,7 @@ Registers the callback for companion device selection.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | DeviceSelectCallback | Yes | Callback used to return the companion device selection result. |
+| callback | DeviceSelectCallback | Yes | Callback for the companion device selection. When this callback isinvoked, **selectPurpose** is passed in. The application needs to return the corresponding**DeviceSelectResult**, including the information about the selected device. |
 
 **Error codes:**
 

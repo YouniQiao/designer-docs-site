@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { settings } from '@ohos.settings';
+import { settings } from '@kit.BasicServicesKit';
 ```
 
 ## registerKeyObserver
@@ -12,7 +12,8 @@ import { settings } from '@ohos.settings';
 function registerKeyObserver(context: Context, name: string, domainName: string, observer: AsyncCallback<void>): boolean
 ```
 
-Monitor registration key(synchronous method) [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
+Monitor registration key(synchronous method)
+[USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
 
 **Since:** 11
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## insertData
@@ -12,7 +12,8 @@ import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
 function insertData(options: Options, data: UnifiedData, callback: AsyncCallback<string>): void
 ```
 
-Inserts data to the UDMF public data channel. This API uses an asynchronous callback to return the unique identifier of the data inserted.
+Inserts data to the UDMF public data channel. This API uses an asynchronous callback to return the unique
+identifier of the data inserted.
 
 **Since:** 10
 
@@ -75,7 +76,8 @@ try {
 function insertData(options: Options, data: UnifiedData): Promise<string>
 ```
 
-Inserts data to the UDMF public data channel. This API uses a promise to return the unique identifier of the data inserted.
+Inserts data to the UDMF public data channel. This API uses a promise to return the unique identifier of the data
+inserted.
 
 **Since:** 10
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArcSwiperAttribute,ArcSwiper,ArcDirection,ArcSwiperController,ArcDotIndicator } from '@kit.ArkUI';
+import { ArcSwiperAttribute, ArcSwiper, ArcDirection, ArcSwiperController, ArcDotIndicator } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,31 +12,31 @@ import { ArcSwiperAttribute,ArcSwiper,ArcDirection,ArcSwiperController,ArcDotInd
 
 | Name | Description |
 | --- | --- |
-| [ArcDotIndicator](arkts-arcdotindicator-c.md) | 提供弧形圆点指示器属性及功能。 |
-| [ArcSwiperAttribute](arkts-arcswiperattribute-c.md) | 除支持[通用属性]{@link common}外，还支持以下属性。 |
-| [ArcSwiperController](arkts-arcswipercontroller-c.md) | ArcSwiper容器组件的控制器，可以将此对象绑定至ArcSwiper组件，可以通过它控制翻页。 |
+| [ArcDotIndicator](arkts-arkui-arcdotindicator-c.md) | Describes the properties and behavior of the arc dot navigation indicator. |
+| [ArcSwiperAttribute](arkts-arkui-arcswiperattribute-c.md) | In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported. |
+| [ArcSwiperController](arkts-arkui-arcswipercontroller-c.md) | Implements the controller of the **ArcSwiper** component. You can bind this object to the **ArcSwiper** component anduse it to control page switching. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ArcSwiperInterface](arkts-arcswiperinterface-i.md) | Provide an interface for ArcSwiper. |
-| [SwiperContentAnimatedTransition](arkts-swipercontentanimatedtransition-i.md) | ArcSwiper自定义切换动画相关信息。 |
-| [SwiperContentTransitionProxy](arkts-swipercontenttransitionproxy-i.md) | ArcSwiper自定义切换动画执行过程中，返回给开发者的proxy对象。开发者可通过该对象获取自定义动画视窗内的页面信息，同时，也可以通过调用该对象的finishTransition接口通知ArcSwiper组件页面自定义动画已结 束。 > **说明：** > - 假设当前选中的子组件的索引为0，从第0页切换到第1页的动画过程中，每帧都会对视窗内所有页面触发回调，当视窗内有第0页和第1页两页时，每帧会触发两次回调。其中第一次回调的selectedIndex为0，index为0， > position为当前帧第0页相对于动画开始前第0页的移动比例，mainAxisLength为主轴方向上第0页的长度；第二次回调的selectedIndex仍为0，index为1，position为当前帧第1页相对于动画开始前第0 > 页的移动比例，mainAxisLength为主轴方向上第1页的长度。 > > - 若动画曲线为弹簧插值曲线，从第0页切换到第1页的动画过程中，可能会因为离手时的位置和速度，先过滑到第2页，再回弹到第1页，该过程中每帧会对视窗内第1页和第2页触发回调。 |
+| [ArcSwiperInterface](arkts-arkui-arcswiperinterface-i.md) | Provide an interface for ArcSwiper. |
+| [SwiperContentAnimatedTransition](arkts-arkui-swipercontentanimatedtransition-i.md) | Provides the information about the custom page transition animation. |
+| [SwiperContentTransitionProxy](arkts-arkui-swipercontenttransitionproxy-i.md) | Implements the proxy object returned during the execution of the custom page transition animation of the**ArcSwiper** component. You can use this object to obtain the page information in the custom animation viewport. Youcan also call the **finishTransition** API of this object to notify the **ArcSwiper** component that the customanimation has finished playing.&gt; **NOTE**&gt; - For example, when the index of the currently selected child component is 0, during a transition animation from&gt; page 0 to page 1, the callback is triggered for all pages within the viewport on every frame. When pages 0 and 1&gt; are both in the viewport, the callback is triggered twice per frame. The first callback has **selectedIndex** as&gt; **0**, **index** as **0**, **position** as the ratio of how much page 0 has moved relative to its position before&gt; the animation started on the current frame, and **mainAxisLength** as the length of page 0 on the main axis. The&gt; second callback has **selectedIndex** as **0**, **index** as **1**, **position** as the ratio of how much page 1&gt; has moved relative to page 0 before the animation started on the current frame, and **mainAxisLength** as the&gt; length of page 1 on the main axis.&gt;&gt; - If the animation curve is a spring interpolation curve, during the transition animation from page 0 to page 1,&gt; due to the position and velocity when the user lifts their finger off the screen, animation may overshoot and slide&gt; past to page 2, then bounce back to page 1. Throughout this process, a callback is triggered for pages 1 and 2&gt; within the viewport on every frame. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ArcDirection](arkts-arcdirection-e.md) | 弧形方向。 |
+| [ArcDirection](arkts-arkui-arcdirection-e.md) | Declare the direction of arc indicator. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [AnimationEndHandler](arkts-animationendhandler-t.md) | 切换动画结束时的回调。 |
-| [AnimationStartHandler](arkts-animationstarthandler-t.md) | 切换动画开始时的回调。 |
-| [FinishAnimationHandler](arkts-finishanimationhandler-t.md) | 停止播放动画时，告知应用。 |
-| [GestureSwipeHandler](arkts-gestureswipehandler-t.md) | 在页面跟手滑动过程中，逐帧触发的回调。 |
-| [IndexChangedHandler](arkts-indexchangedhandler-t.md) | 当前显示元素的索引变化时，告知应用。 |
+| [AnimationEndHandler](arkts-arkui-animationendhandler-t.md) | Defines the callback triggered when the page transition animation ends. |
+| [AnimationStartHandler](arkts-arkui-animationstarthandler-t.md) | Defines the callback triggered when the page transition animation starts. |
+| [FinishAnimationHandler](arkts-arkui-finishanimationhandler-t.md) | Defines the callback to notify the application when the animation stops playing. |
+| [GestureSwipeHandler](arkts-arkui-gestureswipehandler-t.md) | Defines the callback triggered on a frame-by-frame basis during a swipe-based page turn. |
+| [IndexChangedHandler](arkts-arkui-indexchangedhandler-t.md) | Defines the callback to notify the application when the index of the currently displayed element changes. |
 

@@ -174,7 +174,8 @@ Static constructor used to create a **BottomTabBarStyle** instance.
 padding(value: Padding | Dimension | LocalizedPadding): BottomTabBarStyle
 ```
 
-Sets the padding of the bottom tab. It cannot be set in percentage. When the parameter is of the Dimension type, the value applies to all sides.
+Sets the padding of the bottom tab. It cannot be set in percentage. When the parameter is of the Dimension type,
+the value applies to all sides.
 
 **Since:** 10
 
@@ -188,7 +189,7 @@ Sets the padding of the bottom tab. It cannot be set in percentage. When the par
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Padding \| Dimension \| LocalizedPadding | Yes | Padding of the bottom tab.<br>Value range: [0, +��]<br>Default value: **{left:4.0vp,right:4.0vp,top:0.0vp,bottom:0.0vp}**<br>If of the LocalizedPadding type, thisattribute supports the mirroring capability.<br>Default value:**{start:LengthMetrics.vp(4),end:LengthMetrics.vp(4),**<br>**top:LengthMetrics.vp(0),bottom:LengthMetrics.vp(0)}**<br>**Since:** 12 |
+| value | Padding \| Dimension \| LocalizedPadding | Yes | Padding of the bottom tab.<br>Value range: [0, +∞]<br>Default value: **{left:4.0vp,right:4.0vp,top:0.0vp,bottom:0.0vp}**<br>If of the LocalizedPadding type, thisattribute supports the mirroring capability.<br>Default value:**{start:LengthMetrics.vp(4),end:LengthMetrics.vp(4),**<br>**top:LengthMetrics.vp(0),bottom:LengthMetrics.vp(0)}**<br>**Since:** 12 |
 
 **Return value:**
 
@@ -202,7 +203,9 @@ Sets the padding of the bottom tab. It cannot be set in percentage. When the par
 symmetricExtensible(value: boolean): BottomTabBarStyle
 ```
 
-Sets whether the images and text on the bottom tab can be symmetrically extended by the minimum value of the available space on the left and right bottom tabs. This parameter is valid only between bottom tabs in fixed horizontal mode.
+Sets whether the images and text on the bottom tab can be symmetrically extended by the minimum value of the
+available space on the left and right bottom tabs. This parameter is valid only between bottom tabs in fixed
+horizontal mode.
 
 **Since:** 10
 

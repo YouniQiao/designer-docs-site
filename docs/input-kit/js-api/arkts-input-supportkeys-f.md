@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { inputDevice } from '@ohos.multimodalInput.inputDevice';
+import { inputDevice } from '@kit.InputKit';
 ```
 
 ## supportKeys
@@ -12,7 +12,8 @@ import { inputDevice } from '@ohos.multimodalInput.inputDevice';
 function supportKeys(deviceId: number, keys: Array<KeyCode>, callback: AsyncCallback<Array<boolean>>): void
 ```
 
-Queries whether a specified input device supports specified keys. This API uses an asynchronous callback to return the result.
+Queries whether a specified input device supports specified keys. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 

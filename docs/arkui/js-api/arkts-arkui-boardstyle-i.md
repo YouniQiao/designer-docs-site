@@ -12,7 +12,13 @@ Represents a board style object.
 borderRadius?: Length
 ```
 
-Rounded corner radius of the board. It cannot be set in percentage. Default value: **8.0** Unit: vp Value range: [0, +��)
+Rounded corner radius of the board. It cannot be set in percentage.
+
+Default value: **8.0**
+
+Unit: vp
+
+Value range: [0, +∞)
 
 **Type:** Length
 

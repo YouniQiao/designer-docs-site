@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## confirmInvitation
@@ -12,7 +12,8 @@ import { cloudData } from '@ohos.data.cloudData';
 function confirmInvitation(invitationCode: string, state: State, callback: AsyncCallback<Result<string>>): void
 ```
 
-Confirms the invitation based on the sharing invitation code and obtains the shared resource ID. This API uses an asynchronous callback to return the result.
+Confirms the invitation based on the sharing invitation code and obtains the shared resource ID.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -61,7 +62,8 @@ cloudData.sharing.confirmInvitation('sharing_invitation_code_test', cloudData.sh
 function confirmInvitation(invitationCode: string, state: State): Promise<Result<string>>
 ```
 
-Confirms the invitation based on the sharing invitation code and obtains the shared resource ID. This API uses a promise to return the result.
+Confirms the invitation based on the sharing invitation code and obtains the shared resource ID.
+This API uses a promise to return the result.
 
 **Since:** 11
 

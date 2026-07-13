@@ -1,6 +1,7 @@
-# AudioPersonalizedSpatialEnabledChangeForAnyDevice
+# AudioPersonalizedSpatialEnabledChangeForAnyDevice（系统接口）
 
-This interface is used to notify the listener of personalized spatialization enabled state change of any device.
+通知监听器开启个性化空间
+任何设备的状态变化。
 
 **起始版本：** 26.0.0
 
@@ -8,19 +9,13 @@ This interface is used to notify the listener of personalized spatialization ena
 
 **系统接口：** 此接口为系统接口。
 
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
 ## deviceDescriptor
 
 ```TypeScript
 deviceDescriptor: AudioDeviceDescriptor
 ```
 
-Audio device description.
+音频设备描述。
 
 **类型：** AudioDeviceDescriptor
 
@@ -38,7 +33,7 @@ Audio device description.
 enabled: boolean
 ```
 
-Personalized spatialization enable state.
+个性化空间化使能状态。
 
 **类型：** boolean
 

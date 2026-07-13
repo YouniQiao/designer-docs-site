@@ -9,7 +9,7 @@ Provides unified dialog APIs.
 ## Modules to Import
 
 ```TypeScript
-import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@ohos.arkui.dialog';
+import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -24,7 +24,7 @@ import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseControlle
 | [DialogBaseOptions](arkts-arkui-dialogbaseoptions-i.md) | Base options shared by all dialog types. |
 | [DialogMessage](arkts-arkui-dialogmessage-i.md) | Message options for the dialog box, combining message content with text style. |
 | [DialogStyleOptions](arkts-arkui-dialogstyleoptions-i.md) | Options for the fixed-style dialog. |
-| [DialogCustomOptions](arkts-arkui-dialogcustomoptions-i.md) | Options for the custom-style dialog. The dialog content is provided as the first parameter of present() method, not inside this options object. |
+| [DialogCustomOptions](arkts-arkui-dialogcustomoptions-i.md) | Options for the custom-style dialog.The dialog content is provided as the first parameter of present() method,not inside this options object. |
 
 <!--Del-->
 ### Interfaces（系统接口）

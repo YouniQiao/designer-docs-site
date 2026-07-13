@@ -1,6 +1,6 @@
 # Polyline properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md#commonmethod), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** PolylineAttribute extends [CommonShapeMethod<PolylineAttribute>](CommonShapeMethod<PolylineAttribute>)
 
@@ -14,7 +14,8 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md#commonme
 points(value: Array<any>)
 ```
 
-Sets the list of coordinates through which the polyline passes. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+Sets the list of coordinates through which the polyline passes. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
 
 **Since:** 7
 

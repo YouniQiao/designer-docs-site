@@ -12,7 +12,9 @@ The visibility of a form.
 UNKNOWN = 0
 ```
 
-Indicates the type of the form type is unknown. Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are changing to unknown.
+Indicates the type of the form type is unknown.
+Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are
+changing to unknown.
 
 **Since:** 10
 
@@ -26,7 +28,9 @@ Indicates the type of the form type is unknown. Often used as a condition variab
 FORM_VISIBLE = 1
 ```
 
-Indicates the type of the form is visible. Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are changing to visible.
+Indicates the type of the form is visible.
+Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are
+changing to visible.
 
 **Since:** 9
 
@@ -40,7 +44,9 @@ Indicates the type of the form is visible. Often used as a condition variable in
 FORM_INVISIBLE = 2
 ```
 
-Indicates the type of the form is invisible. Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are changing to invisible.
+Indicates the type of the form is invisible.
+Often used as a condition variable in function OnVisibilityChange to specify actions only on forms that are
+changing to invisible.
 
 **Since:** 9
 

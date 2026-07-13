@@ -28,7 +28,8 @@ Sheet will not aovid keyboard.
 TRANSLATE_AND_RESIZE = 1
 ```
 
-Firstly sheet will avoid keyboard by changing its height. And then sheet will avoid by resizing after reaching its maximum height.
+Firstly sheet will avoid keyboard by changing its height.
+And then sheet will avoid by resizing after reaching its maximum height.
 
 **Since:** 13
 
@@ -60,7 +61,8 @@ Sheet will only avoid keyboard by resizing the content.
 TRANSLATE_AND_SCROLL = 3
 ```
 
-Firstly sheet will avoid keyboard by changing its height. And then sheet will avoid keyboard by scrolling after reaching its maximum height.
+Firstly sheet will avoid keyboard by changing its height.
+And then sheet will avoid keyboard by scrolling after reaching its maximum height.
 
 **Since:** 13
 

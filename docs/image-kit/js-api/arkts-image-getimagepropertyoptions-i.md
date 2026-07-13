@@ -1,12 +1,12 @@
 # GetImagePropertyOptions
 
-表示查询图片属性的索引。 > **说明：** > > [ImagePropertyOptions]image.ImagePropertyOptions代替。
+Describes the image properties.
 
 **Since:** 7
 
 **Deprecated since:** 11
 
-**Substitute:** image.ImagePropertyOptions
+**Substitutes:** [ImagePropertyOptions](arkts-image-imagepropertyoptions-i.md)
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
@@ -22,7 +22,7 @@ import { image } from '@kit.ImageKit';
 defaultValue?: string
 ```
 
-默认属性值。默认值为空。
+Default property value. The default value is null.
 
 **Type:** string
 
@@ -30,7 +30,7 @@ defaultValue?: string
 
 **Deprecated since:** 11
 
-**Substitute:** image.ImagePropertyOptions#defaultValue
+**Substitutes:** [defaultValue](arkts-image-imagepropertyoptions-i.md#defaultvalue)
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
@@ -40,15 +40,15 @@ defaultValue?: string
 index?: number
 ```
 
-图片序号。默认值为0。
+Index of the image. The default value is **0**.
 
 **Type:** number
 
 **Since:** 7
 
-**Deprecated since:** 11
+**Deprecated since:** 11  
 
-**Substitute:** image.ImagePropertyOptions#index
+**Substitutes:** [index](arkts-image-imagepropertyoptions-i.md#index)
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 

@@ -4,7 +4,8 @@
 export type AgentSkill = _AgentSkill
 ```
 
-Skills in an AgentCard represent the specific abilities, expertise, and proficiencies that an agent possesses for performing tasks or solving problems.
+Skills in an AgentCard represent the specific abilities, expertise, and proficiencies that an
+agent possesses for performing tasks or solving problems.
 
 **Since:** 24
 

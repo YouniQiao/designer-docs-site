@@ -1,10 +1,7 @@
 # AVMimeTypes
 
-```TypeScript
-enum AVMimeTypes
-```
-
-Enumerates the MIME type, which is set by using [setMimeType](arkts-media-mediasource-i.md#setMimeType).
+Enumerates the MIME type, which is set by using
+[setMimeType](arkts-media-mediasource-i.md#setmimetype-1).
 
 **Since:** 12
 
@@ -20,7 +17,7 @@ Local M3U8 file.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

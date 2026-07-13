@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## getSandboxAppConfig
@@ -12,7 +12,10 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function getSandboxAppConfig(): Promise<string>
 ```
 
-Obtains sandbox application configuration. This API uses a promise to return the result. This API obtains the sandbox application configuration, which can be used to read or verify the current configuration status.
+Obtains sandbox application configuration. This API uses a promise to return the result.
+
+This API obtains the sandbox application configuration, which can be used to read or verify the current
+configuration status.
 
 **Since:** 11
 

@@ -1,8 +1,10 @@
 # PhotoSessionForSys (System API)
 
-Implements a photo session for system applications, which sets the parameters of the normal photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md#session).
+Implements a photo session for system applications, which sets the parameters of the normal photo mode and saves
+all [CameraInput](arkts-camera-camerainput-i.md) and [CameraOutput](arkts-camera-cameraoutput-i.md)
+instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md).
 
-**Inheritance/Implementation:** PhotoSessionForSys extends [PhotoSession](arkts-camera-photosession-i.md#photosession), [Beauty](arkts-camera-beauty-i-sys.md#beauty), [ColorEffect](arkts-camera-coloreffect-i-sys.md#coloreffect), [ColorManagement](arkts-camera-colormanagement-i.md#colormanagement), [Macro](arkts-camera-macro-i-sys.md#macro), [SceneDetection](arkts-camera-scenedetection-i-sys.md#scenedetection), [EffectSuggestion](arkts-camera-effectsuggestion-i-sys.md#effectsuggestion), [DepthFusion](arkts-camera-depthfusion-i-sys.md#depthfusion)
+**Inheritance/Implementation:** PhotoSessionForSys extends [PhotoSession](arkts-camera-photosession-i.md), [Beauty](arkts-camera-beauty-i-sys.md), [ColorEffect](arkts-camera-coloreffect-i-sys.md), [ColorManagement](arkts-camera-colormanagement-i.md), [Macro](arkts-camera-macro-i-sys.md), [SceneDetection](arkts-camera-scenedetection-i-sys.md), [EffectSuggestion](arkts-camera-effectsuggestion-i-sys.md), [DepthFusion](arkts-camera-depthfusion-i-sys.md)
 
 **Since:** 11
 
@@ -13,6 +15,6 @@ Implements a photo session for system applications, which sets the parameters of
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 

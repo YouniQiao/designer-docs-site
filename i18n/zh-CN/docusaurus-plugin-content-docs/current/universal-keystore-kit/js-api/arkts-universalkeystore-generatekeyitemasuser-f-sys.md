@@ -6,7 +6,8 @@
 function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: HuksOptions): Promise<void>
 ```
 
-指定用户身份生成密钥，使用Promise方式异步返回结果。基于密钥不出[TEE](../../../../security/UniversalKeystoreKit/huks-concepts.md#可信执行环境tee)原则，通过 promise不会返回密钥材料内容，只用于表示此次调用是否成功。
+指定用户身份生成密钥，使用Promise方式异步返回结果。基于密钥不出[TEE](../../../../security/UniversalKeystoreKit/huks-concepts.md#可信执行环境tee)原则，通过
+promise不会返回密钥材料内容，只用于表示此次调用是否成功。
 
 **起始版本：** 12
 
@@ -36,8 +37,8 @@ function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: Hu
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application permission is not sufficient, which may be caused by lack of<br>cross-account permission, or the system has not been unlocked by user, or the user does not exist. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | non-system applications are not allowed to use system APIs. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | api is not supported |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | api is not supported |
 | [12000001](../errorcode-huks.md#12000001-该子功能不支持特性) | Feature is not supported. Possible causes:1. The algorithm mode is not supported.2. The group key is not supported.3. The crypto extension key is not supported. |
 | [12000002](../errorcode-huks.md#12000002-缺少密钥算法参数) | algorithm param is missing |
 | [12000003](../errorcode-huks.md#12000003-无效的密钥算法参数) | algorithm param is invalid |
@@ -48,7 +49,7 @@ function generateKeyItemAsUser(userId: number, keyAlias: string, huksOptions: Hu
 | [12000013](../errorcode-huks.md#12000013-密钥设置生物访问控制时待绑定的凭据不存在) | queried credential does not exist |
 | [12000014](../errorcode-huks.md#12000014-内存不足) | memory is insufficient |
 | [12000015](../errorcode-huks.md#12000015-调用其他系统服务失败) | Failed to obtain the security information via UserIAM |
-| [12000017](../errorcode-huks.md#12000017-同名密钥已存在) | The key with the same alias already exists<br>**适用版本：** 20 |
+| [12000017](../errorcode-huks.md#12000017-同名密钥已存在) | The key with the same alias already exists<br>**适用版本：** 20+ |
 
 **示例：**
 

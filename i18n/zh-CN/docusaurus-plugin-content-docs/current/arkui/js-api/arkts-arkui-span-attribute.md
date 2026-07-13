@@ -1,6 +1,9 @@
 # Span属性/事件
 
-属性继承自[BaseSpan](arkts-arkui-basespan-c.md#basespan)。 通用事件支持[点击事件onClick](arkts-arkui-commonmethod-c.md#onclick-2)、 [悬浮事件onHover](arkts-arkui-commonmethod-c.md#onhover-1)。
+属性继承自[BaseSpan](arkts-arkui-basespan-c.md)。
+
+通用事件支持[点击事件onClick](arkts-arkui-commonmethod-c.md#onclick-2)、
+[悬浮事件onHover](arkts-arkui-commonmethod-c.md#onhover-1)。
 
 **继承/实现关系：** SpanAttribute extends [BaseSpan<SpanAttribute>](BaseSpan<SpanAttribute>)
 
@@ -205,7 +208,7 @@ fontWeight(value: number | FontWeight | ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number \| FontWeight \| ResourceStr | 是 | 文本的字体粗细，number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。<br/>默认值：FontWeight.Normal <br>从API version 20开始，支持[Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-i.md#resource)类型。<br>**起始版本：** 20 |
+| value | number \| FontWeight \| ResourceStr | 是 | 文本的字体粗细，number类型取值[100, 900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。<br/>默认值：FontWeight.Normal <br>从API version 20开始，支持[Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-i.md)类型。<br>**起始版本：** 20 |
 
 ## fontWeight
 
@@ -252,7 +255,7 @@ letterSpacing(value: number | ResourceStr)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number \| ResourceStr | 是 | 文本字符间距。<br/>单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位) <br>从API version 20开始，支持[Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-i.md#resource)类型。<br>**起始版本：** 20 |
+| value | number \| ResourceStr | 是 | 文本字符间距。<br/>单位：[fp](../../../../reference/apis-arkui/arkui-ts/ts-pixel-units.md#基本像素单位) <br>从API version 20开始，支持[Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-i.md)类型。<br>**起始版本：** 20 |
 
 ## lineHeight
 

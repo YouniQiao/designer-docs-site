@@ -12,7 +12,11 @@ Enumerates the key storage modes.
 HUKS_STORAGE_TEMP = 0
 ```
 
-The key is managed locally. Note: This tag is supported since API version 8 and deprecated since API version 10. No substitute is provided because this tag is not used in key management. In key derivation scenarios, use **HUKS_STORAGE_ONLY_USED_IN_HUKS** or **HUKS_STORAGE_KEY_EXPORT_ALLOWED**.
+The key is managed locally.
+
+Note: This tag is supported since API version 8 and deprecated since API version 10. No substitute is provided
+because this tag is not used in key management. In key derivation scenarios, use
+**HUKS_STORAGE_ONLY_USED_IN_HUKS** or **HUKS_STORAGE_KEY_EXPORT_ALLOWED**.
 
 **Since:** 8
 
@@ -26,7 +30,11 @@ The key is managed locally. Note: This tag is supported since API version 8 and 
 HUKS_STORAGE_PERSISTENT = 1
 ```
 
-The key is managed by the HUKS service. Note: This tag is supported since API version 8 and deprecated since API version 10. No substitute is provided because this tag is not used in key management. In key derivation scenarios, use **HUKS_STORAGE_ONLY_USED_IN_HUKS** or **HUKS_STORAGE_KEY_EXPORT_ALLOWED**.
+The key is managed by the HUKS service.
+
+Note: This tag is supported since API version 8 and deprecated since API version 10. No substitute is provided
+because this tag is not used in key management. In key derivation scenarios, use
+**HUKS_STORAGE_ONLY_USED_IN_HUKS** or **HUKS_STORAGE_KEY_EXPORT_ALLOWED**.
 
 **Since:** 8
 

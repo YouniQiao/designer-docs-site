@@ -6,7 +6,13 @@
 function addAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 ```
 
-添加蓝牙设备可用名单。添加蓝牙设备可用名单后当前设备仅允许连接该名单下的蓝牙设备。从API version 22开始，数组中的MAC地址必须符合蓝牙MAC规范（例如：00:1A:2B:3C:4D:5E），添加时会移除不合法的MAC 地址，仅添加合法的MAC地址。 以下情况下，通过本接口添加蓝牙设备可用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了蓝牙。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口启用蓝牙后，可解除冲突。 2. 已经通过[addDisallowedBluetoothDevices](arkts-mdm-adddisallowedbluetoothdevices-f.md#adddisallowedbluetoothdevices-1)接口添加了蓝牙设备禁用名单。通过[removeDisallowedBluetoothDevices](arkts-mdm-removedisallowedbluetoothdevices-f.md#removedisallowedbluetoothdevices-1)移除蓝牙设备禁用名单后，可解除冲突。
+添加蓝牙设备可用名单。添加蓝牙设备可用名单后当前设备仅允许连接该名单下的蓝牙设备。从API version 22开始，数组中的MAC地址必须符合蓝牙MAC规范（例如：00:1A:2B:3C:4D:5E），添加时会移除不合法的MAC
+地址，仅添加合法的MAC地址。
+
+以下情况下，通过本接口添加蓝牙设备可用名单，会报策略冲突：
+
+1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了蓝牙。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口启用蓝牙后，可解除冲突。
+2. 已经通过[addDisallowedBluetoothDevices](arkts-mdm-adddisallowedbluetoothdevices-f.md#adddisallowedbluetoothdevices-1)接口添加了蓝牙设备禁用名单。通过[removeDisallowedBluetoothDevices](arkts-mdm-removedisallowedbluetoothdevices-f.md#removedisallowedbluetoothdevices-1)移除蓝牙设备禁用名单后，可解除冲突。
 
 **起始版本：** 12
 
@@ -31,7 +37,7 @@ function addAllowedBluetoothDevices(admin: Want, deviceIds: Array<string>): void
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [9200010](../errorcode-enterpriseDeviceManager.md#9200010-策略冲突) | A conflict policy has been configured. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

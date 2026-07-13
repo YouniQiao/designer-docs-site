@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAppCloneIdentityBySandboxDataDir
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAppCloneIdentityBySandboxDataDir(sandboxDataDir: string): AppCloneIdentity
 ```
 
-Obtains the identity information of an application, including the bundle name and clone index, based on the given sandbox directory name.
+Obtains the identity information of an application, including the bundle name and clone index, based on the given
+sandbox directory name.
 
 **Since:** 20
 

@@ -12,7 +12,8 @@ Defines the triggered function when the web page wants to confirm navigation fro
 isReload?: boolean
 ```
 
-The isReload parameter is set to true when the page is refreshed; otherwise, it remains false. Default is false.
+The isReload parameter is set to true when the page is refreshed;
+otherwise, it remains false. Default is false.
 
 **Type:** boolean
 

@@ -6,7 +6,15 @@
 function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void
 ```
 
-移除通话呼出的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。 以下情况下，通过本接口移除通话呼出的允许或禁用名单，会报策略冲突： 已经通过 [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) 接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过 [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) 接口解除禁用设备通话能力后，可解除冲突。
+移除通话呼出的允许或禁用名单，若在该名单尚未设置时进行移除，则会移除失败。
+
+以下情况下，通过本接口移除通话呼出的允许或禁用名单，会报策略冲突：
+
+已经通过
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+接口禁用了设备通话能力，再通过本接口移除通话呼出的禁用或允许名单，返回203错误码。通过
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+接口解除禁用设备通话能力后，可解除冲突。
 
 **起始版本：** 20
 
@@ -33,7 +41,7 @@ function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Polic
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-参数校验失败) | The parameter validation failed. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
 | [203](../../errorcode-universal.md#203-企业管理策略禁止使用此系统功能) | This function is prohibited by enterprise management policies. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 
 **示例：**
 

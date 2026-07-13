@@ -9,7 +9,7 @@ Displays the identification result of sensitive content.
 ## Modules to Import
 
 ```TypeScript
-import { identifySensitiveContent } from '@ohos.security.identifySensitiveContent';
+import { identifySensitiveContent } from '@kit.DataProtectionKit';
 ```
 
 ## matchContent
@@ -46,7 +46,8 @@ Total number of matched items.
 readonly sensitiveLabel: string
 ```
 
-Label of an identification policy, which corresponds to sensitiveLabel in the input policy and is used to label the policy used to identify the matching result.
+Label of an identification policy,
+which corresponds to sensitiveLabel in the input policy and is used to label the policy used to identify the matching result.
 
 **Type:** string
 

@@ -12,7 +12,8 @@
 isMainFrame?: boolean
 ```
 
-是否是主文档触发。 true表示是主文档触发，false表示不是主文档触发。
+是否是主文档触发。
+true表示是主文档触发，false表示不是主文档触发。
 
 **类型：** boolean
 
@@ -26,7 +27,8 @@ isMainFrame?: boolean
 isRefreshed: boolean
 ```
 
-true表示该页面是被重新加载的（调用[refresh](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#refresh-1)接口 ），false表示该页面是新加载的。
+true表示该页面是被重新加载的（调用[refresh](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#refresh-1)接口
+），false表示该页面是新加载的。
 
 **类型：** boolean
 

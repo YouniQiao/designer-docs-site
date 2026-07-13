@@ -12,7 +12,9 @@ Describes the text shadow style.
 constructor(value: ShadowOptions | Array<ShadowOptions>)
 ```
 
-A constructor used to create a text shadow style. The **ShadowOptions** object does not support the **fill** field.
+A constructor used to create a text shadow style.
+
+The **ShadowOptions** object does not support the **fill** field.
 
 **Since:** 12
 

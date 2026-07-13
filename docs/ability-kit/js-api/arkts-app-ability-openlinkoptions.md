@@ -12,5 +12,5 @@ import { OpenLinkOptions } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [OpenLinkOptions](arkts-openlinkoptions-i.md) | OpenLinkOptions可以作为[openLink()]{@link ./application/UIAbilityContext:UIAbilityContext.openLink}的入参，用于标识是否仅打开 AppLinking和传递键值对可选参数。 |
+| [OpenLinkOptions](arkts-ability-openlinkoptions-i.md) | **OpenLinkOptions** can be used as an input parameter of[openLink()](arkts-ability-uiabilitycontext-c.md#openlink-1) to indicate whether to enable only AppLinking and pass in optional parameters in the form of key-value pairs. |
 

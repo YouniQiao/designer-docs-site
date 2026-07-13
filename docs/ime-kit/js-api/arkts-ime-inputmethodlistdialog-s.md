@@ -1,6 +1,7 @@
 # InputMethodListDialog
 
-InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions}) Implements a dialog box showing the input method list.
+InputMethodListDialog({controller: CustomDialogController, patternOptions?: PatternOptions})
+Implements a dialog box showing the input method list.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ InputMethodListDialog({controller: CustomDialogController, patternOptions?: Patt
 ## Modules to Import
 
 ```TypeScript
-import { Pattern, InputMethodListDialog, PatternOptions } from '@ohos.inputMethodList';
+import { Pattern, InputMethodListDialog, PatternOptions } from '@kit.IMEKit';
 ```
 
 ## controller

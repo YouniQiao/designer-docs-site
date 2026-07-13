@@ -9,7 +9,7 @@ Defines the MediaQuery list info.
 ## Modules to Import
 
 ```TypeScript
-import { MediaQueryEvent, MediaQueryList } from '@system.mediaquery';
+import { MediaQueryEvent, MediaQueryList } from '@kit.ArkUI';
 ```
 
 ## addListener
@@ -18,7 +18,8 @@ import { MediaQueryEvent, MediaQueryList } from '@system.mediaquery';
 addListener(callback: (event: MediaQueryEvent) => void): void
 ```
 
-Adds a listening function to MediaQueryList. The listening function must be added before onShow is called, that is, added to the onInit or onReady function.
+Adds a listening function to MediaQueryList.
+The listening function must be added before onShow is called, that is, added to the onInit or onReady function.
 
 **Since:** 11
 
@@ -88,7 +89,8 @@ mMediaQueryList.removeListener(maxWidthMatch);
 matches?: boolean
 ```
 
-Whether the query is successful. True if the query condition is matched successfully, false otherwise. This parameter is read-only.
+Whether the query is successful. True if the query condition is matched successfully, false otherwise.
+This parameter is read-only.
 
 **Type:** boolean
 
@@ -104,7 +106,8 @@ Whether the query is successful. True if the query condition is matched successf
 media?: string
 ```
 
-Serialized media query condition. This parameter is read-only.
+Serialized media query condition.
+This parameter is read-only.
 
 **Type:** string
 

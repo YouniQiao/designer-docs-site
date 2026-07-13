@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## removeInstallationAllowedAppDistributionTypes
@@ -12,7 +12,13 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function removeInstallationAllowedAppDistributionTypes(admin: Want, appDistributionTypes: Array<AppDistributionType>): void
 ```
 
-Removes the distribution type of an application. If only some distribution types in the array are removed, the current device can install applications of the remaining distribution types in the array, but cannot install applications of the distribution types not included in [AppDistributionType](arkts-mdm-appdistributiontype-e.md#appdistributiontype). For details about the distribution type of the application signing certificate, refer to the **appDistributionType** attribute in [ApplicationInfo](../../apis-ability-kit/arkts-apis/arkts-ability-applicationinfo-i.md#applicationinfo).
+Removes the distribution type of an application. If only some distribution types in the array are removed, the
+current device can install applications of the remaining distribution types in the array, but cannot install
+applications of the distribution types not included in
+[AppDistributionType](arkts-mdm-appdistributiontype-e.md).
+
+For details about the distribution type of the application signing certificate, refer to the
+**appDistributionType** attribute in [ApplicationInfo](../../apis-ability-kit/arkts-apis/arkts-ability-applicationinfo-i.md).
 
 **Since:** 20
 

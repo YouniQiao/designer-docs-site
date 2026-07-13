@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## getP2pLocalDevice
@@ -12,7 +12,9 @@ import { wifiManager } from '@ohos.wifiManager';
 function getP2pLocalDevice(): Promise<WifiP2pDevice>
 ```
 
-Obtain the information about own device information. DeviceAddress in the returned WifiP2pDevice will be set "00:00:00:00:00:00", if ohos.permission.GET_WIFI_LOCAL_MAC is not granted.
+Obtain the information about own device information.
+DeviceAddress in the returned WifiP2pDevice will be set "00:00:00:00:00:00",
+if ohos.permission.GET_WIFI_LOCAL_MAC is not granted.
 
 **Since:** 11
 
@@ -41,7 +43,9 @@ Obtain the information about own device information. DeviceAddress in the return
 function getP2pLocalDevice(callback: AsyncCallback<WifiP2pDevice>): void
 ```
 
-Obtain the information about own device information. DeviceAddress in the returned WifiP2pDevice will be set "00:00:00:00:00:00", if ohos.permission.GET_WIFI_LOCAL_MAC is not granted.
+Obtain the information about own device information.
+DeviceAddress in the returned WifiP2pDevice will be set "00:00:00:00:00:00",
+if ohos.permission.GET_WIFI_LOCAL_MAC is not granted.
 
 **Since:** 11
 

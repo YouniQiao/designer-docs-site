@@ -1,6 +1,7 @@
 # NotificationSlot
 
-The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots.
+The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes
+vary according to notification slots.
 
 **Since:** 7
 
@@ -12,7 +13,10 @@ The **NotificationSlot** module provides APIs for defining the notification slot
 badgeFlag?: boolean
 ```
 
-Whether to display the badge. - **true**: Yes. - **false**: No. The default value is **true**.
+Whether to display the badge.
+
+- **true**: Yes.
+- **false**: No. The default value is **true**.
 
 **Type:** boolean
 
@@ -26,7 +30,10 @@ Whether to display the badge. - **true**: Yes. - **false**: No. The default valu
 bypassDnd?: boolean
 ```
 
-Whether to bypass DND mode in the system. - **true**: Yes. - **false**: No. The default value is **false**.
+Whether to bypass DND mode in the system.
+
+- **true**: Yes.
+- **false**: No. The default value is **false**.
 
 **Type:** boolean
 
@@ -54,7 +61,10 @@ Notification slot description. The value contains a maximum of 243 bytes. Excess
 readonly enabled?: boolean
 ```
 
-Whether the notification is enabled. - **true**: enabled. - **false**: disabled.
+Whether the notification is enabled.
+
+- **true**: enabled.
+- **false**: disabled.
 
 **Type:** boolean
 
@@ -68,7 +78,10 @@ Whether the notification is enabled. - **true**: enabled. - **false**: disabled.
 level?: notification.SlotLevel
 ```
 
-Notification level. This attribute is supported since API version 7 and deprecated since API version 20. You are advised to use **notificationLevel** instead.
+Notification level.
+
+This attribute is supported since API version 7 and deprecated since API version 20. You are advised to use
+**notificationLevel** instead.
 
 **Type:** notification.SlotLevel
 
@@ -100,7 +113,10 @@ Indicator color of the notification. Not supported currently.
 lightEnabled?: boolean
 ```
 
-Whether the indicator blinks for the notification. - **true**: Yes. - **false**: No. The default value is **false**.
+Whether the indicator blinks for the notification.
+
+- **true**: Yes.
+- **false**: No. The default value is **false**.
 
 **Type:** boolean
 
@@ -156,7 +172,9 @@ Notification slot type.
 sound?: string
 ```
 
-Name of the custom ringtone file for notifications. This file is stored in the **resources/rawfile** directory and supports formats such as M4A, AAC, MP3, OGG, WAV, FLAC, and AMR. The value contains a maximum of 243 bytes. Excess part will be truncated.
+Name of the custom ringtone file for notifications. This file is stored in the **resources/rawfile** directory and
+supports formats such as M4A, AAC, MP3, OGG, WAV, FLAC, and AMR. The value contains a maximum of 243 bytes. Excess
+part will be truncated.
 
 **Type:** string
 
@@ -170,7 +188,10 @@ Name of the custom ringtone file for notifications. This file is stored in the *
 type?: notification.SlotType
 ```
 
-Notification slot type. This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use **notificationType** instead.
+Notification slot type.
+
+This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use
+**notificationType** instead.
 
 **Type:** notification.SlotType
 
@@ -188,7 +209,10 @@ Notification slot type. This attribute is supported since API version 7 and depr
 vibrationEnabled?: boolean
 ```
 
-Whether to enable vibration for the notification. - **true**: Yes. - **false**: No. The default value is **false**.
+Whether to enable vibration for the notification.
+
+- **true**: Yes.
+- **false**: No. The default value is **false**.
 
 **Type:** boolean
 

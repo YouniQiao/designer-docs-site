@@ -9,7 +9,7 @@ Provides APIs for observing events. listening for the distributed file system st
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## onStatus
@@ -18,7 +18,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 onStatus(networkId: string, status: number): void
 ```
 
-Called to return the specified status. Its parameters are passed in by [connectDfs](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioconnectdfs12).
+Called to return the specified status. Its parameters are passed in by
+[connectDfs](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioconnectdfs12).
 
 **Since:** 12
 

@@ -11,7 +11,7 @@ Search suggestion result.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## count
@@ -20,7 +20,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 count: number
 ```
 
-Number of photos in the scenario where a recommendation word is searched. The value range is all integers.
+Number of photos in the scenario where a recommendation word is searched.
+The value range is all integers.
 
 **Type:** number
 

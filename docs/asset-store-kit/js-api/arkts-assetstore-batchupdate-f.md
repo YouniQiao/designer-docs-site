@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { asset } from '@ohos.security.asset';
+import { asset } from '@kit.AssetStoreKit';
 ```
 
 ## batchUpdate
@@ -12,7 +12,9 @@ import { asset } from '@ohos.security.asset';
 function batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>): Promise<BatchResult>
 ```
 
-Updates assets in batches based on an attributes array. Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be updated in batches.
+Updates assets in batches based on an attributes array.
+
+Only assets with the same {@link Tag.GROUP_ID} and {@link Tag.REQUIRE_ATTR_ENCRYPTED} can be updated in batches.
 
 **Since:** 26.0.0
 

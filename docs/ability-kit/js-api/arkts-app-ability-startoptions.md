@@ -12,5 +12,13 @@ import { StartOptions } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [StartOptions](arkts-startoptions-c.md) | StartOptions可以作为启动UIAbility接口（例如 [startAbility()]{@link ./application/UIAbilityContext:UIAbilityContext.startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>)} ）的入参，用于指定目标UIAbility启动时的选项，包括但不局限于窗口模式、目标UIAbility启动时所在的屏幕等。 |
+| [StartOptions](arkts-ability-startoptions-c.md) | StartOptions can be used as an input parameter for APIs used to launch a UIAbility (for example,[startAbility()](arkts-ability-uiabilitycontext-c.md#startability-2)). It specifies the options for starting the target UIAbility, including but not limited to the window mode and thedisplay where the target UIAbility is started. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [StartOptions](arkts-ability-startoptions-c-sys.md) | StartOptions can be used as an input parameter for APIs used to launch a UIAbility (for example,[startAbility()](arkts-ability-uiabilitycontext-c.md#startability-2)). It specifies the options for starting the target UIAbility, including but not limited to the window mode and thedisplay where the target UIAbility is started. |
+<!--DelEnd-->
 

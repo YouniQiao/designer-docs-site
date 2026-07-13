@@ -1,8 +1,8 @@
 # PinchGestureHandlerOptions
 
-Provides the parameters of the pinch gesture handler. Inherits from [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions).
+Provides the parameters of the pinch gesture handler. Inherits from [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md).
 
-**Inheritance/Implementation:** PinchGestureHandlerOptions extends [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions)
+**Inheritance/Implementation:** PinchGestureHandlerOptions extends [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md)
 
 **Since:** 12
 
@@ -14,7 +14,13 @@ Provides the parameters of the pinch gesture handler. Inherits from [BaseHandler
 distance?: number
 ```
 
-Minimum recognition distance, in vp. Default value: **5** **NOTE** If the value is less than or equal to 0, it will be converted to the default value.
+Minimum recognition distance, in vp.
+
+Default value: **5**
+
+**NOTE**
+
+If the value is less than or equal to 0, it will be converted to the default value.
 
 **Type:** number
 
@@ -32,7 +38,14 @@ Minimum recognition distance, in vp. Default value: **5** **NOTE** If the value 
 fingers?: number
 ```
 
-Minimum number of fingers required to trigger the pinch gesture. The value ranges from 2 to 5. Default value: **2** Value range: [2, 5] While more fingers than the minimum number can be pressed to trigger the gesture, only the first fingers of the minimum number participate in gesture calculation.
+Minimum number of fingers required to trigger the pinch gesture. The value ranges from 2 to 5.
+
+Default value: **2**
+
+Value range: [2, 5]
+
+While more fingers than the minimum number can be pressed to trigger the gesture, only the first fingers of the
+minimum number participate in gesture calculation.
 
 **Type:** number
 

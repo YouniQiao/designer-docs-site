@@ -1,6 +1,6 @@
 # UIElementInfo
 
-提供UI事件的信息。
+UI事件的相关信息。
 
 **起始版本：** 10
 
@@ -12,7 +12,9 @@
 readonly bundleName: string
 ```
 
-应用的包名。
+应用包名。
+
+从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -28,7 +30,9 @@ readonly bundleName: string
 readonly componentEventType?: ComponentEventType
 ```
 
-组件操作事件类型。 如果不是组件操作事件，返回{@link ComponentEventType.COMPONENT_UNDEFINED}。
+控件操作事件类型，若非控件操作事件返回ComponentEventType.COMPONENT_UNDEFINED。
+
+从API version 22开始，该接口支持在原子化服务中使用。
 
 **类型：** ComponentEventType
 
@@ -44,7 +48,9 @@ readonly componentEventType?: ComponentEventType
 readonly componentId?: string
 ```
 
-组件ID。如果不是组件操作事件，返回空字符串。
+控件id，若非控件操作事件返回空字符串。
+
+从API version 22开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -60,7 +66,9 @@ readonly componentId?: string
 readonly componentRect?: Rect
 ```
 
-组件的矩形区域，如果是窗口则将rect的所有属性设为0。
+控件边框信息，若非控件操作事件则返回属性值均为0的Rect对象。
+
+从API version 22开始，该接口支持在原子化服务中使用。
 
 **类型：** Rect
 
@@ -76,7 +84,7 @@ readonly componentRect?: Rect
 readonly text: string
 ```
 
-组件或窗口的文本信息。
+控件/窗口的文本信息。 从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -92,7 +100,9 @@ readonly text: string
 readonly type: string
 ```
 
-组件或窗口类型。
+控件/窗口类型。
+
+从API version 11开始，该接口支持在原子化服务中使用。
 
 **类型：** string
 
@@ -108,7 +118,9 @@ readonly type: string
 readonly windowChangeType?: WindowChangeType
 ```
 
-窗口变更事件类型。 如果不是窗口变更事件，返回{@link WindowChangeType.WINDOW_UNDEFINED}。
+窗口变化事件类型，若非窗口变化事件返回WindowChangeType.WINDOW_UNDEFINED。
+
+从API version 22开始，该接口支持在原子化服务中使用。
 
 **类型：** WindowChangeType
 
@@ -124,7 +136,9 @@ readonly windowChangeType?: WindowChangeType
 readonly windowId?: number
 ```
 
-组件所属窗口的ID。
+控件所属窗口id。
+
+从API version 22开始，该接口支持在原子化服务中使用。
 
 **类型：** number
 

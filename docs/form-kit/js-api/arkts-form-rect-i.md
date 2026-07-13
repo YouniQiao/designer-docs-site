@@ -9,7 +9,7 @@ Indicates rectangle, unit is vp.
 ## Modules to Import
 
 ```TypeScript
-import { formInfo } from '@ohos.app.form.formInfo';
+import { formInfo } from '@kit.FormKit';
 ```
 
 ## height
@@ -18,7 +18,8 @@ import { formInfo } from '@ohos.app.form.formInfo';
 height: number
 ```
 
-The height of Rect Unit: vp.
+The height of Rect
+Unit: vp.
 
 **Type:** number
 
@@ -34,7 +35,8 @@ The height of Rect Unit: vp.
 left: number
 ```
 
-The left position of Rect Unit: vp.
+The left position of Rect
+Unit: vp.
 
 **Type:** number
 
@@ -50,7 +52,8 @@ The left position of Rect Unit: vp.
 top: number
 ```
 
-The top position of Rect Unit: vp.
+The top position of Rect
+Unit: vp.
 
 **Type:** number
 
@@ -66,7 +69,8 @@ The top position of Rect Unit: vp.
 width: number
 ```
 
-The width of Rect Unit: vp.
+The width of Rect
+Unit: vp.
 
 **Type:** number
 

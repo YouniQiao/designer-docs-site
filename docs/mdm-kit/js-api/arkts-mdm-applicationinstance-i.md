@@ -9,7 +9,7 @@ Application instance
 ## Modules to Import
 
 ```TypeScript
-import { securityManager } from '@ohos.enterprise.securityManager';
+import { securityManager } from '@kit.MDMKit';
 ```
 
 ## accountId
@@ -18,7 +18,9 @@ import { securityManager } from '@ohos.enterprise.securityManager';
 accountId: number
 ```
 
-Account ID, which must be greater than or equal to 0. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2) of **@ohos.account.osAccount** to obtain the account ID.
+Account ID, which must be greater than or equal to 0. You can call
+[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2) of
+**@ohos.account.osAccount** to obtain the account ID.
 
 **Type:** number
 
@@ -34,7 +36,11 @@ Account ID, which must be greater than or equal to 0. You can call [getOsAccount
 appIdentifier: string
 ```
 
-The [unique identifier](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md#signatureinfo) of an application. If an application does not have **appIdentifier**, **appId** can be used instead. Both **bundleInfo.signatureInfo.appIdentifier** and **bundleInfo.signatureInfo.appId** can be obtained via the [bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3) API.
+The [unique identifier](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md) of an application. If an application does
+not have **appIdentifier**, **appId** can be used instead. Both **bundleInfo.signatureInfo.appIdentifier** and
+**bundleInfo.signatureInfo.appId** can be obtained via the
+[bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3)
+API.
 
 **Type:** string
 
@@ -50,7 +56,10 @@ The [unique identifier](../../apis-ability-kit/arkts-apis/arkts-ability-signatur
 appIndex: number
 ```
 
-Index of the application clone. The default value is **0**. If **appIndex** is set to **0**, the main application is used. If **appIndex** is set to a value greater than 0, the application clone with the specified index is used.
+Index of the application clone. The default value is **0**.
+
+If **appIndex** is set to **0**, the main application is used. If **appIndex** is set to a value greater than 0,
+the application clone with the specified index is used.
 
 **Type:** number
 

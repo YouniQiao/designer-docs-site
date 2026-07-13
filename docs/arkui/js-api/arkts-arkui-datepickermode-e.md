@@ -44,7 +44,9 @@ Two-column display: year and month.
 MONTH_AND_DAY = 2
 ```
 
-Two-column display: month and day. In this mode, the year value remains fixed.
+Two-column display: month and day.
+
+In this mode, the year value remains fixed.
 
 **Since:** 18
 

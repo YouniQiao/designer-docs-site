@@ -6,7 +6,17 @@
 function addAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Array<string>, serviceType: ServiceType, accountId: number): void
 ```
 
-为指定用户添加允许使用分布式能力的应用名单，名单中的应用在指定用户下可以使用指定的分布式能力。 当前支持的分布式类型有：[协同服务](arkts-mdm-servicetype-e.md#servicetype)。 > **说明：** > > 1.如果要设置允许使用协同服务的应用名单，在调用本接口前必须已经通过 > [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) > 接口禁用了向其他设备传输数据的设备间单向传输数据的能力，否则会抛出错误码9201043。 > 2.当向其他设备传输数据的设备间单向传输数据的能力被解除禁用时，通过本接口设置的允许使用协同服务的应用名单会被同步清除。
+为指定用户添加允许使用分布式能力的应用名单，名单中的应用在指定用户下可以使用指定的分布式能力。
+
+当前支持的分布式类型有：[协同服务](arkts-mdm-servicetype-e.md)。
+
+> **说明：**
+>
+> 1.如果要设置允许使用协同服务的应用名单，在调用本接口前必须已经通过
+> [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1)
+> 接口禁用了向其他设备传输数据的设备间单向传输数据的能力，否则会抛出错误码9201043。
+
+> 2.当向其他设备传输数据的设备间单向传输数据的能力被解除禁用时，通过本接口设置的允许使用协同服务的应用名单会被同步清除。
 
 **起始版本：** 26.0.0
 
@@ -21,7 +31,7 @@ function addAllowedDistributeAbilityConnBundles(admin: Want, appIdentifiers: Arr
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | Want | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| appIdentifiers | Array&lt;string&gt; | 是 | 应用[唯一标识符](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md#signatureinfo)的数组，可以通过接口[bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3)获取bundleInfo.signatureInfo.appIdentifier。允许列表总数不能超过200个。 |
+| appIdentifiers | Array&lt;string&gt; | 是 | 应用[唯一标识符](../../apis-ability-kit/arkts-apis/arkts-ability-signatureinfo-i.md)的数组，可以通过接口[bundleManager.getBundleInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleinfo-f.md#getbundleinfo-3)获取bundleInfo.signatureInfo.appIdentifier。允许列表总数不能超过200个。 |
 | serviceType | ServiceType | 是 | 分布式能力类型。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0的整数。<br> accountId可以通过@ohos.account.osAccount中的[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-2)等接口来获取。 |
 

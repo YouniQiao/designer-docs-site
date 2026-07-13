@@ -1,6 +1,7 @@
 # CustomComponentContext
 
-The **CustomComponentContext** class provides access to component-level services, including the reuse pool. You can obtain an instance through [UIUtils.getCustomComponentContext](arkts-arkui-uiutils-c.md#getcustomcomponentcontext-1).
+The **CustomComponentContext** class provides access to component-level services, including the reuse pool. You can
+obtain an instance through [UIUtils.getCustomComponentContext](arkts-arkui-uiutils-c.md#getcustomcomponentcontext-1).
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ The **CustomComponentContext** class provides access to component-level services
 ## Modules to Import
 
 ```TypeScript
-import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@ohos.arkui.StateManagement';
+import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
 ## getReusePool
@@ -18,7 +19,10 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 getReusePool(): IReusePool | undefined
 ```
 
-Obtains the global reuse pool of the custom component. If the component does not configure the reuse pool through **reusePool** and **poolAccepts**, **undefined** is returned. For details about how to configure the global reuse pool, see [Global Reuse: Centralized Component Recycling and Reuse](../../../../ui/state-management/arkts-global-reuse-pool.md).
+Obtains the global reuse pool of the custom component. If the component does not configure the reuse pool through
+**reusePool** and **poolAccepts**, **undefined** is returned. For details about how to configure the global reuse
+pool, see
+[Global Reuse: Centralized Component Recycling and Reuse](../../../../ui/state-management/arkts-global-reuse-pool.md).
 
 **Since:** 26.0.0
 

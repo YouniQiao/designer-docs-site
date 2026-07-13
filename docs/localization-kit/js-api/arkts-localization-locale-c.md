@@ -6,14 +6,14 @@ Provides APIs for obtaining locale information.
 
 **Deprecated since:** 20
 
-**Substitutes:** Locale
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale)
 
 **System capability:** SystemCapability.Global.I18n
 
 ## Modules to Import
 
 ```TypeScript
-import { intl } from '@ohos.intl';
+import { intl } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -28,7 +28,7 @@ Creates a **Locale** object.
 
 **Deprecated since:** 20
 
-**Substitutes:** constructor
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -60,7 +60,7 @@ Creates a **Locale** object.
 
 **Deprecated since:** 20
 
-**Substitutes:** constructor
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -98,7 +98,7 @@ Maximizes locale information by supplementing the missing script and country/reg
 
 **Deprecated since:** 20
 
-**Substitutes:** maximize
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -143,7 +143,7 @@ Minimizes locale information by removing the script and country/region informati
 
 **Deprecated since:** 20
 
-**Substitutes:** minimize
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -188,7 +188,7 @@ Obtains the string that represents a **Locale** object.
 
 **Deprecated since:** 20
 
-**Substitutes:** toString
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/toString)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -227,7 +227,7 @@ Locale information, which consists of the language, script, and country/region, 
 
 **Deprecated since:** 20
 
-**Substitutes:** baseName
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -241,7 +241,13 @@ Locale information, which consists of the language, script, and country/region, 
 calendar: string
 ```
 
-Calendar for the locale. The value can be: The value can be any of the following: **buddhist**, **chinese**, **coptic**, **dangi**, **ethioaa**, **ethiopic**, **gregory**, **hebrew**, **indian**, **islamic**, **islamic-umalqura**, **islamic-tbla**, **islamic-civil**, **islamic-rgsa**, **iso8601**, **japanese**, **persian**, **roc**, or **islamicc**. For details about their meanings, see Table 1 in [Calendar Setting](../../../../internationalization/i18n-calendar.md).
+Calendar for the locale. The value can be:
+The value can be any of the following: **buddhist**, **chinese**,
+**coptic**, **dangi**, **ethioaa**, **ethiopic**, **gregory**, **hebrew**, **indian**, **islamic**,
+**islamic-umalqura**, **islamic-tbla**, **islamic-civil**, **islamic-rgsa**, **iso8601**, **japanese**,
+**persian**, **roc**, or **islamicc**.
+For details about their meanings, see Table 1 in
+[Calendar Setting](../../../../internationalization/i18n-calendar.md).
 
 **Type:** string
 
@@ -249,7 +255,7 @@ Calendar for the locale. The value can be: The value can be any of the following
 
 **Deprecated since:** 20
 
-**Substitutes:** calendar
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -263,7 +269,10 @@ Calendar for the locale. The value can be: The value can be any of the following
 caseFirst: string
 ```
 
-Whether case is taken into account for the locale's collation rules. The value can be: **upper**: Uppercase letters come first. **lower**: Lowercase letters come first. **false**: The default collation rules of the locale are used.
+Whether case is taken into account for the locale's collation rules. The value can be:
+**upper**: Uppercase letters come first.
+**lower**: Lowercase letters come first.
+**false**: The default collation rules of the locale are used.
 
 **Type:** string
 
@@ -271,7 +280,7 @@ Whether case is taken into account for the locale's collation rules. The value c
 
 **Deprecated since:** 20
 
-**Substitutes:** caseFirst
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -285,7 +294,23 @@ Whether case is taken into account for the locale's collation rules. The value c
 collation: string
 ```
 
-Collation rules for the locale. The value can be: **big5han**: Pinyin sorting for Latin letters. **compat** : compatibility sorting, only for Arabic. **dict**: dictionary-style sorting, only for Singhalese. **direct**: binary code point sorting. **ducet**: sorting according to the Unicode collation element table. **eor**: sorting according to the European collation rules. **gb2312**: Pinyin sorting, only for Chinese. **phonebk**: phone book-style sorting. **phonetic**: phonetic sorting. **pinyin**: Pinyin sorting. **reformed**: reformed sorting, only for Swedish. **searchjl**: special sorting for Korean initial consonant search. **stroke**: stroke sorting for Chinese. **trad**: traditional-style sorting, for example, Spanish. **unihan**: radical-stroke sorting for Han characters, only for Chinese, Japanese, and Korean. **zhuyin**: Zhuyin sorting, only for Chinese.
+Collation rules for the locale. The value can be:
+**big5han**: Pinyin sorting for Latin letters.
+**compat** : compatibility sorting, only for Arabic.
+**dict**: dictionary-style sorting, only for Singhalese.
+**direct**: binary code point sorting.
+**ducet**: sorting according to the Unicode collation element table.
+**eor**: sorting according to the European collation rules.
+**gb2312**: Pinyin sorting, only for Chinese.
+**phonebk**: phone book-style sorting.
+**phonetic**: phonetic sorting.
+**pinyin**: Pinyin sorting.
+**reformed**: reformed sorting, only for Swedish.
+**searchjl**: special sorting for Korean initial consonant search.
+**stroke**: stroke sorting for Chinese.
+**trad**: traditional-style sorting, for example, Spanish.
+**unihan**: radical-stroke sorting for Han characters, only for Chinese, Japanese, and Korean.
+**zhuyin**: Zhuyin sorting, only for Chinese.
 
 **Type:** string
 
@@ -293,7 +318,7 @@ Collation rules for the locale. The value can be: **big5han**: Pinyin sorting fo
 
 **Deprecated since:** 20
 
-**Substitutes:** collation
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -307,7 +332,10 @@ Collation rules for the locale. The value can be: **big5han**: Pinyin sorting fo
 hourCycle: string
 ```
 
-Time system for the locale. The value can be: "h11", "h12", "h23", or "h24". For details about their display effects, see [Table 5](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Time system for the locale. The value can be:
+"h11", "h12", "h23", or "h24".
+For details about their
+display effects, see [Table 5](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -315,7 +343,7 @@ Time system for the locale. The value can be: "h11", "h12", "h23", or "h24". For
 
 **Deprecated since:** 20
 
-**Substitutes:** hourCycle
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -337,7 +365,7 @@ Language associated with the locale, for example, **zh**. The value complies wit
 
 **Deprecated since:** 20
 
-**Substitutes:** language
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/language)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -351,7 +379,14 @@ Language associated with the locale, for example, **zh**. The value complies wit
 numberingSystem: string
 ```
 
-Numbering system for the locale. The value can be: **adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**, **diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**, **kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**, **mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**, **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**, **shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**, **tirh**, **vaii**, **wara**, or **wcho**.
+Numbering system for the locale. The value can be:
+**adlm**, **ahom**, **arab**, **arabext**, **bali**,
+**beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**, **diak**, **fullwide**, **gong**, **gonm**, **gujr**,
+**guru**, **hanidec**, **hmng**, **hmnp**, **java**, **kali**, **khmr**, **knda**, **lana**, **lanatham**,
+**laoo**, **latn**, **lepc**, **limb**, **mathbold**, **mathdbl**, **mathmono**, **mathsanb**, **mathsans**,
+**mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**, **mymrshan**, **mymrtlng**, **newa**, **nkoo**,
+**olck**, **orya**, **osma**, **rohg**, **saur**, **segment**, **shrd**, **sind**, **sinh**, **sora**, **sund**,
+**takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**, **tirh**, **vaii**, **wara**, or **wcho**.
 
 **Type:** string
 
@@ -359,7 +394,7 @@ Numbering system for the locale. The value can be: **adlm**, **ahom**, **arab**,
 
 **Deprecated since:** 20
 
-**Substitutes:** numberingSystem
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -373,7 +408,8 @@ Numbering system for the locale. The value can be: **adlm**, **ahom**, **arab**,
 numeric: boolean
 ```
 
-Whether to use special sorting rules for digits. The value **true** means to use special sorting rules for digits, and the value **false** means the opposite.The default value is **false**.
+Whether to use special sorting rules for digits. The value **true** means to use special sorting rules for digits,
+and the value **false** means the opposite.The default value is **false**.
 
 **Type:** boolean
 
@@ -381,7 +417,7 @@ Whether to use special sorting rules for digits. The value **true** means to use
 
 **Deprecated since:** 20
 
-**Substitutes:** numeric
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numeric)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -403,7 +439,7 @@ Country/region associated with the locale, for example, **CN**. The value compli
 
 **Deprecated since:** 20
 
-**Substitutes:** region
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -425,7 +461,7 @@ Script type of the language, for example, **Hans**. The value complies with the 
 
 **Deprecated since:** 20
 
-**Substitutes:** script
+**Substitutes:** org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 

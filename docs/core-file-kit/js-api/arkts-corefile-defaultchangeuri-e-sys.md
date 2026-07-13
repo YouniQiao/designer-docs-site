@@ -6,7 +6,7 @@ DefaultChangeUri subtype
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [DefaultChangeUri](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-defaultchangeuri-e.md#defaultchangeuri)
+**Substitutes:** [DefaultChangeUri](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-defaultchangeuri-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -60,7 +60,7 @@ Uri for default AudioAsset, use with forDescendant{true}, will recieve all Audio
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md#audioviewpicker)
+**Substitutes:** [AudioViewPicker](arkts-corefile-audioviewpicker-c.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

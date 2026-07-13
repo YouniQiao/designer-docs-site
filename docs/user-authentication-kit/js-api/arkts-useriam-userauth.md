@@ -1,6 +1,18 @@
 # @ohos.userIAM.userAuth
 
-userAuth**模块是OpenHarmony系统中用于用户身份认证的核心模块，提供了设备解锁、支付验证、应用登录等场景下的身份认证能力。 该模块支持多种生物特征认证方式（人脸、指纹）和密码认证（PIN），并提供不同级别的安全信任等级。从API版本26.0.0开始，新增伴随设备认证的方式。 该模块主要用于以下场景： - 设备解锁认证。 - 金融支付验证。 - 应用登录保护。 - 敏感操作确认。
+The **userAuth** module is the core module for user authentication in OpenHarmony. It provides authentication
+capabilities in scenarios such as device unlocking, payment verification, and application login.
+
+This module supports multiple biometric authentication methods (face, fingerprint) and password authentication (PIN),
+and provides various security trust levels. Since API version 26.0.0, the companion device authentication mode is
+added.
+
+This module applies to the following scenarios:
+
+- Device unlocking authentication.
+- Financial payment verification.
+- Application login protection.
+- Confirmation for sensitive operations.
 
 **Since:** 6
 
@@ -18,84 +30,112 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 
 | Name | Description |
 | --- | --- |
-| [getAuthInstance](arkts-userauth-getauthinstance-f.md#getAuthInstance-1) | 获取AuthInstance对象，用于执行用户身份认证。 > **说明：** > > 每个AuthInstance只能进行一次认证，若需要再次进行认证则需重新获取AuthInstance。 |
-| [getAuthLockState](arkts-userauth-getauthlockstate-f.md#getAuthLockState-1) | 查询指定认证类型的冻结状态，使用Promise异步回调。 |
-| [getAuthenticator](arkts-userauth-getauthenticator-f.md#getAuthenticator-1) | 获取Authenticator对象，用于执行用户身份认证。 |
-| [getAvailableStatus](arkts-userauth-getavailablestatus-f.md#getAvailableStatus-1) | 查询指定类型和等级的认证能力是否支持。该接口用于检查当前设备是否支持指定的认证类型和认证可信等级，帮助应用在发起认证前判断认证能力是否可用，从而避免不必要的认证不通过。若查询通过（无错误抛出），表示认证能力可用；若抛出错误，应用应 根据错误码判断具体原因并采取相应处理。 |
-| [getEnrolledState](arkts-userauth-getenrolledstate-f.md#getEnrolledState-1) | 查询凭据注册的状态，以检测用户注册凭据的变更。该接口用于获取指定认证类型的凭据注册信息，包括凭据摘要和数量。应用可通过对比当前查询结果与之前保存的结果，判断用户是否新增或删除了凭据，从而采取相应的业务处理。 |
-| [getUserAuthInstance](arkts-userauth-getuserauthinstance-f.md#getUserAuthInstance-1) | 获取[UserAuthInstance]{@link userAuth.UserAuthInstance}对象，执行用户身份认证，并支持使用统一用户身份认证控件。该接口用于创建一个用户认证实例，配置认证参数和界面参数后，可通过返回 的实例对象启动认证、订阅认证结果等。 > **说明：** > > 每个UserAuthInstance只能进行一次认证，需要再次认证时，必须重新获取UserAuthInstance。认证完成后（无论成功或失败），该实例将无法再次使用。 |
-| <!--DelRow-->[getUserAuthWidgetMgr](arkts-userauth-getuserauthwidgetmgr-f-sys.md#getUserAuthWidgetMgr-1) | 获取身份认证组件管理器对象。用于获取UserAuthWidgetMgr实例，通过该实例可将自定义身份认证控件注册到系统进行统一管理。 > **说明：** > > 每个UserAuthWidgetMgr实例可管理一个身份认证控件，若需要管理多个控件则需获取多个实例。 |
-| <!--DelRow-->[queryReusableAuthResult](arkts-userauth-queryreusableauthresult-f-sys.md#queryReusableAuthResult-1) | 查询是否有可复用的身份认证结果。该接口用于在发起认证前查询是否存在满足复用条件的认证结果，若存在则直接返回可复用的AuthToken，无需用户再次进行认证交互。 |
-| <!--DelRow-->[registerRemoteAuthCallback](arkts-userauth-registerremoteauthcallback-f-sys.md#registerRemoteAuthCallback-1) | 注册远程认证回调。 |
-| <!--DelRow-->[sendNotice](arkts-userauth-sendnotice-f-sys.md#sendNotice-1) | 发送来自身份认证组件的通知。在使用统一身份认证控件进行用户身份认证时，该接口用于接收来自统一身份认证组件的通知，并将通知发送给用户认证框架。 |
-| <!--DelRow-->[unregisterRemoteAuthCallback](arkts-userauth-unregisterremoteauthcallback-f-sys.md#unregisterRemoteAuthCallback-1) | 取消注册远程身份验证的回调。 |
+| [getAuthInstance](arkts-userauthentication-getauthinstance-f.md#getauthinstance-1) | Obtains an **AuthInstance** instance for user authentication.&gt; **NOTE**&gt; An **AuthInstance** instance can be used for authentication only once. |
+| [getAuthLockState](arkts-userauthentication-getauthlockstate-f.md#getauthlockstate-1) | Queries the lockout state of the specified authentication type. This API uses a promise to return the result. |
+| [getAuthenticator](arkts-userauthentication-getauthenticator-f.md#getauthenticator-1) | Obtains an **Authenticator** instance for user authentication. |
+| [getAvailableStatus](arkts-userauthentication-getavailablestatus-f.md#getavailablestatus-1) | Checks whether the specified authentication capability is supported. This API is used to check whether the currentdevice supports the specified authentication type and authentication trust level. It helps an application determinewhether the authentication capability is available before initiating authentication, thereby avoiding unnecessaryauthentication failures. If the query is successful (no error is thrown), the authentication capability isavailable. If an error is thrown, the application should determine the cause based on the error code and takeappropriate measures. |
+| [getEnrolledState](arkts-userauthentication-getenrolledstate-f.md#getenrolledstate-1) | Obtains the credential state. This API is used to obtain the credential enrollment information of a specifiedauthentication type, including the credential digest and quantity. The application can compare the current queryresult with the previously saved result to determine whether the user has added or deleted credentials, and thenperform corresponding service processing. |
+| [getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md#getuserauthinstance-1) | Obtains a [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) instance for user authentication. The userauthentication widget is also supported. This API is used to create a user authentication instance. Afterauthentication parameters and UI parameters are configured, you can use the returned instance object to startauthentication and subscribe to the authentication result.&gt; **NOTE**&gt; Each **UserAuthInstance** can be used for authentication only once. After the authentication is complete (&gt; regardless of whether it is successful or fails), the instance cannot be used again. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getUserAuthWidgetMgr](arkts-userauthentication-getuserauthwidgetmgr-f-sys.md#getuserauthwidgetmgr-1) | Obtains the authentication widget manager object. It is used to obtain the **UserAuthWidgetMgr** instance, whichcan be used to register custom authentication widgets with the system for unified management.&gt; **NOTE**&gt; Each **UserAuthWidgetMgr** instance can manage one authentication widget. To manage multiple widgets, you need to&gt; obtain multiple instances. |
+| [queryReusableAuthResult](arkts-userauthentication-queryreusableauthresult-f-sys.md#queryreusableauthresult-1) | Queries whether there is any reusable identity authentication result. This API is used to query whether there is anauthentication result that meets the reuse conditions before authentication is initiated. If such a result exists,the **AuthToken** that can be reused is returned directly, and the user does not need to perform authenticationagain. |
+| [registerRemoteAuthCallback](arkts-userauthentication-registerremoteauthcallback-f-sys.md#registerremoteauthcallback-1) | Registers the callback for remote authentication. |
+| [sendNotice](arkts-userauthentication-sendnotice-f-sys.md#sendnotice-1) | Sends a notification from the user authentication widget. When the unified authentication widget is used for userauthentication, this API is used to receive notifications from the unified authentication widget and send thenotifications to the user authentication framework. |
+| [unregisterRemoteAuthCallback](arkts-userauthentication-unregisterremoteauthcallback-f-sys.md#unregisterremoteauthcallback-1) | Unregisters the callback for remote authentication. |
+<!--DelEnd-->
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [UserAuth](arkts-userauth-userauth-c.md) | 认证器对象。 |
+| [UserAuth](arkts-userauthentication-userauth-c.md) | Provides APIs for managing the **UserAuth** object. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Authenticator](arkts-userauth-authenticator-i.md) | 认证器对象。 |
-| [AuthEvent](arkts-userauth-authevent-i.md) | 认证接口的异步回调对象。 |
-| [AuthInstance](arkts-userauth-authinstance-i.md) | 执行用户认证的对象。 |
-| [AuthLockState](arkts-userauth-authlockstate-i.md) | 认证类型的身份认证冻结状态。该接口用于查询指定认证类型（如人脸、指纹、PIN）当前的冻结状态，包括是否被冻结、剩余尝试次数和冻结时长等信息。当用户多次认证不通过后，认证器可能进入临时冻结或永久冻结状态，应用可根据冻结信息提示用户。 |
-| [AuthParam](arkts-userauth-authparam-i.md) | 用户认证相关参数。该接口用于配置用户认证的各项参数，包括挑战值、认证类型列表、认证信任等级、认证结果复用配置等。通过合理配置这些参数，可以满足不同业务场景下的认证需求。 |
-| [AuthResult](arkts-userauth-authresult-i.md) | 表示认证结果的对象。 |
-| [AuthResultInfo](arkts-userauth-authresultinfo-i.md) | 表示认证结果信息，用于描述认证结果。 |
-| [AuthTipInfo](arkts-userauth-authtipinfo-i.md) | 用户认证中间状态。该接口用于描述认证过程中产生的各种中间状态信息，包括状态对应的认证类型和具体的状态码。应用可通过[AuthTipCallback]{@link userAuth.AuthTipCallback}获取这些中间状态， 以便在认证过程中提供更精细的用户反馈和状态感知。 |
-| [EnrolledState](arkts-userauth-enrolledstate-i.md) | 用户注册凭据的状态。该接口用于描述用户已注册的认证凭据（如人脸、指纹、伴随设备）的当前状态，包括凭据摘要和数量。应用可通过[getEnrolledState]{@link userAuth.getEnrolledState}接口查 询凭据状态，用于检测用户凭据是否发生变化（如新增或删除指纹/人脸/伴随设备），以便做出相应的业务处理。 |
-| [IAuthCallback](arkts-userauth-iauthcallback-i.md) | 返回认证结果的回调对象。该接口定义了认证结果的回调方法，用于在认证完成后获取认证结果。应用通过实现onResult方法，可以在认证通过时获取认证令牌，在认证不通过时获取错误码和相关信息。 |
-| <!--DelRow-->[IAuthWidgetCallback](arkts-userauth-iauthwidgetcallback-i-sys.md) | 身份认证组件回调接口。认证组件通过该回调接口获取用户认证框架发送的命令，并根据命令内容执行相应的认证操作。 |
-| <!--DelRow-->[IRemoteAuthCallback](arkts-userauth-iremoteauthcallback-i-sys.md) | 提供远端认证场景下获取WigetParam的接口。 |
-| [IUserAuthCallback](arkts-userauth-iuserauthcallback-i.md) | 返回认证结果的回调对象。 |
-| [ReuseUnlockResult](arkts-userauth-reuseunlockresult-i.md) | 复用解锁认证结果。该接口用于配置认证结果复用的相关参数，包括复用模式和有效时长。通过合理配置认证结果复用，可以在保证安全性的前提下提升用户体验，避免用户频繁重复认证。 > **说明：** > > 如果身份认证解锁（包括设备解锁）后，在有效时间内凭据发生了变化，身份认证的结果依然可以复用，认证结果中返回当前实际的EnrolledState。若复用认证结果时，之前认证时所使用的身份认证凭据已经被删除： > > - 如果删除的是人脸、指纹，则认证结果依然可以复用，只是返回的EnrolledState中credentialCount和credentialDigest均为0。 > > - 如果删除的是锁屏口令，则此次复用会失败。 |
-| [TipInfo](arkts-userauth-tipinfo-i.md) | 表示认证过程中的提示信息，用于提供认证过程的反馈。 |
-| [UserAuthInstance](arkts-userauth-userauthinstance-i.md) | 用于执行用户身份认证，并支持使用统一用户身份认证控件。该接口提供了完整的用户认证能力，包括订阅认证结果、订阅认证中间状态、启动认证和取消认证等操作。通过统一认证控件，可以为用户提供标准化的认证界面和一致的认证体验。 使用以下接口前，需先通过[getUserAuthInstance]{@link userAuth.getUserAuthInstance}方法获取UserAuthInstance对象。 > **说明：** > > 每个UserAuthInstance实例只能用于一次认证过程。若需要再次认证，必须重新获取UserAuthInstance实例。 |
-| [UserAuthResult](arkts-userauth-userauthresult-i.md) | 用户认证结果。认证通过时，返回认证类型和认证通过的令牌信息；认证不通过时，返回相应的错误码。该接口用于描述认证完成后的结果信息，应用可通过[IAuthCallback]{@link userAuth.IAuthCallback}的 onResult回调获取此结果。 |
-| <!--DelRow-->[UserAuthWidgetMgr](arkts-userauth-userauthwidgetmgr-i-sys.md) | 身份认证组件管理器。用于将自定义身份认证控件注册到UserAuthWidgetMgr中，由UserAuthWidgetMgr进行统一管理和调度。通过该接口，自定义身份认证控件可以接收来自用户认证框架的命令并执行相应操作。 |
-| [WidgetParam](arkts-userauth-widgetparam-i.md) | 用户认证界面配置相关参数。该接口用于配置认证界面的显示样式和交互方式，包括标题、导航按钮文本、窗口模式等。通过合理配置这些参数，可以为用户提供清晰的认证引导和良好的交互体验。 |
+| [AuthEvent](arkts-userauthentication-authevent-i.md) | Provides an asynchronous callback to return the authentication event information. |
+| [AuthInstance](arkts-userauthentication-authinstance-i.md) | Implements user authentication. |
+| [AuthLockState](arkts-userauthentication-authlockstate-i.md) | Enumerates the lockout status of an identity authentication type. This API is used to query the lockout status of aspecified authentication type (such as face, fingerprint, or PIN), including whether the authentication type islocked out, the number of remaining attempts, and the lockout duration. If a user fails to be authenticated formultiple times, the authenticator may enter a temporary or permanent lockout state. The application can notify theuser based on the lockout information. |
+| [AuthParam](arkts-userauthentication-authparam-i.md) | Defines the user authentication parameters. This API is used to configure user authentication parameters, includingthe challenge value, authentication type list, authentication trust level, and authentication result reuseconfiguration. By properly configuring these parameters, you can meet authentication requirements in differentservice scenarios. |
+| [AuthResult](arkts-userauthentication-authresult-i.md) | Represents the authentication result object. |
+| [AuthResultInfo](arkts-userauthentication-authresultinfo-i.md) | Represents the authentication result. |
+| [AuthTipInfo](arkts-userauthentication-authtipinfo-i.md) | Represents the intermediate authentication status. This API is used to describe various intermediate statesgenerated during authentication, including the authentication type and specific status code corresponding to eachstate. The application can obtain these intermediate states through[AuthTipCallback](arkts-userauthentication-authtipcallback-t.md) to provide more refined user feedback and status awareness duringauthentication. |
+| [Authenticator](arkts-userauthentication-authenticator-i.md) | Provides APIs for managing the **Authenticator** object. |
+| [EnrolledState](arkts-userauthentication-enrolledstate-i.md) | Represents the state of a credential enrolled. This API is used to describe the current state of enrolledauthentication credentials (such as face, fingerprint, and companion device), including the credential digest andquantity. The application can call the [getEnrolledState](arkts-userauthentication-getenrolledstate-f.md#getenrolledstate-1) API to query thecredential status, and check whether the user's credentials have changed (for example, whether a fingerprint, face,or companion device is added or deleted) to perform corresponding service processing. |
+| [IAuthCallback](arkts-userauthentication-iauthcallback-i.md) | Provides callbacks to return the authentication result. This API defines the authentication result callback method,which is used to obtain the authentication result after the authentication is complete. By implementing the**onResult** method, the application can obtain the authentication token when the authentication is successful, orobtain the error code and related information when the authentication fails. |
+| [IUserAuthCallback](arkts-userauthentication-iuserauthcallback-i.md) | Provides callbacks to return the authentication result. |
+| [ReuseUnlockResult](arkts-userauthentication-reuseunlockresult-i.md) | Represents information about the authentication result reuse. This API is used to configure parameters related toauthentication result reuse, including the reuse mode and validity period. By properly configuring authenticationresult reuse, you can ensure security while avoid repeated authentication, improving user experience.&gt; **NOTE**&gt; If the credential changes within the reuse duration after a successful identity authentication (including device&gt; unlock authentication), the authentication result can still be reused and the actual **EnrolledState** is&gt; returned in the authentication result. When the authentication credential used in the previous authentication has&gt; been deleted when the authentication result is reused:&gt;&gt; - If the face or fingerprint credential is deleted, the authentication result can still be reused, but the values&gt; of **credentialCount** and **credentialDigest** in the returned **EnrolledState** are both **0**.&gt;&gt; - If the screen lock password is deleted, the reuse will fail. |
+| [TipInfo](arkts-userauthentication-tipinfo-i.md) | Represents the tip information displayed during the authentication, which is used to provide feedback during theauthentication process. |
+| [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md) | Provides APIs for user authentication. The user authentication widget is supported. This API provides complete userauthentication capabilities, including subscribing to authentication results and intermediate states, and startingand canceling authentication. The unified authentication widget provides users with a standardized authenticationUI and consistent authentication experience.Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using[getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md#getuserauthinstance-1).&gt; **NOTE**&gt; Each **UserAuthInstance** can be used for only one authentication process. To perform authentication again, you&gt; must obtain a new **UserAuthInstance** instance. |
+| [UserAuthResult](arkts-userauthentication-userauthresult-i.md) | Represents the user authentication result. If the authentication is successful, the authentication type and tokeninformation are returned. If the authentication fails, the corresponding error code is returned. This API is usedto describe the result information after the authentication is complete. The application can obtain the resultthrough the **onResult** callback of [IAuthCallback](arkts-userauthentication-iauthcallback-i.md). |
+| [WidgetParam](arkts-userauthentication-widgetparam-i.md) | Represents the information presented on the user authentication page. This API is used to configure the displaystyle and interaction mode of the authentication screen, including the title, navigation button text, and windowmode. By properly setting these parameters, you can provide clear authentication guidance and good interactionexperience for users. |
 
-### Types
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [AuthCallbackOnResultFunc](arkts-userauth-authcallbackonresultfunc-t.md) | 回调函数，返回认证结果。认证成功时，可以通过UserAuthResult获取到认证成功的令牌信息。 |
-| [AuthEventKey](arkts-userauth-autheventkey-t.md) | 表示认证事件类型的关键字，作为[on]{@link userAuth.AuthInstance.on}接口的参数。 该类型为下表类型取值中的联合类型。 |
-| [AuthTipCallback](arkts-userauth-authtipcallback-t.md) | 回调函数，返回认证中间状态。该回调用于在认证过程中获取各种中间状态信息，包括每次认证不通过、冻结状态、界面加载和释放等。通过订阅这些中间状态，应用可以在认证过程中提供更精细的用户交互和状态管理。 |
-| [AuthType](arkts-userauth-authtype-t.md) | 表示认证类型。 |
-| <!--DelRow-->[AuthWidgetCallbackSendCommandFunc](arkts-userauth-authwidgetcallbacksendcommandfunc-t-sys.md) | 回调函数，身份认证框架向控件发送命令。 |
-| [EventInfo](arkts-userauth-eventinfo-t.md) | 表示认证过程中事件信息的类型。 该类型为下表类型取值中的联合类型。 |
-| <!--DelRow-->[ResultCallback](arkts-userauth-resultcallback-t-sys.md) | 调用返回认证结果。如果鉴权成功。 UserAuthResult中包含token信息。 |
-| [SecureLevel](arkts-userauth-securelevel-t.md) | 表示认证的安全级别。 |
-| <!--DelRow-->[WidgetParamCallback](arkts-userauth-widgetparamcallback-t-sys.md) | 调用以获取远程身份验证的用户身份验证页面上显示的信息。 |
+| [AuthParam](arkts-userauthentication-authparam-i-sys.md) | Defines the user authentication parameters. This API is used to configure user authentication parameters, includingthe challenge value, authentication type list, authentication trust level, and authentication result reuseconfiguration. By properly configuring these parameters, you can meet authentication requirements in differentservice scenarios. |
+| [IAuthWidgetCallback](arkts-userauthentication-iauthwidgetcallback-i-sys.md) | Defines the callback of the authentication widget. The authentication widget uses this callback to obtain commandssent by the user authentication framework and perform corresponding authentication operations based on the commandcontent. |
+| [IRemoteAuthCallback](arkts-userauthentication-iremoteauthcallback-i-sys.md) | Provides APIs for getting WidgetParam in remote authentication scenarios. |
+| [UserAuthWidgetMgr](arkts-userauthentication-userauthwidgetmgr-i-sys.md) | Defines the authentication widget manager. It is used to register the custom authentication widget with the**UserAuthWidgetMgr** for unified management and scheduling. Through this API, the custom authentication widget canreceive commands from the user authentication framework and perform corresponding operations. |
+| [WidgetParam](arkts-userauthentication-widgetparam-i-sys.md) | Represents the information presented on the user authentication page. This API is used to configure the displaystyle and interaction mode of the authentication screen, including the title, navigation button text, and windowmode. By properly setting these parameters, you can provide clear authentication guidance and good interactionexperience for users. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AuthenticationResult](arkts-userauth-authenticationresult-e.md) | 表示认证结果的枚举。 |
-| [AuthTrustLevel](arkts-userauth-authtrustlevel-e.md) | 表示认证结果的信任等级枚举。该枚举定义了四个认证可信等级，用于描述认证结果的安全强度。认证可信等级越高，表示认证方案的活体检测能力越强、用户身份识别越精确，适用于更高安全要求的业务场景。应用应根据业务场景的安全需求选择合适的认证可 信等级。 典型场景及举例可参考[生物认证可信等级划分原则](docroot://security/UserAuthenticationKit/user-authentication-overview.md#生物认证可信等级划分原则)。 |
-| [FaceTips](arkts-userauth-facetips-e.md) | 表示人脸认证过程中提示码的枚举。 |
-| [FingerprintTips](arkts-userauth-fingerprinttips-e.md) | 表示指纹认证过程中提示码的枚举。 |
-| <!--DelRow-->[NoticeType](arkts-userauth-noticetype-e-sys.md) | 用户身份认证的通知类型枚举。该枚举定义了系统支持的通知类型，用于标识通知的来源。 |
-| [ResultCode](arkts-userauth-resultcode-e.md) | 表示返回码的枚举。 |
-| [ReuseMode](arkts-userauth-reusemode-e.md) | 复用解锁认证结果的模式。该枚举定义了认证结果复用的四种模式，用于控制何种认证结果可以在何种条件下被复用。应用可根据业务场景选择合适的复用模式，以在安全性和用户体验之间取得平衡。 |
-| [UserAuthResultCode](arkts-userauth-userauthresultcode-e.md) | 表示返回码的枚举。该枚举定义了用户认证操作可能返回的所有结果码，包括成功码和各类错误码。应用可根据返回码判断认证结果，并采取相应的处理措施。 |
-| [UserAuthTipCode](arkts-userauth-userauthtipcode-e.md) | 表示身份认证中间状态的枚举。该枚举用于描述认证过程中的各种中间状态，包括认证不通过、超时、冻结状态以及认证界面的加载和释放等。应用可通过 [on('authTip')]{@link userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)}接口订阅这些中间状态，以便在认证过程中提 供更精细的用户反馈和状态感知。 |
-| [UserAuthType](arkts-userauth-userauthtype-e.md) | 表示身份认证的凭据类型枚举。该枚举定义了系统支持的认证类型，包括锁屏密码认证（PIN）、生物特征认证（人脸、指纹）等。应用在发起认证时需指定认证类型列表，用户可选择其中任意一种完成认证。不同认证类型具有不同的安全强度和用户体验特 点，应用应根据业务场景选择合适的认证类型。 |
-| <!--DelRow-->[WindowModeType](arkts-userauth-windowmodetype-e-sys.md) | 用户认证界面的显示类型枚举。该枚举定义了认证界面可使用的显示模式，用于控制系统身份认证组件的窗口样式 |
+| [AuthTrustLevel](arkts-userauthentication-authtrustlevel-e.md) | Enumerates the trust levels of the authentication result. This enum defines four trust levels of the authenticationresult, which are used to describe the security strength of the authentication result. A higher trust levelindicates a stronger liveness detection capability and more accurate user identity recognition of theauthentication solution, and is applicable to service scenarios that require higher security. The applicationshould select a proper authentication trust level based on the security requirements of service scenarios.For typical use cases, see[Principles for Classifying Biometric Authentication Trust Levels](../../../../security/UserAuthenticationKit/user-authentication-overview.md#principles-for-classifying-biometric-authentication-trust-levels). |
+| [AuthenticationResult](arkts-userauthentication-authenticationresult-e.md) | Enumerates the authentication results. |
+| [FaceTips](arkts-userauthentication-facetips-e.md) | Enumerates the tip codes used during the facial authentication process. |
+| [FingerprintTips](arkts-userauthentication-fingerprinttips-e.md) | Enumerates the tip codes used during the fingerprint authentication process. |
+| [ResultCode](arkts-userauthentication-resultcode-e.md) | Enumerates the authentication result codes. |
+| [ReuseMode](arkts-userauthentication-reusemode-e.md) | Enumerates the modes for reusing authentication results. This enum defines four modes for reusing authenticationresults and is used to control which authentication results can be reused under what conditions. The applicationcan select a proper reuse mode based on the service scenario to balance security and user experience. |
+| [UserAuthResultCode](arkts-userauthentication-userauthresultcode-e.md) | Enumerates the authentication result codes. They include all success codes and error codes for user authenticationoperations. The application can determine the authentication result based on the return code and take correspondingmeasures. |
+| [UserAuthTipCode](arkts-userauthentication-userauthtipcode-e.md) | Enumerates the intermediate states of identity authentication. This enum is used to describe various intermediatestates during authentication, including authentication failure, timeout, lockout, and loading and release of theauthentication screen. Applications can subscribe to these intermediate states through the[on('authTip')](arkts-userauthentication-userauthinstance-i.md#on-2) API to provide morerefined user feedback and status awareness during authentication. |
+| [UserAuthType](arkts-userauthentication-userauthtype-e.md) | Enumerates the identity authentication types. This enum defines the authentication types supported by the system,including PIN authentication and biometric authentication (face and fingerprint). When initiating authentication,an application needs to specify the authentication type list, and the user can select any of the authenticationtypes to complete the authentication. The security strength and user experience vary depending on authenticationtypes. The application needs to select a proper authentication type based on service scenarios. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [NoticeType](arkts-userauthentication-noticetype-e-sys.md) | Enumerates the notification types of user authentication. This enum defines the notification types supported by thesystem, which are used to identify the source of a notification. |
+| [UserAuthResultCode](arkts-userauthentication-userauthresultcode-e-sys.md) | Enumerates the authentication result codes. They include all success codes and error codes for user authenticationoperations. The application can determine the authentication result based on the return code and take correspondingmeasures. |
+| [UserAuthType](arkts-userauthentication-userauthtype-e-sys.md) | Enumerates the identity authentication types. This enum defines the authentication types supported by the system,including PIN authentication and biometric authentication (face and fingerprint). When initiating authentication,an application needs to specify the authentication type list, and the user can select any of the authenticationtypes to complete the authentication. The security strength and user experience vary depending on authenticationtypes. The application needs to select a proper authentication type based on service scenarios. |
+| [WindowModeType](arkts-userauthentication-windowmodetype-e-sys.md) | Enumerates the display types of the user authentication screen. This enum defines the display modes that can beused on the authentication screen and is used to control the window style of the system authentication widget. |
+<!--DelEnd-->
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [AuthEventKey](arkts-userauthentication-autheventkey-t.md) | Defines the keyword of the authentication event type. It is used as a parameter of[on](arkts-userauthentication-authinstance-i.md#on).It consists of the fields in **Type** in the following table. |
+| [AuthTipCallback](arkts-userauthentication-authtipcallback-t.md) | Defines the callback to return the intermediate authentication status. This callback is used to obtain variousintermediate status information during authentication, including authentication failure, lockout, and loading andrelease of the authentication screen. By subscribing to these intermediate statuses, the application can providemore refined user interaction and status management during the authentication process. |
+| [AuthType](arkts-userauthentication-authtype-t.md) | Enumerates the authentication types. |
+| [EventInfo](arkts-userauthentication-eventinfo-t.md) | Enumerates the authentication event information types.It consists of the fields in **Type** in the following table. |
+| [SecureLevel](arkts-userauthentication-securelevel-t.md) | Enumerates the authentication security levels. |
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ResultCallback](arkts-userauthentication-resultcallback-t-sys.md) | Called to return the authentication result. If the authentication is successful,UserAuthResult contains the token information. |
+| [WidgetParamCallback](arkts-userauthentication-widgetparamcallback-t-sys.md) | Called to get the information presented on the user authentication page for remote authentication. |
+<!--DelEnd-->
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [MAX_ALLOWABLE_REUSE_DURATION](arkts-userauth-con.md#MAX_ALLOWABLE_REUSE_DURATION) | 复用解锁认证结果最大有效时长，值为300000毫秒（5分钟）。用于限制认证结果复用的最大时长，防止长时间复用过期的认证结果带来的安全风险。该常量可作为 [ReuseUnlockResult]{@link userAuth.ReuseUnlockResult}中reuseDuration参数的最大值。 |
-| [MAX_ALLOWABLE_REUSE_DURATION](arkts-userauth-con.md#MAX_ALLOWABLE_REUSE_DURATION) | 永久锁定时长，单位为毫秒。取值为0x7fffffffff，代表认证永久锁定，不代表具体锁定时长。 取值范围为全体整数。 |
-| [PERMANENT_LOCKOUT_DURATION](arkts-userauth-con.md#PERMANENT_LOCKOUT_DURATION) | 永久冻结时间，值为0x7fffffff毫秒。当认证不通过次数达到上限后，认证器将进入永久冻结状态，此时需要通过PIN认证才能解锁。该值用于标识认证器的永久冻结状态，可通过 [AuthLockState]{@link userAuth.AuthLockState}的lockoutDuration字段返回。 |
-| [PERMANENT_LOCKOUT_DURATION](arkts-userauth-con.md#PERMANENT_LOCKOUT_DURATION) | 永久锁定时长，单位为毫秒。取值为0x7fffffffff，代表认证永久锁定，不代表具体锁定时长。 取值范围为全体整数。 |
+| [MAX_ALLOWABLE_REUSE_DURATION](arkts-userauthentication-userauth-con.md#max_allowable_reuse_duration) | Maximum reuse duration of the authentication result, in milliseconds. The value is **300000** (5 minutes). Thisconstant is used to limit the maximum duration for reusing an authentication result, preventing security riskscaused by reusing expired authentication results for a long time. It can be used as the maximum value of the**reuseDuration** parameter in [ReuseUnlockResult](arkts-userauthentication-reuseunlockresult-i.md). |
+| [PERMANENT_LOCKOUT_DURATION](arkts-userauthentication-userauth-con.md#permanent_lockout_duration) | Permanent lockout duration, in milliseconds. The value is **0x7fffffff**. When the number of failed authenticationattempts reaches the upper limit, the authenticator enters the permanent lockout status. In this case, PINauthentication is required for unlocking. This value is used to identify the permanent lockout status of theauthenticator, which can be returned by the **lockoutDuration** field in[AuthLockState](arkts-userauthentication-authlockstate-i.md). |
 

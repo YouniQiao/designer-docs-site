@@ -6,7 +6,8 @@
 function disableDeviceAdmin(admin: Want): Promise<void>
 ```
 
-[超级设备管理应用](../../../../mdm/mdm-kit-term.md#sda)通过该接口可以解除激活其他[普通设备管理应用](../../../../mdm/mdm-kit-term.md#da)，使用Promise异步回 调。该接口仅支持超级设备管理应用调用。
+[超级设备管理应用](../../../../mdm/mdm-kit-term.md#sda)通过该接口可以解除激活其他[普通设备管理应用](../../../../mdm/mdm-kit-term.md#da)，使用Promise异步回
+调。该接口仅支持超级设备管理应用调用。
 
 **起始版本：** 23
 
@@ -36,7 +37,7 @@ function disableDeviceAdmin(admin: Want): Promise<void>
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [9200005](../errorcode-enterpriseDeviceManager.md#9200005-解除激活设备管理器失败) | Failed to deactivate the administrator application of the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 
 **示例：**
 

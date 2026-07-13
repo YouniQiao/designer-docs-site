@@ -12,7 +12,9 @@ Represents the callback invoked when the web page is overscrolled.
 xOffset: number
 ```
 
-Horizontal overscroll offset based on the leftmost edge of the web page. Unit: vp.
+Horizontal overscroll offset based on the leftmost edge of the web page.
+
+Unit: vp.
 
 **Type:** number
 
@@ -28,7 +30,9 @@ Horizontal overscroll offset based on the leftmost edge of the web page. Unit: v
 yOffset: number
 ```
 
-Vertical overscroll offset based on the top edge of the web page. Unit: vp.
+Vertical overscroll offset based on the top edge of the web page.
+
+Unit: vp.
 
 **Type:** number
 

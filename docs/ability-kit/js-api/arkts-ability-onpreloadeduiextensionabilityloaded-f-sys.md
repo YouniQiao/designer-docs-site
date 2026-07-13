@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## onPreloadedUIExtensionAbilityLoaded
@@ -12,7 +12,9 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function onPreloadedUIExtensionAbilityLoaded(callback: PreloadedUIExtensionAbilityLoadedFn): void
 ```
 
-Subscribes to loaded events of a preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instance in the current process.
+Subscribes to loaded events of a preloaded
+[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current
+process.
 
 **Since:** 23
 
@@ -28,7 +30,7 @@ Subscribes to loaded events of a preloaded [UIExtensionAbility](arkts-ability-ui
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | PreloadedUIExtensionAbilityLoadedFn | Yes | Callback used to receive the ID of the preloaded[UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instance that is loaded. |
+| callback | PreloadedUIExtensionAbilityLoadedFn | Yes | Callback used to receive the ID of the preloaded[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance that is loaded. |
 
 **Error codes:**
 

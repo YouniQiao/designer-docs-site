@@ -60,7 +60,9 @@ Follows the component layout direction.
 AUTO = 3
 ```
 
-Follows the writing direction of the content. For example, for right-to-left (RTL) languages (such as Tibetan and Uyghur), the text is laid out from right to left. For left-to-right (LTR) languages (such as Chinese and English ), the text is laid out from left to right.
+Follows the writing direction of the content. For example, for right-to-left (RTL) languages (such as Tibetan and
+Uyghur), the text is laid out from right to left. For left-to-right (LTR) languages (such as Chinese and English
+), the text is laid out from left to right.
 
 **Since:** 23
 

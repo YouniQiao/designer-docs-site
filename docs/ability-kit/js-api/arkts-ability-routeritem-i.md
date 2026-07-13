@@ -28,7 +28,9 @@ Function decorated by @Builder. The function describes the UI of the page.
 readonly customData: string
 ```
 
-Any type of custom data in the [routing table configuration file](../../../../quick-start/module-configuration-file.md#routermap), that is, JSON string of the **customData** field. You need to call **JSON.parse** to parse the field.
+Any type of custom data in the
+[routing table configuration file](../../../../quick-start/module-configuration-file.md#routermap), that is, JSON
+string of the **customData** field. You need to call **JSON.parse** to parse the field.
 
 **Type:** string
 
@@ -44,7 +46,9 @@ Any type of custom data in the [routing table configuration file](../../../../qu
 readonly data: Array<DataItem>
 ```
 
-User-defined string in the [routing table configuration file](../../../../quick-start/module-configuration-file.md#routermap), that is, value of the **data** field. This field is parsed by the system. You do not need to parse it.
+User-defined string in the
+[routing table configuration file](../../../../quick-start/module-configuration-file.md#routermap), that is, value of
+the **data** field. This field is parsed by the system. You do not need to parse it.
 
 **Type:** Array<DataItem>
 

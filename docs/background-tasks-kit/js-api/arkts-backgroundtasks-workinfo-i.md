@@ -9,7 +9,7 @@ Represents the deferred task information, which is used to set the trigger condi
 ## Modules to Import
 
 ```TypeScript
-import { workScheduler } from '@ohos.resourceschedule.workScheduler';
+import { workScheduler } from '@kit.BackgroundTasksKit';
 ```
 
 ## abilityName
@@ -34,7 +34,9 @@ Ability name in the bundle.
 batteryLevel?: number
 ```
 
-Battery level. Value range: [0, 100]
+Battery level.
+
+Value range: [0, 100]
 
 **Type:** number
 
@@ -98,7 +100,9 @@ Charging type.
 earliestStartTime?: number
 ```
 
-Interval between the initial execution time and the request time for a task, in milliseconds. The default value is **0**, and the value must be greater than or equal to 0. The value range is all integers.
+Interval between the initial execution time and the request time for a task, in milliseconds. The default value
+is **0**, and the value must be greater than or equal to 0.
+The value range is all integers.
 
 **Type:** number
 
@@ -130,7 +134,10 @@ Idle wait time, in milliseconds.
 isCharging?: boolean
 ```
 
-Whether the device needs to enter the charging state. The default value is **false**. - **true**: The device needs to enter the charging state to trigger deferred task scheduling. - **false**: The device does not need to enter the charging state to trigger deferred task scheduling.
+Whether the device needs to enter the charging state. The default value is **false**.
+
+- **true**: The device needs to enter the charging state to trigger deferred task scheduling.
+- **false**: The device does not need to enter the charging state to trigger deferred task scheduling.
 
 **Type:** boolean
 
@@ -146,7 +153,11 @@ Whether the device needs to enter the charging state. The default value is **fal
 isDeepIdle?: boolean
 ```
 
-Whether the device needs to enter the idle state to trigger deferred task scheduling. The default value is **false**. - **true**: The device needs to enter the idle state to trigger deferred task scheduling. - **false**: The device does not need to enter the idle state to trigger deferred task scheduling.
+Whether the device needs to enter the idle state to trigger deferred task scheduling. The default value is
+**false**.
+
+- **true**: The device needs to enter the idle state to trigger deferred task scheduling.
+- **false**: The device does not need to enter the idle state to trigger deferred task scheduling.
 
 **Type:** boolean
 
@@ -162,7 +173,10 @@ Whether the device needs to enter the idle state to trigger deferred task schedu
 isPersisted?: boolean
 ```
 
-Whether the registered deferred task can be saved in the system. The default value is **false**. - **true**: The task can be saved. That is, the task can be restored after the system restarts. - **false**: The task cannot be saved.
+Whether the registered deferred task can be saved in the system. The default value is **false**.
+
+- **true**: The task can be saved. That is, the task can be restored after the system restarts.
+- **false**: The task cannot be saved.
 
 **Type:** boolean
 
@@ -178,7 +192,10 @@ Whether the registered deferred task can be saved in the system. The default val
 isRepeat?: boolean
 ```
 
-Whether the task is repeated. The default value is **false**. - **true**: The task is repeated. - **false**: The task is not repeated.
+Whether the task is repeated. The default value is **false**.
+
+- **true**: The task is repeated.
+- **false**: The task is not repeated.
 
 **Type:** boolean
 

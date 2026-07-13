@@ -29,9 +29,9 @@ Creates a PixelMap object from surface id.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980105 | Failed to get the data. |
-| 62980178 | Failed to create the PixelMap. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980105](../errorcode-image.md#62980105-图片获取数据错误) | Failed to get the data. |
+| [62980178](../errorcode-image.md#62980178-pixelmap创建失败) | Failed to create the PixelMap. |
 
 **示例：**
 
@@ -51,6 +51,7 @@ function CreatePixelMapFromSurfaceSync(surfaceId: string) {
 }
 
 ```
+
 
 ## createPixelMapFromSurfaceSync
 
@@ -80,9 +81,9 @@ Creates a PixelMap object from surface id.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980105 | Failed to get the data. |
-| 62980178 | Failed to create the PixelMap. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980105](../errorcode-image.md#62980105-图片获取数据错误) | Failed to get the data. |
+| [62980178](../errorcode-image.md#62980178-pixelmap创建失败) | Failed to create the PixelMap. |
 
 **示例：**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## setTextUndefinedGlyphDisplay
@@ -12,7 +12,14 @@ import { text } from '@ohos.graphics.text';
 function setTextUndefinedGlyphDisplay(noGlyphShow: TextUndefinedGlyphDisplay): void
 ```
 
-Sets the glyph type to be used when characters are mapped to the .notdef (undefined) glyph. This setting affects all text rendered subsequently. This setting affects how to display undefined characters in the font: - The default behavior follows the .notdef glyph design of the font. - After this feature is enabled, characters without glyphs are displayed as a tofu block of text.
+Sets the glyph type to be used when characters are mapped to the .notdef (undefined) glyph.
+
+This setting affects all text rendered subsequently.
+
+This setting affects how to display undefined characters in the font:
+
+- The default behavior follows the .notdef glyph design of the font.
+- After this feature is enabled, characters without glyphs are displayed as a tofu block of text.
 
 **Since:** 20
 

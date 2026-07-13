@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## setUserGrantedState
@@ -12,7 +12,8 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function setUserGrantedState(targetBundle: BundleOption, enabled: boolean): Promise<void>
 ```
 
-Sets the enabling state of the **Allow access to notifications on this device** switch for a specified application. This API uses a promise to return the result.
+Sets the enabling state of the **Allow access to notifications on this device** switch for a specified application.
+This API uses a promise to return the result.
 
 **Since:** 22
 
@@ -26,7 +27,7 @@ Sets the enabling state of the **Allow access to notifications on this device** 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| targetBundle | BundleOption | Yes | Information about the target application. The application must haverequested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented[NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md#notificationsubscriberextensionability).Otherwise, error code 1600022 is returned. |
+| targetBundle | BundleOption | Yes | Information about the target application. The application must haverequested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented[NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md).Otherwise, error code 1600022 is returned. |
 | enabled | boolean | Yes | Whether to enable the device notification access. The value **true** indicates thatthis functionality is enabled, and **false** indicates the opposite. |
 
 **Return value:**

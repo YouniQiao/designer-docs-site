@@ -1,12 +1,19 @@
 # RemoteAbilityInfo (System API)
 
-The module provides information about a remote ability. > **NOTE** > > The APIs of this module have been deprecated since API version 9. You are advised to use > [bundleManager-RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md#remoteabilityinfo) instead. > > The APIs provided by this module are system APIs.
+The module provides information about a remote ability.
+
+> **NOTE**
+>
+> The APIs of this module have been deprecated since API version 9. You are advised to use
+> [bundleManager-RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md) instead.
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [remoteAbilityInfo:RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md#remoteabilityinfo)
+**Substitutes:** [remoteAbilityInfo:RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md)
 
 **System capability:** SystemCapability.BundleManager.DistributedBundleFramework
 

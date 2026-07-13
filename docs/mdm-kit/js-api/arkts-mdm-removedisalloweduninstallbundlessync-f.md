@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## removeDisallowedUninstallBundlesSync
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function removeDisallowedUninstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: number): void
 ```
 
-Removes the applications that cannot be uninstalled by the current or specified user through the specified device administrator application.
+Removes the applications that cannot be uninstalled by the current or specified user through the specified device
+administrator application.
 
 **Since:** 12
 

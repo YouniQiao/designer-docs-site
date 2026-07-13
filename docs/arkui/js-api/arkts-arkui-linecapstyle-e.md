@@ -9,7 +9,7 @@ LineCapStyle enumeration description
 ## Butt
 
 ```TypeScript
-Butt = 0
+Butt
 ```
 
 The two ends of the dividing line are parallel lines.
@@ -25,7 +25,7 @@ The two ends of the dividing line are parallel lines.
 ## Round
 
 ```TypeScript
-Round = 1
+Round
 ```
 
 The two ends of the dividing line are semicircles.
@@ -41,10 +41,11 @@ The two ends of the dividing line are semicircles.
 ## Square
 
 ```TypeScript
-Square = 2
+Square
 ```
 
-Extends half a circle at the end of the path with a width equal to half the line width and a height equal to the line width.
+Extends half a circle at the end of the path with a width equal to half the line width and a height equal to the
+line width.
 
 **Since:** 7
 

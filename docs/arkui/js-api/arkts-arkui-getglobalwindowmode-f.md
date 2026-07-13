@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## getGlobalWindowMode
@@ -12,7 +12,8 @@ import { window } from '@ohos.window';
 function getGlobalWindowMode(displayId?: number): Promise<number>
 ```
 
-Obtains the window mode of the window that is in the foreground lifecycle on the specified screen. This API uses a promise to return the result.
+Obtains the window mode of the window that is in the foreground lifecycle on the specified screen. This API uses a
+promise to return the result.
 
 **Since:** 20
 
@@ -30,7 +31,7 @@ Obtains the window mode of the window that is in the foreground lifecycle on the
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the window mode. Each binary bit represents a window mode. Fordetails about the supported window modes, see [GlobalWindowMode](arkts-arkui-globalwindowmode-e.md#globalwindowmode).The return value is the result of a bitwise OR operation on the corresponding window mode values. For example,if there are full-screen, floating, and PiP windows on the specified screen, the return value is `0b1\|0b100\|0b1000 = 13`. |
+| Promise&lt;number&gt; | Promise used to return the window mode. Each binary bit represents a window mode. Fordetails about the supported window modes, see [GlobalWindowMode](arkts-arkui-globalwindowmode-e.md).The return value is the result of a bitwise OR operation on the corresponding window mode values. For example,if there are full-screen, floating, and PiP windows on the specified screen, the return value is `0b1\|0b100\|0b1000 = 13`. |
 
 **Error codes:**
 

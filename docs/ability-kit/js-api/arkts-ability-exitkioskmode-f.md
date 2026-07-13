@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { kioskManager } from '@ohos.app.ability.kioskManager';
+import { kioskManager } from '@kit.AbilityKit';
 ```
 
 ## exitKioskMode
@@ -12,7 +12,10 @@ import { kioskManager } from '@ohos.app.ability.kioskManager';
 function exitKioskMode(context: UIAbilityContext): Promise<void>
 ```
 
-Exits kiosk mode. This API uses a promise to return the result. This API takes effect only for applications that have entered kiosk mode. This API can be properly called only on phones, PC/2-in-1 devices, and tablets. On other devices, it returns the error code 801.
+Exits kiosk mode. This API uses a promise to return the result.
+This API takes effect only for applications that have entered kiosk mode.
+This API can be properly called only on phones, PC/2-in-1 devices, and tablets. On other devices, it returns the
+error code 801.
 
 **Since:** 20
 

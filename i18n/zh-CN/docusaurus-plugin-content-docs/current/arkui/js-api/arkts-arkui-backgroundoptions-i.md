@@ -12,7 +12,9 @@
 align?: Alignment
 ```
 
-Set the alignment of the custom background and component. Anonymous Object Rectification.
+Set the alignment of the custom background and component.
+
+Anonymous Object Rectification.
 
 **类型：** Alignment
 

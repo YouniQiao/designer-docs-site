@@ -1,4 +1,4 @@
-# SettingParam
+# SettingParam (System API)
 
 Defines the effect parameters used to preheat an image.
 
@@ -14,15 +14,17 @@ Defines the effect parameters used to preheat an image.
 import { camera } from '@kit.CameraKit';
 ```
 
-## skinSmoothLevel
+## faceSlender
 
 ```TypeScript
-skinSmoothLevel: int
+faceSlender: number
 ```
 
-Skin smoothing level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **1** indicates level-1 smoothing.
+Face slimming level, which is obtained through
+[Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value **1**
+indicates level-1 slimming.
 
-**Type:** int
+**Type:** number
 
 **Since:** 11
 
@@ -30,15 +32,17 @@ Skin smoothing level, which is obtained through [Beauty.getSupportedBeautyRange]
 
 **System API:** This is a system API.
 
-## faceSlender
+## skinSmoothLevel
 
 ```TypeScript
-faceSlender: int
+skinSmoothLevel: number
 ```
 
-Face slimming level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **1** indicates level-1 slimming.
+Skin smoothing level, which is obtained through
+[Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value **1**
+indicates level-1 smoothing.
 
-**Type:** int
+**Type:** number
 
 **Since:** 11
 
@@ -49,12 +53,14 @@ Face slimming level, which is obtained through [Beauty.getSupportedBeautyRange]c
 ## skinTone
 
 ```TypeScript
-skinTone: int
+skinTone: number
 ```
 
-Skin tone perfection level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **0xBF986C** indicates a specific color.
+Skin tone perfection level, which is obtained through
+[Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value
+**0xBF986C** indicates a specific color.
 
-**Type:** int
+**Type:** number
 
 **Since:** 11
 

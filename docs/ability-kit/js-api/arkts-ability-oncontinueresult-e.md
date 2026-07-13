@@ -1,6 +1,8 @@
 # OnContinueResult
 
-Enumerates the ability continuation results. You can use it in [onContinue()](arkts-ability-uiability-c.md#oncontinue-1) of the UIAbility to complete different operations.
+Enumerates the ability continuation results. You can use it in
+[onContinue()](arkts-ability-uiability-c.md#oncontinue-1) of the UIAbility to complete different
+operations.
 
 **Since:** 9
 
@@ -28,7 +30,9 @@ The ability continuation is accepted.
 REJECT = 1
 ```
 
-The ability continuation is rejected. If the application is abnormal in [onContinue](arkts-ability-uiability-c.md#oncontinue-1), which results in abnormal display during data restoration, this result is returned.
+The ability continuation is rejected. If the application is abnormal in
+[onContinue](arkts-ability-uiability-c.md#oncontinue-1), which results in abnormal display during
+data restoration, this result is returned.
 
 **Since:** 9
 
@@ -44,7 +48,9 @@ The ability continuation is rejected. If the application is abnormal in [onConti
 MISMATCH = 2
 ```
 
-The version does not match. The application on the initiator can obtain the version of the target application from [onContinue](arkts-ability-uiability-c.md#oncontinue-1). If the ability continuation cannot be performed due to version mismatch, this result is returned.
+The version does not match. The application on the initiator can obtain the version of the target application
+from [onContinue](arkts-ability-uiability-c.md#oncontinue-1). If the ability continuation cannot be
+performed due to version mismatch, this result is returned.
 
 **Since:** 9
 

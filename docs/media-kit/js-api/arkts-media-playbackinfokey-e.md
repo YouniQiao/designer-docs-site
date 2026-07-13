@@ -1,9 +1,5 @@
 # PlaybackInfoKey
 
-```TypeScript
-enum PlaybackInfoKey
-```
-
 Enumerates the playback description keys.
 
 **Since:** 12
@@ -52,7 +48,8 @@ Download rate in one second. The corresponding key value type is number, measure
 IS_DOWNLOADING = 'is_downloading'
 ```
 
-Download status. The corresponding key value type is number. The value **1** means that the downloaded is in progress, and **0** means that the download is complete.
+Download status. The corresponding key value type is number. The value **1** means that the downloaded is in
+progress, and **0** means that the download is complete.
 
 **Since:** 12
 

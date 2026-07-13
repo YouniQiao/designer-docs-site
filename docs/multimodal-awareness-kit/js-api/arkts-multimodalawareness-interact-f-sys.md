@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## interact
@@ -13,7 +13,9 @@ function interact(capability: OnscreenAwarenessCap,
                    options?: OnscreenAwarenessOptions): Promise<OnscreenAwarenessInfo[]>
 ```
 
-Proactively triggers screen behavior interaction to identify screen behaviors and return behavior receipts. For <br> for example, after a link is clicked, the system accurately jumps to the specified paragraph and <br> highlights the text based on the receipt information.
+Proactively triggers screen behavior interaction to identify screen behaviors and return behavior receipts. For
+<br> example, after a link is clicked, the system accurately jumps to the specified paragraph and
+<br> highlights the text based on the receipt information.
 
 **Since:** 23
 

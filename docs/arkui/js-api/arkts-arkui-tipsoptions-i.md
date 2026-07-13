@@ -12,7 +12,11 @@ Defines the parameters of the tooltip.
 appearingTime?: number
 ```
 
-Delay before the tooltip appears. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms. Default value: **700**. Unit: ms.
+Delay before the tooltip appears. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms.
+
+Default value: **700**.
+
+Unit: ms.
 
 **Type:** number
 
@@ -30,7 +34,12 @@ Delay before the tooltip appears. The maximum delay is 4000 ms. Values exceeding
 appearingTimeWithContinuousOperation?: number
 ```
 
-Delay before the tooltip appears when multiple tooltips are displayed consecutively. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms. Default value: **300**. Unit: ms.
+Delay before the tooltip appears when multiple tooltips are displayed consecutively. The maximum delay is 4000 ms.
+Values exceeding 4000 ms are capped at 4000 ms.
+
+Default value: **300**.
+
+Unit: ms.
 
 **Type:** number
 
@@ -48,7 +57,15 @@ Delay before the tooltip appears when multiple tooltips are displayed consecutiv
 arrowHeight?: Dimension
 ```
 
-Height of the tooltip arrow. Default value: **8**. Unit: vp. **NOTE** Percentage values are not supported.
+Height of the tooltip arrow.
+
+Default value: **8**.
+
+Unit: vp.
+
+**NOTE**
+
+Percentage values are not supported.
 
 **Type:** Dimension
 
@@ -68,7 +85,11 @@ Height of the tooltip arrow. Default value: **8**. Unit: vp. **NOTE** Percentage
 arrowPointPosition?: ArrowPointPosition
 ```
 
-Position of the tooltip arrow relative to its parent component. Available positions are **Start**, **Center**, and **End**, in both vertical and horizontal directions. These positions are within the parent component area and do not exceed its boundaries or cover rounded corners. Default value: **ArrowPointPosition.CENTER**.
+Position of the tooltip arrow relative to its parent component. Available positions are **Start**, **Center**, and
+**End**, in both vertical and horizontal directions. These positions are within the parent component area and do
+not exceed its boundaries or cover rounded corners.
+
+Default value: **ArrowPointPosition.CENTER**.
 
 **Type:** ArrowPointPosition
 
@@ -86,7 +107,16 @@ Position of the tooltip arrow relative to its parent component. Available positi
 arrowWidth?: Dimension
 ```
 
-Width of the tooltip arrow. If the set width exceeds the length of the edge minus twice the tooltip's corner radius, the arrow is not drawn. Default value: **16**. Unit: vp. **NOTE** Percentage values are not supported.
+Width of the tooltip arrow. If the set width exceeds the length of the edge minus twice the tooltip's corner
+radius, the arrow is not drawn.
+
+Default value: **16**.
+
+Unit: vp.
+
+**NOTE**
+
+Percentage values are not supported.
 
 **Type:** Dimension
 
@@ -106,7 +136,11 @@ Width of the tooltip arrow. If the set width exceeds the length of the edge minu
 disappearingTime?: number
 ```
 
-Delay before the tooltip disappears. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms. Default value: **300**. Unit: ms.
+Delay before the tooltip disappears. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms.
+
+Default value: **300**.
+
+Unit: ms.
 
 **Type:** number
 
@@ -124,7 +158,12 @@ Delay before the tooltip disappears. The maximum delay is 4000 ms. Values exceed
 disappearingTimeWithContinuousOperation?: number
 ```
 
-Delay before the tooltip disappears when multiple tooltips are displayed consecutively. The maximum delay is 4000 ms. Values exceeding 4000 ms are capped at 4000 ms. Default value: **0**. Unit: ms.
+Delay before the tooltip disappears when multiple tooltips are displayed consecutively. The maximum delay is 4000
+ms. Values exceeding 4000 ms are capped at 4000 ms.
+
+Default value: **0**.
+
+Unit: ms.
 
 **Type:** number
 
@@ -142,7 +181,16 @@ Delay before the tooltip disappears when multiple tooltips are displayed consecu
 enableArrow?: boolean
 ```
 
-Whether to display the tooltip arrow. Default value: **true**. **true**: yes. **false**: no. **NOTE** If the available space on the screen is insufficient, the tooltip will cover part of the component and the arrow will not be displayed.
+Whether to display the tooltip arrow.
+
+Default value: **true**.
+
+**true**: yes. **false**: no.
+
+**NOTE**
+
+If the available space on the screen is insufficient, the tooltip will cover part of the component and the arrow
+will not be displayed.
 
 **Type:** boolean
 
@@ -162,7 +210,13 @@ Whether to display the tooltip arrow. Default value: **true**. **true**: yes. **
 showAtAnchor?: TipsAnchorType
 ```
 
-Anchor type of the tooltip. Default value: **TipsAnchorType.TARGET**. **NOTE** If the anchor type of the tooltip is **TipsAnchorType.CURSOR**, the tooltip does not display an arrow.
+Anchor type of the tooltip.
+
+Default value: **TipsAnchorType.TARGET**.
+
+**NOTE**
+
+If the anchor type of the tooltip is **TipsAnchorType.CURSOR**, the tooltip does not display an arrow.
 
 **Type:** TipsAnchorType
 
@@ -180,7 +234,8 @@ Anchor type of the tooltip. Default value: **TipsAnchorType.TARGET**. **NOTE** I
 systemMaterial?: SystemUiMaterial
 ```
 
-Set system-styled materials for tips. Different materials have different effects, which can influence backgroundColor, border, shadow, and other visual attributes of tips.
+Set system-styled materials for tips. Different materials have different effects, which can influence
+backgroundColor, border, shadow, and other visual attributes of tips.
 
 **Type:** SystemUiMaterial
 

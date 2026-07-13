@@ -11,7 +11,7 @@ Defines arguments for an event query.
 ## Modules to Import
 
 ```TypeScript
-import { hiSysEvent } from '@ohos.hiSysEvent';
+import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## beginTime
@@ -20,7 +20,8 @@ import { hiSysEvent } from '@ohos.hiSysEvent';
 beginTime: number
 ```
 
-Start time of the system event to be queried. The value is a 13-digit timestamp, indicating the number of milliseconds elapsed since 00:00:00:00 on January 1, 1970.
+Start time of the system event to be queried. The value is a 13-digit timestamp, indicating the number of
+milliseconds elapsed since 00:00:00:00 on January 1, 1970.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ Start time of the system event to be queried. The value is a 13-digit timestamp,
 endTime: number
 ```
 
-End time of the system event to be queried. The value is a 13-digit timestamp, indicating the number of milliseconds elapsed since 00:00:00:00 on January 1, 1970.
+End time of the system event to be queried. The value is a 13-digit timestamp, indicating the number of
+milliseconds elapsed since 00:00:00:00 on January 1, 1970.
 
 **Type:** number
 

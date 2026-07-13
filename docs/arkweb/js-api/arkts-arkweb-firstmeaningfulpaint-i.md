@@ -12,7 +12,8 @@ Provides detailed information about the first meaningful paint.
 firstMeaningfulPaintTime?: number
 ```
 
-Paint time of first meaningful content. <br>Unit:milliseconds.
+Paint time of first meaningful content.
+<br>Unit:milliseconds.
 
 **Type:** number
 
@@ -28,7 +29,8 @@ Paint time of first meaningful content. <br>Unit:milliseconds.
 navigationStartTime?: number
 ```
 
-Start time of navigation. <br>Unit:microseconds.
+Start time of navigation.
+<br>Unit:microseconds.
 
 **Type:** number
 

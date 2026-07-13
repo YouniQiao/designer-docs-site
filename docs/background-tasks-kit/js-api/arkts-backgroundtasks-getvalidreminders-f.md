@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { reminderAgentManager } from '@ohos.reminderAgentManager';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## getValidReminders
@@ -12,7 +12,8 @@ import { reminderAgentManager } from '@ohos.reminderAgentManager';
 function getValidReminders(callback: AsyncCallback<Array<ReminderRequest>>): void
 ```
 
-Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) set by the current application. This API uses an asynchronous callback to return the result.
+Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints)
+set by the current application. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -74,7 +75,8 @@ reminderAgentManager.getValidReminders((err: BusinessError, reminders: Array<rem
 function getValidReminders(): Promise<Array<ReminderRequest>>
 ```
 
-Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) set by the current application. This API uses a promise to return the result.
+Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints)
+set by the current application. This API uses a promise to return the result.
 
 **Since:** 9
 

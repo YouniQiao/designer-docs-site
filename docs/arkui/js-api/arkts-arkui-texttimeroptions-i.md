@@ -30,7 +30,11 @@ controller?: TextTimerController
 count?: number
 ```
 
-Timer duration, in milliseconds. It is effective only when **isCountDown** is **true**. The maximum value is 864000 00 ms (24 hours). If 0 < **count** < 86400000, **count** is the initial value of the timer. Otherwise, the default value is used as the initial value. Default value: **60000**
+Timer duration, in milliseconds. It is effective only when **isCountDown** is **true**. The maximum value is 864000
+00 ms (24 hours). If 0 < **count** < 86400000, **count** is the initial value of the timer. Otherwise, the default
+value is used as the initial value.
+
+Default value: **60000**
 
 **Type:** number
 
@@ -48,7 +52,13 @@ Timer duration, in milliseconds. It is effective only when **isCountDown** is **
 isCountDown?: boolean
 ```
 
-Countdown switch. **true**: The timer counts down (for example, from 30 seconds to 0 seconds). **false**: The timer counts up (for example, from 0 seconds to 30 seconds). Default value: **false**
+Countdown switch.
+
+**true**: The timer counts down (for example, from 30 seconds to 0 seconds).
+
+**false**: The timer counts up (for example, from 0 seconds to 30 seconds).
+
+Default value: **false**
 
 **Type:** boolean
 
@@ -66,7 +76,13 @@ Countdown switch. **true**: The timer counts down (for example, from 30 seconds 
 startTime?: number
 ```
 
-The start time of the timer.It is effective when isCountDown is false. Default value: **0** Unit: ms. When the value is negative, the timer starts with a negative value and continues with a positive value after 0.
+The start time of the timer.It is effective when isCountDown is false.
+
+Default value: **0**
+
+Unit: ms.
+
+When the value is negative, the timer starts with a negative value and continues with a positive value after 0.
 
 **Type:** number
 

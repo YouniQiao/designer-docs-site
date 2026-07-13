@@ -4,9 +4,10 @@
 export type PermissionRequestResult = _PermissionRequestResult
 ```
 
-PermissionRequestResult interface.
+Permission request result object, containing information such as the list of requested permission names, the
+authorization result of each permission, the dialog box display result, and the failure reason.
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 

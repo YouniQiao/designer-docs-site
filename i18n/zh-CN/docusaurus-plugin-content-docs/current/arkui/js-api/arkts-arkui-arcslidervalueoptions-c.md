@@ -32,7 +32,15 @@ ArcSliderValueOptions的构造函数。
 max?: number
 ```
 
-设置最大值。 默认值：100 **说明：** 当出现异常情况min >= max时，min取默认值0，max取默认值100。 progress不在[min, max]范围之内，取min或者max，靠近min取min，靠近max取max。
+设置最大值。
+
+默认值：100
+
+**说明：**
+
+当出现异常情况min >= max时，min取默认值0，max取默认值100。
+
+progress不在[min, max]范围之内，取min或者max，靠近min取min，靠近max取max。
 
 **类型：** number
 
@@ -50,7 +58,9 @@ max?: number
 min?: number
 ```
 
-设置最小值。 默认值：0
+设置最小值。
+
+默认值：0
 
 **类型：** number
 
@@ -68,7 +78,9 @@ min?: number
 progress?: number
 ```
 
-设置当前进度值。 默认值：与参数min的取值一致
+设置当前进度值。
+
+默认值：与参数min的取值一致
 
 **类型：** number
 

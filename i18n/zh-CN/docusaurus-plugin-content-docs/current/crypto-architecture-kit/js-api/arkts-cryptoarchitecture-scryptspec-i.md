@@ -1,8 +1,13 @@
 # ScryptSpec
 
-密钥派生函数参数[KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec)的子类，作为SCRYPT密钥派生函数进行密钥派生时的输入。 > **说明：** > > passphrase指的是原始密码，如果使用string类型，需要直接传入用于密钥派生的数据，而不是HexString、base64等字符串类型，同时需要确保该 > 字符串为utf-8编码，否则派生结果会有差异。
+密钥派生函数参数[KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md)的子类，作为SCRYPT密钥派生函数进行密钥派生时的输入。
 
-**继承/实现关系：** ScryptSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec)
+> **说明：**
+>
+> passphrase指的是原始密码，如果使用string类型，需要直接传入用于密钥派生的数据，而不是HexString、base64等字符串类型，同时需要确保该
+> 字符串为utf-8编码，否则派生结果会有差异。
+
+**继承/实现关系：** ScryptSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md)
 
 **起始版本：** 18
 
@@ -46,7 +51,7 @@ maxMemory: number
 n: number
 ```
 
-迭代次数，需要为正整数。
+CPU/内存开销参数，需要为正整数。
 
 **类型：** number
 

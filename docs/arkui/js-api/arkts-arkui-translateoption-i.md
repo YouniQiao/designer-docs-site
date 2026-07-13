@@ -9,7 +9,7 @@ Describes the translation parameters.
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## x
@@ -18,7 +18,13 @@ import { matrix4 } from '@ohos.matrix4';
 x?: number
 ```
 
-Translation distance along the x-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
+Translation distance along the x-axis.
+
+Unit: px
+
+Default value: **0**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -34,7 +40,13 @@ Translation distance along the x-axis. Unit: px Default value: **0** Value range
 y?: number
 ```
 
-Translation distance along the y-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
+Translation distance along the y-axis.
+
+Unit: px
+
+Default value: **0**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -50,7 +62,13 @@ Translation distance along the y-axis. Unit: px Default value: **0** Value range
 z?: number
 ```
 
-Translation distance along the z-axis. Unit: px Default value: **0** Value range: (-∞, +∞)
+Translation distance along the z-axis.
+
+Unit: px
+
+Default value: **0**
+
+Value range: (-∞, +∞)
 
 **Type:** number
 

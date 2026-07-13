@@ -1,6 +1,13 @@
 # CursorController
 
-Provides the capability to set cursor styles. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - In the following API examples, you must first use [getCursorController()](arkts-arkui-uicontext-c.md#getcursorcontroller-1) in > **UIContext** to obtain a **CursorController** instance, and then call the APIs using the obtained instance.
+Provides the capability to set cursor styles.
+
+> **NOTE**
+>
+> - The initial APIs of this class are supported since API version 12.
+>
+> - In the following API examples, you must first use [getCursorController()](arkts-arkui-uicontext-c.md#getcursorcontroller-1) in
+> **UIContext** to obtain a **CursorController** instance, and then call the APIs using the obtained instance.
 
 **Since:** 12
 
@@ -9,7 +16,7 @@ Provides the capability to set cursor styles. > **NOTE** > > - The initial APIs 
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## restoreDefault
@@ -34,7 +41,11 @@ Restores the default cursor style.
 setCursor(value: PointerStyle): void
 ```
 
-Sets the cursor style. > **NOTE** > > This API does not take effect immediately. The cursor style will be updated in the next rendering frame.
+Sets the cursor style.
+
+> **NOTE**
+>
+> This API does not take effect immediately. The cursor style will be updated in the next rendering frame.
 
 **Since:** 12
 
@@ -56,7 +67,11 @@ Sets the cursor style. > **NOTE** > > This API does not take effect immediately.
 setCustomCursor(value: image.PixelMap, focusX?: number, focusY?: number): void
 ```
 
-Sets the custom cursor style. > **NOTE** > > This API does not take effect immediately. The cursor style will be updated in the next rendering frame.
+Sets the custom cursor style.
+
+> **NOTE**
+>
+> This API does not take effect immediately. The cursor style will be updated in the next rendering frame.
 
 **Since:** 26.0.0
 

@@ -3,7 +3,7 @@
 ## 导入模块
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## requestEnableNotification
@@ -12,7 +12,13 @@ import { notificationManager } from '@ohos.notificationManager';
 function requestEnableNotification(callback: AsyncCallback<void>): void
 ```
 
-当前应用请求通知使能。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的 > [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > 替代。
+当前应用请求通知使能。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的
+> [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
+> 替代。
 
 **起始版本：** 9
 
@@ -32,12 +38,12 @@ function requestEnableNotification(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
-| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11 |
-| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11 |
+| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11+ |
+| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11+ |
 
 **示例：**
 
@@ -62,7 +68,17 @@ notificationManager.requestEnableNotification(requestEnableNotificationCallback)
 function requestEnableNotification(context: UIAbilityContext, callback: AsyncCallback<void>): void
 ```
 
-应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用callback异步回调。 > **说明：** > > - 仅当应用界面加载完成后（即调用 > [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1)成功），方可使用该接口 > 。 > > - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用 > [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)二次申请授权，拉起通知管理弹窗 > 。
+应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用callback异步回调。
+
+> **说明：**
+>
+> - 仅当应用界面加载完成后（即调用
+> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1)成功），方可使用该接口
+> 。
+>
+> - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用
+> [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)二次申请授权，拉起通知管理弹窗
+> 。
 
 **起始版本：** 10
 
@@ -81,12 +97,12 @@ function requestEnableNotification(context: UIAbilityContext, callback: AsyncCal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
-| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11 |
-| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11 |
+| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11+ |
+| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11+ |
 
 **示例：**
 
@@ -126,7 +142,12 @@ class MyAbility extends UIAbility {
 function requestEnableNotification(): Promise<void>
 ```
 
-当前应用请求通知使能。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的 > [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-4)替代。
+当前应用请求通知使能。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的
+> [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-4)替代。
 
 **起始版本：** 9
 
@@ -149,8 +170,8 @@ function requestEnableNotification(): Promise<void>
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
-| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11 |
-| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11 |
+| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11+ |
+| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11+ |
 
 **示例：**
 
@@ -172,7 +193,17 @@ notificationManager.requestEnableNotification().then(() => {
 function requestEnableNotification(context: UIAbilityContext): Promise<void>
 ```
 
-应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用Promise异步回调。 > **说明：** > > - 仅当应用界面加载完成后（即调用 > [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1)成功），方可使用该接口 > 。 > > - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用 > [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)二次申请授权，拉起通知管理弹窗 > 。
+应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用Promise异步回调。
+
+> **说明：**
+>
+> - 仅当应用界面加载完成后（即调用
+> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1)成功），方可使用该接口
+> 。
+>
+> - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用
+> [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)二次申请授权，拉起通知管理弹窗
+> 。
 
 **起始版本：** 10
 
@@ -196,12 +227,12 @@ function requestEnableNotification(context: UIAbilityContext): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
-| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11 |
-| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11 |
+| [1600004](../errorcode-notification.md#1600004-通知开关关闭) | Notification disabled.<br>**适用版本：** 11+ |
+| [1600013](../errorcode-notification.md#1600013-通知弹窗已弹出) | A notification dialog box is already displayed.<br>**适用版本：** 11+ |
 
 **示例：**
 

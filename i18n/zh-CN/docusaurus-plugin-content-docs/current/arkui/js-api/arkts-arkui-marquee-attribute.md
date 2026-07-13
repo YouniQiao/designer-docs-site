@@ -1,6 +1,6 @@
 # Marquee属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
 
 **继承/实现关系：** MarqueeAttribute extends [CommonMethod<MarqueeAttribute>](CommonMethod<MarqueeAttribute>)
 
@@ -212,7 +212,9 @@ onStart(event: () => void)
 onStop(event: Callback<void> | undefined)
 ```
 
-跑马灯滚动结束或停止时触发回调。 跑马灯停止表示跑马灯将从开始位置，重新开始循环，不包含暂停场景，暂停不会触发该回调。
+跑马灯滚动结束或停止时触发回调。
+
+跑马灯停止表示跑马灯将从开始位置，重新开始循环，不包含暂停场景，暂停不会触发该回调。
 
 **起始版本：** 26.0.0
 

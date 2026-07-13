@@ -1,6 +1,8 @@
 # @ohos.security.cert
 
-证书算法库框架提供证书相关接口。其中，依赖加解密算法库框架的基础算法能力的部分，详细接口说明可参考 [cryptoFramework API参考]{@link @ohos.security.cryptoFramework:cryptoFramework}。
+The certificate algorithm library framework provides certificate-related APIs. The **certFramework** module depends
+on the basic algorithm capabilities of the Crypto framework. For details, see
+[cryptoFramework](../../apis-crypto-architecture-kit/arkts-apis/arkts-security-cryptoframework.md).
 
 **Since:** 9
 
@@ -18,102 +20,102 @@ import { cert } from '@kit.DeviceCertificateKit';
 
 | Name | Description |
 | --- | --- |
-| [buildX509CertChain](arkts-cert-buildx509certchain-f.md#buildX509CertChain-1) | 表示使用CertChainBuildParameters对象方式创建X509证书链对象。使用Promise方式返回结果。 |
-| [createCertCRLCollection](arkts-cert-createcertcrlcollection-f.md#createCertCRLCollection-1) | 表示创建证书和证书吊销列表集合对象，并返回相应的结果。 |
-| [createCertChainValidator](arkts-cert-createcertchainvalidator-f.md#createCertChainValidator-1) | 表示创建证书链校验器对象。 |
-| [createCertExtension](arkts-cert-createcertextension-f.md#createCertExtension-1) | 表示创建证书扩展域段的对象。使用Callback异步回调。 |
-| [createCertExtension](arkts-cert-createcertextension-f.md#createCertExtension-2) | 表示创建证书扩展域段的对象。使用Promise方式返回结果。 |
-| [createCmsGenerator](arkts-cert-createcmsgenerator-f.md#createCmsGenerator-1) | 表示创建CmsGenerator对象。 |
-| [createCmsParser](arkts-cert-createcmsparser-f.md#createCmsParser-1) | 表示创建CmsParser对象。 |
-| [createPkcs12](arkts-cert-createpkcs12-f.md#createPkcs12-1) | 表示创建P12。使用Promise方式返回结果。 |
-| [createPkcs12Sync](arkts-cert-createpkcs12sync-f.md#createPkcs12Sync-1) | 表示创建P12，同步返回结果。 |
-| [createTrustAnchorsWithKeyStore](arkts-cert-createtrustanchorswithkeystore-f.md#createTrustAnchorsWithKeyStore-1) | 表示从P12中读取ca证书来构造[TrustAnchor]{@link cert.X509TrustAnchor}对象数组。使用Promise方式返回结果。 |
-| [createX500DistinguishedName](arkts-cert-createx500distinguishedname-f.md#createX500DistinguishedName-1) | 表示使用字符串格式的名称创建X500DistinguishedName对象。使用Promise方式返回结果。 |
-| [createX500DistinguishedName](arkts-cert-createx500distinguishedname-f.md#createX500DistinguishedName-2) | 表示使用DER格式的名称创建X500DistinguishedName对象。使用Promise方式返回结果。 |
-| [createX509CRL](arkts-cert-createx509crl-f.md#createX509CRL-1) | 表示创建X509证书吊销列表的对象。使用Callback异步回调。 |
-| [createX509CRL](arkts-cert-createx509crl-f.md#createX509CRL-2) | 表示创建X509证书吊销列表的对象。使用Promise方式返回结果。 |
-| [createX509Cert](arkts-cert-createx509cert-f.md#createX509Cert-1) | 表示创建X509证书对象。使用Callback异步回调。 |
-| [createX509Cert](arkts-cert-createx509cert-f.md#createX509Cert-2) | 表示创建X509证书对象。使用Promise方式返回结果。 |
-| [createX509CertChain](arkts-cert-createx509certchain-f.md#createX509CertChain-1) | 表示创建X509证书链对象。使用Promise方式返回结果。 |
-| [createX509CertChain](arkts-cert-createx509certchain-f.md#createX509CertChain-2) | 表示创建X509证书链对象。使用Callback异步回调。 |
-| [createX509CertChain](arkts-cert-createx509certchain-f.md#createX509CertChain-3) | 表示使用X509Cert数组方式创建X509证书链对象，并同步返回结果。 |
-| [createX509Crl](arkts-cert-createx509crl-f.md#createX509Crl-1) | 表示创建X509证书吊销列表的对象。使用Callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃，建议使用 > [cert.createX509CRL()]{@link cert.createX509CRL(inStream: EncodingBlob, callback: AsyncCallback<X509CRL>)}替代。 |
-| [createX509Crl](arkts-cert-createx509crl-f.md#createX509Crl-2) | 表示创建X509证书吊销列表的对象。使用Promise方式返回结果。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃，建议使用 > [cert.createX509CRL()]{@link cert.createX509CRL(inStream: EncodingBlob)}替代。 |
-| [generateCsr](arkts-cert-generatecsr-f.md#generateCsr-1) | 表示使用指定的私钥，传入主体、扩展、摘要算法、输出格式等配置参数去生成CSR。 |
-| [parsePkcs12](arkts-cert-parsepkcs12-f.md#parsePkcs12-1) | 解析P12。 |
-| [parsePkcs12](arkts-cert-parsepkcs12-f.md#parsePkcs12-2) | 解析P12。使用Promise方式返回结果。 |
+| [buildX509CertChain](arkts-devicecertificate-buildx509certchain-f.md#buildx509certchain-1) | Builds an X.509 certificate chain with a CertChainBuildParameters object. This API uses a promise to return theresult. |
+| [createCertCRLCollection](arkts-devicecertificate-createcertcrlcollection-f.md#createcertcrlcollection-1) | Creates an object for a collection of X.509 certificates and CRLs. |
+| [createCertChainValidator](arkts-devicecertificate-createcertchainvalidator-f.md#createcertchainvalidator-1) | Creates a **CertChainValidator** object. |
+| [createCertExtension](arkts-devicecertificate-createcertextension-f.md#createcertextension-1) | Creates a certificate extension object. This API uses an asynchronous callback to return the result. |
+| [createCertExtension](arkts-devicecertificate-createcertextension-f.md#createcertextension-2) | Creates a certificate extension object. This API uses a promise to return the result. |
+| [createCmsGenerator](arkts-devicecertificate-createcmsgenerator-f.md#createcmsgenerator-1) | Creates a **CmsGenerator** object. |
+| [createCmsParser](arkts-devicecertificate-createcmsparser-f.md#createcmsparser-1) | Creates a **CmsParser** object. |
+| [createPkcs12](arkts-devicecertificate-createpkcs12-f.md#createpkcs12-1) | Creates P12. This API uses a promise to return the result. |
+| [createPkcs12Sync](arkts-devicecertificate-createpkcs12sync-f.md#createpkcs12sync-1) | Creates P12. This API returns the result synchronously. |
+| [createTrustAnchorsWithKeyStore](arkts-devicecertificate-createtrustanchorswithkeystore-f.md#createtrustanchorswithkeystore-1) | Creates a [TrustAnchor](arkts-devicecertificate-x509trustanchor-i.md) object array by using the CA certificate parsed from a .p12keystore file. This API uses a promise to return the result. |
+| [createX500DistinguishedName](arkts-devicecertificate-createx500distinguishedname-f.md#createx500distinguishedname-1) | Creates an **X500DistinguishedName** object with a name in the form of a string. This API uses a promise to returnthe result. |
+| [createX500DistinguishedName](arkts-devicecertificate-createx500distinguishedname-f.md#createx500distinguishedname-2) | Creates an **X500DistinguishedName** object with a name in DER format. This API uses a promise to return theresult. |
+| [createX509CRL](arkts-devicecertificate-createx509crl-f.md#createx509crl-1) | Creates an **X509CRL** instance. This API uses an asynchronous callback to return the result. |
+| [createX509CRL](arkts-devicecertificate-createx509crl-f.md#createx509crl-2) | Creates an **X509CRL** instance. This API uses a promise to return the result. |
+| [createX509Cert](arkts-devicecertificate-createx509cert-f.md#createx509cert-1) | Creates an **X509Cert** instance. This API uses an asynchronous callback to return the result. |
+| [createX509Cert](arkts-devicecertificate-createx509cert-f.md#createx509cert-2) | Creates an **X509Cert** instance. This API uses a promise to return the result. |
+| [createX509CertChain](arkts-devicecertificate-createx509certchain-f.md#createx509certchain-1) | Creates an **X509CertChain** instance. This API uses a promise to return the result. |
+| [createX509CertChain](arkts-devicecertificate-createx509certchain-f.md#createx509certchain-2) | Creates an **X509CertChain** instance. This API uses an asynchronous callback to return the result. |
+| [createX509CertChain](arkts-devicecertificate-createx509certchain-f.md#createx509certchain-3) | Creates an X.509 certificate chain object based on the specified certificates. This API returns the resultsynchronously. |
+| [createX509Crl](arkts-devicecertificate-createx509crl-f.md#createx509crl-1) | Creates an **X509Crl** instance. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 9 and deprecated since API version 11. Use&gt; [cert.createX509CRL()](arkts-devicecertificate-createx509crl-f.md#createx509crl-1) instead. |
+| [createX509Crl](arkts-devicecertificate-createx509crl-f.md#createx509crl-2) | Creates an **X509Crl** instance. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 9 and deprecated since API version 11. Use&gt; [cert.createX509CRL()](arkts-devicecertificate-createx509crl-f.md#createx509crl-2) instead. |
+| [generateCsr](arkts-devicecertificate-generatecsr-f.md#generatecsr-1) | Generates a CSR. |
+| [parsePkcs12](arkts-devicecertificate-parsepkcs12-f.md#parsepkcs12-1) | Parses P12. |
+| [parsePkcs12](arkts-devicecertificate-parsepkcs12-f.md#parsepkcs12-2) | Parses P12. This API uses a promise to return the result. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CertChainBuildParameters](arkts-cert-certchainbuildparameters-i.md) | 用于指定证书链创建参数。 |
-| [CertChainBuildResult](arkts-cert-certchainbuildresult-i.md) | 用于指定证书链创建结果。 |
-| [CertChainData](arkts-cert-certchaindata-i.md) | 证书链数据，在证书链校验时，作为入参传入。 |
-| [CertChainValidationParameters](arkts-cert-certchainvalidationparameters-i.md) | 表示证书链校验的参数。 |
-| [CertChainValidationResult](arkts-cert-certchainvalidationresult-i.md) | 表示证书链校验的返回值。 |
-| [CertChainValidator](arkts-cert-certchainvalidator-i.md) | 证书链校验器对象。 |
-| [CertCRLCollection](arkts-cert-certcrlcollection-i.md) | 证书和证书吊销列表集合对象。 |
-| [CertExtension](arkts-cert-certextension-i.md) | 证书扩展域段类。 |
-| [CertValidationParams](arkts-cert-certvalidationparams-i.md) | 证书验证的参数。 |
-| [CertValidationResult](arkts-cert-certvalidationresult-i.md) | 证书验证的结果。 |
-| [CmsEnvelopedDecryptionConfig](arkts-cert-cmsenvelopeddecryptionconfig-i.md) | CMS解封装的配置。 |
-| [CmsGenerator](arkts-cert-cmsgenerator-i.md) | CmsGenerator对象用于生成CMS（Cryptographic Message Syntax）格式的消息。 > **说明：** > > PKCS #7是用于存储签名或加密数据的标准语法。注意CMS是PKCS #7的扩展，PKCS #7支持的数据类型包括数据、签名数据、封装数据、 > 签名和封装数据、摘要数据、加密数据。常用于保护数据的完整性和机密性。 |
-| [CmsGeneratorOptions](arkts-cert-cmsgeneratoroptions-i.md) | 表示生成CMS消息的配置选项。 |
-| [CmsKeyAgreeRecipientInfo](arkts-cert-cmskeyagreerecipientinfo-i.md) | CMS封装数据的KeyAgree接收方信息。 |
-| [CmsKeyTransRecipientInfo](arkts-cert-cmskeytransrecipientinfo-i.md) | CMS封装数据的KeyTrans接收方信息。 |
-| [CmsParser](arkts-cert-cmsparser-i.md) | CmsParser对象用于对CMS签名或封装数据进行验签或解封装。 > **说明：** > > PKCS #7是用于存储签名或加密数据的标准语法。注意CMS是PKCS #7的扩展，PKCS #7支持的数据类型包括数据、签名数据、封装数据、 > 签名和封装数据、摘要数据、加密数据。常用于保护数据的完整性和机密性。 |
-| [CmsRecipientInfo](arkts-cert-cmsrecipientinfo-i.md) | CMS封装数据的接收者信息。 > **说明：** > > 至少需要设置一个接收者。 |
-| [CmsSignerConfig](arkts-cert-cmssignerconfig-i.md) | 表示Cms签名者的配置选项。 |
-| [CmsVerificationConfig](arkts-cert-cmsverificationconfig-i.md) | CMS验签的配置。 |
-| [CsrAttribute](arkts-cert-csrattribute-i.md) | 定义CSR属性表示。 CSR属性字段，当前仅支持字符串类型的属性字段，属性值添加到CSR中编码为utf-8。常见的type为challengePassword。 |
-| [CsrGenerationConfig](arkts-cert-csrgenerationconfig-i.md) | 用于生成CSR的配置参数，包含主体名称、扩展、摘要算法、输出格式等。 > **说明：** > > - subject是X509定义的Name类型的对象。 > > - mdName是摘要算法名，当前支持SHA1、SHA256、SHA384、SHA512。 > > - attributes是可选参数，指定**PKCS #9**中规定的扩展类型跟扩展值生成CSR。例如challengePassword。 > > - outFormat指定输出CSR的格式，若不指定默认为PEM格式。 |
-| [DataArray](arkts-cert-dataarray-i.md) | buffer数组的列表。 |
-| [DataBlob](arkts-cert-datablob-i.md) | 二进制数据的封装接口，核心字段data为Uint8Array类型。 |
-| [EncodingBlob](arkts-cert-encodingblob-i.md) | 定义编码格式的二进制数据数组。 |
-| [GeneralName](arkts-cert-generalname-i.md) | 用于表示GeneralName。 |
-| [PbesParams](arkts-cert-pbesparams-i.md) | 表示基于密码的加密算法参数，当前仅支持PBES2。 |
-| [Pkcs12CreationConfig](arkts-cert-pkcs12creationconfig-i.md) | 表示创建P12的配置。 |
-| [Pkcs12Data](arkts-cert-pkcs12data-i.md) | P12（PKCS #12）数据，包含私钥、证书和其他证书。 |
-| [Pkcs12ParsingConfig](arkts-cert-pkcs12parsingconfig-i.md) | 表示解析P12的配置。 |
-| [PrivateKeyInfo](arkts-cert-privatekeyinfo-i.md) | 表示私钥信息。 |
-| [RevocationCheckParameter](arkts-cert-revocationcheckparameter-i.md) | 表示证书链校验证书吊销状态的参数。 |
-| [X500DistinguishedName](arkts-cert-x500distinguishedname-i.md) | X509定义的Name类型的对象。 |
-| [X509Cert](arkts-cert-x509cert-i.md) | X509证书类。 |
-| [X509CertChain](arkts-cert-x509certchain-i.md) | X509证书链对象。 |
-| [X509CertMatchParameters](arkts-cert-x509certmatchparameters-i.md) | 用于匹配证书的过滤参数。如果参数中任一项都未指定，则匹配所有证书。 |
-| [X509CertRevokedParams](arkts-cert-x509certrevokedparams-i.md) | 表示证书吊销检查参数。 |
-| [X509Crl](arkts-cert-x509crl-i.md) | X.509 CRL操作。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃，建议使用[X509CRL()]{@link cert.X509CRL}替代。 |
-| [X509CRL](arkts-cert-x509crl-i.md) | X.509 CRL操作。 |
-| [X509CrlEntry](arkts-cert-x509crlentry-i.md) | 证书吊销条目。 > **说明：** > > 从API version 9开始支持，从API version 11开始废弃，建议使用[X509CRLEntry()]{@link cert.X509CRLEntry}替代。 |
-| [X509CRLEntry](arkts-cert-x509crlentry-i.md) | 证书吊销条目。 |
-| [X509CRLMatchParameters](arkts-cert-x509crlmatchparameters-i.md) | 用于匹配证书吊销列表的过滤参数。如果参数中任一项都未指定，则匹配所有证书吊销列表。 |
-| [X509TrustAnchor](arkts-cert-x509trustanchor-i.md) | 表示X509信任锚，用于校验证书链。使用信任锚中的证书或者公钥作为可信根，对证书链进行校验。 |
+| [CertCRLCollection](arkts-devicecertificate-certcrlcollection-i.md) | Provides APIs for locating certificates or CRLs in a **CertCRLCollection** object. |
+| [CertChainBuildParameters](arkts-devicecertificate-certchainbuildparameters-i.md) | Represents the parameters for building a certificate chain. |
+| [CertChainBuildResult](arkts-devicecertificate-certchainbuildresult-i.md) | Represents the certificate chain build result. |
+| [CertChainData](arkts-devicecertificate-certchaindata-i.md) | Defines the certificate chain data, which is passed in as input parameters during certificate chain verification. |
+| [CertChainValidationParameters](arkts-devicecertificate-certchainvalidationparameters-i.md) | Represents the parameters for certificate chain validation. |
+| [CertChainValidationResult](arkts-devicecertificate-certchainvalidationresult-i.md) | Represents the return value of certificate chain validation. |
+| [CertChainValidator](arkts-devicecertificate-certchainvalidator-i.md) | Provides APIs for certificate chain validator operations. |
+| [CertExtension](arkts-devicecertificate-certextension-i.md) | Provides APIs for operating on certificate extensions. |
+| [CertValidationParams](arkts-devicecertificate-certvalidationparams-i.md) | Parameters for certificate validation. |
+| [CertValidationResult](arkts-devicecertificate-certvalidationresult-i.md) | Result of certificate validation. |
+| [CmsEnvelopedDecryptionConfig](arkts-devicecertificate-cmsenvelopeddecryptionconfig-i.md) | Represents CMS decapsulation configuration. |
+| [CmsGenerator](arkts-devicecertificate-cmsgenerator-i.md) | Provides APIs for generating the messages in CMS format.&gt; **NOTE**&gt;&gt; PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7&gt; supports data types including data, signed data, enveloped data, signed and enveloped data, digested&gt; data, and encrypted data. It is often used to protect data integrity and confidentiality. |
+| [CmsGeneratorOptions](arkts-devicecertificate-cmsgeneratoroptions-i.md) | Represents the configuration for generating a CMS message. |
+| [CmsKeyAgreeRecipientInfo](arkts-devicecertificate-cmskeyagreerecipientinfo-i.md) | Represents KeyAgree recipient information for CMS enveloped data. |
+| [CmsKeyTransRecipientInfo](arkts-devicecertificate-cmskeytransrecipientinfo-i.md) | Represents KeyTrans recipient information for CMS enveloped data. |
+| [CmsParser](arkts-devicecertificate-cmsparser-i.md) | Verifies or decrypts a CMS message.&gt; **NOTE**&gt;&gt; PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7&gt; supports data types including data, signed data, enveloped data, signed and enveloped data, digested&gt; data, and encrypted data. It is often used to protect data integrity and confidentiality. |
+| [CmsRecipientInfo](arkts-devicecertificate-cmsrecipientinfo-i.md) | Represents recipient information for the CMS message.&gt; **NOTE**&gt;&gt; At least one recipient needs to be set. |
+| [CmsSignerConfig](arkts-devicecertificate-cmssignerconfig-i.md) | Represents the configuration of the CMS signer. |
+| [CmsVerificationConfig](arkts-devicecertificate-cmsverificationconfig-i.md) | Represents CMS verification configuration. |
+| [CsrAttribute](arkts-devicecertificate-csrattribute-i.md) | Defines the CSR attribute representation.CSR attribute field. Currently, only character string attribute fields are supported. The attribute value added tothe CSR is encoded in UTF-8 format. The common type is challengePassword. |
+| [CsrGenerationConfig](arkts-devicecertificate-csrgenerationconfig-i.md) | Configuration parameters for generating a CSR, including the subject name, digest algorithm, attribute,and output format.&gt; **NOTE**&gt;&gt; - subject is an object of the Name type defined by X509.&gt;&gt; - mdName indicates the digest algorithm name. Currently, SHA1, SHA256, SHA384, and SHA512 are supported.&gt;&gt; - attributes is an optional parameter that specifies the attribute types and attribute values specified in&gt; PKCS #9 to generate a CSR. For example, challengePassword.&gt;&gt; - outFormat specifies the format of the output CSR. If the format is not specified, the PEM format is used by&gt; default. |
+| [DataArray](arkts-devicecertificate-dataarray-i.md) | Defines a list of data arrays. |
+| [DataBlob](arkts-devicecertificate-datablob-i.md) | Encapsulates binary data. The core field **data** is of the Uint8Array type. |
+| [EncodingBlob](arkts-devicecertificate-encodingblob-i.md) | Defines a binary data array in encoding format. |
+| [GeneralName](arkts-devicecertificate-generalname-i.md) | Represents the GeneralName. |
+| [PbesParams](arkts-devicecertificate-pbesparams-i.md) | Represents PBES algorithm parameters. Currently, only PBES2 is supported. |
+| [Pkcs12CreationConfig](arkts-devicecertificate-pkcs12creationconfig-i.md) | Represents the configuration for creating .p12 files. |
+| [Pkcs12Data](arkts-devicecertificate-pkcs12data-i.md) | P12(PKCS #12) data, which includes private key, certificate, and other certificates. |
+| [Pkcs12ParsingConfig](arkts-devicecertificate-pkcs12parsingconfig-i.md) | Represents the configuration for parsing P12. |
+| [PrivateKeyInfo](arkts-devicecertificate-privatekeyinfo-i.md) | Represents the private key information. |
+| [RevocationCheckParameter](arkts-devicecertificate-revocationcheckparameter-i.md) | Represents the parameters for checking the certificate revocation status for a certificate chain. |
+| [X500DistinguishedName](arkts-devicecertificate-x500distinguishedname-i.md) | Provides APIs for managing the **X500DistinguishedName** instance. |
+| [X509CRL](arkts-devicecertificate-x509crl-i.md) | Provides APIs for managing a CRL object. |
+| [X509CRLEntry](arkts-devicecertificate-x509crlentry-i.md) | Provides APIs for operating on a revoked certificate entry in a CRL. |
+| [X509CRLMatchParameters](arkts-devicecertificate-x509crlmatchparameters-i.md) | Represents the parameters used to match a certificate revocation list (CRL). If no parameter is specified, all CRLsare matched. |
+| [X509Cert](arkts-devicecertificate-x509cert-i.md) | Provides APIs for X.509 certificate operations. |
+| [X509CertChain](arkts-devicecertificate-x509certchain-i.md) | Provides APIs for managing the X.509 certificate chain. |
+| [X509CertMatchParameters](arkts-devicecertificate-x509certmatchparameters-i.md) | Defines the parameters used to match a certificate. If no parameter is specified, all certificates are matched. |
+| [X509CertRevokedParams](arkts-devicecertificate-x509certrevokedparams-i.md) | Parameters for checking certificate revocation status. |
+| [X509Crl](arkts-devicecertificate-x509crl-i.md) | Provides APIs for X.509 CRL operations.&gt; **NOTE**&gt;&gt; This API is supported since API version 9 and deprecated since API version 11. Use [X509CRL()](arkts-devicecertificate-x509crl-i.md)&gt; instead. |
+| [X509CrlEntry](arkts-devicecertificate-x509crlentry-i.md) | Provides APIs for operating on a revoked certificate entry in a CRL.&gt; **NOTE**&gt;&gt; This API is supported since API version 9 and deprecated since API version 11. Use&gt; [X509CRLEntry()](arkts-devicecertificate-x509crlentry-i.md) instead. |
+| [X509TrustAnchor](arkts-devicecertificate-x509trustanchor-i.md) | Represents an X.509 trust anchor, which is used to verify the certificate chain. The certificate or public key inthe trust anchor is used as the trusted root to verify the certificate chain. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [CertItemType](arkts-cert-certitemtype-e.md) | 表示获取证书字段的枚举。 |
-| [CertResult](arkts-cert-certresult-e.md) | 表示执行结果的枚举。 |
-| [CertRevocationFlag](arkts-cert-certrevocationflag-e.md) | 表示证书吊销检查标志的枚举。 |
-| [CmsCertType](arkts-cert-cmscerttype-e.md) | 从CMS中获取证书不同类型的枚举。 |
-| [CmsContentDataFormat](arkts-cert-cmscontentdataformat-e.md) | 表示Cms内容数据格式的枚举。 |
-| [CmsContentType](arkts-cert-cmscontenttype-e.md) | 表示Cms内容类型的枚举。 |
-| [CmsFormat](arkts-cert-cmsformat-e.md) | 表示CMS编码格式的枚举。 |
-| [CmsKeyAgreeRecipientDigestAlgorithm](arkts-cert-cmskeyagreerecipientdigestalgorithm-e.md) | CMS KeyAgree类型接收者摘要算法的枚举。 |
-| [CmsRecipientEncryptionAlgorithm](arkts-cert-cmsrecipientencryptionalgorithm-e.md) | CMS封装数据的内容加密算法的枚举。 |
-| [CmsRsaSignaturePadding](arkts-cert-cmsrsasignaturepadding-e.md) | 表示RSA类型CMS签名填充方式的枚举。 |
-| [EncodingBaseFormat](arkts-cert-encodingbaseformat-e.md) | 表示生成证书相关数据的编码格式的枚举。 |
-| [EncodingFormat](arkts-cert-encodingformat-e.md) | 表示证书编码格式的枚举。 |
-| [EncodingType](arkts-cert-encodingtype-e.md) | 表示编码格式的枚举。 |
-| [ExtensionEntryType](arkts-cert-extensionentrytype-e.md) | 表示获取扩展域中对象类型的枚举。 |
-| [ExtensionOidType](arkts-cert-extensionoidtype-e.md) | 表示获取扩展域中对象标识符类型的枚举。 |
-| [GeneralNameType](arkts-cert-generalnametype-e.md) | X.509中定义的GeneralName类型的枚举，这些类型可出现在“使用者备用名称”（Subject Alternative Name）及其他扩展项中。 |
-| [KeyUsageType](arkts-cert-keyusagetype-e.md) | 表示证书中密钥用途的枚举。 |
-| [OcspDigest](arkts-cert-ocspdigest-e.md) | 表示OCSP摘要算法的枚举。 |
-| [PbesEncryptionAlgorithm](arkts-cert-pbesencryptionalgorithm-e.md) | 表示基于密码的加密算法枚举。 |
-| [Pkcs12MacDigestAlgorithm](arkts-cert-pkcs12macdigestalgorithm-e.md) | 表示P12的MAC摘要算法枚举。 |
-| [RevocationCheckOptions](arkts-cert-revocationcheckoptions-e.md) | 表示证书链在线校验证书吊销状态选项的枚举。 |
-| [ValidationPolicyType](arkts-cert-validationpolicytype-e.md) | 表示证书链在线校验策略的枚举。 |
+| [CertItemType](arkts-devicecertificate-certitemtype-e.md) | Enumerates the certificate fields that can be obtained. |
+| [CertResult](arkts-devicecertificate-certresult-e.md) | Enumerates the error codes. |
+| [CertRevocationFlag](arkts-devicecertificate-certrevocationflag-e.md) | Enumerates the certificate revocation flags. |
+| [CmsCertType](arkts-devicecertificate-cmscerttype-e.md) | Enumerates certificate types obtained from CMS. |
+| [CmsContentDataFormat](arkts-devicecertificate-cmscontentdataformat-e.md) | Enumerates the CMS message formats. |
+| [CmsContentType](arkts-devicecertificate-cmscontenttype-e.md) | Enumerates the Cryptographic Message Syntax (CMS) message types. |
+| [CmsFormat](arkts-devicecertificate-cmsformat-e.md) | Enumerates the CMS encoding formats. |
+| [CmsKeyAgreeRecipientDigestAlgorithm](arkts-devicecertificate-cmskeyagreerecipientdigestalgorithm-e.md) | Enumerates the digest algorithms of the CMS KeyAgree type. |
+| [CmsRecipientEncryptionAlgorithm](arkts-devicecertificate-cmsrecipientencryptionalgorithm-e.md) | Enumerates the content-encryption algorithms for CMS enveloped data. |
+| [CmsRsaSignaturePadding](arkts-devicecertificate-cmsrsasignaturepadding-e.md) | Enumerates the RSA CMS signature padding modes. |
+| [EncodingBaseFormat](arkts-devicecertificate-encodingbaseformat-e.md) | Enumerates the encoding formats for certificate-related data. |
+| [EncodingFormat](arkts-devicecertificate-encodingformat-e.md) | Enumerates the certificate encoding formats. |
+| [EncodingType](arkts-devicecertificate-encodingtype-e.md) | Enumerates the encoding formats. |
+| [ExtensionEntryType](arkts-devicecertificate-extensionentrytype-e.md) | Enumerates the entry types in certificate extensions that can be obtained. |
+| [ExtensionOidType](arkts-devicecertificate-extensionoidtype-e.md) | Enumerates the OID types of the certificate extensions that can be obtained. |
+| [GeneralNameType](arkts-devicecertificate-generalnametype-e.md) | Enumerates the types of GeneralName as defined in X.509, which can appear in Subject Alternative Name and otherextensions. |
+| [KeyUsageType](arkts-devicecertificate-keyusagetype-e.md) | Enumerates the purposes for which the key in the certificate is used. |
+| [OcspDigest](arkts-devicecertificate-ocspdigest-e.md) | Enumerates the OCSP digest algorithm. |
+| [PbesEncryptionAlgorithm](arkts-devicecertificate-pbesencryptionalgorithm-e.md) | Enumerates password-based encryption scheme (PBES) algorithms. |
+| [Pkcs12MacDigestAlgorithm](arkts-devicecertificate-pkcs12macdigestalgorithm-e.md) | Enumerates the P12 MAC digest algorithms. |
+| [RevocationCheckOptions](arkts-devicecertificate-revocationcheckoptions-e.md) | Enumerates the options for checking the certificate revocation status. |
+| [ValidationPolicyType](arkts-devicecertificate-validationpolicytype-e.md) | Enumerates the types of the online certificate chain validation policy. |
 

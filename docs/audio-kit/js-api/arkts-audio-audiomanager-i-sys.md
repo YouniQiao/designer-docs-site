@@ -1,6 +1,9 @@
 # AudioManager
 
-This interface implements audio volume and device management. Before calling any API in AudioManager, you must use [getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1) to obtain an AudioManager instance.
+This interface implements audio volume and device management.
+
+Before calling any API in AudioManager, you must use
+[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1) to obtain an AudioManager instance.
 
 **Since:** 7
 
@@ -9,7 +12,7 @@ This interface implements audio volume and device management. Before calling any
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## disableSafeMediaVolume
@@ -240,7 +243,8 @@ audioManager.on('ringerModeChange', (ringerMode: audio.AudioRingMode) => {
 setAudioScene(scene: AudioScene, callback: AsyncCallback<void>): void
 ```
 
-Sets the audio scene mode to change audio strategies. This method uses an asynchronous callback to return the result.
+Sets the audio scene mode to change audio strategies. This method uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

@@ -12,7 +12,9 @@
 effectStrategy?: SymbolEffectStrategy
 ```
 
-SymbolSpan组件动效策略。 默认值：SymbolEffectStrategy.NONE。
+SymbolSpan组件动效策略。
+
+默认值：SymbolEffectStrategy.NONE。
 
 **类型：** SymbolEffectStrategy
 
@@ -30,7 +32,9 @@ SymbolSpan组件动效策略。 默认值：SymbolEffectStrategy.NONE。
 fontColor?: Array<ResourceColor>
 ```
 
-SymbolSpan组件颜色。 默认值：不同渲染策略下默认值不同。
+SymbolSpan组件颜色。
+
+默认值：不同渲染策略下默认值不同。
 
 **类型：** Array<ResourceColor>
 
@@ -48,7 +52,9 @@ SymbolSpan组件颜色。 默认值：不同渲染策略下默认值不同。
 fontSize?: number | string | Resource
 ```
 
-SymbolSpan组件大小，默认单位为fp。 默认值：跟随主题。
+SymbolSpan组件大小，默认单位为fp。
+
+默认值：跟随主题。
 
 **类型：** number | string | Resource
 
@@ -66,7 +72,13 @@ SymbolSpan组件大小，默认单位为fp。 默认值：跟随主题。
 fontWeight?: number | FontWeight | string
 ```
 
-SymbolSpan组件粗细。 number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。 string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。 默认值：FontWeight.Normal。
+SymbolSpan组件粗细。
+
+number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。
+
+string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。
+
+默认值：FontWeight.Normal。
 
 **类型：** number | FontWeight | string
 
@@ -84,7 +96,9 @@ SymbolSpan组件粗细。 number类型取值[100,900]，取值间隔为100，默
 renderingStrategy?: SymbolRenderingStrategy
 ```
 
-SymbolSpan组件渲染策略。 默认值：SymbolRenderingStrategy.SINGLE。
+SymbolSpan组件渲染策略。
+
+默认值：SymbolRenderingStrategy.SINGLE。
 
 **类型：** SymbolRenderingStrategy
 

@@ -6,14 +6,14 @@ Provides callbacks to return the authentication result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [AuthEvent](arkts-userauthentication-authevent-i.md#authevent)
+**Substitutes:** [AuthEvent](arkts-userauthentication-authevent-i.md)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## onAcquireInfo
@@ -22,7 +22,11 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 onAcquireInfo?: (module: number, acquire: number, extraInfo: any) => void
 ```
 
-Called to acquire authentication tip information. This API is optional. - **module**: ID of the module that sends the tip information. - **acquire**: Authentication tip information. - **extraInfo**: Reserved field.
+Called to acquire authentication tip information. This API is optional.
+
+- **module**: ID of the module that sends the tip information.
+- **acquire**: Authentication tip information.
+- **extraInfo**: Reserved field.
 
 **Type:** (module: number, acquire: number, extraInfo: any) => void
 
@@ -30,7 +34,7 @@ Called to acquire authentication tip information. This API is optional. - **modu
 
 **Deprecated since:** 9
 
-**Substitutes:** callback
+**Substitutes:** [callback](arkts-userauthentication-authevent-i.md#callback-1)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 
@@ -40,7 +44,13 @@ Called to acquire authentication tip information. This API is optional. - **modu
 onResult: (result: number, extraInfo: AuthResult) => void
 ```
 
-Called to return the authentication result. - **result**: Authentication result. For details, see [ResultCode](arkts-userauthentication-resultcode-e.md#resultcode). - **extraInfo**: Extended information, which varies depending on the authentication result. If the authentication is successful, the user authentication token will be returned in **extraInfo**. If the authentication fails, the remaining number of authentication times will be returned in **extraInfo**. If the authentication executor is locked, the freeze time will be returned in **extraInfo**.
+Called to return the authentication result.
+
+- **result**: Authentication result. For details, see [ResultCode](arkts-userauthentication-resultcode-e.md).
+- **extraInfo**: Extended information, which varies depending on the authentication result. If the authentication
+is successful, the user authentication token will be returned in **extraInfo**. If the authentication fails, the
+remaining number of authentication times will be returned in **extraInfo**. If the authentication executor is
+locked, the freeze time will be returned in **extraInfo**.
 
 **Type:** (result: number, extraInfo: AuthResult) => void
 
@@ -48,7 +58,7 @@ Called to return the authentication result. - **result**: Authentication result.
 
 **Deprecated since:** 9
 
-**Substitutes:** callback
+**Substitutes:** [callback](arkts-userauthentication-authevent-i.md#callback-1)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 

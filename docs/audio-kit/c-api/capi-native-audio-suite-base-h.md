@@ -19,14 +19,14 @@ Declare underlying data structure.
 | Name | typedef keyword | Description |
 | -- | -- | -- |
 | [OH_AudioFormat](capi-ohaudiosuite-oh-audioformat.md) | OH_AudioFormat | Define the audio format info structure, used to describe basic audio format. |
-| [OH_AudioDataArray](capi-ohaudiosuite-oh-audiodataarray.md) | OH_AudioDataArray | Define the audio data array structure,This structure is used to get the processed audio data after acquisition processing during multi-channel rendering. |
+| [OH_AudioDataArray](capi-ohaudiosuite-oh-audiodataarray.md) | OH_AudioDataArray | Define the audio data array structure.This structure is used to get the processed audio data after acquisition processing during multi-channel rendering. |
 | [OH_EqualizerFrequencyBandGains](capi-ohaudiosuite-oh-equalizerfrequencybandgains.md) | OH_EqualizerFrequencyBandGains | Specify equalizer frequency band gains. |
-| [OH_AudioSuite_SpaceRenderPositionParams](capi-ohaudiosuite-oh-audiosuite-spacerenderpositionparams.md) | OH_AudioSuite_SpaceRenderPositionParams | Definition of the parameter structure for fixed position mode in 3D spatial rendering.Left-hand coordinate system: Extend your left hand, forming an "L" shapewith your thumb and index finger.Point the thumb to the right, the index finger upward, and the remaining fingers forward.This establishes a left-hand coordinate system. In this system, the thumb, index finger,and other fingers represent the positive directions of the x, y, and z axes, respectively. |
+| [OH_AudioSuite_SpaceRenderPositionParams](capi-ohaudiosuite-oh-audiosuite-spacerenderpositionparams.md) | OH_AudioSuite_SpaceRenderPositionParams | Definition of the parameter structure for fixed position mode in 3D spatial rendering.Left-hand coordinate system: Extend your left hand, forming an "L" shape with your thumb and index finger.Point the thumb to the right, the index finger upward, and the remaining fingers forward.This establishes a left-hand coordinate system. In this system, the thumb, index finger,and other fingers represent the positive directions of the x, y, and z axes, respectively. |
 | [OH_AudioSuite_SpaceRenderRotationParams](capi-ohaudiosuite-oh-audiosuite-spacerenderrotationparams.md) | OH_AudioSuite_SpaceRenderRotationParams | Space rendering dynamic mode parameters. |
 | [OH_AudioSuite_SpaceRenderExtensionParams](capi-ohaudiosuite-oh-audiosuite-spacerenderextensionparams.md) | - | Space rendering extension mode parameters. |
 | [OH_AudioSuite_PureVoiceChangeOption](capi-ohaudiosuite-oh-audiosuite-purevoicechangeoption.md) | OH_AudioSuite_PureVoiceChangeOption | Define change voice option. |
 | [OH_AudioSuiteEngineStruct](capi-ohaudiosuite-oh-audiosuiteenginestruct.md) | OH_AudioSuiteEngine | Declare the audio engine.The handle of audio suite engine is used for audio suite engine related functions. |
-| [OH_AudioSuitePipelineStruct](capi-ohaudiosuite-oh-audiosuitepipelinestruct.md) | OH_AudioSuitePipeline | Declare the audio pipe line.The handle of audio suite pipe line is used for audio pipe line related functions. |
+| [OH_AudioSuitePipelineStruct](capi-ohaudiosuite-oh-audiosuitepipelinestruct.md) | OH_AudioSuitePipeline | Declare the audio pipeline.The handle of audio suite pipeline is used for audio pipeline related functions. |
 | [OH_AudioNodeStruct](capi-ohaudiosuite-oh-audionodestruct.md) | OH_AudioNode | Declare the audio node.The handle of audio suite node is used for audio suite node related functions. |
 | [OH_AudioNodeBuilderStruct](capi-ohaudiosuite-oh-audionodebuilderstruct.md) | OH_AudioNodeBuilder | Declare the audio node builder.The handle of audio node builder is used for audio node create. |
 
@@ -47,7 +47,7 @@ Declare underlying data structure.
 | [OH_AudioSuite_SurroundDirection](#oh_audiosuite_surrounddirection) | OH_AudioSuite_SurroundDirection | Space rendering surround Direction |
 | [OH_AudioSuite_PureVoiceChangeGenderOption](#oh_audiosuite_purevoicechangegenderoption) | OH_AudioSuite_PureVoiceChangeGenderOption | Define speaker gender in change voice option |
 | [OH_AudioSuite_PureVoiceChangeType](#oh_audiosuite_purevoicechangetype) | OH_AudioSuite_PureVoiceChangeType | Define voice type in change voice option |
-| [OH_AudioSuite_GeneralVoiceChangeType](#oh_audiosuite_generalvoicechangetype) | OH_AudioSuite_GeneralVoiceChangeType | Define voice type in change general voice. |
+| [OH_AudioSuite_GeneralVoiceChangeType](#oh_audiosuite_generalvoicechangetype) | OH_AudioSuite_GeneralVoiceChangeType | Define voice type in general voice change. |
 
 ### Macro
 
@@ -152,11 +152,11 @@ Define the result of the function execution.
 | AUDIOSUITE_SUCCESS = 0 |  The call was successful.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_INVALID_PARAM = 1 |  This means that the function was executed with an invalid input parameter.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_INVALID_STATE = 2 |  Execution status exception.<br>**Since**: 22 |
-| AUDIOSUITE_ERROR_SYSTEM = 3 |  An system error has occurred.<br>**Since**: 22 |
+| AUDIOSUITE_ERROR_SYSTEM = 3 |  A system error has occurred.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_UNSUPPORTED_FORMAT = 4 |  Unsupported audio format, such as unsupported encoding type, sample format etc.<br>**Since**: 22 |
-| AUDIOSUITE_ERROR_ENGINE_NOT_EXIST = 5 |  audio engine not exist.<br>**Since**: 22 |
-| AUDIOSUITE_ERROR_PIPELINE_NOT_EXIST = 6 |  audio pipeline not exist.<br>**Since**: 22 |
-| AUDIOSUITE_ERROR_NODE_NOT_EXIST = 7 |  audio node not exist.<br>**Since**: 22 |
+| AUDIOSUITE_ERROR_ENGINE_NOT_EXIST = 5 |  audio engine does not exist.<br>**Since**: 22 |
+| AUDIOSUITE_ERROR_PIPELINE_NOT_EXIST = 6 |  audio pipeline does not exist.<br>**Since**: 22 |
+| AUDIOSUITE_ERROR_NODE_NOT_EXIST = 7 |  audio node does not exist.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_UNSUPPORTED_CONNECT = 8 |  the connect or disconnect between the nodes is unsupported.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_UNSUPPORTED_OPERATION = 9 |  Unsupported operation.<br>**Since**: 22 |
 | AUDIOSUITE_ERROR_CREATED_EXCEED_SYSTEM_LIMITS = 10 |  The application attempted to create an object that exceeds the system's maximum limit.<br>**Since**: 22 |
@@ -350,7 +350,7 @@ enum OH_AudioSuite_GeneralVoiceChangeType
 
 **Description**
 
-Define voice type in change general voice.
+Define voice type in general voice change.
 
 **Since**: 23
 

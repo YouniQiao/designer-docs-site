@@ -1,6 +1,7 @@
 # Uint8ClampedArray
 
-A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
+A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0.
+If the requested number of bytes could not be allocated an exception is raised.
 
 ## copyWithin
 
@@ -8,7 +9,8 @@ A typed array of 8-bit unsigned integer (clamped) values. The contents are initi
 copyWithin(target: number, start: number, end?: number): this
 ```
 
-Returns the this object after copying a section of the array identified by start and end to the same array starting at position target
+Returns the this object after copying a section of the array identified by start and end
+to the same array starting at position target
 
 **Parameters:**
 
@@ -94,7 +96,8 @@ Returns the elements of an array that meet the condition specified in a callback
 find(predicate: (value: number, index: number, obj: Uint8ClampedArray) => boolean, thisArg?: any): number | undefined
 ```
 
-Returns the value of the first element in the array where predicate is true, and undefined otherwise.
+Returns the value of the first element in the array where predicate is true, and undefined
+otherwise.
 
 **Parameters:**
 
@@ -115,7 +118,8 @@ Returns the value of the first element in the array where predicate is true, and
 findIndex(predicate: (value: number, index: number, obj: Uint8ClampedArray) => boolean, thisArg?: any): number
 ```
 
-Returns the index of the first element in the array where predicate is true, and -1 otherwise.
+Returns the index of the first element in the array where predicate is true, and -1
+otherwise.
 
 **Parameters:**
 
@@ -213,7 +217,8 @@ Returns the index of the last occurrence of a value in an array.
 map(callbackfn: (value: number, index: number, array: Uint8ClampedArray) => number, thisArg?: any): Uint8ClampedArray
 ```
 
-Calls a defined callback function on each element of an array, and returns an array that contains the results.
+Calls a defined callback function on each element of an array, and returns an array that
+contains the results.
 
 **Parameters:**
 
@@ -234,7 +239,9 @@ Calls a defined callback function on each element of an array, and returns an ar
 reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: Uint8ClampedArray) => number): number
 ```
 
-Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+Calls the specified callback function for all the elements in an array. The return value of
+the callback function is the accumulated result, and is provided as an argument in the next
+call to the callback function.
 
 **Parameters:**
 
@@ -273,7 +280,9 @@ reduce(callbackfn: (previousValue: number, currentValue: number, currentIndex: n
 reduce<U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: Uint8ClampedArray) => U, initialValue: U): U
 ```
 
-Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+Calls the specified callback function for all the elements in an array. The return value of
+the callback function is the accumulated result, and is provided as an argument in the next
+call to the callback function.
 
 **Parameters:**
 
@@ -294,7 +303,9 @@ Calls the specified callback function for all the elements in an array. The retu
 reduceRight(callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: Uint8ClampedArray) => number): number
 ```
 
-Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+Calls the specified callback function for all the elements in an array, in descending order.
+The return value of the callback function is the accumulated result, and is provided as an
+argument in the next call to the callback function.
 
 **Parameters:**
 
@@ -333,7 +344,9 @@ reduceRight(callbackfn: (previousValue: number, currentValue: number, currentInd
 reduceRight<U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: Uint8ClampedArray) => U, initialValue: U): U
 ```
 
-Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+Calls the specified callback function for all the elements in an array, in descending order.
+The return value of the callback function is the accumulated result, and is provided as an
+argument in the next call to the callback function.
 
 **Parameters:**
 
@@ -445,7 +458,8 @@ Sorts an array.
 subarray(begin?: number, end?: number): Uint8ClampedArray
 ```
 
-Gets a new Uint8ClampedArray view of the ArrayBuffer store for this array, referencing the elements at begin, inclusive, up to end, exclusive.
+Gets a new Uint8ClampedArray view of the ArrayBuffer store for this array, referencing the elements
+at begin, inclusive, up to end, exclusive.
 
 **Parameters:**
 

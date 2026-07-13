@@ -9,7 +9,7 @@ GridObjectSortComponentOptions of GridObjectSortComponent.
 ## Modules to Import
 
 ```TypeScript
-import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObjectSortComponent, GridObjectSortComponentItem } from '@ohos.arkui.advanced.GridObjectSortComponent';
+import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObjectSortComponent, GridObjectSortComponentItem } from '@kit.ArkUI';
 ```
 
 ## addAreaTitle

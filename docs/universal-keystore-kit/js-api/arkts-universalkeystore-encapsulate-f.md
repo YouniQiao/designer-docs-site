@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## encapsulate
@@ -13,11 +13,11 @@ function encapsulate(keyAlias: string, params: HuksParam[],
       sharedKeyAlias?: string, sharedKeyParams?: HuksParam[]): Promise<HuksReturnResult>
 ```
 
-Post-Quantum Cryptography key encapsulation operation, supporting key management by HUKS or by the application itself. If the application chooses to manage the key, the symmetric key is carried in the outData field of HuksReturnResult.
+Post-Quantum Cryptography key encapsulation operation, supporting key management by HUKS
+or by the application itself. If the application chooses to manage the key,
+the symmetric key is carried in the outData field of HuksReturnResult.
 
 **Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 

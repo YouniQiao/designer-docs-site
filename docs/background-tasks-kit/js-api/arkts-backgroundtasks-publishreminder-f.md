@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { reminderAgentManager } from '@ohos.reminderAgentManager';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## publishReminder
@@ -12,7 +12,14 @@ import { reminderAgentManager } from '@ohos.reminderAgentManager';
 function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void
 ```
 
-Publishes a reminder. This API uses an asynchronous callback to return the result. > **NOTE** > > This API can be called only after the > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > permission is obtained. >
+Publishes a reminder. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API can be called only after the
+> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
+> permission is obtained.
+>
 
 **Since:** 9
 
@@ -63,7 +70,14 @@ reminderAgentManager.publishReminder(timer, (err: BusinessError, reminderId: num
 function publishReminder(reminderReq: ReminderRequest): Promise<number>
 ```
 
-Publishes a reminder. This API uses a promise to return the result. > **NOTE** > > This API can be called only after the > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > permission is obtained. >
+Publishes a reminder. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API can be called only after the
+> [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2)
+> permission is obtained.
+>
 
 **Since:** 9
 

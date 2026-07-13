@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## uninstallAllAppCertificate
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function uninstallAllAppCertificate() : Promise<void>
 ```
 
-Uninstalls all system application credentials and public user credentials. This API is called only by the certificate management application. This API uses a promise to return the result.
+Uninstalls all system application credentials and public user credentials. This API is called only by the
+certificate management application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

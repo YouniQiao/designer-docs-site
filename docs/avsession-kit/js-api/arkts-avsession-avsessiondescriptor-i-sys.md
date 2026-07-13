@@ -1,8 +1,8 @@
-# AVSessionDescriptor
+# AVSessionDescriptor (System API)
 
 The description of the session
 
-**Since:** 9
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -14,6 +14,38 @@ The description of the session
 import { avSession } from '@kit.AVSessionKit';
 ```
 
+## elementName
+
+```TypeScript
+elementName: ElementName
+```
+
+The elementName of the ability that created this session. See {@link ElementName} in bundle/elementName.d.ts
+
+**Type:** ElementName
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Manager
+
+**System API:** This is a system API.
+
+## isActive
+
+```TypeScript
+isActive: boolean
+```
+
+Session active state
+
+**Type:** boolean
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Manager
+
+**System API:** This is a system API.
+
 ## isTopSession
 
 ```TypeScript
@@ -24,7 +56,7 @@ Is it the top priority session
 
 **Type:** boolean
 
-**Since:** 9
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -36,25 +68,10 @@ Is it the top priority session
 outputDevice: OutputDeviceInfo
 ```
 
-The current output device information. It will be undefined if this is a local session.
+The current output device information.
+It will be undefined if this is a local session.
 
 **Type:** OutputDeviceInfo
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.AVSession.Manager
-
-**System API:** This is a system API.
-
-## sessionTag
-
-```TypeScript
-sessionTag: string
-```
-
-The session tag set by the application
-
-**Type:** string
 
 **Since:** 9
 
@@ -72,23 +89,23 @@ Unique ID of the session
 
 **Type:** string
 
-**Since:** 9
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
 **System API:** This is a system API.
 
-## isActive
+## sessionTag
 
 ```TypeScript
-isActive: boolean
+sessionTag: string
 ```
 
-Session active state
+The session tag set by the application
 
-**Type:** boolean
+**Type:** string
 
-**Since:** 9
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -104,23 +121,7 @@ Session type, currently supports audio or video
 
 **Type:** AVSessionType
 
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.AVSession.Manager
-
-**System API:** This is a system API.
-
-## elementName
-
-```TypeScript
-elementName: ElementName
-```
-
-The elementName of the ability that created this session. See {@link ElementName} in bundle/elementName.d.ts
-
-**Type:** ElementName
-
-**Since:** 9
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 

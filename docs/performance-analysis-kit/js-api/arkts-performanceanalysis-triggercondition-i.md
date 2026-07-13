@@ -1,6 +1,6 @@
 # TriggerCondition
 
-Defines the triggering condition parameters of the **onTrigger** callback of a [Watcher](arkts-performanceanalysis-watcher-i.md#watcher).
+Defines the triggering condition parameters of the **onTrigger** callback of a [Watcher](arkts-performanceanalysis-watcher-i.md).
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ Defines the triggering condition parameters of the **onTrigger** callback of a [
 ## Modules to Import
 
 ```TypeScript
-import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## row
@@ -18,7 +18,8 @@ import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
 row?: number
 ```
 
-Total number of events that trigger callback. The value is a positive integer. The default value is 0, indicating that no callback is triggered. If this parameter is set to a negative value, the default value is used.
+Total number of events that trigger callback. The value is a positive integer. The default value is 0, indicating
+that no callback is triggered. If this parameter is set to a negative value, the default value is used.
 
 **Type:** number
 
@@ -34,7 +35,9 @@ Total number of events that trigger callback. The value is a positive integer. T
 size?: number
 ```
 
-Total size of events that trigger callback. The value is a positive integer, in bytes. The default value is 0, indicating that no callback is triggered. If this parameter is set to a negative value, the default value is used.
+Total size of events that trigger callback. The value is a positive integer, in bytes. The default value is 0,
+indicating that no callback is triggered. If this parameter is set to a negative value, the default value is
+used.
 
 **Type:** number
 
@@ -50,7 +53,9 @@ Total size of events that trigger callback. The value is a positive integer, in 
 timeOut?: number
 ```
 
-Timeout interval for triggering callback. The value is a positive integer, in unit of 30s. The default value is 0 , indicating that no callback is triggered. If this parameter is set to a negative value, the default value is used.
+Timeout interval for triggering callback. The value is a positive integer, in unit of 30s. The default value is 0
+, indicating that no callback is triggered. If this parameter is set to a negative value, the default value is
+used.
 
 **Type:** number
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { volumeManager } from '@ohos.file.volumeManager';
+import { volumeManager } from '@kit.CoreFileKit';
 ```
 
 ## format
@@ -12,7 +12,9 @@ import { volumeManager } from '@ohos.file.volumeManager';
 function format(volumeId: string, fsType: string, callback: AsyncCallback<void>): void
 ```
 
-Formats a volume. This API uses an asynchronous callback to return the result. Currently, only the virtual file allocation table (VFAT), ext4 and exFAT file systems are supported. Only unmounted volumes can be formatted. After a volume is formatted, the UUID, mounting path, and description of the volume will change.
+Formats a volume. This API uses an asynchronous callback to return the result. Currently, only the virtual file
+allocation table (VFAT), ext4 and exFAT file systems are supported. Only unmounted volumes can be formatted. After
+a volume is formatted, the UUID, mounting path, and description of the volume will change.
 
 **Since:** 9
 
@@ -50,7 +52,9 @@ Formats a volume. This API uses an asynchronous callback to return the result. C
 function format(volumeId: string, fsType: string): Promise<void>
 ```
 
-Formats a volume. This API uses a promise to return the result. Currently, only the virtual file allocation table ( VFAT), ext4 and exFAT file systems are supported. Only unmounted volumes can be formatted. After a volume is formatted, the UUID, mounting path, and description of the volume will change.
+Formats a volume. This API uses a promise to return the result. Currently, only the virtual file allocation table (
+VFAT), ext4 and exFAT file systems are supported. Only unmounted volumes can be formatted. After a volume is
+formatted, the UUID, mounting path, and description of the volume will change.
 
 **Since:** 9
 

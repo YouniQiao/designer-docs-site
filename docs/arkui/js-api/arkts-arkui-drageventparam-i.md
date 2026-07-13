@@ -9,7 +9,7 @@ Callback used to return the result.
 ## Modules to Import
 
 ```TypeScript
-import { dragController } from '@ohos.arkui.dragController';
+import { dragController } from '@kit.ArkUI';
 ```
 
 ## event
@@ -36,7 +36,9 @@ Drag event information that includes only the drag result.
 extraParams: string
 ```
 
-Additional information about the drag action. Not supported currently. The default value is null.
+Additional information about the drag action. Not supported currently.
+
+The default value is null.
 
 **Type:** string
 

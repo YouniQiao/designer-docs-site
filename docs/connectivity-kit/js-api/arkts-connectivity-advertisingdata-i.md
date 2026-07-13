@@ -12,7 +12,8 @@ Describes the advertising data.
 includeDeviceName?: boolean
 ```
 
-Indicates whether the device name will be included. Default value: false.
+Indicates whether the device name will be included.
+Default value: false.
 
 **Type:** boolean
 
@@ -60,7 +61,9 @@ The specified service data.
 serviceUuids?: string[]
 ```
 
-The specified service UUIDs. The length of each UUID must be 36, The value consists of 36 hexadecimal digits and hyphens (-), for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
+The specified service UUIDs.
+The length of each UUID must be 36, The value consists of 36 hexadecimal digits and hyphens (-),
+for example, FFFFFFFF-1234-5678-ABCD-000000001234, indicating a 128-bit identifier.
 
 **Type:** string[]
 

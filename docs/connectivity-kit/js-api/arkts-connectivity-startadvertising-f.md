@@ -36,5 +36,6 @@ Starts advertising.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the chip does not support it. |
 | 36100003 | NearLink disabled. |
 | 36100040 | Integer out of range. |
+| 36100043 | Invalid UUID. |
 | 36100099 | Operation failed. |
 

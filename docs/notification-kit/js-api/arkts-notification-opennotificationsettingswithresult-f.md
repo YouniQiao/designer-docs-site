@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## openNotificationSettingsWithResult
@@ -12,7 +12,9 @@ import { notificationManager } from '@ohos.notificationManager';
 function openNotificationSettingsWithResult(context: UIAbilityContext): Promise<NotificationSetting>
 ```
 
-Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to set the notification enabling and notification mode. This API uses a promise to return the result. When the semi- modal window is closed, the user-defined status is returned.
+Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to
+set the notification enabling and notification mode. This API uses a promise to return the result. When the semi-
+modal window is closed, the user-defined status is returned.
 
 **Since:** 26.0.0
 

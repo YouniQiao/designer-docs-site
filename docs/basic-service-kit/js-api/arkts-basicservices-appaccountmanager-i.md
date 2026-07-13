@@ -9,7 +9,7 @@ Defines the application account manager, which is used to manage account informa
 ## Modules to Import
 
 ```TypeScript
-import { appAccount } from '@ohos.account.appAccount';
+import { appAccount } from '@kit.BasicServicesKit';
 ```
 
 ## addAccount
@@ -18,7 +18,13 @@ import { appAccount } from '@ohos.account.appAccount';
 addAccount(name: string, callback: AsyncCallback<void>): void
 ```
 
-Adds an application account with the given name. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-1) > instead.
+Adds an application account with the given name. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-1)
+> instead.
 
 **Since:** 7
 
@@ -52,7 +58,14 @@ appAccountManager.addAccount('WangWu', (err: BusinessError) => {
 addAccount(name: string, extraInfo: string, callback: AsyncCallback<void>): void
 ```
 
-Adds an application account name and additional information. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-2) > instead.
+Adds an application account name and additional information. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-2)
+> instead.
 
 **Since:** 7
 
@@ -87,7 +100,12 @@ appAccountManager.addAccount('LiSi', 'token101', (err: BusinessError) => {
 addAccount(name: string, extraInfo?: string): Promise<void>
 ```
 
-Adds an application account name and additional information. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-3) > instead.
+Adds an application account name and additional information. This API uses a promise to return the result.
+
+> **NOTE**
+> > This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [createAccount](arkts-basicservices-appaccountmanager-i.md#createaccount-3)
+> instead.
 
 **Since:** 7
 
@@ -134,7 +152,14 @@ addAccountImplicitly(
     ): void
 ```
 
-Adds an application account implicitly based on the specified owner. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [createAccountImplicitly](arkts-basicservices-appaccountmanager-i.md#createaccountimplicitly-1) > instead.
+Adds an application account implicitly based on the specified owner. This API uses an asynchronous callback to
+return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [createAccountImplicitly](arkts-basicservices-appaccountmanager-i.md#createaccountimplicitly-1)
+> instead.
 
 **Since:** 8
 
@@ -377,7 +402,13 @@ authenticate(
     ): void
 ```
 
-Authenticates an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [auth](arkts-basicservices-appaccountmanager-i.md#auth-1) > instead.
+Authenticates an application account. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [auth](arkts-basicservices-appaccountmanager-i.md#auth-1)
+> instead.
 
 **Since:** 8
 
@@ -445,7 +476,8 @@ struct Index {
 checkAccountLabels(name: string, owner: string, labels: Array<string>, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether an application account has specific labels. This API uses an asynchronous callback to return the result. The labels are checked by the authenticator of the target application.
+Checks whether an application account has specific labels. This API uses an asynchronous callback to return the
+result. The labels are checked by the authenticator of the target application.
 
 **Since:** 9
 
@@ -500,7 +532,8 @@ try {
 checkAccountLabels(name: string, owner: string, labels: Array<string>): Promise<boolean>
 ```
 
-Checks whether an application account has specific labels. This API uses a promise to return the result. The labels are checked by the authenticator of the target application.
+Checks whether an application account has specific labels. This API uses a promise to return the result. The
+labels are checked by the authenticator of the target application.
 
 **Since:** 9
 
@@ -558,7 +591,8 @@ try {
 checkAppAccess(name: string, bundleName: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether an application can access the data of an account. This API uses an asynchronous callback to return the result.
+Checks whether an application can access the data of an account. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -660,7 +694,14 @@ try {
 checkAppAccountSyncEnable(name: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether data synchronization is enabled for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-1) > instead.
+Checks whether data synchronization is enabled for an application account. This API uses an asynchronous callback
+to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-1)
+> instead.
 
 **Since:** 7
 
@@ -700,7 +741,13 @@ appAccountManager.checkAppAccountSyncEnable('ZhangSan', (err: BusinessError, res
 checkAppAccountSyncEnable(name: string): Promise<boolean>
 ```
 
-Checks whether data synchronization is enabled for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-2) instead.
+Checks whether data synchronization is enabled for an application account. This API uses a promise to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [checkDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#checkdatasyncenabled-2) instead.
 
 **Since:** 7
 
@@ -743,7 +790,8 @@ appAccountManager.checkAppAccountSyncEnable('ZhangSan').then((data: boolean) => 
 checkAuthTokenVisibility(name: string, authType: string, bundleName: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks the visibility of an authorization token of the specified authentication type to an application. This API uses an asynchronous callback to return the result.
+Checks the visibility of an authorization token of the specified authentication type to an application. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -795,7 +843,8 @@ try {
 checkAuthTokenVisibility(name: string, authType: string, bundleName: string): Promise<boolean>
 ```
 
-Checks the visibility of an authorization token of the specified authentication type to an application. This API uses a promise to return the result.
+Checks the visibility of an authorization token of the specified authentication type to an application. This API
+uses a promise to return the result.
 
 **Since:** 9
 
@@ -850,7 +899,8 @@ try {
 checkDataSyncEnabled(name: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether data synchronization is enabled for an application account. This API uses an asynchronous callback to return the result.
+Checks whether data synchronization is enabled for an application account. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -901,7 +951,8 @@ try {
 checkDataSyncEnabled(name: string): Promise<boolean>
 ```
 
-Checks whether data synchronization is enabled for an application account. This API uses a promise to return the result.
+Checks whether data synchronization is enabled for an application account. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -960,7 +1011,14 @@ checkOAuthTokenVisibility(
     ): void
 ```
 
-Checks the visibility of an authorization token of the specified authentication type to an application. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-1) > instead.
+Checks the visibility of an authorization token of the specified authentication type to an application. This API
+uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-1)
+> instead.
 
 **Since:** 8
 
@@ -1001,7 +1059,14 @@ appAccountManager.checkOAuthTokenVisibility('LiSi', 'getSocialData', 'com.exampl
 checkOAuthTokenVisibility(name: string, authType: string, bundleName: string): Promise<boolean>
 ```
 
-Checks the visibility of an authorization token of the specified authentication type to an application. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-2) > instead.
+Checks the visibility of an authorization token of the specified authentication type to an application. This API
+uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [checkAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#checkauthtokenvisibility-2)
+> instead.
 
 **Since:** 8
 
@@ -1207,7 +1272,8 @@ try {
 createAccountImplicitly(owner: string, callback: AuthCallback): void
 ```
 
-Creates an application account implicitly based on the specified account owner. This API uses an asynchronous callback to return the result.
+Creates an application account implicitly based on the specified account owner. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -1284,7 +1350,8 @@ struct Index {
 createAccountImplicitly(owner: string, options: CreateAccountImplicitlyOptions, callback: AuthCallback): void
 ```
 
-Creates an application account implicitly based on the specified account owner and options. This API uses an asynchronous callback to return the result.
+Creates an application account implicitly based on the specified account owner and options. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1366,7 +1433,13 @@ struct Index {
 deleteAccount(name: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-1) > instead.
+Deletes an application account. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-1)
+> instead.
 
 **Since:** 7
 
@@ -1400,7 +1473,13 @@ appAccountManager.deleteAccount('ZhaoLiu', (err: BusinessError) => {
 deleteAccount(name: string): Promise<void>
 ```
 
-Deletes an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-2) > instead.
+Deletes an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [removeAccount](arkts-basicservices-appaccountmanager-i.md#removeaccount-2)
+> instead.
 
 **Since:** 7
 
@@ -1441,7 +1520,8 @@ appAccountManager.deleteAccount('ZhaoLiu').then(() => {
 deleteAuthToken(name: string, owner: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes the authorization token of the specified authentication type for an application account. This API uses an asynchronous callback to return the result.
+Deletes the authorization token of the specified authentication type for an application account. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1494,7 +1574,8 @@ try {
 deleteAuthToken(name: string, owner: string, authType: string, token: string): Promise<void>
 ```
 
-Deletes the authorization token of the specified authentication type for an application account. This API uses a promise to return the result.
+Deletes the authorization token of the specified authentication type for an application account. This API uses a
+promise to return the result.
 
 **Since:** 9
 
@@ -1549,7 +1630,8 @@ try {
 deleteCredential(name: string, credentialType: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes the credential of the specified type from an application account. This API uses an asynchronous callback to return the result.
+Deletes the credential of the specified type from an application account. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -1599,7 +1681,8 @@ try {
 deleteCredential(name: string, credentialType: string): Promise<void>
 ```
 
-Deletes the credential of the specified type from an application account. This API uses a promise to return the result.
+Deletes the credential of the specified type from an application account. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -1652,7 +1735,14 @@ try {
 deleteOAuthToken(name: string, owner: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes the authorization token of the specified authentication type for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-1) > instead.
+Deletes the authorization token of the specified authentication type for an application account. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-1)
+> instead.
 
 **Since:** 8
 
@@ -1694,7 +1784,14 @@ appAccountManager.deleteOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSoci
 deleteOAuthToken(name: string, owner: string, authType: string, token: string): Promise<void>
 ```
 
-Deletes the authorization token of the specified authentication type for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-2) > instead.
+Deletes the authorization token of the specified authentication type for an application account. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [deleteAuthToken](arkts-basicservices-appaccountmanager-i.md#deleteauthtoken-2)
+> instead.
 
 **Since:** 8
 
@@ -1738,7 +1835,14 @@ appAccountManager.deleteOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSoci
 disableAppAccess(name: string, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Disables an application account from accessing an application. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1) > instead.
+Disables an application account from accessing an application. This API uses an asynchronous callback to return
+the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1)
+> instead.
 
 **Since:** 7
 
@@ -1773,7 +1877,13 @@ appAccountManager.disableAppAccess('ZhangSan', 'com.example.accountjsdemo', (err
 disableAppAccess(name: string, bundleName: string): Promise<void>
 ```
 
-Disables an application account from accessing an application. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2) > instead.
+Disables an application account from accessing an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2)
+> instead.
 
 **Since:** 7
 
@@ -1815,7 +1925,14 @@ appAccountManager.disableAppAccess('ZhangSan', 'com.example.accountjsdemo').then
 enableAppAccess(name: string, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Enables an application account to access an application. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1) > instead.
+Enables an application account to access an application. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-1)
+> instead.
 
 **Since:** 7
 
@@ -1854,7 +1971,13 @@ appAccountManager.enableAppAccess('ZhangSan', 'com.example.accountjsdemo', (err:
 enableAppAccess(name: string, bundleName: string): Promise<void>
 ```
 
-Enables an application account to access an application. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2) > instead.
+Enables an application account to access an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setAppAccess](arkts-basicservices-appaccountmanager-i.md#setappaccess-2)
+> instead.
 
 **Since:** 7
 
@@ -1896,7 +2019,13 @@ appAccountManager.enableAppAccess('ZhangSan', 'com.example.accountjsdemo').then(
 getAccountCredential(name: string, credentialType: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the credential of an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-1) > instead.
+Obtains the credential of an application account. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-1)
+> instead.
 
 **Since:** 7
 
@@ -1935,7 +2064,13 @@ appAccountManager.getAccountCredential('ZhangSan', 'credentialType001', (err: Bu
 getAccountCredential(name: string, credentialType: string): Promise<string>
 ```
 
-Obtains the credential of an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-2) > instead.
+Obtains the credential of an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCredential](arkts-basicservices-appaccountmanager-i.md#getcredential-2)
+> instead.
 
 **Since:** 7
 
@@ -1977,7 +2112,15 @@ appAccountManager.getAccountCredential('ZhangSan', 'credentialType001').then((da
 getAccountExtraInfo(name: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains additional information of an application account. Additional information refers to other information that can be converted to the string type. It cannot contain sensitive information, such as the application account password and token. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1) > instead.
+Obtains additional information of an application account. Additional information refers to other information that
+can be converted to the string type. It cannot contain sensitive information, such as the application account
+password and token. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1)
+> instead.
 
 **Since:** 7
 
@@ -2015,7 +2158,14 @@ appAccountManager.getAccountExtraInfo('ZhangSan', (err: BusinessError, result: s
 getAccountExtraInfo(name: string): Promise<string>
 ```
 
-Obtains additional information of an application account. Additional information refers to other information that can be converted to the string type. It cannot contain sensitive information, such as the application account password and token. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2) instead.
+Obtains additional information of an application account. Additional information refers to other information that
+can be converted to the string type. It cannot contain sensitive information, such as the application account
+password and token. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2) instead.
 
 **Since:** 7
 
@@ -2056,7 +2206,13 @@ appAccountManager.getAccountExtraInfo('ZhangSan').then((data: string) => {
 getAccountsByOwner(owner: string, callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-Obtains the application accounts that can be accessed by the invoker based on the application account owner. This API uses an asynchronous callback to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications or <br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
+Obtains the application accounts that can be accessed by the invoker based on the application account owner. This
+API uses an asynchronous callback to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications or
+<br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
 
 **Since:** 9
 
@@ -2104,7 +2260,13 @@ try {
 getAccountsByOwner(owner: string): Promise<Array<AppAccountInfo>>
 ```
 
-Obtains the application accounts that can be accessed by the invoker based on the application account owner. This API uses a promise to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications or <br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
+Obtains the application accounts that can be accessed by the invoker based on the application account owner. This
+API uses a promise to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications or
+<br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
 
 **Since:** 9
 
@@ -2155,7 +2317,18 @@ try {
 getAllAccessibleAccounts(callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-Obtains information about all accessible application accounts. This API uses an asynchronous callback to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-1) > instead.
+Obtains information about all accessible application accounts. This API uses an asynchronous callback to return
+the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-1)
+> instead.
 
 **Since:** 7
 
@@ -2194,7 +2367,16 @@ appAccountManager.getAllAccessibleAccounts((err: BusinessError, data: appAccount
 getAllAccessibleAccounts(): Promise<Array<AppAccountInfo>>
 ```
 
-Obtains information about all accessible application accounts. This API uses a promise to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-2) instead.
+Obtains information about all accessible application accounts. This API uses a promise to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getAllAccounts](arkts-basicservices-appaccountmanager-i.md#getallaccounts-2) instead.
 
 **Since:** 7
 
@@ -2231,7 +2413,13 @@ appAccountManager.getAllAccessibleAccounts().then((data: appAccount.AppAccountIn
 getAllAccounts(callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-Obtains information about all accessible application accounts. This API uses an asynchronous callback to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications or <br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
+Obtains information about all accessible application accounts. This API uses an asynchronous callback to return
+the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications or
+<br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
 
 **Since:** 9
 
@@ -2276,7 +2464,12 @@ try {
 getAllAccounts(): Promise<Array<AppAccountInfo>>
 ```
 
-Obtains information about all accessible application accounts. This API uses a promise to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications or <br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
+Obtains information about all accessible application accounts. This API uses a promise to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications or
+<br> have gained the ohos.permission.GET_ALL_APP_ACCOUNTS permission.
 
 **Since:** 9
 
@@ -2318,7 +2511,18 @@ try {
 getAllAccounts(owner: string, callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-Obtains the application accounts that can be accessed by the invoker based on the application account owner. This API uses an asynchronous callback to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-1) > instead.
+Obtains the application accounts that can be accessed by the invoker based on the application account owner. This
+API uses an asynchronous callback to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-1)
+> instead.
 
 **Since:** 7
 
@@ -2359,7 +2563,17 @@ appAccountManager.getAllAccounts(selfBundle, (err: BusinessError, data: appAccou
 getAllAccounts(owner: string): Promise<Array<AppAccountInfo>>
 ```
 
-Obtains the application accounts that can be accessed by the invoker based on the application account owner. This API uses a promise to return the result. This method applies to the following accounts: <br> Accounts of this application. <br> Accounts of third-party applications. To obtain such information, <br> your application must have gained authorization from the third-party applications. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-2) instead.
+Obtains the application accounts that can be accessed by the invoker based on the application account owner. This
+API uses a promise to return the result.
+This method applies to the following accounts:
+<br> Accounts of this application.
+<br> Accounts of third-party applications. To obtain such information,
+<br> your application must have gained authorization from the third-party applications.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getAccountsByOwner](arkts-basicservices-appaccountmanager-i.md#getaccountsbyowner-2) instead.
 
 **Since:** 7
 
@@ -2403,7 +2617,8 @@ appAccountManager.getAllAccounts(selfBundle).then((data: appAccount.AppAccountIn
 getAllAuthTokens(name: string, owner: string, callback: AsyncCallback<Array<AuthTokenInfo>>): void
 ```
 
-Obtains all tokens visible to the invoker for an application account. This API uses an asynchronous callback to return the result.
+Obtains all tokens visible to the invoker for an application account. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -2453,7 +2668,8 @@ try {
 getAllAuthTokens(name: string, owner: string): Promise<Array<AuthTokenInfo>>
 ```
 
-Obtains all tokens visible to the invoker for an application account. This API uses a promise to return the result.
+Obtains all tokens visible to the invoker for an application account. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -2506,7 +2722,14 @@ try {
 getAllOAuthTokens(name: string, owner: string, callback: AsyncCallback<Array<OAuthTokenInfo>>): void
 ```
 
-Obtains all tokens visible to the invoker for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-1) > instead.
+Obtains all tokens visible to the invoker for an application account. This API uses an asynchronous callback to
+return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-1)
+> instead.
 
 **Since:** 8
 
@@ -2546,7 +2769,13 @@ appAccountManager.getAllOAuthTokens('LiSi', 'com.example.accountjsdemo',
 getAllOAuthTokens(name: string, owner: string): Promise<Array<OAuthTokenInfo>>
 ```
 
-Obtains all tokens visible to the invoker for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-2) instead.
+Obtains all tokens visible to the invoker for an application account. This API uses a promise to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAllAuthTokens](arkts-basicservices-appaccountmanager-i.md#getallauthtokens-2) instead.
 
 **Since:** 8
 
@@ -2589,7 +2818,14 @@ appAccountManager.getAllOAuthTokens('LiSi', 'com.example.accountjsdemo').then((
 getAssociatedData(name: string, key: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the associated data of an application account based on the specified key. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1) > instead.
+Obtains the associated data of an application account based on the specified key. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-1)
+> instead.
 
 **Since:** 7
 
@@ -2628,7 +2864,12 @@ appAccountManager.getAssociatedData('ZhangSan', 'k001', (err: BusinessError, res
 getAssociatedData(name: string, key: string): Promise<string>
 ```
 
-Obtains data associated with an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2) instead.
+Obtains data associated with an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getCustomData](arkts-basicservices-appaccountmanager-i.md#getcustomdata-2) instead.
 
 **Since:** 7
 
@@ -2670,7 +2911,8 @@ appAccountManager.getAssociatedData('ZhangSan', 'k001').then((data: string) => {
 getAuthCallback(sessionId: string, callback: AsyncCallback<AuthCallback>): void
 ```
 
-Obtains the authenticator callback for an authentication session. This API uses an asynchronous callback to return the result.
+Obtains the authenticator callback for an authentication session. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -2801,7 +3043,10 @@ export default class EntryAbility extends UIAbility {
 getAuthList(name: string, authType: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the authorization list of the specified authentication type for an application account. The authorization list contains all authorized bundles. The token authorization list is set by [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) . This API uses an asynchronous callback to return the result.
+Obtains the authorization list of the specified authentication type for an application account. The authorization
+list contains all authorized bundles. The token authorization list is set by
+[setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2851,7 +3096,10 @@ try {
 getAuthList(name: string, authType: string): Promise<Array<string>>
 ```
 
-Obtains the authorization list of the specified authentication type for an application account. The authorization list contains all authorized bundles. The token authorization list is set by [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) . This API uses a promise to return the result.
+Obtains the authorization list of the specified authentication type for an application account. The authorization
+list contains all authorized bundles. The token authorization list is set by
+[setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -2904,7 +3152,8 @@ try {
 getAuthToken(name: string, owner: string, authType: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the authorization token of the specified authentication type for an application account. This API uses an asynchronous callback to return the result.
+Obtains the authorization token of the specified authentication type for an application account. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -2956,7 +3205,8 @@ try {
 getAuthToken(name: string, owner: string, authType: string): Promise<string>
 ```
 
-Obtains the authorization token of the specified authentication type for an application account. This API uses a promise to return the result.
+Obtains the authorization token of the specified authentication type for an application account. This API uses a
+promise to return the result.
 
 **Since:** 9
 
@@ -3010,7 +3260,14 @@ try {
 getAuthenticatorCallback(sessionId: string, callback: AsyncCallback<AuthenticatorCallback>): void
 ```
 
-Obtains the authenticator callback for an authentication session. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-1) > instead.
+Obtains the authenticator callback for an authentication session. This API uses an asynchronous callback to
+return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-1)
+> instead.
 
 **Since:** 8
 
@@ -3060,7 +3317,12 @@ export default class EntryAbility extends UIAbility {
 getAuthenticatorCallback(sessionId: string): Promise<AuthenticatorCallback>
 ```
 
-Obtains the authenticator callback for an authentication session. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-2) instead.
+Obtains the authenticator callback for an authentication session. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthCallback](arkts-basicservices-appaccountmanager-i.md#getauthcallback-2) instead.
 
 **Since:** 8
 
@@ -3113,7 +3375,14 @@ export default class EntryAbility extends UIAbility {
 getAuthenticatorInfo(owner: string, callback: AsyncCallback<AuthenticatorInfo>): void
 ```
 
-Obtains the authenticator information of an application. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-1) > instead.
+Obtains the authenticator information of an application. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-1)
+> instead.
 
 **Since:** 8
 
@@ -3152,7 +3421,12 @@ appAccountManager.getAuthenticatorInfo('com.example.accountjsdemo',
 getAuthenticatorInfo(owner: string): Promise<AuthenticatorInfo>
 ```
 
-Obtains the authenticator information of an application. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-2) instead.
+Obtains the authenticator information of an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [queryAuthenticatorInfo](arkts-basicservices-appaccountmanager-i.md#queryauthenticatorinfo-2) instead.
 
 **Since:** 8
 
@@ -3297,7 +3571,8 @@ try {
 getCustomData(name: string, key: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the custom data of an application account based on the specified key. This API uses an asynchronous callback to return the result.
+Obtains the custom data of an application account based on the specified key. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -3347,7 +3622,8 @@ try {
 getCustomData(name: string, key: string): Promise<string>
 ```
 
-Obtains the custom data of an application account based on the specified key. This API uses a promise to return the result.
+Obtains the custom data of an application account based on the specified key. This API uses a promise to return
+the result.
 
 **Since:** 9
 
@@ -3400,7 +3676,8 @@ try {
 getCustomDataSync(name: string, key: string): string
 ```
 
-Obtains the custom data of an application account based on the specified key. The API returns the result synchronously.
+Obtains the custom data of an application account based on the specified key. The API returns the result
+synchronously.
 
 **Since:** 9
 
@@ -3450,7 +3727,16 @@ try {
 getOAuthList(name: string, authType: string, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the authorization list of the specified authentication type for an application account. The authorization list contains all authorized bundles. The token authorization list is set by [setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1) . This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-1) > instead.
+Obtains the authorization list of the specified authentication type for an application account. The authorization
+list contains all authorized bundles. The token authorization list is set by
+[setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1)
+. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-1)
+> instead.
 
 **Since:** 8
 
@@ -3489,7 +3775,15 @@ appAccountManager.getOAuthList('LiSi', 'getSocialData', (err: BusinessError, dat
 getOAuthList(name: string, authType: string): Promise<Array<string>>
 ```
 
-Obtains the authorization list of the specified authentication type for an application account. The authorization list contains all authorized bundles. The token authorization list is set by [setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1) . This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-2) instead.
+Obtains the authorization list of the specified authentication type for an application account. The authorization
+list contains all authorized bundles. The token authorization list is set by
+[setOAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setoauthtokenvisibility-1)
+. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthList](arkts-basicservices-appaccountmanager-i.md#getauthlist-2) instead.
 
 **Since:** 8
 
@@ -3531,7 +3825,14 @@ appAccountManager.getOAuthList('LiSi', 'getSocialData').then((data: string[]) =>
 getOAuthToken(name: string, owner: string, authType: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the authorization token of the specified authentication type for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-1) > instead.
+Obtains the authorization token of the specified authentication type for an application account. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-1)
+> instead.
 
 **Since:** 8
 
@@ -3572,7 +3873,14 @@ appAccountManager.getOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSocialD
 getOAuthToken(name: string, owner: string, authType: string): Promise<string>
 ```
 
-Obtains the authorization token of the specified authentication type for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-2) > instead.
+Obtains the authorization token of the specified authentication type for an application account. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAuthToken](arkts-basicservices-appaccountmanager-i.md#getauthtoken-2)
+> instead.
 
 **Since:** 8
 
@@ -3615,7 +3923,13 @@ appAccountManager.getOAuthToken('LiSi', 'com.example.accountjsdemo', 'getSocialD
 off(type: 'change', callback?: Callback<Array<AppAccountInfo>>): void
 ```
 
-Unsubscribes from account information changes. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [off('accountChange')](arkts-basicservices-appaccountmanager-i.md#off-2) > instead.
+Unsubscribes from account information changes.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [off('accountChange')](arkts-basicservices-appaccountmanager-i.md#off-2)
+> instead.
 
 **Since:** 7
 
@@ -3710,7 +4024,13 @@ try {
 on(type: 'change', owners: Array<string>, callback: Callback<Array<AppAccountInfo>>): void
 ```
 
-Subscribes to account information changes of apps. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [on('accountChange')](arkts-basicservices-appaccountmanager-i.md#on-2) > instead.
+Subscribes to account information changes of apps.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [on('accountChange')](arkts-basicservices-appaccountmanager-i.md#on-2)
+> instead.
 
 **Since:** 7
 
@@ -3798,7 +4118,8 @@ try {
 queryAuthenticatorInfo(owner: string, callback: AsyncCallback<AuthenticatorInfo>): void
 ```
 
-Obtains the authenticator information of an application. This API uses an asynchronous callback to return the result.
+Obtains the authenticator information of an application. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -3998,7 +4319,9 @@ try {
 selectAccountsByOptions(options: SelectAccountsOptions, callback: AsyncCallback<Array<AppAccountInfo>>): void
 ```
 
-Selects the accounts that can be accessed by the invoker based on the options. This API uses an asynchronous callback to return the result. If the options contain label constraints, the authenticator of the target application provides the capability of checking the labels.
+Selects the accounts that can be accessed by the invoker based on the options. This API uses an asynchronous
+callback to return the result. If the options contain label constraints, the authenticator of the target
+application provides the capability of checking the labels.
 
 **Since:** 9
 
@@ -4052,7 +4375,9 @@ try {
 selectAccountsByOptions(options: SelectAccountsOptions): Promise<Array<AppAccountInfo>>
 ```
 
-Selects the accounts that can be accessed by the invoker based on the options. This API uses a promise to return the result. If the options contain label constraints, the authenticator of the target application provides the capability of checking the labels.
+Selects the accounts that can be accessed by the invoker based on the options. This API uses a promise to return
+the result. If the options contain label constraints, the authenticator of the target application provides the
+capability of checking the labels.
 
 **Since:** 9
 
@@ -4107,7 +4432,13 @@ try {
 setAccountCredential(name: string, credentialType: string, credential: string, callback: AsyncCallback<void>): void
 ```
 
-Sets a credential for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-1) > instead.
+Sets a credential for an application account. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-1)
+> instead.
 
 **Since:** 7
 
@@ -4147,7 +4478,13 @@ appAccountManager.setAccountCredential('ZhangSan', 'credentialType001', 'credent
 setAccountCredential(name: string, credentialType: string, credential: string): Promise<void>
 ```
 
-Sets a credential for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-2) > instead.
+Sets a credential for an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCredential](arkts-basicservices-appaccountmanager-i.md#setcredential-2)
+> instead.
 
 **Since:** 7
 
@@ -4190,7 +4527,14 @@ appAccountManager.setAccountCredential('ZhangSan', 'credentialType001', 'credent
 setAccountExtraInfo(name: string, extraInfo: string, callback: AsyncCallback<void>): void
 ```
 
-Sets additional information for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1) > instead.
+Sets additional information for an application account. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1)
+> instead.
 
 **Since:** 7
 
@@ -4229,7 +4573,13 @@ appAccountManager.setAccountExtraInfo('ZhangSan', 'Tk002', (err: BusinessError) 
 setAccountExtraInfo(name: string, extraInfo: string): Promise<void>
 ```
 
-Sets additional information for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2) > instead.
+Sets additional information for an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)
+> instead.
 
 **Since:** 7
 
@@ -4271,7 +4621,8 @@ appAccountManager.setAccountExtraInfo('ZhangSan', 'Tk002').then(() => {
 setAppAccess(name: string, bundleName: string, isAccessible: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets the access to the data of an account for an application. This API uses an asynchronous callback to return the result.
+Sets the access to the data of an account for an application. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -4294,7 +4645,7 @@ Sets the access to the data of an account for an application. This API uses an a
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
 | [12400001](../../apis-basic-services-kit/errorcode-account.md#12400001-application-not-found) | Application not found.<br>**Applicable version:** 9 - 13 |
-| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-bundles-in-the-oauth-list-reached-the-limit) | The size of authorization list reaches the upper limit.<br>**Applicable version:** 14 |
+| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-bundles-in-the-oauth-list-reached-the-limit) | The size of authorization list reaches the upper limit.<br>**Applicable version:** 14 and later |
 
 **Example**
 
@@ -4350,7 +4701,7 @@ Sets the access to the data of an account for an application. This API uses a pr
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid name or bundleName. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
 | [12400001](../../apis-basic-services-kit/errorcode-account.md#12400001-application-not-found) | Application not found.<br>**Applicable version:** 9 - 13 |
-| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-bundles-in-the-oauth-list-reached-the-limit) | The size of authorization list reaches the upper limit.<br>**Applicable version:** 14 |
+| [12400005](../../apis-basic-services-kit/errorcode-account.md#12400005-bundles-in-the-oauth-list-reached-the-limit) | The size of authorization list reaches the upper limit.<br>**Applicable version:** 14 and later |
 
 **Example**
 
@@ -4376,7 +4727,14 @@ try {
 setAppAccountSyncEnable(name: string, isEnable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets data synchronization for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-1) > instead.
+Sets data synchronization for an application account. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-1)
+> instead.
 
 **Since:** 7
 
@@ -4417,7 +4775,13 @@ appAccountManager.setAppAccountSyncEnable('ZhangSan', true, (err: BusinessError)
 setAppAccountSyncEnable(name: string, isEnable: boolean): Promise<void>
 ```
 
-Sets data synchronization for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-2) > instead.
+Sets data synchronization for an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setDataSyncEnabled](arkts-basicservices-appaccountmanager-i.md#setdatasyncenabled-2)
+> instead.
 
 **Since:** 7
 
@@ -4461,7 +4825,14 @@ appAccountManager.setAppAccountSyncEnable('ZhangSan', true).then(() => {
 setAssociatedData(name: string, key: string, value: string, callback: AsyncCallback<void>): void
 ```
 
-Sets data to be associated with an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1) > instead.
+Sets data to be associated with an application account. This API uses an asynchronous callback to return the
+result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-1)
+> instead.
 
 **Since:** 7
 
@@ -4501,7 +4872,13 @@ appAccountManager.setAssociatedData('ZhangSan', 'k001', 'v001', (err: BusinessEr
 setAssociatedData(name: string, key: string, value: string): Promise<void>
 ```
 
-Sets data to be associated with an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2) > instead.
+Sets data to be associated with an application account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setCustomData](arkts-basicservices-appaccountmanager-i.md#setcustomdata-2)
+> instead.
 
 **Since:** 7
 
@@ -4544,7 +4921,8 @@ appAccountManager.setAssociatedData('ZhangSan', 'k001', 'v001').then(() => {
 setAuthToken(name: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-Sets an authorization token of the specific authentication type for an application account. This API uses an asynchronous callback to return the result.
+Sets an authorization token of the specific authentication type for an application account. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -4595,7 +4973,8 @@ try {
 setAuthToken(name: string, authType: string, token: string): Promise<void>
 ```
 
-Sets an authorization token of the specific authentication type for an application account. This API uses a promise to return the result.
+Sets an authorization token of the specific authentication type for an application account. This API uses a
+promise to return the result.
 
 **Since:** 9
 
@@ -4655,7 +5034,8 @@ setAuthTokenVisibility(
     ): void
 ```
 
-Sets the visibility of an authorization token to an application. This API uses an asynchronous callback to return the result.
+Sets the visibility of an authorization token to an application. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -5084,7 +5464,8 @@ try {
 setDataSyncEnabled(name: string, isEnabled: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets data synchronization for an application account. This API uses an asynchronous callback to return the result.
+Sets data synchronization for an application account. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -5187,7 +5568,14 @@ try {
 setOAuthToken(name: string, authType: string, token: string, callback: AsyncCallback<void>): void
 ```
 
-Sets an authorization token of the specific authentication type for an application account. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-1) > instead.
+Sets an authorization token of the specific authentication type for an application account. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-1)
+> instead.
 
 **Since:** 8
 
@@ -5227,7 +5615,14 @@ appAccountManager.setOAuthToken('LiSi', 'getSocialData', 'xxxx', (err: BusinessE
 setOAuthToken(name: string, authType: string, token: string): Promise<void>
 ```
 
-Sets an authorization token of the specific authentication type for an application account. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-2) > instead.
+Sets an authorization token of the specific authentication type for an application account. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [setAuthToken](arkts-basicservices-appaccountmanager-i.md#setauthtoken-2)
+> instead.
 
 **Since:** 8
 
@@ -5276,7 +5671,14 @@ setOAuthTokenVisibility(
     ): void
 ```
 
-Sets the visibility of an authorization token to an application. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1) > instead.
+Sets the visibility of an authorization token to an application. This API uses an asynchronous callback to return
+the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-1)
+> instead.
 
 **Since:** 8
 
@@ -5318,7 +5720,13 @@ appAccountManager.setOAuthTokenVisibility('LiSi', 'getSocialData', 'com.example.
 setOAuthTokenVisibility(name: string, authType: string, bundleName: string, isVisible: boolean): Promise<void>
 ```
 
-Sets the visibility of an authorization token to an application. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-2) > instead.
+Sets the visibility of an authorization token to an application. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [setAuthTokenVisibility](arkts-basicservices-appaccountmanager-i.md#setauthtokenvisibility-2)
+> instead.
 
 **Since:** 8
 

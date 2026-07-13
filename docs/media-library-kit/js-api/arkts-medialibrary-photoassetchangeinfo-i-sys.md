@@ -9,7 +9,7 @@ Defines the photo asset info.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## albumChangeInfos
@@ -36,7 +36,8 @@ The analysis album change info.
 assetSourceType?: AssetSourceType
 ```
 
-The asset source type. Default value: 0.
+The asset source type.
+Default value: 0.
 
 **Type:** AssetSourceType
 
@@ -86,7 +87,8 @@ Date of the photo or video.
 dateModifiedMs?: number
 ```
 
-The modified time of asset. <br>Unit:milliseconds.
+The modified time of asset.
+<br>Unit:milliseconds.
 
 **Type:** number
 
@@ -168,7 +170,8 @@ Unique ID of the photo or video.
 hiddenTime?: number
 ```
 
-The hidden time of asset. <br>Unit:milliseconds.
+The hidden time of asset.
+<br>Unit:milliseconds.
 
 **Type:** number
 

@@ -1,6 +1,11 @@
 # LayoutManager
 
-Implements a layout manager object. > **NOTE** > > After the text content is changed, you must wait for the layout to be completed before you can obtain the most up- > to-date layout information.
+Implements a layout manager object.
+
+> **NOTE**
+>
+> After the text content is changed, you must wait for the layout to be completed before you can obtain the most up-
+> to-date layout information.
 
 **Since:** 12
 
@@ -26,14 +31,14 @@ Obtains the position of the character nearest to the specified coordinate.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | number | Yes | X coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) |
-| y | number | Yes | Y coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) |
+| x | number | Yes | X coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
+| y | number | Yes | Y coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| PositionWithAffinity | Character position. Returns **undefined** when[LayoutManager](arkts-arkui-layoutmanager-i.md#layoutmanager) is not bound to a component. |
+| PositionWithAffinity | Character position. Returns **undefined** when[LayoutManager](arkts-arkui-layoutmanager-i.md) is not bound to a component. |
 
 ## getCharacterRangeForGlyphRange
 
@@ -41,7 +46,10 @@ Obtains the position of the character nearest to the specified coordinate.
 getCharacterRangeForGlyphRange(glyphRange: TextRange): Array<TextRange> | undefined
 ```
 
-Obtains the character range and the actual glyph range based on the specified glyph range. If a text contains two Chinese characters and five letters, the glyph index range of the text is [0, 7]. A Chinese character occupies three characters, so the corresponding character index range is [0, 11]. If the specified index range is [0, 11], but there are only seven glyphs, the actual glyph index range is [0, 7].
+Obtains the character range and the actual glyph range based on the specified glyph range. If a text contains two
+Chinese characters and five letters, the glyph index range of the text is [0, 7]. A Chinese character occupies
+three characters, so the corresponding character index range is [0, 11]. If the specified index range is [0, 11],
+but there are only seven glyphs, the actual glyph index range is [0, 7].
 
 **Since:** 24
 
@@ -61,7 +69,7 @@ Obtains the character range and the actual glyph range based on the specified gl
 
 | Type | Description |
 | --- | --- |
-| Array&lt;TextRange&gt; | Contains two elements: the first is the character range, and the secondis the actual glyph range. When the returned range is invalid, the element in the range is **-1**. Returns**undefined** when [LayoutManager](arkts-arkui-layoutmanager-i.md#layoutmanager) is not bound to a component. |
+| Array&lt;TextRange&gt; | Contains two elements: the first is the character range, and the secondis the actual glyph range. When the returned range is invalid, the element in the range is **-1**. Returns**undefined** when [LayoutManager](arkts-arkui-layoutmanager-i.md) is not bound to a component. |
 
 ## getGlyphPositionAtCoordinate
 
@@ -83,8 +91,8 @@ Obtains the position of a glyph close to a given coordinate.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| x | number | Yes | X coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) |
-| y | number | Yes | Y coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) |
+| x | number | Yes | X coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
+| y | number | Yes | Y coordinate relative to the component.<br>Unit: [px](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) |
 
 **Return value:**
 
@@ -98,7 +106,10 @@ Obtains the position of a glyph close to a given coordinate.
 getGlyphRangeForCharacterRange(charRange: TextRange): Array<TextRange> | undefined
 ```
 
-Obtains the glyph range and the actual character range based on the specified character range. If the first glyph is a Chinese character, the glyph index range of the character is [0, 1]. A Chinese character occupies three characters, so the corresponding character index range is [0, 3]. If the specified character index range is [0, 1], one third of a Chinese character cannot be parsed, so the actual character index range is [0, 3].
+Obtains the glyph range and the actual character range based on the specified character range. If the first glyph
+is a Chinese character, the glyph index range of the character is [0, 1]. A Chinese character occupies three
+characters, so the corresponding character index range is [0, 3]. If the specified character index range is [0, 1],
+one third of a Chinese character cannot be parsed, so the actual character index range is [0, 3].
 
 **Since:** 24
 
@@ -118,7 +129,7 @@ Obtains the glyph range and the actual character range based on the specified ch
 
 | Type | Description |
 | --- | --- |
-| Array&lt;TextRange&gt; | Contains two elements: the first is the glyph range, and the second isthe actual character range. When the returned range is invalid, the element in the range is **-1**. Returns**undefined** when [LayoutManager](arkts-arkui-layoutmanager-i.md#layoutmanager) is not bound to a component. |
+| Array&lt;TextRange&gt; | Contains two elements: the first is the glyph range, and the second isthe actual character range. When the returned range is invalid, the element in the range is **-1**. Returns**undefined** when [LayoutManager](arkts-arkui-layoutmanager-i.md) is not bound to a component. |
 
 ## getLineCount
 
@@ -148,7 +159,8 @@ Obtains the total number of lines in the component.
 getLineMetrics(lineNumber: number): LineMetrics
 ```
 
-Obtains the information about the specified line, including line metrics, text style information, and font properties.
+Obtains the information about the specified line, including line metrics, text style information, and font
+properties.
 
 **Since:** 12
 
@@ -176,7 +188,8 @@ Obtains the information about the specified line, including line metrics, text s
 getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: RectHeightStyle): Array<TextBox>
 ```
 
-Obtains the drawing area information of the characters or placeholders within any range of the text, based on the specified rectangle width and height styles.
+Obtains the drawing area information of the characters or placeholders within any range of the text, based on the
+specified rectangle width and height styles.
 
 **Since:** 14
 

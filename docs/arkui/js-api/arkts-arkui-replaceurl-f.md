@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { router } from '@ohos.router';
+import { router } from '@kit.ArkUI';
 ```
 
 ## replaceUrl
@@ -12,7 +12,14 @@ import { router } from '@ohos.router';
 function replaceUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one in the application and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 9
 
@@ -70,7 +77,16 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions): Promise<void>
 ```
 
-Replaces the current page with another one in the application and destroys the current page. This API cannot be used to configure page transition effects. To configure page transition effects, use the [Navigation](../../../../ui/arkts-navigation-architecture.md) component. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one in the application and destroys the current page. This API cannot be
+used to configure page transition effects. To configure page transition effects, use the
+[Navigation](../../../../ui/arkts-navigation-architecture.md) component.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 9
 
@@ -120,7 +136,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 })
   .then(() => {
-    console.error(`replaceUrl finish`);
+    console.info(`replaceUrl finish`);
   })
   .catch((err: ESObject) => {
     console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
@@ -135,7 +151,14 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one in the application and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 9
 
@@ -194,7 +217,14 @@ router.replaceUrl({
 function replaceUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Replaces the current page with another one in the application and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one in the application and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 9
 
@@ -233,9 +263,9 @@ Replaces the current page with another one in the application and destroys the c
 import { BusinessError } from '@kit.BasicServicesKit';
 
 class RouterParams {
-  data1:string;
+  data1: string;
 
-  constructor(str:string) {
+  constructor(str: string) {
     this.data1 = str;
   }
 }
@@ -245,7 +275,7 @@ router.replaceUrl({
   params: new RouterParams('message')
 }, router.RouterMode.Standard)
   .then(() => {
-    console.error(`replaceUrl finish`);
+    console.info(`replaceUrl finish`);
   })
   .catch((err: ESObject) => {
     console.error(`replaceUrl failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);

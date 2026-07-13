@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## installSystemAppCertificate
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function installSystemAppCertificate(keystore: Uint8Array, keystorePwd: string): Promise<CMResult>
 ```
 
-Installs the system application credential. This API is called only by the certificate management application. This API uses a promise to return the result.
+Installs the system application credential. This API is called only by the certificate management application. This
+API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -35,7 +36,7 @@ Installs the system application credential. This API is called only by the certi
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **uri** in the[CMResult](arkts-devicecertificate-cmresult-i.md#cmresult) object. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **uri** in the[CMResult](arkts-devicecertificate-cmresult-i.md) object. |
 
 **Error codes:**
 

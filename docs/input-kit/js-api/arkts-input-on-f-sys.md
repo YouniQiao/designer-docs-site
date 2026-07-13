@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { inputMonitor } from '@ohos.multimodalInput.inputMonitor';
+import { inputMonitor } from '@kit.InputKit';
 ```
 
 ## on('touch')
@@ -35,7 +35,7 @@ Listens for global touchscreen input events. This API uses an asynchronous callb
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -96,7 +96,7 @@ Enables listening for global mouse events. This API uses an asynchronous callbac
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied, non-system app called system api.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -134,7 +134,8 @@ struct Index {
 function on(type: 'mouse', rect: display.Rect[], receiver: Callback<MouseEvent>): void
 ```
 
-Enables listening for mouse events. When the mouse pointer moves to the specified rectangular area, a callback is triggered. This API uses an asynchronous callback to return the result.
+Enables listening for mouse events. When the mouse pointer moves to the specified rectangular area, a callback is
+triggered. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -158,7 +159,7 @@ Enables listening for mouse events. When the mouse pointer moves to the specifie
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | SystemAPI permit error.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | SystemAPI permit error.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -584,7 +585,8 @@ struct Index {
 function on(type: 'fingerprint', receiver: Callback<FingerprintEvent>): void
 ```
 
-Enables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the result.
+Enables listening for fingerprint gesture input events. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 12
 
@@ -828,7 +830,8 @@ struct Index {
 function on(type: 'keyPressed', keys: Array<KeyCode>, receiver: Callback<KeyEvent>): void
 ```
 
-Listens for the press and release events of the specified key, which can be the **META_LEFT**, **META_RIGHT**, power, or volume key. This API uses an asynchronous callback to return the result.
+Listens for the press and release events of the specified key, which can be the **META_LEFT**, **META_RIGHT**,
+power, or volume key. This API uses an asynchronous callback to return the result.
 
 **Since:** 15
 

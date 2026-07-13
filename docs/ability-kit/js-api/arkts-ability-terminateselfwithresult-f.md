@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { featureAbility } from '@ohos.ability.featureAbility';
+import { featureAbility } from '@kit.AbilityKit';
 ```
 
 ## terminateSelfWithResult
@@ -12,7 +12,11 @@ import { featureAbility } from '@ohos.ability.featureAbility';
 function terminateSelfWithResult(parameter: AbilityResult, callback: AsyncCallback<void>): void
 ```
 
-Destroys the Page ability while returning the specified result code and data to the caller.
+Terminates this ability. This API uses an asynchronous callback to return the result. If the ability is started by
+calling
+[startAbilityForResult](arkts-ability-startabilityforresult-f.md#startabilityforresult-1)
+, the result is returned to the caller when **terminateSelfWithResult** is called. Otherwise, no result is returned
+to the caller when **terminateSelfWithResult** is called.
 
 **Since:** 7
 
@@ -24,8 +28,8 @@ Destroys the Page ability while returning the specified result code and data to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | AbilityResult | Yes | Indicates the result to return. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Return the result of stopping Ability in the form of callback. |
+| parameter | AbilityResult | Yes | Result returned after the ability is terminated. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
 
 **Example**
 
@@ -72,7 +76,10 @@ featureAbility.terminateSelfWithResult(
 function terminateSelfWithResult(parameter: AbilityResult): Promise<void>
 ```
 
-Destroys the Page ability while returning the specified result code and data to the caller.
+Terminates this ability. This API uses a promise to return the result. If the ability is started by calling
+[startAbilityForResult](arkts-ability-startabilityforresult-f.md#startabilityforresult-1)
+, the result is returned to the caller when **terminateSelfWithResult** is called. Otherwise, no result is returned
+to the caller when **terminateSelfWithResult** is called.
 
 **Since:** 7
 
@@ -84,13 +91,13 @@ Destroys the Page ability while returning the specified result code and data to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| parameter | AbilityResult | Yes | Indicates the result to return. |
+| parameter | AbilityResult | Yes | Result returned after the ability is terminated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | the promise returned by the function. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Example**
 

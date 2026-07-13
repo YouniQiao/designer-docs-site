@@ -1,12 +1,18 @@
 # HapModuleInfo
 
-Hap模块信息，未做特殊说明的属性，均通过 [bundle.getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-3) 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md#hapmoduleinfo)替代。
+Hap模块信息，未做特殊说明的属性，均通过
+[bundle.getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-3)
+获取。
+
+> **说明：**
+>
+> 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md)替代。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** [hapModuleInfo:HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md#hapmoduleinfo)
+**替代接口：** [hapModuleInfo:HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md)
 
 **系统能力：** SystemCapability.BundleManager.BundleFramework
 

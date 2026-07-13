@@ -1,60 +1,12 @@
 # AudioManager
 
-This interface implements audio volume and device management. Before calling any API in AudioManager, you must use [getAudioManager](arkts-audio-getaudiomanager-f.md#getAudioManager-1) to obtain an AudioManager instance.
+音频音量和设备管理。
+
+在使用AudioManager的接口之前，需先通过[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1)获取AudioManager实例。
 
 **起始版本：** 7
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
-## disableSafeMediaVolume
-
-```TypeScript
-disableSafeMediaVolume(): Promise<void>
-```
-
-user disable the safe media volume state.
-
-**起始版本：** 12
-
-**需要权限：** 
-
- ohos.permission.MODIFY_AUDIO_SETTINGS
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioManager.disableSafeMediaVolume().then(() => {
-  console.info('disableSafeMediaVolume success.');
-}).catch((err: BusinessError) => {
-  console.error(`disableSafeMediaVolume fail: ${err.code},${err.message}`);
-});
-
-```
 
 ## getAudioParameter
 
@@ -62,7 +14,13 @@ audioManager.disableSafeMediaVolume().then(() => {
 getAudioParameter(key: string, callback: AsyncCallback<string>): void
 ```
 
-Obtains the value of an audio parameter. This method uses an asynchronous callback to return the query result.
+获取指定音频参数值。使用callback异步回调。
+
+本接口的使用场景为：根据硬件设备的支持能力扩展音频配置。在不同的设备平台上，所支持的音频参数会存在差异。示例代码内使用样例参数，实际支持的音频配置参数见具体设备平台的资料描述。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 11开始废弃。
 
 **起始版本：** 7
 
@@ -74,8 +32,8 @@ Obtains the value of an audio parameter. This method uses an asynchronous callba
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | Key of the audio parameter whose value is to be obtained. |
-| callback | AsyncCallback&lt;string> | 是 | Callback used to return the value of the audio parameter. |
+| key | string | 是 | 待获取的音频参数的键。 |
+| callback | AsyncCallback&lt;string&gt; | 是 | 回调函数。当获取指定音频参数值成功，err为undefined，data为获取到的指定音频参数值；否则为错误对象。 |
 
 ## getAudioParameter
 
@@ -83,7 +41,13 @@ Obtains the value of an audio parameter. This method uses an asynchronous callba
 getAudioParameter(key: string): Promise<string>
 ```
 
-Obtains the value of an audio parameter. This method uses a promise to return the query result.
+获取指定音频参数值。使用Promise异步回调。
+
+本接口的使用场景为：根据硬件设备的支持能力扩展音频配置。在不同的设备平台上，所支持的音频参数会存在差异。示例代码内使用样例参数，实际支持的音频配置参数见具体设备平台的资料描述。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 11开始废弃。
 
 **起始版本：** 7
 
@@ -95,13 +59,13 @@ Obtains the value of an audio parameter. This method uses a promise to return th
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | Key of the audio parameter whose value is to be obtained. |
+| key | string | 是 | 待获取的音频参数的键。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string> | Promise used to return the value of the audio parameter. |
+| Promise&lt;string&gt; | Promise对象，返回获取的音频参数值。 |
 
 ## getAudioScene
 
@@ -109,7 +73,7 @@ Obtains the value of an audio parameter. This method uses a promise to return th
 getAudioScene(callback: AsyncCallback<AudioScene>): void
 ```
 
-Obtains the audio scene. This API uses an asynchronous callback to return the result.
+获取音频场景模式。使用callback异步回调。
 
 **起始版本：** 8
 
@@ -119,7 +83,7 @@ Obtains the audio scene. This API uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioScene> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the audio scene obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;AudioScene&gt; | 是 | 回调函数。当获取音频场景模式成功，err为undefined，data为获取到的音频场景模式；否则为错误对象。 |
 
 ## getAudioScene
 
@@ -127,7 +91,7 @@ Obtains the audio scene. This API uses an asynchronous callback to return the re
 getAudioScene(): Promise<AudioScene>
 ```
 
-Obtains the audio scene. This API uses a promise to return the result.
+获取音频场景模式。使用Promise异步回调。
 
 **起始版本：** 8
 
@@ -137,7 +101,7 @@ Obtains the audio scene. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioScene> | Promise used to return the audio scene. |
+| Promise&lt;AudioScene&gt; | Promise对象，返回音频场景模式。 |
 
 ## getAudioSceneSync
 
@@ -145,7 +109,7 @@ Obtains the audio scene. This API uses a promise to return the result.
 getAudioSceneSync(): AudioScene
 ```
 
-Obtains the audio scene. This API returns the result synchronously.
+获取音频场景模式。同步返回结果。
 
 **起始版本：** 10
 
@@ -155,33 +119,7 @@ Obtains the audio scene. This API returns the result synchronously.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioScene | Audio scene. |
-
-## getCollaborativeManager
-
-```TypeScript
-getCollaborativeManager(): AudioCollaborativeManager
-```
-
-Obtains a collaborative playback management instance.
-
-**起始版本：** 20
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| AudioCollaborativeManager | Returns a collaborative playback management instance. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not system App. |
+| AudioScene | 音频场景模式。 |
 
 ## getDebuggingManager
 
@@ -189,7 +127,7 @@ Obtains a collaborative playback management instance.
 getDebuggingManager(): AudioDebuggingManager
 ```
 
-Obtains an AudioDebuggingManager instance. <p><strong>NOTE</strong>: The {@link #AudioDebuggingManager} instance is a singleton. </p>
+获取音频调试管理器实例。该实例为单例，获取后可重复使用。
 
 **起始版本：** 26.0.0
 
@@ -201,7 +139,7 @@ Obtains an AudioDebuggingManager instance. <p><strong>NOTE</strong>: The {@link 
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioDebuggingManager | this {@link #AudioDebuggingManager} object. |
+| AudioDebuggingManager | 返回AudioDebuggingManager实例。 |
 
 ## getDeviceEnhanceManager
 
@@ -209,7 +147,7 @@ Obtains an AudioDebuggingManager instance. <p><strong>NOTE</strong>: The {@link 
 getDeviceEnhanceManager(): AudioDeviceEnhanceManager
 ```
 
-Obtains a device enhancement manager instance.
+获取音频设备增强管理器实例。
 
 **起始版本：** 26.0.0
 
@@ -221,7 +159,7 @@ Obtains a device enhancement manager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioDeviceEnhanceManager | Returns an instance of audio device enhancement manager. |
+| AudioDeviceEnhanceManager | 返回一个AudioDeviceEnhanceManager实例。 |
 
 ## getDevices
 
@@ -229,13 +167,13 @@ Obtains a device enhancement manager instance.
 getDevices(deviceFlag: DeviceFlag, callback: AsyncCallback<AudioDeviceDescriptors>): void
 ```
 
-Obtains the audio devices with a specific flag. This API uses an asynchronous callback to return the result.
+获取音频设备列表。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#getDevices
+**替代接口：** getDevices
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -243,8 +181,8 @@ Obtains the audio devices with a specific flag. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceFlag | DeviceFlag | 是 | Audio device flag. |
-| callback | AsyncCallback&lt;AudioDeviceDescriptors> | 是 | Callback used to return the result. If the operation  is successful, err is undefined and data is the audio devices obtained; otherwise, err is an  error object. |
+| deviceFlag | DeviceFlag | 是 | 音频设备类型。 |
+| callback | AsyncCallback&lt;AudioDeviceDescriptors&gt; | 是 | 回调函数。当获取音频设备列表成功，err为undefined，data为获取到的音频设备列表；否则为错误对象。 |
 
 ## getDevices
 
@@ -252,13 +190,13 @@ Obtains the audio devices with a specific flag. This API uses an asynchronous ca
 getDevices(deviceFlag: DeviceFlag): Promise<AudioDeviceDescriptors>
 ```
 
-Obtains the audio devices with a specific flag. This API uses a promise to return the result.
+获取音频设备列表。使用Promise异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#getDevices
+**替代接口：** getDevices
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -266,97 +204,13 @@ Obtains the audio devices with a specific flag. This API uses a promise to retur
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceFlag | DeviceFlag | 是 | Audio device flag. |
+| deviceFlag | DeviceFlag | 是 | 音频设备类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioDeviceDescriptors> | Promise used to return the device list. |
-
-## getEffectManager
-
-```TypeScript
-getEffectManager(): AudioEffectManager
-```
-
-Obtains an {@link AudioEffectManager} instance.
-
-**起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| AudioEffectManager | AudioEffectManager instance. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not system App. |
-
-**示例：**
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-
-let audioEffectManager: audio.AudioEffectManager = audioManager.getEffectManager();
-
-```
-
-## getExtraParameters
-
-```TypeScript
-getExtraParameters(mainKey: string, subKeys?: Array<string>): Promise<Record<string, string>>
-```
-
-Obtains the values of a certain key. This method uses a promise to return the query result.
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mainKey | string | 是 | Main key of the audio parameters to get. |
-| subKeys | Array&lt;string> | 否 | Sub keys of the audio parameters to get. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;Record&lt;string, string>> | Promise used to return the key-value pairs. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not system App. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-let subKeys: Array<String> = ['key_example'];
-audioManager.getExtraParameters('key_example', subKeys).then((value: Record<string, string>) => {
-  console.info(`Promise returned to indicate that the value of the audio extra parameters is obtained ${value}.`);
-}).catch((err: BusinessError) => {
-  console.error(`Failed to get the audio extra parameters ${err}`);
-});
-
-```
+| Promise&lt;AudioDeviceDescriptors&gt; | Promise对象，返回设备列表。 |
 
 ## getMaxVolume
 
@@ -364,13 +218,17 @@ audioManager.getExtraParameters('key_example', subKeys).then((value: Record<stri
 getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the maximum volume allowed for a stream. This API uses an asynchronous callback to return the result.
+获取指定流的最大音量等级。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getMaxVolume
+**替代接口：** getMaxVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -378,8 +236,8 @@ Obtains the maximum volume allowed for a stream. This API uses an asynchronous c
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the maximum stream volume obtained; otherwise, err is an error  object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的最大音量成功，err为undefined，data为获取到的指定流的最大音量等级；否则为错误对象。 |
 
 ## getMaxVolume
 
@@ -387,13 +245,17 @@ Obtains the maximum volume allowed for a stream. This API uses an asynchronous c
 getMaxVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the maximum volume allowed for a stream. This API uses a promise to return the result.
+获取指定流的最大音量等级。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getMaxVolume
+**替代接口：** getMaxVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -401,13 +263,13 @@ Obtains the maximum volume allowed for a stream. This API uses a promise to retu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the maximum volume. |
+| Promise&lt;number&gt; | Promise对象，返回最大音量等级。 |
 
 ## getMinVolume
 
@@ -415,13 +277,17 @@ Obtains the maximum volume allowed for a stream. This API uses a promise to retu
 getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the minimum volume allowed for a stream. This API uses an asynchronous callback to return the result.
+获取指定流的最小音量等级。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getMinVolume
+**替代接口：** getMinVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -429,8 +295,8 @@ Obtains the minimum volume allowed for a stream. This API uses an asynchronous c
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum stream volume obtained; otherwise, err is an error  object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的最小音量成功，err为undefined，data为获取到的指定流的最小音量等级；否则为错误对象。 |
 
 ## getMinVolume
 
@@ -438,13 +304,17 @@ Obtains the minimum volume allowed for a stream. This API uses an asynchronous c
 getMinVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the minimum volume allowed for a stream. This API uses a promise to return the result.
+获取指定流的最小音量等级。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getMinVolume
+**替代接口：** getMinVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -452,41 +322,13 @@ Obtains the minimum volume allowed for a stream. This API uses a promise to retu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the minimum volume. |
-
-## getRecordingManager
-
-```TypeScript
-getRecordingManager(): AudioRecordingManager
-```
-
-Obtains a recording manager instance. Provides recording strategy management, including collaborative recording and recording control capabilities.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| AudioRecordingManager | Returns an instance of audio record manager. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Caller is not a system application. |
+| Promise&lt;number&gt; | Promise对象，返回最小音量等级。 |
 
 ## getRingerMode
 
@@ -494,13 +336,13 @@ Obtains a recording manager instance. Provides recording strategy management, in
 getRingerMode(callback: AsyncCallback<AudioRingMode>): void
 ```
 
-Obtains the ringer mode. This API uses an asynchronous callback to return the result.
+获取铃声模式。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getRingerMode
+**替代接口：** getRingerMode
 
 **系统能力：** SystemCapability.Multimedia.Audio.Communication
 
@@ -508,7 +350,7 @@ Obtains the ringer mode. This API uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRingMode> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the ringer mode obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;AudioRingMode&gt; | 是 | 回调函数。当获取铃声模式成功，err为undefined，data为获取到的铃声模式；否则为错误对象。 |
 
 ## getRingerMode
 
@@ -516,13 +358,13 @@ Obtains the ringer mode. This API uses an asynchronous callback to return the re
 getRingerMode(): Promise<AudioRingMode>
 ```
 
-Obtains the ringer mode. This API uses a promise to return the result.
+获取铃声模式。使用Promise异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getRingerMode
+**替代接口：** getRingerMode
 
 **系统能力：** SystemCapability.Multimedia.Audio.Communication
 
@@ -530,7 +372,7 @@ Obtains the ringer mode. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioRingMode> | Promise used to return the ringer mode. |
+| Promise&lt;AudioRingMode&gt; | Promise对象，返回系统的铃声模式。 |
 
 ## getRoutingManager
 
@@ -538,7 +380,7 @@ Obtains the ringer mode. This API uses a promise to return the result.
 getRoutingManager(): AudioRoutingManager
 ```
 
-Obtains an AudioRoutingManager instance.
+获取音频路由管理器。
 
 **起始版本：** 9
 
@@ -548,7 +390,7 @@ Obtains an AudioRoutingManager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioRoutingManager | AudioRoutingManager instance. |
+| AudioRoutingManager | AudioRoutingManager实例。 |
 
 ## getSessionManager
 
@@ -556,11 +398,11 @@ Obtains an AudioRoutingManager instance.
 getSessionManager(): AudioSessionManager
 ```
 
-Obtains an AudioSessionManager instance.
+获取音频会话管理器。
 
 **起始版本：** 12
 
-**原子化服务API：** 从API version 26.0.0开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -568,7 +410,7 @@ Obtains an AudioSessionManager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioSessionManager | AudioSessionManager instance. |
+| AudioSessionManager | AudioSessionManager实例。 |
 
 ## getSpatializationManager
 
@@ -576,7 +418,7 @@ Obtains an AudioSessionManager instance.
 getSpatializationManager(): AudioSpatializationManager
 ```
 
-Obtains an AudioSpatializationManager instance.
+获取空间音频管理器。
 
 **起始版本：** 18
 
@@ -586,7 +428,7 @@ Obtains an AudioSpatializationManager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioSpatializationManager | AudioSpatializationManager instance. |
+| AudioSpatializationManager | AudioSpatializationManager实例。 |
 
 ## getStreamManager
 
@@ -594,7 +436,7 @@ Obtains an AudioSpatializationManager instance.
 getStreamManager(): AudioStreamManager
 ```
 
-Obtains an AudioStreamManager instance.
+获取音频流管理器。
 
 **起始版本：** 9
 
@@ -604,7 +446,7 @@ Obtains an AudioStreamManager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioStreamManager | AudioStreamManager instance. |
+| AudioStreamManager | AudioStreamManager实例。 |
 
 ## getVolume
 
@@ -612,13 +454,17 @@ Obtains an AudioStreamManager instance.
 getVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the volume of a stream. This API uses an asynchronous callback to return the result.
+获取指定流的音量等级。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getVolume
+**替代接口：** getVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -626,8 +472,8 @@ Obtains the volume of a stream. This API uses an asynchronous callback to return
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the stream volume obtained; otherwise, err is an error object.  The volume range of a specified stream can be obtained by calling  [getMinVolume]audio.AudioManager.getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  and  [getMaxVolume]audio.AudioManager.getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  . |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的音量成功，err为undefined，data为获取到的指定流的音量等级；否则为错误对象。指定流的音量等级范围可通过[getMinVolume](arkts-audio-audiomanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiomanager-i.md#getmaxvolume-1)获取。 |
 
 ## getVolume
 
@@ -635,13 +481,17 @@ Obtains the volume of a stream. This API uses an asynchronous callback to return
 getVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the volume of a stream. This API uses a promise to return the result.
+获取指定流的音量等级。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#getVolume
+**替代接口：** getVolume
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -649,13 +499,13 @@ Obtains the volume of a stream. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the volume of the stream. The volume range of a specified  stream can be obtained by calling  [getMinVolume]audio.AudioManager.getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  and  [getMaxVolume]audio.AudioManager.getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  . |
+| Promise&lt;number&gt; | Promise对象，返回指定流的音量等级。指定流的音量等级范围可通过[getMinVolume](arkts-audio-audiomanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiomanager-i.md#getmaxvolume-1)获取。 |
 
 ## getVolumeManager
 
@@ -663,11 +513,11 @@ Obtains the volume of a stream. This API uses a promise to return the result.
 getVolumeManager(): AudioVolumeManager
 ```
 
-Obtains an AudioVolumeManager instance.
+获取音频音量管理器。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -675,7 +525,7 @@ Obtains an AudioVolumeManager instance.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioVolumeManager | AudioVolumeManager instance. |
+| AudioVolumeManager | AudioVolumeManager实例。 |
 
 ## isActive
 
@@ -683,13 +533,17 @@ Obtains an AudioVolumeManager instance.
 isActive(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a stream is active. This API uses an asynchronous callback to return the result.
+获取指定音量流的活跃状态。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioStreamManager#isActive
+**替代接口：** isActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -697,8 +551,8 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the stream is active or false if not active;  otherwise, err is an error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取指定音量流的活跃状态成功，err为undefined，data为true表示活跃，false表示不活跃；否则为错误对象。 |
 
 ## isActive
 
@@ -706,13 +560,17 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 isActive(volumeType: AudioVolumeType): Promise<boolean>
 ```
 
-Checks whether a stream is active. This API uses a promise to return the result.
+获取指定音量流的活跃状态。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioStreamManager#isActive
+**替代接口：** isActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -720,13 +578,13 @@ Checks whether a stream is active. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the stream is active.  true if active, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示流状态为活跃；返回false表示流状态不活跃。 |
 
 ## isDeviceActive
 
@@ -734,13 +592,13 @@ Checks whether a stream is active. This API uses a promise to return the result.
 isDeviceActive(deviceType: ActiveDeviceType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a device is active. This API uses an asynchronous callback to return the result.
+获取指定设备的激活状态。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#isCommunicationDeviceActive
+**替代接口：** isCommunicationDeviceActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -748,8 +606,8 @@ Checks whether a device is active. This API uses an asynchronous callback to ret
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | ActiveDeviceType | 是 | Active audio device type. |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the device is active or false if not active;  otherwise, err is an error object. |
+| deviceType | ActiveDeviceType | 是 | 活跃音频设备类型。 |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取指定设备的激活状态成功，err为undefined，data为true表示激活，false表示未激活；否则为错误对象。 |
 
 ## isDeviceActive
 
@@ -757,13 +615,13 @@ Checks whether a device is active. This API uses an asynchronous callback to ret
 isDeviceActive(deviceType: ActiveDeviceType): Promise<boolean>
 ```
 
-Checks whether a device is active. This API uses a promise to return the result.
+获取指定设备的激活状态。使用Promise异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#isCommunicationDeviceActive
+**替代接口：** isCommunicationDeviceActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -771,13 +629,13 @@ Checks whether a device is active. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | ActiveDeviceType | 是 | Active audio device type. |
+| deviceType | ActiveDeviceType | 是 | 活跃音频设备类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the device is active.  true if active, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示设备已激活；返回false表示设备未激活。 |
 
 ## isMicrophoneMute
 
@@ -785,17 +643,15 @@ Checks whether a device is active. This API uses a promise to return the result.
 isMicrophoneMute(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the microphone is muted. This API uses an asynchronous callback to return the result.
+获取麦克风静音状态。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#isMicrophoneMute
+**替代接口：** isMicrophoneMute
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -803,7 +659,7 @@ Checks whether the microphone is muted. This API uses an asynchronous callback t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the microphone is muted or false if not muted;  otherwise, err is an error object. |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取麦克风静音状态成功，err为undefined，data为true表示静音，false表示非静音；否则为错误对象。 |
 
 ## isMicrophoneMute
 
@@ -811,17 +667,15 @@ Checks whether the microphone is muted. This API uses an asynchronous callback t
 isMicrophoneMute(): Promise<boolean>
 ```
 
-Checks whether the microphone is muted. This API uses a promise to return the result.
+获取麦克风静音状态。使用Promise异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#isMicrophoneMute
+**替代接口：** isMicrophoneMute
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -829,7 +683,7 @@ Checks whether the microphone is muted. This API uses a promise to return the re
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the microphone is muted.  true if muted, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示麦克风被静音；返回false表示麦克风未被静音。 |
 
 ## isMute
 
@@ -837,13 +691,17 @@ Checks whether the microphone is muted. This API uses a promise to return the re
 isMute(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a stream is muted. This API uses an asynchronous callback to return the result.
+获取指定音量流的静音状态。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#isMute
+**替代接口：** isMute
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -851,8 +709,8 @@ Checks whether a stream is muted. This API uses an asynchronous callback to retu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the stream is muted or false if not muted; otherwise  , err is an error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取指定音量流的静音状态成功，err为undefined，data为true表示静音，false表示非静音；否则为错误对象。 |
 
 ## isMute
 
@@ -860,13 +718,17 @@ Checks whether a stream is muted. This API uses an asynchronous callback to retu
 isMute(volumeType: AudioVolumeType): Promise<boolean>
 ```
 
-Checks whether a stream is muted. This API uses a promise to return the result.
+获取指定音量流的静音状态。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。在API version 9-19
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#isMute
+**替代接口：** isMute
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -874,13 +736,13 @@ Checks whether a stream is muted. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the stream is muted. true  if muted, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示静音；返回false表示非静音。 |
 
 ## mute
 
@@ -888,13 +750,22 @@ Checks whether a stream is muted. This API uses a promise to return the result.
 mute(volumeType: AudioVolumeType, mute: boolean, callback: AsyncCallback<void>): void
 ```
 
-Mutes a volume type. This method uses an asynchronous callback to return the result.
+设置指定音量流静音。使用callback异步回调。
+
+当该音量流可设置的最小音量不能为0时，不支持静音操作。例如：闹钟和通话。
+
+> **说明：**
+>
+> - 从API version 7开始支持，从API version 9开始废弃。
+>
+> - 应用无法直接静音流音量，建议通过系统音量面板组件进行静音。具体样例和介绍请参考API文档
+> [@ohos.multimedia.avVolumePanel (音量面板)](arkts-multimedia-avvolumepanel.md)。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.avVolumePanel.AVVolumePanel
+**替代接口：** AVVolumePanel
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -902,9 +773,9 @@ Mutes a volume type. This method uses an asynchronous callback to return the res
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the volume type, and false means the opposite. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| mute | boolean | 是 | 是否设置指定音量流为静音状态。true表示静音，false表示非静音。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置指定音量流静音成功，err为undefined，否则为错误对象。 |
 
 ## mute
 
@@ -912,13 +783,22 @@ Mutes a volume type. This method uses an asynchronous callback to return the res
 mute(volumeType: AudioVolumeType, mute: boolean): Promise<void>
 ```
 
-Mutes a volume type. This method uses a promise to return the result.
+设置指定音量流静音。使用Promise异步回调。
+
+当该音量流可设置的最小音量不能为0时，不支持静音操作。例如：闹钟和通话。
+
+> **说明：**
+>
+> - 从API version 7开始支持，从API version 9开始废弃。
+>
+> - 应用无法直接静音流音量，建议通过系统音量面板组件进行静音。具体样例和介绍请参考API文档
+> [@ohos.multimedia.avVolumePanel (音量面板)](arkts-multimedia-avvolumepanel.md)。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.avVolumePanel.AVVolumePanel
+**替代接口：** AVVolumePanel
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -926,14 +806,14 @@ Mutes a volume type. This method uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the volume type, and false means the opposite. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| mute | boolean | 是 | 是否设置指定音量流为静音状态。true表示静音，false表示非静音。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## off('audioSceneChange')
 
@@ -941,7 +821,7 @@ Mutes a volume type. This method uses a promise to return the result.
 off(type: 'audioSceneChange', callback?: Callback<AudioScene>): void
 ```
 
-Unsubscribes from the audio scene change event. This API uses an asynchronous callback to return the result.
+取消监听音频场景变化事件。使用callback异步回调。
 
 **起始版本：** 20
 
@@ -951,8 +831,8 @@ Unsubscribes from the audio scene change event. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioSceneChange' | 是 | Event type. The event 'audioSceneChange' is triggered when the audio  scene is changed. |
-| callback | Callback&lt;AudioScene> | 否 |  |
+| type | 'audioSceneChange' | 是 | 事件回调类型，支持的事件为'audioSceneChange'，当取消监听当前音频场景变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioScene&gt; | 否 | 回调函数，返回当前音频场景模式。 |
 
 ## off('deviceChange')
 
@@ -960,13 +840,13 @@ Unsubscribes from the audio scene change event. This API uses an asynchronous ca
 off(type: 'deviceChange', callback?: Callback<DeviceChangeAction>): void
 ```
 
-Unsubscribes from the audio device change event. This API uses an asynchronous callback to return the result.
+取消监听音频设备连接变化事件。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#event:deviceChange
+**替代接口：** event:deviceChange
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -974,8 +854,8 @@ Unsubscribes from the audio device change event. This API uses an asynchronous c
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'deviceChange' | 是 | Event type. The event 'deviceChange' is triggered when the connection status  of an audio device is changed. |
-| callback | Callback&lt;DeviceChangeAction> | 否 | Callback used to return the device change details. |
+| type | 'deviceChange' | 是 | 事件回调类型，支持的事件为'deviceChange'，当取消监听音频设备连接变化事件时，触发该事件。 |
+| callback | Callback&lt;DeviceChangeAction&gt; | 否 | 回调函数，返回设备更新详情。 |
 
 ## off('interrupt')
 
@@ -983,13 +863,13 @@ Unsubscribes from the audio device change event. This API uses an asynchronous c
 off(type: 'interrupt', interrupt: AudioInterrupt, callback?: Callback<InterruptAction>): void
 ```
 
-Unsubscribes from the audio interruption event. This API uses an asynchronous callback to return the result.
+取消监听音频打断事件。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#event:audioInterrupt
+**替代接口：** event:audioInterrupt
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -997,97 +877,9 @@ Unsubscribes from the audio interruption event. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'interrupt' | 是 | Event type. The event 'interrupt' is triggered when the audio focus is changed. |
-| interrupt | AudioInterrupt | 是 | Audio interruption event type. |
-| callback | Callback&lt;InterruptAction> | 否 | Callback used to return the event information. |
-
-## offAudioSceneChange
-
-```TypeScript
-offAudioSceneChange(callback?: Callback<AudioScene>): void
-```
-
-Unsubscribes to audio scene change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Communication
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioScene> | 否 |  |
-
-## on('volumeChange')
-
-```TypeScript
-on(type: 'volumeChange', callback: Callback<VolumeEvent>): void
-```
-
-Listens for system volume change events. This method uses a callback to get volume change events.
-
-**起始版本：** 8
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#event:volumeChange
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| type | 'volumeChange' | 是 | Type of the event to listen for. Only the volumeChange event is supported. |
-| callback | Callback&lt;VolumeEvent> | 是 | Callback used to get the system volume change event. |
-
-**示例：**
-
-```TypeScript
-audioManager.on('volumeChange', (volumeEvent: audio.VolumeEvent) => {
-  console.info(`VolumeType of stream: ${volumeEvent.volumeType} `);
-  console.info(`Volume level: ${volumeEvent.volume} `);
-  console.info(`Whether to updateUI: ${volumeEvent.updateUi} `);
-});
-
-```
-
-## on('ringerModeChange')
-
-```TypeScript
-on(type: 'ringerModeChange', callback: Callback<AudioRingMode>): void
-```
-
-Listens for ringer mode change events. This method uses a callback to get ringer mode changes.
-
-**起始版本：** 8
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.audio.AudioVolumeGroupManager#event:ringerModeChange
-
-**系统能力：** SystemCapability.Multimedia.Audio.Communication
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| type | 'ringerModeChange' | 是 | Type of the event to listen for. Only the ringerModeChange event is  supported. |
-| callback | Callback&lt;AudioRingMode> | 是 | Callback used to get the updated ringer mode. |
-
-**示例：**
-
-```TypeScript
-audioManager.on('ringerModeChange', (ringerMode: audio.AudioRingMode) => {
-  console.info(`Updated ringermode: ${ringerMode}`);
-});
-
-```
+| type | 'interrupt' | 是 | 事件回调类型，支持的事件为'interrupt'，当取消监听音频打断事件时，触发该事件。 |
+| interrupt | AudioInterrupt | 是 | 音频打断事件类型的参数。 |
+| callback | Callback&lt;InterruptAction&gt; | 否 | 回调函数，返回打断事件信息。 |
 
 ## on('audioSceneChange')
 
@@ -1095,7 +887,7 @@ audioManager.on('ringerModeChange', (ringerMode: audio.AudioRingMode) => {
 on(type: 'audioSceneChange', callback: Callback<AudioScene>): void
 ```
 
-Subscribes to the audio scene change event. This API uses an asynchronous callback to return the result.
+监听音频场景变化事件。使用callback异步回调。
 
 **起始版本：** 20
 
@@ -1105,8 +897,8 @@ Subscribes to the audio scene change event. This API uses an asynchronous callba
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioSceneChange' | 是 | Event type. The event 'audioSceneChange' is triggered when the audio  scene is changed. |
-| callback | Callback&lt;AudioScene> | 是 | Callback used to return the current audio scene. |
+| type | 'audioSceneChange' | 是 | 事件回调类型，支持的事件为'audioSceneChange'，当音频场景模式发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioScene&gt; | 是 | 回调函数，返回当前音频场景模式。 |
 
 ## on('deviceChange')
 
@@ -1114,13 +906,13 @@ Subscribes to the audio scene change event. This API uses an asynchronous callba
 on(type: 'deviceChange', callback: Callback<DeviceChangeAction>): void
 ```
 
-Subscribes to the event indicating that the connection status of an audio device is changed. This API uses an asynchronous callback to return the result.
+监听音频设备连接变化事件（当音频设备连接状态发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#event:deviceChange
+**替代接口：** event:deviceChange
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -1128,8 +920,8 @@ Subscribes to the event indicating that the connection status of an audio device
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'deviceChange' | 是 | Event type. The event 'deviceChange' is triggered when the connection status  of an audio device is changed. |
-| callback | Callback&lt;DeviceChangeAction> | 是 | Callback used to return the device change details. |
+| type | 'deviceChange' | 是 | 事件回调类型，支持的事件为'deviceChange'，当音频设备连接状态发生变化时，触发该事件。 |
+| callback | Callback&lt;DeviceChangeAction&gt; | 是 | 回调函数，返回设备更新详情。 |
 
 ## on('interrupt')
 
@@ -1137,13 +929,16 @@ Subscribes to the event indicating that the connection status of an audio device
 on(type: 'interrupt', interrupt: AudioInterrupt, callback: Callback<InterruptAction>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. Same as [on('audioInterrupt')](arkts-audio-audiorenderer-i.md#on) , this API is used to listen for focus changes. However, this API is used in scenarios without audio streams (no AudioRenderer instance is created), such as frequency modulation (FM) and voice wakeup.
+监听音频打断事件（当音频焦点发生变化时触发）。使用callback异步回调。
+
+与[on('audioInterrupt')](arkts-audio-audiorenderer-i.md#on-1)
+作用一致，均用于监听焦点变化。为无音频流的场景（未曾创建AudioRenderer对象），比如FM、语音唤醒等提供焦点变化监听功能。
 
 **起始版本：** 7
 
 **废弃版本：** 11
 
-**替代接口：** ohos.multimedia.audio.AudioRenderer#event:audioInterrupt
+**替代接口：** event:audioInterrupt
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -1151,27 +946,9 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'interrupt' | 是 | Event type. The event 'interrupt' is triggered when the audio focus is changed. |
-| interrupt | AudioInterrupt | 是 | Audio interruption event type. |
-| callback | Callback&lt;InterruptAction> | 是 | Callback used to return the event information. |
-
-## onAudioSceneChange
-
-```TypeScript
-onAudioSceneChange(callback: Callback<AudioScene>): void
-```
-
-Subscribes to audio scene change events. When system changes communication scene status, registered clients will receive the callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Communication
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioScene> | 是 | Callback used to obtain the latest audio scene. |
+| type | 'interrupt' | 是 | 事件回调类型，支持的事件为'interrupt'，当音频焦点状态发生变化时，触发该事件。 |
+| interrupt | AudioInterrupt | 是 | 音频打断事件类型的参数。 |
+| callback | Callback&lt;InterruptAction&gt; | 是 | 回调函数，返回打断事件信息。 |
 
 ## setAudioParameter
 
@@ -1179,15 +956,19 @@ Subscribes to audio scene change events. When system changes communication scene
 setAudioParameter(key: string, value: string, callback: AsyncCallback<void>): void
 ```
 
-Sets an audio parameter. This method uses an asynchronous callback to return the result.
+音频参数设置。使用callback异步回调。
+
+接口根据硬件设备的支持能力扩展音频配置。支持的参数与产品和设备强相关，非通用参数，示例代码内使用样例参数。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 11开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 11
 
-**需要权限：** 
-
- ohos.permission.MODIFY_AUDIO_SETTINGS
+**需要权限：** ohos.permission.MODIFY_AUDIO_SETTINGS
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -1195,9 +976,9 @@ Sets an audio parameter. This method uses an asynchronous callback to return the
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | Key of the audio parameter to set. |
-| value | string | 是 | Value of the audio parameter to set. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| key | string | 是 | 被设置的音频参数的键。 |
+| value | string | 是 | 被设置的音频参数的值。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当音频参数设置成功，err为undefined，否则为错误对象。 |
 
 ## setAudioParameter
 
@@ -1205,15 +986,19 @@ Sets an audio parameter. This method uses an asynchronous callback to return the
 setAudioParameter(key: string, value: string): Promise<void>
 ```
 
-Sets an audio parameter. This method uses a promise to return the result.
+音频参数设置。使用Promise异步回调。
+
+接口根据硬件设备的支持能力扩展音频配置。支持的参数与产品和设备强相关，非通用参数，示例代码内使用样例参数。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 11开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 11
 
-**需要权限：** 
-
- ohos.permission.MODIFY_AUDIO_SETTINGS
+**需要权限：** ohos.permission.MODIFY_AUDIO_SETTINGS
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -1221,89 +1006,14 @@ Sets an audio parameter. This method uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | string | 是 | Key of the audio parameter to set. |
-| value | string | 是 | Value of the audio parameter to set. |
+| key | string | 是 | 被设置的音频参数的键。 |
+| value | string | 是 | 被设置的音频参数的值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-## setAudioScene
-
-```TypeScript
-setAudioScene(scene: AudioScene, callback: AsyncCallback<void>): void
-```
-
-Sets the audio scene mode to change audio strategies. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 8
-
-**系统能力：** SystemCapability.Multimedia.Audio.Communication
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| scene | AudioScene | 是 | Audio scene mode. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioManager.setAudioScene(audio.AudioScene.AUDIO_SCENE_PHONE_CALL, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to set the audio scene mode. ${err}`);
-    return;
-  }
-  console.info('Callback invoked to indicate a successful setting of the audio scene mode.');
-});
-
-```
-
-## setAudioScene
-
-```TypeScript
-setAudioScene(scene: AudioScene): Promise<void>
-```
-
-Sets the audio scene mode to change audio strategies. This method uses a promise to return the result.
-
-**起始版本：** 8
-
-**系统能力：** SystemCapability.Multimedia.Audio.Communication
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| scene | AudioScene | 是 | Audio scene mode. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioManager.setAudioScene(audio.AudioScene.AUDIO_SCENE_PHONE_CALL).then(() => {
-  console.info('Promise returned to indicate a successful setting of the audio scene mode.');
-}).catch((err: BusinessError) => {
-  console.error(`Failed to set the audio scene mode ${err}`);
-});
-
-```
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setDeviceActive
 
@@ -1311,13 +1021,13 @@ audioManager.setAudioScene(audio.AudioScene.AUDIO_SCENE_PHONE_CALL).then(() => {
 setDeviceActive(deviceType: ActiveDeviceType, active: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets a device to the active state. This API uses an asynchronous callback to return the result.
+设置设备激活状态。使用callback异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#setCommunicationDevice
+**替代接口：** setCommunicationDevice
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -1325,9 +1035,9 @@ Sets a device to the active state. This API uses an asynchronous callback to ret
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | ActiveDeviceType | 是 | Active audio device type. |
-| active | boolean | 是 | Active state to set. true to set the device to the active state, false  otherwise. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| deviceType | ActiveDeviceType | 是 | 活跃音频设备类型。 |
+| active | boolean | 是 | 是否设置设备为激活状态。true表示已激活，false表示未激活。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置设备激活状态成功，err为undefined，否则为错误对象。 |
 
 ## setDeviceActive
 
@@ -1335,13 +1045,13 @@ Sets a device to the active state. This API uses an asynchronous callback to ret
 setDeviceActive(deviceType: ActiveDeviceType, active: boolean): Promise<void>
 ```
 
-Sets a device to the active state. This API uses a promise to return the result.
+设置设备激活状态。使用Promise异步回调。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.audio.AudioRoutingManager#setCommunicationDevice
+**替代接口：** setCommunicationDevice
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -1349,72 +1059,14 @@ Sets a device to the active state. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| deviceType | ActiveDeviceType | 是 | Active audio device type. |
-| active | boolean | 是 | Active state to set. true to set the device to the active state, false  otherwise. |
+| deviceType | ActiveDeviceType | 是 | 活跃音频设备类型。 |
+| active | boolean | 是 | 是否设置设备为激活状态。true表示已激活，false表示未激活。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
-
-## setExtraParameters
-
-```TypeScript
-setExtraParameters(mainKey: string, kvpairs: Record<string, string>): Promise<void>
-```
-
-Sets extra audio parameters. This method uses a promise to return the result.
-
-**起始版本：** 11
-
-**需要权限：** 
-
- ohos.permission.MODIFY_AUDIO_SETTINGS
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mainKey | string | 是 | Main key of the audio parameters to set. |
-| kvpairs | Record&lt;string, string> | 是 | Key-value pairs with subkeys and values to set. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-let kvpairs = {} as Record<string, string>;
-kvpairs = {
-  'key_example': 'value_example'
-};
-
-audioManager.setExtraParameters('key_example', kvpairs).then(() => {
-  console.info('Promise returned to indicate a successful setting of the extra parameters.');
-}).catch((err: BusinessError) => {
-  console.error(`Failed to set the audio extra parameters ${err}`);
-});
-
-```
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setMicrophoneMute
 
@@ -1422,15 +1074,17 @@ audioManager.setExtraParameters('key_example', kvpairs).then(() => {
 setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 ```
 
-Mutes or unmutes the microphone. This method uses an asynchronous callback to return the result.
+设置麦克风静音状态。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -1438,8 +1092,8 @@ Mutes or unmutes the microphone. This method uses an asynchronous callback to re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| mute | boolean | 是 | 是否设置麦克风为静音状态。true表示静音，false表示非静音。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置麦克风静音状态成功，err为undefined，否则为错误对象。 |
 
 ## setMicrophoneMute
 
@@ -1447,15 +1101,17 @@ Mutes or unmutes the microphone. This method uses an asynchronous callback to re
 setMicrophoneMute(mute: boolean): Promise<void>
 ```
 
-Mutes or unmutes the microphone. This method uses a promise to return the result.
+设置麦克风静音状态。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Device
 
@@ -1463,13 +1119,13 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
+| mute | boolean | 是 | 是否设置麦克风为静音状态。true表示静音，false表示非静音。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setRingerMode
 
@@ -1477,15 +1133,17 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 setRingerMode(mode: AudioRingMode, callback: AsyncCallback<void>): void
 ```
 
-Sets the ringer mode. This method uses an asynchronous callback to return the result.
+设置铃声模式。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
+**需要权限：** ohos.permission.ACCESS_NOTIFICATION_POLICY
 
 **系统能力：** SystemCapability.Multimedia.Audio.Communication
 
@@ -1493,8 +1151,8 @@ Sets the ringer mode. This method uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | AudioRingMode | 是 | Ringer mode. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| mode | AudioRingMode | 是 | 音频铃声模式。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置铃声模式成功，err为undefined，否则为错误对象。 |
 
 ## setRingerMode
 
@@ -1502,15 +1160,17 @@ Sets the ringer mode. This method uses an asynchronous callback to return the re
 setRingerMode(mode: AudioRingMode): Promise<void>
 ```
 
-Sets the ringer mode. This method uses a promise to return the result.
+设置铃声模式。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
+**需要权限：** ohos.permission.ACCESS_NOTIFICATION_POLICY
 
 **系统能力：** SystemCapability.Multimedia.Audio.Communication
 
@@ -1518,13 +1178,13 @@ Sets the ringer mode. This method uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | AudioRingMode | 是 | Ringer mode. |
+| mode | AudioRingMode | 是 | 音频铃声模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## setVolume
 
@@ -1532,17 +1192,22 @@ Sets the ringer mode. This method uses a promise to return the result.
 setVolume(volumeType: AudioVolumeType, volume: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the volume for a volume type. This method uses an asynchronous callback to return the result.
+设置指定流的音量等级。使用callback异步回调。
+
+> **说明：**
+>
+> - 从API version 7开始支持，从API version 9开始废弃。
+>
+> - 应用无法直接调节系统音量，建议通过系统音量面板组件调节音量。具体样例和介绍请参考API文档
+> [@ohos.multimedia.avVolumePanel (音量面板)](arkts-multimedia-avvolumepanel.md)。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.avVolumePanel.AVVolumePanel
+**替代接口：** AVVolumePanel
 
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
+**需要权限：** ohos.permission.ACCESS_NOTIFICATION_POLICY
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -1550,9 +1215,9 @@ Sets the volume for a volume type. This method uses an asynchronous callback to 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| volume | number | 是 | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| volume | number | 是 | 音量等级，可设置范围通过[getMinVolume](arkts-audio-audiomanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiomanager-i.md#getmaxvolume-1)获取。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置指定流的音量成功，err为undefined，否则为错误对象。 |
 
 ## setVolume
 
@@ -1560,17 +1225,22 @@ Sets the volume for a volume type. This method uses an asynchronous callback to 
 setVolume(volumeType: AudioVolumeType, volume: number): Promise<void>
 ```
 
-Sets the volume for a volume type. This method uses a promise to return the result.
+设置指定流的音量等级。使用Promise异步回调。
+
+> **说明：**
+>
+> - 从API version 7开始支持，从API version 9开始废弃。
+>
+> - 应用无法直接调节系统音量，建议通过系统音量面板组件调节音量。具体样例和介绍请参考API文档
+> [@ohos.multimedia.avVolumePanel (音量面板)](arkts-multimedia-avvolumepanel.md)。
 
 **起始版本：** 7
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.avVolumePanel.AVVolumePanel
+**替代接口：** AVVolumePanel
 
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
+**需要权限：** ohos.permission.ACCESS_NOTIFICATION_POLICY
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -1578,12 +1248,12 @@ Sets the volume for a volume type. This method uses a promise to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| volume | number | 是 | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| volume | number | 是 | 音量等级，可设置范围通过[getMinVolume](arkts-audio-audiomanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiomanager-i.md#getmaxvolume-1)获取。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 

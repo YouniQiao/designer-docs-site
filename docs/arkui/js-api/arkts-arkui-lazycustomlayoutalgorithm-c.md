@@ -2,7 +2,7 @@
 
 Defines the lazy custom layout algorithm.
 
-**Inheritance/Implementation:** LazyCustomLayoutAlgorithm implements [LazyLayoutAlgorithm](arkts-arkui-lazylayoutalgorithm-i.md#lazylayoutalgorithm)
+**Inheritance/Implementation:** LazyCustomLayoutAlgorithm implements [LazyLayoutAlgorithm](arkts-arkui-lazylayoutalgorithm-i.md)
 
 **Since:** 26.0.0
 
@@ -36,7 +36,8 @@ Constructor.
 onLayout(self: FrameNode, position: Position): void
 ```
 
-Method to assign a position to the DynamicLayout FrameNode and each of its children. It can be used to specify the layout location of DynamicLayout FrameNode and its children.
+Method to assign a position to the DynamicLayout FrameNode and each of its children.
+It can be used to specify the layout location of DynamicLayout FrameNode and its children.
 
 **Since:** 26.0.0
 

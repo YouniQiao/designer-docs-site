@@ -12,7 +12,13 @@ Scrollable模式下的TabBar的布局样式对象。
 margin?: Dimension
 ```
 
-Scrollable模式下的TabBar的左右边距（不支持百分比设置）。 默认值：0.0 单位：vp 取值范围：[0, +∞)。
+Scrollable模式下的TabBar的左右边距（不支持百分比设置）。
+
+默认值：0.0
+
+单位：vp
+
+取值范围：[0, +∞)。
 
 **类型：** Dimension
 
@@ -30,7 +36,9 @@ Scrollable模式下的TabBar的左右边距（不支持百分比设置）。 默
 nonScrollableLayoutStyle?: LayoutStyle
 ```
 
-Scrollable模式下不滚动时的页签排布方式。 默认值：LayoutStyle.ALWAYS_CENTER
+Scrollable模式下不滚动时的页签排布方式。
+
+默认值：LayoutStyle.ALWAYS_CENTER
 
 **类型：** LayoutStyle
 

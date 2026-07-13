@@ -13,7 +13,7 @@ Provides methods to operate or manage Bluetooth.
 ## Modules to Import
 
 ```TypeScript
-import { bluetooth } from '@ohos.bluetooth';
+import { bluetooth } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -22,7 +22,7 @@ import { bluetooth } from '@ohos.bluetooth';
 
 | Name | Description |
 | --- | --- |
-| [BLE](arkts-connectivity-bluetooth-ble-n.md) | Provides methods to operate or manage Bluetooth. |
+| [BLE](arkts-connectivity-ble-n.md) | Provides methods to operate or manage Bluetooth. |
 
 ### Functions
 
@@ -77,8 +77,8 @@ import { bluetooth } from '@ohos.bluetooth';
 | [BaseProfile](arkts-connectivity-baseprofile-i.md) | Base interface of profile. |
 | [A2dpSourceProfile](arkts-connectivity-a2dpsourceprofile-i.md) | Manager a2dp source profile. |
 | [HandsFreeAudioGatewayProfile](arkts-connectivity-handsfreeaudiogatewayprofile-i.md) | Manager handsfree AG profile. |
-| [GattServer](arkts-connectivity-gattserver-i.md) | Manages GATT server. Before calling an Gatt server method, you must use {@link createGattServer} to create an GattServer instance. |
-| [GattClientDevice](arkts-connectivity-gattclientdevice-i.md) | Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create an GattClientDevice instance. |
+| [GattServer](arkts-connectivity-gattserver-i.md) | Manages GATT server. Before calling an Gatt server method, you must use {@link createGattServer} to create anGattServer instance. |
+| [GattClientDevice](arkts-connectivity-gattclientdevice-i.md) | Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create anGattClientDevice instance. |
 | [GattService](arkts-connectivity-gattservice-i.md) | Describes the Gatt service. |
 | [BLECharacteristic](arkts-connectivity-blecharacteristic-i.md) | Describes the Gatt characteristic. |
 | [BLEDescriptor](arkts-connectivity-bledescriptor-i.md) | Describes the Gatt descriptor. |

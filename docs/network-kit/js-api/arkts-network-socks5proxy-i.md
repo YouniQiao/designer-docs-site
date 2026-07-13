@@ -9,7 +9,7 @@ Socks5 Proxy Configuration Information.
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## dnsStrategy
@@ -18,7 +18,8 @@ import { connection } from '@ohos.net.connection';
 dnsStrategy?: Socks5DnsStrategy
 ```
 
-DNS resolution strategy. Determines whether the client or the proxy server resolves the domain name.
+DNS resolution strategy.
+Determines whether the client or the proxy server resolves the domain name.
 
 **Type:** Socks5DnsStrategy
 

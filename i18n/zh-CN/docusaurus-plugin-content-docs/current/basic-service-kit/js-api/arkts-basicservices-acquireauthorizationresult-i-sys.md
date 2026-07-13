@@ -14,7 +14,9 @@
 isReused?: boolean
 ```
 
-是否为复用的授权结果，默认为undefined。 true：表示是复用的授权结果。false：表示不是复用的授权结果。
+是否为复用的授权结果，默认为undefined。
+
+true：表示是复用的授权结果。false：表示不是复用的授权结果。
 
 **类型：** boolean
 

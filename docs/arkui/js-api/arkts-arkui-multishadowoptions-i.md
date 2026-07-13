@@ -12,7 +12,8 @@ Defines shadow style properties.
 offsetX?: number | Resource
 ```
 
-X-axis offset. Unit: vp. Default value: 5.
+X-axis offset.
+Unit: vp. Default value: 5.
 
 **Type:** number | Resource
 
@@ -34,7 +35,8 @@ X-axis offset. Unit: vp. Default value: 5.
 offsetY?: number | Resource
 ```
 
-Y-axis offset. Unit: vp. Default value: 5.
+Y-axis offset.
+Unit: vp. Default value: 5.
 
 **Type:** number | Resource
 
@@ -56,7 +58,17 @@ Y-axis offset. Unit: vp. Default value: 5.
 radius?: number | Resource
 ```
 
-Shadow blur radius. The default value varies by API version. API version 10 and earlier versions: **5** Since API version 11: **20** Unit: vp. A value less than or equal to 0 is handled as the default value.
+Shadow blur radius.
+
+The default value varies by API version.
+
+API version 10 and earlier versions: **5**
+
+Since API version 11: **20**
+
+Unit: vp.
+
+A value less than or equal to 0 is handled as the default value.
 
 **Type:** number | Resource
 

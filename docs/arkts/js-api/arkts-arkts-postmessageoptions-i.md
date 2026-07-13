@@ -1,6 +1,9 @@
 # PostMessageOptions
 
-Defines the object for which the ownership is to be transferred during data transfer. The object must be an ArrayBuffer instance. After the ownership is transferred, the object becomes unavailable in the sender and can be used only in the receiver.
+Defines the object for which the ownership is to be transferred during data transfer. The object must be an
+ArrayBuffer instance.
+After the ownership is transferred, the object becomes unavailable in the sender and can be used only in the
+receiver.
 
 **Since:** 7
 
@@ -9,7 +12,7 @@ Defines the object for which the ownership is to be transferred during data tran
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## transfer

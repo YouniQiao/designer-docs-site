@@ -1,6 +1,7 @@
-# TryAEInfo
+# TryAEInfo (System API)
 
-Describes the Try AE parameters. Try AE indicates that the hardware reports the status based on the ambient illumination change during time-lapse photographing.
+Describes the Try AE parameters. Try AE indicates that the hardware reports the status based on the ambient
+illumination change during time-lapse photographing.
 
 **Since:** 12
 
@@ -17,12 +18,12 @@ import { camera } from '@kit.CameraKit';
 ## captureInterval
 
 ```TypeScript
-readonly captureInterval?: int
+readonly captureInterval?: number
 ```
 
 Timelapse capture interval.
 
-**Type:** int
+**Type:** number
 
 **Since:** 12
 

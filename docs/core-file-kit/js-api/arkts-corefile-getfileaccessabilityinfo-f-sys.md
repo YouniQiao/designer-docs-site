@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { fileAccess } from '@ohos.file.fileAccess';
+import { fileAccess } from '@kit.CoreFileKit';
 ```
 
 ## getFileAccessAbilityInfo
@@ -12,7 +12,8 @@ import { fileAccess } from '@ohos.file.fileAccess';
 function getFileAccessAbilityInfo(callback: AsyncCallback<Array<Want>>): void
 ```
 
-Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains information for starting an ability. This API uses an asynchronous callback to return the result.
+Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains
+information for starting an ability. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -96,7 +97,8 @@ async function getFileAccessAbilityInfo() {
 function getFileAccessAbilityInfo(): Promise<Array<Want>>
 ```
 
-Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains information for starting an ability. This API uses a promise to return the result.
+Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains
+information for starting an ability. This API uses a promise to return the result.
 
 **Since:** 9
 

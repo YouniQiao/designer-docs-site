@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## sendNotice
@@ -12,7 +12,9 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 function sendNotice(noticeType: NoticeType, eventData: string): void
 ```
 
-Sends a notification from the user authentication widget.
+Sends a notification from the user authentication widget. When the unified authentication widget is used for user
+authentication, this API is used to receive notifications from the unified authentication widget and send the
+notifications to the user authentication framework.
 
 **Since:** 10
 
@@ -26,8 +28,8 @@ Sends a notification from the user authentication widget.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| noticeType | NoticeType | Yes | Notification type. |
-| eventData | string | Yes | Event data. The data length range is 0 to 65536. |
+| noticeType | NoticeType | Yes | Notification type. It identifies the source of a notification. Currently,**WIDGET_NOTICE (1)** is supported, indicating that the notification is from the authentication widget. |
+| eventData | string | Yes | Event data. It is a string in JSON format, containing the notification details, suchas the authentication type and ready event. The data length ranges from 0 to 65536 bytes. |
 
 **Error codes:**
 

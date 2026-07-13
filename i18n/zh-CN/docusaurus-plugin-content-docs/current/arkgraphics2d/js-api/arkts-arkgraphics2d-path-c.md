@@ -1,6 +1,12 @@
 # Path
 
-由直线、圆弧、二阶贝塞尔、三阶贝塞尔组成的复合几何路径。 > **说明：** > > - 本模块使用屏幕物理像素单位px。 > > - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
+由直线、圆弧、二阶贝塞尔、三阶贝塞尔组成的复合几何路径。
+
+> **说明：**
+>
+> - 本模块使用屏幕物理像素单位px。
+>
+> - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。
 
 **起始版本：** 11
 
@@ -12,7 +18,11 @@
 addArc(rect: common2D.Rect, startAngle: number, sweepAngle: number): void
 ```
 
-向路径添加一段圆弧。 当startAngle和sweepAngle同时满足以下两种情况时，添加整个椭圆而不是圆弧： 1.startAngle对90取余接近于0； 2.sweepAngle不在(-360, 360)区间内。 其余情况sweepAngle会对360取余后添加圆弧。
+向路径添加一段圆弧。
+当startAngle和sweepAngle同时满足以下两种情况时，添加整个椭圆而不是圆弧：
+1.startAngle对90取余接近于0；
+2.sweepAngle不在(-360, 360)区间内。
+其余情况sweepAngle会对360取余后添加圆弧。
 
 **起始版本：** 12
 
@@ -30,7 +40,7 @@ addArc(rect: common2D.Rect, startAngle: number, sweepAngle: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## addCircle
 
@@ -57,7 +67,7 @@ addCircle(x: number, y: number, radius: number, pathDirection?: PathDirection): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## addOval
 
@@ -83,7 +93,7 @@ addOval(rect: common2D.Rect, start: number, pathDirection?: PathDirection): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## addPath
 
@@ -108,7 +118,7 @@ addPath(path: Path, matrix?: Matrix | null): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## addPolygon
 
@@ -133,7 +143,7 @@ addPolygon(points: Array<common2D.Point>, close: boolean): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## addRect
 
@@ -158,7 +168,7 @@ addRect(rect: common2D.Rect, pathDirection?: PathDirection): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## addRoundRect
 
@@ -183,7 +193,7 @@ addRoundRect(roundRect: RoundRect, pathDirection?: PathDirection): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## approximate
 
@@ -191,7 +201,15 @@ addRoundRect(roundRect: RoundRect, pathDirection?: PathDirection): void
 approximate(acceptableError: number): Array<number>
 ```
 
-将当前路径转化为由连续直线段构成的近似路径。 > **说明：** > > - 当acceptableError为0时，曲线路径被极度细分，会严重影响性能和内存消耗，不建议设置误差值为0。 > > - 当acceptableError特别大时，路径会极度简化，保留少量关键点，可能会丢失原有形状。 > > - 对于椭圆等曲线，当acceptableError过大时，拟合结果通常只包含椭圆的分段贝塞尔曲线的起止点，椭圆形会被极度简化为多边形。
+将当前路径转化为由连续直线段构成的近似路径。
+
+> **说明：**
+>
+> - 当acceptableError为0时，曲线路径被极度细分，会严重影响性能和内存消耗，不建议设置误差值为0。
+>
+> - 当acceptableError特别大时，路径会极度简化，保留少量关键点，可能会丢失原有形状。
+>
+> - 对于椭圆等曲线，当acceptableError过大时，拟合结果通常只包含椭圆的分段贝塞尔曲线的起止点，椭圆形会被极度简化为多边形。
 
 **起始版本：** 20
 
@@ -221,7 +239,8 @@ approximate(acceptableError: number): Array<number>
 arcTo(x1: number, y1: number, x2: number, y2: number, startDeg: number, sweepDeg: number): void
 ```
 
-给路径添加一段弧线，绘制弧线的方式为角度弧，该方式首先会指定一个矩形边框，取其内切椭圆，然后会指定一个起始角度和扫描度数，从起始角度扫描截取的椭圆周长一部分即为绘制的弧线。另外会默认添加一条从路径的最后点位置到弧线起始点位置的 线段。
+给路径添加一段弧线，绘制弧线的方式为角度弧，该方式首先会指定一个矩形边框，取其内切椭圆，然后会指定一个起始角度和扫描度数，从起始角度扫描截取的椭圆周长一部分即为绘制的弧线。另外会默认添加一条从路径的最后点位置到弧线起始点位置的
+线段。
 
 **起始版本：** 11
 
@@ -244,7 +263,7 @@ arcTo(x1: number, y1: number, x2: number, y2: number, startDeg: number, sweepDeg
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## buildFromSvgString
 
@@ -274,7 +293,7 @@ buildFromSvgString(str: string): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 ## close
 
@@ -316,7 +335,7 @@ conicTo(ctrlX: number, ctrlY: number, endX: number, endY: number, weight: number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## constructor
 
@@ -358,7 +377,7 @@ constructor(path: Path)
 contains(x: number, y: number): boolean
 ```
 
-判断指定坐标点是否被路径包含，判定是否被路径包含的规则参考[PathFillType](arkts-arkgraphics2d-pathfilltype-e.md#pathfilltype)。
+判断指定坐标点是否被路径包含，判定是否被路径包含的规则参考[PathFillType](arkts-arkgraphics2d-pathfilltype-e.md)。
 
 **起始版本：** 12
 
@@ -381,7 +400,7 @@ contains(x: number, y: number): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## convertToSvgString
 
@@ -432,7 +451,7 @@ cubicTo(ctrlX1: number, ctrlY1: number, ctrlX2: number, ctrlY2: number, endX: nu
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## getBounds
 
@@ -458,7 +477,12 @@ getBounds(): common2D.Rect
 getConicWeightData(): Array<number>
 ```
 
-获取路径的圆锥曲线权重数据。 在路径（path）图元中，圆锥曲线数据采用有理贝塞尔曲线（Rational Bézier Curve）形式表示，其中每个控制点附带一个权重值（weight）。权重属于曲线定义的几何参数。 主要作用如下： 形状调控：权重值越大，曲线越靠近对应控制点；权重为1时退化为标准贝塞尔曲线；权重为0时该控制点不起作用。 精确表示圆锥曲线：通过组合权重与二次贝塞尔曲线，可以精确表示圆弧、椭圆弧、抛物线等圆锥曲线段，无需使用分段逼近或专用椭圆弧指令。 数据组织：权重通常以数组形式与点数据并列，按顺序对应每个控制点，与相应的指令verb（如[conicTo](arkts-arkgraphics2d-path-c.md#conicto-1)）配合使用。
+获取路径的圆锥曲线权重数据。
+在路径（path）图元中，圆锥曲线数据采用有理贝塞尔曲线（Rational Bézier Curve）形式表示，其中每个控制点附带一个权重值（weight）。权重属于曲线定义的几何参数。
+主要作用如下：
+形状调控：权重值越大，曲线越靠近对应控制点；权重为1时退化为标准贝塞尔曲线；权重为0时该控制点不起作用。
+精确表示圆锥曲线：通过组合权重与二次贝塞尔曲线，可以精确表示圆弧、椭圆弧、抛物线等圆锥曲线段，无需使用分段逼近或专用椭圆弧指令。
+数据组织：权重通常以数组形式与点数据并列，按顺序对应每个控制点，与相应的指令verb（如[conicTo](arkts-arkgraphics2d-path-c.md#conicto-1)）配合使用。
 
 **起始版本：** 26.0.0
 
@@ -565,7 +589,7 @@ getMatrix(forceClosed: boolean, distance: number, matrix: Matrix, flags: PathMea
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Mandatory parameters are left unspecified. |
 
 ## getPathIterator
 
@@ -591,7 +615,12 @@ getPathIterator(): PathIterator
 getPointData(): Array<common2D.Point>
 ```
 
-获取路径的点数据。 在路径（path）图元中，点数据以数值序列的形式存在，与动词verb指令一一对应，用来精确指定绘图操作的几何坐标位置。 点数据的主要类型包括： 终点坐标：与[moveTo](arkts-arkgraphics2d-path-c.md#moveto-1)、[lineTo](arkts-arkgraphics2d-path-c.md#lineto-1)等指令配合，定义线段或移动的目标位置。 控制点坐标：与曲线指令配合，用于定义贝塞尔曲线的形状（如三次曲线需要两个控制点和一个终点）。 闭合点：通常不单独提供坐标，由[close](arkts-arkgraphics2d-path-c.md#close-1)指令隐式使用路径起点。
+获取路径的点数据。
+在路径（path）图元中，点数据以数值序列的形式存在，与动词verb指令一一对应，用来精确指定绘图操作的几何坐标位置。
+点数据的主要类型包括：
+终点坐标：与[moveTo](arkts-arkgraphics2d-path-c.md#moveto-1)、[lineTo](arkts-arkgraphics2d-path-c.md#lineto-1)等指令配合，定义线段或移动的目标位置。
+控制点坐标：与曲线指令配合，用于定义贝塞尔曲线的形状（如三次曲线需要两个控制点和一个终点）。
+闭合点：通常不单独提供坐标，由[close](arkts-arkgraphics2d-path-c.md#close-1)指令隐式使用路径起点。
 
 **起始版本：** 26.0.0
 
@@ -636,7 +665,7 @@ getPositionAndTangent(forceClosed: boolean, distance: number, position: common2D
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## getSegment
 
@@ -672,7 +701,12 @@ getSegment(forceClosed: boolean, start: number, stop: number, startWithMoveTo: b
 getVerbData(): Array<PathIteratorVerb>
 ```
 
-获取路径的指令数据。 在路径（path）图元中，指令数据verb用于描述路径构造过程中的基本绘图动作。 指令数据以枚举的形式存在，每个取值对应一种几何操作类型，例如： [moveTo](arkts-arkgraphics2d-path-c.md#moveto-1)：将当前绘图点移至指定坐标，不产生线段。 [lineTo](arkts-arkgraphics2d-path-c.md#lineto-1)：从当前点向指定点绘制直线段。 [close](arkts-arkgraphics2d-path-c.md#close-1)：将当前点与路径起点相连，形成封闭区域。
+获取路径的指令数据。
+在路径（path）图元中，指令数据verb用于描述路径构造过程中的基本绘图动作。
+指令数据以枚举的形式存在，每个取值对应一种几何操作类型，例如：
+[moveTo](arkts-arkgraphics2d-path-c.md#moveto-1)：将当前绘图点移至指定坐标，不产生线段。
+[lineTo](arkts-arkgraphics2d-path-c.md#lineto-1)：从当前点向指定点绘制直线段。
+[close](arkts-arkgraphics2d-path-c.md#close-1)：将当前点与路径起点相连，形成封闭区域。
 
 **起始版本：** 26.0.0
 
@@ -871,7 +905,7 @@ lineTo(x: number, y: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## moveTo
 
@@ -898,7 +932,7 @@ moveTo(x: number, y: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## offset
 
@@ -929,7 +963,7 @@ offset(dx: number, dy: number): Path
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## op
 
@@ -960,7 +994,7 @@ op(path: Path, pathOp: PathOp): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## quadTo
 
@@ -989,7 +1023,7 @@ quadTo(ctrlX: number, ctrlY: number, endX: number, endY: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## rConicTo
 
@@ -1019,7 +1053,7 @@ rConicTo(ctrlX: number, ctrlY: number, endX: number, endY: number, weight: numbe
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## rCubicTo
 
@@ -1050,7 +1084,7 @@ rCubicTo(ctrlX1: number, ctrlY1: number, ctrlX2: number, ctrlY2: number, endX: n
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## rLineTo
 
@@ -1077,7 +1111,7 @@ rLineTo(dx: number, dy: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## rMoveTo
 
@@ -1104,7 +1138,7 @@ rMoveTo(dx: number, dy: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## rQuadTo
 
@@ -1133,7 +1167,7 @@ rQuadTo(dx1: number, dy1: number, dx2: number, dy2: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 
 ## reset
 
@@ -1201,7 +1235,7 @@ setFillType(pathFillType: PathFillType): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setLastPoint
 
@@ -1256,5 +1290,5 @@ transform(matrix: Matrix): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 

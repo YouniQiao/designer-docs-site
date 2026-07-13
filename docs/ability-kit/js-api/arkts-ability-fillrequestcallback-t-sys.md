@@ -4,7 +4,8 @@
 export type FillRequestCallback = _AutoFillRequest.FillRequestCallback
 ```
 
-Defines the callback for an auto-fill request, which is used to automatically fill in or generate a password. The callback can be used to notify the client of the success or failure of the request.
+Defines the callback for an auto-fill request, which is used to automatically fill in or generate a password. The
+callback can be used to notify the client of the success or failure of the request.
 
 **Since:** 11
 

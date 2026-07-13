@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## enableAdmin
@@ -12,7 +12,11 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function enableAdmin(admin: Want, enterpriseInfo: EnterpriseInfo, type: AdminType, callback: AsyncCallback<void>): void
 ```
 
-Enables a device administrator application. The super device administrator application can be activated only by the administrator. After the application is enabled, it cannot be uninstalled. The [EnterpriseAdminExtensionAbility](../../../../mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the application will automatically start upon device startup and user switching. This API uses an asynchronous callback to return the result.
+Enables a device administrator application. The super device administrator application can be activated only by the
+administrator. After the application is enabled, it cannot be uninstalled. The
+[EnterpriseAdminExtensionAbility](../../../../mdm/mdm-kit-term.md#enterpriseadminextensionability) component of the
+application will automatically start upon device startup and user switching. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -78,7 +82,8 @@ adminManager.enableAdmin(wantTemp, enterpriseInfo, adminManager.AdminType.ADMIN_
 function enableAdmin(admin: Want, enterpriseInfo: EnterpriseInfo, type: AdminType, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Enables a device administrator application for the specified user. The super device administrator application can be activated only by the administrator. This API uses an asynchronous callback to return the result.
+Enables a device administrator application for the specified user. The super device administrator application can
+be activated only by the administrator. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -145,7 +150,8 @@ adminManager.enableAdmin(wantTemp, enterpriseInfo, adminManager.AdminType.ADMIN_
 function enableAdmin(admin: Want, enterpriseInfo: EnterpriseInfo, type: AdminType, userId?: number): Promise<void>
 ```
 
-Enables a device administrator application for the current or specified user. The super device administrator application can be activated only by the administrator. This API uses a promise to return the result.
+Enables a device administrator application for the current or specified user. The super device administrator
+application can be activated only by the administrator. This API uses a promise to return the result.
 
 **Since:** 9
 

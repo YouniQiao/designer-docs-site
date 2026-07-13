@@ -2,7 +2,7 @@
 
 定义ScaleSymbolEffect类，继承自父类SymbolEffect。
 
-**继承/实现关系：** ScaleSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md#symboleffect)
+**继承/实现关系：** ScaleSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md)
 
 **起始版本：** 12
 
@@ -39,7 +39,9 @@ ScaleSymbolEffect的构造函数，缩放动效。
 direction?: EffectDirection
 ```
 
-动效方向。 默认值：EffectDirection.DOWN
+动效方向。
+
+默认值：EffectDirection.DOWN
 
 **类型：** EffectDirection
 
@@ -59,7 +61,9 @@ direction?: EffectDirection
 scope?: EffectScope
 ```
 
-动效范围。 默认值：EffectScope.LAYER
+动效范围。
+
+默认值：EffectScope.LAYER
 
 **类型：** EffectScope
 

@@ -2,7 +2,7 @@
 
 Defines DisappearSymbolEffect class, which inherits from **SymbolEffect**.
 
-**Inheritance/Implementation:** DisappearSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md#symboleffect)
+**Inheritance/Implementation:** DisappearSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md)
 
 **Since:** 12
 
@@ -38,7 +38,9 @@ A constructor used to create an **AppearSymbolEffect** instance, which comes wit
 scope?: EffectScope
 ```
 
-Effect scope. Default value: **EffectScope.LAYER**
+Effect scope.
+
+Default value: **EffectScope.LAYER**
 
 **Type:** EffectScope
 

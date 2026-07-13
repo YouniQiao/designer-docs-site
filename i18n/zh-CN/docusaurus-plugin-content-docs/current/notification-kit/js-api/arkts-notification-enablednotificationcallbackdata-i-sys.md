@@ -30,7 +30,9 @@ readonly bundle: string
 readonly enable: boolean
 ```
 
-应用通知使能状态。 - true：允许。 - false：禁止。
+应用通知使能状态。
+- true：允许。
+- false：禁止。
 
 **类型：** boolean
 

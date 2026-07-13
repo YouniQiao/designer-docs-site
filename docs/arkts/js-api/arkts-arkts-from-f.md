@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { fastbuffer } from '@ohos.fastbuffer';
+import { fastbuffer } from '@kit.ArkTS';
 ```
 
 ## from
@@ -151,7 +151,8 @@ console.info("uint8Array:", uint8Array)
 function from(value: string, encoding?: BufferEncoding): FastBuffer
 ```
 
-Creates a new FastBuffer containing string. The encoding parameter identifies the character encoding to be used when converting string into bytes.
+Creates a new FastBuffer containing string. The encoding parameter identifies the character encoding
+to be used when converting string into bytes.
 
 **Since:** 20
 

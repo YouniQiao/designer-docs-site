@@ -24,7 +24,8 @@ Indicates unknown radio access technology (RAT).
 RADIO_TECHNOLOGY_GSM = 1
 ```
 
-Indicates that RAT is global system for mobile communications (GSM), including GSM, general packet radio system (GPRS), and enhanced data rates for GSM evolution (EDGE).
+Indicates that RAT is global system for mobile communications (GSM), including GSM, general packet
+radio system (GPRS), and enhanced data rates for GSM evolution (EDGE).
 
 **Since:** 6
 
@@ -36,7 +37,8 @@ Indicates that RAT is global system for mobile communications (GSM), including G
 RADIO_TECHNOLOGY_1XRTT = 2
 ```
 
-Indicates that RAT is code division multiple access (CDMA), including Interim Standard 95 (IS95) and Single-Carrier Radio Transmission Technology (1xRTT).
+Indicates that RAT is code division multiple access (CDMA), including Interim Standard 95 (IS95) and
+Single-Carrier Radio Transmission Technology (1xRTT).
 
 **Since:** 6
 
@@ -60,7 +62,8 @@ Indicates that RAT is wideband code division multiple address (WCDMA).
 RADIO_TECHNOLOGY_HSPA = 4
 ```
 
-Indicates that RAT is high-speed packet access (HSPA), including HSPA, high-speed downlink packet access (HSDPA), and high-speed uplink packet access (HSUPA).
+Indicates that RAT is high-speed packet access (HSPA), including HSPA, high-speed downlink packet
+access (HSDPA), and high-speed uplink packet access (HSUPA).
 
 **Since:** 6
 
@@ -72,7 +75,8 @@ Indicates that RAT is high-speed packet access (HSPA), including HSPA, high-spee
 RADIO_TECHNOLOGY_HSPAP = 5
 ```
 
-Indicates that RAT is evolved high-speed packet access (HSPA+), including HSPA+ and dual-carrier HSPA+ (DC-HSPA+).
+Indicates that RAT is evolved high-speed packet access (HSPA+), including HSPA+ and dual-carrier
+HSPA+ (DC-HSPA+).
 
 **Since:** 6
 

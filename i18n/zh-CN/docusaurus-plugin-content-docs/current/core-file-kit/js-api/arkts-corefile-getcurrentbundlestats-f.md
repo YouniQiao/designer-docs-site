@@ -22,7 +22,7 @@ function getCurrentBundleStats(callback: AsyncCallback<BundleStats>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
 | 13600001 | IPC error. |
 | 13900042 | Unknown error. |
 
@@ -64,7 +64,7 @@ function getCurrentBundleStats(): Promise<BundleStats>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
 | 13600001 | IPC error. |
 | 13900042 | Unknown error. |
 

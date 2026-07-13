@@ -1,6 +1,10 @@
 # Display
 
-Implements a Display instance, with attributes and APIs defined. Before calling any API in Display, you must use [getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or [getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
+Implements a Display instance, with attributes and APIs defined.
+
+Before calling any API in Display, you must use
+[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or
+[getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
 
 **Since:** 7
 
@@ -9,7 +13,7 @@ Implements a Display instance, with attributes and APIs defined. Before calling 
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## getAvailableArea
@@ -18,7 +22,16 @@ import { display } from '@ohos.display';
 getAvailableArea(): Promise<Rect>
 ```
 
-Obtains the available area of the display of the current device. This API uses a promise to return the result. The available area is the space left for applications after the system UI (such as the status bar and dock bar) is accounted for.
+Obtains the available area of the display of the current device. This API uses a promise to return the result.
+
+The available area is the space left for applications after the system UI (such as the status bar and dock bar)
+is accounted for.
+
+This API can be properly called on devices running OpenHarmony 7.0.0 or later.
+For devices running versions earlier than OpenHarmony 7.0.0,
+this API can be properly called on PCs/2-in-1 devices and tablets,
+but does not work for other device types. To obtain the available area on the current device screen,
+you can use the width and height attributes in Display.
 
 **Since:** 12
 
@@ -65,7 +78,8 @@ try {
 getCutoutInfo(callback: AsyncCallback<CutoutInfo>): void
 ```
 
-Obtains the cutout information of the display. This API uses an asynchronous callback to return the result. You are advised not to use the cutout area during application layout.
+Obtains the cutout information of the display. This API uses an asynchronous callback to return the result. You
+are advised not to use the cutout area during application layout.
 
 **Since:** 9
 
@@ -110,7 +124,8 @@ displayClass.getCutoutInfo((err: BusinessError, data: display.CutoutInfo) => {
 getCutoutInfo(): Promise<CutoutInfo>
 ```
 
-Obtains the cutout information of the display. This API uses a promise to return the result. You are advised not to use the cutout area during application layout.
+Obtains the cutout information of the display. This API uses a promise to return the result. You are advised not
+to use the cutout area during application layout.
 
 **Since:** 9
 
@@ -141,7 +156,7 @@ let promise: Promise<display.CutoutInfo> = displayClass.getCutoutInfo();
 promise.then((data: display.CutoutInfo) => {
   console.info(`Succeeded in getting cutoutInfo. Data: ${JSON.stringify(data)}`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to obtain all the display objects. Code: ${err.code}, message: ${err.message}`);
+  console.error(`Failed to get cutoutInfo. Code: ${err.code}, message: ${err.message}`);
 });
 
 ```
@@ -219,7 +234,9 @@ try {
 getRoundedCorner(): Array<RoundedCorner>
 ```
 
-Obtains the rounded corner information of the display. The rounded corner information of the display is determined by the product configuration. Only physical screens that have a defined corner-radius value returns rounded corner information; otherwise, an empty array is returned. Virtual displays always return an empty array.
+Obtains the rounded corner information of the display. The rounded corner information of the display is
+determined by the product configuration. Only physical screens that have a defined corner-radius value returns
+rounded corner information; otherwise, an empty array is returned. Virtual displays always return an empty array.
 
 **Since:** 23
 
@@ -252,7 +269,7 @@ try {
   let data = displayClass.getRoundedCorner();
   console.info(`Succeeded in getting rounded corner. Data: ${JSON.stringify(data)}`);
 } catch (error) {
-  console.error(`Failed to getRoundedCorner. Code: ${error.code}, message: ${error.message}`);
+  console.error(`Failed to get rounded corner. Code: ${error.code}, message: ${error.message}`);
 }
 
 ```
@@ -264,6 +281,11 @@ off(type: 'availableAreaChange', callback?: Callback<Rect>): void
 ```
 
 Unsubscribes from changes of the available area on the display of the current device.
+
+This API can be properly called on devices running OpenHarmony 7.0.0 or later.
+For devices running versions earlier than OpenHarmony 7.0.0,
+this API can be properly called on PCs/2-in-1 devices and tablets.
+If being called on other device types, it does not take effect and no error is reported.
 
 **Since:** 12
 
@@ -309,7 +331,14 @@ try {
 on(type: 'availableAreaChange', callback: Callback<Rect>): void
 ```
 
-Subscribes to changes of the available area on the display of the current device. This callback function is triggered when the screen rotates, the freeform mode is enabled or disabled, or the visibility of system components such as the dock bar and status bar changes, and returns the available area information.
+Subscribes to changes of the available area on the display of the current device. This callback function is
+triggered when the screen rotates, the freeform mode is enabled or disabled, or the visibility of system
+components such as the dock bar and status bar changes, and returns the available area information.
+
+This API can be properly called on devices running OpenHarmony 7.0.0 or later.
+For devices running versions earlier than OpenHarmony 7.0.0,
+this API can be properly called on PCs/2-in-1 devices and tablets.
+If being called on other device types, it does not take effect and no error is reported.
 
 **Since:** 12
 
@@ -355,7 +384,8 @@ try {
 alive: boolean
 ```
 
-Whether the display is alive. The value **true** indicates that the display is alive and running properly, and **false** indicates the opposite.
+Whether the display is alive. The value **true** indicates that the display is alive
+and running properly, and **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -373,6 +403,12 @@ availableHeight: number
 
 eight of the available area, in px. The value is an integer greater than 0.
 
+This API can be properly called on devices running OpenHarmony 7.0.0 or later.
+For devices running versions earlier than OpenHarmony 7.0.0,
+this API can be properly called on PCs/2-in-1 devices and tablets,
+but does not work for other device types.
+To obtain the height of the available area on the current device screen, you can use the height attribute.
+
 **Type:** number
 
 **Since:** 12
@@ -388,6 +424,12 @@ availableWidth: number
 ```
 
 Width of the available area, in px. The value is an integer greater than 0.
+
+This API can be properly called on devices running OpenHarmony 7.0.0 or later.
+For devices running versions earlier than OpenHarmony 7.0.0,
+this API can be properly called on PCs/2-in-1 devices and tablets,
+but does not work for other device types.
+To obtain the width of the available area on the current device screen, you can use the width attribute.
 
 **Type:** number
 
@@ -419,7 +461,9 @@ All color spaces supported by the display.
 densityDPI: number
 ```
 
-Physical pixel density of the display, that is, the number of pixels per inch. The value is a floating-point number, in px. Generally, the value is **160.0** or **480.0**. The actual value depends on the optional values provided by the device in use.
+Physical pixel density of the display, that is, the number of pixels per inch. The
+value is a floating-point number, in px. Generally, the value is **160.0** or **480.0**. The actual value depends
+on the optional values provided by the device in use.
 
 **Type:** number
 
@@ -435,7 +479,11 @@ Physical pixel density of the display, that is, the number of pixels per inch. T
 densityPixels: number
 ```
 
-Logical pixel density of the display, which is the scaling coefficient between physical pixels and logical pixels. The calculation method is as follows:<br>! [densityPixels](figures/densityPixels.jpg)<br>The value is a floating-point number and is restricted by the range of **densityDPI**. The value range is [0.5, 4.0]. Generally, the value is **1.0** or **3.0**. The actual value depends on the density DPI provided by the device in use.
+Logical pixel density of the display, which is the scaling coefficient between
+physical pixels and logical pixels. The calculation method is as follows:<br>!
+[densityPixels](figures/densityPixels.jpg)<br>The value is a floating-point number and is restricted by the range
+of **densityDPI**. The value range is [0.5, 4.0]. Generally, the value is **1.0** or **3.0**. The actual value
+depends on the density DPI provided by the device in use.
 
 **Type:** number
 
@@ -547,7 +595,11 @@ Refresh rate of the display, in Hz. The value is an integer.
 rotation: number
 ```
 
-Clockwise rotation angle of the display. The value **0** indicates that the display rotates clockwise by 0��, which is the standard display direction. The value **1** indicates that the display rotates clockwise by 90��. The value **2** indicates that the display rotates clockwise by 180��. The value **3** indicates that the display rotates clockwise by 270��.
+Clockwise rotation angle of the display.
+The value **0** indicates that the display rotates clockwise by 0��, which is the standard display direction.
+The value **1** indicates that the display rotates clockwise by 90��.
+The value **2** indicates that the display rotates clockwise by 180��.
+The value **3** indicates that the display rotates clockwise by 270��.
 
 **Type:** number
 
@@ -563,7 +615,8 @@ Clockwise rotation angle of the display. The value **0** indicates that the disp
 scaledDensity: number
 ```
 
-Scaling factor for fonts displayed on the display. The value must be a floating -point number. Generally, the value is the same as that of **densityPixels**.
+Scaling factor for fonts displayed on the display. The value must be a floating
+-point number. Generally, the value is the same as that of **densityPixels**.
 
 **Type:** number
 
@@ -627,7 +680,8 @@ State of the display.
 supportedRefreshRates?: Array<number>
 ```
 
-All refresh rates supported by the display, sorted in ascending order. The refresh rate is a positive integer, in Hz. The default value is empty.
+All refresh rates supported by the display, sorted in ascending order. The refresh rate is a positive integer,
+in Hz. The default value is empty.
 
 **Type:** Array<number>
 
@@ -659,7 +713,10 @@ Width of the display, in px. The value is an integer.
 x?: number
 ```
 
-X coordinate of the top-left corner of the display relative to the origin, which is the top-left corner of the primary screen, measured in px. The value is an integer. The default value is **0**. The actual value is returned only when **DisplaySourceMode** is set to **MAIN** or **EXTEND**; otherwise, the default value **0** is returned.
+X coordinate of the top-left corner of the display relative to the origin,
+which is the top-left corner of the primary screen, measured in px. The value is an integer. The default value is
+**0**. The actual value is returned only when **DisplaySourceMode** is set to **MAIN** or **EXTEND**; otherwise,
+the default value **0** is returned.
 
 **Type:** number
 
@@ -675,7 +732,8 @@ X coordinate of the top-left corner of the display relative to the origin, which
 xDPI: number
 ```
 
-Exact physical pixels per inch of the display in the X axis. The value must be a floating-point number.
+Exact physical pixels per inch of the display in the X axis. The value must be a
+floating-point number.
 
 **Type:** number
 
@@ -691,7 +749,10 @@ Exact physical pixels per inch of the display in the X axis. The value must be a
 y?: number
 ```
 
-Y coordinate of the top-left corner of the display relative to the origin, which is the top-left corner of the primary screen, measured in px. The value is an integer. The default value is **0**. The actual value is returned only when **DisplaySourceMode** is set to **MAIN** or **EXTEND**; otherwise, the default value **0** is returned.
+Y coordinate of the top-left corner of the display relative to the origin,
+which is the top-left corner of the primary screen, measured in px. The value is an integer. The default value is
+**0**. The actual value is returned only when **DisplaySourceMode** is set to **MAIN** or **EXTEND**; otherwise,
+the default value **0** is returned.
 
 **Type:** number
 
@@ -707,7 +768,8 @@ Y coordinate of the top-left corner of the display relative to the origin, which
 yDPI: number
 ```
 
-Exact physical pixels per inch of the display in the Y axis. The value must be a floating-point number.
+Exact physical pixels per inch of the display in the Y axis. The value must be a
+floating-point number.
 
 **Type:** number
 

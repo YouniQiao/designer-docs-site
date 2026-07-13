@@ -16,7 +16,8 @@ static connect<T extends object>(
   ): T | undefined
 ```
 
-将键值对数据储存在应用内存中。如果给定的key已经存在于[AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md)中，返回对应的值；否则，通过获取 默认值的构造器构造默认值，并返回。
+将键值对数据储存在应用内存中。如果给定的key已经存在于[AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md)中，返回对应的值；否则，通过获取
+默认值的构造器构造默认值，并返回。
 
 **起始版本：** 12
 
@@ -68,7 +69,8 @@ static keys(): Array<string>
 static remove<T>(keyOrType: string | TypeConstructorWithArgs<T>): void
 ```
 
-将指定的键值对数据从[AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md)里面删除。如果指定的键值不存在于AppStorageV2中，将删除失 败。
+将指定的键值对数据从[AppStorageV2](../../../../ui/state-management/arkts-new-appstoragev2.md)里面删除。如果指定的键值不存在于AppStorageV2中，将删除失
+败。
 
 **起始版本：** 12
 

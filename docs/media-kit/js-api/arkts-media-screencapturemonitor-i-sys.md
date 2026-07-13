@@ -1,6 +1,7 @@
-# ScreenCaptureMonitor
+# ScreenCaptureMonitor (System API)
 
-A class that provides APIs to query and monitor the system screen recorder status. Before calling any API, you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
+A class that provides APIs to query and monitor the system screen recorder status. Before calling any API,
+you must use getScreenCaptureMonitor() to obtain a ScreenCaptureMonitor instance.
 
 **Since:** 18
 
@@ -32,14 +33,14 @@ Unsubscribes from state change events of the system screen recorder.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'systemScreenRecorder' | Yes | Event type, which is 'systemScreenRecorder' in this case.  This event is triggered when the state of the system screen recorder changes. |
-| callback | Callback&lt;ScreenCaptureEvent> | No |  |
+| type | 'systemScreenRecorder' | Yes | Event type, which is **'systemScreenRecorder'** in this case.This event is triggered when the state of the system screen recorder changes. |
+| callback | Callback&lt;ScreenCaptureEvent&gt; | No | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. If this parameter is not specified,the last subscription event is canceled. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not System App. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
 
 **Example**
 
@@ -48,39 +49,14 @@ screenCaptureMonitor.off('systemScreenRecorder');
 
 ```
 
-## offSystemScreenRecorder
-
-```TypeScript
-offSystemScreenRecorder(callback?: Callback<ScreenCaptureEvent>): void
-```
-
-Unsubscribes from state change events of the system screen recorder. This event is triggered when the state of the system screen recorder changes.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;ScreenCaptureEvent> | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 202 | Not System App. |
-
 ## on('systemScreenRecorder')
 
 ```TypeScript
 on(type: 'systemScreenRecorder', callback: Callback<ScreenCaptureEvent>): void
 ```
 
-Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported, you can determine whether the system screen recorder is working.
+Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported,
+you can determine whether the system screen recorder is working.
 
 **Since:** 18
 
@@ -92,14 +68,14 @@ Subscribes to state change events of the system screen recorder. From the Screen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'systemScreenRecorder' | Yes | Event type, which is 'systemScreenRecorder' in this case.  This event is triggered when the state of the system screen recorder changes. |
-| callback | Callback&lt;ScreenCaptureEvent> | Yes | Callback invoked when the event is triggered,  where ScreenCaptureEvent indicates the new state. |
+| type | 'systemScreenRecorder' | Yes | Event type, which is **'systemScreenRecorder'** in this case.This event is triggered when the state of the system screen recorder changes. |
+| callback | Callback&lt;ScreenCaptureEvent&gt; | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not System App. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
 
 **Example**
 
@@ -119,9 +95,9 @@ screenCaptureMonitor.on('systemScreenRecorder', (event: media.ScreenCaptureEvent
 onSystemScreenRecorder(callback: Callback<ScreenCaptureEvent>): void
 ```
 
-Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported, you can determine whether the system screen recorder is working. This event is triggered when the state of the system screen recorder changes.
-
-**Since:** 23
+Subscribes to state change events of the system screen recorder. From the ScreenCaptureEvent event reported,
+you can determine whether the system screen recorder is working.
+This event is triggered when the state of the system screen recorder changes.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -131,13 +107,13 @@ Subscribes to state change events of the system screen recorder. From the Screen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;ScreenCaptureEvent> | Yes | Callback invoked when the event is triggered,  where ScreenCaptureEvent indicates the new state. |
+| callback | Callback&lt;ScreenCaptureEvent&gt; | Yes | Callback invoked when the event is triggered,where ScreenCaptureEvent indicates the new state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not System App. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
 
 ## isSystemScreenRecorderWorking
 

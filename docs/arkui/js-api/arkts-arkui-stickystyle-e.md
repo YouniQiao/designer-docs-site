@@ -12,7 +12,8 @@ Enumerates the sticky styles.
 None = 0
 ```
 
-In the **ListItemGroup** component, the header is not pinned to the top, and the footer is not pinned to the bottom.
+In the **ListItemGroup** component, the header is not pinned to the top, and the footer is not pinned to the
+bottom.
 
 **Since:** 9
 

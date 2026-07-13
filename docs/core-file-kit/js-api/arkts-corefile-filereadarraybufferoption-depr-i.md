@@ -30,7 +30,12 @@ Callback invoked when the API call is complete.
 fail?: (data: string, code: number) => void
 ```
 
-Callback invoked when the API call fails. **data** indicates the error information. **code** indicates the returned error code: **202**: invalid parameter **300**: I/O error **301**: file or directory not found
+Callback invoked when the API call fails.
+**data** indicates the error information.
+**code** indicates the returned error code:
+**202**: invalid parameter
+**300**: I/O error
+**301**: file or directory not found
 
 **Type:** (data: string, code: number) => void
 
@@ -78,7 +83,8 @@ Position where the reading starts, in bytes. The default value is the start posi
 success?: (data: FileReadArrayBufferResponse) => void
 ```
 
-Callback invoked when the API call is successful. **data** is [FileReadArrayBufferResponse](arkts-corefile-filereadarraybufferresponse-depr-i.md#filereadarraybufferresponse).
+Callback invoked when the API call is successful. **data** is
+[FileReadArrayBufferResponse](arkts-corefile-filereadarraybufferresponse-depr-i.md).
 
 **Type:** (data: FileReadArrayBufferResponse) => void
 
@@ -94,7 +100,10 @@ Callback invoked when the API call is successful. **data** is [FileReadArrayBuff
 uri: string
 ```
 
-URI of the file to which the content is written. Restricted by the underlying file system of lite wearables, the value must meet the following requirements: 1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F. 2. The value can contain a maximum of 128 characters.
+URI of the file to which the content is written. Restricted by the underlying file system of lite wearables, the
+value must meet the following requirements:
+1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F.
+2. The value can contain a maximum of 128 characters.
 
 **Type:** string
 

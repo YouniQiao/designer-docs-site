@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## refreshGlobalHttpProxy
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function refreshGlobalHttpProxy(): Promise<HttpProxy>
 ```
 
-Notifies the system that global proxy re-authentication is required. Upon receiving the notification, the system will reproces the global proxy's authentication status.
+Notifies the system that global proxy re-authentication is required.
+Upon receiving the notification, the system will reproces the global proxy's authentication status.
 
 **Since:** 26.0.0
 

@@ -22,7 +22,7 @@ function getBundleStats(packageName: string, callback: AsyncCallback<BundleStats
 | --- | --- | --- | --- |
 | packageName | string | 是 | 应用包名。 |
 | callback | AsyncCallback&lt;BundleStats&gt; | 是 | 获取指定卷上的应用存储数据的空间大小之后的回调。 |
-| index | number | 否 | 分身应用的索引号，默认值为0（表示未分身的主应用）。分身应用索引号在分身创建时默认占用从1开始且当前未被占用的最小索引号，并赋值给该应用的[BundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleresourceinfo-i-sys.md#bundleresourceinfo)的appIndex属性，后续可以通过调用[getBundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleresourceinfo-f-sys.md#getbundleresourceinfo-2)接口获得。<br>**起始版本：** 12 |
+| index | number | 否 | 分身应用的索引号，默认值为0（表示未分身的主应用）。分身应用索引号在分身创建时默认占用从1开始且当前未被占用的最小索引号，并赋值给该应用的[BundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleresourceinfo-i-sys.md)的appIndex属性，后续可以通过调用[getBundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-getbundleresourceinfo-f-sys.md#getbundleresourceinfo-2)接口获得。<br>**起始版本：** 12 |
 
 **错误码：**
 
@@ -30,7 +30,7 @@ function getBundleStats(packageName: string, callback: AsyncCallback<BundleStats
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid. |
 | 13600001 | IPC error. |
 | 13600008 | No such object. |
 | 13900042 | Unknown error. |
@@ -88,7 +88,7 @@ function getBundleStats(packageName: string, index?: number): Promise<BundleStat
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | packageName | string | 是 | 应用包名。 |
-| index | number | 否 | 分身应用的索引号，默认值为0（表示未分身的主应用）。分身应用索引号在分身创建时默认占用从1开始且当前未被占用的最小索引号，并赋值给该应用的[BundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleresourceinfo-i-sys.md#bundleresourceinfo)的appIndex属性，后续可以通过调用[getBundleResourceInfo] {@link @ohos.bundle.bundleResourceManager:bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int, appIndex?: int)}接口获得。<br>**起始版本：** 12 |
+| index | number | 否 | 分身应用的索引号，默认值为0（表示未分身的主应用）。分身应用索引号在分身创建时默认占用从1开始且当前未被占用的最小索引号，并赋值给该应用的[BundleResourceInfo](../../apis-ability-kit/arkts-apis/arkts-ability-bundleresourceinfo-i-sys.md)的appIndex属性，后续可以通过调用[getBundleResourceInfo] {@link @ohos.bundle.bundleResourceManager:bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int, appIndex?: int)}接口获得。<br>**起始版本：** 12 |
 
 **返回值：**
 
@@ -102,7 +102,7 @@ function getBundleStats(packageName: string, index?: number): Promise<BundleStat
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid. |
 | 13600001 | IPC error. |
 | 13600008 | No such object. |
 | 13900042 | Unknown error. |

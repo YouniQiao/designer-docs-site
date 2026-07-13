@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { pointer } from '@ohos.multimodalInput.pointer';
+import { pointer } from '@kit.InputKit';
 ```
 
 ## setPointerVisible
@@ -12,7 +12,8 @@ import { pointer } from '@ohos.multimodalInput.pointer';
 function setPointerVisible(visible: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether the mouse pointer is visible in the current window. This API uses an asynchronous callback to return the result.
+Sets whether the mouse pointer is visible in the current window. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -30,7 +31,7 @@ Sets whether the mouse pointer is visible in the current window. This API uses a
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported;<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported;<br>**Applicable version:** 18 and later |
 
 **Example**
 
@@ -94,7 +95,7 @@ Sets whether the mouse pointer is visible in the current window. This API uses a
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported;<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported;<br>**Applicable version:** 18 and later |
 
 **Example**
 

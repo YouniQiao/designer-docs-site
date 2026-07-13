@@ -1,6 +1,9 @@
 # Run
 
-Implements a unit for text layout. Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-textline-c.md#getglyphruns-1) of the [TextLine](arkts-arkgraphics2d-textline-c.md#textline) class to create a **Run** object.
+Implements a unit for text layout.
+
+Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-textline-c.md#getglyphruns-1) of the
+[TextLine](arkts-arkgraphics2d-textline-c.md) class to create a **Run** object.
 
 **Since:** 12
 
@@ -9,7 +12,7 @@ Implements a unit for text layout. Before calling any of the following APIs, you
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## getAdvances
@@ -36,7 +39,7 @@ Obtains the glyph width array of each glyph within the specified range of the ru
 
 | Type | Description |
 | --- | --- |
-| Array&lt;common2D.Point&gt; | Returns the glyph width array of each glyph in the run unit relative to thehorizontal direction. In [common2D.Point](arkts-arkgraphics2d-point-i.md#point), the x valuerepresents the glyph width of each glyph relative to the horizontal direction, in physical pixels (px). The yvalue is a reserved field and returns **0** by default. |
+| Array&lt;common2D.Point&gt; | Returns the glyph width array of each glyph in the run unit relative to thehorizontal direction. In [common2D.Point](arkts-arkgraphics2d-point-i.md), the x valuerepresents the glyph width of each glyph relative to the horizontal direction, in physical pixels (px). The yvalue is a reserved field and returns **0** by default. |
 
 **Example**
 
@@ -190,7 +193,21 @@ struct Index {
 getImageBounds(): common2D.Rect
 ```
 
-Obtains the image boundaries of the typographic unit. Equivalent to visual boundaries, these boundaries are associated with the typographic font, font size, and characters. For example, for the string " a b " (which has a space before "a" and a space after "b"), only "a b" is visible to users, and therefore the image boundaries do not include these spaces at the beginning and end of the line. > **NOTE** > > The following figure shows the image boundaries of the string " a b ". > > ![image_ImageBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds.png) > > The following figure shows the image boundaries of the strings "j" and "E". > > ! > [image_ImageBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
+Obtains the image boundaries of the typographic unit. Equivalent to visual boundaries, these boundaries are
+associated with the typographic font, font size, and characters. For example, for the string " a b " (which has a
+space before "a" and a space after "b"), only "a b" is visible to users, and therefore the image boundaries do
+not include these spaces at the beginning and end of the line.
+
+> **NOTE**
+>
+> The following figure shows the image boundaries of the string " a b ".
+>
+> ![image_ImageBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds.png)
+>
+> The following figure shows the image boundaries of the strings "j" and "E".
+>
+> !
+> [image_ImageBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
 
 **Since:** 18
 
@@ -326,7 +343,8 @@ struct Index {
 getStringIndices(range?: Range): Array<number>
 ```
 
-Obtains an array of character indices for glyphs within a specified range of this run, where the indices are offsets relative to the entire paragraph.
+Obtains an array of character indices for glyphs within a specified range of this run, where the indices are
+offsets relative to the entire paragraph.
 
 **Since:** 18
 
@@ -459,7 +477,20 @@ Obtains the text style of this run.
 getTypographicBounds(): TypographicBounds
 ```
 
-Obtains the typographic boundaries of the typographic unit. These boundaries are associated with the typographic font and font size, but not with the characters. For example, for the string " a b " (which has a space before "a " and a space after "b"), the typographic boundaries include the spaces at the beginning and end of the line. > **NOTE** > > The following figure shows the typographic boundaries of the string " a b ". > > ![image_TypographicBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png) > > The following figure shows the typographic boundaries of the strings "j" and "E". > > ! > [image_TypographicBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
+Obtains the typographic boundaries of the typographic unit. These boundaries are associated with the typographic
+font and font size, but not with the characters. For example, for the string " a b " (which has a space before "a
+" and a space after "b"), the typographic boundaries include the spaces at the beginning and end of the line.
+
+> **NOTE**
+>
+> The following figure shows the typographic boundaries of the string " a b ".
+>
+> ![image_TypographicBounds.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)
+>
+> The following figure shows the typographic boundaries of the strings "j" and "E".
+>
+> !
+> [image_TypographicBounds_Character.png](../../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
 
 **Since:** 18
 

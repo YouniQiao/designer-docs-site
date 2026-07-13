@@ -11,7 +11,7 @@ Object used for store least recently used sendable Object.
 ## Modules to Import
 
 ```TypeScript
-import { ArkTSUtils } from '@arkts.utils';
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 ## clear
@@ -339,7 +339,13 @@ Remove a specified key and its associated value from the SendableLruCache.
 toString(): string
 ```
 
-Return the string representation of the object. The returned string format is: SendableLruCache[ maxSize = (maxSize), hits = (hitCount), misses = (missCount), hitRate = (hitRate) ]. (maxSize) represents the maximum size of the cache, (hitCount) indicates the number of successful query matches, (missCount) denotes the number of failed query matches, (hitRate) signifies the query match rate.
+Return the string representation of the object.
+The returned string format is: SendableLruCache[ maxSize = (maxSize), hits = (hitCount),
+misses = (missCount), hitRate = (hitRate) ].
+(maxSize) represents the maximum size of the cache,
+(hitCount) indicates the number of successful query matches,
+(missCount) denotes the number of failed query matches,
+(hitRate) signifies the query match rate.
 
 **Since:** 18
 

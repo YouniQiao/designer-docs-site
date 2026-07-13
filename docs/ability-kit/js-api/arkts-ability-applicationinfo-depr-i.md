@@ -1,12 +1,19 @@
 # ApplicationInfo
 
-The module provides application information. Unless otherwise specified, the information is obtained through [bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3) . > **NOTE** > > The APIs of this module have been deprecated since API version 9. You are advised to use > [bundleManager-ApplicationInfo](arkts-ability-applicationinfo-depr-i.md#applicationinfo) instead.
+The module provides application information. Unless otherwise specified, the information is obtained through
+[bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3)
+.
+
+> **NOTE**
+>
+> The APIs of this module have been deprecated since API version 9. You are advised to use
+> [bundleManager-ApplicationInfo](arkts-ability-applicationinfo-depr-i.md) instead.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [applicationInfo:ApplicationInfo](arkts-ability-applicationinfo-depr-i.md#applicationinfo)
+**Substitutes:** [applicationInfo:ApplicationInfo](arkts-ability-applicationinfo-depr-i.md)
 
 **System capability:** SystemCapability.BundleManager.BundleFramework
 
@@ -36,7 +43,8 @@ Access token ID of the application.
 readonly codePath: string
 ```
 
-Installation directory of the application. Do not access resource files using concatenated paths. Use [@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md#resourcemanager) instead.
+Installation directory of the application. Do not access resource files using concatenated paths. Use
+[@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.
 
 **Type:** string
 
@@ -134,7 +142,8 @@ Type of the application, for example, gaming, social networking, movies, and new
 readonly entryDir: string
 ```
 
-Path for storing application files. Do not access resource files using concatenated paths. Use [@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md#resourcemanager) instead.
+Path for storing application files. Do not access resource files using concatenated paths. Use
+[@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.
 
 **Type:** string
 
@@ -232,7 +241,11 @@ ID of the application label.
 readonly metaData: Map<string, Array<CustomizeData>>
 ```
 
-Custom metadata of the application. The value is obtained by passing in GET_APPLICATION_INFO_WITH_METADATA to [bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3) .
+Custom metadata of the application.
+
+The value is obtained by passing in GET_APPLICATION_INFO_WITH_METADATA to
+[bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3)
+.
 
 **Type:** Map<string, Array<CustomizeData>>
 
@@ -272,7 +285,8 @@ Application module information.
 readonly moduleSourceDirs: Array<string>
 ```
 
-Relative paths for storing application resources. Do not access resource files using concatenated paths. Use [@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md#resourcemanager) instead.
+Relative paths for storing application resources. Do not access resource files using concatenated paths. Use
+[@ohos.resourceManager](../../apis-localization-kit/arkts-apis/arkts-resourcemanager.md) instead.
 
 **Type:** Array<string>
 
@@ -310,7 +324,11 @@ Application name.
 readonly permissions: Array<string>
 ```
 
-Permissions required for accessing the application. The value is obtained by passing in GET_APPLICATION_INFO_WITH_PERMISSION to [bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3) .
+Permissions required for accessing the application.
+
+The value is obtained by passing in GET_APPLICATION_INFO_WITH_PERMISSION to
+[bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3)
+.
 
 **Type:** Array<string>
 
@@ -370,7 +388,8 @@ Whether the application is removable. **true** if removable, **false** otherwise
 readonly supportedModes: number
 ```
 
-Modes supported by the application. Currently, only the **drive** mode is defined. This attribute applies only to telematics devices.
+Modes supported by the application. Currently, only the **drive** mode is defined. This attribute applies only to
+telematics devices.
 
 **Type:** number
 

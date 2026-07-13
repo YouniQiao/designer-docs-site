@@ -1,6 +1,12 @@
 # RotationChangeResult
 
-Describes the information returned by the application during window rotation changes. The system uses the information to adjust the size of the current window rectangle. If the returned information is about the rotation change of the main window, the system does not change the size of the main window. There are limitations on the size of application windows and system windows. For details about specific restrictions and rules, see [resize](arkts-arkui-window-i.md#resize-2).
+Describes the information returned by the application during window rotation changes. The system uses the
+information to adjust the size of the current window rectangle. If the returned information is about the rotation
+change of the main window, the system does not change the size of the main window.
+
+There are limitations on the size of application windows and system windows. For details about specific
+restrictions and rules, see
+[resize](arkts-arkui-window-i.md#resize-2).
 
 **Since:** 19
 
@@ -9,7 +15,7 @@ Describes the information returned by the application during window rotation cha
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## rectType

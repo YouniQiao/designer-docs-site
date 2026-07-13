@@ -9,7 +9,7 @@ Defines a struct for the details about the device-cloud sync process.
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## deleted
@@ -18,7 +18,8 @@ import { relationalStore } from '@ohos.data.relationalStore';
 deleted: Array<string> | Array<number>
 ```
 
-Location where data is deleted. If the primary key of the table is of the string type, it is the value of the primary key. Otherwise, it is the row number of the deleted data.
+Location where data is deleted. If the primary key of the table is of the string type, it is the value of the
+primary key. Otherwise, it is the row number of the deleted data.
 
 **Type:** Array<string> | Array<number>
 
@@ -32,7 +33,8 @@ Location where data is deleted. If the primary key of the table is of the string
 inserted: Array<string> | Array<number>
 ```
 
-Location where data is inserted. If the primary key of the table is of the string type, it is the value of the primary key. Otherwise, it is the row number of the inserted data.
+Location where data is inserted. If the primary key of the table is of the string type, it is the value of the
+primary key. Otherwise, it is the row number of the inserted data.
 
 **Type:** Array<string> | Array<number>
 
@@ -74,7 +76,8 @@ Type of the data changed, which can be data or asset.
 updated: Array<string> | Array<number>
 ```
 
-Location where data is updated. If the primary key of the table is of the string type, it is the value of the primary key. Otherwise, it is the row number of the updated data.
+Location where data is updated. If the primary key of the table is of the string type, it is the value of the
+primary key. Otherwise, it is the row number of the updated data.
 
 **Type:** Array<string> | Array<number>
 

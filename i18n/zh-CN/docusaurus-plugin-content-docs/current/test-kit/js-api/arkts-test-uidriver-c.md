@@ -1,12 +1,17 @@
 # UiDriver
 
-**UiDriver**类是UiTest框架的主要入口。它提供组件匹配/查找、按键注入、坐标单击/滑动和截图等功能的API。 此类提供的所有API（除**UiDriver.create()**外）都使用Promise返回结果，必须使用**await**调用。
+UiDriver类为uitest测试框架的总入口，提供控件匹配/查找，按键注入，坐标点击/滑动，截图等API。
+该类提供的方法除UiDriver.create()以外的所有方法都使用Promise方式作为异步方法，需使用await调用。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[Driver<sup>9+</sup>](arkts-test-driver-c.md)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** [Driver](arkts-test-driver-c.md#driver)
+**替代接口：** [Driver](arkts-test-driver-c.md)
 
 **系统能力：** SystemCapability.Test.UiTest
 
@@ -16,7 +21,12 @@
 assertComponentExist(by: By): Promise<void>
 ```
 
-断言当前页面上存在与给定属性匹配的组件。如果组件不存在，该API将抛出JS异常，导致当前测试用例失败。 该API使用Promise返回结果。
+断言API，用于断言当前界面存在满足给出的目标控件属性的控件; 如果控件不存在，该API将抛出JS异常，使当前测试用例失败。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[assertComponentExist<sup>9+</sup>](arkts-test-driver-c.md#assertcomponentexist-1)替
+> 代。
 
 **起始版本：** 8
 
@@ -30,21 +40,21 @@ assertComponentExist(by: By): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| by | By | 是 | 目标组件的属性。 |
+| by | By | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 输入参数无效。 |
-| [17000002](../errorcode-uitest.md#17000002-当前无法调用) | 该API不支持并发调用。 |
-| [17000003](../errorcode-uitest.md#17000003-断言失败) | 断言失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | if the input parameters are invalid. |
+| [17000002](../errorcode-uitest.md#17000002-接口不支持并发调用) | The API does not support concurrent calls. |
+| [17000003](../errorcode-uitest.md#17000003-断言失败) | if the assertion failed. |
 
 **示例：**
 
@@ -65,7 +75,11 @@ async function demo() {
 click(x: number, y: number): Promise<void>
 ```
 
-根据给定坐标单击此**UiDriver**对象的特定点。该API使用Promise返回结果。
+UiDriver对象采取如下操作：在目标坐标点单击。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[click<sup>9+</sup>](arkts-test-component-c.md#click-1)替代。
 
 **起始版本：** 8
 
@@ -79,14 +93,14 @@ click(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -107,7 +121,11 @@ async function demo() {
 static create(): UiDriver
 ```
 
-创建**UiDriver**对象并返回创建的对象。该API为静态API。 > **说明：** > > 该方法自API版本8起支持，自API版本9起废弃。建议使用[create<sup>9+</sup>](arkts-test-driver-c.md#create-1)替代。
+静态方法，构造一个UiDriver对象，并返回该对象。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[create<sup>9+</sup>](arkts-test-driver-c.md#create-1)替代。
 
 **起始版本：** 8
 
@@ -121,7 +139,7 @@ static create(): UiDriver
 
 | 类型 | 说明 |
 | --- | --- |
-| UiDriver | - 创建的**UiDriver**对象。 |
+| UiDriver | - 返回构造的UiDriver对象。 |
 
 **示例：**
 
@@ -141,7 +159,11 @@ async function demo() {
 delayMs(duration: number): Promise<void>
 ```
 
-在指定持续时间内延迟此**UiDriver**对象。该API使用Promise返回结果。
+UiDriver对象在给定的时间内延时。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[delayMs<sup>9+</sup>](arkts-test-driver-c.md#delayms-1)替代。
 
 **起始版本：** 8
 
@@ -155,13 +177,13 @@ delayMs(duration: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| duration | number | 是 | 持续时间。<br>单位：ms |
+| duration | number | 是 | 给定的时间。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -182,7 +204,11 @@ async function demo() {
 doubleClick(x: number, y: number): Promise<void>
 ```
 
-根据给定坐标双击此**UiDriver**对象的特定点。该API使用Promise返回结果。
+UiDriver对象采取如下操作：在目标坐标点双击。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[doubleClick<sup>9+</sup>](arkts-test-component-c.md#doubleclick-1)替代。
 
 **起始版本：** 8
 
@@ -196,14 +222,14 @@ doubleClick(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -224,7 +250,11 @@ async function demo() {
 findComponent(by: By): Promise<UiComponent>
 ```
 
-在此**UiDriver**对象中查找与给定属性匹配的目标组件。该API使用Promise返回结果。
+在UiDriver对象中，根据给出的目标控件属性要求查找目标控件。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[findComponent<sup>9+</sup>](arkts-test-driver-c.md#findcomponent-1)替代。
 
 **起始版本：** 8
 
@@ -238,13 +268,13 @@ findComponent(by: By): Promise<UiComponent>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| by | By | 是 | 目标组件的属性。 |
+| by | By | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;UiComponent&gt; | - 用于返回组件的Promise对象。 |
+| Promise&lt;UiComponent&gt; | - Promise对象，返回控件对象。 |
 
 **示例：**
 
@@ -265,7 +295,11 @@ async function demo() {
 findComponents(by: By): Promise<Array<UiComponent>>
 ```
 
-在此**UiDriver**对象中查找所有与给定属性匹配的组件。该API使用Promise返回结果。
+在UiDriver对象中，根据给出的目标控件属性要求查找出所有匹配控件，以列表保存。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[findComponents<sup>9+</sup>](arkts-test-driver-c.md#findcomponents-1)替代。
 
 **起始版本：** 8
 
@@ -279,13 +313,13 @@ findComponents(by: By): Promise<Array<UiComponent>>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| by | By | 是 | 目标组件的属性。 |
+| by | By | 是 | 目标控件的属性要求。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;UiComponent&gt;&gt; | - 用于返回组件列表的Promise对象。 |
+| Promise&lt;Array&lt;UiComponent&gt;&gt; | - Promise对象，返回控件对象的列表。 |
 
 **示例：**
 
@@ -306,7 +340,11 @@ async function demo() {
 longClick(x: number, y: number): Promise<void>
 ```
 
-根据给定坐标长按此**UiDriver**对象的特定点。该API使用Promise返回结果。
+UiDriver对象采取如下操作：在目标坐标点长按下鼠标左键。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[longClick<sup>9+</sup>](arkts-test-component-c.md#longclick-1)替代。
 
 **起始版本：** 8
 
@@ -320,14 +358,14 @@ longClick(x: number, y: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| x | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| y | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| x | number | 是 | 以number的形式传入目标点的横坐标信息，取值范围：大于等于0的整数。 |
+| y | number | 是 | 以number的形式传入目标点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -348,7 +386,11 @@ async function demo() {
 pressBack(): Promise<void>
 ```
 
-在此**UiDriver**对象上按下返回键。该API使用Promise返回结果。
+UiDriver对象进行点击BACK键的操作。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[pressBack<sup>9+</sup>](arkts-test-driver-c.md#pressback-1)替代。
 
 **起始版本：** 8
 
@@ -362,7 +404,7 @@ pressBack(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -383,7 +425,11 @@ async function demo() {
 screenCap(savePath: string): Promise<boolean>
 ```
 
-截取此**UiDriver**对象的当前屏幕并将其保存为PNG图像到给定的保存路径。该API使用Promise返回结果。
+UiDriver对象采取如下操作：捕获当前屏幕，并保存为PNG格式的图片至给出的保存路径中。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[screenCap<sup>9+</sup>](arkts-test-driver-c.md#screencap-1)替代。
 
 **起始版本：** 8
 
@@ -403,7 +449,7 @@ screenCap(savePath: string): Promise<boolean>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean&gt; | - 用于返回截图操作是否成功的Promise对象。值**true**表示截图操作成功，**false**表示失败。 |
+| Promise&lt;boolean&gt; | - Promise对象，返回截图操作是否成功完成。true：成功完成，false：未成功完成。 |
 
 **示例：**
 
@@ -424,7 +470,11 @@ async function demo() {
 swipe(startx: number, starty: number, endx: number, endy: number): Promise<void>
 ```
 
-在此**UiDriver**对象上根据给定坐标从起点滑动到终点。该API使用Promise返回结果。
+UiDriver对象采取如下操作：从给出的起始坐标点滑向给出的目的坐标点。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[swipe<sup>9+</sup>](arkts-test-driver-c.md#swipe-1)替代。
 
 **起始版本：** 8
 
@@ -438,16 +488,16 @@ swipe(startx: number, starty: number, endx: number, endy: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| startx | number | 是 | 数值，表示起点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| starty | number | 是 | 数值，表示起点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
-| endx | number | 是 | 数值，表示目标点的水平坐标。该值为大于或等于0的整数。<br>单位：px |
-| endy | number | 是 | 数值，表示目标点的垂直坐标。该值为大于或等于0的整数。<br>单位：px |
+| startx | number | 是 | 以number的形式传入起始点的横坐标信息，取值范围：大于等于0的整数。 |
+| starty | number | 是 | 以number的形式传入起始点的纵坐标信息，取值范围：大于等于0的整数。 |
+| endx | number | 是 | 以number的形式传入目的点的横坐标信息，取值范围：大于等于0的整数。 |
+| endy | number | 是 | 以number的形式传入目的点的纵坐标信息，取值范围：大于等于0的整数。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 
@@ -468,7 +518,11 @@ async function demo() {
 triggerKey(keyCode: number): Promise<void>
 ```
 
-触发此**UiDriver**对象中与给定键码匹配的按键。该API使用Promise返回结果。
+UiDriver对象采取如下操作：通过key值找到对应键并点击。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[triggerKey<sup>9+</sup>](arkts-test-driver-c.md#triggerkey-1)替代。
 
 **起始版本：** 8
 
@@ -482,13 +536,13 @@ triggerKey(keyCode: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| keyCode | number | 是 | 键值。该值为大于或等于0的整数。详见[KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode)。 |
+| keyCode | number | 是 | 指定的key值，取值大于等于0的整数，取值范围：[KeyCode键码值](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | - 无返回值的Promise对象。 |
+| Promise&lt;void&gt; | - Promise对象。无返回结果的Promise对象。 |
 
 **示例：**
 

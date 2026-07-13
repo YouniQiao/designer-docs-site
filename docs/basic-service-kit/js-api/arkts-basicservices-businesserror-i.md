@@ -2,7 +2,7 @@
 
 Defines the error parameter.
 
-**Inheritance/Implementation:** BusinessError extends [Error](../../apis-na/arkts-apis/arkts-na-error-i.md#error)
+**Inheritance/Implementation:** BusinessError extends [Error](../../apis-na/arkts-apis/arkts-na-error-i.md)
 
 **Since:** 6
 
@@ -11,7 +11,7 @@ Defines the error parameter.
 ## Modules to Import
 
 ```TypeScript
-import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@ohos.base';
+import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.BasicServicesKit';
 ```
 
 ## code
@@ -38,7 +38,8 @@ Error code returned when the API fails to be called.
 data?: T
 ```
 
-Error message returned when the API fails to be called. If this parameter is left empty, the error object does not contain additional data.
+Error message returned when the API fails to be called. If this parameter is left empty, the error object does
+not contain additional data.
 
 **Type:** T
 

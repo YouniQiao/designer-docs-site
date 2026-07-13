@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## cancelRetentionState
@@ -12,7 +12,11 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function cancelRetentionState(docUris: Array<string>): Promise<void>
 ```
 
-Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when the DLP file is closed. This API uses a promise to return the result. This API is used to cancel the retention state for sandbox application and restore the default behavior to release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
+Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when
+the DLP file is closed. This API uses a promise to return the result.
+
+This API is used to cancel the retention state for sandbox application and restore the default behavior to
+release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
 
 **Since:** 10
 
@@ -59,7 +63,11 @@ dlpPermission.cancelRetentionState([uri]).then(() => { // Cancel the retention s
 function cancelRetentionState(docUris: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when the DLP file is closed. This API uses an asynchronous callback to return the result. This API is used to cancel the retention state for sandbox application and restore the default behavior to release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
+Cancels the sandbox retention state, that is, allows the sandbox application to be automatically uninstalled when
+the DLP file is closed. This API uses an asynchronous callback to return the result.
+
+This API is used to cancel the retention state for sandbox application and restore the default behavior to
+release system resources. It is applicable to scenarios where the DLP file is no longer frequently accessed.
 
 **Since:** 10
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpSetDlpFeature } from '@ohos.dlpSetDlpFeature';
+import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
 ```
 
 ## setDlpFeature
@@ -12,7 +12,13 @@ import { dlpSetDlpFeature } from '@ohos.dlpSetDlpFeature';
 function setDlpFeature(status: DlpFeatureStatus): Promise<StatusInfoResult>
 ```
 
-Sets the DLP status. This API uses a promise to return the result. The system enables or disables the DLP protection function based on the DLP status specified using this API. When this feature is enabled, right-click the file to be encrypted, and the encryption option is displayed in the shortcut menu. Files in .txt, .pdf, .xls, .xlsx, .ppt, .pptx, .doc, and .docx formats can be encrypted. This API is used to enable or disable the DLP function in enterprise policies.
+Sets the DLP status. This API uses a promise to return the result. The system enables or disables the DLP
+protection function based on the DLP status specified using this API.
+
+When this feature is enabled, right-click the file to be encrypted, and the encryption option is displayed in the
+shortcut menu. Files in .txt, .pdf, .xls, .xlsx, .ppt, .pptx, .doc, and .docx formats can be encrypted.
+
+This API is used to enable or disable the DLP function in enterprise policies.
 
 **Since:** 26.0.0
 
@@ -41,4 +47,19 @@ Sets the DLP status. This API uses a promise to return the result. The system en
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs. |
 | [19100001](../errorcode-dlp.md#19100001-invalid-parameter) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-system-service-abnormal) | The system ability works abnormally. |
+
+**Example**
+
+```TypeScript
+import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
+
+async function exampleFunction() {
+  let statusInfoResult: dlpSetDlpFeature.StatusInfoResult =
+    await dlpSetDlpFeature.setDlpFeature(dlpSetDlpFeature.DlpFeatureStatus.ENABLED_FEATURE); // Record the execution result.
+  console.info('setDlpFeature result: ', JSON.stringify(statusInfoResult));
+} // Set the DLP status.
+
+exampleFunction();
+
+```
 

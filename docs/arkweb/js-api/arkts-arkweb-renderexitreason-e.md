@@ -12,7 +12,9 @@ Enumerates the reasons why the rendering process exits.
 ProcessAbnormalTermination = 0
 ```
 
-The rendering process terminates abnormally. Possible causes include: rendering process startup timeout, system reclaiming older rendering processes upon reaching the process limit, or simultaneous closure of multiple tabs.
+The rendering process terminates abnormally. Possible causes include: rendering
+process startup timeout, system reclaiming older rendering processes upon reaching the process limit, or simultaneous
+closure of multiple tabs.
 
 **Since:** 9
 

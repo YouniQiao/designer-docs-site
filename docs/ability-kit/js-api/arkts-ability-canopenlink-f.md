@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## canOpenLink
@@ -12,7 +12,9 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function canOpenLink(link: string): boolean
 ```
 
-Checks whether the target application can be accessed based on the provided link. The scheme specified in the link must be configured in the **querySchemes** field of the [module.json5](../../../../quick-start/module-configuration-file.md) file.
+Checks whether the target application can be accessed based on the provided link. The scheme specified in the link
+must be configured in the **querySchemes** field of the
+[module.json5](../../../../quick-start/module-configuration-file.md) file.
 
 **Since:** 12
 

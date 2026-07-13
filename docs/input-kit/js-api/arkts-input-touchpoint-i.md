@@ -9,7 +9,7 @@ Represents information about a single touch point on the display.
 ## Modules to Import
 
 ```TypeScript
-import { inputEventClient } from '@ohos.multimodalInput.inputEventClient';
+import { inputEventClient } from '@kit.InputKit';
 ```
 
 ## displayId
@@ -34,7 +34,8 @@ Unique ID of the display where the touch point is located. The value must be an 
 displayX: number
 ```
 
-X coordinate of the touch point relative to the left edge of the display, in pixels. The value must be an integer.
+X coordinate of the touch point relative to the left edge of the display, in pixels. The value must be an
+integer.
 
 **Type:** number
 

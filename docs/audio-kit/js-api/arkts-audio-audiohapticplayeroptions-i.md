@@ -9,7 +9,7 @@ Describes the options for the audio-haptic player.
 ## Modules to Import
 
 ```TypeScript
-import { audioHaptic } from '@ohos.multimedia.audioHaptic';
+import { audioHaptic } from '@kit.AudioKit';
 ```
 
 ## muteAudio
@@ -18,7 +18,8 @@ import { audioHaptic } from '@ohos.multimedia.audioHaptic';
 muteAudio?: boolean
 ```
 
-Whether to mute the audio. **true** to mute, **false** otherwise. If this parameter is not specified, the default value **false** is used.
+Whether to mute the audio. **true** to mute, **false** otherwise. If this parameter is not specified, the default
+value **false** is used.
 
 **Type:** boolean
 
@@ -32,7 +33,8 @@ Whether to mute the audio. **true** to mute, **false** otherwise. If this parame
 muteHaptics?: boolean
 ```
 
-Whether to mute haptics feedback. **true** to mute, **false** otherwise. If this parameter is not specified, the default value **false** is used.
+Whether to mute haptics feedback. **true** to mute, **false** otherwise. If this parameter is not specified, the
+default value **false** is used.
 
 **Type:** boolean
 

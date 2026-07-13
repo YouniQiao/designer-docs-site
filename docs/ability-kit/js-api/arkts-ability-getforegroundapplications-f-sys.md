@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getForegroundApplications
@@ -12,7 +12,9 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getForegroundApplications(callback: AsyncCallback<Array<AppStateData>>): void
 ```
 
-Obtains applications that are running in the foreground. The application information is defined by [AppStateData](arkts-ability-appstatedata-c.md#appstatedata). This API uses an asynchronous callback to return the result.
+Obtains applications that are running in the foreground. The application information is defined by
+[AppStateData](arkts-ability-appstatedata-c.md). This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -68,7 +70,8 @@ try {
 function getForegroundApplications(): Promise<Array<AppStateData>>
 ```
 
-Obtains applications that are running in the foreground. The application information is defined by [AppStateData](arkts-ability-appstatedata-c.md#appstatedata). This API uses a promise to return the result.
+Obtains applications that are running in the foreground. The application information is defined by
+[AppStateData](arkts-ability-appstatedata-c.md). This API uses a promise to return the result.
 
 **Since:** 9
 

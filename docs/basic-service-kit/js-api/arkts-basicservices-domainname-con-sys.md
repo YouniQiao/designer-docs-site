@@ -6,7 +6,9 @@
 const USER_SECURITY: string
 ```
 
-Provide the domain name for user security property. <p>This constants is a domain name for user security level key.
+Provide the domain name for user security property.
+
+<p>This constants is a domain name for user security level key.
 
 **Since:** 11
 

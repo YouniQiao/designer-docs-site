@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { systemSoundManager } from '@ohos.multimedia.systemSoundManager';
+import { systemSoundManager } from '@kit.AudioKit';
 ```
 
 ## createSystemSoundPlayer
@@ -12,7 +12,8 @@ import { systemSoundManager } from '@ohos.multimedia.systemSoundManager';
 function createSystemSoundPlayer(): Promise<SystemSoundPlayer | null>
 ```
 
-Creates a SystemSoundPlayer instance. This function uses a promise to return the result. This player can be used to play some system sounds for media or camera actions.
+Creates a SystemSoundPlayer instance. This function uses a promise to return the result.
+This player can be used to play some system sounds for media or camera actions.
 
 **Since:** 23
 

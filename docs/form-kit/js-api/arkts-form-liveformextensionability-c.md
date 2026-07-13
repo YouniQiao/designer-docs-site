@@ -1,8 +1,9 @@
 # LiveFormExtensionAbility
 
-Interactive widget extension class. It provides APIs for the widget provider to receive notifications about widget creation and destruction.
+Interactive widget extension class. It provides APIs for the widget provider to receive notifications about widget
+creation and destruction.
 
-**Inheritance/Implementation:** LiveFormExtensionAbility extends [ExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-extensionability-c.md#extensionability)
+**Inheritance/Implementation:** LiveFormExtensionAbility extends [ExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-extensionability-c.md)
 
 **Since:** 20
 
@@ -11,7 +12,7 @@ Interactive widget extension class. It provides APIs for the widget provider to 
 ## Modules to Import
 
 ```TypeScript
-import { LiveFormInfo } from '@ohos.app.form.LiveFormExtensionAbility';
+import { LiveFormInfo } from '@kit.FormKit';
 ```
 
 ## onLiveFormCreate
@@ -96,7 +97,8 @@ export default class LiveFormExtAbility extends LiveFormExtensionAbility {
 context: LiveFormExtensionContext
 ```
 
-Context of the **LiveFormExtensionAbility**. This context is inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext).
+Context of the **LiveFormExtensionAbility**. This context is inherited from
+[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md).
 
 **Type:** LiveFormExtensionContext
 

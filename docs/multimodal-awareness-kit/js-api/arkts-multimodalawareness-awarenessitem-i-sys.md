@@ -1,6 +1,10 @@
 # AwarenessItem (System API)
 
-Provides page information, which includes: * Basic page information, such as page content, links, and screenshots. * Page entity information, such as the title and body of a page article. * Page interaction information, such as clicks and scrolling.
+Provides page information, which includes:
+
+* Basic page information, such as page content, links, and screenshots.
+* Page entity information, such as the title and body of a page article.
+* Page interaction information, such as clicks and scrolling.
 
 **Since:** 23
 
@@ -11,7 +15,7 @@ Provides page information, which includes: * Basic page information, such as pag
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## itemInfo
@@ -20,7 +24,8 @@ import { onScreen } from '@ohos.multimodalAwareness.onScreen';
 itemInfo: Record<string, Object>
 ```
 
-Entity information of the awareness result, including the content, links, screenshots, and other entity information.
+Entity information of the awareness result, including the content, links, screenshots, and other entity
+information.
 
 **Type:** Record<string, Object>
 

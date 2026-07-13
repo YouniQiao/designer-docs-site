@@ -9,7 +9,7 @@ Provides preferred playback settings for player.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## enableCameraPostprocessing
@@ -18,7 +18,8 @@ import { media } from '@ohos.multimedia.media';
 enableCameraPostprocessing?: boolean
 ```
 
-Indicates whether to enable camera post-processing during video playback, which is used to apply image enhancements when playing back video content.
+Indicates whether to enable camera post-processing during video playback,
+which is used to apply image enhancements when playing back video content.
 
 **Type:** boolean
 

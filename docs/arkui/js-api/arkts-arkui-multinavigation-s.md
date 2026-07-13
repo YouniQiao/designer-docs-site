@@ -1,6 +1,14 @@
 # MultiNavigation
 
-**MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices. > **NOTE** > Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this > document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and > **pushDestination**) may lead to unpredictable issues. > In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues.
+**MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices.
+
+> **NOTE**
+
+> Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this
+> document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and
+> **pushDestination**) may lead to unpredictable issues.
+
+> In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues.
 
 **Since:** 14
 
@@ -9,7 +17,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@ohos.arkui.advanced.MultiNavigation';
+import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@kit.ArkUI';
 ```
 
 ## multiStack
@@ -44,7 +52,7 @@ Routing rules for loading the target page.
 
 **Since:** 14
 
-**Decorator:** @Builder
+**Decorator:** @BuilderParam
 
 **Model restriction:** This API can be used only in the stage model.
 

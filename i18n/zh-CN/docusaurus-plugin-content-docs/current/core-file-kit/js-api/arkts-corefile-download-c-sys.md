@@ -50,7 +50,7 @@ off(evt: 'progress', callback: (pg: DownloadProgress) => void): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | evt | 'progress' | 是 | 取消订阅的事件类型，取值为'progress'（同步过程事件）。 |
-| callback | (pg: DownloadProgress) =&gt; void | 是 | 回调函数。云文件下载过程事件，入参为[DownloadProgress](arkts-corefile-downloadprogress-i.md#downloadprogress)，返回值为void。 |
+| callback | (pg: DownloadProgress) =&gt; void | 是 | 回调函数。云文件下载过程事件，入参为[DownloadProgress](arkts-corefile-downloadprogress-i.md)，返回值为void。 |
 
 **错误码：**
 
@@ -58,7 +58,7 @@ off(evt: 'progress', callback: (pg: DownloadProgress) => void): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error |
 
 **示例：**
@@ -104,7 +104,7 @@ off(evt: 'progress'): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error |
 
 **示例：**
@@ -141,7 +141,7 @@ on(evt: 'progress', callback: (pg: DownloadProgress) => void): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | evt | 'progress' | 是 | 订阅的事件类型，取值为'progress'（下载过程事件）。 |
-| callback | (pg: DownloadProgress) =&gt; void | 是 | 回调函数。云文件下载过程事件，入参为[DownloadProgress](arkts-corefile-downloadprogress-i.md#downloadprogress)，返回值为void。 |
+| callback | (pg: DownloadProgress) =&gt; void | 是 | 回调函数。云文件下载过程事件，入参为[DownloadProgress](arkts-corefile-downloadprogress-i.md)，返回值为void。 |
 
 **错误码：**
 
@@ -149,7 +149,7 @@ on(evt: 'progress', callback: (pg: DownloadProgress) => void): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13600001 | IPC error |
 
 **示例：**
@@ -197,7 +197,7 @@ start(uri: string): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13900002 | No such file or directory. |
 | 13900025 | No space left on device. |
 
@@ -250,7 +250,7 @@ start(uri: string, callback: AsyncCallback<void>): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 | 13900002 | No such file or directory. |
 | 13900025 | No space left on device. |
 
@@ -278,7 +278,11 @@ download.start(uri, (err: BusinessError) => {
 stop(uri: string): Promise<void>
 ```
 
-异步方法停止云文件下载。使用Promise异步回调。 > **说明：** > > 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
+异步方法停止云文件下载。使用Promise异步回调。
+
+> **说明：**
+>
+> 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
 
 **起始版本：** 10
 
@@ -306,7 +310,7 @@ stop(uri: string): Promise<void>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 
 **示例：**
 
@@ -330,7 +334,11 @@ download.stop(uri).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-异步方法停止云文件下载。使用callback异步回调。 > **说明：** > > 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
+异步方法停止云文件下载。使用callback异步回调。
+
+> **说明：**
+>
+> 调用stop接口，当前文件下载流程会终止，缓存文件会被删除，再次调用start接口会重新开始下载。
 
 **起始版本：** 10
 
@@ -353,7 +361,7 @@ stop(uri: string, callback: AsyncCallback<void>): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:1.Mandatory parameters are leftunspecified;<br>2.Incorrect parameter types. |
 
 **示例：**
 

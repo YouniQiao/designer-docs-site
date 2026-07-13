@@ -9,7 +9,7 @@ Describes the floating ball window information.
 ## Modules to Import
 
 ```TypeScript
-import { floatingBall } from '@ohos.window.floatingBall';
+import { floatingBall } from '@kit.ArkUI';
 ```
 
 ## windowId
@@ -18,7 +18,8 @@ import { floatingBall } from '@ohos.window.floatingBall';
 readonly windowId: number
 ```
 
-ID of the floating ball window. The value range is all integers.
+ID of the floating ball window.
+The value range is all integers.
 
 **Type:** number
 

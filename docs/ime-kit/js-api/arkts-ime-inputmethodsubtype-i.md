@@ -1,6 +1,8 @@
 # InputMethodSubtype
 
-The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English keyboard.
+The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input
+method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English
+keyboard.
 
 **Since:** 9
 
@@ -9,7 +11,7 @@ The **InputMethodSubtype** module provides APIs for managing the attributes of i
 ## Modules to Import
 
 ```TypeScript
-import { InputMethodSubtype } from '@ohos.InputMethodSubtype';
+import { InputMethodSubtype } from '@kit.IMEKit';
 ```
 
 ## extra
@@ -18,7 +20,12 @@ import { InputMethodSubtype } from '@ohos.InputMethodSubtype';
 extra?: object
 ```
 
-Mandatory. Extra information of the input method subtype. **NOTE** - This parameter is optional since API version 10. - This parameter is reserved and currently has no specific meaning.
+Mandatory. Extra information of the input method subtype.
+
+**NOTE**
+
+- This parameter is optional since API version 10.
+- This parameter is reserved and currently has no specific meaning.
 
 **Type:** object
 

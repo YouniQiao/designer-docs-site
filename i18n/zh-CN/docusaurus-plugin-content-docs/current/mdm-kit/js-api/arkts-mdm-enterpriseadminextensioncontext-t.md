@@ -4,7 +4,9 @@
 export type EnterpriseAdminExtensionContext = _EnterpriseAdminExtensionContext.default
 ```
 
-EnterpriseAdminExtensionContext是 [EnterpriseAdminExtensionAbility](arkts-mdm-enterpriseadminextensionability-c.md#enterpriseadminextensionability) 的上下文环境，继承自[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)。
+EnterpriseAdminExtensionContext是
+[EnterpriseAdminExtensionAbility](arkts-mdm-enterpriseadminextensionability-c.md)
+的上下文环境，继承自[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)。
 
 **起始版本：** 23
 

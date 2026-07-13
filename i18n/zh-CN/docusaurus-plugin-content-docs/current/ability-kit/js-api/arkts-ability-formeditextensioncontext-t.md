@@ -4,7 +4,8 @@
 export type FormEditExtensionContext = _FormEditExtensionContext.default
 ```
 
-The context of form edit extension. It allows access to formEditExtension-specific resources.
+The context of form edit extension. It allows access to
+formEditExtension-specific resources.
 
 **起始版本：** 22
 

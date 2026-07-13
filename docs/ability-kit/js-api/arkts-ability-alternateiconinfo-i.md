@@ -1,6 +1,6 @@
 # AlternateIconInfo
 
-Alternate icon information configured by the application.
+Describes the app backup icon information.
 
 **Since:** 26.0.0
 
@@ -12,7 +12,9 @@ Alternate icon information configured by the application.
 readonly enabled: boolean
 ```
 
-Whether the alternate icon is currently in use. true: Indicates the icon is currently in use. false: Indicates the icon is not currently in use.
+Whether the backup icon is enabled.
+true: The current backup icon is enabled.
+false: The current backup icon is not enabled.
 
 **Type:** boolean
 
@@ -28,7 +30,8 @@ Whether the alternate icon is currently in use. true: Indicates the icon is curr
 readonly iconId: number
 ```
 
-Indicates the id of the alternate icon.
+Resource ID of the backup icon, which is automatically generated
+during compilation and build based on the icon configured in the app.
 
 **Type:** number
 
@@ -44,7 +47,7 @@ Indicates the id of the alternate icon.
 readonly iconName: string
 ```
 
-Indicates the name of the alternate icon.
+Name of the backup icon.
 
 **Type:** string
 

@@ -9,7 +9,7 @@ Defines the MovingPhotoView controller.
 ## Modules to Import
 
 ```TypeScript
-import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoViewController, DynamicRangeMode } from '@ohos.multimedia.movingphotoview';
+import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoViewController, DynamicRangeMode } from '@kit.MediaLibraryKit';
 ```
 
 ## enableAutoPlay
@@ -18,7 +18,8 @@ import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoV
 enableAutoPlay(enabled: boolean)
 ```
 
-Dynamically refresh the autoplay property, which will force to play after moving photo is initialized
+Dynamically refresh the autoplay property, which will force to play after
+moving photo is initialized
 
 **Since:** 20
 
@@ -94,7 +95,8 @@ Notify the component to execute the picture transition animation.
 pausePlayback()
 ```
 
-Pause moving photo and show current frame, start playing from the current frame when playing again
+Pause moving photo and show current frame, start playing from the current frame when
+playing again
 
 **Since:** 20
 

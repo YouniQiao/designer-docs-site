@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hilog } from '@ohos.hilog';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getOutputDir
@@ -12,7 +12,8 @@ import { hilog } from '@ohos.hilog';
 function getOutputDir(): string
 ```
 
-Returns the directory path of hilog logs in the sandbox. If the output type of hilog is DEFAULT, an empty string is returned.
+Returns the directory path of hilog logs in the sandbox.
+If the output type of hilog is DEFAULT, an empty string is returned.
 
 **Since:** 26.0.0
 

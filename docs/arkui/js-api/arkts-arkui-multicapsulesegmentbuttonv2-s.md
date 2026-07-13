@@ -9,7 +9,7 @@ Defines the segmented button with multi capsule style.
 ## Modules to Import
 
 ```TypeScript
-import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@ohos.arkui.advanced.SegmentButtonV2';
+import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, MultiCapsuleSegmentButtonV2, OnSelectedIndexChange, SegmentButtonV2ItemOptions, SegmentButtonV2Item, CapsuleSegmentButtonV2 } from '@kit.ArkUI';
 ```
 
 ## build
@@ -52,7 +52,11 @@ Callback invoked when the selected item changes.
 readonly itemBackgroundBlurStyle?: BlurStyle
 ```
 
-Background blur style of segmented button items. Default value: **undefined** This property is read-only.
+Background blur style of segmented button items.
+
+Default value: **undefined**
+
+This property is read-only.
 
 **Type:** BlurStyle
 
@@ -70,7 +74,11 @@ Background blur style of segmented button items. Default value: **undefined** Th
 readonly itemBackgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-Background blur style options of segmented button items. Default value: **undefined** This property is read-only.
+Background blur style options of segmented button items.
+
+Default value: **undefined**
+
+This property is read-only.
 
 **Type:** BackgroundBlurStyleOptions
 
@@ -88,7 +96,13 @@ Background blur style options of segmented button items. Default value: **undefi
 readonly itemBackgroundColor?: ColorMetrics
 ```
 
-Background color of unselected segmented button items. Default value: **$r('sys.color.segment_button_v2_multi_capsule_button_background')** If the value is **undefined**, the default value is used. This property is read-only.
+Background color of unselected segmented button items.
+
+Default value: **$r('sys.color.segment_button_v2_multi_capsule_button_background')**
+
+If the value is **undefined**, the default value is used.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -106,7 +120,11 @@ Background color of unselected segmented button items. Default value: **$r('sys.
 readonly itemBackgroundEffect?: BackgroundEffectOptions
 ```
 
-Background effect of segmented button items. Default value: **undefined** This property is read-only.
+Background effect of segmented button items.
+
+Default value: **undefined**
+
+This property is read-only.
 
 **Type:** BackgroundEffectOptions
 
@@ -124,7 +142,15 @@ Background effect of segmented button items. Default value: **undefined** This p
 readonly itemBorderRadius?: LengthMetrics
 ```
 
-Border radius of segmented button items. Value range: [0, +∞) Default value: **$r('sys.float.segment_button_v2_selected_corner_radius')**. If the value is out of the range, the default value is used. This property is read-only.
+Border radius of segmented button items.
+
+Value range: [0, +∞)
+
+Default value: **$r('sys.float.segment_button_v2_selected_corner_radius')**.
+
+If the value is out of the range, the default value is used.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -142,7 +168,17 @@ Border radius of segmented button items. Value range: [0, +∞) Default value: *
 readonly itemFontColor?: ColorMetrics
 ```
 
-Font color of unselected segmented button items. Default value: **$r('sys.color.font_secondary')** If the value is **undefined**, the default value is used. **NOTE** When **fontColor** of **textModifier** is set for **items**, **itemFontColor** has no effect. This property is read-only.
+Font color of unselected segmented button items.
+
+Default value: **$r('sys.color.font_secondary')**
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fontColor** of **textModifier** is set for **items**, **itemFontColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -160,7 +196,19 @@ Font color of unselected segmented button items. Default value: **$r('sys.color.
 readonly itemFontSize?: LengthMetrics
 ```
 
-Font size of unselected segmented button items. Value range: [0, +∞) Default value: **14fp** **NOTE** Percentage values are not supported. If an invalid value is set, the default value is used. When **fontSize** of **textModifier** is set for **items**, **itemFontSize** has no effect. This property is read-only.
+Font size of unselected segmented button items.
+
+Value range: [0, +∞)
+
+Default value: **14fp**
+
+**NOTE**
+
+Percentage values are not supported. If an invalid value is set, the default value is used.
+
+When **fontSize** of **textModifier** is set for **items**, **itemFontSize** has no effect.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -178,7 +226,17 @@ Font size of unselected segmented button items. Value range: [0, +∞) Default v
 readonly itemFontWeight?: FontWeight
 ```
 
-Font weight of unselected segmented button items. Default value: **FontWeight.Medium** If the value is out of the range, the default value is used. **NOTE** When **fontWeight** of **textModifier** is set for **items**, **itemFontWeight** has no effect. This property is read-only.
+Font weight of unselected segmented button items.
+
+Default value: **FontWeight.Medium**
+
+If the value is out of the range, the default value is used.
+
+**NOTE**
+
+When **fontWeight** of **textModifier** is set for **items**, **itemFontWeight** has no effect.
+
+This property is read-only.
 
 **Type:** FontWeight
 
@@ -196,7 +254,17 @@ Font weight of unselected segmented button items. Default value: **FontWeight.Me
 readonly itemIconFillColor?: ColorMetrics
 ```
 
-Icon color of unselected segmented button items. Default value: **$r('sys.color.font_secondary')** If the value is **undefined**, the default value is used. **NOTE** When **fillColor** of **iconModifier** is set for **items**, **itemIconFillColor** has no effect. This property is read-only.
+Icon color of unselected segmented button items.
+
+Default value: **$r('sys.color.font_secondary')**
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fillColor** of **iconModifier** is set for **items**, **itemIconFillColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -214,7 +282,19 @@ Icon color of unselected segmented button items. Default value: **$r('sys.color.
 readonly itemIconSize?: SizeT<LengthMetrics>
 ```
 
-Image-type icon size of segmented button items. Value range: [0, +∞) Default value: **{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) }**. If the value is out of the range, the default value is used. **NOTE** When **width** and **height** of **iconModifier** are set for **items**, **itemIconSize** has no effect. This property is read-only.
+Image-type icon size of segmented button items.
+
+Value range: [0, +∞)
+
+Default value: **{ width: LengthMetrics.vp(24), height: LengthMetrics.vp(24) }**.
+
+If the value is out of the range, the default value is used.
+
+**NOTE**
+
+When **width** and **height** of **iconModifier** are set for **items**, **itemIconSize** has no effect.
+
+This property is read-only.
 
 **Type:** SizeT<LengthMetrics>
 
@@ -232,7 +312,18 @@ Image-type icon size of segmented button items. Value range: [0, +∞) Default v
 readonly itemMaxFontScale?: number | Resource
 ```
 
-Maximum font scale factor of the segmented button item text. Value range: [1, 2] Default value: **1** **NOTE** A value less than 1 is treated as **1**. A value greater than 2 is treated as **2**. Abnormal values are ineffective by default. This property is read-only.
+Maximum font scale factor of the segmented button item text.
+
+Value range: [1, 2]
+
+Default value: **1**
+
+**NOTE**
+
+A value less than 1 is treated as **1**. A value greater than 2 is treated as **2**. Abnormal values are
+ineffective by default.
+
+This property is read-only.
 
 **Type:** number | Resource
 
@@ -250,7 +341,18 @@ Maximum font scale factor of the segmented button item text. Value range: [1, 2]
 readonly itemMinFontScale?: number | Resource
 ```
 
-Minimum font scale factor of the segmented button item text. Value range: [0, 1] Default value: **0** **NOTE** A value less than 0 is treated as **0**. A value greater than 1 is treated as **1**. Abnormal values are ineffective by default. This property is read-only.
+Minimum font scale factor of the segmented button item text.
+
+Value range: [0, 1]
+
+Default value: **0**
+
+**NOTE**
+
+A value less than 0 is treated as **0**. A value greater than 1 is treated as **1**. Abnormal values are
+ineffective by default.
+
+This property is read-only.
 
 **Type:** number | Resource
 
@@ -268,7 +370,18 @@ Minimum font scale factor of the segmented button item text. Value range: [0, 1]
 readonly itemMinHeight?: LengthMetrics
 ```
 
-Minimum height of the segmented button item. Value range: [0, +∞) Default value: **$r('sys.float.segment_button_v2_singleline_selected_height')** for text-only buttons and icon-only buttons, and **$r('sys.float.segment_button_v2_doubleline_selected_height')** for buttons with both an icon and text. If the value is out of the range, the default value is used. This property is read-only.
+Minimum height of the segmented button item.
+
+Value range: [0, +∞)
+
+Default value:
+
+**$r('sys.float.segment_button_v2_singleline_selected_height')** for text-only buttons and icon-only buttons, and
+**$r('sys.float.segment_button_v2_doubleline_selected_height')** for buttons with both an icon and text.
+
+If the value is out of the range, the default value is used.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -286,7 +399,16 @@ Minimum height of the segmented button item. Value range: [0, +∞) Default valu
 readonly itemPadding?: LocalizedPadding
 ```
 
-Padding of the segmented button item. Default value: **{top: LengthMetrics.resource ($r('sys.float.padding_level2')), bottom: LengthMetrics. resource ($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')), end: LengthMetrics.resource($r('sys.float.padding_level4'))}** If the value is **undefined**, the default value is used. This property is read-only.
+Padding of the segmented button item.
+
+Default value:
+**{top: LengthMetrics.resource ($r('sys.float.padding_level2')), bottom: LengthMetrics.
+resource ($r('sys.float.padding_level2')), start: LengthMetrics.resource($r('sys.float.padding_level4')),
+end: LengthMetrics.resource($r('sys.float.padding_level4'))}**
+
+If the value is **undefined**, the default value is used.
+
+This property is read-only.
 
 **Type:** LocalizedPadding
 
@@ -304,7 +426,13 @@ Padding of the segmented button item. Default value: **{top: LengthMetrics.resou
 readonly itemSelectedBackgroundColor?: ColorMetrics
 ```
 
-Background color of the selected segmented button item. Default value: **$r('sys.color.segment_button_v2_tab_selected_item_background')** If the value is **undefined**, the default value is used. This property is read-only.
+Background color of the selected segmented button item.
+
+Default value: **$r('sys.color.segment_button_v2_tab_selected_item_background')**
+
+If the value is **undefined**, the default value is used.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -322,7 +450,17 @@ Background color of the selected segmented button item. Default value: **$r('sys
 readonly itemSelectedFontColor?: ColorMetrics
 ```
 
-Font color of the selected segmented button item. Default value: **$r('sys.color.font_primary')**. If the value is **undefined**, the default value is used. **NOTE** When **fontColor** of **textModifier** is set for **items**, **itemSelectedFontColor** has no effect. This property is read-only.
+Font color of the selected segmented button item.
+
+Default value: **$r('sys.color.font_primary')**.
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fontColor** of **textModifier** is set for **items**, **itemSelectedFontColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -340,7 +478,19 @@ Font color of the selected segmented button item. Default value: **$r('sys.color
 readonly itemSelectedFontSize?: LengthMetrics
 ```
 
-Font size of the selected segmented button item. Value range: [0, +∞) Default value: **14fp** **NOTE** Percentage values are not supported. If an invalid value is set, the default value is used. When **fontSize** of **textModifier** is set for **items**, **itemSelectedFontSize** has no effect. This property is read-only.
+Font size of the selected segmented button item.
+
+Value range: [0, +∞)
+
+Default value: **14fp**
+
+**NOTE**
+
+Percentage values are not supported. If an invalid value is set, the default value is used.
+
+When **fontSize** of **textModifier** is set for **items**, **itemSelectedFontSize** has no effect.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -358,7 +508,17 @@ Font size of the selected segmented button item. Value range: [0, +∞) Default 
 readonly itemSelectedFontWeight?: FontWeight
 ```
 
-Font weight of the selected segmented button item. Default value: **FontWeight.Medium** If the value is out of the range, the default value is used. **NOTE** When **fontWeight** of **textModifier** is set for **items**, **itemSelectedFontWeight** has no effect. This property is read-only.
+Font weight of the selected segmented button item.
+
+Default value: **FontWeight.Medium**
+
+If the value is out of the range, the default value is used.
+
+**NOTE**
+
+When **fontWeight** of **textModifier** is set for **items**, **itemSelectedFontWeight** has no effect.
+
+This property is read-only.
 
 **Type:** FontWeight
 
@@ -376,7 +536,17 @@ Font weight of the selected segmented button item. Default value: **FontWeight.M
 readonly itemSelectedIconFillColor?: ColorMetrics
 ```
 
-Icon color of the selected segmented button item. Default value: **$r('sys.color.font_primary')** If the value is **undefined**, the default value is used. **NOTE** When **fillColor** of **iconModifier** is set for **items**, **itemSelectedIconFillColor** has no effect. This property is read-only.
+Icon color of the selected segmented button item.
+
+Default value: **$r('sys.color.font_primary')**
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fillColor** of **iconModifier** is set for **items**, **itemSelectedIconFillColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -394,7 +564,17 @@ Icon color of the selected segmented button item. Default value: **$r('sys.color
 readonly itemSelectedSymbolFontColor?: ColorMetrics
 ```
 
-HM Symbol icon color of the selected segmented button item. Default value: **$r('sys.color.font_primary')** If the value is **undefined**, the default value is used. **NOTE** When **fontColor** of **symbolModifier** is set for **items**, **itemSelectedSymbolFontColor** has no effect. This property is read-only.
+HM Symbol icon color of the selected segmented button item.
+
+Default value: **$r('sys.color.font_primary')**
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fontColor** of **symbolModifier** is set for **items**, **itemSelectedSymbolFontColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -412,7 +592,17 @@ HM Symbol icon color of the selected segmented button item. Default value: **$r(
 readonly itemSpace?: LengthMetrics
 ```
 
-Space between segmented button items. Value range: [0, +∞) Default value: **LengthMetrics.vp(1)** **NOTE** Percentage values are not supported. If an invalid value is set, the default value is used. This property is read-only.
+Space between segmented button items.
+
+Value range: [0, +∞)
+
+Default value: **LengthMetrics.vp(1)**
+
+**NOTE**
+
+Percentage values are not supported. If an invalid value is set, the default value is used.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -430,7 +620,17 @@ Space between segmented button items. Value range: [0, +∞) Default value: **Le
 readonly itemSymbolFontColor?: ColorMetrics
 ```
 
-HM Symbol icon color of unselected segmented button items. Default value: **$r('sys.color.font_secondary')** If the value is **undefined**, the default value is used. **NOTE** When **fontColor** of **symbolModifier** is set for **items**, **itemSymbolFontColor** has no effect. This property is read-only.
+HM Symbol icon color of unselected segmented button items.
+
+Default value: **$r('sys.color.font_secondary')**
+
+If the value is **undefined**, the default value is used.
+
+**NOTE**
+
+When **fontColor** of **symbolModifier** is set for **items**, **itemSymbolFontColor** has no effect.
+
+This property is read-only.
 
 **Type:** ColorMetrics
 
@@ -448,7 +648,19 @@ HM Symbol icon color of unselected segmented button items. Default value: **$r('
 readonly itemSymbolFontSize?: LengthMetrics
 ```
 
-HM Symbol icon size of segmented button items. Value range: [0, +∞) Default value: **20fp** **NOTE** Percentage values are not supported. If an invalid value is set, the default value is used. When **fontSize** of **symbolModifier** is set for **items**, **itemSymbolFontSize** has no effect. This property is read-only.
+HM Symbol icon size of segmented button items.
+
+Value range: [0, +∞)
+
+Default value: **20fp**
+
+**NOTE**
+
+Percentage values are not supported. If an invalid value is set, the default value is used.
+
+When **fontSize** of **symbolModifier** is set for **items**, **itemSymbolFontSize** has no effect.
+
+This property is read-only.
 
 **Type:** LengthMetrics
 
@@ -466,7 +678,11 @@ HM Symbol icon size of segmented button items. Value range: [0, +∞) Default va
 readonly items: SegmentButtonV2Items
 ```
 
-Items of the segmented button. If the value is **undefined**, the option information is not displayed. This property is read-only.
+Items of the segmented button.
+
+If the value is **undefined**, the option information is not displayed.
+
+This property is read-only.
 
 **Type:** SegmentButtonV2Items
 
@@ -484,7 +700,13 @@ Items of the segmented button. If the value is **undefined**, the option informa
 readonly languageDirection?: Direction
 ```
 
-Language direction of the segmented button. Default value: **Direction.Auto** If the value is out of the range, the default value is used. This property is read-only.
+Language direction of the segmented button.
+
+Default value: **Direction.Auto**
+
+If the value is out of the range, the default value is used.
+
+This property is read-only.
 
 **Type:** Direction
 
@@ -520,7 +742,15 @@ Callback invoked when a segmented button item is clicked.
 readonly selectedIndexes: number[]
 ```
 
-Array of indexes of the selected segmented button items. The index is zero-based and increments by 1. If the value is **undefined**, no item is selected. **NOTE** Only valid button indexes are supported. An empty array [] indicates no selection. This property is read-only.
+Array of indexes of the selected segmented button items. The index is zero-based and increments by 1.
+
+If the value is **undefined**, no item is selected.
+
+**NOTE**
+
+Only valid button indexes are supported. An empty array [] indicates no selection.
+
+This property is read-only.
 
 **Type:** number[]
 

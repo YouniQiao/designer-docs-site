@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setPriorityIntelligentEnabled
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function setPriorityIntelligentEnabled(enable: boolean): Promise<void>
 ```
 
-Sets the enabling status of the intelligent priority notification service. This API uses a promise to return the result.
+Sets the enabling status of the intelligent priority notification service. This API uses a promise to return the
+result.
 
 **Since:** 23
 

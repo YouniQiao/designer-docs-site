@@ -2,7 +2,7 @@
 
 PickerOptions Object
 
-**Inheritance/Implementation:** PickerOptions extends [photoAccessHelper.BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md#baseselectoptions)
+**Inheritance/Implementation:** PickerOptions extends [photoAccessHelper.BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ PickerOptions Object
 ## Modules to Import
 
 ```TypeScript
-import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@ohos.file.PhotoPickerComponent';
+import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
 ## appAlbumFilters
@@ -20,7 +20,8 @@ import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, 
 appAlbumFilters?: Array<string>
 ```
 
-Only display album contents corresponding to the specified applications. Use the bundle name to identify the application.
+Only display album contents corresponding to the specified applications.
+Use the bundle name to identify the application.
 
 **Type:** Array<string>
 
@@ -72,7 +73,8 @@ Support setting background opacity.
 badgeConfig?: BadgeConfig
 ```
 
-Support to config special badge display. The picker component supports only one type of badge
+Support to config special badge display.
+The picker component supports only one type of badge
 
 **Type:** BadgeConfig
 
@@ -386,7 +388,8 @@ Support to set a serial number to distinguish different picker components. Defau
 preselectedInfos?: Array<PreselectedInfo>
 ```
 
-Support automatically selecting the user-selected image/video on the PhotoPickerComponent at the specified picker index.
+Support automatically selecting the user-selected image/video on the PhotoPickerComponent
+at the specified picker index.
 
 **Type:** Array<PreselectedInfo>
 

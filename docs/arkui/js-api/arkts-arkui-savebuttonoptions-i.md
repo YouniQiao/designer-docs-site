@@ -1,8 +1,17 @@
 # SaveButtonOptions
 
-Declares the interface for setting the save button options.
+Defines options for the save button, including icon, text, and button type.
 
-**Since:** 11
+> **NOTE**
+>
+> - You are advised to specify at least one of **icon** or **text**.
+> - If neither **icon** nor **text** is specified, **SaveButton** is created with default styles as follows:
+> **SaveIconStyle** defaults to **FULL_FILLED**, **SaveDescription** to **DOWNLOAD**, and **ButtonType** to
+> **Capsule**.
+>
+> - The **icon**, **text**, and **buttonType** parameters do not support dynamic modification.
+
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -12,11 +21,12 @@ Declares the interface for setting the save button options.
 buttonType?: ButtonType
 ```
 
-Type of the button.
+Background type of the **SaveButton** component.
+Default value: ButtonType.Capsule.
 
 **Type:** ButtonType
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -30,11 +40,13 @@ Type of the button.
 icon?: SaveIconStyle
 ```
 
-Style of the icon to be drawn.
+Icon style of the **SaveButton** component.
+<br>If this parameter is not specified, no icon is displayed. If neither **icon** nor **text** is provided, the
+component uses the default style.
 
 **Type:** SaveIconStyle
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -48,11 +60,13 @@ Style of the icon to be drawn.
 text?: SaveDescription
 ```
 
-Text to be displayed on the button.
+Text on the **SaveButton** component.
+<br>If this parameter is not specified, no text is displayed. If neither **text** nor **icon** is provided, the
+component uses the default style.
 
 **Type:** SaveDescription
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 

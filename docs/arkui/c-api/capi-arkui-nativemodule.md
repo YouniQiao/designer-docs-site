@@ -26,12 +26,12 @@ Provides UI capabilities of ArkUI on the native side, such as UI component creat
 | [native_node_napi.h](capi-native-node-napi-h.md) | Declares APIs for converting <b>FrameNode</b> objects on the ArkTS side to <b>ArkUI_NodeHandle</b> objects onthe native side. |
 | [styled_string.h](capi-styled-string-h.md) | Defines the text style and layout manager for the component whose {@link type} is set to **ARKUI_NODE_TEXTon the native side. |
 | [custom_span.h](capi-custom-span-h.md) | Defines a set of CustomSpan enum and interface. |
-| [node_water_flow.h](capi-node-water-flow-h.md) | Provides WaterFlow-related type and function definitions for<b>NativeNode</b> APIs. |
+| [water_flow.h](capi-water-flow-h.md) | Provides WaterFlow-related type and function definitions for<b>NativeNode</b> APIs. |
 | [swiper.h](capi-swiper-h.md) | Defines a set of Swiper enum and interface. |
 | [common_attributes.h](capi-common-attributes-h.md) | Defines the common property and method types for the native module. |
 | [navigation_router.h](capi-navigation-router-h.md) | Defines a set of navigation or router enum and interface. |
-| [node_scroll.h](capi-node-scroll-h.md) | Provides shared scroll-related enum definitions for <b>NativeNode</b> APIs. |
-| [node_grid.h](capi-node-grid-h.md) | Provides Grid-related type and function definitions for <b>NativeNode</b> APIs. |
+| [scroll.h](capi-scroll-h.md) | Provides shared scroll-related enum definitions for <b>NativeNode</b> APIs. |
+| [grid.h](capi-grid-h.md) | Provides Grid-related type and function definitions for <b>NativeNode</b> APIs. |
 | [custom_attributes.h](capi-custom-attributes-h.md) | Provides custom node event definitions for <b>NativeNode</b> APIs. |
 | [xcomponent.h](capi-xcomponent-h.md) | Defines xcomponent attribute enum value. |
 | [rich_editor.h](capi-rich-editor-h.md) | Defines a set of RichEditor enum and interface. |
@@ -43,7 +43,7 @@ Provides UI capabilities of ArkUI on the native side, such as UI component creat
 | [text_common.h](capi-text-common-h.md) | Defines a set of text common enum and interface. |
 | [text_input.h](capi-text-input-h.md) | Defines a set of TextInput enum and interface. |
 | [checkbox.h](capi-checkbox-h.md) | Provides Checkbox node type definitions for <b>NativeNode</b> APIs. |
-| [node_list.h](capi-node-list-h.md) | Provides shared list-related type and function definitions for <b>NativeNode</b> APIs. |
+| [list.h](capi-list-h.md) | Provides shared list-related type and function definitions for <b>NativeNode</b> APIs. |
 | [text.h](capi-text-h.md) | Defines a set of Text enum and interface. |
 | [image.h](capi-image-h.md) | Defines the common types for the Image component. |
 | [embedded_component.h](capi-embedded-component-h.md) | Defines embedded component attribute and interface. |

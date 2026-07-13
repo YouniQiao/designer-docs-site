@@ -9,7 +9,7 @@ Describes the information about a suspended continuous task.
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## continuousTaskId
@@ -62,7 +62,8 @@ Reason why the continuous task is suspended.
 suspendState: boolean
 ```
 
-Continuous task state. The value **false** indicates that the task is activated, and the value **true** indicates that the task is suspended.
+Continuous task state. The value **false** indicates that the task is activated, and the value **true** indicates
+that the task is suspended.
 
 **Type:** boolean
 

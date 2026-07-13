@@ -1,6 +1,7 @@
 # NotificationExtensionSubscriptionInfo
 
-The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension subscription.
+The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension
+subscription.
 
 **Since:** 22
 

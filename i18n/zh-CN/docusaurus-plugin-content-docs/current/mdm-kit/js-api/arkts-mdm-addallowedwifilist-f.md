@@ -6,7 +6,12 @@
 function addAllowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 ```
 
-添加Wi-Fi允许名单。添加允许名单后当前设备仅允许连接该名单下的Wi-Fi。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)解除Wi-Fi禁用后，可解除冲突。 2. 已经通过[addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1)接口添加了Wi-Fi禁用名单。通过[removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1)移除Wi-Fi禁用名单后，可解除冲突。
+添加Wi-Fi允许名单。添加允许名单后当前设备仅允许连接该名单下的Wi-Fi。
+
+以下情况下，调用本接口会报策略冲突：
+
+1. 已经通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)解除Wi-Fi禁用后，可解除冲突。
+2. 已经通过[addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1)接口添加了Wi-Fi禁用名单。通过[removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1)移除Wi-Fi禁用名单后，可解除冲突。
 
 **起始版本：** 19
 

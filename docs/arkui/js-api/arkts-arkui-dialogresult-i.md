@@ -9,7 +9,7 @@ Response result for dialog.
 ## Modules to Import
 
 ```TypeScript
-import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@ohos.arkui.dialog';
+import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseController, DialogBaseAlignment, DialogDismissal } from '@kit.ArkUI';
 ```
 
 ## dialogId
@@ -18,7 +18,8 @@ import { DialogButtonOrientation, DialogState, DialogResult, DialogBaseControlle
 dialogId: number
 ```
 
-Id of the dialog. The value should be an integer.
+Id of the dialog.
+The value should be an integer.
 
 **Type:** number
 

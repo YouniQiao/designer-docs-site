@@ -1,6 +1,7 @@
 # @ohos.telephony.sim
 
-Provides applications with APIs for obtaining SIM card status, card file information, and card specifications. SIM cards include SIM, USIM, and CSIM cards.
+Provides applications with APIs for obtaining SIM card status, card file information, and card specifications.
+SIM cards include SIM, USIM, and CSIM cards.
 
 **Since:** 6
 
@@ -18,141 +19,162 @@ import { sim } from '@kit.TelephonyKit';
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[activateSim](arkts-sim-activatesim-f-sys.md#activateSim-1) | Activate the SIM card in the specified slot. |
-| <!--DelRow-->[activateSim](arkts-sim-activatesim-f-sys.md#activateSim-2) | Activate the SIM card in the specified slot. |
-| <!--DelRow-->[addIccDiallingNumbers](arkts-sim-addiccdiallingnumbers-f-sys.md#addIccDiallingNumbers-1) | Add dialing number information to SIM card. |
-| <!--DelRow-->[addIccDiallingNumbers](arkts-sim-addiccdiallingnumbers-f-sys.md#addIccDiallingNumbers-2) | Add dialing number information to SIM card. |
-| <!--DelRow-->[alterPin](arkts-sim-alterpin-f-sys.md#alterPin-1) | Change Pin Password. |
-| <!--DelRow-->[alterPin](arkts-sim-alterpin-f-sys.md#alterPin-2) | Change Pin Password. |
-| <!--DelRow-->[alterPin2](arkts-sim-alterpin2-f-sys.md#alterPin2-1) | Change Pin2 password. |
-| <!--DelRow-->[alterPin2](arkts-sim-alterpin2-f-sys.md#alterPin2-2) | Change Pin2 password. |
-| <!--DelRow-->[deactivateSim](arkts-sim-deactivatesim-f-sys.md#deactivateSim-1) | Disable SIM card in specified slot. |
-| <!--DelRow-->[deactivateSim](arkts-sim-deactivatesim-f-sys.md#deactivateSim-2) | Disable SIM card in specified slot. |
-| <!--DelRow-->[delIccDiallingNumbers](arkts-sim-deliccdiallingnumbers-f-sys.md#delIccDiallingNumbers-1) | Delete dialing number information on SIM card. |
-| <!--DelRow-->[delIccDiallingNumbers](arkts-sim-deliccdiallingnumbers-f-sys.md#delIccDiallingNumbers-2) | Delete dialing number information on SIM card. |
-| [getActiveSimAccountInfoList](arkts-sim-getactivesimaccountinfolist-f.md#getActiveSimAccountInfoList-1) | Get the list of active SIM card account information. |
-| [getActiveSimAccountInfoList](arkts-sim-getactivesimaccountinfolist-f.md#getActiveSimAccountInfoList-2) | Get the list of active SIM card account information. |
-| <!--DelRow-->[getAllSimAccountInfoList](arkts-sim-getallsimaccountinfolist-f-sys.md#getAllSimAccountInfoList-1) | Get the list of all SIM card account information. |
-| <!--DelRow-->[getAllSimAccountInfoList](arkts-sim-getallsimaccountinfolist-f-sys.md#getAllSimAccountInfoList-2) | Get the list of all SIM card account information. |
-| [getCardType](arkts-sim-getcardtype-f.md#getCardType-1) | Obtains the type of the SIM card installed in a specified slot. |
-| [getCardType](arkts-sim-getcardtype-f.md#getCardType-2) | Obtains the type of the SIM card installed in a specified slot. |
-| [getCardTypeSync](arkts-sim-getcardtypesync-f.md#getCardTypeSync-1) | Obtains the type of the SIM card inserted in a specified slot. |
-| [getDefaultVoiceSimId](arkts-sim-getdefaultvoicesimid-f.md#getDefaultVoiceSimId-1) | Obtains the default SIM ID for the voice service. |
-| [getDefaultVoiceSimId](arkts-sim-getdefaultvoicesimid-f.md#getDefaultVoiceSimId-2) | Obtains the default SIM ID for the voice service. |
-| [getDefaultVoiceSlotId](arkts-sim-getdefaultvoiceslotid-f.md#getDefaultVoiceSlotId-1) | Obtains the default card slot for the voice service. |
-| [getDefaultVoiceSlotId](arkts-sim-getdefaultvoiceslotid-f.md#getDefaultVoiceSlotId-2) | Obtains the default card slot for the voice service. |
-| <!--DelRow-->[getDsdsMode](arkts-sim-getdsdsmode-f-sys.md#getDsdsMode-1) | Obtains the value of dsds mode. |
-| <!--DelRow-->[getDsdsMode](arkts-sim-getdsdsmode-f-sys.md#getDsdsMode-2) | Obtains the value of dsds mode. |
-| <!--DelRow-->[getIMSI](arkts-sim-getimsi-f-sys.md#getIMSI-1) | Get the international mobile subscriber ID. |
-| <!--DelRow-->[getIMSI](arkts-sim-getimsi-f-sys.md#getIMSI-2) | Get the international mobile subscriber ID. |
-| [getISOCountryCodeForSim](arkts-sim-getisocountrycodeforsim-f.md#getISOCountryCodeForSim-1) | Obtains the ISO country code of the SIM card in a specified slot. |
-| [getISOCountryCodeForSim](arkts-sim-getisocountrycodeforsim-f.md#getISOCountryCodeForSim-2) | Obtains the ISO country code of the SIM card in a specified slot. |
-| [getISOCountryCodeForSimSync](arkts-sim-getisocountrycodeforsimsync-f.md#getISOCountryCodeForSimSync-1) | Obtains the ISO country code of the SIM card in a specified slot. |
-| <!--DelRow-->[getLockState](arkts-sim-getlockstate-f-sys.md#getLockState-1) | Get the lock status of the SIM card in the specified slot. |
-| <!--DelRow-->[getLockState](arkts-sim-getlockstate-f-sys.md#getLockState-2) | Get the lock status of the SIM card in the specified slot. |
-| [getMaxSimCount](arkts-sim-getmaxsimcount-f.md#getMaxSimCount-1) | Obtains the maximum number of SIM cards that can be used simultaneously on the device, that is, the maximum number of SIM card slots. |
-| [getOpKey](arkts-sim-getopkey-f.md#getOpKey-1) | Obtains the operator key of the SIM card in a specified slot. |
-| [getOpKey](arkts-sim-getopkey-f.md#getOpKey-2) | Obtains the operator key of the SIM card in a specified slot. |
-| [getOpKeySync](arkts-sim-getopkeysync-f.md#getOpKeySync-1) | Obtains the operator key of the SIM card in a specified slot. |
-| [getOpName](arkts-sim-getopname-f.md#getOpName-1) | Obtains the operator name of the SIM card in a specified slot. |
-| [getOpName](arkts-sim-getopname-f.md#getOpName-2) | Obtains the operator name of the SIM card in a specified slot. |
-| [getOpNameSync](arkts-sim-getopnamesync-f.md#getOpNameSync-1) | Obtains the operator name of the SIM card in a specified slot. |
-| <!--DelRow-->[getOperatorConfigs](arkts-sim-getoperatorconfigs-f-sys.md#getOperatorConfigs-1) | Obtains the operatorconfigs of the SIM card in a specified slot. |
-| <!--DelRow-->[getOperatorConfigs](arkts-sim-getoperatorconfigs-f-sys.md#getOperatorConfigs-2) | Obtains the operatorconfigs of the SIM card in a specified slot. |
-| <!--DelRow-->[getShowName](arkts-sim-getshowname-f-sys.md#getShowName-1) | Gets the name of the SIM card in the specified slot. |
-| <!--DelRow-->[getShowName](arkts-sim-getshowname-f-sys.md#getShowName-2) | Gets the name of the SIM card in the specified slot. |
-| <!--DelRow-->[getShowNumber](arkts-sim-getshownumber-f-sys.md#getShowNumber-1) | Get the SIM card number of the specified card slot. |
-| <!--DelRow-->[getShowNumber](arkts-sim-getshownumber-f-sys.md#getShowNumber-2) | Get the SIM card number of the specified card slot. |
-| [getSimAccountInfo](arkts-sim-getsimaccountinfo-f.md#getSimAccountInfo-1) | Get account information of SIM card. |
-| [getSimAccountInfo](arkts-sim-getsimaccountinfo-f.md#getSimAccountInfo-2) | Get account information of SIM card. |
-| <!--DelRow-->[getSimAuthentication](arkts-sim-getsimauthentication-f-sys.md#getSimAuthentication-1) | Performs SIM card authentication. |
-| <!--DelRow-->[getSimGid1](arkts-sim-getsimgid1-f-sys.md#getSimGid1-1) | Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot. The GID1 is recorded in the EFGID1 file of the SIM card. |
-| <!--DelRow-->[getSimGid1](arkts-sim-getsimgid1-f-sys.md#getSimGid1-2) | Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot. The GID1 is recorded in the EFGID1 file of the SIM card. |
-| <!--DelRow-->[getSimIccId](arkts-sim-getsimiccid-f-sys.md#getSimIccId-1) | Obtains the ICCID of the SIM card in a specified slot. <p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits and is recorded in the EFICCID file of the SIM card. |
-| <!--DelRow-->[getSimIccId](arkts-sim-getsimiccid-f-sys.md#getSimIccId-2) | Obtains the ICCID of the SIM card in a specified slot. <p>The ICCID is a unique identifier of a SIM card. It consists of 20 digits and is recorded in the EFICCID file of the SIM card. |
-| [getSimLabel](arkts-sim-getsimlabel-f.md#getSimLabel-1) | Obtains the SIM card label. |
-| [getSimLabel](arkts-sim-getsimlabel-f.md#getSimLabel-2) | Obtains the SIM card label. |
-| [getSimLabelSync](arkts-sim-getsimlabelsync-f.md#getSimLabelSync-1) | Obtains the SIM card label synchronously. |
-| [getSimOperatorNumeric](arkts-sim-getsimoperatornumeric-f.md#getSimOperatorNumeric-1) | Obtains the home PLMN number of the SIM card in a specified slot. <p>The value is recorded in the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimOperatorNumeric](arkts-sim-getsimoperatornumeric-f.md#getSimOperatorNumeric-2) | Obtains the home PLMN number of the SIM card in a specified slot. <p>The value is recorded in the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimOperatorNumericSync](arkts-sim-getsimoperatornumericsync-f.md#getSimOperatorNumericSync-1) | Obtains the home PLMN number of the SIM card in a specified slot. <p>The value is recorded in the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimSpn](arkts-sim-getsimspn-f.md#getSimSpn-1) | Obtains the service provider name (SPN) of the SIM card in a specified slot. <p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimSpn](arkts-sim-getsimspn-f.md#getSimSpn-2) | Obtains the service provider name (SPN) of the SIM card in a specified slot. <p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimSpnSync](arkts-sim-getsimspnsync-f.md#getSimSpnSync-1) | Obtains the service provider name (SPN) of the SIM card in a specified slot. <p>The value is recorded in the EFSPN file of the SIM card and is irrelevant to the network with which the SIM card is currently registered. |
-| [getSimState](arkts-sim-getsimstate-f.md#getSimState-1) | Obtains the state of the SIM card in a specified slot. |
-| [getSimState](arkts-sim-getsimstate-f.md#getSimState-2) | Obtains the state of the SIM card in a specified slot. |
-| [getSimStateSync](arkts-sim-getsimstatesync-f.md#getSimStateSync-1) | Obtains the state of the SIM card in a specified slot. |
-| <!--DelRow-->[getSimTelephoneNumber](arkts-sim-getsimtelephonenumber-f-sys.md#getSimTelephoneNumber-1) | Obtains the MSISDN of the SIM card in a specified slot. The MSISDN is recorded in the EFMSISDN file of the SIM card. |
-| <!--DelRow-->[getSimTelephoneNumber](arkts-sim-getsimtelephonenumber-f-sys.md#getSimTelephoneNumber-2) | Obtains the MSISDN of the SIM card in a specified slot. The MSISDN is recorded in the EFMSISDN file of the SIM card. |
-| <!--DelRow-->[getVoiceMailIdentifier](arkts-sim-getvoicemailidentifier-f-sys.md#getVoiceMailIdentifier-1) | Obtains the alpha identifier of the voice mailbox of the SIM card in a specified slot. |
-| <!--DelRow-->[getVoiceMailIdentifier](arkts-sim-getvoicemailidentifier-f-sys.md#getVoiceMailIdentifier-2) | Obtains the alpha identifier of the voice mailbox of the SIM card in a specified slot. |
-| <!--DelRow-->[getVoiceMailNumber](arkts-sim-getvoicemailnumber-f-sys.md#getVoiceMailNumber-1) | Obtains the voice mailbox number of the SIM card in a specified slot. |
-| <!--DelRow-->[getVoiceMailNumber](arkts-sim-getvoicemailnumber-f-sys.md#getVoiceMailNumber-2) | Obtains the voice mailbox number of the SIM card in a specified slot. |
-| [hasOperatorPrivileges](arkts-sim-hasoperatorprivileges-f.md#hasOperatorPrivileges-1) | Checks whether your application (the caller) has been granted the operator permissions. |
-| [hasOperatorPrivileges](arkts-sim-hasoperatorprivileges-f.md#hasOperatorPrivileges-2) | Checks whether your application (the caller) has been granted the operator permissions. |
-| [hasSimCard](arkts-sim-hassimcard-f.md#hasSimCard-1) | Checks whether a SIM card is inserted in a specified slot. |
-| [hasSimCard](arkts-sim-hassimcard-f.md#hasSimCard-2) | Checks whether a SIM card is inserted in a specified slot. |
-| [hasSimCardSync](arkts-sim-hassimcardsync-f.md#hasSimCardSync-1) | Checks whether a SIM card is inserted in a specified slot. |
-| <!--DelRow-->[isOperatorSimCard](arkts-sim-isoperatorsimcard-f-sys.md#isOperatorSimCard-1) | Indicates whether the SIM card in a specified slot is a specified operator. |
-| [isSimActive](arkts-sim-issimactive-f.md#isSimActive-1) | Checks whether the SIM card in a specified slot is activated. |
-| [isSimActive](arkts-sim-issimactive-f.md#isSimActive-2) | Checks whether the SIM card in a specified slot is activated. |
-| [isSimActiveSync](arkts-sim-issimactivesync-f.md#isSimActiveSync-1) | Checks whether the SIM card in a specified slot is activated. |
-| <!--DelRow-->[queryIccDiallingNumbers](arkts-sim-queryiccdiallingnumbers-f-sys.md#queryIccDiallingNumbers-1) | Query dialing number information on SIM card. |
-| <!--DelRow-->[queryIccDiallingNumbers](arkts-sim-queryiccdiallingnumbers-f-sys.md#queryIccDiallingNumbers-2) | Query dialing number information on SIM card. |
-| <!--DelRow-->[sendEnvelopeCmd](arkts-sim-sendenvelopecmd-f-sys.md#sendEnvelopeCmd-1) | Send envelope command to SIM card. |
-| <!--DelRow-->[sendEnvelopeCmd](arkts-sim-sendenvelopecmd-f-sys.md#sendEnvelopeCmd-2) | Send envelope command to SIM card. |
-| <!--DelRow-->[sendTerminalResponseCmd](arkts-sim-sendterminalresponsecmd-f-sys.md#sendTerminalResponseCmd-1) | Send terminal response command to SIM card. |
-| <!--DelRow-->[sendTerminalResponseCmd](arkts-sim-sendterminalresponsecmd-f-sys.md#sendTerminalResponseCmd-2) | Send terminal response command to SIM card. |
-| <!--DelRow-->[setDefaultVoiceSlotId](arkts-sim-setdefaultvoiceslotid-f-sys.md#setDefaultVoiceSlotId-1) | Set the card slot ID of the default voice service. |
-| <!--DelRow-->[setDefaultVoiceSlotId](arkts-sim-setdefaultvoiceslotid-f-sys.md#setDefaultVoiceSlotId-2) | Set the card slot ID of the default voice service. |
-| <!--DelRow-->[setLockState](arkts-sim-setlockstate-f-sys.md#setLockState-1) | Set the lock status of the SIM card in the specified slot. |
-| <!--DelRow-->[setLockState](arkts-sim-setlockstate-f-sys.md#setLockState-2) | Set the lock status of the SIM card in the specified slot. |
-| <!--DelRow-->[setShowName](arkts-sim-setshowname-f-sys.md#setShowName-1) | Set the SIM card display name of the specified card slot. |
-| <!--DelRow-->[setShowName](arkts-sim-setshowname-f-sys.md#setShowName-2) | Set the SIM card display name of the specified card slot. |
-| <!--DelRow-->[setShowNumber](arkts-sim-setshownumber-f-sys.md#setShowNumber-1) | Set the SIM card number in the specified slot. |
-| <!--DelRow-->[setShowNumber](arkts-sim-setshownumber-f-sys.md#setShowNumber-2) | Set the SIM card number in the specified slot. |
-| <!--DelRow-->[setSimLabelIndex](arkts-sim-setsimlabelindex-f-sys.md#setSimLabelIndex-1) | Set the SIM card labelIndex. |
-| <!--DelRow-->[setVoiceMailInfo](arkts-sim-setvoicemailinfo-f-sys.md#setVoiceMailInfo-1) | Sets the voice mail information. |
-| <!--DelRow-->[setVoiceMailInfo](arkts-sim-setvoicemailinfo-f-sys.md#setVoiceMailInfo-2) | Sets the voice mail information. |
-| <!--DelRow-->[unlockPin](arkts-sim-unlockpin-f-sys.md#unlockPin-1) | Unlock the SIM card password of the specified card slot. |
-| <!--DelRow-->[unlockPin](arkts-sim-unlockpin-f-sys.md#unlockPin-2) | Unlock the SIM card password of the specified card slot. |
-| <!--DelRow-->[unlockPin2](arkts-sim-unlockpin2-f-sys.md#unlockPin2-1) | Unlock the SIM card password of the specified card slot. |
-| <!--DelRow-->[unlockPin2](arkts-sim-unlockpin2-f-sys.md#unlockPin2-2) | Unlock the SIM card password of the specified card slot. |
-| <!--DelRow-->[unlockPuk](arkts-sim-unlockpuk-f-sys.md#unlockPuk-1) | Unlock the SIM card password in the specified card slot. |
-| <!--DelRow-->[unlockPuk](arkts-sim-unlockpuk-f-sys.md#unlockPuk-2) | Unlock the SIM card password in the specified card slot. |
-| <!--DelRow-->[unlockPuk2](arkts-sim-unlockpuk2-f-sys.md#unlockPuk2-1) | Unlock the SIM card password in the specified card slot. |
-| <!--DelRow-->[unlockPuk2](arkts-sim-unlockpuk2-f-sys.md#unlockPuk2-2) | Unlock the SIM card password in the specified card slot. |
-| <!--DelRow-->[unlockSimLock](arkts-sim-unlocksimlock-f-sys.md#unlockSimLock-1) | Unlock SIM card. |
-| <!--DelRow-->[unlockSimLock](arkts-sim-unlocksimlock-f-sys.md#unlockSimLock-2) | Unlock SIM card. |
-| <!--DelRow-->[updateIccDiallingNumbers](arkts-sim-updateiccdiallingnumbers-f-sys.md#updateIccDiallingNumbers-1) | Update dialing number information on SIM card. |
-| <!--DelRow-->[updateIccDiallingNumbers](arkts-sim-updateiccdiallingnumbers-f-sys.md#updateIccDiallingNumbers-2) | Update dialing number information on SIM card. |
+| [getActiveSimAccountInfoList](arkts-telephony-getactivesimaccountinfolist-f.md#getactivesimaccountinfolist-1) | Get the list of active SIM card account information. |
+| [getActiveSimAccountInfoList](arkts-telephony-getactivesimaccountinfolist-f.md#getactivesimaccountinfolist-2) | Get the list of active SIM card account information. |
+| [getCardType](arkts-telephony-getcardtype-f.md#getcardtype-1) | Obtains the type of the SIM card installed in a specified slot. |
+| [getCardType](arkts-telephony-getcardtype-f.md#getcardtype-2) | Obtains the type of the SIM card installed in a specified slot. |
+| [getCardTypeSync](arkts-telephony-getcardtypesync-f.md#getcardtypesync-1) | Obtains the type of the SIM card inserted in a specified slot. |
+| [getDefaultVoiceSimId](arkts-telephony-getdefaultvoicesimid-f.md#getdefaultvoicesimid-1) | Obtains the default SIM ID for the voice service. |
+| [getDefaultVoiceSimId](arkts-telephony-getdefaultvoicesimid-f.md#getdefaultvoicesimid-2) | Obtains the default SIM ID for the voice service. |
+| [getDefaultVoiceSlotId](arkts-telephony-getdefaultvoiceslotid-f.md#getdefaultvoiceslotid-1) | Obtains the default card slot for the voice service. |
+| [getDefaultVoiceSlotId](arkts-telephony-getdefaultvoiceslotid-f.md#getdefaultvoiceslotid-2) | Obtains the default card slot for the voice service. |
+| [getISOCountryCodeForSim](arkts-telephony-getisocountrycodeforsim-f.md#getisocountrycodeforsim-1) | Obtains the ISO country code of the SIM card in a specified slot. |
+| [getISOCountryCodeForSim](arkts-telephony-getisocountrycodeforsim-f.md#getisocountrycodeforsim-2) | Obtains the ISO country code of the SIM card in a specified slot. |
+| [getISOCountryCodeForSimSync](arkts-telephony-getisocountrycodeforsimsync-f.md#getisocountrycodeforsimsync-1) | Obtains the ISO country code of the SIM card in a specified slot. |
+| [getMaxSimCount](arkts-telephony-getmaxsimcount-f.md#getmaxsimcount-1) | Obtains the maximum number of SIM cards that can be used simultaneously on the device,that is, the maximum number of SIM card slots. |
+| [getOpKey](arkts-telephony-getopkey-f.md#getopkey-1) | Obtains the operator key of the SIM card in a specified slot. |
+| [getOpKey](arkts-telephony-getopkey-f.md#getopkey-2) | Obtains the operator key of the SIM card in a specified slot. |
+| [getOpKeySync](arkts-telephony-getopkeysync-f.md#getopkeysync-1) | Obtains the operator key of the SIM card in a specified slot. |
+| [getOpName](arkts-telephony-getopname-f.md#getopname-1) | Obtains the operator name of the SIM card in a specified slot. |
+| [getOpName](arkts-telephony-getopname-f.md#getopname-2) | Obtains the operator name of the SIM card in a specified slot. |
+| [getOpNameSync](arkts-telephony-getopnamesync-f.md#getopnamesync-1) | Obtains the operator name of the SIM card in a specified slot. |
+| [getSimAccountInfo](arkts-telephony-getsimaccountinfo-f.md#getsimaccountinfo-1) | Get account information of SIM card. |
+| [getSimAccountInfo](arkts-telephony-getsimaccountinfo-f.md#getsimaccountinfo-2) | Get account information of SIM card. |
+| [getSimLabel](arkts-telephony-getsimlabel-f.md#getsimlabel-1) | Obtains the SIM card label. |
+| [getSimLabel](arkts-telephony-getsimlabel-f.md#getsimlabel-2) | Obtains the SIM card label. |
+| [getSimLabelSync](arkts-telephony-getsimlabelsync-f.md#getsimlabelsync-1) | Obtains the SIM card label synchronously. |
+| [getSimOperatorNumeric](arkts-telephony-getsimoperatornumeric-f.md#getsimoperatornumeric-1) | Obtains the home PLMN number of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimOperatorNumeric](arkts-telephony-getsimoperatornumeric-f.md#getsimoperatornumeric-2) | Obtains the home PLMN number of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimOperatorNumericSync](arkts-telephony-getsimoperatornumericsync-f.md#getsimoperatornumericsync-1) | Obtains the home PLMN number of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimSpn](arkts-telephony-getsimspn-f.md#getsimspn-1) | Obtains the service provider name (SPN) of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the EFSPN file of the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimSpn](arkts-telephony-getsimspn-f.md#getsimspn-2) | Obtains the service provider name (SPN) of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the EFSPN file of the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimSpnSync](arkts-telephony-getsimspnsync-f.md#getsimspnsync-1) | Obtains the service provider name (SPN) of the SIM card in a specified slot.&lt;p&gt;The value is recorded in the EFSPN file of the SIM card and is irrelevant to the networkwith which the SIM card is currently registered. |
+| [getSimState](arkts-telephony-getsimstate-f.md#getsimstate-1) | Obtains the state of the SIM card in a specified slot. |
+| [getSimState](arkts-telephony-getsimstate-f.md#getsimstate-2) | Obtains the state of the SIM card in a specified slot. |
+| [getSimStateSync](arkts-telephony-getsimstatesync-f.md#getsimstatesync-1) | Obtains the state of the SIM card in a specified slot. |
+| [hasOperatorPrivileges](arkts-telephony-hasoperatorprivileges-f.md#hasoperatorprivileges-1) | Checks whether your application (the caller) has been granted the operator permissions. |
+| [hasOperatorPrivileges](arkts-telephony-hasoperatorprivileges-f.md#hasoperatorprivileges-2) | Checks whether your application (the caller) has been granted the operator permissions. |
+| [hasSimCard](arkts-telephony-hassimcard-f.md#hassimcard-1) | Checks whether a SIM card is inserted in a specified slot. |
+| [hasSimCard](arkts-telephony-hassimcard-f.md#hassimcard-2) | Checks whether a SIM card is inserted in a specified slot. |
+| [hasSimCardSync](arkts-telephony-hassimcardsync-f.md#hassimcardsync-1) | Checks whether a SIM card is inserted in a specified slot. |
+| [isSimActive](arkts-telephony-issimactive-f.md#issimactive-1) | Checks whether the SIM card in a specified slot is activated. |
+| [isSimActive](arkts-telephony-issimactive-f.md#issimactive-2) | Checks whether the SIM card in a specified slot is activated. |
+| [isSimActiveSync](arkts-telephony-issimactivesync-f.md#issimactivesync-1) | Checks whether the SIM card in a specified slot is activated. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [activateSim](arkts-telephony-activatesim-f-sys.md#activatesim-1) | Activate the SIM card in the specified slot. |
+| [activateSim](arkts-telephony-activatesim-f-sys.md#activatesim-2) | Activate the SIM card in the specified slot. |
+| [addIccDiallingNumbers](arkts-telephony-addiccdiallingnumbers-f-sys.md#addiccdiallingnumbers-1) | Add dialing number information to SIM card. |
+| [addIccDiallingNumbers](arkts-telephony-addiccdiallingnumbers-f-sys.md#addiccdiallingnumbers-2) | Add dialing number information to SIM card. |
+| [alterPin](arkts-telephony-alterpin-f-sys.md#alterpin-1) | Change Pin Password. |
+| [alterPin](arkts-telephony-alterpin-f-sys.md#alterpin-2) | Change Pin Password. |
+| [alterPin2](arkts-telephony-alterpin2-f-sys.md#alterpin2-1) | Change Pin2 password. |
+| [alterPin2](arkts-telephony-alterpin2-f-sys.md#alterpin2-2) | Change Pin2 password. |
+| [deactivateSim](arkts-telephony-deactivatesim-f-sys.md#deactivatesim-1) | Disable SIM card in specified slot. |
+| [deactivateSim](arkts-telephony-deactivatesim-f-sys.md#deactivatesim-2) | Disable SIM card in specified slot. |
+| [delIccDiallingNumbers](arkts-telephony-deliccdiallingnumbers-f-sys.md#deliccdiallingnumbers-1) | Delete dialing number information on SIM card. |
+| [delIccDiallingNumbers](arkts-telephony-deliccdiallingnumbers-f-sys.md#deliccdiallingnumbers-2) | Delete dialing number information on SIM card. |
+| [getAllSimAccountInfoList](arkts-telephony-getallsimaccountinfolist-f-sys.md#getallsimaccountinfolist-1) | Get the list of all SIM card account information. |
+| [getAllSimAccountInfoList](arkts-telephony-getallsimaccountinfolist-f-sys.md#getallsimaccountinfolist-2) | Get the list of all SIM card account information. |
+| [getDsdsMode](arkts-telephony-getdsdsmode-f-sys.md#getdsdsmode-1) | Obtains the value of dsds mode. |
+| [getDsdsMode](arkts-telephony-getdsdsmode-f-sys.md#getdsdsmode-2) | Obtains the value of dsds mode. |
+| [getIMSI](arkts-telephony-getimsi-f-sys.md#getimsi-1) | Get the international mobile subscriber ID. |
+| [getIMSI](arkts-telephony-getimsi-f-sys.md#getimsi-2) | Get the international mobile subscriber ID. |
+| [getLockState](arkts-telephony-getlockstate-f-sys.md#getlockstate-1) | Get the lock status of the SIM card in the specified slot. |
+| [getLockState](arkts-telephony-getlockstate-f-sys.md#getlockstate-2) | Get the lock status of the SIM card in the specified slot. |
+| [getOperatorConfigs](arkts-telephony-getoperatorconfigs-f-sys.md#getoperatorconfigs-1) | Obtains the operatorconfigs of the SIM card in a specified slot. |
+| [getOperatorConfigs](arkts-telephony-getoperatorconfigs-f-sys.md#getoperatorconfigs-2) | Obtains the operatorconfigs of the SIM card in a specified slot. |
+| [getShowName](arkts-telephony-getshowname-f-sys.md#getshowname-1) | Gets the name of the SIM card in the specified slot. |
+| [getShowName](arkts-telephony-getshowname-f-sys.md#getshowname-2) | Gets the name of the SIM card in the specified slot. |
+| [getShowNumber](arkts-telephony-getshownumber-f-sys.md#getshownumber-1) | Get the SIM card number of the specified card slot. |
+| [getShowNumber](arkts-telephony-getshownumber-f-sys.md#getshownumber-2) | Get the SIM card number of the specified card slot. |
+| [getSimAuthentication](arkts-telephony-getsimauthentication-f-sys.md#getsimauthentication-1) | Performs SIM card authentication. |
+| [getSimGid1](arkts-telephony-getsimgid1-f-sys.md#getsimgid1-1) | Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot.The GID1 is recorded in the EFGID1 file of the SIM card. |
+| [getSimGid1](arkts-telephony-getsimgid1-f-sys.md#getsimgid1-2) | Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot.The GID1 is recorded in the EFGID1 file of the SIM card. |
+| [getSimIccId](arkts-telephony-getsimiccid-f-sys.md#getsimiccid-1) | Obtains the ICCID of the SIM card in a specified slot.&lt;p&gt;The ICCID is a unique identifier of a SIM card. It consists of 20 digitsand is recorded in the EFICCID file of the SIM card. |
+| [getSimIccId](arkts-telephony-getsimiccid-f-sys.md#getsimiccid-2) | Obtains the ICCID of the SIM card in a specified slot.&lt;p&gt;The ICCID is a unique identifier of a SIM card. It consists of 20 digitsand is recorded in the EFICCID file of the SIM card. |
+| [getSimTelephoneNumber](arkts-telephony-getsimtelephonenumber-f-sys.md#getsimtelephonenumber-1) | Obtains the MSISDN of the SIM card in a specified slot.The MSISDN is recorded in the EFMSISDN file of the SIM card. |
+| [getSimTelephoneNumber](arkts-telephony-getsimtelephonenumber-f-sys.md#getsimtelephonenumber-2) | Obtains the MSISDN of the SIM card in a specified slot.The MSISDN is recorded in the EFMSISDN file of the SIM card. |
+| [getVoiceMailIdentifier](arkts-telephony-getvoicemailidentifier-f-sys.md#getvoicemailidentifier-1) | Obtains the alpha identifier of the voice mailbox of the SIM card in a specified slot. |
+| [getVoiceMailIdentifier](arkts-telephony-getvoicemailidentifier-f-sys.md#getvoicemailidentifier-2) | Obtains the alpha identifier of the voice mailbox of the SIM card in a specified slot. |
+| [getVoiceMailNumber](arkts-telephony-getvoicemailnumber-f-sys.md#getvoicemailnumber-1) | Obtains the voice mailbox number of the SIM card in a specified slot. |
+| [getVoiceMailNumber](arkts-telephony-getvoicemailnumber-f-sys.md#getvoicemailnumber-2) | Obtains the voice mailbox number of the SIM card in a specified slot. |
+| [isOperatorSimCard](arkts-telephony-isoperatorsimcard-f-sys.md#isoperatorsimcard-1) | Indicates whether the SIM card in a specified slot is a specified operator. |
+| [queryIccDiallingNumbers](arkts-telephony-queryiccdiallingnumbers-f-sys.md#queryiccdiallingnumbers-1) | Query dialing number information on SIM card. |
+| [queryIccDiallingNumbers](arkts-telephony-queryiccdiallingnumbers-f-sys.md#queryiccdiallingnumbers-2) | Query dialing number information on SIM card. |
+| [sendEnvelopeCmd](arkts-telephony-sendenvelopecmd-f-sys.md#sendenvelopecmd-1) | Send envelope command to SIM card. |
+| [sendEnvelopeCmd](arkts-telephony-sendenvelopecmd-f-sys.md#sendenvelopecmd-2) | Send envelope command to SIM card. |
+| [sendTerminalResponseCmd](arkts-telephony-sendterminalresponsecmd-f-sys.md#sendterminalresponsecmd-1) | Send terminal response command to SIM card. |
+| [sendTerminalResponseCmd](arkts-telephony-sendterminalresponsecmd-f-sys.md#sendterminalresponsecmd-2) | Send terminal response command to SIM card. |
+| [setDefaultVoiceSlotId](arkts-telephony-setdefaultvoiceslotid-f-sys.md#setdefaultvoiceslotid-1) | Set the card slot ID of the default voice service. |
+| [setDefaultVoiceSlotId](arkts-telephony-setdefaultvoiceslotid-f-sys.md#setdefaultvoiceslotid-2) | Set the card slot ID of the default voice service. |
+| [setLockState](arkts-telephony-setlockstate-f-sys.md#setlockstate-1) | Set the lock status of the SIM card in the specified slot. |
+| [setLockState](arkts-telephony-setlockstate-f-sys.md#setlockstate-2) | Set the lock status of the SIM card in the specified slot. |
+| [setShowName](arkts-telephony-setshowname-f-sys.md#setshowname-1) | Set the SIM card display name of the specified card slot. |
+| [setShowName](arkts-telephony-setshowname-f-sys.md#setshowname-2) | Set the SIM card display name of the specified card slot. |
+| [setShowNumber](arkts-telephony-setshownumber-f-sys.md#setshownumber-1) | Set the SIM card number in the specified slot. |
+| [setShowNumber](arkts-telephony-setshownumber-f-sys.md#setshownumber-2) | Set the SIM card number in the specified slot. |
+| [setSimLabelIndex](arkts-telephony-setsimlabelindex-f-sys.md#setsimlabelindex-1) | Set the SIM card labelIndex. |
+| [setVoiceMailInfo](arkts-telephony-setvoicemailinfo-f-sys.md#setvoicemailinfo-1) | Sets the voice mail information. |
+| [setVoiceMailInfo](arkts-telephony-setvoicemailinfo-f-sys.md#setvoicemailinfo-2) | Sets the voice mail information. |
+| [unlockPin](arkts-telephony-unlockpin-f-sys.md#unlockpin-1) | Unlock the SIM card password of the specified card slot. |
+| [unlockPin](arkts-telephony-unlockpin-f-sys.md#unlockpin-2) | Unlock the SIM card password of the specified card slot. |
+| [unlockPin2](arkts-telephony-unlockpin2-f-sys.md#unlockpin2-1) | Unlock the SIM card password of the specified card slot. |
+| [unlockPin2](arkts-telephony-unlockpin2-f-sys.md#unlockpin2-2) | Unlock the SIM card password of the specified card slot. |
+| [unlockPuk](arkts-telephony-unlockpuk-f-sys.md#unlockpuk-1) | Unlock the SIM card password in the specified card slot. |
+| [unlockPuk](arkts-telephony-unlockpuk-f-sys.md#unlockpuk-2) | Unlock the SIM card password in the specified card slot. |
+| [unlockPuk2](arkts-telephony-unlockpuk2-f-sys.md#unlockpuk2-1) | Unlock the SIM card password in the specified card slot. |
+| [unlockPuk2](arkts-telephony-unlockpuk2-f-sys.md#unlockpuk2-2) | Unlock the SIM card password in the specified card slot. |
+| [unlockSimLock](arkts-telephony-unlocksimlock-f-sys.md#unlocksimlock-1) | Unlock SIM card. |
+| [unlockSimLock](arkts-telephony-unlocksimlock-f-sys.md#unlocksimlock-2) | Unlock SIM card. |
+| [updateIccDiallingNumbers](arkts-telephony-updateiccdiallingnumbers-f-sys.md#updateiccdiallingnumbers-1) | Update dialing number information on SIM card. |
+| [updateIccDiallingNumbers](arkts-telephony-updateiccdiallingnumbers-f-sys.md#updateiccdiallingnumbers-2) | Update dialing number information on SIM card. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DiallingNumbersInfo](arkts-sim-diallingnumbersinfo-i-sys.md) | Defines the contact number information. |
-| [IccAccountInfo](arkts-sim-iccaccountinfo-i.md) | Defines the ICC account information. |
-| <!--DelRow-->[LockInfo](arkts-sim-lockinfo-i-sys.md) | Defines the personalized lock information. |
-| <!--DelRow-->[LockStatusResponse](arkts-sim-lockstatusresponse-i-sys.md) | Defines the personalized lock information. |
-| <!--DelRow-->[OperatorConfig](arkts-sim-operatorconfig-i-sys.md) | Defines the carrier configuration. |
-| <!--DelRow-->[PersoLockInfo](arkts-sim-persolockinfo-i-sys.md) | Defines the personalized lock information. |
-| <!--DelRow-->[SimAuthenticationResponse](arkts-sim-simauthenticationresponse-i-sys.md) | Defines the SIM card authentication response. |
-| [SimLabel](arkts-sim-simlabel-i.md) | Defines the SIM card label. |
+| [IccAccountInfo](arkts-telephony-iccaccountinfo-i.md) | Defines the ICC account information. |
+| [SimLabel](arkts-telephony-simlabel-i.md) | Defines the SIM card label. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DiallingNumbersInfo](arkts-telephony-diallingnumbersinfo-i-sys.md) | Defines the contact number information. |
+| [LockInfo](arkts-telephony-lockinfo-i-sys.md) | Defines the personalized lock information. |
+| [LockStatusResponse](arkts-telephony-lockstatusresponse-i-sys.md) | Defines the personalized lock information. |
+| [OperatorConfig](arkts-telephony-operatorconfig-i-sys.md) | Defines the carrier configuration. |
+| [PersoLockInfo](arkts-telephony-persolockinfo-i-sys.md) | Defines the personalized lock information. |
+| [SimAuthenticationResponse](arkts-telephony-simauthenticationresponse-i-sys.md) | Defines the SIM card authentication response. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AuthType](arkts-sim-authtype-e-sys.md) | Indicates the Authentication type |
-| [CardType](arkts-sim-cardtype-e.md) | Indicates the SIM card types. |
-| <!--DelRow-->[ContactType](arkts-sim-contacttype-e-sys.md) | Indicates the contact types. |
-| <!--DelRow-->[DsdsMode](arkts-sim-dsdsmode-e-sys.md) | Indicates the Dsds Mode. |
-| <!--DelRow-->[LockState](arkts-sim-lockstate-e-sys.md) | Indicates the lock states. |
-| <!--DelRow-->[LockType](arkts-sim-locktype-e-sys.md) | Indicates the lock types. |
-| <!--DelRow-->[OperatorConfigKey](arkts-sim-operatorconfigkey-e-sys.md) | Indicates the carrier configuration keys. |
-| <!--DelRow-->[OperatorSimCard](arkts-sim-operatorsimcard-e-sys.md) | Indicates the operator of SIM. |
-| <!--DelRow-->[PersoLockType](arkts-sim-persolocktype-e-sys.md) | Indicates the personalized lock types. |
-| [SimState](arkts-sim-simstate-e.md) | Indicates the SIM card states. |
-| [SimType](arkts-sim-simtype-e.md) | Indicates the SIM card type. |
+| [CardType](arkts-telephony-cardtype-e.md) | Indicates the SIM card types. |
+| [SimState](arkts-telephony-simstate-e.md) | Indicates the SIM card states. |
+| [SimType](arkts-telephony-simtype-e.md) | Indicates the SIM card type. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AuthType](arkts-telephony-authtype-e-sys.md) | Indicates the Authentication type |
+| [ContactType](arkts-telephony-contacttype-e-sys.md) | Indicates the contact types. |
+| [DsdsMode](arkts-telephony-dsdsmode-e-sys.md) | Indicates the Dsds Mode. |
+| [LockState](arkts-telephony-lockstate-e-sys.md) | Indicates the lock states. |
+| [LockType](arkts-telephony-locktype-e-sys.md) | Indicates the lock types. |
+| [OperatorConfigKey](arkts-telephony-operatorconfigkey-e-sys.md) | Indicates the carrier configuration keys. |
+| [OperatorSimCard](arkts-telephony-operatorsimcard-e-sys.md) | Indicates the operator of SIM. |
+| [PersoLockType](arkts-telephony-persolocktype-e-sys.md) | Indicates the personalized lock types. |
+<!--DelEnd-->
 

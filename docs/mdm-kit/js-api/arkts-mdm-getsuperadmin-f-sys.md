@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## getSuperAdmin
@@ -12,7 +12,8 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function getSuperAdmin(): Promise<Want>
 ```
 
-Obtains the super device administrator application of this administrator. This API uses a promise to return the result.
+Obtains the super device administrator application of this administrator. This API uses a promise to return the
+result.
 
 **Since:** 12
 

@@ -1,6 +1,10 @@
 # BundleOptions
 
-> **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. No substitute is provided. Options that contain the user ID.
+> **NOTE**
+>
+> This API has been supported since API version 7 and deprecated since API version 9. No substitute is provided.
+
+Options that contain the user ID.
 
 **Since:** 7
 
@@ -11,7 +15,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## userId

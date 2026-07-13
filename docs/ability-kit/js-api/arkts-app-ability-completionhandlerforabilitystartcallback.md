@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { CompletionHandlerForAbilityStartCallback,AbilityStartFailureCode } from '@kit.AbilityKit';
+import { CompletionHandlerForAbilityStartCallback, AbilityStartFailureCode } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,18 +12,18 @@ import { CompletionHandlerForAbilityStartCallback,AbilityStartFailureCode } from
 
 | Name | Description |
 | --- | --- |
-| [CompletionHandlerForAbilityStartCallback](arkts-completionhandlerforabilitystartcallback-c.md) | CompletionHandlerForAbilityStartCallback提供了onRequestSuccess和onRequestFailure两个回调函数属性，分别在拉起指定类型的Ability组件成功和失败时回调。 |
+| [CompletionHandlerForAbilityStartCallback](arkts-ability-completionhandlerforabilitystartcallback-c.md) | CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and**onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AbilityStartFailureCode](arkts-abilitystartfailurecode-e.md) | 拉起指定类型的Ability组件失败的特定错误码。 |
+| [AbilityStartFailureCode](arkts-ability-abilitystartfailurecode-e.md) | Enumerates the specific error codes for ability launch failures. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [OnRequestFailureFn](arkts-onrequestfailurefn-t.md) | 拉起指定类型的Ability组件失败时的回调函数类型。 |
-| [OnRequestSuccessFn](arkts-onrequestsuccessfn-t.md) | 拉起指定类型的Ability组件成功时的回调函数类型。 |
+| [OnRequestFailureFn](arkts-ability-onrequestfailurefn-t.md) | Defines the callback for failed ability launches. |
+| [OnRequestSuccessFn](arkts-ability-onrequestsuccessfn-t.md) | Defines the callback for successful ability launches. |
 

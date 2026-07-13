@@ -1,6 +1,7 @@
 # X509CRLMatchParameters
 
-Represents the parameters used to match a certificate revocation list (CRL). If no parameter is specified, all CRLs are matched.
+Represents the parameters used to match a certificate revocation list (CRL). If no parameter is specified, all CRLs
+are matched.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Represents the parameters used to match a certificate revocation list (CRL). If 
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## issuer
@@ -18,7 +19,7 @@ import { cert } from '@ohos.security.cert';
 issuer?: Array<Uint8Array>
 ```
 
-Certificate issuer, in DER format.
+CRL issuer, in DER format.
 
 **Type:** Array<Uint8Array>
 
@@ -66,7 +67,7 @@ Minimum value of the CRL number.
 updateDateTime?: string
 ```
 
-Certificate update time.
+CRL update time.
 
 **Type:** string
 

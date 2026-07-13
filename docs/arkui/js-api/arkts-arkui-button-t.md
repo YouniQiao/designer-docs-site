@@ -4,7 +4,8 @@
 type Button = TypedFrameNode<ButtonInterface, ButtonAttribute>
 ```
 
-Represents a FrameNode of the **Button** type. When created in child component mode, this type of node allows only one child component to be added. When created in label mode, it does not child components to be added.
+Represents a FrameNode of the **Button** type. When created in child component mode, this type of node allows only
+one child component to be added. When created in label mode, it does not child components to be added.
 
 **Since:** 12
 

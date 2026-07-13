@@ -6,11 +6,13 @@
 function onPairingRequest(callback: Callback<PairingRequestParam>): void
 ```
 
-Subscribes to pairing request events from remote NearLink devices. If the user is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to pairing request events from remote NearLink devices.
+
+This event is accessible only to system applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -28,8 +30,6 @@ Subscribes to pairing request events from remote NearLink devices. If the user i
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the chip does not support it. |
 | 36100099 | Operation failed. |
 

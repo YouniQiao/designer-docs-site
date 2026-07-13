@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## getFormsInfo
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function getFormsInfo(bundleName: string, callback: AsyncCallback<Array<formInfo.FormInfo>>): void
 ```
 
-Obtains the widget information provided by a specified application on the device (excluding template widgets). This API uses an asynchronous callback to return the result.
+Obtains the widget information provided by a specified application on the device (excluding template widgets).
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -52,7 +53,8 @@ function getFormsInfo(
   ): void
 ```
 
-Obtains the widget information provided by a specified application on the device (excluding template widgets). This API uses an asynchronous callback to return the result.
+Obtains the widget information provided by a specified application on the device (excluding template widgets). This
+API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -89,7 +91,8 @@ Obtains the widget information provided by a specified application on the device
 function getFormsInfo(bundleName: string, moduleName?: string): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the widget information provided by a specified application on the device (excluding template widgets). This API uses a promise to return the result.
+Obtains the widget information provided by a specified application on the device (excluding template widgets).
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -131,7 +134,8 @@ Obtains the widget information provided by a specified application on the device
 function getFormsInfo(filter: formInfo.FormInfoFilter): Promise<Array<formInfo.FormInfo>>
 ```
 
-Obtains the widget information provided by a specified application on the device (excluding template widgets). This API uses a promise to return the result.
+Obtains the widget information provided by a specified application on the device (excluding template widgets).
+This API uses a promise to return the result.
 
 **Since:** 12
 

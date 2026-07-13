@@ -1,6 +1,6 @@
 # @ohos.graphics.displaySync
 
-可变帧率支持让开发者以指定帧率来运行UI业务，一般用于开发者自绘制UI，并且对于帧率有特定诉求的场景。
+The displaySync module allows your application to draw its custom UI content at a specified frame rate.
 
 **Since:** 11
 
@@ -18,12 +18,12 @@ import { displaySync } from '@kit.ArkGraphics2D';
 
 | Name | Description |
 | --- | --- |
-| [create](arkts-displaysync-create-f.md#create-1) | 创建DisplaySync对象，通过此对象设置UI自绘制内容帧率。 |
+| [create](arkts-arkgraphics2d-create-f.md#create-1) | Creates a **DisplaySync** object, through which you can set the frame rate of the custom UI content. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DisplaySync](arkts-displaysync-displaysync-i.md) | 帧率和回调函数设置实例。用于帧率设置和回调函数的注册，以及启动和停止回调函数的调用。 下列API示例中都需先使用displaySync.create()方法获取到DisplaySync实例，再通过此实例调用对应方法。 |
-| [IntervalInfo](arkts-displaysync-intervalinfo-i.md) | 开发者可以从订阅函数中获取帧绘制的时间戳信息，包含当前帧到达的时间timestamp和下一帧预期到达的时间targetTimestamp。 |
+| [DisplaySync](arkts-arkgraphics2d-displaysync-i.md) | An object that implements the setting of the frame rate and callback. It provides APIs for you to set the frame rate, register a callback, and start/stop the callback.Before calling any of the following APIs, you must use [displaySync.create()](arkts-arkgraphics2d-create-f.md#create-1) to createa **DisplaySync** instance. |
+| [IntervalInfo](arkts-arkgraphics2d-intervalinfo-i.md) | You can obtain the timestamp information from the event callback, including the timestamp when the current frame arrives and the timestamp when the next frame is expected to arrive. |
 

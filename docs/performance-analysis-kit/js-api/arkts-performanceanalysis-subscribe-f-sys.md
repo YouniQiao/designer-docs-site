@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiSysEvent } from '@ohos.hiSysEvent';
+import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## subscribe
@@ -12,7 +12,9 @@ import { hiSysEvent } from '@ohos.hiSysEvent';
 function subscribe(rules: QueryRule[]): number
 ```
 
-Subscribes to real-time system events that occur occasionally or occur in a low frequency. These events are written as a file to the fixed directory of the application sandbox (that is, /data/storage/el2/base/cache/hiview/event/).
+Subscribes to real-time system events that occur occasionally or occur in a low frequency. These events are written
+as a file to the fixed directory of the application sandbox (that is,
+/data/storage/el2/base/cache/hiview/event/).
 
 **Since:** 10
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## getBarcodeTag
@@ -12,7 +12,9 @@ import { tag } from '@ohos.nfc.tag';
 function getBarcodeTag(tagInfo: TagInfo): BarcodeTag
 ```
 
-Obtains an {@link BarcodeTag} object based on the tag information. During tag reading, if the tag supports the NfcBarcode technology, an {@link BarcodeTag} object will be created.
+Obtains an {@link BarcodeTag} object based on the tag information.
+During tag reading, if the tag supports the NfcBarcode technology,
+an {@link BarcodeTag} object will be created.
 
 **Since:** 18
 

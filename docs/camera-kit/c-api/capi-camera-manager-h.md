@@ -59,7 +59,7 @@ The file declares the camera manager concepts.
 | [Camera_ErrorCode OH_CameraManager_IsTorchSupportedByTorchMode(Camera_Manager* cameraManager, Camera_TorchMode torchMode, bool* isTorchSupported)](#oh_cameramanager_istorchsupportedbytorchmode) | - | Checks whether the device supports the specified flashlight mode. |
 | [Camera_ErrorCode OH_CameraManager_SetTorchMode(Camera_Manager* cameraManager, Camera_TorchMode torchMode)](#oh_cameramanager_settorchmode) | - | Sets a flashlight mode. |
 | [Camera_ErrorCode OH_CameraManager_IsTorchLevelControlSupported(const Camera_Manager* cameraManager, bool* isTorchLevelControlSupported)](#oh_cameramanager_istorchlevelcontrolsupported) | - | Checks whether the device supports flashlight brightness control. |
-| [Camera_ErrorCode OH_CameraManager_SetTorchModeOnWithLevel(const Camera_Manager* cameraManager, double torchLevel)](#oh_cameramanager_settorchmodeonwithlevel) | - | Turns on the flashlight and sets the brightness level. |
+| [Camera_ErrorCode OH_CameraManager_SetTorchModeOnWithLevel(Camera_Manager* cameraManager, double torchLevel)](#oh_cameramanager_settorchmodeonwithlevel) | - | Turns on the flashlight and sets the brightness level. |
 | [Camera_ErrorCode OH_CameraManager_GetCameraDevice(Camera_Manager* cameraManager, Camera_Position position, Camera_Type type, Camera_Device* camera)](#oh_cameramanager_getcameradevice) | - | Queries a specified device based on position and type. |
 | [Camera_ErrorCode OH_CameraManager_GetCameraDevices(Camera_Manager* cameraManager, Camera_DeviceQueryInfo* deviceQueryInfo, uint32_t* cameraSize, Camera_Device** cameras)](#oh_cameramanager_getcameradevices) | - | Obtains the list of cameras that meet the search criteria based on the camera position, camera types, andconnection type. |
 | [Camera_ErrorCode OH_CameraManager_DeleteCameraDevices(Camera_Manager* cameraManager, Camera_Device* cameras)](#oh_cameramanager_deletecameradevices) | - | Deletes the specified camera. |
@@ -715,7 +715,7 @@ Creates a **VideoOutput** instance.
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [const Camera_VideoProfile](capi-oh-camera-camera-videoprofile.md)* profile | Pointer to the profile for creating the **Camera_VideoOutput** instance. |
 | const char* surfaceId | Pointer to the surface ID used for creating the **Camera_VideoOutput** instance. |
-| Camera_VideoOutput** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
 
 **Returns**:
 
@@ -741,7 +741,7 @@ Creates a **VideoOutput** instance to be used in a preconfiguration stream.
 | -- | -- |
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | const char* surfaceId | Pointer to the surface ID used for creating the **Camera_VideoOutput** instance. |
-| Camera_VideoOutput** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
 
 **Returns**:
 
@@ -767,7 +767,7 @@ Creates a **MetadataOutput** instance.
 | -- | -- |
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [const Camera_MetadataObjectType](capi-camera-h.md#camera_metadataobjecttype)* profile | Pointer to the metadata object type used for creating the **Camera_MetadataOutput** instance. |
-| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)** metadataOutput | Double pointer to the **Camera_MetadataOutput** instance created, if the function issuccessfully called. |
+| Camera_MetadataOutput** metadataOutput | Double pointer to the **Camera_MetadataOutput** instance created, if the function issuccessfully called. |
 
 **Returns**:
 
@@ -794,7 +794,7 @@ Creates a **metadataOutput** instance using an array of metadata object types.
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [const Camera_MetadataObjectType](capi-camera-h.md#camera_metadataobjecttype)* metadataObjectTypes | Pointer to the metadata object types used for creating the **Camera_MetadataOutputinstance. |
 | uint32_t size | Length of the metadata object type array. |
-| [Camera_MetadataOutput](capi-oh-camera-camera-metadataoutput.md)** metadataOutput | Double pointer to the **Camera_MetadataOutput** instance created, if the function issuccessfully called. |
+| Camera_MetadataOutput** metadataOutput | Double pointer to the **Camera_MetadataOutput** instance created, if the function issuccessfully called. |
 
 **Returns**:
 
@@ -957,7 +957,7 @@ Checks whether the device supports flashlight brightness control.
 ### OH_CameraManager_SetTorchModeOnWithLevel()
 
 ```c
-Camera_ErrorCode OH_CameraManager_SetTorchModeOnWithLevel(const Camera_Manager* cameraManager, double torchLevel)
+Camera_ErrorCode OH_CameraManager_SetTorchModeOnWithLevel(Camera_Manager* cameraManager, double torchLevel)
 ```
 
 **Description**
@@ -970,7 +970,7 @@ Turns on the flashlight and sets the brightness level.
 
 | Parameter | Description |
 | -- | -- |
-| [const Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
+| [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | double torchLevel | Target brightness level. The value range is [0.0, 1.0]. |
 
 **Returns**:

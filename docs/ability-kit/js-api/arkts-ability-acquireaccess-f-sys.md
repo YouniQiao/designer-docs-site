@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { screenLockFileManager } from '@ohos.ability.screenLockFileManager';
+import { screenLockFileManager } from '@kit.AbilityKit';
 ```
 
 ## acquireAccess
@@ -12,7 +12,14 @@ import { screenLockFileManager } from '@ohos.ability.screenLockFileManager';
 function acquireAccess(dataType: DataType): AccessStatus
 ```
 
-Acquire the access of the specified data under the lock screen.
+Requests the permission to access a specified type of sensitive data under the lock screen synchronously. After the
+request is successful, the reference count of the sensitive data key increases, preventing the key from being
+destroyed after the screen has been locked for the system-configured duration threshold. This method must be used
+in pair with [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1).
+
+Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature
+and that the key state queried through the [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) API is
+KEY_EXIST.
 
 **Since:** 12
 
@@ -26,13 +33,13 @@ Acquire the access of the specified data under the lock screen.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dataType | DataType | Yes | Indicates the specified data to allow access under the lock screen. |
+| dataType | DataType | Yes | Type of sensitive data that is accessible on the lock screen. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| AccessStatus | Returns acquire the access result. |
+| AccessStatus | Application status for access permission for sensitive data under lock screen. |
 
 **Error codes:**
 
@@ -56,6 +63,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 try {
+    // Request access permission
     let acquireStatus = screenLockFileManager.acquireAccess(screenLockFileManager.DataType.MEDIA_DATA);
     if (acquireStatus === screenLockFileManager.AccessStatus.ACCESS_GRANTED) {
         hilog.info(0x0000, 'testTag', 'acquireAccess successfully.');

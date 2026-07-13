@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## getFormIdsByFormLocation
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function getFormIdsByFormLocation(location: formInfo.FormLocation): Promise<Array<string>>
 ```
 
-Obtains the list of widget IDs at a specified location on the device. This API uses a promise to return the result.
+Obtains the list of widget IDs at a specified location on the device. This API uses a promise to return the
+result.
 
 **Since:** 24
 

@@ -1,6 +1,12 @@
 # ListOptions
 
-Defines the options of the **List** component. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability.
+Defines the options of the **List** component.
+
+> **NOTE**
+>
+> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
+> While historical version information is preserved for anonymous objects, there may be cases where the outer element
+> 's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -12,7 +18,13 @@ Defines the options of the **List** component. > **NOTE** > > To standardize ano
 initialIndex?: number
 ```
 
-Index of the item to be displayed at the start when the list is initially loaded. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>If the set value is a negative number or is greater than the index of the last item in the list, the value is invalid. In this case, the default value will be used. </p>
+Index of the item to be displayed at the start when the list is initially loaded.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>If the set value is a negative number or is greater than the index of the last item in the list,
+the value is invalid. In this case, the default value will be used.
+</p>
 
 **Type:** number
 
@@ -32,7 +44,12 @@ Index of the item to be displayed at the start when the list is initially loaded
 scroller?: Scroller
 ```
 
-Scroller, which can be bound to scrollable components. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>The scroller cannot be bound to other scrollable components. </p>
+Scroller, which can be bound to scrollable components.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>The scroller cannot be bound to other scrollable components.
+</p>
 
 **Type:** Scroller
 
@@ -50,7 +67,19 @@ Scroller, which can be bound to scrollable components. Anonymous Object Rectific
 space?: number | string
 ```
 
-Spacing between list items along the main axis. <br>Default value: **0** <br>If the parameter type is number, the unit is vp. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>If this parameter is set to a negative number or a value greater than or equal to the length of the list content area, the default value is used. <br>If this parameter is set to a value less than the width of the list divider, the width of the list divider is used as the spacing. <br> Child components of <em>List</em> whose <em>visibility</em> attribute is set to <em>None</em> are not displayed, but the spacing above and below them still takes effect. </p>
+Spacing between list items along the main axis.
+<br>Default value: **0**
+<br>If the parameter type is number, the unit is vp.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>If this parameter is set to a negative number or a value greater than or equal to the length of the list
+content area, the default value is used.
+<br>If this parameter is set to a value less than the width of the list divider, the width of the list divider
+is used as the spacing.
+<br> Child components of <em>List</em> whose <em>visibility</em> attribute is set to <em>None</em> are not
+displayed, but the spacing above and below them still takes effect.
+</p>
 
 **Type:** number | string
 
@@ -70,7 +99,17 @@ Spacing between list items along the main axis. <br>Default value: **0** <br>If 
 spaceWidth?: Dimension
 ```
 
-Spacing between list items along the main axis. <p><strong>NOTE</strong> <br>If this parameter is set to a negative number or a value greater than or equal to the length of the list content area, the default value is used. <br>If this parameter is set to a value less than the width of the list divider, the width of the list divider is used as the spacing. <br> Child components of <em>ListItemGroup</em> whose <em>visibility</em> attribute is set to <em>None</em> are not displayed, but the spacing above and below them still takes effect. <br> If both spaceWidth and space are set, spaceWidth will take precedence. </p>
+Spacing between list items along the main axis.
+
+<p><strong>NOTE</strong>
+<br>If this parameter is set to a negative number or a value greater than or equal to the length of the list
+content area, the default value is used.
+<br>If this parameter is set to a value less than the width of the list divider, the width of the list divider
+is used as the spacing.
+<br> Child components of <em>ListItemGroup</em> whose <em>visibility</em> attribute is set to <em>None</em>
+are not displayed, but the spacing above and below them still takes effect.
+<br> If both spaceWidth and space are set, spaceWidth will take precedence.
+</p>
 
 **Type:** Dimension
 

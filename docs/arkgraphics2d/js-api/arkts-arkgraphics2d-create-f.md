@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sendableColorSpaceManager } from '@ohos.graphics.sendableColorSpaceManager';
+import { sendableColorSpaceManager } from '@kit.ArkGraphics2D';
 ```
 
 ## create
@@ -70,7 +70,7 @@ Creates a custom color space object that is sendable.
 
 | Type | Description |
 | --- | --- |
-| ColorSpaceManager | Sendable color space object created.<br>The color space type is **CUSTOM**, which is one of the enumerated values of[colorSpaceManager.ColorSpace](arkts-arkgraphics2d-colorspace-e.md#colorspace).<br>This instance inherits from **ISendable** and can be passed by reference between concurrent ArkTS instances(including the main thread and the worker threads of TaskPool or Worker). For details, see[Using Sendable Objects](../../../../arkts-utils/sendable-guide.md). |
+| ColorSpaceManager | Sendable color space object created.<br>The color space type is **CUSTOM**, which is one of the enumerated values of[colorSpaceManager.ColorSpace](arkts-arkgraphics2d-colorspace-e.md).<br>This instance inherits from **ISendable** and can be passed by reference between concurrent ArkTS instances(including the main thread and the worker threads of TaskPool or Worker). For details, see[Using Sendable Objects](../../../../arkts-utils/sendable-guide.md). |
 
 **Error codes:**
 

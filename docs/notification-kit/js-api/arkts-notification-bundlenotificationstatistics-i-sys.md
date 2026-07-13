@@ -11,7 +11,7 @@ Describes the notification statistics of a specified application.
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## bundle

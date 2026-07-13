@@ -11,7 +11,7 @@ ChangeSceneAnimationStateRequest
 ## Modules to Import
 
 ```TypeScript
-import { formInfo } from '@ohos.app.form.formInfo';
+import { formInfo } from '@kit.FormKit';
 ```
 
 ## formId
@@ -36,7 +36,8 @@ The form id about request change scene animation state
 state: number
 ```
 
-The state of scene animation. 0 means deactivate, 1 means activate The value must be an integer within [0,1].
+The state of scene animation. 0 means deactivate, 1 means activate
+The value must be an integer within [0,1].
 
 **Type:** number
 

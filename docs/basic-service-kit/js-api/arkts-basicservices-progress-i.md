@@ -9,7 +9,7 @@ Describes the data structure of the task progress.
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## extras
@@ -18,7 +18,8 @@ import { request } from '@ohos.request';
 readonly extras?: object
 ```
 
-Extra information of the task, for example, the header and body of the response from the server. The default value is empty.
+Extra information of the task, for example, the header and body of the response from the server. The default
+value is empty.
 
 **Type:** object
 
@@ -66,7 +67,8 @@ Size of processed data in the current file in the task, in bytes.
 readonly sizes: Array<number>
 ```
 
-Size of a file in a task, in bytes. If the server uses the chunk mode for data transmission and the total file size cannot be obtained from the request header, the value of **sizes** is treated as **-1**.
+Size of a file in a task, in bytes. If the server uses the chunk mode for data transmission and the total file
+size cannot be obtained from the request header, the value of **sizes** is treated as **-1**.
 
 **Type:** Array<number>
 

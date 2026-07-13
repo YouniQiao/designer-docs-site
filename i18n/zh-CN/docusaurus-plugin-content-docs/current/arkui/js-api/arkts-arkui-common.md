@@ -2,6 +2,7 @@
 
 IDE使用的CommonInterface
 
+
 ## Common
 
 ```TypeScript

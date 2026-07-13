@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## update
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function update(handle: number, token?: Uint8Array, options: HuksOptions, callback: AsyncCallback<HuksResult>): void
 ```
 
-Updates the key operation data by segment. This API uses an asynchronous callback to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Updates the key operation data by segment. This API uses an asynchronous callback to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 
@@ -38,7 +40,9 @@ Updates the key operation data by segment. This API uses an asynchronous callbac
 function update(handle: number, token?: Uint8Array, options: HuksOptions): Promise<HuksResult>
 ```
 
-Updates the key operation data by segment. This API uses a promise to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Updates the key operation data by segment. This API uses a promise to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 

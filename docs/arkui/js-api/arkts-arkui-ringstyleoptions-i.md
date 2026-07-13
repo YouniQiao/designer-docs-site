@@ -1,8 +1,11 @@
 # RingStyleOptions
 
-Options of the ring style without scales. Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions) and [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions).
+Options of the ring style without scales.
 
-**Inheritance/Implementation:** RingStyleOptions extends [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions), [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions)
+Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md) and
+[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md).
+
+**Inheritance/Implementation:** RingStyleOptions extends [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md), [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)
 
 **Since:** 10
 
@@ -14,7 +17,11 @@ Options of the ring style without scales. Inherits from [ScanEffectOptions](arkt
 shadow?: boolean
 ```
 
-Whether to enable the shadow effect. **true**: The shadow effect is enabled. **false**: The shadow effect is disabled. Default value: **false**
+Whether to enable the shadow effect.
+
+**true**: The shadow effect is enabled. **false**: The shadow effect is disabled.
+
+Default value: **false**
 
 **Type:** boolean
 
@@ -32,7 +39,11 @@ Whether to enable the shadow effect. **true**: The shadow effect is enabled. **f
 status?: ProgressStatus
 ```
 
-Progress state. When this parameter is set to **ProgressStatus.LOADING**, the update check animation is enabled, and the progress value setting does not take effect. When the value changes from **ProgressStatus.LOADING** to **ProgressStatus.PROGRESSING**, the update check animation runs to completion and then stops. Default value: **ProgressStatus.PROGRESSING**
+Progress state. When this parameter is set to **ProgressStatus.LOADING**, the update check animation is enabled,
+and the progress value setting does not take effect. When the value changes from **ProgressStatus.LOADING** to
+**ProgressStatus.PROGRESSING**, the update check animation runs to completion and then stops.
+
+Default value: **ProgressStatus.PROGRESSING**
 
 **Type:** ProgressStatus
 
@@ -50,7 +61,9 @@ Progress state. When this parameter is set to **ProgressStatus.LOADING**, the up
 strokeWidth?: Length
 ```
 
-Stroke width of the progress indicator. Percentage values are not supported. Default value: **4.0vp**
+Stroke width of the progress indicator. Percentage values are not supported.
+
+Default value: **4.0vp**
 
 **Type:** Length
 

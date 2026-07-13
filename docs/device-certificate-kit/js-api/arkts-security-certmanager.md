@@ -1,6 +1,10 @@
 # @ohos.security.certManager
 
-证书管理主要提供系统级的证书管理能力，实现证书全生命周期（安装，存储，使用，销毁）的管理和安全使用。 可用于校验应用服务器的HTTPS证书链、通过双向HTTPS登录网站或应用服务器。
+The **certManager** module provides system-level certificate management capabilities to implement management and
+secure use of certificates throughout their lifecycle (installation, storage, use, and destruction).
+
+It can be used to verify the HTTPS certificate chain of the application server , and log in to the website or
+application server using two-way HTTPS.
 
 **Since:** 11
 
@@ -18,81 +22,96 @@ import { certificateManager } from '@kit.DeviceCertificateKit';
 
 | Name | Description |
 | --- | --- |
-| [abort](arkts-certificatemanager-abort-f.md#abort-1) | 中止签名、验签的操作。与finish方法互斥，一个签名验签流程只能选择调用其中一个方法。使用Callback异步回调。 |
-| [abort](arkts-certificatemanager-abort-f.md#abort-2) | 中止签名、验签的操作。与finish方法互斥，一个签名验签流程只能选择调用其中一个方法。使用Promise异步回调。 |
-| [finish](arkts-certificatemanager-finish-f.md#finish-1) | 完成签名的操作，是签名流程的最后一步，需要先调用init和update接口。使用Callback异步回调。 |
-| [finish](arkts-certificatemanager-finish-f.md#finish-2) | 完成验签的操作，是验签流程的最后一步，需要先调用init和update接口。使用Callback异步回调。 |
-| [finish](arkts-certificatemanager-finish-f.md#finish-3) | 完成签名、验签的操作。使用Promise异步回调。 |
-| <!--DelRow-->[getAllAppPrivateCertificates](arkts-certificatemanager-getallappprivatecertificates-f-sys.md#getAllAppPrivateCertificates-1) | 表示获取所有私有凭据列表，使用Callback异步回调。 |
-| <!--DelRow-->[getAllAppPrivateCertificates](arkts-certificatemanager-getallappprivatecertificates-f-sys.md#getAllAppPrivateCertificates-2) | 表示获取所有私有凭据列表。使用Promise异步回调。 |
-| <!--DelRow-->[getAllAppPrivateCertificatesByUid](arkts-certificatemanager-getallappprivatecertificatesbyuid-f-sys.md#getAllAppPrivateCertificatesByUid-1) | 获取指定应用的所有私有凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[getAllPublicCertificates](arkts-certificatemanager-getallpubliccertificates-f-sys.md#getAllPublicCertificates-1) | 获取所有用户的公共凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[getAllSystemAppCertificates](arkts-certificatemanager-getallsystemappcertificates-f-sys.md#getAllSystemAppCertificates-1) | 表示获取所有系统凭据列表。使用Promise异步回调。 |
-| [getAllUserTrustedCertificates](arkts-certificatemanager-getallusertrustedcertificates-f.md#getAllUserTrustedCertificates-1) | 表示获取当前用户和设备公共位置的所有用户根CA证书列表。使用Promise异步回调。 |
-| [getAllUserTrustedCertificates](arkts-certificatemanager-getallusertrustedcertificates-f.md#getAllUserTrustedCertificates-2) | 表示根据证书的位置获取用户根CA证书列表。使用Promise异步回调。 |
-| <!--DelRow-->[getAuthorizedAppList](arkts-certificatemanager-getauthorizedapplist-f-sys.md#getAuthorizedAppList-1) | 获取用户公共凭据的授权应用列表，仅证书管理应用调用。使用Promise异步回调。 |
-| [getCertificateStorePath](arkts-certificatemanager-getcertificatestorepath-f.md#getCertificateStorePath-1) | 表示获取证书的存储路径。 |
-| [getPrivateCertificate](arkts-certificatemanager-getprivatecertificate-f.md#getPrivateCertificate-1) | 获取私有凭据的详细信息，使用Callback异步回调。 |
-| [getPrivateCertificate](arkts-certificatemanager-getprivatecertificate-f.md#getPrivateCertificate-2) | 获取私有凭据详情。使用Promise异步回调。 |
-| [getPrivateCertificates](arkts-certificatemanager-getprivatecertificates-f.md#getPrivateCertificates-1) | 表示获取应用安装的凭据列表。使用Promise异步回调。 |
-| [getPublicCertificate](arkts-certificatemanager-getpubliccertificate-f.md#getPublicCertificate-1) | 表示获取用户公共凭据的详细信息。使用Promise异步回调。 |
-| <!--DelRow-->[getSystemAppCertificate](arkts-certificatemanager-getsystemappcertificate-f-sys.md#getSystemAppCertificate-1) | 获取系统应用的凭据详情，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[getSystemTrustedCertificate](arkts-certificatemanager-getsystemtrustedcertificate-f-sys.md#getSystemTrustedCertificate-1) | 获取系统信任的CA证书详情，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[getSystemTrustedCertificateList](arkts-certificatemanager-getsystemtrustedcertificatelist-f-sys.md#getSystemTrustedCertificateList-1) | 获取系统信任的CA证书列表，仅证书管理应用调用。使用Promise异步回调。 |
-| [getUkeyCertificate](arkts-certificatemanager-getukeycertificate-f.md#getUkeyCertificate-1) | 获取USB Key证书凭据详细信息。使用Promise异步回调。 |
-| [getUkeyCertificateList](arkts-certificatemanager-getukeycertificatelist-f.md#getUkeyCertificateList-1) | 获取USB Key证书凭据列表。使用Promise异步回调。 |
-| [getUserTrustedCertificate](arkts-certificatemanager-getusertrustedcertificate-f.md#getUserTrustedCertificate-1) | 表示获取用户根CA证书的详细信息。使用Promise异步回调。 |
-| <!--DelRow-->[grantPublicCertificate](arkts-certificatemanager-grantpubliccertificate-f-sys.md#grantPublicCertificate-1) | 授予应用使用用户公共凭据的权限，仅证书管理应用调用。使用Promise异步回调。 |
-| [importUkeyCertificate](arkts-certificatemanager-importukeycertificate-f.md#importUkeyCertificate-1) | 导入证书到USB Key |
-| [init](arkts-certificatemanager-init-f.md#init-1) | 使用凭据进行签名、验签的初始化操作，是签名验签流程的第一步，后续需依次调用update和finish接口完成操作。使用Callback异步回调。 |
-| [init](arkts-certificatemanager-init-f.md#init-2) | 使用凭据进行签名、验签的初始化操作。使用Promise异步回调。 |
-| [installPrivateCertificate](arkts-certificatemanager-installprivatecertificate-f.md#installPrivateCertificate-1) | 安装私有凭据。使用Callback异步回调。 |
-| [installPrivateCertificate](arkts-certificatemanager-installprivatecertificate-f.md#installPrivateCertificate-2) | 安装私有凭据。使用Promise异步回调。 |
-| [installPrivateCertificate](arkts-certificatemanager-installprivatecertificate-f.md#installPrivateCertificate-3) | 表示安装私有凭据并指定凭据的存储级别。使用Promise异步回调。 |
-| <!--DelRow-->[installPublicCertificate](arkts-certificatemanager-installpubliccertificate-f-sys.md#installPublicCertificate-1) | 安装用户的公共凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[installSystemAppCertificate](arkts-certificatemanager-installsystemappcertificate-f-sys.md#installSystemAppCertificate-1) | 安装系统应用凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| [installUserTrustedCertificate](arkts-certificatemanager-installusertrustedcertificate-f.md#installUserTrustedCertificate-1) | 安装用户CA证书。使用Promise异步回调。 |
-| [installUserTrustedCertificateSync](arkts-certificatemanager-installusertrustedcertificatesync-f.md#installUserTrustedCertificateSync-1) | 安装用户CA证书。 |
-| [isAuthorizedApp](arkts-certificatemanager-isauthorizedapp-f.md#isAuthorizedApp-1) | 表示当前应用是否由指定的用户凭据授权。使用Promise异步回调。 |
-| <!--DelRow-->[removeGrantedPublicCertificate](arkts-certificatemanager-removegrantedpubliccertificate-f-sys.md#removeGrantedPublicCertificate-1) | 移除应用使用用户公共凭据的权限，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[setCertificateStatus](arkts-certificatemanager-setcertificatestatus-f-sys.md#setCertificateStatus-1) | 设置CA证书的状态，当前仅支持设置用户CA证书状态，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[uninstallAllAppCertificate](arkts-certificatemanager-uninstallallappcertificate-f-sys.md#uninstallAllAppCertificate-1) | 卸载所有系统应用凭据和用户公共凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[uninstallAllUserTrustedCertificate](arkts-certificatemanager-uninstallallusertrustedcertificate-f-sys.md#uninstallAllUserTrustedCertificate-1) | 卸载所有用户信任的CA证书，仅证书管理应用调用。使用Promise异步回调。 |
-| [uninstallPrivateCertificate](arkts-certificatemanager-uninstallprivatecertificate-f.md#uninstallPrivateCertificate-1) | 卸载指定的私有凭据，使用Callback异步回调。 |
-| [uninstallPrivateCertificate](arkts-certificatemanager-uninstallprivatecertificate-f.md#uninstallPrivateCertificate-2) | 表示卸载指定的私有凭据。使用Promise异步回调。 |
-| <!--DelRow-->[uninstallPublicCertificate](arkts-certificatemanager-uninstallpubliccertificate-f-sys.md#uninstallPublicCertificate-1) | 卸载用的户公共凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| <!--DelRow-->[uninstallSystemAppCertificate](arkts-certificatemanager-uninstallsystemappcertificate-f-sys.md#uninstallSystemAppCertificate-1) | 卸载系统应用的凭据，仅证书管理应用调用。使用Promise异步回调。 |
-| [uninstallUserTrustedCertificateSync](arkts-certificatemanager-uninstallusertrustedcertificatesync-f.md#uninstallUserTrustedCertificateSync-1) | 卸载用户CA证书。 |
-| [update](arkts-certificatemanager-update-f.md#update-1) | 签名、验签的数据更新操作，需要在init操作之后调用，用于传入待签名、验签的数据。使用Callback异步回调。 |
-| [update](arkts-certificatemanager-update-f.md#update-2) | 签名、验签的数据更新操作。使用Promise异步回调。 |
+| [abort](arkts-devicecertificate-abort-f.md#abort-1) | Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.Only one method can be invoked in a signature verification process. This API uses an asynchronous callback toreturn the result. |
+| [abort](arkts-devicecertificate-abort-f.md#abort-2) | Aborts the signing or signature verification operation. This method is mutually exclusive with the finish method.Only one method can be invoked in a signature verification process. This API uses a promise to return the result. |
+| [finish](arkts-devicecertificate-finish-f.md#finish-1) | Finishes the signing operation. This is the last step in the signature process. The init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result. |
+| [finish](arkts-devicecertificate-finish-f.md#finish-2) | Finishes the signature verification operation. This is the last step in the signature verification process. Theinit and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result. |
+| [finish](arkts-devicecertificate-finish-f.md#finish-3) | Finishes the signing or signature verification operation. This API uses a promise to return the result. |
+| [getAllUserTrustedCertificates](arkts-devicecertificate-getallusertrustedcertificates-f.md#getallusertrustedcertificates-1) | Obtains all user trusted root CA certificates of the device. This API uses a promise to return the result. |
+| [getAllUserTrustedCertificates](arkts-devicecertificate-getallusertrustedcertificates-f.md#getallusertrustedcertificates-2) | Obtains the user root CA certificates based on the certificate scope. This API uses a promise to return the result. |
+| [getCertificateStorePath](arkts-devicecertificate-getcertificatestorepath-f.md#getcertificatestorepath-1) | Obtains the certificate storage path. |
+| [getPrivateCertificate](arkts-devicecertificate-getprivatecertificate-f.md#getprivatecertificate-1) | Obtains detailed information about a private credential. This API uses an asynchronous callback to return theresult. |
+| [getPrivateCertificate](arkts-devicecertificate-getprivatecertificate-f.md#getprivatecertificate-2) | Obtains detailed information about a private credential. This API uses a promise to return the result. |
+| [getPrivateCertificates](arkts-devicecertificate-getprivatecertificates-f.md#getprivatecertificates-1) | Obtains the credentials for installing the application. This API uses a promise to return the resultasynchronously. |
+| [getPublicCertificate](arkts-devicecertificate-getpubliccertificate-f.md#getpubliccertificate-1) | Obtains detailed information about a public credential. This API uses a promise to return the result. |
+| [getUkeyCertificate](arkts-devicecertificate-getukeycertificate-f.md#getukeycertificate-1) | Obtains the details of a USB Key credential. This API uses a promise to return the result. |
+| [getUkeyCertificateList](arkts-devicecertificate-getukeycertificatelist-f.md#getukeycertificatelist-1) | Obtains the list of USB Key credential . This API uses a promise to return the result. |
+| [getUserTrustedCertificate](arkts-devicecertificate-getusertrustedcertificate-f.md#getusertrustedcertificate-1) | Obtains the detailed information about a user root CA certificate. This API uses a promise to return the result. |
+| [importUkeyCertificate](arkts-devicecertificate-importukeycertificate-f.md#importukeycertificate-1) | Import the certificate to the USB Key. |
+| [init](arkts-devicecertificate-init-f.md#init-1) | Indicates the initialization of signature and signature verification using credentials. This is the first step inthe signature verification process. Later, the update and finish interfaces need to be invoked in sequence tocomplete the operations. Use Callback to return the result asynchronously. |
+| [init](arkts-devicecertificate-init-f.md#init-2) | Initializes the signing or signature verification operation using the specified credential. This API uses a promiseto return the result. |
+| [installPrivateCertificate](arkts-devicecertificate-installprivatecertificate-f.md#installprivatecertificate-1) | Installs a private credential. This API uses an asynchronous callback to return the result. |
+| [installPrivateCertificate](arkts-devicecertificate-installprivatecertificate-f.md#installprivatecertificate-2) | Installs a private credential. This API uses a promise to return the result. |
+| [installPrivateCertificate](arkts-devicecertificate-installprivatecertificate-f.md#installprivatecertificate-3) | Installs a private credential and specifies its storage level. This API uses a promise to return the result. |
+| [installUserTrustedCertificate](arkts-devicecertificate-installusertrustedcertificate-f.md#installusertrustedcertificate-1) | Install the user CA certificate. Use Promise asynchronous callback. |
+| [installUserTrustedCertificateSync](arkts-devicecertificate-installusertrustedcertificatesync-f.md#installusertrustedcertificatesync-1) | Installs a user CA certificate. |
+| [isAuthorizedApp](arkts-devicecertificate-isauthorizedapp-f.md#isauthorizedapp-1) | Checks whether this application is authorized by the specified user credential. This API uses a promise to returnthe result. |
+| [uninstallPrivateCertificate](arkts-devicecertificate-uninstallprivatecertificate-f.md#uninstallprivatecertificate-1) | Uninstalls a private credential. This API uses an asynchronous callback to return the result. |
+| [uninstallPrivateCertificate](arkts-devicecertificate-uninstallprivatecertificate-f.md#uninstallprivatecertificate-2) | Uninstalls a private credential. This API uses a promise to return the result. |
+| [uninstallUserTrustedCertificateSync](arkts-devicecertificate-uninstallusertrustedcertificatesync-f.md#uninstallusertrustedcertificatesync-1) | Uninstalls a user CA certificate. |
+| [update](arkts-devicecertificate-update-f.md#update-1) | Updates the data for the signing or signature verification operation. It needs to be invoked after the initoperation to transfer the data to be signed and verified. This API uses an asynchronous callback toreturn the result. |
+| [update](arkts-devicecertificate-update-f.md#update-2) | Updates the data for the signing or signature verification operation. This API uses a promise to return the result. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getAllAppPrivateCertificates](arkts-devicecertificate-getallappprivatecertificates-f-sys.md#getallappprivatecertificates-1) | Obtains all private credentials. This API uses an asynchronous callback to return the result. |
+| [getAllAppPrivateCertificates](arkts-devicecertificate-getallappprivatecertificates-f-sys.md#getallappprivatecertificates-2) | Obtains all private credentials. This API uses a promise to return the result. |
+| [getAllAppPrivateCertificatesByUid](arkts-devicecertificate-getallappprivatecertificatesbyuid-f-sys.md#getallappprivatecertificatesbyuid-1) | Obtains all private credentials of a specified application. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+| [getAllPublicCertificates](arkts-devicecertificate-getallpubliccertificates-f-sys.md#getallpubliccertificates-1) | Obtains the public credentials of all users. This API is called only by the certificate management application.This API uses a promise to return the result. |
+| [getAllSystemAppCertificates](arkts-devicecertificate-getallsystemappcertificates-f-sys.md#getallsystemappcertificates-1) | Obtains all system credentials. This API uses a promise to return the result. |
+| [getAuthorizedAppList](arkts-devicecertificate-getauthorizedapplist-f-sys.md#getauthorizedapplist-1) | Obtains the list of authorized applications of a user's public credential. This API is called only by thecertificate management application. This API uses a promise to return the result. |
+| [getSystemAppCertificate](arkts-devicecertificate-getsystemappcertificate-f-sys.md#getsystemappcertificate-1) | Obtains the credential details of the system application. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+| [getSystemTrustedCertificate](arkts-devicecertificate-getsystemtrustedcertificate-f-sys.md#getsystemtrustedcertificate-1) | Obtains details about a CA certificate trusted by the system. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+| [getSystemTrustedCertificateList](arkts-devicecertificate-getsystemtrustedcertificatelist-f-sys.md#getsystemtrustedcertificatelist-1) | Obtains the list of CA certificates trusted by the system. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+| [grantPublicCertificate](arkts-devicecertificate-grantpubliccertificate-f-sys.md#grantpubliccertificate-1) | Grants the permission for an application to use the public credentials of a user. This API is called only by thecertificate management application. This API uses a promise to return the result. |
+| [installPublicCertificate](arkts-devicecertificate-installpubliccertificate-f-sys.md#installpubliccertificate-1) | Installs the public credential of the user. This API is called only by the certificate management application. ThisAPI uses a promise to return the result. |
+| [installSystemAppCertificate](arkts-devicecertificate-installsystemappcertificate-f-sys.md#installsystemappcertificate-1) | Installs the system application credential. This API is called only by the certificate management application. ThisAPI uses a promise to return the result. |
+| [removeGrantedPublicCertificate](arkts-devicecertificate-removegrantedpubliccertificate-f-sys.md#removegrantedpubliccertificate-1) | Removes the permission for an application to use the public credentials of a user. This API is called only by thecertificate management application. This API uses a promise to return the result. |
+| [setCertificateStatus](arkts-devicecertificate-setcertificatestatus-f-sys.md#setcertificatestatus-1) | Sets the status of a CA certificate. Currently, only the status of a user's CA certificate can be set. This API iscalled only by the certificate management application. This API uses a promise to return the result. |
+| [uninstallAllAppCertificate](arkts-devicecertificate-uninstallallappcertificate-f-sys.md#uninstallallappcertificate-1) | Uninstalls all system application credentials and public user credentials. This API is called only by thecertificate management application. This API uses a promise to return the result. |
+| [uninstallAllUserTrustedCertificate](arkts-devicecertificate-uninstallallusertrustedcertificate-f-sys.md#uninstallallusertrustedcertificate-1) | Uninstalls all CA certificates trusted by the user. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+| [uninstallPublicCertificate](arkts-devicecertificate-uninstallpubliccertificate-f-sys.md#uninstallpubliccertificate-1) | Uninstalls the public credential of the user. This API is called only by the certificate management application.This API uses a promise to return the result. |
+| [uninstallSystemAppCertificate](arkts-devicecertificate-uninstallsystemappcertificate-f-sys.md#uninstallsystemappcertificate-1) | Uninstalls the credential of the system application. This API is called only by the certificate managementapplication. This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CertAbstract](arkts-certificatemanager-certabstract-i.md) | 表示证书简要信息。 |
-| [CertBlob](arkts-certificatemanager-certblob-i.md) | 表示证书文件数据。 |
-| [CertInfo](arkts-certificatemanager-certinfo-i.md) | 表示证书详细信息。 |
-| [CertStoreProperty](arkts-certificatemanager-certstoreproperty-i.md) | 表示获取证书存储位置的参数集合，包括证书的类型及证书的位置。 |
-| [CMHandle](arkts-certificatemanager-cmhandle-i.md) | 表示签名、验签的初始化操作句柄。 |
-| [CMResult](arkts-certificatemanager-cmresult-i.md) | 表示接口的返回结果。 |
-| [CMSignatureSpec](arkts-certificatemanager-cmsignaturespec-i.md) | 表示签名、验签操作使用的参数集合，包括密钥使用目的、填充方式和摘要算法。 |
-| [Credential](arkts-certificatemanager-credential-i.md) | 表示凭据详细信息。 |
-| [CredentialAbstract](arkts-certificatemanager-credentialabstract-i.md) | 表示凭据的简要信息。 |
-| [UkeyInfo](arkts-certificatemanager-ukeyinfo-i.md) | 提供USB Key证书凭据属性信息。 |
+| [CMHandle](arkts-devicecertificate-cmhandle-i.md) | Represents the handle to a signing or signature verification operation. |
+| [CMResult](arkts-devicecertificate-cmresult-i.md) | Represents the result returned. |
+| [CMSignatureSpec](arkts-devicecertificate-cmsignaturespec-i.md) | Represents a set of parameters used for signing or signature verification, including the key usage purpose, paddingmode, and digest algorithm. |
+| [CertAbstract](arkts-devicecertificate-certabstract-i.md) | Represents brief information about a certificate. |
+| [CertBlob](arkts-devicecertificate-certblob-i.md) | Indicates the certificate file data. |
+| [CertInfo](arkts-devicecertificate-certinfo-i.md) | Represents detailed information about a certificate. |
+| [CertStoreProperty](arkts-devicecertificate-certstoreproperty-i.md) | Represents the storage information about a certificate, including the certificate type and location. |
+| [Credential](arkts-devicecertificate-credential-i.md) | Represents detailed information about a credential. |
+| [CredentialAbstract](arkts-devicecertificate-credentialabstract-i.md) | Represents brief information about a credential. |
+| [UkeyInfo](arkts-devicecertificate-ukeyinfo-i.md) | Provides USB Key certificate credential attribute information. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AuthStorageLevel](arkts-certificatemanager-authstoragelevel-e.md) | 表示凭据的存储级别。 |
-| [CertAlgorithm](arkts-certificatemanager-certalgorithm-e.md) | 表示证书的算法类型。 |
-| [CertFileFormat](arkts-certificatemanager-certfileformat-e.md) | 表示证书文件格式。 |
-| [CertificatePurpose](arkts-certificatemanager-certificatepurpose-e.md) | 表示凭据用途的枚举。 |
-| [CertScope](arkts-certificatemanager-certscope-e.md) | 表示证书的位置。 |
-| [CertType](arkts-certificatemanager-certtype-e.md) | 表示证书类型。 |
-| [CMErrorCode](arkts-certificatemanager-cmerrorcode-e.md) | 表示调用证书管理相关API的错误码。 |
-| [CmKeyDigest](arkts-certificatemanager-cmkeydigest-e.md) | 表示签名、验签使用的摘要算法的枚举。 |
-| [CmKeyPadding](arkts-certificatemanager-cmkeypadding-e.md) | 表示签名、验签使用的填充方式的枚举。 |
-| [CmKeyPurpose](arkts-certificatemanager-cmkeypurpose-e.md) | 表示密钥使用目的的枚举，用于签名、验签。 |
+| [AuthStorageLevel](arkts-devicecertificate-authstoragelevel-e.md) | Enumerates the credential storage levels. |
+| [CMErrorCode](arkts-devicecertificate-cmerrorcode-e.md) | Enumerates the error codes used in the certificate management APIs. |
+| [CertAlgorithm](arkts-devicecertificate-certalgorithm-e.md) | Enumerates the certificate algorithms. |
+| [CertFileFormat](arkts-devicecertificate-certfileformat-e.md) | Represents the certificate file format. |
+| [CertScope](arkts-devicecertificate-certscope-e.md) | Enumerates the certificate scopes. |
+| [CertType](arkts-devicecertificate-certtype-e.md) | Enumerates the certificate types. |
+| [CertificatePurpose](arkts-devicecertificate-certificatepurpose-e.md) | Enumerates the usage of a credential. |
+| [CmKeyDigest](arkts-devicecertificate-cmkeydigest-e.md) | Enumerates the digest algorithms that can be used for signing and signature verification. |
+| [CmKeyPadding](arkts-devicecertificate-cmkeypadding-e.md) | Enumerates the padding modes that can be used for signing and signature verification. |
+| [CmKeyPurpose](arkts-devicecertificate-cmkeypurpose-e.md) | Enumerates the purposes of using the key. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [CMErrorCode](arkts-devicecertificate-cmerrorcode-e-sys.md) | Enumerates the error codes used in the certificate management APIs. |
+<!--DelEnd-->
 

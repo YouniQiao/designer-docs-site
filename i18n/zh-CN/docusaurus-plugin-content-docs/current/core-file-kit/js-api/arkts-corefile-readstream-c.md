@@ -1,8 +1,9 @@
 # ReadStream
 
-文件可读流，需要先通过fileIo.createReadStream方法来构建一个ReadStream实例。ReadStream继承自数据流基类stream.Readable。 ReadStream读到的数据为解码后的字符串，其编码格式当前仅支持'utf-8'。
+文件可读流，需要先通过fileIo.createReadStream方法来构建一个ReadStream实例。ReadStream继承自数据流基类stream.Readable。
+ReadStream读到的数据为解码后的字符串，其编码格式当前仅支持'utf-8'。
 
-**继承/实现关系：** ReadStream extends [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readable-c.md#readable)
+**继承/实现关系：** ReadStream extends [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readable-c.md)
 
 **起始版本：** 12
 
@@ -81,7 +82,7 @@ seek(offset: number, whence?: WhenceType): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error |
 | 13900020 | Invalid argument |
 | 13900026 | Illegal seek |
 | 13900042 | Unknown error |

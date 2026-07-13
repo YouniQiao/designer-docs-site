@@ -1,6 +1,7 @@
 # AppProvisionInfo (System API)
 
-The module provides information in the [HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md).
+The module provides information in the
+[HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md).
 
 **Since:** 10
 
@@ -46,7 +47,8 @@ readonly appDistributionType: string
 readonly appIdentifier: string
 ```
 
-Unique ID of the application. For details, see [What Is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier).
+Unique ID of the application. For details, see
+[What Is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier).
 
 **Type:** string
 

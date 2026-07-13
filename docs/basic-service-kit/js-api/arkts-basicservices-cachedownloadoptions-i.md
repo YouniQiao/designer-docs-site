@@ -1,6 +1,7 @@
 # CacheDownloadOptions
 
-Provides configuration options for download and cache, including HTTP options, transmission options, and task options.
+Provides configuration options for download and cache, including HTTP options, transmission options, and task
+options.
 
 **Since:** 18
 
@@ -9,7 +10,7 @@ Provides configuration options for download and cache, including HTTP options, t
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## caPath
@@ -18,7 +19,8 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 caPath?: string
 ```
 
-CA certificate path. Currently, only the .pem certificate is supported. The CA certificate preset by the system is used by default.
+CA certificate path. Currently, only the .pem certificate is supported. The CA certificate preset by the
+system is used by default.
 
 **Type:** string
 
@@ -76,7 +78,8 @@ Task retry configuration.
 sslType?: SslType
 ```
 
-Secure communication protocol, such as TSL or TLCP. TLS is used by default. Currently, TLS and TLCP do not support two-way authentication.
+Secure communication protocol, such as TSL or TLCP. TLS is used by default. Currently, TLS and TLCP do not
+support two-way authentication.
 
 **Type:** SslType
 

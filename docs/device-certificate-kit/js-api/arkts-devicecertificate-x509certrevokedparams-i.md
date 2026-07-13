@@ -9,7 +9,7 @@ Parameters for checking certificate revocation status.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## allowDownloadCrl
@@ -18,7 +18,12 @@ import { cert } from '@ohos.security.cert';
 allowDownloadCrl?: boolean
 ```
 
-Indicates whether to allow CRL download. The default value is false. true: The CDP extension of the certificate is used to download the CRL. false: Do not attempt to download the CRL. **NOTE** - Skip download if matching CRL exists in crls.
+Indicates whether to allow CRL download. The default value is false. true: The CDP extension of the certificate
+is used to download the CRL. false: Do not attempt to download the CRL.
+
+> **NOTE**
+>
+> Skip download if matching CRL exists in crls.
 
 **Type:** boolean
 
@@ -38,7 +43,13 @@ Indicates whether to allow CRL download. The default value is false. true: The C
 allowOcspCheckOnline?: boolean
 ```
 
-Indicates whether to allow online OCSP check. The default value is false. true: Perform online OCSP check, that is, attempt to obtain the OCSP URL from the certificate AIA extension and send a request to obtain the response. false: Do not perform online OCSP check. **NOTE** - Skip online OCSP check if a matching OCSP response is found in ocspResponses.
+Indicates whether to allow online OCSP check. The default value is false. true: Perform online OCSP check, that
+is, attempt to obtain the OCSP URL from the certificate AIA extension and send a request to obtain the response.
+false: Do not perform online OCSP check.
+
+> **NOTE**
+>
+> Skip online OCSP check if a matching OCSP response is found in ocspResponses.
 
 **Type:** boolean
 
@@ -96,7 +107,7 @@ Digest algorithm used by OCSP requests. The default value is SHA256.
 ocspResponses?: Array<Uint8Array>
 ```
 
-OCSP response data. Preconfigured OCSP response data. Maximum count: 100.
+Preconfigured OCSP response data. Maximum count: 100.
 
 **Type:** Array<Uint8Array>
 
@@ -114,7 +125,8 @@ OCSP response data. Preconfigured OCSP response data. Maximum count: 100.
 revocationFlags: Array<CertRevocationFlag>
 ```
 
-Revocation check flag. Array length range: [1,4]. The array must contain either CERT_REVOCATION_CRL_CHECK or CERT_REVOCATION_OCSP_CHECK.
+Revocation check flag. Array length range: [1,4]. The array must contain either CERT_REVOCATION_CRL_CHECK or
+CERT_REVOCATION_OCSP_CHECK.
 
 **Type:** Array<CertRevocationFlag>
 

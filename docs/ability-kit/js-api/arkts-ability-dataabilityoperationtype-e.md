@@ -1,6 +1,7 @@
 # DataAbilityOperationType
 
-Enum for the operation type of data.
+Enumerates the operation types of a DataAbility. The DataAbility can use an enumerated value to specify the
+operation type when operating data in batches.
 
 **Since:** 7
 
@@ -12,7 +13,7 @@ Enum for the operation type of data.
 TYPE_INSERT = 1
 ```
 
-Insert type.
+Insert operation.
 
 **Since:** 7
 
@@ -26,7 +27,7 @@ Insert type.
 TYPE_UPDATE = 2
 ```
 
-Modify the type.
+Update operation.
 
 **Since:** 7
 
@@ -40,7 +41,7 @@ Modify the type.
 TYPE_DELETE = 3
 ```
 
-Delete type.
+Deletion operation.
 
 **Since:** 7
 
@@ -54,7 +55,7 @@ Delete type.
 TYPE_ASSERT = 4
 ```
 
-Declaration type.
+Assert operation.
 
 **Since:** 7
 

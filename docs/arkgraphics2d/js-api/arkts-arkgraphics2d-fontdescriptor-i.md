@@ -9,7 +9,7 @@ Describes the font descriptor information.
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## copyright
@@ -100,7 +100,8 @@ Font name. Any string is acceptable. The default value is an empty string.
 index?: number
 ```
 
-Font index. This parameter is valid only when the font file is in TTC format. The value is **0** for the TTF format.
+Font index. This parameter is valid only when the font file is in TTC format. The value is **0** for the TTF
+format.
 
 **Type:** number
 
@@ -118,7 +119,8 @@ Font index. This parameter is valid only when the font file is in TTC format. Th
 italic?: number
 ```
 
-Whether the font is italic. The value **0** means that the font is not italic, and **1** means the opposite. The default value is **0**.
+Whether the font is italic. The value **0** means that the font is not italic, and **1** means the opposite. The
+default value is **0**.
 
 **Type:** number
 
@@ -168,7 +170,8 @@ Font license information. Any string is acceptable. The default value is an empt
 localFamilyName?: string
 ```
 
-Extracts the font family name based on the system language configuration. If the font file does not contain the configuration corresponding to the current language, the information corresponding to **en** is used.
+Extracts the font family name based on the system language configuration. If the font file does not contain the
+configuration corresponding to the current language, the information corresponding to **en** is used.
 
 **Type:** string
 
@@ -184,7 +187,8 @@ Extracts the font family name based on the system language configuration. If the
 localFullName?: string
 ```
 
-Extracts the full font name based on the system language configuration. If the font file does not contain the configuration corresponding to the current language, the information corresponding to **en** is used.
+Extracts the full font name based on the system language configuration. If the font file does not contain the
+configuration corresponding to the current language, the information corresponding to **en** is used.
 
 **Type:** string
 
@@ -200,7 +204,8 @@ Extracts the full font name based on the system language configuration. If the f
 localPostscriptName?: string
 ```
 
-Extracts the unique font ID based on the system language configuration. If the font file does not contain the configuration corresponding to the current language, the information corresponding to **en** is used.
+Extracts the unique font ID based on the system language configuration. If the font file does not contain the
+configuration corresponding to the current language, the information corresponding to **en** is used.
 
 **Type:** string
 
@@ -216,7 +221,8 @@ Extracts the unique font ID based on the system language configuration. If the f
 localSubFamilyName?: string
 ```
 
-Extracts the font subfamily name based on the system language configuration. If the font file does not contain the configuration corresponding to the current language, the information corresponding to **en** is used.
+Extracts the font subfamily name based on the system language configuration. If the font file does not contain
+the configuration corresponding to the current language, the information corresponding to **en** is used.
 
 **Type:** string
 
@@ -248,7 +254,8 @@ Font manufacturer information. Any string is acceptable. The default value is an
 monoSpace?: boolean
 ```
 
-Whether the font is monospaced. The value **true** means that the font is monospaced, and **false** means the opposite. The default value is **false**.
+Whether the font is monospaced. The value **true** means that the font is monospaced, and **false** means the
+opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -264,7 +271,8 @@ Whether the font is monospaced. The value **true** means that the font is monosp
 path?: string
 ```
 
-Absolute path of the font. Any string that complies with the system restrictions is acceptable. The default value is an empty string.
+Absolute path of the font. Any string that complies with the system restrictions is acceptable. The default value
+is an empty string.
 
 **Type:** string
 
@@ -296,7 +304,8 @@ Unique name of the font. Any string is acceptable. The default value is an empty
 symbolic?: boolean
 ```
 
-Whether the font is symbolic. The value **true** means that the font is symbolic, and **false** means the opposite.
+Whether the font is symbolic. The value **true** means that the font is symbolic, and **false** means the
+opposite.
 
 **Type:** boolean
 
@@ -328,7 +337,8 @@ Font trademark information. Any string is acceptable. The default value is an em
 variationAxisRecords?: Array<FontVariationAxis>
 ```
 
-Font variable axis record array, which is used to describe the variable axis information supported by the font. For non-variable fonts, this field is **undefined**.
+Font variable axis record array, which is used to describe the variable axis information supported by the font.
+For non-variable fonts, this field is **undefined**.
 
 **Type:** Array<FontVariationAxis>
 
@@ -344,7 +354,8 @@ Font variable axis record array, which is used to describe the variable axis inf
 variationInstanceRecords?: Array<FontVariationInstance>
 ```
 
-Font variable instance record array, which is used to describe the variable instance information supported by the font. For non-variable fonts, this field is **undefined**.
+Font variable instance record array, which is used to describe the variable instance information supported by the
+font. For non-variable fonts, this field is **undefined**.
 
 **Type:** Array<FontVariationInstance>
 

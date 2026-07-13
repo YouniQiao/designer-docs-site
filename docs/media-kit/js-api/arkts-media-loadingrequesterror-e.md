@@ -1,9 +1,5 @@
 # LoadingRequestError
 
-```TypeScript
-enum LoadingRequestError
-```
-
 Enumerates the reasons for data loading status changes.
 
 **Since:** 18
@@ -20,7 +16,7 @@ Returned by the client to indicate that the end of the resource.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -34,7 +30,7 @@ Returned by the client to indicate that the resource is not ready for access.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -48,7 +44,7 @@ Returned by the client to indicate that the requested resource URL does not exis
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -58,11 +54,12 @@ Returned by the client to indicate that the requested resource URL does not exis
 LOADING_ERROR_INVAID_HANDLE = 3
 ```
 
-Returned by the client to indicate that the ID of the requested resource handle (specified by **uuid**) is invalid.
+Returned by the client to indicate that the ID of the requested resource handle (specified by **uuid**) is
+invalid.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -76,7 +73,7 @@ Returned by the client to indicate that the client does not have permission to r
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -90,7 +87,7 @@ Returned by the client to indicate that the access to the resource times out.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -104,7 +101,7 @@ Returned by the client to indicate that authorization fails.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

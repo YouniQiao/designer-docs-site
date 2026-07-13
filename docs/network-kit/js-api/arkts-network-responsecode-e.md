@@ -124,7 +124,8 @@ Multiple options.
 MOVED_PERM
 ```
 
-<p>Permanently move. The requested resource has been permanently moved to a new URI, and the returned information will include the new URI. The browser will automatically redirect to the new URI.</p>
+<p>Permanently move. The requested resource has been permanently moved to a new URI,
+and the returned information will include the new URI. The browser will automatically redirect to the new URI.</p>
 
 **Since:** 11
 
@@ -320,7 +321,8 @@ The request took too long and timed out.
 CONFLICT
 ```
 
-<p>The server may have returned this code when completing the client's PUT request, as there was a conflict when the server was processing the request.</p>
+<p>The server may have returned this code when completing the client's PUT request,
+as there was a conflict when the server was processing the request.</p>
 
 **Since:** 11
 

@@ -352,7 +352,7 @@ letterSpacing?: number
 lineHeightMaximum?: number
 ```
 
-行高上限，单位为物理像素px。若同时应用行高缩放，行高上限在[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle).heightScale大于0时生效。取值为正数浮点数，默认值为Number.MAX_VALUE。
+行高上限，单位为物理像素px。若同时应用行高缩放，行高上限在[TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale大于0时生效。取值为正数浮点数，默认值为Number.MAX_VALUE。
 
 **类型：** number
 
@@ -368,7 +368,7 @@ lineHeightMaximum?: number
 lineHeightMinimum?: number
 ```
 
-行高下限，单位为物理像素px。若同时应用行高缩放，行高下限在[TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle).heightScale大于0时生效。取值范围为非负浮点数，默认值为0。
+行高下限，单位为物理像素px。若同时应用行高缩放，行高下限在[TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale大于0时生效。取值范围为非负浮点数，默认值为0。
 
 **类型：** number
 
@@ -400,7 +400,8 @@ lineHeightStyle?: LineHeightStyle
 locale?: string
 ```
 
-语言类型，例如'en-Latn'代表英文(拉丁文字)，'zh-Hans'代表简体中文，'zh-Hant'代表繁体中文。支持language-script格式的两段式语言标签，language遵循ISO 639-1规范， script遵循ISO 15924规范。未指定locale或者设置为空字符串或为undefined时，默认locale为'zh-Hans'。
+语言类型，例如'en-Latn'代表英文(拉丁文字)，'zh-Hans'代表简体中文，'zh-Hant'代表繁体中文。支持language-script格式的两段式语言标签，language遵循ISO 639-1规范，
+script遵循ISO 15924规范。未指定locale或者设置为空字符串或为undefined时，默认locale为'zh-Hans'。
 
 **类型：** string
 

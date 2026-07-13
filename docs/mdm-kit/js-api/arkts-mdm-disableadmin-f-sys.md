@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## disableAdmin
@@ -12,7 +12,8 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function disableAdmin(admin: Want, callback: AsyncCallback<void>): void
 ```
 
-Disables a common device administrator application for the current user. This API uses an asynchronous callback to return the result.
+Disables a common device administrator application for the current user. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -69,7 +70,8 @@ adminManager.disableAdmin(wantTemp, (err) => {
 function disableAdmin(admin: Want, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Disables a common device administrator application for the user specified by **userId**. This API uses an asynchronous callback to return the result.
+Disables a common device administrator application for the user specified by **userId**. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 

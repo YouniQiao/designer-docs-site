@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiRetrieval } from '@ohos.hiviewdfx.hiRetrieval';
+import { hiRetrieval } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## quit
@@ -12,7 +12,8 @@ import { hiRetrieval } from '@ohos.hiviewdfx.hiRetrieval';
 function quit(): void
 ```
 
-Quit the HiRetrieval project. This operation clears the current HiRetrieval config. Invoking init function again is required after invoking quit function.
+Quit the HiRetrieval project. This operation clears the current HiRetrieval config.
+Invoking init function again is required after invoking quit function.
 
 **Since:** 26.0.0
 

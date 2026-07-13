@@ -1,8 +1,4 @@
-# TripodStatus
-
-```TypeScript
-enum TripodStatus
-```
+# TripodStatus (System API)
 
 Enumerates the tripod statuses.
 
@@ -18,7 +14,8 @@ Enumerates the tripod statuses.
 INVALID = 0
 ```
 
-Error status, or no tripod detected. This is a system API.
+Error status, or no tripod detected.
+This is a system API.
 
 **Since:** 13
 
@@ -32,7 +29,8 @@ Error status, or no tripod detected. This is a system API.
 ACTIVE = 1
 ```
 
-The tripod is active. This is a system API.
+The tripod is active.
+This is a system API.
 
 **Since:** 13
 
@@ -46,7 +44,8 @@ The tripod is active. This is a system API.
 ENTERING = 2
 ```
 
-The system is transitioning into a stable tripod mode. This is a system API.
+The system is transitioning into a stable tripod mode.
+This is a system API.
 
 **Since:** 13
 
@@ -60,7 +59,8 @@ The system is transitioning into a stable tripod mode. This is a system API.
 EXITING = 3
 ```
 
-The system is leaving the stable tripod mode. This is a system API.
+The system is leaving the stable tripod mode.
+This is a system API.
 
 **Since:** 13
 

@@ -1,6 +1,7 @@
 # @ohos.multimodalInput.inputDevice
 
-本模块提供输入设备管理能力，包括监听输入设备的连接和断开状态，查询设备名称等输入设备信息。 > **说明**：
+The inputDevice module implements input device management functions such as listening for the connection and
+disconnection of input devices and querying input device information such as the device name.
 
 **Since:** 8
 
@@ -18,58 +19,63 @@ import { inputDevice } from '@kit.InputKit';
 
 | Name | Description |
 | --- | --- |
-| [getDevice](arkts-inputdevice-getdevice-f.md#getDevice-1) | 获取指定id的输入设备信息，使用callback异步回调。 > **说明**： |
-| [getDevice](arkts-inputdevice-getdevice-f.md#getDevice-2) | 获取指定id的输入设备信息，使用Promise异步回调。 > **说明**： |
-| [getDeviceIds](arkts-inputdevice-getdeviceids-f.md#getDeviceIds-1) | 获取所有输入设备的ID列表，使用callback异步回调。 > **说明**： |
-| [getDeviceIds](arkts-inputdevice-getdeviceids-f.md#getDeviceIds-2) | 获取所有输入设备的ID列表，使用Promise异步回调。 > **说明**： |
-| [getDeviceInfo](arkts-inputdevice-getdeviceinfo-f.md#getDeviceInfo-1) | 获取指定输入设备的信息，使用callback异步回调。 |
-| [getDeviceInfo](arkts-inputdevice-getdeviceinfo-f.md#getDeviceInfo-2) | 获取指定id的输入设备信息，使用Promise异步回调。 |
-| [getDeviceInfoSync](arkts-inputdevice-getdeviceinfosync-f.md#getDeviceInfoSync-1) | 获取指定输入设备的信息。 |
-| [getDeviceList](arkts-inputdevice-getdevicelist-f.md#getDeviceList-1) | 获取所有输入设备的ID列表，使用callback异步回调。 |
-| [getDeviceList](arkts-inputdevice-getdevicelist-f.md#getDeviceList-2) | 获取所有输入设备的ID列表，使用Promise异步回调。 |
-| [getIntervalSinceLastInput](arkts-inputdevice-getintervalsincelastinput-f.md#getIntervalSinceLastInput-1) | 获取距离上次系统输入事件的时间间隔（包含设备休眠时间），使用Promise异步回调。 |
-| <!--DelRow-->[getKeyboardRepeatDelay](arkts-inputdevice-getkeyboardrepeatdelay-f-sys.md#getKeyboardRepeatDelay-1) | 获取键盘按键的重复时延，使用callback异步回调。 |
-| <!--DelRow-->[getKeyboardRepeatDelay](arkts-inputdevice-getkeyboardrepeatdelay-f-sys.md#getKeyboardRepeatDelay-2) | 获取键盘按键的重复时延，使用Promise异步回调。 |
-| <!--DelRow-->[getKeyboardRepeatRate](arkts-inputdevice-getkeyboardrepeatrate-f-sys.md#getKeyboardRepeatRate-1) | 获取键盘按键的重复速率，使用callback异步回调。 |
-| <!--DelRow-->[getKeyboardRepeatRate](arkts-inputdevice-getkeyboardrepeatrate-f-sys.md#getKeyboardRepeatRate-2) | 获取键盘按键的重复速率，使用Promise异步回调。 |
-| [getKeyboardType](arkts-inputdevice-getkeyboardtype-f.md#getKeyboardType-1) | 获取输入设备的键盘类型，如全键盘、小键盘等。输入设备的键盘类型以接口返回结果为准。使用callback异步回调。 |
-| [getKeyboardType](arkts-inputdevice-getkeyboardtype-f.md#getKeyboardType-2) | 获取输入设备的键盘类型，使用Promise异步回调。 |
-| [getKeyboardTypeSync](arkts-inputdevice-getkeyboardtypesync-f.md#getKeyboardTypeSync-1) | 获取输入设备的键盘类型。 |
-| [isFunctionKeyEnabled](arkts-inputdevice-isfunctionkeyenabled-f.md#isFunctionKeyEnabled-1) | 检查功能键（如：CapsLock键）是否使能。使用Promise异步回调。 |
-| [off](arkts-inputdevice-off-f.md#off-1) | 取消监听输入设备的热插拔事件。在应用退出前调用，取消监听。使用callback异步回调。 |
-| [offChange](arkts-inputdevice-offchange-f.md#offChange-1) | Stops listening for an input device event. |
-| [on](arkts-inputdevice-on-f.md#on-1) | 注册监听输入设备的热插拔事件，使用时需连接鼠标、键盘、触摸屏等外部设备。使用callback异步回调。 |
-| [onChange](arkts-inputdevice-onchange-f.md#onChange-1) | Starts listening for an input device event. |
-| [setFunctionKeyEnabled](arkts-inputdevice-setfunctionkeyenabled-f.md#setFunctionKeyEnabled-1) | 设置功能键（如：CapsLock键）使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setInputDeviceEnabled](arkts-inputdevice-setinputdeviceenabled-f-sys.md#setInputDeviceEnabled-1) | 设置输入设备的开关状态。以触摸屏为例：关闭时，点击触摸屏设备不响应；开启时，可正常操作触摸屏。使用Promise异步回调。 |
-| <!--DelRow-->[setKeyboardRepeatDelay](arkts-inputdevice-setkeyboardrepeatdelay-f-sys.md#setKeyboardRepeatDelay-1) | 设置键盘按键的重复时延，使用callback异步回调。 |
-| <!--DelRow-->[setKeyboardRepeatDelay](arkts-inputdevice-setkeyboardrepeatdelay-f-sys.md#setKeyboardRepeatDelay-2) | 设置键盘按键的重复时延，使用Promise异步回调。 |
-| <!--DelRow-->[setKeyboardRepeatRate](arkts-inputdevice-setkeyboardrepeatrate-f-sys.md#setKeyboardRepeatRate-1) | 设置键盘按键的重复速率，使用callback异步回调。 |
-| <!--DelRow-->[setKeyboardRepeatRate](arkts-inputdevice-setkeyboardrepeatrate-f-sys.md#setKeyboardRepeatRate-2) | 设置键盘按键的重复速率，使用Promise异步回调。 |
-| [supportKeys](arkts-inputdevice-supportkeys-f.md#supportKeys-1) | 查询指定输入设备是否支持指定按键，使用callback异步回调。 |
-| [supportKeys](arkts-inputdevice-supportkeys-f.md#supportKeys-2) | 查询指定输入设备是否支持指定按键，使用Promise异步回调。 |
-| [supportKeysSync](arkts-inputdevice-supportkeyssync-f.md#supportKeysSync-1) | 查询指定id的输入设备对指定键值的支持情况。 |
+| [getDevice](arkts-input-getdevice-f.md#getdevice-1) | Obtains the information about the input device with the specified ID. This API uses an asynchronous callback toreturn the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 8 and deprecated since API version 9. Use&gt; [inputDevice.getDeviceInfo](arkts-input-getdeviceinfo-f.md#getdeviceinfo-1) instead. |
+| [getDevice](arkts-input-getdevice-f.md#getdevice-2) | Obtains the information about the input device with the specified ID. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 8 and deprecated since API version 9. Use&gt; [inputDevice.getDeviceInfo](arkts-input-getdeviceinfo-f.md#getdeviceinfo-1) instead. |
+| [getDeviceIds](arkts-input-getdeviceids-f.md#getdeviceids-1) | Obtains the IDs of all input devices. This API uses an asynchronous callback to return the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 8 and deprecated since API version 9. Use&gt; [inputDevice.getDeviceList](arkts-input-getdevicelist-f.md#getdevicelist-1) instead. |
+| [getDeviceIds](arkts-input-getdeviceids-f.md#getdeviceids-2) | Obtains the IDs of all input devices. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is supported since API version 8 and deprecated since API version 9. Use&gt; [inputDevice.getDeviceList](arkts-input-getdevicelist-f.md#getdevicelist-1) instead. |
+| [getDeviceInfo](arkts-input-getdeviceinfo-f.md#getdeviceinfo-1) | Obtains information about the specified input device. This API uses an asynchronous callback to return the result. |
+| [getDeviceInfo](arkts-input-getdeviceinfo-f.md#getdeviceinfo-2) | Obtains the information about the input device with the specified ID. This API uses a promise to return the result. |
+| [getDeviceInfoSync](arkts-input-getdeviceinfosync-f.md#getdeviceinfosync-1) | Obtains information about the specified input device. |
+| [getDeviceList](arkts-input-getdevicelist-f.md#getdevicelist-1) | Obtains the IDs of all input devices. This API uses an asynchronous callback to return the result. |
+| [getDeviceList](arkts-input-getdevicelist-f.md#getdevicelist-2) | Obtains the IDs of all input devices. This API uses a promise to return the result. |
+| [getIntervalSinceLastInput](arkts-input-getintervalsincelastinput-f.md#getintervalsincelastinput-1) | Obtains the interval (including the device sleep time) elapsed since the last system input event. This API uses apromise to return the result. |
+| [getKeyboardType](arkts-input-getkeyboardtype-f.md#getkeyboardtype-1) | Obtains the keyboard type of the input device, such as full keyboard and numeric keypad. The keyboard type of theinput device is subject to the result returned by this API. This API uses an asynchronous callback to return theresult. |
+| [getKeyboardType](arkts-input-getkeyboardtype-f.md#getkeyboardtype-2) | Obtains the keyboard type of an input device. This API uses a promise to return the result. |
+| [getKeyboardTypeSync](arkts-input-getkeyboardtypesync-f.md#getkeyboardtypesync-1) | Obtains the keyboard type of the input device. |
+| [isFunctionKeyEnabled](arkts-input-isfunctionkeyenabled-f.md#isfunctionkeyenabled-1) | Checks whether the specified function key (for example, **CapsLock**) is enabled. This API uses a promise to returnthe result. |
+| [off](arkts-input-off-f.md#off-1) | Disables listening for device hot swap events. This API is called before the application exits. This API uses anasynchronous callback to return the result. |
+| [on](arkts-input-on-f.md#on-1) | Enables listening for device hot swap events. When performing this operation, you need to connect to externaldevices such as a mouse, keyboard, and touchscreen. This API uses an asynchronous callback to return the result. |
+| [setFunctionKeyEnabled](arkts-input-setfunctionkeyenabled-f.md#setfunctionkeyenabled-1) | Specifies whether to enable a function key (for example, **CapsLock**). This API uses a promise to return theresult. |
+| [supportKeys](arkts-input-supportkeys-f.md#supportkeys-1) | Queries whether a specified input device supports specified keys. This API uses an asynchronous callback to returnthe result. |
+| [supportKeys](arkts-input-supportkeys-f.md#supportkeys-2) | Checks whether the input device supports the specified keys. This API uses a promise to return the result. |
+| [supportKeysSync](arkts-input-supportkeyssync-f.md#supportkeyssync-1) | Checks whether the input device supports the specified keys. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getKeyboardRepeatDelay](arkts-input-getkeyboardrepeatdelay-f-sys.md#getkeyboardrepeatdelay-1) | Obtains the keyboard repeat delay. This API uses an asynchronous callback to return the result. |
+| [getKeyboardRepeatDelay](arkts-input-getkeyboardrepeatdelay-f-sys.md#getkeyboardrepeatdelay-2) | Obtains the keyboard repeat delay. This API uses a promise to return the result. |
+| [getKeyboardRepeatRate](arkts-input-getkeyboardrepeatrate-f-sys.md#getkeyboardrepeatrate-1) | Obtains the keyboard repeat rate. This API uses an asynchronous callback to return the result. |
+| [getKeyboardRepeatRate](arkts-input-getkeyboardrepeatrate-f-sys.md#getkeyboardrepeatrate-2) | Obtains the keyboard repeat rate. This API uses a promise to return the result. |
+| [setInputDeviceEnabled](arkts-input-setinputdeviceenabled-f-sys.md#setinputdeviceenabled-1) | Sets the input switch status of an input device. Take the touchscreen as an example. If the input switch is off,the touchscreen does not respond when being touched. If the input switch is on, the touchscreen wakes up when beingtouched. This API uses a promise to return the result. |
+| [setKeyboardRepeatDelay](arkts-input-setkeyboardrepeatdelay-f-sys.md#setkeyboardrepeatdelay-1) | Sets the keyboard repeat delay. This API uses an asynchronous callback to return the result. |
+| [setKeyboardRepeatDelay](arkts-input-setkeyboardrepeatdelay-f-sys.md#setkeyboardrepeatdelay-2) | Sets the keyboard repeat delay. This API uses a promise to return the result. |
+| [setKeyboardRepeatRate](arkts-input-setkeyboardrepeatrate-f-sys.md#setkeyboardrepeatrate-1) | Sets the keyboard repeat rate. This API uses an asynchronous callback to return the result. |
+| [setKeyboardRepeatRate](arkts-input-setkeyboardrepeatrate-f-sys.md#setkeyboardrepeatrate-2) | Sets the keyboard repeat rate. This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AxisRange](arkts-inputdevice-axisrange-i.md) | 输入设备的轴信息。 |
-| [DeviceListener](arkts-inputdevice-devicelistener-i.md) | 描述输入设备热插拔的信息。 |
-| [InputDeviceData](arkts-inputdevice-inputdevicedata-i.md) | 描述输入设备的信息。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [AxisType](arkts-inputdevice-axistype-t.md) | 输入设备的轴类型。 |
-| [ChangedType](arkts-inputdevice-changedtype-t.md) | 监听设备热插拔事件类型。 |
-| [SourceType](arkts-inputdevice-sourcetype-t.md) | 输入设备的输入能力。包括键盘、鼠标、触摸屏、轨迹球、触控板、操纵杆等。 |
+| [AxisRange](arkts-input-axisrange-i.md) | Defines the axis range of an input device. |
+| [DeviceListener](arkts-input-devicelistener-i.md) | Provides hot swap information about an input device. |
+| [InputDeviceData](arkts-input-inputdevicedata-i.md) | Provides information about an input device. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [FunctionKey](arkts-inputdevice-functionkey-e.md) | 功能键的类型。 |
-| [KeyboardType](arkts-inputdevice-keyboardtype-e.md) | 键盘输入设备的类型。 |
+| [FunctionKey](arkts-input-functionkey-e.md) | Enumerates function key types. |
+| [KeyboardType](arkts-input-keyboardtype-e.md) | Enumerates keyboard types. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [AxisType](arkts-input-axistype-t.md) | Defines the axis type of an input device. |
+| [ChangedType](arkts-input-changedtype-t.md) | Enumerates hot swap events. |
+| [SourceType](arkts-input-sourcetype-t.md) | Input sources supported by the input device, including the keyboard, mouse, touchscreen, trackball, touchpad, andjoystick. |
 

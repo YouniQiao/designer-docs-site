@@ -29,7 +29,7 @@ function getFreeSize(callback: AsyncCallback<number>): void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.<br>**适用版本：** 9 - 14 |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The caller is not a system application.<br>**适用版本：** 9 - 14 |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The input parameter is invalid.Possible causes:Mandatoryparameters are left unspecified; |
 | 13600001 | IPC error. |
 | 13900042 | Unknown error. |
 

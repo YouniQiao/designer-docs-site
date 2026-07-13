@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## hasRight
@@ -12,7 +12,9 @@ import { usbManager } from '@ohos.usbManager';
 function hasRight(deviceName: string): boolean
 ```
 
-Checks whether the application has the permission to access the device. Checks whether the user, for example, the application or system, has the device access permissions. The value ** true** is returned if the user has the device access permissions; the value **false** is returned otherwise.
+Checks whether the application has the permission to access the device.
+Checks whether the user, for example, the application or system, has the device access permissions. The value **
+true** is returned if the user has the device access permissions; the value **false** is returned otherwise.
 
 **Since:** 9
 
@@ -35,7 +37,7 @@ Checks whether the application has the permission to access the device. Checks w
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 **Example**
 

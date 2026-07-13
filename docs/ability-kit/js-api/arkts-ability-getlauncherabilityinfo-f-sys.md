@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## getLauncherAbilityInfo
@@ -12,7 +12,8 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function getLauncherAbilityInfo(bundleName: string, userId: number, callback: AsyncCallback<Array<LauncherAbilityInfo>>) : void
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID. This API uses an asynchronous callback to return the result.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) based on
+the given bundle name and user ID. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -28,7 +29,7 @@ Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.m
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | userId | number | Yes | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | AsyncCallback&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result. If the operation is successful, **err** is **null**, and **data** is the array of[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) objects obtained.Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result. If the operation is successful, **err** is **null**, and **data** is the array of[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md) objects obtained.Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -71,7 +72,8 @@ try {
 function getLauncherAbilityInfo(bundleName: string, userId: number) : Promise<Array<LauncherAbilityInfo>>
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID. This API uses a promise to return the result.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) based on
+the given bundle name and user ID. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -92,7 +94,7 @@ Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.m
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Promise used to return the array of[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) objects obtained. |
+| Promise&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Promise used to return the array of[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md) objects obtained. |
 
 **Error codes:**
 

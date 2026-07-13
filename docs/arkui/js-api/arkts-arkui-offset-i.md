@@ -9,7 +9,7 @@ Defines the offset property.
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## x
@@ -18,7 +18,9 @@ import { componentUtils } from '@ohos.arkui.componentUtils';
 x: number
 ```
 
-X-coordinate. Unit: px
+X-coordinate.
+
+Unit: px
 
 **Type:** number
 
@@ -36,7 +38,9 @@ X-coordinate. Unit: px
 y: number
 ```
 
-Y-coordinate. Unit: px
+Y-coordinate.
+
+Unit: px
 
 **Type:** number
 

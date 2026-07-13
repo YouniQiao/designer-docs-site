@@ -2,7 +2,7 @@
 
 Defines the mouse event.
 
-**Inheritance/Implementation:** MouseEvent extends [InputEvent](arkts-input-inputevent-i.md#inputevent)
+**Inheritance/Implementation:** MouseEvent extends [InputEvent](arkts-input-inputevent-i.md)
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ Defines the mouse event.
 ## Modules to Import
 
 ```TypeScript
-import { MouseAction, AxisValue, MouseEvent, Button, MouseToolType, Axis } from '@ohos.multimodalInput.mouseEvent';
+import { MouseAction, AxisValue, MouseEvent, Button, MouseToolType, Axis } from '@kit.InputKit';
 ```
 
 ## action
@@ -34,7 +34,9 @@ Enumerates mouse event types.
 altKey: boolean
 ```
 
-Whether altKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether altKey is being pressed.
+
+The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -76,7 +78,9 @@ Enumerates mouse buttons.
 capsLock: boolean
 ```
 
-Whether capsLock is enabled. The value **true** indicates that capsLock is enabled, and the value **false** indicates the opposite.
+Whether capsLock is enabled.
+
+The value **true** indicates that capsLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -90,7 +94,9 @@ Whether capsLock is enabled. The value **true** indicates that capsLock is enabl
 ctrlKey: boolean
 ```
 
-Whether ctrlKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether ctrlKey is being pressed.
+
+The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -104,7 +110,9 @@ Whether ctrlKey is being pressed. The value **true** indicates that the key is p
 fnKey: boolean
 ```
 
-Whether fnKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether fnKey is being pressed.
+
+The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -118,7 +126,13 @@ Whether fnKey is being pressed. The value **true** indicates that the key is pre
 globalX?: number
 ```
 
-X coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if [MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md#mouseeventdata) is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and the X coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the system.
+X coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as
+the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if
+[MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md)
+is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and
+the X coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin
+is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the
+system.
 
 **Type:** number
 
@@ -132,7 +146,13 @@ X coordinate of the mouse event in the global coordinate system with the upper l
 globalY?: number
 ```
 
-Y coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if [MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md#mouseeventdata) is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and the Y coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the system.
+Y coordinate of the mouse event in the global coordinate system with the upper left corner of the primary screen as
+the origin, in px. When this parameter is used as an input parameter, it is mandatory and supports only integers if
+[MouseEventData.useGlobalCoordinate](arkts-input-mouseeventdata-i-sys.md)
+is set to **true**. If **MouseEventData.useGlobalCoordinate** is set to **false**, this parameter is optional, and
+the Y coordinate in the relative coordinate system with the upper left corner of the specified screen as the origin
+is used to calculate the injected event. When this parameter is used as an output parameter, it is reported by the
+system.
 
 **Type:** number
 
@@ -146,7 +166,9 @@ Y coordinate of the mouse event in the global coordinate system with the upper l
 logoKey: boolean
 ```
 
-Whether logoKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether logoKey is being pressed.
+
+The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -160,7 +182,9 @@ Whether logoKey is being pressed. The value **true** indicates that the key is p
 numLock: boolean
 ```
 
-Whether numLock is enabled. The value **true** indicates that numLock is enabled, and the value **false** indicates the opposite.
+Whether numLock is enabled.
+
+The value **true** indicates that numLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -202,7 +226,8 @@ List of pressed keys.
 rawDeltaX: number
 ```
 
-X coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only be an integer.
+X coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only
+be an integer.
 
 **Type:** number
 
@@ -216,7 +241,8 @@ X coordinate offset of the current mouse event relative to the previous event, i
 rawDeltaY: number
 ```
 
-Y coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only be an integer.
+Y coordinate offset of the current mouse event relative to the previous event, in px. Currently, the value can only
+be an integer.
 
 **Type:** number
 
@@ -230,7 +256,8 @@ Y coordinate offset of the current mouse event relative to the previous event, i
 screenX: number
 ```
 
-X coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified screen as the origin, in px. Currently, the value can only be an integer.
+X coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified
+screen as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -244,7 +271,8 @@ X coordinate of the mouse event in the relative coordinate system with the upper
 screenY: number
 ```
 
-Y coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified screen as the origin, in px. Currently, the value can only be an integer.
+Y coordinate of the mouse event in the relative coordinate system with the upper left corner of the specified
+screen as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -258,7 +286,9 @@ Y coordinate of the mouse event in the relative coordinate system with the upper
 scrollLock: boolean
 ```
 
-Whether scrollLock is enabled. The value **true** indicates that scrollLock is enabled, and the value **false** indicates the opposite.
+Whether scrollLock is enabled.
+
+The value **true** indicates that scrollLock is enabled, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -272,7 +302,9 @@ Whether scrollLock is enabled. The value **true** indicates that scrollLock is e
 shiftKey: boolean
 ```
 
-Whether shiftKey is being pressed. The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
+Whether shiftKey is being pressed.
+
+The value **true** indicates that the key is pressed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 
@@ -300,7 +332,8 @@ Tool type.
 windowX: number
 ```
 
-X coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located as the origin, in px. Currently, the value can only be an integer.
+X coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located
+as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 
@@ -314,7 +347,8 @@ X coordinate in the relative coordinate system with the upper left corner of the
 windowY: number
 ```
 
-Y coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located as the origin, in px. Currently, the value can only be an integer.
+Y coordinate in the relative coordinate system with the upper left corner of the window where the mouse is located
+as the origin, in px. Currently, the value can only be an integer.
 
 **Type:** number
 

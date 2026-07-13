@@ -1,6 +1,9 @@
 # FloatViewController
 
-Defines a float view controller instance, which is used to start and stop the float view and register callbacks. Before calling the following APIs, you must use [floatView.create()](arkts-arkui-create-f.md#create-1) to create a float view controller instance (that is, **floatViewController**).
+Defines a float view controller instance, which is used to start and stop the float view and register callbacks.
+
+Before calling the following APIs, you must use [floatView.create()](arkts-arkui-create-f.md#create-1) to create a float view
+controller instance (that is, **floatViewController**).
 
 **Since:** 26.0.0
 
@@ -9,7 +12,7 @@ Defines a float view controller instance, which is used to start and stop the fl
 ## Modules to Import
 
 ```TypeScript
-import { floatView } from '@ohos.window.floatView';
+import { floatView } from '@kit.ArkUI';
 ```
 
 ## getWindowProperties
@@ -184,7 +187,9 @@ try {
 onLimitsChange(callback: Callback<FloatViewLimits>): void
 ```
 
-Registers a callback for listening to limit changes of the float view. When the limit changes, for example, when the device is folded or unfolded, the callback is triggered. To prevent memory leaks, remember to unregister the callback when it is no longer needed.
+Registers a callback for listening to limit changes of the float view. When the limit changes, for example, when
+the device is folded or unfolded, the callback is triggered. To prevent memory leaks, remember to unregister the
+callback when it is no longer needed.
 
 **Since:** 26.0.0
 
@@ -227,7 +232,8 @@ try {
 onRectChange(callback: Callback<FloatViewRectChangeInfo>): void
 ```
 
-Registers a callback for listening to changes in the rectangular area (position and size) of the float view. To prevent memory leaks, remember to unregister the callback when it is no longer needed.
+Registers a callback for listening to changes in the rectangular area (position and size) of the float view. To
+prevent memory leaks, remember to unregister the callback when it is no longer needed.
 
 **Since:** 26.0.0
 
@@ -270,7 +276,8 @@ try {
 onStateChange(callback: Callback<FloatViewStateChangeInfo>): void
 ```
 
-Registers a callback for listening to float view state changes. To prevent memory leaks, remember to unregister the callback when it is no longer needed.
+Registers a callback for listening to float view state changes. To prevent memory leaks, remember to unregister
+the callback when it is no longer needed.
 
 **Since:** 26.0.0
 
@@ -313,7 +320,10 @@ try {
 restoreMainWindow(wantParameters?: Record<string, Object>): Promise<void>
 ```
 
-Restores the main window of the float view to display in the foreground. If this API is called when the main window is already in the foreground, the main window level will be raised. This API can be used only after the float view is clicked. If the main window is in the **PAUSED** state or in the multitasking state, error code 130 0032 will be returned if this API is called. This API uses a promise to return the result.
+Restores the main window of the float view to display in the foreground. If this API is called when the main
+window is already in the foreground, the main window level will be raised. This API can be used only after the
+float view is clicked. If the main window is in the **PAUSED** state or in the multitasking state, error code 130
+0032 will be returned if this API is called. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -372,7 +382,11 @@ try {
 setFloatViewVisibilityInApp(isVisible: boolean): Promise<void>
 ```
 
-Sets whether the float view is visible when the application is running in the foreground. This API uses a promise to return the result. After the float view is created and before this API is called, the float view is visible by default when the application is running in the foreground.
+Sets whether the float view is visible when the application is running in the foreground. This API uses a promise
+to return the result.
+
+After the float view is created and before this API is called, the float view is visible by default when the
+application is running in the foreground.
 
 **Since:** 26.0.0
 
@@ -424,7 +438,8 @@ try {
 setUIContext(path: string, storage?: LocalStorage): Promise<void>
 ```
 
-Loads the content of a page, with its path specified in the current project, for the float view, and transfers the state attribute to the page through **LocalStorage**. This API uses a promise to return the result.
+Loads the content of a page, with its path specified in the current project, for the float view, and transfers
+the state attribute to the page through **LocalStorage**. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -562,7 +577,12 @@ export struct Hello {
 setWindowSize(size: window.Size): Promise<void>
 ```
 
-Sets the size of the float view. You are advised to call the [getFloatViewLimits](arkts-arkui-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](arkts-arkui-floatviewcontroller-i.md#onrectchange-1) API. This API uses a promise to return the result.
+Sets the size of the float view. You are advised to call the
+[getFloatViewLimits](arkts-arkui-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges
+and aspect ratio range, and then call this API based on the recommended values. The actual window size change can
+be listened to through the
+[onRectChange](arkts-arkui-floatviewcontroller-i.md#onrectchange-1)
+API. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -620,7 +640,12 @@ try {
 start(): Promise<void>
 ```
 
-Starts the float view. The return value of this API does not indicate that the start process is complete. You need to use the [onStateChange](arkts-arkui-floatviewcontroller-i.md#onstatechange-1) API to listen for the **STARTED** callback to determine whether the start is successful. You are advised to call **start ()** after calling [setUIContext()](arkts-arkui-floatviewcontroller-i.md#setuicontext-1). This API uses a promise to return the result.
+Starts the float view. The return value of this API does not indicate that the start process is complete. You
+need to use the
+[onStateChange](arkts-arkui-floatviewcontroller-i.md#onstatechange-1)
+API to listen for the **STARTED** callback to determine whether the start is successful. You are advised to call
+**start ()** after calling [setUIContext()](arkts-arkui-floatviewcontroller-i.md#setuicontext-1). This API uses a
+promise to return the result.
 
 **Since:** 26.0.0
 
@@ -673,7 +698,11 @@ try {
 stop(): Promise<void>
 ```
 
-Stops the float view. The return value of this API does not indicate that the stop process is complete. You need to use the [onStateChange](arkts-arkui-floatviewcontroller-i.md#onstatechange-1) API to listen for the **STOPPED** callback to determine whether the stop is successful. This API uses a promise to return the result.
+Stops the float view. The return value of this API does not indicate that the stop process is complete. You need
+to use the
+[onStateChange](arkts-arkui-floatviewcontroller-i.md#onstatechange-1)
+API to listen for the **STOPPED** callback to determine whether the stop is successful. This API uses a promise
+to return the result.
 
 **Since:** 26.0.0
 
@@ -721,7 +750,12 @@ try {
 switchTemplate(templateProperty: TemplateProperty): Promise<void>
 ```
 
-Switches the template of the flow view and changes the window size. You are advised to call the [getFloatViewLimits](arkts-arkui-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges and aspect ratio range of the target template, and then call this API based on the recommended values. The actual window size change can be listened to through the [onRectChange](arkts-arkui-floatviewcontroller-i.md#onrectchange-1) API. This API uses a promise to return the result.
+Switches the template of the flow view and changes the window size. You are advised to call the
+[getFloatViewLimits](arkts-arkui-getfloatviewlimits-f.md#getfloatviewlimits-1) API to obtain the recommended width and height ranges
+and aspect ratio range of the target template, and then call this API based on the recommended values. The actual
+window size change can be listened to through the
+[onRectChange](arkts-arkui-floatviewcontroller-i.md#onrectchange-1)
+API. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

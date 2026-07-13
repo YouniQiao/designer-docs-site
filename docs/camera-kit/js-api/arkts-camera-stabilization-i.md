@@ -1,8 +1,13 @@
 # Stabilization
 
-Stabilization** inherits from [StabilizationQuery]camera.StabilizationQuery. It provides APIs to set video stabilization. Video stabilization can be set only when the session has a recording stream ( [VideoOutput]camera.VideoOutput). Among the enums of [VideoStabilizationMode]camera.VideoStabilizationMode, the **HIGH** mode only takes effect when the resolution set in [Profile]camera.Profile is 1920×1080.
+**Stabilization** inherits from [StabilizationQuery](arkts-camera-stabilizationquery-i.md).
+It provides APIs to set video stabilization.
+Video stabilization can be set only when the session has a recording stream (
+[VideoOutput](arkts-camera-videooutput-i.md)). Among the enums of
+[VideoStabilizationMode](arkts-camera-videostabilizationmode-e.md), the **HIGH** mode only takes
+effect when the resolution set in [Profile](arkts-camera-profile-i.md) is 1920×1080.
 
-**Inheritance:** Stabilizationextends: StabilizationQuery.
+**Inheritance/Implementation:** Stabilization extends [StabilizationQuery](arkts-camera-stabilizationquery-i.md)
 
 **Since:** 11
 
@@ -24,7 +29,7 @@ Obtains the video stabilization mode in use.
 
 **Since:** 11
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,13 +37,13 @@ Obtains the video stabilization mode in use.
 
 | Type | Description |
 | --- | --- |
-| VideoStabilizationMode | Video stabilization mode obtained. If the API call fails, undefined is  returned. |
+| VideoStabilizationMode | Video stabilization mode obtained. If the API call fails, undefined isreturned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setVideoStabilizationMode
 
@@ -46,11 +51,15 @@ Obtains the video stabilization mode in use.
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported]camera.StabilizationQuery.isVideoStabilizationModeSupported to check whether the target video stabilization mode is supported. It is recommended that you set the video stabilization mode between [commitConfig]camera.Session.commitConfig() and [Start]camera.Session.start().
+Sets a video stabilization mode. Before the setting, call
+[isVideoStabilizationModeSupported](arkts-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1)
+to check whether the target video stabilization mode is supported. It is recommended that you set the video
+stabilization mode between [commitConfig](arkts-camera-session-i.md#commitconfig-2) and
+[Start](arkts-camera-session-i.md#start-2).
 
 **Since:** 11
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -64,5 +73,5 @@ Sets a video stabilization mode. Before the setting, call [isVideoStabilizationM
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 

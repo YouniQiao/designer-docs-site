@@ -12,7 +12,11 @@ Defines the routing stack operation options.
 animated?: boolean
 ```
 
-Whether to enable the transition animation. **true**: yes; **false**: no Default value: **true**
+Whether to enable the transition animation.
+
+**true**: yes; **false**: no
+
+Default value: **true**
 
 **Type:** boolean
 
@@ -30,7 +34,9 @@ Whether to enable the transition animation. **true**: yes; **false**: no Default
 launchMode?: LaunchMode
 ```
 
-Operation mode of the routing stack. Default value: **LaunchMode.STANDARD**
+Operation mode of the routing stack.
+
+Default value: **LaunchMode.STANDARD**
 
 **Type:** LaunchMode
 

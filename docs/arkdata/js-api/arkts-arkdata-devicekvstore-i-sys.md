@@ -1,8 +1,16 @@
 # DeviceKVStore
 
-Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used. Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified. For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted. Before calling any method in **DeviceKVStore**, you must use [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) to obtain a **DeviceKVStore** object.
+Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits
+from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.
+Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of
+other devices is read-only and cannot be modified.
+For example, a device KV store can be used to implement image sharing between devices. The images of other devices
+can be viewed, but not be modified or deleted.
+Before calling any method in **DeviceKVStore**, you must use
+[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
+to obtain a **DeviceKVStore** object.
 
-**Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md#singlekvstore)
+**Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md)
 
 **Since:** 9
 
@@ -11,7 +19,7 @@ Provides APIs for querying data in a device KV store and performing cross-device
 ## Modules to Import
 
 ```TypeScript
-import { distributedKVStore } from '@ohos.data.distributedKVStore';
+import { distributedKVStore } from '@kit.ArkData';
 ```
 
 ## getResultSet
@@ -45,7 +53,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application uses system API. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 ## getResultSet
 
@@ -83,7 +91,7 @@ Obtains the KVStoreResultSet object matching the local device ID and specified p
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application uses system API. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 ## getResultSet
 
@@ -117,7 +125,7 @@ Obtains the KVStoreResultSet object matching a specified Device ID and Predicate
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application uses system API. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 ## getResultSet
 
@@ -156,5 +164,5 @@ Obtains the KVStoreResultSet object matching a specified Device ID and Predicate
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application uses system API. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 

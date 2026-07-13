@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## updatePrinterInformation
@@ -12,7 +12,8 @@ import { print } from '@ohos.print';
 function updatePrinterInformation(printerInformation: PrinterInformation): Promise<void>
 ```
 
-Updates the information of a printer in the system. This API uses a promise to return the result. Currently, only the **alias** and **options** fields of [PrinterInformation](arkts-basicservices-printerinformation-i.md#printerinformation) can be updated.
+Updates the information of a printer in the system. This API uses a promise to return the result. Currently, only
+the **alias** and **options** fields of [PrinterInformation](arkts-basicservices-printerinformation-i.md) can be updated.
 
 **Since:** 24
 

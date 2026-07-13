@@ -1,6 +1,7 @@
 # @ohos.commonEventManager
 
-本模块提供了公共事件相关的能力，包括发布公共事件、订阅公共事件、以及退订公共事件。
+The **CommonEventManager** module provides common event capabilities to publish, subscribe to, and unsubscribe from
+common events.
 
 **Since:** 9
 
@@ -18,35 +19,49 @@ import { commonEventManager } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [createSubscriber](arkts-commoneventmanager-createsubscriber-f.md#createSubscriber-1) | 创建订阅者。使用callback异步回调。 |
-| [createSubscriber](arkts-commoneventmanager-createsubscriber-f.md#createSubscriber-2) | 创建订阅者。使用Promise异步回调。 |
-| [createSubscriberSync](arkts-commoneventmanager-createsubscribersync-f.md#createSubscriberSync-1) | createSubscriber的同步接口。 |
-| [publish](arkts-commoneventmanager-publish-f.md#publish-1) | 发布公共事件。使用callback异步回调。 |
-| [publish](arkts-commoneventmanager-publish-f.md#publish-2) | 发布公共事件。使用callback异步回调。 |
-| <!--DelRow-->[publishAsUser](arkts-commoneventmanager-publishasuser-f-sys.md#publishAsUser-1) | 向指定用户发布公共事件。使用callback异步回调。 |
-| <!--DelRow-->[publishAsUser](arkts-commoneventmanager-publishasuser-f-sys.md#publishAsUser-2) | 向指定用户发布公共事件并指定发布信息。使用callback异步回调。 |
-| <!--DelRow-->[removeStickyCommonEvent](arkts-commoneventmanager-removestickycommonevent-f-sys.md#removeStickyCommonEvent-1) | 移除粘性公共事件。使用callback异步回调。 |
-| <!--DelRow-->[removeStickyCommonEvent](arkts-commoneventmanager-removestickycommonevent-f-sys.md#removeStickyCommonEvent-2) | 移除粘性公共事件。使用Promise异步回调。 |
-| <!--DelRow-->[setStaticSubscriberState](arkts-commoneventmanager-setstaticsubscriberstate-f-sys.md#setStaticSubscriberState-1) | 为当前应用设置静态订阅事件使能或去使能状态。使用callback异步回调。 |
-| <!--DelRow-->[setStaticSubscriberState](arkts-commoneventmanager-setstaticsubscriberstate-f-sys.md#setStaticSubscriberState-2) | 为当前应用设置静态订阅事件使能或去使能状态。使用Promise异步回调。 |
-| <!--DelRow-->[setStaticSubscriberState](arkts-commoneventmanager-setstaticsubscriberstate-f-sys.md#setStaticSubscriberState-3) | 为当前应用设置静态订阅事件的使能状态，并且记录事件名称。使用Promise异步回调。 |
-| <!--DelRow-->[setStaticSubscriberState](arkts-commoneventmanager-setstaticsubscriberstate-f-sys.md#setStaticSubscriberState-4) | 为当前应用设置静态订阅事件的使能状态，并且记录事件名称。使用Promise异步回调。 |
-| [subscribe](arkts-commoneventmanager-subscribe-f.md#subscribe-1) | 订阅公共事件。使用callback异步回调。 |
-| [subscribeToEvent](arkts-commoneventmanager-subscribetoevent-f.md#subscribeToEvent-1) | 订阅公共事件，并返回订阅成功或失败信息。使用Promise异步回调。 |
-| [unsubscribe](arkts-commoneventmanager-unsubscribe-f.md#unsubscribe-1) | 取消订阅公共事件。使用callback异步回调。 |
+| [createSubscriber](arkts-basicservices-createsubscriber-f.md#createsubscriber-1) | Creates a subscriber. This API uses an asynchronous callback to return the result. |
+| [createSubscriber](arkts-basicservices-createsubscriber-f.md#createsubscriber-2) | Creates a subscriber. This API uses a promise to return the result. |
+| [createSubscriberSync](arkts-basicservices-createsubscribersync-f.md#createsubscribersync-1) | Creates a subscriber. The API returns the result synchronously. |
+| [publish](arkts-basicservices-publish-f.md#publish-1) | Publishes a common event. This API uses an asynchronous callback to return the result. |
+| [publish](arkts-basicservices-publish-f.md#publish-2) | Publishes a common event. This API uses an asynchronous callback to return the result. |
+| [subscribe](arkts-basicservices-subscribe-f.md#subscribe-1) | Subscribes to a common event. This API uses an asynchronous callback to return the result. |
+| [subscribeToEvent](arkts-basicservices-subscribetoevent-f.md#subscribetoevent-1) | Subscribes to a common event. This API uses a promise to return the result, indicating subscription success or failure. |
+| [unsubscribe](arkts-basicservices-unsubscribe-f.md#unsubscribe-1) | Unsubscribes from a common event. This API uses an asynchronous callback to return the result. |
 
-### Types
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| [CommonEventData](arkts-commoneventmanager-commoneventdata-t.md) | 表示公共事件的数据。 |
-| [CommonEventPublishData](arkts-commoneventmanager-commoneventpublishdata-t.md) | 描述公共事件内容和属性。 |
-| [CommonEventSubscribeInfo](arkts-commoneventmanager-commoneventsubscribeinfo-t.md) | 用于表示订阅者的信息。 |
-| [CommonEventSubscriber](arkts-commoneventmanager-commoneventsubscriber-t.md) | 描述公共事件的订阅者。 |
+| [publishAsUser](arkts-basicservices-publishasuser-f-sys.md#publishasuser-1) | Publishes a common event to a specified user. This API uses an asynchronous callback to return the result. |
+| [publishAsUser](arkts-basicservices-publishasuser-f-sys.md#publishasuser-2) | Publishes a common event to a specified user and specifies the information to be published. This API uses an asynchronous callback to return the result. |
+| [removeStickyCommonEvent](arkts-basicservices-removestickycommonevent-f-sys.md#removestickycommonevent-1) | Removes a sticky common event. This API uses an asynchronous callback to return the result. |
+| [removeStickyCommonEvent](arkts-basicservices-removestickycommonevent-f-sys.md#removestickycommonevent-2) | Removes a sticky common event. This API uses a promise to return the result. |
+| [setStaticSubscriberState](arkts-basicservices-setstaticsubscriberstate-f-sys.md#setstaticsubscriberstate-1) | Enables or disables static subscription for an application. This API uses an asynchronous callback to return the result. |
+| [setStaticSubscriberState](arkts-basicservices-setstaticsubscriberstate-f-sys.md#setstaticsubscriberstate-2) | Enables or disables static subscription for an application. This API uses a promise to return the result. |
+| [setStaticSubscriberState](arkts-basicservices-setstaticsubscriberstate-f-sys.md#setstaticsubscriberstate-3) | Enables or disables the static subscription event for the current application and records the event name. This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Support](arkts-commoneventmanager-support-e.md) | 系统公共事件是指由系统服务或系统应用发布的事件，订阅这些公共事件需要特定的权限、使用相应的值。 |
+| [Support](arkts-basicservices-support-e.md) | System common events are events published by system services or system applications. Subscribing to these common events requires specific permissions and values. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [Support](arkts-basicservices-support-e-sys.md) | System common events are events published by system services or system applications. Subscribing to these common events requires specific permissions and values. |
+<!--DelEnd-->
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [CommonEventData](arkts-basicservices-commoneventdata-t.md) | Describes the data of a common event. |
+| [CommonEventPublishData](arkts-basicservices-commoneventpublishdata-t.md) | Describes the content and properties of a common event. |
+| [CommonEventSubscribeInfo](arkts-basicservices-commoneventsubscribeinfo-t.md) | Describes the information about a subscriber. |
+| [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-t.md) | Describes the subscriber of a common event. |
 

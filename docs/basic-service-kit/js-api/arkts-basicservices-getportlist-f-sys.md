@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## getPortList
@@ -12,7 +12,8 @@ import { usbManager } from '@ohos.usbManager';
 function getPortList(): Array<USBPort>
 ```
 
-Obtains the list of all physical USB ports. When the developer mode is disabled, **undefined** may be returned if no device is connected. Check whether the return value of the API is empty.
+Obtains the list of all physical USB ports. When the developer mode is disabled, **undefined** may be returned if
+no device is connected. Check whether the return value of the API is empty.
 
 **Since:** 12
 
@@ -32,8 +33,8 @@ Obtains the list of all physical USB ports. When the developer mode is disabled,
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permission required tocall the API.<br>**Applicable version:** 18 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permission required tocall the API.<br>**Applicable version:** 18 and later |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission denied. Normal application do not have permission to use system api. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 | [14400004](../../apis-basic-services-kit/errorcode-usb.md#14400004-service-exception) |  |
 

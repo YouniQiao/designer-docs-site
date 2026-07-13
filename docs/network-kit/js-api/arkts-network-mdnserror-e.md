@@ -40,7 +40,8 @@ Indicates that the operation failed because it is already active.
 MAX_LIMIT = 2
 ```
 
-<p>Indicates that the operation failed because the maximum outstanding requests from the applications have reached.</p>
+<p>Indicates that the operation failed because the maximum outstanding
+requests from the applications have reached.</p>
 
 **Since:** 11
 

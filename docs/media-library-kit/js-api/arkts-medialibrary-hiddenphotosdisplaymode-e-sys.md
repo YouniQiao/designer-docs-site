@@ -28,7 +28,8 @@ Display all hidden files in the system.
 ALBUMS_MODE
 ```
 
-Display hidden files by album (display all albums that contain hidden files in the system, <br>excluding the preset hidden album and the albums in the trash).
+Display hidden files by album (display all albums that contain hidden files in the system,
+<br>excluding the preset hidden album and the albums in the trash).
 
 **Since:** 11
 

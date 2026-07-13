@@ -36,7 +36,8 @@ Depth space type.
 render3DScale?: number
 ```
 
-Scale factor for 3D rendering window, applied to both width and height. The value range is (0.0, 1.0]. Values outside this range are invalid and the default value is used.
+Scale factor for 3D rendering window, applied to both width and height. The value range is (0.0, 1.0]. Values
+outside this range are invalid and the default value is used.
 
 **Type:** number
 

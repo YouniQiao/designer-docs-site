@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { statistics } from '@ohos.net.statistics';
+import { statistics } from '@kit.NetworkKit';
 ```
 
 ## getSelfTrafficStats
@@ -12,7 +12,8 @@ import { statistics } from '@ohos.net.statistics';
 function getSelfTrafficStats(networkInfo: NetworkInfo): Promise<NetStatsInfo>
 ```
 
-Get the traffic usage details of the specified network of the calling application in the specified time period and the specified networktype.
+Get the traffic usage details of the specified network of the calling application
+in the specified time period and the specified networktype.
 
 **Since:** 22
 

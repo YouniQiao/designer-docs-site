@@ -9,7 +9,7 @@ Describes the pre-downloaded network information.
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## dnsServers
@@ -32,7 +32,8 @@ DNS servers used for downloading resources.
 readonly ip?: string
 ```
 
-IP address of the URL used for downloading resources. When the DNS resolution fails, the IP address is undefined.
+IP address of the URL used for downloading resources. When the DNS resolution fails, the IP address is
+undefined.
 
 **Type:** string
 

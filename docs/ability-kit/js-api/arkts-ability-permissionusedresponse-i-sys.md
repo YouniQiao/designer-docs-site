@@ -1,6 +1,6 @@
 # PermissionUsedResponse (System API)
 
-Provides response of querying permission used records.
+Represents the access records of all applications or devices.
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ Provides response of querying permission used records.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## beginTime
@@ -20,7 +20,8 @@ import { privacyManager } from '@ohos.privacyManager';
 beginTime: number
 ```
 
-The begin time, in milliseconds
+Start time of the query.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ The begin time, in milliseconds
 bundleRecords: Array<BundleUsedRecord>
 ```
 
-The list of permission used records of bundle
+Each element represents the permission access record under an application dimension. Developers can further
+traverse permissionRecords to obtain specific permission usage details.
 
 **Type:** Array<BundleUsedRecord>
 
@@ -52,7 +54,8 @@ The list of permission used records of bundle
 endTime: number
 ```
 
-The end time, in milliseconds
+End time of the query.
+Unit: milliseconds.
 
 **Type:** number
 

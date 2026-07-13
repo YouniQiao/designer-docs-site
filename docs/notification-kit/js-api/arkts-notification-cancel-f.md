@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## cancel
@@ -59,7 +59,8 @@ notificationManager.cancel(0, cancelCallback);
 function cancel(id: number, label: string, callback: AsyncCallback<void>): void
 ```
 
-Cancels a notification with the specified ID and label. This API uses an asynchronous callback to return the result.
+Cancels a notification with the specified ID and label. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

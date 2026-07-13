@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { screen } from '@ohos.screen';
+import { screen } from '@kit.ArkUI';
 ```
 
 ## setMultiScreenRelativePosition
@@ -13,7 +13,8 @@ function setMultiScreenRelativePosition(mainScreenOptions: MultiScreenPositionOp
     secondaryScreenOptions: MultiScreenPositionOptions): Promise<void>
 ```
 
-Sets the positions of the primary and secondary screens in extend mode. This API uses a promise to return the result.
+Sets the positions of the primary and secondary screens in extend mode. This API uses a promise to return the
+result.
 
 **Since:** 13
 

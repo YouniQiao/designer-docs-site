@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## changePrivilege
@@ -16,7 +16,8 @@ function changePrivilege(
     ): void
 ```
 
-Changes the privilege on the shared data. This API uses an asynchronous callback to return the result.
+Changes the privilege on the shared data.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -81,7 +82,8 @@ function changePrivilege(
     ): Promise<Result<Array<Result<Participant>>>>
 ```
 
-Changes the privilege on the shared data. This API uses a promise to return the result.
+Changes the privilege on the shared data.
+This API uses a promise to return the result.
 
 **Since:** 11
 

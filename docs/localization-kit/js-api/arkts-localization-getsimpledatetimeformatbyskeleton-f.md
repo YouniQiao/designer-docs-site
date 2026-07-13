@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## getSimpleDateTimeFormatBySkeleton
@@ -12,7 +12,10 @@ import { i18n } from '@ohos.i18n';
 export function getSimpleDateTimeFormatBySkeleton(skeleton: string, locale?: Intl.Locale): SimpleDateTimeFormat
 ```
 
-Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-1) , see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
+Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between
+the objects obtained by this API and
+[getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-1)
+, see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
 
 **Since:** 20
 
@@ -46,13 +49,16 @@ Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For d
 export function getSimpleDateTimeFormatBySkeleton(skeleton: string, locale?: intl.Locale): SimpleDateTimeFormat
 ```
 
-Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between the objects obtained by this API and [getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-2) , see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
+Obtains a **SimpleDateTimeFormat** object based on the specified skeleton. For details about the difference between
+the objects obtained by this API and
+[getSimpleDateTimeFormatByPattern](arkts-localization-getsimpledatetimeformatbypattern-f.md#getsimpledatetimeformatbypattern-2)
+, see the examples in [SimpleDateTimeFormat.format](arkts-localization-simpledatetimeformat-c.md#format-1).
 
 **Since:** 18
 
 **Deprecated since:** 20
 
-**Substitutes:** [getSimpleDateTimeFormatBySkeleton](arkts-localization-getsimpledatetimeformatbyskeleton-f.md#getsimpledatetimeformatbyskeleton-1)
+**Substitutes:** getSimpleDateTimeFormatBySkeleton(skeleton:
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 

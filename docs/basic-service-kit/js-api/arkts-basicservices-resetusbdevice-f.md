@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## resetUsbDevice
@@ -12,7 +12,12 @@ import { usbManager } from '@ohos.usbManager';
 function resetUsbDevice(pipe: USBDevicePipe): boolean
 ```
 
-Resets a USB peripheral. > **NOTE** > > Previous configurations and APIs will be reset. Ensure that the related services have been completed before > calling this API.
+Resets a USB peripheral.
+
+> **NOTE**
+>
+> Previous configurations and APIs will be reset. Ensure that the related services have been completed before
+> calling this API.
 
 **Since:** 20
 

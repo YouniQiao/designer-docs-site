@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { keyManager } from '@ohos.file.keyManager';
+import { keyManager } from '@kit.CoreFileKit';
 ```
 
 ## deactivateUserKey
@@ -12,7 +12,8 @@ import { keyManager } from '@ohos.file.keyManager';
 function deactivateUserKey(userId: number):void
 ```
 
-When the screen is locked, the specified user key is uninstalled synchronously. **(Currently, this API is available only to lock screen applications.)**
+When the screen is locked, the specified user key is uninstalled synchronously.
+**(Currently, this API is available only to lock screen applications.)**
 
 **Since:** 15
 

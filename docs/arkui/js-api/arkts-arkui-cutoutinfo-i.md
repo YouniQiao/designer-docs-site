@@ -9,7 +9,7 @@ Describes the unusable area of a display, including punch hole, notch, and curve
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## boundingRects
@@ -18,7 +18,8 @@ import { display } from '@ohos.display';
 readonly boundingRects: Array<Rect>
 ```
 
-Unusable areas (bounding rectangles) designed for punch holes and notches. If there are no punch holes or notches , an empty array is returned.
+Unusable areas (bounding rectangles) designed for punch holes and notches. If there are no punch holes or notches
+, an empty array is returned.
 
 **Type:** Array<Rect>
 

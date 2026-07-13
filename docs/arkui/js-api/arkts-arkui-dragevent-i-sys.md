@@ -12,7 +12,8 @@ Provides information about the drag event.
 enableInternalDropAnimation(configuration: string): void
 ```
 
-Sets whether to enable the system's built-in drop animation effect. This API is available only to system applications and can only be used during the **onDrop** phase.
+Sets whether to enable the system's built-in drop animation effect. This API is available only to system
+applications and can only be used during the **onDrop** phase.
 
 **Since:** 20
 
@@ -42,7 +43,15 @@ Sets whether to enable the system's built-in drop animation effect. This API is 
 executeFollowHandMorphDropAnimation(onAnimationFinished: Callback<void>, animationOption?: string): void
 ```
 
-Sets a callback to be executed after the follow-hand morph drop animation is completed. This callback is triggered by the system after the drag framework animation ends. This callback uses an asynchronous callback. > **NOTE** > > 1. This API takes effect only when [dragAnimationType](arkts-arkui-dragevent-i-sys.md#draganimationtype) is > set to **DragAnimationType.FOLLOW_HAND_MORPH**. > > 2. Do not implement logic unrelated to the animation in the callback to avoid affecting execution efficiency.
+Sets a callback to be executed after the follow-hand morph drop animation is completed. This callback is triggered
+by the system after the drag framework animation ends. This callback uses an asynchronous callback.
+
+> **NOTE**
+>
+> 1. This API takes effect only when [dragAnimationType](arkts-arkui-dragevent-i-sys.md#draganimationtype) is
+> set to **DragAnimationType.FOLLOW_HAND_MORPH**.
+>
+> 2. Do not implement logic unrelated to the animation in the callback to avoid affecting execution efficiency.
 
 **Since:** 26.0.0
 
@@ -65,7 +74,16 @@ Sets a callback to be executed after the follow-hand morph drop animation is com
 dragAnimationType?: DragAnimationType
 ```
 
-Sets the drag animation type. This attribute can only be set during the [onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1) phase and can be obtained in the [onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1), [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1), [onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1), [onDrop](arkts-arkui-commonmethod-c.md#ondrop-1), and [onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1) callbacks. Default value: **DEFAULT** **System API:** This is a system API.
+Sets the drag animation type. This attribute can only be set during the
+[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1) phase and can be obtained in the
+[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1), [onDragEnter](arkts-arkui-commonmethod-c.md#ondragenter-1),
+[onDragMove](arkts-arkui-commonmethod-c.md#ondragmove-1), [onDragLeave](arkts-arkui-commonmethod-c.md#ondragleave-1),
+[onDrop](arkts-arkui-commonmethod-c.md#ondrop-1), and
+[onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1) callbacks.
+
+Default value: **DEFAULT**
+
+**System API:** This is a system API.
 
 **Type:** DragAnimationType
 

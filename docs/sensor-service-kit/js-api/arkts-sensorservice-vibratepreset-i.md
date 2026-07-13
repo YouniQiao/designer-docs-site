@@ -1,6 +1,9 @@
 # VibratePreset
 
-Represents the preset vibration effect. You can pass **VibratePreset** to [VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md#vibrateeffect) to specify a preset vibration effect when calling [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-1) or [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-2).
+Represents the preset vibration effect. You can pass **VibratePreset** to
+[VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md) to specify a preset vibration effect when calling
+[vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-1)
+or [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-2).
 
 **Since:** 9
 
@@ -9,7 +12,7 @@ Represents the preset vibration effect. You can pass **VibratePreset** to [Vibra
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## count
@@ -32,7 +35,8 @@ Number of repeated vibrations. This parameter is optional. The default value is 
 effectId: string
 ```
 
-Effect ID. The value is a string of a maximum of 64 characters. If the length exceeds 64 characters, the first 64 characters are used.
+Effect ID. The value is a string of a maximum of 64 characters. If the length exceeds 64 characters, the first 64
+characters are used.
 
 **Type:** string
 
@@ -46,7 +50,8 @@ Effect ID. The value is a string of a maximum of 64 characters. If the length ex
 intensity?: number
 ```
 
-Vibration intensity. This parameter is optional. The value range is [0, 100]. The default value is **100**. If vibration intensity adjustment is not supported, the default vibration intensity will be used.
+Vibration intensity. This parameter is optional. The value range is [0, 100]. The default value is **100**. If
+vibration intensity adjustment is not supported, the default vibration intensity will be used.
 
 **Type:** number
 

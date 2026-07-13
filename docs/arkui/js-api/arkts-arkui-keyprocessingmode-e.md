@@ -12,7 +12,8 @@ Enumerates the modes for processing key events.
 FOCUS_NAVIGATION = 0
 ```
 
-Default value. When the current component does not consume the key event, focus navigation using the **Tab** and arrow keys preferentially stays within the current container.
+Default value. When the current component does not consume the key event, focus navigation using the **Tab** and
+arrow keys preferentially stays within the current container.
 
 **Since:** 15
 
@@ -28,7 +29,8 @@ Default value. When the current component does not consume the key event, focus 
 ANCESTOR_EVENT = 1
 ```
 
-When the current component does not consume the key event, focus navigation using the **Tab** and arrow keys is bubbled up to the parent component.
+When the current component does not consume the key event, focus navigation using the **Tab** and arrow keys is
+bubbled up to the parent component.
 
 **Since:** 15
 

@@ -1,6 +1,7 @@
 # UIEnvAvoidAreaVP
 
-Describes the information about the window avoidance area in units of vp, which requires careful attention during [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) adaptation.
+Describes the information about the window avoidance area in units of vp, which requires careful attention during
+[immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) adaptation.
 
 **Since:** 23
 
@@ -9,7 +10,7 @@ Describes the information about the window avoidance area in units of vp, which 
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## bottomRect

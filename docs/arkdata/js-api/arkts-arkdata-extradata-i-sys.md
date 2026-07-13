@@ -11,7 +11,7 @@ Represents the transparently transmitted data, which contains information requir
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## eventId
@@ -36,7 +36,9 @@ Event ID. The value **cloud_data_change** indicates cloud data changes.
 extraData: string
 ```
 
-Data to be transmitted transparently. **extraData** is a JSON string that must contain the **data** field. The **data** field contains information required for a change notification, including the account ID, application name, database name, database type, and database table name. All the fields cannot be empty.
+Data to be transmitted transparently. **extraData** is a JSON string that must contain the **data** field. The
+**data** field contains information required for a change notification, including the account ID, application
+name, database name, database type, and database table name. All the fields cannot be empty.
 
 **Type:** string
 

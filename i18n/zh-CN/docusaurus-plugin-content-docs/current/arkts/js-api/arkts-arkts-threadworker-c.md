@@ -2,7 +2,7 @@
 
 使用以下方法前，需先构造ThreadWorker实例。ThreadWorker类继承WorkerEventTarget。
 
-**继承/实现关系：** ThreadWorker implements [WorkerEventTarget](arkts-arkts-workereventtarget-i.md#workereventtarget)
+**继承/实现关系：** ThreadWorker implements [WorkerEventTarget](arkts-arkts-workereventtarget-i.md)
 
 **起始版本：** 9
 
@@ -83,7 +83,7 @@ ThreadWorker构造函数，用于创建一个ThreadWorker实例。
 
 **示例：**
 
-以下示例展示了在Stage模型的entry模块Index.ets文件中加载Worker文件的方法，使用Library加载Worker线程文件的场景参考[文件路径注意事项](../../arkts-utils/worker-introduction.md#文件路径注意事项)。
+以下示例展示了在Stage模型的entry模块Index.ets文件中加载Worker线程文件的方法，使用Library加载Worker线程文件的场景参考[文件路径注意事项](../../arkts-utils/worker-introduction.md#文件路径注意事项)。
 
 ```TypeScript
 // Index.ets
@@ -446,7 +446,8 @@ workerInstance.postMessage(buffer, {transfer: [buffer]});
 postMessageWithSharedSendable(message: Object, transfer?: ArrayBuffer[]): void
 ```
 
-宿主线程向Worker线程发送消息，消息中的Sendable对象通过引用传递， 非Sendable对象通过拷贝数据的方式传递。
+宿主线程向Worker线程发送消息，消息中的Sendable对象通过引用传递，
+非Sendable对象通过拷贝数据的方式传递。
 
 **起始版本：** 12
 
@@ -492,7 +493,7 @@ workerInstance.postMessage(object);
 
 @Sendable
 export class SendableObject {
-  a:number = 45;
+  value:number = 45;
 }
 
 ```
@@ -509,7 +510,7 @@ const workerPort: ThreadWorkerGlobalScope = worker.workerPort;
 
 workerPort.onmessage = (e: MessageEvents) => {
   let obj: SendableObject = e.data;
-  console.info("sendable obj is: " + obj.a);
+  console.info("sendable obj is: " + obj.value);
 }
 
 ```
@@ -520,7 +521,8 @@ workerPort.onmessage = (e: MessageEvents) => {
 registerGlobalCallObject(instanceName: string, globalCallObject: Object): void
 ```
 
-在宿主线程的ThreadWorker实例上注册一个对象，该对象的方法可在Worker线程中通过 callGlobalCallObjectMethod调用。
+在宿主线程的ThreadWorker实例上注册一个对象，该对象的方法可在Worker线程中通过
+callGlobalCallObjectMethod调用。
 
 **起始版本：** 11
 
@@ -706,7 +708,8 @@ workerInstance.terminate();
 unregisterGlobalCallObject(instanceName?: string): void
 ```
 
-取消在宿主线程ThreadWorker实例上注册的对象，该方法会释放ThreadWorker实例与目标对象之间的强引用。 如果无匹配对象，该方法不会报错。
+取消在宿主线程ThreadWorker实例上注册的对象，该方法会释放ThreadWorker实例与目标对象之间的强引用。
+如果无匹配对象，该方法不会报错。
 
 **起始版本：** 11
 
@@ -757,7 +760,15 @@ workerInstance.postMessage("start worker");
 onAllErrors?: ErrorCallback
 ```
 
-表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。 onerror接口仅能捕获onmessage回调中同步方法产生的异常， 无法捕获多线程回调和模块化相关异常。 一旦捕获异常，Worker线程会进入销毁流程，无法继续使用。 onAllErrors接口可以捕获Worker线程的onmessage回调、timer回调以及文件执行等流程中产生的全局异常。 捕获异常后，Worker线程仍然存活，可以继续使用。 推荐使用onAllErrors替代onerror。
+表示Worker线程生命周期内发生异常被调用的事件处理程序，处理程序在宿主线程中执行。
+
+onerror接口仅能捕获onmessage回调中同步方法产生的异常，
+无法捕获多线程回调和模块化相关异常。
+一旦捕获异常，Worker线程会进入销毁流程，无法继续使用。
+
+onAllErrors接口可以捕获Worker线程的onmessage回调、timer回调以及文件执行等流程中产生的全局异常。
+捕获异常后，Worker线程仍然存活，可以继续使用。
+推荐使用onAllErrors替代onerror。
 
 **类型：** ErrorCallback
 
@@ -773,7 +784,8 @@ onAllErrors?: ErrorCallback
 onerror?: (err: ErrorEvent) => void
 ```
 
-用于处理onmessage回调函数中同步代码产生的异常，处理程序在宿主线程中执行。 回调函数的err类型为ErrorEvent，表示收到的异常数据。
+用于处理onmessage回调函数中同步代码产生的异常，处理程序在宿主线程中执行。
+回调函数的err类型为ErrorEvent，表示收到的异常数据。
 
 **类型：** (err: ErrorEvent) => void
 
@@ -789,7 +801,8 @@ onerror?: (err: ErrorEvent) => void
 onexit?: (code: number) => void
 ```
 
-当Worker线程销毁时被调用的事件处理程序，该处理程序在宿主线程中执行。回调函数的code参数类型为number， 异常退出时code为1，正常退出时code为0。默认值为undefined。
+当Worker线程销毁时被调用的事件处理程序，该处理程序在宿主线程中执行。回调函数的code参数类型为number，
+异常退出时code为1，正常退出时code为0。默认值为undefined。
 
 **类型：** (code: number) => void
 
@@ -805,7 +818,9 @@ onexit?: (code: number) => void
 onmessage?: (event: MessageEvents) => void
 ```
 
-表示宿主线程接收到来自其创建的Worker通过workerPort.postMessage接口发送的消息时 被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为MessageEvents， 表示收到的Worker线程发送的消息数据。
+表示宿主线程接收到来自其创建的Worker通过workerPort.postMessage接口发送的消息时
+被调用的事件处理程序，处理程序在宿主线程中执行。其中回调函数中event类型为MessageEvents，
+表示收到的Worker线程发送的消息数据。
 
 **类型：** (event: MessageEvents) => void
 
@@ -821,7 +836,9 @@ onmessage?: (event: MessageEvents) => void
 onmessageerror?: (event: MessageEvents) => void
 ```
 
-当Worker线程收到一条无法被序列化的消息时被调用的事件处理程序， 该事件处理程序在宿主线程中执行。 其中回调函数中event类型为MessageEvents，表示收到的消息数据。
+当Worker线程收到一条无法被序列化的消息时被调用的事件处理程序，
+该事件处理程序在宿主线程中执行。
+其中回调函数中event类型为MessageEvents，表示收到的消息数据。
 
 **类型：** (event: MessageEvents) => void
 

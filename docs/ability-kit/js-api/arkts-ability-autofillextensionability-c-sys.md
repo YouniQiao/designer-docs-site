@@ -1,8 +1,9 @@
 # AutoFillExtensionAbility (System API)
 
-The AutoFillExtensionAbility module provides APIs for automatically filling in and saving accounts and passwords. It inherits from [ExtensionAbility](arkts-ability-extensionability-c.md#extensionability).
+The AutoFillExtensionAbility module provides APIs for automatically filling in and saving accounts and passwords. It
+inherits from [ExtensionAbility](arkts-ability-extensionability-c.md).
 
-**Inheritance/Implementation:** AutoFillExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md#extensionability)
+**Inheritance/Implementation:** AutoFillExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
 **Since:** 11
 
@@ -13,7 +14,7 @@ The AutoFillExtensionAbility module provides APIs for automatically filling in a
 ## Modules to Import
 
 ```TypeScript
-import { AutoFillExtensionAbility } from '@ohos.app.ability.AutoFillExtensionAbility';
+import { AutoFillExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## onBackground
@@ -82,7 +83,8 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 onDestroy(): void | Promise<void>
 ```
 
-Called to clear resources when this AutoFillExtensionAbility is destroyed. This API either returns the result directly or uses a promise to return the result.
+Called to clear resources when this AutoFillExtensionAbility is destroyed. This API either returns the result
+directly or uses a promise to return the result.
 
 **Since:** 11
 

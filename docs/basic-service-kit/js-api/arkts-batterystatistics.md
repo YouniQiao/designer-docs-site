@@ -1,6 +1,10 @@
 # @ohos.batteryStatistics
 
-该模块提供软硬件耗电统计信息的查询接口。 > **说明：** > > - 本模块接口为系统接口。
+The **batteryStatistics** module provides APIs for querying software and hardware power consumption statistics.
+
+> **NOTE**
+>
+> - The APIs provided by this module are system APIs.
 
 **Since:** 8
 
@@ -16,26 +20,32 @@ import { batteryStats } from '@kit.BasicServicesKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getAppPowerPercent](arkts-batterystats-getapppowerpercent-f-sys.md#getAppPowerPercent-1) | 获取应用的耗电百分比。 |
-| <!--DelRow-->[getAppPowerValue](arkts-batterystats-getapppowervalue-f-sys.md#getAppPowerValue-1) | 获取应用的耗电量，单位毫安时。 |
-| <!--DelRow-->[getBatteryStats](arkts-batterystats-getbatterystats-f-sys.md#getBatteryStats-1) | 获取耗电信息列表。使用Promise异步回调。 |
-| <!--DelRow-->[getBatteryStats](arkts-batterystats-getbatterystats-f-sys.md#getBatteryStats-2) | 获取耗电信息列表。使用callback异步回调。 |
-| <!--DelRow-->[getHardwareUnitPowerPercent](arkts-batterystats-gethardwareunitpowerpercent-f-sys.md#getHardwareUnitPowerPercent-1) | 根据耗电类型获取硬件单元的耗电百分比。 |
-| <!--DelRow-->[getHardwareUnitPowerValue](arkts-batterystats-gethardwareunitpowervalue-f-sys.md#getHardwareUnitPowerValue-1) | 根据耗电类型获取硬件单元的耗电量，单位毫安时。 |
+| [getAppPowerPercent](arkts-basicservices-getapppowerpercent-f-sys.md#getapppowerpercent-1) | Obtains the proportion of the power consumption of an application. |
+| [getAppPowerValue](arkts-basicservices-getapppowervalue-f-sys.md#getapppowervalue-1) | Obtains the power consumption of an application, in unit of mAh. |
+| [getBatteryStats](arkts-basicservices-getbatterystats-f-sys.md#getbatterystats-1) | Obtains the power consumption information list. This API uses a promise to return the result. |
+| [getBatteryStats](arkts-basicservices-getbatterystats-f-sys.md#getbatterystats-2) | Obtains the power consumption information list. This API uses an asynchronous callback to return the result. |
+| [getHardwareUnitPowerPercent](arkts-basicservices-gethardwareunitpowerpercent-f-sys.md#gethardwareunitpowerpercent-1) | Obtains the proportion of the power consumption of a hardware unit according to the power consumption type. |
+| [getHardwareUnitPowerValue](arkts-basicservices-gethardwareunitpowervalue-f-sys.md#gethardwareunitpowervalue-1) | Obtains the power consumption of a hardware unit according to the consumption type, in unit of mAh. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[BatteryStatsInfo](arkts-batterystats-batterystatsinfo-i-sys.md) | 设备的耗电信息。 |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ConsumptionType](arkts-batterystats-consumptiontype-e-sys.md) | 表示电量消耗类型的枚举值。 |
+| [BatteryStatsInfo](arkts-basicservices-batterystatsinfo-i-sys.md) | Describes the device power consumption information. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ConsumptionType](arkts-basicservices-consumptiontype-e-sys.md) | Enumerates power consumption types. |
+<!--DelEnd-->
 

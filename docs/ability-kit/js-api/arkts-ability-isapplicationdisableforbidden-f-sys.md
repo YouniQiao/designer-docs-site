@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## isApplicationDisableForbidden
@@ -12,7 +12,13 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function isApplicationDisableForbidden(bundleName: string, userId: number, appIndex: number): boolean
 ```
 
-Check whether a specified application is forbidden to be disabled. If you need to check whether an application is forbidden to be disabled under the current user, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED needs to be applied for. If you need to check whether an application is forbidden to be disabled under other users, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS need to be applied for.
+Synchronously queries whether a specified application or application clone of a specified user
+is set to forbid being disabled.
+If you need to check whether an application is forbidden to be disabled under the current user,
+ohos.permission.GET_BUNDLE_INFO_PRIVILEGED needs to be applied for.
+If you need to check whether an application is forbidden to be disabled under other users,
+ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
+need to be applied for.
 
 **Since:** 24
 
@@ -28,15 +34,15 @@ Check whether a specified application is forbidden to be disabled. If you need t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Indicates the bundle name. |
-| userId | number | Yes | Indicates the user ID. |
-| appIndex | number | Yes | Indicates the index of clone app. |
+| bundleName | string | Yes | Bundle name of the application. |
+| userId | number | Yes | User ID, which can be obtained by calling getOsAccountLocalId. The valueis greater than or equal to 0. |
+| appIndex | number | Yes | Index of the application. The value ranges from 0 to 5. The value 0indicates the main application, and the values 1 to 5 indicate the indexes of application clones. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Returns true if the application is forbidden to be disabled; returns false otherwise. |
+| boolean | Whether a specified application is set to forbid being disabled.The value true indicates that the specified application is set to forbid being disabled, and falseindicates that the specified application is not set to forbid being disabled. |
 
 **Error codes:**
 

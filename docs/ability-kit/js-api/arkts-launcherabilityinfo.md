@@ -2,9 +2,11 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[LauncherAbilityInfo](arkts-launcherabilityinfo-i.md) | LauncherAbilityInfo信息，通过接口 [innerBundleManager.getLauncherAbilityInfos](docroot://reference/apis-ability-kit/js-apis-Bundle-InnerBundleManager-sys.md#innerbundlemanagergetlauncherabilityinfosdeprecated) 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-LauncherAbilityInfo]{@link launcherAbilityInfo:LauncherAbilityInfo}替代。 > > 本模块为系统接口。 |
+| [LauncherAbilityInfo](arkts-ability-launcherabilityinfo-depr-i-sys.md) | The LauncherAbilityInfo module provides information about the launcher ability, which is obtained through[innerBundleManager.getLauncherAbilityInfos](../../../../reference/apis-ability-kit/js-apis-Bundle-InnerBundleManager-sys.md#innerbundlemanagergetlauncherabilityinfosdeprecated).&gt; **NOTE**&gt;&gt; The APIs of this module have been deprecated since API version 9. You are advised to use&gt; [bundleManager-LauncherAbilityInfo](arkts-ability-launcherabilityinfo-depr-i-sys.md) instead.&gt;&gt; The APIs provided by this module are system APIs. |
+<!--DelEnd-->
 

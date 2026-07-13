@@ -11,7 +11,7 @@ Describes the configuration of scan enhance mode.
 ## Modules to Import
 
 ```TypeScript
-import { ble } from '@ohos.bluetooth.ble';
+import { ble } from '@kit.ConnectivityKit';
 ```
 
 ## enhanceMode
@@ -38,7 +38,8 @@ The mode of scan enhance.
 timeout: number
 ```
 
-The duration of scan enhance. The value range is all integers.
+The duration of scan enhance.
+The value range is all integers.
 
 **Type:** number
 

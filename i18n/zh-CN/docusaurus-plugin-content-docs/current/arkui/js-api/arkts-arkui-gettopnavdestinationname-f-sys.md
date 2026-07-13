@@ -6,7 +6,8 @@
 function getTopNavDestinationName(windowId: number): Promise<string>
 ```
 
-获取指定的前台窗口当前栈顶[Navigation](./@internal/component/ets/navigation)中的 [NavDestination](./@internal/component/ets/nav_destination)名称，使用Promise异步回调。
+获取指定的前台窗口当前栈顶[Navigation](./@internal/component/ets/navigation)中的
+[NavDestination](./@internal/component/ets/nav_destination)名称，使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -31,7 +32,7 @@ function getTopNavDestinationName(windowId: number): Promise<string>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed, non-system application uses system API. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-系统服务工作异常) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-参数校验错误) | Parameter error. Possible cause: 1. Invalid parameter range. |

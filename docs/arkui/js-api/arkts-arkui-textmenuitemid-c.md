@@ -1,6 +1,7 @@
 # TextMenuItemId
 
-Defines the unique identifier for a custom menu item. It is used to identify menu items. The IDs for built-in menu items are listed in the table below.
+Defines the unique identifier for a custom menu item. It is used to identify menu items. The IDs for built-in menu
+items are listed in the table below.
 
 **Since:** 12
 
@@ -68,7 +69,10 @@ Creates a **TextMenuItemId** object based on **id**.
 static readonly AI_WRITER: TextMenuItemId
 ```
 
-<!--RP1--><!--RP1End-->ID for the menu item involving text enhancement features, such as polishing, summary extraction, and formatting, for selected text. It is a level-1 menu item. This menu item requires the large language model. If no large language model is available, this menu item does not take effect.
+<!--RP1--><!--RP1End-->ID for the menu item involving text enhancement features,
+such as polishing, summary extraction, and formatting, for selected text.
+It is a level-1 menu item. This menu item requires the large language model. If no large language model is available,
+this menu item does not take effect.
 
 **Type:** TextMenuItemId
 
@@ -176,7 +180,8 @@ ID for the default paste menu item. It is a level-1 menu item.
 static readonly SEARCH: TextMenuItemId
 ```
 
-ID for the search menu item. It is a level-1 menu item. This menu item launches a browser to search for the selected text.
+ID for the search menu item. It is a level-1 menu item. This menu item launches a browser to search for the
+selected text.
 
 **Type:** TextMenuItemId
 
@@ -212,7 +217,8 @@ ID for the default select-all menu item. It is a level-1 menu item.
 static readonly SHARE: TextMenuItemId
 ```
 
-ID for the share menu item. It is a level-1 menu item. This menu item launches a window for sharing the selected text.
+ID for the share menu item. It is a level-1 menu item. This menu item launches a window for sharing the selected
+text.
 
 **Type:** TextMenuItemId
 
@@ -230,7 +236,8 @@ ID for the share menu item. It is a level-1 menu item. This menu item launches a
 static readonly TRANSLATE: TextMenuItemId
 ```
 
-ID for the translate menu item. It is a level-1 menu item. The translation service is provided for the selected text.
+ID for the translate menu item. It is a level-1 menu item. The translation service is provided for the selected
+text.
 
 **Type:** TextMenuItemId
 
@@ -248,7 +255,8 @@ ID for the translate menu item. It is a level-1 menu item. The translation servi
 static readonly address: TextMenuItemId
 ```
 
-ID for the navigation menu item. It is a level-1 menu item. This menu item provides the redirection service for the selected address, launching the map app.
+ID for the navigation menu item. It is a level-1 menu item. This menu item provides the redirection service for the
+selected address, launching the map app.
 
 **Type:** TextMenuItemId
 
@@ -266,7 +274,8 @@ ID for the navigation menu item. It is a level-1 menu item. This menu item provi
 static readonly askAI: TextMenuItemId
 ```
 
-<!--RP2--><!--RP2End-->ID for the AI assistant menu item, which provides AI query capabilities for the selected text. It is a level-1 menu item.
+<!--RP2--><!--RP2End-->ID for the AI assistant menu item,
+which provides AI query capabilities for the selected text. It is a level-1 menu item.
 
 **Type:** TextMenuItemId
 
@@ -284,7 +293,9 @@ static readonly askAI: TextMenuItemId
 static readonly autoFill: TextMenuItemId
 ```
 
-ID for the autofill menu item. It is a level-1 menu item. When a menu item is tapped, the secondary menu item **Password Vault** is displayed. This menu item is supported exclusively for the [Search](arkts-arkui-search.md), [TextInput](arkts-arkui-textinput.md), [TextArea](arkts-arkui-textarea.md), and [RichEditor](arkts-arkui-richeditor.md) components.
+ID for the autofill menu item. It is a level-1 menu item. When a menu item is tapped, the secondary menu item
+**Password Vault** is displayed. This menu item is supported exclusively for the [Search](arkts-arkui-search.md),
+[TextInput](arkts-arkui-textinput.md), [TextArea](arkts-arkui-textarea.md), and [RichEditor](arkts-arkui-richeditor.md) components.
 
 **Type:** TextMenuItemId
 
@@ -302,7 +313,8 @@ ID for the autofill menu item. It is a level-1 menu item. When a menu item is ta
 static readonly dateTime: TextMenuItemId
 ```
 
-ID for the event creation menu item. It is a level-1 menu item. This menu item provides the redirection service for the selected date and time, launching the page for creating a calendar event.
+ID for the event creation menu item. It is a level-1 menu item. This menu item provides the redirection service for
+the selected date and time, launching the page for creating a calendar event.
 
 **Type:** TextMenuItemId
 
@@ -320,7 +332,8 @@ ID for the event creation menu item. It is a level-1 menu item. This menu item p
 static readonly email: TextMenuItemId
 ```
 
-ID for the email menu item. It is a level-1 menu item. This menu item provides the redirection service for the selected email address, launching the email app.
+ID for the email menu item. It is a level-1 menu item. This menu item provides the redirection service for the
+selected email address, launching the email app.
 
 **Type:** TextMenuItemId
 
@@ -338,7 +351,10 @@ ID for the email menu item. It is a level-1 menu item. This menu item provides t
 static readonly passwordVault: TextMenuItemId
 ```
 
-ID for the password vault menu item. It is a level-2 menu item. Tapping this menu item launches the password vault app, which supports automatic username and password filling. The menu item is supported only for [Search](arkts-arkui-search.md), [TextInput](arkts-arkui-textinput.md), [TextArea](arkts-arkui-textarea.md), and [RichEditor](arkts-arkui-richeditor.md).
+ID for the password vault menu item. It is a level-2 menu item. Tapping this menu item launches the password vault
+app, which supports automatic username and password filling. The menu item is supported only for
+[Search](arkts-arkui-search.md), [TextInput](arkts-arkui-textinput.md), [TextArea](arkts-arkui-textarea.md), and
+[RichEditor](arkts-arkui-richeditor.md).
 
 **Type:** TextMenuItemId
 
@@ -356,7 +372,8 @@ ID for the password vault menu item. It is a level-2 menu item. Tapping this men
 static readonly phoneNumber: TextMenuItemId
 ```
 
-ID for the phone call menu item. It is a level-1 menu item. This menu item provides the redirection service for the selected phone number, launching the phone dialer page.
+ID for the phone call menu item. It is a level-1 menu item. This menu item provides the redirection service for the
+selected phone number, launching the phone dialer page.
 
 **Type:** TextMenuItemId
 
@@ -374,7 +391,8 @@ ID for the phone call menu item. It is a level-1 menu item. This menu item provi
 static readonly url: TextMenuItemId
 ```
 
-ID for the URL menu item. It is a level-1 menu item. This menu item provides the redirection service for the selected URL, launching a browser search or app page.
+ID for the URL menu item. It is a level-1 menu item. This menu item provides the redirection service for the
+selected URL, launching a browser search or app page.
 
 **Type:** TextMenuItemId
 

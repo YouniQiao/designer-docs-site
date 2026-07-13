@@ -2,9 +2,11 @@
 
 ## 汇总
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[BundleResourceInfo](arkts-bundleresourceinfo-i.md) | 应用配置的图标和名称信息，可以通过 [getBundleResourceInfo]{@link ./../@ohos.bundle.bundleResourceManager:bundleResourceManager.getBundleResourceInfo(bundleName: string, resourceFlags?: int)} 获取。 > **说明：** > > 本模块为系统接口。 |
+| [BundleResourceInfo](arkts-ability-bundleresourceinfo-i-sys.md) | 应用配置的图标和名称信息，可以通过[getBundleResourceInfo](arkts-ability-getbundleresourceinfo-f-sys.md#getbundleresourceinfo-1)获取。 |
+<!--DelEnd-->
 

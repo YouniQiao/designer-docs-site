@@ -42,7 +42,10 @@ buttons: [
 immersiveMode?: ImmersiveMode
 ```
 
-设置页面内菜单蒙层效果。 <br />**说明：** <br />- 默认值：ImmersiveMode.DEFAULT <br />- 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。
+设置页面内菜单蒙层效果。
+<br />**说明：**
+<br />- 默认值：ImmersiveMode.DEFAULT
+<br />- 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。
 
 **类型：** ImmersiveMode
 
@@ -62,7 +65,9 @@ immersiveMode?: ImmersiveMode
 isModal?: boolean
 ```
 
-菜单是否为模态窗口。值为true表示为模态窗口且有蒙层，不可与菜单周围其他控件进行交互，即蒙层区域无法事件透传。 值为false表示为非模态窗口且无蒙层，可以与菜单周围其他控件进行交互。 <br/>默认值：true
+菜单是否为模态窗口。值为true表示为模态窗口且有蒙层，不可与菜单周围其他控件进行交互，即蒙层区域无法事件透传。
+值为false表示为非模态窗口且无蒙层，可以与菜单周围其他控件进行交互。
+<br/>默认值：true
 
 **类型：** boolean
 
@@ -82,7 +87,10 @@ isModal?: boolean
 levelMode?: LevelMode
 ```
 
-设置菜单显示层级。 <br />**说明：** <br />- 默认值：LevelMode.OVERLAY <br />- 当且仅当showInSubWindow属性设置为false时生效。
+设置菜单显示层级。
+<br />**说明：**
+<br />- 默认值：LevelMode.OVERLAY
+<br />- 当且仅当showInSubWindow属性设置为false时生效。
 
 **类型：** LevelMode
 
@@ -102,7 +110,10 @@ levelMode?: LevelMode
 levelUniqueId?: number
 ```
 
-设置页面级菜单需要显示的层级下的[节点UniqueID](js-apis-arkui-frameNode.md#getuniqueid12)。 <br/>取值范围：大于等于0的数字。 <br />**说明：** <br />- 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。
+设置页面级菜单需要显示的层级下的[节点UniqueID](js-apis-arkui-frameNode.md#getuniqueid12)。
+<br/>取值范围：大于等于0的数字。
+<br />**说明：**
+<br />- 当且仅当levelMode属性设置为LevelMode.EMBEDDED时生效。
 
 **类型：** number
 
@@ -120,7 +131,10 @@ levelUniqueId?: number
 onDidAppear?: Callback<void>
 ```
 
-菜单弹出后的事件回调。 <br />**说明：** <br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。 <br />2.快速点击弹出，关闭菜单时，onWillDisappear在onDidAppear前生效。
+菜单弹出后的事件回调。
+<br />**说明：**
+<br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
+<br />2.快速点击弹出，关闭菜单时，onWillDisappear在onDidAppear前生效。
 
 **类型：** Callback<void>
 
@@ -138,7 +152,9 @@ onDidAppear?: Callback<void>
 onDidDisappear?: Callback<void>
 ```
 
-菜单消失后的事件回调。 <br />**说明：** <br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
+菜单消失后的事件回调。
+<br />**说明：**
+<br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
 
 **类型：** Callback<void>
 
@@ -156,7 +172,9 @@ onDidDisappear?: Callback<void>
 onWillAppear?: Callback<void>
 ```
 
-菜单显示动效前的事件回调。 <br />**说明：** <br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
+菜单显示动效前的事件回调。
+<br />**说明：**
+<br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
 
 **类型：** Callback<void>
 
@@ -174,7 +192,9 @@ onWillAppear?: Callback<void>
 onWillDisappear?: Callback<void>
 ```
 
-菜单退出动效前的事件回调。 <br />**说明：** <br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
+菜单退出动效前的事件回调。
+<br />**说明：**
+<br />1.正常时序依次为：onWillAppear>>onDidAppear>>onWillDisappear>>onDidDisappear。
 
 **类型：** Callback<void>
 
@@ -192,7 +212,11 @@ onWillDisappear?: Callback<void>
 showInSubWindow?: boolean
 ```
 
-某操作菜单需要显示在主窗口之外时，是否在子窗口显示此菜单。值为true表示在子窗口显示菜单。 <br/>默认值：false，在子窗口不显示菜单。 <br/>**说明：** <br/> - showInSubWindow为true的菜单无法触发显示另一个showInSubWindow为true的菜单。 <br/> - 若在UIExtension中设置showInSubWindow为true, 菜单将基于UIExtension的宿主窗口对齐。
+某操作菜单需要显示在主窗口之外时，是否在子窗口显示此菜单。值为true表示在子窗口显示菜单。
+<br/>默认值：false，在子窗口不显示菜单。
+<br/>**说明：**
+<br/> - showInSubWindow为true的菜单无法触发显示另一个showInSubWindow为true的菜单。
+<br/> - 若在UIExtension中设置showInSubWindow为true, 菜单将基于UIExtension的宿主窗口对齐。
 
 **类型：** boolean
 
@@ -212,7 +236,10 @@ showInSubWindow?: boolean
 systemMaterial?: SystemUiMaterial
 ```
 
-设置弹窗的系统材质。 <br/>默认值：[ImmersiveOptions](arkts-apis-uimaterial.md#immersiveoptions)的style为 ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](arkts-apis-uimaterial.md#immersivematerial)对象。 设置undefined时与默认值保持一致。不同的材质具有不同的效果，可以影响弹窗的背景色、边框、阴影等视觉属性。
+设置弹窗的系统材质。
+<br/>默认值：[ImmersiveOptions](arkts-apis-uimaterial.md#immersiveoptions)的style为
+ImmersiveStyle.ULTRA_THICK的[ImmersiveMaterial](arkts-apis-uimaterial.md#immersivematerial)对象。
+设置undefined时与默认值保持一致。不同的材质具有不同的效果，可以影响弹窗的背景色、边框、阴影等视觉属性。
 
 **类型：** SystemUiMaterial
 
@@ -230,7 +257,8 @@ systemMaterial?: SystemUiMaterial
 title?: string | Resource
 ```
 
-标题文本。 <br/>默认值：undefined，取值为undefined默认不显示标题。
+标题文本。
+<br/>默认值：undefined，取值为undefined默认不显示标题。
 
 **类型：** string | Resource
 

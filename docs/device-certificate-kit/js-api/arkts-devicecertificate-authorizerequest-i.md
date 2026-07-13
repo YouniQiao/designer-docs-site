@@ -9,7 +9,7 @@ Represents the authorization request information of the credentials.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## certPurpose
@@ -18,7 +18,10 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 certPurpose?: certificateManager.CertificatePurpose
 ```
 
-Certificate usage. If the **certTypes** parameter contains the **CertificateType.CREDENTIAL_UKEY** type, the **certPurpose** parameter takes effect , indicating that the certificate credentials of the USB key are filtered based on the specified certificate usage.
+Certificate usage.
+If the **certTypes** parameter contains the **CertificateType.CREDENTIAL_UKEY** type, the **certPurpose**
+parameter takes effect , indicating that the certificate credentials of the USB key are filtered based on the
+specified certificate usage.
 
 **Type:** certificateManager.CertificatePurpose
 
@@ -50,7 +53,9 @@ List of certificate types.
 issuers?: Array<Uint8Array>
 ```
 
-Indicates the certificate issuer, which is encoded in DER format. This parameter is used to filter the list of certificates that can be selected by users in the Authorization dialog box. Only the certificates that match the certificate issuer are displayed.
+Indicates the certificate issuer, which is encoded in DER format. This parameter is used to filter the list
+of certificates that can be selected by users in the Authorization dialog box. Only the certificates that
+match the certificate issuer are displayed.
 
 **Type:** Array<Uint8Array>
 
@@ -66,7 +71,14 @@ Indicates the certificate issuer, which is encoded in DER format. This parameter
 keyAlgIDs?: Array<string>
 ```
 
-Indicates the algorithm type of the public key of the certificate. It is used to filter the list of certificates that can be selected in the authorization dialog box. Only the certificates that match the public key algorithm are displayed. The value can only be RSA, EC, or ECDSA (case sensitive). If this parameter is not specified, certificates are not filtered by algorithm type. If the keyAlgIDs array contains an unsupported algorithm type, the keyAlgIDs filter does not take effect. The maximum length is 20.
+Indicates the algorithm type of the public key of the certificate. It is used to filter the list of
+certificates that can be selected in the authorization dialog box. Only the certificates that match
+the public key algorithm are displayed.
+The value can only be RSA, EC, or ECDSA (case sensitive). If this parameter is not specified, certificates are
+not filtered by algorithm type.
+If the keyAlgIDs array contains an unsupported algorithm type,
+the keyAlgIDs filter does not take effect.
+The maximum length is 20.
 
 **Type:** Array<string>
 
@@ -82,7 +94,8 @@ Indicates the algorithm type of the public key of the certificate. It is used to
 uri?: string
 ```
 
-This URI is displayed in the authorization dialog box and is used to provide the user with more context about requesting authorization to use certificate credentials.
+This URI is displayed in the authorization dialog box and is used to provide the user with more context about
+requesting authorization to use certificate credentials.
 
 **Type:** string
 

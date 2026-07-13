@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## importContactsViaUI
@@ -12,7 +12,9 @@ import { contact } from '@ohos.contact';
 function importContactsViaUI(context: Context, contacts: Array<Contact>): Promise<Array<number>>
 ```
 
-Imports multiple contacts through UI interaction. A maximum of 100 contacts can be imported at a time.
+Imports multiple contacts through UI interaction.
+
+A maximum of 100 contacts can be imported at a time.
 
 **Since:** 26.0.0
 

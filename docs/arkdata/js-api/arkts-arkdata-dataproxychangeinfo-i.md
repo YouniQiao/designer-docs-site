@@ -1,6 +1,7 @@
 # DataProxyChangeInfo
 
-Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI, and content.
+Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI,
+and content.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ Defines a struct for notifying subscribers of the shared configuration changes, 
 ## Modules to Import
 
 ```TypeScript
-import { dataShare } from '@ohos.data.dataShare';
+import { dataShare } from '@kit.ArkData';
 ```
 
 ## type

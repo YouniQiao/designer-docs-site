@@ -1,6 +1,10 @@
 # SegmentButtonItemOptionsArray
 
-Represents an array for storing button information. > **NOTE** > > The SegmentButtonItemOptionsArray can save only two to five button information elements.
+Represents an array for storing button information.
+
+> **NOTE**
+>
+> The SegmentButtonItemOptionsArray can save only two to five button information elements.
 
 **Inheritance/Implementation:** SegmentButtonItemOptionsArray extends [Array<SegmentButtonItemOptions>](Array<SegmentButtonItemOptions>)
 
@@ -11,7 +15,7 @@ Represents an array for storing button information. > **NOTE** > > The SegmentBu
 ## Modules to Import
 
 ```TypeScript
-import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@ohos.arkui.advanced.SegmentButton';
+import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -142,7 +146,8 @@ Removes the first element from this array and returns that element.
 splice(start: number, deleteCount: number, ...items: SegmentButtonItemOptions[]): SegmentButtonItemOptions[]
 ```
 
-Changes the contents of this array by removing the specified number of elements from the specified position and adding new elements in place. This API returns an array containing the removed elements.
+Changes the contents of this array by removing the specified number of elements from the specified position and
+adding new elements in place. This API returns an array containing the removed elements.
 
 **Since:** 11
 

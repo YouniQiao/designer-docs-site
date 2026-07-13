@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huksExternalCrypto } from '@ohos.security.huksExternalCrypto';
+import { huksExternalCrypto } from '@kit.UniversalKeystoreKit';
 ```
 
 ## openResource
@@ -12,7 +12,8 @@ import { huksExternalCrypto } from '@ohos.security.huksExternalCrypto';
 function openResource(resourceId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-Open resource by specific resource ID. NOTE: The opened resource must be closed using closeResource.
+Open resource by specific resource ID.
+NOTE: The opened resource must be closed using closeResource.
 
 **Since:** 26.0.0
 

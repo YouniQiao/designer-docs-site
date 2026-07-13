@@ -9,7 +9,7 @@ Enumerates the alignment styles of the indexer pop-up window.
 ## Left
 
 ```TypeScript
-Left = 0
+Left
 ```
 
 The pop-up window is displayed on the right of the indexer.
@@ -23,7 +23,7 @@ The pop-up window is displayed on the right of the indexer.
 ## Right
 
 ```TypeScript
-Right = 1
+Right
 ```
 
 The pop-up window is displayed on the left of the indexer.
@@ -37,10 +37,11 @@ The pop-up window is displayed on the left of the indexer.
 ## START
 
 ```TypeScript
-START = 2
+START
 ```
 
-The pop-up window is displayed on the right of the indexer for left-to-right scripts, and on the left of the indexer for right-to-left scripts.
+The pop-up window is displayed on the right of the indexer for left-to-right scripts, and on the left of the
+indexer for right-to-left scripts.
 
 **Since:** 12
 
@@ -53,10 +54,11 @@ The pop-up window is displayed on the right of the indexer for left-to-right scr
 ## END
 
 ```TypeScript
-END = 3
+END
 ```
 
-The pop-up window is displayed on the left of the indexer for left-to-right scripts, and on the right of the indexer for right-to-left scripts.
+The pop-up window is displayed on the left of the indexer for left-to-right scripts, and on the right of the
+indexer for right-to-left scripts.
 
 **Since:** 12
 

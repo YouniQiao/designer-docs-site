@@ -30,7 +30,15 @@ Smooth union mode.
 GRAVITY_UNION = 1
 ```
 
-Gravity union mode. **NOTE** This mode takes effect only when [useUnionEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-use-union-effect-sys.md#useunioneffect-1) is used and **gravityCenter** of [GravityCenterOptions](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-use-union-effect-sys.md#gravitycenteroptions) is set to **true**.
+Gravity union mode.
+
+**NOTE**
+
+This mode takes effect only when
+[useUnionEffect](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-use-union-effect-sys.md#useunioneffect-1)
+is used and **gravityCenter** of
+[GravityCenterOptions](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-use-union-effect-sys.md#gravitycenteroptions)
+is set to **true**.
 
 **Since:** 26.0.0
 

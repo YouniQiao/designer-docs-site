@@ -1,6 +1,8 @@
 # SystemPasteboard
 
-Provides **SystemPasteboard** APIs. Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
+Provides **SystemPasteboard** APIs.
+Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using
+[getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
 
 **Since:** 6
 
@@ -9,7 +11,7 @@ Provides **SystemPasteboard** APIs. Before calling any **SystemPasteboard** API,
 ## Modules to Import
 
 ```TypeScript
-import { pasteboard } from '@ohos.pasteboard';
+import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
 ## clear
@@ -205,7 +207,8 @@ try {
 detectPatterns(patterns: Array<Pattern>): Promise<Array<Pattern>>
 ```
 
-Detects [patterns](arkts-basicservices-pattern-e.md#pattern) in the system pasteboard. This API uses a promise to return the result.
+Detects [patterns](arkts-basicservices-pattern-e.md) in the system pasteboard. This API uses a promise to return the
+result.
 
 **Since:** 13
 
@@ -259,7 +262,13 @@ systemPasteboard.detectPatterns(patterns).then((data: Array<pasteboard.Pattern>)
 getChangeCount(): number
 ```
 
-Obtains the number of pasteboard content changes. Returns the number of pasteboard content changes if this API is called successfully; returns **0** otherwise. Even though the PasteData expires, or the data becomes empty because of the called [clearDataSync](arkts-basicservices-systempasteboard-i.md#cleardatasync-1) API, the number of data changes remains. When the system is restarted, or the pasteboard service is restarted due to an exception, the number of PasteData changes counts from 0. In addition, copying the same data repeatedly is considered to change the data for multiple times. Therefore, each time the data is copied, the number of data changes increases.
+Obtains the number of pasteboard content changes.
+Returns the number of pasteboard content changes if this API is called successfully; returns **0** otherwise.
+Even though the PasteData expires, or the data becomes empty because of the called
+[clearDataSync](arkts-basicservices-systempasteboard-i.md#cleardatasync-1) API, the number of data changes remains.
+When the system is restarted, or the pasteboard service is restarted due to an exception, the number of
+PasteData changes counts from 0. In addition, copying the same data repeatedly is considered to change the
+data for multiple times. Therefore, each time the data is copied, the number of data changes increases.
 
 **Since:** 18
 
@@ -317,7 +326,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses an asynchronou
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameters types. |
 | [27787277](../../apis-basic-services-kit/errorcode-pasteboard.md#27787277-another-copy-or-paste-operation-in-progress) | Another copy or paste operation is in progress. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -366,7 +375,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses a promise to r
 | Error Code ID | Error Message |
 | --- | --- |
 | [27787277](../../apis-basic-services-kit/errorcode-pasteboard.md#27787277-another-copy-or-paste-operation-in-progress) | Another copy or paste operation is in progress. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -452,7 +461,7 @@ Obtains a **PasteData** object from the pasteboard. This API returns the result 
 | Error Code ID | Error Message |
 | --- | --- |
 | [12900005](../../apis-basic-services-kit/errorcode-pasteboard.md#12900005-request-timeout) | Excessive processing time for internal data. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -473,7 +482,8 @@ try {
 getDataWithProgress(params: GetDataParams): Promise<PasteData>
 ```
 
-Obtains the PasteData from the system pasteboard with system progress. This API uses a promise to return the result. Folders cannot be copied.
+Obtains the PasteData from the system pasteboard with system progress.
+This API uses a promise to return the result. Folders cannot be copied.
 
 **Since:** 15
 
@@ -1011,7 +1021,9 @@ systemPasteboard.hasPasteData().then((data: boolean) => {
 hasRemoteData(): boolean
 ```
 
-Checks whether the PasteData is on a remote device. Transferring data across devices takes time. If the PasteData is in a remote device, do not check for custom data types or read the PasteData on the UI thread.
+Checks whether the PasteData is on a remote device. Transferring data across devices takes time. If the
+PasteData is in a remote device, do not check for custom data types or read the PasteData on the UI
+thread.
 
 **Since:** 24
 

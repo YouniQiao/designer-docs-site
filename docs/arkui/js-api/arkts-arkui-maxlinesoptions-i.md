@@ -12,7 +12,11 @@ Configures the display effect of the **TextArea** component when the text exceed
 overflowMode?: MaxLinesMode
 ```
 
-**overflowMode** can be used to set the non-inline mode for the [TextArea](arkts-arkui-textarea.md) component. When the text exceeds the set value of **maxLines** (maximum number of lines), a scroll effect is enabled. This requires configuration of [textOverflow](TextAreaAttribute#textOverflow), and **MaxLinesMode** takes effect only when **textOverflow** is set to **None** or **Clip**. The default value of **MaxLinesMode** is **Clip**, indicating that text is truncated when it exceeds the value of **maxLines**.
+**overflowMode** can be used to set the non-inline mode for the [TextArea](arkts-arkui-textarea.md) component. When the
+text exceeds the set value of **maxLines** (maximum number of lines), a scroll effect is enabled. This requires
+configuration of [textOverflow](TextAreaAttribute#textOverflow), and **MaxLinesMode** takes effect only when
+**textOverflow** is set to **None** or **Clip**. The default value of **MaxLinesMode** is **Clip**, indicating that
+text is truncated when it exceeds the value of **maxLines**.
 
 **Type:** MaxLinesMode
 

@@ -1,6 +1,7 @@
 # HitTestValue
 
-Provides the element information of the area being clicked. For the sample code, see [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).
+Provides the element information of the area being clicked. For the sample code, see
+[getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Provides the element information of the area being clicked. For the sample code,
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## extra
@@ -18,7 +19,8 @@ import { webview } from '@ohos.web.webview';
 extra: string
 ```
 
-Extra information of the area being clicked. If the area being clicked is an image or a link, the extra information is the URL of the image or link.
+Extra information of the area being clicked. If the area being clicked is an image or a link, the extra
+information is the URL of the image or link.
 
 **Type:** string
 

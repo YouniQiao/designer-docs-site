@@ -1,6 +1,8 @@
 # @ohos.uri
 
-本模块提供URI字符串解析功能。URI遵循RFC3986规范标准，该规范定义了编码和解析网络资源标识符的方法，不支持非标准场景解析。 > **说明：** > > - 本模块同时支持ArkTS-Dyn、ArkTS-Sta。
+The uri module provides APIs for parsing URI strings that comply with the RFC3986 standard.
+This standard defines how to encode and parse the identifiers used to locate network resources.
+The module does not support parsing of URIs in non-standard scenarios.
 
 **Since:** 8
 
@@ -18,5 +20,5 @@ import { uri } from '@kit.ArkTS';
 
 | Name | Description |
 | --- | --- |
-| [URI](arkts-uri-uri-c.md) | 构造一个URI对象，并提供判断两个URI是否相等、对URI路径部分进行编码规范化等方法。 |
+| [URI](arkts-arkts-uri-c.md) | URI Represents a Uniform Resource Identifier (URI) reference. |
 

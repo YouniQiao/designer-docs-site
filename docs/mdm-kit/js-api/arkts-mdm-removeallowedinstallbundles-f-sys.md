@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## removeAllowedInstallBundles
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function removeAllowedInstallBundles(admin: Want, appIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Removes the applications that can be installed by the current user. This API uses an asynchronous callback to return the result.
+Removes the applications that can be installed by the current user. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 10
 
@@ -77,7 +78,8 @@ bundleManager.removeAllowedInstallBundles(wantTemp, appIds, (err) => {
 function removeAllowedInstallBundles(admin: Want, appIds: Array<string>, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Removes the applications that can be installed by the user specified by **userId**. This API uses an asynchronous callback to return the result.
+Removes the applications that can be installed by the user specified by **userId**. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 10
 
@@ -143,7 +145,8 @@ bundleManager.removeAllowedInstallBundles(wantTemp, appIds, 100, (err) => {
 function removeAllowedInstallBundles(admin: Want, appIds: Array<string>, userId?: number): Promise<void>
 ```
 
-Removes the applications that can be installed by the current or specified user. This API uses a promise to return the result.
+Removes the applications that can be installed by the current or specified user. This API uses a promise to return
+the result.
 
 **Since:** 10
 

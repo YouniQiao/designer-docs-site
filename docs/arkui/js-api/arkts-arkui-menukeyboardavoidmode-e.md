@@ -28,7 +28,8 @@ The menu does not avoid the soft keyboard.
 TRANSLATE_AND_RESIZE = 1
 ```
 
-The menu avoids the soft keyboard. If the space is insufficient, the menu will be translated or resized to avoid the soft keyboard.
+The menu avoids the soft keyboard. If the space is insufficient, the menu will be translated or resized to avoid
+the soft keyboard.
 
 **Since:** 23
 

@@ -11,7 +11,7 @@ Defines the class of media asset custom record manager.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## addLcdJumpCount
@@ -20,7 +20,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 addLcdJumpCount(ids: Array<number>): Promise<Array<number>>
 ```
 
-Add lcd jump count which fileId is in ids A maximum of 500 ids can be add at once.
+Add lcd jump count which fileId is in ids
+A maximum of 500 ids can be add at once.
 
 **Since:** 20
 
@@ -54,7 +55,8 @@ Add lcd jump count which fileId is in ids A maximum of 500 ids can be add at onc
 addShareCount(ids: Array<number>): Promise<Array<number>>
 ```
 
-Add share count which fileId is in ids A maximum of 500 ids can be add at once.
+Add share count which fileId is in ids
+A maximum of 500 ids can be add at once.
 
 **Since:** 20
 
@@ -88,7 +90,8 @@ Add share count which fileId is in ids A maximum of 500 ids can be add at once.
 createCustomRecords(customRecords: Array<PhotoAssetCustomRecord>): Promise<void>
 ```
 
-Creates custom records. A maximum of 200 custom records can be created at once.
+Creates custom records.
+A maximum of 200 custom records can be created at once.
 
 **Since:** 20
 
@@ -309,7 +312,8 @@ async function example(context: Context) {
 setCustomRecords(customRecords: Array<PhotoAssetCustomRecord>): Promise<Array<number>>
 ```
 
-Set custom records. A maximum of 200 custom records can be set at once.
+Set custom records.
+A maximum of 200 custom records can be set at once.
 
 **Since:** 20
 

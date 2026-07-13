@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## getNfcF
@@ -12,7 +12,9 @@ import { tag } from '@ohos.nfc.tag';
 function getNfcF(tagInfo: TagInfo): NfcFTag
 ```
 
-Obtains an {@link NfcFTag} object based on the tag information. During tag reading, if the tag supports the NFC-F technology, an {@link NfcFTag} object will be created based on the tag information.
+Obtains an {@link NfcFTag} object based on the tag information.
+During tag reading, if the tag supports the NFC-F technology, an {@link NfcFTag} object
+will be created based on the tag information.
 
 **Since:** 12
 

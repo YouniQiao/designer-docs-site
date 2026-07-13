@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## cancel
@@ -12,7 +12,8 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function cancel(agent: WantAgent, callback: AsyncCallback<void>): void
 ```
 
-Cancels a WantAgent object. This API uses an asynchronous callback to return the result.
+Cancels a WantAgent object.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -113,7 +114,8 @@ try {
 function cancel(agent: WantAgent): Promise<void>
 ```
 
-Cancels a WantAgent object. This API uses a promise to return the result.
+Cancels a WantAgent object.
+This API uses a promise to return the result.
 
 **Since:** 9
 

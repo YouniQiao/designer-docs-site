@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## once
@@ -732,7 +732,8 @@ try {
 function once(type: SensorId.PEDOMETER, callback: Callback<PedometerResponse>): void
 ```
 
-Obtains data of the pedometer sensor once. The step counter sensor's data reporting is subject to some delay, and the delay is determined by specific product implementations.
+Obtains data of the pedometer sensor once. The step counter sensor's data reporting is subject to some delay, and
+the delay is determined by specific product implementations.
 
 **Since:** 9
 

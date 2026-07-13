@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Callback,BusinessError,ErrorCallback,AsyncCallback } from '@kit.BasicServicesKit';
+import { Callback, BusinessError, ErrorCallback, AsyncCallback } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -12,8 +12,8 @@ import { Callback,BusinessError,ErrorCallback,AsyncCallback } from '@kit.BasicSe
 
 | Name | Description |
 | --- | --- |
-| [AsyncCallback](arkts-asynccallback-i.md) | 通用回调函数，携带错误参数和异步返回值，用于在异步操作完成时同时回传错误信息或成功数据。错误参数为[BusinessError]{@link BusinessError}类型的信息。 异步返回值的类型由开发者自定义，回调将返回对应类型。 |
-| [BusinessError](arkts-businesserror-i.md) | 错误参数。 |
-| [Callback](arkts-callback-i.md) | 通用回调函数，用于在异步操作完成时回传处理结果。类型由开发者自定义。 |
-| [ErrorCallback](arkts-errorcallback-i.md) | 通用回调函数，携带错误参数，用于在接口调用失败时回传错误信息。回调返回的信息为[BusinessError]{@link BusinessError}类型的错误参数。 |
+| [AsyncCallback](arkts-basicservices-asynccallback-i.md) | Defines a common callback that carries an error parameter and asynchronous return value.The error parameter is ofthe [BusinessError](arkts-basicservices-businesserror-i.md) type. The type of the asynchronous return value is defined by thedeveloper. |
+| [BusinessError](arkts-basicservices-businesserror-i.md) | Defines the error parameter. |
+| [Callback](arkts-basicservices-callback-i.md) | Defines a common callback. You can set **data** to customize the data type of the information returned by thecallback. |
+| [ErrorCallback](arkts-basicservices-errorcallback-i.md) | Defines a common callback that carries an error parameter. The information returned by the callback is ofthe [BusinessError](arkts-basicservices-businesserror-i.md) type. |
 

@@ -12,7 +12,11 @@
 isInteractive?: boolean
 ```
 
-本次转场动画是否为可交互转场。 true：本次转场动画是可交互转场；false：本次转场动画不是可交互转场。 默认值：false
+本次转场动画是否为可交互转场。
+
+true：本次转场动画是可交互转场；false：本次转场动画不是可交互转场。
+
+默认值：false
 
 **类型：** boolean
 
@@ -32,7 +36,9 @@ isInteractive?: boolean
 onTransitionEnd?: (success: boolean) => void
 ```
 
-转场完成回调。 success：转场是否成功。
+转场完成回调。
+
+success：转场是否成功。
 
 **类型：** (success: boolean) => void
 
@@ -50,7 +56,13 @@ onTransitionEnd?: (success: boolean) => void
 timeout?: number
 ```
 
-动画超时结束时间。 单位：ms。 取值范围：[0, +∞)。 默认值：可交互动画无默认值，不可交互动画默认超时时间为1000ms。
+动画超时结束时间。
+
+单位：ms。
+
+取值范围：[0, +∞)。
+
+默认值：可交互动画无默认值，不可交互动画默认超时时间为1000ms。
 
 **类型：** number
 
@@ -68,7 +80,9 @@ timeout?: number
 transition: (transitionProxy: NavigationTransitionProxy) => void
 ```
 
-自定义转场动画执行回调。 transitionProxy：自定义转场动画代理对象。
+自定义转场动画执行回调。
+
+transitionProxy：自定义转场动画代理对象。
 
 **类型：** (transitionProxy: NavigationTransitionProxy) => void
 

@@ -6,7 +6,15 @@
 function finishLogCollected(admin: Want): void
 ```
 
-删除本MDM应用在当前用户下收集到的设备日志。 > **说明：** > > 在应用调用[startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1)开始收集日志后，收到 > [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterpriseadminextensionability-c.md#onlogcollected-1) > 回调时，建议立即拷贝或者处理日志，并调用此接口删除收集到的日志。 > > 若不调本接口，设备日志会占用系统存储空间，不影响下一次调用[startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1)启动日志收集任务。
+删除本MDM应用在当前用户下收集到的设备日志。
+
+> **说明：**
+>
+> 在应用调用[startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1)开始收集日志后，收到
+> [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterpriseadminextensionability-c.md#onlogcollected-1)
+> 回调时，建议立即拷贝或者处理日志，并调用此接口删除收集到的日志。
+>
+> 若不调本接口，设备日志会占用系统存储空间，不影响下一次调用[startCollectLog](arkts-mdm-startcollectlog-f.md#startcollectlog-1)启动日志收集任务。
 
 **起始版本：** 23
 
@@ -29,7 +37,7 @@ function finishLogCollected(admin: Want): void
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-应用没有激活成设备管理器) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 
 **示例：**
 

@@ -9,7 +9,7 @@ This class is used to set back forward cache options.
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## constructor
@@ -28,7 +28,8 @@ constructor()
 size: number
 ```
 
-Set the maximum size of pages that can cache. Default is 1, max is 50.
+Set the maximum size of pages that can cache.
+Default is 1, max is 50.
 
 **Type:** number
 
@@ -42,7 +43,8 @@ Set the maximum size of pages that can cache. Default is 1, max is 50.
 timeToLive: number
 ```
 
-Set the lifetime in seconds in the BackForwardCache. Unit: seconds. Default is 600.
+Set the lifetime in seconds in the BackForwardCache.
+Unit: seconds. Default is 600.
 
 **Type:** number
 

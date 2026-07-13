@@ -1,6 +1,7 @@
 # @ohos.account.distributedAccount
 
-本模块提供管理分布式账号的一些基础功能，主要包括查询和更新账号登录状态。
+The **distributedAccount** module provides APIs for managing distributed accounts, including querying and updating
+account login states.
 
 **Since:** 7
 
@@ -18,18 +19,26 @@ import { distributedAccount } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getDistributedAccountAbility](arkts-distributedaccount-getdistributedaccountability-f.md#getDistributedAccountAbility-1) | 获取分布式账号单实例对象。 |
+| [getDistributedAccountAbility](arkts-basicservices-getdistributedaccountability-f.md#getdistributedaccountability-1) | Obtains a **DistributedAccountAbility** instance. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DistributedAccountAbility](arkts-distributedaccount-distributedaccountability-i.md) | 提供查询和更新分布式账号登录状态方法（需要先获取分布式账号的单实例对象）。 |
-| [DistributedInfo](arkts-distributedaccount-distributedinfo-i.md) | 提供操作系统账号的分布式信息。 |
+| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a**DistributedAccountAbility** instance first. |
+| [DistributedInfo](arkts-basicservices-distributedinfo-i.md) | Represents the distributed information about an OS account. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i-sys.md) | Provides APIs for querying and updating the login state of a distributed account. You must obtain a**DistributedAccountAbility** instance first. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DistributedAccountStatus](arkts-distributedaccount-distributedaccountstatus-e.md) | 表示分布式账号状态枚举。 |
+| [DistributedAccountStatus](arkts-basicservices-distributedaccountstatus-e.md) | Enumerates the statuses of a distributed account. |
 

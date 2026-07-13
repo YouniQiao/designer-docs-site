@@ -144,7 +144,7 @@ setOnHover(callback: HoverCallback | undefined): void
 setOnKeyEvent(callback: Callback<KeyEvent> | undefined): void
 ```
 
-设置[按键事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)的回调。
+设置[按键事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)的回调。
 
 **起始版本：** 12
 
@@ -232,7 +232,9 @@ setOnTouch(callback: Callback<TouchEvent> | undefined): void
 setOnVisibleAreaApproximateChange(options: VisibleAreaEventOptions, event: VisibleAreaChangeCallback | undefined): void
 ```
 
-设置限制回调间隔的 [onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1) 可见区域变化事件的回调。
+设置限制回调间隔的
+[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)
+可见区域变化事件的回调。
 
 **起始版本：** 12
 

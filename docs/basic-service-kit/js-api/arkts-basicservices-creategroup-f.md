@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## createGroup
@@ -12,7 +12,9 @@ import { request } from '@ohos.request';
 function createGroup(config: GroupConfig): Promise<string>
 ```
 
-Creates a group based on [GroupConfig](arkts-basicservices-groupconfig-i.md#groupconfig). This API uses a promise to return the result.
+Creates a group based on
+[GroupConfig](arkts-basicservices-groupconfig-i.md). This API
+uses a promise to return the result.
 
 **Since:** 15
 

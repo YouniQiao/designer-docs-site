@@ -6,7 +6,8 @@
 function notifyInvisibleForms(formIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Instructs the widget framework to make a widget invisible. After this API is called, **onVisibilityChange** is invoked to notify the widget provider. This API uses an asynchronous callback to return the result.
+Instructs the widget framework to make a widget invisible. After this API is called, **onVisibilityChange** is
+invoked to notify the widget provider. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -34,7 +35,8 @@ Instructs the widget framework to make a widget invisible. After this API is cal
 function notifyInvisibleForms(formIds: Array<string>): Promise<void>
 ```
 
-Instructs the widget framework to make a widget invisible. After this API is called, **onVisibilityChange** is invoked to notify the widget provider. This API uses a promise to return the result.
+Instructs the widget framework to make a widget invisible. After this API is called, **onVisibilityChange** is
+invoked to notify the widget provider. This API uses a promise to return the result.
 
 **Since:** 8
 

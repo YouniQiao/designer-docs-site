@@ -1,6 +1,7 @@
 # @ohos.file.cloudSyncManager
 
-该模块向云盘管理应用提供端云同步管理能力：包括全量下载的状态和停止原因，以及应用本地和云端文件数量信息。
+The **cloudSyncManager** module provides APIs for managing device-cloud sync for applications. You can use the APIs
+to manage the full download state, the reason why the full download stops, and number of local and cloud files.
 
 **Since:** 10
 
@@ -14,48 +15,72 @@ import { cloudSyncManager } from '@kit.CoreFileKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[changeAppCloudSwitch](arkts-cloudsyncmanager-changeappcloudswitch-f-sys.md#changeAppCloudSwitch-1) | 异步方法修改应用的端云文件同步开关。使用Promise异步回调。 |
-| <!--DelRow-->[changeAppCloudSwitch](arkts-cloudsyncmanager-changeappcloudswitch-f-sys.md#changeAppCloudSwitch-2) | 异步方法修改应用的端云文件同步开关。使用callback异步回调。 |
-| <!--DelRow-->[clean](arkts-cloudsyncmanager-clean-f-sys.md#clean-1) | 异步方法清理本地云相关数据。使用Promise异步回调。 |
-| <!--DelRow-->[clean](arkts-cloudsyncmanager-clean-f-sys.md#clean-2) | 异步方法清理本地云相关数据。使用callback异步回调。 |
-| <!--DelRow-->[disableCloud](arkts-cloudsyncmanager-disablecloud-f-sys.md#disableCloud-1) | 异步方法去使能端云协同能力。使用Promise异步回调。 |
-| <!--DelRow-->[disableCloud](arkts-cloudsyncmanager-disablecloud-f-sys.md#disableCloud-2) | 异步方法去使能端云协同能力。使用callback异步回调。 |
-| <!--DelRow-->[enableCloud](arkts-cloudsyncmanager-enablecloud-f-sys.md#enableCloud-1) | 异步方法使能端云协同能力。使用Promise异步回调。 |
-| <!--DelRow-->[enableCloud](arkts-cloudsyncmanager-enablecloud-f-sys.md#enableCloud-2) | 异步方法使能端云协同能力。使用callback异步回调。 |
-| <!--DelRow-->[getBundlesLocalFilePresentStatus](arkts-cloudsyncmanager-getbundleslocalfilepresentstatus-f-sys.md#getBundlesLocalFilePresentStatus-1) | 对接入云盘的应用，检测其在云盘存储空间内是否存在未上云文件，支持同时查询多个应用。使用Promise异步回调。 |
-| <!--DelRow-->[getDowngradeDownloadTaskState](arkts-cloudsyncmanager-getdowngradedownloadtaskstate-f-sys.md#getDowngradeDownloadTaskState-1) | 查询接入云盘的应用的全量下载任务状态。使用Promise异步回调。 由于返回的DownloadProgress对象中不包含包名信息，因此在批量查询多个应用时，调用方需自行记录应用包名。 |
-| <!--DelRow-->[notifyDataChange](arkts-cloudsyncmanager-notifydatachange-f-sys.md#notifyDataChange-1) | 通知端云服务指定账号下的特定应用云数据已发生变更。使用Promise异步回调。 |
-| <!--DelRow-->[notifyDataChange](arkts-cloudsyncmanager-notifydatachange-f-sys.md#notifyDataChange-2) | 通知端云服务指定账号下的特定应用云数据已发生变更。使用callback异步回调。 |
-| <!--DelRow-->[notifyDataChange](arkts-cloudsyncmanager-notifydatachange-f-sys.md#notifyDataChange-3) | 通知端云服务应用指定用户的云数据变更信息。使用Promise异步回调。 |
-| <!--DelRow-->[notifyDataChange](arkts-cloudsyncmanager-notifydatachange-f-sys.md#notifyDataChange-4) | 通知端云服务应用指定用户的云数据变更信息。使用callback异步回调。 |
+| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-1) | Changes the device-cloud file sync switch for an application. This API uses a promise to return the result. |
+| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-2) | Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return theresult. |
+| [clean](arkts-corefile-clean-f-sys.md#clean-1) | Callback used to clear the cloud data locally. This API uses a promise to return the result. |
+| [clean](arkts-corefile-clean-f-sys.md#clean-2) | Callback used to clear the cloud data locally. This API uses an asynchronous callback to return the result. |
+| [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-1) | Disables device-cloud sync. This API uses a promise to return the result. |
+| [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-2) | Disables device-cloud sync. This API uses an asynchronous callback to return the result. |
+| [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-1) | Enables device-cloud sync. This API uses a promise to return the result. |
+| [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-2) | Enables device-cloud sync. This API uses an asynchronous callback to return the result. |
+| [getBundlesLocalFilePresentStatus](arkts-corefile-getbundleslocalfilepresentstatus-f-sys.md#getbundleslocalfilepresentstatus-1) | Obtains the existence status of local files for multiple applications and checks whether there are files thathave not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result. |
+| [getDowngradeDownloadTaskState](arkts-corefile-getdowngradedownloadtaskstate-f-sys.md#getdowngradedownloadtaskstate-1) | Supports querying the execution status of full data download tasks for integrated cloud drive applications. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-1) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has beenchanged. This API uses a promise to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-2) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has beenchanged. This API uses an asynchronous callback to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-3) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promiseto return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-4) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses anasynchronous callback to return the result. |
+<!--DelEnd-->
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DowngradeDownload](arkts-cloudsyncmanager-downgradedownload-c-sys.md) | 全量下载：为云盘管理应用提供集中下载云端数据的能力。 云盘全量下载对象，用于支撑云盘管理应用完成云盘文件的全量下载流程。 |
-| [DownloadProgress](arkts-cloudsyncmanager-downloadprogress-c.md) | 全量下载任务的进度信息。 |
+| [DownloadProgress](arkts-corefile-downloadprogress-c.md) | Describes the full download progress. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DowngradeDownload](arkts-corefile-downgradedownload-c-sys.md) | Full download: provides the capability of downloading cloud data for applications.It supports the full download of cloud application files. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CloudFileInfo](arkts-cloudsyncmanager-cloudfileinfo-i.md) | 应用本地和云端文件个数以及大小信息。 |
-| <!--DelRow-->[ExtraData](arkts-cloudsyncmanager-extradata-i-sys.md) | 云端数据变更信息。 |
-| <!--DelRow-->[LocalFilePresentStatus](arkts-cloudsyncmanager-localfilepresentstatus-i-sys.md) | 检测结果对象，包含应用包名及其在云盘存储空间内是否存在未上云文件的状态信息。 |
-| <!--DelRow-->[TransferProgress](arkts-cloudsyncmanager-transferprogress-i-sys.md) | 搬迁任务的进度信息。 |
+| [CloudFileInfo](arkts-corefile-cloudfileinfo-i.md) | Represents the number and size of local and cloud files of an application. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ExtraData](arkts-corefile-extradata-i-sys.md) | Represents the cloud data change information. |
+| [LocalFilePresentStatus](arkts-corefile-localfilepresentstatus-i-sys.md) | Specifies a result object that contains the application bundle name and the status information about whether thereare files that have not been uploaded to the cloud in the cloud storage space. |
+| [TransferProgress](arkts-corefile-transferprogress-i-sys.md) | Defines the TransferProgress data structure. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[Action](arkts-cloudsyncmanager-action-e-sys.md) | 清理本地云相关数据时的Action，为枚举类型。 |
-| [DownloadState](arkts-cloudsyncmanager-downloadstate-e.md) | 全量下载任务状态的枚举。 |
-| [DownloadStopReason](arkts-cloudsyncmanager-downloadstopreason-e.md) | 全量下载停止原因的枚举，默认值为NO_STOP。 |
-| <!--DelRow-->[TransferState](arkts-cloudsyncmanager-transferstate-e-sys.md) | 搬迁任务状态的枚举。 |
-| <!--DelRow-->[TransferStopReason](arkts-cloudsyncmanager-transferstopreason-e-sys.md) | 搬迁停止原因的枚举。 |
+| [DownloadState](arkts-corefile-downloadstate-e.md) | Enumerates the full download states. |
+| [DownloadStopReason](arkts-corefile-downloadstopreason-e.md) | Enumerates the reasons why the full download stops. The default value is **NO_STOP**. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [Action](arkts-corefile-action-e-sys.md) | Enumerates the actions that can be taken to clear local cloud data. |
+| [DownloadState](arkts-corefile-downloadstate-e-sys.md) | Enumerates the full download states. |
+| [TransferState](arkts-corefile-transferstate-e-sys.md) | Describes the state type of transfer task. |
+| [TransferStopReason](arkts-corefile-transferstopreason-e-sys.md) | Describes the state type of transfer stop reason. |
+<!--DelEnd-->
 

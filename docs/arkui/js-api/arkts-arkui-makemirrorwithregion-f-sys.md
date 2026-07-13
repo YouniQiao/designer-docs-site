@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { screen } from '@ohos.screen';
+import { screen } from '@kit.ArkUI';
 ```
 
 ## makeMirrorWithRegion
@@ -12,7 +12,8 @@ import { screen } from '@ohos.screen';
 function makeMirrorWithRegion(mainScreen: number, mirrorScreen: Array<number>, mainScreenRegion: Rect): Promise<number>
 ```
 
-Sets a rectangle on the screen to mirror mode. This API uses a promise to return the result. After this API is called, you are advised not to rotate or fold the screen further. Otherwise, the mirrored content may be abnormal.
+Sets a rectangle on the screen to mirror mode. This API uses a promise to return the result. After this API is
+called, you are advised not to rotate or fold the screen further. Otherwise, the mirrored content may be abnormal.
 
 **Since:** 19
 

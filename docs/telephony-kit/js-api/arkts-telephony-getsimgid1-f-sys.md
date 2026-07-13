@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sim } from '@ohos.telephony.sim';
+import { sim } from '@kit.TelephonyKit';
 ```
 
 ## getSimGid1
@@ -12,7 +12,8 @@ import { sim } from '@ohos.telephony.sim';
 function getSimGid1(slotId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot. The GID1 is recorded in the EFGID1 file of the SIM card.
+Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot.
+The GID1 is recorded in the EFGID1 file of the SIM card.
 
 **Since:** 7
 
@@ -61,7 +62,8 @@ sim.getSimGid1(0, (err: BusinessError, data: string) => {
 function getSimGid1(slotId: number): Promise<string>
 ```
 
-Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot. The GID1 is recorded in the EFGID1 file of the SIM card.
+Obtains the Group Identifier Level 1 (GID1) of the SIM card in a specified slot.
+The GID1 is recorded in the EFGID1 file of the SIM card.
 
 **Since:** 7
 

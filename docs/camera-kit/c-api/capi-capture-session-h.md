@@ -71,7 +71,7 @@ The file declares the capture session concepts.
 | [Camera_ErrorCode OH_CaptureSession_SetWhiteBalance(Camera_CaptureSession* session, int32_t colorTemperature)](#oh_capturesession_setwhitebalance) | - | Sets the white balance color temperature.Before setting this parameter, you are advised to use [OH_CaptureSession_GetWhiteBalanceRange](capi-capture-session-h.md#oh_capturesession_getwhitebalancerange) to obtain thesupported white balance color temperature range. |
 | [Camera_ErrorCode OH_CaptureSession_GetColorTintRange(const Camera_CaptureSession* session, int32_t *minColorTint, int32_t *maxColorTint)](#oh_capturesession_getcolortintrange) | - | Obtains the supported white balance color tint range. |
 | [Camera_ErrorCode OH_CaptureSession_GetColorTint(const Camera_CaptureSession* session, int32_t *colorTint)](#oh_capturesession_getcolortint) | - | Obtains the white balance color tint. |
-| [Camera_ErrorCode OH_CaptureSession_SetColorTint(const Camera_CaptureSession* session, int32_t colorTint)](#oh_capturesession_setcolortint) | - | Sets the white balance color tint. |
+| [Camera_ErrorCode OH_CaptureSession_SetColorTint(Camera_CaptureSession* session, int32_t colorTint)](#oh_capturesession_setcolortint) | - | Sets the white balance color tint. |
 | [Camera_ErrorCode OH_CaptureSession_SetExposureMode(Camera_CaptureSession* session, Camera_ExposureMode exposureMode)](#oh_capturesession_setexposuremode) | - | Sets an exposure mode for the device. |
 | [Camera_ErrorCode OH_CaptureSession_GetMeteringPoint(Camera_CaptureSession* session, Camera_Point* point)](#oh_capturesession_getmeteringpoint) | - | Obtains the metering point in use. |
 | [Camera_ErrorCode OH_CaptureSession_SetMeteringPoint(Camera_CaptureSession* session, Camera_Point point)](#oh_capturesession_setmeteringpoint) | - | Sets the metering point, which is the center point of the metering rectangle. |
@@ -154,9 +154,6 @@ The file declares the capture session concepts.
 | [Camera_ErrorCode OH_CaptureSession_SetOISModeCustom(const Camera_CaptureSession* session, float pitchBias, float yawBias)](#oh_capturesession_setoismodecustom) | - | Sets custom OIS bias values for all axes. |
 | [Camera_ErrorCode OH_CaptureSession_GetZoomPointInfos(const Camera_CaptureSession* session, uint32_t* size, OH_Camera_ZoomPointInfo** zoomPointInfo)](#oh_capturesession_getzoompointinfos) | - | Gets the zoom point infos.Release the zoom point infos memory by calling [OH_CaptureSession_DeleteZoomPointInfos](capi-capture-session-h.md#oh_capturesession_deletezoompointinfos). |
 | [Camera_ErrorCode OH_CaptureSession_DeleteZoomPointInfos(const Camera_CaptureSession* session, OH_Camera_ZoomPointInfo* zoomPointInfo)](#oh_capturesession_deletezoompointinfos) | - | Delete the zoom point infos. |
-| [typedef void (\*OH_CaptureSession_OnNotificationReceive)(void* context, OH_Camera_NotificationInfo* notificationInfo)](#oh_capturesession_onnotificationreceive) | OH_CaptureSession_OnNotificationReceive | Called when camera notification information is received. |
-| [Camera_ErrorCode OH_CaptureSession_RegisterNotificationReceivedCallback(const Camera_CaptureSession* session, void* context, OH_CaptureSession_OnNotificationReceive callback)](#oh_capturesession_registernotificationreceivedcallback) | - | Registers a callback to listen for camera notification information received events,can be unRegister by [OH_CaptureSession_UnregisterNotificationReceivedCallback](capi-capture-session-h.md#oh_capturesession_unregisternotificationreceivedcallback).Lifetime and ownership:- The caller must ensure that `context` remains valid until Unregister returns. |
-| [Camera_ErrorCode OH_CaptureSession_UnregisterNotificationReceivedCallback(const Camera_CaptureSession* session, void* context, OH_CaptureSession_OnNotificationReceive callback)](#oh_capturesession_unregisternotificationreceivedcallback) | - | Unregisters the callback used to listen for camera notification information received events. |
 | [bool OH_CaptureSession_IsLockFocusTrackingSupported(const Camera_CaptureSession* session)](#oh_capturesession_islockfocustrackingsupported) | - | Checks whether the lock focus tracking is supported. |
 | [Camera_ErrorCode OH_CaptureSession_LockFocusTracking(Camera_CaptureSession* session, Camera_Point focusPoint)](#oh_capturesession_lockfocustracking) | - | Lock focus tracking, can be unlocked by [OH_CaptureSession_UnlockFocusTracking](capi-capture-session-h.md#oh_capturesession_unlockfocustracking). |
 | [Camera_ErrorCode OH_CaptureSession_UnlockFocusTracking(Camera_CaptureSession* session)](#oh_capturesession_unlockfocustracking) | - | Unlock focus tracking. |
@@ -628,7 +625,7 @@ Adds a **VideoOutput** instance to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* videoOutput | Pointer to the **VideoOutput** instance to add. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the **VideoOutput** instance to add. |
 
 **Returns**:
 
@@ -653,7 +650,7 @@ Removes a VideoOutput instance from a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* videoOutput | Pointer to the VideoOutput instance to remove. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* videoOutput | Pointer to the VideoOutput instance to remove. |
 
 **Returns**:
 
@@ -1281,7 +1278,7 @@ Obtains the white balance color tint.
 ### OH_CaptureSession_SetColorTint()
 
 ```c
-Camera_ErrorCode OH_CaptureSession_SetColorTint(const Camera_CaptureSession* session, int32_t colorTint)
+Camera_ErrorCode OH_CaptureSession_SetColorTint(Camera_CaptureSession* session, int32_t colorTint)
 ```
 
 **Description**
@@ -1294,14 +1291,14 @@ Sets the white balance color tint.
 
 | Parameter | Description |
 | -- | -- |
-| [const Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to a [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md) instance. |
+| [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to a [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md) instance. |
 | int32_t colorTint | Color tint. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | Result code.<br>         [CAMERA_OK](capi-camera-h.md#camera_errorcode) is returned if the function is called successfully.<br>         [CAMERA_INVALID_ARGUMENT](capi-camera-h.md#camera_errorcode) is returned if an input parameter is missing<br>               or the parameter type is incorrect.<br>         [CAMERA_SESSION_NOT_CONFIG](capi-camera-h.md#camera_errorcode) is returned if the session is not configured when the function is called. |
+| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | <ul><br>         <li>[CAMERA_OK](capi-camera-h.md#camera_errorcode) The operation is successful.</li><br>         <li>[CAMERA_INVALID_ARGUMENT](capi-camera-h.md#camera_errorcode) A parameter is missing or the parameter type is incorrect.</li><br>         <li>[CAMERA_SESSION_NOT_CONFIG](capi-camera-h.md#camera_errorcode) The capture session is not configured.</li><br>         </ul> |
 
 ### OH_CaptureSession_SetExposureMode()
 
@@ -2296,7 +2293,7 @@ Checks whether a **VideoOutput** instance can be added to a session.
 | Parameter | Description |
 | -- | -- |
 | [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to the target Camera_CaptureSession instance. |
-| Camera_VideoOutput* cameraOutput | Pointer to the **VideoOutput** instance to check. |
+| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)* cameraOutput | Pointer to the **VideoOutput** instance to check. |
 | bool* isSuccessful | Pointer to the check result for whether the VideoOutput instance can be added to the session. true** if it can be added to the session, **false** otherwise. |
 
 **Returns**:
@@ -3358,77 +3355,6 @@ Delete the zoom point infos.
 | Type | Description |
 | -- | -- |
 | [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | [CAMERA_OK](capi-camera-h.md#camera_errorcode) if the method call succeeds.<br>         [CAMERA_INVALID_ARGUMENT](capi-camera-h.md#camera_errorcode) if parameter missing or parameter type incorrect. |
-
-### OH_CaptureSession_OnNotificationReceive()
-
-```c
-typedef void (*OH_CaptureSession_OnNotificationReceive)(void* context, OH_Camera_NotificationInfo* notificationInfo)
-```
-
-**Description**
-
-Called when camera notification information is received.
-
-**Since**: 26.0.0
-
-**Parameters**:
-
-| Parameter | Description |
-| -- | -- |
-| (void\* context | Pointer to the user-defined context passed when the callback is registered. |
-| [OH_Camera_NotificationInfo](capi-cameranotificationinfo-oh-camera-notificationinfo.md)\* notificationInfo | Pointer to [OH_Camera_NotificationInfo](capi-cameranotificationinfo-oh-camera-notificationinfo.md) instances. |
-
-### OH_CaptureSession_RegisterNotificationReceivedCallback()
-
-```c
-Camera_ErrorCode OH_CaptureSession_RegisterNotificationReceivedCallback(const Camera_CaptureSession* session, void* context, OH_CaptureSession_OnNotificationReceive callback)
-```
-
-**Description**
-
-Registers a callback to listen for camera notification information received events,can be unRegister by [OH_CaptureSession_UnregisterNotificationReceivedCallback](capi-capture-session-h.md#oh_capturesession_unregisternotificationreceivedcallback).Lifetime and ownership:- The caller must ensure that `context` remains valid until Unregister returns.
-
-**Since**: 26.0.0
-
-**Parameters**:
-
-| Parameter | Description |
-| -- | -- |
-| [const Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to a [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md) instance. |
-| void* context | Pointer to the user-defined context to be passed in the callback. |
-| [OH_CaptureSession_OnNotificationReceive](capi-capture-session-h.md#oh_capturesession_onnotificationreceive) callback | Callback used to receive camera notification information, which is an[OH_CaptureSession_OnNotificationReceive](capi-capture-session-h.md#oh_capturesession_onnotificationreceive) instance. |
-
-**Returns**:
-
-| Type | Description |
-| -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | [CAMERA_OK](capi-camera-h.md#camera_errorcode) : The operation is successful.<br>         [CAMERA_INVALID_ARGUMENT](capi-camera-h.md#camera_errorcode): A parameter is missing or the parameter type is incorrect. |
-
-### OH_CaptureSession_UnregisterNotificationReceivedCallback()
-
-```c
-Camera_ErrorCode OH_CaptureSession_UnregisterNotificationReceivedCallback(const Camera_CaptureSession* session, void* context, OH_CaptureSession_OnNotificationReceive callback)
-```
-
-**Description**
-
-Unregisters the callback used to listen for camera notification information received events.
-
-**Since**: 26.0.0
-
-**Parameters**:
-
-| Parameter | Description |
-| -- | -- |
-| [const Camera_CaptureSession](capi-oh-camera-camera-capturesession.md)* session | Pointer to a [Camera_CaptureSession](capi-oh-camera-camera-capturesession.md) instance. |
-| void* context | Pointer to the user-defined context passed when the callback was registered. |
-| [OH_CaptureSession_OnNotificationReceive](capi-capture-session-h.md#oh_capturesession_onnotificationreceive) callback | Callback to unregister, which is an [OH_CaptureSession_OnNotificationReceive](capi-capture-session-h.md#oh_capturesession_onnotificationreceive) instance. |
-
-**Returns**:
-
-| Type | Description |
-| -- | -- |
-| [Camera_ErrorCode](capi-camera-h.md#camera_errorcode) | [CAMERA_OK](capi-camera-h.md#camera_errorcode) : The operation is successful.<br>         [CAMERA_INVALID_ARGUMENT](capi-camera-h.md#camera_errorcode): A parameter is missing or the parameter type is incorrect. |
 
 ### OH_CaptureSession_IsLockFocusTrackingSupported()
 

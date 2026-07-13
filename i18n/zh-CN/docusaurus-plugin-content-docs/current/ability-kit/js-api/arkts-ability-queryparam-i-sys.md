@@ -104,7 +104,10 @@ queryEntityParam: insightIntent.QueryEntityParam
 userId?: number
 ```
 
-目标用户ID。 如果调用方应用的用户ID与目标用户ID不一致，则需要申请权限： oos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。 取值范围为全体整数。
+目标用户ID。
+如果调用方应用的用户ID与目标用户ID不一致，则需要申请权限：
+oos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。
+取值范围为全体整数。
 
 **类型：** number
 

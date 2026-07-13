@@ -11,7 +11,7 @@ Represents the word selection panel.
 ## Modules to Import
 
 ```TypeScript
-import { selectionManager } from '@ohos.selectionInput.selectionManager';
+import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
 ## hide
@@ -60,7 +60,8 @@ selectionPanel.hide().then(() => {
 moveTo(x: number, y: number): Promise<void>
 ```
 
-Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the result.
+Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the
+result.
 
 **Since:** 20
 
@@ -115,7 +116,8 @@ try {
 off(type: 'destroyed', callback?: Callback<void>): void
 ```
 
-Unregisters the callback used to listen for the destroy event of the word selection panel. This API uses an asynchronous callback to return the result.
+Unregisters the callback used to listen for the destroy event of the word selection panel. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 24
 
@@ -149,7 +151,8 @@ try {
 off(type: 'hidden', callback?: Callback<void>): void
 ```
 
-Unregisters the callback used to listen for the hide event of the word selection panel. This API uses an asynchronous callback to return the result.
+Unregisters the callback used to listen for the hide event of the word selection panel. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 24
 
@@ -183,7 +186,8 @@ try {
 on(type: 'destroyed', callback: Callback<void>): void
 ```
 
-Registers a callback to listen for the destroy event of the word selection panel. This API uses an asynchronous callback to return the result.
+Registers a callback to listen for the destroy event of the word selection panel. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 24
 
@@ -219,7 +223,8 @@ try {
 on(type: 'hidden', callback: Callback<void>): void
 ```
 
-Registers a callback to listen for the hide event of the word selection panel. This API uses an asynchronous callback to return the result.
+Registers a callback to listen for the hide event of the word selection panel. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 24
 
@@ -349,7 +354,8 @@ selectionPanel.show().then(() => {
 startMoving(): Promise<void>
 ```
 
-Moves the word selection panel by dragging. This API uses a promise to return the result. This API must be written in the **onTouch** callback and the event type must be **TouchType.Down**.
+Moves the word selection panel by dragging. This API uses a promise to return the result. This API must be
+written in the **onTouch** callback and the event type must be **TouchType.Down**.
 
 **Since:** 24
 

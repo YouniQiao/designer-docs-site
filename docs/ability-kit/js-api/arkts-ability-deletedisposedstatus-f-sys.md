@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appControl } from '@ohos.bundle.appControl';
+import { appControl } from '@kit.AbilityKit';
 ```
 
 ## deleteDisposedStatus
@@ -12,7 +12,8 @@ import { appControl } from '@ohos.bundle.appControl';
 function deleteDisposedStatus(appId: string, callback: AsyncCallback<void>): void
 ```
 
-Deletes the disposed status for an application. This API uses an asynchronous callback to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Deletes the disposed status for an application. This API uses an asynchronous callback to return the result. If the
+operation is successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 
@@ -26,8 +27,8 @@ Deletes the disposed status for an application. This API uses an asynchronous ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appId | string | Yes | appId or appIdentifier of the target application. If a rule is set using appId, it mustbe deleted using appId; the same principle applies to appIdentifier.<br>**NOTE**<br> **appId** is the uniqueidentifier of an application and is determined by the bundle name and signature information of the application.For details about how to obtain **appId**, see[How do I obtain appId from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appid-from-application-information).<br> [appIdentifier](arkts-ability-signatureinfo-i.md#signatureinfo) is also the unique identifier of an app.For details, see[What is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier). Fordetails about how to obtain **appIdentifier**, see[How do I obtain appIdentifier from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appidentifier-from-application-information). |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
+| appId | string | Yes | appId or appIdentifier of the target application. If a rule is set using appId, it mustbe deleted using appId; the same principle applies to appIdentifier.<br>**NOTE**<br> **appId** is the uniqueidentifier of an application and is determined by the bundle name and signature information of the application.For details about how to obtain **appId**, see[How do I obtain appId from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appid-from-application-information).<br> [appIdentifier](arkts-ability-signatureinfo-i.md) is also the unique identifier of an app.For details, see[What is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier). Fordetails about how to obtain **appIdentifier**, see[How do I obtain appIdentifier from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appidentifier-from-application-information). |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -68,7 +69,8 @@ try {
 function deleteDisposedStatus(appId: string): Promise<void>
 ```
 
-Deletes the disposed status for an application. This API uses a promise to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Deletes the disposed status for an application. This API uses a promise to return the result. If the operation is
+successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 
@@ -82,7 +84,7 @@ Deletes the disposed status for an application. This API uses a promise to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| appId | string | Yes | appId or appIdentifier of the target application. If a rule is set using appId, it mustbe deleted using appId; the same principle applies to appIdentifier.<br>**NOTE**<br> **appId** is the uniqueidentifier of an application and is determined by the bundle name and signature information of the application.For details about how to obtain **appId**, see[How do I obtain appId from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appid-from-application-information).<br> [appIdentifier](arkts-ability-signatureinfo-i.md#signatureinfo) is also the unique identifier of an app.For details, see[What is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier). Fordetails about how to obtain **appIdentifier**, see[How do I obtain appIdentifier from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appidentifier-from-application-information). |
+| appId | string | Yes | appId or appIdentifier of the target application. If a rule is set using appId, it mustbe deleted using appId; the same principle applies to appIdentifier.<br>**NOTE**<br> **appId** is the uniqueidentifier of an application and is determined by the bundle name and signature information of the application.For details about how to obtain **appId**, see[How do I obtain appId from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appid-from-application-information).<br> [appIdentifier](arkts-ability-signatureinfo-i.md) is also the unique identifier of an app.For details, see[What is appIdentifier](../../../../quick-start/common_problem_of_application.md#what-is-appidentifier). Fordetails about how to obtain **appIdentifier**, see[How do I obtain appIdentifier from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appidentifier-from-application-information). |
 
 **Return value:**
 

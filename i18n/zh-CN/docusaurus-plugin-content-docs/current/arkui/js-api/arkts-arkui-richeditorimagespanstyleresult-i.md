@@ -48,7 +48,8 @@ objectFit: ImageFit
 size: [number, number]
 ```
 
-图片的宽度和高度，单位为px。默认值：size的默认值与objectFit的值有关，不同的objectFit值对应的size默认值也不同。objectFit的值为Cover时，图片高度为组件高度减去组件上下内边距，图片宽度为组件宽 度减去组件左右内边距。
+图片的宽度和高度，单位为px。默认值：size的默认值与objectFit的值有关，不同的objectFit值对应的size默认值也不同。objectFit的值为Cover时，图片高度为组件高度减去组件上下内边距，图片宽度为组件宽
+度减去组件左右内边距。
 
 **类型：** [number, number]
 

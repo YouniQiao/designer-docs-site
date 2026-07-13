@@ -9,7 +9,7 @@ HiRetrieval functionality config.
 ## Modules to Import
 
 ```TypeScript
-import { hiRetrieval } from '@ohos.hiviewdfx.hiRetrieval';
+import { hiRetrieval } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## deviceModel
@@ -18,7 +18,8 @@ import { hiRetrieval } from '@ohos.hiviewdfx.hiRetrieval';
 deviceModel: string
 ```
 
-Custom device model set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
+Custom device model set by developers. No restrictions on format or character types,
+maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 
@@ -34,7 +35,8 @@ Custom device model set by developers. No restrictions on format or character ty
 deviceType: string
 ```
 
-Custom device type set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
+Custom device type set by developers. No restrictions on format or character types,
+maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 
@@ -50,7 +52,8 @@ Custom device type set by developers. No restrictions on format or character typ
 userType: string
 ```
 
-Custom user type set by developers. No restrictions on format or character types, maximum length is 128 characters and excess characters will be truncated.
+Custom user type set by developers. No restrictions on format or character types,
+maximum length is 128 characters and excess characters will be truncated.
 
 **Type:** string
 

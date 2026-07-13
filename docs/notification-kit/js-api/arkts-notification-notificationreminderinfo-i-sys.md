@@ -11,7 +11,7 @@ Describes the information about the application reminder.
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## bundle
@@ -52,7 +52,8 @@ Reminder flag.
 silentReminderEnabled: boolean
 ```
 
-Whether the silent reminder is enabled. The value **true** indicates that the silent reminder is enabled, and the value **false** indicates the opposite.
+Whether the silent reminder is enabled. The value **true** indicates that the silent reminder is enabled, and
+the value **false** indicates the opposite.
 
 **Type:** boolean
 

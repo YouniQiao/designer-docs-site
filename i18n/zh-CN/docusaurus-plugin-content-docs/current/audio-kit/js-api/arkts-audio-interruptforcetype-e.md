@@ -1,10 +1,11 @@
 # InterruptForceType
 
-```TypeScript
-enum InterruptForceType
-```
+表示音频打断类型的枚举。
 
-Enumerates the types of force that causes audio interruption. The force type is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received. This type specifies whether audio interruption is forcibly performed by the system. The operation information (such as audio pause or stop) can be obtained through [InterruptHint]audio.InterruptHint. For details about the audio interruption policy, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
+当用户监听到音频中断（即收到[InterruptEvent](arkts-audio-interruptevent-i.md)事件）时，获取此信息。
+
+此类型表示音频打断是否已由系统强制执行，具体操作信息（如音频暂停、停止等）可通过[InterruptHint](arkts-audio-interrupthint-e.md)获取。关于音频打断策略的详细说明可参考文档
+[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。
 
 **起始版本：** 9
 
@@ -16,11 +17,11 @@ Enumerates the types of force that causes audio interruption. The force type is 
 INTERRUPT_FORCE = 0
 ```
 
-The operation is forcibly performed by the system.
+强制打断类型，即具体操作已由系统强制执行。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -30,11 +31,11 @@ The operation is forcibly performed by the system.
 INTERRUPT_SHARE = 1
 ```
 
-The operation will not be performed by the system. [InterruptHint]audio.InterruptHint is used to provide recommended operations for the application, and the application can determine the next processing mode.
+共享打断类型，即系统不执行具体操作，通过[InterruptHint](arkts-audio-interrupthint-e.md)建议并提示应用操作，应用可自行决策下一步处理方式。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 

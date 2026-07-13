@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { agentManager } from '@ohos.app.agent.agentManager';
+import { agentManager } from '@kit.AbilityKit';
 ```
 
 ## disconnectServiceExtensionAbility
@@ -12,7 +12,8 @@ import { agentManager } from '@ohos.app.agent.agentManager';
 function disconnectServiceExtensionAbility(context: AgentExtensionContext, connectId: number): Promise<void>
 ```
 
-Disconnects an AgentExtensionAbility from a ServiceExtensionAbility, in contrast to {@link connectServiceExtensionAbility}.
+Disconnects an AgentExtensionAbility from a ServiceExtensionAbility, in contrast to
+{@link connectServiceExtensionAbility}.
 
 **Since:** 26.0.0
 

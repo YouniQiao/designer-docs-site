@@ -1,8 +1,10 @@
 # ExpandedMenuOptions
 
-Describes the expanded drop-down menu options. Inherits from [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md#menuitemoptions).
+Describes the expanded drop-down menu options.
 
-**Inheritance/Implementation:** ExpandedMenuOptions extends [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md#menuitemoptions)
+Inherits from [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md).
+
+**Inheritance/Implementation:** ExpandedMenuOptions extends [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md)
 
 **Since:** 11
 
@@ -11,7 +13,7 @@ Describes the expanded drop-down menu options. Inherits from [MenuItemOptions](.
 ## Modules to Import
 
 ```TypeScript
-import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@ohos.arkui.advanced.SelectionMenu';
+import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@kit.ArkUI';
 ```
 
 ## action

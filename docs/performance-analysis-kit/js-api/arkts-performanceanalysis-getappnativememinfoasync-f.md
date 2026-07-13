@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getAppNativeMemInfoAsync
@@ -12,7 +12,8 @@ import { hidebug } from '@ohos.hidebug';
 function getAppNativeMemInfoAsync(): Promise<NativeMemInfo>
 ```
 
-Obtains the memory information of application processes by reading the data of the **\/proc/{pid}/smaps_rollup** and **\/proc/{pid}/statm** nodes. This API uses a promise to return the result.
+Obtains the memory information of application processes by reading the data of the **\/proc/{pid}/smaps_rollup** and
+**\/proc/{pid}/statm** nodes. This API uses a promise to return the result.
 
 **Since:** 20
 

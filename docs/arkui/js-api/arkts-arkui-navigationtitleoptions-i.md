@@ -30,7 +30,13 @@ Background blur style of the title bar. If this parameter is not set, the backgr
 backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-Options for the title bar background blur style. **NOTE** This parameter is only effective when **backgroundBlurStyle** is set. Avoid using this API in conjunction with **backgroundEffect**.
+Options for the title bar background blur style.
+
+**NOTE**
+
+This parameter is only effective when **backgroundBlurStyle** is set.
+
+Avoid using this API in conjunction with **backgroundEffect**.
 
 **Type:** BackgroundBlurStyleOptions
 
@@ -66,7 +72,11 @@ Background color of the title bar. If this parameter is not set, the default col
 backgroundEffect?: BackgroundEffectOptions
 ```
 
-Title bar background properties, including blur radius, brightness, saturation, and color. **NOTE** Avoid using this API in conjunction with **backgroundBlurStyleOptions**.
+Title bar background properties, including blur radius, brightness, saturation, and color.
+
+**NOTE**
+
+Avoid using this API in conjunction with **backgroundBlurStyleOptions**.
 
 **Type:** BackgroundEffectOptions
 
@@ -84,7 +94,9 @@ Title bar background properties, including blur radius, brightness, saturation, 
 barStyle?: BarStyle
 ```
 
-Layout style of the title bar. Default value: **BarStyle.STANDARD**
+Layout style of the title bar.
+
+Default value: **BarStyle.STANDARD**
 
 **Type:** BarStyle
 
@@ -104,7 +116,17 @@ Layout style of the title bar. Default value: **BarStyle.STANDARD**
 enableHoverMode?: boolean
 ```
 
-Whether to respond when the device is in semi-folded mode. Observe the following when using this API: 1. Make sure the **Navigation** component is in full screen. 2. When the title bar is in [Free](arkts-arkui-navigationtitlemode-e.md#navigationtitlemode) display mode or in [STANDARD](arkts-arkui-barstyle-e.md#barstyle) layout style, this API has no effect. **true**: yes; **false**: no Default value: **false**
+Whether to respond when the device is in semi-folded mode.
+
+Observe the following when using this API:
+
+1. Make sure the **Navigation** component is in full screen.
+2. When the title bar is in [Free](arkts-arkui-navigationtitlemode-e.md) display mode or in [STANDARD](arkts-arkui-barstyle-e.md) layout
+style, this API has no effect.
+
+**true**: yes; **false**: no
+
+Default value: **false**
 
 **Type:** boolean
 
@@ -124,7 +146,15 @@ Whether to respond when the device is in semi-folded mode. Observe the following
 mainTitleModifier?: TextModifier
 ```
 
-Main title attribute modifier. 1. Attribute settings configured by this modifier will override the system's default attribute settings. For example, if the modifier is used to set font size attributes, such as **fontSize**, **maxFontSize**, and **minFontSize**, the settings will take precedence over the system's default settings for size-related attributes. 2. If no modifier is used or an invalid value is set, the system reverts to its default settings. 3. In [Free](arkts-arkui-navigationtitlemode-e.md#navigationtitlemode) mode, setting the font size will disable the effect where the main title's size changes in response to content scrolling.
+Main title attribute modifier.
+
+1. Attribute settings configured by this modifier will override the system's default attribute settings.
+For example, if the modifier is used to set font size attributes, such as **fontSize**, **maxFontSize**,
+and **minFontSize**, the settings will take precedence over the system's default settings for
+size-related attributes.
+2. If no modifier is used or an invalid value is set, the system reverts to its default settings.
+3. In [Free](arkts-arkui-navigationtitlemode-e.md) mode, setting the font size will disable the effect where the main title's
+size changes in response to content scrolling.
 
 **Type:** TextModifier
 
@@ -142,7 +172,19 @@ Main title attribute modifier. 1. Attribute settings configured by this modifier
 paddingEnd?: LengthMetrics
 ```
 
-Padding at the end of the title bar. Only supported in one of the following scenarios: 1. Using a non-custom menu, that is, the [menu value](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder)) is Array<NavigationMenuItem> 2. Using a non-custom menu without a menu in the upper right corner, that is, the [title value](NavigationAttribute#title) type is **ResourceStr** or **NavigationCommonTitle** Default value: LengthMetrics.resource(`$r('sys.float.margin_right')`)
+Padding at the end of the title bar.
+
+Only supported in one of the following scenarios:
+
+1. Using a non-custom menu, that is, the
+[menu value](NavigationAttribute#menus(value: Array<NavigationMenuItem> | CustomBuilder))
+is Array<NavigationMenuItem>
+2. Using a non-custom menu without a menu in the upper right corner, that is,
+the [title value](NavigationAttribute#title) type is **ResourceStr** or **NavigationCommonTitle**
+
+Default value:
+
+LengthMetrics.resource(`$r('sys.float.margin_right')`)
 
 **Type:** LengthMetrics
 
@@ -162,7 +204,16 @@ Padding at the end of the title bar. Only supported in one of the following scen
 paddingStart?: LengthMetrics
 ```
 
-Padding at the start of the title bar. Only supported in one of the following scenarios: 1. Displaying the back icon, that is, [hideBackButton](NavigationAttribute#hideBackButton) is **false** 2. Using a non-custom title, that is, the [title value](NavigationAttribute#title) type is **ResourceStr** or **NavigationCommonTitle** Default value: LengthMetrics.resource(**$r('sys.float.margin_left')**)
+Padding at the start of the title bar.
+
+Only supported in one of the following scenarios:
+
+1. Displaying the back icon, that is, [hideBackButton](NavigationAttribute#hideBackButton) is **false**
+2. Using a non-custom title, that is, the [title value](NavigationAttribute#title) type is **ResourceStr** or **NavigationCommonTitle**
+
+Default value:
+
+LengthMetrics.resource(**$r('sys.float.margin_left')**)
 
 **Type:** LengthMetrics
 
@@ -200,7 +251,13 @@ Title scroll blur style.
 subTitleModifier?: TextModifier
 ```
 
-Subtitle attribute modifier. 1. Attribute settings configured by this modifier will override the system's default attribute settings. For example, if the modifier is used to set font size attributes, such as **fontSize**, **maxFontSize**, and **minFontSize**, the settings will take precedence over the system's default settings for size-related attributes. 2. If no modifier is used or an invalid value is set, the system reverts to its default settings.
+Subtitle attribute modifier.
+
+1. Attribute settings configured by this modifier will override the system's default attribute settings.
+For example, if the modifier is used to set font size attributes, such as **fontSize**, **maxFontSize**,
+and **minFontSize**, the settings will take precedence over the system's default settings
+for size-related attributes.
+2. If no modifier is used or an invalid value is set, the system reverts to its default settings.
 
 **Type:** TextModifier
 
@@ -218,7 +275,10 @@ Subtitle attribute modifier. 1. Attribute settings configured by this modifier w
 systemMaterial?: Material
 ```
 
-Set system-styled materials for the TitleBar. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of the titleBar. Device Behavior Differences:The effect of the same material may vary across different devices depending on their computing power.
+Set system-styled materials for the TitleBar. Different materials have different effects, which can influence
+the backgroundColor, border, shadow, and other visual attributes of the titleBar.
+Device Behavior Differences:The effect of the same material may vary across different devices depending on
+their computing power.
 
 **Type:** Material
 

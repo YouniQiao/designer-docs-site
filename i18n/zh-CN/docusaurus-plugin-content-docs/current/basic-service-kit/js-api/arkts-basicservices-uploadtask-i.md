@@ -1,6 +1,9 @@
 # UploadTask
 
-上传任务，使用下列方法前，需要先获取UploadTask对象，promise形式通过 [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2)获取，callback形式通过 [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1) 获取。
+上传任务，使用下列方法前，需要先获取UploadTask对象，promise形式通过
+[request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2)获取，callback形式通过
+[request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1)
+获取。
 
 **起始版本：** 6
 
@@ -12,7 +15,11 @@
 delete(callback: AsyncCallback<boolean>): void
 ```
 
-移除上传的任务，使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+移除上传的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -51,7 +58,11 @@ uploadTask.delete((err: BusinessError, result: boolean) => {
 delete(): Promise<boolean>
 ```
 
-移除上传的任务，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+移除上传的任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -105,7 +116,7 @@ off(type: 'progress', callback?: (uploadedSize: number, totalSize: number) => vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -148,7 +159,7 @@ off(type: 'headerReceive', callback?: (header: object) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -191,7 +202,7 @@ off(type: 'complete' | 'fail', callback?: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | the parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | the parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -259,7 +270,7 @@ off(type: 'complete' | 'fail', callback?: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | the parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | the parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -310,7 +321,11 @@ uploadTask.off('fail');
 on(type: 'progress', callback: (uploadedSize: number, totalSize: number) => void): void
 ```
 
-订阅上传任务进度事件，使用callback异步回调。 > **说明：** > > 应用处于后台时，为满足功耗性能要求，不支持调用此接口进行回调。
+订阅上传任务进度事件，使用callback异步回调。
+
+> **说明：**
+>
+> 应用处于后台时，为满足功耗性能要求，不支持调用此接口进行回调。
 
 **起始版本：** 6
 
@@ -327,7 +342,7 @@ on(type: 'progress', callback: (uploadedSize: number, totalSize: number) => void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -362,7 +377,7 @@ on(type: 'headerReceive', callback: (header: object) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -397,7 +412,7 @@ on(type: 'complete' | 'fail', callback: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -441,7 +456,7 @@ on(type: 'complete' | 'fail', callback: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -468,7 +483,12 @@ uploadTask.on('fail', upFailCallback);
 remove(callback: AsyncCallback<boolean>): void
 ```
 
-移除上传的任务，使用callback异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [delete](arkts-basicservices-uploadtask-i.md#delete-1)替代。
+移除上传的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [delete](arkts-basicservices-uploadtask-i.md#delete-1)替代。
 
 **起始版本：** 6
 
@@ -513,7 +533,11 @@ uploadTask.remove((err: BusinessError, result: boolean) => {
 remove(): Promise<boolean>
 ```
 
-移除上传的任务，使用Promise异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用[delete](arkts-basicservices-uploadtask-i.md#delete-2)替代。
+移除上传的任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用[delete](arkts-basicservices-uploadtask-i.md#delete-2)替代。
 
 **起始版本：** 6
 

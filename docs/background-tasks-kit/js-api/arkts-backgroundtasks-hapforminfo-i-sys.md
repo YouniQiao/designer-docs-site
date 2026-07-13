@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usageStatistics } from '@ohos.resourceschedule.usageStatistics';
+import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
 ## count
@@ -66,7 +66,8 @@ The form id.
 formLastUsedTime: number
 ```
 
-The last time when the form was accessed, in milliseconds. <br> Unit:ms
+The last time when the form was accessed, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 

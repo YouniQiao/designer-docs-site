@@ -9,7 +9,7 @@ Manager OPP server profile.
 ## Modules to Import
 
 ```TypeScript
-import { opp } from '@ohos.bluetooth.opp';
+import { opp } from '@kit.ConnectivityKit';
 ```
 
 ## cancelTransfer
@@ -72,7 +72,9 @@ try {
 getCurrentTransferInformation(): Promise<OppTransferInformation>
 ```
 
-Obtains the information about the file that is being transferred. On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
+Obtains the information about the file that is being transferred.
+On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC,
+the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
 
 **Since:** 16
 
@@ -219,7 +221,9 @@ try {
 on(type: 'transferStateChange', callback: Callback<OppTransferInformation>): void
 ```
 
-Subscribe the event reported when the file transfer status changes. On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
+Subscribe the event reported when the file transfer status changes.
+On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC,
+the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
 
 **Since:** 16
 
@@ -283,7 +287,9 @@ try {
 on(type: 'receiveIncomingFile', callback: Callback<OppTransferInformation>): void
 ```
 
-Subscribe to the event of receiving a file transfer request. On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
+Subscribe to the event of receiving a file transfer request.
+On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC,
+the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
 
 **Since:** 16
 

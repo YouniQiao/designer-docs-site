@@ -12,7 +12,8 @@ Defines the options of BackgroundEffect
 adaptiveColor?: AdaptiveColor
 ```
 
-Adaptive color mode used for the background blur effect. Default value: **DEFAULT** . When set to **AVERAGE**, the adaptive color mode takes effect only when the color has transparency.
+Adaptive color mode used for the background blur effect. Default value: **DEFAULT** . When set to **AVERAGE**, the
+adaptive color mode takes effect only when the color has transparency.
 
 **Type:** AdaptiveColor
 
@@ -53,7 +54,9 @@ Grayscale blur.
 brightness?: number
 ```
 
-Brightness. <br>Value range: [0, +∞). <br>Default value: **1** Recommended value range: [0, 2].
+Brightness.
+<br>Value range: [0, +∞).
+<br>Default value: **1** Recommended value range: [0, 2].
 
 **Type:** number
 
@@ -93,7 +96,9 @@ Color.
 inactiveColor?: ResourceColor
 ```
 
-Background color when the blur effect does not take effect. This parameter must be used together with the **policy** parameter. When **policy** is set to a value that disables the blur effect, the blur effect on the components is removed. If **inactiveColor** is specified, it is applied as the component background color.
+Background color when the blur effect does not take effect. This parameter must be used together with the
+**policy** parameter. When **policy** is set to a value that disables the blur effect, the blur effect on the
+components is removed. If **inactiveColor** is specified, it is applied as the component background color.
 
 **Type:** ResourceColor
 
@@ -133,7 +138,9 @@ Blur activation policy.
 radius: number
 ```
 
-Blur radius. Value range: [0, +∞). Default value: **0**.
+Blur radius.
+Value range: [0, +∞).
+Default value: **0**.
 
 **Type:** number
 
@@ -151,7 +158,9 @@ Blur radius. Value range: [0, +∞). Default value: **0**.
 saturation?: number
 ```
 
-Saturation. Value range: [0, +∞). Recommended value range: [0, 50].
+Saturation.
+Value range: [0, +∞).
+Recommended value range: [0, 50].
 
 **Type:** number
 

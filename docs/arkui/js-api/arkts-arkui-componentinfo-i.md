@@ -1,6 +1,7 @@
 # ComponentInfo
 
-Implements a **ComponentInfo** object, which provides the size, position, translation, scaling, rotation, and affine matrix information of the component.
+Implements a **ComponentInfo** object, which provides the size, position, translation, scaling, rotation, and
+affine matrix information of the component.
 
 **Since:** 10
 
@@ -9,7 +10,7 @@ Implements a **ComponentInfo** object, which provides the size, position, transl
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## localOffset

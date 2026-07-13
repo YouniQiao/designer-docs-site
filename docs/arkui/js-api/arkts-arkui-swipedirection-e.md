@@ -26,7 +26,8 @@ Swiping disabled.
 Horizontal
 ```
 
-Horizontal direction. The gesture is triggered when the angle between the finger moving direction and the x-axis is less than 45 degrees.
+Horizontal direction. The gesture is triggered when the angle between the finger moving direction and the x-axis is
+less than 45 degrees.
 
 **Since:** 8
 
@@ -40,7 +41,8 @@ Horizontal direction. The gesture is triggered when the angle between the finger
 Vertical
 ```
 
-Vertical direction. The gesture is triggered when the angle between the finger moving direction and the y-axis is less than 45 degrees.
+Vertical direction. The gesture is triggered when the angle between the finger moving direction and the y-axis is
+less than 45 degrees.
 
 **Since:** 8
 

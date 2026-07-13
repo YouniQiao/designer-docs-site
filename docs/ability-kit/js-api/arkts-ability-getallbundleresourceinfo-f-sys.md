@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
+import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
 ## getAllBundleResourceInfo
@@ -12,7 +12,8 @@ import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
 function getAllBundleResourceInfo(resourceFlags: number, callback: AsyncCallback<Array<BundleResourceInfo>>): void
 ```
 
-Obtains the bundle resource information of all applications based on the given resource flags. This API uses an asynchronous callback to return the result.
+Obtains the bundle resource information of all applications based on the given resource flags. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -27,7 +28,7 @@ Obtains the bundle resource information of all applications based on the given r
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | resourceFlags | number | Yes | Type of the resource information to obtain. |
-| callback | AsyncCallback&lt;Array&lt;BundleResourceInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result. If the information is successfully obtained, **err** is **null** and **data** is aBundleResourceInfo array. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;BundleResourceInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result. If the information is successfully obtained, **err** is **null** and **data** is aBundleResourceInfo array. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -44,7 +45,8 @@ Obtains the bundle resource information of all applications based on the given r
 function getAllBundleResourceInfo(resourceFlags: number): Promise<Array<BundleResourceInfo>>
 ```
 
-Obtains the bundle resource information of all applications based on the given resource flags. This API uses a promise to return the result.
+Obtains the bundle resource information of all applications based on the given resource flags. This API uses a
+promise to return the result.
 
 **Since:** 11
 

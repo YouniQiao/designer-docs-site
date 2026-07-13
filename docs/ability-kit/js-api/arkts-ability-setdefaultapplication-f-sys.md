@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
+import { defaultAppManager } from '@kit.AbilityKit';
 ```
 
 ## setDefaultApplication
@@ -12,7 +12,10 @@ import { defaultAppManager } from '@ohos.bundle.defaultAppManager';
 function setDefaultApplication(type: string, elementName: ElementName, userId: number, callback: AsyncCallback<void>) : void
 ```
 
-Sets the default application for a user based on a system-defined application type, a file type that complies with the media type format (either specified by **type** or **subtype**), or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). This API uses an asynchronous callback to return the result.
+Sets the default application for a user based on a system-defined application type, a file type that complies with
+the media type format (either specified by **type** or **subtype**), or a
+[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -26,10 +29,10 @@ Sets the default application for a user based on a system-defined application ty
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). |
+| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). |
 | elementName | ElementName | Yes | Information about the element to be set as the default application. |
 | userId | number | Yes | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -96,7 +99,10 @@ defaultAppManager.setDefaultApplication(uniformTypeDescriptor.UniformDataType.AV
 function setDefaultApplication(type: string, elementName: ElementName, callback: AsyncCallback<void>) : void
 ```
 
-Sets the default application based on a system-defined application type, a file type that complies with the media type format (either specified by **type** or **subtype**), or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). This API uses an asynchronous callback to return the result.
+Sets the default application based on a system-defined application type, a file type that complies with the media
+type format (either specified by **type** or **subtype**), or a
+[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -110,9 +116,9 @@ Sets the default application based on a system-defined application type, a file 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). |
+| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). |
 | elementName | ElementName | Yes | Information about the element to be set as the default application. |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**. otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -177,7 +183,10 @@ defaultAppManager.setDefaultApplication(uniformTypeDescriptor.UniformDataType.AV
 function setDefaultApplication(type: string, elementName: ElementName, userId?: number) : Promise<void>
 ```
 
-Sets the default application based on a system-defined application type, a file type that complies with the media type format (either specified by **type** or **subtype**), or a [uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). This API uses a promise to return the result.
+Sets the default application based on a system-defined application type, a file type that complies with the media
+type format (either specified by **type** or **subtype**), or a
+[uniform data type](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). This API uses a promise to
+return the result.
 
 **Since:** 9
 
@@ -191,7 +200,7 @@ Sets the default application based on a system-defined application type, a file 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md#uniformtypedescriptor). |
+| type | string | Yes | Type of the target application. It must be set to a value defined by[ApplicationType](arkts-ability-applicationtype-e.md), a file type thatcomplies with the media type format, or a value defined by[UniformDataType](../../apis-arkdata/arkts-apis/arkts-data-uniformtypedescriptor.md). |
 | elementName | ElementName | Yes | Information about the element to be set as the default application. |
 | userId | number | No | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1). The default value is the user ID of the caller. |
 

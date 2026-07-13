@@ -1,6 +1,7 @@
 # X509TrustAnchor
 
-Represents an X.509 trust anchor, which is used to verify the certificate chain. The certificate or public key in the trust anchor is used as the trusted root to verify the certificate chain.
+Represents an X.509 trust anchor, which is used to verify the certificate chain. The certificate or public key in
+the trust anchor is used as the trusted root to verify the certificate chain.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Represents an X.509 trust anchor, which is used to verify the certificate chain.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## CACert
@@ -18,7 +19,8 @@ import { cert } from '@ohos.security.cert';
 CACert?: X509Cert
 ```
 
-Trusted CA certificate. If **CACert** is set, only **CACert** is used to validate the certificate chain. **CAPubKey** and **CASubject** are not used.
+Trusted CA certificate. If **CACert** is set, only **CACert** is used to validate the certificate chain.
+**CAPubKey** and **CASubject** are not used.
 
 **Type:** X509Cert
 
@@ -34,7 +36,8 @@ Trusted CA certificate. If **CACert** is set, only **CACert** is used to validat
 CAPubKey?: Uint8Array
 ```
 
-Public key of the trusted CA certificate, in DER format. This parameter takes effect only when **CACert** is not set.
+Public key of the trusted CA certificate, in DER format. This parameter takes effect only when **CACert** is not
+set.
 
 **Type:** Uint8Array
 
@@ -50,7 +53,9 @@ Public key of the trusted CA certificate, in DER format. This parameter takes ef
 CASubject?: Uint8Array
 ```
 
-Subject of the trusted CA certificate, in DER format. This parameter takes effect only when **CAPubKey** is set. The validation object is determined based on the **CAPubKey** type (self-signed or upper-level), and can be the subject or issuer of the root certificate.
+Subject of the trusted CA certificate, in DER format. This parameter takes effect only when **CAPubKey** is set.
+The validation object is determined based on the **CAPubKey** type (self-signed or upper-level), and can be the
+subject or issuer of the root certificate.
 
 **Type:** Uint8Array
 

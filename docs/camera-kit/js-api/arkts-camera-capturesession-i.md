@@ -1,12 +1,14 @@
 # CaptureSession
 
-Implements a capture session, which saves all [CameraInput]camera.CameraInput and [CameraOutput]camera.CameraOutput instances required to run the camera and requests the camera to complete shooting or video recording.
+Implements a capture session, which saves all [CameraInput](arkts-camera-camerainput-i.md) and
+[CameraOutput](arkts-camera-cameraoutput-i.md) instances required to run the camera and requests the camera
+to complete shooting or video recording.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.VideoSession
+**Substitutes:** [VideoSession](arkts-camera-videosession-i.md)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -22,13 +24,13 @@ import { camera } from '@kit.CameraKit';
 addInput(cameraInput: CameraInput): void
 ```
 
-Adds a [CameraInput]camera.CameraInput instance to this session.
+Adds a [CameraInput](arkts-camera-camerainput-i.md) instance to this session.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.addInput
+**Substitutes:** [addInput](arkts-camera-session-i.md#addinput-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -42,8 +44,8 @@ Adds a [CameraInput]camera.CameraInput instance to this session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400101 | Parameter missing or parameter type incorrect. |
-| 7400102 | Operation not allowed. |
+| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
 ## addOutput
 
@@ -51,13 +53,13 @@ Adds a [CameraInput]camera.CameraInput instance to this session.
 addOutput(cameraOutput: CameraOutput): void
 ```
 
-Adds a [CameraOutput]camera.CameraOutput instance to this session.
+Adds a [CameraOutput](arkts-camera-cameraoutput-i.md) instance to this session.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.addOutput
+**Substitutes:** [addOutput](arkts-camera-session-i.md#addoutput-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -71,8 +73,8 @@ Adds a [CameraOutput]camera.CameraOutput instance to this session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400101 | Parameter missing or parameter type incorrect. |
-| 7400102 | Operation not allowed. |
+| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
 ## beginConfig
 
@@ -86,7 +88,7 @@ Starts configuration for the session.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.beginConfig
+**Substitutes:** [beginConfig](arkts-camera-session-i.md#beginconfig-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -94,7 +96,7 @@ Starts configuration for the session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400105 | Session config locked. |
+| [7400105](../errorcode-camera.md#7400105-session-configuration-locked) | Session config locked. |
 
 ## commitConfig
 
@@ -108,7 +110,7 @@ Commits the configuration for this session. This API uses an asynchronous callba
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.commitConfig(callback:
+**Substitutes:** commitConfig(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -116,14 +118,14 @@ Commits the configuration for this session. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the configuration is  successfully committed, err is undefined; otherwise, err is an error object with an error code  defined in [CameraErrorCode]camera.CameraErrorCode. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the configuration issuccessfully committed, **err** is **undefined**; otherwise, **err** is an error object with an error codedefined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400102 | Operation not allowed. |
-| 7400201 | Camera service fatal error. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## commitConfig
 
@@ -137,7 +139,7 @@ Commits the configuration for this session. This API uses a promise to return th
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.commitConfig()
+**Substitutes:** [commitConfig()](arkts-camera-session-i.md#commitconfig-2)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -145,14 +147,14 @@ Commits the configuration for this session. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400102 | Operation not allowed. |
-| 7400201 | Camera service fatal error. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## getActiveVideoStabilizationMode
 
@@ -166,7 +168,7 @@ Obtains the video stabilization mode in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Stabilization.getActiveVideoStabilizationMode
+**Substitutes:** [getActiveVideoStabilizationMode](arkts-camera-stabilization-i.md#getactivevideostabilizationmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -174,69 +176,13 @@ Obtains the video stabilization mode in use.
 
 | Type | Description |
 | --- | --- |
-| VideoStabilizationMode | Video stabilization mode obtained. If the operation fails, an error code  defined in [CameraErrorCode]camera.CameraErrorCode is returned. |
+| VideoStabilizationMode | Video stabilization mode obtained. If the operation fails, an error codedefined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
-
-## getBeauty
-
-```TypeScript
-getBeauty(type: BeautyType): number
-```
-
-Obtains the level of the beauty type in use.
-
-**Since:** 10
-
-**Deprecated since:** 11
-
-**Substitute:** camera.Beauty.getBeauty
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| type | BeautyType | Yes | Beauty type. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| number | the beauty effect in use. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7400103 | Session not config. |
-
-**Example**
-
-```TypeScript
-function getBeauty(captureSession: camera.CaptureSession): number {
-  const invalidValue: number = -1;
-  let beautyTypes: Array<camera.BeautyType> = captureSession.getSupportedBeautyTypes();
-  if (beautyTypes === undefined || beautyTypes.length <= 0) {
-    return invalidValue;
-  }
-  let beautyLevels: Array<number> = captureSession.getSupportedBeautyRange(beautyTypes[0]);
-  if (beautyLevels === undefined || beautyLevels.length <= 0) {
-    return invalidValue;
-  }
-  captureSession.setBeauty(beautyTypes[0], beautyLevels[0]);
-  let beautyLevel: number = captureSession.getBeauty(beautyTypes[0]);
-  return beautyLevel;
-}
-
-```
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getExposureBiasRange
 
@@ -250,7 +196,7 @@ Obtains the exposure compensation values of the camera device.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposureQuery.getExposureBiasRange
+**Substitutes:** [getExposureBiasRange](arkts-camera-autoexposurequery-i.md#getexposurebiasrange-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -258,13 +204,13 @@ Obtains the exposure compensation values of the camera device.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number> | Array of compensation values. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| Array&lt;number&gt; | Array of compensation values. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getExposureMode
 
@@ -278,7 +224,7 @@ Obtains the exposure mode in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.getExposureMode
+**Substitutes:** [getExposureMode](arkts-camera-autoexposure-i.md#getexposuremode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -286,13 +232,13 @@ Obtains the exposure mode in use.
 
 | Type | Description |
 | --- | --- |
-| ExposureMode | Exposure mode obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| ExposureMode | Exposure mode obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getExposureValue
 
@@ -306,7 +252,7 @@ Obtains the exposure value in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.getExposureValue
+**Substitutes:** [getExposureValue](arkts-camera-autoexposure-i.md#getexposurevalue-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -314,13 +260,13 @@ Obtains the exposure value in use.
 
 | Type | Description |
 | --- | --- |
-| number | Exposure value obtained. There is a step for EV. For example, if the step is 0.5 and this  parameter is set to 1.2, the EV that takes effect is 1.0. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| number | Exposure value obtained. There is a step for EV. For example, if the step is 0.5 and thisparameter is set to 1.2, the EV that takes effect is 1.0. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getFlashMode
 
@@ -334,7 +280,7 @@ Obtains the flash mode in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Flash.getFlashMode
+**Substitutes:** [getFlashMode](arkts-camera-flash-i.md#getflashmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -342,13 +288,13 @@ Obtains the flash mode in use.
 
 | Type | Description |
 | --- | --- |
-| FlashMode | Flash mode obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| FlashMode | Flash mode obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getFocalLength
 
@@ -362,7 +308,7 @@ Obtains the focal length of the camera device.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Focus.getFocalLength
+**Substitutes:** [getFocalLength](arkts-camera-focus-i.md#getfocallength-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -370,13 +316,13 @@ Obtains the focal length of the camera device.
 
 | Type | Description |
 | --- | --- |
-| number | Focal length obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| number | Focal length obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getFocusMode
 
@@ -390,7 +336,7 @@ Obtains the focus mode in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Focus.getFocusMode
+**Substitutes:** [getFocusMode](arkts-camera-focus-i.md#getfocusmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -398,13 +344,13 @@ Obtains the focus mode in use.
 
 | Type | Description |
 | --- | --- |
-| FocusMode | Focus mode obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| FocusMode | Focus mode obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getFocusPoint
 
@@ -418,7 +364,7 @@ Obtains the focal point of the camera device.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Focus.getFocusPoint
+**Substitutes:** [getFocusPoint](arkts-camera-focus-i.md#getfocuspoint-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -426,13 +372,13 @@ Obtains the focal point of the camera device.
 
 | Type | Description |
 | --- | --- |
-| Point | Focal point obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| Point | Focal point obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getMeteringPoint
 
@@ -446,7 +392,7 @@ Obtains the metering point of the camera device.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.getMeteringPoint
+**Substitutes:** [getMeteringPoint](arkts-camera-autoexposure-i.md#getmeteringpoint-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -454,103 +400,13 @@ Obtains the metering point of the camera device.
 
 | Type | Description |
 | --- | --- |
-| Point | Metering point obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| Point | Metering point obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
-
-## getSupportedBeautyRange
-
-```TypeScript
-getSupportedBeautyRange(type: BeautyType): Array<number>
-```
-
-Obtains the levels that can be set a beauty type. The beauty levels vary according to the device type. The following table is only an example. | Input Parameter | Example Return Value | Return Value Description | | ----------------| ---- | ---------| | AUTO | [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] |Beauty levels supported when **type** is set to **AUTO**. The value **0** means that beauty mode is disabled, and other positive values mean the corresponding automatic beauty levels. | | SKIN_SMOOTH | [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] | Beauty levels supported when **type** is set to **SKIN_SMOOTH**. The value **0** means that the skin smoothing feature is disabled, and other positive values mean the corresponding skin smoothing levels. | | FACE_SLENDER | [0, 1, 2, 3, 4, 5] | Beauty levels supported when **type** is set to **FACE_SLENDER**. The value **0** means that the face slimming feature is disabled, and other positive values mean the corresponding face slimming levels. | | SKIN_TONE | [-1, 16242611] | Beauty levels supported when **type** is set to **SKIN_TONE**. The value **-1** means that the skin tone perfection feature is disabled. Other non-negative values mean the skin tone perfection levels represented by RGB,<br> for example, 16242611, which is 0xF7D7B3 in hexadecimal format, where F7, D7, and B3 represent the values of the R channel, G channel, and B channel, respectively. |
-
-**Since:** 10
-
-**Deprecated since:** 11
-
-**Substitute:** camera.BeautyQuery.getSupportedBeautyRange
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| type | BeautyType | Yes | Beauty type. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Array&lt;number> | Array of levels supported. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7400103 | Session not config. |
-
-**Example**
-
-```TypeScript
-function getSupportedBeautyRange(captureSession: camera.CaptureSession): Array<number> {
-  let beautyTypes: Array<camera.BeautyType> = captureSession.getSupportedBeautyTypes();
-  if (beautyTypes === undefined || beautyTypes.length <= 0) {
-    return [];
-  }
-  let beautyLevels: Array<number> = captureSession.getSupportedBeautyRange(beautyTypes[0]);
-  return beautyLevels;
-}
-
-```
-
-## getSupportedBeautyTypes
-
-```TypeScript
-getSupportedBeautyTypes(): Array<BeautyType>
-```
-
-Obtains the supported beauty types.
-
-**Since:** 10
-
-**Deprecated since:** 11
-
-**Substitute:** camera.BeautyQuery.getSupportedBeautyTypes
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Array&lt;BeautyType> | Array of beauty types supported. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7400103 | Session not config. |
-
-**Example**
-
-```TypeScript
-function getSupportedBeautyTypes(captureSession: camera.CaptureSession): Array<camera.BeautyType> {
-  let beautyTypes: Array<camera.BeautyType> = captureSession.getSupportedBeautyTypes();
-  return beautyTypes;
-}
-
-```
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getZoomRatio
 
@@ -564,7 +420,7 @@ Obtains the zoom ratio in use.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Zoom.getZoomRatio
+**Substitutes:** [getZoomRatio](arkts-camera-zoom-i.md#getzoomratio-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -572,13 +428,13 @@ Obtains the zoom ratio in use.
 
 | Type | Description |
 | --- | --- |
-| number | Zoom ratio obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| number | Zoom ratio obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## getZoomRatioRange
 
@@ -592,7 +448,7 @@ Obtains the supported zoom ratio range.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.ZoomQuery.getZoomRatioRange
+**Substitutes:** [getZoomRatioRange](arkts-camera-zoomquery-i.md#getzoomratiorange-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -600,13 +456,13 @@ Obtains the supported zoom ratio range.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number> | Array containing the minimum and maximum zoom ratios. If the operation fails, an error  code defined in [CameraErrorCode]camera.CameraErrorCode is returned. |
+| Array&lt;number&gt; | Array containing the minimum and maximum zoom ratios. If the operation fails, an errorcode defined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## hasFlash
 
@@ -620,7 +476,7 @@ Checks whether the camera device has flash.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.FlashQuery.hasFlash
+**Substitutes:** [hasFlash](arkts-camera-flashquery-i.md#hasflash-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -628,13 +484,13 @@ Checks whether the camera device has flash.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the camera device has flash. true if it has flash, false  otherwise. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for whether the camera device has flash. **true** if it has flash, **false**otherwise. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## isExposureModeSupported
 
@@ -648,7 +504,7 @@ Checks whether an exposure mode is supported.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposureQuery.isExposureModeSupported
+**Substitutes:** [isExposureModeSupported](arkts-camera-autoexposurequery-i.md#isexposuremodesupported-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -662,13 +518,13 @@ Checks whether an exposure mode is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the exposure mode. true if supported, false  otherwise. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for the support of the exposure mode. **true** if supported, **false**otherwise. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## isFlashModeSupported
 
@@ -682,7 +538,7 @@ Checks whether the flash mode is supported.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.FlashQuery.isFlashModeSupported
+**Substitutes:** [isFlashModeSupported](arkts-camera-flashquery-i.md#isflashmodesupported-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -696,13 +552,13 @@ Checks whether the flash mode is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the flash mode. true if supported, false otherwise.  If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for the support of the flash mode. **true** if supported, **false** otherwise.If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## isFocusModeSupported
 
@@ -716,7 +572,7 @@ Checks whether a focus mode is supported.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.FocusQuery.isFocusModeSupported
+**Substitutes:** [isFocusModeSupported](arkts-camera-focusquery-i.md#isfocusmodesupported-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -730,13 +586,13 @@ Checks whether a focus mode is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the focus mode. true if supported, false otherwise.  If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for the support of the focus mode. **true** if supported, **false** otherwise.If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## isVideoStabilizationModeSupported
 
@@ -750,7 +606,7 @@ Checks whether a video stabilization mode is supported.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.StabilizationQuery.isVideoStabilizationModeSupported
+**Substitutes:** [isVideoStabilizationModeSupported](arkts-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -758,19 +614,19 @@ Checks whether a video stabilization mode is supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| vsMode | VideoStabilizationMode | Yes | Video stabilization mode. If the input parameter is null or undefined,  it is treated as 0 and video stabilization is disabled. |
+| vsMode | VideoStabilizationMode | Yes | Video stabilization mode. If the input parameter is null or undefined,it is treated as 0 and video stabilization is disabled. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the video stabilization mode. true if supported,  false otherwise. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
+| boolean | Check result for the support of the video stabilization mode. **true** if supported,**false** otherwise. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## off('focusStateChange')
 
@@ -784,7 +640,7 @@ Unsubscribes from focus state change events.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.VideoSession.off(type:
+**Substitutes:** off(type:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -792,8 +648,8 @@ Unsubscribes from focus state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. |
-| callback | AsyncCallback&lt;FocusState> | No | Callback used to return the result. If this parameter is  specified, the subscription to the specified event with the specified callback is canceled. (The callback  object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the  callbacks are canceled. |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. |
+| callback | AsyncCallback&lt;FocusState&gt; | No | Callback used to return the result. If this parameter isspecified, the subscription to the specified event with the specified callback is canceled. (The callbackobject cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all thecallbacks are canceled. |
 
 ## off('error')
 
@@ -807,7 +663,7 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 
 **Deprecated since:** 11
 
-**Substitute:** camera.VideoSession.off(type:
+**Substitutes:** off(type:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -815,8 +671,8 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. |
-| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, the  subscription to the specified event with the specified callback is canceled. (The callback object cannot be  an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are  canceled. |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. |
+| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, thesubscription to the specified event with the specified callback is canceled. (The callback object cannot bean anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks arecanceled. |
 
 ## on('focusStateChange')
 
@@ -824,13 +680,17 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
-Subscribes to focus state change events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.VideoSession.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -838,8 +698,8 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. This event is triggered only when the camera focus state changes in  auto focus mode. |
-| callback | AsyncCallback&lt;FocusState> | Yes | Callback used to return the focus state change. |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. This event is triggered only when the camera focus state changes inauto focus mode. |
+| callback | AsyncCallback&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
 ## on('error')
 
@@ -847,13 +707,17 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to CaptureSession error events. This API uses an asynchronous callback to return the result. > **NOTE** > > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
+Subscribes to CaptureSession error events. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.VideoSession.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -861,8 +725,8 @@ Subscribes to CaptureSession error events. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. This event is triggered and the error message is returned when an error occurs during the  calling of a session-related API such as [beginConfig]camera.CaptureSession.beginConfig,  [commitConfig]camera.CaptureSession.commitConfig(), and  [addInput]camera.CaptureSession.addInput. |
-| callback | ErrorCallback | Yes | Callback used to return an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. This event is triggered and the error message is returned when an error occurs during thecalling of a session-related API such as [beginConfig](arkts-camera-capturesession-i.md#beginconfig-1),[commitConfig](arkts-camera-capturesession-i.md#commitconfig-2), and[addInput](arkts-camera-capturesession-i.md#addinput-1). |
+| callback | ErrorCallback | Yes | Callback used to return an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md). |
 
 ## release
 
@@ -876,7 +740,7 @@ Releases this session. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.release(callback:
+**Substitutes:** release(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -884,13 +748,13 @@ Releases this session. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the session is released  successfully, err is undefined; otherwise, err is an error object with an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the session is releasedsuccessfully, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400201 | Camera service fatal error. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## release
 
@@ -904,7 +768,7 @@ Releases this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.release()
+**Substitutes:** [release()](arkts-camera-session-i.md#release-2)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -912,13 +776,13 @@ Releases this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400201 | Camera service fatal error. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## removeInput
 
@@ -926,13 +790,13 @@ Releases this session. This API uses a promise to return the result.
 removeInput(cameraInput: CameraInput): void
 ```
 
-Removes a [CameraInput]camera.CameraInput instance from this session.
+Removes a [CameraInput](arkts-camera-camerainput-i.md) instance from this session.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.removeInput
+**Substitutes:** [removeInput](arkts-camera-session-i.md#removeinput-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -946,8 +810,8 @@ Removes a [CameraInput]camera.CameraInput instance from this session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400101 | Parameter missing or parameter type incorrect. |
-| 7400102 | Operation not allowed. |
+| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
 ## removeOutput
 
@@ -955,13 +819,13 @@ Removes a [CameraInput]camera.CameraInput instance from this session.
 removeOutput(cameraOutput: CameraOutput): void
 ```
 
-Removes a [CameraOutput]camera.CameraOutput instance from this session.
+Removes a [CameraOutput](arkts-camera-cameraoutput-i.md) instance from this session.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.removeOutput
+**Substitutes:** [removeOutput](arkts-camera-session-i.md#removeoutput-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -975,56 +839,8 @@ Removes a [CameraOutput]camera.CameraOutput instance from this session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400101 | Parameter missing or parameter type incorrect. |
-| 7400102 | Operation not allowed. |
-
-## setBeauty
-
-```TypeScript
-setBeauty(type: BeautyType, value: number): void
-```
-
-Sets a beauty type and its level. Beauty mode is turned off only when all the [beauty types]camera.BeautyType obtained through [getSupportedBeautyTypes]camera.CaptureSession.getSupportedBeautyTypes are disabled.
-
-**Since:** 10
-
-**Deprecated since:** 11
-
-**Substitute:** camera.Beauty.setBeauty
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| type | BeautyType | Yes | Beauty type. |
-| value | number | Yes | Beauty level, which is obtained through  [getSupportedBeautyRange]camera.CaptureSession.getSupportedBeautyRange. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7400103 | Session not config. |
-
-**Example**
-
-```TypeScript
-function setBeauty(captureSession: camera.CaptureSession): void {
-  let beautyTypes: Array<camera.BeautyType> = captureSession.getSupportedBeautyTypes();
-  if (beautyTypes === undefined || beautyTypes.length <= 0) {
-    return;
-  }
-  let beautyLevels: Array<number> = captureSession.getSupportedBeautyRange(beautyTypes[0]);
-  if (beautyLevels === undefined || beautyLevels.length <= 0) {
-    return;
-  }
-  captureSession.setBeauty(beautyTypes[0], beautyLevels[0]);
-}
-
-```
+| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
 ## setExposureBias
 
@@ -1032,13 +848,15 @@ function setBeauty(captureSession: camera.CaptureSession): void {
 setExposureBias(exposureBias: number): void
 ```
 
-Sets an exposure compensation value (EV). Before the setting, you are advised to use [getExposureBiasRange]camera.CaptureSession.getExposureBiasRange to obtain the supported values.
+Sets an exposure compensation value (EV).
+Before the setting, you are advised to use
+[getExposureBiasRange](arkts-camera-capturesession-i.md#getexposurebiasrange-1) to obtain the supported values.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.setExposureBias
+**Substitutes:** [setExposureBias](arkts-camera-autoexposure-i.md#setexposurebias-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1046,13 +864,13 @@ Sets an exposure compensation value (EV). Before the setting, you are advised to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling  [getExposureBiasRange]camera.AutoExposureQuery.getExposureBiasRange. If the  value passed is not within the supported range, the nearest critical point is used. There is a step for EV.  For example, if the step is 0.5 and this parameter is set to 1.2, the EV that takes effect is 1.0. If the  operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. If the input parameter  is null or undefined, the EV is set to 0. |
+| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling[getExposureBiasRange](arkts-camera-autoexposurequery-i.md#getexposurebiasrange-1). If thevalue passed is not within the supported range, the nearest critical point is used. There is a step for EV.For example, if the step is 0.5 and this parameter is set to 1.2, the EV that takes effect is 1.0. If theoperation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md) is returned. If the input parameteris null or undefined, the EV is set to 0. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setExposureMode
 
@@ -1060,13 +878,15 @@ Sets an exposure compensation value (EV). Before the setting, you are advised to
 setExposureMode(aeMode: ExposureMode): void
 ```
 
-Sets an exposure mode. Before the setting, call [isExposureModeSupported]camera.CaptureSession.isExposureModeSupported to check whether the target exposure mode is supported.
+Sets an exposure mode. Before the setting, call
+[isExposureModeSupported](arkts-camera-capturesession-i.md#isexposuremodesupported-1) to check whether the target
+exposure mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.setExposureMode
+**Substitutes:** [setExposureMode](arkts-camera-autoexposure-i.md#setexposuremode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1080,7 +900,7 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported]camera.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setFlashMode
 
@@ -1088,13 +908,18 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported]camera.
 setFlashMode(flashMode: FlashMode): void
 ```
 
-Sets a flash mode. Before the setting, do the following checks: 1. Use [hasFlash]camera.CaptureSession.hasFlash to check whether the camera device has flash. 2. Use [isFlashModeSupported]camera.CaptureSession.isFlashModeSupported to check whether the camera device supports the flash mode.
+Sets a flash mode.
+Before the setting, do the following checks:
+
+1. Use [hasFlash](arkts-camera-capturesession-i.md#hasflash-1) to check whether the camera device has flash.
+2. Use [isFlashModeSupported](arkts-camera-capturesession-i.md#isflashmodesupported-1) to check whether the camera
+device supports the flash mode.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Flash.setFlashMode
+**Substitutes:** [setFlashMode](arkts-camera-flash-i.md#setflashmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1108,7 +933,7 @@ Sets a flash mode. Before the setting, do the following checks: 1. Use [hasFlash
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setFocusMode
 
@@ -1116,13 +941,15 @@ Sets a flash mode. Before the setting, do the following checks: 1. Use [hasFlash
 setFocusMode(afMode: FocusMode): void
 ```
 
-Sets a focus mode. Before the setting, call [isFocusModeSupported]camera.CaptureSession.isFocusModeSupported to check whether the focus mode is supported.
+Sets a focus mode.
+Before the setting, call [isFocusModeSupported](arkts-camera-capturesession-i.md#isfocusmodesupported-1) to check
+whether the focus mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Focus.setFocusMode
+**Substitutes:** [setFocusMode](arkts-camera-focus-i.md#setfocusmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1136,7 +963,7 @@ Sets a focus mode. Before the setting, call [isFocusModeSupported]camera.Capture
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setFocusPoint
 
@@ -1144,13 +971,19 @@ Sets a focus mode. Before the setting, call [isFocusModeSupported]camera.Capture
 setFocusPoint(point: Point): void
 ```
 
-Sets the focal point. The focal point must be in the coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}. The coordinate system is based on the horizontal device direction with the device's charging port on the right. If the layout of the preview screen of an application is based on the vertical direction with the charging port on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate point after conversion is {y/h, 1-x/w}.
+Sets the focal point. The focal point must be in the coordinate system (0-1), where the top-left corner is {0, 0}
+and the bottom-right corner is {1, 1}.
+
+The coordinate system is based on the horizontal device direction with the device's charging port on the right.
+If the layout of the preview screen of an application is based on the vertical direction with the charging port
+on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate
+point after conversion is {y/h, 1-x/w}.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Focus.setFocusPoint
+**Substitutes:** [setFocusPoint](arkts-camera-focus-i.md#setfocuspoint-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1158,13 +991,13 @@ Sets the focal point. The focal point must be in the coordinate system (0-1), wh
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| point | Point | Yes | Focal point. The value range of x and y must be within [0,1]. If a value less than 0 is  passed, the value 0 is used. If a value greater than 1 is passed, the value 1 is used. |
+| point | Point | Yes | Focal point. The value range of x and y must be within [0,1]. If a value less than 0 ispassed, the value **0** is used. If a value greater than **1** is passed, the value **1** is used. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setMeteringPoint
 
@@ -1172,13 +1005,19 @@ Sets the focal point. The focal point must be in the coordinate system (0-1), wh
 setMeteringPoint(point: Point): void
 ```
 
-Sets the metering point, which is the center point of the metering rectangle. The metering point must be in the coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}. The coordinate system is based on the horizontal device direction with the device's charging port on the right. If the layout of the preview screen of an application is based on the vertical direction with the charging port on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate point after conversion is {y/h, 1-x/w}.
+Sets the metering point, which is the center point of the metering rectangle. The metering point must be in the
+coordinate system (0-1), where the top-left corner is {0, 0} and the bottom-right corner is {1, 1}.
+
+The coordinate system is based on the horizontal device direction with the device's charging port on the right.
+If the layout of the preview screen of an application is based on the vertical direction with the charging port
+on the lower side, the layout width and height are {w, h}, and the touch point is {x, y}, then the coordinate
+point after conversion is {y/h, 1-x/w}.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.AutoExposure.setMeteringPoint
+**Substitutes:** [setMeteringPoint](arkts-camera-autoexposure-i.md#setmeteringpoint-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1186,13 +1025,13 @@ Sets the metering point, which is the center point of the metering rectangle. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| point | Point | Yes | Metering point. The value range of x and y must be within [0,1]. If a value less than 0  is passed, the value 0 is used. If a value greater than 1 is passed, the value 1 is used. |
+| point | Point | Yes | Metering point. The value range of x and y must be within [0,1]. If a value less than 0is passed, the value **0** is used. If a value greater than **1** is passed, the value **1** is used. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setVideoStabilizationMode
 
@@ -1200,13 +1039,15 @@ Sets the metering point, which is the center point of the metering rectangle. Th
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported]camera.CaptureSession.isVideoStabilizationModeSupported to check whether the target video stabilization mode is supported.
+Sets a video stabilization mode. Before the setting, call
+[isVideoStabilizationModeSupported](arkts-camera-capturesession-i.md#isvideostabilizationmodesupported-1) to check
+whether the target video stabilization mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Stabilization.setVideoStabilizationMode
+**Substitutes:** [setVideoStabilizationMode](arkts-camera-stabilization-i.md#setvideostabilizationmode-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1214,13 +1055,13 @@ Sets a video stabilization mode. Before the setting, call [isVideoStabilizationM
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mode | VideoStabilizationMode | Yes | Video stabilization mode. If the input parameter is null or undefined,  it is treated as 0 and video stabilization is disabled. |
+| mode | VideoStabilizationMode | Yes | Video stabilization mode. If the input parameter is null or undefined,it is treated as 0 and video stabilization is disabled. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## setZoomRatio
 
@@ -1234,7 +1075,7 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Zoom.setZoomRatio
+**Substitutes:** [setZoomRatio](arkts-camera-zoom-i.md#setzoomratio-1)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1242,13 +1083,13 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| zoomRatio | number | Yes | Zoom ratio. The supported zoom ratio range can be obtained by calling  [getZoomRatioRange]camera.ZoomQuery.getZoomRatioRange. If the value passed in  is not within the supported range, the value within the precision range is retained. If the input parameter  is null or undefined, it is treated as 0 and the minimum zoom ratio is used. |
+| zoomRatio | number | Yes | Zoom ratio. The supported zoom ratio range can be obtained by calling[getZoomRatioRange](arkts-camera-zoomquery-i.md#getzoomratiorange-1). If the value passed inis not within the supported range, the value within the precision range is retained. If the input parameteris null or undefined, it is treated as 0 and the minimum zoom ratio is used. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
 ## start
 
@@ -1262,7 +1103,7 @@ Starts this session. This API uses an asynchronous callback to return the result
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.start(callback:
+**Substitutes:** start(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1270,14 +1111,14 @@ Starts this session. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the session starts successfully,  err is undefined; otherwise, err is an error object with an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the session starts successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
-| 7400201 | Camera service fatal error. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## start
 
@@ -1291,7 +1132,7 @@ Starts this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.start()
+**Substitutes:** [start()](arkts-camera-session-i.md#start-2)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1299,14 +1140,14 @@ Starts this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400103 | Session not config. |
-| 7400201 | Camera service fatal error. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## stop
 
@@ -1320,7 +1161,7 @@ Stops this session. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.stop(callback:
+**Substitutes:** stop(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1328,13 +1169,13 @@ Stops this session. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the session stops successfully,  err is undefined; otherwise, err is an error object with an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the session stops successfully,**err** is **undefined**; otherwise, **err** is an error object with an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400201 | Camera service fatal error. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
 ## stop
 
@@ -1348,7 +1189,7 @@ Stops this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitute:** camera.Session.stop()
+**Substitutes:** [stop()](arkts-camera-session-i.md#stop-2)
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -1356,11 +1197,11 @@ Stops this session. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7400201 | Camera service fatal error. |
+| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 

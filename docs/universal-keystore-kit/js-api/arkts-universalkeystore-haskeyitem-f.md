@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## hasKeyItem
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function hasKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a key exists. This API uses an asynchronous callback to return the result. If the key does not exist, **false** is returned through the callback.
+Checks whether a key exists. This API uses an asynchronous callback to return the result.
+
+If the key does not exist, **false** is returned through the callback.
 
 **Since:** 11
 
@@ -25,7 +27,7 @@ Checks whether a key exists. This API uses an asynchronous callback to return th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to check. |
-| options | HuksOptions | Yes | Attribute tag of the key to be checked. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md#huksauthstoragelevel) is used to specify the security level of the key to bechecked,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
+| options | HuksOptions | Yes | Attribute tag of the key to be checked. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md) is used to specify the security level of the key to bechecked,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
 | callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result. If the key exists, **data** is**true**. Otherwise, **data** is **false**. |
 
 **Error codes:**
@@ -39,7 +41,7 @@ Checks whether a key exists. This API uses an asynchronous callback to return th
 | [12000006](../errorcode-huks.md#12000006-algorithm-library-operation-failed) | error occurred in crypto engine |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -73,7 +75,9 @@ huks.hasKeyItem(keyAlias, emptyOptions, (error, data) => {
 function hasKeyItem(keyAlias: string, options: HuksOptions): Promise<boolean>
 ```
 
-Checks whether a key exists. This API uses a promise to return the result. If the key does not exist, **false** is returned through the promise.
+Checks whether a key exists. This API uses a promise to return the result.
+
+If the key does not exist, **false** is returned through the promise.
 
 **Since:** 11
 
@@ -86,7 +90,7 @@ Checks whether a key exists. This API uses a promise to return the result. If th
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to check. |
-| options | HuksOptions | Yes | Attribute tag of the key to be checked. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md#huksauthstoragelevel) is used to specify the security level of the key to bechecked,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
+| options | HuksOptions | Yes | Attribute tag of the key to be checked. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md) is used to specify the security level of the key to bechecked,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
 
 **Return value:**
 
@@ -105,7 +109,7 @@ Checks whether a key exists. This API uses a promise to return the result. If th
 | [12000006](../errorcode-huks.md#12000006-algorithm-library-operation-failed) | error occurred in crypto engine |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 

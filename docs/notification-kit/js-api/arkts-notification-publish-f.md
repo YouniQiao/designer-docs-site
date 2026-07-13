@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## publish
@@ -12,7 +12,10 @@ import { notificationManager } from '@ohos.notificationManager';
 function publish(request: NotificationRequest, callback: AsyncCallback<void>): void
 ```
 
-Publishes a notification. This API uses an asynchronous callback to return the result. If the ID and label of the new notification are the same as that of the previous notification, the new one replaces the previous one.
+Publishes a notification. This API uses an asynchronous callback to return the result.
+
+If the ID and label of the new notification are the same as that of the previous notification, the new one replaces
+the previous one.
 
 **Since:** 9
 
@@ -35,14 +38,15 @@ Publishes a notification. This API uses an asynchronous callback to return the r
 | [1600003](../errorcode-notification.md#1600003-failed-to-connect-to-the-notification-service) | Failed to connect to the service. |
 | [1600004](../errorcode-notification.md#1600004-notification-disabled) | Notification disabled. |
 | [1600005](../errorcode-notification.md#1600005-notification-slot-disabled) | Notification slot disabled. |
-| [1600007](../errorcode-notification.md#1600007-notification-not-found) | The notification does not exist.<br>**Applicable version:** 11 |
+| [1600007](../errorcode-notification.md#1600007-notification-not-found) | The notification does not exist.<br>**Applicable version:** 11 and later |
 | [1600009](../errorcode-notification.md#1600009-notification-sending-limit-reached) | The notification sending frequency reaches the upper limit. |
 | [1600012](../errorcode-notification.md#1600012-insufficient-memory-space) | No memory space. |
-| [1600014](../errorcode-notification.md#1600014-no-related-permission) | No permission.<br>**Applicable version:** 11 |
-| [1600015](../errorcode-notification.md#1600015-duplicate-configurations-not-allowed-for-the-current-notification-status) | The current notification status does not support duplicateconfigurations.<br>**Applicable version:** 11 |
-| [1600016](../errorcode-notification.md#1600016-updated-notification-version-outdated) | The notification version for this update is too low.<br>**Applicable version:** 11 |
-| [1600020](../errorcode-notification.md#1600020-applications-in-the-permission-control-list-is-not-allowed-to-publish-notifications) | The application is not allowed to send notifications due to permissionsettings.<br>**Applicable version:** 12 |
-| [2300007](../../apis-network-kit/errorcode-net-http.md#2300007-failed-to-connect-to-the-server) | Network unreachable.<br>**Applicable version:** 11 |
+| [1600014](../errorcode-notification.md#1600014-no-related-permission) | No permission.<br>**Applicable version:** 11 and later |
+| [1600015](../errorcode-notification.md#1600015-duplicate-configurations-not-allowed-for-the-current-notification-status) | The current notification status does not support duplicateconfigurations.<br>**Applicable version:** 11 and later |
+| [1600016](../errorcode-notification.md#1600016-updated-notification-version-outdated) | The notification version for this update is too low.<br>**Applicable version:** 11 and later |
+| [1600020](../errorcode-notification.md#1600020-applications-in-the-permission-control-list-is-not-allowed-to-publish-notifications) | The application is not allowed to send notifications due to permissionsettings.<br>**Applicable version:** 12 and later |
+| 1600029 | The system failed to find the ExtensionAbility instance for thecustom Live View widget template.<br>**Applicable version:** 26.0.0 and later |
+| [2300007](../../apis-network-kit/errorcode-net-http.md#2300007-failed-to-connect-to-the-server) | Network unreachable.<br>**Applicable version:** 11 and later |
 
 **Example**
 
@@ -80,7 +84,10 @@ notificationManager.publish(notificationRequest, publishCallback);
 function publish(request: NotificationRequest): Promise<void>
 ```
 
-Publishes a notification. This API uses a promise to return the result. If the ID and label of the new notification are the same as that of the previous notification, the new one replaces the previous one.
+Publishes a notification. This API uses a promise to return the result.
+
+If the ID and label of the new notification are the same as that of the previous notification, the new one replaces
+the previous one.
 
 **Since:** 9
 
@@ -108,14 +115,15 @@ Publishes a notification. This API uses a promise to return the result. If the I
 | [1600003](../errorcode-notification.md#1600003-failed-to-connect-to-the-notification-service) | Failed to connect to the service. |
 | [1600004](../errorcode-notification.md#1600004-notification-disabled) | Notification disabled. |
 | [1600005](../errorcode-notification.md#1600005-notification-slot-disabled) | Notification slot disabled. |
-| [1600007](../errorcode-notification.md#1600007-notification-not-found) | The notification does not exist.<br>**Applicable version:** 11 |
+| [1600007](../errorcode-notification.md#1600007-notification-not-found) | The notification does not exist.<br>**Applicable version:** 11 and later |
 | [1600009](../errorcode-notification.md#1600009-notification-sending-limit-reached) | The notification sending frequency reaches the upper limit. |
 | [1600012](../errorcode-notification.md#1600012-insufficient-memory-space) | No memory space. |
-| [1600014](../errorcode-notification.md#1600014-no-related-permission) | No permission.<br>**Applicable version:** 11 |
-| [1600015](../errorcode-notification.md#1600015-duplicate-configurations-not-allowed-for-the-current-notification-status) | The current notification status does not support duplicateconfigurations.<br>**Applicable version:** 11 |
-| [1600016](../errorcode-notification.md#1600016-updated-notification-version-outdated) | The notification version for this update is too low.<br>**Applicable version:** 11 |
-| [1600020](../errorcode-notification.md#1600020-applications-in-the-permission-control-list-is-not-allowed-to-publish-notifications) | The application is not allowed to send notifications due to permissionsettings.<br>**Applicable version:** 12 |
-| [2300007](../../apis-network-kit/errorcode-net-http.md#2300007-failed-to-connect-to-the-server) | Network unreachable.<br>**Applicable version:** 11 |
+| [1600014](../errorcode-notification.md#1600014-no-related-permission) | No permission.<br>**Applicable version:** 11 and later |
+| [1600015](../errorcode-notification.md#1600015-duplicate-configurations-not-allowed-for-the-current-notification-status) | The current notification status does not support duplicateconfigurations.<br>**Applicable version:** 11 and later |
+| [1600016](../errorcode-notification.md#1600016-updated-notification-version-outdated) | The notification version for this update is too low.<br>**Applicable version:** 11 and later |
+| [1600020](../errorcode-notification.md#1600020-applications-in-the-permission-control-list-is-not-allowed-to-publish-notifications) | The application is not allowed to send notifications due to permissionsettings.<br>**Applicable version:** 12 and later |
+| 1600029 | The system failed to find the ExtensionAbility instance for thecustom Live View widget template.<br>**Applicable version:** 26.0.0 and later |
+| [2300007](../../apis-network-kit/errorcode-net-http.md#2300007-failed-to-connect-to-the-server) | Network unreachable.<br>**Applicable version:** 11 and later |
 
 **Example**
 

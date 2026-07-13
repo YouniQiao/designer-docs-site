@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## isApplicationEnabled
@@ -12,7 +12,8 @@ import { bundle } from '@ohos.bundle';
 function isApplicationEnabled(bundleName: string, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether an application is enabled based on a given bundle name. This API uses an asynchronous callback to return the result.
+Checks whether an application is enabled based on a given bundle name. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 8
 
@@ -34,7 +35,8 @@ Checks whether an application is enabled based on a given bundle name. This API 
 function isApplicationEnabled(bundleName: string): Promise<boolean>
 ```
 
-Checks whether an application is enabled based on a given bundle name. This API uses a promise to return the result.
+Checks whether an application is enabled based on a given bundle name. This API uses a promise to return the
+result.
 
 **Since:** 8
 

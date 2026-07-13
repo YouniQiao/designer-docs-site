@@ -1,6 +1,8 @@
 # PathShape
 
-Represents a path used in the **clipShape** and **maskShape** APIs. This API inherits from [CommonShapeMethod](arkts-arkui-commonshapemethod-c.md#commonshapemethod).
+Represents a path used in the **clipShape** and **maskShape** APIs.
+
+This API inherits from [CommonShapeMethod](arkts-arkui-commonshapemethod-c.md).
 
 **Inheritance/Implementation:** PathShape extends [CommonShapeMethod<PathShape>](CommonShapeMethod<PathShape>)
 
@@ -11,7 +13,7 @@ Represents a path used in the **clipShape** and **maskShape** APIs. This API inh
 ## Modules to Import
 
 ```TypeScript
-import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.shape';
+import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
 ## commands

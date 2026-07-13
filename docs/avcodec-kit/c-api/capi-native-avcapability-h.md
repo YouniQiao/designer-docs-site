@@ -880,7 +880,7 @@ Get the native buffer formats supported by the video codec.This function provide
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCapability](capi-avcapability-oh-avcapability.md) *capability | A pointer to a valid video codec capability instance. |
-| const OH_NativeBuffer_Format **nativeBufferFormats | Output parameter. A pointer to the native buffer format array,refer to [OH_NativeBuffer_Format](../ArkGraphics2D/capi-buffer-common-h.md#oh_nativebuffer_format) |
+| [const OH_NativeBuffer_Format](../ArkGraphics2D/capi-buffer-common-h.md#oh_nativebuffer_format) **nativeBufferFormats | Output parameter. A pointer to the native buffer format array,refer to [OH_NativeBuffer_Format](../ArkGraphics2D/capi-buffer-common-h.md#oh_nativebuffer_format) |
 | uint32_t *nativeBufferFormatNum | Output parameter. The element number of the native buffer format array |
 
 **Returns**:

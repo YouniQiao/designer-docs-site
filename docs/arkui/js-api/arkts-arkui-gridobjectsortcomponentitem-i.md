@@ -9,7 +9,7 @@ Declaration of the GridObjectSortComponent item.
 ## Modules to Import
 
 ```TypeScript
-import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObjectSortComponent, GridObjectSortComponentItem } from '@ohos.arkui.advanced.GridObjectSortComponent';
+import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObjectSortComponent, GridObjectSortComponentItem } from '@kit.ArkUI';
 ```
 
 ## id

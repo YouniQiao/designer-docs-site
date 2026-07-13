@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## open
@@ -63,7 +63,7 @@ Opens a file or directory. This API uses a promise to return the result. This AP
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
 ## open
@@ -72,7 +72,8 @@ Opens a file or directory. This API uses a promise to return the result. This AP
 declare function open(path: string, callback: AsyncCallback<File>): void
 ```
 
-Opens a file or directory. This API uses an asynchronous callback to return the result. This API supports the use of a URI.
+Opens a file or directory. This API uses an asynchronous callback to return the result. This API supports the use of
+a URI.
 
 **Since:** 9
 
@@ -125,7 +126,9 @@ Opens a file or directory. This API uses an asynchronous callback to return the 
 declare function open(path: string, mode: number, callback: AsyncCallback<File>): void
 ```
 
-Opens a file or directory with the specified mode. This API uses an asynchronous callback to return the result. This API supports the use of a URI.
+Opens a file or directory with the specified mode. This API uses an asynchronous callback to return the result.
+
+This API supports the use of a URI.
 
 **Since:** 9
 

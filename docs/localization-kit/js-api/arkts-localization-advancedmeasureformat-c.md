@@ -1,6 +1,7 @@
 # AdvancedMeasureFormat
 
-Building upon the measurement unit formatting capabilities provided by Intl.NumberFormat, the formatting functionality has been enhanced. It supports automatically selecting appropriate measurement units based on usage scenarios to format numbers.For example, there are many units of measurement for length, including millimeters, centimeters, meters, kilometers, and so on. However, depending on the context in which the measurement is used, each scenario has its commonly used units. Millimeters are more frequently used when expressing rainfall, while meters are more commonly used to describe visibility.
+Provides the number formatting capability, supporting automatic unit conversion based on
+specific application scenarios.
 
 **Since:** 23
 
@@ -9,7 +10,7 @@ Building upon the measurement unit formatting capabilities provided by Intl.Numb
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -53,7 +54,8 @@ let advancedMeasureFormat: i18n.AdvancedMeasureFormat = new i18n.AdvancedMeasure
 format(num: number): string
 ```
 
-Formats a number by appropriate measure for usage scenarios. For instance, when formatting the value 12.3 for rainfall in the English locale, the output is "12.3 mm".
+Formats a number by appropriate measure for usage scenarios. For instance, when formatting the value 12.3
+for rainfall in the English locale, the output is "12.3 mm".
 
 **Since:** 23
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getBundleInfoSync
@@ -12,7 +12,10 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getBundleInfoSync(bundleName: string, bundleFlags: number, userId: number): BundleInfo
 ```
 
-Obtains the bundle information based on the given bundle name, bundle flags, and user ID. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
+Obtains the bundle information based on the given bundle name, bundle flags, and user ID. This API returns the
+result synchronously.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 14
 
@@ -72,7 +75,10 @@ try {
 function getBundleInfoSync(bundleName: string, bundleFlags: number): BundleInfo
 ```
 
-Obtains the bundle information for the caller's user based on the given bundle name and bundle flags. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
+Obtains the bundle information for the caller's user based on the given bundle name and bundle flags. This API
+returns the result synchronously.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 14
 

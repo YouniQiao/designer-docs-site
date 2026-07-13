@@ -1,12 +1,20 @@
 # @ohos.distributedBundle
 
-本模块提供分布式包的管理。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用 > [@ohos.bundle.distributedBundleManager]{@link @ohos.bundle.distributedBundleManager:distributedBundleManager}替代。 > > 本模块为系统接口。
+The distributedBundle module manages distributed bundles.
+
+> **NOTE**
+>
+> The APIs of this module have been deprecated since API version 9. You are advised to use
+> [@ohos.bundle.distributedBundleManager](arkts-bundle-distributedbundlemanager.md)
+> instead.
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.bundle.distributedBundleManager:distributedBundleManager
+**Substitutes:** [distributedBundleManager:distributedBundleManager](arkts-bundle-distributedbundlemanager.md)
 
 **System capability:** SystemCapability.BundleManager.DistributedBundleFramework
 
@@ -20,12 +28,14 @@ import { distributedBundle } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundle-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-1) | 根据给定的ElementName获取有关远程设备AbilityInfo信息，使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundle-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-2) | 根据给定的ElementName获取有关远程设备AbilityInfo信息，使用Promise异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfos](arkts-distributedbundle-getremoteabilityinfos-f-sys.md#getRemoteAbilityInfos-1) | 根据给定的ElementName获取有关远程设备AbilityInfos信息，使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfos](arkts-distributedbundle-getremoteabilityinfos-f-sys.md#getRemoteAbilityInfos-2) | 根据给定的ElementName获取有关远程设备AbilityInfos信息，使用Promise异步回调。 |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-1) | Obtains the information about the remote ability that matches the given element name. This API uses an asynchronouscallback to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-2) | Obtains the information about the remote ability that matches the given element name. This API uses a promise toreturn the result. |
+| [getRemoteAbilityInfos](arkts-ability-getremoteabilityinfos-f-sys.md#getremoteabilityinfos-1) | Obtains the information about remote abilities that match the given element names. This API uses an asynchronouscallback to return the result. |
+| [getRemoteAbilityInfos](arkts-ability-getremoteabilityinfos-f-sys.md#getremoteabilityinfos-2) | Obtains the information about remote abilities that match the given element names. This API uses a promise toreturn the result. |
+<!--DelEnd-->
 

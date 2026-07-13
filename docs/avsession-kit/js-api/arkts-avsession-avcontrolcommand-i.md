@@ -12,19 +12,19 @@ The definition of command to be sent to the session
 import { avSession } from '@kit.AVSessionKit';
 ```
 
-## parameter
+## command
 
 ```TypeScript
-parameter?: LoopMode | string | double
+command: AVControlCommandType
 ```
 
-parameter of the command. Whether this command requires parameters, see {@link AVSessionCommand} seek command requires a number parameter setSpeed command requires a number parameter setLoopMode command requires a {@link LoopMode} parameter. toggleFavorite command requires assetId {@link AVMetadata.assetId} parameter other commands need no parameter
+The command value {@link AVControlCommandType}
 
-**Type:** LoopMode | string | double
+**Type:** AVControlCommandType
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -42,19 +42,24 @@ The command value {@link CommandInfo}
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## command
+## parameter
 
 ```TypeScript
-command: AVControlCommandType
+parameter?: LoopMode | string | number
 ```
 
-The command value {@link AVControlCommandType}
+parameter of the command. Whether this command requires parameters, see {@link AVSessionCommand}
+seek command requires a number parameter
+setSpeed command requires a number parameter
+setLoopMode command requires a {@link LoopMode} parameter.
+toggleFavorite command requires assetId {@link AVMetadata.assetId} parameter
+other commands need no parameter
 
-**Type:** AVControlCommandType
+**Type:** LoopMode | string | number
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

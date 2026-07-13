@@ -12,7 +12,8 @@ Enumerates the scrolling states.
 Idle
 ```
 
-Idle state. Triggered when the scroll state returns to idle, and when the controller's non-animated methods are used to control the scroll.
+Idle state. Triggered when the scroll state returns to idle, and when the controller's non-animated methods are
+used to control the scroll.
 
 **Since:** 7
 
@@ -28,7 +29,8 @@ Idle state. Triggered when the scroll state returns to idle, and when the contro
 Scroll
 ```
 
-Scrolling state. Triggered when the list is dragged with the finger, when the scrollbar is dragged, or when the mouse scroll wheel is used.
+Scrolling state. Triggered when the list is dragged with the finger, when the scrollbar is dragged, or when the
+mouse scroll wheel is used.
 
 **Since:** 7
 
@@ -44,7 +46,13 @@ Scrolling state. Triggered when the list is dragged with the finger, when the sc
 Fling
 ```
 
-Inertial scrolling state. Triggered by all animated scroll actions. This includes: Inertial scrolling that occurs after a fling; Bounce-back scrolling when the swipe reaches the edge; Inertial scrolling after quickly dragging the built-in scrollbar and releasing; Scrolling controlled by the animated methods provided by the scroller.
+Inertial scrolling state. Triggered by all animated scroll actions. This includes: Inertial scrolling that occurs
+after a fling;
+
+Bounce-back scrolling when the swipe reaches the edge; Inertial scrolling after quickly dragging the built-in
+scrollbar and releasing;
+
+Scrolling controlled by the animated methods provided by the scroller.
 
 **Since:** 7
 

@@ -1,8 +1,9 @@
-# TripodDetectionResult
+# TripodDetectionResult (System API)
 
-TripodDetectionResult extends [SceneFeatureDetectionResult]camera.SceneFeatureDetectionResult Describes the tripod detection result.
+TripodDetectionResult extends [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md)
+Describes the tripod detection result.
 
-**Inheritance:** TripodDetectionResultextends: SceneFeatureDetectionResult.
+**Inheritance/Implementation:** TripodDetectionResult extends [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md)
 
 **Since:** 13
 

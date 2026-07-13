@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## queryDlpPolicy
@@ -12,7 +12,16 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function queryDlpPolicy(dlpFd: number): Promise<string>
 ```
 
-Parses the file header in a DLP file to obtain the DLP plaintext policy. The returned JSON string of the DLP policy contains the [DLPProperty](arkts-dataprotection-dlpproperty-i.md#dlpproperty) and [CustomProperty](arkts-dataprotection-customproperty-i.md#customproperty) information. This API uses a promise to return the result. This API obtains the policy information of a DLP file for analysis in scenarios such as viewing the DLP file permission configuration. > **NOTE** > > This API can be called only by enterprise accounts.
+Parses the file header in a DLP file to obtain the DLP plaintext policy. The returned JSON string of the DLP
+policy contains the [DLPProperty](arkts-dataprotection-dlpproperty-i.md) and
+[CustomProperty](arkts-dataprotection-customproperty-i.md) information. This API uses a promise to return the result.
+
+This API obtains the policy information of a DLP file for analysis in scenarios such as viewing the DLP file
+permission configuration.
+
+> **NOTE**
+>
+> This API can be called only by enterprise accounts.
 
 **Since:** 21
 
@@ -39,7 +48,7 @@ Parses the file header in a DLP file to obtain the DLP plaintext policy. The ret
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs.<br>**Applicable version:** 20 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs.<br>**Applicable version:** 20 and later |
 | [19100001](../errorcode-dlp.md#19100001-invalid-parameter) | Invalid parameter value. |
 | [19100002](../errorcode-dlp.md#19100002-encryption-and-decryption-error) | Credential service busy due to too many tasks or duplicate tasks. |
 | [19100003](../errorcode-dlp.md#19100003-encryptiondecryption-timeout) | Credential task time out. |

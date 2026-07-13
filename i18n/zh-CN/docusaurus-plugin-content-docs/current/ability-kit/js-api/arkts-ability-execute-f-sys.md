@@ -6,7 +6,10 @@
 function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.ExecuteResult>): void
 ```
 
-执行意图调用的接口。使用callback异步回调。 当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。 当意图调用执行模式[ExecuteMode](arkts-ability-executemode-e.md#executemode)取值为UI_ABILITY_BACKGROUND时，需要 申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。
+执行意图调用的接口。使用callback异步回调。
+当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。
+当意图调用执行模式[ExecuteMode](arkts-ability-executemode-e.md)取值为UI_ABILITY_BACKGROUND时，需要
+申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。
 
 **起始版本：** 11
 
@@ -31,7 +34,7 @@ function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.Exec
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -46,8 +49,8 @@ function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.Exec
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
-| [16000137](../errorcode-ability.md#16000137-跨设备执行意图连接失败) | Cross-device execution failed due to a connection error.<br>**适用版本：** 26.0.0 |
-| [16000138](../errorcode-ability.md#16000138-跨设备执行意图设备断连) | Device disconnected during cross-device intent execution.<br>**适用版本：** 26.0.0 |
+| [16000137](../errorcode-ability.md#16000137-跨设备执行意图连接失败) | Cross-device execution failed due to a connection error.<br>**适用版本：** 26.0.0+ |
+| [16000138](../errorcode-ability.md#16000138-跨设备执行意图设备断连) | Device disconnected during cross-device intent execution.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 
@@ -91,7 +94,10 @@ function execute(param: ExecuteParam, callback: AsyncCallback<insightIntent.Exec
 function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>
 ```
 
-执行意图调用的接口。使用Promise异步回调。 当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。 当意图调用执行模式[ExecuteMode](arkts-ability-executemode-e.md#executemode)取值为UI_ABILITY_BACKGROUND时，需要 申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。
+执行意图调用的接口。使用Promise异步回调。
+当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。
+当意图调用执行模式[ExecuteMode](arkts-ability-executemode-e.md)取值为UI_ABILITY_BACKGROUND时，需要
+申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。
 
 **起始版本：** 11
 
@@ -121,7 +127,7 @@ function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -136,8 +142,8 @@ function execute(param: ExecuteParam): Promise<insightIntent.ExecuteResult>
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
-| [16000137](../errorcode-ability.md#16000137-跨设备执行意图连接失败) | Cross-device execution failed due to a connection error.<br>**适用版本：** 26.0.0 |
-| [16000138](../errorcode-ability.md#16000138-跨设备执行意图设备断连) | Device disconnected during cross-device intent execution.<br>**适用版本：** 26.0.0 |
+| [16000137](../errorcode-ability.md#16000137-跨设备执行意图连接失败) | Cross-device execution failed due to a connection error.<br>**适用版本：** 26.0.0+ |
+| [16000138](../errorcode-ability.md#16000138-跨设备执行意图设备断连) | Device disconnected during cross-device intent execution.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 

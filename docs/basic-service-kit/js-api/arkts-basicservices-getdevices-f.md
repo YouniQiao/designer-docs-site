@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## getDevices
@@ -12,7 +12,13 @@ import { usbManager } from '@ohos.usbManager';
 function getDevices(): Array<Readonly<USBDevice>>
 ```
 
-Obtains the list of USB devices connected to the host. > **NOTE** > > Third-party applications are not allowed to obtain the device serial number from the **serial** field unless they > request permission using [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) > and then initiate a control transfer to obtain it.
+Obtains the list of USB devices connected to the host.
+
+> **NOTE**
+>
+> Third-party applications are not allowed to obtain the device serial number from the **serial** field unless they
+> request permission using [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)
+> and then initiate a control transfer to obtain it.
 
 **Since:** 9
 
@@ -28,7 +34,7 @@ Obtains the list of USB devices connected to the host. > **NOTE** > > Third-part
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 **Example**
 

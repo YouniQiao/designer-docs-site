@@ -12,7 +12,9 @@ Enumerates the type of information returned by an asset query operation.
 ALL = 0
 ```
 
-The query result contains the asset in plaintext and its attributes. **Note**: Use this option when you need to query the plaintext of a single asset.
+The query result contains the asset in plaintext and its attributes.
+
+**Note**: Use this option when you need to query the plaintext of a single asset.
 
 **Since:** 11
 
@@ -26,7 +28,9 @@ The query result contains the asset in plaintext and its attributes. **Note**: U
 ATTRIBUTES = 1
 ```
 
-The query result contains only the asset attributes. **Note**: Use this option when you need to query attributes of multiple assets.
+The query result contains only the asset attributes.
+
+**Note**: Use this option when you need to query attributes of multiple assets.
 
 **Since:** 11
 

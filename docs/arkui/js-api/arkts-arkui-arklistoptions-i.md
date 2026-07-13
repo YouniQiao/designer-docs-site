@@ -9,7 +9,7 @@ Provides basic parameters for creating an **ArcList** component.
 ## Modules to Import
 
 ```TypeScript
-import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@ohos.arkui.ArcList';
+import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@kit.ArkUI';
 ```
 
 ## header
@@ -34,7 +34,10 @@ Header component.
 initialIndex?: number
 ```
 
-Item displayed at the beginning of the viewport when the **ArcList** component is loaded for the first time, that is, the first item to be displayed.<br/>Default value: **0**<br/> **NOTE**<br/>If the set value is a negative number or is greater than the index of the last item, the value is invalid. In this case, the default value will be used.
+Item displayed at the beginning of the viewport when the **ArcList** component is loaded
+for the first time, that is, the first item to be displayed.<br/>Default value: **0**<br/>
+**NOTE**<br/>If the set value is a negative number or is greater than the index of the last
+item, the value is invalid. In this case, the default value will be used.
 
 **Type:** number
 
@@ -50,7 +53,9 @@ Item displayed at the beginning of the viewport when the **ArcList** component i
 scroller?: Scroller
 ```
 
-Controller of the scrollable component. After being bound to **ArcList**, the controller can control the scrolling of **ArcList**.<br/>**NOTE**<br/>The scroller cannot be bound to other scrollable components.
+Controller of the scrollable component. After being bound to **ArcList**, the controller
+can control the scrolling of **ArcList**.<br/>**NOTE**<br/>The scroller cannot be bound to
+other scrollable components.
 
 **Type:** Scroller
 

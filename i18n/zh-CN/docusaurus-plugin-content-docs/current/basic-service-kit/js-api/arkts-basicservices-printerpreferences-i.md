@@ -26,7 +26,9 @@ borderless?: boolean
 defaultCollate?: boolean
 ```
 
-表示默认出纸顺序。true表示逐份打印，false表示逐页打印。默认值为逐份。 **模型约束：** 此接口仅可在Stage模型下使用。
+表示默认出纸顺序。true表示逐份打印，false表示逐页打印。默认值为逐份。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** boolean
 
@@ -42,7 +44,9 @@ defaultCollate?: boolean
 defaultColorMode?: PrintColorMode
 ```
 
-表示默认色彩模式。默认值为黑白。 **模型约束：** 此接口仅可在Stage模型下使用。
+表示默认色彩模式。默认值为黑白。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** PrintColorMode
 
@@ -128,7 +132,9 @@ defaultPrintQuality?: PrintQuality
 defaultReverse?: boolean
 ```
 
-表示默认打印顺序。true表示逆序打印，false表示正序打印。默认值为正序打印。 **模型约束：** 此接口仅可在Stage模型下使用。
+表示默认打印顺序。true表示逆序打印，false表示正序打印。默认值为正序打印。
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **类型：** boolean
 

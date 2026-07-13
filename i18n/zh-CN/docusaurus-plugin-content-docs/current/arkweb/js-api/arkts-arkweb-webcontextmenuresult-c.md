@@ -12,7 +12,8 @@ Defines the context menu result, related to {@link WebContextMenuResult} method.
 closeContextMenu(): void
 ```
 
-在WebContextMenuResult中无其他调用且需要关闭上下文菜单时， 开发者需调用此函数关闭菜单。
+在WebContextMenuResult中无其他调用且需要关闭上下文菜单时，
+开发者需调用此函数关闭菜单。
 
 **起始版本：** 9
 
@@ -54,7 +55,8 @@ copy(): void
 copyImage(): void
 ```
 
-若WebContextMenuParam包含图片内容，该函数将复制当前上下文菜单对应的图片。 若WebContextMenuParam不包含图片内容，则该函数不执行任何操作。
+若WebContextMenuParam包含图片内容，该函数将复制当前上下文菜单对应的图片。
+若WebContextMenuParam不包含图片内容，则该函数不执行任何操作。
 
 **起始版本：** 9
 

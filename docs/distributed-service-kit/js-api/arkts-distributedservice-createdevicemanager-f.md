@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
+import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## createDeviceManager
@@ -12,7 +12,8 @@ import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
 function createDeviceManager(bundleName: string): DeviceManager
 ```
 
-Creates a **DeviceManager** instance. The **DeviceManager** instance is the entry for invoking the APIs for distributed device management. It can be used to obtain information about trusted devices and local devices.
+Creates a **DeviceManager** instance. The **DeviceManager** instance is the entry for invoking the APIs for
+distributed device management. It can be used to obtain information about trusted devices and local devices.
 
 **Since:** 10
 

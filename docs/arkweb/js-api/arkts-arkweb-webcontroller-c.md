@@ -262,7 +262,9 @@ Loads the given URL.
 onActive(): void
 ```
 
-Called when the **Web** component enters the active state. This API is supported since API version 8 and deprecated since API version 9. You are advised to use [onActive<sup>9+</sup>](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#onactive-1) instead.
+Called when the **Web** component enters the active state.
+This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+[onActive<sup>9+</sup>](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#onactive-1) instead.
 
 **Since:** 8
 
@@ -278,7 +280,9 @@ Called when the **Web** component enters the active state. This API is supported
 onInactive(): void
 ```
 
-Called when the **Web** component enters the inactive state. This API is supported since API version 8 and deprecated since API version 9. You are advised to use [onInactive<sup>9+</sup>](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#oninactive-1) instead.
+Called when the **Web** component enters the inactive state.
+This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+[onInactive<sup>9+</sup>](../arkts-apis/arkts-arkweb-webviewcontroller-c.md#oninactive-1) instead.
 
 **Since:** 8
 
@@ -348,7 +352,14 @@ Gets the request focus.
 runJavaScript(options: { script: string, callback?: (result: string) => void })
 ```
 
-Asynchronously execute JavaScript in the context of the currently displayed page. The result of the script execution will be returned through an asynchronous callback. This method must be used on the UI thread, and the callback will also be invoked on the UI thread. <p><strong>API Note</strong>:<br> The state of JavaScript is no longer persisted across navigations like loadUrl. For example, global variables and functions defined before calling loadUrl will not exist in the loaded page. It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations. <p>
+Asynchronously execute JavaScript in the context of the currently displayed page.
+The result of the script execution will be returned through an asynchronous callback.
+This method must be used on the UI thread, and the callback will also be invoked on the UI thread.
+<p><strong>API Note</strong>:<br>
+The state of JavaScript is no longer persisted across navigations like loadUrl.
+For example, global variables and functions defined before calling loadUrl will not exist in the loaded page.
+It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations.
+<p>
 
 **Since:** 8
 

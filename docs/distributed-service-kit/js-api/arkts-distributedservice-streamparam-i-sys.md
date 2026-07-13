@@ -11,7 +11,7 @@ Streaming configuration parameters.
 ## Modules to Import
 
 ```TypeScript
-import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnectionManager';
+import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
 ## bitrate
@@ -38,7 +38,9 @@ This value indicates video bitrate, default 80(kbps). Only valid on the sender s
 colorSpaceConversionTarget?: colorSpaceManager.ColorSpace
 ```
 
-The target color space for conversion. Currently, only BT709_LIMIT is supported. If the video format on the sender side is HDR and needs to be converted to SDR during transmission, this parameter should be set.
+The target color space for conversion. Currently, only BT709_LIMIT is supported.
+If the video format on the sender side is HDR and needs to be converted to SDR during transmission, this
+parameter should be set.
 
 **Type:** colorSpaceManager.ColorSpace
 

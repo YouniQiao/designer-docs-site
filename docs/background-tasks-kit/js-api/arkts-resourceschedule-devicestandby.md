@@ -1,6 +1,7 @@
 # @ohos.resourceschedule.deviceStandby
 
-Provides methods for managing device standby, including the methods for querying standby status and exemption list.
+Provides methods for managing device standby,
+including the methods for querying standby status and exemption list.
 
 **Since:** 10
 
@@ -14,25 +15,31 @@ import { deviceStandby } from '@kit.BackgroundTasksKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getExemptedApps](arkts-devicestandby-getexemptedapps-f-sys.md#getExemptedApps-1) | Returns the information about the specified exempted application. |
-| <!--DelRow-->[getExemptedApps](arkts-devicestandby-getexemptedapps-f-sys.md#getExemptedApps-2) | Returns the information about the specified exempted application. |
-| <!--DelRow-->[releaseExemptionResource](arkts-devicestandby-releaseexemptionresource-f-sys.md#releaseExemptionResource-1) | Releases exemption resources. |
-| <!--DelRow-->[requestExemptionResource](arkts-devicestandby-requestexemptionresource-f-sys.md#requestExemptionResource-1) | Requests exemption resources. |
+| [getExemptedApps](arkts-backgroundtasks-getexemptedapps-f-sys.md#getexemptedapps-1) | Returns the information about the specified exempted application. |
+| [getExemptedApps](arkts-backgroundtasks-getexemptedapps-f-sys.md#getexemptedapps-2) | Returns the information about the specified exempted application. |
+| [releaseExemptionResource](arkts-backgroundtasks-releaseexemptionresource-f-sys.md#releaseexemptionresource-1) | Releases exemption resources. |
+| [requestExemptionResource](arkts-backgroundtasks-requestexemptionresource-f-sys.md#requestexemptionresource-1) | Requests exemption resources. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[ExemptedAppInfo](arkts-devicestandby-exemptedappinfo-i-sys.md) | Information about an exempted application. |
-| <!--DelRow-->[ResourceRequest](arkts-devicestandby-resourcerequest-i-sys.md) | The request of standby resources. |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ResourceType](arkts-devicestandby-resourcetype-e-sys.md) | The type of exemption resources requested by the application. |
+| [ExemptedAppInfo](arkts-backgroundtasks-exemptedappinfo-i-sys.md) | Information about an exempted application. |
+| [ResourceRequest](arkts-backgroundtasks-resourcerequest-i-sys.md) | The request of standby resources. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ResourceType](arkts-backgroundtasks-resourcetype-e-sys.md) | The type of exemption resources requested by the application. |
+<!--DelEnd-->
 

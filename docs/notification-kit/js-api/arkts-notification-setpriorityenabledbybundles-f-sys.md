@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setPriorityEnabledByBundles
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function setPriorityEnabledByBundles(switches: Map<BundleOption, boolean>): Promise<void>
 ```
 
-Sets whether priority notifications are enabled for applications in batches. This API uses a promise to return the result.
+Sets whether priority notifications are enabled for applications in batches. This API uses a promise to return the
+result.
 
 **Since:** 23
 

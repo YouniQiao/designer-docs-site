@@ -1,6 +1,8 @@
 # CanvasPattern
 
-**CanvasPattern** represents an object, created by the [createPattern](CanvasRenderingContext2D#createPattern) API, describing an image filling pattern based on the image and repetition mode.
+**CanvasPattern** represents an object, created by the
+[createPattern](CanvasRenderingContext2D#createPattern)
+API, describing an image filling pattern based on the image and repetition mode.
 
 **Since:** 8
 
@@ -12,7 +14,8 @@
 setTransform(transform?: Matrix2D): void
 ```
 
-Uses a **Matrix2D** object as a parameter to perform matrix transformation on the current **CanvasPattern** object.
+Uses a **Matrix2D** object as a parameter to perform matrix transformation on the current
+**CanvasPattern** object.
 
 **Since:** 8
 

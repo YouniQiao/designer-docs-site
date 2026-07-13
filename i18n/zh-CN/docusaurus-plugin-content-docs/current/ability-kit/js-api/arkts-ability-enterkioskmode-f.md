@@ -6,7 +6,8 @@
 function enterKioskMode(context: UIAbilityContext): Promise<void>
 ```
 
-进入Kiosk模式。使用Promise异步回调。 该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
+进入Kiosk模式。使用Promise异步回调。
+该接口仅在Phone、PC/2in1和Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 **起始版本：** 20
 
@@ -30,7 +31,7 @@ function enterKioskMode(context: UIAbilityContext): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Failed to connect to the system service. |
 | [16000110](../errorcode-ability.md#16000110-当前应用不在kiosk模式的列表内) | The current application is not in Kiosk app list and cannot enter Kiosk mode. |
 | [16000111](../errorcode-ability.md#16000111-已经有应用进入了kiosk模式) | The system is already in Kiosk mode and cannot enter Kiosk mode again. |

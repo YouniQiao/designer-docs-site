@@ -12,7 +12,8 @@ Describe the notification capsule.
 capsuleButtons?: Array<NotificationIconButton>
 ```
 
-Buttons of the notification capsule of an instant task. A maximum of two buttons are supported. This parameter is left empty by default.
+Buttons of the notification capsule of an instant task. A maximum of two buttons are supported. This parameter is
+left empty by default.
 
 **Type:** Array<NotificationIconButton>
 

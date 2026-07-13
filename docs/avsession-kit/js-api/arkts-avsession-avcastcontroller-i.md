@@ -28,13 +28,13 @@ Get the playback status of the current player
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVPlaybackState> | Yes | The triggered asyncCallback when (getAVPlaybackState). |
+| callback | AsyncCallback&lt;AVPlaybackState&gt; | Yes | The triggered asyncCallback when (getAVPlaybackState). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getAVPlaybackState
 
@@ -46,7 +46,7 @@ Get the playback status of the current player
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -54,13 +54,13 @@ Get the playback status of the current player
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVPlaybackState> | (AVPlaybackState) returned through promise |
+| Promise&lt;AVPlaybackState&gt; | (AVPlaybackState) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getCurrentItem
 
@@ -78,13 +78,13 @@ Get the current playing item
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVQueueItem> | Yes | The triggered asyncCallback. |
+| callback | AsyncCallback&lt;AVQueueItem&gt; | Yes | The triggered asyncCallback. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getCurrentItem
 
@@ -96,7 +96,7 @@ Get the current playing item
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -104,13 +104,13 @@ Get the current playing item
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVQueueItem> | (AVQueueItem) returned through promise |
+| Promise&lt;AVQueueItem&gt; | (AVQueueItem) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getRecommendedResolutionLevel
 
@@ -122,7 +122,7 @@ Get recommended resolution of remote player based on each decoder.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -136,13 +136,13 @@ Get recommended resolution of remote player based on each decoder.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ResolutionLevel> | ResolutionLevel returned through promise |
+| Promise&lt;ResolutionLevel&gt; | ResolutionLevel returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getSupportedDecoders
 
@@ -154,7 +154,7 @@ Get supported decoders of remote player.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -162,13 +162,13 @@ Get supported decoders of remote player.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;DecoderType>> | (DecoderType) returned through promise |
+| Promise&lt;Array&lt;DecoderType&gt;&gt; | (DecoderType) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getSupportedHdrCapabilities
 
@@ -180,7 +180,7 @@ Get supported hdr capabilities of remote player.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -188,25 +188,25 @@ Get supported hdr capabilities of remote player.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;hdrCapability.HDRFormat>> | HDRFormat returned through promise |
+| Promise&lt;Array&lt;hdrCapability.HDRFormat&gt;&gt; | HDRFormat returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getSupportedPlaySpeeds
 
 ```TypeScript
-getSupportedPlaySpeeds(): Promise<Array<double>>
+getSupportedPlaySpeeds(): Promise<Array<number>>
 ```
 
 Get supported speed of remote player.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -214,13 +214,13 @@ Get supported speed of remote player.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;double>> | supported speed returned through promise |
+| Promise&lt;Array&lt;number&gt;&gt; | supported speed returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## getValidCommands
 
@@ -238,13 +238,13 @@ Get commands supported by the current cast controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;AVCastControlCommandType>> | Yes | The triggered asyncCallback when (  getValidCommands). |
+| callback | AsyncCallback&lt;Array&lt;AVCastControlCommandType&gt;&gt; | Yes | The triggered asyncCallback when (getValidCommands). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
 ## getValidCommands
 
@@ -262,13 +262,13 @@ Get commands supported by the current cast controller
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AVCastControlCommandType>> | array of AVCastControlCommandType promise |
+| Promise&lt;Array&lt;AVCastControlCommandType&gt;&gt; | array of AVCastControlCommandType promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
 ## off('playbackStateChange')
 
@@ -280,7 +280,7 @@ Unregister playback state changed callback
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -289,14 +289,14 @@ Unregister playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| callback | (state: AVPlaybackState) => void | No | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
+| callback | (state: AVPlaybackState) =&gt; void | No | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off
 
@@ -308,7 +308,7 @@ Unregister listener for current media item playback events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -322,8 +322,8 @@ Unregister listener for current media item playback events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off
 
@@ -331,11 +331,12 @@ Unregister listener for current media item playback events.
 off(type: 'playNext'): void
 ```
 
-Unregister playback command callback sent by remote side or media center. When canceling the callback, need to update the supported commands list.
+Unregister playback command callback sent by remote side or media center.
+When canceling the callback, need to update the supported commands list.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -349,8 +350,8 @@ Unregister playback command callback sent by remote side or media center. When c
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off
 
@@ -358,11 +359,12 @@ Unregister playback command callback sent by remote side or media center. When c
 off(type: 'playPrevious'): void
 ```
 
-Unregister playback command callback sent by remote side or media center. When canceling the callback, need to update the supported commands list.
+Unregister playback command callback sent by remote side or media center.
+When canceling the callback, need to update the supported commands list.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -376,8 +378,8 @@ Unregister playback command callback sent by remote side or media center. When c
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off('requestPlay')
 
@@ -396,14 +398,14 @@ Unregister requested playback command callback sent by remote side or media cent
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'requestPlay' | Yes | Type of the 'requestPlay' to listen for. |
-| callback | Callback&lt;AVQueueItem> | No | Used to handle 'requestPlay' command |
+| callback | Callback&lt;AVQueueItem&gt; | No | Used to handle 'requestPlay' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off('endOfStream')
 
@@ -422,14 +424,14 @@ Unregister endOfStream state callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'endOfStream' | Yes | Type of the 'endOfStream' to listen for. |
-| callback | Callback&lt;void> | No | Used to handle 'endOfStream' command |
+| callback | Callback&lt;void&gt; | No | Used to handle 'endOfStream' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off
 
@@ -441,7 +443,7 @@ Unregister listens for playback events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -455,8 +457,8 @@ Unregister listens for playback events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off('validCommandChange')
 
@@ -475,15 +477,15 @@ Unregister the valid commands of the casted session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | Callback&lt;Array&lt;AVCastControlCommandType>> | No | The callback used to handle the changes.  The callback function provides an array of AVCastControlCommandType. |
+| callback | Callback&lt;Array&lt;AVCastControlCommandType&gt;&gt; | No | The callback used to handle the changes.The callback function provides an array of AVCastControlCommandType. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception. |
-| 6600103 | The session controller does not exist. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
 ## off
 
@@ -507,8 +509,8 @@ Unregister listener for video size change event, used at remote side.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 **Example**
 
@@ -527,7 +529,7 @@ Unregister listens for playback error events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -541,14 +543,14 @@ Unregister listens for playback error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 5400101 | No memory. |
-| 5400102 | Operation not allowed. |
-| 5400103 | I/O error. |
-| 5400104 | Time out. |
-| 5400105 | Service died. |
-| 5400106 | Unsupport format. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [5400101](../../apis-media-kit/errorcode-media.md#5400101-memory-allocation-failed) | No memory. |
+| [5400102](../../apis-media-kit/errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
+| [5400103](../../apis-media-kit/errorcode-media.md#5400103-io-error) | I/O error. |
+| [5400104](../../apis-media-kit/errorcode-media.md#5400104-operation-timeout) | Time out. |
+| [5400105](../../apis-media-kit/errorcode-media.md#5400105-play-service-dead) | Service died. |
+| [5400106](../../apis-media-kit/errorcode-media.md#5400106-format-not-supported) | Unsupport format. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off('castControlGenericError')
 
@@ -560,7 +562,7 @@ Unregister listeners for cast control generic error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -575,7 +577,7 @@ Unregister listeners for cast control generic error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('castControlIoError')
 
@@ -587,7 +589,7 @@ Unregister listeners for cast control input/output error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -602,7 +604,7 @@ Unregister listeners for cast control input/output error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('castControlParsingError')
 
@@ -614,7 +616,7 @@ Unregister listeners for cast control parsing error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -629,7 +631,7 @@ Unregister listeners for cast control parsing error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('castControlDecodingError')
 
@@ -641,7 +643,7 @@ Unregister listeners for cast control decoding error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -656,7 +658,7 @@ Unregister listeners for cast control decoding error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('castControlAudioRendererError')
 
@@ -668,7 +670,7 @@ Unregister listeners for cast control audio renderer error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -683,7 +685,7 @@ Unregister listeners for cast control audio renderer error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('castControlDrmError')
 
@@ -695,7 +697,7 @@ Unregister listeners for cast control drm error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -710,7 +712,7 @@ Unregister listeners for cast control drm error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
 
 ## off('keyRequest')
 
@@ -722,7 +724,7 @@ Unregister listener for drm key request.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -737,8 +739,8 @@ Unregister listener for drm key request.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## off('customDataChange')
 
@@ -750,7 +752,7 @@ Unregister listener for custom data sent from remote device.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 20.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -759,380 +761,13 @@ Unregister listener for custom data sent from remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | Callback&lt;Record&lt;string, Object>> | No |  |
+| callback | Callback&lt;Record&lt;string, Object&gt;&gt; | No | Callback used to retrieve custom data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
-
-## offCastControlAudioRendererError
-
-```TypeScript
-offCastControlAudioRendererError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control audio renderer error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCastControlDecodingError
-
-```TypeScript
-offCastControlDecodingError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control decoding error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCastControlDrmError
-
-```TypeScript
-offCastControlDrmError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control drm error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCastControlGenericError
-
-```TypeScript
-offCastControlGenericError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control generic error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCastControlIoError
-
-```TypeScript
-offCastControlIoError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control input/output error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCastControlParsingError
-
-```TypeScript
-offCastControlParsingError(callback?: ErrorCallback): void
-```
-
-Unregister listeners for cast control parsing error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | No |  |
-
-## offCustomDataChange
-
-```TypeScript
-offCustomDataChange(callback?: Callback<Record<string, Object>>): void
-```
-
-Unregister listener for custom data sent from remote device.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;Record&lt;string, Object>> | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offEndOfStream
-
-```TypeScript
-offEndOfStream(callback?: NoParamCallback): void
-```
-
-Unregister endOfStream state callback.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | NoParamCallback | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offError
-
-```TypeScript
-offError(): void
-```
-
-Unregister listens for playback error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 5400101 | No memory. |
-| 5400102 | Operation not allowed. |
-| 5400103 | I/O error. |
-| 5400104 | Time out. |
-| 5400105 | Service died. |
-| 5400106 | Unsupport format. |
-| 6600101 | Session service exception |
-
-## offKeyRequest
-
-```TypeScript
-offKeyRequest(callback?: KeyRequestCallback): void
-```
-
-Unregister listener for drm key request.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | KeyRequestCallback | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offMediaItemChange
-
-```TypeScript
-offMediaItemChange(): void
-```
-
-Unregister listener for current media item playback events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offPlaybackStateChange
-
-```TypeScript
-offPlaybackStateChange(callback?: Callback<AVPlaybackState>): void
-```
-
-Unregister playback state changed callback
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AVPlaybackState> | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offPlayNext
-
-```TypeScript
-offPlayNext(): void
-```
-
-Unregister playback command callback sent by remote side or media center. When canceling the callback, need to update the supported commands list.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offPlayPrevious
-
-```TypeScript
-offPlayPrevious(): void
-```
-
-Unregister playback command callback sent by remote side or media center. When canceling the callback, need to update the supported commands list.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offRequestPlay
-
-```TypeScript
-offRequestPlay(callback?: Callback<AVQueueItem>): void
-```
-
-Unregister requested playback command callback sent by remote side or media center.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AVQueueItem> | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offSeekDone
-
-```TypeScript
-offSeekDone(): void
-```
-
-Unregister listens for playback events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## offValidCommandChange
-
-```TypeScript
-offValidCommandChange(callback?: Callback<Array<AVCastControlCommandType>>): void
-```
-
-Unregister the valid commands of the casted session changed callback
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;AVCastControlCommandType>> | No |  |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception. |
-| 6600103 | The session controller does not exist. |
-
-## offVideoSizeChange
-
-```TypeScript
-offVideoSizeChange(): void
-```
-
-Unregister listener for video size change event, used at remote side.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('playbackStateChange')
 
@@ -1144,7 +779,7 @@ Register playback state changed callback
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1153,15 +788,15 @@ Register playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| filter | Array&lt;keyof AVPlaybackState> \| 'all' | Yes | The properties of {@link AVPlaybackState} that you cared  about |
-| callback | (state: AVPlaybackState) => void | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
+| filter | Array&lt;keyof AVPlaybackState&gt; \| 'all' | Yes | The properties of {@link AVPlaybackState} that you caredabout |
+| callback | (state: AVPlaybackState) =&gt; void | Yes | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('mediaItemChange')
 
@@ -1173,7 +808,7 @@ Register listener for current media item playback events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1182,14 +817,14 @@ Register listener for current media item playback events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'mediaItemChange' | Yes | Type of the playback event to listen for. |
-| callback | Callback&lt;AVQueueItem> | Yes | Callback used to listen for current item changed. |
+| callback | Callback&lt;AVQueueItem&gt; | Yes | Callback used to listen for current item changed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('playNext')
 
@@ -1197,11 +832,12 @@ Register listener for current media item playback events.
 on(type: 'playNext', callback: Callback<void>): void
 ```
 
-Register playback command callback sent by remote side or media center. Application needs update the new media resource when receive these commands by using playItem.
+Register playback command callback sent by remote side or media center.
+Application needs update the new media resource when receive these commands by using playItem.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1210,14 +846,14 @@ Register playback command callback sent by remote side or media center. Applicat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playNext' | Yes | Type of the 'playNext' event to listen for. |
-| callback | Callback&lt;void> | Yes | Used to handle 'playNext' command |
+| callback | Callback&lt;void&gt; | Yes | Used to handle 'playNext' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('playPrevious')
 
@@ -1225,11 +861,12 @@ Register playback command callback sent by remote side or media center. Applicat
 on(type: 'playPrevious', callback: Callback<void>): void
 ```
 
-Register playback command callback sent by remote side or media center. Application needs update the new media resource when receive these commands by using playItem.
+Register playback command callback sent by remote side or media center.
+Application needs update the new media resource when receive these commands by using playItem.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1238,14 +875,14 @@ Register playback command callback sent by remote side or media center. Applicat
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playPrevious' | Yes | Type of the 'playPrevious' to listen for. |
-| callback | Callback&lt;void> | Yes | Used to handle 'playPrevious' command |
+| callback | Callback&lt;void&gt; | Yes | Used to handle 'playPrevious' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('requestPlay')
 
@@ -1253,7 +890,8 @@ Register playback command callback sent by remote side or media center. Applicat
 on(type: 'requestPlay', callback: Callback<AVQueueItem>): void
 ```
 
-Register requested playback command callback sent by remote side or media center. The AVQueueItem may include the requested assetId, starting position and other configurations.
+Register requested playback command callback sent by remote side or media center.
+The AVQueueItem may include the requested assetId, starting position and other configurations.
 
 **Since:** 11
 
@@ -1264,14 +902,14 @@ Register requested playback command callback sent by remote side or media center
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'requestPlay' | Yes | Type of the 'requestPlay' to listen for. |
-| callback | Callback&lt;AVQueueItem> | Yes | Used to handle 'requestPlay' command |
+| callback | Callback&lt;AVQueueItem&gt; | Yes | Used to handle 'requestPlay' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('endOfStream')
 
@@ -1279,7 +917,8 @@ Register requested playback command callback sent by remote side or media center
 on(type: 'endOfStream', callback: Callback<void>): void
 ```
 
-Register endOfStream state callback. Application needs update the new media resource when receive these commands by using playItem.
+Register endOfStream state callback.
+Application needs update the new media resource when receive these commands by using playItem.
 
 **Since:** 11
 
@@ -1290,26 +929,26 @@ Register endOfStream state callback. Application needs update the new media reso
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'endOfStream' | Yes | Type of the 'endOfStream' to listen for. |
-| callback | Callback&lt;void> | Yes | Used to handle 'endOfStream' command |
+| callback | Callback&lt;void&gt; | Yes | Used to handle 'endOfStream' command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('seekDone')
 
 ```TypeScript
-on(type: 'seekDone', callback: Callback<int>): void
+on(type: 'seekDone', callback: Callback<number>): void
 ```
 
 Register listens for playback events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1318,14 +957,14 @@ Register listens for playback events.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'seekDone' | Yes | Type of the 'seekDone' to listen for. |
-| callback | Callback&lt;int> | Yes | Callback used to listen for the playback seekDone event. |
+| callback | Callback&lt;number&gt; | Yes | Callback used to listen for the playback seekDone event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('validCommandChange')
 
@@ -1344,20 +983,20 @@ Register the valid commands of the casted session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | Callback&lt;Array&lt;AVCastControlCommandType>> | Yes | The callback used to handle the changes.  The callback function provides an array of AVCastControlCommandType. |
+| callback | Callback&lt;Array&lt;AVCastControlCommandType&gt;&gt; | Yes | The callback used to handle the changes.The callback function provides an array of AVCastControlCommandType. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception. |
-| 6600103 | The session controller does not exist. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
 
 ## on('videoSizeChange')
 
 ```TypeScript
-on(type: 'videoSizeChange', callback: (width: int, height: int) => void): void
+on(type: 'videoSizeChange', callback: (width: number, height: number) => void): void
 ```
 
 Register listener for video size change event, used at remote side.
@@ -1371,14 +1010,14 @@ Register listener for video size change event, used at remote side.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'videoSizeChange' | Yes | Type of the 'videoSizeChange' to listen for. |
-| callback | (width: int, height: int) => void | Yes | Callback used to return video size. |
+| callback | (width: number, height: number) =&gt; void | Yes | Callback used to return video size. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 **Example**
 
@@ -1400,7 +1039,7 @@ Register listeners for playback error events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1415,14 +1054,14 @@ Register listeners for playback error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 5400101 | No memory. |
-| 5400102 | Operation not allowed. |
-| 5400103 | I/O error. |
-| 5400104 | Time out. |
-| 5400105 | Service died. |
-| 5400106 | Unsupport format. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [5400101](../../apis-media-kit/errorcode-media.md#5400101-memory-allocation-failed) | No memory. |
+| [5400102](../../apis-media-kit/errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
+| [5400103](../../apis-media-kit/errorcode-media.md#5400103-io-error) | I/O error. |
+| [5400104](../../apis-media-kit/errorcode-media.md#5400104-operation-timeout) | Time out. |
+| [5400105](../../apis-media-kit/errorcode-media.md#5400105-play-service-dead) | Service died. |
+| [5400106](../../apis-media-kit/errorcode-media.md#5400106-format-not-supported) | Unsupport format. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('castControlGenericError')
 
@@ -1434,7 +1073,7 @@ Register listeners for cast control generic error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1449,21 +1088,21 @@ Register listeners for cast control generic error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6611000 | The error code for cast control is unspecified. |
-| 6611001 | An unspecified error occurs in the remote player. |
-| 6611002 | The playback position falls behind the live window. |
-| 6611003 | The process of cast control times out. |
-| 6611004 | The runtime check failed. |
-| 6611100 | Cross-device data transmission is locked. |
-| 6611101 | The specified seek mode is not supported. |
-| 6611102 | The position to seek to is out of the range of the media asset  or the specified seek mode is not supported. |
-| 6611103 | The specified playback mode is not supported. |
-| 6611104 | The specified playback speed is not supported. |
-| 6611105 | The action failed because either the media source device or the media sink  device has been revoked. |
-| 6611106 | The parameter is invalid, for example, the url is illegal to play. |
-| 6611107 | Allocation of memory failed. |
-| 6611108 | Operation is not allowed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6611000](../errorcode-avsession.md#6611000-unknown-error-in-the-cast-controller) | The error code for cast control is unspecified. |
+| [6611001](../errorcode-avsession.md#6611001-unknown-error-in-the-remote-device) | An unspecified error occurs in the remote player. |
+| [6611002](../errorcode-avsession.md#6611002-loading-position-exceeds-the-total-video-progress) | The playback position falls behind the live window. |
+| [6611003](../errorcode-avsession.md#6611003-cast-controller-loading-timeout) | The process of cast control times out. |
+| [6611004](../errorcode-avsession.md#6611004-runtime-check-failure) | The runtime check failed. |
+| [6611100](../errorcode-avsession.md#6611100-crossdevice-data-transmission-locked) | Cross-device data transmission is locked. |
+| [6611101](../errorcode-avsession.md#6611101-unsupported-seek-mode) | The specified seek mode is not supported. |
+| [6611102](../errorcode-avsession.md#6611102-invalid-seek-target) | The position to seek to is out of the range of the media assetor the specified seek mode is not supported. |
+| [6611103](../errorcode-avsession.md#6611103-unsupported-playback-mode) | The specified playback mode is not supported. |
+| [6611104](../errorcode-avsession.md#6611104-unsupported-playback-speed) | The specified playback speed is not supported. |
+| [6611105](../errorcode-avsession.md#6611105-device-revocation) | The action failed because either the media source device or the media sinkdevice has been revoked. |
+| [6611106](../errorcode-avsession.md#6611106-invalid-input-parameter) | The parameter is invalid, for example, the url is illegal to play. |
+| [6611107](../errorcode-avsession.md#6611107-memory-allocation-failure) | Allocation of memory failed. |
+| [6611108](../errorcode-avsession.md#6611108-operation-not-allowed) | Operation is not allowed. |
 
 ## on('castControlIoError')
 
@@ -1475,7 +1114,7 @@ Register listeners for cast control input/output error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1490,24 +1129,24 @@ Register listeners for cast control input/output error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6612000 | An unspecified input/output error occurs. |
-| 6612001 | Network connection failure. |
-| 6612002 | Network timeout. |
-| 6612003 | Invalid "Content-Type" HTTP header. |
-| 6612004 | The HTTP server returns an unexpected HTTP response status code. |
-| 6612005 | The file does not exist. |
-| 6612006 | No permission is granted to perform the IO operation. |
-| 6612007 | Access to cleartext HTTP traffic is not allowed by the app's network security  configuration. |
-| 6612008 | Reading data out of the data bound. |
-| 6612100 | The media does not contain any contents that can be played. |
-| 6612101 | The media cannot be read, for example, because of dust or scratches. |
-| 6612102 | This resource is already in use. |
-| 6612103 | The content using the validity interval has expired. |
-| 6612104 | Using the requested content to play is not allowed. |
-| 6612105 | The use of the allowed content cannot be verified. |
-| 6612106 | The number of times this content has been used as requested has reached the  maximum allowed number of uses. |
-| 6612107 | An error occurs when sending packet from source device to sink device. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6612000](../errorcode-avsession.md#6612000-unknown-io-error) | An unspecified input/output error occurs. |
+| [6612001](../errorcode-avsession.md#6612001-network-connection-failure) | Network connection failure. |
+| [6612002](../errorcode-avsession.md#6612002-network-timeout) | Network timeout. |
+| [6612003](../errorcode-avsession.md#6612003-invalid-contenttype-http-header) | Invalid "Content-Type" HTTP header. |
+| [6612004](../errorcode-avsession.md#6612004-unexpected-http-response-status-code-from-the-http-server) | The HTTP server returns an unexpected HTTP response status code. |
+| [6612005](../errorcode-avsession.md#6612005-file-does-not-exist) | The file does not exist. |
+| [6612006](../errorcode-avsession.md#6612006-no-permission-for-io-operations) | No permission is granted to perform the IO operation. |
+| [6612007](../errorcode-avsession.md#6612007-operation-not-allowed-by-network-security-configuration) | Access to cleartext HTTP traffic is not allowed by the app's network securityconfiguration. |
+| [6612008](../errorcode-avsession.md#6612008-data-to-read-out-of-range) | Reading data out of the data bound. |
+| [6612100](../errorcode-avsession.md#6612100-no-playable-content) | The media does not contain any contents that can be played. |
+| [6612101](../errorcode-avsession.md#6612101-failure-in-reading-media-assets) | The media cannot be read, for example, because of dust or scratches. |
+| [6612102](../errorcode-avsession.md#6612102-resource-is-being-used) | This resource is already in use. |
+| [6612103](../errorcode-avsession.md#6612103-content-expired) | The content using the validity interval has expired. |
+| [6612104](../errorcode-avsession.md#6612104-requested-content-cannot-be-used) | Using the requested content to play is not allowed. |
+| [6612105](../errorcode-avsession.md#6612105-unable-to-verify-the-allowed-content) | The use of the allowed content cannot be verified. |
+| [6612106](../errorcode-avsession.md#6612106-frequent-resource-usage) | The number of times this content has been used as requested has reached themaximum allowed number of uses. |
+| [6612107](../errorcode-avsession.md#6612107-failure-in-sending-resource-packages-to-the-remote-device) | An error occurs when sending packet from source device to sink device. |
 
 ## on('castControlParsingError')
 
@@ -1519,7 +1158,7 @@ Register listeners for cast control parsing error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1534,12 +1173,12 @@ Register listeners for cast control parsing error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6613000 | Unspecified error related to content parsing. |
-| 6613001 | Parsing error associated with media container format bit streams. |
-| 6613002 | Parsing error associated with the media manifest. |
-| 6613003 | An error occurs when attempting to extract a file with an unsupported media  container format  or an unsupported media container feature. |
-| 6613004 | Unsupported feature in the media manifest. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6613000](../errorcode-avsession.md#6613000-unknown-parsing-error) | Unspecified error related to content parsing. |
+| [6613001](../errorcode-avsession.md#6613001-invalid-type) | Parsing error associated with media container format bit streams. |
+| [6613002](../errorcode-avsession.md#6613002-error-in-parsing-media-manifest) | Parsing error associated with the media manifest. |
+| [6613003](../errorcode-avsession.md#6613003-unsupported-media-format) | An error occurs when attempting to extract a file with an unsupported mediacontainer formator an unsupported media container feature. |
+| [6613004](../errorcode-avsession.md#6613004-unsupported-feature-in-the-media-manifest) | Unsupported feature in the media manifest. |
 
 ## on('castControlDecodingError')
 
@@ -1551,7 +1190,7 @@ Register listeners for cast control decoding error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1566,13 +1205,13 @@ Register listeners for cast control decoding error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6614000 | Unspecified decoding error. |
-| 6614001 | Decoder initialization failed. |
-| 6614002 | Decoder query failed. |
-| 6614003 | Decoding the media samples failed. |
-| 6614004 | The format of the content to decode exceeds the capabilities of the device. |
-| 6614005 | The format of the content to decode is not supported. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6614000](../errorcode-avsession.md#6614000-unknown-decoding-error) | Unspecified decoding error. |
+| [6614001](../errorcode-avsession.md#6614001-decoder-initialization-failure) | Decoder initialization failed. |
+| [6614002](../errorcode-avsession.md#6614002-decoder-query-failure) | Decoder query failed. |
+| [6614003](../errorcode-avsession.md#6614003-media-sample-decoding-failure) | Decoding the media samples failed. |
+| [6614004](../errorcode-avsession.md#6614004-content-format-is-beyond-the-device-capability) | The format of the content to decode exceeds the capabilities of the device. |
+| [6614005](../errorcode-avsession.md#6614005-decoding-of-the-content-format-is-not-supported) | The format of the content to decode is not supported. |
 
 ## on('castControlAudioRendererError')
 
@@ -1584,7 +1223,7 @@ Register listeners for cast control audio renderer error error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1599,10 +1238,10 @@ Register listeners for cast control audio renderer error error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6615000 | Unspecified errors related to the audio renderer. |
-| 6615001 | Initializing the audio renderer failed. |
-| 6615002 | The audio renderer fails to write data. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6615000](../errorcode-avsession.md#6615000-unknown-error-related-to-the-audio-renderer) | Unspecified errors related to the audio renderer. |
+| [6615001](../errorcode-avsession.md#6615001-audio-renderer-initialization-failure) | Initializing the audio renderer failed. |
+| [6615002](../errorcode-avsession.md#6615002-audio-renderer-failure-in-writing-data) | The audio renderer fails to write data. |
 
 ## on('castControlDrmError')
 
@@ -1614,7 +1253,7 @@ Register listeners for cast control drm error events.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1629,17 +1268,17 @@ Register listeners for cast control drm error events.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
-| 6616000 | Unspecified error related to DRM. |
-| 6616001 | The chosen DRM protection scheme is not supported by the device. |
-| 6616002 | Device provisioning failed. |
-| 6616003 | The DRM-protected content to play is incompatible. |
-| 6616004 | Failed to obtain a license. |
-| 6616005 | The operation is disallowed by the license policy. |
-| 6616006 | An error occurs in the DRM system. |
-| 6616007 | The device has revoked DRM privileges. |
-| 6616008 | The DRM license being loaded into the open DRM session has expired. |
-| 6616100 | An error occurs when the DRM processes the key response. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
+| [6616000](../errorcode-avsession.md#6616000-unknown-drm-error) | Unspecified error related to DRM. |
+| [6616001](../errorcode-avsession.md#6616001-device-does-not-support-the-selected-drm-solution) | The chosen DRM protection scheme is not supported by the device. |
+| [6616002](../errorcode-avsession.md#6616002-device-provisioning-failure) | Device provisioning failed. |
+| [6616003](../errorcode-avsession.md#6616003-drmprotected-content-to-play-is-incompatible) | The DRM-protected content to play is incompatible. |
+| [6616004](../errorcode-avsession.md#6616004-license-obtaining-failure) | Failed to obtain a license. |
+| [6616005](../errorcode-avsession.md#6616005-operation-not-allowed-by-the-license-policy) | The operation is disallowed by the license policy. |
+| [6616006](../errorcode-avsession.md#6616006-drm-system-error) | An error occurs in the DRM system. |
+| [6616007](../errorcode-avsession.md#6616007-drm-privileges-revoked) | The device has revoked DRM privileges. |
+| [6616008](../errorcode-avsession.md#6616008-expired-drm-license-loaded) | The DRM license being loaded into the open DRM session has expired. |
+| [6616100](../errorcode-avsession.md#6616100-error-in-processing-the-key-response) | An error occurs when the DRM processes the key response. |
 
 ## on('keyRequest')
 
@@ -1651,7 +1290,7 @@ Register listener for drm key request.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1666,8 +1305,8 @@ Register listener for drm key request.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## on('customDataChange')
 
@@ -1679,7 +1318,7 @@ Register listener for custom data sent from remote device.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 20.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1688,526 +1327,13 @@ Register listener for custom data sent from remote device.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | Callback&lt;Record&lt;string, Object>> | Yes | Callback used to retrieve custom data. |
+| callback | Callback&lt;Record&lt;string, Object&gt;&gt; | Yes | Callback used to retrieve custom data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception |
-
-## onCastControlAudioRendererError
-
-```TypeScript
-onCastControlAudioRendererError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control audio renderer error error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6615000 | Unspecified errors related to the audio renderer. |
-| 6615001 | Initializing the audio renderer failed. |
-| 6615002 | The audio renderer fails to write data. |
-
-## onCastControlDecodingError
-
-```TypeScript
-onCastControlDecodingError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control decoding error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6614000 | Unspecified decoding error. |
-| 6614001 | Decoder initialization failed. |
-| 6614002 | Decoder query failed. |
-| 6614003 | Decoding the media samples failed. |
-| 6614004 | The format of the content to decode exceeds the capabilities of the device. |
-| 6614005 | The format of the content to decode is not supported. |
-
-## onCastControlDrmError
-
-```TypeScript
-onCastControlDrmError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control drm error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6616000 | Unspecified error related to DRM. |
-| 6616001 | The chosen DRM protection scheme is not supported by the device. |
-| 6616002 | Device provisioning failed. |
-| 6616003 | The DRM-protected content to play is incompatible. |
-| 6616004 | Failed to obtain a license. |
-| 6616005 | The operation is disallowed by the license policy. |
-| 6616006 | An error occurs in the DRM system. |
-| 6616007 | The device has revoked DRM privileges. |
-| 6616008 | The DRM license being loaded into the open DRM session has expired. |
-| 6616100 | An error occurs when the DRM processes the key response. |
-
-## onCastControlGenericError
-
-```TypeScript
-onCastControlGenericError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control generic error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6611000 | The error code for cast control is unspecified. |
-| 6611001 | An unspecified error occurs in the remote player. |
-| 6611002 | The playback position falls behind the live window. |
-| 6611003 | The process of cast control times out. |
-| 6611004 | The runtime check failed. |
-| 6611100 | Cross-device data transmission is locked. |
-| 6611101 | The specified seek mode is not supported. |
-| 6611102 | The position to seek to is out of the range of the media asset  or the specified seek mode is not supported. |
-| 6611103 | The specified playback mode is not supported. |
-| 6611104 | The specified playback speed is not supported. |
-| 6611105 | The action failed because either the media source device  or the media sink device has been revoked. |
-| 6611106 | The parameter is invalid, for example, the url is illegal to play. |
-| 6611107 | Allocation of memory failed. |
-| 6611108 | Operation is not allowed. |
-
-## onCastControlIoError
-
-```TypeScript
-onCastControlIoError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control input/output error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6612000 | An unspecified input/output error occurs. |
-| 6612001 | Network connection failure. |
-| 6612002 | Network timeout. |
-| 6612003 | Invalid "Content-Type" HTTP header. |
-| 6612004 | The HTTP server returns an unexpected HTTP response status code. |
-| 6612005 | The file does not exist. |
-| 6612006 | No permission is granted to perform the IO operation. |
-| 6612007 | Access to cleartext HTTP traffic is not allowed  by the app's network security configuration. |
-| 6612008 | Reading data out of the data bound. |
-| 6612100 | The media does not contain any contents that can be played. |
-| 6612101 | The media cannot be read, for example, because of dust or scratches. |
-| 6612102 | This resource is already in use. |
-| 6612103 | The content using the validity interval has expired. |
-| 6612104 | Using the requested content to play is not allowed. |
-| 6612105 | The use of the allowed content cannot be verified. |
-| 6612106 | The number of times this content has been used as requested  has reached the maximum allowed number of uses. |
-| 6612107 | An error occurs when sending packet from source device to sink device. |
-
-## onCastControlParsingError
-
-```TypeScript
-onCastControlParsingError(callback: ErrorCallback): void
-```
-
-Register listeners for cast control parsing error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the cast control error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6613000 | Unspecified error related to content parsing. |
-| 6613001 | Parsing error associated with media container format bit streams. |
-| 6613002 | Parsing error associated with the media manifest. |
-| 6613003 | An error occurs when attempting to extract a file  with an unsupported media container format  or an unsupported media container feature. |
-| 6613004 | Unsupported feature in the media manifest. |
-
-## onCustomDataChange
-
-```TypeScript
-onCustomDataChange(callback: Callback<Record<string, Object>>): void
-```
-
-Register listener for custom data sent from remote device.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;Record&lt;string, Object>> | Yes | Callback used to retrieve custom data. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onEndOfStream
-
-```TypeScript
-onEndOfStream(callback: NoParamCallback): void
-```
-
-Register endOfStream state callback. Application needs update the new media resource when receive these commands by using playItem.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | NoParamCallback | Yes | Used to handle 'endOfStream' command |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onError
-
-```TypeScript
-onError(callback: ErrorCallback): void
-```
-
-Register listeners for playback error events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | Yes | Callback used to listen for the playback error event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 5400101 | No memory. |
-| 5400102 | Operation not allowed. |
-| 5400103 | I/O error. |
-| 5400104 | Time out. |
-| 5400105 | Service died. |
-| 5400106 | Unsupport format. |
-| 6600101 | Session service exception |
-
-## onKeyRequest
-
-```TypeScript
-onKeyRequest(callback: KeyRequestCallback): void
-```
-
-Register listener for drm key request.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | KeyRequestCallback | Yes | Callback used to request drm key. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onMediaItemChange
-
-```TypeScript
-onMediaItemChange(callback: Callback<AVQueueItem>): void
-```
-
-Register listener for current media item playback events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AVQueueItem> | Yes | Callback used to listen for current item changed. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onPlaybackStateChange
-
-```TypeScript
-onPlaybackStateChange(filter: Array<string>, callback: Callback<AVPlaybackState>): void
-```
-
-Register playback state changed callback
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| filter | Array&lt;string> | Yes | The properties of {@link AVPlaybackState} that you cared about |
-| callback | Callback&lt;AVPlaybackState> | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception. 1. Required parameters are missing.  2. Provided parameters have invalid types. |
-
-## onPlaybackStateChangeAll
-
-```TypeScript
-onPlaybackStateChangeAll(callback: Callback<AVPlaybackState>): void
-```
-
-Registers a callback to be invoked whenever the playback state changes
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AVPlaybackState> | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception. 1. Required parameters are missing.  2. Provided parameters have invalid types. |
-
-## onPlayNext
-
-```TypeScript
-onPlayNext(callback: NoParamCallback): void
-```
-
-Register playback command callback sent by remote side or media center. Application needs update the new media resource when receive these commands by using playItem.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | NoParamCallback | Yes | Used to handle 'playNext' command |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onPlayPrevious
-
-```TypeScript
-onPlayPrevious(callback: NoParamCallback): void
-```
-
-Register playback command callback sent by remote side or media center. Application needs update the new media resource when receive these commands by using playItem.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | NoParamCallback | Yes | Used to handle 'playPrevious' command |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onRequestPlay
-
-```TypeScript
-onRequestPlay(callback: Callback<AVQueueItem>): void
-```
-
-Register requested playback command callback sent by remote side or media center. The AVQueueItem may include the requested assetId, starting position and other configurations.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AVQueueItem> | Yes | Used to handle 'requestPlay' command |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onSeekDone
-
-```TypeScript
-onSeekDone(callback: Callback<int>): void
-```
-
-Register listens for playback events.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;int> | Yes | Callback used to listen for the playback seekDone event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
-
-## onValidCommandChange
-
-```TypeScript
-onValidCommandChange(callback: Callback<Array<AVCastControlCommandType>>): void
-```
-
-Register the valid commands of the casted session changed callback
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;AVCastControlCommandType>> | Yes | The callback used to handle the changes.  The callback function provides an array of AVCastControlCommandType. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception. |
-| 6600103 | The session controller does not exist. |
-
-## onVideoSizeChange
-
-```TypeScript
-onVideoSizeChange(callback: VideoSizeEvent): void
-```
-
-Register listener for video size change event, used at remote side.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | VideoSizeEvent | Yes | Callback used to return video size. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 6600101 | Session service exception |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## prepare
 
@@ -2226,15 +1352,15 @@ Load the current item and mediaUri can be null, this is needed for sink media in
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | item | AVQueueItem | Yes | media item info. |
-| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
 ## prepare
 
@@ -2246,7 +1372,7 @@ Load the current item and mediaUri can be null, this is needed for sink media in
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2260,15 +1386,15 @@ Load the current item and mediaUri can be null, this is needed for sink media in
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
 ## processMediaKeyResponse
 
@@ -2280,7 +1406,7 @@ Process the response corresponding to the media key request obtained by the appl
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2295,14 +1421,14 @@ Process the response corresponding to the media key request obtained by the appl
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
 
 ## release
 
@@ -2320,13 +1446,13 @@ Destroy the controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
 ## release
 
@@ -2338,7 +1464,7 @@ Destroy the controller
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2346,13 +1472,13 @@ Destroy the controller
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | void promise when executed successfully |
+| Promise&lt;void&gt; | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
 
 ## sendControlCommand
 
@@ -2371,16 +1497,16 @@ Send control commands to remote player
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | AVCastControlCommand | Yes | The command to be send. |
-| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600105 | Invalid session command |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
 ## sendControlCommand
 
@@ -2392,7 +1518,7 @@ Send control commands to remote player
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2406,16 +1532,16 @@ Send control commands to remote player
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600105 | Invalid session command |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
 ## sendCustomData
 
@@ -2427,7 +1553,7 @@ Sends custom data to a remote device.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 20.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2435,122 +1561,19 @@ Sends custom data to a remote device.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | Record&lt;string, Object> | Yes | Custom data populated by the application. |
+| data | Record&lt;string, Object&gt; | Yes | Custom data populated by the application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 6600101 | Session service exception.  You are advised to:1.Scheduled retry.2.Destroy the current session or session controller and re-create it. |
-
-## setDisplaySurface
-
-```TypeScript
-setDisplaySurface(surfaceId: string, callback: AsyncCallback<void>): void
-```
-
-Set a surface instance to display playing view, used at sink side.
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| surfaceId | string | Yes | surface id, video player will use this id get a surface instance. |
-| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when set surface completed. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 202 | Not System App. |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600109 | The remote connection is not established |
-
-**Example**
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-
-let surfaceID: string = '';
-media.createAVRecorder().then((avRecorder) => {
-  avRecorder.getInputSurface((surfaceId: string) => {
-    console.info('Succeeded in getting input surface.');
-    surfaceID = surfaceId;
-    if (surfaceID) {
-      avCastController.setDisplaySurface(surfaceID, () => {
-          console.info('Succeeded in setting display surface.');
-      });
-    }
-  });
-})
-
-```
-
-## setDisplaySurface
-
-```TypeScript
-setDisplaySurface(surfaceId: string): Promise<void>
-```
-
-Set a surface instance to display playing view, used at sink side.
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**System API:** This is a system API.
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| surfaceId | string | Yes | surface id, video player will use this id get a surface instance. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 202 | Not System App. |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600109 | The remote connection is not established |
-
-**Example**
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-
-let surfaceID: string = '';
-media.createAVRecorder().then((avRecorder) => {
-  avRecorder.getInputSurface((surfaceId: string) => {
-    console.info('Succeeded in getting input surface.');
-    surfaceID = surfaceId;
-    if (surfaceID) {
-      avCastController.setDisplaySurface(surfaceID).then(() => {
-        console.info('Succeeded in setting display surface.');
-      });
-    }
-  });
-})
-
-```
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception.You are advised to:1.Scheduled retry.2.Destroy the current session or session controller and re-create it. |
 
 ## start
 
@@ -2569,15 +1592,15 @@ Play the current item, should contain mediaUri otherwise the playback will fail.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | item | AVQueueItem | Yes | media item info. |
-| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 
 ## start
 
@@ -2589,7 +1612,7 @@ Play the current item, should contain mediaUri otherwise the playback will fail.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2603,13 +1626,13 @@ Play the current item, should contain mediaUri otherwise the playback will fail.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
-| 6600101 | Session service exception |
-| 6600109 | The remote connection is not established |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
+| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
 

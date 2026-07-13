@@ -6,11 +6,11 @@
 
 | Name | Description |
 | --- | --- |
-| [AttributeUpdater](arkts-attributeupdater-c.md) | 为[AttributeModifier]{@link AttributeModifier}的实现类，开发者需要自定义class继承AttributeUpdater。 其中C代表组件的构造函数类型，比如Text组件的TextInterface，Image组件的ImageInterface等，仅在使用updateConstructorParams时才需要传递C类型。 |
+| [AttributeUpdater](arkts-arkui-attributeupdater-c.md) | Represents the implementation class of AttributeModifier. You need to customize a class to inheritAttributeUpdater.C indicates the constructor type of the component, for example, TextInterface of the Text component andImageInterface of the Image component. It is required only when updateConstructorParams is used. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Initializer](arkts-initializer-t.md) | 可以将属性更新到本地的修饰器。 |
+| [Initializer](arkts-arkui-initializer-t.md) | Defines a decorator for updating attributes. |
 

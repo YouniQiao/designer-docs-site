@@ -40,7 +40,7 @@ function activateOsAccount(admin: Want, accountId: number): Promise<void>
 | [9201041](../errorcode-enterpriseDeviceManager.md#9201041-系统账号类型受限) | Restricted account. |
 | [9201046](../errorcode-enterpriseDeviceManager.md#9201046-已登录系统账号数量达到上限) | The number of signed-in accounts reaches the upper limit. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 
 **示例：**
 

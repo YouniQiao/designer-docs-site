@@ -11,7 +11,7 @@ This module provides data sharing and expansion capabilities.
 ## Modules to Import
 
 ```TypeScript
-import { DataShareExtensionAbility } from '@ohos.application.DataShareExtensionAbility';
+import { DataShareExtensionAbility } from '@kit.ArkData';
 ```
 
 ## batchInsert
@@ -190,7 +190,7 @@ Denormalizes a URI. This API can be overridden as required.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-c.md#uri) to denormalize. |
+| uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-c.md) to denormalize. |
 | callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful, thedenormalized URI is returned. If the URI passed in is returned, denormalization is not required. Ifdenormalization is not supported, **null** is returned. |
 
 **Example**
@@ -284,7 +284,7 @@ Normalizes a URI. This API can be overridden as required.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-c.md#uri) to normalize. |
+| uri | string | Yes | [URI](../../apis-arkts/arkts-apis/arkts-arkts-uri-c.md) to normalize. |
 | callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return the result. If the operation is successful, thenormalized URI is returned. Otherwise, **null** is returned. |
 
 **Example**
@@ -315,7 +315,8 @@ export default class DataShareExtAbility extends DataShareExtensionAbility {
 onCreate?(want: Want, callback: AsyncCallback<void>): void
 ```
 
-Called by the server to initialize service logic when the DataShare client connects to the DataShareExtensionAbility server. This API can be overridden as required.
+Called by the server to initialize service logic when the DataShare client connects to the
+DataShareExtensionAbility server. This API can be overridden as required.
 
 **Since:** 9
 

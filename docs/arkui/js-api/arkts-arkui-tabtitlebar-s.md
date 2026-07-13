@@ -9,7 +9,7 @@ Declaration of the tabbed title bar.
 ## Modules to Import
 
 ```TypeScript
-import { TabTitleBar, TabTitleBarTabItem, TabTitleBarMenuItem } from '@ohos.arkui.advanced.TabTitleBar';
+import { TabTitleBar, TabTitleBarTabItem, TabTitleBarMenuItem } from '@kit.ArkUI';
 ```
 
 ## menuItems
@@ -36,13 +36,14 @@ Menu items on the right side.
 swiperContent: () => void
 ```
 
-Content builder. Each component corresponds to a tab item. The builder needs to be transferred.
+Content builder. Each component corresponds to a tab item.
+The builder needs to be transferred.
 
 **Type:** () => void
 
 **Since:** 22
 
-**Decorator:** @Builder
+**Decorator:** @BuilderParam
 
 **Model restriction:** This API can be used only in the stage model.
 

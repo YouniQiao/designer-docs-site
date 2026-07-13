@@ -14,7 +14,13 @@ You need a custom class to implement the **ContentModifier** API.
 started: boolean
 ```
 
-Whether the text clock is started. **true**: The text clock is started. **false**: The text clock is disabled. Default value: **true**
+Whether the text clock is started.
+
+**true**: The text clock is started.
+
+**false**: The text clock is disabled.
+
+Default value: **true**
 
 **Type:** boolean
 
@@ -50,7 +56,11 @@ Time zone offset of the text clock in seconds from UTC.
 timeZoneOffset: number
 ```
 
-Time zone offset of the text clock. The value range is [-14, 12], indicating UTC+12 to UTC-12. A negative value indicates Eastern Standard Time, and a positive value indicates Western Standard Time. For example, **-8** indicates UTC+8. If the value is a floating point number within the value range, it is rounded off, with the decimal portion discarded.
+Time zone offset of the text clock.
+
+The value range is [-14, 12], indicating UTC+12 to UTC-12. A negative value indicates Eastern Standard Time, and a
+positive value indicates Western Standard Time. For example, **-8** indicates UTC+8. If the value is a floating
+point number within the value range, it is rounded off, with the decimal portion discarded.
 
 **Type:** number
 

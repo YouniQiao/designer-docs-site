@@ -2,6 +2,7 @@
 
 CommonInterface for ide.
 
+
 ## Common
 
 ```TypeScript
@@ -35,6 +36,7 @@ Constructor
 - [BaseEvent](arkts-arkui-common-baseevent-i.md)
 - [BindOptions](arkts-arkui-common-bindoptions-i.md)
 - [BlurOptions](arkts-arkui-common-bluroptions-i.md)
+- [BlurSnapshotOptions](arkts-arkui-common-blursnapshotoptions-i-sys.md)
 - [BlurStyleOptions](arkts-arkui-common-blurstyleoptions-i.md)
 - [BorderImageOption](arkts-arkui-common-borderimageoption-i.md)
 - [Callback](arkts-arkui-common-callback-i.md)

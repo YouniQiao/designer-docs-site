@@ -14,7 +14,13 @@
 static show(value: ActionSheetOptions)
 ```
 
-Shows an action sheet in the given settings. > **NOTE** > > Since API version 10, you can use > [showActionSheet](../arkts-apis/arkts-arkui-uicontext-c.md#showactionsheet-1) in > [UIContext](../arkts-apis/arkts-arkui-uicontext.md) to specify the UI execution context.
+Shows an action sheet in the given settings.
+
+> **NOTE**
+>
+> Since API version 10, you can use
+> [showActionSheet](../arkts-apis/arkts-arkui-uicontext-c.md#showactionsheet-1) in
+> [UIContext](../arkts-apis/arkts-arkui-uicontext.md) to specify the UI execution context.
 
 **Since:** 8
 

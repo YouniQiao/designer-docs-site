@@ -1,6 +1,7 @@
 # FilterBundleType (System API)
 
-Enumerates the types of applications to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the application types you want to listen for.
+Enumerates the types of applications to filter. It can be used with
+[AppStateFilter](arkts-ability-appstatefilter-i-sys.md) to filter the application types you want to listen for.
 
 **Since:** 21
 

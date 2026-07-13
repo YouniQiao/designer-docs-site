@@ -6,7 +6,13 @@
 function isKeyExist(keyAlias: string, options: HuksOptions, callback: AsyncCallback<boolean>): void
 ```
 
-判断密钥是否存在。使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.isKeyItemExist<sup>9+</sup>](arkts-universalkeystore-iskeyitemexist-f.md#iskeyitemexist-1) > 替代。
+判断密钥是否存在。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.isKeyItemExist<sup>9+</sup>](arkts-universalkeystore-iskeyitemexist-f.md#iskeyitemexist-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -46,7 +52,12 @@ huks.isKeyExist(keyAlias, emptyOptions, (err, data) => {
 function isKeyExist(keyAlias: string, options: HuksOptions): Promise<boolean>
 ```
 
-判断密钥是否存在。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.isKeyItemExist<sup>9+</sup>](arkts-universalkeystore-iskeyitemexist-f.md#iskeyitemexist-2)替代。
+判断密钥是否存在。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.isKeyItemExist<sup>9+</sup>](arkts-universalkeystore-iskeyitemexist-f.md#iskeyitemexist-2)替代。
 
 **起始版本：** 8
 

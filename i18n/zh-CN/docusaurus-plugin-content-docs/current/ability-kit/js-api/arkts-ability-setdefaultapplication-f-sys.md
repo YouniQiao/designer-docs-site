@@ -6,7 +6,9 @@
 function setDefaultApplication(type: string, elementName: ElementName, userId: number, callback: AsyncCallback<void>) : void
 ```
 
-根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者 [UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用callback异 步回调。
+根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者
+[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用callback异
+步回调。
 
 **起始版本：** 9
 
@@ -20,10 +22,10 @@ function setDefaultApplication(type: string, elementName: ElementName, userId: n
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
+| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
 | elementName | ElementName | 是 | 要设置为默认应用的组件信息。 |
 | userId | number | 是 | 表示用户ID，可以通过[getOsAccountLocalId接口](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)获取。 |
-| callback | AsyncCallback&lt;void&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback)，当设置默认应用成功时，err返回undefined。否则回调函数返回具体错误对象。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md)，当设置默认应用成功时，err返回undefined。否则回调函数返回具体错误对象。 |
 
 **错误码：**
 
@@ -31,8 +33,8 @@ function setDefaultApplication(type: string, elementName: ElementName, userId: n
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 | [17700025](../errorcode-bundle.md#17700025-输入的type无效) | The specified type is invalid. |
 | [17700028](../errorcode-bundle.md#17700028-输入的ability与type不匹配) | The specified ability does not match the type. |
@@ -90,7 +92,9 @@ defaultAppManager.setDefaultApplication(uniformTypeDescriptor.UniformDataType.AV
 function setDefaultApplication(type: string, elementName: ElementName, callback: AsyncCallback<void>) : void
 ```
 
-根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者 [UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用callback异 步回调。
+根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者
+[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用callback异
+步回调。
 
 **起始版本：** 9
 
@@ -104,9 +108,9 @@ function setDefaultApplication(type: string, elementName: ElementName, callback:
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
+| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
 | elementName | ElementName | 是 | 要设置为默认应用的组件信息。 |
-| callback | AsyncCallback&lt;void&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback)，当设置默认应用成功时，err返回undefined。否则回调函数返回具体错误对象。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md)，当设置默认应用成功时，err返回undefined。否则回调函数返回具体错误对象。 |
 
 **错误码：**
 
@@ -114,8 +118,8 @@ function setDefaultApplication(type: string, elementName: ElementName, callback:
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [17700025](../errorcode-bundle.md#17700025-输入的type无效) | The specified type is invalid. |
 | [17700028](../errorcode-bundle.md#17700028-输入的ability与type不匹配) | The specified ability does not match the type. |
 
@@ -171,7 +175,9 @@ defaultAppManager.setDefaultApplication(uniformTypeDescriptor.UniformDataType.AV
 function setDefaultApplication(type: string, elementName: ElementName, userId?: number) : Promise<void>
 ```
 
-根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者 [UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用Promise异步 回调。
+根据系统已定义的应用类型或者符合媒体类型格式（type/subtype）的文件类型或者
+[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型设置默认应用。使用Promise异步
+回调。
 
 **起始版本：** 9
 
@@ -185,7 +191,7 @@ function setDefaultApplication(type: string, elementName: ElementName, userId?: 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md#applicationtype)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
+| type | string | 是 | 要设置的应用类型，取[ApplicationType](arkts-ability-applicationtype-e.md)中的值，或者符合媒体类型格式的文件类型，或者[UniformDataType](@ohos.data.uniformTypeDescriptor:uniformTypeDescriptor.UniformDataType)类型。 |
 | elementName | ElementName | 是 | 要设置为默认应用的组件信息。 |
 | userId | number | 否 | 表示用户ID，可以通过[getOsAccountLocalId接口](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)获取。默认值：调用方所在用户。 |
 
@@ -201,8 +207,8 @@ function setDefaultApplication(type: string, elementName: ElementName, userId?: 
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 | [17700025](../errorcode-bundle.md#17700025-输入的type无效) | The specified type is invalid. |
 | [17700028](../errorcode-bundle.md#17700028-输入的ability与type不匹配) | The specified ability does not match the type. |

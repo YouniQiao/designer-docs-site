@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## clearPreloadedUIExtensionAbilities
@@ -12,7 +12,8 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function clearPreloadedUIExtensionAbilities(): Promise<void>
 ```
 
-Clears all preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instances in the current process. This API uses a promise to return the result.
+Clears all preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md) instances
+in the current process. This API uses a promise to return the result.
 
 **Since:** 23
 

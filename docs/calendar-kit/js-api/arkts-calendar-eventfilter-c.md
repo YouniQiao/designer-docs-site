@@ -1,6 +1,11 @@
 # EventFilter
 
-Implements an event filter. You can use [filterById()](arkts-calendar-eventfilter-c.md#filterbyid-1), [filterByTime()](arkts-calendar-eventfilter-c.md#filterbytime-1), [filterByTitle()](arkts-calendar-eventfilter-c.md#filterbytitle-1) to obtain an event filter, and then pass the filter in getEvents() for filtering.
+Implements an event filter.
+
+You can use [filterById()](arkts-calendar-eventfilter-c.md#filterbyid-1),
+[filterByTime()](arkts-calendar-eventfilter-c.md#filterbytime-1),
+[filterByTitle()](arkts-calendar-eventfilter-c.md#filterbytitle-1) to
+obtain an event filter, and then pass the filter in getEvents() for filtering.
 
 **Since:** 10
 
@@ -9,7 +14,7 @@ Implements an event filter. You can use [filterById()](arkts-calendar-eventfilte
 ## Modules to Import
 
 ```TypeScript
-import { calendarManager } from '@ohos.calendarManager';
+import { calendarManager } from '@kit.CalendarKit';
 ```
 
 ## filterById

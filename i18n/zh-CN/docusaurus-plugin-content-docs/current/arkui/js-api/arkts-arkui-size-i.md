@@ -1,8 +1,8 @@
 # Size
 
-用于返回组件布局大小的宽和高。默认单位为vp，不同的接口使用Size类型时会再定义单位，以接口定义的单位为准。
+DrawingRenderingContext的尺寸信息。
 
-**起始版本：** 11
+**起始版本：** 12
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -12,11 +12,13 @@
 height: number
 ```
 
-组件大小的高度。 单位：vp 取值范围：[0, +∞)
+获取DrawingRenderingContext的高度，其值为关联的Canvas组件的高度。
+<br>支持单位：vp、px。
+<br>默认单位为vp。
 
 **类型：** number
 
-**起始版本：** 11
+**起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
@@ -30,11 +32,13 @@ height: number
 width: number
 ```
 
-组件大小的宽度。 单位：vp 取值范围：[0, +∞)
+获取DrawingRenderingContext的宽度，其值为关联的Canvas组件的宽度。
+<br>支持单位：vp、px。
+<br>默认单位为vp。
 
 **类型：** number
 
-**起始版本：** 11
+**起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 

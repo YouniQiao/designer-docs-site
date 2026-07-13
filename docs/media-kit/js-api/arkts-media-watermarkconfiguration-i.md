@@ -12,67 +12,71 @@ Set configuration of a watermark. The position starts at top left corner.
 import { media } from '@kit.MediaKit';
 ```
 
-## top
+## height
 
 ```TypeScript
-top: int
+height?: number
 ```
 
-Offset of the watermark to the top line of pixel The value range is all integers.
+target height of the watermark in pixel
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
 ## left
 
 ```TypeScript
-left: int
+left: number
 ```
 
-Offset of the watermark to the left line of pixel The value range is all integers.
+Offset of the watermark to the left line of pixel
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## top
+
+```TypeScript
+top: number
+```
+
+Offset of the watermark to the top line of pixel
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
 ## width
 
 ```TypeScript
-width?: int
+width?: number
 ```
 
-target width of the watermark in pixel The value range is all integers.
+target width of the watermark in pixel
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## height
-
-```TypeScript
-height?: int
-```
-
-target height of the watermark in pixel The value range is all integers.
-
-**Type:** int
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## obtainAllContinuousTasks
@@ -12,7 +12,8 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function obtainAllContinuousTasks(): Promise<ContinuousTaskInfo[]>
 ```
 
-Obtains all continuous task information, including the task ID and type. This API uses a promise to return the result.
+Obtains all continuous task information, including the task ID and type. This API uses a promise to return the
+result.
 
 **Since:** 23
 

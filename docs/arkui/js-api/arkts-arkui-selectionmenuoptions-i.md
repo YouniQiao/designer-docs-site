@@ -12,7 +12,9 @@ Sets menu options.
 menuType?: MenuType
 ```
 
-Type of the custom context menu on selection. Default value: **MenuType.SELECTION_MENU**
+Type of the custom context menu on selection.
+
+Default value: **MenuType.SELECTION_MENU**
 
 **Type:** MenuType
 

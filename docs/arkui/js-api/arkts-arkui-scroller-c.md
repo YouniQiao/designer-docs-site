@@ -1,6 +1,19 @@
 # Scroller
 
-Defines a controller for scrollable container components. <p><strong>NOTE</strong> <br>1. The binding of a <em>Scroller</em> instance to a scrollable container component occurs during the component creation phase. <br>2. <em>Scroller</em> APIs can only be effectively called after the <em>Scroller</em> instance is bound to a scrollable container component. Otherwise, depending on the API called, it may have no effect or throw an exception. <br>3. For example, with aboutToAppear, this callback is executed after a new instance of a custom component is created and before its <em>build()</em> method is called. Therefore, if a scrollable component is defined within the <em>build</em> method of a custom component, the internal scrollable component has not yet been created during the <em>aboutToAppear</em> callback of that custom component, and therefore the <em>Scroller</em> APIs cannot be called effectively. </p>
+Defines a controller for scrollable container components.
+
+<p><strong>NOTE</strong>
+<br>1. The binding of a <em>Scroller</em> instance to a scrollable container component occurs during the component
+creation phase.
+<br>2. <em>Scroller</em> APIs can only be effectively called
+after the <em>Scroller</em> instance is bound to a scrollable container component.
+Otherwise, depending on the API called, it may have no effect or throw an exception.
+<br>3. For example, with aboutToAppear, this callback is executed after a new instance of a custom component is
+created and before its <em>build()</em> method is called.
+Therefore, if a scrollable component is defined within the <em>build</em> method of a custom component,
+the internal scrollable component has not yet been created during the <em>aboutToAppear</em> callback
+of that custom component, and therefore the <em>Scroller</em> APIs cannot be called effectively.
+</p>
 
 **Since:** 7
 
@@ -54,7 +67,17 @@ Obtains the content size.
 currentOffset() : OffsetResult
 ```
 
-Obtains the current scrolling offset. <p><strong>NOTE</strong> <br>1. If <em>Scroller</em> is not bound to a component, this API returns <em>undefined</em>, which is not declared in the API. You are advised to use the <em>offset</em> function. <br>2. The <em>Grid</em>, <em>List</em>, and <em>WaterFlow</em> components use a lazy loading mechanism. Before all content is fully loaded and laid out, the total content offset is estimated, and this estimation may be inaccurate. For the <em>List</em> component, the <em>childrenMainSize</em> attribute can be used to mitigate such inaccuracies. Currently, there is no solution to inaccurate estimation of the <em>Grid</em> and <em>WaterFlow</em> components. </p>
+Obtains the current scrolling offset.
+
+<p><strong>NOTE</strong>
+<br>1. If <em>Scroller</em> is not bound to a component, this API returns <em>undefined</em>,
+which is not declared in the API. You are advised to use the <em>offset</em> function.
+<br>2. The <em>Grid</em>, <em>List</em>, and <em>WaterFlow</em> components use a lazy loading mechanism.
+Before all content is fully loaded and laid out, the total content offset is estimated, and this estimation
+may be inaccurate. For the <em>List</em> component, the <em>childrenMainSize</em> attribute can be used
+to mitigate such inaccuracies. Currently, there is no solution to inaccurate estimation of the
+<em>Grid</em> and <em>WaterFlow</em> components.
+</p>
 
 **Since:** 7
 
@@ -125,7 +148,11 @@ Obtains the FrameNode corresponding to this scroller.
 getItemIndex(x: number, y: number): number
 ```
 
-Obtains the index of a child component based on coordinates. <p><strong>NOTE</strong> <br>The returned index is <em>-1</em> for invalid coordinates. </p>
+Obtains the index of a child component based on coordinates.
+
+<p><strong>NOTE</strong>
+<br>The returned index is <em>-1</em> for invalid coordinates.
+</p>
 
 **Since:** 14
 
@@ -161,7 +188,14 @@ Obtains the index of a child component based on coordinates. <p><strong>NOTE</st
 getItemRect(index: number): RectResult
 ```
 
-Obtains the size and position of a child component relative to its container. <p><strong>NOTE</strong> <br>- The value of <em>index</em> must be the index of a child component visible in the display area. Otherwise, the value is considered invalid. <br>- The value of <em>index</em> must be the index of a child component visible in the display area. Otherwise, the value is considered invalid. </p>
+Obtains the size and position of a child component relative to its container.
+
+<p><strong>NOTE</strong>
+<br>- The value of <em>index</em> must be the index of a child component visible in the display area.
+Otherwise, the value is considered invalid.
+<br>- The value of <em>index</em> must be the index of a child component visible in the display area. Otherwise,
+the value is considered invalid.
+</p>
 
 **Since:** 11
 
@@ -196,7 +230,12 @@ Obtains the size and position of a child component relative to its container. <p
 isAtEnd(): boolean
 ```
 
-Checks whether the component has scrolled to the bottom. <p><strong>NOTE</strong> <br>This API is available for the <em>ArcList</em>, <em>Scroll</em>, <em>List</em>, <em>Grid</em>, and <em>WaterFlow</em> components. </p>
+Checks whether the component has scrolled to the bottom.
+
+<p><strong>NOTE</strong>
+<br>This API is available for the <em>ArcList</em>, <em>Scroll</em>, <em>List</em>, <em>Grid</em>,
+and <em>WaterFlow</em> components.
+</p>
 
 **Since:** 10
 
@@ -240,7 +279,12 @@ Obtains the current scrolling offset.
 scrollBy(dx: Length, dy: Length)
 ```
 
-Scrolls by the specified amount. <p><strong>NOTE</strong> <br>This API is available for the <em>ArcList</em>, <em>Scroll</em>, <em>List</em>, <em>Grid</em>, and <em>WaterFlow</em> components. </p>
+Scrolls by the specified amount.
+
+<p><strong>NOTE</strong>
+<br>This API is available for the <em>ArcList</em>, <em>Scroll</em>, <em>List</em>, <em>Grid</em>,
+and <em>WaterFlow</em> components.
+</p>
 
 **Since:** 9
 
@@ -261,7 +305,9 @@ Scrolls by the specified amount. <p><strong>NOTE</strong> <br>This API is availa
 scrollEdge(value: Edge, options?: ScrollEdgeOptions)
 ```
 
-Scrolls to the edge of the container, regardless of the scroll axis direction. By default, the <em>Scroll</em> component comes with an animation, while the <em>Grid</em>, <em>List</em>, and <em>WaterFlow</em> components do not.
+Scrolls to the edge of the container, regardless of the scroll axis direction.
+By default, the <em>Scroll</em> component comes with an animation, while the <em>Grid</em>, <em>List</em>,
+and <em>WaterFlow</em> components do not.
 
 **Since:** 7
 
@@ -324,7 +370,13 @@ Scrolls to the next or previous page.
 scrollTo(options: ScrollOptions)
 ```
 
-Scrolls to the specified position. Anonymous Object Rectification. <p><strong>NOTE</strong> <br>If the scrolling speed of the <em>scrollTo</em> animation exceeds 200 vp/s, the components within the scrollable area will not respond to click events. </p>
+Scrolls to the specified position.
+Anonymous Object Rectification.
+
+<p><strong>NOTE</strong>
+<br>If the scrolling speed of the <em>scrollTo</em> animation exceeds 200 vp/s, the components within
+the scrollable area will not respond to click events.
+</p>
 
 **Since:** 7
 
@@ -344,7 +396,31 @@ Scrolls to the specified position. Anonymous Object Rectification. <p><strong>NO
 scrollToIndex(value: number, smooth?: boolean, align?: ScrollAlign, options?: ScrollToIndexOptions)
 ```
 
-Scrolls to a specified index, with support for setting an extra offset for the scroll. When smooth scrolling is enabled, all items encountered during the scroll are loaded and their layout is calculated. Loading a large number of items may cause performance issues. It is recommended that you first call <em>scrollToIndex</em> without animation to jump to a position near the target, then call it again with animation to smoothly scroll to the final target position. <p><strong>NOTE</strong> <br>This API only works for the <em>ArcList</em>, <em>Grid</em>, <em>List</em>, and <em>WaterFlow</em> components. <br>When refreshing the data source using <em>LazyForEach</em>, <em>ForEach</em>, or <em>Repeat</em>, ensure this API is called after the data refresh is complete. <br>Starting from API version 11, the <em>List</em> component supports <em>contentStartOffset</em> and <em>contentEndOffset</em>. Starting from API version 22, the <em>Grid</em> and <em>WaterFlow</em> components also support setting <em>contentStartOffset</em> and <em>contentEndOffset</em>. <br>- If the scrollable container has <em>contentStartOffset</em> set and <em>ScrollAlign</em> is <em>START</em>, after scrolling, the start of the specified item will align with the <em>contentStartOffset</em> of the container. <br>- If the scrollable container has <em>contentEndOffset</em> set and <em>ScrollAlign</em> is <em>END</em>, after scrolling, the end of the specified item will align with the <em>contentEndOffset</em> of the container. <br>- If the scrollable container has <em>contentStartOffset</em> or <em>contentEndOffset</em> set and <em>ScrollAlign</em> is <em>AUTO</em>: When the specified item is completely within the visible area, no adjustment is made. Otherwise, following the shortest-scroll-distance principle, the start of the item will align with the container's <em>contentStartOffset</em>, or the end will align with the container's <em>contentEndOffset</em>, ensuring the item is fully displayed. </p>
+Scrolls to a specified index, with support for setting an extra offset for the scroll.
+When smooth scrolling is enabled, all items encountered during the scroll are loaded and their layout
+is calculated. Loading a large number of items may cause performance issues. It is recommended that you
+first call <em>scrollToIndex</em> without animation to jump to a position near the target, then call it
+again with animation to smoothly scroll to the final target position.
+
+<p><strong>NOTE</strong>
+<br>This API only works for the <em>ArcList</em>, <em>Grid</em>, <em>List</em>, and <em>WaterFlow</em> components.
+<br>When refreshing the data source using <em>LazyForEach</em>, <em>ForEach</em>, or <em>Repeat</em>,
+ensure this API is called after the data refresh is complete.
+<br>Starting from API version 11, the <em>List</em> component supports <em>contentStartOffset</em>
+and <em>contentEndOffset</em>. Starting from API version 22, the <em>Grid</em> and <em>WaterFlow</em>
+components also support setting <em>contentStartOffset</em> and <em>contentEndOffset</em>.
+<br>- If the scrollable container has <em>contentStartOffset</em> set and <em>ScrollAlign</em> is
+<em>START</em>, after scrolling, the start of the specified item will align with the
+<em>contentStartOffset</em> of the container.
+<br>- If the scrollable container has <em>contentEndOffset</em> set and <em>ScrollAlign</em> is
+<em>END</em>, after scrolling, the end of the specified item will align with the
+<em>contentEndOffset</em> of the container.
+<br>- If the scrollable container has <em>contentStartOffset</em> or <em>contentEndOffset</em> set
+and <em>ScrollAlign</em> is <em>AUTO</em>: When the specified item is completely within the visible area,
+no adjustment is made. Otherwise, following the shortest-scroll-distance principle, the start of the item
+will align with the container's <em>contentStartOffset</em>, or the end will align with the container's
+<em>contentEndOffset</em>, ensuring the item is fully displayed.
+</p>
 
 **Since:** 7
 

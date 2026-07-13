@@ -11,7 +11,7 @@ Describes the parameters for creating a window for a UI ServiceExtensionAbility.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## subWindowOptions
@@ -20,7 +20,8 @@ import { window } from '@ohos.window';
 subWindowOptions?: SubWindowOptions
 ```
 
-Parameters used for creating a child window. There is no default value. This parameter is mandatory when **windowAttribute** is set to **SUB_WINDOW**. Otherwise, the window fails to be created.
+Parameters used for creating a child window. There is no default value. This parameter is mandatory when
+**windowAttribute** is set to **SUB_WINDOW**. Otherwise, the window fails to be created.
 
 **Type:** SubWindowOptions
 
@@ -38,7 +39,8 @@ Parameters used for creating a child window. There is no default value. This par
 systemWindowOptions?: SystemWindowOptions
 ```
 
-Parameters for creating a system window. There is no default value. This parameter is mandatory when **windowAttribute** is set to **SYSTEM_WINDOW**. Otherwise, the window fails to be created.
+Parameters for creating a system window. There is no default value. This parameter is mandatory when
+**windowAttribute** is set to **SYSTEM_WINDOW**. Otherwise, the window fails to be created.
 
 **Type:** SystemWindowOptions
 
@@ -56,7 +58,9 @@ Parameters for creating a system window. There is no default value. This paramet
 windowAttribute: ExtensionWindowAttribute
 ```
 
-Window attribute. It specifies whether the created window is a child window or a system window. When **windowAttribute** is set to **SUB_WINDOW**, **subWindowOptions** is mandatory. When **windowAttribute** is set to **SYSTEM_WINDOW**, **systemWindowOptions** is mandatory. Otherwise, the window fails to be created.
+Window attribute. It specifies whether the created window is a child window or a system window. When
+**windowAttribute** is set to **SUB_WINDOW**, **subWindowOptions** is mandatory. When **windowAttribute** is set
+to **SYSTEM_WINDOW**, **systemWindowOptions** is mandatory. Otherwise, the window fails to be created.
 
 **Type:** ExtensionWindowAttribute
 

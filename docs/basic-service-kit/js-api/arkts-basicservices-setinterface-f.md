@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## setInterface
@@ -12,7 +12,16 @@ import { usbManager } from '@ohos.usbManager';
 function setInterface(pipe: USBDevicePipe, iface: USBInterface): number
 ```
 
-Sets a USB interface. > **NOTE** > > A USB interface may have multiple selection modes and supports dynamic switching. It is used to reset the > endpoint to match the transmission type during data transmission. > > Before calling this API, call the > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > API to claim a communication interface.
+Sets a USB interface.
+
+> **NOTE**
+>
+> A USB interface may have multiple selection modes and supports dynamic switching. It is used to reset the
+> endpoint to match the transmission type during data transmission.
+>
+> Before calling this API, call the
+> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
+> API to claim a communication interface.
 
 **Since:** 9
 
@@ -36,7 +45,7 @@ Sets a USB interface. > **NOTE** > > A USB interface may have multiple selection
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 **Example**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## queryGroups
@@ -103,7 +103,8 @@ contact.queryGroups(context, (err: BusinessError, data) => {
 function queryGroups(holder: Holder, callback: AsyncCallback<Array<Group>>): void
 ```
 
-Queries all groups of a contact based on the specified holder. This API uses an asynchronous callback to return the result.
+Queries all groups of a contact based on the specified holder. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
@@ -149,7 +150,8 @@ contact.queryGroups({
 function queryGroups(context: Context, holder: Holder, callback: AsyncCallback<Array<Group>>): void
 ```
 
-Queries all groups of a contact based on the specified holder. This API uses an asynchronous callback to return the result.
+Queries all groups of a contact based on the specified holder. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

@@ -380,7 +380,8 @@ Set the passcode during pairing if the pairing type is passcode
 startCrediblePairing(): Promise<void>
 ```
 
-Starts pairing with a credible remote NearLink device. This interface does not trigger a dialog box and does not require user authorization.
+Starts pairing with a credible remote NearLink device.
+This interface does not trigger a dialog box and does not require user authorization.
 
 **Since:** 26.0.0
 

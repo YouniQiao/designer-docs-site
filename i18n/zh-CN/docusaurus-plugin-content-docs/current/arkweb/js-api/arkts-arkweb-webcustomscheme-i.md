@@ -26,7 +26,8 @@ If isCodeCacheSupported is true, then the js of this scheme can generate code ca
 isCspBypassing?: boolean
 ```
 
-If isCspBypassing is true, then this scheme can bypass Content Security Policy (CSP) checks. In most cases, this value should not be true when isStandard is true.
+If isCspBypassing is true, then this scheme can bypass Content Security Policy (CSP)
+checks. In most cases, this value should not be true when isStandard is true.
 
 **类型：** boolean
 
@@ -42,7 +43,8 @@ If isCspBypassing is true, then this scheme can bypass Content Security Policy (
 isDisplayIsolated?: boolean
 ```
 
-If isDisplayIsolated is true, then the scheme can only be displayed from other content hosted using the same scheme.
+If isDisplayIsolated is true, then the scheme can only be displayed from other content
+hosted using the same scheme.
 
 **类型：** boolean
 
@@ -58,7 +60,8 @@ If isDisplayIsolated is true, then the scheme can only be displayed from other c
 isLocal?: boolean
 ```
 
-If isLocal is true, the same security rules as those applied to the "file" URL will be used to handle the scheme.
+If isLocal is true, the same security rules as those applied to the "file" URL will be
+used to handle the scheme.
 
 **类型：** boolean
 
@@ -74,7 +77,8 @@ If isLocal is true, the same security rules as those applied to the "file" URL w
 isSecure?: boolean
 ```
 
-If isSecure is true, the same security rules as those applied to the "https" URL will be used to handle the scheme.
+If isSecure is true, the same security rules as those applied to the "https" URL will be
+used to handle the scheme.
 
 **类型：** boolean
 
@@ -90,7 +94,9 @@ If isSecure is true, the same security rules as those applied to the "https" URL
 isStandard?: boolean
 ```
 
-If isStandard is true, the scheme will be handled as a standard scheme. The standard schemes needs to comply with the URL normalization and parsing rules defined in Section 3.1 of RFC 1738, which can be found in the http://www.ietf.org/rfc/rfc1738.txt.
+If isStandard is true, the scheme will be handled as a standard scheme. The standard
+schemes needs to comply with the URL normalization and parsing rules defined in Section 3.1 of RFC 1738,
+which can be found in the http://www.ietf.org/rfc/rfc1738.txt.
 
 **类型：** boolean
 

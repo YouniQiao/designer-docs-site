@@ -1,6 +1,11 @@
 # MacSpec
 
-Represents the message authentication code (MAC) parameters. You need to construct a child class object and use it as a parameter when generating an HMAC or a CMAC. > **NOTE** > > **algName** specifies the MAC algorithm to use. It is mandatory.
+Represents the message authentication code (MAC) parameters. You need to construct a child class object and use it
+as a parameter when computing an HMAC or a CMAC.
+
+> **NOTE**
+>
+> **algName** specifies the MAC algorithm to use. It is mandatory.
 
 **Since:** 18
 
@@ -9,7 +14,7 @@ Represents the message authentication code (MAC) parameters. You need to constru
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## algName

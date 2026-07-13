@@ -1,4 +1,4 @@
-# AudioCollaborativeManager
+# AudioCollaborativeManager (System API)
 
 Implements audio collaborative management.
 
@@ -38,14 +38,14 @@ Checks whether collaborative playback is enabled for the specified device.
 
 | Type | Description |
 | --- | --- |
-| boolean | Returns the check result. The value true means that collaborative playback is enabled for  the specified device,  and false means the opposite. |
+| boolean | Returns the check result. The value true means that collaborative playback is enabled forthe specified device,and false means the opposite. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not system application. |
-| 6800101 | Parameter verification failed. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
 
 **Example**
 
@@ -102,7 +102,7 @@ Checks whether the collaborative playback is supported by system.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not system application. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 
 **Example**
 
@@ -130,7 +130,7 @@ Checks whether the collaborative playback is supported for the specified device.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -152,7 +152,7 @@ Checks whether the collaborative playback is supported for the specified device.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not system application. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 
 ## setCollaborativePlaybackEnabledForDevice
 
@@ -160,7 +160,10 @@ Checks whether the collaborative playback is supported for the specified device.
 setCollaborativePlaybackEnabledForDevice(deviceDescriptor: AudioDeviceDescriptor, enabled: boolean): Promise<void>
 ```
 
-Enables or disables collaborative playback for the specified device. Currently, only A2DP audio devices support collaborative playback. If the system is using the specified device for audio output, the audio will be played from both the local speaker and the specified device after this API is called.
+Enables or disables collaborative playback for the specified device.
+Currently, only A2DP audio devices support collaborative playback.
+If the system is using the specified device for audio output,
+the audio will be played from both the local speaker and the specified device after this API is called.
 
 **Since:** 20
 
@@ -173,21 +176,21 @@ Enables or disables collaborative playback for the specified device. Currently, 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceDescriptor | AudioDeviceDescriptor | Yes | Audio device descriptor. |
-| enabled | boolean | Yes | Whether to enable or disable collaborative playback. The value true means to enable  it, and false means to disable it. |
+| enabled | boolean | Yes | Whether to enable or disable collaborative playback. The value true means to enableit, and false means to disable it. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Not system application. |
-| 801 | Capability not supported. |
-| 6800101 | Parameter verification failed. Possible causes:  1. The specified device is not an A2DP device.  2. The specified device is not connected. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Possible causes:1. The specified device is not an A2DP device.2. The specified device is not connected. |
 
 **Example**
 

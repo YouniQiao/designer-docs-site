@@ -6,7 +6,16 @@
 function createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, dragInfo: DragInfo): DragAction
 ```
 
-创建拖拽的Action对象，需要显式指定拖拽背板图（可多个），以及拖拽的数据，跟手点等信息；当通过一个已创建的 Action 对象发起的拖拽未结束时，无法再次创建新的 Action 对象，接口会抛出异常； 当Action对象的生命周期结束后，注册在该对象上的回调函数会失效，因此需要在一个尽量长的作用域下持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。 > **说明：** > > - 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI > 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md#dragcontroller)对象。 > > - 建议控制传递的拖拽背板数量，传递过多容易导致拖起的效率问题。
+创建拖拽的Action对象，需要显式指定拖拽背板图（可多个），以及拖拽的数据，跟手点等信息；当通过一个已创建的 Action 对象发起的拖拽未结束时，无法再次创建新的 Action 对象，接口会抛出异常；
+当Action对象的生命周期结束后，注册在该对象上的回调函数会失效，因此需要在一个尽量长的作用域下持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。
+
+> **说明：**
+>
+> - 从API version 11开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
+> [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1)方法获取当前UI
+> 上下文关联的[DragController](arkts-arkui-dragcontroller-c.md)对象。
+>
+> - 建议控制传递的拖拽背板数量，传递过多容易导致拖起的效率问题。
 
 **起始版本：** 11
 
@@ -37,7 +46,7 @@ function createDragAction(customArray: Array<CustomBuilder | DragItemInfo>, drag
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-接口调用异常错误码) | Internal handling failed. |
 
 **示例：**

@@ -9,7 +9,7 @@ Declare NodeParamV2
 ## Modules to Import
 
 ```TypeScript
-import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@ohos.arkui.advanced.TreeViewV2';
+import { TreeListenerManagerV2, NodeParamV2, CallbackParamV2, TreeControllerV2, TreeViewV2, TreeListenerV2 } from '@kit.ArkUI';
 ```
 
 ## container
@@ -90,7 +90,9 @@ Set the icon resource.
 isFolder?: boolean
 ```
 
-Whether the node is a directory. Default value: false. true: The node is a directory. false: The node is not a directory.
+Whether the node is a directory.
+Default value: false.
+true: The node is a directory. false: The node is not a directory.
 
 **Type:** boolean
 

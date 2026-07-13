@@ -9,7 +9,7 @@ Provides options that can be set for the Worker instance to create.
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## name
@@ -66,7 +66,8 @@ Whether sharing of the Worker instance is enabled. Currently, sharing is not sup
 type?: 'classic' | 'module'
 ```
 
-Mode in which the Worker instance executes the script. The module type is not supported yet. The default value is classic.
+Mode in which the Worker instance executes the script. The module type is not supported yet. The default value is
+classic.
 
 **Type:** 'classic' | 'module'
 

@@ -9,7 +9,7 @@ Describes data passed in the event.
 ## Modules to Import
 
 ```TypeScript
-import { emitter } from '@ohos.events.emitter';
+import { emitter } from '@kit.BasicServicesKit';
 ```
 
 ## data
@@ -18,7 +18,9 @@ import { emitter } from '@ohos.events.emitter';
 data?: { [key: string]: any }
 ```
 
-Data carried by the emitted event. The value can be in any of the following types: Array, ArrayBuffer, Boolean, DataView, Date, Error, Map, Number, Object, Primitive (except symbol), RegExp, Set, String, and TypedArray. The maximum data size is 16 MB.
+Data carried by the emitted event. The value can be in any of the following types: Array, ArrayBuffer, Boolean,
+DataView, Date, Error, Map, Number, Object, Primitive (except symbol), RegExp, Set, String, and TypedArray. The
+maximum data size is 16 MB.
 
 **Type:** { [key: string]: any }
 

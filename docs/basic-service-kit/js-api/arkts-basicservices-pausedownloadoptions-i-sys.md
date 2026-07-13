@@ -11,7 +11,7 @@ Represents options for pausing download.
 ## Modules to Import
 
 ```TypeScript
-import { update } from '@ohos.update';
+import { update } from '@kit.BasicServicesKit';
 ```
 
 ## isAllowAutoResume
@@ -20,7 +20,9 @@ import { update } from '@ohos.update';
 isAllowAutoResume: boolean
 ```
 
-Whether to allow automatic resuming of download. The value **true** indicates that automatic resuming is allowed, and the value **false** indicates the opposite.
+Whether to allow automatic resuming of download.
+
+The value **true** indicates that automatic resuming is allowed, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

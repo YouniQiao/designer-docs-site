@@ -12,7 +12,9 @@
 offsetX?: number | Resource
 ```
 
-当前阴影的坐标X。 X轴偏移量。number类型取值范围不做限制。默认值：5。单位：vp
+当前阴影的坐标X。
+
+X轴偏移量。number类型取值范围不做限制。默认值：5。单位：vp
 
 **类型：** number | Resource
 
@@ -34,7 +36,9 @@ offsetX?: number | Resource
 offsetY?: number | Resource
 ```
 
-当前的阴影坐标Y。 X轴偏移量。number类型取值范围不做限制。默认值：5。单位：vp
+当前的阴影坐标Y。
+
+X轴偏移量。number类型取值范围不做限制。默认值：5。单位：vp
 
 **类型：** number | Resource
 
@@ -56,7 +60,9 @@ offsetY?: number | Resource
 radius?: number | Resource
 ```
 
-当前阴影半径。 API version 10及以前，默认值：5；API version 11及以后，默认值：20。单位：vp；number类型取值范围大于0；说明：设置小于等于0的值时，按默认值显示。
+当前阴影半径。
+
+API version 10及以前，默认值：5；API version 11及以后，默认值：20。单位：vp；number类型取值范围大于0；说明：设置小于等于0的值时，按默认值显示。
 
 **类型：** number | Resource
 

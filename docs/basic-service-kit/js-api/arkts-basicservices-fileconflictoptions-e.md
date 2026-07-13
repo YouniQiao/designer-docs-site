@@ -26,7 +26,8 @@ Overwrites the file with the same name in the destination path.
 SKIP = 1
 ```
 
-Skips the file with the same name in the destination path. If **SKIP** is set, the copied data of the skipped file is not pasted to the application.
+Skips the file with the same name in the destination path. If **SKIP** is set, the copied data of the skipped
+file is not pasted to the application.
 
 **Since:** 15
 

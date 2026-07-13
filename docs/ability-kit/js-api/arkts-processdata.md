@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ProcessData](arkts-processdata-c.md) | 进程数据的对象定义。使用接口 [appManager.on('applicationState')]{@link @ohos.app.ability.appManager:appManager.on(type: 'applicationState', observer: ApplicationStateObserver)} 注册生命周期变化监听后，当应用或组件的生命周期变化时，系统通过[ApplicationStateObserver]{@link ./application/ApplicationStateObserver}的 [onProcessCreated](docroot://reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated) 等方法回调给开发者。 |
+| [ProcessData](arkts-ability-processdata-c.md) | The module defines process data. If a lifecycle change listener is registered by calling[appManager.on('applicationState')](arkts-ability-on-f.md#on-1), the[onProcessCreated](../../../../reference/apis-ability-kit/js-apis-inner-application-applicationStateObserver.md#applicationstateobserveronprocesscreated) callback in [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) is invoked when the lifecycle ofan application or ability changes. |
 

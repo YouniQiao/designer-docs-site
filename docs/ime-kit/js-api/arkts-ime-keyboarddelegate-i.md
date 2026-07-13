@@ -1,6 +1,8 @@
 # KeyboardDelegate
 
-In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use
+[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
+then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ In the following API examples, you must first use [getKeyboardDelegate](arkts-im
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## off('keyDown' | 'keyUp')
@@ -147,7 +149,8 @@ off(
     ): void
 ```
 
-Disables listening for the text selection change event. This API uses an asynchronous callback to return the result.
+Disables listening for the text selection change event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 
@@ -204,7 +207,8 @@ inputMethodEngine.getKeyboardDelegate().off('textChange', (text: string) => {
 off(type: 'editorAttributeChanged', callback?: (attr: EditorAttribute) => void): void
 ```
 
-Disables listening for the edit box attribute change event. This API uses an asynchronous callback to return the result.
+Disables listening for the edit box attribute change event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -311,7 +315,7 @@ Enables listening for a keyboard event. This API uses an asynchronous callback t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyEvent' | Yes | Event type, which is **'keyEvent'**. |
-| callback | (event: InputKeyEvent) =&gt; boolean | Yes | Callback used to return the result. The input parameter is the key eventinformation and the return value is of the Boolean type.<br>- Input parameter: [InputKeyEvent](../../apis-input-kit/arkts-apis/arkts-input-keyevent-i.md#keyevent).<br>- If the event is consumed by the eventsubscriber, **true** is returned. Otherwise, **false** is returned. |
+| callback | (event: InputKeyEvent) =&gt; boolean | Yes | Callback used to return the result. The input parameter is the key eventinformation and the return value is of the Boolean type.<br>- Input parameter: [InputKeyEvent](../../apis-input-kit/arkts-apis/arkts-input-keyevent-i.md).<br>- If the event is consumed by the eventsubscriber, **true** is returned. Otherwise, **false** is returned. |
 
 **Example**
 
@@ -367,7 +371,8 @@ on(
     ): void
 ```
 
-Enables listening for the text selection change event. This API uses an asynchronous callback to return the result.
+Enables listening for the text selection change event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 
@@ -427,7 +432,8 @@ inputMethodEngine.getKeyboardDelegate().on('textChange', (text: string) => {
 on(type: 'editorAttributeChanged', callback: (attr: EditorAttribute) => void): void
 ```
 
-Enables listening for the edit box attribute change event. This API uses an asynchronous callback to return the result.
+Enables listening for the edit box attribute change event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

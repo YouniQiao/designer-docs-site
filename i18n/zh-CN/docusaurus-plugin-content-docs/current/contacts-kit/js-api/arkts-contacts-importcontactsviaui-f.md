@@ -6,7 +6,9 @@
 function importContactsViaUI(context: Context, contacts: Array<Contact>): Promise<Array<number>>
 ```
 
-通过UI交互批量导入多个联系人。 每次最多可导入100个联系人。
+通过UI交互批量导入多个联系人。
+
+每次最多可导入100个联系人。
 
 **起始版本：** 26.0.0
 
@@ -33,7 +35,7 @@ function importContactsViaUI(context: Context, contacts: Array<Contact>): Promis
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | The specified SystemCapability name was not found. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | The specified SystemCapability name was not found. |
 | [16700001](../errorcode-contacts.md#16700001-系统内部错误) | General error. |
 | [16700002](../errorcode-contacts.md#16700002-参数检查失败) | Invalid parameter value. |
 | [16700004](../errorcode-contacts.md#16700004-联系人数量超过限制) | The number of contacts exceeds the limit. |

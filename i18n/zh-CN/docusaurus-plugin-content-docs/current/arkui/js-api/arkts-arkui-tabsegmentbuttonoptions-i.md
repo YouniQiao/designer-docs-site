@@ -1,8 +1,8 @@
 # TabSegmentButtonOptions
 
-页签类分段按钮选项。继承自[TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md#tabsegmentbuttonconstructionoptions)。
+页签类分段按钮选项。继承自[TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md)。
 
-**继承/实现关系：** TabSegmentButtonOptions extends [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md#tabsegmentbuttonconstructionoptions)
+**继承/实现关系：** TabSegmentButtonOptions extends [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md)
 
 **起始版本：** 11
 
@@ -14,7 +14,13 @@
 type: "tab"
 ```
 
-分段按钮组件的类型。 **说明：** "tab"：页签类分段按钮，适用于页面或内容区域的切换场景。 "capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。
+分段按钮组件的类型。
+
+**说明：**
+
+"tab"：页签类分段按钮，适用于页面或内容区域的切换场景。
+
+"capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。
 
 **类型：** "tab"
 

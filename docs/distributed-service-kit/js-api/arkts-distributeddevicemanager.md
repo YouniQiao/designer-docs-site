@@ -1,6 +1,13 @@
 # @ohos.distributedDeviceManager
 
-本模块提供分布式设备管理能力。 应用可调用接口实现如下功能： - 注册和解除注册设备上下线变化监听。 - 发现周边不可信设备。 - 认证和取消认证设备。 - 查询可信设备列表。 - 查询本地设备信息，包括设备名称，设备类型和设备标识等。
+The **distributedDeviceManager** module provides APIs for distributed device management.
+Applications can call the APIs to:
+
+- Subscribe to or unsubscribe from device state changes.
+- Discover devices nearby.
+- Authenticate or deauthenticate a device.
+- Query the trusted device list.
+- Query local device information, including the device name, type, and ID.
 
 **Since:** 10
 
@@ -18,34 +25,42 @@ import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [createDeviceManager](arkts-distributeddevicemanager-createdevicemanager-f.md#createDeviceManager-1) | 创建一个设备管理实例。设备管理实例是分布式设备管理方法的调用入口。用于获取可信设备和本地设备的相关信息。 |
-| [releaseDeviceManager](arkts-distributeddevicemanager-releasedevicemanager-f.md#releaseDeviceManager-1) | 设备管理实例不再使用后，通过该方法释放DeviceManager实例。 |
+| [createDeviceManager](arkts-distributedservice-createdevicemanager-f.md#createdevicemanager-1) | Creates a **DeviceManager** instance. The **DeviceManager** instance is the entry for invoking the APIs fordistributed device management. It can be used to obtain information about trusted devices and local devices. |
+| [releaseDeviceManager](arkts-distributedservice-releasedevicemanager-f.md#releasedevicemanager-1) | Releases a **DeviceManager** instance that is no longer used. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BindTargetResult](arkts-distributeddevicemanager-bindtargetresult-i.md) | 认证设备结果信息。 |
-| [DeviceBasicInfo](arkts-distributeddevicemanager-devicebasicinfo-i.md) | 分布式设备基本信息。 |
-| <!--DelRow-->[DeviceIconInfo](arkts-distributeddevicemanager-deviceiconinfo-i-sys.md) | 设备图标信息。 |
-| <!--DelRow-->[DeviceIconInfoFilterOptions](arkts-distributeddevicemanager-deviceiconinfofilteroptions-i-sys.md) | 设备图标信息过滤选项。 |
-| <!--DelRow-->[DeviceIdentification](arkts-distributeddevicemanager-deviceidentification-i-sys.md) | 用于分布式设备识别的结构体。 |
-| [DeviceManager](arkts-distributeddevicemanager-devicemanager-i.md) | 设备管理实例，用于获取可信设备和本地设备的相关信息。在调用DeviceManager的方法前，需要先通过createDeviceManager构建一个DeviceManager实例dmInstance。 |
-| [DeviceNameChangeResult](arkts-distributeddevicemanager-devicenamechangeresult-i.md) | 设备名字改变结果信息。 |
-| <!--DelRow-->[DeviceProfileInfo](arkts-distributeddevicemanager-deviceprofileinfo-i-sys.md) | 设备信息。 |
-| <!--DelRow-->[DeviceProfileInfoFilterOptions](arkts-distributeddevicemanager-deviceprofileinfofilteroptions-i-sys.md) | 设备信息过滤器选项。 |
-| [DeviceStateChangeResult](arkts-distributeddevicemanager-devicestatechangeresult-i.md) | 设备状态改变结果信息。 |
-| [DiscoveryFailureResult](arkts-distributeddevicemanager-discoveryfailureresult-i.md) | 设备发现失败原因。 |
-| [DiscoverySuccessResult](arkts-distributeddevicemanager-discoverysuccessresult-i.md) | 设备发现成功，发现的设备信息。 |
-| <!--DelRow-->[NetworkIdQueryFilter](arkts-distributeddevicemanager-networkidqueryfilter-i-sys.md) | 设备网络ID过滤器选项。 |
-| <!--DelRow-->[ReplyResult](arkts-distributeddevicemanager-replyresult-i-sys.md) | 分布式设备基本信息。 |
-| [ServiceDieData](arkts-distributeddevicemanager-servicediedata-i.md) | DeviceManager 服务进程退出信息。 |
-| <!--DelRow-->[ServiceProfileInfo](arkts-distributeddevicemanager-serviceprofileinfo-i-sys.md) | 服务配置信息。根据云端返回的数据填充。 |
+| [DeviceBasicInfo](arkts-distributedservice-devicebasicinfo-i.md) | Represents the basic information about a distributed device. |
+| [DeviceManager](arkts-distributedservice-devicemanager-i.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,**dmInstance**. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DeviceIconInfo](arkts-distributedservice-deviceiconinfo-i-sys.md) | Defines the device icon information. |
+| [DeviceIconInfoFilterOptions](arkts-distributedservice-deviceiconinfofilteroptions-i-sys.md) | Defines the device icon information filter options. |
+| [DeviceIdentification](arkts-distributedservice-deviceidentification-i-sys.md) | Struct for distributed device identification. |
+| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in**DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example,**dmInstance**. |
+| [DeviceProfileInfo](arkts-distributedservice-deviceprofileinfo-i-sys.md) | Defines the device profile information. |
+| [DeviceProfileInfoFilterOptions](arkts-distributedservice-deviceprofileinfofilteroptions-i-sys.md) | Defines device profile information filter options. |
+| [NetworkIdQueryFilter](arkts-distributedservice-networkidqueryfilter-i-sys.md) | Defines the network ID filter options. |
+| [ServiceProfileInfo](arkts-distributedservice-serviceprofileinfo-i-sys.md) | Defines the service profile information. It is populated based on the data returned from the cloud. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DeviceStateChange](arkts-distributeddevicemanager-devicestatechange-e.md) | 表示设备状态。 |
-| <!--DelRow-->[StrategyForHeartbeat](arkts-distributeddevicemanager-strategyforheartbeat-e-sys.md) | 表示心跳广播策略。 |
+| [DeviceStateChange](arkts-distributedservice-devicestatechange-e.md) | Enumerates the device states. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [StrategyForHeartbeat](arkts-distributedservice-strategyforheartbeat-e-sys.md) | Defines the heartbeat broadcast policy. |
+<!--DelEnd-->
 

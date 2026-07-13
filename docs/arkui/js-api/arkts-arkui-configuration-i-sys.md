@@ -9,7 +9,7 @@ Defines the parameters for creating a child window or system window.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## defaultDensityEnabled
@@ -18,7 +18,21 @@ import { window } from '@ohos.window';
 defaultDensityEnabled?: boolean
 ```
 
-Whether the window should use the default density of the system. If the default density is used, the window does not re-layout when the system display size changes. If this parameter is set to **true** for a system window, the window uses the default density and is not affected by [setDefaultDensityEnabled()](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1) or [setCustomDensity()](@ohos.window:window.Window.setCustomDensity) settings for the main window or [setDefaultDensityEnabled()](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1) settings for the current window. If this parameter is set to **false**, the window does not use the default density and is affected by those settings. The default value is **false**.
+Whether the window should use the default density of the system. If the default density is used, the window does
+not re-layout when the system display size changes.
+
+If this parameter is set to **true** for a system window, the window uses the default density and is not affected
+by
+[setDefaultDensityEnabled()](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1)
+or [setCustomDensity()](@ohos.window:window.Window.setCustomDensity)
+settings for the main window or
+[setDefaultDensityEnabled()](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1)
+settings for the current window.
+
+If this parameter is set to **false**, the window does not use the default density and is affected by those
+settings.
+
+The default value is **false**.
 
 **Type:** boolean
 
@@ -34,7 +48,8 @@ Whether the window should use the default density of the system. If the default 
 zIndex?: number
 ```
 
-Z-level of the system window. This parameter is valid only when [WindowType](arkts-arkui-windowtype-e.md#windowtype) is set to **TYPE_DYNAMIC**.
+Z-level of the system window. This parameter is valid only when [WindowType](arkts-arkui-windowtype-e.md) is set to
+**TYPE_DYNAMIC**.
 
 **Type:** number
 

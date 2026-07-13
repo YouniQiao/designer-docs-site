@@ -1,19 +1,21 @@
 # InputMethodEngine
 
-In the following API examples, you must first use [getInputMethodEngine](arkts-ime-getinputmethodengine-f.md#getinputmethodengine-1) to obtain an **InputMethodEngine** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use
+[getInputMethodEngine](arkts-ime-getinputmethodengine-f.md#getinputmethodengine-1) to obtain an **InputMethodEngine** instance,
+and then call the APIs using the obtained instance.
 
 **Since:** 8
 
 **Deprecated since:** 23
 
-**Substitutes:** [InputMethodAbility](arkts-ime-inputmethodability-i.md#inputmethodability)
+**Substitutes:** [InputMethodAbility](arkts-ime-inputmethodability-i.md)
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## off('inputStart')
@@ -124,7 +126,8 @@ on(
     ): void
 ```
 
-Enables listening for the input method binding event. This API uses an asynchronous callback to return the result.
+Enables listening for the input method binding event. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

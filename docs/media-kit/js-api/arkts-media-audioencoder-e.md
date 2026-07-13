@@ -1,16 +1,12 @@
 # AudioEncoder
 
-```TypeScript
-enum AudioEncoder
-```
-
 Enumerates the audio encoding formats.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** media.CodecMimeType
+**Substitutes:** [CodecMimeType](arkts-media-codecmimetype-e.md)
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -20,7 +16,12 @@ Enumerates the audio encoding formats.
 DEFAULT = 0
 ```
 
-Default encoding format. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+Default encoding format.
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**AUDIO_AAC** in [CodecMimeType](arkts-media-codecmimetype-e.md) instead.
 
 **Since:** 6
 
@@ -34,13 +35,18 @@ Default encoding format. This API is defined but not implemented yet. Note: It i
 AMR_NB = 1
 ```
 
-AMR-NB. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AMR_NB** in [CodecMimeType]media.CodecMimeType instead.
+AMR-NB.
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**AUDIO_AMR_NB** in [CodecMimeType](arkts-media-codecmimetype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.CodecMimeType#AUDIO_AMR_NB
+**Substitutes:** AUDIO_AMR_NB
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -50,13 +56,18 @@ AMR-NB. This API is defined but not implemented yet. Note: It is supported since
 AMR_WB = 2
 ```
 
-Adaptive Multi Rate-Wide Band Speech Codec (AMR-WB). This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AMR_WB** in [CodecMimeType]media.CodecMimeType instead.
+Adaptive Multi Rate-Wide Band Speech Codec (AMR-WB).
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**AUDIO_AMR_WB** in [CodecMimeType](arkts-media-codecmimetype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.CodecMimeType#AUDIO_AMR_WB
+**Substitutes:** AUDIO_AMR_WB
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -66,13 +77,16 @@ Adaptive Multi Rate-Wide Band Speech Codec (AMR-WB). This API is defined but not
 AAC_LC = 3
 ```
 
-Advanced Audio Coding Low Complexity (AAC-LC). Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+Advanced Audio Coding Low Complexity (AAC-LC).
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**AUDIO_AAC** in [CodecMimeType](arkts-media-codecmimetype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.CodecMimeType#AUDIO_AAC
+**Substitutes:** AUDIO_AAC
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -82,13 +96,18 @@ Advanced Audio Coding Low Complexity (AAC-LC). Note: It is supported since API v
 HE_AAC = 4
 ```
 
-High-Efficiency Advanced Audio Coding (HE_AAC). This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+High-Efficiency Advanced Audio Coding (HE_AAC).
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**AUDIO_AAC** in [CodecMimeType](arkts-media-codecmimetype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.CodecMimeType#AUDIO_AAC
+**Substitutes:** AUDIO_AAC
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 

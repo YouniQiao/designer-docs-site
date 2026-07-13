@@ -2,7 +2,7 @@
 
 Defines camera.
 
-**Inheritance/Implementation:** Camera extends [Node](arkts-arkgraphics3d-node-i.md#node)
+**Inheritance/Implementation:** Camera extends [Node](arkts-arkgraphics3d-node-i.md)
 
 **Since:** 12
 
@@ -75,7 +75,8 @@ Casts a ray to a position on the screen and lists what the ray hits.
 clearColor: Color | null
 ```
 
-Background clear color (environment background overrides this color, BACKGROUND_NONE is needed for this to actually take effect).
+Background clear color (environment background overrides this color,
+BACKGROUND_NONE is needed for this to actually take effect).
 
 **Type:** Color | null
 
@@ -189,7 +190,8 @@ The post processing settings of the camera.
 renderingPipeline?: RenderingPipelineType
 ```
 
-Controls the rendering pipeline. Note that if FORWARD_LIGHTWEIGHT pipeline is selected, some features will be unavailable.
+Controls the rendering pipeline.
+Note that if FORWARD_LIGHTWEIGHT pipeline is selected, some features will be unavailable.
 
 **Type:** RenderingPipelineType
 

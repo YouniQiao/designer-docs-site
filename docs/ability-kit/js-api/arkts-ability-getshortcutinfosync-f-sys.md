@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## getShortcutInfoSync
@@ -12,7 +12,11 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function getShortcutInfoSync(bundleName: string): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the given
+bundle name of a main application. To obtain shortcut information about an application clone, use
+[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1).
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 
@@ -32,7 +36,7 @@ Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo)
 
 | Type | Description |
 | --- | --- |
-| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md#shortcutinfo) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md) objects obtained. |
 
 **Error codes:**
 
@@ -69,7 +73,11 @@ try {
 function getShortcutInfoSync(bundleName: string, userId: number): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the specified user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the specified user based on the given
+bundle name of a main application. To obtain shortcut information about an application clone, use
+[getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1).
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 13
 
@@ -90,7 +98,7 @@ Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo)
 
 | Type | Description |
 | --- | --- |
-| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md#shortcutinfo) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md) objects obtained. |
 
 **Error codes:**
 

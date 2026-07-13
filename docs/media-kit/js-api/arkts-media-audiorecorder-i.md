@@ -1,12 +1,14 @@
 # AudioRecorder
 
-AudioRecorder is a class for audio recording management. It provides APIs to record audio. Before calling any API in AudioRecorder, you must use [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createAudioRecorder-1) to create an AudioRecorder instance.
+AudioRecorder is a class for audio recording management. It provides APIs to record audio. Before calling any API
+in AudioRecorder, you must use [createAudioRecorder()](arkts-media-createaudiorecorder-f.md#createaudiorecorder-1) to
+create an AudioRecorder instance.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media
+**Substitutes:** [media:media](arkts-multimedia-media.md)
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -28,7 +30,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -36,8 +38,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -51,7 +53,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -59,8 +61,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -74,7 +76,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -82,8 +84,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -97,7 +99,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -105,8 +107,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -120,7 +122,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -128,8 +130,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -143,7 +145,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -151,8 +153,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('prepare' | 'start' | 'pause' | 'resume' | 'stop' | 'release' | 'reset')
 
@@ -166,7 +168,7 @@ Subscribes to the audio recording events.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -174,8 +176,8 @@ Subscribes to the audio recording events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. The  following events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset' - '  prepare': triggered when the prepare() API is called and the audio recording parameters are set. - '  start': triggered when the start() API is called and audio recording starts. - 'pause': triggered when  the pause() API is called and audio recording is paused. - 'resume': triggered when the resume()  API is called and audio recording is resumed. - 'stop': triggered when the stop() API is called and  audio recording stops. - 'release': triggered when the release() API is called and the recording  resources are released. - 'reset': triggered when the reset() API is called and audio recording is  reset. |
-| callback | () => void | Yes | Callback invoked when the event is triggered. |
+| type | 'prepare' \| 'start' \| 'pause' \| 'resume' \| 'stop' \| 'release' \| 'reset' | Yes | Event type. Thefollowing events are supported: 'prepare'\|'start'\| 'pause' \| 'resume' \|'stop'\|'release'\|'reset'<br>- 'prepare': triggered when the **prepare()** API is called and the audio recording parameters are set.<br>- 'start': triggered when the **start()** API is called and audio recording starts.<br>- 'pause': triggered whenthe **pause()** API is called and audio recording is paused.<br>- 'resume': triggered when the **resume()**API is called and audio recording is resumed.<br>- 'stop': triggered when the **stop()** API is called andaudio recording stops.<br>- 'release': triggered when the **release()** API is called and the recordingresources are released.<br>- 'reset': triggered when the **reset()** API is called and audio recording isreset. |
+| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
 
 ## on('error')
 
@@ -183,13 +185,14 @@ Subscribes to the audio recording events.
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to audio recording error events. After an error event is reported, you must handle the event and exit the recording.
+Subscribes to audio recording error events. After an error event is reported, you must handle the event and exit
+the recording.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.on(type:
+**Substitutes:** on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -197,7 +200,7 @@ Subscribes to audio recording error events. After an error event is reported, yo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type, which is 'error' in this case. This event is triggered when an error  occurs during audio recording. |
+| type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an erroroccurs during audio recording. |
 | callback | ErrorCallback | Yes | Callback invoked when the event is triggered. |
 
 ## pause
@@ -212,7 +215,7 @@ Pauses audio recording. This API can be called only after the **'start'** event 
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.pause(callback:
+**Substitutes:** pause(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -228,11 +231,9 @@ Prepares for recording.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.prepare(config:
+**Substitutes:** prepare(config:
 
-**Required permissions:** 
-
- ohos.permission.MICROPHONE
+**Required permissions:** ohos.permission.MICROPHONE
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -240,13 +241,13 @@ Prepares for recording.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | AudioRecorderConfig | Yes | Audio recording parameters, including the audio output URI, encoding  format, sample rate, audio channel count, and output format. |
+| config | AudioRecorderConfig | Yes | Audio recording parameters, including the audio output URI, encodingformat, sample rate, audio channel count, and output format. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 201 | permission denied. [since 12] |
+| [201](../../errorcode-universal.md#201-permission-denied) | permission denied.<br>**Applicable version:** 12 and later |
 
 ## release
 
@@ -260,7 +261,7 @@ Releases the audio recording resources.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.release(callback:
+**Substitutes:** release(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -270,13 +271,16 @@ Releases the audio recording resources.
 reset(): void
 ```
 
-Resets audio recording. Before resetting audio recording, you must call **stop()** to stop recording. After audio recording is reset, you must call **prepare()** to set the recording configurations for another recording.
+Resets audio recording.
+
+Before resetting audio recording, you must call **stop()** to stop recording. After audio recording is reset, you
+must call **prepare()** to set the recording configurations for another recording.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.reset(callback:
+**Substitutes:** reset(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -292,7 +296,7 @@ Resumes audio recording. This API can be called only after the **'pause'** event
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.resume(callback:
+**Substitutes:** resume(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -308,7 +312,7 @@ Starts audio recording. This API can be called only after the **'prepare'** even
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.start(callback:
+**Substitutes:** start(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -324,7 +328,7 @@ Stops audio recording.
 
 **Deprecated since:** 9
 
-**Substitute:** @ohos.multimedia.media:media.AVRecorder.stop(callback:
+**Substitutes:** stop(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ranging } from '@ohos.FusionConnectivity.ranging';
+import { ranging } from '@kit.ConnectivityKit';
 ```
 
 ## startPassiveRanging
@@ -12,7 +12,12 @@ import { ranging } from '@ohos.FusionConnectivity.ranging';
 function startPassiveRanging(capabilityType: RangingTypes): Promise<number>
 ```
 
-Starts passive ranging mode. Upon successful startup, returns a handle identifier for the passive ranging session and begins broadcasting ranging packets. The returned handle can be used to stop the passive ranging broadcast via stopPassiveRanging.
+Starts passive ranging mode.
+
+Upon successful startup, returns a handle identifier for the passive ranging session
+and begins broadcasting ranging packets.
+
+The returned handle can be used to stop the passive ranging broadcast via stopPassiveRanging.
 
 **Since:** 26.0.0
 

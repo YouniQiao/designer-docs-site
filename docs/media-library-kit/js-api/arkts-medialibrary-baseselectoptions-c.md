@@ -9,7 +9,7 @@ Class BaseSelectOptions, which is extracted from class PhotoSelectOptions
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## MIMEType
@@ -18,7 +18,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 MIMEType?: PhotoViewMIMETypes
 ```
 
-The Type of the file in the picker window. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+The Type of the file in the picker window.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** PhotoViewMIMETypes
 
@@ -88,7 +89,9 @@ Moving photo playback mode. Supports up to two modes.
 combinedMediaTypeFilter?: Array<string>
 ```
 
-Configures filter conditions as a string array, supporting multiple combined conditions to specify supported file types. When this parameter is set, the original file type configuration parameters `MIMEType` and `mimeTypeFilter` become invalid.
+Configures filter conditions as a string array, supporting multiple combined
+conditions to specify supported file types. When this parameter is set, the
+original file type configuration parameters `MIMEType` and `mimeTypeFilter` become invalid.
 
 **Type:** Array<string>
 
@@ -120,7 +123,9 @@ Media file size filtering configuration.
 globalMovingPhotoState?: MovingPhotoBadgeStateType
 ```
 
-Initial state for global moving photos. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration. Defaults to MOVING_PHOTO_ENABLE, which enables the dynamic effect.
+Initial state for global moving photos.
+Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration.
+Defaults to MOVING_PHOTO_ENABLE, which enables the dynamic effect.
 
 **Type:** MovingPhotoBadgeStateType
 
@@ -172,7 +177,8 @@ Support showing moving photo badge.
 isPhotoTakingSupported?: boolean
 ```
 
-Support taking photos. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Support taking photos.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** boolean
 
@@ -204,7 +210,8 @@ Support preview in single selection mode or not
 isSearchSupported?: boolean
 ```
 
-Support search. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Support search.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** boolean
 
@@ -220,7 +227,8 @@ Support search. Move from class PhotoSelectOptions to it's base class BaseSelect
 maxSelectNumber?: number
 ```
 
-Maximum number of images for a single selection. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+Maximum number of images for a single selection.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** number
 
@@ -252,7 +260,8 @@ Media file filtering configuration.
 photoViewMimeTypeFileSizeFilters?: Array<PhotoViewMimeTypeFileSizeFilter>
 ```
 
-Media file type and size combined filtering configuration. The array supports a maximum length of 3. Setting this parameter will cause the `fileSizeFilter` and `MIMEType` parameters to be ignored.
+Media file type and size combined filtering configuration. The array supports a maximum length of 3.
+Setting this parameter will cause the `fileSizeFilter` and `MIMEType` parameters to be ignored.
 
 **Type:** Array<PhotoViewMimeTypeFileSizeFilter>
 
@@ -286,7 +295,8 @@ Preferred compatibility mode.
 preselectedUris?: Array<string>
 ```
 
-The uri for the preselected files. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+The uri for the preselected files.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** Array<string>
 
@@ -302,7 +312,8 @@ The uri for the preselected files. Move from class PhotoSelectOptions to it's ba
 recommendationOptions?: RecommendationOptions
 ```
 
-The recommendation options when use recommendation photo function. Move from class PhotoSelectOptions to it's base class BaseSelectOptions
+The recommendation options when use recommendation photo function.
+Move from class PhotoSelectOptions to it's base class BaseSelectOptions
 
 **Type:** RecommendationOptions
 

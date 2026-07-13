@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## sendControlEvent
@@ -12,7 +12,8 @@ import { onScreen } from '@ohos.multimodalAwareness.onScreen';
 function sendControlEvent(event: ControlEvent): Promise<void>
 ```
 
-If the target window is displayed on the screen, you can use this API to send screen control events based on the paragraph information obtained via [onScreen.getPageContent](arkts-multimodalawareness-getpagecontent-f-sys.md#getpagecontent-1).
+If the target window is displayed on the screen, you can use this API to send screen control events based on the
+paragraph information obtained via [onScreen.getPageContent](arkts-multimodalawareness-getpagecontent-f-sys.md#getpagecontent-1).
 
 **Since:** 20
 

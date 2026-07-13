@@ -1,6 +1,6 @@
 # @ohos.file.cloudDiskManager
 
-本模块是为系统文件管理应用提供获取三方网盘注册的同步根信息的能力。
+This module enables the File Manager to obtain the sync root information registered by third-party cloud disks.
 
 **Since:** 21
 
@@ -16,21 +16,27 @@ import { cloudDiskManager } from '@kit.CoreFileKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[SyncFolderAccessor](arkts-clouddiskmanager-syncfolderaccessor-c-sys.md) | 同步根管理类，负责为系统文件管理应用提供获取三方网盘注册的同步根信息的能力。 |
+| [SyncFolderAccessor](arkts-corefile-syncfolderaccessor-c-sys.md) | A sync root management class that enables the File Manager to access the sync root information registered by third-party cloud disks. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[SyncFolder](arkts-clouddiskmanager-syncfolder-i-sys.md) | 表示同步根信息。 |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[SyncFolderState](arkts-clouddiskmanager-syncfolderstate-e-sys.md) | 枚举，云盘的同步根的状态。 |
+| [SyncFolder](arkts-corefile-syncfolder-i-sys.md) | Encapsulates the sync root information. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [SyncFolderState](arkts-corefile-syncfolderstate-e-sys.md) | Enumerates the states of the sync root. |
+<!--DelEnd-->
 

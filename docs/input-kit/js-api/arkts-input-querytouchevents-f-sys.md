@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { inputMonitor } from '@ohos.multimodalInput.inputMonitor';
+import { inputMonitor } from '@kit.InputKit';
 ```
 
 ## queryTouchEvents
@@ -12,7 +12,8 @@ import { inputMonitor } from '@ohos.multimodalInput.inputMonitor';
 function queryTouchEvents(count: number) : Promise<Array<TouchEvent>>
 ```
 
-Queries recent touchscreen input events. A maximum of 100 events can be queried. Since API version 26.0.0, a maximum of 60 events can be queried. This API uses a promise to return the result.
+Queries recent touchscreen input events. A maximum of 100 events can be queried. Since API version 26.0.0, a
+maximum of 60 events can be queried. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -32,7 +33,7 @@ Queries recent touchscreen input events. A maximum of 100 events can be queried.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;TouchEvent&gt;&gt; | Promise used to return the queried touchscreen input events. It containsthe following valid information; all other information is invalid:<br/>- **actionTime**: Time when thetouchscreen input event occurred, in microseconds (μs) since system startup.<br/>-[SourceType](arkts-input-sourcetype-e.md#sourcetype): Device type of the touch source.<br/>-[isInject](arkts-input-touchevent-i.md#touchevent): Whether the touchscreen input event is aninjected event.<br/>- **pressure**: Pressure value, with a value range of [0.0, 1.0], where **0.0** indicatesnot supported.<br/>- **tiltX**: Angle relative to the YZ plane, with a value range of [-90, 90], where apositive value indicates tilting to the right.<br/>- **tiltY**: Angle relative to the XZ plane, with a valuerange of [-90, 90], where a positive value indicates tilting downward.<br/>Since API version 23, the followingadditional valid information can be obtained:<br/>- [Action](arkts-input-action-e.md#action):Touchscreen input event type.<br/>- **screenX**: X-axis coordinate relative to the upper left corner of thescreen, in pixels, with a value range of [0, screen width], increasing to the right. It is available only forspecified applications.<br/>- **screenY**: Y-axis coordinate relative to the upper left corner of the screen,in pixels, with a value range of [0, screen height], increasing downward. It is available only for specifiedapplications.<br/>Since API version 26.0.0, a maximum of 60 events can be queried, and events of the MOVE andPULL_MOVE types will not be returned. **screenX** and **screenY** are no longer restricted to specifiedapplications and can be obtained by all system applications. Additionally, the following valid information canbe obtained:<br/>- **screenId**: Target screen ID. |
+| Promise&lt;Array&lt;TouchEvent&gt;&gt; | Promise used to return the queried touchscreen input events. It containsthe following valid information; all other information is invalid:<br/>- **actionTime**: Time when thetouchscreen input event occurred, in microseconds (μs) since system startup.<br/>-[SourceType](arkts-input-sourcetype-e.md): Device type of the touch source.<br/>-[isInject](arkts-input-touchevent-i.md): Whether the touchscreen input event is aninjected event.<br/>- **pressure**: Pressure value, with a value range of [0.0, 1.0], where **0.0** indicatesnot supported.<br/>- **tiltX**: Angle relative to the YZ plane, with a value range of [-90, 90], where apositive value indicates tilting to the right.<br/>- **tiltY**: Angle relative to the XZ plane, with a valuerange of [-90, 90], where a positive value indicates tilting downward.<br/>Since API version 23, the followingadditional valid information can be obtained:<br/>- [Action](arkts-input-action-e.md):Touchscreen input event type.<br/>- **screenX**: X-axis coordinate relative to the upper left corner of thescreen, in pixels, with a value range of [0, screen width], increasing to the right. It is available only forspecified applications.<br/>- **screenY**: Y-axis coordinate relative to the upper left corner of the screen,in pixels, with a value range of [0, screen height], increasing downward. It is available only for specifiedapplications.<br/>Since API version 26.0.0, a maximum of 60 events can be queried, and events of the MOVE andPULL_MOVE types will not be returned. **screenX** and **screenY** are no longer restricted to specifiedapplications and can be obtained by all system applications. Additionally, the following valid information canbe obtained:<br/>- **screenId**: Target screen ID. |
 
 **Error codes:**
 

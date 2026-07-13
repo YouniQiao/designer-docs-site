@@ -1,6 +1,8 @@
 # KeyEvent
 
-按键事件。 [EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1) 按键事件回调触发时，传递当前按键事件信息。
+按键事件。
+[EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterpriseadminextensionability-c.md#onkeyevent-1)
+按键事件回调触发时，传递当前按键事件信息。
 
 **起始版本：** 23
 
@@ -12,7 +14,8 @@
 actionTime: number
 ```
 
-按键动作发生时间，系统开机后微秒级时间戳。当按键长按时后续按键事件该参数不发生改变，应用可以通过该时间来判断该事件是否属于长按事件，以执行长按事件逻辑处理。 取值范围为全体整数。
+按键动作发生时间，系统开机后微秒级时间戳。当按键长按时后续按键事件该参数不发生改变，应用可以通过该时间来判断该事件是否属于长按事件，以执行长按事件逻辑处理。
+取值范围为全体整数。
 
 **类型：** number
 

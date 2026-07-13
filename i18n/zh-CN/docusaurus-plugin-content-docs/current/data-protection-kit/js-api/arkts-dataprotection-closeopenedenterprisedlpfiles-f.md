@@ -6,7 +6,13 @@
 function closeOpenedEnterpriseDlpFiles(options?: DlpFileQueryOptions): Promise<void>
 ```
 
-关闭当前打开的所有符合指定选项的企业DLP文件。使用Promise异步回调。 在需要批量关闭企业DLP文件、清理文件资源或应用退出前释放文件句柄时调用该接口。 > **说明：** > > 该接口仅能关闭调用方应用通过[generateDlpFileForEnterprise](arkts-dataprotection-generatedlpfileforenterprise-f-sys.md#generatedlpfileforenterprise-1)生成的企业DLP文件。
+关闭当前打开的所有符合指定选项的企业DLP文件。使用Promise异步回调。
+
+在需要批量关闭企业DLP文件、清理文件资源或应用退出前释放文件句柄时调用该接口。
+
+> **说明：**
+>
+> 该接口仅能关闭调用方应用通过[generateDlpFileForEnterprise](arkts-dataprotection-generatedlpfileforenterprise-f-sys.md#generatedlpfileforenterprise-1)生成的企业DLP文件。
 
 **起始版本：** 26.0.0
 
@@ -33,7 +39,7 @@ function closeOpenedEnterpriseDlpFiles(options?: DlpFileQueryOptions): Promise<v
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

@@ -13,6 +13,7 @@ events?: Event[]
 ```
 
 The events belong to this service.
+<br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
 
 **Type:** Event[]
 
@@ -31,6 +32,7 @@ methods?: Method[]
 ```
 
 The methods belong to this service.
+<br>This field is not supported in [addService](arkts-connectivity-server-i.md#addservice-1) method.
 
 **Type:** Method[]
 

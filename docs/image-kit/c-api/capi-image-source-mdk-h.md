@@ -6,7 +6,7 @@ Declares APIs for decoding an image source into a pixel map.
 
 **Library**: libimage_source_ndk.z.so
 
-**System capability**: SystemCapability.Multimedia.Image.Core
+**System capability**: SystemCapability.Multimedia.Image.ImageSource
 
 **Since**: 10
 
@@ -19,7 +19,7 @@ Declares APIs for decoding an image source into a pixel map.
 | Name | typedef keyword | Description |
 | -- | -- | -- |
 | [OhosImageRegion](capi-image-ohosimageregion.md) | - | Defines the region of the image source to decode.It is used in [OhosImageDecodingOps](capi-image-ohosimagedecodingops.md), [OH_ImageSource_CreatePixelMap](capi-image-source-mdk-h.md#oh_imagesource_createpixelmap), and[OH_ImageSource_CreatePixelMapList](capi-image-source-mdk-h.md#oh_imagesource_createpixelmaplist). |
-| [OhosImageSourceOps](capi-image-ohosimagesourceops.md) | - | Defines image source options infomation[OH_ImageSource_Create](capi-image-source-mdk-h.md#oh_imagesource_create) and [OH_ImageSource_CreateIncremental](capi-image-source-mdk-h.md#oh_imagesource_createincremental). |
+| [OhosImageSourceOps](capi-image-ohosimagesourceops.md) | - | Defines image source options information[OH_ImageSource_Create](capi-image-source-mdk-h.md#oh_imagesource_create) and [OH_ImageSource_CreateIncremental](capi-image-source-mdk-h.md#oh_imagesource_createincremental). |
 | [OhosImageDecodingOps](capi-image-ohosimagedecodingops.md) | - | Defines the options for decoding the image source.It is used in [OH_ImageSource_CreatePixelMap](capi-image-source-mdk-h.md#oh_imagesource_createpixelmap) and [OH_ImageSource_CreatePixelMapList](capi-image-source-mdk-h.md#oh_imagesource_createpixelmaplist). |
 | [OhosImageSourceInfo](capi-image-ohosimagesourceinfo.md) | - | Defines the image source information, which is obtained by calling [OH_ImageSource_GetImageInfo](capi-image-source-mdk-h.md#oh_imagesource_getimageinfo). |
 | [OhosImageSource](capi-image-ohosimagesource.md) | - | Defines the input resource of the image source. It is obtained by calling [OH_ImageSource_Create](capi-image-source-mdk-h.md#oh_imagesource_create).Only one type of resource is accepted at a time.(Deprecated in API11) |
@@ -57,20 +57,20 @@ Declares APIs for decoding an image source into a pixel map.
 
 | Name | Description |
 | -- | -- |
-| static const char * OHOS_IMAGE_PROPERTY_BITS_PER_SAMPLE = "BitsPerSample" | Defines a pointer to bits per sample, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_ORIENTATION = "Orientation" | Defines a pointer to the orientation, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_IMAGE_LENGTH = "ImageLength" | Defines a pointer to the image length, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_IMAGE_WIDTH = "ImageWidth" | Defines a pointer to the image width, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_GPS_LATITUDE = "GPSLatitude" | Defines a pointer to the GPS latitude, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_GPS_LONGITUDE = "GPSLongitude" | Defines a pointer to the GPS longitude, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_GPS_LATITUDE_REF = "GPSLatitudeRef" | Defines a pointer to the GPS latitude reference information, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_GPS_LONGITUDE_REF = "GPSLongitudeRef" | Defines a pointer to the GPS longitude reference information, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_DATE_TIME_ORIGINAL = "DateTimeOriginal" | Defines a pointer to the created date and time, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_EXPOSURE_TIME = "ExposureTime" | Defines a pointer to the exposure time, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_SCENE_TYPE = "SceneType" | Defines a pointer to the scene type, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_ISO_SPEED_RATINGS = "ISOSpeedRatings" | Defines a pointer to the ISO speed ratings, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_F_NUMBER = "FNumber" | Defines a pointer to the f-number of the image, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
-| static const char * OHOS_IMAGE_PROPERTY_COMPRESSED_BITS_PER_PIXEL = "CompressedBitsPerPixel" | Defines a pointer to the compressed bits per pixel, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image |
+| static const char * OHOS_IMAGE_PROPERTY_BITS_PER_SAMPLE = "BitsPerSample" | Defines a pointer to bits per sample, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10<br>**System capability**: SystemCapability.Multimedia.Image.ImageSource |
+| static const char * OHOS_IMAGE_PROPERTY_ORIENTATION = "Orientation" | Defines a pointer to the orientation, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_IMAGE_LENGTH = "ImageLength" | Defines a pointer to the image length, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_IMAGE_WIDTH = "ImageWidth" | Defines a pointer to the image width, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_GPS_LATITUDE = "GPSLatitude" | Defines a pointer to the GPS latitude, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_GPS_LONGITUDE = "GPSLongitude" | Defines a pointer to the GPS longitude, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_GPS_LATITUDE_REF = "GPSLatitudeRef" | Defines a pointer to the GPS latitude reference information, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_GPS_LONGITUDE_REF = "GPSLongitudeRef" | Defines a pointer to the GPS longitude reference information, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_DATE_TIME_ORIGINAL = "DateTimeOriginal" | Defines a pointer to the created date and time, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_EXPOSURE_TIME = "ExposureTime" | Defines a pointer to the exposure time, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_SCENE_TYPE = "SceneType" | Defines a pointer to the scene type, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_ISO_SPEED_RATINGS = "ISOSpeedRatings" | Defines a pointer to the ISO speed ratings, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_F_NUMBER = "FNumber" | Defines a pointer to the f-number of the image, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
+| static const char * OHOS_IMAGE_PROPERTY_COMPRESSED_BITS_PER_PIXEL = "CompressedBitsPerPixel" | Defines a pointer to the compressed bits per pixel, one of the image properties.It is used in [OH_ImageSource_GetImageProperty](capi-image-source-mdk-h.md#oh_imagesource_getimageproperty) and [OH_ImageSource_ModifyImageProperty](capi-image-source-mdk-h.md#oh_imagesource_modifyimageproperty).<br> Add static keyword since API 12, it is used to limit the scope of the constant to a single file.<br><br>**Since**: 10 |
 
 ## Function description
 
@@ -83,8 +83,6 @@ int32_t OH_ImageSource_Create(napi_env env, struct OhosImageSource* src, struct 
 **Description**
 
 Creates an <b>ImageSource</b> object at the JavaScript native layer based on the specified[OhosImageSource](capi-image-ohosimagesource.md) and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -122,8 +120,6 @@ int32_t OH_ImageSource_CreateFromUri(napi_env env, char* uri, size_t size, struc
 
 Creates an <b>ImageSource</b> object at the JavaScript native layer based on the specifiedimage source URI and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 11
 
 **Parameters**:
@@ -157,8 +153,6 @@ int32_t OH_ImageSource_CreateFromFd(napi_env env, int32_t fd, struct OhosImageSo
 
 Creates an <b>ImageSource</b> object at the JavaScript native layer based on the specifiedimage source file descriptor and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 11
 
 **Parameters**:
@@ -190,8 +184,6 @@ int32_t OH_ImageSource_CreateFromData(napi_env env, uint8_t* data, size_t dataSi
 **Description**
 
 Creates an <b>ImageSource</b> object at the JavaScript native layer based on the specifiedimage source data and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 11
 
@@ -226,8 +218,6 @@ int32_t OH_ImageSource_CreateFromRawFile(napi_env env, RawFileDescriptor rawFile
 
 Creates an <b>ImageSource</b> object at the JavaScript native layer based on the specifiedraw file's file descriptor and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 11
 
 **Parameters**:
@@ -235,7 +225,7 @@ Creates an <b>ImageSource</b> object at the JavaScript native layer based on the
 | Parameter | Description |
 | -- | -- |
 | napi_env env | Indicates a pointer to the Java Native Interface (JNI) environment. |
-| RawFileDescriptor rawFile | Indicates the raw file's file descriptor. |
+| [RawFileDescriptor](../LocalizationKit/capi-rawfile-rawfiledescriptor.md) rawFile | Indicates the raw file's file descriptor. |
 | [struct OhosImageSourceOps](capi-image-ohosimagesourceops.md)* ops | Indicates a pointer to the options for creating the image source.For details, see [OhosImageSourceOps](capi-image-ohosimagesourceops.md). |
 | napi_value *res | Indicates a pointer to the <b>ImageSource</b> object created at the JavaScript native layer. |
 
@@ -259,8 +249,6 @@ int32_t OH_ImageSource_CreateIncremental(napi_env env, struct OhosImageSource* s
 **Description**
 
 Creates an incremental <b>ImageSource</b> object at the JavaScript native layer based on the specified[OhosImageSource](capi-image-ohosimagesource.md) and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.The image source data will be updated through [OH_ImageSource_UpdateData](capi-image-source-mdk-h.md#oh_imagesource_updatedata).
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -298,8 +286,6 @@ int32_t OH_ImageSource_CreateIncrementalFromData(napi_env env, uint8_t* data, si
 
 Creates an incremental <b>ImageSource</b> object at the JavaScript native layer based on the specifiedimage source data and [OhosImageSourceOps](capi-image-ohosimagesourceops.md) structs.The image source data will be updated through [OH_ImageSource_UpdateData](capi-image-source-mdk-h.md#oh_imagesource_updatedata).
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 11
 
 **Parameters**:
@@ -333,8 +319,6 @@ int32_t OH_ImageSource_GetSupportedFormats(struct OhosImageSourceSupportedFormat
 
 Obtains all supported decoding formats.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -363,8 +347,6 @@ ImageSourceNative* OH_ImageSource_InitNative(napi_env env, napi_value source)
 **Description**
 
 Converts an {@link ImageSource} object at the JavaScript native layer to an <b>ImageSourceNative</b> objectat the C++ native layer.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -395,8 +377,6 @@ int32_t OH_ImageSource_CreatePixelMap(const ImageSourceNative* native, struct Oh
 **Description**
 
 Decodes an <b>ImageSource</b> object to obtain a <b>PixelMap</b> object at the JavaScript native layerbased on the specified [OhosImageDecodingOps](capi-image-ohosimagedecodingops.md) struct.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -429,8 +409,6 @@ int32_t OH_ImageSource_CreatePixelMapList(const ImageSourceNative* native, struc
 
 Decodes an <b>ImageSource</b> to obtain all the <b>PixelMap</b> objects at the JavaScript native layerbased on the specified [OhosImageDecodingOps](capi-image-ohosimagedecodingops.md) struct.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -462,8 +440,6 @@ int32_t OH_ImageSource_GetDelayTime(const ImageSourceNative* native, struct Ohos
 
 Obtains the delay time list from some <b>ImageSource</b> objects (such as GIF image sources).
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -494,8 +470,6 @@ int32_t OH_ImageSource_GetFrameCount(const ImageSourceNative* native, uint32_t *
 
 Obtains the number of frames from an <b>ImageSource</b> object.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -525,8 +499,6 @@ int32_t OH_ImageSource_GetImageInfo(const ImageSourceNative* native, int32_t ind
 **Description**
 
 Obtains image source information from an <b>ImageSource</b> object by index.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -559,8 +531,6 @@ int32_t OH_ImageSource_GetImageProperty(const ImageSourceNative* native, struct 
 
 Obtains the value of an image property from an <b>ImageSource</b> object.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -591,8 +561,6 @@ int32_t OH_ImageSource_ModifyImageProperty(const ImageSourceNative* native, stru
 **Description**
 
 Modifies the value of an image property of an <b>ImageSource</b> object.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 
@@ -625,8 +593,6 @@ int32_t OH_ImageSource_UpdateData(const ImageSourceNative* native, struct OhosIm
 
 Updates the data of an <b>ImageSource</b> object.
 
-**System capability**: SystemCapability.Multimedia.Image
-
 **Since**: 10
 
 **Parameters**:
@@ -656,8 +622,6 @@ int32_t OH_ImageSource_Release(ImageSourceNative* native)
 **Description**
 
 Releases an <b>ImageSourceNative</b> object.
-
-**System capability**: SystemCapability.Multimedia.Image
 
 **Since**: 10
 

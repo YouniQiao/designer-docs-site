@@ -1,6 +1,15 @@
 # AbilityDelegator
 
-AbilityDelegator模块可以通过[AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例来监听和管理 [UIAbility](arkts-app-ability-uiability.md)生命周期的变化。例如获取UIAbility当前状态（如是否已创建/是否在前台等）、查询当前获焦的UIAbility、等待UIAbility进入 某个生命周期节点（如等待UIAbility进入onForeground）、启动指定UIAbility、设置超时机制等功能。 AbilityDelegator可以通过 [getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1)方 法获取。 > **说明：** > > 本模块接口仅可在[单元测试框架](../../../../application-test/unittest-guidelines.md)中使用。
+AbilityDelegator模块可以通过[AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例来监听和管理
+[UIAbility](arkts-app-ability-uiability.md)生命周期的变化。例如获取UIAbility当前状态（如是否已创建/是否在前台等）、查询当前获焦的UIAbility、等待UIAbility进入
+某个生命周期节点（如等待UIAbility进入onForeground）、启动指定UIAbility、设置超时机制等功能。
+AbilityDelegator可以通过
+[getAbilityDelegator](../../apis-test-kit/arkts-apis/arkts-test-getabilitydelegator-f.md#getabilitydelegator-1)方
+法获取。
+
+> **说明：**
+>
+> 本模块接口仅可在[单元测试框架](../../../../application-test/unittest-guidelines.md)中使用。
 
 **起始版本：** 9
 
@@ -24,14 +33,14 @@ addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 | callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当添加AbilityMonitor实例成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityMonitor failed. |
 
 ## addAbilityMonitor
@@ -52,7 +61,7 @@ addAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 
 **返回值：**
 
@@ -64,7 +73,7 @@ addAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityMonitor failed. |
 
 ## addAbilityMonitorSync
@@ -85,13 +94,13 @@ addAbilityMonitorSync(monitor: AbilityMonitor): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityMonitorSync failed. |
 
 ## addAbilityStageMonitor
@@ -112,14 +121,14 @@ addAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<voi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 | callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当添加一个用于监视指定AbilityStage的生命周期状态更改的AbilityStageMonitor对象成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityStageMonitor failed. |
 
 ## addAbilityStageMonitor
@@ -140,7 +149,7 @@ addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 
 **返回值：**
 
@@ -152,7 +161,7 @@ addAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityStageMonitor failed. |
 
 ## addAbilityStageMonitorSync
@@ -173,13 +182,13 @@ addAbilityStageMonitorSync(monitor: AbilityStageMonitor): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling AddAbilityStageMonitorSync failed. |
 
 ## addInteropAbilityMonitorSync
@@ -235,7 +244,7 @@ doAbilityBackground(ability: UIAbility, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling DoAbilityBackground failed. |
 
 ## doAbilityBackground
@@ -268,7 +277,7 @@ doAbilityBackground(ability: UIAbility): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling DoAbilityBackground failed. |
 
 ## doAbilityForeground
@@ -296,7 +305,7 @@ doAbilityForeground(ability: UIAbility, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling DoAbilityForeground failed. |
 
 ## doAbilityForeground
@@ -329,7 +338,7 @@ doAbilityForeground(ability: UIAbility): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling DoAbilityForeground failed. |
 
 ## executeShellCommand
@@ -338,7 +347,8 @@ doAbilityForeground(ability: UIAbility): Promise<void>
 executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-执行指定的shell命令。使用callback异步回调。 仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
+执行指定的shell命令。使用callback异步回调。
+仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
 
 **起始版本：** 9
 
@@ -359,7 +369,8 @@ executeShellCommand(cmd: string, callback: AsyncCallback<ShellCmdResult>): void
 executeShellCommand(cmd: string, timeoutSecs: number, callback: AsyncCallback<ShellCmdResult>): void
 ```
 
-指定超时时间，并执行指定的shell命令。使用callback异步回调。 仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
+指定超时时间，并执行指定的shell命令。使用callback异步回调。
+仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
 
 **起始版本：** 9
 
@@ -381,7 +392,8 @@ executeShellCommand(cmd: string, timeoutSecs: number, callback: AsyncCallback<Sh
 executeShellCommand(cmd: string, timeoutSecs?: number): Promise<ShellCmdResult>
 ```
 
-指定超时时间，并执行指定的shell命令。使用Promise异步回调。 仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
+指定超时时间，并执行指定的shell命令。使用Promise异步回调。
+仅支持如下shell命令：aa, bm, cp, mkdir, rm, uinput, hilog, ppwd, echo, uitest, acm, hidumper, wukong, pkill, ps, pidof
 
 **起始版本：** 9
 
@@ -400,7 +412,7 @@ executeShellCommand(cmd: string, timeoutSecs?: number): Promise<ShellCmdResult>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;ShellCmdResult&gt; | Promise对象，返回Shell命令执行结果[ShellCmdResult](arkts-ability-shellcmdresult-i.md#shellcmdresult)对象。 |
+| Promise&lt;ShellCmdResult&gt; | Promise对象，返回Shell命令执行结果[ShellCmdResult](arkts-ability-shellcmdresult-i.md)对象。 |
 
 ## finishTest
 
@@ -428,7 +440,7 @@ finishTest(msg: string, code: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling FinishTest failed. |
 
 ## finishTest
@@ -462,7 +474,7 @@ finishTest(msg: string, code: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling FinishTest failed. |
 
 ## getAbilityState
@@ -489,13 +501,13 @@ getAbilityState(ability: UIAbility): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 指定ability的生命周期状态。状态枚举值使用[AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitylifecyclestate-e.md#abilitylifecyclestate)。 |
+| number | 指定ability的生命周期状态。状态枚举值使用[AbilityLifecycleState](../../apis-test-kit/arkts-apis/arkts-test-abilitylifecyclestate-e.md)。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 
 ## getAppContext
 
@@ -515,7 +527,7 @@ getAppContext(): Context
 
 | 类型 | 说明 |
 | --- | --- |
-| Context | 应用[Context](arkts-ability-context-depr-i.md#context)。 |
+| Context | 应用[Context](arkts-ability-context-depr-i.md)。 |
 
 ## getCurrentTopAbility
 
@@ -541,7 +553,7 @@ getCurrentTopAbility(callback: AsyncCallback<UIAbility>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling GetCurrentTopAbility failed. |
 
 ## getCurrentTopAbility
@@ -641,7 +653,7 @@ printSync(msg: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 
 ## removeAbilityMonitor
 
@@ -661,14 +673,14 @@ removeAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>): vo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 | callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当删除已经添加的AbilityMonitor实例成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityMonitor failed. |
 
 ## removeAbilityMonitor
@@ -689,7 +701,7 @@ removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 
 **返回值：**
 
@@ -701,7 +713,7 @@ removeAbilityMonitor(monitor: AbilityMonitor): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityMonitor failed. |
 
 ## removeAbilityMonitorSync
@@ -722,13 +734,13 @@ removeAbilityMonitorSync(monitor: AbilityMonitor): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityMonitorSync failed. |
 
 ## removeAbilityStageMonitor
@@ -749,14 +761,14 @@ removeAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 | callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当从应用程序内存中删除指定的AbilityStageMonitor对象成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityStageMonitor failed. |
 
 ## removeAbilityStageMonitor
@@ -777,7 +789,7 @@ removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 
 **返回值：**
 
@@ -789,7 +801,7 @@ removeAbilityStageMonitor(monitor: AbilityStageMonitor): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityStageMonitor failed. |
 
 ## removeAbilityStageMonitorSync
@@ -810,13 +822,13 @@ removeAbilityStageMonitorSync(monitor: AbilityStageMonitor): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling RemoveAbilityStageMonitorSync failed. |
 
 ## removeInteropAbilityMonitorSync
@@ -871,7 +883,7 @@ setMockList(mockList: Record<string, string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 ## startAbility
@@ -899,7 +911,7 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -913,8 +925,8 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 | [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |
-| [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled.<br>**适用版本：** 10 |
-| [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM.<br>**适用版本：** 10 |
+| [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled.<br>**适用版本：** 10+ |
+| [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM.<br>**适用版本：** 10+ |
 
 ## startAbility
 
@@ -946,7 +958,7 @@ startAbility(want: Want): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -960,8 +972,8 @@ startAbility(want: Want): Promise<void>
 | [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-免安装超时) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |
-| [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled.<br>**适用版本：** 10 |
-| [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM.<br>**适用版本：** 10 |
+| [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled.<br>**适用版本：** 10+ |
+| [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM.<br>**适用版本：** 10+ |
 
 ## waitAbilityMonitor
 
@@ -981,14 +993,14 @@ waitAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<UIAbility>):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 | callback | AsyncCallback&lt;UIAbility&gt; | 是 | 回调函数。当等待与AbilityMonitor实例匹配的Ability到达OnCreate生命周期成功，err为undefined，data为获取到的Ability实例，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityMonitor failed. |
 
 ## waitAbilityMonitor
@@ -1009,7 +1021,7 @@ waitAbilityMonitor(monitor: AbilityMonitor, timeout: number, callback: AsyncCall
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 | timeout | number | 是 | 最大等待时间，单位毫秒（ms），默认值为5000毫秒。 |
 | callback | AsyncCallback&lt;UIAbility&gt; | 是 | 表示指定的回调方法。 |
 
@@ -1017,7 +1029,7 @@ waitAbilityMonitor(monitor: AbilityMonitor, timeout: number, callback: AsyncCall
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityMonitor failed. |
 
 ## waitAbilityMonitor
@@ -1038,7 +1050,7 @@ waitAbilityMonitor(monitor: AbilityMonitor, timeout?: number): Promise<UIAbility
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md#abilitymonitor)实例。 |
+| monitor | AbilityMonitor | 是 | [AbilityMonitor](arkts-ability-abilitymonitor-i.md)实例。 |
 | timeout | number | 否 | 最大等待时间，单位毫秒（ms），默认值为5000毫秒。 |
 
 **返回值：**
@@ -1051,7 +1063,7 @@ waitAbilityMonitor(monitor: AbilityMonitor, timeout?: number): Promise<UIAbility
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityMonitor failed. |
 
 ## waitAbilityStageMonitor
@@ -1072,14 +1084,14 @@ waitAbilityStageMonitor(monitor: AbilityStageMonitor, callback: AsyncCallback<Ab
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
-| callback | AsyncCallback&lt;AbilityStage&gt; | 是 | 回调函数。当等待并返回与给定AbilityStageMonitor中设置的条件匹配的AbilityStage对象的操作成功，err为undefined，data为获取到的[AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)对象；否则为错误对象。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
+| callback | AsyncCallback&lt;AbilityStage&gt; | 是 | 回调函数。当等待并返回与给定AbilityStageMonitor中设置的条件匹配的AbilityStage对象的操作成功，err为undefined，data为获取到的[AbilityStage](arkts-ability-abilitystage-c.md)对象；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityStageMonitor failed. |
 
 ## waitAbilityStageMonitor
@@ -1100,15 +1112,15 @@ waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout: number, callback:
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 | timeout | number | 是 | 超时最大等待时间，单位毫秒（ms），默认值为5000毫秒。 |
-| callback | AsyncCallback&lt;AbilityStage&gt; | 是 | 回调函数。当等待并返回与给定AbilityStageMonitor中设置的条件匹配的AbilityStage对象的操作成功，err为undefined，data为获取到的[AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)对象；否则为错误对象。 |
+| callback | AsyncCallback&lt;AbilityStage&gt; | 是 | 回调函数。当等待并返回与给定AbilityStageMonitor中设置的条件匹配的AbilityStage对象的操作成功，err为undefined，data为获取到的[AbilityStage](arkts-ability-abilitystage-c.md)对象；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityStageMonitor failed. |
 
 ## waitAbilityStageMonitor
@@ -1129,19 +1141,19 @@ waitAbilityStageMonitor(monitor: AbilityStageMonitor, timeout?: number): Promise
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md#abilitystagemonitor) 实例。 |
+| monitor | AbilityStageMonitor | 是 | [AbilityStageMonitor](arkts-ability-abilitystagemonitor-i.md) 实例。 |
 | timeout | number | 否 | 超时最大等待时间，单位毫秒（ms），默认值为5000毫秒。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AbilityStage&gt; | Promise对象，返回[AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)对象。 |
+| Promise&lt;AbilityStage&gt; | Promise对象，返回[AbilityStage](arkts-ability-abilitystage-c.md)对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 | [16000100](../errorcode-ability.md#16000100-监听ability生命周期变化的abilitymonitor方法执行失败) | Calling WaitAbilityStageMonitor failed. |
 

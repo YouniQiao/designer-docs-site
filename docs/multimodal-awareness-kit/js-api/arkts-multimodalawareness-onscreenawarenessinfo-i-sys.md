@@ -11,7 +11,7 @@ Returns the list of onscreen awareness information.
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## appIndex
@@ -74,7 +74,8 @@ Application bundle name.
 collectStrategy?: number
 ```
 
-Page collection policy, which is the bitwise OR operation combination of <br> [CollectStrategy](onScreen. CollectStrategy).
+Page collection policy, which is the bitwise OR operation combination of
+<br> [CollectStrategy](onScreen. CollectStrategy).
 
 **Type:** number
 
@@ -272,7 +273,7 @@ Collection record ID.
 timestamp: number
 ```
 
-Timestamp for accessing a specified page.
+Timestamp for accessing a specified page, in milliseconds.
 
 **Type:** number
 

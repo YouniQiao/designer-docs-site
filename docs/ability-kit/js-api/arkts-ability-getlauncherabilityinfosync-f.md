@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## getLauncherAbilityInfoSync
@@ -12,7 +12,8 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function getLauncherAbilityInfoSync(bundleName: string, userId: number): Array<LauncherAbilityInfo>
 ```
 
-Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID.
+Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md) based on
+the given bundle name and user ID.
 
 **Since:** 18
 
@@ -31,7 +32,7 @@ Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.m
 
 | Type | Description |
 | --- | --- |
-| Array&lt;LauncherAbilityInfo&gt; | Array of the[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) objects obtained. |
+| Array&lt;LauncherAbilityInfo&gt; | Array of the[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md) objects obtained. |
 
 **Error codes:**
 

@@ -6,7 +6,11 @@
 declare function moveFile(src: string, dest: string, mode?: number): Promise<void>
 ```
 
-移动文件，使用promise异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
+移动文件，使用promise异步回调。
+
+> **说明：**
+>
+> 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 
@@ -57,7 +61,11 @@ declare function moveFile(src: string, dest: string, mode?: number): Promise<voi
 declare function moveFile(src: string, dest: string, callback: AsyncCallback<void>): void
 ```
 
-移动文件。如果移动位置存在同名文件，将强制覆盖。使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
+移动文件。如果移动位置存在同名文件，将强制覆盖。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 
@@ -102,7 +110,11 @@ declare function moveFile(src: string, dest: string, callback: AsyncCallback<voi
 declare function moveFile(src: string, dest: string, mode: number, callback: AsyncCallback<void>): void
 ```
 
-移动文件，支持设置移动模式。使用callback异步回调。 > **说明：** > > 该接口不支持在分布式文件路径下操作。
+移动文件，支持设置移动模式。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口不支持在分布式文件路径下操作。
 
 **起始版本：** 9
 

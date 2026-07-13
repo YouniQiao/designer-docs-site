@@ -42,7 +42,8 @@ Enterprise application that can be installed on personal devices.
 ENTERPRISE_NORMAL = 3
 ```
 
-Common enterprise application that can be installed on enterprise devices only through an enterprise mobile device management (MDM) application.
+Common enterprise application that can be installed on enterprise devices only through an enterprise mobile
+device management (MDM) application.
 
 **Since:** 12
 
@@ -56,7 +57,10 @@ Common enterprise application that can be installed on enterprise devices only t
 ENTERPRISE_MDM = 4
 ```
 
-Enterprise MDM application that can be installed only on enterprise devices. To install a common enterprise application, you must have [administrator privileges](../../apis-mdm-kit/arkts-apis/arkts-mdm-enableadmin-f-sys.md#enableadmin-1) .
+Enterprise MDM application that can be installed only on enterprise devices. To install a common enterprise
+application, you must have
+[administrator privileges](../../apis-mdm-kit/arkts-apis/arkts-mdm-enableadmin-f-sys.md#enableadmin-1)
+.
 
 **Since:** 12
 
@@ -84,7 +88,9 @@ Preinstalled system application.
 CROWDTESTING = 6
 ```
 
-Application under crowdtesting, which is distributed by AppGallery to a limited number of users and come with a set expiration date. When the system detects that the validity period of the application expires, it prompts the user to update to the release version available on AppGallery.
+Application under crowdtesting, which is distributed by AppGallery to a limited number of users and come with a
+set expiration date. When the system detects that the validity period of the application expires, it prompts the
+user to update to the release version available on AppGallery.
 
 **Since:** 12
 

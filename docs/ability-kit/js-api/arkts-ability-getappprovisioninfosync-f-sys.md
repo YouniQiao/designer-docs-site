@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAppProvisionInfoSync
@@ -12,7 +12,10 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAppProvisionInfoSync(bundleName: string, userId?: number): AppProvisionInfo
 ```
 
-Obtains the provision profile based on the given bundle name and user ID. This API returns the result synchronously. No permission is required for obtaining the caller's own information.
+Obtains the provision profile based on the given bundle name and user ID. This API returns the result
+synchronously.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 10
 

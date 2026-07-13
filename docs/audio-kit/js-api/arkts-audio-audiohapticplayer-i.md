@@ -1,6 +1,8 @@
 # AudioHapticPlayer
 
-Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, you must use [createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1) to create an AudioHapticPlayer instance.
+Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, you must use
+[createPlayer](arkts-audio-audiohapticmanager-i.md#createplayer-1)
+to create an AudioHapticPlayer instance.
 
 **Since:** 11
 
@@ -9,7 +11,7 @@ Implements audio-haptic playback. Before calling any API in AudioHapticPlayer, y
 ## Modules to Import
 
 ```TypeScript
-import { audioHaptic } from '@ohos.multimedia.audioHaptic';
+import { audioHaptic } from '@kit.AudioKit';
 ```
 
 ## isMuted
@@ -175,7 +177,8 @@ audioHapticPlayerInstance.off('audioInterrupt', audioInterruptCallback);
 on(type: 'endOfStream', callback: Callback<void>): void
 ```
 
-Subscribes to end of stream (EOS) event, which is triggered when the audio stream playback ends. This API uses an asynchronous callback to return the result.
+Subscribes to end of stream (EOS) event, which is triggered when the audio stream playback ends. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -203,7 +206,8 @@ audioHapticPlayerInstance.on('endOfStream', () => {
 on(type: 'audioInterrupt', callback: Callback<audio.InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result.
+Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -315,7 +319,11 @@ audioHapticPlayerInstance.release().then(() => {
 setLoop(loop: boolean): Promise<void>
 ```
 
-Sets this audio-haptic player to play in a loop. This API uses a promise to return the result. > **NOTE** > > This API must be called before the audio-haptic player is released.
+Sets this audio-haptic player to play in a loop. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API must be called before the audio-haptic player is released.
 
 **Since:** 20
 
@@ -358,7 +366,11 @@ audioHapticPlayerInstance.setLoop(true).then(() => {
 setVolume(volume: number): Promise<void>
 ```
 
-Sets the volume for this audio-haptic player. This API uses a promise to return the result. > **NOTE** > > This API must be called before the audio-haptic player is released.
+Sets the volume for this audio-haptic player. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API must be called before the audio-haptic player is released.
 
 **Since:** 20
 

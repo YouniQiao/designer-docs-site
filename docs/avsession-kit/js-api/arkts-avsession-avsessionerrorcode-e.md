@@ -1,9 +1,5 @@
 # AVSessionErrorCode
 
-```TypeScript
-enum AVSessionErrorCode
-```
-
 Enumerates ErrorCode types, returns in BusinessError.code.
 
 **Since:** 10
@@ -20,7 +16,7 @@ Session service exception.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -34,7 +30,7 @@ The session does not exist
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -48,7 +44,7 @@ The session controller does not exist.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -62,7 +58,7 @@ The remote session connection failed.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -76,7 +72,7 @@ Invalid session command.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -90,7 +86,7 @@ The session is not activated.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -104,7 +100,7 @@ Too many commands or events.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -118,7 +114,7 @@ Device connecting failed.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -132,7 +128,7 @@ The remote connection is not established.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -146,9 +142,9 @@ The desktop lyrics feature of this application is not enabled.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -162,9 +158,9 @@ The desktop lyrics feature is not supported.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -178,7 +174,7 @@ The error code for cast control is unspecified.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -192,7 +188,7 @@ An unspecified error occurs in the remote player.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -206,7 +202,7 @@ The playback position falls behind the live window.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -220,7 +216,7 @@ The process of cast control times out.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -234,7 +230,7 @@ The runtime check failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -248,7 +244,7 @@ Cross-device data transmission is locked.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -262,7 +258,7 @@ The specified seek mode is not supported.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -276,7 +272,7 @@ The position to seek to is out of the range of the media asset or the specified 
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -290,7 +286,7 @@ The specified playback mode is not supported.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -304,7 +300,7 @@ The specified playback speed is not supported.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -318,7 +314,7 @@ The action failed because either the media source device or the media sink devic
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -332,7 +328,7 @@ The parameter is invalid, for example, the url is illegal to play.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -346,7 +342,7 @@ Allocation of memory failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -360,7 +356,7 @@ Operation is not allowed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -374,7 +370,7 @@ An unspecified input/output error occurs.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -388,7 +384,7 @@ Network connection failure.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -402,7 +398,7 @@ Network timeout.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -416,7 +412,7 @@ Invalid "Content-Type" HTTP header.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -430,7 +426,7 @@ The HTTP server returns an unexpected HTTP response status code.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -444,7 +440,7 @@ The file does not exist.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -458,7 +454,7 @@ No permission is granted to perform the IO operation.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -472,7 +468,7 @@ Access to cleartext HTTP traffic is not allowed by the app's network security co
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -486,7 +482,7 @@ Reading data out of the data bound.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -500,7 +496,7 @@ The media does not contain any contents that can be played.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -514,7 +510,7 @@ The media cannot be read, for example, because of dust or scratches.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -528,7 +524,7 @@ This resource is already in use.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -542,7 +538,7 @@ The content using the validity interval has expired.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -556,7 +552,7 @@ Using the requested content to play is not allowed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -570,7 +566,7 @@ The use of the allowed content cannot be verified.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -584,7 +580,7 @@ The number of times this content has been used as requested has reached the maxi
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -598,7 +594,7 @@ An error occurs when sending packet from source device to sink device.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -612,7 +608,7 @@ Unspecified error related to content parsing.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -626,7 +622,7 @@ Parsing error associated with media container format bit streams.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -640,7 +636,7 @@ Parsing error associated with the media manifest.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -650,11 +646,12 @@ Parsing error associated with the media manifest.
 ERR_CODE_CAST_CONTROL_PARSING_CONTAINER_UNSUPPORTED = 6613003
 ```
 
-An error occurs when attempting to extract a file with an unsupported media container format or an unsupported media container feature.
+An error occurs when attempting to extract a file with an unsupported media container format
+or an unsupported media container feature.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -668,7 +665,7 @@ Unsupported feature in the media manifest.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -682,7 +679,7 @@ Unspecified decoding error.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -696,7 +693,7 @@ Decoder initialization failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -710,7 +707,7 @@ Decoder query failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -724,7 +721,7 @@ Decoding the media samples failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -738,7 +735,7 @@ The format of the content to decode exceeds the capabilities of the device.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -752,7 +749,7 @@ The format of the content to decode is not supported.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -766,7 +763,7 @@ Unspecified errors related to the audio renderer.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -780,7 +777,7 @@ Initializing the audio renderer failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -794,7 +791,7 @@ The audio renderer fails to write data.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -808,7 +805,7 @@ Unspecified error related to DRM.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -822,7 +819,7 @@ The chosen DRM protection scheme is not supported by the device.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -836,7 +833,7 @@ Device provisioning failed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -850,7 +847,7 @@ The DRM-protected content to play is incompatible.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -864,7 +861,7 @@ Failed to obtain a license.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -878,7 +875,7 @@ The operation is disallowed by the license policy.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -892,7 +889,7 @@ An error occurs in the DRM system.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -906,7 +903,7 @@ The device has revoked DRM privileges.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -920,7 +917,7 @@ The DRM license being loaded into the open DRM session has expired.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -934,7 +931,7 @@ An error occurs when the DRM processes the key response.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { router } from '@ohos.router';
+import { router } from '@kit.ArkUI';
 ```
 
 ## replaceNamedRoute
@@ -12,7 +12,14 @@ import { router } from '@ohos.router';
 function replaceNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -72,7 +79,14 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions): Promise<void>
 ```
 
-Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -124,7 +138,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 })
   .then(() => {
-    console.error(`replaceNamedRoute finish`);
+    console.info(`replaceNamedRoute finish`);
   })
   .catch((err: ESObject) => {
     console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);
@@ -139,7 +153,14 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCallback<void>): void
 ```
 
-Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -200,7 +221,14 @@ router.replaceNamedRoute({
 function replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 ```
 
-Replaces the current page with another one using the named route and destroys the current page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Replaces the current page with another one using the named route and destroys the current page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 10
 
@@ -253,7 +281,7 @@ router.replaceNamedRoute({
   params: new RouterParams('message')
 }, router.RouterMode.Standard)
   .then(() => {
-    console.error(`replaceNamedRoute finish`);
+    console.info(`replaceNamedRoute finish`);
   })
   .catch((err: ESObject) => {
     console.error(`replaceNamedRoute failed, code is ${(err as BusinessError).code}, message is ${(err as BusinessError).message}`);

@@ -12,7 +12,8 @@ Defines the direction of a barrier.
 LEFT
 ```
 
-The barrier is on the left side of all the referenced components specified by [referencedId](arkts-arkui-barrierstyle-i.md#barrierstyle).
+The barrier is on the left side of all the referenced components specified by
+[referencedId](arkts-arkui-barrierstyle-i.md).
 
 **Since:** 12
 
@@ -28,7 +29,8 @@ The barrier is on the left side of all the referenced components specified by [r
 RIGHT
 ```
 
-The barrier is on the right side of all the referenced components specified by [referencedId](arkts-arkui-barrierstyle-i.md#barrierstyle).
+The barrier is on the right side of all the referenced components specified by
+[referencedId](arkts-arkui-barrierstyle-i.md).
 
 **Since:** 12
 
@@ -44,7 +46,8 @@ The barrier is on the right side of all the referenced components specified by [
 TOP
 ```
 
-The barrier is at the top of all the referenced components specified by [referencedId](arkts-arkui-barrierstyle-i.md#barrierstyle).
+The barrier is at the top of all the referenced components specified by
+[referencedId](arkts-arkui-barrierstyle-i.md).
 
 **Since:** 12
 
@@ -60,7 +63,8 @@ The barrier is at the top of all the referenced components specified by [referen
 BOTTOM
 ```
 
-The barrier is at the bottom of all the referenced components specified by [referencedId](arkts-arkui-barrierstyle-i.md#barrierstyle).
+The barrier is at the bottom of all the referenced components specified by
+[referencedId](arkts-arkui-barrierstyle-i.md).
 
 **Since:** 12
 

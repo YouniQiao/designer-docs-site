@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { reminderAgentManager } from '@ohos.reminderAgentManager';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## getAllValidReminders
@@ -12,7 +12,9 @@ import { reminderAgentManager } from '@ohos.reminderAgentManager';
 function getAllValidReminders(): Promise<Array<ReminderInfo>>
 ```
 
-Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) set by the current application. This API uses a promise to return the result. To call this API, you need to request the ohos.permission.PUBLISH_AGENT_REMINDER permission.
+Obtains all [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints)
+set by the current application. This API uses a promise to return the result. To call this API, you need to request
+the ohos.permission.PUBLISH_AGENT_REMINDER permission.
 
 **Since:** 12
 

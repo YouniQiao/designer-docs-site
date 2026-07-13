@@ -12,7 +12,8 @@ Provides information about the drag event.
 executeDropAnimation(customDropAnimation: Callback<void>): void
 ```
 
-Sets the execution function of the custom drop animation. This parameter is valid only when [useCustomDropAnimation](arkts-arkui-dragevent-i.md#usecustomdropanimation) is set to **true**.
+Sets the execution function of the custom drop animation. This parameter is valid only when
+[useCustomDropAnimation](arkts-arkui-dragevent-i.md#usecustomdropanimation) is set to **true**.
 
 **Since:** 18
 
@@ -63,7 +64,8 @@ Obtains drag-related data.
 getDisplayId(): number
 ```
 
-Obtains the ID of the screen where the current drag event occurs. This API is not supported in the [onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1) callback.
+Obtains the ID of the screen where the current drag event occurs. This API is not supported in the
+[onDragEnd](arkts-arkui-commonmethod-c.md#ondragend-1) callback.
 
 **Since:** 20
 
@@ -273,7 +275,8 @@ Obtains the drag result.
 getSummary(): Summary
 ```
 
-Obtains a summary of drag data, including data type and size information. In a delayed drag scenario, only data type information can be obtained.
+Obtains a summary of drag data, including data type and size information. In a delayed drag scenario, only data
+type information can be obtained.
 
 **Since:** 10
 
@@ -405,7 +408,9 @@ Obtains the y-coordinate of the drag point relative to the upper left corner of 
 getX(): number
 ```
 
-Obtains the x-coordinate of the drag point relative to the upper left corner of the window, in vp. > **NOTE**
+Obtains the x-coordinate of the drag point relative to the upper left corner of the window, in vp.
+
+> **NOTE**
 
 **Since:** 7
 
@@ -427,7 +432,9 @@ Obtains the x-coordinate of the drag point relative to the upper left corner of 
 getY(): number
 ```
 
-Obtains the y-coordinate of the drag point relative to the upper left corner of the window, in vp. > **NOTE**
+Obtains the y-coordinate of the drag point relative to the upper left corner of the window, in vp.
+
+> **NOTE**
 
 **Since:** 7
 
@@ -493,7 +500,11 @@ Sets drag-related data in **DragEvent**.
 setDataLoadParams(dataLoadParams: DataLoadParams): void
 ```
 
-Sets the parameters for deferred data loading from the drag source. This API provides data loading parameters to the system instead of directly providing complete data objects. When the user drops data on the target application, the system will use these parameters to request the actual data from the drag source. If this API is used together with [setData](arkts-arkui-dragevent-i.md#setdata-1), the last called API takes precedence. This API takes effect only in the [onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1) callback.
+Sets the parameters for deferred data loading from the drag source. This API provides data loading parameters to
+the system instead of directly providing complete data objects. When the user drops data on the target application,
+the system will use these parameters to request the actual data from the drag source. If this API is used together
+with [setData](arkts-arkui-dragevent-i.md#setdata-1), the last called API takes precedence. This API takes effect only in the
+[onDragStart](arkts-arkui-commonmethod-c.md#ondragstart-1) callback.
 
 **Since:** 20
 
@@ -537,7 +548,8 @@ Sets the drag result in **DragEvent**.
 startDataLoading(options: DataSyncOptions): string
 ```
 
-Asynchronously obtains drag data and notifies you of the current data synchronization progress. This API is only supported in the **onDrop** callback.
+Asynchronously obtains drag data and notifies you of the current data synchronization progress. This API is only
+supported in the **onDrop** callback.
 
 **Since:** 15
 
@@ -572,7 +584,10 @@ Asynchronously obtains drag data and notifies you of the current data synchroniz
 autoHideComponentUniqueIds?: number | number[]
 ```
 
-Set the uniqueId or uniqueId array of components that need to be automatically hidden during dragging. This property takes effect only in onDragStart. After the drag starts successfully, the system hides the target components before the drag preview window is shown. Developers need to restore component visibility in onDragEnd or onDrop based on service requirements.
+Set the uniqueId or uniqueId array of components that need to be automatically hidden during dragging.
+This property takes effect only in onDragStart. After the drag starts successfully, the system hides the
+target components before the drag preview window is shown. Developers need to restore component visibility
+in onDragEnd or onDrop based on service requirements.
 
 **Type:** number | number[]
 
@@ -590,7 +605,9 @@ Set the uniqueId or uniqueId array of components that need to be automatically h
 dragBehavior: DragBehavior
 ```
 
-Copy or paste mode. Default value: **DragBehavior.COPY**
+Copy or paste mode.
+
+Default value: **DragBehavior.COPY**
 
 **Type:** DragBehavior
 
@@ -610,7 +627,16 @@ Copy or paste mode. Default value: **DragBehavior.COPY**
 useCustomDropAnimation: boolean
 ```
 
-Whether to disable the default drop animation when the dragging ends. If this parameter is set to **true**, the default drop animation is disabled, and the custom one is used. If this parameter is not set or is set to **false**, the default drop animation takes effect. When [setResult](arkts-arkui-dragevent-i.md#setresult-1) is set to **DRAG_SUCCESSFUL**, a shrink-out animation takes effect. Otherwise, an expand-out animation takes effect. When the default drop animation is not disabled, avoid implementing custom animations to prevent conflicts. Default value: **false**
+Whether to disable the default drop animation when the dragging ends.
+
+If this parameter is set to **true**, the default drop animation is disabled, and the custom one is used.
+
+If this parameter is not set or is set to **false**, the default drop animation takes effect. When [setResult](arkts-arkui-dragevent-i.md#setresult-1)
+is set to **DRAG_SUCCESSFUL**, a shrink-out animation takes effect. Otherwise, an expand-out animation takes effect.
+
+When the default drop animation is not disabled, avoid implementing custom animations to prevent conflicts.
+
+Default value: **false**
 
 **Type:** boolean
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## getDelegatedBundleNames
@@ -12,7 +12,8 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function getDelegatedBundleNames(admin: Want, policy: string): Array<string>
 ```
 
-Queries the delegated applications that can access a delegation policy and output the list of delegated applications.
+Queries the delegated applications that can access a delegation policy and output the list of delegated
+applications.
 
 **Since:** 14
 

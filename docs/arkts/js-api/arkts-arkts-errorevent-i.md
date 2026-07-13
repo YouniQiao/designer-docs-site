@@ -1,8 +1,9 @@
 # ErrorEvent
 
-Provides detailed information about the exception that occurs during worker execution. The ErrorEvent class inherits from Event.
+Provides detailed information about the exception that occurs during worker execution. The ErrorEvent class inherits
+from Event.
 
-**Inheritance/Implementation:** ErrorEvent extends [Event](arkts-arkts-event-i.md#event)
+**Inheritance/Implementation:** ErrorEvent extends [Event](arkts-arkts-event-i.md)
 
 **Since:** 7
 
@@ -11,7 +12,7 @@ Provides detailed information about the exception that occurs during worker exec
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## colno

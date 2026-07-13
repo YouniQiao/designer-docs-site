@@ -1,6 +1,7 @@
 # HdrGainmapMetadata
 
-Gainmap使用的元数据值，[HdrMetadataKey]image.HdrMetadataKey中HDR_GAINMAP_METADATA关键字对应的值，参考ISO 21496-1。
+Describes the metadata keys used by a gain map, that is, the values available for **HDR_GAINMAP_METADATA** in
+[HdrMetadataKey](arkts-image-hdrmetadatakey-e.md). For details, see ISO 21496-1.
 
 **Since:** 12
 
@@ -12,15 +13,15 @@ Gainmap使用的元数据值，[HdrMetadataKey]image.HdrMetadataKey中HDR_GAINMA
 import { image } from '@kit.ImageKit';
 ```
 
-## useBaseColorFlag
+## alternateHeadroom
 
 ```TypeScript
-useBaseColorFlag: boolean
+alternateHeadroom: number
 ```
 
-Indicate whether to use the color space of the base image.
+The alternate hdr headroom.
 
-**Type:** boolean
+**Type:** number
 
 **Since:** 12
 
@@ -29,40 +30,12 @@ Indicate whether to use the color space of the base image.
 ## baseHeadroom
 
 ```TypeScript
-baseHeadroom: double
+baseHeadroom: number
 ```
 
 The baseline hdr headroom.
 
-**Type:** double
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## miniVersion
-
-```TypeScript
-miniVersion: int
-```
-
-The minimum version a parser needs to understand.
-
-**Type:** int
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## alternateHeadroom
-
-```TypeScript
-alternateHeadroom: double
-```
-
-The alternate hdr headroom.
-
-**Type:** double
+**Type:** number
 
 **Since:** 12
 
@@ -85,12 +58,40 @@ The per-channel metadata.
 ## gainmapChannelCount
 
 ```TypeScript
-gainmapChannelCount: int
+gainmapChannelCount: number
 ```
 
 The number of gain map channels, with a value of 1 or 3.
 
-**Type:** int
+**Type:** number
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## miniVersion
+
+```TypeScript
+miniVersion: number
+```
+
+The minimum version a parser needs to understand.
+
+**Type:** number
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## useBaseColorFlag
+
+```TypeScript
+useBaseColorFlag: boolean
+```
+
+Indicate whether to use the color space of the base image.
+
+**Type:** boolean
 
 **Since:** 12
 
@@ -99,12 +100,12 @@ The number of gain map channels, with a value of 1 or 3.
 ## writerVersion
 
 ```TypeScript
-writerVersion: int
+writerVersion: number
 ```
 
 The version used by the writer.
 
-**Type:** int
+**Type:** number
 
 **Since:** 12
 

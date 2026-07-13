@@ -1,6 +1,8 @@
 # CustomSpan
 
-Describes the custom span. Only the base class is provided. You need to define the specific implementation. The drag preview of a custom span is blank.
+Describes the custom span. Only the base class is provided. You need to define the specific implementation.
+
+The drag preview of a custom span is blank.
 
 **Since:** 12
 

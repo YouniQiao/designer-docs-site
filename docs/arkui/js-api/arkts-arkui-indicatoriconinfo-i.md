@@ -32,7 +32,8 @@ Icon that needs to be set.
 index: number
 ```
 
-The specified index. The value should be an integer.
+The specified index.
+The value should be an integer.
 
 **Type:** number
 

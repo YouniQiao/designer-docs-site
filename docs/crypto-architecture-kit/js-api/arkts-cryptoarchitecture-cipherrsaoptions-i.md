@@ -1,6 +1,6 @@
 # CipherRsaOptions
 
-Defines the rsa cipher options.
+Defines the input parameters of **cipher.rsa()**.
 
 **Since:** 3
 
@@ -13,7 +13,7 @@ Defines the rsa cipher options.
 ## Modules to Import
 
 ```TypeScript
-import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@system.cipher';
+import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@kit.CryptoArchitectureKit';
 ```
 
 ## action
@@ -22,7 +22,10 @@ import { CipherAesOptions, CipherResponse, CipherRsaOptions } from '@system.ciph
 action: string
 ```
 
-Action type. The options are as follows: encrypt: Encrypts data. decrypt: Decrypts data.
+Action to perform. The options are as follows:
+
+1. **encrypt**: Encrypts data.
+2. **decrypt**: Decrypts data.
 
 **Type:** string
 
@@ -40,7 +43,7 @@ Action type. The options are as follows: encrypt: Encrypts data. decrypt: Decryp
 complete: () => void
 ```
 
-Called when the execution is completed.
+Called when the execution is complete.
 
 **Type:** () => void
 
@@ -76,7 +79,7 @@ Called when data fails to be encrypted or decrypted.
 key: string
 ```
 
-Keys encrypted using RSA. During encryption, this parameter is a public key. During decryption, it is a private key.
+RSA key. It is a public key in encryption and a private key in decryption.
 
 **Type:** string
 
@@ -112,7 +115,12 @@ Called when data is encrypted or decrypted successfully.
 text: string
 ```
 
-Text content to be encrypted or decrypted. The text to be encrypted must be a common text and cannot exceed the length calculated based on the formula (keySize/8 - 66). keySize indicates the key length. For example, if the key length is 1024 bytes, the text cannot exceed 62 bytes (1024/8 - 66 = 62). The text content to be decrypted must be a binary value encoded using Base64. The default format is used for Base64 encoding.
+Text to be encrypted or decrypted.
+
+The text to be encrypted must be a common text and cannot exceed the length calculated based on the formula (
+keySize/8 - 66). **keySize** indicates the key length. For example, if the key length is 1024 bytes, the text
+cannot exceed 62 bytes (1024/8 - 66 = 62). The text to be decrypted must be a binary value encoded in Base64. The
+default format is used for Base64 encoding.
 
 **Type:** string
 
@@ -130,7 +138,7 @@ Text content to be encrypted or decrypted. The text to be encrypted must be a co
 transformation?: string
 ```
 
-RSA algorithm padding. The default value is RSA/None/OAEPWithSHA256AndMGF1Padding.
+RSA padding. The default value is **RSA/None/OAEPWithSHA256AndMGF1Padding**.
 
 **Type:** string
 

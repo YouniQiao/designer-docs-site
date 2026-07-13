@@ -9,7 +9,7 @@ Provides information about the device or application's folding, rotation, and wi
 ## Modules to Import
 
 ```TypeScript
-import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, ExpandedRegionLayoutOptions, FoldSplitContainer, HoverModeRegionLayoutOptions, FoldedRegionLayoutOptions, PresetSplitRatio } from '@ohos.arkui.advanced.FoldSplitContainer';
+import { HoverModeStatus, ExtraRegionPosition, OnHoverStatusChangeHandler, ExpandedRegionLayoutOptions, FoldSplitContainer, HoverModeRegionLayoutOptions, FoldedRegionLayoutOptions, PresetSplitRatio } from '@kit.ArkUI';
 ```
 
 ## appRotation
@@ -54,7 +54,8 @@ Fold status of the device.
 isHoverMode: boolean
 ```
 
-Whether the application is in the hover state. The value **true** means that the application is in the hover state, and **false** means the opposite.
+Whether the application is in the hover state. The value **true** means that the application
+is in the hover state, and **false** means the opposite.
 
 **Type:** boolean
 

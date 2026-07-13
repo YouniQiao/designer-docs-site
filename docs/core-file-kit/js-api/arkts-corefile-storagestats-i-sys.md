@@ -11,7 +11,7 @@ Get the user storage statistics.
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## app
@@ -20,7 +20,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 app: number
 ```
 
-The size of application. <br>Unit: Byte.
+The size of application.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ The size of application. <br>Unit: Byte.
 audio: number
 ```
 
-The size of audio file. <br>Unit: Byte.
+The size of audio file.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -52,7 +54,8 @@ The size of audio file. <br>Unit: Byte.
 file: number
 ```
 
-The size of other file. <br>Unit: Byte.
+The size of other file.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -68,7 +71,8 @@ The size of other file. <br>Unit: Byte.
 image: number
 ```
 
-The size of image file. <br>Unit: Byte.
+The size of image file.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -84,7 +88,8 @@ The size of image file. <br>Unit: Byte.
 total: number
 ```
 
-The total size of device. <br>Unit: Byte.
+The total size of device.
+<br>Unit: Byte.
 
 **Type:** number
 
@@ -100,7 +105,8 @@ The total size of device. <br>Unit: Byte.
 video: number
 ```
 
-The size of video file. <br>Unit: Byte.
+The size of video file.
+<br>Unit: Byte.
 
 **Type:** number
 

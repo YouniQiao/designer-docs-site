@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## triggerAsync
@@ -12,7 +12,10 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function triggerAsync(agent: WantAgent, triggerInfo: TriggerInfo, context: Context): Promise<CompleteData>
 ```
 
-Asynchronously triggers a predefined operation encration encapsulated in a Wantagent with specified trigger information. If the specified wantAgent is local, you need to apply for permission: ohos.permission.TRIGGER_LOCAL_WANTAGENT permission.
+Asynchronously triggers a predefined operation encration encapsulated in a Wantagent with specified trigger
+information.
+If the specified wantAgent is local, you need to apply for permission:
+ohos.permission.TRIGGER_LOCAL_WANTAGENT permission.
 
 **Since:** 20
 

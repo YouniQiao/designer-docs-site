@@ -1,6 +1,7 @@
 # SubscribedAbstractProperty (System API)
 
-Represents a synchronized property from [AppStorage](../../../../ui/state-management/arkts-appstorage.md) or [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
+Represents a synchronized property from [AppStorage](../../../../ui/state-management/arkts-appstorage.md) or
+[LocalStorage](../../../../ui/state-management/arkts-localstorage.md).
 
 **Since:** 9
 

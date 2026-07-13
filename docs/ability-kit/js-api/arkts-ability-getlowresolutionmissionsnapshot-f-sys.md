@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { missionManager } from '@ohos.app.ability.missionManager';
+import { missionManager } from '@kit.AbilityKit';
 ```
 
 ## getLowResolutionMissionSnapShot
@@ -16,7 +16,8 @@ function getLowResolutionMissionSnapShot(
   ): void
 ```
 
-Obtains the low-resolution snapshot of a given mission. This API uses an asynchronous callback to return the result.
+Obtains the low-resolution snapshot of a given mission. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

@@ -1,6 +1,6 @@
 # X509CRL
 
-被吊销证书列表对象。
+X.509 CRL操作。
 
 **起始版本：** 11
 
@@ -30,7 +30,7 @@ getEncoded(callback: AsyncCallback<EncodingBlob>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -59,7 +59,7 @@ getEncoded(): Promise<EncodingBlob>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -70,7 +70,7 @@ getEncoded(): Promise<EncodingBlob>
 getExtensions(): DataBlob
 ```
 
-表示获取CRL的扩展。
+表示获取CRL扩展的DER格式数据。
 
 **起始版本：** 11
 
@@ -82,7 +82,7 @@ getExtensions(): DataBlob
 
 | 类型 | 说明 |
 | --- | --- |
-| DataBlob | 表示X509CRL扩展用途。 |
+| DataBlob | 表示CRL扩展的DER格式数据。 |
 
 **错误码：**
 
@@ -98,7 +98,7 @@ getExtensions(): DataBlob
 getExtensionsObject(): CertExtension
 ```
 
-获取对应实体的扩展域DER格式数据。
+获取CRL扩展对象。
 
 **起始版本：** 12
 
@@ -110,7 +110,7 @@ getExtensionsObject(): CertExtension
 
 | 类型 | 说明 |
 | --- | --- |
-| CertExtension | 证书扩展域段类对象。 |
+| CertExtension | CRL扩展对象。 |
 
 **错误码：**
 
@@ -126,7 +126,11 @@ getExtensionsObject(): CertExtension
 getIssuerName(): DataBlob
 ```
 
-表示获取X509证书吊销列表颁发者名称。 > **说明：** > > 获取到的X509证书吊销列表颁发者名称数据带字符串结束符。
+表示获取X509证书吊销列表颁发者名称。
+
+> **说明：**
+>
+> 获取到的X509证书吊销列表颁发者名称数据带字符串结束符。
 
 **起始版本：** 11
 
@@ -189,7 +193,7 @@ getIssuerName(encodingType: EncodingType): string
 getIssuerX500DistinguishedName(): X500DistinguishedName
 ```
 
-获取颁发者的X509可分辨名称。
+获取CRL颁发者的X.500可分辨名称对象。
 
 **起始版本：** 12
 
@@ -201,7 +205,7 @@ getIssuerX500DistinguishedName(): X500DistinguishedName
 
 | 类型 | 说明 |
 | --- | --- |
-| X500DistinguishedName | X509的可分辨对象。 |
+| X500DistinguishedName | X.500可分辨名称对象。 |
 
 **错误码：**
 
@@ -273,7 +277,7 @@ getNextUpdate(): string
 getRevokedCert(serialNumber: bigint): X509CRLEntry
 ```
 
-表示通过指定证书序列号获取被吊销X509证书对象。
+表示通过指定证书序列号获取证书吊销条目。
 
 **起始版本：** 11
 
@@ -291,13 +295,13 @@ getRevokedCert(serialNumber: bigint): X509CRLEntry
 
 | 类型 | 说明 |
 | --- | --- |
-| X509CRLEntry | 表示被吊销X509证书对象。 |
+| X509CRLEntry | 表示证书吊销条目。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -307,7 +311,7 @@ getRevokedCert(serialNumber: bigint): X509CRLEntry
 getRevokedCertWithCert(cert: X509Cert): X509CRLEntry
 ```
 
-表示通过指定证书对象获取被吊销X509证书对象。
+表示通过指定证书对象获取证书吊销条目。
 
 **起始版本：** 11
 
@@ -325,13 +329,13 @@ getRevokedCertWithCert(cert: X509Cert): X509CRLEntry
 
 | 类型 | 说明 |
 | --- | --- |
-| X509CRLEntry | 表示被吊销X509证书对象。 |
+| X509CRLEntry | 表示证书吊销条目。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -341,7 +345,7 @@ getRevokedCertWithCert(cert: X509Cert): X509CRLEntry
 getRevokedCerts(callback: AsyncCallback<Array<X509CRLEntry>>): void
 ```
 
-表示获取被吊销X509证书列表。使用Callback异步回调。
+表示获取证书吊销条目列表。使用Callback异步回调。
 
 **起始版本：** 11
 
@@ -353,13 +357,13 @@ getRevokedCerts(callback: AsyncCallback<Array<X509CRLEntry>>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;X509CRLEntry&gt;&gt; | 是 | 回调函数。当获取被吊销X509证书列表成功时，err为undefined，data为获取到的被吊销X509证书列表；否则为错误对象。 |
+| callback | AsyncCallback&lt;Array&lt;X509CRLEntry&gt;&gt; | 是 | 回调函数。当获取证书吊销条目列表成功时，err为undefined，data为获取到的证书吊销条目列表；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -369,7 +373,7 @@ getRevokedCerts(callback: AsyncCallback<Array<X509CRLEntry>>): void
 getRevokedCerts(): Promise<Array<X509CRLEntry>>
 ```
 
-表示获取被吊销X509证书列表。使用Promise方式返回结果。
+表示获取证书吊销条目列表。使用Promise方式返回结果。
 
 **起始版本：** 11
 
@@ -381,13 +385,13 @@ getRevokedCerts(): Promise<Array<X509CRLEntry>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;X509CRLEntry&gt;&gt; | Promise对象，返回被吊销X509证书列表。 |
+| Promise&lt;Array&lt;X509CRLEntry&gt;&gt; | Promise对象，返回证书吊销条目列表。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确； |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -453,7 +457,7 @@ getSignatureAlgName(): string
 getSignatureAlgOid(): string
 ```
 
-表示获取X509证书吊销列表签名算法的对象标志符OID(Object Identifier)。OID是由国际标准组织(ISO)的名称注册机构分配。
+表示获取X509证书吊销列表签名算法的对象标识符OID（Object Identifier）。OID是由国际标准化组织（ISO）的名称注册机构分配。
 
 **起始版本：** 11
 
@@ -465,7 +469,7 @@ getSignatureAlgOid(): string
 
 | 类型 | 说明 |
 | --- | --- |
-| string | 表示X509证书吊销列表签名算法的对象标志符OID。 |
+| string | 表示X509证书吊销列表签名算法的对象标识符OID。 |
 
 **错误码：**
 
@@ -499,7 +503,7 @@ getSignatureAlgParams(): DataBlob
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | 不支持该操作。 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | 不支持该操作。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19020002](../errorcode-cert.md#19020002-运行时错误) | 运行时外部错误。可能的原因：<br>1. 内存拷贝失败；<br>2. 系统内部出现空指针；<br>3. 获取Native对象失败或参数转换失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
@@ -630,7 +634,7 @@ isRevoked(cert: X509Cert): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 
 ## match
 
@@ -662,7 +666,7 @@ match(param: X509CRLMatchParameters): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19020001](../errorcode-cert.md#19020001-内存错误) | 内存错误。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
@@ -754,7 +758,7 @@ verify(key: cryptoFramework.PubKey, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 
 ## verify
@@ -787,6 +791,6 @@ verify(key: cryptoFramework.PubKey): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数校验失败。 |
 | [19030001](../errorcode-cert.md#19030001-调用三方算法库api出错) | 调用三方算法库API出错。 |
 

@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@system.geolocation';
+import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@kit.LocationKit';
 ```
 
 ## complete

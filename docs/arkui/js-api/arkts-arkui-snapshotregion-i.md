@@ -9,7 +9,7 @@ Defines the rectangular region for capturing the component snapshot.
 ## Modules to Import
 
 ```TypeScript
-import { componentSnapshot } from '@ohos.arkui.componentSnapshot';
+import { componentSnapshot } from '@kit.ArkUI';
 ```
 
 ## bottom
@@ -18,7 +18,11 @@ import { componentSnapshot } from '@ohos.arkui.componentSnapshot';
 bottom: number
 ```
 
-Y-coordinate of the lower right corner of the rectangular region. Unit: px. Value range: [0, Component height].
+Y-coordinate of the lower right corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component height].
 
 **Type:** number
 
@@ -36,7 +40,11 @@ Y-coordinate of the lower right corner of the rectangular region. Unit: px. Valu
 left: number
 ```
 
-X-coordinate of the upper left corner of the rectangular region. Unit: px. Value range: [0, Component width].
+X-coordinate of the upper left corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component width].
 
 **Type:** number
 
@@ -54,7 +62,11 @@ X-coordinate of the upper left corner of the rectangular region. Unit: px. Value
 right: number
 ```
 
-X-coordinate of the lower right corner of the rectangular region. Unit: px. Value range: [0, Component width].
+X-coordinate of the lower right corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component width].
 
 **Type:** number
 
@@ -72,7 +84,11 @@ X-coordinate of the lower right corner of the rectangular region. Unit: px. Valu
 top: number
 ```
 
-Y-coordinate of the upper left corner of the rectangular region. Unit: px. Value range: [0, Component height].
+Y-coordinate of the upper left corner of the rectangular region.
+
+Unit: px.
+
+Value range: [0, Component height].
 
 **Type:** number
 

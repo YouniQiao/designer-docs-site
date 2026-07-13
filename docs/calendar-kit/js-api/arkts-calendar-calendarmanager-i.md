@@ -1,6 +1,7 @@
 # CalendarManager
 
-Before calling any of the following APIs to manage the calendar, you must use [getCalendarManager()](arkts-calendar-getcalendarmanager-f.md#getcalendarmanager-1) to obtain a **CalendarManager** object first.
+Before calling any of the following APIs to manage the calendar, you must use
+[getCalendarManager()](arkts-calendar-getcalendarmanager-f.md#getcalendarmanager-1) to obtain a **CalendarManager** object first.
 
 **Since:** 10
 
@@ -9,7 +10,7 @@ Before calling any of the following APIs to manage the calendar, you must use [g
 ## Modules to Import
 
 ```TypeScript
-import { calendarManager } from '@ohos.calendarManager';
+import { calendarManager } from '@kit.CalendarKit';
 ```
 
 ## createCalendar
@@ -18,7 +19,8 @@ import { calendarManager } from '@ohos.calendarManager';
 createCalendar(calendarAccount: CalendarAccount): Promise<Calendar>
 ```
 
-Creates a Calendar object based on the calendar account information. This API uses a promise to return the result.
+Creates a Calendar object based on the calendar account information.
+This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -45,7 +47,7 @@ Creates a Calendar object based on the calendar account information. This API us
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -75,7 +77,8 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 createCalendar(calendarAccount: CalendarAccount, callback: AsyncCallback<Calendar>): void
 ```
 
-Creates a Calendar object based on the calendar account information. This API uses an asynchronous callback to return the result.
+Creates a Calendar object based on the calendar account information.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -97,7 +100,7 @@ Creates a Calendar object based on the calendar account information. This API us
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -159,7 +162,7 @@ Deletes a specified Calendar object. This API uses a promise to return the resul
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -222,7 +225,7 @@ Deletes a specified Calendar object. This API uses an asynchronous callback to r
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -266,7 +269,13 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 editEvent(event: Event): Promise<number>
 ```
 
-Edits an event on the event creation page, with no event ID specified in **Event**. The **instanceStartTime**, **instanceEndTime**, **identifier**, **attendee**, **service**, **isLunar**, and **timeZone** attributes cannot be set. Important events cannot be added either. This API uses a promise to return the result. Events created using this API can be obtained and modified by the system calendar. Third-party applications can obtain and modify the events after they requested the **READ_WHOLE_CALENDAR** permission and the **WRITE_WHOLE_CALENDAR** permission, respectively.
+Edits an event on the event creation page, with no event ID specified in **Event**. The **instanceStartTime**, **instanceEndTime**,
+**identifier**, **attendee**, **service**, **isLunar**, and **timeZone** attributes cannot be set. Important events cannot be added either.
+This API uses a promise to return the result.
+
+Events created using this API can be obtained and modified by the system calendar.
+Third-party applications can obtain and modify the events after they requested the **READ_WHOLE_CALENDAR**
+permission and the **WRITE_WHOLE_CALENDAR** permission, respectively.
 
 **Since:** 12
 
@@ -312,7 +321,8 @@ calendarMgr?.editEvent(event).then((eventId: number): void => {
 getAllCalendars(): Promise<Calendar[]>
 ```
 
-Obtains the created and default Calendar objects of the current application. This API uses a promise to return the result.
+Obtains the created and default Calendar objects of the current application.
+This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -333,7 +343,7 @@ Obtains the created and default Calendar objects of the current application. Thi
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -363,7 +373,8 @@ calendarMgr?.getAllCalendars().then((data: calendarManager.Calendar[]) => {
 getAllCalendars(callback: AsyncCallback<Calendar[]>): void
 ```
 
-Obtains the created and default Calendar objects of the current application. This API uses an asynchronous callback to return the result.
+Obtains the created and default Calendar objects of the current application.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -384,7 +395,7 @@ Obtains the created and default Calendar objects of the current application. Thi
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -443,8 +454,8 @@ Obtains the default or specified Calendar object. This API uses a promise to ret
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900003](../errorcode-calendarManager.md#23900003-specified-account-not-found) | The specified account was not found.<br>**Applicable version:** 23 |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900003](../errorcode-calendarManager.md#23900003-specified-account-not-found) | The specified account was not found.<br>**Applicable version:** 23 and later |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -493,8 +504,8 @@ Obtains a specified Calendar object. This API uses an asynchronous callback to r
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900003](../errorcode-calendarManager.md#23900003-specified-account-not-found) | The specified account was not found.<br>**Applicable version:** 23 |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900003](../errorcode-calendarManager.md#23900003-specified-account-not-found) | The specified account was not found.<br>**Applicable version:** 23 and later |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -531,7 +542,9 @@ calendarMgr?.createCalendar(calendarAccount).then((data: calendarManager.Calenda
 getCalendar(callback: AsyncCallback<Calendar>): void
 ```
 
-Obtains the default Calendar object, which is created when the data storage runs for the first time. This API uses an asynchronous callback to return the result. You can call this API instead of createCalendar() to use the default calendar for a new event.
+Obtains the default Calendar object, which is created when the data storage runs for the first time.
+This API uses an asynchronous callback to return the result.
+You can call this API instead of createCalendar() to use the default calendar for a new event.
 
 **Since:** 10
 
@@ -554,7 +567,7 @@ Obtains the default Calendar object, which is created when the data storage runs
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 |
+| [23900004](../errorcode-calendarManager.md#23900004-internal-program-error) | Internal program errors. Possible causes:<br>1. dataShare database execution error;<br>2. null pointer error;<br>3. Data parsing error.<br>**Applicable version:** 23 and later |
 
 **Example**
 

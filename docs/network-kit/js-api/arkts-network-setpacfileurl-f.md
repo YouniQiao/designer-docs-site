@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## setPacFileUrl
@@ -12,7 +12,9 @@ import { connection } from '@ohos.net.connection';
 function setPacFileUrl(pacFileUrl: string): void
 ```
 
-Set the URL {@link pacFileUrl} of the current PAC script. Proxy information can be obtained through parsing the script address. To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
+Set the URL {@link pacFileUrl} of the current PAC script.
+Proxy information can be obtained through parsing the script address.
+To invoke this method, you must have the {@code ohos.permission.SET_PAC_URL} permission.
 
 **Since:** 20
 

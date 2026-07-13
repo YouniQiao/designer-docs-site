@@ -1,6 +1,14 @@
 # Swiper
 
-滑块视图容器，提供子组件滑动轮播显示的能力。 > **说明：** > - Swiper组件通过内置的[PanGesture]{@link gesture}拖动手势实现滑动轮播效果，将[disableSwipe]{@link SwiperAttribute#disableSwipe}属性设为true > 时，会禁用该手势监听，从而阻止滑动操作。 > > - Swiper中复用[NodeContainer]{@link node_container}时，禁止递归流程中子节点更新父节点状态变量。
+滑块视图容器，提供子组件滑动轮播显示的能力。
+
+> **说明：**
+
+> - Swiper组件通过内置的[PanGesture]{@link gesture}拖动手势实现滑动轮播效果，将[disableSwipe]{@link SwiperAttribute#disableSwipe}属性设为true
+> 时，会禁用该手势监听，从而阻止滑动操作。
+>
+> - Swiper中复用[NodeContainer]{@link node_container}时，禁止递归流程中子节点更新父节点状态变量。
+
 
 ## Swiper
 

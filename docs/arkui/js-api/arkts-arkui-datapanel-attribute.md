@@ -1,6 +1,10 @@
 # DataPanel properties/events
 
-In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
+In addition to the
+[universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following
+attributes are supported.
+
+The [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md) are supported.
 
 **Inheritance/Implementation:** DataPanelAttribute extends [CommonMethod<DataPanelAttribute>](CommonMethod<DataPanelAttribute>)
 
@@ -14,7 +18,10 @@ In addition to the [universal attributes](../../../../reference/apis-arkui/arkui
 closeEffect(value: boolean)
 ```
 
-Sets whether to disable the rotation and shadow effects for the component. When the [trackShadow](DataPanelAttribute#trackShadow) attribute is not configured, this attribute controls the shadow effect. If the shadow effect is enabled, the default shadow style is applied. When **trackShadow** is explicitly set, the **trackShadow** configuration takes precedence.
+Sets whether to disable the rotation and shadow effects for the component. When the
+[trackShadow](DataPanelAttribute#trackShadow) attribute is not configured, this attribute controls the shadow
+effect. If the shadow effect is enabled, the default shadow style is applied. When **trackShadow** is explicitly
+set, the **trackShadow** configuration takes precedence.
 
 **Since:** 7
 
@@ -58,7 +65,8 @@ Creates a content modifier.
 strokeWidth(value: Length)
 ```
 
-Sets the stroke width of the border. This attribute does not take effect when the data panel type is **DataPanelType.Line**.
+Sets the stroke width of the border. This attribute does not take effect when the data panel type is
+**DataPanelType.Line**.
 
 **Since:** 10
 

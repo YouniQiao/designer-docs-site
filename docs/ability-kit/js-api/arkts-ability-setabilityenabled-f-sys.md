@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## setAbilityEnabled
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function setAbilityEnabled(info: AbilityInfo, appIndex: number, isEnabled: boolean): Promise<void>
 ```
 
-Enables or disables an ability of an application or an application clone. This API uses a promise to return the result.
+Enables or disables an ability of an application or an application clone. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -105,7 +106,7 @@ Enables or disables an ability. This API uses an asynchronous callback to return
 | --- | --- | --- | --- |
 | info | AbilityInfo | Yes | Information about the target ability. |
 | isEnabled | boolean | Yes | Whether to enable the application. **true** to enable, **false** otherwise. |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

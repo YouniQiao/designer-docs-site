@@ -9,7 +9,7 @@ Describes the contents of the bluetooth scan results.
 ## Modules to Import
 
 ```TypeScript
-import { geoLocationManager } from '@ohos.geoLocationManager';
+import { geoLocationManager } from '@kit.LocationKit';
 ```
 
 ## connectable

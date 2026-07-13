@@ -1,9 +1,5 @@
 # FileGenerationMode
 
-```TypeScript
-enum FileGenerationMode
-```
-
 Enumerates the modes for creating media files.
 
 **Since:** 12
@@ -28,7 +24,8 @@ The application creates a media file in the sandbox.
 AUTO_CREATE_CAMERA_SCENE = 1
 ```
 
-The system creates a media file. Currently, this mode takes effect only in camera recording scenarios. The URL set by the application is ignored.
+The system creates a media file. Currently, this mode takes effect only in camera recording scenarios. The URL
+set by the application is ignored.
 
 **Since:** 12
 

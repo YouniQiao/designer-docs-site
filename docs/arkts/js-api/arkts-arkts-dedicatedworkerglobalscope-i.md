@@ -2,7 +2,7 @@
 
 Specifies the worker thread running environment, which is isolated from the host thread environment
 
-**Inheritance/Implementation:** DedicatedWorkerGlobalScope extends [WorkerGlobalScope](arkts-arkts-workerglobalscope-i.md#workerglobalscope)
+**Inheritance/Implementation:** DedicatedWorkerGlobalScope extends [WorkerGlobalScope](arkts-arkts-workerglobalscope-i.md)
 
 **Since:** 7
 
@@ -15,7 +15,7 @@ Specifies the worker thread running environment, which is isolated from the host
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## close
@@ -185,7 +185,10 @@ workerPort.onmessage = (): void => {
 onmessage?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-The onmessage attribute of parentPort specifies the event handler to be called then the worker thread receives a message sent by the host thread through worker postMessage. The event handler is executed in the worker thread.
+The onmessage attribute of parentPort specifies the event handler
+to be called then the worker thread receives a message sent by
+the host thread through worker postMessage.
+The event handler is executed in the worker thread.
 
 **Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 
@@ -203,7 +206,9 @@ The onmessage attribute of parentPort specifies the event handler to be called t
 onmessageerror?: (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 ```
 
-The onmessage attribute of parentPort specifies the event handler to be called then the worker receives a message that cannot be deserialized. The event handler is executed in the worker thread.
+The onmessage attribute of parentPort specifies the event handler
+to be called then the worker receives a message that cannot be deserialized.
+The event handler is executed in the worker thread.
 
 **Type:** (this: DedicatedWorkerGlobalScope, ev: MessageEvent) => void
 

@@ -1,6 +1,7 @@
 # CloudMediaAssetManager (System API)
 
-A class used for cloud media asset management. It is used to manage download tasks for media assets stored in the cloud and delete local data and files pertaining to these cloud-based assets.
+A class used for cloud media asset management. It is used to manage download tasks for media assets stored
+in the cloud and delete local data and files pertaining to these cloud-based assets.
 
 **Since:** 14
 
@@ -11,7 +12,7 @@ A class used for cloud media asset management. It is used to manage download tas
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## cancelDownloadCloudMedia

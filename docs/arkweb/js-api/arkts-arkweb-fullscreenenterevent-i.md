@@ -28,13 +28,15 @@ Function handle for exiting full screen mode.
 videoHeight?: number
 ```
 
-The intrinsic height of the video if the fullscreen element contains video element, expressed in CSS pixels, Unit: px.
+Video height, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its
+height; if the element that enters fulls screen mode contains a **<video>** element, the value represents the height
+of the first sub-video element; in other cases, the value is **0**.
 
 **Type:** number
 
-**Since:** 18
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Web.Webview.Core
 
@@ -44,7 +46,9 @@ The intrinsic height of the video if the fullscreen element contains video eleme
 videoWidth?: number
 ```
 
-Video width, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its width; if the element that enters fulls screen mode contains a **<video>** element, the value represents the width of the first sub-video element; in other cases, the value is **0**.
+Video width, in px. If the element that enters fulls screen mode is a **<video>** element, the value represents its
+width; if the element that enters fulls screen mode contains a **<video>** element, the value represents the width
+of the first sub-video element; in other cases, the value is **0**.
 
 **Type:** number
 

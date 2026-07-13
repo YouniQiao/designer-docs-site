@@ -12,7 +12,13 @@ Implements a **ScrollableBarModeOptions** object.
 margin?: Dimension
 ```
 
-Left and right margin of the tab bar in scrollable mode. It cannot be set in percentage. Default value: **0.0** Unit: vp Value range: [0, +∞)
+Left and right margin of the tab bar in scrollable mode. It cannot be set in percentage.
+
+Default value: **0.0**
+
+Unit: vp
+
+Value range: [0, +∞)
 
 **Type:** Dimension
 
@@ -30,7 +36,9 @@ Left and right margin of the tab bar in scrollable mode. It cannot be set in per
 nonScrollableLayoutStyle?: LayoutStyle
 ```
 
-Tab layout mode of the tab bar when not scrolling in scrollable mode. Default value: **LayoutStyle.ALWAYS_CENTER**
+Tab layout mode of the tab bar when not scrolling in scrollable mode.
+
+Default value: **LayoutStyle.ALWAYS_CENTER**
 
 **Type:** LayoutStyle
 

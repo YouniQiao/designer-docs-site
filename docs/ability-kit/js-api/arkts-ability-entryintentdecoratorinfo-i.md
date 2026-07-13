@@ -1,8 +1,11 @@
 # EntryIntentDecoratorInfo
 
-Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo) and is used to describe the parameters supported by the [@InsightIntentEntry](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry) decorator.
+Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md) and is used to describe the parameters supported by
+the
+[@InsightIntentEntry](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry)
+decorator.
 
-**Inheritance/Implementation:** EntryIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)
+**Inheritance/Implementation:** EntryIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 
 **Since:** 20
 
@@ -11,7 +14,7 @@ Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#inten
 ## Modules to Import
 
 ```TypeScript
-import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightIntentEntity, LinkParamCategory, InsightIntentPage, InsightIntentEntry, InsightIntentFunctionMethod } from '@ohos.app.ability.InsightIntentDecorator';
+import { InsightIntentFunction, InsightIntentForm, InsightIntentLink, InsightIntentEntity, LinkParamCategory, InsightIntentPage, InsightIntentEntry, InsightIntentFunctionMethod } from '@kit.AbilityKit';
 ```
 
 ## abilityName

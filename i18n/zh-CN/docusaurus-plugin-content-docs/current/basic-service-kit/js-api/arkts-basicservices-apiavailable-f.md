@@ -6,7 +6,8 @@
 function apiAvailable(version: string | number): boolean
 ```
 
-检查指定的API版本在当前设备上是否可用。 此方法提供跨不同OpenHarmony/分布式操作系统版本的兼容性检查。它会根据输入格式和API版本范围自动选择合适的版本检查方法。
+检查指定的API版本在当前设备上是否可用。
+此方法提供跨不同OpenHarmony/分布式操作系统版本的兼容性检查。它会根据输入格式和API版本范围自动选择合适的版本检查方法。
 
 **起始版本：** 26.0.0
 
@@ -18,7 +19,7 @@ function apiAvailable(version: string | number): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| version | string \| number | 是 | * 此方法提供跨不同OpenHarmony/分布式操作系统版本的兼容性检查。它会根据输入格式和API版本范围自动选择合适的版本检查方法。-带点的字符串格式（例如，“26.0.0”、“5.0.1”）：-对于API 26+（版本&gt;= 26.0.0）：表示OpenHarmetric和Distribution OS API版本-对于API 26-（版本&lt; 26.0.0）：表示分发操作系统API版本-数字格式（例如13）：表示OpenHar笔SDK API版本（仅API 26） |
+| version | string \| number | 是 | 需要校验的API版本号，支持整数版本号和点分版本号。整数版本号范围：0&lt;x&lt;26。OpenHarmony点分版本号格式为M.S.F（如26.0.0），M&gt;=26,0&lt;=S&lt;=99,0&lt;=F&lt;=99。传入无效值时报错。 |
 
 **返回值：**
 

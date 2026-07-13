@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## getAllowedInstallBundles
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function getAllowedInstallBundles(admin: Want, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the applications that can be installed by the current user. This API uses an asynchronous callback to return the result.
+Obtains the applications that can be installed by the current user. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 10
 
@@ -74,7 +75,8 @@ bundleManager.getAllowedInstallBundles(wantTemp, (err, result) => {
 function getAllowedInstallBundles(admin: Want, userId: number, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the applications that can be installed by the user specified by **userId**. This API uses an asynchronous callback to return the result.
+Obtains the applications that can be installed by the user specified by **userId**. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 10
 
@@ -137,7 +139,8 @@ bundleManager.getAllowedInstallBundles(wantTemp, 100, (err, result) => {
 function getAllowedInstallBundles(admin: Want, userId?: number): Promise<Array<string>>
 ```
 
-Obtains the applications that can be installed by the current or specified user. This API uses a promise to return the result.
+Obtains the applications that can be installed by the current or specified user. This API uses a promise to return
+the result.
 
 **Since:** 10
 

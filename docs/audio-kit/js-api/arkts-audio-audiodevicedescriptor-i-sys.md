@@ -9,7 +9,7 @@ Describes an audio device.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## dmDeviceInfo
@@ -18,7 +18,8 @@ import { audio } from '@ohos.multimedia.audio';
 readonly dmDeviceInfo?: string
 ```
 
-Extended information for distributed device, includes whether the device supports stereo, Device SN, etc.
+Extended information for distributed device, includes whether the device supports
+stereo, Device SN, etc.
 
 **Type:** string
 
@@ -36,7 +37,8 @@ Extended information for distributed device, includes whether the device support
 readonly dmDeviceType?: number
 ```
 
-Only {@link DeviceType.SPEAKER} with networkId、{@link DeviceType.REMOTE_CAST} or {@link DeviceType.REMOTE_DAUDIO} has dmDeviceType which indicated deviceTypeId.
+Only {@link DeviceType.SPEAKER} with networkId、{@link DeviceType.REMOTE_CAST}
+or {@link DeviceType.REMOTE_DAUDIO} has dmDeviceType which indicated deviceTypeId.
 
 **Type:** number
 

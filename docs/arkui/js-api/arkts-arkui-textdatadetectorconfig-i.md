@@ -1,6 +1,6 @@
 # TextDataDetectorConfig
 
-This configuration is only available for the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md#text) and [RichEditor](arkts-arkui-richeditor.md) components.
+This configuration is only available for the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md) and [RichEditor](arkts-arkui-richeditor.md) components.
 
 **Since:** 11
 
@@ -12,7 +12,9 @@ This configuration is only available for the [Text](../../apis-arkgraphics2d/ark
 color?: ResourceColor
 ```
 
-Color of the entity after successful text detection. Default value: **'#ff0a59f7'**
+Color of the entity after successful text detection.
+
+Default value: **'#ff0a59f7'**
 
 **Type:** ResourceColor
 
@@ -30,7 +32,19 @@ Color of the entity after successful text detection. Default value: **'#ff0a59f7
 decoration?: DecorationStyleInterface
 ```
 
-Decoration style of the entity after successful text detection. Default value: { type: TextDecorationType.Underline, color: same as the entity style: TextDecorationStyle.SOLID }
+Decoration style of the entity after successful text detection.
+
+Default value:
+
+{
+
+ type: TextDecorationType.Underline,
+
+ color: same as the entity
+
+ style: TextDecorationStyle.SOLID
+
+}
 
 **Type:** DecorationStyleInterface
 
@@ -48,7 +62,16 @@ Decoration style of the entity after successful text detection. Default value: {
 enablePreviewMenu?: boolean
 ```
 
-Whether to enable the preview menu displayed when long-pressing recognized text. The value **true** means to enable the preview menu, and **false** means the opposite. Default value: **false** When [copyOptions](RichEditorAttribute#copyOptions) is set to **None**, even if **enablePreviewMenu** is set to **true**, long-pressing AI entities will not display the preview menu. This API can be properly called on phones and tablets, but has no effect on other devices such as PCs, 2-in-1 devices, TVs, and wearables.
+Whether to enable the preview menu displayed when long-pressing recognized text. The value **true** means to enable
+the preview menu, and **false** means the opposite.
+
+Default value: **false**
+
+When [copyOptions](RichEditorAttribute#copyOptions) is set to **None**, even if **enablePreviewMenu** is set
+to **true**, long-pressing AI entities will not display the preview menu.
+
+This API can be properly called on phones and tablets, but has no effect on other devices such as PCs, 2-in-1
+devices, TVs, and wearables.
 
 **Type:** boolean
 
@@ -84,7 +107,8 @@ Callback invoked when text recognition succeeds.
 types: TextDataDetectorType[]
 ```
 
-Entity types for text recognition. Values **null** and **[]** indicate that all types of entities can be recognized.
+Entity types for text recognition. Values **null** and **[]** indicate that all types of entities can be
+recognized.
 
 **Type:** TextDataDetectorType[]
 

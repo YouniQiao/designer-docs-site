@@ -1,6 +1,7 @@
 # GeneralNameType
 
-Enumerates the types of the common name (CN), which uniquely identifies the subject of the certificate.
+Enumerates the types of GeneralName as defined in X.509, which can appear in Subject Alternative Name and other
+extensions.
 
 **Since:** 12
 
@@ -12,7 +13,7 @@ Enumerates the types of the common name (CN), which uniquely identifies the subj
 GENERAL_NAME_TYPE_OTHER_NAME = 0
 ```
 
-Indicates others.
+Indicates an otherName.
 
 **Since:** 12
 

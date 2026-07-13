@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## uninstallAllUserTrustedCertificate
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function uninstallAllUserTrustedCertificate() : Promise<void>
 ```
 
-Uninstalls all CA certificates trusted by the user. This API is called only by the certificate management application. This API uses a promise to return the result.
+Uninstalls all CA certificates trusted by the user. This API is called only by the certificate management
+application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

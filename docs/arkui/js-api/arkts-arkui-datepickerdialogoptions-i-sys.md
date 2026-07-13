@@ -1,8 +1,10 @@
 # DatePickerDialogOptions
 
-Defines the configuration options of the date picker dialog box. Inherited from [DatePickerOptions](arkts-arkui-datepickeroptions-i.md#datepickeroptions).
+Defines the configuration options of the date picker dialog box.
 
-**Inheritance/Implementation:** DatePickerDialogOptions extends [DatePickerOptions](arkts-arkui-datepickeroptions-i.md#datepickeroptions)
+Inherited from [DatePickerOptions](arkts-arkui-datepickeroptions-i.md).
+
+**Inheritance/Implementation:** DatePickerDialogOptions extends [DatePickerOptions](arkts-arkui-datepickeroptions-i.md)
 
 **Since:** 8
 
@@ -14,7 +16,9 @@ Defines the configuration options of the date picker dialog box. Inherited from 
 distortionMode?: DistortionMode
 ```
 
-Sets the distortion animation mode for the dialog. Default value: DistortionMode.DISTORTION_AUTO
+Sets the distortion animation mode for the dialog.
+
+Default value: DistortionMode.DISTORTION_AUTO
 
 **Type:** DistortionMode
 
@@ -34,7 +38,9 @@ Sets the distortion animation mode for the dialog. Default value: DistortionMode
 edgeLightMode?: EdgeLightMode
 ```
 
-Sets the edge light animation mode for the dialog. Default value: EdgeLightMode.EDGELIGHT_AUTO
+Sets the edge light animation mode for the dialog.
+
+Default value: EdgeLightMode.EDGELIGHT_AUTO
 
 **Type:** EdgeLightMode
 

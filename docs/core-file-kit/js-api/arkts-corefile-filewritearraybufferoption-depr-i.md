@@ -14,7 +14,9 @@ Defines the options used in writeArrayBuffer().
 append?: boolean
 ```
 
-Whether to enable the append mode. The default value is **false**. If the value is **true**, the **position** parameter will become invalid. The value **true** means to enable the append mode; the value **false** means the opposite.
+Whether to enable the append mode. The default value is **false**. If the value is **true**, the **position**
+parameter will become invalid. The value **true** means to enable the append mode; the value **false** means the
+opposite.
 
 **Type:** boolean
 
@@ -62,7 +64,11 @@ Callback invoked when the API call is complete.
 fail?: (data: string, code: number) => void
 ```
 
-Callback invoked when the API call fails. **data** indicates the error information. **code** indicates the returned error code: **202**: invalid parameter **300**: I/O error
+Callback invoked when the API call fails.
+**data** indicates the error information.
+**code** indicates the returned error code:
+**202**: invalid parameter
+**300**: I/O error
 
 **Type:** (data: string, code: number) => void
 
@@ -110,7 +116,10 @@ Callback invoked when the API call is successful.
 uri: string
 ```
 
-URI of a local file. If it does not exist, a file will be created. Restricted by the underlying file system of lite wearables, the value must meet the following requirements: 1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F. 2. The value can contain a maximum of 128 characters.
+URI of a local file. If it does not exist, a file will be created. Restricted by the underlying file system of lite
+wearables, the value must meet the following requirements:
+1. The URI cannot contain the following special characters: \"*+,:;<=>?[]|\x7F.
+2. The value can contain a maximum of 128 characters.
 
 **Type:** string
 

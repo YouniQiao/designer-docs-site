@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { continuationManager } from '@ohos.continuation.continuationManager';
+import { continuationManager } from '@kit.AbilityKit';
 ```
 
 ## startDeviceManager
@@ -12,7 +12,8 @@ import { continuationManager } from '@ohos.continuation.continuationManager';
 function startDeviceManager(token: number, callback: AsyncCallback<void>): void
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API does not involve any filter parameters and uses an asynchronous callback to return the result.
+Starts the device selection module to show the list of available devices on the network. This API does not involve
+any filter parameters and uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -54,7 +55,8 @@ continuationManager.startDeviceManager(token, (err) => {
 function startDeviceManager(token: number, options: ContinuationExtraParams, callback: AsyncCallback<void>): void
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API uses an asynchronous callback to return the result.
+Starts the device selection module to show the list of available devices on the network. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -102,7 +104,8 @@ continuationManager.startDeviceManager(
 function startDeviceManager(token: number, options?: ContinuationExtraParams): Promise<void>
 ```
 
-Starts the device selection module to show the list of available devices on the network. This API uses a promise to return the result.
+Starts the device selection module to show the list of available devices on the network. This API uses a promise to
+return the result.
 
 **Since:** 8
 

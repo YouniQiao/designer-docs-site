@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## getEffectInfoSync
@@ -12,7 +12,8 @@ import { vibrator } from '@ohos.vibrator';
 function getEffectInfoSync(effectId: string, param?: VibratorInfoParam): EffectInfo
 ```
 
-Obtains the preset vibration effect based on the device ID and vibrator ID to determine whether the preset vibration effect is supported.
+Obtains the preset vibration effect based on the device ID and vibrator ID to determine whether the preset
+vibration effect is supported.
 
 **Since:** 19
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sim } from '@ohos.telephony.sim';
+import { sim } from '@kit.TelephonyKit';
 ```
 
 ## getSimTelephoneNumber
@@ -12,7 +12,8 @@ import { sim } from '@ohos.telephony.sim';
 function getSimTelephoneNumber(slotId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains the MSISDN of the SIM card in a specified slot. The MSISDN is recorded in the EFMSISDN file of the SIM card.
+Obtains the MSISDN of the SIM card in a specified slot.
+The MSISDN is recorded in the EFMSISDN file of the SIM card.
 
 **Since:** 8
 
@@ -61,7 +62,8 @@ sim.getSimTelephoneNumber(0, (err: BusinessError, data: string) => {
 function getSimTelephoneNumber(slotId: number): Promise<string>
 ```
 
-Obtains the MSISDN of the SIM card in a specified slot. The MSISDN is recorded in the EFMSISDN file of the SIM card.
+Obtains the MSISDN of the SIM card in a specified slot.
+The MSISDN is recorded in the EFMSISDN file of the SIM card.
 
 **Since:** 8
 

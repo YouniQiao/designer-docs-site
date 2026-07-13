@@ -28,7 +28,7 @@ Sets the gap between columns. Values less than 0 are treated as the default valu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LengthMetrics | Yes |  |
+| value | LengthMetrics | Yes | Gap between columns.<br>Default value: **0vp**. |
 
 **Return value:**
 
@@ -98,7 +98,9 @@ Sets the header of the lazy grid layout.
 onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 ```
 
-Sets a callback for **onVisibleIndexesChange**. This callback is triggered when the index of a child component in the visible area of **LazyVGridLayout** changes. It returns the start and end indexes of the child components in the visible area. This API uses an asynchronous callback to return the result.
+Sets a callback for **onVisibleIndexesChange**. This callback is triggered when the index of a child component in
+the visible area of **LazyVGridLayout** changes. It returns the start and end indexes of the child components in
+the visible area. This API uses an asynchronous callback to return the result.
 
 **Since:** 26.0.0
 
@@ -140,7 +142,7 @@ Sets the gap between rows. Values less than 0 are treated as the default value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | LengthMetrics | Yes |  |
+| value | LengthMetrics | Yes | Gap between rows.<br>Default value: **0vp** |
 
 **Return value:**
 

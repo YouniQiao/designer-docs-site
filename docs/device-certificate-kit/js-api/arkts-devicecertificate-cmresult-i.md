@@ -9,7 +9,7 @@ Represents the result returned.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## appUidList
@@ -130,7 +130,8 @@ Unique identifier of a certificate or credential. The value contains up to 256 b
 uriList?: Array<string>
 ```
 
-Certificate URI list. **Since**: 26.0.0
+Certificate URI list.
+**Since**: 26.0.0
 
 **Type:** Array<string>
 

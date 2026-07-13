@@ -1,6 +1,14 @@
 # @ohos.enterprise.securityManager
 
-本模块提供设备安全管理的能力，包括查询安全补丁状态、查询文件加密状态等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
+The **securityManager** module provides device security management capabilities, including obtaining the security
+patch status and file system encryption status.
+
+> **NOTE**
+>
+> The APIs of this module can be used only in the stage model.
+>
+> The APIs of this module can be called only by a device administrator application that is enabled. For details, see
+> [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
 
 **Since:** 11
 
@@ -18,64 +26,69 @@ import { securityManager } from '@kit.MDMKit';
 
 | Name | Description |
 | --- | --- |
-| [addAllowedPermissionBundle](arkts-securitymanager-addallowedpermissionbundle-f.md#addAllowedPermissionBundle-1) | 添加允许使用已禁用指定权限的应用到权限使用例外名单，权限使用例外名单中的应用可以不受[setDisallowedPermission]{@link securityManager.setDisallowedPermission}的策略限制。 |
-| [addUserExtCredential](arkts-securitymanager-adduserextcredential-f.md#addUserExtCredential-1) | 添加扩展用户认证凭据 |
-| [cancelScreenWatermarkImage](arkts-securitymanager-cancelscreenwatermarkimage-f.md#cancelScreenWatermarkImage-1) | 取消屏幕水印 |
-| [cancelWatermarkImage](arkts-securitymanager-cancelwatermarkimage-f.md#cancelWatermarkImage-1) | 取消指定用户的水印策略。 |
-| [closeSession](arkts-securitymanager-closesession-f.md#closeSession-1) | 关闭指定用户的凭据变更会话 |
-| [getAllowedPermissionBundles](arkts-securitymanager-getallowedpermissionbundles-f.md#getAllowedPermissionBundles-1) | 获取权限使用例外名单的应用列表。 |
-| [getAppClipboardPolicy](arkts-securitymanager-getappclipboardpolicy-f.md#getAppClipboardPolicy-1) | 获取设备剪贴板策略。 |
-| [getAppClipboardPolicy](arkts-securitymanager-getappclipboardpolicy-f.md#getAppClipboardPolicy-2) | 获取指定用户下指定应用的设备剪贴板策略。 |
-| <!--DelRow-->[getDeviceEncryptionStatus](arkts-securitymanager-getdeviceencryptionstatus-f-sys.md#getDeviceEncryptionStatus-1) | 查询设备文件系统加密状态。 |
-| [getDeviceSecurityLevelPolicy](arkts-securitymanager-getdevicesecuritylevelpolicy-f.md#getDeviceSecurityLevelPolicy-1) | 查询DSL切换策略 |
-| [getDisallowedPermissions](arkts-securitymanager-getdisallowedpermissions-f.md#getDisallowedPermissions-1) | 获取指定用户下禁用的权限列表。 |
-| [getExternalSourceExtensionsPolicy](arkts-securitymanager-getexternalsourceextensionspolicy-f.md#getExternalSourceExtensionsPolicy-1) | 获取外部来源扩展程序的管控策略。 |
-| [getPasswordPolicy](arkts-securitymanager-getpasswordpolicy-f.md#getPasswordPolicy-1) | 获取设备锁屏口令策略。 |
-| <!--DelRow-->[getPasswordPolicy](arkts-securitymanager-getpasswordpolicy-f-sys.md#getPasswordPolicy-1) | 获取设备锁屏口令策略。 |
-| [getPermissionManagedState](arkts-securitymanager-getpermissionmanagedstate-f.md#getPermissionManagedState-1) | 获取指定应用的指定[user_grant权限]{@link permissions:Permissions}的管理策略。 |
-| <!--DelRow-->[getSecurityPatchTag](arkts-securitymanager-getsecuritypatchtag-f-sys.md#getSecurityPatchTag-1) | 查询设备安全补丁Tag。 |
-| [getSecurityStatus](arkts-securitymanager-getsecuritystatus-f.md#getSecurityStatus-1) | 获取当前设备安全策略信息。 |
-| [getUnlockPolicy](arkts-securitymanager-getunlockpolicy-f.md#getUnlockPolicy-1) | 查询解锁策略 |
-| [getUserCertificates](arkts-securitymanager-getusercertificates-f.md#getUserCertificates-1) | 获取指定系统账户下的用户证书信息。 |
-| [getUserExtCredential](arkts-securitymanager-getuserextcredential-f.md#getUserExtCredential-1) | 查询指定用户安装的扩展用户凭据 |
-| [getWatermarkImageApps](arkts-securitymanager-getwatermarkimageapps-f.md#getWatermarkImageApps-1) | 查询设置了水印的应用列表 |
-| [installEnterpriseReSignatureCertificate](arkts-securitymanager-installenterpriseresignaturecertificate-f.md#installEnterpriseReSignatureCertificate-1) | 安装企业应用重签名证书。 同一用户下最多可下发10本不同证书。证书别名作为证书的唯一标识，不支持重复下发相同别名的证书。如需更新同一别名的证书，需先调用 [uninstallEnterpriseReSignatureCertificate]{@link securityManager.uninstallEnterpriseReSignatureCertificate}进行卸载。 在MDM应用卸载或admin取消激活场景下，已安装的证书会保留在设备上，不会被移除。 在企业应用分发场景下，<!--RP2--><!--RP2End-->开发者可以使用重签名证书对企业应用进行二次签名，签名完成后将应用包提供给企业管理员。企业管理员可以将重签名后的应用安装在已部署重签名证书的企业设备上。 企业应用重签名证书使用流程：<!--RP3--><!--RP3End--> 1.通过MDM应用安装企业应用重签名证书； 2.开发者利用签名工具（如ohos-signer或DevEco Studio签名插件），对原始HAP包进行二次签名； 3.安装重签名应用（可以通过企业私有应用市场安装）； 4.运行应用。 规格约束： 1.安装新的签名证书之后，使用旧签名证书的应用可以继续运行； 2.已经安装的企业应用，安装了新的企业签名证书后，已安装的应用如需更新，可以直接覆盖安装，无需先卸载原应用； 3.企业场景下，特别是在涉及信息安全的场景中，企业需要确保员工使用的移动设备中仅安装并运行特定的内部软件和工具。企业应用重签名证书通过统一的应用身份标识，与系统的应用管理与权限控制机制配合使用，可支持企业应用的静默安装、受控的系统 能力调用及运行范围限制，从而实现企业软件在受控终端上的准入控制与安全管理。 |
-| [installUserCertificate](arkts-securitymanager-installusercertificate-f.md#installUserCertificate-1) | 安装用户证书，使用Promise异步回调。 |
-| [installUserCertificate](arkts-securitymanager-installusercertificate-f.md#installUserCertificate-2) | 支持按系统账户安装用户证书。 |
-| [isScreenLockDisabledForAccount](arkts-securitymanager-isscreenlockdisabledforaccount-f.md#isScreenLockDisabledForAccount-1) | 查询当前用户的滑动解锁能力是否被禁用。 |
-| [openSession](arkts-securitymanager-opensession-f.md#openSession-1) | 开启指定用户的凭据变更会话 |
-| [removeAllowedPermissionBundle](arkts-securitymanager-removeallowedpermissionbundle-f.md#removeAllowedPermissionBundle-1) | 从权限使用例外名单中移除指定应用，移除后该应用则不能继续使用对应的权限。 |
-| [removeUserExtCredential](arkts-securitymanager-removeuserextcredential-f.md#removeUserExtCredential-1) | 移除扩展用户认证凭据 |
-| [setAppClipboardPolicy](arkts-securitymanager-setappclipboardpolicy-f.md#setAppClipboardPolicy-1) | 设置设备剪贴板策略。 |
-| [setAppClipboardPolicy](arkts-securitymanager-setappclipboardpolicy-f.md#setAppClipboardPolicy-2) | 设置指定用户下指定应用的设备剪贴板策略。 |
-| [setDeviceSecurityLevelPolicy](arkts-securitymanager-setdevicesecuritylevelpolicy-f.md#setDeviceSecurityLevelPolicy-1) | 设备DSL切换策略 |
-| [setDisallowedPermission](arkts-securitymanager-setdisallowedpermission-f.md#setDisallowedPermission-1) | 禁用指定用户下的指定权限，禁用后指定用户下的所有应用申请和使用指定权限时默认拒绝。 |
-| [setExternalSourceExtensionsPolicy](arkts-securitymanager-setexternalsourceextensionspolicy-f.md#setExternalSourceExtensionsPolicy-1) | 设置外部来源扩展程序的管控策略。 - DEFAULT： 默认，表示无管控策略，用户可以通过“设置-隐私与安全-高级”中的“运行外部来源的扩展程序”开关来设置是否允许扩展程序运行。 - DISALLOW： 禁用。设置此策略后，禁止运行外部来源的扩展程序，运行中的扩展程序可继续运行，扩展程序关闭后无法启动运行。用户无法开启“设置-隐私和安全-高级”中的“运行外部来源的扩展程序”开关。 - FORCE_OPEN： 强制开启。设置此策略后，允许运行外部来源的扩展程序，用户无法关闭“设置-隐私和安全-高级”中的“运行外部来源的扩展程序”开关。 |
-| [setPasswordPolicy](arkts-securitymanager-setpasswordpolicy-f.md#setPasswordPolicy-1) | 设置设备锁屏口令策略。当用户设置锁屏口令时，如果设置的锁屏口令不符合要求，会有安全提示重新设置锁屏口令。 |
-| [setPermissionManagedState](arkts-securitymanager-setpermissionmanagedstate-f.md#setPermissionManagedState-1) | 设置指定应用的[user_grant权限]{@link permissions:Permissions}的管理策略。 |
-| [setScreenLockDisabledForAccount](arkts-securitymanager-setscreenlockdisabledforaccount-f.md#setScreenLockDisabledForAccount-1) | 禁用/启用当前用户的滑动解锁能力。启用时：设备灭屏后再亮屏，用户需要在屏幕上滑动后才能进入桌面。禁用时：设备灭屏后再亮屏会直接进入桌面。 > **说明：** > > 1.该接口能力仅在设备无锁屏密码时生效。 > > 2.设备默认属于启用滑动解锁的状态。 > > 3.设备上存在密码时，设置禁用滑动解锁会失败，抛出9201021错误码。 > > 4.下发禁用滑动解锁的策略后，用户输入了设备密码，此时密码会生效，设备需要验证密码后才能进入桌面，之前下发的策略失效。 |
-| [setScreenWatermarkImage](arkts-securitymanager-setscreenwatermarkimage-f.md#setScreenWatermarkImage-1) | 设置屏幕水印 |
-| [setUnlockPolicy](arkts-securitymanager-setunlockpolicy-f.md#setUnlockPolicy-1) | 设置解锁策略 |
-| [setWatermarkImage](arkts-securitymanager-setwatermarkimage-f.md#setWatermarkImage-1) | 为指定用户的指定应用设置水印策略。当前只支持最多保存100个策略。 > **说明：** > > 本接口适用于企业场景下为三方应用设置水印，降低企业信息泄露风险。不建议为系统应用设置水印（如：桌面应用），可能存在未知异常。 |
-| [setWatermarkImage](arkts-securitymanager-setwatermarkimage-f.md#setWatermarkImage-2) | 为指定用户的指定应用设置水印策略。 |
-| [uninstallEnterpriseReSignatureCertificate](arkts-securitymanager-uninstallenterpriseresignaturecertificate-f.md#uninstallEnterpriseReSignatureCertificate-1) | 卸载企业应用重签名证书。 |
-| [uninstallUserCertificate](arkts-securitymanager-uninstallusercertificate-f.md#uninstallUserCertificate-1) | 卸载用户证书，使用Promise异步回调。 |
+| [addAllowedPermissionBundle](arkts-mdm-addallowedpermissionbundle-f.md#addallowedpermissionbundle-1) | Adds the application to the list of applications allowed to grant the permission. |
+| [cancelScreenWatermarkImage](arkts-mdm-cancelscreenwatermarkimage-f.md#cancelscreenwatermarkimage-1) | Cancels the watermark image displayed on the screen. |
+| [cancelWatermarkImage](arkts-mdm-cancelwatermarkimage-f.md#cancelwatermarkimage-1) | Cancels the watermark policy for a specified user. |
+| [getAllowedPermissionBundles](arkts-mdm-getallowedpermissionbundles-f.md#getallowedpermissionbundles-1) | Gets the applications that are allowed to be granted the permission. |
+| [getAppClipboardPolicy](arkts-mdm-getappclipboardpolicy-f.md#getappclipboardpolicy-1) | Obtains the device clipboard policy. |
+| [getAppClipboardPolicy](arkts-mdm-getappclipboardpolicy-f.md#getappclipboardpolicy-2) | Obtains the device clipboard policy of a specified application for a specified user. |
+| [getDisallowedPermissions](arkts-mdm-getdisallowedpermissions-f.md#getdisallowedpermissions-1) | Gets the permissions that are disallowed to be granted for an account. |
+| [getExternalSourceExtensionsPolicy](arkts-mdm-getexternalsourceextensionspolicy-f.md#getexternalsourceextensionspolicy-1) | Obtains the management policy for extensions from external sources. |
+| [getPasswordPolicy](arkts-mdm-getpasswordpolicy-f.md#getpasswordpolicy-1) | Obtains the device screen lock password policy. |
+| [getPermissionManagedState](arkts-mdm-getpermissionmanagedstate-f.md#getpermissionmanagedstate-1) | Obtains the management policy for the [user_grant permission](../../apis-ability-kit/arkts-apis/arkts-ability-permissions-t.md) of a specifiedapplication. |
+| [getSecurityStatus](arkts-mdm-getsecuritystatus-f.md#getsecuritystatus-1) | Obtains the security status of the current device. |
+| [getUserCertificates](arkts-mdm-getusercertificates-f.md#getusercertificates-1) | Obtains the user certificate of a specified system account. |
+| [getWatermarkImageApps](arkts-mdm-getwatermarkimageapps-f.md#getwatermarkimageapps-1) | Gets the bundle names of the applications that have been set watermark. |
+| [installEnterpriseReSignatureCertificate](arkts-mdm-installenterpriseresignaturecertificate-f.md#installenterpriseresignaturecertificate-1) | Installs the enterprise re-signing certificate.A maximum of 10 distinct certificates can be deployed per user. The certificate alias serves as a unique identifierfor each certificate and cannot be duplicated during deployment. To update a certificate with an existing alias,you must first uninstall the old certificate by calling[uninstallEnterpriseReSignatureCertificate](arkts-mdm-uninstallenterpriseresignaturecertificate-f.md#uninstallenterpriseresignaturecertificate-1).The installed certificates are retained on the device and will not be removed when the MDM app is uninstalled orthe admin privilege is deactivated.In the enterprise app distribution scenario, &lt;!--RP2--&gt;&lt;!--RP2End--&gt;you can use the re-signing certificate to re-sign enterprise apps. After re-signing, the app package is provided to enterprise administrators, who can theninstall the re-signed app on enterprise devices where the corresponding re-signing certificate has been deployed.Process of using the enterprise re-signing certificate:&lt;!--RP3--&gt;&lt;!--RP3End--&gt;1. Installs the enterprise re-signing certificate through the MDM app.2. Re-sign the original HAP package using a signing tool (**ohos-signer** or the DevEco Studio signing plugin).3. Install the re-signed app (through the enterprise private app store).4. Launch and run the app.Specifications:1. Apps signed with the old certificate will continue to run normally after a new re-signing certificate isinstalled.2. After a new enterprise signing certificate is installed for an installed enterprise app, if the installed appneeds to be updated, you can directly overwrite the original app without uninstalling it.3. In enterprise scenarios (especially those involving information security), enterprises need to ensure that onlydesignated internal software and tools are installed and run on employees' mobile devices. The enterprisere-signing certificate, in conjunction with the system's app management and permission controlmechanisms (via aunified app ID), supports silent installation of enterprise apps, controlled invocation of system capabilities,and restriction of app running scopes. This enables admission control and security governance for enterprisesoftware on managed devices. |
+| [installUserCertificate](arkts-mdm-installusercertificate-f.md#installusercertificate-1) | Installs a user certificate. This API uses a promise to return the result. |
+| [installUserCertificate](arkts-mdm-installusercertificate-f.md#installusercertificate-2) | Installs a user certificate based on the system account. |
+| [isScreenLockDisabledForAccount](arkts-mdm-isscreenlockdisabledforaccount-f.md#isscreenlockdisabledforaccount-1) | Queries whether the screen lock is disabled. |
+| [removeAllowedPermissionBundle](arkts-mdm-removeallowedpermissionbundle-f.md#removeallowedpermissionbundle-1) | Removes the application from the list of applications allowed to grant the permission. |
+| [setAppClipboardPolicy](arkts-mdm-setappclipboardpolicy-f.md#setappclipboardpolicy-1) | Sets the device clipboard policy. |
+| [setAppClipboardPolicy](arkts-mdm-setappclipboardpolicy-f.md#setappclipboardpolicy-2) | Sets the device clipboard policy of a specified application for a specified user. |
+| [setDisallowedPermission](arkts-mdm-setdisallowedpermission-f.md#setdisallowedpermission-1) | Sets the permissions that are disallowed to be granted for an account. |
+| [setExternalSourceExtensionsPolicy](arkts-mdm-setexternalsourceextensionspolicy-f.md#setexternalsourceextensionspolicy-1) | Sets the management policy for extensions from external sources.- DEFAULT: Default policy with no restrictions applied. Users can enable or disable **Run extensions from external sources**in **Settings** &gt; **Privacy & security** &gt; **Advanced option**.- DISALLOW: Policy that disallows extensions from external sources to run. With this policy, currently running extensions cancontinue, but cannot be started after being closed. Users cannot enable **Run extensions from external sources**.- FORCE_OPEN: Policy that forcibly enables extensions from external sources to run. Users cannot disable**Run extensions from external sources**. |
+| [setPasswordPolicy](arkts-mdm-setpasswordpolicy-f.md#setpasswordpolicy-1) | Sets the device screen lock password policy. During screen lock password setting, if the current screen lockpassword does not meet the requirements, a security message will be displayed, prompting the user to reset thescreen lock password. |
+| [setPermissionManagedState](arkts-mdm-setpermissionmanagedstate-f.md#setpermissionmanagedstate-1) | Sets the management policy for the [user_grant permission](../../apis-ability-kit/arkts-apis/arkts-ability-permissions-t.md) of a specifiedapplication. |
+| [setScreenLockDisabledForAccount](arkts-mdm-setscreenlockdisabledforaccount-f.md#setscreenlockdisabledforaccount-1) | Sets the screen lock disabled for current account. |
+| [setScreenWatermarkImage](arkts-mdm-setscreenwatermarkimage-f.md#setscreenwatermarkimage-1) | Sets the watermark image to be displayed on the screen. |
+| [setWatermarkImage](arkts-mdm-setwatermarkimage-f.md#setwatermarkimage-1) | Sets a watermark policy for a specified application of a specified user. Currently, a maximum of 100 policies canbe saved.&gt; **NOTE**&gt;&gt; This API is applicable to setting watermarks for third-party applications in enterprise scenarios to reduce the&gt; risk of enterprise information leakage. You are not advised to set watermarks for system applications (such as&gt; the home screen application), as unknown exceptions may occur. |
+| [setWatermarkImage](arkts-mdm-setwatermarkimage-f.md#setwatermarkimage-2) | Sets the watermark image displayed during the application running. |
+| [uninstallEnterpriseReSignatureCertificate](arkts-mdm-uninstallenterpriseresignaturecertificate-f.md#uninstallenterpriseresignaturecertificate-1) | Uninstalls the enterprise re-signing certificate. |
+| [uninstallUserCertificate](arkts-mdm-uninstallusercertificate-f.md#uninstallusercertificate-1) | Uninstalls a user certificate. This API uses a promise to return the result. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getDeviceEncryptionStatus](arkts-mdm-getdeviceencryptionstatus-f-sys.md#getdeviceencryptionstatus-1) | Queries the encryption status of the device file system. |
+| [getPasswordPolicy](arkts-mdm-getpasswordpolicy-f-sys.md#getpasswordpolicy-2) | Obtains the device screen lock password policy. |
+| [getSecurityPatchTag](arkts-mdm-getsecuritypatchtag-f-sys.md#getsecuritypatchtag-1) | Queries the security patch tag of a device. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AddCredentialInfo](arkts-securitymanager-addcredentialinfo-i.md) | 添加凭证信息 |
-| [ApplicationInstance](arkts-securitymanager-applicationinstance-i.md) | 应用实例。 |
-| [CertBlob](arkts-securitymanager-certblob-i.md) | 证书信息。 |
-| <!--DelRow-->[DeviceEncryptionStatus](arkts-securitymanager-deviceencryptionstatus-i-sys.md) |  |
-| [PasswordPolicy](arkts-securitymanager-passwordpolicy-i.md) | 设备锁屏口令策略。 |
-| [WatermarkProperties](arkts-securitymanager-watermarkproperties-i.md) | 水印参数 |
+| [ApplicationInstance](arkts-mdm-applicationinstance-i.md) | Application instance |
+| [CertBlob](arkts-mdm-certblob-i.md) | Represents the certificate information. |
+| [PasswordPolicy](arkts-mdm-passwordpolicy-i.md) | Represents a device screen lock password policy. |
+| [WatermarkProperties](arkts-mdm-watermarkproperties-i.md) | The properties of a watermark. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DeviceEncryptionStatus](arkts-mdm-deviceencryptionstatus-i-sys.md) | Represents the file system encryption status. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ClipboardPolicy](arkts-securitymanager-clipboardpolicy-e.md) | 设备剪贴板策略。 |
-| [PermissionManagedState](arkts-securitymanager-permissionmanagedstate-e.md) | 应用权限的管理状态。 |
+| [ClipboardPolicy](arkts-mdm-clipboardpolicy-e.md) | Represents a device clipboard policy. |
+| [PasswordAlgs](arkts-mdm-passwordalgs-e.md) | Encryption algorithm. |
+| [PermissionManagedState](arkts-mdm-permissionmanagedstate-e.md) | Represents the management status of application permissions. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## getSupportedFeatures
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function getSupportedFeatures(): number
 ```
 
-Obtain the features supported by the device. To check whether this device supports a specified feature.
+Obtain the features supported by the device.
+To check whether this device supports a specified feature.
 
 **Since:** 9
 

@@ -9,7 +9,7 @@ Represents data of the pixel map type defined by the system.
 ## Modules to Import
 
 ```TypeScript
-import { uniformDataStruct } from '@ohos.data.uniformDataStruct';
+import { uniformDataStruct } from '@kit.ArkData';
 ```
 
 ## details
@@ -18,7 +18,8 @@ import { uniformDataStruct } from '@ohos.data.uniformDataStruct';
 details?: Record<string, number | number | number | string | Uint8Array>
 ```
 
-Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a number, a string, or a Uint8Array. By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a
+number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 
 **Type:** Record<string, number | number | number | string | Uint8Array>
 
@@ -50,7 +51,8 @@ Binary data of the pixel map.
 readonly uniformDataType: 'openharmony.pixel-map'
 ```
 
-Uniform data type, which has a fixed value of **openharmony.pixel-map**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype).
+Uniform data type, which has a fixed value of **openharmony.pixel-map**. For details, see
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'openharmony.pixel-map'
 

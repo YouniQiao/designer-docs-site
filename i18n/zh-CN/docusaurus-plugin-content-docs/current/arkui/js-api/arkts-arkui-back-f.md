@@ -6,7 +6,19 @@
 function back(options?: RouterOptions): void
 ```
 
-返回上一页面或指定的页面，会删除当前页面与指定页面之间的所有页面。 > **说明：** > > - 从API version 8开始支持，从API version 18开始废弃，建议使用 > [back](arkts-arkui-router-c.md#back-1)替代。back需先通过 > [UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
+返回上一页面或指定的页面，会删除当前页面与指定页面之间的所有页面。
+
+> **说明：**
+>
+> - 从API version 8开始支持，从API version 18开始废弃，建议使用
+> [back](arkts-arkui-router-c.md#back-1)替代。back需先通过
+> [UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
+> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
+>
+> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
+> [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 8
 
@@ -38,7 +50,19 @@ this.getUIContext().getRouter().back({ url: 'pages/detail' });
 function back(index: number, params?: Object): void
 ```
 
-返回指定的页面，会删除当前页面与指定页面之间的所有页面。 > **说明：** > > - 从API version 12开始支持，从API version 18开始废弃，建议使用 > [back](arkts-arkui-router-c.md#back-2)替代。back需先通过 > [UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 12开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
+返回指定的页面，会删除当前页面与指定页面之间的所有页面。
+
+> **说明：**
+>
+> - 从API version 12开始支持，从API version 18开始废弃，建议使用
+> [back](arkts-arkui-router-c.md#back-2)替代。back需先通过
+> [UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
+> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
+>
+> - 从API version 12开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
+> [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 12
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## getSubscribeInfo
@@ -12,7 +12,8 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function getSubscribeInfo(): Promise<NotificationExtensionSubscriptionInfo[]>
 ```
 
-Obtains the subscription information about the notification extension of this application. This API uses a promise to return the result.
+Obtains the subscription information about the notification extension of this application. This API uses a promise
+to return the result.
 
 **Since:** 22
 

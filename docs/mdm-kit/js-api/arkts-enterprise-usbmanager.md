@@ -1,6 +1,16 @@
 # @ohos.enterprise.usbManager
 
-本模块提供USB管理能力。 > **说明**： > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。 > > 全局通用限制类策略由restrictions统一提供，若要全局禁用USB，请参考 > [@ohos.enterprise.restrictions（限制类策略）]{@link @ohos.enterprise.restrictions:restrictions}。
+The **usbManager** module provides APIs for USB management.
+
+> **NOTE**
+>
+> The APIs of this module can be used only in the stage model.
+>
+> The APIs of this module can be called only by a device administrator application that is enabled. For details, see
+> [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+>
+> The global restriction policy is provided by **restrictions**. To disable USB globally, see
+> [@ohos.enterprise.restrictions (restriction policy)](arkts-enterprise-restrictions.md).
 
 **Since:** 10
 
@@ -18,30 +28,41 @@ import { usbManager } from '@kit.MDMKit';
 
 | Name | Description |
 | --- | --- |
-| [addAllowedUsbDevices](arkts-usbmanager-addallowedusbdevices-f.md#addAllowedUsbDevices-1) | 添加USB设备可用名单。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备USB或者USB转串口能力。 2. 已经通过[setUsbStorageDeviceAccessPolicy]{@link usbManager.setUsbStorageDeviceAccessPolicy}接口设置了USB存储设备访问策略为禁用。 3. 已经通过[addDisallowedUsbDevices]{@link usbManager.addDisallowedUsbDevices}接口添加了禁止使用的USB设备类型。 |
-| [addDisallowedUsbDevices](arkts-usbmanager-adddisallowedusbdevices-f.md#addDisallowedUsbDevices-1) | 添加禁止使用的USB设备类型。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备USB能力。 2. 已经通过[addAllowedUsbDevices]{@link usbManager.addAllowedUsbDevices}接口添加了USB设备可用名单。 3. 已经通过[setDisallowedPolicyForAccount]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicyForAccount(admin: Want, feature: string, disallow: boolean, accountId: number)}接口禁用了某用户USB存储设备写入能力。 |
-| <!--DelRow-->[disableUsb](arkts-usbmanager-disableusb-f-sys.md#disableUsb-1) | 设置禁用或启用USB。 |
-| [getAllowedUsbDevices](arkts-usbmanager-getallowedusbdevices-f.md#getAllowedUsbDevices-1) | 获取USB设备可用名单。 |
-| [getDisallowedUsbDevices](arkts-usbmanager-getdisallowedusbdevices-f.md#getDisallowedUsbDevices-1) | 获取禁止使用的USB设备类型。 |
-| [getUsbStorageDeviceAccessPolicy](arkts-usbmanager-getusbstoragedeviceaccesspolicy-f.md#getUsbStorageDeviceAccessPolicy-1) | 获取USB存储设备访问策略。 |
-| <!--DelRow-->[isUsbDisabled](arkts-usbmanager-isusbdisabled-f-sys.md#isUsbDisabled-1) | 查询USB是否禁用。 |
-| [removeAllowedUsbDevices](arkts-usbmanager-removeallowedusbdevices-f.md#removeAllowedUsbDevices-1) | 移除USB设备可用名单。 |
-| [removeDisallowedUsbDevices](arkts-usbmanager-removedisallowedusbdevices-f.md#removeDisallowedUsbDevices-1) | 移除禁止使用的USB设备类型。 |
-| <!--DelRow-->[setUsbPolicy](arkts-usbmanager-setusbpolicy-f-sys.md#setUsbPolicy-1) | 设置USB的读写策略。使用callback异步回调。 |
-| <!--DelRow-->[setUsbPolicy](arkts-usbmanager-setusbpolicy-f-sys.md#setUsbPolicy-2) | 设置USB的读写策略。使用Promise异步回调。 |
-| [setUsbStorageDeviceAccessPolicy](arkts-usbmanager-setusbstoragedeviceaccesspolicy-f.md#setUsbStorageDeviceAccessPolicy-1) | 设置USB存储设备访问策略。 > **说明**： > > 在调用接口前，确保已暂停USB存储设备的读写操作，保证操作的稳定性和数据的完整性，否则可能出现不可预期的异常。 以下情况下，通过本接口设置USB存储设备访问策略为可读可写/只读，会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备USB能力。 2. 已经通过[addDisallowedUsbDevices]{@link usbManager.addDisallowedUsbDevices}接口将存储类型的USB设备添加为禁止使用的USB设备类型。 3. 已经通过[setDisallowedPolicyForAccount]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicyForAccount(admin: Want, feature: string, disallow: boolean, accountId: number)}接口禁用了某用户USB存储设备写入能力。 以下情况下，通过本接口设置USB存储设备访问策略为禁用，会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备USB能力。 2. 已经通过[addAllowedUsbDevices]{@link usbManager.addAllowedUsbDevices}接口添加了USB设备可用名单。 3. 已经通过[setDisallowedPolicyForAccount]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicyForAccount(admin: Want, feature: string, disallow: boolean, accountId: number)}接口禁用了某用户USB存储设备写入能力。 通过本接口设置，或者通过[addDisallowedUsbDevices]{@link usbManager.addDisallowedUsbDevices}接口添加存储类型的USB设备，均可禁用USB存储设备。推荐使用后者。 |
+| [addAllowedUsbDevices](arkts-mdm-addallowedusbdevices-f.md#addallowedusbdevices-1) | Adds allowed USB devices.A policy conflict is reported when this API is called in the following scenarios:1. The USB capability of the device or the USB-to-Serial capability has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.2. The USB storage device access policy has been disabled using the [setUsbStorageDeviceAccessPolicy](arkts-mdm-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy-1) API.3. Disallowed USB device types have been added using the [addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1) API. |
+| [addDisallowedPermissiveUsbDevices](arkts-mdm-adddisallowedpermissiveusbdevices-f.md#adddisallowedpermissiveusbdevices-1) | Adds disallowed USB devices via an array of {@link PermissiveUsbDeviceType}. |
+| [addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1) | Adds disallowed USB device types.A policy conflict is reported when this API is called in the following scenarios:1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.2. The available USB devices have been added through [addAllowedUsbDevices](arkts-mdm-addallowedusbdevices-f.md#addallowedusbdevices-1).3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) API. |
+| [getAllowedUsbDevices](arkts-mdm-getallowedusbdevices-f.md#getallowedusbdevices-1) | Obtains allowed USB devices. |
+| [getDisallowedPermissiveUsbDevices](arkts-mdm-getdisallowedpermissiveusbdevices-f.md#getdisallowedpermissiveusbdevices-1) | Gets the list of disallowed USB devices. |
+| [getDisallowedUsbDevices](arkts-mdm-getdisallowedusbdevices-f.md#getdisallowedusbdevices-1) | Obtains the disallowed USB device types. |
+| [getUsbStorageDeviceAccessPolicy](arkts-mdm-getusbstoragedeviceaccesspolicy-f.md#getusbstoragedeviceaccesspolicy-1) | Obtains the access policy of the USB storage device. |
+| [removeAllowedUsbDevices](arkts-mdm-removeallowedusbdevices-f.md#removeallowedusbdevices-1) | Removes allowed USB devices. |
+| [removeDisallowedPermissiveUsbDevices](arkts-mdm-removedisallowedpermissiveusbdevices-f.md#removedisallowedpermissiveusbdevices-1) | Removes disallowed USB devices via an array of {@link PermissiveUsbDeviceType}. |
+| [removeDisallowedUsbDevices](arkts-mdm-removedisallowedusbdevices-f.md#removedisallowedusbdevices-1) | Removes the disallowed USB device types. |
+| [setUsbStorageDeviceAccessPolicy](arkts-mdm-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy-1) | Sets the access policy of the USB storage device.&gt; **NOTE**&gt; &gt; Before calling the API, read and write operations on the USB storage device should be suspended to ensure&gt; operational stability and data integrity. Otherwise, unexpected exceptions may occur.A policy conflict occurs when you set the USB storage device access policy to read, write, or read-only in thefollowing scenarios:1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.2. The USB storage device has been disallowed to use through [addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1).3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) API.A policy conflict is reported if the USB storage device access policy is disabled by calling this API in thefollowing scenarios:1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.2. The available USB devices have been added through [addAllowedUsbDevices](arkts-mdm-addallowedusbdevices-f.md#addallowedusbdevices-1).3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount-1) API.You can disable a USB storage device by calling this API or[addDisallowedUsbDevices](arkts-mdm-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1). The latter is recommended. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [disableUsb](arkts-mdm-disableusb-f-sys.md#disableusb-1) | Enables or disables USB. |
+| [isUsbDisabled](arkts-mdm-isusbdisabled-f-sys.md#isusbdisabled-1) | Queries whether the USB is disabled. |
+| [setUsbPolicy](arkts-mdm-setusbpolicy-f-sys.md#setusbpolicy-1) | Sets the USB read/write policy. This API uses an asynchronous callback to return the result. |
+| [setUsbPolicy](arkts-mdm-setusbpolicy-f-sys.md#setusbpolicy-2) | Sets the USB read/write policy. This API uses a promise to return the result. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [UsbDeviceId](arkts-usbmanager-usbdeviceid-i.md) | USB设备ID信息。 |
-| [UsbDeviceType](arkts-usbmanager-usbdevicetype-i.md) | USB设备类型信息。 |
+| [PermissiveUsbDeviceType](arkts-mdm-permissiveusbdevicetype-i.md) | Permissive USB device Type. |
+| [UsbDeviceId](arkts-mdm-usbdeviceid-i.md) | Represents the USB device identity information. |
+| [UsbDeviceType](arkts-mdm-usbdevicetype-i.md) | Represents the USB device type information. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Descriptor](arkts-usbmanager-descriptor-e.md) | USB描述符的枚举。 |
-| [UsbPolicy](arkts-usbmanager-usbpolicy-e.md) | USB读写策略的枚举。 |
+| [Descriptor](arkts-mdm-descriptor-e.md) | Enumerates USB descriptors. |
+| [UsbPolicy](arkts-mdm-usbpolicy-e.md) | Enumerates the USB access policies. |
 

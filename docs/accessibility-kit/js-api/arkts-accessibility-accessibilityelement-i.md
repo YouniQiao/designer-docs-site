@@ -1,6 +1,10 @@
 # AccessibilityElement
 
-Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call [AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2) or [AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2) to obtain an **AccessibilityElement** instance.
+Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElement**, you must call
+[AccessibilityExtensionContext.getFocusElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getfocuselement-2)
+or
+[AccessibilityExtensionContext.getWindowRootElement()](arkts-accessibility-accessibilityextensioncontext-c.md#getwindowrootelement-2)
+to obtain an **AccessibilityElement** instance.
 
 **Since:** 9
 
@@ -12,7 +16,8 @@ Defines the **AccessibilityElement**. Before calling APIs of **AccessibilityElem
 actionNames(callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains the names of all actions supported by this element. This API uses an asynchronous callback to return the result.
+Obtains the names of all actions supported by this element. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -95,7 +100,8 @@ attributeValue<T extends keyof ElementAttributeValues>(
   ): void
 ```
 
-Obtains the attribute value based on an attribute name. This API uses an asynchronous callback to return the result.
+Obtains the attribute value based on an attribute name. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -351,7 +357,7 @@ Performs an action based on the specified action name. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md#action). |
+| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md). |
 | parameters | object | Yes | Parameters required for performing the target action. Empty by default. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
 
@@ -380,7 +386,7 @@ Performs an action based on the specified action name. This API uses a promise t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md#action). |
+| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md). |
 | parameters | object | No | Parameters required for performing the target action. Empty by default. |
 
 **Return value:**
@@ -414,7 +420,7 @@ Performs an action based on the specified action name. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md#action). |
+| actionName | string | Yes | Action name. For details, see[Action](arkts-accessibility-action-t.md). |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**

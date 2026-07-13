@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiTraceMeter } from '@ohos.hiTraceMeter';
+import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## finishAsyncTrace
@@ -12,7 +12,10 @@ import { hiTraceMeter } from '@ohos.hiTraceMeter';
 function finishAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: number): void
 ```
 
-Stops an asynchronous trace with the trace output level specified. The **level**, **name**, and **taskId** used in **finishAsyncTrace()** must be the same as those of [startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1).
+Stops an asynchronous trace with the trace output level specified.
+
+The **level**, **name**, and **taskId** used in **finishAsyncTrace()** must be the same as those of
+[startAsyncTrace()](arkts-performanceanalysis-startasynctrace-f.md#startasynctrace-1).
 
 **Since:** 19
 

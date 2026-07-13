@@ -1,6 +1,15 @@
 # Picture
 
-Picture类，一些包含特殊信息的图片可以解码为Picture（也可以称为多图对象）。多图对象一般包含主图、辅助图和元数据。其中主图包含图像的大部分信息，主要用于显示图像内容；辅助图用于存储与主图相关但不同的数据，展示图像更丰富 的信息；元数据一般用来存储关于图像文件的信息。多图对象类用于读取或写入多图对象。在调用Picture的方法前，需要先通过[image.createPicture]image.createPicture创建一个 Picture实例。 由于图片占用内存较大，所以当Picture实例使用完成后，应主动调用[release]image.Picture.release方法及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > - 本Interface首批接口从API version 13开始支持。
+An image that contains special information can be decoded into a picture object, which generally contains the main
+picture, auxiliary picture, and metadata. The main picture contains most information about the image and is mainly
+used to render the image. The auxiliary picture is used to store data related to but different from the main
+picture, revealing more comprehensive details. The metadata is generally used to store information about the image
+file. The picture object class is used to read or write picture objects. Before calling any API in Picture, you
+must use [image.createPicture](arkts-image-createpicture-f.md#createpicture-1) to create a Picture object.
+
+Images occupy a large amount of memory. When you finish using a Picture instance, call
+[release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all
+asynchronous operations associated with the instance have finished and the instance is no longer needed.
 
 **Since:** 13
 
@@ -18,7 +27,7 @@ import { image } from '@kit.ImageKit';
 getAuxiliaryPicture(type: AuxiliaryPictureType): AuxiliaryPicture | null
 ```
 
-根据类型获取辅助图。
+Obtains an auxiliary picture by type.
 
 **Since:** 13
 
@@ -28,19 +37,19 @@ getAuxiliaryPicture(type: AuxiliaryPictureType): AuxiliaryPicture | null
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AuxiliaryPictureType | Yes | 辅助图类型。 |
+| type | AuxiliaryPictureType | Yes | Type of the auxiliary picture. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| AuxiliaryPicture | 返回AuxiliaryPicture对象，如果没有则返回null。 |
+| AuxiliaryPicture | AuxiliaryPicture object. If there is no AuxiliaryPicture object, null isreturned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 
 ## getGainmapPixelmap
 
@@ -48,7 +57,7 @@ getAuxiliaryPicture(type: AuxiliaryPictureType): AuxiliaryPicture | null
 getGainmapPixelmap(): PixelMap | null
 ```
 
-获取增益图的pixelmap。
+Obtains the PixelMap object of the gain map.
 
 **Since:** 13
 
@@ -58,7 +67,7 @@ getGainmapPixelmap(): PixelMap | null
 
 | Type | Description |
 | --- | --- |
-| PixelMap | 返回Pixelmap对象，如果没有则返回null。 |
+| PixelMap | PixelMap object obtained. If there is no PixelMap object, null is returned. |
 
 ## getHdrComposedPixelmap
 
@@ -66,7 +75,8 @@ getGainmapPixelmap(): PixelMap | null
 getHdrComposedPixelmap(): Promise<PixelMap>
 ```
 
-合成HDR图并获取HDR图的pixelmap。使用Promise异步回调。
+Generates a High Dynamic Range (HDR) image and obtains its PixelMap object. This API uses a promise to return the
+result.
 
 **Since:** 13
 
@@ -76,39 +86,14 @@ getHdrComposedPixelmap(): Promise<PixelMap>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap> | Promise对象，返回PixelMap。 |
+| Promise&lt;PixelMap&gt; | Promise used to return the PixelMap object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600901 | Inner unknown error. Please check the logs for detailed information. |
-| 7600201 | Unsupported operation. e.g.,1. The picture does not has a gainmap.  2. MainPixelMap's allocator type is not DMA. |
-
-## getHdrComposedPixelmap
-
-```TypeScript
-getHdrComposedPixelmap(): Promise<PixelMap | undefined>
-```
-
-Obtains the hdr pixel map. This method uses a promise to return the PixelMap object.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;PixelMap \| undefined> | A Promise instance used to return the PixelMap object. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600901 | Unknown error. |
-| 7600201 | Unsupported operation. |
+| [7600901](../errorcode-image.md#7600901-unknown-error) | Inner unknown error. Please check the logs for detailed information. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. e.g.,1. The picture does not has a gainmap.2. MainPixelMap's allocator type is not DMA. |
 
 ## getHdrComposedPixelmapWithOptions
 
@@ -116,11 +101,14 @@ Obtains the hdr pixel map. This method uses a promise to return the PixelMap obj
 getHdrComposedPixelmapWithOptions(options?: HdrComposeOptions): Promise<PixelMap | undefined>
 ```
 
-合成HDR图像并返回HDR图像的PixelMap，支持传入合成参数（如PixelMapFormat等）。使用Promise异步回调。 调用该接口的Picture对象中必须包含主图、增益图和元数据。
+Composites an HDR image and returns PixelMap of the image. Composition options (such as PixelMapFormat) can be
+passed. This API uses a promise to return the result.
+
+The Picture object that calls this API must contain the main picture, gain map, and metadata.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -128,19 +116,19 @@ getHdrComposedPixelmapWithOptions(options?: HdrComposeOptions): Promise<PixelMap
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| options | HdrComposeOptions | No |  |
+| options | HdrComposeOptions | No | Options for HDR composition. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap \| undefined> | Promise对象，返回PixelMap或undefined。 |
+| Promise&lt;PixelMap \| undefined&gt; | Promise, which returns the PixelMap object or **undefined**. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600201 | Unsupported operation. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. |
 
 ## getMainPixelmap
 
@@ -148,7 +136,7 @@ getHdrComposedPixelmapWithOptions(options?: HdrComposeOptions): Promise<PixelMap
 getMainPixelmap(): PixelMap
 ```
 
-获取主图的pixelmap。
+Obtains the PixelMap object of the main picture. This API returns the result synchronously.
 
 **Since:** 13
 
@@ -158,25 +146,7 @@ getMainPixelmap(): PixelMap
 
 | Type | Description |
 | --- | --- |
-| PixelMap | 同步返回PixelMap对象。 |
-
-## getMainPixelmap
-
-```TypeScript
-getMainPixelmap(): PixelMap | undefined
-```
-
-Obtains the pixel map of the main image.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| PixelMap | Returns the pixel map. |
+| PixelMap | PixelMap object. |
 
 ## getMetadata
 
@@ -184,7 +154,7 @@ Obtains the pixel map of the main image.
 getMetadata(metadataType: MetadataType): Promise<Metadata>
 ```
 
-获取主图的元数据。使用Promise异步回调。
+Obtains the metadata of this Picture object. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -194,50 +164,20 @@ getMetadata(metadataType: MetadataType): Promise<Metadata>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| metadataType | MetadataType | Yes | 元数据类型。 |
+| metadataType | MetadataType | Yes | Metadata type. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Metadata> | Promise对象。返回元数据。 |
+| Promise&lt;Metadata&gt; | Promise used to return the metadata. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 7600202 | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The  metadata type does not match the auxiliary picture type. |
-
-## getMetadata
-
-```TypeScript
-getMetadata(metadataType: MetadataType): Promise<Metadata | undefined>
-```
-
-Obtains the metadata of main picture.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| metadataType | MetadataType | Yes | The type of metadata. |
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| Promise&lt;Metadata \| undefined> | Return the metadata of main picture. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 7600202 | Unsupported metadata. Possible causes: Unsupported metadata type. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. Themetadata type does not match the auxiliary picture type. |
 
 ## hdrComposeToMainPixelmap
 
@@ -245,11 +185,14 @@ Obtains the metadata of main picture.
 hdrComposeToMainPixelmap(): Promise<void>
 ```
 
-将Picture对象的主图和增益图合成为HDR图，合成后原Picture的主图被替换为HDR图，原Picture的增益图被删除。使用Promise异步回调。 调用该接口的Picture对象中必须包含主图、增益图。
+Invokes the VPE algorithm to compose the main pixelmap and gainmap. The composed result will replace the
+main pixelmap of the current picture object.
+
+The Picture object that calls this API must contain the main pixelmap, gain map.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -257,13 +200,13 @@ hdrComposeToMainPixelmap(): Promise<void>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600201 | Unsupported operation. e.g.,1. The picture does not have a gainmap.  2. pixelMap's allocator type is not DMA. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. e.g.,1. The picture does not have a gainmap.2. pixelMap's allocator type is not DMA. |
 
 ## marshalling
 
@@ -271,7 +214,7 @@ hdrComposeToMainPixelmap(): Promise<void>
 marshalling(sequence: rpc.MessageSequence): void
 ```
 
-将picture序列化后写入MessageSequence。
+Marshals this Picture object and writes it to a MessageSequence object.
 
 **Since:** 13
 
@@ -281,14 +224,14 @@ marshalling(sequence: rpc.MessageSequence): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | Yes | 新创建的MessageSequence。 |
+| sequence | rpc.MessageSequence | Yes | MessageSequence object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types; 3.Parameter verification failed. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; 3.Parameter verification failed. |
+| [62980097](../errorcode-image.md#62980097-pixelmap-serialization-failed) | IPC error. Possible cause: 1.IPC communication failed. 2. Image uploadexception.3. Decode process exception. 4. Insufficient memory. |
 
 ## release
 
@@ -296,7 +239,13 @@ marshalling(sequence: rpc.MessageSequence): void
 release(): void
 ```
 
-释放picture对象。 由于图片占用内存较大，所以当Picture对象使用完成后，应主动调用该方法及时释放内存。 释放时应确保该对象的所有异步方法均执行完成，且后续不再使用该对象。
+Releases this Picture object.
+
+Images occupy a large amount of memory. When you finish using a Picture instance, call this API to free the
+memory promptly.
+
+Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished
+and the instance is no longer needed.
 
 **Since:** 13
 
@@ -308,7 +257,7 @@ release(): void
 setAuxiliaryPicture(type: AuxiliaryPictureType, auxiliaryPicture: AuxiliaryPicture): void
 ```
 
-设置辅助图。
+Sets an auxiliary picture.
 
 **Since:** 13
 
@@ -318,14 +267,14 @@ setAuxiliaryPicture(type: AuxiliaryPictureType, auxiliaryPicture: AuxiliaryPictu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | AuxiliaryPictureType | Yes | 辅助图类型。 |
-| auxiliaryPicture | AuxiliaryPicture | Yes | 辅助图对象。 |
+| type | AuxiliaryPictureType | Yes | Type of the auxiliary picture. |
+| auxiliaryPicture | AuxiliaryPicture | Yes | AuxiliaryPicture object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
 
 ## setMetadata
 
@@ -333,7 +282,7 @@ setAuxiliaryPicture(type: AuxiliaryPictureType, auxiliaryPicture: AuxiliaryPictu
 setMetadata(metadataType: MetadataType, metadata: Metadata): Promise<void>
 ```
 
-设置主图的元数据。使用Promise异步回调。
+Sets the metadata for this Picture object. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -343,19 +292,19 @@ setMetadata(metadataType: MetadataType, metadata: Metadata): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| metadataType | MetadataType | Yes | 元数据类型。 |
-| metadata | Metadata | Yes | 元数据对象。 |
+| metadataType | MetadataType | Yes | Metadata type. |
+| metadata | Metadata | Yes | Metadata object. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 7600202 | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The  metadata type does not match the auxiliary picture type. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. Themetadata type does not match the auxiliary picture type. |
 

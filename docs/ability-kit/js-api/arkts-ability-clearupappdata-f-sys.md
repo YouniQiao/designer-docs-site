@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## clearUpAppData
@@ -12,7 +12,8 @@ import { appManager } from '@ohos.app.ability.appManager';
 function clearUpAppData(bundleName: string, appCloneIndex?: number): Promise<void>
 ```
 
-Clears data of a specified application based on the bundle name and application clone index. This API uses a promise to return the result.
+Clears data of a specified application based on the bundle name and application clone index. This API uses a
+promise to return the result.
 
 **Since:** 13
 

@@ -6,7 +6,14 @@
 function queryDlpPolicy(dlpFd: number): Promise<string>
 ```
 
-在DLP文件中解析文件头，获取DLP明文策略。返回的策略JSON字符串包含[DLPProperty](arkts-dataprotection-dlpproperty-i.md#dlpproperty)和 [CustomProperty](arkts-dataprotection-customproperty-i.md#customproperty)信息。使用Promise异步回调。 该接口可用于在查看DLP文件权限配置等场景中，获取文件的策略信息以便进行分析。 > **说明：** > > 该接口仅支持企业账号调用。
+在DLP文件中解析文件头，获取DLP明文策略。返回的策略JSON字符串包含[DLPProperty](arkts-dataprotection-dlpproperty-i.md)和
+[CustomProperty](arkts-dataprotection-customproperty-i.md)信息。使用Promise异步回调。
+
+该接口可用于在查看DLP文件权限配置等场景中，获取文件的策略信息以便进行分析。
+
+> **说明：**
+>
+> 该接口仅支持企业账号调用。
 
 **起始版本：** 21
 
@@ -33,7 +40,7 @@ function queryDlpPolicy(dlpFd: number): Promise<string>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs.<br>**适用版本：** 20 |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs.<br>**适用版本：** 20+ |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100002](../errorcode-dlp.md#19100002-加解密出错) | Credential service busy due to too many tasks or duplicate tasks. |
 | [19100003](../errorcode-dlp.md#19100003-加解密超时) | Credential task time out. |

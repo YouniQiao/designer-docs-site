@@ -1,10 +1,8 @@
 # OutputDeviceChangeRecommendedAction
 
-```TypeScript
-enum OutputDeviceChangeRecommendedAction
-```
+表示输出设备变更后推荐操作的枚举。
 
-Enumerates the recommended actions to take after an output device changes. Common scenario example: switching between a headset and a loudspeaker device. Upon switching from the loudspeaker device to the headset upon wearing, the system suggests continuing playback and prompts that the application does not need to pause. Upon transitioning from the headset to the loudspeaker device upon removal, the system suggests suspending playback.
+常见场景示例：耳机设备和外放设备之间进行切换。当佩戴耳机时，从外放设备切换到耳机设备，系统会推荐继续播放，提示应用无需停止当前播放。当摘下耳机设备切换到外放设备时，系统会推荐停止播放。
 
 **起始版本：** 20
 
@@ -16,7 +14,7 @@ Enumerates the recommended actions to take after an output device changes. Commo
 DEVICE_CHANGE_RECOMMEND_TO_CONTINUE = 0
 ```
 
-Suggests continuing playback. (This event serves as a playback maintenance indication, informing the application that audio playback does not need to stop during this device change. However, it must not be used as a criterion for triggering audio playback.)
+推荐继续播放（该事件作为播放维持提示，作用是告知应用本次设备变动音频无需停止播放，但‌不可将其作为启动音频播放的判断依据）。
 
 **起始版本：** 20
 
@@ -28,7 +26,7 @@ Suggests continuing playback. (This event serves as a playback maintenance indic
 DEVICE_CHANGE_RECOMMEND_TO_STOP = 1
 ```
 
-Suggests stopping playback.
+推荐停止播放。
 
 **起始版本：** 20
 

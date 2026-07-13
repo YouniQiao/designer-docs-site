@@ -1,6 +1,7 @@
 # MutableBinding
 
-Represents a generic class for mutable data binding, which allows the read and write operations on the bound value and provides complete **get** and **set** accessors.
+Represents a generic class for mutable data binding, which allows the read and write operations on the bound value
+and provides complete **get** and **set** accessors.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ Represents a generic class for mutable data binding, which allows the read and w
 ## Modules to Import
 
 ```TypeScript
-import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@ohos.arkui.StateManagement';
+import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInactive, PersistenceV2, ComponentDisappear, MutableBinding, CustomComponentLifecycleObserver, AppStorageV2, Type, ConnectOptionsCollections, CollectionType, CustomComponentContext, IReusePool, ConnectOptions, UIUtils, ComponentActive, CustomComponentLifecycle, ComponentInit, ComponentAppear, ComponentBuilt, ComponentRecycle, IReusableInfo } from '@kit.ArkUI';
 ```
 
 ## value
@@ -18,7 +19,9 @@ import { Binding, ComponentReuse, CustomComponentLifecycleState, ComponentInacti
 set value(newValue: T)
 ```
 
-Provides the **set** accessor to set a new value for the current bound value. The **set** accessor must be provided when the **MutableBinding** class instance is constructed. Otherwise, a runtime error will be thrown when the **set** accessor is triggered.
+Provides the **set** accessor to set a new value for the current bound value. The **set** accessor must be provided
+when the **MutableBinding** class instance is constructed. Otherwise, a runtime error will be thrown when the
+**set** accessor is triggered.
 
 **Type:** T
 

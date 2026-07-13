@@ -6,7 +6,7 @@ Describes input parameters of audio interruption events.
 
 **Deprecated since:** 9
 
-**Substitute:** ohos.multimedia.audio.AudioRendererOptions
+**Substitutes:** AudioRendererOptions
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -15,42 +15,6 @@ Describes input parameters of audio interruption events.
 ```TypeScript
 import { audio } from '@kit.AudioKit';
 ```
-
-## streamUsage
-
-```TypeScript
-streamUsage: StreamUsage
-```
-
-Audio stream usage.
-
-**Type:** StreamUsage
-
-**Since:** 7
-
-**Deprecated since:** 9
-
-**Substitute:** ohos.multimedia.audio.AudioRendererOptions#rendererInfo
-
-**System capability:** SystemCapability.Multimedia.Audio.Renderer
-
-## pauseWhenDucked
-
-```TypeScript
-pauseWhenDucked: boolean
-```
-
-Whether audio playback can be paused during an audio interruption. **true** if audio playback can be paused, **false** otherwise.
-
-**Type:** boolean
-
-**Since:** 7
-
-**Deprecated since:** 9
-
-**Substitute:** ohos.multimedia.audio.InterruptEvent#hintType
-
-**System capability:** SystemCapability.Multimedia.Audio.Renderer
 
 ## contentType
 
@@ -66,7 +30,44 @@ Audio content type.
 
 **Deprecated since:** 9
 
-**Substitute:** ohos.multimedia.audio.AudioRendererOptions#rendererInfo
+**Substitutes:** rendererInfo
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+## pauseWhenDucked
+
+```TypeScript
+pauseWhenDucked: boolean
+```
+
+Whether audio playback can be paused during an audio interruption. **true** if audio playback can be paused,
+**false** otherwise.
+
+**Type:** boolean
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** hintType
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+## streamUsage
+
+```TypeScript
+streamUsage: StreamUsage
+```
+
+Audio stream usage.
+
+**Type:** StreamUsage
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** rendererInfo
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

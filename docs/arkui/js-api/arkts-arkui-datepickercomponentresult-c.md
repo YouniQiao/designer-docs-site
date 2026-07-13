@@ -9,7 +9,7 @@ Defines result of DatePickerComponent.
 ## Modules to Import
 
 ```TypeScript
-import { DisplayMode, TimeFormat, DatePickerComponent, DateMode, DatePickerComponentOptions, DatePickerComponentResult } from '@ohos.arkui.advanced.DatePickerComponent';
+import { DisplayMode, TimeFormat, DatePickerComponent, DateMode, DatePickerComponentOptions, DatePickerComponentResult } from '@kit.ArkUI';
 ```
 
 ## day
@@ -72,7 +72,8 @@ Minute portion of selected time.
 month?: number
 ```
 
-Month index of selected date. The index is zero-based. 0 indicates January, and 11 indicates December.
+Month index of selected date.
+The index is zero-based. 0 indicates January, and 11 indicates December.
 
 **Type:** number
 

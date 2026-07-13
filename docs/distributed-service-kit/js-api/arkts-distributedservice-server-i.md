@@ -1,6 +1,7 @@
 # Server
 
-Represents a **Server** object, which provides methods for starting, stopping, and closing the server, and registering or unregistering event callbacks.
+Represents a **Server** object, which provides methods for starting, stopping, and closing the server, and
+registering or unregistering event callbacks.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ Represents a **Server** object, which provides methods for starting, stopping, a
 ## Modules to Import
 
 ```TypeScript
-import { linkEnhance } from '@ohos.distributedsched.linkEnhance';
+import { linkEnhance } from '@kit.DistributedServiceKit';
 ```
 
 ## close
@@ -18,7 +19,8 @@ import { linkEnhance } from '@ohos.distributedsched.linkEnhance';
 close(): void
 ```
 
-Destroys the **Server** object to release related resources. To interact with the peer device again, create a new **Server** object.
+Destroys the **Server** object to release related resources. To interact with the peer device again, create a new
+**Server** object.
 
 **Since:** 20
 
@@ -62,7 +64,8 @@ try {
 off(type: 'connectionAccepted', callback?: Callback<Connection>): void
 ```
 
-Unregisters the callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return the result.
+Unregisters the callback listener for **connectionAccepted** events. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 20
 
@@ -77,7 +80,7 @@ Unregisters the callback listener for **connectionAccepted** events. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionAccepted' | Yes | Event type, which is **connectionAccepted**. This event is triggered whena connection from the peer end is received. |
-| callback | Callback&lt;Connection&gt; | No | Registered callback, which is used to return the[Connection](arkts-distributedservice-connection-i.md#connection) object. |
+| callback | Callback&lt;Connection&gt; | No | Registered callback, which is used to return the[Connection](arkts-distributedservice-connection-i.md) object. |
 
 **Error codes:**
 
@@ -120,7 +123,8 @@ try {
 off(type: 'serverStopped', callback?: Callback<number>): void
 ```
 
-Unregisters the callback listener for **serverStopped** events. This API uses an asynchronous callback to return the result.
+Unregisters the callback listener for **serverStopped** events. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 20
 
@@ -178,7 +182,8 @@ try {
 on(type: 'connectionAccepted', callback: Callback<Connection>): void
 ```
 
-Registers a callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return the result.
+Registers a callback listener for **connectionAccepted** events. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 20
 
@@ -193,7 +198,7 @@ Registers a callback listener for **connectionAccepted** events. This API uses a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'connectionAccepted' | Yes | Event type, which is **connectionAccepted**. This event is triggered whena connection from the peer end is received. |
-| callback | Callback&lt;Connection&gt; | Yes | Registered callback, which is used to return the[Connection](arkts-distributedservice-connection-i.md#connection) object. |
+| callback | Callback&lt;Connection&gt; | Yes | Registered callback, which is used to return the[Connection](arkts-distributedservice-connection-i.md) object. |
 
 **Error codes:**
 
@@ -236,7 +241,8 @@ try {
 on(type: 'serverStopped', callback: Callback<number>): void
 ```
 
-Registers a callback listener for **serverStopped** events. This API uses an asynchronous callback to return the result.
+Registers a callback listener for **serverStopped** events. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 20
 

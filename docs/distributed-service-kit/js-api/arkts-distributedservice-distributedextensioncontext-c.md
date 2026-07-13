@@ -2,7 +2,7 @@
 
 Class inherited for the distributed extension function.
 
-**Inheritance/Implementation:** DistributedExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)
+**Inheritance/Implementation:** DistributedExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 20
 
@@ -11,7 +11,7 @@ Class inherited for the distributed extension function.
 ## Modules to Import
 
 ```TypeScript
-import { DistributedExtensionContext } from '@ohos.application.DistributedExtensionContext';
+import { DistributedExtensionContext } from '@kit.DistributedServiceKit';
 ```
 
 ## connectServiceExtensionAbility
@@ -20,7 +20,11 @@ import { DistributedExtensionContext } from '@ohos.application.DistributedExtens
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-Connects to a remote Service extension ability. This method connects to a Service extension ability on a remote device. You must implement the {@link ConnectOptions} interface to obtain the proxy of the target service extension when connected.
+Connects to a remote Service extension ability.
+
+This method connects to a Service extension ability on a remote device.
+You must implement the {@link ConnectOptions} interface to obtain the proxy of the target
+service extension when connected.
 
 **Since:** 26.0.0
 

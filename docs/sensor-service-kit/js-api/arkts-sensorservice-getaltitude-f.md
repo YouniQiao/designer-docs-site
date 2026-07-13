@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## getAltitude
@@ -12,7 +12,8 @@ import { sensor } from '@ohos.sensor';
 function getAltitude(seaPressure: number, currentPressure: number, callback: AsyncCallback<number>): void
 ```
 
-Obtains the altitude at which the device is located based on the sea-level atmospheric pressure and the current atmospheric pressure. This API uses an asynchronous callback to return the result.
+Obtains the altitude at which the device is located based on the sea-level atmospheric pressure and the current
+atmospheric pressure. This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -53,7 +54,8 @@ sensor.getAltitude(0, 200, (err: BusinessError, data: number) => {
 function getAltitude(seaPressure: number, currentPressure: number): Promise<number>
 ```
 
-Obtains the altitude at which the device is located based on the sea-level atmospheric pressure and the current atmospheric pressure. This API uses a promise to return the result.
+Obtains the altitude at which the device is located based on the sea-level atmospheric pressure and the current
+atmospheric pressure. This API uses a promise to return the result.
 
 **Since:** 8
 

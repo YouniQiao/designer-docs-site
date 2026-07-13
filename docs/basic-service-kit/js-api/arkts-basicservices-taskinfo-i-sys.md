@@ -11,7 +11,7 @@ Task information.
 ## Modules to Import
 
 ```TypeScript
-import { update } from '@ohos.update';
+import { update } from '@kit.BasicServicesKit';
 ```
 
 ## existTask
@@ -20,7 +20,9 @@ import { update } from '@ohos.update';
 existTask: boolean
 ```
 
-Whether a task exists. The value **true** indicates that the task exists, and the value **false** indicates the opposite.
+Whether a task exists.
+
+The value **true** indicates that the task exists, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

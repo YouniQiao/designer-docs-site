@@ -1,6 +1,14 @@
 # AudioRoutingManager
 
-This interface implements audio routing management. Before calling any API in AudioRoutingManager, you must use [getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1) to obtain an AudioRoutingManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
+This interface implements audio routing management.
+
+Before calling any API in AudioRoutingManager, you must use
+[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1) to obtain an
+AudioRoutingManager instance.
+
+> **NOTE**
+>
+> - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -9,7 +17,7 @@ This interface implements audio routing management. Before calling any API in Au
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## excludeOutputDevices
@@ -18,7 +26,9 @@ import { audio } from '@ohos.multimedia.audio';
 excludeOutputDevices(usage: DeviceUsage, devices: AudioDeviceDescriptors): Promise<void>
 ```
 
-Exclude output devices. After calling this function successfully, audio will not be played on the specified devices. Note that only the external ouput device can be excluded by this function. Local output devices is not accepted.
+Exclude output devices. After calling this function successfully, audio will not be played on the specified
+devices. Note that only the external ouput device can be excluded by this function. Local output devices is not
+accepted.
 
 **Since:** 18
 
@@ -89,7 +99,8 @@ async function excludeOutputDevices(){
 getActiveOutputDeviceDescriptors(): Promise<AudioDeviceDescriptors>
 ```
 
-Gets the active output device descriptors for the current audio device. The activation policy is related to the audio device policy of the system.
+Gets the active output device descriptors for the current audio device.
+The activation policy is related to the audio device policy of the system.
 
 **Since:** 26.0.0
 
@@ -359,7 +370,8 @@ Unsubscribes to preferred input device change events.
 on(type: 'preferredOutputDeviceChangeByFilter', filter: AudioRendererFilter, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to prefer output device change events. When preferred device for target audio renderer filter changes, registered clients will receive the callback.
+Subscribes to prefer output device change events. When preferred device for target audio renderer
+filter changes, registered clients will receive the callback.
 
 **Since:** 21
 
@@ -406,7 +418,8 @@ audioRoutingManager.on('preferredOutputDeviceChangeByFilter', outputAudioRendere
 onPreferredInputDeviceChangeByFilter(filter: AudioCapturerFilter, callback: Callback<AudioDeviceDescriptors>): void
 ```
 
-Subscribes to preferred input device change events. When the preferred device for target audio capturer filter changes, registered clients will receive a callback.
+Subscribes to preferred input device change events. When the preferred device for target audio
+capturer filter changes, registered clients will receive a callback.
 
 **Since:** 26.0.0
 
@@ -768,7 +781,8 @@ async function selectOutputDevice(){
 selectOutputDeviceByFilter(filter: AudioRendererFilter, outputAudioDevices: AudioDeviceDescriptors, callback: AsyncCallback<void>): void
 ```
 
-Select the output device with desired AudioRenderer. This method uses an asynchronous callback to return the result.
+Select the output device with desired AudioRenderer. This method uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

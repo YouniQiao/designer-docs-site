@@ -1,19 +1,24 @@
 # HuksResult
 
-Represents the result returned. > **NOTE** > > - For details about the error codes, see > [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).
+Represents the result returned.
+
+> **NOTE**
+>
+> - For details about the error codes, see
+> [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [HuksReturnResult](arkts-universalkeystore-huksreturnresult-i.md#huksreturnresult)
+**Substitutes:** [HuksReturnResult](arkts-universalkeystore-huksreturnresult-i.md)
 
 **System capability:** SystemCapability.Security.Huks.Extension
 
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## certChains
@@ -22,7 +27,9 @@ import { huks } from '@ohos.security.huks';
 certChains?: Array<string>
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Type:** Array<string>
 
@@ -38,7 +45,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 errorCode: number
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Type:** number
 
@@ -54,7 +63,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 outData?: Uint8Array
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Type:** Uint8Array
 
@@ -70,7 +81,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 properties?: Array<HuksParam>
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Type:** Array<HuksParam>
 

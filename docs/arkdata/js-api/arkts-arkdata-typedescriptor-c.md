@@ -1,6 +1,7 @@
 # TypeDescriptor
 
-Represents a class for defining a uniform data type. It provides properties and methods for describing a uniform data type and its relationship with other uniform data types.
+Represents a class for defining a uniform data type. It provides properties and methods for describing a uniform
+data type and its relationship with other uniform data types.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Represents a class for defining a uniform data type. It provides properties and 
 ## Modules to Import
 
 ```TypeScript
-import { uniformTypeDescriptor } from '@ohos.data.uniformTypeDescriptor';
+import { uniformTypeDescriptor } from '@kit.ArkData';
 ```
 
 ## belongsTo
@@ -30,7 +31,7 @@ Checks whether this data type belongs to the specified uniform data type.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Return value:**
 
@@ -69,7 +70,8 @@ try{
 equals(typeDescriptor: TypeDescriptor): boolean
 ```
 
-Checks whether this data type is the same as the specified uniform data type. That is, compares **typeId**s of two [TypeDescriptor](arkts-arkdata-typedescriptor-c.md#typedescriptor) objects.
+Checks whether this data type is the same as the specified uniform data type. That is, compares **typeId**s of
+two [TypeDescriptor](arkts-arkdata-typedescriptor-c.md) objects.
 
 **Since:** 11
 
@@ -120,7 +122,9 @@ try{
 isHigherLevelType(type: string): boolean
 ```
 
-Checks whether this data type is a higher-level type of the specified uniform data type. For example, **SOURCE_CODE** is a higher-level type of **TYPE_SCRIPT**, and **TEXT** is a higher-level type of **SOURCE_CODE** and **TYPE_SCRIPT**.
+Checks whether this data type is a higher-level type of the specified uniform data type. For example,
+**SOURCE_CODE** is a higher-level type of **TYPE_SCRIPT**, and **TEXT** is a higher-level type of **SOURCE_CODE**
+and **TYPE_SCRIPT**.
 
 **Since:** 11
 
@@ -132,7 +136,7 @@ Checks whether this data type is a higher-level type of the specified uniform da
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Return value:**
 
@@ -171,7 +175,9 @@ try{
 isLowerLevelType(type: string): boolean
 ```
 
-Checks whether this data type is a lower-level type of the specified uniform data type. For example, **TYPE_SCRIPT** is a lower-level type of **SOURCE_CODE**, and **TYPE_SCRIPT** and **SOURCE_CODE** are lower-level types of **TEXT**.
+Checks whether this data type is a lower-level type of the specified uniform data type. For example,
+**TYPE_SCRIPT** is a lower-level type of **SOURCE_CODE**, and **TYPE_SCRIPT** and **SOURCE_CODE** are lower-level
+types of **TEXT**.
 
 **Since:** 11
 
@@ -183,7 +189,7 @@ Checks whether this data type is a lower-level type of the specified uniform dat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Uniform data type specified, which is a value of[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Return value:**
 

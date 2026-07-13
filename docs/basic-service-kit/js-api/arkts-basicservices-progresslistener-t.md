@@ -4,7 +4,8 @@
 type ProgressListener = (progress: ProgressInfo) => void
 ```
 
-Defines a listener for progress data changes. If the default progress indicator is not used, you can set this API to obtain the paste progress.
+Defines a listener for progress data changes. If the default progress indicator is not used, you can set this API
+to obtain the paste progress.
 
 **Since:** 15
 
@@ -16,5 +17,5 @@ Defines a listener for progress data changes. If the default progress indicator 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| progress | ProgressInfo | Yes | Defines the progress information. This information is reported only when[ProgressIndicator](arkts-basicservices-progressindicator-e.md#progressindicator) is set to **NONE**. |
+| progress | ProgressInfo | Yes | Defines the progress information. This information is reported only when[ProgressIndicator](arkts-basicservices-progressindicator-e.md) is set to **NONE**. |
 

@@ -26,7 +26,9 @@ accountName: string
 additionalInfo?: Record<string, Object>
 ```
 
-域账号附加信息。 此接口仅可在Stage模型下使用。
+域账号附加信息。
+
+此接口仅可在Stage模型下使用。
 
 **类型：** Record<string, Object>
 

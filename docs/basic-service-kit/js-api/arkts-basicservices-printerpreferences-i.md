@@ -9,7 +9,7 @@ Defines the printer preferences.
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## borderless
@@ -18,7 +18,8 @@ import { print } from '@ohos.print';
 borderless?: boolean
 ```
 
-Whether to print without margins. The value **true** means to print without margins, and **false** means the opposite. The default value is **false**.
+Whether to print without margins. The value **true** means to print without margins, and **false** means the
+opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -106,7 +107,9 @@ Default print orientation.
 defaultPageSizeId?: string
 ```
 
-ID of the default paper size. The value can be a standard paper size defined by the International Organization for Standardization (ISO), for example, ISO_A4, or a non-standard paper size defined in the system, for example, Custom.178 × 254 mm.
+ID of the default paper size. The value can be a standard paper size defined by the International Organization
+for Standardization (ISO), for example, ISO_A4, or a non-standard paper size defined in the system, for example,
+Custom.178 × 254 mm.
 
 **Type:** string
 
@@ -150,7 +153,8 @@ Default reverse.
 options?: string
 ```
 
-Other fields in the printer preferences. The fields are queried from the printer or obtained from the printer driver and stored in the string in JSON format.
+Other fields in the printer preferences. The fields are queried from the printer or obtained from the printer
+driver and stored in the string in JSON format.
 
 **Type:** string
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sim } from '@ohos.telephony.sim';
+import { sim } from '@kit.TelephonyKit';
 ```
 
 ## getSimOperatorNumericSync
@@ -12,7 +12,10 @@ import { sim } from '@ohos.telephony.sim';
 function getSimOperatorNumericSync(slotId: number): string
 ```
 
-Obtains the home PLMN number of the SIM card in a specified slot. <p>The value is recorded in the SIM card and is irrelevant to the network with which the SIM card is currently registered.
+Obtains the home PLMN number of the SIM card in a specified slot.
+
+<p>The value is recorded in the SIM card and is irrelevant to the network
+with which the SIM card is currently registered.
 
 **Since:** 10
 

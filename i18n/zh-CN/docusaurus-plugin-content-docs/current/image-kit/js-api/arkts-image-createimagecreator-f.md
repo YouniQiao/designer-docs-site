@@ -6,13 +6,20 @@
 function createImageCreator(width: number, height: number, format: number, capacity: number): ImageCreator
 ```
 
-通过宽、高、图片格式、容量创建ImageCreator实例。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release]image.ImageCreator.release(callback: AsyncCallback<void>)方法 及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > 从API version 9开始支持，从API version 11废弃，建议使用[createImageCreator]image.createImageCreator代替。
+通过宽、高、图片格式、容量创建ImageCreator实例。
+
+由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release](arkts-image-imagecreator-i.md#release-1)方法
+及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 11废弃，建议使用[createImageCreator](arkts-image-createimagecreator-f.md#createimagecreator-1)代替。
 
 **起始版本：** 9
 
 **废弃版本：** 11
 
-**替代接口：** image.createImageCreator(size:
+**替代接口：** createImageCreator(size:
 
 **系统能力：** SystemCapability.Multimedia.Image.ImageCreator
 
@@ -38,13 +45,17 @@ let creator: image.ImageCreator = image.createImageCreator(8192, 8192, image.Ima
 
 ```
 
+
 ## createImageCreator
 
 ```TypeScript
-function createImageCreator(size: Size, format: ImageFormat, capacity: int): ImageCreator
+function createImageCreator(size: Size, format: ImageFormat, capacity: number): ImageCreator
 ```
 
-通过图片大小、图片格式、容量创建ImageCreator实例。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release]image.ImageCreator.release(callback: AsyncCallback<void>)方法 及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+通过图片大小、图片格式、容量创建ImageCreator实例。
+
+由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release](arkts-image-imagecreator-i.md#release-1)方法
+及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **起始版本：** 11
 
@@ -56,7 +67,7 @@ function createImageCreator(size: Size, format: ImageFormat, capacity: int): Ima
 | --- | --- | --- | --- |
 | size | Size | 是 | 图像的默认大小。单位：像素（px）。 |
 | format | ImageFormat | 是 | 图像格式，如YCBCR_422_SP，JPEG。 |
-| capacity | int | 是 | 同时访问的最大图像数。该参数仅作为期望值，实际capacity由设备硬件决定。 |
+| capacity | number | 是 | 同时访问的最大图像数。该参数仅作为期望值，实际capacity由设备硬件决定。 |
 
 **返回值：**
 
@@ -68,7 +79,7 @@ function createImageCreator(size: Size, format: ImageFormat, capacity: int): Ima
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types; |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; |
 
 **示例：**
 

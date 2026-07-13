@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## queryParticipantsByInvitation
@@ -15,7 +15,8 @@ function queryParticipantsByInvitation(
     ): void
 ```
 
-Queries the participants based on the sharing invitation code. This API uses an asynchronous callback to return the result.
+Queries the participants based on the sharing invitation code.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -61,7 +62,8 @@ cloudData.sharing.queryParticipantsByInvitation('sharing_invitation_code_test', 
 function queryParticipantsByInvitation(invitationCode: string): Promise<Result<Array<Participant>>>
 ```
 
-Queries the participants based on the sharing invitation code. This API uses a promise to return the result.
+Queries the participants based on the sharing invitation code.
+This API uses a promise to return the result.
 
 **Since:** 11
 

@@ -1,6 +1,7 @@
 # TreeSet
 
-TreeSet基于[TreeMap](arkts-util-treemap.md)实现。在TreeSet中，仅处理value对象。 TreeSet可用于存储一系列值的集合，元素中value唯一且有序。
+TreeSet基于[TreeMap](arkts-util-treemap.md)实现。在TreeSet中，仅处理value对象。
+TreeSet可用于存储一系列值的集合，元素中value唯一且有序。
 
 **起始版本：** 8
 
@@ -38,19 +39,19 @@ TreeSet基于[TreeMap](arkts-util-treemap.md)实现。在TreeSet中，仅处理v
 let treeSet = new TreeSet<string>();
 treeSet.add("squirrel");
 treeSet.add("sparrow");
-// 使用方法一：
+// 使用方法一：使用for...of语法遍历TreeSet
 for (let item of treeSet) {
   console.info("value:" + item);
 }
 // value:sparrow
 // value:squirrel
 
-// 使用方法二：
-let iter = treeSet[Symbol.iterator]();
-let temp: IteratorResult<string> = iter.next().value;
-while(temp != undefined) {
-  console.info("value:" + temp);
-  temp = iter.next().value;
+// 使用方法二：通过Symbol.iterator获取迭代器手动遍历
+let iterator = treeSet[Symbol.iterator]();
+let currentValue: IteratorResult<string> = iterator.next().value;
+while (currentValue != undefined) {
+  console.info("value:" + currentValue);
+  currentValue = iterator.next().value;
 }
 // value:sparrow
 // value:squirrel
@@ -58,12 +59,12 @@ while(temp != undefined) {
 ```
 
 ```TypeScript
-// 不建议在Symbol.iterator中使用set、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
+// 不建议在Symbol.iterator中使用add、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let treeSet = new TreeSet<string>();
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   treeSet.add("sparrow" + i);
 }
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   treeSet.remove("sparrow" + i);
 }
 
@@ -187,7 +188,7 @@ treeSet.add("d");
 treeSet.add("b");
 for (let value of treeSet) {
   console.info("value:", value);
-}
+};
 // value: a
 // value: b
 // value: c
@@ -197,10 +198,10 @@ for (let value of treeSet) {
 
 ```TypeScript
 // 当插入自定义类型时，则必须要提供比较函数。
-class TestEntry{
+class TestEntry {
   public id: number = 0;
 }
-let ts1: TreeSet<TestEntry> = new TreeSet<TestEntry>((t1: TestEntry, t2: TestEntry): boolean => {return t1.id > t2.id;});
+let ts1: TreeSet<TestEntry> = new TreeSet<TestEntry>((t1: TestEntry, t2: TestEntry): boolean => { return t1.id > t2.id; });
 let entry1: TestEntry = {
   id: 0
 };
@@ -245,11 +246,13 @@ entries(): IterableIterator<[T, T]>
 let treeSet = new TreeSet<string>();
 treeSet.add("squirrel");
 treeSet.add("sparrow");
-let it = treeSet.entries();
-let t: IteratorResult<Object[]> = it.next();
-while(!t.done) {
-  console.info("TreeSet: " + t.value[1]);
-  t = it.next()
+// 获取entries迭代器
+let iterator = treeSet.entries();
+// 遍历迭代器获取键值对
+let iterResult: IteratorResult<Object[]> = iterator.next();
+while (!iterResult.done) {
+  console.info("TreeSet: " + iterResult.value[1]);
+  iterResult = iterator.next();
 }
 // TreeSet: sparrow
 // TreeSet: squirrel
@@ -257,7 +260,7 @@ while(!t.done) {
 ```
 
 ```TypeScript
-// 不建议在entries中使用set、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
+// 不建议在entries中使用add、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let treeSet = new TreeSet<string>();
 for(let i = 0; i < 10; i++) {
   treeSet.add("sparrow" + i);
@@ -301,6 +304,7 @@ forEach(callbackFn: (value?: T, key?: T, set?: TreeSet<T>) => void, thisArg?: Ob
 let treeSet = new TreeSet<string>();
 treeSet.add("sparrow");
 treeSet.add("gull");
+// 通过forEach遍历TreeSet中的元素
 treeSet.forEach((value: string, key: string): void => {
   console.info("value:" + value);
 });
@@ -310,12 +314,12 @@ treeSet.forEach((value: string, key: string): void => {
 ```
 
 ```TypeScript
-// 不建议在forEach中使用set、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
+// 不建议在forEach中使用add、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let treeSet = new TreeSet<string>();
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   treeSet.add("sparrow" + i);
 }
-for(let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   treeSet.remove("sparrow" + i);
 }
 
@@ -346,7 +350,7 @@ getFirstValue(): T
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The getFirstValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -428,7 +432,7 @@ getLastValue(): T
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The getLastValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -520,8 +524,9 @@ has(value: T): boolean
 **示例：**
 
 ```TypeScript
-let treeSet  = new TreeSet<number>();
+let treeSet = new TreeSet<number>();
 treeSet.add(123);
+// 判断容器中是否包含指定元素
 let result = treeSet.has(123);
 console.info("result:", result); // result: true
 
@@ -557,6 +562,7 @@ isEmpty(): boolean
 
 ```TypeScript
 let treeSet = new TreeSet<string>();
+// 判断容器是否为空
 let result = treeSet.isEmpty();
 console.info("result:", result);  // result: true
 
@@ -587,7 +593,7 @@ popFirst(): T
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The popFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -625,7 +631,7 @@ popLast(): T
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The popLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -710,12 +716,13 @@ values(): IterableIterator<T>
 **示例：**
 
 ```TypeScript
+// 不建议在values中使用add、remove方法，会导致死循环等不可预知的风险，可使用for循环来进行插入和删除。
 let treeSet = new TreeSet<string>();
 treeSet.add("squirrel");
 treeSet.add("sparrow");
 let values = treeSet.values();
 for (let value of values) {
-  console.info("value:", value)
+  console.info("value:", value);
 }
 // value: sparrow
 // value: squirrel

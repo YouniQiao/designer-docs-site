@@ -1,6 +1,7 @@
 # WebExtensionConnectionCallback
 
-As an input parameter when connecting a web native messaging extension, it is used to receive state changes during the connection.
+As an input parameter when connecting a web native messaging extension, it is used to receive
+state changes during the connection.
 
 **Since:** 21
 
@@ -9,7 +10,7 @@ As an input parameter when connecting a web native messaging extension, it is us
 ## Modules to Import
 
 ```TypeScript
-import { webNativeMessagingExtensionManager } from '@ohos.web.webNativeMessagingExtensionManager';
+import { webNativeMessagingExtensionManager } from '@kit.ArkWeb';
 ```
 
 ## onConnect

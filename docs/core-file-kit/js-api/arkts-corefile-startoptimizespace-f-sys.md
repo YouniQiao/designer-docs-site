@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## startOptimizeSpace
@@ -12,7 +12,12 @@ import { cloudSync } from '@ohos.file.cloudSync';
 function startOptimizeSpace(optimizePara: OptimizeSpaceParam, callback?: Callback<OptimizeSpaceProgress>): Promise<void>
 ```
 
-Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have not been accessed before the aging period expires. This API uses a promise to return the result. The callback returns the optimization progress. startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, the error code 22400006 will be returned, indicating that other tasks are being executed.
+Optimizes local resources that have been synced to the cloud and optimizes local images and videos that have not
+been accessed before the aging period expires. This API uses a promise to return the result. The callback returns
+the optimization progress.
+
+startOptimizeSpace is used together with **stopOptimizeSpace**. If **startOptimizeSpace** is called repeatedly, the
+error code 22400006 will be returned, indicating that other tasks are being executed.
 
 **Since:** 17
 

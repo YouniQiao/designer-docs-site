@@ -12,7 +12,8 @@ UIUtils提供一些方法，用于处理状态管理相关的数据转换。
 static addMonitor(target: object, path: string | string[], monitorCallback: MonitorCallback, options?: MonitorOptions): void
 ```
 
-给状态管理V2的状态变量动态添加监听方法，详见 [addMonitor/clearMonitor](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md)。
+给状态管理V2的状态变量动态添加监听方法，详见
+[addMonitor/clearMonitor](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md)。
 
 **起始版本：** 20
 
@@ -29,7 +30,7 @@ static addMonitor(target: object, path: string | string[], monitorCallback: Moni
 | target | object | 是 | 目标对象，仅支持[@ComponentV2](../../../../ui/state-management/arkts-create-custom-components.md#componentv2)和[@ObservedV2](../../../../ui/state-management/arkts-new-observedV2-and-trace.md)实例。&lt;/br&gt;对于不支持的类型，会抛出运行时错误。 |
 | path | string \| string[] | 是 | 添加监听的变量名路径。可指定一个路径或者传入string数组用于一次性指定多个监听的变量路径。&lt;/br&gt;仅支持string和string数组，对于不支持的类型，会抛出运行时错误。 |
 | monitorCallback | MonitorCallback | 是 | 给对应的状态变量注册的监听函数，即path路径对应的状态变量改变时，会回调对应的函数。&lt;/br&gt;对于不支持的类型，会抛出运行时错误。 |
-| options | MonitorOptions | 否 | 监听函数的配置项，具体可见[MonitorOptions](arkts-arkui-monitoroptions-i.md#monitoroptions)。默认为异步回调。 |
+| options | MonitorOptions | 否 | 监听函数的配置项，具体可见[MonitorOptions](arkts-arkui-monitoroptions-i.md)。默认为异步回调。 |
 
 **错误码：**
 
@@ -45,7 +46,9 @@ static addMonitor(target: object, path: string | string[], monitorCallback: Moni
 static applySync<T>(task: TaskCallback): T
 ```
 
-同步刷新指定的状态变量，该接口接收一个闭包函数，仅刷新闭包函数内的修改，包括更新[@Computed计算](../../../../ui/state-management/arkts-new-computed.md)、 [@Monitor回调](../../../../ui/state-management/arkts-new-monitor.md)以及重新渲染UI节点，详见 [applySync/flushUpdates/flushUIUpdates接口：同步刷新](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md)。
+同步刷新指定的状态变量，该接口接收一个闭包函数，仅刷新闭包函数内的修改，包括更新[@Computed计算](../../../../ui/state-management/arkts-new-computed.md)、
+[@Monitor回调](../../../../ui/state-management/arkts-new-monitor.md)以及重新渲染UI节点，详见
+[applySync/flushUpdates/flushUIUpdates接口：同步刷新](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md)。
 
 **起始版本：** 22
 
@@ -197,8 +200,8 @@ class Student {
         // 装饰器关联的组件id
         const eleId = elementInfo.elementId;
         hilog.info(0x00, TAG, `elementId: ${eleId}`);
-      })
-    })
+      });
+    });
   }
 }
 
@@ -266,7 +269,8 @@ export struct School {
 static clearMonitor(target: object, path: string | string[], monitorCallback?: MonitorCallback) : void
 ```
 
-删除通过[addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1)给状态管理V2的状态变量添加的监听方法，详见 [addMonitor/clearMonitor](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md)。
+删除通过[addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1)给状态管理V2的状态变量添加的监听方法，详见
+[addMonitor/clearMonitor](../../../../ui/state-management/arkts-new-addMonitor-clearMonitor.md)。
 
 **起始版本：** 20
 
@@ -298,7 +302,8 @@ static clearMonitor(target: object, path: string | string[], monitorCallback?: M
 static enableV2Compatibility<T extends object>(source: T): T
 ```
 
-使V1的状态变量能够在\@ComponentV2中观察，主要应用于状态管理V1、V2混用场景。详见 [状态管理V1和V2混用指导（API version 19及之后）](../../../../ui/state-management/arkts-v1-v2-mixusage.md)。
+使V1的状态变量能够在\@ComponentV2中观察，主要应用于状态管理V1、V2混用场景。详见
+[状态管理V1和V2混用指导（API version 19及之后）](../../../../ui/state-management/arkts-v1-v2-mixusage.md)。
 
 **起始版本：** 19
 
@@ -406,6 +411,7 @@ struct Index {
           this.w = 100;
           this.h = 100;
           this.message = 'Hello World';
+          // 立即处理上述状态变量修改，同步标脏对应的UI节点
           UIUtils.flushUIUpdates();
           // 动画在1s内，Column方框的尺寸由（100*100）渐变为（200*200），方框内的文本变为Hello ArkUI
           this.getUIContext().animateTo({
@@ -437,7 +443,8 @@ struct Index {
 static flushUpdates(): void
 ```
 
-同步刷新在调用该函数之前所有的状态变量修改，包括更新@Computed计算、@Monitor回调以及重新渲染UI节点，详见 [applySync/flushUpdates/flushUIUpdates接口：同步刷新](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md)。
+同步刷新在调用该函数之前所有的状态变量修改，包括更新@Computed计算、@Monitor回调以及重新渲染UI节点，详见
+[applySync/flushUpdates/flushUIUpdates接口：同步刷新](../../../../ui/state-management/arkts-new-applySync-flushUpdates-flushUIUpdates.md)。
 
 **起始版本：** 22
 
@@ -506,7 +513,8 @@ struct Index {
 static getCustomComponentContext<T extends BaseCustomComponent>(customComponent: T): CustomComponentContext
 ```
 
-返回给定@Component(V1)或@ComponentV2的[CustomComponentContext](arkts-arkui-customcomponentcontext-i.md#customcomponentcontext)。使用它来访问组件的复用池。有关复用池的详细信息，请参阅 [全局复用池：集中化的组件回收与复用](../../../../ui/state-management/arkts-global-reuse-pool.md)。
+返回给定@Component(V1)或@ComponentV2的[CustomComponentContext](arkts-arkui-customcomponentcontext-i.md)。使用它来访问组件的复用池。有关复用池的详细信息，请参阅
+[全局复用池：集中化的组件回收与复用](../../../../ui/state-management/arkts-global-reuse-pool.md)。
 
 **起始版本：** 26.0.0
 
@@ -727,7 +735,7 @@ static makeBinding<T>(getter: GetterCallback<T>): Binding<T>
 **示例：**
 
 ```TypeScript
-import { Binding, MutableBinding, UIUtils } from '@kit.ArkUI';
+import { Binding, UIUtils } from '@kit.ArkUI';
 
 @Builder
 function CustomButton(num1: Binding<number>) {
@@ -887,6 +895,7 @@ class NonObservedClass {
 @Entry
 @ComponentV2
 struct Index {
+  // 使用makeObserved将NonObservedClass实例变为可观察对象
   observedClass: NonObservedClass = UIUtils.makeObserved(new NonObservedClass());
   nonObservedClass: NonObservedClass = new NonObservedClass();
 
@@ -912,7 +921,10 @@ struct Index {
 static makeV1Observed<T extends object>(source: T): T
 ```
 
-将不可观察的对象包装成状态管理V1可观察的对象，其能力等同于@Observed，可初始化@ObjectLink。 该接口可搭配[enableV2Compatibility](arkts-arkui-uiutils-c.md#enablev2compatibility-1)应用于状态管理V1和V2混用场景，详见 [状态管理V1和V2混用指导（API version 19及之后）](../../../../ui/state-management/arkts-v1-v2-mixusage.md)。
+将不可观察的对象包装成状态管理V1可观察的对象，其能力等同于@Observed，可初始化@ObjectLink。
+
+该接口可搭配[enableV2Compatibility](arkts-arkui-uiutils-c.md#enablev2compatibility-1)应用于状态管理V1和V2混用场景，详见
+[状态管理V1和V2混用指导（API version 19及之后）](../../../../ui/state-management/arkts-v1-v2-mixusage.md)。
 
 **起始版本：** 19
 
@@ -926,7 +938,7 @@ static makeV1Observed<T extends object>(source: T): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| source | T | 是 | 数据源。支持普通class、Array、Map、Set、Date类型。&lt;/br&gt;不支持[@arkts.collections (ArkTS容器集)](../../apis-arkts/arkts-apis/arkts-collections.md#collections)和[@Sendable](../../../../arkts-utils/arkts-sendable.md)修饰的class。&lt;/br&gt;不支持undefined和null。不支持状态管理V2的数据和[makeObserved](arkts-arkui-uiutils-c.md#makeobserved-1)的返回值。 |
+| source | T | 是 | 数据源。支持普通class、Array、Map、Set、Date类型。&lt;/br&gt;不支持[@arkts.collections (ArkTS容器集)](../../apis-arkts/arkts-apis/arkts-collections.md)和[@Sendable](../../../../arkts-utils/arkts-sendable.md)修饰的class。&lt;/br&gt;不支持undefined和null。不支持状态管理V2的数据和[makeObserved](arkts-arkui-uiutils-c.md#makeobserved-1)的返回值。 |
 
 **返回值：**
 
@@ -955,6 +967,7 @@ class Inner {
 @Entry
 @Component
 struct Index {
+  // 使用makeV1Observed将Inner实例包装为V1可观察对象，传入Outer构造函数
   @State outer: Outer = new Outer(UIUtils.makeV1Observed(new Inner()));
 
   build() {

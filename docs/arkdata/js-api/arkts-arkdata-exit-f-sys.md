@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## exit
@@ -12,7 +12,8 @@ import { cloudData } from '@ohos.data.cloudData';
 function exit(sharingResource: string, callback: AsyncCallback<Result<void>>): void
 ```
 
-Exits the share of the specified shared resource. This API uses an asynchronous callback to return the result.
+Exits the share of the specified shared resource.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -58,7 +59,8 @@ cloudData.sharing.exit('sharing_resource_test', ((err: BusinessError, result) =>
 function exit(sharingResource: string): Promise<Result<void>>
 ```
 
-Exits the share of the specified shared resource. This API uses a promise to return the result.
+Exits the share of the specified shared resource.
+This API uses a promise to return the result.
 
 **Since:** 11
 

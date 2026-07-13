@@ -12,7 +12,9 @@
 align: VerticalAlign
 ```
 
-Sets the vertical alignment relative to the anchor component. Anonymous Object Rectification
+Sets the vertical alignment relative to the anchor component.
+
+Anonymous Object Rectification
 
 **类型：** VerticalAlign
 
@@ -30,7 +32,9 @@ Sets the vertical alignment relative to the anchor component. Anonymous Object R
 anchor: string
 ```
 
-Specifies the anchor component Anonymous Object Rectification
+Specifies the anchor component
+
+Anonymous Object Rectification
 
 **类型：** string
 

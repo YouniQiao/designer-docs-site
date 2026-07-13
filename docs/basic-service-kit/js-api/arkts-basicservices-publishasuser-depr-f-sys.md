@@ -60,7 +60,8 @@ function publishAsUser(
   ): void
 ```
 
-Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to return the result.
+Publishes a common event with given properties to a specific user. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 8
 

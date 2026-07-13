@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## createAtManager
@@ -12,9 +12,12 @@ import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAcce
 function createAtManager(): AtManager
 ```
 
-Obtains the AtManager instance.
+Creates a program access control management instance for scenarios such as permission verification, runtime
+permission request, settings page authorization guidance, and permission status change monitoring. After the call
+is successful, an AtManager instance is returned, which can be used for subsequent permission management
+operations.
 
-**Since:** 11
+**Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
@@ -24,7 +27,7 @@ Obtains the AtManager instance.
 
 | Type | Description |
 | --- | --- |
-| AtManager | returns the instance of the AtManager. |
+| AtManager | **AtManager** instance obtained. |
 
 **Example**
 

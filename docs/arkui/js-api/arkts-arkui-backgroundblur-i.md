@@ -12,7 +12,8 @@ Defines the background blur effect.
 grayscale?: [number, number]
 ```
 
-Grayscale parameters for the blur effect. Value range for each parameter: [0, 127].
+Grayscale parameters for the blur effect.
+Value range for each parameter: [0, 127].
 
 **Type:** [number, number]
 
@@ -30,7 +31,9 @@ Grayscale parameters for the blur effect. Value range for each parameter: [0, 12
 radius: number
 ```
 
-Blur radius for background blur. The value must be greater than or equal to 0, the larger the value, the more blurred the background. The value 0 indicates no blur.
+Blur radius for background blur.
+The value must be greater than or equal to 0, the larger the value, the more blurred the background.
+The value 0 indicates no blur.
 
 **Type:** number
 

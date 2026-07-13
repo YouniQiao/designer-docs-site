@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ranging } from '@ohos.FusionConnectivity.ranging';
+import { ranging } from '@kit.ConnectivityKit';
 ```
 
 ## onRangingStateChange
@@ -12,7 +12,9 @@ import { ranging } from '@ohos.FusionConnectivity.ranging';
 function onRangingStateChange(callback: Callback<RangingStateChangeInfo>): void
 ```
 
-Registers a callback to receive ranging state change notifications. Notifies state changes for both active ranging and passive ranging operations.
+Registers a callback to receive ranging state change notifications.
+
+Notifies state changes for both active ranging and passive ranging operations.
 
 **Since:** 26.0.0
 

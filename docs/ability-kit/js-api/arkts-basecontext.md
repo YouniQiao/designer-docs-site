@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [BaseContext](arkts-basecontext-c.md) | BaseContext抽象类用于表示继承的子类Context是Stage模型还是FA模型，是所有Context类型的父类。 |
+| [BaseContext](arkts-ability-basecontext-c.md) | BaseContext is an abstract class that specifies whether a child class Context is used for the stage model or FAmodel. It is the parent class for all types of Context. |
 

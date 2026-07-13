@@ -9,7 +9,7 @@ Describes a text decoration.
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## color
@@ -50,7 +50,8 @@ Style of the decoration. The default value is **SOLID**.
 decorationThicknessScale?: number
 ```
 
-Scale factor for the thickness of the decoration line. The value is a floating point number. The default value is **1.0**. If the value is less than or equal to 0, no decoration line is drawn.
+Scale factor for the thickness of the decoration line. The value is a floating point number. The default value is
+**1.0**. If the value is less than or equal to 0, no decoration line is drawn.
 
 **Type:** number
 

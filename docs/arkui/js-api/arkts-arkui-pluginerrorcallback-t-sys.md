@@ -4,7 +4,8 @@
 declare type PluginErrorCallback = (info: PluginErrorData) => void
 ```
 
-Callback invoked when an error occurs. AnonyMous Object Rectification
+Callback invoked when an error occurs.
+AnonyMous Object Rectification
 
 **Since:** 18
 

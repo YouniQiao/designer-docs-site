@@ -32,7 +32,11 @@ Custom data.
 isPopup: boolean
 ```
 
-Whether a dialog box is displayed for the auto-fill request. **true**: A dialog box is displayed **false**: A modal window is displayed
+Whether a dialog box is displayed for the auto-fill request.
+
+**true**: A dialog box is displayed
+
+**false**: A modal window is displayed
 
 **Type:** boolean
 

@@ -1,6 +1,7 @@
 # ContainerReaderAttribute
 
-Defines the ContainerReader attribute functions. Provides methods for configuring container reading parameters and breakpoint analysis properties.
+Defines the ContainerReader attribute functions.
+Provides methods for configuring container reading parameters and breakpoint analysis properties.
 
 **Inheritance/Implementation:** ContainerReaderAttribute extends [CommonMethod<ContainerReaderAttribute>](CommonMethod<ContainerReaderAttribute>)
 
@@ -11,7 +12,7 @@ Defines the ContainerReader attribute functions. Provides methods for configurin
 ## Modules to Import
 
 ```TypeScript
-import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@ohos.arkui.components.ContainerReader';
+import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@kit.ArkUI';
 ```
 
 ## breakpointConfig
@@ -20,7 +21,8 @@ import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@o
 breakpointConfig(value?: BreakpointOptions): ContainerReaderAttribute
 ```
 
-Sets the breakpoint configuration for container dimension analysis. Defines a set of threshold values that trigger different layout behaviors based on container size.
+Sets the breakpoint configuration for container dimension analysis.
+Defines a set of threshold values that trigger different layout behaviors based on container size.
 
 **Since:** 26.0.0
 

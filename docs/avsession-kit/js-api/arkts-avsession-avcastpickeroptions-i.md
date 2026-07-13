@@ -26,22 +26,6 @@ Set the popup menu position if pickerstyple is set to STYLE_MENU.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
-## sessionType
-
-```TypeScript
-sessionType?: AVSessionType
-```
-
-Indicates current session type to show different picker ui. If not set, default value is 'audio'.
-
-**Type:** AVSessionType
-
-**Since:** 14
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
 ## pickerStyle
 
 ```TypeScript
@@ -53,6 +37,23 @@ Set the picker style.
 **Type:** AVCastPickerStyle
 
 **Since:** 22
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+## sessionType
+
+```TypeScript
+sessionType?: AVSessionType
+```
+
+Indicates current session type to show different picker ui.
+If not set, default value is 'audio'.
+
+**Type:** AVSessionType
+
+**Since:** 14
+
+**Atomic service API:** This API can be used in atomic services since API version 14.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

@@ -1,6 +1,15 @@
 # RoundRect
 
-Rounded rectangle. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
+Rounded rectangle.
+
+> **NOTE**
+>
+> - The initial APIs of this class are supported since API version 12.
+>
+> - This module uses the physical pixel unit, px.
+>
+> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
+> transitions.
 
 **Since:** 12
 
@@ -9,7 +18,7 @@ Rounded rectangle. > **NOTE** > > - The initial APIs of this class are supported
 ## Modules to Import
 
 ```TypeScript
-import { drawing } from '@ohos.graphics.drawing';
+import { drawing } from '@kit.ArkGraphics2D';
 ```
 
 ## constructor
@@ -36,7 +45,8 @@ Copies a rounded rectangle.
 constructor(rect: common2D.Rect, xRadii: number, yRadii: number)
 ```
 
-A constructor used to create a **RoundRect** object. A rounded rectangle is created when both **xRadii** and **yRadii** are greater than 0. Otherwise, only a rectangle is created.
+A constructor used to create a **RoundRect** object. A rounded rectangle is created when both **xRadii** and
+**yRadii** are greater than 0. Otherwise, only a rectangle is created.
 
 **Since:** 12
 

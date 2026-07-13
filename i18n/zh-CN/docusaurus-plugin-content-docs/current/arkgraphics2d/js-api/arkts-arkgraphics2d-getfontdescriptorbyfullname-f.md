@@ -6,7 +6,9 @@
 function getFontDescriptorByFullName(fullName: string, fontType: SystemFontType): Promise<FontDescriptor>
 ```
 
-根据字体名称和类型获取字体描述符，使用Promise异步回调。 字体描述符是描述字体特征的数据结构，包含字体外观和属性的详细信息。
+根据字体名称和类型获取字体描述符，使用Promise异步回调。
+
+字体描述符是描述字体特征的数据结构，包含字体外观和属性的详细信息。
 
 **起始版本：** 14
 
@@ -31,7 +33,7 @@ function getFontDescriptorByFullName(fullName: string, fontType: SystemFontType)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 
 **示例：**
 

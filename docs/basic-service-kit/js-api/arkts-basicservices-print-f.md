@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## print
@@ -12,7 +12,8 @@ import { print } from '@ohos.print';
 function print(files: Array<string>, callback: AsyncCallback<PrintTask>): void
 ```
 
-Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context.
+Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page,
+call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context.
 
 **Since:** 10
 
@@ -67,7 +68,8 @@ print.print([fileUri.getUriFromPath(filePath)], (err: BusinessError, printTask: 
 function print(files: Array<string>): Promise<PrintTask>
 ```
 
-Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context.
+Prints files. This API uses a promise to return the result. To start the system print preview page, call the
+[print](arkts-basicservices-print-f.md#print-4) API and pass in context.
 
 **Since:** 10
 
@@ -89,7 +91,7 @@ Prints files. This API uses a promise to return the result. To start the system 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md#printtask) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md) object. |
 
 **Error codes:**
 
@@ -212,7 +214,7 @@ Prints files. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md#printtask) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md) object. |
 
 **Error codes:**
 
@@ -278,7 +280,7 @@ Prints a file. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | jobName | string | Yes | Name of the file to print, for example, **test.pdf**. The printer uses the[onStartLayoutWrite](arkts-basicservices-printdocumentadapter-i.md#onstartlayoutwrite-1) API to send the **fd** of the emptyPDF file to the API caller. The API caller uses the new print attributes to update the file to print. |
-| printAdapter | PrintDocumentAdapter | Yes | [PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md#printdocumentadapter) APIinstance implemented by a third-party application. |
+| printAdapter | PrintDocumentAdapter | Yes | [PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md) APIinstance implemented by a third-party application. |
 | printAttributes | PrintAttributes | Yes | Print attributes. |
 | context | Context | Yes | UIAbilityContext used to start the system print UI. |
 
@@ -286,7 +288,7 @@ Prints a file. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md#printtask) object. |
+| Promise&lt;PrintTask&gt; | Promise used to return a [PrintTask](arkts-basicservices-printtask-i.md) object. |
 
 **Error codes:**
 

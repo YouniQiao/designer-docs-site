@@ -6,7 +6,8 @@
 function getStorage(path: string, callback: AsyncCallback<Storage>): void
 ```
 
-Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses an asynchronous callback to return the result.
+Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 6
 
@@ -28,7 +29,8 @@ Reads the specified file and loads its data to the **Storage** instance for data
 function getStorage(path: string): Promise<Storage>
 ```
 
-Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses a promise to return the result.
+Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses a
+promise to return the result.
 
 **Since:** 6
 

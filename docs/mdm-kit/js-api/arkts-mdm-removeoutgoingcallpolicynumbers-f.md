@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { telephonyManager } from '@ohos.enterprise.telephonyManager';
+import { telephonyManager } from '@kit.MDMKit';
 ```
 
 ## removeOutgoingCallPolicyNumbers
@@ -12,7 +12,16 @@ import { telephonyManager } from '@ohos.enterprise.telephonyManager';
 function removeOutgoingCallPolicyNumbers(admin: Want, policy: adminManager.Policy, numbers: Array<string>): void
 ```
 
-Removes the trustlist or blocklist for outgoing calls. If the list is not set, the removal fails. A policy conflict is reported when this API is called in the following scenario: If the device's call capability has been disabled via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API, using this API to remove an outgoing call trustlist or blocklist will return error code 203. To resolve the conflict, disable the call restriction via the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.
+Removes the trustlist or blocklist for outgoing calls. If the list is not set, the removal fails.
+
+A policy conflict is reported when this API is called in the following scenario:
+
+If the device's call capability has been disabled via the
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+API, using this API to remove an outgoing call trustlist or blocklist will return error code 203. To resolve the
+conflict, disable the call restriction via the
+[setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1)
+API.
 
 **Since:** 20
 

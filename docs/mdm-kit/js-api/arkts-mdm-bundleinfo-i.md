@@ -9,7 +9,7 @@ Describes the application bundle information.
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## appIndex
@@ -50,7 +50,9 @@ Application information.
 readonly firstInstallTime?: number
 ```
 
-Timestamp for the initial installation of the application bundle. It measures the milliseconds elapsed since the Unix epoch (January 1, 1970, 08:00:00 UTC+8). For preinstalled applications, the initial installation timestamp is 1533657660000.
+Timestamp for the initial installation of the application bundle. It measures the milliseconds elapsed since the
+Unix epoch (January 1, 1970, 08:00:00 UTC+8). For preinstalled applications, the initial installation timestamp
+is 1533657660000.
 
 **Type:** number
 
@@ -66,7 +68,8 @@ Timestamp for the initial installation of the application bundle. It measures th
 readonly installTime: number
 ```
 
-Timestamp for the installation of the application bundle. It measures the milliseconds elapsed since the Unix epoch (January 1, 1970, 08:00:00 UTC+8).
+Timestamp for the installation of the application bundle. It measures the milliseconds elapsed since the Unix
+epoch (January 1, 1970, 08:00:00 UTC+8).
 
 **Type:** number
 
@@ -82,7 +85,8 @@ Timestamp for the installation of the application bundle. It measures the millis
 readonly minCompatibleVersionCode: number
 ```
 
-Minimum compatible version of the application bundle in the distributed scenario. It corresponds to the **minCompatibleVersionCode** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Minimum compatible version of the application bundle in the distributed scenario. It corresponds to the
+**minCompatibleVersionCode** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -98,7 +102,8 @@ Minimum compatible version of the application bundle in the distributed scenario
 readonly name: string
 ```
 
-Name of the application bundle. It corresponds to the **bundleName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Name of the application bundle. It corresponds to the **bundleName** field in the
+[app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** string
 
@@ -130,7 +135,8 @@ Signature information of the bundle.
 readonly targetVersion: number
 ```
 
-Target version of the application. It corresponds to the **targetAPIVersion** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Target version of the application. It corresponds to the **targetAPIVersion** field in the
+[app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -146,7 +152,8 @@ Target version of the application. It corresponds to the **targetAPIVersion** fi
 readonly updateTime: number
 ```
 
-Timestamp for the last update of the application bundle. It measures the milliseconds elapsed since the Unix epoch (January 1, 1970, 08:00:00 UTC+8).
+Timestamp for the last update of the application bundle. It measures the milliseconds elapsed since the Unix
+epoch (January 1, 1970, 08:00:00 UTC+8).
 
 **Type:** number
 
@@ -162,7 +169,8 @@ Timestamp for the last update of the application bundle. It measures the millise
 readonly vendor: string
 ```
 
-Vendor of the application bundle. It corresponds to the **vendor** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Vendor of the application bundle. It corresponds to the **vendor** field in the
+[app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** string
 
@@ -178,7 +186,8 @@ Vendor of the application bundle. It corresponds to the **vendor** field in the 
 readonly versionCode: number
 ```
 
-Version code of the application bundle. It corresponds to the **versionCode** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Version code of the application bundle. It corresponds to the **versionCode** field in the
+[app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** number
 
@@ -194,7 +203,8 @@ Version code of the application bundle. It corresponds to the **versionCode** fi
 readonly versionName: string
 ```
 
-Version description of the application bundle. It corresponds to the **versionName** field in the [app.json5](../../../../quick-start/app-configuration-file.md) file.
+Version description of the application bundle. It corresponds to the **versionName** field in the
+[app.json5](../../../../quick-start/app-configuration-file.md) file.
 
 **Type:** string
 

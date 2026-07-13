@@ -1,8 +1,12 @@
 # ListScroller
 
-List组件的滚动控制器，通过它控制List组件的滚动，仅支持一对一绑定到List组件。 > **说明：** > > ListScroller继承自[Scroller](arkts-arkui-scroller-c.md#scroller)，具有[Scroller](arkts-arkui-scroller-c.md#scroller)的全部方法。
+List组件的滚动控制器，通过它控制List组件的滚动，仅支持一对一绑定到List组件。
 
-**继承/实现关系：** ListScroller extends [Scroller](arkts-arkui-scroller-c.md#scroller)
+> **说明：**
+>
+> ListScroller继承自[Scroller](arkts-arkui-scroller-c.md)，具有[Scroller](arkts-arkui-scroller-c.md)的全部方法。
+
+**继承/实现关系：** ListScroller extends [Scroller](arkts-arkui-scroller-c.md)
 
 **起始版本：** 11
 
@@ -14,7 +18,7 @@ List组件的滚动控制器，通过它控制List组件的滚动，仅支持一
 closeAllSwipeActions(options?: CloseSwipeActionOptions): void
 ```
 
-将[EXPANDED](arkts-arkui-swipeactionstate-e.md#swipeactionstate)状态的[ListItem](arkts-arkui-listitem.md)收起，并设置回调事件。
+将[EXPANDED](arkts-arkui-swipeactionstate-e.md)状态的[ListItem](arkts-arkui-listitem.md)收起，并设置回调事件。
 
 **起始版本：** 11
 
@@ -28,13 +32,13 @@ closeAllSwipeActions(options?: CloseSwipeActionOptions): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | CloseSwipeActionOptions | 否 | 收起[EXPANDED](arkts-arkui-swipeactionstate-e.md#swipeactionstate)状态的[ListItem](arkts-arkui-listitem.md)的回调事件集合。 |
+| options | CloseSwipeActionOptions | 否 | 收起[EXPANDED](arkts-arkui-swipeactionstate-e.md)状态的[ListItem](arkts-arkui-listitem.md)的回调事件集合。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-命名路由页面跳转时输入的name错误) | Controller not bound to a component. |
 
 ## getItemRectInGroup
@@ -44,6 +48,13 @@ getItemRectInGroup(index: number, indexInGroup: number): RectResult
 ```
 
 获取[ListItemGroup](arkts-arkui-listitemgroup.md)中的[ListItem](arkts-arkui-listitem.md)的大小和相对于List的位置。
+
+> **说明：**
+>
+> - index必须是当前显示区域显示的子组件的索引值，否则视index为非法值。
+> - 索引值为index的子组件必须是ListItemGroup，否则视index为非法值。
+> - indexInGroup必须是当前显示区域内ListItemGroup中显示的ListItem的索引值，否则视indexInGroup为非法值。
+> - index或者indexInGroup为非法值时返回的大小和位置均为0。
 
 **起始版本：** 11
 
@@ -70,7 +81,7 @@ getItemRectInGroup(index: number, indexInGroup: number): RectResult
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-命名路由页面跳转时输入的name错误) | Controller not bound to a component. |
 
 ## getVisibleListContentInfo
@@ -106,7 +117,7 @@ getVisibleListContentInfo(x: number, y: number): VisibleListContentInfo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-命名路由页面跳转时输入的name错误) | Controller not bound to a component. |
 
 ## scrollToItemInGroup
@@ -138,6 +149,6 @@ scrollToItemInGroup(index: number, indexInGroup:number, smooth?: boolean, align?
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-命名路由页面跳转时输入的name错误) | Controller not bound to a component. |
 

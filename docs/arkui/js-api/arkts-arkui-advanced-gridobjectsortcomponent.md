@@ -3,21 +3,27 @@
 ## Modules to Import
 
 ```TypeScript
-import { GridObjectSortComponentType,GridObjectSortComponentOptions,GridObjectSortComponent,GridObjectSortComponentItem } from '@kit.ArkUI';
+import { GridObjectSortComponentType, GridObjectSortComponentOptions, GridObjectSortComponent, GridObjectSortComponentItem } from '@kit.ArkUI';
 ```
 
 ## Summary
+
+### Structs
+
+| Name | Description |
+| --- | --- |
+| [GridObjectSortComponent](arkts-arkui-gridobjectsortcomponent-s.md) | Declare struct GridObjectSortComponent. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [GridObjectSortComponentItem](arkts-gridobjectsortcomponentitem-i.md) | Declaration of the GridObjectSortComponent item. |
-| [GridObjectSortComponentOptions](arkts-gridobjectsortcomponentoptions-i.md) | GridObjectSortComponentOptions of GridObjectSortComponent. |
+| [GridObjectSortComponentItem](arkts-arkui-gridobjectsortcomponentitem-i.md) | Declaration of the GridObjectSortComponent item. |
+| [GridObjectSortComponentOptions](arkts-arkui-gridobjectsortcomponentoptions-i.md) | GridObjectSortComponentOptions of GridObjectSortComponent. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [GridObjectSortComponentType](arkts-gridobjectsortcomponenttype-e.md) | Controls the style types of GridObjectSortComponent. |
+| [GridObjectSortComponentType](arkts-arkui-gridobjectsortcomponenttype-e.md) | Controls the style types of GridObjectSortComponent. |
 

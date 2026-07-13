@@ -1,8 +1,8 @@
 # AlertDialogParamWithButtons
 
-Inherited from [AlertDialogParam](arkts-arkui-alertdialogparam-i.md#alertdialogparam).
+Inherited from [AlertDialogParam](arkts-arkui-alertdialogparam-i.md).
 
-**Inheritance/Implementation:** AlertDialogParamWithButtons extends [AlertDialogParam](arkts-arkui-alertdialogparam-i.md#alertdialogparam)
+**Inheritance/Implementation:** AlertDialogParamWithButtons extends [AlertDialogParam](arkts-arkui-alertdialogparam-i.md)
 
 **Since:** 7
 
@@ -14,7 +14,12 @@ Inherited from [AlertDialogParam](arkts-arkui-alertdialogparam-i.md#alertdialogp
 primaryButton: AlertDialogButtonBaseOptions
 ```
 
-Information about the primary button, including the enabling status, default focus, button style, text content, text color, button background color, and click callback. When the dialog box has focus and focus has not been shifted using the **Tab** key, the button responds to the **Enter** key by default, and multiple dialog boxes can gain focus consecutively to respond automatically. The default response to the **Enter** key does not work when **defaultFocus** is set to **true**. For details, see [Example 7](../../../../reference/apis-arkui/arkui-ts/ts-methods-alert-dialog-box.md#example-7-customizing-the-background-blur-effect).
+Information about the primary button, including the enabling status, default focus, button style, text content,
+text color, button background color, and click callback. When the dialog box has focus and focus has not been
+shifted using the **Tab** key, the button responds to the **Enter** key by default, and multiple dialog boxes can
+gain focus consecutively to respond automatically. The default response to the **Enter** key does not work when
+**defaultFocus** is set to **true**. For details, see
+[Example 7](../../../../reference/apis-arkui/arkui-ts/ts-methods-alert-dialog-box.md#example-7-customizing-the-background-blur-effect).
 
 **Type:** AlertDialogButtonBaseOptions
 
@@ -30,7 +35,8 @@ Information about the primary button, including the enabling status, default foc
 secondaryButton: AlertDialogButtonBaseOptions
 ```
 
-Information about the secondary button, including the enabling status, default focus, button style, text content, text color, button background color, and click callback.
+Information about the secondary button, including the enabling status, default focus, button style, text content,
+text color, button background color, and click callback.
 
 **Type:** AlertDialogButtonBaseOptions
 

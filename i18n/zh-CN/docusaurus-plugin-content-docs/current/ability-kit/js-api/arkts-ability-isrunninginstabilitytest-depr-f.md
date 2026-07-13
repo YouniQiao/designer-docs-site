@@ -6,7 +6,11 @@
 function isRunningInStabilityTest(callback: AsyncCallback<boolean>): void
 ```
 
-查询当前系统是否处于稳定性测试场景。使用callback异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
+查询当前系统是否处于稳定性测试场景。使用callback异步回调。
+
+> **说明：**
+>
+> 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
 
 **起始版本：** 8
 
@@ -44,7 +48,11 @@ appManager.isRunningInStabilityTest((error, flag) => {
 function isRunningInStabilityTest(): Promise<boolean>
 ```
 
-查询当前系统是否处于稳定性测试场景。使用Promise异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
+查询当前系统是否处于稳定性测试场景。使用Promise异步回调。
+
+> **说明：**
+>
+> 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。
 
 **起始版本：** 8
 

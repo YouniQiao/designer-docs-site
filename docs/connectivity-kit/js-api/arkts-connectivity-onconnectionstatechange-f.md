@@ -6,11 +6,13 @@
 function onConnectionStateChange(callback: Callback<ConnectionStateParam>): void
 ```
 
-Subscribes to NearLink connection state change events. If the user is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to NearLink connection state change events.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -26,7 +28,6 @@ Subscribes to NearLink connection state change events. If the user is granted th
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the chip does not support it. |
 | 36100099 | Operation failed. |
 

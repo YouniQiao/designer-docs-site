@@ -1,16 +1,10 @@
 # SystemRecordControllerConfig
 
-Defines the configuration for the system recording controller panel.
+定义系统录像控制器面板配置。
 
 **起始版本：** 26.0.0
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## sourceType
 
@@ -18,7 +12,11 @@ import { audio } from '@kit.AudioKit';
 sourceType: SourceType
 ```
 
-The system uses this to determine the recording scenario of the application according to the SourceType that the application expects to use for streaming, and provides users with the ability to select matching noise reduction modes. The supported source types include {@link SourceType#SOURCE_TYPE_MIC}, {@link SourceType#SOURCE_TYPE_CAMCORDER}, and {@link SourceType#SOURCE_TYPE_LIVE}.
+系统使用它来确定应用程序的录制场景，根据
+应用程序期望用于流式传输的源类型，并为用户提供
+选择匹配降噪模式的能力。支持的源类型包括
+{@link SourceType#Source_TYPE_MIC},{@link SourceType#Source_TYPE_CAMCORDER}，以及
+{@link SourceType#Source_TYPE_LIVE}。
 
 **类型：** SourceType
 

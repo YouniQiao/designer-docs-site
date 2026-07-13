@@ -6,7 +6,8 @@
 function print(files: Array<string>, callback: AsyncCallback<PrintTask>): void
 ```
 
-打印接口，传入文件进行打印，使用callback异步回调。拉起系统打印预览界面，需要使用[print](arkts-basicservices-print-f.md#print-4)接口，传入 context。
+打印接口，传入文件进行打印，使用callback异步回调。拉起系统打印预览界面，需要使用[print](arkts-basicservices-print-f.md#print-4)接口，传入
+context。
 
 **起始版本：** 10
 
@@ -26,7 +27,7 @@ function print(files: Array<string>, callback: AsyncCallback<PrintTask>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application does not have permission to call this function. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 **示例：**
 
@@ -57,7 +58,8 @@ print.print([fileUri.getUriFromPath(filePath)], (err: BusinessError, printTask: 
 function print(files: Array<string>): Promise<PrintTask>
 ```
 
-打印接口，传入文件进行打印，使用Promise异步回调。拉起系统打印预览界面，需要使用[print](arkts-basicservices-print-f.md#print-4)接口，传入 context。
+打印接口，传入文件进行打印，使用Promise异步回调。拉起系统打印预览界面，需要使用[print](arkts-basicservices-print-f.md#print-4)接口，传入
+context。
 
 **起始版本：** 10
 
@@ -75,14 +77,14 @@ function print(files: Array<string>): Promise<PrintTask>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md#printtask)。 |
+| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md)。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application does not have permission to call this function. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 **示例：**
 
@@ -132,7 +134,7 @@ function print(files: Array<string>, context: Context, callback: AsyncCallback<P
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application does not have permission to call this function. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 **示例：**
 
@@ -198,14 +200,14 @@ function print(files: Array<string>, context: Context): Promise<PrintTask>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md#printtask)。 |
+| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md)。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application does not have permission to call this function. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 **示例：**
 
@@ -264,7 +266,7 @@ function print(jobName: string, printAdapter: PrintDocumentAdapter, printAttribu
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | jobName | string | 是 | 表示待打印文件名称，例如：test.pdf。当前仅支持".pdf"文件类型。打印侧会通过[onStartLayoutWrite](arkts-basicservices-printdocumentadapter-i.md#onstartlayoutwrite-1)接口将空的pdf文件的fd传给接口调用方，由调用方使用新的打印参数更新待打印文件。 |
-| printAdapter | PrintDocumentAdapter | 是 | 表示三方应用实现的[PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md#printdocumentadapter)接口实例。 |
+| printAdapter | PrintDocumentAdapter | 是 | 表示三方应用实现的[PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md)接口实例。 |
 | printAttributes | PrintAttributes | 是 | 表示打印参数。 |
 | context | Context | 是 | 用于拉起系统打印界面的UIAbilityContext。 |
 
@@ -272,14 +274,14 @@ function print(jobName: string, printAdapter: PrintDocumentAdapter, printAttribu
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md#printtask)。 |
+| Promise&lt;PrintTask&gt; | Promise对象，返回[PrintTask](arkts-basicservices-printtask-i.md)。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | the application does not have permission to call this function. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 
 **示例：**
 

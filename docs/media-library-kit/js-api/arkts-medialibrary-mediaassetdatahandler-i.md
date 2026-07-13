@@ -9,7 +9,7 @@ Media asset handler, which can be used to customize the media asset processing l
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## onDataPrepared

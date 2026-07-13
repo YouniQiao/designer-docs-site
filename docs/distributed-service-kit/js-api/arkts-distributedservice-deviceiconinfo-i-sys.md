@@ -11,7 +11,7 @@ Defines the device icon information.
 ## Modules to Import
 
 ```TypeScript
-import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
+import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## icon
@@ -84,7 +84,10 @@ Product ID.
 specName: string
 ```
 
-Image specification name. Value: - **lg**: large image (size: 1016064 pixels) - **sm**: small image (size: 65536 pixels)
+Image specification name. Value:
+
+- **lg**: large image (size: 1016064 pixels)
+- **sm**: small image (size: 65536 pixels)
 
 **Type:** string
 

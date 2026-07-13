@@ -9,7 +9,7 @@ Represents the details about a system update package.
 ## Modules to Import
 
 ```TypeScript
-import { systemManager } from '@ohos.enterprise.systemManager';
+import { systemManager } from '@kit.MDMKit';
 ```
 
 ## fd
@@ -18,7 +18,8 @@ import { systemManager } from '@ohos.enterprise.systemManager';
 fd?: number
 ```
 
-File descriptor (FD) of the system update package. Currently, you cannot pass in **path** only. The **fd** parameter must also be passed in.
+File descriptor (FD) of the system update package. Currently, you cannot pass in **path** only. The **fd**
+parameter must also be passed in.
 
 **Type:** number
 

@@ -1,6 +1,8 @@
 # Queue
 
-Queue follows the principle of First In First Out (FIFO). It supports insertion of elements at the end and removal from the front of the queue. Queue is implemented based on the queue data structure.
+Queue follows the principle of First In First Out (FIFO).
+It supports insertion of elements at the end and removal from the front of the queue.
+Queue is implemented based on the queue data structure.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ Queue follows the principle of First In First Out (FIFO). It supports insertion 
 ## Modules to Import
 
 ```TypeScript
-import { Queue } from '@ohos.util.Queue';
+import { Queue } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -217,7 +219,7 @@ Obtains the first element of this Queue.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -257,7 +259,7 @@ Removes the first element from this Queue.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The pop method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

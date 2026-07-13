@@ -11,7 +11,7 @@ Represents the cloud service information.
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## enableCloud
@@ -20,7 +20,8 @@ import { cloudExtension } from '@ohos.data.cloudExtension';
 enableCloud: boolean
 ```
 
-Whether the cloud service is enabled. The value true means that the cloud service is enabled, and the value false means the opposite.
+Whether the cloud service is enabled. The value true means that the cloud service is enabled,
+and the value false means the opposite.
 
 **Type:** boolean
 

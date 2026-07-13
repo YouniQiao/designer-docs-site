@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## init
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function init(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksHandle>): void
 ```
 
-Initializes a session for a key operation. This API uses an asynchronous callback to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Initializes a session for a key operation. This API uses an asynchronous callback to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 
@@ -37,7 +39,9 @@ Initializes a session for a key operation. This API uses an asynchronous callbac
 function init(keyAlias: string, options: HuksOptions): Promise<HuksHandle>
 ```
 
-Initializes a session for a key operation. This API uses a promise to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Initializes a session for a key operation. This API uses a promise to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 

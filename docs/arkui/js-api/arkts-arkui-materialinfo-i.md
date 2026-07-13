@@ -9,7 +9,7 @@ Provides material configuration information, including the material enabling sta
 ## Modules to Import
 
 ```TypeScript
-import { uiMaterial } from '@ohos.arkui.uiMaterial';
+import { uiMaterial } from '@kit.ArkUI';
 ```
 
 ## state
@@ -38,7 +38,8 @@ Material enabling state.
 type: MaterialType
 ```
 
-Material type ID, indicating the material type corresponding to the current configuration. The value is used only for type identification and does not map to underlying features.
+Material type ID, indicating the material type corresponding to the current configuration. The value is used only
+for type identification and does not map to underlying features.
 
 **Type:** MaterialType
 

@@ -9,7 +9,7 @@ Describes the immersive effect.
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## gradientHeight
@@ -32,7 +32,8 @@ Gradient height, which cannot exceed 15% of the screen height.
 gradientMode: GradientMode
 ```
 
-Gradient mode. If this attribute is not specified or is set to an invalid value, the gradient mode is not used by default.
+Gradient mode. If this attribute is not specified or is set to an invalid value, the gradient mode is not used by
+default.
 
 **Type:** GradientMode
 

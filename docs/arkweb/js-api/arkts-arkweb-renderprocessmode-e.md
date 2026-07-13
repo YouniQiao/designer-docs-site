@@ -12,7 +12,8 @@ Enumerates the ArkWeb render subprocess modes.
 SINGLE = 0
 ```
 
-ArkWeb single render subprocess mode. In this mode, multiple **Web** components share one render subprocess.
+ArkWeb single render subprocess mode. In this mode, multiple **Web** components share one
+render subprocess.
 
 **Since:** 12
 
@@ -26,7 +27,8 @@ ArkWeb single render subprocess mode. In this mode, multiple **Web** components 
 MULTIPLE = 1
 ```
 
-ArkWeb multi-render subprocess mode. In this mode, each **Web** component has a rendering subprocess.
+ArkWeb multi-render subprocess mode. In this mode, each **Web** component has a rendering
+subprocess.
 
 **Since:** 12
 

@@ -1,8 +1,10 @@
 # SystemDefinedPixelMap
 
-Represents the image data type corresponding to [PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md#image) defined by the system. It is a child class of [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md#systemdefinedrecord) and holds only binary data of **PixelMap**.
+Represents the image data type corresponding to [PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) defined by the
+system. It is a child class of [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md) and holds only
+binary data of **PixelMap**.
 
-**Inheritance/Implementation:** SystemDefinedPixelMap extends [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md#systemdefinedrecord)
+**Inheritance/Implementation:** SystemDefinedPixelMap extends [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md)
 
 **Since:** 10
 
@@ -11,7 +13,7 @@ Represents the image data type corresponding to [PixelMap](../../apis-image-kit/
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## rawData

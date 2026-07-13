@@ -1,8 +1,4 @@
-# RenderTarget
-
-```TypeScript
-enum RenderTarget
-```
+# RenderTarget (System API)
 
 Audio render target.
 
@@ -18,7 +14,8 @@ Audio render target.
 PLAYBACK = 0
 ```
 
-Playback. Under this target, the audio renderer will be played out. This is the default target of audio renderer.
+Playback. Under this target, the audio renderer will be played out. This is the default
+target of audio renderer.
 
 **Since:** 22
 
@@ -32,7 +29,9 @@ Playback. Under this target, the audio renderer will be played out. This is the 
 INJECT_TO_VOICE_COMMUNICATION_CAPTURE = 1
 ```
 
-Inject to voice communication capture. Under this target, the audio renderer will be injected to audio capture with source type of {@link SourceType#SOURCE_TYPE_VOICE_COMMUNICATION} when the audio scene is {@link AudioScene#AUDIO_SCENE_VOICE_CHAT}.
+Inject to voice communication capture. Under this target, the audio renderer will be injected
+to audio capture with source type of {@link SourceType#SOURCE_TYPE_VOICE_COMMUNICATION} when the
+audio scene is {@link AudioScene#AUDIO_SCENE_VOICE_CHAT}.
 
 **Since:** 22
 

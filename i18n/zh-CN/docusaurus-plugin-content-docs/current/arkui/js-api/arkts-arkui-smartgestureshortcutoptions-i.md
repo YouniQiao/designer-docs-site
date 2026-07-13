@@ -12,7 +12,9 @@
 action?: GestureShortcut
 ```
 
-智慧手势响应优先级。当前仅支持GestureShortcut.PRIMARY。 当未显式传入该参数或参数异常时，会清空当前组件的智慧手势响应行为配置。
+智慧手势响应优先级。当前仅支持GestureShortcut.PRIMARY。
+
+当未显式传入该参数或参数异常时，会清空当前组件的智慧手势响应行为配置。
 
 **类型：** GestureShortcut
 
@@ -30,7 +32,11 @@ action?: GestureShortcut
 enabled?: boolean
 ```
 
-当前组件是否响应智慧手势。 true表示组件响应智慧手势，false表示组件不响应智慧手势。 默认值为false。
+当前组件是否响应智慧手势。
+
+true表示组件响应智慧手势，false表示组件不响应智慧手势。
+
+默认值为false。
 
 **类型：** boolean
 
@@ -48,7 +54,11 @@ enabled?: boolean
 selectable?: boolean
 ```
 
-组件被智慧手势操作选中后是否展示并保留选中态。 true表示显示选中框，false表示不显示选中框。 当enabled为true时，默认值为true；当enabled为false时，默认值为false。
+组件被智慧手势操作选中后是否展示并保留选中态。
+
+true表示显示选中框，false表示不显示选中框。
+
+当enabled为true时，默认值为true；当enabled为false时，默认值为false。
 
 **类型：** boolean
 

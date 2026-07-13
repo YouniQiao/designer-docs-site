@@ -1,6 +1,9 @@
 # PermissionActiveStatus (System API)
 
-Enum for permission for status.
+Enumerates the types of permission usage status changes. It is used to describe the change type of permission
+usage status, returned in the callback of subscribing to permission usage status change events (via
+[on('activeStateChange')](privacyManager.on)), helping system applications sense the status switch of a
+permission from unused to foreground use and background use.
 
 **Since:** 9
 
@@ -14,7 +17,7 @@ Enum for permission for status.
 PERM_INACTIVE = 0
 ```
 
-permission is not used yet.
+The permission is not used.
 
 **Since:** 9
 
@@ -28,7 +31,7 @@ permission is not used yet.
 PERM_ACTIVE_IN_FOREGROUND = 1
 ```
 
-permission is used in front_end.
+The permission is being used by an application running in the foreground.
 
 **Since:** 9
 
@@ -42,7 +45,7 @@ permission is used in front_end.
 PERM_ACTIVE_IN_BACKGROUND = 2
 ```
 
-permission is used in back_end.
+The permission is being used by an application running in the background.
 
 **Since:** 9
 

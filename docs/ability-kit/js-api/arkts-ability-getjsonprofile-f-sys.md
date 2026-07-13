@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getJsonProfile
@@ -12,7 +12,10 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getJsonProfile(profileType: ProfileType, bundleName: string, moduleName?: string, userId?: number): string
 ```
 
-Obtains the JSON strings of the profile based on the given profile type, bundle name, and module name. This API returns the result synchronously. No permission is required for obtaining the caller's own profile.
+Obtains the JSON strings of the profile based on the given profile type, bundle name, and module name. This API
+returns the result synchronously.
+
+No permission is required for obtaining the caller's own profile.
 
 **Since:** 11
 
@@ -48,7 +51,7 @@ Obtains the JSON strings of the profile based on the given profile type, bundle 
 | [17700002](../errorcode-bundle.md#17700002-module-name-does-not-exist) | The specified moduleName is not found. |
 | [17700024](../errorcode-bundle.md#17700024-profile-does-not-exist) | Failed to get the profile because the specified profile is not found in theHAP. |
 | [17700026](../errorcode-bundle.md#17700026-bundle-disabled) | The specified bundle is disabled. |
-| [17700004](../errorcode-bundle.md#17700004-user-id-does-not-exist) | The specified user ID is not found.<br>**Applicable version:** 12 |
+| [17700004](../errorcode-bundle.md#17700004-user-id-does-not-exist) | The specified user ID is not found.<br>**Applicable version:** 12 and later |
 
 **Example**
 

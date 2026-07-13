@@ -54,7 +54,8 @@ Main VM instance.
 CUSTOM = 3
 ```
 
-VM instance created from the local code using [napi_create_ark_runtime](../../../../reference/native-lib/napi.md#napi_create_ark_runtime).
+VM instance created from the local code using
+[napi_create_ark_runtime](../../../../reference/native-lib/napi.md#napi_create_ark_runtime).
 
 **Since:** 18
 

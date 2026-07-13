@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## attachGroup
@@ -12,7 +12,9 @@ import { request } from '@ohos.request';
 function attachGroup(gid: string, tids: string[]): Promise<void>
 ```
 
-Attaches multiple download task IDs to a specified group ID. This API uses a promise to return the result. If any task ID does not meet the attachment conditions, all tasks in the list will not be added to the group.
+Attaches multiple download task IDs to a specified group ID. This API uses a promise to return the result.
+
+If any task ID does not meet the attachment conditions, all tasks in the list will not be added to the group.
 
 **Since:** 15
 

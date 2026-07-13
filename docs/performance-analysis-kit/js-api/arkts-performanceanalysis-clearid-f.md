@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiTraceChain } from '@ohos.hiTraceChain';
+import { hiTraceChain } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## clearId
@@ -12,7 +12,9 @@ import { hiTraceChain } from '@ohos.hiTraceChain';
 function clearId(): void
 ```
 
-Clears the trace ID. This API returns the result synchronously. Clears the HiTrace ID in the current thread's TLS.
+Clears the trace ID. This API returns the result synchronously.
+
+Clears the HiTrace ID in the current thread's TLS.
 
 **Since:** 8
 

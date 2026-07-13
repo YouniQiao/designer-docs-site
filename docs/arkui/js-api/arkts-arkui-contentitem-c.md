@@ -9,7 +9,7 @@ Declare ContentItem
 ## Modules to Import
 
 ```TypeScript
-import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, ContentItem, OperateButton } from '@ohos.arkui.advanced.ComposeListItem';
+import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, ContentItem, OperateButton } from '@kit.ArkUI';
 ```
 
 ## description

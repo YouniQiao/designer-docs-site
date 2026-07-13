@@ -1,6 +1,7 @@
 # IRemoteObject
 
-Provides methods to query of obtain interface descriptors, add or delete death notifications, dump object status to specific files, and send messages.
+Provides methods to query of obtain interface descriptors, add or delete death notifications, dump object status to
+specific files, and send messages.
 
 **Since:** 7
 
@@ -9,7 +10,7 @@ Provides methods to query of obtain interface descriptors, add or delete death n
 ## Modules to Import
 
 ```TypeScript
-import { rpc } from '@ohos.rpc';
+import { rpc } from '@kit.IPCKit';
 ```
 
 ## addDeathRecipient
@@ -230,7 +231,11 @@ sendMessageRequest(
     ): Promise<RequestResult>
 ```
 
-Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendMessageRequest** is returned, and the reply message contains the returned information.
+Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous
+mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The
+specific reply needs to be obtained from the callback on the service side. If synchronous mode is set
+in **options**, a promise will be fulfilled when the response to **sendMessageRequest** is returned, and the
+reply message contains the returned information.
 
 **Since:** 9
 
@@ -269,7 +274,11 @@ sendMessageRequest(
     ): void
 ```
 
-Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a callback will be called immediately, and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a callback will be invoked when the response to **sendRequest** is returned, and the reply message contains the returned information.
+Sends a **MessageSequence** message to the remote process in synchronous or asynchronous mode. If asynchronous
+mode is set in **options**, a callback will be called immediately, and the reply message is empty. The
+specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in
+**options**, a callback will be invoked when the response to **sendRequest** is returned, and the reply
+message contains the returned information.
 
 **Since:** 9
 
@@ -297,7 +306,10 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message does not contain any content. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
+is set in **options**, a promise will be fulfilled immediately and the reply message does not contain any
+content. If synchronous mode is set in **options**, a promise will be fulfilled when the response to
+**sendRequest** is returned, and the reply message contains the returned information.
 
 **Since:** 7
 
@@ -333,7 +345,11 @@ sendRequest(
     ): Promise<SendRequestResult>
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
+is set in **options**, a promise will be fulfilled immediately and the reply message is empty. The specific
+reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**,
+a promise will be fulfilled when the response to **sendRequest** is returned, and the reply message contains
+the returned information.
 
 **Since:** 8
 
@@ -370,7 +386,11 @@ sendRequest(
     ): void
 ```
 
-Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode is set in **options**, a callback will be called immediately, and the reply message is empty. The specific reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**, a callback will be invoked when the response to **sendRequest** is returned, and the reply message contains the returned information.
+Sends a **MessageParcel** message to the remote process in synchronous or asynchronous mode. If asynchronous mode
+is set in **options**, a callback will be called immediately, and the reply message is empty. The specific
+reply needs to be obtained from the callback on the service side. If synchronous mode is set in **options**,
+a callback will be invoked when the response to **sendRequest** is returned, and the reply message contains
+the returned information.
 
 **Since:** 8
 

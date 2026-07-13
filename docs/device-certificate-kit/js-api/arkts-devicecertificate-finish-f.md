@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## finish
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function finish(handle: Uint8Array, callback: AsyncCallback<CMResult>): void
 ```
 
-Finishes the signing operation. This is the last step in the signature process. The init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
+Finishes the signing operation. This is the last step in the signature process. The init and update interfaces need
+to be invoked first. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -25,7 +26,7 @@ Finishes the signing operation. This is the last step in the signature process. 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | handle | Uint8Array | Yes | Handle of initialization. You need to invoke the init method to obtain the handle. |
-| callback | AsyncCallback&lt;CMResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the signature, that is, **outData** of the[CMResult](arkts-devicecertificate-cmresult-i.md#cmresult) object. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;CMResult&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **null** and **data** is the signature, that is, **outData** of the[CMResult](arkts-devicecertificate-cmresult-i.md) object. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -70,7 +71,8 @@ try {
 function finish(handle: Uint8Array, signature: Uint8Array, callback: AsyncCallback<CMResult>): void
 ```
 
-Finishes the signature verification operation. This is the last step in the signature verification process. The init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
+Finishes the signature verification operation. This is the last step in the signature verification process. The
+init and update interfaces need to be invoked first. This API uses an asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -146,7 +148,7 @@ Finishes the signing or signature verification operation. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CMResult&gt; | Promise used to return the signature of a signing operation, that is, **outData** inthe [CMResult](arkts-devicecertificate-cmresult-i.md#cmresult) object. For a signature verification operation, the promisereturns no value. |
+| Promise&lt;CMResult&gt; | Promise used to return the signature of a signing operation, that is, **outData** inthe [CMResult](arkts-devicecertificate-cmresult-i.md) object. For a signature verification operation, the promisereturns no value. |
 
 **Error codes:**
 

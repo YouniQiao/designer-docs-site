@@ -12,7 +12,10 @@ Describes the style of the slider in the block direction.
 image?: ResourceStr
 ```
 
-Image resource of the slider. The area size for displaying the image is subject to the **blockSize** attribute. Be mindful of the image size when selecting an image.
+Image resource of the slider.
+
+The area size for displaying the image is subject to the **blockSize** attribute. Be mindful of the image size
+when selecting an image.
 
 **Type:** ResourceStr
 
@@ -48,7 +51,9 @@ Custom shape of the slider.
 type: SliderBlockType
 ```
 
-Type of the slider in the block direction. Default value: **SliderBlockType.DEFAULT**, indicating the round slider.
+Type of the slider in the block direction.
+
+Default value: **SliderBlockType.DEFAULT**, indicating the round slider.
 
 **Type:** SliderBlockType
 

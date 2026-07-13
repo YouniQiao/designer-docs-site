@@ -9,7 +9,7 @@ Provides the parameters used for initializing [OverlayManager](arkts-arkui-uicon
 ## Modules to Import
 
 ```TypeScript
-import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@ohos.arkui.UIContext';
+import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
 ## enableBackPressedEvent
@@ -18,7 +18,9 @@ import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChange
 enableBackPressedEvent?: boolean
 ```
 
-hether to enable the swipe-to-dismiss gesture for **ComponentContent** under **OverlayManager**. The value **true** means to enable the swipe-to-dismiss gesture, and **false** means the opposite. Default value: **false**.<br> **Atomic service API**: This API can be used in atomic services since API version 19.
+hether to enable the swipe-to-dismiss gesture for **ComponentContent** under **OverlayManager**.
+The value **true** means to enable the swipe-to-dismiss gesture, and **false** means the opposite. Default value: **false**.<br>
+**Atomic service API**: This API can be used in atomic services since API version 19.
 
 **Type:** boolean
 
@@ -38,7 +40,9 @@ hether to enable the swipe-to-dismiss gesture for **ComponentContent** under **O
 renderRootOverlay?: boolean
 ```
 
-Whether to render the overlay root node. The value **true** means to render the overlay root node, and **false** means the opposite. The default value is **true**.<br> **Atomic service API**: This API can be used in atomic services since API version 15.
+Whether to render the overlay root node. The value **true** means to render the overlay root node,
+and **false** means the opposite. The default value is **true**.<br>
+**Atomic service API**: This API can be used in atomic services since API version 15.
 
 **Type:** boolean
 

@@ -14,7 +14,12 @@ Enumerates the ability flags, which indicate the type of ability information to 
 GET_ABILITY_INFO_DEFAULT = 0x00000000
 ```
 
-Used to obtain the default [ability information](bundleManager/AbilityInfo), which does not contain permissions, metadata, or ability information of disabled abilities. <!--Del-->You can use [setAbilityEnabled](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-2) to set the ability enabling status and use [isAbilityEnabled](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-3) to obtain the ability enabling status.<!--DelEnd-->
+Used to obtain the default [ability information](bundleManager/AbilityInfo), which does not contain
+permissions, metadata, or ability information of disabled abilities. <!--Del-->You can use
+[setAbilityEnabled](arkts-ability-setabilityenabled-f-sys.md#setabilityenabled-2)
+to set the ability enabling status and use
+[isAbilityEnabled](arkts-ability-isabilityenabled-f-sys.md#isabilityenabled-3) to obtain
+the ability enabling status.<!--DelEnd-->
 
 **Since:** 20
 
@@ -110,7 +115,8 @@ Used to obtain the ability information of system applications.
 GET_ABILITY_INFO_WITH_APP_LINKING = 0x00000040
 ```
 
-Used to obtain the ability information that passes <!--RP3--> [domain name verification](../../../../application-models/app-linking-startup.md#working-principles)<!--RP3End-->.
+Used to obtain the ability information that passes <!--RP3-->
+[domain name verification](../../../../application-models/app-linking-startup.md#working-principles)<!--RP3End-->.
 
 **Since:** 20
 

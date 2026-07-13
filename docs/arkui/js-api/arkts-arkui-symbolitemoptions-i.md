@@ -9,7 +9,7 @@ Suffix icon option type of ChipGroup.
 ## Modules to Import
 
 ```TypeScript
-import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@ohos.arkui.advanced.ChipGroup';
+import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@kit.ArkUI';
 ```
 
 ## accessibilityDescription
@@ -18,7 +18,15 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 accessibilityDescription?: ResourceStr
 ```
 
-Accessible description of the trailing symbol item. You can provide comprehensive text explanations to help users understand the operation they are about to perform and its potential consequences, especially when these cannot be inferred from the component's attributes and accessibility text alone. If a trailing symbol item contains both text information and the accessible description, the text is announced first and then the accessible description, when the trailing symbol item is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessible description of the trailing symbol item. You can provide comprehensive text explanations to help users
+understand the operation they are about to perform and its potential consequences, especially when these cannot be
+inferred from the component's attributes and accessibility text alone. If a trailing symbol item contains both text
+information and the accessible description, the text is announced first and then the accessible description, when
+the trailing symbol item is selected.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -36,7 +44,23 @@ Accessible description of the trailing symbol item. You can provide comprehensiv
 accessibilityLevel?: string
 ```
 
-Accessibility level of the trailing symbol item. It determines whether the trailing symbol item can be recognized by accessibility services. The options are as follows: **"auto"**: It is treated as "yes" by the system. **"yes"**: The trailing symbol item can be recognized by accessibility services. **"no"**: The trailing symbol item cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the trailing symbol item nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
+Accessibility level of the trailing symbol item. It determines whether the trailing symbol item can be recognized
+by accessibility services.
+
+The options are as follows:
+
+**"auto"**: It is treated as "yes" by the system.
+
+**"yes"**: The trailing symbol item can be recognized by accessibility services.
+
+**"no"**: The trailing symbol item cannot be recognized by accessibility services.
+
+**"no-hide-descendants"**: Neither the trailing symbol item nor its child components can be recognized by
+accessibility services.
+
+Default value: **"auto"**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -56,7 +80,15 @@ Accessibility level of the trailing symbol item. It determines whether the trail
 accessibilityText?: ResourceStr
 ```
 
-Accessibility text of the trailing symbol item. If a trailing symbol item does not contain text information, it will not be announced by the screen reader when selected. In this case, the screen reader user cannot know which item is selected. To solve this problem, you can set accessibility text for trailing symbol items without text information. When such a trailing symbol item is selected, the screen reader announces the specified accessibility text, informing the user which item is selected. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessibility text of the trailing symbol item. If a trailing symbol item does not contain text information, it
+will not be announced by the screen reader when selected. In this case, the screen reader user cannot know which
+item is selected. To solve this problem, you can set accessibility text for trailing symbol items without text
+information. When such a trailing symbol item is selected, the screen reader announces the specified accessibility
+text, informing the user which item is selected.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 

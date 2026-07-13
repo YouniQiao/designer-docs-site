@@ -6,11 +6,11 @@
 
 | Name | Description |
 | --- | --- |
-| [SkillInfo](arkts-skillinfo-i.md) | 提供Skill的相关信息。Skill是一个可安装的能力单位，可以被发现并由Agent框架调用。 |
+| [SkillInfo](arkts-ability-skillinfo-i.md) | Provides information about a skill.A skill is an independent functional unit that can be called by an agent application. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [SkillType](arkts-skilltype-e.md) | 枚举Skill类型。 |
+| [SkillType](arkts-ability-skilltype-e.md) | Enumerates the skill types. |
 

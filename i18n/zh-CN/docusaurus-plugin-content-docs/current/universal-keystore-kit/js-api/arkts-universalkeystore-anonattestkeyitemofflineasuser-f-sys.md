@@ -7,7 +7,14 @@ function anonAttestKeyItemOfflineAsUser(userId: number, keyAlias: string,
       params: HuksParam[]): Promise<HuksReturnResult>
 ```
 
-离线获取匿名证明证书。该接口使用promise返回结果。此操作不需要每次都需要网络连接， 比anonAttestKeyItemAsUser函数性能高。 > **说明** > > > -离线密钥证明依赖于网络。您需要定期连接网络才能使用此API更新离线证书。 > > > -离线匿名密钥证明要求本地时间准确。否则，可能导致对端无法正常工作。验证证书过期。
+离线获取匿名证明证书。该接口使用promise返回结果。此操作不需要每次都需要网络连接，
+比anonAttestKeyItemAsUser函数性能高。
+
+> **说明**
+> >
+> -离线密钥证明依赖于网络。您需要定期连接网络才能使用此API更新离线证书。
+> >
+> -离线匿名密钥证明要求本地时间准确。否则，可能导致对端无法正常工作。验证证书过期。
 
 **起始版本：** 26.0.0
 
@@ -39,7 +46,7 @@ function anonAttestKeyItemOfflineAsUser(userId: number, keyAlias: string,
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The app does not have sufficient permissions. Possible causes: Thecross-account permission is not granted, the system is not unlocked by the user, or the user does notexist. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system apps use system APIs. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | The API is not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | The API is not supported. |
 | [12000001](../errorcode-huks.md#12000001-该子功能不支持特性) | The function is not supported. Possible causes:1. The algorithm mode is not supported.2. The group key is not supported.3. The extended encryption key is not supported. |
 | [12000002](../errorcode-huks.md#12000002-缺少密钥算法参数) | The algorithm parameter is missing. |
 | [12000003](../errorcode-huks.md#12000003-无效的密钥算法参数) | The algorithm parameter is invalid. |

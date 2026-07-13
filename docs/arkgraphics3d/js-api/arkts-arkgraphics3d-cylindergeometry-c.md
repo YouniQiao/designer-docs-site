@@ -2,7 +2,7 @@
 
 Define a cylinder.
 
-**Inheritance/Implementation:** CylinderGeometry extends [GeometryDefinition](arkts-arkgraphics3d-geometrydefinition-c.md#geometrydefinition)
+**Inheritance/Implementation:** CylinderGeometry extends [GeometryDefinition](arkts-arkgraphics3d-geometrydefinition-c.md)
 
 **Since:** 23
 
@@ -42,7 +42,8 @@ The radius of the base of the cylinder, the unit is the scene unit in the world 
 set segmentCount(value: number)
 ```
 
-Use regular polygons to approximate the circular base of the cylinder, where segmentCount is the number of sides of the regular polygon used.
+Use regular polygons to approximate the circular base of the cylinder,
+where segmentCount is the number of sides of the regular polygon used.
 
 **Type:** number
 

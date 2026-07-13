@@ -1,6 +1,7 @@
 # USBConfiguration
 
-Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md#usbdevice) can contain multiple **USBConfig** instances.
+Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md) can contain multiple **USBConfig**
+instances.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## attributes
@@ -60,7 +61,8 @@ Supported interface attributes.
 isRemoteWakeup: boolean
 ```
 
-Whether remote wakeup is supported. The value **true** indicates that the remote wakeup is supported, and **false ** indicates the opposite.
+Whether remote wakeup is supported. The value **true** indicates that the remote wakeup is supported, and **false
+** indicates the opposite.
 
 **Type:** boolean
 
@@ -74,7 +76,8 @@ Whether remote wakeup is supported. The value **true** indicates that the remote
 isSelfPowered: boolean
 ```
 
-Whether an independent power supply is supported. The value **true** indicates that an independent power supply is supported, and **false** indicates the opposite.
+Whether an independent power supply is supported. The value **true** indicates that an independent power supply
+is supported, and **false** indicates the opposite.
 
 **Type:** boolean
 

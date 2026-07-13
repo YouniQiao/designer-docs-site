@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { uiMaterial } from '@ohos.arkui.uiMaterial';
+import { uiMaterial } from '@kit.ArkUI';
 ```
 
 ## getGlobalMaterialLevel
@@ -12,7 +12,8 @@ import { uiMaterial } from '@ohos.arkui.uiMaterial';
 function getGlobalMaterialLevel(): MaterialLevel
 ```
 
-Obtains the global material level, which is related to the device computing power. This configuration item is defined by the device and cannot be modified.
+Obtains the global material level, which is related to the device computing power. This configuration item
+is defined by the device and cannot be modified.
 
 **Since:** 26.0.0
 

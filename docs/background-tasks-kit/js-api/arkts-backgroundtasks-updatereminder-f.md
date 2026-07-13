@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { reminderAgentManager } from '@ohos.reminderAgentManager';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## updateReminder
@@ -12,7 +12,9 @@ import { reminderAgentManager } from '@ohos.reminderAgentManager';
 function updateReminder(reminderId: number, reminderReq: ReminderRequest): Promise<void>
 ```
 
-Updates the agent-powered reminder with the specified ID. This API uses a promise to return the result. Only [valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) that are not displayed in the notification panel can be updated.
+Updates the agent-powered reminder with the specified ID. This API uses a promise to return the result. Only
+[valid (not yet expired) reminders](../../../../task-management/agent-powered-reminder.md#constraints) that are not
+displayed in the notification panel can be updated.
 
 **Since:** 20
 

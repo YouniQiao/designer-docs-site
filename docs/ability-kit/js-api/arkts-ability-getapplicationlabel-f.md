@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getApplicationLabel
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getApplicationLabel(bundleName: string, appIndex: number): Promise<string>
 ```
 
-Obtains the label of a specified application.
+Obtains the name of an application with the specified package name and clone index.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -26,14 +27,14 @@ Obtains the label of a specified application.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Indicates the bundle name of the application. |
-| appIndex | number | Yes | Indicates the index of clone app. |
+| bundleName | string | Yes | Bundle name of the application. |
+| appIndex | number | Yes | Index of the application. The value ranges from 0 to 5.The value 0 indicates the main application, and the values 1 to 5 indicate the indexes of application clones. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns label of specified application. |
+| Promise&lt;string&gt; | Promise used to return the result. If the operation is successful, the applicationname is returned. Otherwise, an error object is returned. |
 
 **Error codes:**
 

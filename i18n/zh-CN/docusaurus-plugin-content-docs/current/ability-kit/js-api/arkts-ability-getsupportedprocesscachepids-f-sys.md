@@ -6,7 +6,11 @@
 function getSupportedProcessCachePids(bundleName : string): Promise<Array<number>>
 ```
 
-查询当前应用中支持缓存后快速启动的进程PID。使用Promise异步回调。 > **说明：** > > 本接口仅支持获取调用者所在系统账号下的进程PID。
+查询当前应用中支持缓存后快速启动的进程PID。使用Promise异步回调。
+
+> **说明：**
+>
+> 本接口仅支持获取调用者所在系统账号下的进程PID。
 
 **起始版本：** 14
 
@@ -36,8 +40,8 @@ function getSupportedProcessCachePids(bundleName : string): Promise<Array<number
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 **示例：**

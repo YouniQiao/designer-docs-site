@@ -1,6 +1,7 @@
 # NotificationSlot
 
-The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots.
+The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes
+vary according to notification slots.
 
 **Since:** 7
 
@@ -12,7 +13,10 @@ The **NotificationSlot** module provides APIs for defining the notification slot
 readonly authorizedStatus?: number
 ```
 
-Authorization status. - **0**: means the feature is authorized. - **1**: means the feature is to be authorized.
+Authorization status.
+
+- **0**: means the feature is authorized.
+- **1**: means the feature is to be authorized.
 
 **Type:** number
 
@@ -28,7 +32,15 @@ Authorization status. - **0**: means the feature is authorized. - **1**: means t
 readonly reminderMode?: number
 ```
 
-Reminder mode of the notification. - Bit 0: sound alert. The value **0** means to enable the feature, and **1** means the opposite. - Bit 1: locking the screen. The value **0** means to enable the feature, and **1** means the opposite. - Bit 2: banner. The value **0** means to enable the feature, and **1** means the opposite. - BIt 3: turning on the screen. The value **0** means to enable the feature, and **1** means the opposite. - Bit 4: vibration. The value **0** means to enable the feature, and **1** means the opposite. - Bit 5: notification icon in the status bar. The value **0** means to enable the feature, and **1** means the opposite.
+Reminder mode of the notification.
+
+- Bit 0: sound alert. The value **0** means to enable the feature, and **1** means the opposite.
+- Bit 1: locking the screen. The value **0** means to enable the feature, and **1** means the opposite.
+- Bit 2: banner. The value **0** means to enable the feature, and **1** means the opposite.
+- BIt 3: turning on the screen. The value **0** means to enable the feature, and **1** means the opposite.
+- Bit 4: vibration. The value **0** means to enable the feature, and **1** means the opposite.
+- Bit 5: notification icon in the status bar. The value **0** means to enable the feature, and **1** means the
+opposite.
 
 **Type:** number
 

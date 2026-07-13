@@ -1,9 +1,5 @@
 # PlaybackState
 
-```TypeScript
-enum PlaybackState
-```
-
 Definition of current playback state
 
 **Since:** 10
@@ -20,7 +16,7 @@ Initial state. The initial state of media file
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -30,11 +26,12 @@ Initial state. The initial state of media file
 PLAYBACK_STATE_PREPARE = 1
 ```
 
-Preparing state. Indicates that the media file is not ready to play, the media is loading or buffering
+Preparing state. Indicates that the media file is not ready to play,
+the media is loading or buffering
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -48,7 +45,7 @@ Playing state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -62,7 +59,7 @@ Paused state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -76,7 +73,7 @@ Fast forwarding state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -90,7 +87,7 @@ Rewinding state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -104,7 +101,7 @@ Stopped state.The server will clear the media playback position and other inform
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -118,7 +115,7 @@ Completed state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -132,7 +129,7 @@ Released state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -146,7 +143,7 @@ error state.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -160,7 +157,7 @@ Idle state.
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -174,7 +171,7 @@ Buffering state.
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

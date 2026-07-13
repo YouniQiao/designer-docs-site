@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundProcessManager } from '@ohos.resourceschedule.backgroundProcessManager';
+import { backgroundProcessManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## resetProcessPriority
@@ -12,7 +12,9 @@ import { backgroundProcessManager } from '@ohos.resourceschedule.backgroundProce
 function resetProcessPriority(pid: number): Promise<void>
 ```
 
-Unsuppresses the child process. In this case, the child process follows the scheduling policy of the main process. If the scheduling policy of the main process changes, for example, from the background to the foreground , the child process changes with the main process. The effect is the same as calling **resetProcessPriority**.
+Unsuppresses the child process. In this case, the child process follows the scheduling policy of the main
+process. If the scheduling policy of the main process changes, for example, from the background to the foreground
+, the child process changes with the main process. The effect is the same as calling **resetProcessPriority**.
 
 **Since:** 17
 

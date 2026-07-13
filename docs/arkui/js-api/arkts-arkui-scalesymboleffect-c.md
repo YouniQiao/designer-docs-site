@@ -2,7 +2,7 @@
 
 Defines ScaleSymbolEffect class, which inherits from **SymbolEffect**.
 
-**Inheritance/Implementation:** ScaleSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md#symboleffect)
+**Inheritance/Implementation:** ScaleSymbolEffect extends [SymbolEffect](arkts-arkui-symboleffect-c.md)
 
 **Since:** 12
 
@@ -39,7 +39,9 @@ A constructor used to create a **ScaleSymbolEffect** instance, which comes with 
 direction?: EffectDirection
 ```
 
-Effect direction. Default value: **EffectDirection.DOWN**
+Effect direction.
+
+Default value: **EffectDirection.DOWN**
 
 **Type:** EffectDirection
 
@@ -59,7 +61,9 @@ Effect direction. Default value: **EffectDirection.DOWN**
 scope?: EffectScope
 ```
 
-Effect scope. Default value: **EffectScope.LAYER**
+Effect scope.
+
+Default value: **EffectScope.LAYER**
 
 **Type:** EffectScope
 

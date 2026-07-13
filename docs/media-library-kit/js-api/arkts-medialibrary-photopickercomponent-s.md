@@ -9,7 +9,7 @@ Declare struct PhotoPickerComponent
 ## Modules to Import
 
 ```TypeScript
-import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@ohos.file.PhotoPickerComponent';
+import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
 ## build
@@ -148,7 +148,8 @@ Callback when click item. include click camera item and thumbnail item, will ret
 onItemClickedNotify?: ItemClickedNotifyCallback
 ```
 
-Callback when click item. Includes camera items and thumbnail items. Returns itemInfo in the callback. Must be used in conjunction with the addData method.
+Callback when click item. Includes camera items and thumbnail items. Returns itemInfo in the callback.
+Must be used in conjunction with the addData method.
 
 **Type:** ItemClickedNotifyCallback
 
@@ -234,7 +235,8 @@ Callback when the zoom scale changes during large image browsing.
 onPickerControllerReady?: () => void
 ```
 
-Callback when pickerController is ready. Set data to picker component by pickerController is supported after pickerController is ready
+Callback when pickerController is ready.
+Set data to picker component by pickerController is supported after pickerController is ready
 
 **Type:** () => void
 

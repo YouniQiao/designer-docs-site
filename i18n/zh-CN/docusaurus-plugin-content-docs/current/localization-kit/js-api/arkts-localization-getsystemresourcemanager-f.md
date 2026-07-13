@@ -6,7 +6,12 @@
 export function getSystemResourceManager(): ResourceManager
 ```
 
-获取系统资源管理ResourceManager对象。 > **说明** > > 当前接口获取到的系统资源管理ResourceManager对象中的Configuration为默认值。默认值如下： > {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}。
+获取系统资源管理ResourceManager对象。
+
+> **说明**
+>
+> 当前接口获取到的系统资源管理ResourceManager对象中的Configuration为默认值。默认值如下：
+> {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}。
 
 **起始版本：** 10
 
@@ -28,7 +33,7 @@ export function getSystemResourceManager(): ResourceManager
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [9001009](../errorcode-resource-manager.md#9001009-获取系统资源管理器失败) | Failed to access the system resource.which is not mapped to application sandbox, This error code will be thrown. |
+| [9001009](../errorcode-resource-manager.md#9001009-获取系统资源管理对象失败) | Failed to access the system resource.which is not mapped to application sandbox, This error code will be thrown. |
 
 **示例：**
 

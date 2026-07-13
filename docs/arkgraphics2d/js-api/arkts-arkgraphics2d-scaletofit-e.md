@@ -12,7 +12,8 @@ Enumerates the modes of scaling a source rectangle into a destination rectangle.
 FILL_SCALE_TO_FIT = 0
 ```
 
-Scales the source rectangle to completely fill the destination rectangle, potentially changing the aspect ratio of the source rectangle.
+Scales the source rectangle to completely fill the destination rectangle, potentially changing the aspect ratio
+of the source rectangle.
 
 **Since:** 12
 
@@ -24,7 +25,8 @@ Scales the source rectangle to completely fill the destination rectangle, potent
 START_SCALE_TO_FIT = 1
 ```
 
-Scales the source rectangle, preserving its aspect ratio, to align it to the upper left corner of the destination rectangle.
+Scales the source rectangle, preserving its aspect ratio, to align it to the upper left corner of the destination
+rectangle.
 
 **Since:** 12
 
@@ -48,7 +50,8 @@ Scales the source rectangle, preserving its aspect ratio, to align it to the cen
 END_SCALE_TO_FIT = 3
 ```
 
-Scales the source rectangle, preserving its aspect ratio, to align it to the lower right corner of the destination rectangle.
+Scales the source rectangle, preserving its aspect ratio, to align it to the lower right corner of the
+destination rectangle.
 
 **Since:** 12
 

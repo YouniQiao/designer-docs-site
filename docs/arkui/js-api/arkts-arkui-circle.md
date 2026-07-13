@@ -2,6 +2,7 @@
 
 Defines circle component.
 
+
 ## Circle
 
 ```TypeScript

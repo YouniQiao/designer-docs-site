@@ -1,6 +1,7 @@
 # AccessibilitySpan (System API)
 
-Defines the information about the hyperlink wrapped by the span tag. For details, see the spans attribute in [AccessibilityElement](arkts-accessibility-accessibilityelement-i.md#accessibilityelement).
+Defines the information about the hyperlink wrapped by the span tag. For details, see the spans attribute in
+[AccessibilityElement](arkts-accessibility-accessibilityelement-i.md).
 
 **Since:** 20
 

@@ -13,7 +13,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@system.geolocation';
+import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@kit.LocationKit';
 ```
 
 ## complete
@@ -40,7 +40,8 @@ Called when the execution is completed.
 coordType?: string
 ```
 
-Coordinate system type. Available types can be obtained using getSupportedCoordTypes. The default type is wgs84.
+Coordinate system type. Available types can be obtained using getSupportedCoordTypes.
+The default type is wgs84.
 
 **Type:** string
 
@@ -92,7 +93,12 @@ Called when the geographic location is obtained.
 timeout?: number
 ```
 
-Timeout duration, in milliseconds. For the rich device, the default value is 30000. For the lite wearable device, the default value is 180000. The timeout duration is necessary in case no result is returned if the request to obtain the geographic location is rejected for the lack of the required permission, weak positioning signal, or incorrect location settings. After the timeout duration expires, the fail function will be called. The value is a 32-digit positive integer. If the value set is less than or equal to 0, the default value will be used.
+Timeout duration, in milliseconds.
+For the rich device, the default value is 30000.
+For the lite wearable device, the default value is 180000.
+The timeout duration is necessary in case no result is returned if the request to obtain the geographic location is rejected for the lack of the required permission, weak positioning signal, or incorrect location settings. After the timeout duration expires, the fail function will be called.
+The value is a 32-digit positive integer.
+If the value set is less than or equal to 0, the default value will be used.
 
 **Type:** number
 

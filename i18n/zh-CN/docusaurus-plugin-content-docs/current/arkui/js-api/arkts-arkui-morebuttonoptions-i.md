@@ -30,7 +30,13 @@ backgroundBlurStyle?: BlurStyle
 backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 ```
 
-标题栏背景模糊选项。 **说明：** 只在设置了backgroundBlurStyle时生效。 不建议与backgroundEffect同时使用。
+标题栏背景模糊选项。
+
+**说明：**
+
+只在设置了backgroundBlurStyle时生效。
+
+不建议与backgroundEffect同时使用。
 
 **类型：** BackgroundBlurStyleOptions
 
@@ -48,7 +54,11 @@ backgroundBlurStyleOptions?: BackgroundBlurStyleOptions
 backgroundEffect?: BackgroundEffectOptions
 ```
 
-设置标题栏背景属性包括：模糊半径，亮度，饱和度，颜色等。 **说明：** 不建议与backgroundBlurStyleOptions同时使用。
+设置标题栏背景属性包括：模糊半径，亮度，饱和度，颜色等。
+
+**说明：**
+
+不建议与backgroundBlurStyleOptions同时使用。
 
 **类型：** BackgroundEffectOptions
 

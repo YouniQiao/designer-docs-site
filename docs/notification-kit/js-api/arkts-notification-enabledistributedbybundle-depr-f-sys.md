@@ -6,7 +6,8 @@
 function enableDistributedByBundle(bundle: BundleOption, enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether a specified application supports distributed notifications. This API uses an asynchronous callback to return the result.
+Sets whether a specified application supports distributed notifications.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -35,7 +36,8 @@ Sets whether a specified application supports distributed notifications. This AP
 function enableDistributedByBundle(bundle: BundleOption, enable: boolean): Promise<void>
 ```
 
-Sets whether a specified application supports distributed notifications. This API uses a promise to return the result.
+Sets whether a specified application supports distributed notifications.
+This API uses a promise to return the result.
 
 **Since:** 8
 

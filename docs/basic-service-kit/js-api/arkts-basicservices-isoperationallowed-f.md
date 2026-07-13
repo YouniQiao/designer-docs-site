@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wallpaper } from '@ohos.wallpaper';
+import { wallpaper } from '@kit.BasicServicesKit';
 ```
 
 ## isOperationAllowed
@@ -12,7 +12,8 @@ import { wallpaper } from '@ohos.wallpaper';
 function isOperationAllowed(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a user is allowed to set wallpapers. Returns true if a user is allowed to set wallpapers. returns false otherwise.
+Checks whether a user is allowed to set wallpapers.
+Returns true if a user is allowed to set wallpapers. returns false otherwise.
 
 **Since:** 7
 
@@ -48,7 +49,8 @@ wallpaper.isOperationAllowed((error: BusinessError, data: Boolean) => {
 function isOperationAllowed(): Promise<boolean>
 ```
 
-Checks whether a user is allowed to set wallpapers. Returns true if a user is allowed to set wallpapers. returns false otherwise.
+Checks whether a user is allowed to set wallpapers.
+Returns true if a user is allowed to set wallpapers. returns false otherwise.
 
 **Since:** 7
 

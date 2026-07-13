@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## getLaunchWantForBundle
@@ -12,7 +12,8 @@ import { bundle } from '@ohos.bundle';
 function getLaunchWantForBundle(bundleName: string, callback: AsyncCallback<Want>): void
 ```
 
-Obtains the Want object that launches the specified application. This API uses an asynchronous callback to return the result.
+Obtains the Want object that launches the specified application. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 7
 

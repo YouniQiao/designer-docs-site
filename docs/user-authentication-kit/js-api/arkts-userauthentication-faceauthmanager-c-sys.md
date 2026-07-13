@@ -1,6 +1,7 @@
 # FaceAuthManager (System API)
 
-Provides APIs for facial authentication management.
+Provides APIs for facial authentication management. It provides management features during face enrollment,
+including setting the surface ID of the face preview page.
 
 **Since:** 9
 
@@ -11,7 +12,7 @@ Provides APIs for facial authentication management.
 ## Modules to Import
 
 ```TypeScript
-import { faceAuth } from '@ohos.userIAM.faceAuth';
+import { faceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## constructor
@@ -20,7 +21,7 @@ import { faceAuth } from '@ohos.userIAM.faceAuth';
 constructor()
 ```
 
-A constructor used to create a **FaceAuthManager** object.
+Creates a face authentication manager object.
 
 **Since:** 9
 
@@ -43,7 +44,10 @@ let faceAuthManager = new faceAuth.FaceAuthManager();
 setSurfaceId(surfaceId: string): void
 ```
 
-Sets an [XComponent surface ID](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1) for the face preview page in the face enrollment process. This API must be used with [addCredential](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-useridentitymanager-c-sys.md#addcredential-1).
+Sets the surface ID of the face preview page during face enrollment. This API must be used together with
+[addCredential](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-useridentitymanager-c-sys.md#addcredential-1) to display the face
+preview page through the surface of the
+[getXComponentSurfaceId](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1) component.
 
 **Since:** 9
 
@@ -57,7 +61,7 @@ Sets an [XComponent surface ID](../../apis-arkui/arkts-components/arkts-arkui-xc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | ID of the surface held by[XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1). |
+| surfaceId | string | Yes | ID of the surface held by[XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid-1). This ID is used to display the face previewpage during face enrollment. It must be obtained using the **getXComponentSurfaceId** method of**XComponentController**. |
 
 **Error codes:**
 

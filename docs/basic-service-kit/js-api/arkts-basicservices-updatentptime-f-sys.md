@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { systemDateTime } from '@ohos.systemDateTime';
+import { systemDateTime } from '@kit.BasicServicesKit';
 ```
 
 ## updateNtpTime
@@ -12,7 +12,8 @@ import { systemDateTime } from '@ohos.systemDateTime';
 function updateNtpTime(): Promise<void>
 ```
 
-Updates the NTP time from the NTP server This API returns the result asynchronously. In this way, the NTP time is updated from the NTP server only once within one hour.
+Updates the NTP time from the NTP server This API returns the result asynchronously. In this way, the NTP time is
+updated from the NTP server only once within one hour.
 
 **Since:** 14
 

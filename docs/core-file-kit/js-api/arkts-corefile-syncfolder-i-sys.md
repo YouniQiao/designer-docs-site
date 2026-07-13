@@ -11,7 +11,7 @@ Encapsulates the sync root information.
 ## Modules to Import
 
 ```TypeScript
-import { cloudDiskManager } from '@ohos.file.cloudDiskManager';
+import { cloudDiskManager } from '@kit.CoreFileKit';
 ```
 
 ## bundleName
@@ -52,7 +52,8 @@ Custom alias displayed in the File Manager list. The default value is **undefine
 displayNameResId?: number
 ```
 
-Resource ID, which can be mapped to the alias displayed in the File Manager list. The default value is **undefined**.
+Resource ID, which can be mapped to the alias displayed in the File Manager list. The default value is
+**undefined**.
 
 **Type:** number
 

@@ -28,7 +28,7 @@ function hasSerialRight(portId: number): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
 | [14400005](../../apis-basic-services-kit/errorcode-usb.md#14400005-数据库操作异常) |  |
 | [31400001](../../apis-basic-services-kit/errorcode-usb.md#31400001-串口服务异常) |  |
 | [31400003](../../apis-basic-services-kit/errorcode-usb.md#31400003-端口号不存在) |  |

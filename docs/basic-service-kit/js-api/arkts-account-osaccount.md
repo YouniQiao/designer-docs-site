@@ -1,6 +1,7 @@
 # @ohos.account.osAccount
 
-本模块提供管理系统账号的基础能力，包括系统账号的添加、删除、查询、设置、订阅、启动等功能。
+The **osAccount** module provides basic capabilities for managing system (OS) accounts, including adding, deleting,
+querying, setting, subscribing to, and enabling an OS account.
 
 **Since:** 7
 
@@ -18,97 +19,116 @@ import { osAccount } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getAccountManager](arkts-osaccount-getaccountmanager-f.md#getAccountManager-1) | 获取系统账号管理对象。 |
-| <!--DelRow-->[getAuthorizationManager](arkts-osaccount-getauthorizationmanager-f-sys.md#getAuthorizationManager-1) | 获取系统账号授权管理器。 |
-| <!--DelRow-->[getOsAccountSubProfileManager](arkts-osaccount-getosaccountsubprofilemanager-f-sys.md#getOsAccountSubProfileManager-1) | 获取系统账号子身份资料管理器。 |
-| [isDomainAccountSupported](arkts-osaccount-isdomainaccountsupported-f.md#isDomainAccountSupported-1) | 检查是否支持域账号。使用Promise异步回调。 |
+| [getAccountManager](arkts-basicservices-getaccountmanager-f.md#getaccountmanager-1) | Obtains an **AccountManager** instance. |
+| [isDomainAccountSupported](arkts-basicservices-isdomainaccountsupported-f.md#isdomainaccountsupported-1) | Checks whether this domain account is supported. This API uses a promise to return the result. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [getAuthorizationManager](arkts-basicservices-getauthorizationmanager-f-sys.md#getauthorizationmanager-1) | Obtains this OS account authorization manager. |
+| [getOsAccountSubProfileManager](arkts-basicservices-getosaccountsubprofilemanager-f-sys.md#getosaccountsubprofilemanager-1) | Obtains an OS account sub-profile manager instance. |
+<!--DelEnd-->
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [DomainAccountManager](arkts-osaccount-domainaccountmanager-c.md) | 域账号管理类。 |
-| [DomainServerConfigManager](arkts-osaccount-domainserverconfigmanager-c.md) | 域服务器配置管理类。 |
-| <!--DelRow-->[InputerManager](arkts-osaccount-inputermanager-c-sys.md) | 凭据输入管理器。 |
-| <!--DelRow-->[PINAuth](arkts-osaccount-pinauth-c-sys.md) | PIN码认证基类。 |
-| <!--DelRow-->[UserAuth](arkts-osaccount-userauth-c-sys.md) | 用户认证类。 |
-| <!--DelRow-->[UserIdentityManager](arkts-osaccount-useridentitymanager-c-sys.md) | 获取用户身份管理类。 |
+| [DomainAccountManager](arkts-basicservices-domainaccountmanager-c.md) | Provides APIs for domain account management. |
+| [DomainServerConfigManager](arkts-basicservices-domainserverconfigmanager-c.md) | Provides APIs for domain server configuration and management. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DomainAccountManager](arkts-basicservices-domainaccountmanager-c-sys.md) | Provides APIs for domain account management. |
+| [InputerManager](arkts-basicservices-inputermanager-c-sys.md) | Provides APIs for managing credential inputers. |
+| [PINAuth](arkts-basicservices-pinauth-c-sys.md) | Provides APIs for PIN authentication. |
+| [UserAuth](arkts-basicservices-userauth-c-sys.md) | Provides APIs for user authentication. |
+| [UserIdentityManager](arkts-basicservices-useridentitymanager-c-sys.md) | Provides APIs for user IDM. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AccountManager](arkts-osaccount-accountmanager-i.md) | 系统账号管理类。 |
-| <!--DelRow-->[AcquireAuthorizationOptions](arkts-osaccount-acquireauthorizationoptions-i-sys.md) | 表示获取授权的选项。 |
-| <!--DelRow-->[AcquireAuthorizationResult](arkts-osaccount-acquireauthorizationresult-i-sys.md) | 表示获取授权的结果。 |
-| <!--DelRow-->[AuthOptions](arkts-osaccount-authoptions-i-sys.md) | 表示 [认证用户]{@link osAccount.UserAuth.auth( challenge: Uint8Array, authType: AuthType, authTrustLevel: AuthTrustLevel, options: AuthOptions, callback: IUserAuthCallback )} 的可选参数集合。 |
-| <!--DelRow-->[AuthorizationManager](arkts-osaccount-authorizationmanager-i-sys.md) | 系统账号授权管理类，用于管理系统账号授权。 |
-| <!--DelRow-->[AuthResult](arkts-osaccount-authresult-i-sys.md) | 表示认证结果的信息。 |
-| <!--DelRow-->[AuthStatusInfo](arkts-osaccount-authstatusinfo-i-sys.md) | 表示认证状态信息。 |
-| <!--DelRow-->[ConstraintChangeInfo](arkts-osaccount-constraintchangeinfo-i-sys.md) | 表示约束变更信息。 |
-| <!--DelRow-->[ConstraintSourceTypeInfo](arkts-osaccount-constraintsourcetypeinfo-i-sys.md) | 表示约束来源类型信息。 |
-| <!--DelRow-->[CreateOsAccountForDomainOptions](arkts-osaccount-createosaccountfordomainoptions-i-sys.md) | 表示用于创建与指定域账号绑定的系统账号的可选参数。继承自[CreateOsAccountOptions]{@link osAccount.CreateOsAccountOptions}。 |
-| <!--DelRow-->[CreateOsAccountOptions](arkts-osaccount-createosaccountoptions-i-sys.md) | 表示用于创建系统账号的可选参数。 |
-| <!--DelRow-->[CredentialChangeInfo](arkts-osaccount-credentialchangeinfo-i-sys.md) | 表示凭据变更信息。 |
-| <!--DelRow-->[CredentialInfo](arkts-osaccount-credentialinfo-i-sys.md) | 表示凭证信息。 |
-| <!--DelRow-->[DomainAccountAuthOptions](arkts-osaccount-domainaccountauthoptions-i-sys.md) | 表示域账号认证的选项。 |
-| [DomainAccountInfo](arkts-osaccount-domainaccountinfo-i.md) | 表示域账号信息。 |
-| <!--DelRow-->[DomainPlugin](arkts-osaccount-domainplugin-i-sys.md) | 域插件，提供域账号认证功能。 |
-| [DomainServerConfig](arkts-osaccount-domainserverconfig-i.md) | 域服务器配置。 |
-| <!--DelRow-->[EnrolledCredInfo](arkts-osaccount-enrolledcredinfo-i-sys.md) | 表示已注册凭据的信息。 |
-| <!--DelRow-->[ExecutorProperty](arkts-osaccount-executorproperty-i-sys.md) | 提供执行器的属性。 |
-| <!--DelRow-->[GetAuthInfoOptions](arkts-osaccount-getauthinfooptions-i-sys.md) | 表示[查询认证凭据信息]{@link osAccount.UserIdentityManager.getAuthInfo(options?: GetAuthInfoOptions)}的可选参数集合。 |
-| <!--DelRow-->[GetDomainAccessTokenOptions](arkts-osaccount-getdomainaccesstokenoptions-i-sys.md) | 表示获取域访问令牌的选项。 |
-| <!--DelRow-->[GetDomainAccountInfoOptions](arkts-osaccount-getdomainaccountinfooptions-i-sys.md) | 表示查询域账号信息的选项。 |
-| <!--DelRow-->[GetDomainAccountInfoPluginOptions](arkts-osaccount-getdomainaccountinfopluginoptions-i-sys.md) | 表示插件查询域账号信息的选项。GetDomainAccountInfoPluginOptions类继承 [GetDomainAccountInfoOptions]{@link osAccount.GetDomainAccountInfoOptions} |
-| <!--DelRow-->[GetInputDataOptions](arkts-osaccount-getinputdataoptions-i-sys.md) | 表示[通知调用者获取数据](docroot://reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8)的可选参数集合。 |
-| <!--DelRow-->[GetPropertyRequest](arkts-osaccount-getpropertyrequest-i-sys.md) | 提供获取属性请求的信息。 |
-| <!--DelRow-->[IIdmCallback](arkts-osaccount-iidmcallback-i-sys.md) | 表示身份管理回调类。 |
-| <!--DelRow-->[IInputData](arkts-osaccount-iinputdata-i-sys.md) | 密码数据回调。 |
-| <!--DelRow-->[IInputer](arkts-osaccount-iinputer-i-sys.md) | 凭据输入器回调。 |
-| <!--DelRow-->[IUserAuthCallback](arkts-osaccount-iuserauthcallback-i-sys.md) | 表示用户认证回调类。 |
-| [OsAccountInfo](arkts-osaccount-osaccountinfo-i.md) | 表示系统账号信息。 |
-| <!--DelRow-->[OsAccountSubProfile](arkts-osaccount-osaccountsubprofile-i-sys.md) | 系统账号子Profile的定义 |
-| <!--DelRow-->[OsAccountSubProfileEventData](arkts-osaccount-osaccountsubprofileeventdata-i-sys.md) | 表示系统账号子Profile事件数据。 |
-| <!--DelRow-->[OsAccountSubProfileManager](arkts-osaccount-osaccountsubprofilemanager-i-sys.md) | 系统账号子身份资料管理器类。 |
-| <!--DelRow-->[OsAccountSwitchEventData](arkts-osaccount-osaccountswitcheventdata-i-sys.md) | 表示系统账号前后台开始切换和结束切换事件的数据结构。 |
-| <!--DelRow-->[RemoteAuthOptions](arkts-osaccount-remoteauthoptions-i-sys.md) | 表示远程认证的可选参数集合。 |
-| <!--DelRow-->[RemoveOsAccountOptions](arkts-osaccount-removeosaccountoptions-i-sys.md) | 表示用于删除系统账号的可选参数。 |
-| <!--DelRow-->[RequestResult](arkts-osaccount-requestresult-i-sys.md) | 表示请求结果的信息。 |
-| <!--DelRow-->[SetOsAccountTypeOptions](arkts-osaccount-setosaccounttypeoptions-i-sys.md) | 设置系统账号类型的选项。 |
-| <!--DelRow-->[SetPropertyRequest](arkts-osaccount-setpropertyrequest-i-sys.md) | 提供设置属性请求的信息。 |
+| [AccountManager](arkts-basicservices-accountmanager-i.md) | Provides APIs for managing OS accounts. |
+| [CreateOsAccountForDomainOptions](arkts-basicservices-createosaccountfordomainoptions-i.md) | Represents a set of optional parameters for creating an OS account bound to the specified domain account. Itinherits from [CreateOsAccountOptions](arkts-basicservices-createosaccountoptions-i-sys.md). |
+| [DomainAccountInfo](arkts-basicservices-domainaccountinfo-i.md) | Represents the domain account information. |
+| [DomainServerConfig](arkts-basicservices-domainserverconfig-i.md) | Represents the configuration of a domain server. |
+| [OsAccountInfo](arkts-basicservices-osaccountinfo-i.md) | Represents information about an OS account. |
 
-### Types
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DomainPluginAuthFunc](arkts-osaccount-domainpluginauthfunc-t-sys.md) | 认证指定的域账号。 |
-| <!--DelRow-->[DomainPluginAuthWithPopupFunc](arkts-osaccount-domainpluginauthwithpopupfunc-t-sys.md) | 弹窗认证指定的域账号。 |
-| <!--DelRow-->[DomainPluginAuthWithTokenFunc](arkts-osaccount-domainpluginauthwithtokenfunc-t-sys.md) | 使用授权令牌认证指定的域账号。 |
-| <!--DelRow-->[DomainPluginBindAccountFunc](arkts-osaccount-domainpluginbindaccountfunc-t-sys.md) | 绑定指定的域账号。 |
-| <!--DelRow-->[DomainPluginGetAccessTokenFunc](arkts-osaccount-domainplugingetaccesstokenfunc-t-sys.md) | 根据指定的选项获取域访问令牌。 |
-| <!--DelRow-->[DomainPluginGetAccountInfoFunc](arkts-osaccount-domainplugingetaccountinfofunc-t-sys.md) | 查询指定域账号的信息。 |
-| <!--DelRow-->[DomainPluginGetAuthStatusInfoFunc](arkts-osaccount-domainplugingetauthstatusinfofunc-t-sys.md) | 查询指定域账号的认证状态信息。 |
-| <!--DelRow-->[DomainPluginIsAccountTokenValidFunc](arkts-osaccount-domainpluginisaccounttokenvalidfunc-t-sys.md) | 检查指定的域账号令牌是否有效。 |
-| <!--DelRow-->[DomainPluginUnbindAccountFunc](arkts-osaccount-domainpluginunbindaccountfunc-t-sys.md) | 解绑指定的域账号。 |
+| [AccountManager](arkts-basicservices-accountmanager-i-sys.md) | Provides APIs for managing OS accounts. |
+| [AcquireAuthorizationOptions](arkts-basicservices-acquireauthorizationoptions-i-sys.md) | Defines the options for acquiring the authorization. |
+| [AcquireAuthorizationResult](arkts-basicservices-acquireauthorizationresult-i-sys.md) | Defines the result of the authorization. |
+| [AuthOptions](arkts-basicservices-authoptions-i-sys.md) | Represents a set of optional parameters for[auth](arkts-basicservices-userauth-c-sys.md#auth-2). |
+| [AuthResult](arkts-basicservices-authresult-i-sys.md) | Defines the authentication result information. |
+| [AuthStatusInfo](arkts-basicservices-authstatusinfo-i-sys.md) | Presents the authentication status information. |
+| [AuthorizationManager](arkts-basicservices-authorizationmanager-i-sys.md) | Defines the OS account authorization manager class. |
+| [ConstraintChangeInfo](arkts-basicservices-constraintchangeinfo-i-sys.md) | Defines the constraint change information. |
+| [ConstraintSourceTypeInfo](arkts-basicservices-constraintsourcetypeinfo-i-sys.md) | Defines the constraint source type. |
+| [CreateOsAccountOptions](arkts-basicservices-createosaccountoptions-i-sys.md) | Represents the optional parameter used to create an OS account. |
+| [CredentialChangeInfo](arkts-basicservices-credentialchangeinfo-i-sys.md) | Defines the credential change information. |
+| [CredentialInfo](arkts-basicservices-credentialinfo-i-sys.md) | Defines the credential information. |
+| [DomainAccountAuthOptions](arkts-basicservices-domainaccountauthoptions-i-sys.md) | Defines the options for domain account authentication. |
+| [DomainAccountInfo](arkts-basicservices-domainaccountinfo-i-sys.md) | Represents the domain account information. |
+| [DomainPlugin](arkts-basicservices-domainplugin-i-sys.md) | Provides APIs for domain account authentication. |
+| [EnrolledCredInfo](arkts-basicservices-enrolledcredinfo-i-sys.md) | Defines enrolled credential information. |
+| [ExecutorProperty](arkts-basicservices-executorproperty-i-sys.md) | Defines the executor property. |
+| [GetAuthInfoOptions](arkts-basicservices-getauthinfooptions-i-sys.md) | Represents a set of optional parameters for[GetAuthInfo](arkts-basicservices-useridentitymanager-c-sys.md#getauthinfo-4). |
+| [GetDomainAccessTokenOptions](arkts-basicservices-getdomainaccesstokenoptions-i-sys.md) | Defines the options for obtaining a domain access token. |
+| [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md) | Defines the options for obtaining domain account information. |
+| [GetDomainAccountInfoPluginOptions](arkts-basicservices-getdomainaccountinfopluginoptions-i-sys.md) | Defines the options for the domain plug-in to obtain the domain account information. The**GetDomainAccountInfoPluginOptions** class inherits from[**GetDomainAccountInfoOptions**](arkts-basicservices-getdomainaccountinfooptions-i-sys.md). |
+| [GetInputDataOptions](arkts-basicservices-getinputdataoptions-i-sys.md) | Represents a set of optional parameters for[onGetData](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8). |
+| [GetPropertyRequest](arkts-basicservices-getpropertyrequest-i-sys.md) | Defines the request for obtaining property information. |
+| [IIdmCallback](arkts-basicservices-iidmcallback-i-sys.md) | Provides callbacks for IDM. |
+| [IInputData](arkts-basicservices-iinputdata-i-sys.md) | Provides callbacks for PIN operations. |
+| [IInputer](arkts-basicservices-iinputer-i-sys.md) | Provides callbacks for credential inputers. |
+| [IUserAuthCallback](arkts-basicservices-iuserauthcallback-i-sys.md) | Provides callbacks for user authentication. |
+| [OsAccountInfo](arkts-basicservices-osaccountinfo-i-sys.md) | Represents information about an OS account. |
+| [OsAccountSubProfile](arkts-basicservices-osaccountsubprofile-i-sys.md) | Definition of an OS account sub-profile. |
+| [OsAccountSubProfileEventData](arkts-basicservices-osaccountsubprofileeventdata-i-sys.md) | Represents the event data of an OS account sub-profile. |
+| [OsAccountSubProfileManager](arkts-basicservices-osaccountsubprofilemanager-i-sys.md) | Defines the OS account sub-profile manager class. |
+| [OsAccountSwitchEventData](arkts-basicservices-osaccountswitcheventdata-i-sys.md) | Defines the event that indicates the start or end of a foreground-background OS account switchover. |
+| [RemoteAuthOptions](arkts-basicservices-remoteauthoptions-i-sys.md) | Represents a set of optional parameters for remote authentication. |
+| [RemoveOsAccountOptions](arkts-basicservices-removeosaccountoptions-i-sys.md) | Represents the optional parameter used to remove an OS account. |
+| [RequestResult](arkts-basicservices-requestresult-i-sys.md) | Defines the request result information. |
+| [SetOsAccountTypeOptions](arkts-basicservices-setosaccounttypeoptions-i-sys.md) | Defines the options for setting the OS account type. |
+| [SetPropertyRequest](arkts-basicservices-setpropertyrequest-i-sys.md) | Defines the request for setting property information. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[AuthIntent](arkts-osaccount-authintent-e-sys.md) | 表示认证意图的枚举。 |
-| <!--DelRow-->[AuthorizationResultCode](arkts-osaccount-authorizationresultcode-e-sys.md) | 表示授权结果码的枚举。 |
-| <!--DelRow-->[AuthSubType](arkts-osaccount-authsubtype-e-sys.md) | 表示用于认证的凭据子类型的枚举。 |
-| <!--DelRow-->[AuthTrustLevel](arkts-osaccount-authtrustlevel-e-sys.md) | 表示认证结果的受信任级别的枚举。 |
-| <!--DelRow-->[AuthType](arkts-osaccount-authtype-e-sys.md) | 表示身份验证的凭据类型的枚举。 |
-| <!--DelRow-->[ConstraintSourceType](arkts-osaccount-constraintsourcetype-e-sys.md) | 表示约束来源类型的枚举。 |
-| <!--DelRow-->[CredentialChangeType](arkts-osaccount-credentialchangetype-e-sys.md) | 表示凭据变更类型的枚举。 |
-| <!--DelRow-->[FaceTipsCode](arkts-osaccount-facetipscode-e-sys.md) | 表示人脸验证过程中提示的枚举。 |
-| <!--DelRow-->[FingerprintTips](arkts-osaccount-fingerprinttips-e-sys.md) | 表示指纹身份验证过程中提示的枚举。 |
-| <!--DelRow-->[GetPropertyType](arkts-osaccount-getpropertytype-e-sys.md) | 表示要获取的属性类型的枚举。 |
-| <!--DelRow-->[Module](arkts-osaccount-module-e-sys.md) | 表示获取信息的模块的枚举。 |
-| <!--DelRow-->[OsAccountSubProfileEvent](arkts-osaccount-osaccountsubprofileevent-e-sys.md) | 枚举系统账号子profile的事件。 |
-| [OsAccountType](arkts-osaccount-osaccounttype-e.md) | 表示系统账号类型的枚举。 |
-| <!--DelRow-->[ResultCode](arkts-osaccount-resultcode-e-sys.md) | 表示身份验证结果码。 |
-| <!--DelRow-->[SetPropertyType](arkts-osaccount-setpropertytype-e-sys.md) | 表示要设置的属性类型的枚举。 |
+| [OsAccountType](arkts-basicservices-osaccounttype-e.md) | Enumerates the OS account types. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [AuthIntent](arkts-basicservices-authintent-e-sys.md) | Enumerates the authentication intents. |
+| [AuthSubType](arkts-basicservices-authsubtype-e-sys.md) | Enumerates the authentication credential subtypes. |
+| [AuthTrustLevel](arkts-basicservices-authtrustlevel-e-sys.md) | Enumerates the trust levels of the authentication result. |
+| [AuthType](arkts-basicservices-authtype-e-sys.md) | Enumerates the authentication credential types. |
+| [AuthorizationResultCode](arkts-basicservices-authorizationresultcode-e-sys.md) | Enumerates authorization result codes. |
+| [ConstraintSourceType](arkts-basicservices-constraintsourcetype-e-sys.md) | Enumerates the constraint sources. |
+| [CredentialChangeType](arkts-basicservices-credentialchangetype-e-sys.md) | Enumerates the credential change types. |
+| [FaceTipsCode](arkts-basicservices-facetipscode-e-sys.md) | Enumerates the tip codes for facial authentication. |
+| [FingerprintTips](arkts-basicservices-fingerprinttips-e-sys.md) | Enumerates the tip codes for fingerprint authentication. |
+| [GetPropertyType](arkts-basicservices-getpropertytype-e-sys.md) | Enumerates the types of properties to obtain. |
+| [Module](arkts-basicservices-module-e-sys.md) | Enumerates the modules from which information is obtained. |
+| [OsAccountSubProfileEvent](arkts-basicservices-osaccountsubprofileevent-e-sys.md) | Enumerates the events of an OS account sub-profile. |
+| [OsAccountType](arkts-basicservices-osaccounttype-e-sys.md) | Enumerates the OS account types. |
+| [ResultCode](arkts-basicservices-resultcode-e-sys.md) | Enumerates the authentication result codes. |
+| [SetPropertyType](arkts-basicservices-setpropertytype-e-sys.md) | Enumerates the types of properties to set. |
+<!--DelEnd-->
 

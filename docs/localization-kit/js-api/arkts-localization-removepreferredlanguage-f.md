@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## removePreferredLanguage
@@ -18,7 +18,7 @@ Removes a preferred language from the specified position on the preferred langua
 
 **Deprecated since:** 9
 
-**Substitutes:** removePreferredLanguage
+**Substitutes:** [removePreferredLanguage](arkts-localization-system-c-sys.md#removepreferredlanguage-1)
 
 **Required permissions:** ohos.permission.UPDATE_CONFIGURATION
 

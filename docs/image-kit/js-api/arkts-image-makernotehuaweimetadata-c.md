@@ -1,8 +1,10 @@
 # MakerNoteHuaweiMetadata
 
-MakerNoteHuaweiMetadata implements Metadata 来自Huawei相机的照片元数据。
+MakerNoteHuaweiMetadata implements Metadata
 
-**Inheritance:** MakerNoteHuaweiMetadataimplements: Metadata.
+Photo metadata from Huawei cameras.
+
+**Inheritance/Implementation:** MakerNoteHuaweiMetadata implements [Metadata](arkts-image-metadata-i.md)
 
 **Since:** 23
 
@@ -20,11 +22,12 @@ import { image } from '@kit.ImageKit';
 clone(): Promise<MakerNoteHuaweiMetadata>
 ```
 
-对[MakerNoteHuaweiMetadata]image.MakerNoteHuaweiMetadata元数据进行克隆。使用Promise异步回调。
+Clones [MakerNoteHuaweiMetadata](arkts-image-makernotehuaweimetadata-c.md) metadata. This API returns the result
+asynchronously through a promise.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -32,7 +35,7 @@ clone(): Promise<MakerNoteHuaweiMetadata>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;MakerNoteHuaweiMetadata> | Promise对象，当成功获取元数据时返回MakerNoteHuaweiMetadata元数据实例。 |
+| Promise&lt;MakerNoteHuaweiMetadata&gt; | Promise used to return the **MakerNoteHuaweiMetadata** metadatainstance if metadata is successfully obtained. |
 
 ## createInstance
 
@@ -40,11 +43,11 @@ clone(): Promise<MakerNoteHuaweiMetadata>
 static createInstance(): MakerNoteHuaweiMetadata
 ```
 
-返回[MakerNoteHuaweiMetadata]image.MakerNoteHuaweiMetadata的空实例。
+Returns an empty [MakerNoteHuaweiMetadata](arkts-image-makernotehuaweimetadata-c.md) instance.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -52,7 +55,7 @@ static createInstance(): MakerNoteHuaweiMetadata
 
 | Type | Description |
 | --- | --- |
-| MakerNoteHuaweiMetadata | 返回MakerNoteHuaweiMetadata的空实例。 |
+| MakerNoteHuaweiMetadata | Empty **MakerNoteHuaweiMetadata** instance. |
 
 ## getAllProperties
 
@@ -60,11 +63,12 @@ static createInstance(): MakerNoteHuaweiMetadata
 getAllProperties(): Promise<Record<string, string | null>>
 ```
 
-获取图片中所有元数据的属性和值。使用Promise异步回调。
+Obtains all properties and their values from the image metadata. This API returns the result asynchronously
+through a promise.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -72,7 +76,7 @@ getAllProperties(): Promise<Record<string, string | null>>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据中定义的所有键值对。 |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
 
 ## getBlob
 
@@ -80,11 +84,11 @@ getAllProperties(): Promise<Record<string, string | null>>
 getBlob(): Promise<ArrayBuffer>
 ```
 
-以二进制数据的形式获取元数据。使用Promise异步回调。
+Obtains the metadata in binary format. This API uses a promise to return the result.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -92,7 +96,7 @@ getBlob(): Promise<ArrayBuffer>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer> | Promise对象，返回元数据的二进制数据。 |
+| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
 
 ## getProperties
 
@@ -100,11 +104,11 @@ getBlob(): Promise<ArrayBuffer>
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-获取图像中属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey]image.PropertyKey。
+Obtains the property values from image metadata. This API returns the result asynchronously through a promise.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -112,19 +116,19 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | Array&lt;string> | Yes | 要获取其值的属性的名称。 |
+| key | Array&lt;string&gt; | Yes | Names of the properties to query. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据要获取的属性的值，如获取失败则返回错误码。 |
+| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the obtained image metadata propertyvalues. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type. |
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type. |
 
 ## setBlob
 
@@ -132,11 +136,11 @@ getProperties(key: Array<string>): Promise<Record<string, string | null>>
 setBlob(blob: ArrayBuffer): Promise<void>
 ```
 
-使用二进制数据替换当前元数据。使用Promise异步回调。
+Replaces the current metadata with binary data. This API uses a promise to return the result.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -144,19 +148,19 @@ setBlob(blob: ArrayBuffer): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | ArrayBuffer | Yes | 要替换的二进制数据。 |
+| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600206 | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
+| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
 ## setProperties
 
@@ -164,11 +168,14 @@ setBlob(blob: ArrayBuffer): Promise<void>
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[PropertyKey]image.PropertyKey。
+Sets the values of specified properties in image metadata in batches. This API returns the result asynchronously
+through a promise.
+
+For details about the properties, see [PropertyKey](arkts-image-propertykey-e.md).
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -176,273 +183,51 @@ setProperties(records: Record<string, string | null>): Promise<void>
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | Record&lt;string, string \| null> | Yes | 包含要修改的MakerNoteHuaweiMetadata对象属性键值对的数组。 |
+| records | Record&lt;string, string \| null&gt; | Yes | Array containing key-value pairs representing properties andtheir corresponding values of the **MakerNoteHuaweiMetadata** object to be modified. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise对象，无返回结果。 |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type. |
-
-## xmageRight
-
-```TypeScript
-xmageRight?: int
-```
-
-当照片包含XMAGE水印时，原始图片上，有效内容区域（不含水印覆盖范围）的右边界（相对于图片左上角原点）的水平坐标。单位为像素（px）。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## isFrontCamera
-
-```TypeScript
-isFrontCamera?: boolean
-```
-
-是否使用前置摄像头。true表示使用，false表示不使用。
-
-**Type:** boolean
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneSunsetConfidence
-
-```TypeScript
-sceneSunsetConfidence?: int
-```
-
-拍摄场景：日落置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## xmageWatermarkMode
-
-```TypeScript
-xmageWatermarkMode?: int
-```
-
-XMAGE水印模式。具体取值请参考[Constants]image。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
+| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type. |
 
 ## burstNumber
 
 ```TypeScript
-burstNumber?: int
+burstNumber?: number
 ```
 
-连拍数量。
+Number of burst shots.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## sceneVersion
+## captureMode
 
 ```TypeScript
-sceneVersion?: int
+captureMode?: number
 ```
 
-场景识别算法版本号。
+Capture mode.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneNightConfidence
-
-```TypeScript
-sceneNightConfidence?: int
-```
-
-拍摄场景：夜景置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneGreenPlantConfidence
-
-```TypeScript
-sceneGreenPlantConfidence?: int
-```
-
-拍摄场景：绿色植物置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## isXmageSupported
-
-```TypeScript
-isXmageSupported?: boolean
-```
-
-是否支持XMAGE。true表示支持，false表示不支持。
-
-**Type:** boolean
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## faceConfidences
-
-```TypeScript
-faceConfidences?: int[]
-```
-
-对指定数量的面孔置信度。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## xmageColorMode
-
-```TypeScript
-xmageColorMode?: XmageColorMode
-```
-
-XMAGE颜色模式。
-
-**Type:** XmageColorMode
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## focusMode
-
-```TypeScript
-focusMode?: FocusMode
-```
-
-镜头对焦控制策略，决定相机如何调整焦距。
-
-**Type:** FocusMode
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneStageConfidence
-
-```TypeScript
-sceneStageConfidence?: int
-```
-
-拍摄场景：舞台演出置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneTextConfidence
-
-```TypeScript
-sceneTextConfidence?: int
-```
-
-拍摄场景：文本置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneSnowConfidence
-
-```TypeScript
-sceneSnowConfidence?: int
-```
-
-拍摄场景：雪景置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rollAngle
-
-```TypeScript
-rollAngle?: int
-```
-
-左右滚动角度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -452,125 +237,78 @@ rollAngle?: int
 cloudLabel?: string
 ```
 
-云增强标签。
+Cloud enhancement label.
 
 **Type:** string
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## sceneBeachConfidence
+## faceConfidences
 
 ```TypeScript
-sceneBeachConfidence?: int
+faceConfidences?: number[]
 ```
 
-拍摄场景：海滩置信度。
+Confidences of a specified number of faces.
 
-**Type:** int
+**Type:** number[]
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sceneBlueSkyConfidence
-
-```TypeScript
-sceneBlueSkyConfidence?: int
-```
-
-拍摄场景：蓝天置信度。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## physicalAperture
-
-```TypeScript
-physicalAperture?: int
-```
-
-物理光圈值。单位是fNumber。
-
-**Type:** int
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## isWindSnapshot
-
-```TypeScript
-isWindSnapshot?: boolean
-```
-
-是否采用风快照模式拍摄。true表示采用，false表示不采用。 该模式是针对拍摄快速移动物体或容易产生模糊场景（如大风中、抓拍运动物体）的专门摄影。
-
-**Type:** boolean
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## faceCount
 
 ```TypeScript
-faceCount?: int
+faceCount?: number
 ```
 
-人脸数。
+Number of faces.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## sceneFlowersConfidence
+## faceSmileScores
 
 ```TypeScript
-sceneFlowersConfidence?: int
+faceSmileScores?: number[]
 ```
 
-拍摄场景：花卉置信度。
+Smile scores of a specified number of faces.
 
-**Type:** int
+**Type:** number[]
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## pitchAngle
+## focusMode
 
 ```TypeScript
-pitchAngle?: int
+focusMode?: FocusMode
 ```
 
-俯仰角度。
+Lens focus control policy, which determines how the camera adjusts the focal length.
 
-**Type:** int
+**Type:** FocusMode
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -580,109 +318,406 @@ pitchAngle?: int
 isCloudEnhanced?: boolean
 ```
 
-图像是否存在云端增强。true表示存在，false表示不存在。
+Whether the image has been cloud-enhanced. **true** indicates yes; **false** indicates no.
 
 **Type:** boolean
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## xmageBottom
+## isFrontCamera
 
 ```TypeScript
-xmageBottom?: int
+isFrontCamera?: boolean
 ```
 
-当照片包含XMAGE水印时，原始图片上，有效内容区域（不含水印覆盖范围）的下边界（相对于图片左上角原点）的垂直坐标。单位为像素（px）。
+Whether to use the front camera. **true** indicates yes; **false** indicates no.
 
-**Type:** int
+**Type:** boolean
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## isWindSnapshot
+
+```TypeScript
+isWindSnapshot?: boolean
+```
+
+Whether the wind snapshot mode is used. **true** indicates yes; **false** indicates no.
+This mode is a specialized photography mode designed for capturing fast-moving subjects or scenes prone to
+blurring, such as in windy conditions or when photographing moving objects.
+
+**Type:** boolean
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## isXmageSupported
+
+```TypeScript
+isXmageSupported?: boolean
+```
+
+Whether XMAGE is supported. **true** indicates yes; **false** indicates no.
+
+**Type:** boolean
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## physicalAperture
+
+```TypeScript
+physicalAperture?: number
+```
+
+Physical aperture, in fNumber.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## pitchAngle
+
+```TypeScript
+pitchAngle?: number
+```
+
+Pitch angle.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rollAngle
+
+```TypeScript
+rollAngle?: number
+```
+
+Horizontal pan angle.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneBeachConfidence
+
+```TypeScript
+sceneBeachConfidence?: number
+```
+
+Capture scene: beach confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneBlueSkyConfidence
+
+```TypeScript
+sceneBlueSkyConfidence?: number
+```
+
+Capture scene: blue sky confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneFlowersConfidence
+
+```TypeScript
+sceneFlowersConfidence?: number
+```
+
+Capture scene: flower confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## sceneFoodConfidence
 
 ```TypeScript
-sceneFoodConfidence?: int
+sceneFoodConfidence?: number
 ```
 
-拍摄场景：美食置信度。
+Capture scene: food confidence.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneGreenPlantConfidence
+
+```TypeScript
+sceneGreenPlantConfidence?: number
+```
+
+Capture scene: green plant confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneNightConfidence
+
+```TypeScript
+sceneNightConfidence?: number
+```
+
+Capture scene: night scene confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneSnowConfidence
+
+```TypeScript
+sceneSnowConfidence?: number
+```
+
+Capture scene: snow confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneStageConfidence
+
+```TypeScript
+sceneStageConfidence?: number
+```
+
+Capture scene: stage performance confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneSunsetConfidence
+
+```TypeScript
+sceneSunsetConfidence?: number
+```
+
+Capture scene: sunset confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneTextConfidence
+
+```TypeScript
+sceneTextConfidence?: number
+```
+
+Capture scene: text confidence.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sceneVersion
+
+```TypeScript
+sceneVersion?: number
+```
+
+Version number of the scene recognition algorithm.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## xmageBottom
+
+```TypeScript
+xmageBottom?: number
+```
+
+Vertical coordinate of the bottom boundary of the effective content area (excluding the watermark coverage area)
+on the original image, relative to the top-left origin of the image. The unit is px.
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## xmageColorMode
+
+```TypeScript
+xmageColorMode?: XmageColorMode
+```
+
+XMAGE color mode.
+
+**Type:** XmageColorMode
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## xmageLeft
 
 ```TypeScript
-xmageLeft?: int
+xmageLeft?: number
 ```
 
-当照片包含XMAGE水印时，原始图片上，有效内容区域（不含水印覆盖范围）的左边界（相对于图片左上角原点）的水平坐标。单位为像素（px）。
+Horizontal coordinate of the left boundary of the effective content area (excluding the watermark coverage area)
+on the original image, relative to the top-left origin of the image. The unit is px.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## captureMode
+## xmageRight
 
 ```TypeScript
-captureMode?: int
+xmageRight?: number
 ```
 
-捕获模式。
+Horizontal coordinate of the right boundary of the effective content area (excluding the watermark coverage area)
+on the original image, relative to the top-left origin of the image. The unit is px.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## faceSmileScores
-
-```TypeScript
-faceSmileScores?: int[]
-```
-
-特定数量面孔的微笑得分。
-
-**Type:** int[]
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## xmageTop
 
 ```TypeScript
-xmageTop?: int
+xmageTop?: number
 ```
 
-当照片包含XMAGE水印时，原始图片上，有效内容区域（不含水印覆盖范围）的上边界（相对于图片左上角原点）的垂直坐标。单位为像素（px）。
+Vertical coordinate of the top boundary of the effective content area (excluding the watermark coverage area) on
+the original image, relative to the top-left origin of the image. The unit is px.
+The value range is all integers.
 
-**Type:** int
+**Type:** number
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## xmageWatermarkMode
+
+```TypeScript
+xmageWatermarkMode?: number
+```
+
+XMAGE watermark mode. For details, see [Constants](@ohos.multimedia.image:image.Constants).
+The value range is all integers.
+
+**Type:** number
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -74,7 +74,8 @@ Requests full-screen playback.
 reset(): void
 ```
 
-Resets the **AVPlayer** instance of this component, which displays the current frame and sets the playback to start from the beginning for subsequent playbacks.
+Resets the **AVPlayer** instance of this component, which displays the current frame and sets the playback to start
+from the beginning for subsequent playbacks.
 
 **Since:** 12
 
@@ -90,7 +91,12 @@ Resets the **AVPlayer** instance of this component, which displays the current f
 setCurrentTime(value: number)
 ```
 
-Sets the video playback position. > **NOTE** > > To start playback from a specific position, disable autoplay, wait for video preparation to complete, and then > seek to the target position.
+Sets the video playback position.
+
+> **NOTE**
+>
+> To start playback from a specific position, disable autoplay, wait for video preparation to complete, and then
+> seek to the target position.
 
 **Since:** 7
 
@@ -102,7 +108,7 @@ Sets the video playback position. > **NOTE** > > To start playback from a specif
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Video playback position.<br>Value range: [0, [duration](arkts-arkui-preparedinfo-i.md#preparedinfo)]<br>When the set value is greater than the duration, the progress will jump to the end; when the set value is lessthan 0, no progress jump will occur.<br>Unit: second<br>Since API version 8, seek mode configuration issupported. For details, see[setCurrentTime&lt;sup&gt;8+&lt;/sup&gt;](arkts-arkui-videocontroller-c.md#setcurrenttime-2). |
+| value | number | Yes | Video playback position.<br>Value range: [0, [duration](arkts-arkui-preparedinfo-i.md)]<br>When the set value is greater than the duration, the progress will jump to the end; when the set value is lessthan 0, no progress jump will occur.<br>Unit: second<br>Since API version 8, seek mode configuration issupported. For details, see[setCurrentTime&lt;sup&gt;8+&lt;/sup&gt;](arkts-arkui-videocontroller-c.md#setcurrenttime-2). |
 
 ## setCurrentTime
 
@@ -122,7 +128,7 @@ Sets the video playback position with the specified seek mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | number | Yes | Video playback position.<br>Value range: [0, [duration](arkts-arkui-preparedinfo-i.md#preparedinfo)]<br>When the set value is greater than the duration, the progress will jump to the end; when the set value is lessthan 0, no progress jump will occur.<br>Unit: second |
+| value | number | Yes | Video playback position.<br>Value range: [0, [duration](arkts-arkui-preparedinfo-i.md)]<br>When the set value is greater than the duration, the progress will jump to the end; when the set value is lessthan 0, no progress jump will occur.<br>Unit: second |
 | seekMode | SeekMode | Yes | Seek mode. |
 
 ## start

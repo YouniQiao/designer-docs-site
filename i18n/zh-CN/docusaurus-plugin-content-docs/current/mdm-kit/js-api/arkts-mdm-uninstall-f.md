@@ -6,7 +6,13 @@
 function uninstall(admin: Want, bundleName: string, userId?: number, isKeepData?: boolean): Promise<void>
 ```
 
-卸载当前/指定用户下的指定包接口，选择是否保留包数据（由isKeepData指定）。使用Promise异步回调。 > **说明：** > > 当应用为不可卸载的预置应用或者通过 > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
+卸载当前/指定用户下的指定包接口，选择是否保留包数据（由isKeepData指定）。使用Promise异步回调。
+
+> **说明：**
+>
+> 当应用为不可卸载的预置应用或者通过
+> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
+> 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
 **起始版本：** 12
 
@@ -38,7 +44,7 @@ function uninstall(admin: Want, bundleName: string, userId?: number, isKeepData?
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-应用没有激活成设备管理器) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

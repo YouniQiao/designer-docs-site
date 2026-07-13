@@ -5,7 +5,9 @@ type Usage = 'unknown' | 'alarm' | 'ring' | 'notification' | 'communication' |
   'touch' | 'media' | 'physicalFeedback' | 'simulateReality'
 ```
 
-Enumerates the vibration scenarios. <!--RP1End-->
+Enumerates the vibration scenarios.
+
+<!--RP1End-->
 
 **Since:** 9
 

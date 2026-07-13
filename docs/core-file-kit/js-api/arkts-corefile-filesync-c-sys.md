@@ -1,6 +1,7 @@
 # FileSync
 
-Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit. Before using the APIs of this class, you need to create a **FileSync** instance.
+Provides APIs for the file manager application to perform device-cloud sync of the files stored in the Drive Kit.
+Before using the APIs of this class, you need to create a **FileSync** instance.
 
 **Since:** 12
 
@@ -9,7 +10,7 @@ Provides APIs for the file manager application to perform device-cloud sync of t
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -141,7 +142,7 @@ Registers to cloud file upload progress change. This method uses a callback to g
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;UploadProgress&gt; | Yes | Callback function. |
+| callback | Callback&lt;UploadProgress&gt; | Yes | Callback function. The callback will be triggered when the upload progress changes, including state updates, processed size changes, and error occurrences. |
 
 **Error codes:**
 

@@ -9,7 +9,7 @@ Describes gzip-related APIs.
 ## Modules to Import
 
 ```TypeScript
-import { zlib } from '@ohos.zlib';
+import { zlib } from '@kit.BasicServicesKit';
 ```
 
 ## gzbuffer
@@ -165,7 +165,8 @@ struct Index {
 gzclose(): Promise<ReturnStatus>
 ```
 
-Clears all pending output of the file. Closes the file and releases the decompression or compression state if necessary. This API uses a promise to return the result.
+Clears all pending output of the file. Closes the file and releases the decompression or compression state if
+necessary. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -231,7 +232,8 @@ struct Index {
 gzcloser(): Promise<ReturnStatus>
 ```
 
-Implements the same functions as that of **gzclose()** for reading only. This API uses a promise to return the result.
+Implements the same functions as that of **gzclose()** for reading only. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -298,7 +300,8 @@ struct Index {
 gzclosew(): Promise<ReturnStatus>
 ```
 
-Implements the same functions as that of **gzclose()** for writing or appending. This API uses a promise to return the result.
+Implements the same functions as that of **gzclose()** for writing or appending. This API uses a promise to
+return the result.
 
 **Since:** 12
 
@@ -364,7 +367,8 @@ struct Index {
 gzdirect(): Promise<number>
 ```
 
-Checks whether the specified gzip file handle directly accesses the original uncompressed data and reallocates the buffer. This API uses a promise to return the result.
+Checks whether the specified gzip file handle directly accesses the original uncompressed data and reallocates
+the buffer. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -424,7 +428,8 @@ struct Index {
 gzdopen(fd: number, mode: string): Promise<void>
 ```
 
-Associates gzip file with the file descriptor (fd) and opens the file for reading and decompressing, or compressing and writing. This API uses a promise to return the result.
+Associates gzip file with the file descriptor (fd) and opens the file for reading and decompressing, or
+compressing and writing. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -498,7 +503,8 @@ struct Index {
 gzeof(): Promise<number>
 ```
 
-Checks whether the position from which data is read has reached the end of the gzip file. This API uses a promise to return the result.
+Checks whether the position from which data is read has reached the end of the gzip file. This API uses a promise
+to return the result.
 
 **Since:** 12
 
@@ -658,7 +664,7 @@ Flushes all pending output into a compressed file. This API uses a promise to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| flush | CompressFlushMode | Yes | Controls the flushing mode. For details, see[CompressFlushMode](arkts-basicservices-compressflushmode-e.md#compressflushmode). |
+| flush | CompressFlushMode | Yes | Controls the flushing mode. For details, see[CompressFlushMode](arkts-basicservices-compressflushmode-e.md). |
 
 **Return value:**
 
@@ -803,7 +809,8 @@ struct Index {
 gzfwrite(buf: ArrayBuffer, size: number, nitems: number): Promise<number>
 ```
 
-Compresses data blocks that are declared with size and nitems from the buffer and writes the data blocks to a file. This API uses a promise to return the result.
+Compresses data blocks that are declared with size and nitems from the buffer and writes the data blocks to a
+file. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -952,7 +959,8 @@ struct Index {
 gzgets(buf: ArrayBuffer): Promise<string>
 ```
 
-Reads bytes from a compressed file until len-1 characters are read, a newline character is read and transferred to a buffer, or an end-of-file condition is encountered. This API uses a promise to return the result.
+Reads bytes from a compressed file until len-1 characters are read, a newline character is read and transferred
+to a buffer, or an end-of-file condition is encountered. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1095,7 +1103,8 @@ struct Index {
 gzopen(path: string, mode: string): Promise<void>
 ```
 
-Opens the .gz file in the specified path for reading and decompressing, or compressing and writing. This API uses a promise to return the result.
+Opens the .gz file in the specified path for reading and decompressing, or compressing and writing. This API uses
+a promise to return the result.
 
 **Since:** 12
 
@@ -1168,7 +1177,8 @@ struct Index {
 gzprintf(format: string, ...args: Array<string | number>): Promise<number>
 ```
 
-Converts and formats the parameters under the control of the string format and then compresses and writes them into a file, as shown in the **fprintf()**. This API uses a promise to return the result.
+Converts and formats the parameters under the control of the string format and then compresses and writes them
+into a file, as shown in the **fprintf()**. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1243,7 +1253,8 @@ struct Index {
 gzputc(ch: number): Promise<number>
 ```
 
-Compresses **char** converted to an unsigned character and writes it to a file. This API uses a promise to return the result.
+Compresses **char** converted to an unsigned character and writes it to a file. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -1316,7 +1327,8 @@ struct Index {
 gzputs(str: string): Promise<number>
 ```
 
-Compresses the given null-terminated strings and writes them to the file, excluding the null operator. This API uses a promise to return the result.
+Compresses the given null-terminated strings and writes them to the file, excluding the null operator. This API
+uses a promise to return the result.
 
 **Since:** 12
 
@@ -1389,7 +1401,8 @@ struct Index {
 gzread(buf: ArrayBuffer): Promise<number>
 ```
 
-Reads a maximum of **len** uncompressed bytes from a file and decompresses them into the buffer. This API uses a promise to return the result.
+Reads a maximum of **len** uncompressed bytes from a file and decompresses them into the buffer. This API uses a
+promise to return the result.
 
 **Since:** 12
 
@@ -1471,7 +1484,8 @@ struct Index {
 gzrewind(): Promise<ReturnStatus>
 ```
 
-Repositions the file pointer to the beginning of the file. This feature is applied only for reading. This API uses a promise to return the result.
+Repositions the file pointer to the beginning of the file. This feature is applied only for reading. This API
+uses a promise to return the result.
 
 **Since:** 12
 
@@ -1552,7 +1566,7 @@ Sets the start position to the offset position relative to the next **gzread** o
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | offset | number | Yes | Target offset position. |
-| whence | OffsetReferencePoint | Yes | Defines the reference point for the offset. For details, see[OffsetReferencePoint](arkts-basicservices-offsetreferencepoint-e.md#offsetreferencepoint). |
+| whence | OffsetReferencePoint | Yes | Defines the reference point for the offset. For details, see[OffsetReferencePoint](arkts-basicservices-offsetreferencepoint-e.md). |
 
 **Return value:**
 
@@ -1613,7 +1627,8 @@ struct Index {
 gzsetparams(level: CompressLevel, strategy: CompressStrategy): Promise<ReturnStatus>
 ```
 
-Dynamically updates the compression level and compression strategy of a file. This API uses a promise to return the result.
+Dynamically updates the compression level and compression strategy of a file. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -1625,8 +1640,8 @@ Dynamically updates the compression level and compression strategy of a file. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| level | CompressLevel | Yes | Compression level. For details, see [CompressLevel](arkts-basicservices-compresslevel-e.md#compresslevel). |
-| strategy | CompressStrategy | Yes | Compression strategy. For details, see[CompressStrategy](arkts-basicservices-compressstrategy-e.md#compressstrategy). |
+| level | CompressLevel | Yes | Compression level. For details, see [CompressLevel](arkts-basicservices-compresslevel-e.md). |
+| strategy | CompressStrategy | Yes | Compression strategy. For details, see[CompressStrategy](arkts-basicservices-compressstrategy-e.md). |
 
 **Return value:**
 
@@ -1688,7 +1703,8 @@ struct Index {
 gztell(): Promise<number>
 ```
 
-Returns the start position of the next **gzread** or **gzwrite** in the file. This API uses a promise to return the result.
+Returns the start position of the next **gzread** or **gzwrite** in the file. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -1754,7 +1770,8 @@ struct Index {
 gzungetc(c: number): Promise<number>
 ```
 
-Pushes **c** back into the input stream so that it will be read as the first character the next time the file is read. This API uses a promise to return the result.
+Pushes **c** back into the input stream so that it will be read as the first character the next time the file is
+read. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -1830,7 +1847,8 @@ struct Index {
 gzwrite(buf: ArrayBuffer, len: number): Promise<number>
 ```
 
-Compresses the uncompressed bytes of the declared length in the buffer and writes them to the file. This API uses a promise to return the result.
+Compresses the uncompressed bytes of the declared length in the buffer and writes them to the file. This API uses
+a promise to return the result.
 
 **Since:** 12
 

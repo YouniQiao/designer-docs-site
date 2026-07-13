@@ -6,7 +6,7 @@ Describes Image, Video TYPE FetchOptions's predicate
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [PhotoKeys](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photokeys-e.md#photokeys)
+**Substitutes:** [PhotoKeys](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photokeys-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

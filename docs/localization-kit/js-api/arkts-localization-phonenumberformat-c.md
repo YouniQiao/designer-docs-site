@@ -1,6 +1,7 @@
 # PhoneNumberFormat
 
-Provides phone number management capabilities, such as phone number validity verification, formatting, and home location retrieval.
+Provides phone number management capabilities, such as phone number validity verification, formatting, and home
+location retrieval.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ Provides phone number management capabilities, such as phone number validity ver
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -49,7 +50,10 @@ let phoneNumberFormat: i18n.PhoneNumberFormat = new i18n.PhoneNumberFormat('CN',
 format(phoneNumber: string): string
 ```
 
-Formats a phone number. > **Description** > > Formatting dialed phone numbers is supported since API version 12.
+Formats a phone number.
+
+> **Description**
+> > Formatting dialed phone numbers is supported since API version 12.
 
 **Since:** 8
 
@@ -96,7 +100,10 @@ for (let i = 0; i < phoneNumber.length; i++) {
 getLocationName(phoneNumber: string, locale: string): string
 ```
 
-Obtains the home location of a phone number. > **Description** > > This API can be used to obtain the home location of a dialed number in real time since API version 23.
+Obtains the home location of a phone number.
+
+> **Description**
+> > This API can be used to obtain the home location of a dialed number in real time since API version 23.
 
 **Since:** 9
 

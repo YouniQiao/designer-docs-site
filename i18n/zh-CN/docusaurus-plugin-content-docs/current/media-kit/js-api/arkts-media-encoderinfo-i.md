@@ -6,40 +6,6 @@ Describes the information about an encoder.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
-
-## frameRate
-
-```TypeScript
-frameRate?: Range
-```
-
-Video frame rate range, with the minimum and maximum frame rates specified, in fps. This parameter is available only for video encoders.
-
-**类型：** Range
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## channels
-
-```TypeScript
-channels?: Range
-```
-
-Number of audio channels for the audio capturer, with the minimum and maximum numbers of audio channels specified. This parameter is available only for audio encoders.
-
-**类型：** Range
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
 ## bitRate
 
 ```TypeScript
@@ -54,13 +20,45 @@ Bit rate range of the encoder, with the minimum and maximum bit rates specified,
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
-## width
+## channels
 
 ```TypeScript
-width?: Range
+channels?: Range
 ```
 
-Video frame width range, with the minimum and maximum widths specified, in px. This parameter is available only for video encoders.
+Number of audio channels for the audio capturer, with the minimum and maximum numbers of audio channels
+specified.
+This parameter is available only for audio encoders.
+
+**类型：** Range
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+## frameRate
+
+```TypeScript
+frameRate?: Range
+```
+
+Video frame rate range, with the minimum and maximum frame rates specified, in fps.
+This parameter is available only for video encoders.
+
+**类型：** Range
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+## height
+
+```TypeScript
+height?: Range
+```
+
+Video frame height range, with the minimum and maximum heights specified, in px.
+This parameter is available only for video encoders.
 
 **类型：** Range
 
@@ -82,6 +80,21 @@ MIME type of the encoder.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
+## sampleRate
+
+```TypeScript
+sampleRate?: Array<number>
+```
+
+Audio sampling rate, including all available audio sampling rates, in Hz. The value depends on the encoder type,
+and this parameter is available only for audio encoders.
+
+**类型：** Array<number>
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
 ## type
 
 ```TypeScript
@@ -96,27 +109,14 @@ Encoder type. The value **audio** means an audio encoder, and **video** means a 
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
-## sampleRate
+## width
 
 ```TypeScript
-sampleRate?: Array<int>
+width?: Range
 ```
 
-Audio sampling rate, including all available audio sampling rates, in Hz. The value depends on the encoder type, and this parameter is available only for audio encoders.
-
-**类型：** Array<int>
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## height
-
-```TypeScript
-height?: Range
-```
-
-Video frame height range, with the minimum and maximum heights specified, in px. This parameter is available only for video encoders.
+Video frame width range, with the minimum and maximum widths specified, in px.
+This parameter is available only for video encoders.
 
 **类型：** Range
 

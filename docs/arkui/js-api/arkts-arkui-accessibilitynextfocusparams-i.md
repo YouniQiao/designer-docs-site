@@ -12,7 +12,8 @@ Defines struct of the parameters used to configure the next accessibility focus 
 isConsiderDescendants?: boolean
 ```
 
-isConsiderDescendants - Determines whether the focus search should consider focusable nodes within the descendants of the target element during the next accessibility focus operation.
+isConsiderDescendants - Determines whether the focus search should consider focusable nodes within the
+descendants of the target element during the next accessibility focus operation.
 
 **Type:** boolean
 

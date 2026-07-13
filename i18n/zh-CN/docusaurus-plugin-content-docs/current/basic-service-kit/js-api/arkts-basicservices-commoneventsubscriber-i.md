@@ -12,7 +12,9 @@
 abortCommonEvent(callback: AsyncCallback<void>): void
 ```
 
-添加有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事 件，使该公共事件不再向下一个订阅者传递。使用callback异步回调。
+添加有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事
+件，使该公共事件不再向下一个订阅者传递。使用callback异步回调。
 
 **起始版本：** 7
 
@@ -28,7 +30,7 @@ abortCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## abortCommonEvent
 
@@ -36,7 +38,9 @@ abortCommonEvent(callback: AsyncCallback<void>): void
 abortCommonEvent(): Promise<void>
 ```
 
-添加有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事 件，使该公共事件不再向下一个订阅者传递。使用Promise异步回调。
+添加有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事
+件，使该公共事件不再向下一个订阅者传递。使用Promise异步回调。
 
 **起始版本：** 7
 
@@ -54,7 +58,9 @@ abortCommonEvent(): Promise<void>
 abortCommonEventSync(): void
 ```
 
-添加有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事 件，使该公共事件不再向下一个订阅者传递。
+添加有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以中止当前的有序公共事
+件，使该公共事件不再向下一个订阅者传递。
 
 **起始版本：** 10
 
@@ -66,7 +72,9 @@ abortCommonEventSync(): void
 clearAbortCommonEvent(callback: AsyncCallback<void>): void
 ```
 
-清理有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下 一个订阅者传递。使用callback异步回调。
+清理有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下
+一个订阅者传递。使用callback异步回调。
 
 **起始版本：** 7
 
@@ -82,7 +90,7 @@ clearAbortCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## clearAbortCommonEvent
 
@@ -90,7 +98,9 @@ clearAbortCommonEvent(callback: AsyncCallback<void>): void
 clearAbortCommonEvent(): Promise<void>
 ```
 
-清理有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下 一个订阅者传递。使用Promise异步回调。
+清理有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下
+一个订阅者传递。使用Promise异步回调。
 
 **起始版本：** 7
 
@@ -108,7 +118,9 @@ clearAbortCommonEvent(): Promise<void>
 clearAbortCommonEventSync(): void
 ```
 
-清理有序公共事件的中止状态。当该接口与 [finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下 一个订阅者传递。
+清理有序公共事件的中止状态。当该接口与
+[finishCommonEvent](arkts-basicservices-commoneventsubscriber-i.md#finishcommonevent-1)配合使用时，可以使该公共事件继续向下
+一个订阅者传递。
 
 **起始版本：** 10
 
@@ -136,7 +148,7 @@ finishCommonEvent(callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## finishCommonEvent
 
@@ -178,7 +190,7 @@ getAbortCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## getAbortCommonEvent
 
@@ -240,7 +252,7 @@ getCode(callback: AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## getCode
 
@@ -306,7 +318,7 @@ getData(callback: AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## getData
 
@@ -372,7 +384,7 @@ getSubscribeInfo(callback: AsyncCallback<CommonEventSubscribeInfo>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## getSubscribeInfo
 
@@ -436,7 +448,7 @@ isOrderedCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## isOrderedCommonEvent
 
@@ -496,7 +508,7 @@ isStickyCommonEvent(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## isStickyCommonEvent
 
@@ -559,7 +571,7 @@ setCode(code: number, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setCode
 
@@ -591,7 +603,7 @@ setCode(code: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setCodeAndData
 
@@ -619,7 +631,7 @@ setCodeAndData(code: number, data: string, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setCodeAndData
 
@@ -652,7 +664,7 @@ setCodeAndData(code: number, data: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setCodeAndDataSync
 
@@ -679,7 +691,7 @@ setCodeAndDataSync(code: number, data: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setCodeSync
 
@@ -705,7 +717,7 @@ setCodeSync(code: number): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setData
 
@@ -732,7 +744,7 @@ setData(data: string, callback: AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setData
 
@@ -764,7 +776,7 @@ setData(data: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 ## setDataSync
 
@@ -790,5 +802,5 @@ setDataSync(data: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 

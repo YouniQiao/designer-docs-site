@@ -14,7 +14,11 @@
 enabled?: boolean
 ```
 
-输入框启用或禁用语音按钮。 true表示启用语音按钮，false表示禁用语音按钮。 默认值：false
+输入框启用或禁用语音按钮。
+
+true表示启用语音按钮，false表示禁用语音按钮。
+
+默认值：false
 
 **类型：** boolean
 

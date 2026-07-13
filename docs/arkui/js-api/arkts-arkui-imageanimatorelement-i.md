@@ -12,7 +12,10 @@ Image animator element
 getState(): "Playing" | "Paused" | "Stopped"
 ```
 
-Obtains the playback state. Available values are as follows: Playing Paused Stopped
+Obtains the playback state. Available values are as follows:
+Playing
+Paused
+Stopped
 
 **Since:** 4
 

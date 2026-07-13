@@ -47,11 +47,11 @@ for (let value of lightWeightSet) {
 // value: squirrel
 
 // 使用方法二：
-let iter = lightWeightSet[Symbol.iterator]();
-let temp: IteratorResult<string> = iter.next();
-while(!temp.done) {
-  console.info("value:", temp.value);
-  temp = iter.next();
+let symbolIterator = lightWeightSet[Symbol.iterator]();
+let iteratorResult: IteratorResult<string> = symbolIterator.next();
+while(!iteratorResult.done) {
+  console.info("value:", iteratorResult.value);
+  iteratorResult = symbolIterator.next();
 }
 // value: sparrow
 // value: squirrel
@@ -105,6 +105,7 @@ add(obj: T): boolean
 **示例：**
 
 ```TypeScript
+// 向容器中添加元素
 let lightWeightSet = new LightWeightSet<string>();
 let result = lightWeightSet.add("squirrel");
 console.info("result:", result);  // result: true
@@ -151,6 +152,7 @@ lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
 let set = new LightWeightSet<string>();
 set.add("gull");
+// 将另一个容器的所有元素添加到当前容器
 lightWeightSet.addAll(set);
 let result = lightWeightSet.has("gull");
 console.info("result:", result);  // result: true
@@ -183,6 +185,7 @@ clear(): void
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 清除容器中的所有元素
 lightWeightSet.clear();
 let result = lightWeightSet.isEmpty();
 console.info("result:", result);  // result: true
@@ -212,6 +215,7 @@ LightWeightSet的构造函数。
 **示例：**
 
 ```TypeScript
+// 创建LightWeightSet实例
 let lightWeightSet = new LightWeightSet<number | string>();
 
 ```
@@ -248,8 +252,8 @@ entries(): IterableIterator<[T, T]>
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
-let iter = lightWeightSet.entries();
-for (let item of iter) {
+let entryIterator = lightWeightSet.entries();
+for (let item of entryIterator) {
   console.info("value:", item[1])
 }
 // value: sparrow
@@ -275,7 +279,11 @@ for(let i = 0; i < 10; i++) {
 equal(obj: Object): boolean
 ```
 
-判断此容器与obj的构成元素是否相同。 > **说明** > > 此接口从API version 8开始支持，从API version 12开始废弃。无替代接口。
+判断此容器与obj的构成元素是否相同。
+
+> **说明**
+>
+> 此接口从API version 8开始支持，从API version 12开始废弃。无替代接口。
 
 **起始版本：** 8
 
@@ -307,8 +315,9 @@ equal(obj: Object): boolean
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
-let obj = ["sparrow", "squirrel"];
-let result = lightWeightSet.equal(obj);
+let comparisonArray = ["sparrow", "squirrel"];
+// 判断此容器与obj的构成元素是否相同
+let result = lightWeightSet.equal(comparisonArray);
 console.info("result:", result);  // result: true
 
 ```
@@ -346,6 +355,7 @@ forEach(callbackFn: (value?: T, key?: T, set?: LightWeightSet<T>) => void, thisA
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("sparrow");
 lightWeightSet.add("gull");
+// 通过回调函数遍历LightWeightSet中的元素
 lightWeightSet.forEach((value: string, key: string) => {
   console.info("value:" + value, "key:" + key);
 });
@@ -404,6 +414,7 @@ getIndexOf(key: T): number
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 获取指定元素的下标
 let result = lightWeightSet.getIndexOf("sparrow");
 console.info("result:", result);  // result: 0
 
@@ -440,6 +451,18 @@ getValueAt(index: number): T
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The getValueAt method cannot be bound. |
+
+**示例：**
+
+```TypeScript
+let lightWeightSet = new LightWeightSet<string>();
+lightWeightSet.add("squirrel");
+lightWeightSet.add("sparrow");
+// 获取指定下标对应的元素
+let result = lightWeightSet.getValueAt(1);
+console.info("result:", result);  // result: squirrel
+
+```
 
 ## has
 
@@ -478,6 +501,7 @@ has(key: T): boolean
 ```TypeScript
 let lightWeightSet = new LightWeightSet<number>();
 lightWeightSet.add(123);
+// 判断容器中是否包含指定元素
 let result = lightWeightSet.has(123);
 console.info("result:", result);  // result: true
 
@@ -523,6 +547,7 @@ lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
 let set = new LightWeightSet<string>();
 set.add("sparrow");
+// 判断容器中是否包含指定set中的所有元素
 let result = lightWeightSet.hasAll(set);
 console.info("result:", result);  // result: true
 
@@ -559,6 +584,7 @@ increaseCapacityTo(minimumCapacity: number): void
 
 ```TypeScript
 let lightWeightSet = new LightWeightSet<string>();
+// 将容器扩容至指定容量
 lightWeightSet.increaseCapacityTo(10);
 
 ```
@@ -592,6 +618,7 @@ isEmpty(): boolean
 **示例：**
 
 ```TypeScript
+// 判断容器是否为空
 const lightWeightSet = new LightWeightSet<number>();
 let result = lightWeightSet.isEmpty();
 console.info("result:", result);  // result: true
@@ -636,6 +663,7 @@ remove(key: T): T
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 删除并返回指定元素
 let result = lightWeightSet.remove("sparrow");
 console.info("result:", result);  // result: sparrow
 
@@ -679,6 +707,7 @@ removeAt(index: number): boolean
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 删除指定下标的元素
 let result = lightWeightSet.removeAt(1);
 console.info("result:", result);  // result: true
 
@@ -716,6 +745,7 @@ toArray(): Array<T>
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 获取包含此容器中所有对象的数组
 let result = lightWeightSet.toArray();
 console.info(result.toString());
 // sparrow,squirrel
@@ -748,6 +778,7 @@ toString(): String
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 获取包含容器中所有元素的字符串
 let result = lightWeightSet.toString();
 console.info("result:", result);  // result: sparrow,squirrel
 
@@ -785,6 +816,7 @@ values(): IterableIterator<T>
 let lightWeightSet = new LightWeightSet<string>();
 lightWeightSet.add("squirrel");
 lightWeightSet.add("sparrow");
+// 获取包含所有元素的迭代器
 let values = lightWeightSet.values();
 for (let value of values) {
   console.info("value:", value);

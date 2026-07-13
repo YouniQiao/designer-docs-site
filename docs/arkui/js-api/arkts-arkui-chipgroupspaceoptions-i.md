@@ -9,7 +9,7 @@ Defines the left and right padding of the chip group, and the spacing between ch
 ## Modules to Import
 
 ```TypeScript
-import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@ohos.arkui.advanced.ChipGroup';
+import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@kit.ArkUI';
 ```
 
 ## endSpace
@@ -18,7 +18,13 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 endSpace?: Length
 ```
 
-Right padding. Percentage values are not supported. Default value: **16** Unit: vp If the value is **undefined**, the default value is used.
+Right padding. Percentage values are not supported.
+
+Default value: **16**
+
+Unit: vp
+
+If the value is **undefined**, the default value is used.
 
 **Type:** Length
 
@@ -36,7 +42,22 @@ Right padding. Percentage values are not supported. Default value: **16** Unit: 
 itemSpace?: string | number
 ```
 
-Spacing between chips. Percentage values are not supported. Value range: Number type: a value greater than or equal to 0 (for example, **0**, **8**, **16**, or **24.5**) String type: a value greater than or equal to 0, with a unit of fp, vp, px, or lpx (for example, **"8vp"**, **"16fp"**, **"12px"**, or **"10lpx"**) Not supported: negative values, percentage units, and invalid string formats. Default value: **8** Unit: vp If the value is **undefined**, the default value is used.
+Spacing between chips. Percentage values are not supported.
+
+Value range:
+
+Number type: a value greater than or equal to 0 (for example, **0**, **8**, **16**, or **24.5**)
+
+String type: a value greater than or equal to 0, with a unit of fp, vp, px, or lpx (for example, **"8vp"**,
+**"16fp"**, **"12px"**, or **"10lpx"**)
+
+Not supported: negative values, percentage units, and invalid string formats.
+
+Default value: **8**
+
+Unit: vp
+
+If the value is **undefined**, the default value is used.
 
 **Type:** string | number
 
@@ -54,7 +75,13 @@ Spacing between chips. Percentage values are not supported. Value range: Number 
 startSpace?: Length
 ```
 
-Left padding. Percentage values are not supported. Default value: **16** Unit: vp If this parameter is set to **undefined**, the default value is used.
+Left padding. Percentage values are not supported.
+
+Default value: **16**
+
+Unit: vp
+
+If this parameter is set to **undefined**, the default value is used.
 
 **Type:** Length
 

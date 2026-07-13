@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## finish
@@ -12,7 +12,9 @@ import { huks } from '@ohos.security.huks';
 function finish(handle: number, options: HuksOptions, callback: AsyncCallback<HuksResult>): void
 ```
 
-Finishes the key operation. This API uses an asynchronous callback to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Finishes the key operation. This API uses an asynchronous callback to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 
@@ -37,7 +39,9 @@ Finishes the key operation. This API uses an asynchronous callback to return the
 function finish(handle: number, options: HuksOptions): Promise<HuksResult>
 ```
 
-Finishes the key operation. This API uses a promise to return the result. The **huks.init**, **huks.update**, and **huks.finish** must be used together.
+Finishes the key operation. This API uses a promise to return the result.
+
+The **huks.init**, **huks.update**, and **huks.finish** must be used together.
 
 **Since:** 8
 

@@ -6,7 +6,11 @@
 function getProcessRunningInfos(): Promise<Array<ProcessRunningInfo>>
 ```
 
-获取有关运行进程的信息。使用Promise异步回调。 > 从 API Version 9 开始废弃，建议使用 > [appManager.getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) > 替代。
+获取有关运行进程的信息。使用Promise异步回调。
+
+> 从 API Version 9 开始废弃，建议使用
+> [appManager.getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -45,7 +49,11 @@ appManager.getProcessRunningInfos().then((data) => {
 function getProcessRunningInfos(callback: AsyncCallback<Array<ProcessRunningInfo>>): void
 ```
 
-获取有关运行进程的信息。使用callback异步回调。 > 从 API Version 9 开始废弃，建议使用 > [appManager.getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) > 替代。
+获取有关运行进程的信息。使用callback异步回调。
+
+> 从 API Version 9 开始废弃，建议使用
+> [appManager.getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1)
+> 替代。
 
 **起始版本：** 8
 

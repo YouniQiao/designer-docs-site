@@ -9,7 +9,7 @@ LightWeightMap stores key-value (KV) pairs. Each key must be unique and have onl
 ## Modules to Import
 
 ```TypeScript
-import { LightWeightMap } from '@ohos.util.LightWeightMap';
+import { LightWeightMap } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -600,7 +600,9 @@ console.info("result:", result);  // result: true
 increaseCapacityTo(minimumCapacity: number): void
 ```
 
-Increases the capacity of this LightWeightMap. If the passed-in capacity is greater than or equal to the number of elements in this LightWeightMap, the capacity is changed to the new capacity. If the passed-in capacity is less than the number of elements in this LightWeightMap, the capacity is not changed.
+Increases the capacity of this LightWeightMap. If the passed-in capacity is greater than or equal to the number of
+elements in this LightWeightMap, the capacity is changed to the new capacity. If the passed-in capacity is less
+than the number of elements in this LightWeightMap, the capacity is not changed.
 
 **Since:** 8
 

@@ -6,7 +6,8 @@
 function getLauncherAbilityInfo(bundleName: string, userId: number, callback: AsyncCallback<Array<LauncherAbilityInfo>>) : void
 ```
 
-查询指定bundleName及用户的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo)。使用callback异步 回调。
+查询指定bundleName及用户的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md)。使用callback异步
+回调。
 
 **起始版本：** 9
 
@@ -22,7 +23,7 @@ function getLauncherAbilityInfo(bundleName: string, userId: number, callback: As
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 应用Bundle名称。 |
 | userId | number | 是 | 被查询的用户ID，可以通过[getOsAccountLocalId接口](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)获取。 |
-| callback | AsyncCallback&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback)。当函数调用成功，err为undefined，data为bundle包含的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo)信息。否则为错误对象。 |
+| callback | AsyncCallback&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | 是 | [回调函数](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md)。当函数调用成功，err为undefined，data为bundle包含的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md)信息。否则为错误对象。 |
 
 **错误码：**
 
@@ -30,8 +31,8 @@ function getLauncherAbilityInfo(bundleName: string, userId: number, callback: As
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Verify permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not support. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not support. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundle name is not found. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 
@@ -65,7 +66,8 @@ try {
 function getLauncherAbilityInfo(bundleName: string, userId: number) : Promise<Array<LauncherAbilityInfo>>
 ```
 
-查询指定bundleName及用户的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo)。使用Promise异步回 调。
+查询指定bundleName及用户的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md)。使用Promise异步回
+调。
 
 **起始版本：** 9
 
@@ -86,7 +88,7 @@ function getLauncherAbilityInfo(bundleName: string, userId: number) : Promise<Ar
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Promise对象。返回bundle包含的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo)信息。 |
+| Promise&lt;Array&lt;LauncherAbilityInfo&gt;&gt; | Promise对象。返回bundle包含的[LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md)信息。 |
 
 **错误码：**
 
@@ -94,8 +96,8 @@ function getLauncherAbilityInfo(bundleName: string, userId: number) : Promise<Ar
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Verify permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not support. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not support. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundle name is not found. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 

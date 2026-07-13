@@ -1,8 +1,12 @@
 # DialogController
 
-Implements a custom dialog controller that inherits from [CommonController](#commoncontroller18). It can be used as a member variable of **UIContext** to display custom dialog boxes. For specific usage, see the examples for [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18) and [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18).
+Implements a custom dialog controller that inherits from [CommonController](#commoncontroller18).
 
-**Inheritance/Implementation:** DialogController extends [CommonController](arkts-arkui-commoncontroller-c.md#commoncontroller)
+It can be used as a member variable of **UIContext** to display custom dialog boxes. For specific usage,
+see the examples for [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18)
+and [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18).
+
+**Inheritance/Implementation:** DialogController extends [CommonController](arkts-arkui-commoncontroller-c.md)
 
 **Since:** 18
 
@@ -15,6 +19,6 @@ Implements a custom dialog controller that inherits from [CommonController](#com
 ## Modules to Import
 
 ```TypeScript
-import { LevelMode, ImmersiveMode, LevelOrder } from '@ohos.promptAction';
+import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 

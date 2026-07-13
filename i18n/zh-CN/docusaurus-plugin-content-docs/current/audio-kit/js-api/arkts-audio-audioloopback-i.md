@@ -1,16 +1,21 @@
 # AudioLoopback
 
-This interface provides APIs for audio monitoring. Before calling any API in AudioLoopback, you must use [audio.createAudioLoopback](arkts-audio-createaudioloopback-f.md#createAudioLoopback-1) to create an AudioLoopback instance. When audio loopback is enabled, the system creates a low-latency renderer and capturer to implement low-latency in- ear monitoring. The audio captured is routed back to the renderer through an internal path. The renderer follows the audio focus strategy for [STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md#StreamUsage), whereas the capturer follows the strategy for [SOURCE_TYPE_MIC](arkts-audio-sourcetype-e.md#SourceType). The system automatically chooses the input and output devices. If these devices do not support low latency, audio loopback does not work. If another audio stream takes over the audio focus or if the input or output device changes to the one that does not support low latency, the system disables audio loopback automatically. > **NOTE** > > - The initial APIs of this interface are supported since API version 20.
+提供音频返听的相关接口。
+
+在使用AudioLoopback的接口之前，需先通过[audio.createAudioLoopback](arkts-audio-createaudioloopback-f.md#createaudioloopback-1)获取AudioLoopback实例。
+
+当启用音频返听时，系统会创建低时延渲染器与低时延采集器，实现低时延耳返功能。采集的音频直接通过内部路由返回到渲染器。对于渲染器，其音频焦点策略与
+[STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md)相匹配。对于采集器，其音频焦点策略与[SOURCE_TYPE_MIC](arkts-audio-sourcetype-e.md)相匹配。
+
+输入\输出设备由系统自动选择。如果当前输入\输出不支持低时延，则音频返听无法启用。在运行过程中，如果音频焦点被另一个音频流抢占，输入\输出设备切换到不支持低时延的设备，系统会自动禁用音频返听。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 20开始支持。
 
 **起始版本：** 20
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## enable
 
@@ -18,13 +23,11 @@ import { audio } from '@kit.AudioKit';
 enable(enable: boolean): Promise<boolean>
 ```
 
-Enable or disable audio loopback. When audio loopback is enabled, the system automatically creates fast playback and recording streams to implement low-latency in-ear monitoring. When audio loopback is disabled, the audio stream is destroyed. If enabling audio loopback fails, you can use {@link AudioLoopback#getStatus} to query the cause. After audio loopback is enabled, you can subscribe to the statusChange event to listen for audio loopback status changes.
+启用或禁用音频返听器。使用Promise异步回调。
 
 **起始版本：** 20
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Capturer
 
@@ -32,20 +35,20 @@ Enable or disable audio loopback. When audio loopback is enabled, the system aut
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| enable | boolean | 是 | Whether to enable or disable audio loopback. true to enable, false otherwise. |
+| enable | boolean | 是 | 表示是否启用音频返听器。true表示启用，false表示不启用。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the API call is successful.  true is successful, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示功能执行成功；返回false表示功能执行失败。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. |
-| 6800101 | Parameter verification failed. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## getEqualizerPreset
 
@@ -53,7 +56,7 @@ Enable or disable audio loopback. When audio loopback is enabled, the system aut
 getEqualizerPreset(): AudioLoopbackEqualizerPreset
 ```
 
-Gets the current equalizer preset. The default equalizer preset of audio loopback is {@link AudioLoopbackEqualizerPreset#FULL} if users do not modify the preset.
+获取当前音频返听器的均衡器类型。
 
 **起始版本：** 21
 
@@ -63,7 +66,7 @@ Gets the current equalizer preset. The default equalizer preset of audio loopbac
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioLoopbackEqualizerPreset | Equalizer type.  If no equalizer type has been set, the default equalizer type is FULL. |
+| AudioLoopbackEqualizerPreset | 返回当前音频返听器的均衡器类型。<br>在没有被修改的情况下，默认的均衡器类型是FULL。 |
 
 ## getPreferredDevicePair
 
@@ -71,7 +74,7 @@ Gets the current equalizer preset. The default equalizer preset of audio loopbac
 getPreferredDevicePair(): AudioDevicePair | null
 ```
 
-Gets the preferred audio device pair in current device connection situation.
+获取当前设备连接状态下系统推荐的返听音频输入输出设备组合。
 
 **起始版本：** 26.0.0
 
@@ -83,7 +86,7 @@ Gets the preferred audio device pair in current device connection situation.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioDevicePair | The preferred audio device pair in audio system,  or null if there is no supported device pair. |
+| AudioDevicePair | 返回系统推荐的音频输入输出设备组合。<br>如果没有可用的输入输出设备组合，则返回null。 |
 
 ## getReverbPreset
 
@@ -91,7 +94,7 @@ Gets the preferred audio device pair in current device connection situation.
 getReverbPreset(): AudioLoopbackReverbPreset
 ```
 
-Get the current reverberation. The default reverberation preset of audio loopback is {@link AudioLoopbackReverbPreset#THEATER} if users do not modify the preset.
+获取当前音频返听器的混响模式。
 
 **起始版本：** 21
 
@@ -101,7 +104,7 @@ Get the current reverberation. The default reverberation preset of audio loopbac
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioLoopbackReverbPreset | Reverb mode.  If no reverb mode has been set, the default reverb mode is THEATER. |
+| AudioLoopbackReverbPreset | 返回当前音频返听器的混响模式。<br>在没有被修改的情况下，默认的混响模式是THEATER。 |
 
 ## getStatus
 
@@ -109,7 +112,7 @@ Get the current reverberation. The default reverberation preset of audio loopbac
 getStatus(): Promise<AudioLoopbackStatus>
 ```
 
-Obtains the audio loopback status. This API uses a promise to return the result.
+获取音频返听状态。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -119,7 +122,7 @@ Obtains the audio loopback status. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioLoopbackStatus> | Promise used to return the audio loopback status. |
+| Promise&lt;AudioLoopbackStatus&gt; | Promise对象，返回音频返听状态。 |
 
 ## getSupportedDevicePairs
 
@@ -127,7 +130,7 @@ Obtains the audio loopback status. This API uses a promise to return the result.
 getSupportedDevicePairs(): Array<AudioDevicePair>
 ```
 
-Gets supported audio device pairs in current device connection situation.
+获取当前设备连接状态下支持返听的音频输入输出设备组合。
 
 **起始版本：** 26.0.0
 
@@ -139,15 +142,15 @@ Gets supported audio device pairs in current device connection situation.
 
 | 类型 | 说明 |
 | --- | --- |
-| Array&lt;AudioDevicePair> | Audio device pairs that support loopback,  if there is no supported device pair, empty array will be returned. |
+| Array&lt;AudioDevicePair&gt; | 返回支持返听的音频输入输出设备数组。<br>如果没有可用的输入输出设备组合，则返回空数组。 |
 
 ## getVolume
 
 ```TypeScript
-getVolume(): double
+getVolume(): number
 ```
 
-Gets the output volume for audio loopback.
+获取音频返听输出音量。
 
 **起始版本：** 26.0.0
 
@@ -159,7 +162,7 @@ Gets the output volume for audio loopback.
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Current audio loopback output volume value. |
+| number | 返回当前音频返听输出音量，范围为[0.0, 1.0]。 |
 
 ## off('statusChange')
 
@@ -167,7 +170,7 @@ Gets the output volume for audio loopback.
 off(type: 'statusChange', callback?: Callback<AudioLoopbackStatus>): void
 ```
 
-Unsubscribes from the audio loopback status event. This API uses an asynchronous callback to return the result.
+取消监听音频状态事件。使用callback异步回调。
 
 **起始版本：** 20
 
@@ -177,38 +180,14 @@ Unsubscribes from the audio loopback status event. This API uses an asynchronous
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'statusChange' | 是 | Event type. The event 'statusChange' is triggered when the status of the  audio loopback is changed. |
-| callback | Callback&lt;AudioLoopbackStatus> | 否 |  |
+| type | 'statusChange' | 是 | 事件回调类型，支持的事件为'statusChange'，当取消监听音频状态事件时，触发该事件。 |
+| callback | Callback&lt;AudioLoopbackStatus&gt; | 否 | 回调函数，返回当前音频返听的状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offStatusChange
-
-```TypeScript
-offStatusChange(callback?: Callback<AudioLoopbackStatus>): void
-```
-
-Unsubscribes audio loopback status change event callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioLoopbackStatus> | 否 |  |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('statusChange')
 
@@ -216,7 +195,7 @@ Unsubscribes audio loopback status change event callback.
 on(type: 'statusChange', callback: Callback<AudioLoopbackStatus>): void
 ```
 
-Subscribes to the audio loopback status change event, which is triggered when the status of the audio loopback is changed. This API uses an asynchronous callback to return the result.
+监听返听状态变化事件（当AudioLoopback的状态发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 20
 
@@ -226,38 +205,14 @@ Subscribes to the audio loopback status change event, which is triggered when th
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'statusChange' | 是 | Event type. The event 'statusChange' is triggered when the status of the  audio loopback is changed. |
-| callback | Callback&lt;AudioLoopbackStatus> | 是 | Callback used to return the audio loopback status. |
+| type | 'statusChange' | 是 | 事件回调类型，支持的事件为'statusChange'，当AudioLoopback的状态发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioLoopbackStatus&gt; | 是 | 回调函数，返回当前音频返听的状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onStatusChange
-
-```TypeScript
-onStatusChange(callback: Callback<AudioLoopbackStatus>): void
-```
-
-Subscribes to audio loopback status changes.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioLoopbackStatus> | 是 | Callback used to return the audio loopback status  change event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setEqualizerPreset
 
@@ -265,7 +220,7 @@ Subscribes to audio loopback status changes.
 setEqualizerPreset(preset: AudioLoopbackEqualizerPreset): boolean
 ```
 
-Sets the equalizer preset of the audio loopback.
+设置音频返听器的均衡器类型。
 
 **起始版本：** 21
 
@@ -275,19 +230,19 @@ Sets the equalizer preset of the audio loopback.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| preset | AudioLoopbackEqualizerPreset | 是 | Equalizer type. |
+| preset | AudioLoopbackEqualizerPreset | 是 | 均衡器类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Setting result. true if successful, false otherwise. |
+| boolean | 返回均衡器类型是否设置成功。true表示成功，false表示不成功。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setReverbPreset
 
@@ -295,7 +250,7 @@ Sets the equalizer preset of the audio loopback.
 setReverbPreset(preset: AudioLoopbackReverbPreset): boolean
 ```
 
-Sets the reverberation of the audio loopback.
+设置音频返听器的混响模式。
 
 **起始版本：** 21
 
@@ -305,27 +260,27 @@ Sets the reverberation of the audio loopback.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| preset | AudioLoopbackReverbPreset | 是 | Reverb mode. |
+| preset | AudioLoopbackReverbPreset | 是 | 混响模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Setting result. true if successful, false otherwise. |
+| boolean | 返回混响模式是否设置成功。true表示成功，false表示不成功。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setVolume
 
 ```TypeScript
-setVolume(volume: double): Promise<void>
+setVolume(volume: number): Promise<void>
 ```
 
-Sets the volume for audio loopback. This volume does not affect other audio streams or the system volume.
+设置音频返听的音量。使用Promise异步回调。
 
 **起始版本：** 20
 
@@ -335,17 +290,17 @@ Sets the volume for audio loopback. This volume does not affect other audio stre
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volume | double | 是 | Volume to set. The value type is float, ranging from 0.0 to 1.0. |
+| volume | number | 是 | 音量值范围为[0.0, 1.0]。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed, from 0.0 to 1.0. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed, form 0.0 to 1.0. |
 

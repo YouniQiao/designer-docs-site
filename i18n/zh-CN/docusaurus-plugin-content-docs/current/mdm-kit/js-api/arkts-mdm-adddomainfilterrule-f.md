@@ -6,7 +6,19 @@
 function addDomainFilterRule(admin: Want, domainFilterRule: DomainFilterRule): void
 ```
 
-为设备添加域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md#logtype)。 添加了[Action](arkts-mdm-action-e.md#action)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的域名解析数据包将会被丢弃或拦截。 设备重启，将会清空域名过滤规则。 > **说明：** > > 为避免DNS缓存导致拦截规则失效，建议系统启动后立即配置域名过滤规则。若已因DNS缓存导致拦截失效，重启系统可清除缓存，恢复拦截功能。
+为设备添加域名过滤规则。
+
+API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。
+
+从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
+
+添加了[Action](arkts-mdm-action-e.md)为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的域名解析数据包将会被丢弃或拦截。
+
+设备重启，将会清空域名过滤规则。
+
+> **说明：**
+>
+> 为避免DNS缓存导致拦截规则失效，建议系统启动后立即配置域名过滤规则。若已因DNS缓存导致拦截失效，重启系统可清除缓存，恢复拦截功能。
 
 **起始版本：** 12
 
@@ -30,7 +42,7 @@ function addDomainFilterRule(admin: Want, domainFilterRule: DomainFilterRule): v
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-应用没有激活成设备管理器) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

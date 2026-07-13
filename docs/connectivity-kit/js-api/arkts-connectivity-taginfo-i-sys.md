@@ -1,6 +1,8 @@
 # TagInfo
 
-Provides tag information. <p>This class provides the technology a tag supports, for example, NFC-A. Applications can create different tags based on the supported technology.
+Provides tag information.
+<p>This class provides the technology a tag supports, for example, NFC-A. Applications can create
+different tags based on the supported technology.
 
 **Since:** 12
 
@@ -9,7 +11,7 @@ Provides tag information. <p>This class provides the technology a tag supports, 
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## extrasData

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## getFreeSize
@@ -12,7 +12,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 function getFreeSize(callback: AsyncCallback<number>): void
 ```
 
-Obtains the available space (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result.
+Obtains the available space (in bytes) of the built-in storage. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 15
 

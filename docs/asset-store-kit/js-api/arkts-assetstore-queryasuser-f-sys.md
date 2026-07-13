@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { asset } from '@ohos.security.asset';
+import { asset } from '@kit.AssetStoreKit';
 ```
 
 ## queryAsUser
@@ -12,7 +12,11 @@ import { asset } from '@ohos.security.asset';
 function queryAsUser(userId: number, query: AssetMap): Promise<Array<AssetMap>>
 ```
 
-Queries one or more assets in the specified user space. If user authentication is required for the access to the asset, call [asset.preQueryAsUser](arkts-assetstore-prequeryasuser-f-sys.md#prequeryasuser-1) before this API and call [asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1) after this API. For details about the development procedure, see [Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md). This API uses a promise to return the result.
+Queries one or more assets in the specified user space. If user authentication is required for the access to the
+asset, call [asset.preQueryAsUser](arkts-assetstore-prequeryasuser-f-sys.md#prequeryasuser-1) before this API and call
+[asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1) after this API. For details about the development procedure,
+see [Development Guidance](../../../../security/AssetStoreKit/asset-js-query-auth.md).
+This API uses a promise to return the result.
 
 **Since:** 12
 

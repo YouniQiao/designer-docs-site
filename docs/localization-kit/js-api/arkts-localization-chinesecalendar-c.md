@@ -1,8 +1,9 @@
 # ChineseCalendar
 
-Provide a ChineseCalendar interface which could handle unique characteristics of the chinese calendar, such as leap month.
+Provide a ChineseCalendar interface which could handle unique characteristics of the chinese calendar,
+such as leap month.
 
-**Inheritance/Implementation:** ChineseCalendar extends [Calendar](arkts-localization-calendar-c.md#calendar)
+**Inheritance/Implementation:** ChineseCalendar extends [Calendar](arkts-localization-calendar-c.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +12,7 @@ Provide a ChineseCalendar interface which could handle unique characteristics of
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## checkLeapMonth

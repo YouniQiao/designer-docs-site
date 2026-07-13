@@ -1,6 +1,7 @@
 # MoveResult (System API)
 
-Represents the information returned when the move operation fails. If the operation is successful, no information is returned.
+Represents the information returned when the move operation fails. If the operation is successful, no information
+is returned.
 
 **Since:** 11
 
@@ -13,7 +14,7 @@ Represents the information returned when the move operation fails. If the operat
 ## Modules to Import
 
 ```TypeScript
-import { fileAccess } from '@ohos.file.fileAccess';
+import { fileAccess } from '@kit.CoreFileKit';
 ```
 
 ## destUri
@@ -44,7 +45,8 @@ URI of the conflicting file. If the error is not caused by a file conflict, **de
 errCode: number
 ```
 
-Error code. For details about the error codes, see [File Management Error Codes](../../../../reference/apis-core-file-kit/errorcode-filemanagement.md).
+Error code. For details about the error codes, see
+[File Management Error Codes](../../../../reference/apis-core-file-kit/errorcode-filemanagement.md).
 
 **Type:** number
 

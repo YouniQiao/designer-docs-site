@@ -1,6 +1,10 @@
 # AnimatableArithmetic
 
-The **AnimatableArithmetic** API defines animation calculation rules for non-number data types. To animate non-number data (such as arrays, structs, and colors), you need to implement the addition, subtraction, multiplication, and equality checking functions in the **AnimatableArithmetic\<T\>** API. This enables the data to participate in animation interpolation calculations and to detect whether the data has changed. In other words, the non-number data is defined as types that implement the **AnimatableArithmetic\<T\>** API.
+The **AnimatableArithmetic** API defines animation calculation rules for non-number data types. To animate non-number
+data (such as arrays, structs, and colors), you need to implement the addition, subtraction, multiplication, and
+equality checking functions in the **AnimatableArithmetic\<T\>** API. This enables the data to participate in
+animation interpolation calculations and to detect whether the data has changed. In other words, the non-number data
+is defined as types that implement the **AnimatableArithmetic\<T\>** API.
 
 **Since:** 10
 

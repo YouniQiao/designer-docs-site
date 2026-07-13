@@ -9,7 +9,7 @@ The EnvironmentCallback module provides capabilities to listen for system enviro
 ## Modules to Import
 
 ```TypeScript
-import { EnvironmentCallback } from '@ohos.app.ability.EnvironmentCallback';
+import { EnvironmentCallback } from '@kit.AbilityKit';
 ```
 
 ## onConfigurationUpdated
@@ -18,7 +18,9 @@ import { EnvironmentCallback } from '@ohos.app.ability.EnvironmentCallback';
 onConfigurationUpdated(config: Configuration): void
 ```
 
-Called when the system configuration changes, after [a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2) .
+Called when the system configuration changes, after
+[a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2)
+.
 
 **Since:** 9
 
@@ -44,7 +46,9 @@ See [Usage of EnvironmentCallback](#usage-of-environmentcallback).
 onMemoryLevel(level: AbilityConstant.MemoryLevel): void
 ```
 
-Called when the system memory level changes, after [a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2) .
+Called when the system memory level changes, after
+[a listener has been registered for such events](arkts-ability-applicationcontext-c.md#on-2)
+.
 
 **Since:** 9
 

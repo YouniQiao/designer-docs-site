@@ -1,8 +1,12 @@
 # UIExtensionContext
 
-UIExtensionContext provides the context environment for [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md#extensioncontext) and provides UIExtensionAbility-related configuration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start a UIExtensionAbility.
+UIExtensionContext provides the context environment for
+[UIExtensionAbility](arkts-ability-uiextensionability-c.md). It inherits from
+[ExtensionContext](arkts-ability-extensioncontext-c.md) and provides UIExtensionAbility-related
+configuration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start a
+UIExtensionAbility.
 
-**Inheritance/Implementation:** UIExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md#extensioncontext)
+**Inheritance/Implementation:** UIExtensionContext extends [ExtensionContext](arkts-ability-extensioncontext-c.md)
 
 **Since:** 10
 
@@ -14,7 +18,12 @@ UIExtensionContext provides the context environment for [UIExtensionAbility](ark
 connectServiceExtensionAbilityWithRootHostToken(want: Want, connect: ConnectOptions): number
 ```
 
-Connects the current UI extension to an service extension ability with a root host token. If the target service extension ability is visible, you can connect the target service extension ability; If the target service extension ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to connect target invisible service extension ability. If the target service extension ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Connects the current UI extension to an service extension ability with a root host token.
+If the target service extension ability is visible, you can connect the target service extension ability;
+If the target service extension ability is invisible, you need to apply for
+permission:ohos.permission.START_INVISIBLE_ABILITY to connect target invisible service extension ability.
+If the target service extension ability is in cross-device, you need to apply for
+permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 26.0.0
 
@@ -61,7 +70,18 @@ Connects the current UI extension to an service extension ability with a root ho
 setHostPageOverlayForbidden(isForbidden: boolean) : void
 ```
 
-Sets whether the page started by the [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) can be overlaid by the page of the user. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > This API must be called before a window is created. You are advised to call it within the > [onCreate](arkts-ability-uiextensionability-c.md#oncreate-1) lifecycle of the > [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability).
+Sets whether the page started by the
+[UIExtensionAbility](arkts-ability-uiextensionability-c.md) can be overlaid by the page of
+the user.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the stage model, see
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+>
+> This API must be called before a window is created. You are advised to call it within the
+> [onCreate](arkts-ability-uiextensionability-c.md#oncreate-1) lifecycle of the
+> [UIExtensionAbility](arkts-ability-uiextensionability-c.md).
 
 **Since:** 15
 
@@ -75,7 +95,7 @@ Sets whether the page started by the [UIExtensionAbility](arkts-ability-uiextens
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isForbidden | boolean | Yes | Whether the page started by the[UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) can be overlaid by the page ofthe user. **true** if the page can be overlaid, **false** otherwise. |
+| isForbidden | boolean | Yes | Whether the page started by the[UIExtensionAbility](arkts-ability-uiextensionability-c.md) can be overlaid by the page ofthe user. **true** if the page can be overlaid, **false** otherwise. |
 
 **Error codes:**
 
@@ -90,7 +110,26 @@ Sets whether the page started by the [UIExtensionAbility](arkts-ability-uiextens
 startAbilityForResultAsCaller(want: Want, options?: StartOptions): Promise<AbilityResult>
 ```
 
-Starts an ability with the caller information specified. The caller information is carried in **want** and identified at the system service layer. The ability can obtain the caller information from the **want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API uses a promise to return the result. - Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability. The result is returned to the caller. - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**, is returned to the caller. - If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1) to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Starts an ability with the caller information specified. The caller information is carried in **want** and
+identified at the system service layer. The ability can obtain the caller information from the **want** parameter
+in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried
+in **want** is not overwritten by the current application information. The system service layer can obtain the
+initial caller information. This API uses a promise to return the result.
+
+- Normally, you can call
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+to terminate the ability. The result is returned to the caller.
+- If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,
+is returned to the caller.
+- If different applications call this API to start an ability that uses the singleton mode and then call
+[terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)
+to terminate the ability, the normal result is returned to the last caller, and an exception message, in which
+**resultCode** is **-1**, is returned to others.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the stage model, see
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 12
 
@@ -126,13 +165,13 @@ Starts an ability with the caller information specified. The caller information 
 | [16000069](../errorcode-ability.md#16000069-extensionability-fails-to-start-a-thirdparty-application-in-strict-mode) | The extension cannot start the third party application. |
 | [16000070](../errorcode-ability.md#16000070-extensionability-fails-to-start-a-serviceextensionability-in-strict-mode) | The extension cannot start the service. |
 | [16000073](../errorcode-ability.md#16000073-appcloneindex-is-invalid) | The app clone index is invalid. |
-| [16000071](../errorcode-ability.md#16000071-application-clone-is-not-supported) | App clone is not supported.<br>**Applicable version:** 14 |
-| [16000072](../errorcode-ability.md#16000072-multiapp-mode-is-not-supported) | App clone or multi-instance is not supported.<br>**Applicable version:** 14 |
-| [16000076](../errorcode-ability.md#16000076-appinstancekey-does-not-exist) | The app instance key is invalid.<br>**Applicable version:** 14 |
-| [16000077](../errorcode-ability.md#16000077-number-of-application-instances-reaches-the-upper-limit) | The number of app instances reaches the limit.<br>**Applicable version:** 14 |
-| [16000078](../errorcode-ability.md#16000078-multiinstance-mode-is-not-supported) | The multi-instance is not supported.<br>**Applicable version:** 14 |
-| [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 |
-| [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 |
+| [16000071](../errorcode-ability.md#16000071-application-clone-is-not-supported) | App clone is not supported.<br>**Applicable version:** 14 and later |
+| [16000072](../errorcode-ability.md#16000072-multiapp-mode-is-not-supported) | App clone or multi-instance is not supported.<br>**Applicable version:** 14 and later |
+| [16000076](../errorcode-ability.md#16000076-appinstancekey-does-not-exist) | The app instance key is invalid.<br>**Applicable version:** 14 and later |
+| [16000077](../errorcode-ability.md#16000077-number-of-application-instances-reaches-the-upper-limit) | The number of app instances reaches the limit.<br>**Applicable version:** 14 and later |
+| [16000078](../errorcode-ability.md#16000078-multiinstance-mode-is-not-supported) | The multi-instance is not supported.<br>**Applicable version:** 14 and later |
+| [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
+| [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
 ## startServiceExtensionAbility
 
@@ -188,7 +227,14 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result.
 startServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<void>
 ```
 
-Starts a ServiceExtensionAbility under a specified system account. This API uses a promise to return the result. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md). > > Permission verification is not required when **accountId** specifies the current user.
+Starts a ServiceExtensionAbility under a specified system account. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the stage model, see
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+>
+> Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 18
 
@@ -239,7 +285,18 @@ Starts a ServiceExtensionAbility under a specified system account. This API uses
 startUIAbilities(wantList: Array<Want>): Promise<void>
 ```
 
-Starts multiple UIAbility components simultaneously. This API uses a promise to return the result. You can pass the Want information of multiple UIAbility instances, which can point to one or more applications. If all the UIAbility instances can be started successfully, the system displays these UIAbility instances in multiple windows simultaneously. Depending on the window handling, different devices may have varying display effects ( including window shape, quantity, and layout). This API can be properly called only on phones and tablets. If it is called on other device types, error code 801 is returned. > **NOTE** > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Starts multiple UIAbility components simultaneously. This API uses a promise to return the result.
+You can pass the Want information of multiple UIAbility instances, which can point to one or more applications. If
+all the UIAbility instances can be started successfully, the system displays these UIAbility instances in multiple
+windows simultaneously. Depending on the window handling, different devices may have varying display effects (
+including window shape, quantity, and layout).
+This API can be properly called only on phones and tablets. If it is called on other device types, error code 801
+is returned.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the stage model, see
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 20
 
@@ -294,7 +351,23 @@ Starts multiple UIAbility components simultaneously. This API uses a promise to 
 startUIAbilitiesInSplitWindowMode(primaryWindowId: number, secondaryWant: Want): Promise<void>
 ```
 
-Starts a second UIAbility after the first UIAbility instance is created, and displays them in split-screen mode. This API uses a promise to return the result. This API can be properly called only on phones. If it is called on other device types, error code 801 is returned. > **NOTE** > > If the first UIAbility instance is destroyed, the second UIAbility is started in full-screen mode. > > The second UIAbility supports only > [explicit startup](../../../../application-models/explicit-implicit-want-mappings.md#matching-rules-of-explicit-want) > . > > If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is > required (available only for system applications). > > For details about the startup rules for the components in the stage model, see > [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
+Starts a second UIAbility after the first UIAbility instance is created, and displays them in split-screen mode.
+This API uses a promise to return the result.
+This API can be properly called only on phones. If it is called on other device types, error code 801 is returned.
+
+> **NOTE**
+>
+> If the first UIAbility instance is destroyed, the second UIAbility is started in full-screen mode.
+>
+> The second UIAbility supports only
+> [explicit startup](../../../../application-models/explicit-implicit-want-mappings.md#matching-rules-of-explicit-want)
+> .
+>
+> If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is
+> required (available only for system applications).
+>
+> For details about the startup rules for the components in the stage model, see
+> [Component Startup Rules (Stage Model)](../../../../application-models/component-startup-rules.md).
 
 **Since:** 21
 

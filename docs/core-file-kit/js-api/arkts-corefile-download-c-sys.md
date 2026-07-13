@@ -1,6 +1,7 @@
 # Download (System API)
 
-Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to create a **Download** instance.
+Provides APIs for downloading image files to **Gallery**. Before using the APIs of **Download**, you need to create
+a **Download** instance.
 
 **Since:** 10
 
@@ -11,7 +12,7 @@ Provides APIs for downloading image files to **Gallery**. Before using the APIs 
 ## Modules to Import
 
 ```TypeScript
-import { cloudSync } from '@ohos.file.cloudSync';
+import { cloudSync } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -56,7 +57,7 @@ Removes the specified callback from the device-cloud download progress.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event type. The value is **progress**, which indicates the sync progress event. |
-| callback | (pg: DownloadProgress) =&gt; void | Yes | Callback used to return the file download progress. The input parameter is[DownloadProgress](arkts-corefile-downloadprogress-i.md#downloadprogress), and the return value is **void**. |
+| callback | (pg: DownloadProgress) =&gt; void | Yes | Callback used to return the file download progress. The input parameter is[DownloadProgress](arkts-corefile-downloadprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -147,7 +148,7 @@ Registers a listener for the download progress of a cloud file.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | evt | 'progress' | Yes | Event. The value is **progress**, which indicates the download progress event of acloud file. |
-| callback | (pg: DownloadProgress) =&gt; void | Yes | Callback used to return the file download progress. The input parameter is[DownloadProgress](arkts-corefile-downloadprogress-i.md#downloadprogress), and the return value is **void**. |
+| callback | (pg: DownloadProgress) =&gt; void | Yes | Callback used to return the file download progress. The input parameter is[DownloadProgress](arkts-corefile-downloadprogress-i.md), and the return value is **void**. |
 
 **Error codes:**
 
@@ -284,7 +285,12 @@ download.start(uri, (err: BusinessError) => {
 stop(uri: string): Promise<void>
 ```
 
-Stops downloading a cloud file. This API uses a promise to return the result. > **NOTE** > > Calling **stop** will terminate the download of the current file and clear the cache file. You can use > **start** to start the download again.
+Stops downloading a cloud file. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> Calling **stop** will terminate the download of the current file and clear the cache file. You can use
+> **start** to start the download again.
 
 **Since:** 10
 
@@ -336,7 +342,12 @@ download.stop(uri).then(() => {
 stop(uri: string, callback: AsyncCallback<void>): void
 ```
 
-Stops downloading a cloud file. This API uses an asynchronous callback to return the result. > **NOTE** > > Calling **stop** will terminate the download of the current file and clear the cache file. You can use > **start** to start the download again.
+Stops downloading a cloud file. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Calling **stop** will terminate the download of the current file and clear the cache file. You can use
+> **start** to start the download again.
 
 **Since:** 10
 

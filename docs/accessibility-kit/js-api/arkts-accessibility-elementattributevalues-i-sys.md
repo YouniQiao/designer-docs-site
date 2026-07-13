@@ -30,7 +30,8 @@ Custom accessibility state broadcast text of an element.
 accessibilityVisible?: boolean
 ```
 
-Whether the element is accessibility visible. **true** means the element is accessibility visible and **false** means the element is accessibility invisible. The default value is **true**.
+Whether the element is accessibility visible. **true** means the element is accessibility visible and **false**
+means the element is accessibility invisible. The default value is **true**.
 
 **Type:** boolean
 
@@ -138,7 +139,8 @@ Indicates the custom actions supported by the component.
 isEssential?: boolean
 ```
 
-Whether the element is mandatory for the user. The value **true** indicates that the element is mandatory, and the value **false** indicates that the element is not mandatory. The default value is **false**.
+Whether the element is mandatory for the user. The value **true** indicates that the element is mandatory, and the
+value **false** indicates that the element is not mandatory. The default value is **false**.
 
 **Type:** boolean
 

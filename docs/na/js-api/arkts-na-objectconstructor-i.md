@@ -198,7 +198,8 @@ Prevents the modification of existing property attributes and values, and preven
 getOwnPropertyDescriptor(o: any, p: PropertyKey): PropertyDescriptor | undefined
 ```
 
-Gets the own property descriptor of the specified object. An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
+Gets the own property descriptor of the specified object.
+An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
 
 **Parameters:**
 
@@ -219,7 +220,8 @@ Gets the own property descriptor of the specified object. An own property descri
 getOwnPropertyNames(o: any): string[]
 ```
 
-Returns the names of the own properties of an object. The own properties of an object are those that are defined directly on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.
+Returns the names of the own properties of an object. The own properties of an object are those that are defined directly
+on that object, and are not inherited from the object's prototype. The properties of an object include both fields (objects) and functions.
 
 **Parameters:**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## createCipher
@@ -12,7 +12,21 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 function createCipher(transformation: string): Cipher
 ```
 
-Creates a [Cipher](arkts-cryptoarchitecture-cipher-i.md#cipher) instance based on the specified algorithm. > **NOTE** > > 1. In symmetric encryption and decryption, PKCS #5 and PKCS #7 share the same implementation, with padding > length and block size remaining consistent. In 3DES, padding is applied in 8-byte blocks; in AES, padding > is applied in 16-byte blocks. **NoPadding** means no padding is applied. > You need to understand the differences between different block cipher modes and use the correct parameter > specifications. For example, padding is required for ECB and CBC. Otherwise, ensure that the plaintext > length is an integer multiple of the block size. No padding is recommended for other modes. In this case, > the ciphertext length is the same as the plaintext length. > 2. When RSA or SM2 is used for asymmetric encryption and decryption, two **Cipher** objects must be created > to perform encryption and decryption separately. This is not required for symmetric encryption and > decryption. If the algorithm specifications are the same, the same **Cipher** object can be used for > encryption and decryption.
+Creates a [Cipher](arkts-cryptoarchitecture-cipher-i.md) instance based on the specified algorithm.
+
+> **NOTE**
+>
+> 1. In symmetric encryption and decryption, PKCS #5 and PKCS #7 share the same implementation, with padding
+> length and block size remaining consistent. In 3DES, padding is applied in 8-byte blocks; in AES, padding
+> is applied in 16-byte blocks. **NoPadding** means no padding is applied.
+> You need to understand the differences between different block cipher modes and use the correct parameter
+> specifications. For example, padding is required for ECB and CBC. Otherwise, ensure that the plaintext
+> length is an integer multiple of the block size. No padding is recommended for other modes. In this case,
+> the ciphertext length is the same as the plaintext length.
+> 2. When RSA or SM2 is used for asymmetric encryption and decryption, two **Cipher** objects must be created
+> to perform encryption and decryption separately. This is not required for symmetric encryption and
+> decryption. If the algorithm specifications are the same, the same **Cipher** object can be used for
+> encryption and decryption.
 
 **Since:** 9
 
@@ -32,7 +46,7 @@ Creates a [Cipher](arkts-cryptoarchitecture-cipher-i.md#cipher) instance based o
 
 | Type | Description |
 | --- | --- |
-| Cipher | [Cipher](arkts-cryptoarchitecture-cipher-i.md#cipher) instance created. |
+| Cipher | [Cipher](arkts-cryptoarchitecture-cipher-i.md) instance created. |
 
 **Error codes:**
 

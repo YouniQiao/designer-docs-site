@@ -9,7 +9,7 @@ Represents vibration of the specified duration.
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## duration
@@ -18,7 +18,9 @@ import { vibrator } from '@ohos.vibrator';
 duration: number
 ```
 
-Vibration duration, in ms. The value range is (0,1800000]. The maximum vibration duration varies with devices due to different component protection design specifications of drivers provided by different vendors. It is recommended that a single vibration duration be less than or equal to 10s to maximize user experience.
+Vibration duration, in ms. The value range is (0,1800000]. The maximum vibration duration varies with devices due
+to different component protection design specifications of drivers provided by different vendors. It is
+recommended that a single vibration duration be less than or equal to 10s to maximize user experience.
 
 **Type:** number
 

@@ -11,7 +11,7 @@ Defines the attributes of SelectionContainer.
 ## Modules to Import
 
 ```TypeScript
-import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerMenuOptions } from '@ohos.arkui.components.SelectionContainer';
+import { SelectionContainerInstance, SelectionContainer, OnMenuItemClickWithTextCallback, SelectionContainerAttribute, SelectionContainerEditMenuOptions, SelectionContainerTextJoinStyle, SelectionContainerMenuOptions } from '@kit.ArkUI';
 ```
 
 ## bindSelectionMenu
@@ -21,7 +21,14 @@ bindSelectionMenu(spanType: Optional<TextSpanType>, content: Optional<CustomBuil
     responseType: Optional<TextResponseType>, options?: Optional<SelectionContainerMenuOptions>): SelectionContainerAttribute
 ```
 
-Bind to the selection menu. <p><strong>NOTE</strong>: <br>The duration required for a long-press gesture is 600 ms for bindSelectionMenu and 800 ms for bindContextMenu. <br>When both bindSelectionMenu and bindContextMenu are set and both are configured to be triggered by a long-press gesture, bindSelectionMenu is triggered first. <br>If the custom menu is too long, embed a Scroll component to prevent the keyboard from being blocked. </p>
+Bind to the selection menu.
+
+<p><strong>NOTE</strong>:
+<br>The duration required for a long-press gesture is 600 ms for bindSelectionMenu and 800 ms for bindContextMenu.
+<br>When both bindSelectionMenu and bindContextMenu are set and both are configured to be triggered by a
+long-press gesture, bindSelectionMenu is triggered first.
+<br>If the custom menu is too long, embed a Scroll component to prevent the keyboard from being blocked.
+</p>
 
 **Since:** 26.0.0
 
@@ -108,7 +115,9 @@ Set whether to allow copy and where data can be copied.
 editMenuOptions(editMenu: Optional<SelectionContainerEditMenuOptions>): SelectionContainerAttribute
 ```
 
-Set the custom text menu. Sets the extended options of the custom context menu on selection, including the text content, icon, and callback.
+Set the custom text menu.
+Sets the extended options of the custom context menu on selection,
+including the text content, icon, and callback.
 
 **Since:** 26.0.0
 
@@ -164,7 +173,8 @@ Enable or disable haptic feedback.
 onCopy(callback: Optional<Callback<string>>): SelectionContainerAttribute
 ```
 
-Called when selected text is copied. Currently, only text can be copied.
+Called when selected text is copied.
+Currently, only text can be copied.
 
 **Since:** 26.0.0
 
@@ -220,7 +230,8 @@ Called when text selection changes in SelectionContainer.
 onWillCopy(callback: Optional<Callback<string, boolean>>): SelectionContainerAttribute
 ```
 
-Called before using the Clipboard copy menu. Currently, only text can be copied.
+Called before using the Clipboard copy menu.
+Currently, only text can be copied.
 
 **Since:** 26.0.0
 
@@ -276,7 +287,13 @@ Set selected text background color.
 textJoinStyle(style: Optional<SelectionContainerTextJoinStyle>): SelectionContainerAttribute
 ```
 
-Set text join style for aggregated text in SelectionContainer. <p><strong>NOTE</strong>: <br>This setting affects the string value used in callbacks such as onWillCopy and onCopy. <br>It also affects built-in text menu item logic that depends on string concatenation, such as copy. <br>The default style is SelectionContainerTextJoinStyle.NEWLINE. </p>
+Set text join style for aggregated text in SelectionContainer.
+
+<p><strong>NOTE</strong>:
+<br>This setting affects the string value used in callbacks such as onWillCopy and onCopy.
+<br>It also affects built-in text menu item logic that depends on string concatenation, such as copy.
+<br>The default style is SelectionContainerTextJoinStyle.NEWLINE.
+</p>
 
 **Since:** 26.0.0
 

@@ -1,6 +1,7 @@
 # VideoControllerAsync
 
-Video playback controller class for asynchronous operations. Provides methods to control video playback, timing, and display mode.
+Video playback controller class for asynchronous operations.
+Provides methods to control video playback, timing, and display mode.
 
 **Since:** 26.0.0
 
@@ -88,7 +89,8 @@ Requests fullscreen display for the video.
 reset(): Promise<void>
 ```
 
-Resets the video controller asynchronously. Restores the controller to its initial state.
+Resets the video controller asynchronously.
+Restores the controller to its initial state.
 
 **Since:** 26.0.0
 

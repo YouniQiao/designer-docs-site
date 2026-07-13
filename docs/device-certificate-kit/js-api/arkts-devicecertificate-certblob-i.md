@@ -9,7 +9,7 @@ Indicates the certificate file data.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## certData
@@ -18,7 +18,8 @@ import { certificateManager } from '@ohos.security.certManager';
 certData: Uint8Array
 ```
 
-Certificate file data. When certFormat is transferred to PEM_DER, the maximum length is 8 KB. When certFormat is set to P7B, the maximum length is 300 KB.
+Certificate file data. When certFormat is transferred to PEM_DER, the maximum length is 8 KB. When certFormat is
+set to P7B, the maximum length is 300 KB.
 
 **Type:** Uint8Array
 
@@ -34,7 +35,8 @@ Certificate file data. When certFormat is transferred to PEM_DER, the maximum le
 certFormat? : CertFileFormat
 ```
 
-Indicates the certificate file format. Default value: PEM_DER.
+Indicates the certificate file format.
+Default value: PEM_DER.
 
 **Type:** CertFileFormat
 
@@ -50,7 +52,8 @@ Indicates the certificate file format. Default value: PEM_DER.
 certScope? : CertScope
 ```
 
-Indicates the storage location of the user CA certificate. Default value: Current_USER.
+Indicates the storage location of the user CA certificate.
+Default value: Current_USER.
 
 **Type:** CertScope
 

@@ -1,12 +1,50 @@
 # CreateIncrementalSource
 
+## Modules to Import
+
+```TypeScript
+import { image } from '@kit.ImageKit';
+```
+
 ## CreateIncrementalSource
 
 ```TypeScript
 function CreateIncrementalSource(buf: ArrayBuffer): ImageSource
 ```
 
-通过缓冲区以增量的方式创建ImageSource实例，IncrementalSource不支持读写Exif信息。 由于图片占用内存较大，所以当ImageSource实例使用完成后，应主动调用[release]image.ImageSource.release(callback: AsyncCallback<void>)方法及时 释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 以增量方式创建的ImageSource实例，仅支持使用以下功能，同步、异步callback、异步Promise均支持。 - 获取图片信息：指定序号-[getImageInfo]image.ImageSource.getImageInfo(index: int, callback: AsyncCallback<ImageInfo>)、 直接获取-[getImageInfo]image.ImageSource.getImageInfo(callback: AsyncCallback<ImageInfo>) - 获取图片中给定索引处图像的指定属性键的值： [getImageProperty]image.ImageSource.getImageProperty(key: PropertyKey, options?: ImagePropertyOptions) - 批量获取图片中的指定属性键的值：[getImageProperties]image.ImageSource.getImageProperties(key: Array<PropertyKey>) - 更新增量数据： [updateData]image.ImageSource.updateData(buf: ArrayBuffer, isFinished: boolean, offset: int, length: int) - 创建PixelMap对象：通过图片解码参数创建-[createPixelMap]image.createPixelMap、通过默认参数创建- [createPixelMap]image.createPixelMap 、通过图片解码参数-[createPixelMap]image.createPixelMap - 释放ImageSource实例：[release]image.ImageSource.release(callback: AsyncCallback<void>)
+Creates an ImageSource instance in incremental mode based on buffers. Such an instance does not support reading or
+writing of Exif information.
+
+Images occupy a large amount of memory. When you finish using an ImageSource instance, call
+[release](arkts-image-imagesource-i.md#release-1) to free the memory
+promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have
+finished and the instance is no longer needed.
+
+The ImageSource instance created in incremental mode supports the following capabilities (applicable to synchronous
+, callback, and promise modes):
+
+- Obtaining image information: Call
+[getImageInfo](arkts-image-imagesource-i.md#getimageinfo-1)
+to obtain image information by index, or call
+[getImageInfo](arkts-image-imagesource-i.md#getimageinfo-3) to
+directly obtain image information.
+- Obtaining an image property: Call
+[getImageProperty](arkts-image-imagesource-i.md#getimageproperty-1)
+to obtain the value of a property with the specified index in an image.
+- Obtaining image properties: Call
+[getImageProperties](arkts-image-imagesource-i.md#getimageproperties-1) to
+obtain the values of properties with the given names in an image.
+- Updating incremental data: Call
+[updateData](arkts-image-imagesource-i.md#updatedata-1)
+.
+- Creating a PixelMap object: Call
+[createPixelMap](arkts-image-imagesource-i.md#createpixelmap-1) or
+[createPixelMap](arkts-image-imagesource-i.md#createpixelmap-5)
+to create a PixelMap object based on decoding options; call
+[createPixelMap](arkts-image-imagesource-i.md#createpixelmap-3)
+to create a PixelMap object based on default parameters.
+- Releasing an ImageSource instance: Call
+[release](arkts-image-imagesource-i.md#release-1).
 
 **Since:** 9
 
@@ -16,13 +54,13 @@ function CreateIncrementalSource(buf: ArrayBuffer): ImageSource
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | ArrayBuffer | Yes | 增量数据。 |
+| buf | ArrayBuffer | Yes | Incremental data. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ImageSource | 返回ImageSource，失败时返回undefined。 |
+| ImageSource | ImageSource instance. If the operation fails, undefined is returned. |
 
 **Example**
 
@@ -50,13 +88,23 @@ async function CreateIncrementalImageSource(context : Context) {
 
 ```
 
+
 ## CreateIncrementalSource
 
 ```TypeScript
 function CreateIncrementalSource(buf: ArrayBuffer, options?: SourceOptions): ImageSource
 ```
 
-通过缓冲区以增量的方式创建ImageSource实例，IncrementalSource不支持读写Exif信息。 此接口支持的功能与[CreateIncrementalSource(buf: ArrayBuffer): ImageSource]image.CreateIncrementalSource所生成的实例支持的功能相 同。 由于图片占用内存较大，所以当ImageSource实例使用完成后，应主动调用[release]image.ImageSource.release(callback: AsyncCallback<void>)方法及时 释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+Creates an ImageSource instance in incremental mode based on buffers. Such an instance does not support reading or
+writing of Exif information.
+
+The capabilities supported by the ImageSource instance created by this API are the same as those supported by the
+instance created by
+[CreateIncrementalSource(buf: ArrayBuffer): ImageSource](arkts-image-createincrementalsource-f.md#createincrementalsource-1).
+Images occupy a large amount of memory. When you finish using an ImageSource instance, call
+[release](arkts-image-imagesource-i.md#release-1) to free the memory
+promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have
+finished and the instance is no longer needed.
 
 **Since:** 9
 
@@ -66,14 +114,14 @@ function CreateIncrementalSource(buf: ArrayBuffer, options?: SourceOptions): Ima
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buf | ArrayBuffer | Yes | 增量数据。 |
-| options | SourceOptions | No | 图片属性，包括图片像素密度、像素格式和图片尺寸。 |
+| buf | ArrayBuffer | Yes | Incremental data. |
+| options | SourceOptions | No | Image properties, including the image pixel density, pixel format, and imagesize. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ImageSource | 返回ImageSource，失败时返回undefined。 |
+| ImageSource | ImageSource instance. If the operation fails, undefined is returned. |
 
 **Example**
 

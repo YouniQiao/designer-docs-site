@@ -1,6 +1,8 @@
 # KeyEvent
 
-In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use
+[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
+then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ In the following API examples, you must first use [getKeyboardDelegate](arkts-im
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## keyAction
@@ -18,7 +20,10 @@ import { inputMethodEngine } from '@ohos.inputMethodEngine';
 readonly keyAction: number
 ```
 
-Key event type. - **2**: keydown event. - **3**: keyup event.
+Key event type.
+
+- **2**: keydown event.
+- **3**: keyup event.
 
 **Type:** number
 
@@ -32,7 +37,7 @@ Key event type. - **2**: keydown event. - **3**: keyup event.
 readonly keyCode: number
 ```
 
-Key value. For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md#keycode).
+Key value. For details, see [KeyCode](../../apis-input-kit/arkts-apis/arkts-input-keycode-e.md).
 
 **Type:** number
 

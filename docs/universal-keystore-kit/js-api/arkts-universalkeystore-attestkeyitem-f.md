@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## attestKeyItem
@@ -12,7 +12,16 @@ import { huks } from '@ohos.security.huks';
 function attestKeyItem(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksReturnResult>): void
 ```
 
-Attests a key. This API uses an asynchronous callback to return the result. <!--RP6--> > **NOTE** > > The certificate chain generated during non-anonymous certificate key attestation may contain the device > identifier (confirm the specific implementation with the vendor). If the device identifier is included, you can > determine its use, retention, and destruction. It is recommended that you describe the use purpose, retention > policy, and destruction method in the privacy statement. <!--RP6End-->
+Attests a key. This API uses an asynchronous callback to return the result.
+
+<!--RP6-->
+> **NOTE**
+>
+> The certificate chain generated during non-anonymous certificate key attestation may contain the device
+> identifier (confirm the specific implementation with the vendor). If the device identifier is included, you can
+> determine its use, retention, and destruction. It is recommended that you describe the use purpose, retention
+> policy, and destruction method in the privacy statement.
+<!--RP6End-->
 
 **Since:** 9
 
@@ -42,7 +51,7 @@ Attests a key. This API uses an asynchronous callback to return the result. <!--
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -145,7 +154,16 @@ async function generateKeyThenAttestKey() {
 function attestKeyItem(keyAlias: string, options: HuksOptions): Promise<HuksReturnResult>
 ```
 
-Attests a key. This API uses a promise to return the result. <!--RP6--> > **NOTE** > > The certificate chain generated during non-anonymous certificate key attestation may contain the device > identifier (confirm the specific implementation with the vendor). If the device identifier is included, you can > determine its use, retention, and destruction. It is recommended that you describe the use purpose, retention > policy, and destruction method in the privacy statement. <!--RP6End-->
+Attests a key. This API uses a promise to return the result.
+
+<!--RP6-->
+> **NOTE**
+>
+> The certificate chain generated during non-anonymous certificate key attestation may contain the device
+> identifier (confirm the specific implementation with the vendor). If the device identifier is included, you can
+> determine its use, retention, and destruction. It is recommended that you describe the use purpose, retention
+> policy, and destruction method in the privacy statement.
+<!--RP6End-->
 
 **Since:** 9
 
@@ -180,7 +198,7 @@ Attests a key. This API uses a promise to return the result. <!--RP6--> > **NOTE
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 

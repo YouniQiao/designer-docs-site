@@ -9,7 +9,7 @@ Button options in a segmented button.
 ## Modules to Import
 
 ```TypeScript
-import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@ohos.arkui.advanced.SegmentButton';
+import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -40,7 +40,13 @@ Constructor.
 accessibilityDescription?: ResourceStr
 ```
 
-Accessibility description, which is used to explain component operations to users. You can set detailed description text to help users understand the operation consequences. If a component has both text and accessibility description, the text is read first, and then the accessibility description is read. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessibility description, which is used to explain component operations to users. You can set detailed description
+text to help users understand the operation consequences. If a component has both text and accessibility
+description, the text is read first, and then the accessibility description is read.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -60,7 +66,23 @@ Accessibility description, which is used to explain component operations to user
 accessibilityLevel?: string
 ```
 
-Accessibility level, which is used to set whether the current component can be recognized by accessibility services. The options are as follows: **"auto"**: The component can be recognized by accessibility services. **"yes"**: The component can be recognized by accessibility services. **"no"**: The component cannot be recognized by accessibility services. **"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility services. Default value: **"auto"** If the value is **undefined**, the default value is used.
+Accessibility level, which is used to set whether the current component can be recognized by accessibility
+services.
+
+The options are as follows:
+
+**"auto"**: The component can be recognized by accessibility services.
+
+**"yes"**: The component can be recognized by accessibility services.
+
+**"no"**: The component cannot be recognized by accessibility services.
+
+**"no-hide-descendants"**: Neither the component nor its child components can be recognized by accessibility
+services.
+
+Default value: **"auto"**
+
+If the value is **undefined**, the default value is used.
 
 **Type:** string
 
@@ -80,7 +102,11 @@ Accessibility level, which is used to set whether the current component can be r
 icon?: ResourceStr
 ```
 
-Icon of the unselected item. Default value: The icon of the button in the unselected state is not displayed. If the value is **undefined**, the default value is used.
+Icon of the unselected item.
+
+Default value: The icon of the button in the unselected state is not displayed.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -98,7 +124,11 @@ Icon of the unselected item. Default value: The icon of the button in the unsele
 iconAccessibilityText?: ResourceStr
 ```
 
-Accessibility text of the unselected item. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessibility text of the unselected item.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -118,7 +148,11 @@ Accessibility text of the unselected item. The default value is an empty string.
 selectedIcon?: ResourceStr
 ```
 
-Icon of the selected item. Default value: no button icon in the selected state If the value is **undefined**, the default value is used.
+Icon of the selected item.
+
+Default value: no button icon in the selected state
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -136,7 +170,11 @@ Icon of the selected item. Default value: no button icon in the selected state I
 selectedIconAccessibilityText?: ResourceStr
 ```
 
-Accessibility text of the selected item. The default value is an empty string. If the value is **undefined**, the default value is used.
+Accessibility text of the selected item.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 
@@ -156,7 +194,11 @@ Accessibility text of the selected item. The default value is an empty string. I
 text?: ResourceStr
 ```
 
-Button text. The default value is an empty string. If the value is **undefined**, the default value is used.
+Button text.
+
+The default value is an empty string.
+
+If the value is **undefined**, the default value is used.
 
 **Type:** ResourceStr
 

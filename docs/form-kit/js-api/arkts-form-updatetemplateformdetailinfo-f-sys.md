@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## updateTemplateFormDetailInfo
@@ -12,7 +12,8 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function updateTemplateFormDetailInfo(templateFormInfo: Array<formInfo.TemplateFormDetailInfo>): Promise<void>
 ```
 
-Updates the static configuration information of a specified template widget on the current device. This API uses a promise to return the result.
+Updates the static configuration information of a specified template widget on the current device. This API uses a
+promise to return the result.
 
 **Since:** 23
 

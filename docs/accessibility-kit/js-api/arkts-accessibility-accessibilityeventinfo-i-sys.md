@@ -11,7 +11,7 @@ Describes the accessibility event information.
 ## Modules to Import
 
 ```TypeScript
-import { Rect, TouchPosition, AccessibilityVirtualNode, ElementAttributeKeys, FocusCondition, AccessibilityExtensionContext, ElementAttributeValues, AccessibilityEventInfo, AccessibilityEvent, AccessibilityElement, FocusRule, FocusMoveResult, FocusType, Parameter, FocusDirection, WindowType } from '@ohos.application.AccessibilityExtensionAbility';
+import { Rect, TouchPosition, AccessibilityVirtualNode, ElementAttributeKeys, FocusCondition, AccessibilityExtensionContext, ElementAttributeValues, AccessibilityEventInfo, AccessibilityEvent, AccessibilityElement, FocusRule, FocusMoveResult, FocusType, Parameter, FocusDirection, WindowType } from '@kit.AccessibilityKit';
 ```
 
 ## eventType
@@ -36,7 +36,8 @@ Event type.
 extraInfo?: string
 ```
 
-Added or deleted text content carried by the **TextArea**, **TextInput**, **SearchField**, or **RichEdit** component.
+Added or deleted text content carried by the **TextArea**, **TextInput**, **SearchField**, or **RichEdit**
+component.
 
 **Type:** string
 

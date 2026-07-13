@@ -12,7 +12,8 @@
 isRealTitle?: boolean
 ```
 
-document标题来源，true表示来自网页的title标签，false表示该title是根据url自动生成。 默认值：false
+document标题来源，true表示来自网页的title标签，false表示该title是根据url自动生成。
+默认值：false
 
 **类型：** boolean
 

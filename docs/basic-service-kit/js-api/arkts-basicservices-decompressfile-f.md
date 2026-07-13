@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { zlib } from '@ohos.zlib';
+import { zlib } from '@kit.BasicServicesKit';
 ```
 
 ## decompressFile
@@ -12,7 +12,15 @@ import { zlib } from '@ohos.zlib';
 function decompressFile(inFile: string, outFile: string, options: Options, callback: AsyncCallback<void>): void
 ```
 
-Decompresses a file. This API uses an asynchronous callback to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
+Decompresses a file. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
+> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
+>
+> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
+> the error code 900003 is returned.
 
 **Since:** 9
 
@@ -24,8 +32,8 @@ Decompresses a file. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
-| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
+| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
+| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
 | options | Options | Yes | Decompression parameters. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**null** is returned; otherwise, a specific error code is returned. |
 
@@ -36,7 +44,7 @@ Decompresses a file. This API uses an asynchronous callback to return the result
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [900001](../../apis-basic-services-kit/errorcode-zlib.md#900001-invalid-source-file) | The input source file is invalid. |
 | [900002](../../apis-basic-services-kit/errorcode-zlib.md#900002-invalid-destination-file) | The input destination file is invalid. |
-| [900003](../../apis-basic-services-kit/errorcode-zlib.md#900003-source-file-in-incorrect-format-or-damaged) | The input source file is not in ZIP format or is damaged.<br>**Applicable version:** 10 |
+| [900003](../../apis-basic-services-kit/errorcode-zlib.md#900003-source-file-in-incorrect-format-or-damaged) | The input source file is not in ZIP format or is damaged.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -74,7 +82,15 @@ try {
 function decompressFile(inFile: string, outFile: string, callback: AsyncCallback<void>): void
 ```
 
-Decompresses a file. This API uses an asynchronous callback to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
+Decompresses a file. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
+> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
+>
+> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
+> the error code 900003 is returned.
 
 **Since:** 10
 
@@ -86,8 +102,8 @@ Decompresses a file. This API uses an asynchronous callback to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
-| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
+| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
+| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**null** is returned; otherwise, a specific error code is returned. |
 
 **Error codes:**
@@ -131,7 +147,15 @@ try {
 function decompressFile(inFile: string, outFile: string, options?: Options): Promise<void>
 ```
 
-Decompresses a file. This API uses a promise to return the result. > **NOTE** > > To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive > periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned. > > The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise, > the error code 900003 is returned.
+Decompresses a file. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> To avoid path traversal, the input parameters of **inFile** and **outFile** cannot contain two consecutive
+> periods and a slash (../) since API version 13. Otherwise, error codes 900001 and 900002 are returned.
+>
+> The name of the zipped file or zipped folder cannot contain two consecutive periods and a slash (../). Otherwise,
+> the error code 900003 is returned.
 
 **Since:** 9
 
@@ -143,8 +167,8 @@ Decompresses a file. This API uses a promise to return the result. > **NOTE** > 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
-| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
+| inFile | string | Yes | Path of the file to decompress. The file name extension must be .zip. The path must bean application sandbox path, which can be obtained from the context. For details about the context, see[FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If the.zip file to be unzipped containsChinese file names or folder names, use UTF-8 to encode them. Otherwise, garbled characters may be displayedafter unzipping. |
+| outFile | string | Yes | Path of the decompressed file. The path must exist in the system. Otherwise, thedecompression fails. The path must be an application sandbox path, which can be obtained from the context. Fordetails about the context, see [FA Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md) and [Stage Model](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). If afile or folder with the same name already exists in the path, they will be overwritten. When multiple threadsdecompress files at the same time, the values of **outFile** must be different. |
 | options | Options | No | Decompression parameters. |
 
 **Return value:**
@@ -160,7 +184,7 @@ Decompresses a file. This API uses a promise to return the result. > **NOTE** > 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [900001](../../apis-basic-services-kit/errorcode-zlib.md#900001-invalid-source-file) | The input source file is invalid. |
 | [900002](../../apis-basic-services-kit/errorcode-zlib.md#900002-invalid-destination-file) | The input destination file is invalid. |
-| [900003](../../apis-basic-services-kit/errorcode-zlib.md#900003-source-file-in-incorrect-format-or-damaged) | The input source file is not in ZIP format or is damaged.<br>**Applicable version:** 10 |
+| [900003](../../apis-basic-services-kit/errorcode-zlib.md#900003-source-file-in-incorrect-format-or-damaged) | The input source file is not in ZIP format or is damaged.<br>**Applicable version:** 10 and later |
 
 **Example**
 

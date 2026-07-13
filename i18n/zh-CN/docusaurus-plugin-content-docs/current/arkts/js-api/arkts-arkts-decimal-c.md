@@ -56,7 +56,7 @@ static abs(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## acos
 
@@ -114,7 +114,7 @@ static acos(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## acosh
@@ -173,7 +173,7 @@ static acosh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## add
@@ -206,7 +206,7 @@ add(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## add
 
@@ -239,7 +239,7 @@ static add(x: Value, y: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## asin
 
@@ -297,7 +297,7 @@ static asin(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## asinh
@@ -356,7 +356,7 @@ static asinh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## atan
@@ -415,7 +415,7 @@ static atan(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## atan2
@@ -449,7 +449,7 @@ static atan2(y: Value, x: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## atanh
@@ -508,7 +508,7 @@ static atanh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## cbrt
@@ -561,7 +561,7 @@ static cbrt(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## ceil
 
@@ -613,7 +613,7 @@ static ceil(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## clamp
 
@@ -646,7 +646,7 @@ clamp(min: Value, max: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200001](../errorcode-utils.md#10200001-参数范围越界错误) | The value of `min` is out of range. |
 
 ## clamp
@@ -681,7 +681,7 @@ static clamp(n: Value, min: Value, max: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200001](../errorcode-utils.md#10200001-参数范围越界错误) | The value of `min` is out of range. |
 
 ## comparedTo
@@ -690,7 +690,11 @@ static clamp(n: Value, min: Value, max: Value): Decimal
 comparedTo(n: Value): number
 ```
 
-Decimal的比较方法。 1 如果此Decimal大于n的值， -1 如果此Decimal小于n的值， 0 如果两者的值相等， NaN 如果两者中任一Decimal的值为NaN。
+Decimal的比较方法。
+1 如果此Decimal大于n的值，
+-1 如果此Decimal小于n的值，
+0 如果两者的值相等，
+NaN 如果两者中任一Decimal的值为NaN。
 
 **起始版本：** 12
 
@@ -714,7 +718,7 @@ Decimal的比较方法。 1 如果此Decimal大于n的值， -1 如果此Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## constructor
 
@@ -740,7 +744,7 @@ Decimal的构造函数。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## cos
 
@@ -792,7 +796,7 @@ static cos(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## cosh
 
@@ -844,7 +848,7 @@ static cosh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## decimalPlaces
 
@@ -896,7 +900,7 @@ div(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## div
 
@@ -929,7 +933,7 @@ static div(x: Value, y: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## dividedToIntegerBy
 
@@ -961,7 +965,7 @@ dividedToIntegerBy(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## equals
 
@@ -993,7 +997,7 @@ equals(n: Value): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## exp
 
@@ -1051,7 +1055,7 @@ static exp(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## floor
@@ -1104,7 +1108,7 @@ static floor(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## greaterThan
 
@@ -1136,7 +1140,7 @@ greaterThan(n: Value): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## greaterThanOrEqualTo
 
@@ -1168,7 +1172,7 @@ greaterThanOrEqualTo(n: Value): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## hypot
 
@@ -1200,7 +1204,7 @@ static hypot(...n: Value[]): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## isFinite
 
@@ -1352,7 +1356,7 @@ lessThan(n: Value): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## lessThanOrEqualTo
 
@@ -1384,7 +1388,7 @@ lessThanOrEqualTo(n: Value): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## ln
 
@@ -1442,7 +1446,7 @@ static ln(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## log
@@ -1475,7 +1479,7 @@ log(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## log
@@ -1509,7 +1513,7 @@ static log(n: Value, base: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## log10
@@ -1542,7 +1546,7 @@ static log10(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## log2
@@ -1575,7 +1579,7 @@ static log2(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## max
@@ -1608,7 +1612,7 @@ static max(...n: Value[]): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## min
 
@@ -1640,7 +1644,7 @@ static min(...n: Value[]): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## mod
 
@@ -1672,7 +1676,7 @@ mod(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## mod
 
@@ -1705,7 +1709,7 @@ static mod(x: Value, y: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## mul
 
@@ -1737,7 +1741,7 @@ mul(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## mul
 
@@ -1770,7 +1774,7 @@ static mul(x: Value, y: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## negate
 
@@ -1822,7 +1826,7 @@ pow(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## pow
@@ -1856,7 +1860,7 @@ static pow(base: Value, exponent: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200060](../errorcode-utils.md#10200060-超出精度限制) | Precision limit exceeded. |
 
 ## precision
@@ -1967,7 +1971,7 @@ static random(significantDigits: number): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200061](../errorcode-utils.md#10200061-加密方法不可用) | Crypto unavailable |
 
 ## round
@@ -2000,7 +2004,7 @@ static round(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## set
 
@@ -2026,7 +2030,7 @@ static set(config: DecimalConfig): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200001](../errorcode-utils.md#10200001-参数范围越界错误) | The value of `DecimalConfig.properties` is out of range. |
 | [10200061](../errorcode-utils.md#10200061-加密方法不可用) | Crypto unavailable |
 
@@ -2036,7 +2040,12 @@ static set(config: DecimalConfig): void
 static sign(n: Value): number
 ```
 
-根据参数n的值返回对应的符号： 1 如果 n > 0， -1 如果 n < 0， 0 如果 n 为 0， -0 如果 n 为 -0， NaN 其他情况
+根据参数n的值返回对应的符号：
+1 如果 n > 0，
+-1 如果 n < 0，
+0 如果 n 为 0，
+-0 如果 n 为 -0，
+NaN 其他情况
 
 **起始版本：** 12
 
@@ -2055,13 +2064,13 @@ static sign(n: Value): number
 | 类型 | 说明 |
 | --- | --- |
 | Decimal | the Decimal type<br>**适用版本：** 12 - 17 |
-| number | the Decimal type<br>**适用版本：** 18 |
+| number | the Decimal type<br>**适用版本：** 18+ |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sin
 
@@ -2113,7 +2122,7 @@ static sin(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sinh
 
@@ -2165,7 +2174,7 @@ static sinh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sqrt
 
@@ -2217,7 +2226,7 @@ static sqrt(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sub
 
@@ -2249,7 +2258,7 @@ sub(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sub
 
@@ -2282,7 +2291,7 @@ static sub(x: Value, y: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## sum
 
@@ -2290,7 +2299,9 @@ static sub(x: Value, y: Value): Decimal
 static sum(...n: Value[]): Decimal
 ```
 
-返回一个新的Decimal对象，其值为参数的和。按照precision设置有效位数，按照rounding设置舍入模式。 仅对结果进行舍入，不对中间计算结果进行舍入。
+返回一个新的Decimal对象，其值为参数的和。按照precision设置有效位数，按照rounding设置舍入模式。
+
+仅对结果进行舍入，不对中间计算结果进行舍入。
 
 **起始版本：** 12
 
@@ -2314,7 +2325,7 @@ static sum(...n: Value[]): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## tan
 
@@ -2366,7 +2377,7 @@ static tan(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## tanh
 
@@ -2418,7 +2429,7 @@ static tanh(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## toBinary
 
@@ -2811,7 +2822,7 @@ toFraction(maxDenominator: Value): Decimal[]
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## toHexadecimal
 
@@ -2928,7 +2939,7 @@ toNearest(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## toNearest
 
@@ -2961,7 +2972,7 @@ toNearest(n: Value, rounding: Rounding): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 | [10200001](../errorcode-utils.md#10200001-参数范围越界错误) | The value of `rounding` is out of range. |
 
 ## toNumber
@@ -3309,7 +3320,7 @@ static trunc(n: Value): Decimal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types;2. Parameter verification failed. |
 
 ## valueOf
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cardEmulation } from '@ohos.nfc.cardEmulation';
+import { cardEmulation } from '@kit.ConnectivityKit';
 ```
 
 ## isSupported
@@ -12,13 +12,16 @@ import { cardEmulation } from '@ohos.nfc.cardEmulation';
 function isSupported(feature: number): boolean
 ```
 
-Checks whether a specified type of card emulation is supported. <p>This method is used to check Whether the host or secure element supports card emulation.
+Checks whether a specified type of card emulation is supported.
+<p>This method is used to check Whether the host or secure element supports card emulation.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
 **Substitutes:** hasHceCapability
+
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Communication.NFC.CardEmulation
 

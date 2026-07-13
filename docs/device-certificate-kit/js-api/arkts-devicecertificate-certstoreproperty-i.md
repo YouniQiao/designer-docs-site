@@ -9,7 +9,7 @@ Represents the storage information about a certificate, including the certificat
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## certAlg
@@ -18,7 +18,9 @@ import { certificateManager } from '@ohos.security.certManager';
 certAlg?: CertAlgorithm
 ```
 
-Certificate algorithm. This parameter is valid only when **certType** is set to **CA_CERT_SYSTEM**. The default value is **INTERNATIONAL**. Devices outside China do not support the SM algorithm.
+Certificate algorithm. This parameter is valid only when **certType** is set to **CA_CERT_SYSTEM**. The default
+value is **INTERNATIONAL**.
+Devices outside China do not support the SM algorithm.
 
 **Type:** CertAlgorithm
 

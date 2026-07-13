@@ -6,7 +6,13 @@
 function closeResource(resourceId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-关闭指定资源ID的资源。使用Promise异步回调。 该接口会回调 [onClearUkeyPinAuthState](../../../../reference/apis-universal-keystore-kit/js-apis-CryptoExtensionAbility.md#cryptoextensionabilityonclearukeypinauthstate) 清理该资源关联的PIN认证状态，以及会回调 [onFinishSession](../../../../reference/apis-universal-keystore-kit/js-apis-CryptoExtensionAbility.md#cryptoextensionabilityonfinishsession) 清理该资源关联的会话handle。
+关闭指定资源ID的资源。使用Promise异步回调。
+
+该接口会回调
+[onClearUkeyPinAuthState](../../../../reference/apis-universal-keystore-kit/js-apis-CryptoExtensionAbility.md#cryptoextensionabilityonclearukeypinauthstate)
+清理该资源关联的PIN认证状态，以及会回调
+[onFinishSession](../../../../reference/apis-universal-keystore-kit/js-apis-CryptoExtensionAbility.md#cryptoextensionabilityonfinishsession)
+清理该资源关联的会话handle。
 
 **起始版本：** 26.0.0
 
@@ -31,7 +37,7 @@ function closeResource(resourceId: string, params?: HuksExternalCryptoParam[]): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | API is not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | API is not supported. |
 | [12000005](../errorcode-huks.md#12000005-进程通信错误) | IPC communication failed. |
 | [12000006](../errorcode-huks.md#12000006-算法库操作失败) | Failed to call the UKey driver interface.Please check the UKey connection and driver status. |
 | [12000012](../errorcode-huks.md#12000012-外部错误) | Device environment or input parameters are abnormal.This error may occur if the process function is not found, or due to other issues. |

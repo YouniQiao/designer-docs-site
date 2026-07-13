@@ -12,7 +12,8 @@ Defines the options of Provide PropertyDecorator.
 allowOverride?: string
 ```
 
-Override the @Provide of any parent or parent of parent @Component.@Provide({allowOverride: "name"}) is also allowed to be used even when there is no ancestor @Component whose @Provide would be overridden.
+Override the @Provide of any parent or parent of parent @Component.@Provide({allowOverride: "name"}) is
+also allowed to be used even when there is no ancestor @Component whose @Provide would be overridden.
 
 **类型：** string
 

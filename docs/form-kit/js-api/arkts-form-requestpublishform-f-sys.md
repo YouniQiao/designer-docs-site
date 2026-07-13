@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## requestPublishForm
@@ -16,7 +16,8 @@ function requestPublishForm(
   ): void
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -49,7 +50,8 @@ Requests to publish a widget to the widget host (usually the home screen). This 
 function requestPublishForm(want: Want, callback: AsyncCallback<string>): void
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -81,7 +83,8 @@ Requests to publish a widget to the widget host (usually the home screen). This 
 function requestPublishForm(want: Want, formBindingData?: formBindingData.FormBindingData): Promise<string>
 ```
 
-Requests to publish a widget to the widget host (usually the home screen). This API uses a promise to return the result.
+Requests to publish a widget to the widget host (usually the home screen). This API uses a promise to return the
+result.
 
 **Since:** 9
 

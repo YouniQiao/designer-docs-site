@@ -11,7 +11,7 @@ Defines the network configuration for the Ethernet connection.
 ## Modules to Import
 
 ```TypeScript
-import { ethernet } from '@ohos.net.ethernet';
+import { ethernet } from '@kit.NetworkKit';
 ```
 
 ## dnsServers
@@ -20,7 +20,9 @@ import { ethernet } from '@ohos.net.ethernet';
 dnsServers: string
 ```
 
-The Ethernet connection is configured with the dns service address. The address value range is 0-255.0-255.0-255.0-255.0-255 (DHCP mode does not need to be configured, Multiple addresses are separated by ",")
+The Ethernet connection is configured with the dns service address.
+The address value range is 0-255.0-255.0-255.0-255.0-255
+(DHCP mode does not need to be configured, Multiple addresses are separated by ",")
 
 **Type:** string
 
@@ -36,7 +38,9 @@ The Ethernet connection is configured with the dns service address. The address 
 gateway: string
 ```
 
-Ethernet connection static configuration gateway information. The address value range is 0-255.0-255.0-255.0-255.0-255 (DHCP mode does not need to be configured)
+Ethernet connection static configuration gateway information.
+The address value range is 0-255.0-255.0-255.0-255.0-255
+(DHCP mode does not need to be configured)
 
 **Type:** string
 
@@ -68,7 +72,9 @@ Indicates the HttpProxy settings, no proxy is to be used as default.
 ipAddr: string
 ```
 
-Ethernet connection static configuration IP information. The address value range is 0-255.0-255.0-255.0-255.0-255 (DHCP mode does not need to be configured)
+Ethernet connection static configuration IP information.
+The address value range is 0-255.0-255.0-255.0-255.0-255
+(DHCP mode does not need to be configured)
 
 **Type:** string
 
@@ -98,7 +104,9 @@ mode: IPSetMode
 netMask: string
 ```
 
-Ethernet connection static configuration netMask information. The address value range is 0-255.0-255.0-255.0-255.0-255 (DHCP mode does not need to be configured)
+Ethernet connection static configuration netMask information.
+The address value range is 0-255.0-255.0-255.0-255.0-255
+(DHCP mode does not need to be configured)
 
 **Type:** string
 
@@ -114,7 +122,9 @@ Ethernet connection static configuration netMask information. The address value 
 route: string
 ```
 
-Ethernet connection static configuration route information. The address value range is 0-255.0-255.0-255.0-255.0-255 (DHCP mode does not need to be configured)
+Ethernet connection static configuration route information.
+The address value range is 0-255.0-255.0-255.0-255.0-255
+(DHCP mode does not need to be configured)
 
 **Type:** string
 

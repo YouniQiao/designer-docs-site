@@ -6,7 +6,11 @@
 function openResource(resourceId: string, params?: HuksExternalCryptoParam[]): Promise<void>
 ```
 
-打开指定资源ID的资源。使用Promise异步回调。 > **说明：** > > 打开的资源必须使用[closeResource](arkts-universalkeystore-closeresource-f.md#closeresource-1)关闭。
+打开指定资源ID的资源。使用Promise异步回调。
+
+> **说明：**
+>
+> 打开的资源必须使用[closeResource](arkts-universalkeystore-closeresource-f.md#closeresource-1)关闭。
 
 **起始版本：** 26.0.0
 
@@ -31,7 +35,7 @@ function openResource(resourceId: string, params?: HuksExternalCryptoParam[]): P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | API is not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | API is not supported. |
 | [12000005](../errorcode-huks.md#12000005-进程通信错误) | IPC communication failed. |
 | [12000006](../errorcode-huks.md#12000006-算法库操作失败) | Failed to call the UKey driver interface.Please check the UKey connection and driver status. |
 | [12000011](../errorcode-huks.md#12000011-目标对象不存在) | The cached resource ID is not found.This may happen because the resource ID has not been opened. |

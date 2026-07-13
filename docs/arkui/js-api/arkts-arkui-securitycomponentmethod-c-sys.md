@@ -1,8 +1,31 @@
 # SecurityComponentMethod
 
+The universal attributes module for security components enables unified configuration of universal attributes
+such as layout, size, text, icon, color, border, and interaction behaviors.
+
+This module is mainly used in the following scenarios:
+- Set layout, size, text, icon, color, border, and interaction-related attributes for security components
+such as [PasteButton](./paste_button) and [SaveButton](./save_button).
+- Adjust the display effect and interaction experience of security components while ensuring compliance with
+the security component specifications. For specific constraints,
+see [Constraints](../../../../security/AccessToken/security-component-overview.md#constraints).
+- Reuse the universal attribute capabilities of security components through chained calls.
+
+###### Key Enums
+- [SecurityComponentLayoutDirection](arkts-arkui-securitycomponentlayoutdirection-e.md): Enumeration of icon and text
+layout directions for the security component. Specifies horizontal or vertical layout.
+- [ButtonType](@global:ButtonType): Enumeration of button styles for the security component.
+Specifies capsule, circle, rounded rectangle, or normal button style.
+###### Key APIs
+- [SecurityComponentMethod](arkts-arkui-securitycomponentmethod-c.md): A collection of universal attribute methods for
+security components. Configures layout, size, text, icon, color, border, and interaction attributes for
+specific security components.
+###### Child Components
+- Not supported
+
 Defines the method of a security component.
 
-**Since:** 11
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -12,7 +35,13 @@ Defines the method of a security component.
 key(value: string): T
 ```
 
-Key. User can set an key to the component to identify it.
+Sets the unique ID for the component. You shall guarantee its uniqueness. Upon successful invocation, the component
+is assigned the specified ID for precise positioning of the component instance during testing. If this API is used
+together with [id](arkts-arkui-securitycomponentmethod-c.md#id-1), the value set later overrides the value set earlier.
+You are advised to set only **id**.
+
+<br>This API is intended exclusively for app testing to verify attribute configurations and interactive behaviors
+of security components. In production environments, use the public API [id](arkts-arkui-securitycomponentmethod-c.md#id-1).
 
 **Since:** 10
 
@@ -26,11 +55,11 @@ Key. User can set an key to the component to identify it.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string | Yes | identify the key of the component. |
+| value | string | Yes | Unique ID for the component. You shall guarantee its uniqueness. This parameter is usedto accurately locate security component instances by ID in test scenarios. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| T | Returns the attribute of the security component. |
+| T | Attributes of the security component. |
 

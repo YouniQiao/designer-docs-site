@@ -9,7 +9,7 @@ Provides information about the **Navigation** component.
 ## Modules to Import
 
 ```TypeScript
-import { uiObserver } from '@ohos.arkui.observer';
+import { uiObserver } from '@kit.ArkUI';
 ```
 
 ## navigationId
@@ -54,7 +54,8 @@ Navigation controller of the **Navigation** component.
 uniqueId?: number
 ```
 
-Unique ID of the **Navigation** component, which can be obtained through [queryNavigationInfo](../arkts-components/arkts-arkui-basecustomcomponent-c.md#querynavigationinfo-1).
+Unique ID of the **Navigation** component, which can be obtained through
+[queryNavigationInfo](../arkts-components/arkts-arkui-basecustomcomponent-c.md#querynavigationinfo-1).
 
 **Type:** number
 

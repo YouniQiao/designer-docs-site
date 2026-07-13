@@ -1,6 +1,7 @@
 # VideoLiveControlGroup
 
-Enumerates the live video component groups. They are used only when [PiPTemplateType](arkts-arkui-piptemplatetype-e.md#piptemplatetype) is set to **VIDEO_LIVE**.
+Enumerates the live video component groups. They are used only when
+[PiPTemplateType](arkts-arkui-piptemplatetype-e.md) is set to **VIDEO_LIVE**.
 
 **Since:** 12
 

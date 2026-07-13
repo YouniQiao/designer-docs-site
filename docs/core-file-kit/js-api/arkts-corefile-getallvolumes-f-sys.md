@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { volumeManager } from '@ohos.file.volumeManager';
+import { volumeManager } from '@kit.CoreFileKit';
 ```
 
 ## getAllVolumes
@@ -12,7 +12,8 @@ import { volumeManager } from '@ohos.file.volumeManager';
 function getAllVolumes(callback: AsyncCallback<Array<Volume>>): void
 ```
 
-Obtains information about all volumes of this external storage device. This API uses an asynchronous callback to return the result.
+Obtains information about all volumes of this external storage device. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -45,7 +46,8 @@ Obtains information about all volumes of this external storage device. This API 
 function getAllVolumes(): Promise<Array<Volume>>
 ```
 
-Obtains information about all volumes of this external storage device. This API uses a promise to return the result.
+Obtains information about all volumes of this external storage device. This API uses a promise to return the
+result.
 
 **Since:** 9
 

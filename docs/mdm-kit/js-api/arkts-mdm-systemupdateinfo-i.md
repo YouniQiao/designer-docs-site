@@ -9,7 +9,7 @@ Represents information about the system version to update.
 ## Modules to Import
 
 ```TypeScript
-import { systemManager } from '@ohos.enterprise.systemManager';
+import { systemManager } from '@kit.MDMKit';
 ```
 
 ## firstReceivedTime
@@ -18,7 +18,8 @@ import { systemManager } from '@ohos.enterprise.systemManager';
 firstReceivedTime: number
 ```
 
-Time when the system update package is received for the first time. Unit: Seconds, The value must be an integer greater than or equal to 0.
+Time when the system update package is received for the first time.
+Unit: Seconds, The value must be an integer greater than or equal to 0.
 
 **Type:** number
 

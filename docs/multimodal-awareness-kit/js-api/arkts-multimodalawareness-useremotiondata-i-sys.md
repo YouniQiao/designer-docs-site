@@ -2,7 +2,7 @@
 
 Defines user emotion data.
 
-**Inheritance/Implementation:** UserEmotionData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md#userstatusdata)
+**Inheritance/Implementation:** UserEmotionData extends [UserStatusData](arkts-multimodalawareness-userstatusdata-i-sys.md)
 
 **Since:** 26.0.0
 
@@ -13,7 +13,7 @@ Defines user emotion data.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## confidence
@@ -22,7 +22,8 @@ import { userStatus } from '@ohos.multimodalAwareness.userStatus';
 confidence?: number
 ```
 
-User emotion confidence. The value range is all integers.
+User emotion confidence.
+The value ranges from 0 to 100. A larger value indicates a higher confidence.
 
 **Type:** number
 
@@ -41,6 +42,8 @@ emotionNonRealTime ?: number[]
 ```
 
 User non-real-time emotion level.
+The value ranges from 0 to 5. 0: Very happy, 1: A little happy, 2: Calm,
+3: A little unhappy, 4: Angry, 5: Crying.
 
 **Type:** number[]
 
@@ -58,7 +61,9 @@ User non-real-time emotion level.
 emotionRealTime ?: number
 ```
 
-User real-time emotion level. The value range is all integers.
+User real-time emotion level.
+The value ranges from 0 to 5. 0: Very happy, 1: A little happy, 2: Calm,
+3: A little unhappy, 4: Angry, 5: Crying.
 
 **Type:** number
 
@@ -76,7 +81,7 @@ User real-time emotion level. The value range is all integers.
 gravityAcceleration?: number[]
 ```
 
-Gravity acceleration of user motion status.
+Gravity acceleration of user motion status, in m/s².
 
 **Type:** number[]
 
@@ -112,7 +117,7 @@ Whether emotion data is real-time.
 linearAcceleration?: number[][]
 ```
 
-Linear acceleration of user motion status.
+Linear acceleration of user motion status, in m/s².
 
 **Type:** number[][]
 

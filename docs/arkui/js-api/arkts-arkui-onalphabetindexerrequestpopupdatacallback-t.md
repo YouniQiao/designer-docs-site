@@ -4,7 +4,8 @@
 declare type OnAlphabetIndexerRequestPopupDataCallback  = (index: number) => Array<string>
 ```
 
-Represents the callback invoked when an index item is selected and [usingPopup](AlphabetIndexerAttribute#usingPopup) is set to **true**.
+Represents the callback invoked when an index item is selected and
+[usingPopup](AlphabetIndexerAttribute#usingPopup) is set to **true**.
 
 **Since:** 18
 

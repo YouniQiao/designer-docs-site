@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## off('streamChange')
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function off(type: 'streamChange', callback?: Callback<number>): void
 ```
 
-Unsubscribe Wi-Fi stream change events. All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi stream change events.
+All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 9
 
@@ -116,7 +117,8 @@ wifiManager.off("deviceConfigChange", recvDeviceConfigChangeFunc);
 function off(type: 'hotspotStaJoin', callback?: Callback<StationInfo>): void
 ```
 
-Unsubscribe Wi-Fi hotspot sta join events. All callback functions will be deregistered If there is no specific callback parameter.
+Unsubscribe Wi-Fi hotspot sta join events.
+All callback functions will be deregistered If there is no specific callback parameter.
 
 **Since:** 9
 

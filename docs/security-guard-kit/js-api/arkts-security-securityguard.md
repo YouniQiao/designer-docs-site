@@ -1,6 +1,7 @@
 # @ohos.security.securityGuard
 
-Provides security event management and security model management. Based on event information, you will be able to analyze the running status of devices.
+Provides security event management and security model management.
+Based on event information, you will be able to analyze the running status of devices.
 
 **Since:** 12
 
@@ -16,29 +17,33 @@ import { securityGuard } from '@kit.SecurityGuardKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getModelResult](arkts-securityguard-getmodelresult-f-sys.md#getModelResult-1) | Request security model result from security guard. |
-| <!--DelRow-->[off](arkts-securityguard-off-f-sys.md#off-1) | Unsubscribe the security event. |
-| <!--DelRow-->[on](arkts-securityguard-on-f-sys.md#on-1) | Subscribe the security event. |
-| <!--DelRow-->[querySecurityEvent](arkts-securityguard-querysecurityevent-f-sys.md#querySecurityEvent-1) | Query security event information from security guard. |
-| <!--DelRow-->[reportSecurityEvent](arkts-securityguard-reportsecurityevent-f-sys.md#reportSecurityEvent-1) | Report security information to the security guard. |
-| <!--DelRow-->[startSecurityEventCollector](arkts-securityguard-startsecurityeventcollector-f-sys.md#startSecurityEventCollector-1) | start the collector to collect data |
-| <!--DelRow-->[stopSecurityEventCollector](arkts-securityguard-stopsecurityeventcollector-f-sys.md#stopSecurityEventCollector-1) | stop the collector. |
-| <!--DelRow-->[updatePolicyFile](arkts-securityguard-updatepolicyfile-f-sys.md#updatePolicyFile-1) | Update the policy file. |
+| [getModelResult](arkts-securityguard-getmodelresult-f-sys.md#getmodelresult-1) | Request security model result from security guard. |
+| [off](arkts-securityguard-off-f-sys.md#off-1) | Unsubscribe the security event. |
+| [on](arkts-securityguard-on-f-sys.md#on-1) | Subscribe the security event. |
+| [querySecurityEvent](arkts-securityguard-querysecurityevent-f-sys.md#querysecurityevent-1) | Query security event information from security guard. |
+| [reportSecurityEvent](arkts-securityguard-reportsecurityevent-f-sys.md#reportsecurityevent-1) | Report security information to the security guard. |
+| [startSecurityEventCollector](arkts-securityguard-startsecurityeventcollector-f-sys.md#startsecurityeventcollector-1) | start the collector to collect data |
+| [stopSecurityEventCollector](arkts-securityguard-stopsecurityeventcollector-f-sys.md#stopsecurityeventcollector-1) | stop the collector. |
+| [updatePolicyFile](arkts-securityguard-updatepolicyfile-f-sys.md#updatepolicyfile-1) | Update the policy file. |
+<!--DelEnd-->
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[CollectorRule](arkts-securityguard-collectorrule-i-sys.md) | Provides the conditions of Collector. |
-| <!--DelRow-->[ModelResult](arkts-securityguard-modelresult-i-sys.md) | Provides the ModelResult type. |
-| <!--DelRow-->[ModelRule](arkts-securityguard-modelrule-i-sys.md) | Provides the ModelRule type. |
-| <!--DelRow-->[PolicyFile](arkts-securityguard-policyfile-i-sys.md) | Provides policy file information. |
-| <!--DelRow-->[Querier](arkts-securityguard-querier-i-sys.md) | Definition callback of receiving the query data. |
-| <!--DelRow-->[SecurityEvent](arkts-securityguard-securityevent-i-sys.md) | Provides the SecurityEvent type, including the event id, version info, report content. |
-| <!--DelRow-->[SecurityEventInfo](arkts-securityguard-securityeventinfo-i-sys.md) | Provides the conditions of on/off. |
-| <!--DelRow-->[SecurityEventRule](arkts-securityguard-securityeventrule-i-sys.md) | Provides the conditions of querySecurityEvent. |
+| [CollectorRule](arkts-securityguard-collectorrule-i-sys.md) | Provides the conditions of Collector. |
+| [ModelResult](arkts-securityguard-modelresult-i-sys.md) | Provides the ModelResult type. |
+| [ModelRule](arkts-securityguard-modelrule-i-sys.md) | Provides the ModelRule type. |
+| [PolicyFile](arkts-securityguard-policyfile-i-sys.md) | Provides policy file information. |
+| [Querier](arkts-securityguard-querier-i-sys.md) | Definition callback of receiving the query data. |
+| [SecurityEvent](arkts-securityguard-securityevent-i-sys.md) | Provides the SecurityEvent type, including the event id, version info, report content. |
+| [SecurityEventInfo](arkts-securityguard-securityeventinfo-i-sys.md) | Provides the conditions of on/off. |
+| [SecurityEventRule](arkts-securityguard-securityeventrule-i-sys.md) | Provides the conditions of querySecurityEvent. |
+<!--DelEnd-->
 

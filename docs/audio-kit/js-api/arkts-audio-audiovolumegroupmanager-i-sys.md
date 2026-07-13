@@ -1,6 +1,14 @@
 # AudioVolumeGroupManager
 
-This interface implements volume management for an audio group. Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1) to obtain an AudioVolumeGroupManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
+This interface implements volume management for an audio group.
+
+Before calling any API in AudioVolumeGroupManager, you must use
+[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)
+to obtain an AudioVolumeGroupManager instance.
+
+> **NOTE**
+>
+> - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -9,7 +17,7 @@ This interface implements volume management for an audio group. Before calling a
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## adjustSystemVolumeByStep
@@ -18,7 +26,8 @@ import { audio } from '@ohos.multimedia.audio';
 adjustSystemVolumeByStep(volumeType: AudioVolumeType, adjustType: VolumeAdjustType, callback: AsyncCallback<void>): void
 ```
 
-Adjusts system volume by step for target volume type. This method uses an asynchronous callback to return the result.
+Adjusts system volume by step for target volume type.
+This method uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -66,7 +75,8 @@ audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, au
 adjustSystemVolumeByStep(volumeType: AudioVolumeType, adjustType: VolumeAdjustType): Promise<void>
 ```
 
-Adjusts system volume by step for target volume type. This method uses a promise to return the result.
+Adjusts system volume by step for target volume type.
+This method uses a promise to return the result.
 
 **Since:** 10
 
@@ -117,7 +127,8 @@ audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, au
 adjustVolumeByStep(adjustType: VolumeAdjustType, callback: AsyncCallback<void>): void
 ```
 
-Adjusts system volume by step, volume type is decided by system. This method uses an asynchronous callback to return the result.
+Adjusts system volume by step, volume type is decided by system.
+This method uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -165,7 +176,8 @@ audioVolumeGroupManager.adjustVolumeByStep(audio.VolumeAdjustType.VOLUME_UP, (er
 adjustVolumeByStep(adjustType: VolumeAdjustType): Promise<void>
 ```
 
-Adjusts system volume by step, volume type is decided by system. This method uses a promise to return the result.
+Adjusts system volume by step, volume type is decided by system.
+This method uses a promise to return the result.
 
 **Since:** 10
 

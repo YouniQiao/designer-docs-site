@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { logLibrary } from '@ohos.logLibrary';
+import { logLibrary } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## list
@@ -12,7 +12,8 @@ import { logLibrary } from '@ohos.logLibrary';
 function list(logType: string): LogEntry[]
 ```
 
-Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the string type as input parameters and returns a list log files of the specified type.
+Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the string
+type as input parameters and returns a list log files of the specified type.
 
 **Since:** 10
 

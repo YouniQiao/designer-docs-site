@@ -11,7 +11,7 @@ Partition information.
 ## Modules to Import
 
 ```TypeScript
-import { volumeManager } from '@ohos.file.volumeManager';
+import { volumeManager } from '@kit.CoreFileKit';
 ```
 
 ## diskId
@@ -92,7 +92,8 @@ Partition number.
 sizeBytes: number
 ```
 
-Partition total size. <br>Unit: Byte.
+Partition total size.
+<br>Unit: Byte.
 
 **Type:** number
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getNativeHeapSize
@@ -12,7 +12,8 @@ import { hidebug } from '@ohos.hidebug';
 function getNativeHeapSize() : bigint
 ```
 
-Obtains the total number of bytes occupied by the total space (**uordblks** + **fordblks**, which are obtained from **mallinfo**) held by a process, which is measured by the memory allocator.
+Obtains the total number of bytes occupied by the total space (**uordblks** + **fordblks**, which are obtained from
+**mallinfo**) held by a process, which is measured by the memory allocator.
 
 **Since:** 8
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## createStream
@@ -12,7 +12,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 declare function createStream(path: string, mode: string): Promise<Stream>
 ```
 
-Creates a stream based on a file path. This API uses a promise to return the result. To close the stream, use **close()** of [Stream](arkts-corefile-stream-i.md#stream).
+Creates a stream based on a file path. This API uses a promise to return the result. To close the stream, use
+**close()** of [Stream](arkts-corefile-stream-i.md).
 
 **Since:** 9
 
@@ -63,7 +64,7 @@ Creates a stream based on a file path. This API uses a promise to return the res
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**Applicable version:** 12 |
+| 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
 ## createStream
@@ -72,7 +73,8 @@ Creates a stream based on a file path. This API uses a promise to return the res
 declare function createStream(path: string, mode: string, callback: AsyncCallback<Stream>): void
 ```
 
-Creates a stream based on a file path. This API uses an asynchronous callback to return the result. To close the stream, use **close()** of [Stream](arkts-corefile-stream-i.md#stream).
+Creates a stream based on a file path. This API uses an asynchronous callback to return the result. To close the
+stream, use **close()** of [Stream](arkts-corefile-stream-i.md).
 
 **Since:** 9
 

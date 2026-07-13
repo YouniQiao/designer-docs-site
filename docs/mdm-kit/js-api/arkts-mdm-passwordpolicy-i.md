@@ -9,7 +9,7 @@ Represents a device screen lock password policy.
 ## Modules to Import
 
 ```TypeScript
-import { securityManager } from '@ohos.enterprise.securityManager';
+import { securityManager } from '@kit.MDMKit';
 ```
 
 ## additionalDescription
@@ -18,7 +18,8 @@ import { securityManager } from '@ohos.enterprise.securityManager';
 additionalDescription?: string
 ```
 
-Password complexity description, for example, "The password must contain 8 to 30 characters consisting of letters , digits, and special characters".
+Password complexity description, for example, "The password must contain 8 to 30 characters consisting of letters
+, digits, and special characters".
 
 **Type:** string
 

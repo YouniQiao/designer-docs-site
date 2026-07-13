@@ -12,7 +12,8 @@ Defines source size of image.
 height: number
 ```
 
-Image decode height. The unit of the number type is vp. Anonymous Object Rectification.
+Image decode height. The unit of the number type is vp.
+Anonymous Object Rectification.
 
 **Type:** number
 
@@ -30,7 +31,8 @@ Image decode height. The unit of the number type is vp. Anonymous Object Rectifi
 width: number
 ```
 
-Image decode width. The unit of the number type is vp. Anonymous Object Rectification.
+Image decode width. The unit of the number type is vp.
+Anonymous Object Rectification.
 
 **Type:** number
 

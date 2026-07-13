@@ -1,19 +1,23 @@
 # MessageParcel
 
-Provides APIs for reading and writing data in specific format. During RPC, the sender can use the **write()** method provided by **MessageParcel** to write data in specific format to a **MessageParcel** object. The receiver can use the **read()** method provided by **MessageParcel** to read data in specific format from a **MessageParcel** object. The data formats include basic data types and arrays, IPC objects, interface tokens, and custom sequenceable objects.
+Provides APIs for reading and writing data in specific format. During RPC, the sender can use the **write()**
+method provided by **MessageParcel** to write data in specific format to a **MessageParcel** object. The
+receiver can use the **read()** method provided by **MessageParcel** to read data in specific format from a
+**MessageParcel** object. The data formats include basic data types and arrays, IPC objects, interface tokens,
+and custom sequenceable objects.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [MessageSequence](arkts-ipc-messagesequence-c.md#messagesequence)
+**Substitutes:** [MessageSequence](arkts-ipc-messagesequence-c.md)
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { rpc } from '@ohos.rpc';
+import { rpc } from '@kit.IPCKit';
 ```
 
 ## closeFileDescriptor
@@ -1363,7 +1367,8 @@ try {
 readInterfaceToken(): string
 ```
 
-Reads the interface token from this **MessageParcel** object. The interface token is read in the sequence in which it is written to the **MessageParcel** object. The local object can use it to verify the communication.
+Reads the interface token from this **MessageParcel** object. The interface token is read in the sequence in
+which it is written to the **MessageParcel** object. The local object can use it to verify the communication.
 
 **Since:** 7
 
@@ -1570,7 +1575,9 @@ try {
 readRemoteObject(): IRemoteObject
 ```
 
-Reads the remote object from this **MessageParcel** object. You can use this method to deserialize the **MessageParcel** object to generate an **IRemoteObject**. The remote objects are read in the order in which they are written to this **MessageParcel** object.
+Reads the remote object from this **MessageParcel** object. You can use this method to deserialize the
+**MessageParcel** object to generate an **IRemoteObject**. The remote objects are read in the order in which
+they are written to this **MessageParcel** object.
 
 **Since:** 7
 
@@ -2935,7 +2942,8 @@ try {
 writeInterfaceToken(token: string): boolean
 ```
 
-Writes an interface token to this **MessageParcel** object. The remote object can use this interface token to verify the communication.
+Writes an interface token to this **MessageParcel** object. The remote object can use this interface token to
+verify the communication.
 
 **Since:** 7
 

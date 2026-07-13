@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## setAppShareOptions
@@ -12,7 +12,8 @@ import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
 function setAppShareOptions(intention: Intention, shareOptions: ShareOptions): void
 ```
 
-Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md#shareoptions) for the application data. Currently, only the drag- and-drop data channel is supported.
+Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md) for the application data. Currently, only the drag-
+and-drop data channel is supported.
 
 **Since:** 14
 
@@ -30,7 +31,7 @@ Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md#shareoptions) for the ap
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | intention | Intention | Yes | Type of the data channel. Currently, only the data channel of the **DRAG** typeis supported. |
-| shareOptions | ShareOptions | Yes | Usage scope of the[UnifiedData](arkts-arkdata-unifieddataproperties-c.md#unifieddataproperties). |
+| shareOptions | ShareOptions | Yes | Usage scope of the[UnifiedData](arkts-arkdata-unifieddataproperties-c.md). |
 
 **Error codes:**
 
@@ -38,8 +39,8 @@ Sets the [ShareOptions](arkts-arkdata-shareoptions-e.md#shareoptions) for the ap
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application usessystem API.<br>**Applicable version:** 12 - 13 |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| [20400001](../errorcode-udmf.md#20400001-settings-already-exist) | Settings already exist. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION".<br>**Applicable version:** 14 |
+| [20400001](../errorcode-udmf.md#20400001-settings-already-exist) | Settings already exist. To reconfigure, remove the existing sharing options. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION".<br>**Applicable version:** 14 and later |
 
 **Example**
 

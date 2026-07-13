@@ -1,6 +1,9 @@
 # StartAnimationSystemParams (System API)
 
-Describes the start animation configuration. This API works only for full-screen applications. The configuration does not take effect for inter-application transitions, where the default animation of the system is used.
+Describes the start animation configuration. This API works only for full-screen applications.
+
+The configuration does not take effect for inter-application transitions, where the default animation of the
+system is used.
 
 **Since:** 20
 
@@ -11,7 +14,7 @@ Describes the start animation configuration. This API works only for full-screen
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## animationConfig
@@ -20,7 +23,8 @@ import { window } from '@ohos.window';
 animationConfig?: WindowAnimationConfig
 ```
 
-Configuration for the window animation. The default animation curve is **WindowAnimationCurve.LINEAR**, and the duration is **0**.
+Configuration for the window animation. The default animation curve is **WindowAnimationCurve.LINEAR**, and the
+duration is **0**.
 
 **Type:** WindowAnimationConfig
 

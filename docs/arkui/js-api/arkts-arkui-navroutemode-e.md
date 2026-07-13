@@ -1,6 +1,8 @@
 # NavRouteMode
 
-Defines the routing policy. > **NOTE**
+Defines the routing policy.
+
+> **NOTE**
 
 **Since:** 10
 
@@ -13,10 +15,11 @@ Defines the routing policy. > **NOTE**
 ## PUSH_WITH_RECREATE
 
 ```TypeScript
-PUSH_WITH_RECREATE = 0
+PUSH_WITH_RECREATE
 ```
 
-The new navigation destination page replaces the current one. The current page is destroyed, but the information about this page is retained in the navigation stack.
+The new navigation destination page replaces the current one. The current page is destroyed, but the information
+about this page is retained in the navigation stack.
 
 **Since:** 10
 
@@ -33,10 +36,11 @@ The new navigation destination page replaces the current one. The current page i
 ## PUSH
 
 ```TypeScript
-PUSH = 1
+PUSH
 ```
 
-The new navigation destination page overwrites the current one. The current page is not destroyed, and the information about this page is retained in the navigation stack.
+The new navigation destination page overwrites the current one. The current page is not destroyed, and the
+information about this page is retained in the navigation stack.
 
 **Since:** 10
 
@@ -53,10 +57,11 @@ The new navigation destination page overwrites the current one. The current page
 ## REPLACE
 
 ```TypeScript
-REPLACE = 2
+REPLACE
 ```
 
-The new navigation destination page replaces the current one. The current page is destroyed, and the information about this page is removed from the navigation stack.
+The new navigation destination page replaces the current one. The current page is destroyed, and the information
+about this page is removed from the navigation stack.
 
 **Since:** 10
 

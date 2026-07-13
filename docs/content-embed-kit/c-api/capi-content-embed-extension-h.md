@@ -2,7 +2,7 @@
 
 ## Overview
 
-Defines the content embed extension APIs.
+Defines the data structures and operation APIs related to the OE Extension of the server application.
 
 **Library**: libcontent_embed_ndk.so
 
@@ -18,50 +18,50 @@ Defines the content embed extension APIs.
 
 | Name | typedef keyword | Description |
 | -- | -- | -- |
-| [ContentEmbed_Document](capi-contentembed-contentembed-document.md) | ContentEmbed_Document | Define the ContentEmbed_Document structure type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) | ContentEmbed_ExtensionContext | Define the ContentEmbed_ExtensionContext structure type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_ExtensionContext*](capi-contentembed-contentembed-extensioncontext8h.md) | ContentEmbed_ExtensionContextHandle | Define the ContentEmbed_ExtensionContextHandle type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) | ContentEmbed_ExtensionInstance | Define the ContentEmbed_ExtensionInstance structure type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_ExtensionInstance*](capi-contentembed-contentembed-extensioninstance8h.md) | ContentEmbed_ExtensionInstanceHandle | Define the ContentEmbed_ExtensionInstanceHandle type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_Object](capi-contentembed-contentembed-object.md) | ContentEmbed_Object | Define the ContentEmbed_Object structure type.Provides methods for Content Embed Kit. |
-| [ContentEmbed_Object*](capi-contentembed-contentembed-object8h.md) | ContentEmbed_ObjectHandle | Define the ContentEmbed_ObjectHandle type.Provides methods for Content Embed Kit. |
+| [ContentEmbed_Document](capi-contentembed-contentembed-document.md) | ContentEmbed_Document | Declares the structure type of an OE document. Encapsulates the metadata, content, and storage structure ofthe embedded document. |
+| [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) | ContentEmbed_ExtensionContext | Defines the structure type of the OE Extension context. |
+| [ContentEmbed_ExtensionContext*](capi-contentembed-contentembed-extensioncontext8h.md) | ContentEmbed_ExtensionContextHandle | Declares the pointer type of the context object of the OE Extension. |
+| [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) | ContentEmbed_ExtensionInstance | Declares the structure type of an OE Extension instance. Manages the core functions of the extension, such aslifecycle management, callback registration, and association with the client's OE object. |
+| [ContentEmbed_ExtensionInstance*](capi-contentembed-contentembed-extensioninstance8h.md) | ContentEmbed_ExtensionInstanceHandle | Declares the pointer type of the instance object of the ContentEmbed extension. |
+| [ContentEmbed_Object](capi-contentembed-contentembed-object.md) | ContentEmbed_Object | Declares the ContentEmbed_Object structure. Points to the program object (server-side OE object for short)for embedding and editing the OE document encapsulated by the server. |
+| [ContentEmbed_Object*](capi-contentembed-contentembed-object8h.md) | ContentEmbed_ObjectHandle | Declares the pointer type of the ContentEmbed_Object object. |
 
 ### Function
 
 | Name | typedef keyword | Description |
 | -- | -- | -- |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedContext(ContentEmbed_ExtensionInstanceHandle ceInstance, ContentEmbed_ExtensionContextHandle *ceContext)](#oh_contentembed_extension_getcontentembedcontext) | - | Get the extension context from the content embed extension instance. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContext(ContentEmbed_ExtensionContextHandle ceContext, AbilityRuntime_ContextHandle *context)](#oh_contentembed_extension_getcontext) | - | Get the ability runtime context from the content embed extension context. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetExtensionInstance(AbilityRuntime_ExtensionInstanceHandle baseInstance, ContentEmbed_ExtensionInstanceHandle *ceInstance)](#oh_contentembed_extension_getextensioninstance) | - | Get content embed extension instance from base extension instance. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnCreateFunc)(ContentEmbed_ExtensionInstanceHandle instance, AbilityBase_Want *want)](#oh_contentembed_extension_oncreatefunc) | OH_ContentEmbed_Extension_OnCreateFunc | Called when the content embed extension instance is created.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnCreateFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnDestroyFunc)(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_ondestroyfunc) | OH_ContentEmbed_Extension_OnDestroyFunc | Called when the content embed extension instance is destroyed.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnDestroyFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnObjectAttachFunc)(ContentEmbed_ExtensionInstanceHandle instance, ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onobjectattachfunc) | OH_ContentEmbed_Extension_OnObjectAttachFunc | Called when the content embed extension instance is attached to a content embed object.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnObjectAttachFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnObjectDetachFunc)(ContentEmbed_ExtensionInstanceHandle instance, ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onobjectdetachfunc) | OH_ContentEmbed_Extension_OnObjectDetachFunc | Called when the content embed extension instance is detached from a content embed object.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnObjectDetachFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnWriteToDataStreamFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onwritetodatastreamfunc) | OH_ContentEmbed_Extension_OnWriteToDataStreamFunc | Called when the content embed object instance writes to the data stream.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnGetSnapshotFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_ongetsnapshotfunc) | OH_ContentEmbed_Extension_OnGetSnapshotFunc | Called when content embed object instance gets a snapshot.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnDoEditFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_ondoeditfunc) | OH_ContentEmbed_Extension_OnDoEditFunc | Called when the content embed object instance edits.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnDoEditFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnGetEditStatusFunc)(ContentEmbed_ObjectHandle object, bool *isEditing, bool *isModified)](#oh_contentembed_extension_ongeteditstatusfunc) | OH_ContentEmbed_Extension_OnGetEditStatusFunc | Called when the content embed object instance gets the edit status.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc} to complete the registration. |
-| [typedef void (\*OH_ContentEmbed_Extension_OnGetCapabilityFunc)(ContentEmbed_ObjectHandle object, uint32_t *bitmask)](#oh_contentembed_extension_ongetcapabilityfunc) | OH_ContentEmbed_Extension_OnGetCapabilityFunc | Called when the content embed object instance gets a capability.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc} to complete the registration. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnCreateFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnCreateFunc onCreateFunc)](#oh_contentembed_extension_registeroncreatefunc) | - | Register function [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDestroyFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnDestroyFunc onDestroyFunc)](#oh_contentembed_extension_registerondestroyfunc) | - | Register function [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnObjectAttachFunc onObjectAttachFunc)](#oh_contentembed_extension_registeronobjectattachfunc) | - | Register function [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).The [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) can unregister the onObjectAttach function by calling[OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectattachfunc) |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_unregisteronobjectattachfunc) | - | UnRegister the OnObjectAttach function for the [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnObjectDetachFunc onObjectDetachFunc)](#oh_contentembed_extension_registeronobjectdetachfunc) | - | Register function [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).The [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) can unregister the OnObjectDetach function by calling[OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectdetachfunc) |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_unregisteronobjectdetachfunc) | - | UnRegister the OnObjectDetach function for the [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnWriteToDataStreamFunc onWriteToDataStreamFunc)](#oh_contentembed_extension_registeronwritetodatastreamfunc) | - | Register function [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetSnapshotFunc onGetSnapshotFunc)](#oh_contentembed_extension_registerongetsnapshotfunc) | - | Register function [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDoEditFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnDoEditFunc onDoEditFunc)](#oh_contentembed_extension_registerondoeditfunc) | - | Register function [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetEditStatusFunc onGetEditStatusFunc)](#oh_contentembed_extension_registerongeteditstatusfunc) | - | Register function [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetCapabilityFunc onGetCapabilityFunc)](#oh_contentembed_extension_registerongetcapabilityfunc) | - | Register function [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md). |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedDocument(ContentEmbed_ObjectHandle object, ContentEmbed_Document **ceDocument)](#oh_contentembed_extension_getcontentembeddocument) | - | Get the content embed document from the content embed object. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnUpdate(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_callbacktoonupdate) | - | Invoke the OnUpdate callback registered by the client. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnError(ContentEmbed_ObjectHandle object, ContentEmbed_ErrorCode code)](#oh_contentembed_extension_callbacktoonerror) | - | Invoke the OnError callback registered by the client. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnEditingFinished(ContentEmbed_ObjectHandle object, bool dataModified)](#oh_contentembed_extension_callbacktooneditingfinished) | - | Invoke the OnEditingFinished callback registered by the client. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnExtensionStopped(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_callbacktoonextensionstopped) | - | Invoke the OnExtensionStopped callback registered by the client. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_SetSnapshot(ContentEmbed_ObjectHandle object, OH_PixelmapNative *pixelMap)](#oh_contentembed_extension_setsnapshot) | - | Send the document snapshot to the client application. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbility(ContentEmbed_ExtensionContextHandle context, AbilityBase_Want *want)](#oh_contentembed_extension_contextstartselfuiability) | - | Starts self UIAbility. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbilityWithStartOptions(ContentEmbed_ExtensionContextHandle context, AbilityBase_Want *want, AbilityRuntime_StartOptions *options)](#oh_contentembed_extension_contextstartselfuiabilitywithstartoptions) | - | Starts self UIAbility with start options. |
-| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextTerminateAbility(ContentEmbed_ExtensionContextHandle context)](#oh_contentembed_extension_contextterminateability) | - | Terminate self UIAbility. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedContext(ContentEmbed_ExtensionInstanceHandle ceInstance, ContentEmbed_ExtensionContextHandle *ceContext)](#oh_contentembed_extension_getcontentembedcontext) | - | Obtains the corresponding OE Extension context object from the OE Extension instance. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContext(ContentEmbed_ExtensionContextHandle ceContext, AbilityRuntime_ContextHandle *context)](#oh_contentembed_extension_getcontext) | - | Obtains the AbilityRuntime context from the OE Extension context. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetExtensionInstance(AbilityRuntime_ExtensionInstanceHandle baseInstance, ContentEmbed_ExtensionInstanceHandle *ceInstance)](#oh_contentembed_extension_getextensioninstance) | - | Obtains the corresponding OE Extension instance from the ExtensionAbility base class instance. |
+| [typedef void (\*OH_ContentEmbed_Extension_OnCreateFunc)(ContentEmbed_ExtensionInstanceHandle instance, AbilityBase_Want *want)](#oh_contentembed_extension_oncreatefunc) | OH_ContentEmbed_Extension_OnCreateFunc | Indicates the lifecycle function type when an OE Extension instance is created.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeroncreatefunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnDestroyFunc)(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_ondestroyfunc) | OH_ContentEmbed_Extension_OnDestroyFunc | Indicates the lifecycle function type when an OE Extension instance is destroyed.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerondestroyfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnObjectAttachFunc)(ContentEmbed_ExtensionInstanceHandle instance, ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onobjectattachfunc) | OH_ContentEmbed_Extension_OnObjectAttachFunc | This callback function is triggered when the client's OE object is connected to the OE Extension instance. Itis used to perform the initialization operation after the server's OE object is associated.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronobjectattachfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnObjectDetachFunc)(ContentEmbed_ExtensionInstanceHandle instance, ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onobjectdetachfunc) | OH_ContentEmbed_Extension_OnObjectDetachFunc | This callback function is triggered when the client disconnects from the OE Extension instance, and is usedto perform cleanup operations after the server disconnects from the OE Extension instance.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronobjectdetachfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnWriteToDataStreamFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_onwritetodatastreamfunc) | OH_ContentEmbed_Extension_OnWriteToDataStreamFunc | Callback function type used when the server-side OE object writes data to the OE document.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronwritetodatastreamfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnGetSnapshotFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_ongetsnapshotfunc) | OH_ContentEmbed_Extension_OnGetSnapshotFunc | Callback function type used when the client-side OE object requests to obtain the OE document snapshot.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongetsnapshotfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnDoEditFunc)(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_ondoeditfunc) | OH_ContentEmbed_Extension_OnDoEditFunc | Callback function type when the client's OE object requests to edit an OE document.<br>You need to implement this function and register it with the server's OE object through[OH_ContentEmbed_Extension_RegisterOnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerondoeditfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnGetEditStatusFunc)(ContentEmbed_ObjectHandle object, bool *isEditing, bool *isModified)](#oh_contentembed_extension_ongeteditstatusfunc) | OH_ContentEmbed_Extension_OnGetEditStatusFunc | Callback function type when the client's OE object requests the editing state of an OE document.<br>You need to implement this function and register it with the server's OE object through[OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongeteditstatusfunc). |
+| [typedef void (\*OH_ContentEmbed_Extension_OnGetCapabilityFunc)(ContentEmbed_ObjectHandle object, uint32_t *bitmask)](#oh_contentembed_extension_ongetcapabilityfunc) | OH_ContentEmbed_Extension_OnGetCapabilityFunc | Indicates the callback function type when the client queries the capabilities supported by the OE Extensioninstance.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongetcapabilityfunc). |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnCreateFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnCreateFunc onCreateFunc)](#oh_contentembed_extension_registeroncreatefunc) | - | Registers the lifecycle function for creating an OE Extension instance. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDestroyFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnDestroyFunc onDestroyFunc)](#oh_contentembed_extension_registerondestroyfunc) | - | Registers the lifecycle function for destroying an OE Extension instance. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnObjectAttachFunc onObjectAttachFunc)](#oh_contentembed_extension_registeronobjectattachfunc) | - | Registers the callback function for connecting to the client's OE object.<br>You can call [OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectattachfunc) to deregister the callback function. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_unregisteronobjectattachfunc) | - | Cancels the registration of the callback function for disconnecting the client from the OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc(ContentEmbed_ExtensionInstanceHandle instance, OH_ContentEmbed_Extension_OnObjectDetachFunc onObjectDetachFunc)](#oh_contentembed_extension_registeronobjectdetachfunc) | - | Registers the callback function for disconnecting the client from the OE object.<br>You can call [OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectdetachfunc) to cancel the registration. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_unregisteronobjectdetachfunc) | - | Cancels the callback function for disconnecting the client from the OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnWriteToDataStreamFunc onWriteToDataStreamFunc)](#oh_contentembed_extension_registeronwritetodatastreamfunc) | - | Registers the callback function for the server to write data streams to the OE document. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetSnapshotFunc onGetSnapshotFunc)](#oh_contentembed_extension_registerongetsnapshotfunc) | - | Registers the callback function for obtaining the OE document snapshot when the client requests to obtain theOE document snapshot. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDoEditFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnDoEditFunc onDoEditFunc)](#oh_contentembed_extension_registerondoeditfunc) | - | Registers the callback function for editing an OE document when the client requests to edit the OE document. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetEditStatusFunc onGetEditStatusFunc)](#oh_contentembed_extension_registerongeteditstatusfunc) | - | Registers the callback function for requesting the editing state of an OE document from the client. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc(ContentEmbed_ObjectHandle object, OH_ContentEmbed_Extension_OnGetCapabilityFunc onGetCapabilityFunc)](#oh_contentembed_extension_registerongetcapabilityfunc) | - | Registers the callback function for querying whether the OE Extension instance supports the capability of theclient's OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedDocument(ContentEmbed_ObjectHandle object, ContentEmbed_Document **ceDocument)](#oh_contentembed_extension_getcontentembeddocument) | - | Obtains the instance of the OE document associated with the server-side OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnUpdate(ContentEmbed_ObjectHandle object)](#oh_contentembed_extension_callbacktoonupdate) | - | Triggers the callback function for updating the OE document to register the client's OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnError(ContentEmbed_ObjectHandle object, ContentEmbed_ErrorCode code)](#oh_contentembed_extension_callbacktoonerror) | - | Trigger the callback function of the error in the OE document that triggers the registration of the client'sOE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnEditingFinished(ContentEmbed_ObjectHandle object, bool dataModified)](#oh_contentembed_extension_callbacktooneditingfinished) | - | Registers the callback function for finishing editing an OE document. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnExtensionStopped(ContentEmbed_ExtensionInstanceHandle instance)](#oh_contentembed_extension_callbacktoonextensionstopped) | - | Stops the callback function of the OE Extension that is associated with all client-side OE objects andregistered by the OE Extension. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_SetSnapshot(ContentEmbed_ObjectHandle object, OH_PixelmapNative *pixelMap)](#oh_contentembed_extension_setsnapshot) | - | Sets the snapshot image of the OE document associated with the client-side OE object. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbility(ContentEmbed_ExtensionContextHandle context, AbilityBase_Want *want)](#oh_contentembed_extension_contextstartselfuiability) | - | Starts the {@link UIAbility} of the current instance using the OE Extension context. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbilityWithStartOptions(ContentEmbed_ExtensionContextHandle context, AbilityBase_Want *want, AbilityRuntime_StartOptions *options)](#oh_contentembed_extension_contextstartselfuiabilitywithstartoptions) | - | Starts the {@link UIAbility} of the OE Extension context using the start options. |
+| [ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextTerminateAbility(ContentEmbed_ExtensionContextHandle context)](#oh_contentembed_extension_contextterminateability) | - | Destroys the OE Extension. |
 
 ## Function description
 
@@ -73,7 +73,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedContext(ContentE
 
 **Description**
 
-Get the extension context from the content embed extension instance.
+Obtains the corresponding OE Extension context object from the OE Extension instance.
 
 **Since**: 24
 
@@ -81,14 +81,14 @@ Get the extension context from the content embed extension instance.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) ceInstance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance. |
-| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) *ceContext | Represents a pointer to an [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) instance that is a output param. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) ceInstance | Pointer to the OE Extension instance object. |
+| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) *ceContext | Output parameter. After the function is successfully called, this pointer points to the contextobject of the OE Extension instance. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - indicates that the operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Parameter check failed.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_GetContext()
 
@@ -98,7 +98,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContext(ContentEmbed_Extensi
 
 **Description**
 
-Get the ability runtime context from the content embed extension context.
+Obtains the AbilityRuntime context from the OE Extension context.
 
 **Since**: 24
 
@@ -106,14 +106,14 @@ Get the ability runtime context from the content embed extension context.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) ceContext | Represents a pointer to an [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) instance. |
-| AbilityRuntime_ContextHandle *context | Represents a pointer to an [AbilityRuntime_Context](../AbilityKit/capi-abilityruntime-abilityruntime-context.md) instance that is a output param. |
+| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) ceContext | Pointer to the OE Extension context object. |
+| AbilityRuntime_ContextHandle *context | Output parameter. After the call is successful, this pointer points to the[AbilityRuntime_Context](../AbilityKit/capi-abilityruntime-abilityruntime-context.md) context object. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Parameter check failed.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_GetExtensionInstance()
 
@@ -123,7 +123,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetExtensionInstance(AbilityRun
 
 **Description**
 
-Get content embed extension instance from base extension instance.
+Obtains the corresponding OE Extension instance from the ExtensionAbility base class instance.
 
 **Since**: 24
 
@@ -131,14 +131,14 @@ Get content embed extension instance from base extension instance.
 
 | Parameter | Description |
 | -- | -- |
-| AbilityRuntime_ExtensionInstanceHandle baseInstance | Represents a pointer to an [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) *ceInstance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance that is a output param. |
+| AbilityRuntime_ExtensionInstanceHandle baseInstance | [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) *ceInstance | Output parameter. After the call is successful, this pointer points to the OE Extension instanceobject. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_OnCreateFunc()
 
@@ -148,7 +148,7 @@ typedef void (*OH_ContentEmbed_Extension_OnCreateFunc)(ContentEmbed_ExtensionIns
 
 **Description**
 
-Called when the content embed extension instance is created.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnCreateFunc} to complete the registration.
+Indicates the lifecycle function type when an OE Extension instance is created.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeroncreatefunc).
 
 **Since**: 24
 
@@ -156,8 +156,8 @@ Called when the content embed extension instance is created.You need to implemen
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ExtensionInstanceHandle instance | Represents a pointer to an[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance which will be set in. |
-| AbilityBase_Want \*want | Represents a pointer to an [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md) instance. |
+| (ContentEmbed_ExtensionInstanceHandle instance | Pointer to the OE Extension instance object. |
+| [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md) \*want | Represents a pointer to an [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnDestroyFunc()
 
@@ -167,7 +167,7 @@ typedef void (*OH_ContentEmbed_Extension_OnDestroyFunc)(ContentEmbed_ExtensionIn
 
 **Description**
 
-Called when the content embed extension instance is destroyed.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnDestroyFunc} to complete the registration.
+Indicates the lifecycle function type when an OE Extension instance is destroyed.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerondestroyfunc).
 
 **Since**: 24
 
@@ -175,7 +175,7 @@ Called when the content embed extension instance is destroyed.You need to implem
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ExtensionInstanceHandle instance | Represents a pointer to an[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance which will be set in. |
+| (ContentEmbed_ExtensionInstanceHandle instance | Pointer to the OE Extension instance object. |
 
 ### OH_ContentEmbed_Extension_OnObjectAttachFunc()
 
@@ -185,7 +185,7 @@ typedef void (*OH_ContentEmbed_Extension_OnObjectAttachFunc)(ContentEmbed_Extens
 
 **Description**
 
-Called when the content embed extension instance is attached to a content embed object.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnObjectAttachFunc} to complete the registration.
+This callback function is triggered when the client's OE object is connected to the OE Extension instance. Itis used to perform the initialization operation after the server's OE object is associated.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronobjectattachfunc).
 
 **Since**: 24
 
@@ -193,8 +193,8 @@ Called when the content embed extension instance is attached to a content embed 
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ExtensionInstanceHandle instance | Represents a pointer to an[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance which will be set in. |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_Object](capi-contentembed-contentembed-object.md) instance. |
+| (ContentEmbed_ExtensionInstanceHandle instance | Pointer to the OE Extension instance object. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnObjectDetachFunc()
 
@@ -204,7 +204,7 @@ typedef void (*OH_ContentEmbed_Extension_OnObjectDetachFunc)(ContentEmbed_Extens
 
 **Description**
 
-Called when the content embed extension instance is detached from a content embed object.You need to implement this function, set it to [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) through {@linkOH_ContentEmbed_Extension_RegisterOnObjectDetachFunc} to complete the registration.
+This callback function is triggered when the client disconnects from the OE Extension instance, and is usedto perform cleanup operations after the server disconnects from the OE Extension instance.<br>You need to implement this function and register it with the OE Extension instance through[OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronobjectdetachfunc).
 
 **Since**: 24
 
@@ -212,8 +212,8 @@ Called when the content embed extension instance is detached from a content embe
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ExtensionInstanceHandle instance | Represents a pointer to an[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance which will be set in. |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_Object](capi-contentembed-contentembed-object.md) instance. |
+| (ContentEmbed_ExtensionInstanceHandle instance | Pointer to the OE Extension instance object. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnWriteToDataStreamFunc()
 
@@ -223,7 +223,7 @@ typedef void (*OH_ContentEmbed_Extension_OnWriteToDataStreamFunc)(ContentEmbed_O
 
 **Description**
 
-Called when the content embed object instance writes to the data stream.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc} to complete the registration.
+Callback function type used when the server-side OE object writes data to the OE document.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registeronwritetodatastreamfunc).
 
 **Since**: 24
 
@@ -231,7 +231,7 @@ Called when the content embed object instance writes to the data stream.You need
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ObjectHandle object | Represents a pointer to an[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object which will be set in. |
+| (ContentEmbed_ObjectHandle object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnGetSnapshotFunc()
 
@@ -241,7 +241,7 @@ typedef void (*OH_ContentEmbed_Extension_OnGetSnapshotFunc)(ContentEmbed_ObjectH
 
 **Description**
 
-Called when content embed object instance gets a snapshot.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc} to complete the registration.
+Callback function type used when the client-side OE object requests to obtain the OE document snapshot.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongetsnapshotfunc).
 
 **Since**: 24
 
@@ -249,7 +249,7 @@ Called when content embed object instance gets a snapshot.You need to implement 
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ObjectHandle object | Represents a pointer to an[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object which will be set in. |
+| (ContentEmbed_ObjectHandle object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnDoEditFunc()
 
@@ -259,7 +259,7 @@ typedef void (*OH_ContentEmbed_Extension_OnDoEditFunc)(ContentEmbed_ObjectHandle
 
 **Description**
 
-Called when the content embed object instance edits.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnDoEditFunc} to complete the registration.
+Callback function type when the client's OE object requests to edit an OE document.<br>You need to implement this function and register it with the server's OE object through[OH_ContentEmbed_Extension_RegisterOnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerondoeditfunc).
 
 **Since**: 24
 
@@ -267,7 +267,7 @@ Called when the content embed object instance edits.You need to implement this f
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ObjectHandle object | Represents a pointer to an[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object which will be set in. |
+| (ContentEmbed_ObjectHandle object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 ### OH_ContentEmbed_Extension_OnGetEditStatusFunc()
 
@@ -277,7 +277,7 @@ typedef void (*OH_ContentEmbed_Extension_OnGetEditStatusFunc)(ContentEmbed_Objec
 
 **Description**
 
-Called when the content embed object instance gets the edit status.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc} to complete the registration.
+Callback function type when the client's OE object requests the editing state of an OE document.<br>You need to implement this function and register it with the server's OE object through[OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongeteditstatusfunc).
 
 **Since**: 24
 
@@ -285,7 +285,7 @@ Called when the content embed object instance gets the edit status.You need to i
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ObjectHandle object | Represents a pointer to an[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object which will be set in. |
+| (ContentEmbed_ObjectHandle object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 | bool \*isEditing | Indicates that the content embed document is being edited. |
 | bool \*isModified | Indicates that the content embed document has been modified. |
 
@@ -297,7 +297,7 @@ typedef void (*OH_ContentEmbed_Extension_OnGetCapabilityFunc)(ContentEmbed_Objec
 
 **Description**
 
-Called when the content embed object instance gets a capability.You need to implement this function, set it to [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) through {@linkOH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc} to complete the registration.
+Indicates the callback function type when the client queries the capabilities supported by the OE Extensioninstance.<br>You need to implement this function and register it with the server-side OE object through[OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_registerongetcapabilityfunc).
 
 **Since**: 24
 
@@ -305,7 +305,7 @@ Called when the content embed object instance gets a capability.You need to impl
 
 | Parameter | Description |
 | -- | -- |
-| (ContentEmbed_ObjectHandle object | Represents a pointer to an[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object which will be set in. |
+| (ContentEmbed_ObjectHandle object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 | uint32_t \*bitmask | Indicates the capabilities possessed by a content embed extension instance. |
 
 ### OH_ContentEmbed_Extension_RegisterOnCreateFunc()
@@ -316,7 +316,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnCreateFunc(ContentEmb
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).
+Registers the lifecycle function for creating an OE Extension instance.
 
 **Since**: 24
 
@@ -324,14 +324,14 @@ Register function [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-ex
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instancewhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) onCreateFunc | Represents function [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) which will be set in. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
+| [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) onCreateFunc | [OH_ContentEmbed_Extension_OnCreateFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_oncreatefunc) lifecycle function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnDestroyFunc()
 
@@ -341,7 +341,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDestroyFunc(ContentEm
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).
+Registers the lifecycle function for destroying an OE Extension instance.
 
 **Since**: 24
 
@@ -349,14 +349,14 @@ Register function [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-e
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instancewhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) onDestroyFunc | Represents function [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) which will be set in. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
+| [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) onDestroyFunc | [OH_ContentEmbed_Extension_OnDestroyFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondestroyfunc) lifecycle function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc()
 
@@ -366,7 +366,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectAttachFunc(Cont
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).The [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) can unregister the onObjectAttach function by calling[OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectattachfunc)
+Registers the callback function for connecting to the client's OE object.<br>You can call [OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectattachfunc) to deregister the callback function.
 
 **Since**: 24
 
@@ -374,14 +374,14 @@ Register function [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-em
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instancewhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc) onObjectAttachFunc | Represents function [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc)which will be set in. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
+| [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc) onObjectAttachFunc | [OH_ContentEmbed_Extension_OnObjectAttachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectattachfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc()
 
@@ -391,7 +391,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectAttachFunc(Co
 
 **Description**
 
-UnRegister the OnObjectAttach function for the [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).
+Cancels the registration of the callback function for disconnecting the client from the OE object.
 
 **Since**: 24
 
@@ -399,13 +399,13 @@ UnRegister the OnObjectAttach function for the [ContentEmbed_ExtensionInstance](
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc()
 
@@ -415,7 +415,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnObjectDetachFunc(Cont
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc) into[ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).The [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) can unregister the OnObjectDetach function by calling[OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectdetachfunc)
+Registers the callback function for disconnecting the client from the OE object.<br>You can call [OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_unregisteronobjectdetachfunc) to cancel the registration.
 
 **Since**: 24
 
@@ -423,14 +423,14 @@ Register function [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-em
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instancewhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc) onObjectDetachFunc | Represents function [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc)which will be set in. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the instance object of the OE Extension. |
+| [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc) onObjectDetachFunc | [OH_ContentEmbed_Extension_OnObjectDetachFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onobjectdetachfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc()
 
@@ -440,7 +440,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_UnRegisterOnObjectDetachFunc(Co
 
 **Description**
 
-UnRegister the OnObjectDetach function for the [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md).
+Cancels the callback function for disconnecting the client from the OE object.
 
 **Since**: 24
 
@@ -448,13 +448,13 @@ UnRegister the OnObjectDetach function for the [ContentEmbed_ExtensionInstance](
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc()
 
@@ -464,7 +464,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnWriteToDataStreamFunc
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md).
+Registers the callback function for the server to write data streams to the OE document.
 
 **Since**: 24
 
@@ -472,14 +472,14 @@ Register function [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-conte
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) objectwhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc) onWriteToDataStreamFunc | Represents function [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc)which will be set in. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc) onWriteToDataStreamFunc | [OH_ContentEmbed_Extension_OnWriteToDataStreamFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_onwritetodatastreamfunc) callback function to beregistered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc()
 
@@ -489,7 +489,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetSnapshotFunc(Conte
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md).
+Registers the callback function for obtaining the OE document snapshot when the client requests to obtain theOE document snapshot.
 
 **Since**: 24
 
@@ -497,14 +497,14 @@ Register function [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-emb
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) objectwhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc) onGetSnapshotFunc | Represents function [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc)which will be set in. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc) onGetSnapshotFunc | [OH_ContentEmbed_Extension_OnGetSnapshotFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetsnapshotfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnDoEditFunc()
 
@@ -514,7 +514,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnDoEditFunc(ContentEmb
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md).
+Registers the callback function for editing an OE document when the client requests to edit the OE document.
 
 **Since**: 24
 
@@ -522,14 +522,14 @@ Register function [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-ex
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) objectwhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) onDoEditFunc | Represents function [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) which will be set in. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) onDoEditFunc | [OH_ContentEmbed_Extension_OnDoEditFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ondoeditfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc()
 
@@ -539,7 +539,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetEditStatusFunc(Con
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md).
+Registers the callback function for requesting the editing state of an OE document from the client.
 
 **Since**: 24
 
@@ -547,14 +547,14 @@ Register function [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-e
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) objectwhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc) onGetEditStatusFunc | Represents function [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc)which will be set in. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc) onGetEditStatusFunc | [OH_ContentEmbed_Extension_OnGetEditStatusFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongeteditstatusfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc()
 
@@ -564,7 +564,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_RegisterOnGetCapabilityFunc(Con
 
 **Description**
 
-Register function [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc) into[ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md).
+Registers the callback function for querying whether the OE Extension instance supports the capability of theclient's OE object.
 
 **Since**: 24
 
@@ -572,14 +572,14 @@ Register function [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-e
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) objectwhich will be set function in. |
-| [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc) onGetCapabilityFunc | Represents function [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc)which will be set in. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc) onGetCapabilityFunc | [OH_ContentEmbed_Extension_OnGetCapabilityFunc](capi-content-embed-extension-h.md#oh_contentembed_extension_ongetcapabilityfunc) callback function to be registered. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_GetContentEmbedDocument()
 
@@ -589,7 +589,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_GetContentEmbedDocument(Content
 
 **Description**
 
-Get the content embed document from the content embed object.
+Obtains the instance of the OE document associated with the server-side OE object.
 
 **Since**: 24
 
@@ -597,14 +597,14 @@ Get the content embed document from the content embed object.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object. |
-| [ContentEmbed_Document](capi-contentembed-contentembed-document.md) **ceDocument | Represents a pointer to an [ContentEmbed_Document](capi-contentembed-contentembed-document.md) ceDocument that is a output param. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| [ContentEmbed_Document](capi-contentembed-contentembed-document.md) **ceDocument | Output parameter. After the call is successful, this pointer points to the associated OE documentinstance. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the application is in the DLP sandbox.<br>     </li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_CallbackToOnUpdate()
 
@@ -614,7 +614,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnUpdate(ContentEmbed
 
 **Description**
 
-Invoke the OnUpdate callback registered by the client.
+Triggers the callback function for updating the OE document to register the client's OE object.
 
 **Since**: 24
 
@@ -622,13 +622,13 @@ Invoke the OnUpdate callback registered by the client.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - client callback not registered.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - the client callback fails.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback is not registered.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback fails to be executed.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_CallbackToOnError()
 
@@ -638,7 +638,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnError(ContentEmbed_
 
 **Description**
 
-Invoke the OnError callback registered by the client.
+Trigger the callback function of the error in the OE document that triggers the registration of the client'sOE object.
 
 **Since**: 24
 
@@ -646,14 +646,14 @@ Invoke the OnError callback registered by the client.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object. |
-| ContentEmbed_ErrorCode code | Indicates the error code. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| ContentEmbed_ErrorCode code | Error code. For details, see [ContentEmbed_ErrorCode](capi-content-embed-common-h.md#contentembed_errorcode). |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - client callback not registered.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - the client callback fails.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - The parameter check fails.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback is not registered.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback fails to be executed.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_CallbackToOnEditingFinished()
 
@@ -663,7 +663,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnEditingFinished(Con
 
 **Description**
 
-Invoke the OnEditingFinished callback registered by the client.
+Registers the callback function for finishing editing an OE document.
 
 **Since**: 24
 
@@ -671,14 +671,14 @@ Invoke the OnEditingFinished callback registered by the client.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object. |
-| bool dataModified | Indicates whether the document data has been modified. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| bool dataModified | Indicates whether the document data has been modified. The value true indicates that the file ismodified, and the value false indicates that the file is not modified. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - client callback not registered.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - the client callback fails.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback is not registered.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback fails to be executed.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_CallbackToOnExtensionStopped()
 
@@ -688,7 +688,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_CallbackToOnExtensionStopped(Co
 
 **Description**
 
-Invoke the OnExtensionStopped callback registered by the client.
+Stops the callback function of the OE Extension that is associated with all client-side OE objects andregistered by the OE Extension.
 
 **Since**: 24
 
@@ -696,13 +696,13 @@ Invoke the OnExtensionStopped callback registered by the client.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Represents a pointer to an [ContentEmbed_ExtensionInstance](capi-contentembed-contentembed-extensioninstance.md) instance. |
+| [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) instance | Pointer to the OE Extension instance object. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - client callback not registered.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - the client callback fails.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - Operations are successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_NOT_REGISTERED](capi-content-embed-common-h.md#contentembed_errorcode) - The client callback is not registered.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_CLIENT_CALLBACK_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to execute the client callback.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_SetSnapshot()
 
@@ -712,7 +712,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_SetSnapshot(ContentEmbed_Object
 
 **Description**
 
-Send the document snapshot to the client application.
+Sets the snapshot image of the OE document associated with the client-side OE object.
 
 **Since**: 24
 
@@ -720,14 +720,14 @@ Send the document snapshot to the client application.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | Represents a pointer to an [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object. |
-| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md) *pixelMap | Document Snapshot. |
+| [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
+| OH_PixelmapNative *pixelMap | Pixel map object of the document snapshot. For details, see [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md). |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox.<br>     [CE_ERR_IMAGE_PACKER_OPERATION_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - the image packer operation failed. |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is not supported because the app is in the DLP sandbox.</li><br>     <li>[CE_ERR_IMAGE_PACKER_OPERATION_FAILED](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to perform the image operation.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_ContextStartSelfUIAbility()
 
@@ -737,7 +737,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbility(Conte
 
 **Description**
 
-Starts self UIAbility.
+Starts the {@link UIAbility} of the current instance using the OE Extension context.
 
 **Since**: 24
 
@@ -745,14 +745,14 @@ Starts self UIAbility.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Represents a pointer to an [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) instance. |
-| AbilityBase_Want *want | The arguments passed to start self UIAbility.For details, see [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md). |
+| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Pointer to the context object of the OE Extension. |
+| [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md) *want | Parameter passed when the UIAbility is started. For details, see [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md). |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - the system service works abnormally.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox.<br> For details, see [ContentEmbed_ErrorCode](capi-content-embed-common-h.md#contentembed_errorcode). |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - The system service is abnormal.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_ContextStartSelfUIAbilityWithStartOptions()
 
@@ -762,7 +762,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextStartSelfUIAbilityWithSt
 
 **Description**
 
-Starts self UIAbility with start options.
+Starts the {@link UIAbility} of the OE Extension context using the start options.
 
 **Since**: 24
 
@@ -770,15 +770,15 @@ Starts self UIAbility with start options.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Represents a pointer to an [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) instance. |
-| AbilityBase_Want *want | The arguments passed to start self UIAbility.For details, see [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md). |
-| AbilityRuntime_StartOptions *options | The start options passed to start self UIAbility.For details, see {@link AbilityRuntime_StartOptions}. |
+| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Pointer to the OE Extension context object. |
+| [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md) *want | Parameter passed when the UIAbility is started. For details, see [AbilityBase_Want](../AbilityKit/capi-abilitybase-abilitybase-want.md). |
+| AbilityRuntime_StartOptions *options | Additional options for starting the UIAbility. For details, see {@link AbilityRuntime_StartOptions}. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - the system service works abnormally.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox.<br> For details, see [ContentEmbed_ErrorCode](capi-content-embed-common-h.md#contentembed_errorcode). |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - The operation is successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Failed to check the parameter.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - The system service is abnormal.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 ### OH_ContentEmbed_Extension_ContextTerminateAbility()
 
@@ -788,7 +788,7 @@ ContentEmbed_ErrorCode OH_ContentEmbed_Extension_ContextTerminateAbility(Content
 
 **Description**
 
-Terminate self UIAbility.
+Destroys the OE Extension.
 
 **Since**: 24
 
@@ -796,12 +796,12 @@ Terminate self UIAbility.
 
 | Parameter | Description |
 | -- | -- |
-| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Represents a pointer to an [ContentEmbed_ExtensionContext](capi-contentembed-contentembed-extensioncontext.md) instance. |
+| [ContentEmbed_ExtensionContextHandle](capi-contentembed-contentembed-extensioncontext8h.md) context | Pointer to the OE Extension context object. |
 
 **Returns**:
 
 | Type | Description |
 | -- | -- |
-| ContentEmbed_ErrorCode | Returns a specific error code.<br>     [CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - success.<br>     [CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - parameter check failed.<br>     [CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - unexpected null pointer.<br>     [CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - the system service works abnormally.<br>     [CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - the device is not supported.<br>     [CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - application is in dlp sandbox.<br> For details, see [ContentEmbed_ErrorCode](capi-content-embed-common-h.md#contentembed_errorcode). |
+| ContentEmbed_ErrorCode | <ul><br>     <li>[CE_ERR_OK](capi-content-embed-common-h.md#contentembed_errorcode) - Operations are successful.</li><br>     <li>[CE_ERR_PARAM_INVALID](capi-content-embed-common-h.md#contentembed_errorcode) - Parameter check failed.</li><br>     <li>[CE_ERR_NULL_POINTER](capi-content-embed-common-h.md#contentembed_errorcode) - A null pointer is returned.</li><br>     <li>[CE_ERR_SYSTEM_ABNORMAL](capi-content-embed-common-h.md#contentembed_errorcode) - The system service is abnormal.</li><br>     <li>[CE_ERR_DEVICE_NOT_SUPPORTED](capi-content-embed-common-h.md#contentembed_errorcode) - The device is not supported.</li><br>     <li>[CE_ERR_IN_DLP_SANDBOX](capi-content-embed-common-h.md#contentembed_errorcode) - This operation is not supported because the application is in<br>     the DLP sandbox.</li><br>         </ul> |
 
 

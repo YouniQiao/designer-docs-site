@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { nfcController } from '@ohos.nfc.controller';
+import { nfcController } from '@kit.ConnectivityKit';
 ```
 
 ## disableNfc
@@ -12,7 +12,8 @@ import { nfcController } from '@ohos.nfc.controller';
 function disableNfc(): void
 ```
 
-Disables NFC. This API can be called only by system applications
+Disables NFC.
+This API can be called only by system applications
 
 **Since:** 9
 

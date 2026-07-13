@@ -6,7 +6,9 @@
 function translate(options: TranslateOption): Matrix4Transit
 ```
 
-Matrix的平移函数，可以为当前矩阵增加x轴/y轴/z轴平移效果。 > **说明：**
+Matrix的平移函数，可以为当前矩阵增加x轴/y轴/z轴平移效果。
+
+> **说明：**
 
 **起始版本：** 7
 

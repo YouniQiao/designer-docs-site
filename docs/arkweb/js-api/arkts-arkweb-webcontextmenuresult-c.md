@@ -12,7 +12,8 @@ Defines the context menu result, related to {@link WebContextMenuResult} method.
 closeContextMenu(): void
 ```
 
-When close context menu without other call in WebContextMenuResult, User should call this function to close menu
+When close context menu without other call in WebContextMenuResult,
+User should call this function to close menu
 
 **Since:** 9
 
@@ -54,7 +55,8 @@ Executes the copy operation related to this context menu.
 copyImage(): void
 ```
 
-If WebContextMenuParam has image content, this function will copy image related to this context menu. If WebContextMenuParam has no image content, this function will do nothing.
+If WebContextMenuParam has image content, this function will copy image related to this context menu.
+If WebContextMenuParam has no image content, this function will do nothing.
 
 **Since:** 9
 
@@ -82,7 +84,11 @@ Executes the cut operation related to this context menu.
 paste(): void
 ```
 
-Executes the paste operation related to this context menu. <p><strong>API Note</strong>:<br> Permissions need to be configured: ohos.permission.READ_PASTEBOARD. </p>
+Executes the paste operation related to this context menu.
+
+<p><strong>API Note</strong>:<br>
+Permissions need to be configured: ohos.permission.READ_PASTEBOARD.
+</p>
 
 **Since:** 9
 
@@ -96,7 +102,11 @@ Executes the paste operation related to this context menu. <p><strong>API Note</
 pasteAndMatchStyle(): void
 ```
 
-Executes the paste and match style operation related to this context menu. <p><strong>API Note</strong>:<br> Permissions need to be configured: ohos.permission.READ_PASTEBOARD. </p>
+Executes the paste and match style operation related to this context menu.
+
+<p><strong>API Note</strong>:<br>
+Permissions need to be configured: ohos.permission.READ_PASTEBOARD.
+</p>
 
 **Since:** 20
 

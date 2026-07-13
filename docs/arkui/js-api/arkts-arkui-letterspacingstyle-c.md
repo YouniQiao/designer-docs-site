@@ -34,7 +34,9 @@ A constructor used to create a text letter spacing style.
 readonly letterSpacing: number
 ```
 
-Letter spacing. Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)
+Letter spacing.
+
+Unit: [vp](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)
 
 **Type:** number
 

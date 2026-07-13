@@ -9,7 +9,7 @@ The proxy of the UIExtension window.
 ## Modules to Import
 
 ```TypeScript
-import { uiExtension } from '@ohos.arkui.uiExtension';
+import { uiExtension } from '@kit.ArkUI';
 ```
 
 ## createSubWindowWithOptions
@@ -189,7 +189,8 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 getWindowAvoidArea(type: window.AvoidAreaType): window.AvoidArea
 ```
 
-Obtains the area where this window cannot be displayed, for example, the system bar area, notch, gesture area, and soft keyboard area.
+Obtains the area where this window cannot be displayed, for example, the system bar area, notch, gesture area,
+and soft keyboard area.
 
 **Since:** 12
 
@@ -241,7 +242,8 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 occupyEvents(eventFlags: number): Promise<void>
 ```
 
-Sets the events that the component (**EmbeddedComponent** or **UIExtensionComponent**) will occupy, preventing the host from responding to these events within the component's area.
+Sets the events that the component (**EmbeddedComponent** or **UIExtensionComponent**) will occupy, preventing
+the host from responding to these events within the component's area.
 
 **Since:** 18
 
@@ -255,7 +257,7 @@ Sets the events that the component (**EmbeddedComponent** or **UIExtensionCompon
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| eventFlags | number | Yes | Type of events to occupy. For details about the available values, see[EventFlag](arkts-arkui-eventflag-e.md#eventflag). |
+| eventFlags | number | Yes | Type of events to occupy. For details about the available values, see[EventFlag](arkts-arkui-eventflag-e.md). |
 
 **Return value:**
 
@@ -399,7 +401,8 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 off(type: 'rectChange', callback?: Callback<RectChangeOptions>): void
 ```
 
-Unsubscribes from position and size change events of the component (**EmbeddedComponent** or **UIExtensionComponent**).
+Unsubscribes from position and size change events of the component (**EmbeddedComponent** or
+**UIExtensionComponent**).
 
 **Since:** 14
 
@@ -544,7 +547,8 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 on(type: 'rectChange', reasons: number, callback: Callback<RectChangeOptions>): void
 ```
 
-Subscribes to position and size change events of the component (**EmbeddedComponent** or **UIExtensionComponent** ).
+Subscribes to position and size change events of the component (**EmbeddedComponent** or **UIExtensionComponent**
+).
 
 **Since:** 14
 
@@ -559,7 +563,7 @@ Subscribes to position and size change events of the component (**EmbeddedCompon
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'rectChange' | Yes | Event type. The value is fixed at **'rectChange'**, indicating the rectanglechange event for the component (**EmbeddedComponent** or **UIExtensionComponent**). |
-| reasons | number | Yes | Reason why the position and size of the component (**EmbeddedComponent** or**UIExtensionComponent**) change. For details about the values, see[RectChangeReason](arkts-arkui-rectchangereason-e.md#rectchangereason). |
+| reasons | number | Yes | Reason why the position and size of the component (**EmbeddedComponent** or**UIExtensionComponent**) change. For details about the values, see[RectChangeReason](arkts-arkui-rectchangereason-e.md). |
 | callback | Callback&lt;RectChangeOptions&gt; | Yes | Callback used to return the current rectangle change values andthe reason for the change of the component (**EmbeddedComponent** or **UIExtensionComponent**). |
 
 **Error codes:**
@@ -595,7 +599,13 @@ export default class EntryAbility extends EmbeddedUIExtensionAbility {
 properties: WindowProxyProperties
 ```
 
-Information about the component (**EmbeddedComponent** or **UIExtensionComponent**). Note: Due to architecture restrictions, avoid obtaining the value in [onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1). Instead, when possible, obtain the value after receiving the [on('windowSizeChange')](arkts-arkui-windowproxy-i.md#on-2) callback.
+Information about the component (**EmbeddedComponent** or **UIExtensionComponent**).
+
+Note: Due to architecture restrictions, avoid obtaining the value in
+[onSessionCreate](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#onsessioncreate-1). Instead, when
+possible, obtain the value after receiving the
+[on('windowSizeChange')](arkts-arkui-windowproxy-i.md#on-2)
+callback.
 
 **Type:** WindowProxyProperties
 

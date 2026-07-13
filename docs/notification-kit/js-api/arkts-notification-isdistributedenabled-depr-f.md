@@ -6,7 +6,8 @@
 function isDistributedEnabled(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether this device supports distributed notifications. This API uses an asynchronous callback to return the result.
+Checks whether this device supports distributed notifications. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 

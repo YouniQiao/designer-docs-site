@@ -1,4 +1,4 @@
-# VideoRecorderConfig
+# VideoRecorderConfig (System API)
 
 Provides the video recorder configuration definitions.
 
@@ -30,15 +30,15 @@ audio source type, details see @AudioSourceType .
 
 **System API:** This is a system API.
 
-## rotation
+## location
 
 ```TypeScript
-rotation?: int
+location?: Location
 ```
 
-Sets the video rotation angle in output file, and for the file to playback, in degrees. mp4 support. the range of rotation angle should be {0, 90, 180, 270}, default is 0.
+geographical location information.
 
-**Type:** int
+**Type:** Location
 
 **Since:** 9
 
@@ -62,15 +62,34 @@ video recorder profile, can get by "getVideoRecorderProfile", details see @Video
 
 **System API:** This is a system API.
 
-## location
+## rotation
 
 ```TypeScript
-location?: Location
+rotation?: number
 ```
 
-geographical location information.
+Sets the video rotation angle in output file, and for the file to playback, in degrees. mp4 support.
+the range of rotation angle should be {0, 90, 180, 270}, default is 0.
 
-**Type:** Location
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## url
+
+```TypeScript
+url: string
+```
+
+video output uri.support two kind of uri now.
+format like: scheme + "://" + "context".
+fd: fd://fd
+
+**Type:** string
 
 **Since:** 9
 
@@ -87,22 +106,6 @@ videoSourceType: VideoSourceType
 video source type, details see @VideoSourceType .
 
 **Type:** VideoSourceType
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
-
-**System API:** This is a system API.
-
-## url
-
-```TypeScript
-url: string
-```
-
-video output uri.support two kind of uri now. format like: scheme + "://" + "context". fd: fd://fd
-
-**Type:** string
 
 **Since:** 9
 

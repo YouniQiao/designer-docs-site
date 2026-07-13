@@ -14,7 +14,8 @@ PackageConfig: the package info class.
 readonly deliveryWithInstall: boolean
 ```
 
-Whether it should be installed together with the application. **true** if it should be installed together with the application, **false** otherwise.
+Whether it should be installed together with the application. **true** if it should be installed together with the
+application, **false** otherwise.
 
 **Type:** boolean
 

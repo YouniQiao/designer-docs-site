@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { call } from '@ohos.telephony.call';
+import { call } from '@kit.TelephonyKit';
 ```
 
 ## hasVoiceCapability
@@ -12,7 +12,11 @@ import { call } from '@ohos.telephony.call';
 function hasVoiceCapability(): boolean
 ```
 
-Checks whether a device supports voice calls. The system checks whether the device has the capability to initiate a circuit switching (CS) or IP multimedia subsystem domain (IMS) call on a telephone service network. If the device supports only packet switching (even if the device supports OTT calls), {@code false} is returned.
+Checks whether a device supports voice calls.
+
+The system checks whether the device has the capability to initiate a circuit switching (CS) or IP multimedia
+subsystem domain (IMS) call on a telephone service network. If the device supports only packet switching
+(even if the device supports OTT calls), {@code false} is returned.
 
 **Since:** 7
 

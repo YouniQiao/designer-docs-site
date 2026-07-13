@@ -1,6 +1,8 @@
 # Direction
 
-Enumerates the screen directions, which are used in the [Configuration.direction](arkts-ability-configuration-i.md#configuration) field. You can use these predefined enumerated values to set or obtain the screen direction of the system or application.
+Enumerates the screen directions, which are used in the
+[Configuration.direction](arkts-ability-configuration-i.md) field. You can use these predefined
+enumerated values to set or obtain the screen direction of the system or application.
 
 **Since:** 9
 

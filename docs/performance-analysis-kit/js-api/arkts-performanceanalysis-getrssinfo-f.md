@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getRssInfo
@@ -12,7 +12,8 @@ import { hidebug } from '@ohos.hidebug';
 function getRssInfo(): RssInfo
 ```
 
-Obtains the physical memory information of application process. This API is implemented by reading data from the /proc/{pid}/status node.
+Obtains the physical memory information of application process. This API is implemented by reading data from the
+/proc/{pid}/status node.
 
 **Since:** 24
 

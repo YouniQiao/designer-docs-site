@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## factoryReset
@@ -12,7 +12,9 @@ import { connection } from '@ohos.net.connection';
 function factoryReset(): Promise<void>
 ```
 
-factory reset network settings To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+factory reset network settings
+
+To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 11
 

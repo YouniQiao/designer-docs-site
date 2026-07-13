@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## createCloudDBStub
@@ -12,7 +12,9 @@ import { cloudExtension } from '@ohos.data.cloudExtension';
 function createCloudDBStub(instance: CloudDB): Promise<rpc.RemoteObject>
 ```
 
-Creates a RemoteObject instance based on a CloudDB instance. The system uses this object to call the APIs of the CloudDB instance. This API uses a promise to return the result.
+Creates a RemoteObject instance based on a CloudDB instance.
+The system uses this object to call the APIs of the CloudDB instance.
+This API uses a promise to return the result.
 
 **Since:** 11
 

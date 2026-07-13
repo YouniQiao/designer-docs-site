@@ -1,6 +1,10 @@
 # FloatingBallController
 
-Implements a floating ball controller instance, which is used to start, update, and stop floating balls, and register callbacks. Before calling any of the following APIs, you must use [floatingBall.create()](arkts-arkui-create-f.md#create-1) to create a floating ball controller instance.
+Implements a floating ball controller instance, which is used to start, update, and stop floating balls, and
+register callbacks.
+
+Before calling any of the following APIs, you must use [floatingBall.create()](arkts-arkui-create-f.md#create-1) to create
+a floating ball controller instance.
 
 **Since:** 20
 
@@ -9,7 +13,7 @@ Implements a floating ball controller instance, which is used to start, update, 
 ## Modules to Import
 
 ```TypeScript
-import { floatingBall } from '@ohos.window.floatingBall';
+import { floatingBall } from '@kit.ArkUI';
 ```
 
 ## getFloatingBallWindowInfo
@@ -190,7 +194,8 @@ try {
 on(type: 'stateChange', callback: Callback<FloatingBallState>): void
 ```
 
-Registers a listener for lifecycle state changes of the floating ball. To prevent memory leaks, remember to unregister the listener when it is no longer needed.
+Registers a listener for lifecycle state changes of the floating ball. To prevent memory leaks, remember to
+unregister the listener when it is no longer needed.
 
 **Since:** 20
 
@@ -232,7 +237,8 @@ try {
 on(type: 'click', callback: Callback<void>): void
 ```
 
-Registers a listener for click events of the floating ball. To prevent memory leaks, remember to unregister the listener when it is no longer needed.
+Registers a listener for click events of the floating ball. To prevent memory leaks, remember to unregister the
+listener when it is no longer needed.
 
 **Since:** 20
 
@@ -317,7 +323,10 @@ try {
 restoreMainWindow(want: Want): Promise<void>
 ```
 
-Restores the main window of the application and loads the specified page. This API uses a promise to return the result. This API can be called only after the floating ball is tapped. If the application has the **ohos.permission.AUTO_RESTORE_MAIN_WINDOW** permission, this API can be called directly without tapping the floating ball.
+Restores the main window of the application and loads the specified page. This API uses a promise to return the
+result. This API can be called only after the floating ball is tapped. If the application has the
+**ohos.permission.AUTO_RESTORE_MAIN_WINDOW** permission, this API can be called directly without tapping the
+floating ball.
 
 **Since:** 20
 
@@ -379,7 +388,17 @@ try {
 setFloatingBallVisibilityInApp(isVisible: boolean): Promise<void>
 ```
 
-Sets whether the floating ball is visible in the application. This API uses a promise to return the result. - When the application is on the recent tasks screen (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball is invisible. - By default (when this API is not called) or when this API is called with the value **true** passed in, the floating ball is visible except on the recent tasks screen. - When this API is called with the value **false** passed in, the floating ball is invisible when the application is in the foreground (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **SHOWN** or **RESUMED**) and is visible when the application is in the background (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
+Sets whether the floating ball is visible in the application. This API uses a promise to return the result.
+
+- When the application is on the recent tasks screen (the
+[lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball
+is invisible.
+- By default (when this API is not called) or when this API is called with the value **true** passed in, the
+floating ball is visible except on the recent tasks screen.
+- When this API is called with the value **false** passed in, the floating ball is invisible when the application
+is in the foreground (the [lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is
+**SHOWN** or **RESUMED**) and is visible when the application is in the background (the
+[lifecycle state](../../../../windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
 
 **Since:** 24
 
@@ -458,7 +477,7 @@ Starts the floating ball. This API uses a promise to return the result.
 | [1300023](../errorcode-window.md#1300023-internal-error-of-the-floating-ball) | Floating ball internal error. |
 | [1300024](../errorcode-window.md#1300024-abnormal-floating-ball-window-state) | The floating ball window state is abnormal. |
 | [1300025](../errorcode-window.md#1300025-unsupported-operation-in-the-current-floating-ball-state) | The floating ball state does not support this operation. |
-| [1300034](../errorcode-window.md#1300034-operation-of-the-float-view-conflicts-with-those-of-other-floating-windows) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**Applicable version:** 26.0.0 |
+| [1300034](../errorcode-window.md#1300034-operation-of-the-float-view-conflicts-with-those-of-other-floating-windows) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 

@@ -68,7 +68,7 @@
 | [OH_AVErrCode OH_AVPlayer_SetVolumeMode(OH_AVPlayer *player, OH_AudioStream_VolumeMode volumeMode)](#oh_avplayer_setvolumemode) | - | 设置player音频流音量模式。 |
 | [OH_AVErrCode OH_AVPlayer_SetPlaybackRate(OH_AVPlayer *player, float rate)](#oh_avplayer_setplaybackrate) | - | 在有效范围内，设置播放器的播放速率。支持的状态：已准备/正在播放/已暂停/已完成。 |
 | [OH_AVErrCode OH_AVPlayer_SetLoudnessGain(OH_AVPlayer *player, float loudnessGain)](#oh_avplayer_setloudnessgain) | - | 设置播放器的响度。当播放处于prepared/playing/paused/completed/stopped状态时，可调用该接口。默认响度增益0.0dB。播放器流的usage参数必须是{@link OH_AudioStream_Usage}.AUDIOSTREAM_USAGE_MUSIC，{@link OH_AudioStream_Usage}.AUDIOSTREAM_USAGE_MOVIE，{@link OH_AudioStream_Usage}.AUDIOSTREAM_USAGE_AUDIOBOOK 之一。音频渲染器的延迟模式必须是{@link OH_AudioStream_LatencyMode}.AUDIOSTREAM_LATENCY_MODE_NORMAL。如果通过高分辨率管道播放，则不支持此操作。 |
-| [OH_AVFormat *OH_AVPlayer_GetPlaybackStatisticMetrics(OH_AVPlayer *player)](#oh_avplayer_getplaybackstatisticmetrics) | - | 获取当前播放器的统计指标信息。设置完播放资源，并且当播放处于准备（prepared）/播放（playing）/暂停（paused）/完成（completed）/停止（stopped）状态时，可调用该接口。需要注意返回值{@link OH_AVFormat}指针对象的生命周期需要用户手动释放。 |
+| [OH_AVFormat *OH_AVPlayer_GetPlaybackStatisticMetrics(OH_AVPlayer *player)](#oh_avplayer_getplaybackstatisticmetrics) | - | 获取当前播放器的统计指标信息。设置完播放资源，并且当播放处于准备（prepared）/播放（playing）/暂停（paused）/完成（completed）/停止（stopped）状态时，可调用该接口。需要注意返回值[OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md)指针对象的生命周期需要用户手动释放。 |
 | [OH_AVErrCode OH_AVPlayer_AddFdSubtitleSource(OH_AVPlayer *player, int32_t fd, int64_t offset, int64_t size)](#oh_avplayer_addfdsubtitlesource) | - | 将由文件描述符表示的字幕资源添加到播放器。目前，外挂字幕必须在AVPlayer设置完视频资源的fdSrc之后再设置。 |
 | [OH_AVErrCode OH_AVPlayer_AddUrlSubtitleSource(OH_AVPlayer *player, const char *url)](#oh_avplayer_addurlsubtitlesource) | - | 将由URL表示的字幕资源添加到播放器。外挂字幕必须在AVPlayer设置完url之后再设置。 |
 | [OH_AVErrCode OH_AVPlayer_SetPlaybackRange(OH_AVPlayer *player, int32_t mSecondsStart, int32_t mSecondsEnd, bool closestRange)](#oh_avplayer_setplaybackrange) | - | 设置播放起始位置和结束位置。设置后，仅播放音视频文件中指定范围内的内容。可在初始化、已准备、暂停、停止或完成状态下调用。 |
@@ -411,7 +411,7 @@ OH_AVFormat *OH_AVPlayer_GetMediaDescription(OH_AVPlayer *player)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat * | 执行成功返回播放器媒体信息，否则返回nullptr。<br> 可能故障原因：<br> 1. 传入player指针不合法。<br> 2. 设置的播放资源不合法。 |
+| [OH_AVFormat *](../AVCodecKit/capi-core-oh-avformat.md) | 执行成功返回播放器媒体信息，否则返回nullptr。<br> 可能故障原因：<br> 1. 传入player指针不合法。<br> 2. 设置的播放资源不合法。 |
 
 ### OH_AVPlayer_GetTrackDescription()
 
@@ -436,7 +436,7 @@ OH_AVFormat *OH_AVPlayer_GetTrackDescription(OH_AVPlayer *player, uint32_t index
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat * | 执行成功按索引下标返回轨道信息，否则返回nullptr。<br> 可能故障原因：<br> 1. 传入player指针不合法。<br> 2. 设置的播放资源不合法。<br> 3. 轨道索引下标超出播放源文件数组界限。 |
+| [OH_AVFormat *](../AVCodecKit/capi-core-oh-avformat.md) | 执行成功按索引下标返回轨道信息，否则返回nullptr。<br> 可能故障原因：<br> 1. 传入player指针不合法。<br> 2. 设置的播放资源不合法。<br> 3. 轨道索引下标超出播放源文件数组界限。 |
 
 ### OH_AVPlayer_SetVolume()
 
@@ -482,7 +482,7 @@ OH_AVErrCode OH_AVPlayer_Seek(OH_AVPlayer *player, int32_t mSeconds, AVPlayerSee
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
 | int32_t mSeconds | 播放目标位置，精确到毫秒。 |
-| AVPlayerSeekMode mode | 播放器的跳转模式。 |
+| [AVPlayerSeekMode](capi-avplayer-base-h.md#avplayerseekmode) mode | 播放器的跳转模式。 |
 
 **返回：**
 
@@ -582,7 +582,7 @@ OH_AVErrCode OH_AVPlayer_SetPlaybackSpeed(OH_AVPlayer *player, AVPlaybackSpeed s
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| AVPlaybackSpeed speed | 速率模式。 |
+| [AVPlaybackSpeed](capi-avplayer-base-h.md#avplaybackspeed) speed | 速率模式。 |
 
 **返回：**
 
@@ -607,7 +607,7 @@ OH_AVErrCode OH_AVPlayer_GetPlaybackSpeed(OH_AVPlayer *player, AVPlaybackSpeed *
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| AVPlaybackSpeed *speed | 速率模式。 |
+| [AVPlaybackSpeed](capi-avplayer-base-h.md#avplaybackspeed) *speed | 速率模式。 |
 
 **返回：**
 
@@ -638,7 +638,7 @@ OH_AVErrCode OH_AVPlayer_GetPlaybackRate(OH_AVPlayer *player, float *rate)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVErrCode | 如果成功获取当前播放器的播放速率，返回{@link AV_ERR_OK}；<br> 否则返回{@link native_averrors.h}中定义的错误码。 |
+| OH_AVErrCode | 如果成功获取当前播放器的播放速率，返回[AV_ERR_OK](../AVCodecKit/capi-native-averrors-h.md#oh_averrcode)；<br> 否则返回{@link native_averrors.h}中定义的错误码。 |
 
 ### OH_AVPlayer_SetAudioRendererInfo()
 
@@ -807,7 +807,7 @@ OH_AVErrCode OH_AVPlayer_GetState(OH_AVPlayer *player, AVPlayerState *state)
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| AVPlayerState *state | 当前播放状态。 |
+| [AVPlayerState](capi-avplayer-base-h.md#avplayerstate) *state | 当前播放状态。 |
 
 **返回：**
 
@@ -909,7 +909,7 @@ OH_AVErrCode OH_AVPlayer_SetPlayerCallback(OH_AVPlayer *player, AVPlayerCallback
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| AVPlayerCallback callback | 回调对象指针。 |
+| [AVPlayerCallback](capi-avplayer-avplayercallback.md) callback | 回调对象指针。 |
 
 **返回：**
 
@@ -1086,7 +1086,7 @@ OH_AVErrCode OH_AVPlayer_SetOnInfoCallback(OH_AVPlayer *player, OH_AVPlayerOnInf
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_AVPlayerOnInfoCallback callback | 执行回调监听函数的指针，空指针表示取消设置播放器消息回调监听。 |
+| [OH_AVPlayerOnInfoCallback](capi-avplayer-base-h.md#oh_avplayeroninfocallback) callback | 执行回调监听函数的指针，空指针表示取消设置播放器消息回调监听。 |
 | void *userData | 指向应用调用者设置的实例的指针。 |
 
 **返回：**
@@ -1112,7 +1112,7 @@ OH_AVErrCode OH_AVPlayer_SetOnErrorCallback(OH_AVPlayer *player, OH_AVPlayerOnEr
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_AVPlayerOnErrorCallback callback | 执行回调监听函数的指针，空指针表示取消设置播放器错误回调监听。 |
+| [OH_AVPlayerOnErrorCallback](capi-avplayer-base-h.md#oh_avplayeronerrorcallback) callback | 执行回调监听函数的指针，空指针表示取消设置播放器错误回调监听。 |
 | void *userData | 指向应用调用者设置的实例的指针。 |
 
 **返回：**
@@ -1204,7 +1204,7 @@ OH_AVFormat *OH_AVPlayer_GetPlaybackStatisticMetrics(OH_AVPlayer *player)
 
 **描述**
 
-获取当前播放器的统计指标信息。设置完播放资源，并且当播放处于准备（prepared）/播放（playing）/暂停（paused）/完成（completed）/停止（stopped）状态时，可调用该接口。需要注意返回值{@link OH_AVFormat}指针对象的生命周期需要用户手动释放。
+获取当前播放器的统计指标信息。设置完播放资源，并且当播放处于准备（prepared）/播放（playing）/暂停（paused）/完成（completed）/停止（stopped）状态时，可调用该接口。需要注意返回值[OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md)指针对象的生命周期需要用户手动释放。
 
 **起始版本：** 23
 
@@ -1218,7 +1218,7 @@ OH_AVFormat *OH_AVPlayer_GetPlaybackStatisticMetrics(OH_AVPlayer *player)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat * | 执行成功返回播放器的统计指标信息（键值详情请参考avplayer_base.h中的{@link 变量}信息），否则返回nullptr。<br> 可能的失败原因：传入player指针不合法。 |
+| [OH_AVFormat *](../AVCodecKit/capi-core-oh-avformat.md) | 执行成功返回播放器的统计指标信息（键值详情请参考avplayer_base.h中的{@link 变量}信息），否则返回nullptr。<br> 可能的失败原因：传入player指针不合法。 |
 
 ### OH_AVPlayer_AddFdSubtitleSource()
 
@@ -1314,7 +1314,7 @@ OH_AVErrCode OH_AVPlayer_SetMediaMuted(OH_AVPlayer *player, OH_MediaType mediaTy
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_MediaType mediaType | 指定的媒体类型，参见{@link native_avcodec_base.h}中的{@link OH_MediaType}。 |
+| OH_MediaType mediaType | 指定的媒体类型，参见{@link native_avcodec_base.h}中的[OH_MediaType](../AVCodecKit/capi-native-avcodec-base-h.md#oh_mediatype)。 |
 | bool muted | true表示静音，false表示取消静音。 |
 
 **返回：**
@@ -1389,7 +1389,7 @@ OH_AVErrCode OH_AVPlayer_SelectTrackWithMode(OH_AVPlayer *player, int32_t index,
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
 | int32_t index | 所选轨道的索引。 |
-| AVPlayerTrackSwitchMode mode | 切换模式。 |
+| [AVPlayerTrackSwitchMode](capi-avplayer-base-h.md#avplayertrackswitchmode) mode | 切换模式。 |
 
 **返回：**
 
@@ -1414,7 +1414,7 @@ OH_AVErrCode OH_AVPlayer_SetAmplitudeUpdateCallback(OH_AVPlayer *player, OH_AVPl
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_AVPlayerOnAmplitudeUpdateCallback callback | 回调函数指针，nullptr表示取消注册回调。 |
+| [OH_AVPlayerOnAmplitudeUpdateCallback](capi-avplayer-base-h.md#oh_avplayeronamplitudeupdatecallback) callback | 回调函数指针，nullptr表示取消注册回调。 |
 | void *userData | 指向用户特定数据的指针。 |
 
 **返回：**
@@ -1442,7 +1442,7 @@ OH_AVErrCode OH_AVPlayer_SetSeiReceivedCallback(OH_AVPlayer *player, const int32
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
 | const int32_t *payloadTypes | 负载类型数组。 |
 | uint32_t typeNum | 负载类型数组的大小。 |
-| OH_AVPlayerOnSeiMessageReceivedCallback callback | 回调函数指针，nullptr表示取消注册回调。 |
+| [OH_AVPlayerOnSeiMessageReceivedCallback](capi-avplayer-base-h.md#oh_avplayeronseimessagereceivedcallback) callback | 回调函数指针，nullptr表示取消注册回调。 |
 | void *userData | 指向用户特定数据的指针。 |
 
 **返回：**
@@ -1467,7 +1467,7 @@ uint32_t OH_AVSeiMessage_GetSeiCount(OH_AVSeiMessageArray *message)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVSeiMessageArray *message | 指向OH_AVSeiMessageArray实例的指针。 |
+| [OH_AVSeiMessageArray](capi-avplayer-oh-avseimessagearray.md) *message | 指向OH_AVSeiMessageArray实例的指针。 |
 
 **返回：**
 
@@ -1491,14 +1491,14 @@ OH_AVFormat *OH_AVSeiMessage_GetSei(OH_AVSeiMessageArray *message, uint32_t inde
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVSeiMessageArray *message | 指向OH_AVSeiMessageArray实例的指针。 |
+| [OH_AVSeiMessageArray](capi-avplayer-oh-avseimessagearray.md) *message | 指向OH_AVSeiMessageArray实例的指针。 |
 | uint32_t index | 消息项的索引。 |
 
 **返回：**
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat * | 该消息项的SEI。 |
+| [OH_AVFormat *](../AVCodecKit/capi-core-oh-avformat.md) | 该消息项的SEI。 |
 
 ### OH_AVPlayer_SetTargetVideoWindowSize()
 
@@ -1567,7 +1567,7 @@ OH_AVPlaybackStrategy *OH_AVPlaybackStrategy_Create(void)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVPlaybackStrategy * | 一个播放策略实例，失败时返回空指针。 |
+| [OH_AVPlaybackStrategy *](capi-avplayer-oh-avplaybackstrategy.md) | 一个播放策略实例，失败时返回空指针。 |
 
 ### OH_AVPlaybackStrategy_Destroy()
 
@@ -1585,7 +1585,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_Destroy(OH_AVPlaybackStrategy *strategy)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | OH_AVPlaybackStrategy实例。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | OH_AVPlaybackStrategy实例。 |
 
 **返回：**
 
@@ -1609,7 +1609,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredWidth(OH_AVPlaybackStrategy *stra
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
 | int32_t width | avplayer启动时选择播放的首选宽度。 |
 
 **返回：**
@@ -1634,7 +1634,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredHeight(OH_AVPlaybackStrategy *str
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
 | int32_t height | avplayer启动时选择播放的首选高度。 |
 
 **返回：**
@@ -1659,7 +1659,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredBufferDuration(OH_AVPlaybackStrat
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | avplayer使用的OH_AVPlaybackStrategy。 |
 | int32_t ms | avplayer启动时选择播放的首选缓冲时长。 |
 
 **返回：**
@@ -1684,7 +1684,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredHdr(OH_AVPlaybackStrategy *strate
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | bool enabled | true表示启用HDR，false表示禁用。 |
 
 **返回：**
@@ -1709,7 +1709,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredSubtitleLanguage(OH_AVPlaybackStr
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | const char *lang | 字幕语言代码（例如"zh"）。 |
 
 **返回：**
@@ -1734,7 +1734,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredAudioLanguage(OH_AVPlaybackStrate
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | const char *lang | 音频语言代码（例如"en"）。 |
 
 **返回：**
@@ -1759,7 +1759,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetMutedMediaType(OH_AVPlaybackStrategy *stra
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | OH_MediaType mediaType | 要静音的媒体类型。 |
 
 **返回：**
@@ -1784,7 +1784,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetShowFirstFrameOnPrepare(OH_AVPlaybackStrat
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | bool enabled | true表示显示，false表示不显示。 |
 
 **返回：**
@@ -1809,7 +1809,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetThresholdForAutoQuickPlay(OH_AVPlaybackStr
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | double seconds | 自动快速播放的阈值。 |
 
 **返回：**
@@ -1834,7 +1834,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetSuperResolutionEnable(OH_AVPlaybackStrateg
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | bool enabled | true表示启用，false表示禁用。 |
 
 **返回：**
@@ -1859,7 +1859,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetPreferredBufferDurationForPlaying(OH_AVPla
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | double seconds | 缓冲时长（秒）。 |
 
 **返回：**
@@ -1884,7 +1884,7 @@ OH_AVErrCode OH_AVPlaybackStrategy_SetKeepDecodingOnMute(OH_AVPlaybackStrategy *
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVPlaybackStrategy *strategy | 指向OH_AVPlaybackStrategy的指针。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 指向OH_AVPlaybackStrategy的指针。 |
 | bool enabled | true表示继续解码，false表示静音时暂停解码。 |
 
 **返回：**
@@ -1910,7 +1910,7 @@ OH_AVErrCode OH_AVPlayer_SetPlaybackStrategy(OH_AVPlayer *player, OH_AVPlaybackS
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| OH_AVPlaybackStrategy *strategy | 播放策略实例。 |
+| [OH_AVPlaybackStrategy](capi-avplayer-oh-avplaybackstrategy.md) *strategy | 播放策略实例。 |
 
 **返回：**
 
@@ -1940,7 +1940,7 @@ OH_AVFormat* OH_AVPlayer_GetPlaybackInfo(OH_AVPlayer *player)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat* | 返回指向OH_AVFormat实例的指针。<br> 若player为空指针或无效，则返回空指针。 |
+| [OH_AVFormat*](../AVCodecKit/capi-core-oh-avformat.md) | 返回指向OH_AVFormat实例的指针。<br> 若player为空指针或无效，则返回空指针。 |
 
 ### OH_AVPlayer_SetMediaSource()
 
@@ -1959,7 +1959,7 @@ OH_AVErrCode OH_AVPlayer_SetMediaSource(OH_AVPlayer *player, OH_AVMediaSource *s
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | 指向OH_AVPlayer实例的指针。 |
-| [OH_AVMediaSource](capi-avmedia-source-oh-avmediasource.md) *source | 媒体源。 |
+| OH_AVMediaSource *source | 媒体源。 |
 
 **返回：**
 
@@ -2014,7 +2014,7 @@ OH_AVFormat *OH_AVPlayer_GetTrackFormat(OH_AVPlayer *player, uint32_t trackIndex
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVFormat * | 返回指向OH_AVFormat实例的指针。<br> 若player为空指针或无效，或trackIndex无效，则返回空指针。 |
+| [OH_AVFormat *](../AVCodecKit/capi-core-oh-avformat.md) | 返回指向OH_AVFormat实例的指针。<br> 若player为空指针或无效，或trackIndex无效，则返回空指针。 |
 
 ### OH_AVPlayer_SetVideoSideOutput()
 
@@ -2033,7 +2033,7 @@ Method to set video decoded frame output callback. This API can be called onlywh
 | 参数项 | 描述 |
 | -- | -- |
 | OH_AVPlayer *player | Pointer to an OH_AVPlayer instance. |
-| OHNativeWindow *window | A pointer to a OHNativeWindow instance, see {@link OHNativeWindow} |
+| OHNativeWindow *window | A pointer to a OHNativeWindow instance, see [OHNativeWindow](../AVCodecKit/capi-codecbase-nativewindow.md) |
 
 **返回：**
 
@@ -2063,6 +2063,6 @@ Method to get one video decoded frame. This API can be called only when the avpl
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_VideoOutputResult | Returns OH_VIDEO_OUTPUT_OK when got a frame.<br>         Returns OH_VIDEO_OUTPUT_NO_IMAGE when there is no frame ready to render. |
+| [OH_VideoOutputResult](capi-avplayer-base-h.md#oh_videooutputresult) | Returns OH_VIDEO_OUTPUT_OK when got a frame.<br>         Returns OH_VIDEO_OUTPUT_NO_IMAGE when there is no frame ready to render. |
 
 

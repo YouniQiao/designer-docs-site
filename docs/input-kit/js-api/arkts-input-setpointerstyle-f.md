@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { pointer } from '@ohos.multimodalInput.pointer';
+import { pointer } from '@kit.InputKit';
 ```
 
 ## setPointerStyle
@@ -12,7 +12,11 @@ import { pointer } from '@ohos.multimodalInput.pointer';
 function setPointerStyle(windowId: number, pointerStyle: PointerStyle, callback: AsyncCallback<void>): void
 ```
 
-Sets the mouse pointer style type for a specified window. This API can set only the mouse pointer style type of windows within the current application process. For details about how to set the mouse pointer style type of the host window through the **UIExtensionAbility** process, see [setCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcursor-1). This API uses an asynchronous callback to return the result.
+Sets the mouse pointer style type for a specified window. This API can set only the mouse pointer style type of
+windows within the current application process. For details about how to set the mouse pointer style type of the
+host window through the **UIExtensionAbility** process, see
+[setCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcursor-1). This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -81,7 +85,10 @@ struct Index {
 function setPointerStyle(windowId: number, pointerStyle: PointerStyle): Promise<void>
 ```
 
-Sets the mouse pointer style type for a specified window. This API can set only the mouse pointer style type of windows within the current application process. For details about how to set the mouse pointer style type of the host window through the **UIExtensionAbility** process, see [setCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcursor-1). This uses a promise to return the result.
+Sets the mouse pointer style type for a specified window. This API can set only the mouse pointer style type of
+windows within the current application process. For details about how to set the mouse pointer style type of the
+host window through the **UIExtensionAbility** process, see
+[setCursor](../../apis-arkui/arkts-apis/arkts-arkui-cursorcontroller-c.md#setcursor-1). This uses a promise to return the result.
 
 **Since:** 9
 

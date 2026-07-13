@@ -12,5 +12,5 @@ import { ActionExtensionAbility } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ActionExtensionAbility](arkts-actionextensionability-c.md) | ActionExtensionAbility是为开发者提供的自定义操作业务模板，继承自 [UIExtensionAbility]{@link @ohos.app.ability.UIExtensionAbility:UIExtensionAbility}。 开发者通过实现ActionExtensionAbility，为其他应用提供内容查看与处理功能。例如，开发者使用ActionExtensionAbility实现了文本翻译功能。其他应用可以通过调用该 ActionExtensionAbility来处理需要翻译的内容，并获取到处理后的翻译内容。 各类Ability的继承关系详见[继承关系说明](docroot://reference/apis-ability-kit/js-apis-app-ability-ability.md#ability的继承关系说明)。 |
+| [ActionExtensionAbility](arkts-ability-actionextensionability-c.md) | The ActionExtensionAbility module provides a template for you to implement custom actions. It inherits from[UIExtensionAbility](arkts-ability-uiextensionability-c.md).By implementing ActionExtensionAbility, you can provide content viewing and processing functionalities for otherapplications. For example, you can use ActionExtensionAbility to implement a text translation feature. Otherapplications can then call this ActionExtensionAbility to process content that requires translation and obtain thetranslated result.For details about the inheritance relationship of each ability, see[Inheritance Relationship](../../../../reference/apis-ability-kit/js-apis-app-ability-ability.md#ability-inheritance-relationship). |
 

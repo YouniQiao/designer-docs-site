@@ -1,6 +1,8 @@
 # PhotoViewPicker
 
-图库选择器对象，用来支撑选择图片/视频和保存图片/视频等用户场景。选择文件推荐使用 [PhotoAccessHelper的PhotoViewPicker](@ohos.file.photoAccessHelper:photoAccessHelper)。 在使用前，需要先创建PhotoViewPicker实例。
+图库选择器对象，用来支撑选择图片/视频和保存图片/视频等用户场景。选择文件推荐使用
+[PhotoAccessHelper的PhotoViewPicker](@ohos.file.photoAccessHelper:photoAccessHelper)。
+在使用前，需要先创建PhotoViewPicker实例。
 
 **起始版本：** 9
 
@@ -51,7 +53,7 @@ constructor(context: Context)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | Context | 是 | 应用上下文（仅支持UIAbilityContext）。Stage模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context)。 |
+| context | Context | 是 | 应用上下文（仅支持UIAbilityContext）。Stage模型的应用Context定义见[Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md)。 |
 
 **示例：**
 
@@ -88,7 +90,8 @@ struct Index {
 save(option?: PhotoSaveOptions): Promise<Array<string>>
 ```
 
-通过保存模式拉起photoPicker界面，用户可以保存一个或多个图片/视频。接口采用Promise异步返回形式， 传入可选参数PhotoSaveOptions对象，返回保存文件的uri数组。
+通过保存模式拉起photoPicker界面，用户可以保存一个或多个图片/视频。接口采用Promise异步返回形式，
+传入可选参数PhotoSaveOptions对象，返回保存文件的uri数组。
 
 **起始版本：** 9
 
@@ -140,7 +143,8 @@ async function example04(context: common.UIAbilityContext) { // 需确保 contex
 save(option: PhotoSaveOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-通过保存模式拉起photoPicker界面，用户可以保存一个或多个图片/视频。接口采用callback异步返回形式， 传入参数PhotoSaveOptions对象，返回保存文件的uri数组。
+通过保存模式拉起photoPicker界面，用户可以保存一个或多个图片/视频。接口采用callback异步返回形式，
+传入参数PhotoSaveOptions对象，返回保存文件的uri数组。
 
 **起始版本：** 9
 
@@ -235,7 +239,8 @@ async function example06(context: common.UIAbilityContext) { // 需确保 contex
 select(option?: PhotoSelectOptions): Promise<PhotoSelectResult>
 ```
 
-通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用Promise异步返回形式， 传入可选参数PhotoSelectOptions对象，返回PhotoSelectResult对象。
+通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用Promise异步返回形式，
+传入可选参数PhotoSelectOptions对象，返回PhotoSelectResult对象。
 
 **起始版本：** 9
 
@@ -290,7 +295,8 @@ async function example01(context: common.UIAbilityContext) { // 需确保 contex
 select(option: PhotoSelectOptions, callback: AsyncCallback<PhotoSelectResult>): void
 ```
 
-通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用callback异步返回形式， 传入参数PhotoSelectOptions对象，返回PhotoSelectResult对象。
+通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用callback异步返回形式，
+传入参数PhotoSelectOptions对象，返回PhotoSelectResult对象。
 
 **起始版本：** 9
 
@@ -342,7 +348,8 @@ async function example02(context: common.UIAbilityContext) { // 需确保 contex
 select(callback: AsyncCallback<PhotoSelectResult>): void
 ```
 
-通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用callback异步返回形式， 返回PhotoSelectResult对象。
+通过选择模式拉起photoPicker界面，用户可以选择一个或多个图片/视频。接口采用callback异步返回形式，
+返回PhotoSelectResult对象。
 
 **起始版本：** 9
 

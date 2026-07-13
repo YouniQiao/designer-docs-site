@@ -9,7 +9,7 @@ Provides information about a form.
 ## Modules to Import
 
 ```TypeScript
-import { formInfo } from '@ohos.app.form.formInfo';
+import { formInfo } from '@kit.FormKit';
 ```
 
 ## abilityName
@@ -84,7 +84,8 @@ Obtains the custom data defined in this form.
 defaultDimension: number
 ```
 
-Obtains the default grid style of this form. The value must be a positive integer, refer to {@link formInfo.FormDimension}.
+Obtains the default grid style of this form.
+The value must be a positive integer, refer to {@link formInfo.FormDimension}.
 
 **Type:** number
 
@@ -116,7 +117,8 @@ Obtains the description of this form.
 descriptionId: number
 ```
 
-Obtains the description id of this form. The value must be a positive integer.
+Obtains the description id of this form.
+The value must be a positive integer.
 
 **Type:** number
 
@@ -148,7 +150,8 @@ Obtains the display name of this form.
 displayNameId: number
 ```
 
-Obtains the displayName resource id of this form. The value must be a positive integer.
+Obtains the displayName resource id of this form.
+The value must be a positive integer.
 
 **Type:** number
 
@@ -292,7 +295,8 @@ Obtains the scheduledUpdateTime.
 supportDimensions: Array<number>
 ```
 
-Obtains the grid styles supported by this form. The minimum length is 1, refer to {@link formInfo.FormDimension}.
+Obtains the grid styles supported by this form.
+The minimum length is 1, refer to {@link formInfo.FormDimension}.
 
 **Type:** Array<number>
 
@@ -308,7 +312,8 @@ Obtains the grid styles supported by this form. The minimum length is 1, refer t
 supportedShapes: Array<number>
 ```
 
-Obtains the shape supported by this form. The minimum length is 1, refer to {@link formInfo.FormShape}.
+Obtains the shape supported by this form.
+The minimum length is 1, refer to {@link formInfo.FormShape}.
 
 **Type:** Array<number>
 
@@ -358,7 +363,8 @@ Obtains the type of this form. Currently, JS forms are supported.
 updateDuration: number
 ```
 
-Obtains the updateDuration. The value must be an integer within [0,336].
+Obtains the updateDuration.
+The value must be an integer within [0,336].
 
 **Type:** number
 

@@ -12,7 +12,11 @@ You need a custom class to implement the **GestureModifier** API.
 applyGesture(event: UIGestureEvent): void
 ```
 
-Applies a gesture. You can customize this API as required. Dynamic configuration using the **if/else** syntax is supported. If gesture switching is triggered during an active gesture operation, the change takes effect in the next gesture operation after the current one completes (when all fingers are lifted).
+Applies a gesture.
+
+You can customize this API as required. Dynamic configuration using the **if/else** syntax is supported. If gesture
+switching is triggered during an active gesture operation, the change takes effect in the next gesture operation
+after the current one completes (when all fingers are lifted).
 
 **Since:** 12
 

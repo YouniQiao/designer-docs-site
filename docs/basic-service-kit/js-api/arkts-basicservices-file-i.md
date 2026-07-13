@@ -1,6 +1,6 @@
 # File
 
-Describes the list of files in [UploadConfig](arkts-basicservices-uploadconfig-i.md#uploadconfig).
+Describes the list of files in [UploadConfig](arkts-basicservices-uploadconfig-i.md).
 
 **Since:** 6
 
@@ -9,7 +9,7 @@ Describes the list of files in [UploadConfig](arkts-basicservices-uploadconfig-i
 ## Modules to Import
 
 ```TypeScript
-import { request } from '@ohos.request';
+import { request } from '@kit.BasicServicesKit';
 ```
 
 ## filename
@@ -60,7 +60,12 @@ Type of the file content. By default, the type is obtained based on the extensio
 uri: string
 ```
 
-Local path for storing files. Only **internal://cache/** is supported, that is, **context.cacheDir** of the caller (namely, cache directory of the input **context**). Example: **internal://cache/path/to/file.txt**.
+Local path for storing files.
+
+Only **internal://cache/** is supported, that is, **context.cacheDir** of the caller (namely, cache directory of
+the input **context**).
+
+Example: **internal://cache/path/to/file.txt**.
 
 **Type:** string
 

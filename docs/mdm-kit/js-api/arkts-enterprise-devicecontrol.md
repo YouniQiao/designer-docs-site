@@ -1,6 +1,13 @@
 # @ohos.enterprise.deviceControl
 
-本模块提供设备控制能力。 > **说明**： > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
+The **deviceControl** module provides APIs for device control.
+
+> **NOTE**
+>
+> The APIs of this module can be used only in the stage model.
+>
+> The APIs of this module can be called only by a device administrator application that is enabled. For details, see
+> [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -18,10 +25,24 @@ import { deviceControl } from '@kit.MDMKit';
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[lockScreen](arkts-devicecontrol-lockscreen-f-sys.md#lockScreen-1) | 使设备屏幕锁定。设置之后设备立即锁屏。 |
-| [operateDevice](arkts-devicecontrol-operatedevice-f.md#operateDevice-1) | 允许管理员操作设备。 |
-| <!--DelRow-->[reboot](arkts-devicecontrol-reboot-f-sys.md#reboot-1) | 使设备重启。 |
-| <!--DelRow-->[resetFactory](arkts-devicecontrol-resetfactory-f-sys.md#resetFactory-1) | 使设备恢复出厂设置。使用callback异步回调。 |
-| <!--DelRow-->[resetFactory](arkts-devicecontrol-resetfactory-f-sys.md#resetFactory-2) | 使设备恢复出厂设置。使用Promise异步回调。 |
-| <!--DelRow-->[shutdown](arkts-devicecontrol-shutdown-f-sys.md#shutdown-1) | 使设备关机。 |
+| [operateDevice](arkts-mdm-operatedevice-f.md#operatedevice-1) | Allows the specified device administrator application to operate devices. |
+| [operateDevice](arkts-mdm-operatedevice-f.md#operatedevice-2) | Allows the administrator to operate devices. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [lockScreen](arkts-mdm-lockscreen-f-sys.md#lockscreen-1) | Locks the device screen immediately. |
+| [reboot](arkts-mdm-reboot-f-sys.md#reboot-1) | Reboots the device. |
+| [resetFactory](arkts-mdm-resetfactory-f-sys.md#resetfactory-1) | Restores factory settings. This API uses an asynchronous callback to return the result. |
+| [resetFactory](arkts-mdm-resetfactory-f-sys.md#resetfactory-2) | Restores factory settings. This API uses a promise to return the result. |
+| [shutdown](arkts-mdm-shutdown-f-sys.md#shutdown-1) | Shuts down the device. |
+<!--DelEnd-->
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [Operation](arkts-mdm-operation-e.md) | The operation to be performed. |
 

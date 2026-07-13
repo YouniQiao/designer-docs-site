@@ -1,6 +1,7 @@
 # ArrayList
 
-ArrayList是一种线性数据结构，底层基于数组实现。 ArrayList会根据实际需要动态调整容量，每次扩容增加50%。
+ArrayList是一种线性数据结构，底层基于数组实现。
+ArrayList会根据实际需要动态调整容量，每次扩容增加50%。
 
 **起始版本：** 8
 
@@ -814,7 +815,8 @@ arrayList.sort();
 subArrayList(fromIndex: number, toIndex: number): ArrayList<T>
 ```
 
-根据下标截取ArrayList中的一段元素，并返回这一段ArrayList实例，区间包含fromIndex，但不包含toIndex， 即左闭右开区间[fromIndex, toIndex)。
+根据下标截取ArrayList中的一段元素，并返回这一段ArrayList实例，区间包含fromIndex，但不包含toIndex，
+即左闭右开区间[fromIndex, toIndex)。
 
 **起始版本：** 8
 

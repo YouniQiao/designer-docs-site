@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## queryAtomicServiceStartupRule
@@ -12,7 +12,10 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function queryAtomicServiceStartupRule(context: Context, appId: string): Promise<AtomicServiceStartupRule>
 ```
 
-Obtains the rule for launching an [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md#embeddableuiability) in embedded mode. This API uses a promise to return the result. This API can be properly called only on phones and tablets. On other devices, it returns the error code 801.
+Obtains the rule for launching an
+[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md) in embedded mode. This API
+uses a promise to return the result.
+This API can be properly called only on phones and tablets. On other devices, it returns the error code 801.
 
 **Since:** 18
 
@@ -26,7 +29,7 @@ Obtains the rule for launching an [EmbeddableUIAbility](arkts-ability-embeddable
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Context of the caller.<br>Note: Currently, only[UIAbilityContext](arkts-ability-uiabilitycontext-c.md#uiabilitycontext) is supported. |
+| context | Context | Yes | Context of the caller.<br>Note: Currently, only[UIAbilityContext](arkts-ability-uiabilitycontext-c.md) is supported. |
 | appId | string | Yes | Unique ID of the application, which is allocated by the cloud. |
 
 **Return value:**

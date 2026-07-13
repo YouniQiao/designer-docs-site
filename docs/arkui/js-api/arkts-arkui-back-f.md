@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { router } from '@ohos.router';
+import { router } from '@kit.ArkUI';
 ```
 
 ## back
@@ -12,7 +12,15 @@ import { router } from '@ohos.router';
 function back(options?: RouterOptions): void
 ```
 
-Returns to the previous page or a specified page, which deletes all pages between the current page and the target page. > **NOTE** > > - Since API version 10, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Returns to the previous page or a specified page, which deletes all pages between the current page and the target
+page.
+
+> **NOTE**
+>
+> - Since API version 10, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 8
 
@@ -44,7 +52,14 @@ this.getUIContext().getRouter().back({ url: 'pages/detail' });
 function back(index: number, params?: Object): void
 ```
 
-Returns to the specified page, which deletes all pages between the current page and the target page. > **NOTE** > > - Since API version 12, you can use the > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in > [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated > with the current UI context.
+Returns to the specified page, which deletes all pages between the current page and the target page.
+
+> **NOTE**
+>
+> - Since API version 12, you can use the
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter) API in
+> [UIContext](arkts-arkui-uicontext.md) to obtain the [Router](arkts-arkui-uicontext.md) object associated
+> with the current UI context.
 
 **Since:** 12
 

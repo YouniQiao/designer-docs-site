@@ -9,7 +9,7 @@ Provides attributes of the measured text.
 ## Modules to Import
 
 ```TypeScript
-import { MeasureOptions } from '@ohos.measure';
+import { MeasureOptions } from '@kit.ArkUI';
 ```
 
 ## baselineOffset
@@ -18,7 +18,9 @@ import { MeasureOptions } from '@ohos.measure';
 baselineOffset?: number | string
 ```
 
-Baseline offset of the measured text. Default value: **0**
+Baseline offset of the measured text.
+
+Default value: **0**
 
 **Type:** number | string
 
@@ -36,7 +38,12 @@ Baseline offset of the measured text. Default value: **0**
 constraintWidth?: number | string | Resource
 ```
 
-Layout width of the measured text. **NOTE** The default unit is vp. The value cannot be a percentage. If this parameter is not set, the value of **SizeOptions** is the maximum width allowed for the single-line text.
+Layout width of the measured text.
+
+**NOTE**
+
+The default unit is vp. The value cannot be a percentage. If this parameter is not set, the value of
+**SizeOptions** is the maximum width allowed for the single-line text.
 
 **Type:** number | string | Resource
 
@@ -54,7 +61,9 @@ Layout width of the measured text. **NOTE** The default unit is vp. The value ca
 fontFamily?: string | Resource
 ```
 
-Font family of the measured text. Default value: **'HarmonyOS Sans'** Only the default font is supported.
+Font family of the measured text. Default value: **'HarmonyOS Sans'**
+
+Only the default font is supported.
 
 **Type:** string | Resource
 
@@ -70,7 +79,15 @@ Font family of the measured text. Default value: **'HarmonyOS Sans'** Only the d
 fontSize?: number | string | Resource
 ```
 
-Font size of the text to be measured. When **fontSize** is of the number type, the unit is vp. Default value: **16** **NOTE** The value cannot be a percentage. Since API version 12, the fp unit is used when **fontSize** is of the number type.
+Font size of the text to be measured. When **fontSize** is of the number type, the unit is vp.
+
+Default value: **16**
+
+**NOTE**
+
+The value cannot be a percentage.
+
+Since API version 12, the fp unit is used when **fontSize** is of the number type.
 
 **Type:** number | string | Resource
 
@@ -86,7 +103,11 @@ Font size of the text to be measured. When **fontSize** is of the number type, t
 fontStyle?: number | FontStyle
 ```
 
-Font style of the measured text. Default value: **FontStyle.Normal** Value range for the number type: [0, 1], with intervals of 1, corresponding to the values in the **FontStyle** enum
+Font style of the measured text.
+
+Default value: **FontStyle.Normal**
+
+Value range for the number type: [0, 1], with intervals of 1, corresponding to the values in the **FontStyle** enum
 
 **Type:** number | FontStyle
 
@@ -102,7 +123,12 @@ Font style of the measured text. Default value: **FontStyle.Normal** Value range
 fontWeight?: number | string | FontWeight
 ```
 
-Font width of the measured text. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of the number type are supported, for example, **400**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**. Default value: **FontWeight.Normal**
+Font width of the measured text. For the number type, the value ranges from 100 to 900, at an interval of 100. A
+larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of
+the number type are supported, for example, **400**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and
+**"medium"**, which correspond to the enumerated values in **FontWeight**.
+
+Default value: **FontWeight.Normal**
 
 **Type:** number | string | FontWeight
 
@@ -118,7 +144,9 @@ Font width of the measured text. For the number type, the value ranges from 100 
 letterSpacing?: number | string
 ```
 
-Letter spacing of the measured text. Default value: **0**
+Letter spacing of the measured text.
+
+Default value: **0**
 
 **Type:** number | string
 
@@ -152,7 +180,9 @@ Line height of the measured text.
 maxLines?: number
 ```
 
-Maximum number of lines in the measured text. Value range: [0, *INT32_MAX*]
+Maximum number of lines in the measured text.
+
+Value range: [0, *INT32_MAX*]
 
 **Type:** number
 
@@ -170,7 +200,12 @@ Maximum number of lines in the measured text. Value range: [0, *INT32_MAX*]
 overflow?: number | TextOverflow
 ```
 
-Display mode when the measured text is too long. Default value: **1** Value range for the number type: [0, 3], with intervals of 1, corresponding to the values in the **TextOverflow** enum
+Display mode when the measured text is too long.
+
+Default value: **1**
+
+Value range for the number type: [0, 3], with intervals of 1, corresponding to the values in the **TextOverflow**
+enum
 
 **Type:** number | TextOverflow
 
@@ -188,7 +223,11 @@ Display mode when the measured text is too long. Default value: **1** Value rang
 textAlign?: number | TextAlign
 ```
 
-Horizontal alignment mode of the measured text. Default value: **TextAlign.Start** Value range for the number type: [0, 3], with intervals of 1, corresponding to the values in the **TextAlign** enum
+Horizontal alignment mode of the measured text.
+
+Default value: **TextAlign.Start**
+
+Value range for the number type: [0, 3], with intervals of 1, corresponding to the values in the **TextAlign** enum
 
 **Type:** number | TextAlign
 
@@ -206,7 +245,11 @@ Horizontal alignment mode of the measured text. Default value: **TextAlign.Start
 textCase?: number | TextCase
 ```
 
-Case of the measured text. Default value: **TextCase.Normal** Value range for the number type: [0, 2], with intervals of 1, corresponding to the values in the **TextCase** enum
+Case of the measured text.
+
+Default value: **TextCase.Normal**
+
+Value range for the number type: [0, 2], with intervals of 1, corresponding to the values in the **TextCase** enum
 
 **Type:** number | TextCase
 
@@ -258,7 +301,14 @@ Indentation of the first line. Default value: **0**.
 wordBreak?: WordBreak
 ```
 
-Line break rule. Default value: **WordBreak.BREAK_WORD** **NOTE** When used with **{overflow: TextOverflow.Ellipsis}** and **maxLines**, **WordBreak.BREAK_ALL** can insert line breaks between letters when overflow occurs and display excess content with an ellipsis (...).
+Line break rule.
+
+Default value: **WordBreak.BREAK_WORD**
+
+**NOTE**
+
+When used with **{overflow: TextOverflow.Ellipsis}** and **maxLines**, **WordBreak.BREAK_ALL** can insert line
+breaks between letters when overflow occurs and display excess content with an ellipsis (...).
 
 **Type:** WordBreak
 

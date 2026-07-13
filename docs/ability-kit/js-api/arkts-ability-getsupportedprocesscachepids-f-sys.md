@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getSupportedProcessCachePids
@@ -12,7 +12,12 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getSupportedProcessCachePids(bundleName : string): Promise<Array<number>>
 ```
 
-Obtains the PIDs of processes that support quick startup after caching in a specified application. This API uses a promise to return the result. > **NOTE** > > This API can only be used to obtain the PIDs of the system account to which the caller belongs.
+Obtains the PIDs of processes that support quick startup after caching in a specified application. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> This API can only be used to obtain the PIDs of the system account to which the caller belongs.
 
 **Since:** 14
 

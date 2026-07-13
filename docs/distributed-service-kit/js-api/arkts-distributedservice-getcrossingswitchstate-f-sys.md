@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cooperate } from '@ohos.cooperate';
+import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
 ## getCrossingSwitchState
@@ -12,7 +12,8 @@ import { cooperate } from '@ohos.cooperate';
 function getCrossingSwitchState(networkId: string, callback: AsyncCallback<boolean>): void
 ```
 
-Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result.
+Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

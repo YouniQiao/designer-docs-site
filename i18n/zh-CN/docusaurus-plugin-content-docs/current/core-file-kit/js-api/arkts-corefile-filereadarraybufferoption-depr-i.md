@@ -78,7 +78,7 @@ position?: number
 success?: (data: FileReadArrayBufferResponse) => void
 ```
 
-接口调用成功的回调函数。返回[FileReadArrayBufferResponse](arkts-corefile-filereadarraybufferresponse-depr-i.md#filereadarraybufferresponse)。
+接口调用成功的回调函数。返回[FileReadArrayBufferResponse](arkts-corefile-filereadarraybufferresponse-depr-i.md)。
 
 **类型：** (data: FileReadArrayBufferResponse) => void
 
@@ -94,7 +94,9 @@ success?: (data: FileReadArrayBufferResponse) => void
 uri: string
 ```
 
-本地文件URI。由于轻量级穿戴设备底层文件系统的限制，该值必须满足以下要求： 1. URI 中不得包含以下特殊字符：\"*+,:;<=>?[]|\x7F等。 2. 最大允许字符长度为128个字符。
+本地文件URI。由于轻量级穿戴设备底层文件系统的限制，该值必须满足以下要求：
+1. URI 中不得包含以下特殊字符：\"*+,:;<=>?[]|\x7F等。
+2. 最大允许字符长度为128个字符。
 
 **类型：** string
 

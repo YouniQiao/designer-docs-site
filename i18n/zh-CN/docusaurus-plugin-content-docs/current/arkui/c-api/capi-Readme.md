@@ -16,8 +16,11 @@
     - [error_code.h](capi-error-code-h.md)
     - [ui_input_event.h](capi-ui-input-event-h.md)
     - [styled_string.h](capi-styled-string-h.md)
+    - [swiper.h](capi-swiper-h.md)
     - [common_attributes.h](capi-common-attributes-h.md)
+    - [navigation_router.h](capi-navigation-router-h.md)
     - [slider.h](capi-slider-h.md)
+    - [layout.h](capi-layout-h.md)
     - [checkbox.h](capi-checkbox-h.md)
     - [button.h](capi-button-h.md)
 - 模块

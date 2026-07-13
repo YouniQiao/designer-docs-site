@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Environment } from '@ohos.file.environment';
+import { Environment } from '@kit.CoreFileKit';
 ```
 
 ## getExternalStorageDir
@@ -12,7 +12,8 @@ import { Environment } from '@ohos.file.environment';
 function getExternalStorageDir(): string
 ```
 
-Obtains the sandbox path of the root directory of an external storage card. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
+Obtains the sandbox path of the root directory of an external storage card. This API is available only to the
+devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
 
 **Since:** 11
 

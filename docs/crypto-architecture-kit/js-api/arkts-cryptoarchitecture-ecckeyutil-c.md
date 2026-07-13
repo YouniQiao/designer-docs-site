@@ -1,6 +1,6 @@
 # ECCKeyUtil
 
-Generates common parameters for an asymmetric key pair based on the specified elliptic curve name.
+Provides utilities for ECC key parameter generation and point conversion based on the specified elliptic curve.
 
 **Since:** 11
 
@@ -11,7 +11,7 @@ Generates common parameters for an asymmetric key pair based on the specified el
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## convertPoint
@@ -20,7 +20,16 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 static convertPoint(curveName: string, encodedPoint: Uint8Array): Point
 ```
 
-Converts the specified point data into a **Point** object based on the curve name (NID). Currently, compressed and uncompressed point data is supported. > **NOTE** > > According to section 2.2 in RFC 5480: > 1. The uncompressed point data is represented as **0x04**|x coordinate|y coordinate. > 2. The compressed point data in the **Fp** field (the **F2m** field is not supported currently) is represented > as follows: **0x03**|x coordinate (when the coordinate y is an odd number); **0x02**|x coordinate (when the > coordinate y is an even number).
+Converts the specified point data into a **Point** object based on the curve name (NID). Currently, compressed
+and uncompressed point data is supported.
+
+> **NOTE**
+>
+> According to section 2.2 in RFC 5480:
+> 1. The uncompressed point data is represented as **0x04**|x coordinate|y coordinate.
+> 2. The compressed point data in the **Fp** field (the **F2m** field is not supported currently) is represented
+> as follows: **0x03**|x coordinate (when the coordinate y is an odd number); **0x02**|x coordinate (when the
+> coordinate y is an even number).
 
 **Since:** 12
 
@@ -70,7 +79,10 @@ console.info('returnPoint: ' + returnPoint.x.toString(16));
 static genECCCommonParamsSpec(curveName: string): ECCCommonParamsSpec
 ```
 
-Generates common parameters for an asymmetric key pair based on the specified name identifier (NID) of an elliptic curve. For details, see [ECC](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc) and [SM2](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2).
+Generates common parameters for an asymmetric key pair based on the specified name identifier (NID) of an
+elliptic curve. For details, see
+[ECC](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#ecc) and
+[SM2](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#sm2).
 
 **Since:** 11
 
@@ -121,7 +133,8 @@ try {
 static getEncodedPoint(curveName: string, point: Point, format: string): Uint8Array
 ```
 
-Obtains the point data in the specified format from a **Point** object. Currently, compressed and uncompressed point data is supported.
+Obtains the point data in the specified format from a **Point** object. Currently, compressed and uncompressed
+point data is supported.
 
 **Since:** 12
 

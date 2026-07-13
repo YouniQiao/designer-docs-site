@@ -9,7 +9,7 @@ Represents the configuration for creating .p12 files.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## certEncParams
@@ -34,7 +34,8 @@ Algorithm parameters for encrypting the certificate.
 encryptCert?: boolean
 ```
 
-Whether to encrypt the certificate. The default value is **true**. **true** means to encrypt the certificate; **false** otherwise.
+Whether to encrypt the certificate. The default value is **true**. **true** means to encrypt the certificate;
+**false** otherwise.
 
 **Type:** boolean
 
@@ -68,7 +69,7 @@ Algorithm parameters for encrypting the private key.
 macDigestAlgorithm?: Pkcs12MacDigestAlgorithm
 ```
 
-Enumerates the P12 MAC digest algorithms. The default value is **SHA256**.
+MAC digest algorithm for the P12. The default value is **SHA256**.
 
 **Type:** Pkcs12MacDigestAlgorithm
 
@@ -86,7 +87,8 @@ Enumerates the P12 MAC digest algorithms. The default value is **SHA256**.
 macIterations?: number
 ```
 
-Number of P12 MAC iterations. The default value is **2048**. The value must be a positive integer.
+Number of P12 MAC iterations. The default value is **2048**.
+The value must be a positive integer.
 
 **Type:** number
 
@@ -104,7 +106,8 @@ Number of P12 MAC iterations. The default value is **2048**. The value must be a
 macSaltLen?: number
 ```
 
-Length of the salt value of the P12 MAC. The minimum value is **8**, and the default value is **16**. The value must be an integer greater than or equal to 8.
+Length of the salt value of the P12 MAC. The minimum value is **8**, and the default value is **16**.
+The value must be an integer greater than or equal to 8.
 
 **Type:** number
 

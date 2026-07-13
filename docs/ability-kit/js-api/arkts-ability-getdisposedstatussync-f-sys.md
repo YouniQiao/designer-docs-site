@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appControl } from '@ohos.bundle.appControl';
+import { appControl } from '@kit.AbilityKit';
 ```
 
 ## getDisposedStatusSync
@@ -12,7 +12,9 @@ import { appControl } from '@ohos.bundle.appControl';
 function getDisposedStatusSync(appId: string): Want
 ```
 
-Obtains the disposed status of an application. This API returns the result synchronously. If the operation is successful, the disposed status of the application is returned. If the operation fails, an error message is returned.
+Obtains the disposed status of an application. This API returns the result synchronously. If the operation is
+successful, the disposed status of the application is returned. If the operation fails, an error message is
+returned.
 
 **Since:** 10
 

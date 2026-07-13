@@ -1,8 +1,9 @@
 # SwipeGestureEvent
 
-继承自[BaseGestureEvent](arkts-arkui-basegestureevent-i.md#basegestureevent)。可将该对象作为[onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1)的 event参数来传递。
+继承自[BaseGestureEvent](arkts-arkui-basegestureevent-i.md)。可将该对象作为[onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1)的
+event参数来传递。
 
-**继承/实现关系：** SwipeGestureEvent extends [BaseGestureEvent](arkts-arkui-basegestureevent-i.md#basegestureevent)
+**继承/实现关系：** SwipeGestureEvent extends [BaseGestureEvent](arkts-arkui-basegestureevent-i.md)
 
 **起始版本：** 11
 
@@ -14,7 +15,11 @@
 angle: number
 ```
 
-表示快滑手势的角度，即手指滑动的瞬时方向与水平正方向的夹角，单位为deg。 **说明：** 以水平正方向为基准，滑动方向位于水平正方向顺时针侧时，角度范围为0到180度；位于水平正方向逆时针侧时，角度范围为0到-180度。
+表示快滑手势的角度，即手指滑动的瞬时方向与水平正方向的夹角，单位为deg。
+
+**说明：**
+
+以水平正方向为基准，滑动方向位于水平正方向顺时针侧时，角度范围为0到180度；位于水平正方向逆时针侧时，角度范围为0到-180度。
 
 **类型：** number
 

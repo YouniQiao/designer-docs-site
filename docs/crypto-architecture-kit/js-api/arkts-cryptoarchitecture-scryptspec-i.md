@@ -1,8 +1,15 @@
 # ScryptSpec
 
-Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec). It is a parameter for scrypt key derivation function (KDF). > **NOTE** > > **passphrase** specifies the original password. If **password** is of the string type, pass in the data used for > key derivation rather than a string of the HexString or Base64 type. In addition, the string must be in utf-8 > format. Otherwise, the key derived may be different from the one expected.
+Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md). It is a parameter for scrypt key derivation
+function (KDF).
 
-**Inheritance/Implementation:** ScryptSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec)
+> **NOTE**
+>
+> **passphrase** specifies the original password. If **passphrase** is of the string type, pass in the data used for
+> key derivation rather than a string of the HexString or Base64 type. In addition, the string must be in UTF-8
+> format. Otherwise, the key derived may be different from the one expected.
+
+**Inheritance/Implementation:** ScryptSpec extends [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md)
 
 **Since:** 18
 
@@ -11,7 +18,7 @@ Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfsp
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## keySize
@@ -52,7 +59,7 @@ Maximum memory size, in bytes. The value must be a positive integer.
 n: number
 ```
 
-Number of iterations. The value must be a positive integer.
+CPU/memory cost parameter. The value must be a positive integer.
 
 **Type:** number
 

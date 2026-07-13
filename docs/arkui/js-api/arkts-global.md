@@ -6,23 +6,13 @@
 
 | Name | Description |
 | --- | --- |
-| [canIUse](arkts-global-caniuse-f.md#canIUse-1) | Defining syscap function. |
-| [clearInterval](arkts-global-clearinterval-f.md#clearInterval-1) | Cancel the interval set by " setInterval()". |
-| [clearTimeout](arkts-global-cleartimeout-f.md#clearTimeout-1) | Cancel the timer set by "setTimeout()". |
-| [getInspectorByKey](arkts-global-getinspectorbykey-f.md#getInspectorByKey-1) | 根据id获取组件的所有属性。 |
-| [getInspectorTree](arkts-global-getinspectortree-f.md#getInspectorTree-1) | 获取当前组件树。 |
-| [loadNativeModule](arkts-global-loadnativemodule-f.md#loadNativeModule-1) |  |
-| <!--DelRow-->[markModuleCollectable](arkts-global-markmodulecollectable-f-sys.md#markModuleCollectable-1) | Mark moduleNamespace which loaded by dynamic-import is collectable. |
-| [sendEventByKey](arkts-global-sendeventbykey-f.md#sendEventByKey-1) | Sends an event to the component with the specified ID. |
-| [sendKeyEvent](arkts-global-sendkeyevent-f.md#sendKeyEvent-1) | Send key event. |
-| [sendMouseEvent](arkts-global-sendmouseevent-f.md#sendMouseEvent-1) | Send mouse event. |
-| [sendTouchEvent](arkts-global-sendtouchevent-f.md#sendTouchEvent-1) | Send touch event. |
-| [setInterval](arkts-global-setinterval-f.md#setInterval-1) | Sets a repeating timer for the system to repeatedly call a function at a fixed interval. The timer can only be manually deleted when the **clearInterval** API is called. |
-| [setTimeout](arkts-global-settimeout-f.md#setTimeout-1) | Sets a timer for the system to call a function after the timer goes off. The timer is automatically deleted after callback execution, or you may manually delete it via the **clearTimeout()** API. |
-
-### Classes
-
-| Name | Description |
-| --- | --- |
-| [console](arkts-console-c.md) | Defines the console info. |
+| [canIUse](arkts-arkui-global-caniuse-f.md#caniuse-1) | Defining syscap function. |
+| [clearInterval](arkts-arkui-global-clearinterval-f.md#clearinterval-1) | Cancels the interval set by " setInterval()". |
+| [clearMonitorForCrownEvents](arkts-arkui-global-clearmonitorforcrownevents-f.md#clearmonitorforcrownevents-1) | Removes the digital crown events monitor function. |
+| [clearTimeout](arkts-arkui-global-cleartimeout-f.md#cleartimeout-1) | Cancels the timer set by " setTimeout()". |
+| [createLocalParticleAbility](arkts-arkui-global-createlocalparticleability-f.md#createlocalparticleability-1) | Get the java interface instance. The java instance needs to register, otherwise it cannot be obtained.After obtaining the instance, you can call the function with the same name on the Java side. |
+| [getApp](arkts-arkui-global-getapp-f.md#getapp-1) | Obtain the objects exposed in app.js |
+| [setInterval](arkts-arkui-global-setinterval-f.md#setinterval-1) | Sets the interval for repeatedly calling a function. |
+| [setMonitorForCrownEvents](arkts-arkui-global-setmonitorforcrownevents-f.md#setmonitorforcrownevents-1) | Sets a digital crown events listener for current page, only be supported on the devices supporting digital crown.Please be awared, the listener will be removed automaticlly if the current page is pushed back orreplaced, so it's recommaned to call this function in the onShow lifecycle callback of the page.And only one listener can be set for current page, the system will use the listener passed in through thelatest calling of this function.Do not use this function in app.js, the behavior is undefined. |
+| [setTimeout](arkts-arkui-global-settimeout-f.md#settimeout-1) | Sets a timer after which a function will be executed. |
 

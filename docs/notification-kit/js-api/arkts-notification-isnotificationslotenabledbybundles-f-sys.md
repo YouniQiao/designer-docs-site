@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## isNotificationSlotEnabledByBundles
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function isNotificationSlotEnabledByBundles(bundles: Array<BundleOption>, type: SlotType): Promise<Map<BundleOption, boolean>>
 ```
 
-Checks whether a notification slot type is enabled for the specified applications in batch. This API uses a promise to return the result.
+Checks whether a notification slot type is enabled for the specified applications in batch. This API uses a
+promise to return the result.
 
 **Since:** 26.0.0
 
@@ -26,7 +27,7 @@ Checks whether a notification slot type is enabled for the specified application
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundles | Array&lt;BundleOption&gt; | Yes | Array of bundle information of the applications. |
+| bundles | Array&lt;BundleOption&gt; | Yes | Array of bundle information of the applications.<br>The maximum length is 1000 and cannot be empty. |
 | type | SlotType | Yes | Notification slot type. All bundles share the same slot type. |
 
 **Return value:**

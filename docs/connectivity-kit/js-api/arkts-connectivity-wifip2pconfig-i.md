@@ -9,7 +9,7 @@ P2P config.
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## deviceAddress
@@ -88,7 +88,8 @@ Group name
 netId: number
 ```
 
-Group network ID. When creating a group, -1 indicates creates a temporary group, -2: indicates creates a persistent group
+Group network ID. When creating a group, -1 indicates creates a temporary group,
+-2: indicates creates a persistent group
 
 **Type:** number
 

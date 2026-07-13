@@ -1,6 +1,8 @@
 # CloudService (System API)
 
-Provides APIs for interacting with the cloud sync service. You need to inherit this class and implement APIs of this class. The system calls these APIs to connect to the cloud and use the cloud sync service.
+Provides APIs for interacting with the cloud sync service.
+You need to inherit this class and implement APIs of this class.
+The system calls these APIs to connect to the cloud and use the cloud sync service.
 
 **Since:** 11
 
@@ -11,7 +13,7 @@ Provides APIs for interacting with the cloud sync service. You need to inherit t
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## connectAssetLoader
@@ -20,7 +22,9 @@ import { cloudExtension } from '@ohos.data.cloudExtension';
 connectAssetLoader(bundleName: string, database: Database): Promise<rpc.RemoteObject>
 ```
 
-Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader, which is created by using createAssetLoaderStub. This API uses a promise to return the result. You can use this API to connect to the asset loader.
+Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader,
+which is created by using createAssetLoaderStub. This API uses a promise to return the result.
+You can use this API to connect to the asset loader.
 
 **Since:** 11
 
@@ -47,7 +51,8 @@ Connects to an asset loader by obtaining a RemoteObject instance of AssetLoader,
 connectDB(bundleName: string, database: Database): Promise<rpc.RemoteObject>
 ```
 
-Connects to a cloud database by obtaining a RemoteObject instance of CloudDB, which is created by using createCloudDBStub. This API uses a promise to return the result.
+Connects to a cloud database by obtaining a RemoteObject instance of CloudDB,
+which is created by using createCloudDBStub. This API uses a promise to return the result.
 
 **Since:** 11
 
@@ -74,7 +79,8 @@ Connects to a cloud database by obtaining a RemoteObject instance of CloudDB, wh
 connectShareCenter(userId: number, bundleName: string): Promise<rpc.RemoteObject>
 ```
 
-Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter, which is created by using createShareServiceStub. This API uses a promise to return the result.
+Connects to ShareCenter by obtaining a RemoteObject instance of ShareCenter,
+which is created by using createShareServiceStub. This API uses a promise to return the result.
 
 **Since:** 11
 

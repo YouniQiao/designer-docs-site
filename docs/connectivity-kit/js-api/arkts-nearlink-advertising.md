@@ -1,6 +1,6 @@
 # @ohos.nearlink.advertising
 
-提供与广播相关的方法。附近的设备可以扫描并发现该设备。
+Provides methods related to advertising. Nearby devices can scan and discover this device.
 
 **Since:** 26.0.0
 
@@ -12,26 +12,26 @@
 
 | Name | Description |
 | --- | --- |
-| [offAdvertisingStateChange](arkts-advertising-offadvertisingstatechange-f.md#offAdvertisingStateChange-1) | 取消订阅广播状态变更事件。 |
-| [onAdvertisingStateChange](arkts-advertising-onadvertisingstatechange-f.md#onAdvertisingStateChange-1) | 订阅广播状态变化事件。 只有授予了ohos.permission.NEARLINK_ACCESS权限的系统应用程序才能访问此事件。 |
-| [startAdvertising](arkts-advertising-startadvertising-f.md#startAdvertising-1) | 开始广播。 |
-| [stopAdvertising](arkts-advertising-stopadvertising-f.md#stopAdvertising-1) | 停止广播ID对应的广播。 |
+| [offAdvertisingStateChange](arkts-connectivity-offadvertisingstatechange-f.md#offadvertisingstatechange-1) | Unsubscribes from the advertising state change event. |
+| [onAdvertisingStateChange](arkts-connectivity-onadvertisingstatechange-f.md#onadvertisingstatechange-1) | Subscribes to the advertising state change event.This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission. |
+| [startAdvertising](arkts-connectivity-startadvertising-f.md#startadvertising-1) | Starts advertising. |
+| [stopAdvertising](arkts-connectivity-stopadvertising-f.md#stopadvertising-1) | Stops advertising with advertising ID. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AdvertisingData](arkts-advertising-advertisingdata-i.md) | 广播数据。 |
-| [AdvertisingParams](arkts-advertising-advertisingparams-i.md) | 广播参数。 |
-| [AdvertisingSettings](arkts-advertising-advertisingsettings-i.md) | 广播设置。 |
-| [AdvertisingStateChangeInfo](arkts-advertising-advertisingstatechangeinfo-i.md) | 广播状态变化信息。 |
-| [ManufacturerData](arkts-advertising-manufacturerdata-i.md) | 描述制造商数据。 |
-| [ServiceData](arkts-advertising-servicedata-i.md) | 服务数据。 |
+| [AdvertisingData](arkts-connectivity-advertisingdata-i.md) | Describes the advertising data. |
+| [AdvertisingParams](arkts-connectivity-advertisingparams-i.md) | Describes the advertising parameters. |
+| [AdvertisingSettings](arkts-connectivity-advertisingsettings-i.md) | Describes the settings for advertising. |
+| [AdvertisingStateChangeInfo](arkts-connectivity-advertisingstatechangeinfo-i.md) | Advertising state change information. |
+| [ManufacturerData](arkts-connectivity-manufacturerdata-i.md) | Describes the manufacturer data. |
+| [ServiceData](arkts-connectivity-servicedata-i.md) | Describes the service data. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AdvertisingState](arkts-advertising-advertisingstate-e.md) | 广播状态的枚举。 |
-| [TxPowerMode](arkts-advertising-txpowermode-e.md) | 广播模式的枚举。 |
+| [AdvertisingState](arkts-connectivity-advertisingstate-e.md) | The enum of advertising state. |
+| [TxPowerMode](arkts-connectivity-txpowermode-e.md) | The enum of advertising mode. |
 

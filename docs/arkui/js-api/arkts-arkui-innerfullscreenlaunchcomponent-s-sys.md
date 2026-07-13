@@ -11,7 +11,7 @@ Declare component InnerFullScreenLaunchComponent
 ## Modules to Import
 
 ```TypeScript
-import { InnerFullScreenLaunchComponent, LaunchController } from '@ohos.arkui.advanced.InnerFullScreenLaunchComponent';
+import { InnerFullScreenLaunchComponent, LaunchController } from '@kit.ArkUI';
 ```
 
 ## content
@@ -26,7 +26,7 @@ Sets the component content.
 
 **Since:** 12
 
-**Decorator:** @Builder
+**Decorator:** @BuilderParam
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -54,7 +54,9 @@ Sets the component Controller.
 onError?: ErrorCallback
 ```
 
-Callback triggered when an error occurs during running of the started ExtensionAbility. It is supported only when the atomic service runs in embedded mode, with the parameter being of type BusinessError.
+Callback triggered when an error occurs during running of the started ExtensionAbility.
+It is supported only when the atomic service runs in embedded mode,
+with the parameter being of type BusinessError.
 
 **Type:** ErrorCallback
 
@@ -86,7 +88,9 @@ Indicates the callback of onReceive.
 onTerminated?: Callback<TerminationInfo>
 ```
 
-Callback triggered when the EmbeddableUIAbility is terminated to receive the information about the termination. It is supported only when the atomic service runs in embedded mode, with the parameter being of type TerminationInfo.
+Callback triggered when the EmbeddableUIAbility is terminated to receive the information
+about the termination. It is supported only when the atomic service runs in embedded mode,
+with the parameter being of type TerminationInfo.
 
 **Type:** Callback<TerminationInfo>
 

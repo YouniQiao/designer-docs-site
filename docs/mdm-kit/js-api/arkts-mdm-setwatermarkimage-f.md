@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { securityManager } from '@ohos.enterprise.securityManager';
+import { securityManager } from '@kit.MDMKit';
 ```
 
 ## setWatermarkImage
@@ -12,7 +12,14 @@ import { securityManager } from '@ohos.enterprise.securityManager';
 function setWatermarkImage(admin: Want, bundleName: string, source: string | image.PixelMap, accountId: number): void
 ```
 
-Sets a watermark policy for a specified application of a specified user. Currently, a maximum of 100 policies can be saved. > **NOTE** > > This API is applicable to setting watermarks for third-party applications in enterprise scenarios to reduce the > risk of enterprise information leakage. You are not advised to set watermarks for system applications (such as > the home screen application), as unknown exceptions may occur.
+Sets a watermark policy for a specified application of a specified user. Currently, a maximum of 100 policies can
+be saved.
+
+> **NOTE**
+>
+> This API is applicable to setting watermarks for third-party applications in enterprise scenarios to reduce the
+> risk of enterprise information leakage. You are not advised to set watermarks for system applications (such as
+> the home screen application), as unknown exceptions may occur.
 
 **Since:** 14
 

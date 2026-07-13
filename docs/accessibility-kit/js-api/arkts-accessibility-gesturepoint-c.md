@@ -1,6 +1,7 @@
 # GesturePoint
 
-The **GesturePoint** module provides APIs for creating gesture touch point information required for an accessibility application to inject gestures.
+The **GesturePoint** module provides APIs
+for creating gesture touch point information required for an accessibility application to inject gestures.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ The **GesturePoint** module provides APIs for creating gesture touch point infor
 ## Modules to Import
 
 ```TypeScript
-import { GesturePoint } from '@ohos.accessibility.GesturePoint';
+import { GesturePoint } from '@kit.AccessibilityKit';
 ```
 
 ## constructor

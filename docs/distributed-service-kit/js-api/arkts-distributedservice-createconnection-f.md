@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { linkEnhance } from '@ohos.distributedsched.linkEnhance';
+import { linkEnhance } from '@kit.DistributedServiceKit';
 ```
 
 ## createConnection
@@ -12,7 +12,8 @@ import { linkEnhance } from '@ohos.distributedsched.linkEnhance';
 function createConnection(deviceId: string, name: string): Connection
 ```
 
-Creates a **Connection** object on the device that functions as the client. The device can then initiate connection requests to the device that functions as the server.
+Creates a **Connection** object on the device that functions as the client. The device can then initiate connection
+requests to the device that functions as the server.
 
 **Since:** 20
 
@@ -40,7 +41,7 @@ Creates a **Connection** object on the device that functions as the client. The 
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the linkEnhance function has been trimmed.<br>**Applicable version:** 26.0.0 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supportedbecause the linkEnhance function has been trimmed.<br>**Applicable version:** 26.0.0 and later |
 | [32390206](../../apis-distributedservice-kit/errorcode-link-enhance.md#32390206-invalid-parameter) | Invalid parameter. |
 
 **Example**

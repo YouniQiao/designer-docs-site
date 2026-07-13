@@ -1,6 +1,7 @@
 # WebDownloadItem
 
-表示下载任务，您可以使用此对象来操作相应的下载任务。 当前WebDownloadItem支持的下载文件名最长长度为255字节。
+表示下载任务，您可以使用此对象来操作相应的下载任务。
+当前WebDownloadItem支持的下载文件名最长长度为255字节。
 
 **起始版本：** 11
 
@@ -50,7 +51,7 @@ static deserialize(serializedData: Uint8Array): WebDownloadItem
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types.<br>2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types.<br>2. Parameter verification failed. |
 
 ## getCurrentSpeed
 
@@ -398,7 +399,14 @@ serialize(): Uint8Array
 start(downloadPath: string): void
 ```
 
-开始下载到指定目录，参数为下载文件的磁盘存储路径（包含文件名）。 > **说明：** > > 该接口应在WebDownloadDelegate的onBeforeDownload回调中使用。若在WebDownloadDelegate的onBeforeDownload中未调用start('xxx')，则下载任务将保持在 > PENDING状态。处于PENDING状态的下载会将文件下载到临时目录，临时文件会在WebDownloadItem.start指定目标路径后被重命名为目标路径，未下载完成的部分会在WebDownloadItem.start > 指定目标路径后直接下载到目标路径。如果在调用WebDownloadItem.start之前不希望下载到临时文件路径，可以先通过WebDownloadItem.cancel取消当前下载任务，随后通过 > WebDownloadManager.resumeDownload恢复被取消的下载任务。
+开始下载到指定目录，参数为下载文件的磁盘存储路径（包含文件名）。
+
+> **说明：**
+>
+> 该接口应在WebDownloadDelegate的onBeforeDownload回调中使用。若在WebDownloadDelegate的onBeforeDownload中未调用start('xxx')，则下载任务将保持在
+> PENDING状态。处于PENDING状态的下载会将文件下载到临时目录，临时文件会在WebDownloadItem.start指定目标路径后被重命名为目标路径，未下载完成的部分会在WebDownloadItem.start
+> 指定目标路径后直接下载到目标路径。如果在调用WebDownloadItem.start之前不希望下载到临时文件路径，可以先通过WebDownloadItem.cancel取消当前下载任务，随后通过
+> WebDownloadManager.resumeDownload恢复被取消的下载任务。
 
 **起始版本：** 11
 
@@ -416,5 +424,5 @@ start(downloadPath: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types.<br>2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types.<br>2. Parameter verification failed. |
 

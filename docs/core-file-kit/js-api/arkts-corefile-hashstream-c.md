@@ -1,8 +1,10 @@
 # HashStream
 
-The **HashStream** class is a utility for creating a message digest of data. You can use [createHash](../../../../reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a **HashStream** instance.
+The **HashStream** class is a utility for creating a message digest of data. You can use
+[createHash](../../../../reference/apis-core-file-kit/js-apis-file-hash.md#hashcreatehash12) to create a
+**HashStream** instance.
 
-**Inheritance/Implementation:** HashStream extends [stream.Transform](../../apis-arkts/arkts-apis/arkts-arkts-transform-c.md#transform)
+**Inheritance/Implementation:** HashStream extends [stream.Transform](../../apis-arkts/arkts-apis/arkts-arkts-transform-c.md)
 
 **Since:** 12
 
@@ -11,7 +13,7 @@ The **HashStream** class is a utility for creating a message digest of data. You
 ## Modules to Import
 
 ```TypeScript
-import { hash } from '@ohos.file.hash';
+import { hash } from '@kit.CoreFileKit';
 ```
 
 ## digest

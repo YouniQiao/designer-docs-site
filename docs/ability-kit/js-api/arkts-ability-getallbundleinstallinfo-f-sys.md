@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAllBundleInstallInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAllBundleInstallInfo(): Promise<Array<Record<string, Object>>>
 ```
 
-Obtains the install information of all apps.
+Obtains the extended install information about all applications in the system.
+This API uses a promise to return the result.
 
 **Since:** 23
 
@@ -28,7 +29,7 @@ Obtains the install information of all apps.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;Record&lt;string, Object&gt;&gt;&gt; | The install information. |
+| Promise&lt;Array&lt;Record&lt;string, Object&gt;&gt;&gt; | Promise used to return the list ofextended install information set of all applications. |
 
 **Error codes:**
 

@@ -1,6 +1,9 @@
 # UrlStyle
 
-Describes the hyperlink style. The default color, font size, and font weight are **'#ff0a59f7'**, **'16fp'**, and **'FontWeight.Regular'**, respectively. If the styled string has **TextStyle** set, the **TextStyle** settings take precedence.
+Describes the hyperlink style.
+
+The default color, font size, and font weight are **'#ff0a59f7'**, **'16fp'**, and **'FontWeight.Regular'**,
+respectively. If the styled string has **TextStyle** set, the **TextStyle** settings take precedence.
 
 **Since:** 14
 

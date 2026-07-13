@@ -8,3 +8,9 @@ import { FullScreenLaunchComponent } from '@kit.ArkUI';
 
 ## Summary
 
+### Structs
+
+| Name | Description |
+| --- | --- |
+| [FullScreenLaunchComponent](arkts-arkui-fullscreenlaunchcomponent-s.md) | Declares the FullScreenLaunchComponent, a component provided by ArkUI that allowsyou to define and use it in your application through the ArkTS-based declarativedevelopment paradigm. |
+

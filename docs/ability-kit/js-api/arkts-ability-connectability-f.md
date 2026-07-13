@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { particleAbility } from '@ohos.ability.particleAbility';
+import { particleAbility } from '@kit.AbilityKit';
 ```
 
 ## connectAbility
@@ -12,7 +12,14 @@ import { particleAbility } from '@ohos.ability.particleAbility';
 function connectAbility(request: Want, options: ConnectOptions): number
 ```
 
-Connects an ability to a Service ability.
+Connects this ability to a ServiceAbility.
+
+> **NOTE**
+>
+> For details about the startup rules for the components in the FA model, see
+> [Component Startup Rules (FA Model)](../../../../application-models/component-startup-rules-fa.md).
+> > To connect to a ServiceAbility of another application, the target application must be configured with
+> associated startup (**AssociateWakeUp** set to **true**).
 
 **Since:** 7
 
@@ -24,14 +31,14 @@ Connects an ability to a Service ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| request | Want | Yes | Indicates the Service ability to connect. |
-| options | ConnectOptions | Yes | Callback object for the client. If this parameter is null,an exception is thrown. |
+| request | Want | Yes | ServiceAbility to connect. |
+| options | ConnectOptions | Yes | Connection options. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| number | unique identifier of the connection between the client and the service side. |
+| number | ID of the connected ServiceAbility. The ID starts from 0 and is incremented by 1 each time aconnection is set up. |
 
 **Example**
 

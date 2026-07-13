@@ -44,7 +44,10 @@ The date displays two columns: year and month.
 MONTH_AND_DAY = 2
 ```
 
-Defines a mode that displays dates in months and days of the month. In this mode, when the month changes from December to January, year does not increment by one; if month changes from January to December, the year does not decrement. The year remains fixed at its currently set value.
+Defines a mode that displays dates in months and days of the month.
+In this mode, when the month changes from December to January,
+year does not increment by one; if month changes from January to December,
+the year does not decrement. The year remains fixed at its currently set value.
 
 **Since:** 26.0.0
 

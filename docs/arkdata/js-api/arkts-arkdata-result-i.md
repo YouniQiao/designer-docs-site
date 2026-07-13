@@ -9,7 +9,7 @@ Records the number of affected data rows and the result set.
 ## Modules to Import
 
 ```TypeScript
-import { relationalStore } from '@ohos.data.relationalStore';
+import { relationalStore } from '@kit.ArkData';
 ```
 
 ## changed
@@ -34,7 +34,8 @@ Number of affected rows.
 readonly resultSet: LiteResultSet
 ```
 
-Result set of the affected data. Defaults to 1,024 rows of data, with a maximum supported limit of 32,766 rows supported; excess rows will be discarded.
+Result set of the affected data. Defaults to 1,024 rows of data, with a maximum supported limit of 32,766 rows
+supported; excess rows will be discarded.
 
 **Type:** LiteResultSet
 

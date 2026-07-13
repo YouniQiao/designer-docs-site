@@ -6,7 +6,9 @@
 function setPowerKeyFilteringStrategy(strategy: PowerKeyFilteringStrategy): void
 ```
 
-设置电源键过滤策略，在电源服务订阅电源键事件后，用于配置电源键事件的处理方式。 电源键过滤策略见[power.PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md#powerkeyfilteringstrategy)接口。
+设置电源键过滤策略，在电源服务订阅电源键事件后，用于配置电源键事件的处理方式。
+
+电源键过滤策略见[power.PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md)接口。
 
 **起始版本：** 21
 

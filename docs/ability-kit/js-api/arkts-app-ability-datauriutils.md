@@ -1,6 +1,7 @@
 # @ohos.app.ability.dataUriUtils
 
-DataUriUtils模块提供用于处理uri对象的能力，包括获取、绑定、删除和更新指定uri对象的路径末尾的ID。
+The DataUriUtils module provides APIs to process URI objects. You can use the APIs to attach an ID to the end of a
+given URI and obtain, delete, or update the ID attached to the end of a given URI.
 
 **Since:** 9
 
@@ -18,8 +19,8 @@ import { dataUriUtils } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [attachId](arkts-datauriutils-attachid-f.md#attachId-1) | 将ID附加到uri的路径末尾。 |
-| [deleteId](arkts-datauriutils-deleteid-f.md#deleteId-1) | 删除指定uri路径末尾的ID。 |
-| [getId](arkts-datauriutils-getid-f.md#getId-1) | 获取指定uri路径末尾的ID。 |
-| [updateId](arkts-datauriutils-updateid-f.md#updateId-1) | 更新指定uri中的ID。 |
+| [attachId](arkts-ability-attachid-f.md#attachid-1) | Attaches an ID to the end of a given URI. |
+| [deleteId](arkts-ability-deleteid-f.md#deleteid-1) | Deletes the ID from the end of a given URI. |
+| [getId](arkts-ability-getid-f.md#getid-1) | Obtains the ID attached to the end of a given URI. |
+| [updateId](arkts-ability-updateid-f.md#updateid-1) | Updates the ID in a given URI. |
 

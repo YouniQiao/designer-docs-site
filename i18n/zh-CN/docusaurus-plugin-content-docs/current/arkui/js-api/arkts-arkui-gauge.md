@@ -1,6 +1,11 @@
 # Gauge
 
-数据量规图表组件，用于将数据展示为环形图表。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+数据量规图表组件，用于将数据展示为环形图表。
+
+> **说明：**
+
+> - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+
 
 ## Gauge
 

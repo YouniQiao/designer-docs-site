@@ -30,7 +30,7 @@ function write(portId: number, buffer: Uint8Array, timeout?: number): Promise<nu
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) |  |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) |  |
 | [31400001](../../apis-basic-services-kit/errorcode-usb.md#31400001-串口服务异常) |  |
 | [31400003](../../apis-basic-services-kit/errorcode-usb.md#31400003-端口号不存在) |  |
 | [31400005](../../apis-basic-services-kit/errorcode-usb.md#31400005-设备未打开) |  |

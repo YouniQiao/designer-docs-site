@@ -9,7 +9,7 @@ Provides the **TabContent** switching information.
 ## Modules to Import
 
 ```TypeScript
-import { uiObserver } from '@ohos.arkui.observer';
+import { uiObserver } from '@kit.ArkUI';
 ```
 
 ## id
@@ -54,7 +54,9 @@ Index of the **TabContent** component. The index is zero-based.
 lastIndex?: number
 ```
 
-Index of the previously focused **TabContent** component. The index is zero-based. This parameter is available only in the callback of [on('tabChange')](arkts-arkui-uiobserver-c.md#on-23).
+Index of the previously focused **TabContent** component. The index is zero-based. This parameter is available
+only in the callback of [on('tabChange')](@ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback:
+Callback<observer.TabContentInfo>)).
 
 **Type:** number
 

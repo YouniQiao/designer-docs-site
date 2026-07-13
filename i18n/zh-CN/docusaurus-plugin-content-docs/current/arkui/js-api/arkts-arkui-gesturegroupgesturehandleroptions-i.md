@@ -12,7 +12,11 @@
 gestures: GestureHandler<TapGestureHandler | LongPressGestureHandler | PanGestureHandler | SwipeGestureHandler | PinchGestureHandler | RotationGestureHandler | GestureGroupHandler>[]
 ```
 
-设置手势组中需要包含的手势集合。 **说明：** 当需要为一个组件同时添加单击和双击手势时，可在[GestureGroup](arkts-arkui-tapgesture-con.md#gesturegroup)中添加两个[TapGesture](TapGesture)，需要双击手势在前，单击手势在后，否则不生效。
+设置手势组中需要包含的手势集合。
+
+**说明：**
+
+当需要为一个组件同时添加单击和双击手势时，可在[GestureGroup](arkts-arkui-tapgesture-con.md#gesturegroup)中添加两个[TapGesture](TapGesture)，需要双击手势在前，单击手势在后，否则不生效。
 
 **类型：** GestureHandler<TapGestureHandler | LongPressGestureHandler | PanGestureHandler | SwipeGestureHandler | PinchGestureHandler | RotationGestureHandler | GestureGroupHandler>[]
 
@@ -30,7 +34,9 @@ gestures: GestureHandler<TapGestureHandler | LongPressGestureHandler | PanGestur
 mode: GestureMode
 ```
 
-设置组合手势识别模式。 默认值：GestureMode.Sequence
+设置组合手势识别模式。
+
+默认值：GestureMode.Sequence
 
 **类型：** GestureMode
 

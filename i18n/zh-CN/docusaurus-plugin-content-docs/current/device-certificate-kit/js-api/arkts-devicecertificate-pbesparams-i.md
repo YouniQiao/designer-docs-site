@@ -30,7 +30,8 @@ encryptionAlgorithm?: PbesEncryptionAlgorithm
 iterations?: number
 ```
 
-表示迭代次数。默认为2048。 取值应为正整数。
+表示迭代次数。默认为2048。
+取值应为正整数。
 
 **类型：** number
 
@@ -48,7 +49,8 @@ iterations?: number
 saltLen?: number
 ```
 
-表示盐值长度。默认为16，最小值为8。 取值应为≥8的整数。
+表示盐值长度。默认为16，最小值为8。
+取值应为≥8的整数。
 
 **类型：** number
 

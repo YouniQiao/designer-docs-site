@@ -1,6 +1,6 @@
 # @ohos.app.ability.AbilityConstant
 
-AbilityConstant提供Ability相关的枚举，包括应用启动原因[LaunchReason]{@link AbilityConstant.LaunchReason}、上次退出原因 [LastExitReason]{@link AbilityConstant.LastExitReason}、迁移结果[OnContinueResult]{@link AbilityConstant.OnContinueResult} 等。
+AbilityConstant provides enums related to abilities, including the window mode.
 
 **Since:** 9
 
@@ -18,27 +18,35 @@ import { AbilityConstant } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [LastExitDetailInfo](arkts-abilityconstant-lastexitdetailinfo-i.md) | 记录Ability所在进程上次退出时的关键运行信息。 |
-| [LaunchParam](arkts-abilityconstant-launchparam-i.md) | 启动参数，主要包括Ability启动原因以及上次退出原因。Ability启动时由系统自动传入，开发者无需修改。 |
+| [LastExitDetailInfo](arkts-ability-lastexitdetailinfo-i.md) | Describes the key runtime information of the process where the ability last exited. |
+| [LaunchParam](arkts-ability-launchparam-i.md) | Describes the launch parameters, which mainly include the ability launch reasons and reasons for the last exit. The parameter values are automatically passed in by the system when the ability is launched. You do not need to change the values. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [CollaborateResult](arkts-abilityconstant-collaborateresult-e.md) | 应用协同状态，该类型为枚举。用于多设备场景下，调用方应用拉起协同方应用时，协同方应用是否接受协同。需要配合UIAbility的 [onCollaborate()]{@link @ohos.app.ability.UIAbility:UIAbility.onCollaborate(wantParam: Record<string, Object>)}方法进行 设置。 |
-| [ContinueState](arkts-abilityconstant-continuestate-e.md) | 流转状态枚举值。用于表示当前应用任务流转的状态。可配合[UIAbilityContext]{@link ./application/UIAbilityContext:UIAbilityContext}的 [setMissionContinueState]{@link ./application/UIAbilityContext:UIAbilityContext.setMissionContinueState(state: AbilityConstant.ContinueState, callback: AsyncCallback<void>)} 方法进行设置。 |
-| [LastExitReason](arkts-abilityconstant-lastexitreason-e.md) | Ability上次退出原因，该类型为枚举，可配合UIAbility的[onCreate()]{@link @ohos.app.ability.UIAbility:UIAbility#onCreate}方法根据 launchParam.lastExitReason的不同类型执行相应操作。 |
-| [LaunchReason](arkts-abilityconstant-launchreason-e.md) | Ability启动原因，该类型为枚举，可配合UIAbility的[onCreate(want, launchParam)]{@link @ohos.app.ability.UIAbility:UIAbility#onCreate} 方法根据launchParam.launchReason的不同类型执行相应操作。 |
-| [MemoryLevel](arkts-abilityconstant-memorylevel-e.md) | 整机可用内存级别，该类型为枚举，可配合UIAbility的[onMemoryLevel()]{@link @ohos.app.ability.Ability:Ability#onMemoryLevel}方法根据level执行不同内 存级别的相应操作。 > **说明：** > > - 不同产品的触发条件可能存在差异。以12G内存的标准设备为例： > - 当整机可用内存下降至1700MB~1800MB时，会触发取值为0的onMemoryLevel回调，表示当前整机可用内存适中。 > - 当整机可用内存下降至1600MB~1700MB时，会触发取值为1的onMemoryLevel回调，表示当前整机可用内存偏低。 > - 当整机可用内存下降至1600MB以下时，会触发取值为2的onMemoryLevel回调，表示当前整机可用内存很低。 > > - LRU：表示按应用最近使用顺序排序的链表。通常将最近使用的应用放在链表头部（位置靠前），将最不常用的应用放在链表尾部（位置靠后）。当内存不足时，位置靠后的应用将优先被清理。 > > - 当LRU发生变化时，后台应用会根据处于应用使用排序链表（LRU）的位置，触发对应MemoryLevel级别(MEMORY_LEVEL_BACKGROUND_MODERATE、 > MEMORY_LEVEL_BACKGROUND_LOW、MEMORY_LEVEL_BACKGROUND_CRITICAL)的onMemoryLevel回调。如果应用被冻结，则会在应用唤醒时收到对应的onMemoryLevel回 > 调，因此不建议在此回调接口中做耗时操作。 |
-| [OnContinueResult](arkts-abilityconstant-oncontinueresult-e.md) | Ability迁移结果，该类型为枚举，可配合UIAbility的[onContinue()]{@link @ohos.app.ability.UIAbility:UIAbility#onContinue}方法完成相应的返回。 |
-| [OnSaveResult](arkts-abilityconstant-onsaveresult-e.md) | 保存应用数据的结果，该类型为枚举。配合UIAbility的 [onSaveState()]{@link @ohos.app.ability.UIAbility:UIAbility.onSaveState(reason: AbilityConstant.StateType, wantParam: Record<string, Object>)} 方法使用，可以实现[UIAbility备份恢复](docroot://application-models/ability-recover-guideline.md)。 |
-| [PrepareTermination](arkts-abilityconstant-preparetermination-e.md) | 应用准备关闭时返回的动作，该类型为枚举。需要配合[AbilityStage]{@link @ohos.app.ability.AbilityStage:AbilityStage}的 [onPrepareTermination]{@link @ohos.app.ability.AbilityStage:AbilityStage#onPrepareTermination}或者 [onPrepareTerminationAsync]{@link @ohos.app.ability.AbilityStage:AbilityStage#onPrepareTerminationAsync}方法使用。 |
-| [StateType](arkts-abilityconstant-statetype-e.md) | 保存应用数据场景原因，该类型为枚举。配合UIAbility的 [onSaveState()]{@link @ohos.app.ability.UIAbility:UIAbility.onSaveState(reason: AbilityConstant.StateType, wantParam: Record<string, Object>)} 方法使用，可以实现[UIAbility备份恢复](docroot://application-models/ability-recover-guideline.md)。 |
-| [WindowMode](arkts-abilityconstant-windowmode-e.md) | 启动UIAbility时窗口的创建模式，类型为枚举。可配合 [startAbility]{@link ./application/UIAbilityContext:UIAbilityContext.startAbility(want: Want, options?: StartOptions)} 方法使用。 |
+| [CollaborateResult](arkts-ability-collaborateresult-e.md) | Enumerates the collaboration request results. You can use it in multi-device collaboration scenarios to specifywhether the target application accepts the collaboration request from the caller application. You can use it in[onCollaborate()](arkts-ability-uiability-c.md#oncollaborate-1) ofthe UIAbility. |
+| [ContinueState](arkts-ability-continuestate-e.md) | Enumerates the mission continuation states of the application. It is used in the[setMissionContinueState](arkts-ability-uiabilitycontext-c.md#setmissioncontinuestate-1) API of [UIAbilityContext](arkts-ability-uiabilitycontext-c.md). |
+| [LastExitReason](arkts-ability-lastexitreason-e.md) | Enumerates the reasons for the last exit of the ability. You can use it together with the value of**launchParam.lastExitReason** in [onCreate()](arkts-ability-uiability-c.md#oncreate-1) of theUIAbility to complete different operations. |
+| [LaunchReason](arkts-ability-launchreason-e.md) | Enumerates the ability launch reasons. You can use it together with the value of **launchParam.launchReason** in[onCreate(want, launchParam)](arkts-ability-uiability-c.md#oncreate-1) of the UIAbility to completedifferent operations. |
+| [MemoryLevel](arkts-ability-memorylevel-e.md) | Enumerates the memory levels of the entire device. You can use it in[onMemoryLevel()](arkts-ability-ability-c.md#onmemorylevel-1) of the UIAbility to complete differentoperations.&gt; **NOTE**&gt;&gt; - The trigger conditions may differ across various devices. For example, on a standard device with 12 GB of&gt; memory:&gt; - When the available memory of the entire device drops to 1700 MB to 1800 MB, the **onMemoryLevel** callback&gt; with a value of **0** is triggered, indicating that the available memory is moderate.&gt; - When the available memory of the entire device drops to 1600 MB to 1700 MB, the **onMemoryLevel** callback&gt; with a value of **1** is triggered, indicating that the available memory is low.&gt; - When the available memory of the entire device drops below 1600 MB, the **onMemoryLevel** callback with a&gt; value of **2** is triggered, indicating that the available memory is critically low. |
+| [OnContinueResult](arkts-ability-oncontinueresult-e.md) | Enumerates the ability continuation results. You can use it in[onContinue()](arkts-ability-uiability-c.md#oncontinue-1) of the UIAbility to complete differentoperations. |
+| [OnSaveResult](arkts-ability-onsaveresult-e.md) | Enumerates the result types for the operation of saving application data. You can use it in[onSaveState()](arkts-ability-uiability-c.md#onsavestate-1) of the UIAbility to complete[UIAbility backup and restore](../../../../application-models/ability-recover-guideline.md). |
+| [PrepareTermination](arkts-ability-preparetermination-e.md) | Enumerates the actions triggered when an application is closed by the user. You can use it in[onPrepareTermination](arkts-ability-abilitystage-c.md#onpreparetermination-1) or[onPrepareTerminationAsync](arkts-ability-abilitystage-c.md#onprepareterminationasync-1) of[AbilityStage](arkts-ability-abilitystage-c.md). |
+| [StateType](arkts-ability-statetype-e.md) | Enumerates the scenarios for saving application data. You can use it in[onSaveState()](arkts-ability-uiability-c.md#onsavestate-1) of the UIAbility to complete[UIAbility backup and restore](../../../../application-models/ability-recover-guideline.md). |
+| [WindowMode](arkts-ability-windowmode-e.md) | Enumerates the window modes in which a UIAbility can be displayed at startup. It can be used in[startAbility](arkts-ability-uiabilitycontext-c.md#startability-3). |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [WindowMode](arkts-ability-windowmode-e-sys.md) | Enumerates the window modes in which a UIAbility can be displayed at startup. It can be used in[startAbility](arkts-ability-uiabilitycontext-c.md#startability-3). |
+<!--DelEnd-->
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [REASON_MESSAGE_DESKTOP_SHORTCUT](arkts-abilityconstant-con.md#REASON_MESSAGE_DESKTOP_SHORTCUT) | 通过桌面快捷方式启动。开发者如果从[LaunchParam]{@link AbilityConstant.LaunchParam}的launchReasonMessage属性中获取到该字符串，表示UIAbility是通过点击桌面快 捷方式启动的。 |
+| [REASON_MESSAGE_DESKTOP_SHORTCUT](arkts-ability-abilityconstant-con.md#reason_message_desktop_shortcut) | The UIAbility is launched via a home screen shortcut. If this string is obtained from the **launchReasonMessage**property in [LaunchParam](arkts-ability-launchparam-i.md), the UIAbility is initiated by touching a shortcut onthe home screen. |
 

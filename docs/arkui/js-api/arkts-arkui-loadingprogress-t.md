@@ -4,7 +4,8 @@
 type LoadingProgress = TypedFrameNode<LoadingProgressInterface, LoadingProgressAttribute>
 ```
 
-Represents a FrameNode of the **LoadingProgress** type. This type of node does not allow child components to be added.
+Represents a FrameNode of the **LoadingProgress** type. This type of node does not allow child components to be
+added.
 
 **Since:** 12
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { distributedDataObject } from '@ohos.data.distributedDataObject';
+import { distributedDataObject } from '@kit.ArkData';
 ```
 
 ## create
@@ -12,7 +12,8 @@ import { distributedDataObject } from '@ohos.data.distributedDataObject';
 function create(context: Context, source: object): DataObject
 ```
 
-Creates a distributed data object. The object properties support basic types (number, Boolean, and string) and complex types (array and nested basic types).
+Creates a distributed data object. The object properties support basic types (number, Boolean, and string) and
+complex types (array and nested basic types).
 
 **Since:** 9
 

@@ -1,6 +1,10 @@
 # @ohos.bundle.distributedBundleManager
 
-本模块提供分布式应用的管理能力。 > **说明：** > > 本模块为系统接口。
+The module provides APIs for managing distributed bundles.
+
+> **NOTE**
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 9
 
@@ -16,23 +20,27 @@ import { distributedBundleManager } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-1) | 获取由elementName指定的远程设备上的应用的AbilityInfo信息。使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-2) | 获取由elementName指定的远程设备上的应用的AbilityInfo信息。使用Promise异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-3) | 获取由elementName指定的远程设备上的应用的AbilityInfo数组信息。使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-4) | 获取由elementName指定的远程设备上的应用的AbilityInfo数组信息。使用Promise异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-5) | 获取由elementName和locale指定的远程设备上的应用的AbilityInfo信息。使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-6) | 获取由elementName和locale指定的远程设备上的应用的AbilityInfo信息。使用Promise异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-7) | 获取由elementName和locale指定的远程设备上的应用的AbilityInfo数组信息。使用callback异步回调。 |
-| <!--DelRow-->[getRemoteAbilityInfo](arkts-distributedbundlemanager-getremoteabilityinfo-f-sys.md#getRemoteAbilityInfo-8) | 获取由elementName和locale指定的远程设备上的应用的AbilityInfo数组信息。使用Promise异步回调。 |
-| <!--DelRow-->[getRemoteBundleVersionCode](arkts-distributedbundlemanager-getremotebundleversioncode-f-sys.md#getRemoteBundleVersionCode-1) | 获取指定远程设备上指定包名的应用版本信息。使用Promise异步回调。 |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-1) | Obtains information about the remote ability that matches the given element name. This API uses an asynchronouscallback to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-2) | Obtains information about the remote ability that matches the given element name. This API uses a promise to returnthe result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-3) | Obtains information about the remote abilities that match the given element names. This API uses an asynchronouscallback to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-4) | Obtains information about the remote abilities that match the given element names. This API uses a promise toreturn the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-5) | Obtains information about the remote ability that matches the given element name and locale. This API uses anasynchronous callback to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-6) | Obtains information about the remote ability that matches the given element name and locale. This API uses apromise to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-7) | Obtains information about the remote abilities that match the given element names and locale. This API uses anasynchronous callback to return the result. |
+| [getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-8) | Obtains information about the remote abilities that match the given element names and locale. This API uses apromise to return the result. |
+| [getRemoteBundleVersionCode](arkts-ability-getremotebundleversioncode-f-sys.md#getremotebundleversioncode-1) | Obtains the version information of an app with a specified bundle name on a specified remote device.This API uses a promise to return the result. |
+<!--DelEnd-->
 
-### Types
+<!--Del-->
+### Types（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[RemoteAbilityInfo](arkts-distributedbundlemanager-remoteabilityinfo-t-sys.md) | 包含远程的ability信息。 |
+| [RemoteAbilityInfo](arkts-ability-remoteabilityinfo-t-sys.md) | Defines the remote ability information. |
+<!--DelEnd-->
 

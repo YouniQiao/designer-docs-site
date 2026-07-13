@@ -12,7 +12,9 @@ Enumerates the error codes used in the certificate management APIs.
 CM_ERROR_NOT_SYSTEM_APP = 202
 ```
 
-The caller is not a system application. This is a system API.
+The caller is not a system application.
+
+This is a system API.
 
 **Since:** 11
 

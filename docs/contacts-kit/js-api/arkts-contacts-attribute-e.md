@@ -1,6 +1,7 @@
 # Attribute
 
-Enumerates contact attributes. The enumerated value is of the number type. Create contact data in JSON format:
+Enumerates contact attributes. The enumerated value is of the number type.
+Create contact data in JSON format:
 
 **Since:** 7
 
@@ -124,7 +125,8 @@ Organization of the contact.
 ATTR_PHONE = 8
 ```
 
-Phone number of a contact. Only full match is supported, and wildcards are not supported.
+Phone number of a contact. Only full match is supported, and wildcards are not
+supported.
 
 **Since:** 7
 

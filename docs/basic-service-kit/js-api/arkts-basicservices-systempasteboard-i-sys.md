@@ -1,6 +1,8 @@
 # SystemPasteboard
 
-Provides **SystemPasteboard** APIs. Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
+Provides **SystemPasteboard** APIs.
+Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using
+[getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md#getsystempasteboard-1).
 
 **Since:** 6
 
@@ -9,7 +11,7 @@ Provides **SystemPasteboard** APIs. Before calling any **SystemPasteboard** API,
 ## Modules to Import
 
 ```TypeScript
-import { pasteboard } from '@ohos.pasteboard';
+import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
 ## removeAppShareOptions
@@ -34,7 +36,7 @@ Deletes the global pasteable range of the application.
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 12 - 13 |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 14 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 14 and later |
 
 **Example**
 
@@ -79,7 +81,7 @@ Sets pasteable range of PasteData for application.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 12 - 13 |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [12900006](../../apis-basic-services-kit/errorcode-pasteboard.md#12900006-settings-already-exists) | Settings already exist. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 14 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API.<br>**Applicable version:** 14 and later |
 
 **Example**
 

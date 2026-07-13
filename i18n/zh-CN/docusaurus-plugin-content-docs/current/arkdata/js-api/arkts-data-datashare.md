@@ -1,60 +1,75 @@
 # @ohos.data.dataShare
 
-The **DataShare** module allows an application to manage its own data and share data with other applications on the same device.
+**DataShare**用于应用管理其自身数据，同时支持同个设备上不同应用间的数据共享。
 
-**起始版本：** 9
+**起始版本：** 20
 
 **系统能力：** SystemCapability.DistributedDataManager.DataShare.Consumer
 
 **系统接口：** 此接口为系统接口。
 
-## 导入模块
-
-```TypeScript
-import { dataShare } from '@kit.ArkData';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [createDataProxyHandle](arkts-datashare-createdataproxyhandle-f.md#createDataProxyHandle-1) | Creates a **DataProxyHandle** instance. This API uses a promise to return the result. |
-| <!--DelRow-->[createDataShareHelper](arkts-datashare-createdatasharehelper-f-sys.md#createDataShareHelper-1) | Creates a **DataShareHelper** instance. This API uses an asynchronous callback to return the result. |
-| <!--DelRow-->[createDataShareHelper](arkts-datashare-createdatasharehelper-f-sys.md#createDataShareHelper-2) | Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in proxy mode. This API uses an asynchronous callback to return the result. |
-| <!--DelRow-->[createDataShareHelper](arkts-datashare-createdatasharehelper-f-sys.md#createDataShareHelper-3) | Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in proxy mode. This API uses a promise to return the result. |
-| <!--DelRow-->[disableSilentProxy](arkts-datashare-disablesilentproxy-f-sys.md#disableSilentProxy-1) | Disables silent access. This API uses a promise to return the result. Observe the following when using this API: - The data provider calls this API to disable silent access. - Whether silent access is disabled is determined based on the return value of this API and the **isSilentProxyEnable** field in the [data_share_config.json](docroot://database/share-data-by-datashareextensionability-sys.md) file together. - If silent access is disabled for a URI using this API, the setting takes effect when the related **datashareHelper** API is called. Otherwise, the setting of **isSilentProxyEnable** in the **data_share_config.json** file is used to determine whether to disable silent access. |
-| <!--DelRow-->[enableSilentProxy](arkts-datashare-enablesilentproxy-f-sys.md#enableSilentProxy-1) | Enables silent access. This API uses a promise to return the result. Observe the following when using this API: - The data provider calls this API to enable silent access. - Whether silent access is enabled is determined based on the return value of this API and the **isSilentProxyEnable** field in the [data_share_config.json](docroot://database/share-data-by-datashareextensionability-sys.md) file together. - If silent access is enabled for a URI using this API, the setting takes effect when the related **datashareHelper** API is called. Otherwise, the setting of **isSilentProxyEnable** in the **data_share_config.json** file is used to determine whether to enable silent access. |
+| [createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1) | 创建DataProxyHandle实例。使用Promise异步回调。 |
+
+<!--Del-->
+### 函数（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-1) | 创建DataShareHelper实例。使用callback异步回调。 |
+| [createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-2) | 创建DataShareHelper实例，通过DataShareHelperOptions指定是否通过代理访问。使用callback异步回调。 |
+| [createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-3) | 创建DataShareHelper实例，通过DataShareHelperOptions指定是否通过代理访问。使用Promise异步回调。 |
+| [disableSilentProxy](arkts-arkdata-disablesilentproxy-f-sys.md#disablesilentproxy-1) | 关闭静默访问。使用Promise异步回调。使用规则：- 数据提供方调用此接口，来关闭静默访问功能。- 此接口设置的关闭结果在校验的时候是搭配data_share_config.json文件中isSilentProxyEnable字段进行工作的。支持的配置可参考[data_share_config.json配置](../../../../database/share-data-by-datashareextensionability-sys.md)。- 此接口生效在调用datashareHelper相关接口过程中，如果此接口有关闭过相关uri，那么会按照此接口的配置来关闭静默访问。如果此接口未调用过，则会读取data_share_config.json中的配置来校验Datashare的关闭状态。 |
+| [enableSilentProxy](arkts-arkdata-enablesilentproxy-f-sys.md#enablesilentproxy-1) | 开启静默访问。使用Promise异步回调。使用规则：- 数据提供方调用此接口，来开启静默访问功能。- 此接口设置的开启结果在校验的时候是搭配data_share_config.json文件中isSilentProxyEnable字段进行工作的。支持的配置可参考[data_share_config.json配置](../../../../database/share-data-by-datashareextensionability-sys.md)。- 此接口生效在调用datashareHelper相关接口过程中，如果此接口有开启过相关uri，那么会按照此接口的配置来开启静默访问。如果此接口未调用过，则会读取data_share_config.json中的配置来校验Datashare的开启状态。 |
+<!--DelEnd-->
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[ChangeInfo](arkts-datashare-changeinfo-i-sys.md) | Represents the data change information, including the data change type, URI of the data changed, and changed data content. |
-| [DataProxyChangeInfo](arkts-datashare-dataproxychangeinfo-i.md) | Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI, and content. |
-| [DataProxyConfig](arkts-datashare-dataproxyconfig-i.md) | Defines a struct for the data proxy configuration. |
-| [DataProxyGetResult](arkts-datashare-dataproxygetresult-i.md) | Defines a struct for obtaining the batch operation result of shared configuration. |
-| [DataProxyHandle](arkts-datashare-dataproxyhandle-i.md) | Defines the data proxy handle, which can be used to access or manage shared configuration information. Before calling an API provided by **DataProxyHandle**, you must create a **DataProxyHandle** instance using [createDataProxyHandle]{@link dataShare.createDataProxyHandle}. |
-| [DataProxyResult](arkts-datashare-dataproxyresult-i.md) | Defines a struct for the batch operation result of shared configuration. |
-| <!--DelRow-->[DataShareHelper](arkts-datashare-datasharehelper-i-sys.md) | Provides a **DataShareHelper** instance to access or manage data on the server. Before calling an API provided by **DataShareHelper**, you must create a **DataShareHelper** instance using [createDataShareHelper]{@link dataShare.createDataShareHelper(context: Context, uri: string, callback: AsyncCallback<DataShareHelper>)} . |
-| <!--DelRow-->[DataShareHelperOptions](arkts-datashare-datasharehelperoptions-i-sys.md) | Represents the optional parameters of [DataShareHelper]{@link dataShare.DataShareHelperOptions}. |
-| <!--DelRow-->[OperationResult](arkts-datashare-operationresult-i-sys.md) | Defines the result of the operation for subscribing to or unsubscribing from the data changes or published data. |
-| [ProxyData](arkts-datashare-proxydata-i.md) | Defines a struct for shared configurations. |
-| <!--DelRow-->[PublishedDataChangeNode](arkts-datashare-publisheddatachangenode-i-sys.md) | Defines the subscription/unsubscription result of the changes in the published data. |
-| <!--DelRow-->[PublishedItem](arkts-datashare-publisheditem-i-sys.md) | Defines the data to publish. |
-| <!--DelRow-->[RdbDataChangeNode](arkts-datashare-rdbdatachangenode-i-sys.md) | Represents the RDB data change result. The data returned by the callback is not larger than 10 MB in size. |
-| <!--DelRow-->[Template](arkts-datashare-template-i-sys.md) | Defines the struct of the template used in a subscription. |
-| <!--DelRow-->[TemplateId](arkts-datashare-templateid-i-sys.md) | Defines the **TemplateId** struct. **TemplateId** is generated by [**addTemplate**]{@link dataShare.DataShareHelper.addTemplate} to identify a template. |
-| <!--DelRow-->[UpdateOperation](arkts-datashare-updateoperation-i-sys.md) | Represents the batch update operation information. |
+| [DataProxyChangeInfo](arkts-arkdata-dataproxychangeinfo-i.md) | 通知订阅者共享配置变更的数据结构。包括数据变更类型、变化的URI、变更的数据内容。 |
+| [DataProxyConfig](arkts-arkdata-dataproxyconfig-i.md) | 数据代理操作配置的数据结构。 |
+| [DataProxyGetResult](arkts-arkdata-dataproxygetresult-i.md) | 配置共享批量获取操作结果的数据结构。 |
+| [DataProxyHandle](arkts-arkdata-dataproxyhandle-i.md) | 数据代理操作句柄的实例，可使用此实例访问或管理共享配置信息。在调用DataProxyHandle提供的方法前，需要先通过[createDataProxyHandle](arkts-arkdata-createdataproxyhandle-f.md#createdataproxyhandle-1)构建一个实例。 |
+| [DataProxyResult](arkts-arkdata-dataproxyresult-i.md) | 配置共享批量操作结果的数据结构。 |
+| [ProxyData](arkts-arkdata-proxydata-i.md) | 共享配置的数据结构。 |
+
+<!--Del-->
+### 接口（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [ChangeInfo](arkts-arkdata-changeinfo-i-sys.md) | 数据变更时通知用户具体变更的内容，包括数据变更类型、变化的uri、变更的数据内容。 |
+| [DataShareHelper](arkts-arkdata-datasharehelper-i-sys.md) | DataShare管理工具实例，可使用此实例访问或管理服务端的数据。在调用DataShareHelper提供的方法前，需要先通过[createDataShareHelper](arkts-arkdata-createdatasharehelper-f-sys.md#createdatasharehelper-1)构建一个实例。 |
+| [DataShareHelperOptions](arkts-arkdata-datasharehelperoptions-i-sys.md) | 指定[DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md)的可选参数，包含是否在代理模式下，以及非静默访问的拉起等待时间。 |
+| [OperationResult](arkts-arkdata-operationresult-i-sys.md) | 订阅/取消订阅数据变更和发布数据的操作结果。 |
+| [PublishedDataChangeNode](arkts-arkdata-publisheddatachangenode-i-sys.md) | 订阅/取消订阅已发布数据变更的结果。 |
+| [PublishedItem](arkts-arkdata-publisheditem-i-sys.md) | 指定发布的数据类型。 |
+| [RdbDataChangeNode](arkts-arkdata-rdbdatachangenode-i-sys.md) | 订阅/取消订阅RDB数据变更的结果，回调支持传输不大于10M的数据。 |
+| [Template](arkts-arkdata-template-i-sys.md) | 指定订阅中的模板结构。 |
+| [TemplateId](arkts-arkdata-templateid-i-sys.md) | 标记模板的数据结构，TemplateId是在[addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)中自动生成的，在[addTemplate](arkts-arkdata-datasharehelper-i-sys.md#addtemplate-1)后，可以使用模板id来标记模板。 |
+| [UpdateOperation](arkts-arkdata-updateoperation-i-sys.md) | 批量更新操作的参数结构。 |
+<!--DelEnd-->
 
 ### 枚举
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[ChangeType](arkts-datashare-changetype-e-sys.md) | Enumerates the data change types. |
-| [DataProxyErrorCode](arkts-datashare-dataproxyerrorcode-e.md) | Enumerates the status code returned by the batch operations of shared configuration. |
-| [DataProxyMaxValueLength](arkts-datashare-dataproxymaxvaluelength-e.md) | The maximum length of {@link ProxyData#value}, {@link DataProxyChangeInfo#value}, {@link DataProxyGetResult#value}. |
-| [DataProxyType](arkts-datashare-dataproxytype-e.md) | Enumerates the data proxy types. |
-| <!--DelRow-->[SubscriptionType](arkts-datashare-subscriptiontype-e-sys.md) | Enumerates the data subscription types. |
+| [DataProxyErrorCode](arkts-arkdata-dataproxyerrorcode-e.md) | 配置共享批量操作返回值的状态码枚举。 |
+| [DataProxyMaxValueLength](arkts-arkdata-dataproxymaxvaluelength-e.md) | [共享配置](arkts-arkdata-proxydata-i.md)的值允许的最大长度的枚举值。 |
+| [DataProxyType](arkts-arkdata-dataproxytype-e.md) | 数据代理类型的枚举。 |
+
+<!--Del-->
+### 枚举（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [ChangeType](arkts-arkdata-changetype-e-sys.md) | 数据变更类型枚举。 |
+| [SubscriptionType](arkts-arkdata-subscriptiontype-e-sys.md) | 数据订阅类型枚举。 |
+<!--DelEnd-->
 

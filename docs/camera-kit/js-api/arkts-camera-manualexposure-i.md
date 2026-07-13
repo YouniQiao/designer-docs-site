@@ -1,8 +1,9 @@
 # ManualExposure (System API)
 
-ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md#manualexposurequery) Provides APIs to obtain and set the exposure duration.
+ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md)
+Provides APIs to obtain and set the exposure duration.
 
-**Inheritance/Implementation:** ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md#manualexposurequery)
+**Inheritance/Implementation:** ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md)
 
 **Since:** 24
 
@@ -13,7 +14,7 @@ ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getExposureDuration

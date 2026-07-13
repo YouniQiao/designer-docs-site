@@ -1,6 +1,7 @@
 # DistributedObject
 
-Provides APIs for managing a distributed data object. Before using any API of this class, use createDistributedObject() to create a DistributedObject object.
+Provides APIs for managing a distributed data object. Before using any API of this class, use
+createDistributedObject() to create a DistributedObject object.
 
 **Since:** 8
 
@@ -13,7 +14,7 @@ Provides APIs for managing a distributed data object. Before using any API of th
 ## Modules to Import
 
 ```TypeScript
-import { distributedDataObject } from '@ohos.data.distributedDataObject';
+import { distributedDataObject } from '@kit.ArkData';
 ```
 
 ## off('change')
@@ -229,7 +230,8 @@ g_object.on("status", (sessionId: string, networkId: string, status: 'online' | 
 setSessionId(sessionId?: string): boolean
 ```
 
-Sets a session ID. For the devices in the collaboration state in a trusted network, data of the distributed objects with the same session ID can be automatically synced across devices.
+Sets a session ID. For the devices in the collaboration state in a trusted network, data of the distributed
+objects with the same session ID can be automatically synced across devices.
 
 **Since:** 8
 

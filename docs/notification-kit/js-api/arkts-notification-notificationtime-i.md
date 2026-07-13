@@ -26,7 +26,10 @@ Start time, in milliseconds.
 isCountDown?: boolean
 ```
 
-Whether to count down. The default value is **false**. - **true**: Yes. - **false**: No.
+Whether to count down. The default value is **false**.
+
+- **true**: Yes.
+- **false**: No.
 
 **Type:** boolean
 
@@ -40,7 +43,10 @@ Whether to count down. The default value is **false**. - **true**: Yes. - **fals
 isInTitle?: boolean
 ```
 
-Whether the time is displayed in the title. The default value is **false**. - **true**: Yes. - **false**: No.
+Whether the time is displayed in the title. The default value is **false**.
+
+- **true**: Yes.
+- **false**: No.
 
 **Type:** boolean
 
@@ -54,7 +60,10 @@ Whether the time is displayed in the title. The default value is **false**. - **
 isPaused?: boolean
 ```
 
-Whether to pause the progress. The default value is **false**. - **true**: Yes. - **false**: No.
+Whether to pause the progress. The default value is **false**.
+
+- **true**: Yes.
+- **false**: No.
 
 **Type:** boolean
 

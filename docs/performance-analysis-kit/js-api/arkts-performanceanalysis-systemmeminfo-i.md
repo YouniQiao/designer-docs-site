@@ -9,7 +9,7 @@ Describes the system memory information, including the total memory, free memory
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## availableMem
@@ -18,7 +18,8 @@ import { hidebug } from '@ohos.hidebug';
 availableMem: bigint
 ```
 
-Available memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemAvailable** in the **\/proc/meminfo** node.
+Available memory of the system, in KB. The value of this parameter is obtained by reading the value of
+**MemAvailable** in the **\/proc/meminfo** node.
 
 **Type:** bigint
 
@@ -32,7 +33,8 @@ Available memory of the system, in KB. The value of this parameter is obtained b
 freeMem: bigint
 ```
 
-Free memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemFree** in the **\/proc/meminfo** node.
+Free memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemFree** in
+the **\/proc/meminfo** node.
 
 **Type:** bigint
 
@@ -46,7 +48,8 @@ Free memory of the system, in KB. The value of this parameter is obtained by rea
 totalMem: bigint
 ```
 
-Total memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemTotal** in the **\/proc/meminfo** node.
+Total memory of the system, in KB. The value of this parameter is obtained by reading the value of **MemTotal**
+in the **\/proc/meminfo** node.
 
 **Type:** bigint
 

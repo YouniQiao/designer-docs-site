@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { screenLockFileManager } from '@ohos.ability.screenLockFileManager';
+import { screenLockFileManager } from '@kit.AbilityKit';
 ```
 
 ## releaseAccess
@@ -12,7 +12,13 @@ import { screenLockFileManager } from '@ohos.ability.screenLockFileManager';
 function releaseAccess(dataType: DataType): ReleaseStatus
 ```
 
-Release the access of the specified data type and do not allow data access under the lock screen.
+Releases the permission to access a specified type of sensitive data under the lock screen synchronously. After the
+release is successful, the reference count of the sensitive data key decreases. When the reference count reaches
+zero, the key can be destroyed after the screen has been locked for the system-configured duration threshold.
+
+Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature
+and that the permission has been successfully requested by calling the
+[acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API first.
 
 **Since:** 12
 
@@ -26,13 +32,13 @@ Release the access of the specified data type and do not allow data access under
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dataType | DataType | Yes | Indicates the specified data type and do not allow data access under the lock screen. |
+| dataType | DataType | Yes | Type of sensitive data that is accessible on the lock screen. The dataType must beconsistent with the dataType used in the acquireAccess API. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ReleaseStatus | Returns release the access result. |
+| ReleaseStatus | Release status of the access permission for sensitive data under lock screen. |
 
 **Error codes:**
 
@@ -56,6 +62,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 
 try {
+    // Release access permission
     let releaseStatus = screenLockFileManager.releaseAccess(screenLockFileManager.DataType.MEDIA_DATA);
     if (releaseStatus === screenLockFileManager.ReleaseStatus.RELEASE_GRANTED) {
         hilog.info(0x0000, 'testTag', 'releaseAccess successfully.');

@@ -2,7 +2,7 @@
 
 Helper functions to access photos and albums.
 
-**Inheritance/Implementation:** PhotoAccessHelper extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
+**Inheritance/Implementation:** PhotoAccessHelper extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Helper functions to access photos and albums.
 ## Modules to Import
 
 ```TypeScript
-import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper';
+import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## createAsset
@@ -20,7 +20,11 @@ import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper'
 createAsset(photoType: PhotoType, extension: string, options?: photoAccessHelper.CreateOptions): Promise<string>
 ```
 
-Creates an image or video asset with the specified file type, file name extension, and options. This API uses a promise to return the result. If the caller does not have the ohos.permission.WRITE_IMAGEVIDEO permission, you can create a media asset by using a security component. For details, see Creating a Media Asset Using a Security Component.
+Creates an image or video asset with the specified file type, file name extension, and options.
+This API uses a promise to return the result.
+If the caller does not have the ohos.permission.WRITE_IMAGEVIDEO permission,
+you can create a media asset by using a security component.
+For details, see Creating a Media Asset Using a Security Component.
 
 **Since:** 12
 
@@ -363,7 +367,8 @@ async function example(phAccessHelper: sendablePhotoAccessHelper.PhotoAccessHelp
 release(): Promise<void>
 ```
 
-Releases this PhotoAccessHelper instance. This API uses a promise to return the result. Call this API when the APIs of the PhotoAccessHelper instance are no longer used.
+Releases this PhotoAccessHelper instance. This API uses a promise to return the result.
+Call this API when the APIs of the PhotoAccessHelper instance are no longer used.
 
 **Since:** 12
 

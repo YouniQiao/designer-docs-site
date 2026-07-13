@@ -9,7 +9,7 @@ Defines a device status change event.
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## deviceId
@@ -46,7 +46,8 @@ Device name.
 isSensorOnline: boolean
 ```
 
-Sensor status. The value **true** indicates that the sensor is online, and the value **false** indicates the opposite.
+Sensor status. The value **true** indicates that the sensor is online, and the value **false** indicates the
+opposite.
 
 **Type:** boolean
 

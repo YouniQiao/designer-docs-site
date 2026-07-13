@@ -30,7 +30,8 @@ Callback after page redirection. The setting takes effect in the next redirectio
 interception?: InterceptionCallback
 ```
 
-Callback invoked before a page transition, allowing for stack operations, which take effect immediately for the current transition. The intercepted page will not be created.
+Callback invoked before a page transition, allowing for stack operations, which take effect immediately for the
+current transition. The intercepted page will not be created.
 
 **Type:** InterceptionCallback
 
@@ -48,7 +49,8 @@ Callback invoked before a page transition, allowing for stack operations, which 
 modeChange?: InterceptionModeCallback
 ```
 
-Callback invoked when the display mode of the **Navigation** component switches between single-column and split- column.
+Callback invoked when the display mode of the **Navigation** component switches between single-column and split-
+column.
 
 **Type:** InterceptionModeCallback
 
@@ -66,7 +68,8 @@ Callback invoked when the display mode of the **Navigation** component switches 
 willShow?: InterceptionShowCallback
 ```
 
-Callback invoked before a page transition, allowing for stack operations, which take effect immediately for the current transition. The intercepted page will be created.
+Callback invoked before a page transition, allowing for stack operations, which take effect immediately for the
+current transition. The intercepted page will be created.
 
 **Type:** InterceptionShowCallback
 

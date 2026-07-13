@@ -6,7 +6,10 @@
 function addSync(attributes: AssetMap): void
 ```
 
-新增一条关键资产，使用同步方式返回结果。 如果要设置[Tag.IS_PERSISTENT](arkts-assetstore-tagtype-e.md#tagtype)属性，需要申请ohos.permission.STORE_PERSISTENT_DATA权限，申请方式请参考 [声明权限](../../../../security/AccessToken/declare-permissions.md)。
+新增一条关键资产，使用同步方式返回结果。
+
+如果要设置[Tag.IS_PERSISTENT](arkts-assetstore-tagtype-e.md)属性，需要申请ohos.permission.STORE_PERSISTENT_DATA权限，申请方式请参考
+[声明权限](../../../../security/AccessToken/declare-permissions.md)。
 
 **起始版本：** 12
 
@@ -25,7 +28,7 @@ function addSync(attributes: AssetMap): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The caller doesn't have the permission. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified.2. Incorrect parameter types.3. Parameter verification failed. |
 | [24000001](../errorcode-asset.md#24000001-关键资产服务不可用) | The ASSET service is unavailable. |
 | [24000003](../errorcode-asset.md#24000003-关键资产已存在) | The asset already exists. |
 | [24000005](../errorcode-asset.md#24000005-锁屏状态不匹配) | The screen lock status does not match. |

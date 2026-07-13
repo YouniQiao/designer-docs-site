@@ -12,7 +12,9 @@ Enumerates the touch event types.
 CANCEL = 0
 ```
 
-Touch canceled. The **DOWN** event of the touchscreen is interrupted unexpectedly and does not close normally. For example, the **CANCEL** event is triggered when the finger is pressed but not lifted, the screen is rotated or folded, or a new hover occurs.
+Touch canceled. The **DOWN** event of the touchscreen is interrupted unexpectedly and does not close normally. For
+example, the **CANCEL** event is triggered when the finger is pressed but not lifted, the screen is rotated or
+folded, or a new hover occurs.
 
 **Since:** 9
 
@@ -60,7 +62,9 @@ Touch up.
 PULL_DOWN = 4
 ```
 
-Drag started. **Since**: 26.0.0
+Drag started.
+
+**Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -74,7 +78,9 @@ Drag started. **Since**: 26.0.0
 PULL_MOVE = 5
 ```
 
-Dragging. **Since**: 26.0.0
+Dragging.
+
+**Since**: 26.0.0
 
 **Since:** 26.0.0
 
@@ -88,7 +94,9 @@ Dragging. **Since**: 26.0.0
 PULL_UP = 6
 ```
 
-Drag ended. **Since**: 26.0.0
+Drag ended.
+
+**Since**: 26.0.0
 
 **Since:** 26.0.0
 

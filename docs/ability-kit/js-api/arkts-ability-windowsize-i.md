@@ -1,6 +1,8 @@
 # WindowSize
 
-Describes the window size. **Atomic service API**: This API can be used in atomic services since API version 11.
+Describes the window size.
+
+**Atomic service API**: This API can be used in atomic services since API version 11.
 
 **Since:** 9
 

@@ -1,12 +1,15 @@
 # @ohos.application.abilityDelegatorRegistry
 
-The **AbilityDelegatorRegistry** module provides APIs for storing global registers of the registered [AbilityDelegator](../../apis-ability-kit/arkts-apis/arkts-ability-abilitydelegator-i.md#abilitydelegator) and [AbilityDelegatorArgs](../../apis-ability-kit/arkts-apis/arkts-ability-abilitydelegatorargs-i.md#abilitydelegatorargs) objects, including obtaining the **AbilityDelegator** and **AbilityDelegatorArgs** objects. The APIs can be used only in the test framework.
+The **AbilityDelegatorRegistry** module provides APIs for storing global registers of the registered
+[AbilityDelegator](../../apis-ability-kit/arkts-apis/arkts-ability-abilitydelegator-i.md) and
+[AbilityDelegatorArgs](../../apis-ability-kit/arkts-apis/arkts-ability-abilitydelegatorargs-i.md) objects, including obtaining
+the **AbilityDelegator** and **AbilityDelegatorArgs** objects. The APIs can be used only in the test framework.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [abilityDelegatorRegistry:abilityDelegatorRegistry](arkts-app-ability-abilitydelegatorregistry.md#abilitydelegatorregistry)
+**Substitutes:** [abilityDelegatorRegistry:abilityDelegatorRegistry](arkts-app-ability-abilitydelegatorregistry.md)
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 

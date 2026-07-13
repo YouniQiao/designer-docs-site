@@ -6,7 +6,8 @@
 function removeGroupByBundle(bundle: BundleOption, groupName: string, callback: AsyncCallback<void>): void
 ```
 
-Removes notifications under a notification group of a specified application. This API uses an asynchronous callback to return the result.
+Removes notifications under a notification group of a specified application.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 8
 
@@ -35,7 +36,8 @@ Removes notifications under a notification group of a specified application. Thi
 function removeGroupByBundle(bundle: BundleOption, groupName: string): Promise<void>
 ```
 
-Removes notifications under a notification group of a specified application. This API uses a promise to return the result.
+Removes notifications under a notification group of a specified application.
+This API uses a promise to return the result.
 
 **Since:** 8
 

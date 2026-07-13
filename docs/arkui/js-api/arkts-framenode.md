@@ -1,40 +1,47 @@
 # FrameNode
 
+Provides APIs for creating a specific type of FrameNode, which can be mounted through the basic API of the FrameNode
+and be displayed using a placeholder container.
+
+When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md), [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md), [Select](../arkts-components/arkts-arkui-select.md), or
+[Toggle](../arkts-components/arkts-arkui-toggle.md) nodes, if the UI instance corresponding to the input [UIContext](arkts-arkui-uicontext.md)
+is destroyed, this API returns an invalid FrameNode that cannot be properly mounted or displayed.
+
 ## Summary
 
 ### Namespaces
 
 | Name | Description |
 | --- | --- |
-| [typeNode](arkts-typenode-n.md) | typeNode提供创建具体类型的FrameNode能力，可通过FrameNode的基础接口进行自定义的挂载，使用占位容器进行显示。 使用typeNode创建[Text]{@link text}、[Image]{@link image}、[Select]{@link select}、[Toggle]{@link toggle}节点时，当传入的 [UIContext]{@link @ohos.arkui.UIContext}对应的UI实例销毁后，调用该接口会返回一个无效的FrameNode节点，无法正常挂载和显示。 |
+| [typeNode](arkts-arkui-typenode-n.md) | Provides APIs for creating a specific type of FrameNode, which can be mounted through the basic API of the FrameNodeand be displayed using a placeholder container.When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md), [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md), [Select](../arkts-components/arkts-arkui-select.md), or[Toggle](../arkts-components/arkts-arkui-toggle.md) nodes, if the UI instance corresponding to the input [UIContext](arkts-arkui-uicontext.md)is destroyed, this API returns an invalid FrameNode that cannot be properly mounted or displayed. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [FrameNode](arkts-framenode-c.md) | 定义FrameNode。 |
-| [NodeAdapter](arkts-nodeadapter-c.md) | NodeAdapter提供FrameNode的数据懒加载能力，通过[LazyForEach]{@link lazy_for_each}实现接口功能。 > **说明：** > > 入参不能为负数，入参为负数时不做处理。 |
+| [FrameNode](arkts-arkui-framenode-c.md) | Defines FrameNode. |
+| [NodeAdapter](arkts-arkui-nodeadapter-c.md) | Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md) APIfunctionality.&gt; **NOTE**&gt;&gt; Negative input parameters are ignored and trigger no processing. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CrossLanguageOptions](arkts-crosslanguageoptions-i.md) | 该接口用于配置或查询FrameNode的跨语言访问权限。例如，针对ArkTS语言创建的节点，可通过该接口控制是否允许通过非ArkTS语言进行属性访问或修改。 |
-| [InteractionEventBindingInfo](arkts-interactioneventbindinginfo-i.md) | 组件的交互事件绑定状态信息。如果当前节点上绑定了所要查询的交互事件，调用查询接口时返回一个InteractionEventBindingInfo对象，指示事件绑定详细信息。 |
-| [LayoutConstraint](arkts-layoutconstraint-i.md) | 描述组件的布局约束。 |
-| [TypedFrameNode](arkts-typedframenode-i.md) | TypedFrameNode继承自[FrameNode]{@link FrameNode}，用于声明具体类型的FrameNode。 |
+| [CrossLanguageOptions](arkts-arkui-crosslanguageoptions-i.md) | Provides options for configuring or querying the cross-language access permissions for a FrameNode. For example, fornodes created using ArkTS, this API can control whether non-ArkTS languages are allowed to access or modify theattributes of these nodes. |
+| [InteractionEventBindingInfo](arkts-arkui-interactioneventbindinginfo-i.md) | Describes the binding state of interaction events on components. When querying reveals an interaction event bound tothe current node, this object provides detailed event binding information. |
+| [LayoutConstraint](arkts-arkui-layoutconstraint-i.md) | Describes the layout constraints of the component. |
+| [TypedFrameNode](arkts-arkui-typedframenode-i.md) | Extends [FrameNode](arkts-arkui-framenode-c.md) to define a FrameNode with specific type constraints. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ChildrenCountMode](arkts-childrencountmode-e.md) | 子节点计数模式枚举。用于指定获取子节点数量时的计数方式。 |
-| [ExpandMode](arkts-expandmode-e.md) | 子节点展开模式枚举。 |
-| [UIState](arkts-uistate-e.md) | 多态样式状态枚举，用于处理多态样式。 |
+| [ChildrenCountMode](arkts-arkui-childrencountmode-e.md) | Enum for children count mode.Specifies how to count children when querying number of child nodes. |
+| [ExpandMode](arkts-arkui-expandmode-e.md) | Enumerates the expansion mode of child nodes. |
+| [UIState](arkts-arkui-uistate-e.md) | Enumerates polymorphic style states, which are used to process polymorphic styles. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [UIStatesChangeHandler](arkts-uistateschangehandler-t.md) | 当UI状态发生变化时触发的回调。接收回调触发时的[UIState]{@link UIState}状态，该参数的取值为UIState状态枚举值或其运算结果。 |
+| [UIStatesChangeHandler](arkts-arkui-uistateschangehandler-t.md) | Defines the callback triggered when the UI state changes. Defines the callback triggered on UI state changes. Itreceives the current [UIState](arkts-arkui-uistate-e.md) value when triggered. The parameter represents **UIState** enumeratedvalues or their bitwise combinations. |
 

@@ -1,6 +1,7 @@
 # AuthOptions (System API)
 
-Represents a set of optional parameters for [auth](arkts-basicservices-userauth-c-sys.md#auth-2).
+Represents a set of optional parameters for
+[auth](arkts-basicservices-userauth-c-sys.md#auth-2).
 
 **Since:** 12
 
@@ -11,7 +12,7 @@ Represents a set of optional parameters for [auth](arkts-basicservices-userauth-
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## accountId

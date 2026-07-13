@@ -1,8 +1,9 @@
 # FunctionIntentDecoratorInfo
 
-[@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) 装饰器的参数类型，当前全部属性均继承自[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)。
+[@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod)
+装饰器的参数类型，当前全部属性均继承自[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)。
 
-**继承/实现关系：** FunctionIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo)
+**继承/实现关系：** FunctionIntentDecoratorInfo extends [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md)
 
 **起始版本：** 20
 

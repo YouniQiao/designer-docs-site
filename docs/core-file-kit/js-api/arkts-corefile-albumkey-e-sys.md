@@ -6,7 +6,7 @@ Describes Album TYPE predicate
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AlbumKeys](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumkeys-e.md#albumkeys)
+**Substitutes:** [AlbumKeys](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumkeys-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -42,7 +42,7 @@ File type of the Album
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumtype-e.md#albumtype)
+**Substitutes:** [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumtype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

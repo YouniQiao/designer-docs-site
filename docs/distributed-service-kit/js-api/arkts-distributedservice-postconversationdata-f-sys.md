@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { conversation } from '@ohos.distributedSoftBus.conversation';
+import { conversation } from '@kit.DistributedServiceKit';
 ```
 
 ## postConversationData
@@ -17,7 +17,8 @@ function postConversationData(
 ): Promise<void>
 ```
 
-Posts conversation data to a specified device. This API sends a message to the target device identified by its networkId or udid. The message will be delivered to the specified bundle and ability on the remote device.
+Posts conversation data to a specified device. This API sends a message to the target device identified by its
+networkId or udid. The message will be delivered to the specified bundle and ability on the remote device.
 
 **Since:** 26.1.0
 
@@ -52,9 +53,9 @@ Posts conversation data to a specified device. This API sends a message to the t
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid parameter. The deviceId, bundleName, abilityName or msg is invalidor empty. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| 2000001 | Internal error. |
-| 2004001 | Remote not support. |
-| 2004002 | Duplicate calls, previous call still in progress. |
-| 2004003 | Send data failed. |
-| 2004004 | Wait remote ack timeout. |
+| [2000001](../../apis-distributedservice-kit/errorcode-conversation.md#2000001-internal-error) | Internal error. |
+| [2004001](../../apis-distributedservice-kit/errorcode-conversation.md#2004001-unsupported-peer-version) | Remote not support. |
+| [2004002](../../apis-distributedservice-kit/errorcode-conversation.md#2004002-duplicate-calls) | Duplicate calls, previous call still in progress. |
+| [2004003](../../apis-distributedservice-kit/errorcode-conversation.md#2004003-failure-to-send-data) | Send data failed. |
+| [2004004](../../apis-distributedservice-kit/errorcode-conversation.md#2004004-request-timeout) | Wait remote ack timeout. |
 

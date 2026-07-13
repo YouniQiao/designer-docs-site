@@ -26,7 +26,8 @@ Normal event, such as conference or an alarm clock.
 IMPORTANT = 1
 ```
 
-Important event, such as wedding anniversary, are not recommended for third-party developers. Important events do not support one-click service redirection and custom reminder time.
+Important event, such as wedding anniversary, are not recommended for third-party developers. Important events do
+not support one-click service redirection and custom reminder time.
 
 **Since:** 10
 

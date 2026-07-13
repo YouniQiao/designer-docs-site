@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## supportsCACertDialog
@@ -12,7 +12,8 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 function supportsCACertDialog(): boolean
 ```
 
-Check whether the device supports the [openCertificateDetailDialog](arkts-devicecertificate-opencertificatedetaildialog-f.md#opencertificatedetaildialog-1), [openInstallCertificateDialog](arkts-devicecertificate-openinstallcertificatedialog-f.md#openinstallcertificatedialog-1), and [openUninstallCertificateDialog](arkts-devicecertificate-openuninstallcertificatedialog-f.md#openuninstallcertificatedialog-1) interfaces to open the dialog box for managing CA certificates.
+Check whether the device supports the [openCertificateDetailDialog](arkts-devicecertificate-opencertificatedetaildialog-f.md#opencertificatedetaildialog-1), [openInstallCertificateDialog](arkts-devicecertificate-openinstallcertificatedialog-f.md#openinstallcertificatedialog-1), and [openUninstallCertificateDialog](arkts-devicecertificate-openuninstallcertificatedialog-f.md#openuninstallcertificatedialog-1) interfaces to open the dialog box for managing CA
+certificates.
 
 **Since:** 26.0.0
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formProvider } from '@ohos.app.form.formProvider';
+import { formProvider } from '@kit.FormKit';
 ```
 
 ## getPublishedFormInfoById
@@ -12,7 +12,13 @@ import { formProvider } from '@ohos.app.form.formProvider';
 function getPublishedFormInfoById(formId: string): Promise<formInfo.FormInfo>
 ```
 
-Obtains the information of the widget that has been added to the home screen on the device. This API uses a promise to return the result. > **NOTE** > > This field is supported since API version 18 and deprecated since API version 20. You are advised to use > [getPublishedRunningFormInfoById](arkts-form-getpublishedrunningforminfobyid-f.md#getpublishedrunningforminfobyid-1) instead.
+Obtains the information of the widget that has been added to the home screen on the device. This API uses a promise
+to return the result.
+
+> **NOTE**
+>
+> This field is supported since API version 18 and deprecated since API version 20. You are advised to use
+> [getPublishedRunningFormInfoById](arkts-form-getpublishedrunningforminfobyid-f.md#getpublishedrunningforminfobyid-1) instead.
 
 **Since:** 18
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## addDomainFilterRule
@@ -12,7 +12,23 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function addDomainFilterRule(admin: Want, domainFilterRule: DomainFilterRule): void
 ```
 
-Adds domain name filtering rules for the device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. After a rule with [Action](arkts-mdm-action-e.md#action) set to **ALLOW** is added, a rule with **Action** set to **DENY** is added by default to discard or intercept all packets for domain name resolution that do not meet the **ALLOW** rule. After the device is restarted, the domain name filtering rules are cleared. > **NOTE** > > To prevent interception rules from becoming ineffective due to DNS caching, it is recommended that you configure > domain name filtering rules immediately after the system starts up. If interception fails because of DNS caching, > restart the system to clear the cache and restore the interception function.
+Adds domain name filtering rules for the device.
+
+In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
+
+[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
+
+After a rule with [Action](arkts-mdm-action-e.md) set to **ALLOW** is added, a rule with **Action** set to
+**DENY** is added by default to discard or intercept all packets for domain name resolution that do not meet the
+**ALLOW** rule.
+
+After the device is restarted, the domain name filtering rules are cleared.
+
+> **NOTE**
+>
+> To prevent interception rules from becoming ineffective due to DNS caching, it is recommended that you configure
+> domain name filtering rules immediately after the system starts up. If interception fails because of DNS caching,
+> restart the system to clear the cache and restore the interception function.
 
 **Since:** 12
 

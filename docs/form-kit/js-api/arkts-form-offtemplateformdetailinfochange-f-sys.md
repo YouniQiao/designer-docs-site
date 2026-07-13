@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## offTemplateFormDetailInfoChange
@@ -12,7 +12,8 @@ import { formHost } from '@ohos.app.form.formHost';
 function offTemplateFormDetailInfoChange(callback?: formInfo.TemplateFormDetailInfoCallback): void
 ```
 
-Unsubscribes from changes in the static configuration information of template widgets. This API uses an asynchronous callback to return the result.
+Unsubscribes from changes in the static configuration information of template widgets. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 23
 

@@ -1,8 +1,19 @@
 # WindowExtensionContext（系统接口）
 
-WindowExtensionContext模块是WindowExtensionAbility的上下文环境，继承自[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)。 WindowExtensionContext模块提供[WindowExtensionAbility](arkts-application-windowextensionability.md)具有的能力，包括启动 Ability。 > **说明：** > > - 从API version 21开始废弃，推荐使用[UIExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md#uiextensioncontext)。 > > - 本模块接口为系统接口。 > > - 本模块接口仅可在Stage模型下使用。
+WindowExtensionContext模块是WindowExtensionAbility的上下文环境，继承自[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)。
 
-**继承/实现关系：** WindowExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)
+WindowExtensionContext模块提供[WindowExtensionAbility](arkts-application-windowextensionability.md)具有的能力，包括启动
+Ability。
+
+> **说明：**
+>
+> - 从API version 21开始废弃，推荐使用[UIExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md)。
+>
+> - 本模块接口为系统接口。
+>
+> - 本模块接口仅可在Stage模型下使用。
+
+**继承/实现关系：** WindowExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **起始版本：** 9
 
@@ -18,7 +29,13 @@ WindowExtensionContext模块是WindowExtensionAbility的上下文环境，继承
 startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): void
 ```
 
-启动Ability，使用callback异步回调。 > **说明：** > > - 从API version 9开始支持，从API version 21开始废弃，推荐使用 > [UIExtensionContext.startability](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md#startability-2) > 。
+启动Ability，使用callback异步回调。
+
+> **说明：**
+>
+> - 从API version 9开始支持，从API version 21开始废弃，推荐使用
+> [UIExtensionContext.startability](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md#startability-2)
+> 。
 
 **起始版本：** 9
 
@@ -42,8 +59,8 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12 |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12+ |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 
 ## startAbility
 
@@ -51,7 +68,13 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-启动Ability，使用Promise异步回调。 > **说明：** > > - 从API version 9开始支持，从API version 21开始废弃，推荐使用 > [UIExtensionContext.startability](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md#startability-3) > 。
+启动Ability，使用Promise异步回调。
+
+> **说明：**
+>
+> - 从API version 9开始支持，从API version 21开始废弃，推荐使用
+> [UIExtensionContext.startability](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontext-c.md#startability-3)
+> 。
 
 **起始版本：** 9
 
@@ -80,6 +103,6 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12 |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a systemAPI.<br>**适用版本：** 12+ |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
 

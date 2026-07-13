@@ -1,6 +1,17 @@
 # Map
 
-A non-linear data structure. > **NOTE** > > - This module can be imported only to ArkTS files (with the file name extension .ets). > This section uses the following to identify the use of generics: - K: key. - V: value. The K and V types must be any of the [sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types). **Decorator**: \@Sendable
+A non-linear data structure.
+
+> **NOTE**
+>
+> - This module can be imported only to ArkTS files (with the file name extension .ets).
+> This section uses the following to identify the use of generics:
+
+- K: key.
+- V: value.
+The K and V types must be any of the
+[sendable data types](../../../../arkts-utils/arkts-sendable.md#sendable-data-types).
+**Decorator**: \@Sendable
 
 **Since:** 12
 
@@ -11,7 +22,7 @@ A non-linear data structure. > **NOTE** > > - This module can be imported only t
 ## Modules to Import
 
 ```TypeScript
-import { collections } from '@arkts.collections';
+import { collections } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -20,7 +31,9 @@ import { collections } from '@arkts.collections';
 [Symbol.iterator](): IterableIterator<[K, V]>
 ```
 
-Returns an iterator, each item of which is a JavaScript object. NOTE: This API cannot be used in .ets files.
+Returns an iterator, each item of which is a JavaScript object.
+NOTE:
+This API cannot be used in .ets files.
 
 **Since:** 12
 

@@ -1,6 +1,10 @@
 # @ohos.cooperate
 
-键鼠穿越功能模块，提供两台或多台设备组网协同后键鼠共享能力，实现键鼠输入设备的跨设备协同操作。 > **说明** > > - 本模块接口均为系统接口。
+键鼠穿越功能模块，提供两台或多台设备组网协同后键鼠共享能力，实现键鼠输入设备的跨设备协同操作。
+
+> **说明**
+>
+> - 本模块接口均为系统接口。
 
 **起始版本：** 10
 
@@ -8,62 +12,58 @@
 
 **系统接口：** 此接口为系统接口。
 
-## 导入模块
-
-```TypeScript
-import { cooperate } from '@kit.DistributedServiceKit';
-```
-
 ## 汇总
 
-### 函数
+<!--Del-->
+### 函数（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[activate](arkts-cooperate-activate-f-sys.md#activate-1) | 启动键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[activate](arkts-cooperate-activate-f-sys.md#activate-2) | 启动键鼠穿越，使用Promise异步回调。 |
-| <!--DelRow-->[activateCooperate](arkts-cooperate-activatecooperate-f-sys.md#activateCooperate-1) | 启动键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[activateCooperate](arkts-cooperate-activatecooperate-f-sys.md#activateCooperate-2) | 启动键鼠穿越，使用Promise异步回调。 |
-| <!--DelRow-->[activateCooperateWithOptions](arkts-cooperate-activatecooperatewithoptions-f-sys.md#activateCooperateWithOptions-1) | 启动键鼠穿越，使用选项开始屏幕跳转。 |
-| <!--DelRow-->[deactivate](arkts-cooperate-deactivate-f-sys.md#deactivate-1) | 停止键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[deactivate](arkts-cooperate-deactivate-f-sys.md#deactivate-2) | 停止键鼠穿越，使用Promise异步回调。 |
-| <!--DelRow-->[deactivateCooperate](arkts-cooperate-deactivatecooperate-f-sys.md#deactivateCooperate-1) | 停止键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[deactivateCooperate](arkts-cooperate-deactivatecooperate-f-sys.md#deactivateCooperate-2) | 停止键鼠穿越，使用Promise异步回调。 |
-| <!--DelRow-->[getCooperateSwitchState](arkts-cooperate-getcooperateswitchstate-f-sys.md#getCooperateSwitchState-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
-| <!--DelRow-->[getCooperateSwitchState](arkts-cooperate-getcooperateswitchstate-f-sys.md#getCooperateSwitchState-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
-| <!--DelRow-->[getCrossingSwitchState](arkts-cooperate-getcrossingswitchstate-f-sys.md#getCrossingSwitchState-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
-| <!--DelRow-->[getCrossingSwitchState](arkts-cooperate-getcrossingswitchstate-f-sys.md#getCrossingSwitchState-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
-| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-1) | 取消监听键鼠穿越状态。 |
-| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-2) | 取消监听键鼠穿越状态。 |
-| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-3) | 取消监听指定设备鼠标光标位置。 |
-| <!--DelRow-->[offCooperateMessage](arkts-cooperate-offcooperatemessage-f-sys.md#offCooperateMessage-1) | Disables listening for screen hopping status change events. |
-| <!--DelRow-->[offCooperateMouseEvent](arkts-cooperate-offcooperatemouseevent-f-sys.md#offCooperateMouseEvent-1) | Disables listening for mouse pointer position information on the specified device for cooperation. |
-| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-1) | 注册监听键鼠穿越状态。 |
-| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-2) | 注册监听键鼠穿越状态。 |
-| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-3) | 注册监听指定设备鼠标光标位置。 |
-| <!--DelRow-->[onCooperateMessage](arkts-cooperate-oncooperatemessage-f-sys.md#onCooperateMessage-1) | Enables listening for screen hopping status change events. |
-| <!--DelRow-->[onCooperateMouseEvent](arkts-cooperate-oncooperatemouseevent-f-sys.md#onCooperateMouseEvent-1) | Enables listening for mouse pointer position information on the specified device for cooperation. |
-| <!--DelRow-->[prepare](arkts-cooperate-prepare-f-sys.md#prepare-1) | 准备键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[prepare](arkts-cooperate-prepare-f-sys.md#prepare-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
-| <!--DelRow-->[prepareCooperate](arkts-cooperate-preparecooperate-f-sys.md#prepareCooperate-1) | 准备键鼠穿越，使用Callback异步回调。 |
-| <!--DelRow-->[prepareCooperate](arkts-cooperate-preparecooperate-f-sys.md#prepareCooperate-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
-| <!--DelRow-->[unprepare](arkts-cooperate-unprepare-f-sys.md#unprepare-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
-| <!--DelRow-->[unprepare](arkts-cooperate-unprepare-f-sys.md#unprepare-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
-| <!--DelRow-->[unprepareCooperate](arkts-cooperate-unpreparecooperate-f-sys.md#unprepareCooperate-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
-| <!--DelRow-->[unprepareCooperate](arkts-cooperate-unpreparecooperate-f-sys.md#unprepareCooperate-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
+| [activate](arkts-distributedservice-activate-f-sys.md#activate-1) | 启动键鼠穿越，使用Callback异步回调。 |
+| [activate](arkts-distributedservice-activate-f-sys.md#activate-2) | 启动键鼠穿越，使用Promise异步回调。 |
+| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-1) | 启动键鼠穿越，使用Callback异步回调。 |
+| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-2) | 启动键鼠穿越，使用Promise异步回调。 |
+| [activateCooperateWithOptions](arkts-distributedservice-activatecooperatewithoptions-f-sys.md#activatecooperatewithoptions-1) | 启动键鼠穿越，使用选项开始屏幕跳转。 |
+| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-1) | 停止键鼠穿越，使用Callback异步回调。 |
+| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-2) | 停止键鼠穿越，使用Promise异步回调。 |
+| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-1) | 停止键鼠穿越，使用Callback异步回调。 |
+| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-2) | 停止键鼠穿越，使用Promise异步回调。 |
+| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
+| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
+| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
+| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
+| [off](arkts-distributedservice-off-f-sys.md#off-1) | 取消监听键鼠穿越状态。 |
+| [off](arkts-distributedservice-off-f-sys.md#off-2) | 取消监听键鼠穿越状态。 |
+| [off](arkts-distributedservice-off-f-sys.md#off-3) | 取消监听指定设备鼠标光标位置。 |
+| [on](arkts-distributedservice-on-f-sys.md#on-1) | 注册监听键鼠穿越状态。 |
+| [on](arkts-distributedservice-on-f-sys.md#on-2) | 注册监听键鼠穿越状态。 |
+| [on](arkts-distributedservice-on-f-sys.md#on-3) | 注册监听指定设备鼠标光标位置。 |
+| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-1) | 准备键鼠穿越，使用Callback异步回调。 |
+| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
+| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-1) | 准备键鼠穿越，使用Callback异步回调。 |
+| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
+| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
+| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
+| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
+| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
+<!--DelEnd-->
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[CooperateMessage](arkts-cooperate-cooperatemessage-i-sys.md) | 键鼠穿越的消息。 |
-| <!--DelRow-->[CooperateOptions](arkts-cooperate-cooperateoptions-i-sys.md) | 键鼠穿越可选控制参数，控制穿出点位置。 |
-| <!--DelRow-->[MouseLocation](arkts-cooperate-mouselocation-i-sys.md) | 键鼠穿越的位置。 |
+| [CooperateMessage](arkts-distributedservice-cooperatemessage-i-sys.md) | 键鼠穿越的消息。 |
+| [CooperateOptions](arkts-distributedservice-cooperateoptions-i-sys.md) | 键鼠穿越可选控制参数，控制穿出点位置。 |
+| [MouseLocation](arkts-distributedservice-mouselocation-i-sys.md) | 键鼠穿越的位置。 |
+<!--DelEnd-->
 
-### 枚举
+<!--Del-->
+### 枚举（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[CooperateMsg](arkts-cooperate-cooperatemsg-e-sys.md) | 键鼠穿越的消息通知。 |
-| <!--DelRow-->[CooperateState](arkts-cooperate-cooperatestate-e-sys.md) | 键鼠穿越状态的枚举。 |
+| [CooperateMsg](arkts-distributedservice-cooperatemsg-e-sys.md) | 键鼠穿越的消息通知。 |
+| [CooperateState](arkts-distributedservice-cooperatestate-e-sys.md) | 键鼠穿越状态的枚举。 |
+<!--DelEnd-->
 

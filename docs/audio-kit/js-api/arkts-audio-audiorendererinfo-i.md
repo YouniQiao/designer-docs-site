@@ -12,19 +12,39 @@ Describes audio renderer information.
 import { audio } from '@kit.AudioKit';
 ```
 
-## rendererFlags
+## content
 
 ```TypeScript
-rendererFlags: int
+content?: ContentType
 ```
 
-Flags that control the renderer behavior. Set this parameter to **0**.
+Audio content type.
 
-**Type:** int
+**Type:** ContentType
 
 **Since:** 8
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Deprecated since:** 10
+
+**Substitutes:** usage
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## rendererFlags
+
+```TypeScript
+rendererFlags: number
+```
+
+Flags that control the renderer behavior.
+
+Set this parameter to **0**.
+
+**Type:** number
+
+**Since:** 8
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -40,25 +60,7 @@ Audio stream usage.
 
 **Since:** 8
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-## content
-
-```TypeScript
-content?: ContentType
-```
-
-Audio content type.
-
-**Type:** ContentType
-
-**Since:** 8
-
-**Deprecated since:** 10
-
-**Substitute:** ohos.multimedia.audio.AudioRendererInfo#usage
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -68,7 +70,8 @@ Audio content type.
 volumeMode?: AudioVolumeMode
 ```
 
-Audio volume mode config. If volumeMode is set to {@link AudioVolumeMode.APP_INDIVIDUAL}, this audio renderer will be affected by app volume percentage set by {@link setAppVolumePercentage}
+Audio volume mode config. If volumeMode is set to {@link AudioVolumeMode.APP_INDIVIDUAL}, this audio renderer
+will be affected by app volume percentage set by {@link setAppVolumePercentage}
 
 **Type:** AudioVolumeMode
 

@@ -22,9 +22,9 @@ Constructor, which is used to construct an EventInfo instance using a JSON objec
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -32,7 +32,7 @@ Constructor, which is used to construct an EventInfo instance using a JSON objec
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| jsonObject | Object | Yes | JSON object that contains the type, bundleName, and triggerAction  fields. |
+| jsonObject | Object | Yes | JSON object that contains the **type**, **bundleName**, and **triggerAction**fields. |
 
 **Example**
 
@@ -50,22 +50,6 @@ let eventInfo: accessibility.EventInfo = ({
 ## constructor
 
 ```TypeScript
-constructor()
-```
-
-A constructor used to create a EventInfo object.
-
-**Since:** 23
-
-**Atomic service API:** This API can be used in atomic services.
-
-**Widget capability:** This API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## constructor
-
-```TypeScript
 constructor(type: EventType, bundleName: string, triggerAction: Action)
 ```
 
@@ -73,9 +57,9 @@ Constructor, which is used to construct an EventInfo instance using independent 
 
 **Since:** 11
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -96,291 +80,21 @@ let eventInfo = new accessibility.EventInfo('click', 'com.example.MyApplication'
 
 ```
 
-## textAnnouncedForAccessibility
-
-```TypeScript
-textAnnouncedForAccessibility?: string
-```
-
-Content for auto-broadcasting. When the application needs to proactively broadcast, set the broadcast content according to the actual scenario with no special restrictions, and the default value is empty.
-
-**Type:** string
-
-**Since:** 12
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## elementId
-
-```TypeScript
-elementId?: int
-```
-
-Element ID of the component. The default value is **0**.
-
-**Type:** int
-
-**Since:** 12
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## triggerAction
-
-```TypeScript
-triggerAction: Action
-```
-
-Action that triggers the event (mandatory).
-
-**Type:** Action
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## componentType
-
-```TypeScript
-componentType?: string
-```
-
-It should correspond to the event source component type, and the default value is empty. Example: - Button type - > 'Button' - Image type - > 'Image'
-
-**Type:** string
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## lastContent
-
-```TypeScript
-lastContent?: string
-```
-
-Latest content, which is set according to the actual scenario with no special restrictions. The default value is empty.
-
-**Type:** string
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## textResourceAnnouncedForAccessibility
-
-```TypeScript
-textResourceAnnouncedForAccessibility?: Resource
-```
-
-Content for auto-broadcasting. The value is a string of the **Resource** type.
-
-**Type:** Resource
-
-**Since:** 18
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## textMoveUnit
-
-```TypeScript
-textMoveUnit?: TextMoveUnit
-```
-
-Text moving granularity. The default value is char.
-
-**Type:** TextMoveUnit
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## description
-
-```TypeScript
-description?: string
-```
-
-Event description, which is set according to the actual scenario with no special restrictions, and the default value is empty.
-
-**Type:** string
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## pageId
-
-```TypeScript
-pageId ?: int
-```
-
-ID of the page where the event occurs. The default value is **0**.
-
-**Type:** int
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## type
-
-```TypeScript
-type: EventType
-```
-
-Accessibility event type (mandatory).
-
-**Type:** EventType
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## customId
-
-```TypeScript
-customId?: string
-```
-
-Component ID for active focusing, and the default value is empty.
-
-**Type:** string
-
-**Since:** 12
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## currentIndex
-
-```TypeScript
-currentIndex?: int
-```
-
-Current index. The default value is **0**.
-
-**Type:** int
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## itemCount
-
-```TypeScript
-itemCount?: int
-```
-
-Total number of items. The default value is **0**.
-
-**Type:** int
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## contents
-
-```TypeScript
-contents?: Array<string>
-```
-
-Content list, which is set according to the actual scenario with no special restrictions. The default value is empty.
-
-**Type:** Array<string>
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
-## endIndex
-
-```TypeScript
-endIndex?: int
-```
-
-End index. The default value is **0**.
-
-**Type:** int
-
-**Since:** 7
-
-**Atomic service API:** From API version 23 this API can be used in atomic services.
-
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
-
-**System capability:** SystemCapability.BarrierFree.Accessibility.Core
-
 ## beginIndex
 
 ```TypeScript
-beginIndex?: int
+beginIndex?: number
 ```
 
 Start index. The default value is **0**.
 
-**Type:** int
+**Type:** number
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -396,9 +110,288 @@ Name of the target application (mandatory).
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## componentType
+
+```TypeScript
+componentType?: string
+```
+
+It should correspond to the event source component type, and the default value is empty.
+
+Example:
+
+- Button type - > 'Button'
+- Image type - > 'Image'
+
+**Type:** string
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## contents
+
+```TypeScript
+contents?: Array<string>
+```
+
+Content list, which is set according to the actual scenario with no special restrictions. The default value is
+empty.
+
+**Type:** Array<string>
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## currentIndex
+
+```TypeScript
+currentIndex?: number
+```
+
+Current index. The default value is **0**.
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## customId
+
+```TypeScript
+customId?: string
+```
+
+Component ID for active focusing, and the default value is empty.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## description
+
+```TypeScript
+description?: string
+```
+
+Event description, which is set according to the actual scenario with no special restrictions, and the default
+value is empty.
+
+**Type:** string
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## elementId
+
+```TypeScript
+elementId?: number
+```
+
+Element ID of the component. The default value is **0**.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## endIndex
+
+```TypeScript
+endIndex?: number
+```
+
+End index. The default value is **0**.
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## itemCount
+
+```TypeScript
+itemCount?: number
+```
+
+Total number of items. The default value is **0**.
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## lastContent
+
+```TypeScript
+lastContent?: string
+```
+
+Latest content, which is set according to the actual scenario with no special restrictions. The default value is
+empty.
+
+**Type:** string
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## pageId
+
+```TypeScript
+pageId ?: number
+```
+
+ID of the page where the event occurs. The default value is **0**.
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## textAnnouncedForAccessibility
+
+```TypeScript
+textAnnouncedForAccessibility?: string
+```
+
+Content for auto-broadcasting. When the application needs to proactively broadcast, set the broadcast content
+according to the actual scenario with no special restrictions, and the default value is empty.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## textMoveUnit
+
+```TypeScript
+textMoveUnit?: TextMoveUnit
+```
+
+Text moving granularity. The default value is char.
+
+**Type:** TextMoveUnit
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## textResourceAnnouncedForAccessibility
+
+```TypeScript
+textResourceAnnouncedForAccessibility?: Resource
+```
+
+Content for auto-broadcasting. The value is a string of the **Resource** type.
+
+**Type:** Resource
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## triggerAction
+
+```TypeScript
+triggerAction: Action
+```
+
+Action that triggers the event (mandatory).
+
+**Type:** Action
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+
+**System capability:** SystemCapability.BarrierFree.Accessibility.Core
+
+## type
+
+```TypeScript
+type: EventType
+```
+
+Accessibility event type (mandatory).
+
+**Type:** EventType
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 23.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -414,9 +407,9 @@ Window update type.
 
 **Since:** 7
 
-**Atomic service API:** From API version 23 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
-**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
+**Widget capability:** This API can be used in ArkTS widgets since API version 23.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 

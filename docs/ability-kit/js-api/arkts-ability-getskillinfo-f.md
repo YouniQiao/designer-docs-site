@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { skillManager } from '@ohos.bundle.skillManager';
+import { skillManager } from '@kit.AbilityKit';
 ```
 
 ## getSkillInfo
@@ -13,7 +13,9 @@ function getSkillInfo(bundleName: string, moduleName: string, skillName: string,
     flags: number, userId?: number): Promise<SkillInfo>
 ```
 
-Obtains SkillInfo of a specified application based on bundleName, moduleName and skillName. To query information for other local accounts, the permission ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
+Obtains SkillInfo of a specified application based on bundleName, moduleName and skillName.
+To query information for other local accounts, the permission
+ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS must additionally be granted.
 
 **Since:** 26.0.0
 

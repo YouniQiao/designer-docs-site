@@ -12,7 +12,9 @@
 STANDARD = 0
 ```
 
-系统默认的栈操作模式。 push操作会将指定的NavDestination入栈；replace操作会将当前栈顶NavDestination替换。
+系统默认的栈操作模式。
+
+push操作会将指定的NavDestination入栈；replace操作会将当前栈顶NavDestination替换。
 
 **起始版本：** 12
 

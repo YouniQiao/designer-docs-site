@@ -158,7 +158,11 @@ screenDensity: number
 screenShape: 'rect' | 'circle'
 ```
 
-屏幕形状。可取值： - rect：方形屏； - circle：圆形屏。
+屏幕形状。可取值：
+
+- rect：方形屏；
+
+- circle：圆形屏。
 
 **类型：** 'rect' | 'circle'
 

@@ -1,10 +1,6 @@
 # AudioSourceType
 
-```TypeScript
-enum AudioSourceType
-```
-
-Enumerates the audio source types for video recording.
+表示视频录制中音频源类型的枚举。
 
 **起始版本：** 9
 
@@ -16,7 +12,7 @@ Enumerates the audio source types for video recording.
 AUDIO_SOURCE_TYPE_DEFAULT = 0
 ```
 
-Default audio input source.
+默认的音频输入源类型。
 
 **起始版本：** 9
 
@@ -28,11 +24,13 @@ Default audio input source.
 AUDIO_SOURCE_TYPE_MIC = 1
 ```
 
-Microphone audio input source.
+表示MIC的音频输入源。
+
+**原子化服务API：** 从API version 12 开始，该接口支持在原子化服务中使用。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
@@ -42,7 +40,7 @@ Microphone audio input source.
 AUDIO_SOURCE_TYPE_VOICE_RECOGNITION = 2
 ```
 
-Audio source in speech recognition scenarios.
+表示语音识别场景的音频源。
 
 **起始版本：** 12
 
@@ -54,7 +52,7 @@ Audio source in speech recognition scenarios.
 AUDIO_SOURCE_TYPE_VOICE_COMMUNICATION = 7
 ```
 
-Voice communication source.
+表示语音通话场景的音频源。
 
 **起始版本：** 12
 
@@ -66,7 +64,7 @@ Voice communication source.
 AUDIO_SOURCE_TYPE_VOICE_MESSAGE = 10
 ```
 
-Voice message source.
+表示短语音消息的音频源。
 
 **起始版本：** 12
 
@@ -78,7 +76,7 @@ Voice message source.
 AUDIO_SOURCE_TYPE_CAMCORDER = 13
 ```
 
-Audio source in camera recording scenarios.
+表示相机录像的音频源。
 
 **起始版本：** 12
 

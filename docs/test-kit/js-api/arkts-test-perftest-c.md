@@ -1,6 +1,7 @@
 # PerfTest
 
-Represents the general entry of the white-box performance test framework. It provides capabilities such as test task creation, test code segment execution, data collection, and measurement result obtaining.
+Represents the general entry of the white-box performance test framework.
+It provides capabilities such as test task creation, test code segment execution, data collection, and measurement result obtaining.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ Represents the general entry of the white-box performance test framework. It pro
 ## Modules to Import
 
 ```TypeScript
-import { PerfTestStrategy, PerfMetric, PerfTest, PerfMeasureResult } from '@ohos.test.PerfTest';
+import { PerfTestStrategy, PerfMetric, PerfTest, PerfMeasureResult } from '@kit.TestKit';
 ```
 
 ## create
@@ -189,7 +190,8 @@ async function demo() {
 run(): Promise<void>
 ```
 
-Runs a performance test, iteratively executes test code segments, and collects performance data. This API uses a promise to return the result.
+Runs a performance test, iteratively executes test code segments, and collects performance data.
+This API uses a promise to return the result.
 
 **Since:** 20
 

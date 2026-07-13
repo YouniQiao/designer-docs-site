@@ -1,8 +1,9 @@
 # VideoOutput
 
-**VideoOutput** implements output information used in a video session. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).
+**VideoOutput** implements output information used in a video session. It inherits from
+[CameraOutput](arkts-camera-cameraoutput-i.md).
 
-**Inheritance/Implementation:** VideoOutput extends [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput)
+**Inheritance/Implementation:** VideoOutput extends [CameraOutput](arkts-camera-cameraoutput-i.md)
 
 **Since:** 10
 
@@ -11,7 +12,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## attachMetaSurface
@@ -104,7 +105,13 @@ Enable auto frame rate for video capture.
 enableMirror(enabled: boolean): void
 ```
 
-Enables or disables mirror recording. - Before calling this API, check whether mirror recording is supported by using [isMirrorSupported](arkts-camera-videooutput-i-sys.md#ismirrorsupported-1). - After enabling or disabling mirror recording, call [getVideoRotation](arkts-camera-videooutput-i.md#getvideorotation-1) to obtain the rotation angle and [updateRotation](../../apis-media-kit/arkts-apis/arkts-media-avrecorder-i.md#updaterotation-1) to update the rotation angle.
+Enables or disables mirror recording.
+
+- Before calling this API, check whether mirror recording is supported by using
+[isMirrorSupported](arkts-camera-videooutput-i-sys.md#ismirrorsupported-1).
+- After enabling or disabling mirror recording, call
+[getVideoRotation](arkts-camera-videooutput-i.md#getvideorotation-1) to obtain the rotation angle and
+[updateRotation](../../apis-media-kit/arkts-apis/arkts-media-avrecorder-i.md#updaterotation-1) to update the rotation angle.
 
 **Since:** 15
 

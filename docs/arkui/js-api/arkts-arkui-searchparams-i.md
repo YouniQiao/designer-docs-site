@@ -9,7 +9,7 @@ Events and styles supported by the search area.
 ## Modules to Import
 
 ```TypeScript
-import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@ohos.atomicservice.AtomicServiceSearch';
+import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@kit.ArkUI';
 ```
 
 ## cancelIcon
@@ -194,7 +194,11 @@ Set the SearchButton fontColor.
 fontFeature?: ResourceStr
 ```
 
-Set font feature. normal | <feature-tag-value>, where <feature-tag-value> = <string> [ <integer> | on | off ], like: "ss01" 0 the values of <feature-tag-value> reference to doc of search component number of <feature-tag-value> can be single or multiple, and separated by comma ','.
+Set font feature.
+normal | <feature-tag-value>,
+where <feature-tag-value> = <string> [ <integer> | on | off ], like: "ss01" 0
+the values of <feature-tag-value> reference to doc of search component
+number of <feature-tag-value> can be single or multiple, and separated by comma ','.
 
 **Type:** ResourceStr
 

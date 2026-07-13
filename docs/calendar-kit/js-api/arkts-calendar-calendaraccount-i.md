@@ -9,7 +9,7 @@ Describes the calendar account information.
 ## Modules to Import
 
 ```TypeScript
-import { calendarManager } from '@ohos.calendarManager';
+import { calendarManager } from '@kit.CalendarKit';
 ```
 
 ## displayName
@@ -18,7 +18,8 @@ import { calendarManager } from '@ohos.calendarManager';
 displayName?: string
 ```
 
-Account name displayed on the calendar application (defined by users). If this parameter is not specified, the default value is an empty string with a maximum of 64 characters.
+Account name displayed on the calendar application (defined by users). If this parameter is not specified, the
+default value is an empty string with a maximum of 64 characters.
 
 **Type:** string
 

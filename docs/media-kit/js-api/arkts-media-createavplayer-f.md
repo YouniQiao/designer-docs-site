@@ -1,16 +1,35 @@
 # createAVPlayer
 
+## Modules to Import
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
 ## createAVPlayer
 
 ```TypeScript
 function createAVPlayer(callback: AsyncCallback<AVPlayer>): void
 ```
 
-创建音视频播放实例。使用callback异步回调。 > **说明：** > > - 推荐单个应用创建的音视频播放实例（即音频、视频、音视频三类相加）不超过16个。<!--Del--> > > - 可创建的音视频播放实例数量依赖于设备芯片的支持情况，如芯片支持创建的数量少于上述情况，请以芯片规格为准。如RK3568推荐单个应用创建6个以内的音视频播放实例。<!--DelEnd--> > > - 应用需要按照实际业务需求合理使用AVPlayer对象，按需创建并及时释放，避免持有过多AVPlayer实例导致内存消耗过大，否则在一定情况下可能导致系统终止应用。
+Creates an AVPlayer instance. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> - You are advised to create a maximum of 16 AVPlayer instances for an application in both audio and video
+> playback scenarios.<!--Del-->
+>
+> - The actual number of instances that can be created may be different. It depends on the specifications of the
+> device chip in use. For example, in the case of RK3568, you are advised to create a maximum of 6 AVPlayer
+> instances for an application in audio and video playback scenarios.<!--DelEnd-->
+>
+> - Applications must properly manage AVPlayer instances according to their specific needs, creating and freeing
+> them when necessary. Holding too many AVPlayer instances can lead to high memory usage, and in some cases, the
+> system might terminate applications to free up resources.
 
 **Since:** 9
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -18,13 +37,13 @@ function createAVPlayer(callback: AsyncCallback<AVPlayer>): void
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVPlayer> | Yes | 回调函数。异步返回AVPlayer实例，失败时返回null。可用于音视频播放。 |
+| callback | AsyncCallback&lt;AVPlayer&gt; | Yes | Callback used to return the result. If the operation is successful,an AVPlayer instance is returned; otherwise, **null** is returned. The instance can be used to play audio andvideo. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400101 | No memory. Return by callback. |
+| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by callback. |
 
 **Example**
 
@@ -43,17 +62,31 @@ media.createAVPlayer((error: BusinessError, video: media.AVPlayer) => {
 
 ```
 
+
 ## createAVPlayer
 
 ```TypeScript
 function createAVPlayer(): Promise<AVPlayer>
 ```
 
-异步方式创建音视频播放实例。使用Promise异步回调。 > **说明：** > > - 推荐单个应用创建的音视频播放实例（即音频、视频、音视频三类相加）不超过16个。<!--Del--> > > - 可创建的音视频播放实例数量依赖于设备芯片的支持情况，如芯片支持创建的数量少于上述情况，请以芯片规格为准。如RK3568推荐单个应用创建6个以内的音视频播放实例。<!--DelEnd--> > > - 应用需要按照实际业务需求合理使用AVPlayer对象，按需创建并及时释放，避免持有过多AVPlayer实例导致内存消耗过大，导致系统终止应用。
+Creates an AVPlayer instance. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - You are advised to create a maximum of 16 AVPlayer instances for an application in both audio and video
+> playback scenarios.<!--Del-->
+>
+> - The actual number of instances that can be created may be different. It depends on the specifications of the
+> device chip in use. For example, in the case of RK3568, you are advised to create a maximum of 6 AVPlayer
+> instances for an application in audio and video playback scenarios.<!--DelEnd-->
+>
+> - Applications should reasonably use AVPlayer objects in accordance with actual service requirements, create them
+> on demand, and release them in a timely manner. This avoids excessive memory consumption caused by holding too
+> many AVPlayer instances, which may result in the system terminating the application.
 
 **Since:** 9
 
-**Atomic service API:** From API version 11 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -61,13 +94,13 @@ function createAVPlayer(): Promise<AVPlayer>
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVPlayer> | Promise对象。成功时异步返回AVPlayer实例，可用于音视频播放。失败时返回null。 |
+| Promise&lt;AVPlayer&gt; | Promise used to return the result. If the operation is successful, an AVPlayerinstance is returned for audio and video playback. Otherwise, **null** is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 5400101 | No memory. Return by promise. |
+| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by promise. |
 
 **Example**
 

@@ -6,7 +6,11 @@
 function getDomainFilterRules(admin: Want): Array<DomainFilterRule>
 ```
 
-查询设备域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md#logtype)。
+查询设备域名过滤规则。
+
+API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。
+
+从API version 23开始，支持[LogType](arkts-mdm-logtype-e.md)。
 
 **起始版本：** 12
 
@@ -35,7 +39,7 @@ function getDomainFilterRules(admin: Want): Array<DomainFilterRule>
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-应用没有激活成设备管理器) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

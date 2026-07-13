@@ -12,7 +12,11 @@ Sets the alignment method of the stack layout algorithm.
 alignContent?: LocalizedAlignment
 ```
 
-Alignment mode of child components in the stack layout algorithm. Default value: **LocalizedAlignment.CENTER** Invalid values are treated as the default value.
+Alignment mode of child components in the stack layout algorithm.
+
+Default value: **LocalizedAlignment.CENTER**
+
+Invalid values are treated as the default value.
 
 **Type:** LocalizedAlignment
 

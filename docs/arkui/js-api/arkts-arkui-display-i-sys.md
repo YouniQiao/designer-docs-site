@@ -1,6 +1,10 @@
 # Display
 
-Implements a Display instance, with attributes and APIs defined. Before calling any API in Display, you must use [getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or [getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
+Implements a Display instance, with attributes and APIs defined.
+
+Before calling any API in Display, you must use
+[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1) or
+[getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1) to obtain a Display instance.
 
 **Since:** 7
 
@@ -9,7 +13,7 @@ Implements a Display instance, with attributes and APIs defined. Before calling 
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## hasImmersiveWindow
@@ -18,7 +22,8 @@ import { display } from '@ohos.display';
 hasImmersiveWindow(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether this display contains an immersive window. This API uses an asynchronous callback to return the result.
+Checks whether this display contains an immersive window. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 11
 
@@ -48,14 +53,16 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { display } from '@kit.ArkUI';
 
 let displayClass: display.Display | null = null;
+// Obtain the default Display object.
 displayClass = display.getDefaultDisplaySync();
-displayClass.hasImmersiveWindow((err: BusinessError, data) => {
-    const errCode: number = err.code;
-    if (errCode) {
-      console.error(`Failed to check whether there is immersive window. Code: ${err.code} , message : ${err.message}`);
-      return;
-    }
-    console.info(`Succeeded in checking whether there is immersive window. data: ${data}`);
+// Check whether an immersive window is included.
+displayClass.hasImmersiveWindow((err: BusinessError, data: boolean) => {
+  const errCode: number = err.code;
+  if (errCode) {
+    console.error(`Failed to check whether there is immersive window. Code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  console.info(`Succeeded in checking whether there is immersive window. data: ${data}`);
 });
 
 ```
@@ -96,13 +103,15 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { display } from '@kit.ArkUI';
 
 let displayClass: display.Display | null = null;
+// Obtain the default Display object.
 displayClass = display.getDefaultDisplaySync();
+// Check whether an immersive window is included.
 let promise = displayClass.hasImmersiveWindow();
 promise.then((data) => {
   console.info(`Succeeded in checking whether there is immersive window. data: ${data}`);
 }).catch((err: BusinessError) => {
-  console.error(`Failed to check whether there is immersive window. Code: ${err.code} , message: ${err.message}`);
-})
+  console.error(`Failed to check whether there is immersive window. Code: ${err.code}, message: ${err.message}`);
+});
 
 ```
 

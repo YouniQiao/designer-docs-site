@@ -1,6 +1,7 @@
 # FormExtensionAbility
 
-Widget extension class. It provides APIs to notify the widget provider that a widget is being created or the widget visibility status is being changed.
+Widget extension class. It provides APIs to notify the widget provider that a widget is being created or the widget
+visibility status is being changed.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Widget extension class. It provides APIs to notify the widget provider that a wi
 ## Modules to Import
 
 ```TypeScript
-import { FormExtensionAbility } from '@ohos.app.form.FormExtensionAbility';
+import { FormExtensionAbility } from '@kit.FormKit';
 ```
 
 ## onAcquireFormData
@@ -38,8 +39,8 @@ Called when the system acquire the form data.
 
 | Type | Description |
 | --- | --- |
-| object | Returns the wantParams object.<br>**Applicable version:** 10 |
-| Record&lt;string, Object&gt; | Returns the wantParams object.<br>**Applicable version:** 11 |
+| object | Returns the wantParams object.<br>**Applicable version:** 10 and later |
+| Record&lt;string, Object&gt; | Returns the wantParams object.<br>**Applicable version:** 11 and later |
 
 ## onShareForm
 
@@ -68,5 +69,5 @@ Called when the system shares the form.
 | Type | Description |
 | --- | --- |
 | object | Returns the wantParams object.<br>**Applicable version:** 9 - 10 |
-| Record&lt;string, Object&gt; | Returns the wantParams object.<br>**Applicable version:** 11 |
+| Record&lt;string, Object&gt; | Returns the wantParams object.<br>**Applicable version:** 11 and later |
 

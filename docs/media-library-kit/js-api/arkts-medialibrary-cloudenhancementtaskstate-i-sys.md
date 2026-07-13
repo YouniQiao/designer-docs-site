@@ -1,6 +1,7 @@
 # CloudEnhancementTaskState (System API)
 
-Represents the cloud enhancement task information, which includes the cloud enhancement task state and other information related to certain states.
+Represents the cloud enhancement task information,
+which includes the cloud enhancement task state and other information related to certain states.
 
 **Since:** 13
 
@@ -11,7 +12,7 @@ Represents the cloud enhancement task information, which includes the cloud enha
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## expectedDuration

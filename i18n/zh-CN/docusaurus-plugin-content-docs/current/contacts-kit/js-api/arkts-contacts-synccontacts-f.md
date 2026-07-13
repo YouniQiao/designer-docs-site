@@ -6,7 +6,9 @@
 function syncContacts(context: Context, mode: ContactSyncMode, progress: ContactSyncProgress, contacts: Array<Contact>): Promise<Array<number>>
 ```
 
-批量同步多个联系人至联系人数据库。 最多可批量同步400个联系人。调用方必须处于前台。
+批量同步多个联系人至联系人数据库。
+
+最多可批量同步400个联系人。调用方必须处于前台。
 
 **起始版本：** 26.0.0
 

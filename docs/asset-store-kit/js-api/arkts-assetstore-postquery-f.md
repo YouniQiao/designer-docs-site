@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { asset } from '@ohos.security.asset';
+import { asset } from '@kit.AssetStoreKit';
 ```
 
 ## postQuery
@@ -12,7 +12,9 @@ import { asset } from '@ohos.security.asset';
 function postQuery(handle: AssetMap): Promise<void>
 ```
 
-Performs postprocessing for the asset query. This API is used when user authentication is required for the access to an asset. This API must be used with [asset.preQuery](arkts-assetstore-prequery-f.md#prequery-1) together. This API uses a promise to return the result.
+Performs postprocessing for the asset query. This API is used when user authentication is required for the access
+to an asset. This API must be used with [asset.preQuery](arkts-assetstore-prequery-f.md#prequery-1) together.
+This API uses a promise to return the result.
 
 **Since:** 11
 

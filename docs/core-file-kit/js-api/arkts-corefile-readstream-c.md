@@ -1,8 +1,13 @@
 # ReadStream
 
-Defines a readable stream. You need to use [fileIo.createReadStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) to create a **ReadStream** instance, which is inherited from [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readableoptions-i.md#readableoptions). The data obtained by **ReadStream** is a decoded string. Currently, only the UTF-8 format is supported.
+Defines a readable stream. You need to use
+[fileIo.createReadStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) to
+create a **ReadStream** instance, which is inherited from
+[stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readableoptions-i.md).
 
-**Inheritance/Implementation:** ReadStream extends [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readable-c.md#readable)
+The data obtained by **ReadStream** is a decoded string. Currently, only the UTF-8 format is supported.
+
+**Inheritance/Implementation:** ReadStream extends [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readable-c.md)
 
 **Since:** 12
 
@@ -11,7 +16,7 @@ Defines a readable stream. You need to use [fileIo.createReadStream](../../../..
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## close

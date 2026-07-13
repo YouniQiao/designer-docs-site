@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## unregisterDeviceSelectCallback
@@ -12,7 +12,9 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 function unregisterDeviceSelectCallback(): void
 ```
 
-Unregisters the callback for companion device selection.
+Unregisters a callback for companion device selection. After the callback is unregistered, the system will no
+longer invoke the device selection callback registered by the application, and the device selection will fall
+back to the default system behavior.
 
 **Since:** 23
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## getAllPublicCertificates
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function getAllPublicCertificates() : Promise<CMResult>
 ```
 
-Obtains the public credentials of all users. This API is called only by the certificate management application. This API uses a promise to return the result.
+Obtains the public credentials of all users. This API is called only by the certificate management application.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -28,7 +29,7 @@ Obtains the public credentials of all users. This API is called only by the cert
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **credentialDetailList** inthe [CMResult](arkts-devicecertificate-cmresult-i.md#cmresult) object.<br>Note: If the number of public credentials is 0, the value of **CMResult** is **undefined**. |
+| Promise&lt;CMResult&gt; | Promise used to return the operation result, that is, **credentialDetailList** inthe [CMResult](arkts-devicecertificate-cmresult-i.md) object.<br>Note: If the number of public credentials is 0, the value of **CMResult** is **undefined**. |
 
 **Error codes:**
 

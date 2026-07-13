@@ -12,7 +12,9 @@ PasswordIcon对象。
 offIconSrc?: string | Resource
 ```
 
-密码输入模式时，能够切换密码不可见时显示的图标。 string格式可用于加载网络图片和本地图片。
+密码输入模式时，能够切换密码不可见时显示的图标。
+
+string格式可用于加载网络图片和本地图片。
 
 **类型：** string | Resource
 
@@ -30,7 +32,9 @@ offIconSrc?: string | Resource
 onIconSrc?: string | Resource
 ```
 
-密码输入模式时，能够切换密码可见时显示的图标。 string格式可用于加载网络图片和本地图片。
+密码输入模式时，能够切换密码可见时显示的图标。
+
+string格式可用于加载网络图片和本地图片。
 
 **类型：** string | Resource
 

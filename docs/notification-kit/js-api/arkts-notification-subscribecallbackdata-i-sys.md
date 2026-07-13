@@ -14,7 +14,8 @@ Notification information that carries the system property value.
 readonly notificationClassification?: NotificationClassification
 ```
 
-Notification classification information. Only exists if the [NotificationSubscribeInfo.enableClassification](arkts-notification-notificationsubscribeinfo-i-sys.md#enableclassification) is true.
+Notification classification information. Only exists if the
+[NotificationSubscribeInfo.enableClassification](arkts-notification-notificationsubscribeinfo-i-sys.md#enableclassification) is true.
 
 **Type:** NotificationClassification
 
@@ -32,7 +33,9 @@ Notification classification information. Only exists if the [NotificationSubscri
 readonly reason?: number
 ```
 
-Reason for deletion. The options are as follows: **1**: The notification is deleted after being clicked. **2**: The notification is deleted by the user.
+Reason for deletion. The options are as follows:
+**1**: The notification is deleted after being clicked.
+**2**: The notification is deleted by the user.
 
 **Type:** number
 
@@ -112,7 +115,8 @@ Vibration used for notification.
 readonly voiceContent?: VoiceContent
 ```
 
-Generated voice content for audio playback. Only present when voiceContentoptions.enabled is true in NotificationSubscribeInfo.
+Generated voice content for audio playback.
+Only present when voiceContentoptions.enabled is true in NotificationSubscribeInfo.
 
 **Type:** VoiceContent
 

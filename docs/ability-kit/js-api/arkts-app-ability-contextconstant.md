@@ -1,6 +1,7 @@
 # @ohos.app.ability.contextConstant
 
-ContextConstant提供Context相关的枚举，包含文件加密分区等级、UIAbility启动后的进程模式等。
+The ContextConstant module defines context-related enums, including the file encryption partition level and process
+mode of the UIAbility after it is started.
 
 **Since:** 9
 
@@ -18,9 +19,17 @@ import { contextConstant } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [AreaMode](arkts-contextconstant-areamode-e.md) | 文件加密分区等级，保证应用在不同场景下的数据安全。开发者可以根据应用的具体需求选择合适的加密等级，以保护用户的数据安全。 |
-| [ContextType](arkts-contextconstant-contexttype-e.md) | 上下文类型 |
-| [ProcessMode](arkts-contextconstant-processmode-e.md) | UIAbility启动后的进程模式。 ProcessMode作为[StartOptions]{@link @ohos.app.ability.StartOptions:StartOptions}的一个属性，仅在 [UIAbilityContext.startAbility]{@link ./application/UIAbilityContext:UIAbilityContext.startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>)} 中生效，用来指定目标UIAbility的进程模式。 该功能仅在2in1和Tablet设备上生效，在其他设备中返回801错误码。 |
-| [Scenarios](arkts-contextconstant-scenarios-e.md) | 表示不触发[onNewWant]{@link @ohos.app.ability.UIAbility:UIAbility#onNewWant}生命周期回调场景的枚举，用于 [setOnNewWantSkipScenarios]{@link ./application/UIAbilityContext:UIAbilityContext.setOnNewWantSkipScenarios}接口。 |
-| [StartupVisibility](arkts-contextconstant-startupvisibility-e.md) | UIAbility启动后是否可见。 当用户设置目标UIAbility为不可见时，目标UIAbility的窗口不会显示在前台，dock栏也不会有图标，同时目标UIAbility的onForeground生命周期不会被调用。 StartupVisibility作为[StartOptions]{@link @ohos.app.ability.StartOptions:StartOptions}的一个属性，仅在 [UIAbilityContext.startAbility]{@link ./application/UIAbilityContext:UIAbilityContext.startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>)} 中生效，用来指定目标UIAbility启动后的可见性。 该功能仅在2in1和Tablet设备上生效，在其他设备中返回801错误码。 |
+| [AreaMode](arkts-ability-areamode-e.md) | Enumerates the file encryption levels, which are used to ensure data security for applications across differentscenarios. You can select the appropriate encryption level based on the application requirements to protect userdata. |
+| [ContextType](arkts-ability-contexttype-e.md) | Context type |
+| [ProcessMode](arkts-ability-processmode-e.md) | Enumerates the process modes of the UIAbility after it is started.As a property of [StartOptions](arkts-ability-startoptions-c.md), **ProcessMode** takes effectonly in[UIAbilityContext.startAbility](arkts-ability-uiabilitycontext-c.md#startability-2) and is used to specify the process mode of the target UIAbility.This value takes effect only on 2-in-1 devices and tablets. If it is used on other devices, error code 801 isreturned. |
+| [Scenarios](arkts-ability-scenarios-e.md) | Enumerates the scenarios where the [onNewWant](arkts-ability-uiability-c.md#onnewwant-1) lifecyclecallback is not triggered. It is used in the[setOnNewWantSkipScenarios](arkts-ability-uiabilitycontext-c.md#setonnewwantskipscenarios-1) API. |
+| [StartupVisibility](arkts-ability-startupvisibility-e.md) | Enumerates the visibility statuses of the UIAbility after it is started.If the target UIAbility is set to invisible, the window of the target UIAbility is not displayed in the foreground, there is no icon in the dock, and the **onForeground** lifecycle of the target UIAbility is not triggered.As a property of [StartOptions](arkts-ability-startoptions-c.md), **StartupVisibility** takeseffect only in[UIAbilityContext.startAbility](arkts-ability-uiabilitycontext-c.md#startability-2) and specifies the visibility of the target UIAbility after it is started.This value takes effect only on 2-in-1 devices and tablets. If it is used on other devices, error code 801 isreturned. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ContextType](arkts-ability-contexttype-e-sys.md) | Context type |
+<!--DelEnd-->
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArcSliderLayoutOptions,ArcSliderValueOptionsConstructorOptions,ArcSliderValueOptions,ArcSliderStyleOptionsConstructorOptions,ArcSlider,ArcSliderLayoutOptionsConstructorOptions,ArcSliderOptions,ArcSliderStyleOptions,ArcSliderPosition,ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
+import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,31 +12,37 @@ import { ArcSliderLayoutOptions,ArcSliderValueOptionsConstructorOptions,ArcSlide
 
 | Name | Description |
 | --- | --- |
-| [ArcSliderLayoutOptions](arkts-arcsliderlayoutoptions-c.md) | 配置弧形Slider的布局信息。 |
-| [ArcSliderOptions](arkts-arcslideroptions-c.md) | 配置弧形Slider的信息。 |
-| [ArcSliderStyleOptions](arkts-arcsliderstyleoptions-c.md) | 配置弧形Slider的样式信息。 |
-| [ArcSliderValueOptions](arkts-arcslidervalueoptions-c.md) | 配置弧形Slider的数值信息。 |
+| [ArcSliderLayoutOptions](arkts-arkui-arcsliderlayoutoptions-c.md) | Defines the layout of the arc slider. |
+| [ArcSliderOptions](arkts-arkui-arcslideroptions-c.md) | Defines the properties of the arc slider. |
+| [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md) | Defines the style of the arc slider. |
+| [ArcSliderValueOptions](arkts-arkui-arcslidervalueoptions-c.md) | Defines the value of the arc slider. |
+
+### Structs
+
+| Name | Description |
+| --- | --- |
+| [ArcSlider](arkts-arkui-arcslider-s.md) | The **ArcSlider** component is designed for circular screens on wearables to quickly adjust settings, such as the volume and brightness.&gt; **NOTE** |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ArcSliderLayoutOptionsConstructorOptions](arkts-arcsliderlayoutoptionsconstructoroptions-i.md) | ArcSliderLayoutValueOptions的构造信息。 |
-| [ArcSliderOptionsConstructorOptions](arkts-arcslideroptionsconstructoroptions-i.md) | ArcSliderOptions的构造信息。 |
-| [ArcSliderStyleOptionsConstructorOptions](arkts-arcsliderstyleoptionsconstructoroptions-i.md) | ArcSliderStyleOptions的构造信息。 |
-| [ArcSliderValueOptionsConstructorOptions](arkts-arcslidervalueoptionsconstructoroptions-i.md) | ArcSliderValueOptions的构造信息。 |
+| [ArcSliderLayoutOptionsConstructorOptions](arkts-arkui-arcsliderlayoutoptionsconstructoroptions-i.md) | Defines the construction information for **ArcSliderLayoutValueOptions**. |
+| [ArcSliderOptionsConstructorOptions](arkts-arkui-arcslideroptionsconstructoroptions-i.md) | Defines the constructor information for **ArcSliderOptions**. |
+| [ArcSliderStyleOptionsConstructorOptions](arkts-arkui-arcsliderstyleoptionsconstructoroptions-i.md) | Defines the constructor information for **ArcSliderStyleOptions**. |
+| [ArcSliderValueOptionsConstructorOptions](arkts-arkui-arcslidervalueoptionsconstructoroptions-i.md) | Defines the constructor information for **ArcSliderValueOptions**. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ArcSliderPosition](arkts-arcsliderposition-e.md) | 配置弧形Slider的屏幕显示位置。 |
+| [ArcSliderPosition](arkts-arkui-arcsliderposition-e.md) | Defines the position of the arc slider on the screen. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ArcSliderChangeHandler](arkts-arcsliderchangehandler-t.md) | 弧形Slider的进度值发生变化时，告知应用。 |
-| [ArcSliderEnlargeHandler](arkts-arcsliderenlargehandler-t.md) | 弧形Slider放大或缩小时，告知应用。 |
-| [ArcSliderTouchHandler](arkts-arcslidertouchhandler-t.md) | 弧形Slider被触摸时，告知应用。 |
+| [ArcSliderChangeHandler](arkts-arkui-arcsliderchangehandler-t.md) | Defines the callback invoked to notify the application when the progress value of the arc slider changes. |
+| [ArcSliderEnlargeHandler](arkts-arkui-arcsliderenlargehandler-t.md) | Defines the callback invoked to notify the application when the arc slider is enlarged or reduced. |
+| [ArcSliderTouchHandler](arkts-arkui-arcslidertouchhandler-t.md) | Defines the callback invoked to notify the application when the arc slider is touched. |
 

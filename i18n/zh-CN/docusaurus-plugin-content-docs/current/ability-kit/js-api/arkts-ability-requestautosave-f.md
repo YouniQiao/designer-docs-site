@@ -6,7 +6,8 @@
 export function requestAutoSave(context: UIContext, callback?: AutoSaveCallback): void
 ```
 
-请求保存表单数据。使用callback异步回调。 如果当前表单没有提供表单切换的功能，可以通过此接口保存历史表单输入数据，保存请求完成时会触发该回调。
+请求保存表单数据。使用callback异步回调。
+如果当前表单没有提供表单切换的功能，可以通过此接口保存历史表单输入数据，保存请求完成时会触发该回调。
 
 **起始版本：** 11
 
@@ -27,7 +28,7 @@ export function requestAutoSave(context: UIContext, callback?: AutoSaveCallback)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Possible causes: 1. Get instance id failed;<br>2. Parse instance id failed; 3. The second parameter is not of type callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameter check failed. Possible causes: 1. Get instance id failed;<br>2. Parse instance id failed; 3. The second parameter is not of type callback. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 **示例：**

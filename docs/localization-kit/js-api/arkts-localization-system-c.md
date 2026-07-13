@@ -1,6 +1,7 @@
 # System
 
-Provides system attribute configuration functions, including translating language and country/region names, obtaining the list of supported languages and countries/regions, and obtaining the system language and region.
+Provides system attribute configuration functions, including translating language and country/region names,
+obtaining the list of supported languages and countries/regions, and obtaining the system language and region.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Provides system attribute configuration functions, including translating languag
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## getAppPreferredLanguage
@@ -235,7 +236,8 @@ let preferredLanguageList: Array<string> = i18n.System.getPreferredLanguageList(
 static getSimplifiedLanguage(language?: string): string
 ```
 
-Obtains the simplified representation of a language. For example, the simplified representation of **en-Latn-US** is **en**, and that of **en-Latn-GB** is **en-GB**.
+Obtains the simplified representation of a language. For example, the simplified representation of **en-Latn-US**
+is **en**, and that of **en-Latn-GB** is **en-GB**.
 
 **Since:** 15
 
@@ -335,7 +337,10 @@ try {
 static getSystemLanguage(): string
 ```
 
-Obtains the current system language. To listen for system language changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed) . For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system language. To listen for system language changes, enable listening for
+[COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed)
+. For details, see
+[System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 9
 
@@ -366,7 +371,8 @@ let systemLanguage: string = i18n.System.getSystemLanguage(); // If the system l
 static getSystemLanguages(): Array<string>
 ```
 
-Obtains the list of system languages. Since API version 11, this API is supported in ArkTS widgets.
+Obtains the list of system languages.
+Since API version 11, this API is supported in ArkTS widgets.
 
 **Since:** 9
 
@@ -429,7 +435,10 @@ let systemLocale: string = i18n.System.getSystemLocale(); // If the system langu
 static getSystemLocaleInstance(): Intl.Locale
 ```
 
-Obtains the current system locale. To listen for system locale changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed) . For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system locale. To listen for system locale changes, enable listening for
+[COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed)
+. For details, see
+[System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 20
 
@@ -458,7 +467,10 @@ let systemLocale: Intl.Locale = i18n.System.getSystemLocaleInstance();
 static getSystemRegion(): string
 ```
 
-Obtains the current system country/region. To listen for system region changes, enable listening for [COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed) . For details, see [System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
+Obtains the current system country/region. To listen for system region changes, enable listening for
+[COMMON_EVENT_LOCALE_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_locale_changed)
+. For details, see
+[System Language and Region](../../../../internationalization/i18n-system-language-region.md#how-to-develop).
 
 **Since:** 9
 
@@ -593,7 +605,9 @@ let usingLocalDigit: boolean = i18n.System.getUsingLocalDigit();
 static is24HourClock(): boolean
 ```
 
-Checks whether the 24-hour clock is used. To listen for system time format changes, enable listening for [COMMON_EVENT_TIME_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_time_changed) . For details, see [User Preference](../../../../internationalization/i18n-user-preferences.md#how-to-develop).
+Checks whether the 24-hour clock is used. To listen for system time format changes, enable listening for
+[COMMON_EVENT_TIME_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_time_changed)
+. For details, see [User Preference](../../../../internationalization/i18n-user-preferences.md#how-to-develop).
 
 **Since:** 9
 
@@ -624,7 +638,8 @@ let is24HourClock: boolean = i18n.System.is24HourClock(); // If the 24-hour cloc
 static isSuggested(language: string, region?: string): boolean
 ```
 
-Checks whether a language is a suggested language in the specified region. It can be used for region-based language recommendation or language-based region recommendation.
+Checks whether a language is a suggested language in the specified region. It can be used for region-based
+language recommendation or language-based region recommendation.
 
 **Since:** 9
 
@@ -674,7 +689,9 @@ try {
 static setAppPreferredLanguage(language: string): void
 ```
 
-Sets the preferred language of the application. Resources are loaded in the preferred language when the application is launched. If the preferred language is set to **default**, the application's language will be the same as the system language, and the setting will take effect upon cold starting of the application.
+Sets the preferred language of the application. Resources are loaded in the preferred language when the
+application is launched. If the preferred language is set to **default**, the application's language will be the
+same as the system language, and the setting will take effect upon cold starting of the application.
 
 **Since:** 11
 

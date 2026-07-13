@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { startupManager } from '@ohos.app.appstartup.startupManager';
+import { startupManager } from '@kit.AbilityKit';
 ```
 
 ## removeAllStartupTaskResults
@@ -12,7 +12,9 @@ import { startupManager } from '@ohos.app.appstartup.startupManager';
 function removeAllStartupTaskResults(): void
 ```
 
-Removes all startup task results. If there are preloading tasks for .so files, the corresponding .so files is set to the unloaded state. However, .so files that have already been loaded in the cache will not be removed.
+Removes all startup task results.
+If there are preloading tasks for .so files, the corresponding .so files is set to the unloaded state. However, .so
+files that have already been loaded in the cache will not be removed.
 
 **Since:** 12
 

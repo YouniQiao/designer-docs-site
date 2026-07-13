@@ -4,7 +4,8 @@
 declare type CustomBuilderWithId = (id: number) => void
 ```
 
-Defines a type that can be used for component attributes and method parameters to customize the UI description and generate custom components with a specific component ID.
+Defines a type that can be used for component attributes and method parameters to customize the UI description and
+generate custom components with a specific component ID.
 
 **Since:** 18
 

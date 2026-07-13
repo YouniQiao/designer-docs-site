@@ -2,6 +2,7 @@
 
 Defines WithTheme Logic Component Instance.
 
+
 ## Summary
 
 - [WithThemeOptions](arkts-arkui-withtheme-withthemeoptions-i.md)

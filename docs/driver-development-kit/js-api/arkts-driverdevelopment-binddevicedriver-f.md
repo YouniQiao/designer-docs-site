@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.driver.deviceManager';
+import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
 ## bindDeviceDriver
@@ -13,7 +13,9 @@ function bindDeviceDriver(deviceId: number, onDisconnect: AsyncCallback<number>,
     callback: AsyncCallback<RemoteDeviceDriver>): void
 ```
 
-Binds a peripheral device based on the device information returned by **queryDevices()**. You need to use [deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device information and device.
+Binds a peripheral device based on the device information returned by **queryDevices()**.
+You need to use [deviceManager.queryDevices()](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device
+information and device.
 
 **Since:** 11
 
@@ -31,7 +33,7 @@ Binds a peripheral device based on the device information returned by **queryDev
 | --- | --- | --- | --- |
 | deviceId | number | Yes | Device ID, which can be obtained via **queryDevices()**. |
 | onDisconnect | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. When the bound device isdisconnected, the value of **err** is **undefined** and the value of **data** is the ID of the unbound device.Otherwise, **err** is an error object. |
-| callback | AsyncCallback&lt;RemoteDeviceDriver&gt; | Yes | Callback used to return the result. When the device driveris successfully bound, **err** is **undefined** and **data** is a[RemoteDeviceDriver](arkts-driverdevelopment-remotedevicedriver-i.md#remotedevicedriver) object that contains the device ID and remoteobject. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;RemoteDeviceDriver&gt; | Yes | Callback used to return the result. When the device driveris successfully bound, **err** is **undefined** and **data** is a[RemoteDeviceDriver](arkts-driverdevelopment-remotedevicedriver-i.md) object that contains the device ID and remoteobject. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -71,7 +73,10 @@ try {
 function bindDeviceDriver(deviceId: number, onDisconnect: AsyncCallback<number>): Promise<RemoteDeviceDriver>
 ```
 
-Binds a peripheral device based on the device information returned by **queryDevices()**. This API uses a promise to return the result. You need to use [deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device information and device.
+Binds a peripheral device based on the device information returned by **queryDevices()**. This API uses a promise
+to return the result.
+You need to use [deviceManager.queryDevices](arkts-driverdevelopment-querydevices-f.md#querydevices-1) to obtain the peripheral device
+information and device.
 
 **Since:** 11
 

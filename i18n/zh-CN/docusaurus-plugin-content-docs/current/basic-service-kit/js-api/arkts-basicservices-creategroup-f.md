@@ -6,7 +6,8 @@
 function createGroup(config: GroupConfig): Promise<string>
 ```
 
-根据[GroupConfig](arkts-basicservices-groupconfig-i.md#groupconfig)分组条件创建分组 ，并返回分组id。使用Promise异步回调。
+根据[GroupConfig](arkts-basicservices-groupconfig-i.md)分组条件创建分组
+，并返回分组id。使用Promise异步回调。
 
 **起始版本：** 15
 
@@ -28,6 +29,6 @@ function createGroup(config: GroupConfig): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed. |
 | [13400003](../../apis-basic-services-kit/errorcode-request.md#13400003-服务异常) | Task service ability error. |
 

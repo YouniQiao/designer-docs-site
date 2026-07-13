@@ -1,6 +1,17 @@
 # Canvas
 
-A carrier that carries the drawn content and drawing status. > **NOTE** > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions. > > > The canvas comes with a default brush. The brush is black, has anti-aliasing enabled, and has no other style > effects. This default brush is used when no brush or pen is actively set in the canvas.
+A carrier that carries the drawn content and drawing status.
+
+> **NOTE**
+>
+> - This module uses the physical pixel unit, px.
+>
+> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
+> transitions.
+>
+>
+> The canvas comes with a default brush. The brush is black, has anti-aliasing enabled, and has no other style
+> effects. This default brush is used when no brush or pen is actively set in the canvas.
 
 **Since:** 11
 
@@ -9,7 +20,7 @@ A carrier that carries the drawn content and drawing status. > **NOTE** > > - Th
 ## Modules to Import
 
 ```TypeScript
-import { drawing } from '@ohos.graphics.drawing';
+import { drawing } from '@kit.ArkGraphics2D';
 ```
 
 ## attachBrush
@@ -18,7 +29,13 @@ import { drawing } from '@ohos.graphics.drawing';
 attachBrush(brush: Brush): void
 ```
 
-Attaches a brush to the canvas. When you draw on the canvas, the brush's style is used to fill the interior of shapes. > **NOTE** > > If the brush effect changes after this API is called, you must call the API again if you want to use the new > effect in the subsequent drawing.
+Attaches a brush to the canvas. When you draw on the canvas, the brush's style is used to fill the interior of
+shapes.
+
+> **NOTE**
+>
+> If the brush effect changes after this API is called, you must call the API again if you want to use the new
+> effect in the subsequent drawing.
 
 **Since:** 11
 
@@ -42,7 +59,12 @@ Attaches a brush to the canvas. When you draw on the canvas, the brush's style i
 attachPen(pen: Pen): void
 ```
 
-Attaches a pen to the canvas. When you draw on the canvas, the pen's style is used to outline shapes. > **NOTE** > > If the pen effect changes after this API is called, you must call the API again if you want to use the new > effect in the subsequent drawing.
+Attaches a pen to the canvas. When you draw on the canvas, the pen's style is used to outline shapes.
+
+> **NOTE**
+>
+> If the pen effect changes after this API is called, you must call the API again if you want to use the new
+> effect in the subsequent drawing.
 
 **Since:** 11
 
@@ -66,7 +88,8 @@ Attaches a pen to the canvas. When you draw on the canvas, the pen's style is us
 clear(color: common2D.Color): void
 ```
 
-Clears the canvas with a given color. This API has the same effect as [drawColor](arkts-arkgraphics2d-canvas-c.md#drawcolor-1).
+Clears the canvas with a given color. This API has the same effect as
+[drawColor](arkts-arkgraphics2d-canvas-c.md#drawcolor-1).
 
 **Since:** 12
 
@@ -211,7 +234,9 @@ Clips a rounded rectangle on the canvas.
 concatMatrix(matrix: Matrix): void
 ```
 
-Multiplies the current canvas matrix by the incoming matrix on the left. This API does not affect previous drawing operations, but subsequent drawing and clipping operations will be influenced by this matrix in terms of shape and position.
+Multiplies the current canvas matrix by the incoming matrix on the left. This API does not affect previous
+drawing operations, but subsequent drawing and clipping operations will be influenced by this matrix in terms of
+shape and position.
 
 **Since:** 12
 
@@ -261,7 +286,8 @@ Creates a **Canvas** object that uses a **PixelMap** as the drawing target.
 detachBrush(): void
 ```
 
-Detaches the brush from the canvas. When you draw on the canvas, the brush is no longer used to fill the interior of shapes.
+Detaches the brush from the canvas. When you draw on the canvas, the brush is no longer used to fill the interior
+of shapes.
 
 **Since:** 11
 
@@ -285,7 +311,8 @@ Detaches the pen from the canvas. When you draw on the canvas, the pen is no lon
 drawArc(arc: common2D.Rect, startAngle: number, sweepAngle: number): void
 ```
 
-Draws an arc on the canvas. with the start angle and sweep angle specified. If the absolute value of the sweep angle exceeds 360 degrees, an ellipse is drawn.
+Draws an arc on the canvas. with the start angle and sweep angle specified. If the absolute value of the sweep
+angle exceeds 360 degrees, an ellipse is drawn.
 
 **Since:** 12
 
@@ -311,7 +338,8 @@ Draws an arc on the canvas. with the start angle and sweep angle specified. If t
 drawArcWithCenter(arc: common2D.Rect, startAngle: number, sweepAngle: number, useCenter: boolean): void
 ```
 
-Draws an arc on the canvas. It enables you to define the start angle, sweep angle, and whether the arc's endpoints should connect to its center.
+Draws an arc on the canvas. It enables you to define the start angle, sweep angle, and whether the arc's
+endpoints should connect to its center.
 
 **Since:** 18
 
@@ -356,7 +384,8 @@ Uses a brush to fill the drawable area of the canvas.
 drawCircle(x: number, y: number, radius: number): void
 ```
 
-Draws a circle. If the radius is less than or equal to zero, nothing is drawn. By default, black is used for filling.
+Draws a circle. If the radius is less than or equal to zero, nothing is drawn. By default, black is used for
+filling.
 
 **Since:** 11
 
@@ -382,7 +411,8 @@ Draws a circle. If the radius is less than or equal to zero, nothing is drawn. B
 drawColor(color: common2D.Color, blendMode?: BlendMode): void
 ```
 
-Fills the drawable area of the canvas with the specified color and [BlendMode](arkts-arkgraphics2d-blendmode-e.md#blendmode).
+Fills the drawable area of the canvas with the specified color and
+[BlendMode](arkts-arkgraphics2d-blendmode-e.md).
 
 **Since:** 11
 
@@ -407,7 +437,9 @@ Fills the drawable area of the canvas with the specified color and [BlendMode](a
 drawColor(alpha: number, red: number, green: number, blue: number, blendMode?: BlendMode): void
 ```
 
-Fills the drawable area of the canvas with the specified color and [BlendMode](arkts-arkgraphics2d-blendmode-e.md#blendmode). This API provides better performance than [drawColor](arkts-arkgraphics2d-canvas-c.md#drawcolor-1) and is recommended.
+Fills the drawable area of the canvas with the specified color and
+[BlendMode](arkts-arkgraphics2d-blendmode-e.md). This API provides better performance than
+[drawColor](arkts-arkgraphics2d-canvas-c.md#drawcolor-1) and is recommended.
 
 **Since:** 12
 
@@ -435,7 +467,8 @@ Fills the drawable area of the canvas with the specified color and [BlendMode](a
 drawColor(color: number, blendMode?: BlendMode): void
 ```
 
-Fills the drawable area of the canvas with the specified color and [BlendMode](arkts-arkgraphics2d-blendmode-e.md#blendmode).
+Fills the drawable area of the canvas with the specified color and
+[BlendMode](arkts-arkgraphics2d-blendmode-e.md).
 
 **Since:** 18
 
@@ -520,7 +553,14 @@ drawImageLattice(pixelmap: image.PixelMap, lattice: Lattice, dstRect: common2D.R
       filterMode: FilterMode): void
 ```
 
-Splits an image into multiple sections based on the lattice object's configuration and draws each section into the specified target rectangle on the canvas. When this API is used, the anti-aliasing enablement setting does not take effect. The intersections of even-numbered rows and columns (starting from 0) are fixed points. If the fixed lattice area fits within the target rectangle, it will be drawn without scaling. Otherwise, it will be scaled proportionally to fit the target rectangle. Any remaining space will be filled by stretching or compressing the remaining sections to cover the entire target rectangle.
+Splits an image into multiple sections based on the lattice object's configuration and draws each section into
+the specified target rectangle on the canvas. When this API is used, the anti-aliasing enablement setting does
+not take effect.
+
+The intersections of even-numbered rows and columns (starting from 0) are fixed points. If the fixed lattice area
+fits within the target rectangle, it will be drawn without scaling. Otherwise, it will be scaled proportionally
+to fit the target rectangle. Any remaining space will be filled by stretching or compressing the remaining
+sections to cover the entire target rectangle.
 
 **Since:** 18
 
@@ -548,7 +588,13 @@ drawImageNine(pixelmap: image.PixelMap, center: common2D.Rect, dstRect: common2D
       filterMode: FilterMode): void
 ```
 
-Splits an image into nine sections using two horizontal and two vertical lines: four edge sections, four corner sections, and a central section. When this API is used, the anti-aliasing enablement setting does not take effect. If the four corner sections are smaller than the target rectangle, they will be drawn in the target rectangle without scaling. Otherwise, they will be scaled to fit the target rectangle. Any remaining space will be filled by stretching or compressing the other five sections to cover the entire target rectangle.
+Splits an image into nine sections using two horizontal and two vertical lines: four edge sections, four corner
+sections, and a central section. When this API is used, the anti-aliasing enablement setting does not take
+effect.
+
+If the four corner sections are smaller than the target rectangle, they will be drawn in the target rectangle
+without scaling. Otherwise, they will be scaled to fit the target rectangle. Any remaining space will be filled
+by stretching or compressing the other five sections to cover the entire target rectangle.
 
 **Since:** 18
 
@@ -630,7 +676,8 @@ Draws a portion of an image onto a specified area of the canvas.
 drawLine(x0: number, y0: number, x1: number, y1: number): void
 ```
 
-Draws a line segment from the start point to the end point. If the coordinates of the start point are the same as those of the end point, nothing is drawn.
+Draws a line segment from the start point to the end point. If the coordinates of the start point are the same as
+those of the end point, nothing is drawn.
 
 **Since:** 11
 
@@ -657,7 +704,8 @@ Draws a line segment from the start point to the end point. If the coordinates o
 drawNestedRoundRect(outer: RoundRect, inner: RoundRect): void
 ```
 
-Draws two nested rounded rectangles. The outer rectangle boundary must contain the inner rectangle boundary. Otherwise, there is no drawing effect.
+Draws two nested rounded rectangles. The outer rectangle boundary must contain the inner rectangle boundary.
+Otherwise, there is no drawing effect.
 
 **Since:** 12
 
@@ -731,7 +779,8 @@ drawPixelMapMesh(pixelmap: image.PixelMap, meshWidth: number, meshHeight: number
       vertices: Array<number>, vertOffset: number, colors: Array<number> | null, colorOffset: number): void
 ```
 
-Draws a **PixelMap** based on a mesh, with the mesh vertices evenly distributed across the **PixelMap**. (This API works with brushes but not pens.)
+Draws a **PixelMap** based on a mesh, with the mesh vertices evenly distributed across the **PixelMap**. (This
+API works with brushes but not pens.)
 
 **Since:** 12
 
@@ -786,7 +835,8 @@ Draws a point.
 drawPoints(points: Array<common2D.Point>, mode?: PointMode): void
 ```
 
-Draws a group of points, line segments, or polygons on the canvas, with the specified drawing mode. An array is used to hold these points.
+Draws a group of points, line segments, or polygons on the canvas, with the specified drawing mode. An array is
+used to hold these points.
 
 **Since:** 12
 
@@ -835,7 +885,8 @@ Draws a rectangle. By default, black is used for filling.
 drawRect(left: number, top: number, right: number, bottom: number): void
 ```
 
-Draws a rectangle. By default, black is used for filling. This API provides better performance than [drawRect](arkts-arkgraphics2d-canvas-c.md#drawrect-1) and is recommended.
+Draws a rectangle. By default, black is used for filling. This API provides better performance than
+[drawRect](arkts-arkgraphics2d-canvas-c.md#drawrect-1) and is recommended.
 
 **Since:** 12
 
@@ -972,7 +1023,8 @@ Draws a spot shadow and uses a given path to outline the ambient shadow.
 drawSingleCharacter(text: string, font: Font, x: number, y: number): void
 ```
 
-Draws a single character. If the typeface of the current font does not support the character to draw, the system typeface is used to draw the character.
+Draws a single character. If the typeface of the current font does not support the character to draw, the system
+typeface is used to draw the character.
 
 **Since:** 12
 
@@ -999,7 +1051,8 @@ Draws a single character. If the typeface of the current font does not support t
 drawSingleCharacterWithFeatures(text: string, font: Font, x: number, y: number, features: Array<FontFeature>): void
 ```
 
-Draws a single character with font features. If the typeface of the current font does not support the character to draw, the system typeface is used to draw the character.
+Draws a single character with font features. If the typeface of the current font does not support the character
+to draw, the system typeface is used to draw the character.
 
 **Since:** 20
 
@@ -1027,7 +1080,8 @@ Draws a single character with font features. If the typeface of the current font
 drawTextBlob(blob: TextBlob, x: number, y: number): void
 ```
 
-Draws a text blob. If the typeface used to construct **blob** does not support a character, that character will not be drawn.
+Draws a text blob. If the typeface used to construct **blob** does not support a character, that character will
+not be drawn.
 
 **Since:** 11
 
@@ -1324,7 +1378,8 @@ Restores the canvas state (canvas matrix and clipping area) to a specified numbe
 rotate(degrees: number, sx: number, sy: number) : void
 ```
 
-Applies a rotation matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and clipping operations will automatically have a rotation effect applied to their shapes and positions.
+Applies a rotation matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing
+and clipping operations will automatically have a rotation effect applied to their shapes and positions.
 
 **Since:** 12
 
@@ -1350,7 +1405,8 @@ Applies a rotation matrix on top of the current canvas matrix (identity matrix b
 save(): number
 ```
 
-Saves the canvas states (canvas matrix and drawable area) to the top of the stack. This API must be used in pair with [restore](arkts-arkgraphics2d-canvas-c.md#restore-1).
+Saves the canvas states (canvas matrix and drawable area) to the top of the stack. This API must be used in pair
+with [restore](arkts-arkgraphics2d-canvas-c.md#restore-1).
 
 **Since:** 12
 
@@ -1368,7 +1424,9 @@ Saves the canvas states (canvas matrix and drawable area) to the top of the stac
 saveLayer(rect?: common2D.Rect | null, brush?: Brush | null): number
 ```
 
-Saves the matrix and cropping region of the canvas, and allocates a **PixelMap** for subsequent drawing. If you call [restore](arkts-arkgraphics2d-canvas-c.md#restore-1), changes made to the matrix and clipping region are discarded, and the PixelMap is drawn.
+Saves the matrix and cropping region of the canvas, and allocates a **PixelMap** for subsequent drawing. If you
+call [restore](arkts-arkgraphics2d-canvas-c.md#restore-1), changes made to the matrix and clipping region are discarded, and
+the PixelMap is drawn.
 
 **Since:** 12
 
@@ -1399,7 +1457,8 @@ Saves the matrix and cropping region of the canvas, and allocates a **PixelMap**
 scale(sx: number, sy: number): void
 ```
 
-Applies a scaling matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and clipping operations will automatically have a scaling effect applied to the shapes and positions.
+Applies a scaling matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and
+clipping operations will automatically have a scaling effect applied to the shapes and positions.
 
 **Since:** 12
 
@@ -1424,7 +1483,8 @@ Applies a scaling matrix on top of the current canvas matrix (identity matrix by
 setMatrix(matrix: Matrix): void
 ```
 
-Sets a matrix for the canvas. Subsequent drawing and clipping operations will be affected by this matrix in terms of shape and position.
+Sets a matrix for the canvas. Subsequent drawing and clipping operations will be affected by this matrix in terms
+of shape and position.
 
 **Since:** 12
 
@@ -1448,7 +1508,8 @@ Sets a matrix for the canvas. Subsequent drawing and clipping operations will be
 skew(sx: number, sy: number) : void
 ```
 
-Applies a skewing matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and clipping operations will automatically have a skewing effect applied to the shapes and positions.
+Applies a skewing matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and
+clipping operations will automatically have a skewing effect applied to the shapes and positions.
 
 **Since:** 12
 
@@ -1473,7 +1534,8 @@ Applies a skewing matrix on top of the current canvas matrix (identity matrix by
 translate(dx: number, dy: number): void
 ```
 
-Applies a translation matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing and clipping operations will automatically have a translation effect applied to the shapes and positions.
+Applies a translation matrix on top of the current canvas matrix (identity matrix by default). Subsequent drawing
+and clipping operations will automatically have a translation effect applied to the shapes and positions.
 
 **Since:** 12
 

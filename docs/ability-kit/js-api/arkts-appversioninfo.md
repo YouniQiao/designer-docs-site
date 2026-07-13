@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AppVersionInfo](arkts-appversioninfo-i.md) | 应用版本信息，可以通过 [getAppVersionInfo](docroot://reference/apis-ability-kit/js-apis-inner-app-context.md#contextgetappversioninfo7)获取当前应 用的版本信息。 |
+| [AppVersionInfo](arkts-ability-appversioninfo-depr-i.md) | The module defines the application version information. You can use[getAppVersionInfo](../../../../reference/apis-ability-kit/js-apis-inner-app-context.md#contextgetappversioninfo7) toobtain the version information of the current application. |
 

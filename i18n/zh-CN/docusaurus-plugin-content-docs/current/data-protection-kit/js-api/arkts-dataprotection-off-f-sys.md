@@ -6,7 +6,12 @@
 function off(type: 'uninstallDLPSandbox', listener?: Callback<DLPSandboxState>): void
 ```
 
-取消监听DLP沙箱卸载事件。调用成功后，应用不再接收DLP沙箱卸载事件的回调通知。 必须在调用[on](arkts-dataprotection-on-f-sys.md#on-2)注册监听后才能调用此方法取消 监听。 DLP管理应用退出或不再需要追踪沙箱状态变化时，取消事件订阅以释放监听资源。
+取消监听DLP沙箱卸载事件。调用成功后，应用不再接收DLP沙箱卸载事件的回调通知。
+
+必须在调用[on](arkts-dataprotection-on-f-sys.md#on-2)注册监听后才能调用此方法取消
+监听。
+
+DLP管理应用退出或不再需要追踪沙箱状态变化时，取消事件订阅以释放监听资源。
 
 **起始版本：** 10
 
@@ -29,7 +34,7 @@ function off(type: 'uninstallDLPSandbox', listener?: Callback<DLPSandboxState>):
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

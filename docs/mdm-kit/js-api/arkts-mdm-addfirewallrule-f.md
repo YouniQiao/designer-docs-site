@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## addFirewallRule
@@ -12,7 +12,16 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 function addFirewallRule(admin: Want, firewallRule: FirewallRule): void
 ```
 
-Adds firewall rules for the device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. After a rule with [Action](arkts-mdm-action-e.md#action) set to **ALLOW** is added, a rule with **Action** set to **DENY** is added by default to discard or intercept all network data packets that do not meet the **ALLOW** rule. After the device is restarted, the firewall rules are cleared.
+Adds firewall rules for the device.
+
+In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.
+
+[LogType](arkts-mdm-logtype-e.md) is supported since API version 23.
+
+After a rule with [Action](arkts-mdm-action-e.md) set to **ALLOW** is added, a rule with **Action** set to
+**DENY** is added by default to discard or intercept all network data packets that do not meet the **ALLOW** rule.
+
+After the device is restarted, the firewall rules are cleared.
 
 **Since:** 12
 

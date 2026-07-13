@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## getVisibleWindowInfo
@@ -12,7 +12,8 @@ import { window } from '@ohos.window';
 function getVisibleWindowInfo(): Promise<Array<WindowInfo>>
 ```
 
-Obtains information about visible main windows on the current screen. Visible main windows are main windows that are not returned to the background. This API uses a promise to return the result.
+Obtains information about visible main windows on the current screen. Visible main windows are main windows that
+are not returned to the background. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -33,7 +34,7 @@ Obtains information about visible main windows on the current screen. Visible ma
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API.Possible cause: Need ohos.permission.VISIBLE_WINDOW_INFO permission.<br>**Applicable version:** 18 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API.Possible cause: Need ohos.permission.VISIBLE_WINDOW_INFO permission.<br>**Applicable version:** 18 and later |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, non-system application uses systemAPI.<br>**Applicable version:** 12 - 17 |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Function getVisibleWindowInfo can not work correctly due to limited device capabilities. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally.Possible cause: Internal task error. |

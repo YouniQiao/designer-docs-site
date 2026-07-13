@@ -1,6 +1,6 @@
 # PermissionStateChangeInfo
 
-Indicates the information of permission state change.
+Represents the permission state change details.
 
 **Since:** 18
 
@@ -9,7 +9,7 @@ Indicates the information of permission state change.
 ## Modules to Import
 
 ```TypeScript
-import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## change
@@ -18,7 +18,7 @@ import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAcce
 change: PermissionStateChangeType
 ```
 
-Indicates the permission state change type.
+Operation that triggers the permission state change.
 
 **Type:** PermissionStateChangeType
 
@@ -34,7 +34,8 @@ Indicates the permission state change type.
 permissionName: Permissions
 ```
 
-Indicates the permission whose state has been changed.
+Permissions whose authorization state changes. For details about the permissions, see
+[Application Permissions](../../../../security/AccessToken/app-permissions.md).
 
 **Type:** Permissions
 
@@ -50,7 +51,10 @@ Indicates the permission whose state has been changed.
 tokenID: number
 ```
 
-Indicates the application whose permission state has been changed.
+ID of the subscribed application, which can be obtained through the
+[accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of
+BundleInfo. <br>For BundleInfo acquisition, please refer to:
+[bundleManager.getBundleInfoSync](arkts-ability-getbundleinfosync-f.md#getbundleinfosync-1).
 
 **Type:** number
 

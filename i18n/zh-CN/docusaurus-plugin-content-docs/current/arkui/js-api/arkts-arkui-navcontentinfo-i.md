@@ -12,7 +12,9 @@
 index: number
 ```
 
-NavDestination在NavPathStack中的序号， 如果为根视图(NavBar)，则返回值为 -1。 取值范围：[-1, +∞)。
+NavDestination在NavPathStack中的序号， 如果为根视图(NavBar)，则返回值为 -1。
+
+取值范围：[-1, +∞)。
 
 **类型：** number
 

@@ -2,6 +2,7 @@
 
 Span container interface.
 
+
 ## ContainerSpan
 
 ```TypeScript

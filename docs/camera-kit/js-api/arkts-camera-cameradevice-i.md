@@ -12,114 +12,6 @@ Describes the camera device information.
 import { camera } from '@kit.CameraKit';
 ```
 
-## sensorPhysicalSize
-
-```TypeScript
-readonly sensorPhysicalSize?: Array<double>
-```
-
-Physical dimensions (width and height) of the sensor.
-
-**Type:** Array<double>
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## hostDeviceType
-
-```TypeScript
-readonly hostDeviceType: HostDeviceType
-```
-
-Remote device type.
-
-**Type:** HostDeviceType
-
-**Since:** 10
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## minimumFocusDistance
-
-```TypeScript
-readonly minimumFocusDistance?: double
-```
-
-Minimum focus distance of the camera.
-
-**Type:** double
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## lensFocalLength
-
-```TypeScript
-readonly lensFocalLength?: double
-```
-
-Actual focal length of the lens.
-
-**Type:** double
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## sensorPixelArraySize
-
-```TypeScript
-readonly sensorPixelArraySize?: Array<int>
-```
-
-Pixel array dimensions (width and height, in pixels) of the sensor.
-
-**Type:** Array<int>
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## lensEquivalentFocalLength
-
-```TypeScript
-readonly lensEquivalentFocalLength?: Array<int>
-```
-
-Equivalent focal length of the camera lens.
-
-**Type:** Array<int>
-
-**Since:** 20
-
-**Atomic service API:** From API version 24 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
 ## automotiveCameraPosition
 
 ```TypeScript
@@ -132,111 +24,9 @@ Automotive camera position attribute.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## cameraOrientation
-
-```TypeScript
-readonly cameraOrientation: int
-```
-
-Camera installation angle, which does not change as the screen rotates. The value range is [0, 360], in degrees.
-
-**Type:** int
-
-**Since:** 12
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## connectionType
-
-```TypeScript
-readonly connectionType: ConnectionType
-```
-
-Camera connection type.
-
-**Type:** ConnectionType
-
-**Since:** 10
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## cameraType
-
-```TypeScript
-readonly cameraType: CameraType
-```
-
-Camera type.
-
-**Type:** CameraType
-
-**Since:** 10
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## lensIntrinsicCalibration
-
-```TypeScript
-readonly lensIntrinsicCalibration?: Array<double>
-```
-
-Array of lens internal parameter calibration parameters.
-
-**Type:** Array<double>
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## lensDistortion
-
-```TypeScript
-readonly lensDistortion?: Array<double>
-```
-
-Array of lens distortion parameters.
-
-**Type:** Array<double>
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## constituentCameraDevices
-
-```TypeScript
-readonly constituentCameraDevices?: Array<CameraDevice>
-```
-
-List of physical cameras that form the logical camera.
-
-**Type:** Array<CameraDevice>
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -252,25 +42,23 @@ Camera ID.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## sensorColorFilterArrangement
+## cameraOrientation
 
 ```TypeScript
-readonly sensorColorFilterArrangement?: SensorColorFilterArrangement
+readonly cameraOrientation: number
 ```
 
-Arrangement mode of the sensor color filter.
+Camera installation angle, which does not change as the screen rotates. The value range is [0, 360], in degrees.
 
-**Type:** SensorColorFilterArrangement
+**Type:** number
 
-**Since:** 24
+**Since:** 12
 
-**Model restriction:** This API can be used only in the Stage model.
-
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -286,25 +74,59 @@ Camera position.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## isRetractable
+## cameraType
 
 ```TypeScript
-readonly isRetractable?: boolean
+readonly cameraType: CameraType
 ```
 
-Camera device retractable attribute
+Camera type.
 
-**Type:** boolean
+**Type:** CameraType
 
-**Since:** 18
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-**System API:** This is a system API.
+## connectionType
+
+```TypeScript
+readonly connectionType: ConnectionType
+```
+
+Camera connection type.
+
+**Type:** ConnectionType
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## constituentCameraDevices
+
+```TypeScript
+readonly constituentCameraDevices?: Array<CameraDevice>
+```
+
+List of physical cameras that form the logical camera.
+
+**Type:** Array<CameraDevice>
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## isLogicalCamera
 
@@ -312,33 +134,142 @@ Camera device retractable attribute
 readonly isLogicalCamera?: boolean
 ```
 
-Whether a camera is a logical camera (consisting of multiple physical cameras). **true** if the camera is a logical camera, **false** otherwise.
+Whether a camera is a logical camera (consisting of multiple physical cameras). **true** if the camera is a
+logical camera, **false** otherwise.
 
 **Type:** boolean
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 24.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## hostDeviceName
+## lensDistortion
 
 ```TypeScript
-readonly hostDeviceName: string
+readonly lensDistortion?: Array<number>
 ```
 
-Remote device name. If no remote device is available, an empty value is returned.
+Array of lens distortion parameters.
 
-**Type:** string
+**Type:** Array<number>
 
-**Since:** 10
+**Since:** 24
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-**System API:** This is a system API.
+## lensFocalLength
+
+```TypeScript
+readonly lensFocalLength?: number
+```
+
+Actual focal length of the lens.
+
+**Type:** number
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## lensIntrinsicCalibration
+
+```TypeScript
+readonly lensIntrinsicCalibration?: Array<number>
+```
+
+Array of lens internal parameter calibration parameters.
+
+**Type:** Array<number>
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## minimumFocusDistance
+
+```TypeScript
+readonly minimumFocusDistance?: number
+```
+
+Minimum focus distance of the camera.
+
+**Type:** number
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## sensorColorFilterArrangement
+
+```TypeScript
+readonly sensorColorFilterArrangement?: SensorColorFilterArrangement
+```
+
+Arrangement mode of the sensor color filter.
+
+**Type:** SensorColorFilterArrangement
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## sensorPhysicalSize
+
+```TypeScript
+readonly sensorPhysicalSize?: Array<number>
+```
+
+Physical dimensions (width and height) of the sensor.
+
+**Type:** Array<number>
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## sensorPixelArraySize
+
+```TypeScript
+readonly sensorPixelArraySize?: Array<number>
+```
+
+Pixel array dimensions (width and height, in pixels) of the sensor.
+
+**Type:** Array<number>
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 24.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
 

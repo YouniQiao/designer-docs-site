@@ -12,7 +12,8 @@
 certAlg?: CertAlgorithm
 ```
 
-表示证书算法类型。仅当certType为CA_CERT_SYSTEM时有效，默认值为INTERNATIONAL。 海外设备不支持SM算法。
+表示证书算法类型。仅当certType为CA_CERT_SYSTEM时有效，默认值为INTERNATIONAL。
+海外设备不支持SM算法。
 
 **类型：** CertAlgorithm
 

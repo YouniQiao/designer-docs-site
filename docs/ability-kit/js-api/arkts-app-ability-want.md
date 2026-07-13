@@ -12,5 +12,5 @@ import { Want } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [Want](arkts-want-c.md) | Want是对象间信息传递的载体，可以用于应用组件间的信息传递。 其典型应用场景之一是，当UIAbilityA启动UIAbilityB、并需要传入一些数据时，可使用Want作为载体。例如在startAbility接口的入参want中，可以通过abilityName指定启动的目标Ability，也可以 通过parameters等字段携带其他数据。 |
+| [Want](arkts-ability-want-c.md) | Want is a carrier for information transfer between objects (application components).A typical scenario is when a UIAbility (for example, UIAbility A) needs to launch another UIAbility (for example, UIAbility B) and pass some data along. In this case, a Want can be used as the medium. For example, in the **want** parameter of the **startAbility** API, you can specify the target ability using the **abilityName** field or include additional data via the **parameters** field. |
 

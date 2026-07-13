@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## startShortcut
@@ -12,7 +12,8 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function startShortcut(shortcutInfo: ShortcutInfo, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability based on the specified [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo). This API uses a promise to return the result.
+Starts an ability based on the specified [shortcut information](arkts-ability-shortcutinfo-i.md). This API uses
+a promise to return the result.
 
 **Since:** 12
 

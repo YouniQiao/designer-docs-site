@@ -6,7 +6,8 @@
 function addPortAuthorization(tokenId: string, deviceId: string): Promise<void>
 ```
 
-添加应用访问串口端口的权限 仅面向串口授权弹窗系统应用开放
+添加应用访问串口端口的权限
+仅面向串口授权弹窗系统应用开放
 
 **起始版本：** 26.0.0
 

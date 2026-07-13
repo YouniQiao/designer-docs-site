@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { identifySensitiveContent } from '@ohos.security.identifySensitiveContent';
+import { identifySensitiveContent } from '@kit.DataProtectionKit';
 ```
 
 ## scanFile
@@ -12,7 +12,8 @@ import { identifySensitiveContent } from '@ohos.security.identifySensitiveConten
 function scanFile(filePath: string, identifyPolicies: Array<Policy>): Promise<Array<MatchResult>>
 ```
 
-Identifies sensitive content in a specified file based on the configured policy and returns the identified result array, including the matched sensitivity labels, matched content, and number of matched items. This API uses a promise to return the result.
+Identifies sensitive content in a specified file based on the configured policy and returns the identified result array,
+including the matched sensitivity labels, matched content, and number of matched items. This API uses a promise to return the result.
 
 **Since:** 21
 

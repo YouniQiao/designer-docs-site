@@ -1,6 +1,7 @@
 # CloseSwipeActionOptions
 
-Implements the callbacks and events for the [ListItem](arkts-arkui-listitem.md) in the [expanded](arkts-arkui-swipeactionstate-e.md#swipeactionstate) state.
+Implements the callbacks and events for the [ListItem](arkts-arkui-listitem.md) in the [expanded](arkts-arkui-swipeactionstate-e.md)
+state.
 
 **Since:** 11
 

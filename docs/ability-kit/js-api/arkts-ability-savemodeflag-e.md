@@ -1,6 +1,7 @@
 # SaveModeFlag
 
-Enumerates the application state saving modes. This enum is used as an input parameter of [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1).
+Enumerates the application state saving modes. This enum is used as an input parameter of
+[enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1).
 
 **Since:** 9
 
@@ -26,7 +27,8 @@ The application state is saved and written to the local file cache.
 SAVE_WITH_SHARED_MEMORY = 0x0002
 ```
 
-The application state is saved in the memory. When the application exits due to a fault, it is written to the local file cache.
+The application state is saved in the memory. When the application exits due to a fault, it is written to the
+local file cache.
 
 **Since:** 9
 

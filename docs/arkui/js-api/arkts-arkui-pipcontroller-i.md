@@ -1,6 +1,9 @@
 # PiPController
 
-Implements a PiP controller that starts, stops, or updates a PiP window and registers callbacks. Before calling any of the following APIs, you must use [PiPWindow.create()](arkts-arkui-create-f.md#create-1) to create a PiPController instance.
+Implements a PiP controller that starts, stops, or updates a PiP window and registers callbacks.
+
+Before calling any of the following APIs, you must use
+[PiPWindow.create()](arkts-arkui-create-f.md#create-1) to create a PiPController instance.
 
 **Since:** 11
 
@@ -9,7 +12,7 @@ Implements a PiP controller that starts, stops, or updates a PiP window and regi
 ## Modules to Import
 
 ```TypeScript
-import { PiPWindow } from '@ohos.PiPWindow';
+import { PiPWindow } from '@kit.ArkUI';
 ```
 
 ## getPiPSettingSwitch
@@ -124,7 +127,7 @@ Check whether the PiP window is active. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the PiP window status. **true** is returned if the PiPwindow is visible, and **false** is returned if the PiP window is invisible (hidden in the sidebar). If thisAPI is called when the PiP lifecycle is not [STARTED](arkts-arkui-pipstate-e.md#pipstate), **false** is alwaysreturned. |
+| Promise&lt;boolean&gt; | Promise used to return the PiP window status. **true** is returned if the PiPwindow is visible, and **false** is returned if the PiP window is invisible (hidden in the sidebar). If thisAPI is called when the PiP lifecycle is not [STARTED](arkts-arkui-pipstate-e.md), **false** is alwaysreturned. |
 
 **Error codes:**
 
@@ -186,7 +189,9 @@ this.pipController.off('stateChange');
 off(type: 'controlPanelActionEvent'): void
 ```
 
-Unsubscribes from PiP action events. The **[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)** API is preferred.
+Unsubscribes from PiP action events. The
+**[off('controlEvent')](arkts-arkui-pipcontroller-i.md#off-3)**
+API is preferred.
 
 **Since:** 11
 
@@ -330,7 +335,8 @@ this.pipController.off('activeStatusChange', callback);
 on(type: 'stateChange', callback: (state: PiPState, reason: string) => void): void
 ```
 
-Subscribes to PiP state events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
+Subscribes to PiP state events. To avoid potential memory leaks, you are advised to stop listening when it is no
+longer needed.
 
 **Since:** 11
 
@@ -343,7 +349,7 @@ Subscribes to PiP state events. To avoid potential memory leaks, you are advised
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'stateChange' | Yes | Event type. The value is fixed at **'stateChange'**, indicating that the PiPstate changes. |
-| callback | (state: PiPState, reason: string) =&gt; void | Yes | Callback used to return the result, which includes the following information:<br>-**state**: [PiPState](arkts-arkui-pipstate-e.md#pipstate), indicating the new PiP state.<br>- **reason**: a string indicating the reason for the state change.<br>Before &lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;, the value of **reason** is always **0**,which can be ignored.<br>Since &lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;, **reason**indicates the reason for switching the current lifecycle. The options are as follows:<br>**"requestStart"**: An application calls the **startPip** API.<br>**"autoStart"**: The application is automatically started in PiP modewhen it is switched to the background.<br>**"requestDelete"**: The application calls the **stopPip** API.<br>**"panelActionDelete"**: The user taps the close button in the PiP window.<br>**"dragDelete"**: The user drags the PiP window to delete.<br>**"panelActionRestore"**: The user taps the restore button in the PiPwindow (or taps the PiP window if there is no restore button) to restore the PiP window.<br>**"other"**: Other reasons, such as the current window or application's main window being closeddue to the startup of a new PiP window. |
+| callback | (state: PiPState, reason: string) =&gt; void | Yes | Callback used to return the result, which includes the following information:<br>-**state**: [PiPState](arkts-arkui-pipstate-e.md), indicating the new PiP state.<br>- **reason**: a string indicating the reason for the state change.<br>Before &lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;, the value of **reason** is always **0**,which can be ignored.<br>Since &lt;!--RP1--&gt;OpenHarmony 6.1&lt;!--RP1End--&gt;, **reason**indicates the reason for switching the current lifecycle. The options are as follows:<br>**"requestStart"**: An application calls the **startPip** API.<br>**"autoStart"**: The application is automatically started in PiP modewhen it is switched to the background.<br>**"requestDelete"**: The application calls the **stopPip** API.<br>**"panelActionDelete"**: The user taps the close button in the PiP window.<br>**"dragDelete"**: The user drags the PiP window to delete.<br>**"panelActionRestore"**: The user taps the restore button in the PiPwindow (or taps the PiP window if there is no restore button) to restore the PiP window.<br>**"other"**: Other reasons, such as the current window or application's main window being closeddue to the startup of a new PiP window. |
 
 **Example**
 
@@ -384,7 +390,10 @@ this.pipController.on('stateChange', (state: PiPWindow.PiPState, reason: string)
 on(type: 'controlPanelActionEvent', callback: ControlPanelActionEventCallback): void
 ```
 
-Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed. The [on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3) API is preferred.
+Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no
+longer needed. The
+[on('controlEvent')](arkts-arkui-pipcontroller-i.md#on-3)
+API is preferred.
 
 **Since:** 11
 
@@ -438,7 +447,8 @@ this.pipController.on('controlPanelActionEvent', (event: PiPWindow.PiPActionEven
 on(type: 'controlEvent', callback: Callback<ControlEventParam>): void
 ```
 
-Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
+Subscribes to PiP action events. To avoid potential memory leaks, you are advised to stop listening when it is no
+longer needed.
 
 **Since:** 12
 
@@ -492,7 +502,8 @@ this.pipController.on('controlEvent', (control) => {
 on(type: 'pipWindowSizeChange', callback: Callback<PiPWindowSize>): void
 ```
 
-Subscribes to PiP window size change events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
+Subscribes to PiP window size change events. To avoid potential memory leaks, you are advised to stop listening
+when it is no longer needed.
 
 **Since:** 15
 
@@ -535,7 +546,8 @@ try {
 on(type: 'activeStatusChange', callback: Callback<boolean>): void
 ```
 
-Subscribes to PiP window active status change events. To avoid potential memory leaks, you are advised to stop listening when it is no longer needed.
+Subscribes to PiP window active status change events. To avoid potential memory leaks, you are advised to stop
+listening when it is no longer needed.
 
 **Since:** 22
 
@@ -567,7 +579,12 @@ this.pipController.on('activeStatusChange', callback);
 setAutoStartEnabled(enable: boolean): void
 ```
 
-Sets whether to automatically start the PiP window when the application's main window which can start the PiP window transitions to the background. By default, the PiP window is not automatically started. If the XComponent approach is used to implement PiP and the **Navigation** component is used for route management , the system caches the top stack information with the specified navigation ID upon the first call of **setAutoStartEnabled(true)**.
+Sets whether to automatically start the PiP window when the application's main window which can start the
+PiP window transitions to the background. By default, the PiP window is not automatically started.
+
+If the XComponent approach is used to implement PiP and the **Navigation** component is used for route management
+, the system caches the top stack information with the specified navigation ID upon the first call of
+**setAutoStartEnabled(true)**.
 
 **Since:** 11
 
@@ -653,7 +670,7 @@ Starts a PiP window. This API uses a promise to return the result.
 | [1300013](../errorcode-window.md#1300013-failure-in-creating-a-pip-window) | Failed to create the PiP window. |
 | [1300014](../errorcode-window.md#1300014-pip-internal-error) | PiP internal error. |
 | [1300015](../errorcode-window.md#1300015-repeated-pip-operations) | Repeated PiP operation. |
-| [1300034](../errorcode-window.md#1300034-operation-of-the-float-view-conflicts-with-those-of-other-floating-windows) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**Applicable version:** 26.0.0 |
+| [1300034](../errorcode-window.md#1300034-operation-of-the-float-view-conflicts-with-those-of-other-floating-windows) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**Applicable version:** 26.0.0 and later |
 
 **Example**
 

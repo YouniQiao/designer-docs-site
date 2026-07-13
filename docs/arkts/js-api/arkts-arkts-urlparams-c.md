@@ -9,7 +9,7 @@ The URLParams interface defines some practical methods to process URL query stri
 ## Modules to Import
 
 ```TypeScript
-import { url } from '@ohos.url';
+import { url } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -18,7 +18,9 @@ import { url } from '@ohos.url';
 [Symbol.iterator](): IterableIterator<[string, string]>
 ```
 
-Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and the first and second fields ofeach array are the key and value respectively.
+Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and the first and second fields
+ofeach array are
+the key and value respectively.
 
 **Since:** 9
 
@@ -148,7 +150,8 @@ paramsObject.delete('fod');
 entries(): IterableIterator<[string, string]>
 ```
 
-Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and the first and second fields of each array are the key and value respectively.
+Obtains an ES6 iterator. Each item of the iterator is a JavaScript array, and the first and second fields of
+each array are the key and value respectively.
 
 **Since:** 9
 
@@ -352,7 +355,11 @@ for (let key of keys) {
 set(name: string, value: string): void
 ```
 
-Sets the value for a key. If key-value pairs matching the specified key exist, the value of the first key- value pair will be set to the specified value and other key-value pairs will be deleted. Otherwise, the key-value pair will be appended to the query string.
+Sets the value for a key. If key-value pairs matching the specified key exist, the value of the first key-
+value
+pair will be set to the specified value and other key-value pairs will be deleted. Otherwise, the key-value
+pair
+will be appended to the query string.
 
 **Since:** 9
 
@@ -382,7 +389,9 @@ paramsObject.set('baz', '3'); // Add a third parameter.
 sort(): void
 ```
 
-Sorts all key-value pairs contained in this object based on the Unicode code points of the keys and returns undefined. This method uses a stable sorting algorithm, that is, the relative order between key-value pairs with equal keys is retained.
+Sorts all key-value pairs contained in this object based on the Unicode code points of the keys and returns
+undefined. This method uses a stable sorting algorithm, that is, the relative order between key-value pairs
+with equal keys is retained.
 
 **Since:** 9
 
@@ -405,7 +414,8 @@ console.info(paramsObject.toString()); // Display the sorted query string // Out
 toString(): string
 ```
 
-Obtains search parameters that are serialized as a string and, if necessary, percent-encodes the characters in the string.
+Obtains search parameters that are serialized as a string and, if necessary, percent-encodes the characters
+in the string.
 
 **Since:** 9
 

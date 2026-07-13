@@ -1,6 +1,10 @@
 # CmsRecipientInfo
 
-Represents recipient information encapsulated in CMS data. > **NOTE** > > At least one recipient needs to be set.
+Represents recipient information for the CMS message.
+
+> **NOTE**
+>
+> At least one recipient needs to be set.
 
 **Since:** 22
 
@@ -9,7 +13,7 @@ Represents recipient information encapsulated in CMS data. > **NOTE** > > At lea
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## keyAgreeInfo

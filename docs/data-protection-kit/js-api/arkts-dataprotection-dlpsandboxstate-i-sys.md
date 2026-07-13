@@ -11,7 +11,7 @@ Represents the DLP sandbox state information.
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## appIndex
@@ -20,7 +20,8 @@ import { dlpPermission } from '@ohos.dlpPermission';
 appIndex: number
 ```
 
-Index of the DLP sandbox application. The value range is [1000, 1100]. If the value is out of range, an error log is generated.
+Index of the DLP sandbox application. The value range is [1000, 1100]. If the value is out of range, an error
+log is generated.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ Index of the DLP sandbox application. The value range is [1000, 1100]. If the va
 bundleName: string
 ```
 
-Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code 19100001 is thrown.
+Bundle name of the application. The value contains 7 to 128 bytes. If the value is out of range, error code
+19100001 is thrown.
 
 **Type:** string
 

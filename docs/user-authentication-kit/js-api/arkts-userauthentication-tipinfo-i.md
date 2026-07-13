@@ -1,19 +1,20 @@
 # TipInfo
 
-Represents the tip information displayed during the authentication, which is used to provide feedback during the authentication process.
+Represents the tip information displayed during the authentication, which is used to provide feedback during the
+authentication process.
 
 **Since:** 9
 
 **Deprecated since:** 11
 
-**Substitutes:** [AuthTipInfo](arkts-userauthentication-authtipinfo-i.md#authtipinfo)
+**Substitutes:** [AuthTipInfo](arkts-userauthentication-authtipinfo-i.md)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## module
@@ -30,7 +31,7 @@ ID of the module that sends the tip information.
 
 **Deprecated since:** 11
 
-**Substitutes:** tipType
+**Substitutes:** [tipType](arkts-userauthentication-authtipinfo-i.md#tiptype)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 
@@ -48,7 +49,7 @@ Tip to be given during the authentication process.
 
 **Deprecated since:** 11
 
-**Substitutes:** tipCode
+**Substitutes:** [tipCode](arkts-userauthentication-authtipinfo-i.md#tipcode)
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 

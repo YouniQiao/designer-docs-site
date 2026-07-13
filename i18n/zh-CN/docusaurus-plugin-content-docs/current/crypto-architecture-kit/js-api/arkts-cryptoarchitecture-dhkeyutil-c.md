@@ -14,7 +14,8 @@
 static genDHCommonParamsSpec(pLen: number, skLen?: number): DHCommonParamsSpec
 ```
 
-根据素数P的长度和私钥长度（单位为bit）生成DH公共密钥参数。详见 [DH密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#dh)。
+根据素数P的长度和私钥长度（单位为bit）生成DH公共密钥参数。详见
+[DH密钥生成规格](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#dh)。
 
 **起始版本：** 11
 
@@ -41,8 +42,8 @@ static genDHCommonParamsSpec(pLen: number, skLen?: number): DHCommonParamsSpec
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 非法入参。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数验证失败。 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | 该操作不支持。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 非法入参。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数验证失败。 |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | 该操作不支持。 |
 | [17620001](../errorcode-crypto-framework.md#17620001-内存操作失败) | 内存操作失败。 |
 | [17630001](../errorcode-crypto-framework.md#17630001-密码操作错误) | 密码操作错误。 |
 

@@ -1,4 +1,4 @@
-# VideoRecorderConfig
+# VideoRecorderConfig（系统接口）
 
 Provides the video recorder configuration definitions.
 
@@ -7,12 +7,6 @@ Provides the video recorder configuration definitions.
 **系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
 
 **系统接口：** 此接口为系统接口。
-
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
 
 ## audioSourceType
 
@@ -23,38 +17,6 @@ audioSourceType?: AudioSourceType
 audio source type, details see @AudioSourceType .
 
 **类型：** AudioSourceType
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## rotation
-
-```TypeScript
-rotation?: int
-```
-
-Sets the video rotation angle in output file, and for the file to playback, in degrees. mp4 support. the range of rotation angle should be {0, 90, 180, 270}, default is 0.
-
-**类型：** int
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## profile
-
-```TypeScript
-profile: VideoRecorderProfile
-```
-
-video recorder profile, can get by "getVideoRecorderProfile", details see @VideoRecorderProfile .=
-
-**类型：** VideoRecorderProfile
 
 **起始版本：** 9
 
@@ -78,15 +40,32 @@ geographical location information.
 
 **系统接口：** 此接口为系统接口。
 
-## videoSourceType
+## profile
 
 ```TypeScript
-videoSourceType: VideoSourceType
+profile: VideoRecorderProfile
 ```
 
-video source type, details see @VideoSourceType .
+video recorder profile, can get by "getVideoRecorderProfile", details see @VideoRecorderProfile .=
 
-**类型：** VideoSourceType
+**类型：** VideoRecorderProfile
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## rotation
+
+```TypeScript
+rotation?: number
+```
+
+Sets the video rotation angle in output file, and for the file to playback. mp4 support.
+the range of rotation angle should be {0, 90, 180, 270}, default is 0.
+
+**类型：** number
 
 **起始版本：** 9
 
@@ -100,9 +79,27 @@ video source type, details see @VideoSourceType .
 url: string
 ```
 
-video output uri.support two kind of uri now. format like: scheme + "://" + "context". fd: fd://fd
+video output uri.support two kind of uri now.
+format like: scheme + "://" + "context".
+fd: fd://fd
 
 **类型：** string
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## videoSourceType
+
+```TypeScript
+videoSourceType: VideoSourceType
+```
+
+video source type, details see @VideoSourceType .
+
+**类型：** VideoSourceType
 
 **起始版本：** 9
 

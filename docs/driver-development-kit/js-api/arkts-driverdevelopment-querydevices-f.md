@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.driver.deviceManager';
+import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
 ## queryDevices
@@ -12,7 +12,8 @@ import { deviceManager } from '@ohos.driver.deviceManager';
 function queryDevices(busType?: number): Array<Readonly<Device>>
 ```
 
-Queries the list of peripheral devices. If the device has no peripheral device connected, an empty list is returned.
+Queries the list of peripheral devices. If the device has no peripheral device connected, an empty list is
+returned.
 
 **Since:** 10
 
@@ -24,7 +25,7 @@ Queries the list of peripheral devices. If the device has no peripheral device c
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| busType | number | No | Device bus type specified by [BusType](arkts-driverdevelopment-bustype-e.md#bustype). If this parameter isleft empty, all types of devices are searched. |
+| busType | number | No | Device bus type specified by [BusType](arkts-driverdevelopment-bustype-e.md). If this parameter isleft empty, all types of devices are searched. |
 
 **Return value:**
 

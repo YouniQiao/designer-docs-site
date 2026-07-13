@@ -1,6 +1,13 @@
 # Watcher
 
-Defines parameters for a **Watcher** object. This API is used to configure and manage event watchers to subscribe to and process specified events. > **NOTE** > > You are not advised to [remove watchers](arkts-performanceanalysis-removewatcher-f.md#removewatcher-1) in the callback. Once a watcher is > removed, the subscription callback of the watcher becomes invalid, and the callback may not be triggered when an > event occurs.
+Defines parameters for a **Watcher** object. This API is used to configure and manage event watchers to subscribe
+to and process specified events.
+
+> **NOTE**
+>
+> You are not advised to [remove watchers](arkts-performanceanalysis-removewatcher-f.md#removewatcher-1) in the callback. Once a watcher is
+> removed, the subscription callback of the watcher becomes invalid, and the callback may not be triggered when an
+> event occurs.
 
 **Since:** 9
 
@@ -9,7 +16,7 @@ Defines parameters for a **Watcher** object. This API is used to configure and m
 ## Modules to Import
 
 ```TypeScript
-import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## appEventFilters
@@ -18,7 +25,8 @@ import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
 appEventFilters?: AppEventFilter[]
 ```
 
-Subscription filtering condition. This parameter is passed only when subscription events need to be filtered. If this parameter is not set, events are not filtered by default.
+Subscription filtering condition. This parameter is passed only when subscription events need to be filtered. If
+this parameter is not set, events are not filtered by default.
 
 **Type:** AppEventFilter[]
 
@@ -34,7 +42,9 @@ Subscription filtering condition. This parameter is passed only when subscriptio
 name: string
 ```
 
-Unique name of a watcher. The value contains a maximum of 32 characters, including digits (0 to 9), letters (a to z)(A to Z), and underscore (_). It must start with a letter and end with a digit or letter. For example, **testName1** and **crash_Watcher**.
+Unique name of a watcher. The value contains a maximum of 32 characters, including digits (0 to 9), letters (a to
+z)(A to Z), and underscore (_). It must start with a letter and end with a digit or letter. For example, **testName1**
+and **crash_Watcher**.
 
 **Type:** string
 
@@ -50,7 +60,12 @@ Unique name of a watcher. The value contains a maximum of 32 characters, includi
 onReceive?: (domain: string, appEventGroups: Array<AppEventGroup>) => void
 ```
 
-Real-time subscription callback. Only this callback function is triggered if it is passed together with **onTrigger**. The input arguments are described as follows: domain: domain name. appEventGroups: event group.
+Real-time subscription callback. Only this callback function is triggered if it is passed together with
+**onTrigger**. The input arguments are described as follows:
+
+domain: domain name.
+
+appEventGroups: event group.
 
 **Type:** (domain: string, appEventGroups: Array<AppEventGroup>) => void
 
@@ -66,7 +81,14 @@ Real-time subscription callback. Only this callback function is triggered if it 
 onTrigger?: (curRow: number, curSize: number, holder: AppEventPackageHolder) => void
 ```
 
-Subscription callback. This parameter takes effect only when it is passed together with **triggerCondition**. The input arguments are described as follows: **curRow**: total number of subscription events when the callback is triggered. **curSize**: total size of subscribed events when the callback is triggered, in bytes. **holder**: subscription data holder, which can be used to process subscribed events.
+Subscription callback. This parameter takes effect only when it is passed together with **triggerCondition**. The
+input arguments are described as follows:
+
+**curRow**: total number of subscription events when the callback is triggered.
+
+**curSize**: total size of subscribed events when the callback is triggered, in bytes.
+
+**holder**: subscription data holder, which can be used to process subscribed events.
 
 **Type:** (curRow: number, curSize: number, holder: AppEventPackageHolder) => void
 
@@ -82,7 +104,8 @@ Subscription callback. This parameter takes effect only when it is passed togeth
 triggerCondition?: TriggerCondition
 ```
 
-Subscription callback triggering condition. This parameter takes effect only when it is passed together with **onTrigger**. If this parameter is not set, the **onTrigger** callback is not triggered by default.
+Subscription callback triggering condition. This parameter takes effect only when it is passed together with
+**onTrigger**. If this parameter is not set, the **onTrigger** callback is not triggered by default.
 
 **Type:** TriggerCondition
 

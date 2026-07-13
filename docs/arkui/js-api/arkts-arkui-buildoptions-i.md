@@ -12,7 +12,23 @@ Defines the optional build options.
 enableProvideConsumeCrossing?: boolean
 ```
 
-Defines whether two-way synchronization is supported between the [@Consume](../../../../ui/state-management/arkts-provide-and-consume.md) decorated variable of the custom component of [state management V1](../../../../ui/state-management/arkts-state-management-overview.md#state-management-v1) inside the **BuilderNode** and the [@Provide](../../../../ui/state-management/arkts-provide-and-consume.md) decorated variable outside the **BuilderNode**, and whether two-way synchronization is supported between the [@Consumer](../../../../ui/state-management/arkts-new-provider-and-consumer.md) decorated variable of the custom component of [state management V2](../../../../ui/state-management/arkts-state-management-overview.md#state-management-v2) inside the **BuilderNode** and the [@Provider](../../../../ui/state-management/arkts-new-provider-and-consumer.md) decorated variable outside the **BuilderNode**. API version 20 and later versions support two-way synchronization for the custom component of state management V1. API version 23 and later versions support two-way synchronization for the custom component of state management V2. The value **true** means that this feature is supported, and **false** means the opposite. Default value: **false**.
+Defines whether two-way synchronization is supported between the
+[@Consume](../../../../ui/state-management/arkts-provide-and-consume.md) decorated variable of the custom component
+of [state management V1](../../../../ui/state-management/arkts-state-management-overview.md#state-management-v1)
+inside the **BuilderNode** and the [@Provide](../../../../ui/state-management/arkts-provide-and-consume.md) decorated
+variable outside the **BuilderNode**, and whether two-way synchronization is supported between the
+[@Consumer](../../../../ui/state-management/arkts-new-provider-and-consumer.md) decorated variable of the custom
+component of
+[state management V2](../../../../ui/state-management/arkts-state-management-overview.md#state-management-v2) inside
+the **BuilderNode** and the [@Provider](../../../../ui/state-management/arkts-new-provider-and-consumer.md) decorated
+variable outside the **BuilderNode**.
+
+API version 20 and later versions support two-way synchronization for the custom component of state management V1.
+API version 23 and later versions support two-way synchronization for the custom component of state management V2.
+
+The value **true** means that this feature is supported, and **false** means the opposite.
+
+Default value: **false**.
 
 **Type:** boolean
 
@@ -30,7 +46,13 @@ Defines whether two-way synchronization is supported between the [@Consume](../.
 localStorage?: LocalStorage
 ```
 
-LocalStorage for the current BuilderNode. Custom components mounted under this BuilderNode will share the specified LocalStorage. **NOTE** If LocalStorage is also passed through a custom component's constructor, the constructor parameter takes precedence. Default value: **null**.
+LocalStorage for the current BuilderNode. Custom components mounted under this BuilderNode will share the specified
+LocalStorage. **NOTE**
+
+If LocalStorage is also passed through a custom component's constructor, the constructor parameter takes
+precedence.
+
+Default value: **null**.
 
 **Type:** LocalStorage
 
@@ -48,7 +70,9 @@ LocalStorage for the current BuilderNode. Custom components mounted under this B
 nestingBuilderSupported?: boolean
 ```
 
-Whether to support nested **@Builder** within **@Builder**. **true** if supported, **false** otherwise. Default value: **false**.
+Whether to support nested **@Builder** within **@Builder**. **true** if supported, **false** otherwise.
+
+Default value: **false**.
 
 **Type:** boolean
 

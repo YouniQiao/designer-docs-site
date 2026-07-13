@@ -1,6 +1,11 @@
 # DlpConnManager
 
-Calls **registerPlugin** and **unregisterPlugin** to register or unregister callback capabilities in the SA. > **NOTE** > > **registerPlugin** registers callback capabilities in the SA, and **unregisterPlugin** unregisters callback > capabilities from the SA.
+Calls **registerPlugin** and **unregisterPlugin** to register or unregister callback capabilities in the SA.
+
+> **NOTE**
+>
+> **registerPlugin** registers callback capabilities in the SA, and **unregisterPlugin** unregisters callback
+> capabilities from the SA.
 
 **Since:** 21
 
@@ -9,7 +14,7 @@ Calls **registerPlugin** and **unregisterPlugin** to register or unregister call
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## constructor
@@ -18,7 +23,7 @@ import { dlpPermission } from '@ohos.dlpPermission';
 constructor()
 ```
 
-Represents a constructor for instantiating [DlpConnManager](arkts-dataprotection-dlpconnmanager-c.md#dlpconnmanager).
+Represents a constructor for instantiating [DlpConnManager](arkts-dataprotection-dlpconnmanager-c.md).
 
 **Since:** 21
 
@@ -49,7 +54,11 @@ let dlpConnManager: dlpPermission.DlpConnManager = new dlpPermission.DlpConnMana
 static registerPlugin(plugin: DlpConnPlugin): number
 ```
 
-Registers a callback with the SA. > **NOTE** > > **registerPlugin** registers the callback with the SA.
+Registers a callback with the SA.
+
+> **NOTE**
+>
+> **registerPlugin** registers the callback with the SA.
 
 **Since:** 21
 
@@ -113,7 +122,14 @@ let pluginId: number = dlpPermission.DlpConnManager.registerPlugin(new DataCapsu
 static unregisterPlugin(): void
 ```
 
-Unregisters a callback from the SA. This API unregisters a callback and releases resources when an application exits, ensuring that the callback capability is correctly released. > **NOTE** > > **unregisterPlugin** unregisters a plug-in from the SA.
+Unregisters a callback from the SA.
+
+This API unregisters a callback and releases resources when an application exits, ensuring that the callback
+capability is correctly released.
+
+> **NOTE**
+>
+> **unregisterPlugin** unregisters a plug-in from the SA.
 
 **Since:** 21
 

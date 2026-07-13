@@ -11,7 +11,7 @@ Defines the privilege (permissions) on the shared data.
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## creatable
@@ -20,7 +20,8 @@ import { cloudData } from '@ohos.data.cloudData';
 creatable?: boolean
 ```
 
-Whether the participant can create data to share. The value true means the participant can create data; the value false means the opposite. The default value is false.
+Whether the participant can create data to share. The value true means the participant can create data; the
+value false means the opposite. The default value is false.
 
 **Type:** boolean
 
@@ -36,7 +37,8 @@ Whether the participant can create data to share. The value true means the parti
 deletable?: boolean
 ```
 
-Whether the participant can delete the shared data. The value true means the participant can delete the data; the value false means the opposite. The default value is false.
+Whether the participant can delete the shared data. The value true means the participant can delete the
+data; the value false means the opposite. The default value is false.
 
 **Type:** boolean
 
@@ -52,7 +54,8 @@ Whether the participant can delete the shared data. The value true means the par
 readable?: boolean
 ```
 
-Whether the participant can read the shared data. The value true means the participant can read the data; the value false means the opposite. The default value is false.
+Whether the participant can read the shared data. The value true means the participant can read the data;
+the value false means the opposite. The default value is false.
 
 **Type:** boolean
 
@@ -68,7 +71,8 @@ Whether the participant can read the shared data. The value true means the parti
 shareable?: boolean
 ```
 
-Whether the participant can share the data to others. The value true means the participant can share the data; the value false means the opposite. The default value is false.
+Whether the participant can share the data to others. The value true means the participant can share the
+data; the value false means the opposite. The default value is false.
 
 **Type:** boolean
 
@@ -84,7 +88,8 @@ Whether the participant can share the data to others. The value true means the p
 writable?: boolean
 ```
 
-Whether the participant can modify the shared data. The value true means the participant can modify the data; the value false means the opposite. The default value is false.
+Whether the participant can modify the shared data. The value true means the participant can modify the
+data; the value false means the opposite. The default value is false.
 
 **Type:** boolean
 

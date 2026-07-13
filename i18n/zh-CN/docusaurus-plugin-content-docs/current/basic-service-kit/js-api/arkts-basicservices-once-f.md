@@ -18,7 +18,7 @@ function once(event: InnerEvent, callback: Callback<EventData>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | InnerEvent | 是 | 单次订阅的事件，其中[EventPriority](arkts-basicservices-eventpriority-e.md#eventpriority)，在订阅事件时无需指定，也不生效。 |
+| event | InnerEvent | 是 | 单次订阅的事件，其中[EventPriority](arkts-basicservices-eventpriority-e.md)，在订阅事件时无需指定，也不生效。 |
 | callback | Callback&lt;EventData&gt; | 是 | 接收到该事件时需要执行的回调处理函数。 |
 
 **示例：**

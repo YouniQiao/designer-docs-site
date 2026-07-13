@@ -1,6 +1,8 @@
 # CloudEnhancement (System API)
 
-Provides APIs for cloud enhancement management, including managing the tasks of generating AI-powered cloud enhancement photos and obtaining the association between the original photos and AI cloud enhancement photos.
+Provides APIs for cloud enhancement management,
+including managing the tasks of generating AI-powered cloud enhancement photos
+and obtaining the association between the original photos and AI cloud enhancement photos.
 
 **Since:** 13
 
@@ -11,7 +13,7 @@ Provides APIs for cloud enhancement management, including managing the tasks of 
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## cancelAllCloudEnhancementTasks

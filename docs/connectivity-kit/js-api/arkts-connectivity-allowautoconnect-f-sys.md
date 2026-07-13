@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## allowAutoConnect
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function allowAutoConnect(netId: number, isAllowed: boolean): void
 ```
 
-Set whther to allow automatic connnect by networkId. The network can be associated with again if isAllowed is true, else not.
+Set whther to allow automatic connnect by networkId.
+The network can be associated with again if isAllowed is true, else not.
 
 **Since:** 17
 

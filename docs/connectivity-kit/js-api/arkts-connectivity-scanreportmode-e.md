@@ -28,7 +28,8 @@ In normal mode, the advertisement packet is reported immediately after being sca
 BATCH = 2
 ```
 
-Enables delayed sending of advertising packets in batch mode by the interval specified by {@link ScanOptions#interval}.
+Enables delayed sending of advertising packets in batch mode by the interval specified by
+{@link ScanOptions#interval}.
 
 **Since:** 19
 
@@ -44,7 +45,8 @@ Enables delayed sending of advertising packets in batch mode by the interval spe
 FENCE_SENSITIVITY_LOW = 10
 ```
 
-In low sensitivity fence mode, the advertisement packets are reported only when they are received for the first time and lost for the last time. The reception sensitivity is low.
+In low sensitivity fence mode, the advertisement packets are reported only when they are received for
+the first time and lost for the last time. The reception sensitivity is low.
 
 **Since:** 18
 
@@ -60,7 +62,8 @@ In low sensitivity fence mode, the advertisement packets are reported only when 
 FENCE_SENSITIVITY_HIGH = 11
 ```
 
-In high sensitivity fence mode, the advertisement packets are reported only when they are received for the first time and lost for the last time. The reception sensitivity is high.
+In high sensitivity fence mode, the advertisement packets are reported only when they are received for
+the first time and lost for the last time. The reception sensitivity is high.
 
 **Since:** 18
 

@@ -12,22 +12,6 @@ Describes the camera profile.
 import { camera } from '@kit.CameraKit';
 ```
 
-## size
-
-```TypeScript
-readonly size: Size
-```
-
-Resolution. The size setting corresponds to the camera's resolution width and height, rather than the actual dimensions of the output image.
-
-**Type:** Size
-
-**Since:** 10
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
 ## format
 
 ```TypeScript
@@ -40,7 +24,26 @@ Output format.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## size
+
+```TypeScript
+readonly size: Size
+```
+
+Resolution.
+
+The size setting corresponds to the camera's resolution width and height, rather than the actual dimensions of
+the output image.
+
+**Type:** Size
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

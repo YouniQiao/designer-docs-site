@@ -9,7 +9,7 @@ Provides APIs to operate the authenticator.
 ## Modules to Import
 
 ```TypeScript
-import { appAccount } from '@ohos.account.appAccount';
+import { appAccount } from '@kit.BasicServicesKit';
 ```
 
 ## addAccountImplicitly
@@ -23,7 +23,14 @@ addAccountImplicitly(
     ): void
 ```
 
-Adds an application account implicitly based on the specified authentication type and options. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [createAccountImplicitly](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#createaccountimplicitly9-2) > instead.
+Adds an application account implicitly based on the specified authentication type and options. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [createAccountImplicitly](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#createaccountimplicitly9-2)
+> instead.
 
 **Since:** 8
 
@@ -75,7 +82,13 @@ authenticate(
     ): void
 ```
 
-Authenticates an application account to obtain the OAuth token. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [auth](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#auth9-2) instead.
+Authenticates an application account to obtain the OAuth token. This API uses an asynchronous callback to return
+the result.
+
+> **NOTE**
+>
+> This API is supported since API version 8 and deprecated since API version 9. You are advised to use
+> [auth](../../../../reference/apis-basic-services-kit/js-apis-appAccount.md#auth9-2) instead.
 
 **Since:** 8
 
@@ -125,7 +138,8 @@ This API must be used together with the getRemoteObject API. For details, see th
 checkAccountRemovable(name: string, callback: AuthCallback): void
 ```
 
-Checks whether an application account can be deleted. This API uses an asynchronous callback to return the result.
+Checks whether an application account can be deleted. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -148,7 +162,8 @@ This API must be used together with the getRemoteObject API. For details, see th
 createAccountImplicitly(options: CreateAccountImplicitlyOptions, callback: AuthCallback): void
 ```
 
-Creates an application account implicitly based on the specified account owner. This API uses an asynchronous callback to return the result.
+Creates an application account implicitly based on the specified account owner. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 

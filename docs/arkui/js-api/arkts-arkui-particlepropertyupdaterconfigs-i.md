@@ -12,7 +12,8 @@ Defines the particle property updater configs.
 [ParticleUpdater.CURVE]: Array<ParticlePropertyAnimation<T>>
 ```
 
-The property changes with the animation curve. The array type indicates that multiple animation segments can be set for the current property, for example, 0-3000 ms, 3000-5000 ms, and 5000-8000 ms. **T** represents a number.
+The property changes with the animation curve. The array type indicates that multiple animation segments can be set
+for the current property, for example, 0-3000 ms, 3000-5000 ms, and 5000-8000 ms. **T** represents a number.
 
 **Type:** Array<ParticlePropertyAnimation<T>>
 
@@ -48,7 +49,26 @@ No effect of particle updater.
 [ParticleUpdater.RANDOM]: ParticleTuple<T, T>
 ```
 
-The property changes randomly, with the per-second change difference being a value randomly generated from the range. The target property value is obtained by applying the change difference to the current property value. For example, if the current property value is **0.2** and **config** is set to **[0.1,1.0]**, then: 1. When the random change difference is 0.5, the target property value is 0.2 + 0.5 = 0.7. 2. The change difference may also be a negative value. For example, if the current property value is **0.2** and **config** is set to **[-3.0,2.0]**, then when the random change difference is **-2.0**, the target property value is 0.2 - 2.0 = -1.8. **NOTE** **config** sets the value range of the change difference. While the change difference does not have a maximum or minimum value limit, the target property value does. Therefore, if the target property value is greater than the maximum property value, the maximum property value will be used instead; if the target property value is less than the minimum property value, the minimum property value will be used instead. **T** represents a number. For example, if the value range of **opacity** is **[0.0, 1.0]**, then if the target property value is greater than 1.0, **1.0** will be used instead.
+The property changes randomly, with the per-second change difference being a value randomly generated from the
+range.
+
+The target property value is obtained by applying the change difference to the current property value. For example,
+if the current property value is **0.2** and **config** is set to **[0.1,1.0]**, then:
+
+1. When the random change difference is 0.5, the target property value is 0.2 + 0.5 = 0.7.
+2. The change difference may also be a negative value. For example, if the current property
+value is **0.2** and **config** is set to **[-3.0,2.0]**, then when the random change difference is **-2.0**,
+the target property value is 0.2 - 2.0 = -1.8.
+
+**NOTE**
+
+**config** sets the value range of the change difference. While the change difference does not have a maximum or
+minimum value limit, the target property value does. Therefore, if the target property value is greater than the
+maximum property value, the maximum property value will be used instead; if the target property value is less than
+the minimum property value, the minimum property value will be used instead. **T** represents a number.
+
+For example, if the value range of **opacity** is **[0.0, 1.0]**, then if the target property value is greater than
+1.0, **1.0** will be used instead.
 
 **Type:** ParticleTuple<T, T>
 

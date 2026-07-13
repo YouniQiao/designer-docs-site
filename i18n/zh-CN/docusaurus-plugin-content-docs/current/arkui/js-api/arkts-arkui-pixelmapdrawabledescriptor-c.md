@@ -1,8 +1,9 @@
 # PixelMapDrawableDescriptor
 
-支持通过传入PixelMap创建PixelMapDrawableDescriptor对象。 继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult)。
+支持通过传入PixelMap创建PixelMapDrawableDescriptor对象。
+继承自[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
 
-**继承/实现关系：** PixelMapDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+**继承/实现关系：** PixelMapDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
 **起始版本：** 12
 
@@ -58,7 +59,7 @@ PixelMapDrawableDescriptor的构造函数，通过PixelMap类型或者ResourceSt
 
 ```TypeScript
 // xxx.ets
-import { PixelMapDrawableDescriptor } from '@kit.ArkUI';
+import { DrawableDescriptor, PixelMapDrawableDescriptor } from '@kit.ArkUI';
 
 @Entry
 @Component

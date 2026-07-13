@@ -1,6 +1,7 @@
 # SubIntentInfoForConfiguration (System API)
 
-Describes the unique information of the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
+Describes the unique information of the
+[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).
 
 **Since:** 23
 
@@ -11,7 +12,7 @@ Describes the unique information of the [intent developed using a configuration 
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
+import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
 ## entities

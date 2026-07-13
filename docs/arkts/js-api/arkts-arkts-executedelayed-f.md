@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## executeDelayed
@@ -12,7 +12,10 @@ import { taskpool } from '@ohos.taskpool';
 function executeDelayed(delayTime: number, task: Task, priority?: Priority): Promise<Object>
 ```
 
-Executes a task after a given delay. In this execution mode, you can set the task priority and call **cancel()** to cancel the execution. The task cannot be a task in a task group, serial queue, or asynchronous queue, or a periodic task. This API can be called only once for a continuous task, but multiple times for a non-continuous task. This API uses a promise to return the result.
+Executes a task after a given delay. In this execution mode, you can set the task priority and call **cancel()** to
+cancel the execution. The task cannot be a task in a task group, serial queue, or asynchronous queue, or a periodic
+task. This API can be called only once for a continuous task, but multiple times for a non-continuous task. This
+API uses a promise to return the result.
 
 **Since:** 11
 
@@ -39,10 +42,10 @@ Executes a task after a given delay. In this execution mode, you can set the tas
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200028](../errorcode-utils.md#10200028-delay-less-than-zero) | The delayTime is less than zero. |
-| [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization.<br>**Applicable version:** 12 |
-| [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent.<br>**Applicable version:** 12 |
-| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization.<br>**Applicable version:** 12 and later |
+| [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent.<br>**Applicable version:** 12 and later |
+| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 and later |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 
@@ -73,7 +76,10 @@ taskpool.executeDelayed(1000, task).then(() => { // 1000: delayTime is 1000ms
 function executeDelayed<A extends Array<Object>, R>(delayTime: number, task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-Executes the generic task with a delay without verifying the parameter type and return value type of the task. This API uses a promise to return the result. The verification of the **executeDelayed** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
+Executes the generic task with a delay without verifying the parameter type and return value type of the task. This
+API uses a promise to return the result.
+The verification of the **executeDelayed** task works in conjunction with **new GenericsTask**, requiring that the
+parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 
@@ -101,7 +107,7 @@ Executes the generic task with a delay without verifying the parameter type and 
 | --- | --- |
 | [10200028](../errorcode-utils.md#10200028-delay-less-than-zero) | The delayTime is less than zero. |
 | [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again. |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 

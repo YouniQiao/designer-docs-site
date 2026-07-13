@@ -9,7 +9,7 @@ Task timeout configuration.
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## httpTotalTimeout
@@ -18,7 +18,10 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 httpTotalTimeout?: number
 ```
 
-Complete HTTP request-response cycle timeout, in seconds. The default value is 60. The minimum value is 1. The value should be an integer.
+Complete HTTP request-response cycle timeout, in seconds.
+The default value is 60.
+The minimum value is 1.
+The value should be an integer.
 
 **Type:** number
 
@@ -34,7 +37,12 @@ Complete HTTP request-response cycle timeout, in seconds. The default value is 6
 networkCheckTimeout?: number
 ```
 
-Network availability check timeout, in seconds. The default value is 20. The minimum value is 0. The maximum value is 20. When set to 0, no check will be performed. The value should be an integer.
+Network availability check timeout, in seconds.
+The default value is 20.
+The minimum value is 0.
+The maximum value is 20.
+When set to 0, no check will be performed.
+The value should be an integer.
 
 **Type:** number
 

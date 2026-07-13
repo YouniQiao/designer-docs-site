@@ -1,6 +1,7 @@
 # TreeMap
 
-TreeMap可用于存储具有关联关系的key-value键值对集合，存储元素中key值唯一，每个key对应一个value。 TreeMap底层使用红黑树实现，可以利用二叉树特性快速查找键值对。key值有序存储，可以实现快速的插入和删除。
+TreeMap可用于存储具有关联关系的key-value键值对集合，存储元素中key值唯一，每个key对应一个value。
+TreeMap底层使用红黑树实现，可以利用二叉树特性快速查找键值对。key值有序存储，可以实现快速的插入和删除。
 
 **起始版本：** 8
 
@@ -49,11 +50,11 @@ for (let item of treeMap) {
 
 // 使用方法二：
 let iter = treeMap[Symbol.iterator]();
-let temp: IteratorResult<Object[]> = iter.next();
-while(!temp.done) {
-  console.info("key:", temp.value[0]);
-  console.info("value:", temp.value[1]);
-  temp = iter.next();
+let nextResult: IteratorResult<Object[]> = iter.next();
+while(!nextResult.done) {
+  console.info("key:", nextResult.value[0]);
+  console.info("value:", nextResult.value[1]);
+  nextResult = iter.next();
 }
 // 输出结果：
 // key: sparrow
@@ -101,6 +102,7 @@ clear(): void
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 清除容器中的所有元素
 treeMap.clear();
 let result = treeMap.isEmpty();
 console.info("result:", result); // result: true
@@ -143,16 +145,16 @@ let treeMap = new TreeMap<number, number>();
 
 ```TypeScript
 //使用comparator firstValue < secondValue，表示期望结果为升序排序。反之firstValue > secondValue，表示为降序排序。
-let treeMap: TreeMap<string,string> = new TreeMap<string,string>((firstValue: string, secondValue: string): boolean => {
+let treeMap: TreeMap<string, string> = new TreeMap<string, string>((firstValue: string, secondValue: string): boolean => {
   return firstValue > secondValue;
 });
-treeMap.set("aa","3");
-treeMap.set("dd","1");
-treeMap.set("cc","2");
-treeMap.set("bb","4");
+treeMap.set("aa", "3");
+treeMap.set("dd", "1");
+treeMap.set("cc", "2");
+treeMap.set("bb", "4");
 for (let item of treeMap) {
   console.info("key: " + item[0], "value: " + item[1]);
-}
+};
 // 输出结果：
 // key: dd value: 1
 // key: cc value: 2
@@ -163,11 +165,11 @@ for (let item of treeMap) {
 
 ```TypeScript
 // 当插入自定义类型时，则必须要提供比较函数。
-class TestEntry{
+class TestEntry {
   public id: number = 0;
 }
 
-let ts1: TreeMap<TestEntry, string> = new TreeMap<TestEntry, string>((t1: TestEntry, t2: TestEntry): boolean => {
+let testEntryMap: TreeMap<TestEntry, string> = new TreeMap<TestEntry, string>((t1: TestEntry, t2: TestEntry): boolean => {
   return t1.id < t2.id;
 });
 let entry1: TestEntry = {
@@ -176,9 +178,9 @@ let entry1: TestEntry = {
 let entry2: TestEntry = {
   id: 1
 }
-ts1.set(entry1, "0");
-ts1.set(entry2, "1");
-console.info("length:", ts1.length); // length: 2
+testEntryMap.set(entry1, "0");
+testEntryMap.set(entry2, "1");
+console.info("length:", testEntryMap.length); // length: 2
 
 ```
 
@@ -214,11 +216,13 @@ entries(): IterableIterator<[K, V]>
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
-let it = treeMap.entries();
-let t: IteratorResult<Object[]> = it.next();
-while(!t.done) {
-  console.info("TreeMap:", t.value);
-  t = it.next()
+// 获取键值对迭代器
+let entriesIterator = treeMap.entries();
+// 通过迭代器遍历所有键值对
+let nextResult: IteratorResult<Object[]> = entriesIterator.next();
+while(!nextResult.done) {
+  console.info("TreeMap:", nextResult.value);
+  nextResult = entriesIterator.next();
 }
 // 输出结果：
 // TreeMap: sparrow,356
@@ -244,7 +248,8 @@ while(!t.done) {
 forEach(callbackFn: (value?: V, key?: K, map?: TreeMap<K, V>) => void, thisArg?: Object): void
 ```
 
-通过回调函数来遍历实例对象上的元素及其下标。 不会对已删除的key执行回调。
+通过回调函数来遍历实例对象上的元素及其下标。
+不会对已删除的key执行回调。
 
 **起始版本：** 8
 
@@ -271,6 +276,7 @@ forEach(callbackFn: (value?: V, key?: K, map?: TreeMap<K, V>) => void, thisArg?:
 let treeMap = new TreeMap<string, number>();
 treeMap.set("sparrow", 123);
 treeMap.set("gull", 357);
+// 通过回调函数遍历TreeMap中的所有元素
 treeMap.forEach((value: number, key: string): void => {
   console.info("value: " + value, "key: " + key);
 });
@@ -286,7 +292,7 @@ treeMap.forEach((value: number, key: string): void => {
  for(let i = 0; i < 10; i++) {
    treeMap.set("sparrow" + i, 123);
  }
- for(let i = 0;i < 10; i++) {
+ for(let i = 0; i < 10; i++) {
    treeMap.remove("sparrow" + i);
  }
 
@@ -330,6 +336,7 @@ get(key: K): V
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 获取指定key对应的value
 let result = treeMap.get("sparrow");
 console.info("result:", result); // result: 356
 
@@ -360,7 +367,7 @@ getFirstKey(): K
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The getFirstKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -368,6 +375,7 @@ getFirstKey(): K
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 获取容器中排序第一的key
 let result = treeMap.getFirstKey();
 console.info("result:", result); // result: sparrow
 
@@ -413,6 +421,7 @@ treeMap.set(1, 'one');
 treeMap.set(2, 'two');
 treeMap.set(3, 'three');
 treeMap.set(4, 'four');
+// 获取大于对比key值3的最小键
 let result = treeMap.getHigherKey(3);
 console.info("result:", result); // result: 4
 
@@ -443,7 +452,7 @@ getLastKey(): K
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-传入的thisobject不是容器类的实例) | The getLastKey method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
+| [10200010](../errorcode-utils.md#10200010-容器为空) | Container is empty.<br>**适用版本：** 23+**ArkTS模式：** 该错误码仅适用于ArkTS-Sta。 |
 
 **示例：**
 
@@ -451,6 +460,7 @@ getLastKey(): K
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 获取容器中排序最后的key
 let result = treeMap.getLastKey();
 console.info("result:", result); // result: squirrel
 
@@ -492,10 +502,11 @@ getLowerKey(key: K): K
 
 ```TypeScript
 let treeMap = new TreeMap<number, string>();
-treeMap.set(1, 'one');
-treeMap.set(2, 'two');
-treeMap.set(3, 'three');
-treeMap.set(4, 'four');
+treeMap.set(1, "one");
+treeMap.set(2, "two");
+treeMap.set(3, "three");
+treeMap.set(4, "four");
+// 获取小于对比key值3的最大键
 let result = treeMap.getLowerKey(3);
 console.info("result:", result); // result: 2
 
@@ -537,7 +548,9 @@ hasKey(key: K): boolean
 
 ```TypeScript
 let treeMap = new TreeMap<string, number>();
+// 向容器中添加数据
 treeMap.set("squirrel", 123);
+// 判断容器中是否包含指定key
 let result = treeMap.hasKey("squirrel");
 console.info("result:", result);  // result: true
 
@@ -580,6 +593,7 @@ hasValue(value: V): boolean
 ```TypeScript
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
+// 判断容器中是否包含指定value
 let result = treeMap.hasValue(123);
 console.info("result:", result);  // result: true
 
@@ -615,6 +629,7 @@ isEmpty(): boolean
 
 ```TypeScript
 let treeMap = new TreeMap<number, number>();
+// 判断容器是否为空
 let result = treeMap.isEmpty();
 console.info("result:", result);  // result: true
 
@@ -652,6 +667,7 @@ keys(): IterableIterator<K>
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 获取包含所有键的迭代器
 let keys = treeMap.keys();
 for (let key of keys) {
   console.info("key:", key);
@@ -743,7 +759,8 @@ replace(key: K, newValue: V): boolean
 ```TypeScript
 let treeMap = new TreeMap<string, number>();
 treeMap.set("sparrow", 123);
-let result = treeMap.replace("sparrow", 357);
+// 替换指定key对应的value
+treeMap.replace("sparrow", 357);
 console.info("sparrow:", treeMap.get("sparrow")); // sparrow: 357
 
 ```
@@ -822,12 +839,12 @@ setAll(map: TreeMap<K, V>): void
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
-let map : TreeMap<string, number> = new TreeMap();
+let map: TreeMap<string, number> = new TreeMap();
 map.set("demo", 12);
 map.setAll(treeMap); // 将treeMap中的所有元素添加到map中
-map.forEach((value ?: number, key ?: string) : void => {
+map.forEach((value?: number, key?: string) : void => {
   console.info("value: " + value, "key: " + key); 
-})
+});
 // 输出结果:
 // value: 12 key: demo
 // value: 356 key: sparrow
@@ -867,6 +884,7 @@ values(): IterableIterator<V>
 let treeMap = new TreeMap<string, number>();
 treeMap.set("squirrel", 123);
 treeMap.set("sparrow", 356);
+// 获取包含所有值的迭代器
 let values = treeMap.values();
 for (let value of values) {
   console.info("value:", value);

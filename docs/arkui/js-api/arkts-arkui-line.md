@@ -2,13 +2,15 @@
 
 Line drawing component.
 
+
 ## Line
 
 ```TypeScript
 Line(options?: LineOptions)
 ```
 
-Uses new to create the line. Anonymous Object Rectification.
+Uses new to create the line.
+Anonymous Object Rectification.
 
 **Since:** 7
 

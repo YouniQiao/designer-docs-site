@@ -1,6 +1,7 @@
 # ExceptionPromptV2
 
-Declare struct ExceptionPromptV2 higher-order component. The exception prompt component is used to show an error message when an error arises.
+Declare struct ExceptionPromptV2 higher-order component.
+The exception prompt component is used to show an error message when an error arises.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Declare struct ExceptionPromptV2 higher-order component. The exception prompt co
 ## Modules to Import
 
 ```TypeScript
-import { MarginTypeV2, PromptOptionsV2, ExceptionPromptV2, PromptOptionsV2Config } from '@ohos.arkui.advanced.ExceptionPromptV2';
+import { MarginTypeV2, PromptOptionsV2, ExceptionPromptV2, PromptOptionsV2Config } from '@kit.ArkUI';
 ```
 
 ## onActionTextClick

@@ -6,7 +6,11 @@
 declare function copy(srcUri: string, destUri: string, options?: CopyOptions): Promise<void>
 ```
 
-拷贝文件或目录，使用promise异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
+拷贝文件或目录，使用promise异步回调。
+
+支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。
+
+跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
 
 **起始版本：** 11
 
@@ -30,7 +34,7 @@ declare function copy(srcUri: string, destUri: string, options?: CopyOptions): P
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 | 13900001 | Operation not permitted |
 | 13900002 | No such file or directory |
 | 13900004 | Interrupted system call |
@@ -55,7 +59,7 @@ declare function copy(srcUri: string, destUri: string, options?: CopyOptions): P
 | 13900038 | Value too large for defined data type |
 | 13900041 | Quota exceeded |
 | 13900042 | Unknown error |
-| 13900044 | Network is unreachable<br>**适用版本：** 12 |
+| 13900044 | Network is unreachable<br>**适用版本：** 12+ |
 
 
 ## copy
@@ -64,7 +68,11 @@ declare function copy(srcUri: string, destUri: string, options?: CopyOptions): P
 declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<void>): void
 ```
 
-拷贝文件或者目录，使用callback异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
+拷贝文件或者目录，使用callback异步回调。
+
+支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。
+
+跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
 
 **起始版本：** 11
 
@@ -82,7 +90,7 @@ declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<v
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 | 13900001 | Operation not permitted |
 | 13900002 | No such file or directory |
 | 13900004 | Interrupted system call |
@@ -115,7 +123,11 @@ declare function copy(srcUri: string, destUri: string, callback: AsyncCallback<v
 declare function copy(srcUri: string, destUri: string, options: CopyOptions, callback: AsyncCallback<void>): void
 ```
 
-拷贝文件或者目录，使用callback异步回调。 支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。 跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
+拷贝文件或者目录，使用callback异步回调。
+
+支持跨设备拷贝。强制覆盖拷贝。入参支持文件或目录URI。
+
+跨端拷贝时，最多同时存在10个拷贝任务；单次拷贝的文件数量不得超过500个。
 
 **起始版本：** 11
 
@@ -134,7 +146,7 @@ declare function copy(srcUri: string, destUri: string, options: CopyOptions, cal
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameter types. |
 | 13900001 | Operation not permitted |
 | 13900002 | No such file or directory |
 | 13900004 | Interrupted system call |

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## setVirtualScreenSurface
@@ -12,7 +12,8 @@ import { display } from '@ohos.display';
 function setVirtualScreenSurface(screenId: number, surfaceId: string): Promise<void>
 ```
 
-Sets a surface for a virtual screen. **surfaceId** identifies a surface, the content of which will be shown on this virtual screen. This API uses a promise to return the result.
+Sets a surface for a virtual screen. **surfaceId** identifies a surface, the content of which will be shown on this
+virtual screen. This API uses a promise to return the result.
 
 **Since:** 16
 
@@ -60,7 +61,7 @@ struct Index {
     display.setVirtualScreenSurface(screenId, surfaceId).then(() => {
       console.info('Succeeded in setting the surface for the virtual screen.');
     }).catch((err: BusinessError) => {
-      console.error(`Failed to set the surface for the virtual screen. Code:${err.code}, message is ${err.message}`);
+      console.error(`Failed to set the surface for the virtual screen. Code: ${err.code}, message: ${err.message}`);
     });
   }
   build() {
@@ -70,7 +71,7 @@ struct Index {
         controller: this.xComponentController
       })
       Button('setSurface')
-        .onClick((event: ClickEvent) => {
+        .onClick(() => {
           this.setVirtualScreenSurface();
       }).width('100%')
       .height(20)

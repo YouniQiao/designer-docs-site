@@ -1,6 +1,8 @@
 # ArrayList
 
-ArrayList is a linear data structure that is implemented based on arrays. ArrayList can dynamically adjust the capacity based on project requirements. It increases the capacity by 50% each time.
+ArrayList is a linear data structure that is implemented based on arrays.
+ArrayList can dynamically adjust the capacity based on project requirements.
+It increases the capacity by 50% each time.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ ArrayList is a linear data structure that is implemented based on arrays. ArrayL
 ## Modules to Import
 
 ```TypeScript
-import { ArrayList } from '@ohos.util.ArrayList';
+import { ArrayList } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -820,7 +822,8 @@ arrayList.sort();
 subArrayList(fromIndex: number, toIndex: number): ArrayList<T>
 ```
 
-Obtains elements from this **ArrayList** within the range [fromIndex, toIndex) and returns them as a new ArrayList instance.
+Obtains elements from this **ArrayList** within the range
+[fromIndex, toIndex) and returns them as a new ArrayList instance.
 
 **Since:** 8
 

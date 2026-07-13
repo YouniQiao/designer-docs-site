@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dateTimeManager } from '@ohos.enterprise.dateTimeManager';
+import { dateTimeManager } from '@kit.MDMKit';
 ```
 
 ## isModifyDateTimeDisallowed
@@ -12,7 +12,8 @@ import { dateTimeManager } from '@ohos.enterprise.dateTimeManager';
 function isModifyDateTimeDisallowed(admin: Want, callback: AsyncCallback<boolean>): void
 ```
 
-Queries whether the system time of a device can be modified. This API uses an asynchronous callback to return the result.
+Queries whether the system time of a device can be modified. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

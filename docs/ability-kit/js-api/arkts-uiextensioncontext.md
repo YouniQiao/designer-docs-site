@@ -6,5 +6,13 @@
 
 | Name | Description |
 | --- | --- |
-| [UIExtensionContext](arkts-uiextensioncontext-c.md) | UIExtensionContext是[UIExtensionAbility]{@link @ohos.app.ability.UIExtensionAbility:UIExtensionAbility}的上下文环境，继承自 [ExtensionContext]{@link ./application/ExtensionContext:ExtensionContext}，提供UIExtensionAbility的相关配置信息以及操作UIAbility的方法，如 启动UIAbility等。 |
+| [UIExtensionContext](arkts-ability-uiextensioncontext-c.md) | UIExtensionContext provides the context environment for[UIExtensionAbility](arkts-ability-uiextensionability-c.md). It inherits from[ExtensionContext](arkts-ability-extensioncontext-c.md) and provides UIExtensionAbility-relatedconfiguration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start aUIExtensionAbility. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [UIExtensionContext](arkts-ability-uiextensioncontext-c-sys.md) | UIExtensionContext provides the context environment for[UIExtensionAbility](arkts-ability-uiextensionability-c.md). It inherits from[ExtensionContext](arkts-ability-extensioncontext-c.md) and provides UIExtensionAbility-relatedconfiguration and APIs for operating the UIExtensionAbility. For example, you can use the APIs to start aUIExtensionAbility. |
+<!--DelEnd-->
 

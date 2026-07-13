@@ -30,7 +30,9 @@ action: CrownAction
 angularVelocity: number
 ```
 
-旋转角速度。 单位：deg/s
+旋转角速度。
+
+单位：deg/s
 
 **类型：** number
 
@@ -48,7 +50,11 @@ angularVelocity: number
 degree: number
 ```
 
-相对旋转角度。 单位：deg 取值范围:[-360, 360]。
+相对旋转角度。
+
+单位：deg
+
+取值范围:[-360, 360]。
 
 **类型：** number
 
@@ -84,7 +90,9 @@ stopPropagation: Callback<void>
 timestamp: number
 ```
 
-时间戳。触发事件时距离系统启动的时间间隔。 单位：ns
+时间戳。触发事件时距离系统启动的时间间隔。
+
+单位：ns
 
 **类型：** number
 

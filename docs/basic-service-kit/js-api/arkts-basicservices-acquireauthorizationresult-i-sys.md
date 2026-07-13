@@ -11,7 +11,7 @@ Defines the result of the authorization.
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## isReused
@@ -20,7 +20,9 @@ import { osAccount } from '@ohos.account.osAccount';
 isReused?: boolean
 ```
 
-Whether the authorization result is reused. The default value is **undefined**. **true**: The authorization result is reused. **false**: The authorization result is not reused.
+Whether the authorization result is reused. The default value is **undefined**.
+
+**true**: The authorization result is reused. **false**: The authorization result is not reused.
 
 **Type:** boolean
 
@@ -56,7 +58,9 @@ Permission associated with the authorization.
 resultCode: AuthorizationResultCode
 ```
 
-Authorization result code. If the authorization is successful, AuthorizationResultCode#AUTHORIZATION_SUCCESS is returned. Otherwise, an error code is returned. For details, see AuthorizationResultCode.
+Authorization result code.
+If the authorization is successful, AuthorizationResultCode#AUTHORIZATION_SUCCESS is returned.
+Otherwise, an error code is returned. For details, see AuthorizationResultCode.
 
 **Type:** AuthorizationResultCode
 

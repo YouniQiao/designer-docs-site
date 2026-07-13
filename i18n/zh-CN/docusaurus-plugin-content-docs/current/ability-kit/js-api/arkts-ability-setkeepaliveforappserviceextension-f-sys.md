@@ -6,7 +6,12 @@
 function setKeepAliveForAppServiceExtension(bundleName: string, enabled: boolean): Promise<void>
 ```
 
-为AppServiceExtensionAbility设置保活或取消保活。使用Promise异步回调。 该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。 > **说明：** > > - 仅当应用安装在userId为1的用户下，且应用中entry类型的HAP的module.json5配置文件中的mainElement字段配置为AppServiceExtensionAbility时，该接口才生效。
+为AppServiceExtensionAbility设置保活或取消保活。使用Promise异步回调。
+该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。
+
+> **说明：**
+>
+> - 仅当应用安装在userId为1的用户下，且应用中entry类型的HAP的module.json5配置文件中的mainElement字段配置为AppServiceExtensionAbility时，该接口才生效。
 
 **起始版本：** 20
 
@@ -35,7 +40,7 @@ function setKeepAliveForAppServiceExtension(bundleName: string, enabled: boolean
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000081](../errorcode-ability.md#16000081-获取目标应用信息失败) | Failed to obtain the target application information. |
 | [16000202](../errorcode-ability.md#16000202-仅支持为appservice类型的extensionability设置保活) | Invalid main element type. |

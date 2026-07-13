@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { intelligentScene } from '@ohos.intelligentScene';
+import { intelligentScene } from '@kit.BasicServicesKit';
 ```
 
 ## isNotifyAllowedInDoNotDisturb
@@ -12,7 +12,8 @@ import { intelligentScene } from '@ohos.intelligentScene';
 function isNotifyAllowedInDoNotDisturb(): Promise<boolean>
 ```
 
-Checks whether calling bundle is allow notify(e.g. sound & vibration) when system Do Not Disturb is on.
+Checks whether calling bundle is allow notify(e.g. sound & vibration) when system
+Do Not Disturb is on.
 
 **Since:** 23
 

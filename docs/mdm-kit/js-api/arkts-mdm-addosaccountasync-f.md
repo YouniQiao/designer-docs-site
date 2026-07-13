@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { accountManager } from '@ohos.enterprise.accountManager';
+import { accountManager } from '@kit.MDMKit';
 ```
 
 ## addOsAccountAsync
@@ -12,7 +12,12 @@ import { accountManager } from '@ohos.enterprise.accountManager';
 function addOsAccountAsync(admin: Want, name: string, type: osAccount.OsAccountType): Promise<osAccount.OsAccountInfo>
 ```
 
-Adds an account in the background. This API uses a promise to return the result. > **NOTE** > > This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait > for the asynchronous return of this API.
+Adds an account in the background. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait
+> for the asynchronous return of this API.
 
 **Since:** 12
 

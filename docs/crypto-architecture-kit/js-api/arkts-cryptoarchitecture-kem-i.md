@@ -1,6 +1,6 @@
 # Kem
 
-Indicates the KEM(key encapsulation mechanism) type, which is used for key encapsulation and decapsulation operations.
+Provides APIs for key encapsulation and decapsulation operations using the key encapsulation mechanism (KEM).
 
 **Since:** 26.0.0
 
@@ -9,7 +9,7 @@ Indicates the KEM(key encapsulation mechanism) type, which is used for key encap
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## decapsulate
@@ -18,7 +18,8 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 decapsulate(priKey: PriKey, wrappedKey: Uint8Array): Promise<Uint8Array>
 ```
 
-Key decapsulation operation. Using the receiver's private key, executed by the receiver, to decapsulate the shared key from the ciphertext. This API uses a promise to return the result.
+Key decapsulation operation. Using the receiver's private key, executed by the receiver, to decapsulate the
+shared key from the ciphertext. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -50,13 +51,42 @@ Key decapsulation operation. Using the receiver's private key, executed by the r
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+**Example**
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function kemDecapsulate() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = await asyKeyGenerator.generateKeyPair();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = await kem.encapsulate(keyPair.pubKey, null);
+    let sharedSecret = await kem.decapsulate(keyPair.priKey, encapResult.wrappedKey);
+    console.info('decapsulate success');
+    console.info('sharedSecret length: ' + sharedSecret.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`decapsulate failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+
+```
+
 ## decapsulateSync
 
 ```TypeScript
 decapsulateSync(priKey: PriKey, wrappedKey: Uint8Array): Uint8Array
 ```
 
-Key decapsulation operation. Using the receiver's private key, executed by the receiver, to decapsulate the shared key from the ciphertext. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link decapsulate}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Key decapsulation operation. Using the receiver's private key, executed by the receiver, to decapsulate the
+shared key from the ciphertext.
+
+<br><br>**NOTE**
+<br>It is recommended to prioritize the use of asynchronous API, {@link decapsulate}. Synchronous API may
+take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
+it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 26.0.0
 
@@ -77,7 +107,7 @@ Key decapsulation operation. Using the receiver's private key, executed by the r
 
 | Type | Description |
 | --- | --- |
-| Uint8Array | the decapsulation result of the KEM. |
+| Uint8Array | The decapsulation result of the KEM. |
 
 **Error codes:**
 
@@ -88,13 +118,37 @@ Key decapsulation operation. Using the receiver's private key, executed by the r
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+**Example**
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function kemDecapsulateSync() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = asyKeyGenerator.generateKeyPairSync();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = kem.encapsulateSync(keyPair.pubKey, null);
+    let sharedSecret = kem.decapsulateSync(keyPair.priKey, encapResult.wrappedKey);
+    console.info('decapsulateSync success');
+    console.info('sharedSecret length: ' + sharedSecret.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`decapsulateSync failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+
+```
+
 ## encapsulate
 
 ```TypeScript
 encapsulate(pubKey: PubKey, ikme: Uint8Array | null): Promise<KemEncapResult>
 ```
 
-Key encapsulation operation. Using the recipient's public key, executed by the sender, to generate and encapsulate a shared key. This API uses a promise to return the result.
+Key encapsulation operation. Using the recipient's public key, executed by the sender, to generate and
+encapsulate a shared key. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -126,13 +180,42 @@ Key encapsulation operation. Using the recipient's public key, executed by the s
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
 
+**Example**
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function kemEncapsulate() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = await asyKeyGenerator.generateKeyPair();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = await kem.encapsulate(keyPair.pubKey, null);
+    console.info('encapsulate success');
+    console.info('sharedSecret length: ' + encapResult.sharedSecret.length);
+    console.info('wrappedKey length: ' + encapResult.wrappedKey.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`encapsulate failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+
+```
+
 ## encapsulateSync
 
 ```TypeScript
 encapsulateSync(pubKey: PubKey, ikme: Uint8Array | null): KemEncapResult
 ```
 
-Key encapsulation operation. Using the recipient's public key, executed by the sender, to generate and encapsulate a shared key. <br><br>**NOTE** <br>It is recommended to prioritize the use of asynchronous API, {@link encapsulate}. Synchronous API may take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore, it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
+Key encapsulation operation. Using the recipient's public key, executed by the sender, to generate and
+encapsulate a shared key.
+
+<br><br>**NOTE**
+<br>It is recommended to prioritize the use of asynchronous API, {@link encapsulate}. Synchronous API may
+take a long time and block the main thread due to system busyness, high load, and other reasons. Therefore,
+it is advised to invoke synchronous API within a child thread to avoid blocking the main thread.
 
 **Since:** 26.0.0
 
@@ -153,7 +236,7 @@ Key encapsulation operation. Using the recipient's public key, executed by the s
 
 | Type | Description |
 | --- | --- |
-| KemEncapResult | the encapsulation result of the KEM. |
+| KemEncapResult | The encapsulation result of the KEM. |
 
 **Error codes:**
 
@@ -163,4 +246,27 @@ Key encapsulation operation. Using the recipient's public key, executed by the s
 | [17620002](../errorcode-crypto-framework.md#17620002-parameter-conversion-between-arkts-and-c-failed) | Failed to obtain the native object or convert parameters. |
 | [17620003](../errorcode-crypto-framework.md#17620003-parameter-verification-failed) | Parameter check failed. |
 | [17630001](../errorcode-crypto-framework.md#17630001-crypto-operation-error) | Crypto operation error. |
+
+**Example**
+
+```TypeScript
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function kemEncapsulateSync() {
+  try {
+    let asyKeyGenerator = cryptoFramework.createAsyKeyGenerator('ML-KEM-768');
+    let keyPair = asyKeyGenerator.generateKeyPairSync();
+    let kem = cryptoFramework.createKem(cryptoFramework.KemAlgNameId.ML_KEM_768);
+    let encapResult = kem.encapsulateSync(keyPair.pubKey, null);
+    console.info('encapsulateSync success');
+    console.info('sharedSecret length: ' + encapResult.sharedSecret.length);
+    console.info('wrappedKey length: ' + encapResult.wrappedKey.length);
+  } catch (err) {
+    let e: BusinessError = err as BusinessError;
+    console.error(`encapsulateSync failed: errCode: ${e.code}, errMsg: ${e.message}`);
+  }
+}
+
+```
 

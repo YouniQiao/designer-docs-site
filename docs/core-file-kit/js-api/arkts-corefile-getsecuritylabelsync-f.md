@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { securityLabel } from '@ohos.file.securityLabel';
+import { securityLabel } from '@kit.CoreFileKit';
 ```
 
 ## getSecurityLabelSync
@@ -12,7 +12,8 @@ import { securityLabel } from '@ohos.file.securityLabel';
 function getSecurityLabelSync(path: string): string
 ```
 
-Obtains the data security level of a file or directory in synchronous mode. If no data security level has been set, **s3** is returned by default.
+Obtains the data security level of a file or directory in synchronous mode. If no data security level has been set,
+**s3** is returned by default.
 
 **Since:** 9
 

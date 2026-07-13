@@ -6,7 +6,11 @@
 function spring(velocity: number, mass: number, stiffness: number, damping: number): string
 ```
 
-构造弹簧曲线对象。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves.springCurve](arkts-arkui-springcurve-f.md#springcurve-1)替代。
+构造弹簧曲线对象。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。建议使用[Curves.springCurve](arkts-arkui-springcurve-f.md#springcurve-1)替代。
 
 **起始版本：** 7
 

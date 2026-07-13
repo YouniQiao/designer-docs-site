@@ -1,18 +1,14 @@
-# VideoRecorder
+# VideoRecorder（系统接口）
 
-The maintenance of this interface has been stopped since version api 9. Please use AVRecorder. Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder() to create an VideoRecorder instance.
+The maintenance of this interface has been stopped since version api 9. Please use AVRecorder.
+Manages and record video. Before calling an VideoRecorder method, you must use createVideoRecorder()
+to create an VideoRecorder instance.
 
 **起始版本：** 9
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
 
 **系统接口：** 此接口为系统接口。
-
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
 
 ## getInputSurface
 
@@ -32,16 +28,16 @@ get input surface.it must be called between prepare completed and start.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string> | 是 | Callback used to return the input surface id in string. |
+| callback | AsyncCallback&lt;string&gt; | 是 | Callback used to return the input surface id in string. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -64,35 +60,6 @@ videoRecorder.getInputSurface((err: BusinessError, surfaceId: string) => {
 ## getInputSurface
 
 ```TypeScript
-getInputSurface(callback: AsyncCallback<string | undefined>): void
-```
-
-get input surface.it must be called between prepare completed and start.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string \| undefined> | 是 | Callback used to return the input surface id in string. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not System App. |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-
-## getInputSurface
-
-```TypeScript
 getInputSurface(): Promise<string>
 ```
 
@@ -108,16 +75,16 @@ get input surface. it must be called between prepare completed and start.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string> | A Promise instance used to return the input surface id in string. |
+| Promise&lt;string&gt; | A Promise instance used to return the input surface id in string. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -134,35 +101,6 @@ videoRecorder.getInputSurface().then((surfaceId: string) => {
 });
 
 ```
-
-## getInputSurface
-
-```TypeScript
-getInputSurface(): Promise<string | undefined>
-```
-
-get input surface. it must be called between prepare completed and start.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;string \| undefined> | A Promise instance used to return the input surface id in string. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not System App. |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
 
 ## on('error')
 
@@ -189,10 +127,10 @@ Listens for video recording error events.
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 201 | permission denied. [since 12] |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [201](../../errorcode-universal.md#201-权限校验失败) | permission denied.<br>**适用版本：** 12+ |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -205,35 +143,6 @@ videoRecorder.on('error', (error: BusinessError) => { // 设置'error'事件回�
 })
 
 ```
-
-## onError
-
-```TypeScript
-onError(callback: ErrorCallback): void
-```
-
-Listens for video recording error events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | ErrorCallback | 是 | Callback used to listen for the video recording error event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | permission denied. |
-| 202 | Not System App. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
 
 ## pause
 
@@ -253,16 +162,16 @@ Pauses video recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when pause completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when pause completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -298,16 +207,16 @@ Pauses video recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when pause completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when pause completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -333,9 +242,7 @@ Prepares for recording.
 
 **起始版本：** 9
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
 
@@ -346,17 +253,17 @@ Prepares for recording.
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | config | VideoRecorderConfig | 是 | Recording parameters. |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when prepare completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when prepare completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. Return by callback. |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3.Parameter verification failed. |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -407,9 +314,7 @@ Prepares for recording.
 
 **起始版本：** 9
 
-**需要权限：** 
-
- ohos.permission.MICROPHONE
+**需要权限：** ohos.permission.MICROPHONE
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
 
@@ -425,17 +330,17 @@ Prepares for recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when prepare completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when prepare completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 201 | Permission denied. Return by promise. |
-| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3.Parameter verification failed. |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -492,14 +397,14 @@ Releases resources used for video recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when release completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when release completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -535,14 +440,14 @@ Releases resources used for video recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when release completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when release completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -564,7 +469,9 @@ videoRecorder.release().then(() => {
 reset(callback: AsyncCallback<void>): void
 ```
 
-Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
+Resets video recording.
+Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
+you must call prepare() to set the recording configurations for another recording.
 
 **起始版本：** 9
 
@@ -576,15 +483,15 @@ Resets video recording. Before resetting video recording, you must call stop() t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when reset completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when reset completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -608,7 +515,9 @@ videoRecorder.reset((err: BusinessError) => {
 reset(): Promise<void>
 ```
 
-Resets video recording. Before resetting video recording, you must call stop() to stop recording. After video recording is reset, you must call prepare() to set the recording configurations for another recording.
+Resets video recording.
+Before resetting video recording, you must call stop() to stop recording. After video recording is reset,
+you must call prepare() to set the recording configurations for another recording.
 
 **起始版本：** 9
 
@@ -620,15 +529,15 @@ Resets video recording. Before resetting video recording, you must call stop() t
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when reset completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when reset completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -662,16 +571,16 @@ Resumes video recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when resume completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when resume completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -707,16 +616,16 @@ Resumes video recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when resume completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when resume completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -750,16 +659,16 @@ Starts video recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when start completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when start completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -795,16 +704,16 @@ Starts video recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when start completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when start completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -838,16 +747,16 @@ Stops video recording.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | A callback instance used to return when stop completed. |
+| callback | AsyncCallback&lt;void&gt; | 是 | A callback instance used to return when stop completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by callback. |
-| 5400103 | I/O error. Return by callback. |
-| 5400105 | Service died. Return by callback. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by callback. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by callback. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -883,16 +792,16 @@ Stops video recording.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return when stop completed. |
+| Promise&lt;void&gt; | A Promise instance used to return when stop completed. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 5400102 | Operation not allowed. Return by promise. |
-| 5400103 | I/O error. Return by promise. |
-| 5400105 | Service died. Return by promise. |
-| 202 | Not System App. [since 12] |
+| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| [5400103](../errorcode-media.md#5400103-出现io错误) | I/O error. Return by promise. |
+| [5400105](../errorcode-media.md#5400105-播放服务死亡) | Service died. Return by promise. |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12+ |
 
 **示例：**
 

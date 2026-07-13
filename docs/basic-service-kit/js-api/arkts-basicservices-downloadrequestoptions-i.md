@@ -1,19 +1,22 @@
 # DownloadRequestOptions
 
-> **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. You are advised to use > [UploadConfig](arkts-basicservices-config-i.md#config) instead.
+> **NOTE**
+>
+> This API has been supported since API version 3 and deprecated since API version 9. You are advised to use
+> [UploadConfig](arkts-basicservices-config-i.md) instead.
 
 **Since:** 3
 
 **Deprecated since:** 9
 
-**Substitutes:** [UploadConfig](arkts-basicservices-uploadconfig-i.md#uploadconfig)
+**Substitutes:** [UploadConfig](arkts-basicservices-uploadconfig-i.md)
 
 **System capability:** SystemCapability.MiscServices.Download
 
 ## Modules to Import
 
 ```TypeScript
-import { UploadResponse, RequestData, DownloadRequestOptions, DownloadResponse, RequestFile, OnDownloadCompleteOptions, OnDownloadCompleteResponse, UploadRequestOptions } from '@system.request';
+import { UploadResponse, RequestData, DownloadRequestOptions, DownloadResponse, RequestFile, OnDownloadCompleteOptions, OnDownloadCompleteResponse, UploadRequestOptions } from '@kit.BasicServicesKit';
 ```
 
 ## complete
@@ -40,7 +43,8 @@ Called when API call is complete.
 description?: string
 ```
 
-Download description. The default value is the file name.
+Download description.
+The default value is the file name.
 
 **Type:** string
 
@@ -76,7 +80,8 @@ Called when downloading fails.
 filename?: string
 ```
 
-Name of the file to downloaded. The value is obtained from the current request or resource URL by default.
+Name of the file to downloaded.
+The value is obtained from the current request or resource URL by default.
 
 **Type:** string
 

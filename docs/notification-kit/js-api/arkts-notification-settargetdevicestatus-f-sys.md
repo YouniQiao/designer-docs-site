@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setTargetDeviceStatus
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function setTargetDeviceStatus(deviceType: string, status: number): Promise<void>
 ```
 
-Sets the status of a device after it is successfully connected. Device status determines the notification mode of the current device when a notification is published.
+Sets the status of a device after it is successfully connected. Device status determines the notification mode of
+the current device when a notification is published.
 
 **Since:** 18
 

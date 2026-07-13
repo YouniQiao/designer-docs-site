@@ -1,6 +1,22 @@
 # ResourceManager
 
-提供访问应用资源和系统资源的能力。 > **说明：** > > - ResourceManager涉及到的方法，仅限基于TS扩展的声明式开发范式使用。 > > - 资源文件在工程的resources目录中定义，通过resName、resId、Resource对象等可以获取对应的字符串、字符串数组、颜色等资源值，resName为资源名称，resId可通过`$r(资源地址).id`的方式 > 获取，例如`$r('app.string.test').id`。 > > - 单HAP包获取自身资源、跨HAP/HSP包获取资源，由于入参为Resource的接口相比于入参为resName、resId的接口耗时更长，因此更推荐使用参数为resName或resId的接口。跨HAP/HSP包获取资源， > **需要先使用[createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-createmodulecontext-f.md#createmodulecontext-1)创建对应module的context** > ，再调用参数为resName或resId的接口。更多请参考[资源访问](../../../../quick-start/resource-categories-and-access.md#资源访问)。 > > - 在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源， > 更多请参考[资源访问](../../../../quick-start/resource-categories-and-access.md#资源访问)。 > > - 示例代码中test文件的具体内容请参考[附录](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#附录)。
+提供访问应用资源和系统资源的能力。
+
+> **说明：**
+>
+> - ResourceManager涉及到的方法，仅限基于TS扩展的声明式开发范式使用。
+>
+> - 资源文件在工程的resources目录中定义，通过resName、resId、Resource对象等可以获取对应的字符串、字符串数组、颜色等资源值，resName为资源名称，resId可通过`$r(资源地址).id`的方式
+> 获取，例如`$r('app.string.test').id`。
+>
+> - 单HAP包获取自身资源、跨HAP/HSP包获取资源，由于入参为Resource的接口相比于入参为resName、resId的接口耗时更长，因此更推荐使用参数为resName或resId的接口。跨HAP/HSP包获取资源，
+> **需要先使用[createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-createmodulecontext-f.md#createmodulecontext-1)创建对应module的context**
+> ，再调用参数为resName或resId的接口。更多请参考[资源访问](../../../../quick-start/resource-categories-and-access.md#资源访问)。
+>
+> - 在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源，
+> 更多请参考[资源访问](../../../../quick-start/resource-categories-and-access.md#资源访问)。
+>
+> - 示例代码中test文件的具体内容请参考[附录](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#附录)。
 
 **起始版本：** 6
 
@@ -12,7 +28,11 @@
 addResource(path: string) : void
 ```
 
-应用运行时加载指定的资源路径，实现资源覆盖。 > **说明** > > rawfile和resfile目录不支持资源覆盖。
+应用运行时加载指定的资源路径，实现资源覆盖。
+
+> **说明**
+>
+> rawfile和resfile目录不支持资源覆盖。
 
 **起始版本：** 10
 
@@ -30,7 +50,7 @@ addResource(path: string) : void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001010](../errorcode-resource-manager.md#9001010-无效的overlay路径) | Invalid overlay path. |
 
 **示例：**
@@ -80,7 +100,7 @@ closeRawFd(path: string, callback: _AsyncCallback<void>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -142,7 +162,7 @@ closeRawFd(path: string): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -193,7 +213,7 @@ closeRawFdSync(path: string): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -328,10 +348,10 @@ getBoolean(resId: number): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -405,10 +425,10 @@ getBoolean(resource: Resource): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -476,10 +496,10 @@ getBooleanByName(resName: string): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -542,10 +562,10 @@ getColor(resId: number, callback: _AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 ## getColor
 
@@ -577,10 +597,10 @@ getColor(resId: number): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -648,10 +668,10 @@ getColor(resource: Resource, callback: _AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -724,10 +744,10 @@ getColor(resource: Resource): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -789,10 +809,10 @@ getColorByName(resName: string, callback: _AsyncCallback<number>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -859,10 +879,10 @@ getColorByName(resName: string): Promise<number>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -929,10 +949,10 @@ getColorByNameSync(resName: string) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -1000,10 +1020,10 @@ getColorSync(resId: number) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -1077,10 +1097,10 @@ getColorSync(resource: Resource) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -1148,12 +1168,12 @@ import { resourceManager } from '@kit.LocalizationKit';
 export default class EntryAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
         try {
-            this.context.resourceManager.getConfiguration((error: BusinessError, value: resourceManager.Configuration) => {
+            this.context.resourceManager.getConfiguration((error: BusinessError, config: resourceManager.Configuration) => {
                 if (error != null) {
                     console.error("getConfiguration callback error is " + error);
                 } else {
-                    let direction = value.direction;
-                    let locale = value.locale;
+                    let direction = config.direction;
+                    let locale = config.locale;
                 }
             });
         } catch (error) {
@@ -1194,9 +1214,9 @@ import { resourceManager } from '@kit.LocalizationKit';
 export default class EntryAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
         try {
-            this.context.resourceManager.getConfiguration().then((value: resourceManager.Configuration) => {
-                let direction = value.direction;
-                let locale = value.locale;
+            this.context.resourceManager.getConfiguration().then((config: resourceManager.Configuration) => {
+                let direction = config.direction;
+                let locale = config.locale;
             }).catch((error: BusinessError) => {
                 console.error("getConfiguration promise error is " + error);
             });
@@ -1382,7 +1402,14 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-获取指定资源名称对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。 > > - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
+获取指定资源名称对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+>
+> - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
 
 **起始版本：** 18
 
@@ -1409,8 +1436,8 @@ getDoublePluralStringByNameSync(resName: string, num: number, ...args: Array<str
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-根据当前名称获取的资源格式化失败) | Failed to format the resource obtained based on the resource name. |
 
 **示例：**
@@ -1466,7 +1493,14 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringValueSync(resId: number, num: number, ...args: Array<string | number>): string
 ```
 
-获取指定资源ID对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。 > > - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
+获取指定资源ID对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+>
+> - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
 
 **起始版本：** 18
 
@@ -1493,8 +1527,8 @@ getDoublePluralStringValueSync(resId: number, num: number, ...args: Array<string
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -1550,7 +1584,12 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-获取指定resource对象对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定resource对象对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 18
 
@@ -1583,8 +1622,8 @@ getDoublePluralStringValueSync(resource: Resource, num: number, ...args: Array<s
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -1667,9 +1706,9 @@ getDrawableDescriptor(resId: number, density?: number, type?: number): DrawableD
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -1715,7 +1754,14 @@ export default class EntryAbility extends UIAbility {
 getDrawableDescriptor(resource: Resource, density?: number, type?: number): DrawableDescriptor
 ```
 
-获取指定resource对应的DrawableDescriptor对象，用于图标的显示，使用同步方式返回。 > **说明** > > 从API version 10开始支持，从API version 20开始废弃，建议使用 > [getDrawableDescriptorByName](arkts-localization-resourcemanager-i.md#getdrawabledescriptorbyname-1)或 > [getDrawableDescriptor](arkts-localization-resourcemanager-i.md#getdrawabledescriptor-1) > 替代。
+获取指定resource对应的DrawableDescriptor对象，用于图标的显示，使用同步方式返回。
+
+> **说明**
+>
+> 从API version 10开始支持，从API version 20开始废弃，建议使用
+> [getDrawableDescriptorByName](arkts-localization-resourcemanager-i.md#getdrawabledescriptorbyname-1)或
+> [getDrawableDescriptor](arkts-localization-resourcemanager-i.md#getdrawabledescriptor-1)
+> 替代。
 
 **起始版本：** 10
 
@@ -1747,9 +1793,9 @@ getDrawableDescriptor(resource: Resource, density?: number, type?: number): Draw
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -1819,9 +1865,9 @@ getDrawableDescriptorByName(resName: string, density?: number, type?: number): D
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -1867,7 +1913,14 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-获取指定资源名称对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。 > > - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
+获取指定资源名称对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+>
+> - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
 
 **起始版本：** 18
 
@@ -1894,8 +1947,8 @@ getIntPluralStringByNameSync(resName: string, num: number, ...args: Array<string
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-根据当前名称获取的资源格式化失败) | Failed to format the resource obtained based on the resource name. |
 
 **示例：**
@@ -1951,7 +2004,14 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringValueSync(resId: number, num: number,...args: Array<string | number>): string
 ```
 
-获取指定资源ID对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。 > > - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
+获取指定资源ID对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> - 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+>
+> - 在英语、德语等语言中，单复数类型包括基数词（如1、2、3）和序数词（如1st、2nd、3rd），本接口仅支持在基数词类型下使用。
 
 **起始版本：** 18
 
@@ -1978,8 +2038,8 @@ getIntPluralStringValueSync(resId: number, num: number,...args: Array<string | n
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -2035,7 +2095,12 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-获取指定resource对象对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定resource对象对应的[单复数](../../../../internationalization/l10n-singular-plural.md)字符串，并根据args参数对字符串进行格式化，使用同步方式返回。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 18
 
@@ -2068,8 +2133,8 @@ getIntPluralStringValueSync(resource: Resource, num: number, ...args: Array<stri
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -2150,7 +2215,7 @@ getLocales(includeSystem?: boolean): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 
 **示例：**
 
@@ -2376,9 +2441,9 @@ getMediaBase64ByName(resName: string, callback: _AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2433,9 +2498,9 @@ getMediaBase64ByName(resName: string, density: number, callback: _AsyncCallback<
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2494,9 +2559,9 @@ getMediaBase64ByName(resName: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2554,9 +2619,9 @@ getMediaBase64ByName(resName: string, density: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2614,9 +2679,9 @@ getMediaBase64ByNameSync(resName: string, density?: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2673,9 +2738,9 @@ getMediaByName(resName: string, callback: _AsyncCallback<Uint8Array>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2730,9 +2795,9 @@ getMediaByName(resName: string, density: number, callback: _AsyncCallback<Uint8A
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2791,9 +2856,9 @@ getMediaByName(resName: string): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2851,9 +2916,9 @@ getMediaByName(resName: string, density: number): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2911,9 +2976,9 @@ getMediaByNameSync(resName: string, density?: number): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
 
 **示例：**
 
@@ -2976,9 +3041,9 @@ getMediaContent(resource: Resource, callback: _AsyncCallback<Uint8Array>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3039,9 +3104,9 @@ getMediaContent(resource: Resource, density: number, callback: _AsyncCallback<Ui
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3106,9 +3171,9 @@ getMediaContent(resource: Resource): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3172,9 +3237,9 @@ getMediaContent(resource: Resource, density: number): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3226,9 +3291,9 @@ getMediaContent(resId: number, callback: _AsyncCallback<Uint8Array>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3284,9 +3349,9 @@ getMediaContent(resId: number, density: number, callback: _AsyncCallback<Uint8Ar
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3345,9 +3410,9 @@ getMediaContent(resId: number): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3405,9 +3470,9 @@ getMediaContent(resId: number, density: number): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3465,9 +3530,9 @@ getMediaContentBase64(resource: Resource, callback: _AsyncCallback<string>): voi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3528,9 +3593,9 @@ getMediaContentBase64(resource: Resource, density: number, callback: _AsyncCallb
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3595,9 +3660,9 @@ getMediaContentBase64(resource: Resource): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3661,9 +3726,9 @@ getMediaContentBase64(resource: Resource, density: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3715,9 +3780,9 @@ getMediaContentBase64(resId: number, callback: _AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3772,9 +3837,9 @@ getMediaContentBase64(resId: number, density: number, callback: _AsyncCallback<s
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3833,9 +3898,9 @@ getMediaContentBase64(resId: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3893,9 +3958,9 @@ getMediaContentBase64(resId: number, density: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -3953,9 +4018,9 @@ getMediaContentBase64Sync(resId: number, density?: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -4024,9 +4089,9 @@ getMediaContentBase64Sync(resource: Resource, density?: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -4088,9 +4153,9 @@ getMediaContentSync(resId: number, density?: number): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Incorrect parameter types;2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -4159,9 +4224,9 @@ getMediaContentSync(resource: Resource, density?: number): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: 1.Incorrect parameter types; 2.Parameter verification failed. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
 
 **示例：**
 
@@ -4222,10 +4287,10 @@ getNumber(resId: number): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4326,10 +4391,10 @@ getNumber(resource: Resource): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4398,10 +4463,10 @@ getNumberByName(resName: string): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4472,7 +4537,9 @@ export default class EntryAbility extends UIAbility {
 getOverrideConfiguration(): Configuration
 ```
 
-获取差异化资源的配置，使用同步方式返回。普通资源管理对象与通过它的 [getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1)接口获取的差异化资源管理对象调用该方法 可获得相同的返回值。
+获取差异化资源的配置，使用同步方式返回。普通资源管理对象与通过它的
+[getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1)接口获取的差异化资源管理对象调用该方法
+可获得相同的返回值。
 
 **起始版本：** 12
 
@@ -4516,7 +4583,8 @@ export default class EntryAbility extends UIAbility {
 getOverrideResourceManager(configuration?: Configuration): ResourceManager
 ```
 
-获取可以加载差异化资源的资源管理对象，使用同步方式返回。 普通的资源管理对象获取的资源的配置（语言、深浅色、分辨率、横竖屏等）是由系统决定的，而通过该接口返回的对象，应用可以获取符合指定配置的资源，即差异化资源，比如在浅色模式时可以获取深色资源。
+获取可以加载差异化资源的资源管理对象，使用同步方式返回。
+普通的资源管理对象获取的资源的配置（语言、深浅色、分辨率、横竖屏等）是由系统决定的，而通过该接口返回的对象，应用可以获取符合指定配置的资源，即差异化资源，比如在浅色模式时可以获取深色资源。
 
 **起始版本：** 12
 
@@ -4540,7 +4608,7 @@ getOverrideResourceManager(configuration?: Configuration): ResourceManager
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 
 **示例：**
 
@@ -4572,7 +4640,12 @@ export default class EntryAbility extends UIAbility {
 getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void
 ```
 
-获取指定资源ID，指定资源数量的单复数字符串，使用callback异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源ID，指定资源数量的单复数字符串，使用callback异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 6
 
@@ -4613,7 +4686,12 @@ resourceManager.getResourceManager((error, mgr) => {
 getPluralString(resId: number, num: number): Promise<string>
 ```
 
-获取指定资源ID，指定资源数量的单复数字符串，使用Promise异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源ID，指定资源数量的单复数字符串，使用Promise异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 6
 
@@ -4657,7 +4735,12 @@ resourceManager.getResourceManager((error, mgr) => {
 getPluralStringByName(resName: string, num: number, callback: _AsyncCallback<string>): void
 ```
 
-获取指定资源名称，指定资源数量的单复数字符串，使用callback异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源名称，指定资源数量的单复数字符串，使用callback异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -4681,10 +4764,10 @@ getPluralStringByName(resName: string, num: number, callback: _AsyncCallback<str
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4732,7 +4815,12 @@ this.context.resourceManager.getPluralStringByName("test", 1, (error: BusinessEr
 getPluralStringByName(resName: string, num: number): Promise<string>
 ```
 
-获取指定资源名称，指定资源数量的单复数字符串，使用Promise异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源名称，指定资源数量的单复数字符串，使用Promise异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -4761,10 +4849,10 @@ getPluralStringByName(resName: string, num: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4812,7 +4900,12 @@ this.context.resourceManager.getPluralStringByName("test", 1)
 getPluralStringByNameSync(resName: string, num: number): string
 ```
 
-获取指定资源名称，指定资源数量的单复数字符串，使用同步方式返回。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源名称，指定资源数量的单复数字符串，使用同步方式返回。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 10
 
@@ -4841,10 +4934,10 @@ getPluralStringByNameSync(resName: string, num: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4893,7 +4986,12 @@ try {
 getPluralStringValue(resource: Resource, num: number, callback: _AsyncCallback<string>): void
 ```
 
-获取指定资源信息，指定资源数量的单复数字符串，使用callback异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源信息，指定资源数量的单复数字符串，使用callback异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -4919,10 +5017,10 @@ getPluralStringValue(resource: Resource, num: number, callback: _AsyncCallback<s
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -4977,7 +5075,12 @@ this.context.resourceManager.getPluralStringValue(resource, 1,
 getPluralStringValue(resource: Resource, num: number): Promise<string>
 ```
 
-获取指定资源信息，指定资源数量的单复数字符串，使用Promise异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源信息，指定资源数量的单复数字符串，使用Promise异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -5008,10 +5111,10 @@ getPluralStringValue(resource: Resource, num: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -5065,7 +5168,12 @@ this.context.resourceManager.getPluralStringValue(resource, 1)
 getPluralStringValue(resId: number, num: number, callback: _AsyncCallback<string>): void
 ```
 
-获取指定资源ID，指定资源数量的单复数字符串，使用callback异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源ID，指定资源数量的单复数字符串，使用callback异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -5089,10 +5197,10 @@ getPluralStringValue(resId: number, num: number, callback: _AsyncCallback<string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -5141,7 +5249,12 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1,
 getPluralStringValue(resId: number, num: number): Promise<string>
 ```
 
-获取指定资源ID，指定资源数量的单复数字符串，使用Promise异步回调。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源ID，指定资源数量的单复数字符串，使用Promise异步回调。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 9
 
@@ -5170,10 +5283,10 @@ getPluralStringValue(resId: number, num: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -5221,7 +5334,12 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1)
 getPluralStringValueSync(resId: number, num: number): string
 ```
 
-获取指定资源ID，指定资源数量的单复数字符串，使用同步方式返回。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源ID，指定资源数量的单复数字符串，使用同步方式返回。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 10
 
@@ -5250,10 +5368,10 @@ getPluralStringValueSync(resId: number, num: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -5302,7 +5420,12 @@ try {
 getPluralStringValueSync(resource: Resource, num: number): string
 ```
 
-获取指定资源信息，指定资源数量的单复数字符串，使用同步方式返回。 > **说明** > > 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考 > [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
+获取指定资源信息，指定资源数量的单复数字符串，使用同步方式返回。
+
+> **说明**
+>
+> 中文环境下，字符串不区分单复数；其他语言环境下，字符串区分单复数，具体规则参考
+> [语言单复数规则](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html)。
 
 **起始版本：** 10
 
@@ -5333,10 +5456,10 @@ getPluralStringValueSync(resource: Resource, num: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -5391,7 +5514,13 @@ try {
 getRawFd(path: string, callback: _AsyncCallback<RawFileDescriptor>): void
 ```
 
-获取resources/rawfile目录下对应rawfile文件所在HAP的文件描述符（fd），使用callback异步回调。 > **说明** > > 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或 > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭 > fd，避免资源泄露。
+获取resources/rawfile目录下对应rawfile文件所在HAP的文件描述符（fd），使用callback异步回调。
+
+> **说明**
+>
+> 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭
+> fd，避免资源泄露。
 
 **起始版本：** 9
 
@@ -5410,7 +5539,7 @@ getRawFd(path: string, callback: _AsyncCallback<RawFileDescriptor>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5449,7 +5578,13 @@ export default class EntryAbility extends UIAbility {
 getRawFd(path: string): Promise<RawFileDescriptor>
 ```
 
-获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd），使用Promise异步回调。 > **说明** > > 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或 > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭 > fd，避免资源泄露。
+获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd），使用Promise异步回调。
+
+> **说明**
+>
+> 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭
+> fd，避免资源泄露。
 
 **起始版本：** 9
 
@@ -5473,7 +5608,7 @@ getRawFd(path: string): Promise<RawFileDescriptor>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5510,7 +5645,13 @@ export default class EntryAbility extends UIAbility {
 getRawFdSync(path: string): RawFileDescriptor
 ```
 
-获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd），使用同步方式返回。 > **说明** > > 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或 > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭 > fd，避免资源泄露。
+获取resources/rawfile目录下rawfile文件所在HAP的文件描述符（fd），使用同步方式返回。
+
+> **说明**
+>
+> 文件描述符（fd）使用完毕后需调用[closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1)或
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1)关闭
+> fd，避免资源泄露。
 
 **起始版本：** 10
 
@@ -5534,7 +5675,7 @@ getRawFdSync(path: string): RawFileDescriptor
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5666,7 +5807,7 @@ getRawFileContent(path: string, callback: _AsyncCallback<Uint8Array>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5726,7 +5867,7 @@ getRawFileContent(path: string): Promise<Uint8Array>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5784,7 +5925,7 @@ getRawFileContentSync(path: string): Uint8Array
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5901,7 +6042,11 @@ resourceManager.getResourceManager((error, mgr) => {
 getRawFileList(path: string, callback: _AsyncCallback<Array<string>>): void
 ```
 
-获取resources/rawfile目录下文件夹及文件列表，使用callback异步回调。 > **说明** > > 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
+获取resources/rawfile目录下文件夹及文件列表，使用callback异步回调。
+
+> **说明**
+>
+> 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
 
 **起始版本：** 10
 
@@ -5920,7 +6065,7 @@ getRawFileList(path: string, callback: _AsyncCallback<Array<string>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -5952,7 +6097,11 @@ export default class EntryAbility extends UIAbility {
 getRawFileList(path: string): Promise<Array<string>>
 ```
 
-获取resources/rawfile目录下文件夹及文件列表，使用Promise异步回调。 > **说明** > > 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
+获取resources/rawfile目录下文件夹及文件列表，使用Promise异步回调。
+
+> **说明**
+>
+> 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
 
 **起始版本：** 10
 
@@ -5976,7 +6125,7 @@ getRawFileList(path: string): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -6008,7 +6157,11 @@ export default class EntryAbility extends UIAbility {
 getRawFileListSync(path: string): Array<string>
 ```
 
-获取resources/rawfile目录下文件夹及文件列表，使用同步形式返回。 > **说明** > > 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
+获取resources/rawfile目录下文件夹及文件列表，使用同步形式返回。
+
+> **说明**
+>
+> 若文件夹中无文件，则抛出异常；若文件夹中有文件，则返回文件夹及文件列表。
 
 **起始版本：** 10
 
@@ -6032,7 +6185,7 @@ getRawFileListSync(path: string): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -6316,10 +6469,10 @@ getStringArrayByName(resName: string, callback: _AsyncCallback<Array<string>>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6391,10 +6544,10 @@ getStringArrayByName(resName: string): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6465,10 +6618,10 @@ getStringArrayByNameSync(resName: string): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6541,10 +6694,10 @@ getStringArrayValue(resource: Resource, callback: _AsyncCallback<Array<string>>)
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6621,10 +6774,10 @@ getStringArrayValue(resource: Resource): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6690,10 +6843,10 @@ getStringArrayValue(resId: number, callback: _AsyncCallback<Array<string>>): voi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6765,10 +6918,10 @@ getStringArrayValue(resId: number): Promise<Array<string>>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6839,10 +6992,10 @@ getStringArrayValueSync(resId: number): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6920,10 +7073,10 @@ getStringArrayValueSync(resource: Resource): Array<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -6990,10 +7143,10 @@ getStringByName(resName: string, callback: _AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7060,10 +7213,10 @@ getStringByName(resName: string): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7128,10 +7281,10 @@ getStringByNameSync(resName: string): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7200,10 +7353,10 @@ getStringByNameSync(resName: string, ...args: Array<string | number>): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001008](../errorcode-resource-manager.md#9001008-根据当前名称获取的资源格式化失败) | Failed to format the resource obtained based on the resource Name. |
 
 **示例：**
@@ -7272,10 +7425,10 @@ getStringSync(resId: number): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7344,10 +7497,10 @@ getStringSync(resId: number, ...args: Array<string | number>): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -7422,10 +7575,10 @@ getStringSync(resource: Resource): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7500,10 +7653,10 @@ getStringSync(resource: Resource, ...args: Array<string | number>): string
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 | [9001007](../errorcode-resource-manager.md#9001007-根据当前id获取的资源格式化失败) | Failed to format the resource obtained based on the resource ID. |
 
 **示例：**
@@ -7573,10 +7726,10 @@ getStringValue(resource: Resource, callback: _AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7649,10 +7802,10 @@ getStringValue(resource: Resource): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7701,10 +7854,10 @@ getStringValue(resId: number, callback: _AsyncCallback<string>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 ## getStringValue
 
@@ -7736,10 +7889,10 @@ getStringValue(resId: number): Promise<string>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7804,10 +7957,10 @@ getSymbol(resId: number) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7868,10 +8021,10 @@ getSymbol(resource: Resource) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001001](../errorcode-resource-manager.md#9001001-无效的资源id) | Invalid resource ID. |
-| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id找不到匹配的资源) | No matching resource is found based on the resource ID. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001002](../errorcode-resource-manager.md#9001002-根据当前资源id未找到匹配的资源) | No matching resource is found based on the resource ID. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7926,10 +8079,10 @@ getSymbolByName(resName: string) : number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: Incorrect parameter types. |
 | [9001003](../errorcode-resource-manager.md#9001003-无效的资源名称) | Invalid resource name. |
-| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称找不到匹配的资源) | No matching resource is found based on the resource name. |
-| [9001006](../errorcode-resource-manager.md#9001006-循环引用) | The resource is referenced cyclically. |
+| [9001004](../errorcode-resource-manager.md#9001004-根据当前资源名称未找到匹配的资源) | No matching resource is found based on the resource name. |
+| [9001006](../errorcode-resource-manager.md#9001006-资源存在循环引用) | The resource is referenced cyclically. |
 
 **示例：**
 
@@ -7984,7 +8137,7 @@ isRawDir(path: string): boolean
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001005](../errorcode-resource-manager.md#9001005-无效的相对路径) | Invalid relative path. |
 
 **示例：**
@@ -8050,7 +8203,11 @@ try {
 removeResource(path: string) : void
 ```
 
-应用运行时移除指定的资源路径，还原被覆盖前的资源。 > **说明** > > rawfile和resfile目录不支持资源覆盖。
+应用运行时移除指定的资源路径，还原被覆盖前的资源。
+
+> **说明**
+>
+> rawfile和resfile目录不支持资源覆盖。
 
 **起始版本：** 10
 
@@ -8068,7 +8225,7 @@ removeResource(path: string) : void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 | [9001010](../errorcode-resource-manager.md#9001010-无效的overlay路径) | Invalid overlay path. |
 
 **示例：**
@@ -8099,7 +8256,9 @@ export default class EntryAbility extends UIAbility {
 updateOverrideConfiguration(configuration: Configuration): void
 ```
 
-更新差异化资源配置。普通资源管理对象与通过它的 [getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1)接口获取的差异化资源管理对象调用该方法 均可更新差异化资源管理对象的配置。
+更新差异化资源配置。普通资源管理对象与通过它的
+[getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1)接口获取的差异化资源管理对象调用该方法
+均可更新差异化资源管理对象的配置。
 
 **起始版本：** 12
 
@@ -8117,7 +8276,7 @@ updateOverrideConfiguration(configuration: Configuration): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | If the input parameter invalid. Possible causes: Incorrect parameter types. |
 
 **示例：**
 

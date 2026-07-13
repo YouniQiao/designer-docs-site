@@ -1,6 +1,19 @@
 # MemoryLevel
 
-Enumerates the memory levels of the entire device. You can use it in [onMemoryLevel()](arkts-ability-ability-c.md#onmemorylevel-1) of the UIAbility to complete different operations. > **NOTE** > > - The trigger conditions may differ across various devices. For example, on a standard device with 12 GB of > memory: > - When the available memory of the entire device drops to 1700 MB to 1800 MB, the **onMemoryLevel** callback > with a value of **0** is triggered, indicating that the available memory is moderate. > - When the available memory of the entire device drops to 1600 MB to 1700 MB, the **onMemoryLevel** callback > with a value of **1** is triggered, indicating that the available memory is low. > - When the available memory of the entire device drops below 1600 MB, the **onMemoryLevel** callback with a > value of **2** is triggered, indicating that the available memory is critically low.
+Enumerates the memory levels of the entire device. You can use it in
+[onMemoryLevel()](arkts-ability-ability-c.md#onmemorylevel-1) of the UIAbility to complete different
+operations.
+
+> **NOTE**
+>
+> - The trigger conditions may differ across various devices. For example, on a standard device with 12 GB of
+> memory:
+> - When the available memory of the entire device drops to 1700 MB to 1800 MB, the **onMemoryLevel** callback
+> with a value of **0** is triggered, indicating that the available memory is moderate.
+> - When the available memory of the entire device drops to 1600 MB to 1700 MB, the **onMemoryLevel** callback
+> with a value of **1** is triggered, indicating that the available memory is low.
+> - When the available memory of the entire device drops below 1600 MB, the **onMemoryLevel** callback with a
+> value of **2** is triggered, indicating that the available memory is critically low.
 
 **Since:** 9
 
@@ -12,7 +25,9 @@ Enumerates the memory levels of the entire device. You can use it in [onMemoryLe
 MEMORY_LEVEL_MODERATE = 0
 ```
 
-Indicates that the system has a moderate amount of available memory. Due to differences in system-wide memory thresholds across devices, the actual performance may vary by product. For details, please refer to the notes below.
+Indicates that the system has a moderate amount of available memory. Due to differences in system-wide memory
+thresholds across devices, the actual performance may vary by product. For details, please refer to the notes
+below.
 
 **Since:** 9
 
@@ -28,7 +43,8 @@ Indicates that the system has a moderate amount of available memory. Due to diff
 MEMORY_LEVEL_LOW = 1
 ```
 
-Indicates that the system has low available memory. Due to differences in system-wide memory thresholds across devices, the actual performance may vary by product. For details, please refer to the notes below.
+Indicates that the system has low available memory. Due to differences in system-wide memory thresholds across
+devices, the actual performance may vary by product. For details, please refer to the notes below.
 
 **Since:** 9
 
@@ -44,7 +60,9 @@ Indicates that the system has low available memory. Due to differences in system
 MEMORY_LEVEL_CRITICAL = 2
 ```
 
-Indicates that the system has critically low available memory. Due to differences in system-wide memory thresholds across devices, the actual performance may vary by product. For details, please refer to the notes below.
+Indicates that the system has critically low available memory. Due to differences in system-wide memory
+thresholds across devices, the actual performance may vary by product. For details, please refer to the notes
+below.
 
 **Since:** 9
 

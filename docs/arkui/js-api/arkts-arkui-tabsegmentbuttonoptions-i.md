@@ -1,8 +1,9 @@
 # TabSegmentButtonOptions
 
-Provides configuration options for tab-style segmented buttons. Inherits from [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md#tabsegmentbuttonconstructionoptions).
+Provides configuration options for tab-style segmented buttons. Inherits from
+[TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md).
 
-**Inheritance/Implementation:** TabSegmentButtonOptions extends [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md#tabsegmentbuttonconstructionoptions)
+**Inheritance/Implementation:** TabSegmentButtonOptions extends [TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md)
 
 **Since:** 11
 
@@ -11,7 +12,7 @@ Provides configuration options for tab-style segmented buttons. Inherits from [T
 ## Modules to Import
 
 ```TypeScript
-import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@ohos.arkui.advanced.SegmentButton';
+import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
 ## type
@@ -20,7 +21,13 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 type: "tab"
 ```
 
-Type of the **SegmentButton** component. **NOTE** **"tab"**: tab-style segmented buttons, designed for page or content section switching. **"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
+Type of the **SegmentButton** component.
+
+**NOTE**
+
+**"tab"**: tab-style segmented buttons, designed for page or content section switching.
+
+**"capsule"**: capsule-style segmented buttons, suitable for single or multiple selection scenarios.
 
 **Type:** "tab"
 

@@ -6,7 +6,8 @@
 getFloat32(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Float32 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Float32 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -27,7 +28,8 @@ Gets the Float32 value at the specified byte offset from the start of the view. 
 getFloat64(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Float64 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Float64 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -48,7 +50,8 @@ Gets the Float64 value at the specified byte offset from the start of the view. 
 getInt16(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Int16 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Int16 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -69,7 +72,8 @@ Gets the Int16 value at the specified byte offset from the start of the view. Th
 getInt32(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Int32 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Int32 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -90,7 +94,8 @@ Gets the Int32 value at the specified byte offset from the start of the view. Th
 getInt8(byteOffset: number): number
 ```
 
-Gets the Int8 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Int8 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -110,7 +115,8 @@ Gets the Int8 value at the specified byte offset from the start of the view. The
 getUint16(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Uint16 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Uint16 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -131,7 +137,8 @@ Gets the Uint16 value at the specified byte offset from the start of the view. T
 getUint32(byteOffset: number, littleEndian?: boolean): number
 ```
 
-Gets the Uint32 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Uint32 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 
@@ -152,7 +159,8 @@ Gets the Uint32 value at the specified byte offset from the start of the view. T
 getUint8(byteOffset: number): number
 ```
 
-Gets the Uint8 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be fetched from any offset.
+Gets the Uint8 value at the specified byte offset from the start of the view. There is
+no alignment constraint; multi-byte values may be fetched from any offset.
 
 **Parameters:**
 

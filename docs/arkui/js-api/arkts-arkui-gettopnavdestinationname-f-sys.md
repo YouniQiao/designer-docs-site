@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## getTopNavDestinationName
@@ -12,7 +12,9 @@ import { window } from '@ohos.window';
 function getTopNavDestinationName(windowId: number): Promise<string>
 ```
 
-Obtains the name of [NavDestination](NavDestination) in the current top-level [Navigation](Navigation) component of the specified foreground window. This API uses a promise to return the result.
+Obtains the name of [NavDestination](NavDestination) in the current top-level
+[Navigation](Navigation) component of the specified foreground window. This API
+uses a promise to return the result.
 
 **Since:** 20
 

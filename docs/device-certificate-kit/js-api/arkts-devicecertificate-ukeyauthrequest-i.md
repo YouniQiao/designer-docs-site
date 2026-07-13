@@ -9,7 +9,7 @@ USB key PIN authentication request.
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## keyUri
@@ -18,7 +18,9 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 keyUri: string
 ```
 
-Unique identifier of the USB Key credential. The value contains up to 256 bytes. The value of this parameter can be obtained from the CertReference returned by invoking the [openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-1) interface.
+Unique identifier of the USB Key credential. The value contains up to 256 bytes.
+The value of this parameter can be obtained from the CertReference returned by invoking the
+[openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-1) interface.
 
 **Type:** string
 

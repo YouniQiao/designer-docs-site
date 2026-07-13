@@ -6,11 +6,77 @@ Gif metadata.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## 导入模块
+## canvasHeight
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+readonly canvasHeight?: number
 ```
+
+Canvas height.
+Unit: px, The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## canvasWidth
+
+```TypeScript
+readonly canvasWidth?: number
+```
+
+Canvas width.
+Unit: px, The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## delayTime
+
+```TypeScript
+readonly delayTime?: number
+```
+
+Delay of each frame in milliseconds.
+Unit: ms, The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## disposalType
+
+```TypeScript
+readonly disposalType?: number
+```
+
+Disposal type of each frame in the image.
+0 - No disposal specified.
+1 - Do not dispose.
+2 - Restore to background color.
+3 - Restore to previous.
+The value range is all integers.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
 
 ## hasGlobalColorMap
 
@@ -28,47 +94,16 @@ whether the GIF image has a global color map.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## canvasWidth
-
-```TypeScript
-readonly canvasWidth?: int
-```
-
-Canvas width. Unit: px, The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
 ## loopCount
 
 ```TypeScript
-readonly loopCount?: int
+readonly loopCount?: number
 ```
 
-Loop count. The value range is all integers.
+Loop count.
+The value range is all integers.
 
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## disposalType
-
-```TypeScript
-readonly disposalType?: int
-```
-
-Disposal type of each frame in the image. 0 - No disposal specified. 1 - Do not dispose. 2 - Restore to background color. 3 - Restore to previous. The value range is all integers.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 
@@ -79,44 +114,13 @@ Disposal type of each frame in the image. 0 - No disposal specified. 1 - Do not 
 ## unclampedDelayTime
 
 ```TypeScript
-readonly unclampedDelayTime?: int
+readonly unclampedDelayTime?: number
 ```
 
-Unclamped delay of each frame in milliseconds. Unit: ms, The value should be an integer.
+Unclamped delay of each frame in milliseconds.
+Unit: ms, The value should be an integer.
 
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## delayTime
-
-```TypeScript
-readonly delayTime?: int
-```
-
-Delay of each frame in milliseconds. Unit: ms, The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## canvasHeight
-
-```TypeScript
-readonly canvasHeight?: int
-```
-
-Canvas height. Unit: px, The value should be an integer.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 26.0.0
 

@@ -276,7 +276,8 @@ export function getAttribute(node: FrameNode, nodeType: 'RelativeContainer'): Re
 export function getAttribute(node: FrameNode, nodeType: 'LoadingProgress'): LoadingProgressAttribute | undefined
 ```
 
-获取[LoadingProgress](../arkts-components/arkts-arkui-loadingprogress.md)节点的属性。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则返回undefined。该接口不支持声明式方式创 建的节点。
+获取[LoadingProgress](../arkts-components/arkts-arkui-loadingprogress.md)节点的属性。若该节点非ArkTS语言创建，则需要设置是否支持跨语言访问，如果不支持跨语言访问，则返回undefined。该接口不支持声明式方式创
+建的节点。
 
 **起始版本：** 20
 

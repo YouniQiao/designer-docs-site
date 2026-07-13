@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { overlay } from '@ohos.bundle.overlay';
+import { overlay } from '@kit.AbilityKit';
 ```
 
 ## getTargetOverlayModuleInfos
@@ -12,7 +12,9 @@ import { overlay } from '@ohos.bundle.overlay';
 function getTargetOverlayModuleInfos(targetModuleName: string, callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature generally provide an overlay resource file for other modules (target module) on the device. This API uses an asynchronous callback to return the result.
+Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature
+generally provide an overlay resource file for other modules (target module) on the device. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -23,7 +25,7 @@ Obtains the OverlayModuleInfo associated with the specified target module. Modul
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | targetModuleName | string | Yes | Name of the target module specified by modules with the overlay feature. |
-| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result, which is an [OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo)object. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result, which is an [OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md)object. If the operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -65,7 +67,9 @@ try {
 function getTargetOverlayModuleInfos(targetModuleName: string): Promise<Array<OverlayModuleInfo>>
 ```
 
-Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature generally provide an overlay resource file for other modules (target module) on the device. This API uses a promise to return the result.
+Obtains the OverlayModuleInfo associated with the specified target module. Modules with the overlay feature
+generally provide an overlay resource file for other modules (target module) on the device. This API uses a promise
+to return the result.
 
 **Since:** 10
 
@@ -81,7 +85,7 @@ Obtains the OverlayModuleInfo associated with the specified target module. Modul
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Promise used to return the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) objects. |
+| Promise&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Promise used to return the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) objects. |
 
 **Error codes:**
 

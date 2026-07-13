@@ -1,6 +1,8 @@
 # CircleShape
 
-Represents a circle shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md#baseshape).
+Represents a circle shape used in the **clipShape** and **maskShape** APIs.
+
+This API inherits from [BaseShape](arkts-arkui-baseshape-c.md).
 
 **Inheritance/Implementation:** CircleShape extends [BaseShape<CircleShape>](BaseShape<CircleShape>)
 
@@ -11,7 +13,7 @@ Represents a circle shape used in the **clipShape** and **maskShape** APIs. This
 ## Modules to Import
 
 ```TypeScript
-import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.shape';
+import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
 ## constructor

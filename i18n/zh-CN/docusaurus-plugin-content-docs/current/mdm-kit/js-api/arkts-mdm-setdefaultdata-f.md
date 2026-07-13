@@ -33,7 +33,7 @@ function setDefaultData(admin: Want, slotId: number): void
 | [9201020](../errorcode-enterpriseDeviceManager.md#9201020-设置默认数据流量卡失败) | Failed to set the default data SIM card.The airplane mode is enabled or no SIM card is inserted. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed.The application does not have the permission required to call the API. |
 | [203](../../errorcode-universal.md#203-企业管理策略禁止使用此系统功能) | This function is prohibited by enterprise management policies. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Failed to call the API due to limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Failed to call the API due to limited device capabilities. |
 
 **示例：**
 

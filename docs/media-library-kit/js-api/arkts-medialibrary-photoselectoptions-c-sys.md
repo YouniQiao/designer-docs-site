@@ -2,7 +2,7 @@
 
 PhotoSelectOptions extends base class BaseSelectOptions
 
-**Inheritance/Implementation:** PhotoSelectOptions extends [BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md#baseselectoptions)
+**Inheritance/Implementation:** PhotoSelectOptions extends [BaseSelectOptions](arkts-medialibrary-baseselectoptions-c.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ PhotoSelectOptions extends base class BaseSelectOptions
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## themeColor

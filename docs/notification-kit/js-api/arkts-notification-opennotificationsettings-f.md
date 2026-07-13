@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## openNotificationSettings
@@ -12,7 +12,8 @@ import { notificationManager } from '@ohos.notificationManager';
 function openNotificationSettings(context: UIAbilityContext): Promise<void>
 ```
 
-Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to set the notification enabling and notification mode. This API uses a promise to return the result.
+Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to
+set the notification enabling and notification mode. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -36,7 +37,7 @@ Opens the notification settings page of the application, which is displayed in s
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 | [1600001](../errorcode-notification.md#1600001-internal-error) | Internal error. |
 | [1600003](../errorcode-notification.md#1600003-failed-to-connect-to-the-notification-service) | Failed to connect to the service. |
 | [1600018](../errorcode-notification.md#1600018-notification-settings-page-already-displayed) | The notification settings window is already displayed. |

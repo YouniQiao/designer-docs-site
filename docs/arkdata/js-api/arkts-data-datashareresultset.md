@@ -8,15 +8,19 @@ import { DataType } from '@kit.ArkData';
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DataShareResultSet](arkts-datashareresultset-i.md) | Provides APIs for accessing the result sets returned. The column or key names are returned as a string array, in which the strings are in the same order as the columns or keys in the result set. |
+| [DataShareResultSet](arkts-arkdata-datashareresultset-i-sys.md) | Provides APIs for accessing the result sets returned.The column or key names are returned as a string array, in which the strings are in the same order as the columns orkeys in the result set. |
+<!--DelEnd-->
 
-### Enums
+<!--Del-->
+### Enums（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DataType](arkts-datatype-e.md) | Enumerates the data types. |
+| [DataType](arkts-arkdata-datatype-e-sys.md) | Enumerates the data types. |
+<!--DelEnd-->
 

@@ -1,8 +1,10 @@
 # TextEditControllerEx
 
-文本扩展编辑控制器。 继承自[TextBaseController](arkts-arkui-textbasecontroller-i.md#textbasecontroller)。
+文本扩展编辑控制器。
 
-**继承/实现关系：** TextEditControllerEx extends [TextBaseController](arkts-arkui-textbasecontroller-i.md#textbasecontroller)
+继承自[TextBaseController](arkts-arkui-textbasecontroller-i.md)。
+
+**继承/实现关系：** TextEditControllerEx extends [TextBaseController](arkts-arkui-textbasecontroller-i.md)
 
 **起始版本：** 12
 

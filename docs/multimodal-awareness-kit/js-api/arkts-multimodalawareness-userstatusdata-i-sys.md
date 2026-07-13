@@ -11,7 +11,7 @@ Defines user status data.
 ## Modules to Import
 
 ```TypeScript
-import { userStatus } from '@ohos.multimodalAwareness.userStatus';
+import { userStatus } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## errCode
@@ -20,7 +20,8 @@ import { userStatus } from '@ohos.multimodalAwareness.userStatus';
 errCode: number
 ```
 
-Business error code. The value range is all integers.
+Business error code.
+The value `0` indicates success, and other values indicate failure.
 
 **Type:** number
 
@@ -56,7 +57,8 @@ User status detection feature type.
 result: number
 ```
 
-User status detection result. The value range is all integers.
+User status detection result.
+The value `0` indicates success, and other values indicate failure.
 
 **Type:** number
 

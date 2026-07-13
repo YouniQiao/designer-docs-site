@@ -9,7 +9,7 @@ Defines the album change infos.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## albumChangeDatas
@@ -32,7 +32,8 @@ Data about album changes.
 isForRecheck: boolean
 ```
 
-Whether the application needs to requery. This flag helps address abnormal scenarios like abnormal service restarts by enabling the application to refresh the page correctly through proactive querying.
+Whether the application needs to requery. This flag helps address abnormal scenarios like abnormal
+service restarts by enabling the application to refresh the page correctly through proactive querying.
 
 **Type:** boolean
 

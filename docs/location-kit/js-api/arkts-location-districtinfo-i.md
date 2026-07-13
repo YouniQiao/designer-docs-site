@@ -9,7 +9,7 @@ Indicates request parameters for obtaining the district information.
 ## Modules to Import
 
 ```TypeScript
-import { geoLocationManager } from '@ohos.geoLocationManager';
+import { geoLocationManager } from '@kit.LocationKit';
 ```
 
 ## administrativeArea
@@ -72,7 +72,8 @@ Indicates country name.
 locale?: string
 ```
 
-Indicates language used for the location description. zh indicates Chinese, and en indicates English.
+Indicates language used for the location description.
+zh indicates Chinese, and en indicates English.
 
 **Type:** string
 

@@ -15,12 +15,14 @@ import { audio } from '@kit.AudioKit';
 ## capturerFlags
 
 ```TypeScript
-capturerFlags: int
+capturerFlags: number
 ```
 
-Flags that control the capturer behavior. Set this parameter to **0**.
+Flags that control the capturer behavior.
 
-**Type:** int
+Set this parameter to **0**.
+
+**Type:** number
 
 **Since:** 8
 

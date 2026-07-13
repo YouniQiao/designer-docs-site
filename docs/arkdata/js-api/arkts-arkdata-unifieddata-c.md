@@ -9,7 +9,7 @@ Provides APIs for encapsulating a set of data records.
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## addRecord
@@ -133,7 +133,9 @@ let unifiedData = new unifiedDataChannel.UnifiedData();
 getRecords(): Array<UnifiedRecord>
 ```
 
-Obtains all data records from this **UnifiedData** object. The data obtained is of the **UnifiedRecord** type. Before using the data, you need to use [getType](arkts-arkdata-unifieddata-c.md#gettypes-1) to obtain the data type and convert the data type to a child class.
+Obtains all data records from this **UnifiedData** object. The data obtained is of the **UnifiedRecord** type.
+Before using the data, you need to use [getType](arkts-arkdata-unifieddata-c.md#gettypes-1) to obtain the
+data type and convert the data type to a child class.
 
 **Since:** 10
 
@@ -205,7 +207,7 @@ Obtains the types of all data records in this **UnifiedData** object.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;string&gt; | Array of the[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype) typesobtained. |
+| Array&lt;string&gt; | Array of the[UniformDataType](arkts-arkdata-uniformdatatype-e.md) typesobtained. |
 
 **Example**
 
@@ -238,7 +240,12 @@ let types = unifiedData.getTypes();
 hasType(type: string): boolean
 ```
 
-Checks whether this **UnifiedData** object contains the specified data type, including the data types added by using the [addEntry](arkts-arkdata-unifiedrecord-c.md#addentry-1) function. For file types, if the type set of **UnifiedData** includes **general.jpeg**, calling the **hasType** API to check for the **general.image** type will return **true**. This is because the **general.jpeg** type belongs to the **general.image** type.
+Checks whether this **UnifiedData** object contains the specified data type, including the data types added by
+using the [addEntry](arkts-arkdata-unifiedrecord-c.md#addentry-1) function.
+
+For file types, if the type set of **UnifiedData** includes **general.jpeg**, calling the **hasType** API to
+check for the **general.image** type will return **true**. This is because the **general.jpeg** type belongs to
+the **general.image** type.
 
 **Since:** 12
 
@@ -252,7 +259,7 @@ Checks whether this **UnifiedData** object contains the specified data type, inc
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | string | Yes | Data type to check. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype). |
+| type | string | Yes | Data type to check. For details, see[UniformDataType](arkts-arkdata-uniformdatatype-e.md). |
 
 **Return value:**
 

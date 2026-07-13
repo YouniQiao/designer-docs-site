@@ -11,7 +11,7 @@ Provides APIs for getting WidgetParam in remote authentication scenarios.
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## onGetRemoteAuthWidgetParam
@@ -38,7 +38,8 @@ Called to get the information presented on the user authentication page for remo
 onRemoteAuthResult: ResultCallback
 ```
 
-Called to return the authentication result. If the authentication is successful, UserAuthResult contains the token information.
+Called to return the authentication result. If the authentication is successful,
+UserAuthResult contains the token information.
 
 **Type:** ResultCallback
 

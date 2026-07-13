@@ -1,6 +1,13 @@
 # LauncherAbilityResourceInfo (System API)
 
-The module provides resource information of the entry ability of an application, such as the icon and label. The information can be obtained by calling [getLauncherAbilityResourceInfo](arkts-ability-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1) . > **NOTE** > > The APIs provided by this module are system APIs.
+The module provides resource information of the entry ability of an application, such as the icon and label. The
+information can be obtained by calling
+[getLauncherAbilityResourceInfo](arkts-ability-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1)
+.
+
+> **NOTE**
+>
+> The APIs provided by this module are system APIs.
 
 **Since:** 11
 

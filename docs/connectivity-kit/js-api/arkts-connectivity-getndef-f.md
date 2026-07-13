@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## getNdef
@@ -12,7 +12,9 @@ import { tag } from '@ohos.nfc.tag';
 function getNdef(tagInfo: TagInfo): NdefTag
 ```
 
-Obtains an {@link NdefTag} object based on the tag information. During tag reading, if the tag supports the NDEF technology, an {@link NdefTag} object will be created based on the tag information.
+Obtains an {@link NdefTag} object based on the tag information.
+During tag reading, if the tag supports the NDEF technology, an {@link NdefTag} object
+will be created based on the tag information.
 
 **Since:** 12
 

@@ -1,6 +1,7 @@
 # DistributedAccountAbility
 
-Provides APIs for querying and updating the login state of a distributed account. You must obtain a **DistributedAccountAbility** instance first.
+Provides APIs for querying and updating the login state of a distributed account. You must obtain a
+**DistributedAccountAbility** instance first.
 
 **Since:** 7
 
@@ -9,7 +10,7 @@ Provides APIs for querying and updating the login state of a distributed account
 ## Modules to Import
 
 ```TypeScript
-import { distributedAccount } from '@ohos.account.distributedAccount';
+import { distributedAccount } from '@kit.BasicServicesKit';
 ```
 
 ## getOsAccountDistributedInfoByLocalId
@@ -18,7 +19,8 @@ import { distributedAccount } from '@ohos.account.distributedAccount';
 getOsAccountDistributedInfoByLocalId(localId: number, callback: AsyncCallback<DistributedInfo>): void
 ```
 
-Obtains distributed information about an OS account. This API uses an asynchronous callback to return the result.
+Obtains distributed information about an OS account. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -135,7 +137,8 @@ try {
 setOsAccountDistributedInfoByLocalId(localId: number, distributedInfo: DistributedInfo, callback: AsyncCallback<void>): void
 ```
 
-Sets the distributed information for an OS account. This API uses an asynchronous callback to return the result.
+Sets the distributed information for an OS account. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 

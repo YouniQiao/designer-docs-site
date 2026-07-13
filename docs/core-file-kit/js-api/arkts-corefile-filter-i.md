@@ -9,7 +9,7 @@ Defines the file filtering configuration used by **listFile()**.
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## displayName
@@ -18,7 +18,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 displayName?: Array<string>
 ```
 
-Locate files that fuzzy match the specified file names, which are of the OR relationship. Currently, only the wildcard * is supported.
+Locate files that fuzzy match the specified file names, which are of the OR relationship. Currently, only the
+wildcard * is supported.
 
 **Type:** Array<string>
 
@@ -34,7 +35,10 @@ Locate files that fuzzy match the specified file names, which are of the OR rela
 excludeMedia?: boolean
 ```
 
-Whether to exclude the files already in **Media**. The value **true** means to exclude the files already in **Media**; the value **false** means not to exclude the files already in **Media**.
+Whether to exclude the files already in **Media**.
+
+The value **true** means to exclude the files already in **Media**; the value **false** means not to exclude the
+files already in **Media**.
 
 **Type:** boolean
 
@@ -82,7 +86,8 @@ Locate files whose last modification time is the same or later than the specifie
 mimeType?: Array<string>
 ```
 
-Locate files that fully match the specified MIME types, which are of the OR relationship. This parameter is reserved.
+Locate files that fully match the specified MIME types, which are of the OR relationship. This parameter is
+reserved.
 
 **Type:** Array<string>
 

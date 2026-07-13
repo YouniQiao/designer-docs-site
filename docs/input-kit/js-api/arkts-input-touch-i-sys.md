@@ -9,7 +9,7 @@ Defines the touch point information.
 ## Modules to Import
 
 ```TypeScript
-import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@ohos.multimodalInput.touchEvent';
+import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@kit.InputKit';
 ```
 
 ## blobId
@@ -18,7 +18,8 @@ import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@
 blobId?: number
 ```
 
-Touch point attribute ID. Currently, only single-finger touch is supported. The value **1** indicates left-hand touch, and the value **2** indicates right-hand touch.
+Touch point attribute ID. Currently, only single-finger touch is supported. The value **1** indicates left-hand
+touch, and the value **2** indicates right-hand touch.
 
 **Type:** number
 

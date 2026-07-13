@@ -1,16 +1,12 @@
 # AudioOutputFormat
 
-```TypeScript
-enum AudioOutputFormat
-```
-
 Enumerates the audio output formats.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** media.ContainerFormatType
+**Substitutes:** [ContainerFormatType](arkts-media-containerformattype-e.md)
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -20,7 +16,12 @@ Enumerates the audio output formats.
 DEFAULT = 0
 ```
 
-Default output format. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to select one from [ContainerFormatType]media.ContainerFormatType as required.
+Default output format.
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to select one from
+[ContainerFormatType](arkts-media-containerformattype-e.md) as required.
 
 **Since:** 6
 
@@ -34,13 +35,16 @@ Default output format. This API is defined but not implemented yet. Note: It is 
 MPEG_4 = 2
 ```
 
-MPEG-4. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_MPEG_4** in [ContainerFormatType]media.ContainerFormatType instead.
+MPEG-4.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use
+**CFT_MPEG_4** in [ContainerFormatType](arkts-media-containerformattype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.ContainerFormatType#CFT_MPEG_4
+**Substitutes:** CFT_MPEG_4
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -50,13 +54,19 @@ MPEG-4. Note: It is supported since API version 6 and deprecated since API versi
 AMR_NB = 3
 ```
 
-AMR_NB. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AMR** in [ContainerFormatType]media.ContainerFormatType instead. For the encoding format, use **AUDIO_AMR_NB** in [CodecMimeType]media.CodecMimeType.
+AMR_NB.
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AMR**
+in [ContainerFormatType](arkts-media-containerformattype-e.md) instead. For the encoding format, use **AUDIO_AMR_NB**
+in [CodecMimeType](arkts-media-codecmimetype-e.md).
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.ContainerFormatType#CFT_AMR
+**Substitutes:** CFT_AMR
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -66,13 +76,19 @@ AMR_NB. This API is defined but not implemented yet. Note: It is supported since
 AMR_WB = 4
 ```
 
-AMR_WB. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AMR** in [ContainerFormatType]media.ContainerFormatType instead. For the encoding format, use **AUDIO_AMR_WB** in [CodecMimeType]media.CodecMimeType.
+AMR_WB.
+
+This API is defined but not implemented yet.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AMR**
+in [ContainerFormatType](arkts-media-containerformattype-e.md) instead. For the encoding format, use **AUDIO_AMR_WB**
+in [CodecMimeType](arkts-media-codecmimetype-e.md).
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.ContainerFormatType#CFT_AMR
+**Substitutes:** CFT_AMR
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -82,13 +98,16 @@ AMR_WB. This API is defined but not implemented yet. Note: It is supported since
 AAC_ADTS = 6
 ```
 
-Audio Data Transport Stream (ADTS), which is a transport stream format of AAC-based audio. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AAC** in [ContainerFormatType]media.ContainerFormatType instead.
+Audio Data Transport Stream (ADTS), which is a transport stream format of AAC-based audio.
+
+Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **CFT_AAC**
+in [ContainerFormatType](arkts-media-containerformattype-e.md) instead.
 
 **Since:** 6
 
 **Deprecated since:** 8
 
-**Substitute:** ohos.multimedia.media/media.ContainerFormatType#CFT_AAC
+**Substitutes:** CFT_AAC
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 

@@ -6,9 +6,16 @@
 function createMd(algName: string): Md
 ```
 
-生成Md实例，用于进行消息摘要的计算与操作。 支持的规格详见 [MD消息摘要算法规格](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#支持的算法与规格)。
+生成Md实例，用于进行消息摘要的计算与操作。
+
+支持的规格详见
+[MD消息摘要算法规格](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#支持的算法与规格)。
 
 **起始版本：** 9
+
+**模型约束：** 
+- API版本12+：此接口可在Stage模型和FA模型下使用。
+- API版本9-11：此接口仅可在Stage模型下使用。
 
 **元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
@@ -26,13 +33,13 @@ function createMd(algName: string): Md
 
 | 类型 | 说明 |
 | --- | --- |
-| Md | 返回由输入算法指定生成的[Md](arkts-cryptoarchitecture-md-i.md#md)对象。 |
+| Md | 返回由输入算法指定生成的[Md](arkts-cryptoarchitecture-md-i.md)对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 非法入参。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数验证失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 非法入参。可能的原因：<br>1. 必填参数未指定；<br>2. 参数类型不正确；<br>3. 参数验证失败。 |
 | [17620001](../errorcode-crypto-framework.md#17620001-内存操作失败) | 内存操作失败。 |
 
 **示例：**

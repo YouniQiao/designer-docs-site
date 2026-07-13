@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArcListItemAttribute,ArcList,ArcListItem,ArcListAttribute } from '@kit.ArkUI';
+import { ArcListItemAttribute, ArcList, ArcListItem, ArcListAttribute } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,29 +12,29 @@ import { ArcListItemAttribute,ArcList,ArcListItem,ArcListAttribute } from '@kit.
 
 | Name | Description |
 | --- | --- |
-| [ArcListAttribute](arkts-arclistattribute-c.md) | 除支持[通用属性]{@link common}外，还支持以下属性： |
-| [ArcListItemAttribute](arkts-arclistitemattribute-c.md) | 除支持[通用属性]{@link common}外，还支持以下属性： |
+| [ArcListAttribute](arkts-arkui-arclistattribute-c.md) | In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), thefollowing attributes are supported. |
+| [ArcListItemAttribute](arkts-arkui-arclistitemattribute-c.md) | In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes aresupported. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ArcListInterface](arkts-arclistinterface-i.md) | 弧形列表包含一系列列表项。适合连续、多行呈现同类数据，例如图片和文本。 |
-| [ArcListItemInterface](arkts-arclistiteminterface-i.md) | 用来展示列表具体子组件，必须配合[ArcList]{@link @ohos.arkui.ArcList}来使用。 > **说明：** > - 该组件的父组件只能是[ArcList]{@link @ohos.arkui.ArcList}。 > > - 当ArcListItem配合[LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md)使用时，ArcListItem > 子组件在ArcListItem创建时创建。配合[if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md)、 > [ForEach](docroot://ui/rendering-control/arkts-rendering-control-foreach.md)使用时，或父组件为 > [ArcList]{@link @ohos.arkui.ArcList}时，ArcListItem子组件在ArcListItem布局时创建。 > > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。 |
-| [ArkListOptions](arkts-arklistoptions-i.md) | 包含创建ArcList组件的基础参数。 |
+| [ArcListInterface](arkts-arkui-arclistinterface-i.md) | The **ArcList** component is a circular layout container that displays a series of list itemsin an arc shape. It is suitable for presenting homogeneous data, such as images and text,in a continuous, multi-row format. |
+| [ArcListItemInterface](arkts-arkui-arclistiteminterface-i.md) | The **ArcListItem** component is used to display individual child components in an[ArcList](arkts-arkui-arclist.md) component and must be used in conjunction with **ArcList**.&gt; **NOTE**&gt; - This component can be used only as a child of [ArcList](arkts-arkui-arclist.md).&gt;&gt; - When this component is used with&gt; [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md), its child components are&gt; created when it is created. When this component is used with&gt; [if/else](../../../../ui/rendering-control/arkts-rendering-control-ifelse.md) or&gt; [ForEach](../../../../ui/rendering-control/arkts-rendering-control-foreach.md), or when the parent component is&gt; [ArcList](arkts-arkui-arclist.md), its child components are created when it is laid out.&gt;&gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and&gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 devices&gt; , tablets, and TVs, but the component can still run properly. |
+| [ArkListOptions](arkts-arkui-arklistoptions-i.md) | Provides basic parameters for creating an **ArcList** component. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ArcScrollIndexHandler](arkts-arcscrollindexhandler-t.md) | 有子组件划入或划出ArcList显示区域时触发的回调。 |
+| [ArcScrollIndexHandler](arkts-arkui-arcscrollindexhandler-t.md) | Represents the callback triggered when a child component enters or leaves the visible areaof the **ArcList** component. |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [ArcList](arkts-arkui-arclist-con.md#ArcList) | 弧形列表包含一系列列表项。适合连续、多行呈现同类数据，例如图片和文本。 > **说明：** > - 该组件从API version 18开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。 > > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。 ###### 子组件 仅支持[ArcListItem]{@link @ohos.arkui.ArcList}子组件。 |
-| [ArcListInstance](arkts-arkui-arclist-con.md#ArcListInstance) | 定义ArcList组件实例。 |
-| [ArcListItem](arkts-arkui-arclist-con.md#ArcListItem) | 用来展示列表具体子组件，必须配合[ArcList]{@link @ohos.arkui.ArcList}来使用。 > **说明：** > - 该组件的父组件只能是[ArcList]{@link @ohos.arkui.ArcList}。 > > - 当ArcListItem配合[LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md)使用时，ArcListItem > 子组件在ArcListItem创建时创建。配合[if/else](docroot://ui/rendering-control/arkts-rendering-control-ifelse.md)、 > [ForEach](docroot://ui/rendering-control/arkts-rendering-control-foreach.md)使用时，或父组件为 > [ArcList]{@link @ohos.arkui.ArcList}时，ArcListItem子组件在ArcListItem布局时创建。 > > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。 ###### 子组件 可以包含单个子组件。 |
-| [ArcListItemInstance](arkts-arkui-arclist-con.md#ArcListItemInstance) | 定义ArcListItem组件实例。 |
+| [ArcList](arkts-arkui-arkui-arclist-con.md#arclist) | The **ArcList** component is a circular layout container that displays a series of list itemsin an arc shape. It is suitable for presenting homogeneous data, such as images and text,in a continuous, multi-row format.&gt; **NOTE**&gt; - This component is supported since API version 18. Updates will be marked with a&gt; superscript to indicate their earliest API version.&gt;&gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables.&gt; In API version 22 and earlier versions, a compilation warning will be reported when this&gt; component is used on phones, PCs, 2-in-1 devices, tablets, and TVs, but the component can&gt; still run properly.###### Child ComponentsOnly the [ArcListItem](arkts-arkui-arclist.md) component is supported. |
+| [ArcListInstance](arkts-arkui-arkui-arclist-con.md#arclistinstance) | Defines ArcList Component instance. |
+| [ArcListItem](arkts-arkui-arkui-arclist-con.md#arclistitem) | The **ArcListItem** component is used to display individual child components in an[ArcList](arkts-arkui-arclist.md) component and must be used in conjunction with **ArcList**.&gt; **NOTE**&gt; - This component can be used only as a child of [ArcList](arkts-arkui-arclist.md).&gt;&gt; - When this component is used with&gt; [LazyForEach](../../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md), its child components are&gt; created when it is created. When this component is used with&gt; [if/else](../../../../ui/rendering-control/arkts-rendering-control-ifelse.md) or&gt; [ForEach](../../../../ui/rendering-control/arkts-rendering-control-foreach.md), or when the parent component is&gt; [ArcList](arkts-arkui-arclist.md), its child components are created when it is laid out.&gt;&gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and&gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 devices&gt; , tablets, and TVs, but the component can still run properly.###### Child ComponentsThis component can contain a single child component. |
+| [ArcListItemInstance](arkts-arkui-arkui-arclist-con.md#arclistiteminstance) | Defines ArcListItem Component instance. |
 

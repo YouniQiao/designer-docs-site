@@ -1,6 +1,8 @@
 # ImageAnimator属性/事件
 
-除支持[通用属性](./common)外，还支持以下属性： 除支持[通用事件](./common)外，还支持以下事件：
+除支持[通用属性](./common)外，还支持以下属性：
+
+除支持[通用事件](./common)外，还支持以下事件：
 
 **继承/实现关系：** ImageAnimatorAttribute extends [CommonMethod<ImageAnimatorAttribute>](CommonMethod<ImageAnimatorAttribute>)
 
@@ -36,7 +38,9 @@ duration(value: number)
 fillMode(value: FillMode)
 ```
 
-设置当前播放方向下，动画开始前和结束后的状态。动画结束后的状态由fillMode和reverse属性共同决定。 例如，fillMode为Forwards表示停止时维持动画最后一个关键帧的状态，若reverse为false则维持正播的 最后一帧，即最后一张图，若reverse为true则维持逆播的最后一帧，即第一张图。
+设置当前播放方向下，动画开始前和结束后的状态。动画结束后的状态由fillMode和reverse属性共同决定。
+例如，fillMode为Forwards表示停止时维持动画最后一个关键帧的状态，若reverse为false则维持正播的
+最后一帧，即最后一张图，若reverse为true则维持逆播的最后一帧，即第一张图。
 
 **起始版本：** 7
 
@@ -122,7 +126,10 @@ iterations(value: number)
 monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute
 ```
 
-设置组件是否通过系统 [onVisibleAreaChange] {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)} 的可见性判定，控制组件的暂停和播放。
+设置组件是否通过系统
+[onVisibleAreaChange]
+{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}
+的可见性判定，控制组件的暂停和播放。
 
 **起始版本：** 17
 
@@ -136,7 +143,7 @@ monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| monitorInvisibleArea | boolean | 是 | 当设置为true时，组件将基于系统的[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)可见性判定，控制组件的暂停和播放。<br/> 当组件的运行状态为[AnimationStatus](arkts-arkui-animationstatus-e.md#animationstatus)的Running时，若判定组件不可见，则自动执行暂停操作；若判定为可见，则自动恢复播放。<br/>当设置为false时，组件的暂停和播放不受到onVisibleAreaChange影响。<br/>默认值：false<br/> **说明：** <br/>当该属性由true动态修改为false时，组件将依据当前的[AnimationStatus](arkts-arkui-animationstatus-e.md#animationstatus)状态进行处理。<br/> 例如，若当前状态为Running且因[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)的不可见回调暂停，则在属性由true改为false后，组件会从上次暂停的位置重新开始播放。<br/>由该属性导致的不可见暂停和可见暂停操作不会改变用户设置的[state](ImageAnimatorAttribute#state)值。 |
+| monitorInvisibleArea | boolean | 是 | 当设置为true时，组件将基于系统的[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)可见性判定，控制组件的暂停和播放。<br/> 当组件的运行状态为[AnimationStatus](arkts-arkui-animationstatus-e.md)的Running时，若判定组件不可见，则自动执行暂停操作；若判定为可见，则自动恢复播放。<br/>当设置为false时，组件的暂停和播放不受到onVisibleAreaChange影响。<br/>默认值：false<br/> **说明：** <br/>当该属性由true动态修改为false时，组件将依据当前的[AnimationStatus](arkts-arkui-animationstatus-e.md)状态进行处理。<br/> 例如，若当前状态为Running且因[onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)的不可见回调暂停，则在属性由true改为false后，组件会从上次暂停的位置重新开始播放。<br/>由该属性导致的不可见暂停和可见暂停操作不会改变用户设置的[state](ImageAnimatorAttribute#state)值。 |
 
 ## onCancel
 
@@ -252,7 +259,11 @@ onStart(event: () => void)
 preDecode(value: number)
 ```
 
-设置预解码的图片数量。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃。当前无可替代接口。
+设置预解码的图片数量。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃。当前无可替代接口。
 
 **起始版本：** 7
 

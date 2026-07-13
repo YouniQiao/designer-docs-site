@@ -1,6 +1,7 @@
 # Stack
 
-Stack is implemented based on the array data structure. It follows the principle Last In First Out (LIFO) and supports data insertion and removal at one end.
+Stack is implemented based on the array data structure.
+It follows the principle Last In First Out (LIFO) and supports data insertion and removal at one end.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ Stack is implemented based on the array data structure. It follows the principle
 ## Modules to Import
 
 ```TypeScript
-import { Stack } from '@ohos.util.Stack';
+import { Stack } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -251,7 +252,7 @@ Obtains the top element of this Stack. If the Stack is empty, **undefined** is r
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The peek method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -291,7 +292,7 @@ Removes the top element from this Stack.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The pop method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

@@ -1,6 +1,6 @@
 # AddPermissionUsedRecordOptions (System API)
 
-Additional information to add.
+Represents the options for adding a permission usage record.
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Additional information to add.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## enhancedIdentity
@@ -20,7 +20,11 @@ import { privacyManager } from '@ohos.privacyManager';
 enhancedIdentity?: string
 ```
 
-Enhanced identity.
+Extension identity, used to identify additional identity information of the caller. This field is passed in when
+it is necessary to distinguish permission usage records from different call sources under the same application.
+The length does not exceed 48 characters. Passing an excessively long value when calling
+[addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) will return error code 12100001.
+The maximum length is 48. Default value: empty string.
 
 **Type:** string
 
@@ -38,7 +42,9 @@ Enhanced identity.
 usedType?: PermissionUsedType
 ```
 
-Used type of the permission accessed.
+Sensitive permission usage type.
+
+Default value: NORMAL_TYPE.
 
 **Type:** PermissionUsedType
 

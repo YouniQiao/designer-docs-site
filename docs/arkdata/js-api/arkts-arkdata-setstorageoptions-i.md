@@ -48,7 +48,8 @@ Called when the stored content fails to be modified.
 key: string
 ```
 
-Index of the stored content to be modified. the value contains a maximum of 32 characters and cannot contain special characters such as \/"*+,:;<=>?[]|\x7F.
+Index of the stored content to be modified.
+the value contains a maximum of 32 characters and cannot contain special characters such as \/"*+,:;<=>?[]|\x7F.
 
 **Type:** string
 

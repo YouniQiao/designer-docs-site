@@ -18,12 +18,12 @@ import { common } from '@kit.ConnectivityKit';
 
 | Name | Description |
 | --- | --- |
-| [BluetoothAddress](arkts-common-bluetoothaddress-i.md) | Describe the type of Bluetooth address. |
+| [BluetoothAddress](arkts-connectivity-bluetoothaddress-i.md) | Describe the type of Bluetooth address. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [BluetoothAddressType](arkts-common-bluetoothaddresstype-e.md) | Enum for the type of Bluetooth address. |
-| [BluetoothRawAddressType](arkts-common-bluetoothrawaddresstype-e.md) | Enum for the type of Bluetooth raw address. The enum is used only when the {@link BluetoothAddress#addressType} is {@link BluetoothAddressType#REAL}. |
+| [BluetoothAddressType](arkts-connectivity-bluetoothaddresstype-e.md) | Enum for the type of Bluetooth address. |
+| [BluetoothRawAddressType](arkts-connectivity-bluetoothrawaddresstype-e.md) | Enum for the type of Bluetooth raw address.The enum is used only when the {@link BluetoothAddress#addressType} is {@link BluetoothAddressType#REAL}. |
 

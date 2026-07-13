@@ -4,7 +4,8 @@
 declare type SpringLoadingContext = import('../api/@ohos.arkui.dragController').default.SpringLoadingContext
 ```
 
-Defines callback context information, which is passed to the application in the hover detection callback to allow the application to access the drag status.
+Defines callback context information, which is passed to the application in the hover detection callback to allow the
+application to access the drag status.
 
 **Since:** 20
 

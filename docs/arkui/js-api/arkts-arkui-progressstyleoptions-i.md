@@ -1,8 +1,10 @@
 # ProgressStyleOptions
 
-Defines the progress bar style options. Inherits from [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions).
+Defines the progress bar style options.
 
-**Inheritance/Implementation:** ProgressStyleOptions extends [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions)
+Inherits from [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md).
+
+**Inheritance/Implementation:** ProgressStyleOptions extends [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)
 
 **Since:** 8
 
@@ -14,7 +16,12 @@ Defines the progress bar style options. Inherits from [CommonProgressStyleOption
 scaleCount?: number
 ```
 
-Number of divisions on the ring-style process indicator. Default value: **120** Value range: [2, min(width, height)/scaleWidth/2/π]. If the value is outside this range, the progress indicator is displayed in the indeterminate ring style. By default, the minimum width and height are 77 vp.
+Number of divisions on the ring-style process indicator.
+
+Default value: **120**
+
+Value range: [2, min(width, height)/scaleWidth/2/π]. If the value is outside this range, the progress indicator is
+displayed in the indeterminate ring style. By default, the minimum width and height are 77 vp.
 
 **Type:** number
 
@@ -32,7 +39,10 @@ Number of divisions on the ring-style process indicator. Default value: **120** 
 scaleWidth?: Length
 ```
 
-Scale width of the ring-style progress indicator. Percentage values are not supported. If the scale width is greater than the stroke width of the progress indicator, the default scale width is used. Default value: **2.0vp**
+Scale width of the ring-style progress indicator. Percentage values are not supported. If the scale width is
+greater than the stroke width of the progress indicator, the default scale width is used.
+
+Default value: **2.0vp**
 
 **Type:** Length
 
@@ -50,7 +60,11 @@ Scale width of the ring-style progress indicator. Percentage values are not supp
 strokeWidth?: Length
 ```
 
-Stroke width of the progress indicator. Percentage values are not supported. Default value: **4.0vp** If the value is out of the range, the default value is used.
+Stroke width of the progress indicator. Percentage values are not supported.
+
+Default value: **4.0vp**
+
+If the value is out of the range, the default value is used.
 
 **Type:** Length
 

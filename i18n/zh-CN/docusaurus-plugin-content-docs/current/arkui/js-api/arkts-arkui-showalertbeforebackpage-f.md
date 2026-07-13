@@ -6,7 +6,19 @@
 function showAlertBeforeBackPage(options: EnableAlertOptions): void
 ```
 
-开启页面返回询问对话框。 > **说明：** > > - 从API version 9开始支持，从API version 18开始废弃，建议使用 > [showAlertBeforeBackPage](arkts-arkui-router-c.md#showalertbeforebackpage-1)替代。showAlertBeforeBackPage需先 > 通过[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取 > [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。 > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的 > [Router](arkts-arkui-uicontext.md)对象。
+开启页面返回询问对话框。
+
+> **说明：**
+>
+> - 从API version 9开始支持，从API version 18开始废弃，建议使用
+> [showAlertBeforeBackPage](arkts-arkui-router-c.md#showalertbeforebackpage-1)替代。showAlertBeforeBackPage需先
+> 通过[UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)获取
+> [Router](arkts-arkui-uicontext.md)实例，然后通过该实例进行调用。
+>
+> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
+> [getRouter](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getrouter)方法获取当前UI上下文关联的
+> [Router](arkts-arkui-uicontext.md)对象。
 
 **起始版本：** 9
 
@@ -28,7 +40,7 @@ function showAlertBeforeBackPage(options: EnableAlertOptions): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100001](../errorcode-internal.md#100001-接口调用异常错误码) | Internal error. |
 
 **示例：**

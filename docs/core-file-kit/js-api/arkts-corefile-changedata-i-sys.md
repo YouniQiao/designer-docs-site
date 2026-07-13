@@ -6,7 +6,7 @@ the value of the monitor callback function
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [ChangeData](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-changedata-i.md#changedata)
+**Substitutes:** [ChangeData](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-changedata-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ the value of the monitor callback function
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## subUris

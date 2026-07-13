@@ -1,6 +1,7 @@
 # DataAbilityHelper
 
-可以通过[acquireDataAbilityHelper](./../@ohos.ability.featureAbility:featureAbility.acquireDataAbilityHelper)接口获取 DataAbilityHelper对象。
+可以通过[acquireDataAbilityHelper](arkts-ability-acquiredataabilityhelper-f.md#acquiredataabilityhelper-1)接口获取
+DataAbilityHelper对象。
 
 **起始版本：** 7
 

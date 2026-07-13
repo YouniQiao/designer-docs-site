@@ -6,7 +6,8 @@
 function execute(func: Function, ...args: Object[]): Promise<Object>
 ```
 
-将待执行的函数放入taskpool的内部任务队列，函数不会立即执行，而是等待分发到工作线程执行。在当前执行模式下， 不支持取消任务。使用Promise异步回调。
+将待执行的函数放入taskpool的内部任务队列，函数不会立即执行，而是等待分发到工作线程执行。在当前执行模式下，
+不支持取消任务。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -26,7 +27,7 @@ function execute(func: Function, ...args: Object[]): Promise<Object>
 | 类型 | 说明 |
 | --- | --- |
 | Promise&lt;unknown&gt; | <br>**适用版本：** 9 - 11 |
-| Promise&lt;Object&gt; | Promise对象，返回任务函数的执行结果。<br>**适用版本：** 11 |
+| Promise&lt;Object&gt; | Promise对象，返回任务函数的执行结果。<br>**适用版本：** 11+ |
 
 **错误码：**
 
@@ -126,7 +127,8 @@ taskpool.execute<[[number, string]], string>(testWithArray, [100, "test"]).then(
 function execute(task: Task, priority?: Priority): Promise<Object>
 ```
 
-将创建好的任务添加到taskpool的内部任务队列中，任务不会立即执行，而是等待分发到工作线程执行。当前模式支持设置任务优先级和通过cancel取消任务。 任务不能是任务组任务、串行队列任务或异步队列任务。对于非长时任务，可以多次调用执行；对于长时任务，仅支持执行一次。使用Promise异步回调。
+将创建好的任务添加到taskpool的内部任务队列中，任务不会立即执行，而是等待分发到工作线程执行。当前模式支持设置任务优先级和通过cancel取消任务。
+任务不能是任务组任务、串行队列任务或异步队列任务。对于非长时任务，可以多次调用执行；对于长时任务，仅支持执行一次。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -146,7 +148,7 @@ function execute(task: Task, priority?: Priority): Promise<Object>
 | 类型 | 说明 |
 | --- | --- |
 | Promise&lt;unknown&gt; | <br>**适用版本：** 9 - 17 |
-| Promise&lt;Object&gt; | Promise对象，返回任务函数的执行结果。<br>**适用版本：** 11 |
+| Promise&lt;Object&gt; | Promise对象，返回任务函数的执行结果。<br>**适用版本：** 11+ |
 
 **错误码：**
 
@@ -155,8 +157,8 @@ function execute(task: Task, priority?: Priority): Promise<Object>
 | [10200003](../errorcode-utils.md#10200003-worker初始化失败) | Worker initialization failed.<br>**适用版本：** 9 - 17 |
 | [10200006](../errorcode-utils.md#10200006-worker传输信息序列化异常) | An exception occurred during serialization. |
 | [10200014](../errorcode-utils.md#10200014-非concurrent函数错误) | The function is not marked as concurrent. |
-| [10200051](../errorcode-utils.md#10200051-无法再次执行周期任务) | The periodic task cannot be executed again.<br>**适用版本：** 12 |
-| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18 |
+| [10200051](../errorcode-utils.md#10200051-无法再次执行周期任务) | The periodic task cannot be executed again.<br>**适用版本：** 12+ |
+| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18+ |
 
 **示例：**
 
@@ -189,7 +191,8 @@ taskpool.execute(task3, taskpool.Priority.HIGH).then((value: Object) => {
 function execute<A extends Array<Object>, R>(task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-将创建好的泛型任务放入taskpool的内部任务队列，校验任务的参数类型和返回值类型。使用Promise异步回调。 execute任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
+将创建好的泛型任务放入taskpool的内部任务队列，校验任务的参数类型和返回值类型。使用Promise异步回调。
+execute任务的校验是结合**new GenericsTask**一起用的，参数、返回值类型需与**new GenericsTask**中的类型保持一致。
 
 **起始版本：** 13
 
@@ -217,7 +220,7 @@ function execute<A extends Array<Object>, R>(task: GenericsTask<A, R>, priority?
 | [10200006](../errorcode-utils.md#10200006-worker传输信息序列化异常) | An exception occurred during serialization. |
 | [10200014](../errorcode-utils.md#10200014-非concurrent函数错误) | The function is not marked as concurrent. |
 | [10200051](../errorcode-utils.md#10200051-无法再次执行周期任务) | The periodic task cannot be executed again. |
-| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18 |
+| [10200057](../errorcode-utils.md#10200057-任务无法被两种api执行) | The task cannot be executed by two APIs.<br>**适用版本：** 18+ |
 
 **示例：**
 
@@ -250,7 +253,8 @@ taskpool.execute<[number], number>(task3, taskpool.Priority.HIGH).then((value: n
 function execute(group: TaskGroup, priority?: Priority): Promise<Object[]>
 ```
 
-将创建好的任务组放入taskpool内部任务队列，任务组中的任务不会立即执行，而是等待分发到工作线程执行。任务组中任务全部执行完成后， 结果数组统一返回。此模式适用于执行关联任务。使用Promise异步回调。
+将创建好的任务组放入taskpool内部任务队列，任务组中的任务不会立即执行，而是等待分发到工作线程执行。任务组中任务全部执行完成后，
+结果数组统一返回。此模式适用于执行关联任务。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -276,7 +280,7 @@ function execute(group: TaskGroup, priority?: Priority): Promise<Object[]>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10200006](../errorcode-utils.md#10200006-worker传输信息序列化异常) | An exception occurred during serialization. |
-| [10200059](../errorcode-utils.md#10200059-任务组不能重复执行) | TaskGroup cannot be re-executed.<br>**适用版本：** 24 |
+| [10200059](../errorcode-utils.md#10200059-任务组不能重复执行) | TaskGroup cannot be re-executed.<br>**适用版本：** 24+ |
 
 **示例：**
 

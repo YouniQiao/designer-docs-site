@@ -1,6 +1,8 @@
-# PrelaunchConfig
+# PrelaunchConfig (System API)
 
-Defines the camera prelaunch configuration. Currently, the configuration is used for sensor-level prelaunch. It will be used for stream-level prelaunch in a later version.
+Defines the camera prelaunch configuration.
+Currently, the configuration is used for sensor-level prelaunch. It will be used for stream-level prelaunch in a
+later version.
 
 **Since:** 10
 
@@ -17,12 +19,12 @@ import { camera } from '@kit.CameraKit';
 ## activeTime
 
 ```TypeScript
-activeTime?: int
+activeTime?: number
 ```
 
 Activation time, in minutes.
 
-**Type:** int
+**Type:** number
 
 **Since:** 11
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## getAvailableStatus
@@ -12,7 +12,12 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 function getAvailableStatus(authType: UserAuthType, authTrustLevel: AuthTrustLevel): void
 ```
 
-Checks whether the specified authentication capability is supported.
+Checks whether the specified authentication capability is supported. This API is used to check whether the current
+device supports the specified authentication type and authentication trust level. It helps an application determine
+whether the authentication capability is available before initiating authentication, thereby avoiding unnecessary
+authentication failures. If the query is successful (no error is thrown), the authentication capability is
+available. If an error is thrown, the application should determine the cause based on the error code and take
+appropriate measures.
 
 **Since:** 9
 
@@ -26,8 +31,8 @@ Checks whether the specified authentication capability is supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| authType | UserAuthType | Yes | Authentication type. PIN is supported since API version 11. |
-| authTrustLevel | AuthTrustLevel | Yes | Authentication trust level. |
+| authType | UserAuthType | Yes | Authentication type. This parameter specifies the authentication type to bequeried. The options are **FACE**, **FINGERPRINT**, **PIN**, and **COMPANION_DEVICE**.<br>Note:<br>PIN is supported since API version 11.<br>COMPANION_DEVICE query is supported since API version 26.0.0. |
+| authTrustLevel | AuthTrustLevel | Yes | Authentication trust level. This parameter specifies the authenticationtrust level to be queried. The valid values are **ATL1(10000)**, **ATL2(20000)**, **ATL3(30000)**, and**ATL4(40000)**. A higher level indicates a higher requirement on the liveness detection capability of theauthentication solution. |
 
 **Error codes:**
 
@@ -39,7 +44,7 @@ Checks whether the specified authentication capability is supported.
 | [12500005](../errorcode-useriam.md#12500005-unsupported-authentication-type) | The authentication type is not supported. |
 | [12500006](../errorcode-useriam.md#12500006-unsupported-authentication-trust-level) | The authentication trust level is not supported. |
 | [12500010](../errorcode-useriam.md#12500010-credential-not-enrolled) | The type of credential has not been enrolled. |
-| [12500013](../errorcode-useriam.md#12500013-password-expired) | Operation failed because of PIN expired.<br>**Applicable version:** 12 |
+| [12500013](../errorcode-useriam.md#12500013-password-expired) | Operation failed because of PIN expired.<br>**Applicable version:** 12 and later |
 
 **Example**
 

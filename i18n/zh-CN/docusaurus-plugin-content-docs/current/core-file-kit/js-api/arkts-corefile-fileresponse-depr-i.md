@@ -62,7 +62,9 @@ subFiles?: Array<FileResponse>
 type: 'dir' | 'file'
 ```
 
-文件类型，可选值为： -dir：目录； -file：文件。
+文件类型，可选值为：
+-dir：目录；
+-file：文件。
 
 **类型：** 'dir' | 'file'
 

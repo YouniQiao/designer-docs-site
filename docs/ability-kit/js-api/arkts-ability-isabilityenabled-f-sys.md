@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## isAbilityEnabled
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function isAbilityEnabled(info: AbilityInfo, appIndex: number): Promise<boolean>
 ```
 
-Checks whether an ability of an application or an application clone is enabled. This API uses a promise to return the result.
+Checks whether an ability of an application or an application clone is enabled. This API uses a promise to return
+the result.
 
 **Since:** 12
 
@@ -98,7 +99,7 @@ Checks whether an ability is enabled. This API uses an asynchronous callback to 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | info | AbilityInfo | Yes | Information about the target ability. |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result.**true** if enabled, **false** otherwise. |
+| callback | AsyncCallback&lt;boolean&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result.**true** if enabled, **false** otherwise. |
 
 **Error codes:**
 

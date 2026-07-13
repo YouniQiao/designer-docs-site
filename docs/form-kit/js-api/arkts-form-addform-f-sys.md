@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## addForm
@@ -12,7 +12,9 @@ import { formHost } from '@ohos.app.form.formHost';
 function addForm(want: Want): Promise<formInfo.RunningFormInfo>
 ```
 
-Add a form. You can use this method to create a theme form.
+Add a form.
+
+You can use this method to create a theme form.
 
 **Since:** 12
 

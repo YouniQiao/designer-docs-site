@@ -12,7 +12,9 @@ Implements a **NestedScrollOptionsExt** object to set up, down, left, and right 
 scrollDown?: NestedScrollMode
 ```
 
-Nested scrolling options when the component scrolls down. Default value: **NestedScrollMode.SELF_FIRST**.
+Nested scrolling options when the component scrolls down.
+
+Default value: **NestedScrollMode.SELF_FIRST**.
 
 **Type:** NestedScrollMode
 
@@ -26,7 +28,9 @@ Nested scrolling options when the component scrolls down. Default value: **Neste
 scrollLeft?: NestedScrollMode
 ```
 
-Nested scrolling options when the component scrolls left. Default value: **NestedScrollMode.SELF_FIRST**.
+Nested scrolling options when the component scrolls left.
+
+Default value: **NestedScrollMode.SELF_FIRST**.
 
 **Type:** NestedScrollMode
 
@@ -40,7 +44,9 @@ Nested scrolling options when the component scrolls left. Default value: **Neste
 scrollRight?: NestedScrollMode
 ```
 
-Nested scrolling options when the component scrolls right. Default value: **NestedScrollMode.SELF_FIRST**.
+Nested scrolling options when the component scrolls right.
+
+Default value: **NestedScrollMode.SELF_FIRST**.
 
 **Type:** NestedScrollMode
 
@@ -54,7 +60,9 @@ Nested scrolling options when the component scrolls right. Default value: **Nest
 scrollUp?: NestedScrollMode
 ```
 
-Nested scrolling options when the component scrolls up. Default value: **NestedScrollMode.SELF_FIRST**.
+Nested scrolling options when the component scrolls up.
+
+Default value: **NestedScrollMode.SELF_FIRST**.
 
 **Type:** NestedScrollMode
 

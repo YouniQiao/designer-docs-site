@@ -12,5 +12,5 @@ import { ChildProcessArgs } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [ChildProcessArgs](arkts-childprocessargs-i.md) | 传递到子进程的参数。[childProcessManager]{@link @ohos.app.ability.childProcessManager:childProcessManager}启动子进程时，可以通过 ChildProcessArgs传递参数到子进程中。 |
+| [ChildProcessArgs](arkts-ability-childprocessargs-i.md) | The module describes the parameters transferred to the child process. When starting a child process through[childProcessManager](arkts-app-ability-childprocessmanager.md), you can transfer parametersto the child process through **ChildProcessArgs**. |
 

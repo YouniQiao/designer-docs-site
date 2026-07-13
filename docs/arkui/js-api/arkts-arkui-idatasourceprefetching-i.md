@@ -1,8 +1,8 @@
 # IDataSourcePrefetching
 
-Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md#idatasource) API to add data prefetching capability to your data source.
+Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md) API to add data prefetching capability to your data source.
 
-**Inheritance/Implementation:** IDataSourcePrefetching extends [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md#idatasource)
+**Inheritance/Implementation:** IDataSourcePrefetching extends [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md#idata
 ## Modules to Import
 
 ```TypeScript
-import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@ohos.arkui.Prefetcher';
+import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@kit.ArkUI';
 ```
 
 ## cancel
@@ -20,7 +20,8 @@ import { IDataSourcePrefetching, BasicPrefetcher, IPrefetcher } from '@ohos.arku
 cancel?(index: number): Promise<void> | void
 ```
 
-Cancels the prefetching of a specified data item from the dataset. This API can be either synchronous or asynchronous.
+Cancels the prefetching of a specified data item from the dataset. This API can be either synchronous or
+asynchronous.
 
 **Since:** 12
 

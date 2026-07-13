@@ -11,7 +11,7 @@ Represents the authorization information.
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## allowedOpenCount
@@ -20,7 +20,8 @@ import { dlpPermission } from '@ohos.dlpPermission';
 allowedOpenCount?: number
 ```
 
-Number of allowed opening times. This parameter is left empty by default. The value must be greater than or equal to 0. If the value is out of range, error code 19100001 is thrown.
+Number of allowed opening times. This parameter is left empty by default. The value must be greater than or
+equal to 0. If the value is out of range, error code 19100001 is thrown.
 
 **Type:** number
 
@@ -34,7 +35,9 @@ Number of allowed opening times. This parameter is left empty by default. The va
 countdown?: number
 ```
 
-Validity period for file viewing, in seconds. After the validity period expires, the file is automatically closed. This parameter is left empty by default. The value must be greater than or equal to 0. If the value is out of range, error code 19100001 is thrown.
+Validity period for file viewing, in seconds. After the validity period expires, the file is automatically
+closed. This parameter is left empty by default. The value must be greater than or equal to 0. If the value
+is out of range, error code 19100001 is thrown.
 
 **Type:** number
 
@@ -66,7 +69,8 @@ Extended attribute of a DLP file. This parameter is left empty by default.
 fileId?: string
 ```
 
-System account ID. This parameter is left empty by default. The value contains a maximum of 255 bytes. If the value is out of range, error code 19100001 is thrown.
+System account ID. This parameter is left empty by default. The value contains a maximum of 255 bytes. If the
+value is out of range, error code 19100001 is thrown.
 
 **Type:** string
 

@@ -9,7 +9,7 @@ Defines the accessibility options of the symbol-type suffix icon.
 ## Modules to Import
 
 ```TypeScript
-import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@ohos.arkui.advanced.Chip';
+import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, AccessibilitySelectedType, LabelMarginOptions, LabelOptions, PrefixIconOptions, IconCommonOptions, ChipOptions, ChipSuffixSymbolGlyphOptions, ChipSize, AccessibilityOptions } from '@kit.ArkUI';
 ```
 
 ## action
@@ -18,7 +18,9 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 action?: VoidCallback
 ```
 
-Action of the suffix icon. Default value: **undefined**
+Action of the suffix icon.
+
+Default value: **undefined**
 
 **Type:** VoidCallback
 
@@ -36,7 +38,9 @@ Action of the suffix icon. Default value: **undefined**
 activatedAccessibility?: AccessibilityOptions
 ```
 
-Accessibility settings for the activated state. Default value: **undefined**
+Accessibility settings for the activated state.
+
+Default value: **undefined**
 
 **Type:** AccessibilityOptions
 
@@ -54,7 +58,9 @@ Accessibility settings for the activated state. Default value: **undefined**
 normalAccessibility?: AccessibilityOptions
 ```
 
-Accessibility settings for the normal state. Default value: **undefined**
+Accessibility settings for the normal state.
+
+Default value: **undefined**
 
 **Type:** AccessibilityOptions
 

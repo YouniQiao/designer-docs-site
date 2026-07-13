@@ -9,7 +9,7 @@ The interface of URL is used to parse, construct, normalize, and encode URLs.
 ## Modules to Import
 
 ```TypeScript
-import { url } from '@ohos.url';
+import { url } from '@kit.ArkTS';
 ```
 
 ## constructor
@@ -18,7 +18,10 @@ import { url } from '@ohos.url';
 constructor(url: string, base?: string | URL)
 ```
 
-URL constructor, which is used to instantiate a URL object. url: Absolute or relative input URL to resolve. Base is required if input is relative. If input is an absolute value, base ignores the value. base: Base URL to parse if input is not absolute.
+URL constructor, which is used to instantiate a URL object.
+url: Absolute or relative input URL to resolve. Base is required if input is relative.
+If input is an absolute value, base ignores the value.
+base: Base URL to parse if input is not absolute.
 
 **Since:** 7
 
@@ -41,7 +44,8 @@ URL constructor, which is used to instantiate a URL object. url: Absolute or rel
 constructor()
 ```
 
-A no-argument constructor used to create a URL. It returns a URL object after parseURL is called. It is not used independently.
+A no-argument constructor used to create a URL. It returns a URL object after parseURL is called.
+It is not used independently.
 
 **Since:** 9
 
@@ -242,7 +246,9 @@ Gets the read-only serialization of the URL's origin.
 readonly params: URLParams
 ```
 
-Gets the URLParams object that represents the URL query parameter. This property is read-only, but URLParams provides an object that can be used to change the URL instance. To replace the entire query parameter for a URL, use url.searchsetter.
+Gets the URLParams object that represents the URL query parameter.
+This property is read-only, but URLParams provides an object that can be used to change
+the URL instance. To replace the entire query parameter for a URL, use url.searchsetter.
 
 **Type:** URLParams
 
@@ -338,7 +344,9 @@ Gets and sets the serialized query portion of the URL.
 readonly searchParams: URLSearchParams
 ```
 
-Gets the URLSearchParams object that represents the URL query parameter. This property is read-only, but URLSearchParams provides an object that can be used to change the URL instance. To replace the entire query parameter for a URL, use url.searchsetter.
+Gets the URLSearchParams object that represents the URL query parameter.
+This property is read-only, but URLSearchParams provides an object that can be used to change
+the URL instance. To replace the entire query parameter for a URL, use url.searchsetter.
 
 **Type:** URLSearchParams
 

@@ -13,7 +13,7 @@ Describes the settings for BLE advertising.
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## connectable
@@ -40,7 +40,9 @@ Indicates whether the BLE is connectable, default is {@code true}
 interval?: number
 ```
 
-Minimum slot value for the advertising interval, which is {@code 32} (20 ms) Maximum slot value for the advertising interval, which is {@code 16777215} (10485.759375s) Default slot value for the advertising interval, which is {@code 1600} (1s)
+Minimum slot value for the advertising interval, which is {@code 32} (20 ms)
+Maximum slot value for the advertising interval, which is {@code 16777215} (10485.759375s)
+Default slot value for the advertising interval, which is {@code 1600} (1s)
 
 **Type:** number
 
@@ -58,7 +60,9 @@ Minimum slot value for the advertising interval, which is {@code 32} (20 ms) Max
 txPower?: number
 ```
 
-Minimum transmission power level for advertising, which is {@code -127} Maximum transmission power level for advertising, which is {@code 1} Default transmission power level for advertising, which is {@code -7}
+Minimum transmission power level for advertising, which is {@code -127}
+Maximum transmission power level for advertising, which is {@code 1}
+Default transmission power level for advertising, which is {@code -7}
 
 **Type:** number
 

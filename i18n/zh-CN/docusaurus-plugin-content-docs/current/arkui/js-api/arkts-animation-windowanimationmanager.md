@@ -1,6 +1,6 @@
 # @ohos.animation.windowAnimationManager
 
-Window animation manager.
+窗口动画管理器，可以监听应用启动退出时应用的动画窗口，提供启动退出过程中控件动画和应用窗口联动动画能力。
 
 **起始版本：** 9
 
@@ -8,39 +8,26 @@ Window animation manager.
 
 **系统接口：** 此接口为系统接口。
 
-## 导入模块
-
-```TypeScript
-import { windowAnimationManager } from '@kit.ArkUI';
-```
-
 ## 汇总
 
-### 函数
+<!--Del-->
+### 函数（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[minimizeWindowWithAnimation](arkts-windowanimationmanager-minimizewindowwithanimation-f-sys.md#minimizeWindowWithAnimation-1) | Minimize the window target with animation. |
-| <!--DelRow-->[minimizeWindowWithAnimation](arkts-windowanimationmanager-minimizewindowwithanimation-f-sys.md#minimizeWindowWithAnimation-2) | Minimize the window target with animation. |
-| <!--DelRow-->[setController](arkts-windowanimationmanager-setcontroller-f-sys.md#setController-1) | Set the window animation controller. |
+| [minimizeWindowWithAnimation](arkts-arkui-minimizewindowwithanimation-f-sys.md#minimizewindowwithanimation-1) | 最小化动画目标窗口，并返回动画完成的回调。使用callback异步回调。 |
+| [minimizeWindowWithAnimation](arkts-arkui-minimizewindowwithanimation-f-sys.md#minimizewindowwithanimation-2) | 最小化动画目标窗口，并返回动画完成的回调。使用Promise异步回调。 |
+| [setController](arkts-arkui-setcontroller-f-sys.md#setcontroller-1) | 设置窗口动画控制器。窗口动画控制器的说明请参考[WindowAnimationController](arkts-arkui-windowanimationcontroller-i-sys.md)。在使用windowAnimationManager的其他接口前，需要预先调用本接口设置窗口动画控制器。 |
+<!--DelEnd-->
 
-### 接口
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[RRect](arkts-windowanimationmanager-rrect-i-sys.md) | Round rect. |
-| <!--DelRow-->[WindowAnimationController](arkts-windowanimationmanager-windowanimationcontroller-i-sys.md) | Window animation controller. |
-| <!--DelRow-->[WindowAnimationFinishedCallback](arkts-windowanimationmanager-windowanimationfinishedcallback-i-sys.md) | Window animation finished callback. |
-| <!--DelRow-->[WindowAnimationTarget](arkts-windowanimationmanager-windowanimationtarget-i-sys.md) | Window animation target. |
-
-### 类型
-
-| 名称 | 描述 |
-| --- | --- |
-| <!--DelRow-->[AppStartCallback](arkts-windowanimationmanager-appstartcallback-t-sys.md) | Callback function on starting an application. |
-| <!--DelRow-->[AppTransitionCallback](arkts-windowanimationmanager-apptransitioncallback-t-sys.md) | Callback function on application transition. |
-| <!--DelRow-->[ScreenUnlockCallback](arkts-windowanimationmanager-screenunlockcallback-t-sys.md) | Callback function on unlocking the screen. |
-| <!--DelRow-->[WindowAnimationTargetsUpdationCallback](arkts-windowanimationmanager-windowanimationtargetsupdationcallback-t-sys.md) | Callback function on window animation targets update. |
-| <!--DelRow-->[WindowCloseCallback](arkts-windowanimationmanager-windowclosecallback-t-sys.md) | Callback function on closing a window. |
-| <!--DelRow-->[WindowMinimizationCallback](arkts-windowanimationmanager-windowminimizationcallback-t-sys.md) | Callback function on minimizing a window. |
+| [RRect](arkts-arkui-rrect-i-sys.md) | 圆角矩形。 |
+| [WindowAnimationController](arkts-arkui-windowanimationcontroller-i-sys.md) | 窗口动画控制器。在创建一个WindowAnimationController对象时，需要实现其中的所有回调函数。 |
+| [WindowAnimationFinishedCallback](arkts-arkui-windowanimationfinishedcallback-i-sys.md) | 动画完成后的回调。 |
+| [WindowAnimationTarget](arkts-arkui-windowanimationtarget-i-sys.md) | 动画目标窗口，用来实现动画。 |
+<!--DelEnd-->
 

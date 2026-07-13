@@ -1,19 +1,20 @@
 # RelativeTimeFormatInputOptions
 
-Defines the configuration options for a **RelativeTimeFormat** object. Since API version 9, the attributes in **RelativeTimeFormatInputOptions** are optional.
+Defines the configuration options for a **RelativeTimeFormat** object.
+Since API version 9, the attributes in **RelativeTimeFormatInputOptions** are optional.
 
 **Since:** 8
 
 **Deprecated since:** 20
 
-**Substitutes:** RelativeTimeFormatOptions
+**Substitutes:** options)
 
 **System capability:** SystemCapability.Global.I18n
 
 ## Modules to Import
 
 ```TypeScript
-import { intl } from '@ohos.intl';
+import { intl } from '@kit.LocalizationKit';
 ```
 
 ## localeMatcher
@@ -22,7 +23,9 @@ import { intl } from '@ohos.intl';
 localeMatcher?: string
 ```
 
-Locale matching algorithm. The value can be **lookup** or **best fit**. The default value is **best fit**.
+Locale matching algorithm. The value can be **lookup** or **best fit**.
+
+The default value is **best fit**.
 
 **Type:** string
 
@@ -30,7 +33,7 @@ Locale matching algorithm. The value can be **lookup** or **best fit**. The defa
 
 **Deprecated since:** 20
 
-**Substitutes:** localeMatcher
+**Substitutes:** localematcher)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -42,7 +45,13 @@ Locale matching algorithm. The value can be **lookup** or **best fit**. The defa
 numeric?: string
 ```
 
-Format of the output result. It determines whether numeric values are used to represent relative dates or times in the formatting result. The value can be **always** or **auto**. The default value is **always**. For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Format of the output result. It determines whether numeric values are used to represent relative dates or times
+in the formatting result. The value can be **always** or **auto**.
+
+The default value is **always**.
+
+For details about their display effects, see
+[Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -50,7 +59,7 @@ Format of the output result. It determines whether numeric values are used to re
 
 **Deprecated since:** 20
 
-**Substitutes:** numeric
+**Substitutes:** numeric)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -62,7 +71,9 @@ Format of the output result. It determines whether numeric values are used to re
 style?: string
 ```
 
-Length of an internationalized message. The value can be **long**, **short**, or **narrow**. The default value is **long**.
+Length of an internationalized message. The value can be **long**, **short**, or **narrow**.
+
+The default value is **long**.
 
 **Type:** string
 
@@ -70,7 +81,7 @@ Length of an internationalized message. The value can be **long**, **short**, or
 
 **Deprecated since:** 20
 
-**Substitutes:** style
+**Substitutes:** style)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 

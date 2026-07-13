@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## createMd
@@ -12,9 +12,17 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 function createMd(algName: string): Md
 ```
 
-Creates an **Md** instance for message digest operations. For details about the supported specifications, see [Supported Algorithms and Specifications](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications) .
+Creates an **Md** instance for message digest operations.
+
+For details about the supported specifications, see
+[Supported Algorithms and Specifications](../../../../security/CryptoArchitectureKit/crypto-generate-message-digest-overview.md#supported-algorithms-and-specifications)
+.
 
 **Since:** 9
+
+**Model restriction:** 
+- API version 12 and later: This API can be used in both the stage model and FA model.
+- API version 9 to 11: This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -32,7 +40,7 @@ Creates an **Md** instance for message digest operations. For details about the 
 
 | Type | Description |
 | --- | --- |
-| Md | Returns the [Md](arkts-cryptoarchitecture-md-i.md#md) instance created. |
+| Md | Returns the [Md](arkts-cryptoarchitecture-md-i.md) instance created. |
 
 **Error codes:**
 

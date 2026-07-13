@@ -1,6 +1,12 @@
 # WebDataBase
 
-Implements a **WebDataBase** object. > **NOTE** > > - The sample effect is subject to the actual device. > > - You must load the **Web** component before calling the APIs in **WebDataBase**.
+Implements a **WebDataBase** object.
+
+> **NOTE**
+>
+> - The sample effect is subject to the actual device.
+>
+> - You must load the **Web** component before calling the APIs in **WebDataBase**.
 
 **Since:** 9
 
@@ -9,7 +15,7 @@ Implements a **WebDataBase** object. > **NOTE** > > - The sample effect is subje
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## deleteHttpAuthCredentials

@@ -9,7 +9,7 @@ Defines the constructor information for **ArcSliderValueOptions**.
 ## Modules to Import
 
 ```TypeScript
-import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@ohos.arkui.advanced.ArcSlider';
+import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
 ```
 
 ## max
@@ -18,7 +18,15 @@ import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSli
 max?: number
 ```
 
-Maximum value. Default value: **100** **NOTE** If the value of **min** is greater than or equal to that of **max**, **min** is set to **0** and **max** **100**. If the value is not within the [min, max] range, the value of **min** or **max** is used, whichever is closer.
+Maximum value.
+
+Default value: **100**
+
+**NOTE**
+
+If the value of **min** is greater than or equal to that of **max**, **min** is set to **0** and **max** **100**.
+
+If the value is not within the [min, max] range, the value of **min** or **max** is used, whichever is closer.
 
 **Type:** number
 
@@ -36,7 +44,9 @@ Maximum value. Default value: **100** **NOTE** If the value of **min** is greate
 min?: number
 ```
 
-Minimum value. Default value: **0**.
+Minimum value.
+
+Default value: **0**.
 
 **Type:** number
 
@@ -54,7 +64,9 @@ Minimum value. Default value: **0**.
 progress?: number
 ```
 
-Current progress. Default value: same as the value of **min**.
+Current progress.
+
+Default value: same as the value of **min**.
 
 **Type:** number
 

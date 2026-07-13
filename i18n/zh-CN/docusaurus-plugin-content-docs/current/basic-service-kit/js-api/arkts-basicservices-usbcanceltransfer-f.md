@@ -6,7 +6,14 @@
 function usbCancelTransfer(transfer: UsbDataTransferParams): void
 ```
 
-取消异步传输请求。 > **说明：** > > 该接口的主要作用是主动取消尚未完成的USB数据传输请求（如usbSubmitTransfer提交的传输）。<br> > > 在调用该接口前需要通过 > [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1) > claim通信接口。
+取消异步传输请求。
+
+> **说明：**
+>
+> 该接口的主要作用是主动取消尚未完成的USB数据传输请求（如usbSubmitTransfer提交的传输）。<br>
+> > 在调用该接口前需要通过
+> [usbManager.claimInterface](arkts-basicservices-claiminterface-f.md#claiminterface-1)
+> claim通信接口。
 
 **起始版本：** 18
 
@@ -16,13 +23,13 @@ function usbCancelTransfer(transfer: UsbDataTransferParams): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| transfer | UsbDataTransferParams | 是 | 在取消传输的接口中，只需要填充[USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md#usbdevicepipe)和[USBEndpoint](arkts-basicservices-usbendpoint-i.md#usbendpoint)即可。 |
+| transfer | UsbDataTransferParams | 是 | 在取消传输的接口中，只需要填充[USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md)和[USBEndpoint](arkts-basicservices-usbendpoint-i.md)即可。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [14400001](../../apis-basic-services-kit/errorcode-usb.md#14400001-连接usb设备被拒绝) | Access right denied. Call requestRight to get the USBDevicePipe access right first. |
 | [14400008](../../apis-basic-services-kit/errorcode-usb.md#14400008-没有设备连接已断开) | No such device (it may have been disconnected). |
 | [14400010](../../apis-basic-services-kit/errorcode-usb.md#14400010-无法识别的错误) | Other USB error. Possible causes:<br>1.Unrecognized discard error code. |

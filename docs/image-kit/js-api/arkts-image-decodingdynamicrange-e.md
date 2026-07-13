@@ -1,10 +1,6 @@
 # DecodingDynamicRange
 
-```TypeScript
-enum DecodingDynamicRange
-```
-
-描述解码时期望的图像动态范围。
+Enumerates the desired dynamic range of an image during decoding.
 
 **Since:** 12
 
@@ -16,7 +12,10 @@ enum DecodingDynamicRange
 AUTO = 0
 ```
 
-自适应，根据图片信息处理。即如果图片本身为HDR图片，则会按照HDR内容解码；反之按照SDR内容解码。通过 [CreateIncrementalSource]image.CreateIncrementalSource创建的ImageSource会解码为SDR内容。
+The image is decoded based on the format. If the image is in HDR format, it is decoded based on the HDR content;
+otherwise, it is decoded based on the SDR content. The image source created by calling
+[CreateIncrementalSource](arkts-image-createincrementalsource-f.md#createincrementalsource-1) is
+decoded into SDR content.
 
 **Since:** 12
 
@@ -28,7 +27,7 @@ AUTO = 0
 SDR = 1
 ```
 
-按照标准动态范围处理图片。
+The image is decoded according to the standard dynamic range.
 
 **Since:** 12
 
@@ -40,7 +39,9 @@ SDR = 1
 HDR = 2
 ```
 
-按照高动态范围处理图片。通过[CreateIncrementalSource]image.CreateIncrementalSource创建的ImageSource会解码为SDR内容。
+The image is decoded according to the high dynamic range. The image source created by calling
+[CreateIncrementalSource](arkts-image-createincrementalsource-f.md#createincrementalsource-1) is
+decoded into SDR content.
 
 **Since:** 12
 

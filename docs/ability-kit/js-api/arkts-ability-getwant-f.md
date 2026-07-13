@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { featureAbility } from '@ohos.ability.featureAbility';
+import { featureAbility } from '@kit.AbilityKit';
 ```
 
 ## getWant
@@ -12,7 +12,8 @@ import { featureAbility } from '@ohos.ability.featureAbility';
 function getWant(callback: AsyncCallback<Want>): void
 ```
 
-Obtain the want sent from the source ability.
+Obtains the Want corresponding to the ability to start. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 6
 
@@ -24,7 +25,7 @@ Obtain the want sent from the source ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Want&gt; | Yes | Indicates the ability to start. |
+| callback | AsyncCallback&lt;Want&gt; | Yes | Callback used to return the Want. |
 
 **Example**
 
@@ -48,7 +49,7 @@ featureAbility.getWant((error, data) => {
 function getWant(): Promise<Want>
 ```
 
-Obtain the want sent from the source ability.
+Obtains the Want corresponding to the ability to start. This API uses a promise to return the result.
 
 **Since:** 6
 
@@ -60,7 +61,7 @@ Obtain the want sent from the source ability.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Want&gt; | The promise form returns the Want result |
+| Promise&lt;Want&gt; | Promise used to return the Want. |
 
 **Example**
 

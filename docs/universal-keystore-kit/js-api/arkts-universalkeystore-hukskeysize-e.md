@@ -214,7 +214,9 @@ AES key of 256 bits.
 HUKS_AES_KEY_SIZE_512 = 512
 ```
 
-AES key of 512 bits. Note: This parameter is supported since API version 8 and deprecated since API version 11.
+AES key of 512 bits.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 11.
 
 **Since:** 8
 
@@ -370,8 +372,6 @@ ML-DSA-44 parameter set.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Security.Huks.Core
@@ -385,8 +385,6 @@ HUKS_ML_DSA_KEY_PARAM_SET_65 = 65
 ML-DSA-65 parameter set.
 
 **Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
@@ -402,8 +400,6 @@ ML-DSA-87 parameter set.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Security.Huks.Core
@@ -418,8 +414,6 @@ ML-KEM-768 parameter set.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Security.Huks.Core
@@ -433,8 +427,6 @@ HUKS_ML_KEM_KEY_PARAM_SET_1024 = 1024
 ML-KEM-1024 parameter set.
 
 **Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 

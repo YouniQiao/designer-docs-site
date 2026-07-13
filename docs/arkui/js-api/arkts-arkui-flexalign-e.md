@@ -9,10 +9,11 @@ FlexAlign enumeration description.
 ## Start
 
 ```TypeScript
-Start = 0
+Start
 ```
 
-The element is aligned at the head of the principal axis, the first element is aligned with the head of the row, and subsequent elements are aligned with the previous one.
+The element is aligned at the head of the principal axis,
+the first element is aligned with the head of the row, and subsequent elements are aligned with the previous one.
 
 **Since:** 7
 
@@ -25,10 +26,12 @@ The element is aligned at the head of the principal axis, the first element is a
 ## Center
 
 ```TypeScript
-Center = 1
+Center
 ```
 
-The elements are centered in the direction of the principal axis, and the first element is the same distance from the beginning of the row as the last element is from the end of the row.
+The elements are centered in the direction of the principal axis,
+and the first element is the same distance from the beginning of the row as the last element is from the end of the
+row.
 
 **Since:** 7
 
@@ -41,10 +44,11 @@ The elements are centered in the direction of the principal axis, and the first 
 ## End
 
 ```TypeScript
-End = 2
+End
 ```
 
-The element is aligned at the tail of the principal axis, the last element is aligned at the end of the row, and the other elements are aligned with the next.
+The element is aligned at the tail of the principal axis,
+the last element is aligned at the end of the row, and the other elements are aligned with the next.
 
 **Since:** 7
 
@@ -57,10 +61,12 @@ The element is aligned at the tail of the principal axis, the last element is al
 ## SpaceBetween
 
 ```TypeScript
-SpaceBetween = 3
+SpaceBetween
 ```
 
-Elastic elements are evenly distributed in the direction of the Flex principal axis, with the same distance between adjacent elements. The first element aligns with the beginning of the line, and the last element aligns with the end of the line.
+Elastic elements are evenly distributed in the direction of the Flex principal axis,
+with the same distance between adjacent elements.
+The first element aligns with the beginning of the line, and the last element aligns with the end of the line.
 
 **Since:** 7
 
@@ -73,10 +79,13 @@ Elastic elements are evenly distributed in the direction of the Flex principal a
 ## SpaceAround
 
 ```TypeScript
-SpaceAround = 4
+SpaceAround
 ```
 
-Elastic elements are evenly distributed in the direction of the Flex principal axis, with the same distance between adjacent elements. Half the distance between adjacent elements as the distance between the first element and the distance between the last element and the end of the row.
+Elastic elements are evenly distributed in the direction of the Flex principal axis,
+with the same distance between adjacent elements. Half the distance between adjacent elements as the distance
+between
+the first element and the distance between the last element and the end of the row.
 
 **Since:** 7
 
@@ -89,10 +98,12 @@ Elastic elements are evenly distributed in the direction of the Flex principal a
 ## SpaceEvenly
 
 ```TypeScript
-SpaceEvenly = 5
+SpaceEvenly
 ```
 
-Elements in the Flex axis direction are evenly spaced. The spacing between adjacent elements, the spacing between the first element and the beginning of the row, and the spacing between the last element and the end of the row are the same.
+Elements in the Flex axis direction are evenly spaced.
+The spacing between adjacent elements, the spacing between the first element and the beginning of the row,
+and the spacing between the last element and the end of the row are the same.
 
 **Since:** 7
 

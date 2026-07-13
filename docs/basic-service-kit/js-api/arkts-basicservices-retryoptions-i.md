@@ -9,7 +9,7 @@ Task retry configuration.
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## maxRetryCount
@@ -18,7 +18,11 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 maxRetryCount?: number
 ```
 
-Maximum number of retry attempts. The default value is 1. The minimum value is 0. The maximum value is 10. When set to 0, no retries will be performed.
+Maximum number of retry attempts.
+The default value is 1.
+The minimum value is 0.
+The maximum value is 10.
+When set to 0, no retries will be performed.
 
 **Type:** number
 

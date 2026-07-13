@@ -1,6 +1,13 @@
 # @ohos.enterprise.accountManager
 
-本模块提供设备账号管理能力，包括禁止创建本地账号等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
+The **accountManager** module provides APIs for account management of enterprise devices.
+
+> **NOTE**
+>
+> The APIs of this module can be used only in the stage model.
+>
+> The APIs of this module can be called only by a device administrator application that is enabled. For details, see
+> [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
 
 **Since:** 10
 
@@ -18,23 +25,30 @@ import { accountManager } from '@kit.MDMKit';
 
 | Name | Description |
 | --- | --- |
-| [activateOsAccount](arkts-accountmanager-activateosaccount-f.md#activateOsAccount-1) | 激活系统账号 |
-| <!--DelRow-->[addOsAccount](arkts-accountmanager-addosaccount-f-sys.md#addOsAccount-1) | 后台添加账号。 |
-| [addOsAccountAsync](arkts-accountmanager-addosaccountasync-f.md#addOsAccountAsync-1) | 后台添加账号。使用Promise异步回调。 > **说明：** > > 该接口比较耗时，当调用此接口后，后续如果在应用主线程调用其他同步接口时需要等待该接口异步返回。 |
-| [createNormalOsAccount](arkts-accountmanager-createnormalosaccount-f.md#createNormalOsAccount-1) | 添加普通系统账号 |
-| <!--DelRow-->[disallowAddLocalAccount](arkts-accountmanager-disallowaddlocalaccount-f-sys.md#disallowAddLocalAccount-1) | 禁止设备创建本地账号。使用callback异步回调。 |
-| <!--DelRow-->[disallowAddLocalAccount](arkts-accountmanager-disallowaddlocalaccount-f-sys.md#disallowAddLocalAccount-2) | 禁止设备创建本地账号。使用Promise异步回调。 |
-| <!--DelRow-->[disallowAddOsAccountByUser](arkts-accountmanager-disallowaddosaccountbyuser-f-sys.md#disallowAddOsAccountByUser-1) | 禁止用户添加账号。 |
-| [disallowOsAccountAddition](arkts-accountmanager-disallowosaccountaddition-f.md#disallowOsAccountAddition-1) | 禁止用户添加账号。 |
-| [getDomainAccountPolicy](arkts-accountmanager-getdomainaccountpolicy-f.md#getDomainAccountPolicy-1) | 获取域账号策略。 |
-| <!--DelRow-->[isAddOsAccountByUserDisallowed](arkts-accountmanager-isaddosaccountbyuserdisallowed-f-sys.md#isAddOsAccountByUserDisallowed-1) | 查询是否禁止某用户添加账号。 |
-| [isOsAccountAdditionDisallowed](arkts-accountmanager-isosaccountadditiondisallowed-f.md#isOsAccountAdditionDisallowed-1) | 查询是否禁止用户添加账号。 |
-| [removeOsAccount](arkts-accountmanager-removeosaccount-f.md#removeOsAccount-1) | 移除系统账号 |
-| [setDomainAccountPolicy](arkts-accountmanager-setdomainaccountpolicy-f.md#setDomainAccountPolicy-1) | 设置域账号策略。 |
+| [activateOsAccount](arkts-mdm-activateosaccount-f.md#activateosaccount-1) | Activates a specified OS account by ID. |
+| [addOsAccountAsync](arkts-mdm-addosaccountasync-f.md#addosaccountasync-1) | Adds an account in the background. This API uses a promise to return the result.&gt; **NOTE**&gt;&gt; This API is time-consuming. Subsequent calls to other synchronous APIs in the application main thread must wait&gt; for the asynchronous return of this API. |
+| [createNormalOsAccount](arkts-mdm-createnormalosaccount-f.md#createnormalosaccount-1) | Adds a normal OS account using the name. |
+| [disallowOsAccountAddition](arkts-mdm-disallowosaccountaddition-f.md#disallowosaccountaddition-1) | Users are not allowed to add accounts. |
+| [getDomainAccountPolicy](arkts-mdm-getdomainaccountpolicy-f.md#getdomainaccountpolicy-1) | Obtains the domain account policy. |
+| [isOsAccountAdditionDisallowed](arkts-mdm-isosaccountadditiondisallowed-f.md#isosaccountadditiondisallowed-1) | Queries whether a user is not allowed to add an account. |
+| [removeOsAccount](arkts-mdm-removeosaccount-f.md#removeosaccount-1) | Removes an OS account by ID. |
+| [setDomainAccountPolicy](arkts-mdm-setdomainaccountpolicy-f.md#setdomainaccountpolicy-1) | Sets the domain account policy. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [addOsAccount](arkts-mdm-addosaccount-f-sys.md#addosaccount-1) | Adds an account in the background. |
+| [disallowAddLocalAccount](arkts-mdm-disallowaddlocalaccount-f-sys.md#disallowaddlocalaccount-1) | Disallows a device to create local user accounts. This API uses an asynchronous callback to return the result. |
+| [disallowAddLocalAccount](arkts-mdm-disallowaddlocalaccount-f-sys.md#disallowaddlocalaccount-2) | Disallows a device to create local user accounts. This API uses a promise to return the result. |
+| [disallowAddOsAccountByUser](arkts-mdm-disallowaddosaccountbyuser-f-sys.md#disallowaddosaccountbyuser-1) | Disallows a user to add accounts. |
+| [isAddOsAccountByUserDisallowed](arkts-mdm-isaddosaccountbyuserdisallowed-f-sys.md#isaddosaccountbyuserdisallowed-1) | Queries whether to disallow a user to add accounts. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DomainAccountPolicy](arkts-accountmanager-domainaccountpolicy-i.md) | 域账号策略。 |
+| [DomainAccountPolicy](arkts-mdm-domainaccountpolicy-i.md) | Domain account policy. |
 

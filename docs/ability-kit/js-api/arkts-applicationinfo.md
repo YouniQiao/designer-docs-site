@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ApplicationInfo](arkts-applicationinfo-i.md) | 应用程序信息，未做特殊说明的属性，均通过 [bundle.getApplicationInfo]{@link ./../@ohos.bundle:bundle.getApplicationInfo(bundleName: string, bundleFlags: number, userId?: number)} 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-ApplicationInfo]{@link applicationInfo:ApplicationInfo}替代。 |
+| [ApplicationInfo](arkts-ability-applicationinfo-depr-i.md) | The module provides application information. Unless otherwise specified, the information is obtained through[bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3).&gt; **NOTE**&gt;&gt; The APIs of this module have been deprecated since API version 9. You are advised to use&gt; [bundleManager-ApplicationInfo](arkts-ability-applicationinfo-depr-i.md) instead. |
 

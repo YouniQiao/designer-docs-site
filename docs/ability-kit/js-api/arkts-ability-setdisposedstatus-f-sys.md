@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appControl } from '@ohos.bundle.appControl';
+import { appControl } from '@kit.AbilityKit';
 ```
 
 ## setDisposedStatus
@@ -12,7 +12,8 @@ import { appControl } from '@ohos.bundle.appControl';
 function setDisposedStatus(appId: string, disposedWant: Want, callback: AsyncCallback<void>): void
 ```
 
-Sets the disposed status for an application. This API uses an asynchronous callback to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Sets the disposed status for an application. This API uses an asynchronous callback to return the result. If the
+operation is successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 
@@ -28,7 +29,7 @@ Sets the disposed status for an application. This API uses an asynchronous callb
 | --- | --- | --- | --- |
 | appId | string | Yes | ID of the target application.<br> **appId** is the unique identifier of an applicationand is determined by the bundle name and signature information of the application. For details about how toobtain **appId**, see[How do I obtain appId from application information](../../../../quick-start/common_problem_of_application.md#how-do-i-obtain-appid-from-application-information). |
 | disposedWant | Want | Yes | Disposal intent of the application. |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -73,7 +74,8 @@ try {
 function setDisposedStatus(appId: string, disposedWant: Want): Promise<void>
 ```
 
-Sets the disposed status for an application. This API uses a promise to return the result. If the operation is successful, **null** is returned. If the operation fails, an error message is returned.
+Sets the disposed status for an application. This API uses a promise to return the result. If the operation is
+successful, **null** is returned. If the operation fails, an error message is returned.
 
 **Since:** 9
 

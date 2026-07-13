@@ -1,6 +1,7 @@
 # HolidayManager
 
-Provides holiday data parsing capabilities, such as determining holidays and obtaining the holiday list of a specified year.
+Provides holiday data parsing capabilities, such as determining holidays and obtaining the holiday list of a
+specified year.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Provides holiday data parsing capabilities, such as determining holidays and obt
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -106,7 +107,7 @@ Determines whether the specified date is a holiday.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| date | Date | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.&lt;br&gt;The default value is the current date. |
+| date | Date | No | Date and time. Note: The month starts from **0**. For example, **0** indicates January.The default value is the current date. |
 
 **Return value:**
 

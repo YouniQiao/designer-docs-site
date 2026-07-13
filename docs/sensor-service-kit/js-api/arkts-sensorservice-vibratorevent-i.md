@@ -9,7 +9,7 @@ Vibration event.
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## duration
@@ -18,7 +18,8 @@ import { vibrator } from '@ohos.vibrator';
 duration?: number
 ```
 
-Vibration duration. This parameter is optional, in ms. The value range is (0,5000]. The default value is **48** for short vibration and **1000** for long vibration.
+Vibration duration. This parameter is optional, in ms. The value range is (0,5000]. The default value is **48**
+for short vibration and **1000** for long vibration.
 
 **Type:** number
 
@@ -46,7 +47,8 @@ Vibration event type.
 frequency?: number
 ```
 
-Vibration frequency. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the default value is **50**.
+Vibration frequency. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the
+default value is **50**.
 
 **Type:** number
 
@@ -60,7 +62,8 @@ Vibration frequency. This parameter is optional. The value range is [0,100]. If 
 index?: number
 ```
 
-Channel number. This parameter is optional. The value range is [0,2]. If this parameter is left empty, the default value is **0**.
+Channel number. This parameter is optional. The value range is [0,2]. If this parameter is left empty, the
+default value is **0**.
 
 **Type:** number
 
@@ -74,7 +77,8 @@ Channel number. This parameter is optional. The value range is [0,2]. If this pa
 intensity?: number
 ```
 
-Vibration intensity. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the default value is **100**.
+Vibration intensity. This parameter is optional. The value range is [0,100]. If this parameter is left empty, the
+default value is **100**.
 
 **Type:** number
 

@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ActionResult, ShowNotificationOptions } from '@system.notification';
+import { ActionResult, ShowNotificationOptions } from '@kit.NotificationKit';
 ```
 
 ## clickAction
@@ -18,7 +18,9 @@ import { ActionResult, ShowNotificationOptions } from '@system.notification';
 clickAction?: ActionResult
 ```
 
-Action triggered when the notification is clicked. This API is deprecated since API version 7.
+Action triggered when the notification is clicked.
+
+This API is deprecated since API version 7.
 
 **Type:** ActionResult
 

@@ -1,8 +1,13 @@
 # SystemDefinedRecord
 
-Represents specific data types defined by OpenHarmony. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md#unifiedrecord) and a base class of OpenHarmony-specific data types. You are advised to use the child class of **SystemDefinedRecord**, for example, [SystemDefinedForm](arkts-arkdata-systemdefinedform-c.md#systemdefinedform), [SystemDefinedAppItem](arkts-arkdata-systemdefinedappitem-c.md#systemdefinedappitem), and [SystemDefinedPixelMap](arkts-arkdata-systemdefinedpixelmap-c.md#systemdefinedpixelmap), to describe OpenHarmony-specific data.
+Represents specific data types defined by OpenHarmony. It is a child class of
+[UnifiedRecord](arkts-arkdata-unifiedrecord-c.md) and a base class of OpenHarmony-specific data types. You
+are advised to use the child class of **SystemDefinedRecord**, for example,
+[SystemDefinedForm](arkts-arkdata-systemdefinedform-c.md),
+[SystemDefinedAppItem](arkts-arkdata-systemdefinedappitem-c.md), and
+[SystemDefinedPixelMap](arkts-arkdata-systemdefinedpixelmap-c.md), to describe OpenHarmony-specific data.
 
-**Inheritance/Implementation:** SystemDefinedRecord extends [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md#unifiedrecord)
+**Inheritance/Implementation:** SystemDefinedRecord extends [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md)
 
 **Since:** 10
 
@@ -11,7 +16,7 @@ Represents specific data types defined by OpenHarmony. It is a child class of [U
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## details
@@ -20,7 +25,8 @@ import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
 details?: Record<string, number | number | number | string | Uint8Array>
 ```
 
-A dictionary type object, where the key is of the string type, and the value can be a number, a string, or a Uint 8Array. The default value is an empty dictionary object.
+A dictionary type object, where the key is of the string type, and the value can be a number, a string, or a Uint
+8Array. The default value is an empty dictionary object.
 
 **Type:** Record<string, number | number | number | string | Uint8Array>
 

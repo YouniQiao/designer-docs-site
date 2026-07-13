@@ -100,7 +100,8 @@ layout(position: Position): void
 measureResult: MeasureResult
 ```
 
-子组件测量后的尺寸信息。 单位为： vp。
+子组件测量后的尺寸信息。
+单位为： vp。
 
 **类型：** MeasureResult
 
@@ -118,7 +119,8 @@ measureResult: MeasureResult
 uniqueId?: number
 ```
 
-系统为子组件分配的唯一标识UniqueID。 取值应为≥0的整数。
+系统为子组件分配的唯一标识UniqueID。
+取值应为≥0的整数。
 
 **类型：** number
 

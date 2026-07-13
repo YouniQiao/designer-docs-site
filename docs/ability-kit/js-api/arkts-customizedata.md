@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [CustomizeData](arkts-customizedata-i.md) | 自定义元数据。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[Metadata]{@link ./../bundleManager/Metadata:Metadata}替代。 |
+| [CustomizeData](arkts-ability-customizedata-depr-i.md) | The CustomizeData module provides custom metadata.&gt; **NOTE**&gt;&gt; The APIs of this module have been deprecated since API version 9. You are advised to use&gt; [Metadata](arkts-ability-metadata-i.md) instead. |
 

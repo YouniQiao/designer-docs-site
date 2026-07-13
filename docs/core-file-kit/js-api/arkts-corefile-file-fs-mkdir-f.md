@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## mkdir
@@ -59,7 +59,8 @@ Creates a directory. This API uses a promise to return the result.
 declare function mkdir(path: string, recursion: boolean): Promise<void>
 ```
 
-Creates a directory. This API uses a promise to return the result. The value **true** means to create a directory recursively.
+Creates a directory. This API uses a promise to return the result. The value **true** means to create a directory
+recursively.
 
 **Since:** 11
 
@@ -149,7 +150,8 @@ Creates a directory. This API uses an asynchronous callback to return the result
 declare function mkdir(path: string, recursion: boolean, callback: AsyncCallback<void>): void
 ```
 
-Creates a directory. This API uses an asynchronous callback to return the result. The value **true** means to create a directory recursively.
+Creates a directory. This API uses an asynchronous callback to return the result. The value **true** means to create
+a directory recursively.
 
 **Since:** 11
 

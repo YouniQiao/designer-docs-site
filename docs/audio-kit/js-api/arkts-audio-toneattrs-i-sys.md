@@ -11,7 +11,7 @@ Tone attributes.
 ## Modules to Import
 
 ```TypeScript
-import { systemSoundManager } from '@ohos.multimedia.systemSoundManager';
+import { systemSoundManager } from '@kit.AudioKit';
 ```
 
 ## getCategory
@@ -119,7 +119,8 @@ toneAttrs.getFileName();
 getMediaType(): MediaType
 ```
 
-Gets media type. This function returns {@link MediaType#AUDIO} if the media type has not been changed by {@link setMediaType}.
+Gets media type. This function returns {@link MediaType#AUDIO} if the media type has not been changed
+by {@link setMediaType}.
 
 **Since:** 20
 

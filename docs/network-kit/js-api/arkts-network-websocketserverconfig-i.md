@@ -9,7 +9,7 @@ Defines parameters for a WebSocket Server.
 ## Modules to Import
 
 ```TypeScript
-import { webSocket } from '@ohos.net.webSocket';
+import { webSocket } from '@kit.NetworkKit';
 ```
 
 ## maxConcurrentClientsNumber
@@ -74,7 +74,8 @@ Server cert.
 serverIP?: string
 ```
 
-Network card that the server listens on. The server listens on this specific address. It's 0.0.0.0 by default.
+Network card that the server listens on.
+The server listens on this specific address. It's 0.0.0.0 by default.
 
 **Type:** string
 

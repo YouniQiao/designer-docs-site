@@ -18,110 +18,110 @@ import { webview } from '@kit.ArkWeb';
 
 | Name | Description |
 | --- | --- |
-| [once](arkts-webview-once-f.md#once-1) | Subscribe to a callback of a specified type of web event once. |
+| [once](arkts-arkweb-once-f.md#once-1) | Registers a one-time callback for web events of the specified type. Currently, only **webInited** is supported.This callback is triggered when the Web engine initialization is complete.When the first **Web** component is loaded in an application, the web engine is initialized. When other **Web**components are loaded in the same application, **once()** is not triggered. When the first **Web** component isloaded after the last **Web** component is destroyed in the application, the web engine will be initialized again. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [AdsBlockManager](arkts-webview-adsblockmanager-c.md) | This class is used to set adblock config. |
-| [BackForwardCacheOptions](arkts-webview-backforwardcacheoptions-c.md) | 前进后退缓存相关设置对象，用来控制Web组件前进后退缓存相关选项。 |
-| [BackForwardCacheSupportedFeatures](arkts-webview-backforwardcachesupportedfeatures-c.md) | This class is used to enable back forward cache supported features. |
-| [GeolocationPermissions](arkts-webview-geolocationpermissions-c.md) | Provides a method for managing web geographic location permissions. |
-| [JsMessageExt](arkts-webview-jsmessageext-c.md) | 该消息用于指示JavaScript代码执行结果的状态。 |
-| [MediaSourceInfo](arkts-webview-mediasourceinfo-c.md) | 表示媒体源的信息。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。 |
-| [NativeMediaPlayerSurfaceInfo](arkts-webview-nativemediaplayersurfaceinfo-c.md) | [应用接管网页媒体播放功能](docroot://reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中 用于同层渲染的 surface 信息。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。 |
-| [PdfData](arkts-webview-pdfdata-c.md) | Defines the callback of createPdf, related to {@link createPDF} method. |
-| [PrefetchOptions](arkts-webview-prefetchoptions-c.md) | Defines the PrefetchOptions class. |
-| [ProxyConfig](arkts-webview-proxyconfig-c.md) | The ProxyConfig used by applyProxyOverride. |
-| [ProxyController](arkts-webview-proxycontroller-c.md) | This class is used for set proxy for ArkWeb. |
-| [ProxyRule](arkts-webview-proxyrule-c.md) | The ProxyRule used by insertProxyRule. |
-| [UserAgentBrandVersion](arkts-webview-useragentbrandversion-c.md) | Class that holds brand name, major version and full version. Brand name and major version used to generated User-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hint sec-ch-ua-full-version-list. |
-| [UserAgentMetadata](arkts-webview-useragentmetadata-c.md) | Holds User-Agent metadata information and uses to generate User-Agent client hints. |
-| [WebCookieManager](arkts-webview-webcookiemanager-c.md) | 提供了用于管理网页Cookie的方法。 |
-| [WebDataBase](arkts-webview-webdatabase-c.md) | Web组件数据库管理对象。 > **说明：** > > - 本Class首批接口从API version 9开始支持。 > > - 示例效果请以真机运行为准。 > > - 目前调用WebDataBase下的方法，都需要先加载Web组件。 |
-| [WebDownloadDelegate](arkts-webview-webdownloaddelegate-c.md) | 下载任务的状态会通过该类的回调接口通知给用户。 |
-| [WebDownloadItem](arkts-webview-webdownloaditem-c.md) | 表示下载任务，您可以使用此对象来操作相应的下载任务。 当前WebDownloadItem支持的下载文件名最长长度为255字节。 |
-| [WebDownloadManager](arkts-webview-webdownloadmanager-c.md) | 可以通过该类提供的接口来恢复失败的下载任务。 |
-| [WebHttpBodyStream](arkts-webview-webhttpbodystream-c.md) | The http body stream of the request. |
-| [WebMessageExt](arkts-webview-webmessageext-c.md) | The message received or sent from web message port. |
-| [WebResourceHandler](arkts-webview-webresourcehandler-c.md) | Used to intercept url requests. Response headers and body can be sent through WebResourceHandler. |
-| [WebSchemeHandler](arkts-webview-webschemehandler-c.md) | This class is used to intercept requests for a specified scheme. |
-| [WebSchemeHandlerRequest](arkts-webview-webschemehandlerrequest-c.md) | 通过WebSchemeHandler拦截到的请求。 |
-| [WebSchemeHandlerResponse](arkts-webview-webschemehandlerresponse-c.md) | 请求的响应，可以为被拦截的请求创建一个Response并填充自定义的内容返回给Web组件。 |
-| [WebStorage](arkts-webview-webstorage-c.md) | 通过WebStorage可管理Web SQL数据库接口和HTML5 Web存储接口，每个应用中的所有Web组件共享一个WebStorage。 > **说明：** > > - 本Class首批接口从API version 9开始支持。 > > - 示例效果请以真机运行为准。 > > - 目前调用WebStorage下的方法，都需要先加载Web组件。 > > - 本Class下的接口在ArkWeb内核升级到M132版本后因内核废弃Web SQL，对Web SQL数据库的管理失效。ArkWeb内核版本参考ArkWeb简介 > [约束与限制](docroot://web/web-component-overview.md#约束与限制)。 |
-| [WebviewController](arkts-webview-webviewcontroller-c.md) | Provides methods for controlling the web controller. |
+| [AdsBlockManager](arkts-arkweb-adsblockmanager-c.md) | This class is used to set adblock config. |
+| [BackForwardCacheOptions](arkts-arkweb-backforwardcacheoptions-c.md) | This class is used to set back forward cache options. |
+| [BackForwardCacheSupportedFeatures](arkts-arkweb-backforwardcachesupportedfeatures-c.md) | This class is used to enable back forward cache supported features. |
+| [GeolocationPermissions](arkts-arkweb-geolocationpermissions-c.md) | Implements a **GeolocationPermissions** object.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device.&gt;&gt; - You must load the **Web** component before calling the APIs in **GeolocationPermissions**.&gt;&gt; - Required Permissions&gt; **ohos.permission.LOCATION**, **ohos.permission.APPROXIMATELY_LOCATION**, and&gt; **ohos.permission.LOCATION_IN_BACKGROUND**, which are required for accessing the location information. For details&gt; about the permissions, see&gt; [@ohos.geolocation (Geolocation)](../../../../reference/apis-location-kit/js-apis-geolocation.md). |
+| [JsMessageExt](arkts-arkweb-jsmessageext-c.md) | The message for indicating the of result of JavaScript code execution. |
+| [MediaSourceInfo](arkts-arkweb-mediasourceinfo-c.md) | Implements a **MediaSourceInfo** object to provide the information about the media source.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device. |
+| [NativeMediaPlayerSurfaceInfo](arkts-arkweb-nativemediaplayersurfaceinfo-c.md) | Implements a **NativeMediaPlayerSurfaceInfo** object to provide the surface information used for same-layerrendering [when the application takes over the media playback of the web page](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12).&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device. |
+| [PdfData](arkts-arkweb-pdfdata-c.md) | Implements the output data stream class of **createPdf()**.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device.&gt;&gt; - When a PDF file is generated on a web page, a data stream is returned, which is encapsulated by the **PdfData**&gt; class. |
+| [PrefetchOptions](arkts-arkweb-prefetchoptions-c.md) | Defines the PrefetchOptions class. |
+| [ProxyConfig](arkts-arkweb-proxyconfig-c.md) | The ProxyConfig used by applyProxyOverride. |
+| [ProxyController](arkts-arkweb-proxycontroller-c.md) | This class is used for set proxy for ArkWeb. |
+| [ProxyRule](arkts-arkweb-proxyrule-c.md) | The ProxyRule used by insertProxyRule. |
+| [UserAgentBrandVersion](arkts-arkweb-useragentbrandversion-c.md) | Class that holds brand name, major version and full version. Brand name and major version used to generatedUser-Agent client hints sec-cu-ua. Brand name and full version used to generated user-agent client hintsec-ch-ua-full-version-list. |
+| [UserAgentMetadata](arkts-arkweb-useragentmetadata-c.md) | Holds User-Agent metadata information and uses to generate User-Agent client hints. |
+| [WebCookieManager](arkts-arkweb-webcookiemanager-c.md) | Provides methods for managing the web cookies. |
+| [WebDataBase](arkts-arkweb-webdatabase-c.md) | Implements a **WebDataBase** object.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device.&gt;&gt; - You must load the **Web** component before calling the APIs in **WebDataBase**. |
+| [WebDownloadDelegate](arkts-arkweb-webdownloaddelegate-c.md) | The download state is notified through this delegate. |
+| [WebDownloadItem](arkts-arkweb-webdownloaditem-c.md) | Represents a download task, You can use this object to operate the corresponding download task.Currently, the maximum length of the download file name supported by **WebDownloadItem** is 255 bytes. |
+| [WebDownloadManager](arkts-arkweb-webdownloadmanager-c.md) | You can trigger download manually through this interface, or resume failed or canceled downloads. |
+| [WebHttpBodyStream](arkts-arkweb-webhttpbodystream-c.md) | The http body stream of the request. |
+| [WebMessageExt](arkts-arkweb-webmessageext-c.md) | The message received or sent from web message port. |
+| [WebResourceHandler](arkts-arkweb-webresourcehandler-c.md) | Used to intercept url requests. Response headers and body can be sent throughWebResourceHandler. |
+| [WebSchemeHandler](arkts-arkweb-webschemehandler-c.md) | This class is used to intercept requests for a specified scheme. |
+| [WebSchemeHandlerRequest](arkts-arkweb-webschemehandlerrequest-c.md) | Defines the Web resource request used for scheme handler. |
+| [WebSchemeHandlerResponse](arkts-arkweb-webschemehandlerresponse-c.md) | Defines the Web resource response used for scheme handler. |
+| [WebStorage](arkts-arkweb-webstorage-c.md) | Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web Storage APIs. All **Web**components in an application share a **WebStorage** object.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device.&gt;&gt; - You must load the **Web** component before calling the APIs in **WebStorage**.&gt;&gt; - After the ArkWeb kernel is upgraded to M132, the Web SQL database management becomes invalid because the kernel&gt; discards Web SQL. For details about the ArkWeb kernel version, see&gt; [Constraints](../../../../web/web-component-overview.md#constraints). |
+| [WebviewController](arkts-arkweb-webviewcontroller-c.md) | Represents a **WebviewController** object used to control various behaviors of **Web** components, including pagenavigation, lifecycle status, and JavaScript interaction. A **WebviewController** object can control only one**Web** component, and the APIs (except static APIs) in the **WebviewController** can be invoked only after it hasbeen bound to the target **Web** component. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BackForwardList](arkts-webview-backforwardlist-i.md) | Provides back and forward history list information method. related to {@link HistoryItem}. |
-| [BlanklessFrameInterpolationInfo](arkts-webview-blanklessframeinterpolationinfo-i.md) | 1.定义插帧状态信息 2.ArkWeb使能白屏插帧优化的场景 设备行为差异:仅支持手机平台，其他平台返回801 |
-| [BlanklessInfo](arkts-webview-blanklessinfo-i.md) | 页面首屏加载预测信息，主要包括首屏相似度预测值，首屏加载耗时预测值，预测错误码，应用需根据此信息来决策是否启用无白屏加载插帧方案。 |
-| [BlanklessLoadingParam](arkts-webview-blanklessloadingparam-i.md) | 1.插帧加载参数 设备行为差异:仅支持手机平台，其他平台返回801 |
-| [CacheOptions](arkts-webview-cacheoptions-i.md) | Web组件预编译JavaScript生成字节码缓存的配置对象，用于控制字节码缓存更新。 |
-| [HistoryItem](arkts-webview-historyitem-i.md) | Provides information for history item in BackForwardList. |
-| [HitTestValue](arkts-webview-hittestvalue-i.md) | 提供点击区域的元素信息。示例代码参考 [getLastHitTest]{@link @ohos.web.webview:webview.WebviewController#getLastHitTest}. |
-| [MediaInfo](arkts-webview-mediainfo-i.md) | [CreateNativeMediaPlayerCallback]{@link @ohos.web.webview:webview.CreateNativeMediaPlayerCallback}回调函数的一个参数。包含了网页中媒 体的信息。应用可以根据这些信息来创建接管网页媒体播放的播放器。 |
-| [NativeMediaPlayerBridge](arkts-webview-nativemediaplayerbridge-i.md) | [CreateNativeMediaPlayerCallback]{@link @ohos.web.webview:webview.CreateNativeMediaPlayerCallback}回调函数的返回值类型。接管网页媒体 的播放器和ArkWeb内核之间的一个接口类。 ArkWeb内核通过该接口类的实例对象来控制应用创建的用来接管网页媒体的播放器。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。 |
-| [NativeMediaPlayerHandler](arkts-webview-nativemediaplayerhandler-i.md) | [CreateNativeMediaPlayerCallback]{@link @ohos.web.webview:webview.CreateNativeMediaPlayerCallback}回调函数的参数。应用通过该对象，将 播放器的状态通知给 ArkWeb 内核。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。 |
-| [OfflineResourceMap](arkts-webview-offlineresourcemap-i.md) | 本地离线资源配置对象，用于配置将被[injectOfflineResources]{@link @ohos.web.webview:webview.WebviewController.injectOfflineResources} 接口注入到内存缓存的本地离线资源的相关信息，内核会根据此信息生成资源缓存，并据此控制缓存的有效期。 |
-| [PdfConfiguration](arkts-webview-pdfconfiguration-i.md) | Defines the configuration of creating pdf, related to {@Link createPdf} method. |
-| [RectEvent](arkts-webview-rectevent-i.md) | 矩形定义。 |
-| [RequestInfo](arkts-webview-requestinfo-i.md) | Web组件发送的资源请求信息。 |
-| [ScrollOffset](arkts-webview-scrolloffset-i.md) | 网页当前的滚动偏移量。 |
-| [SecurityParams](arkts-webview-securityparams-i.md) | 定义enableAdvancedSecurityMode参数。 |
-| [SnapshotInfo](arkts-webview-snapshotinfo-i.md) | 获取全量绘制结果入参。 |
-| [SnapshotResult](arkts-webview-snapshotresult-i.md) | 全量绘制回调结果。 |
-| [WebCustomScheme](arkts-webview-webcustomscheme-i.md) | Defines the configuration of web custom scheme, related to {@link customizeSchemes} method. |
-| [WebHeader](arkts-webview-webheader-i.md) | Web组件返回的请求/响应头对象。 |
-| [WebHttpCookie](arkts-webview-webhttpcookie-i.md) | Defines the Web's HTTPCookie. <p><strong>API Note</strong>:<br> The maximum length allowed for each attribute value in a cookie string is 1024. </p> |
-| [WebMessagePort](arkts-webview-webmessageport-i.md) | Define html web message port. |
-| [WebStorageOrigin](arkts-webview-webstorageorigin-i.md) | 提供Web SQL数据库的使用信息。 |
-
-### Types
-
-| Name | Description |
-| --- | --- |
-| [CreateNativeMediaPlayerCallback](arkts-webview-createnativemediaplayercallback-t.md) | [onCreateNativeMediaPlayer]{@link @ohos.web.webview:webview.WebviewController#onCreateNativeMediaPlayer(callback: CreateNativeMediaPlayerCallback)} 方法的参数。一个回调函数，创建一个播放器，用于接管网页中的媒体播放。 |
-| [OnProxyConfigChangeCallback](arkts-webview-onproxyconfigchangecallback-t.md) | The callback for proxy changed. |
-| [WebMessage](arkts-webview-webmessage-t.md) | 用于描述{@link onMessageEventExt}所支持的数据类型。 |
+| [BackForwardList](arkts-arkweb-backforwardlist-i.md) | Provides back and forward history list information method. related to {@link HistoryItem}. |
+| [BlanklessFrameInterpolationInfo](arkts-arkweb-blanklessframeinterpolationinfo-i.md) | Defines the frame interpolation state information in the scenario where the ArkWeb blankless loadingoptimization is enabled.Device behavior differences: Only the mobile phone is supported. For other devices, 801 is returned. |
+| [BlanklessInfo](arkts-arkweb-blanklessinfo-i.md) | Describes the prediction information about blankless loading, including the first screen similarity, first screenloading duration, and error code. The application determines whether to enable the blankless loading solution basedon the prediction information. |
+| [BlanklessLoadingParam](arkts-arkweb-blanklessloadingparam-i.md) | Defines the blankless loading parameter.Device behavior differences: Only the mobile phone is supported. For other devices, 801 is returned. |
+| [CacheOptions](arkts-arkweb-cacheoptions-i.md) | Represents a configuration object for precompiling JavaScript in the **Web** component to generate bytecode cache,which is designed to control the updating of the bytecode cache. |
+| [HistoryItem](arkts-arkweb-historyitem-i.md) | Provides information for history item in BackForwardList. |
+| [HitTestValue](arkts-arkweb-hittestvalue-i.md) | Provides the element information of the area being clicked. For the sample code, see[getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1). |
+| [MediaInfo](arkts-arkweb-mediainfo-i.md) | Represents a **MediaInfo** object used as a parameter of the[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) callback. Theobject contains information about media on the web page. The application may create, based on the information, aplayer that takes over media playback of the web page. |
+| [NativeMediaPlayerBridge](arkts-arkweb-nativemediaplayerbridge-i.md) | Instance of the API class between the web media player and the ArkWeb kernel.The ArkWeb kernel uses an object of this interface class tocontrol the player created by the application to take over web page media.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device. |
+| [NativeMediaPlayerHandler](arkts-arkweb-nativemediaplayerhandler-i.md) | Implements a **NativeMediaPlayerHandler** object used as a parameter of the[CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) callback. Theapplication uses this object to report the player status to the ArkWeb engine.&gt; **NOTE**&gt;&gt; - The sample effect is subject to the actual device. |
+| [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md) | Implements an **OfflineResourceMap** object, which is used to set information related to local offline resourcesthat will be injected into memory cache through the[injectOfflineResources](arkts-arkweb-webviewcontroller-c.md#injectofflineresources-1) API. The ArkWebengine will generate resource caches based on this information and control the validity period of the cacheaccordingly. |
+| [PdfConfiguration](arkts-arkweb-pdfconfiguration-i.md) | Specifies the input parameters of **createPdf()**.&gt; **NOTE**&gt;&gt; The number of pixels is calculated as follows: Number of pixels = 96 x Number of inches. |
+| [RectEvent](arkts-arkweb-rectevent-i.md) | Defines a rectangle. |
+| [RequestInfo](arkts-arkweb-requestinfo-i.md) | Describes the information about the resource request sent by the **Web** component. |
+| [ScrollOffset](arkts-arkweb-scrolloffset-i.md) | Represents the current scrolling offset of a web page. |
+| [SecurityParams](arkts-arkweb-securityparams-i.md) | Security feature option configuration. |
+| [SnapshotInfo](arkts-arkweb-snapshotinfo-i.md) | Provides information used to obtain a full drawing result. |
+| [SnapshotResult](arkts-arkweb-snapshotresult-i.md) | Represents a full drawing result. |
+| [WebCustomScheme](arkts-arkweb-webcustomscheme-i.md) | Defines the configuration of web custom scheme, related to {@link customizeSchemes} method. |
+| [WebHeader](arkts-arkweb-webheader-i.md) | Defines the Web's request/response header. |
+| [WebHttpCookie](arkts-arkweb-webhttpcookie-i.md) | Defines the Web's HTTPCookie.&lt;p&gt;<strong>API Note</strong>:<br>The maximum length allowed for each attribute value in a cookie string is 1024.&lt;/p&gt; |
+| [WebMessagePort](arkts-arkweb-webmessageport-i.md) | Define html web message port. |
+| [WebStorageOrigin](arkts-arkweb-webstorageorigin-i.md) | Provides usage information of the Web SQL Database. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ArkWebEngineVersion](arkts-webview-arkwebengineversion-e.md) | ArkWeb内核版本，请参考 [M114内核在OpenHarmony 6.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_6.0.md) ， [M132内核在OpenHarmony 7.0系统上的适配指导](https://gitcode.com/openharmony-tpc/chromium_src/blob/master/web/ReleaseNote/CompatibleWithLegacyWebEngine_7.0.md) 。 |
-| [BlanklessFrameInterpolationState](arkts-webview-blanklessframeinterpolationstate-e.md) | 定义当前插帧状态 设备行为差异:仅支持手机平台，其他平台返回801 |
-| [ControllerAttachState](arkts-webview-controllerattachstate-e.md) | 表示controller的绑定状态枚举 |
-| [JsMessageType](arkts-webview-jsmessagetype-e.md) | Enum type supplied to {@link runJavaScriptExt} for indicating the result of JavaScript code execution. |
-| [MediaError](arkts-webview-mediaerror-e.md) | 播放器的错误类型。 |
-| [MediaPlaybackState](arkts-webview-mediaplaybackstate-e.md) | 当前网页的播控状态。 |
-| [MediaType](arkts-webview-mediatype-e.md) | 表示媒体类型。 |
-| [NetworkState](arkts-webview-networkstate-e.md) | 播放器的网络状态。 |
-| [OfflineResourceType](arkts-webview-offlineresourcetype-e.md) | [OfflineResourceMap]{@link @ohos.web.webview:webview.OfflineResourceMap}对象对应的本地离线资源的接口类型。 |
-| [PlaybackStatus](arkts-webview-playbackstatus-e.md) | [handleStatusChanged]{@link @ohos.web.webview:webview.NativeMediaPlayerHandler.handleStatusChanged} 接口参数， 用于表示播放器的播 放状态。 |
-| [Preload](arkts-webview-preload-e.md) | 播放器预加载媒体数据。 |
-| [PressureLevel](arkts-webview-pressurelevel-e.md) | 内存压力等级。在应用主动清理Web组件占用的缓存时，Web内核会根据内存压力等级，进行缓存释放。 |
-| [ProxySchemeFilter](arkts-webview-proxyschemefilter-e.md) | Enum type supplied to {@link insertProxyRule} for indicating the scheme filter for proxy. |
-| [ReadyState](arkts-webview-readystate-e.md) | 播放器的缓存状态。 |
-| [RenderProcessMode](arkts-webview-renderprocessmode-e.md) | Defines the render process mode. |
-| [ScrollbarMode](arkts-webview-scrollbarmode-e.md) | Web页面场景下，全局滚动条模式。 |
-| [ScrollType](arkts-webview-scrolltype-e.md) | Scroll滚动类型，用于[setScrollable]{@link setScrollable}。 |
-| [SecureDnsMode](arkts-webview-securednsmode-e.md) | Web组件使用HTTPDNS的模式。 |
-| [SecurityLevel](arkts-webview-securitylevel-e.md) | 当前网页的安全级别。 |
-| [SiteIsolationMode](arkts-webview-siteisolationmode-e.md) | Indicates the site isolation mode of the application, default value depends on different devices type. |
-| [SourceType](arkts-webview-sourcetype-e.md) | 表示媒体源的类型。 |
-| [SuspendType](arkts-webview-suspendtype-e.md) | 表示播放器的挂起类型。 |
-| [UserAgentFormFactor](arkts-webview-useragentformfactor-e.md) | The form factors for User-Agent metadata. |
-| [WebBlanklessErrorCode](arkts-webview-webblanklesserrorcode-e.md) | 无白屏加载的异常错误码。 |
-| [WebDestroyMode](arkts-webview-webdestroymode-e.md) | 提供SetWebDestroyMode接口配置web组件的销毁模式 |
-| [WebDownloadErrorCode](arkts-webview-webdownloaderrorcode-e.md) | 下载任务的错误码。 |
-| [WebDownloadState](arkts-webview-webdownloadstate-e.md) | Defines the state for download. |
-| [WebHitTestType](arkts-webview-webhittesttype-e.md) | [getLastHitTest]{@link @ohos.web.webview:webview.WebviewController#getLastHitTest}接口用于指示光标节点。 |
-| [WebHttpCookieSameSitePolicy](arkts-webview-webhttpcookiesamesitepolicy-e.md) | 指示是否将 cookie 限制为仅创建它的同一站点的请求可以携带。指示是否将 cookie 限制为仅创建它的同一站点的请求可以携带。 |
-| [WebMessageType](arkts-webview-webmessagetype-e.md) | 向 {@link onMessageEventExt} 提供的枚举类型，用于指示网络消息的类型。 |
-| [WebResourceType](arkts-webview-webresourcetype-e.md) | Defines the resource type of request. |
-| [WebSoftKeyboardBehaviorMode](arkts-webview-websoftkeyboardbehaviormode-e.md) | Indicates the keyboard behavior mode of the web component, default value is DEFAULT. |
+| [ArkWebEngineVersion](arkts-arkweb-arkwebengineversion-e.md) | For details about the ArkWeb kernel version, see[Adaptation Guide for the M114 Kernel on OpenHarmony 6.0](https://gitcode.com/openharmony-tpc/chromium_src/blob/132_trunk/web/ReleaseNote/CompatibleWithLegacyWebEngine.md). |
+| [BlanklessFrameInterpolationState](arkts-arkweb-blanklessframeinterpolationstate-e.md) | Enumerates the current frame interpolation states.Device behavior differences: Only the mobile phone is supported. For other devices, 801 is returned. |
+| [ControllerAttachState](arkts-arkweb-controllerattachstate-e.md) | Describes the attach status of WebViewController and the **Web** component. |
+| [JsMessageType](arkts-arkweb-jsmessagetype-e.md) | Enum type supplied to {@link runJavaScriptExt} for indicating the result of JavaScript code execution. |
+| [MediaError](arkts-arkweb-mediaerror-e.md) | Enumerates the error types of the player. |
+| [MediaPlaybackState](arkts-arkweb-mediaplaybackstate-e.md) | Enumerates the playback states on the current web page. |
+| [MediaType](arkts-arkweb-mediatype-e.md) | Enumerates the media types. |
+| [NetworkState](arkts-arkweb-networkstate-e.md) | Enumerates the network statuses of the player. |
+| [OfflineResourceType](arkts-arkweb-offlineresourcetype-e.md) | Enumerates the offline resource types corresponding to the[OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md) object. |
+| [PlaybackStatus](arkts-arkweb-playbackstatus-e.md) | Enumerates the playback statuses of the player, which is an input parameter of the[handleStatusChanged](arkts-arkweb-nativemediaplayerhandler-i.md#handlestatuschanged-1) API. |
+| [Preload](arkts-arkweb-preload-e.md) | Enumerates how the player preloads media data. |
+| [PressureLevel](arkts-arkweb-pressurelevel-e.md) | Enumerates the memory pressure levels. When an application clears the cache occupied by the **Web** component, the**Web** kernel releases the cache based on the memory pressure level.\| Name\| Value\| Description\|\| ------------------------------- \| - \| ---------- \|\| MEMORY_PRESSURE_LEVEL_MODERATE \| 1 \| Moderate memory pressure level. At this level, the **Web** kernel attemptsto release the cache that has low reallocation overhead and does not need to be used immediately.\|\| MEMORY_PRESSURE_LEVEL_CRITICAL \| 2 \| Critical memory pressure level. At this level, the **Web** kernel attemptsto release all possible memory caches.\| |
+| [ProxySchemeFilter](arkts-arkweb-proxyschemefilter-e.md) | Enum type supplied to {@link insertProxyRule} for indicating the scheme filter for proxy. |
+| [ReadyState](arkts-arkweb-readystate-e.md) | Enumerates the cache states of the player. |
+| [RenderProcessMode](arkts-arkweb-renderprocessmode-e.md) | Enumerates the ArkWeb render subprocess modes. |
+| [ScrollType](arkts-arkweb-scrolltype-e.md) | Enumerates the scroll types for [setScrollable](setScrollable). |
+| [ScrollbarMode](arkts-arkweb-scrollbarmode-e.md) | Enumerates the global scrollbar modes in the web page. |
+| [SecureDnsMode](arkts-arkweb-securednsmode-e.md) | Defines the mode for using HttpDns. |
+| [SecurityLevel](arkts-arkweb-securitylevel-e.md) | Defines the security level for the page. |
+| [SiteIsolationMode](arkts-arkweb-siteisolationmode-e.md) | Enumerates the site isolation modes. The site isolation mechanism isolates websites from different sources indifferent render processes to reduce the cross-domain attack surface. For example, on a PC, each tab corresponds toa render process. After site isolation is enabled, Iframes from different sources run in independent renderprocesses. |
+| [SourceType](arkts-arkweb-sourcetype-e.md) | Enumerates the media source types. |
+| [SuspendType](arkts-arkweb-suspendtype-e.md) | Enumerates the suspension types of the player. |
+| [UserAgentFormFactor](arkts-arkweb-useragentformfactor-e.md) | The form factors for User-Agent metadata. |
+| [WebBlanklessErrorCode](arkts-arkweb-webblanklesserrorcode-e.md) | Enumerates the error codes of the blankless loading. |
+| [WebDestroyMode](arkts-arkweb-webdestroymode-e.md) | Enumerates the destroy modes of the **Web** component. When the Web component is destroyed, the destroy modeaffects the resource release time of the Web kernel, such as the JavaScript running context and rendering context. |
+| [WebDownloadErrorCode](arkts-arkweb-webdownloaderrorcode-e.md) | Defines the error code for download. |
+| [WebDownloadState](arkts-arkweb-webdownloadstate-e.md) | Defines the state for download. |
+| [WebHitTestType](arkts-arkweb-webhittesttype-e.md) | Enumerates the cursor node types for the[getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1) API. |
+| [WebHttpCookieSameSitePolicy](arkts-arkweb-webhttpcookiesamesitepolicy-e.md) | Indicates whether to restrict cookies so that only requests sent back to the same site thatcreated them can carry them. |
+| [WebMessageType](arkts-arkweb-webmessagetype-e.md) | Enum type supplied to {@link onMessageEventExt} for indicating the type of web message. |
+| [WebResourceType](arkts-arkweb-webresourcetype-e.md) | Defines the resource type of request. |
+| [WebSoftKeyboardBehaviorMode](arkts-arkweb-websoftkeyboardbehaviormode-e.md) | Enumerates the behavior modes of the web soft keyboard. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [CreateNativeMediaPlayerCallback](arkts-arkweb-createnativemediaplayercallback-t.md) | Defines a **CreateNativeMediaPlayerCallback** object used as a parameter of the[onCreateNativeMediaPlayer](arkts-arkweb-webviewcontroller-c.md#oncreatenativemediaplayer-1)callback. This object is used to create a player to take over media playback of the web page. |
+| [OnProxyConfigChangeCallback](arkts-arkweb-onproxyconfigchangecallback-t.md) | The callback for proxy changed. |
+| [WebMessage](arkts-arkweb-webmessage-t.md) | Defines the data types supported by {@link onMessageEventExt}. |
 

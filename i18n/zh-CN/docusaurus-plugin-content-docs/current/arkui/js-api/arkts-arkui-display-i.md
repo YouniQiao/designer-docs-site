@@ -1,6 +1,9 @@
 # Display
 
-屏幕实例。描述Display对象的属性和方法。 下列API示例中都需先使用[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1)、 [getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1)中的任一方法获取到Display实例，再通过此实例调用对应方法。
+屏幕实例。描述Display对象的属性和方法。
+
+下列API示例中都需先使用[getAllDisplays()](arkts-arkui-getalldisplays-f.md#getalldisplays-1)、
+[getDefaultDisplaySync()](arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1)中的任一方法获取到Display实例，再通过此实例调用对应方法。
 
 **起始版本：** 7
 
@@ -12,7 +15,9 @@
 getAvailableArea(): Promise<Rect>
 ```
 
-获取当前设备屏幕的可用区域，使用Promise异步回调。 可用区域是扣除系统UI（如状态栏、Dock栏）后，可供应用程序自由使用的区域。
+获取当前设备屏幕的可用区域，使用Promise异步回调。
+
+可用区域是扣除系统UI（如状态栏、Dock栏）后，可供应用程序自由使用的区域。
 
 **起始版本：** 12
 
@@ -30,7 +35,7 @@ getAvailableArea(): Promise<Rect>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1400001](../errorcode-display.md#1400001-无效的显示设备) | Invalid display or screen. Possible cause:1. This display is abnormal.2. Internal task error. |
 
 **示例：**
@@ -164,7 +169,7 @@ Get current display capability, including foldstatus, displaymode, rotation, and
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.Function getDisplayCapability can not work correctly dueto limited device capabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.Function getDisplayCapability can not work correctly dueto limited device capabilities. |
 | [1400001](../errorcode-display.md#1400001-无效的显示设备) | Invalid display or screen. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
@@ -190,7 +195,7 @@ getLiveCreaseRegion(): FoldCreaseRegion
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
 **示例：**
@@ -231,7 +236,7 @@ getRoundedCorner(): Array<RoundedCorner>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [1400001](../errorcode-display.md#1400001-无效的显示设备) | Invalid display or screen. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
@@ -276,8 +281,8 @@ off(type: 'availableAreaChange', callback?: Callback<Rect>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
 **示例：**
@@ -323,8 +328,8 @@ on(type: 'availableAreaChange', callback: Callback<Rect>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1400003](../errorcode-display.md#1400003-系统服务工作异常) | This display manager service works abnormally. |
 
 **示例：**
@@ -351,7 +356,9 @@ try {
 alive: boolean
 ```
 
-显示设备的启用状态，表示设备是否处于正常运行状态。true表示已启用，处于正常运行状态；false表示未启用，未处于正常运行状态。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的启用状态，表示设备是否处于正常运行状态。true表示已启用，处于正常运行状态；false表示未启用，未处于正常运行状态。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** boolean
 
@@ -367,7 +374,11 @@ alive: boolean
 availableHeight: number
 ```
 
-显示设备的可用区域高度，单位为px，该参数为大于0的整数。 SystemCapability.WindowManager.WindowManager.Core 该接口在2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过height属性获取当前设备屏幕的可用区域高度。
+显示设备的可用区域高度，单位为px，该参数为大于0的整数。
+
+SystemCapability.WindowManager.WindowManager.Core
+
+该接口在2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过height属性获取当前设备屏幕的可用区域高度。
 
 **类型：** number
 
@@ -383,7 +394,11 @@ availableHeight: number
 availableWidth: number
 ```
 
-显示设备的可用区域宽度，单位为px，该参数为大于0的整数。 SystemCapability.WindowManager.WindowManager.Core 该接口在2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过width属性获取当前设备屏幕的可用区域宽度。
+显示设备的可用区域宽度，单位为px，该参数为大于0的整数。
+
+SystemCapability.WindowManager.WindowManager.Core
+
+该接口在2in1设备、Tablet设备中可正常调用；在其他设备中不可用，请通过width属性获取当前设备屏幕的可用区域宽度。
 
 **类型：** number
 
@@ -399,7 +414,9 @@ availableWidth: number
 colorSpaces: Array<colorSpaceManager.ColorSpace>
 ```
 
-显示设备支持的所有色域类型。 SystemCapability.WindowManager.WindowManager.Core
+显示设备支持的所有色域类型。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** Array<colorSpaceManager.ColorSpace>
 
@@ -415,7 +432,9 @@ colorSpaces: Array<colorSpaceManager.ColorSpace>
 densityDPI: number
 ```
 
-显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数，单位为px。一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的物理像素密度，表示每英寸上的像素点数。该参数为浮点数，单位为px。一般取值160.0、480.0等，实际能取到的值取决于不同设备设置里提供的可选值。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -431,7 +450,11 @@ densityDPI: number
 densityPixels: number
 ```
 
-显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![densityPixels](../../../../reference/apis-arkui/figures/densityPixels.jpg) 该参数为浮点数，受densityDPI范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。 SystemCapability.WindowManager.WindowManager.Core
+显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![densityPixels](../../../../reference/apis-arkui/figures/densityPixels.jpg)
+
+该参数为浮点数，受densityDPI范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的densityDPI。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -447,7 +470,9 @@ densityPixels: number
 hdrFormats: Array<hdrCapability.HDRFormat>
 ```
 
-显示设备支持的所有HDR格式。 SystemCapability.WindowManager.WindowManager.Core
+显示设备支持的所有HDR格式。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** Array<hdrCapability.HDRFormat>
 
@@ -463,7 +488,9 @@ hdrFormats: Array<hdrCapability.HDRFormat>
 height: number
 ```
 
-显示设备的屏幕高度，单位为px，该参数为整数。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的屏幕高度，单位为px，该参数为整数。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -479,7 +506,9 @@ height: number
 id: number
 ```
 
-显示设备的屏幕ID，该参数为大于等于0的整数。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的屏幕ID，该参数为大于等于0的整数。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -495,7 +524,9 @@ id: number
 name: string
 ```
 
-显示设备的名称。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的名称。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** string
 
@@ -511,7 +542,9 @@ name: string
 orientation: Orientation
 ```
 
-表示显示设备当前显示的方向。 SystemCapability.WindowManager.WindowManager.Core
+表示显示设备当前显示的方向。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** Orientation
 
@@ -527,7 +560,9 @@ orientation: Orientation
 refreshRate: number
 ```
 
-显示设备当前采用的刷新率，该参数为整数，单位为Hz。 SystemCapability.WindowManager.WindowManager.Core
+显示设备当前采用的刷新率，该参数为整数，单位为Hz。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -543,7 +578,17 @@ refreshRate: number
 rotation: number
 ```
 
-显示设备的屏幕顺时针旋转角度。 值为0时，表示显示设备屏幕顺时针旋转为0°，表示显示设备的标准显示方向； 值为1时，表示显示设备屏幕顺时针旋转为90°； 值为2时，表示显示设备屏幕顺时针旋转为180°； 值为3时，表示显示设备屏幕顺时针旋转为270°。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的屏幕顺时针旋转角度。
+
+值为0时，表示显示设备屏幕顺时针旋转为0°，表示显示设备的标准显示方向；
+
+值为1时，表示显示设备屏幕顺时针旋转为90°；
+
+值为2时，表示显示设备屏幕顺时针旋转为180°；
+
+值为3时，表示显示设备屏幕顺时针旋转为270°。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -559,7 +604,9 @@ rotation: number
 scaledDensity: number
 ```
 
-显示设备上的字体的缩放因子。该参数为浮点数，通常与densityPixels相同。 SystemCapability.WindowManager.WindowManager.Core
+显示设备上的字体的缩放因子。该参数为浮点数，通常与densityPixels相同。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -575,7 +622,9 @@ scaledDensity: number
 screenShape?: ScreenShape
 ```
 
-显示设备的屏幕形状，默认值为RECTANGLE。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的屏幕形状，默认值为RECTANGLE。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** ScreenShape
 
@@ -591,7 +640,9 @@ screenShape?: ScreenShape
 sourceMode?: DisplaySourceMode
 ```
 
-显示设备的显示模式枚举，默认值为DisplaySourceMode.NONE。 SystemCapability.Window.SessionManager
+显示设备的显示模式枚举，默认值为DisplaySourceMode.NONE。
+
+SystemCapability.Window.SessionManager
 
 **类型：** DisplaySourceMode
 
@@ -607,7 +658,9 @@ sourceMode?: DisplaySourceMode
 state: DisplayState
 ```
 
-显示设备的状态。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的状态。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** DisplayState
 
@@ -623,7 +676,9 @@ state: DisplayState
 supportedRefreshRates?: Array<number>
 ```
 
-显示设备支持的所有刷新率，从小到大排序。刷新率值为正整数，单位为Hz。默认为空。 SystemCapability.Window.SessionManager
+显示设备支持的所有刷新率，从小到大排序。刷新率值为正整数，单位为Hz。默认为空。
+
+SystemCapability.Window.SessionManager
 
 **类型：** Array<number>
 
@@ -639,7 +694,9 @@ supportedRefreshRates?: Array<number>
 width: number
 ```
 
-显示设备的屏幕宽度，单位为px，该参数为整数。 SystemCapability.WindowManager.WindowManager.Core
+显示设备的屏幕宽度，单位为px，该参数为整数。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -655,7 +712,9 @@ width: number
 x?: number
 ```
 
-显示设备左上角相对于原点的y轴坐标，原点为主屏左上角，单位为px，该参数为整数，默认值为0。仅DisplaySourceMode为MAIN和EXTEND时返回实际值，其余默认返回默认值0。 SystemCapability.Window.SessionManager
+显示设备左上角相对于原点的y轴坐标，原点为主屏左上角，单位为px，该参数为整数，默认值为0。仅DisplaySourceMode为MAIN和EXTEND时返回实际值，其余默认返回默认值0。
+
+SystemCapability.Window.SessionManager
 
 **类型：** number
 
@@ -671,7 +730,9 @@ x?: number
 xDPI: number
 ```
 
-x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 SystemCapability.WindowManager.WindowManager.Core
+x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 
@@ -687,7 +748,9 @@ x轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 
 y?: number
 ```
 
-显示设备左上角相对于原点的y轴坐标，原点为主屏左上角，单位为px，该参数为整数，默认值为0。仅DisplaySourceMode为MAIN和EXTEND时返回实际值，其余默认返回默认值0。 SystemCapability.Window.SessionManager
+显示设备左上角相对于原点的y轴坐标，原点为主屏左上角，单位为px，该参数为整数，默认值为0。仅DisplaySourceMode为MAIN和EXTEND时返回实际值，其余默认返回默认值0。
+
+SystemCapability.Window.SessionManager
 
 **类型：** number
 
@@ -703,7 +766,9 @@ y?: number
 yDPI: number
 ```
 
-y轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。 SystemCapability.WindowManager.WindowManager.Core
+y轴方向中每英寸屏幕的确切物理像素值，该参数为浮点数。
+
+SystemCapability.WindowManager.WindowManager.Core
 
 **类型：** number
 

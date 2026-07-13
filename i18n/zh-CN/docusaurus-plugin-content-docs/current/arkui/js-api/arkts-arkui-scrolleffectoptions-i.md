@@ -12,7 +12,8 @@
 blurEffectiveEndOffset?: LengthMetrics
 ```
 
-标题栏达到最终模糊样式的内容区最大滑动距离。 默认值： 8vp。
+标题栏达到最终模糊样式的内容区最大滑动距离。
+默认值： 8vp。
 
 **类型：** LengthMetrics
 
@@ -30,7 +31,8 @@ blurEffectiveEndOffset?: LengthMetrics
 blurEffectiveStartOffset?: LengthMetrics
 ```
 
-内容区域的最小滑动距离，实现标题栏滑动模糊效果。 默认值： 0vp。
+内容区域的最小滑动距离，实现标题栏滑动模糊效果。
+默认值： 0vp。
 
 **类型：** LengthMetrics
 
@@ -48,7 +50,8 @@ blurEffectiveStartOffset?: LengthMetrics
 scrollEffectType?: ScrollEffectType
 ```
 
-标题栏滑动模糊样式。 默认值： ScrollEffectType.COMMON_BLUR。
+标题栏滑动模糊样式。
+默认值： ScrollEffectType.COMMON_BLUR。
 
 **类型：** ScrollEffectType
 

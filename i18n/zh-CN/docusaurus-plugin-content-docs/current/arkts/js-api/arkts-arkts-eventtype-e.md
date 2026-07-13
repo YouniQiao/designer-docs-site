@@ -1,6 +1,10 @@
 # EventType
 
-事件类型枚举。 **ArkTS-Dyn起始版本：** 8 **ArkTS-Sta起始版本：** 23
+事件类型枚举。
+
+**ArkTS-Dyn起始版本：** 8
+
+**ArkTS-Sta起始版本：** 23
 
 **起始版本：** 8
 

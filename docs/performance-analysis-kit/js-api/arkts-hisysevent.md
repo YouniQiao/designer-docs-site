@@ -1,6 +1,7 @@
 # @ohos.hiSysEvent
 
-本模块提供了系统事件打点能力，包括系统事件的埋点、落盘系统事件的订阅及已落盘的系统事件的查询能力。
+The **hiSysEvent** module provides the system event logging functions, such as configuring trace points, subscribing
+to system events, and querying system events written to the event file.
 
 **Since:** 9
 
@@ -16,34 +17,40 @@ import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[addWatcher](arkts-hisysevent-addwatcher-f-sys.md#addWatcher-1) | 订阅系统事件，接收[Watcher]{@link Watcher}类型的对象作为事件参数。 |
-| <!--DelRow-->[exportSysEvents](arkts-hisysevent-exportsysevents-f-sys.md#exportSysEvents-1) | 批量导出系统事件，以文件格式写入应用沙箱固定目录(/data/storage/el2/base/cache/hiview/event/)。 |
-| <!--DelRow-->[query](arkts-hisysevent-query-f-sys.md#query-1) | 查询系统事件。 |
-| <!--DelRow-->[removeWatcher](arkts-hisysevent-removewatcher-f-sys.md#removeWatcher-1) | 取消订阅系统事件，接收[Watcher]{@link Watcher}类型的对象作为事件参数。 |
-| <!--DelRow-->[subscribe](arkts-hisysevent-subscribe-f-sys.md#subscribe-1) | 订阅实时系统事件(事件需满足低频率或偶发性的约束条件)，事件发生时立即以文件格式写入应用沙箱固定目录(/data/storage/el2/base/cache/hiview/event/)。 |
-| <!--DelRow-->[unsubscribe](arkts-hisysevent-unsubscribe-f-sys.md#unsubscribe-1) | 取消订阅系统事件。 |
-| <!--DelRow-->[write](arkts-hisysevent-write-f-sys.md#write-1) | 系统事件打点方法，接收[SysEventInfo]{@link SysEventInfo}类型的对象作为事件参数，使用promise方式作为异步回调。 |
-| <!--DelRow-->[write](arkts-hisysevent-write-f-sys.md#write-2) | 系统事件打点方法，接收[SysEventInfo]{@link SysEventInfo}类型的对象作为事件参数，使用callback方式作为异步回调。 |
+| [addWatcher](arkts-performanceanalysis-addwatcher-f-sys.md#addwatcher-1) | Adds a watcher for event subscription. |
+| [exportSysEvents](arkts-performanceanalysis-exportsysevents-f-sys.md#exportsysevents-1) | Exports system events in batches and writes them as a file to the fixed directory of the application sandbox (thatis, /data/storage/el2/base/cache/hiview/event/). |
+| [query](arkts-performanceanalysis-query-f-sys.md#query-1) | Queries system events. |
+| [removeWatcher](arkts-performanceanalysis-removewatcher-f-sys.md#removewatcher-1) | Removes a watcher used for event subscription. |
+| [subscribe](arkts-performanceanalysis-subscribe-f-sys.md#subscribe-1) | Subscribes to real-time system events that occur occasionally or occur in a low frequency. These events are writtenas a file to the fixed directory of the application sandbox (that is,/data/storage/el2/base/cache/hiview/event/). |
+| [unsubscribe](arkts-performanceanalysis-unsubscribe-f-sys.md#unsubscribe-1) | Unsubscribes from system events. |
+| [write](arkts-performanceanalysis-write-f-sys.md#write-1) | Writes event information to the event file. This API uses a promise to return the result. |
+| [write](arkts-performanceanalysis-write-f-sys.md#write-2) | Writes event information to the event file. This API uses an asynchronous callback to return the result. |
+<!--DelEnd-->
 
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| <!--DelRow-->[Querier](arkts-hisysevent-querier-i-sys.md) | 系统事件查询者对象接口。 |
-| <!--DelRow-->[QueryArg](arkts-hisysevent-queryarg-i-sys.md) | 系统事件查询参数对象接口。 |
-| <!--DelRow-->[QueryRule](arkts-hisysevent-queryrule-i-sys.md) | 系统事件查询规则对象接口。 |
-| <!--DelRow-->[SysEventInfo](arkts-hisysevent-syseventinfo-i-sys.md) | 系统事件信息对象接口。 |
-| <!--DelRow-->[Watcher](arkts-hisysevent-watcher-i-sys.md) | 系统事件订阅者对象接口。 |
-| <!--DelRow-->[WatchRule](arkts-hisysevent-watchrule-i-sys.md) | 系统事件订阅规则对象接口。 |
-
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[EventType](arkts-hisysevent-eventtype-e-sys.md) | 系统事件类型枚举。 |
-| <!--DelRow-->[RuleType](arkts-hisysevent-ruletype-e-sys.md) | 匹配规则类型枚举。 |
+| [Querier](arkts-performanceanalysis-querier-i-sys.md) | Defines an event query instance. |
+| [QueryArg](arkts-performanceanalysis-queryarg-i-sys.md) | Defines arguments for an event query. |
+| [QueryRule](arkts-performanceanalysis-queryrule-i-sys.md) | Defines event query rules. |
+| [SysEventInfo](arkts-performanceanalysis-syseventinfo-i-sys.md) | Defines a system event. |
+| [WatchRule](arkts-performanceanalysis-watchrule-i-sys.md) | Defines event subscription rules. |
+| [Watcher](arkts-performanceanalysis-watcher-i-sys.md) | Defines a watcher for event subscription. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [EventType](arkts-performanceanalysis-eventtype-e-sys.md) | Enumerate system event types. |
+| [RuleType](arkts-performanceanalysis-ruletype-e-sys.md) | Enumerates matching rule types. |
+<!--DelEnd-->
 

@@ -134,7 +134,8 @@ System environment windowsize key that is used to obtain the size of the window,
 static readonly WINDOW_SYSTEM_DENSITY: ReadonlySystemEnvKey<number>
 ```
 
-System environmental system density key that is used to obtain the system density of the display where the window is located.
+System environmental system density key that is used to obtain the system density of the display
+where the window is located.
 
 **Type:** ReadonlySystemEnvKey<number>
 

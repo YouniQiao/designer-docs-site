@@ -1,16 +1,16 @@
 # AudioStreamManager
 
-This interface implements audio stream management. Before calling any API in AudioStreamManager, you must use [getStreamManager](arkts-audio-audiomanager-i.md#getStreamManager) to obtain an AudioStreamManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
+音频流管理。
+
+在使用AudioStreamManager的接口之前，需先通过[getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1)获取AudioStreamManager实例。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
 
 ## getAudioEffectInfoArray
 
@@ -18,7 +18,7 @@ import { audio } from '@kit.AudioKit';
 getAudioEffectInfoArray(usage: StreamUsage, callback: AsyncCallback<AudioEffectInfoArray>): void
 ```
 
-Obtains information about the audio effect mode in use. This API uses an asynchronous callback to return the result.
+获取当前音效模式的信息。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -28,15 +28,15 @@ Obtains information about the audio effect mode in use. This API uses an asynchr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | StreamUsage | 是 | Audio stream usage. |
-| callback | AsyncCallback&lt;AudioEffectInfoArray> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the information about the audio effect mode obtained;  otherwise, err is an error object. |
+| usage | StreamUsage | 是 | 音频流使用类型。 |
+| callback | AsyncCallback&lt;AudioEffectInfoArray&gt; | 是 | 回调函数。当获取当前音效模式的信息成功，err为undefined，data为获取到的当前音效模式的信息；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by callback. |
 
 ## getAudioEffectInfoArray
 
@@ -44,7 +44,7 @@ Obtains information about the audio effect mode in use. This API uses an asynchr
 getAudioEffectInfoArray(usage: StreamUsage): Promise<AudioEffectInfoArray>
 ```
 
-Obtains information about the audio effect mode in use. This API uses a promise to return the result.
+获取当前音效模式的信息。使用Promise异步回调。
 
 **起始版本：** 10
 
@@ -54,20 +54,20 @@ Obtains information about the audio effect mode in use. This API uses a promise 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | StreamUsage | 是 | Audio stream usage. |
+| usage | StreamUsage | 是 | 音频流使用类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioEffectInfoArray> | Promise used to return the information about the audio effect mode  obtained. |
+| Promise&lt;AudioEffectInfoArray&gt; | Promise对象，返回当前音效模式的信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by promise. |
 
 ## getAudioEffectInfoArraySync
 
@@ -75,7 +75,7 @@ Obtains information about the audio effect mode in use. This API uses a promise 
 getAudioEffectInfoArraySync(usage: StreamUsage): AudioEffectInfoArray
 ```
 
-Obtains information about the audio effect mode in use. This API returns the result synchronously.
+获取当前音效模式的信息。同步返回结果。
 
 **起始版本：** 10
 
@@ -85,20 +85,20 @@ Obtains information about the audio effect mode in use. This API returns the res
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| usage | StreamUsage | 是 | Audio stream usage. |
+| usage | StreamUsage | 是 | 音频流使用类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioEffectInfoArray | Information about the audio effect mode. |
+| AudioEffectInfoArray | 返回当前音效模式的信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## getCurrentAudioCapturerInfoArray
 
@@ -106,7 +106,11 @@ Obtains information about the audio effect mode in use. This API returns the res
 getCurrentAudioCapturerInfoArray(callback: AsyncCallback<AudioCapturerChangeInfoArray>): void
 ```
 
-Obtains the information about this audio capturer. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
+获取当前音频采集器的信息。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -116,7 +120,7 @@ Obtains the information about this audio capturer. This API uses an asynchronous
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioCapturerChangeInfoArray> | 是 | Callback used to return the result. If the  operation is successful, err is undefined and data is the audio capturer information obtained;  otherwise, err is an error object. |
+| callback | AsyncCallback&lt;AudioCapturerChangeInfoArray&gt; | 是 | 回调函数。当获取当前音频采集器的信息成功，err为undefined，data为获取到的当前音频采集器的信息；否则为错误对象。 |
 
 ## getCurrentAudioCapturerInfoArray
 
@@ -124,7 +128,11 @@ Obtains the information about this audio capturer. This API uses an asynchronous
 getCurrentAudioCapturerInfoArray(): Promise<AudioCapturerChangeInfoArray>
 ```
 
-Obtains the information about this audio capturer. This API uses a promise to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
+获取当前音频采集器的信息。使用Promise异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -134,7 +142,7 @@ Obtains the information about this audio capturer. This API uses a promise to re
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioCapturerChangeInfoArray> | Promise used to return the audio capturer information. |
+| Promise&lt;AudioCapturerChangeInfoArray&gt; | Promise对象，返回当前音频采集器信息。 |
 
 ## getCurrentAudioCapturerInfoArraySync
 
@@ -142,7 +150,11 @@ Obtains the information about this audio capturer. This API uses a promise to re
 getCurrentAudioCapturerInfoArraySync(): AudioCapturerChangeInfoArray
 ```
 
-Obtains the information about this audio capturer. This API returns the result synchronously. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
+获取当前音频采集器的信息。同步返回结果。
+
+> **说明：**
+>
+> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 10
 
@@ -152,7 +164,7 @@ Obtains the information about this audio capturer. This API returns the result s
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioCapturerChangeInfoArray | Audio capturer information. |
+| AudioCapturerChangeInfoArray | 返回当前音频采集器信息。 |
 
 ## getCurrentAudioRendererInfoArray
 
@@ -160,7 +172,11 @@ Obtains the information about this audio capturer. This API returns the result s
 getCurrentAudioRendererInfoArray(callback: AsyncCallback<AudioRendererChangeInfoArray>): void
 ```
 
-Obtains the information about this audio renderer. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
+获取当前音频渲染器的信息。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -170,7 +186,7 @@ Obtains the information about this audio renderer. This API uses an asynchronous
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRendererChangeInfoArray> | 是 | Callback used to return the result. If the  operation is successful, err is undefined and data is the audio renderer information obtained;  otherwise, err is an error object. |
+| callback | AsyncCallback&lt;AudioRendererChangeInfoArray&gt; | 是 | 回调函数。当获取当前音频渲染器的信息成功，err为undefined，data为获取到的当前音频渲染器的信息；否则为错误对象。 |
 
 ## getCurrentAudioRendererInfoArray
 
@@ -178,7 +194,11 @@ Obtains the information about this audio renderer. This API uses an asynchronous
 getCurrentAudioRendererInfoArray(): Promise<AudioRendererChangeInfoArray>
 ```
 
-Obtains the information about this audio renderer. This API uses a promise to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
+获取当前音频渲染器的信息。使用Promise异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -188,7 +208,7 @@ Obtains the information about this audio renderer. This API uses a promise to re
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioRendererChangeInfoArray> | Promise used to return the audio renderer information. |
+| Promise&lt;AudioRendererChangeInfoArray&gt; | Promise对象，返回当前音频渲染器信息。 |
 
 ## getCurrentAudioRendererInfoArraySync
 
@@ -196,7 +216,11 @@ Obtains the information about this audio renderer. This API uses a promise to re
 getCurrentAudioRendererInfoArraySync(): AudioRendererChangeInfoArray
 ```
 
-Obtains the information about this audio renderer. This API returns the result synchronously. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
+获取当前音频渲染器的信息。同步返回结果。
+
+> **说明：**
+>
+> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 10
 
@@ -206,7 +230,7 @@ Obtains the information about this audio renderer. This API returns the result s
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioRendererChangeInfoArray | Audio renderer information. |
+| AudioRendererChangeInfoArray | 返回当前音频渲染器信息。 |
 
 ## isAcousticEchoCancelerSupported
 
@@ -214,7 +238,7 @@ Obtains the information about this audio renderer. This API returns the result s
 isAcousticEchoCancelerSupported(sourceType: SourceType): boolean
 ```
 
-Checks whether the specified audio source type supports echo cancellation.
+查询指定的音源类型是否支持回声消除。
 
 **起始版本：** 20
 
@@ -224,19 +248,19 @@ Checks whether the specified audio source type supports echo cancellation.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sourceType | SourceType | 是 | Audio source type. |
+| sourceType | SourceType | 是 | 音源类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether echo cancellation is supported. true if supported, false  otherwise. |
+| boolean | 是否支持回声消除。true表示支持回声消除，false表示不支持回声消除。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isActive
 
@@ -244,13 +268,13 @@ Checks whether the specified audio source type supports echo cancellation.
 isActive(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a stream is active. This API uses an asynchronous callback to return the result.
+获取指定音频流活跃状态。使用callback异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioStreamManager#isStreamActive
+**替代接口：** isStreamActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -258,8 +282,8 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream types. |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the stream is active or false if not active;  otherwise, err is an error object. |
+| volumeType | AudioVolumeType | 是 | 音频流类型。 |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取指定音频流活跃状态成功，err为undefined，data为true表示活跃，false表示不活跃；否则为错误对象。 |
 
 ## isActive
 
@@ -267,13 +291,13 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 isActive(volumeType: AudioVolumeType): Promise<boolean>
 ```
 
-Checks whether a stream is active. This API uses a promise to return the result.
+获取指定音频流是否为活跃状态。使用Promise异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioStreamManager#isStreamActive
+**替代接口：** isStreamActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -281,13 +305,13 @@ Checks whether a stream is active. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream types. |
+| volumeType | AudioVolumeType | 是 | 音频流类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the stream is active.  true if active, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示流状态为活跃；返回false表示流状态不活跃。 |
 
 ## isActiveSync
 
@@ -295,13 +319,13 @@ Checks whether a stream is active. This API uses a promise to return the result.
 isActiveSync(volumeType: AudioVolumeType): boolean
 ```
 
-Checks whether a stream is active. This API returns the result synchronously.
+获取指定音频流是否为活跃状态。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioStreamManager#isStreamActive
+**替代接口：** isStreamActive
 
 **系统能力：** SystemCapability.Multimedia.Audio.Renderer
 
@@ -309,20 +333,20 @@ Checks whether a stream is active. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream types. |
+| volumeType | AudioVolumeType | 是 | 音频流类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the stream is active. true if active, false otherwise. |
+| boolean | 流的活跃状态。返回true表示活跃，返回false表示不活跃。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isAudioLoopbackSupported
 
@@ -330,7 +354,7 @@ Checks whether a stream is active. This API returns the result synchronously.
 isAudioLoopbackSupported(mode: AudioLoopbackMode): boolean
 ```
 
-Checks whether the current system supports the specified audio loopback mode.
+查询当前系统是否支持指定的音频返听模式。
 
 **起始版本：** 20
 
@@ -340,19 +364,19 @@ Checks whether the current system supports the specified audio loopback mode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mode | AudioLoopbackMode | 是 | Audio loopback mode. |
+| mode | AudioLoopbackMode | 是 | 音频返听模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the audio loopback mode is supported. true if supported,  false otherwise. |
+| boolean | 是否支持指定的音频返听模式。true表示支持，false表示不支持。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isDirectPlaybackSupported
 
@@ -360,7 +384,7 @@ Checks whether the current system supports the specified audio loopback mode.
 isDirectPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if direct playback is supported for the specific audio stream info and usage type in current device situation.
+查询指定音频流信息和使用场景下是否支持直通播放。
 
 **起始版本：** 26.0.0
 
@@ -372,14 +396,14 @@ Return if direct playback is supported for the specific audio stream info and us
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamInfo | AudioStreamInfo | 是 | reference of stream info structure to describe basic audio format. |
-| usage | StreamUsage | 是 | stream usage type used to decide the audio device and pipe type selection result. |
+| streamInfo | AudioStreamInfo | 是 | 音频流信息，用于描述基础音频格式。 |
+| usage | StreamUsage | 是 | 音频流使用场景，用于决定音频设备和通路类型的选择结果。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | True if direct playback is supported in this situation. |
+| boolean | 是否支持直通播放。true表示支持，false表示不支持。 |
 
 ## isFastPlaybackSupported
 
@@ -387,7 +411,7 @@ Return if direct playback is supported for the specific audio stream info and us
 isFastPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if fast playback is supported for the specific audio stream info and usage type in current device situation.
+查询指定音频流信息和使用场景下是否支持低时延播放。
 
 **起始版本：** 26.0.0
 
@@ -399,14 +423,14 @@ Return if fast playback is supported for the specific audio stream info and usag
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamInfo | AudioStreamInfo | 是 | reference of stream info structure to describe basic audio format. |
-| usage | StreamUsage | 是 | stream usage type used to decide the audio device and pipe type selection result. |
+| streamInfo | AudioStreamInfo | 是 | 音频流信息，用于描述基础音频格式。 |
+| usage | StreamUsage | 是 | 音频流使用场景，用于决定音频设备和通路类型的选择结果。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | True if fast playback is supported in this situation. |
+| boolean | 是否支持低时延播放。true表示支持，false表示不支持。 |
 
 ## isFastRecordingSupported
 
@@ -414,7 +438,7 @@ Return if fast playback is supported for the specific audio stream info and usag
 isFastRecordingSupported(streamInfo: AudioStreamInfo, source: SourceType): boolean
 ```
 
-Return if fast recording is supported for the specific audio stream info and usage type in current device situation.
+查询指定音频流信息和音源类型下是否支持低时延录制。
 
 **起始版本：** 26.0.0
 
@@ -426,14 +450,14 @@ Return if fast recording is supported for the specific audio stream info and usa
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamInfo | AudioStreamInfo | 是 | reference of stream info structure to describe basic audio format. |
-| source | SourceType | 是 | stream source type used to decide the audio device and pipe type selection result. |
+| streamInfo | AudioStreamInfo | 是 | 音频流信息，用于描述基础音频格式。 |
+| source | SourceType | 是 | 音源类型，用于决定音频设备和通路类型的选择结果。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | True if fast recording is supported in this situation. |
+| boolean | 是否支持低时延录制。true表示支持，false表示不支持。 |
 
 ## isIntelligentNoiseReductionEnabledForCurrentDevice
 
@@ -441,7 +465,7 @@ Return if fast recording is supported for the specific audio stream info and usa
 isIntelligentNoiseReductionEnabledForCurrentDevice(sourceType: SourceType): boolean
 ```
 
-Checks whether the intelligent noise reduction feature is enabled for the audio stream of the specified source type.
+查询指定的音源类型智能降噪开关是否打开。
 
 **起始版本：** 21
 
@@ -451,19 +475,19 @@ Checks whether the intelligent noise reduction feature is enabled for the audio 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sourceType | SourceType | 是 | Audio source type. |
+| sourceType | SourceType | 是 | 表示音源类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the intelligent noise reduction feature is enabled. true if  enabled, false otherwise. |
+| boolean | 智能降噪开关的状态。true表示打开，false表示关闭。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isMultichannelPlaybackSupported
 
@@ -471,7 +495,7 @@ Checks whether the intelligent noise reduction feature is enabled for the audio 
 isMultichannelPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if multichannel playback is supported for the specific audio stream info and usage type in current device situation.
+查询指定音频流信息和使用场景下是否支持多声道播放。
 
 **起始版本：** 26.0.0
 
@@ -483,14 +507,14 @@ Return if multichannel playback is supported for the specific audio stream info 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamInfo | AudioStreamInfo | 是 | reference of stream info structure to describe basic audio format. |
-| usage | StreamUsage | 是 | stream usage type used to decide the audio device and pipe type selection result. |
+| streamInfo | AudioStreamInfo | 是 | 音频流信息，用于描述基础音频格式。 |
+| usage | StreamUsage | 是 | 音频流使用场景，用于决定音频设备和通路类型的选择结果。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | True if multichannel playback is supported in this situation. |
+| boolean | 是否支持多声道播放。true表示支持，false表示不支持。 |
 
 ## isOffloadPlaybackSupported
 
@@ -498,7 +522,7 @@ Return if multichannel playback is supported for the specific audio stream info 
 isOffloadPlaybackSupported(streamInfo: AudioStreamInfo, usage: StreamUsage): boolean
 ```
 
-Return if offload playback is supported for the specific audio stream info and usage type in current device situation.
+查询指定音频流信息和使用场景下是否支持低功耗通路播放。
 
 **起始版本：** 26.0.0
 
@@ -510,14 +534,14 @@ Return if offload playback is supported for the specific audio stream info and u
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamInfo | AudioStreamInfo | 是 | reference of stream info structure to describe basic audio format. |
-| usage | StreamUsage | 是 | stream usage type used to decide the audio device and pipe type selection result. |
+| streamInfo | AudioStreamInfo | 是 | 音频流信息，用于描述基础音频格式。 |
+| usage | StreamUsage | 是 | 音频流使用场景，用于决定音频设备和通路类型的选择结果。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | True if offload playback is supported in this situation. |
+| boolean | 是否支持低功耗通路播放。true表示支持，false表示不支持。 |
 
 ## isRecordingAvailable
 
@@ -525,7 +549,7 @@ Return if offload playback is supported for the specific audio stream info and u
 isRecordingAvailable(capturerInfo: AudioCapturerInfo): boolean
 ```
 
-Checks whether recording can be started based on the audio source type in the audio capturer information.
+检查传入的音频采集器信息中音源类型的录制是否可以启动成功。
 
 **起始版本：** 20
 
@@ -535,19 +559,19 @@ Checks whether recording can be started based on the audio source type in the au
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| capturerInfo | AudioCapturerInfo | 是 | Audio capturer information. |
+| capturerInfo | AudioCapturerInfo | 是 | 音频采集器信息。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether recording can be started. true if recording can be started,  false otherwise.  This API checks whether the specified audio source type in the capturer information can acquire focus. It should  be called before starting audio recording to avoid conflicts with existing recording streams. |
+| boolean | 代表录制是否可以启动成功。true表示成功，false表示失败。<br>仅检测是否可以获取音频采集器信息中音源类型的焦点。通常在音频录制启动前调用，否则已存在的录制流可能会拒绝其启动。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isStreamActive
 
@@ -555,7 +579,7 @@ Checks whether recording can be started based on the audio source type in the au
 isStreamActive(streamUsage: StreamUsage): boolean
 ```
 
-Checks whether a stream is active. This API returns the result synchronously.
+获取指定音频流是否为活跃状态。同步返回结果。
 
 **起始版本：** 20
 
@@ -565,19 +589,19 @@ Checks whether a stream is active. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| streamUsage | StreamUsage | 是 | Audio stream usage. |
+| streamUsage | StreamUsage | 是 | 音频流使用类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the stream is active. true if active, false otherwise. |
+| boolean | 流是否处于活跃状态。返回true表示活跃，返回false表示不活跃。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('audioRendererChange')
 
@@ -585,7 +609,11 @@ Checks whether a stream is active. This API returns the result synchronously.
 off(type: 'audioRendererChange', callback?: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-Unsubscribes from the audio renderer change event. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
+取消监听音频渲染器更改事件。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -595,14 +623,14 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioRendererChange' | 是 | Event type. The event 'audioRendererChange' is triggered when the  audio playback stream status or device is changed. |
-| callback | Callback&lt;AudioRendererChangeInfoArray> | 否 | Callback used to return the audio renderer  information. [since 18] |
+| type | 'audioRendererChange' | 是 | 事件回调类型，支持的事件为'audioRendererChange'，当取消监听音频渲染器更改事件时，触发该事件。 |
+| callback | Callback&lt;AudioRendererChangeInfoArray&gt; | 否 | 回调函数，返回当前音频渲染器信息。<br>**起始版本：** 18 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('audioCapturerChange')
 
@@ -610,7 +638,11 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 off(type: 'audioCapturerChange', callback?: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-Unsubscribes from the audio capturer change event. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
+取消监听音频采集器更改事件。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -620,62 +652,14 @@ Unsubscribes from the audio capturer change event. This API uses an asynchronous
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | 是 | Event type. The event 'audioCapturerChange' is triggered when the  audio capturer is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfoArray> | 否 | Callback used to return the audio capturer  information. [since 18] |
+| type | 'audioCapturerChange' | 是 | 事件回调类型，支持的事件为'audioCapturerChange'，当取消监听音频采集器更改事件时，触发该事件。 |
+| callback | Callback&lt;AudioCapturerChangeInfoArray&gt; | 否 | 回调函数，返回当前音频采集器信息。<br>**起始版本：** 18 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offAudioCapturerChange
-
-```TypeScript
-offAudioCapturerChange(callback?: Callback<AudioCapturerChangeInfoArray>): void
-```
-
-Unsubscribes to audio capturer change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerChangeInfoArray> | 否 | Callback invoked for the audio capturer change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offAudioRendererChange
-
-```TypeScript
-offAudioRendererChange(callback?: Callback<AudioRendererChangeInfoArray>): void
-```
-
-Unsubscribes to audio renderer change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioRendererChangeInfoArray> | 否 | Callback invoked for the audio renderer change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('audioRendererChange')
 
@@ -683,7 +667,11 @@ Unsubscribes to audio renderer change events.
 on(type: 'audioRendererChange', callback: Callback<AudioRendererChangeInfoArray>): void
 ```
 
-Subscribes to the audio renderer change event, which is triggered when the audio playback stream status or device is changed. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio renderer information returned by this API may include internal audio playback streams, such as > cellular calls and ultrasonic streams.
+监听音频渲染器更改事件（当音频播放流状态变化或设备变化时触发）。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频渲染器信息，可能包含系统内部音频播放流，如蜂窝通话、超声波等。
 
 **起始版本：** 9
 
@@ -693,15 +681,15 @@ Subscribes to the audio renderer change event, which is triggered when the audio
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioRendererChange' | 是 | Event type. The event 'audioRendererChange' is triggered when the  audio playback stream status or device is changed. |
-| callback | Callback&lt;AudioRendererChangeInfoArray> | 是 | Callback used to return the audio renderer  information. |
+| type | 'audioRendererChange' | 是 | 事件回调类型，支持的事件为'audioRendererChange'，当音频播放流状态变化或设备变化时，触发该事件。 |
+| callback | Callback&lt;AudioRendererChangeInfoArray&gt; | 是 | 回调函数，返回当前音频渲染器信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('audioCapturerChange')
 
@@ -709,7 +697,11 @@ Subscribes to the audio renderer change event, which is triggered when the audio
 on(type: 'audioCapturerChange', callback: Callback<AudioCapturerChangeInfoArray>): void
 ```
 
-Subscribes to the audio capturer change event, which is triggered when the audio recording stream status or device is changed. This API uses an asynchronous callback to return the result. > **NOTE** > > The audio capturer information returned by this API may include internal audio recording streams, such as voice > wakeup and cellular calls.
+监听音频采集器更改事件（当音频录制流状态变化或设备变化时触发）。使用callback异步回调。
+
+> **说明：**
+>
+> 该接口返回的音频采集器信息，可能包含系统内部音频录制流，如语音唤醒、蜂窝通话等。
 
 **起始版本：** 9
 
@@ -719,61 +711,13 @@ Subscribes to the audio capturer change event, which is triggered when the audio
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | 是 | Event type. The event 'audioCapturerChange' is triggered when the  audio recording stream status or device is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfoArray> | 是 | Callback used to return the audio capturer  information. |
+| type | 'audioCapturerChange' | 是 | 事件回调类型，支持的事件为'audioCapturerChange'，当音频录制流状态变化或设备变化时，触发该事件。 |
+| callback | Callback&lt;AudioCapturerChangeInfoArray&gt; | 是 | 回调函数，返回当前音频采集器信息。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## onAudioCapturerChange
-
-```TypeScript
-onAudioCapturerChange(callback: Callback<AudioCapturerChangeInfoArray>): void
-```
-
-Listens for audio capturer change events. When there is any audio capturer change, registered clients will receive the callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Capturer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioCapturerChangeInfoArray> | 是 | Callback invoked for the audio capturer change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onAudioRendererChange
-
-```TypeScript
-onAudioRendererChange(callback: Callback<AudioRendererChangeInfoArray>): void
-```
-
-Listens for audio renderer change events. When there is any audio renderer change, registered clients will receive the callback.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Renderer
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioRendererChangeInfoArray> | 是 | Callback invoked for the audio renderer change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 

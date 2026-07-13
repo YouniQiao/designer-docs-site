@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## addAllowedInstallBundles
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function addAllowedInstallBundles(admin: Want, appIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Adds the applications that can be installed by the current user. This API uses an asynchronous callback to return the result.
+Adds the applications that can be installed by the current user. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 
@@ -77,7 +78,8 @@ bundleManager.addAllowedInstallBundles(wantTemp, appIds, (err) => {
 function addAllowedInstallBundles(admin: Want, appIds: Array<string>, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Adds the applications that can be installed by the user specified by **userId**. This API uses an asynchronous callback to return the result.
+Adds the applications that can be installed by the user specified by **userId**. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 10
 
@@ -143,7 +145,8 @@ bundleManager.addAllowedInstallBundles(wantTemp, appIds, 100, (err) => {
 function addAllowedInstallBundles(admin: Want, appIds: Array<string>, userId?: number): Promise<void>
 ```
 
-Adds the applications that can be installed by the current or specified user. This API uses a promise to return the result.
+Adds the applications that can be installed by the current or specified user. This API uses a promise to return the
+result.
 
 **Since:** 10
 

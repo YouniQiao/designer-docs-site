@@ -12,7 +12,13 @@ Provides accessibility text mapping for the slider step markers.
 stepsAccessibility?: Map<number, SliderStepItemAccessibility>
 ```
 
-Step value-to-text mappings for assistive technologies (for example, screen readers). Value range for **Key**: [0, INT32_MAX]. If **Key** is set to a negative number or a decimal, the setting does not take effect. Default value: **{}**
+Step value-to-text mappings for assistive technologies (for example, screen readers).
+
+Value range for **Key**: [0, INT32_MAX].
+
+If **Key** is set to a negative number or a decimal, the setting does not take effect.
+
+Default value: **{}**
 
 **Type:** Map<number, SliderStepItemAccessibility>
 

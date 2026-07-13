@@ -1,6 +1,6 @@
 # @ohos.logLibrary
 
-本模块提供了获取各类系统维测日志的能力。
+The **logLibrary** module provides APIs for obtaining various system maintenance and test logs.
 
 **Since:** 10
 
@@ -16,20 +16,24 @@ import { logLibrary } from '@kit.PerformanceAnalysisKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[copy](arkts-loglibrary-copy-f-sys.md#copy-1) | 拷贝指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
-| <!--DelRow-->[copy](arkts-loglibrary-copy-f-sys.md#copy-2) | 拷贝指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
-| <!--DelRow-->[list](arkts-loglibrary-list-f-sys.md#list-1) | 以同步方法查询指定类型的日志文件列表，接收string类型的对象作为参数，返回指定类型日志的文件列表信息。 |
-| <!--DelRow-->[move](arkts-loglibrary-move-f-sys.md#move-1) | 移动指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
-| <!--DelRow-->[move](arkts-loglibrary-move-f-sys.md#move-2) | 移动指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
-| <!--DelRow-->[remove](arkts-loglibrary-remove-f-sys.md#remove-1) | 以同步方法删除指定日志类型的指定文件。 |
+| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-1) | Copies log files of the specified type to the target application directory. This API uses a promise to return theresult. |
+| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-2) | Copies log files of the specified type to the target application directory. This API uses an asynchronous callbackto return the result. |
+| [list](arkts-performanceanalysis-list-f-sys.md#list-1) | Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the stringtype as input parameters and returns a list log files of the specified type. |
+| [move](arkts-performanceanalysis-move-f-sys.md#move-1) | Moves log files of the specified type to the target application directory. This API uses a promise to return theresult. |
+| [move](arkts-performanceanalysis-move-f-sys.md#move-2) | Moves log files of the specified type to the target application directory. This API uses an asynchronous callbackto return the result. |
+| [remove](arkts-performanceanalysis-remove-f-sys.md#remove-1) | Deletes log files of the specified type in synchronous mode. |
+<!--DelEnd-->
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[LogEntry](arkts-loglibrary-logentry-i-sys.md) | 日志文件对象接口。 |
+| [LogEntry](arkts-performanceanalysis-logentry-i-sys.md) | Defines a **LogEntry** object. |
+<!--DelEnd-->
 

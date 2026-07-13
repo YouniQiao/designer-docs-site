@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usageStatistics } from '@ohos.resourceschedule.usageStatistics';
+import { usageStatistics } from '@kit.BackgroundTasksKit';
 ```
 
 ## abilityDescriptionId
@@ -178,7 +178,8 @@ The label id of module.
 lastModuleUsedTime: number
 ```
 
-The last time when the module was accessed, in milliseconds. <br> Unit:ms
+The last time when the module was accessed, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 

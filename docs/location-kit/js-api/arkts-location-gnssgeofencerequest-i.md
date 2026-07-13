@@ -9,7 +9,7 @@ Configuring parameters in GNSS geofence requests.
 ## Modules to Import
 
 ```TypeScript
-import { geoLocationManager } from '@ohos.geoLocationManager';
+import { geoLocationManager } from '@kit.LocationKit';
 ```
 
 ## fenceExtensionAbilityName
@@ -60,7 +60,9 @@ Indicates the callback for reporting the geofence transition status.
 loiterTimeMs?: number
 ```
 
-Indicates time for which a device is dwelling in the geofence, in milliseconds. If the device dwelling time reaches the value specified by this parameter, a GEOFENCE_TRANSITION_EVENT_DWELL event is reported.
+Indicates time for which a device is dwelling in the geofence, in milliseconds.
+If the device dwelling time reaches the value specified by this parameter,
+a GEOFENCE_TRANSITION_EVENT_DWELL event is reported.
 
 **Type:** number
 

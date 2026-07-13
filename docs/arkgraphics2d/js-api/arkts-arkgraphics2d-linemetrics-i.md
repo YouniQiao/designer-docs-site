@@ -9,7 +9,7 @@ Describes the measurement information of a single line of text in the text layou
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## ascent
@@ -18,7 +18,8 @@ import { text } from '@ohos.graphics.text';
 ascent: number
 ```
 
-Text ascent height, which refers to the distance from the baseline to the top of characters, in physical pixels ( px).
+Text ascent height, which refers to the distance from the baseline to the top of characters, in physical pixels (
+px).
 
 **Type:** number
 
@@ -50,7 +51,8 @@ Y coordinate of the baseline in the line relative to the top of the paragraph, i
 descent: number
 ```
 
-Text descent height, which refers to the distance from the baseline to the bottom of characters, in physical pixels (px).
+Text descent height, which refers to the distance from the baseline to the bottom of characters, in physical
+pixels (px).
 
 **Type:** number
 
@@ -98,7 +100,8 @@ Height of the current line, in physical pixels (px). The calculation method is `
 left: number
 ```
 
-Left edge position of a line, in physical pixels (px). The right edge is the value of **left** plus the value of **width**.
+Left edge position of a line, in physical pixels (px). The right edge is the value of **left** plus the value of
+**width**.
 
 **Type:** number
 

@@ -9,7 +9,7 @@ This module provides the capability of displaying ads, covering native, roll, sp
 ## Modules to Import
 
 ```TypeScript
-import { AdComponent } from '@ohos.advertising.AdComponent';
+import { AdComponent } from '@kit.AdsKit';
 ```
 
 ## build
@@ -32,13 +32,15 @@ A constructor used to create an **AdComponent** object.
 adRenderer?: () => void
 ```
 
-Application self-rendered ad style. The application self-rendered ad style is a restricted capability. For details, please consult [Traffic Monetization Official Website Customer Support](https://developer.huawei.com/consumer/en/doc/monetize/ support-0000001061434261).
+Application self-rendered ad style. The application self-rendered ad style is a restricted capability. For details,
+please consult
+[Traffic Monetization Official Website Customer Support](https://developer.huawei.com/consumer/en/doc/monetize/support-0000001061434261).
 
 **Type:** () => void
 
 **Since:** 12
 
-**Decorator:** @Builder
+**Decorator:** @BuilderParam
 
 **Atomic service API:** This API can be used in atomic services since API version 20.
 
@@ -50,7 +52,9 @@ Application self-rendered ad style. The application self-rendered ad style is a 
 ads: advertising.Advertisement[]
 ```
 
-Array of ad objects. NOTE: For non-roll ad types, the component only displays the first data in the array.
+Array of ad objects.
+
+NOTE: For non-roll ad types, the component only displays the first data in the array.
 
 **Type:** advertising.Advertisement[]
 
@@ -98,7 +102,10 @@ Callback for ad status changes.
 rollPlayState?: number
 ```
 
-Used to provide the playback status of roll ads externally. Set to 1 for playing and 2 for paused. The default value is 2. Other values are invalid and do not change the previous playback status. The page where the roll ad is located needs to be associated with the property through @State. For usage methods, refer to the [sample code](https://developer.huawei.com/consumer/en/doc/harmonyos-guides/ ads-publisher-service-roll#section4281165885118).
+Used to provide the playback status of roll ads externally. Set to 1 for playing and 2 for paused. The default
+value is 2. Other values are invalid and do not change the previous playback status. The page where the roll ad is
+located needs to be associated with the property through @State. For usage methods, refer to the
+[sample code](https://developer.huawei.com/consumer/en/doc/harmonyos-guides/ads-publisher-service-roll#section4281165885118).
 
 **Type:** number
 

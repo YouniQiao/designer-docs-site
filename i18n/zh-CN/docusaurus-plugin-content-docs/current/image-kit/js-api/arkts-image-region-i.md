@@ -2,15 +2,13 @@
 
 表示区域信息。
 
-**起始版本：** 8
+继承自[lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable)。
+
+**继承/实现关系：** Region extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
-
-## 导入模块
-
-```TypeScript
-import { image } from '@kit.ImageKit';
-```
 
 ## size
 
@@ -22,47 +20,47 @@ size: Size
 
 **类型：** Size
 
-**起始版本：** 8
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
 ## x
 
 ```TypeScript
-x: int
+x: number
 ```
 
-区域左上角横坐标。单位：像素（px）。
+区域横坐标。单位：像素。
 
-**类型：** int
+**类型：** number
 
-**起始版本：** 8
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
 ## y
 
 ```TypeScript
-y: int
+y: number
 ```
 
-区域左上角纵坐标。单位：像素（px）。
+区域纵坐标。单位：像素。
 
-**类型：** int
+**类型：** number
 
-**起始版本：** 8
+**起始版本：** 12
 
-**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 

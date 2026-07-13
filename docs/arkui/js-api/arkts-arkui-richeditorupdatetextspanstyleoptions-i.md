@@ -1,8 +1,10 @@
 # RichEditorUpdateTextSpanStyleOptions
 
-Defines the text span style options. Inherits [RichEditorSpanStyleOptions](arkts-arkui-richeditorspanstyleoptions-i.md#richeditorspanstyleoptions).
+Defines the text span style options.
 
-**Inheritance/Implementation:** RichEditorUpdateTextSpanStyleOptions extends [RichEditorSpanStyleOptions](arkts-arkui-richeditorspanstyleoptions-i.md#richeditorspanstyleoptions)
+Inherits [RichEditorSpanStyleOptions](arkts-arkui-richeditorspanstyleoptions-i.md).
+
+**Inheritance/Implementation:** RichEditorUpdateTextSpanStyleOptions extends [RichEditorSpanStyleOptions](arkts-arkui-richeditorspanstyleoptions-i.md)
 
 **Since:** 10
 
@@ -32,7 +34,9 @@ Text style.
 urlStyle?: RichEditorUrlStyle
 ```
 
-URL information. Default value: **undefined**
+URL information.
+
+Default value: **undefined**
 
 **Type:** RichEditorUrlStyle
 

@@ -1,6 +1,6 @@
 # CapturePhoto
 
-CapturePhoto** provides APIs for obtaining the objects of the full-quality image and the uncompressed image.
+**CapturePhoto** provides APIs for obtaining the objects of the full-quality image and the uncompressed image.
 
 **Since:** 23
 
@@ -18,13 +18,14 @@ import { camera } from '@kit.CameraKit';
 release(): Promise<void>
 ```
 
-Releases output resources. This API uses a promise to return the result. Model constraint: This API can be used only in the stage model.
+Releases output resources. This API uses a promise to return the result.
+Model constraint: This API can be used only in the stage model.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,7 +33,7 @@ Releases output resources. This API uses a promise to return the result. Model c
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise that returns no value. |
 
 ## main
 
@@ -46,9 +47,9 @@ Object of the full-quality image and the uncompressed image.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 23.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

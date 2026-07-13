@@ -1,19 +1,25 @@
 # LocaleOptions
 
-Options for initializing the **Locale** object. Since API version 9, the **LocaleOptions** attribute is changed from mandatory to optional. > **NOTE** > > - For details about **calendar**, see Table 1 in > [Calendar Setting](../../../../internationalization/i18n-calendar.md).
+Options for initializing the **Locale** object. Since API version 9, the **LocaleOptions** attribute is changed
+from mandatory to optional.
+
+> **NOTE**
+>
+> - For details about **calendar**, see Table 1 in
+> [Calendar Setting](../../../../internationalization/i18n-calendar.md).
 
 **Since:** 6
 
 **Deprecated since:** 20
 
-**Substitutes:** LocaleOptions
+**Substitutes:** options)
 
 **System capability:** SystemCapability.Global.I18n
 
 ## Modules to Import
 
 ```TypeScript
-import { intl } from '@ohos.intl';
+import { intl } from '@kit.LocalizationKit';
 ```
 
 ## calendar
@@ -22,7 +28,11 @@ import { intl } from '@ohos.intl';
 calendar?: string
 ```
 
-Calendar parameter. The value can be: "buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", " islamic-umalqura", "islamic-tbla", "islamic-civil", "islamic-rgsa", "iso8601", "japanese", "persian", "roc", or "islamicc".
+Calendar parameter. The value can be:
+
+"buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "
+islamic-umalqura", "islamic-tbla", "islamic-civil", "islamic-rgsa", "iso8601", "japanese", "persian", "roc",
+or "islamicc".
 
 **Type:** string
 
@@ -30,7 +40,7 @@ Calendar parameter. The value can be: "buddhist", "chinese", "coptic", "dangi", 
 
 **Deprecated since:** 20
 
-**Substitutes:** calendar
+**Substitutes:** calendar)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -44,7 +54,13 @@ Calendar parameter. The value can be: "buddhist", "chinese", "coptic", "dangi", 
 caseFirst?: string
 ```
 
-Whether case is taken into account for the locale's collation rules. The value can be: **upper**: Uppercase letters come first. **lower**: Lowercase letters come first. **false**: The default collation rules of the locale are used.
+Whether case is taken into account for the locale's collation rules. The value can be:
+
+**upper**: Uppercase letters come first.
+
+**lower**: Lowercase letters come first.
+
+**false**: The default collation rules of the locale are used.
 
 **Type:** string
 
@@ -52,7 +68,7 @@ Whether case is taken into account for the locale's collation rules. The value c
 
 **Deprecated since:** 20
 
-**Substitutes:** caseFirst
+**Substitutes:** casefirst)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -66,7 +82,39 @@ Whether case is taken into account for the locale's collation rules. The value c
 collation?: string
 ```
 
-Collation rules for the locale. The value can be: **big5han**: Pinyin sorting for Latin letters. **compat**: compatibility sorting, only for Arabic. **dict**: dictionary-style sorting, only for Singhalese. **direct**: binary code point sorting. **ducet**: sorting according to the Unicode collation element table. **eor**: sorting according to the European collation rules. **gb2312**: Pinyin sorting, only for Chinese. **phonebk**: phone book-style sorting. **phonetic**: phonetic sorting. **pinyin**: Pinyin sorting. **reformed**: reformed sorting, only for Swedish. **searchjl**: special sorting for Korean initial consonant search. **stroke**: stroke sorting for Chinese. **trad**: traditional-style sorting, for example, Spanish. **unihan**: radical-stroke sorting for Han characters, only for Chinese, Japanese, and Korean. **zhuyin**: Zhuyin sorting, only for Chinese.
+Collation rules for the locale. The value can be:
+
+**big5han**: Pinyin sorting for Latin letters.
+
+**compat**: compatibility sorting, only for Arabic.
+
+**dict**: dictionary-style sorting, only for Singhalese.
+
+**direct**: binary code point sorting.
+
+**ducet**: sorting according to the Unicode collation element table.
+
+**eor**: sorting according to the European collation rules.
+
+**gb2312**: Pinyin sorting, only for Chinese.
+
+**phonebk**: phone book-style sorting.
+
+**phonetic**: phonetic sorting.
+
+**pinyin**: Pinyin sorting.
+
+**reformed**: reformed sorting, only for Swedish.
+
+**searchjl**: special sorting for Korean initial consonant search.
+
+**stroke**: stroke sorting for Chinese.
+
+**trad**: traditional-style sorting, for example, Spanish.
+
+**unihan**: radical-stroke sorting for Han characters, only for Chinese, Japanese, and Korean.
+
+**zhuyin**: Zhuyin sorting, only for Chinese.
 
 **Type:** string
 
@@ -74,7 +122,7 @@ Collation rules for the locale. The value can be: **big5han**: Pinyin sorting fo
 
 **Deprecated since:** 20
 
-**Substitutes:** collation
+**Substitutes:** collation)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -88,7 +136,9 @@ Collation rules for the locale. The value can be: **big5han**: Pinyin sorting fo
 hourCycle?: string
 ```
 
-Hour cycle. The value can be: "h11", "h12", "h23", or  "h24".
+Hour cycle. The value can be:
+
+"h11", "h12", "h23", or  "h24".
 
 **Type:** string
 
@@ -96,7 +146,7 @@ Hour cycle. The value can be: "h11", "h12", "h23", or  "h24".
 
 **Deprecated since:** 20
 
-**Substitutes:** hourCycle
+**Substitutes:** hourcycle)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -110,7 +160,15 @@ Hour cycle. The value can be: "h11", "h12", "h23", or  "h24".
 numberingSystem?: string
 ```
 
-Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**, **diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**, **kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**, **mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**, **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**, **shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**, **tirh**, **vaii**, **wara**, or **wcho**.
+Numbering system. The value can be:
+
+**adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**,
+**diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**,
+**kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**,
+**mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**,
+**mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**,
+**shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**,
+**tirh**, **vaii**, **wara**, or **wcho**.
 
 **Type:** string
 
@@ -118,7 +176,7 @@ Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, *
 
 **Deprecated since:** 20
 
-**Substitutes:** numberingSystem
+**Substitutes:** numberingsystem)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -132,7 +190,10 @@ Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, *
 numeric?: boolean
 ```
 
-Whether to treat numeric characters as numbers for sorting. The value true means to treat numeric characters as numbers for sorting, and the value **false** means to treat numeric characters as ordinary characters for sorting. For example, when this parameter is set to **true**, comparing the string **21** with the string **123** is equivalent to comparing the number 21 with the number 123. The default value is **false**.
+Whether to treat numeric characters as numbers for sorting. The value true means to treat numeric characters as
+numbers for sorting, and the value **false** means to treat numeric characters as ordinary characters for
+sorting. For example, when this parameter is set to **true**, comparing the string **21** with the string **123**
+is equivalent to comparing the number 21 with the number 123. The default value is **false**.
 
 **Type:** boolean
 
@@ -140,7 +201,7 @@ Whether to treat numeric characters as numbers for sorting. The value true means
 
 **Deprecated since:** 20
 
-**Substitutes:** numeric
+**Substitutes:** numeric)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 

@@ -1,6 +1,12 @@
 # Window
 
-Represents a window instance, which is the basic unit managed by the window manager. In the following API examples, you must use [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1), [createWindow()](arkts-arkui-createwindow-f.md#createwindow-1), or [findWindow()](arkts-arkui-findwindow-f.md#findwindow-1) to obtain a Window instance (named windowClass in this example) and then call a method in this instance.
+Represents a window instance, which is the basic unit managed by the window manager.
+
+In the following API examples, you must use
+[getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1),
+[createWindow()](arkts-arkui-createwindow-f.md#createwindow-1),
+or [findWindow()](arkts-arkui-findwindow-f.md#findwindow-1) to obtain a Window instance (named windowClass in this
+example) and then call a method in this instance.
 
 **Since:** 6
 
@@ -9,7 +15,7 @@ Represents a window instance, which is the basic unit managed by the window mana
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## attachLayoutToParentWindow
@@ -18,7 +24,27 @@ import { window } from '@ohos.window';
 attachLayoutToParentWindow(anchorInfo?: WindowAnchorInfo, attachOptions?: SubWindowAttachOptions): Promise<void>
 ```
 
-Attaches a first-level child window to the main window to maintain a fixed relative position. This API uses a promise to return the result. The relative position is represented by the anchor point offset between the child window and the parent window. The child window and the parent window use the same window anchor point. > **NOTE** > > - Only first-level child windows can call this API. The child window must be in floating window mode > (that is, the window mode is **window.WindowStatusType.FLOATING**). > > - After the child window calls this API, the display position of the child window immediately follows the > main window and the relative position remains unchanged. In addition, the size and mode changes of the main > window can be listened to. The effect will persist unless the > [detachLayoutToParentWindow()](#detachlayouttoparentwindow24) API is called for detaching. > > -After the child window calls this API, calling APIs such as > [moveWindowTo()](arkts-arkui-window-i.md#movewindowto-2), > [maximize()](arkts-arkui-window-i.md#maximize-1), and > [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-i.md#setfollowparentwindowlayoutenabled-1) > to change the window position, or dragging and moving or dragging and resizing the child window through mouse > or touch operations will not take effect.
+Attaches a first-level child window to the main window to maintain a fixed relative position.
+This API uses a promise to return the result. The relative position is represented by the anchor point offset
+between the child window and the parent window.
+The child window and the parent window use the same window anchor point.
+
+> **NOTE**
+>
+> - Only first-level child windows can call this API. The child window must be in floating window mode
+> (that is, the window mode is **window.WindowStatusType.FLOATING**).
+>
+> - After the child window calls this API, the display position of the child window immediately follows the
+> main window and the relative position remains unchanged. In addition, the size and mode changes of the main
+> window can be listened to. The effect will persist unless the
+> [detachLayoutToParentWindow()](#detachlayouttoparentwindow24) API is called for detaching.
+>
+> -After the child window calls this API, calling APIs such as
+> [moveWindowTo()](arkts-arkui-window-i.md#movewindowto-2),
+> [maximize()](arkts-arkui-window-i.md#maximize-1), and
+> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-i.md#setfollowparentwindowlayoutenabled-1)
+> to change the window position, or dragging and moving or dragging and resizing the child window through mouse
+> or touch operations will not take effect.
 
 **Since:** 24
 
@@ -107,7 +133,9 @@ export default class EntryAbility extends UIAbility {
 bindDialogTarget(token: rpc.RemoteObject, deathCallback: Callback<void>): Promise<void>
 ```
 
-Binds the modal window to the target window. After the binding is successful, the target window cannot respond to user operations. In addition, a callback used to listen for modal window destruction events is added. This API uses a promise to return the result.
+Binds the modal window to the target window. After the binding is successful, the target window cannot respond to
+user operations. In addition, a callback used to listen for modal window destruction events is added. This API
+uses a promise to return the result.
 
 **Since:** 9
 
@@ -132,7 +160,7 @@ Binds the modal window to the target window. After the binding is successful, th
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -196,7 +224,9 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 bindDialogTarget(token: rpc.RemoteObject, deathCallback: Callback<void>, callback: AsyncCallback<void>): void
 ```
 
-Binds the modal window to the target window. After the binding is successful, the target window cannot respond to user operations. In addition, a callback used to listen for modal window destruction events is added. This API uses an asynchronous callback to return the result.
+Binds the modal window to the target window. After the binding is successful, the target window cannot respond to
+user operations. In addition, a callback used to listen for modal window destruction events is added. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -216,7 +246,7 @@ Binds the modal window to the target window. After the binding is successful, th
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -282,7 +312,9 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 bindDialogTarget(requestInfo: dialogRequest.RequestInfo, deathCallback: Callback<void>): Promise<void>
 ```
 
-Binds the modal window to the target window. After the binding is successful, the target window cannot respond to user operations. In addition, a callback used to listen for modal window destruction events is added. This API uses a promise to return the result.
+Binds the modal window to the target window. After the binding is successful, the target window cannot respond to
+user operations. In addition, a callback used to listen for modal window destruction events is added. This API
+uses a promise to return the result.
 
 **Since:** 9
 
@@ -307,7 +339,7 @@ Binds the modal window to the target window. After the binding is successful, th
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -359,7 +391,9 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 bindDialogTarget(requestInfo: dialogRequest.RequestInfo, deathCallback: Callback<void>, callback: AsyncCallback<void>): void
 ```
 
-Binds the modal window to the target window. After the binding is successful, the target window cannot respond to user operations. In addition, a callback used to listen for modal window destruction events is added. This API uses an asynchronous callback to return the result.
+Binds the modal window to the target window. After the binding is successful, the target window cannot respond to
+user operations. In addition, a callback used to listen for modal window destruction events is added. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -379,7 +413,7 @@ Binds the modal window to the target window. After the binding is successful, th
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -433,7 +467,22 @@ export default class ServiceExtAbility extends ServiceExtensionAbility {
 detachLayoutToParentWindow(): Promise<void>
 ```
 
-Detach a first-level child window from the main window to cancel a fixed relative position. This API uses a promise to return the result. > **NOTE** > > - When the child window calls this API, the child window must be in the attached state. > > - After detached by calling this API, the child window retains its position during attaching. > You can drag the child window to change its size and position. > > - After the detaching, calling APIs such as > [moveWindowTo()](arkts-arkui-window-i.md#movewindowto-2) or > [maximize()](arkts-arkui-window-i.md#maximize-1), and > [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-i.md#setfollowparentwindowlayoutenabled-1) > to change the window position, or dragging and moving or dragging and resizing the child window through mouse > or touch operations will take effect.
+Detach a first-level child window from the main window to cancel a fixed relative position.
+This API uses a promise to return the result.
+
+> **NOTE**
+>
+> - When the child window calls this API, the child window must be in the attached state.
+>
+> - After detached by calling this API, the child window retains its position during attaching.
+> You can drag the child window to change its size and position.
+>
+> - After the detaching, calling APIs such as
+> [moveWindowTo()](arkts-arkui-window-i.md#movewindowto-2) or
+> [maximize()](arkts-arkui-window-i.md#maximize-1), and
+> [setFollowParentWindowLayoutEnabled()](arkts-arkui-window-i.md#setfollowparentwindowlayoutenabled-1)
+> to change the window position, or dragging and moving or dragging and resizing the child window through mouse
+> or touch operations will take effect.
 
 **Since:** 24
 
@@ -500,7 +549,10 @@ export default class EntryAbility extends UIAbility {
 enableDrag(enable: boolean): Promise<void>
 ```
 
-Enables or disables window dragging. This API takes effect only for system windows, application child windows, global floating windows, and modal windows. This API uses a promise to return the result. After window dragging is enabled, the window can be resized using the mouse or touch operations.
+Enables or disables window dragging. This API takes effect only for system windows, application child windows,
+global floating windows, and modal windows. This API uses a promise to return the result.
+
+After window dragging is enabled, the window can be resized using the mouse or touch operations.
 
 **Since:** 20
 
@@ -536,7 +588,8 @@ Enables or disables window dragging. This API takes effect only for system windo
 getRotationLocked(): boolean
 ```
 
-Checks whether the [system window](../../../../windowmanager/window-terminology.md#system-window) has its screen rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
+Checks whether the [system window](../../../../windowmanager/window-terminology.md#system-window) has its screen
+rotation locked. If this API is called by a non-system window, error code 1300029 is thrown.
 
 **Since:** 22
 
@@ -596,7 +649,7 @@ Obtains the transition animation controller.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
 
@@ -613,7 +666,8 @@ let controller = windowClass.getTransitionController(); // Obtain the transition
 hide (callback: AsyncCallback<void>): void
 ```
 
-Hides this window. This API uses an asynchronous callback to return the result. This API takes effect only for a system window or an application child window.
+Hides this window. This API uses an asynchronous callback to return the result. This API takes effect only for a
+system window or an application child window.
 
 **Since:** 7
 
@@ -631,7 +685,7 @@ Hides this window. This API uses an asynchronous callback to return the result. 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
 **Example**
@@ -656,7 +710,8 @@ windowClass.hide((err: BusinessError) => {
 hide(): Promise<void>
 ```
 
-Hides this window. This API uses a promise to return the result. This API takes effect only for a system window or an application child window.
+Hides this window. This API uses a promise to return the result. This API takes effect only for a system window
+or an application child window.
 
 **Since:** 7
 
@@ -674,7 +729,7 @@ Hides this window. This API uses a promise to return the result. This API takes 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
 **Example**
@@ -697,7 +752,14 @@ promise.then(() => {
 hideNonSystemFloatingWindows(shouldHide: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether to hide non-system floating windows (where [windowType](arkts-arkui-windowtype-e.md#windowtype) is **TYPE_FLOAT**). This API uses an asynchronous callback to return the result. A non-system floating window is a floating window created by a non-system application. By default, the main window of a system application can be displayed together with a non-system floating window. This means that the main window may be blocked by an upper-layer non-system floating window. If the **shouldHide** parameter is set to **true**, all non-system floating windows are hidden, so that the main window will never be blocked by a non- system floating window.
+Sets whether to hide non-system floating windows (where [windowType](arkts-arkui-windowtype-e.md) is
+**TYPE_FLOAT**). This API uses an asynchronous callback to return the result.
+
+A non-system floating window is a floating window created by a non-system application. By default, the main
+window of a system application can be displayed together with a non-system floating window. This means that the
+main window may be blocked by an upper-layer non-system floating window. If the **shouldHide** parameter is set
+to **true**, all non-system floating windows are hidden, so that the main window will never be blocked by a non-
+system floating window.
 
 **Since:** 11
 
@@ -775,7 +837,14 @@ export default class EntryAbility extends UIAbility {
 hideNonSystemFloatingWindows(shouldHide: boolean): Promise<void>
 ```
 
-Sets whether to hide non-system floating windows (where [windowType](arkts-arkui-windowtype-e.md#windowtype) is **TYPE_FLOAT**). This API uses a promise to return the result. A non-system floating window is a floating window created by a non-system application. By default, the main window of a system application can be displayed together with a non-system floating window. This means that the main window may be blocked by an upper-layer non-system floating window. If the **shouldHide** parameter is set to **true**, all non-system floating windows are hidden, so that the main window will never be blocked by a non- system floating window.
+Sets whether to hide non-system floating windows (where [windowType](arkts-arkui-windowtype-e.md) is
+**TYPE_FLOAT**). This API uses a promise to return the result.
+
+A non-system floating window is a floating window created by a non-system application. By default, the main
+window of a system application can be displayed together with a non-system floating window. This means that the
+main window may be blocked by an upper-layer non-system floating window. If the **shouldHide** parameter is set
+to **true**, all non-system floating windows are hidden, so that the main window will never be blocked by a non-
+system floating window.
 
 **Since:** 11
 
@@ -858,7 +927,8 @@ export default class EntryAbility extends UIAbility {
 hideWithAnimation(callback: AsyncCallback<void>): void
 ```
 
-Hides this window and plays an animation during the process. This API uses an asynchronous callback to return the result. This API takes effect only for a system window.
+Hides this window and plays an animation during the process. This API uses an asynchronous callback to return the
+result. This API takes effect only for a system window.
 
 **Since:** 9
 
@@ -876,7 +946,7 @@ Hides this window and plays an animation during the process. This API uses an as
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only system windows are supported. |
@@ -903,7 +973,8 @@ windowClass.hideWithAnimation((err: BusinessError) => {
 hideWithAnimation(): Promise<void>
 ```
 
-Hides this window and plays an animation during the process. This API uses a promise to return the result. This API takes effect only for a system window.
+Hides this window and plays an animation during the process. This API uses a promise to return the result. This
+API takes effect only for a system window.
 
 **Since:** 9
 
@@ -921,7 +992,7 @@ Hides this window and plays an animation during the process. This API uses a pro
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only system windows are supported. |
@@ -946,7 +1017,8 @@ promise.then(() => {
 isMainWindowFullScreenAcrossDisplays(): Promise<boolean>
 ```
 
-Checks whether the main window is in full-screen mode across multiple displays. This API uses a promise to return the result. It takes effect only for the main window and child windows.
+Checks whether the main window is in full-screen mode across multiple displays. This API uses a promise to return
+the result. It takes effect only for the main window and child windows.
 
 **Since:** 20
 
@@ -1089,7 +1161,9 @@ try {
 opacity(opacity: number): void
 ```
 
-Sets the opacity for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window) .
+Sets the opacity for this window. This API can be used only when you
+[customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window)
+.
 
 **Since:** 9
 
@@ -1107,7 +1181,7 @@ Sets the opacity for this window. This API can be used only when you [customize 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1129,7 +1203,11 @@ try {
 raiseAboveTarget(windowId: number, callback: AsyncCallback<void>): void
 ```
 
-Raises a child window above a target child window. This API uses an asynchronous callback to return the result. Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully executed for each.
+Raises a child window above a target child window. This API uses an asynchronous callback to return the result.
+
+Before calling this API, ensure that the child window to raise and the target child window have been created and
+[showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully
+executed for each.
 
 **Since:** 10
 
@@ -1141,7 +1219,7 @@ Raises a child window above a target child window. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in[properties](arkts-arkui-windowproperties-i.md#windowproperties) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in[properties](arkts-arkui-windowproperties-i.md) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
 
 **Error codes:**
@@ -1205,7 +1283,11 @@ export default class EntryAbility extends UIAbility {
 raiseAboveTarget(windowId: number): Promise<void>
 ```
 
-Raises a child window above a target child window. This API uses a promise to return the result. Before calling this API, ensure that the child window to raise and the target child window have been created and [showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully executed for each.
+Raises a child window above a target child window. This API uses a promise to return the result.
+
+Before calling this API, ensure that the child window to raise and the target child window have been created and
+[showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully
+executed for each.
 
 **Since:** 10
 
@@ -1217,7 +1299,7 @@ Raises a child window above a target child window. This API uses a promise to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in[properties](arkts-arkui-windowproperties-i.md#windowproperties) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target child window, which is the value of **properties.id** in[properties](arkts-arkui-windowproperties-i.md) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
 
 **Return value:**
 
@@ -1284,7 +1366,20 @@ export default class EntryAbility extends UIAbility {
 raiseMainWindowAboveTarget(windowId: number): Promise<void>
 ```
 
-Moves the main window above another main window within the same application, with child windows following their parents' layer change. This API uses a promise to return the result. This API can be called only by the main window of a system application. You need to pass the ID of the target main window. Both the calling window and the target window must be in the same application process, displayed on the same physical screen, below the lock screen layer, not topmost, not modal, and have no application-modal child windows. - If the application's main window or its child windows currently have focus, calling this API to lower the layer will cause the window to lose focus automatically, and the highest-layered application window will gain focus. - If the main window calls this API to move above the current focused window, the highest-layered window among the raised main window and its child windows will gain focus. If the main window calls this API without moving above the current focused window, the focus remains unchanged.
+Moves the main window above another main window within the same application, with child windows following their
+parents' layer change. This API uses a promise to return the result.
+
+This API can be called only by the main window of a system application.
+
+You need to pass the ID of the target main window. Both the calling window and the target window must be in the
+same application process, displayed on the same physical screen, below the lock screen layer, not topmost, not
+modal, and have no application-modal child windows.
+
+- If the application's main window or its child windows currently have focus, calling this API to lower the layer
+will cause the window to lose focus automatically, and the highest-layered application window will gain focus.
+- If the main window calls this API to move above the current focused window, the highest-layered window among
+the raised main window and its child windows will gain focus. If the main window calls this API without moving
+above the current focused window, the focus remains unchanged.
 
 **Since:** 20
 
@@ -1296,7 +1391,7 @@ Moves the main window above another main window within the same application, wit
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowId | number | Yes | ID of the target main window. The value is an integer. It is the value of**properties.id** in [properties](arkts-arkui-windowproperties-i.md#windowproperties) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
+| windowId | number | Yes | ID of the target main window. The value is an integer. It is the value of**properties.id** in [properties](arkts-arkui-windowproperties-i.md) obtained through[getWindowProperties](arkts-arkui-window-i.md#getwindowproperties-1). |
 
 **Return value:**
 
@@ -1446,7 +1541,12 @@ export default class RaiseMainWindowAbility extends UIAbility {
 raiseToAppTop(callback: AsyncCallback<void>): void
 ```
 
-Raises the application child window to the top layer of the application. This API uses an asynchronous callback to return the result. Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully executed.
+Raises the application child window to the top layer of the application. This API uses an asynchronous callback
+to return the result.
+
+Before calling this API, ensure that the child window has been created and
+[showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully
+executed.
 
 **Since:** 10
 
@@ -1510,7 +1610,17 @@ export default class EntryAbility extends UIAbility {
 requestFocus(isFocused: boolean): Promise<void>
 ```
 
-Allows this window to proactively request to gain or lose focus. This API uses a promise to return the result. A value is returned as long as the API is successfully called. The return value does not indicate that the window has gained or lost focus. You can use [on('windowEvent')](arkts-arkui-window-i.md#on-22) to listen for the focus status of the window. When a focus request is sent, whether the window can successfully gain focus depends on its capability of being focused and its current visibility. To gain focus, the window must be capable of receiving focus and in a visible state (actively displayed and not hidden or destroyed). Conversely, once a blur request is sent, the window will lose focus without any conditions.
+Allows this window to proactively request to gain or lose focus. This API uses a promise to return the result. A
+value is returned as long as the API is successfully called. The return value does not indicate that the window
+has gained or lost focus. You can use
+[on('windowEvent')](arkts-arkui-window-i.md#on-22)
+to listen for the focus status of the window.
+
+When a focus request is sent, whether the window can successfully gain focus depends on its capability of being
+focused and its current visibility. To gain focus, the window must be capable of receiving focus and in a visible
+state (actively displayed and not hidden or destroyed).
+
+Conversely, once a blur request is sent, the window will lose focus without any conditions.
 
 **Since:** 13
 
@@ -1561,7 +1671,9 @@ promise.then(() => {
 rotate(rotateOptions: RotateOptions): void
 ```
 
-Sets the rotation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window) .
+Sets the rotation parameters for this window. This API can be used only when you
+[customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window)
+.
 
 **Since:** 9
 
@@ -1579,7 +1691,7 @@ Sets the rotation parameters for this window. This API can be used only when you
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1608,7 +1720,9 @@ try {
 scale(scaleOptions: ScaleOptions): void
 ```
 
-Sets the scale parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window) .
+Sets the scale parameters for this window. This API can be used only when you
+[customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window)
+.
 
 **Since:** 9
 
@@ -1626,7 +1740,7 @@ Sets the scale parameters for this window. This API can be used only when you [c
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1654,7 +1768,12 @@ try {
 setBackdropBlur(radius: number): void
 ```
 
-Blurs the background of this window. The window background refers to the lower-layer area covered by the window, which is the same as the window size. To make the blur effect visible, you must set the window background transparent by calling [setWindowBackgroundColor](arkts-arkui-window-i.md#setwindowbackgroundcolor-1).
+Blurs the background of this window.
+
+The window background refers to the lower-layer area covered by the window, which is the same as the window size.
+
+To make the blur effect visible, you must set the window background transparent by calling
+[setWindowBackgroundColor](arkts-arkui-window-i.md#setwindowbackgroundcolor-1).
 
 **Since:** 9
 
@@ -1672,7 +1791,7 @@ Blurs the background of this window. The window background refers to the lower-l
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1716,7 +1835,7 @@ Sets the blur style for the background of this window.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -1753,7 +1872,7 @@ Blurs this window.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1793,7 +1912,7 @@ Sets the radius of the rounded corners for this window.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -1815,7 +1934,17 @@ try {
 setDefaultDensityEnabled(enabled: boolean): void
 ```
 
-Sets whether the window uses the default density of the current screen. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-i.md#loadcontent-1) or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1). If this API is not called, the default density is not used. If this API, [setDefaultDensityEnabled(true)](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1) , and [setCustomDensity](arkts-arkui-windowstage-i.md#setcustomdensity-1) are all called, the setting from the last called API will be applied.
+Sets whether the window uses the default density of the current screen. In the stage model, you need to call this
+API after
+[loadContent()](arkts-arkui-window-i.md#loadcontent-1)
+or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1).
+
+If this API is not called, the default density is not used.
+
+If this API,
+[setDefaultDensityEnabled(true)](arkts-arkui-windowstage-i.md#setdefaultdensityenabled-1)
+, and [setCustomDensity](arkts-arkui-windowstage-i.md#setcustomdensity-1) are
+all called, the setting from the last called API will be applied.
 
 **Since:** 20
 
@@ -1855,7 +1984,8 @@ try {
 setForbidSplitMove(isForbidSplitMove: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether the main window is forbidden to move in split-screen mode. This API uses an asynchronous callback to return the result.
+Sets whether the main window is forbidden to move in split-screen mode. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -1925,7 +2055,8 @@ export default class EntryAbility extends UIAbility {
 setForbidSplitMove(isForbidSplitMove: boolean): Promise<void>
 ```
 
-Sets whether the main window is forbidden to move in split-screen mode. This API uses a promise to return the result.
+Sets whether the main window is forbidden to move in split-screen mode. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -1998,7 +2129,8 @@ export default class EntryAbility extends UIAbility {
 setHandwritingFlag(enable: boolean): Promise<void>
 ```
 
-Adds or deletes the handwriting flag for this window. After this flag is added, the window responds to stylus events but not touch events. This API uses a promise to return the result.
+Adds or deletes the handwriting flag for this window. After this flag is added, the window responds to stylus
+events but not touch events. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -2053,7 +2185,12 @@ try {
 setMainWindowRaiseByClickEnabled(enable: boolean): Promise<void>
 ```
 
-Sets whether to enable the main window to raise itself by click. This API uses a promise to return the result. By default, clicking the main window raises both the main window and its associated child windows. Disabling this feature (by passing **false**) prevents the main window and its child windows from being raised when the main window is clicked, preserving their current state. However, clicking on a child window still raises both the child window and the main window together.
+Sets whether to enable the main window to raise itself by click. This API uses a promise to return the result.
+
+By default, clicking the main window raises both the main window and its associated child windows. Disabling this
+feature (by passing **false**) prevents the main window and its child windows from being raised when the main
+window is clicked, preserving their current state. However, clicking on a child window still raises both the
+child window and the main window together.
 
 **Since:** 23
 
@@ -2123,7 +2260,15 @@ export default class EntryAbility extends UIAbility {
 setRaiseByClickEnabled(enable: boolean, callback: AsyncCallback<void>): void
 ```
 
-Sets whether to enable a child window to raise itself by click. This API uses an asynchronous callback to return the result. Generally, when a user clicks a child window, the child window is displayed on the top. If the **enable** parameter is set to **false**, the child window is not displayed on the top when being clicked. Before calling this API, ensure that the child window has been created and [showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully executed.
+Sets whether to enable a child window to raise itself by click. This API uses an asynchronous callback to return
+the result.
+
+Generally, when a user clicks a child window, the child window is displayed on the top. If the **enable**
+parameter is set to **false**, the child window is not displayed on the top when being clicked.
+
+Before calling this API, ensure that the child window has been created and
+[showWindow()](arkts-arkui-window-i.md#showwindow-1) has been successfully
+executed.
 
 **Since:** 10
 
@@ -2194,7 +2339,43 @@ export default class EntryAbility extends UIAbility {
 setRotationLocked(locked: boolean): Promise<void>
 ```
 
-Allows a [system window](../../../../windowmanager/window-terminology.md#system-window) to lock or unlock its own screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's orientation follows the main window's orientation, the system rotation-lock button, and the device's physical rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a promise to return the result. > **NOTE** > > - If the main window sets the display orientation via > [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2) > while rotation is locked, the window restores the last orientation request when brought to the foreground after > unlocking. > > - If the system window sets the display orientation via > [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2) > while rotation is locked, the window restores the last orientation request when brought to the foreground with > the highest level after unlocking. The rotation lock set by a lower-level window using **setRotationLocked** > does not hinder the system window at a higher level to set the display orientation by calling > [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2) > . > > - If the sensor orientation changes while rotation is locked, the last sensor orientation is restored after > unlocking. > > - If the application calls > [setOrientation()](arkts-arkui-screen-i-sys.md#setorientation-1) > to set the screen orientation while rotation is locked, that screen?orientation setting is ignored. > > - When rotation is unlocked, the application's display orientation is determined based on the main window's > display orientation set via > [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2) > , the sensor orientation, and more. For details, see > [Window Rotation Overview](../../../../windowmanager/window-rotation.md#overview). > > - The API does not affect the launch orientation set by the **orientation** under > [**abilities** in the module.json5 file](../../../../quick-start/module-configuration-file.md#abilities) of the > application.
+Allows a [system window](../../../../windowmanager/window-terminology.md#system-window) to lock or unlock its own
+screen-rotation behavior. When locked, the window's orientation remains unchanged. When unlocked, the window's
+orientation follows the main window's orientation, the system rotation-lock button, and the device's physical
+rotation sensor. If this API is called by a non-system window, error code 1300029 is thrown. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> - If the main window sets the display orientation via
+> [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2)
+> while rotation is locked, the window restores the last orientation request when brought to the foreground after
+> unlocking.
+>
+> - If the system window sets the display orientation via
+> [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2)
+> while rotation is locked, the window restores the last orientation request when brought to the foreground with
+> the highest level after unlocking. The rotation lock set by a lower-level window using **setRotationLocked**
+> does not hinder the system window at a higher level to set the display orientation by calling
+> [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2)
+> .
+>
+> - If the sensor orientation changes while rotation is locked, the last sensor orientation is restored after
+> unlocking.
+>
+> - If the application calls
+> [setOrientation()](arkts-arkui-screen-i-sys.md#setorientation-1)
+> to set the screen orientation while rotation is locked, that screen?orientation setting is ignored.
+>
+> - When rotation is unlocked, the application's display orientation is determined based on the main window's
+> display orientation set via
+> [setPreferredOrientation()](arkts-arkui-window-i.md#setpreferredorientation-2)
+> , the sensor orientation, and more. For details, see
+> [Window Rotation Overview](../../../../windowmanager/window-rotation.md#overview).
+>
+> - The API does not affect the launch orientation set by the **orientation** under
+> [**abilities** in the module.json5 file](../../../../quick-start/module-configuration-file.md#abilities) of the
+> application.
 
 **Since:** 22
 
@@ -2266,7 +2447,7 @@ Sets the shadow for the window borders.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |
@@ -2288,7 +2469,10 @@ try {
 setSingleFrameComposerEnabled(enable: boolean): Promise<void>
 ```
 
-Enables or disables the single-frame composer. This API uses a promise to return the result. The single-frame composer is mainly used in scenarios that require extremely low interaction latency. It reduces the screen display latency of the rendering node.
+Enables or disables the single-frame composer. This API uses a promise to return the result.
+
+The single-frame composer is mainly used in scenarios that require extremely low interaction latency. It reduces
+the screen display latency of the rendering node.
 
 **Since:** 11
 
@@ -2342,7 +2526,13 @@ try {
 setSnapshotSkip(isSkip: boolean): void
 ```
 
-Sets whether to ignore this window during screen capture, recording, or casting. This API is typically used in situations where you want to prevent screen capture, recording, or casting. If you want the window to always be ignored during screen capture, recording, or casting while it is in the foreground, listen for window lifecycle changes using [on('windowEvent')](arkts-arkui-window-i.md#on-22) . Set **isSkip** to **false** when the window is in the background and **true** when it is in the foreground.
+Sets whether to ignore this window during screen capture, recording, or casting. This API is typically used in
+situations where you want to prevent screen capture, recording, or casting.
+
+If you want the window to always be ignored during screen capture, recording, or casting while it is in the
+foreground, listen for window lifecycle changes using
+[on('windowEvent')](arkts-arkui-window-i.md#on-22)
+. Set **isSkip** to **false** when the window is in the background and **true** when it is in the foreground.
 
 **Since:** 9
 
@@ -2360,7 +2550,7 @@ Sets whether to ignore this window during screen capture, recording, or casting.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 
@@ -2382,7 +2572,10 @@ try {
 setTitleButtonVisible(isMaximizeVisible: boolean, isMinimizeVisible: boolean, isSplitVisible: boolean): void
 ```
 
-Shows or hides the maximize, minimize, and split-screen buttons on the title bar of the main window. This API takes effect only for the title bar buttons (maximize, minimize, and split-screen) that are available in the current scenario.
+Shows or hides the maximize, minimize, and split-screen buttons on the title bar of the main window.
+
+This API takes effect only for the title bar buttons (maximize, minimize, and split-screen) that are available in
+the current scenario.
 
 **Since:** 12
 
@@ -2453,7 +2646,8 @@ export default class EntryAbility extends UIAbility {
 setTopmost(isTopmost: boolean): Promise<void>
 ```
 
-Called by the main window to place the window above all the other windows. This API uses a promise to return the result.
+Called by the main window to place the window above all the other windows. This API uses a promise to return the
+result.
 
 **Since:** 12
 
@@ -2514,7 +2708,9 @@ export default class EntryAbility extends UIAbility {
 setTouchableAreas(rects: Array<Rect>): Promise<void>
 ```
 
-Sets the touchable areas for this window. By default, the entire window is touchable. If a touchable area is set, touch events outside this area are transparently transmitted. The setting becomes invalid after the window rectangle changes.
+Sets the touchable areas for this window. By default, the entire window is touchable. If a touchable area is set,
+touch events outside this area are transparently transmitted. The setting becomes invalid after the window
+rectangle changes.
 
 **Since:** 26.0.0
 
@@ -2543,7 +2739,7 @@ Sets the touchable areas for this window. By default, the entire window is touch
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not havethe permission required or a non-system application calls the API.<br>**Applicable version:** 26.0.0 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not havethe permission required or a non-system application calls the API.<br>**Applicable version:** 26.0.0 and later |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 - 24 |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -2573,7 +2769,7 @@ Wakes up the screen.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -2615,7 +2811,7 @@ Adds or deletes the watermark flag for this window. This API uses an asynchronou
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -2676,7 +2872,7 @@ Adds or deletes the watermark flag for this window. This API uses a promise to r
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300008](../errorcode-window.md#1300008-display-device-exception) | The display device is abnormal. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -2703,7 +2899,14 @@ try {
 setWindowContainerModalColor(activeColor: string, inactiveColor: string): void
 ```
 
-Sets the background color of the main window container for both when it has focus and when it does not. In the stage model, you need to call this API after [loadContent()](arkts-arkui-window-i.md#loadcontent-1) or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1). The background color you set here covers the entire window, including both the title bar and the content area. If you also use [setWindowBackgroundColor()](arkts-arkui-window-i.md#setwindowbackgroundcolor-1), the content area shows the window background color, whereas the title bar shows the container background color.
+Sets the background color of the main window container for both when it has focus and when it does not. In the
+stage model, you need to call this API after
+[loadContent()](arkts-arkui-window-i.md#loadcontent-1)
+or [setUIContent()](arkts-arkui-window-i.md#setuicontent-1).
+
+The background color you set here covers the entire window, including both the title bar and the content area. If
+you also use [setWindowBackgroundColor()](arkts-arkui-window-i.md#setwindowbackgroundcolor-1), the content
+area shows the window background color, whereas the title bar shows the container background color.
 
 **Since:** 26.0.0
 
@@ -2725,7 +2928,7 @@ Sets the background color of the main window container for both when it has focu
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not havethe permission required or a non-system application calls the API.<br>**Applicable version:** 26.0.0 |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not havethe permission required or a non-system application calls the API.<br>**Applicable version:** 26.0.0 and later |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 20 - 24 |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
@@ -2762,7 +2965,7 @@ Sets the mode of the main window. This API uses a promise to return the result.
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
@@ -2827,7 +3030,7 @@ Sets the mode of the main window. This API uses an asynchronous callback to retu
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
@@ -2959,7 +3162,8 @@ windowClass.setWindowType(type, (err: BusinessError) => {
 showWithAnimation(callback: AsyncCallback<void>): void
 ```
 
-Shows this window and plays an animation during the process. This API uses an asynchronous callback to return the result. This API takes effect only for a system window.
+Shows this window and plays an animation during the process. This API uses an asynchronous callback to return the
+result. This API takes effect only for a system window.
 
 **Since:** 9
 
@@ -2977,7 +3181,7 @@ Shows this window and plays an animation during the process. This API uses an as
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only system windows are supported. |
@@ -3004,7 +3208,8 @@ windowClass.showWithAnimation((err: BusinessError) => {
 showWithAnimation(): Promise<void>
 ```
 
-Shows this window and plays an animation during the process. This API uses a promise to return the result. This API takes effect only for a system window.
+Shows this window and plays an animation during the process. This API uses a promise to return the result. This
+API takes effect only for a system window.
 
 **Since:** 9
 
@@ -3022,7 +3227,7 @@ Shows this window and plays an animation during the process. This API uses a pro
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation.Possible cause: Invalid window type. Only system windows are supported. |
@@ -3047,7 +3252,9 @@ promise.then(() => {
 startMovingWithOptions(startMovingOptions?: StartMovingOptions): Promise<void>
 ```
 
-Starts moving this window. The window moves along with the cursor only when this API is called in the callback function of onTouch, where the event type is TouchType.Down.
+Starts moving this window.
+The window moves along with the cursor only when this API is called in the callback function of onTouch,
+where the event type is TouchType.Down.
 
 **Since:** 26.0.0
 
@@ -3087,7 +3294,9 @@ Starts moving this window. The window moves along with the cursor only when this
 translate(translateOptions: TranslateOptions): void
 ```
 
-Sets the translation parameters for this window. This API can be used only when you [customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window) .
+Sets the translation parameters for this window. This API can be used only when you
+[customize an animation to be played during the display or hiding of a system window](../../../../windowmanager/system-window-stage-sys.md#customizing-an-animation-to-be-played-during-the-display-or-hiding-of-a-system-window)
+.
 
 **Since:** 9
 
@@ -3105,7 +3314,7 @@ Sets the translation parameters for this window. This API can be used only when 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300004](../errorcode-window.md#1300004-unauthorized-operation) | Unauthorized operation. |

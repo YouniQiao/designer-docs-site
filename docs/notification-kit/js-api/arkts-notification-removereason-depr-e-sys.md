@@ -1,6 +1,8 @@
 # RemoveReason (System API)
 
-> **NOTE**<br> > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > notificationManager.RemoveReason instead.
+> **NOTE**<br>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> notificationManager.RemoveReason instead.
 
 **Since:** 7
 

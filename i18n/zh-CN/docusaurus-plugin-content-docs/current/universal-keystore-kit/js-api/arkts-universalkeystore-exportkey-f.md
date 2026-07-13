@@ -6,7 +6,13 @@
 function exportKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void
 ```
 
-导出密钥，使用Callback方式回调异步返回的结果。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.exportKeyItem<sup>9+</sup>](arkts-universalkeystore-exportkeyitem-f.md#exportkeyitem-1) > 替代。
+导出密钥，使用Callback方式回调异步返回的结果。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.exportKeyItem<sup>9+</sup>](arkts-universalkeystore-exportkeyitem-f.md#exportkeyitem-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -46,7 +52,12 @@ huks.exportKey(keyAlias, emptyOptions, (err, data) => {
 function exportKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>
 ```
 
-导出密钥。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.exportKeyItem<sup>9+</sup>](arkts-universalkeystore-exportkeyitem-f.md#exportkeyitem-2)替代。
+导出密钥。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.exportKeyItem<sup>9+</sup>](arkts-universalkeystore-exportkeyitem-f.md#exportkeyitem-2)替代。
 
 **起始版本：** 8
 

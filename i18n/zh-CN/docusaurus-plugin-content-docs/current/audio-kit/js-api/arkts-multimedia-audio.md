@@ -1,200 +1,249 @@
 # @ohos.multimedia.audio
 
-The module provides basic audio control capabilities, including volume adjustment, device management, data capture, and rendering. This module provides the following common audio-related functions: - [AudioManager]{@link @ohos.multimedia.audio:audio}: audio manager. - [AudioRenderer]{@link @ohos.multimedia.audio:audio}: audio renderer, used to play Pulse Code Modulation (PCM) audio data. - [AudioCapturer]{@link @ohos.multimedia.audio:audio}: audio capturer, used to record PCM audio data.
+音频管理提供基础的音频控制能力，包括音量调节、设备管理、数据采集及渲染。
+
+该模块提供以下音频相关的常用功能：
+
+- [AudioManager](arkts-audio-audiomanager-i.md)：音频管理器。
+- [AudioDeviceEnhanceManager](../../../../reference/apis-audio-kit/arkts-apis-audio-AudioDeviceEnhanceManager.md)：音频设备增
+强管理器。
+- [AudioRenderer](arkts-audio-audiorenderer-i.md)：音频渲染，用于播放PCM（Pulse Code Modulation）音频数据。
+- [AudioCapturer](arkts-audio-audiocapturer-i.md)：音频采集，用于录制PCM音频数据。
 
 **起始版本：** 7
 
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
+**系统能力：** 
+- API版本12+：SystemCapability.Multimedia.Audio.Core
 
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[createAsrProcessingController](arkts-audio-createasrprocessingcontroller-f-sys.md#createAsrProcessingController-1) | Create ASR processing controller on one audio capturer. |
-| <!--DelRow-->[createAsrProcessingController](arkts-audio-createasrprocessingcontroller-f-sys.md#createAsrProcessingController-2) | Create ASR processing controller on one audio capturer. |
-| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-1) | Creates an AudioCapturer instance. This API uses an asynchronous callback to return the result. |
-| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-2) | Obtains an {@link #AudioCapturer} instance. This method uses an asynchronous callback to return the capturer instance. Using {@link #AudioCapturer} to record audio will need permission according to different {@link #Sourcetype} in options parameter, like {@link #ohos.permission.MICROPHONE} for the most microphone recording cases. |
-| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-3) | Creates an AudioCapturer instance. This API uses a promise to return the result. |
-| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-4) | Obtains an {@link AudioCapturer} instance. This method uses a promise to return the capturer instance. Using {@link #AudioCapturer} to record audio will need permission according to different {@link #Sourcetype} in options parameter, like {@link #ohos.permission.MICROPHONE} for the most microphone recording cases. |
-| [createAudioLoopback](arkts-audio-createaudioloopback-f.md#createAudioLoopback-1) | Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear monitoring using a fast capturer and renderer. |
-| [createAudioLoopback](arkts-audio-createaudioloopback-f.md#createAudioLoopback-2) | Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear monitoring using a fast capturer and renderer. |
-| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createAudioRenderer-1) | Obtains an {@link AudioRenderer} instance. This method uses a promise to return the renderer instance. The AudioRenderer instance is used to play streaming audio data. When using AudioRenderer apis, there are many instructions for application to achieve better performance and lower power consumption: In music or audiobook background playback situation, you can have low power consumption by following this best practices document **Low-Power Rules in Music Playback Scenarios**. And for navigation situation, you can follow **Low-Power Rules in Navigation and Positioning Scenarios**. Application developer should also be careful when app goes to background, please check if your audio playback is still needed, see **Audio Resources** in best practices document. And avoiding to send silence audio data continuously to waste system resources, otherwise system will take control measures when this behavior is detected, see **Audio Playback** in best practices document. If you want to use AudioRenderer api to implement a music playback application, there are also many interactive scenes to consider, see **Developing an Audio Application** in best practices document. |
-| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createAudioRenderer-2) | Obtains an {@link AudioRenderer} instance. This method uses a promise to return the renderer instance. The AudioRenderer instance is used to play streaming audio data. When using AudioRenderer apis, there are many instructions for application to achieve better performance and lower power consumption: In music or audiobook background playback situation, you can have low power consumption by following this best practices document **Low-Power Rules in Music Playback Scenarios**. And for navigation situation, you can follow **Low-Power Rules in Navigation and Positioning Scenarios**. Application developer should also be careful when app goes to background, please check if your audio playback is still needed, see **Audio Resources** in best practices document. And avoiding to send silence audio data continuously to waste system resources, otherwise system will take control measures when this behavior is detected, see **Audio Playback** in best practices document. If you want to use AudioRenderer api to implement a music playback application, there are also many interactive scenes to consider, see **Developing an Audio Application** in best practices document. |
-| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createAudioRenderer-3) | Obtains an {@link AudioRenderer} instance. This method uses a promise to return the renderer instance. The AudioRenderer instance is used to play streaming audio data. When using AudioRenderer apis, there are many instructions for application to achieve better performance and lower power consumption: In music or audiobook background playback situation, you can have low power consumption by following this best practices document **Low-Power Rules in Music Playback Scenarios**. And for navigation situation, you can follow **Low-Power Rules in Navigation and Positioning Scenarios**. Application developer should also be careful when app goes to background, please check if your audio playback is still needed, see **Audio Resources** in best practices document. And avoiding to send silence audio data continuously to waste system resources, otherwise system will take control measures when this behavior is detected, see **Audio Playback** in best practices document. If you want to use AudioRenderer api to implement a music playback application, there are also many interactive scenes to consider, see **Developing an Audio Application** in best practices document. |
-| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createAudioRenderer-4) | Obtains an {@link AudioRenderer} instance. This method uses a promise to return the renderer instance. The AudioRenderer instance is used to play streaming audio data. When using AudioRenderer apis, there are many instructions for application to achieve better performance and lower power consumption: In music or audiobook background playback situation, you can have low power consumption by following this best practices document **Low-Power Rules in Music Playback Scenarios**. And for navigation situation, you can follow **Low-Power Rules in Navigation and Positioning Scenarios**. Application developer should also be careful when app goes to background, please check if your audio playback is still needed, see **Audio Resources** in best practices document. And avoiding to send silence audio data continuously to waste system resources, otherwise system will take control measures when this behavior is detected, see **Audio Playback** in best practices document. If you want to use AudioRenderer api to implement a music playback application, there are also many interactive scenes to consider, see **Developing an Audio Application** in best practices document. |
-| <!--DelRow-->[createGlobalAudioLoopback](arkts-audio-createglobalaudioloopback-f-sys.md#createGlobalAudioLoopback-1) | Creates a global audio loopback instance, which provides low-latency in-ear monitor function. Hardware audio loopback can only be created in supported platform, application can use {@link AudioStreamManager#isAudioLoopbackSupported} to check first. There should be only one main instance that own the global loopback in the system, the others are controllers. A controller can manage the global loopback by sending commands to the main instance, and listen status change from it. |
-| <!--DelRow-->[createMicInAudioCapturer](arkts-audio-createmicinaudiocapturer-f-sys.md#createMicInAudioCapturer-1) | Obtains a special {@link #AudioCapturer} instance. This method uses a promise to return the capturer instance. This capture can be used to record both Mic-In audio data and echo reference signal, for application to process algorithm. Mic-In audio data and echo reference signal will be put in one buffer or multiple buffers according to configuration set by application. Capturer is also not allowed to be created when application is in background. |
-| <!--DelRow-->[createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createTonePlayer-1) | Obtains a {@link TonePlayer} instance. This method uses an asynchronous callback to return the renderer instance. |
-| <!--DelRow-->[createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createTonePlayer-2) | Obtains a {@link TonePlayer} instance. This method uses an asynchronous callback to return the renderer instance. |
-| <!--DelRow-->[createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createTonePlayer-3) | Obtains a {@link TonePlayer} instance. This method uses a promise to return the renderer instance. |
-| <!--DelRow-->[createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createTonePlayer-4) | Obtains a {@link TonePlayer} instance. This method uses a promise to return the renderer instance. |
-| [getAudioManager](arkts-audio-getaudiomanager-f.md#getAudioManager-1) | Obtains an AudioManager instance. |
+| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1) | 获取音频采集器。使用callback异步回调。 |
+| [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-2) | 获取音频采集器。使用Promise异步回调。 |
+| [createAudioLoopback](arkts-audio-createaudioloopback-f.md#createaudioloopback-1) | 创建音频返听器。使用Promise异步回调。在使用createAudioLoopback接口之前，需先通过[isAudioLoopbackSupported](arkts-audio-audiostreammanager-i.md#isaudioloopbacksupported-1)查询系统返听能力。 |
+| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1) | 获取音频渲染器。使用callback异步回调。 |
+| [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-2) | 获取音频渲染器。使用Promise异步回调。 |
+| [getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1) | 获取音频管理器。 |
+
+<!--Del-->
+### 函数（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [createAsrProcessingController](arkts-audio-createasrprocessingcontroller-f-sys.md#createasrprocessingcontroller-1) | Create ASR processing controller on one audio capturer. |
+| [createGlobalAudioLoopback](arkts-audio-createglobalaudioloopback-f-sys.md#createglobalaudioloopback-1) | 创建全局音频环回实例，提供低时延入耳监听功能。硬件音频环回只能在支持的平台中创建，应用程序可以使用&gt; **说明**&gt; {@link AudioStreamManager#isAudioLoopbackSupported}先检查。&gt; 系统中应该只有一个拥有全局环回的主实例，其他&gt; 是控制器。控制器可以通过向主设备发送命令来管理全局环回。&gt; 实例，并从中监听状态变化。 |
+| [createMicInAudioCapturer](arkts-audio-createmicinaudiocapturer-f-sys.md#createmicinaudiocapturer-1) | 获取一个特殊的{@link #AudioCapturer}实例。该方法使用promise返回录音实例。此捕获可用于记录Mic-In音频数据和回声参考信号，以便应用处理算法。Mic-In音频数据和回声参考信号将根据应用程序设置的配置被放入一个或多个缓冲。当应用程序处于后台时，不允许创建录音实例。 |
+| [createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createtoneplayer-1) | Obtains a {@link TonePlayer} instance. This method uses an asynchronous callback to return the renderer instance. |
+| [createTonePlayer](arkts-audio-createtoneplayer-f-sys.md#createtoneplayer-2) | Obtains a {@link TonePlayer} instance. This method uses a promise to return the renderer instance. |
+<!--DelEnd-->
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[ActiveStreamVolumeInfo](arkts-audio-activestreamvolumeinfo-i-sys.md) | Volume information for active audio streams. |
-| <!--DelRow-->[AppIdInfo](arkts-audio-appidinfo-i-sys.md) | Describes app ID information. |
-| <!--DelRow-->[AsrProcessingController](arkts-audio-asrprocessingcontroller-i-sys.md) | ASR processing controller. |
-| [AudioCapturer](arkts-audio-audiocapturer-i.md) | This interface provides APIs for audio capture. Before calling any API in AudioCapturer, you must use [createAudioCapturer]{@link @ohos.multimedia.audio:audio.createAudioCapturer(options: AudioCapturerOptions, callback: AsyncCallback<AudioCapturer>)} to create an AudioCapturer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8. |
-| [AudioCapturerChangeInfo](arkts-audio-audiocapturerchangeinfo-i.md) | Describes the audio capturer change event. |
-| <!--DelRow-->[AudioCapturerFilter](arkts-audio-audiocapturerfilter-i-sys.md) | Describe audio capturer filter. |
-| [AudioCapturerInfo](arkts-audio-audiocapturerinfo-i.md) | Describes audio capturer information. |
-| <!--DelRow-->[AudioCapturerMicInConfig](arkts-audio-audiocapturermicinconfig-i-sys.md) | Describes audio capturer configuration that can capture microphone input (mic-in) audio data before any processing. |
-| <!--DelRow-->[AudioCapturerMicInData](arkts-audio-audiocapturermicindata-i-sys.md) | Describes audio capturer data that contains processed audio data and microphone input (mic-in) audio data before any processing. |
-| [AudioCapturerOptions](arkts-audio-audiocaptureroptions-i.md) | Describes audio capturer configurations. |
-| <!--DelRow-->[AudioCollaborativeManager](arkts-audio-audiocollaborativemanager-i-sys.md) | Implements audio collaborative management. |
-| [AudioDebuggingManager](arkts-audio-audiodebuggingmanager-i.md) | Provides audio debug management capabilities. |
-| [AudioDeviceDescriptor](arkts-audio-audiodevicedescriptor-i.md) | Describes an audio device. |
-| [AudioDeviceEnhanceManager](arkts-audio-audiodeviceenhancemanager-i.md) | Provides enhanced audio device management capabilities. |
-| [AudioDevicePair](arkts-audio-audiodevicepair-i.md) | Describes an audio device pair including both input and output devices. |
-| <!--DelRow-->[AudioEffectManager](arkts-audio-audioeffectmanager-i-sys.md) | Implements audio effect management. |
-| <!--DelRow-->[AudioEffectProperty](arkts-audio-audioeffectproperty-i-sys.md) | Describes an audio effect property. |
-| <!--DelRow-->[AudioHRTFAnonymousDescriptor](arkts-audio-audiohrtfanonymousdescriptor-i-sys.md) | Anonymous personalzied HRTF file descriptor for cross-process transfer. |
-| [AudioInterrupt](arkts-audio-audiointerrupt-i.md) | Describes input parameters of audio interruption events. |
-| [AudioLoopback](arkts-audio-audioloopback-i.md) | This interface provides APIs for audio monitoring. Before calling any API in AudioLoopback, you must use [audio.createAudioLoopback]{@link @ohos.multimedia.audio:audio.createAudioLoopback(mode: AudioLoopbackMode)} to create an AudioLoopback instance. When audio loopback is enabled, the system creates a low-latency renderer and capturer to implement low-latency in- ear monitoring. The audio captured is routed back to the renderer through an internal path. The renderer follows the audio focus strategy for [STREAM_USAGE_MUSIC]{@link @ohos.multimedia.audio:audio.StreamUsage}, whereas the capturer follows the strategy for [SOURCE_TYPE_MIC]{@link @ohos.multimedia.audio:audio.SourceType}. The system automatically chooses the input and output devices. If these devices do not support low latency, audio loopback does not work. If another audio stream takes over the audio focus or if the input or output device changes to the one that does not support low latency, the system disables audio loopback automatically. > **NOTE** > > - The initial APIs of this interface are supported since API version 20. |
-| [AudioManager](arkts-audio-audiomanager-i.md) | This interface implements audio volume and device management. Before calling any API in AudioManager, you must use [getAudioManager]{@link @ohos.multimedia.audio:audio.getAudioManager} to obtain an AudioManager instance. |
-| <!--DelRow-->[AudioPersonalizedSpatialEnabledChangeForAnyDevice](arkts-audio-audiopersonalizedspatialenabledchangeforanydevice-i-sys.md) | This interface is used to notify the listener of personalized spatialization enabled state change of any device. |
-| [AudioPlaybackCaptureConfig](arkts-audio-audioplaybackcaptureconfig-i.md) | Defines configuration for capturing played audio. |
-| [AudioRecordingManager](arkts-audio-audiorecordingmanager-i.md) | Provides recording strategy management, including collaborative recording and recording control capabilities. |
-| [AudioRenderer](arkts-audio-audiorenderer-i.md) | This interface provides APIs for audio rendering. Before calling any API in AudioRenderer, you must use [createAudioRenderer]{@link @ohos.multimedia.audio:audio.createAudioRenderer(options: AudioRendererOptions, callback: AsyncCallback<AudioRenderer>)} to create an AudioRenderer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8. |
-| [AudioRendererChangeInfo](arkts-audio-audiorendererchangeinfo-i.md) | Describes the audio renderer change event. |
-| <!--DelRow-->[AudioRendererFilter](arkts-audio-audiorendererfilter-i-sys.md) | Describes audio renderer filter. |
-| [AudioRendererInfo](arkts-audio-audiorendererinfo-i.md) | Describes audio renderer information. |
-| [AudioRendererOptions](arkts-audio-audiorendereroptions-i.md) | Describes audio renderer configurations. |
-| [AudioRoutingManager](arkts-audio-audioroutingmanager-i.md) | This interface implements audio routing management. Before calling any API in AudioRoutingManager, you must use [getRoutingManager]{@link @ohos.multimedia.audio:audio.AudioManager.getRoutingManager} to obtain an AudioRoutingManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9. |
-| [AudioSessionDeactivatedEvent](arkts-audio-audiosessiondeactivatedevent-i.md) | Describes the event indicating that an audio session is deactivated. |
-| [AudioSessionManager](arkts-audio-audiosessionmanager-i.md) | This interface implements audio session management. Before calling any API in AudioSessionManager, you must use [getSessionManager]{@link @ohos.multimedia.audio:audio.AudioManager.getSessionManager} to obtain an AudioSessionManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 12. |
-| [AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md) | Describes the event indicating that the audio session state changes. |
-| [AudioSessionStrategy](arkts-audio-audiosessionstrategy-i.md) | Describes an audio session strategy. |
-| <!--DelRow-->[AudioSpatialDeviceState](arkts-audio-audiospatialdevicestate-i-sys.md) | Describes spatial device state. |
-| <!--DelRow-->[AudioSpatialEnabledStateForDevice](arkts-audio-audiospatialenabledstatefordevice-i-sys.md) | This interface is used to notify the listener of any device Spatialization or Head Tracking enable or Adaptive Spatial Rendering state change. |
-| [AudioSpatializationManager](arkts-audio-audiospatializationmanager-i.md) | Implements audio spatialization management. |
-| [AudioStreamDeviceChangeInfo](arkts-audio-audiostreamdevicechangeinfo-i.md) | Describes the event received by the application when the audio stream device is changed. |
-| [AudioStreamInfo](arkts-audio-audiostreaminfo-i.md) | Describes audio stream information. |
-| [AudioStreamManager](arkts-audio-audiostreammanager-i.md) | This interface implements audio stream management. Before calling any API in AudioStreamManager, you must use [getStreamManager]{@link @ohos.multimedia.audio:audio.AudioManager.getStreamManager} to obtain an AudioStreamManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9. |
-| [AudioTimestampInfo](arkts-audio-audiotimestampinfo-i.md) | Describes the information about the audio stream timestamp and the current data frame position. |
-| [AudioVolumeGroupManager](arkts-audio-audiovolumegroupmanager-i.md) | This interface implements volume management for an audio group. Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupManager]{@link @ohos.multimedia.audio:audio.AudioVolumeManager.getVolumeGroupManager(groupId: int, callback: AsyncCallback<AudioVolumeGroupManager>)} to obtain an AudioVolumeGroupManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9. |
-| [AudioVolumeManager](arkts-audio-audiovolumemanager-i.md) | This interface implements audio volume management. Before calling any API in AudioVolumeManager, you must use [getVolumeManager]{@link @ohos.multimedia.audio:audio.AudioManager.getVolumeManager} to obtain an AudioVolumeManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9. |
-| [CaptureFilterOptions](arkts-audio-capturefilteroptions-i.md) | Defines the options for filtering the played audio streams to be recorded. |
-| [CurrentInputDeviceChangedEvent](arkts-audio-currentinputdevicechangedevent-i.md) | Describes the event indicating that the input device changes. |
-| [CurrentOutputDeviceChangedEvent](arkts-audio-currentoutputdevicechangedevent-i.md) | Describes the event indicating that the output device changes. |
-| [DeviceBlockStatusInfo](arkts-audio-deviceblockstatusinfo-i.md) | Describes the audio device blocked status and device information. |
-| [DeviceChangeAction](arkts-audio-devicechangeaction-i.md) | Describes the device connection status and device information. |
-| [InterruptAction](arkts-audio-interruptaction-i.md) | Describes the callback invoked for audio interruption or focus gain events.When the audio of an application is interrupted by another application, the callback is invoked to notify the former application. |
-| [InterruptEvent](arkts-audio-interruptevent-i.md) | Describes the interruption event received by the application when the audio is interrupted. |
-| <!--DelRow-->[InterruptResult](arkts-audio-interruptresult-i-sys.md) | Describes audio interrupt operation results. |
-| [MicStateChangeEvent](arkts-audio-micstatechangeevent-i.md) | Describes the event received by the application when the microphone mute status is changed. |
-| <!--DelRow-->[SoundCardInfo](arkts-audio-soundcardinfo-i-sys.md) | Describes sound card information. |
-| [StreamVolumeEvent](arkts-audio-streamvolumeevent-i.md) | Describes the event received by the application when the audio stream volume is changed. |
-| <!--DelRow-->[SystemRecordControllerChangeInfo](arkts-audio-systemrecordcontrollerchangeinfo-i-sys.md) | Defines the information carried when the system recording controller state changes. It includes the enable status, application UID and expected audio source type. |
-| [SystemRecordControllerConfig](arkts-audio-systemrecordcontrollerconfig-i.md) | Defines the configuration for the system recording controller panel. |
-| <!--DelRow-->[SystemVolumeFilter](arkts-audio-systemvolumefilter-i-sys.md) | Describes the system volume filter. |
-| <!--DelRow-->[TonePlayer](arkts-audio-toneplayer-i-sys.md) | Provides APIs for tone playing. |
-| [VolumeEvent](arkts-audio-volumeevent-i.md) | Describes the event received by the application when the volume is changed. |
-| <!--DelRow-->[VolumeGroupInfo](arkts-audio-volumegroupinfo-i-sys.md) | Describes an audio volume group. |
+| [AudioCapturer](arkts-audio-audiocapturer-i.md) | 提供音频采集的相关接口。在使用AudioCapturer的接口之前，需先通过[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)获取AudioCapturer实例。 |
+| [AudioCapturerChangeInfo](arkts-audio-audiocapturerchangeinfo-i.md) | 描述音频采集器更改信息。 |
+| [AudioCapturerInfo](arkts-audio-audiocapturerinfo-i.md) | 描述音频采集器信息。 |
+| [AudioCapturerOptions](arkts-audio-audiocaptureroptions-i.md) | 音频采集器选项信息。 |
+| [AudioDebuggingManager](arkts-audio-audiodebuggingmanager-i.md) | 实现音频调试功能。 |
+| [AudioDeviceDescriptor](arkts-audio-audiodevicedescriptor-i.md) | 描述音频设备。 |
+| [AudioDeviceEnhanceManager](arkts-audio-audiodeviceenhancemanager-i.md) | 提供增强的音频设备管理能力。 |
+| [AudioDevicePair](arkts-audio-audiodevicepair-i.md) | 描述返听使用的音频设备对，包含输入设备和输出设备。 |
+| [AudioInterrupt](arkts-audio-audiointerrupt-i.md) | 音频监听事件传入的参数。 |
+| [AudioLoopback](arkts-audio-audioloopback-i.md) | 提供音频返听的相关接口。在使用AudioLoopback的接口之前，需先通过[audio.createAudioLoopback](arkts-audio-createaudioloopback-f.md#createaudioloopback-1)获取AudioLoopback实例。当启用音频返听时，系统会创建低时延渲染器与低时延采集器，实现低时延耳返功能。采集的音频直接通过内部路由返回到渲染器。对于渲染器，其音频焦点策略与[STREAM_USAGE_MUSIC](arkts-audio-streamusage-e.md)相匹配。对于采集器，其音频焦点策略与[SOURCE_TYPE_MIC](arkts-audio-sourcetype-e.md)相匹配。输入\输出设备由系统自动选择。如果当前输入\输出不支持低时延，则音频返听无法启用。在运行过程中，如果音频焦点被另一个音频流抢占，输入\输出设备切换到不支持低时延的设备，系统会自动禁用音频返听。 |
+| [AudioManager](arkts-audio-audiomanager-i.md) | 音频音量和设备管理。在使用AudioManager的接口之前，需先通过[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1)获取AudioManager实例。 |
+| [AudioPlaybackCaptureConfig](arkts-audio-audioplaybackcaptureconfig-i.md) | 音频内录的配置信息。 |
+| [AudioRecordingManager](arkts-audio-audiorecordingmanager-i.md) | 提供录像策略管理，包括协同录音和录制控制能力。 |
+| [AudioRenderer](arkts-audio-audiorenderer-i.md) | 提供音频渲染的相关接口。在使用AudioRenderer的接口之前，需先通过[createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1)获取AudioRenderer实例。 |
+| [AudioRendererChangeInfo](arkts-audio-audiorendererchangeinfo-i.md) | 描述音频渲染器更改信息。 |
+| [AudioRendererInfo](arkts-audio-audiorendererinfo-i.md) | 音频渲染器信息。 |
+| [AudioRendererOptions](arkts-audio-audiorendereroptions-i.md) | 音频渲染器选项信息。 |
+| [AudioRoutingManager](arkts-audio-audioroutingmanager-i.md) | 音频路由管理。在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取AudioRoutingManager实例。 |
+| [AudioSessionDeactivatedEvent](arkts-audio-audiosessiondeactivatedevent-i.md) | 音频会话停用事件。 |
+| [AudioSessionManager](arkts-audio-audiosessionmanager-i.md) | 音频会话管理。在使用AudioSessionManager的接口之前，需先通过[getSessionManager](arkts-audio-audiomanager-i.md#getsessionmanager-1)获取AudioSessionManager实例。 |
+| [AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md) | 音频会话状态变更事件。 |
+| [AudioSessionStrategy](arkts-audio-audiosessionstrategy-i.md) | 音频会话策略。 |
+| [AudioSpatializationManager](arkts-audio-audiospatializationmanager-i.md) | 空间音频管理。在使用AudioSpatializationManager的接口之前，需先通过[getSpatializationManager](arkts-audio-audiomanager-i.md#getspatializationmanager-1)获取AudioSpatializationManager实例。 |
+| [AudioStreamDeviceChangeInfo](arkts-audio-audiostreamdevicechangeinfo-i.md) | 流设备变更时，应用接收到的事件。 |
+| [AudioStreamInfo](arkts-audio-audiostreaminfo-i.md) | 音频流信息。 |
+| [AudioStreamManager](arkts-audio-audiostreammanager-i.md) | 音频流管理。在使用AudioStreamManager的接口之前，需先通过[getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1)获取AudioStreamManager实例。 |
+| [AudioTimestampInfo](arkts-audio-audiotimestampinfo-i.md) | 音频流时间戳和当前数据帧位置信息。 |
+| [AudioVolumeGroupManager](arkts-audio-audiovolumegroupmanager-i.md) | 管理音频组音量。在使用AudioVolumeGroupManager的接口之前，需先通过[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)获取AudioVolumeGroupManager实例。 |
+| [AudioVolumeManager](arkts-audio-audiovolumemanager-i.md) | 音量管理。在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。 |
+| [CaptureFilterOptions](arkts-audio-capturefilteroptions-i.md) | 待录制的播放音频流的筛选信息。 |
+| [CurrentInputDeviceChangedEvent](arkts-audio-currentinputdevicechangedevent-i.md) | 应用接收到输入设备的变更事件。 |
+| [CurrentOutputDeviceChangedEvent](arkts-audio-currentoutputdevicechangedevent-i.md) | 应用接收到输出设备的变更事件。 |
+| [DeviceBlockStatusInfo](arkts-audio-deviceblockstatusinfo-i.md) | 描述音频设备被堵塞状态和设备信息。 |
+| [DeviceChangeAction](arkts-audio-devicechangeaction-i.md) | 描述设备连接状态变化和设备信息。 |
+| [InterruptAction](arkts-audio-interruptaction-i.md) | 音频打断/获取焦点事件的回调方法。 |
+| [InterruptEvent](arkts-audio-interruptevent-i.md) | 音频中断时，应用接收的中断事件。 |
+| [MicStateChangeEvent](arkts-audio-micstatechangeevent-i.md) | 麦克风状态变化时，应用接收到的事件。 |
+| [StreamVolumeEvent](arkts-audio-streamvolumeevent-i.md) | 音频流音量变化时，应用接收到的事件。 |
+| [VolumeEvent](arkts-audio-volumeevent-i.md) | 音量改变时，应用接收到的事件。 |
 
-### 类型
+<!--Del-->
+### 接口（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[ActiveStreamsVolumeInfoArray](arkts-audio-activestreamsvolumeinfoarray-t-sys.md) | ActiveStreamVolumeInfo array. |
-| [AudioCapturerChangeInfoArray](arkts-audio-audiocapturerchangeinfoarray-t.md) | Defines an AudioCapturerChangeInfo array, which is read-only. |
-| [AudioDeviceDescriptors](arkts-audio-audiodevicedescriptors-t.md) | Defines an [AudioDeviceDescriptor]{@link @ohos.multimedia.audio:audio.AudioDeviceDescriptor} array, which is read- only. |
-| [AudioEffectInfoArray](arkts-audio-audioeffectinfoarray-t.md) | Defines an array that contains the audio effect mode corresponding to a specific audio content type (specified by **ContentType**) and audio stream usage (specified by **StreamUsage**). The [AudioEffectMode]{@link @ohos.multimedia.audio:audio.AudioEffectMode} array is read-only. |
-| [AudioRendererChangeInfoArray](arkts-audio-audiorendererchangeinfoarray-t.md) | Defines an AudioRendererChangeInfo array, which is read-only. |
-| [AudioRendererWriteDataCallback](arkts-audio-audiorendererwritedatacallback-t.md) | Defines the callback function used to write data to the audio renderer. Once the callback function finishes its execution, the audio service queues the data pointed to by **data** for playback. Therefore, do not change the data outside the callback. It is crucial to fill **data** with the exact length of data designated for playback; otherwise, noises may occur during playback. |
-| [AudioRendererWriteDataCallback](arkts-audio-audiorendererwritedatacallback-t.md) | Type definition of callback function for audio renderer write data. |
-| [DeviceTypeArray](arkts-audio-devicetypearray-t.md) | Defines the device type array. |
-| <!--DelRow-->[StreamUsageArray](arkts-audio-streamusagearray-t-sys.md) | Array of StreamUsages. |
-| <!--DelRow-->[VolumeGroupInfos](arkts-audio-volumegroupinfos-t-sys.md) | Array of VolumeGroupInfos, which is read-only. |
+| [ActiveStreamVolumeInfo](arkts-audio-activestreamvolumeinfo-i-sys.md) | 用于激活音频流的音量信息。 |
+| [AppIdInfo](arkts-audio-appidinfo-i-sys.md) | 描述app id信息。 |
+| [AsrProcessingController](arkts-audio-asrprocessingcontroller-i-sys.md) |  |
+| [AudioCapturer](arkts-audio-audiocapturer-i-sys.md) | 提供音频采集的相关接口。在使用AudioCapturer的接口之前，需先通过[createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1)获取AudioCapturer实例。 |
+| [AudioCapturerChangeInfo](arkts-audio-audiocapturerchangeinfo-i-sys.md) | 描述音频采集器更改信息。 |
+| [AudioCapturerFilter](arkts-audio-audiocapturerfilter-i-sys.md) |  |
+| [AudioCapturerMicInConfig](arkts-audio-audiocapturermicinconfig-i-sys.md) | Describes audio capturer configuration options that can capturemicrophone input (mic-in) audio data before any processing. |
+| [AudioCapturerMicInData](arkts-audio-audiocapturermicindata-i-sys.md) | 描述音频录音数据，其中包含已处理的音频数据和进行音频处理前的纯净麦克风输入（mic-in）音频数据。 |
+| [AudioCapturerOptions](arkts-audio-audiocaptureroptions-i-sys.md) | 音频采集器选项信息。 |
+| [AudioCollaborativeManager](arkts-audio-audiocollaborativemanager-i-sys.md) | Implements audio collaborative management. |
+| [AudioDeviceDescriptor](arkts-audio-audiodevicedescriptor-i-sys.md) | 描述音频设备。 |
+| [AudioDeviceEnhanceManager](arkts-audio-audiodeviceenhancemanager-i-sys.md) | 提供增强的音频设备管理能力。 |
+| [AudioEffectManager](arkts-audio-audioeffectmanager-i-sys.md) | Implements audio effect management. |
+| [AudioEffectProperty](arkts-audio-audioeffectproperty-i-sys.md) |  |
+| [AudioHRTFAnonymousDescriptor](arkts-audio-audiohrtfanonymousdescriptor-i-sys.md) | 匿名的HRTF文件描述符，用于跨进程传输。 |
+| [AudioManager](arkts-audio-audiomanager-i-sys.md) | 音频音量和设备管理。在使用AudioManager的接口之前，需先通过[getAudioManager](arkts-audio-getaudiomanager-f.md#getaudiomanager-1)获取AudioManager实例。 |
+| [AudioPersonalizedSpatialEnabledChangeForAnyDevice](arkts-audio-audiopersonalizedspatialenabledchangeforanydevice-i-sys.md) | 通知监听器开启个性化空间任何设备的状态变化。 |
+| [AudioRecordingManager](arkts-audio-audiorecordingmanager-i-sys.md) | 提供录像策略管理，包括协同录音和录制控制能力。 |
+| [AudioRenderer](arkts-audio-audiorenderer-i-sys.md) | 提供音频渲染的相关接口。在使用AudioRenderer的接口之前，需先通过[createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1)获取AudioRenderer实例。 |
+| [AudioRendererChangeInfo](arkts-audio-audiorendererchangeinfo-i-sys.md) | 描述音频渲染器更改信息。 |
+| [AudioRendererFilter](arkts-audio-audiorendererfilter-i-sys.md) |  |
+| [AudioRendererOptions](arkts-audio-audiorendereroptions-i-sys.md) | 音频渲染器选项信息。 |
+| [AudioRoutingManager](arkts-audio-audioroutingmanager-i-sys.md) | 音频路由管理。在使用AudioRoutingManager的接口之前，需先通过[getRoutingManager](arkts-audio-audiomanager-i.md#getroutingmanager-1)获取AudioRoutingManager实例。 |
+| [AudioSpatialDeviceState](arkts-audio-audiospatialdevicestate-i-sys.md) |  |
+| [AudioSpatialEnabledStateForDevice](arkts-audio-audiospatialenabledstatefordevice-i-sys.md) | This interface is used to notify the listener of any device Spatialization or Head Tracking enableor Adaptive Spatial Rendering state change. |
+| [AudioSpatializationManager](arkts-audio-audiospatializationmanager-i-sys.md) | 空间音频管理。在使用AudioSpatializationManager的接口之前，需先通过[getSpatializationManager](arkts-audio-audiomanager-i.md#getspatializationmanager-1)获取AudioSpatializationManager实例。 |
+| [AudioVolumeGroupManager](arkts-audio-audiovolumegroupmanager-i-sys.md) | 管理音频组音量。在使用AudioVolumeGroupManager的接口之前，需先通过[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)获取AudioVolumeGroupManager实例。 |
+| [AudioVolumeManager](arkts-audio-audiovolumemanager-i-sys.md) | 音量管理。在使用AudioVolumeManager的接口之前，需先通过[getVolumeManager](arkts-audio-audiomanager-i.md#getvolumemanager-1)获取AudioVolumeManager实例。 |
+| [InterruptResult](arkts-audio-interruptresult-i-sys.md) |  |
+| [SoundCardInfo](arkts-audio-soundcardinfo-i-sys.md) | 描述声卡信息。 |
+| [SystemRecordControllerChangeInfo](arkts-audio-systemrecordcontrollerchangeinfo-i-sys.md) | 定义系统录像控制器状态改变时携带的信息。它包括启用状态、应用程序UID和预期的音频源类型。 |
+| [SystemRecordControllerConfig](arkts-audio-systemrecordcontrollerconfig-i.md) | 定义系统录像控制器面板配置。 |
+| [SystemVolumeFilter](arkts-audio-systemvolumefilter-i-sys.md) | 系统音量过滤器信息。 |
+| [TonePlayer](arkts-audio-toneplayer-i-sys.md) |  |
+| [VolumeEvent](arkts-audio-volumeevent-i-sys.md) | 音量改变时，应用接收到的事件。 |
+| [VolumeGroupInfo](arkts-audio-volumegroupinfo-i-sys.md) | Describes an audio volume group. |
+<!--DelEnd-->
 
 ### 枚举
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ActiveDeviceType](arkts-audio-activedevicetype-e.md) | Enumerates the active device types. |
-| <!--DelRow-->[AsrAecMode](arkts-audio-asraecmode-e-sys.md) | ASR AEC mode. |
-| <!--DelRow-->[AsrNoiseSuppressionMode](arkts-audio-asrnoisesuppressionmode-e-sys.md) | ASR noise suppression mode. |
-| <!--DelRow-->[AsrVoiceControlMode](arkts-audio-asrvoicecontrolmode-e-sys.md) | ASR voice control mode. |
-| <!--DelRow-->[AsrVoiceMuteMode](arkts-audio-asrvoicemutemode-e-sys.md) | ASR voice mute mode. |
-| <!--DelRow-->[AsrWhisperDetectionMode](arkts-audio-asrwhisperdetectionmode-e-sys.md) | ASR whisper detection mode. |
-| [AudioChannel](arkts-audio-audiochannel-e.md) | Enumerates the audio channels. |
-| [AudioChannelLayout](arkts-audio-audiochannellayout-e.md) | Audio AudioChannel Layout. A 64-bit integer indicates that the appearance and order of the speakers for recording or playback. |
-| [AudioConcurrencyMode](arkts-audio-audioconcurrencymode-e.md) | Enumerates the audio concurrency modes. |
-| [AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md) | Enumerates the audio data callback results. |
-| <!--DelRow-->[AudioDevcieSelectStrategy](arkts-audio-audiodevcieselectstrategy-e-sys.md) | Enumerates the device select strategy. |
-| [AudioEffectMode](arkts-audio-audioeffectmode-e.md) | Enumerates the audio effect modes. |
-| [AudioEncodingType](arkts-audio-audioencodingtype-e.md) | Enumerates the audio encoding types. |
-| [AudioErrors](arkts-audio-audioerrors-e.md) | Enumerates the error codes available for audio management. |
-| [AudioLatencyType](arkts-audio-audiolatencytype-e.md) | Enumerates the audio latency types. |
-| [AudioLoopbackEqualizerPreset](arkts-audio-audioloopbackequalizerpreset-e.md) | Enumerates the equalizer types of audio loopback. |
-| [AudioLoopbackMode](arkts-audio-audioloopbackmode-e.md) | Enumerates the audio loopback modes. |
-| [AudioLoopbackReverbPreset](arkts-audio-audioloopbackreverbpreset-e.md) | Enumerates the reverb modes of audio loopback. |
-| [AudioLoopbackStatus](arkts-audio-audioloopbackstatus-e.md) | Enumerates the audio loopback statuses. |
-| [AudioPlaybackCaptureMode](arkts-audio-audioplaybackcapturemode-e.md) | Defines mode for playback capture, each mode means different target streams to capture. |
-| [AudioPrivacyType](arkts-audio-audioprivacytype-e.md) | Enumerates whether an audio stream can be recorded by other applications. |
-| [AudioRendererRate](arkts-audio-audiorendererrate-e.md) | Enumerates the audio renderer rates. |
-| [AudioRingMode](arkts-audio-audioringmode-e.md) | Enumerates the audio ring modes. |
-| [AudioSampleFormat](arkts-audio-audiosampleformat-e.md) | Enumerates the audio sample formats. |
-| [AudioSamplingRate](arkts-audio-audiosamplingrate-e.md) | Enumerates the audio sampling rates. The sampling rates supported vary according to the device in use. |
-| [AudioScene](arkts-audio-audioscene-e.md) | Enumerates the audio scenes. |
-| <!--DelRow-->[AudioSeparationVolumeType](arkts-audio-audioseparationvolumetype-e-sys.md) | Volume type for audio separation effect. |
-| [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md) | Enumerates audio session behavior flags. |
-| [AudioSessionDeactivatedReason](arkts-audio-audiosessiondeactivatedreason-e.md) | Enumerates the reasons for deactivating an audio session. |
-| [AudioSessionScene](arkts-audio-audiosessionscene-e.md) | Enumerates the audio session scenes. |
-| [AudioSessionStateChangeHint](arkts-audio-audiosessionstatechangehint-e.md) | Enumerates the hints for audio session state changes. The hint is obtained when an [AudioSessionStateChangedEvent]{@link @ohos.multimedia.audio:audio.AudioSessionStateChangedEvent} is received. The hint specifies the action (such as audio pause or volume adjustment) to take on the audio session based on the focus strategy. For details, see [Audio Session Management](docroot://media/audio/audio-session-management.md). |
-| <!--DelRow-->[AudioSpatialDeviceType](arkts-audio-audiospatialdevicetype-e-sys.md) | Describes a spatial device type group. |
-| <!--DelRow-->[AudioSpatializationSceneType](arkts-audio-audiospatializationscenetype-e-sys.md) | Describes a spatialization scene type group. |
-| [AudioState](arkts-audio-audiostate-e.md) | Enumerates the audio states. |
-| [AudioStreamDeviceChangeReason](arkts-audio-audiostreamdevicechangereason-e.md) | Enumerates the reasons for audio stream device changes. |
-| [AudioVolumeMode](arkts-audio-audiovolumemode-e.md) | Enumerates the audio volume modes. |
-| [AudioVolumeType](arkts-audio-audiovolumetype-e.md) | Enumerates the audio volume types. |
-| [BluetoothAndNearlinkPreferredRecordCategory](arkts-audio-bluetoothandnearlinkpreferredrecordcategory-e.md) | Enumerates the preferred device categories available for recording with Bluetooth or NearLink. |
-| [ChannelBlendMode](arkts-audio-channelblendmode-e.md) | Enumerates the audio channel blending modes. |
-| [CommunicationDeviceType](arkts-audio-communicationdevicetype-e.md) | Enumerates the available device types for communication. |
-| <!--DelRow-->[ConnectType](arkts-audio-connecttype-e-sys.md) | Connect type for device. |
-| [ContentType](arkts-audio-contenttype-e.md) | Enumerates the audio content types. |
-| [DeviceBlockStatus](arkts-audio-deviceblockstatus-e.md) | Enumerates the blocked statuses of audio devices. |
-| [DeviceChangeType](arkts-audio-devicechangetype-e.md) | Enumerates the device connection statuses. |
-| [DeviceFlag](arkts-audio-deviceflag-e.md) | Enumerates the audio device flags. |
-| [DeviceRole](arkts-audio-devicerole-e.md) | Enumerates the device roles. |
-| [DeviceType](arkts-audio-devicetype-e.md) | Enumerates the device types. |
-| [DeviceUsage](arkts-audio-deviceusage-e.md) | Enumerates the audio device types by usage. |
-| <!--DelRow-->[EffectFlag](arkts-audio-effectflag-e-sys.md) | Enumerates audio effect flags. |
-| [InterruptActionType](arkts-audio-interruptactiontype-e.md) | Enumerates the returned event types for audio interruption events. |
-| [InterruptForceType](arkts-audio-interruptforcetype-e.md) | Enumerates the types of force that causes audio interruption. The force type is obtained when an [InterruptEvent]{@link @ohos.multimedia.audio:audio.InterruptEvent} is received. This type specifies whether audio interruption is forcibly performed by the system. The operation information (such as audio pause or stop) can be obtained through [InterruptHint]{@link audio.InterruptHint}. For details about the audio interruption policy, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md). |
-| [InterruptHint](arkts-audio-interrupthint-e.md) | Enumerates the hints provided along with audio interruption. The hint is obtained when an [InterruptEvent]{@link @ohos.multimedia.audio:audio.InterruptEvent} is received. The hint specifies the operation (such as audio pause or volume adjustment) to be performed on audio streams based on the focus strategy. You can determine whether the operation is forcibly performed by the system based on [InterruptForceType]{@link audio.InterruptForceType} in **InterruptEvent**. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md). |
-| [InterruptMode](arkts-audio-interruptmode-e.md) | Enumerates the audio interruption modes. |
-| <!--DelRow-->[InterruptRequestResultType](arkts-audio-interruptrequestresulttype-e-sys.md) | Enumerates audio interrupt request result type. |
-| <!--DelRow-->[InterruptRequestType](arkts-audio-interruptrequesttype-e-sys.md) | Enumerates the audio interrupt request type. |
-| [InterruptType](arkts-audio-interrupttype-e.md) | Enumerates the audio interruption types. |
-| [NoiseReductionMode](arkts-audio-noisereductionmode-e.md) | Enumerates the noise reduction modes. |
-| [OutputDeviceChangeRecommendedAction](arkts-audio-outputdevicechangerecommendedaction-e.md) | Enumerates the recommended actions to take after an output device changes. Common scenario example: switching between a headset and a loudspeaker device. Upon switching from the loudspeaker device to the headset upon wearing, the system suggests continuing playback and prompts that the application does not need to pause. Upon transitioning from the headset to the loudspeaker device upon removal, the system suggests suspending playback. |
-| [PlaybackCaptureStartState](arkts-audio-playbackcapturestartstate-e.md) | Defines the playback capture start state, which is returned asynchronously after calling {@link AudioCapturer.requestPlaybackCaptureStart} function. |
-| <!--DelRow-->[PolicyType](arkts-audio-policytype-e-sys.md) | Enumerates type. |
-| <!--DelRow-->[RenderTarget](arkts-audio-rendertarget-e-sys.md) | Audio render target. |
-| [SourceType](arkts-audio-sourcetype-e.md) | Enumerates the types of audio streams captured. |
-| <!--DelRow-->[SpatialAudioSourceType](arkts-audio-spatialaudiosourcetype-e-sys.md) | Enumerates the spatial audio source type. |
-| [StreamUsage](arkts-audio-streamusage-e.md) | Enumerates the types of audio streams played. |
-| <!--DelRow-->[ToneType](arkts-audio-tonetype-e-sys.md) | Enumerates tone types for player. |
-| <!--DelRow-->[VolumeAdjustType](arkts-audio-volumeadjusttype-e-sys.md) | Enumerates volume adjustment types. |
-| <!--DelRow-->[VolumeFlag](arkts-audio-volumeflag-e-sys.md) | Enumerates volume related operations. Flags should be powers of 2! |
+| [ActiveDeviceType](arkts-audio-activedevicetype-e.md) | 表示活跃设备类型的枚举。 |
+| [AudioChannel](arkts-audio-audiochannel-e.md) | 表示音频声道的枚举。 |
+| [AudioChannelLayout](arkts-audio-audiochannellayout-e.md) | 表示音频文件声道布局类型的枚举。 |
+| [AudioConcurrencyMode](arkts-audio-audioconcurrencymode-e.md) | 表示音频并发模式的枚举。 |
+| [AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md) | 表示音频数据回调结果的枚举。 |
+| [AudioEffectMode](arkts-audio-audioeffectmode-e.md) | 表示音效模式的枚举。 |
+| [AudioEncodingType](arkts-audio-audioencodingtype-e.md) | 表示音频编码类型的枚举。 |
+| [AudioErrors](arkts-audio-audioerrors-e.md) | 表示音频错误码的枚举。 |
+| [AudioLatencyType](arkts-audio-audiolatencytype-e.md) | 表示音频时延类型的枚举。\| 名称 \| 值 \| 说明 \|\| ---- \| -- \| ---- \|\| LATENCY_TYPE_ALL \| 0 \| 计算包含软件和硬件在内的整体音频处理链路时延。 \|\| LATENCY_TYPE_SOFTWARE \| 1 \| 计算软件侧时延，包含软件音效。 \|\| LATENCY_TYPE_HARDWARE \| 2 \| 计算硬件侧时延，包含HAL、驱动和硬件。 \| |
+| [AudioLoopbackEqualizerPreset](arkts-audio-audioloopbackequalizerpreset-e.md) | 表示返听均衡器类型的枚举。 |
+| [AudioLoopbackMode](arkts-audio-audioloopbackmode-e.md) | 表示返听模式的枚举。 |
+| [AudioLoopbackReverbPreset](arkts-audio-audioloopbackreverbpreset-e.md) | 表示返听混响模式的枚举。 |
+| [AudioLoopbackStatus](arkts-audio-audioloopbackstatus-e.md) | 表示返听状态的枚举。 |
+| [AudioPlaybackCaptureMode](arkts-audio-audioplaybackcapturemode-e.md) | 表示内录（录制设备内部应用的声音）模式的枚举。不同模式决定可录制的目标播放流类型。支持通过按位或组合枚举值，当前仅支持MODE_DEFAULT（0x0）、MODE_MEDIA（0x1）、MODE_EXCLUDING_SELF（0x8000），以及MODE_MEDIA和MODE_EXCLUDING_SELF的按位或组合（0x8001）。 |
+| [AudioPrivacyType](arkts-audio-audioprivacytype-e.md) | 表示对应播放音频流是否支持被其他应用录制的枚举。 |
+| [AudioRendererRate](arkts-audio-audiorendererrate-e.md) | 表示音频渲染速度的枚举。 |
+| [AudioRingMode](arkts-audio-audioringmode-e.md) | 表示铃声模式的枚举。 |
+| [AudioSampleFormat](arkts-audio-audiosampleformat-e.md) | 表示音频采样格式的枚举。 |
+| [AudioSamplingRate](arkts-audio-audiosamplingrate-e.md) | 表示音频采样率的枚举（具体设备支持的采样率规格会存在差异）。 |
+| [AudioScene](arkts-audio-audioscene-e.md) | 表示音频场景的枚举。 |
+| [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md) | 表示音频会话行为的枚举。 |
+| [AudioSessionDeactivatedReason](arkts-audio-audiosessiondeactivatedreason-e.md) | 表示音频会话停用原因的枚举。 |
+| [AudioSessionScene](arkts-audio-audiosessionscene-e.md) | 枚举音频会话场景。 |
+| [AudioSessionStateChangeHint](arkts-audio-audiosessionstatechangehint-e.md) | 枚举用于音频会话状态变更提示。当用户监听到音频会话状态变化事件（即收到[AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md)事件）时，获取相关信息。此类型表示根据焦点策略对音频会话执行的操作，包括暂停、调整音量等。详情请参阅文档[音频会话管理](../../../../media/audio/audio-session-management.md)。 |
+| [AudioState](arkts-audio-audiostate-e.md) | 表示音频状态的枚举。 |
+| [AudioStreamDeviceChangeReason](arkts-audio-audiostreamdevicechangereason-e.md) | 表示流设备变更原因的枚举。 |
+| [AudioVolumeMode](arkts-audio-audiovolumemode-e.md) | 表示音量模式的枚举。 |
+| [AudioVolumeType](arkts-audio-audiovolumetype-e.md) | 表示音频音量类型的枚举。 |
+| [BluetoothAndNearlinkPreferredRecordCategory](arkts-audio-bluetoothandnearlinkpreferredrecordcategory-e.md) | 表示在使用蓝牙或星闪进行录音时，应用程序的设备偏好分类枚举。 |
+| [ChannelBlendMode](arkts-audio-channelblendmode-e.md) | 表示声道混合模式类型的枚举。 |
+| [CommunicationDeviceType](arkts-audio-communicationdevicetype-e.md) | 表示用于通信的可用设备类型的枚举。 |
+| [ContentType](arkts-audio-contenttype-e.md) | 表示音频内容类型的枚举。 |
+| [DeviceBlockStatus](arkts-audio-deviceblockstatus-e.md) | 表示音频设备是否被堵塞的枚举。 |
+| [DeviceChangeType](arkts-audio-devicechangetype-e.md) | 表示设备连接状态变化的枚举。 |
+| [DeviceFlag](arkts-audio-deviceflag-e.md) | 表示音频设备类型的枚举。 |
+| [DeviceRole](arkts-audio-devicerole-e.md) | 表示设备角色的枚举。 |
+| [DeviceType](arkts-audio-devicetype-e.md) | 表示设备类型的枚举。 |
+| [DeviceUsage](arkts-audio-deviceusage-e.md) | 表示音频设备类型的枚举（根据用途分类）。 |
+| [InterruptActionType](arkts-audio-interruptactiontype-e.md) | 表示中断事件返回类型的枚举。 |
+| [InterruptForceType](arkts-audio-interruptforcetype-e.md) | 表示音频打断类型的枚举。当用户监听到音频中断（即收到[InterruptEvent](arkts-audio-interruptevent-i.md)事件）时，获取此信息。此类型表示音频打断是否已由系统强制执行，具体操作信息（如音频暂停、停止等）可通过[InterruptHint](arkts-audio-interrupthint-e.md)获取。关于音频打断策略的详细说明可参考文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。 |
+| [InterruptHint](arkts-audio-interrupthint-e.md) | 表示中断提示的枚举。当用户监听到音频中断事件（即收到[InterruptEvent](arkts-audio-interruptevent-i.md)事件）时，获取此信息。此类型表示根据焦点策略，对音频流执行的具体操作（如暂停、调整音量等）。可以结合InterruptEvent中的[InterruptForceType](arkts-audio-interruptforcetype-e.md)信息，判断该操作是否已由系统强制执行。详情请参阅文档[音频焦点介绍](../../../../media/audio/audio-playback-concurrency.md)。 |
+| [InterruptMode](arkts-audio-interruptmode-e.md) | 表示焦点模型的枚举。 |
+| [InterruptType](arkts-audio-interrupttype-e.md) | 表示中断类型的枚举。 |
+| [NoiseReductionMode](arkts-audio-noisereductionmode-e.md) | 降噪模式枚举。 |
+| [OutputDeviceChangeRecommendedAction](arkts-audio-outputdevicechangerecommendedaction-e.md) | 表示输出设备变更后推荐操作的枚举。常见场景示例：耳机设备和外放设备之间进行切换。当佩戴耳机时，从外放设备切换到耳机设备，系统会推荐继续播放，提示应用无需停止当前播放。当摘下耳机设备切换到外放设备时，系统会推荐停止播放。 |
+| [PlaybackCaptureStartState](arkts-audio-playbackcapturestartstate-e.md) | 表示调用[requestPlaybackCaptureStart](arkts-audio-audiocapturer-i.md#requestplaybackcapturestart-1)后异步返回的内录启动状态的枚举。 |
+| [SourceType](arkts-audio-sourcetype-e.md) | 表示录制音频流类型的枚举。 |
+| [StreamUsage](arkts-audio-streamusage-e.md) | 表示播放音频流类型的枚举。 |
+
+<!--Del-->
+### 枚举（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [AsrAecMode](arkts-audio-asraecmode-e-sys.md) | ASR AEC mode. |
+| [AsrNoiseSuppressionMode](arkts-audio-asrnoisesuppressionmode-e-sys.md) | ASR noise suppression mode. |
+| [AsrVoiceControlMode](arkts-audio-asrvoicecontrolmode-e-sys.md) | ASR voice control mode. |
+| [AsrVoiceMuteMode](arkts-audio-asrvoicemutemode-e-sys.md) | ASR voice mute mode. |
+| [AsrWhisperDetectionMode](arkts-audio-asrwhisperdetectionmode-e-sys.md) | ASR whisper detection mode. |
+| [AudioDevcieSelectStrategy](arkts-audio-audiodevcieselectstrategy-e-sys.md) | Enumerates the device select strategy. |
+| [AudioSeparationVolumeType](arkts-audio-audioseparationvolumetype-e-sys.md) | 音频分离效果的音量类型。 |
+| [AudioSpatialDeviceType](arkts-audio-audiospatialdevicetype-e-sys.md) | Describes a spatial device type group. |
+| [AudioSpatializationSceneType](arkts-audio-audiospatializationscenetype-e-sys.md) | Describes a spatialization scene type group. |
+| [AudioVolumeType](arkts-audio-audiovolumetype-e-sys.md) | 表示音频音量类型的枚举。 |
+| [ConnectType](arkts-audio-connecttype-e-sys.md) | Connect type for device. |
+| [DeviceFlag](arkts-audio-deviceflag-e-sys.md) | 表示音频设备类型的枚举。 |
+| [DeviceType](arkts-audio-devicetype-e-sys.md) | 表示设备类型的枚举。 |
+| [EffectFlag](arkts-audio-effectflag-e-sys.md) | Enumerates audio effect flags. |
+| [InterruptRequestResultType](arkts-audio-interruptrequestresulttype-e-sys.md) | Enumerates audio interrupt request result type. |
+| [InterruptRequestType](arkts-audio-interruptrequesttype-e-sys.md) | Enumerates the audio interrupt request type. |
+| [PolicyType](arkts-audio-policytype-e-sys.md) | Enumerates type. |
+| [RenderTarget](arkts-audio-rendertarget-e-sys.md) | Audio render target. |
+| [SourceType](arkts-audio-sourcetype-e-sys.md) | 表示录制音频流类型的枚举。 |
+| [SpatialAudioSourceType](arkts-audio-spatialaudiosourcetype-e-sys.md) | 枚举空间音频源类型。 |
+| [StreamUsage](arkts-audio-streamusage-e-sys.md) | 表示播放音频流类型的枚举。 |
+| [ToneType](arkts-audio-tonetype-e-sys.md) | Enumerates tone types for player. |
+| [VolumeAdjustType](arkts-audio-volumeadjusttype-e-sys.md) | Enumerates volume adjustment types. |
+| [VolumeFlag](arkts-audio-volumeflag-e-sys.md) | Enumerates volume related operations.Flags should be powers of 2! |
+<!--DelEnd-->
+
+### 类型
+
+| 名称 | 说明 |
+| --- | --- |
+| [AudioCapturerChangeInfoArray](arkts-audio-audiocapturerchangeinfoarray-t.md) | 数组类型，AudioCapturerChangeInfo数组，只读。 |
+| [AudioDeviceDescriptors](arkts-audio-audiodevicedescriptors-t.md) | 设备属性数组类型，为[AudioDeviceDescriptor](arkts-audio-audiodevicedescriptor-i.md)的数组，只读。 |
+| [AudioEffectInfoArray](arkts-audio-audioeffectinfoarray-t.md) | 待查询ContentType和StreamUsage组合场景下的音效模式数组类型，[AudioEffectMode](arkts-audio-audioeffectmode-e.md)数组，只读。 |
+| [AudioRendererChangeInfoArray](arkts-audio-audiorendererchangeinfoarray-t.md) | 数组类型，AudioRendererChangeInfo数组，只读。 |
+| [AudioRendererWriteDataCallback](arkts-audio-audiorendererwritedatacallback-t.md) | 回调函数类型，用于音频渲染器的数据写入，回调函数结束后，音频服务会把data指向的数据放入队列里等待播放，因此请勿在回调外再次更改data指向的数据, 且务必保证往data填满待播放数据, 否则会导致音频服务播放杂音。 |
+| [DeviceTypeArray](arkts-audio-devicetypearray-t.md) | 数组类型，[DeviceType](arkts-audio-devicetype-e.md)数组。 |
+
+<!--Del-->
+### 类型（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [ActiveStreamsVolumeInfoArray](arkts-audio-activestreamsvolumeinfoarray-t-sys.md) | ActiveStreamVolumeInfo数组。 |
+| [StreamUsageArray](arkts-audio-streamusagearray-t-sys.md) | Array of StreamUsages. |
+| [VolumeGroupInfos](arkts-audio-volumegroupinfos-t-sys.md) | Array of VolumeGroupInfos, which is read-only. |
+<!--DelEnd-->
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [DEFAULT_INTERRUPT_GROUP_ID](arkts-audio-con.md#DEFAULT_INTERRUPT_GROUP_ID) | Define default interrupt group id for audio. |
-| [DEFAULT_VOLUME_GROUP_ID](arkts-audio-con.md#DEFAULT_VOLUME_GROUP_ID) | Define default volume group id for audio. |
-| <!--DelRow-->[LOCAL_NETWORK_ID](arkts-audio-con-sys.md#LOCAL_NETWORK_ID) | Define local device network id for audio. |
+| [DEFAULT_INTERRUPT_GROUP_ID](arkts-audio-audio-con.md#default_interrupt_group_id) | Define default interrupt group id for audio |
+| [DEFAULT_VOLUME_GROUP_ID](arkts-audio-audio-con.md#default_volume_group_id) | Define default volume group id for audio |
+
+<!--Del-->
+### 常量（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [LOCAL_NETWORK_ID](arkts-audio-audio-con-sys.md#local_network_id) | Define local device network id for audio |
+<!--DelEnd-->
 

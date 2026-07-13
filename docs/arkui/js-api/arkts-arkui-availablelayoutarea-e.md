@@ -1,6 +1,7 @@
 # AvailableLayoutArea
 
-Enumerates the reference sizes of the available layout area when the preview image width and height are set to percentages.
+Enumerates the reference sizes of the available layout area when the preview image width and height are set to
+percentages.
 
 **Since:** 20
 

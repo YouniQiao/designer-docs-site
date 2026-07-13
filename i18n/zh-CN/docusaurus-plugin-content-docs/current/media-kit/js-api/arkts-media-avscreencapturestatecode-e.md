@@ -1,10 +1,6 @@
 # AVScreenCaptureStateCode
 
-```TypeScript
-enum AVScreenCaptureStateCode
-```
-
-Enumerates the screen capture states used in callbacks.
+屏幕录制的状态回调。
 
 **起始版本：** 12
 
@@ -16,7 +12,7 @@ Enumerates the screen capture states used in callbacks.
 SCREENCAPTURE_STATE_STARTED = 0
 ```
 
-Screen capture is started.
+录屏已开始。
 
 **起始版本：** 12
 
@@ -28,7 +24,7 @@ Screen capture is started.
 SCREENCAPTURE_STATE_CANCELED = 1
 ```
 
-Screen capture is canceled.
+录屏被取消。
 
 **起始版本：** 12
 
@@ -40,7 +36,7 @@ Screen capture is canceled.
 SCREENCAPTURE_STATE_STOPPED_BY_USER = 2
 ```
 
-Screen capture is manually stopped by the user.
+录屏被用户手动停止。
 
 **起始版本：** 12
 
@@ -52,7 +48,7 @@ Screen capture is manually stopped by the user.
 SCREENCAPTURE_STATE_INTERRUPTED_BY_OTHER = 3
 ```
 
-Screen capture is interrupted by another screen capture.
+录屏被其他录屏打断。
 
 **起始版本：** 12
 
@@ -64,7 +60,7 @@ Screen capture is interrupted by another screen capture.
 SCREENCAPTURE_STATE_STOPPED_BY_CALL = 4
 ```
 
-Screen capture is interrupted by an incoming call.
+录屏被来电打断。
 
 **起始版本：** 12
 
@@ -76,7 +72,7 @@ Screen capture is interrupted by an incoming call.
 SCREENCAPTURE_STATE_MIC_UNAVAILABLE = 5
 ```
 
-The microphone is unavailable during screen capture.
+录屏无法使用麦克风收音。
 
 **起始版本：** 12
 
@@ -88,7 +84,7 @@ The microphone is unavailable during screen capture.
 SCREENCAPTURE_STATE_MIC_MUTED_BY_USER = 6
 ```
 
-The microphone is muted by the user.
+麦克风被用户关闭。
 
 **起始版本：** 12
 
@@ -100,7 +96,7 @@ The microphone is muted by the user.
 SCREENCAPTURE_STATE_MIC_UNMUTED_BY_USER = 7
 ```
 
-The microphone is unmuted by the user.
+麦克风被用户打开。
 
 **起始版本：** 12
 
@@ -112,7 +108,7 @@ The microphone is unmuted by the user.
 SCREENCAPTURE_STATE_ENTER_PRIVATE_SCENE = 8
 ```
 
-The system enters a privacy page during screen capture.
+录屏进入隐私页面。
 
 **起始版本：** 12
 
@@ -124,7 +120,7 @@ The system enters a privacy page during screen capture.
 SCREENCAPTURE_STATE_EXIT_PRIVATE_SCENE = 9
 ```
 
-The system exits a privacy page during screen capture.
+录屏退出隐私页面。
 
 **起始版本：** 12
 
@@ -136,7 +132,7 @@ The system exits a privacy page during screen capture.
 SCREENCAPTURE_STATE_STOPPED_BY_USER_SWITCHES = 10
 ```
 
-Screen capture is interrupted by system user switchover.
+系统用户切换，录屏中断。
 
 **起始版本：** 12
 
@@ -148,7 +144,11 @@ Screen capture is interrupted by system user switchover.
 SCREENCAPTURE_STATE_PAUSED_BY_USER = 11
 ```
 
-Screen capture paused by user.
+录屏已被用户暂停。
+
+26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 26.0.0
 
@@ -162,7 +162,11 @@ Screen capture paused by user.
 SCREENCAPTURE_STATE_RESUMED_BY_USER = 12
 ```
 
-Screen capture resumed by user.
+录屏已被用户恢复。
+
+26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 26.0.0
 
@@ -176,7 +180,11 @@ Screen capture resumed by user.
 SCREENCAPTURE_STATE_PAUSED_BY_APP = 13
 ```
 
-Screen capture paused by app.
+录屏已被应用程序暂停。
+
+26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 26.0.0
 
@@ -190,7 +198,11 @@ Screen capture paused by app.
 SCREENCAPTURE_STATE_RESUMED_BY_APP = 14
 ```
 
-Screen capture resumed by app.
+录屏已被应用程序恢复。
+
+26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **起始版本：** 26.0.0
 

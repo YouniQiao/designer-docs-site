@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## getWindowsByCoordinate
@@ -13,7 +13,9 @@ function getWindowsByCoordinate(displayId: number, windowNumber?: number, x?: nu
       Promise<Array<Window>>
 ```
 
-Obtains visible windows at the specified coordinates within the current application, sorted by their current layer order. The window at the topmost layer corresponds to index 0 of the array. This API uses a promise to return the result.
+Obtains visible windows at the specified coordinates within the current application, sorted by their current layer
+order. The window at the topmost layer corresponds to index 0 of the array. This API uses a promise to return the
+result.
 
 **Since:** 14
 
@@ -25,7 +27,7 @@ Obtains visible windows at the specified coordinates within the current applicat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayId | number | Yes | ID of the display where the windows are located. The value must be an integer. If a non-integer is passed, the decimal part is ignored. The value can be obtained from[WindowProperties](arkts-arkui-windowproperties-i.md#windowproperties). |
+| displayId | number | Yes | ID of the display where the windows are located. The value must be an integer. If a non-integer is passed, the decimal part is ignored. The value can be obtained from[WindowProperties](arkts-arkui-windowproperties-i.md). |
 | windowNumber | number | No | Number of windows to obtain. The value must be an integer greater than 0. If a non-integer is passed, the decimal part is ignored. If this parameter is not set or is less than or equal to 0, allwindows that meet the conditions are returned. |
 | x | number | No | X coordinate, with the top-left corner of the screen used as the origin. The value must be anon-negative integer. If a non-integer is passed, the decimal part is ignored. If this parameter is not set oris less than 0, all visible windows are returned. |
 | y | number | No | Y coordinate, with the top-left corner of the screen used as the origin. The value must be anon-negative integer. If a non-integer is passed, the decimal part is ignored. If this parameter is not set oris less than 0, all visible windows are returned. |

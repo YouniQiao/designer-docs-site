@@ -6,7 +6,7 @@ Private album type
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AlbumSubtype](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumsubtype-e.md#albumsubtype)
+**Substitutes:** [AlbumSubtype](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumsubtype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

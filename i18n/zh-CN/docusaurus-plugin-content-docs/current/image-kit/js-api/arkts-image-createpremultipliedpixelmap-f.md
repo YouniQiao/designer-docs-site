@@ -18,16 +18,16 @@ Transforms pixelmap from unpremultiplied alpha format to premultiplied alpha for
 | --- | --- | --- | --- |
 | src | PixelMap | 是 | The source pixelmap. |
 | dst | PixelMap | 是 | The destination pixelmap. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the operation result.  If the operation fails, an error message is returned. |
+| callback | AsyncCallback&lt;void&gt; | 是 | Callback used to return the operation result. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980103 | The image data is not supported. |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980246 | Failed to read the pixelMap. |
-| 62980248 | Pixelmap not allow modify. |
+| [62980103](../errorcode-image.md#62980103-图片类型不支持) | The image data is not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980246](../errorcode-image.md#62980246-读取pixelmap失败) | Failed to read the pixelMap. |
+| [62980248](../errorcode-image.md#62980248-pixelmap不允许修改) | Pixelmap not allow modify. |
 
 **示例：**
 
@@ -58,6 +58,7 @@ function CreatePremultipliedPixelMap() {
 
 ```
 
+
 ## createPremultipliedPixelMap
 
 ```TypeScript
@@ -81,16 +82,16 @@ Transforms pixelmap from premultiplied alpha format to unpremultiplied alpha for
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | A Promise instance used to return the operation result.  If the operation fails, an error message is returned. |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 62980103 | The image data is not supported. |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
-| 62980246 | Failed to read the pixelMap. |
-| 62980248 | Pixelmap not allow modify. |
+| [62980103](../errorcode-image.md#62980103-图片类型不支持) | The image data is not supported. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980246](../errorcode-image.md#62980246-读取pixelmap失败) | Failed to read the pixelMap. |
+| [62980248](../errorcode-image.md#62980248-pixelmap不允许修改) | Pixelmap not allow modify. |
 
 **示例：**
 

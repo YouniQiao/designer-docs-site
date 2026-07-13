@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dataShare } from '@ohos.data.dataShare';
+import { dataShare } from '@kit.ArkData';
 ```
 
 ## createDataShareHelper
@@ -34,7 +34,7 @@ Creates a **DataShareHelper** instance. This API uses an asynchronous callback t
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameters types. |
 | [15700010](../errorcode-datashare.md#15700010-failed-to-create-a-datasharehelper) | The DataShareHelper fails to be initialized. |
 
@@ -80,7 +80,8 @@ function createDataShareHelper(
   ): void
 ```
 
-Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in proxy mode. This API uses an asynchronous callback to return the result.
+Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in
+proxy mode. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -103,7 +104,7 @@ Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whe
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameters types. |
 | [15700010](../errorcode-datashare.md#15700010-failed-to-create-a-datasharehelper) | The DataShareHelper fails to be initialized. |
 
@@ -148,7 +149,8 @@ function createDataShareHelper(
   ): Promise<DataShareHelper>
 ```
 
-Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in proxy mode. This API uses a promise to return the result.
+Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whether **DataShareHelper** is in
+proxy mode. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -164,7 +166,7 @@ Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whe
 | --- | --- | --- | --- |
 | context | Context | Yes | Context of the application. |
 | uri | string | Yes | URI of the server application to connect. |
-| options | DataShareHelperOptions | No | Optional configuration of the **DataShareHelper** instance. Itspecifies whether [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md#datasharehelperoptions) is in proxy mode and the waitingtime for starting the data provider process in non-silent access mode.If this parameter is not set,[DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md#datasharehelperoptions) is not in proxy mode and the waiting time forstarting the data provider process in non-silent access mode is 2 seconds.If the URI starts with**datashareproxy**, the **isProxy** parameter in **options** must be set. Otherwise, **DataShareHelper** willfail to be created and an error will be returned.<br>**Since:** 10 |
+| options | DataShareHelperOptions | No | Optional configuration of the **DataShareHelper** instance. Itspecifies whether [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) is in proxy mode and the waitingtime for starting the data provider process in non-silent access mode.If this parameter is not set,[DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md) is not in proxy mode and the waiting time forstarting the data provider process in non-silent access mode is 2 seconds.If the URI starts with**datashareproxy**, the **isProxy** parameter in **options** must be set. Otherwise, **DataShareHelper** willfail to be created and an error will be returned.<br>**Since:** 10 |
 
 **Return value:**
 
@@ -176,7 +178,7 @@ Creates a **DataShareHelper** instance. **DataShareHelperOptions** specifies whe
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 19 and later |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameters types. |
 | [15700010](../errorcode-datashare.md#15700010-failed-to-create-a-datasharehelper) | The DataShareHelper fails to be initialized. |
 

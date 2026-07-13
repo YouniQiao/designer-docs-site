@@ -12,7 +12,10 @@ Defines the format parameters of the video thumbnail to be obtained.
 autoFlip?: boolean
 ```
 
-Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizontal Flip). If the value is false, the returned thumbnail will not be flipped. **System API**: This is a system API.
+Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizontal Flip).
+If the value is false, the returned thumbnail will not be flipped.
+
+**System API**: This is a system API.
 
 **类型：** boolean
 
@@ -28,7 +31,9 @@ Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizo
 colorFormat?: PixelFormat
 ```
 
-Color format of the thumbnail. **System API**: This is a system API.
+Color format of the thumbnail.
+
+**System API**: This is a system API.
 
 **类型：** PixelFormat
 

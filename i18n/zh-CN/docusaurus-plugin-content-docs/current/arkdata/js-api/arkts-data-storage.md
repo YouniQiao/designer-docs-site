@@ -1,12 +1,18 @@
 # @ohos.data.storage
 
-Lightweight storage provides applications with data processing capability and allows applications to perform lightweight data storage and query. Data is stored in key-value (KV) pairs. Keys are of the string type, and values can be of the number, string, or Boolean type. > **NOTE** > - The APIs of this module are no longer maintained since API version 9. You are advised to use > [@ohos.data.preferences]{@link @ohos.data.preferences:preferences}.
+轻量级存储为应用提供key-value键值型的文件数据处理能力，支持应用对数据进行轻量级存储及查询。
+数据存储形式为键值对，键的类型为字符串型，值的存储数据类型包括数字型、字符串型、布尔型。
+
+> **说明**
+
+> - 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+> - 从API version 9开始，该接口不再维护，推荐使用新接口[@ohos.data.preferences](arkts-data-preferences.md).
 
 **起始版本：** 6
 
 **废弃版本：** 9
 
-**替代接口：** ohos.preferences.preferences
+**替代接口：** preferences
 
 **系统能力：** SystemCapability.DistributedDataManager.Preferences.Core
 
@@ -14,35 +20,35 @@ Lightweight storage provides applications with data processing capability and al
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [deleteStorage](arkts-storage-deletestorage-f.md#deleteStorage-1) | Deletes the singleton **Storage** instance of a file from the memory, and deletes the specified file, its backup file, and damaged files. After the specified files are deleted, the **Storage** instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses an asynchronous callback to return the result. |
-| [deleteStorage](arkts-storage-deletestorage-f.md#deleteStorage-2) | Deletes the singleton **Storage** instance of a file from the memory, and deletes the specified file, its backup file, and damaged files. After the specified files are deleted, the **Storage** instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses a promise to return the result. |
-| [deleteStorageSync](arkts-storage-deletestoragesync-f.md#deleteStorageSync-1) | Deletes the singleton **Storage** instance of a file from the memory, and deletes the specified file, its backup file, and damaged files. After the specified files are deleted, the **Storage** instance cannot be used for data operations. Otherwise, data inconsistency will occur. |
-| [getStorage](arkts-storage-getstorage-f.md#getStorage-1) | Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses an asynchronous callback to return the result. |
-| [getStorage](arkts-storage-getstorage-f.md#getStorage-2) | Reads the specified file and loads its data to the **Storage** instance for data operations. This API uses a promise to return the result. |
-| [getStorageSync](arkts-storage-getstoragesync-f.md#getStorageSync-1) | Reads the specified file and loads its data to the **Storage** instance for data operations. |
-| [removeStorageFromCache](arkts-storage-removestoragefromcache-f.md#removeStorageFromCache-1) | Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses an asynchronous callback to return the result. |
-| [removeStorageFromCache](arkts-storage-removestoragefromcache-f.md#removeStorageFromCache-2) | Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. This API uses a promise to return the result. |
-| [removeStorageFromCacheSync](arkts-storage-removestoragefromcachesync-f.md#removeStorageFromCacheSync-1) | Removes the singleton **Storage** instance of a file from the cache. The removed instance cannot be used for data operations. Otherwise, data inconsistency will occur. |
+| [deleteStorage](arkts-arkdata-deletestorage-f.md#deletestorage-1) | 从内存中移除指定文件对应的Storage单实例，并删除指定文件及其备份文件、损坏文件。删除指定文件时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题，使用callback方式返回结果，此方法为异步方法。 |
+| [deleteStorage](arkts-arkdata-deletestorage-f.md#deletestorage-2) | 从内存中移除指定文件对应的Storage单实例，并删除指定文件及其备份文件、损坏文件。删除指定文件时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题，使用Promise方式返回结果，此方法为异步方法。 |
+| [deleteStorageSync](arkts-arkdata-deletestoragesync-f.md#deletestoragesync-1) | 从内存中移除指定文件对应的Storage单实例，并删除指定文件及其备份文件、损坏文件。删除指定文件时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题。 |
+| [getStorage](arkts-arkdata-getstorage-f.md#getstorage-1) | 读取指定文件，将数据加载到Storage实例，用于数据操作，使用callback方式返回结果，此方法为异步方法。 |
+| [getStorage](arkts-arkdata-getstorage-f.md#getstorage-2) | 读取指定文件，将数据加载到Storage实例，用于数据操作，使用Promise方式返回结果，此方法为异步方法。 |
+| [getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) | 读取指定文件，将数据加载到Storage实例，用于数据操作。 |
+| [removeStorageFromCache](arkts-arkdata-removestoragefromcache-f.md#removestoragefromcache-1) | 从内存中移除指定文件对应的Storage单实例。移除Storage单实例时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题。使用callback方式返回结果，此方法为异步方法。 |
+| [removeStorageFromCache](arkts-arkdata-removestoragefromcache-f.md#removestoragefromcache-2) | 从内存中移除指定文件对应的Storage单实例。移除Storage单实例时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题。使用Promise方式返回结果，此方法为异步方法。 |
+| [removeStorageFromCacheSync](arkts-arkdata-removestoragefromcachesync-f.md#removestoragefromcachesync-1) | 从内存中移除指定文件对应的Storage单实例。移除Storage单实例时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题。 |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [Storage](arkts-storage-storage-i.md) | Provides APIs for obtaining and modifying storage data. Before calling the following APIs, use [data_storage.getStorage]{@link storage.getStorageSync} or [data_storage.getStorageSync]{@link storage.getStorageSync} to obtain the **Storage** instance. |
-| [StorageObserver](arkts-storage-storageobserver-i.md) | Define the change data information object. |
+| [Storage](arkts-arkdata-storage-i.md) | 提供获取和修改存储数据的接口。下列接口都需先使用[data_storage.getStorage](arkts-arkdata-getstorage-f.md#getstorage-1)或[data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1)获取到Storage实例，再通过此实例调用对应接口。 |
+| [StorageObserver](arkts-arkdata-storageobserver-i.md) |  |
 
 ### 类型
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [ValueType](arkts-storage-valuetype-t.md) | Enumerates the value types. |
+| [ValueType](arkts-arkdata-valuetype-t.md) | 用于表示允许的数据字段类型。 |
 
 ### 常量
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [MAX_KEY_LENGTH](arkts-storage-con.md#MAX_KEY_LENGTH) | Indicates the maximum length of a key (80 characters). |
-| [MAX_VALUE_LENGTH](arkts-storage-con.md#MAX_VALUE_LENGTH) | Indicates the maximum length of a string (8192 characters). |
+| [MAX_KEY_LENGTH](arkts-arkdata-storage-con.md#max_key_length) | key的最大长度限制为80字节。 |
+| [MAX_VALUE_LENGTH](arkts-arkdata-storage-con.md#max_value_length) | value的最大长度限制为16MB。 |
 

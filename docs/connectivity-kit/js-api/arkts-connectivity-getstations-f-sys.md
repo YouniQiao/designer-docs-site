@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## getStations
@@ -12,7 +12,8 @@ import { wifiManager } from '@ohos.wifiManager';
 function getStations(): Array<StationInfo>
 ```
 
-Obtain the list of stations that are connected to the Wi-Fi hotspot. This method can only be used on a device that serves as a Wi-Fi hotspot.
+Obtain the list of stations that are connected to the Wi-Fi hotspot.
+This method can only be used on a device that serves as a Wi-Fi hotspot.
 
 **Since:** 10
 

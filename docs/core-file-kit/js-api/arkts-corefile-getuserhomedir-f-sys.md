@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Environment } from '@ohos.file.environment';
+import { Environment } from '@kit.CoreFileKit';
 ```
 
 ## getUserHomeDir
@@ -12,7 +12,8 @@ import { Environment } from '@ohos.file.environment';
 function getUserHomeDir(): string
 ```
 
-Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
+Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the
+devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
 
 **Since:** 11
 

@@ -1,12 +1,13 @@
 # ResultSet
 
-A result set is a set of results returned after the relational database (RDB) query APIs are called. You can use the **resultset** APIs to obtain required data.
+A result set is a set of results returned after the relational database (RDB) query APIs are called. You can use the
+**resultset** APIs to obtain required data.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [relationalStore:relationalStore](arkts-data-relationalstore.md#relationalstore)
+**Substitutes:** [relationalStore:relationalStore](arkts-data-relationalstore.md)
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { systemManager } from '@ohos.enterprise.systemManager';
+import { systemManager } from '@kit.MDMKit';
 ```
 
 ## setInstallLocalEnterpriseAppEnabled
@@ -12,7 +12,9 @@ import { systemManager } from '@ohos.enterprise.systemManager';
 function setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void
 ```
 
-Sets whether local installation of enterprise applications is supported. When local installation is enabled, users can install enterprise applications (signing certificate distribution type: **enterprise_normal**) by double- tapping their installation packages on enterprise PCs/2-in-1 devices with the local installation capability.
+Sets whether local installation of enterprise applications is supported. When local installation is enabled, users
+can install enterprise applications (signing certificate distribution type: **enterprise_normal**) by double-
+tapping their installation packages on enterprise PCs/2-in-1 devices with the local installation capability.
 
 **Since:** 20
 

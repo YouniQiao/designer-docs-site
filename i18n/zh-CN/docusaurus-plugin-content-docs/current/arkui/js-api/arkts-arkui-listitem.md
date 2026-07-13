@@ -1,6 +1,15 @@
 # ListItem
 
-用来展示列表具体item，必须配合[List]{@link list}来使用。 > **说明：** > > * > > * 该组件的父组件只能是[List]{@link list}或者[ListItemGroup]{@link list_item_group}。 > > * 当ListItem配合LazyForEach使用时，ListItem子组件在ListItem创建时创建。配合if/else、ForEach使用时，或父组件为List/ListItemGroup时，ListItem子组件在ListItem布局时创建。
+用来展示列表具体item，必须配合[List]{@link list}来使用。
+
+> **说明：**
+>
+> *
+>
+> * 该组件的父组件只能是[List]{@link list}或者[ListItemGroup]{@link list_item_group}。
+>
+> * 当ListItem配合LazyForEach使用时，ListItem子组件在ListItem创建时创建。配合if/else、ForEach使用时，或父组件为List/ListItemGroup时，ListItem子组件在ListItem布局时创建。
+
 
 ## ListItem
 

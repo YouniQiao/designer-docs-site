@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## getNotificationSwitch
@@ -48,4 +48,20 @@ Obtains the status of the notification switch. Use Promise asynchronous callback
 | [1600003](../errorcode-notification.md#1600003-failed-to-connect-to-the-notification-service) | Failed to connect to the service. |
 | [1600008](../errorcode-notification.md#1600008-user-not-found) | The user does not exist. |
 | [1600012](../errorcode-notification.md#1600012-insufficient-memory-space) | No memory space. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let switchName: string = 'DEAL';
+let userId: number = 100;
+
+notificationManager.getNotificationSwitch(switchName, userId).then((data: notificationManager.SwitchState) => {
+    console.info(`getNotificationSwitch success, switchState: ${JSON.stringify(data)}`);
+}).catch((err: BusinessError) => {
+    console.error(`getNotificationSwitch failed, code is ${err.code}, message is ${err.message}`);
+});
+
+```
 

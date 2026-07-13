@@ -11,7 +11,7 @@ Defines the efficiency resource information.
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## cpuLevel
@@ -20,7 +20,9 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 cpuLevel?: EfficiencyResourcesCpuLevel
 ```
 
-CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the CPU resource size. The system allocates the specified CPU resources to the application during the idle time of load (for example, when the screen is off).
+CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the CPU resource size. The system
+allocates the specified CPU resources to the application during the idle time of load (for example, when the
+screen is off).
 
 **Type:** EfficiencyResourcesCpuLevel
 
@@ -38,7 +40,8 @@ CPU level. If **resourceTypes** is set to **CPU**, this parameter specifies the 
 isForProcess: boolean
 ```
 
-Whether the resource is requested by a process or an application. The value **true** indicates that the resource is requested by a process. The value **false** indicates that the resource is requested by an application.
+Whether the resource is requested by a process or an application. The value **true** indicates that the resource
+is requested by a process. The value **false** indicates that the resource is requested by an application.
 
 **Type:** boolean
 
@@ -54,7 +57,8 @@ Whether the resource is requested by a process or an application. The value **tr
 isPersistent: boolean
 ```
 
-Whether the resource is permanently held. The default value is **false**. The value **true** indicates the resource is permanently held. The value **false** indicates that the resource is held within a limited time.
+Whether the resource is permanently held. The default value is **false**. The value **true** indicates the
+resource is permanently held. The value **false** indicates that the resource is held within a limited time.
 
 **Type:** boolean
 

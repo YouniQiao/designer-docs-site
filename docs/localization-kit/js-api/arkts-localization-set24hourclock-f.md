@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## set24HourClock
@@ -18,7 +18,7 @@ Sets the 24-hour clock.
 
 **Deprecated since:** 9
 
-**Substitutes:** set24HourClock
+**Substitutes:** [set24HourClock](arkts-localization-system-c-sys.md#set24hourclock-1)
 
 **Required permissions:** ohos.permission.UPDATE_CONFIGURATION
 

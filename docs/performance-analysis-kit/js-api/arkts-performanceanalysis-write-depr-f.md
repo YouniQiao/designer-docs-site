@@ -57,7 +57,8 @@ hiAppEvent.write("test_event", hiAppEvent.EventType.FAULT, eventParams).then(() 
 function write(eventName: string, eventType: EventType, keyValues: object, callback: AsyncCallback<void>): void
 ```
 
-Writes event information to the event file of the current day. This API uses an asynchronous callback to return the result.
+Writes event information to the event file of the current day. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 

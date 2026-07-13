@@ -12,7 +12,10 @@ Enumerates the types for expanding layout safe areas.
 SYSTEM = 0
 ```
 
-Default non-safe area of the system, including the status bar and navigation bar. The component's layout range can be expanded to include both component-level safe areas ([safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding-1)) and page-level safe areas (status bar, navigation bar, and cutout area).
+Default non-safe area of the system, including the status bar and navigation bar.
+The component's layout range can be expanded to include both component-level safe areas
+([safeAreaPadding](arkts-arkui-commonmethod-c.md#safeareapadding-1)) and page-level safe areas (status
+bar, navigation bar, and cutout area).
 
 **Since:** 12
 

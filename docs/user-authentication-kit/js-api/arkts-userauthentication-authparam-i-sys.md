@@ -1,6 +1,9 @@
 # AuthParam
 
-Represents the user authentication parameters.
+Defines the user authentication parameters. This API is used to configure user authentication parameters, including
+the challenge value, authentication type list, authentication trust level, and authentication result reuse
+configuration. By properly configuring these parameters, you can meet authentication requirements in different
+service scenarios.
 
 **Since:** 10
 
@@ -9,7 +12,7 @@ Represents the user authentication parameters.
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## credentialIdList
@@ -18,7 +21,9 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 credentialIdList?: Uint8Array[]
 ```
 
-List of credential IDs. If the credential ID list is not empty, the specified credential ID is authenticated. This is a system API. This API can be used only in the stage model.
+List of credential IDs. If the credential ID list is not empty, the specified credential IDs are authenticated,
+instead of all credentials of the user. This is applicable to scenarios where precise control over authentication
+credentials is required.
 
 **Type:** Uint8Array[]
 
@@ -36,7 +41,8 @@ List of credential IDs. If the credential ID list is not empty, the specified cr
 userId?: number
 ```
 
-ID of the user to be authenticated. The value is a positive integer greater than or equal to 0. The default value is the ID of the current user. This is a system API.
+Target user ID to be authenticated. The value is a non-negative integer, which specifies the user to be
+authenticated. The default value is the ID of the current user.
 
 **Type:** number
 

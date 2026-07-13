@@ -9,7 +9,7 @@ CompletedResult
 ## Modules to Import
 
 ```TypeScript
-import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@ohos.file.PhotoPickerComponent';
+import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
 ## contextRecoveryInfo
@@ -36,7 +36,9 @@ Contextual information about the PhotoPicker's exit state.
 movingPhotoBadgeStates: Array<photoAccessHelper.MovingPhotoBadgeStateType>
 ```
 
-M​oving photo badge states for the selected media files in the gallery. When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states; otherwise, it is empty.
+M​oving photo badge states for the selected media files in the gallery.
+When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states;
+otherwise, it is empty.
 
 **Type:** Array<photoAccessHelper.MovingPhotoBadgeStateType>
 
@@ -54,7 +56,8 @@ M​oving photo badge states for the selected media files in the gallery. When i
 photoUris: Array<string>
 ```
 
-URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets with temporary authorization. For details about how to use the media file URI, see Using a Media File URI.
+URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets
+with temporary authorization. For details about how to use the media file URI, see Using a Media File URI.
 
 **Type:** Array<string>
 

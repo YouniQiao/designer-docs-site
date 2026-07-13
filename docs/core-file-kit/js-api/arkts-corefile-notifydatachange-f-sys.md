@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
 ## notifyDataChange
@@ -12,7 +12,8 @@ import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
 function notifyDataChange(accountId: string, bundleName: string): Promise<void>
 ```
 
-Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses a promise to return the result.
+Notifies the device-cloud service that the cloud data of a specific application under a specified account has been
+changed. This API uses a promise to return the result.
 
 **Since:** 10
 
@@ -63,7 +64,8 @@ cloudSyncManager.notifyDataChange(accountId, bundleName).then(() => {
 function notifyDataChange(accountId: string, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses an asynchronous callback to return the result.
+Notifies the device-cloud service that the cloud data of a specific application under a specified account has been
+changed. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -111,7 +113,8 @@ cloudSyncManager.notifyDataChange(accountId, bundleName, (err: BusinessError) =>
 function notifyDataChange(userId: number, extraData: ExtraData): Promise<void>
 ```
 
-Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promise to return the result.
+Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promise
+to return the result.
 
 **Since:** 11
 
@@ -165,7 +168,8 @@ cloudSyncManager.notifyDataChange(userId, extraData).then(() => {
 function notifyDataChange(userId: number, extraData: ExtraData, callback: AsyncCallback<void>): void
 ```
 
-Notifies the device-cloud service of the cloud data change information of a specified user. This API uses an asynchronous callback to return the result.
+Notifies the device-cloud service of the cloud data change information of a specified user. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 

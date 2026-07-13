@@ -1,6 +1,10 @@
 # EnrolledState
 
-Represents the state of a credential enrolled.
+Represents the state of a credential enrolled. This API is used to describe the current state of enrolled
+authentication credentials (such as face, fingerprint, and companion device), including the credential digest and
+quantity. The application can call the [getEnrolledState](arkts-userauthentication-getenrolledstate-f.md#getenrolledstate-1) API to query the
+credential status, and check whether the user's credentials have changed (for example, whether a fingerprint, face,
+or companion device is added or deleted) to perform corresponding service processing.
 
 **Since:** 12
 
@@ -9,7 +13,7 @@ Represents the state of a credential enrolled.
 ## Modules to Import
 
 ```TypeScript
-import { userAuth } from '@ohos.userIAM.userAuth';
+import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## credentialCount
@@ -18,7 +22,11 @@ import { userAuth } from '@ohos.userIAM.userAuth';
 credentialCount: number
 ```
 
-Number of enrolled credentials.
+Number of enrolled credentials. This parameter indicates the number of credentials of a specified type enrolled
+by the current user, for example, the number of fingerprints or faces.
+
+**Note**: When an authentication result is reused, if the credential used for the previous authentication has
+been deleted, the returned value of **credentialCount** may be **0**.
 
 **Type:** number
 
@@ -34,7 +42,13 @@ Number of enrolled credentials.
 credentialDigest: number
 ```
 
-Credential digest, which is randomly generated when a credential is added.
+Credential digest, which is randomly generated when a credential is added. This value is used to identify the
+version of the currently registered credential. It changes when a credential is added or deleted. The application
+can save this value and compare it with the value obtained in subsequent queries to determine whether the
+credential has changed.
+
+**Note**: When the authentication result is reused, if the credential used for the previous authentication has
+been deleted, the return value of **credentialDigest** may be **0**.
 
 **Type:** number
 

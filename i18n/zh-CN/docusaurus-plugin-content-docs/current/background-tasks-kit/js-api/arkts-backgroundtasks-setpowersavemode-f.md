@@ -6,7 +6,13 @@
 function setPowerSaveMode(pid: number, powerSaveMode: PowerSaveMode): Promise<void>
 ```
 
-设置进程的能效模式，使用Promise异步回调。 当应用满足以下条件时，可以设置自身是否进入能效模式： - 应用未获取系统焦点，未执行音频或界面刷新操作。 - 无法通过框架层获取电源锁。 - 应用需要执行压缩、解压缩、编译等耗时较长的计算任务，不希望这些任务受到显著的CPU资源限制（即被迫进入能效模式）。
+设置进程的能效模式，使用Promise异步回调。
+
+当应用满足以下条件时，可以设置自身是否进入能效模式：
+
+- 应用未获取系统焦点，未执行音频或界面刷新操作。
+- 无法通过框架层获取电源锁。
+- 应用需要执行压缩、解压缩、编译等耗时较长的计算任务，不希望这些任务受到显著的CPU资源限制（即被迫进入能效模式）。
 
 **起始版本：** 20
 
@@ -35,7 +41,7 @@ function setPowerSaveMode(pid: number, powerSaveMode: PowerSaveMode): Promise<vo
 | [31800002](../../apis-backgroundtasks-kit/errorcode-backgroundProcessManager.md#31800002-参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified;<br> 2. Incorrect parameter types; 3. PowerSaveMode status is out of range. |
 | [31800003](../../apis-backgroundtasks-kit/errorcode-backgroundProcessManager.md#31800003-已经被任务管理器设置) | Setup error, This setting is overridden by settings in Task Manager |
 | [31800004](../../apis-backgroundtasks-kit/errorcode-backgroundProcessManager.md#31800004-系统调度原因导致设置失败) | The setting failed due to system scheduling reasons. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 
 **示例：**
 

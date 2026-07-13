@@ -11,7 +11,7 @@ Represents the word selection panel.
 ## Modules to Import
 
 ```TypeScript
-import { selectionManager } from '@ohos.selectionInput.selectionManager';
+import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
 ## moveToGlobalDisplay
@@ -20,7 +20,8 @@ import { selectionManager } from '@ohos.selectionInput.selectionManager';
 moveToGlobalDisplay(x: number, y: number): Promise<void>
 ```
 
-Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the result.
+Moves the word selection panel to the specified coordinates on the screen. This API uses a promise to return the
+result.
 
 **Since:** 24
 

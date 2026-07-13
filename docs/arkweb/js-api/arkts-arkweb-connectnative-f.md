@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { webNativeMessagingExtensionManager } from '@ohos.web.webNativeMessagingExtensionManager';
+import { webNativeMessagingExtensionManager } from '@kit.ArkWeb';
 ```
 
 ## connectNative

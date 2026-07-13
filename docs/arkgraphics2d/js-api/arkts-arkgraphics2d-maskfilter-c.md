@@ -1,6 +1,15 @@
 # MaskFilter
 
-Implements a mask filter. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
+Implements a mask filter.
+
+> **NOTE**
+>
+> - The initial APIs of this class are supported since API version 12.
+>
+> - This module uses the physical pixel unit, px.
+>
+> - This module operates under a single-threaded model. The caller needs to manage thread safety and context state
+> transitions.
 
 **Since:** 12
 
@@ -9,7 +18,7 @@ Implements a mask filter. > **NOTE** > > - The initial APIs of this class are su
 ## Modules to Import
 
 ```TypeScript
-import { drawing } from '@ohos.graphics.drawing';
+import { drawing } from '@kit.ArkGraphics2D';
 ```
 
 ## createBlurMaskFilter

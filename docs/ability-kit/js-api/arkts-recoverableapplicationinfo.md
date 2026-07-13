@@ -2,9 +2,11 @@
 
 ## Summary
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[RecoverableApplicationInfo](arkts-recoverableapplicationinfo-i.md) | 预置应用被卸载后可以恢复的预置应用信息，通过接口 [bundleManager.getRecoverableApplicationInfo]{@link ./../@ohos.bundle.bundleManager:bundleManager.getRecoverableApplicationInfo(callback: AsyncCallback<Array<RecoverableApplicationInfo>>)} 获取。 > **说明：** > > 本模块为系统接口。 |
+| [RecoverableApplicationInfo](arkts-ability-recoverableapplicationinfo-i-sys.md) | The module defines the information about a preinstalled application that can be restored after being uninstalled. Theinformation can be obtained through[bundleManager.getRecoverableApplicationInfo](arkts-ability-getrecoverableapplicationinfo-f-sys.md#getrecoverableapplicationinfo-1).&gt; **NOTE**&gt;&gt; The APIs provided by this module are system APIs. |
+<!--DelEnd-->
 

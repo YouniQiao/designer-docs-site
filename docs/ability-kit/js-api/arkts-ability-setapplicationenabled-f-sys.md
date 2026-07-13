@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## setApplicationEnabled
@@ -75,7 +75,8 @@ try {
 function setApplicationEnabled(bundleName: string, appIndex: number, isEnabled: boolean, killProcess: boolean): Promise<void>
 ```
 
-Set whether an application is enabled or disabled, with control over whether the process is killed when disabled.
+Sets the enabled or disabled state of a specified application or application clone, and controls whether
+to exit the application process when the application is disabled. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -91,10 +92,10 @@ Set whether an application is enabled or disabled, with control over whether the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleName | string | Yes | Indicates the bundle name. |
-| appIndex | number | Yes | Indicates the index of clone app. |
-| isEnabled | boolean | Yes | The value true means to enable the application, and the value false means todisable the application. |
-| killProcess | boolean | Yes | The value true indicates that the application process will be killed whendisabled, while the value false indicates that the application process will not be killed when disabled. |
+| bundleName | string | Yes | Bundle name of the application. |
+| appIndex | number | Yes | Application index. The value is an integer ranging from 0 to 5. The value 0 indicatesthe main application, and the values 1 to 5 indicate the application clone indexes. |
+| isEnabled | boolean | Yes | Whether to enable the application. The value true indicates that the applicationis enabled, and false indicates that the application is disabled. |
+| killProcess | boolean | Yes | Whether to exit the application process when the application is disabled. Thevalue true indicates that the application process exits when the application is disabled, and falseindicates that the application process does not exit when the application is disabled. |
 
 **Return value:**
 
@@ -162,7 +163,7 @@ Enables or disables an application. This API uses an asynchronous callback to re
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name. |
 | isEnabled | boolean | Yes | Whether to enable the application. **true** to enable, **false** otherwise. |
-| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return the result. Ifthe operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return the result. Ifthe operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

@@ -262,7 +262,8 @@ Loads the given URL.
 onActive(): void
 ```
 
-Let the Web active. It is no longer maintained since API version 9, and it is recommended to use {@link onActive} instead.
+Let the Web active.
+It is no longer maintained since API version 9, and it is recommended to use {@link onActive} instead.
 
 **起始版本：** 8
 
@@ -278,7 +279,8 @@ Let the Web active. It is no longer maintained since API version 9, and it is re
 onInactive(): void
 ```
 
-Let the Web inactive. It is no longer maintained since API version 9, and it is recommended to use {@link onInactive} instead.
+Let the Web inactive.
+It is no longer maintained since API version 9, and it is recommended to use {@link onInactive} instead.
 
 **起始版本：** 8
 
@@ -348,7 +350,14 @@ Gets the request focus.
 runJavaScript(options: { script: string, callback?: (result: string) => void })
 ```
 
-Asynchronously execute JavaScript in the context of the currently displayed page. The result of the script execution will be returned through an asynchronous callback. This method must be used on the UI thread, and the callback will also be invoked on the UI thread. <p><strong>API Note</strong>:<br> The state of JavaScript is no longer persisted across navigations like loadUrl. For example, global variables and functions defined before calling loadUrl will not exist in the loaded page. It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations. <p>
+Asynchronously execute JavaScript in the context of the currently displayed page.
+The result of the script execution will be returned through an asynchronous callback.
+This method must be used on the UI thread, and the callback will also be invoked on the UI thread.
+<p><strong>API Note</strong>:<br>
+The state of JavaScript is no longer persisted across navigations like loadUrl.
+For example, global variables and functions defined before calling loadUrl will not exist in the loaded page.
+It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations.
+<p>
 
 **起始版本：** 8
 

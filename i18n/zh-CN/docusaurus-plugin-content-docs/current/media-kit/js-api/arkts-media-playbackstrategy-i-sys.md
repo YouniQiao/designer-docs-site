@@ -12,7 +12,8 @@ Provides preferred playback settings for player.
 enableCameraPostprocessing?: boolean
 ```
 
-Indicates whether to enable camera post-processing during video playback, which is used to apply image enhancements when playing back video content.
+Indicates whether to enable camera post-processing during video playback,
+which is used to apply image enhancements when playing back video content.
 
 **类型：** boolean
 

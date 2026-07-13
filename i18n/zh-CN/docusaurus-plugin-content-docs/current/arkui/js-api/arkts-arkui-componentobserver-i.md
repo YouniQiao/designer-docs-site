@@ -12,7 +12,8 @@ The ComponentObserver is used to listen for layout and draw events.
 off(type: 'layout', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the component layout complete.
+Deregisters a callback with the corresponding query condition by using the handle.
+This callback is not triggered when the component layout complete.
 
 **起始版本：** 10
 
@@ -35,7 +36,8 @@ Deregisters a callback with the corresponding query condition by using the handl
 off(type: 'draw', callback?: () => void): void
 ```
 
-Deregisters a callback with the corresponding query condition by using the handle. This callback is not triggered when the component draw complete.
+Deregisters a callback with the corresponding query condition by using the handle.
+This callback is not triggered when the component draw complete.
 
 **起始版本：** 10
 
@@ -58,7 +60,8 @@ Deregisters a callback with the corresponding query condition by using the handl
 off(type: 'drawChildren', callback?: Callback<void>): void
 ```
 
-使用句柄注销具有相应查询条件的回调。 当组件的子级绘制完成时，不会触发此回调。
+使用句柄注销具有相应查询条件的回调。
+当组件的子级绘制完成时，不会触发此回调。
 
 **起始版本：** 20
 
@@ -234,7 +237,8 @@ struct ImageExample {
 on(type: 'layout', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the component layout complete.
+Registers a callback with the corresponding query condition by using the handle.
+This callback is triggered when the component layout complete.
 
 **起始版本：** 10
 
@@ -257,7 +261,8 @@ Registers a callback with the corresponding query condition by using the handle.
 on(type: 'draw', callback: () => void): void
 ```
 
-Registers a callback with the corresponding query condition by using the handle. This callback is triggered when the component draw complete.
+Registers a callback with the corresponding query condition by using the handle.
+This callback is triggered when the component draw complete.
 
 **起始版本：** 10
 
@@ -280,7 +285,8 @@ Registers a callback with the corresponding query condition by using the handle.
 on(type: 'drawChildren', callback: Callback<void>): void
 ```
 
-使用句柄注册具有相应查询条件的回调。 当组件的子级绘制完成时，会触发此回调。
+使用句柄注册具有相应查询条件的回调。
+当组件的子级绘制完成时，会触发此回调。
 
 **起始版本：** 20
 

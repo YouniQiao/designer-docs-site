@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## stat
@@ -57,7 +57,8 @@ Obtains detailed attribute information of a file or directory. This API uses a p
 declare function stat(file: string | number, callback: AsyncCallback<Stat>): void
 ```
 
-Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the result.
+Obtains detailed attribute information of a file or directory. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

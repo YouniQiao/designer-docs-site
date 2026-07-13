@@ -67,7 +67,8 @@ Constructor.
 isHttpAuthInfoSaved(): boolean
 ```
 
-Determine whether the credentials stored for the current host are suitable for use. If the credentials have previously been rejected by the server for the current request, they are not suitable for use.
+Determine whether the credentials stored for the current host are suitable for use. If the credentials have
+previously been rejected by the server for the current request, they are not suitable for use.
 
 **Since:** 9
 

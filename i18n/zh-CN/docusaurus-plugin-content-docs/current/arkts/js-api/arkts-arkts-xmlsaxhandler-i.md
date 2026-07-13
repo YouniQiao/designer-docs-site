@@ -1,6 +1,7 @@
 # XmlSAXHandler
 
-XmlSAXHandler定义了SAX解析xml文本时的回调方法。开发者需要实现这些回调方法来处理xml文本的不同部分。这些回调方法会在xml解析过程的对应时机触发。startDocument会在开始解析文档时触发， endDocument会在结束文档解析时触发，startElement会在开始解析元素时触发，endElement会在结束解析元素时触发，characters则会在解析元素间文本内容时触发。
+XmlSAXHandler定义了SAX解析xml文本时的回调方法。开发者需要实现这些回调方法来处理xml文本的不同部分。这些回调方法会在xml解析过程的对应时机触发。startDocument会在开始解析文档时触发，
+endDocument会在结束文档解析时触发，startElement会在开始解析元素时触发，endElement会在结束解析元素时触发，characters则会在解析元素间文本内容时触发。
 
 **起始版本：** 24
 
@@ -105,7 +106,11 @@ readableStream.push(null);
 endDocument(): void
 ```
 
-当解析器在XML文本结束解析时触发的回调函数。该回调函数需要开发者自行实现。具体使用示例可见[characters<sup>24+</sup>](arkts-arkts-xmlsaxhandler-i.md#characters-1)。 > **说明：** > > 当可读流结束时触发此回调。在stream中调用push()，传入null值，从而触发该回调。
+当解析器在XML文本结束解析时触发的回调函数。该回调函数需要开发者自行实现。具体使用示例可见[characters<sup>24+</sup>](arkts-arkts-xmlsaxhandler-i.md#characters-1)。
+
+> **说明：**
+>
+> 当可读流结束时触发此回调。在stream中调用push()，传入null值，从而触发该回调。
 
 **起始版本：** 24
 

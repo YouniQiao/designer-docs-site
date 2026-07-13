@@ -1,8 +1,8 @@
 # SaveButtonOnClickResult
 
-Enumerates the click event results of the save button.
+Enumerates the authorization results after the **SaveButton** component is tapped.
 
-**Since:** 11
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -12,9 +12,9 @@ Enumerates the click event results of the save button.
 SUCCESS = 0
 ```
 
-Success.
+Authorization is successful.
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -28,9 +28,9 @@ Success.
 TEMPORARY_AUTHORIZATION_FAILED = 1
 ```
 
-Failure because the application is not temporarily authorized for saving files.
+Authorization fails.
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -44,7 +44,9 @@ Failure because the application is not temporarily authorized for saving files.
 CANCELED_BY_USER = 2
 ```
 
-Canceled by user.
+Authorization is canceled by the user through a dialog box after the **SaveButton** component is clicked. This
+value is returned in the callback result only when [userCancelEvent](SaveButtonAttribute#userCancelEvent) is
+triggered with its parameter set to **true**.
 
 **Since:** 21
 

@@ -1,6 +1,12 @@
 # AccelerationOptions
 
-Particle acceleration. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the > outer element's @since version number is higher than inner elements'. This does not affect interface usability.
+Particle acceleration.
+
+> **NOTE**
+>
+> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
+> While historical version information is preserved for anonymous objects, there may be cases where the
+> outer element's @since version number is higher than inner elements'. This does not affect interface usability.
 
 **Since:** 18
 
@@ -12,7 +18,9 @@ Particle acceleration. > **NOTE** > > To standardize anonymous object definition
 angle?: ParticlePropertyOptions<number, ACC_ANGLE_UPDATER>
 ```
 
-Acceleration direction (in angles). Default value: **{range:[0.0,0.0]}**
+Acceleration direction (in angles).
+
+Default value: **{range:[0.0,0.0]}**
 
 **Type:** ParticlePropertyOptions<number, ACC_ANGLE_UPDATER>
 
@@ -30,7 +38,9 @@ Acceleration direction (in angles). Default value: **{range:[0.0,0.0]}**
 speed?: ParticlePropertyOptions<number, ACC_SPEED_UPDATER>
 ```
 
-Acceleration speed. Default value: **{range:[0.0,0.0]}**
+Acceleration speed.
+
+Default value: **{range:[0.0,0.0]}**
 
 **Type:** ParticlePropertyOptions<number, ACC_SPEED_UPDATER>
 

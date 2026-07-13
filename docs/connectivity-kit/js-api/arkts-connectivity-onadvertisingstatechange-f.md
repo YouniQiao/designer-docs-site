@@ -8,9 +8,9 @@ function onAdvertisingStateChange(callback: Callback<AdvertisingStateChangeInfo>
 
 Subscribes to the advertising state change event.
 
-**Since:** 26.0.0
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
 
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
+**Since:** 26.0.0
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -26,6 +26,5 @@ Subscribes to the advertising state change event.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the chip does not support it. |
 

@@ -12,7 +12,11 @@ Defines the custom event dispatch result. You can influence event dispatch by re
 id?: string
 ```
 
-Unique ID of the child component. If **strategy** is set to **TouchTestStrategy.DEFAULT**, **id** is optional. If **strategy** is set to **TouchTestStrategy.FORWARD_COMPETITION** or **TouchTestStrategy.FORWARD**, **id** is mandatory. If **id** is not returned, the strategy **TouchTestStrategy.DEFAULT** is used.
+Unique ID of the child component.
+
+If **strategy** is set to **TouchTestStrategy.DEFAULT**, **id** is optional. If **strategy** is set to
+**TouchTestStrategy.FORWARD_COMPETITION** or **TouchTestStrategy.FORWARD**, **id** is mandatory. If **id** is not
+returned, the strategy **TouchTestStrategy.DEFAULT** is used.
 
 **Type:** string
 

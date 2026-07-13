@@ -1,8 +1,10 @@
 # GetDomainAccountInfoPluginOptions (System API)
 
-Defines the options for the domain plug-in to obtain the domain account information. The **GetDomainAccountInfoPluginOptions** class inherits from [**GetDomainAccountInfoOptions**](arkts-basicservices-getdomainaccountinfooptions-i-sys.md#getdomainaccountinfooptions).
+Defines the options for the domain plug-in to obtain the domain account information. The
+**GetDomainAccountInfoPluginOptions** class inherits from
+[**GetDomainAccountInfoOptions**](arkts-basicservices-getdomainaccountinfooptions-i-sys.md).
 
-**Inheritance/Implementation:** GetDomainAccountInfoPluginOptions extends [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md#getdomainaccountinfooptions)
+**Inheritance/Implementation:** GetDomainAccountInfoPluginOptions extends [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md)
 
 **Since:** 10
 
@@ -13,7 +15,7 @@ Defines the options for the domain plug-in to obtain the domain account informat
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## callerUid

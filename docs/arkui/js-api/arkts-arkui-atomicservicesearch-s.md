@@ -9,7 +9,7 @@ Defines AtomicServiceSearch.
 ## Modules to Import
 
 ```TypeScript
-import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@ohos.atomicservice.AtomicServiceSearch';
+import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@kit.ArkUI';
 ```
 
 ## controller
@@ -50,7 +50,8 @@ Function settings in the selection area (right).
 placeholder?: ResourceStr
 ```
 
-Indicates default prompt text displayed in the search box. The default value is Search, which supports globalization.
+Indicates default prompt text displayed in the search box.
+The default value is Search, which supports globalization.
 
 **Type:** ResourceStr
 

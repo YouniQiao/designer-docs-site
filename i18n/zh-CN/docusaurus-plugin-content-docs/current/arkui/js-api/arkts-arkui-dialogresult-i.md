@@ -12,7 +12,8 @@
 dialogId: number
 ```
 
-对话框的ID。 取值限定为整数。
+对话框的ID。
+取值限定为整数。
 
 **类型：** number
 

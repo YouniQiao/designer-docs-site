@@ -1,6 +1,13 @@
 # TextBlob
 
-Defines a block consisting of one or more characters with the same font. > **NOTE** > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.
+Defines a block consisting of one or more characters with the same font.
+
+> **NOTE**
+>
+> - This module uses the physical pixel unit, px.
+>
+> - The module operates under a single-threaded model. The caller needs to manage thread safety and context state
+> transitions.
 
 **Since:** 11
 
@@ -9,7 +16,7 @@ Defines a block consisting of one or more characters with the same font. > **NOT
 ## Modules to Import
 
 ```TypeScript
-import { drawing } from '@ohos.graphics.drawing';
+import { drawing } from '@kit.ArkGraphics2D';
 ```
 
 ## bounds
@@ -36,7 +43,8 @@ Obtains the rectangular bounding box of the text blob.
 static makeFromPosText(text: string, len: number, points: common2D.Point[], font: Font): TextBlob
 ```
 
-Creates a **TextBlob** object from the text. The coordinates of each font in the **TextBlob** object are determined by the coordinate information in the **points** array.
+Creates a **TextBlob** object from the text. The coordinates of each font in the **TextBlob** object are
+determined by the coordinate information in the **points** array.
 
 **Since:** 12
 

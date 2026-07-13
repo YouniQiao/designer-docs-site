@@ -9,7 +9,7 @@ Defines the vibrator status change event.
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## deviceId
@@ -32,7 +32,8 @@ Device ID.
 isVibratorOnline: boolean
 ```
 
-Vibrator status. The value **true** indicates that the device is online, and the value **false** indicates the opposite.
+Vibrator status. The value **true** indicates that the device is online, and the value **false** indicates the
+opposite.
 
 **Type:** boolean
 

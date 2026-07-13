@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AbilityRunningInfo](arkts-abilityrunninginfo-i.md) | AbilityRunningInfo是记录Ability运行信息和状态的数据结构，通过 [getAbilityRunningInfos]{@link @ohos.app.ability.abilityManager:abilityManager.getAbilityRunningInfos()}方法获取。 |
+| [AbilityRunningInfo](arkts-ability-abilityrunninginfo-i.md) | AbilityRunningInfo is a struct that records the running information and state of an ability. It is obtained through[getAbilityRunningInfos](arkts-ability-getabilityrunninginfos-f.md#getabilityrunninginfos-1). |
 

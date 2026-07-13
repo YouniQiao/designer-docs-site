@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## getAllSubscriptionBundles
@@ -12,7 +12,9 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function getAllSubscriptionBundles(): Promise<BundleOption[]>
 ```
 
-Obtains all applications that have requested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented [NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md#notificationsubscriberextensionability). This API uses a promise to return the result.
+Obtains all applications that have requested the ohos.permission.SUBSCRIBE_NOTIFICATION permission and implemented
+[NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md).
+This API uses a promise to return the result.
 
 **Since:** 22
 

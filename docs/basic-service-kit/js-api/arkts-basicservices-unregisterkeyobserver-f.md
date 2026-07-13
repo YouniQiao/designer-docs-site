@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { settings } from '@ohos.settings';
+import { settings } from '@kit.BasicServicesKit';
 ```
 
 ## unregisterKeyObserver
@@ -12,7 +12,8 @@ import { settings } from '@ohos.settings';
 function unregisterKeyObserver(context: Context, name: string, domainName: string): boolean
 ```
 
-Monitor unregister key(synchronous method) [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
+Monitor unregister key(synchronous method)
+[USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
 
 **Since:** 11
 

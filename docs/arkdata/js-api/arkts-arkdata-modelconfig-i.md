@@ -9,7 +9,7 @@ Manages configurations of the embedding model.
 ## Modules to Import
 
 ```TypeScript
-import { intelligence } from '@ohos.data.intelligence';
+import { intelligence } from '@kit.ArkData';
 ```
 
 ## cachePath
@@ -78,7 +78,8 @@ Indicates cloud embedding model network policy.
 version: ModelVersion
 ```
 
-Version of the model. The outputs of text or image embedding models with the same version are in the same vector space.
+Version of the model.
+The outputs of text or image embedding models with the same version are in the same vector space.
 
 **Type:** ModelVersion
 

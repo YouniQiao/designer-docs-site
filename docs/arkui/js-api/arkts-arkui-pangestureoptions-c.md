@@ -12,7 +12,8 @@ Defines the PanGesture options.
 constructor(value?: { fingers?: number; direction?: PanDirection; distance?: number })
 ```
 
-Creates a pan gesture configuration object. The **PanGestureOptions** API enables dynamic updates to pan gesture properties without requiring state variable modifications that would trigger UI re-renders.
+Creates a pan gesture configuration object. The **PanGestureOptions** API enables dynamic updates to pan gesture
+properties without requiring state variable modifications that would trigger UI re-renders.
 
 **Since:** 7
 
@@ -96,7 +97,9 @@ Sets the pan direction.
 setDistance(value: number)
 ```
 
-Sets the minimum pan distance to trigger the gesture, in vp. To avoid performance degradation due to excessive response delays or accidental releases, avoid excessively large values. For best practices, see [Reducing the Pan Distance for Gesture Recognition](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-application-latency-optimization-cases#section1116134115286).
+Sets the minimum pan distance to trigger the gesture, in vp. To avoid performance degradation due to excessive
+response delays or accidental releases, avoid excessively large values. For best practices, see
+[Reducing the Pan Distance for Gesture Recognition](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-application-latency-optimization-cases#section1116134115286).
 
 **Since:** 7
 

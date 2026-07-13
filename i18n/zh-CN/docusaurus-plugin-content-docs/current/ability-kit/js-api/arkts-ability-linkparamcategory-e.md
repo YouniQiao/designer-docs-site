@@ -1,6 +1,7 @@
 # LinkParamCategory
 
-[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器的意图参数类别，用于定义意图参数的传递形式。
+[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+装饰器的意图参数类别，用于定义意图参数的传递形式。
 
 **起始版本：** 20
 
@@ -28,7 +29,7 @@ LINK = 'link'
 WANT = 'want'
 ```
 
-表示意图参数类别为'want'。意图参数将通过[Want](arkts-ability-want-c.md#want)的parameters字段传给应用。
+表示意图参数类别为'want'。意图参数将通过[Want](arkts-ability-want-c.md)的parameters字段传给应用。
 
 **起始版本：** 20
 

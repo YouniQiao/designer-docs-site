@@ -9,7 +9,7 @@ Defines the progress of scanning pictures.
 ## Modules to Import
 
 ```TypeScript
-import { scan } from '@ohos.scan';
+import { scan } from '@kit.BasicServicesKit';
 ```
 
 ## isFinal
@@ -18,7 +18,8 @@ import { scan } from '@ohos.scan';
 isFinal: boolean
 ```
 
-Whether the picture is the last one to be scanned. The value **true** indicates that the picture is the last one to be scanned, and **false** indicates that the picture is not the last one.
+Whether the picture is the last one to be scanned. The value **true** indicates that the picture is the last
+one to be scanned, and **false** indicates that the picture is not the last one.
 
 **Type:** boolean
 

@@ -9,7 +9,7 @@ Provides parameter configuration required for creating a float view controller.
 ## Modules to Import
 
 ```TypeScript
-import { floatView } from '@ohos.window.floatView';
+import { floatView } from '@kit.ArkUI';
 ```
 
 ## context
@@ -34,7 +34,9 @@ Context environment.
 isConfirmOnClose?: boolean
 ```
 
-This field controls whether user confirmation is required when the close button is clicked. **true** if clicking the close button requires user confirmation, otherwise no confirmation is needed. Default value: default value is false.
+This field controls whether user confirmation is required when the close button is clicked.
+**true** if clicking the close button requires user confirmation, otherwise no confirmation is needed.
+Default value: default value is false.
 
 **Type:** boolean
 

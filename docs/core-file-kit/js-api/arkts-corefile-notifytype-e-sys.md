@@ -6,7 +6,7 @@ NotifyType subtype
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [NotifyType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-notifytype-e.md#notifytype)
+**Substitutes:** [NotifyType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-notifytype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

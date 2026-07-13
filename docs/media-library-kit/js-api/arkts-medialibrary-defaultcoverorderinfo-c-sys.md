@@ -11,7 +11,7 @@ Default Cover Order
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## albumSubtype
@@ -110,7 +110,8 @@ The subfield of default cover order.
 public orderType: number
 ```
 
-order type The value must be an integer within [0,1].
+order type
+The value must be an integer within [0,1].
 
 **Type:** number
 

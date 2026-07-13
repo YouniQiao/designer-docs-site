@@ -11,7 +11,7 @@ Represents the cloud data.
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## hasMore
@@ -20,7 +20,8 @@ import { cloudExtension } from '@ohos.data.cloudExtension';
 hasMore: boolean
 ```
 
-Whether there is data to be queried on the server. The value true means there is data to be queried on the server; the value false means the opposite.
+Whether there is data to be queried on the server.
+The value true means there is data to be queried on the server; the value false means the opposite.
 
 **Type:** boolean
 

@@ -9,7 +9,7 @@ Represents the parameters for certificate chain validation.
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## allowDownloadIntermediateCa
@@ -18,7 +18,11 @@ import { cert } from '@ohos.security.cert';
 allowDownloadIntermediateCa?: boolean
 ```
 
-Whether to allow the application to download the missing intermediate CA certificate from the network. **true** means yes; **false** otherwise. The default value is **false**. The download address is obtained from the certificate AIA extension. Only HTTP is supported. To use the network for download, you need to request the **ohos.permission.INTERNET** permission. For details about the permission configuration, see [Declaring Permissions](../../../../security/AccessToken/declare-permissions.md).
+Whether to allow the application to download the missing intermediate CA certificate from the network.
+**true** means yes; **false** otherwise. The default value is **false**.
+The download address is obtained from the certificate AIA extension. Only HTTP is supported. To use the network
+for download, you need to request the **ohos.permission.INTERNET** permission. For details about the permission
+configuration, see [Declaring Permissions](../../../../security/AccessToken/declare-permissions.md).
 
 **Type:** boolean
 
@@ -36,7 +40,7 @@ Whether to allow the application to download the missing intermediate CA certifi
 certCRLs?: Array<CertCRLCollection>
 ```
 
-Check whether the certificate is in a CRL.
+CRL collections used to check whether the certificate is revoked.
 
 **Type:** Array<CertCRLCollection>
 
@@ -52,7 +56,7 @@ Check whether the certificate is in a CRL.
 date?: string
 ```
 
-Validity period of the certificate to validate.
+Date for checking certificate validity.
 
 **Type:** string
 
@@ -100,7 +104,7 @@ Type of the policy for certificate validation.
 revocationCheckParam?: RevocationCheckParameter
 ```
 
-Parameters for checking the certificate revocation status online.
+Parameters for checking the certificate revocation status.
 
 **Type:** RevocationCheckParameter
 
@@ -116,7 +120,7 @@ Parameters for checking the certificate revocation status online.
 sslHostname?: string
 ```
 
-Host name in the certificate to be verified. This parameter must be used with **policy** together.
+Host name in the certificate to be verified. This parameter must be used together with **policy**.
 
 **Type:** string
 
@@ -148,7 +152,8 @@ List of trusted anchors.
 trustSystemCa?: boolean
 ```
 
-Whether to use the prebuilt CA certificate to validate the certificate chain. **true** means yes; **false** otherwise.
+Whether to use the prebuilt CA certificate to validate the certificate chain. **true** means yes; **false**
+otherwise.
 
 **Type:** boolean
 

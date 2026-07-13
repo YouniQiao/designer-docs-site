@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## openAuthorizeDialog
@@ -12,7 +12,10 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 function openAuthorizeDialog(context: common.Context): Promise<string>
 ```
 
-Opens the authorization page of the certificate management dialog box to grant a credential to the application. After the API is successfully called, the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and query details. This API uses a promise to return the result.
+Opens the authorization page of the certificate management dialog box to grant a credential to the application.
+After the API is successfully called, the app can use the URI of the authorization certificate returned by the API
+to sign, verify the signature, and query details.
+This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -40,7 +43,7 @@ Opens the authorization page of the certificate management dialog box to grant a
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have thepermission required to call the API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. A mandatory parameter is leftunspecified.2. Incorrect parameter type. 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | The certificate management application Hap is not preinstalled in the system,and the capability is not supported.<br>**Applicable version:** 26.0.0 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | The certificate management application Hap is not preinstalled in the system,and the capability is not supported.<br>**Applicable version:** 26.0.0 and later |
 | [29700001](../errorcode-certManagerDialog.md#29700001-internal-error) | Internal error. Possible causes: 1. IPC communication failed;<br>2. Memory operation error; 3. File operation error. Please try again. |
 | [29700002](../errorcode-certManagerDialog.md#29700002-operation-canceled) | The user cancels the authorization. |
 
@@ -75,7 +78,11 @@ try {
 function openAuthorizeDialog(context: common.Context, authorizeRequest: AuthorizeRequest): Promise<CertReference>
 ```
 
-Opens the Certificate Credential Authorization page of the Certificate Management dialog box. On the page that is displayed, you can authorize the application to use certificate credentials. After the API is called successfully, the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and query details. The types of certificates that can be authorized include application certificate credentials, user certificate credentials, and USB Key certificate credentials. Using Promise Asynchronous Callbacks.
+Opens the Certificate Credential Authorization page of the Certificate Management dialog box. On the page that is
+displayed, you can authorize the application to use certificate credentials. After the API is called successfully,
+the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, and
+query details. The types of certificates that can be authorized include application certificate credentials, user
+certificate credentials, and USB Key certificate credentials. Using Promise Asynchronous Callbacks.
 
 **Since:** 22
 

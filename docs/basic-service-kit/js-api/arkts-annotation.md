@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { SuppressWarnings,Available,SuppressWarningsType } from '@kit.BasicServicesKit';
+import { SuppressWarnings, Available, SuppressWarningsType } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { SuppressWarnings,Available,SuppressWarningsType } from '@kit.BasicServi
 
 | Name | Description |
 | --- | --- |
-| [SuppressWarningsType](arkts-suppresswarningstype-e.md) | 支持消除告警的规则。帮助开发者根据实际需求选择性地屏蔽兼容性告警、多设备告警、权限告警等，在确保代码质量的同时减少不必要的告警干扰，提升开发体验。 |
+| [SuppressWarningsType](arkts-basicservices-suppresswarningstype-e.md) | Defines the warning types that support suppression. Developers can selectively suppress compatibility warnings, multi-device warnings, and permission warnings as required. This helps ensure code quality, reduce unnecessarywarning interference, and improve development experience. |
 

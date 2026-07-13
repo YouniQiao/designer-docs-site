@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hichecker } from '@ohos.hichecker';
+import { hichecker } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## contains
@@ -12,7 +12,8 @@ import { hichecker } from '@ohos.hichecker';
 function contains(rule: bigint): boolean
 ```
 
-Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, this operation is performed only on the current thread.
+Checks whether the specified rule exists in the collection of added rules. If the rule is of the thread level, this
+operation is performed only on the current thread.
 
 **Since:** 8
 

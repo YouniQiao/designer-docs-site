@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { radio } from '@ohos.telephony.radio';
+import { radio } from '@kit.TelephonyKit';
 ```
 
 ## on('imsRegStateChange')
@@ -12,7 +12,8 @@ import { radio } from '@ohos.telephony.radio';
 function on(type: 'imsRegStateChange', slotId: number, imsType: ImsServiceType, callback: Callback<ImsRegInfo>): void
 ```
 
-Called when the IMS registration state of specified IMS service type corresponding to a monitored {@code slotId} updates.
+Called when the IMS registration state of specified IMS service type corresponding to
+a monitored {@code slotId} updates.
 
 **Since:** 9
 

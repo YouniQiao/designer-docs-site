@@ -9,7 +9,7 @@ Initialization parameters for the **ArcAlphabetIndexer** component.
 ## Modules to Import
 
 ```TypeScript
-import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@ohos.arkui.ArcAlphabetIndexer';
+import { ArcAlphabetIndexerAttribute, ArcAlphabetIndexer } from '@kit.ArkUI';
 ```
 
 ## arrayValue
@@ -34,7 +34,9 @@ Array of alphabet index strings. It cannot be set to empty.
 selected: number
 ```
 
-Index of the initial selected item. If the value is out of range, the default value **0** is used. This parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
+Index of the initial selected item. If the value is out of range, the default value **0** is used.
+
+This parameter supports two-way binding through [!!](../../../../ui/state-management/arkts-new-binding.md).
 
 **Type:** number
 

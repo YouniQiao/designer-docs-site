@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleState } from '@ohos.bundleState';
+import { bundleState } from '@kit.BackgroundTasksKit';
 ```
 
 ## merge
@@ -18,7 +18,8 @@ import { bundleState } from '@ohos.bundleState';
 merge(toMerge: BundleStateInfo): void
 ```
 
-Merges a specified {@link BundleActiveInfo} object with this {@link BundleActiveInfo} object. The bundle name of both objects must be the same.
+Merges a specified {@link BundleActiveInfo} object with this {@link BundleActiveInfo} object.
+The bundle name of both objects must be the same.
 
 **Since:** 7
 
@@ -38,7 +39,8 @@ Merges a specified {@link BundleActiveInfo} object with this {@link BundleActive
 abilityInFgTotalTime?: number
 ```
 
-The total duration, in milliseconds. <br> Unit:ms
+The total duration, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -54,7 +56,8 @@ The total duration, in milliseconds. <br> Unit:ms
 abilityPrevAccessTime?: number
 ```
 
-The last time when the application was accessed, in milliseconds. <br> Unit:ms
+The last time when the application was accessed, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -70,7 +73,8 @@ The last time when the application was accessed, in milliseconds. <br> Unit:ms
 abilityPrevSeenTime?: number
 ```
 
-The last time when the application was visible in the foreground, in milliseconds. <br> Unit:ms
+The last time when the application was visible in the foreground, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -86,7 +90,8 @@ The last time when the application was visible in the foreground, in millisecond
 abilitySeenTotalTime?: number
 ```
 
-The total duration when the application was visible in the foreground, in milliseconds. <br> Unit:ms
+The total duration when the application was visible in the foreground, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -118,7 +123,8 @@ The bundle name of the application.
 fgAbilityAccessTotalTime?: number
 ```
 
-The total duration when the foreground application was accessed, in milliseconds. <br> Unit:ms
+The total duration when the foreground application was accessed, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -134,7 +140,8 @@ The total duration when the foreground application was accessed, in milliseconds
 fgAbilityPrevAccessTime?: number
 ```
 
-The last time when the foreground application was accessed, in milliseconds. <br> Unit:ms
+The last time when the foreground application was accessed, in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -166,7 +173,9 @@ The identifier of BundleStateInfo.
 infosBeginTime?: number
 ```
 
-The time of the first bundle usage record in this {@code BundleActiveInfo} object, in milliseconds. <br> Unit:ms
+The time of the first bundle usage record in this {@code BundleActiveInfo} object,
+in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 
@@ -182,7 +191,9 @@ The time of the first bundle usage record in this {@code BundleActiveInfo} objec
 infosEndTime?: number
 ```
 
-The time of the last bundle usage record in this {@code BundleActiveInfo} object, in milliseconds. <br> Unit:ms
+The time of the last bundle usage record in this {@code BundleActiveInfo} object,
+in milliseconds.
+<br> Unit:ms
 
 **Type:** number
 

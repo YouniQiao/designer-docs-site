@@ -1,8 +1,10 @@
 # LinearStyleOptions
 
-线性样式选项。 继承自[ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions)和[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions)。
+线性样式选项。
 
-**继承/实现关系：** LinearStyleOptions extends [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions), [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions)
+继承自[ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md)和[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)。
+
+**继承/实现关系：** LinearStyleOptions extends [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md), [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md)
 
 **起始版本：** 10
 
@@ -14,7 +16,9 @@
 strokeRadius?: PX | VP | LPX | Resource
 ```
 
-设置线性进度条的圆角半径。 取值范围[0, strokeWidth / 2]。默认值：strokeWidth / 2。
+设置线性进度条的圆角半径。
+
+取值范围[0, strokeWidth / 2]。默认值：strokeWidth / 2。
 
 **类型：** PX | VP | LPX | Resource
 
@@ -34,7 +38,9 @@ strokeRadius?: PX | VP | LPX | Resource
 strokeWidth?: Length
 ```
 
-设置进度条宽度（不支持百分比设置）。当宽度大于等于半径时，宽度默认修改为半径值的二分之一。 默认值：4.0vp
+设置进度条宽度（不支持百分比设置）。当宽度大于等于半径时，宽度默认修改为半径值的二分之一。
+
+默认值：4.0vp
 
 **类型：** Length
 

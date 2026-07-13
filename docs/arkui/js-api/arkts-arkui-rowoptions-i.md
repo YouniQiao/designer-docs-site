@@ -1,6 +1,12 @@
 # RowOptions
 
-Sets the spacing between child components of the **Row** component. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While starting version information is preserved for historical anonymous objects, there may be cases where the > outer element's @since version number is higher than inner element's. This does not affect interface usability.
+Sets the spacing between child components of the **Row** component.
+
+> **NOTE**
+>
+> To standardize anonymous object definitions, the element definitions here have been revised in API version 18.
+> While starting version information is preserved for historical anonymous objects, there may be cases where the
+> outer element's @since version number is higher than inner element's. This does not affect interface usability.
 
 **Since:** 18
 
@@ -12,7 +18,14 @@ Sets the spacing between child components of the **Row** component. > **NOTE** >
 space?: string | number
 ```
 
-Spacing between child components. Since API version 9, this parameter does not take effect when it is set to a negative number or when **justifyContent** is set to **FlexAlign.SpaceBetween**, **FlexAlign.SpaceAround** or **FlexAlign.SpaceEvenly**. Unit: vp. If an invalid value is set, the default value is used instead. > **NOTE** > > The value of **space** can be a number greater than or equal to 0 or a string that can be converted to a number. > Default value: **0**.
+Spacing between child components.
+Since API version 9, this parameter does not take effect when it is set to a negative number or when
+**justifyContent** is set to **FlexAlign.SpaceBetween**, **FlexAlign.SpaceAround** or **FlexAlign.SpaceEvenly**.
+Unit: vp. If an invalid value is set, the default value is used instead.
+> **NOTE**
+>
+> The value of **space** can be a number greater than or equal to 0 or a string that can be converted to a number.
+> Default value: **0**.
 
 **Type:** string | number
 

@@ -4,7 +4,7 @@
 
 **废弃版本：** 9
 
-**替代接口：** [UploadConfig](arkts-basicservices-uploadconfig-i.md#uploadconfig)
+**替代接口：** [UploadConfig](arkts-basicservices-uploadconfig-i.md)
 
 **系统能力：** SystemCapability.MiscServices.Download
 
@@ -32,7 +32,8 @@ complete?: () => void
 description?: string
 ```
 
-Download description. The default value is the file name.
+Download description.
+The default value is the file name.
 
 **类型：** string
 
@@ -68,7 +69,8 @@ Called when downloading fails.
 filename?: string
 ```
 
-Name of the file to downloaded. The value is obtained from the current request or resource URL by default.
+Name of the file to downloaded.
+The value is obtained from the current request or resource URL by default.
 
 **类型：** string
 

@@ -1,6 +1,7 @@
 # RationalNumber
 
-Provides APIs to compare rational numbers and obtain numerators and denominators. For example, the **toString()** API can be used to convert a rational number into a string.
+Provides APIs to compare rational numbers and obtain numerators and denominators. For example, the **toString()**
+API can be used to convert a rational number into a string.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ Provides APIs to compare rational numbers and obtain numerators and denominators
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## compare
@@ -123,7 +124,13 @@ let rationalNumber = new util.RationalNumber();
 static createRationalFromString(rationalString: string): RationalNumber
 ```
 
-Creates a **RationalNumber** object based on the given string. > **NOTE** > > The **rationalString** parameter must be a string. If a decimal string is passed in, the function is not > intercepted, but the error message "createRationalFromString: The type of Parameter must be integer string" is > displayed.
+Creates a **RationalNumber** object based on the given string.
+
+> **NOTE**
+>
+> The **rationalString** parameter must be a string. If a decimal string is passed in, the function is not
+> intercepted, but the error message "createRationalFromString: The type of Parameter must be integer string" is
+> displayed.
 
 **Since:** 8
 
@@ -233,7 +240,12 @@ Obtains the greatest common divisor of two specified integers.
 static getCommonFactor(number1: number, number2: number): number
 ```
 
-Obtains the greatest common divisor of two specified integers. > **NOTE** > > The **number1** and **number2** parameters must be integers. If a decimal number is passed in, the function is > not intercepted, but the error message "getCommonFactor: The type of Parameter must be integer" is displayed.
+Obtains the greatest common divisor of two specified integers.
+
+> **NOTE**
+>
+> The **number1** and **number2** parameters must be integers. If a decimal number is passed in, the function is
+> not intercepted, but the error message "getCommonFactor: The type of Parameter must be integer" is displayed.
 
 **Since:** 9
 
@@ -469,7 +481,13 @@ console.info("result = " + result);
 static parseRationalNumber(numerator: number, denominator: number): RationalNumber
 ```
 
-Creates a **RationalNumber** instance with a given numerator and denominator. > **NOTE** > > The **numerator** and **denominator** parameters must be integers. If a decimal number is passed in, the > function is not intercepted, but the error message "parseRationalNumber: The type of Parameter must be integer" > is displayed.
+Creates a **RationalNumber** instance with a given numerator and denominator.
+
+> **NOTE**
+>
+> The **numerator** and **denominator** parameters must be integers. If a decimal number is passed in, the
+> function is not intercepted, but the error message "parseRationalNumber: The type of Parameter must be integer"
+> is displayed.
 
 **Since:** 9
 

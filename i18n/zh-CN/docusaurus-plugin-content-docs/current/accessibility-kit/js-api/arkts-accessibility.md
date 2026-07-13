@@ -1,29 +1,24 @@
 # @ohos.accessibility
 
-## 导入模块
-
-```TypeScript
-import { accessibility } from '@kit.AccessibilityKit';
-```
+辅助功能
 
 ## 汇总
 
 ### 命名空间
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [accessibility](arkts-accessibility-n.md) | Accessibility |
+| [accessibility](arkts-accessibility-accessibility-n.md) | 辅助功能 |
 
-### 枚举
+<!--Del-->
+### 枚举（系统接口）
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| <!--DelRow-->[AccessibilityAction](arkts-accessibilityaction-e.md) | Enumerates executable actions for accessibility node elements. Accessibility node elements are UI components that support accessibility actions, such as buttons, text boxes, and so on. |
-| <!--DelRow-->[AccessibilityEventType](arkts-accessibilityeventtype-e.md) | Enumerates accessibility event types. |
-| <!--DelRow-->[AccessibilityFocusScene](arkts-accessibilityfocusscene-e.md) | Enumeration of scenes of accessibility focus. |
-| <!--DelRow-->[AccessibilitySourceType](arkts-accessibilitysourcetype-e.md) | Accessibility Element Source Type Enumeration |
-| <!--DelRow-->[FocusMoveResultCode](arkts-focusmoveresultcode-e.md) | Enumerates the result codes returned by the focusable node query. |
-| <!--DelRow-->[FocusRuleType](arkts-focusruletype-e.md) | Focus Rule Type Enumeration |
-| <!--DelRow-->[InjectActionType](arkts-injectactiontype-e.md) | Enumerates injection actions. |
-| <!--DelRow-->[OperateVirtualNodeResult](arkts-operatevirtualnoderesult-e.md) | Result Code Enumeration |
+| [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md) | 表示无障碍节点元素可执行的操作枚举。无障碍节点元素是指，UI界面上可执行无障碍操作的一些组件，例如：按钮、文本输入框等组件。 |
+| [AccessibilityEventType](arkts-accessibility-accessibilityeventtype-e-sys.md) | 无障碍事件类型。 |
+| [AccessibilityFocusScene](arkts-accessibility-accessibilityfocusscene-e-sys.md) | Enumeration of scenes of accessibility focus. |
+| [FocusMoveResultCode](arkts-accessibility-focusmoveresultcode-e-sys.md) | 表示查询无障碍节点返回结果类型的枚举。 |
+| [InjectActionType](arkts-accessibility-injectactiontype-e-sys.md) | 表示注入动作的枚举。 |
+<!--DelEnd-->
 

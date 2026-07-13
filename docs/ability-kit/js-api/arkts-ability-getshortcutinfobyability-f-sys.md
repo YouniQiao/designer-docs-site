@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { shortcutManager } from '@ohos.bundle.shortcutManager';
+import { shortcutManager } from '@kit.AbilityKit';
 ```
 
 ## getShortcutInfoByAbility
@@ -12,7 +12,11 @@ import { shortcutManager } from '@ohos.bundle.shortcutManager';
 function getShortcutInfoByAbility(bundleName: string, moduleName: string, abilityName: string, userId?: number, appIndex?: number): Array<ShortcutInfo>
 ```
 
-Obtains shortcut info by bundleName, moduleName, abilityName, userId and appIndex. If you need to obtains shortcut info under the current user, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED needs to be applied for. If you need to obtains shortcut info under other users, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS need to be applied for.
+Obtains shortcut info by bundleName, moduleName, abilityName, userId and appIndex.
+If you need to obtains shortcut info under the current user, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED
+needs to be applied for.
+If you need to obtains shortcut info under other users, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and
+ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS need to be applied for.
 
 **Since:** 24
 

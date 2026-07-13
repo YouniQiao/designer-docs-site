@@ -12,7 +12,10 @@
 badgeFlag?: boolean
 ```
 
-是否显示角标。 - true：是。 - false：否。默认值为true。
+是否显示角标。
+
+- true：是。
+- false：否。默认值为true。
 
 **类型：** boolean
 
@@ -26,7 +29,10 @@ badgeFlag?: boolean
 bypassDnd?: boolean
 ```
 
-是否在系统中绕过免打扰模式。 - true：是。 - false：否。默认值为false。
+是否在系统中绕过免打扰模式。
+
+- true：是。
+- false：否。默认值为false。
 
 **类型：** boolean
 
@@ -54,7 +60,10 @@ desc?: string
 readonly enabled?: boolean
 ```
 
-表示是否允许发布此通知渠道的通知。 - true：允许。 - false：禁止。
+表示是否允许发布此通知渠道的通知。
+
+- true：允许。
+- false：禁止。
 
 **类型：** boolean
 
@@ -68,7 +77,9 @@ readonly enabled?: boolean
 level?: notification.SlotLevel
 ```
 
-通知级别。 从API version 7开始支持，从API version 20开始废弃，建议使用notificationLevel替代。
+通知级别。
+
+从API version 7开始支持，从API version 20开始废弃，建议使用notificationLevel替代。
 
 **类型：** notification.SlotLevel
 
@@ -100,7 +111,10 @@ lightColor?: number
 lightEnabled?: boolean
 ```
 
-是否闪灯。 - true：是。 - false：否。默认值为false。
+是否闪灯。
+
+- true：是。
+- false：否。默认值为false。
 
 **类型：** boolean
 
@@ -170,7 +184,9 @@ sound?: string
 type?: notification.SlotType
 ```
 
-通道类型。 从API version 7开始支持，从API version 11开始废弃，建议使用notificationType替代。
+通道类型。
+
+从API version 7开始支持，从API version 11开始废弃，建议使用notificationType替代。
 
 **类型：** notification.SlotType
 
@@ -188,7 +204,10 @@ type?: notification.SlotType
 vibrationEnabled?: boolean
 ```
 
-是否可振动。 - true：是。 - false：否。默认值为false。
+是否可振动。
+
+- true：是。
+- false：否。默认值为false。
 
 **类型：** boolean
 

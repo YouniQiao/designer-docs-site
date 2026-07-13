@@ -1,6 +1,7 @@
-# AudioPersonalizedSpatialEnabledChangeForAnyDevice
+# AudioPersonalizedSpatialEnabledChangeForAnyDevice (System API)
 
-This interface is used to notify the listener of personalized spatialization enabled state change of any device.
+This interface is used to notify the listener of personalized spatialization enabled
+state change of any device.
 
 **Since:** 26.0.0
 
@@ -26,7 +27,7 @@ Audio device description.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 
@@ -44,7 +45,7 @@ Personalized spatialization enable state.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 

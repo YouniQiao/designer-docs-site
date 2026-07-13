@@ -15,7 +15,7 @@ Data struct describes geographic locations.
 ## Modules to Import
 
 ```TypeScript
-import { geolocation } from '@ohos.geolocation';
+import { geolocation } from '@kit.LocationKit';
 ```
 
 ## addressUrl
@@ -144,7 +144,9 @@ Indicates the amount of additional descriptive information.
 latitude?: number
 ```
 
-Indicates latitude information. A positive value indicates north latitude, and a negative value indicates south latitude.
+Indicates latitude information.
+A positive value indicates north latitude,
+and a negative value indicates south latitude.
 
 **Type:** number
 
@@ -164,7 +166,8 @@ Indicates latitude information. A positive value indicates north latitude, and a
 locale?: string
 ```
 
-Indicates language used for the location description. zh indicates Chinese, and en indicates English.
+Indicates language used for the location description.
+zh indicates Chinese, and en indicates English.
 
 **Type:** string
 
@@ -204,7 +207,9 @@ Indicates locality information.
 longitude?: number
 ```
 
-Indicates longitude information. A positive value indicates east longitude , and a negative value indicates west longitude .
+Indicates longitude information.
+A positive value indicates east longitude ,
+and a negative value indicates west longitude .
 
 **Type:** number
 

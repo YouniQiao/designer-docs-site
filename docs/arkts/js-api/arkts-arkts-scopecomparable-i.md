@@ -1,6 +1,7 @@
 # ScopeComparable
 
-The values of the **ScopeComparable** type are used to implement the **compareTo** method. Therefore, ensure that the input parameters are comparable.
+The values of the **ScopeComparable** type are used to implement the **compareTo** method. Therefore, ensure that
+the input parameters are comparable.
 
 **Since:** 7
 
@@ -9,7 +10,7 @@ The values of the **ScopeComparable** type are used to implement the **compareTo
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## compareTo

@@ -9,7 +9,7 @@ Defines the properties of the arc slider.
 ## Modules to Import
 
 ```TypeScript
-import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@ohos.arkui.advanced.ArcSlider';
+import { ArcSliderLayoutOptions, ArcSliderValueOptionsConstructorOptions, ArcSliderValueOptions, ArcSliderStyleOptionsConstructorOptions, ArcSlider, ArcSliderLayoutOptionsConstructorOptions, ArcSliderOptions, ArcSliderStyleOptions, ArcSliderPosition, ArcSliderOptionsConstructorOptions } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -38,7 +38,9 @@ A constructor used to create an **ArcSliderOptions** instance.
 digitalCrownSensitivity?: CrownSensitivity
 ```
 
-Sensitivity to the digital crown rotation. Default value: **CrownSensitivity.MEDIUM**
+Sensitivity to the digital crown rotation.
+
+Default value: **CrownSensitivity.MEDIUM**
 
 **Type:** CrownSensitivity
 
@@ -54,7 +56,9 @@ Sensitivity to the digital crown rotation. Default value: **CrownSensitivity.MED
 layoutOptions?: ArcSliderLayoutOptions
 ```
 
-Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md#arcsliderstyleoptions)
+Style of the arc slider.
+
+Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderLayoutOptions
 
@@ -70,7 +74,9 @@ Style of the arc slider. Default value: default values of all properties of [Arc
 onChange?: ArcSliderChangeHandler
 ```
 
-Callback invoked to notify the application when the progress value of the arc slider changes. Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the progress value of the arc slider changes.
+
+Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderChangeHandler
 
@@ -86,7 +92,9 @@ Callback invoked to notify the application when the progress value of the arc sl
 onEnlarge?: ArcSliderEnlargeHandler
 ```
 
-Callback invoked to notify the application when the arc slider is enlarged or reduced. Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the arc slider is enlarged or reduced.
+
+Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderEnlargeHandler
 
@@ -102,7 +110,9 @@ Callback invoked to notify the application when the arc slider is enlarged or re
 onTouch?: ArcSliderTouchHandler
 ```
 
-Callback invoked to notify the application when the arc slider is touched. Default value: If this parameter is not provided, no callback will be invoked.
+Callback invoked to notify the application when the arc slider is touched.
+
+Default value: If this parameter is not provided, no callback will be invoked.
 
 **Type:** ArcSliderTouchHandler
 
@@ -118,7 +128,9 @@ Callback invoked to notify the application when the arc slider is touched. Defau
 styleOptions?: ArcSliderStyleOptions
 ```
 
-Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md#arcsliderstyleoptions)
+Style of the arc slider.
+
+Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderStyleOptions
 
@@ -134,7 +146,9 @@ Style of the arc slider. Default value: default values of all properties of [Arc
 valueOptions?: ArcSliderValueOptions
 ```
 
-Style of the arc slider. Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md#arcsliderstyleoptions)
+Style of the arc slider.
+
+Default value: default values of all properties of [ArcSliderStyleOptions](arkts-arkui-arcsliderstyleoptions-c.md)
 
 **Type:** ArcSliderValueOptions
 

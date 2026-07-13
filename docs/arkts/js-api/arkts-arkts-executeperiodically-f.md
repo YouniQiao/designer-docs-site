@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## executePeriodically
@@ -12,7 +12,9 @@ import { taskpool } from '@ohos.taskpool';
 function executePeriodically(period: number, task: Task, priority?: Priority): void
 ```
 
-Executes a task periodically. In this execution mode, you can set the task priority and call **cancel()** to cancel the execution. A periodic task cannot be a task in a task group, serial queue, or asynchronous queue. It cannot call **execute()** again or have a dependency relationship.
+Executes a task periodically. In this execution mode, you can set the task priority and call **cancel()** to cancel
+the execution. A periodic task cannot be a task in a task group, serial queue, or asynchronous queue. It cannot
+call **execute()** again or have a dependency relationship.
 
 **Since:** 12
 
@@ -36,7 +38,7 @@ Executes a task periodically. In this execution mode, you can set the task prior
 | [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent. |
 | [10200028](../errorcode-utils.md#10200028-delay-less-than-zero) | The period is less than zero. |
 | [10200050](../errorcode-utils.md#10200050-concurrent-task-that-has-been-executed-cannot-be-executed-periodically) | The concurrent task has been executed and cannot be executed periodically. |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 
@@ -87,7 +89,9 @@ taskpoolTest();
 function executePeriodically<A extends Array<Object>, R>(period: number, task: GenericsTask<A, R>, priority?: Priority): void
 ```
 
-Executes a generic task periodically, without verifying the parameter type and return value type of the task. The verification of the **executePeriodically** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
+Executes a generic task periodically, without verifying the parameter type and return value type of the task.
+The verification of the **executePeriodically** task works in conjunction with **new GenericsTask**, requiring that
+the parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 
@@ -111,7 +115,7 @@ Executes a generic task periodically, without verifying the parameter type and r
 | [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent. |
 | [10200028](../errorcode-utils.md#10200028-delay-less-than-zero) | The period is less than zero. |
 | [10200050](../errorcode-utils.md#10200050-concurrent-task-that-has-been-executed-cannot-be-executed-periodically) | The concurrent task has been executed and cannot be executed periodically. |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 

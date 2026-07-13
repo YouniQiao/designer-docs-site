@@ -12,7 +12,8 @@ The line break rule.
 GREEDY = 0
 ```
 
-Places as many words on a line as possible and moves to the next line only if no more words can fit into the same line.
+Places as many words on a line as possible and moves to the next line only if no more words can fit into the same
+line.
 
 **Since:** 12
 
@@ -28,7 +29,8 @@ Places as many words on a line as possible and moves to the next line only if no
 HIGH_QUALITY = 1
 ```
 
-Fills in lines as much as possible on the basis of **BALANCED**, which may results in a large blank area on the last line.
+Fills in lines as much as possible on the basis of **BALANCED**, which may results in a large blank area on the
+last line.
 
 **Since:** 12
 

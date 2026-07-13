@@ -28,7 +28,9 @@ controller?: TextAreaController
 placeholder?: ResourceStr
 ```
 
-设置无输入时的提示文本。输入内容后，提示文本不显示。 仅设置placeholder属性时，手柄依然跟随拖动，手柄松开后光标停留在文字开头位置。
+设置无输入时的提示文本。输入内容后，提示文本不显示。
+
+仅设置placeholder属性时，手柄依然跟随拖动，手柄松开后光标停留在文字开头位置。
 
 **类型：** ResourceStr
 

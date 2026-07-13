@@ -1,8 +1,11 @@
 # LayeredDrawableDescriptor
 
-当传入资源id或name为包含前景和背景资源的json文件时，生成LayeredDrawableDescriptor对象。继承自 [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult)。 drawable.json位于项目工程entry/src/main/resources/base/media目录下。定义请参考：
+当传入资源id或name为包含前景和背景资源的json文件时，生成LayeredDrawableDescriptor对象。继承自
+[DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md)。
 
-**继承/实现关系：** LayeredDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+drawable.json位于项目工程entry/src/main/resources/base/media目录下。定义请参考：
+
+**继承/实现关系：** LayeredDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md)
 
 **起始版本：** 10
 
@@ -62,7 +65,7 @@ getBackground(): DrawableDescriptor
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0 |
+| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 
@@ -130,7 +133,7 @@ getForeground(): DrawableDescriptor
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0 |
+| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 
@@ -203,7 +206,7 @@ getMask(): DrawableDescriptor
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0 |
+| [111002](../errorcode-drawable-descriptor.md#111002-资源已释放) | The native memory referenced bythe drawableDescriptor has been released.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 
@@ -300,7 +303,10 @@ struct Index {
 setBlendMode(mode: drawing.BlendMode): void
 ```
 
-设置LayeredDrawableDescriptor的混合模式。对同一LayeredDrawableDescriptor对象多次调用setBlendMode接口时， 仅在绘制完成前的最后一次调用生效。该接口不支持动态切换。 LayeredDrawableDescriptor的默认绘制顺序为背景、蒙版、前景。设置了混合模式后，绘制顺序变为背景、前景、蒙版。 若设置的值无效，则按照未设置混合模式进行绘制。
+设置LayeredDrawableDescriptor的混合模式。对同一LayeredDrawableDescriptor对象多次调用setBlendMode接口时，
+仅在绘制完成前的最后一次调用生效。该接口不支持动态切换。
+LayeredDrawableDescriptor的默认绘制顺序为背景、蒙版、前景。设置了混合模式后，绘制顺序变为背景、前景、蒙版。
+若设置的值无效，则按照未设置混合模式进行绘制。
 
 **起始版本：** 23
 
@@ -320,7 +326,6 @@ setBlendMode(mode: drawing.BlendMode): void
 
 ```TypeScript
 import { DrawableDescriptor, LayeredDrawableDescriptor } from '@kit.ArkUI';
-import { image } from '@kit.ImageKit';
 import { drawing } from '@kit.ArkGraphics2D';
 
 @Entry

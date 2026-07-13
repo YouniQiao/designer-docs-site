@@ -6,7 +6,13 @@
 function importKey(keyAlias: string, options: HuksOptions, callback: AsyncCallback<HuksResult>): void
 ```
 
-导入明文密钥，使用Callback方式回调异步返回结果。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.importKeyItem<sup>9+</sup>](arkts-universalkeystore-importkeyitem-f.md#importkeyitem-1) > 替代。
+导入明文密钥，使用Callback方式回调异步返回结果。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.importKeyItem<sup>9+</sup>](arkts-universalkeystore-importkeyitem-f.md#importkeyitem-1)
+> 替代。
 
 **起始版本：** 8
 
@@ -80,7 +86,12 @@ huks.importKey(keyAlias, options, (err, data) => {
 function importKey(keyAlias: string, options: HuksOptions): Promise<HuksResult>
 ```
 
-导入明文密钥。使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [huks.importKeyItem<sup>9+</sup>](arkts-universalkeystore-importkeyitem-f.md#importkeyitem-2)替代。
+导入明文密钥。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [huks.importKeyItem<sup>9+</sup>](arkts-universalkeystore-importkeyitem-f.md#importkeyitem-2)替代。
 
 **起始版本：** 8
 

@@ -1,6 +1,7 @@
 # SkillInfo
 
-Provides information about a skill. A skill is an independent functional unit that can be called by an agent application.
+Provides information about a skill.
+A skill is an independent functional unit that can be called by an agent application.
 
 **Since:** 26.0.0
 
@@ -186,6 +187,24 @@ Indicates the source entries of the skill.
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Core
 
+## version
+
+```TypeScript
+readonly version?: string
+```
+
+Indicates the semantic version of the skill.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
 ## versionCode
 
 ```TypeScript
@@ -195,6 +214,24 @@ readonly versionCode: number
 Indicates the version code of the skill.
 
 **Type:** number
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
+## visibility
+
+```TypeScript
+readonly visibility?: string
+```
+
+Indicates the visibility of the skill.
+
+**Type:** string
 
 **Since:** 26.0.0
 

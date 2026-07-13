@@ -12,7 +12,11 @@ CounterV2Options定义CounterV2类型及样式。
 dateOptions?: CounterV2DateStyleOptions
 ```
 
-日期内联型CounterV2的样式。 默认值：显示0001/01/01的日期内联型CounterV2。 值为undefined时，按默认值处理。
+日期内联型CounterV2的样式。
+
+默认值：显示0001/01/01的日期内联型CounterV2。
+
+值为undefined时，按默认值处理。
 
 **类型：** CounterV2DateStyleOptions
 
@@ -30,7 +34,11 @@ dateOptions?: CounterV2DateStyleOptions
 direction?: Direction
 ```
 
-布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。
+布局方向。
+
+默认值：Direction.Auto
+
+值为undefined时，按默认值处理。
 
 **类型：** Direction
 
@@ -48,7 +56,11 @@ direction?: Direction
 inlineOptions?: CounterV2InlineStyleOptions
 ```
 
-普通数字内联调节型CounterV2的样式。 默认值：显示计数器为0的普通数字内联调节型CounterV2。 值为undefined时，按默认值处理。
+普通数字内联调节型CounterV2的样式。
+
+默认值：显示计数器为0的普通数字内联调节型CounterV2。
+
+值为undefined时，按默认值处理。
 
 **类型：** CounterV2InlineStyleOptions
 
@@ -66,7 +78,11 @@ inlineOptions?: CounterV2InlineStyleOptions
 numberOptions?: CounterV2NumberStyleOptions
 ```
 
-列表型和紧凑型CounterV2的样式。 默认值：显示计数器为0的列表型或紧凑型CounterV2。 值为undefined时，按默认值处理。
+列表型和紧凑型CounterV2的样式。
+
+默认值：显示计数器为0的列表型或紧凑型CounterV2。
+
+值为undefined时，按默认值处理。
 
 **类型：** CounterV2NumberStyleOptions
 

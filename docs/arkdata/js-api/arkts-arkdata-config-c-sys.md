@@ -1,6 +1,7 @@
 # Config (System API)
 
-Provides APIs for setting device-cloud synergy, including enabling and disabling device-cloud synergy, clearing data, and notifying data changes.
+Provides APIs for setting device-cloud synergy, including enabling and disabling device-cloud synergy, clearing
+data, and notifying data changes.
 
 **Since:** 10
 
@@ -11,7 +12,7 @@ Provides APIs for setting device-cloud synergy, including enabling and disabling
 ## Modules to Import
 
 ```TypeScript
-import { cloudData } from '@ohos.data.cloudData';
+import { cloudData } from '@kit.ArkData';
 ```
 
 ## batchQueryLastSyncInfo
@@ -68,7 +69,8 @@ static changeAppCloudSwitch(
     ): void
 ```
 
-Changes the device-cloud synergy setting for an application. This API uses an asynchronous callback to return the result.
+Changes the device-cloud synergy setting for an application. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -471,7 +473,8 @@ static cloudSync(
     ): Promise<void>
 ```
 
-Synchronizes data of a specified application on the device to the cloud. This API uses a promise to return the result.
+Synchronizes data of a specified application on the device to the cloud. This API uses a promise to return the
+result.
 
 **Since:** 20
 
@@ -803,7 +806,8 @@ try {
 static notifyDataChange(extInfo: ExtraData, userId?: number): Promise<void>
 ```
 
-Notifies the data changes in the cloud. This API uses a promise to return the result. You can specify the database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
+Notifies the data changes in the cloud. This API uses a promise to return the result. You can specify the
+database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
 
 **Since:** 11
 
@@ -864,7 +868,9 @@ try {
 static notifyDataChange(extInfo: ExtraData, callback: AsyncCallback<void>): void
 ```
 
-Notifies the data changes in the cloud with the specified information, such as the database and table names ( specified by the **extraData** field in **extInfo**). This API uses an asynchronous callback to return the result.
+Notifies the data changes in the cloud with the specified information, such as the database and table names (
+specified by the **extraData** field in **extInfo**). This API uses an asynchronous callback to return the
+result.
 
 **Since:** 11
 
@@ -920,7 +926,9 @@ try {
 static notifyDataChange(extInfo: ExtraData, userId: number, callback: AsyncCallback<void>): void
 ```
 
-Notifies the data changes of a user in the cloud. This API uses an asynchronous callback to return the result. You can also specify the database and tables with data changes in the **extraData** field in **extInfo**, and specify the user ID.
+Notifies the data changes of a user in the cloud. This API uses an asynchronous callback to return the result.
+You can also specify the database and tables with data changes in the **extraData** field in **extInfo**, and
+specify the user ID.
 
 **Since:** 11
 
@@ -1233,7 +1241,8 @@ static queryStatistics(
     ): Promise<Record<string, Array<StatisticInfo>>>
 ```
 
-Queries device-cloud data statistics, which include the data not synced, data synced and consistent, and data synced but inconsistent between the device and the cloud. This API uses a promise to return the result.
+Queries device-cloud data statistics, which include the data not synced, data synced and consistent, and data
+synced but inconsistent between the device and the cloud. This API uses a promise to return the result.
 
 **Since:** 12
 

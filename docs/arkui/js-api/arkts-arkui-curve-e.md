@@ -1,6 +1,7 @@
 # Curve
 
-Enumerates the interpolation curves. For details about the animation, see <!--RP1--> [Bezier Curve](../../../../../design/ux-design/animation-attributes.md)<!--RP1End-->.
+Enumerates the interpolation curves. For details about the animation, see <!--RP1-->
+[Bezier Curve](../../../../../design/ux-design/animation-attributes.md)<!--RP1End-->.
 
 **Since:** 7
 
@@ -28,7 +29,8 @@ The animation maintains a constant speed throughout the process.
 Ease
 ```
 
-The animation starts slowly, accelerates, and then decelerates before ending. The curve is cubic-bezier(0.25, 0.1, 0.25, 1.0).
+The animation starts slowly, accelerates, and then decelerates before ending. The curve is cubic-bezier(0.25, 0.1,
+0.25, 1.0).
 
 **Since:** 7
 
@@ -44,7 +46,8 @@ The animation starts slowly, accelerates, and then decelerates before ending. Th
 EaseIn
 ```
 
-The animation starts at a low speed and then picks up speed until the end. The cubic-bezier(0.42, 0.0, 1.0, 1.0) is used.
+The animation starts at a low speed and then picks up speed until the end. The cubic-bezier(0.42, 0.0, 1.0, 1.0)
+is used.
 
 **Since:** 7
 

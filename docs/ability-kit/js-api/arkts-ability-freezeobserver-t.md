@@ -4,7 +4,8 @@
 export type FreezeObserver = () => void
 ```
 
-Defines an observer for the main thread freeze event of the application. It is used by the application to customize freeze information.
+Defines an observer for the main thread freeze event of the application. It is used by the application to customize
+freeze information.
 
 **Since:** 18
 

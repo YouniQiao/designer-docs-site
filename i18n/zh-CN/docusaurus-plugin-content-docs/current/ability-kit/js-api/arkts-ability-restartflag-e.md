@@ -68,7 +68,9 @@ NO_RESTART = 0xFFFF
 RESTART_WHEN_CPP_CRASH = 0x0004
 ```
 
-发生CPP_CRASH时重启应用。 **模型约束**：此接口仅可在Stage模型下使用。
+发生CPP_CRASH时重启应用。
+
+**模型约束**：此接口仅可在Stage模型下使用。
 
 **起始版本：** 24
 

@@ -1,6 +1,6 @@
 # CliAuthInfo (System API)
 
-CLI authorization result information.
+Represents CLI authorization information.
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ CLI authorization result information.
 ## Modules to Import
 
 ```TypeScript
-import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAccessCtrl';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## authorizationResults
@@ -20,7 +20,10 @@ import { Context, Permissions, PermissionRequestResult } from '@ohos.abilityAcce
 authorizationResults: Array<boolean>
 ```
 
-User authorization result list used for authorization result generation only. Each element corresponds to the permission name at the same index, and the two arrays must have the same length.
+List of authorization results, and the array length must be equal to permissionNames.length. The value **true**
+indicates that the authorization is successful and the CLI command can obtain the corresponding permission. The
+value **false** indicates that the authorization is denied and the CLI command cannot obtain the corresponding
+permission.
 
 **Type:** Array<boolean>
 
@@ -38,7 +41,7 @@ User authorization result list used for authorization result generation only. Ea
 cliInfo: CliInfo
 ```
 
-CLI command information.
+CLI information corresponding to the authorization information.
 
 **Type:** CliInfo
 
@@ -56,7 +59,7 @@ CLI command information.
 permissionNames: Array<Permissions>
 ```
 
-List of permission names used to generate authorization results. Each element must not be empty and cannot exceed 256 characters.
+List of permission names. Each element cannot be empty and its length cannot exceed 256 characters.
 
 **Type:** Array<Permissions>
 

@@ -30,7 +30,9 @@ Bundle name of the application.
 readonly enable: boolean
 ```
 
-Whether the application notification is enabled. - **true**: enabled. - **false**: disabled.
+Whether the application notification is enabled.
+- **true**: enabled.
+- **false**: disabled.
 
 **Type:** boolean
 

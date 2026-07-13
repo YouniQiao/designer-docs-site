@@ -1,8 +1,10 @@
 # WhiteBalance (System API)
 
-**WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md#whitebalancequery). It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance value.
+**WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md).
+It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance
+value.
 
-**Inheritance/Implementation:** WhiteBalance extends [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md#whitebalancequery)
+**Inheritance/Implementation:** WhiteBalance extends [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md)
 
 **Since:** 20
 
@@ -13,7 +15,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getColorTint

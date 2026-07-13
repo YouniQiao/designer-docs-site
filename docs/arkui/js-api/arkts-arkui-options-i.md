@@ -40,7 +40,8 @@ Called when the application is destroyed or called when the page is redirected t
 onHide?(): void
 ```
 
-Listens for page hiding. Called when the page disappears.
+Listens for page hiding.
+Called when the page disappears.
 
 **Since:** 4
 
@@ -142,7 +143,10 @@ Called when the page is displayed.
 data?: Data
 ```
 
-Data model of the page that can be converted into a JSON object. The attribute name cannot start with $ or an underscore (_) or contain the reserved words such as for, if, show, and tid. For a function, the return value must be an object. Set the value of data to the return value of the function during page initialization.
+Data model of the page that can be converted into a JSON object.
+The attribute name cannot start with $ or an underscore (_) or contain the reserved words such as for, if, show, and tid.
+For a function, the return value must be an object.
+Set the value of data to the return value of the function during page initialization.
 
 **Type:** Data
 

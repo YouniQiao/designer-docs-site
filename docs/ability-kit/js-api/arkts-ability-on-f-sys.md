@@ -3,20 +3,32 @@
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## on('activeStateChange')
 
 ```TypeScript
-function on(
-    type: 'activeStateChange',
+function on(type: 'activeStateChange',
     permissionList: Array<Permissions>,
-    callback: Callback<ActiveChangeResponse>
-  ): void
+    callback: Callback<ActiveChangeResponse>): void
 ```
 
-Subscribes to the change of active state of the specified permission.
+Subscribes to permission usage status change events for a specified permission list. Permission usage status
+changes are triggered by calls to [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) and
+[stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1). After a successful subscription, when the
+permission usage status changes, the callback function is triggered, returning an
+[ActiveChangeResponse](arkts-ability-activechangeresponse-i-sys.md) object containing details of the permission
+usage status change. This API uses an asynchronous callback to return the result.
+
+Multiple callback functions are allowed to be subscribed for the same permissionList.
+
+> **NOTE**
+> It is not allowed to subscribe the same callback function using two permissionLists that have an intersection.
+> That is, if two permissionLists contain the same permission name, the same callback function cannot be used for
+subscription.
+> This API is typically used in conjunction with [off](privacyManager.off).
+> When listening is no longer needed, off should be called to unsubscribe.
 
 **Since:** 9
 
@@ -30,21 +42,21 @@ Subscribes to the change of active state of the specified permission.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'activeStateChange' | Yes | Event type. This parameter cannot change. |
-| permissionList | Array&lt;Permissions&gt; | Yes | Indicates the permission list, which are specified. This parameter cannot be null or empty. |
-| callback | Callback&lt;ActiveChangeResponse&gt; | Yes | Callback for listening permission change. |
+| type | 'activeStateChange' | Yes | Event type. The value is **'activeStateChange'**, which indicates thepermission usage change. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of subscribed permission names. An empty value indicatessubscription to the usage status changes of all permissions.Passing an invalid value returns error code 12100001.<br>Value constraint: The array length cannot exceed 1024. |
+| callback | Callback&lt;ActiveChangeResponse&gt; | Yes | Callback used to return the object of subscribing to statechanges of the specified permission. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission "ohos.permission.PERMISSION_USED_STATS". |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. Interface caller does not have permission"ohos.permission.PERMISSION_USED_STATS". |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system app. Interface caller is not a system app. |
-| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionList exceeds the size limit, or the permissionNames in the list are all invalid. |
+| [12100001](../errorcode-access-token.md#12100001-invalid-parameters) | Invalid parameter. The permissionList exceeds the size limit, or thepermissionNames in the list are all invalid. |
 | [12100004](../errorcode-access-token.md#12100004-listener-apis-not-used-in-pairs) | The API is used repeatedly with the same input. |
 | [12100005](../errorcode-access-token.md#12100005-listener-overflows) | The registration time has exceeded the limit. |
-| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | The service is abnormal. |
+| [12100007](../errorcode-access-token.md#12100007-system-service-not-working-properly) | Service exception. |
 | [12100008](../errorcode-access-token.md#12100008-out-of-memory) | Out of memory. |
 
 **Example**

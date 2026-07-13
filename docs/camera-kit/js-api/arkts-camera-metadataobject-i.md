@@ -1,6 +1,8 @@
 # MetadataObject
 
-Implements the basic metadata object used for camera detection. It serves as the data source of the camera information in [CameraInput]camera.CameraInput. It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')]camera.MetadataOutput.on(type: 'metadataObjectsAvailable', callback: AsyncCallback<Array<MetadataObject>>).
+Implements the basic metadata object used for camera detection. It serves as the data source of the camera
+information in [CameraInput](arkts-camera-camerainput-i.md). It is obtained by calling metadataOutput.
+[on('metadataObjectsAvailable')](arkts-camera-metadataoutput-i.md#on-1).
 
 **Since:** 10
 
@@ -24,57 +26,9 @@ Metadata rectangle.
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
-
-## confidence
-
-```TypeScript
-readonly confidence: double
-```
-
-Confidence of the detection, with a value range of [0, 1].
-
-**Type:** double
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## type
-
-```TypeScript
-readonly type: MetadataObjectType
-```
-
-Metadata object type.
-
-**Type:** MetadataObjectType
-
-**Since:** 10
-
-**Atomic service API:** From API version 19 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## objectId
-
-```TypeScript
-readonly objectId: int
-```
-
-Metadata object ID.
-
-**Type:** int
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## isLockFocusTracked
 
@@ -88,25 +42,41 @@ Whether the focus is locked and being tracked currently.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## timestamp
 
 ```TypeScript
-readonly timestamp: int
+readonly timestamp: number
 ```
 
 Current timestamp, in nanoseconds (ns).
 
-**Type:** int
+**Type:** number
 
 **Since:** 10
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## type
+
+```TypeScript
+readonly type: MetadataObjectType
+```
+
+Metadata object type.
+
+**Type:** MetadataObjectType
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

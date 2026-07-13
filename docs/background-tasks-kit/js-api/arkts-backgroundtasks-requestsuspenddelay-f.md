@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskManager';
+import { backgroundTaskManager } from '@kit.BackgroundTasksKit';
 ```
 
 ## requestSuspendDelay
@@ -12,7 +12,12 @@ import { backgroundTaskManager } from '@ohos.resourceschedule.backgroundTaskMana
 function requestSuspendDelay(reason: string, callback: Callback<void>): DelaySuspendInfo
 ```
 
-Requests a transient task. > **NOTE** > > For details about the constraints on requesting and using a transient task, see > [Transient Task (ArkTS)](../../../../task-management/transient-task.md#constraints).
+Requests a transient task.
+
+> **NOTE**
+>
+> For details about the constraints on requesting and using a transient task, see
+> [Transient Task (ArkTS)](../../../../task-management/transient-task.md#constraints).
 
 **Since:** 9
 

@@ -12,7 +12,9 @@ SpanStyle
 length: number
 ```
 
-设置属性字符串样式的长度。 当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。
+设置属性字符串样式的长度。
+
+当length的值小于0或超出字符串长度与start的差值时，按字符串长度与start的差值处理。
 
 **类型：** number
 

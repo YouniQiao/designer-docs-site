@@ -1,6 +1,7 @@
 # @ohos.app.ability.appMemoryOptimizer
 
-appMemoryOptimizer提供应用内存优化的能力，包括释放指定文件的文件页缓存、释放指定模块的文件页缓存等。
+appMemoryOptimizer provides application memory optimization capabilities, including performing file page cache
+eviction on specified files, performing file page cache eviction on specified modules.
 
 **Since:** 26.0.0
 
@@ -16,10 +17,12 @@ import { appMemoryOptimizer } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[evictFilePages](arkts-appmemoryoptimizer-evictfilepages-f-sys.md#evictFilePages-1) | 向系统发出释放指定文件的文件页缓存请求，系统会根据当前内存状况决定是否真正执行释放，不保证一定释放成功。 |
-| <!--DelRow-->[evictModuleFilePages](arkts-appmemoryoptimizer-evictmodulefilepages-f-sys.md#evictModuleFilePages-1) | 向系统发出释放指定模块的文件页缓存请求，系统会根据当前内存状况决定是否真正执行释放，不保证一定释放成功。 系统会读取对应模块中的memory_optimizer.json配置文件，获取evictFilePages数组，然后对数组中的文件执行文件页缓存释放操作。 配置文件路径：{模块目录}/src/main/resources/rawfile/memory_optimizer.json 配置文件中evictFilePages数组里的文件名必须以 .so、.hap 或 .hsp 结尾。 |
+| [evictFilePages](arkts-ability-evictfilepages-f-sys.md#evictfilepages-1) | Sends a request to the system to release file page cache of specified files. The system determineswhether to actually perform the release based on the current memory status, and success is not guaranteed. |
+| [evictModuleFilePages](arkts-ability-evictmodulefilepages-f-sys.md#evictmodulefilepages-1) | Sends a request to the system to release file page cache of specified modules. The system determineswhether to actually perform the release based on the current memory status, and success is not guaranteed.The system reads the memory_optimizer.json configuration file of the corresponding module, obtains theevictFilePages array, and performs file page cache eviction on the files in the array.Configuration file path: {Module directory}/src/main/resources/rawfile/memory_optimizer.jsonFile names in the evictFilePages array of the configuration file must end with .so, .hap, or .hsp. |
+<!--DelEnd-->
 

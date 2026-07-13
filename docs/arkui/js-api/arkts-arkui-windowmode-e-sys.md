@@ -42,7 +42,8 @@ The application is displayed in full screen.
 PRIMARY = 3
 ```
 
-The application is displayed in the primary window in split-screen mode. In top-bottom splits, the top screen is primary; in left-right splits, the left screen is primary.
+The application is displayed in the primary window in split-screen mode. In top-bottom splits, the top screen is
+primary; in left-right splits, the left screen is primary.
 
 **Since:** 7
 
@@ -56,7 +57,8 @@ The application is displayed in the primary window in split-screen mode. In top-
 SECONDARY = 4
 ```
 
-The application is displayed in the secondary window in split-screen mode. In top-bottom splits, the bottom screen is secondary; in left-right splits, the right screen is secondary.
+The application is displayed in the secondary window in split-screen mode. In top-bottom splits, the bottom
+screen is secondary; in left-right splits, the right screen is secondary.
 
 **Since:** 7
 

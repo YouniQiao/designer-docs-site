@@ -9,7 +9,7 @@ Declare Component AtomicServiceWeb.
 ## Modules to Import
 
 ```TypeScript
-import { AtomicServiceWeb, OnMessageEvent, OnPageEndEvent, OnHttpErrorReceiveEvent, OnLoadInterceptEvent, WebHeader, OnProgressChangeEvent, OnErrorReceiveEvent, OnPageBeginEvent, OnLoadInterceptCallback, AtomicServiceWebController } from '@ohos.atomicservice.AtomicServiceWeb';
+import { AtomicServiceWeb, OnMessageEvent, OnPageEndEvent, OnHttpErrorReceiveEvent, OnLoadInterceptEvent, WebHeader, OnProgressChangeEvent, OnErrorReceiveEvent, OnPageBeginEvent, OnLoadInterceptCallback, AtomicServiceWebController } from '@kit.ArkUI';
 ```
 
 ## controller
@@ -124,7 +124,8 @@ Sets the nested scroll options.
 onControllerAttached?: Callback<void>
 ```
 
-Triggered when The controller is bound to the web component, this controller must be a WebviewController. This callback can not use the interface about manipulating web pages.
+Triggered when The controller is bound to the web component, this controller must be a WebviewController.
+This callback can not use the interface about manipulating web pages.
 
 **Type:** Callback<void>
 

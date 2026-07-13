@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { commonEventManager } from '@ohos.commonEventManager';
+import { commonEventManager } from '@kit.BasicServicesKit';
 ```
 
 ## subscribe
@@ -34,7 +34,7 @@ Subscribes to a common event. This API uses an asynchronous callback to return t
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | capability not supported |
 | [1500007](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500007-failed-to-send-a-request-through-ipc) | Failed to send the message to the common event service. |
 | [1500008](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500008-failed-to-initialize-the-common-event-service) | Failed to initialize the common event service. |
-| [1500010](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500010-the-number-of-subscribers-exceeds-the-upper-limit) | The count of subscriber exceed system specification.<br>**Applicable version:** 20 |
+| [1500010](../../apis-basic-services-kit/errorcode-CommonEventService.md#1500010-the-number-of-subscribers-exceeds-the-upper-limit) | The count of subscriber exceed system specification.<br>**Applicable version:** 20 and later |
 
 **Example**
 

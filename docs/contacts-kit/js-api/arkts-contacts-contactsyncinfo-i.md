@@ -9,7 +9,7 @@ Information about contact synchronization for the calling application.
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## completedBatches
@@ -18,7 +18,9 @@ import { contact } from '@ohos.contact';
 completedBatches: Array<number>
 ```
 
-Indicates the array of batch identifiers for contacts that have been synchronized successfully. The range of values is from 1 to totalBatches.
+Indicates the array of batch identifiers for contacts that have been synchronized successfully.
+
+The range of values is from 1 to totalBatches.
 
 **Type:** Array<number>
 

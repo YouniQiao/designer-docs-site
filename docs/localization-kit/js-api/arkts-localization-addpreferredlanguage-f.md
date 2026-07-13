@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## addPreferredLanguage
@@ -18,7 +18,7 @@ Adds a preferred language to the specified position on the preferred language li
 
 **Deprecated since:** 9
 
-**Substitutes:** addPreferredLanguage
+**Substitutes:** [addPreferredLanguage](arkts-localization-system-c-sys.md#addpreferredlanguage-1)
 
 **Required permissions:** ohos.permission.UPDATE_CONFIGURATION
 

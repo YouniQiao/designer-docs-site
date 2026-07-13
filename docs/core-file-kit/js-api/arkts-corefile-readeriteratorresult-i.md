@@ -9,7 +9,7 @@ Represents the information obtained by the **ReaderIterator** object.
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## done
@@ -18,7 +18,8 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 done: boolean
 ```
 
-Whether the iteration is complete. The value **true** means the iteration is complete; the value **false** means the opposite.
+Whether the iteration is complete. The value **true** means the iteration is complete; the value **false** means
+the opposite.
 
 **Type:** boolean
 

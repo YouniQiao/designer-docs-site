@@ -1,6 +1,7 @@
 # DistributedAccountAbility
 
-Provides APIs for querying and updating the login state of a distributed account. You must obtain a **DistributedAccountAbility** instance first.
+Provides APIs for querying and updating the login state of a distributed account. You must obtain a
+**DistributedAccountAbility** instance first.
 
 **Since:** 7
 
@@ -9,7 +10,7 @@ Provides APIs for querying and updating the login state of a distributed account
 ## Modules to Import
 
 ```TypeScript
-import { distributedAccount } from '@ohos.account.distributedAccount';
+import { distributedAccount } from '@kit.BasicServicesKit';
 ```
 
 ## getOsAccountDistributedInfo
@@ -116,7 +117,13 @@ try {
 queryOsAccountDistributedInfo(callback: AsyncCallback<DistributedInfo>): void
 ```
 
-Queries the distributed account information. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-1) > instead.
+Queries the distributed account information. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-1)
+> instead.
 
 **Since:** 7
 
@@ -158,7 +165,13 @@ accountAbility.queryOsAccountDistributedInfo(
 queryOsAccountDistributedInfo(): Promise<DistributedInfo>
 ```
 
-Queries the distributed account information. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-2) > instead.
+Queries the distributed account information. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [getOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#getosaccountdistributedinfo-2)
+> instead.
 
 **Since:** 7
 
@@ -197,7 +210,8 @@ accountAbility.queryOsAccountDistributedInfo().then((data: distributedAccount.Di
 setOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallback<void>): void
 ```
 
-Sets the distributed account information. This API uses an asynchronous callback to return the result. This API can be called only by system applications.
+Sets the distributed account information. This API uses an asynchronous callback to return the result.
+This API can be called only by system applications.
 
 **Since:** 9
 
@@ -253,7 +267,8 @@ try {
 setOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 ```
 
-Sets the distributed account information. This API uses a promise to return the result. This API can be called only by system applications.
+Sets the distributed account information. This API uses a promise to return the result.
+This API can be called only by system applications.
 
 **Since:** 9
 
@@ -312,7 +327,13 @@ try {
 updateOsAccountDistributedInfo(accountInfo: DistributedInfo, callback: AsyncCallback<void>): void
 ```
 
-Updates the distributed account information. This API uses an asynchronous callback to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-1) > instead.
+Updates the distributed account information. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-1)
+> instead.
 
 **Since:** 7
 
@@ -357,7 +378,13 @@ accountAbility.updateOsAccountDistributedInfo(accountInfo, (err: BusinessError) 
 updateOsAccountDistributedInfo(accountInfo: DistributedInfo): Promise<void>
 ```
 
-Updates the distributed account information. This API uses a promise to return the result. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. You are advised to use > [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-2) > instead.
+Updates the distributed account information. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. You are advised to use
+> [setOsAccountDistributedInfo](arkts-basicservices-distributedaccountability-i.md#setosaccountdistributedinfo-2)
+> instead.
 
 **Since:** 7
 

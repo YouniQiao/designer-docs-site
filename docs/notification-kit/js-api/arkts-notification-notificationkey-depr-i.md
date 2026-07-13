@@ -1,6 +1,9 @@
 # NotificationKey
 
-> **NOTE** > This API is supported since API version 7 and deprecated since API version 9. <!--Del-->You are advised to use > [notificationManager.NotificationKey](arkts-notification-notificationkey-i-sys.md#notificationkey).<! > --DelEnd-->
+> **NOTE**
+> This API is supported since API version 7 and deprecated since API version 9. <!--Del-->You are advised to use
+> [notificationManager.NotificationKey](arkts-notification-notificationkey-i-sys.md).<!
+> --DelEnd-->
 
 **Since:** 7
 

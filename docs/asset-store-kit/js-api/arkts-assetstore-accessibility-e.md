@@ -26,7 +26,9 @@ The asset can be accessed after the device is powered on.
 DEVICE_FIRST_UNLOCKED = 1
 ```
 
-The asset can be accessed only after the device is unlocked for the first time. **Note**: If no lock screen password is set, this option is equivalent to **DEVICE_POWERED_ON**.
+The asset can be accessed only after the device is unlocked for the first time.
+
+**Note**: If no lock screen password is set, this option is equivalent to **DEVICE_POWERED_ON**.
 
 **Since:** 11
 
@@ -40,7 +42,9 @@ The asset can be accessed only after the device is unlocked for the first time. 
 DEVICE_UNLOCKED = 2
 ```
 
-The asset can be accessed only when the device is unlocked. **Note**: If no lock screen password is set, this option is equivalent to **DEVICE_POWERED_ON**.
+The asset can be accessed only when the device is unlocked.
+
+**Note**: If no lock screen password is set, this option is equivalent to **DEVICE_POWERED_ON**.
 
 **Since:** 11
 

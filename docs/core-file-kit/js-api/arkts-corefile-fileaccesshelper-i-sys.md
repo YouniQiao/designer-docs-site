@@ -13,7 +13,7 @@ Provides a **FileAccessHelper** object.
 ## Modules to Import
 
 ```TypeScript
-import { fileAccess } from '@ohos.file.fileAccess';
+import { fileAccess } from '@kit.CoreFileKit';
 ```
 
 ## access
@@ -315,7 +315,8 @@ try {
 copy(sourceUri: string, destUri: string, force: boolean, callback: AsyncCallback<Array<CopyResult>>): void
 ```
 
-Copies a file or directory. If a file with the same name already exists, you can choose whether to forcibly overwrite the original file. This API uses an asynchronous callback to return the result.
+Copies a file or directory. If a file with the same name already exists, you can choose whether to forcibly
+overwrite the original file. This API uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -994,7 +995,8 @@ async function getRelativePath() {
 getFileInfoFromRelativePath(relativePath: string, callback: AsyncCallback<FileInfo>) : void
 ```
 
-Obtains a **FileInfo** object based on a relative path. This API uses an asynchronous callback to return the result.
+Obtains a **FileInfo** object based on a relative path. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -1156,7 +1158,10 @@ try {
 getRoots(): Promise<RootIterator>
 ```
 
-Obtains information about the device root nodes of the file management services associated with the **Helper** object. This API uses a promise to return a **RootIterator** object. You can use [next](arkts-corefile-fileiterator-i-sys.md#next-1) to return [RootInfo](arkts-corefile-rootinfo-i-sys.md#rootinfo).
+Obtains information about the device root nodes of the file management services associated with the **Helper**
+object.
+This API uses a promise to return a **RootIterator** object. You can use
+[next](arkts-corefile-fileiterator-i-sys.md#next-1) to return [RootInfo](arkts-corefile-rootinfo-i-sys.md).
 
 **Since:** 9
 
@@ -1251,7 +1256,10 @@ async function getRoots() {
 getRoots(callback: AsyncCallback<RootIterator>): void
 ```
 
-Obtains information about the device root nodes of the file management services associated with the **Helper** object. This API uses an asynchronous callback to return a **RootIterator** object. You can use [next](arkts-corefile-fileiterator-i-sys.md#next-1) to return [RootInfo](arkts-corefile-rootinfo-i-sys.md#rootinfo).
+Obtains information about the device root nodes of the file management services associated with the **Helper**
+object.
+This API uses an asynchronous callback to return a **RootIterator** object. You can use
+[next](arkts-corefile-fileiterator-i-sys.md#next-1) to return [RootInfo](arkts-corefile-rootinfo-i-sys.md).
 
 **Since:** 9
 
@@ -1543,7 +1551,8 @@ try {
 move(sourceFile: string, destFile: string) : Promise<string>
 ```
 
-Moves a file or directory. This API uses a promise to return the result. Currently, this API does not support move of files or directories across devices.
+Moves a file or directory. This API uses a promise to return the result. Currently, this API does not support
+move of files or directories across devices.
 
 **Since:** 9
 
@@ -1640,7 +1649,8 @@ async function moveFile01() {
 move(sourceFile: string, destFile: string, callback: AsyncCallback<string>): void
 ```
 
-Moves a file or directory. This API uses an asynchronous callback to return the result. Currently, this API does not support move of files or directories across devices.
+Moves a file or directory. This API uses an asynchronous callback to return the result. Currently, this API does
+not support move of files or directories across devices.
 
 **Since:** 9
 
@@ -1734,7 +1744,11 @@ try {
 moveFile(sourceUri: string, destUri: string, fileName: string): Promise<string>
 ```
 
-Moves a file, and renames it if a file with the same name already exists in the destination directory. This API uses a promise to return the result. If a file with the same name exists (that is, a file moving conflict occurs), you can rename the file to be moved and save it to the destination directory. Currently, this API does not support move of files across devices.
+Moves a file, and renames it if a file with the same name already exists in the destination directory. This API
+uses a promise to return the result.
+If a file with the same name exists (that is, a file moving conflict occurs), you can rename the file to be moved
+and save it to the destination directory.
+Currently, this API does not support move of files across devices.
 
 **Since:** 11
 
@@ -1825,7 +1839,11 @@ async function moveFile01() {
 moveFile(sourceUri: string, destUri: string, fileName: string, callback: AsyncCallback<string>): void
 ```
 
-Moves a file, and renames it if a file with the same name already exists in the destination directory. This API uses an asynchronous callback to return the result. If a file with the same name exists (that is, a file moving conflict occurs), you can rename the file to be moved and save it to the destination directory. Currently, this API does not support move of files across devices.
+Moves a file, and renames it if a file with the same name already exists in the destination directory. This API
+uses an asynchronous callback to return the result.
+If a file with the same name exists (that is, a file moving conflict occurs), you can rename the file to be moved
+and save it to the destination directory.
+Currently, this API does not support move of files across devices.
 
 **Since:** 11
 
@@ -1913,7 +1931,9 @@ try {
 moveItem(sourceUri: string, destUri: string, force?: boolean): Promise<Array<MoveResult>>
 ```
 
-Moves a file or directory. This API uses a promise to return the result. You can forcibly overwrite the file with the same name in the destination directory. Currently, this API does not support move of files or directories across devices.
+Moves a file or directory. This API uses a promise to return the result.
+You can forcibly overwrite the file with the same name in the destination directory.
+Currently, this API does not support move of files or directories across devices.
 
 **Since:** 11
 
@@ -1978,7 +1998,8 @@ Moves a file or directory. This API uses a promise to return the result. You can
 moveItem(sourceUri: string, destUri: string, callback: AsyncCallback<Array<MoveResult>>): void
 ```
 
-Moves a file or directory. This API uses an asynchronous callback to return the result. Currently, this API does not support move of files or directories across devices.
+Moves a file or directory. This API uses an asynchronous callback to return the result.
+Currently, this API does not support move of files or directories across devices.
 
 **Since:** 11
 
@@ -2073,7 +2094,9 @@ try {
 moveItem(sourceUri: string, destUri: string, force: boolean, callback: AsyncCallback<Array<MoveResult>>): void
 ```
 
-Moves a file or directory. This API uses an asynchronous callback to return the result. You can forcibly overwrite the file with the same name in the destination directory. Currently, this API does not support move of files or directories across devices.
+Moves a file or directory. This API uses an asynchronous callback to return the result.
+You can forcibly overwrite the file with the same name in the destination directory.
+Currently, this API does not support move of files or directories across devices.
 
 **Since:** 11
 
@@ -2357,7 +2380,8 @@ try {
 query(uri: string, metaJson: string) : Promise<string>
 ```
 
-Queries the attribute information about a file or directory based on a URI. This API uses a promise to return the result.
+Queries the attribute information about a file or directory based on a URI. This API uses a promise to return the
+result.
 
 **Since:** 10
 
@@ -2375,8 +2399,8 @@ Queries the attribute information about a file or directory based on a URI. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | File or directory URI obtained from [FileInfo](arkts-corefile-fileinfo-i-sys.md#fileinfo). |
-| metaJson | string | Yes | Attribute [FILEKEY](arkts-corefile-filekey-e-sys.md#filekey) to query. |
+| uri | string | Yes | File or directory URI obtained from [FileInfo](arkts-corefile-fileinfo-i-sys.md). |
+| metaJson | string | Yes | Attribute [FILEKEY](arkts-corefile-filekey-e-sys.md) to query. |
 
 **Return value:**
 
@@ -2413,7 +2437,8 @@ async function getQuery01() {
 query(uri: string, metaJson: string, callback: AsyncCallback<string>) : void
 ```
 
-Queries the attribute information about a file or directory based on a URI. This API uses an asynchronous callback to return the result.
+Queries the attribute information about a file or directory based on a URI. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 10
 
@@ -2431,8 +2456,8 @@ Queries the attribute information about a file or directory based on a URI. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uri | string | Yes | File or directory URI obtained from [FileInfo](arkts-corefile-fileinfo-i-sys.md#fileinfo). |
-| metaJson | string | Yes | Attribute [FILEKEY](arkts-corefile-filekey-e-sys.md#filekey) to query. |
+| uri | string | Yes | File or directory URI obtained from [FileInfo](arkts-corefile-fileinfo-i-sys.md). |
+| metaJson | string | Yes | Attribute [FILEKEY](arkts-corefile-filekey-e-sys.md) to query. |
 | callback | AsyncCallback&lt;string&gt; | Yes | Callback used to return a JSON string that contains the fileattribute and the value obtained. |
 
 **Example**
@@ -2469,7 +2494,8 @@ async function getQuery02() {
 registerObserver(uri: string, notifyForDescendants: boolean, callback: Callback<NotifyMessage>): void
 ```
 
-Registers a callback to listen for a URI. URIs and callbacks can be in many-to-many relationships. You are advised to use one callback to listen for one URI.
+Registers a callback to listen for a URI. URIs and callbacks can be in many-to-many relationships. You are
+advised to use one callback to listen for one URI.
 
 **Since:** 10
 

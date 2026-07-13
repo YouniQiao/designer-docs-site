@@ -2,7 +2,7 @@
 
 class of static subscriber extension context.
 
-**Inheritance/Implementation:** FenceExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)
+**Inheritance/Implementation:** FenceExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 14
 
@@ -11,7 +11,7 @@ class of static subscriber extension context.
 ## Modules to Import
 
 ```TypeScript
-import { FenceExtensionContext } from '@ohos.app.ability.FenceExtensionContext';
+import { FenceExtensionContext } from '@kit.LocationKit';
 ```
 
 ## startAbility
@@ -20,7 +20,11 @@ import { FenceExtensionContext } from '@ohos.app.ability.FenceExtensionContext';
 startAbility(want: Want): Promise<void>
 ```
 
-Starts a new service extension ability. If the target service extension ability is visible, you can start the target service extension ability; If the target service extension ability is invisible, you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible service extension ability. If the target service extension ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
+Starts a new service extension ability.
+If the target service extension ability is visible, you can start the target service extension ability;
+If the target service extension ability is invisible,
+you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible service extension ability.
+If the target service extension ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
 
 **Since:** 14
 

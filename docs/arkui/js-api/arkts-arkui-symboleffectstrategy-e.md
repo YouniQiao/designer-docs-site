@@ -1,6 +1,7 @@
 # SymbolEffectStrategy
 
-Enumerates symbol effect types. Once applied, the symbol effect becomes active instantly, eliminating the need for triggering.
+Enumerates symbol effect types. Once applied, the symbol effect becomes active instantly, eliminating the need for
+triggering.
 
 **Since:** 11
 

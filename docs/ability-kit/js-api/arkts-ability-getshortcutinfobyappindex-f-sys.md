@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## getShortcutInfoByAppIndex
@@ -12,7 +12,10 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 function getShortcutInfoByAppIndex(bundleName: string, appIndex: number): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the index of an application clone. No permission is required for obtaining the caller's own information.
+Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md) of the current user based on the index of an
+application clone.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 20
 
@@ -33,7 +36,7 @@ Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo)
 
 | Type | Description |
 | --- | --- |
-| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md#shortcutinfo) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i.md) objects obtained. |
 
 **Error codes:**
 

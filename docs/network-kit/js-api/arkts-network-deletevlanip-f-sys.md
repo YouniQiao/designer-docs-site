@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## deleteVlanIp
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function deleteVlanIp(ifName: string, vlanId: number, address: LinkAddress): Promise<void>
 ```
 
-Delete ip of vlan interface by vlanId. To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
+Delete ip of vlan interface by vlanId.
+To invoke this method, you must have the {@code ohos.permission.CONNECTIVITY_INTERNAL} permission.
 
 **Since:** 23
 

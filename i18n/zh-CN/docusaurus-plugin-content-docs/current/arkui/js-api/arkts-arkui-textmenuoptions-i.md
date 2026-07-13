@@ -12,7 +12,9 @@
 showMode?: TextMenuShowMode
 ```
 
-菜单的显示模式。 默认值：TextMenuShowMode.DEFAULT
+菜单的显示模式。
+
+默认值：TextMenuShowMode.DEFAULT
 
 **类型：** TextMenuShowMode
 

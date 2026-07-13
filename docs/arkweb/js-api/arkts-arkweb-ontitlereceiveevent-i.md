@@ -12,7 +12,8 @@ Defines the triggered function when the title of the main application document c
 isRealTitle?: boolean
 ```
 
-Mark the source of the title. If it is true, the title is derived from the H5 title element; If it is false, it is calculated from the URL. By default, it is calculated from the URL.
+Mark the source of the title. If it is true, the title is derived from the H5 title element;
+If it is false, it is calculated from the URL. By default, it is calculated from the URL.
 
 **Type:** boolean
 

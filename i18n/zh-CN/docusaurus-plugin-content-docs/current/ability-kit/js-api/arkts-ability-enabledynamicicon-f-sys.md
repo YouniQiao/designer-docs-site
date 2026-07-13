@@ -35,11 +35,11 @@ function enableDynamicIcon(bundleName: string, moduleName: string): Promise<void
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700002](../errorcode-bundle.md#17700002-指定的modulename不存在) | The specified moduleName is not found. |
 | [17700304](../errorcode-bundle.md#17700304-动态图标使能失败) | Failed to enable the dynamic icon. |
-| [17700307](../errorcode-bundle.md#17700307-由于存在自定义主题动态图标无法生效) | Dynamic icons cannot take effect due to existing custom themes.<br>**适用版本：** 20 |
+| [17700307](../errorcode-bundle.md#17700307-由于存在自定义主题动态图标无法生效) | Dynamic icons cannot take effect due to existing custom themes.<br>**适用版本：** 20+ |
 
 **示例：**
 
@@ -71,7 +71,11 @@ try {
 function enableDynamicIcon(bundleName: string, moduleName: string, option?: BundleOptions): Promise<void>
 ```
 
-根据给定的bundleName、moduleName和option使能动态图标。使用Promise异步回调。 使能当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。 使能其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。
+根据给定的bundleName、moduleName和option使能动态图标。使用Promise异步回调。
+
+使能当前用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON。
+
+使能其他用户下的动态图标信息时需要申请权限ohos.permission.ACCESS_DYNAMIC_ICON 和 ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS。
 
 **起始版本：** 20
 

@@ -1,57 +1,68 @@
 # @ohos.data.distributedKVStore
 
-The **distributedKVStore** module implements collaboration between databases for different devices that form a Super Device. You can use the APIs provided by this module to save application data to a distributed key-value (KV) store and perform operations, such as adding, deleting, modifying, and querying data, and synchronizing data across devices. The **distributedKVStore** module provides the following functionalities: - [KVManager]{@link distributedKVStore.KVManagerConfig}: provides a **KVManager** instance to obtain KV store information. - [KVStoreResultSet]{@link distributedKVStore.KVStoreResultSet}: provides APIs for accessing the results obtained from a KV store. - [Query]{@link distributedKVStore.Query}: provides APIs for setting predicates for data query. - [SingleKVStore]{@link distributedKVStore.SingleKVStore}: provides APIs for querying data in single KV stores and synchronizing data across devices. The single KV stores manage data without distinguishing devices. - [DeviceKVStore]{@link distributedKVStore.DeviceKVStore}: provides APIs for querying data in device KV stores and synchronizing data across devices. This class inherits from [SingleKVStore]{@link distributedKVStore.SingleKVStore}. The device KV stores manage data by device.
+分布式键值数据库为应用程序提供不同设备间数据库的分布式协同能力。通过调用分布式键值数据库各个接口，应用程序可将数据保存到分布式键值数据库中，并可对分布式键值数据库中的数据进行增加、删除、修改、查询、端端同步等操作。
+
+该模块提供以下常用功能：
+
+- [KVManager](arkts-arkdata-kvmanager-i.md)：分布式键值数据库管理实例，用于获取数据库的相关信息。
+- [KVStoreResultSet](arkts-arkdata-kvstoreresultset-i.md)：提供获取数据库结果集的相关方法，包括查询和移动数据读取位置等。
+- [Query](arkts-arkdata-query-c.md)：使用谓词表示数据库查询，提供创建Query实例、查询数据库中的数据和添加谓词的方法。
+- [SingleKVStore](arkts-arkdata-singlekvstore-i.md)：单版本分布式键值数据库，不对数据所属设备进行区分，提供查询数据和端端同步数据的方法。
+- [DeviceKVStore](arkts-arkdata-devicekvstore-i.md)：设备协同数据库，继承自
+[SingleKVStore](arkts-arkdata-singlekvstore-i.md)，以设备维度对数据进行区分，提供查询数据和端端同步数据的方法。
 
 **起始版本：** 9
 
 **系统能力：** SystemCapability.DistributedDataManager.KVStore.DistributedKVStore
 
-## 导入模块
-
-```TypeScript
-import { distributedKVStore } from '@kit.ArkData';
-```
-
 ## 汇总
 
 ### 函数
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [createKVManager](arkts-distributedkvstore-createkvmanager-f.md#createKVManager-1) | Creates a **KVManager** instance for KV store management. |
+| [createKVManager](arkts-arkdata-createkvmanager-f.md#createkvmanager-1) | 创建一个KVManager对象实例，用于管理数据库对象。 |
 
 ### 类
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [FieldNode](arkts-distributedkvstore-fieldnode-c.md) | Represents a **Schema** instance, which provides the methods for defining the values stored in a KV store. |
-| [Query](arkts-distributedkvstore-query-c.md) | Provides methods to create a **Query** object, which defines different data query criteria. A **Query** object supports a maximum of 256 predicates. |
-| [Schema](arkts-distributedkvstore-schema-c.md) | Defines the schema of a KV store. You can create a **Schema** object and pass it in [Options]{@link distributedKVStore.Options} when creating or opening a KV store. |
+| [FieldNode](arkts-arkdata-fieldnode-c.md) | 表示 Schema 实例的节点，提供定义存储在数据库中的值的方法。 |
+| [Query](arkts-arkdata-query-c.md) | 使用谓词表示数据库查询，提供创建Query实例、查询数据库中的数据和添加谓词的方法。Query对象的谓词方法均返回自身，支持链式调用。一个Query对象中谓词数量上限为256个。 |
+| [Schema](arkts-arkdata-schema-c.md) | 表示数据库模式，可以在创建或打开数据库时创建Schema对象并将它们放入[Options](arkts-arkdata-options-i.md)中。STRICT：STRICT模式要求用户插入的值必须与Schema定义严格匹配，字段数量和格式都不能有差异。如果不匹配，数据库将在插入数据时返回错误。COMPATIBLE：选择为COMPATIBLE模式时，数据库在检查Value格式时较为宽松，只要Value具有Schema描述的特征即可，允许存在额外字段。例如，定义了id、name字段时，可以插入id、name、age等多个字段。 |
 
 ### 接口
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [BackupConfig](arkts-distributedkvstore-backupconfig-i.md) | Provides backup config to backup or restore KVStore. |
-| [ChangeNotification](arkts-distributedkvstore-changenotification-i.md) | Defines the content of a data change notification, including inserted data, updated data, deleted data, and device ID. |
-| [Constants](arkts-distributedkvstore-constants-i.md) | Provides constants of the distributed KV store. |
-| [DeviceKVStore](arkts-distributedkvstore-devicekvstore-i.md) | Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used. Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified. For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted. Before calling any method in **DeviceKVStore**, you must use [getKVStore]{@link distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>)} to obtain a **DeviceKVStore** object. |
-| [Entry](arkts-distributedkvstore-entry-i.md) | Provides key-value pairs stored in the distributedKVStore. |
-| [KVManager](arkts-distributedkvstore-kvmanager-i.md) | Provides an instance to obtain information about a distributed KV store. Before calling any API in **KVManager**, you must use [createKVManager]{@link distributedKVStore.createKVManager} to create a **KVManager** instance. |
-| [KVManagerConfig](arkts-distributedkvstore-kvmanagerconfig-i.md) | Provides the **KVManager** instance configuration, including the bundle name of the invoker and the application context. |
-| [KVStoreResultSet](arkts-distributedkvstore-kvstoreresultset-i.md) | Provides APIs for obtaining the distributed KV store result sets. A maximum of eight result sets can be opened at a time. The **KVStoreResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. Before calling any API in **KVStoreResultSet**, you must use ** [getKVStore]{@link distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>)} ** to construct a **SingleKVStore** or **DeviceKVStore** instance. > **NOTE** > > The cursor start position of **KVStoreResultSet** is **-1**. |
-| [Options](arkts-distributedkvstore-options-i.md) | Provides KV store configuration. |
-| [SingleKVStore](arkts-distributedkvstore-singlekvstore-i.md) | Provides APIs for data management in a single KV store, such as adding data, deleting data, and subscribing to data changes or across-device data sync completion events. Before calling any method in **SingleKVStore**, you must use [getKVStore]{@link distributedKVStore.KVManager.getKVStore<T>(storeId: string, options: Options, callback: AsyncCallback<T>)} to obtain a **SingleKVStore** instance. |
-| [Value](arkts-distributedkvstore-value-i.md) | Defines the **value** object in a KV store. |
+| [BackupConfig](arkts-arkdata-backupconfig-i.md) | 用于备份数据库的配置信息。 |
+| [ChangeNotification](arkts-arkdata-changenotification-i.md) | 数据变更时通知的对象，包括插入的数据、更新的数据、删除的数据和设备ID。 |
+| [Constants](arkts-arkdata-constants-i.md) | 分布式键值数据库常量。 |
+| [DeviceKVStore](arkts-arkdata-devicekvstore-i.md) | 设备协同数据库，继承自SingleKVStore，提供查询数据和端端同步数据的方法，可以使用SingleKVStore的方法例如：put、putBatch等。设备协同数据库，以设备维度对数据进行区分，每台设备仅能写入和修改本设备的数据，其它设备的数据对其是只读的，无法修改其它设备的数据。比如，可以使用设备协同数据库实现设备间的图片分享，可以查看其他设备的图片，但无法修改和删除其他设备的图片。在调用DeviceKVStore的方法前，需要先通过[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)构建一个DeviceKVStore实例。 |
+| [Entry](arkts-arkdata-entry-i.md) | 存储在数据库中的键值对。 |
+| [KVManager](arkts-arkdata-kvmanager-i.md) | 分布式键值数据库管理实例，用于获取分布式键值数据库的相关信息。在调用KVManager的方法前，需要先通过[createKVManager](arkts-arkdata-createkvmanager-f.md#createkvmanager-1)构建一个KVManager实例。 |
+| [KVManagerConfig](arkts-arkdata-kvmanagerconfig-i.md) | 提供KVManager实例的配置信息，包括调用方的包名和应用的上下文。 |
+| [KVStoreResultSet](arkts-arkdata-kvstoreresultset-i.md) | 提供获取数据库结果集的相关方法，包括查询和移动数据读取位置等。同时允许打开的结果集的最大数量为8个。KVStoreResultSet实例不会实时刷新。使用结果集后，如果数据库中的数据发生变化（如增删改操作），需要重新查询才能获取到最新的数据。在调用KVStoreResultSet的方法前，需要先通过[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)构建一个SingleKVStore或者DeviceKVStore实例。 |
+| [Options](arkts-arkdata-options-i.md) | 用于提供创建数据库的配置信息。 |
+| [SingleKVStore](arkts-arkdata-singlekvstore-i.md) | SingleKVStore数据库实例，提供增加数据、删除数据和订阅数据变更、订阅数据端端同步完成的方法。在调用SingleKVStore的方法前，需要先通过[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)构建一个SingleKVStore实例。 |
+| [Value](arkts-arkdata-value-i.md) | 存储在数据库中的值对象。 |
+
+<!--Del-->
+### 接口（系统接口）
+
+| 名称 | 说明 |
+| --- | --- |
+| [DeviceKVStore](arkts-arkdata-devicekvstore-i-sys.md) | 设备协同数据库，继承自SingleKVStore，提供查询数据和端端同步数据的方法，可以使用SingleKVStore的方法例如：put、putBatch等。设备协同数据库，以设备维度对数据进行区分，每台设备仅能写入和修改本设备的数据，其它设备的数据对其是只读的，无法修改其它设备的数据。比如，可以使用设备协同数据库实现设备间的图片分享，可以查看其他设备的图片，但无法修改和删除其他设备的图片。在调用DeviceKVStore的方法前，需要先通过[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)构建一个DeviceKVStore实例。 |
+| [SingleKVStore](arkts-arkdata-singlekvstore-i-sys.md) | SingleKVStore数据库实例，提供增加数据、删除数据和订阅数据变更、订阅数据端端同步完成的方法。在调用SingleKVStore的方法前，需要先通过[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)构建一个SingleKVStore实例。 |
+<!--DelEnd-->
 
 ### 枚举
 
-| 名称 | 描述 |
+| 名称 | 说明 |
 | --- | --- |
-| [Constants](arkts-distributedkvstore-constants-e.md) | KVStore constants |
-| [KVStoreType](arkts-distributedkvstore-kvstoretype-e.md) | Enumerates the distributed KV store types. | Name | Value| Description | | -------------------- | - | ------------------------------------------------------------ | | DEVICE_COLLABORATION | 0 | Device KV store.<br>The device KV store manages data by device, which eliminates conflicts. Data can be queried by device.<br>**System capability**: SystemCapability.DistributedDataManager.KVStore.DistributedKVStore| | SINGLE_VERSION | 1 | Single KV store.<br>The single KV store does not differentiate data by device. If entries with the same key are modified on different devices, the value will be overwritten.<br>**System capability**: SystemCapability.DistributedDataManager.KVStore.Core| |
-| [SecurityLevel](arkts-distributedkvstore-securitylevel-e.md) | Enumerates the KV store security levels. > **NOTE** > > For the scenarios involving a single device, you can upgrade the security level of a KV store by modifying the > **securityLevel** parameter. When upgrading the database security level, observe the following: > > * This operation does not apply to the databases that require cross-device sync. Data cannot be synced between > databases of different security levels. If you want to upgrade the security level of a database, you are advised > to create a database of a higher security level. > > * You need to close the database before modifying the **securityLevel** parameter, and open it after the security > level is upgraded. > > * You cannot downgrade the database security level. For example, you can change the database security level from > S2 to S3, but cannot change it from S3 to S2. |
-| [SubscribeType](arkts-distributedkvstore-subscribetype-e.md) | Enumerates the subscription types. |
-| [SyncMode](arkts-distributedkvstore-syncmode-e.md) | Enumerates the sync modes. |
-| [ValueType](arkts-distributedkvstore-valuetype-e.md) | Indicates the {@code ValueType}. <p>{@code ValueType} is obtained based on the value. |
+| [KVStoreType](arkts-arkdata-kvstoretype-e.md) | 分布式键值数据库类型枚举。 |
+| [SecurityLevel](arkts-arkdata-securitylevel-e.md) | 数据库的安全级别枚举。@link distributedKVStore.KVManager.getKVStore&lt;T&gt;(storeId: string, options: Options, callback: AsyncCallback&lt;T&gt;)}&gt; 接口重新打开数据库。&gt;&gt; * 该操作仅支持升级，例如从S2到S3，不支持降级，例如从S3到S2。 |
+| [SubscribeType](arkts-arkdata-subscribetype-e.md) | 订阅类型枚举。 |
+| [SyncMode](arkts-arkdata-syncmode-e.md) | 同步模式枚举。 |
+| [ValueType](arkts-arkdata-valuetype-e.md) | 数据类型枚举。 |
 

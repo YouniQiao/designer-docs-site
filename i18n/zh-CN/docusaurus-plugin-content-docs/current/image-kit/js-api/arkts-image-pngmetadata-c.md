@@ -6,19 +6,13 @@ Png metadata.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## 导入模块
+## author
 
 ```TypeScript
-import { image } from '@kit.ImageKit';
+readonly author?: string
 ```
 
-## copyright
-
-```TypeScript
-readonly copyright?: string
-```
-
-PNG copyright.
+PNG author.
 
 **类型：** string
 
@@ -28,13 +22,45 @@ PNG copyright.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## software
+## chromaticities
 
 ```TypeScript
-readonly software?: string
+readonly chromaticities?: number[]
 ```
 
-PNG software.
+PNG color primary/white-point coordinates.
+
+**类型：** number[]
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## comment
+
+```TypeScript
+readonly comment?: string
+```
+
+PNG comment.
+
+**类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## copyright
+
+```TypeScript
+readonly copyright?: string
+```
+
+PNG copyright.
 
 **类型：** string
 
@@ -60,54 +86,6 @@ PNG creation time.
 
 **系统能力：** SystemCapability.Multimedia.Image.Core
 
-## interlaceType
-
-```TypeScript
-readonly interlaceType?: int
-```
-
-PNG interlacing mode. The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## author
-
-```TypeScript
-readonly author?: string
-```
-
-PNG author.
-
-**类型：** string
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## chromaticities
-
-```TypeScript
-readonly chromaticities?: double[]
-```
-
-PNG color primary/white-point coordinates.
-
-**类型：** double[]
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
 ## description
 
 ```TypeScript
@@ -115,118 +93,6 @@ readonly description?: string
 ```
 
 PNG description.
-
-**类型：** string
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## title
-
-```TypeScript
-readonly title?: string
-```
-
-PNG title.
-
-**类型：** string
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## modificationTime
-
-```TypeScript
-readonly modificationTime?: string
-```
-
-PNG modification time.
-
-**类型：** string
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## yPixelsPerMeter
-
-```TypeScript
-readonly yPixelsPerMeter?: int
-```
-
-PNG y pixels per meter. The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## sRGBIntent
-
-```TypeScript
-readonly sRGBIntent?: int
-```
-
-PNG sRGB rendering intent. The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## warning
-
-```TypeScript
-readonly warning?: string
-```
-
-PNG warning.
-
-**类型：** string
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## xPixelsPerMeter
-
-```TypeScript
-readonly xPixelsPerMeter?: int
-```
-
-PNG x pixels per meter. The value should be an integer.
-
-**类型：** int
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Image.Core
-
-## comment
-
-```TypeScript
-readonly comment?: string
-```
-
-PNG comment.
 
 **类型：** string
 
@@ -255,12 +121,144 @@ PNG disclaimer.
 ## gamma
 
 ```TypeScript
-readonly gamma?: double
+readonly gamma?: number
 ```
 
 PNG gamma.
 
-**类型：** double
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## interlaceType
+
+```TypeScript
+readonly interlaceType?: number
+```
+
+PNG interlacing mode.
+The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## modificationTime
+
+```TypeScript
+readonly modificationTime?: string
+```
+
+PNG modification time.
+
+**类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## sRGBIntent
+
+```TypeScript
+readonly sRGBIntent?: number
+```
+
+PNG sRGB rendering intent.
+The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## software
+
+```TypeScript
+readonly software?: string
+```
+
+PNG software.
+
+**类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## title
+
+```TypeScript
+readonly title?: string
+```
+
+PNG title.
+
+**类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## warning
+
+```TypeScript
+readonly warning?: string
+```
+
+PNG warning.
+
+**类型：** string
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## xPixelsPerMeter
+
+```TypeScript
+readonly xPixelsPerMeter?: number
+```
+
+PNG x pixels per meter.
+The value should be an integer.
+
+**类型：** number
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Image.Core
+
+## yPixelsPerMeter
+
+```TypeScript
+readonly yPixelsPerMeter?: number
+```
+
+PNG y pixels per meter.
+The value should be an integer.
+
+**类型：** number
 
 **起始版本：** 26.0.0
 

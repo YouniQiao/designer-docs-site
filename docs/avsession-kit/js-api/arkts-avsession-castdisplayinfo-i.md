@@ -12,19 +12,36 @@ Define the information for extended display screen.
 import { avSession } from '@kit.AVSessionKit';
 ```
 
-## width
+## height
 
 ```TypeScript
-width: int
+height: number
 ```
 
-Display width, in pixels.
+Display height, in pixels.
 
-**Type:** int
+**Type:** number
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
+
+## id
+
+```TypeScript
+id: number
+```
+
+Display ID.
+The application can get more display information based on the same id from display interface.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
@@ -40,7 +57,7 @@ Display name.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
@@ -56,39 +73,23 @@ The state of display.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
-## id
+## width
 
 ```TypeScript
-id: long
+width: number
 ```
 
-Display ID. The application can get more display information based on the same id from display interface.
+Display width, in pixels.
 
-**Type:** long
+**Type:** number
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
-
-## height
-
-```TypeScript
-height: int
-```
-
-Display height, in pixels.
-
-**Type:** int
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 

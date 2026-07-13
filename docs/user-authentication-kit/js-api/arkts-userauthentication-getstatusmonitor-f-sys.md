@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## getStatusMonitor
@@ -12,7 +12,9 @@ import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
 function getStatusMonitor(localUserId: number): StatusMonitor
 ```
 
-Obtains the status listener, which is used to query and subscribe to companion template information.
+Obtains the status monitor. This API is used to obtain the status monitor object of a specified user. The object
+can be used to query and subscribe to the template status, continuous authentication status, and available device
+status of the companion device.
 
 **Since:** 23
 
@@ -28,13 +30,13 @@ Obtains the status listener, which is used to query and subscribe to companion t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| localUserId | number | Yes | Local user ID. |
+| localUserId | number | Yes | Local user ID. User ID on the primary device, which is a positive integer greaterthan or equal to 0. It is used to obtain the status monitor of the companion device corresponding to theuser. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| StatusMonitor | Promise used to return the status listener. |
+| StatusMonitor | Status monitor object. It can be used to query the template status ([getTemplateStatus](arkts-userauthentication-statusmonitor-i-sys.md#gettemplatestatus-1)), subscribe to templatechanges ([onTemplateChange](arkts-userauthentication-statusmonitor-i-sys.md#ontemplatechange-1)), subscribe to available device status changes ([onAvailableDeviceChange](arkts-userauthentication-statusmonitor-i-sys.md#onavailabledevicechange-1)), and subscribe to continuous authentication status changes ([onContinuousAuthChange](arkts-userauthentication-statusmonitor-i-sys.md#oncontinuousauthchange-1)). |
 
 **Error codes:**
 

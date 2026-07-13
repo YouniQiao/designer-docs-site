@@ -1,6 +1,8 @@
 # InputMethodController
 
-A control class that encapsulates APIs for input method management, which can only be invoked after an **InputMethodController** instance is obtained via [getController](arkts-ime-getcontroller-f.md#getcontroller-1).
+A control class that encapsulates APIs for input method management, which can only be invoked after an
+**InputMethodController** instance is obtained via
+[getController](arkts-ime-getcontroller-f.md#getcontroller-1).
 
 **Since:** 6
 
@@ -9,7 +11,7 @@ A control class that encapsulates APIs for input method management, which can on
 ## Modules to Import
 
 ```TypeScript
-import { inputMethod } from '@ohos.inputMethod';
+import { inputMethod } from '@kit.IMEKit';
 ```
 
 ## hideSoftKeyboard
@@ -18,7 +20,12 @@ import { inputMethod } from '@ohos.inputMethod';
 hideSoftKeyboard(displayId: number): Promise<void>
 ```
 
-Hides the soft keyboard on a specified screen. This API uses a promise to return the result. > **NOTE** > > This API can be called only when the edit box is attached to the input method. That is, it can be called to > hide the soft keyboard only when the edit box is focused.
+Hides the soft keyboard on a specified screen. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API can be called only when the edit box is attached to the input method. That is, it can be called to
+> hide the soft keyboard only when the edit box is focused.
 
 **Since:** 23
 
@@ -71,7 +78,12 @@ inputMethod.getController().hideSoftKeyboard(displayId).then(() => {
 showSoftKeyboard(displayId: number): Promise<void>
 ```
 
-Shows the soft keyboard on a specified screen. This API uses a promise to return the result. > **NOTE** > > This API can be called only when the edit box is attached to the input method. That is, it can be called to > show the soft keyboard only when the edit box is focused.
+Shows the soft keyboard on a specified screen. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API can be called only when the edit box is attached to the input method. That is, it can be called to
+> show the soft keyboard only when the edit box is focused.
 
 **Since:** 23
 

@@ -1,4 +1,10 @@
-# createPictureByHdrAndSdrPixelMap
+# createPictureByHdrAndSdrPixelMap (System API)
+
+## Modules to Import
+
+```TypeScript
+import { image } from '@kit.ImageKit';
+```
 
 ## createPictureByHdrAndSdrPixelMap
 
@@ -6,7 +12,9 @@
 function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: PixelMap): Promise<Picture>
 ```
 
-根据HDR PixelMap和SDR PixelMap创建Picture对象。系统将使用HDR和SDR PixelMap生成一个增益图（gainmap），返回的Picture对象将包含SDR PixelMap和生成的gainmap PixelMap，像素格式为RGBA8888。使用Promise异步回调。
+Creates a Picture object based on an HDR PixelMap and an SDR PixelMap. The system uses the HDR PixelMap and SDR
+PixelMap to generate a gainmap. The returned Picture object contains the SDR PixelMap and the generated gainmap,
+both in RGBA8888 format. This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -18,20 +26,20 @@ function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: Pi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hdrPixelMap | PixelMap | Yes | HDR PixelMap，位深16bit或10bit，像素格式为FP16/RGBA1010102/YCBCR_P010，色彩空间是BT2020_HLG。 |
-| sdrPixelMap | PixelMap | Yes | SDR PixelMap，位深8bit，像素格式为RGBA8888/NV21，色彩空间是P3。 |
+| hdrPixelMap | PixelMap | Yes | HDR PixelMap, with 16-bit or 10-bit depth, in FP16/RGBA1010102/YCBCR_P010 format,and BT2020_HLG color space. |
+| sdrPixelMap | PixelMap | Yes | SDR PixelMap, with 8-bit depth, in RGBA8888/NV21 format, and P3 color space. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Picture> | 返回Picture包含sdr和gainmap，像素格式为RGBA8888。 |
+| Promise&lt;Picture&gt; | Picture object that contains the SDR PixelMap and gainmap, both in RGBA8888 format. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 7600201 | Unsupported operation. HdrPixelMap's PixelMapFormat is not  RGBA_F16\RGBA_1010102\YCBCR_P010, or its color space is not BT2020_HLG. Or sdrPixelMap's PixelMapFormat is not  RGBA_8888\NV21\NV12, or its color space is not P3. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. HdrPixelMap's PixelMapFormat is notRGBA_F16\RGBA_1010102\YCBCR_P010, or its color space is not BT2020_HLG. Or sdrPixelMap's PixelMapFormat is notRGBA_8888\NV21\NV12, or its color space is not P3. |
 
 **Example**
 
@@ -72,6 +80,7 @@ async function CreatePictureTest(context: Context) {
 
 ```
 
+
 ## createPictureByHdrAndSdrPixelMap
 
 ```TypeScript
@@ -79,11 +88,12 @@ function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: Pi
       params: GainmapParams): Promise<Picture>
 ```
 
-根据HDR PixelMap和SDR PixelMap创建Picture对象。系统将使用HDR和SDR PixelMap生成一个Gainmap（增益图），返回的Picture对象将包含SDR PixelMap和生成的Gainmap PixelMap，像素格式为RGBA8888。Gainmap PixelMap的尺寸可以通过设置params进行选择。使用Promise异步回调。
+Creates a Picture object by a HDR PixelMap and a SDR PixelMap with specified options. A gainmap will be generated
+using the HDR and SDR PixelMap, and the returned Picture will contain the SDR PixelMap and the generated gainmap.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -93,20 +103,20 @@ function createPictureByHdrAndSdrPixelMap(hdrPixelMap: PixelMap, sdrPixelMap: Pi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hdrPixelMap | PixelMap | Yes | HDR PixelMap，位深16bit或10bit，像素格式为RGBA_F16/RGBA_1010102/YCBCR_P010，色彩空间是BT2020_HLG。 |
-| sdrPixelMap | PixelMap | Yes | SDR PixelMap，位深8bit，像素格式为RGBA_8888/NV21，色彩空间是P3。 |
-| params | GainmapParams | Yes | Gainmap Params，增益图参数设置选项，决定是否使用全尺寸增益图。 |
+| hdrPixelMap | PixelMap | Yes | A HDR PixelMap, whose PixelMapFormat should beRGBA_F16\RGBA_1010102\YCBCR_P010 and color space should be BT2020_HLG |
+| sdrPixelMap | PixelMap | Yes | A SDR PixelMap, whose PixelMapFormat should be RGBA_8888\NV21\NV12and color space should be P3. |
+| params | GainmapParams | Yes | Gainmap generation parameters. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Picture> | Promise对象，返回Picture包含SDR和Gainmap，像素格式为RGBA_8888。 |
+| Promise&lt;Picture&gt; | Returns the Picture object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Non-system applications are not allowed to use system APIs. |
-| 7600201 | Unsupported operation. HdrPixelMap's PixelMapFormat is not  RGBA_F16\RGBA_1010102\YCBCR_P010, or its color space is not BT2020_HLG. Or sdrPixelMap's PixelMapFormat is  not RGBA_8888\NV21\NV12, or its color space is not P3. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. HdrPixelMap's PixelMapFormat is notRGBA_F16\RGBA_1010102\YCBCR_P010, or its color space is not BT2020_HLG. Or sdrPixelMap's PixelMapFormat isnot RGBA_8888\NV21\NV12, or its color space is not P3. |
 

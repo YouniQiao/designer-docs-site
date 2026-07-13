@@ -3,17 +3,17 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundle } from '@ohos.bundle';
+import { bundle } from '@kit.AbilityKit';
 ```
 
 ## getApplicationInfos
 
 ```TypeScript
-function getApplicationInfos(bundleFlags: number,
-    userId: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
+function getApplicationInfos(bundleFlags: number, userId: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains information about all installed applications of a specified user.
+Obtains information about all installed apps for a specified user. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 7
 
@@ -31,9 +31,9 @@ Obtains information about all installed applications of a specified user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlags | number | Yes | Indicates the flag used to specify information containedin the ApplicationInfo objects that will be returned. |
-| userId | number | Yes | Indicates the user ID. |
-| callback | AsyncCallback&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | When obtaining the array of ApplicationInfo objectssucceeds, err is undefined, and data is the obtained array of ApplicationInfo objects;otherwise, the outcome is an error object. |
+| bundleFlags | number | Yes | Flag used to specify the information contained in the returnedapplication information object. Value range: see the application information related flagsin BundleFlag. |
+| userId | number | Yes | User ID. Value range: greater than or equal to 0. |
+| callback | AsyncCallback&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | Callback used to return the result. IfgetApplicationInfos is successful, **err** is **undefined**, and the list of app information asthe input parameter at program startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -60,7 +60,8 @@ bundle.getApplicationInfos(bundleFlags, userId, (err, data) => {
 function getApplicationInfos(bundleFlags: number, callback: AsyncCallback<Array<ApplicationInfo>>): void
 ```
 
-Obtains information about all installed applications of a specified user.
+Obtains information about installed apps for the user to which the caller belongs.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 7
 
@@ -78,8 +79,8 @@ Obtains information about all installed applications of a specified user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlags | number | Yes | Indicates the flag used to specify information containedin the ApplicationInfo objects that will be returned. |
-| callback | AsyncCallback&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | When obtaining the array of ApplicationInfo objectssucceeds, err is undefined, and data is the obtained array of ApplicationInfo objects;otherwise, the outcome is an error object. |
+| bundleFlags | number | Yes | Flag used to specify the information contained in the returnedapplication information object. Value range: see the application information related flagsin BundleFlag. |
+| callback | AsyncCallback&lt;Array&lt;ApplicationInfo&gt;&gt; | Yes | Callback used to return the result. IfgetApplicationInfos is successful, **err** is **undefined**, and the list ofapp information as the input parameter at program startup. Otherwise, **err** is an error object. |
 
 **Example**
 
@@ -105,7 +106,7 @@ bundle.getApplicationInfos(bundleFlags, (err, data) => {
 function getApplicationInfos(bundleFlags: number, userId?: number): Promise<Array<ApplicationInfo>>
 ```
 
-Obtains information about all installed applications of a specified user.
+Obtains information about all installed apps for a specified user. This API uses a promise to return the result.
 
 **Since:** 7
 
@@ -123,14 +124,14 @@ Obtains information about all installed applications of a specified user.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bundleFlags | number | Yes | Indicates the flag used to specify information containedin the ApplicationInfo objects that will be returned. |
-| userId | number | No | Indicates the user ID or do not pass user ID. |
+| bundleFlags | number | Yes | Flag used to specify the information contained in the returned applicationinformation object. Value range: see the application information related flags in BundleFlag. |
+| userId | number | No | User ID. Default value: the user to which the caller belongs.Value range: greater than or equal to 0. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;ApplicationInfo&gt;&gt; | Promise used to return a list of ApplicationInfo objects. |
+| Promise&lt;Array&lt;ApplicationInfo&gt;&gt; | Promise used to return the list of app informationwhen obtained successfully. |
 
 **Example**
 

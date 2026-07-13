@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## queryExtensionAbilityInfo
@@ -13,7 +13,10 @@ function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAb
       extensionAbilityFlags: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, and ExtensionAbility flags. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, and ExtensionAbility
+flags. This API uses an asynchronous callback to return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -30,7 +33,7 @@ Obtains the ExtensionAbility information based on the given want, ExtensionAbili
 | want | Want | Yes | Want containing the bundle name to query. |
 | extensionAbilityType | ExtensionAbilityType | Yes | Type of the ExtensionAbility. |
 | extensionAbilityFlags | number | Yes | Type of the ExtensionAbility information to obtain. |
-| callback | AsyncCallback&lt;Array&lt;ExtensionAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result. If the operation is successful, **err** is **null** and **data** is the array ofExtensionAbility information obtained. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;ExtensionAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result. If the operation is successful, **err** is **null** and **data** is the array ofExtensionAbility information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -80,7 +83,10 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId: number, callback: AsyncCallback<Array<ExtensionAbilityInfo>>): void
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags, and user ID. This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,
+and user ID. This API uses an asynchronous callback to return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 
@@ -98,7 +104,7 @@ Obtains the ExtensionAbility information based on the given want, ExtensionAbili
 | extensionAbilityType | ExtensionAbilityType | Yes | Type of the ExtensionAbility. |
 | extensionAbilityFlags | number | Yes | Type of the ExtensionAbility information to obtain. |
 | userId | number | Yes | User ID, which can be obtained by calling[getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1). |
-| callback | AsyncCallback&lt;Array&lt;ExtensionAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result. If the operation is successful, **err** is **null** and **data** is the array ofExtensionAbility information obtained. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;ExtensionAbilityInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result. If the operation is successful, **err** is **null** and **data** is the array ofExtensionAbility information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -150,7 +156,10 @@ try {
 function queryExtensionAbilityInfo(want: Want, extensionAbilityType: ExtensionAbilityType, extensionAbilityFlags: number, userId?: number): Promise<Array<ExtensionAbilityInfo>>
 ```
 
-Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags, and user ID. This API uses a promise to return the result. No permission is required for obtaining the caller's own information.
+Obtains the ExtensionAbility information based on the given want, ExtensionAbility type, ExtensionAbility flags,
+and user ID. This API uses a promise to return the result.
+
+No permission is required for obtaining the caller's own information.
 
 **Since:** 9
 

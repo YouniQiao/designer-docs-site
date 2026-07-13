@@ -158,7 +158,10 @@ internalModel?: string
 isLocalDevice: boolean
 ```
 
-是否为本地设备。 - false：表示非本地设备，即被查询的其他设备。 - true：表示本地设备，即当前正在使用该接口的设备。
+是否为本地设备。
+
+- false：表示非本地设备，即被查询的其他设备。
+- true：表示本地设备，即当前正在使用该接口的设备。
 
 **类型：** boolean
 

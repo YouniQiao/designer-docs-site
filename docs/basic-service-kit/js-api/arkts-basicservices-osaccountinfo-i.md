@@ -9,7 +9,7 @@ Represents information about an OS account.
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## constraints
@@ -18,7 +18,8 @@ import { osAccount } from '@ohos.account.osAccount';
 constraints: Array<string>
 ```
 
-[Constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) of the system account. By default, no value is passed in.
+[Constraints](../../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) of the system
+account. By default, no value is passed in.
 
 **Type:** Array<string>
 
@@ -74,7 +75,8 @@ Domain account information. By default, no value is passed in.
 isActivated: boolean
 ```
 
-Whether the OS account is activated. The value **true** means the specified account is activated; the value **false** means the opposite.
+Whether the OS account is activated. The value **true** means the specified account is activated; the value
+**false** means the opposite.
 
 **Type:** boolean
 
@@ -88,7 +90,11 @@ Whether the OS account is activated. The value **true** means the specified acco
 isActived: boolean
 ```
 
-Whether the OS account is activated. The value **true** means the specified account is activated; the value **false** means the opposite. Note: This parameter is supported since API version 7 and deprecated since API version 11. You are advised to use **isActivated** instead.
+Whether the OS account is activated. The value **true** means the specified account is activated; the value
+**false** means the opposite.
+
+Note: This parameter is supported since API version 7 and deprecated since API version 11. You are advised to use
+**isActivated** instead.
 
 **Type:** boolean
 
@@ -106,7 +112,8 @@ Whether the OS account is activated. The value **true** means the specified acco
 isCreateCompleted: boolean
 ```
 
-Whether the OS account information is complete. The value **true** means the specified account is complete; the value **false** means the opposite.
+Whether the OS account information is complete. The value **true** means the specified account is complete;
+the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -120,7 +127,8 @@ Whether the OS account information is complete. The value **true** means the spe
 isUnlocked: boolean
 ```
 
-Whether the account is unlocked (whether the **el2/** directory is decrypted). The value **true** means the specified account is unlocked; the value **false** means the opposite.
+Whether the account is unlocked (whether the **el2/** directory is decrypted). The value **true** means the
+specified account is unlocked; the value **false** means the opposite.
 
 **Type:** boolean
 
@@ -134,7 +142,11 @@ Whether the account is unlocked (whether the **el2/** directory is decrypted). T
 isVerified: boolean
 ```
 
-Whether the account has been verified. The value **true** means the specified account has been verified; the value **false** means the opposite. Note: This parameter is supported since API version 7 and deprecated since API version 11. You are advised to use **isUnlocked** instead.
+Whether the account has been verified. The value **true** means the specified account has been verified; the
+value **false** means the opposite.
+
+Note: This parameter is supported since API version 7 and deprecated since API version 11. You are advised to use
+**isUnlocked** instead.
 
 **Type:** boolean
 

@@ -9,7 +9,7 @@ Enumerates Ethernet network interface configurations. Only IPv4 is supported.
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## dnsServers
@@ -18,7 +18,8 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 dnsServers?: string
 ```
 
-DNS service address. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in DHCP mode.) Multiple addresses are separated by commas (,).
+DNS service address. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in
+DHCP mode.) Multiple addresses are separated by commas (,).
 
 **Type:** string
 
@@ -50,7 +51,8 @@ Gateway. The value ranges from **0.0.0.0** to **255.255.255.255**. (This paramet
 ipAddress?: string
 ```
 
-Static IP address. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in DHCP mode.)
+Static IP address. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in
+DHCP mode.)
 
 **Type:** string
 
@@ -82,7 +84,8 @@ Ethernet connection configuration mode.
 netMask?: string
 ```
 
-Subnet mask. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in DHCP mode.)
+Subnet mask. The value ranges from **0.0.0.0** to **255.255.255.255**. (This parameter is not required in DHCP
+mode.)
 
 **Type:** string
 

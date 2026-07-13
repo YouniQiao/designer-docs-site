@@ -1,6 +1,7 @@
 # @ohos.wantAgent
 
-The WantAgent module provides APIs for creating and comparing WantAgent objects, and obtaining the user ID and bundle name of a WantAgent object.
+The WantAgent module provides APIs for creating and comparing WantAgent objects, and obtaining the user ID and bundle
+name of a WantAgent object.
 
 ## Summary
 

@@ -60,7 +60,9 @@ disableNonProxyUDP?: boolean
 disablePDFViewer?: boolean
 ```
 
-是否禁用PDF查看器。true表示禁用，false表示不禁用。默认值：false。 内置PDF解析引擎在解析复杂二进制格式和嵌入式脚本时容易存在漏洞，攻击者可构造特殊PDF文件利用字体解析或内存破坏漏洞控制应用主进程。 禁用后无法在ArkWeb中加载PDF。非文档办公类App建议禁用，引导用户使用外部应用打开PDF。
+是否禁用PDF查看器。true表示禁用，false表示不禁用。默认值：false。
+内置PDF解析引擎在解析复杂二进制格式和嵌入式脚本时容易存在漏洞，攻击者可构造特殊PDF文件利用字体解析或内存破坏漏洞控制应用主进程。
+禁用后无法在ArkWeb中加载PDF。非文档办公类App建议禁用，引导用户使用外部应用打开PDF。
 
 **类型：** boolean
 

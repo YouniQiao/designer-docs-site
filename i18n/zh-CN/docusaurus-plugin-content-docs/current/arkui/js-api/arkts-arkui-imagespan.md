@@ -1,6 +1,11 @@
 # ImageSpan
 
-[Text]{@link text}、[ContainerSpan]{@link container_span}组件的子组件，用于显示行内图片。 > **说明：** > - 本模块接口仅可在Stage模型下使用。
+[Text]{@link text}、[ContainerSpan]{@link container_span}组件的子组件，用于显示行内图片。
+
+> **说明：**
+
+> - 本模块接口仅可在Stage模型下使用。
+
 
 ## ImageSpan
 

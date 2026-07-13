@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## getDownloadInfo
@@ -12,7 +12,15 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 function getDownloadInfo(url: string): DownloadInfo | undefined
 ```
 
-Obtains the download information based on the URL. The download information is stored in the download information list in memory and is cleared when the application exits. - If the specified URL is found in the download information list, the latest [DownloadInfo](arkts-basicservices-downloadinfo-i.md#downloadinfo) corresponding to the URL is returned. - If the specified URL cannot be found in the download information list, **undefined** is returned. - If the download information has already cached in the URL, the new cached information will overwrite the old one. - When the target information is stored in the memory, the existing cache data is replaced in the LRU mode.
+Obtains the download information based on the URL. The download information is stored in the download information
+list in memory and is cleared when the application exits.
+
+- If the specified URL is found in the download information list, the latest
+[DownloadInfo](arkts-basicservices-downloadinfo-i.md) corresponding to the URL is returned.
+- If the specified URL cannot be found in the download information list, **undefined** is returned.
+- If the download information has already cached in the URL, the new cached information will overwrite the old
+one.
+- When the target information is stored in the memory, the existing cache data is replaced in the LRU mode.
 
 **Since:** 20
 

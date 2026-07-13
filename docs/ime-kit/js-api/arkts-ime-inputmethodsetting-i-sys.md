@@ -1,6 +1,7 @@
 # InputMethodSetting
 
-In the following API examples, you must first use [getSetting](arkts-ime-getsetting-f.md#getsetting-1) to obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use [getSetting](arkts-ime-getsetting-f.md#getsetting-1) to
+obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ In the following API examples, you must first use [getSetting](arkts-ime-getsett
 ## Modules to Import
 
 ```TypeScript
-import { inputMethod } from '@ohos.inputMethod';
+import { inputMethod } from '@kit.IMEKit';
 ```
 
 ## enableInputMethod
@@ -224,7 +225,9 @@ try {
 getDefaultInputMethodAbility(): InputMethodProperty
 ```
 
-<p>Get the default input method ability.</p> <p>To optimize performance, only the 'name' and 'id' properties which can uniquely identify an input method ability are included in the returned InputMethodProperty object.</p>
+<p>Get the default input method ability.</p>
+<p>To optimize performance, only the 'name' and 'id' properties which can uniquely identify an input method ability
+are included in the returned InputMethodProperty object.</p>
 
 **Since:** 26.0.0
 
@@ -446,7 +449,8 @@ console.info('Succeeded in querying isPanelShown, result: ' + result);
 off(type: 'imeShow', callback?: (info: Array<InputWindowInfo>) => void): void
 ```
 
-Unsubscribes from the soft keyboard show event of the [input method panel](arkts-ime-panel-i.md#panel) in the fixed state.
+Unsubscribes from the soft keyboard show event of the
+[input method panel](arkts-ime-panel-i.md) in the fixed state.
 
 **Since:** 10
 
@@ -474,7 +478,8 @@ inputMethod.getSetting().off('imeShow');
 off(type: 'imeHide', callback?: (info: Array<InputWindowInfo>) => void): void
 ```
 
-Unsubscribes from the soft keyboard hide event of the [input method panel](arkts-ime-panel-i.md#panel) in the fixed state.
+Unsubscribes from the soft keyboard hide event of the
+[input method panel](arkts-ime-panel-i.md) in the fixed state.
 
 **Since:** 10
 
@@ -530,7 +535,9 @@ Unsubscribe from the input method change event.
 on(type: 'imeShow', callback: (info: Array<InputWindowInfo>) => void): void
 ```
 
-Subscribes to the soft keyboard show event of the [input method panel](arkts-ime-panel-i.md#panel) in the fixed state. This API uses an asynchronous callback to return the result.
+Subscribes to the soft keyboard show event of the
+[input method panel](arkts-ime-panel-i.md) in the fixed state. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -566,7 +573,9 @@ inputMethod.getSetting().on('imeShow', (info: Array<inputMethod.InputWindowInfo>
 on(type: 'imeHide', callback: (info: Array<InputWindowInfo>) => void): void
 ```
 
-Subscribes to the soft keyboard hide event of the [input method panel](arkts-ime-panel-i.md#panel) in the fixed state. This API uses an asynchronous callback to return the result.
+Subscribes to the soft keyboard hide event of the
+[input method panel](arkts-ime-panel-i.md) in the fixed state. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 

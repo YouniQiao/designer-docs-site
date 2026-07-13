@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { adminManager } from '@ohos.enterprise.adminManager';
+import { adminManager } from '@kit.MDMKit';
 ```
 
 ## setDelegatedPolicies
@@ -12,7 +12,8 @@ import { adminManager } from '@ohos.enterprise.adminManager';
 function setDelegatedPolicies(bundleName: string, accountId: number, policies: Array<string>): void
 ```
 
-Delegates other applications to set device management policies. The applications must request the permissions required.
+Delegates other applications to set device management policies. The applications must request the permissions
+required.
 
 **Since:** 20
 

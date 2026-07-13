@@ -11,7 +11,7 @@ Defines the parameter used to execute an intent call.
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
+import { insightIntentDriver } from '@kit.AbilityKit';
 ```
 
 ## abilityName
@@ -20,7 +20,9 @@ import { insightIntentDriver } from '@ohos.app.ability.insightIntentDriver';
 abilityName: string
 ```
 
-Name of the ability to be called. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator is used to implement application redirection, this parameter can be left empty.
+Name of the ability to be called. If an intent defined by the
+[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+decorator is used to implement application redirection, this parameter can be left empty.
 
 **Type:** string
 
@@ -56,7 +58,8 @@ Name of the bundle to which the ability to be called belongs.
 deviceId?: string
 ```
 
-Indicates the device identifier. Obtained from {@link @ohos.distributedDeviceManager:distributedDeviceManager.DeviceManager#getAvailableDeviceListSync}
+Indicates the device identifier. Obtained from
+{@link @ohos.distributedDeviceManager:distributedDeviceManager.DeviceManager#getAvailableDeviceListSync}
 
 **Type:** string
 
@@ -74,7 +77,8 @@ Indicates the device identifier. Obtained from {@link @ohos.distributedDeviceMan
 displayId?: number
 ```
 
-Physical screen ID specified during intent call. The value must be an integer. This parameter is valid only when **executeMode** is set to **UI_ABILITY_FOREGROUND**.
+Physical screen ID specified during intent call. The value must be an integer. This parameter is valid only when
+**executeMode** is set to **UI_ABILITY_FOREGROUND**.
 
 **Type:** number
 
@@ -92,7 +96,10 @@ Physical screen ID specified during intent call. The value must be an integer. T
 executeMode: insightIntent.ExecuteMode
 ```
 
-Intent execution mode. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator is used to implement application redirection, this parameter must be filled (with any value that conforms to the definition), although it will not actually take effect.
+Intent execution mode. If an intent defined by the
+[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+decorator is used to implement application redirection, this parameter must be filled (with any value that
+conforms to the definition), although it will not actually take effect.
 
 **Type:** insightIntent.ExecuteMode
 
@@ -110,7 +117,13 @@ Intent execution mode. If an intent defined by the [@InsightIntentLink](../../..
 flags?: number
 ```
 
-[Flags](arkts-ability-flags-e.md#flags) of the URIs authorized by the intent caller to the intent executor during the call. **NOTE** This parameter supports only **FLAG_AUTH_READ_URI_PERMISSION**, **FLAG_AUTH_WRITE_URI_PERMISSION**, and FLAG_AUTH_READ_URI_PERMISSION|
+[Flags](arkts-ability-flags-e.md) of the URIs authorized by the intent caller to
+the intent executor during the call.
+
+**NOTE**
+
+This parameter supports only **FLAG_AUTH_READ_URI_PERMISSION**, **FLAG_AUTH_WRITE_URI_PERMISSION**, and
+FLAG_AUTH_READ_URI_PERMISSION|
 
 **Type:** number
 
@@ -182,7 +195,10 @@ Name of the module to which the ability belongs.
 uris?: Array<string>
 ```
 
-List of URIs authorized by the intent caller to the intent executor during the call. If an intent defined by the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator is used to implement application redirection, this field is mandatory. Only the first element in the array is read as the URI of [openLink](arkts-ability-uiabilitycontext-c.md#openlink-1).
+List of URIs authorized by the intent caller to the intent executor during the call. If an intent defined by the
+[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+decorator is used to implement application redirection, this field is mandatory. Only the first element in the
+array is read as the URI of [openLink](arkts-ability-uiabilitycontext-c.md#openlink-1).
 
 **Type:** Array<string>
 
@@ -200,7 +216,12 @@ List of URIs authorized by the intent caller to the intent executor during the c
 userId?: number
 ```
 
-ID of the user to which the intent belongs. **NOTE** If the user ID of the calling application is different from the user ID of the intent, the calling application must request the ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission.
+ID of the user to which the intent belongs.
+
+**NOTE**
+
+If the user ID of the calling application is different from the user ID of the intent, the calling application
+must request the ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission.
 
 **Type:** number
 

@@ -9,7 +9,7 @@ Defines a rectangle.
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## height
@@ -18,7 +18,9 @@ import { webview } from '@ohos.web.webview';
 height: number
 ```
 
-Height of the rectangle. Unit: px.
+Height of the rectangle.
+
+Unit: px.
 
 **Type:** number
 
@@ -32,7 +34,9 @@ Height of the rectangle. Unit: px.
 width: number
 ```
 
-Width of the rectangle. Unit: px.
+Width of the rectangle.
+
+Unit: px.
 
 **Type:** number
 

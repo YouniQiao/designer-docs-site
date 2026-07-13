@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { emitter } from '@ohos.events.emitter';
+import { emitter } from '@kit.BasicServicesKit';
 ```
 
 ## once
@@ -24,7 +24,7 @@ Subscribes to an event in one-shot manner and unsubscribes from it after the eve
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | InnerEvent | Yes | Event to subscribe to in one-shot manner. The[EventPriority](arkts-basicservices-eventpriority-e.md#eventpriority) parameter is not required and does not take effect. |
+| event | InnerEvent | Yes | Event to subscribe to in one-shot manner. The[EventPriority](arkts-basicservices-eventpriority-e.md) parameter is not required and does not take effect. |
 | callback | Callback&lt;EventData&gt; | Yes | Callback to be invoked when the event is received. |
 
 **Example**

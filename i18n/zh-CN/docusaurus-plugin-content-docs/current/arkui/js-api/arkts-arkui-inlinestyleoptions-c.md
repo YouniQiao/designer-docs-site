@@ -1,8 +1,10 @@
 # InlineStyleOptions
 
-InlineStyleOptions定义了数值内联型Counter的属性和事件。 继承于[CommonOptions](arkts-arkui-commonoptions-c.md#commonoptions)。
+InlineStyleOptions定义了数值内联型Counter的属性和事件。
 
-**继承/实现关系：** InlineStyleOptions extends [CommonOptions](arkts-arkui-commonoptions-c.md#commonoptions)
+继承于[CommonOptions](arkts-arkui-commonoptions-c.md)。
+
+**继承/实现关系：** InlineStyleOptions extends [CommonOptions](arkts-arkui-commonoptions-c.md)
 
 **起始版本：** 11
 
@@ -14,7 +16,13 @@ InlineStyleOptions定义了数值内联型Counter的属性和事件。 继承于
 max?: number
 ```
 
-设置Counter的最大值。 默认值：999 取值范围：(-∞, +∞) 值为undefined时，按默认值处理。
+设置Counter的最大值。
+
+默认值：999
+
+取值范围：(-∞, +∞)
+
+值为undefined时，按默认值处理。
 
 **类型：** number
 
@@ -34,7 +42,13 @@ max?: number
 min?: number
 ```
 
-设置Counter的最小值。 默认值：0 取值范围：(-∞, +∞) 值为undefined时，按默认值处理。
+设置Counter的最小值。
+
+默认值：0
+
+取值范围：(-∞, +∞)
+
+值为undefined时，按默认值处理。
 
 **类型：** number
 
@@ -54,7 +68,13 @@ min?: number
 onChange?: (value: number) => void
 ```
 
-数值改变时，返回当前值。 value：当前显示的数值。 默认值：数值改变时，不返回值。 值为undefined时，按默认值处理。
+数值改变时，返回当前值。
+
+value：当前显示的数值。
+
+默认值：数值改变时，不返回值。
+
+值为undefined时，按默认值处理。
 
 **类型：** (value: number) => void
 
@@ -72,7 +92,15 @@ onChange?: (value: number) => void
 textWidth?: number
 ```
 
-设置数值文本的宽度。 默认值：自适应文本宽度。 取值范围：[0, +∞) 单位：vp 超出取值范围时，如果值为undefined，按默认值处理，否则按最大值处理。
+设置数值文本的宽度。
+
+默认值：自适应文本宽度。
+
+取值范围：[0, +∞)
+
+单位：vp
+
+超出取值范围时，如果值为undefined，按默认值处理，否则按最大值处理。
 
 **类型：** number
 
@@ -92,7 +120,13 @@ textWidth?: number
 value?: number
 ```
 
-设置Counter的初始值。 默认值：0 取值范围：[min, max]，其中min和max分别对应下述Counter的最小值和最大值。 超出取值范围时，如果值为undefined，按默认值处理，否则按最大值处理。
+设置Counter的初始值。
+
+默认值：0
+
+取值范围：[min, max]，其中min和max分别对应下述Counter的最小值和最大值。
+
+超出取值范围时，如果值为undefined，按默认值处理，否则按最大值处理。
 
 **类型：** number
 

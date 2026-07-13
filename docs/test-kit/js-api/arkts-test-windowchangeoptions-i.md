@@ -1,6 +1,7 @@
 # WindowChangeOptions
 
-Describes the extended configuration of window change event listening, which is used to specify the listening process configuration and event filtering conditions.
+Describes the extended configuration of window change event listening,
+which is used to specify the listening process configuration and event filtering conditions.
 
 **Since:** 22
 
@@ -9,7 +10,7 @@ Describes the extended configuration of window change event listening, which is 
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## bundleName
@@ -34,7 +35,10 @@ Bundle name of the window to be listened for. By default, all windows are listen
 timeout?: number
 ```
 
-Listening timeout interval, to prevent listening failures caused by event notification delay. <br>Value range: The value should be >= 500 <br>Default value: 10000 <br>Unit: ms
+Listening timeout interval, to prevent listening failures casued by event notification delay.
+<br>Value range: The value should be >= 500
+<br>Default value: 10000
+<br>Unit: ms
 
 **Type:** number
 

@@ -301,7 +301,8 @@ Disables the transition effect.
 static readonly OPACITY: TransitionEffect<"opacity">
 ```
 
-Applies a transition effect with the opacity changing from 0 to 1 when the component appears and from 1 to 0 when the component disappears. This is equivalent to **TransitionEffect.opacity(0)**.
+Applies a transition effect with the opacity changing from 0 to 1 when the component appears and from 1 to 0 when
+the component disappears. This is equivalent to **TransitionEffect.opacity(0)**.
 
 **Type:** TransitionEffect<"opacity">
 
@@ -327,7 +328,11 @@ static readonly SLIDE: TransitionEffect<
   >
 ```
 
-Applies a transition effect of sliding in from the start edge when the component appears and sliding out from the end edge when the component disappears. This means sliding in from the left edge and sliding out from the right edge for left-to-right scripts, and sliding in from the right edge and sliding out from the left edge for right-to- left scripts. This is equivalent to **TransitionEffect.asymmetric(TransitionEffect.move(TransitionEdge.START), TransitionEffect.move(TransitionEdge.END))**.
+Applies a transition effect of sliding in from the start edge when the component appears and sliding out from the
+end edge when the component disappears. This means sliding in from the left edge and sliding out from the right
+edge for left-to-right scripts, and sliding in from the right edge and sliding out from the left edge for right-to-
+left scripts. This is equivalent to
+**TransitionEffect.asymmetric(TransitionEffect.move(TransitionEdge.START), TransitionEffect.move(TransitionEdge.END))**.
 
 **Type:** TransitionEffect<
     "asymmetric",
@@ -353,7 +358,11 @@ Applies a transition effect of sliding in from the start edge when the component
 static readonly SLIDE_SWITCH: TransitionEffect<"slideSwitch">
 ```
 
-Applies a transition effect of sliding in from the right with first scaling down and then scaling up when the component appears and sliding out from the left with first scaling down and then scaling up when the component disappears. This transition effect comes with its own animation parameters, which can also be overridden. The default animation duration is 600 milliseconds, with a specified animation curve of cubicBezierCurve(0.24, 0.0, 0.5 0, 1.0) and a minimum scale factor of 0.8.
+Applies a transition effect of sliding in from the right with first scaling down and then scaling up when the
+component appears and sliding out from the left with first scaling down and then scaling up when the component
+disappears. This transition effect comes with its own animation parameters, which can also be overridden. The
+default animation duration is 600 milliseconds, with a specified animation curve of cubicBezierCurve(0.24, 0.0, 0.5
+0, 1.0) and a minimum scale factor of 0.8.
 
 **Type:** TransitionEffect<"slideSwitch">
 

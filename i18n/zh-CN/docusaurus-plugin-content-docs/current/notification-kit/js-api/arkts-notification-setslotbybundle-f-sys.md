@@ -3,7 +3,7 @@
 ## 导入模块
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## setSlotByBundle
@@ -12,7 +12,9 @@ import { notificationManager } from '@ohos.notificationManager';
 function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot, callback: AsyncCallback<void>): void
 ```
 
-设置指定应用的通知渠道。使用callback异步回调。 设置前需要先通过[addSlot](arkts-notification-addslot-f-sys.md#addslot-1)创建通知渠道。
+设置指定应用的通知渠道。使用callback异步回调。
+
+设置前需要先通过[addSlot](arkts-notification-addslot-f-sys.md#addslot-1)创建通知渠道。
 
 **起始版本：** 9
 
@@ -36,8 +38,8 @@ function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot, callback:
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application to call the interface. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |
@@ -72,7 +74,9 @@ notificationManager.setSlotByBundle(bundle, notificationSlot, setSlotByBundleCal
 function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot): Promise<void>
 ```
 
-设置指定应用的通知渠道。使用Promise异步回调。 设置前需要先通过[addSlot](arkts-notification-addslot-f-sys.md#addslot-1)创建通知渠道。
+设置指定应用的通知渠道。使用Promise异步回调。
+
+设置前需要先通过[addSlot](arkts-notification-addslot-f-sys.md#addslot-1)创建通知渠道。
 
 **起始版本：** 9
 
@@ -101,8 +105,8 @@ function setSlotByBundle(bundle: BundleOption, slot: NotificationSlot): Promise<
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not system application to call the interface. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported.<br>**适用版本：** 18 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3. Parameter verification failed. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported.<br>**适用版本：** 18+ |
 | [1600001](../errorcode-notification.md#1600001-内部错误) | Internal error. |
 | [1600002](../errorcode-notification.md#1600002-序列化或反序列化错误) | Marshalling or unmarshalling error. |
 | [1600003](../errorcode-notification.md#1600003-连接通知服务失败) | Failed to connect to the service. |

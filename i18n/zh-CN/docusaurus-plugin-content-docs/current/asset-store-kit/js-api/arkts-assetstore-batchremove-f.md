@@ -6,7 +6,11 @@
 function batchRemove(assetsToBeRemoved: Array<AssetMap>): Promise<void>
 ```
 
-批量删除符合条件的关键资产。使用Promise异步回调。 批量删除的关键资产必须具有相同的[Tag.GROUP_ID](arkts-assetstore-tagtype-e.md#tagtype)和[Tag.REQUIRE_ATTR_ENCRYPTED](arkts-assetstore-tagtype-e.md#tagtype)属性。 批量删除的关键资产数量最大值为100。
+批量删除符合条件的关键资产。使用Promise异步回调。
+
+批量删除的关键资产必须具有相同的[Tag.GROUP_ID](arkts-assetstore-tagtype-e.md)和[Tag.REQUIRE_ATTR_ENCRYPTED](arkts-assetstore-tagtype-e.md)属性。
+
+批量删除的关键资产数量最大值为100。
 
 **起始版本：** 26.0.0
 

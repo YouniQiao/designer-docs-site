@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## toggleShownStateForAllAppWindows
@@ -12,7 +12,8 @@ import { window } from '@ohos.window';
 function toggleShownStateForAllAppWindows(callback: AsyncCallback<void>): void
 ```
 
-Hides or restores the application's windows during quick multi-window switching. This API uses an asynchronous callback to return the result.
+Hides or restores the application's windows during quick multi-window switching. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -30,8 +31,8 @@ Hides or restores the application's windows during quick multi-window switching.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities.<br>**Applicable version:** 12 and later |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
 **Example**
@@ -57,7 +58,8 @@ window.toggleShownStateForAllAppWindows((err: BusinessError) => {
 function toggleShownStateForAllAppWindows(): Promise<void>
 ```
 
-Hides or restores the application's windows during quick multi-window switching. This API uses a promise to return the result.
+Hides or restores the application's windows during quick multi-window switching. This API uses a promise to return
+the result.
 
 **Since:** 9
 
@@ -75,8 +77,8 @@ Hides or restores the application's windows during quick multi-window switching.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities.<br>**Applicable version:** 12 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a systemAPI.<br>**Applicable version:** 12 and later |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Failed to call the API due to limited devicecapabilities.<br>**Applicable version:** 12 and later |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
 **Example**

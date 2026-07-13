@@ -6,7 +6,8 @@
 function parseUUID(uuid: string): Uint8Array
 ```
 
-将 **generateRandomUUID** 生成的字符串类型的 UUID 转换为 **generateRandomBinaryUUID** 生成的 UUID，如 RFC 4122 所述。
+将 **generateRandomUUID** 生成的字符串类型的 UUID 转换为 **generateRandomBinaryUUID** 生成的 UUID，如 RFC 4122
+所述。
 
 **起始版本：** 9
 

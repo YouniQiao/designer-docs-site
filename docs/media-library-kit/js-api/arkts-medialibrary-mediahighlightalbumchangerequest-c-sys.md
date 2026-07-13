@@ -2,7 +2,7 @@
 
 Defines the class of media highlight album change request.
 
-**Inheritance/Implementation:** MediaHighlightAlbumChangeRequest extends [MediaAnalysisAlbumChangeRequest](arkts-medialibrary-mediaanalysisalbumchangerequest-c-sys.md#mediaanalysisalbumchangerequest)
+**Inheritance/Implementation:** MediaHighlightAlbumChangeRequest extends [MediaAnalysisAlbumChangeRequest](arkts-medialibrary-mediaanalysisalbumchangerequest-c-sys.md)
 
 **Since:** 21
 
@@ -13,7 +13,7 @@ Defines the class of media highlight album change request.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## constructor

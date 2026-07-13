@@ -1,6 +1,6 @@
 # @ohos.app.ability.dialogSession
 
-dialogSession模块用于支持系统应用弹框功能。
+The dialogSession module provides APIs related to the dialog box.
 
 **Since:** 11
 
@@ -16,19 +16,22 @@ import { dialogSession } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[getDialogSessionInfo](arkts-dialogsession-getdialogsessioninfo-f-sys.md#getDialogSessionInfo-1) | 通过dialogSessionId获取会话信息。 |
-| <!--DelRow-->[getDialogSessionInfo](arkts-dialogsession-getdialogsessioninfo-f-sys.md#getDialogSessionInfo-2) | 根据dialogSessionId获取会话信息。 |
-| <!--DelRow-->[sendDialogResult](arkts-dialogsession-senddialogresult-f-sys.md#sendDialogResult-1) | 发送用户请求。使用Promise异步回调。 |
-| <!--DelRow-->[sendDialogResult](arkts-dialogsession-senddialogresult-f-sys.md#sendDialogResult-2) | 发送用户请求。使用callback异步回调。 |
+| [getDialogSessionInfo](arkts-ability-getdialogsessioninfo-f-sys.md#getdialogsessioninfo-1) | Obtains the session information based on the session ID. |
+| [sendDialogResult](arkts-ability-senddialogresult-f-sys.md#senddialogresult-1) | Sends a request for a dialog box. This API uses a promise to return the result. |
+| [sendDialogResult](arkts-ability-senddialogresult-f-sys.md#senddialogresult-2) | Sends a request for a dialog box. This API uses an asynchronous callback to return the result. |
+<!--DelEnd-->
 
-### Interfaces
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DialogAbilityInfo](arkts-dialogsession-dialogabilityinfo-i-sys.md) | 提供会话组件信息，包括包名、模块名、组件名等信息。 |
-| <!--DelRow-->[DialogSessionInfo](arkts-dialogsession-dialogsessioninfo-i-sys.md) | 提供会话信息，包括请求方信息、目标组件信息列表、其他参数。 |
+| [DialogAbilityInfo](arkts-ability-dialogabilityinfo-i-sys.md) | Provides DialogAbility information, including the bundle name, module name, and ability name. |
+| [DialogSessionInfo](arkts-ability-dialogsessioninfo-i-sys.md) | Provides session information, including the requester information, target ability information list, and otherparameters. |
+<!--DelEnd-->
 

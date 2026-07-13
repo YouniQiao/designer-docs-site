@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## getCurrentBundleStats
@@ -12,7 +12,8 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 function getCurrentBundleStats(callback: AsyncCallback<BundleStats>): void
 ```
 
-Obtains the storage space (in bytes) of this application. This API uses an asynchronous callback to return the result.
+Obtains the storage space (in bytes) of this application. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

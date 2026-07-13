@@ -26,7 +26,7 @@ function on(type: 'continuousTaskCancel', callback: Callback<ContinuousTaskCance
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1. Callback parameter error;<br> 2. Register a exist callback type; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1. Callback parameter error;<br> 2. Register a exist callback type; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -59,7 +59,9 @@ export default class EntryAbility extends UIAbility {
 function on(type: 'continuousTaskSuspend', callback: Callback<ContinuousTaskSuspendInfo>): void
 ```
 
-注册长时任务暂停的监听，使用callback异步回调。注册该回调后，如果系统首次检测到应用未执行相应的业务，不会直接取消长时任务，而是将长时任务标记为暂停状态，如果连续检测失败，仍会取消长时任务。 长时任务处于暂停状态时，应用退后台会被挂起，回前台自动激活。
+注册长时任务暂停的监听，使用callback异步回调。注册该回调后，如果系统首次检测到应用未执行相应的业务，不会直接取消长时任务，而是将长时任务标记为暂停状态，如果连续检测失败，仍会取消长时任务。
+
+长时任务处于暂停状态时，应用退后台会被挂起，回前台自动激活。
 
 **起始版本：** 20
 

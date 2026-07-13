@@ -6,25 +6,41 @@
 
 | Name | Description |
 | --- | --- |
-| [PCFConfig](arkts-pcfconfig-c.md) | PCF软阴影配置参数 |
-| [Scene](arkts-scene-c.md) | 定义3D场景. |
-| [SoftShadowConfig](arkts-softshadowconfig-c.md) | 软阴影配置参数，控制算法类型及其配置 |
+| [PCFConfig](arkts-arkgraphics3d-pcfconfig-c.md) | param config for pcf soft shadow |
+| [Scene](arkts-arkgraphics3d-scene-c.md) | Defines the 3d scene. |
+| [SoftShadowConfig](arkts-arkgraphics3d-softshadowconfig-c.md) | param config for soft shadow, control the algorithm type and its configuration |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [Scene](arkts-arkgraphics3d-scene-c-sys.md) | Defines the 3d scene. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CameraParameters](arkts-cameraparameters-i.md) | 相机创建参数. 可用于定义相机创建的额外选项. |
-| [EffectParameters](arkts-effectparameters-i.md) | 特效参数 |
-| [RaycastParameters](arkts-raycastparameters-i.md) | 如何执行射线检测. |
-| [RaycastResult](arkts-raycastresult-i.md) | 射线检测命中结果. |
-| [RenderConfiguration](arkts-renderconfiguration-i.md) | 全局渲染配置控制 |
-| [RenderContext](arkts-rendercontext-i.md) | 渲染上下文，定义所有渲染资源的上下文。同一渲染上下文中的资源可在该上下文内创建的场景间共享。 |
-| [RenderParameters](arkts-renderparameters-i.md) | 定义手动渲染的参数. |
-| [RenderResourceFactory](arkts-renderresourcefactory-i.md) | 渲染资源工厂，用于创建可在共享RenderContext的场景间共享的资源。 |
-| [SceneComponent](arkts-scenecomponent-i.md) | 定义底层场景组件 |
-| <!--DelRow-->[SceneLoadParams](arkts-sceneloadparams-i.md) | 加载场景的参数 |
-| [SceneNodeParameters](arkts-scenenodeparameters-i.md) | 场景节点参数类型. |
-| [SceneResourceFactory](arkts-sceneresourcefactory-i.md) | 场景资源工厂. |
-| [SceneResourceParameters](arkts-sceneresourceparameters-i.md) | 场景资源参数类型. |
+| [CameraParameters](arkts-arkgraphics3d-cameraparameters-i.md) | Camera creation parameters. Can be used to define extra options for camera creation. |
+| [EffectParameters](arkts-arkgraphics3d-effectparameters-i.md) | The parameters for effect |
+| [RaycastParameters](arkts-arkgraphics3d-raycastparameters-i.md) | How a raycast should be performed. |
+| [RaycastResult](arkts-arkgraphics3d-raycastresult-i.md) | The result of a ray cast hit. |
+| [RenderConfiguration](arkts-arkgraphics3d-renderconfiguration-i.md) | Global render configuration control |
+| [RenderContext](arkts-arkgraphics3d-rendercontext-i.md) | Render context defines the context for all rendering resources. Resources within the same render contextmay be shared between scenes created within the same render context. |
+| [RenderParameters](arkts-arkgraphics3d-renderparameters-i.md) | Defines parameters for manual rendering. |
+| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i.md) | The render resource factory. RenderResourceFactory is used to create resources that can be sharedacross Scenes that share a RenderContext |
+| [SceneComponent](arkts-arkgraphics3d-scenecomponent-i.md) | Define underlying scene component |
+| [SceneNodeParameters](arkts-arkgraphics3d-scenenodeparameters-i.md) | The scene node parameters type. |
+| [SceneResourceFactory](arkts-arkgraphics3d-sceneresourcefactory-i.md) | The scene resource factory. |
+| [SceneResourceParameters](arkts-arkgraphics3d-sceneresourceparameters-i.md) | The scene resource parameters type. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [RenderResourceFactory](arkts-arkgraphics3d-renderresourcefactory-i-sys.md) | The render resource factory. RenderResourceFactory is used to create resources that can be sharedacross Scenes that share a RenderContext |
+| [SceneLoadParams](arkts-arkgraphics3d-sceneloadparams-i-sys.md) | The parameters for loading a scene |
+<!--DelEnd-->
 

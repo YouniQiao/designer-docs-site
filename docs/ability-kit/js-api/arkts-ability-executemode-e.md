@@ -1,6 +1,7 @@
 # ExecuteMode
 
-Enumerates the intent execution modes. It specifies the mode of execution passed when the intent is triggered by a system entry point. The supported execution modes for each intent are defined during intent development.
+Enumerates the intent execution modes. It specifies the mode of execution passed when the intent is triggered by a
+system entry point. The supported execution modes for each intent are defined during intent development.
 
 **Since:** 11
 

@@ -1,12 +1,23 @@
 # createPictureFromParcel
 
+## Modules to Import
+
+```TypeScript
+import { image } from '@kit.ImageKit';
+```
+
 ## createPictureFromParcel
 
 ```TypeScript
 function createPictureFromParcel(sequence: rpc.MessageSequence): Picture
 ```
 
-从MessageSequence中获取Picture。 由于图片占用内存较大，所以当Picture对象使用完成后，应主动调用[release]image.Picture.release方法及时释放内存。释放时应确保该对象的所有异步方法均执行完成，且后续不再使用该对象。
+Creates a Picture object from a MessageSequence object.
+
+Images occupy a large amount of memory. When you finish using a Picture instance, call
+[release](arkts-image-picture-i.md#release-1) to free the memory promptly. Before releasing the
+instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no
+longer needed.
 
 **Since:** 13
 
@@ -16,20 +27,20 @@ function createPictureFromParcel(sequence: rpc.MessageSequence): Picture
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sequence | rpc.MessageSequence | Yes | 保存有Picture信息的MessageSequence。 |
+| sequence | rpc.MessageSequence | Yes | MessageSequence object that stores the Picture information. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Picture | 返回Picture对象。 |
+| Picture | Picture object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types; 3.Parameter verification failed. |
-| 62980097 | IPC error. Possible cause: 1.IPC communication failed. 2. Image upload  exception.  3. Decode process exception. 4. Insufficient memory. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; 3.Parameter verification failed. |
+| [62980097](../errorcode-image.md#62980097-pixelmap-serialization-failed) | IPC error. Possible cause: 1.IPC communication failed. 2. Image uploadexception.3. Decode process exception. 4. Insufficient memory. |
 
 **Example**
 

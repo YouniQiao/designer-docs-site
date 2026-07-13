@@ -34,7 +34,9 @@ getCurrentLocalPosition?(): Coordinate2D
 displayX: number
 ```
 
-触摸点在当前应用屏幕坐标系中的X坐标。 单位：vp
+触摸点在当前应用屏幕坐标系中的X坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -52,7 +54,9 @@ displayX: number
 displayY: number
 ```
 
-触摸点在当前应用屏幕坐标系中的Y坐标。 单位：vp
+触摸点在当前应用屏幕坐标系中的Y坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -70,7 +74,11 @@ displayY: number
 globalDisplayX?: number
 ```
 
-触摸点在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞)
+触摸点在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的X坐标。
+
+单位：vp
+
+取值范围：[0, +∞)
 
 **类型：** number
 
@@ -88,7 +96,11 @@ globalDisplayX?: number
 globalDisplayY?: number
 ```
 
-点击位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞)
+点击位置在[全局坐标系](../../../../windowmanager/window-terminology.md#全局坐标系)中的Y坐标。
+
+单位：vp
+
+取值范围：[0, +∞)
 
 **类型：** number
 
@@ -124,7 +136,9 @@ hand?: InteractionHand
 height?: number
 ```
 
-当前手指按压区域的高度。 单位：vp
+当前手指按压区域的高度。
+
+单位：vp
 
 **类型：** number
 
@@ -158,7 +172,9 @@ id: number
 pressedTime?: number
 ```
 
-当前手指按下的时间。 单位：ns
+当前手指按下的时间。
+
+单位：ns
 
 **类型：** number
 
@@ -176,7 +192,9 @@ pressedTime?: number
 pressure?: number
 ```
 
-当前手指按压的压力值。 取值范围：[0,65535)，压力越大，值越大。
+当前手指按压的压力值。
+
+取值范围：[0,65535)，压力越大，值越大。
 
 **类型：** number
 
@@ -194,7 +212,9 @@ pressure?: number
 screenX: number
 ```
 
-触摸点在当前应用窗口坐标系中的X坐标。 单位：vp
+触摸点在当前应用窗口坐标系中的X坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -212,7 +232,9 @@ screenX: number
 screenY: number
 ```
 
-触摸点在当前应用窗口坐标系中的Y坐标。 单位：vp
+触摸点在当前应用窗口坐标系中的Y坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -246,7 +268,9 @@ type: TouchType
 width?: number
 ```
 
-当前手指按压区域的宽度。 单位：vp
+当前手指按压区域的宽度。
+
+单位：vp
 
 **类型：** number
 
@@ -264,7 +288,9 @@ width?: number
 windowX: number
 ```
 
-触摸点在当前应用窗口坐标系中的X坐标。 单位：vp
+触摸点在当前应用窗口坐标系中的X坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -282,7 +308,9 @@ windowX: number
 windowY: number
 ```
 
-触摸点在当前应用窗口坐标系中的Y坐标。 单位：vp
+触摸点在当前应用窗口坐标系中的Y坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -300,7 +328,9 @@ windowY: number
 x: number
 ```
 
-触摸点在事件响应组件为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的X坐标。 单位：vp
+触摸点在事件响应组件为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的X坐标。
+
+单位：vp
 
 **类型：** number
 
@@ -316,7 +346,9 @@ x: number
 y: number
 ```
 
-触摸点在事件响应组件为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的Y坐标。 单位：vp
+触摸点在事件响应组件为基准的[组件坐标系](../../../../ui/arkui-glossary.md#组件坐标系)中的Y坐标。
+
+单位：vp
 
 **类型：** number
 

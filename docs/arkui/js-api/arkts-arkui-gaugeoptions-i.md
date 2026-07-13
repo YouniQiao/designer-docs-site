@@ -12,7 +12,15 @@ Provides gauge options.
 max?: number
 ```
 
-Maximum value of the current data segment. Default value: **100** **NOTE** If the value of **max** is less than that of **min**, the default values **0** and **100** are used. The values of **max** and **min** can be negative numbers.
+Maximum value of the current data segment.
+
+Default value: **100**
+
+**NOTE**
+
+If the value of **max** is less than that of **min**, the default values **0** and **100** are used.
+
+The values of **max** and **min** can be negative numbers.
 
 **Type:** number
 
@@ -30,7 +38,9 @@ Maximum value of the current data segment. Default value: **100** **NOTE** If th
 min?: number
 ```
 
-Minimum value of the current data segment. Default value: **0**
+Minimum value of the current data segment.
+
+Default value: **0**
 
 **Type:** number
 
@@ -48,7 +58,14 @@ Minimum value of the current data segment. Default value: **0**
 value: number
 ```
 
-Current value of the gauge, that is, the position to which the indicator points in the gauge. It is used as the initial value of the gauge when it is created. Default value: **0** **NOTE** If the value is not within the range defined by the **min** and **max** parameters, the value of **min** is used.
+Current value of the gauge, that is, the position to which the indicator points in the gauge. It is used as the
+initial value of the gauge when it is created.
+
+Default value: **0**
+
+**NOTE**
+
+If the value is not within the range defined by the **min** and **max** parameters, the value of **min** is used.
 
 **Type:** number
 

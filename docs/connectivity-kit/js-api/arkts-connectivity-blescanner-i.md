@@ -1,6 +1,7 @@
 # BleScanner
 
-Manages the ble scanner. Before calling a ble scanner method, you must use {@link createBleScanner} to create an BleScanner instance.
+Manages the ble scanner.
+Before calling a ble scanner method, you must use {@link createBleScanner} to create an BleScanner instance.
 
 **Since:** 15
 
@@ -9,7 +10,7 @@ Manages the ble scanner. Before calling a ble scanner method, you must use {@lin
 ## Modules to Import
 
 ```TypeScript
-import { ble } from '@ohos.bluetooth.ble';
+import { ble } from '@kit.ConnectivityKit';
 ```
 
 ## off('BLEDeviceFind')
@@ -70,7 +71,9 @@ try {
 on(type: 'BLEDeviceFind', callback: Callback<ScanReport>): void
 ```
 
-Subscribe BLE scan result. On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC, the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
+Subscribe BLE scan result.
+On API 26.0.0 and above, if the application has ohos.permission.GET_BLUETOOTH_PEERS_MAC,
+the type of the peer device address is real. Otherwise, the type of the peer device address is virtual.
 
 **Since:** 15
 

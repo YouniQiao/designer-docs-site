@@ -9,7 +9,7 @@ Describes the window movement configuration.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## displayId
@@ -18,7 +18,10 @@ import { window } from '@ohos.window';
 displayId?: number
 ```
 
-Target display ID. The value must be an integer. If a non-integer is passed in, the value is rounded down. If this parameter is passed in, the window is positioned relative to the top-left corner of the target display. If this parameter is left empty or the target display ID does not exist, the window is positioned relative to the top-left corner of the current display.
+Target display ID. The value must be an integer. If a non-integer is passed in, the value is rounded down. If
+this parameter is passed in, the window is positioned relative to the top-left corner of the target display. If
+this parameter is left empty or the target display ID does not exist, the window is positioned relative to the
+top-left corner of the current display.
 
 **Type:** number
 

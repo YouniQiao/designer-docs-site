@@ -6,7 +6,7 @@ Album type.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumtype-e.md#albumtype)
+**Substitutes:** [AlbumType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-albumtype-e.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 

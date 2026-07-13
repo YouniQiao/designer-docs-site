@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## getFontUnicodeSet
@@ -12,7 +12,10 @@ import { text } from '@ohos.graphics.text';
 function getFontUnicodeSet(path: string | Resource, index: number) : Promise<Array<number>>
 ```
 
-Obtains an array of font Unicode by font file path. This API uses a promise to return the result. An empty array is returned if the font file is not found, the font file path is invalid, the font file does not have the required permission, or the file is not in the font format.
+Obtains an array of font Unicode by font file path. This API uses a promise to return the result.
+
+An empty array is returned if the font file is not found, the font file path is invalid, the font file does not
+have the required permission, or the file is not in the font format.
 
 **Since:** 23
 

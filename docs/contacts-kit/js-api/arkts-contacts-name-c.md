@@ -9,7 +9,7 @@ Defines a contact's name.
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## familyName
@@ -98,7 +98,8 @@ Given name of the contact in pinyin.
 hasName?: boolean
 ```
 
-Whether the contact information contains the name. The value **true** indicates that the contact information contains the name, and the value **false** indicates the opposite.
+Whether the contact information contains the name. The value **true** indicates that the contact information
+contains the name, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

@@ -6,7 +6,7 @@
 function on(type: 'cooperate', callback: Callback<{ networkId: string, msg: CooperateMsg }>): void
 ```
 
-注册监听键鼠穿越状态。 > **说明：** > > 从API version 10开始不再维护。建议使用[on('cooperateMessage')](arkts-distributedservice-on-f-sys.md#on-2)替代
+注册监听键鼠穿越状态。
 
 **起始版本：** 10
 
@@ -30,7 +30,7 @@ function on(type: 'cooperate', callback: Callback<{ networkId: string, msg: Coop
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 **示例：**
 
@@ -81,7 +81,7 @@ function on(type: 'cooperateMessage', callback: Callback<CooperateMessage>): voi
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types.<br>3. Parameter verification failed. |
 
 **示例：**
 
@@ -130,7 +130,7 @@ function on(type: 'cooperateMouse', networkId: string, callback: Callback<MouseL
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2.Incorrect parameter types.<br>3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified.<br>2.Incorrect parameter types.<br>3.Parameter verification failed. |
 
 **示例：**
 

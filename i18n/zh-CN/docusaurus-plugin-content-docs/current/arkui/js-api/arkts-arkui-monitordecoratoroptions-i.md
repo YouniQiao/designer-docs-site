@@ -12,7 +12,9 @@
 enableWildcard?: boolean
 ```
 
-启用通配符功能。 设置为true可启用通配符功能，设置为false可禁用通配符功能。 <br>默认值为true。
+启用通配符功能。
+设置为true可启用通配符功能，设置为false可禁用通配符功能。
+<br>默认值为true。
 
 **类型：** boolean
 

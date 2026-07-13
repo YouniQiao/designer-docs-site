@@ -4,7 +4,8 @@
 declare type OnNeedSoftkeyboardCallback = () => boolean
 ```
 
-Defines the callback type used in onNeedSoftkeyboard. Called when component is focused, the return value indicates whether keyboard is needed.
+Defines the callback type used in onNeedSoftkeyboard.
+Called when component is focused, the return value indicates whether keyboard is needed.
 
 **Since:** 24
 

@@ -11,7 +11,7 @@ Describes the window information.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## abilityName
@@ -52,7 +52,8 @@ Bundle name of the application.
 isFocused?: boolean
 ```
 
-Whether the window gains focus. **true** if the window gains focus, **false** otherwise. The return value is the same as that of the [isFocused()](arkts-arkui-window-i.md#isfocused-1) API.
+Whether the window gains focus. **true** if the window gains focus, **false** otherwise. The return value is the
+same as that of the [isFocused()](arkts-arkui-window-i.md#isfocused-1) API.
 
 **Type:** boolean
 

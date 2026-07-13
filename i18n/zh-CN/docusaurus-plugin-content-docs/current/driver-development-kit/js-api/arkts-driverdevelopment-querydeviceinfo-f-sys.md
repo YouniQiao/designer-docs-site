@@ -34,7 +34,7 @@ function queryDeviceInfo(deviceId?: number): Array<Readonly<DeviceInfo>>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The permission check failed. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied. A non-system application cannot call a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Incorrect parameter types. |
 | [26300001](../../apis-driverdevelopment-kit/errorcode-deviceManager.md#26300001-扩展外设驱动服务异常) | ExternalDeviceManager service exception. |
 
 **示例：**

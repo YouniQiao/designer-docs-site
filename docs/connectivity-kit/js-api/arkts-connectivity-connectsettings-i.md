@@ -9,7 +9,7 @@ Describes the settings for Wi-Fi connection.
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## addNetworkToSystem
@@ -18,7 +18,9 @@ import { wifiManager } from '@ohos.wifiManager';
 addNetworkToSystem?: boolean
 ```
 
-Whether to add the network to the system for connection. Default is false, if set to ture, the network will be added to the system before connection and cannot be retrieved again.
+Whether to add the network to the system for connection.
+Default is false, if set to ture, the network will be added to the system
+before connection and cannot be retrieved again.
 
 **Type:** boolean
 
@@ -54,7 +56,8 @@ The ID (uniquely identifies) of a Wi-Fi connection.
 userActionTimeout?: number
 ```
 
-User action timeout threshold(unit is seconds). The maximum value cannot exceed 30, and default is 10.
+User action timeout threshold(unit is seconds).
+The maximum value cannot exceed 30, and default is 10.
 
 **Type:** number
 

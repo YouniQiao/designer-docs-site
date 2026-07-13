@@ -1,9 +1,5 @@
 # BluetoothAndNearlinkPreferredRecordCategory
 
-```TypeScript
-enum BluetoothAndNearlinkPreferredRecordCategory
-```
-
 Enumerates the preferred device categories available for recording with Bluetooth or NearLink.
 
 **Since:** 21
@@ -28,7 +24,8 @@ No specific device preference.
 PREFERRED_DEFAULT = 1
 ```
 
-Prefers using Bluetooth or NearLink devices for recording; whether to use low-latency or high-quality recording depends on the system.
+Prefers using Bluetooth or NearLink devices for recording; whether to use low-latency or high-quality recording
+depends on the system.
 
 **Since:** 21
 

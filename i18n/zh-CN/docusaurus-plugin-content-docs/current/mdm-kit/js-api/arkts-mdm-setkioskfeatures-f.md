@@ -6,7 +6,11 @@
 function setKioskFeatures(admin: Want, features: Array<KioskFeature>): void
 ```
 
-设置Kiosk模式的特征。通过本接口可以控制在Kiosk模式下能否进入通知中心、控制中心。 从API version 24开始，新增支持设置是否允许底部上滑进入最近任务栏，左滑或右滑悬停展示侧边DOCK栏。 在非Kiosk模式下，本接口可以正常调用，但是不会生效，进入Kiosk模式后才会生效。
+设置Kiosk模式的特征。通过本接口可以控制在Kiosk模式下能否进入通知中心、控制中心。
+
+从API version 24开始，新增支持设置是否允许底部上滑进入最近任务栏，左滑或右滑悬停展示侧边DOCK栏。
+
+在非Kiosk模式下，本接口可以正常调用，但是不会生效，进入Kiosk模式后才会生效。
 
 **起始版本：** 20
 

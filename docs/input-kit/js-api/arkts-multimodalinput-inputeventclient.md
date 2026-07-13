@@ -1,8 +1,8 @@
 # @ohos.multimodalInput.inputEventClient
 
-输入事件注入模块，提供输入按键、鼠标/触控板、触屏输入事件注入能力。 > **说明：** > > - 本模块接口为系统接口。
+The **inputEventClient** module provides the capability of injecting key, mouse/touchpad, and touchscreen events.
 
-**Since:** 8
+**Since:** 26.0.0
 
 **System capability:** SystemCapability.MultimodalInput.Input.InputSimulator
 
@@ -20,27 +20,40 @@ import { inputEventClient } from '@kit.InputKit';
 
 | Name | Description |
 | --- | --- |
-| [createKeyboardController](arkts-inputeventclient-createkeyboardcontroller-f.md#createKeyboardController-1) | 创建键盘控制器，用于模拟按键操作。使用Promise异步回调。 |
-| [createMouseController](arkts-inputeventclient-createmousecontroller-f.md#createMouseController-1) | 创建鼠标控制器，用于模拟鼠标操作。使用Promise异步回调。 |
-| [createTouchController](arkts-inputeventclient-createtouchcontroller-f.md#createTouchController-1) | 创建触控控制器，用于模拟触控操作。使用Promise异步回调。 |
-| <!--DelRow-->[injectEvent](arkts-inputeventclient-injectevent-f-sys.md#injectEvent-1) | 按键(包括单个按键和组合键)注入。 |
-| <!--DelRow-->[injectEvent](arkts-inputeventclient-injectevent-f-sys.md#injectEvent-2) | 按键(包括单个按键和组合键)注入。 |
-| <!--DelRow-->[injectKeyEvent](arkts-inputeventclient-injectkeyevent-f-sys.md#injectKeyEvent-1) | 按键(包括单个按键和组合键)事件注入。 |
-| <!--DelRow-->[injectMouseEvent](arkts-inputeventclient-injectmouseevent-f-sys.md#injectMouseEvent-1) | 鼠标/触控板事件注入。 |
-| <!--DelRow-->[injectTouchEvent](arkts-inputeventclient-injecttouchevent-f-sys.md#injectTouchEvent-1) | 触屏输入事件注入。 |
-| <!--DelRow-->[permitInjection](arkts-inputeventclient-permitinjection-f-sys.md#permitInjection-1) | 允许事件注入权限。 |
+| [createKeyboardController](arkts-input-createkeyboardcontroller-f.md#createkeyboardcontroller-1) | Creates a keyboard controller for simulating key operations. This API uses a promise to return the result. |
+| [createMouseController](arkts-input-createmousecontroller-f.md#createmousecontroller-1) | Creates a mouse controller for simulating mouse operations. This API uses a promise to return the result. |
+| [createTouchController](arkts-input-createtouchcontroller-f.md#createtouchcontroller-1) | Creates a touch controller for simulating touch operations. This API uses a promise to return the result. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [injectEvent](arkts-input-injectevent-f-sys.md#injectevent-1) | Injects keys (including single keys and combination keys). |
+| [injectKeyEvent](arkts-input-injectkeyevent-f-sys.md#injectkeyevent-1) | Injects key events (for both single keys and combination keys). |
+| [injectMouseEvent](arkts-input-injectmouseevent-f-sys.md#injectmouseevent-1) | Injects a mouse/touchpad event. |
+| [injectTouchEvent](arkts-input-injecttouchevent-f-sys.md#injecttouchevent-1) | Injects a touch event. |
+| [permitInjection](arkts-input-permitinjection-f-sys.md#permitinjection-1) | Specifies whether to authorize event injection. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [KeyboardController](arkts-inputeventclient-keyboardcontroller-i.md) | 提供模拟按键操作的功能。模拟按键操作序列必须满足以下要求： 1. 按键只能在抬起状态下被按下，或者在该按键是最近按下的按键且未抬起的情况下被按下。 2. 按键只能在被按下后才能抬起。 3. 最多可以同时按下并保持五个按键。 |
-| <!--DelRow-->[KeyEvent](arkts-inputeventclient-keyevent-i-sys.md) | 按键注入描述信息。 |
-| <!--DelRow-->[KeyEventData](arkts-inputeventclient-keyeventdata-i-sys.md) | 按键注入描述信息。 |
-| <!--DelRow-->[KeyEventInfo](arkts-inputeventclient-keyeventinfo-i-sys.md) | 定义用户注入的按键事件信息。 |
-| [MouseController](arkts-inputeventclient-mousecontroller-i.md) | 提供模拟鼠标操作的功能。模拟鼠标操作序列必须满足以下要求： 1. 鼠标按键只能在抬起状态下被按下。 2. 鼠标按键只能在被按下后才能抬起。 3. 有效的轴事件序列必须先调用beginAxis开始事件，然后调用零次或多次updateAxis更新事件，最后调用endAxis结束事件。 4. 同一时间只能有一个进行中的轴事件序列。 |
-| <!--DelRow-->[MouseEventData](arkts-inputeventclient-mouseeventdata-i-sys.md) | 鼠标注入描述信息。 |
-| [TouchController](arkts-inputeventclient-touchcontroller-i.md) | 提供模拟触控操作的功能。模拟触控操作序列必须满足以下要求： 1. 所有触点的displayId必须相同。 2. 每个触点都必须以`touchDown()`开始，以`touchUp()`结束，中间可包含多个`touchMove()`。 |
-| <!--DelRow-->[TouchEventData](arkts-inputeventclient-toucheventdata-i-sys.md) | 触屏注入描述信息。 |
-| [TouchPoint](arkts-inputeventclient-touchpoint-i.md) | 表示屏幕上的单个触点信息。 |
+| [KeyboardController](arkts-input-keyboardcontroller-i.md) | Provides the capability of simulating key operations. The simulated key operation sequence must meet the followingrequirements:1. A key can only be pressed when it is in the released state, or when it is the most recently pressed key andhas not been released.2. A key can only be released after it has been pressed.3. A maximum of five keys can be pressed and held simultaneously. |
+| [MouseController](arkts-input-mousecontroller-i.md) | Provides the capability of simulating mouse operations. The simulated mouse operation sequence must meet thefollowing requirements:1. A mouse button can be pressed only when it is in the released state.2. A mouse button can only be released after it has been pressed.3. A valid axis event sequence must begin with a **beginAxis** call, followed by zero or more **updateAxis** calls,and end with an **endAxis** call.4. Only one axis event sequence can be in progress at a time. |
+| [TouchController](arkts-input-touchcontroller-i.md) | Provides the capability of simulating touch operations. The simulated touch operation sequence must meet thefollowing requirements:1. All touch points must share the same **displayId**.2. Each touch point must begin with a **touchDown()** call, followed by zero or more **touchMove()** calls, and endwith an **touchUp()** call. |
+| [TouchPoint](arkts-input-touchpoint-i.md) | Represents information about a single touch point on the display. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [KeyEvent](arkts-input-keyevent-i-sys.md) | Defines the key event to inject. |
+| [KeyEventData](arkts-input-keyeventdata-i-sys.md) | Defines the key event to inject. |
+| [KeyEventInfo](arkts-input-keyeventinfo-i-sys.md) | Defines the key event information injected by the user. |
+| [MouseEventData](arkts-input-mouseeventdata-i-sys.md) | Defines the mouse event data. |
+| [TouchEventData](arkts-input-toucheventdata-i-sys.md) | Defines the touch event data. |
+<!--DelEnd-->
 

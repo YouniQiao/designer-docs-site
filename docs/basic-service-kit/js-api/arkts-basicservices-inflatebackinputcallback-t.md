@@ -4,7 +4,8 @@
 type InflateBackInputCallback = (inDesc: object) => ArrayBuffer
 ```
 
-A callback function for reading input data provided by a user. When the decompression process requires more input data, zlib will call this function. This function should read data from the data source to the buffer.
+A callback function for reading input data provided by a user. When the decompression process requires more
+input data, zlib will call this function. This function should read data from the data source to the buffer.
 
 **Since:** 12
 

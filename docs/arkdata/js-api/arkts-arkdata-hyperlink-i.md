@@ -9,7 +9,7 @@ Represents data of the hyperlink type.
 ## Modules to Import
 
 ```TypeScript
-import { uniformDataStruct } from '@ohos.data.uniformDataStruct';
+import { uniformDataStruct } from '@kit.ArkData';
 ```
 
 ## description
@@ -34,7 +34,19 @@ Description of the linked content. This parameter is optional. By default, it is
 details?: Record<string, string>
 ```
 
-Object of the dictionary type used to describe the attributes of the hyperlink. Both the key and value of the object are of the string type. For example, the following is a **details** object used to describe the properties of a file: { "title":"Title of the file", "content":"Content of the file" } By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the attributes of the hyperlink. Both the key and value of the
+object are of the string type. For example, the following is a **details** object used to describe the properties
+of a file:
+
+{
+
+"title":"Title of the file",
+
+"content":"Content of the file"
+
+}
+
+By default, it is an empty dictionary object.
 
 **Type:** Record<string, string>
 
@@ -50,7 +62,8 @@ Object of the dictionary type used to describe the attributes of the hyperlink. 
 readonly uniformDataType: 'general.hyperlink'
 ```
 
-Uniform data type, which has a fixed value of **general.hyperlink**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype).
+Uniform data type, which has a fixed value of **general.hyperlink**. For details, see
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'general.hyperlink'
 

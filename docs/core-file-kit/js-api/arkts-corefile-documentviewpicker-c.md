@@ -1,6 +1,7 @@
 # DocumentViewPicker
 
-Provides APIs for selecting and saving documents in different formats. Before using the APIs of **DocumentViewPicker**, you need to create a **DocumentViewPicker** instance.
+Provides APIs for selecting and saving documents in different formats. Before using the APIs of
+**DocumentViewPicker**, you need to create a **DocumentViewPicker** instance.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Provides APIs for selecting and saving documents in different formats. Before us
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## constructor
@@ -18,7 +19,8 @@ import { picker } from '@ohos.file.picker';
 constructor()
 ```
 
-A constructor used to create a **DocumentViewPicker** instance. This constructor is not recommended due to the potential risk of operation failure.
+A constructor used to create a **DocumentViewPicker** instance. This constructor is not recommended due to the
+potential risk of operation failure.
 
 **Since:** 12
 
@@ -39,7 +41,9 @@ let documentPicker = new picker.DocumentViewPicker(); // Construction without pa
 constructor(context: Context)
 ```
 
-A constructor used to create a **DocumentViewPicker** instance. This constructor is recommended. For details about how to obtain the context, see [getHostContext](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
+A constructor used to create a **DocumentViewPicker** instance. This constructor is recommended. For details
+about how to obtain the context, see
+[getHostContext](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#gethostcontext12).
 
 **Since:** 12
 
@@ -51,7 +55,7 @@ A constructor used to create a **DocumentViewPicker** instance. This constructor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). |
+| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). |
 
 **Example**
 
@@ -88,7 +92,12 @@ struct Index {
 constructor(context: Context, window: window.Window)
 ```
 
-A constructor used to create a **DocumentViewPicker** object in a window created by an application. In other scenarios, you are advised to use **constructor(context: Context)** to create a **DocumentViewPicker** object. > **NOTE** > > This method is supported on 2-in-1 devices and tablets since API version 19.
+A constructor used to create a **DocumentViewPicker** object in a window created by an application. In other
+scenarios, you are advised to use **constructor(context: Context)** to create a **DocumentViewPicker** object.
+
+> **NOTE**
+>
+> This method is supported on 2-in-1 devices and tablets since API version 19.
 
 **Since:** 13
 
@@ -98,7 +107,7 @@ A constructor used to create a **DocumentViewPicker** object in a window created
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md#context). |
+| context | Context | Yes | Application context (only **UIAbilityContext** is supported). For details about theapplication context of the stage model, see [Context](../../apis-ability-kit/arkts-apis/arkts-ability-context-depr-i.md). |
 | window | window.Window | Yes | Window instance created by the application. |
 
 **Example**
@@ -139,7 +148,14 @@ struct Index {
 getSelectedIndex(): number
 ```
 
-Obtains the index of the file suffix type of the file saved. This method takes effect only when used with [save()](arkts-corefile-documentviewpicker-c.md#save-1). This method can be used only after [DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md#documentsaveoptions) is configured. The index (number) returned by this method indicates the location of the file suffix specified in [DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md#documentsaveoptions). If no file suffix is specified, **getSelectedIndex()** returns **-1**.
+Obtains the index of the file suffix type of the file saved.
+This method takes effect only when used with
+[save()](arkts-corefile-documentviewpicker-c.md#save-1).
+This method can be used only after [DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md) is
+configured.
+The index (number) returned by this method indicates the location of the file suffix specified in
+[DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md). If no file suffix is specified,
+**getSelectedIndex()** returns **-1**.
 
 **Since:** 14
 
@@ -151,7 +167,7 @@ Obtains the index of the file suffix type of the file saved. This method takes e
 
 | Type | Description |
 | --- | --- |
-| number | Subscript (number) of the selected suffix type in[DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md#documentsaveoptions). The default value is **-1**. |
+| number | Subscript (number) of the selected suffix type in[DocumentSaveOptions.fileSuffixChoices](arkts-corefile-documentsaveoptions-c.md). The default value is **-1**. |
 
 ## save
 
@@ -159,7 +175,8 @@ Obtains the index of the file suffix type of the file saved. This method takes e
 save(option?: DocumentSaveOptions): Promise<Array<string>>
 ```
 
-Starts a **documentPicker** page for the user to save one or more documents. This API uses a promise to return the result.
+Starts a **documentPicker** page for the user to save one or more documents. This API uses a promise to return
+the result.
 
 **Since:** 9
 
@@ -209,7 +226,8 @@ async function example10(context: common.UIAbilityContext) { // Ensure that cont
 save(option: DocumentSaveOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **documentPicker** page for the user to save one or more documents. This API uses an asynchronous callback to return the result.
+Starts a **documentPicker** page for the user to save one or more documents. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -256,7 +274,8 @@ async function example11(context: common.UIAbilityContext) { // Ensure that cont
 save(callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **documentPicker** page for the user to save one or more documents. This API uses an asynchronous callback to return the result.
+Starts a **documentPicker** page for the user to save one or more documents. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -300,7 +319,8 @@ async function example12(context: common.UIAbilityContext) { // Ensure that cont
 select(option?: DocumentSelectOptions): Promise<Array<string>>
 ```
 
-Starts a **documentPicker** page for the user to select one or more documents. This API uses a promise to return the result.
+Starts a **documentPicker** page for the user to select one or more documents. This API uses a promise to return
+the result.
 
 **Since:** 9
 
@@ -349,7 +369,8 @@ async function example07(context: common.UIAbilityContext) { // Ensure that cont
 select(option: DocumentSelectOptions, callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **documentPicker** page for the user to select one or more documents. This API uses an asynchronous callback to return the result.
+Starts a **documentPicker** page for the user to select one or more documents. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -395,7 +416,8 @@ async function example08(context: common.UIAbilityContext) { // Ensure that cont
 select(callback: AsyncCallback<Array<string>>): void
 ```
 
-Starts a **documentPicker** page for the user to select one or more documents. This API uses an asynchronous callback to return the result.
+Starts a **documentPicker** page for the user to select one or more documents. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 

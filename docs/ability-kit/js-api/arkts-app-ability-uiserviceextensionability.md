@@ -8,9 +8,11 @@ import { UIServiceExtensionAbility } from '@kit.AbilityKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[UIServiceExtensionAbility](arkts-uiserviceextensionability-c.md) | UIServiceExtensionAbility提供浮窗组件相关扩展能力，继承自[ExtensionAbility]{@link @ohos.app.ability.ExtensionAbility:ExtensionAbility}. 主要用于向三方应用提供带界面的服务。 |
+| [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md) | UIServiceExtensionAbility provides extended capabilities related to the floating window component. It inherits from [ExtensionAbility](arkts-ability-extensionability-c.md). It is mainly used to provide services with UIs for third-party applications.&gt; **NOTE**&gt;&gt; The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool. |
+<!--DelEnd-->
 

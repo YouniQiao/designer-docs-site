@@ -9,7 +9,7 @@ Defines an HTTP Interceptor chain.
 ## Modules to Import
 
 ```TypeScript
-import { http } from '@ohos.net.http';
+import { http } from '@kit.NetworkKit';
 ```
 
 ## addChain
@@ -52,7 +52,8 @@ Add an interceptor chain to the HTTP client.
 public apply(httpRequest: HttpRequest): boolean
 ```
 
-Attach the chain to the target http request. Only one chain can be attached to a given request.
+Attach the chain to the target http request.
+Only one chain can be attached to a given request.
 
 **Since:** 22
 

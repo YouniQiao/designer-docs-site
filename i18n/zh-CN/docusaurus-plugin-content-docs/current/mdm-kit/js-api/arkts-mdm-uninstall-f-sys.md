@@ -6,7 +6,13 @@
 function uninstall(admin: Want, bundleName: string, callback: AsyncCallback<void>): void
 ```
 
-卸载当前用户下的指定应用程序包，且不保留应用程序包数据。使用callback异步回调。 > **说明：** > > 当应用为不可卸载的预置应用或者通过 > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
+卸载当前用户下的指定应用程序包，且不保留应用程序包数据。使用callback异步回调。
+
+> **说明：**
+>
+> 当应用为不可卸载的预置应用或者通过
+> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
+> 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
 **起始版本：** 10
 
@@ -38,7 +44,7 @@ function uninstall(admin: Want, bundleName: string, callback: AsyncCallback<void
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -69,7 +75,13 @@ bundleManager.uninstall(wantTemp, 'bundleName', (err) => {
 function uninstall(admin: Want, bundleName: string, userId: number, callback: AsyncCallback<void>): void
 ```
 
-卸载指定用户下（由参数userId指定）的指定应用程序包，且不保留应用程序包数据。使用callback异步回调。 > **说明：** > > 当应用为不可卸载的预置应用或者通过 > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
+卸载指定用户下（由参数userId指定）的指定应用程序包，且不保留应用程序包数据。使用callback异步回调。
+
+> **说明：**
+>
+> 当应用为不可卸载的预置应用或者通过
+> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
+> 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
 **起始版本：** 10
 
@@ -102,7 +114,7 @@ function uninstall(admin: Want, bundleName: string, userId: number, callback: As
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -133,7 +145,13 @@ bundleManager.uninstall(wantTemp, 'bundleName', 100, (err) => {
 function uninstall(admin: Want, bundleName: string, isKeepData: boolean, callback: AsyncCallback<void>): void
 ```
 
-卸载当前用户下的指定应用程序包，选择是否保留应用程序包数据（由isKeepData指定）。使用callback异步回调。 > **说明：** > > 当应用为不可卸载的预置应用或者通过 > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
+卸载当前用户下的指定应用程序包，选择是否保留应用程序包数据（由isKeepData指定）。使用callback异步回调。
+
+> **说明：**
+>
+> 当应用为不可卸载的预置应用或者通过
+> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
+> 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
 **起始版本：** 10
 
@@ -166,7 +184,7 @@ function uninstall(admin: Want, bundleName: string, isKeepData: boolean, callbac
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 
@@ -197,7 +215,13 @@ bundleManager.uninstall(wantTemp, 'bundleName', true, (err) => {
 function uninstall(admin: Want, bundleName: string, userId: number, isKeepData: boolean, callback: AsyncCallback<void>): void
 ```
 
-卸载指定用户下（由参数userId指定）的指定应用程序包接口，选择是否保留应用程序包数据（由isKeepData指定）。使用callback异步回调。 > **说明：** > > 当应用为不可卸载的预置应用或者通过 > [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1) > 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
+卸载指定用户下（由参数userId指定）的指定应用程序包接口，选择是否保留应用程序包数据（由isKeepData指定）。使用callback异步回调。
+
+> **说明：**
+>
+> 当应用为不可卸载的预置应用或者通过
+> [addDisallowedUninstallBundlesSync](arkts-mdm-adddisalloweduninstallbundlessync-f.md#adddisalloweduninstallbundlessync-1)
+> 接口设置了不允许卸载时，调用此接口卸载应用会返回401错误码。
 
 **起始版本：** 10
 
@@ -231,7 +255,7 @@ function uninstall(admin: Want, bundleName: string, userId: number, isKeepData: 
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-设备管理器权限不够) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission verification failed. The application does not have the permissionrequired to call the API. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission verification failed. A non-system application calls a system API. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 
 **示例：**
 

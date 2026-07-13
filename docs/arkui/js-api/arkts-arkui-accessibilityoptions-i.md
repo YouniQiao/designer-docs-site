@@ -30,7 +30,8 @@ accessibilityPreferred - Should accessibilityText be prioritized when concatenat
 actionControllerId?: string
 ```
 
-actionControllerId - the first component of a specific id found within the composition defined by accessibility group will take over part of the accessibility action of the composition
+actionControllerId - the first component of a specific id found within the composition defined by
+accessibility group will take over part of the accessibility action of the composition
 
 **Type:** string
 
@@ -48,7 +49,8 @@ actionControllerId - the first component of a specific id found within the compo
 actionControllerRoleType?: AccessibilityRoleType
 ```
 
-actionControllerRoleType - the first component of a specific type found within the composition defined by accessibility group will take over part of the accessibility action of the composition
+actionControllerRoleType - the first component of a specific type found within the composition defined by
+accessibility group will take over part of the accessibility action of the composition
 
 **Type:** AccessibilityRoleType
 
@@ -66,7 +68,8 @@ actionControllerRoleType - the first component of a specific type found within t
 stateControllerId?: string
 ```
 
-stateControllerId - the first component of a specific id found within the composition defined by accessibility group will take over the state attributes and announcement of the composition
+stateControllerId - the first component of a specific id found within the composition defined by
+accessibility group will take over the state attributes and announcement of the composition
 
 **Type:** string
 
@@ -84,7 +87,8 @@ stateControllerId - the first component of a specific id found within the compos
 stateControllerRoleType?: AccessibilityRoleType
 ```
 
-stateControllerRoleType - the first component of a specific type found within the composition defined by accessibility group will take over the state attributes and announcement of the composition
+stateControllerRoleType - the first component of a specific type found within the composition defined by
+accessibility group will take over the state attributes and announcement of the composition
 
 **Type:** AccessibilityRoleType
 

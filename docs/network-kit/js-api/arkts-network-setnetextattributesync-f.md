@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## setNetExtAttributeSync
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function setNetExtAttributeSync(netHandle: NetHandle, netExtAttribute: string): void
 ```
 
-Set the network extended attribute for a {@link NetHandle} object. To invoke this method, you must have the {@code ohos.permission.SET_NET_EXT_ATTRIBUTE} permission.
+Set the network extended attribute for a {@link NetHandle} object.
+To invoke this method, you must have the {@code ohos.permission.SET_NET_EXT_ATTRIBUTE} permission.
 
 **Since:** 20
 

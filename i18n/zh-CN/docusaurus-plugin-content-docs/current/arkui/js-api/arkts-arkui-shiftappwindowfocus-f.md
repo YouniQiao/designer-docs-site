@@ -6,7 +6,18 @@
 function shiftAppWindowFocus(sourceWindowId: number, targetWindowId: number): Promise<void>
 ```
 
-在同应用内将窗口焦点从源窗口转移到目标窗口，仅支持应用主窗、子窗范围内的焦点转移。使用Promise异步回调。 目标窗口需确保具有获得焦点的能力（可通过 [setWindowFocusable()](arkts-arkui-window-i.md#setwindowfocusable-2) 设置），并确保调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)成功且执行完毕。 > **说明：** > > 在调用shiftAppWindowFocus()前，建议确保目标窗口已调用 > [loadContent()](arkts-arkui-window-i.md#loadcontent-1) > 或[setUIContent()](arkts-arkui-window-i.md#setuicontent-1)并生效， > 否则可能会导致不可见窗口获取焦点，造成功能异常或影响用户体验。
+在同应用内将窗口焦点从源窗口转移到目标窗口，仅支持应用主窗、子窗范围内的焦点转移。使用Promise异步回调。
+
+目标窗口需确保具有获得焦点的能力（可通过
+[setWindowFocusable()](arkts-arkui-window-i.md#setwindowfocusable-2)
+设置），并确保调用[showWindow()](arkts-arkui-window-i.md#showwindow-1)成功且执行完毕。
+
+> **说明：**
+>
+> 在调用shiftAppWindowFocus()前，建议确保目标窗口已调用
+> [loadContent()](arkts-arkui-window-i.md#loadcontent-1)
+> 或[setUIContent()](arkts-arkui-window-i.md#setuicontent-1)并生效，
+> 否则可能会导致不可见窗口获取焦点，造成功能异常或影响用户体验。
 
 **起始版本：** 11
 
@@ -31,8 +42,8 @@ function shiftAppWindowFocus(sourceWindowId: number, targetWindowId: number): Pr
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. Failed to call the API due to limited devicecapabilities. |
 | [1300002](../errorcode-window.md#1300002-窗口状态异常) | This window state is abnormal.Possible cause: 1. The window is not created or destroyed;2. Internal task error. |
 | [1300003](../errorcode-window.md#1300003-系统服务工作异常) | This window manager service works abnormally. |
 | [1300004](../errorcode-window.md#1300004-无权限操作) | Unauthorized operation.Possible cause: 1. Invalid window type. Only main windows and subwindows are supported.2. The two windows are not from the same process. |

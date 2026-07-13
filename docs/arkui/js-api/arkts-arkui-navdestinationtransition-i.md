@@ -12,7 +12,9 @@ Defines a custom transition animation for the **NavDestination** component.
 curve?: Curve
 ```
 
-Curve type of the animation. Default value: Curve.EaseInOut](ts-appendix-enums.md#curve)
+Curve type of the animation.
+
+Default value: Curve.EaseInOut](ts-appendix-enums.md#curve)
 
 **Type:** Curve
 
@@ -30,7 +32,9 @@ Curve type of the animation. Default value: Curve.EaseInOut](ts-appendix-enums.m
 delay?: number
 ```
 
-Delay of the transition animation. Default value: **0** (in milliseconds)
+Delay of the transition animation.
+
+Default value: **0** (in milliseconds)
 
 **Type:** number
 
@@ -48,7 +52,9 @@ Delay of the transition animation. Default value: **0** (in milliseconds)
 duration?: number
 ```
 
-Duration of the transition animation. Default value: **1000** (in milliseconds)
+Duration of the transition animation.
+
+Default value: **1000** (in milliseconds)
 
 **Type:** number
 
@@ -66,7 +72,9 @@ Duration of the transition animation. Default value: **1000** (in milliseconds)
 event: Callback<void>
 ```
 
-Closure function specifying the transition animation. The system generates the corresponding transition animation based on the modifications to the component's UI state within the closure. For details, see **event** in [animateTo](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#animateto).
+Closure function specifying the transition animation. The system generates the corresponding transition animation
+based on the modifications to the component's UI state within the closure. For details, see **event** in
+[animateTo](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#animateto).
 
 **Type:** Callback<void>
 

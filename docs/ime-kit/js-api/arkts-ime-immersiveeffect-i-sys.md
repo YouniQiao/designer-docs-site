@@ -9,7 +9,7 @@ Describes the immersive effect.
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## fluidLightMode
@@ -18,7 +18,10 @@ import { inputMethodEngine } from '@ohos.inputMethodEngine';
 fluidLightMode?: FluidLightMode
 ```
 
-Fluid light mode. If this attribute is not specified or is set to an invalid value, the fluid light mode is not used by default. This attribute is available only to system applications.
+Fluid light mode. If this attribute is not specified or is set to an invalid value, the fluid light mode is not
+used by default.
+
+This attribute is available only to system applications.
 
 **Type:** FluidLightMode
 

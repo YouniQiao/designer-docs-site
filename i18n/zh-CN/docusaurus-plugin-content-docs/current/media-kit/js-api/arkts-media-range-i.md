@@ -6,35 +6,29 @@ Provides Range with lower and upper limit.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
-## 导入模块
+## max
 
 ```TypeScript
-import { media } from '@kit.MediaKit';
+max: number
 ```
 
-## min
+Maximum value.
 
-```TypeScript
-min: int
-```
-
-Minimum value.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 11
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
-## max
+## min
 
 ```TypeScript
-max: int
+min: number
 ```
 
-Maximum value.
+Minimum value.
 
-**类型：** int
+**类型：** number
 
 **起始版本：** 11
 

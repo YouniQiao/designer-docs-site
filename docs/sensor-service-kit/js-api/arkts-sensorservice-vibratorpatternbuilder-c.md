@@ -9,7 +9,7 @@ Provide methods for adding long or short vibration events and generate VibratorP
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## addContinuousEvent
@@ -141,7 +141,8 @@ try {
 build(): VibratorPattern
 ```
 
-Constructor used to create a **VibratorPattern** object, which determines the vibration sequence of short or long events.
+Constructor used to create a **VibratorPattern** object, which determines the vibration sequence of short or long
+events.
 
 **Since:** 18
 

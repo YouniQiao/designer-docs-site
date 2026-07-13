@@ -1,12 +1,17 @@
 # UsedScene
 
-> **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [UsedScene](arkts-ability-usedscene-depr-i.md#usedscene) instead. Describes the application scenario and timing for using the permission.
+> **NOTE**
+>
+> This API has been supported since API version 7 and deprecated since API version 9. You are advised to use
+> [UsedScene](arkts-ability-usedscene-depr-i.md) instead.
+
+Describes the application scenario and timing for using the permission.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** [bundleInfo:UsedScene](arkts-ability-usedscene-depr-i.md#usedscene)
+**Substitutes:** [bundleInfo:UsedScene](arkts-ability-usedscene-depr-i.md)
 
 **System capability:** SystemCapability.BundleManager.BundleFramework
 

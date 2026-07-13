@@ -1,6 +1,7 @@
 # EffectComponentOptions (System API)
 
-Sets the construction parameters of the current EffectComponent, including the rendering layer of the EffectComponent.
+Sets the construction parameters of the current EffectComponent, including the rendering layer of the
+EffectComponent.
 
 **Since:** 20
 
@@ -14,7 +15,9 @@ Sets the construction parameters of the current EffectComponent, including the r
 effectLayer?: EffectLayer
 ```
 
-Rendering layer of the EffectComponent. Default value: EffectLayer.NONE
+Rendering layer of the EffectComponent.
+
+Default value: EffectLayer.NONE
 
 **Type:** EffectLayer
 

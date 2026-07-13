@@ -9,7 +9,7 @@ Indicates the options of placing a call.
 ## Modules to Import
 
 ```TypeScript
-import { call } from '@ohos.telephony.call';
+import { call } from '@kit.TelephonyKit';
 ```
 
 ## accountId
@@ -18,7 +18,8 @@ import { call } from '@ohos.telephony.call';
 accountId?: number
 ```
 
-Indicates the card slot index number, ranging from 0 to the maximum card slot index number supported by the device.
+Indicates the card slot index number, ranging from 0 to the maximum card slot index number
+supported by the device.
 
 **Type:** number
 

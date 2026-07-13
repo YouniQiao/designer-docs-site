@@ -11,7 +11,7 @@ Provides APIs for user authentication.
 ## Modules to Import
 
 ```TypeScript
-import { osAccount } from '@ohos.account.osAccount';
+import { osAccount } from '@kit.BasicServicesKit';
 ```
 
 ## auth
@@ -58,10 +58,10 @@ Performs authentication of the current user.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid challenge, authType or authTrustLevel. |
-| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception.<br>**Applicable version:** 12 |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 |
-| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 |
-| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception.<br>**Applicable version:** 12 and later |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 and later |
+| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 and later |
+| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 and later |
 | [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | The credential is incorrect. |
 | [12300102](../../apis-basic-services-kit/errorcode-account.md#12300102-credential-not-found) | The credential does not exist. |
 | [12300105](../../apis-basic-services-kit/errorcode-account.md#12300105-trust-level-not-supported) | The trust level is not supported. |
@@ -70,12 +70,12 @@ Performs authentication of the current user.
 | [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
 | [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication time out. |
 | [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
-| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The authentication service does not exist.<br>**Applicable version:** 12 |
-| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally.<br>**Applicable version:** 12 |
-| [12300117](../../apis-basic-services-kit/errorcode-account.md#12300117-pin-expired) | PIN is expired.<br>**Applicable version:** 12 |
-| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 |
-| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 |
-| 12300211 | Server unreachable.<br>**Applicable version:** 12 |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The authentication service does not exist.<br>**Applicable version:** 12 and later |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally.<br>**Applicable version:** 12 and later |
+| [12300117](../../apis-basic-services-kit/errorcode-account.md#12300117-pin-expired) | PIN is expired.<br>**Applicable version:** 12 and later |
+| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 and later |
+| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 and later |
+| 12300211 | Server unreachable.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -112,7 +112,9 @@ auth(
     ): Uint8Array
 ```
 
-Starts user authentication based on the specified challenge value, authentication type (PIN, facial, or fingerprint authentication), authentication trust level, and optional parameters (such as the account ID and authentication intent).
+Starts user authentication based on the specified challenge value, authentication type (PIN, facial, or
+fingerprint authentication), authentication trust level, and optional parameters (such as the account ID and
+authentication intent).
 
 **Since:** 12
 
@@ -148,9 +150,9 @@ Starts user authentication based on the specified challenge value, authenticatio
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid challenge, authType, authTrustLevel or options. |
 | [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found. |
 | [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception. |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 |
-| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 |
-| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 and later |
+| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 and later |
+| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 and later |
 | [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | The credential is incorrect. |
 | [12300102](../../apis-basic-services-kit/errorcode-account.md#12300102-credential-not-found) | The credential does not exist. |
 | [12300105](../../apis-basic-services-kit/errorcode-account.md#12300105-trust-level-not-supported) | The trust level is not supported. |
@@ -162,8 +164,8 @@ Starts user authentication based on the specified challenge value, authenticatio
 | [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The authentication service does not exist. |
 | [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally. |
 | [12300117](../../apis-basic-services-kit/errorcode-account.md#12300117-pin-expired) | PIN is expired. |
-| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 |
-| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 |
+| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 and later |
+| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 and later |
 | 12300211 | Server unreachable. |
 
 **Example**
@@ -238,11 +240,11 @@ Performs authentication of the specified user. This API uses an asynchronous cal
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid challenge, authType or authTrustLevel. |
-| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 |
-| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception.<br>**Applicable version:** 12 |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 |
-| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 |
-| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 and later |
+| [12300013](../../apis-basic-services-kit/errorcode-account.md#12300013-network-exception) | Network exception.<br>**Applicable version:** 12 and later |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 20 and later |
+| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 and later |
+| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 and later |
 | [12300101](../../apis-basic-services-kit/errorcode-account.md#12300101-incorrect-credential) | The credential is incorrect. |
 | [12300102](../../apis-basic-services-kit/errorcode-account.md#12300102-credential-not-found) | The credential does not exist. |
 | [12300105](../../apis-basic-services-kit/errorcode-account.md#12300105-trust-level-not-supported) | The trust level is not supported. |
@@ -251,12 +253,12 @@ Performs authentication of the specified user. This API uses an asynchronous cal
 | [12300110](../../apis-basic-services-kit/errorcode-account.md#12300110-authentication-locked) | The authentication is locked. |
 | [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | The authentication timeout. |
 | [12300112](../../apis-basic-services-kit/errorcode-account.md#12300112-authentication-service-does-not-respond) | The authentication service is busy. |
-| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The authentication service does not exist.<br>**Applicable version:** 12 |
-| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally.<br>**Applicable version:** 12 |
-| [12300117](../../apis-basic-services-kit/errorcode-account.md#12300117-pin-expired) | PIN is expired.<br>**Applicable version:** 12 |
-| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 |
-| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 |
-| 12300211 | Server unreachable.<br>**Applicable version:** 12 |
+| [12300113](../../apis-basic-services-kit/errorcode-account.md#12300113-authentication-service-not-found) | The authentication service does not exist.<br>**Applicable version:** 12 and later |
+| [12300114](../../apis-basic-services-kit/errorcode-account.md#12300114-authentication-service-abnormal) | The authentication service works abnormally.<br>**Applicable version:** 12 and later |
+| [12300117](../../apis-basic-services-kit/errorcode-account.md#12300117-pin-expired) | PIN is expired.<br>**Applicable version:** 12 and later |
+| 12300119 | Multi-factor authentication failed.<br>**Applicable version:** 20 and later |
+| [12300120](../../apis-basic-services-kit/errorcode-account.md#12300120-credential-expired) | The credentials are no longer valid.<br>**Applicable version:** 23 and later |
+| 12300211 | Server unreachable.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -370,7 +372,8 @@ let userAuth = new osAccount.UserAuth();
 getAvailableStatus(authType: AuthType, authTrustLevel: AuthTrustLevel): number
 ```
 
-Obtains the available status of the authentication capability corresponding to the specified authentication type and trust level.
+Obtains the available status of the authentication capability corresponding to the specified authentication type
+and trust level.
 
 **Since:** 8
 
@@ -453,8 +456,8 @@ Obtains the executor property based on the request. This API uses an asynchronou
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid request. |
-| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 and later |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -522,8 +525,8 @@ Obtains the executor property based on the request. This API uses a promise to r
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid request. |
-| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 |
+| [12300003](../../apis-basic-services-kit/errorcode-account.md#12300003-account-not-found) | Account not found.<br>**Applicable version:** 12 and later |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -559,7 +562,8 @@ try {
 getPropertyByCredentialId(credentialId: Uint8Array, keys: Array<GetPropertyType>): Promise<ExecutorProperty>
 ```
 
-Obtains the specified property information of the associated executor based on the credential ID. This API uses a promise to return the result.
+Obtains the specified property information of the associated executor based on the credential ID. This API uses a
+promise to return the result.
 
 **Since:** 14
 
@@ -590,7 +594,7 @@ Obtains the specified property information of the associated executor based on t
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | The system service works abnormally. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid keys. |
-| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 |
+| 12300020 | Device hardware abnormal.<br>**Applicable version:** 23 and later |
 | [12300102](../../apis-basic-services-kit/errorcode-account.md#12300102-credential-not-found) | The credential does not exist. |
 
 **Example**
@@ -704,9 +708,9 @@ Prepares for remote authentication. This API uses a promise to return the result
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system application. |
 | [12300001](../../apis-basic-services-kit/errorcode-account.md#12300001-system-service-abnormal) | System service exception. |
 | [12300002](../../apis-basic-services-kit/errorcode-account.md#12300002-invalid-parameter) | Invalid remoteNetworkId. |
-| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 |
-| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 |
-| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | Operation timeout.<br>**Applicable version:** 20 |
+| 12300090 | Cross-device capability not supported.<br>**Applicable version:** 20 and later |
+| 12300091 | Cross-device communication failed.<br>**Applicable version:** 20 and later |
+| [12300111](../../apis-basic-services-kit/errorcode-account.md#12300111-authentication-timed-out) | Operation timeout.<br>**Applicable version:** 20 and later |
 
 **Example**
 

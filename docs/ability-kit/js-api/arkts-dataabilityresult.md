@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [DataAbilityResult](arkts-dataabilityresult-i.md) | 定义DataAbility数据操作结果，通过 [executeBatch](docroot://reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) 操作数据库时，操作结果使用DataAbilityResult对象返回。 |
+| [DataAbilityResult](arkts-ability-dataabilityresult-i.md) | The module defines the operation result on DataAbilities. When you call[executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) to operate the database, the operation result is returned through the DataAbilityResult object. |
 

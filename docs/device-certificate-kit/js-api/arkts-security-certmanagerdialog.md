@@ -1,6 +1,7 @@
 # @ohos.security.certManagerDialog
 
-证书管理对话框主要提供打开证书管理界面的能力，用户在打开的证书管理对话框可对证书进行查看和管理（安装，卸载、授权）。
+The **certificateManagerDialog** module provides APIs for opening the certificate management pages, on which you can
+view and manage certificates (install, uninstall, and authorize certificates).
 
 **Since:** 13
 
@@ -18,30 +19,30 @@ import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 
 | Name | Description |
 | --- | --- |
-| [openAuthorizeDialog](arkts-certificatemanagerdialog-openauthorizedialog-f.md#openAuthorizeDialog-1) | 打开证书管理对话框的证书凭据授权页面。在弹出的页面中，用户可以为应用授权使用证书凭据。调用成功后，应用可通过接口返回的授权证书凭据uri进行签名、验签和查询详情操作。使用Promise异步回调。 |
-| [openAuthorizeDialog](arkts-certificatemanagerdialog-openauthorizedialog-f.md#openAuthorizeDialog-2) | 打开证书管理对话框的证书凭据授权页面。在弹出的页面中，用户可以为应用授权使用证书凭据。调用成功后，应用可通过接口返回的授权证书凭据uri进行签名、验签和查询详情操作。可授权的证书类型包括应用证书凭据、用户证书凭据和USB Key证书凭据。使用Promise异步回调。 |
-| [openCertificateDetailDialog](arkts-certificatemanagerdialog-opencertificatedetaildialog-f.md#openCertificateDetailDialog-1) | 打开证书管理对话框显示证书的详情。调用成功后，将显示证书的基本信息、有效期、颁发者、使用者等详细信息。使用Promise异步回调。 |
-| [openCertificateManagerDialog](arkts-certificatemanagerdialog-opencertificatemanagerdialog-f.md#openCertificateManagerDialog-1) | 打开证书管理对话框，显示相应的页面。调用成功后，用户可以在弹出的对话框中对证书进行查看、安装、卸载等操作。使用Promise异步回调。 |
-| [openInstallCertificateDialog](arkts-certificatemanagerdialog-openinstallcertificatedialog-f.md#openInstallCertificateDialog-1) | 打开证书管理安装证书向导，显示相应的页面。证书安装成功后，返回证书的唯一标识符，应用可通过该标识符对证书进行使用。使用Promise异步回调。 |
-| [openUkeyAuthDialog](arkts-certificatemanagerdialog-openukeyauthdialog-f.md#openUkeyAuthDialog-1) | 打开证书管理对话框的USB Key证书凭据PIN码认证页面。在弹出的页面中，用户可以输入PIN码授权USB Key证书凭据。调用成功后，USB Key证书凭据将被解锁，应用可使用该凭据进行签名、加密等操作。使用Promise异步回调。 |
-| [openUninstallCertificateDialog](arkts-certificatemanagerdialog-openuninstallcertificatedialog-f.md#openUninstallCertificateDialog-1) | 打开证书管理卸载证书向导，显示相应的页面。使用Promise异步回调。 |
-| [supportsCACertDialog](arkts-certificatemanagerdialog-supportscacertdialog-f.md#supportsCACertDialog-1) | 判断设备是否支持[openCertificateDetailDialog]{@link certificateManagerDialog.openCertificateDetailDialog}，[openInstallCertificateDialog]{@link certificateManagerDialog.openInstallCertificateDialog}和[openUninstallCertificateDialog]{@link certificateManagerDialog.openUninstallCertificateDialog}接口打开管理CA证书的对话框。 |
+| [openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-1) | Opens the authorization page of the certificate management dialog box to grant a credential to the application.After the API is successfully called, the app can use the URI of the authorization certificate returned by the APIto sign, verify the signature, and query details.This API uses a promise to return the result. |
+| [openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-2) | Opens the Certificate Credential Authorization page of the Certificate Management dialog box. On the page that isdisplayed, you can authorize the application to use certificate credentials. After the API is called successfully,the app can use the URI of the authorization certificate returned by the API to sign, verify the signature, andquery details. The types of certificates that can be authorized include application certificate credentials, usercertificate credentials, and USB Key certificate credentials. Using Promise Asynchronous Callbacks. |
+| [openCertificateDetailDialog](arkts-devicecertificate-opencertificatedetaildialog-f.md#opencertificatedetaildialog-1) | Opens the Certificate Management dialog box to display the certificate details. After the interface is invokedsuccessfully, detailed information about the certificate, such as the basic information, validity period, issuer,and user, is displayed. Use Promise asynchronous callback. |
+| [openCertificateManagerDialog](arkts-devicecertificate-opencertificatemanagerdialog-f.md#opencertificatemanagerdialog-1) | Opens the certificate management dialog box and displays the page of the specified type. After the interface isinvoked successfully, you can view, install, and uninstall the certificate in the dialog box that is displayed.This API uses a promise to return the result. |
+| [openInstallCertificateDialog](arkts-devicecertificate-openinstallcertificatedialog-f.md#openinstallcertificatedialog-1) | Opens the Certificate Management Install Certificate dialog box. After the certificate is successfully installed,the unique identifier of the certificate is returned. Applications can use the identifier to use the certificate.Use Promise asynchronous callback. |
+| [openUkeyAuthDialog](arkts-devicecertificate-openukeyauthdialog-f.md#openukeyauthdialog-1) | Opens the PIN authentication dialog box of the USB Key credential. On the displayed page, the user can enter thePIN toauthorize the USB credential. After the call is successful, the USB key credential will be unlocked. The app canuse the credential to perform operations such as signing and encryption. This API uses a promise to return theresult. |
+| [openUninstallCertificateDialog](arkts-devicecertificate-openuninstallcertificatedialog-f.md#openuninstallcertificatedialog-1) | Open the Certificate Management Uninstall Certificate dialog. The corresponding page is displayed. Use Promiseasynchronous callbacks. |
+| [supportsCACertDialog](arkts-devicecertificate-supportscacertdialog-f.md#supportscacertdialog-1) | Check whether the device supports the [openCertificateDetailDialog]{@linkcertificateManagerDialog.openCertificateDetailDialog}, [openInstallCertificateDialog]{@linkcertificateManagerDialog.openInstallCertificateDialog}, and [openUninstallCertificateDialog]{@linkcertificateManagerDialog.openUninstallCertificateDialog} interfaces to open the dialog box for managing CAcertificates. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AuthorizeRequest](arkts-certificatemanagerdialog-authorizerequest-i.md) | 证书凭据授权请求信息。 |
-| [CertificateDialogProperty](arkts-certificatemanagerdialog-certificatedialogproperty-i.md) | 表示证书管理对话框的属性。 |
-| [CertReference](arkts-certificatemanagerdialog-certreference-i.md) | 表示证书凭据的引用信息。 |
-| [UkeyAuthRequest](arkts-certificatemanagerdialog-ukeyauthrequest-i.md) | USB Key PIN码认证请求。 |
+| [AuthorizeRequest](arkts-devicecertificate-authorizerequest-i.md) | Represents the authorization request information of the credentials. |
+| [CertReference](arkts-devicecertificate-certreference-i.md) | Represents the reference information of the credential. |
+| [CertificateDialogProperty](arkts-devicecertificate-certificatedialogproperty-i.md) | Defines the property of the certificate management dialog box. |
+| [UkeyAuthRequest](arkts-devicecertificate-ukeyauthrequest-i.md) | USB key PIN authentication request. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [CertificateDialogErrorCode](arkts-certificatemanagerdialog-certificatedialogerrorcode-e.md) | 表示调用证书管理对话框相关API的错误码。 |
-| [CertificateDialogPageType](arkts-certificatemanagerdialog-certificatedialogpagetype-e.md) | 表示证书管理对话框的页面类型。 |
-| [CertificateScope](arkts-certificatemanagerdialog-certificatescope-e.md) | 表示安装证书的使用范围。 |
-| [CertificateType](arkts-certificatemanagerdialog-certificatetype-e.md) | 表示安装证书的类型。 |
+| [CertificateDialogErrorCode](arkts-devicecertificate-certificatedialogerrorcode-e.md) | Enumerates the error codes reported when the certificate management dialog box APIs are called. |
+| [CertificateDialogPageType](arkts-devicecertificate-certificatedialogpagetype-e.md) | Enumerates the page types of the certificate management dialog box. |
+| [CertificateScope](arkts-devicecertificate-certificatescope-e.md) | Defines the usage scope of the certificate to be installed. |
+| [CertificateType](arkts-devicecertificate-certificatetype-e.md) | Enumerates the types of the certificate to be installed. |
 

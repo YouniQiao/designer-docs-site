@@ -9,7 +9,7 @@ Describes the heap memory threshold at which the registered callback is triggere
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## localHeapThreshold
@@ -18,7 +18,9 @@ import { util } from '@ohos.util';
 localHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the local heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by local heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the local heap memory
+at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
+If not set, the callback will not be triggered by local heap memory pressure.
 
 **Type:** number
 
@@ -34,7 +36,9 @@ This number is on a scale of 70 to 95, representing the percentage threshold of 
 processHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the process's total heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by process heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the process's total heap memory
+at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
+If not set, the callback will not be triggered by process heap memory pressure.
 
 **Type:** number
 
@@ -50,7 +54,9 @@ This number is on a scale of 70 to 95, representing the percentage threshold of 
 sharedHeapThreshold?: number
 ```
 
-This number is on a scale of 70 to 95, representing the percentage threshold of the shared heap memory at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range. If not set, the callback will not be triggered by shared heap memory pressure.
+This number is on a scale of 70 to 95, representing the percentage threshold of the shared heap memory
+at which the callback is triggered after a GC. Values outside this range are automatically clamped to the valid range.
+If not set, the callback will not be triggered by shared heap memory pressure.
 
 **Type:** number
 

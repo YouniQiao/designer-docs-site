@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.wifiManager';
+import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
 ## removeCandidateConfig
@@ -12,7 +12,9 @@ import { wifiManager } from '@ohos.wifiManager';
 function removeCandidateConfig(networkId: number): Promise<void>
 ```
 
-Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed to be removed. The app must be in the foreground.
+Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed
+to be removed.
+The app must be in the foreground.
 
 **Since:** 12
 
@@ -69,7 +71,9 @@ Remove a specified candidate hotspot configuration, only the configuration which
 function removeCandidateConfig(networkId: number, callback: AsyncCallback<void>): void
 ```
 
-Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed to be removed. The app must be in the foreground.
+Remove a specified candidate hotspot configuration, only the configuration which is added by ourself is allowed
+to be removed.
+The app must be in the foreground.
 
 **Since:** 12
 

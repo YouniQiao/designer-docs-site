@@ -12,7 +12,8 @@
 readonly windowId: number
 ```
 
-闪控球窗口ID。 取值范围为全体整数。
+闪控球窗口ID。
+取值范围为全体整数。
 
 **类型：** number
 

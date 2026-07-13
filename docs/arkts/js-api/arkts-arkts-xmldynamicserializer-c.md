@@ -9,7 +9,7 @@ The XmlDynamicSerializer interface is used to dynamically generate an xml file.
 ## Modules to Import
 
 ```TypeScript
-import { xml } from '@ohos.xml';
+import { xml } from '@kit.ArkTS';
 ```
 
 ## addEmptyElement
@@ -59,7 +59,8 @@ console.info(result); // <d/>
 constructor(encoding?: string)
 ```
 
-A parameterized constructor used to create a new XmlDynamicSerializer instance. The input parameter is an encoding format of string type.
+A parameterized constructor used to create a new XmlDynamicSerializer instance.
+The input parameter is an encoding format of string type.
 
 **Since:** 20
 

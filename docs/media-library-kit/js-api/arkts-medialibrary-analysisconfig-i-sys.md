@@ -11,7 +11,7 @@ Asset analysis config.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## extraInfos
@@ -20,7 +20,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 extraInfos?: string
 ```
 
-Extra info in JSON string format. <br>Length range:(0,500].
+Extra info in JSON string format.
+<br>Length range:(0,500].
 
 **Type:** string
 
@@ -56,7 +57,8 @@ Array of analysis types, limited in size to the number of defined members in the
 uris: string[]
 ```
 
-Array of asset URIs. <br>Length range:[0, 100].
+Array of asset URIs.
+<br>Length range:[0, 100].
 
 **Type:** string[]
 

@@ -32,7 +32,7 @@ function createColorPicker(source: image.PixelMap): Promise<ColorPicker>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 输入参数错误。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 输入参数错误。 |
 
 **示例：**
 
@@ -95,7 +95,7 @@ function createColorPicker(source: image.PixelMap, region: Array<number>): Promi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 输入参数错误。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 输入参数错误。 |
 
 **示例：**
 
@@ -152,7 +152,7 @@ function createColorPicker(source: image.PixelMap, callback: AsyncCallback<Color
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 输入参数错误。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 输入参数错误。 |
 
 **示例：**
 
@@ -210,7 +210,7 @@ function createColorPicker(source: image.PixelMap, region: Array<number>, callba
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 输入参数错误。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 输入参数错误。 |
 
 **示例：**
 

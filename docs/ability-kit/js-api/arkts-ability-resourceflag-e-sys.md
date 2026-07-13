@@ -56,7 +56,8 @@ Only the application icon is obtained.
 GET_RESOURCE_INFO_WITH_SORTED_BY_LABEL = 0x00000008
 ```
 
-The obtained information is sorted by label. It must be used together with **GET_RESOURCE_INFO_ALL** or **GET_RESOURCE_INFO_WITH_LABEL**.
+The obtained information is sorted by label. It must be used together with **GET_RESOURCE_INFO_ALL** or
+**GET_RESOURCE_INFO_WITH_LABEL**.
 
 **Since:** 11
 
@@ -84,7 +85,12 @@ The [drawableDescriptor](../../apis-arkui/arkts-apis/arkts-arkui-drawabledescrip
 GET_RESOURCE_INFO_ONLY_WITH_MAIN_ABILITY = 0x00000020
 ```
 
-The resource information about abilities that show icons only on the home screen is obtained. It is valid only in the [getLauncherAbilityResourceInfo](arkts-ability-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1) and [getAllLauncherAbilityResourceInfo](arkts-ability-getalllauncherabilityresourceinfo-f-sys.md#getalllauncherabilityresourceinfo-1) APIs.
+The resource information about abilities that show icons only on the home screen is obtained. It is valid only in
+the
+[getLauncherAbilityResourceInfo](arkts-ability-getlauncherabilityresourceinfo-f-sys.md#getlauncherabilityresourceinfo-1)
+and
+[getAllLauncherAbilityResourceInfo](arkts-ability-getalllauncherabilityresourceinfo-f-sys.md#getalllauncherabilityresourceinfo-1)
+APIs.
 
 **Since:** 20
 

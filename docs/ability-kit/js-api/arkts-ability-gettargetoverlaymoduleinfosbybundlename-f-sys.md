@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { overlay } from '@ohos.bundle.overlay';
+import { overlay } from '@kit.AbilityKit';
 ```
 
 ## getTargetOverlayModuleInfosByBundleName
@@ -13,7 +13,10 @@ function getTargetOverlayModuleInfosByBundleName(targetBundleName: string,
       callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-Obtains the information about all modules with the overlay feature in another application. This API uses an asynchronous callback to return the result. No permission is required when the specified application is the caller itself.
+Obtains the information about all modules with the overlay feature in another application. This API uses an
+asynchronous callback to return the result.
+
+No permission is required when the specified application is the caller itself.
 
 **Since:** 10
 
@@ -28,7 +31,7 @@ Obtains the information about all modules with the overlay feature in another ap
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | targetBundleName | string | Yes | Bundle name of the application. |
-| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) objects. If the operation issuccessful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) objects. If the operation issuccessful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -73,7 +76,10 @@ try {
 function getTargetOverlayModuleInfosByBundleName(targetBundleName: string, moduleName: string, callback: AsyncCallback<Array<OverlayModuleInfo>>): void
 ```
 
-Obtains the information about modules with the overlay feature in another application based on the target module name. This API uses an asynchronous callback to return the result. No permission is required when the specified application is the caller itself.
+Obtains the information about modules with the overlay feature in another application based on the target module
+name. This API uses an asynchronous callback to return the result.
+
+No permission is required when the specified application is the caller itself.
 
 **Since:** 10
 
@@ -89,7 +95,7 @@ Obtains the information about modules with the overlay feature in another applic
 | --- | --- | --- | --- |
 | targetBundleName | string | Yes | Bundle name of the application. |
 | moduleName | string | Yes | Name of the target module. If this parameter is not specified, the API obtains theinformation associated with all modules in that application. |
-| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used toreturn the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) objects. If the operation issuccessful, **err** is **null**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used toreturn the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) objects. If the operation issuccessful, **err** is **null**; otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -137,7 +143,10 @@ try {
 function getTargetOverlayModuleInfosByBundleName(targetBundleName: string, moduleName?: string): Promise<Array<OverlayModuleInfo>>
 ```
 
-Obtains the information about modules with the overlay feature in another application based on the target module name. This API uses a promise to return the result. No permission is required when the specified application is the caller itself.
+Obtains the information about modules with the overlay feature in another application based on the target module
+name. This API uses a promise to return the result.
+
+No permission is required when the specified application is the caller itself.
 
 **Since:** 10
 
@@ -158,7 +167,7 @@ Obtains the information about modules with the overlay feature in another applic
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Promise used to return the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo) objects. |
+| Promise&lt;Array&lt;OverlayModuleInfo&gt;&gt; | Promise used to return the result, which is an array of[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) objects. |
 
 **Error codes:**
 

@@ -1,6 +1,7 @@
 # @ohos.thermal
 
-该模块提供热管理相关的接口，包括热档位查询及注册回调等功能。
+The **thermal** module provides thermal level-related callback and query APIs to obtain the information required for
+thermal control.
 
 **Since:** 8
 
@@ -18,16 +19,16 @@ import { thermal } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [getLevel](arkts-thermal-getlevel-f.md#getLevel-1) | 获取当前热档位信息。 |
-| [getThermalLevel](arkts-thermal-getthermallevel-f.md#getThermalLevel-1) | 获取当前热档位信息。 |
-| [registerThermalLevelCallback](arkts-thermal-registerthermallevelcallback-f.md#registerThermalLevelCallback-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [subscribeThermalLevel](arkts-thermal-subscribethermallevel-f.md#subscribeThermalLevel-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [unregisterThermalLevelCallback](arkts-thermal-unregisterthermallevelcallback-f.md#unregisterThermalLevelCallback-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [unsubscribeThermalLevel](arkts-thermal-unsubscribethermallevel-f.md#unsubscribeThermalLevel-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
+| [getLevel](arkts-basicservices-getlevel-f.md#getlevel-1) | Obtains the current thermal level. |
+| [getThermalLevel](arkts-basicservices-getthermallevel-f.md#getthermallevel-1) | Obtains the current thermal level. |
+| [registerThermalLevelCallback](arkts-basicservices-registerthermallevelcallback-f.md#registerthermallevelcallback-1) | Registers a callback to be invoked when the thermal level changes. This API uses an asynchronous callback to returnthe result. |
+| [subscribeThermalLevel](arkts-basicservices-subscribethermallevel-f.md#subscribethermallevel-1) | Subscribes to the thermal level changes. This API uses an asynchronous callback to return the result. |
+| [unregisterThermalLevelCallback](arkts-basicservices-unregisterthermallevelcallback-f.md#unregisterthermallevelcallback-1) | Unregisters from the thermal level changes. This API uses an asynchronous callback to return the result. |
+| [unsubscribeThermalLevel](arkts-basicservices-unsubscribethermallevel-f.md#unsubscribethermallevel-1) | Unsubscribes from the thermal level changes. This API uses an asynchronous callback to return the result. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ThermalLevel](arkts-thermal-thermallevel-e.md) | 热档位信息。 |
+| [ThermalLevel](arkts-basicservices-thermallevel-e.md) | Enumerates thermal levels. |
 

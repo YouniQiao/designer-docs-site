@@ -2,7 +2,7 @@
 
 Helper functions to access photos and albums.
 
-**Inheritance/Implementation:** PhotoAccessHelper extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
+**Inheritance/Implementation:** PhotoAccessHelper extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Helper functions to access photos and albums.
 ## Modules to Import
 
 ```TypeScript
-import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper';
+import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## createAsset
@@ -143,7 +143,8 @@ getHiddenAlbums(
     ): Promise<FetchResult<Album>>
 ```
 
-Obtains hidden albums based on the specified display mode and retrieval options. This API uses a promise to return the result.
+Obtains hidden albums based on the specified display mode and retrieval options.
+This API uses a promise to return the result.
 
 **Since:** 12
 

@@ -12,7 +12,12 @@ Provides parameters for customizing scroll animations.
 canOverScroll?: boolean
 ```
 
-Whether to enable overscroll. <p><strong>NOTE</strong> <br> Scrolling can exceed the boundary and initiate a bounce animation when this parameter is set to <em>true</em>, and the component's <em>edgeEffect</em> attribute is set to EdgeEffect.Spring. </p>
+Whether to enable overscroll.
+
+<p><strong>NOTE</strong>
+<br> Scrolling can exceed the boundary and initiate a bounce animation when this parameter is set to <em>true</em>,
+and the component's <em>edgeEffect</em> attribute is set to EdgeEffect.Spring.
+</p>
 
 **Type:** boolean
 
@@ -52,7 +57,12 @@ Scrolling curve.
 duration?: number
 ```
 
-Scrolling duration. <p><strong>NOTE</strong> <br>Scrolling duration.<br>Default value: **1000**<br>Unit: ms <br>**NOTE**<br>A value less than 0 evaluates to the default value. </p>
+Scrolling duration.
+
+<p><strong>NOTE</strong>
+<br>Scrolling duration.<br>Default value: **1000**<br>Unit: ms
+<br>**NOTE**<br>A value less than 0 evaluates to the default value.
+</p>
 
 **Type:** number
 

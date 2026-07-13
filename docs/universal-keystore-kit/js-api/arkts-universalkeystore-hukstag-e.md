@@ -12,7 +12,9 @@ Enumerates the tags used to invoke parameters.
 HUKS_TAG_INVALID = HuksTagType.HUKS_TAG_TYPE_INVALID | 0
 ```
 
-Invalid tag. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+Invalid tag.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -198,7 +200,9 @@ Salt value used for key derivation.
 HUKS_TAG_PWD = HuksTagType.HUKS_TAG_TYPE_BYTES | 13
 ```
 
-OS patch level. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS patch level.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -242,7 +246,9 @@ Key generation type.
 HUKS_TAG_DERIVE_MAIN_KEY = HuksTagType.HUKS_TAG_TYPE_BYTES | 16
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -256,7 +262,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_DERIVE_FACTOR = HuksTagType.HUKS_TAG_TYPE_BYTES | 17
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -270,7 +278,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_DERIVE_ALG = HuksTagType.HUKS_TAG_TYPE_UINT | 18
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -442,7 +452,10 @@ Type of the **rsa_pss_salt_length**.
 HUKS_TAG_ACTIVE_DATETIME = HuksTagType.HUKS_TAG_TYPE_ULONG | 201
 ```
 
-Parameter originally reserved for certificate management. It is deprecated because certificate management is no longer implemented in this module. Note: This API is deprecated since API version 9. No substitute API is provided.
+Parameter originally reserved for certificate management. It is deprecated because certificate management is no
+longer implemented in this module.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -456,7 +469,10 @@ Parameter originally reserved for certificate management. It is deprecated becau
 HUKS_TAG_ORIGINATION_EXPIRE_DATETIME = HuksTagType.HUKS_TAG_TYPE_ULONG | 202
 ```
 
-Parameter originally reserved for certificate management. It is deprecated because certificate management is no longer implemented in this module. Note: This API is deprecated since API version 9. No substitute API is provided.
+Parameter originally reserved for certificate management. It is deprecated because certificate management is no
+longer implemented in this module.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -470,7 +486,10 @@ Parameter originally reserved for certificate management. It is deprecated becau
 HUKS_TAG_USAGE_EXPIRE_DATETIME = HuksTagType.HUKS_TAG_TYPE_ULONG | 203
 ```
 
-Parameter originally reserved for certificate management. It is deprecated because certificate management is no longer implemented in this module. Note: This API is deprecated since API version 9. No substitute API is provided.
+Parameter originally reserved for certificate management. It is deprecated because certificate management is no
+longer implemented in this module.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -484,7 +503,10 @@ Parameter originally reserved for certificate management. It is deprecated becau
 HUKS_TAG_CREATION_DATETIME = HuksTagType.HUKS_TAG_TYPE_ULONG | 204
 ```
 
-Parameter originally reserved for certificate management. It is deprecated because certificate management is no longer implemented in this module. Note: This API is deprecated since API version 9. No substitute API is provided.
+Parameter originally reserved for certificate management. It is deprecated because certificate management is no
+longer implemented in this module.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -546,7 +568,11 @@ Reserved.
 HUKS_TAG_USER_AUTH_TYPE = HuksTagType.HUKS_TAG_TYPE_UINT | 304
 ```
 
-User authentication type. For details, see [HuksUserAuthType](arkts-universalkeystore-huksuserauthtype-e.md#huksuserauthtype). This parameter must be set together with [HuksAuthAccessType](arkts-universalkeystore-huksauthaccesstype-e.md#huksauthaccesstype). You can set a maximum of two user authentication types at a time. For example, if **HuksAuthAccessType** is **HUKS_AUTH_ACCESS_INVALID_NEW_BIO_ENROLL**, you can set two of **HUKS_USER_AUTH_TYPE_FACE**, **HUKS_USER_AUTH_TYPE_FINGERPRINT**, and **HUKS_USER_AUTH_TYPE_FACE | HUKS_USER_AUTH_TYPE_FINGERPRINT**.
+User authentication type. For details, see [HuksUserAuthType](arkts-universalkeystore-huksuserauthtype-e.md). This parameter must
+be set together with [HuksAuthAccessType](arkts-universalkeystore-huksauthaccesstype-e.md). You can set a maximum of two user
+authentication types at a time. For example, if **HuksAuthAccessType** is
+**HUKS_AUTH_ACCESS_INVALID_NEW_BIO_ENROLL**, you can set two of **HUKS_USER_AUTH_TYPE_FACE**,
+**HUKS_USER_AUTH_TYPE_FINGERPRINT**, and **HUKS_USER_AUTH_TYPE_FACE | HUKS_USER_AUTH_TYPE_FINGERPRINT**.
 
 **Since:** 8
 
@@ -588,7 +614,8 @@ Authentication token.
 HUKS_TAG_KEY_AUTH_ACCESS_TYPE = HuksTagType.HUKS_TAG_TYPE_UINT | 307
 ```
 
-Access control type. For details, see [HuksAuthAccessType](arkts-universalkeystore-huksauthaccesstype-e.md#huksauthaccesstype). This parameter must be set together with [HuksUserAuthType](arkts-universalkeystore-huksuserauthtype-e.md#huksuserauthtype).
+Access control type. For details, see [HuksAuthAccessType](arkts-universalkeystore-huksauthaccesstype-e.md). This parameter must be
+set together with [HuksUserAuthType](arkts-universalkeystore-huksuserauthtype-e.md).
 
 **Since:** 9
 
@@ -616,7 +643,7 @@ Signature type of the key generated or imported.
 HUKS_TAG_CHALLENGE_TYPE = HuksTagType.HUKS_TAG_TYPE_UINT | 309
 ```
 
-Type of the challenge generated for a key. For details, see [HuksChallengeType](arkts-universalkeystore-hukschallengetype-e.md#hukschallengetype).
+Type of the challenge generated for a key. For details, see [HuksChallengeType](arkts-universalkeystore-hukschallengetype-e.md).
 
 **Since:** 9
 
@@ -630,7 +657,8 @@ Type of the challenge generated for a key. For details, see [HuksChallengeType](
 HUKS_TAG_CHALLENGE_POS = HuksTagType.HUKS_TAG_TYPE_UINT | 310
 ```
 
-Position of the 8-byte valid value in a custom challenge. For details, see [HuksChallengePosition](arkts-universalkeystore-hukschallengeposition-e.md#hukschallengeposition).
+Position of the 8-byte valid value in a custom challenge. For details, see
+[HuksChallengePosition](arkts-universalkeystore-hukschallengeposition-e.md).
 
 **Since:** 9
 
@@ -658,7 +686,7 @@ Key authentication purpose.
 HUKS_TAG_AUTH_STORAGE_LEVEL = HuksTagType.HUKS_TAG_TYPE_UINT | 316
 ```
 
-Key storage security level, which is a value of [HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md#huksauthstoragelevel).
+Key storage security level, which is a value of [HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md).
 
 **Since:** 11
 
@@ -672,7 +700,7 @@ Key storage security level, which is a value of [HuksAuthStorageLevel](arkts-uni
 HUKS_TAG_USER_AUTH_MODE = HuksTagType.HUKS_TAG_TYPE_UINT | 319
 ```
 
-User authentication mode. It is a value of [HuksUserAuthMode](arkts-universalkeystore-huksuserauthmode-e.md#huksuserauthmode).
+User authentication mode. It is a value of [HuksUserAuthMode](arkts-universalkeystore-huksuserauthmode-e.md).
 
 **Since:** 12
 
@@ -714,7 +742,9 @@ Application ID used in the attestation.
 HUKS_TAG_ATTESTATION_ID_BRAND = HuksTagType.HUKS_TAG_TYPE_BYTES | 503
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -728,7 +758,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_DEVICE = HuksTagType.HUKS_TAG_TYPE_BYTES | 504
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -742,7 +774,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_PRODUCT = HuksTagType.HUKS_TAG_TYPE_BYTES | 505
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -756,7 +790,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_SERIAL = HuksTagType.HUKS_TAG_TYPE_BYTES | 506
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -770,7 +806,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_IMEI = HuksTagType.HUKS_TAG_TYPE_BYTES | 507
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -784,7 +822,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_MEID = HuksTagType.HUKS_TAG_TYPE_BYTES | 508
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -798,7 +838,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_MANUFACTURER = HuksTagType.HUKS_TAG_TYPE_BYTES | 509
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -812,7 +854,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_MODEL = HuksTagType.HUKS_TAG_TYPE_BYTES | 510
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -840,7 +884,9 @@ Key alias used in the attestation.
 HUKS_TAG_ATTESTATION_ID_SOCID = HuksTagType.HUKS_TAG_TYPE_BYTES | 512
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -854,7 +900,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ATTESTATION_ID_UDID = HuksTagType.HUKS_TAG_TYPE_BYTES | 513
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -954,8 +1002,6 @@ Security level of the key.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
 **System capability:** SystemCapability.Security.Huks.Core
@@ -970,8 +1016,6 @@ Additional verification data indicating the GCM or CCM mode.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
 **Atomic service API:** This API can be used in atomic services since API version 24.
 
 **System capability:** SystemCapability.Security.Huks.Core
@@ -985,8 +1029,6 @@ HUKS_TAG_CONTEXT = HuksTagType.HUKS_TAG_TYPE_BYTES | 528
 The tag indicates the context for crypto operations, such as ML-DSA, etc.
 
 **Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
@@ -1118,7 +1160,9 @@ Reserved.
 HUKS_TAG_SECURE_KEY_ALIAS = HuksTagType.HUKS_TAG_TYPE_BOOL | 1009
 ```
 
-OS patch level. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS patch level.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -1132,7 +1176,9 @@ OS patch level. Note: This parameter is supported since API version 8 and deprec
 HUKS_TAG_SECURE_KEY_UUID = HuksTagType.HUKS_TAG_TYPE_BYTES | 1010
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1174,7 +1220,9 @@ Whether the key is accessible only when the user sets a lock screen password.
 HUKS_TAG_PROCESS_NAME = HuksTagType.HUKS_TAG_TYPE_BYTES | 10001
 ```
 
-OS patch level. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS patch level.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -1188,7 +1236,9 @@ OS patch level. Note: This parameter is supported since API version 8 and deprec
 HUKS_TAG_PACKAGE_NAME = HuksTagType.HUKS_TAG_TYPE_BYTES | 10002
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1202,7 +1252,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_ACCESS_TIME = HuksTagType.HUKS_TAG_TYPE_UINT | 10003
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1216,7 +1268,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_USES_TIME = HuksTagType.HUKS_TAG_TYPE_UINT | 10004
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1230,7 +1284,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_CRYPTO_CTX = HuksTagType.HUKS_TAG_TYPE_ULONG | 10005
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1258,7 +1314,9 @@ Reserved.
 HUKS_TAG_KEY_VERSION = HuksTagType.HUKS_TAG_TYPE_UINT | 10007
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1272,7 +1330,9 @@ Reserved field. Note: This API is deprecated since API version 9. No substitute 
 HUKS_TAG_PAYLOAD_LEN = HuksTagType.HUKS_TAG_TYPE_UINT | 10008
 ```
 
-Reserved field. Note: This API is deprecated since API version 9. No substitute API is provided.
+Reserved field.
+
+Note: This API is deprecated since API version 9. No substitute API is provided.
 
 **Since:** 8
 
@@ -1300,7 +1360,9 @@ Used to pass in the AEAD in GCM mode.
 HUKS_TAG_IS_KEY_HANDLE = HuksTagType.HUKS_TAG_TYPE_ULONG | 10010
 ```
 
-OS patch level. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS patch level.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -1314,7 +1376,9 @@ OS patch level. Note: This parameter is supported since API version 8 and deprec
 HUKS_TAG_OS_VERSION = HuksTagType.HUKS_TAG_TYPE_UINT | 10101
 ```
 
-OS version. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS version.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 
@@ -1328,7 +1392,9 @@ OS version. Note: This parameter is supported since API version 8 and deprecated
 HUKS_TAG_OS_PATCHLEVEL = HuksTagType.HUKS_TAG_TYPE_UINT | 10102
 ```
 
-OS patch level. Note: This parameter is supported since API version 8 and deprecated since API version 9.
+OS patch level.
+
+Note: This parameter is supported since API version 8 and deprecated since API version 9.
 
 **Since:** 8
 

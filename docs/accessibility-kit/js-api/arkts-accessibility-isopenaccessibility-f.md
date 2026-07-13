@@ -1,18 +1,25 @@
 # isOpenAccessibility
 
+## Modules to Import
+
+```TypeScript
+import { accessibility } from '@kit.AccessibilityKit';
+```
+
 ## isOpenAccessibility
 
 ```TypeScript
 function isOpenAccessibility(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether an accessibility application is enabled. This API uses an asynchronous callback to return the result.
+Checks whether an accessibility application is enabled. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitute:** accessibility.isOpenAccessibilitySync
+**Substitutes:** [isOpenAccessibilitySync](arkts-accessibility-isopenaccessibilitysync-f.md#isopenaccessibilitysync-1)
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -20,7 +27,7 @@ Checks whether an accessibility application is enabled. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean> | Yes | Callback used to return the result. Returns true if the  accessibility application is enabled; returns false otherwise. |
+| callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if theaccessibility application is enabled; returns **false** otherwise. |
 
 **Example**
 
@@ -38,6 +45,7 @@ accessibility.isOpenAccessibility((err: BusinessError, data: boolean) => {
 
 ```
 
+
 ## isOpenAccessibility
 
 ```TypeScript
@@ -50,7 +58,7 @@ Checks whether an accessibility application is enabled. This API uses a promise 
 
 **Deprecated since:** 10
 
-**Substitute:** accessibility.isOpenAccessibilitySync
+**Substitutes:** [isOpenAccessibilitySync](arkts-accessibility-isopenaccessibilitysync-f.md#isopenaccessibilitysync-1)
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -58,7 +66,7 @@ Checks whether an accessibility application is enabled. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result. Returns true if the accessibility application  is enabled; returns false otherwise. |
+| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if the accessibility applicationis enabled; returns **false** otherwise. |
 
 **Example**
 

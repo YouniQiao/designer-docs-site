@@ -1,6 +1,9 @@
 # DownloadTask
 
-下载任务，使用下列方法前，需要先获取DownloadTask对象，promise形式通过 [request.downloadFile](arkts-basicservices-downloadfile-f.md#downloadfile-2)获取，callback形式通过 [request.downloadFile](arkts-basicservices-downloadfile-f.md#downloadfile-1) 获取。
+下载任务，使用下列方法前，需要先获取DownloadTask对象，promise形式通过
+[request.downloadFile](arkts-basicservices-downloadfile-f.md#downloadfile-2)获取，callback形式通过
+[request.downloadFile](arkts-basicservices-downloadfile-f.md#downloadfile-1)
+获取。
 
 **起始版本：** 6
 
@@ -12,7 +15,11 @@
 delete(callback: AsyncCallback<boolean>): void
 ```
 
-移除下载的任务，使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+移除下载的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -66,7 +73,11 @@ try {
 delete(): Promise<boolean>
 ```
 
-移除下载的任务，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+移除下载的任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -117,7 +128,11 @@ try {
 getTaskInfo(callback: AsyncCallback<DownloadInfo>): void
 ```
 
-查询下载的任务，使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+查询下载的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -171,7 +186,11 @@ try {
 getTaskInfo(): Promise<DownloadInfo>
 ```
 
-查询下载任务的信息，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+查询下载任务的信息，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -223,7 +242,11 @@ try {
 getTaskMimeType(callback: AsyncCallback<string>): void
 ```
 
-查询下载任务的 MimeType（HTTP中表示资源的媒体类型），使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+查询下载任务的 MimeType（HTTP中表示资源的媒体类型），使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -277,7 +300,11 @@ try {
 getTaskMimeType(): Promise<string>
 ```
 
-查询下载的任务的MimeType(HTTP中表示资源的媒体类型)，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+查询下载的任务的MimeType(HTTP中表示资源的媒体类型)，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -346,7 +373,7 @@ off(type: 'progress', callback?: (receivedSize: number, totalSize: number) => vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -404,7 +431,7 @@ off(type: 'complete' | 'pause' | 'remove', callback?: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -488,7 +515,7 @@ off(type: 'complete' | 'pause' | 'remove', callback?: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -572,7 +599,7 @@ off(type: 'complete' | 'pause' | 'remove', callback?: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -656,7 +683,7 @@ off(type: 'fail', callback?: (err: number) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -697,7 +724,11 @@ try {
 on(type: 'progress', callback: (receivedSize: number, totalSize: number) => void): void
 ```
 
-订阅下载任务进度事件，使用callback异步回调。 > **说明：** > > 应用处于后台时，为满足功耗性能要求，不支持调用此接口进行回调。
+订阅下载任务进度事件，使用callback异步回调。
+
+> **说明：**
+>
+> 应用处于后台时，为满足功耗性能要求，不支持调用此接口进行回调。
 
 **起始版本：** 6
 
@@ -714,7 +745,7 @@ on(type: 'progress', callback: (receivedSize: number, totalSize: number) => void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -764,7 +795,7 @@ on(type: 'complete' | 'pause' | 'remove', callback: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -824,7 +855,7 @@ on(type: 'complete' | 'pause' | 'remove', callback: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -884,7 +915,7 @@ on(type: 'complete' | 'pause' | 'remove', callback: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -944,7 +975,7 @@ on(type: 'fail', callback: (err: number) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | The parameters check fails. Possible causes:<br> 1. Missing mandatory parameters.<br> 2. Incorrect parameter type.<br> 3. Parameter verification failed.<br>**适用版本：** 12+ |
 
 **示例：**
 
@@ -977,7 +1008,12 @@ try {
 pause(callback: AsyncCallback<void>): void
 ```
 
-暂停下载正在运行中的任务，使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [suspend](arkts-basicservices-downloadtask-i.md#suspend-1)替代。
+暂停下载正在运行中的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [suspend](arkts-basicservices-downloadtask-i.md#suspend-1)替代。
 
 **起始版本：** 7
 
@@ -1020,7 +1056,11 @@ downloadTask.pause((err: BusinessError) => {
 pause(): Promise<void>
 ```
 
-暂停下载正在运行中的任务，使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[suspend](arkts-basicservices-downloadtask-i.md#suspend-2)替代。
+暂停下载正在运行中的任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用[suspend](arkts-basicservices-downloadtask-i.md#suspend-2)替代。
 
 **起始版本：** 7
 
@@ -1061,7 +1101,12 @@ downloadTask.pause().then(() => {
 query(callback: AsyncCallback<DownloadInfo>): void
 ```
 
-查询下载任务，返回下载任务的信息，使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [getTaskInfo](arkts-basicservices-downloadtask-i.md#gettaskinfo-1)替代。
+查询下载任务，返回下载任务的信息，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [getTaskInfo](arkts-basicservices-downloadtask-i.md#gettaskinfo-1)替代。
 
 **起始版本：** 7
 
@@ -1104,7 +1149,11 @@ downloadTask.query((err: BusinessError, downloadInfo: request.DownloadInfo)=>{
 query(): Promise<DownloadInfo>
 ```
 
-查询下载任务，返回下载任务的信息，使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃,建议使用[getTaskInfo](arkts-basicservices-downloadtask-i.md#gettaskinfo-2)替代。
+查询下载任务，返回下载任务的信息，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃,建议使用[getTaskInfo](arkts-basicservices-downloadtask-i.md#gettaskinfo-2)替代。
 
 **起始版本：** 7
 
@@ -1145,7 +1194,12 @@ downloadTask.query().then((downloadInfo) => {
 queryMimeType(callback: AsyncCallback<string>): void
 ```
 
-查询下载的任务的MimeType，使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [getTaskMimeType](arkts-basicservices-downloadtask-i.md#gettaskmimetype-1)替代。
+查询下载的任务的MimeType，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [getTaskMimeType](arkts-basicservices-downloadtask-i.md#gettaskmimetype-1)替代。
 
 **起始版本：** 7
 
@@ -1188,7 +1242,11 @@ downloadTask.queryMimeType((err: BusinessError, data: string)=>{
 queryMimeType(): Promise<string>
 ```
 
-查询下载任务的MimeType，使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[getTaskMimeType](arkts-basicservices-downloadtask-i.md#gettaskmimetype-2)替代。
+查询下载任务的MimeType，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用[getTaskMimeType](arkts-basicservices-downloadtask-i.md#gettaskmimetype-2)替代。
 
 **起始版本：** 7
 
@@ -1229,7 +1287,12 @@ downloadTask.queryMimeType().then((data: string) => {
 remove(callback: AsyncCallback<boolean>): void
 ```
 
-移除下载的任务，使用callback异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [delete](arkts-basicservices-uploadtask-i.md#delete-1)替代。
+移除下载的任务，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [delete](arkts-basicservices-uploadtask-i.md#delete-1)替代。
 
 **起始版本：** 6
 
@@ -1272,7 +1335,11 @@ downloadTask.remove((err, result)=>{
 remove(): Promise<boolean>
 ```
 
-移除下载的任务，使用Promise异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用[delete](arkts-basicservices-uploadtask-i.md#delete-2)替代。
+移除下载的任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用[delete](arkts-basicservices-uploadtask-i.md#delete-2)替代。
 
 **起始版本：** 6
 
@@ -1313,7 +1380,11 @@ downloadTask.remove().then((result) => {
 restore(callback: AsyncCallback<boolean>): void
 ```
 
-重新启动被暂停的下载任务，使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+重新启动被暂停的下载任务，使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -1367,7 +1438,11 @@ try {
 restore(): Promise<boolean>
 ```
 
-重新启动被暂停的下载任务，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+重新启动被暂停的下载任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -1419,7 +1494,12 @@ try {
 resume(callback: AsyncCallback<void>): void
 ```
 
-重新启动被暂停的下载任务，使用callback异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用 > [restore](arkts-basicservices-downloadtask-i.md#restore-1)替代。
+重新启动被暂停的下载任务，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用
+> [restore](arkts-basicservices-downloadtask-i.md#restore-1)替代。
 
 **起始版本：** 7
 
@@ -1462,7 +1542,11 @@ downloadTask.resume((err: BusinessError) => {
 resume(): Promise<void>
 ```
 
-重新启动被暂停的下载任务，使用Promise异步回调。 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[restore](arkts-basicservices-downloadtask-i.md#restore-2)替代。
+重新启动被暂停的下载任务，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 7开始支持，从API version 9开始废弃，建议使用[restore](arkts-basicservices-downloadtask-i.md#restore-2)替代。
 
 **起始版本：** 7
 
@@ -1503,7 +1587,11 @@ downloadTask.resume().then(() => {
 suspend(callback: AsyncCallback<boolean>): void
 ```
 
-暂停下载正在运行中的任务，已暂停的任务可被[restore](arkts-basicservices-downloadtask-i.md#restore-2)恢复，使用callback异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+暂停下载正在运行中的任务，已暂停的任务可被[restore](arkts-basicservices-downloadtask-i.md#restore-2)恢复，使用callback异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 
@@ -1557,7 +1645,11 @@ try {
 suspend(): Promise<boolean>
 ```
 
-暂停下载正在运行中的任务，已暂停的任务可被[restore](arkts-basicservices-downloadtask-i.md#restore-2)恢复，使用Promise异步回调。 > **说明：** > > 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
+暂停下载正在运行中的任务，已暂停的任务可被[restore](arkts-basicservices-downloadtask-i.md#restore-2)恢复，使用Promise异步回调。
+
+> **说明：**
+>
+> 由于不存在401报错场景，在api12中 `401 the parameters check fails` 这个错误码被移除。
 
 **起始版本：** 9
 

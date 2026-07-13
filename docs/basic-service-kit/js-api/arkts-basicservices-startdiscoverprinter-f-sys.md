@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## startDiscoverPrinter
@@ -12,7 +12,9 @@ import { print } from '@ohos.print';
 function startDiscoverPrinter(extensionList: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses an asynchronous callback to return the result.
+Discovers printers by specifying the extension list. The discovered printers contain the specified print extension
+abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 20
 
@@ -28,7 +30,7 @@ Discovers printers by specifying the extension list. The discovered printers con
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| extensionList | Array&lt;string&gt; | Yes | List of[PrintExtensionAbilities](arkts-basicservices-printextensionability-c.md#printextensionability) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty listindicates that all extension abilities are loaded. |
+| extensionList | Array&lt;string&gt; | Yes | List of[PrintExtensionAbilities](arkts-basicservices-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty listindicates that all extension abilities are loaded. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback to be invoked when a printer is discovered. |
 
 **Error codes:**
@@ -65,7 +67,9 @@ print.startDiscoverPrinter(extensionList, (err: BusinessError) => {
 function startDiscoverPrinter(extensionList: Array<string>): Promise<void>
 ```
 
-Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses a promise to return the result.
+Discovers printers by specifying the extension list. The discovered printers contain the specified print extension
+abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses a promise to
+return the result.
 
 **Since:** 20
 
@@ -81,7 +85,7 @@ Discovers printers by specifying the extension list. The discovered printers con
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| extensionList | Array&lt;string&gt; | Yes | List of[PrintExtensionAbilities](arkts-basicservices-printextensionability-c.md#printextensionability) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty listindicates that all extension abilities are loaded. |
+| extensionList | Array&lt;string&gt; | Yes | List of[PrintExtensionAbilities](arkts-basicservices-printextensionability-c.md) to be loaded.The list members are the bundle names of the applications with print extension abilities. An empty listindicates that all extension abilities are loaded. |
 
 **Return value:**
 

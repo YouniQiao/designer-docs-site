@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { formHost } from '@ohos.app.form.formHost';
+import { formHost } from '@kit.FormKit';
 ```
 
 ## notifyFormsPrivacyProtected
@@ -16,7 +16,8 @@ function notifyFormsPrivacyProtected(
   ): void
 ```
 
-Notifies that the privacy protection status of the specified widgets changes. This API uses an asynchronous callback to return the result.
+Notifies that the privacy protection status of the specified widgets changes. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -52,7 +53,8 @@ Notifies that the privacy protection status of the specified widgets changes. Th
 function notifyFormsPrivacyProtected(formIds: Array<string>, isProtected: boolean): Promise<void>
 ```
 
-Notifies that the privacy protection status of the specified widgets changes. This API uses a promise to return the result.
+Notifies that the privacy protection status of the specified widgets changes. This API uses a promise to return
+the result.
 
 **Since:** 9
 

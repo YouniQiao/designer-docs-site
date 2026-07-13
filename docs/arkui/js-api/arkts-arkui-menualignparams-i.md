@@ -9,7 +9,7 @@ Defines the MenuAlign parameters.
 ## Modules to Import
 
 ```TypeScript
-import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@ohos.atomicservice.AtomicServiceSearch';
+import { SearchParams, AtomicServiceSearch, SearchButtonParams, OperationParams, SelectParams, InputFilterParams, MenuAlignParams } from '@kit.ArkUI';
 ```
 
 ## alignType
@@ -34,7 +34,8 @@ Indicates the fontSize and fontColor of the search button.
 offset?: Offset
 ```
 
-Offset of the drop-down menu relative to the drop-down button. after alignment based on the alignment type.
+Offset of the drop-down menu relative to the drop-down button.
+after alignment based on the alignment type.
 
 **Type:** Offset
 

@@ -1,6 +1,32 @@
 # Navigation
 
-The **Navigation** component is the root view container for navigation. It typically functions as the root container of a page and includes a title bar, content area, and toolbar. The content area switches between the home page content (child components of **Navigation**) and non-home page content (child components of [NavDestination]{@link nav_destination}) through routing. > **NOTE** > - Since API version 11, this component supports the safe area attribute by default, with the default attribute > value being > **expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.KEYBOARD, SafeAreaType.CUTOUT], [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM])**. > You can override this attribute to change the default behavior. In earlier versions, you need to use the > [expandSafeArea]{@link CommonMethod#expandSafeArea} attribute to implement the safe area feature. > > - When [NavBar]{@link NavBar} is nested within a **Navigation** component, the lifecycle of the inner > **NavDestination** component does not synchronize with the outer **NavDestination** component or the lifecycle of a > [modal]{@link common}. > > - If the [title]{@link NavigationAttribute#title} and [subTitle]{@link NavigationAttribute#subTitle} are not set > and [hideBackButton]{@link NavigationAttribute#hideBackButton} is set to **true**, the title bar is not displayed. > > - During subpage navigation within **Navigation**, the new page actively requests focus. > > - You are not advised to use stack operations in [aboutToAppear]{@link BaseCustomComponent#aboutToAppear}, as the > page has not yet finished building at this stage, which may lead to issues such as white screens or navigation > failures.
+The **Navigation** component is the root view container for navigation. It typically functions as the root container
+of a page and includes a title bar, content area, and toolbar. The content area switches between the home page
+content (child components of **Navigation**) and non-home page content (child components of
+[NavDestination]{@link nav_destination}) through routing.
+
+> **NOTE**
+
+> - Since API version 11, this component supports the safe area attribute by default, with the default attribute
+> value being
+> **expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.KEYBOARD, SafeAreaType.CUTOUT],
+    [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM])**.
+> You can override this attribute to change the default behavior. In earlier versions, you need to use the
+> [expandSafeArea]{@link CommonMethod#expandSafeArea} attribute to implement the safe area feature.
+>
+> - When [NavBar]{@link NavBar} is nested within a **Navigation** component, the lifecycle of the inner
+> **NavDestination** component does not synchronize with the outer **NavDestination** component or the lifecycle of a
+> [modal]{@link common}.
+>
+> - If the [title]{@link NavigationAttribute#title} and [subTitle]{@link NavigationAttribute#subTitle} are not set
+> and [hideBackButton]{@link NavigationAttribute#hideBackButton} is set to **true**, the title bar is not displayed.
+>
+> - During subpage navigation within **Navigation**, the new page actively requests focus.
+>
+> - You are not advised to use stack operations in [aboutToAppear]{@link BaseCustomComponent#aboutToAppear}, as the
+> page has not yet finished building at this stage, which may lead to issues such as white screens or navigation
+> failures.
+
 
 ## Navigation
 
@@ -8,7 +34,8 @@ The **Navigation** component is the root view container for navigation. It typic
 Navigation()
 ```
 
-Creates a root view container for route navigation, suitable for page routing using the [NavRouter]{@link nav_router} component.
+Creates a root view container for route navigation, suitable for page routing using the
+[NavRouter]{@link nav_router} component.
 
 **Since:** 8
 
@@ -22,7 +49,8 @@ Creates a root view container for route navigation, suitable for page routing us
 Navigation(pathInfos: NavPathStack)
 ```
 
-Binds a navigation controller to the **Navigation** component, suitable for page routing using [NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute.
+Binds a navigation controller to the **Navigation** component, suitable for page routing using
+[NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute.
 
 **Since:** 10
 
@@ -44,7 +72,11 @@ Binds a navigation controller to the **Navigation** component, suitable for page
 Navigation(pathInfos: NavPathStack, homeDestination: HomePathInfo)
 ```
 
-Binds a routing stack to the **Navigation** component and specifies a **NavDestination** component as the navigation page (home page) for **Navigation**. This is suitable for page routing using [NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute or the system routing table. For the usage example, see [Example 16: Using NavDestination as a Navigation Page in Navigation](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-16-using-navdestination-as-a-navigation-page-in-navigation).
+Binds a routing stack to the **Navigation** component and specifies a **NavDestination** component as the
+navigation page (home page) for **Navigation**. This is suitable for page routing using
+[NavPathStack]{@link NavPathStack} with the [navDestination]{@link NavigationAttribute#navDestination} attribute or
+the system routing table. For the usage example, see
+[Example 16: Using NavDestination as a Navigation Page in Navigation](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-16-using-navdestination-as-a-navigation-page-in-navigation).
 
 **Since:** 20
 

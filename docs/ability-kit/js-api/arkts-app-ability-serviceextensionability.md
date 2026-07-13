@@ -8,9 +8,11 @@ import { ServiceExtensionAbility } from '@kit.AbilityKit';
 
 ## Summary
 
-### Classes
+<!--Del-->
+### Classes（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[ServiceExtensionAbility](arkts-serviceextensionability-c.md) | ServiceExtensionAbility模块提供后台服务相关扩展能力，提供后台服务创建、销毁、连接、断开等生命周期回调。 |
+| [ServiceExtensionAbility](arkts-ability-serviceextensionability-c-sys.md) | The ServiceExtensionAbility module provides extended capabilities for background services, including lifecyclecallbacks for creating, destroying, connecting, and disconnecting background services. |
+<!--DelEnd-->
 

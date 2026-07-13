@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## trigger
@@ -12,7 +12,8 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function trigger(agent: WantAgent, triggerInfo: TriggerInfo, callback?: AsyncCallback<CompleteData>): void
 ```
 
-Proactively triggers a WantAgent object. This API uses an asynchronous callback to return the result.
+Proactively triggers a WantAgent object.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

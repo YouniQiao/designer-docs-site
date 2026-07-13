@@ -11,7 +11,7 @@ Defines the device profile information.
 ## Modules to Import
 
 ```TypeScript
-import { distributedDeviceManager } from '@ohos.distributedDeviceManager';
+import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## bleMac
@@ -164,7 +164,10 @@ Internal product model. This parameter is left unspecified by default.
 isLocalDevice: boolean
 ```
 
-Whether the device is a local device. - **false**: non-local device. - **true**: local device.
+Whether the device is a local device.
+
+- **false**: non-local device.
+- **true**: local device.
 
 **Type:** boolean
 

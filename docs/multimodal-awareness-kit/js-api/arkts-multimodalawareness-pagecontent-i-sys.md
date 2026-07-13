@@ -11,7 +11,7 @@ Defines the onscreen content.
 ## Modules to Import
 
 ```TypeScript
-import { onScreen } from '@ohos.multimodalAwareness.onScreen';
+import { onScreen } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## bundleName
@@ -36,7 +36,8 @@ Bundle name of the onscreen content.
 content?: string
 ```
 
-Body of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to **True**.
+Body of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to
+**True**.
 
 **Type:** string
 
@@ -68,7 +69,8 @@ Page link of the onscreen content. This parameter is available only when **optio
 paragraphs?: Paragraph[]
 ```
 
-Paragraph information of the onscreen content. This parameter is available only when **options.textOnly** is set to **True**.
+Paragraph information of the onscreen content. This parameter is available only when **options.textOnly** is set
+to **True**.
 
 **Type:** Paragraph[]
 
@@ -84,7 +86,8 @@ Paragraph information of the onscreen content. This parameter is available only 
 scenario?: Scenario
 ```
 
-Scenario of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to **True**.
+Scenario of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to
+**True**.
 
 **Type:** Scenario
 
@@ -116,7 +119,8 @@ Session ID, which identifies the call action.
 title?: string
 ```
 
-Title of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to **True**.
+Title of the onscreen content. This parameter is available only when **options.contentUnderstand** is set to
+**True**.
 
 **Type:** string
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## getAllDisplayPhysicalResolution
@@ -12,7 +12,8 @@ import { display } from '@ohos.display';
 function getAllDisplayPhysicalResolution(): Promise<Array<DisplayPhysicalResolution>>
 ```
 
-Obtains all the display modes supported by the current device, along with the physical screen resolutions for each mode. This API uses a promise to return the result.
+Obtains all the display modes supported by the current device, along with the physical screen resolutions for each
+mode. This API uses a promise to return the result.
 
 **Since:** 12
 

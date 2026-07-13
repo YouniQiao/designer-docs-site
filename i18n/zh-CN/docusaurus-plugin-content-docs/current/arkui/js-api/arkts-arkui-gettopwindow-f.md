@@ -6,7 +6,12 @@
 function getTopWindow(callback: AsyncCallback<Window>): void
 ```
 
-获取当前应用内最后显示的窗口，使用callback异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1)替代。
+获取当前应用内最后显示的窗口，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用
+> [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1)替代。
 
 **起始版本：** 6
 
@@ -49,7 +54,11 @@ window.getTopWindow((err: BusinessError, data) => {
 function getTopWindow(): Promise<Window>
 ```
 
-获取当前应用内最后显示的窗口，使用Promise异步回调。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用[getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-2)替代。
+获取当前应用内最后显示的窗口，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 6开始支持，从API version 9开始废弃，建议使用[getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-2)替代。
 
 **起始版本：** 6
 
@@ -90,7 +99,11 @@ promise.then((data)=> {
 function getTopWindow(ctx: BaseContext): Promise<Window>
 ```
 
-获取当前应用内最后显示的窗口，使用Promise异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用[getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-2)替代。
+获取当前应用内最后显示的窗口，使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-2)替代。
 
 **起始版本：** 8
 
@@ -142,7 +155,12 @@ export default class EntryAbility extends UIAbility {
 function getTopWindow(ctx: BaseContext, callback: AsyncCallback<Window>): void
 ```
 
-获取当前应用内最后显示的窗口，使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，参数ctx传入null或undefined时，可能会导致callback无法得到执行，建议使用 > [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1)替代。
+获取当前应用内最后显示的窗口，使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，参数ctx传入null或undefined时，可能会导致callback无法得到执行，建议使用
+> [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1)替代。
 
 **起始版本：** 8
 

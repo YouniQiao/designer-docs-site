@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { mechanicManager } from '@ohos.distributedHardware.mechanicManager';
+import { mechanicManager } from '@kit.MechanicKit';
 ```
 
 ## on('rotationAxesStatusChange')
@@ -12,7 +12,8 @@ import { mechanicManager } from '@ohos.distributedHardware.mechanicManager';
 function on(type: 'rotationAxesStatusChange', callback: Callback<RotationAxesStateChangeInfo>): void
 ```
 
-Register a listener for axis state changes. The status of the rotation axis changes dynamically, which needs to be monitored.
+Register a listener for axis state changes.
+The status of the rotation axis changes dynamically, which needs to be monitored.
 
 **Since:** 20
 

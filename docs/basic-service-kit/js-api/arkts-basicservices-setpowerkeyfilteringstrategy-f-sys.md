@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { power } from '@ohos.power';
+import { power } from '@kit.BasicServicesKit';
 ```
 
 ## setPowerKeyFilteringStrategy
@@ -12,7 +12,11 @@ import { power } from '@ohos.power';
 function setPowerKeyFilteringStrategy(strategy: PowerKeyFilteringStrategy): void
 ```
 
-Sets the power key filtering strategy. After the power service subscribes to the power key event, this API is used to configure the processing mode of this event. For details about the power key filtering strategy, see [power.PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md#powerkeyfilteringstrategy).
+Sets the power key filtering strategy. After the power service subscribes to the power key event, this API is used
+to configure the processing mode of this event.
+
+For details about the power key filtering strategy, see
+[power.PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md).
 
 **Since:** 21
 

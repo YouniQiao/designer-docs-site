@@ -1,8 +1,4 @@
-# SceneFeatureType
-
-```TypeScript
-enum SceneFeatureType
-```
+# SceneFeatureType (System API)
 
 Enumerates the scene features.
 
@@ -18,7 +14,8 @@ Enumerates the scene features.
 MOON_CAPTURE_BOOST = 0
 ```
 
-Moon scene. This is a system API.
+Moon scene.
+This is a system API.
 
 **Since:** 12
 
@@ -32,7 +29,8 @@ Moon scene. This is a system API.
 TRIPOD_DETECTION = 1
 ```
 
-Scene where a tripod is used for photo capture. This is a system API.
+Scene where a tripod is used for photo capture.
+This is a system API.
 
 **Since:** 13
 
@@ -46,7 +44,8 @@ Scene where a tripod is used for photo capture. This is a system API.
 LOW_LIGHT_BOOST = 2
 ```
 
-Scene for long exposure photography. This is a system API.
+Scene for long exposure photography.
+This is a system API.
 
 **Since:** 13
 

@@ -1,6 +1,15 @@
 # FocusMovement
 
-Sets the target component for focus movement based on key presses. If it is not specified, the default focus movement logic applies. > **NOTE** > > Directly using **focusControl** can lead to the issue of > [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain the > [UIContext](../arkts-apis/arkts-arkui-uicontext-c.md#uicontext) object using the **getUIContext()** API and then obtain the > **focusControl** bound to the instance using the > [getFocusController](../arkts-apis/arkts-arkui-uicontext-c.md#getfocuscontroller-1) API.
+Sets the target component for focus movement based on key presses. If it is not specified, the default focus movement
+logic applies.
+
+> **NOTE**
+>
+> Directly using **focusControl** can lead to the issue of
+> [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain the
+> [UIContext](../arkts-apis/arkts-arkui-uicontext-c.md) object using the **getUIContext()** API and then obtain the
+> **focusControl** bound to the instance using the
+> [getFocusController](../arkts-apis/arkts-arkui-uicontext-c.md#getfocuscontroller-1) API.
 
 **Since:** 18
 
@@ -12,7 +21,9 @@ Sets the target component for focus movement based on key presses. If it is not 
 backward?: string
 ```
 
-ID of the component to focus on when **Shift+Tab** is pressed. The default value resets **backward** to empty.
+ID of the component to focus on when **Shift+Tab** is pressed.
+
+The default value resets **backward** to empty.
 
 **Type:** string
 
@@ -30,7 +41,9 @@ ID of the component to focus on when **Shift+Tab** is pressed. The default value
 down?: string
 ```
 
-ID of the component to focus on when the down arrow key is pressed. The default value resets **down** to empty.
+ID of the component to focus on when the down arrow key is pressed.
+
+The default value resets **down** to empty.
 
 **Type:** string
 
@@ -48,7 +61,9 @@ ID of the component to focus on when the down arrow key is pressed. The default 
 forward?: string
 ```
 
-ID of the component to focus on when the **Tab** key is pressed. The default value resets **forward** to empty.
+ID of the component to focus on when the **Tab** key is pressed.
+
+The default value resets **forward** to empty.
 
 **Type:** string
 
@@ -66,7 +81,9 @@ ID of the component to focus on when the **Tab** key is pressed. The default val
 left?: string
 ```
 
-ID of the component to focus on when the left arrow key is pressed. The default value resets **left** to empty.
+ID of the component to focus on when the left arrow key is pressed.
+
+The default value resets **left** to empty.
 
 **Type:** string
 
@@ -84,7 +101,9 @@ ID of the component to focus on when the left arrow key is pressed. The default 
 right?: string
 ```
 
-ID of the component to focus on when the right arrow key is pressed. The default value resets **right** to empty.
+ID of the component to focus on when the right arrow key is pressed.
+
+The default value resets **right** to empty.
 
 **Type:** string
 
@@ -102,7 +121,9 @@ ID of the component to focus on when the right arrow key is pressed. The default
 up?: string
 ```
 
-ID of the component to focus on when the up arrow key is pressed. The default value resets **up** to empty.
+ID of the component to focus on when the up arrow key is pressed.
+
+The default value resets **up** to empty.
 
 **Type:** string
 

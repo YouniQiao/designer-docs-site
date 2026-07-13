@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getDynamicIcon
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getDynamicIcon(bundleName: string): Promise<string>
 ```
 
-Obtains the module name corresponding to the dynamic icon based on the specified bundle name. This API uses a promise to return the result.
+Obtains the module name corresponding to the dynamic icon based on the specified bundle name. This API uses a
+promise to return the result.
 
 **Since:** 12
 

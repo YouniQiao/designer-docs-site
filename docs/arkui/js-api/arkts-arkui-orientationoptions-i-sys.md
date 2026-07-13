@@ -11,7 +11,7 @@ The parameter of setting orientation
 ## Modules to Import
 
 ```TypeScript
-import { screen } from '@ohos.screen';
+import { screen } from '@kit.ArkUI';
 ```
 
 ## ignoreRotationLock
@@ -20,7 +20,9 @@ import { screen } from '@ohos.screen';
 ignoreRotationLock?: boolean
 ```
 
-Whether to ignore rotation lock. The value true means allowing the screen to rotate even if some system windows lock screen rotation, while false means preventing the screen from rotating when any system windows lock it.
+Whether to ignore rotation lock.
+The value true means allowing the screen to rotate even if some system windows lock screen rotation,
+while false means preventing the screen from rotating when any system windows lock it.
 
 **Type:** boolean
 
@@ -40,7 +42,9 @@ Whether to ignore rotation lock. The value true means allowing the screen to rot
 needAnimation?: boolean
 ```
 
-Whether to need animation. The value true means rotating the screen with animation, while false means rotating the screen without animation.
+Whether to need animation.
+The value true means rotating the screen with animation,
+while false means rotating the screen without animation.
 
 **Type:** boolean
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAllPluginInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAllPluginInfo(hostBundleName: string, userId?: number): Promise<Array<PluginBundleInfo>>
 ```
 
-Obtains all the plugin information in the system based on the given host bundle name and user ID. This API uses a promise to return the result.
+Obtains all the plugin information in the system based on the given host bundle name and user ID. This API uses a
+promise to return the result.
 
 **Since:** 19
 

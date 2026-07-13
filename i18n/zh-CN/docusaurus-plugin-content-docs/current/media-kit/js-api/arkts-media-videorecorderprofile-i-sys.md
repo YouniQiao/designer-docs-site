@@ -1,4 +1,4 @@
-# VideoRecorderProfile
+# VideoRecorderProfile（系统接口）
 
 Provides the video recorder profile definitions.
 
@@ -8,37 +8,15 @@ Provides the video recorder profile definitions.
 
 **系统接口：** 此接口为系统接口。
 
-## 导入模块
+## audioBitrate
 
 ```TypeScript
-import { media } from '@kit.MediaKit';
+readonly audioBitrate: number
 ```
 
-## videoBitrate
+Indicates the audio bit rate, in bit/s.
 
-```TypeScript
-readonly videoBitrate: int
-```
-
-Indicates the video bit rate, in bit/s.
-
-**类型：** int
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## videoFrameWidth
-
-```TypeScript
-readonly videoFrameWidth: int
-```
-
-Indicates the video width, in px.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 9
 
@@ -49,28 +27,12 @@ Indicates the video width, in px.
 ## audioChannels
 
 ```TypeScript
-readonly audioChannels: int
+readonly audioChannels: number
 ```
 
 Indicates the number of audio channels.
 
-**类型：** int
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## videoFrameRate
-
-```TypeScript
-readonly videoFrameRate: int
-```
-
-Indicates the video frame rate, in fps.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 9
 
@@ -94,15 +56,15 @@ Indicates the audio encoding format.
 
 **系统接口：** 此接口为系统接口。
 
-## videoFrameHeight
+## audioSampleRate
 
 ```TypeScript
-readonly videoFrameHeight: int
+readonly audioSampleRate: number
 ```
 
-Indicates the video height, in px.
+Indicates the audio sampling rate, in Hz.
 
-**类型：** int
+**类型：** number
 
 **起始版本：** 9
 
@@ -126,31 +88,15 @@ Indicates the output file format.
 
 **系统接口：** 此接口为系统接口。
 
-## audioSampleRate
+## videoBitrate
 
 ```TypeScript
-readonly audioSampleRate: int
+readonly videoBitrate: number
 ```
 
-Indicates the audio sampling rate, in Hz.
+Indicates the video bit rate, in bit/s.
 
-**类型：** int
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## audioBitrate
-
-```TypeScript
-readonly audioBitrate: int
-```
-
-Indicates the audio bit rate, in bit/s.
-
-**类型：** int
+**类型：** number
 
 **起始版本：** 9
 
@@ -167,6 +113,54 @@ readonly videoCodec: CodecMimeType
 Indicates the video encoding format.
 
 **类型：** CodecMimeType
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## videoFrameHeight
+
+```TypeScript
+readonly videoFrameHeight: number
+```
+
+Indicates the video height, in px.
+
+**类型：** number
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## videoFrameRate
+
+```TypeScript
+readonly videoFrameRate: number
+```
+
+Indicates the video frame rate, in fps.
+
+**类型：** number
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## videoFrameWidth
+
+```TypeScript
+readonly videoFrameWidth: number
+```
+
+Indicates the video width, in px.
+
+**类型：** number
 
 **起始版本：** 9
 

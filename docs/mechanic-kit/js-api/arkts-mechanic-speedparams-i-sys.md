@@ -11,7 +11,7 @@ Parameters for moving or turning at a speed.
 ## Modules to Import
 
 ```TypeScript
-import { mechanicManager } from '@ohos.distributedHardware.mechanicManager';
+import { mechanicManager } from '@kit.MechanicKit';
 ```
 
 ## angle
@@ -52,7 +52,8 @@ Movement mode.
 speed: number
 ```
 
-Turning or moving speed, unit cm. The value should be an integer.
+Turning or moving speed, unit cm.
+The value should be an integer.
 
 **Type:** number
 

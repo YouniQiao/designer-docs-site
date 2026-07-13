@@ -1,6 +1,6 @@
 # AuthTokenType (System API)
 
-Enumerates the authentication token types.
+Enumerates the authentication token types. They are used to identify the source of the token.
 
 **Since:** 18
 
@@ -14,7 +14,8 @@ Enumerates the authentication token types.
 TOKEN_TYPE_LOCAL_AUTH = 0
 ```
 
-Authentication token issued based on the local authentication result.
+Local authentication token. It is an authentication token issued based on the local authentication result,
+indicating that the user has been authenticated on the local device.
 
 **Since:** 18
 
@@ -28,7 +29,8 @@ Authentication token issued based on the local authentication result.
 TOKEN_TYPE_LOCAL_RESIGN = 1
 ```
 
-Authentication token issued based on the reused identity authentication result.
+Local resigning token. It is an authentication token signed based on the reused authentication result, indicating
+that the current authentication result is reused from a previous authentication result.
 
 **Since:** 18
 
@@ -42,7 +44,8 @@ Authentication token issued based on the reused identity authentication result.
 TOKEN_TYPE_COAUTH = 2
 ```
 
-Authentication token issued based on a collaborative authentication result of multiple devices.
+Collaborative authentication token. It is an authentication token issued based on multiple device collaboration
+authentication results, indicating that the user has completed authentication through multi-device collaboration.
 
 **Since:** 18
 

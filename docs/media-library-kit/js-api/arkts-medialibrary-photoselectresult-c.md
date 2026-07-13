@@ -9,7 +9,7 @@ Defines information about the images or videos selected.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## contextRecoveryInfo
@@ -34,7 +34,9 @@ Contextual information about the PhotoPicker's exit state.
 isOriginalPhoto: boolean
 ```
 
-Whether the selected media asset is the original image. The value true means that the selected media asset is the original image, and false means the opposite. The default value is false.
+Whether the selected media asset is the original image.
+The value true means that the selected media asset is the original image, and false means the opposite.
+The default value is false.
 
 **Type:** boolean
 
@@ -50,7 +52,9 @@ Whether the selected media asset is the original image. The value true means tha
 movingPhotoBadgeStates: Array<MovingPhotoBadgeStateType>
 ```
 
-Moving photo badge states for the selected media files in the gallery. When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states; otherwise, it is empty.
+Moving photo badge states for the selected media files in the gallery.
+When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states;
+otherwise, it is empty.
 
 **Type:** Array<MovingPhotoBadgeStateType>
 
@@ -66,7 +70,8 @@ Moving photo badge states for the selected media files in the gallery. When isMo
 photoUris: Array<string>
 ```
 
-URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets with temporary authorization. For details about how to use the media file URI, see Using a Media File URI.
+URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets with temporary authorization.
+For details about how to use the media file URI, see Using a Media File URI.
 
 **Type:** Array<string>
 

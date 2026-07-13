@@ -28,7 +28,9 @@ icon?: ResourceStr
 symbolIcon?: SymbolGlyphModifier
 ```
 
-下拉选项Symbol图片。 symbolIcon优先级高于icon。
+下拉选项Symbol图片。
+
+symbolIcon优先级高于icon。
 
 **类型：** SymbolGlyphModifier
 

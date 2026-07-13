@@ -11,7 +11,7 @@ Custom record of media asset.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## fileId
@@ -20,7 +20,8 @@ import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
 readonly fileId: number
 ```
 
-Indicates the media asset file Id. It must be must be greater than 0.
+Indicates the media asset file Id.
+It must be must be greater than 0.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ Indicates the media asset file Id. It must be must be greater than 0.
 readonly lcdJumpCount: number
 ```
 
-Indicates the media asset lcd jump count. It must be must be greater than 0.
+Indicates the media asset lcd jump count.
+It must be must be greater than 0.
 
 **Type:** number
 
@@ -52,7 +54,8 @@ Indicates the media asset lcd jump count. It must be must be greater than 0.
 readonly shareCount: number
 ```
 
-Indicates the media asset share count. It must be must be greater than 0.
+Indicates the media asset share count.
+It must be must be greater than 0.
 
 **Type:** number
 

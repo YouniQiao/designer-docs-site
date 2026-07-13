@@ -6,7 +6,10 @@
 function getAppCloneBundleInfo(bundleName: string, appIndex: number, bundleFlags: number, userId?: number): Promise<BundleInfo>
 ```
 
-根据bundleName、分身索引、[bundleFlags](arkts-ability-bundleflag-e.md#bundleflag)以及用户ID查询主应用或分身应用的 BundleInfo。使用Promise异步回调。 获取调用方自身的信息时不需要权限。
+根据bundleName、分身索引、[bundleFlags](arkts-ability-bundleflag-e.md)以及用户ID查询主应用或分身应用的
+BundleInfo。使用Promise异步回调。
+
+获取调用方自身的信息时不需要权限。
 
 **起始版本：** 12
 
@@ -37,7 +40,7 @@ function getAppCloneBundleInfo(bundleName: string, appIndex: number, bundleFlags
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 | [17700004](../errorcode-bundle.md#17700004-指定的用户不存在) | The specified user ID is not found. |
 | [17700026](../errorcode-bundle.md#17700026-指定应用被禁用) | The specified bundle is disabled. |

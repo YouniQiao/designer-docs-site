@@ -1,6 +1,7 @@
 # List
 
-List is implemented based on the singly linked list. Each node has a reference pointing to the next element. When querying an element, the system traverses the list from the beginning.
+List is implemented based on the singly linked list. Each node has a reference pointing to the next element.
+When querying an element, the system traverses the list from the beginning.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ List is implemented based on the singly linked list. Each node has a reference p
 ## Modules to Import
 
 ```TypeScript
-import { List } from '@ohos.util.List';
+import { List } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -345,7 +346,7 @@ Obtains the element at the specified position in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The get method cannot be bound. |
-| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200001](../errorcode-utils.md#10200001-value-out-of-range) | The value of index is out of range.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -388,7 +389,7 @@ Obtains the first element in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -476,7 +477,7 @@ Obtains the last element in this List.
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -545,7 +546,8 @@ console.info("result:", result); // result: 5
 getSubList(fromIndex: number, toIndex: number): List<T>
 ```
 
-Obtains elements within a range in this List, including the element at the start position but not that at the end position, and returns these elements as a new **List** instance.
+Obtains elements within a range in this List, including the element at the start position but not that at the end
+position, and returns these elements as a new **List** instance.
 
 **Since:** 8
 

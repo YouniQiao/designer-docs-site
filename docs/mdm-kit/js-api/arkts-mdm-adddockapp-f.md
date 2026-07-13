@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { applicationManager } from '@ohos.enterprise.applicationManager';
+import { applicationManager } from '@kit.MDMKit';
 ```
 
 ## addDockApp
@@ -12,7 +12,12 @@ import { applicationManager } from '@ohos.enterprise.applicationManager';
 function addDockApp(admin: Want, bundleName: string, abilityName: string, index?: number): void
 ```
 
-Adds an application to the bottom shortcut bar of a PC/2-in-1 device based on the location index. Then users can tap the application icon in the shortcut bar to directly launch the application. The application icon is the default icon displayed on the home screen. > **NOTE** >
+Adds an application to the bottom shortcut bar of a PC/2-in-1 device based on the location index. Then users can
+tap the application icon in the shortcut bar to directly launch the application. The application icon is the
+default icon displayed on the home screen.
+
+> **NOTE**
+>
 
 **Since:** 24
 

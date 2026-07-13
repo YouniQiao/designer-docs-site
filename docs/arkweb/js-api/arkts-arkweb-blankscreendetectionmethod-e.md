@@ -12,7 +12,19 @@ Enumerates the methods for the blank screen detection.
 DETECTION_CONTENTFUL_NODES_SEVENTEEN = 0
 ```
 
-The page is detected using the 17-point detection method. When a rendered and contentful node is detected by a detection point, it is considered that the detection point is hit. A contentful node refers to an image, video, or text node. If no contentful node is detected or the number of contentful nodes is less than the threshold, a blank or near-blank screen is displayed. The 17 detection points are as follows: Center point (1): The center point is at the geometric center of the page. Internal grid intersection points (16): A 5 × 5 uniform grid is defined in the page area. The 16 points are the intersection points of four vertical equal division lines and four horizontal equal division lines in the page.
+The page is detected using the 17-point detection method. When a rendered and contentful node is detected by a
+detection point, it is considered that the detection point is hit. A contentful node refers to an image, video, or
+text node.
+
+If no contentful node is detected or the number of contentful nodes is less than the threshold, a blank or near-blank
+screen is displayed.
+
+The 17 detection points are as follows:
+
+Center point (1): The center point is at the geometric center of the page.
+
+Internal grid intersection points (16): A 5 × 5 uniform grid is defined in the page area. The 16 points are the
+intersection points of four vertical equal division lines and four horizontal equal division lines in the page.
 
 **Since:** 22
 

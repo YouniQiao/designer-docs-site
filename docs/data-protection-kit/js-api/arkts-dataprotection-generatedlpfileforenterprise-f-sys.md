@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## generateDlpFileForEnterprise
@@ -12,7 +12,17 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function generateDlpFileForEnterprise(plaintextFd: number, dlpFd: number, property: DLPProperty, customProperty: CustomProperty): Promise<void>
 ```
 
-Encrypts a plaintext file to generate a DLP file for an enterprise account. This API can be called only by enterprise accounts. This API uses a promise to return the result. This API encrypts a plaintext file to generate a DLP file that can be accessed only by enterprise accounts, implementing enterprise-level file permission management. > **NOTE** > > This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account > servers. This API generates a DLP file, which is an encrypted file that can be accessed only by accounts > authorized by the enterprise server.
+Encrypts a plaintext file to generate a DLP file for an enterprise account. This API can be called only by
+enterprise accounts. This API uses a promise to return the result.
+
+This API encrypts a plaintext file to generate a DLP file that can be accessed only by enterprise accounts,
+implementing enterprise-level file permission management.
+
+> **NOTE**
+>
+> This API can be called only by enterprise accounts. Enterprises need to set up their own enterprise account
+> servers. This API generates a DLP file, which is an encrypted file that can be accessed only by accounts
+> authorized by the enterprise server.
 
 **Since:** 21
 
@@ -42,7 +52,7 @@ Encrypts a plaintext file to generate a DLP file for an enterprise account. This
 | Error Code ID | Error Message |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs.<br>**Applicable version:** 20 |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications use system APIs.<br>**Applicable version:** 20 and later |
 | [19100001](../errorcode-dlp.md#19100001-invalid-parameter) | Invalid parameter value. |
 | [19100002](../errorcode-dlp.md#19100002-encryption-and-decryption-error) | Credential service busy due to too many tasks or duplicate tasks. |
 | [19100003](../errorcode-dlp.md#19100003-encryptiondecryption-timeout) | Credential task time out. |

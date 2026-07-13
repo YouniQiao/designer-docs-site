@@ -1,8 +1,9 @@
 # USBDeviceInfo (System API)
 
-Defines detailed information about the USB device. It is inherited from [DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md#deviceinfo).
+Defines detailed information about the USB device. It is inherited from
+[DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md).
 
-**Inheritance/Implementation:** USBDeviceInfo extends [DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md#deviceinfo)
+**Inheritance/Implementation:** USBDeviceInfo extends [DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md)
 
 **Since:** 12
 
@@ -13,7 +14,7 @@ Defines detailed information about the USB device. It is inherited from [DeviceI
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.driver.deviceManager';
+import { deviceManager } from '@kit.DriverDevelopmentKit';
 ```
 
 ## interfaceDescList

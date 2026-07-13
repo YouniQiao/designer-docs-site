@@ -12,7 +12,9 @@ Provides the symbol span style information returned by the backend.
 effectStrategy: SymbolEffectStrategy
 ```
 
-Effect strategy of the symbol span. Default value: **SymbolEffectStrategy.NONE**
+Effect strategy of the symbol span.
+
+Default value: **SymbolEffectStrategy.NONE**
 
 **Type:** SymbolEffectStrategy
 
@@ -30,7 +32,9 @@ Effect strategy of the symbol span. Default value: **SymbolEffectStrategy.NONE**
 fontColor: Array<ResourceColor>
 ```
 
-Color of the symbol span. Default value: depending on the rendering strategy
+Color of the symbol span.
+
+Default value: depending on the rendering strategy
 
 **Type:** Array<ResourceColor>
 
@@ -48,7 +52,9 @@ Color of the symbol span. Default value: depending on the rendering strategy
 fontSize: number | string | Resource
 ```
 
-Size of the symbol span. The default unit is fp. The default value follows the theme.
+Size of the symbol span. The default unit is fp.
+
+The default value follows the theme.
 
 **Type:** number | string | Resource
 
@@ -66,7 +72,16 @@ Size of the symbol span. The default unit is fp. The default value follows the t
 fontWeight: number | FontWeight | string
 ```
 
-Weight of the symbol span. For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier font weight. The default value is **400**. For the string type, only strings of the number type are supported, for example, **"400"**, **"bold"**, **"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in **FontWeight**. Default value: **FontWeight.Normal**
+Weight of the symbol span.
+
+For the number type, the value ranges from 100 to 900, at an interval of 100. A larger value indicates a heavier
+font weight. The default value is **400**.
+
+For the string type, only strings of the number type are supported, for example, **"400"**, **"bold"**,
+**"bolder"**, **"lighter"**, **"regular"**, and **"medium"**, which correspond to the enumerated values in
+**FontWeight**.
+
+Default value: **FontWeight.Normal**
 
 **Type:** number | FontWeight | string
 
@@ -84,7 +99,9 @@ Weight of the symbol span. For the number type, the value ranges from 100 to 900
 renderingStrategy: SymbolRenderingStrategy
 ```
 
-Rendering strategy of the symbol span. Default value: **SymbolRenderingStrategy.SINGLE**
+Rendering strategy of the symbol span.
+
+Default value: **SymbolRenderingStrategy.SINGLE**
 
 **Type:** SymbolRenderingStrategy
 

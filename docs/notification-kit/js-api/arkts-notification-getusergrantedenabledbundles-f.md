@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationExtensionSubscription } from '@ohos.notificationExtensionSubscription';
+import { notificationExtensionSubscription } from '@kit.NotificationKit';
 ```
 
 ## getUserGrantedEnabledBundles
@@ -12,7 +12,8 @@ import { notificationExtensionSubscription } from '@ohos.notificationExtensionSu
 function getUserGrantedEnabledBundles(): Promise<GrantedBundleInfo[]>
 ```
 
-Obtains the applications that are allowed to access device notifications. This API uses a promise to return the result.
+Obtains the applications that are allowed to access device notifications. This API uses a promise to return the
+result.
 
 **Since:** 22
 

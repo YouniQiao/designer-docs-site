@@ -66,7 +66,10 @@ try {
 function getDisallowedBluetoothProtocols(admin: Want | null, accountId: number, policy: TransferPolicy): Array<Protocol>
 ```
 
-获取指定用户指定传输策略下已禁用的蓝牙协议列表。 > **说明：** >
+获取指定用户指定传输策略下已禁用的蓝牙协议列表。
+
+> **说明：**
+>
 
 **起始版本：** 26.0.0
 

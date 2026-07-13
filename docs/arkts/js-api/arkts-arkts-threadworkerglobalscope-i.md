@@ -1,8 +1,10 @@
 # ThreadWorkerGlobalScope
 
-Implements communication between the Worker thread and the host thread. The postMessage API is used to send messages to the host thread, and the close API is used to terminate the Worker thread. The ThreadWorkerGlobalScope class inherits from GlobalScope9+.
+Implements communication between the Worker thread and the host thread. The postMessage API is used to send messages
+to the host thread, and the close API is used to terminate the Worker thread. The ThreadWorkerGlobalScope class
+inherits from GlobalScope9+.
 
-**Inheritance/Implementation:** ThreadWorkerGlobalScope extends [GlobalScope](arkts-arkts-globalscope-i.md#globalscope)
+**Inheritance/Implementation:** ThreadWorkerGlobalScope extends [GlobalScope](arkts-arkts-globalscope-i.md)
 
 **Since:** 9
 
@@ -11,7 +13,7 @@ Implements communication between the Worker thread and the host thread. The post
 ## Modules to Import
 
 ```TypeScript
-import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@kit.ArkTS';
 ```
 
 ## callGlobalCallObjectMethod
@@ -20,7 +22,9 @@ import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventT
 callGlobalCallObjectMethod(instanceName: string, methodName: string, timeout: number, ...args: Object[]): Object
 ```
 
-Calls a method of an object registered with the host thread. This API is called by the Worker thread. The invoking is synchronous for the Worker thread and asynchronous for the host thread. The return value is transferred through serialization.
+Calls a method of an object registered with the host thread. This API is called by the Worker thread.
+The invoking is synchronous for the Worker thread and asynchronous for the host thread. The return value is
+transferred through serialization.
 
 **Since:** 11
 
@@ -259,7 +263,9 @@ workerPort.onmessage = (e: MessageEvents): void => {
 postMessageAtFront?(message: Object, priority: Priority, transfer?: ArrayBuffer[]): void
 ```
 
-Sends a message from the Worker thread to the main thread by transferring object ownership, and inserted into the head of the corresponding priority queue.Except for the worker thread to the main thread, this interface has the same function as postMessage.
+Sends a message from the Worker thread to the main thread by transferring object ownership,
+and inserted into the head of the corresponding priority queue.Except for the worker thread to the main thread,
+this interface has the same function as postMessage.
 
 **Since:** 26.0.0
 
@@ -290,7 +296,9 @@ Sends a message from the Worker thread to the main thread by transferring object
 postMessageWithSharedSendable(message: Object, transfer?: ArrayBuffer[]): void
 ```
 
-Sends a message from the Worker thread to the host thread. In the message, a sendable object is passed by reference , and a non-sendable object is passed by serialization.
+Sends a message from the Worker thread to the host thread. In the message, a sendable object is passed by reference
+,
+and a non-sendable object is passed by serialization.
 
 **Since:** 12
 
@@ -363,7 +371,9 @@ workerInstance.onmessage = (e: MessageEvents) => {
 onmessage?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 ```
 
-Called when the Worker thread receives a message sent by the host thread through postMessage. The event handler is executed in the Worker thread. In the callback function, this indicates the caller's ThreadWorkerGlobalScope, and the ev type is MessageEvents, indicating the received message data.
+Called when the Worker thread receives a message sent by the host thread through postMessage.
+The event handler is executed in the Worker thread. In the callback function, this indicates the caller's
+ThreadWorkerGlobalScope, and the ev type is MessageEvents, indicating the received message data.
 
 **Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 
@@ -379,7 +389,9 @@ Called when the Worker thread receives a message sent by the host thread through
 onmessageerror?: (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 ```
 
-Called when the Worker thread receives a message that cannot be deserialized. The event handler is executed in the Worker thread. In the callback function, this indicates the caller's ThreadWorkerGlobalScope, and the ev type is MessageEvents, indicating the received message data.
+Called when the Worker thread receives a message that cannot be deserialized. The event handler is executed
+in the Worker thread. In the callback function, this indicates the caller's ThreadWorkerGlobalScope,
+and the ev type is MessageEvents, indicating the received message data.
 
 **Type:** (this: ThreadWorkerGlobalScope, ev: MessageEvents) => void
 

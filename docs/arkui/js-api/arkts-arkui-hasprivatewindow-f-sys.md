@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## hasPrivateWindow
@@ -12,7 +12,9 @@ import { display } from '@ohos.display';
 function hasPrivateWindow(displayId: number): boolean
 ```
 
-Checks whether there is a visible privacy window on a display. The privacy window can be set by calling [setWindowPrivacyMode()](@ohos.window:window.setWindowPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>)). The content in the privacy window cannot be captured or recorded.
+Checks whether there is a visible privacy window on a display. The privacy window can be set by calling
+[setWindowPrivacyMode()](@ohos.window:window.setWindowPrivacyMode(isPrivacyMode: boolean, callback: AsyncCallback<void>)). The
+content in the privacy window cannot be captured or recorded.
 
 **Since:** 9
 
@@ -47,24 +49,26 @@ import { display } from '@kit.ArkUI';
 
 let displayClass: display.Display | null = null;
 try {
+  // Obtain the default Display object.
   displayClass = display.getDefaultDisplaySync();
 
-  let ret: boolean = true;
+  let ret: boolean | undefined = undefined;
   try {
+    // Check whether there is a privacy window on the default display.
     ret = display.hasPrivateWindow(displayClass.id);
   } catch (exception) {
-    console.error(`Failed to check has privateWindow or not. Code: ${exception.code} , message : ${exception.message}`);
+    console.error(`Failed to check has privateWindow or not. Code: ${exception.code}, message: ${exception.message}`);
   }
   if (ret == undefined) {
-    console.error("Failed to check has privateWindow or not.");
+    console.error('Failed to check has privateWindow or not.');
   }
   if (ret) {
-    console.info("There has privateWindow.");
+    console.info('There has privateWindow.');
   } else if (!ret) {
-    console.info("There has no privateWindow.");
+    console.info('There has no privateWindow.');
   }
 } catch (exception) {
-  console.error(`Failed to obtain the default display object. Code: ${exception.code} , message : ${exception.message}`);
+  console.error(`Failed to obtain the default display object. Code: ${exception.code}, message: ${exception.message}`);
 }
 
 ```

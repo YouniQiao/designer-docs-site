@@ -9,7 +9,7 @@ This class is used to enable back forward cache supported features.
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## constructor
@@ -28,7 +28,13 @@ constructor()
 mediaTakeOver: boolean
 ```
 
-Whether cache the pages that use media take over. <p><strong>API Note</strong>:<br> When the value is set to **true**, you need to maintain the lifecycle of system components created for video elements to avoid resource leak. </p> Default is false;
+Whether cache the pages that use media take over.
+<p><strong>API Note</strong>:<br>
+When the value is set to **true**, you need to maintain the lifecycle of system components
+created for video elements to avoid resource leak.
+</p>
+
+Default is false;
 
 **Type:** boolean
 
@@ -42,7 +48,14 @@ Whether cache the pages that use media take over. <p><strong>API Note</strong>:<
 nativeEmbed: boolean
 ```
 
-Whether cache the pages that use native embed. <p><strong>API Note</strong>:<br> When the value is set to **true**, you need to maintain the lifecycle of system components created for the same-layer rendering elements to avoid resource leak. </p> Default is false;
+Whether cache the pages that use native embed.
+
+<p><strong>API Note</strong>:<br>
+When the value is set to **true**, you need to maintain the lifecycle of system components created for the
+same-layer rendering elements to avoid resource leak.
+</p>
+
+Default is false;
 
 **Type:** boolean
 

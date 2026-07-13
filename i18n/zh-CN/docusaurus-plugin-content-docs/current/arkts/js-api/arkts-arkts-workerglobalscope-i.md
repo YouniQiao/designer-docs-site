@@ -2,7 +2,7 @@
 
 Worker线程自身的运行环境，与宿主线程环境隔离。
 
-**继承/实现关系：** WorkerGlobalScope extends [EventTarget](arkts-arkts-eventtarget-i.md#eventtarget)
+**继承/实现关系：** WorkerGlobalScope extends [EventTarget](arkts-arkts-eventtarget-i.md)
 
 **起始版本：** 7
 
@@ -36,7 +36,8 @@ Worker的名字，new Worker时指定。
 onerror?: (ev: ErrorEvent) => void
 ```
 
-onerror属性用于指定Worker在执行过程中发生异常被调用的回调函数， 该回调函数在Worker线程中执行。
+onerror属性用于指定Worker在执行过程中发生异常被调用的回调函数，
+该回调函数在Worker线程中执行。
 
 **类型：** (ev: ErrorEvent) => void
 

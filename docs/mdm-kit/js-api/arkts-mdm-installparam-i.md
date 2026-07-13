@@ -9,7 +9,7 @@ Defines the parameters for application installation.
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## installFlag
@@ -18,7 +18,13 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 installFlag?: number
 ```
 
-Installation flag. - **0**: initial installation. - **1**: overwrite installation. - **2**: installation-free. Default value: **0**
+Installation flag.
+
+- **0**: initial installation.
+- **1**: overwrite installation.
+- **2**: installation-free.
+
+Default value: **0**
 
 **Type:** number
 
@@ -34,7 +40,8 @@ Installation flag. - **0**: initial installation. - **1**: overwrite installatio
 parameters?: Record<string, string>
 ```
 
-Extended parameters. The default value is null. The key can be **ohos.bms.param.enterpriseForAllUser**. If the corresponding value is set **true**, the application is installed for all users.
+Extended parameters. The default value is null. The key can be **ohos.bms.param.enterpriseForAllUser**. If the
+corresponding value is set **true**, the application is installed for all users.
 
 **Type:** Record<string, string>
 

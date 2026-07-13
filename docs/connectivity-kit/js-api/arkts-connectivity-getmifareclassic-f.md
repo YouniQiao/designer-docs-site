@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { tag } from '@ohos.nfc.tag';
+import { tag } from '@kit.ConnectivityKit';
 ```
 
 ## getMifareClassic
@@ -12,7 +12,9 @@ import { tag } from '@ohos.nfc.tag';
 function getMifareClassic(tagInfo: TagInfo): MifareClassicTag
 ```
 
-Obtains an {@link MifareClassicTag} object based on the tag information. During tag reading, if the tag supports the MIFARE Classic technology, an {@link MifareClassicTag} object will be created based on the tag information.
+Obtains an {@link MifareClassicTag} object based on the tag information.
+During tag reading, if the tag supports the MIFARE Classic technology,
+an {@link MifareClassicTag} object will be created based on the tag information.
 
 **Since:** 12
 

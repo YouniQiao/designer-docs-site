@@ -11,7 +11,7 @@ Describes the rotation parameters.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## pivotX
@@ -20,7 +20,8 @@ import { window } from '@ohos.window';
 pivotX?: number
 ```
 
-X coordinate of the rotation center. The value is a floating-point number in the range [0.0, 1.0], and the default value is **0.5**.
+X coordinate of the rotation center. The value is a floating-point number in the range [0.0, 1.0], and the
+default value is **0.5**.
 
 **Type:** number
 
@@ -36,7 +37,8 @@ X coordinate of the rotation center. The value is a floating-point number in the
 pivotY?: number
 ```
 
-Y coordinate of the rotation center. The value is a floating-point number in the range [0.0, 1.0], and the default value is **0.5**.
+Y coordinate of the rotation center. The value is a floating-point number in the range [0.0, 1.0], and the
+default value is **0.5**.
 
 **Type:** number
 

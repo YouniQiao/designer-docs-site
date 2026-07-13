@@ -12,11 +12,11 @@ import { DriverExtensionContext } from '@kit.DriverDevelopmentKit';
 
 | Name | Description |
 | --- | --- |
-| [DriverExtensionAbility](arkts-driverextensionability-c.md) | DriverExtensionAbility模块提供驱动相关扩展能力，提供驱动创建、销毁、连接、断开等生命周期回调。 |
+| [DriverExtensionAbility](arkts-driverdevelopment-driverextensionability-c.md) | The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecyclecallbacks to be invoked when a driver is created, destroyed, connected, or disconnected. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [DriverExtensionContext](arkts-driverextensioncontext-t.md) | DriverExtensionAbility的上下文环境。 |
+| [DriverExtensionContext](arkts-driverdevelopment-driverextensioncontext-t.md) | Define a DriverExtensionContext for store context. |
 

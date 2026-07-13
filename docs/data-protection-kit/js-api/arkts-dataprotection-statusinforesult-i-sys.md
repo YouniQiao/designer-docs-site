@@ -11,7 +11,7 @@ Describes the DLP settings.
 ## Modules to Import
 
 ```TypeScript
-import { dlpSetDlpFeature } from '@ohos.dlpSetDlpFeature';
+import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
 ```
 
 ## isSuccess
@@ -20,7 +20,8 @@ import { dlpSetDlpFeature } from '@ohos.dlpSetDlpFeature';
 isSuccess: boolean
 ```
 
-Whether the DLP setting is successful. The value **true** indicates that the setting is successful, and the value **false** indicates that the setting fails.
+Whether the DLP setting is successful. The value **true** indicates that the setting is successful, and the
+value **false** indicates that the setting fails.
 
 **Type:** boolean
 

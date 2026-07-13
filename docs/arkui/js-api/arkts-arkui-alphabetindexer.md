@@ -1,6 +1,9 @@
 # AlphabetIndexer
 
-The **AlphabetIndexer** component can create a logically indexed array of items in a container for instant location. > **NOTE**
+The **AlphabetIndexer** component can create a logically indexed array of items in a container for instant location.
+
+> **NOTE**
+
 
 ## AlphabetIndexer
 

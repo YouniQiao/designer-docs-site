@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Context,Permissions,PermissionRequestResult } from '@kit.AbilityKit';
+import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { Context,Permissions,PermissionRequestResult } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [abilityAccessCtrl](arkts-abilityaccessctrl-n.md) |  |
+| [abilityAccessCtrl](arkts-ability-abilityaccessctrl-n.md) |  |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Context](arkts-context-t.md) | 提供Ability或Application的上下文，可用于访问应用程序的资源。 |
-| [PermissionRequestResult](arkts-permissionrequestresult-t.md) | 权限请求结果对象，包含申请的权限名列表、每个权限的授权结果、弹窗展示结果及失败原因等信息。 |
+| [Context](arkts-ability-context-t.md) | Provides the context for the ability or application, which can be used to access application resources. |
+| [PermissionRequestResult](arkts-ability-permissionrequestresult-t.md) | Permission request result object, containing information such as the list of requested permission names, theauthorization result of each permission, the dialog box display result, and the failure reason. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cert } from '@ohos.security.cert';
+import { cert } from '@kit.DeviceCertificateKit';
 ```
 
 ## createX509CertChain
@@ -254,7 +254,8 @@ cert.createX509CertChain(encodingBlob, (err, certChain) => {
 function createX509CertChain(certs: Array<X509Cert>): X509CertChain
 ```
 
-Creates an X.509 certificate chain object based on the specified certificates. This API returns the result synchronously.
+Creates an X.509 certificate chain object based on the specified certificates. This API returns the result
+synchronously.
 
 **Since:** 11
 

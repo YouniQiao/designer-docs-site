@@ -1,8 +1,12 @@
 # CmacSpec
 
-消息认证码参数[MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec)的子类，作为CMAC消息验证码计算的输入。 > **说明：** > > cipherName是必选参数，表示CMAC对称加密算法。
+消息认证码参数[MacSpec](arkts-cryptoarchitecture-macspec-i.md)的子类，作为CMAC计算的输入。
 
-**继承/实现关系：** CmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec)
+> **说明：**
+>
+> cipherName是必选参数，表示CMAC使用的对称密码算法。
+
+**继承/实现关系：** CmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md)
 
 **起始版本：** 18
 
@@ -14,7 +18,7 @@
 cipherName: string
 ```
 
-对称加密算法名。
+CMAC使用的对称密码算法名。
 
 **类型：** string
 

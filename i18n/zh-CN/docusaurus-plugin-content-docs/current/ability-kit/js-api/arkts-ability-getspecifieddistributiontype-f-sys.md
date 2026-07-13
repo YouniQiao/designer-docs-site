@@ -6,7 +6,10 @@
 function getSpecifiedDistributionType(bundleName: string): string
 ```
 
-以同步的方法查询指定bundleName的[HarmonyAppProvision配置文件说明](../../../../security/app-provision-structure.md)，该返回值是在调用install接口时传 入的[InstallParam](arkts-ability-installparam-i-sys.md#installparam)中的specifiedDistributionType字段。 获取调用方自身的信息时不需要权限。
+以同步的方法查询指定bundleName的[HarmonyAppProvision配置文件说明](../../../../security/app-provision-structure.md)，该返回值是在调用install接口时传
+入的[InstallParam](arkts-ability-installparam-i-sys.md)中的specifiedDistributionType字段。
+
+获取调用方自身的信息时不需要权限。
 
 **起始版本：** 10
 
@@ -34,7 +37,7 @@ function getSpecifiedDistributionType(bundleName: string): string
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | Permission denied. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
 | [17700001](../errorcode-bundle.md#17700001-指定的bundlename不存在) | The specified bundleName is not found. |
 
 **示例：**

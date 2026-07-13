@@ -6,7 +6,8 @@
 function cancelGroup(groupName: string, callback: AsyncCallback<void>): void
 ```
 
-Cancels notifications under a notification group of this application. This API uses an asynchronous callback to return the result.
+Cancels notifications under a notification group of this application. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 8
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { restrictions } from '@ohos.enterprise.restrictions';
+import { restrictions } from '@kit.MDMKit';
 ```
 
 ## isPrinterDisabled
@@ -12,7 +12,8 @@ import { restrictions } from '@ohos.enterprise.restrictions';
 function isPrinterDisabled(admin: Want, callback: AsyncCallback<boolean>): void
 ```
 
-Queries whether the printing capability of a device is disabled. This API uses an asynchronous callback to return the result.
+Queries whether the printing capability of a device is disabled. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 

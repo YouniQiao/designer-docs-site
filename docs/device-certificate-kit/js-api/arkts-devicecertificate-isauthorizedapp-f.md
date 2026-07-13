@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## isAuthorizedApp
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function isAuthorizedApp(keyUri: string): Promise<boolean>
 ```
 
-Checks whether this application is authorized by the specified user credential. This API uses a promise to return the result.
+Checks whether this application is authorized by the specified user credential. This API uses a promise to return
+the result.
 
 **Since:** 12
 

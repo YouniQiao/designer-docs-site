@@ -2,7 +2,7 @@
 
 Defines the album.
 
-**Inheritance/Implementation:** Album extends [AbsAlbum](arkts-medialibrary-absalbum-i.md#absalbum)
+**Inheritance/Implementation:** Album extends [AbsAlbum](arkts-medialibrary-absalbum-i.md)
 
 **Since:** 12
 
@@ -11,7 +11,7 @@ Defines the album.
 ## Modules to Import
 
 ```TypeScript
-import { sendablePhotoAccessHelper } from '@ohos.file.sendablePhotoAccessHelper';
+import { sendablePhotoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## getFaceId

@@ -2,6 +2,7 @@
 
 The **TextTimer** component displays timing information and is controlled in text format.
 
+
 ## TextTimer
 
 ```TypeScript

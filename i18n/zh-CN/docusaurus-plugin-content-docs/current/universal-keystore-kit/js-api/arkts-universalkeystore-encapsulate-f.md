@@ -7,11 +7,11 @@ function encapsulate(keyAlias: string, params: HuksParam[],
       sharedKeyAlias?: string, sharedKeyParams?: HuksParam[]): Promise<HuksReturnResult>
 ```
 
-后量子加密密钥封装操作，支持HUKS密钥管理 或由应用程序本身决定。如果应用程序选择管理密钥， 对称密钥携带在HuksReturnResult的outData字段中。
+后量子加密密钥封装操作，支持HUKS密钥管理
+或由应用程序本身决定。如果应用程序选择管理密钥，
+对称密钥携带在HuksReturnResult的outData字段中。
 
 **起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
 
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
@@ -36,7 +36,7 @@ function encapsulate(keyAlias: string, params: HuksParam[],
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | API is not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | API is not supported. |
 | [12000001](../errorcode-huks.md#12000001-该子功能不支持特性) | Algorithm mode is not supported |
 | [12000002](../errorcode-huks.md#12000002-缺少密钥算法参数) | Algorithm parameters are missing, please check the algorithm parameters. |
 | [12000003](../errorcode-huks.md#12000003-无效的密钥算法参数) | The algorithm parameters are invalid, please check the algorithm parameters. |

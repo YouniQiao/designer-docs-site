@@ -44,7 +44,10 @@ Digit input mode.
 PHONE_NUMBER = 3
 ```
 
-Phone number input mode. In this mode, the following characters are allowed: digits, spaces, plus signs (+), hyphens (-), asterisks (*), and number signs (#); the length is not limited.
+Phone number input mode.
+
+In this mode, the following characters are allowed: digits, spaces, plus signs (+), hyphens (-), asterisks (*), and
+number signs (#); the length is not limited.
 
 **Since:** 11
 
@@ -60,7 +63,10 @@ Phone number input mode. In this mode, the following characters are allowed: dig
 EMAIL = 5
 ```
 
-Email address input mode. This mode accepts only digits, letters, underscores (_), dots (.), and the following special characters: ! # $ % & ' * + - / = ? ^ ` { | } ~ @ (which can only appear once)
+Email address input mode.
+
+This mode accepts only digits, letters, underscores (_), dots (.), and the following special characters: ! # $ % &
+' * + - / = ? ^ ` { | } ~ @ (which can only appear once)
 
 **Since:** 11
 
@@ -76,7 +82,9 @@ Email address input mode. This mode accepts only digits, letters, underscores (_
 NUMBER_DECIMAL = 12
 ```
 
-Decimal number input mode. The value can contain digits and one decimal point.
+Decimal number input mode.
+
+The value can contain digits and one decimal point.
 
 **Since:** 12
 

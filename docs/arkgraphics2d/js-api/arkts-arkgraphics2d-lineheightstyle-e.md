@@ -12,7 +12,8 @@ Enumerates the line height scaling base.
 FONT_SIZE = 0
 ```
 
-Uses the font size as the scaling base. The line height is calculated as follows: [TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle).fontSize * [TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle).heightScale.
+Uses the font size as the scaling base. The line height is calculated as follows:
+[TextStyle](arkts-arkgraphics2d-textstyle-i.md).fontSize * [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale.
 
 **Since:** 21
 
@@ -26,7 +27,8 @@ Uses the font size as the scaling base. The line height is calculated as follows
 FONT_HEIGHT = 1
 ```
 
-Uses the font height as the scaling base. The line height is calculated as follows: the height of the shaped glyph * [TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle).heightScale.
+Uses the font height as the scaling base. The line height is calculated as follows: the height of the shaped
+glyph * [TextStyle](arkts-arkgraphics2d-textstyle-i.md).heightScale.
 
 **Since:** 21
 

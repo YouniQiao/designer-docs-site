@@ -28,7 +28,8 @@ If there is not enough space below the target component, cover the target compon
 AVOID_AROUND_TARGET
 ```
 
-If there is not enough space around the target component, compress and display in the largest available space ( scrollable).
+If there is not enough space around the target component, compress and display in the largest available space (
+scrollable).
 
 **Since:** 19
 

@@ -6,14 +6,14 @@ Defines the options for saving images or videos.
 
 **Deprecated since:** 12
 
-**Substitutes:** [SaveButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-savebuttonoptions-i.md#savebuttonoptions)
+**Substitutes:** [SaveButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-savebuttonoptions-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 ## Modules to Import
 
 ```TypeScript
-import { picker } from '@ohos.file.picker';
+import { picker } from '@kit.CoreFileKit';
 ```
 
 ## newFileNames
@@ -22,7 +22,8 @@ import { picker } from '@ohos.file.picker';
 newFileNames?: Array<string>
 ```
 
-File name of the image or video to save. If this parameter is not specified, the user needs to enter the file name.
+File name of the image or video to save. If this parameter is not specified, the user needs to enter the file
+name.
 
 **Type:** Array<string>
 
@@ -30,7 +31,7 @@ File name of the image or video to save. If this parameter is not specified, the
 
 **Deprecated since:** 18
 
-**Substitutes:** [SaveButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-savebuttonoptions-i.md#savebuttonoptions)
+**Substitutes:** [SaveButtonOptions](../../apis-arkui/arkts-components/arkts-arkui-savebuttonoptions-i.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 

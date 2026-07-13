@@ -12,7 +12,10 @@ Provides the parameters of the basic gesture handler.
 isFingerCountLimited?: boolean
 ```
 
-Whether to enforce the exact number of fingers touching the screen. **true**: Enforce the exact number of fingers touching the screen. **false**: Do not enforce the exact number of fingers touching the screen. Default value: **false**
+Whether to enforce the exact number of fingers touching the screen. **true**: Enforce the exact number of fingers
+touching the screen. **false**: Do not enforce the exact number of fingers touching the screen.
+
+Default value: **false**
 
 **Type:** boolean
 

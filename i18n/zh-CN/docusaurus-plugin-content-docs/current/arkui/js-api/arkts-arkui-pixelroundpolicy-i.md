@@ -12,7 +12,8 @@
 bottom?: PixelRoundCalcPolicy
 ```
 
-组件底部边界取整对齐方式。 <br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
+组件底部边界取整对齐方式。
+<br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
 
 **类型：** PixelRoundCalcPolicy
 
@@ -34,7 +35,8 @@ bottom?: PixelRoundCalcPolicy
 end?: PixelRoundCalcPolicy
 ```
 
-组件尾部边界取整对齐方式。 <br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
+组件尾部边界取整对齐方式。
+<br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
 
 **类型：** PixelRoundCalcPolicy
 
@@ -56,7 +58,8 @@ end?: PixelRoundCalcPolicy
 start?: PixelRoundCalcPolicy
 ```
 
-组件前部边界取整对齐方式。 <br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
+组件前部边界取整对齐方式。
+<br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
 
 **类型：** PixelRoundCalcPolicy
 
@@ -78,7 +81,8 @@ start?: PixelRoundCalcPolicy
 top?: PixelRoundCalcPolicy
 ```
 
-组件上部边界取整对齐方式。 <br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
+组件上部边界取整对齐方式。
+<br>不设置pixelRound或者设置异常值时按四舍五入规则取整。
 
 **类型：** PixelRoundCalcPolicy
 

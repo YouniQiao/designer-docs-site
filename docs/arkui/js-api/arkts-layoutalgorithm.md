@@ -6,19 +6,19 @@
 
 | Name | Description |
 | --- | --- |
-| [ColumnLayoutAlgorithm](arkts-columnlayoutalgorithm-c.md) | 垂直方向线性布局算法类。 > **说明：** > > ColumnLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}组件 > 的入参指定布局算法。 |
-| [CustomLayoutAlgorithm](arkts-customlayoutalgorithm-c.md) | 自定义布局算法类。 > **说明：** > > CustomLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}组件 > 的入参指定布局算法。 |
-| [GridLayoutAlgorithm](arkts-gridlayoutalgorithm-c.md) | 网格布局算法类。 > **说明：** > > GridLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}组件的入 > 参指定布局算法。 |
-| [RowLayoutAlgorithm](arkts-rowlayoutalgorithm-c.md) | 水平方向线性布局算法类。 > **说明：** > > RowLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}组件的入参 > 指定布局算法。 |
-| [StackLayoutAlgorithm](arkts-stacklayoutalgorithm-c.md) | 堆叠布局算法类。 > **说明：** > > StackLayoutAlgorithm类对象可以赋值给LayoutAlgorithm类型变量，作为[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}组件的 > 入参指定布局算法。 |
+| [ColumnLayoutAlgorithm](arkts-arkui-columnlayoutalgorithm-c.md) | Vertical linear layout algorithm class.&gt; **NOTE**&gt;&gt; The object of the **ColumnLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as&gt; the input parameter of the&gt; [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the&gt; layout algorithm. |
+| [CustomLayoutAlgorithm](arkts-arkui-customlayoutalgorithm-c.md) | Custom layout algorithm class.&gt; **NOTE**&gt;&gt; The object of the **CustomLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as&gt; the input parameter of the&gt; [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the&gt; layout algorithm. |
+| [GridLayoutAlgorithm](arkts-arkui-gridlayoutalgorithm-c.md) | Grid layout algorithm class.&gt; **NOTE**&gt;&gt; The object of the **GridLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as the&gt; input parameter of the&gt; [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the&gt; layout algorithm. |
+| [RowLayoutAlgorithm](arkts-arkui-rowlayoutalgorithm-c.md) | Horizontal linear layout algorithm class.&gt; **NOTE**&gt;&gt; The object of the **RowLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as the&gt; input parameter of the&gt; [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the&gt; layout algorithm. |
+| [StackLayoutAlgorithm](arkts-arkui-stacklayoutalgorithm-c.md) | Stack layout algorithm class.&gt; **NOTE**&gt;&gt; The object of the **StackLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as&gt; the input parameter of the&gt; [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the&gt; layout algorithm. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ColumnLayoutAlgorithmOptions](arkts-columnlayoutalgorithmoptions-i.md) | 设置垂直方向线性布局算法的间距、主轴对齐方式、交叉轴对齐方式及主轴排列方向。 |
-| [GridLayoutAlgorithmOptions](arkts-gridlayoutalgorithmoptions-i.md) | 设置网格布局算法的列数模板、列间距、行间距。 |
-| [LayoutAlgorithm](arkts-layoutalgorithm-i.md) | 动态布局容器[DynamicLayout]{@link @ohos.arkui.components.ArkDynamicLayout}的布局算法基础类型。 > **说明：** > > 该类型变量可以赋值具体的布局算法类对象，如[CustomLayoutAlgorithm]{@link CustomLayoutAlgorithm}类对象、 > [RowLayoutAlgorithm]{@link RowLayoutAlgorithm}类对象等。 |
-| [RowLayoutAlgorithmOptions](arkts-rowlayoutalgorithmoptions-i.md) | 设置水平方向线性布局算法的间距、主轴对齐方式、交叉轴对齐方式及主轴排列方向。 |
-| [StackLayoutAlgorithmOptions](arkts-stacklayoutalgorithmoptions-i.md) | 设置堆叠布局算法的对齐方式。 |
+| [ColumnLayoutAlgorithmOptions](arkts-arkui-columnlayoutalgorithmoptions-i.md) | Sets the spacing, main axis alignment method, cross axis alignment method, and main axis arrangement direction of thevertical linear layout algorithm. |
+| [GridLayoutAlgorithmOptions](arkts-arkui-gridlayoutalgorithmoptions-i.md) | Sets the number of columns, column spacing, and row spacing of the grid layout algorithm. |
+| [LayoutAlgorithm](arkts-arkui-layoutalgorithm-i.md) | Basic layout algorithm of the[DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) container.&gt; **NOTE**&gt;&gt; This type of variable can be assigned a specific layout algorithm class object, such as an object of the&gt; [CustomLayoutAlgorithm](./CustomLayoutAlgorithm) or [RowLayoutAlgorithm](./RowLayoutAlgorithm) class. |
+| [RowLayoutAlgorithmOptions](arkts-arkui-rowlayoutalgorithmoptions-i.md) | Sets the spacing, main axis alignment method, cross axis alignment method, and main axis arrangement direction of thehorizontal linear layout algorithm. |
+| [StackLayoutAlgorithmOptions](arkts-arkui-stacklayoutalgorithmoptions-i.md) | Sets the alignment method of the stack layout algorithm. |
 

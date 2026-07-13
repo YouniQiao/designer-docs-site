@@ -1,6 +1,10 @@
 # AutoExposureQuery
 
-AutoExposureQuery provides APIs to query the automatic exposure feature of a camera device. > > - In this version, a compatibility change was made that preserved the initial version information of inner > elements. As a result, you might see outer element's @since version number being higher than that of the inner > elements. However, this discrepancy does not affect the functionality of the interface.
+AutoExposureQuery provides APIs to query the automatic exposure feature of a camera device.
+>
+> - In this version, a compatibility change was made that preserved the initial version information of inner
+> elements. As a result, you might see outer element's @since version number being higher than that of the inner
+> elements. However, this discrepancy does not affect the functionality of the interface.
 
 **Since:** 12
 
@@ -9,7 +13,7 @@ AutoExposureQuery provides APIs to query the automatic exposure feature of a cam
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isExposureMeteringModeSupported

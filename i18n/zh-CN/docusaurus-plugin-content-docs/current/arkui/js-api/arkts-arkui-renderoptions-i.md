@@ -12,7 +12,9 @@
 selfIdealSize?: Size
 ```
 
-节点的理想大小。 默认值：{ width: 0, height: 0 }
+节点的理想大小。
+
+默认值：{ width: 0, height: 0 }
 
 **类型：** Size
 
@@ -30,7 +32,12 @@ selfIdealSize?: Size
 surfaceId?: string
 ```
 
-纹理接收方的surfaceId。纹理接收方一般为 [OH_NativeImage](../../../../reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md)。 surfaceId仅当type为NodeRenderType.RENDER_TYPE_TEXTURE时生效。 默认值：""
+纹理接收方的surfaceId。纹理接收方一般为
+[OH_NativeImage](../../../../reference/apis-arkgraphics2d/capi-oh-nativeimage-oh-nativeimage.md)。
+
+surfaceId仅当type为NodeRenderType.RENDER_TYPE_TEXTURE时生效。
+
+默认值：""
 
 **类型：** string
 
@@ -48,7 +55,9 @@ surfaceId?: string
 type?: NodeRenderType
 ```
 
-节点的渲染类型。 默认值：NodeRenderType.RENDER_TYPE_DISPLAY
+节点的渲染类型。
+
+默认值：NodeRenderType.RENDER_TYPE_DISPLAY
 
 **类型：** NodeRenderType
 

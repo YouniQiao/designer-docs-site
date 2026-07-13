@@ -1,6 +1,7 @@
 # RotationSpeed (System API)
 
-Rotational speed. A negative value indicates a clockwise rotation, and a positive value indicates a counterclockwise rotation.
+Rotational speed. A negative value indicates a clockwise rotation, and a positive value indicates a
+counterclockwise rotation.
 
 **Since:** 20
 
@@ -11,7 +12,7 @@ Rotational speed. A negative value indicates a clockwise rotation, and a positiv
 ## Modules to Import
 
 ```TypeScript
-import { mechanicManager } from '@ohos.distributedHardware.mechanicManager';
+import { mechanicManager } from '@kit.MechanicKit';
 ```
 
 ## pitchSpeed

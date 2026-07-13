@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAlternateIcons
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAlternateIcons(): Promise<Array<AlternateIconInfo>>
 ```
 
-Get all alternate icon info configured by the application itself.
+Queries the alternate icon information configured in the alternateIcons in the app.json5
+of the current application. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
@@ -24,7 +25,7 @@ Get all alternate icon info configured by the application itself.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AlternateIconInfo&gt;&gt; | Returns a list of AlternateIconInfo objects. |
+| Promise&lt;Array&lt;AlternateIconInfo&gt;&gt; | Promise used to return the list of alternateicons of the current application. |
 
 **Error codes:**
 

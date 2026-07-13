@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { missionManager } from '@ohos.app.ability.missionManager';
+import { missionManager } from '@kit.AbilityKit';
 ```
 
 ## clearMission
@@ -12,7 +12,8 @@ import { missionManager } from '@ohos.app.ability.missionManager';
 function clearMission(missionId: number, callback: AsyncCallback<void>): void
 ```
 
-Clears a given mission, regardless of whether it is locked. This API uses an asynchronous callback to return the result.
+Clears a given mission, regardless of whether it is locked. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

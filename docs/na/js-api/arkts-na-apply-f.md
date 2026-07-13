@@ -10,7 +10,8 @@ function apply<T, A extends readonly any[], R>(
     ): R
 ```
 
-Calls the function with the specified object as the this value and the elements of specified array as the arguments.
+Calls the function with the specified object as the this value
+and the elements of specified array as the arguments.
 
 **Parameters:**
 

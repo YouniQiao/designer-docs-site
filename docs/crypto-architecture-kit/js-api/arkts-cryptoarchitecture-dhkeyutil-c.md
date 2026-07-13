@@ -11,7 +11,7 @@ Generates common parameters for a DH key based on the prime **p** length and the
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## genDHCommonParamsSpec
@@ -20,7 +20,8 @@ import { cryptoFramework } from '@ohos.security.cryptoFramework';
 static genDHCommonParamsSpec(pLen: number, skLen?: number): DHCommonParamsSpec
 ```
 
-Generates common parameters for a DH key based on the prime **p** length and the private key length, in bits. For details, see [DH](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#dh).
+Generates common parameters for a DH key based on the prime **p** length and the private key length, in bits. For
+details, see [DH](../../../../security/CryptoArchitectureKit/crypto-asym-key-generation-conversion-spec.md#dh).
 
 **Since:** 11
 
@@ -35,7 +36,7 @@ Generates common parameters for a DH key based on the prime **p** length and the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | pLen | number | Yes | Length of the prime **p**, in bits. |
-| skLen | number | No | Maximum length of the generated DH private key, in bits. The default value is **0**.<br>When this parameter is set to **0**, the maximum length of the generated DH private key is as follows:<br>ffdhe2048: 255 bits.<br>ffdhe3072: 275 bits.<br>ffdhe4096: 325 bits.<br>ffdhe6144: 375 bits.<br>ffdhe8192: 400 bits. |
+| skLen | number | No | Maximum length of the generated DH private key, in bits. The default value is **0**.<br>When this parameter is set to **0**, the maximum length of the generated DH private key is as follows:<br>ffdhe2048: 255 bits.<br>ffdhe3072: 275 bits.<br>ffdhe4096: 325 bits.<br>ffdhe6144: 375 bits.<br>ffdhe8192:400 bits. |
 
 **Return value:**
 

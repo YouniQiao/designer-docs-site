@@ -12,5 +12,5 @@ import { IntentionCode } from '@kit.InputKit';
 
 | Name | Description |
 | --- | --- |
-| [IntentionCode](arkts-intentioncode-e.md) | 将键盘输入设备的原始事件映射为归一化交互的意图事件，如键盘上空格键映射后的事件为INTENTION_SELECT，意图为选中。 |
+| [IntentionCode](arkts-input-intentioncode-e.md) | The **intentionCode** module maps the original events of the keyboard to intention codes for normalized interaction.For example, if the mapped event of the space bar on the keyboard is **INTENTION_SELECT**, the intent is to select anitem. |
 

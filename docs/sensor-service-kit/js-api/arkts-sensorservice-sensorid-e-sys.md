@@ -12,7 +12,9 @@ Enumerates the sensor types.
 COLOR = 14
 ```
 
-Color sensor. System API: This is a system API.
+Color sensor.
+
+System API: This is a system API.
 
 **Since:** 10
 
@@ -26,7 +28,9 @@ Color sensor. System API: This is a system API.
 SAR = 15
 ```
 
-Sodium Adsorption Ratio (SAR) sensor. System API: This is a system API.
+Sodium Adsorption Ratio (SAR) sensor.
+
+System API: This is a system API.
 
 **Since:** 10
 

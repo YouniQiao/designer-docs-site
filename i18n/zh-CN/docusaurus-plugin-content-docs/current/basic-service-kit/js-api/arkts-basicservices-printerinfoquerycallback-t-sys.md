@@ -4,7 +4,9 @@
 type PrinterInfoQueryCallback = (printerInfo: PrinterInformation, ppdInfo: PpdInfo[]) => void
 ```
 
-定义注册监听printInfoQuery事件的回调类型。 printInfo的值表示打印机信息。 ppdInfo的值表示所有打印机的ppd信息。
+定义注册监听printInfoQuery事件的回调类型。
+printInfo的值表示打印机信息。
+ppdInfo的值表示所有打印机的ppd信息。
 
 **起始版本：** 24
 

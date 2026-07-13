@@ -12,7 +12,13 @@ Defines motion path configuration options of the component.
 from?: number
 ```
 
-Start point of the motion path. Default value: **0.0** Value range: [0.0, 1.0]. Values less than 0.0 or greater than 1.0 are treated as the default value 0.0.
+Start point of the motion path.
+
+Default value: **0.0**
+
+Value range: [0.0, 1.0].
+
+Values less than 0.0 or greater than 1.0 are treated as the default value 0.0.
 
 **Type:** number
 
@@ -30,7 +36,13 @@ Start point of the motion path. Default value: **0.0** Value range: [0.0, 1.0]. 
 path: string
 ```
 
-Motion path of the translation animation. The [svg path string](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax) is used. In the value, **start** and **end** can be used in place of the start point and end point, for example, **'Mstart.x start.y L50 50 Lend.x end.y Z'**. For details, see [Path Drawing](../../../../ui/ui-js-components-svg-path.md). If this parameter is set to an empty string, the path animation is not set.
+Motion path of the translation animation. The
+[svg path string](../../../../reference/apis-arkui/arkui-ts/ts-drawing-components-path.md#svg-path-syntax) is used.
+In the value, **start** and **end** can be used in place of the start point and end point, for example,
+**'Mstart.x start.y L50 50 Lend.x end.y Z'**. For details, see
+[Path Drawing](../../../../ui/ui-js-components-svg-path.md).
+
+If this parameter is set to an empty string, the path animation is not set.
 
 **Type:** string
 
@@ -46,7 +58,10 @@ Motion path of the translation animation. The [svg path string](../../../../refe
 rotatable?: boolean
 ```
 
-Whether to rotate along the path. The value **true** means to rotate along the path, and **false** means the opposite. Default value: **false**
+Whether to rotate along the path. The value **true** means to rotate along the path, and **false** means the
+opposite.
+
+Default value: **false**
 
 **Type:** boolean
 
@@ -64,7 +79,14 @@ Whether to rotate along the path. The value **true** means to rotate along the p
 to?: number
 ```
 
-End point of the motion path. Default value: **1.0** Value range: [0.0, 1.0]. Values less than 0.0 or greater than 1.0 are treated as the default value 1.0. After this normalization, the **to** value must be greater than or equal to the **from** value.
+End point of the motion path.
+
+Default value: **1.0**
+
+Value range: [0.0, 1.0].
+
+Values less than 0.0 or greater than 1.0 are treated as the default value 1.0. After this normalization, the **to**
+value must be greater than or equal to the **from** value.
 
 **Type:** number
 

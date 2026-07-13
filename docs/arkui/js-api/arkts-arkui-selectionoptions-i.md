@@ -12,7 +12,8 @@ Defines the selection options.
 menuPolicy?: MenuPolicy
 ```
 
-Menu display policy. Default value: MenuPolicy.DEFAULT.
+Menu display policy.
+Default value: MenuPolicy.DEFAULT.
 
 **Type:** MenuPolicy
 

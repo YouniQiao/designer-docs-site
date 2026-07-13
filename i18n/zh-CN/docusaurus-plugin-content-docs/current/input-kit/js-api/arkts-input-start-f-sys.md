@@ -6,7 +6,13 @@
 function start(sinkDeviceDescriptor: string, srcInputDeviceId: number, callback: AsyncCallback<void>): void
 ```
 
-启动键鼠穿越，使用callback异步回调。 > **说明：** > > 从 API version 9开始支持，从API version 23开始废弃。建议使用 > [cooperate.activateCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-1) > 替代。
+启动键鼠穿越，使用callback异步回调。
+
+> **说明：**
+>
+> 从 API version 9开始支持，从API version 23开始废弃。建议使用
+> [cooperate.activateCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-1)
+> 替代。
 
 **起始版本：** 9
 
@@ -30,10 +36,43 @@ function start(sinkDeviceDescriptor: string, srcInputDeviceId: number, callback:
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | [4400001](../errorcode-cooperator.md#4400001-目标设备描述符错误) | Incorrect descriptor for the target device. |
 | [4400002](../errorcode-cooperator.md#4400002-操作输入设备失败) | Screen hop failed. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api.<br>**适用版本：** 12 |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api.<br>**适用版本：** 12+ |
+
+**示例：**
+
+```TypeScript
+import { inputDeviceCooperate } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          const sinkDeviceDescriptor = "descriptor";
+          let srcInputDeviceId = 0;
+          try {
+            inputDeviceCooperate.start(sinkDeviceDescriptor, srcInputDeviceId, (error: BusinessError) => {
+              if (error) {
+                console.error(`Failed to start keyboard mouse crossing, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+                return;
+              }
+              console.info(`Succeeded in starting keyboard mouse crossing.`);
+            });
+          } catch (error) {
+            console.error(`Failed to start keyboard mouse crossing, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          }
+        })
+    }
+  }
+}
+
+```
 
 
 ## start
@@ -42,7 +81,13 @@ function start(sinkDeviceDescriptor: string, srcInputDeviceId: number, callback:
 function start(sinkDeviceDescriptor: string, srcInputDeviceId: number): Promise<void>
 ```
 
-启动键鼠穿越，使用Promise异步回调。 > **说明：** > > 从 API version 9开始支持，从API version 23开始废弃。建议使用 > [cooperate.activateCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-2) > 替代。
+启动键鼠穿越，使用Promise异步回调。
+
+> **说明：**
+>
+> 从 API version 9开始支持，从API version 23开始废弃。建议使用
+> [cooperate.activateCooperate](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-2)
+> 替代。
 
 **起始版本：** 9
 
@@ -71,8 +116,35 @@ function start(sinkDeviceDescriptor: string, srcInputDeviceId: number): Promise<
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | [4400001](../errorcode-cooperator.md#4400001-目标设备描述符错误) | Incorrect descriptor for the target device. |
 | [4400002](../errorcode-cooperator.md#4400002-操作输入设备失败) | Screen hop failed. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api.<br>**适用版本：** 12 |
+| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Permission denied, non-system app called system api.<br>**适用版本：** 12+ |
+
+**示例：**
+
+```TypeScript
+import { inputDeviceCooperate } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          const sinkDeviceDescriptor = "descriptor";
+          const srcInputDeviceId = 0;
+          inputDeviceCooperate.start(sinkDeviceDescriptor, srcInputDeviceId).then(() => {
+            console.info(`Succeeded in starting keyboard mouse crossing.`);
+          }).catch((error: BusinessError) => {
+            console.error(`Failed to start keyboard mouse crossing, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          });
+        })
+    }
+  }
+}
+
+```
 

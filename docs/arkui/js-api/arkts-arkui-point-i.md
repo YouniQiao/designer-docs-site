@@ -9,7 +9,7 @@ Defines the data structure of a coordinate point.
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## x
@@ -18,7 +18,9 @@ import { matrix4 } from '@ohos.matrix4';
 x: number
 ```
 
-X-coordinate. Value range: (-∞, +∞)
+X-coordinate.
+
+Value range: (-∞, +∞)
 
 **Type:** number
 
@@ -36,7 +38,9 @@ X-coordinate. Value range: (-∞, +∞)
 y: number
 ```
 
-Y-coordinate. Value range: (-∞, +∞)
+Y-coordinate.
+
+Value range: (-∞, +∞)
 
 **Type:** number
 

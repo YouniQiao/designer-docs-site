@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { contact } from '@ohos.contact';
+import { contact } from '@kit.ContactsKit';
 ```
 
 ## saveToExistingContactViaUI
@@ -12,7 +12,8 @@ import { contact } from '@ohos.contact';
 function saveToExistingContactViaUI(context: Context, contact: Contact): Promise<number>
 ```
 
-Saves the information to an existing contact through UI interaction.. This API uses a promise to return the result.
+Saves the information to an existing contact through UI interaction.. This API uses a promise to return the
+result.
 
 **Since:** 15
 

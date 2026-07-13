@@ -1,6 +1,7 @@
 # EntityRecognizer
 
-Provides entity recognition capabilities, which can be used to obtain the type and start and end positions of an entity in the text. Currently, supported entities include phone numbers, and date and time.
+Provides entity recognition capabilities, which can be used to obtain the type and start and end positions of an
+entity in the text. Currently, supported entities include phone numbers, and date and time.
 
 **Since:** 11
 
@@ -9,7 +10,7 @@ Provides entity recognition capabilities, which can be used to obtain the type a
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -18,7 +19,8 @@ import { i18n } from '@ohos.i18n';
 constructor(locale?: string)
 ```
 
-Creates an **entityRecognizer** object. This object is used to recognize entities in the text for the specified locale.
+Creates an **entityRecognizer** object. This object is used to recognize entities in the text for the specified
+locale.
 
 **Since:** 11
 

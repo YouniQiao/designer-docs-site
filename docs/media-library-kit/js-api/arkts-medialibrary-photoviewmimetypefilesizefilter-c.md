@@ -9,7 +9,7 @@ Media file type and size combined filtering configuration.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## photoViewMimeType

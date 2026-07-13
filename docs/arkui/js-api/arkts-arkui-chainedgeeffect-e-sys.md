@@ -14,7 +14,8 @@ Declare edge effect of chain animation.
 DEFAULT
 ```
 
-Default edge effect. Compress the space in the drag direction and stretch the space in the opposite drag direction.
+Default edge effect. Compress the space in the drag direction
+and stretch the space in the opposite drag direction.
 
 **Since:** 10
 

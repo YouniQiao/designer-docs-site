@@ -1,6 +1,8 @@
 # BarGridColumnOptions
 
-Implements a **BarGridColumnOptions** object for setting the visible area of the tab bar in grid mode, including the column margin and gutter, as well as the number of columns occupied by tabs under small, medium, and large screen sizes.
+Implements a **BarGridColumnOptions** object for setting the visible area of the tab bar in grid mode, including the
+column margin and gutter, as well as the number of columns occupied by tabs under small, medium, and large screen
+sizes.
 
 **Since:** 10
 
@@ -12,7 +14,11 @@ Implements a **BarGridColumnOptions** object for setting the visible area of the
 gutter?: Dimension
 ```
 
-Column gutter (that is, gap between columns) in grid mode. It cannot be set in percentage. Default value: **24.0** Unit: vp
+Column gutter (that is, gap between columns) in grid mode. It cannot be set in percentage.
+
+Default value: **24.0**
+
+Unit: vp
 
 **Type:** Dimension
 
@@ -30,7 +36,11 @@ Column gutter (that is, gap between columns) in grid mode. It cannot be set in p
 lg?: number
 ```
 
-Number of columns occupied by a tab on a screen whose width is greater than or equal to 840 vp but less than 1024 vp. The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the entire width of the tab bar.
+Number of columns occupied by a tab on a screen whose width is greater than or equal to 840 vp but less than 1024
+vp.
+
+The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the
+entire width of the tab bar.
 
 **Type:** number
 
@@ -48,7 +58,11 @@ Number of columns occupied by a tab on a screen whose width is greater than or e
 margin?: Dimension
 ```
 
-Column margin in grid mode. It cannot be set in percentage. Default value: **24.0** Unit: vp
+Column margin in grid mode. It cannot be set in percentage.
+
+Default value: **24.0**
+
+Unit: vp
 
 **Type:** Dimension
 
@@ -66,7 +80,11 @@ Column margin in grid mode. It cannot be set in percentage. Default value: **24.
 md?: number
 ```
 
-Number of columns occupied by a tab on a screen whose width is greater than or equal to 600 vp but less than 800 vp. The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the entire width of the tab bar.
+Number of columns occupied by a tab on a screen whose width is greater than or equal to 600 vp but less than 800
+vp.
+
+The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the
+entire width of the tab bar.
 
 **Type:** number
 
@@ -84,7 +102,11 @@ Number of columns occupied by a tab on a screen whose width is greater than or e
 sm?: number
 ```
 
-Number of columns occupied by a tab on a screen whose width is greater than or equal to 320 vp but less than 600 vp. The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the entire width of the tab bar.
+Number of columns occupied by a tab on a screen whose width is greater than or equal to 320 vp but less than 600
+vp.
+
+The value must be a non-negative even number. The default value is **-1**, indicating that the tab takes up the
+entire width of the tab bar.
 
 **Type:** number
 

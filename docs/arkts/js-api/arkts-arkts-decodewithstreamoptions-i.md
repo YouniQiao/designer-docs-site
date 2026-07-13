@@ -9,7 +9,7 @@ Defines whether decoding follows data blocks.
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## stream
@@ -18,7 +18,9 @@ import { util } from '@ohos.util';
 stream?: boolean
 ```
 
-Whether to allow data blocks in subsequent **decodeWithStream()**. If data is processed in blocks, set this parameter to **true**. If this is the last data block to process or data is not divided into blocks, set this parameter to **false**. The default value is **false**.
+Whether to allow data blocks in subsequent **decodeWithStream()**. If data is processed in blocks, set this
+parameter to **true**. If this is the last data block to process or data is not divided into blocks, set this
+parameter to **false**. The default value is **false**.
 
 **Type:** boolean
 

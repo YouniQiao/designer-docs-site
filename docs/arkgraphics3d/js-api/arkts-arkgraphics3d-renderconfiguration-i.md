@@ -12,7 +12,9 @@ Global render configuration control
 shadowResolution?: Vec2
 ```
 
-resolution for single shadow map buffer, undefined by default, which means we use (1024, 1024) as the resolution of a single shadow map. You need to provide the same x and y value to get the right shadow effect, the unit is pixel.
+resolution for single shadow map buffer, undefined by default,
+which means we use (1024, 1024) as the resolution of a single shadow map.
+You need to provide the same x and y value to get the right shadow effect, the unit is pixel.
 
 **Type:** Vec2
 

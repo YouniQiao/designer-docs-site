@@ -1,6 +1,7 @@
 # LeadingMarginPlaceholder
 
-Describes the leading margin placeholder, which dictates the distance between the left edges of the paragraph and the component.
+Describes the leading margin placeholder, which dictates the distance between the left edges of the paragraph and the
+component.
 
 **Since:** 11
 

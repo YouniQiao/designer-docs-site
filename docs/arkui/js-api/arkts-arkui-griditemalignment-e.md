@@ -1,6 +1,16 @@
 # GridItemAlignment
 
-Enumerates the alignment modes of grid items. > **NOTE** > > 1. The **STRETCH** option only takes effect in scrollable grids.<br> > 2. The **STRETCH** option takes effect only if each grid item in a row is of a regular size (occupying only one > row and one column). It is not effective in scenarios where there are grid items spanning across rows or columns.<br> > 3. When **STRETCH** is used, only grid items without a set height will adopt the height of the tallest grid item > in the current row; the height of grid items with a set height will remain unchanged.<br> > 4. When **STRETCH** is used, the grid undergoes an additional layout process, which may incur additional > performance overhead.
+Enumerates the alignment modes of grid items.
+
+> **NOTE**
+>
+> 1. The **STRETCH** option only takes effect in scrollable grids.<br>
+> 2. The **STRETCH** option takes effect only if each grid item in a row is of a regular size (occupying only one
+> row and one column). It is not effective in scenarios where there are grid items spanning across rows or columns.<br>
+> 3. When **STRETCH** is used, only grid items without a set height will adopt the height of the tallest grid item
+> in the current row; the height of grid items with a set height will remain unchanged.<br>
+> 4. When **STRETCH** is used, the grid undergoes an additional layout process, which may incur additional
+> performance overhead.
 
 **Since:** 12
 

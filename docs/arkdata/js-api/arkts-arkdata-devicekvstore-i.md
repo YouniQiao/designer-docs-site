@@ -1,8 +1,16 @@
 # DeviceKVStore
 
-Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used. Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of other devices is read-only and cannot be modified. For example, a device KV store can be used to implement image sharing between devices. The images of other devices can be viewed, but not be modified or deleted. Before calling any method in **DeviceKVStore**, you must use [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) to obtain a **DeviceKVStore** object.
+Provides APIs for querying data in a device KV store and performing cross-device data sync. This class inherits
+from **SingleKVStore**. The **SingleKVStore** APIs such as **put** and **putBatch** can be used.
+Data is distinguished by device in a device KV store. Each device can only write and modify its own data. Data of
+other devices is read-only and cannot be modified.
+For example, a device KV store can be used to implement image sharing between devices. The images of other devices
+can be viewed, but not be modified or deleted.
+Before calling any method in **DeviceKVStore**, you must use
+[getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1)
+to obtain a **DeviceKVStore** object.
 
-**Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md#singlekvstore)
+**Inheritance/Implementation:** DeviceKVStore extends [SingleKVStore](arkts-arkdata-singlekvstore-i.md)
 
 **Since:** 9
 
@@ -11,7 +19,7 @@ Provides APIs for querying data in a device KV store and performing cross-device
 ## Modules to Import
 
 ```TypeScript
-import { distributedKVStore } from '@ohos.data.distributedKVStore';
+import { distributedKVStore } from '@kit.ArkData';
 ```
 
 ## get
@@ -20,7 +28,8 @@ import { distributedKVStore } from '@ohos.data.distributedKVStore';
 get(key: string, callback: AsyncCallback<boolean | string | number | number | Uint8Array>): void
 ```
 
-Obtains the value of the specified key for this device. This API uses an asynchronous callback to return the result.
+Obtains the value of the specified key for this device. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -32,7 +41,7 @@ Obtains the value of the specified key for this device. This API uses an asynchr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key of the value to obtain. It cannot be empty, and the length cannot exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md#constants). |
+| key | string | Yes | Key of the value to obtain. It cannot be empty, and the length cannot exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md). |
 | callback | AsyncCallback&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Yes | Callback used to return the valueobtained. |
 
 **Error codes:**
@@ -62,7 +71,7 @@ Obtains the value of the specified key for this device. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | string | Yes | Key of the value to obtain. It cannot be empty, and the length cannot exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md#constants). |
+| key | string | Yes | Key of the value to obtain. It cannot be empty, and the length cannot exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md). |
 
 **Return value:**
 
@@ -85,7 +94,15 @@ Obtains the value of the specified key for this device. This API uses a promise 
 get(deviceId: string, key: string, callback: AsyncCallback<boolean | string | number | number | Uint8Array>): void
 ```
 
-Obtains a string value that matches the specified device ID and key. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a string value that matches the specified device ID and key. This API uses an asynchronous callback to
+return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -98,7 +115,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
-| key | string | Yes | Key of the value to obtain. It cannot be empty or exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md#constants). |
+| key | string | Yes | Key of the value to obtain. It cannot be empty or exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md). |
 | callback | AsyncCallback&lt;boolean \| string \| number \| number \| Uint8Array&gt; | Yes | Callback used to return the valueobtained. |
 
 **Error codes:**
@@ -116,7 +133,15 @@ Obtains a string value that matches the specified device ID and key. This API us
 get(deviceId: string, key: string): Promise<boolean | string | number | number | Uint8Array>
 ```
 
-Obtains a string value that matches the specified device ID and key. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a string value that matches the specified device ID and key. This API uses a promise to return the
+result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -129,7 +154,7 @@ Obtains a string value that matches the specified device ID and key. This API us
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | deviceId | string | Yes | ID of the target device. |
-| key | string | Yes | Key of the value to obtain. It cannot be empty or exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md#constants). |
+| key | string | Yes | Key of the value to obtain. It cannot be empty or exceed[MAX_KEY_LENGTH](arkts-arkdata-constants-i.md). |
 
 **Return value:**
 
@@ -152,7 +177,8 @@ Obtains a string value that matches the specified device ID and key. This API us
 getEntries(keyPrefix: string, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified key prefix for this device. This API uses an asynchronous callback to return the result.
+Obtains all KV pairs that match the specified key prefix for this device. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -225,7 +251,8 @@ try {
 getEntries(keyPrefix: string): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified key prefix for this device. This API uses a promise to return the result.
+Obtains all KV pairs that match the specified key prefix for this device. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -298,7 +325,15 @@ try {
 getEntries(deviceId: string, keyPrefix: string, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified device ID and key prefix. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains all KV pairs that match the specified device ID and key prefix. This API uses an asynchronous callback to
+return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -372,7 +407,15 @@ try {
 getEntries(deviceId: string, keyPrefix: string): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified device ID and key prefix. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains all KV pairs that match the specified device ID and key prefix. This API uses a promise to return the
+result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -449,7 +492,8 @@ try {
 getEntries(query: Query, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains all KV pairs that match the specified **Query** object for this device. This API uses an asynchronous callback to return the result.
+Obtains all KV pairs that match the specified **Query** object for this device. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 9
 
@@ -521,7 +565,8 @@ try {
 getEntries(query: Query): Promise<Entry[]>
 ```
 
-Obtains all KV pairs that match the specified **Query** object for this device. This API uses a promise to return the result.
+Obtains all KV pairs that match the specified **Query** object for this device. This API uses a promise to return
+the result.
 
 **Since:** 9
 
@@ -597,7 +642,15 @@ try {
 getEntries(deviceId: string, query: Query, callback: AsyncCallback<Entry[]>): void
 ```
 
-Obtains the KV pairs that match the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains the KV pairs that match the specified device ID and **Query** object. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -676,7 +729,15 @@ try {
 getEntries(deviceId: string, query: Query): Promise<Entry[]>
 ```
 
-Obtains the KV pairs that match the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains the KV pairs that match the specified device ID and **Query** object. This API uses a promise to return
+the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -754,7 +815,8 @@ try {
 getResultSet(keyPrefix: string, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a result set with the specified prefix for this device. This API uses an asynchronous callback to return the result.
+Obtains a result set with the specified prefix for this device. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -776,7 +838,7 @@ Obtains a result set with the specified prefix for this device. This API uses an
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -863,7 +925,7 @@ Obtains a result set with the specified prefix for this device. This API uses a 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -915,7 +977,15 @@ try {
 getResultSet(deviceId: string, keyPrefix: string, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -938,7 +1008,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and k
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -977,7 +1047,15 @@ try {
 getResultSet(deviceId: string, keyPrefix: string): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and key prefix. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1005,7 +1083,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and k
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -1040,7 +1118,15 @@ try {
 getResultSet(query: Query, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses
+an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1062,7 +1148,7 @@ Obtains a **KVStoreResultSet** object that matches the specified **Query** objec
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -1124,7 +1210,8 @@ try {
 getResultSet(query: Query): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses a promise to return the result.
+Obtains a **KVStoreResultSet** object that matches the specified **Query** object for this device. This API uses
+a promise to return the result.
 
 **Since:** 9
 
@@ -1151,7 +1238,7 @@ Obtains a **KVStoreResultSet** object that matches the specified **Query** objec
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -1198,7 +1285,15 @@ try {
 getResultSet(deviceId: string, query: Query, callback: AsyncCallback<KVStoreResultSet>): void
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1221,7 +1316,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and *
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -1283,7 +1378,15 @@ try {
 getResultSet(deviceId: string, query: Query): Promise<KVStoreResultSet>
 ```
 
-Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains a **KVStoreResultSet** object that matches the specified device ID and **Query** object. This API uses a
+promise to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1311,7 +1414,7 @@ Obtains a **KVStoreResultSet** object that matches the specified device ID and *
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes:1.Mandatory parameters are left unspecified;<br>2.Incorrect parameters types. |
 | [15100003](../errorcode-distributedKVStore.md#15100003-kv-store-corrupted) | Database corrupted. |
 | [15100005](../errorcode-distributedKVStore.md#15100005-kv-store-or-result-set-closed) | Database or result set already closed. |
-| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 |
+| [15100001](../errorcode-distributedKVStore.md#15100001-subscription-count-or-result-set-count-reaches-the-limit) | Over max limits.<br>**Applicable version:** 10 and later |
 
 **Example**
 
@@ -1370,7 +1473,8 @@ try {
 getResultSize(query: Query, callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of results that match the specified **Query** object for this device. This API uses an asynchronous callback to return the result.
+Obtains the number of results that match the specified **Query** object for this device. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -1439,7 +1543,8 @@ try {
 getResultSize(query: Query): Promise<number>
 ```
 
-Obtains the number of results that match the specified **Query** object for this device. This API uses a promise to return the result.
+Obtains the number of results that match the specified **Query** object for this device. This API uses a promise
+to return the result.
 
 **Since:** 9
 
@@ -1511,7 +1616,15 @@ try {
 getResultSize(deviceId: string, query: Query, callback: AsyncCallback<number>): void
 ```
 
-Obtains the number of results that match the specified device ID and **Query** object. This API uses an asynchronous callback to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains the number of results that match the specified device ID and **Query** object. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 
@@ -1585,7 +1698,15 @@ try {
 getResultSize(deviceId: string, query: Query): Promise<number>
 ```
 
-Obtains the number of results that match the specified device ID and **Query** object. This API uses a promise to return the result. > **NOTE** > > **deviceId** can be obtained by > [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1) > . > > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md#syncmode).
+Obtains the number of results that match the specified device ID and **Query** object. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> **deviceId** can be obtained by
+> [deviceManager.getAvailableDeviceListSync](../../apis-distributed-service-kit/arkts-apis/arkts-distributedservice-devicemanager-i.md#getavailabledevicelistsync-1)
+> .
+> > For details about how to obtain **deviceId**, see [sync()](arkts-arkdata-syncmode-e.md).
 
 **Since:** 9
 

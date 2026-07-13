@@ -1,6 +1,7 @@
 # RenderResourceFactory
 
-The render resource factory. RenderResourceFactory is used to create resources that can be shared across Scenes that share a RenderContext
+The render resource factory. RenderResourceFactory is used to create resources that can be shared
+across Scenes that share a RenderContext
 
 **Since:** 20
 
@@ -111,7 +112,8 @@ Create a Sampler.
 createScene(uri?: ResourceStr): Promise<Scene>
 ```
 
-Create a new scene from a Resource. If uri is not provided, will return an empty scene.
+Create a new scene from a Resource.
+If uri is not provided, will return an empty scene.
 
 **Since:** 20
 

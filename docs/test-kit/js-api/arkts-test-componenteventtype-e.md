@@ -12,7 +12,9 @@ Enumerates the component operation event types that can be listened for.
 COMPONENT_UNDEFINED = 0
 ```
 
-Non-component operation event. Note: This value can only be used as a return value. If it is passed in an API, an exception will be thrown.
+Non-component operation event.
+
+Note: This value can only be used as a return value. If it is passed in an API, an exception will be thrown.
 
 **Since:** 22
 

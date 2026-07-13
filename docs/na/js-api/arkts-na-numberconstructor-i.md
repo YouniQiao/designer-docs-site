@@ -62,7 +62,8 @@ The closest number to zero that can be represented in JavaScript. Equal to appro
 readonly NEGATIVE_INFINITY: number
 ```
 
-A value that is less than the largest negative number that can be represented in JavaScript. JavaScript displays NEGATIVE_INFINITY values as -infinity.
+A value that is less than the largest negative number that can be represented in JavaScript.
+JavaScript displays NEGATIVE_INFINITY values as -infinity.
 
 **Type:** number
 
@@ -72,7 +73,8 @@ A value that is less than the largest negative number that can be represented in
 readonly NaN: number
 ```
 
-A value that is not a number. In equality comparisons, NaN does not equal any value, including itself. To test whether a value is equivalent to NaN, use the isNaN function.
+A value that is not a number.
+In equality comparisons, NaN does not equal any value, including itself. To test whether a value is equivalent to NaN, use the isNaN function.
 
 **Type:** number
 
@@ -82,7 +84,8 @@ A value that is not a number. In equality comparisons, NaN does not equal any va
 readonly POSITIVE_INFINITY: number
 ```
 
-A value greater than the largest number that can be represented in JavaScript. JavaScript displays POSITIVE_INFINITY values as infinity.
+A value greater than the largest number that can be represented in JavaScript.
+JavaScript displays POSITIVE_INFINITY values as infinity.
 
 **Type:** number
 

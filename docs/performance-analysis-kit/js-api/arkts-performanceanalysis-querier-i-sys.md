@@ -11,7 +11,7 @@ Defines an event query instance.
 ## Modules to Import
 
 ```TypeScript
-import { hiSysEvent } from '@ohos.hiSysEvent';
+import { hiSysEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## onComplete
@@ -36,7 +36,8 @@ Callback used to return the query result statistics: (reason: int, total: int) =
 onQuery: (infos: SysEventInfo[]) => void
 ```
 
-Callback used to return the queried system events: (infos: [SysEventInfo](arkts-performanceanalysis-syseventinfo-i-sys.md#syseventinfo)[]) => void.
+Callback used to return the queried system events: (infos: [SysEventInfo](arkts-performanceanalysis-syseventinfo-i-sys.md)[]) =>
+void.
 
 **Type:** (infos: SysEventInfo[]) => void
 

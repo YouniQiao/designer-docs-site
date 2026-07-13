@@ -4,7 +4,8 @@
 export type AppProvisionInfo = _AppProvisionInfo.AppProvisionInfo
 ```
 
-Defines the information in the [HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md).
+Defines the information in the
+[HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md).
 
 **Since:** 10
 

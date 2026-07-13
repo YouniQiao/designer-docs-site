@@ -1,8 +1,9 @@
 # SystemDefinedAppItem
 
-Represents the data of the home screen icon defined by the system. It is a child class of [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md#systemdefinedrecord).
+Represents the data of the home screen icon defined by the system. It is a child class of
+[SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md).
 
-**Inheritance/Implementation:** SystemDefinedAppItem extends [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md#systemdefinedrecord)
+**Inheritance/Implementation:** SystemDefinedAppItem extends [SystemDefinedRecord](arkts-arkdata-systemdefinedrecord-c.md)
 
 **Since:** 10
 
@@ -11,7 +12,7 @@ Represents the data of the home screen icon defined by the system. It is a child
 ## Modules to Import
 
 ```TypeScript
-import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+import { unifiedDataChannel } from '@kit.ArkData';
 ```
 
 ## abilityName
@@ -38,7 +39,8 @@ Indicates the ability name of app
 set appIconId(value: string)
 ```
 
-Indicates the id of app icon. This field can be sourced from BMS or customized as needed.
+Indicates the id of app icon.
+This field can be sourced from BMS or customized as needed.
 
 **Type:** string
 
@@ -74,7 +76,8 @@ Indicates the app id
 set appLabelId(value: string)
 ```
 
-Indicates the id of app label. This field can be sourced from BMS or customized as needed.
+Indicates the id of app label.
+This field can be sourced from BMS or customized as needed.
 
 **Type:** string
 

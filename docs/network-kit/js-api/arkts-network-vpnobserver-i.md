@@ -9,7 +9,7 @@ Defines a VPN observer.
 ## Modules to Import
 
 ```TypeScript
-import { vpnExtension } from '@ohos.net.vpnExtension';
+import { vpnExtension } from '@kit.NetworkKit';
 ```
 
 ## offAuthorizationResult
@@ -59,7 +59,9 @@ vpnObserver.offAuthorizationResult();
 onAuthorizationResult(callback: Callback<boolean>): void
 ```
 
-Registers a listener for user authorization results. The authorization results are notified after startVpnExtensionAbility is invoked. Only the results of the current VPN are received.
+Registers a listener for user authorization results.
+The authorization results are notified after startVpnExtensionAbility is invoked.
+Only the results of the current VPN are received.
 
 **Since:** 26.0.0
 

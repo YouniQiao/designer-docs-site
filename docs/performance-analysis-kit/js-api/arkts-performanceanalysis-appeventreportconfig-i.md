@@ -9,7 +9,7 @@ Defines the event configuration for the data processor to report.
 ## Modules to Import
 
 ```TypeScript
-import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## domain
@@ -18,7 +18,9 @@ import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
 domain?: string
 ```
 
-Event domain. The value is a string that contains a maximum of 32 characters, including digits (0 to 9), letters (a to z)(A to Z), and underscore (_). It must start with a letter and cannot end with an underscore (_). The default value is an empty string.
+Event domain. The value is a string that contains a maximum of 32 characters, including digits (0 to 9), letters
+(a to z)(A to Z), and underscore (_). It must start with a letter and cannot end with an underscore (_). The default
+value is an empty string.
 
 **Type:** string
 
@@ -34,7 +36,8 @@ Event domain. The value is a string that contains a maximum of 32 characters, in
 isRealTime?: boolean
 ```
 
-Whether to report events in real time. The value **true** indicates that events are reported in real time, and the value **false** indicates the opposite. The default value is **false**.
+Whether to report events in real time. The value **true** indicates that events are reported in real time, and
+the value **false** indicates the opposite. The default value is **false**.
 
 **Type:** boolean
 
@@ -50,7 +53,9 @@ Whether to report events in real time. The value **true** indicates that events 
 name?: string
 ```
 
-Event name. The value is string that contains a maximum of 48 characters, including digits (0 to 9), letters (a to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a digit or letter. The default value is an empty string.
+Event name. The value is string that contains a maximum of 48 characters, including digits (0 to 9), letters (a
+to z)(A to Z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a
+digit or letter. The default value is an empty string.
 
 **Type:** string
 

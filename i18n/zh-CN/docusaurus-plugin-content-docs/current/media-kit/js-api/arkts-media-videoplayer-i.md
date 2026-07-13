@@ -1,20 +1,20 @@
 # VideoPlayer
 
-VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling any API in VideoPlayer, you must use [createVideoPlayer()](arkts-media-createvideoplayer-f.md#createVideoPlayer-1) to create a VideoPlayer instance.
+视频播放管理类，用于管理和播放视频媒体。在调用VideoPlayer的方法前，需要先通过
+[createVideoPlayer()](arkts-media-createvideoplayer-f.md#createvideoplayer-1)构建
+一个VideoPlayer实例。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer](arkts-media-media-n.md)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media
+**替代接口：** [media:media](arkts-media-media-n.md)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## 导入模块
-
-```TypeScript
-import { media } from '@kit.MediaKit';
-```
 
 ## getTrackDescription
 
@@ -22,13 +22,19 @@ import { media } from '@kit.MediaKit';
 getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void
 ```
 
-Obtains the video track information. This API uses an asynchronous callback to return the result.
+获取视频轨道信息。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.getTrackDescription](arkts-media-avplayer-i.md#gettrackdescription-1)
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.getTrackDescription(callback:
+**替代接口：** getTrackDescription(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -36,7 +42,7 @@ Obtains the video track information. This API uses an asynchronous callback to r
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;MediaDescription>> | 是 | Callback used to return the result. If the operation  is successful, err is undefined and data is the MediaDescription array obtained; otherwise,  err is an error object. |
+| callback | AsyncCallback&lt;Array&lt;MediaDescription&gt;&gt; | 是 | 回调函数。获取视频轨道信息成功时，err为undefined，data为获取到的视频轨道信息MediaDescription数组，否则为错误对象。 |
 
 ## getTrackDescription
 
@@ -44,13 +50,18 @@ Obtains the video track information. This API uses an asynchronous callback to r
 getTrackDescription(): Promise<Array<MediaDescription>>
 ```
 
-Obtains the video track information. This API uses a promise to return the result.
+获取视频轨道信息。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.getTrackDescription](arkts-media-avplayer-i.md#gettrackdescription-2)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.getTrackDescription()
+**替代接口：** [getTrackDescription()](arkts-media-avplayer-i.md#gettrackdescription-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -58,7 +69,7 @@ Obtains the video track information. This API uses a promise to return the resul
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;MediaDescription>> | Promise used to return the MediaDescription array that holds the  video track information. |
+| Promise&lt;Array&lt;MediaDescription&gt;&gt; | Promise对象，返回获取的视频轨道信息MediaDescription数组。 |
 
 ## on('playbackCompleted')
 
@@ -66,13 +77,19 @@ Obtains the video track information. This API uses a promise to return the resul
 on(type: 'playbackCompleted', callback: Callback<void>): void
 ```
 
-Subscribes to the video playback completion event.
+开始监听视频播放完成事件。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('stateChange')](@ohos.multimedia.media:media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle))
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -80,8 +97,8 @@ Subscribes to the video playback completion event.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'playbackCompleted' | 是 | Event type, which is 'playbackCompleted' in this case. |
-| callback | Callback&lt;void> | 是 | Callback invoked when the event is triggered. |
+| type | 'playbackCompleted' | 是 | 视频播放完成事件回调类型，支持的事件：'playbackCompleted'。 |
+| callback | Callback&lt;void&gt; | 是 | 视频播放完成事件回调方法。 |
 
 ## on('bufferingUpdate')
 
@@ -89,13 +106,19 @@ Subscribes to the video playback completion event.
 on(type: 'bufferingUpdate', callback: (infoType: BufferingInfoType, value: number) => void): void
 ```
 
-Subscribes to the video buffering update event. This API works only under online playback.
+开始监听视频缓存更新事件。仅网络播放支持该订阅事件。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('bufferingUpdate')](@ohos.multimedia.media:media.AVPlayer.on(type: 'bufferingUpdate', callback: OnBufferingUpdateHandler))
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -103,8 +126,8 @@ Subscribes to the video buffering update event. This API works only under online
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'bufferingUpdate' | 是 | Event type, which is 'bufferingUpdate' in this case. |
-| callback | (infoType: BufferingInfoType, value: number) => void | 是 | Callback invoked when the event is triggered. The value of  [BufferingInfoType](arkts-media-bufferinginfotype-e.md#BufferingInfoType) is fixed at 0. |
+| type | 'bufferingUpdate' | 是 | 视频缓存事件回调类型，支持的事件：'bufferingUpdate'。 |
+| callback | (infoType: BufferingInfoType, value: number) =&gt; void | 是 | 视频缓存事件回调方法。<br>[BufferingInfoType](@ohos.multimedia.media:media.BufferingInfoType)value值固定为0。 |
 
 ## on('startRenderFrame')
 
@@ -112,13 +135,19 @@ Subscribes to the video buffering update event. This API works only under online
 on(type: 'startRenderFrame', callback: Callback<void>): void
 ```
 
-Subscribes to the frame rendering start event.
+开始监听视频播放首帧送显上报事件。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('startRenderFrame')](@ohos.multimedia.media:media.AVPlayer.on(type: 'startRenderFrame', callback: Callback<void>))
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -126,8 +155,8 @@ Subscribes to the frame rendering start event.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'startRenderFrame' | 是 | Event type, which is 'startRenderFrame' in this case. |
-| callback | Callback&lt;void> | 是 | Callback invoked when the event is triggered. |
+| type | 'startRenderFrame' | 是 | 视频播放首帧送显上报事件回调类型，支持的事件：'startRenderFrame'。 |
+| callback | Callback&lt;void&gt; | 是 | 视频播放首帧送显上报事件回调方法。 |
 
 ## on('videoSizeChanged')
 
@@ -135,13 +164,19 @@ Subscribes to the frame rendering start event.
 on(type: 'videoSizeChanged', callback: (width: number, height: number) => void): void
 ```
 
-Subscribes to the video width and height change event.
+开始监听视频播放宽高变化事件。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('videoSizeChange')](@ohos.multimedia.media:media.AVPlayer.on(type: 'videoSizeChange', callback: OnVideoSizeChangeHandler))
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -149,8 +184,8 @@ Subscribes to the video width and height change event.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'videoSizeChanged' | 是 | Event type, which is 'videoSizeChanged' in this case. |
-| callback | (width: number, height: number) => void | 是 | Callback invoked when the event is triggered. width indicates the video width,  and height indicates the video height, in px. |
+| type | 'videoSizeChanged' | 是 | 视频播放宽高变化事件回调类型，支持的事件：'videoSizeChanged'。 |
+| callback | (width: number, height: number) =&gt; void | 是 | 视频播放宽高变化事件回调方法，width表示宽，height表示高。 |
 
 ## on('audioInterrupt')
 
@@ -158,13 +193,19 @@ Subscribes to the video width and height change event.
 on(type: 'audioInterrupt', callback: (info: audio.InterruptEvent) => void): void
 ```
 
-Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md#InterruptEvent).
+监听音频焦点变化事件，参考[audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md)。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('audioInterrupt')](@ohos.multimedia.media:media.AVPlayer.on(type: 'audioInterrupt', callback: Callback<audio.InterruptEvent>))
+> 替代。
 
 **起始版本：** 9
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -172,8 +213,8 @@ Subscribes to the audio interruption event. For details, see [audio.InterruptEve
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | 是 | Event type, which is 'audioInterrupt' in this case. |
-| callback | (info: audio.InterruptEvent) => void | 是 | Callback invoked when the event is triggered. |
+| type | 'audioInterrupt' | 是 | 音频焦点变化事件回调类型，支持的事件：'audioInterrupt'。 |
+| callback | (info: audio.InterruptEvent) =&gt; void | 是 | 音频焦点变化事件回调方法。 |
 
 ## on('error')
 
@@ -181,13 +222,19 @@ Subscribes to the audio interruption event. For details, see [audio.InterruptEve
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to video playback error events. After an error event is reported, you must handle the event and exit the playback.
+开始监听视频播放错误事件，当上报error错误事件后，用户需处理error事件，退出播放操作。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.on('error')](@ohos.multimedia.media:media.AVPlayer.on(type: 'error', callback: ErrorCallback))替
+> 代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.on(type:
+**替代接口：** on(type:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -195,8 +242,8 @@ Subscribes to video playback error events. After an error event is reported, you
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'error' | 是 | Event type, which is 'error' in this case. This event is triggered when an error  occurs during video playback. |
-| callback | ErrorCallback | 是 | Callback invoked when the event is triggered. |
+| type | 'error' | 是 | 播放错误事件回调类型，支持的事件包括：'error'。<br>- 'error'：视频播放中发生错误，触发该事件。 |
+| callback | ErrorCallback | 是 | 播放错误事件回调方法。 |
 
 ## pause
 
@@ -204,13 +251,18 @@ Subscribes to video playback error events. After an error event is reported, you
 pause(callback: AsyncCallback<void>): void
 ```
 
-Pauses video playback. This API uses an asynchronous callback to return the result.
+通过回调方式暂停播放视频。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.pause](arkts-media-avplayer-i.md#pause-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.pause(callback:
+**替代接口：** pause(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -218,7 +270,7 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当暂停播放视频成功，err为undefined，否则为错误对象。 |
 
 ## pause
 
@@ -226,13 +278,18 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 pause(): Promise<void>
 ```
 
-Pauses video playback. This API uses a promise to return the result.
+暂停播放视频。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.pause](arkts-media-avplayer-i.md#pause-2)
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.pause()
+**替代接口：** [pause()](arkts-media-avplayer-i.md#pause-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -240,7 +297,7 @@ Pauses video playback. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 暂停播放视频的Promise返回值。 |
 
 ## play
 
@@ -248,13 +305,18 @@ Pauses video playback. This API uses a promise to return the result.
 play(callback: AsyncCallback<void>): void
 ```
 
-Starts video playback. This API uses an asynchronous callback to return the result.
+开始播放视频。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.play](arkts-media-avplayer-i.md#play-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.play(callback:
+**替代接口：** play(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -262,7 +324,7 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当开始播放视频成功，err为undefined，否则为错误对象。 |
 
 ## play
 
@@ -270,13 +332,18 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 play(): Promise<void>
 ```
 
-Starts video playback. This API uses a promise to return the result.
+开始播放视频。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.play](arkts-media-avplayer-i.md#play-2)替代
+> 。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.play()
+**替代接口：** [play()](arkts-media-avplayer-i.md#play-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -284,7 +351,7 @@ Starts video playback. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 开始播放视频的Promise返回值。 |
 
 ## prepare
 
@@ -292,13 +359,18 @@ Starts video playback. This API uses a promise to return the result.
 prepare(callback: AsyncCallback<void>): void
 ```
 
-Prepares for video playback. This API uses an asynchronous callback to return the result.
+准备播放视频。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.prepare](arkts-media-avplayer-i.md#prepare-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.prepare(callback:
+**替代接口：** prepare(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -306,7 +378,7 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当准备播放视频成功，err为undefined，否则为错误对象。 |
 
 ## prepare
 
@@ -314,13 +386,18 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 prepare(): Promise<void>
 ```
 
-Prepares for video playback. This API uses a promise to return the result.
+准备播放视频。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.prepare](arkts-media-avplayer-i.md#prepare-2)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.prepare()
+**替代接口：** [prepare()](arkts-media-avplayer-i.md#prepare-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -328,7 +405,7 @@ Prepares for video playback. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 准备播放视频的Promise返回值。 |
 
 ## release
 
@@ -336,13 +413,18 @@ Prepares for video playback. This API uses a promise to return the result.
 release(callback: AsyncCallback<void>): void
 ```
 
-Releases the video playback resources. This API uses an asynchronous callback to return the result.
+释放视频资源。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.release](arkts-media-avplayer-i.md#release-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.release(callback:
+**替代接口：** release(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -350,7 +432,7 @@ Releases the video playback resources. This API uses an asynchronous callback to
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当释放视频资源成功，err为undefined，否则为错误对象。 |
 
 ## release
 
@@ -358,13 +440,18 @@ Releases the video playback resources. This API uses an asynchronous callback to
 release(): Promise<void>
 ```
 
-Releases the video playback resources. This API uses a promise to return the result.
+释放视频资源。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.release](arkts-media-avplayer-i.md#release-2)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.release()
+**替代接口：** [release()](arkts-media-avplayer-i.md#release-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -372,7 +459,7 @@ Releases the video playback resources. This API uses a promise to return the res
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 释放视频资源的Promise返回值。 |
 
 ## reset
 
@@ -380,13 +467,18 @@ Releases the video playback resources. This API uses a promise to return the res
 reset(callback: AsyncCallback<void>): void
 ```
 
-Resets video playback. This API uses an asynchronous callback to return the result.
+重置播放视频。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.reset](arkts-media-avplayer-i.md#reset-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.reset(callback:
+**替代接口：** reset(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -394,7 +486,7 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当重置播放视频成功，err为undefined，否则为错误对象。 |
 
 ## reset
 
@@ -402,13 +494,18 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 reset(): Promise<void>
 ```
 
-Resets video playback. This API uses a promise to return the result.
+重置播放视频。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.reset](arkts-media-avplayer-i.md#reset-2)
+> 替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.reset()
+**替代接口：** [reset()](arkts-media-avplayer-i.md#reset-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -416,7 +513,7 @@ Resets video playback. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 
 ## seek
 
@@ -424,13 +521,17 @@ Resets video playback. This API uses a promise to return the result.
 seek(timeMs: number, callback: AsyncCallback<number>): void
 ```
 
-Seeks to the specified playback position. The previous key frame at the specified position is played. This API uses an asynchronous callback to return the result.
+跳转到指定播放位置，默认跳转到指定时间点的上一个关键帧。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.seek](arkts-media-avplayer-i.md#seek-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.seek
+**替代接口：** [seek](arkts-media-avplayer-i.md#seek-1)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -438,8 +539,8 @@ Seeks to the specified playback position. The previous key frame at the specifie
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeMs | number | 是 | Position to seek to, in ms. The value range is [0, duration]. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the new playback position; otherwise, err is an error object. |
+| timeMs | number | 是 | 指定的跳转时间节点，单位毫秒（ms），取值范围为[0, duration]。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。跳转到指定播放位置成功时，err为undefined，data为获取到的跳转到的播放位置，否则为错误对象。 |
 
 ## seek
 
@@ -447,13 +548,17 @@ Seeks to the specified playback position. The previous key frame at the specifie
 seek(timeMs: number, mode: SeekMode, callback: AsyncCallback<number>): void
 ```
 
-Seeks to the specified playback position. This API uses an asynchronous callback to return the result.
+跳转到指定播放位置。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.seek](arkts-media-avplayer-i.md#seek-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.seek
+**替代接口：** [seek](arkts-media-avplayer-i.md#seek-1)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -461,9 +566,9 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeMs | number | 是 | Position to seek to, in ms. The value range is [0, duration]. |
-| mode | SeekMode | 是 | Seek mode. |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the new playback position; otherwise, err is an error object. |
+| timeMs | number | 是 | 指定的跳转时间节点，单位毫秒（ms），取值范围为[0, duration]。 |
+| mode | SeekMode | 是 | 跳转模式。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。跳转到指定播放位置成功时，err为undefined，data为获取到的跳转到的播放位置，否则为错误对象。 |
 
 ## seek
 
@@ -471,13 +576,17 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 seek(timeMs: number, mode?: SeekMode): Promise<number>
 ```
 
-Seeks to the specified playback position. If **mode** is not specified, the previous key frame at the specified position is played. This API uses a promise to return the result.
+跳转到指定播放位置，如果没有设置mode则跳转到指定时间点的上一个关键帧。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.seek](arkts-media-avplayer-i.md#seek-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.seek
+**替代接口：** [seek](arkts-media-avplayer-i.md#seek-1)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -485,14 +594,14 @@ Seeks to the specified playback position. If **mode** is not specified, the prev
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeMs | number | 是 | Position to seek to, in ms. The value range is [0, duration]. |
-| mode | SeekMode | 否 | Seek mode based on the video I frame. The default value is SEEK_PREV_SYNC. |
+| timeMs | number | 是 | 指定的跳转时间节点，单位毫秒（ms），取值范围为[0, duration]。 |
+| mode | SeekMode | 否 | 基于视频I帧的跳转模式，默认为SEEK_PREV_SYNC模式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the playback position, in ms. |
+| Promise&lt;number&gt; | 跳转到指定播放位置的Promise返回值，单位ms。 |
 
 ## setDisplaySurface
 
@@ -500,13 +609,20 @@ Seeks to the specified playback position. If **mode** is not specified, the prev
 setDisplaySurface(surfaceId: string, callback: AsyncCallback<void>): void
 ```
 
-Sets a surface ID. This API uses an asynchronous callback to return the result. > **NOTE** > > - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must > be set for video streams without audio. Otherwise, the calling of **prepare** fails.
+设置SurfaceId。通过回调函数获取返回值。
+
+> **说明：**
+>
+> - SetDisplaySurface需要在设置url和Prepare之间，无音频的视频流必须设置Surface否则Prepare失败。
+>
+> - 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.surfaceId](../../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#属性)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** null
+**替代接口：** [null]
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -514,8 +630,8 @@ Sets a surface ID. This API uses an asynchronous callback to return the result. 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| surfaceId | string | 是 | Surface ID, which is obtained from the XComponent. For details about how to  obtain it, see [XComponent]./@internal/component/ets/xcomponent. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the setting is successful,  err is undefined. Otherwise, err is an error object. |
+| surfaceId | string | 是 | 指定SurfaceId，应从XComponent组件获取，获取方式请参考[XComponent](./@internal/component/ets/xcomponent)。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置SurfaceId成功，err为undefined，否则为错误对象。 |
 
 ## setDisplaySurface
 
@@ -523,13 +639,20 @@ Sets a surface ID. This API uses an asynchronous callback to return the result. 
 setDisplaySurface(surfaceId: string): Promise<void>
 ```
 
-Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > - **SetDisplaySurface** must be called between the URL setting and the calling of **prepare**. A surface must > be set for video streams without audio. Otherwise, the calling of **prepare** fails.
+设置SurfaceId。通过Promise获取返回值。
+
+> **说明：**
+>
+> - SetDisplaySurface需要在设置url和Prepare之间，无音频的视频流必须设置Surface否则Prepare失败。
+>
+> - 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.surfaceId](../../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#属性)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** null
+**替代接口：** [null]
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -537,13 +660,13 @@ Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| surfaceId | string | 是 | Surface ID, which is obtained from the XComponent. For details about how to  obtain it, see [XComponent]./@internal/component/ets/xcomponent. |
+| surfaceId | string | 是 | 指定SurfaceId，应从XComponent组件获取，获取方式请参考[XComponent](./@internal/component/ets/xcomponent)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 设置SurfaceId的Promise返回值。 |
 
 ## setSpeed
 
@@ -551,13 +674,18 @@ Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > 
 setSpeed(speed: number, callback: AsyncCallback<number>): void
 ```
 
-Sets the playback speed. This API uses an asynchronous callback to return the result.
+设置播放速度。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.setSpeed](@ohos.multimedia.media:media.AVPlayer.setSpeed)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.setSpeed
+**替代接口：** setSpeed
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -565,8 +693,8 @@ Sets the playback speed. This API uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | number | 是 | Video playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
-| callback | AsyncCallback&lt;number> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the playback speed; otherwise, err is an error object. |
+| speed | number | 是 | 指定播放视频速度，具体见[PlaybackSpeed](@ohos.multimedia.media:media.PlaybackSpeed)。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。设置播放速度成功时，err为undefined，data为设置的播放速度，否则为错误对象。 |
 
 ## setSpeed
 
@@ -574,13 +702,18 @@ Sets the playback speed. This API uses an asynchronous callback to return the re
 setSpeed(speed: number): Promise<number>
 ```
 
-Sets the playback speed. This API uses a promise to return the result.
+设置播放速度。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.setSpeed](@ohos.multimedia.media:media.AVPlayer.setSpeed)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.setSpeed
+**替代接口：** setSpeed
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -588,13 +721,13 @@ Sets the playback speed. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| speed | number | 是 | Video playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
+| speed | number | 是 | 指定播放视频速度，具体见[PlaybackSpeed](@ohos.multimedia.media:media.PlaybackSpeed)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number> | Promise used to return the playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
+| Promise&lt;number&gt; | Promise对象，返回设置的播放速度，具体见[PlaybackSpeed](@ohos.multimedia.media:media.PlaybackSpeed)。 |
 
 ## setVolume
 
@@ -602,13 +735,18 @@ Sets the playback speed. This API uses a promise to return the result.
 setVolume(vol: number, callback: AsyncCallback<void>): void
 ```
 
-Sets the volume. This API uses an asynchronous callback to return the result.
+设置音量。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.setVolume](arkts-media-avplayer-i.md#setvolume-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.setVolume
+**替代接口：** [setVolume](arkts-media-avplayer-i.md#setvolume-1)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -616,8 +754,8 @@ Sets the volume. This API uses an asynchronous callback to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| vol | number | 是 | Relative volume. The value ranges from 0.00 to 1.00. The value 1.00 indicates the  maximum volume (100%). |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the setting is successful,  err is undefined. Otherwise, err is an error object. |
+| vol | number | 是 | 指定的相对音量大小，取值范围为[0.00-1.00]，1表示最大音量，即100%。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置音量成功，err为undefined，否则为错误对象。 |
 
 ## setVolume
 
@@ -625,13 +763,18 @@ Sets the volume. This API uses an asynchronous callback to return the result.
 setVolume(vol: number): Promise<void>
 ```
 
-Sets the volume. This API uses a promise to return the result.
+设置音量。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.setVolume](arkts-media-avplayer-i.md#setvolume-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.setVolume
+**替代接口：** [setVolume](arkts-media-avplayer-i.md#setvolume-1)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -639,13 +782,13 @@ Sets the volume. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| vol | number | 是 | Relative volume. The value ranges from 0.00 to 1.00. The value 1.00 indicates the  maximum volume (100%). |
+| vol | number | 是 | 指定的相对音量大小，取值范围为[0.00-1.00]，1表示最大音量，即100%。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 设置音量的Promise返回值。 |
 
 ## stop
 
@@ -653,13 +796,18 @@ Sets the volume. This API uses a promise to return the result.
 stop(callback: AsyncCallback<void>): void
 ```
 
-Stops video playback. This API uses an asynchronous callback to return the result.
+通过回调方式停止播放视频。通过回调函数获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用
+> [AVPlayer.stop](arkts-media-avplayer-i.md#stop-1)替代。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.stop(callback:
+**替代接口：** stop(callback:
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -667,7 +815,7 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当停止播放视频成功，err为undefined，否则为错误对象。 |
 
 ## stop
 
@@ -675,13 +823,18 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 stop(): Promise<void>
 ```
 
-Stops video playback. This API uses a promise to return the result.
+停止播放视频。通过Promise获取返回值。
+
+> **说明：**
+>
+> 从API version 8开始支持，从API version 9开始废弃，建议使用[AVPlayer.stop](arkts-media-avplayer-i.md#stop-2)替代
+> 。
 
 **起始版本：** 8
 
 **废弃版本：** 9
 
-**替代接口：** @ohos.multimedia.media:media.AVPlayer.stop()
+**替代接口：** [stop()](arkts-media-avplayer-i.md#stop-2)
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -689,23 +842,23 @@ Stops video playback. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise that returns no value. |
+| Promise&lt;void&gt; | 停止播放视频的Promise返回值。 |
 
-## duration
+## audioInterruptMode
 
 ```TypeScript
-readonly duration: number
+audioInterruptMode?: audio.InterruptMode
 ```
 
-Video duration, in ms. The value **-1** indicates the live mode.
+音频焦点模式。
 
-**类型：** number
+**类型：** audio.InterruptMode
 
-**起始版本：** 8
+**起始版本：** 9
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.media/media.AVPlayer#duration
+**替代接口：** audioInterruptMode
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -715,7 +868,7 @@ Video duration, in ms. The value **-1** indicates the live mode.
 readonly currentTime: number
 ```
 
-Current video playback position, in ms.
+视频的当前播放位置，单位为毫秒（ms）。
 
 **类型：** number
 
@@ -723,53 +876,17 @@ Current video playback position, in ms.
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.media/media.AVPlayer#currentTime
+**替代接口：** currentTime
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
-## loop
+## duration
 
 ```TypeScript
-loop: boolean
+readonly duration: number
 ```
 
-Whether to loop video playback. **true** to loop, **false** otherwise.
-
-**类型：** boolean
-
-**起始版本：** 8
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.media/media.AVPlayer#loop
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## audioInterruptMode
-
-```TypeScript
-audioInterruptMode?: audio.InterruptMode
-```
-
-Audio interruption mode.
-
-**类型：** audio.InterruptMode
-
-**起始版本：** 9
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.media/media.AVPlayer#audioInterruptMode
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## width
-
-```TypeScript
-readonly width: number
-```
-
-Video width, in px.
+视频时长，单位为毫秒（ms），返回-1表示直播模式。
 
 **类型：** number
 
@@ -777,25 +894,7 @@ Video width, in px.
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.media/media.AVPlayer#width
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## videoScaleType
-
-```TypeScript
-videoScaleType?: VideoScaleType
-```
-
-Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**.
-
-**类型：** VideoScaleType
-
-**起始版本：** 9
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.media/media.AVPlayer#videoScaleType
+**替代接口：** duration
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -805,7 +904,23 @@ Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**.
 fdSrc: AVFileDescriptor
 ```
 
-Description of a video file. This property is required when video assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Video 1 (address offset: 0, byte length: 100) Video 2 (address offset: 101; byte length: 50) Video 3 (address offset: 151, byte length: 150) 1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent video file, use **src=fd://xx**.
+视频媒体文件描述，使用场景：应用中的视频资源被连续存储在同一个文件中。
+
+**使用示例**：
+
+假设一个连续存储的音乐文件:
+
+视频1(地址偏移:0，字节长度:100)
+
+视频2(地址偏移:101，字节长度:50)
+
+视频3(地址偏移:151，字节长度:150)
+
+1. 播放视频1：AVFileDescriptor { fd = 资源句柄; offset = 0; length = 100; }
+2. 播放视频2：AVFileDescriptor { fd = 资源句柄; offset = 101; length = 50; }
+3. 播放视频3：AVFileDescriptor { fd = 资源句柄; offset = 151; length = 150; }
+
+假设是一个独立的视频文件: 请使用src=fd://xx
 
 **类型：** AVFileDescriptor
 
@@ -813,43 +928,7 @@ Description of a video file. This property is required when video assets of an a
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.media/media.AVPlayer#fdSrc
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## state
-
-```TypeScript
-readonly state: VideoPlayState
-```
-
-Video playback state.
-
-**类型：** VideoPlayState
-
-**起始版本：** 8
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.media/media.AVPlayer#state
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
-
-## url
-
-```TypeScript
-url: string
-```
-
-Video URL. The video formats MP4, MPEG-TS, and MKV are supported. **Example of supported URLs**: 1. FD: fd://xx ![](docroot://reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx 5. File type: file://xx **NOTE** WebM is no longer supported since API version 11.
-
-**类型：** string
-
-**起始版本：** 8
-
-**废弃版本：** 9
-
-**替代接口：** ohos.multimedia.media/media.AVPlayer#url
+**替代接口：** fdSrc
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -859,7 +938,7 @@ Video URL. The video formats MP4, MPEG-TS, and MKV are supported. **Example of s
 readonly height: number
 ```
 
-Video height, in px.
+视频高，单位为像素（px）。
 
 **类型：** number
 
@@ -867,7 +946,112 @@ Video height, in px.
 
 **废弃版本：** 9
 
-**替代接口：** ohos.multimedia.media/media.AVPlayer#height
+**替代接口：** height
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
+
+## loop
+
+```TypeScript
+loop: boolean
+```
+
+视频循环播放属性，设置为'true'表示循环播放。
+
+**类型：** boolean
+
+**起始版本：** 8
+
+**废弃版本：** 9
+
+**替代接口：** loop
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
+
+## state
+
+```TypeScript
+readonly state: VideoPlayState
+```
+
+视频播放的状态。
+
+**类型：** VideoPlayState
+
+**起始版本：** 8
+
+**废弃版本：** 9
+
+**替代接口：** state
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
+
+## url
+
+```TypeScript
+url: string
+```
+
+视频媒体URL，支持当前主流的视频格式(mp4、mpeg-ts、mkv)。
+
+**支持路径示例**：
+
+1. fd类型播放：fd://xx
+
+![](../../../../reference/apis-media-kit/figures/zh-cn_image_url.png)
+
+2. http网络播放: http://xx
+3. https网络播放: https://xx
+4. hls网络播放路径：http://xx或者https://xx
+5. file类型: file://xx
+
+**说明：**
+
+从API version 11开始不支持webm。
+
+**类型：** string
+
+**起始版本：** 8
+
+**废弃版本：** 9
+
+**替代接口：** url
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
+
+## videoScaleType
+
+```TypeScript
+videoScaleType?: VideoScaleType
+```
+
+视频缩放模式。默认值为VIDEO_SCALE_TYPE_FIT。
+
+**类型：** VideoScaleType
+
+**起始版本：** 9
+
+**废弃版本：** 9
+
+**替代接口：** videoScaleType
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
+
+## width
+
+```TypeScript
+readonly width: number
+```
+
+视频宽，单位为像素（px）。
+
+**类型：** number
+
+**起始版本：** 8
+
+**废弃版本：** 9
+
+**替代接口：** width
 
 **系统能力：** SystemCapability.Multimedia.Media.VideoPlayer
 

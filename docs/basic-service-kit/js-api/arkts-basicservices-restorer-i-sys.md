@@ -11,7 +11,7 @@ Defines a tool class for restoring factory settings.
 ## Modules to Import
 
 ```TypeScript
-import { update } from '@ohos.update';
+import { update } from '@kit.BasicServicesKit';
 ```
 
 ## deepFactoryReset
@@ -20,7 +20,8 @@ import { update } from '@ohos.update';
 deepFactoryReset(factoryResetStrategy: FactoryResetStrategy): Promise<void>
 ```
 
-Clears the user data partition and OS partition by means of overwriting. This API uses a promise to return the result.
+Clears the user data partition and OS partition by means of overwriting. This API uses a promise to return the
+result.
 
 **Since:** 26.0.0
 
@@ -50,6 +51,7 @@ Clears the user data partition and OS partition by means of overwriting. This AP
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [203](../../errorcode-universal.md#203-system-function-prohibited-by-enterprise-management-policies) | This function is prohibited by enterprise management policies. |
 | [11500104](../../apis-basic-services-kit/errorcode-update.md#11500104-ipc-error) | IPC error. |
 
 **Example**
@@ -101,6 +103,7 @@ Clears the user data partition. This API uses an asynchronous callback to return
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [203](../../errorcode-universal.md#203-system-function-prohibited-by-enterprise-management-policies) | This function is prohibited by enterprise management policies. |
 | [11500104](../../apis-basic-services-kit/errorcode-update.md#11500104-ipc-error) | IPC error. |
 
 **Example**
@@ -145,6 +148,7 @@ Clears the user data partition. This API uses a promise to return the result.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [203](../../errorcode-universal.md#203-system-function-prohibited-by-enterprise-management-policies) | This function is prohibited by enterprise management policies. |
 | [11500104](../../apis-basic-services-kit/errorcode-update.md#11500104-ipc-error) | IPC error. |
 
 **Example**
@@ -192,6 +196,7 @@ Clears the user data partition and the file key. This API uses a promise to retu
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [203](../../errorcode-universal.md#203-system-function-prohibited-by-enterprise-management-policies) | This function is prohibited by enterprise management policies. |
 | [11500104](../../apis-basic-services-kit/errorcode-update.md#11500104-ipc-error) | IPC error. |
 
 **Example**

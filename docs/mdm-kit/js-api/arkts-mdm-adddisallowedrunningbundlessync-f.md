@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { applicationManager } from '@ohos.enterprise.applicationManager';
+import { applicationManager } from '@kit.MDMKit';
 ```
 
 ## addDisallowedRunningBundlesSync
@@ -16,7 +16,9 @@ function addDisallowedRunningBundlesSync(
   ): void
 ```
 
-Adds the applications that are not allowed to run by the current or specified user. From API version 21, if the allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty , the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
+Adds the applications that are not allowed to run by the current or specified user. From API version 21, if the
+allowed application list [addallowedRunningBundles](arkts-mdm-addallowedrunningbundles-f.md#addallowedrunningbundles-1) is not empty
+, the prohibited application list cannot be added using this API. Otherwise, the error code 9200010 is reported.
 
 **Since:** 12
 
@@ -42,7 +44,7 @@ Adds the applications that are not allowed to run by the current or specified us
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
-| [9200010](../errorcode-enterpriseDeviceManager.md#9200010-policy-conflict) | A conflict policy has been configured.<br>**Applicable version:** 21 |
+| [9200010](../errorcode-enterpriseDeviceManager.md#9200010-policy-conflict) | A conflict policy has been configured.<br>**Applicable version:** 21 and later |
 
 **Example**
 

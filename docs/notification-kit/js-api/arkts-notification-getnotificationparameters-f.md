@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## getNotificationParameters
@@ -12,7 +12,9 @@ import { notificationManager } from '@ohos.notificationManager';
 function getNotificationParameters(id: number, label?: string): Promise<NotificationParameters>
 ```
 
-Obtains some information about the **wantAgent** field in [NotificationRequest](arkts-notification-notificationrequest-i.md#notificationrequest). This API uses a promise to return the result.
+Obtains some information about the **wantAgent** field in
+[NotificationRequest](arkts-notification-notificationrequest-i.md). This API uses a promise to
+return the result.
 
 **Since:** 24
 

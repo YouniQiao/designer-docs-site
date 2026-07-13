@@ -6,7 +6,10 @@
 function requestSuspendDelay(reason: string, callback: Callback<void>): DelaySuspendInfo
 ```
 
-Requests delayed suspension after the application switches to the background. The default duration of delayed suspension is 3 minutes when the battery level is higher than or equal to the broadcast low battery level and 1 minute when the battery level is lower than the broadcast low battery level.
+Requests delayed suspension after the application switches to the background.
+
+The default duration of delayed suspension is 3 minutes when the battery level is higher than or equal to the
+broadcast low battery level and 1 minute when the battery level is lower than the broadcast low battery level.
 
 **Since:** 7
 

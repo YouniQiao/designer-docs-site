@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## init
@@ -12,7 +12,9 @@ import { certificateManager } from '@ohos.security.certManager';
 function init(authUri: string, spec: CMSignatureSpec, callback: AsyncCallback<CMHandle>): void
 ```
 
-Indicates the initialization of signature and signature verification using credentials. This is the first step in the signature verification process. Later, the update and finish interfaces need to be invoked in sequence to complete the operations. Use Callback to return the result asynchronously.
+Indicates the initialization of signature and signature verification using credentials. This is the first step in
+the signature verification process. Later, the update and finish interfaces need to be invoked in sequence to
+complete the operations. Use Callback to return the result asynchronously.
 
 **Since:** 11
 
@@ -36,7 +38,7 @@ Indicates the initialization of signature and signature verification using crede
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | [17500001](../errorcode-certManager.md#17500001-internal-error) | Internal error. Possible causes: 1. IPC communication failed;<br>2. Memory operation error; 3. File operation error. Please try again. |
 | [17500002](../errorcode-certManager.md#17500002-certificate-not-exist) | The certificate does not exist. |
-| [17500005](../errorcode-certManager.md#17500005-application-not-authorized) | The application is not authorized by the user.Please call [openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-1)method to request user authorization for the certificate or credential.<br>**Applicable version:** 12 |
+| [17500005](../errorcode-certManager.md#17500005-application-not-authorized) | The application is not authorized by the user.Please call [openAuthorizeDialog](arkts-devicecertificate-openauthorizedialog-f.md#openauthorizedialog-1)method to request user authorization for the certificate or credential.<br>**Applicable version:** 12 and later |
 
 **Example**
 
@@ -70,7 +72,8 @@ try {
 function init(authUri: string, spec: CMSignatureSpec): Promise<CMHandle>
 ```
 
-Initializes the signing or signature verification operation using the specified credential. This API uses a promise to return the result.
+Initializes the signing or signature verification operation using the specified credential. This API uses a promise
+to return the result.
 
 **Since:** 11
 
@@ -99,7 +102,7 @@ Initializes the signing or signature verification operation using the specified 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
 | [17500001](../errorcode-certManager.md#17500001-internal-error) | Internal error. Possible causes: 1. IPC communication failed;<br>2. Memory operation error; 3. File operation error. Please try again. |
 | [17500002](../errorcode-certManager.md#17500002-certificate-not-exist) | The certificate does not exist. |
-| [17500005](../errorcode-certManager.md#17500005-application-not-authorized) | The application is not authorized by the user.<br>**Applicable version:** 12 |
+| [17500005](../errorcode-certManager.md#17500005-application-not-authorized) | The application is not authorized by the user.<br>**Applicable version:** 12 and later |
 
 **Example**
 

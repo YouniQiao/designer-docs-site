@@ -2,7 +2,7 @@
 
 Gesture recognizer object.
 
-**Inheritance/Implementation:** PanRecognizer extends [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md#gesturerecognizer)
+**Inheritance/Implementation:** PanRecognizer extends [GestureRecognizer](arkts-arkui-gesturerecognizer-c.md)
 
 **Since:** 12
 
@@ -58,7 +58,13 @@ Obtains the minimum pan distance required to trigger this pan gesture recognizer
 getDistanceMap(): Map<SourceTool, number>
 ```
 
-Obtains the minimum pan distances required for different input sources to trigger this pan gesture recognizer. > **NOTE** > > This API only returns thresholds for input sources that have been explicitly configured during pan gesture > initialization. The default threshold can be queried using the [SourceTool](arkts-arkui-sourcetool-e.md#sourcetool).Unknown type. > Thresholds for unconfigured device types are not available.
+Obtains the minimum pan distances required for different input sources to trigger this pan gesture recognizer.
+
+> **NOTE**
+>
+> This API only returns thresholds for input sources that have been explicitly configured during pan gesture
+> initialization. The default threshold can be queried using the [SourceTool](arkts-arkui-sourcetool-e.md).Unknown type.
+> Thresholds for unconfigured device types are not available.
 
 **Since:** 19
 

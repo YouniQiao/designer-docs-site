@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiTraceChain } from '@ohos.hiTraceChain';
+import { hiTraceChain } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## getId
@@ -12,7 +12,9 @@ import { hiTraceChain } from '@ohos.hiTraceChain';
 function getId(): HiTraceId
 ```
 
-Obtains the trace ID. This API returns the result synchronously. Obtains the HiTrace ID in the TLS of the current thread.
+Obtains the trace ID. This API returns the result synchronously.
+
+Obtains the HiTrace ID in the TLS of the current thread.
 
 **Since:** 8
 

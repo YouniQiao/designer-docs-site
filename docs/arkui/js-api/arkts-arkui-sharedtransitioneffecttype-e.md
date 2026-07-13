@@ -12,7 +12,9 @@ SharedTransitionEffectType enumeration description
 Static
 ```
 
-The target page element remains in a fixed position, with configurable opacity animation. Currently, this effect only takes effect when configured for redirection to the target page.
+The target page element remains in a fixed position, with configurable opacity animation.
+
+Currently, this effect only takes effect when configured for redirection to the target page.
 
 **Since:** 7
 

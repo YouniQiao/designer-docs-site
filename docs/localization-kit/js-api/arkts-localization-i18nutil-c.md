@@ -1,6 +1,7 @@
 # I18NUtil
 
-Internationalization utility class, which provides the capabilities of unit conversion, date sequence retrieval, time segment name retrieval, region matching, and path localization.
+Internationalization utility class, which provides the capabilities of unit conversion, date sequence retrieval,
+time segment name retrieval, region matching, and path localization.
 
 **Since:** 9
 
@@ -9,7 +10,7 @@ Internationalization utility class, which provides the capabilities of unit conv
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## convertCanonicalLocaleIdentifier
@@ -18,7 +19,7 @@ import { i18n } from '@ohos.i18n';
 static convertCanonicalLocaleIdentifier(locale: string): string
 ```
 
-Converts a locale string into canonical locale identifier with BCP47 standard. [BCP47](https://www.rfc-editor.org/info/bcp47).
+Adjusts a locale ID to a format that complies with the [BCP47](https://www.rfc-editor.org/info/bcp47) standard.
 
 **Since:** 26.0.0
 
@@ -38,7 +39,7 @@ Converts a locale string into canonical locale identifier with BCP47 standard. [
 
 | Type | Description |
 | --- | --- |
-| string | BCP47 standard locale identifier. |
+| string | If the input locale ID is valid, a locale ID that complies with the [BCP47](https://www.rfc-editor.org/info/bcp47) standard will be returned.If the input locale ID is invalid, an empty string is returned. |
 
 ## getBestMatchLocale
 
@@ -106,7 +107,10 @@ Obtains the sequence of the year, month, and day in the specified locale.
 static getThreeLetterLanguage(locale: string): string
 ```
 
-Converts a language code from two letters to three letters. For example, the two-letter language code of Chinese is **zh**, and the corresponding three-letter language code is **zho**. For details, see [ISO 639](https://www.iso.org/iso-639-language-code).
+Converts a language code from two letters to three letters.
+
+For example, the two-letter language code of Chinese is **zh**, and the corresponding three-letter language code
+is **zho**. For details, see [ISO 639](https://www.iso.org/iso-639-language-code).
 
 **Since:** 12
 
@@ -139,7 +143,10 @@ Converts a language code from two letters to three letters. For example, the two
 static getThreeLetterRegion(locale: string): string
 ```
 
-Converts a region code from two letters to three letters. For example, the two-letter region code of China is **CN**, and the corresponding three-letter region code is **CHN**. For details, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).
+Converts a region code from two letters to three letters.
+
+For example, the two-letter region code of China is **CN**, and the corresponding three-letter region code is
+**CHN**. For details, see [ISO 3166](https://www.iso.org/iso-3166-country-codes.html).
 
 **Since:** 12
 
@@ -206,7 +213,9 @@ Obtains the localized expression of the specified time in the specified locale.
 static getUnicodeWrappedFilePath(path: string, delimiter?: string, locale?: Intl.Locale): string
 ```
 
-Localizes a file path for the specified locale. For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
+Localizes a file path for the specified locale.
+
+For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 
 **Since:** 20
 
@@ -240,13 +249,15 @@ Localizes a file path for the specified locale. For example, "/data/out/tmp" is 
 static getUnicodeWrappedFilePath(path: string, delimiter?: string, locale?: intl.Locale): string
 ```
 
-Localizes a file path for the specified locale. For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
+Localizes a file path for the specified locale.
+
+For example, "/data/out/tmp" is changed to "tmp/out/data/" after localization.
 
 **Since:** 18
 
 **Deprecated since:** 20
 
-**Substitutes:** [getUnicodeWrappedFilePath](arkts-localization-i18nutil-c.md#getunicodewrappedfilepath-1)
+**Substitutes:** getUnicodeWrappedFilePath(path:
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -278,7 +289,9 @@ Localizes a file path for the specified locale. For example, "/data/out/tmp" is 
 static setUnicodeWrappedBidiDirection(text: string, direction: 'RTL' | 'LTR'): string
 ```
 
-Sets the text direction for a specific piece of text independently, separating it from the text direction of the surrounding context.
+Sets the text direction for certain text within a paragraph, including RTL (right-to-left) and
+LTR (left-to-right). NOTE: The setting does not take effect within strong characters (characters
+with an intrinsic, unambiguous writing direction).
 
 **Since:** 26.0.0
 
@@ -292,8 +305,8 @@ Sets the text direction for a specific piece of text independently, separating i
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| text | string | Yes | Input characters need to set direction.<br>Pending Text |
-| direction | 'RTL' \| 'LTR' | Yes | The value can be or "LTR"."RTL" indicates setting the input text direction from right to left."LTR" indicates setting the input text direction from left to right.<br>Text main directionality |
+| text | string | Yes | Text for which the direction needs to be set. |
+| direction | 'RTL' \| 'LTR' | Yes | The value can be "RTL" or "LTR"."RTL" indicates setting the input text direction from right to left."LTR" indicates setting the input text direction from left to right. |
 
 **Return value:**
 

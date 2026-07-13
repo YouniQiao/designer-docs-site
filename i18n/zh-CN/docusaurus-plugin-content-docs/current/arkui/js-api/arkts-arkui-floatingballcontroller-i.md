@@ -1,6 +1,8 @@
 # FloatingBallController
 
-闪控球控制器实例，用于启动、更新、停止闪控球以及注册回调等操作。 下列API示例中都需先使用[floatingBall.create()](arkts-arkui-create-f.md#create-1)方法获取到闪控球控制器实例（即floatingBallController），再通过此实例调用对应方法。
+闪控球控制器实例，用于启动、更新、停止闪控球以及注册回调等操作。
+
+下列API示例中都需先使用[floatingBall.create()](arkts-arkui-create-f.md#create-1)方法获取到闪控球控制器实例（即floatingBallController），再通过此实例调用对应方法。
 
 **起始版本：** 20
 
@@ -388,7 +390,12 @@ try {
 setFloatingBallVisibilityInApp(isVisible: boolean): Promise<void>
 ```
 
-设置闪控球在应用内是否可见。使用Promise异步回调。 - 当应用处于多任务界面时（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为PAUSED），闪控球不可见。 - 默认情况（即未调用此接口设置时）和调用此接口传入true时：除多任务界面外，闪控球均可见。 - 调用此接口传入false时：当应用处于前台（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为SHOWN或者RESUMED）时，闪控球不可见；当应用处于 后台（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为HIDDEN）时，闪控球可见。
+设置闪控球在应用内是否可见。使用Promise异步回调。
+
+- 当应用处于多任务界面时（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为PAUSED），闪控球不可见。
+- 默认情况（即未调用此接口设置时）和调用此接口传入true时：除多任务界面外，闪控球均可见。
+- 调用此接口传入false时：当应用处于前台（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为SHOWN或者RESUMED）时，闪控球不可见；当应用处于
+后台（[生命周期状态](../../../../windowmanager/window-overview.md#生命周期状态)为HIDDEN）时，闪控球可见。
 
 **起始版本：** 24
 
@@ -468,7 +475,7 @@ startFloatingBall(params: FloatingBallParams): Promise<void>
 | [1300023](../errorcode-window.md#1300023-闪控球内部错误) | Floating ball internal error. |
 | [1300024](../errorcode-window.md#1300024-闪控球窗口状态异常) | The floating ball window state is abnormal. |
 | [1300025](../errorcode-window.md#1300025-闪控球状态不支持该操作) | The floating ball state does not support this operation. |
-| [1300034](../errorcode-window.md#1300034-闪控窗与其他悬浮窗口操作冲突) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**适用版本：** 26.0.0 |
+| [1300034](../errorcode-window.md#1300034-闪控窗与其他悬浮窗口操作冲突) | This operation conflicts with other floating windows. Possible cause:App has already started float view.<br>**适用版本：** 26.0.0+ |
 
 **示例：**
 

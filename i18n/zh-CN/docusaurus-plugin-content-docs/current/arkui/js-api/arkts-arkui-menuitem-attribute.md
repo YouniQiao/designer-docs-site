@@ -1,6 +1,6 @@
 # MenuItem属性/事件
 
-除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性：
+除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md)外，还支持以下属性：
 
 **继承/实现关系：** MenuItemAttribute extends [CommonMethod<MenuItemAttribute>](CommonMethod<MenuItemAttribute>)
 
@@ -142,7 +142,11 @@ selectIcon(value: boolean | ResourceStr | SymbolGlyphModifier)
 selected(value: boolean)
 ```
 
-设置菜单项是否选中。 从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。 从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
+设置菜单项是否选中。
+
+从API version 10开始，该参数支持[$$](../../../../ui/state-management/arkts-two-way-sync.md)双向绑定变量。
+
+从API version 18开始，该参数支持[!!](../../../../ui/state-management/arkts-new-binding.md#系统组件参数双向绑定)双向绑定变量。
 
 **起始版本：** 9
 

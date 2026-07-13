@@ -1,10 +1,6 @@
 # AudioSampleFormat
 
-```TypeScript
-enum AudioSampleFormat
-```
-
-Enumerates the audio sample formats.
+表示音频采样格式的枚举。
 
 **起始版本：** 8
 
@@ -16,7 +12,7 @@ Enumerates the audio sample formats.
 SAMPLE_FORMAT_INVALID = -1
 ```
 
-Invalid format.
+无效格式。
 
 **起始版本：** 8
 
@@ -28,7 +24,7 @@ Invalid format.
 SAMPLE_FORMAT_U8 = 0
 ```
 
-Unsigned 8-bit integer.
+无符号8位整数。
 
 **起始版本：** 8
 
@@ -40,7 +36,7 @@ Unsigned 8-bit integer.
 SAMPLE_FORMAT_S16LE = 1
 ```
 
-Signed 16-bit integer, little endian.
+带符号的16位整数，小尾数。
 
 **起始版本：** 8
 
@@ -52,7 +48,9 @@ Signed 16-bit integer, little endian.
 SAMPLE_FORMAT_S24LE = 2
 ```
 
-Signed 24-bit integer, little endian. Due to system restrictions, only some devices support this sampling format.
+带符号的24位整数，小尾数。
+
+由于系统限制，该采样格式仅部分设备支持，请根据实际情况使用。
 
 **起始版本：** 8
 
@@ -64,7 +62,9 @@ Signed 24-bit integer, little endian. Due to system restrictions, only some devi
 SAMPLE_FORMAT_S32LE = 3
 ```
 
-Signed 32-bit integer, little endian. Due to system restrictions, only some devices support this sampling format.
+带符号的32位整数，小尾数。
+
+由于系统限制，该采样格式仅部分设备支持，请根据实际情况使用。
 
 **起始版本：** 8
 
@@ -76,7 +76,9 @@ Signed 32-bit integer, little endian. Due to system restrictions, only some devi
 SAMPLE_FORMAT_F32LE = 4
 ```
 
-Signed 32-bit floating-point number, little endian. Due to system restrictions, only some devices support this sampling format.
+带符号的32位浮点数，小尾数。
+
+由于系统限制，该采样格式仅部分设备支持，请根据实际情况使用。
 
 **起始版本：** 9
 

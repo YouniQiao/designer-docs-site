@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManager } from '@ohos.security.certManager';
+import { certificateManager } from '@kit.DeviceCertificateKit';
 ```
 
 ## uninstallPublicCertificate
@@ -12,7 +12,8 @@ import { certificateManager } from '@ohos.security.certManager';
 function uninstallPublicCertificate(keyUri: string) : Promise<void>
 ```
 
-Uninstalls the public credential of the user. This API is called only by the certificate management application. This API uses a promise to return the result.
+Uninstalls the public credential of the user. This API is called only by the certificate management application.
+This API uses a promise to return the result.
 
 **Since:** 26.0.0
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## claimInterface
@@ -12,7 +12,14 @@ import { usbManager } from '@ohos.usbManager';
 function claimInterface(pipe: USBDevicePipe, iface: USBInterface, force?: boolean): number
 ```
 
-Claims a USB device interface. > **NOTE** > > In USB programming, **claimInterface** is a common operation, which indicates that an application requests the > operating system to release a USB interface from the kernel driver and hand over the USB interface to a user > space program for control.<br> > > All the **claim** communication interfaces used below refer to the claim interface operations.
+Claims a USB device interface.
+
+> **NOTE**
+>
+> In USB programming, **claimInterface** is a common operation, which indicates that an application requests the
+> operating system to release a USB interface from the kernel driver and hand over the USB interface to a user
+> space program for control.<br>
+> > All the **claim** communication interfaces used below refer to the claim interface operations.
 
 **Since:** 9
 
@@ -37,7 +44,7 @@ Claims a USB device interface. > **NOTE** > > In USB programming, **claimInterfa
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 
 **Example**
 

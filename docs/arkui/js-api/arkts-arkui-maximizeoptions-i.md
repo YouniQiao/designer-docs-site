@@ -9,7 +9,7 @@ Optional configuration for maximizing.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## acrossDisplayPresentation
@@ -18,7 +18,9 @@ import { window } from '@ohos.window';
 acrossDisplayPresentation?: AcrossDisplayPresentation
 ```
 
-The parameter controls the across-display mode policy of main windows. This parameter can be called properly only on 2-in-1 devices with folding capabilities. If it is called on other device types, it has no effect.
+The parameter controls the across-display mode policy of main windows.
+This parameter can be called properly only on 2-in-1 devices with folding capabilities.
+If it is called on other device types, it has no effect.
 
 **Type:** AcrossDisplayPresentation
 
@@ -54,7 +56,8 @@ Layout when the window is maximized.
 snapshotAnimationConfig?: WindowSnapshotAnimationConfig
 ```
 
-The configuration of snapshot animation. If not specified, the system default animation will be used. When both the duration and delay parameters are set to 0, it means the snapshot animation is canceled.
+The configuration of snapshot animation. If not specified, the system default animation will be used.
+When both the duration and delay parameters are set to 0, it means the snapshot animation is canceled.
 
 **Type:** WindowSnapshotAnimationConfig
 

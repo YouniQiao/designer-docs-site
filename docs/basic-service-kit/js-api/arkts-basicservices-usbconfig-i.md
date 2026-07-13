@@ -1,19 +1,20 @@
 # USBConfig
 
-Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md#usbdevice) can contain multiple **USBConfig** instances.
+Represents the USB configuration. One [USBDevice](arkts-basicservices-usbdevice-i.md) can contain multiple **USBConfig**
+instances.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [USBConfiguration](arkts-basicservices-usbconfiguration-i.md#usbconfiguration)
+**Substitutes:** [USBConfiguration](arkts-basicservices-usbconfiguration-i.md)
 
 **System capability:** SystemCapability.USB.USBManager
 
 ## Modules to Import
 
 ```TypeScript
-import { usb } from '@ohos.usb';
+import { usb } from '@kit.BasicServicesKit';
 ```
 
 ## attributes

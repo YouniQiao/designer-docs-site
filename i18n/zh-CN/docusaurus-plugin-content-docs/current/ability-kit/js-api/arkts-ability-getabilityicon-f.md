@@ -6,7 +6,9 @@
 function getAbilityIcon(bundleName: string, abilityName: string, callback: AsyncCallback<image.PixelMap>): void
 ```
 
-通过bundleName和abilityName获取对应Icon的[PixelMap](@ohos.multimedia.image:image)，使用callback异步回调。 获取调用方自己的信息时不需要权限。
+通过bundleName和abilityName获取对应Icon的[PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)，使用callback异步回调。
+
+获取调用方自己的信息时不需要权限。
 
 **起始版本：** 8
 
@@ -24,7 +26,7 @@ function getAbilityIcon(bundleName: string, abilityName: string, callback: Async
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
 | abilityName | string | 是 | 要查询的Ability组件名。 |
-| callback | AsyncCallback&lt;image.PixelMap&gt; | 是 | 程序启动作为入参的回调函数，返回指定[PixelMap](@ohos.multimedia.image:image)。 |
+| callback | AsyncCallback&lt;image.PixelMap&gt; | 是 | 程序启动作为入参的回调函数，返回指定[PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)。 |
 
 
 ## getAbilityIcon
@@ -33,7 +35,9 @@ function getAbilityIcon(bundleName: string, abilityName: string, callback: Async
 function getAbilityIcon(bundleName: string, abilityName: string): Promise<image.PixelMap>
 ```
 
-通过bundleName和abilityName获取对应Icon的[PixelMap](@ohos.multimedia.image:image)，使用Promise异步回调。 获取调用方自己的信息时不需要权限。
+通过bundleName和abilityName获取对应Icon的[PixelMap](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md)，使用Promise异步回调。
+
+获取调用方自己的信息时不需要权限。
 
 **起始版本：** 8
 

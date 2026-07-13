@@ -1,6 +1,14 @@
 # Radio
 
-单选框，提供相应的用户交互选择项。 > **说明：** > > - API version 12开始，Radio选中默认样式由RadioIndicatorType.DOT变为RadioIndicatorType.TICK。 > - 该组件默认有[margin]{@link CommonMethod#margin}间距，默认值为：{&nbsp;top: '14px',&nbsp;right: '14px',&nbsp;bottom: '14px',& > nbsp;left: '14px' }。
+单选框，提供相应的用户交互选择项。
+
+> **说明：**
+>
+> - API version 12开始，Radio选中默认样式由RadioIndicatorType.DOT变为RadioIndicatorType.TICK。
+
+> - 该组件默认有[margin]{@link CommonMethod#margin}间距，默认值为：{&nbsp;top: '14px',&nbsp;right: '14px',&nbsp;bottom: '14px',&
+> nbsp;left: '14px' }。
+
 
 ## Radio
 

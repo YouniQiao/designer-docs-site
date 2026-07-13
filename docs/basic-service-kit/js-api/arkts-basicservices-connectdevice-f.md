@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { usbManager } from '@ohos.usbManager';
+import { usbManager } from '@kit.BasicServicesKit';
 ```
 
 ## connectDevice
@@ -12,7 +12,11 @@ import { usbManager } from '@ohos.usbManager';
 function connectDevice(device: USBDevice): Readonly<USBDevicePipe>
 ```
 
-Connects to the USB device based on the device information returned by **getDevices()**. If the USB service is abnormal, **undefined** may be returned. Check whether the return value of the API is empty. 1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list. 2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission.
+Connects to the USB device based on the device information returned by **getDevices()**. If the USB service is
+abnormal, **undefined** may be returned. Check whether the return value of the API is empty.
+
+1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list.
+2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the device access permission.
 
 **Since:** 9
 
@@ -35,7 +39,7 @@ Connects to the USB device based on the device information returned by **getDevi
 | Error Code ID | Error Message |
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1.Mandatory parameters are left unspecified.<br>2.Incorrect parameter types. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.<br>**Applicable version:** 18 and later |
 | [14400001](../../apis-basic-services-kit/errorcode-usb.md#14400001-usb-device-connection-denied) | Access right denied. Call requestRight to get the USBDevicePipe access right first. |
 | [14400004](../../apis-basic-services-kit/errorcode-usb.md#14400004-service-exception) |  |
 | [14400012](../../apis-basic-services-kit/errorcode-usb.md#14400012-io-error) |  |

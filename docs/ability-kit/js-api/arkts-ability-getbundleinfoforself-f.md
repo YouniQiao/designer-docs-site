@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getBundleInfoForSelf
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getBundleInfoForSelf(bundleFlags: number): Promise<BundleInfo>
 ```
 
-Obtains the bundle information of the current application based on the given bundle flags. This API uses a promise to return the result.
+Obtains the bundle information of the current application based on the given bundle flags. This API uses a promise
+to return the result.
 
 **Since:** 9
 
@@ -69,7 +70,8 @@ try {
 function getBundleInfoForSelf(bundleFlags: number, callback: AsyncCallback<BundleInfo>): void
 ```
 
-Obtains the bundle information of the current application based on the given bundle flags. This API uses an asynchronous callback to return the result.
+Obtains the bundle information of the current application based on the given bundle flags. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -82,7 +84,7 @@ Obtains the bundle information of the current application based on the given bun
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleFlags | number | Yes | Type of the bundle information to obtain. |
-| callback | AsyncCallback&lt;BundleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md#asynccallback) used to return theresult. If the information is successfully obtained, **err** is **null** and **data** is the bundle informationof the current application. Otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;BundleInfo&gt; | Yes | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-asynccallback-i.md) used to return theresult. If the information is successfully obtained, **err** is **null** and **data** is the bundle informationof the current application. Otherwise, **err** is an error object. |
 
 **Error codes:**
 

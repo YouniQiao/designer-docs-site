@@ -1,6 +1,8 @@
 # WantAgentInfo
 
-Defines the information required for triggering a WantAgent object. The information can be used as an input parameter in [getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent) to obtain a specified WantAgent object.
+Defines the information required for triggering a WantAgent object. The information can be used as an input parameter
+in [getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent) to
+obtain a specified WantAgent object.
 
 **Since:** 7
 
@@ -60,7 +62,8 @@ Extra information.
 extraInfos?: Record<string, Object>
 ```
 
-Extra information. You are advised to use this property to replace **extraInfo**. When this property is set, **extraInfo** does not take effect.
+Extra information. You are advised to use this property to replace **extraInfo**. When this property is set,
+**extraInfo** does not take effect.
 
 **Type:** Record<string, Object>
 
@@ -76,7 +79,10 @@ Extra information. You are advised to use this property to replace **extraInfo**
 operationType?: wantAgent.OperationType
 ```
 
-Operation type. This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use actionType<sup>11+</sup> instead.
+Operation type.
+
+This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use
+actionType<sup>11+</sup> instead.
 
 **Type:** wantAgent.OperationType
 
@@ -112,7 +118,10 @@ Custom request code, which is used to identify the operation to execute.
 wantAgentFlags?: Array<wantAgent.WantAgentFlags>
 ```
 
-Array of flags for using the WantAgent object. This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use actionFlags<sup>11+</sup> instead.
+Array of flags for using the WantAgent object.
+
+This attribute is supported since API version 7 and deprecated since API version 11. You are advised to use
+actionFlags<sup>11+</sup> instead.
 
 **Type:** Array<wantAgent.WantAgentFlags>
 
@@ -132,7 +141,8 @@ Array of flags for using the WantAgent object. This attribute is supported since
 wants: Array<Want>
 ```
 
-Array of all Want objects. Currently, only one Want is supported. The array is reserved for future capability expansion. If multiple values are passed in, only the first member in the array is used.
+Array of all Want objects. Currently, only one Want is supported. The array is reserved for future capability
+expansion. If multiple values are passed in, only the first member in the array is used.
 
 **Type:** Array<Want>
 

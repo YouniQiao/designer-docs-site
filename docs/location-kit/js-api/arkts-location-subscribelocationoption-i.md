@@ -13,7 +13,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@system.geolocation';
+import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@kit.LocationKit';
 ```
 
 ## coordType
@@ -22,7 +22,8 @@ import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, Ge
 coordType?: string
 ```
 
-Coordinate system type. Available types can be obtained using getSupportedCoordTypes. The default type is wgs84.
+Coordinate system type. Available types can be obtained using getSupportedCoordTypes.
+The default type is wgs84.
 
 **Type:** string
 

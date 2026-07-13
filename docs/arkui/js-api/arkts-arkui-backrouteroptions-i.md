@@ -13,7 +13,7 @@ Defines the option of router back.
 ## Modules to Import
 
 ```TypeScript
-import { BackRouterOptions, DisableAlertBeforeBackPageOptions, RouterOptions, RouterState, EnableAlertBeforeBackPageOptions } from '@system.router';
+import { BackRouterOptions, DisableAlertBeforeBackPageOptions, RouterOptions, RouterState, EnableAlertBeforeBackPageOptions } from '@kit.ArkUI';
 ```
 
 ## params
@@ -40,7 +40,8 @@ Data that needs to be passed to the destination page during navigation.
 uri?: string
 ```
 
-Returns to the page of the specified path. If the page with the specified path does not exist in the page stack, router.back() is called by default.
+Returns to the page of the specified path.
+If the page with the specified path does not exist in the page stack, router.back() is called by default.
 
 **Type:** string
 

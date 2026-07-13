@@ -11,7 +11,7 @@ Represents the package check result.
 ## Modules to Import
 
 ```TypeScript
-import { update } from '@ohos.update';
+import { update } from '@kit.BasicServicesKit';
 ```
 
 ## isExistNewVersion
@@ -20,7 +20,9 @@ import { update } from '@ohos.update';
 isExistNewVersion: boolean
 ```
 
-Whether a new version is available. The value **true** indicates that a new version is available, and the value **false** indicates the opposite.
+Whether a new version is available.
+
+The value **true** indicates that a new version is available, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

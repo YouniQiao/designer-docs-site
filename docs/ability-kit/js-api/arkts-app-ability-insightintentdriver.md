@@ -1,6 +1,13 @@
 # @ohos.app.ability.insightIntentDriver
 
-本模块提供执行意图调用的能力，系统根据用户交互等信息执行意图调用。 > **说明：** > > 本模块从API version 20开始支持通过 > [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) > 装饰器定义的意图来实现应用跳转。
+The module provides APIs for executing intent calls. The system executes intent calls based on user interaction and
+more.
+
+> **NOTE**
+>
+> Starting from API version 20, this module supports application navigation using intents defined by the
+> [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink)
+> decorator.
 
 **Since:** 11
 
@@ -16,44 +23,54 @@ import { insightIntentDriver } from '@kit.AbilityKit';
 
 ## Summary
 
-### Functions
+<!--Del-->
+### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[execute](arkts-insightintentdriver-execute-f-sys.md#execute-1) | 执行意图调用的接口。使用callback异步回调。 当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。 当意图调用执行模式[ExecuteMode]{@link @ohos.app.ability.insightIntent:insightIntent.ExecuteMode}取值为UI_ABILITY_BACKGROUND时，需要 申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。 |
-| <!--DelRow-->[execute](arkts-insightintentdriver-execute-f-sys.md#execute-2) | 执行意图调用的接口。使用Promise异步回调。 当调用方在后台时，需要申请`ohos.permission.START_ABILITIES_FROM_BACKGROUND`权限。 当意图调用执行模式[ExecuteMode]{@link @ohos.app.ability.insightIntent:insightIntent.ExecuteMode}取值为UI_ABILITY_BACKGROUND时，需要 申请`ohos.permission.ABILITY_BACKGROUND_COMMUNICATION`权限。 |
-| <!--DelRow-->[getAllInsightIntentInfo](arkts-insightintentdriver-getallinsightintentinfo-f-sys.md#getAllInsightIntentInfo-1) | 查询当前设备上的所有意图信息。使用Promise异步回调。 |
-| <!--DelRow-->[getInsightIntentInfoByBundleName](arkts-insightintentdriver-getinsightintentinfobybundlename-f-sys.md#getInsightIntentInfoByBundleName-1) | 根据包名查询当前设备上的意图信息。使用Promise异步回调。 |
-| <!--DelRow-->[getInsightIntentInfoByFilter](arkts-insightintentdriver-getinsightintentinfobyfilter-f-sys.md#getInsightIntentInfoByFilter-1) | Obtains the intent information on the current device based on the given intent filter. This API uses a promise to return the result.<br>If the user ID of the calling application is different from the user ID of the intent, the |
-| <!--DelRow-->[getInsightIntentInfoByIntentName](arkts-insightintentdriver-getinsightintentinfobyintentname-f-sys.md#getInsightIntentInfoByIntentName-1) | 根据包名、模块名和意图名查询当前设备上的意图信息。使用Promise异步回调。 |
-| <!--DelRow-->[queryEntityInfo](arkts-insightintentdriver-queryentityinfo-f-sys.md#queryEntityInfo-1) | 查询意图实体信息。 |
-| <!--DelRow-->[queryEntityInfo](arkts-insightintentdriver-queryentityinfo-f-sys.md#queryEntityInfo-2) | 查询意图实体信息。 |
+| [execute](arkts-ability-execute-f-sys.md#execute-1) | Executes a call to an intent. This API uses an asynchronous callback to return the result.When the caller is in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is required.When [ExecuteMode](arkts-ability-executemode-e.md) of the intent call is set to**UI_ABILITY_BACKGROUND**, the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION permission is required.On API 26.0.0 and above, intent can be executed across devices. When the intent call is cross-device,the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required. |
+| [execute](arkts-ability-execute-f-sys.md#execute-2) | Executes a call to an intent. This API uses a promise to return the result.When the caller is in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is required.When [ExecuteMode](arkts-ability-executemode-e.md) of the intent call is set to**UI_ABILITY_BACKGROUND**, the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION permission is required.When the intent call is cross-device, the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required.On API 26.0.0 and above, intent can be executed across devices. When the intent call is cross-device,the ohos.permission.EXECUTE_DISTRIBUTED_INTENT permission is required. |
+| [getAllInsightIntentInfo](arkts-ability-getallinsightintentinfo-f-sys.md#getallinsightintentinfo-1) | Obtains the information about all intents on the current device. This API uses a promise to return the result. |
+| [getInsightIntentInfoByBundleName](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1) | Obtains the intent information on the current device based on the given bundle name. This API uses a promise toreturn the result. |
+| [getInsightIntentInfoByFilter](arkts-ability-getinsightintentinfobyfilter-f-sys.md#getinsightintentinfobyfilter-1) | Obtains the intent information on the current device based on the given intent filter. This API uses a promise toreturn the result.<br>If the user ID of the calling application is different from the user ID of the intent, thecalling application must request the ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission. |
+| [getInsightIntentInfoByIntentName](arkts-ability-getinsightintentinfobyintentname-f-sys.md#getinsightintentinfobyintentname-1) | Obtains the intent information on the current device based on the bundle name, module name, and intent name. ThisAPI uses a promise to return the result. |
+| [queryEntityInfo](arkts-ability-queryentityinfo-f-sys.md#queryentityinfo-1) | Query insight intent entity information. |
+<!--DelEnd-->
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[EntityInfo](arkts-insightintentdriver-entityinfo-i-sys.md) | EntityInfo继承自[IntentEntityDecoratorInfo]{@link @ohos.app.ability.InsightIntentDecorator:IntentEntityDecoratorInfo}， 用于描述 [@InsightIntentEntity](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) 装饰器定义的意图实体的信息。 |
-| <!--DelRow-->[EntryIntentInfo](arkts-insightintentdriver-entryintentinfo-i-sys.md) | FormIntentInfo用于描述 [@InsightIntentForm](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) 装饰器支持的参数，例如卡片名称。同时，该接口也可用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)所绑定的卡片信 息。 |
-| <!--DelRow-->[ExecuteParam](arkts-insightintentdriver-executeparam-i-sys.md) | 执行意图调用的参数。 |
-| <!--DelRow-->[FormIntentInfo](arkts-insightintentdriver-formintentinfo-i-sys.md) | FormIntentInfo用于描述 [@InsightIntentForm](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) 装饰器支持的参数，例如卡片名称。同时，该接口也可用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)所绑定的卡片信 息。 |
-| <!--DelRow-->[FunctionIntentInfo](arkts-insightintentdriver-functionintentinfo-i-sys.md) | [@InsightIntentFunctionMethod](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) 装饰器的参数类型，当前全部属性均继承自[IntentDecoratorInfo]{@link @ohos.app.ability.InsightIntentDecorator:IntentDecoratorInfo}。 |
-| <!--DelRow-->[InsightIntentInfo](arkts-insightintentdriver-insightintentinfo-i-sys.md) | 意图信息，表示设备中意图的具体参数配置。 |
-| <!--DelRow-->[InsightIntentInfoFilter](arkts-insightintentdriver-insightintentinfofilter-i-sys.md) | 意图筛选器，描述目标意图的筛选条件，用于筛选设备上符合条件的意图。 |
-| <!--DelRow-->[LinkIntentInfo](arkts-insightintentdriver-linkintentinfo-i-sys.md) | LinkIntentInfo用于描述 [@InsightIntentLink](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器支持的参数，例如应用间跳转需要的uri信息。 |
-| <!--DelRow-->[PageIntentInfo](arkts-insightintentdriver-pageintentinfo-i-sys.md) | PageIntentInfo用于描述 [@InsightIntentPage](docroot://reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) 装饰器支持的参数，例如目标页面的 [NavDestination](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10)名称。 |
-| <!--DelRow-->[QueryParam](arkts-insightintentdriver-queryparam-i-sys.md) | 查询洞察意图实体时的Param。 |
-| <!--DelRow-->[ServiceExtensionIntentInfo](arkts-insightintentdriver-serviceextensionintentinfo-i-sys.md) | 用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)所绑定的ServiceExtensionAbility组件信息 。 |
-| <!--DelRow-->[SubIntentInfoForConfiguration](arkts-insightintentdriver-subintentinfoforconfiguration-i-sys.md) | 用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)的特有信息。 |
-| <!--DelRow-->[UIAbilityIntentInfo](arkts-insightintentdriver-uiabilityintentinfo-i-sys.md) | 用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)所绑定的UIAbility组件信息。 |
-| <!--DelRow-->[UIExtensionIntentInfo](arkts-insightintentdriver-uiextensionintentinfo-i-sys.md) | 用于描述[使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)所绑定的UIExtensionAbility组件信息。 |
+| [FunctionIntentInfo](arkts-ability-functionintentinfo-i.md) | Defines the parameter type of the[@InsightIntentFunctionMethod](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentfunctionmethod) decorator. All parameters inherit from[IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md). |
 
-### Enums
+<!--Del-->
+### Interfaces（系统接口）
 
 | Name | Description |
 | --- | --- |
-| <!--DelRow-->[DevelopType](arkts-insightintentdriver-developtype-e-sys.md) | 用于描述意图的开发方式。 |
-| <!--DelRow-->[ExecuteModeForConfiguration](arkts-insightintentdriver-executemodeforconfiguration-e-sys.md) | [使用配置文件开发的意图](docroot://application-models/insight-intent-config-development.md)支持的意图执行模式。例如，将 [insight_intent.json配置文件](docroot://application-models/insight-intent-config-development.md#insight_intentjson配置文件说明) 中的executeMode设置为"foreground"，表示支持与UIAbility组件绑定的意图在前台运行。 |
-| <!--DelRow-->[GetInsightIntentFlag](arkts-insightintentdriver-getinsightintentflag-e-sys.md) | 意图信息（[InsightIntentInfo]{@link insightIntentDriver.InsightIntentInfo}）的标识，用于 [getAllInsightIntentInfo]{@link insightIntentDriver.getInsightIntentInfoByBundleName}、 [getInsightIntentInfoByBundleName]{@link insightIntentDriver.getInsightIntentInfoByBundleName}和 [getInsightIntentInfoByIntentName]{@link insightIntentDriver.getInsightIntentInfoByIntentName}接口查询意图信息。 > **说明：** > > - 对于使用配置文件开发的意图，通过上述接口查询的全量信息和简要信息完全一致。 > > - 对于使用装饰器开发的意图，通过上述接口查询的全量信息和简要信息存在差别，详见下表。 > > 表1 全量意图信息与简要意图信息差别 > > | 属性 | 全量意图信息是否包含 | 简要意图信息是否包含 | > | -------- | -------- | -------- | > | bundleName | 是 | 是 | > | moduleName | 是 | 是 | > | intentName | 是 | 是 | > | domain | 是 | 否 | > | intentVersion | 是 | 否 | > | displayName | 是 | 是 | > | displayDescription | 是 | 否 | > | schema | 是 | 否 | > | icon | 是 | 否 | > | llmDescription | 是 | 否 | > | keywords | 是 | 否 | > | intentType | 是 | 是 | > | subIntentInfo | 是 | 是 | > | parameters | 是 | 是 | > | entities | 否 | 否 | > | developType<sup>23+</sup> | 是 | 是 | > | subIntentInfoForConfiguration<sup>23+</sup> | 否 | 否 | |
-| <!--DelRow-->[InsightIntentType](arkts-insightintentdriver-insightintenttype-e-sys.md) | 表示通过意图装饰器定义的意图类型，可通过[getAllInsightIntentInfo]{@link insightIntentDriver.getAllInsightIntentInfo}等方法返回的 [LinkIntentInfo]{@link insightIntentDriver.LinkIntentInfo}获取。 |
+| [EntityInfo](arkts-ability-entityinfo-i-sys.md) | EntityInfo inherits from[IntentEntityDecoratorInfo](arkts-ability-intententitydecoratorinfo-i.md) and is usedto describe the information about the intent entity defined by the[@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) decorator. |
+| [EntryIntentInfo](arkts-ability-entryintentinfo-i-sys.md) | Describes the parameters supported by the[@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) decorator, such as the widget name. It also describes the widget information bound to the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+| [ExecuteParam](arkts-ability-executeparam-i-sys.md) | Defines the parameter used to execute an intent call. |
+| [FormIntentInfo](arkts-ability-formintentinfo-i-sys.md) | Describes the parameters supported by the[@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) decorator, such as the widget name. It also describes the widget information bound to the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+| [InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md) | Defines the intent information, which is the specific parameter configuration of the intent in the device. |
+| [InsightIntentInfoFilter](arkts-ability-insightintentinfofilter-i-sys.md) | Defines an intent filter, which specifies the criteria for selecting target intents. It is used to filter intentson the device that meet these criteria. |
+| [LinkIntentInfo](arkts-ability-linkintentinfo-i-sys.md) | Describes the parameters supported by the[@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator, such as the URI required for application redirection. |
+| [PageIntentInfo](arkts-ability-pageintentinfo-i-sys.md) | Describes the parameters supported by the[@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) decorator, such as the[NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) nameof the target page. |
+| [QueryParam](arkts-ability-queryparam-i-sys.md) | Param when query insight intent entity. |
+| [ServiceExtensionIntentInfo](arkts-ability-serviceextensionintentinfo-i-sys.md) | Describes the information of the ServiceExtensionAbility bound to the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+| [SubIntentInfoForConfiguration](arkts-ability-subintentinfoforconfiguration-i-sys.md) | Describes the unique information of the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+| [UIAbilityIntentInfo](arkts-ability-uiabilityintentinfo-i-sys.md) | Describes the information of the UIAbility bound to the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+| [UIExtensionIntentInfo](arkts-ability-uiextensionintentinfo-i-sys.md) | Describes the information of the UIExtensionAbility bound to the[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md). |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DevelopType](arkts-ability-developtype-e-sys.md) | Enumerates the modes that define how an intent is developed. |
+| [ExecuteModeForConfiguration](arkts-ability-executemodeforconfiguration-e-sys.md) | Enumerates the execution modes supported by an[intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).For example, if **executeMode** in the[insight_intent.json configuration file](../../../../application-models/insight-intent-config-development.md#description-of-the-insight_intentjson-file) is set to **foreground**, the intent bound to the UIAbility can run in the foreground. |
+| [GetInsightIntentFlag](arkts-ability-getinsightintentflag-e-sys.md) | Enumerates the flags of intent information ([InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md)). Itis used in [getAllInsightIntentInfo](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1),[getInsightIntentInfoByBundleName](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1), and[getInsightIntentInfoByIntentName](arkts-ability-getinsightintentinfobyintentname-f-sys.md#getinsightintentinfobyintentname-1).&gt; **NOTE**&gt;&gt; - For intents developed using a configuration file, the full and brief information queried through the preceding&gt; APIs are the same.&gt;&gt; - For intents developed using a decorator, the full and brief information queried through the preceding APIs are&gt; different, as described below.&gt;&gt; Table 1 Differences between full intent information and brief intent information&gt;&gt; \| Name\| Included in Full Intent Information\| Included in Brief Intent Information\|&gt; \| -------- \| -------- \| -------- \|&gt; \| bundleName \| Yes\| Yes\|&gt; \| moduleName \| Yes\| Yes\|&gt; \| intentName \| Yes\| Yes\|&gt; \| domain \| Yes\| No\|&gt; \| intentVersion \| Yes\| No\|&gt; \| displayName \| Yes\| Yes\|&gt; \| displayDescription \| Yes\| No\|&gt; \| schema \| Yes\| No\|&gt; \| icon \| Yes\| No\|&gt; \| llmDescription \| Yes\| No\|&gt; \| keywords \| Yes\| No\|&gt; \| intentType \| Yes\| Yes\|&gt; \| subIntentInfo \| Yes\| Yes\|&gt; \| parameters \| Yes\| Yes\|&gt; \| entities \| No\| No\|&gt; \| developType&lt;sup&gt;23+&lt;/sup&gt; \| Yes\| Yes\|&gt; \| subIntentInfoForConfiguration&lt;sup&gt;23+&lt;/sup&gt; \| No\| No\| |
+| [InsightIntentType](arkts-ability-insightintenttype-e-sys.md) | Enumerates the intent types defined by the intent decorator. You can obtain the intent type from[LinkIntentInfo](arkts-ability-linkintentinfo-i-sys.md) returned by calling APIs such as[getAllInsightIntentInfo](arkts-ability-getallinsightintentinfo-f-sys.md#getallinsightintentinfo-1). |
+<!--DelEnd-->
 

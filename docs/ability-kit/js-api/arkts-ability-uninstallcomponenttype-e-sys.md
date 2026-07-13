@@ -14,7 +14,11 @@ Enumerates the types of abilities during uninstallation.
 EXTENSION = 1
 ```
 
-ExtensionAbility component. Only [ExtensionAbility](../../../../quick-start/module-configuration-file.md#extensionabilities) components of the service type is supported. The ExtensionAbility component is determined by bundleName, moduleName, and abilityName in want.
+ExtensionAbility component. Only
+[ExtensionAbility](../../../../quick-start/module-configuration-file.md#extensionabilities) components of the
+service type is supported.
+
+The ExtensionAbility component is determined by bundleName, moduleName, and abilityName in want.
 
 **Since:** 15
 
@@ -28,7 +32,11 @@ ExtensionAbility component. Only [ExtensionAbility](../../../../quick-start/modu
 UI_EXTENSION = 2
 ```
 
-UIExtensionAbility component. The UIExtensionAbility is determined by bundleName, moduleName, and abilityName in want, and the **ability.want.params.uiExtensionType** field in **want.parameters** is set to [UIExtensionAbility](../../../../application-models/uiextensionability-sys.md).
+UIExtensionAbility component.
+
+The UIExtensionAbility is determined by bundleName, moduleName, and abilityName in want, and the
+**ability.want.params.uiExtensionType** field in **want.parameters** is set to
+[UIExtensionAbility](../../../../application-models/uiextensionability-sys.md).
 
 **Since:** 22
 

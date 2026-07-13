@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { huks } from '@ohos.security.huks';
+import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
 ## deleteKeyItem
@@ -25,7 +25,7 @@ Deletes a key. This API uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to delete. It must be the key alias passed in when the key wasgenerated. |
-| options | HuksOptions | Yes | Attribute of the key to be deleted. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md#huksauthstoragelevel) is used to specify the security level of the key to bedeleted,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
+| options | HuksOptions | Yes | Attribute of the key to be deleted. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md) is used to specify the security level of the key to bedeleted,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
 | callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -39,7 +39,7 @@ Deletes a key. This API uses an asynchronous callback to return the result.
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 
@@ -158,7 +158,7 @@ Deletes a key. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | keyAlias | string | Yes | Alias of the key to delete. It must be the key alias passed in when the key wasgenerated. |
-| options | HuksOptions | Yes | Attribute tag of the key to be deleted. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md#huksauthstoragelevel) is used to specify the security level of the key to bedeleted,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
+| options | HuksOptions | Yes | Attribute tag of the key to be deleted. If[HuksAuthStorageLevel](arkts-universalkeystore-huksauthstoragelevel-e.md) is used to specify the security level of the key to bedeleted,<br>this parameter can be left empty. If the API version is 12 or later, the default value **CE** ispassed in. If the API version is earlier than 12, the default value **DE** is passed in. |
 
 **Return value:**
 
@@ -177,7 +177,7 @@ Deletes a key. This API uses a promise to return the result.
 | [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
 | [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
 | [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
-| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the group id specified by the access group tag is invalid<br>**Applicable version:** 23 and later |
 
 **Example**
 

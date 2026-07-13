@@ -1,6 +1,7 @@
 # MediaKeySession
 
-Provide functions and keep a decrypt module. Before calling an MediaKeySession method, we must use MediaKeySystem's createMediaKeySession to get a MediaKeySession instance.
+Provide functions and keep a decrypt module. Before calling an MediaKeySession method, we must
+use MediaKeySystem's createMediaKeySession to get a MediaKeySession instance.
 
 **Since:** 12
 
@@ -22,7 +23,7 @@ Check the media key status
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -36,8 +37,8 @@ Check the media key status
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## clearMediaKeys
 
@@ -49,7 +50,7 @@ Remove media key.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -57,8 +58,8 @@ Remove media key.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## destroy
 
@@ -70,7 +71,7 @@ Release the resource before the session gonna be unused.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -78,20 +79,20 @@ Release the resource before the session gonna be unused.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## generateMediaKeyRequest
 
 ```TypeScript
-generateMediaKeyRequest(mimeType: string, initData: Uint8Array, mediaKeyType: int, options?: OptionsData[]): Promise<MediaKeyRequest>
+generateMediaKeyRequest(mimeType: string, initData: Uint8Array, mediaKeyType: number, options?: OptionsData[]): Promise<MediaKeyRequest>
 ```
 
 Generate the media key request.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -101,22 +102,22 @@ Generate the media key request.
 | --- | --- | --- | --- |
 | mimeType | string | Yes | Media type. |
 | initData | Uint8Array | Yes | PSSH info. |
-| mediaKeyType | int | Yes | Offline or online. |
+| mediaKeyType | number | Yes | Offline or online. |
 | options | OptionsData[] | No | Optional data the application set to drm framework. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;MediaKeyRequest> | Promise with MediaKeyRequest used to return the result. |
+| Promise&lt;MediaKeyRequest&gt; | Promise with MediaKeyRequest used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## generateOfflineReleaseRequest
 
@@ -128,7 +129,7 @@ Generate offline media key request.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -136,21 +137,21 @@ Generate offline media key request.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media content's media key request  should be generated. |
+| mediaKeyId | Uint8Array | Yes | The mediaKeyId specifies which media content's media key requestshould be generated. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Uint8Array> | Promise with media key request in Uint8Array used to return the result. |
+| Promise&lt;Uint8Array&gt; | Promise with media key request in Uint8Array used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## getContentProtectionLevel
 
@@ -162,7 +163,7 @@ Get content protection level.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -176,8 +177,8 @@ Get content protection level.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## off('keyRequired')
 
@@ -189,7 +190,7 @@ Unregister keyRequired event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -198,14 +199,14 @@ Unregister keyRequired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | used to listen for the key required event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## off('keyExpired')
 
@@ -217,7 +218,7 @@ Unregister keyExpired event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -226,14 +227,14 @@ Unregister keyExpired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyExpired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for the key required event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## off('vendorDefined')
 
@@ -245,7 +246,7 @@ Unregister vendorDefined event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -254,14 +255,14 @@ Unregister vendorDefined event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'vendorDefined' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the vendor defined event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for the vendor defined event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## off('expirationUpdate')
 
@@ -273,7 +274,7 @@ Unregister expirationUpdate event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -282,14 +283,14 @@ Unregister expirationUpdate event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'expirationUpdate' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for expiration update event. |
+| callback | (eventInfo: EventInfo) =&gt; void | No | Used to listen for expiration update event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## off('keysChange')
 
@@ -301,7 +302,7 @@ Unregister keysChange event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -310,134 +311,14 @@ Unregister keysChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keysChange' | Yes | Type of the drm event to listen for. |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | No | Used to listen for keys change event. |
+| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) =&gt; void | No | Used to listen for keys change event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-
-## offExpirationUpdate
-
-```TypeScript
-offExpirationUpdate(callback?: (eventInfo: EventInfo) => void): void
-```
-
-Unregister expirationUpdate event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for expiration update event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## offKeyExpired
-
-```TypeScript
-offKeyExpired(callback?: (eventInfo: EventInfo) => void): void
-```
-
-Unregister keyExpired event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the key required event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## offKeyRequired
-
-```TypeScript
-offKeyRequired(callback?: (eventInfo: EventInfo) => void): void
-```
-
-Unregister keyRequired event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | No | used to listen for the key required event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## offKeysChange
-
-```TypeScript
-offKeysChange(callback?: (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void): void
-```
-
-Unregister keysChange event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | No | Used to listen for keys change event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## offVendorDefined
-
-```TypeScript
-offVendorDefined(callback?: (eventInfo: EventInfo) => void): void
-```
-
-Unregister vendorDefined event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | No | Used to listen for the vendor defined event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## on('keyRequired')
 
@@ -449,7 +330,7 @@ Register keyRequired event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -458,14 +339,14 @@ Register keyRequired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyRequired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | used to listen for the key required event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## on('keyExpired')
 
@@ -477,7 +358,7 @@ Register keyExpired event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -486,14 +367,14 @@ Register keyExpired event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keyExpired' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the key required event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for the key required event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## on('vendorDefined')
 
@@ -505,7 +386,7 @@ Register vendorDefined event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -514,14 +395,14 @@ Register vendorDefined event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'vendorDefined' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the vendor defined event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for the vendor defined event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## on('expirationUpdate')
 
@@ -533,7 +414,7 @@ Register expirationUpdate event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -542,14 +423,14 @@ Register expirationUpdate event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'expirationUpdate' | Yes | Type of the drm event to listen for. |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for expiration update event. |
+| callback | (eventInfo: EventInfo) =&gt; void | Yes | Used to listen for expiration update event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## on('keysChange')
 
@@ -561,7 +442,7 @@ Register keysChange event.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -570,134 +451,14 @@ Register keysChange event.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'keysChange' | Yes | Type of the drm event to listen for. |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | Yes | Used to listen for keys change event. |
+| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) =&gt; void | Yes | Used to listen for keys change event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-
-## onExpirationUpdate
-
-```TypeScript
-onExpirationUpdate(callback: (eventInfo: EventInfo) => void): void
-```
-
-Register expirationUpdate event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for expiration update event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## onKeyExpired
-
-```TypeScript
-onKeyExpired(callback: (eventInfo: EventInfo) => void): void
-```
-
-Register keyExpired event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the key required event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## onKeyRequired
-
-```TypeScript
-onKeyRequired(callback: (eventInfo: EventInfo) => void): void
-```
-
-Register keyRequired event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | Yes | used to listen for the key required event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## onKeysChange
-
-```TypeScript
-onKeysChange(callback: (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void): void
-```
-
-Register keysChange event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (keyInfo: KeysInfo[], newKeyAvailable: boolean) => void | Yes | Used to listen for keys change event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
-
-## onVendorDefined
-
-```TypeScript
-onVendorDefined(callback: (eventInfo: EventInfo) => void): void
-```
-
-Register vendorDefined event.
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| callback | (eventInfo: EventInfo) => void | Yes | Used to listen for the vendor defined event. |
-
-**Error codes:**
-
-| Error Code ID | Error Message |
-| --- | --- |
-| 24700101 | All unknown errors. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
 
 ## processMediaKeyResponse
 
@@ -709,7 +470,7 @@ Process the response corresponding to the media key request obtained by the appl
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -723,15 +484,15 @@ Process the response corresponding to the media key request obtained by the appl
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Uint8Array> | Promise with media key identifier in Uint8Array used to return the result. |
+| Promise&lt;Uint8Array&gt; | Promise with media key identifier in Uint8Array used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## processOfflineReleaseResponse
 
@@ -743,7 +504,7 @@ Process offline media key response.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -758,15 +519,15 @@ Process offline media key response.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## requireSecureDecoderModule
 
@@ -778,7 +539,7 @@ Whether the encrypted content require a secure decoder or not.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -798,9 +559,9 @@ Whether the encrypted content require a secure decoder or not.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 
 ## restoreOfflineMediaKeys
 
@@ -812,7 +573,7 @@ Restore offline media key.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -826,13 +587,13 @@ Restore offline media key.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 401 | The parameter check failed. Possibly because:  1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.  3.Parameter verification failed. |
-| 24700101 | All unknown errors. |
-| 24700201 | Fatal service error, for example, service died. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Possibly because:1.Mandatory parameters are left unspecified or too many parameters. 2.Incorrect parameter types.3.Parameter verification failed. |
+| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
+| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
 

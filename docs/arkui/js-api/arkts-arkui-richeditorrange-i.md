@@ -12,7 +12,8 @@ Defines the range of the **RichEditor**.
 end?: number
 ```
 
-End position of the span whose style needs to be updated. If this parameter is left empty or set to a value beyond the range, it indicates infinity.
+End position of the span whose style needs to be updated. If this parameter is left empty or set to a value beyond
+the range, it indicates infinity.
 
 **Type:** number
 
@@ -32,7 +33,8 @@ End position of the span whose style needs to be updated. If this parameter is l
 start?: number
 ```
 
-Start position of the span whose style needs to be updated. If this parameter is left empty or set to a negative value, the value **0** will be used.
+Start position of the span whose style needs to be updated. If this parameter is left empty or set to a negative
+value, the value **0** will be used.
 
 **Type:** number
 

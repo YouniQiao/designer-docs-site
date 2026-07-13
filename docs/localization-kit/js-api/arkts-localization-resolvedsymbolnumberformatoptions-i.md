@@ -1,8 +1,9 @@
 # ResolvedSymbolNumberFormatOptions
 
-Represents optional element for the ResolvedSymbolNumberFormatOptions object. Define the resolved symbol element and value that need to get.
+Represents optional element for the ResolvedSymbolNumberFormatOptions object.
+Define the resolved symbol element and value that need to get.
 
-**Inheritance/Implementation:** ResolvedSymbolNumberFormatOptions extends [Intl.ResolvedNumberFormatOptions](../../apis-na/arkts-apis/arkts-na-resolvednumberformatoptions-i.md#resolvednumberformatoptions)
+**Inheritance/Implementation:** ResolvedSymbolNumberFormatOptions extends [Intl.ResolvedNumberFormatOptions](../../apis-na/arkts-apis/arkts-na-resolvednumberformatoptions-i.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +12,7 @@ Represents optional element for the ResolvedSymbolNumberFormatOptions object. De
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## groupingSeparator

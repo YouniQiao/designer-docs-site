@@ -14,7 +14,9 @@ Boids simulation parameters bound per-boid.
 alignmentDistance?: number
 ```
 
-Perception radius for the alignment rule. Boids within this distance (inclusive) contribute to alignment force. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+Perception radius for the alignment rule. Boids within this distance (inclusive) contribute
+to alignment force. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -32,7 +34,9 @@ Perception radius for the alignment rule. Boids within this distance (inclusive)
 alignmentWeight?: number
 ```
 
-How strongly the boid steers to match the average heading of neighbours within alignmentDistance. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+How strongly the boid steers to match the average heading of neighbours within alignmentDistance.
+Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -50,7 +54,8 @@ How strongly the boid steers to match the average heading of neighbours within a
 boundaryDistance?: number
 ```
 
-Distance from boundary walls within which the boundary repulsion force takes effect. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+Distance from boundary walls within which the boundary repulsion force takes effect. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -86,7 +91,9 @@ Upper corner of the axis-aligned bounding box constraining boid movement. Defaul
 boundaryMinPos?: Vec3
 ```
 
-Lower corner of the axis-aligned bounding box constraining boid movement. When any component of boundaryMinPos is greater than or equal to the corresponding component of boundaryMaxPos, this boid is considered unbounded. Default: (0, 0, 0).
+Lower corner of the axis-aligned bounding box constraining boid movement.
+When any component of boundaryMinPos is greater than or equal to the corresponding component of
+boundaryMaxPos, this boid is considered unbounded. Default: (0, 0, 0).
 
 **Type:** Vec3
 
@@ -104,7 +111,9 @@ Lower corner of the axis-aligned bounding box constraining boid movement. When a
 boundaryWeight?: number
 ```
 
-How strongly the boid is pushed back when within boundaryDistance of the boundary box edges. Range: [0, +inf). Default: 0.0. If a value exceeding the valid range is assigned, it will be clamped.
+How strongly the boid is pushed back when within boundaryDistance of the boundary box edges.
+Range: [0, +inf). Default: 0.0.
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -122,7 +131,9 @@ How strongly the boid is pushed back when within boundaryDistance of the boundar
 cohesionDistance?: number
 ```
 
-Perception radius for the cohesion rule. Boids within this distance (inclusive) contribute to cohesion force. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+Perception radius for the cohesion rule. Boids within this distance (inclusive) contribute
+to cohesion force. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -140,7 +151,9 @@ Perception radius for the cohesion rule. Boids within this distance (inclusive) 
 cohesionWeight?: number
 ```
 
-How strongly the boid steers toward the average position of neighbours within cohesionDistance. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+How strongly the boid steers toward the average position of neighbours within cohesionDistance.
+Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -158,7 +171,8 @@ How strongly the boid steers toward the average position of neighbours within co
 gravityWeight?: number
 ```
 
-How strongly gravity field entities attract this boid. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+How strongly gravity field entities attract this boid. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -176,7 +190,8 @@ How strongly gravity field entities attract this boid. Range: [0, +inf). Default
 initialPosition?: Vec3
 ```
 
-Initial position of the boid. When it's not set, the entity's current transform position is used. Default: (NaN, NaN, NaN).
+Initial position of the boid. When it's not set, the entity's current transform position is used.
+Default: (NaN, NaN, NaN).
 
 **Type:** Vec3
 
@@ -194,7 +209,8 @@ Initial position of the boid. When it's not set, the entity's current transform 
 initialRotation?: Quaternion
 ```
 
-Initial rotation of the boid. When it's not set, the entity's current transform rotation is used. Default: (NaN, NaN, NaN, NaN).
+Initial rotation of the boid. When it's not set, the entity's current transform rotation is used.
+Default: (NaN, NaN, NaN, NaN).
 
 **Type:** Quaternion
 
@@ -230,7 +246,8 @@ Initial velocity of the boid. Default: (0, 0, 0).
 maxAccelerationMag?: number
 ```
 
-Maximum acceleration the boid can reach per simulation frame. Range: [0, +inf). Default: approximately 39.06. If a value exceeding the valid range is assigned, it will be clamped.
+Maximum acceleration the boid can reach per simulation frame. Range: [0, +inf). Default: approximately 39.06.
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -248,7 +265,9 @@ Maximum acceleration the boid can reach per simulation frame. Range: [0, +inf). 
 maxTurnRate?: Vec3
 ```
 
-Per-axis rotation limit in radians per simulation frame. Range: [0, +inf) per axis. Default: approximately 0.0377 per axis. If a value exceeding the valid range is assigned, it will be clamped.
+Per-axis rotation limit in radians per simulation frame. Range: [0, +inf) per axis.
+Default: approximately 0.0377 per axis.
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** Vec3
 
@@ -266,7 +285,8 @@ Per-axis rotation limit in radians per simulation frame. Range: [0, +inf) per ax
 maxVelocityMag?: number
 ```
 
-Maximum speed the boid can reach per simulation frame. Range: [0, +inf). Default: approximately 0.625. If a value exceeding the valid range is assigned, it will be clamped.
+Maximum speed the boid can reach per simulation frame. Range: [0, +inf). Default: approximately 0.625.
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -284,7 +304,8 @@ Maximum speed the boid can reach per simulation frame. Range: [0, +inf). Default
 repulsionWeight?: number
 ```
 
-How strongly repulsion field entities push this boid away. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+How strongly repulsion field entities push this boid away. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -302,7 +323,9 @@ How strongly repulsion field entities push this boid away. Range: [0, +inf). Def
 separationDistance?: number
 ```
 
-Perception radius for the separation rule. Only boids strictly within this distance contribute to separation force (force is zero at the boundary). Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+Perception radius for the separation rule. Only boids strictly within this distance contribute
+to separation force (force is zero at the boundary). Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 
@@ -320,7 +343,8 @@ Perception radius for the separation rule. Only boids strictly within this dista
 separationWeight?: number
 ```
 
-How strongly the boid steers away from nearby neighbours within separationDistance. Range: [0, +inf). Default: 0.0 If a value exceeding the valid range is assigned, it will be clamped.
+How strongly the boid steers away from nearby neighbours within separationDistance. Range: [0, +inf). Default: 0.0
+If a value exceeding the valid range is assigned, it will be clamped.
 
 **Type:** number
 

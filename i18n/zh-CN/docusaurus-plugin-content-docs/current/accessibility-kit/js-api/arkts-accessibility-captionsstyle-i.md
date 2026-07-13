@@ -1,68 +1,56 @@
 # CaptionsStyle
 
-Describes the style of captions.
+字幕风格。
 
 **起始版本：** 8
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
-
-## 导入模块
-
-```TypeScript
-import { accessibility } from '@kit.AccessibilityKit';
-```
 
 ## backgroundColor
 
 ```TypeScript
-backgroundColor: int | string
+backgroundColor: number | string
 ```
 
-Background color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+描述字幕背景颜色。
 
-**类型：** int | string
+number：HEX 格式颜色，支持 rgb 或 argb。
+
+string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
+
+例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+
+**类型：** number | string
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
 
-## fontFamily
+## fontColor
 
 ```TypeScript
-fontFamily: CaptionsFontFamily
+fontColor: number | string
 ```
 
-Font family of captions.
+描述字幕字体颜色。
 
-**类型：** CaptionsFontFamily
+number：HEX 格式颜色，支持 rgb 或 argb。
+
+string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
+
+例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+
+**类型：** number | string
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
-
-**系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
-
-## windowColor
-
-```TypeScript
-windowColor: int | string
-```
-
-Window color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
-
-**类型：** int | string
-
-**起始版本：** 8
-
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
-
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
 
@@ -72,51 +60,75 @@ Window color of captions. **number**: HEX format, used to represent colors defin
 fontEdgeType: CaptionsFontEdgeType
 ```
 
-Font edge type of captions.
+描述字幕字体边缘。
 
 **类型：** CaptionsFontEdgeType
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
+
+## fontFamily
+
+```TypeScript
+fontFamily: CaptionsFontFamily
+```
+
+描述字幕字体。
+
+**类型：** CaptionsFontFamily
+
+**起始版本：** 8
+
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
 
 ## fontScale
 
 ```TypeScript
-fontScale: int
+fontScale: number
 ```
 
-Font scale factor of captions, in percentage. The value ranges from 1 to 200.
+描述字幕字体缩放系数，单位%，参数范围1~200。
 
-**类型：** int
+**类型：** number
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
 
-## fontColor
+## windowColor
 
 ```TypeScript
-fontColor: int | string
+windowColor: number | string
 ```
 
-Font color of captions. **number**: HEX format, used to represent colors defined in either the RGB or ARGB color models. **string**: #rrggbb, #rrggbbaa, #rgb, or #rgba format. Example: opaque red; number: 0xffff0000; string: '#ff0000', '#ff0000ff', '#f00', or '#f00f'
+描述字幕窗口颜色。
 
-**类型：** int | string
+number：HEX 格式颜色，支持 rgb 或 argb。
+
+string：支持 '#rrggbb', '#rrggbbaa', '#rgb', '#rgba' 格式。
+
+例：不透明红色，number: 0xffff0000，string: '#ff0000', '#ff0000ff', '#f00', '#f00f'。
+
+**类型：** number | string
 
 **起始版本：** 8
 
-**原子化服务API：** 从API version 23开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
 
-**卡片能力：** 从API version 23开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本23开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.BarrierFree.Accessibility.Hearing
 

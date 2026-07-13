@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## configEventPolicy
@@ -12,7 +12,9 @@ import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
 function configEventPolicy(policy: EventPolicy): Promise<void>
 ```
 
-Sets a system event configuration policy. This API uses a promise to return the result. In the same lifecycle, you can set system event configuration by policy.
+Sets a system event configuration policy. This API uses a promise to return the result.
+
+In the same lifecycle, you can set system event configuration by policy.
 
 **Since:** 22
 
@@ -30,7 +32,7 @@ Sets a system event configuration policy. This API uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value.<br>For details about the event configuration policy, see [EventPolicy](arkts-performanceanalysis-eventpolicy-i.md#eventpolicy). If theconfiguration policy is incorrect, the API returns a failure message.<br>- If the parameter type is incorrect, error code 401 is returned.<br>- If the parameter specifications are incorrect, the error information is output in HiLog logs. |
+| Promise&lt;void&gt; | Promise that returns no value.<br>For details about the event configuration policy, see [EventPolicy](arkts-performanceanalysis-eventpolicy-i.md). If theconfiguration policy is incorrect, the API returns a failure message.<br>- If the parameter type is incorrect, error code 401 is returned.<br>- If the parameter specifications are incorrect, the error information is output in HiLog logs. |
 
 **Example**
 

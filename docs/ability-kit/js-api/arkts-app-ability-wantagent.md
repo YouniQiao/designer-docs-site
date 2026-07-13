@@ -1,5 +1,15 @@
 # @ohos.app.ability.wantAgent
 
+The WantAgent module encapsulates a [Want](arkts-ability-want-c.md) object, enabling an application to
+trigger a WantAgent object to perform specified operations (such as starting an ability or publishing a common event)
+at a future time.
+
+The module provides the APIs for creating a WantAgent object, obtaining the bundle name and UID of the application to
+which a WantAgent object belongs, proactively triggering a WantAgent object, and checking whether two WantAgent
+objects are the same. A typical use scenario of WantAgent is notification processing. For example, when a user
+touches a notification, the [trigger](trigger) API of WantAgent is triggered and the target application is
+started. For details, see [Notification](../../../../notification/notification-with-wantagent.md).
+
 ## Modules to Import
 
 ```TypeScript
@@ -12,11 +22,11 @@ import { WantAgent } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [wantAgent](arkts-wantagent-n.md) | WantAgent模块封装了[Want]{@link ./@ohos.app.ability.Want:Want}对象，允许应用程序在未来的某个时间点触发WantAgent实例执行指定操作（如启动Ability、发送公共事件等）。 该模块提供了创建WantAgent实例、获取WantAgent实例所属应用的包名、获取WantAgent实例所属应用的UID、主动触发WantAgent实例、判断两个WantAgent实例是否相等等功能。WantAgent的一个典型应 用场景是通知处理。例如，当用户点击通知时，会触发WantAgent的[trigger]{@link trigger}接口，并拉起目标应用。具体使用请参考[Notification](docroot://notification/notification-with-wantagent.md)。 |
+| [wantAgent](arkts-ability-wantagent-n.md) | The WantAgent module encapsulates a [Want](arkts-ability-want-c.md) object, enabling an application to trigger a WantAgent object to perform specified operations (such as starting an ability or publishing a common event)at a future time.The module provides the APIs for creating a WantAgent object, obtaining the bundle name and UID of the application towhich a WantAgent object belongs, proactively triggering a WantAgent object, and checking whether two WantAgent objects are the same. A typical use scenario of WantAgent is notification processing. For example, when a user touches a notification, the [trigger](trigger) API of WantAgent is triggered and the target application is started. For details, see [Notification](../../../../notification/notification-with-wantagent.md). |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [WantAgent](arkts-wantagent-t.md) | WantAgent对象。 |
+| [WantAgent](arkts-ability-wantagent-t.md) | Target WantAgent object. |
 

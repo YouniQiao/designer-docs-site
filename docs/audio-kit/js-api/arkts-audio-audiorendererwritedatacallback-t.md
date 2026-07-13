@@ -1,12 +1,15 @@
 # AudioRendererWriteDataCallback
 
 ```TypeScript
-type AudioRendererWriteDataCallback = (data: ArrayBuffer) => AudioDataCallbackResult
+type AudioRendererWriteDataCallback = (data: ArrayBuffer) => AudioDataCallbackResult | void
 ```
 
-Type definition of callback function for audio renderer write data.
+Defines the callback function used to write data to the audio renderer. Once the callback function finishes its
+execution, the audio service queues the data pointed to by **data** for playback. Therefore, do not change the data
+outside the callback. It is crucial to fill **data** with the exact length of data designated for playback;
+otherwise, noises may occur during playback.
 
-**Since:** 23
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -14,11 +17,11 @@ Type definition of callback function for audio renderer write data.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | ArrayBuffer | Yes | audio data array buffer. |
+| data | ArrayBuffer | Yes | Data to be written to the buffer. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| AudioDataCallbackResult | result of callback. If AudioDataCallbackResult.VALID  is returned, it indicates the data is valid and will be played. If AudioDataCallbackResult.INVALID  is returned, it indicates the data is will not be played. |
+| AudioDataCallbackResult \| void | If **void** or **AudioDataCallbackResult.VALID** is returned, the datais valid and the audio data is played. If **AudioDataCallbackResult.INVALID** is returned, the data is invalidand the audio data is not played. |
 

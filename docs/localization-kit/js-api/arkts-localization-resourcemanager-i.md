@@ -1,6 +1,32 @@
 # ResourceManager
 
-Provides APIs for accessing application resources and system resources. > **NOTE** > > - The methods involved in **ResourceManager** are applicable only to the TypeScript-based declarative development > paradigm. > > - Resource files are defined in the **resources** directory of the project. You can obtain resource values such > as strings, string arrays, and colors based on the specified **resName**, **resId**, or **Resource** object. > **resName** indicates the resource name, **resId** indicates the resource ID, which can be obtained through `$r( > *resource-address*).id`, for example, `$r('app.string.test').id`. > > - No matter whether resources are in the same HAP or different HAPs or HSPs, you are advised to use the API with > **resName** or **resId** specified. Using the **Resource** object will take a longer time. If the resources are > in different HAPs or HSPs, you first need to use > [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-createmodulecontext-f.md#createmodulecontext-1) > to create the context of the corresponding module and then call the API with **resName** or **resId** specified. > For details, see > [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources). > > - In API version 22 and earlier versions, an exception is thrown due to an invalid ID when the intermediate-code > HAR or bytecode HAR accesses resources through resource ID-related APIs. From API version 23, the > intermediate-code HAR or bytecode HAR can properly access resources through resource ID-related APIs. > For details, see [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources). > > - For details about the content of the test files used in the sample code, see > [Appendix](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
+Provides APIs for accessing application resources and system resources.
+
+> **NOTE**
+>
+> - The methods involved in **ResourceManager** are applicable only to the TypeScript-based declarative development
+> paradigm.
+>
+> - Resource files are defined in the **resources** directory of the project. You can obtain resource values such
+> as strings, string arrays, and colors based on the specified **resName**, **resId**, or **Resource** object.
+> **resName** indicates the resource name, **resId** indicates the resource ID, which can be obtained through `$r(
+> *resource-address*).id`, for example, `$r('app.string.test').id`.
+>
+> - No matter whether resources are in the same HAP or different HAPs or HSPs, you are advised to use the API with
+> **resName** or **resId** specified. Using the **Resource** object will take a longer time. If the resources are
+> in different HAPs or HSPs, you first need to use
+> [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-createmodulecontext-f.md#createmodulecontext-1)
+> to create the context of the corresponding module and then call the API with **resName** or **resId** specified.
+> For details, see
+> [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources).
+>
+> - In API version 22 and earlier versions, an exception is thrown due to an invalid ID when the intermediate-code
+> HAR or bytecode HAR accesses resources through resource ID-related APIs. From API version 23, the
+> intermediate-code HAR or bytecode HAR can properly access resources through resource ID-related APIs.
+> For details, see [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources).
+>
+> - For details about the content of the test files used in the sample code, see
+> [Appendix](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#appendix).
 
 **Since:** 6
 
@@ -9,7 +35,7 @@ Provides APIs for accessing application resources and system resources. > **NOTE
 ## Modules to Import
 
 ```TypeScript
-import { resourceManager } from '@ohos.resourceManager';
+import { resourceManager } from '@kit.LocalizationKit';
 ```
 
 ## addResource
@@ -18,7 +44,11 @@ import { resourceManager } from '@ohos.resourceManager';
 addResource(path: string) : void
 ```
 
-Loads resources from the specified path. > **NOTE** > > Resource overwriting is not supported for the **rawfile** and **resfile** directories.
+Loads resources from the specified path.
+
+> **NOTE**
+>
+> Resource overwriting is not supported for the **rawfile** and **resfile** directories.
 
 **Since:** 10
 
@@ -67,7 +97,8 @@ export default class EntryAbility extends UIAbility {
 closeRawFd(path: string, callback: _AsyncCallback<void>): void
 ```
 
-Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses an asynchronous callback to return the result.
+Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -124,7 +155,8 @@ export default class EntryAbility extends UIAbility {
 closeRawFd(path: string): Promise<void>
 ```
 
-Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses a promise to return the result.
+Closes the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API
+uses a promise to return the result.
 
 **Since:** 9
 
@@ -181,7 +213,8 @@ export default class EntryAbility extends UIAbility {
 closeRawFdSync(path: string): void
 ```
 
-Closes the file descriptor (fd) of the HAP where the **rawfile** file in the **resources/rawfile** directory is located. This API returns the result synchronously.
+Closes the file descriptor (fd) of the HAP where the **rawfile** file in the **resources/rawfile** directory is
+located. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -233,7 +266,8 @@ export default class EntryAbility extends UIAbility {
 closeRawFileDescriptor(path: string, callback: AsyncCallback<void>): void
 ```
 
-Closes the fd of the rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result.
+Closes the fd of the rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 8
 
@@ -271,7 +305,8 @@ resourceManager.getResourceManager((error, mgr) => {
 closeRawFileDescriptor(path: string): Promise<void>
 ```
 
-Closes the fd of the rawfile in the **resources/rawfile** directory. This API uses a promise to return the result.
+Closes the fd of the rawfile in the **resources/rawfile** directory. This API uses a promise to return the
+result.
 
 **Since:** 8
 
@@ -529,7 +564,8 @@ export default class EntryAbility extends UIAbility {
 getColor(resId: number, callback: _AsyncCallback<number>): void
 ```
 
-Obtains a color value based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains a color value based on the specified resource ID. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -629,7 +665,8 @@ export default class EntryAbility extends UIAbility {
 getColor(resource: Resource, callback: _AsyncCallback<number>): void
 ```
 
-Obtains a color value based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains a color value based on the specified resource object. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 10
 
@@ -776,7 +813,8 @@ this.context.resourceManager.getColor(resource)
 getColorByName(resName: string, callback: _AsyncCallback<number>): void
 ```
 
-Obtains a color value based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains a color value based on the specified resource name. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 10
 
@@ -1388,7 +1426,16 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). > > - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for > example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+>
+> - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for
+> example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
 
 **Since:** 18
 
@@ -1472,7 +1519,16 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringValueSync(resId: number, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). > > - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for > example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+>
+> - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for
+> example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
 
 **Since:** 18
 
@@ -1556,7 +1612,14 @@ export default class EntryAbility extends UIAbility {
 getDoublePluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource object and formats the string based on the **args** parameter. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 18
 
@@ -1647,7 +1710,8 @@ try {
 getDrawableDescriptor(resId: number, density?: number, type?: number): DrawableDescriptor
 ```
 
-Obtains a **DrawableDescriptor** object for icon display based on the specified resource ID. This API returns the result synchronously.
+Obtains a **DrawableDescriptor** object for icon display based on the specified resource ID. This API returns the
+result synchronously.
 
 **Since:** 10
 
@@ -1721,7 +1785,8 @@ export default class EntryAbility extends UIAbility {
 getDrawableDescriptor(resource: Resource, density?: number, type?: number): DrawableDescriptor
 ```
 
-Obtains a **DrawableDescriptor** object for icon display based on the specified resource object. This API returns the result synchronously.
+Obtains a **DrawableDescriptor** object for icon display based on the specified resource object. This API returns
+the result synchronously.
 
 **Since:** 10
 
@@ -1799,7 +1864,8 @@ try {
 getDrawableDescriptorByName(resName: string, density?: number, type?: number): DrawableDescriptor
 ```
 
-Obtains a **DrawableDescriptor** object for icon display based on the specified resource name. This API returns the result synchronously.
+Obtains a **DrawableDescriptor** object for icon display based on the specified resource name. This API returns
+the result synchronously.
 
 **Since:** 10
 
@@ -1873,7 +1939,16 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringByNameSync(resName: string, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource name and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). > > - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for > example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource name and formats the string based on the **args** parameter. This API returns the result synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+>
+> - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for
+> example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
 
 **Since:** 18
 
@@ -1957,7 +2032,16 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringValueSync(resId: number, num: number,...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource ID and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html). > > - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for > example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource ID and formats the string based on the **args** parameter. This API returns the result synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+>
+> - In languages such as English and German, singular/plural numbers are classified into cardinal numbers (for
+> example, 1, 2, 3) and ordinal numbers (for example, 1st, 2nd, 3rd). This API applies only to cardinal numbers.
 
 **Since:** 18
 
@@ -2041,7 +2125,14 @@ export default class EntryAbility extends UIAbility {
 getIntPluralStringValueSync(resource: Resource, num: number, ...args: Array<string | number>): string
 ```
 
-Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified resource object and formats the string based on the **args** parameter. This API returns the result synchronously. > **NOTE** > > - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains a [singular/plural](../../../../internationalization/l10n-singular-plural.md) string based on the specified
+resource object and formats the string based on the **args** parameter. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> - Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 18
 
@@ -2201,7 +2292,8 @@ export default class EntryAbility extends UIAbility {
 getMedia(resId: number, callback: AsyncCallback<Uint8Array>): void
 ```
 
-Obtains media file content based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains media file content based on the specified resource ID. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 6
 
@@ -2282,7 +2374,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getMediaBase64(resId: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code based on the specified resource ID. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 6
 
@@ -2363,7 +2456,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getMediaBase64ByName(resName: string, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code based on the specified resource name. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -2419,7 +2513,8 @@ export default class EntryAbility extends UIAbility {
 getMediaBase64ByName(resName: string, density: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource name. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -2476,7 +2571,8 @@ export default class EntryAbility extends UIAbility {
 getMediaBase64ByName(resName: string): Promise<string>
 ```
 
-Obtains an image's Base64 code based on the specified resource name. This API uses a promise to return the result.
+Obtains an image's Base64 code based on the specified resource name. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -2535,7 +2631,8 @@ export default class EntryAbility extends UIAbility {
 getMediaBase64ByName(resName: string, density: number): Promise<string>
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource name. This API uses a promise to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource name. This API
+uses a promise to return the result.
 
 **Since:** 10
 
@@ -2595,7 +2692,8 @@ export default class EntryAbility extends UIAbility {
 getMediaBase64ByNameSync(resName: string, density?: number): string
 ```
 
-Obtains an image's Base64 code for the default or specified screen density based on the specified resource name. This API returns the result synchronously.
+Obtains an image's Base64 code for the default or specified screen density based on the specified resource name.
+This API returns the result synchronously.
 
 **Since:** 10
 
@@ -2660,7 +2758,8 @@ export default class EntryAbility extends UIAbility {
 getMediaByName(resName: string, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains media file content based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains media file content based on the specified resource name. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -2716,7 +2815,8 @@ export default class EntryAbility extends UIAbility {
 getMediaByName(resName: string, density: number, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains the media file content for the specified screen density based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains the media file content for the specified screen density based on the specified resource name. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -2832,7 +2932,8 @@ export default class EntryAbility extends UIAbility {
 getMediaByName(resName: string, density: number): Promise<Uint8Array>
 ```
 
-Obtains the media file content for the specified screen density based on the specified resource name. This API uses a promise to return the result.
+Obtains the media file content for the specified screen density based on the specified resource name. This API
+uses a promise to return the result.
 
 **Since:** 10
 
@@ -2892,7 +2993,8 @@ export default class EntryAbility extends UIAbility {
 getMediaByNameSync(resName: string, density?: number): Uint8Array
 ```
 
-Obtains the media file content for the default or specified screen density based on the specified resource name. This API returns the result synchronously.
+Obtains the media file content for the default or specified screen density based on the specified resource name.
+This API returns the result synchronously.
 
 **Since:** 10
 
@@ -2957,7 +3059,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContent(resource: Resource, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains media file content based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains media file content based on the specified resource object. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -3019,7 +3122,8 @@ try {
 getMediaContent(resource: Resource, density: number, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains media file content for the specified screen density based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains media file content for the specified screen density based on the specified resource object. This API uses
+an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -3147,7 +3251,8 @@ try {
 getMediaContent(resource: Resource, density: number): Promise<Uint8Array>
 ```
 
-Obtains media file content for the specified screen density based on the specified resource object. This API uses a promise to return the result.
+Obtains media file content for the specified screen density based on the specified resource object. This API uses
+a promise to return the result.
 
 **Since:** 10
 
@@ -3213,7 +3318,8 @@ try {
 getMediaContent(resId: number, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains media file content based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains media file content based on the specified resource ID. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -3270,7 +3376,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContent(resId: number, density: number, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains the media file content for the specified screen density based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains the media file content for the specified screen density based on the specified resource ID. This API uses
+an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -3386,7 +3493,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContent(resId: number, density: number): Promise<Uint8Array>
 ```
 
-Obtains the media file content for the specified screen density based on the specified resource ID. This API uses a promise to return the result.
+Obtains the media file content for the specified screen density based on the specified resource ID. This API uses
+a promise to return the result.
 
 **Since:** 10
 
@@ -3446,7 +3554,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentBase64(resource: Resource, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code based on the specified resource object. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -3508,7 +3617,8 @@ try {
 getMediaContentBase64(resource: Resource, density: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource object. This API
+uses an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -3571,7 +3681,8 @@ try {
 getMediaContentBase64(resource: Resource): Promise<string>
 ```
 
-Obtains an image's Base64 code based on the specified resource object. This API uses a promise to return the result.
+Obtains an image's Base64 code based on the specified resource object. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -3636,7 +3747,8 @@ try {
 getMediaContentBase64(resource: Resource, density: number): Promise<string>
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource object. This API uses a promise to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource object. This API
+uses a promise to return the result.
 
 **Since:** 10
 
@@ -3702,7 +3814,8 @@ try {
 getMediaContentBase64(resId: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code based on the specified resource ID. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 9
 
@@ -3758,7 +3871,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentBase64(resId: number, density: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource ID. This API uses
+an asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -3874,7 +3988,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentBase64(resId: number, density: number): Promise<string>
 ```
 
-Obtains an image's Base64 code for the specified screen density based on the specified resource ID. This API uses a promise to return the result.
+Obtains an image's Base64 code for the specified screen density based on the specified resource ID. This API uses
+a promise to return the result.
 
 **Since:** 10
 
@@ -3934,7 +4049,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentBase64Sync(resId: number, density?: number): string
 ```
 
-Obtains an image's Base64 code for the default or specified screen density based on the specified resource ID. This API returns the result synchronously.
+Obtains an image's Base64 code for the default or specified screen density based on the specified resource ID.
+This API returns the result synchronously.
 
 **Since:** 10
 
@@ -3999,7 +4115,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentBase64Sync(resource: Resource, density?: number): string
 ```
 
-Obtains an image's Base64 code for the default or specified screen density based on the specified resource object. This API returns the result synchronously.
+Obtains an image's Base64 code for the default or specified screen density based on the specified resource
+object. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -4069,7 +4186,8 @@ try {
 getMediaContentSync(resId: number, density?: number): Uint8Array
 ```
 
-Obtains the media file content for the default or specified screen density based on the specified resource ID. This API returns the result synchronously.
+Obtains the media file content for the default or specified screen density based on the specified resource ID.
+This API returns the result synchronously.
 
 **Since:** 10
 
@@ -4134,7 +4252,8 @@ export default class EntryAbility extends UIAbility {
 getMediaContentSync(resource: Resource, density?: number): Uint8Array
 ```
 
-Obtains the media file content for the default or specified screen density based on the specified resource object. This API returns the result synchronously.
+Obtains the media file content for the default or specified screen density based on the specified resource
+object. This API returns the result synchronously.
 
 **Since:** 10
 
@@ -4302,7 +4421,8 @@ export default class EntryAbility extends UIAbility {
 getNumber(resource: Resource): number
 ```
 
-Obtains an integer or float number based on the specified resource object. This API returns the result synchronously.
+Obtains an integer or float number based on the specified resource object. This API returns the result
+synchronously.
 
 **Since:** 9
 
@@ -4380,7 +4500,8 @@ try {
 getNumberByName(resName: string): number
 ```
 
-Obtains an integer or float number based on the specified resource name. This API returns the result synchronously.
+Obtains an integer or float number based on the specified resource name. This API returns the result
+synchronously.
 
 **Since:** 9
 
@@ -4478,7 +4599,10 @@ export default class EntryAbility extends UIAbility {
 getOverrideConfiguration(): Configuration
 ```
 
-Obtains the configuration of differentiated resources. This API returns the result synchronously. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1) to obtain the configuration of differentiated resources.
+Obtains the configuration of differentiated resources. This API returns the result synchronously. This API allows
+a common **ResourceManager** object and a **ResourceManager** object obtained through
+[getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1) to obtain the
+configuration of differentiated resources.
 
 **Since:** 12
 
@@ -4522,7 +4646,12 @@ export default class EntryAbility extends UIAbility {
 getOverrideResourceManager(configuration?: Configuration): ResourceManager
 ```
 
-Obtains a **ResourceManager** object for loading differentiated resources. This API returns the result synchronously. The resource configuration (including the language, color mode, resolution, and orientation) obtained by a common **ResourceManager** object is determined by the system. With this API, an application can obtain resources of the specified configuration (that is, differentiated resources), for example, dark color resources in light color mode.
+Obtains a **ResourceManager** object for loading differentiated resources. This API returns the result
+synchronously.
+The resource configuration (including the language, color mode, resolution, and orientation) obtained by a common
+**ResourceManager** object is determined by the system. With this API, an application can obtain resources of the
+specified configuration (that is, differentiated resources), for example, dark color resources in light color
+mode.
 
 **Since:** 12
 
@@ -4578,7 +4707,13 @@ export default class EntryAbility extends UIAbility {
 getPluralString(resId: number, num: number, callback: AsyncCallback<string>): void
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous callback to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 6
 
@@ -4619,7 +4754,13 @@ resourceManager.getResourceManager((error, mgr) => {
 getPluralString(resId: number, num: number): Promise<string>
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 6
 
@@ -4663,7 +4804,13 @@ resourceManager.getResourceManager((error, mgr) => {
 getPluralStringByName(resName: string, num: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource name. This API uses an asynchronous callback to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource name. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -4738,7 +4885,13 @@ this.context.resourceManager.getPluralStringByName("test", 1, (error: BusinessEr
 getPluralStringByName(resName: string, num: number): Promise<string>
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource name. This API uses a promise to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource name. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -4818,7 +4971,13 @@ this.context.resourceManager.getPluralStringByName("test", 1)
 getPluralStringByNameSync(resName: string, num: number): string
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource name. This API returns the result synchronously. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource name. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 10
 
@@ -4899,7 +5058,13 @@ try {
 getPluralStringValue(resource: Resource, num: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource object. This API uses an asynchronous callback to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource object. This API uses an
+asynchronous callback to return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -4983,7 +5148,13 @@ this.context.resourceManager.getPluralStringValue(resource, 1,
 getPluralStringValue(resource: Resource, num: number): Promise<string>
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource object. This API uses a promise to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource object. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -5071,7 +5242,13 @@ this.context.resourceManager.getPluralStringValue(resource, 1)
 getPluralStringValue(resId: number, num: number, callback: _AsyncCallback<string>): void
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous callback to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource ID. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -5147,7 +5324,13 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1,
 getPluralStringValue(resId: number, num: number): Promise<string>
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to return the result. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource ID. This API uses a promise to
+return the result.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 9
 
@@ -5227,7 +5410,13 @@ this.context.resourceManager.getPluralStringValue($r("app.plural.test").id, 1)
 getPluralStringValueSync(resId: number, num: number): string
 ```
 
-Obtains singular/plural strings based on the specified resource ID and quantity. This API returns the result synchronously. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified resource ID and quantity. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 10
 
@@ -5308,7 +5497,13 @@ try {
 getPluralStringValueSync(resource: Resource, num: number): string
 ```
 
-Obtains singular/plural strings based on the specified quantity and resource object. This API returns the result synchronously. > **NOTE** > > Strings distinguish between singular and plural forms in all languages except Chinese. For details, see > [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+Obtains singular/plural strings based on the specified quantity and resource object. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> Strings distinguish between singular and plural forms in all languages except Chinese. For details, see
+> [Language Plural Rules](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 **Since:** 10
 
@@ -5397,7 +5592,14 @@ try {
 getRawFd(path: string, callback: _AsyncCallback<RawFileDescriptor>): void
 ```
 
-Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses an asynchronous callback to return the result. > **NOTE** > > To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to > close the fd after use.
+Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API
+uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to
+> close the fd after use.
 
 **Since:** 9
 
@@ -5455,7 +5657,14 @@ export default class EntryAbility extends UIAbility {
 getRawFd(path: string): Promise<RawFileDescriptor>
 ```
 
-Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API uses a promise to return the result. > **NOTE** > > To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to > close the fd after use.
+Obtains the fd of the HAP where a specific rawfile in the **resources/rawfile** directory is located. This API
+uses a promise to return the result.
+
+> **NOTE**
+>
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to
+> close the fd after use.
 
 **Since:** 9
 
@@ -5516,7 +5725,14 @@ export default class EntryAbility extends UIAbility {
 getRawFdSync(path: string): RawFileDescriptor
 ```
 
-Obtains the file descriptor (fd) of the HAP where the rawfile file in the resources/rawfile directory is located. This API is called in synchronous mode. > **NOTE** > > To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or > [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to > close the fd after use.
+Obtains the file descriptor (fd) of the HAP where the rawfile file in the resources/rawfile directory is located.
+This API is called in synchronous mode.
+
+> **NOTE**
+>
+> To prevent resource leakage, call [closeRawFdSync](arkts-localization-resourcemanager-i.md#closerawfdsync-1) or
+> [closeRawFd](arkts-localization-resourcemanager-i.md#closerawfd-1) to
+> close the fd after use.
 
 **Since:** 10
 
@@ -5570,7 +5786,8 @@ export default class EntryAbility extends UIAbility {
 getRawFile(path: string, callback: AsyncCallback<Uint8Array>): void
 ```
 
-Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result.
+Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 8
 
@@ -5610,7 +5827,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getRawFile(path: string): Promise<Uint8Array>
 ```
 
-Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses a promise to return the result.
+Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses a promise to return the
+result.
 
 **Since:** 8
 
@@ -5653,7 +5871,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getRawFileContent(path: string, callback: _AsyncCallback<Uint8Array>): void
 ```
 
-Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result.
+Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 9
 
@@ -5708,7 +5927,8 @@ export default class EntryAbility extends UIAbility {
 getRawFileContent(path: string): Promise<Uint8Array>
 ```
 
-Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses a promise to return the result.
+Obtains the content of a rawfile in the **resources/rawfile** directory. This API uses a promise to return the
+result.
 
 **Since:** 9
 
@@ -5766,7 +5986,8 @@ export default class EntryAbility extends UIAbility {
 getRawFileContentSync(path: string): Uint8Array
 ```
 
-Obtains the content of a rawfile in the **resources/rawfile** directory. This API returns the result synchronously.
+Obtains the content of a rawfile in the **resources/rawfile** directory. This API returns the result
+synchronously.
 
 **Since:** 10
 
@@ -5820,7 +6041,8 @@ export default class EntryAbility extends UIAbility {
 getRawFileDescriptor(path: string, callback: AsyncCallback<RawFileDescriptor>): void
 ```
 
-Obtains the fd of the rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result.
+Obtains the fd of the rawfile in the **resources/rawfile** directory. This API uses an asynchronous callback to
+return the result.
 
 **Since:** 8
 
@@ -5862,7 +6084,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getRawFileDescriptor(path: string): Promise<RawFileDescriptor>
 ```
 
-Obtains the fd of the rawfile in the **resources/rawfile** directory. This API uses a promise to return the result.
+Obtains the fd of the rawfile in the **resources/rawfile** directory. This API uses a promise to return the
+result.
 
 **Since:** 8
 
@@ -5907,7 +6130,13 @@ resourceManager.getResourceManager((error, mgr) => {
 getRawFileList(path: string, callback: _AsyncCallback<Array<string>>): void
 ```
 
-Obtains the list of folders and files in the **resources/rawfile** directory. This API uses an asynchronous callback to return the result. > **NOTE** > > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the > directory, the list of the folders and files is returned.
+Obtains the list of folders and files in the **resources/rawfile** directory. This API uses an asynchronous
+callback to return the result.
+
+> **NOTE**
+>
+> If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the
+> directory, the list of the folders and files is returned.
 
 **Since:** 10
 
@@ -5958,7 +6187,13 @@ export default class EntryAbility extends UIAbility {
 getRawFileList(path: string): Promise<Array<string>>
 ```
 
-Obtains the list of folders and files in the **resources/rawfile** directory. This API uses a promise to return the result. > **NOTE** > > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the > directory, the list of the folders and files is returned.
+Obtains the list of folders and files in the **resources/rawfile** directory. This API uses a promise to return
+the result.
+
+> **NOTE**
+>
+> If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the
+> directory, the list of the folders and files is returned.
 
 **Since:** 10
 
@@ -6014,7 +6249,13 @@ export default class EntryAbility extends UIAbility {
 getRawFileListSync(path: string): Array<string>
 ```
 
-Obtains the list of folders and files in the **resources/rawfile** directory. This API returns the result synchronously. > **NOTE** > > If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the > directory, the list of the folders and files is returned.
+Obtains the list of folders and files in the **resources/rawfile** directory. This API returns the result
+synchronously.
+
+> **NOTE**
+>
+> If there is no folder or file in the directory, an exception is thrown. If there are folders and files in the
+> directory, the list of the folders and files is returned.
 
 **Since:** 10
 
@@ -6222,7 +6463,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getStringArray(resId: number, callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains a string array based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains a string array based on the specified resource ID. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 6
 
@@ -6303,7 +6545,8 @@ resourceManager.getResourceManager((error, mgr) => {
 getStringArrayByName(resName: string, callback: _AsyncCallback<Array<string>>): void
 ```
 
-Obtains a string array based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains a string array based on the specified resource name. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -6522,7 +6765,8 @@ export default class EntryAbility extends UIAbility {
 getStringArrayValue(resource: Resource, callback: _AsyncCallback<Array<string>>): void
 ```
 
-Obtains a string array based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains a string array based on the specified resource object. This API uses an asynchronous callback to return
+the result.
 
 **Since:** 9
 
@@ -6677,7 +6921,8 @@ this.context.resourceManager.getStringArrayValue(resource)
 getStringArrayValue(resId: number, callback: _AsyncCallback<Array<string>>): void
 ```
 
-Obtains a string array based on the specified resource ID. This API uses an asynchronous callback to return the result.
+Obtains a string array based on the specified resource ID. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -6977,7 +7222,8 @@ try {
 getStringByName(resName: string, callback: _AsyncCallback<string>): void
 ```
 
-Obtains a string based on the specified resource name. This API uses an asynchronous callback to return the result.
+Obtains a string based on the specified resource name. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -7181,7 +7427,8 @@ export default class EntryAbility extends UIAbility {
 getStringByNameSync(resName: string, ...args: Array<string | number>): string
 ```
 
-Obtains a string based on the specified resource name and formats the string based on **args**. This API returns the result synchronously.
+Obtains a string based on the specified resource name and formats the string based on **args**. This API returns
+the result synchronously.
 
 **Since:** 10
 
@@ -7325,7 +7572,8 @@ export default class EntryAbility extends UIAbility {
 getStringSync(resId: number, ...args: Array<string | number>): string
 ```
 
-Obtains a string based on the specified resource ID and formats the string based on **args**. This API returns the result synchronously.
+Obtains a string based on the specified resource ID and formats the string based on **args**. This API returns
+the result synchronously.
 
 **Since:** 10
 
@@ -7475,7 +7723,8 @@ try {
 getStringSync(resource: Resource, ...args: Array<string | number>): string
 ```
 
-Obtains a string based on the specified resource object and formats the string based on **args**. This API returns the result synchronously.
+Obtains a string based on the specified resource object and formats the string based on **args**. This API
+returns the result synchronously.
 
 **Since:** 10
 
@@ -7554,7 +7803,8 @@ try {
 getStringValue(resource: Resource, callback: _AsyncCallback<string>): void
 ```
 
-Obtains a string based on the specified resource object. This API uses an asynchronous callback to return the result.
+Obtains a string based on the specified resource object. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 
@@ -7786,7 +8036,8 @@ export default class EntryAbility extends UIAbility {
 getSymbol(resId: number) : number
 ```
 
-Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the specified resource ID. This API returns the result synchronously.
+Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the
+specified resource ID. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -7844,7 +8095,8 @@ export default class EntryAbility extends UIAbility {
 getSymbol(resource: Resource) : number
 ```
 
-Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the specified resource object. This API returns the result synchronously.
+Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the
+specified resource object. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -7908,7 +8160,8 @@ try {
 getSymbolByName(resName: string) : number
 ```
 
-Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the specified resource name. This API returns the result synchronously.
+Obtains the Unicode of a [symbol](https://developer.huawei.com/consumer/en/design/harmonyos-symbol) based on the
+specified resource name. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -8056,7 +8309,11 @@ try {
 removeResource(path: string) : void
 ```
 
-Removes the resources loaded from the specified path to restore the original resources. > **NOTE** > > Resource overwriting is not supported for the **rawfile** and **resfile** directories.
+Removes the resources loaded from the specified path to restore the original resources.
+
+> **NOTE**
+>
+> Resource overwriting is not supported for the **rawfile** and **resfile** directories.
 
 **Since:** 10
 
@@ -8105,7 +8362,10 @@ export default class EntryAbility extends UIAbility {
 updateOverrideConfiguration(configuration: Configuration): void
 ```
 
-Updated configuration of differentiated resources. This API allows a common **ResourceManager** object and a **ResourceManager** object obtained through [getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1) to update the configuration of differentiated resources.
+Updated configuration of differentiated resources. This API allows a common **ResourceManager** object and a
+**ResourceManager** object obtained through
+[getOverrideResourceManager](arkts-localization-resourcemanager-i.md#getoverrideresourcemanager-1) to update the
+configuration of differentiated resources.
 
 **Since:** 12
 

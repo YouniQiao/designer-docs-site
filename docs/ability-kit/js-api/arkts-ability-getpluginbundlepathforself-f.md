@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getPluginBundlePathForSelf
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getPluginBundlePathForSelf(pluginBundleName: string): string
 ```
 
-Obtains the installation path of a specified plugin in the current [application sandbox](../../../../file-management/app-sandbox-directory.md).
+Obtains the installation path of a specified plugin in the current
+[application sandbox](../../../../file-management/app-sandbox-directory.md).
 
 **Since:** 22
 

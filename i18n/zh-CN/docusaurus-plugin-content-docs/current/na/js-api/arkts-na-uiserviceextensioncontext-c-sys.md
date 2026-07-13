@@ -1,8 +1,18 @@
 # UIServiceExtensionContext（系统接口）
 
-UIServiceExtensionContext模块是 [UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability)的上下文环境，继承自 [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)。 UIServiceExtensionContext模块提供访问 [UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability)特定资源以及具有的能力，包括启 动、停止、绑定、解绑Ability。 > **说明：** > > - 本模块接口需要在主线程中使用，不要在Worker、TaskPool等子线程中使用。
+UIServiceExtensionContext模块是
+[UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md)的上下文环境，继承自
+[ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)。
 
-**继承/实现关系：** UIServiceExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)
+UIServiceExtensionContext模块提供访问
+[UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md)特定资源以及具有的能力，包括启
+动、停止、绑定、解绑Ability。
+
+> **说明：**
+>
+> - 本模块接口需要在主线程中使用，不要在Worker、TaskPool等子线程中使用。
+
+**继承/实现关系：** UIServiceExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **起始版本：** 14
 
@@ -16,7 +26,11 @@ UIServiceExtensionContext模块是 [UIServiceExtension](../../apis-ability-kit/a
 connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
-连接到[UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#uiextensionability)，返回连接id。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+连接到[UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md)，返回连接id。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -44,7 +58,7 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The application does not have permission to call the interface. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000001](../../apis-ability-kit/errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../../apis-ability-kit/errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../../apis-ability-kit/errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -64,7 +78,8 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 disconnectServiceExtensionAbility(connectionId: number): Promise<void>
 ```
 
-断开与[UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#uiextensionability)的连接，与 [connectServiceExtensionAbility](arkts-na-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1)功能相反。使用Promise异步回调。
+断开与[UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md)的连接，与
+[connectServiceExtensionAbility](arkts-na-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1)功能相反。使用Promise异步回调。
 
 **起始版本：** 14
 
@@ -90,7 +105,7 @@ disconnectServiceExtensionAbility(connectionId: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000011](../../apis-ability-kit/errorcode-ability.md#16000011-上下文对象不存在) | The context does not exist. |
 | [16000050](../../apis-ability-kit/errorcode-ability.md#16000050-内部错误) | Internal error. |
 
@@ -100,7 +115,11 @@ disconnectServiceExtensionAbility(connectionId: number): Promise<void>
 startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
-启动Ability。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+启动Ability。使用Promise异步回调。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -128,7 +147,7 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The application does not have permission to call the interface. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000001](../../apis-ability-kit/errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../../apis-ability-kit/errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../../apis-ability-kit/errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |
@@ -153,7 +172,13 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
     abilityStartCallback: AbilityStartCallback): Promise<void>
 ```
 
-按目标ability的类型启动[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md)或 [UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#uiextensionability)。仅支持处于前台的应用调用。使用Promise异步回调 。 > **说明：** > > 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
+按目标ability的类型启动[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md)或
+[UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md)。仅支持处于前台的应用调用。使用Promise异步回调
+。
+
+> **说明：**
+>
+> 组件启动规则详见：[组件启动规则（Stage模型）](../../../../application-models/component-startup-rules.md)。
 
 **起始版本：** 14
 
@@ -181,7 +206,7 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;. Incorrect parameter types; 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../../apis-ability-kit/errorcode-ability.md#16000050-内部错误) | Internal error. |
 
 ## terminateSelf
@@ -190,7 +215,8 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
 terminateSelf(): Promise<void>
 ```
 
-销毁[UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability)。使用Promise异 步回调。
+销毁[UIServiceExtension](../../apis-ability-kit/arkts-apis/arkts-ability-uiserviceextensionability-c-sys.md)。使用Promise异
+步回调。
 
 **起始版本：** 14
 

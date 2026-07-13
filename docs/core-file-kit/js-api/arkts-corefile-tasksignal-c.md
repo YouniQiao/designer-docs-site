@@ -9,7 +9,7 @@ Provides APIs for interrupting a copy task.
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## cancel
@@ -81,7 +81,11 @@ try {
 onCancel(): Promise<string>
 ```
 
-> **NOTE** > > This API is supported since API version 12 and deprecated since API version 24. Subscribes to the event reported when a copy task is canceled.
+> **NOTE**
+>
+> This API is supported since API version 12 and deprecated since API version 24.
+
+Subscribes to the event reported when a copy task is canceled.
 
 **Since:** 12
 

@@ -28,7 +28,8 @@ Disable fluid light mode.
 BACKGROUND_FLUID_LIGHT = 1
 ```
 
-When the background fluid light mode is enabled, the system panel turns transparent. The fluid light effect must be implemented by the application.
+When the background fluid light mode is enabled, the system panel turns transparent. The fluid light effect must
+be implemented by the application.
 
 **Since:** 20
 

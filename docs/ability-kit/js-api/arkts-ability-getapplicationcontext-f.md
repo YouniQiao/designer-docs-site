@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { application } from '@ohos.app.ability.application';
+import { application } from '@kit.AbilityKit';
 ```
 
 ## getApplicationContext
@@ -12,7 +12,8 @@ import { application } from '@ohos.app.ability.application';
 export function getApplicationContext(): ApplicationContext
 ```
 
-Obtains the application context. This API provides context access independent of the base class **Context**. Repeated calls to this API generate a new ApplicationContext object.
+Obtains the application context. This API provides context access independent of the base class **Context**.
+Repeated calls to this API generate a new ApplicationContext object.
 
 **Since:** 14
 

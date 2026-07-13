@@ -2,7 +2,7 @@
 
 Defines the class of media assets change request.
 
-**Inheritance/Implementation:** MediaAssetsChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md#mediachangerequest)
+**Inheritance/Implementation:** MediaAssetsChangeRequest implements [MediaChangeRequest](arkts-medialibrary-mediachangerequest-i.md)
 
 **Since:** 11
 
@@ -13,7 +13,7 @@ Defines the class of media assets change request.
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## constructor

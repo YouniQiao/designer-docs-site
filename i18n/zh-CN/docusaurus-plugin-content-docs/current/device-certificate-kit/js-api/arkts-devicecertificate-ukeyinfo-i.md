@@ -12,7 +12,8 @@
 certPurpose?: CertificatePurpose
 ```
 
-表示凭据用途。 默认值： PURPOSE_DEFAULT。
+表示凭据用途。
+默认值： PURPOSE_DEFAULT。
 
 **类型：** CertificatePurpose
 

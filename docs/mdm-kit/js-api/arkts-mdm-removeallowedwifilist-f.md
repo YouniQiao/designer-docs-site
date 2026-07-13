@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## removeAllowedWifiList
@@ -12,7 +12,9 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 function removeAllowedWifiList(admin: Want, list: Array<WifiAccessInfo>): void
 ```
 
-Removes Wi-Fi networks from the allowed list. If some Wi-Fi networks are removed from the allowed list, the current device can only connect to the remaining ones; if all Wi-Fi networks are removed from the allowed list, the current device can connect to any Wi-Fi network.
+Removes Wi-Fi networks from the allowed list. If some Wi-Fi networks are removed from the allowed list, the current
+device can only connect to the remaining ones; if all Wi-Fi networks are removed from the allowed list, the current
+device can connect to any Wi-Fi network.
 
 **Since:** 19
 

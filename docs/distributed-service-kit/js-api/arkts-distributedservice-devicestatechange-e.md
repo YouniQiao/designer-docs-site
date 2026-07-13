@@ -12,7 +12,8 @@ Enumerates the device states.
 UNKNOWN = 0
 ```
 
-The device state is unknown after the device goes online. Before the device state changes to available, distributed services cannot be used.
+The device state is unknown after the device goes online. Before the device state changes to available,
+distributed services cannot be used.
 
 **Since:** 10
 
@@ -24,7 +25,8 @@ The device state is unknown after the device goes online. Before the device stat
 AVAILABLE = 1
 ```
 
-The information between devices has been synchronized in the Distributed Data Service (DDS) module, and the device is ready for running distributed services.
+The information between devices has been synchronized in the Distributed Data Service (DDS) module, and the
+device is ready for running distributed services.
 
 **Since:** 10
 

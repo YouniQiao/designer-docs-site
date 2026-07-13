@@ -12,7 +12,9 @@ Defines the accessible resource type, related to {@link onPermissionRequest} met
 MidiSysex = "TYPE_MIDI_SYSEX"
 ```
 
-MIDI SYSEX resource. Currently, only permission events can be reported. MIDI devices are not yet supported.
+MIDI SYSEX resource.
+
+Currently, only permission events can be reported. MIDI devices are not yet supported.
 
 **Since:** 9
 

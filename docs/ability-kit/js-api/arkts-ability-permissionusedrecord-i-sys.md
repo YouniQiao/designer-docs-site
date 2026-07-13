@@ -1,6 +1,6 @@
 # PermissionUsedRecord (System API)
 
-PermissionUsedRecord.
+Represents the access records of a permission.
 
 **Since:** 9
 
@@ -11,7 +11,7 @@ PermissionUsedRecord.
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## accessCount
@@ -20,7 +20,8 @@ import { privacyManager } from '@ohos.privacyManager';
 accessCount: number
 ```
 
-The access counts
+Total number of accesses for this permission, indicating the cumulative number of successful uses of this
+permission within the query time window.
 
 **Type:** number
 
@@ -36,7 +37,9 @@ The access counts
 accessRecords: Array<UsedRecordDetail>
 ```
 
-The list of access records of details
+Access record collection, effective only when flag is FLAG_PERMISSION_USAGE_DETAIL.
+
+Default value: Query the last 10 successful access records.
 
 **Type:** Array<UsedRecordDetail>
 
@@ -52,7 +55,7 @@ The list of access records of details
 enhancedIdentity?: string
 ```
 
-Enhanced identity.
+Extension identity, with a maximum length of 48 characters.
 
 **Type:** string
 
@@ -70,7 +73,8 @@ Enhanced identity.
 lastAccessDuration: number
 ```
 
-The last access duration, in milliseconds
+Last access duration.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -86,7 +90,8 @@ The last access duration, in milliseconds
 lastAccessTime: number
 ```
 
-The last access time, in milliseconds
+Last time when the permission was accessed.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -102,7 +107,8 @@ The last access time, in milliseconds
 lastRejectTime: number
 ```
 
-The last reject time, in milliseconds
+Last time when the access to the permission was rejected.
+Unit: milliseconds.
 
 **Type:** number
 
@@ -118,7 +124,7 @@ The last reject time, in milliseconds
 permissionName: Permissions
 ```
 
-The permission name
+Permission name, used to identify the sensitive permission corresponding to the current statistical record.
 
 **Type:** Permissions
 
@@ -134,7 +140,8 @@ The permission name
 rejectCount: number
 ```
 
-The reject counts
+Total number of rejections for this permission, indicating the cumulative number of failed or denied permission
+accesses within the query time window.
 
 **Type:** number
 
@@ -150,7 +157,9 @@ The reject counts
 rejectRecords: Array<UsedRecordDetail>
 ```
 
-The list of reject records of details
+Rejection record collection, effective only when flag is FLAG_PERMISSION_USAGE_DETAIL.
+
+Default value: Query the last 10 failed or rejected records.
 
 **Type:** Array<UsedRecordDetail>
 

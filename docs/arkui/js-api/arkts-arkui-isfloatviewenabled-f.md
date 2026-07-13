@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { floatView } from '@ohos.window.floatView';
+import { floatView } from '@kit.ArkUI';
 ```
 
 ## isFloatViewEnabled
@@ -12,7 +12,11 @@ import { floatView } from '@ohos.window.floatView';
 function isFloatViewEnabled(): boolean
 ```
 
-Checks whether the device supports the float view. | Type| Description| |------------|------------| | boolean | Whether the device supports the float view. **true** to support; **false** otherwise.|
+Checks whether the device supports the float view.
+
+| Type| Description|
+|------------|------------|
+| boolean | Whether the device supports the float view. **true** to support; **false** otherwise.|
 
 **Since:** 26.0.0
 

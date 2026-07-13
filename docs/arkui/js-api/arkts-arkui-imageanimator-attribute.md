@@ -1,6 +1,8 @@
 # ImageAnimator properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported. In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal attributes](./common), the following attributes are supported.
+
+In addition to the [universal events](./common), the following events are supported.
 
 **Inheritance/Implementation:** ImageAnimatorAttribute extends [CommonMethod<ImageAnimatorAttribute>](CommonMethod<ImageAnimatorAttribute>)
 
@@ -14,7 +16,8 @@ In addition to the [universal attributes](./common), the following attributes ar
 duration(value: number)
 ```
 
-Sets the playback duration. This attribute does not take effect when a separate duration is set for any of the image frames.
+Sets the playback duration. This attribute does not take effect when a separate duration is set for any of the
+image frames.
 
 **Since:** 7
 
@@ -36,7 +39,13 @@ Sets the playback duration. This attribute does not take effect when a separate 
 fillMode(value: FillMode)
 ```
 
-Sets the status before and after execution of the animation in the current playback direction. The status after execution of the animation is jointly determined by the **fillMode** and **reverse** attributes. For example, if **fillMode** is set to **Forwards**, the target will retain the state defined by the last keyframe encountered during execution. In this case, if **reverse** is set to **false**, the target will retain the state defined by the last keyframe encountered in the forward direction, that is, the last image; if **reverse** is set to **true**, the target will retain the state defined by the last keyframe encountered in the backward direction, that is, the first image.
+Sets the status before and after execution of the animation in the current playback direction. The status after
+execution of the animation is jointly determined by the **fillMode** and **reverse** attributes. For example, if
+**fillMode** is set to **Forwards**, the target will retain the state defined by the last keyframe encountered
+during execution. In this case, if **reverse** is set to **false**, the target will retain the state defined by the
+last keyframe encountered in the forward direction, that is, the last image; if **reverse** is set to **true**, the
+target will retain the state defined by the last keyframe encountered in the backward direction, that is, the first
+image.
 
 **Since:** 7
 
@@ -94,7 +103,7 @@ Sets image frame information. Dynamic update is not supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | Array&lt;ImageFrameInfo&gt; | Yes | Image frame information. The information of each frame includes the path,size, position, and playback duration of an image. For details, see [ImageFrameInfo](arkts-arkui-imageframeinfo-i.md#imageframeinfo).<br>Default value: **[]**<br> Note: If the input array is too large, memory usage may increase. Therefore, as thecontroller of memory usage, be sure to assess potential memory consumption before passing in the data to avoidissues such as insufficient memory. |
+| value | Array&lt;ImageFrameInfo&gt; | Yes | Image frame information. The information of each frame includes the path,size, position, and playback duration of an image. For details, see [ImageFrameInfo](arkts-arkui-imageframeinfo-i.md).<br>Default value: **[]**<br> Note: If the input array is too large, memory usage may increase. Therefore, as thecontroller of memory usage, be sure to assess potential memory consumption before passing in the data to avoidissues such as insufficient memory. |
 
 ## iterations
 
@@ -122,7 +131,9 @@ Sets the number of times that the animation is played.
 monitorInvisibleArea(monitorInvisibleArea: boolean) : ImageAnimatorAttribute
 ```
 
-Sets whether the component should automatically pause or resume based on its visibility, using the system's [onVisibleAreaChange] {@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)} event.
+Sets whether the component should automatically pause or resume based on its visibility, using the system's
+[onVisibleAreaChange]
+{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)} event.
 
 **Since:** 17
 
@@ -136,7 +147,7 @@ Sets whether the component should automatically pause or resume based on its vis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| monitorInvisibleArea | boolean | Yes | Whether the component should automatically pause or resume based on itsvisibility, using the system's [onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)event.<br> With the value **true**, when the component's [AnimationStatus](arkts-arkui-animationstatus-e.md#animationstatus) is**Running**, the component automatically pauses once it becomes invisible and resumes playback if it becomesvisible again, based on the **onVisibleAreaChange** event.<br>With the value **false**, the pause and playbackof the component are not affected by **onVisibleAreaChange**.<br>Default value: **false**<br> **NOTE**<br>Whenthis parameter is dynamically changed from **true** to **false**, the component will resume from its lastpaused state based on the current [AnimationStatus](arkts-arkui-animationstatus-e.md#animationstatus).<br>Changes to this propertydo not affect the custom [state](ImageAnimatorAttribute#state) value. |
+| monitorInvisibleArea | boolean | Yes | Whether the component should automatically pause or resume based on itsvisibility, using the system's [onVisibleAreaChange](arkts-arkui-commonmethod-c.md#onvisibleareachange-1)event.<br> With the value **true**, when the component's [AnimationStatus](arkts-arkui-animationstatus-e.md) is**Running**, the component automatically pauses once it becomes invisible and resumes playback if it becomesvisible again, based on the **onVisibleAreaChange** event.<br>With the value **false**, the pause and playbackof the component are not affected by **onVisibleAreaChange**.<br>Default value: **false**<br> **NOTE**<br>Whenthis parameter is dynamically changed from **true** to **false**, the component will resume from its lastpaused state based on the current [AnimationStatus](arkts-arkui-animationstatus-e.md).<br>Changes to this propertydo not affect the custom [state](ImageAnimatorAttribute#state) value. |
 
 ## onCancel
 
@@ -252,7 +263,12 @@ Triggered when the animation starts to play.
 preDecode(value: number)
 ```
 
-Sets the number of images to be pre-decoded. > **NOTE** > > This API is supported since API version 7 and deprecated since API version 9. Currently, no substitute is > available.
+Sets the number of images to be pre-decoded.
+
+> **NOTE**
+>
+> This API is supported since API version 7 and deprecated since API version 9. Currently, no substitute is
+> available.
 
 **Since:** 7
 

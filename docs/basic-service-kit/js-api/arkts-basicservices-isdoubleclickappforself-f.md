@@ -6,7 +6,8 @@
 function isDoubleClickAppForSelf(callback: ClickCallback): void
 ```
 
-1. Checks whether the application started by double-pressing the function key is the application itself. 2. This API is triggered to check whether double-pressing the function key starts the application itself.
+1. Checks whether the application started by double-pressing the function key is the application itself.
+2. This API is triggered to check whether double-pressing the function key starts the application itself.
 
 **Since:** 24
 

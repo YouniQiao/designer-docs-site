@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { dlpPermission } from '@ohos.dlpPermission';
+import { dlpPermission } from '@kit.DataProtectionKit';
 ```
 
 ## getDLPSuffix
@@ -12,7 +12,11 @@ import { dlpPermission } from '@ohos.dlpPermission';
 function getDLPSuffix(): string
 ```
 
-Obtains the DLP file name extension. After the API is called successfully, the DLP file name extension (for example, .dlp) is returned. This API returns the result synchronously. This API is used to obtain the standard extension of the DLP file, which can be used to construct the DLP file name or the determination of the file type.
+Obtains the DLP file name extension. After the API is called successfully, the DLP file name extension (for
+example, .dlp) is returned. This API returns the result synchronously.
+
+This API is used to obtain the standard extension of the DLP file, which can be used to construct the DLP file
+name or the determination of the file type.
 
 **Since:** 10
 

@@ -6,11 +6,13 @@
 function onAcbStateChange(callback: Callback<AcbStateParam>): void
 ```
 
-Subscribes to the NearLink ACB connection status change event. If the user is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission, the callback returns the real device address; otherwise, a random device address is returned.
+Subscribes to the NearLink ACB connection status change event.
+
+This event is accessible only to applications that granted the ohos.permission.NEARLINK_ACCESS permission.
+If the application is granted the ohos.permission.GET_NEARLINK_PEER_MAC permission,
+the callback returns the real device address; otherwise, a random device address is returned.
 
 **Since:** 26.0.0
-
-**Required permissions:** ohos.permission.ACCESS_NEARLINK
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -26,7 +28,6 @@ Subscribes to the NearLink ACB connection status change event. If the user is gr
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the chip does not support it. |
 | 36100099 | Operation failed. |
 

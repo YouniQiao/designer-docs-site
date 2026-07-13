@@ -6,7 +6,8 @@
 function preQueryAsUser(userId: number, query: AssetMap): Promise<Uint8Array>
 ```
 
-在指定用户空间中查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.queryAsUser](arkts-assetstore-queryasuser-f-sys.md#queryasuser-1)和 [asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1)接口。使用Promise异步回调。
+在指定用户空间中查询的预处理，用于需要用户认证的关键资产。在用户认证成功后，应当随后调用[asset.queryAsUser](arkts-assetstore-queryasuser-f-sys.md#queryasuser-1)和
+[asset.postQueryAsUser](arkts-assetstore-postqueryasuser-f-sys.md#postqueryasuser-1)接口。使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -35,7 +36,7 @@ function preQueryAsUser(userId: number, query: AssetMap): Promise<Uint8Array>
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The caller doesn't have the permission. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Non-system applications use system APIs. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1. Incorrect parameter types.2. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1. Incorrect parameter types.2. Parameter verification failed. |
 | [24000001](../errorcode-asset.md#24000001-关键资产服务不可用) | The ASSET service is unavailable. |
 | [24000002](../errorcode-asset.md#24000002-未找到关键资产) | The asset is not found. |
 | [24000005](../errorcode-asset.md#24000005-锁屏状态不匹配) | The screen lock status does not match. |

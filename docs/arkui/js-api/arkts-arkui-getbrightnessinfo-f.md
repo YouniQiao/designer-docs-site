@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## getBrightnessInfo
@@ -12,7 +12,10 @@ import { display } from '@ohos.display';
 function getBrightnessInfo(displayId: number): BrightnessInfo
 ```
 
-Obtains the screen brightness information of a display. If the screen does not support HDR, the **currentHeadroom** and **maxHeadroom** fields in the returned [BrightnessInfo](arkts-arkui-brightnessinfo-i.md#brightnessinfo) object use the default values. For virtual screens, the **sdrNits** field in the BrightnessInfo object uses the default value.
+Obtains the screen brightness information of a display. If the screen does not support HDR, the
+**currentHeadroom** and **maxHeadroom** fields in the returned [BrightnessInfo](arkts-arkui-brightnessinfo-i.md)
+object use the default values. For virtual screens, the **sdrNits** field in the BrightnessInfo object uses the
+default value.
 
 **Since:** 22
 
@@ -44,8 +47,8 @@ Obtains the screen brightness information of a display. If the screen does not s
 
 ```TypeScript
 try {
-  let brightNessInfo = display.getBrightnessInfo(0);
-  console.info(`brightness info: ${JSON.stringify(brightNessInfo)}`);
+  let brightnessInfo = display.getBrightnessInfo(0);
+  console.info(`brightness info: ${JSON.stringify(brightnessInfo)}`);
 } catch (error) {
   console.error(`Failed to getDisplayBrightness. Code: ${error.code}, message: ${error.message}`);
 }

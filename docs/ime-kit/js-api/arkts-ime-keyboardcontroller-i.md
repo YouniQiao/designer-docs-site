@@ -1,6 +1,8 @@
 # KeyboardController
 
-In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use
+[getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and
+then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -9,7 +11,7 @@ In the following API examples, you must first use [getKeyboardDelegate](arkts-im
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodEngine } from '@ohos.inputMethodEngine';
+import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
 ## exitCurrentInputType
@@ -18,7 +20,8 @@ import { inputMethodEngine } from '@ohos.inputMethodEngine';
 exitCurrentInputType(callback: AsyncCallback<void>): void
 ```
 
-Exits this input type. This API can be called only by the preconfigured default input method. This API uses an asynchronous callback to return the result.
+Exits this input type. This API can be called only by the preconfigured default input method. This API uses an
+asynchronous callback to return the result.
 
 **Since:** 11
 
@@ -58,7 +61,8 @@ keyboardController.exitCurrentInputType((err: BusinessError) => {
 exitCurrentInputType(): Promise<void>
 ```
 
-Exits this input type. This API can be called only by the preconfigured default input method. This API uses a promise to return the result.
+Exits this input type. This API can be called only by the preconfigured default input method. This API uses a
+promise to return the result.
 
 **Since:** 11
 

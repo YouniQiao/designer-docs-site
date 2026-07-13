@@ -30,7 +30,8 @@ Index of the list item or list item group in the list display area.
 itemGroupArea?: ListItemGroupArea
 ```
 
-Position of the top or bottom edge of the viewport in the list item group to which the edge is located, if applicable.
+Position of the top or bottom edge of the viewport in the
+list item group to which the edge is located, if applicable.
 
 **Type:** ListItemGroupArea
 
@@ -48,7 +49,8 @@ Position of the top or bottom edge of the viewport in the list item group to whi
 itemIndexInGroup?: number
 ```
 
-Index of the starting or ending list item in the list item group to which the top or bottom edge of the viewport is located.
+Index of the starting or ending list item in the list
+item group to which the top or bottom edge of the viewport is located.
 
 **Type:** number
 

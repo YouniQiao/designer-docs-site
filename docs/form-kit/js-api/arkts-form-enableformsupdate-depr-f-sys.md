@@ -6,7 +6,9 @@
 function enableFormsUpdate(formIds: Array<string>, callback: AsyncCallback<void>): void
 ```
 
-Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled state and can receive updates from the widget provider. This API uses an asynchronous callback to return the result.
+Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled
+state and can receive updates from the widget provider. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 8
 
@@ -34,7 +36,8 @@ Instructs the widget framework to make a widget updatable. After this API is cal
 function enableFormsUpdate(formIds: Array<string>): Promise<void>
 ```
 
-Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled state and can receive updates from the widget provider. This API uses a promise to return the result.
+Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled
+state and can receive updates from the widget provider. This API uses a promise to return the result.
 
 **Since:** 8
 

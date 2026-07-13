@@ -6,7 +6,10 @@
 function addAllowedRunningBundles(admin: Want, appIdentifiers: Array<string>, accountId: number): void
 ```
 
-添加应用至应用运行允许名单，添加至允许名单的应用允许在指定用户下运行，不在允许名单的应用不允许在指定用户下运行。 > **说明：** >
+添加应用至应用运行允许名单，添加至允许名单的应用允许在指定用户下运行，不在允许名单的应用不允许在指定用户下运行。
+
+> **说明：**
+>
 
 **起始版本：** 21
 

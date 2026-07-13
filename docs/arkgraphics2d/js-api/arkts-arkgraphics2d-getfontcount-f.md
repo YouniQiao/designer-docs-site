@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { text } from '@ohos.graphics.text';
+import { text } from '@kit.ArkGraphics2D';
 ```
 
 ## getFontCount
@@ -12,7 +12,10 @@ import { text } from '@ohos.graphics.text';
 function getFontCount(path: string | Resource) : number
 ```
 
-Obtains the number of font files contained in a font file based on the font file path. Returns **0** if the font file is not found, the font file path is invalid, the font file does not have the required permission, or the file is not in the font format.
+Obtains the number of font files contained in a font file based on the font file path.
+
+Returns **0** if the font file is not found, the font file path is invalid, the font file does not have the
+required permission, or the file is not in the font format.
 
 **Since:** 23
 

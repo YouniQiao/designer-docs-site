@@ -12,5 +12,5 @@ import { InsightIntentExecutor } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [InsightIntentExecutor](arkts-insightintentexecutor-c.md) | 本模块提供意图执行基类，开发者通过本模块对接端侧[意图框架](docroot://application-models/insight-intent-overview.md)， [通过配置文件开发意图][configuration files](docroot://application-models/insight-intent-config-development.md)实现意图的业务逻辑。 除了可以通过配置文件开发意图，还可以通过装饰器开发意图。对于API version 20及以后的版本，推荐使用 [通过装饰器开发意图](docroot://application-models/insight-intent-decorator-development.md)。 |
+| [InsightIntentExecutor](arkts-ability-insightintentexecutor-c.md) | The module provides the base class for intent execution. You can use this module to interface with the[InsightIntent framework](../../../../application-models/insight-intent-overview.md) on the device side and implementintent service logic through [configuration files](../../../../application-models/insight-intent-config-development.md).In addition to developing intents via configuration files, intents can also be developed using decorators. For APIversion 20 and later, you are advised to[develop intents using decorators](../../../../application-models/insight-intent-decorator-development.md). |
 

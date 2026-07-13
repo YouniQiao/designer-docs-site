@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.enterprise.bundleManager';
+import { bundleManager } from '@kit.MDMKit';
 ```
 
 ## addDisallowedInstallBundlesSync
@@ -12,7 +12,9 @@ import { bundleManager } from '@ohos.enterprise.bundleManager';
 function addDisallowedInstallBundlesSync(admin: Want, appIds: Array<string>, accountId?: number): void
 ```
 
-Adds the applications that are not allowed to be installed by the current or specified user. The reinstallation of system apps after uninstallation is not restricted by the API. However, the reinstallation of regular apps after uninstallation is restricted by the API.
+Adds the applications that are not allowed to be installed by the current or specified user. The reinstallation of
+system apps after uninstallation is not restricted by the API. However, the reinstallation of regular apps after
+uninstallation is restricted by the API.
 
 **Since:** 12
 

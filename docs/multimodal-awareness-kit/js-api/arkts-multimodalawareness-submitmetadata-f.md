@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { metadataBinding } from '@ohos.multimodalAwareness.metadataBinding';
+import { metadataBinding } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## submitMetadata
@@ -12,7 +12,8 @@ import { metadataBinding } from '@ohos.multimodalAwareness.metadataBinding';
 function submitMetadata(metadata: string): void
 ```
 
-Transfers the metadata to be encoded to the MSDP. The MSDP determines whether to transfer the metadata to the system application or service that calls the encoding API.
+Transfers the metadata to be encoded to the MSDP. The MSDP determines whether to transfer the metadata to the
+system application or service that calls the encoding API.
 
 **Since:** 18
 

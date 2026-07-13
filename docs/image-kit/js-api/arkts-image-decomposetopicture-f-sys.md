@@ -1,4 +1,10 @@
-# decomposeToPicture
+# decomposeToPicture (System API)
+
+## Modules to Import
+
+```TypeScript
+import { image } from '@kit.ImageKit';
+```
 
 ## decomposeToPicture
 
@@ -6,11 +12,12 @@
 function decomposeToPicture(hdrPixelMap : PixelMap, options?: HdrDecomposeOptions): Promise<Picture | undefined>
 ```
 
-将HDR PixelMap分解为包含SDR PixelMap和增益图（gainmap）的Picture对象。使用Promise异步回调。
+Decomposes an HDR Pixelmap object to a Picture object which contains an SDR PixelMap and a gainmap. This API uses
+a promise to return the result.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the Stage model.
+**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -20,22 +27,22 @@ function decomposeToPicture(hdrPixelMap : PixelMap, options?: HdrDecomposeOption
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| hdrPixelMap | PixelMap | Yes | HDR PixelMap，像素格式需为RGBA_F16、RGBA_1010102、YCBCR_P010或YCRCB_P010。 |
-| options | HdrDecomposeOptions | No |  |
+| hdrPixelMap | PixelMap | Yes | An HDR PixelMap, whose PixelMapFormat should beRGBA_F16\RGBA_1010102\YCBCR_P010\YCRCB_P010. |
+| options | HdrDecomposeOptions | No | The HDR decomposition configurations. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Picture \| undefined> | Promise对象。返回包含SDR PixelMap和增益图的Picture对象。 |
+| Promise&lt;Picture \| undefined&gt; | Promise used to return the Picture object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 202 | Non-system applications are not allowed to use system APIs. |
-| 7600201 | Unsupported operation. hdrPixelMap's PixelMapFormat is not  RGBA_F16\RGBA_1010102\YCBCR_P010\YCRCB_P010. |
-| 7600206 | Invalid parameter. Possible cause: hdrPixelMap is empty. |
-| 7600208 | HDR image decomposition failed. Possible causes: 1. Decomposition processing  is not supported. 2. Processing error occurs. |
-| 7600301 | Alloc memory failed. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Non-system applications are not allowed to use system APIs. |
+| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. hdrPixelMap's PixelMapFormat is notRGBA_F16\RGBA_1010102\YCBCR_P010\YCRCB_P010. |
+| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible cause: hdrPixelMap is empty. |
+| 7600208 | HDR image decomposition failed. Possible causes: 1. Decomposition processingis not supported. 2. Processing error occurs. |
+| [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Alloc memory failed. |
 

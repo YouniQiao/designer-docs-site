@@ -6,7 +6,15 @@
 function startChildProcess(srcEntry: string, startMode: StartMode): Promise<number>
 ```
 
-启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。 > **说明：** > > 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数 > ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。 > > 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
+启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用Promise异步回调。
+该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。
+
+> **说明：**
+>
+> 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数
+> ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。
+>
+> 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
 
 **起始版本：** 11
 
@@ -31,7 +39,7 @@ function startChildProcess(srcEntry: string, startMode: StartMode): Promise<numb
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000061](../errorcode-ability.md#16000061-不支持的操作) | Operation not supported. |
 | [16000062](../errorcode-ability.md#16000062-子进程数量超出上限) | The number of child processes exceeds the upper limit. |
@@ -79,7 +87,15 @@ try {
 function startChildProcess(srcEntry: string, startMode: StartMode, callback: AsyncCallback<number>): void
 ```
 
-启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用callback异步回调。 该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。 > **说明：** > > 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数 > ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。 > > 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
+启动[ArkTS子进程](../../../../application-models/ability-terminology.md#arkts子进程)。使用callback异步回调。
+该接口在Tablet、PC/2in1中可正常调用，在其他设备类型中返回16000061错误码。
+
+> **说明：**
+>
+> 调用该接口创建子进程成功会返回子进程pid，然后执行子进程的[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数
+> ，[ChildProcess.onStart](arkts-ability-childprocess-c.md#onstart-1)函数执行完后子进程会自动销毁。
+>
+> 调用该接口创建的子进程不支持异步ArkTS API调用，仅支持同步ArkTS API调用。
 
 **起始版本：** 11
 
@@ -99,7 +115,7 @@ function startChildProcess(srcEntry: string, startMode: StartMode, callback: Asy
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16000061](../errorcode-ability.md#16000061-不支持的操作) | Operation not supported. |
 | [16000062](../errorcode-ability.md#16000062-子进程数量超出上限) | The number of child processes exceeds the upper limit. |

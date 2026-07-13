@@ -6,14 +6,14 @@ Represents the formatting options for the **RelativeTimeFormat** object.
 
 **Deprecated since:** 20
 
-**Substitutes:** ResolvedRelativeTimeFormatOptions
+**Substitutes:** return_value)
 
 **System capability:** SystemCapability.Global.I18n
 
 ## Modules to Import
 
 ```TypeScript
-import { intl } from '@ohos.intl';
+import { intl } from '@kit.LocalizationKit';
 ```
 
 ## locale
@@ -30,7 +30,7 @@ Locale ID, including the language, script, and region.
 
 **Deprecated since:** 20
 
-**Substitutes:** locale
+**Substitutes:** locale)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -42,7 +42,15 @@ Locale ID, including the language, script, and region.
 numberingSystem: string
 ```
 
-Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**, **diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**, **kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**, **mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr** , **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**, **shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**, **tirh**, **vaii**, **wara**, or **wcho**.
+Numbering system. The value can be:
+
+**adlm**, **ahom**, **arab**, **arabext**, **bali**, **beng**, **bhks**, **brah**, **cakm**, **cham**, **deva**,
+**diak**, **fullwide**, **gong**, **gonm**, **gujr**, **guru**, **hanidec**, **hmng**, **hmnp**, **java**,
+**kali**, **khmr**, **knda**, **lana**, **lanatham**, **laoo**, **latn**, **lepc**, **limb**, **mathbold**,
+**mathdbl**, **mathmono**, **mathsanb**, **mathsans**, **mlym**, **modi**, **mong**, **mroo**, **mtei**, **mymr**
+, **mymrshan**, **mymrtlng**, **newa**, **nkoo**, **olck**, **orya**, **osma**, **rohg**, **saur**, **segment**,
+**shrd**, **sind**, **sinh**, **sora**, **sund**, **takr**, **talu**, **tamldec**, **telu**, **thai**, **tibt**,
+**tirh**, **vaii**, **wara**, or **wcho**.
 
 **Type:** string
 
@@ -50,7 +58,7 @@ Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, *
 
 **Deprecated since:** 20
 
-**Substitutes:** numberingSystem
+**Substitutes:** numberingsystem)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -62,7 +70,11 @@ Numbering system. The value can be: **adlm**, **ahom**, **arab**, **arabext**, *
 numeric: string
 ```
 
-Format of the output result. It determines whether numeric values are used to represent relative dates or times in the formatting result. The value can be **always** or **auto**. For details about their display effects, see [Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Format of the output result. It determines whether numeric values are used to represent relative dates or times
+in the formatting result. The value can be **always** or **auto**.
+
+For details about their display effects, see
+[Table 23](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -70,7 +82,7 @@ Format of the output result. It determines whether numeric values are used to re
 
 **Deprecated since:** 20
 
-**Substitutes:** numeric
+**Substitutes:** numeric)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
@@ -82,7 +94,10 @@ Format of the output result. It determines whether numeric values are used to re
 style: string
 ```
 
-Length of an internationalized message. The value can be **long**, **short**, or **narrow**. For details about their display effects, see [Table 24](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
+Length of an internationalized message. The value can be **long**, **short**, or **narrow**.
+
+For details about their display effects, see
+[Table 24](../../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -90,7 +105,7 @@ Length of an internationalized message. The value can be **long**, **short**, or
 
 **Deprecated since:** 20
 
-**Substitutes:** style
+**Substitutes:** style)
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 

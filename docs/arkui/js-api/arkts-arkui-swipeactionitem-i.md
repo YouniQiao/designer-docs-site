@@ -1,6 +1,11 @@
 # SwipeActionItem
 
-Describes the swipe action item. For a list in vertical layout, it refers to the delete option displayed on the left (or right) of the list item when the list item is swiped right (or left). For a list in horizontal layout, it refers to the delete option displayed below (or above) the list item when the list item is swiped up (or down).
+Describes the swipe action item.
+For a list in vertical layout, it refers to the delete option displayed on the left (or right) of the list item
+when the list item is swiped right (or left).
+
+For a list in horizontal layout, it refers to the delete option displayed below (or above) the list item
+when the list item is swiped up (or down).
 
 **Since:** 10
 
@@ -12,7 +17,8 @@ Describes the swipe action item. For a list in vertical layout, it refers to the
 actionAreaDistance?: Length
 ```
 
-Swipe distance threshold for deleting the list item. This threshold applies after the swipe action component is fully swiped into view and triggers the deletion action.
+Swipe distance threshold for deleting the list item. This threshold applies after the swipe action component
+is fully swiped into view and triggers the deletion action.
 
 **Type:** Length
 
@@ -32,7 +38,8 @@ Swipe distance threshold for deleting the list item. This threshold applies afte
 builder?: CustomBuilder
 ```
 
-Swipe action item displayed when the list item is swiped left or right (in vertical list layout) or up or down (in horizontal list layout).
+Swipe action item displayed when the list item is swiped left or right (in vertical list layout)
+or up or down (in horizontal list layout).
 
 **Type:** CustomBuilder
 
@@ -50,7 +57,8 @@ Swipe action item displayed when the list item is swiped left or right (in verti
 builderComponent?: ComponentContent
 ```
 
-Swipe action item displayed when the list item is swiped left or right (in vertical list layout) or up or down (in horizontal list layout).
+Swipe action item displayed when the list item is swiped left or right (in vertical list layout)
+or up or down (in horizontal list layout).
 
 **Type:** ComponentContent
 

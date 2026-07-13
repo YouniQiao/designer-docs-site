@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## offPreloadedUIExtensionAbilityDestroyed
@@ -12,7 +12,9 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function offPreloadedUIExtensionAbilityDestroyed(callback?: PreloadedUIExtensionAbilityDestroyedFn): void
 ```
 
-Unsubscribes from loaded events of a preloaded [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) instance in the current process.
+Unsubscribes from loaded events of a preloaded
+[UIExtensionAbility](arkts-ability-uiextensionability-c.md) instance in the current
+process.
 
 **Since:** 23
 

@@ -6,7 +6,8 @@
 export function demoteCurrentFromCandidateMasterProcess(): Promise<void>
 ```
 
-撤销当前进程的备选主控进程资格。使用Promise异步回调。 该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。
+撤销当前进程的备选主控进程资格。使用Promise异步回调。
+该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中返回801错误码。
 
 **起始版本：** 20
 
@@ -24,7 +25,7 @@ export function demoteCurrentFromCandidateMasterProcess(): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-请求广告返回错误码) | Capability not supported. |
+| [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [16000116](../errorcode-ability.md#16000116-当前进程已经是主控进程) | The current process is already a master process and does not support cancellation. |
 | [16000117](../errorcode-ability.md#16000117-当前进程非备选主控进程) | The current process is not a candidate master process and does not supportcancellation. |
 

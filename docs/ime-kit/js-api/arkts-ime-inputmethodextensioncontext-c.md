@@ -1,8 +1,14 @@
 # InputMethodExtensionContext
 
-The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for **InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect abilities. > **NOTE** > > - The APIs of this module can be used only in the stage model.
+The **InputMethodExtensionContext** module, inherited from **ExtensionContext**, provides context for
+**InputMethodExtension** abilities. You can use the APIs of this module to start, terminate, connect, and disconnect
+abilities.
 
-**Inheritance/Implementation:** InputMethodExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)
+> **NOTE**
+>
+> - The APIs of this module can be used only in the stage model.
+
+**Inheritance/Implementation:** InputMethodExtensionContext extends [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md)
 
 **Since:** 9
 
@@ -11,7 +17,7 @@ The **InputMethodExtensionContext** module, inherited from **ExtensionContext**,
 ## Modules to Import
 
 ```TypeScript
-import { InputMethodExtensionContext } from '@ohos.InputMethodExtensionContext';
+import { InputMethodExtensionContext } from '@kit.IMEKit';
 ```
 
 ## destroy

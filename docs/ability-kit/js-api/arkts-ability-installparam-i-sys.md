@@ -11,7 +11,7 @@ Defines the parameters that need to be specified for bundle installation, uninst
 ## Modules to Import
 
 ```TypeScript
-import { installer } from '@ohos.bundle.installer';
+import { installer } from '@kit.AbilityKit';
 ```
 
 ## additionalInfo
@@ -20,7 +20,9 @@ import { installer } from '@ohos.bundle.installer';
 additionalInfo?: string
 ```
 
-Additional information during application installation (usually an enterprise application). By default, no value is passed. The maximum length is 3,000 bytes. This field is usually specified by the application market of the operating system operator.
+Additional information during application installation (usually an enterprise application). By default, no value
+is passed. The maximum length is 3,000 bytes. This field is usually specified by the application market of the
+operating system operator.
 
 **Type:** string
 
@@ -68,7 +70,8 @@ Hash parameters. By default, no value is passed.
 installFlag?: number
 ```
 
-Installation flag. The value **0x00** means initial installation, **0x01** means overwrite installation, and **0x10** means installation-free. The default value is **0x00**.
+Installation flag. The value **0x00** means initial installation, **0x01** means overwrite installation, and
+**0x10** means installation-free. The default value is **0x00**.
 
 **Type:** number
 
@@ -84,7 +87,8 @@ Installation flag. The value **0x00** means initial installation, **0x01** means
 isKeepData?: boolean
 ```
 
-Whether to retain the data directory during bundle uninstall. The default value is **false**. **true** to retain, **false** otherwise.
+Whether to retain the data directory during bundle uninstall. The default value is **false**. **true** to retain,
+**false** otherwise.
 
 **Type:** boolean
 
@@ -100,7 +104,32 @@ Whether to retain the data directory during bundle uninstall. The default value 
 parameters?: Array<Parameters>
 ```
 
-Extended parameters, represented as an array of the Parameters type. The default value is empty. The options of **Parameters.key** are as follows: - **ohos.bms.param.renameInstall**: If the value is **true**, the installation package is moved from the application sandbox to the installation directory using a shared directory. Otherwise, it is copied from the application sandbox to the installation directory using a regular directory. - **ohos.bms.param.enterpriseForAllUser**: If the value is **true**, the enterprise app is installed for all users. This parameter takes effect only for applications whose [distribution type of the application signing certificate](arkts-ability-applicationinfo-i.md#applicationinfo) is **enterprise_mdm** or **enterprise_normal**. - **ohos.bms.param.verifyUninstallRule**: If the value is **true**, an uninstallation handling rule is set to block application uninstallation. - **ohos.bms.param.enterpriseManifest**: The value is the sandbox path of the JSON file used to store the application's manifest, including the bundle name. It is used in the scenario of cloning enterprise applications. If this JSON file exists during cloning, the application package from the old device is copied to the new device for installation. - **ohos.bms.param.installBundleName**: The value is the bundle name of the application. It is used in application installation scenarios and supported since API version 23. If this field is passed during installation, the [getBundleInstallStatus](arkts-ability-getbundleinstallstatus-f-sys.md#getbundleinstallstatus-1) API can be called to obtain the installation status of the application. - **ohos.bms.param.installAllowDowngrade**: If the value is **true**, the application can be installed in downgrade mode (supported since API version 23). That is, if a higher version of the application is already installed on the device, a lower version can be installed over it. Only third-party applications with the signing certificate distribution type set to **app_gallery** or the signing certificate type set to **debug** support downgrade installation. To use downgrade installation, you must request the ohos.permission.INSTALL_BUNDLE and ohos.permission.INSTALL_ALLOW_DOWNGRADE permissions.
+Extended parameters, represented as an array of the Parameters type. The default value is empty. The options of
+**Parameters.key** are as follows:
+
+- **ohos.bms.param.renameInstall**: If the value is **true**, the installation package is moved from the
+application sandbox to the installation directory using a shared directory. Otherwise, it is copied from the
+application sandbox to the installation directory using a regular directory.
+- **ohos.bms.param.enterpriseForAllUser**: If the value is **true**, the enterprise app is installed for all
+users. This parameter takes effect only for applications whose
+[distribution type of the application signing certificate](arkts-ability-applicationinfo-i.md)
+is **enterprise_mdm** or **enterprise_normal**.
+- **ohos.bms.param.verifyUninstallRule**: If the value is **true**, an uninstallation handling rule is set to
+block application uninstallation.
+- **ohos.bms.param.enterpriseManifest**: The value is the sandbox path of the JSON file used to store the
+application's manifest, including the bundle name. It is used in the scenario of cloning enterprise applications.
+If this JSON file exists during cloning, the application package from the old device is copied to the new device
+for installation.
+- **ohos.bms.param.installBundleName**: The value is the bundle name of the application. It is used in
+application installation scenarios and supported since API version 23. If this field is passed during
+installation, the [getBundleInstallStatus](arkts-ability-getbundleinstallstatus-f-sys.md#getbundleinstallstatus-1)
+API can be called to obtain the installation status of the application.
+- **ohos.bms.param.installAllowDowngrade**: If the value is **true**, the application can be installed in
+downgrade mode (supported since API version 23). That is, if a higher version of the application is already
+installed on the device, a lower version can be installed over it. Only third-party applications with the signing
+certificate distribution type set to **app_gallery** or the signing certificate type set to **debug** support
+downgrade installation. To use downgrade installation, you must request the ohos.permission.INSTALL_BUNDLE and
+ohos.permission.INSTALL_ALLOW_DOWNGRADE permissions.
 
 **Type:** Array<Parameters>
 
@@ -148,7 +177,9 @@ Paths of the shared bundle files. By default, no value is passed.
 specifiedDistributionType?: string
 ```
 
-[Distribution type](../../../../security/app-provision-structure.md) specified during application installation. By default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application market of the operating system operator.
+[Distribution type](../../../../security/app-provision-structure.md) specified during application installation. By
+default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application
+market of the operating system operator.
 
 **Type:** string
 
@@ -164,7 +195,11 @@ specifiedDistributionType?: string
 userId?: number
 ```
 
-User ID. The default value is the user ID of the caller. The value must be greater than or equal to 0. You can call [queryOsAccountLocalIdFromProcess](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1) to obtain the user ID of the current process. When a driver application is installed, uninstalled, or restored, this parameter is ignored and the operation is executed for all users.
+User ID. The default value is the user ID of the caller. The value must be greater than or equal to 0. You can
+call
+[queryOsAccountLocalIdFromProcess](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-accountmanager-i.md#getosaccountlocalid-1)
+to obtain the user ID of the current process. When a driver application is installed, uninstalled, or restored,
+this parameter is ignored and the operation is executed for all users.
 
 **Type:** number
 
@@ -180,7 +215,12 @@ User ID. The default value is the user ID of the caller. The value must be great
 verifyCodeParams?: Array<VerifyCodeParam>
 ```
 
-Information about the code signature file. The default value is null. **NOTE** Starting from API version 10, the code signature file of an application is integrated into the installation package, rather than being specified by using this field. This field is deprecated since API version 11.
+Information about the code signature file. The default value is null.
+
+**NOTE**
+
+Starting from API version 10, the code signature file of an application is integrated into the installation
+package, rather than being specified by using this field. This field is deprecated since API version 11.
 
 **Type:** Array<VerifyCodeParam>
 

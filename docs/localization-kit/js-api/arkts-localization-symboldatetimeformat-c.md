@@ -1,8 +1,11 @@
 # SymbolDateTimeFormat
 
-Provide a DateTime formatting interface that supports custom symbols. This interface formats date time values into strings with custom symbols, and can replace variable symbols in the formatted result with custom fixed symbols (e.g., replacing "2:23 PM" with "2:23 afternoon").
+Provide a DateTime formatting interface that supports custom symbols.
+This interface formats date time values into strings with custom symbols,
+and can replace variable symbols in the formatted result with custom fixed symbols
+(e.g., replacing "2:23 PM" with "2:23 afternoon").
 
-**Inheritance/Implementation:** SymbolDateTimeFormat extends [Intl.DateTimeFormat](../../apis-na/arkts-apis/arkts-na-datetimeformat-i.md#datetimeformat)
+**Inheritance/Implementation:** SymbolDateTimeFormat extends [Intl.DateTimeFormat](../../apis-na/arkts-apis/arkts-na-datetimeformat-i.md)
 
 **Since:** 26.0.0
 
@@ -11,7 +14,7 @@ Provide a DateTime formatting interface that supports custom symbols. This inter
 ## Modules to Import
 
 ```TypeScript
-import { i18n } from '@ohos.i18n';
+import { i18n } from '@kit.LocalizationKit';
 ```
 
 ## constructor
@@ -34,8 +37,8 @@ A constructor used to create a SymbolDateTimeFormat object.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| locale | Intl.Locale | No | Locale object used for formatting the date time value.The default value is the current system locale.<br>Default value:The default is the current system locale.<br>Default value: system default area.<br>Region object. |
-| options | SymbolDateTimeFormatOptions | No | Indicates the symbols used to replace.The symbols that support replacement are "AM" and "PM".<br>Symbol DateTime Formatting Options. |
+| locale | Intl.Locale | No | Locale object used for formatting the date time value.The default value is the current system locale. |
+| options | SymbolDateTimeFormatOptions | No | Indicates the symbols used to replace.The symbols that support replacement are "AM" and "PM". |
 
 **Error codes:**
 
@@ -164,7 +167,8 @@ Formats a date to parts.
 public parse(text: string, lenientMode: boolean): number
 ```
 
-Parse a date time localized string to Unix timestamp. Unix timestamp, indicating the number of milliseconds elapsed since 00:00:00 on January 1, 1970 GMT.
+Parse a date time localized string to Unix timestamp.
+Unix timestamp, indicating the number of milliseconds elapsed since 00:00:00 on January 1, 1970 GMT.
 
 **Since:** 26.0.0
 
@@ -199,7 +203,8 @@ Parse a date time localized string to Unix timestamp. Unix timestamp, indicating
 public resolvedOptions(): ResolvedSymbolDateTimeFormatOptions
 ```
 
-Obtains the options for creating a SymbolDateTimeFormat object. This will allow us to check the current config symbols.
+Obtains the options for creating a SymbolDateTimeFormat object.
+This will allow us to check the current config symbols.
 
 **Since:** 26.0.0
 

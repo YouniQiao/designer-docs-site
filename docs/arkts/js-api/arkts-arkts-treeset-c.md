@@ -1,6 +1,7 @@
 # TreeSet
 
-TreeSet is implemented based on TreeMap. In TreeSet, only value objects are processed. TreeSet can be used to store values, each of which must be unique.
+TreeSet is implemented based on TreeMap. In TreeSet, only value objects are processed.
+TreeSet can be used to store values, each of which must be unique.
 
 **Since:** 8
 
@@ -9,7 +10,7 @@ TreeSet is implemented based on TreeMap. In TreeSet, only value objects are proc
 ## Modules to Import
 
 ```TypeScript
-import { TreeSet } from '@ohos.util.TreeSet';
+import { TreeSet } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -225,7 +226,8 @@ console.info("treeSet: ", ts1.length);
 entries(): IterableIterator<[T, T]>
 ```
 
-Returns a new Iterator object that contains the [key, value] pairs for each element in the Set object in insertion order
+Returns a new Iterator object that contains the [key, value] pairs for each element in the Set object in insertion
+order
 
 **Since:** 8
 
@@ -352,7 +354,7 @@ Gets the first elements in a set
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getFirstValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -371,7 +373,8 @@ console.info("result:", result); // result: sparrow
 getHigherValue(key: T): T
 ```
 
-Returns the least element greater than or equal to the specified key if the key does not exist, undefined is returned
+Returns the least element greater than or equal to the specified key
+if the key does not exist, undefined is returned
 
 **Since:** 8
 
@@ -434,7 +437,7 @@ Gets the last elements in a set
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The getLastValue method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -453,7 +456,8 @@ console.info("result:", result); // result: squirrel
 getLowerValue(key: T): T
 ```
 
-Returns the greatest element smaller than or equal to the specified key if the key does not exist, undefined is returned
+Returns the greatest element smaller than or equal to the specified key
+if the key does not exist, undefined is returned
 
 **Since:** 8
 
@@ -593,7 +597,7 @@ Return and delete the first element, returns undefined if tree set is empty
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popFirst method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 
@@ -631,7 +635,7 @@ Return and delete the last element, returns undefined if tree set is empty
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The popLast method cannot be bound. |
-| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| [10200010](../errorcode-utils.md#10200010-empty-container) | Container is empty.<br>**Applicable version:** 23 and later**ArkTS mode:** This error code applies only to ArkTS-Sta. |
 
 **Example**
 

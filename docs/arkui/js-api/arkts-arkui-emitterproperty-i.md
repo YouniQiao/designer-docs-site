@@ -30,7 +30,11 @@ the description of the annulus region. This parameter is valid only for emitter 
 emitRate?: number
 ```
 
-Emit rate, that is, the number of particles emitted per second. If no value is passed in, the current emit rate is retained. If a value less than 0 is passed in, the default value **5** is used. The **emitRate** value can significantly impact performance when it exceeds 5000; you are advised to set it to be less than 5000.
+Emit rate, that is, the number of particles emitted per second.
+
+If no value is passed in, the current emit rate is retained. If a value less than 0 is passed in, the default value
+**5** is used. The **emitRate** value can significantly impact performance when it exceeds 5000; you are advised to
+set it to be less than 5000.
 
 **Type:** number
 
@@ -48,7 +52,8 @@ Emit rate, that is, the number of particles emitted per second. If no value is p
 index: number
 ```
 
-Index of the emitter based on the index array of the emitters in the initialization parameters. The value is rounded to the nearest whole number. The default value **0** is used in case of exceptions.
+Index of the emitter based on the index array of the emitters in the initialization parameters. The value is
+rounded to the nearest whole number. The default value **0** is used in case of exceptions.
 
 **Type:** number
 
@@ -66,7 +71,12 @@ Index of the emitter based on the index array of the emitters in the initializat
 position?: PositionT<number>
 ```
 
-Array of emitter positions. Only the number type is supported. If no value is passed in, the current emitter position is retained. Two valid values must be passed in; if either is an invalid value, **position** will not take effect. Value range of **x** and **y**: (-∞, +∞).
+Array of emitter positions. Only the number type is supported.
+
+If no value is passed in, the current emitter position is retained. Two valid values must be passed in; if either
+is an invalid value, **position** will not take effect.
+
+Value range of **x** and **y**: (-∞, +∞).
 
 **Type:** PositionT<number>
 
@@ -84,7 +94,10 @@ Array of emitter positions. Only the number type is supported. If no value is pa
 size?: SizeT<number>
 ```
 
-Size of the emit window. Only the number type is supported. If no value is passed in, the current emitter window size is retained. Two valid values greater than 0 must be passed in; if either is an invalid value, **size** will not take effect.
+Size of the emit window. Only the number type is supported.
+
+If no value is passed in, the current emitter window size is retained. Two valid values greater than 0 must be
+passed in; if either is an invalid value, **size** will not take effect.
 
 **Type:** SizeT<number>
 

@@ -9,7 +9,7 @@ Represents data of the widget type defined by the system.
 ## Modules to Import
 
 ```TypeScript
-import { uniformDataStruct } from '@ohos.data.uniformDataStruct';
+import { uniformDataStruct } from '@kit.ArkData';
 ```
 
 ## abilityName
@@ -50,7 +50,8 @@ Bundle to which the widget belongs.
 details?: Record<string, number | number | number | string | Uint8Array>
 ```
 
-Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a number, a string, or a Uint8Array. By default, it is an empty dictionary object.
+Object of the dictionary type used to describe the icon. The key is of the string type, and the value can be a
+number, a string, or a Uint8Array. By default, it is an empty dictionary object.
 
 **Type:** Record<string, number | number | number | string | Uint8Array>
 
@@ -114,7 +115,8 @@ Module to which the widget belongs.
 readonly uniformDataType: 'openharmony.form'
 ```
 
-Uniform data type, which has a fixed value of **openharmony.form**. For details, see [UniformDataType](arkts-arkdata-uniformdatatype-e.md#uniformdatatype).
+Uniform data type, which has a fixed value of **openharmony.form**. For details, see
+[UniformDataType](arkts-arkdata-uniformdatatype-e.md).
 
 **Type:** 'openharmony.form'
 

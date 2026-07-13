@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { geoLocationManager } from '@ohos.geoLocationManager';
+import { geoLocationManager } from '@kit.LocationKit';
 ```
 
 ## on('locatingRequiredDataChange')
@@ -12,7 +12,8 @@ import { geoLocationManager } from '@ohos.geoLocationManager';
 function on(type: 'locatingRequiredDataChange', config: LocatingRequiredDataConfig, callback: Callback<Array<LocatingRequiredData>>): void
 ```
 
-Subscribe to changes in WiFi/BT scanning information, and use the WiFi/BT scanning information for localization.
+Subscribe to changes in WiFi/BT scanning information,
+and use the WiFi/BT scanning information for localization.
 
 **Since:** 10
 

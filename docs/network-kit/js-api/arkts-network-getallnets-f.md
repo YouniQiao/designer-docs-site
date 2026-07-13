@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getAllNets
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getAllNets(callback: AsyncCallback<Array<NetHandle>>): void
 ```
 
-Obtains the list of data networks that are activated. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains the list of data networks that are activated.
+To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 8
 
@@ -58,7 +59,8 @@ connection.getAllNets((error: BusinessError, data: connection.NetHandle[]) => {
 function getAllNets(): Promise<Array<NetHandle>>
 ```
 
-Obtains the list of data networks that are activated. To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
+Obtains the list of data networks that are activated.
+To invoke this method, you must have the {@code ohos.permission.GET_NETWORK_INFO} permission.
 
 **Since:** 8
 

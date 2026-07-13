@@ -1,45 +1,10 @@
 # AudioDeviceEnhanceManager
 
-Provides enhanced audio device management capabilities.
+提供增强的音频设备管理能力。
 
 **起始版本：** 26.0.0
 
 **系统能力：** SystemCapability.Multimedia.Audio.DeviceEnhance
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
-## getSoundCardInfo
-
-```TypeScript
-getSoundCardInfo(): Promise<SoundCardInfo>
-```
-
-Obtains the sound card information. This method uses a Promise to return the query result.
-
-**起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.DeviceEnhance
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;SoundCardInfo> | Promise used to return the sound card information. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not system App. |
-| 801 | Capability not supported.  Failed to call the API due to limited device capabilities. |
 
 ## isEnhancedRoutingSupported
 
@@ -47,7 +12,10 @@ Obtains the sound card information. This method uses a Promise to return the que
 isEnhancedRoutingSupported(): boolean
 ```
 
-Queries whether the system supports the enhanced routing functions provided by this manager, including selecting input and output devices for the application or audio streams. Your application is advised to call this API first to confirm system support before using these enhanced routing APIs. Even for the same type of host device, some models may support these functions while others may not due to hardware limitations. If the system does not support these enhanced routing functions, calling them will have no effect, and the system will select default input/output devices for the application or audio streams instead.
+查询系统是否支持该管理器提供的增强路由功能。
+包括为应用程序或音频流选择输入和输出设备。
+建议您的应用在使用前先调用此API确认系统支持
+这些增强的路由API。即使对于相同类型的主机设备，某些型号也可能支持这些功能，而其他功能由于硬件限制可能不具备。如果系统不支持这些增强的路由功能，调用它们将不起作用，系统将选择应用程序或音频流的默认输入/输出设备。
 
 **起始版本：** 26.0.0
 
@@ -67,7 +35,13 @@ Queries whether the system supports the enhanced routing functions provided by t
 selectInputDevice(inputDevice: AudioDeviceDescriptor): Promise<void>
 ```
 
-Selects the input device for your application. This setting applies to all recording streams created under your application, unless a specific input device is designated for a particular stream by {@link AudioDeviceEnhanceManager.selectInputDeviceForAudioCapturer}. When application implements its own UX for input device selection, it can obtain the list of available input devices through {@link AudioRoutingManager.getAvailableDevices}, and use the {@link AudioRoutingManager.getPreferredInputDeviceForCapturerInfo} API to obtain the currently selected input device. The selection will become invalid when your application exits or the selected device goes offline. After your application restarts or the device comes back online, your application must re-issue the selection for it to take effect. If the system does not support this function, it will select a default input device for your application.
+为您的应用程序选择输入设备。此设置适用于创建的所有录制流
+在您的应用程序下，除非为特定流指定了特定输入设备
+{@link AudioDeviceEnhanceManager.selectInputDeviceForAudioCapturer}.当应用程序实现
+它自己的UX用于输入设备选择，它可以通过
+{@link AudioRoutingManager.get AvailableDevices}，并使用{@link AudioRoutingManager.getPreferredInputDeviceForCapturerInfo}接口获取当前
+选择的输入设备。当您的应用程序退出或选择的
+设备下线。在您的应用程序重新启动或设备重新联机后，您的应用程序必须重新发布选择才能使其生效。如果系统不支持该功能，它将为您的应用程序选择一个默认的输入设备。
 
 **起始版本：** 26.0.0
 
@@ -79,20 +53,20 @@ Selects the input device for your application. This setting applies to all recor
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| inputDevice | AudioDeviceDescriptor | 是 | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
+| inputDevice | AudioDeviceDescriptor | 是 | {@link AudioRoutingManager.get AvailableDevices}接口返回的音频设备描述数组。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
-| 6800301 | Audio service error occurs, such as the service died. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed, for example,the selected device does not exist. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs, such as the service died. |
 
 ## selectInputDeviceForAudioCapturer
 
@@ -100,7 +74,9 @@ Selects the input device for your application. This setting applies to all recor
 selectInputDeviceForAudioCapturer(capturer: AudioCapturer, inputDevice: AudioDeviceDescriptor): Promise<void>
 ```
 
-Selects the input device for the target AudioCapturer. Your application must ensure that the specified AudioCapturer is valid. This selection only applies to the designated stream; other recording streams in your application will use your application's forced selection or the system's default input device. The selection will become invalid when your application exits or the selected device goes offline. After your application restarts or the device comes back online, your application must re-issue the selection for it to take effect. If the system does not support this function, the system will select a default input device for the capturer.
+选择目标AudioCapturer的输入设备。您的应用程序必须确保指定的AudioCapturer是有效的。此选择仅适用于指定流；其他录制流您的应用程序将使用您的应用程序的强制选择或系统的默认输入设备。
+当您的应用程序退出或所选设备脱机时，选择将变为无效。
+应用程序重新启动或设备重新联机后，您的应用程序必须重新发出选择使其生效。如果系统不支持该功能，系统将选择捕获器的默认输入设备。
 
 **起始版本：** 26.0.0
 
@@ -112,21 +88,21 @@ Selects the input device for the target AudioCapturer. Your application must ens
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| capturer | AudioCapturer | 是 | The instance of AudioCapturer. |
-| inputDevice | AudioDeviceDescriptor | 是 | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
+| capturer | AudioCapturer | 是 | AudioCapturer的实例。 |
+| inputDevice | AudioDeviceDescriptor | 是 | {@link AudioRoutingManager.get AvailableDevices}接口返回的音频设备描述数组。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
-| 6800301 | Audio service error occurs, such as the service died. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed, for example,the selected device does not exist. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs, such as the service died. |
 
 ## selectOutputDevice
 
@@ -134,7 +110,13 @@ Selects the input device for the target AudioCapturer. Your application must ens
 selectOutputDevice(outputDevice: AudioDeviceDescriptor): Promise<void>
 ```
 
-Selects the output device for your application. This setting applies to all playback streams created under your application, unless a specific output device is designated for a particular stream by {@link AudioDeviceEnhanceManager.selectOutputDeviceForAudioRenderer}. When application implements its own UX for output device selection, it can obtain the list of available output devices through {@link AudioRoutingManager.getAvailableDevices}, and use the {@link AudioRoutingManager.getPreferOutputDeviceForRendererInfo} API to obtain the currently selected output device. The selection will become invalid when your application exits or the selected device goes offline. After your application restarts or the device comes back online, your application must re-issue the selection for it to take effect. If the system does not support this function, it will select a default output device for your application.
+选择应用程序的输出设备。此设置适用于创建的所有播放流
+除非为特定流指定了特定的输出设备
+{@link AudioDeviceEnhanceManager.selectOutputDeviceForAudioRenderer}.当应用程序实现
+它自己的UX用于输出设备选择，它可以通过
+{@link AudioRoutingManager.get AvailableDevices}，并使用{@link AudioRoutingManager.getPreferOutputDeviceForRendererInfo}接口获取当前
+选定的输出设备。当您的应用程序退出或选择的
+设备下线。在您的应用程序重新启动或设备重新联机后，您的应用程序必须重新发布选择才能使其生效。如果系统不支持该功能，则会为您的应用程序选择一个默认的输出设备。
 
 **起始版本：** 26.0.0
 
@@ -146,20 +128,20 @@ Selects the output device for your application. This setting applies to all play
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| outputDevice | AudioDeviceDescriptor | 是 | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
+| outputDevice | AudioDeviceDescriptor | 是 | 通过{@link AudioRoutingManager.getAvailableDevices}接口返回的音频设备描述数组 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
-| 6800301 | Audio service error occurs, such as the service died. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed, for example,the selected device does not exist. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs, such as the service died. |
 
 ## selectOutputDeviceForAudioRenderer
 
@@ -167,7 +149,9 @@ Selects the output device for your application. This setting applies to all play
 selectOutputDeviceForAudioRenderer(renderer: AudioRenderer, outputDevice: AudioDeviceDescriptor): Promise<void>
 ```
 
-Selects the output device for the target AudioRenderer. Your application must ensure that the specified AudioRenderer is valid. This selection only applies to the designated stream; other playback streams in your application will use your application's forced selection or the system's default output device. The selection will become invalid when your application exits or the selected device goes offline. After your application restarts or the device comes back online, your application must re-issue the selection for it to take effect. If the system does not support this function, the system will select a default output device for the renderer.
+选择目标AudioRenderer的输出设备。您的应用程序必须确保指定的AudioRenderer是有效的。此选择仅适用于指定流；其他播放流您的应用程序将使用您的应用程序的强制选择或系统的默认输出设备。
+当您的应用程序退出或所选设备脱机时，选择将变为无效。
+应用程序重新启动或设备重新联机后，您的应用程序必须重新发出选择使其生效。如果系统不支持该功能，系统将选择渲染器的默认输出设备。
 
 **起始版本：** 26.0.0
 
@@ -179,19 +163,19 @@ Selects the output device for the target AudioRenderer. Your application must en
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| renderer | AudioRenderer | 是 | The instance of AudioRenderer. |
-| outputDevice | AudioDeviceDescriptor | 是 | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
+| renderer | AudioRenderer | 是 | AudioRenderer的实例。 |
+| outputDevice | AudioDeviceDescriptor | 是 | {@link AudioRoutingManager.get AvailableDevices}接口返回的音频设备描述数组。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
+| Promise&lt;void&gt; | Promise used to return the result. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
-| 6800301 | Audio service error occurs, such as the service died. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed, for example,the selected device does not exist. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | Audio service error occurs, such as the service died. |
 

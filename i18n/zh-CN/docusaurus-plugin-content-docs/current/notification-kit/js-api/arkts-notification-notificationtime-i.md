@@ -26,7 +26,10 @@ initialTime?: number
 isCountDown?: boolean
 ```
 
-是否倒计时。默认为false。 - true：是。 - false：否。
+是否倒计时。默认为false。
+
+- true：是。
+- false：否。
 
 **类型：** boolean
 
@@ -40,7 +43,10 @@ isCountDown?: boolean
 isInTitle?: boolean
 ```
 
-时间是否展示在title中。默认为false。 - true：是。 - false：否。
+时间是否展示在title中。默认为false。
+
+- true：是。
+- false：否。
 
 **类型：** boolean
 
@@ -54,7 +60,10 @@ isInTitle?: boolean
 isPaused?: boolean
 ```
 
-是否暂停。默认为false。 - true：是。 - false：否。
+是否暂停。默认为false。
+
+- true：是。
+- false：否。
 
 **类型：** boolean
 

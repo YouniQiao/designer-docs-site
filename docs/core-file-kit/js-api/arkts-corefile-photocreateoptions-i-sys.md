@@ -6,7 +6,7 @@ Describe additional operations for creating photo
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [PhotoCreateOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photocreateoptions-i-sys.md#photocreateoptions)
+**Substitutes:** [PhotoCreateOptions](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photocreateoptions-i-sys.md)
 
 **System capability:** SystemCapability.FileManagement.UserFileManager.Core
 
@@ -15,7 +15,7 @@ Describe additional operations for creating photo
 ## Modules to Import
 
 ```TypeScript
-import { userFileManager } from '@ohos.filemanagement.userFileManager';
+import { userFileManager } from '@kit.CoreFileKit';
 ```
 
 ## cameraShotKey

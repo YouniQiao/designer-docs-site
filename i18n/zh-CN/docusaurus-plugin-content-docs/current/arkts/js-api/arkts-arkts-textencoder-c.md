@@ -1,6 +1,7 @@
 # TextEncoder
 
-提供将字符串编码为字节数组的 API。支持多种编码格式。 使用 **TextEncoder** 进行编码时，每个字符所占用的字节数因编码格式而异。必须显式指定编码格式以获取所需的编码结果。
+提供将字符串编码为字节数组的 API。支持多种编码格式。
+使用 **TextEncoder** 进行编码时，每个字符所占用的字节数因编码格式而异。必须显式指定编码格式以获取所需的编码结果。
 
 **起始版本：** 7
 
@@ -228,7 +229,7 @@ encodeIntoUint8Array(input: string, dest: Uint8Array): EncodeIntoUint8ArrayInfo
 | 类型 | 说明 |
 | --- | --- |
 | object | 返回该对象，其中 read 表示已编码的字符数，written 表示已编码字符所占用的字节数。<br>**适用版本：** 9 - 10 |
-| EncodeIntoUint8ArrayInfo | 获取到的对象。**read** 表示已编码的字符数，**written** 表示已编码字符所占用的字节数。<br>**适用版本：** 11 |
+| EncodeIntoUint8ArrayInfo | 获取到的对象。**read** 表示已编码的字符数，**written** 表示已编码字符所占用的字节数。<br>**适用版本：** 11+ |
 
 **示例：**
 
@@ -252,7 +253,11 @@ console.info("result.written = " + result.written);
 readonly encoding = 'utf-8'
 ```
 
-编码格式。<br>支持的格式包括：utf-8、gb2312、gb18030、ibm866、iso-8859-1、iso-8859-2、iso-8859-3、iso-8859-4、 iso-8859-5、iso-8859-6、iso-8859-7、iso-8859-8、iso-8859-8-i、iso-8859-10、iso-8859-13、iso-8859-14、 iso-8859-15、koi8-r、koi8-u、macintosh、windows-874、windows-1250、windows-1251、windows-1252、windows-1253、 windows-1254、windows-1255、windows-1256、windows-1257、windows-1258、gbk、big5、euc-jp、iso-2022-jp、shift_jis、 euc-kr、x-mac-cyrillic、utf-16be 和 utf-16le。<br>默认值为 **'utf-8'**。
+编码格式。<br>支持的格式包括：utf-8、gb2312、gb18030、ibm866、iso-8859-1、iso-8859-2、iso-8859-3、iso-8859-4、
+iso-8859-5、iso-8859-6、iso-8859-7、iso-8859-8、iso-8859-8-i、iso-8859-10、iso-8859-13、iso-8859-14、
+iso-8859-15、koi8-r、koi8-u、macintosh、windows-874、windows-1250、windows-1251、windows-1252、windows-1253、
+windows-1254、windows-1255、windows-1256、windows-1257、windows-1258、gbk、big5、euc-jp、iso-2022-jp、shift_jis、
+euc-kr、x-mac-cyrillic、utf-16be 和 utf-16le。<br>默认值为 **'utf-8'**。
 
 **类型：** 'utf-8'
 

@@ -1,6 +1,7 @@
 # WebResourceHandler
 
-Used to intercept url requests. Response headers and body can be sent through WebResourceHandler.
+Used to intercept url requests. Response headers and body can be sent through
+WebResourceHandler.
 
 **Since:** 12
 
@@ -9,7 +10,7 @@ Used to intercept url requests. Response headers and body can be sent through We
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## didFail

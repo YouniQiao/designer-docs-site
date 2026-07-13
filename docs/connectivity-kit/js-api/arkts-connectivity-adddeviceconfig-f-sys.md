@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { wifi } from '@ohos.wifi';
+import { wifi } from '@kit.ConnectivityKit';
 ```
 
 ## addDeviceConfig
@@ -12,7 +12,9 @@ import { wifi } from '@ohos.wifi';
 function addDeviceConfig(config: WifiDeviceConfig): Promise<number>
 ```
 
-Adds Wi-Fi connection configuration to the device. <p>The configuration will be updated when the configuration is added.</p>
+Adds Wi-Fi connection configuration to the device.
+
+<p>The configuration will be updated when the configuration is added.</p>
 
 **Since:** 6
 
@@ -79,7 +81,9 @@ try {
 function addDeviceConfig(config: WifiDeviceConfig, callback: AsyncCallback<number>): void
 ```
 
-Adds Wi-Fi connection configuration to the device. <p>The configuration will be updated when the configuration is added.</p>
+Adds Wi-Fi connection configuration to the device.
+
+<p>The configuration will be updated when the configuration is added.</p>
 
 **Since:** 6
 

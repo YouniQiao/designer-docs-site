@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAdditionalInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAdditionalInfo(bundleName: string): string
 ```
 
-Obtains additional information about a bundle in synchronous mode. The return value is the **additionalInfo** field value in [InstallParam](arkts-ability-installparam-i-sys.md#installparam) passed when **install** is called.
+Obtains additional information about a bundle in synchronous mode. The return value is the **additionalInfo** field
+value in [InstallParam](arkts-ability-installparam-i-sys.md) passed when **install** is called.
 
 **Since:** 10
 

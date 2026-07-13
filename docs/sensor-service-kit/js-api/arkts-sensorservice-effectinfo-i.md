@@ -9,7 +9,7 @@ Defines the preset effect.
 ## Modules to Import
 
 ```TypeScript
-import { vibrator } from '@ohos.vibrator';
+import { vibrator } from '@kit.SensorServiceKit';
 ```
 
 ## isEffectSupported
@@ -18,7 +18,8 @@ import { vibrator } from '@ohos.vibrator';
 isEffectSupported: boolean
 ```
 
-Whether the preset effect is supported. The value **true** indicates that the preset effect is supported, and the value **false** indicates the opposite.
+Whether the preset effect is supported. The value **true** indicates that the preset effect is supported, and the
+value **false** indicates the opposite.
 
 **Type:** boolean
 

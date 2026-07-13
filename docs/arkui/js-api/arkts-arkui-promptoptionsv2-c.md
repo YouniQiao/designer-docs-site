@@ -1,6 +1,7 @@
 # PromptOptionsV2
 
-Configuration parameter of ExceptionPromptV2. Use @ObservedV2 and @Trace to support deep observation and dynamic refresh of properties.
+Configuration parameter of ExceptionPromptV2.
+Use @ObservedV2 and @Trace to support deep observation and dynamic refresh of properties.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Configuration parameter of ExceptionPromptV2. Use @ObservedV2 and @Trace to supp
 ## Modules to Import
 
 ```TypeScript
-import { MarginTypeV2, PromptOptionsV2, ExceptionPromptV2, PromptOptionsV2Config } from '@ohos.arkui.advanced.ExceptionPromptV2';
+import { MarginTypeV2, PromptOptionsV2, ExceptionPromptV2, PromptOptionsV2Config } from '@kit.ArkUI';
 ```
 
 ## constructor
@@ -40,7 +41,8 @@ Constructor of PromptOptionsV2.
 actionText?: ResourceStr
 ```
 
-Text of the icon on the right of the ExceptionPromptV2. If this parameter is not set or is set to undefined, the text is not displayed.
+Text of the icon on the right of the ExceptionPromptV2.
+If this parameter is not set or is set to undefined, the text is not displayed.
 
 **Type:** ResourceStr
 
@@ -58,7 +60,8 @@ Text of the icon on the right of the ExceptionPromptV2. If this parameter is not
 icon?: ResourceStr
 ```
 
-Icon style of the ExceptionPromptV2. If this parameter is not set or is set to undefined, the icon is not displayed.
+Icon style of the ExceptionPromptV2.
+If this parameter is not set or is set to undefined, the icon is not displayed.
 
 **Type:** ResourceStr
 
@@ -76,7 +79,10 @@ Icon style of the ExceptionPromptV2. If this parameter is not set or is set to u
 isShown?: boolean
 ```
 
-Whether the ExceptionPromptV2 is displayed. true: The exception prompt is displayed. false: The exception prompt is hidden. Default value: false.
+Whether the ExceptionPromptV2 is displayed.
+true: The exception prompt is displayed.
+false: The exception prompt is hidden.
+Default value: false.
 
 **Type:** boolean
 
@@ -94,7 +100,8 @@ Whether the ExceptionPromptV2 is displayed. true: The exception prompt is displa
 marginTop: Dimension
 ```
 
-Top margin of the ExceptionPromptV2. Distance from the top to the content area of ExceptionPromptV2.
+Top margin of the ExceptionPromptV2.
+Distance from the top to the content area of ExceptionPromptV2.
 
 **Type:** Dimension
 
@@ -112,7 +119,8 @@ Top margin of the ExceptionPromptV2. Distance from the top to the content area o
 marginType: MarginTypeV2
 ```
 
-Margin Type of ExceptionPromptV2. Margin from the content area to the edge of the container.
+Margin Type of ExceptionPromptV2.
+Margin from the content area to the edge of the container.
 
 **Type:** MarginTypeV2
 
@@ -130,7 +138,8 @@ Margin Type of ExceptionPromptV2. Margin from the content area to the edge of th
 symbolStyle?: SymbolGlyphModifier
 ```
 
-Symbol icon style of the ExceptionPromptV2, which has higher priority than icon. If this parameter is not set or is set to undefined, the symbol icon is not displayed.
+Symbol icon style of the ExceptionPromptV2, which has higher priority than icon.
+If this parameter is not set or is set to undefined, the symbol icon is not displayed.
 
 **Type:** SymbolGlyphModifier
 
@@ -148,7 +157,15 @@ Symbol icon style of the ExceptionPromptV2, which has higher priority than icon.
 tip?: ResourceStr
 ```
 
-Text content of the ExceptionPromptV2. By default, the following text resources are provided: 1. ohos_network_not_connected: displayed when no Internet connection. 2. ohos_network_connected_unstable: displayed when the Internet connection is unstable. 3. ohos_unstable_connect_server: displayed when the server fails to be connected. 4. ohos_custom_network_tips_left: displayed when an Internet connection is available but the location fails to be obtained. If this parameter is not set or is set to undefined, the text content is not displayed. Tip text of ExceptionPromptV2.
+Text content of the ExceptionPromptV2.
+By default, the following text resources are provided:
+1. ohos_network_not_connected: displayed when no Internet connection.
+2. ohos_network_connected_unstable: displayed when the Internet connection is unstable.
+3. ohos_unstable_connect_server: displayed when the server fails to be connected.
+4. ohos_custom_network_tips_left: displayed when an Internet connection is available
+but the location fails to be obtained.
+If this parameter is not set or is set to undefined, the text content is not displayed.
+Tip text of ExceptionPromptV2.
 
 **Type:** ResourceStr
 

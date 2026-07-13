@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { abilityManager } from '@ohos.app.ability.abilityManager';
+import { abilityManager } from '@kit.AbilityKit';
 ```
 
 ## acquireShareData
@@ -12,7 +12,9 @@ import { abilityManager } from '@ohos.app.ability.abilityManager';
 function acquireShareData(missionId: number, callback: AsyncCallback<Record<string, Object>>): void
 ```
 
-Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-uiability-c.md#onshare-1). This API uses an asynchronous callback to return the result.
+Called by a system dialog box to obtain shared data, which is set by the target UIAbility through
+[onShare](arkts-ability-uiability-c.md#onshare-1). This API uses an
+asynchronous callback to return the result.
 
 **Since:** 10
 
@@ -42,7 +44,9 @@ Called by a system dialog box to obtain shared data, which is set by the target 
 function acquireShareData(missionId: number): Promise<Record<string, Object>>
 ```
 
-Called by a system dialog box to obtain shared data, which is set by the target UIAbility through [onShare](arkts-ability-uiability-c.md#onshare-1). This API uses a promise to return the result.
+Called by a system dialog box to obtain shared data, which is set by the target UIAbility through
+[onShare](arkts-ability-uiability-c.md#onshare-1). This API uses a
+promise to return the result.
 
 **Since:** 10
 

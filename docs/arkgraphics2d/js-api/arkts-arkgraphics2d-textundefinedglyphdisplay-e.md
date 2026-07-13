@@ -26,7 +26,8 @@ Follows the internal .notdef glyph design of the font, which can be an empty box
 USE_TOFU = 1
 ```
 
-Always uses explicit tofu blocks to replace undefined glyphs, overriding the default behavior of fonts. It is suitable for debugging missing characters or forcing a uniform display of missing symbols.
+Always uses explicit tofu blocks to replace undefined glyphs, overriding the default behavior of fonts. It is
+suitable for debugging missing characters or forcing a uniform display of missing symbols.
 
 **Since:** 20
 

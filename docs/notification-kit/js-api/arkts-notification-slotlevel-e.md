@@ -24,7 +24,8 @@ Notification is disabled.
 LEVEL_MIN = 1
 ```
 
-Notification is enabled, but the notification icon is not displayed in the status bar, with no alert tone and banner.
+Notification is enabled, but the notification icon is not displayed in the status bar, with no alert tone and
+banner.
 
 **Since:** 9
 
@@ -48,7 +49,8 @@ Notification is enabled, and the notification icon is displayed in the status ba
 LEVEL_DEFAULT = 3
 ```
 
-Notification is enabled, and the notification icon is displayed in the status bar, with an alert tone but no banner.
+Notification is enabled, and the notification icon is displayed in the status bar, with an alert tone but no
+banner.
 
 **Since:** 9
 

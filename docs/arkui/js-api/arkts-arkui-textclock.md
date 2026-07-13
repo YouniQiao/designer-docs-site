@@ -1,6 +1,12 @@
 # TextClock
 
-The **TextClock** component displays the current system time in text format for different time zones. The time is accurate to seconds. When the component is invisible, the time change stops. The visible status of a component is processed based on [onVisibleAreaChange]{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}. If the visible threshold **ratios** is greater than 0, the component is visible.
+The **TextClock** component displays the current system time in text format for different time zones. The time is
+accurate to seconds.
+
+When the component is invisible, the time change stops. The visible status of a component is processed based on
+[onVisibleAreaChange]{@link CommonMethod#onVisibleAreaChange(ratios: Array<number>, event: VisibleAreaChangeCallback)}.
+If the visible threshold **ratios** is greater than 0, the component is visible.
+
 
 ## TextClock
 

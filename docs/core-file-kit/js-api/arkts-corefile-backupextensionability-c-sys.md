@@ -9,7 +9,7 @@ Class to be override for backup extension ability.
 ## Modules to Import
 
 ```TypeScript
-import { BundleVersion } from '@ohos.application.BackupExtensionAbility';
+import { BundleVersion } from '@kit.CoreFileKit';
 ```
 
 ## getBackupCompatibilityInfo
@@ -18,7 +18,8 @@ import { BundleVersion } from '@ohos.application.BackupExtensionAbility';
 getBackupCompatibilityInfo(extInfo: string) : Promise<string>
 ```
 
-Callback to be called when getting application backup compatibilityInfo. Developer could override this method to provide the backup compatibilityInfo.
+Callback to be called when getting application backup compatibilityInfo.
+Developer could override this method to provide the backup compatibilityInfo.
 
 **Since:** 20
 
@@ -46,7 +47,8 @@ Callback to be called when getting application backup compatibilityInfo. Develop
 getBackupInfo(): string
 ```
 
-Callback to be called when getting application backupInfo. Developer could override this method to provide the backupInfo.
+Callback to be called when getting application backupInfo.
+Developer could override this method to provide the backupInfo.
 
 **Since:** 12
 
@@ -68,7 +70,8 @@ Callback to be called when getting application backupInfo. Developer could overr
 getRestoreCompatibilityInfo(extInfo: string) : Promise<string>
 ```
 
-Callback to be called when getting application restore compatibilityInfo. Developer could override this method to provide the restore compatibilityInfo.
+Callback to be called when getting application restore compatibilityInfo.
+Developer could override this method to provide the restore compatibilityInfo.
 
 **Since:** 20
 

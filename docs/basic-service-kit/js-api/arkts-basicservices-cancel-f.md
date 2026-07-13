@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { cacheDownload } from '@ohos.request.cacheDownload';
+import { cacheDownload } from '@kit.BasicServicesKit';
 ```
 
 ## cancel
@@ -12,7 +12,10 @@ import { cacheDownload } from '@ohos.request.cacheDownload';
 function cancel(url: string): void
 ```
 
-Cancels an ongoing download task based on the URL. The saved memory cache and file cache are not affected. - If there is no download task with the specified URL, this API does not take effect. - When this API is used for synchronous execution, the calling thread is not blocked.
+Cancels an ongoing download task based on the URL. The saved memory cache and file cache are not affected.
+
+- If there is no download task with the specified URL, this API does not take effect.
+- When this API is used for synchronous execution, the calling thread is not blocked.
 
 **Since:** 18
 

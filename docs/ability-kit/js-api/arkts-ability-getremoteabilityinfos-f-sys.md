@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { distributedBundle } from '@ohos.distributedBundle';
+import { distributedBundle } from '@kit.AbilityKit';
 ```
 
 ## getRemoteAbilityInfos
@@ -13,7 +13,8 @@ function getRemoteAbilityInfos(elementNames: Array<ElementName>,
     callback: AsyncCallback<Array<RemoteAbilityInfo>>): void
 ```
 
-Obtains the information about remote abilities that match the given element names. This API uses an asynchronous callback to return the result.
+Obtains the information about remote abilities that match the given element names. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 8
 
@@ -41,7 +42,8 @@ Obtains the information about remote abilities that match the given element name
 function getRemoteAbilityInfos(elementNames: Array<ElementName>): Promise<Array<RemoteAbilityInfo>>
 ```
 
-Obtains the information about remote abilities that match the given element names. This API uses a promise to return the result.
+Obtains the information about remote abilities that match the given element names. This API uses a promise to
+return the result.
 
 **Since:** 8
 

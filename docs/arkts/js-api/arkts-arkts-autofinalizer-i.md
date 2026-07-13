@@ -1,6 +1,7 @@
 # AutoFinalizer
 
-Provides an interface that can be implemented for releasing a resource which is managed by developers through a developer-defined callback.
+Provides an interface that can be implemented for releasing a resource
+which is managed by developers through a developer-defined callback.
 
 **Since:** 22
 
@@ -9,7 +10,7 @@ Provides an interface that can be implemented for releasing a resource which is 
 ## Modules to Import
 
 ```TypeScript
-import { util } from '@ohos.util';
+import { util } from '@kit.ArkTS';
 ```
 
 ## onFinalization

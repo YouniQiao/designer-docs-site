@@ -1,6 +1,17 @@
 # WebStorage
 
-Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web Storage APIs. All **Web** components in an application share a **WebStorage** object. > **NOTE** > > - The sample effect is subject to the actual device. > > - You must load the **Web** component before calling the APIs in **WebStorage**. > > - After the ArkWeb kernel is upgraded to M132, the Web SQL database management becomes invalid because the kernel > discards Web SQL. For details about the ArkWeb kernel version, see > [Constraints](../../../../web/web-component-overview.md#constraints).
+Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web Storage APIs. All **Web**
+components in an application share a **WebStorage** object.
+
+> **NOTE**
+>
+> - The sample effect is subject to the actual device.
+>
+> - You must load the **Web** component before calling the APIs in **WebStorage**.
+>
+> - After the ArkWeb kernel is upgraded to M132, the Web SQL database management becomes invalid because the kernel
+> discards Web SQL. For details about the ArkWeb kernel version, see
+> [Constraints](../../../../web/web-component-overview.md#constraints).
 
 **Since:** 9
 
@@ -9,7 +20,7 @@ Implements a **WebStorage** object to manage the Web SQL database and HTML5 Web 
 ## Modules to Import
 
 ```TypeScript
-import { webview } from '@ohos.web.webview';
+import { webview } from '@kit.ArkWeb';
 ```
 
 ## deleteAllData
@@ -18,7 +29,8 @@ import { webview } from '@ohos.web.webview';
 static deleteAllData(incognito?: boolean): void
 ```
 
-Deletes all storage data used by JavaScript storage APIs, including the Web SQL Database and HTML5-supported Web storage APIs.
+Deletes all storage data used by JavaScript storage APIs, including the Web SQL Database and HTML5-supported Web
+storage APIs.
 
 **Since:** 9
 
@@ -65,7 +77,8 @@ Deletes all data in the specified origin.
 static getOriginQuota(origin: string): Promise<number>
 ```
 
-Obtains the storage quota of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes. This API uses a promise to return the result.
+Obtains the storage quota of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes.
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -98,7 +111,8 @@ Obtains the storage quota of an origin in the Web SQL Database and HTML5-support
 static getOriginQuota(origin: string, callback: AsyncCallback<number>): void
 ```
 
-Obtains the storage quota of an origin in Web SQL Database and HTML5-supported Web Storage APIs, in bytes. This API uses an asynchronous callback to return the result.
+Obtains the storage quota of an origin in Web SQL Database and HTML5-supported Web Storage APIs, in bytes. This
+API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -126,7 +140,8 @@ Obtains the storage quota of an origin in Web SQL Database and HTML5-supported W
 static getOriginUsage(origin: string): Promise<number>
 ```
 
-Obtains the storage usage of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes. This API uses a promise to return the result.
+Obtains the storage usage of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes.
+This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -159,7 +174,8 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 static getOriginUsage(origin: string, callback: AsyncCallback<number>): void
 ```
 
-Obtains the storage usage of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes. This API uses an asynchronous callback to return the result.
+Obtains the storage usage of an origin in the Web SQL Database and HTML5-supported Web Storage APIs, in bytes.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -187,7 +203,8 @@ Obtains the storage usage of an origin in the Web SQL Database and HTML5-support
 static getOrigins(): Promise<Array<WebStorageOrigin>>
 ```
 
-Obtains information about origins that are currently using the Web SQL Database and HTML5-supported Web Storage APIs. This API uses a promise to return the result.
+Obtains information about origins that are currently using the Web SQL Database and HTML5-supported Web Storage
+APIs. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -214,7 +231,8 @@ Obtains information about origins that are currently using the Web SQL Database 
 static getOrigins(callback: AsyncCallback<Array<WebStorageOrigin>>): void
 ```
 
-Obtains information about origins that are currently using the Web SQL Database and HTML5-supported Web Storage APIs. This API uses an asynchronous callback to return the result.
+Obtains information about origins that are currently using the Web SQL Database and HTML5-supported Web Storage
+APIs. This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 

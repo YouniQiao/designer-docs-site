@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## getRunningMultiAppInfo
@@ -12,7 +12,9 @@ import { appManager } from '@ohos.app.ability.appManager';
 function getRunningMultiAppInfo(bundleName: string): Promise<RunningMultiAppInfo>
 ```
 
-Obtains the information about running applications in multi-app mode. The multi-app mode means that an application can be simultaneously logged in with different accounts on the same device. This API uses a promise to return the result.
+Obtains the information about running applications in multi-app mode. The multi-app mode means that an application
+can be simultaneously logged in with different accounts on the same device. This API uses a promise to return the
+result.
 
 **Since:** 12
 

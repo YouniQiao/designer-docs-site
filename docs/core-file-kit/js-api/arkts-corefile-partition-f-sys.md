@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { volumeManager } from '@ohos.file.volumeManager';
+import { volumeManager } from '@kit.CoreFileKit';
 ```
 
 ## partition
@@ -12,7 +12,8 @@ import { volumeManager } from '@ohos.file.volumeManager';
 function partition(diskId: string, type: number, callback: AsyncCallback<void>): void
 ```
 
-Partitions a disk. This API uses an asynchronous callback to return the result. The system supports access to multi-partition disks. Currently, this API can partition a disk into only one partition.
+Partitions a disk. This API uses an asynchronous callback to return the result. The system supports access to
+multi-partition disks. Currently, this API can partition a disk into only one partition.
 
 **Since:** 9
 
@@ -48,7 +49,8 @@ Partitions a disk. This API uses an asynchronous callback to return the result. 
 function partition(diskId: string, type: number): Promise<void>
 ```
 
-Partitions a disk. This API uses a promise to return the result. The system supports access to multi-partition disks. Currently, this API can partition a disk into only one partition.
+Partitions a disk. This API uses a promise to return the result. The system supports access to multi-partition
+disks. Currently, this API can partition a disk into only one partition.
 
 **Since:** 9
 

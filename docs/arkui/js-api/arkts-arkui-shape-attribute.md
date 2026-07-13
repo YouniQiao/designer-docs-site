@@ -1,6 +1,6 @@
 # Shape properties/events
 
-In addition to the [universal attributes](arkts-arkui-commonmethod-c.md#commonmethod), the following attributes are supported.
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md), the following attributes are supported.
 
 **Inheritance/Implementation:** ShapeAttribute extends [CommonMethod<ShapeAttribute>](CommonMethod<ShapeAttribute>)
 
@@ -14,7 +14,9 @@ In addition to the [universal attributes](arkts-arkui-commonmethod-c.md#commonme
 antiAlias(value: boolean)
 ```
 
-Sets whether to enable anti-aliasing. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) .
+Sets whether to enable anti-aliasing. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+.
 
 **Since:** 7
 
@@ -36,7 +38,10 @@ Sets whether to enable anti-aliasing. This attribute can be dynamically set usin
 fill(value: ResourceColor)
 ```
 
-Sets the color of the fill area. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . Invalid values are treated as the default value. If this attribute and the universal attribute **foregroundColor** are both set, whichever is set later takes effect.
+Sets the color of the fill area. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. Invalid values are treated as the default value. If this attribute and the universal attribute
+**foregroundColor** are both set, whichever is set later takes effect.
 
 **Since:** 7
 
@@ -50,7 +55,7 @@ Sets the color of the fill area. This attribute can be dynamically set using [at
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Color of the fill area.<br>Default value: [Color](arkts-arkui-color-e.md#color).Black<br>The**undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. |
+| value | ResourceColor | Yes | Color of the fill area.<br>Default value: [Color](arkts-arkui-color-e.md).Black<br>The**undefined**, **null**, **NaN**, and **Infinity** values are invalid and treated as the default value. |
 
 ## fillOpacity
 
@@ -58,7 +63,9 @@ Sets the color of the fill area. This attribute can be dynamically set using [at
 fillOpacity(value: number | string | Resource)
 ```
 
-Sets the opacity of the fill area. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) .
+Sets the opacity of the fill area. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+.
 
 **Since:** 7
 
@@ -80,7 +87,20 @@ Sets the opacity of the fill area. This attribute can be dynamically set using [
 mesh(value: Array<any>, column: number, row: number)
 ```
 
-Sets the mesh effect. An image is divided into (row + 1) × (column + 1) meshes. The coordinates of each mesh intersection point are stored in the array. (Every two elements indicate the x and y coordinates of an intersection point.) The mesh vertex position is relocated based on the coordinates in the array value to implement partial image distortion. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . > **NOTE** > > **mesh** takes effect only when a **pixelMap** object is passed to the shape, and the effect applies to the > passed **pixelMap** object. It produces the same result as > [drawPixelMapMesh<sup>12+</sup>](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-canvas-c.md#drawpixelmapmesh-1) in the > [drawing module](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-drawing.md#drawing). It is recommended that you use > **drawPixelMapMesh**.
+Sets the mesh effect. An image is divided into (row + 1) × (column + 1) meshes. The coordinates of each mesh
+intersection point are stored in the array. (Every two elements indicate the x and y coordinates of an intersection
+point.) The mesh vertex position is relocated based on the coordinates in the array value to implement partial
+image distortion. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+.
+
+> **NOTE**
+>
+> **mesh** takes effect only when a **pixelMap** object is passed to the shape, and the effect applies to the
+> passed **pixelMap** object. It produces the same result as
+> [drawPixelMapMesh<sup>12+</sup>](../../apis-arkgraphics2d/arkts-apis/arkts-arkgraphics2d-canvas-c.md#drawpixelmapmesh-1) in the
+> [drawing module](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-drawing.md). It is recommended that you use
+> **drawPixelMapMesh**.
 
 **Since:** 8
 
@@ -104,7 +124,9 @@ Sets the mesh effect. An image is divided into (row + 1) × (column + 1) meshes.
 stroke(value: ResourceColor)
 ```
 
-Sets the stroke color. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . If this attribute is not set, the default stroke opacity is **0**, meaning no stroke is displayed.
+Sets the stroke color. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. If this attribute is not set, the default stroke opacity is **0**, meaning no stroke is displayed.
 
 **Since:** 7
 
@@ -118,7 +140,7 @@ Sets the stroke color. This attribute can be dynamically set using [attributeMod
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | ResourceColor | Yes | Stroke color.<br>Default value: [Color](arkts-arkui-color-e.md#color).Transparent<br>Invalidvalues **undefined** and **null** values are treated as the default value, and invalid values **NaN** and**Infinity** are treated as [Color](arkts-arkui-color-e.md#color).Black. |
+| value | ResourceColor | Yes | Stroke color.<br>Default value: [Color](arkts-arkui-color-e.md).Transparent<br>Invalidvalues **undefined** and **null** values are treated as the default value, and invalid values **NaN** and**Infinity** are treated as [Color](arkts-arkui-color-e.md).Black. |
 
 ## strokeDashArray
 
@@ -126,7 +148,9 @@ Sets the stroke color. This attribute can be dynamically set using [attributeMod
 strokeDashArray(value: Array<any>)
 ```
 
-Sets the stroke dashes. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . The value must be greater than or equal to 0. Invalid values are treated as the default value.
+Sets the stroke dashes. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. The value must be greater than or equal to 0. Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -148,7 +172,9 @@ Sets the stroke dashes. This attribute can be dynamically set using [attributeMo
 strokeDashOffset(value: Length)
 ```
 
-Sets the offset of the start point for drawing the stroke. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . Invalid values are treated as the default value.
+Sets the offset of the start point for drawing the stroke. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. Invalid values are treated as the default value.
 
 **Since:** 7
 
@@ -170,7 +196,9 @@ Sets the offset of the start point for drawing the stroke. This attribute can be
 strokeLineCap(value: LineCapStyle)
 ```
 
-Sets the cap style of the stroke. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) .
+Sets the cap style of the stroke. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+.
 
 **Since:** 7
 
@@ -192,7 +220,9 @@ Sets the cap style of the stroke. This attribute can be dynamically set using [a
 strokeLineJoin(value: LineJoinStyle)
 ```
 
-Sets the join style of the stroke. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) .
+Sets the join style of the stroke. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+.
 
 **Since:** 7
 
@@ -214,7 +244,13 @@ Sets the join style of the stroke. This attribute can be dynamically set using [
 strokeMiterLimit(value: Length)
 ```
 
-Sets the limit on the ratio of the miter length to the value of stroke width used to draw a miter join. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). The miter length indicates the distance from the outer tip to the inner corner of the miter. The border width is the value of **strokeWidth**. This attribute works only when **strokeLineJoin** is set to **LineJoinStyle.Miter**. The value must be greater than or equal to 1.0. If the value is in the [0, 1) range, the value **1.0** will be used. In other cases, the default value will be used.
+Sets the limit on the ratio of the miter length to the value of stroke width used to draw a miter join. This
+attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1). The miter length
+indicates the distance from the outer tip to the inner corner of the miter. The border width is
+the value of **strokeWidth**. This attribute works only when **strokeLineJoin** is set to **LineJoinStyle.Miter**.
+
+The value must be greater than or equal to 1.0. If the value is in the
+[0, 1) range, the value **1.0** will be used. In other cases, the default value will be used.
 
 **Since:** 7
 
@@ -236,7 +272,10 @@ Sets the limit on the ratio of the miter length to the value of stroke width use
 strokeOpacity(value: number | string | Resource)
 ```
 
-Sets the stroke opacity. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . The value range is [0.0, 1.0]. If the set value is less than 0.0, **0.0** will be used. If the set value is greater than 1.0, **1.0** will be used.
+Sets the stroke opacity. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. The value range is [0.0, 1.0]. If the set value is less than 0.0, **0.0** will be used. If the set value is
+greater than 1.0, **1.0** will be used.
 
 **Since:** 7
 
@@ -258,7 +297,9 @@ Sets the stroke opacity. This attribute can be dynamically set using [attributeM
 strokeWidth(value: Length)
 ```
 
-Sets the stroke width. This attribute can be dynamically set using [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) . If this attribute is of the string type, percentage values are not supported and will be treated as 1 px.
+Sets the stroke width. This attribute can be dynamically set using
+[attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1)
+. If this attribute is of the string type, percentage values are not supported and will be treated as 1 px.
 
 **Since:** 7
 

@@ -1,10 +1,6 @@
 # StreamUsage
 
-```TypeScript
-enum StreamUsage
-```
-
-Enumerates the types of audio streams played.
+表示播放音频流类型的枚举。
 
 **起始版本：** 7
 
@@ -16,11 +12,11 @@ Enumerates the types of audio streams played.
 STREAM_USAGE_UNKNOWN = 0
 ```
 
-Unknown content.
+未知类型。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -30,13 +26,16 @@ Unknown content.
 STREAM_USAGE_MEDIA = 1
 ```
 
-Media.
+媒体。
+
+从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_MUSIC、STREAM_USAGE_MOVIE、STREAM_USAGE_GAME或
+STREAM_USAGE_AUDIOBOOK替代。
 
 **起始版本：** 7
 
 **废弃版本：** 10
 
-**替代接口：** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_MUSIC
+**替代接口：** STREAM_USAGE_MUSIC
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -46,11 +45,11 @@ Media.
 STREAM_USAGE_MUSIC = 1
 ```
 
-Music.
+音乐。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -60,11 +59,11 @@ Music.
 STREAM_USAGE_VOICE_COMMUNICATION = 2
 ```
 
-VoIP voice call. (The 3A algorithm is enabled when this stream starts.)
+VoIP语音通话（该流类型起播时，会触发开启3A算法）。
 
 **起始版本：** 7
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -74,11 +73,11 @@ VoIP voice call. (The 3A algorithm is enabled when this stream starts.)
 STREAM_USAGE_VOICE_ASSISTANT = 3
 ```
 
-Voice assistant.
+语音播报。
 
 **起始版本：** 9
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -88,11 +87,11 @@ Voice assistant.
 STREAM_USAGE_ALARM = 4
 ```
 
-Audio stream for alarming.
+闹钟。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -102,11 +101,11 @@ Audio stream for alarming.
 STREAM_USAGE_VOICE_MESSAGE = 5
 ```
 
-Voice message.
+语音消息。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -116,13 +115,15 @@ Voice message.
 STREAM_USAGE_NOTIFICATION_RINGTONE = 6
 ```
 
-Notification or ringtone usage.
+通知铃声。
+
+从API version 7开始支持，从API version 10开始废弃，建议使用该枚举中的STREAM_USAGE_RINGTONE替代。
 
 **起始版本：** 7
 
 **废弃版本：** 10
 
-**替代接口：** ohos.multimedia.audio.StreamUsage#STREAM_USAGE_RINGTONE
+**替代接口：** STREAM_USAGE_RINGTONE
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -132,11 +133,11 @@ Notification or ringtone usage.
 STREAM_USAGE_RINGTONE = 6
 ```
 
-Ringtone.
+铃声。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -146,11 +147,11 @@ Ringtone.
 STREAM_USAGE_NOTIFICATION = 7
 ```
 
-Notification.
+通知音。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -160,27 +161,13 @@ Notification.
 STREAM_USAGE_ACCESSIBILITY = 8
 ```
 
-Accessibility.
+无障碍。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## STREAM_USAGE_SYSTEM
-
-```TypeScript
-STREAM_USAGE_SYSTEM = 9
-```
-
-System usage, such as screen lock or key click.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
 
 ## STREAM_USAGE_MOVIE
 
@@ -188,11 +175,11 @@ System usage, such as screen lock or key click.
 STREAM_USAGE_MOVIE = 10
 ```
 
-Movie or video.
+电影或视频。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -202,11 +189,11 @@ Movie or video.
 STREAM_USAGE_GAME = 11
 ```
 
-Gaming.
+游戏。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -216,11 +203,11 @@ Gaming.
 STREAM_USAGE_AUDIOBOOK = 12
 ```
 
-Audiobooks (including crosstalks and storytelling), news radio, and podcasts.
+有声读物（包括听书、相声、评书）、听新闻、播客等。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
 
@@ -230,55 +217,13 @@ Audiobooks (including crosstalks and storytelling), news radio, and podcasts.
 STREAM_USAGE_NAVIGATION = 13
 ```
 
-Navigation.
+导航。
 
 **起始版本：** 10
 
-**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## STREAM_USAGE_DTMF
-
-```TypeScript
-STREAM_USAGE_DTMF = 14
-```
-
-DTMF dial tone usage.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-## STREAM_USAGE_ENFORCED_TONE
-
-```TypeScript
-STREAM_USAGE_ENFORCED_TONE = 15
-```
-
-Enforced tone usage, such as camera shutter.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-## STREAM_USAGE_ULTRASONIC
-
-```TypeScript
-STREAM_USAGE_ULTRASONIC = 16
-```
-
-Ultrasonic playing usage. This type is only used for msdp condition.
-
-**起始版本：** 10
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
 
 ## STREAM_USAGE_VIDEO_COMMUNICATION
 
@@ -286,57 +231,11 @@ Ultrasonic playing usage. This type is only used for msdp condition.
 STREAM_USAGE_VIDEO_COMMUNICATION = 17
 ```
 
-VoIP video call. (The 3A algorithm is enabled when this stream starts.)
+VoIP视频通话（该流类型起播时，会触发开启3A算法）。
 
 **起始版本：** 12
 
-**原子化服务API：** 该接口支持在原子化服务中使用。
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Multimedia.Audio.Core
-
-## STREAM_USAGE_VOICE_CALL_ASSISTANT
-
-```TypeScript
-STREAM_USAGE_VOICE_CALL_ASSISTANT = 21
-```
-
-Voice call assistant type. This type is only used for call assistant functionalities.
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-## STREAM_USAGE_ANNOUNCEMENT
-
-```TypeScript
-STREAM_USAGE_ANNOUNCEMENT = 22
-```
-
-Announcement usage.
-
-**起始版本：** 24
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
-
-## STREAM_USAGE_EMERGENCY
-
-```TypeScript
-STREAM_USAGE_EMERGENCY = 23
-```
-
-Emergency usage.
-
-**起始版本：** 24
-
-**模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Audio.Core
-
-**系统接口：** 此接口为系统接口。
 

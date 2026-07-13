@@ -12,7 +12,11 @@ Describes the settings for advertising.
 interval?: number
 ```
 
-Indicates the advertising interval. The minimum number of slots is 160, and the corresponding time is 20 ms (160 * 0.125 ms = 20 ms). The maximum number of slots is 16777215, and the corresponding time is 2097151.875 ms. Unit: Slots, The value must be an integer within [160,16777215], each slot is 125 microseconds. Default value: 5000.
+Indicates the advertising interval.
+The minimum number of slots is 160, and the corresponding time is 20 ms (160 * 0.125 ms = 20 ms).
+The maximum number of slots is 16777215, and the corresponding time is 2097151.875 ms.
+Unit: Slots, The value must be an integer within [160,16777215], each slot is 125 microseconds.
+Default value: 5000.
 
 **Type:** number
 
@@ -28,7 +32,8 @@ Indicates the advertising interval. The minimum number of slots is 160, and the 
 isConnectable?: boolean
 ```
 
-Indicates whether the advertising is connectable. Default value: true.
+Indicates whether the advertising is connectable.
+Default value: true.
 
 **Type:** boolean
 
@@ -44,7 +49,8 @@ Indicates whether the advertising is connectable. Default value: true.
 power?: TxPowerMode
 ```
 
-Indicates the advertising power mode. Default value: ADV_TX_POWER_LOW.
+Indicates the advertising power mode.
+Default value: ADV_TX_POWER_LOW.
 
 **Type:** TxPowerMode
 

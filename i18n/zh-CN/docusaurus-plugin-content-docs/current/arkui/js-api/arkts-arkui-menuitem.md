@@ -1,6 +1,11 @@
 # MenuItem
 
-用来展示菜单中具体的菜单选项。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+用来展示菜单中具体的菜单选项。
+
+> **说明：**
+
+> - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。
+
 
 ## MenuItem
 

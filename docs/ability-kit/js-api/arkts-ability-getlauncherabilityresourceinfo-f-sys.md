@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
+import { bundleResourceManager } from '@kit.AbilityKit';
 ```
 
 ## getLauncherAbilityResourceInfo
@@ -12,7 +12,8 @@ import { bundleResourceManager } from '@ohos.bundle.bundleResourceManager';
 function getLauncherAbilityResourceInfo(bundleName: string, resourceFlags?: number): Array<LauncherAbilityResourceInfo>
 ```
 
-Obtains the bundle information of the entry ability of an application based on the given bundle name and resource flags. This API returns the result synchronously.
+Obtains the bundle information of the entry ability of an application based on the given bundle name and resource
+flags. This API returns the result synchronously.
 
 **Since:** 11
 
@@ -27,7 +28,7 @@ Obtains the bundle information of the entry ability of an application based on t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application. |
-| resourceFlags | number | No | Type of the resource information to obtain. The default value is**[ResourceFlag](arkts-ability-resourceflag-e-sys.md#resourceflag).GET_RESOURCE_INFO_ALL**. |
+| resourceFlags | number | No | Type of the resource information to obtain. The default value is**[ResourceFlag](arkts-ability-resourceflag-e-sys.md).GET_RESOURCE_INFO_ALL**. |
 
 **Return value:**
 
@@ -51,7 +52,8 @@ Obtains the bundle information of the entry ability of an application based on t
 function getLauncherAbilityResourceInfo(bundleName: string, resourceFlags?: number, appIndex?: number): Array<LauncherAbilityResourceInfo>
 ```
 
-Obtains the launcher ability resource information of an application based on the given bundle name, resource flags, and app index. This API returns the result synchronously.
+Obtains the launcher ability resource information of an application based on the given bundle name, resource flags,
+and app index. This API returns the result synchronously.
 
 **Since:** 12
 
@@ -66,7 +68,7 @@ Obtains the launcher ability resource information of an application based on the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | bundleName | string | Yes | Bundle name of the application. |
-| resourceFlags | number | No | Type of the resource information to obtain. The default value is**[ResourceFlag](arkts-ability-resourceflag-e-sys.md#resourceflag).GET_RESOURCE_INFO_ALL**. |
+| resourceFlags | number | No | Type of the resource information to obtain. The default value is**[ResourceFlag](arkts-ability-resourceflag-e-sys.md).GET_RESOURCE_INFO_ALL**. |
 | appIndex | number | No | Index of the application clone. The default value is **0**. |
 
 **Return value:**

@@ -9,7 +9,7 @@ Declare class TreeListener
 ## Modules to Import
 
 ```TypeScript
-import { TreeListener, NodeParam, CallbackParam, TreeListenType, TreeView, TreeController, TreeListenerManager } from '@ohos.arkui.advanced.TreeView';
+import { TreeListener, NodeParam, CallbackParam, TreeListenType, TreeView, TreeController, TreeListenerManager } from '@kit.ArkUI';
 ```
 
 ## off
@@ -41,7 +41,8 @@ Destroy event.
 on(type: TreeListenType, callback: (callbackParam: CallbackParam) => void): void
 ```
 
-Event registration and processing. The event will not be destroyed after being processed.
+Event registration and processing.
+The event will not be destroyed after being processed.
 
 **Since:** 22
 
@@ -64,7 +65,8 @@ Event registration and processing. The event will not be destroyed after being p
 once(type: TreeListenType, callback: (callbackParam: CallbackParam) => void): void
 ```
 
-Event registration and processing. After the event is processed once, it will be destroyed.
+Event registration and processing.
+After the event is processed once, it will be destroyed.
 
 **Since:** 22
 

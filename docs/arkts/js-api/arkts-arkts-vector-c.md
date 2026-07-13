@@ -1,6 +1,20 @@
 # Vector
 
-Vector is a linear data structure that is implemented based on arrays. When the memory of a vector is used up, a larger contiguous memory area is automatically allocated, all the elements are copied to the new memory area, and the current memory area is reclaimed. Vector can be used to efficiently access elements. Both Vector and [ArrayList](arkts-util-arraylist.md) are implemented based on arrays, but Vector provides more interfaces for operating the arrays. Both of them can dynamically adjust the capacity. Vector doubles the capacity each time, whereas ArrayList increases the capacity by 50%. **Recommended use case**: Use Vector when the data volume is large. This topic uses the following to identify the use of generics: - T: Type > **NOTE** > > - The APIs provided by this module are deprecated since API version 9. You are advised to use > [@ohos.util.ArrayList](arkts-util-arraylist.md).
+Vector is a linear data structure that is implemented based on arrays. When the memory of a vector is used up, a
+larger contiguous memory area is automatically allocated, all the elements are copied to the new memory area, and the
+current memory area is reclaimed. Vector can be used to efficiently access elements.
+Both Vector and [ArrayList](arkts-util-arraylist.md) are implemented based on arrays, but Vector provides more
+interfaces for operating the arrays. Both of them can dynamically adjust the capacity. Vector doubles the capacity
+each time, whereas ArrayList increases the capacity by 50%.
+**Recommended use case**: Use Vector when the data volume is large.
+This topic uses the following to identify the use of generics:
+
+- T: Type
+
+> **NOTE**
+>
+> - The APIs provided by this module are deprecated since API version 9. You are advised to use
+> [@ohos.util.ArrayList](arkts-util-arraylist.md).
 
 **Since:** 8
 
@@ -13,7 +27,7 @@ Vector is a linear data structure that is implemented based on arrays. When the 
 ## Modules to Import
 
 ```TypeScript
-import { Vector } from '@ohos.util.Vector';
+import { Vector } from '@kit.ArkTS';
 ```
 
 ## [Symbol.iterator]
@@ -739,7 +753,8 @@ let result = vector.remove(2);
 removeByIndex(index: number): T
 ```
 
-Searches for an element based on its index, removes the element after returning it, and moves its subsequent elements leftwards.
+Searches for an element based on its index, removes the element after returning it, and moves its subsequent
+elements leftwards.
 
 **Since:** 8
 
@@ -778,7 +793,8 @@ let result = vector.removeByIndex(2);
 removeByRange(fromIndex: number, toIndex: number): void
 ```
 
-Removes from this Vector all of the elements within a range, including the element at the start position but not that at the end position.
+Removes from this Vector all of the elements within a range, including the element at the start position but not
+that at the end position.
 
 **Since:** 8
 
@@ -941,7 +957,8 @@ vector.sort();
 subVector(fromIndex: number, toIndex: number): Vector<T>
 ```
 
-Obtains elements within a range in this Vector, including the element at the start position but not that at the end position, and returns these elements as a new **Vector** instance.
+Obtains elements within a range in this Vector, including the element at the start position but not that at the end
+position, and returns these elements as a new **Vector** instance.
 
 **Since:** 8
 

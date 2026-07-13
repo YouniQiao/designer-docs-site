@@ -1,6 +1,18 @@
 # @ohos.ability.screenLockFileManager
 
-Provides the capability to access data under lock screen.
+This module provides the capability to protect app sensitive data under the lock screen, supporting requesting and
+releasing access permissions for sensitive data under the lock screen, as well as querying the status of sensitive
+data keys. When the reference count of a sensitive data key reaches zero and the screen has been locked for a
+duration reaching the system-configured lock duration threshold, the key is destroyed, and operations on that data
+become impossible. These keys can be restored only after the screen is unlocked. By calling the
+[acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API of this module, you can prevent the key from being
+destroyed after the screen has been locked for a duration reaching the system-configured lock duration threshold.
+
+> **NOTE**
+>
+> - To enable the sensitive data protection function under the lock screen for an app, you need to configure the
+> ohos.permission.PROTECT_SCREEN_LOCK_DATA permission in
+> [requestPermissions](../../../../security/AccessToken/declare-permissions.md#declaring-permissions-in-the-configuration-file).
 
 **Since:** 12
 
@@ -18,19 +30,26 @@ import { screenLockFileManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [acquireAccess](arkts-screenlockfilemanager-acquireaccess-f.md#acquireAccess-1) | Acquire the access of the caller data under the lock screen. |
-| <!--DelRow-->[acquireAccess](arkts-screenlockfilemanager-acquireaccess-f-sys.md#acquireAccess-1) | Acquire the access of the specified data under the lock screen. |
-| [queryAppKeyState](arkts-screenlockfilemanager-queryappkeystate-f.md#queryAppKeyState-1) | Query the AppKey's status of the caller. |
-| <!--DelRow-->[queryAppKeyState](arkts-screenlockfilemanager-queryappkeystate-f-sys.md#queryAppKeyState-1) | Query the specified AppKey's status. |
-| [releaseAccess](arkts-screenlockfilemanager-releaseaccess-f.md#releaseAccess-1) | Release the access of the caller data and do not allow data access under the lock screen. |
-| <!--DelRow-->[releaseAccess](arkts-screenlockfilemanager-releaseaccess-f-sys.md#releaseAccess-1) | Release the access of the specified data type and do not allow data access under the lock screen. |
+| [acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) | Requests the access permission for the caller app's sensitive data under the lock screen in synchronous mode. After the request is successful, the reference count of the sensitive data key increases, preventing the key from being destroyed after the screen has been locked for a duration reaching the system-configured lock duration threshold. This method must be used in pair with [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1).Before calling this API, ensure that the app has enabled the sensitive data protection function under the lock screen, and that the key status queried through the [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) API is KEY_EXIST. |
+| [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) | Queries the status of the caller app's sensitive data key under the lock screen in synchronous mode. |
+| [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1) | Releases the access permission for the caller app's sensitive data under the lock screen in synchronous mode. After the release is successful, the reference count of the sensitive data key decreases. When the count reaches zero, the key can be destroyed after the screen has been locked for a duration reaching the system-configured lock duration threshold.Before calling this API, ensure that the app has enabled the sensitive data protection function under the lock screen, and that the [acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API has been called to request the permission successfully first. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [acquireAccess](arkts-ability-acquireaccess-f-sys.md#acquireaccess-2) | Requests the permission to access a specified type of sensitive data under the lock screen synchronously. After the request is successful, the reference count of the sensitive data key increases, preventing the key from being destroyed after the screen has been locked for the system-configured duration threshold. This method must be used in pair with [releaseAccess](arkts-ability-releaseaccess-f.md#releaseaccess-1).Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature and that the key state queried through the [queryAppKeyState](arkts-ability-queryappkeystate-f.md#queryappkeystate-1) API is KEY_EXIST. |
+| [queryAppKeyState](arkts-ability-queryappkeystate-f-sys.md#queryappkeystate-2) | Queries the status of a specified type of sensitive data key under the lock screen synchronously. |
+| [releaseAccess](arkts-ability-releaseaccess-f-sys.md#releaseaccess-2) | Releases the permission to access a specified type of sensitive data under the lock screen synchronously. After the release is successful, the reference count of the sensitive data key decreases. When the reference count reaches zero, the key can be destroyed after the screen has been locked for the system-configured duration threshold.Before calling this API, ensure that the app has enabled the sensitive data protection under lock screen feature and that the permission has been successfully requested by calling the [acquireAccess](arkts-ability-acquireaccess-f.md#acquireaccess-1) API first. |
+<!--DelEnd-->
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [AccessStatus](arkts-screenlockfilemanager-accessstatus-e.md) | AccessStatus. |
-| [DataType](arkts-screenlockfilemanager-datatype-e.md) | Enumerates the types of data under lock screen. |
-| [KeyStatus](arkts-screenlockfilemanager-keystatus-e.md) | KeyStatus. |
-| [ReleaseStatus](arkts-screenlockfilemanager-releasestatus-e.md) | ReleaseStatus. |
+| [AccessStatus](arkts-ability-accessstatus-e.md) | Enumerates the statuses for requesting access permissions for sensitive data under the lock screen. |
+| [DataType](arkts-ability-datatype-e.md) | Enumerates the types of sensitive data that can be accessed under the lock screen. |
+| [KeyStatus](arkts-ability-keystatus-e.md) | Enumerates the statuses of sensitive data keys under the lock screen. |
+| [ReleaseStatus](arkts-ability-releasestatus-e.md) | Enumerates the statuses for releasing access permissions for sensitive data under the lock screen. |
 

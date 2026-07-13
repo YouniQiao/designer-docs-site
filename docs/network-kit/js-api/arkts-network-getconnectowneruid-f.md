@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { connection } from '@ohos.net.connection';
+import { connection } from '@kit.NetworkKit';
 ```
 
 ## getConnectOwnerUid
@@ -12,7 +12,8 @@ import { connection } from '@ohos.net.connection';
 function getConnectOwnerUid(protocol: ProtocolType, local: NetAddress, remote: NetAddress): Promise<number>
 ```
 
-Obtains the data network that is activated by default. You can only call this method in VPN application.
+Obtains the data network that is activated by default.
+You can only call this method in VPN application.
 
 **Since:** 23
 

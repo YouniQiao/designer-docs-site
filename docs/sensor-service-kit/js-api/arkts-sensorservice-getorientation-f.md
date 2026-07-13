@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## getOrientation
@@ -12,7 +12,8 @@ import { sensor } from '@ohos.sensor';
 function getOrientation(rotationMatrix: Array<number>, callback: AsyncCallback<Array<number>>): void
 ```
 
-Obtains the device direction based on the rotation matrix. This API uses an asynchronous callback to return the result.
+Obtains the device direction based on the rotation matrix. This API uses an asynchronous callback to return the
+result.
 
 **Since:** 9
 

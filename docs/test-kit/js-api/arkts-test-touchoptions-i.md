@@ -9,7 +9,7 @@ Common options for touch operations.
 ## Modules to Import
 
 ```TypeScript
-import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
 ## duration
@@ -18,7 +18,10 @@ import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPat
 duration?: number
 ```
 
-Duration of the operation in milliseconds. <br>Value range: The value should be >= 1500 <br>Unit: ms <br>Default value: 1500
+Duration of the operation in milliseconds.
+<br>Value range: The value should be >= 1500
+<br>Unit: ms
+<br>Default value: 1500
 
 **Type:** number
 
@@ -34,7 +37,9 @@ Duration of the operation in milliseconds. <br>Value range: The value should be 
 pressure?: number
 ```
 
-The pressure of the touch. <br>Value range:[0.0, 1.0] <br>Default value: 1.0
+The pressure of the touch.
+<br>Value range:[0.0, 1.0]
+<br>Default value: 1.0
 
 **Type:** number
 
@@ -50,7 +55,11 @@ The pressure of the touch. <br>Value range:[0.0, 1.0] <br>Default value: 1.0
 speed?: number
 ```
 
-Speed of touch action. <br>Value range:[200, 40000] <br>Unit: px/s. <br>Throws error code 17000007 if negative. <br>Default value: 600
+Speed of touch action.
+<br>Value range:[200, 40000]
+<br>Unit: px/s.
+<br>Throws error code 17000007 if negative.
+<br>Default value: 600
 
 **Type:** number
 

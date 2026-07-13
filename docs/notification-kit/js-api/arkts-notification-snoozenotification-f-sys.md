@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## snoozeNotification
@@ -12,7 +12,9 @@ import { notificationManager } from '@ohos.notificationManager';
 function snoozeNotification(hashCode: string, delayTime: number): Promise<void>
 ```
 
-Sets a notification snooze reminder. The notification reminds the user again after the specified time. Each setting triggers only one reminder, using the same reminder mode as the original notification. After the snooze reminder is set, the original notification is deleted.
+Sets a notification snooze reminder. The notification reminds the user again after the specified time. Each setting
+triggers only one reminder, using the same reminder mode as the original notification.
+After the snooze reminder is set, the original notification is deleted.
 
 **Since:** 26.0.0
 

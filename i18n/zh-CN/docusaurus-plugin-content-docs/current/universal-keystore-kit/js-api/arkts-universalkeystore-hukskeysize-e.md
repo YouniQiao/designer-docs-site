@@ -214,7 +214,9 @@ HUKS_AES_KEY_SIZE_256 = 256
 HUKS_AES_KEY_SIZE_512 = 512
 ```
 
-表示使用AES算法的密钥长度为512bit。 **说明：** 从API version 8开始支持，从API version 11开始废弃。
+表示使用AES算法的密钥长度为512bit。
+
+**说明：** 从API version 8开始支持，从API version 11开始废弃。
 
 **起始版本：** 8
 
@@ -370,8 +372,6 @@ ML-DSA-44参数集。
 
 **起始版本：** 26.0.0
 
-**模型约束：** 此接口仅可在Stage模型下使用。
-
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Security.Huks.Core
@@ -385,8 +385,6 @@ HUKS_ML_DSA_KEY_PARAM_SET_65 = 65
 ML-DSA-65参数集。
 
 **起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
 
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
@@ -402,8 +400,6 @@ ML-DSA-87参数集。
 
 **起始版本：** 26.0.0
 
-**模型约束：** 此接口仅可在Stage模型下使用。
-
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Security.Huks.Core
@@ -418,8 +414,6 @@ ML-KEM-768参数集。
 
 **起始版本：** 26.0.0
 
-**模型约束：** 此接口仅可在Stage模型下使用。
-
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 
 **系统能力：** SystemCapability.Security.Huks.Core
@@ -433,8 +427,6 @@ HUKS_ML_KEM_KEY_PARAM_SET_1024 = 1024
 ML-KEM-1024参数集。
 
 **起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
 
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 

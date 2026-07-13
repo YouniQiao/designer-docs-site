@@ -15,7 +15,7 @@ Defines the vibration options.
 ## Modules to Import
 
 ```TypeScript
-import { VibrateOptions } from '@system.vibrator';
+import { VibrateOptions } from '@kit.SensorServiceKit';
 ```
 
 ## complete
@@ -35,6 +35,8 @@ Called when the API call is complete.
 **Substitutes:** startVibration
 
 **Required permissions:** ohos.permission.VIBRATE
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Sensors.MiscDevice.Lite
 
@@ -56,6 +58,8 @@ Called when the API call fails.
 
 **Required permissions:** ohos.permission.VIBRATE
 
+**Model restriction:** This API can be used only in the FA model.
+
 **System capability:** SystemCapability.Sensors.MiscDevice.Lite
 
 ## mode
@@ -64,7 +68,8 @@ Called when the API call fails.
 mode?: 'number' | 'short'
 ```
 
-Vibration mode. The value **long** indicates long vibration, and **short** indicates short vibration. The default value is **long**.
+Vibration mode. The value **long** indicates long vibration, and **short** indicates short vibration. The default
+value is **long**.
 
 **Type:** 'number' | 'short'
 
@@ -75,6 +80,8 @@ Vibration mode. The value **long** indicates long vibration, and **short** indic
 **Substitutes:** VibrateTime
 
 **Required permissions:** ohos.permission.VIBRATE
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Sensors.MiscDevice.Lite
 
@@ -95,6 +102,8 @@ Called when the vibrator data changes.
 **Substitutes:** startVibration
 
 **Required permissions:** ohos.permission.VIBRATE
+
+**Model restriction:** This API can be used only in the FA model.
 
 **System capability:** SystemCapability.Sensors.MiscDevice.Lite
 

@@ -40,7 +40,8 @@ Indicates the HTTPS protocol used by the page and the authentication is successf
 WARNING = 2
 ```
 
-The page is insecure. For example, the HTTP protocol is used or the HTTPS protocol is used but use an legacy TLS version.
+The page is insecure. For example, the HTTP protocol is used or the HTTPS protocol
+is used but use an legacy TLS version.
 
 **Since:** 11
 

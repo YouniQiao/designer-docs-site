@@ -1,6 +1,7 @@
 # RatioLimit
 
-Provides the aspect ratio range of the float view. The aspect ratio is obtained by dividing the width of the rectangular area of the window by its height.
+Provides the aspect ratio range of the float view. The aspect ratio is obtained by dividing the width of the
+rectangular area of the window by its height.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Provides the aspect ratio range of the float view. The aspect ratio is obtained 
 ## Modules to Import
 
 ```TypeScript
-import { floatView } from '@ohos.window.floatView';
+import { floatView } from '@kit.ArkUI';
 ```
 
 ## maxRatio

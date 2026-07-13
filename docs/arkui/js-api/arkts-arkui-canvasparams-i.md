@@ -12,7 +12,8 @@ Defines the parameters of the **Canvas** component.
 imageAIOptions?: ImageAIOptions
 ```
 
-AI image analysis options. You can configure the analysis type or bind an analyzer controller through this parameter.
+AI image analysis options. You can configure the analysis type or bind an analyzer controller
+through this parameter.
 
 **Type:** ImageAIOptions
 
@@ -30,7 +31,9 @@ AI image analysis options. You can configure the analysis type or bind an analyz
 unit?: LengthMetricsUnit
 ```
 
-Indicates the unit mode employed by Canvas during drawing. <br>It can only be set when creating the **Canvas** component and cannot be modified afterwards. <br>Default value: **LengthMetricsUnit.DEFAULT**
+Indicates the unit mode employed by Canvas during drawing.
+<br>It can only be set when creating the **Canvas** component and cannot be modified afterwards.
+<br>Default value: **LengthMetricsUnit.DEFAULT**
 
 **Type:** LengthMetricsUnit
 

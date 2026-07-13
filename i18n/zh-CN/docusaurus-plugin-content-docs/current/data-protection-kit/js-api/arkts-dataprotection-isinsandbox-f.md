@@ -6,7 +6,9 @@
 function isInSandbox(): Promise<boolean>
 ```
 
-查询当前应用是否运行在DLP沙箱环境。使用Promise异步回调。 该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
+查询当前应用是否运行在DLP沙箱环境。使用Promise异步回调。
+
+该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
 
 **起始版本：** 10
 
@@ -45,7 +47,9 @@ dlpPermission.isInSandbox().then((isInSandbox) => { // 是否在沙箱内。
 function isInSandbox(callback: AsyncCallback<boolean>): void
 ```
 
-查询当前应用是否运行在DLP沙箱环境。使用callback异步回调。 该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
+查询当前应用是否运行在DLP沙箱环境。使用callback异步回调。
+
+该接口用于判断当前应用是否处于DLP沙箱环境，以便决定是否执行沙箱相关的操作或调用沙箱专用接口。
 
 **起始版本：** 10
 
@@ -61,7 +65,7 @@ function isInSandbox(callback: AsyncCallback<boolean>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Incorrect parameter types. |
 | [19100001](../errorcode-dlp.md#19100001-入参错误) | Invalid parameter value. |
 | [19100011](../errorcode-dlp.md#19100011-系统服务工作异常) | The system ability works abnormally. |
 

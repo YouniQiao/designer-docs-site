@@ -1,16 +1,15 @@
 # AudioEncoder
 
-```TypeScript
-enum AudioEncoder
-```
+> **说明：**
+> > 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)替代。
 
-Enumerates the audio encoding formats.
+表示音频编码格式的枚举。
 
 **起始版本：** 6
 
 **废弃版本：** 8
 
-**替代接口：** media.CodecMimeType
+**替代接口：** CodecMimeType
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -20,7 +19,11 @@ Enumerates the audio encoding formats.
 DEFAULT = 0
 ```
 
-Default encoding format. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+默认编码格式。
+
+仅做接口定义，暂不支持使用。
+
+**说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)中的AUDIO_AAC替代。
 
 **起始版本：** 6
 
@@ -34,13 +37,17 @@ Default encoding format. This API is defined but not implemented yet. Note: It i
 AMR_NB = 1
 ```
 
-AMR-NB. This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AMR_NB** in [CodecMimeType]media.CodecMimeType instead.
+AMR-NB(Adaptive Multi Rate-Narrow Band Speech Codec) 编码格式。
+
+仅做接口定义，暂不支持使用。
+
+**说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)中的AUDIO_AMR_NB替代。
 
 **起始版本：** 6
 
 **废弃版本：** 8
 
-**替代接口：** ohos.multimedia.media/media.CodecMimeType#AUDIO_AMR_NB
+**替代接口：** AUDIO_AMR_NB
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -50,13 +57,17 @@ AMR-NB. This API is defined but not implemented yet. Note: It is supported since
 AMR_WB = 2
 ```
 
-Adaptive Multi Rate-Wide Band Speech Codec (AMR-WB). This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AMR_WB** in [CodecMimeType]media.CodecMimeType instead.
+AMR-WB(Adaptive Multi Rate-Wide Band Speech Codec) 编码格式。
+
+仅做接口定义，暂不支持使用。
+
+**说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)中的AUDIO_AMR_WB替代。
 
 **起始版本：** 6
 
 **废弃版本：** 8
 
-**替代接口：** ohos.multimedia.media/media.CodecMimeType#AUDIO_AMR_WB
+**替代接口：** AUDIO_AMR_WB
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -66,13 +77,15 @@ Adaptive Multi Rate-Wide Band Speech Codec (AMR-WB). This API is defined but not
 AAC_LC = 3
 ```
 
-Advanced Audio Coding Low Complexity (AAC-LC). Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+AAC-LC（Advanced Audio Coding Low Complexity）编码格式。
+
+**说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)中的AUDIO_AAC替代。
 
 **起始版本：** 6
 
 **废弃版本：** 8
 
-**替代接口：** ohos.multimedia.media/media.CodecMimeType#AUDIO_AAC
+**替代接口：** AUDIO_AAC
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -82,13 +95,17 @@ Advanced Audio Coding Low Complexity (AAC-LC). Note: It is supported since API v
 HE_AAC = 4
 ```
 
-High-Efficiency Advanced Audio Coding (HE_AAC). This API is defined but not implemented yet. Note: It is supported since API version 6 and deprecated since API version 8. You are advised to use **AUDIO_AAC** in [CodecMimeType]media.CodecMimeType instead.
+HE_AAC（High-Efficiency Advanced Audio Coding）编码格式。
+
+仅做接口定义，暂不支持使用。
+
+**说明：** 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)中的AUDIO_AAC替代。
 
 **起始版本：** 6
 
 **废弃版本：** 8
 
-**替代接口：** ohos.multimedia.media/media.CodecMimeType#AUDIO_AAC
+**替代接口：** AUDIO_AAC
 
 **系统能力：** SystemCapability.Multimedia.Media.AudioRecorder
 

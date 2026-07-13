@@ -26,7 +26,8 @@ The **Web** component does not lose focus when the soft keyboard is hidden.
 BLUR = 1
 ```
 
-The **Web** component loses focus when the soft keyboard is hidden, and the focus moves from the text box to the web body.
+The **Web** component loses focus when the soft keyboard is hidden, and the focus moves from the text
+box to the web body.
 
 **Since:** 14
 

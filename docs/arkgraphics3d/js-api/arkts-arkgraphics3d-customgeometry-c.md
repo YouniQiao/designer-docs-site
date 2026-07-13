@@ -2,7 +2,7 @@
 
 An array of vertices and their data defining a custom geometric shape.
 
-**Inheritance/Implementation:** CustomGeometry extends [GeometryDefinition](arkts-arkgraphics3d-geometrydefinition-c.md#geometrydefinition)
+**Inheritance/Implementation:** CustomGeometry extends [GeometryDefinition](arkts-arkgraphics3d-geometrydefinition-c.md)
 
 **Since:** 18
 
@@ -28,7 +28,16 @@ Vertex color. If colors is not null, colors[N] is for vertices[N].
 indices?: number[]
 ```
 
-Indices of those vertices that form triangles. PrimitiveTopology is applied to the sequence defined by indices. An example of creating an identical pair of triangles, given vertices = [a, b, c, d]: topology = PrimitiveTopology.TRIANGLE_LIST indices = [0, 1, 2, 2, 1, 3] resulting triangles: abc, cbd topology = PrimitiveTopology.TRIANGLE_STRIP indices = [0, 1, 2, 3] resulting triangles: abc, cbd (b and c are reversed in cbd, to match the face direction of the first triangle)
+Indices of those vertices that form triangles. PrimitiveTopology is applied to the sequence defined by indices.
+
+An example of creating an identical pair of triangles, given vertices = [a, b, c, d]:
+topology = PrimitiveTopology.TRIANGLE_LIST
+indices = [0, 1, 2, 2, 1, 3]
+resulting triangles: abc, cbd
+
+topology = PrimitiveTopology.TRIANGLE_STRIP
+indices = [0, 1, 2, 3]
+resulting triangles: abc, cbd (b and c are reversed in cbd, to match the face direction of the first triangle)
 
 **Type:** number[]
 

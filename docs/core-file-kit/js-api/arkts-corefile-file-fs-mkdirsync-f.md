@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@ohos.file.fs';
+import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
 ## mkdirSync
@@ -53,7 +53,8 @@ Creates a directory. This API returns the result synchronously.
 declare function mkdirSync(path: string, recursion: boolean): void
 ```
 
-Creates a directory. This API returns the result synchronously. The value **true** means to create a directory recursively.
+Creates a directory. This API returns the result synchronously. The value **true** means to create a directory
+recursively.
 
 **Since:** 11
 

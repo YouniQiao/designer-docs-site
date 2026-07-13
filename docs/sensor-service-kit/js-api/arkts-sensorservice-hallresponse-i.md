@@ -1,8 +1,8 @@
 # HallResponse
 
-Describes the Hall effect sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).
+Describes the Hall effect sensor data. It extends from [Response](arkts-sensorservice-response-i.md).
 
-**Inheritance/Implementation:** HallResponse extends [Response](arkts-sensorservice-response-i.md#response)
+**Inheritance/Implementation:** HallResponse extends [Response](arkts-sensorservice-response-i.md)
 
 **Since:** 8
 
@@ -11,7 +11,7 @@ Describes the Hall effect sensor data. It extends from [Response](arkts-sensorse
 ## Modules to Import
 
 ```TypeScript
-import { sensor } from '@ohos.sensor';
+import { sensor } from '@kit.SensorServiceKit';
 ```
 
 ## status
@@ -20,7 +20,8 @@ import { sensor } from '@ohos.sensor';
 status: number
 ```
 
-Hall effect sensor status. This parameter specifies whether a magnetic field exists around a device. The value **0** means that a magnetic field does not exist, and a value greater than **0** means the opposite.
+Hall effect sensor status. This parameter specifies whether a magnetic field exists around a device. The value
+**0** means that a magnetic field does not exist, and a value greater than **0** means the opposite.
 
 **Type:** number
 

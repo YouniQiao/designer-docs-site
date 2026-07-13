@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { screenshot } from '@ohos.screenshot';
+import { screenshot } from '@kit.ArkUI';
 ```
 
 ## pick
@@ -12,7 +12,9 @@ import { screenshot } from '@ohos.screenshot';
 function pick(): Promise<PickInfo>
 ```
 
-Obtains this screenshot. Currently, only the screenshot of the display whose ID is **0** can be obtained. (If a screenshot of the extended screen is needed, you can use the [capture](arkts-arkui-capture-f.md#capture-1) API.) This API uses a promise to return the result.
+Obtains this screenshot. Currently, only the screenshot of the display whose ID is **0** can be obtained. (If a
+screenshot of the extended screen is needed, you can use the [capture](arkts-arkui-capture-f.md#capture-1) API.) This API
+uses a promise to return the result.
 
 **Since:** 12
 

@@ -9,7 +9,7 @@ Scale Result
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## centerX
@@ -18,7 +18,9 @@ import { componentUtils } from '@ohos.arkui.componentUtils';
 centerX: number
 ```
 
-X-coordinate of the center point. Unit: vp
+X-coordinate of the center point.
+
+Unit: vp
 
 **Type:** number
 
@@ -36,7 +38,9 @@ X-coordinate of the center point. Unit: vp
 centerY: number
 ```
 
-Y-coordinate of the center point. Unit: vp
+Y-coordinate of the center point.
+
+Unit: vp
 
 **Type:** number
 

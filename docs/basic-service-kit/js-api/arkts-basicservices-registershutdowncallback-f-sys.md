@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { power } from '@ohos.power';
+import { power } from '@kit.BasicServicesKit';
 ```
 
 ## registerShutdownCallback
@@ -12,7 +12,8 @@ import { power } from '@ohos.power';
 function registerShutdownCallback(callback: Callback<boolean>): void
 ```
 
-Registers a callback to be invoked when the device is shut down or rebooted. This API uses an asynchronous callback to return the result.
+Registers a callback to be invoked when the device is shut down or rebooted. This API uses an asynchronous callback
+to return the result.
 
 **Since:** 23
 

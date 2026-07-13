@@ -6,7 +6,9 @@
 function off(type: 'error', observerId: number, callback: AsyncCallback<void>): void
 ```
 
-注销错误观测器。使用callback异步返回。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
+注销错误观测器。使用callback异步返回。
+
+仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 9
 
@@ -26,7 +28,7 @@ function off(type: 'error', observerId: number, callback: AsyncCallback<void>): 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16000003](../errorcode-ability.md#16000003-指定的id不存在) | 指定的ID不存在。 |
 
 **示例：**
@@ -60,7 +62,9 @@ try {
 function off(type: 'error', observerId: number): Promise<void>
 ```
 
-注销错误观测器。使用Promise异步返回。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
+注销错误观测器。使用Promise异步返回。
+
+仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 9
 
@@ -85,7 +89,7 @@ function off(type: 'error', observerId: number): Promise<void>
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16000003](../errorcode-ability.md#16000003-指定的id不存在) | 指定的ID不存在。 |
 
 **示例：**
@@ -119,7 +123,9 @@ try {
 function off(type: 'loopObserver', observer?: LoopObserver): void
 ```
 
-注销主线程消息处理监听器。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
+注销主线程消息处理监听器。
+
+仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 12
 
@@ -138,7 +144,7 @@ function off(type: 'loopObserver', observer?: LoopObserver): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | 请在主线程中调用。 |
 | [16300004](../errorcode-ability.md#16300004-指定的observer不存在) | 观测器不存在。 |
 
@@ -164,7 +170,9 @@ try {
 function off(type: 'unhandledRejection', observer?: UnhandledRejectionObserver): void
 ```
 
-注销被拒绝promise监听器。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
+注销被拒绝promise监听器。
+
+仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 12
 
@@ -183,7 +191,7 @@ function off(type: 'unhandledRejection', observer?: UnhandledRejectionObserver):
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | 请在主线程中调用。 |
 | [16300004](../errorcode-ability.md#16300004-指定的observer不存在) | 观测器不存在。 |
 
@@ -246,7 +254,9 @@ errorManager.off('unhandledRejection', observer);
 function off(type: 'globalUnhandledRejectionDetected', observer?: GlobalObserver): void
 ```
 
-注销被拒绝promise监听器，注销后无法监听进程中的promise异常。 如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
+注销被拒绝promise监听器，注销后无法监听进程中的promise异常。
+
+如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 18
 
@@ -265,7 +275,7 @@ function off(type: 'globalUnhandledRejectionDetected', observer?: GlobalObserver
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | 调用者无效。 |
 | [16300004](../errorcode-ability.md#16300004-指定的observer不存在) | 观测器不存在。 |
 
@@ -303,7 +313,11 @@ errorManager.off('globalUnhandledRejectionDetected', promiseFunc);
 function off(type: 'freeze', observer?: FreezeObserver): void
 ```
 
-取消之前注册的应用主线程freeze监听。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 如果传入的回调与通过on方法注册回调不一致，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
+取消之前注册的应用主线程freeze监听。
+
+仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。
+
+如果传入的回调与通过on方法注册回调不一致，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 18
 
@@ -322,7 +336,7 @@ function off(type: 'freeze', observer?: FreezeObserver): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16300004](../errorcode-ability.md#16300004-指定的observer不存在) | 观测器不存在。 |
 
 **示例：**
@@ -352,7 +366,9 @@ try {
 function off(type: 'globalErrorOccurred', observer?: GlobalObserver): void
 ```
 
-注销错误观测器，注销之前注册在同一线程的callback全局监听。 如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
+注销错误观测器，注销之前注册在同一线程的callback全局监听。
+
+如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。
 
 **起始版本：** 18
 
@@ -371,7 +387,7 @@ function off(type: 'globalErrorOccurred', observer?: GlobalObserver): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | 参数错误。可能的原因：1. 必填参数未填写；2. 参数类型不正确；3. 参数校验失败。 |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | 调用者无效。 |
 | [16300004](../errorcode-ability.md#16300004-指定的observer不存在) | 观测器不存在。 |
 

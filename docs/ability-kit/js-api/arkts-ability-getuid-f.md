@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WantAgent } from '@ohos.app.ability.wantAgent';
+import { WantAgent } from '@kit.AbilityKit';
 ```
 
 ## getUid
@@ -12,7 +12,8 @@ import { WantAgent } from '@ohos.app.ability.wantAgent';
 function getUid(agent: WantAgent, callback: AsyncCallback<number>): void
 ```
 
-Obtains the user ID of a WantAgent object. This API uses an asynchronous callback to return the result.
+Obtains the user ID of a WantAgent object.
+This API uses an asynchronous callback to return the result.
 
 **Since:** 9
 
@@ -113,7 +114,8 @@ try {
 function getUid(agent: WantAgent): Promise<number>
 ```
 
-Obtains the user ID of a WantAgent object. This API uses a promise to return the result.
+Obtains the user ID of a WantAgent object.
+This API uses a promise to return the result.
 
 **Since:** 9
 

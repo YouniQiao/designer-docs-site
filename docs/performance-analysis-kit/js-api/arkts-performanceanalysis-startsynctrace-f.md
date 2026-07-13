@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { hiTraceMeter } from '@ohos.hiTraceMeter';
+import { hiTraceMeter } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## startSyncTrace
@@ -12,7 +12,8 @@ import { hiTraceMeter } from '@ohos.hiTraceMeter';
 function startSyncTrace(level: HiTraceOutputLevel, name: string, customArgs?: string): void
 ```
 
-Starts a synchronous trace with the trace output level specified. For details, see [finishSyncTrace()](arkts-performanceanalysis-finishsynctrace-f.md#finishsynctrace-1).
+Starts a synchronous trace with the trace output level specified. For details, see
+[finishSyncTrace()](arkts-performanceanalysis-finishsynctrace-f.md#finishsynctrace-1).
 
 **Since:** 19
 

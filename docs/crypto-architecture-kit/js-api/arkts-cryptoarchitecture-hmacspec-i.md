@@ -1,8 +1,13 @@
 # HmacSpec
 
-Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec). It is used as an input parameter for HMAC generation. > **NOTE** > > **mdName** specifies the HMAC message digest algorithm. It is mandatory.
+Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md). It is used as an input parameter for HMAC
+computation.
 
-**Inheritance/Implementation:** HmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec)
+> **NOTE**
+>
+> **mdName** specifies the HMAC message digest algorithm. It is mandatory.
+
+**Inheritance/Implementation:** HmacSpec extends [MacSpec](arkts-cryptoarchitecture-macspec-i.md)
 
 **Since:** 18
 
@@ -11,7 +16,7 @@ Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#ma
 ## Modules to Import
 
 ```TypeScript
-import { cryptoFramework } from '@ohos.security.cryptoFramework';
+import { cryptoFramework } from '@kit.CryptoArchitectureKit';
 ```
 
 ## mdName

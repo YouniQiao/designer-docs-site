@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { BundleStatusCallback } from '@ohos.bundle.innerBundleManager';
+import { BundleStatusCallback } from '@kit.AbilityKit';
 ```
 
 ## getAllLauncherAbilityInfos
@@ -12,7 +12,13 @@ import { BundleStatusCallback } from '@ohos.bundle.innerBundleManager';
 function getAllLauncherAbilityInfos(userId: number, callback: AsyncCallback<Array<LauncherAbilityInfo>>): void
 ```
 
-Obtains the information about all launcher abilities. This API uses an asynchronous callback to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getAllLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getAllLauncherAbilityInfo(userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) > instead.
+Obtains the information about all launcher abilities. This API uses an asynchronous callback to return the result.
+
+> **NOTE**
+>
+> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAllLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getAllLauncherAbilityInfo(userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
+> instead.
 
 **Since:** 8
 
@@ -40,7 +46,13 @@ Obtains the information about all launcher abilities. This API uses an asynchron
 function getAllLauncherAbilityInfos(userId: number): Promise<Array<LauncherAbilityInfo>>
 ```
 
-Obtains the information about all launcher abilities. This API uses a promise to return the result. > **NOTE** > > This API has been supported since API version 8 and deprecated since API version 9. You are advised to use > [getAllLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getAllLauncherAbilityInfo(userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>)) > instead.
+Obtains the information about all launcher abilities. This API uses a promise to return the result.
+
+> **NOTE**
+>
+> This API has been supported since API version 8 and deprecated since API version 9. You are advised to use
+> [getAllLauncherAbilityInfo](@ohos.bundle.launcherBundleManager:launcherBundleManager.getAllLauncherAbilityInfo(userId: int, callback: AsyncCallback<Array<LauncherAbilityInfo>>))
+> instead.
 
 **Since:** 8
 

@@ -1,18 +1,25 @@
 # createAudioRecorder
 
+## Modules to Import
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
 ## createAudioRecorder
 
 ```TypeScript
 function createAudioRecorder(): AudioRecorder
 ```
 
-创建音频录制的实例来控制音频的录制。一台设备只允许创建一个录制实例。 > **说明：** > > 从API version 6开始支持，从API version 9开始废弃，建议使用 > [createAVRecorder]media.createAVRecorder(callback: AsyncCallback<AVRecorder>)替代。
+Creates an AudioRecorder instance to control audio recording. Only one AudioRecorder instance can be created per
+device.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitute:** media.createAVRecorder(callback:
+**Substitutes:** createAVRecorder(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioRecorder
 
@@ -20,7 +27,7 @@ function createAudioRecorder(): AudioRecorder
 
 | Type | Description |
 | --- | --- |
-| AudioRecorder | 返回AudioRecorder类实例，失败时返回null。可用于录制音频媒体。 |
+| AudioRecorder | If the operation is successful, an AudioRecorder instance is returned; otherwise,**null** is returned. The instance can be used to record audio. |
 
 **Example**
 

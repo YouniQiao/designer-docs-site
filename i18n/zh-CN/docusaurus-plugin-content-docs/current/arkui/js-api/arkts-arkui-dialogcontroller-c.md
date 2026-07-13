@@ -1,8 +1,12 @@
 # DialogController
 
-自定义弹窗控制器，继承自[CommonController](#commoncontroller18)。 DialogController可作为UIContext弹出自定义弹窗的成员变量，具体用法可看 [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18)和 [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18)示例。
+自定义弹窗控制器，继承自[CommonController](#commoncontroller18)。
 
-**继承/实现关系：** DialogController extends [CommonController](arkts-arkui-commoncontroller-c.md#commoncontroller)
+DialogController可作为UIContext弹出自定义弹窗的成员变量，具体用法可看
+[openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18)和
+[presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18)示例。
+
+**继承/实现关系：** DialogController extends [CommonController](arkts-arkui-commoncontroller-c.md)
 
 **起始版本：** 18
 

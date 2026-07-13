@@ -1,272 +1,26 @@
 # AudioVolumeGroupManager
 
-This interface implements volume management for an audio group. Before calling any API in AudioVolumeGroupManager, you must use [getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getVolumeGroupManager) to obtain an AudioVolumeGroupManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
+管理音频组音量。
+
+在使用AudioVolumeGroupManager的接口之前，需先通过
+[getVolumeGroupManager](arkts-audio-audiovolumemanager-i.md#getvolumegroupmanager-1)
+获取AudioVolumeGroupManager实例。
+
+> **说明：**
+>
+> - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-## 导入模块
-
-```TypeScript
-import { audio } from '@kit.AudioKit';
-```
-
-## adjustSystemVolumeByStep
-
-```TypeScript
-adjustSystemVolumeByStep(volumeType: AudioVolumeType, adjustType: VolumeAdjustType, callback: AsyncCallback<void>): void
-```
-
-Adjusts system volume by step for target volume type. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 10
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| adjustType | VolumeAdjustType | 是 | Volume adjustment type. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by callback. |
-| 6800301 | System error. Return by callback. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, audio.VolumeAdjustType.VOLUME_UP, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to adjust the system volume by step ${err}`);
-  } else {
-    console.info('Success to adjust the system volume by step.');
-  }
-});
-
-```
-
-## adjustSystemVolumeByStep
-
-```TypeScript
-adjustSystemVolumeByStep(volumeType: AudioVolumeType, adjustType: VolumeAdjustType): Promise<void>
-```
-
-Adjusts system volume by step for target volume type. This method uses a promise to return the result.
-
-**起始版本：** 10
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| adjustType | VolumeAdjustType | 是 | Volume adjustment type. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
-| 6800301 | System error. Return by promise. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.adjustSystemVolumeByStep(audio.AudioVolumeType.MEDIA, audio.VolumeAdjustType.VOLUME_UP).then(() => {
-  console.info('Success to adjust the system volume by step.');
-}).catch((error: BusinessError) => {
-  console.error('Fail to adjust the system volume by step.');
-});
-
-```
-
-## adjustVolumeByStep
-
-```TypeScript
-adjustVolumeByStep(adjustType: VolumeAdjustType, callback: AsyncCallback<void>): void
-```
-
-Adjusts system volume by step, volume type is decided by system. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 10
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| adjustType | VolumeAdjustType | 是 | Volume adjustment type. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by callback. |
-| 6800301 | System error. Return by callback. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.adjustVolumeByStep(audio.VolumeAdjustType.VOLUME_UP, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to adjust the volume by step. ${err}`);
-    return;
-  } else {
-    console.info('Success to adjust the volume by step.');
-  }
-});
-
-```
-
-## adjustVolumeByStep
-
-```TypeScript
-adjustVolumeByStep(adjustType: VolumeAdjustType): Promise<void>
-```
-
-Adjusts system volume by step, volume type is decided by system. This method uses a promise to return the result.
-
-**起始版本：** 10
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| adjustType | VolumeAdjustType | 是 | Volume adjustment type. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
-| 6800301 | System error. Return by promise. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.adjustVolumeByStep(audio.VolumeAdjustType.VOLUME_UP).then(() => {
-  console.info('Success to adjust the volume by step.');
-}).catch((error: BusinessError) => {
-  console.error('Fail to adjust the volume by step.');
-});
-
-```
-
-## getActiveVolumeTypeSync
-
-```TypeScript
-getActiveVolumeTypeSync(uid: int): AudioVolumeType
-```
-
-Obtains the active volume type in the calling moment. This method returns in sync mode.
-
-**起始版本：** 13
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| uid | int | 是 | The target uid's active volume type or  0 which means the global active volume type. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| AudioVolumeType | Current active volume type. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 202 | Not system App. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters unspecified.  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-**示例：**
-
-```TypeScript
-let uid: number = 20010041; // 应用ID。
-
-let value = audioVolumeGroupManager.getActiveVolumeTypeSync(uid);
-
-```
 
 ## getMaxAmplitudeForInputDevice
 
 ```TypeScript
-getMaxAmplitudeForInputDevice(inputDevice: AudioDeviceDescriptor): Promise<double>
+getMaxAmplitudeForInputDevice(inputDevice: AudioDeviceDescriptor): Promise<number>
 ```
 
-Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an input device. This API uses a promise to return the result.
+获取输入设备音频流的最大电平值，取值范围为[0, 1]。使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -276,29 +30,29 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an i
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| inputDevice | AudioDeviceDescriptor | 是 | Descriptor of the target device. |
+| inputDevice | AudioDeviceDescriptor | 是 | 获取最大电平值的设备信息。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;double> | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
+| Promise&lt;number&gt; | Promise对象，返回对应设备的电平值，大小在[0, 1]之间。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
-| 6800301 | System error. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by promise. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. Return by promise. |
 
 ## getMaxAmplitudeForOutputDevice
 
 ```TypeScript
-getMaxAmplitudeForOutputDevice(outputDevice: AudioDeviceDescriptor): Promise<double>
+getMaxAmplitudeForOutputDevice(outputDevice: AudioDeviceDescriptor): Promise<number>
 ```
 
-Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an output device. This API uses a promise to return the result.
+获取输出设备音频流的最大电平值，取值范围为[0, 1]。使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -308,35 +62,35 @@ Obtains the maximum amplitude (in the range [0, 1]) of the audio stream for an o
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| outputDevice | AudioDeviceDescriptor | 是 | Descriptor of the target device. |
+| outputDevice | AudioDeviceDescriptor | 是 | 获取最大电平值的设备信息。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;double> | Promise used to return the maximum amplitude, which is in the range [0, 1]. |
+| Promise&lt;number&gt; | Promise对象，返回对应设备的电平值，大小在[0, 1]之间。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
-| 6800301 | System error. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by promise. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. Return by promise. |
 
 ## getMaxVolume
 
 ```TypeScript
-getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback<int>): void
+getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the maximum volume level of a stream. This API uses an asynchronous callback to return the result.
+获取指定流的最大音量等级。使用callback异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMaxVolumeByStream
+**替代接口：** getMaxVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -344,22 +98,22 @@ Obtains the maximum volume level of a stream. This API uses an asynchronous call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;int> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the maximum stream volume level obtained; otherwise, err is an  error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的最大音量成功，err为undefined，data为获取到的指定流的最大音量等级；否则为错误对象。 |
 
 ## getMaxVolume
 
 ```TypeScript
-getMaxVolume(volumeType: AudioVolumeType): Promise<int>
+getMaxVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the maximum volume level of a stream. This API uses a promise to return the result.
+获取指定流的最大音量等级。使用Promise异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMaxVolumeByStream
+**替代接口：** getMaxVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -367,27 +121,27 @@ Obtains the maximum volume level of a stream. This API uses a promise to return 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;int> | Promise used to return the maximum volume level. |
+| Promise&lt;number&gt; | Promise对象，返回最大音量等级。 |
 
 ## getMaxVolumeSync
 
 ```TypeScript
-getMaxVolumeSync(volumeType: AudioVolumeType): int
+getMaxVolumeSync(volumeType: AudioVolumeType): number
 ```
 
-Obtains the maximum volume level of a stream. This API returns the result synchronously.
+获取指定流的最大音量等级。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMaxVolumeByStream
+**替代接口：** getMaxVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -395,34 +149,34 @@ Obtains the maximum volume level of a stream. This API returns the result synchr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Maximum volume level. |
+| number | 返回最大音量等级。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## getMinVolume
 
 ```TypeScript
-getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback<int>): void
+getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the minimum volume level of a stream. This API uses an asynchronous callback to return the result.
+获取指定流的最小音量等级。使用callback异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMinVolumeByStream
+**替代接口：** getMinVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -430,22 +184,22 @@ Obtains the minimum volume level of a stream. This API uses an asynchronous call
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;int> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum stream volume level obtained; otherwise, err is an  error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的最小音量成功，err为undefined，data为获取到的指定流的最小音量等级；否则为错误对象。 |
 
 ## getMinVolume
 
 ```TypeScript
-getMinVolume(volumeType: AudioVolumeType): Promise<int>
+getMinVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the minimum volume level of a stream. This API uses a promise to return the result.
+获取指定流的最小音量等级。使用Promise异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMinVolumeByStream
+**替代接口：** getMinVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -453,27 +207,27 @@ Obtains the minimum volume level of a stream. This API uses a promise to return 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;int> | Promise used to return the minimum volume level. |
+| Promise&lt;number&gt; | Promise对象，返回最小音量等级。 |
 
 ## getMinVolumeSync
 
 ```TypeScript
-getMinVolumeSync(volumeType: AudioVolumeType): int
+getMinVolumeSync(volumeType: AudioVolumeType): number
 ```
 
-Obtains the minimum volume level of a stream. This API returns the result synchronously.
+获取指定流的最小音量等级。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getMinVolumeByStream
+**替代接口：** getMinVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -481,20 +235,20 @@ Obtains the minimum volume level of a stream. This API returns the result synchr
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Minimum volume level. |
+| number | 返回最小音量等级。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## getRingerMode
 
@@ -502,7 +256,7 @@ Obtains the minimum volume level of a stream. This API returns the result synchr
 getRingerMode(callback: AsyncCallback<AudioRingMode>): void
 ```
 
-Obtains the ringer mode. This API uses an asynchronous callback to return the result.
+获取铃声模式。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -512,7 +266,7 @@ Obtains the ringer mode. This API uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRingMode> | 是 | Callback used to return the result. If the operation is  successful, err is undefined and data is the ringer mode obtained; otherwise, err is an error  object. |
+| callback | AsyncCallback&lt;AudioRingMode&gt; | 是 | 回调函数。当获取铃声模式成功，err为undefined，data为获取到的铃声模式；否则为错误对象。 |
 
 ## getRingerMode
 
@@ -520,7 +274,7 @@ Obtains the ringer mode. This API uses an asynchronous callback to return the re
 getRingerMode(): Promise<AudioRingMode>
 ```
 
-Obtains the ringer mode. This API uses a promise to return the result.
+获取铃声模式。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -530,7 +284,7 @@ Obtains the ringer mode. This API uses a promise to return the result.
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AudioRingMode> | Promise used to return the ringer mode. |
+| Promise&lt;AudioRingMode&gt; | Promise对象，返回系统的铃声模式。 |
 
 ## getRingerModeSync
 
@@ -538,7 +292,7 @@ Obtains the ringer mode. This API uses a promise to return the result.
 getRingerModeSync(): AudioRingMode
 ```
 
-Obtains the ringer mode. This API returns the result synchronously.
+获取铃声模式。同步返回结果。
 
 **起始版本：** 10
 
@@ -548,21 +302,21 @@ Obtains the ringer mode. This API returns the result synchronously.
 
 | 类型 | 说明 |
 | --- | --- |
-| AudioRingMode | Ringer mode. |
+| AudioRingMode | 返回系统的铃声模式。 |
 
 ## getSystemVolumeInDb
 
 ```TypeScript
-getSystemVolumeInDb(volumeType: AudioVolumeType, volumeLevel: int, device: DeviceType, callback: AsyncCallback<double>): void
+getSystemVolumeInDb(volumeType: AudioVolumeType, volumeLevel: number, device: DeviceType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the volume gain. This API uses an asynchronous callback to return the result.
+获取音量增益dB值。使用callback异步回调。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeInUnitOfDbByStream
+**替代接口：** getVolumeInUnitOfDbByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -570,32 +324,32 @@ Obtains the volume gain. This API uses an asynchronous callback to return the re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| volumeLevel | int | 是 | Volume level. |
-| device | DeviceType | 是 | Device type. |
-| callback | AsyncCallback&lt;double> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the volume gain obtained; otherwise, err is an error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| volumeLevel | number | 是 | 音量等级。 |
+| device | DeviceType | 是 | 设备类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取音量增益dB值成功，err为undefined，data为获取到的音量增益dB值；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by callback. |
-| 6800301 | System error. Return by callback. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by callback. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. Return by callback. |
 
 ## getSystemVolumeInDb
 
 ```TypeScript
-getSystemVolumeInDb(volumeType: AudioVolumeType, volumeLevel: int, device: DeviceType): Promise<double>
+getSystemVolumeInDb(volumeType: AudioVolumeType, volumeLevel: number, device: DeviceType): Promise<number>
 ```
 
-Obtains the volume gain. This API uses a promise to return the result.
+获取音量增益dB值。使用Promise异步回调。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeInUnitOfDbByStream
+**替代接口：** getVolumeInUnitOfDbByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -603,37 +357,37 @@ Obtains the volume gain. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| volumeLevel | int | 是 | Volume level. |
-| device | DeviceType | 是 | Device type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| volumeLevel | number | 是 | 音量等级。 |
+| device | DeviceType | 是 | 设备类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;double> | Promise used to return the volume gain (in dB). |
+| Promise&lt;number&gt; | Promise对象，返回对应的音量增益dB值。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. Return by promise. |
-| 6800301 | System error. Return by promise. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. Return by promise. |
+| [6800301](../errorcode-audio.md#6800301-系统处理异常) | System error. Return by promise. |
 
 ## getSystemVolumeInDbSync
 
 ```TypeScript
-getSystemVolumeInDbSync(volumeType: AudioVolumeType, volumeLevel: int, device: DeviceType): double
+getSystemVolumeInDbSync(volumeType: AudioVolumeType, volumeLevel: number, device: DeviceType): number
 ```
 
-Obtains the volume gain. This API returns the result synchronously.
+获取音量增益dB值。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeInUnitOfDbByStream
+**替代接口：** getVolumeInUnitOfDbByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -641,36 +395,36 @@ Obtains the volume gain. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| volumeLevel | int | 是 | Volume level. |
-| device | DeviceType | 是 | Device type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| volumeLevel | number | 是 | 音量等级。 |
+| device | DeviceType | 是 | 设备类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| double | Volume gain (in dB). |
+| number | 返回对应的音量增益dB值。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## getVolume
 
 ```TypeScript
-getVolume(volumeType: AudioVolumeType, callback: AsyncCallback<int>): void
+getVolume(volumeType: AudioVolumeType, callback: AsyncCallback<number>): void
 ```
 
-Obtains the volume level of a stream. This API uses an asynchronous callback to return the result.
+获取指定流的音量等级。使用callback异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeByStream
+**替代接口：** getVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -678,22 +432,22 @@ Obtains the volume level of a stream. This API uses an asynchronous callback to 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;int> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is the stream volume level obtained; otherwise, err is an error  object. The volume range of a specified stream can be obtained by calling  [getMinVolume]audio.AudioVolumeGroupManager.getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  and  [getMaxVolume]audio.AudioVolumeGroupManager.getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  . |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;number&gt; | 是 | 回调函数。当获取指定流的音量成功，err为undefined，data为获取到的指定流的音量等级；否则为错误对象。指定流的音量等级范围可通过[getMinVolume](arkts-audio-audiovolumegroupmanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiovolumegroupmanager-i.md#getmaxvolume-1)获取。 |
 
 ## getVolume
 
 ```TypeScript
-getVolume(volumeType: AudioVolumeType): Promise<int>
+getVolume(volumeType: AudioVolumeType): Promise<number>
 ```
 
-Obtains the volume level of a stream. This API uses a promise to return the result.
+获取指定流的音量等级。使用Promise异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeByStream
+**替代接口：** getVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -701,27 +455,27 @@ Obtains the volume level of a stream. This API uses a promise to return the resu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;int> | Promise used to return the stream volume level. The volume range of a specified stream  can be obtained by calling  [getMinVolume]audio.AudioVolumeGroupManager.getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  and  [getMaxVolume]audio.AudioVolumeGroupManager.getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  . |
+| Promise&lt;number&gt; | Promise对象，返回指定流的音量等级。指定流的音量等级范围可通过[getMinVolume](arkts-audio-audiovolumegroupmanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiovolumegroupmanager-i.md#getmaxvolume-1)获取。 |
 
 ## getVolumeSync
 
 ```TypeScript
-getVolumeSync(volumeType: AudioVolumeType): int
+getVolumeSync(volumeType: AudioVolumeType): number
 ```
 
-Obtains the volume level of a stream. This API returns the result synchronously.
+获取指定流的音量等级。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#getVolumeByStream
+**替代接口：** getVolumeByStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -729,20 +483,20 @@ Obtains the volume level of a stream. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| int | Volume level of the stream. The volume range of a specified stream can be obtained by calling  [getMinVolume]audio.AudioVolumeGroupManager.getMinVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  and  [getMaxVolume]audio.AudioVolumeGroupManager.getMaxVolume(volumeType: AudioVolumeType, callback: AsyncCallback)  . |
+| number | 返回指定流的音量等级。指定流的音量等级范围可通过[getMinVolume](arkts-audio-audiovolumegroupmanager-i.md#getminvolume-1)和[getMaxVolume](arkts-audio-audiovolumegroupmanager-i.md#getmaxvolume-1)获取。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isMicrophoneMute
 
@@ -750,7 +504,7 @@ Obtains the volume level of a stream. This API returns the result synchronously.
 isMicrophoneMute(callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether the microphone is muted. This API uses an asynchronous callback to return the result.
+获取麦克风静音状态。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -760,7 +514,7 @@ Checks whether the microphone is muted. This API uses an asynchronous callback t
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the microphone is muted or false if not muted;  otherwise, err is an error object. |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取麦克风静音状态成功，err为undefined，data为true表示静音，false表示非静音；否则为错误对象。 |
 
 ## isMicrophoneMute
 
@@ -768,7 +522,7 @@ Checks whether the microphone is muted. This API uses an asynchronous callback t
 isMicrophoneMute(): Promise<boolean>
 ```
 
-Checks whether the microphone is muted. This API uses a promise to return the result.
+获取麦克风静音状态。使用Promise异步回调。
 
 **起始版本：** 9
 
@@ -778,7 +532,7 @@ Checks whether the microphone is muted. This API uses a promise to return the re
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the microphone is muted.  true if muted, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示麦克风被静音；返回false表示麦克风未被静音。 |
 
 ## isMicrophoneMuteSync
 
@@ -786,7 +540,7 @@ Checks whether the microphone is muted. This API uses a promise to return the re
 isMicrophoneMuteSync(): boolean
 ```
 
-Checks whether the microphone is muted. This API returns the result synchronously.
+获取麦克风静音状态。同步返回结果。
 
 **起始版本：** 10
 
@@ -796,7 +550,7 @@ Checks whether the microphone is muted. This API returns the result synchronousl
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the microphone is muted. true if muted, false otherwise. |
+| boolean | 系统麦克风静音状态。返回true表示静音，返回false表示非静音。 |
 
 ## isMute
 
@@ -804,13 +558,13 @@ Checks whether the microphone is muted. This API returns the result synchronousl
 isMute(volumeType: AudioVolumeType, callback: AsyncCallback<boolean>): void
 ```
 
-Checks whether a stream is muted. This API uses an asynchronous callback to return the result.
+获取指定音量流静音状态。使用callback异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#isSystemMutedForStream
+**替代接口：** isSystemMutedForStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -818,8 +572,8 @@ Checks whether a stream is muted. This API uses an asynchronous callback to retu
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
-| callback | AsyncCallback&lt;boolean> | 是 | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the stream is muted or false if not muted; otherwise  , err is an error object. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
+| callback | AsyncCallback&lt;boolean&gt; | 是 | 回调函数。当获取指定音量流静音状态成功，err为undefined，data为true表示静音，false表示非静音；否则为错误对象。 |
 
 ## isMute
 
@@ -827,13 +581,13 @@ Checks whether a stream is muted. This API uses an asynchronous callback to retu
 isMute(volumeType: AudioVolumeType): Promise<boolean>
 ```
 
-Checks whether a stream is muted. This API uses a promise to return the result.
+获取指定音量流是否被静音。使用Promise异步回调。
 
 **起始版本：** 9
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#isSystemMutedForStream
+**替代接口：** isSystemMutedForStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -841,13 +595,13 @@ Checks whether a stream is muted. This API uses a promise to return the result.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;boolean> | Promise used to return the result, indicating whether the stream is muted. true  if muted, false otherwise. |
+| Promise&lt;boolean&gt; | Promise对象。返回true表示静音；返回false表示非静音。 |
 
 ## isMuteSync
 
@@ -855,13 +609,13 @@ Checks whether a stream is muted. This API uses a promise to return the result.
 isMuteSync(volumeType: AudioVolumeType): boolean
 ```
 
-Checks whether a stream is muted. This API returns the result synchronously.
+获取指定音量流是否被静音。同步返回结果。
 
 **起始版本：** 10
 
 **废弃版本：** 20
 
-**替代接口：** ohos.multimedia.audio.AudioVolumeManager#isSystemMutedForStream
+**替代接口：** isSystemMutedForStream
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -869,58 +623,20 @@ Checks whether a stream is muted. This API returns the result synchronously.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio volume type. |
+| volumeType | AudioVolumeType | 是 | 音频音量类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the stream is muted. true if muted, false otherwise. |
+| boolean | 流静音状态。返回true表示静音，返回false表示非静音。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## isPersistentMicMute
-
-```TypeScript
-isPersistentMicMute(): boolean
-```
-
-Checks whether the persistent microphone status is muted.
-
-**起始版本：** 12
-
-**需要权限：** 
-
- ohos.permission.MICROPHONE_CONTROL
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| boolean | Returns microphone persistent mute status.  true: The persistent mic mute is enabled in the current system.  false: The persistent mic mute is disabled in the current system. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-
-**示例：**
-
-```TypeScript
-let value: boolean = audioVolumeGroupManager.isPersistentMicMute();
-
-```
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## isVolumeUnadjustable
 
@@ -928,7 +644,7 @@ let value: boolean = audioVolumeGroupManager.isPersistentMicMute();
 isVolumeUnadjustable(): boolean
 ```
 
-Checks whether the fixed volume mode is enabled. When the fixed volume mode is enabled, the volume cannot be adjusted. This API returns the result synchronously.
+获取固定音量模式开关状态，打开时进入固定音量模式，此时音量固定无法被调节。同步返回结果。
 
 **起始版本：** 10
 
@@ -938,88 +654,7 @@ Checks whether the fixed volume mode is enabled. When the fixed volume mode is e
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | Check result for whether the fixed volume mode is enabled. true if enabled, false  otherwise. |
-
-## mute
-
-```TypeScript
-mute(volumeType: AudioVolumeType, mute: boolean, callback: AsyncCallback<void>): void
-```
-
-Mutes a stream. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream type. |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the stream, and false means the  opposite. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.mute(audio.AudioVolumeType.MEDIA, true, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to mute the stream. ${err}`);
-    return;
-  }
-  console.info('Callback invoked to indicate that the stream is muted.');
-});
-
-```
-
-## mute
-
-```TypeScript
-mute(volumeType: AudioVolumeType, mute: boolean): Promise<void>
-```
-
-Mutes a stream. This method uses a promise to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream type. |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the stream, and false means the  opposite. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.mute(audio.AudioVolumeType.MEDIA, true).then(() => {
-  console.info('Promise returned to indicate that the stream is muted.');
-});
-
-```
+| boolean | 固定音量模式开关状态。返回true表示固定音量模式，返回false表示非固定音量模式。 |
 
 ## off('ringerModeChange')
 
@@ -1027,7 +662,7 @@ audioVolumeGroupManager.mute(audio.AudioVolumeType.MEDIA, true).then(() => {
 off(type: 'ringerModeChange', callback?: Callback<AudioRingMode>): void
 ```
 
-Unsubscribes from the ringer mode change event. This API uses an asynchronous callback to return the result.
+取消监听铃声模式变化事件。使用callback异步回调。
 
 **起始版本：** 18
 
@@ -1037,14 +672,14 @@ Unsubscribes from the ringer mode change event. This API uses an asynchronous ca
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'ringerModeChange' | 是 | Event type. The event 'ringerModeChange' is triggered when the ringer  mode is changed. |
-| callback | Callback&lt;AudioRingMode> | 否 | Callback used to return the changed ringer mode. |
+| type | 'ringerModeChange' | 是 | 事件回调类型，支持的事件为'ringerModeChange'，当取消监听铃声模式变化事件时，触发该事件。 |
+| callback | Callback&lt;AudioRingMode&gt; | 否 | 回调函数，返回变化后的铃音模式。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 6800101 | Parameter verification failed. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## off('micStateChange')
 
@@ -1052,7 +687,7 @@ Unsubscribes from the ringer mode change event. This API uses an asynchronous ca
 off(type: 'micStateChange', callback?: Callback<MicStateChangeEvent>): void
 ```
 
-Unsubscribes from the microphone state change event. This API uses an asynchronous callback to return the result.
+取消监听系统麦克风状态更改事件。使用callback异步回调。
 
 **起始版本：** 12
 
@@ -1062,63 +697,15 @@ Unsubscribes from the microphone state change event. This API uses an asynchrono
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'micStateChange' | 是 | Event type. The event 'micStateChange' is triggered when the microphone  state is changed. |
-| callback | Callback&lt;MicStateChangeEvent> | 否 | Callback used to return the changed microphone state. |
+| type | 'micStateChange' | 是 | 事件回调类型，支持的事件为'micStateChange'，当取消监听系统麦克风状态更改事件时，触发该事件。 |
+| callback | Callback&lt;MicStateChangeEvent&gt; | 否 | 回调函数，返回变更后的麦克风状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters missing;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## offMicStateChange
-
-```TypeScript
-offMicStateChange(callback?: Callback<MicStateChangeEvent>): void
-```
-
-Unsubscribes to the microphone state change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;MicStateChangeEvent> | 否 | Callback used to get the system microphone state change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## offRingerModeChange
-
-```TypeScript
-offRingerModeChange(callback?: Callback<AudioRingMode>): void
-```
-
-Unsubscribes to the ringer mode state change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioRingMode> | 否 | Callback used to get the updated ringer mode. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters missing;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('ringerModeChange')
 
@@ -1126,7 +713,7 @@ Unsubscribes to the ringer mode state change events.
 on(type: 'ringerModeChange', callback: Callback<AudioRingMode>): void
 ```
 
-Subscribes to the ringer mode change event, which is triggered when the [AudioRingMode](arkts-audio-audioringmode-e.md#AudioRingMode) changes. This API uses an asynchronous callback to return the result.
+监听铃声模式变化事件（当[AudioRingMode](arkts-audio-audioringmode-e.md)发生变化时触发）。使用callback异步回调。
 
 **起始版本：** 9
 
@@ -1136,15 +723,15 @@ Subscribes to the ringer mode change event, which is triggered when the [AudioRi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'ringerModeChange' | 是 | Event type. The event 'ringerModeChange' is triggered when the ringer  mode is changed. |
-| callback | Callback&lt;AudioRingMode> | 是 | Callback used to return the changed ringer mode. |
+| type | 'ringerModeChange' | 是 | 事件回调类型，支持的事件为'ringerModeChange'，当铃声模式发生变化时，触发该事件。 |
+| callback | Callback&lt;AudioRingMode&gt; | 是 | 回调函数，返回变化后的铃音模式。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## on('micStateChange')
 
@@ -1152,7 +739,9 @@ Subscribes to the ringer mode change event, which is triggered when the [AudioRi
 on(type: 'micStateChange', callback: Callback<MicStateChangeEvent>): void
 ```
 
-Subscribes to the microphone state change event, which is triggered when the microphone state is changed. This API uses an asynchronous callback to return the result. Currently, when multiple AudioManager instances are used in a single process, only the subscription of the last instance takes effect, and the subscription of other instances is overwritten (even if the last instance does not initiate a subscription). Therefore, you are advised to use a single AudioManager instance.
+监听系统麦克风状态更改事件（当检测到系统麦克风状态发生改变时触发）。使用callback异步回调。
+
+目前此订阅接口在单进程多AudioManager实例的使用场景下，仅最后一个实例的订阅生效，其他实例的订阅会被覆盖（即使最后一个实例没有进行订阅）。因此，推荐使用单一AudioManager实例进行开发。
 
 **起始版本：** 9
 
@@ -1162,160 +751,15 @@ Subscribes to the microphone state change event, which is triggered when the mic
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'micStateChange' | 是 | Event type. The event 'micStateChange' is triggered when the microphone  state is changed. |
-| callback | Callback&lt;MicStateChangeEvent> | 是 | Callback used to return the changed microphone state. |
+| type | 'micStateChange' | 是 | 事件回调类型，支持的事件为'micStateChange'，当检测到系统麦克风状态发生改变时，触发该事件。 |
+| callback | Callback&lt;MicStateChangeEvent&gt; | 是 | 回调函数，返回变更后的麦克风状态。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-## onMicStateChange
-
-```TypeScript
-onMicStateChange(callback: Callback<MicStateChangeEvent>): void
-```
-
-Listens for system microphone state change events. This method uses a callback to get microphone change events.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;MicStateChangeEvent> | 是 | Callback used to get the system microphone state change  event. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## onRingerModeChange
-
-```TypeScript
-onRingerModeChange(callback: Callback<AudioRingMode>): void
-```
-
-Listens for ringer mode change events. This method uses a callback to get ringer mode changes.
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| callback | Callback&lt;AudioRingMode> | 是 | Callback used to get the updated ringer mode. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 6800101 | Parameter verification failed. |
-
-## setMicMute
-
-```TypeScript
-setMicMute(mute: boolean): Promise<void>
-```
-
-Mutes or unmutes the microphone. This method uses a promise to return the result.
-
-**起始版本：** 11
-
-**需要权限：** 
-
- ohos.permission.MANAGE_AUDIO_CONFIG
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the  opposite. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.setMicMute(true).then(() => {
-  console.info('Promise returned to indicate that the mic is muted.');
-});
-
-```
-
-## setMicMutePersistent
-
-```TypeScript
-setMicMutePersistent(mute: boolean, type: PolicyType): Promise<void>
-```
-
-Mutes or unmutes the microphone. This method uses a promise to return the result.
-
-**起始版本：** 12
-
-**需要权限：** 
-
- ohos.permission.MICROPHONE_CONTROL
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the  opposite. |
-| type | PolicyType | 是 | Mute status to set. This value represents the caller's type such as EDM or privacy. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-| 401 | Parameter error. Possible causes:  1.Mandatory parameters missing.  2.Incorrect parameter types. |
-| 6800101 | Parameter verification failed. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.setMicMutePersistent(true, audio.PolicyType.PRIVACY).then(() => {
-  console.info('Succeeded in setting mic mute.');
-});
-
-```
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
+| [6800101](../errorcode-audio.md#6800101-无效入参) | Parameter verification failed. |
 
 ## setMicrophoneMute
 
@@ -1323,15 +767,17 @@ audioVolumeGroupManager.setMicMutePersistent(true, audio.PolicyType.PRIVACY).the
 setMicrophoneMute(mute: boolean, callback: AsyncCallback<void>): void
 ```
 
-Mutes or unmutes the microphone. This method uses an asynchronous callback to return the result.
+设置麦克风静音状态。使用callback异步回调。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 11开始废弃。
 
 **起始版本：** 9
 
 **废弃版本：** 11
 
-**需要权限：** 
-
- ohos.permission.MANAGE_AUDIO_CONFIG
+**需要权限：** ohos.permission.MANAGE_AUDIO_CONFIG
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -1339,8 +785,8 @@ Mutes or unmutes the microphone. This method uses an asynchronous callback to re
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
+| mute | boolean | 是 | 是否设置麦克风为静音状态。true表示静音，false表示非静音。 |
+| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当设置麦克风静音状态成功，err为undefined，否则为错误对象。 |
 
 ## setMicrophoneMute
 
@@ -1348,15 +794,17 @@ Mutes or unmutes the microphone. This method uses an asynchronous callback to re
 setMicrophoneMute(mute: boolean): Promise<void>
 ```
 
-Mutes or unmutes the microphone. This method uses a promise to return the result.
+设置麦克风静音状态。使用Promise异步回调。
+
+> **说明：**
+>
+> 从API version 9开始支持，从API version 11开始废弃。
 
 **起始版本：** 9
 
 **废弃版本：** 11
 
-**需要权限：** 
-
- ohos.permission.MANAGE_AUDIO_CONFIG
+**需要权限：** ohos.permission.MANAGE_AUDIO_CONFIG
 
 **系统能力：** SystemCapability.Multimedia.Audio.Volume
 
@@ -1364,219 +812,11 @@ Mutes or unmutes the microphone. This method uses a promise to return the result
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mute | boolean | 是 | Mute status to set. The value true means to mute the microphone, and false means the opposite. |
+| mute | boolean | 是 | 是否设置麦克风为静音状态。true表示静音，false表示非静音。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-## setRingerMode
-
-```TypeScript
-setRingerMode(mode: AudioRingMode, callback: AsyncCallback<void>): void
-```
-
-Sets the ringer mode. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mode | AudioRingMode | 是 | Ringer mode. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.setRingerMode(audio.AudioRingMode.RINGER_MODE_NORMAL, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to set the ringer mode. ${err}`);
-    return;
-  }
-  console.info('Callback invoked to indicate a successful setting of the ringer mode.');
-});
-
-```
-
-## setRingerMode
-
-```TypeScript
-setRingerMode(mode: AudioRingMode): Promise<void>
-```
-
-Sets the ringer mode. This method uses a promise to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| mode | AudioRingMode | 是 | Ringer mode. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.setRingerMode(audio.AudioRingMode.RINGER_MODE_NORMAL).then(() => {
-  console.info('Promise returned to indicate a successful setting of the ringer mode.');
-});
-
-```
-
-## setVolume
-
-```TypeScript
-setVolume(volumeType: AudioVolumeType, volume: int, callback: AsyncCallback<void>): void
-```
-
-Sets the volume for a stream. This method uses an asynchronous callback to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream type. |
-| volume | int | 是 | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
-| callback | AsyncCallback&lt;void> | 是 | Callback used to return the result. |
-
-**示例：**
-
-```TypeScript
-import { BusinessError } from '@kit.BasicServicesKit';
-
-audioVolumeGroupManager.setVolume(audio.AudioVolumeType.MEDIA, 10, (err: BusinessError) => {
-  if (err) {
-    console.error(`Failed to set the volume. ${err}`);
-    return;
-  }
-  console.info('Callback invoked to indicate a successful volume setting.');
-});
-
-```
-
-## setVolume
-
-```TypeScript
-setVolume(volumeType: AudioVolumeType, volume: int): Promise<void>
-```
-
-Sets the volume for a stream. This method uses a promise to return the result.
-
-**起始版本：** 9
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream type. |
-| volume | int | 是 | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.setVolume(audio.AudioVolumeType.MEDIA, 10).then(() => {
-  console.info('Promise returned to indicate a successful volume setting.');
-});
-
-```
-
-## setVolumeWithFlag
-
-```TypeScript
-setVolumeWithFlag(volumeType: AudioVolumeType, volume: int, flags: int): Promise<void>
-```
-
-Sets the volume for a stream. This method uses a promise to return the result.
-
-**起始版本：** 12
-
-**需要权限：** 
-
- ohos.permission.ACCESS_NOTIFICATION_POLICY
-
-**系统能力：** SystemCapability.Multimedia.Audio.Volume
-
-**系统接口：** 此接口为系统接口。
-
-**参数：**
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| volumeType | AudioVolumeType | 是 | Audio stream type. |
-| volume | int | 是 | Volume to set. The value range can be obtained by calling getMinVolume and getMaxVolume. |
-| flags | int | 是 | volume flags used to enable different operations, can be union of {@link VolumeFlag} |
-
-**返回值：**
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise&lt;void> | Promise used to return the result. |
-
-**错误码：**
-
-| 错误码ID | 错误信息 |
-| --- | --- |
-| 201 | Permission denied. |
-| 202 | Not system App. |
-
-**示例：**
-
-```TypeScript
-audioVolumeGroupManager.setVolumeWithFlag(audio.AudioVolumeType.MEDIA, 10, 1).then(() => {
-  console.info('Promise returned to indicate a successful volume setting.');
-});
-
-```
+| Promise&lt;void&gt; | Promise对象。无返回结果的Promise对象。 |
 

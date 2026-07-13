@@ -9,7 +9,7 @@ Declaration of the selectable title bar.
 ## Modules to Import
 
 ```TypeScript
-import { SelectTitleBarMenuItem, SelectTitleBar } from '@ohos.arkui.advanced.SelectTitleBar';
+import { SelectTitleBarMenuItem, SelectTitleBar } from '@kit.ArkUI';
 ```
 
 ## badgeValue
@@ -108,7 +108,8 @@ Options inside the drop-down list.
 @Prop selected: number
 ```
 
-Selected index of the initial options in the drop-down menu. The index of the first item is 0. If this attribute is not set, the default value is -1. Which means, no menu item is selected.
+Selected index of the initial options in the drop-down menu. The index of the first item is 0.
+If this attribute is not set, the default value is -1. Which means, no menu item is selected.
 
 **Type:** number
 

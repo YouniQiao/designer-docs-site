@@ -24,7 +24,9 @@ A common internal error occurs during form processing.
 ERR_PERMISSION_DENY = 2
 ```
 
-The application does not have permission to use forms. Ensure that the application is granted with the ohos.permission.REQUIRE_FORM and ohos.permission.GET_BUNDLE_INFO_PRIVILEGED permissions.
+The application does not have permission to use forms.
+Ensure that the application is granted with the ohos.permission.REQUIRE_FORM
+and ohos.permission.GET_BUNDLE_INFO_PRIVILEGED permissions.
 
 **Since:** 8
 
@@ -36,7 +38,9 @@ The application does not have permission to use forms. Ensure that the applicati
 ERR_GET_INFO_FAILED = 4
 ```
 
-Failed to obtain the configuration information about the form specified by the request parameters. Ensure that the parameters of the form to be added are consistent with those provided by the form provider.
+Failed to obtain the configuration information about the form specified by the
+request parameters. Ensure that the parameters of the form to be added are
+consistent with those provided by the form provider.
 
 **Since:** 8
 
@@ -48,7 +52,8 @@ Failed to obtain the configuration information about the form specified by the r
 ERR_GET_BUNDLE_FAILED = 5
 ```
 
-Failed to obtain the bundle to which the form belongs based on the request parameters. Ensure that the bundle to which the form to be added belongs is available.
+Failed to obtain the bundle to which the form belongs based on the request parameters.
+Ensure that the bundle to which the form to be added belongs is available.
 
 **Since:** 8
 
@@ -60,7 +65,8 @@ Failed to obtain the bundle to which the form belongs based on the request param
 ERR_GET_LAYOUT_FAILED = 6
 ```
 
-Failed to initialize the form layout based on the request parameters. Ensure that the grid style of the form is supported by the form provider.
+Failed to initialize the form layout based on the request parameters.
+Ensure that the grid style of the form is supported by the form provider.
 
 **Since:** 8
 
@@ -72,7 +78,8 @@ Failed to initialize the form layout based on the request parameters. Ensure tha
 ERR_ADD_INVALID_PARAM = 7
 ```
 
-Invalid input parameter during form operation. Ensure that all input parameters are valid.
+Invalid input parameter during form operation. Ensure that all input
+parameters are valid.
 
 **Since:** 8
 
@@ -84,7 +91,8 @@ Invalid input parameter during form operation. Ensure that all input parameters 
 ERR_CFG_NOT_MATCH_ID = 8
 ```
 
-The form configuration to be obtained using an existing form ID is different from that obtained for the first time.
+The form configuration to be obtained using an existing form ID is
+different from that obtained for the first time.
 
 **Since:** 8
 
@@ -132,7 +140,8 @@ The total number of added forms exceeds the maximum allowed by the system.
 ERR_MAX_INSTANCES_PER_FORM = 12
 ```
 
-The number of form instances generated using the same form configuration exceeds the maximum allowed by the system.
+The number of form instances generated using the same form configuration
+exceeds the maximum allowed by the system.
 
 **Since:** 8
 
@@ -144,7 +153,8 @@ The number of form instances generated using the same form configuration exceeds
 ERR_OPERATION_FORM_NOT_SELF = 13
 ```
 
-The form being requested was added by other applications and cannot be operated by the current application.
+The form being requested was added by other applications and cannot be
+operated by the current application.
 
 **Since:** 8
 
@@ -240,7 +250,8 @@ The ability is not installed.
 ERR_SYSTEM_RESPONSES_FAILED = 30
 ```
 
-Failed to obtain the RPC object of the Form Manager Service because the service is not started.Please try again after the service is started.
+Failed to obtain the RPC object of the Form Manager Service because
+the service is not started.Please try again after the service is started.
 
 **Since:** 8
 
@@ -252,7 +263,11 @@ Failed to obtain the RPC object of the Form Manager Service because the service 
 ERR_FORM_DUPLICATE_ADDED = 31
 ```
 
-Failed to obtain the form requested by the client because another form with the same form ID is in use. Forms in use cannot have the same ID. To obtain and display a form that has the same configuration as an in-use form in the same application, you are advised to set the form ID to 0 in the request parameters.
+Failed to obtain the form requested by the client because another form
+with the same form ID is in use. Forms in use cannot have the same ID.
+To obtain and display a form that has the same configuration as an in-use
+form in the same application, you are advised to set the form ID to 0 in
+the request parameters.
 
 **Since:** 8
 
@@ -264,7 +279,8 @@ Failed to obtain the form requested by the client because another form with the 
 ERR_IN_RECOVERY = 36
 ```
 
-The form is being restored. Perform operations on the form only after the restoration is complete.
+The form is being restored. Perform operations on the form only after
+the restoration is complete.
 
 **Since:** 8
 

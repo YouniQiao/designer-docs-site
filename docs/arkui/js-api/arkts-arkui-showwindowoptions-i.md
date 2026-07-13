@@ -9,7 +9,7 @@ Describes the parameters for displaying a child window or system window.
 ## Modules to Import
 
 ```TypeScript
-import { window } from '@ohos.window';
+import { window } from '@kit.ArkUI';
 ```
 
 ## focusOnShow
@@ -18,7 +18,9 @@ import { window } from '@ohos.window';
 focusOnShow?: boolean
 ```
 
-Whether the window automatically gains focus when [showWindow()](arkts-arkui-window-i.md#showwindow-3) is called. The default value is **true**. This parameter does not take effect for the main window, modal window, and dialog boxes.
+Whether the window automatically gains focus when
+[showWindow()](arkts-arkui-window-i.md#showwindow-3) is called. The default
+value is **true**. This parameter does not take effect for the main window, modal window, and dialog boxes.
 
 **Type:** boolean
 

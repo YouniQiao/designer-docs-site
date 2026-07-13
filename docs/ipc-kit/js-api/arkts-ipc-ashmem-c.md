@@ -1,6 +1,9 @@
 # Ashmem
 
-Provides methods related to anonymous shared memory objects, including creating, closing, mapping, and unmapping an **Ashmem** object, reading data from and writing data to an **Ashmem** object, obtaining the **Ashmem** size, and setting **Ashmem** protection. The shared memory applies only to cross-process communication within the local device.
+Provides methods related to anonymous shared memory objects, including creating, closing, mapping, and unmapping an
+**Ashmem** object, reading data from and writing data to an **Ashmem** object, obtaining the **Ashmem** size,
+and setting **Ashmem** protection. The shared memory applies only to cross-process communication within the
+local device.
 
 **Since:** 8
 
@@ -9,7 +12,7 @@ Provides methods related to anonymous shared memory objects, including creating,
 ## Modules to Import
 
 ```TypeScript
-import { rpc } from '@ohos.rpc';
+import { rpc } from '@kit.IPCKit';
 ```
 
 ## closeAshmem
@@ -18,7 +21,11 @@ import { rpc } from '@ohos.rpc';
 closeAshmem(): void
 ```
 
-Closes this **Ashmem** object. > **NOTE** > > Before closing the **Ashmem** object, you need to remove the address mapping.
+Closes this **Ashmem** object.
+
+> **NOTE**
+>
+> Before closing the **Ashmem** object, you need to remove the address mapping.
 
 **Since:** 8
 
@@ -96,7 +103,8 @@ try {
 static create(ashmem: Ashmem): Ashmem
 ```
 
-Creates an **Ashmem** object by copying the file descriptor of an existing **Ashmem** object. The two **Ashmem** objects point to the same shared memory region.
+Creates an **Ashmem** object by copying the file descriptor of an existing **Ashmem** object. The two **Ashmem**
+objects point to the same shared memory region.
 
 **Since:** 9
 
@@ -192,7 +200,8 @@ try {
 static createAshmemFromExisting(ashmem: Ashmem): Ashmem
 ```
 
-Creates an **Ashmem** object by copying the file descriptor of an existing **Ashmem** object. The two **Ashmem** objects point to the same shared memory region.
+Creates an **Ashmem** object by copying the file descriptor of an existing **Ashmem** object. The two **Ashmem**
+objects point to the same shared memory region.
 
 **Since:** 8
 
@@ -271,7 +280,8 @@ try {
 mapAshmem(mapType: number): boolean
 ```
 
-Creates the shared file mapping on the virtual address space of this process. The size of the mapping region is specified by this **Ashmem** object.
+Creates the shared file mapping on the virtual address space of this process. The size of the mapping region is
+specified by this **Ashmem** object.
 
 **Since:** 8
 
@@ -463,7 +473,8 @@ try {
 mapTypedAshmem(mapType: number): void
 ```
 
-Creates the shared file mapping on the virtual address space of this process. The size of the mapping region is specified by this **Ashmem** object.
+Creates the shared file mapping on the virtual address space of this process. The size of the mapping region is
+specified by this **Ashmem** object.
 
 **Since:** 9
 
@@ -506,7 +517,12 @@ try {
 readAshmem(size: number, offset: number): number[]
 ```
 
-Reads data from the shared file associated with this **Ashmem** object. > **NOTE** > > - Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Reads data from the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> - Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 9
 
@@ -564,7 +580,12 @@ try {
 readDataFromAshmem(size: number, offset: number): ArrayBuffer
 ```
 
-Reads data from the shared file associated with this **Ashmem** object. > **NOTE** > > Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Reads data from the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 11
 
@@ -624,7 +645,12 @@ try {
 readFromAshmem(size: number, offset: number): number[]
 ```
 
-Reads data from the shared file associated with this **Ashmem** object. > **NOTE** > > - Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Reads data from the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> - Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 8
 
@@ -789,7 +815,12 @@ try {
 writeAshmem(buf: number[], size: number, offset: number): void
 ```
 
-Writes data to the shared file associated with this **Ashmem** object. > **NOTE** > > - Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Writes data to the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> - Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 9
 
@@ -840,7 +871,12 @@ try {
 writeDataToAshmem(buf: ArrayBuffer, size: number, offset: number): void
 ```
 
-Writes data to the shared file associated with this **Ashmem** object. > **NOTE** > > Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Writes data to the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 11
 
@@ -892,7 +928,12 @@ try {
 writeToAshmem(buf: number[], size: number, offset: number): boolean
 ```
 
-Writes data to the shared file associated with this **Ashmem** object. > **NOTE** > > - Before writing an **Ashmem** object, you need to call > [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
+Writes data to the shared file associated with this **Ashmem** object.
+
+> **NOTE**
+>
+> - Before writing an **Ashmem** object, you need to call
+> [mapReadWriteAshmem](arkts-ipc-ashmem-c.md#mapreadwriteashmem-1) for mapping.
 
 **Since:** 8
 

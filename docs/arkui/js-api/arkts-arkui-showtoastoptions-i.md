@@ -13,7 +13,7 @@ Defines the options of ShowToast.
 ## Modules to Import
 
 ```TypeScript
-import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, ShowDialogSuccessResponse } from '@system.prompt';
+import { ShowActionMenuOptions, Button, ShowToastOptions, ShowDialogOptions, ShowDialogSuccessResponse } from '@kit.ArkUI';
 ```
 
 ## bottom
@@ -40,7 +40,9 @@ The distance between toast dialog box and the bottom of screen.
 duration?: number
 ```
 
-Duration of toast dialog box. The default value is 1500. The recommended value ranges from 1500 ms to 10000ms. NOTE: A value less than 1500 is automatically changed to 1500. The maximum value is 10000 ms.
+Duration of toast dialog box. The default value is 1500.
+The recommended value ranges from 1500 ms to 10000ms.
+NOTE: A value less than 1500 is automatically changed to 1500. The maximum value is 10000 ms.
 
 **Type:** number
 

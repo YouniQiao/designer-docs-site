@@ -1,8 +1,9 @@
 # AppServiceExtensionAbility
 
-class of app service extension ability.
+The AppServiceExtensionAbility module provides extended capabilities for background services, including lifecycle
+callbacks for creating, destroying, connecting, and disconnecting background services.
 
-**Inheritance/Implementation:** AppServiceExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md#extensionability)
+**Inheritance/Implementation:** AppServiceExtensionAbility extends [ExtensionAbility](arkts-ability-extensionability-c.md)
 
 **Since:** 20
 
@@ -11,7 +12,7 @@ class of app service extension ability.
 ## Modules to Import
 
 ```TypeScript
-import { AppServiceExtensionAbility } from '@ohos.app.ability.AppServiceExtensionAbility';
+import { AppServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## onConnect
@@ -20,7 +21,9 @@ import { AppServiceExtensionAbility } from '@ohos.app.ability.AppServiceExtensio
 onConnect(want: Want): rpc.RemoteObject
 ```
 
-Called back when an app service extension is first connected to an ability.
+Called when an AppServiceExtensionAbility instance is connected by calling
+[connectAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#connectappserviceextensionability-1)
+.
 
 **Since:** 20
 
@@ -32,13 +35,13 @@ Called back when an app service extension is first connected to an ability.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates connection information about the app service ability. |
+| want | Want | Yes | Want information about the target AppServiceExtensionAbility instance, including theability name and bundle name. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| rpc.RemoteObject | A RemoteObject for communication between the client and server. |
+| rpc.RemoteObject | A RemoteObject used for communication between the server and client. |
 
 **Example**
 
@@ -73,7 +76,13 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onCreate(want: Want): void
 ```
 
-Called back when an app service extension is started for initialization.
+Called when an AppServiceExtensionAbility instance is created.
+Applications can perform initialization operations, such as registering common event listeners, in this callback.
+
+> **NOTE**
+>
+> If an AppServiceExtensionAbility instance has already been created, the **onCreate()** callback is not invoked
+> again when the instance is started or connected.
 
 **Since:** 20
 
@@ -85,7 +94,7 @@ Called back when an app service extension is started for initialization.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates the want of created app service extension. |
+| want | Want | Yes | Want information about the target AppServiceExtensionAbility instance, including theability name and bundle name. |
 
 **Example**
 
@@ -109,7 +118,8 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onDestroy(): void
 ```
 
-Called back before an app service extension is destroyed.
+Called when an AppServiceExtensionAbility instance is destroyed. Applications can perform resource cleanup
+operations, such as unregistering listeners, in this callback.
 
 **Since:** 20
 
@@ -139,7 +149,7 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onDisconnect(want: Want): void
 ```
 
-Called back when all abilities connected to an app service extension are disconnected.
+Called when all connections to an AppServiceExtensionAbility instance are interrupted.
 
 **Since:** 20
 
@@ -151,7 +161,7 @@ Called back when all abilities connected to an app service extension are disconn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates disconnection information about the app service extension. |
+| want | Want | Yes | Want information passed by the caller when the AppServiceExtensionAbility instance was mostrecently started or connected. This includes information such as the ability name and bundle name. |
 
 **Example**
 
@@ -175,7 +185,9 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 onRequest(want: Want, startId: number): void
 ```
 
-Called back when an app service extension is started.
+Called each time an AppServiceExtensionAbility instance is started by calling
+[startAppServiceExtensionAbility()](arkts-ability-uiabilitycontext-c.md#startappserviceextensionability-1)
+.
 
 **Since:** 20
 
@@ -187,8 +199,8 @@ Called back when an app service extension is started.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| want | Want | Yes | Indicates the want of app service extension to start. |
-| startId | number | Yes | Indicates the number of times the app service extension has been started.The {@code startId} is incremented by 1 every time the app service extension is started. |
+| want | Want | Yes | Want information about the target AppServiceExtensionAbility instance, including theability name and bundle name. |
+| startId | number | Yes | Number of times the instance has been started. The initial value is **1** for the firststart, and it increments automatically for subsequent starts. |
 
 **Example**
 
@@ -212,7 +224,8 @@ export default class AppServiceExtAbility extends AppServiceExtensionAbility {
 context: AppServiceExtensionContext
 ```
 
-Indicates app service extension ability context.
+Context environment for an AppServiceExtensionAbility. This context inherits from
+[ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 **Type:** AppServiceExtensionContext
 

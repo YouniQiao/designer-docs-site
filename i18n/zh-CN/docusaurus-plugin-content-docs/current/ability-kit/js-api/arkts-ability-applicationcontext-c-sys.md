@@ -1,8 +1,12 @@
 # ApplicationContext
 
-ApplicationContext作为应用上下文，继承自[Context](arkts-ability-context-depr-i.md#context)，提供了应用生命周期监听、进程管理、应用环境设置等应用级别的管控能力。 > **说明：** > > 本模块接口仅可在Stage模型下使用。
+ApplicationContext作为应用上下文，继承自[Context](arkts-ability-context-depr-i.md)，提供了应用生命周期监听、进程管理、应用环境设置等应用级别的管控能力。
 
-**继承/实现关系：** ApplicationContext extends [Context](../../apis-arkui/arkts-apis/arkts-arkui-context-t.md#context)
+> **说明：**
+>
+> 本模块接口仅可在Stage模型下使用。
+
+**继承/实现关系：** ApplicationContext extends [Context](arkts-ability-context-t.md)
 
 **起始版本：** 9
 
@@ -44,7 +48,7 @@ Preload UIExtensionAbility.
 | --- | --- |
 | [201](../../errorcode-universal.md#201-权限校验失败) | The application does not have permission to call the interface. |
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | The application is not system-app, can not use system-api. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 | [16000001](../errorcode-ability.md#16000001-指定的ability名称不存在) | The specified ability does not exist. |
 | [16000002](../errorcode-ability.md#16000002-接口调用ability类型错误) | Incorrect ability type. |
 | [16000004](../errorcode-ability.md#16000004-可见性校验失败) | Cannot start an invisible component. |

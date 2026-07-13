@@ -9,7 +9,7 @@ Declare component SwipeRefresher
 ## Modules to Import
 
 ```TypeScript
-import { SwipeRefresher } from '@ohos.arkui.advanced.SwipeRefresher';
+import { SwipeRefresher } from '@kit.ArkUI';
 ```
 
 ## content
@@ -38,7 +38,8 @@ Sets the content when loading.
 @Prop isLoading: boolean
 ```
 
-Whether the component is loading. type { boolean }
+Whether the component is loading.
+type { boolean }
 
 **Type:** boolean
 

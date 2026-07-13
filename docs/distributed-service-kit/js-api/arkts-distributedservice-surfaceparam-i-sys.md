@@ -11,7 +11,7 @@ Surface configuration parameters.
 ## Modules to Import
 
 ```TypeScript
-import { abilityConnectionManager } from '@ohos.distributedsched.abilityConnectionManager';
+import { abilityConnectionManager } from '@kit.DistributedServiceKit';
 ```
 
 ## flip
@@ -38,7 +38,8 @@ This value indicates whether the video is reversed.
 format?: VideoPixelFormat
 ```
 
-Video PixelFormat, this option must be configured on the sender. Must be set before stream starts and cannot update once set.
+Video PixelFormat, this option must be configured on the sender.
+Must be set before stream starts and cannot update once set.
 
 **Type:** VideoPixelFormat
 
@@ -74,7 +75,8 @@ Encoding length. Must be set before stream starts and cannot update once set.
 rotation?: number
 ```
 
-This value identifies the rotation angle of the video. the range of rotation angle should be {0, 90, 180, 270}, default is 0
+This value identifies the rotation angle of the video.
+the range of rotation angle should be {0, 90, 180, 270}, default is 0
 
 **Type:** number
 

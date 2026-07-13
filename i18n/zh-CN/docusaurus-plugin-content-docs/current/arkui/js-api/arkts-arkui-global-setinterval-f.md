@@ -6,7 +6,8 @@
 export declare function setInterval(handler: Function | string, delay: number, ...arguments: any[]): number
 ```
 
-Sets a repeating timer for the system to repeatedly call a function at a fixed interval. The timer can only be manually deleted when the **clearInterval** API is called.
+Sets a repeating timer for the system to repeatedly call a function at a fixed interval.
+The timer can only be manually deleted when the **clearInterval** API is called.
 
 **起始版本：** 7
 

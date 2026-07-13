@@ -1,8 +1,10 @@
 # RectShapeOptions
 
-Represents the parameter of the constructor used to create a **RectShape** object. This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md#shapesize).
+Represents the parameter of the constructor used to create a **RectShape** object.
 
-**Inheritance/Implementation:** RectShapeOptions extends [ShapeSize](arkts-arkui-shapesize-i.md#shapesize)
+This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md).
+
+**Inheritance/Implementation:** RectShapeOptions extends [ShapeSize](arkts-arkui-shapesize-i.md)
 
 **Since:** 12
 
@@ -11,7 +13,7 @@ Represents the parameter of the constructor used to create a **RectShape** objec
 ## Modules to Import
 
 ```TypeScript
-import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.shape';
+import { RectShape, CircleShape, EllipseShape, PathShape } from '@kit.ArkUI';
 ```
 
 ## radius
@@ -20,7 +22,14 @@ import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.sha
 radius?: number | string | Array<number | string>
 ```
 
-Radius of the rectangle border corners. When the parameter type is number, the valid value range is [0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md#length) type specification. Unit: vp. If the value is invalid, 0 vp is used.
+Radius of the rectangle border corners.
+
+When the parameter type is number, the valid value range is
+[0, +∞). When the parameter type is string, the value must conform to the [Length](../arkts-components/arkts-arkui-length-t.md) type specification.
+
+Unit: vp.
+
+If the value is invalid, 0 vp is used.
 
 **Type:** number | string | Array<number | string>
 

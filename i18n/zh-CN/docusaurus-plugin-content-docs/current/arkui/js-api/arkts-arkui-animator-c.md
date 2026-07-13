@@ -12,7 +12,14 @@
 static create(options: AnimatorOptions): AnimatorResult
 ```
 
-创建animator动画结果对象（AnimatorResult）。 > **说明：** > > - > > - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的 > [createAnimator](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator)来明确UI的执行上下文。
+创建animator动画结果对象（AnimatorResult）。
+
+> **说明：**
+>
+> -
+>
+> - 从API version 10开始，可以通过使用[UIContext](arkts-arkui-uicontext.md)中的
+> [createAnimator](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#createanimator)来明确UI的执行上下文。
 
 **起始版本：** 9
 
@@ -40,7 +47,7 @@ static create(options: AnimatorOptions): AnimatorResult
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 **示例：**
 
@@ -69,7 +76,8 @@ animator.create(options); // 建议使用 UIContext.createAnimator()接口
 static create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 ```
 
-创建animator动画结果对象（AnimatorResult）。与[create](Animator.create(options: AnimatorOptions))相比，新增对 [SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md#simpleanimatoroptions)类型入参的支持。
+创建animator动画结果对象（AnimatorResult）。与[create](Animator.create(options: AnimatorOptions))相比，新增对
+[SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md)类型入参的支持。
 
 **起始版本：** 18
 
@@ -95,7 +103,7 @@ static create(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
 **示例：**
 
@@ -114,7 +122,9 @@ animator.create(options);// 建议使用 UIContext.createAnimator()接口
 static createAnimator(options: AnimatorOptions): AnimatorResult
 ```
 
-创建动画。 > **说明：**
+创建动画。
+
+> **说明：**
 
 **起始版本：** 6
 

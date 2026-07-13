@@ -1,6 +1,7 @@
 # RelativePosition
 
-Describes a coordinate position in the relative coordinate system, with the origin in the top-left corner of the screen specified by **displayId**.
+Describes a coordinate position in the relative coordinate system, with the origin in the top-left corner of the
+screen specified by **displayId**.
 
 **Since:** 20
 
@@ -9,7 +10,7 @@ Describes a coordinate position in the relative coordinate system, with the orig
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## displayId
@@ -18,7 +19,8 @@ import { display } from '@ohos.display';
 displayId: number
 ```
 
-Display ID for the relative coordinates. Only integers are supported, and the value must be greater than or equal to 0.
+Display ID for the relative coordinates. Only integers are supported, and the value must be greater than or equal
+to 0.
 
 **Type:** number
 

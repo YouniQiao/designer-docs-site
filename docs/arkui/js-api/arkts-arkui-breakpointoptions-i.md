@@ -1,6 +1,7 @@
 # BreakpointOptions
 
-Defines the breakpoint configuration options for container dimension analysis. Specifies threshold values that trigger different layout behaviors based on container size.
+Defines the breakpoint configuration options for container dimension analysis.
+Specifies threshold values that trigger different layout behaviors based on container size.
 
 **Since:** 26.0.0
 
@@ -9,7 +10,7 @@ Defines the breakpoint configuration options for container dimension analysis. S
 ## Modules to Import
 
 ```TypeScript
-import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@ohos.arkui.components.ContainerReader';
+import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@kit.ArkUI';
 ```
 
 ## height
@@ -18,7 +19,8 @@ import { BreakpointOptions, ContainerReader, ContainerReaderAttribute } from '@o
 height?: Array<number>
 ```
 
-Optional array of height breakpoint values in vp units. Defines the height thresholds for container height analysis.
+Optional array of height breakpoint values in vp units.
+Defines the height thresholds for container height analysis.
 
 **Type:** Array<number>
 
@@ -38,7 +40,8 @@ Optional array of height breakpoint values in vp units. Defines the height thres
 width?: Array<number>
 ```
 
-Optional array of width breakpoint values in vp units. Defines the width thresholds for container width analysis.
+Optional array of width breakpoint values in vp units.
+Defines the width thresholds for container width analysis.
 
 **Type:** Array<number>
 

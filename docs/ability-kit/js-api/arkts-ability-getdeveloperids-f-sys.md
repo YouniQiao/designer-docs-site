@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getDeveloperIds
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getDeveloperIds(appDistributionType?: number): Array<string>
 ```
 
-Obtains all the developer IDs of the current user based on the given application [distribution type](arkts-ability-appdistributiontype-e-sys.md#appdistributiontype).
+Obtains all the developer IDs of the current user based on the given application
+[distribution type](arkts-ability-appdistributiontype-e-sys.md).
 
 **Since:** 12
 

@@ -9,7 +9,7 @@ Provides the media query result.
 ## Modules to Import
 
 ```TypeScript
-import { mediaquery } from '@ohos.mediaquery';
+import { mediaquery } from '@kit.ArkUI';
 ```
 
 ## matches
@@ -18,7 +18,9 @@ import { mediaquery } from '@ohos.mediaquery';
 readonly matches: boolean
 ```
 
-Whether the media query condition is met. The value **true** means that the query conditions are met, and **false** means the opposite. This parameter is read-only.
+Whether the media query condition is met. The value **true** means that the
+query conditions are met, and **false** means the opposite.
+This parameter is read-only.
 
 **Type:** boolean
 
@@ -36,7 +38,8 @@ Whether the media query condition is met. The value **true** means that the quer
 readonly media: string
 ```
 
-Matching condition of a media event. This parameter is read-only.
+Matching condition of a media event.
+This parameter is read-only.
 
 **Type:** string
 

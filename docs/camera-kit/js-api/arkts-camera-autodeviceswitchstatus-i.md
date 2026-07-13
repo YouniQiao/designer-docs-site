@@ -18,13 +18,14 @@ import { camera } from '@kit.CameraKit';
 readonly isDeviceCapabilityChanged: boolean
 ```
 
-Whether the camera capability is changed after the camera is automatically switched. **true** if changed, **false** otherwise.
+Whether the camera capability is changed after the camera is automatically switched. **true** if changed,
+**false** otherwise.
 
 **Type:** boolean
 
 **Since:** 13
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,7 +41,7 @@ Whether the camera is automatically switched. **true** if auto-switched, **false
 
 **Since:** 13
 
-**Atomic service API:** From API version 19 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 19.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

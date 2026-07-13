@@ -1,6 +1,7 @@
 # Intention
 
-Enumerates the data channel types supported by the UDMF. It is used to identify different service scenarios, to which the UDMF data channels apply.
+Enumerates the data channel types supported by the UDMF. It is used to identify different service scenarios, to
+which the UDMF data channels apply.
 
 **Since:** 10
 
@@ -28,7 +29,9 @@ Public data channel.
 SYSTEM_SHARE = 'SystemShare'
 ```
 
-Data channel of the system sharing type. **Use scenario**: This API is used to share data across applications in system sharing scenarios.
+Data channel of the system sharing type.
+
+**Use scenario**: This API is used to share data across applications in system sharing scenarios.
 
 **Since:** 20
 
@@ -42,7 +45,9 @@ Data channel of the system sharing type. **Use scenario**: This API is used to s
 PICKER = 'Picker'
 ```
 
-Data channel of the picker type. **Use scenario**: This API is used to share data across applications in the scenarios where a picker is used.
+Data channel of the picker type.
+
+**Use scenario**: This API is used to share data across applications in the scenarios where a picker is used.
 
 **Since:** 20
 
@@ -56,7 +61,9 @@ Data channel of the picker type. **Use scenario**: This API is used to share dat
 MENU = 'Menu'
 ```
 
-Data channel of the menu type. **Use scenario**: This API is used to share data across applications in the shortcut menu.
+Data channel of the menu type.
+
+**Use scenario**: This API is used to share data across applications in the shortcut menu.
 
 **Since:** 20
 

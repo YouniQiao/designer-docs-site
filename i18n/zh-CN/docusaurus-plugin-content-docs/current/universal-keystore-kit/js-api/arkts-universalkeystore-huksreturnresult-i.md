@@ -28,7 +28,9 @@ certChains?: Array<string>
 outData?: Uint8Array
 ```
 
-表示 [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) 操作之后获取到的challenge信息。默认为undefined。
+表示
+[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
+操作之后获取到的challenge信息。默认为undefined。
 
 **类型：** Uint8Array
 
@@ -44,7 +46,9 @@ outData?: Uint8Array
 properties?: Array<HuksParam>
 ```
 
-表示 [initSession](arkts-universalkeystore-initsession-f.md#initsession-1) 操作之后获取到的challenge信息。默认为undefined。
+表示
+[initSession](arkts-universalkeystore-initsession-f.md#initsession-1)
+操作之后获取到的challenge信息。默认为undefined。
 
 **类型：** Array<HuksParam>
 
@@ -65,8 +69,6 @@ sharedSecret?: Uint8Array
 **类型：** Uint8Array
 
 **起始版本：** 26.0.0
-
-**模型约束：** 此接口仅可在Stage模型下使用。
 
 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务API中使用。
 

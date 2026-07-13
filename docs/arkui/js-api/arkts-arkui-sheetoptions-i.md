@@ -1,8 +1,8 @@
 # SheetOptions
 
-Optional attributes of the sheet. Inherits from [BindOptions](arkts-arkui-bindoptions-i.md#bindoptions).
+Optional attributes of the sheet. Inherits from [BindOptions](arkts-arkui-bindoptions-i.md).
 
-**Inheritance/Implementation:** SheetOptions extends [BindOptions](arkts-arkui-bindoptions-i.md#bindoptions)
+**Inheritance/Implementation:** SheetOptions extends [BindOptions](arkts-arkui-bindoptions-i.md)
 
 **Since:** 10
 
@@ -452,7 +452,8 @@ Sheet springs back callback when dismiss
 placement?: Placement
 ```
 
-The placement of popup sheet type. Supports all positions defined in Placement.
+The placement of popup sheet type.
+Supports all positions defined in Placement.
 
 **Type:** Placement
 
@@ -528,7 +529,13 @@ Defines sheet radius
 radiusRenderStrategy?: RenderStrategy
 ```
 
-Define strategy for drawing rounded corners. NOTE 1. **RenderStrategy.FAST**: The current component and its child components will be drawn directly onto the canvas with rounded corners applied. 2. **RenderStrategy.OFFSCREEN**: The current component and its child components will first be rendered onto an off-screen canvas, then undergo a rounded corner clipping, and finally be drawn onto the main canvas.
+Define strategy for drawing rounded corners.
+NOTE
+
+1. **RenderStrategy.FAST**: The current component and its child components will be drawn directly
+onto the canvas with rounded corners applied.
+2. **RenderStrategy.OFFSCREEN**: The current component and its child components will first be rendered onto
+an off-screen canvas, then undergo a rounded corner clipping, and finally be drawn onto the main canvas.
 
 **Type:** RenderStrategy
 
@@ -644,7 +651,8 @@ Whether to display in the sub window.
 systemMaterial?: SystemUiMaterial
 ```
 
-Set system-styled materials for sheet. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes of sheet.
+Set system-styled materials for sheet. Different materials have different effects, which can influence
+the backgroundColor, border, shadow, and other visual attributes of sheet.
 
 **Type:** SystemUiMaterial
 

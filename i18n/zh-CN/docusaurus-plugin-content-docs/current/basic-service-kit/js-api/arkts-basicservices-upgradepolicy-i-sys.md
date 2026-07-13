@@ -30,7 +30,9 @@ autoUpgradePeriods: Array<UpgradePeriod>
 autoUpgradeStrategy: boolean
 ```
 
-自动升级策略。 true表示可自动升级，false表示不可自动升级。
+自动升级策略。
+
+true表示可自动升级，false表示不可自动升级。
 
 **类型：** boolean
 
@@ -46,7 +48,9 @@ autoUpgradeStrategy: boolean
 downloadStrategy: boolean
 ```
 
-自动下载策略。 true表示可自动下载，false表示不可自动下载。
+自动下载策略。
+
+true表示可自动下载，false表示不可自动下载。
 
 **类型：** boolean
 

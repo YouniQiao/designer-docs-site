@@ -1,6 +1,18 @@
 # AVRecorder
 
-AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-createavrecorder-f.md#createavrecorder-1) to create an AVRecorder instance. For details about the audio and video recording demo, see [Audio Recording](../../../../media/media/using-avrecorder-for-recording.md) and [Video Recording](../../../../media/media/video-recording.md). > **NOTE** > > > To use the camera to record videos, the camera module is required. For details about how to use the APIs > provided by the camera module, see [Camera Management](../../apis-camera-kit/arkts-apis/arkts-multimedia-camera.md#camera).
+AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before
+calling any API in AVRecorder, you must use
+[createAVRecorder()](arkts-media-createavrecorder-f.md#createavrecorder-1) to
+create an AVRecorder instance.
+
+For details about the audio and video recording demo, see
+[Audio Recording](../../../../media/media/using-avrecorder-for-recording.md) and
+[Video Recording](../../../../media/media/video-recording.md).
+
+> **NOTE**
+>
+> > To use the camera to record videos, the camera module is required. For details about how to use the APIs
+> provided by the camera module, see [Camera Management](../../apis-camera-kit/arkts-apis/arkts-multimedia-camera.md).
 
 **Since:** 9
 
@@ -9,7 +21,7 @@ AVRecorder is a class for audio and video recording management. It provides APIs
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## getInputMetaSurface
@@ -54,7 +66,9 @@ Get input meta surface for specified meta source type. it must be called between
 isWatermarkSupported(): Promise<boolean>
 ```
 
-Checks whether the device supports the hardware digital watermark. This API uses a promise to return the result. This API can be called after the prepare(), start(), or paused() event is triggered.
+Checks whether the device supports the hardware digital watermark. This API uses a promise to return the result.
+
+This API can be called after the prepare(), start(), or paused() event is triggered.
 
 **Since:** 13
 
@@ -87,7 +101,12 @@ avRecorder.isWatermarkSupported().then((isWatermarkSupported: boolean) => {
 setMetadata(metadata: Record<string, string>): void
 ```
 
-Set metadata (key-value pairs) for the recording file of the recorder. This metadata overwrites the value in config.metadata.customInfo (see {prepare()} and {AVRecorderConfig}) if they have same key. This API can be called only after the prepare() event is successfully triggered and before the stop() API is called.
+Set metadata (key-value pairs) for the recording file of the recorder.
+This metadata overwrites the value in config.metadata.customInfo (see {prepare()} and {AVRecorderConfig})
+if they have same key.
+
+This API can be called only after the prepare() event is successfully triggered and
+before the stop() API is called.
 
 **Since:** 26.0.0
 
@@ -106,9 +125,9 @@ Set metadata (key-value pairs) for the recording file of the recorder. This meta
 | Error Code ID | Error Message |
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 19 - 24 |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory.<br>**Applicable version:** 26.0.0 |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed.<br>**Applicable version:** 26.0.0 |
-| [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed.<br>**Applicable version:** 26.0.0 |
+| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory.<br>**Applicable version:** 26.0.0 and later |
+| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed.<br>**Applicable version:** 26.0.0 and later |
+| [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
 ## setWatermark
 
@@ -116,7 +135,10 @@ Set metadata (key-value pairs) for the recording file of the recorder. This meta
 setWatermark(watermark: image.PixelMap, config: WatermarkConfig): Promise<void>
 ```
 
-Sets a watermark for the AVRecorder. This API uses a promise to return the result. This API can be called only after the prepare() event is triggered and before the start() event is triggered.
+Sets a watermark for the AVRecorder. This API uses a promise to return the result.
+
+This API can be called only after the prepare() event is triggered and before
+the start() event is triggered.
 
 **Since:** 13
 

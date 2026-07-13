@@ -1,6 +1,7 @@
 # CloudMediaAssetStatus (System API)
 
-Describes the details of a cloud media asset download task. It is the return value of the API used by applications to obtain the cloud asset download task status.
+Describes the details of a cloud media asset download task.
+It is the return value of the API used by applications to obtain the cloud asset download task status.
 
 **Since:** 14
 
@@ -11,7 +12,7 @@ Describes the details of a cloud media asset download task. It is the return val
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## errorCode
@@ -36,7 +37,8 @@ Reason why the download task is suspended.
 readonly taskInfo: string
 ```
 
-Total number of and size (measured in bytes) of the assets that have been downloaded, and the total number and size (also measured in bytes) of the assets remaining to be downloaded.
+Total number of and size (measured in bytes) of the assets that have been downloaded,
+and the total number and size (also measured in bytes) of the assets remaining to be downloaded.
 
 **Type:** string
 

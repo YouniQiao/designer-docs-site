@@ -14,7 +14,9 @@
 existTask: boolean
 ```
 
-是否存在任务。 true表示存在，false表示不存在。
+是否存在任务。
+
+true表示存在，false表示不存在。
 
 **类型：** boolean
 

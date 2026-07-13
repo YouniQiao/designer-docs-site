@@ -1,6 +1,7 @@
 # AbilityLifecycleState
 
-Ability生命周期状态，该类型为枚举，可配合[AbilityDelegator](application/AbilityDelegator:AbilityDelegator)的 [getAbilityState(ability)](application/AbilityDelegator:AbilityDelegator.getAbilityState)方法返回不同ability生命周期。
+Ability生命周期状态，该类型为枚举，可配合[AbilityDelegator](application/AbilityDelegator:AbilityDelegator)的
+[getAbilityState(ability)](application/AbilityDelegator:AbilityDelegator.getAbilityState)方法返回不同ability生命周期。
 
 **起始版本：** 9
 

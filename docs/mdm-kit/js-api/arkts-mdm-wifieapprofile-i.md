@@ -9,7 +9,7 @@ Represents EAP profile (configuration) information.
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## altSubjectMatch
@@ -18,7 +18,8 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 altSubjectMatch: string
 ```
 
-A string to match the alternate subject. In addition to checking the primary domain name of the certificate, the system checks whether the alternate subject name of the certificate matches the certificate.
+A string to match the alternate subject. In addition to checking the primary domain name of the certificate, the
+system checks whether the alternate subject name of the certificate matches the certificate.
 
 **Type:** string
 
@@ -82,7 +83,8 @@ CA certificate path.
 certEntry: Uint8Array
 ```
 
-Client certificate content. When **eapMethod** is set to **EAP_TLS**, if this field is empty, the client certificate alias cannot be empty.
+Client certificate content. When **eapMethod** is set to **EAP_TLS**, if this field is empty, the client
+certificate alias cannot be empty.
 
 **Type:** Uint8Array
 
@@ -114,7 +116,8 @@ CA certificate password.
 clientCertAliases: string
 ```
 
-Client certificate alias. When the client certificate content is empty, the client certificate must be installed first via the certificate management API before passing in the alias.
+Client certificate alias. When the client certificate content is empty, the client certificate must be installed
+first via the certificate management API before passing in the alias.
 
 **Type:** string
 
@@ -194,7 +197,8 @@ Identity Information. This parameter cannot be empty when **eapMethod** is **TLS
 password: string
 ```
 
-Password. When **eapMethod** is **EAP_PEAP** or **EAP_PWD**, this parameter cannot be empty. The value contains a maximum of 128 bytes.
+Password. When **eapMethod** is **EAP_PEAP** or **EAP_PWD**, this parameter cannot be empty. The value contains a
+maximum of 128 bytes.
 
 **Type:** string
 
@@ -210,7 +214,8 @@ Password. When **eapMethod** is **EAP_PEAP** or **EAP_PWD**, this parameter cann
 phase2Method: Phase2Method
 ```
 
-Phase 2 authentication method. This parameter is mandatory only when **eapMethod** is **EAP_PEAP** or **EAP_TTLS**.
+Phase 2 authentication method. This parameter is mandatory only when **eapMethod** is **EAP_PEAP** or
+**EAP_TTLS**.
 
 **Type:** Phase2Method
 

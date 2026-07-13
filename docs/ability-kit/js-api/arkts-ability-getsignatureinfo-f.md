@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getSignatureInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getSignatureInfo(uid: number): SignatureInfo
 ```
 
-Obtains the [signature information](bundleManager/BundleInfo:SignatureInfo) of an application based on the given UID.
+Obtains the [signature information](bundleManager/BundleInfo:SignatureInfo) of an application based on the
+given UID.
 
 **Since:** 18
 

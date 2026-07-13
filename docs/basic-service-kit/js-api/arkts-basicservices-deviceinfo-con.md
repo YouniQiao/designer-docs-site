@@ -6,7 +6,32 @@
 const ODID: string
 ```
 
-Open device identifier. An ODID will be regenerated in the following scenarios: Restore a phone to its factory settings. Uninstall and reinstall all applications with the same **developerId** on one device. An ODID is generated based on the following rules: The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As **groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**. Applications with the same **developerId** use the same ODID on one device. Applications with different **developerId**s use different ODIDs on one device. Applications with the same **developerId** use different ODIDs on different devices. Applications with different **developerId**s use different ODIDs on different devices. **NOTE** The data length is 37 bytes. Example: 1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+Open device identifier.
+
+An ODID will be regenerated in the following scenarios:
+
+Restore a phone to its factory settings.
+
+Uninstall and reinstall all applications with the same **developerId** on one device.
+
+An ODID is generated based on the following rules:
+
+The value is generated based on the **groupId** parsed from the **developerId** in the signature information. As
+**groupId.developerId** is the rule, if no **groupId** exists, the **developerId** is used as the **groupId**.
+
+Applications with the same **developerId** use the same ODID on one device.
+
+Applications with different **developerId**s use different ODIDs on one device.
+
+Applications with the same **developerId** use different ODIDs on different devices.
+
+Applications with different **developerId**s use different ODIDs on different devices.
+
+**NOTE**
+
+The data length is 37 bytes.
+
+Example: 1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 
 **Since:** 12
 
@@ -18,7 +43,9 @@ Open device identifier. An ODID will be regenerated in the following scenarios: 
 const abiList: string
 ```
 
-Application binary interface (Abi) list. Example: arm64-v8a
+Application binary interface (Abi) list.
+
+Example: arm64-v8a
 
 **Since:** 6
 
@@ -42,7 +69,9 @@ Obtains boot count since the device starts running
 const bootloaderVersion: string
 ```
 
-Bootloader version. Example: bootloader
+Bootloader version.
+
+Example: bootloader
 
 **Since:** 6
 
@@ -54,7 +83,9 @@ Bootloader version. Example: bootloader
 const brand: string
 ```
 
-Device brand. Example: HUAWEI
+Device brand.
+
+Example: HUAWEI
 
 **Since:** 6
 
@@ -68,7 +99,9 @@ Device brand. Example: HUAWEI
 const buildHost: string
 ```
 
-Build host. Example: default
+Build host.
+
+Example: default
 
 **Since:** 6
 
@@ -80,7 +113,9 @@ Build host. Example: default
 const buildRootHash: string
 ```
 
-Build root hash. Example: default
+Build root hash.
+
+Example: default
 
 **Since:** 6
 
@@ -92,7 +127,9 @@ Build root hash. Example: default
 const buildTime: string
 ```
 
-Build time. Example: default
+Build time.
+
+Example: default
 
 **Since:** 6
 
@@ -104,7 +141,9 @@ Build time. Example: default
 const buildType: string
 ```
 
-Build type. Example: default
+Build type.
+
+Example: default
 
 **Since:** 6
 
@@ -116,7 +155,9 @@ Build type. Example: default
 const buildUser: string
 ```
 
-Build user. Example: default
+Build user.
+
+Example: default
 
 **Since:** 6
 
@@ -128,7 +169,11 @@ Build user. Example: default
 const buildVersion: number
 ```
 
-Build version number. The value is the fourth digit in **osFullName**. You are advised to use **deviceInfo.buildVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement. Example: 1
+Build version number. The value is the fourth digit in **osFullName**. You are advised to use
+**deviceInfo.buildVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency
+improvement.
+
+Example: 1
 
 **Since:** 6
 
@@ -166,7 +211,9 @@ Obtain the device color represented by a string. If it cannot be obtained, retur
 const deviceType: string
 ```
 
-Device type. For details, see [deviceTypes tag](../../../../quick-start/module-configuration-file.md#devicetypes). Example: <!--RP1-->wearable<!--RP1End-->
+Device type. For details, see [deviceTypes tag](../../../../quick-start/module-configuration-file.md#devicetypes).
+
+Example: <!--RP1-->wearable<!--RP1End-->
 
 **Since:** 6
 
@@ -180,7 +227,15 @@ Device type. For details, see [deviceTypes tag](../../../../quick-start/module-c
 const diskSN: string
 ```
 
-Disk SN. **NOTE** This field can be queried only on the 2-in-1 device. For other devices, the query result is empty. ohos.permission.ACCESS_DISK_PHY_INFO Example: 2502EM400567
+Disk SN.
+
+**NOTE**
+
+This field can be queried only on the 2-in-1 device. For other devices, the query result is empty.
+
+ohos.permission.ACCESS_DISK_PHY_INFO
+
+Example: 2502EM400567
 
 **Since:** 15
 
@@ -194,7 +249,9 @@ Disk SN. **NOTE** This field can be queried only on the 2-in-1 device. For other
 const displayVersion: string
 ```
 
-Product version. Example: <!--RP8-->XXX X.X.X.X<!--RP8End-->
+Product version.
+
+Example: <!--RP8-->XXX X.X.X.X<!--RP8End-->
 
 **Since:** 6
 
@@ -218,7 +275,9 @@ Distribution OS API name.<!--Del--> It is defined by the issuer.<!--DelEnd-->
 const distributionOSApiVersion: number
 ```
 
-Distribution OS API version.<!--Del--> It is defined by the issuer.<!--DelEnd--> Example: 50001
+Distribution OS API version.<!--Del--> It is defined by the issuer.<!--DelEnd-->
+
+Example: 50001
 
 **Since:** 10
 
@@ -230,7 +289,9 @@ Distribution OS API version.<!--Del--> It is defined by the issuer.<!--DelEnd-->
 const distributionOSName: string
 ```
 
-Distribution OS name.<!--Del--> It is defined by the issuer.<!--DelEnd--> Example: OpenHarmony
+Distribution OS name.<!--Del--> It is defined by the issuer.<!--DelEnd-->
+
+Example: OpenHarmony
 
 **Since:** 10
 
@@ -242,7 +303,9 @@ Distribution OS name.<!--Del--> It is defined by the issuer.<!--DelEnd--> Exampl
 const distributionOSReleaseType: string
 ```
 
-Distribution OS release type.<!--Del--> It is defined by the issuer.<!--DelEnd--> Example: Release
+Distribution OS release type.<!--Del--> It is defined by the issuer.<!--DelEnd-->
+
+Example: Release
 
 **Since:** 10
 
@@ -254,7 +317,9 @@ Distribution OS release type.<!--Del--> It is defined by the issuer.<!--DelEnd--
 const distributionOSVersion: string
 ```
 
-Distribution OS version.<!--Del--> It is defined by the issuer.<!--DelEnd--><!--RP11--><!--RP11End--> Example: 5.0.0
+Distribution OS version.<!--Del--> It is defined by the issuer.<!--DelEnd--><!--RP11--><!--RP11End-->
+
+Example: 5.0.0
 
 **Since:** 10
 
@@ -266,7 +331,11 @@ Distribution OS version.<!--Del--> It is defined by the issuer.<!--DelEnd--><!--
 const featureVersion: number
 ```
 
-Feature version number. The value is the third digit in **osFullName**. You are advised to use **deviceInfo.featureVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement. Example: 0
+Feature version number. The value is the third digit in **osFullName**. You are advised to use
+**deviceInfo.featureVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency
+improvement.
+
+Example: 0
 
 **Since:** 6
 
@@ -278,7 +347,9 @@ Feature version number. The value is the third digit in **osFullName**. You are 
 const firstApiVersion: number
 ```
 
-First API version. Example: 3
+First API version.
+
+Example: 3
 
 **Since:** 6
 
@@ -290,7 +361,9 @@ First API version. Example: 3
 const hardwareModel: string
 ```
 
-Hardware model. Example: <!--RP6-->TASA00CVN1<!--RP6End-->
+Hardware model.
+
+Example: <!--RP6-->TASA00CVN1<!--RP6End-->
 
 **Since:** 6
 
@@ -302,7 +375,13 @@ Hardware model. Example: <!--RP6-->TASA00CVN1<!--RP6End-->
 const hardwareProfile: string
 ```
 
-Hardware profile. **NOTE** This API is supported since API version 6 and deprecated since API version 9. Example: default
+Hardware profile.
+
+**NOTE**
+
+This API is supported since API version 6 and deprecated since API version 9.
+
+Example: default
 
 **Since:** 6
 
@@ -316,7 +395,9 @@ Hardware profile. **NOTE** This API is supported since API version 6 and depreca
 const incrementalVersion: string
 ```
 
-Incremental version. Example: default
+Incremental version.
+
+Example: default
 
 **Since:** 6
 
@@ -328,7 +409,11 @@ Incremental version. Example: default
 const majorVersion: number
 ```
 
-Major version number, which increments with the main version. The value is the first digit in **osFullName**. You are advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement. Example: 5
+Major version number, which increments with the main version. The value is the first digit in **osFullName**. You
+are advised to use **deviceInfo.majorVersion** instead of parsing **osFullName** to obtain the value, facilitating
+efficiency improvement.
+
+Example: 5
 
 **Since:** 6
 
@@ -340,7 +425,9 @@ Major version number, which increments with the main version. The value is the f
 const manufacture: string
 ```
 
-Device manufacturer. Example: HUAWEI
+Device manufacturer.
+
+Example: HUAWEI
 
 **Since:** 6
 
@@ -352,7 +439,9 @@ Device manufacturer. Example: HUAWEI
 const marketName: string
 ```
 
-Marketing name. Example: <!--RP2-->Mate XX<!--RP2End-->
+Marketing name.
+
+Example: <!--RP2-->Mate XX<!--RP2End-->
 
 **Since:** 6
 
@@ -364,7 +453,9 @@ Marketing name. Example: <!--RP2-->Mate XX<!--RP2End-->
 const osFullName: string
 ```
 
-System version. The version number is in the format of **OpenHarmony-x.x.x.x**, where **x** is a digit. Example: <!--RP10-->Openharmony-5.0.0.1<!--RP10End-->
+System version. The version number is in the format of **OpenHarmony-x.x.x.x**, where **x** is a digit.
+
+Example: <!--RP10-->Openharmony-5.0.0.1<!--RP10End-->
 
 **Since:** 6
 
@@ -378,7 +469,15 @@ System version. The version number is in the format of **OpenHarmony-x.x.x.x**, 
 const osReleaseType: string
 ```
 
-OS release type. The options are as follows: - **Canary**: Preliminary release open only to specific developers. This release does not promise API stability and may require tolerance of instability. - **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance of instability. - **Release**: Official release open to all developers. This release promises that all APIs are stable. Example: <!--RP9-->Canary/Beta/Release<!--RP9End-->
+OS release type. The options are as follows:
+
+- **Canary**: Preliminary release open only to specific developers. This release does not promise API stability
+and may require tolerance of instability.
+- **Beta**: Release open to all developers. This release does not promise API stability and may require tolerance
+of instability.
+- **Release**: Official release open to all developers. This release promises that all APIs are stable.
+
+Example: <!--RP9-->Canary/Beta/Release<!--RP9End-->
 
 **Since:** 6
 
@@ -402,7 +501,9 @@ Device capability level.
 const productModel: string
 ```
 
-Product model. Example: <!--RP4-->TAS-AL00<!--RP4End-->
+Product model.
+
+Example: <!--RP4-->TAS-AL00<!--RP4End-->
 
 **Since:** 6
 
@@ -416,7 +517,9 @@ Product model. Example: <!--RP4-->TAS-AL00<!--RP4End-->
 const productModelAlias: string
 ```
 
-Product model alias. Example: TAS-AL00
+Product model alias.
+
+Example: TAS-AL00
 
 **Since:** 14
 
@@ -430,7 +533,9 @@ Product model alias. Example: TAS-AL00
 const productSeries: string
 ```
 
-Product series. Example: <!--RP3-->TAS<!--RP3End-->
+Product series.
+
+Example: <!--RP3-->TAS<!--RP3End-->
 
 **Since:** 6
 
@@ -442,7 +547,9 @@ Product series. Example: <!--RP3-->TAS<!--RP3End-->
 const sdkApiVersion: number
 ```
 
-SDK API version. Example: 12
+SDK API version.
+
+Example: 12
 
 **Since:** 6
 
@@ -488,7 +595,9 @@ Obtains the SDK Patch API version.
 const securityPatchTag: string
 ```
 
-Security patch tag. Example: <!--RP7-->2021/01/01<!--RP7End-->
+Security patch tag.
+
+Example: <!--RP7-->2021/01/01<!--RP7End-->
 
 **Since:** 6
 
@@ -500,7 +609,11 @@ Security patch tag. Example: <!--RP7-->2021/01/01<!--RP7End-->
 const seniorVersion: number
 ```
 
-Senior version number, which increments with architecture and feature updates. The value is the second digit in **osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement. Example: 0
+Senior version number, which increments with architecture and feature updates. The value is the second digit in
+**osFullName**. You are advised to use **deviceInfo.seniorVersion** instead of parsing **osFullName** to obtain
+the value, facilitating efficiency improvement.
+
+Example: 0
 
 **Since:** 6
 
@@ -512,7 +625,15 @@ Senior version number, which increments with architecture and feature updates. T
 const serial: string
 ```
 
-Device serial number (SN). **NOTE** The device SN can be used as the unique identifier of a device. **Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only) Example: The SN varies with the device.
+Device serial number (SN).
+
+**NOTE**
+
+The device SN can be used as the unique identifier of a device.
+
+**Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only)
+
+Example: The SN varies with the device.
 
 **Since:** 6
 
@@ -526,7 +647,9 @@ Device serial number (SN). **NOTE** The device SN can be used as the unique iden
 const softwareModel: string
 ```
 
-Software model. Example: <!--RP5-->TAS-AL00<!--RP5End-->
+Software model.
+
+Example: <!--RP5-->TAS-AL00<!--RP5End-->
 
 **Since:** 6
 
@@ -538,7 +661,15 @@ Software model. Example: <!--RP5-->TAS-AL00<!--RP5End-->
 const udid: string
 ```
 
-Device UDID. **NOTE** The data length is 65 bytes. The UDID can be used as the unique identifier of a device. **Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only) Example: 9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
+Device UDID.
+
+**NOTE**
+
+The data length is 65 bytes. The UDID can be used as the unique identifier of a device.
+
+**Required permission**: ohos.permission.sec.ACCESS_UDID (for system applications and enterprise applications only)
+
+Example: 9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412
 
 **Since:** 7
 
@@ -552,7 +683,10 @@ Device UDID. **NOTE** The data length is 65 bytes. The UDID can be used as the u
 const versionId: string
 ```
 
-Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**, **osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**. Example: wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
+Version ID. It consists of the following fields: **deviceType**, **manufacture**, **brand**, **productSeries**,
+**osFullName**, **productModel**, **softwareModel**, **sdkApiVersion**, **incrementalVersion**, and **buildType**.
+
+Example: wearable/HUAWEI/HUAWEI/TAS/OpenHarmony-5.0.0.1/TAS-AL00/TAS-AL00/12/default/release:nolog
 
 **Since:** 6
 

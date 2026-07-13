@@ -12,51 +12,21 @@ Describes an audio device.
 import { audio } from '@kit.AudioKit';
 ```
 
-## channelMasks
+## address
 
 ```TypeScript
-readonly channelMasks: Array<int>
+readonly address: string
 ```
 
-Supported channel masks.
+Static MAC address of the device.
 
-**Type:** Array<int>
+For a Bluetooth device, you must request the ohos.permission.USE_BLUETOOTH permission.
+
+**Type:** string
 
 **Since:** 9
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-## deviceType
-
-```TypeScript
-readonly deviceType: DeviceType
-```
-
-Device type.
-
-**Type:** DeviceType
-
-**Since:** 7
-
-**Atomic service API:** From API version 12 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-## deviceRole
-
-```TypeScript
-readonly deviceRole: DeviceRole
-```
-
-Device role.
-
-**Type:** DeviceRole
-
-**Since:** 7
-
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -74,35 +44,69 @@ Audio stream capabilities supported by the device.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
-## address
+## channelCounts
 
 ```TypeScript
-readonly address: string
+readonly channelCounts: Array<number>
 ```
 
-Static MAC address of the device. For a Bluetooth device, you must request the ohos.permission.USE_BLUETOOTH permission.
+Number of channels supported.
 
-**Type:** string
+**Type:** Array<number>
 
 **Since:** 9
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
-## spatializationSupported
+## channelMasks
 
 ```TypeScript
-readonly spatializationSupported?: boolean
+readonly channelMasks: Array<number>
 ```
 
-Whether the device supports spatial audio rendering. **true** if supported, **false** otherwise.
+Supported channel masks.
 
-**Type:** boolean
+**Type:** Array<number>
 
-**Since:** 18
+**Since:** 9
 
-**System capability:** SystemCapability.Multimedia.Audio.Spatialization
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+## deviceRole
+
+```TypeScript
+readonly deviceRole: DeviceRole
+```
+
+Device role.
+
+**Type:** DeviceRole
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+## deviceType
+
+```TypeScript
+readonly deviceType: DeviceType
+```
+
+Device type.
+
+**Type:** DeviceType
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
 
 ## displayName
 
@@ -116,41 +120,9 @@ Display name of the device.
 
 **Since:** 10
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
-
-## volumeGroupId
-
-```TypeScript
-readonly volumeGroupId: int
-```
-
-Volume group id
-
-**Type:** int
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-**System API:** This is a system API.
-
-## interruptGroupId
-
-```TypeScript
-readonly interruptGroupId: int
-```
-
-Interrupt group id
-
-**Type:** int
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-**System API:** This is a system API.
 
 ## encodingTypes
 
@@ -164,89 +136,23 @@ Supported encoding types.
 
 **Since:** 11
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
-## sampleRates
+## id
 
 ```TypeScript
-readonly sampleRates: Array<int>
+readonly id: number
 ```
 
-Supported sampling rates. SystemCapability.Multimedia.Audio.Device
+Audio device id.
 
-**Type:** Array<int>
+**Type:** number
 
 **Since:** 9
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-## dmDeviceInfo
-
-```TypeScript
-readonly dmDeviceInfo?: string
-```
-
-Extended information for distributed device, includes whether the device supports stereo, Device SN, etc.
-
-**Type:** string
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the Stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
-
-## highQualityRecordingSupported
-
-```TypeScript
-readonly highQualityRecordingSupported?: boolean
-```
-
-whether supports high-quality recording.
-
-**Type:** boolean
-
-**Since:** 21
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
-
-## channelCounts
-
-```TypeScript
-readonly channelCounts: Array<int>
-```
-
-Number of channels supported.
-
-**Type:** Array<int>
-
-**Since:** 9
-
-**Atomic service API:** From API version 12 this API can be used in atomic services.
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
-
-## name
-
-```TypeScript
-readonly name: string
-```
-
-Device name. For a Bluetooth device, you must request the ohos.permission.USE_BLUETOOTH permission.
-
-**Type:** string
-
-**Since:** 9
-
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -264,51 +170,53 @@ Model of the device.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
-## networkId
+## name
 
 ```TypeScript
-readonly networkId: string
+readonly name: string
 ```
 
-Device network id
+Device name.
+
+For a Bluetooth device, you must request the ohos.permission.USE_BLUETOOTH permission.
 
 **Type:** string
 
 **Since:** 9
 
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
-**System API:** This is a system API.
-
-## id
+## sampleRates
 
 ```TypeScript
-readonly id: int
+readonly sampleRates: Array<number>
 ```
 
-Audio device id.
+Supported sampling rates.
 
-**Type:** int
+SystemCapability.Multimedia.Audio.Device
+
+**Type:** Array<number>
 
 **Since:** 9
 
-**Atomic service API:** From API version 12 this API can be used in atomic services.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
-## dmDeviceType
+## spatializationSupported
 
 ```TypeScript
-readonly dmDeviceType?: int
+readonly spatializationSupported?: boolean
 ```
 
-Only {@link DeviceType.SPEAKER} with networkId、{@link DeviceType.REMOTE_CAST} or {@link DeviceType.REMOTE_DAUDIO} has dmDeviceType which indicated deviceTypeId.
+Whether the device supports spatial audio rendering. **true** if supported, **false** otherwise.
 
-**Type:** int
+**Type:** boolean
 
 **Since:** 18
 
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
+**System capability:** SystemCapability.Multimedia.Audio.Spatialization
 

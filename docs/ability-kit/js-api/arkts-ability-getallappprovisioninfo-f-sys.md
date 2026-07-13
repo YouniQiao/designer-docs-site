@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { bundleManager } from '@ohos.bundle.bundleManager';
+import { bundleManager } from '@kit.AbilityKit';
 ```
 
 ## getAllAppProvisionInfo
@@ -12,7 +12,8 @@ import { bundleManager } from '@ohos.bundle.bundleManager';
 function getAllAppProvisionInfo(userId?: number): Promise<Array<AppProvisionInfo>>
 ```
 
-Obtains the [provision](bundleManager/AppProvisionInfo) configuration file information of all applications based on the given user ID. This API uses a promise to return the result.
+Obtains the [provision](bundleManager/AppProvisionInfo) configuration file information of all applications
+based on the given user ID. This API uses a promise to return the result.
 
 **Since:** 23
 

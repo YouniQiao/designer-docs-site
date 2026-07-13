@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
+import { certificateManagerDialog } from '@kit.DeviceCertificateKit';
 ```
 
 ## openInstallCertificateDialog
@@ -12,7 +12,9 @@ import { certificateManagerDialog } from '@ohos.security.certManagerDialog';
 function openInstallCertificateDialog(context: common.Context, certType: CertificateType, certScope: CertificateScope, cert: Uint8Array): Promise<string>
 ```
 
-Opens the Certificate Management Install Certificate dialog box. After the certificate is successfully installed, the unique identifier of the certificate is returned. Applications can use the identifier to use the certificate. Use Promise asynchronous callback.
+Opens the Certificate Management Install Certificate dialog box. After the certificate is successfully installed,
+the unique identifier of the certificate is returned. Applications can use the identifier to use the certificate.
+Use Promise asynchronous callback.
 
 **Since:** 14
 
@@ -43,12 +45,12 @@ Opens the Certificate Management Install Certificate dialog box. After the certi
 | --- | --- |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permissionrequired to call the API. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | The certificate management application Hap is not preinstalled in the system,and the capability is not supported.<br>**Applicable version:** 26.0.0 |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | The certificate management application Hap is not preinstalled in the system,and the capability is not supported.<br>**Applicable version:** 26.0.0 and later |
 | [29700001](../errorcode-certManagerDialog.md#29700001-internal-error) | Internal error. Possible causes: 1. IPC communication failed;<br>2. Memory operation error; 3. File operation error. Please try again. |
 | [29700002](../errorcode-certManagerDialog.md#29700002-operation-canceled) | The user cancels the installation operation. |
 | [29700003](../errorcode-certManagerDialog.md#29700003-failed-to-install-the-certificate) | The user install certificate failed in the certificate manager dialog, such asthe certificate is in an invalid format. |
 | [29700004](../errorcode-certManagerDialog.md#29700004-operation-not-supported-by-the-device) | For security purposes, the current device does not support this API.You can use the [supportsCACertDialog](arkts-devicecertificate-supportscacertdialog-f.md#supportscacertdialog-1) to determinewhether the device supports opening the dialog box for installing a CA certificate with certType set to CA. |
-| [29700005](../errorcode-certManagerDialog.md#29700005-nonsecure-operation) | The operation does not comply with the device security policy, such as thedevice does not allow users to manage the CA certificate of the global user.<br>**Applicable version:** 18 |
+| [29700005](../errorcode-certManagerDialog.md#29700005-nonsecure-operation) | The operation does not comply with the device security policy, such as thedevice does not allow users to manage the CA certificate of the global user.<br>**Applicable version:** 18 and later |
 
 **Example**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { taskpool } from '@ohos.taskpool';
+import { taskpool } from '@kit.ArkTS';
 ```
 
 ## execute
@@ -12,7 +12,9 @@ import { taskpool } from '@ohos.taskpool';
 function execute(func: Function, ...args: Object[]): Promise<Object>
 ```
 
-Places a function to be executed in the internal queue of the task pool. The function is not executed immediately. It waits to be distributed to the worker thread for execution. In this mode, the function cannot be canceled. This API uses a promise to return the result.
+Places a function to be executed in the internal queue of the task pool. The function is not executed immediately.
+It waits to be distributed to the worker thread for execution. In this mode, the function cannot be canceled. This
+API uses a promise to return the result.
 
 **Since:** 9
 
@@ -32,7 +34,7 @@ Places a function to be executed in the internal queue of the task pool. The fun
 | Type | Description |
 | --- | --- |
 | Promise&lt;unknown&gt; | <br>**Applicable version:** 9 - 11 |
-| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 |
+| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
 
 **Error codes:**
 
@@ -64,7 +66,8 @@ taskpool.execute(printArgs, 100).then((value: Object) => { // 100: test number
 function execute<A extends Array<Object>, R>(func: (...args: A) => R | Promise<R>, ...args: A): Promise<R>
 ```
 
-Verifies the passed-in parameter types and return value type of a concurrent function, and places the function in the queue of the task pool. This API uses a promise to return the result.
+Verifies the passed-in parameter types and return value type of a concurrent function, and places the function in
+the queue of the task pool. This API uses a promise to return the result.
 
 **Since:** 13
 
@@ -132,7 +135,10 @@ taskpool.execute<[[number, string]], string>(testWithArray, [100, "test"]).then(
 function execute(task: Task, priority?: Priority): Promise<Object>
 ```
 
-Places a task in the internal queue of the task pool. The task will not be executed immediately; instead, it waits to be distributed to a worker thread for execution. In the current mode, you can set the task priority and cancel the task. Note that the task cannot belong to a task group, serial queue, or asynchronous queue. For non-continuous tasks, this API can be called multiple times. This API uses a promise to return the result.
+Places a task in the internal queue of the task pool. The task will not be executed immediately; instead, it waits
+to be distributed to a worker thread for execution. In the current mode, you can set the task priority and cancel
+the task. Note that the task cannot belong to a task group, serial queue, or asynchronous queue. For non-continuous
+tasks, this API can be called multiple times. This API uses a promise to return the result.
 
 **Since:** 9
 
@@ -152,7 +158,7 @@ Places a task in the internal queue of the task pool. The task will not be execu
 | Type | Description |
 | --- | --- |
 | Promise&lt;unknown&gt; | <br>**Applicable version:** 9 - 17 |
-| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 |
+| Promise&lt;Object&gt; | Promise used to return an object that carries the function execution result.<br>**Applicable version:** 11 and later |
 
 **Error codes:**
 
@@ -161,8 +167,8 @@ Places a task in the internal queue of the task pool. The task will not be execu
 | [10200003](../errorcode-utils.md#10200003-failed-to-initialize-the-worker-instance) | Worker initialization failed.<br>**Applicable version:** 9 - 17 |
 | [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization. |
 | [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent. |
-| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again.<br>**Applicable version:** 12 and later |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 
@@ -195,7 +201,10 @@ taskpool.execute(task3, taskpool.Priority.HIGH).then((value: Object) => {
 function execute<A extends Array<Object>, R>(task: GenericsTask<A, R>, priority?: Priority): Promise<R>
 ```
 
-Places the generic task in the internal queue of the task pool. The parameter type and return value type of the task are not verified. This API uses a promise to return the result. The verification of the **execute** task works in conjunction with **new GenericsTask**, requiring that the parameter and return value types match those specified in **new GenericsTask**.
+Places the generic task in the internal queue of the task pool. The parameter type and return value type of the
+task are not verified. This API uses a promise to return the result.
+The verification of the **execute** task works in conjunction with **new GenericsTask**, requiring that the
+parameter and return value types match those specified in **new GenericsTask**.
 
 **Since:** 13
 
@@ -223,7 +232,7 @@ Places the generic task in the internal queue of the task pool. The parameter ty
 | [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization. |
 | [10200014](../errorcode-utils.md#10200014-nonconcurrent-function-error) | The function is not marked as concurrent. |
 | [10200051](../errorcode-utils.md#10200051-periodic-task-cannot-be-executed-again) | The periodic task cannot be executed again. |
-| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 |
+| [10200057](../errorcode-utils.md#10200057-task-cannot-be-executed-by-two-apis) | The task cannot be executed by two APIs.<br>**Applicable version:** 18 and later |
 
 **Example**
 
@@ -256,7 +265,10 @@ taskpool.execute<[number], number>(task3, taskpool.Priority.HIGH).then((value: n
 function execute(group: TaskGroup, priority?: Priority): Promise<Object[]>
 ```
 
-Places a task group in the internal queue of the task pool. The tasks in the task group are not executed immediately. They wait to be distributed to the worker thread for execution. After all tasks in the task group are executed, a result array is returned. This mode is applicable to the execution of associated tasks. This API uses a promise to return the result.
+Places a task group in the internal queue of the task pool. The tasks in the task group are not executed
+immediately. They wait to be distributed to the worker thread for execution. After all tasks in the task group are
+executed, a result array is returned. This mode is applicable to the execution of associated tasks. This API uses a
+promise to return the result.
 
 **Since:** 10
 
@@ -282,7 +294,7 @@ Places a task group in the internal queue of the task pool. The tasks in the tas
 | Error Code ID | Error Message |
 | --- | --- |
 | [10200006](../errorcode-utils.md#10200006-worker-data-serialization-exception) | An exception occurred during serialization. |
-| 10200059 | TaskGroup cannot be re-executed.<br>**Applicable version:** 24 |
+| 10200059 | TaskGroup cannot be re-executed.<br>**Applicable version:** 24 and later |
 
 **Example**
 

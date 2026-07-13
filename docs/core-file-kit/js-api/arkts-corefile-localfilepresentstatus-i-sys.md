@@ -1,6 +1,7 @@
 # LocalFilePresentStatus (System API)
 
-Specifies a result object that contains the application bundle name and the status information about whether there are files that have not been uploaded to the cloud in the cloud storage space.
+Specifies a result object that contains the application bundle name and the status information about whether there
+are files that have not been uploaded to the cloud in the cloud storage space.
 
 **Since:** 23
 
@@ -11,7 +12,7 @@ Specifies a result object that contains the application bundle name and the stat
 ## Modules to Import
 
 ```TypeScript
-import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+import { cloudSyncManager } from '@kit.CoreFileKit';
 ```
 
 ## bundleName
@@ -36,7 +37,8 @@ Bundle name.
 isLocalFilePresent: boolean
 ```
 
-Whether there are local files that have not been synchronized to the cloud in the cloud storage space of the application. The value **true** indicates that such file exists, and the value **false** indicates the opposite.
+Whether there are local files that have not been synchronized to the cloud in the cloud storage space of the
+application. The value **true** indicates that such file exists, and the value **false** indicates the opposite.
 
 **Type:** boolean
 

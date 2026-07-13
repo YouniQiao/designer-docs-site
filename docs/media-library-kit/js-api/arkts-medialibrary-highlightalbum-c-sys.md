@@ -11,7 +11,7 @@ Provides APIs for managing the Highlights album, which is an automatically gener
 ## Modules to Import
 
 ```TypeScript
-import { photoAccessHelper } from '@ohos.file.photoAccessHelper';
+import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
 ## constructor

@@ -1,62 +1,53 @@
 # IconOptions
 
-Defines the icon options.
+Defines the common attributes of icons.
 
-**Since:** 10
+**Since:** 12
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## color
+## Modules to Import
 
 ```TypeScript
-color?: ResourceColor
+import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@kit.ArkUI';
 ```
-
-Icon color.
-
-**Type:** ResourceColor
-
-**Since:** 10
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## size
 
 ```TypeScript
-size?: Length
+size?: SizeOptions
 ```
 
-Icon size. It cannot be set in percentage.
+Icon size. This parameter cannot be set in percentage.
 
-**Type:** Length
+Default value: **undefined**
 
-**Since:** 10
+**Type:** SizeOptions
+
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## src
 
 ```TypeScript
-src?: ResourceStr
+src: ResourceStr
 ```
 
-Image source of the icon.
+Icon source, which can be a specific image resource or an image address reference. For details, see
+[Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1).
 
 **Type:** ResourceStr
 
-**Since:** 10
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

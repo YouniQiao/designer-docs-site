@@ -12,7 +12,8 @@ Enumerates the toolbar item states.
 NORMAL = 0
 ```
 
-Normal state. In this state, the toolbar item takes on the default style and can switch to another state-specific style by responding to the hover, press, and focus events.
+Normal state. In this state, the toolbar item takes on the default style and can switch to another state-specific
+style by responding to the hover, press, and focus events.
 
 **Since:** 10
 
@@ -44,7 +45,8 @@ Disabled state. In this state, the toolbar item is disabled and does not allow f
 ACTIVE = 2
 ```
 
-Active state. In this state, the toolbar item can update its icon to the one specified by **activeIcon** by responding to a click event.
+Active state. In this state, the toolbar item can update its icon to the one specified by **activeIcon** by
+responding to a click event.
 
 **Since:** 10
 

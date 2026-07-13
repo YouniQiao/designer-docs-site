@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { display } from '@ohos.display';
+import { display } from '@kit.ArkUI';
 ```
 
 ## removeVirtualScreenBlocklist
@@ -12,7 +12,8 @@ import { display } from '@ohos.display';
 function removeVirtualScreenBlocklist(windowIds: Array<number>): Promise<void>
 ```
 
-Removes windows from the list of windows that are not allowed to be displayed during casting. This API takes effect only for the main window of an application or system windows. This API uses a promise to return the result.
+Removes windows from the list of windows that are not allowed to be displayed during casting. This API takes effect
+only for the main window of an application or system windows. This API uses a promise to return the result.
 
 **Since:** 18
 
@@ -51,22 +52,24 @@ export default class EntryAbility extends UIAbility {
   // ...
   onWindowStageCreate(windowStage: window.WindowStage) {
     // ...
-    let windowId = windowStage.getMainWindowSync().getWindowProperties().id;
+    let windowId = windowStage.getMainWindowSync().getWindowProperties().id; // Obtain the window IDs.
     let windowIds = [windowId];
 
+    // Add windows to the list of windows that are not allowed to be displayed during casting.
     let promise = display.addVirtualScreenBlocklist(windowIds);
     promise.then(() => {
       console.info('Succeeded in adding virtual screen blocklist.');
     }).catch((err: BusinessError) => {
-      console.error(`Failed to add virtual screen blocklist. Code: ${err.code} , message : ${err.message}`);
-    })
+      console.error(`Failed to add virtual screen blocklist. Code: ${err.code}, message: ${err.message}`);
+    });
 
+    // Remove windows from the list of windows that are not allowed to be displayed during casting.
     promise = display.removeVirtualScreenBlocklist(windowIds);
     promise.then(() => {
       console.info('Succeeded in removing virtual screen blocklist.');
     }).catch((err: BusinessError) => {
-      console.error(`Failed to remove virtual screen blocklist. Code: ${err.code} , message: ${err.message}`);
-    })
+      console.error(`Failed to remove virtual screen blocklist. Code: ${err.code}, message: ${err.message}`);
+    });
   }
 }
 

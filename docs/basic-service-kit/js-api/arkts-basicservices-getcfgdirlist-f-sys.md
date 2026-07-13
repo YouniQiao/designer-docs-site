@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { configPolicy } from '@ohos.configPolicy';
+import { configPolicy } from '@kit.BasicServicesKit';
 ```
 
 ## getCfgDirList
@@ -12,7 +12,8 @@ import { configPolicy } from '@ohos.configPolicy';
 function getCfgDirList(callback: AsyncCallback<Array<string>>): void
 ```
 
-Obtains a list of configuration level directories, in ascending order of priority. This API uses an asynchronous callback to return the result.
+Obtains a list of configuration level directories, in ascending order of priority. This API uses an asynchronous
+callback to return the result.
 
 **Since:** 8
 
@@ -39,7 +40,8 @@ Obtains a list of configuration level directories, in ascending order of priorit
 function getCfgDirList(): Promise<Array<string>>
 ```
 
-Obtains a list of configuration level directories, in ascending order of priority. This API uses a promise to return the result.
+Obtains a list of configuration level directories, in ascending order of priority. This API uses a promise to
+return the result.
 
 **Since:** 8
 
